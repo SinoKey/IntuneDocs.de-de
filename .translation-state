@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "55dcb51cfa34082ebbe5a45d5a8d56e6b31bbd1c",
-  "LastTranslatedCommit": null,
+  "LastTranslatedCommit": "59cd61b433997aa1d04d786168399258e59b4b85",
   "Items": {
     "69b88e15bc21632deba50fff9cc06cf9e9bb8413": {
       "FileHash": "69b88e15bc21632deba50fff9cc06cf9e9bb8413",
@@ -17002,14 +17002,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "59cd61b433997aa1d04d786168399258e59b4b85",
+      "TargetFilePath": "InTuneDocs\\TOC.md",
+      "HandbackFilePath": "ol-handback\\Microsoft\\IntuneDocs-pr.de-de\\master\\TOC.449cf0aed2f289067340bbeb1c65bfa4062628a2.de-de.xlf",
+      "HandbackFileCommit": "eeaf982e65514dd7ae824b577c878f5bfe210843",
+      "HandbackDateTime": "2016-03-31T22:03:08.8619263Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-03-31T22:03:08.8619263Z",
       "ArchiveFilePath": null,
       "ArchiveFileCommit": null,
       "ArchiveFileDateTime": "0001-01-01T00:00:00",
