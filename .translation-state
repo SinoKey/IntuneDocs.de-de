@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "e6552ed9521edbcac1bc51c9ff1f5f424f69113d",
-  "LastTranslatedCommit": "a83ed97121eec622621d400b4d2c9ec53ed46679",
+  "LastTranslatedCommit": "dbb4458e02e23cbfb106d5bb052762b6208c7fc7",
   "Items": {
     "69b88e15bc21632deba50fff9cc06cf9e9bb8413": {
       "FileHash": "69b88e15bc21632deba50fff9cc06cf9e9bb8413",
@@ -18726,14 +18726,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "dbb4458e02e23cbfb106d5bb052762b6208c7fc7",
+      "TargetFilePath": "InTuneDocs\\wait-while-your-device-is-being-evaluated.md",
+      "HandbackFilePath": "ol-handback\\Microsoft\\IntuneDocs-pr.de-de\\master\\wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf",
+      "HandbackFileCommit": "2d491c3b3ddee367b3e7b0763f4465f8677e743f",
+      "HandbackDateTime": "2016-04-01T13:31:18.8745885Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-04-01T13:31:18.8745885Z",
       "ArchiveFilePath": null,
       "ArchiveFileCommit": null,
       "ArchiveFileDateTime": "0001-01-01T00:00:00",

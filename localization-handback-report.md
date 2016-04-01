@@ -1,11 +1,39 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\EndUser\Wait-while-your-device-is-being-evaluated.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e6552ed9521edbcac1bc51c9ff1f5f424f69113d/InTuneDocs/EndUser/Wait-while-your-device-is-being-evaluated.md) | InSyncHandedBackSuccess | [Details](#78a507cf5c5710a6fefc0ca147e94baed8dd7639437)
+ [InTuneDocs\wait-while-your-device-is-being-evaluated.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7e5c904508998a992d8e5c8493dd74dede87c556/InTuneDocs/wait-while-your-device-is-being-evaluated.md) | InSyncHandedBackSuccess | [Details](#78a507cf5c5710a6fefc0ca147e94baed8dd76391138)
 
 ## Item Details
+##### <a name='78a507cf5c5710a6fefc0ca147e94baed8dd7639437'></a> Source: [InTuneDocs\EndUser\Wait-while-your-device-is-being-evaluated.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e6552ed9521edbcac1bc51c9ff1f5f424f69113d/InTuneDocs/EndUser/Wait-while-your-device-is-being-evaluated.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\wait-while-your-device-is-being-evaluated.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/dbb4458e02e23cbfb106d5bb052762b6208c7fc7/InTuneDocs/wait-while-your-device-is-being-evaluated.md)
+* Handoff File: [wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/6e8e84824bb42a30fa52f7105c2a07e70bd9e498/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf)
+* Handoff Datetime: 2016-03-04 18:15:29
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/2d491c3b3ddee367b3e7b0763f4465f8677e743f/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf)
+* Handback Datetime: 2016-04-01 13:31:18
+* [Back to Top](#report-top)
+
+##### <a name='78a507cf5c5710a6fefc0ca147e94baed8dd76391138'></a> Source: [InTuneDocs\wait-while-your-device-is-being-evaluated.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7e5c904508998a992d8e5c8493dd74dede87c556/InTuneDocs/wait-while-your-device-is-being-evaluated.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\wait-while-your-device-is-being-evaluated.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/dbb4458e02e23cbfb106d5bb052762b6208c7fc7/InTuneDocs/wait-while-your-device-is-being-evaluated.md)
+* Handoff File: [wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/6e8e84824bb42a30fa52f7105c2a07e70bd9e498/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf)
+* Handoff Datetime: 2016-03-04 18:15:29
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/2d491c3b3ddee367b3e7b0763f4465f8677e743f/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf)
+* Handback Datetime: 2016-04-01 13:31:18
+* [Back to Top](#report-top)
+
 
 ## Error Details
 

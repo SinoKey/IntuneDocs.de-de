@@ -5,12 +5,12 @@
  -------- | ----- 
  Total Files | 2093
 [ Handoff Failed Files ](#handoff-failed-list)| 4
-[ Handoff Success Files ](#handoff-success-list)| 1650
+[ Handoff Success Files ](#handoff-success-list)| 1648
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
-[ In Sync Handback Files ](#insync-handback-success-list)| 34
+[ In Sync Handback Files ](#insync-handback-success-list)| 36
 [ Ignored Files ](#ignored-list)| 405
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -369,7 +369,6 @@
  [InTuneDocs\EndUser\using-your-android-device-with-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0ee1af2ee90aa48ec574f01a08cc276085e31083/InTuneDocs/EndUser/using-your-android-device-with-intune.md) | HandedOffSuccess | [Details](#471d5c5555f7f9a70620589679dc0022581112ab434)
  [InTuneDocs\EndUser\using-your-ios-or-mac-os-x-device-with-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0ee1af2ee90aa48ec574f01a08cc276085e31083/InTuneDocs/EndUser/using-your-ios-or-mac-os-x-device-with-intune.md) | HandedOffSuccess | [Details](#b548389d9ac7acb19490249dc54ce1eccce75ec4435)
  [InTuneDocs\EndUser\using-your-windows-device-with-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0ee1af2ee90aa48ec574f01a08cc276085e31083/InTuneDocs/EndUser/using-your-windows-device-with-intune.md) | HandedOffSuccess | [Details](#4261dfd3bd812751ecc8600b0e2540758ce7a05b436)
- [InTuneDocs\EndUser\Wait-while-your-device-is-being-evaluated.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e6552ed9521edbcac1bc51c9ff1f5f424f69113d/InTuneDocs/EndUser/Wait-while-your-device-is-being-evaluated.md) | HandedOffSuccess | [Details](#78a507cf5c5710a6fefc0ca147e94baed8dd7639437)
  [InTuneDocs\EndUser\what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0ee1af2ee90aa48ec574f01a08cc276085e31083/InTuneDocs/EndUser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) | HandedOffSuccess | [Details](#a89e3f3a066432284f37a8f0086300ee2f7ad548438)
  [InTuneDocs\EndUser\what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0ee1af2ee90aa48ec574f01a08cc276085e31083/InTuneDocs/EndUser/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md) | HandedOffSuccess | [Details](#b5383d3ad1066152d07005c6ccb50477a8ef1f9f439)
  [InTuneDocs\EndUser\what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0ee1af2ee90aa48ec574f01a08cc276085e31083/InTuneDocs/EndUser/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md) | HandedOffSuccess | [Details](#fd8b9574a87de312bb0a6b93efa06ef19c7c8122440)
@@ -902,7 +901,6 @@
  [InTuneDocs\use-conditional-access-with-intune-and-configuration-manager.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7e5c904508998a992d8e5c8493dd74dede87c556/InTuneDocs/use-conditional-access-with-intune-and-configuration-manager.md) | HandedOffSuccess | [Details](#e71e2e6734abce1feee60ea364db8c8eedb399e61134)
  [InTuneDocs\use-mobile-application-management-policies-in-configuration-manager.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7e5c904508998a992d8e5c8493dd74dede87c556/InTuneDocs/use-mobile-application-management-policies-in-configuration-manager.md) | HandedOffSuccess | [Details](#a6c6326c36f36d9d4b56c38c66bce0cb9113d24e1136)
  [InTuneDocs\using-a-product-key-to-set-up-a-customer-account.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7e5c904508998a992d8e5c8493dd74dede87c556/InTuneDocs/using-a-product-key-to-set-up-a-customer-account.md) | HandedOffSuccess | [Details](#79f29881ba37265428ab139c8d0ced258c4b9ac61137)
- [InTuneDocs\wait-while-your-device-is-being-evaluated.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7e5c904508998a992d8e5c8493dd74dede87c556/InTuneDocs/wait-while-your-device-is-being-evaluated.md) | HandedOffSuccess | [Details](#78a507cf5c5710a6fefc0ca147e94baed8dd76391138)
  [InTuneDocs\walkthrough-set-up-email-access-for-ios-devices-with-microsoft-intune_deleted.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7e5c904508998a992d8e5c8493dd74dede87c556/InTuneDocs/walkthrough-set-up-email-access-for-ios-devices-with-microsoft-intune_deleted.md) | HandedOffSuccess | [Details](#e46f44ddaa61ff6714264e7292b79a1da09dc06c1139)
  [InTuneDocs\what-s-coming-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6cbdd1be1bee7af43207951334a2389976f7fbdf/InTuneDocs/what-s-coming-in-microsoft-intune.md) | HandedOffSuccess | [Details](#ef98a323acd85570e70c5ee7c831cfa84cfc212d1140)
  [InTuneDocs\what-s-coming-in-microsoft-intune_deleted.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7e5c904508998a992d8e5c8493dd74dede87c556/InTuneDocs/what-s-coming-in-microsoft-intune_deleted.md) | HandedOffSuccess | [Details](#b09441597e86a7a011612bbcf6bd3a337d905cde1141)
@@ -1697,6 +1695,7 @@
  [InTuneDocs\EndUser\enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0ee1af2ee90aa48ec574f01a08cc276085e31083/InTuneDocs/EndUser/enroll-your-device-in-intune-ios.md) | InSyncHandedBackSuccess | [Details](#fdd22ee080201c817f129f237a2cef63e9d32c17326)
  [InTuneDocs\EndUser\install-and-sign-in-to-the-intune-company-portal-app-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0ee1af2ee90aa48ec574f01a08cc276085e31083/InTuneDocs/EndUser/install-and-sign-in-to-the-intune-company-portal-app-ios.md) | InSyncHandedBackSuccess | [Details](#517a7079a6e91fc4d4ab01e01b69224691190a50338)
  [InTuneDocs\EndUser\unenroll-your-device-from-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0ee1af2ee90aa48ec574f01a08cc276085e31083/InTuneDocs/EndUser/unenroll-your-device-from-intune-ios.md) | InSyncHandedBackSuccess | [Details](#44957e696209d3e6d8f6658cb9f3ed95496f3e72428)
+ [InTuneDocs\EndUser\Wait-while-your-device-is-being-evaluated.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e6552ed9521edbcac1bc51c9ff1f5f424f69113d/InTuneDocs/EndUser/Wait-while-your-device-is-being-evaluated.md) | InSyncHandedBackSuccess | [Details](#78a507cf5c5710a6fefc0ca147e94baed8dd7639437)
  [InTuneDocs\EndUser\your-device-is-rooted-and-you-cant-connect-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0ee1af2ee90aa48ec574f01a08cc276085e31083/InTuneDocs/EndUser/your-device-is-rooted-and-you-cant-connect-android.md) | InSyncHandedBackSuccess | [Details](#e2553bee12bf3c7795678c4e5e68fb169d00bb41455)
  [InTuneDocs\GetStarted\integration-with-cloud-services.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e6552ed9521edbcac1bc51c9ff1f5f424f69113d/InTuneDocs/GetStarted/integration-with-cloud-services.md) | InSyncHandedBackSuccess | [Details](#c8b105610dae69f636e25e65346cc729325f9b07489)
  [InTuneDocs\GetStarted\rollout-phases-for-microsoft-intune-deployment.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7c9a8f18bab66401248f358ae6c94ce481ba1f5a/InTuneDocs/GetStarted/rollout-phases-for-microsoft-intune-deployment.md) | InSyncHandedBackSuccess | [Details](#e6ffce92ae36ee2288f2b01006811f2426f13a52511)
@@ -1707,6 +1706,7 @@
  [InTuneDocs\intune-ip-ranges_deleted.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7e5c904508998a992d8e5c8493dd74dede87c556/InTuneDocs/intune-ip-ranges_deleted.md) | InSyncHandedBackSuccess | [Details](#0d238d5c57811e54f4298b0a08bc181223424c8e635)
  [InTuneDocs\retire-company-owned-pcs-and-mobile-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7e5c904508998a992d8e5c8493dd74dede87c556/InTuneDocs/retire-company-owned-pcs-and-mobile-devices.md) | InSyncHandedBackSuccess | [Details](#9212bebd09c1c17cf4d48fee0015f24e43fe7ea11087)
  [InTuneDocs\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7e5c904508998a992d8e5c8493dd74dede87c556/InTuneDocs/TOC.md) | InSyncHandedBackSuccess | [Details](#adc83b19e793491b1c6ea0fd8b46cd9f32e592fc1098)
+ [InTuneDocs\wait-while-your-device-is-being-evaluated.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7e5c904508998a992d8e5c8493dd74dede87c556/InTuneDocs/wait-while-your-device-is-being-evaluated.md) | InSyncHandedBackSuccess | [Details](#78a507cf5c5710a6fefc0ca147e94baed8dd76391138)
  [InTuneDocs\zDeletedTopics\Get-ready-to-enroll-devices-in-Microsoft-Intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e6552ed9521edbcac1bc51c9ff1f5f424f69113d/InTuneDocs/zDeletedTopics/Get-ready-to-enroll-devices-in-Microsoft-Intune.md) | InSyncHandedBackSuccess | [Details](#5c278937be8c4a2b940fc00f40270989daa72d4a1264)
  [InTuneDocs\zDeletedTopics\Manage-access-to-exchange-on-premises-test-refactor.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e6552ed9521edbcac1bc51c9ff1f5f424f69113d/InTuneDocs/zDeletedTopics/Manage-access-to-exchange-on-premises-test-refactor.md) | InSyncHandedBackSuccess | [Details](#1d79cde996c0c83deb999ef10c70b82aaf9e21791305)
  [InTuneDocs\zDeletedTopics\Set-up-Android-management-with-Microsoft-Intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e6552ed9521edbcac1bc51c9ff1f5f424f69113d/InTuneDocs/zDeletedTopics/Set-up-Android-management-with-Microsoft-Intune.md) | InSyncHandedBackSuccess | [Details](#364a9acb2ae84aee33f42439ecb5ba670e88d9e91399)
@@ -7503,15 +7503,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='78a507cf5c5710a6fefc0ca147e94baed8dd7639437'></a> Source: [InTuneDocs\EndUser\Wait-while-your-device-is-being-evaluated.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e6552ed9521edbcac1bc51c9ff1f5f424f69113d/InTuneDocs/EndUser/Wait-while-your-device-is-being-evaluated.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\wait-while-your-device-is-being-evaluated.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/dbb4458e02e23cbfb106d5bb052762b6208c7fc7/InTuneDocs/wait-while-your-device-is-being-evaluated.md)
 * Handoff File: [wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/6e8e84824bb42a30fa52f7105c2a07e70bd9e498/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf)
 * Handoff Datetime: 2016-03-04 18:15:29
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/2d491c3b3ddee367b3e7b0763f4465f8677e743f/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf)
+* Handback Datetime: 2016-04-01 13:31:18
 * [Back to Top](#report-top)
 
 ##### <a name='a89e3f3a066432284f37a8f0086300ee2f7ad548438'></a> Source: [InTuneDocs\EndUser\what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0ee1af2ee90aa48ec574f01a08cc276085e31083/InTuneDocs/EndUser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
@@ -16181,15 +16181,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='78a507cf5c5710a6fefc0ca147e94baed8dd76391138'></a> Source: [InTuneDocs\wait-while-your-device-is-being-evaluated.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7e5c904508998a992d8e5c8493dd74dede87c556/InTuneDocs/wait-while-your-device-is-being-evaluated.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\wait-while-your-device-is-being-evaluated.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/dbb4458e02e23cbfb106d5bb052762b6208c7fc7/InTuneDocs/wait-while-your-device-is-being-evaluated.md)
 * Handoff File: [wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/6e8e84824bb42a30fa52f7105c2a07e70bd9e498/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf)
 * Handoff Datetime: 2016-03-04 18:15:29
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/2d491c3b3ddee367b3e7b0763f4465f8677e743f/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/wait-while-your-device-is-being-evaluated.a4c5c9188abb675a059814e20cf409499dc89763.de-de.xlf)
+* Handback Datetime: 2016-04-01 13:31:18
 * [Back to Top](#report-top)
 
 ##### <a name='e46f44ddaa61ff6714264e7292b79a1da09dc06c1139'></a> Source: [InTuneDocs\walkthrough-set-up-email-access-for-ios-devices-with-microsoft-intune_deleted.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7e5c904508998a992d8e5c8493dd74dede87c556/InTuneDocs/walkthrough-set-up-email-access-for-ios-devices-with-microsoft-intune_deleted.md)
