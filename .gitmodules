@@ -22,3 +22,7 @@
 	path = InTuneDocs/_themes
 	url = https://github.com/Microsoft/templates.docs.msft
 	branch = master
+[submodule "ThemeIntuneEndUser"]
+	path = InTuneDocs/EndUser/_themes
+	url = https://github.com/Microsoft/templates.docs.msft
+	branch = master
