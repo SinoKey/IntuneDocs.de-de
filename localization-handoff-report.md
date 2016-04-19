@@ -6,22 +6,19 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\GetStarted\rollout-phases-for-microsoft-intune-deployment.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b56a835440cbb1dd08fe85c690d958ca3c2df71c/InTuneDocs/GetStarted/rollout-phases-for-microsoft-intune-deployment.md) | OutofSyncHandedBackSuccess | [Details](#4cb51facc6faca8ceca2c3662b23d0761b12c0f7552)
+ [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr/blob/4475c10a51e4361a1dfc35df69f4ef81c0d316d3/InTuneDocs/index.md) | HandedOffSuccess | [Details](#740d76280545e77eddd35972aeeb6e41e56c61e0683)
 
 ## Item Details
-##### <a name='4cb51facc6faca8ceca2c3662b23d0761b12c0f7552'></a> Source: [InTuneDocs\GetStarted\rollout-phases-for-microsoft-intune-deployment.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b56a835440cbb1dd08fe85c690d958ca3c2df71c/InTuneDocs/GetStarted/rollout-phases-for-microsoft-intune-deployment.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='740d76280545e77eddd35972aeeb6e41e56c61e0683'></a> Source: [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr/blob/4475c10a51e4361a1dfc35df69f4ef81c0d316d3/InTuneDocs/index.md)
+* Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [rollout-phases-for-microsoft-intune-deployment.cd8b54a5b606042a0ab563726ef422d6119352b1.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/9cee589c210c5666d608b442259f47b37738c851/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/rollout-phases-for-microsoft-intune-deployment.cd8b54a5b606042a0ab563726ef422d6119352b1.de-de.xlf)
-* Handoff Datetime: 2016-04-19 01:56:45
+* Handoff File: [index.404579aeff405d27d9820f60e5e015fb7352d33a.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/47029bbca68014ba9554d997f10b1587def8176a/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/index.404579aeff405d27d9820f60e5e015fb7352d33a.de-de.xlf)
+* Handoff Datetime: 2016-04-19 08:13:18
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\GetStarted\rollout-phases-for-microsoft-intune-deployment.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/a83ed97121eec622621d400b4d2c9ec53ed46679/InTuneDocs/GetStarted/rollout-phases-for-microsoft-intune-deployment.md)
-* Current Handback File: [rollout-phases-for-microsoft-intune-deployment.cd8b54a5b606042a0ab563726ef422d6119352b1.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/14421f5903618ca0bd9b585da374f4fac06fd404/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/rollout-phases-for-microsoft-intune-deployment.cd8b54a5b606042a0ab563726ef422d6119352b1.de-de.xlf)
-* Current Handback Datetime: 2016-04-01 10:26:28
 * [Back to Top](#report-top)
 
 
