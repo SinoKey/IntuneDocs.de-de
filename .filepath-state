@@ -319,8 +319,11 @@
   "750cbd7ed2701c022bda4c5e715a8ce9ea72f55b": [
     "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
   ],
+  "51f73936517012454f0007a62a318ec378ac2557": [
+    "InTuneDocs\\zDeletedTopics\\Learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md"
+  ],
   "cd5f0911b0f73f7c71d22a1a5c2e9538e7eba46b": [
-    "InTuneDocs\\DeployUse\\learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md"
+    "InTuneDocs\\zDeletedTopics\\Learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md"
   ],
   "4d8b4ac82562bd1d94f667a5e687a515dabe3d81": [
     "migrated-03-14\\Topic\\Manage-access-to-apps-using-Microsoft-Intune-configuration-policies---deleted.md",
@@ -3281,9 +3284,6 @@
   "f3568e1c4449da1c2ac5d9312a49b20af6547909": [
     "migrated-03-14\\Image\\Nav-Puzzle\\WIT_MDMLifecycleFull2.png"
   ],
-  "5d23feda97afbd203a4d57d0f958baca68438c2c": [
-    "InTuneDocs\\media\\ems-4-layer-data-protection.png"
-  ],
   "264088eed5607793c57cc0fc174ad1e9eb61acd5": [
     "migrated-03-14\\Image\\WIT_Nav_ConfigureDevicesGray.png"
   ],
@@ -3572,14 +3572,14 @@
   "159f599aa557745fb0bcea2d48fe5bb1add54b8a": [
     "migrated-03-14\\Topic\\Keep-Windows-PCs-up-to-date-with-software-updates-in-Microsoft-Intune.md"
   ],
-  "51f73936517012454f0007a62a318ec378ac2557": [
-    "InTuneDocs\\zDeletedTopics\\Learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md"
-  ],
   "89d51c4522eceac6df5aa17c81351bf55319b6b5": [
     "migrated-03-14\\Topic\\Lifecycle-section-from-Overview.md"
   ],
   "3197f33fe6c264892365fe876d34733433a563ac": [
     "migrated-03-14\\Topic\\Maintain-Microsoft-Intune.md"
+  ],
+  "11b8188b7350578696bac907747c72580cfc750c": [
+    "InTuneDocs\\DeployUse\\restrict-access-to-skype-for-business-online-with-microsoft-intune.md"
   ],
   "f7badc853ce860d28054e78fed8d6f054fb20384": [
     "InTuneDocs\\DeployUse\\restrict-access-to-skype-for-business-online-with-microsoft-intune.md"
@@ -3631,6 +3631,9 @@
   ],
   "376dc31dce9eb003564c8af9fb731a00f36d6d17": [
     "migrated-03-14\\Topic\\Manage-license-agreements-for-Windows-PC-software-in-Microsoft-Intune.md"
+  ],
+  "a2ab8c88843bf39e57ef0ab6b793b443be266883": [
+    "InTuneDocs\\DeployUse\\restrict-access-to-sharepoint-online-with-microsoft-intune.md"
   ],
   "093b3a8511efe0cdd0990c4c53ce4759a3c976af": [
     "InTuneDocs\\DeployUse\\restrict-access-to-sharepoint-online-with-microsoft-intune.md"
@@ -4832,6 +4835,9 @@
   "fe3d37e292bd8b1b7d62ef7134dc92634ec35b78": [
     "InTuneDocs\\DeployUse\\enroll-devices-in-microsoft-intune.md"
   ],
+  "86351ba1cb19f043a682c5cb0babdbc089954023": [
+    "InTuneDocs\\DeployUse\\overview-of-device-and-app-lifecycles-in-microsoft-intune.md"
+  ],
   "f2d96547b3bdfb0d72691f737238455776720ced": [
     "InTuneDocs\\DeployUse\\overview-of-device-and-app-lifecycles-in-microsoft-intune.md"
   ],
@@ -5198,6 +5204,9 @@
   "08cb0a1cc8355e6439e9e30e30e01a560da96cd2": [
     "InTuneDocs\\DeployUse\\restrict-access-to-email-and-o365-services-with-microsoft-intune.md"
   ],
+  "0cd767392b923777a434e75d86febe86820a909d": [
+    "InTuneDocs\\DeployUse\\restrict-access-to-exchange-onpremises-with-microsoft-intune.md"
+  ],
   "08600b97d222a4b42d13e223a4b38c070636b500": [
     "InTuneDocs\\DeployUse\\restrict-access-to-exchange-onpremises-with-microsoft-intune.md"
   ],
@@ -5291,6 +5300,9 @@
   "bac9420657d6e709a3f3e93d0fc386b9870cb135": [
     "InTuneDocs\\media\\IntuneSA5bExchangeOnPremPolicy.png"
   ],
+  "7f618809f539bde69daa30a90099262ada601dbf": [
+    "InTuneDocs\\DeployUse\\protect-apps-and-data-with-microsoft-intune.md"
+  ],
   "1bc292ffb8cf2f4456b2d295503baa88a030f8c4": [
     "InTuneDocs\\DeployUse\\protect-apps-and-data-with-microsoft-intune.md"
   ],
@@ -5368,6 +5380,9 @@
   ],
   "913565f985c0faedec9d8acd14f6963e7476fd4b": [
     "InTuneDocs\\DeployUse\\mobile-device-management-with-exchange-activesync-and-microsoft-intune.md"
+  ],
+  "632311501388ee39b7a39a76e4cb3ecb9f385438": [
+    "InTuneDocs\\DeployUse\\restrict-access-to-exchange-online-with-microsoft-intune.md"
   ],
   "d2fd144acf730d2db30dca8c24e19bbaa0880bba": [
     "InTuneDocs\\DeployUse\\restrict-access-to-exchange-online-with-microsoft-intune.md"
@@ -6092,6 +6107,9 @@
   "5522836a146b306aa18c04ef52fac97e2f41c4c7": [
     "InTuneDocs\\media\\mam-azure-portal-app-reporting-select-user.png"
   ],
+  "00bd1e5b18ccfb49bace299b028be75bb93367e6": [
+    "InTuneDocs\\dougs-sandbox.md"
+  ],
   "3381f3c1000aec3b18a50ed12c7371b6025b7a8d": [
     "InTuneDocs\\dougs-sandbox.md"
   ],
@@ -6158,11 +6176,17 @@
   "204ed85ed1c4dea12212eea34b080998af6cc211": [
     "InTuneDocs\\media\\pol-sa-terms-conditions.png"
   ],
+  "d20219e635a75fc53a15921430d4ce4cb0fe8cad": [
+    "InTuneDocs\\DeployUse\\overview-of-app-lifecycle-in-microsoft-intune.md"
+  ],
   "dc83ab7ea87f587c7fad12b64485974aebc09ec9": [
     "InTuneDocs\\DeployUse\\overview-of-app-lifecycle-in-microsoft-intune.md"
   ],
   "0ff7b28b2696476fe19c868528028494b9924428": [
     "InTuneDocs\\DeployUse\\overview-of-app-lifecycle-in-microsoft-intune.md"
+  ],
+  "b9ac53f392f94c3bb191b02d2e5482f04136eee1": [
+    "InTuneDocs\\DeployUse\\overview-of-device-lifecycle-in-microsoft-intune.md"
   ],
   "e494bc2671ebed7b05e8a6e7d83786e1278e6fa1": [
     "InTuneDocs\\DeployUse\\overview-of-device-lifecycle-in-microsoft-intune.md"
@@ -6179,15 +6203,7 @@
   "cf0723520b185d14d0191a72da11d34e2d5ade49": [
     "InTuneDocs\\zDeletedTopics\\strawman-TOC-with-notes.md"
   ],
-  "7b378232f6a41ddac861ccf2973ab6ab17180b86": [
-    "InTuneDocs\\DeployUse\\media\\app-lifecycle.png"
-  ],
-  "6a9dc3ad908b1972fedc494ecc8e6704aadb5de3": [
-    "InTuneDocs\\DeployUse\\media\\device-apps-lifecycle.png",
-    "InTuneDocs\\media\\Sandbox\\Device_AppsLifecycle.png"
-  ],
   "2dbdf59f110ba01706fc5bea4a35dad3523c1587": [
-    "InTuneDocs\\DeployUse\\media\\device-lifecycle.png",
     "InTuneDocs\\media\\Sandbox\\DeviceLifecycle.png"
   ],
   "5b3551ac48c41f27c2f2e59467a03eb527bffb46": [
@@ -6276,6 +6292,9 @@
   ],
   "a89b8a10384e1dae39077335bab78d5144f2c1c9": [
     "InTuneDocs\\zDeletedTopics\\sign-in-to-the-company-portal-app-android.md"
+  ],
+  "9989ebb93c8a502327c875b5ab31e488a9d3c155": [
+    "InTuneDocs\\index.md"
   ],
   "e28dbc89590de63dc8e4aad815abb55a6004694f": [
     "InTuneDocs\\index.md"
@@ -6394,16 +6413,22 @@
   "3fa518a16be89ecb93047d13b45209a863aa0815": [
     "InTuneDocs\\DeployUse\\deploy-apps.md"
   ],
-  "ae1f0094d31e29e808c2642fe63f0b5b0ffe126b": [
-    "InTuneDocs\\media\\Sandbox\\AppLifecycle_Staticv8.png"
-  ],
-  "c6cb6d477cbf692e9ef5366223e9bc65c8b559a6": [
-    "InTuneDocs\\media\\Sandbox\\AppLifecycle_Staticv8_noBG.png"
-  ],
-  "2b61d9a41638b8c746eab7f43b6e5b34c70935e7": [
-    "InTuneDocs\\media\\Sandbox\\Device_AppsLifecycle_noBG.png"
-  ],
   "6a0ead2adc51ca6cd1c32469d34f95d9e768ae1f": [
-    "InTuneDocs\\media\\Sandbox\\DeviceLifecycle_noBG.png"
+    "InTuneDocs\\media\\Sandbox\\DeviceLifecycle_noBG.png",
+    "InTuneDocs\\DeployUse\\media\\devicelifecycle_nobg.png"
+  ],
+  "9e0e3406325e63e1965e8cc517ddec56faa75de2": [
+    "InTuneDocs\\DeployUse\\media\\applifecycle_nobg.png",
+    "InTuneDocs\\media\\Sandbox\\AppLifecycle_Staticv9_noBG.png"
+  ],
+  "92438c8dcbc2c7e520f6027f46d32365c1604873": [
+    "InTuneDocs\\DeployUse\\media\\device_appslifecycle_nobg.png",
+    "InTuneDocs\\media\\Sandbox\\Device_AppsLifecyclev2_noBG.png"
+  ],
+  "688c7bdd4e2164c2d340ed8e2ebaf65d0dbd89e7": [
+    "InTuneDocs\\media\\Sandbox\\AppLifecycle_Staticv9.png"
+  ],
+  "3f301238e7c744ed0a0a91027eea6f5a5a1aa50a": [
+    "InTuneDocs\\media\\Sandbox\\Device_AppsLifecyclev2.png"
   ]
 }
