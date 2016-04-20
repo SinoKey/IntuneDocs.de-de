@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\migrate-to-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/07078b37fa99ebaa1aef283cb9642e8686bbd346/InTuneDocs/DeployUse/migrate-to-intune.md) | HandedOffSuccess | [Details](#53a8bbb5b257fc5488c99a318cd4fb757f76bf15241)
+ [InTuneDocs\Understand\common-ways-to-use-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0839a9d5fa38154361542f29b8321a9b100ad700/InTuneDocs/Understand/common-ways-to-use-intune.md) | HandedOffSuccess | [Details](#12e5f3e2e7100e2807da84915146a966240e79a31176)
 
 ## Item Details
-##### <a name='53a8bbb5b257fc5488c99a318cd4fb757f76bf15241'></a> Source: [InTuneDocs\DeployUse\migrate-to-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/07078b37fa99ebaa1aef283cb9642e8686bbd346/InTuneDocs/DeployUse/migrate-to-intune.md)
+##### <a name='12e5f3e2e7100e2807da84915146a966240e79a31176'></a> Source: [InTuneDocs\Understand\common-ways-to-use-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0839a9d5fa38154361542f29b8321a9b100ad700/InTuneDocs/Understand/common-ways-to-use-intune.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [migrate-to-intune.571d26cff78a27512d8e5570083a02bc2e6ec02d.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/b90cea693fdfa5f1795676660812a0898513ef96/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/migrate-to-intune.571d26cff78a27512d8e5570083a02bc2e6ec02d.de-de.xlf)
-* Handoff Datetime: 2016-04-20 22:13:59
+* Handoff File: [common-ways-to-use-intune.83099fc3e4530a1275648f414a67e67caff97d81.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/559cb981835547b1b35e6df912328c76088499b6/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/common-ways-to-use-intune.83099fc3e4530a1275648f414a67e67caff97d81.de-de.xlf)
+* Handoff Datetime: 2016-04-20 23:18:36
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
