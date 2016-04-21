@@ -1580,15 +1580,15 @@
     "InTuneDocs\\DeployUse\\manage-alerts-in-microsoft-intune.md"
   ],
   "ce5ca6f5b3fbc78616e80e6b9985e64469fbeb03": [
-    "InTuneDocs\\DeployUse\\manage-app-access-to-exchange-online.md",
-    "InTuneDocs\\zDeletedTopics\\manage-app-access-to-exchange-online-old.md"
+    "InTuneDocs\\zDeletedTopics\\manage-app-access-to-exchange-online-old.md",
+    "InTuneDocs\\zDeletedTopics\\manage-app-access-to-exchange-online.md"
   ],
   "b79dfb662661b39fdf1b06a5bd7dc896293fbe92": [
     "InTuneDocs\\zDeletedTopics\\manage-app-access-to-office-365-services-old.md"
   ],
   "05335917adad1897f0346b0d4e88107309d8fb18": [
-    "InTuneDocs\\DeployUse\\manage-app-access-to-sharePoint-online.md",
-    "InTuneDocs\\zDeletedTopics\\manage-app-access-to-sharepoint-online-old.md"
+    "InTuneDocs\\zDeletedTopics\\manage-app-access-to-sharepoint-online-old.md",
+    "InTuneDocs\\zDeletedTopics\\manage-app-access-to-sharePoint-online.md"
   ],
   "c441f93f56f265928f138ba5d64579df4ab6dad0": [
     "InTuneDocs\\DeployUse\\manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md"
@@ -1744,7 +1744,7 @@
     "InTuneDocs\\zDeletedTopics\\Microsoft-apps-you-can-use-with-mobile-app-management-policies.md"
   ],
   "f646fffde55c93b0c157a0c61839792ac8a9e87d": [
-    "InTuneDocs\\microsoft-azure-authenticator-app-deployment.md"
+    "InTuneDocs\\zDeletedTopics\\microsoft-azure-authenticator-app-deployment.md"
   ],
   "d9e85dc9c5de4e19edbf2b101247a3434979a809": [
     "InTuneDocs\\microsoft-intune-app-sdk-for-android-developer-guide.md"
@@ -2039,7 +2039,7 @@
     "InTuneDocs\\media\\WPCertReqs.png"
   ],
   "a2a520224fc91ff6f26c8c7184824a8962351fbb": [
-    "InTuneDocs\\set-your-mdm-management-authority.md"
+    "InTuneDocs\\zDeletedTopics\\set-your-mdm-management-authority.md"
   ],
   "ee4575bdf02920aaae0040f226340fe8787c69e8": [
     "InTuneDocs\\EULA\\sign-in-privacy-statement.md",
@@ -2081,8 +2081,8 @@
     "InTuneDocs\\zDeletedTopics\\Third-Party-Software-Notices-and-Information.md"
   ],
   "9b40c8bb30daed76c9adc67ac0a3742c6e1db183": [
-    "InTuneDocs\\this-is-a-test-for-nathan-s-markdown.md",
-    "migrated-03-14\\Topic\\This-is-a-test-for-Nathan-s-Markdown.md"
+    "migrated-03-14\\Topic\\This-is-a-test-for-Nathan-s-Markdown.md",
+    "InTuneDocs\\zDeletedTopics\\this-is-a-test-for-nathan-s-markdown.md"
   ],
   "ddb5382863438558c6f979c03c261bb061b3de5a": [
     "InTuneDocs\\top-node.md",
@@ -3583,7 +3583,7 @@
     "migrated-03-14\\Topic\\Manage-alerts-in-Microsoft-Intune.md"
   ],
   "4fbee80435571ed453d9f2663cd418dc666557c8": [
-    "InTuneDocs\\DeployUse\\manage-app-access-to-office-365-services.md"
+    "InTuneDocs\\zDeletedTopics\\manage-app-access-to-office-365-services.md"
   ],
   "0095fe2735fc8defd6aeaf585a6b7a82aa826a9f": [
     "InTuneDocs\\zDeletedTopics\\Manage-apps-you-purchased-from-the-Windows-Store-for-Business-with-Microsoft-Intune.md"
@@ -6171,6 +6171,9 @@
   "d8bb7e4e19e01bdf3527a40405e1aff1ff25057a": [
     "InTuneDocs\\DeployUse\\use-remote-lock-and-passcode-reset-in-microsoft-intune.md"
   ],
+  "e05015a8e9eb1078d5d13deca44de1afc158aec0": [
+    "InTuneDocs\\DeployUse\\use-remote-wipe-to-help-protect-data-using-microsoft-intune.md"
+  ],
   "8d41035f1591b87f680d85f171a0f91fa6fad1d7": [
     "InTuneDocs\\DeployUse\\use-remote-wipe-to-help-protect-data-using-microsoft-intune.md"
   ],
@@ -6284,6 +6287,9 @@
   ],
   "0ff7b28b2696476fe19c868528028494b9924428": [
     "InTuneDocs\\DeployUse\\overview-of-app-lifecycle-in-microsoft-intune.md"
+  ],
+  "9a0f16646fadd2e86d05c5dbcff8b4517cfff2b1": [
+    "InTuneDocs\\DeployUse\\overview-of-device-lifecycle-in-microsoft-intune.md"
   ],
   "b9ac53f392f94c3bb191b02d2e5482f04136eee1": [
     "InTuneDocs\\DeployUse\\overview-of-device-lifecycle-in-microsoft-intune.md"

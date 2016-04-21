@@ -1,41 +1,24 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 23
+ Total Files | 6
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\zDeletedTopics\1511-restrict-access-to-office-365-services.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/1511-restrict-access-to-office-365-services.md) | HandedOffSuccess | [Details](#69b88e15bc21632deba50fff9cc06cf9e9bb84131251)
- [InTuneDocs\zDeletedTopics\configure-mobile-app-configuration-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/configure-mobile-app-configuration-policies.md) | HandedOffSuccess | [Details](#16ca0f19b1c1121bd94591756d89fc95e4c2eb2c1360)
- [InTuneDocs\zDeletedTopics\deploy-conditional-access-microsoft-intune-with-system-center-configuration-manager-deleted.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/deploy-conditional-access-microsoft-intune-with-system-center-configuration-manager-deleted.md) | HandedOffSuccess | [Details](#6cffb30cd67ec64d64f3ad0a3dea6bf16b0cfdda1368)
- [InTuneDocs\zDeletedTopics\deployment-guide-protect-corporate-email-and-documents.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/deployment-guide-protect-corporate-email-and-documents.md) | HandedOffSuccess | [Details](#a1b74e916015d3c2fbb3e47bf9dd038676aa2ab51369)
- [InTuneDocs\zDeletedTopics\dougs-sandbox.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/dougs-sandbox.md) | HandedOffSuccess | [Details](#00bd1e5b18ccfb49bace299b028be75bb93367e61370)
- [InTuneDocs\zDeletedTopics\end-user-experience.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/end-user-experience.md) | HandedOffSuccess | [Details](#c95f67ee91fd2c60ceb4640fc0565dddac1c3be61374)
- [InTuneDocs\zDeletedTopics\getting-started-with-conditional-access.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/getting-started-with-conditional-access.md) | HandedOffSuccess | [Details](#5d6a9e5f5772ccb921c614c7f80faa986505b74a1388)
- [InTuneDocs\zDeletedTopics\mobile-app-management-deleted.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/mobile-app-management-deleted.md) | HandedOffSuccess | [Details](#9cbde39eef642aad5ed15ac304f60fe800e1c2ec1491)
- [InTuneDocs\zDeletedTopics\mobile-app-management-policies-in-the-intune-console.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/mobile-app-management-policies-in-the-intune-console.md) | HandedOffSuccess | [Details](#a25b2630a79361044da3dbb28f470eb0815945c11492)
- [InTuneDocs\zDeletedTopics\plan-for-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/plan-for-apps.md) | HandedOffSuccess | [Details](#1d39e7f2b7ad7cb487fb2c364bcf7bda75778e771501)
- [InTuneDocs\zDeletedTopics\restrict-web-content-to-display-in-the-managed-browser-with-microsoft-intune-deleted.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/restrict-web-content-to-display-in-the-managed-browser-with-microsoft-intune-deleted.md) | HandedOffSuccess | [Details](#cb00b520161426f71bd76bedcb313407672bc2491517)
- [InTuneDocs\zDeletedTopics\Use-conditional-access-with-Intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/Use-conditional-access-with-Intune.md) | HandedOffSuccess | [Details](#0d99827bf6964807f8e62613a69f4288144927051558)
- [InTuneDocs\zDeletedTopics\Use-conditional-access-with-Intune-and-Configuration-Manager.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/Use-conditional-access-with-Intune-and-Configuration-Manager.md) | HandedOffSuccess | [Details](#e71e2e6734abce1feee60ea364db8c8eedb399e61557)
- [InTuneDocs\zDeletedTopics\use-mobile-application-management-policies-in-configuration-manager.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/use-mobile-application-management-policies-in-configuration-manager.md) | HandedOffSuccess | [Details](#a6c6326c36f36d9d4b56c38c66bce0cb9113d24e1563)
- [migrated-03-14\Topic\1511---Restrict-access-to-Office-365-services.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/1511---Restrict-access-to-Office-365-services.md) | HandedOffSuccess | [Details](#69b88e15bc21632deba50fff9cc06cf9e9bb84132080)
- [migrated-03-14\Topic\Configure-mobile-app-configuration-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/Configure-mobile-app-configuration-policies.md) | HandedOffSuccess | [Details](#16ca0f19b1c1121bd94591756d89fc95e4c2eb2c2097)
- [migrated-03-14\Topic\Deploy-Conditional-Access--Microsoft-Intune-with-System-Center-Configuration-Manager---deleted.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/Deploy-Conditional-Access--Microsoft-Intune-with-System-Center-Configuration-Manager---deleted.md) | HandedOffSuccess | [Details](#6cffb30cd67ec64d64f3ad0a3dea6bf16b0cfdda2102)
- [migrated-03-14\Topic\Deployment-Guide--Protect-corporate-email-and-documents.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/Deployment-Guide--Protect-corporate-email-and-documents.md) | HandedOffSuccess | [Details](#a1b74e916015d3c2fbb3e47bf9dd038676aa2ab52103)
- [migrated-03-14\Topic\End-user-experience.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/End-user-experience.md) | HandedOffSuccess | [Details](#c95f67ee91fd2c60ceb4640fc0565dddac1c3be62109)
- [migrated-03-14\Topic\Getting-started-with-conditional-access.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/Getting-started-with-conditional-access.md) | HandedOffSuccess | [Details](#5d6a9e5f5772ccb921c614c7f80faa986505b74a2115)
- [migrated-03-14\Topic\Mobile-app-management---deleted.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/Mobile-app-management---deleted.md) | HandedOffSuccess | [Details](#9cbde39eef642aad5ed15ac304f60fe800e1c2ec2165)
- [migrated-03-14\Topic\Mobile-app-management-policies-in-the-Intune-Console.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/Mobile-app-management-policies-in-the-Intune-Console.md) | HandedOffSuccess | [Details](#a25b2630a79361044da3dbb28f470eb0815945c12166)
- [migrated-03-14\Topic\Plan-for-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/Plan-for-apps.md) | HandedOffSuccess | [Details](#1d39e7f2b7ad7cb487fb2c364bcf7bda75778e772179)
+ [InTuneDocs\DeployUse\overview-of-device-lifecycle-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3c2c9e101ea22d4f3ac59d9dca67619da685143d/InTuneDocs/DeployUse/overview-of-device-lifecycle-in-microsoft-intune.md) | HandedOffSuccess | [Details](#9a0f16646fadd2e86d05c5dbcff8b4517cfff2b1240)
+ [InTuneDocs\DeployUse\use-remote-wipe-to-help-protect-data-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3c2c9e101ea22d4f3ac59d9dca67619da685143d/InTuneDocs/DeployUse/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) | HandedOffSuccess | [Details](#e05015a8e9eb1078d5d13deca44de1afc158aec0285)
+ [InTuneDocs\zDeletedTopics\microsoft-azure-authenticator-app-deployment.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3c2c9e101ea22d4f3ac59d9dca67619da685143d/InTuneDocs/zDeletedTopics/microsoft-azure-authenticator-app-deployment.md) | HandedOffSuccess | [Details](#f646fffde55c93b0c157a0c61839792ac8a9e87d1481)
+ [InTuneDocs\zDeletedTopics\set-your-mdm-management-authority.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3c2c9e101ea22d4f3ac59d9dca67619da685143d/InTuneDocs/zDeletedTopics/set-your-mdm-management-authority.md) | HandedOffSuccess | [Details](#a2a520224fc91ff6f26c8c7184824a8962351fbb1538)
+ [InTuneDocs\zDeletedTopics\this-is-a-test-for-nathan-s-markdown.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3c2c9e101ea22d4f3ac59d9dca67619da685143d/InTuneDocs/zDeletedTopics/this-is-a-test-for-nathan-s-markdown.md) | HandedOffSuccess | [Details](#9b40c8bb30daed76c9adc67ac0a3742c6e1db1831552)
+ [migrated-03-14\Topic\This-is-a-test-for-Nathan-s-Markdown.md](https://github.com/Microsoft/IntuneDocs-pr/blob/84e69a61ee69a089f4f0a622e53c7ad84f9b1a07/migrated-03-14/Topic/This-is-a-test-for-Nathan-s-Markdown.md) | HandedOffSuccess | [Details](#9b40c8bb30daed76c9adc67ac0a3742c6e1db1832213)
 
 ## Item Details
-##### <a name='69b88e15bc21632deba50fff9cc06cf9e9bb84131251'></a> Source: [InTuneDocs\zDeletedTopics\1511-restrict-access-to-office-365-services.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/1511-restrict-access-to-office-365-services.md)
+##### <a name='9a0f16646fadd2e86d05c5dbcff8b4517cfff2b1240'></a> Source: [InTuneDocs\DeployUse\overview-of-device-lifecycle-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3c2c9e101ea22d4f3ac59d9dca67619da685143d/InTuneDocs/DeployUse/overview-of-device-lifecycle-in-microsoft-intune.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [1511-restrict-access-to-office-365-services.7396984e6133c47b7ada4a57695d08fac9b01b4a.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/1511-restrict-access-to-office-365-services.7396984e6133c47b7ada4a57695d08fac9b01b4a.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
+* Handoff File: [overview-of-device-lifecycle-in-microsoft-intune.6609610398d9ddba57824b2e55d96fa333201499.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/4344759fde4775cc3e7027813a5b34b07887e73e/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/overview-of-device-lifecycle-in-microsoft-intune.6609610398d9ddba57824b2e55d96fa333201499.de-de.xlf)
+* Handoff Datetime: 2016-04-21 19:20:04
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -43,11 +26,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='16ca0f19b1c1121bd94591756d89fc95e4c2eb2c1360'></a> Source: [InTuneDocs\zDeletedTopics\configure-mobile-app-configuration-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/configure-mobile-app-configuration-policies.md)
+##### <a name='e05015a8e9eb1078d5d13deca44de1afc158aec0285'></a> Source: [InTuneDocs\DeployUse\use-remote-wipe-to-help-protect-data-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3c2c9e101ea22d4f3ac59d9dca67619da685143d/InTuneDocs/DeployUse/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [configure-mobile-app-configuration-policies.3f4d0b5b1e89c0ff3ead4a3fcc30a89c59a058e4.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/configure-mobile-app-configuration-policies.3f4d0b5b1e89c0ff3ead4a3fcc30a89c59a058e4.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
+* Handoff File: [use-remote-wipe-to-help-protect-data-using-microsoft-intune.19e8c7ce9b75e4b0a3976774a8ffc9c3dbe0797a.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/4344759fde4775cc3e7027813a5b34b07887e73e/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/use-remote-wipe-to-help-protect-data-using-microsoft-intune.19e8c7ce9b75e4b0a3976774a8ffc9c3dbe0797a.de-de.xlf)
+* Handoff Datetime: 2016-04-21 19:20:04
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -55,11 +38,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='6cffb30cd67ec64d64f3ad0a3dea6bf16b0cfdda1368'></a> Source: [InTuneDocs\zDeletedTopics\deploy-conditional-access-microsoft-intune-with-system-center-configuration-manager-deleted.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/deploy-conditional-access-microsoft-intune-with-system-center-configuration-manager-deleted.md)
+##### <a name='f646fffde55c93b0c157a0c61839792ac8a9e87d1481'></a> Source: [InTuneDocs\zDeletedTopics\microsoft-azure-authenticator-app-deployment.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3c2c9e101ea22d4f3ac59d9dca67619da685143d/InTuneDocs/zDeletedTopics/microsoft-azure-authenticator-app-deployment.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [deploy-conditional-access-microsoft-intune-with-system-center-configuration-manager-deleted.61153212762f83a9936186cadc7e8988bb3178c2.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/deploy-conditional-access-microsoft-intune-with-system-center-configuration-manager-deleted.61153212762f83a9936186cadc7e8988bb3178c2.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
+* Handoff File: [microsoft-azure-authenticator-app-deployment.f4aed46fb5f058678592c9f60bb7b55c8c49e187.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/4344759fde4775cc3e7027813a5b34b07887e73e/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/microsoft-azure-authenticator-app-deployment.f4aed46fb5f058678592c9f60bb7b55c8c49e187.de-de.xlf)
+* Handoff Datetime: 2016-04-21 19:20:04
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -67,11 +50,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='a1b74e916015d3c2fbb3e47bf9dd038676aa2ab51369'></a> Source: [InTuneDocs\zDeletedTopics\deployment-guide-protect-corporate-email-and-documents.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/deployment-guide-protect-corporate-email-and-documents.md)
+##### <a name='a2a520224fc91ff6f26c8c7184824a8962351fbb1538'></a> Source: [InTuneDocs\zDeletedTopics\set-your-mdm-management-authority.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3c2c9e101ea22d4f3ac59d9dca67619da685143d/InTuneDocs/zDeletedTopics/set-your-mdm-management-authority.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [deployment-guide-protect-corporate-email-and-documents.f3597909e56cd7e21cc809d52bd336ddaf7bc666.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/deployment-guide-protect-corporate-email-and-documents.f3597909e56cd7e21cc809d52bd336ddaf7bc666.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
+* Handoff File: [set-your-mdm-management-authority.05056c559e16cbd2bd94a58ebc80ea9d20d8ffe9.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/4344759fde4775cc3e7027813a5b34b07887e73e/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/set-your-mdm-management-authority.05056c559e16cbd2bd94a58ebc80ea9d20d8ffe9.de-de.xlf)
+* Handoff Datetime: 2016-04-21 19:20:04
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -79,11 +62,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='00bd1e5b18ccfb49bace299b028be75bb93367e61370'></a> Source: [InTuneDocs\zDeletedTopics\dougs-sandbox.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/dougs-sandbox.md)
+##### <a name='9b40c8bb30daed76c9adc67ac0a3742c6e1db1831552'></a> Source: [InTuneDocs\zDeletedTopics\this-is-a-test-for-nathan-s-markdown.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3c2c9e101ea22d4f3ac59d9dca67619da685143d/InTuneDocs/zDeletedTopics/this-is-a-test-for-nathan-s-markdown.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [dougs-sandbox.8ab492d8e6b939f2a73ace5e64579a27a7532701.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/dougs-sandbox.8ab492d8e6b939f2a73ace5e64579a27a7532701.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
+* Handoff File: [this-is-a-test-for-nathan-s-markdown.671dbd7ea97ceda0439401a8a84bbb3b284a97cd.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/4344759fde4775cc3e7027813a5b34b07887e73e/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/this-is-a-test-for-nathan-s-markdown.671dbd7ea97ceda0439401a8a84bbb3b284a97cd.de-de.xlf)
+* Handoff Datetime: 2016-04-21 19:20:04
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -91,215 +74,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='c95f67ee91fd2c60ceb4640fc0565dddac1c3be61374'></a> Source: [InTuneDocs\zDeletedTopics\end-user-experience.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/end-user-experience.md)
+##### <a name='9b40c8bb30daed76c9adc67ac0a3742c6e1db1832213'></a> Source: [migrated-03-14\Topic\This-is-a-test-for-Nathan-s-Markdown.md](https://github.com/Microsoft/IntuneDocs-pr/blob/84e69a61ee69a089f4f0a622e53c7ad84f9b1a07/migrated-03-14/Topic/This-is-a-test-for-Nathan-s-Markdown.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [end-user-experience.b62d059d5c29f128a20c1d3d2307e9a6000f9f6d.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/end-user-experience.b62d059d5c29f128a20c1d3d2307e9a6000f9f6d.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='5d6a9e5f5772ccb921c614c7f80faa986505b74a1388'></a> Source: [InTuneDocs\zDeletedTopics\getting-started-with-conditional-access.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/getting-started-with-conditional-access.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [getting-started-with-conditional-access.27f6bfbb1e182882f694f57ffafe3f83e2926182.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/getting-started-with-conditional-access.27f6bfbb1e182882f694f57ffafe3f83e2926182.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='9cbde39eef642aad5ed15ac304f60fe800e1c2ec1491'></a> Source: [InTuneDocs\zDeletedTopics\mobile-app-management-deleted.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/mobile-app-management-deleted.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [mobile-app-management-deleted.466a6de8971674ac06a32242a85d56d7d506801b.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/mobile-app-management-deleted.466a6de8971674ac06a32242a85d56d7d506801b.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='a25b2630a79361044da3dbb28f470eb0815945c11492'></a> Source: [InTuneDocs\zDeletedTopics\mobile-app-management-policies-in-the-intune-console.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/mobile-app-management-policies-in-the-intune-console.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [mobile-app-management-policies-in-the-intune-console.6fa1ab1c62a739d07fe94439450a657a82ed584e.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/mobile-app-management-policies-in-the-intune-console.6fa1ab1c62a739d07fe94439450a657a82ed584e.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='1d39e7f2b7ad7cb487fb2c364bcf7bda75778e771501'></a> Source: [InTuneDocs\zDeletedTopics\plan-for-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/plan-for-apps.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [plan-for-apps.b967e02fb853208a297fb7e81478286e8c57c610.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/plan-for-apps.b967e02fb853208a297fb7e81478286e8c57c610.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='cb00b520161426f71bd76bedcb313407672bc2491517'></a> Source: [InTuneDocs\zDeletedTopics\restrict-web-content-to-display-in-the-managed-browser-with-microsoft-intune-deleted.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/restrict-web-content-to-display-in-the-managed-browser-with-microsoft-intune-deleted.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [restrict-web-content-to-display-in-the-managed-browser-with-microsoft-intune-deleted.34e5349bd10ba88f79ba274fd2ee53c2862a8cdf.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/restrict-web-content-to-display-in-the-managed-browser-with-microsoft-intune-deleted.34e5349bd10ba88f79ba274fd2ee53c2862a8cdf.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='0d99827bf6964807f8e62613a69f4288144927051558'></a> Source: [InTuneDocs\zDeletedTopics\Use-conditional-access-with-Intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/Use-conditional-access-with-Intune.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [Use-conditional-access-with-Intune.d636b94b594bd3b0cf248d249a7d148338701e9e.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/Use-conditional-access-with-Intune.d636b94b594bd3b0cf248d249a7d148338701e9e.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='e71e2e6734abce1feee60ea364db8c8eedb399e61557'></a> Source: [InTuneDocs\zDeletedTopics\Use-conditional-access-with-Intune-and-Configuration-Manager.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/Use-conditional-access-with-Intune-and-Configuration-Manager.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [Use-conditional-access-with-Intune-and-Configuration-Manager.e4837e28995469186206bbc40018e3fd2efd32af.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/Use-conditional-access-with-Intune-and-Configuration-Manager.e4837e28995469186206bbc40018e3fd2efd32af.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='a6c6326c36f36d9d4b56c38c66bce0cb9113d24e1563'></a> Source: [InTuneDocs\zDeletedTopics\use-mobile-application-management-policies-in-configuration-manager.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e62cf1a8d30e81ada7a2cf62789bbf5c3537756/InTuneDocs/zDeletedTopics/use-mobile-application-management-policies-in-configuration-manager.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [use-mobile-application-management-policies-in-configuration-manager.3908fd29b3113dc3e82611854a0e48410f3e1f3a.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/use-mobile-application-management-policies-in-configuration-manager.3908fd29b3113dc3e82611854a0e48410f3e1f3a.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='69b88e15bc21632deba50fff9cc06cf9e9bb84132080'></a> Source: [migrated-03-14\Topic\1511---Restrict-access-to-Office-365-services.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/1511---Restrict-access-to-Office-365-services.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [1511-restrict-access-to-office-365-services.7396984e6133c47b7ada4a57695d08fac9b01b4a.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/1511-restrict-access-to-office-365-services.7396984e6133c47b7ada4a57695d08fac9b01b4a.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='16ca0f19b1c1121bd94591756d89fc95e4c2eb2c2097'></a> Source: [migrated-03-14\Topic\Configure-mobile-app-configuration-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/Configure-mobile-app-configuration-policies.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [configure-mobile-app-configuration-policies.3f4d0b5b1e89c0ff3ead4a3fcc30a89c59a058e4.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/configure-mobile-app-configuration-policies.3f4d0b5b1e89c0ff3ead4a3fcc30a89c59a058e4.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='6cffb30cd67ec64d64f3ad0a3dea6bf16b0cfdda2102'></a> Source: [migrated-03-14\Topic\Deploy-Conditional-Access--Microsoft-Intune-with-System-Center-Configuration-Manager---deleted.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/Deploy-Conditional-Access--Microsoft-Intune-with-System-Center-Configuration-Manager---deleted.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [deploy-conditional-access-microsoft-intune-with-system-center-configuration-manager-deleted.61153212762f83a9936186cadc7e8988bb3178c2.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/deploy-conditional-access-microsoft-intune-with-system-center-configuration-manager-deleted.61153212762f83a9936186cadc7e8988bb3178c2.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='a1b74e916015d3c2fbb3e47bf9dd038676aa2ab52103'></a> Source: [migrated-03-14\Topic\Deployment-Guide--Protect-corporate-email-and-documents.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/Deployment-Guide--Protect-corporate-email-and-documents.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [deployment-guide-protect-corporate-email-and-documents.f3597909e56cd7e21cc809d52bd336ddaf7bc666.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/deployment-guide-protect-corporate-email-and-documents.f3597909e56cd7e21cc809d52bd336ddaf7bc666.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='c95f67ee91fd2c60ceb4640fc0565dddac1c3be62109'></a> Source: [migrated-03-14\Topic\End-user-experience.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/End-user-experience.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [end-user-experience.b62d059d5c29f128a20c1d3d2307e9a6000f9f6d.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/end-user-experience.b62d059d5c29f128a20c1d3d2307e9a6000f9f6d.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='5d6a9e5f5772ccb921c614c7f80faa986505b74a2115'></a> Source: [migrated-03-14\Topic\Getting-started-with-conditional-access.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/Getting-started-with-conditional-access.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [getting-started-with-conditional-access.27f6bfbb1e182882f694f57ffafe3f83e2926182.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/getting-started-with-conditional-access.27f6bfbb1e182882f694f57ffafe3f83e2926182.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='9cbde39eef642aad5ed15ac304f60fe800e1c2ec2165'></a> Source: [migrated-03-14\Topic\Mobile-app-management---deleted.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/Mobile-app-management---deleted.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [mobile-app-management-deleted.466a6de8971674ac06a32242a85d56d7d506801b.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/mobile-app-management-deleted.466a6de8971674ac06a32242a85d56d7d506801b.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='a25b2630a79361044da3dbb28f470eb0815945c12166'></a> Source: [migrated-03-14\Topic\Mobile-app-management-policies-in-the-Intune-Console.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/Mobile-app-management-policies-in-the-Intune-Console.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [mobile-app-management-policies-in-the-intune-console.6fa1ab1c62a739d07fe94439450a657a82ed584e.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/mobile-app-management-policies-in-the-intune-console.6fa1ab1c62a739d07fe94439450a657a82ed584e.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='1d39e7f2b7ad7cb487fb2c364bcf7bda75778e772179'></a> Source: [migrated-03-14\Topic\Plan-for-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/129942583051e4ee671f1a16de7e640ca9c7b46f/migrated-03-14/Topic/Plan-for-apps.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [plan-for-apps.b967e02fb853208a297fb7e81478286e8c57c610.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c5bbce7baffc36f5555140c91a0081dcfbd21883/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/plan-for-apps.b967e02fb853208a297fb7e81478286e8c57c610.de-de.xlf)
-* Handoff Datetime: 2016-04-21 18:14:47
+* Handoff File: [this-is-a-test-for-nathan-s-markdown.671dbd7ea97ceda0439401a8a84bbb3b284a97cd.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/4344759fde4775cc3e7027813a5b34b07887e73e/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/this-is-a-test-for-nathan-s-markdown.671dbd7ea97ceda0439401a8a84bbb3b284a97cd.de-de.xlf)
+* Handoff Datetime: 2016-04-21 19:20:04
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
