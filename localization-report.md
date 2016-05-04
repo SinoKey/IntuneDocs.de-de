@@ -5,12 +5,12 @@
  -------- | ----- 
  Total Files | 2248
 [ Handoff Failed Files ](#handoff-failed-list)| 3
-[ Handoff Success Files ](#handoff-success-list)| 1824
+[ Handoff Success Files ](#handoff-success-list)| 1822
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 14
-[ In Sync Handback Files ](#insync-handback-success-list)| 17
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 15
+[ In Sync Handback Files ](#insync-handback-success-list)| 18
 [ Ignored Files ](#ignored-list)| 390
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -225,7 +225,6 @@
  [InTuneDocs\DeployUse\set-up-ios-and-mac-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6951ccdb0e37489217ef939f0cbf6fc1133a6d3c/InTuneDocs/DeployUse/set-up-ios-and-mac-management-with-microsoft-intune.md) | HandedOffSuccess | [Details](#f0d47b08082cad8e9883700b7cca179f59996373257)
  [InTuneDocs\DeployUse\set-up-windows-device-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6951ccdb0e37489217ef939f0cbf6fc1133a6d3c/InTuneDocs/DeployUse/set-up-windows-device-management-with-microsoft-intune.md) | HandedOffSuccess | [Details](#c18445385e8361cf01948b583f08e992658a8762258)
  [InTuneDocs\DeployUse\set-up-windows-phone-8.0-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6951ccdb0e37489217ef939f0cbf6fc1133a6d3c/InTuneDocs/DeployUse/set-up-windows-phone-8.0-management-with-microsoft-intune.md) | HandedOffSuccess | [Details](#5a35152ec01fa94ba54e321c124a91820b93e85c259)
- [InTuneDocs\DeployUse\specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) | HandedOffSuccess | [Details](#884bde8d5af8228b5f1acceb87db9fda743dcda3261)
  [InTuneDocs\DeployUse\terms-and-condition-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/terms-and-condition-policy-settings-in-microsoft-intune.md) | HandedOffSuccess | [Details](#8079ca5abcedbe024fb6347e02c7cf61ae541a30262)
  [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c446b3a31ca98a65d26784d1852dd7a6e26ca6b1/InTuneDocs/DeployUse/TOC.md) | HandedOffSuccess | [Details](#b5395054d129e6a1b91409ca511d305de3d042a3263)
  [InTuneDocs\DeployUse\understand-microsoft-intune-operations-by-using-reports.md](https://github.com/Microsoft/IntuneDocs-pr/blob/cc64e51499908d08823429871cda91dfb0078b1e/InTuneDocs/DeployUse/understand-microsoft-intune-operations-by-using-reports.md) | HandedOffSuccess | [Details](#670422e1be5dd51cd717e5fe28c2149f8a1fb362264)
@@ -1447,7 +1446,6 @@
  [migrated-03-14\Topic\Set-up-Computer-device-management-with-Microsoft-Intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Set-up-Computer-device-management-with-Microsoft-Intune.md) | HandedOffSuccess | [Details](#7bb59ea0dc5ce46b47421074184a6949825a894a1809)
  [migrated-03-14\Topic\Set-up-email-access-for-iOS-devices-using-Microsoft-Intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Set-up-email-access-for-iOS-devices-using-Microsoft-Intune.md) | HandedOffSuccess | [Details](#b2967ae9a0b27644d1b9ec202d60faf3b13483491810)
  [migrated-03-14\Topic\Set-your-MDM-Management-Authority.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Set-your-MDM-Management-Authority.md) | HandedOffSuccess | [Details](#df2b5fdbfb7b1ba727c005d716ea79ee5d2b6b141811)
- [migrated-03-14\Topic\Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.md) | HandedOffSuccess | [Details](#15a1211ec83158d1a77c92411100bff572ff9a7a1812)
  [migrated-03-14\Topic\staging.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/staging.md) | HandedOffSuccess | [Details](#95c3c253cdd37287dedd14ba0012be92465dc5a41813)
  [migrated-03-14\Topic\Start-using-Microsoft-Intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Start-using-Microsoft-Intune.md) | HandedOffSuccess | [Details](#432cc0c89100eb0214b2f2b9204de3ec922e42391815)
  [migrated-03-14\Topic\Start-using-Microsoft-Intune--test-.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Start-using-Microsoft-Intune--test-.md) | HandedOffSuccess | [Details](#60061be09481e28985673b5c2405f322524e9f681814)
@@ -1860,6 +1858,7 @@
  [InTuneDocs\accessibility-products-and-services-from-microsoft.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/accessibility-products-and-services-from-microsoft.md) | OutofSyncHandedBackSuccess | [Details](#966677b7d9488d37d44f42ff8ef8bbac7a5d39147)
  [InTuneDocs\DeployUse\restrict-email-access-example-scenarios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6951ccdb0e37489217ef939f0cbf6fc1133a6d3c/InTuneDocs/DeployUse/restrict-email-access-example-scenarios.md) | OutofSyncHandedBackSuccess | [Details](#e0f2743cdfad8d19ce25f2796fce90c54b082780250)
  [InTuneDocs\DeployUse\set-up-windows-phone-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6951ccdb0e37489217ef939f0cbf6fc1133a6d3c/InTuneDocs/DeployUse/set-up-windows-phone-management-with-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#932076b475ea9b2efe40b8427d68fdb30fa9800a260)
+ [InTuneDocs\DeployUse\specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) | OutofSyncHandedBackSuccess | [Details](#884bde8d5af8228b5f1acceb87db9fda743dcda3261)
  [InTuneDocs\DeployUse\update-apps-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6951ccdb0e37489217ef939f0cbf6fc1133a6d3c/InTuneDocs/DeployUse/update-apps-using-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#a45928c3a1737c326f2ecf6731a421a0fa2791e5266)
  [InTuneDocs\EndUser\company-portal-frequently-asked-questions.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/EndUser/company-portal-frequently-asked-questions.md) | OutofSyncHandedBackSuccess | [Details](#e002d3e23e07c428bd7aebf74f761458500466c2286)
  [InTuneDocs\EndUser\device-doesnt-have-bitlocker-enabled-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/EndUser/device-doesnt-have-bitlocker-enabled-windows.md) | OutofSyncHandedBackSuccess | [Details](#573aa214f375959bb669faa56763741c4df664d2291)
@@ -1886,6 +1885,7 @@
  [migrated-03-14\Topic\Intune-IP-Ranges_deleted.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Intune-IP-Ranges_deleted.md) | InSyncHandedBackSuccess | [Details](#0d238d5c57811e54f4298b0a08bc181223424c8e1734)
  [migrated-03-14\Topic\Retire-company-owned-PCs-and-mobile-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Retire-company-owned-PCs-and-mobile-devices.md) | InSyncHandedBackSuccess | [Details](#9212bebd09c1c17cf4d48fee0015f24e43fe7ea11802)
  [migrated-03-14\Topic\Rollout-phases-for-Microsoft-Intune-deployment.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Rollout-phases-for-Microsoft-Intune-deployment.md) | InSyncHandedBackSuccess | [Details](#a54c347184e12fa918a0e26c4217c4722b86aa491806)
+ [migrated-03-14\Topic\Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.md) | InSyncHandedBackSuccess | [Details](#15a1211ec83158d1a77c92411100bff572ff9a7a1812)
  [migrated-03-14\Topic\Troubleshoot-Endpoint-Protection-in-Microsoft-Intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Troubleshoot-Endpoint-Protection-in-Microsoft-Intune.md) | InSyncHandedBackSuccess | [Details](#d2fa1bd95b4fbb91f0cd1d53c74a38bf7349baab1827)
  [migrated-03-14\Topic\What-s-coming-in-Microsoft-Intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/What-s-coming-in-Microsoft-Intune.md) | InSyncHandedBackSuccess | [Details](#31d7d68ac014a47e946c44e9e06106a97e32faea1840)
  [zDeletedTopics\Get-ready-to-enroll-devices-in-Microsoft-Intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/d651ce9b5b3efca6cef45bb3a10c40f66b15e030/zDeletedTopics/Get-ready-to-enroll-devices-in-Microsoft-Intune.md) | InSyncHandedBackSuccess | [Details](#5c278937be8c4a2b940fc00f40270989daa72d4a2009)
@@ -5527,7 +5527,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='884bde8d5af8228b5f1acceb87db9fda743dcda3261'></a> Source: [InTuneDocs\DeployUse\specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
-* Status: HandedOffSuccess
+* Status: OutofSyncHandedBackSuccess
 * Target File: 
 * Handoff File: [specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.98366d4155635dd3d87986d1a68d70e40c9c303b.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/6036cd6a082104b1e7fa1be5da6ca2e5adcdf01d/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.98366d4155635dd3d87986d1a68d70e40c9c303b.de-de.xlf)
 * Handoff Datetime: 2016-05-01 17:06:37
@@ -5536,6 +5536,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [InTuneDocs\DeployUse\specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/e54f01a476aca41859529cfb65e92494e1e725ce/InTuneDocs/DeployUse/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+* Current Handback File: [Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/c0035f4a237d9533d3acdc34bfacd771373b1dd3/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.de-de.xlf)
+* Current Handback Datetime: 2016-05-04 07:35:33
 * [Back to Top](#report-top)
 
 ##### <a name='8079ca5abcedbe024fb6347e02c7cf61ae541a30262'></a> Source: [InTuneDocs\DeployUse\terms-and-condition-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/terms-and-condition-policy-settings-in-microsoft-intune.md)
@@ -24886,15 +24889,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='15a1211ec83158d1a77c92411100bff572ff9a7a1812'></a> Source: [migrated-03-14\Topic\Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/e54f01a476aca41859529cfb65e92494e1e725ce/InTuneDocs/DeployUse/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 * Handoff File: [Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/56acba1f4705ebecc1ba0b636d6798c10ab04863/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.de-de.xlf)
 * Handoff Datetime: 2016-04-22 16:47:52
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/c0035f4a237d9533d3acdc34bfacd771373b1dd3/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.de-de.xlf)
+* Handback Datetime: 2016-05-04 07:35:33
 * [Back to Top](#report-top)
 
 ##### <a name='95c3c253cdd37287dedd14ba0012be92465dc5a41813'></a> Source: [migrated-03-14\Topic\staging.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/staging.md)
