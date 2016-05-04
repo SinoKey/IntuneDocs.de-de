@@ -18,7 +18,7 @@
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: [Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/4db65ef8f567233a6b565be08636cd24145c23e0/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.de-de.xlf)
-* Handback Datetime: 2016-05-04 08:55:55
+* Handback Datetime: 2016-05-04 11:02:20
 * Handback Error: [handback_validate_file_name_invalide](#15a1211ec83158d1a77c92411100bff572ff9a7a1812handback_validate_file_name_invalide)
 * [Back to Top](#report-top)
 
