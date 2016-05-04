@@ -5,10 +5,10 @@
  -------- | ----- 
  Total Files | 2249
 [ Handoff Failed Files ](#handoff-failed-list)| 3
-[ Handoff Success Files ](#handoff-success-list)| 1772
+[ Handoff Success Files ](#handoff-success-list)| 1771
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
-[ Handback Failed Files ](#handback-failed-list)| 0
+[ Handback Failed Files ](#handback-failed-list)| 1
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 65
 [ In Sync Handback Files ](#insync-handback-success-list)| 19
 [ Ignored Files ](#ignored-list)| 390
@@ -927,7 +927,6 @@
  [InTuneDocs\Understand\microsoft-intune-service-description.md](https://github.com/Microsoft/IntuneDocs-pr/blob/cc64e51499908d08823429871cda91dfb0078b1e/InTuneDocs/Understand/microsoft-intune-service-description.md) | HandedOffSuccess | [Details](#05d51136e630f383abe73f23c07a80d86c485d561199)
  [InTuneDocs\Understand\mobile-device-management-capabilities-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/47994c79c939cd16ddc035105ea11a25416236b7/InTuneDocs/Understand/mobile-device-management-capabilities-in-microsoft-intune.md) | HandedOffSuccess | [Details](#bed5bc859af10502d101c4802839ddb4e0aaf1c61200)
  [InTuneDocs\Understand\Sample.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a2835a2c9990048b2adad2abb0aa444a8c3cd98f/InTuneDocs/Understand/Sample.md) | HandedOffSuccess | [Details](#80f16e5851e574014594e4d93ba194beb2cc96531201)
- [InTuneDocs\Understand\set-up-email-access-for-ios-devices-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a3ab9c7ab7daba600a012a9caa4e69e6885d8039/InTuneDocs/Understand/set-up-email-access-for-ios-devices-using-microsoft-intune.md) | HandedOffSuccess | [Details](#164a5d5122babce3ec3f060b92dfe31d1d3531201202)
  [InTuneDocs\Understand\start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a3ab9c7ab7daba600a012a9caa4e69e6885d8039/InTuneDocs/Understand/start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md) | HandedOffSuccess | [Details](#29201201451a3d52d9de1aae17a6616c761ba9391203)
  [InTuneDocs\Understand\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a3ab9c7ab7daba600a012a9caa4e69e6885d8039/InTuneDocs/Understand/TOC.md) | HandedOffSuccess | [Details](#d0f3bb2bab226cb748f8066a649f7411f51274f41204)
  [InTuneDocs\Understand\windows-pc-management-capabilities-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1bdcfa71aab0918fba1f59bd0782fc63eef6994e/InTuneDocs/Understand/windows-pc-management-capabilities-in-microsoft-intune.md) | HandedOffSuccess | [Details](#373b3f3b646a057bb100a6996e9a0df2566e95dd1205)
@@ -1801,6 +1800,9 @@
 ## <a name='archive-success-list'></a> Archive Success File List
 
 ## <a name='handback-failed-list'></a> Handback Failed File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\Understand\set-up-email-access-for-ios-devices-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a3ab9c7ab7daba600a012a9caa4e69e6885d8039/InTuneDocs/Understand/set-up-email-access-for-ios-devices-using-microsoft-intune.md) | HandedBackFailed | [Details](#164a5d5122babce3ec3f060b92dfe31d1d3531201202)
 
 ## <a name='outofsync-handback-success-list'></a> Out Of Sync Handback Success File List
  Source File | Status | Details 
@@ -17479,7 +17481,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='164a5d5122babce3ec3f060b92dfe31d1d3531201202'></a> Source: [InTuneDocs\Understand\set-up-email-access-for-ios-devices-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a3ab9c7ab7daba600a012a9caa4e69e6885d8039/InTuneDocs/Understand/set-up-email-access-for-ios-devices-using-microsoft-intune.md)
-* Status: HandedOffSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [set-up-email-access-for-ios-devices-using-microsoft-intune.88796ef121dd067734b3118194191b22657f6bc8.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/2ba7cbcf3359a2196a57ec55c6e069f39cd51120/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/set-up-email-access-for-ios-devices-using-microsoft-intune.88796ef121dd067734b3118194191b22657f6bc8.de-de.xlf)
 * Handoff Datetime: 2016-05-04 20:59:42
