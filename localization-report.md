@@ -5607,7 +5607,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * Current Target File: [InTuneDocs\DeployUse\specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/ecd002be757162461649975a0e90fc27762328a7/InTuneDocs/DeployUse/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 * Current Handback File: [Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/4db65ef8f567233a6b565be08636cd24145c23e0/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.de-de.xlf)
-* Current Handback Datetime: 2016-05-04 08:00:22
+* Current Handback Datetime: 2016-05-04 08:55:55
 * [Back to Top](#report-top)
 
 ##### <a name='8079ca5abcedbe024fb6347e02c7cf61ae541a30262'></a> Source: [InTuneDocs\DeployUse\terms-and-condition-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/terms-and-condition-policy-settings-in-microsoft-intune.md)
@@ -25047,7 +25047,7 @@
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: [Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/4db65ef8f567233a6b565be08636cd24145c23e0/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.de-de.xlf)
-* Handback Datetime: 2016-05-04 08:00:22
+* Handback Datetime: 2016-05-04 08:55:55
 * Handback Error: [handback_validate_file_name_invalide](#15a1211ec83158d1a77c92411100bff572ff9a7a1812handback_validate_file_name_invalide)
 * [Back to Top](#report-top)
 
