@@ -1,42 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\EndUser\company-portal-frequently-asked-questions.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e1514085169b489082467d7e0606e1029ff98967/InTuneDocs/EndUser/company-portal-frequently-asked-questions.md) | OutofSyncHandedBackSuccess | [Details](#05dc37621c5eb08a89e752f4ad4fbe09b7a8da6e265)
- [InTuneDocs\Understand\common-ways-to-use-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9cb6894cefad1da14332f9994fdf45fe2d1e9b9c/InTuneDocs/Understand/common-ways-to-use-intune.md) | HandedOffSuccess | [Details](#c854893f457a60a7424010cdf69a91cb8476e1671114)
 
 ## Item Details
-##### <a name='05dc37621c5eb08a89e752f4ad4fbe09b7a8da6e265'></a> Source: [InTuneDocs\EndUser\company-portal-frequently-asked-questions.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e1514085169b489082467d7e0606e1029ff98967/InTuneDocs/EndUser/company-portal-frequently-asked-questions.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/006d6ddc90ca94ea5a3572a0b0f66f26a7123a88/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.de-de.xlf)
-* Handoff Datetime: 2016-05-10 23:11:19
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\company-portal-frequently-asked-questions.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/a83ed97121eec622621d400b4d2c9ec53ed46679/InTuneDocs/EndUser/company-portal-frequently-asked-questions.md)
-* Current Handback File: [company-portal-frequently-asked-questions.142187718a4f0d91998a97bdfba71a7cd404764d.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/14421f5903618ca0bd9b585da374f4fac06fd404/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/company-portal-frequently-asked-questions.142187718a4f0d91998a97bdfba71a7cd404764d.de-de.xlf)
-* Current Handback Datetime: 2016-04-01 10:26:28
-* [Back to Top](#report-top)
-
-##### <a name='c854893f457a60a7424010cdf69a91cb8476e1671114'></a> Source: [InTuneDocs\Understand\common-ways-to-use-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9cb6894cefad1da14332f9994fdf45fe2d1e9b9c/InTuneDocs/Understand/common-ways-to-use-intune.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [common-ways-to-use-intune.83099fc3e4530a1275648f414a67e67caff97d81.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/006d6ddc90ca94ea5a3572a0b0f66f26a7123a88/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/common-ways-to-use-intune.83099fc3e4530a1275648f414a67e67caff97d81.de-de.xlf)
-* Handoff Datetime: 2016-05-10 23:11:19
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
