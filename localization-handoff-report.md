@@ -6,19 +6,22 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\whats-coming-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/47aacc4d2b7437955c2faa320f06ff1a4f8a9566/InTuneDocs/DeployUse/whats-coming-in-intune.md) | HandedOffSuccess | [Details](#13280e5048788571df82b25c2852dc12f4cce8e7247)
+ [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a0ef0a536a797ba40a140adeaea9e3a5b253bfc9/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-android.md) | OutofSyncHandedBackSuccess | [Details](#da5c9d634c84ef8489307b3086835559db04306f443)
 
 ## Item Details
-##### <a name='13280e5048788571df82b25c2852dc12f4cce8e7247'></a> Source: [InTuneDocs\DeployUse\whats-coming-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/47aacc4d2b7437955c2faa320f06ff1a4f8a9566/InTuneDocs/DeployUse/whats-coming-in-intune.md)
-* Status: HandedOffSuccess
+##### <a name='da5c9d634c84ef8489307b3086835559db04306f443'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a0ef0a536a797ba40a140adeaea9e3a5b253bfc9/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+* Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [whats-coming-in-intune.c079f8f5234a0d7a8e61907e1283976112f63eb6.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/2d7e5138e02e4a35726f34f1add90706d6229fcb/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/whats-coming-in-intune.c079f8f5234a0d7a8e61907e1283976112f63eb6.de-de.xlf)
-* Handoff Datetime: 2016-05-13 18:10:34
+* Handoff File: [what-happens-if-you-reset-your-device-using-the-company-portal-android.1150b12ce44af4525dbca713f795d510a8f10b8a.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/6e653967bef857427e0cba9437ac834138767c06/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/what-happens-if-you-reset-your-device-using-the-company-portal-android.1150b12ce44af4525dbca713f795d510a8f10b8a.de-de.xlf)
+* Handoff Datetime: 2016-05-13 21:54:13
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-android.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/5c5676bc37e7e189d149d636d7e7101ef25b2611/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+* Current Handback File: [what-happens-if-you-reset-your-device-using-the-company-portal-android.1150b12ce44af4525dbca713f795d510a8f10b8a.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/16e0b2086acca72f6f462407f638808eff2fe4de/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/what-happens-if-you-reset-your-device-using-the-company-portal-android.1150b12ce44af4525dbca713f795d510a8f10b8a.de-de.xlf)
+* Current Handback Datetime: 2016-05-04 08:00:22
 * [Back to Top](#report-top)
 
 
