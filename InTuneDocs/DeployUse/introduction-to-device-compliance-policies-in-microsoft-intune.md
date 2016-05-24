@@ -1,55 +1,72 @@
 ---
-title: Einführung in die Compliance-Richtlinien für Geräte in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
+# required metadata
+
+title: Gerätekompatibilitätsrichtlinien | Microsoft Intune
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
-# Einführung in die Compliance-Richtlinien für Geräte in Microsoft Intune
-## Was ist eine Konformitätsrichtlinie?
-Ein **Konformitätsrichtlinie** definiert die Regeln und Einstellungen, die ein Gerät erfüllen muss, damit kompatibel sein.  Compliance-Richtlinien schließen sicherheitsanforderungen und andere Eigenschaften wie die Anforderungen an die PIN, Verschlüsselung und Betriebssystem.
 
-## Wie verwende ich die Compliance-Richtlinien?
-Sie können Compliance-Richtlinien mit Richtlinien für bedingten Zugriff verwenden, um sicherzustellen, dass nur die Geräte, die diese Regeln einhalten Zugriff auf Unternehmen e-Mails und Daten zulässig sind.
+# Gerätekompatibilitätsrichtlinien in Microsoft Intune
+## Was ist eine Kompatibilitätsrichtlinie?
+Um Unternehmensdaten zu schützen, müssen Sie sicherstellen, dass die Geräte, die für den Zugriff auf Unternehmens-Apps und -daten verwendet werden, mit bestimmten Regeln, z. B. Verwenden einer PIN für den Zugriff auf das Gerät, und der Verschlüsselung von Daten kompatibel sind, die auf dem Gerät gespeichert sind. Eine Gruppe solcher Regeln wird als Kompatibilitätsrichtlinie bezeichnet.
 
-Sie können auch unabhängig von bedingten Zugriffsrechten Compliance-Richtlinien.
+## Wie verwende ich Kompatibilitätsrichtlinien?
+Sie können Kompatibilitätsrichtlinien mit Richtlinien für den bedingten Zugriff verwenden, um den Zugriff auf Geräte einzuschränken, die Kompatibilitätsrichtlinienregeln entsprechen. Lesen Sie den Artikel [Einschränken des Zugriffs auf E-Mail- und Office 365-Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), um zu verstehen, wie die beiden Richtlinien zusammen verwendet werden können.
 
-Sie stellen Konformitätsrichtlinien für Benutzer und Geräte bereit. Wenn Sie eine Konformitätsrichtlinie für einen Benutzer bereitstellen, wird die Konformität aller Geräte des Benutzers überprüft.
+Sie können Kompatibilitätsrichtlinien auch unabhängig vom bedingten Zugriff nutzen. Bei unabhängiger Nutzung werden die Zielgeräte ausgewertet und mit ihrem Kompatibilitätsstatus gemeldet. Sie können beispielsweise einen Bericht dazu erstellen, wie viele Geräte nicht verschlüsselt sind oder per Jailbreak oder Rootzugriff manipuliert wurden. Allerdings gelten bei unabhängiger Nutzung keine Zugriffsbeschränkungen für Unternehmensressourcen.
+
+Sie stellen Kompatibilitätsrichtlinien für Benutzer bereit. Wenn Sie eine Kompatibilitätsrichtlinie für einen Benutzer bereitstellen, wird die Kompatibilität der Geräte des Benutzers überprüft.
 
 Die folgende Tabelle enthält die von Konformitätsrichtlinien unterstützten Gerätetypen. Zudem ist darin angegeben, wie nicht konforme Einstellungen gehandhabt werden, wenn die Richtlinie mit einer bedingten Zugriffsrichtlinie verwendet wird.
 
 --------------
-| Richtlinie Setting| Windows 8.1 und later| Windows Phone 8.1 und Later|iOS 6.0 und later| Android 4.0 und later| Samsung KNOX Standard 4.0 und later|
-|------|------|------|-----|-------|
-|**PIN oder Kennwort Konfiguration** | Remediated| Remediated| Remediated| Quarantined| Quarantined|
-|**Geräteverschlüsselung**| N/V | Remediated| Wiederhergestellt (durch Festlegen der PIN) | Quarantined| Quarantined|
-|**Jailbreak oder Rooting manipuliertes Gerät**| N/V | N/V | Unter Quarantäne gestellt (keine Einstellung) | Unter Quarantäne gestellt (keine Einstellung) | Unter Quarantäne gestellt (keine Einstellung) |
-|**E-Mail-Profil**| N/V | N/V | Quarantined| N/V | N/V |
-|**Minimale Betriebssystemversion**| Quarantined| Quarantined| Quarantined| Quarantined| Quarantined|
-|**Maximale Version des Betriebssystems**| Quarantined| Quarantined| Quarantined| Quarantined| Quarantined|
-|**Windows-Bescheinigung**| Windows 10 und Windows 10 Mobile isoliert werden.<br /><br />Die Einstellung gilt nicht für Windows 8.1| N/V | N/V | N/V | N/V |
---------------
-**Wiederhergestellt** = Konformität wird vom Betriebssystem Geräts erzwungen (werden z. B. der Benutzer gezwungen, eine PIN festzulegen).  Es gibt keinen Fall, wenn die Einstellung nicht konform ist.
 
-**Isolierte** Gerät = Betriebssystem erzwingt keine Konformität (z. B. zwingen Android-Geräte nicht den Benutzer das Gerät zu verschlüsseln).  Dies bedeutet:
+|Richtlinieneinstellung| Windows 8.1 und höher| Windows Phone 8.1 und höher| iOS 6.0 und höher|Android 4,0 und höher<br/>Samsung KNOX Standard 4.0 und höher|
+|-----|----|----|----|
+|**PIN- oder Kennwortkonfiguration** |Wiederhergestellt|Wiederhergestellt|Wiederhergestellt|Isoliert|
+|**Geräteverschlüsselung**|N/V|Wiederhergestellt|Wiederhergestellt (durch Festlegen der PIN)|Isoliert|
+|**Per Jailbreak oder Rootzugriff manipuliertes Gerät**|N/V|N/V|Unter Quarantäne gestellt (keine Einstellung)|Unter Quarantäne gestellt (keine Einstellung)|
+|**E-Mail-Profil**|N/V|N/V|Isoliert|N/V|
+|**Minimale Version des Betriebssystems**|Isoliert|Isoliert|Isoliert|Isoliert|
+|**Maximale Version des Betriebssystems**|Isoliert| Isoliert| Isoliert| Isoliert|
+|**Windows-Integritätsnachweis**|Windows 10 und Windows 10 Mobile sind isoliert.<br /><br />Einstellung gilt nicht für Windows 8.1|N/V|N/V|N/V|
+--------------
+**Wiederhergestellt** = Konformität wird vom Betriebssystem des Geräts erzwungen (z. B. wird der Benutzer gezwungen, eine PIN festzulegen).  Es ist nie der Fall, wenn die Einstellung nicht kompatibel ist.
+
+**Unter Quarantäne** = Das Betriebssystem des Geräts erzwingt keine Konformität (z. B. zwingen Android-Geräte den Benutzer nicht dazu, das Gerät zu verschlüsseln). Wenn die Geräte nicht kompatibel sind, erfolgen die folgenden Aktionen:
 
 -   Das Gerät wird blockiert, wenn dem Benutzer eine bedingte Zugriffsrichtlinie zugewiesen wird.
 
--   Das Unternehmensportal benachrichtigt den Benutzer bezüglich aller Konformitätsprobleme.
+-   Das Unternehmensportal benachrichtigt den Benutzer über Kompatibilitätsprobleme.
 
 ## Nächste Schritte
-[Erstellen Sie eine Konformitätsrichtlinie Gerät](create-a-device-compliance-policy-in-microsoft-intune.md)
+[Erstellen einer Kompatibilitätsrichtlinie](create-a-device-compliance-policy-in-microsoft-intune.md)
 
-[Bereitstellen einer Konformitätsrichtlinie Gerät](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
+[Bereitstellen und Überwachen einer Kompatibilitätsrichtlinie für Geräte](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
 ### Weitere Informationen:
-[Verwalten des Zugriffs auf E-Mail und SharePoint mit Microsoft Intune](manage-access-to-email-and-O365-services-with-intune.md)
+[Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=Mar16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

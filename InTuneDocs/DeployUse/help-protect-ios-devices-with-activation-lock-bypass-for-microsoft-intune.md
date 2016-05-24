@@ -1,16 +1,32 @@
 ---
-title: Unterstützen des Schutz von iOS-Geräten durch Umgehung der Aktivierungssperre für Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2804b69c-f210-4a11-aaee-b47ecc430d9c
+# required metadata
+
+title: Unterstützen des Schutzes von iOS-Geräten durch Umgehung der Aktivierungssperre für Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Unterstützen des Schutz von iOS-Geräten durch Umgehung der Aktivierungssperre für Microsoft Intune
-Microsoft Intune hilft Ihnen die Verwaltung von iOS Aktivierungssperre, ein Feature der Suche mein iPhone-app für iOS 7.1 und höher. Die Aktivierungssperre wird automatisch aktiviert, wenn die iPhone-App „Mein iPhone suchen“ auf einem Gerät verwendet wird. Nach der Aktivierung müssen die Apple-ID und das Kennwort des Benutzers eingegeben werden, bevor folgende Vorgänge möglich sind:
+Microsoft Intune kann Sie beim Verwalten der iOS-Aktivierungssperre unterstützen, einem Feature der App „Mein iPhone suchen“ für iOS 7.1 und höher. Die Aktivierungssperre wird automatisch aktiviert, wenn die iPhone-App „Mein iPhone suchen“ auf einem Gerät verwendet wird. Nach der Aktivierung müssen die Apple-ID und das Kennwort des Benutzers eingegeben werden, bevor folgende Vorgänge möglich sind:
 
 -   Deaktivieren von „Mein iPhone suchen“
 
@@ -33,23 +49,23 @@ Apple hat zur Behebung dieser Probleme eine Umgehung der Aktivierungssperre in i
 > Im überwachten Modus für iOS-Geräte können Sie mit dem Apple Configurator Tool ein Gerät sperren, um die Funktionen auf bestimmte geschäftliche Zwecke einzuschränken. Der überwachte Modus ist in der Regel nur für firmeneigene Geräte vorgesehen.
 
 ## Unterstützung von Intune beim Verwalten der Aktivierungssperre
-Intune kann der Aktivierung Sperrstatus überwachtes und unüberwachtes Geräte anfordern, die iOS 7.1 und höher. Für überwachte Geräte kann Intune den Umgehungscode der Aktivierungssperre abrufen und ihn direkt auf das Gerät anwenden. Wenn das Gerät zurückgesetzt wurde, können Sie direkt zum Gerät mithilfe von Code wie den Benutzernamen und ein leeres Kennwort zugreifen).
+Intune kann den Status der Aktivierungssperre von überwachten und nicht überwachten Geräten anfordern, die iOS 7.1 und höher ausführen. Für überwachte Geräte kann Intune den Umgehungscode der Aktivierungssperre abrufen und ihn direkt auf das Gerät anwenden. Wenn das Gerät zurückgesetzt wurde, können Sie mithilfe des Codes als Benutzername und einem leeren Kennwort direkt auf das Gerät zugreifen.
 
-**Die Vorteile sind**:
+**Folgende Geschäftsvorteile ergeben sich**:
 
--   Der Benutzer erhält die Sicherheitsvorteile der Suche mein iPhone-app.
+-   Der Benutzer erhält die Sicherheitsvorteile der App „Mein iPhone suchen“.
 
--   Sie können die Benutzer ihre Arbeit zu wissen, dass wenn das Gerät umgestaltet werden muss, können Sie das Zurückziehen oder Entsperren aktivieren.
+-   Sie können dem Benutzer ermöglichen, seine Arbeit zu erledigen, in dem Wissen, dass Sie das Gerät außer Kraft setzen oder entsperren können, wenn es einem neuen Zweck zugewiesen werden soll.
 
 ## Verwenden der Umgehung der Aktivierungssperre über die Intune-Verwaltungskonsole
 > [!IMPORTANT]
-> Nachdem Sie die Aktivierungssperre auf einem Gerät umgangen sind, wird automatisch eine neue Aktivierungssperre angewendet, wenn die App „Mein iPhone suchen“ geöffnet wird. Aus diesem Grund **Sie müssen im Besitz des Geräts befinden, bevor Sie dieses Verfahren ausführen**.
+> Nachdem Sie die Aktivierungssperre auf einem Gerät umgangen sind, wird automatisch eine neue Aktivierungssperre angewendet, wenn die App „Mein iPhone suchen“ geöffnet wird. Aus diesem Grund **muss das Gerät physisch verfügbar sein, bevor Sie dieses Verfahren ausführen**..
 
-1.  In der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com), wählen Sie **Gruppen** & Gt; **Alle Geräte** & Gt; **Alle firmeneigenen Geräte**.
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Gruppen** &gt; **Alle Geräte** &gt; **Alle unternehmenseigenen Geräte**..
 
-2.  Wählen Sie das Gerät, dessen Aktivierungssperre umgangen werden soll. Wählen Sie **Aktivierungssperre**.
+2.  Wählen Sie das Gerät aus, dessen Aktivierungssperre Sie umgehen möchten. Wählen Sie **Umgehung der iOS-Aktivierungssperre** aus..
 
-3.  Lesen Sie die Warnung. Wählen Sie **Ja** um den Vorgang fortzusetzen.
+3.  Lesen Sie die Warnmeldung. Klicken Sie auf **Ja**, um den Vorgang fortzusetzen.
 
 Sie können den Status der Entsperranforderung auf der Detailseite für das Gerät überprüfen.
 
@@ -70,13 +86,13 @@ Es gibt zwei Möglichkeiten zur Ermittlung, welche Geräte die Aktivierungssperr
 
 -   Wählen Sie ein Gerät in einer Gruppenansicht aus, um den Status der Aktivierungssperre im Gerätedetailbereich anzuzeigen.
 
-    Bei Auswahl von einem Gerät in der **Alle firmeneigenen Geräte** Knoten und der Aktivierung des Geräts aktiviert ist, sehen Sie auch den umgehungscode. Dieser Code kann dazu verwendet werden, um die Umgehung einer Aktivierungssperre manuell auszuführen.
+    Wenn Sie ein Gerät im Knoten **Alle firmeneigenen Geräte** auswählen und die Aktivierungssperre für das Gerät aktiviert ist, dann wird auch der Umgehungscode angezeigt. Dieser Code kann dazu verwendet werden, um die Umgehung einer Aktivierungssperre manuell auszuführen.
 
-### Siehe auch
-[Außerkraftsetzen von Daten und Geräten in der Microsoft Intune-Verwaltung](retire-data-and-devices-from-microsoft-intune-management.md)
+### Weitere Informationen:
+[Abkoppeln von Geräten](retire-devices-from-microsoft-intune-management.md)
+[Geräteschutz durch Remotesperre und Zurücksetzen der Kennung](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
-
-<!--HONumber=Mar16_HO4-->
+<!--HONumber=May16_HO1-->
 
 
