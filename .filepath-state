@@ -35,12 +35,6 @@
   "ddf727348aae2edb3981bec3251f09f1231b752e": [
     "InTuneDocs\\DeployUse\\categorize-devices-with-device-group-mapping-in-microsoft-intune.md"
   ],
-  "f220f439e62e5258a697e7e854c6e761dfc332c7": [
-    "InTuneDocs\\DeployUse\\categorize-devices-with-device-group-mapping-in-microsoft-intune.md"
-  ],
-  "aaf572a1ce6096a91c31b0db077315e4a2d6cdfb": [
-    "InTuneDocs\\DeployUse\\categorize-devices-with-device-group-mapping-in-microsoft-intune.md"
-  ],
   "003210b7b282114ee3b8aef81ae7f9bddd2585ca": [
     "InTuneDocs\\EndUser\\company-portal-app-not-supported.md"
   ],
@@ -297,24 +291,6 @@
     "InTuneDocs\\DeployUse\\install-the-windows-pc-client-with-microsoft-intune.md"
   ],
   "04454c6d40ba17e3a479c01ceb98171c4454edcd": [
-    "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
-  ],
-  "4fd16c3f1eb187be29b9f11093a9388f00692042": [
-    "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
-  ],
-  "4d1f5904dd8161882d904f0d416194afecbca001": [
-    "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
-  ],
-  "049b7acebfb4df97729f3b591d12ba0ea56d9788": [
-    "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
-  ],
-  "a05a873a9727c6dfd33f6ab8840fac839362811d": [
-    "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
-  ],
-  "d4debbe6f46625c198ab5075479e666c649bdac7": [
-    "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
-  ],
-  "0cd7136fbac907317910549a6f6fd78afc89a902": [
     "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
   ],
   "3de3b55426636dad69e527e186ff27cb2cd3cb50": [
@@ -1840,45 +1816,6 @@
   "1fa84150c49b91fb691d52f5a972615223f18ab3": [
     "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
   ],
-  "0ff0cdf30696bb4a58cbb51d32e55832a1590ba0": [
-    "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
-  ],
-  "6b2172e0e8861d6235a040408ab77d4a0b8fc9e7": [
-    "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
-  ],
-  "77ef643b92f9f75861b4a64a5e800348971e0583": [
-    "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
-  ],
-  "0e5ac6036610e983261cf03acfbfa8cb904820c1": [
-    "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
-  ],
-  "8b942e033a58ad08749072170429de880ba631bd": [
-    "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
-  ],
-  "5ab5a6792503dfb911fdb4db000d4736135b3062": [
-    "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
-  ],
-  "704a5963fd33a2b530f2a4fb623b1727504b880d": [
-    "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
-  ],
-  "e10568cefaacae755099b2b1954410e79657ba99": [
-    "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
-  ],
-  "24e77c14b684036e2c37f3d84e1bce32c9519a02": [
-    "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
-  ],
-  "86b1256a10600993e7777b309771a9d77f2b97b9": [
-    "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
-  ],
-  "1e19fd09cfb82bff71048baf6a56124066664daf": [
-    "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
-  ],
-  "09a9a51f9aa33a849fdcd677c3b248df1a6522d9": [
-    "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
-  ],
-  "e8e14abd3ccc9eab1c651adf83dc6711bc6f0f54": [
-    "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
-  ],
   "49a08a21107a9e66d2c846074d9d41c14f237a2e": [
     "InTuneDocs\\Troubleshoot\\TOC.md"
   ],
@@ -2285,81 +2222,6 @@
     "InTuneDocs\\Understand\\TOC.md"
   ],
   "d0f3bb2bab226cb748f8066a649f7411f51274f4": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "5f5bec21a5e8324033dbc96761abf30d8d6cb854": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "087448e9cbd1cd82b2cac91edec85ef97a961405": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "e7fcc34dcda9bc34a192e6de915c28ba1418e45f": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "53d4ae487a3e9f6b94389031a47fc80b87787298": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "a401e1ed6eac7b2b9f224bc36e9152f93389f1c9": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "c673177760afa7351c675a3e8f7ae2c26af65e3d": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "7b44f25befa4b2418121541b1e6754be11e5ab5d": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "599d763a587b3fd826e72e00dfe718ec7893b0ad": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "ed5d29cd753c903da88d0d306c03c384c9fe883a": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "77fc3e0093c432fc606d0270f6c4dcbb1fa5ccef": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "7435b9771b874252ae143dc87d5082505bba1a91": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "7f04a641cacaccd6ded412c82c0e3490dcbe2a3f": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "19b9ca9708f7c8d620b49a129763e372790b9cc7": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "07b32c65c3cf68056398d5d171b0541e30f148ba": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "ef54656a10a34a075eea9a186458d4cf9e3a91d3": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "ce31dbc4b6249832bb4d7a85a78ef82776085d38": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "335a033566dca26496caa8c9048c4fa5a56dee81": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "37f374f5e4512f778c5ddfe28e1642e892a21497": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "527139bd2df5b3e7eb89071c97629d893c854409": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "6dd4f5fb04344843f5788b42c46066a1568b0b09": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "b39c25b2080c68eea5e81a92f1df2e4cedc71086": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "8db1f7ae510cd5e92b62eba1a3f11404ad99330e": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "ca1c45794b6ebb36cf9c92b3be8fd8e9d11d4df3": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "e91211284d025a45d66424e834580de18158d75a": [
-    "InTuneDocs\\Understand\\TOC.md"
-  ],
-  "56018ac13cadea7395ee565dfb1887cf7b501892": [
     "InTuneDocs\\Understand\\TOC.md"
   ],
   "1dde0f9c701974b72ef12e63ecc4ed76f84f053e": [
@@ -3151,18 +3013,6 @@
   "25c8274834a430fd49668fce0587fbc2abb4ab0a": [
     "InTuneDocs\\DeployUse\\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md"
   ],
-  "e1133272aa8296a9d9a46f2f12a7eb6115212401": [
-    "InTuneDocs\\DeployUse\\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md"
-  ],
-  "4e4edaddbc10a5e2d4bbf4ba40fa5b7a9aa7b9a9": [
-    "InTuneDocs\\DeployUse\\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md"
-  ],
-  "9cbc801efddfe5b9c12ca34f1a769ea4c34bb304": [
-    "InTuneDocs\\DeployUse\\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md"
-  ],
-  "8403e4558849da79858d7ebdb718cea70de8338f": [
-    "InTuneDocs\\DeployUse\\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md"
-  ],
   "44422f61b9668b0e2e5f5077d45b75b4acad53e6": [
     "InTuneDocs\\DeployUse\\Configure-certificate-infrastructure.md"
   ],
@@ -3709,43 +3559,10 @@
   "80e9253e08e5aca9c89f0968e7656593b106a93d": [
     "InTuneDocs\\EndUser\\install-and-sign-in-to-the-intune-company-portal-app-ios.md"
   ],
-  "c20b12a76d909e0f9439d2b8d3c78fad8b1a6f1a": [
-    "InTuneDocs\\EndUser\\install-and-sign-in-to-the-intune-company-portal-app-ios.md"
-  ],
-  "3c49203172cd2aae91c5dd0c1cf2041d6f69bc3c": [
-    "InTuneDocs\\EndUser\\install-and-sign-in-to-the-intune-company-portal-app-ios.md"
-  ],
-  "d4b8d266c2b249c89f044ff78f601eb77f307da1": [
-    "InTuneDocs\\EndUser\\install-and-sign-in-to-the-intune-company-portal-app-ios.md"
-  ],
-  "dedef432ec4cf1baa51879dee6fe2eceb6c92011": [
-    "InTuneDocs\\EndUser\\install-and-sign-in-to-the-intune-company-portal-app-ios.md"
-  ],
-  "f4662d00acc88a583d6fa85f10e09bfd7e65a7e1": [
-    "InTuneDocs\\EndUser\\install-and-sign-in-to-the-intune-company-portal-app-ios.md"
-  ],
-  "517a7079a6e91fc4d4ab01e01b69224691190a50": [
-    "InTuneDocs\\EndUser\\install-and-sign-in-to-the-intune-company-portal-app-ios.md"
-  ],
   "e2276fd87b2642166dc7db05592db5e85f987e30": [
     "InTuneDocs\\EndUser\\install-the-microsoft-intune-company-portal-app-android.md"
   ],
   "7d04c49419102df8d152148a4ddf99b25cf7444d": [
-    "InTuneDocs\\EndUser\\install-your-companys-virtual-private-network-VPN-android.md"
-  ],
-  "c135fba64d74fedba78437977340e1eefdb610b3": [
-    "InTuneDocs\\EndUser\\install-your-companys-virtual-private-network-VPN-android.md"
-  ],
-  "a3fe0304b475f269bc7f0b1dba076b5403ecf056": [
-    "InTuneDocs\\EndUser\\install-your-companys-virtual-private-network-VPN-android.md"
-  ],
-  "9d87524e25e5fdad81ce7142f86103c0415194a3": [
-    "InTuneDocs\\EndUser\\install-your-companys-virtual-private-network-VPN-android.md"
-  ],
-  "2007e1e96b692a5f167be63c5bac3d5a47e4adb8": [
-    "InTuneDocs\\EndUser\\install-your-companys-virtual-private-network-VPN-android.md"
-  ],
-  "b4b06232fd6377675c23caec9b7f12625450493b": [
     "InTuneDocs\\EndUser\\install-your-companys-virtual-private-network-VPN-android.md"
   ],
   "30eb42012e269031f9abd3334eeedd0818d860ad": [
@@ -5606,36 +5423,6 @@
     "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
   ],
   "4b43cfe7b11b080a8516233371abd8fd3cb1f94a": [
-    "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
-  ],
-  "9d163b4895afdd85d5660d11437fa9af0b32c744": [
-    "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
-  ],
-  "670aba1ccea9aa1259a2abf7031bf7c56be78979": [
-    "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
-  ],
-  "daf334a3575131e4d49d69844660deb9a7e8c9d3": [
-    "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
-  ],
-  "0377e7500e7f5af0dc78ee887f5b987329f19685": [
-    "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
-  ],
-  "53b554e2438411be21d8c5660b3b9f2aa6bbfd41": [
-    "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
-  ],
-  "8814969300039a0b06946c33c6f4096320eb48ea": [
-    "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
-  ],
-  "696c7be81d2c85bc1ec6c29915924982b42040b5": [
-    "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
-  ],
-  "49b6a52d4c1f21efb4d935cb924889f0808f1f8c": [
-    "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
-  ],
-  "00c4c420b6fbafe95893956411f13a3532b99bbf": [
-    "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
-  ],
-  "dc9c8b2983ae639098c98ada0106311344cdd74a": [
     "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
   ],
   "4367f7f59db9b9803d1793bd07ad533c8e7489ff": [
