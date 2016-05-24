@@ -44,12 +44,6 @@
   "003210b7b282114ee3b8aef81ae7f9bddd2585ca": [
     "InTuneDocs\\EndUser\\company-portal-app-not-supported.md"
   ],
-  "f5d6903ea1300626502033b153385e9902335bd4": [
-    "InTuneDocs\\EndUser\\company-portal-app-not-supported.md"
-  ],
-  "d82c5b7925987dba2917eefb3f7294cb08fb6b47": [
-    "InTuneDocs\\EndUser\\company-portal-app-not-supported.md"
-  ],
   "05dc37621c5eb08a89e752f4ad4fbe09b7a8da6e": [
     "InTuneDocs\\EndUser\\company-portal-frequently-asked-questions.md"
   ],
@@ -1128,18 +1122,6 @@
     "InTuneDocs\\media\\Microsoft-Connect.png"
   ],
   "f50cfc50696aa6fa031668be4a3d3493dc52d78c": [
-    "InTuneDocs\\EndUser\\how-to-encrypt-your-windows-device.md"
-  ],
-  "0648b11fb734e1bbd766f82780f5237d91076e19": [
-    "InTuneDocs\\EndUser\\how-to-encrypt-your-windows-device.md"
-  ],
-  "4f508da975f81007a56e050cfe28105f4acb0e92": [
-    "InTuneDocs\\EndUser\\how-to-encrypt-your-windows-device.md"
-  ],
-  "6d8d1ccfbcba3bca002470c63c36291de91a4cc3": [
-    "InTuneDocs\\EndUser\\how-to-encrypt-your-windows-device.md"
-  ],
-  "0e98e3c9f294953cf125d459afb818a29a8e0163": [
     "InTuneDocs\\EndUser\\how-to-encrypt-your-windows-device.md"
   ],
   "e6267a7107008472855a47d122777da2c97ce361": [
@@ -3724,18 +3706,6 @@
   "6316bf2cfc4472f079e0b19b54f7b083618fdbea": [
     "InTuneDocs\\EndUser\\how-do-i-find-the-serial-number-on-my-device-ios.md"
   ],
-  "f0f27c1488577abf17144c47c63a8e5f3fac0548": [
-    "InTuneDocs\\EndUser\\how-do-i-find-the-serial-number-on-my-device-ios.md"
-  ],
-  "2829f057b5d9ad8e067ddb6229a0fbfe0e869bea": [
-    "InTuneDocs\\EndUser\\how-do-i-find-the-serial-number-on-my-device-ios.md"
-  ],
-  "26e469b33431ba3bbc54a74b72fb753820e3585f": [
-    "InTuneDocs\\EndUser\\how-do-i-find-the-serial-number-on-my-device-ios.md"
-  ],
-  "40cef66b4b11251af272c428eeaa8ea5731d81f1": [
-    "InTuneDocs\\EndUser\\how-do-i-find-the-serial-number-on-my-device-ios.md"
-  ],
   "80e9253e08e5aca9c89f0968e7656593b106a93d": [
     "InTuneDocs\\EndUser\\install-and-sign-in-to-the-intune-company-portal-app-ios.md"
   ],
@@ -3758,24 +3728,6 @@
     "InTuneDocs\\EndUser\\install-and-sign-in-to-the-intune-company-portal-app-ios.md"
   ],
   "e2276fd87b2642166dc7db05592db5e85f987e30": [
-    "InTuneDocs\\EndUser\\install-the-microsoft-intune-company-portal-app-android.md"
-  ],
-  "f35a0ab339f7f2ba4755ac11ef4c2d43066c4c5c": [
-    "InTuneDocs\\EndUser\\install-the-microsoft-intune-company-portal-app-android.md"
-  ],
-  "0808c306d0db51492fad20e7a865b0577128beee": [
-    "InTuneDocs\\EndUser\\install-the-microsoft-intune-company-portal-app-android.md"
-  ],
-  "497f75e118242282649bce0b12b518b257d45bcb": [
-    "InTuneDocs\\EndUser\\install-the-microsoft-intune-company-portal-app-android.md"
-  ],
-  "3cbef2cf2a569f55089c94df54d8a51cc2cbceaa": [
-    "InTuneDocs\\EndUser\\install-the-microsoft-intune-company-portal-app-android.md"
-  ],
-  "4d52889f102ad50f8bb54d50e15857cca212d324": [
-    "InTuneDocs\\EndUser\\install-the-microsoft-intune-company-portal-app-android.md"
-  ],
-  "bd8d0801be5f3c40b3c8bea2ac7d131da8d68cc8": [
     "InTuneDocs\\EndUser\\install-the-microsoft-intune-company-portal-app-android.md"
   ],
   "7d04c49419102df8d152148a4ddf99b25cf7444d": [
@@ -6337,27 +6289,6 @@
   "f81411b050720d034f8b674872dce5ff68a97c77": [
     "InTuneDocs\\DeployUse\\ios-direct-enrollment-in-microsoft-intune.md"
   ],
-  "1ebd33dc1776cb1d63a9e4d4fb414aa3fcfe511d": [
-    "InTuneDocs\\DeployUse\\ios-direct-enrollment-in-microsoft-intune.md"
-  ],
-  "c7c8cc2db8378905a49f9b47863f4300601d279b": [
-    "InTuneDocs\\DeployUse\\ios-direct-enrollment-in-microsoft-intune.md"
-  ],
-  "11201eaec97c554d09a0788b9e64fcabe1aefc51": [
-    "InTuneDocs\\DeployUse\\ios-direct-enrollment-in-microsoft-intune.md"
-  ],
-  "4558e8adc6d13e323d59899211e67638e9c93414": [
-    "InTuneDocs\\DeployUse\\ios-direct-enrollment-in-microsoft-intune.md"
-  ],
-  "84c6879c527c11f0b362bfd7e03bc6f40fdc6bb3": [
-    "InTuneDocs\\DeployUse\\ios-direct-enrollment-in-microsoft-intune.md"
-  ],
-  "334c6e94a8acfd8a1a4e0da8d50834572b1ebf91": [
-    "InTuneDocs\\DeployUse\\ios-direct-enrollment-in-microsoft-intune.md"
-  ],
-  "3ba62617509cf5c75d1360799d723e54791f2295": [
-    "InTuneDocs\\DeployUse\\ios-direct-enrollment-in-microsoft-intune.md"
-  ],
   "cde197d106eebce348d9962910e8def86b8e4caa": [
     "InTuneDocs\\EndUser\\media\\andr-cert_install-1-cert_missing.png"
   ],
@@ -7058,27 +6989,6 @@
     "InTuneDocs\\GetStarted\\start-with-a-paid-subscription-to-microsoft-intune-step-1.md"
   ],
   "a202f06fef0bc8b7eec730728ec10e5fbf234902": [
-    "InTuneDocs\\GetStarted\\start-with-a-paid-subscription-to-microsoft-intune-step-2.md"
-  ],
-  "67db3785bf6bc648443f9779198735eb9b2227a9": [
-    "InTuneDocs\\GetStarted\\start-with-a-paid-subscription-to-microsoft-intune-step-2.md"
-  ],
-  "d5e54bdf0f02ba18d5a17ec3605b57e0e5d66590": [
-    "InTuneDocs\\GetStarted\\start-with-a-paid-subscription-to-microsoft-intune-step-2.md"
-  ],
-  "d5f79ae03f323e50801d49fb3900f7eeb4b3cf45": [
-    "InTuneDocs\\GetStarted\\start-with-a-paid-subscription-to-microsoft-intune-step-2.md"
-  ],
-  "c46cdd51891614e4331e464a60ed918469aeb7eb": [
-    "InTuneDocs\\GetStarted\\start-with-a-paid-subscription-to-microsoft-intune-step-2.md"
-  ],
-  "820af04c3d6b55cbed1560c5b991d5533a00c595": [
-    "InTuneDocs\\GetStarted\\start-with-a-paid-subscription-to-microsoft-intune-step-2.md"
-  ],
-  "4548b7335ffd89c41be4b99cf5abe8c0a9c8becf": [
-    "InTuneDocs\\GetStarted\\start-with-a-paid-subscription-to-microsoft-intune-step-2.md"
-  ],
-  "b32df7caa3a3ebd0ea82c16611cb5626ea446d11": [
     "InTuneDocs\\GetStarted\\start-with-a-paid-subscription-to-microsoft-intune-step-2.md"
   ],
   "70a2d32de67f0a69bbc29ca68a1c831c9cf38796": [
