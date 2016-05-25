@@ -1,24 +1,38 @@
 ---
-title: Anpassen von Ansichten für Administratorrollen | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
+# required metadata
+
+title: Anpassen von Konsolenansichten für Administratorrollen | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
-# Anpassen von Ansichten von Intune-Konsole entsprechend Administratorrollen
-Sie können filtern, die Microsoft Intune Admin können die Administratoren nur die Elemente anzuzeigen, die sie benötigen, um ihre Rolle finden Sie unter. Beispielsweise können Sie nur Admin-Konsole Operatoren Malwaredefinitionen aktualisieren oder Zurücksetzen der Kennung auf Geräten zulassen. Sie können dazu mit der Voreinstellung **Bezeichnung** die Sie bestimmten Benutzern zuweisen. Wenn diese Benutzer auf die Verwaltungskonsole zugreifen, sehen sie nur die für ihre Bezeichnung bestimmten Elemente.
 
-Mit dieser Funktion können Sie Mitarbeitern Verwaltungsaufgaben zuweisen, bei gleichzeitiger Gewährleistung der Sicherheit Ihrer Daten Intune.
+# Anpassen von Intune-Konsolenansichten an Administratorrollen
+Sie können die Microsoft Intune-Verwaltungskonsolenansicht filtern, damit Administratoren nur die Elemente anzeigen können, die sie für ihre Rolle benötigen. Beispielsweise empfiehlt es sich, nur den Operatoren der Verwaltungskonsole die Erlaubnis zu erteilen, Malwaredefinitionen zu aktualisieren oder die Kennung auf Geräten zurückzusetzen. Dies erfolgt mithilfe der vorab festgelegten **Bezeichnungen**, die Sie bestimmten Benutzern zuweisen. Wenn diese Benutzer auf die Verwaltungskonsole zugreifen, sehen sie nur die für ihre Bezeichnung bestimmten Elemente.
 
-## Gewusst wie: Erstellen einer benutzerdefinierten Ansicht
+## Erstellen einer benutzerdefinierten Ansicht
 
-1.  In der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com), wählen Sie **Admin** & Gt; **Dienstadministratoren**.
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Option **Verwaltung** &gt; **Dienstadministratoren** aus..
 
-2.  Wählen Sie aus der Liste der Dienstadministratoren den Benutzer, dessen Bezeichnung Sie ändern, und wählen Sie dann möchten **Zugriff verwalten**.
+2.  Wählen Sie aus der Liste der Dienstadministratoren den Benutzer, dessen Bezeichnung Sie ändern möchten, und wählen Sie dann **Zugriff verwalten** aus..
 
 3.  Wählen Sie im Dialogfeld **Zugriff verwalten** die Zugriffsebene, die dem ausgewählten Benutzer zugewiesen werden soll. Es gibt folgende Auswahlmöglichkeiten:
 
@@ -26,13 +40,13 @@ Mit dieser Funktion können Sie Mitarbeitern Verwaltungsaufgaben zuweisen, bei g
     -   **Schreibgeschützter Zugriff**
     -   **Helpdesk – Gruppenknoten**
 
-    Voller Zugriff und nur-Lese-Zugriff sind sich selbst. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
+    „Vollzugriff“ und „schreibgeschützter Zugriff“ sind selbsterklärend. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
 
-    **Helpdesk – Gruppenknoten** beschränkt, was der Administrator kann finden Sie unter und führen Sie die folgenden:
+    **Helpdesk – Gruppenknoten** beschränkt die Möglichkeiten, was der Administrator anzeigen und ausführen kann auf Folgendes:
 
-    -   Listen von Benutzern und Geräten anzeigen. Der Administrator kann nicht Filter verwenden, um die Ansicht zu ändern. Allerdings können Sie Filter ändern, was der Administrator anzeigen kann. Weitere Informationen finden Sie unter [Verwenden von Gruppen zum Verwalten von Benutzern und Geräten mit Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+    -   Anzeigen der Listen von Benutzern und Geräten. Der Administrator kann die Ansicht nicht mithilfe von Filtern ändern. Sie können jedoch mithilfe der Gruppenfilterung definieren, was dem Administrator angezeigt wird. Weitere Informationen finden Sie unter [Verwenden von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)..
 
-    -   Drucken Sie die Liste der Benutzer und Geräte
+    -   Drucken der Liste der Benutzer und Geräte
 
     -   Exportieren der Liste der Benutzer und Geräte
 
@@ -56,11 +70,9 @@ Mit dieser Funktion können Sie Mitarbeitern Verwaltungsaufgaben zuweisen, bei g
 
         -   Zurücksetzen der Kennung
 
-Wenn der Administrator konfigurierten neben die Intune-Verwaltungskonsole geöffnet wird, sie die Zugriffsebene erhält, die Sie angegeben haben.
+Wenn der von Ihnen konfigurierte Administrator das nächste Mal die Intune-Verwaltungskonsole öffnet, wird ihm die von Ihnen festgelegte Zugriffsebene zugewiesen.
 
 
-
-
-<!--HONumber=Mar16_HO4-->
+<!--HONumber=May16_HO1-->
 
 
