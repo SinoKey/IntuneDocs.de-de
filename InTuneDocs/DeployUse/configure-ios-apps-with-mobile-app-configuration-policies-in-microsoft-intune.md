@@ -1,16 +1,32 @@
 ---
-title: Konfigurieren Sie iOS-apps mit Konfigurationsrichtlinien für mobile Anwendung in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
+# required metadata
+
+title: Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
-# Konfigurieren Sie iOS-apps mit Konfigurationsrichtlinien für mobile Anwendung in Microsoft Intune
-Verwenden von Konfigurationsrichtlinien für mobile Anwendung in Microsoft Intune Einstellungen angeben, die möglicherweise erforderlich, wenn der Benutzer eine Anwendung ausgeführt wird. Beispielsweise kann eine App vom Benutzer Folgendes anfordern:
+
+# Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune
+Verwenden Sie Konfigurationsrichtlinien für mobile Apps in Microsoft Intune, um Einstellungen anzugeben, die beim Ausführen einer App durch den Benutzer erforderlich sind. Beispielsweise kann eine App vom Benutzer Folgendes anfordern:
 
 -   Eine benutzerdefinierte Portnummer für die Ausführung
 
@@ -32,13 +48,13 @@ Sie stellen diese Richtlinien nicht direkt für Benutzer und Geräte bereit. Sta
 > -   **Verwaltete iOS-App aus dem App Store**
 > -   **App-Paket für iOS**
 > 
-> Weitere Informationen zu app-Installationstypen finden Sie unter [Planen der Bereitstellung von Apps in Microsoft Intune](../Topic/plan-for-app-deployment-in-Microsoft-Intune.md).
+> Weitere Informationen zu Installationstypen von Apps finden Sie unter [Bereitstellen von Apps mit Microsoft Intune](deploy-apps.md)..
 
 ## Konfigurieren einer Konfigurationsrichtlinie für mobile Apps
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com)auf **Richtlinie** &gt; **Übersicht** &gt; **Richtlinie hinzufügen**.
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Übersicht** &gt; **Richtlinie hinzufügen**..
 
-2.  Erweitern Sie in der Liste der Richtlinien den Eintrag **iOS**, klicken Sie auf **Mobile App-Konfiguration**, und klicken Sie dann auf **Richtlinie erstellen**.
+2.  Erweitern Sie in der Liste der Richtlinien den Eintrag **iOS**, klicken Sie auf **Mobile App-Konfiguration**, und klicken Sie dann auf **Richtlinie erstellen**..
 
     > [!TIP]
     > Sie können für diesen Richtlinientyp nur benutzerdefinierte Einstellungen konfigurieren. Empfohlene Einstellungen sind nicht verfügbar.
@@ -48,34 +64,34 @@ Sie stellen diese Richtlinien nicht direkt für Benutzer und Geräte bereit. Sta
 4.  Geben oder fügen Sie im Abschnitt **Konfigurationsrichtlinie für mobile Apps** der Seite eine XML-Eigenschaftenliste mit den App-Konfigurationseinstellungen ein, die im Feld verwendet werden sollen.
 
     > [!TIP]
-    > Weitere Informationen zu XML-Listen finden Sie unter [Grundlegendes zu XML-Eigenschaft listet](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) im iOS-Entwicklerbibliothek.
+    > Weitere Informationen zu XML-Eigenschaftenlisten finden Sie unter [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in der iOS Developer Library.
     > 
     > Das Format der XML-Eigenschaftenliste variiert je nach der App, die Sie konfigurieren. Wenden Sie sich an den Hersteller der App, um ausführliche Informationen über das genau zu verwendende Format zu erhalten.
     > 
     > Intune unterstützt die folgenden Datentypen in einer Eigenschaftenliste:
     > 
-    > & Lt; Integer & Gt;
-    > & Lt; Real & Gt;
-    > &lt;Zeichenfolge&gt;
-    > & Lt; Array & Gt;
-    > & Lt; Dict & Gt;
-    > & Lt; true / & Gt; oder & Lt; "false" / & Gt;
+    > &lt;integer&gt;
+    > &lt;real&gt;
+    > &lt;string&gt;
+    > &lt;array&gt;
+    > &lt;dict&gt;
+    > &lt;true /&gt; oder &lt;false /&gt;
     > 
     > Weitere Informationen zu Datentypen finden Sie unter [About Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) in der iOS Developer Library.
     >
         > Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschaftenliste:
     >    
-    > \{\{userprincipalname\}\} - (Beispiel: **John@contoso.com**)
-    > \{\{mail\}\} - (Beispiel: **John@contoso.com**)
-    > \{\{partialupn\}\} - (Beispiel: **John**)
-    > \{\{accountid\}\} - (Beispiel: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-    > \{\{deviceid\}\} - (Beispiel: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-    > \{\{userid\}\} - (Beispiel: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-    > \{\{username\}\} - (Beispiel: **John Doe**)
+    > \{\{userprincipalname\}\} – (Beispiel: **John@contoso.com**)
+    > \{\{mail\}\} – (Beispiel: **John@contoso.com**)
+    > \{\{partialupn\}\} – (Beispiel: **John**)
+    > \{\{accountid\}\} – (Beispiel: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
+    > \{\{deviceid\}\} – (Beispiel: **b9841cd9-9843-405f-be28-b2265c59ef97**)
+    > \{\{userid\}\} – (Beispiel: **3ec2c00f-b125-4519-acf0-302ac3761822**)
+    > \{\{username\}\} – (Beispiel: **John Doe**)
     > \{\{serialnumber\}\} - (Beispiel: **F4KN99ZUG5V2**) für iOS-Geräte
     > \{\{serialnumberlast4digits\}\} - (Beispiel: **G5V2**) für iOS-Geräte
 >
-> Die \ {\ {und \} \} Zeichen von nur Tokentypen verwendet werden und dürfen nicht für andere Zwecke verwendet werden.
+> Die Zeichen \{\{ und \}\} werden nur von Tokentypen verwendet und dürfen nicht für andere Zwecke verwendet werden.
 
 
 
@@ -83,27 +99,27 @@ Sie stellen diese Richtlinien nicht direkt für Benutzer und Geräte bereit. Sta
 5.  Klicken Sie auf **Überprüfen** um sicherzustellen, dass der eingegebene XML-Code einem gültigen Format für Eigenschaftenlisten entspricht.
 
     > [!IMPORTANT]
-    > Beim Klicken auf **Validate**, Intune überprüft, ob der eingegebene XML-Code in einem gültigen Format ist. Es wird nicht überprüft, ob die XML-Eigenschaftenliste mit der App verwendet werden kann, der sie zugeordnet ist.
+    > Beim Klicken auf **Überprüfen** prüft Intune, ob der von Ihnen eingegebene XML-Code in einem gültigen Format vorliegt. Es wird nicht überprüft, ob die XML-Eigenschaftenliste mit der App verwendet werden kann, der sie zugeordnet ist.
 
-6.  Klicken Sie abschließend auf **Richtlinie speichern**.
+6.  Klicken Sie abschließend auf **Richtlinie speichern**..
 
 Die neue Richtlinie wird im Knoten **Konfigurationsrichtlinien** angezeigt.
 
 ## Zuordnen einer Konfigurationsrichtlinie für mobile Apps zu einer App
 Nachdem Sie eine Konfigurationsrichtlinie für mobile Apps erstellt haben, müssen Sie sie der iOS-App zuordnen, für die die Einstellungen in der Konfigurationsrichtlinie gelten sollen.
 
-Führen Sie dazu die Schritte zum Erstellen einer app-Bereitstellung in [Bereitstellen von apps für mobile Geräte in Microsoft Intune](Deploy-apps-to-mobile-devices-in-Microsoft-Intune.md). Wenn Sie erreichen die **Mobile App-Konfiguration** Seite des Assistenten wählen Sie die Richtlinie, die Sie mit der app zuordnen möchten die **App-Konfigurationsrichtlinie** Dropdown-Liste.
+Führen Sie dazu die Schritte zum Erstellen einer App-Bereitstellung in [Hinzufügen von Apps für mobile Geräte in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) und [Bereitstellen von Apps mit Microsoft Intune](deploy-apps-in-microsoft-intune.md) aus. Wenn Sie die Seite **Mobile App-Konfiguration** des Assistenten erreichen, wählen Sie in der Dropdownliste **App-Konfigurationsrichtlinie** die Richtlinie aus, die Sie der App zuordnen möchten.
 
 Fahren Sie mit dem Bereitstellen und Überwachen der App-Bereitstellung wie gewohnt fort.
 
 Wenn die bereitgestellte App auf einem Gerät gestartet wird, wird sie mit den Einstellungen ausgeführt, die Sie in der Konfigurationsrichtlinie für mobile Apps konfiguriert haben.
 
 > [!TIP]
-> Wenn eine oder mehrere Konfigurationsrichtlinien für mobile Anwendung in Konflikt stehen, weder Richtlinie wird erzwungen, und in der Intune-Verwaltungskonsole wird der Konflikt gemeldet **Dashboard**.
+> Wenn mindestens eine Konfigurationsrichtlinie für mobile Apps einen Konflikt verursacht, wird keine Richtlinie durchgesetzt, und der Konflikt wird im **Dashboard** der Intune-Verwaltungskonsole gemeldet..
 
-## Beispiel für das Format für die mobile Anwendung XML-Konfigurationsdatei
+## Beispielformat für die XML-Datei für die Konfiguration mobiler Apps
 
-Wenn Sie eine mobile app-Konfigurationsdatei erstellen, können Sie eine oder mehrere der folgenden Werte mit diesem Format angeben:
+Wenn Sie eine Datei für die Konfiguration mobiler Apps erstellen, können Sie einen oder mehrere der folgenden Werte mit diesem Format angeben:
 
 ```
 <dict>
@@ -132,12 +148,8 @@ Wenn Sie eine mobile app-Konfigurationsdatei erstellen, können Sie eine oder me
 ```
 
 
-### Siehe auch
-[Bereitstellen und Konfigurieren von Apps mit Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
-[Bereitstellen von Apps für mobile Geräte in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
 
 
-
-<!--HONumber=Mar16_HO4-->
+<!--HONumber=May16_HO1-->
 
 
