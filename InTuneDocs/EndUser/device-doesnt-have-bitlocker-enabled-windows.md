@@ -1,21 +1,38 @@
 ---
-Titel: Gerät keinen BitLocker aktiviert
-MS.Custom: Na
-MS.Reviewer: Na
-MS.Service: Microsoft Intune
-MS.Suite: Na
-MS.tgt_pltfrm: Na
-MS.topic: Artikel
-MS.AssetId: 
-Autor: Staciebarker
+# required metadata
 
-# Gerät ist nicht BitLocker aktiviert.
+title: Auf dem Gerät ist BitLocker nicht aktiviert | Microsoft Intune
+description:
+keywords:
+author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: e0c5993b-3fa5-411e-bae0-93fb66c49bea
 
-Ihr Unternehmen erfordert, BitLocker, d. h. Software, die das Laufwerk verschlüsselt und schützt Ihre Daten zu aktivieren. Informationen zum Aktivieren von BitLocker auf Windows 10-Geräten finden Sie unter [Gewusst wie: Aktivieren von BitLocker auf Windows 10-Geräten](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d). Wenden Sie sich an Ihren IT-Administrator für andere Geräte.
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
+
+# Auf dem Gerät ist BitLocker nicht aktiviert
+
+Ihr Unternehmen erfordert, dass Sie BitLocker aktivieren, d. h. eine Software, die das Laufwerk verschlüsselt und dabei hilft, Ihre Daten zu schützen. Informationen zum Aktivieren von BitLocker auf Windows 10-Geräten finden Sie unter [Aktivieren von BitLocker auf Windows 10-Geräten](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d). Bitten Sie bei anderen Geräten Ihren IT-Administrator um Hilfe.
 
 ### Weitere Informationen:
 [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Mar16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

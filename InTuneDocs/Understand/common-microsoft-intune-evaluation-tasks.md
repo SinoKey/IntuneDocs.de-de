@@ -36,7 +36,7 @@ Diese Evaluierungsaufgaben bieten illustrierte, schrittweise Anleitungen für h�
 Kehren Sie später erneut zurück, da in naher Zukunft weitere Aufgaben hinzugefügt werden.
 
 ### Weitere Informationen:
-[Intune-Evaluierungsanleitung](get-started-with-a-30-day-trial-of-microsoft-intune.md)
+[Intune-Evaluierungshandbuch](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 
 
 <!--HONumber=May16_HO1-->

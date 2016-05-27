@@ -1,17 +1,34 @@
-Titel: Was geschieht, wenn Sie die Unternehmensportal-app installieren und registrieren Sie Ihr Gerät in Intune?
-MS.Custom: Na
-MS.Reviewer: Na
-MS.Service: Microsoft Intune
-MS.Suite: Na
-MS.tgt_pltfrm: Na
-MS.topic: Artikel
-MS.AssetId: 
-Autor: Staciebarker
-Roboter: Noindex
+---
+# required metadata
 
-# Was geschieht, wenn Sie die Unternehmensportal-app installieren und registrieren Sie Ihr Gerät in Intune?
+title: Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren? | Microsoft Intune
+description:
+keywords:
+author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
 
-Sie beginnen damit, dass Sie die Unternehmensportal-App installieren und dann Ihr Gerät mithilfe der App bei Intune registrieren. Sobald Ihr Gerät registriert ist, können Sie die Unternehmensportal-App für folgende Aufgaben verwenden:
+# optional metadata
+
+ROBOTS: noindex
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
+
+# Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?
+
+Wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder Mac OS X-Gerät bei Intune registrieren, können Sie folgende Aufgaben mit der Unternehmensportal-App ausführen:
 
 -   Zugreifen auf das Netzwerk des Unternehmens und auf E-Mail- sowie andere arbeitsbezogene Dateien
 
@@ -23,39 +40,37 @@ Sie beginnen damit, dass Sie die Unternehmensportal-App installieren und dann Ih
 
 Wenn Sie Ihr Gerät bei Intune registrieren, gestatten Sie damit Ihrem IT-Administrator, Ihr Gerät zu verwalten, damit die Unternehmensinformationen auf dem Gerät geschützt werden.
 
-**Was wird nicht angezeigt**
+**Was für die IT nicht einsehbar ist**
 
--   Anrufliste
+-   Anrufliste und Webverlauf
 
--   SMS
+-   Standort
 
--   Persönliche E-Mail, Kontakte und Kalender
+-   E-Mail-Nachrichten und SMS
 
--   Webverlauf
+-   Kontakte
 
--   Speicherort
+-   Kennwörter
+
+-   Kalender
 
 -   Eigene Aufnahmen
 
--   Personenbezogene Daten
+**Was für die IT einsehbar ist**
 
-**Was sehen**
+-   Modell
+
+-   Seriennummer
+
+-   Betriebssystem
+
+-   App-Namen
 
 -   Besitzer
 
 -   Gerätename
 
--   Seriennummer
-
 -   Hersteller
-
--   Modell
-
--   Betriebssystem
-
--   Unternehmens-Apps
-
--   Persönliche Apps
 
 Wenn Ihr Gerät registriert ist, kann Ihr IT-Administrator die folgenden Aufgaben erledigen:
 
@@ -83,11 +98,11 @@ Wenn Ihr Gerät registriert ist, kann Ihr IT-Administrator die folgenden Aufgabe
 
 -   Aktivieren oder Deaktivieren einer automatischen Synchronisierung von Dateien im Roamingmodus auf dem Gerät. Wenn die automatische Synchronisierung von Dateien zulässig ist, können Roaminggebühren anfallen.
 
-Die Schritte zum Registrieren Ihres Geräts finden Sie unter [enroll-your-ios-device-in-intune-ios] (registrieren Sie Ihr iOS-Gerät in Intune) oder [enroll-your-mac-os-x-device-in-intune-ios] (Registrieren Ihres Mac OS X-Geräts in Intune).
+Informationen zur Vorgehensweise beim Registrieren finden Sie unter [Registrieren Ihres iOS-Geräts bei Intune](enroll-your-device-in-intune-ios.md) oder [Registrieren Ihres Mac OS X-Geräts bei Intune](enroll-your-device-in-intune-mac-os-x.md)..
 
 ### Weitere Informationen:
-[Verwenden IOS- oder Mac OS X-Geräte mit Intune] (using-your-ios-or-mac-os-x Gerät mit intune.md)
+[Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Mar16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

@@ -1,135 +1,152 @@
 ---
-title: Verwalten des Zugriffs auf SharePoint Online mit Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
+# required metadata
+
+title: Beschränken des Zugriffs auf SharePoint Online | Microsoft Intune
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
-# Verwalten des Zugriffs auf SharePoint Online mit Microsoft Intune
-Nutzen Sie die [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)]**SharePoint Online** zum Verwalten des Zugriffs auf OneDrive for Business-Dateien in SharePoint Online basierend auf von Ihnen angegebenen Bedingungen.
 
-Wenn ein bestimmten Benutzer versucht, mit einer unterstützten App wie z. B. OneDrive auf seinem Gerät eine Verbindung mit einer Datei herzustellen, erfolgt die folgende Auswertung:
+# Beschränken des Zugriffs auf SharePoint Online mit Microsoft Intune
+Verwenden Sie den bedingten Zugriff von [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], um den Zugriff auf Dateien zu steuern, die in SharePoint Online gespeichert sind.
+Der bedingte Zugriff besteht aus zwei Komponenten:
+- Eine Gerätekompatibilitätsrichtlinie, die das Gerät erfüllen muss, um als kompatibel bewertet zu werden.
+- Eine Richtlinie für bedingten Zugriff, in der Sie die Bedingungen festlegen, die das Gerät erfüllen muss, um auf den Dienst zugreifen zu können.
+Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
-![](../Image/ConditionalAccess8-6.png)
+Wenn ein Benutzer versucht, mit einer unterstützten App wie z. B. OneDrive auf seinem Gerät eine Verbindung mit einer Datei herzustellen, erfolgt die folgende Auswertung:
 
-Zur Verbindung mit den erforderlichen Dateien müssen das Gerät:
+![Diagramm zur Veranschaulichung der Entscheidungspunkte, mit denen ermittelt wird, ob ein Gerät Zugriff auf SharePoint erhält oder blockiert wird ](../media/ConditionalAccess8-6.png)
 
--   Es muss bei [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] oder einem in die Domäne eingebundenen PC registriert sein.
+>[!IMPORTANT]
+>Der bedingte Zugriff für PCs und Windows 10 Mobile-Geräte mit Apps, die die moderne Authentifizierung verwenden, steht zurzeit nicht für alle Intune-Kunden zur Verfügung. Wenn Sie diese Funktionen bereits verwenden, müssen Sie keine weiteren Maßnahmen ergreifen. Sie können diese weiter verwenden.
 
--   Es muss in Azure Active Directory registriert sein (dies erfolgt automatisch bei der Registrierung des Geräts in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]).
+>Wenn Sie keine Richtlinien für bedingten Zugriff für PCs oder Windows 10 Mobile-Geräte mit Apps, die die moderne Authentifizierung verwenden, erstellt haben und dies jetzt tun möchten, müssen Sie eine Anforderung übermitteln.  Allgemeine Informationen, Informationen zu bekannten Problemen sowie Informationen zum Zugriff auf dieses Feature finden Sie auf der [Connect-Website](http://go.microsoft.com/fwlink/?LinkId=761472)..
 
-    Für die Domäne eingebundenen PC müssen Sie es so eingerichtet [automatisch registrieren](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) mit Azure Active Directory.
-    >[!IMPORTANT]
-    >Bedingter Zugriff für PCs ist nicht für alle Kunden, Intune derzeit verfügbar. Wenn Sie bereits bedingten Zugriff für PCs verwenden, brauchen Sie keine Maßnahmen ergreifen. Sie können weiterhin verwenden.
-    Wenn Sie keine Richtlinien für bedingten Zugriff für PCs erstellt haben, müssen Sie eine Anforderung für den Zugriff.  Sie finden weitere Informationen zu bekannten Problemen sowie für den Zugriff auf diese Funktion auf der [Website](http://go.microsoft.com/fwlink/?LinkId=761472).
+**Bevor** Sie eine bedingte Zugriffsrichtlinie für SharePoint Online konfigurieren, müssen folgende Voraussetzungen erfüllt sein:
+- Sie müssen über ein **SharePoint Online-Abonnement** verfügen, und Benutzer müssen für SharePoint Online lizenziert sein.
+- Sie müssen über ein Abonnement für die **Enterprise Mobility Suite** oder **Azure Active Directory Premium** verfügen..
 
--   Es muss mit allen festgelegten Kompatibilitätsrichtlinien von [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] kompatibel sein.
+  Zum Herstellen einer Verbindung mit den gewünschten Dateien muss das Gerät die folgenden Voraussetzungen erfüllen:
+-   Es muss bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] oder einem in die Domäne eingebundenen PC **registriert** sein.
+
+-   Es muss in Azure Active Directory **registriert** sein (dies erfolgt automatisch bei der Registrierung des Geräts in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+
+
+-   Es muss mit allen bereitgestellten Kompatibilitätsrichtlinien von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kompatibel sein.
 
 Der Gerätestatus wird in Azure Active Directory gespeichert. Die Anwendung gewährt oder blockiert den Zugriff auf Dateien entsprechend den von Ihnen angegebenen Bedingungen.
 
 Wenn eine Bedingung nicht erfüllt wird, erhält der Benutzer bei der Anmeldung die folgenden Meldungen:
 
--   Wenn das Gerät nicht registriert [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], oder in Azure Active Directory, eine Meldung mit Anweisungen zum Installieren der Unternehmensportal-app und registrieren.
+-   Wenn das Gerät nicht bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] oder in Azure Active Directory registriert ist, wird eine Meldung mit Anweisungen zum Installieren der Unternehmensportal-App und zum Registrieren des Geräts angezeigt.
 
--   Wenn das Gerät nicht kompatibel ist, wird eine Meldung angezeigt, die den Benutzer anweist die [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] Unternehmensportal-Website, wo sie Informationen über das Problem und dessen Lösung finden können.
+-   Wenn das Gerät nicht kompatibel ist, wird eine Meldung angezeigt, die den Benutzer zum [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Unternehmensportalwebsite oder zur Unternehmensportal-App weiterleitet. Dort findet der Benutzer Informationen zum Problem und zur Lösung.
 
--   Für PCs:
+## Unterstützung für mobile Geräte
+- iOS 7.1 und höher
+- Android 4.0 und höher, Samsung KNOX Standard 4.0 oder höher
+- Windows Phone 8.1 und höher
 
-    -   Wenn die Richtlinie das Beitreten zu einer Domäne erfordert und der PC nicht in die Domäne eingebunden ist, wird die Meldung angezeigt, dass der IT-Administrator kontaktiert werden sollte.
+## Unterstützung für PCs
+- Windows 8.1 und höher (bei Registrierung mit Intune)
+- Windows 7.0 oder Windows 8.1 (bei Einbindung in eine Domäne)
 
-    -   Wenn die Richtlinie zum Beitreten zu einer Domäne erforderlich festgelegt ist, oder kompatibel, und der PC wird nicht der Anforderungen erfüllt, wird eine Meldung angezeigt, mit Informationen zum Installieren der Unternehmensportal-app und registrieren.
+  - In die Domäne eingebundene PCs müssen für die [automatische Registrierung](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) bei Azure Active Directory eingerichtet werden.
+AAD DRS wird automatisch für Intune und Office 365-Kunden aktiviert. Kunden, die bereits den AD FS Device Registration Service bereitgestellt haben, sehen keine registrierten Geräte in ihrem lokalen Active Directory.
 
-Sie können den Zugriff auf SharePoint Online in den folgenden Apps steuern :
+  - Wenn die Richtlinie das Beitreten zu einer Domäne erfordert und der PC nicht in die Domäne eingebunden ist, wird die Meldung angezeigt, dass der IT-Administrator kontaktiert werden sollte.
 
--   Microsoft Office Mobile (Android)
+  - Wenn die Richtlinie das Beitreten zu einer Domäne oder Kompatibilität erfordert und der PC keine der Anforderungen erfüllt, wird eine Meldung mit einer Anleitung zum Installieren der Unternehmensportal-App und zur Registrierung angezeigt.
+-    [Die moderne Authentifizierung von Office 365 muss aktiviert sein](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) und alle neuesten Office-Updates enthalten.
 
--   Microsoft OneDrive (Android und iOS)
+    Die moderne Authentifizierung ermöglicht Windows-Clients mit Office 2013 eine ADAL-basierte Anmeldung (Active Directory Authentication Library) und bietet größere Sicherheit durch **mehrstufige Authentifizierung** und **zertifikatbasierte Authentifizierung**..
 
--   Microsoft Word (Android und iOS)
 
--   Microsoft Excel (Android und iOS)
-
--   Microsoft PowerPoint (Android und iOS)
-
--   Microsoft OneNote (Android und iOS)
-
-## Schritte zum Konfigurieren des bedingten Zugriffs für SharePoint Online
+## Konfigurieren des bedingten Zugriffs für SharePoint Online
 
 ### Schritt 1: Konfigurieren von Active Directory-Sicherheitsgruppen
-Bevor Sie beginnen, konfigurieren Sie Azure Active Directory-Sicherheitsgruppen für die bedingte Zugriffsrichtlinien. Sie können diese Gruppen im **Office 365 Admin Center**oder **Intune-Kontenportal**konfigurieren. Die Gruppen enthalten die Benutzer, für die die Richtlinie gelten soll oder die davon ausgeschlossen sind. Bei Benutzern, für die eine Richtlinie gelten soll, muss jedes von ihnen verwendete Gerät die Richtlinie erfüllen, damit sie auf Ressourcen zugreifen können.
+Bevor Sie beginnen, konfigurieren Sie Azure Active Directory-Sicherheitsgruppen für die bedingte Zugriffsrichtlinien. Sie können diese Gruppen im **Office 365 Admin Center**oder **Intune-Kontenportal**konfigurieren. Diese Gruppen werden verwendet, um die Richtlinie auf Benutzer anzuwenden oder Benutzer von der Richtlinie auszunehmen. Bei Benutzern, für die eine Richtlinie gelten soll, muss jedes von ihnen verwendete Gerät die Richtlinie erfüllen, damit sie auf Ressourcen zugreifen können.
 
 Sie können zwei Arten von Gruppentypen in einer SharePoint Online-Richtlinie angeben:
 
--   **Zielgruppen** : Gruppen von Benutzern, für die die Richtlinie gelten soll.
+-   **Zielgruppen**: Gruppen von Benutzern, auf die die Richtlinie angewendet werden soll.
 
--   **Ausgenommene Gruppen** : Gruppen von Benutzern, die von der Richtlinie ausgenommen sind (optional).
+-   **Ausgenommene Gruppen**: Gruppen von Benutzern, die von der Richtlinie ausgenommen sind.
 
 Benutzer, die in beiden Gruppen enthalten sind, werden von der Richtlinie ausgenommen.
 
 ### Schritt 2: Konfigurieren und Bereitstellen einer Kompatibilitätsrichtlinie
-Wichtig ist, dass Sie für alle Geräte, für die die SharePoint Online-Richtlinie gelten soll, eine Kompatibilitätsrichtlinie erstellen und bereitstellen.
+Falls noch nicht bereits geschehen, erstellen Sie für die Benutzer, auf die die SharePoint Online-Richtlinie angewendet werden soll, eine Kompatibilitätsrichtlinie und stellen Sie sie bereit.
 
 > [!NOTE]
-> Wenn Kompatibilitätsrichtlinien für [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] -Gruppen bereitgestellt werden, gelten bedingte Zugriffsrichtlinien für Azure Active Directory-Sicherheitsgruppen.
+> Kompatibilitätsrichtlinien werden für [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Gruppen bereitgestellt, Richtlinien für bedingten Zugriff dagegen werden auf Azure Active Directory-Sicherheitsgruppen angewendet.
 
-Ausführliche Informationen zum Konfigurieren der Konformitätsrichtlinien finden Sie unter [Verwalten von gerätekonformitätsrichtlinien für Microsoft Intune](../Topic/Manage-device-compliance-policies-for-Microsoft-Intune.md).
+Ausführliche Informationen zum Konfigurieren der Kompatibilitätsrichtlinie finden Sie unter [Erstellen einer Kompatibilitätsrichtlinie](create-a-device-compliance-policy-in-microsoft-intune.md)..
 
 > [!IMPORTANT]
-> Wenn Sie keine Kompatibilitätsrichtlinie bereitgestellt haben und dann die SharePoint Online-Richtlinie aktivieren, wird allen Zielgeräten der Zugriff erlaubt.
+> Wenn Sie keine Kompatibilitätsrichtlinie bereitgestellt haben, werden die Geräte als kompatibel ausgewertet.
 
-Wenn Sie soweit sind, fahren Sie mit **Schritt 3**fort.
+Wenn Sie bereit sind, fahren Sie mit **Schritt 3** fort..
 
-### <a name="BKMK_OneDrive"></a>Schritt 3: Konfigurieren der SharePoint Online-Richtlinie
+### Schritt 3: Konfigurieren der SharePoint Online-Richtlinie
 Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompatible Geräte auf SharePoint Online zugreifen dürfen. Diese Richtlinie wird in Azure Active Directory gespeichert.
 
 #### <a name="bkmk_spopolicy"></a>
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com)auf **Richtlinie** &gt; **Bedingter Zugriff** &gt; **SharePoint Online-Richtlinie**.
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** > **Bedingter Zugriff** > **SharePoint Online-Richtlinie**..
+![Screenshot der Seite mit der SharePoint Online-Richtlinie](../media/IntuneSASharePointOnlineCAPolicy.png)
 
-2.  Wählen Sie **Bedingte Zugriffsrichtlinie für SharePoint Online aktivieren**aus.
+2.  Wählen Sie **Richtlinie für bedingten Zugriff für SharePoint Online aktivieren** aus..
 
-3.  Unter **Geräteplattformen**, die Möglichkeit, die Richtlinie für bedingten Zugriff zu übernehmen:
+3.  Unter **Anwendungszugriff** können Sie optional eine Richtlinie für bedingten Zugriff auf Folgendes anwenden:
 
     -   **Alle Plattformen**
 
-        Dies erfordert, dass auf jedem Gerät verwendet zugreifen **SharePoint Online**,  in Intune registriert und mit den Richtlinien kompatibel sein.  Jede Clientanwendung mit **moderne Authentifizierung** ist unterliegt der Richtlinie für bedingten Zugriff, und wenn die Plattform nicht von Intune unterstützt wird, Zugriff auf **SharePoint Online** blockiert wird.
-        Diese Option viele nicht angezeigt, wenn Sie noch nicht mit bedingten Zugriff für PCs.  Verwenden der **bestimmte Plattformen** stattdessen. Bedingter Zugriff für PCs ist nicht für alle Kunden, Intune derzeit verfügbar.   Sie finden weitere Informationen zu bekannten Problemen sowie für den Zugriff auf diese Funktion auf der [Website](http://go.microsoft.com/fwlink/?LinkId=761472).
+        Dies setzt voraus, dass jedes Gerät, das für den Zugriff auf **SharePoint Online** verwendet wird, in Intune registriert und mit den Richtlinien kompatibel ist.  Jede Clientanwendung, die die **moderne Authentifizierung** verwendet, unterliegt der Richtlinie für bedingten Zugriff. Wenn die Plattform zurzeit von Intune nicht unterstützt wird, ist der Zugriff auf **SharePoint** blockiert.
+        >[!TIP]
+        >Wenn Sie den bedingten Zugriff für PCs nicht bereits verwenden, wird Ihnen diese Option möglicherweise nicht angezeigt.  Verwenden Sie stattdessen die Option **Spezifische Plattformen**, Der bedingte Zugriff für PCs steht zurzeit nicht allen Intune-Kunden zur Verfügung.   Allgemeine Informationen, Informationen zu bekannten Problemen sowie Informationen zum Zugriff auf dieses Feature finden Sie auf der [Microsoft Connect-Website](http://go.microsoft.com/fwlink/?LinkId=761472)..
 
+    -   **Bestimmte Plattformen**
 
-    -   **Specific platforms**
+         Die Richtlinie für bedingten Zugriff wird auf jede Client-App angewendet, die die moderne Authentifizierung auf den von Ihnen festgelegten Plattformen verwendet.
 
-        If you choose the **Specific platforms** option, you will see a list of platforms that you can individually select.   Conditional access policy will apply to any client app that is using modern authentication, but only on the platforms you select.
+     Bei Windows-PCs muss der PC entweder in die Domäne eingebunden oder bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] registriert und kompatibel sein. Sie können die folgenden Anforderungen festlegen:
 
-    > [!TIP]
-    > **Modern authentication** brings Active Directory Authentication Library (ADAL)-based sign in to Office clients.
-    >
-    > -   The ADAL based authentication enables Office clients to engage in browser-based authentication (also known as passive authentication).  To authenticate, the user is directed to a sign-in web page.
-    > -   This new sign-in method enables new scenarios such as, conditional access, based on **device compliance** and whether **multi-factor authentication** was performed.
-    >
-    > This [article](https://blogs.office.com/2014/11/12/office-2013-updated-authentication-enabling-multi-factor-authentication-saml-identity-providers/) has more detailed information on how modern authentication works.
+     -   **Geräte müssen in eine Domäne eingebunden oder kompatibel sein.** Wählen Sie diese Option aus, wenn Sie festlegen möchten, dass die PCs entweder in die Domäne eingebunden oder mit den in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] festgelegten Richtlinien kompatibel sein sollen. Wenn der PC keine der Anforderungen erfüllt, wird der Benutzer aufgefordert, das Gerät bei Intune zu registrieren. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-    For windows PCs, the PC must either be domain joined, or enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] and compliant. You can set the following requirements:
+     -   **Geräte müssen in eine Domäne eingebunden sein.** Wählen Sie diese Option aus, wenn Sie festlegen möchten, dass die PCs für den Zugriff auf Exchange Online in die Domäne eingebunden sein müssen. Wenn der Computer in keine Domäne eingebunden ist, wird der E-Mail-Zugriff blockiert und der Benutzer aufgefordert, den IT-Administrator zu kontaktieren.
 
-    -   **Devices must be domain joined or compliant.** This means that the PCs must either be domain joined or compliant with the policies set in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]. If the PC does not meet either of these requirements, the user is prompted to enroll the device with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
-
-    -   **Devices must be domain joined.** This means that the PCs must be domain joined to access Exchange Online. If the PC is not domain joined access to email is blocked and the user is prompted to contact the IT admin.
-
-    -   **Devices must be compliant.** This means that the PCs must be enrolled in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] and compliant. If the PC is not enrolled, a message with instructions on how to enroll is displayed.
+     -   **Geräte müssen kompatibel sein.** Wählen Sie diese Option aus, wenn Sie festlegen möchten, dass die PCs bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] registriert und kompatibel sein. Wenn der PC nicht registriert ist, wird eine Meldung mit Anweisungen zur Registrierung angezeigt.
 
 4.  Klicken Sie unter **Zielgruppen**auf **Ändern** , um die Active Directory-Sicherheitsgruppen auszuwählen, für die die Richtlinie gelten soll. Sie können dies für alle Benutzer oder nur für ausgewählte Benutzergruppen festlegen.
 
 5.  Klicken Sie unter **Ausgenommene Gruppen**optional auf **Ändern** , um die Active Directory-Sicherheitsgruppen auszuwählen, die von dieser Richtlinie ausgenommen werden.
 
-6.  Klicken Sie abschließend auf **Speichern**.
+6.  Klicken Sie abschließend auf **Speichern**..
 
 Die Richtlinie für bedingten Zugriff wird sofort wirksam und muss nicht explizit bereitgestellt werden.
 
 ### Schritt 4: Überwachen der Richtlinien für Kompatibilität und bedingten Zugriff
-Im Arbeitsbereich **Gruppen** können Sie den Status beim bedingten Zugriff Ihrer Geräte anzeigen.
+Im Arbeitsbereich **Gruppen** können Sie den Status Ihrer Geräte anzeigen.
 
 Wählen Sie eine beliebige Gruppe von Mobilgeräten und dann auf der Registerkarte **Geräte** einen der folgenden **Filter**aus:
 
@@ -139,10 +156,10 @@ Wählen Sie eine beliebige Gruppe von Mobilgeräten und dann auf der Registerkar
 
 -   **Geräte, die bei AAD registriert und kompatibel sind** : Diese Geräte können auf SharePoint Online zugreifen.
 
-## Siehe auch
-[Verwalten des Zugriffs auf E-Mail und SharePoint mit Microsoft Intune](../Topic/Manage-access-to-email-and-SharePoint-with-Microsoft-Intune.md)
+### Weitere Informationen:
+[Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste mit Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=Mar16_HO4-->
+<!--HONumber=May16_HO1-->
 
 

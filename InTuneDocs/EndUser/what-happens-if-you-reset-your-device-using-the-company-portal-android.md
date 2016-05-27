@@ -1,24 +1,43 @@
 ---
-Titel: Was geschieht, wenn Sie Ihr Gerät über das Unternehmensportal zurücksetzen?
-MS.Reviewer: Na
-MS.Custom: Na
-MS.Suite: Na
-MS.tgt_pltfrm: Na
-MS.topic: Artikel
-MS.AssetId:
+# required metadata
 
-# Was geschieht, wenn Sie Ihr Gerät über das Unternehmensportal zurücksetzen?
+title: Was geschieht, wenn Sie Ihr Gerät mithilfe des Unternehmensportals zurücksetzen? | Microsoft Intune
+description:
+keywords:
+author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 5d4e31a2-7bda-4d62-a0ba-c31e77ecea03
 
-Wenn Sie das Unternehmensportal verwenden, um Ihr Persönliches Gerät zurücksetzen, möglicherweise einige apps oder Einstellungen auf dem Gerät gelöscht werden u. a. Ihre persönlichen Daten. Was auf den einzelnen Geräten geschieht, hängt vom Typ des Geräts und seiner Verwendung ab, wie in der folgenden Tabelle beschrieben.
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
+
+# Was geschieht, wenn Sie Ihr Gerät mithilfe des Unternehmensportals zurücksetzen?
+
+Wenn Sie das Unternehmensportal zum Zurücksetzen Ihres Android-Geräts verwenden, werden möglicherweise einige Apps oder Einstellungen auf Ihrem Gerät gelöscht. Dazu können auch Ihre persönlichen Daten zählen. Was auf den einzelnen Geräten geschieht, hängt vom Typ des Geräts und seiner Verwendung ab, wie in der folgenden Tabelle beschrieben.
 
 |Gerätekonfiguration und -verwaltung|Gerätetyp|
 |---------------------------------------|---------------|
-|Ihr IT-Administrator verwaltet Ihr mobiles Gerät|Wenn Sie Ihr Android-Gerät zurücksetzen, das Gerät wird nicht mehr im Unternehmensportal angezeigt und Ihr Unternehmens-e-Mail-Konto wird gelöscht, und nicht gespeicherte e-Mails werden gelöscht.|
-|Das Gerät kann nur auf Firmen-E-Mail zuzugreifen.|Wenn Sie Ihr Android-Gerät zurücksetzen, Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt, und das Unternehmensportal versucht das Gerät auf die Standardeinstellungen des Herstellers zurücksetzen. Alle Ihre persönlichen Daten und Einstellungen werden gelöscht.|
+|Ihr IT-Administrator verwaltet Ihr mobiles Gerät|Wenn Sie Ihr Android-Gerät zurücksetzen, wird Ihr Gerät nicht mehr im Unternehmensportal angezeigt. Ihr Unternehmens-E-Mail-Konto wird ebenso wie nicht gespeicherte E-Mails gelöscht.|
+|Das Gerät kann nur auf Firmen-E-Mail zuzugreifen.|Wenn Sie Ihr Android-Gerät zurücksetzen, wird Ihr Gerät nicht mehr im Unternehmensportal angezeigt, und das Unternehmensportal versucht, das Gerät auf die Werkseinstellungen des Herstellers zurückzusetzen. Alle Ihre persönlichen Daten und Einstellungen werden gelöscht.|
 
 ### Weitere Informationen:
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Mar16_HO4-->
+<!--HONumber=May16_HO1-->
 
 

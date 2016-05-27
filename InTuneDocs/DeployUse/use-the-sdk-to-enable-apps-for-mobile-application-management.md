@@ -1,34 +1,50 @@
 ---
-Titel: Verwenden des SDK für apps für die Verwaltung der mobilen Anwendung aktivieren
-MS.Custom: Na
-MS.Reviewer: Na
-MS.Service: Microsoft Intune
-MS.Suite: Na
-MS.tgt_pltfrm: Na
-MS.topic: Artikel
-MS.AssetId: 26b00081-7c05-4969-ace1-0585e44d5cd2
-Autor: Staciebarker
+# required metadata
+
+title: Verwenden des SDKs zum Aktivieren von Apps für die Verwaltung von mobilen Anwendungen | Microsoft Intune
+description:
+keywords:
+author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
-# Verwenden des SDK für apps für die Verwaltung der mobilen Anwendung aktivieren
-Verwenden Sie das Microsoft Intune App-SDK, um Intune verwalten Sie bestimmte Features des IOS- oder Android mobiler apps zu aktivieren. Nachdem Ihre app aktiviert ist, können Sie Richtlinien für die app bereitstellen. Diese Richtlinien verwenden diese Funktionen zum Schutz Ihrer Unternehmensdaten. Beispiele für die Schutzmaßnahmen, die Sie, mit dem SDK implementieren können-Typen sind:
 
--   Verhindert, dass Benutzer kopieren von corporate Dokumenten in der cloud
+# Verwenden des SDKs zum Aktivieren von Apps für die Verwaltung von mobilen Anwendungen
+Verwenden Sie das Microsoft Intune App-SDK, um es Intune zu ermöglichen, bestimmte Features Ihrer mobilen iOS- oder Android-Apps zu verwalten. Nachdem Ihre App aktiviert ist, können Sie für die App Richtlinien bereitstellen. Diese Richtlinien verwenden diese Funktionen zum Schutz Ihrer Unternehmensdaten. Beispiele für die Arten von Schutz, die Sie mit dem SDK implementieren können:
 
--   Verschlüsselung von Daten, die von der Anwendung auf dem Gerät gespeichert werden.
+-   Benutzer am Kopieren von Unternehmensdokumenten in die Cloud hindern
+
+-   Verschlüsselung von Daten erfordern, die von der App auf dem Gerät gespeichert werden
 
 -   Erzwingen der Verwendung eines verwalteten Browsers
 
--   Remotezurücksetzung Unternehmensdaten aus der app
+-   Remotezurücksetzung von Unternehmensdaten über die App
 
-Benötigen Sie Zugriff auf die app-Quellcode für das SDK verwenden, aber Sie können die meisten SDK-Funktionen aktivieren, ohne die app-Verhalten zu ändern.
+Sie benötigen den Zugriff auf den Quellcode der App, um das SDK verwenden zu können. Sie können jedoch die meisten SDK-Funktionen aktivieren, ohne das Verhalten der App zu ändern.
 
-Eine Übersicht über das SDK, finden Sie unter der [Übersicht](https://msdn.microsoft.com/en-us/library/mt627767.aspx) Seite. Mit dem Intune-App-SDK finden Sie unter [Erste Schritte mit dem Microsoft Intune App SDK](https://msdn.microsoft.com/library/mt627766.aspx).
+Eine Übersicht über das SDK finden Sie unter [Übersicht](https://msdn.microsoft.com/en-us/library/mt627767.aspx). Informationen zum Verwenden des Intune-App-SDKs finden Sie unter [Erste Schritte mit dem Microsoft Intune App SDK](https://msdn.microsoft.com/library/mt627766.aspx)..
 
 ### Weitere Informationen:
-[Entscheiden Sie, wie Sie apps für die Verwaltung der mobilen Anwendung mit Microsoft Intune vorbereiten](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
+[Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Mar16_HO1-->
+<!--HONumber=May16_HO1-->
 
 

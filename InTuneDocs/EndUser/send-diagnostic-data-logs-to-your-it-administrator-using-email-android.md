@@ -1,31 +1,52 @@
 ---
-Titel: Diagnosedaten Protokolle an den IT-Administrator per e-Mail senden
-MS.Reviewer: Na
-MS.Custom: Na
-MS.Suite: Na
-MS.tgt_pltfrm: Na
-MS.topic: Artikel
-MS.AssetId:
+# required metadata
 
-# Senden Sie Diagnosedaten Protokolle an den IT-Administrator per e-Mail
+title: Senden von Diagnosedatenprotokollen an Ihren IT-Administrator per E-Mail | Microsoft Intune
+description:
+keywords:
+author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
 
-Wenn Sie eine Fehlermeldung erhalten, während Sie mit Ihren Geschäfts-, Schul- oder Uni-Apps arbeiten und sich in der Unternehmensportal-App befinden, können Sie Diagnosedatenprotokolle senden, um Ihrem IT-Administrator bei der Diagnose und Behebung des Fehlers zu helfen. Damit alle Details in die Protokolle aufgenommen werden, die Ihrem IT-Administrator die Diagnose des Problems erleichtern, aktivieren Sie die „Ausführliche Protokollierung“.
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
+
+# Senden von Diagnosedatenprotokollen an Ihren IT-Administrator per E-Mail
+
+Wenn Sie auf Ihrem Android-Gerät eine Fehlermeldung erhalten, während Sie mit Ihren Geschäfts- bzw. Schul-Apps arbeiten oder sich in der Unternehmensportal-App befinden, können Sie Diagnosedatenprotokolle senden, um Ihrem IT-Administrator bei der Diagnose und Behebung des Fehlers zu helfen. Damit alle Details in die Protokolle aufgenommen werden, die Ihrem IT-Administrator die Diagnose des Problems erleichtern, aktivieren Sie die „Ausführliche Protokollierung“.
+
+So aktivieren Sie die ausführliche Protokollierung:
 
 1.  Öffnen Sie die Unternehmensportal-App.
 
-2.  Tippen Sie auf **Menü** & Gt;  **Einstellungen**.
+2.  Tippen Sie auf **Menü** &gt;  **Einstellungen**..
+
+    > [!NOTE] 
+    > Je nach Typ des Android-Geräts, das Sie haben, kann **Menü** eine Schaltfläche in der Software oder Taste auf dem Gerät sein.
+
+3.  Tippen Sie unter **Diagnosedaten** auf **Daten senden**..
 
     > [!NOTE]
-    > **Menü** möglicherweise die Schaltfläche eine Software oder Hardware, je nach Art des Android-Gerät müssen.
+    > **Bei ausschließlichem Verwenden von Android-Geräten ab Version 6.0:** Wenn Sie auf **Daten senden** klicken, wird die Meldung **Unternehmensportal den Zugriff auf Fotos, Medien und Dateien auf Ihrem Gerät erlauben?** angezeigt.. 
 
-3.  Unter **Diagnosedaten**, tippen Sie auf **Senden von Daten**.
+    Diese Meldung ist irreführend, da **Microsoft nie auf Fotos, Medien oder Dateien auf Ihrem Gerät zugreift!** Google steuert den Meldungstext, weshalb er von Microsoft nicht geändert werden kann.  Wenn Sie Zugriff gewähren, erlauben Sie Ihrem Gerät lediglich das Schreiben von Datenprotokollen auf die SD-Karte des Geräts, sodass Sie diese Protokolle mithilfe eines USB-Kabels woanders speichern können.
 
-    > [!NOTE]
-    > **Wenn Sie Android Version 6.0 oder höher nur für Geräte nutzen:**  beim Tippen Sie auf **Senden von Daten**, die Meldung, **Unternehmensportal zum Anzeigen Ihrer Fotos, Medien und Dateien auf dem Gerät zulassen?**.
-    > 
-    > Diese Meldung ist irreführend, da **Microsoft nie zugreift, die Fotos, Medien oder Dateien auf Ihrem Gerät!** Google steuert den Nachrichtentext, sodass Microsoft geändert werden kann.  Wenn Sie Zugriff gewähren, alles, was Sie tun, lässt das Gerät schreiben Daten Protokolle auf dem Gerät SD-Karte, Sie diese Protokolle zu verschieben, indem Sie ein USB-Kabel können.
-    > 
-    > Wenn Sie den Zugriff verweigern, erscheint die Meldung erneut Tippen Sie auf  **Senden von Daten**, jedoch können Sie zukünftige Nachrichten deaktivieren, durch Tippen auf die **nie mehr** das Kontrollkästchen.  Wenn Sie später zugreifen möchten, wechseln Sie zu **Einstellungen** & Gt; **Apps** & Gt; **Unternehmensportal** & Gt; **Berechtigungen** & Gt; **Speicher**, und schalten Sie die Berechtigung.
+    Wenn Sie den Zugriff verweigern, wird die Meldung beim nächsten Tippen auf **Daten senden** angezeigt. Sie können künftige Meldungen jedoch deaktivieren, indem Sie das Kontrollkästchen **Nicht mehr nachfragen** aktivieren.  Wenn Sie den Zugriff später erlauben möchten, wechseln Sie zu **Einstellungen** &gt; **Apps** &gt; ** Unternehmensportal** &gt; **Berechtigungen** &gt; **Speicher**, um die Berechtigung zu aktivieren.
 
 4.  Befolgen Sie die Aufforderungen zum Auswählen einer E-Mail-App zum Senden der Protokolle an Ihren IT-Administrator. Die App erstellt eine voradressierte E-Mail, an die alle Protokolle angefügt sind.
 
@@ -33,6 +54,6 @@ Wenn Sie eine Fehlermeldung erhalten, während Sie mit Ihren Geschäfts-, Schul-
 ### Weitere Informationen:
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Mar16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

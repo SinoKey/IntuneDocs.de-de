@@ -1,31 +1,66 @@
 ---
-title: Aktivieren des Zugriffs auf Unternehmensressourcen mithilfe von Zertifikatprofilen in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
+# required metadata
+
+title: Aktivieren des Zugriffs auf Unternehmensressourcen mithilfe von Zertifikatprofilen in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
-# Aktivieren des Zugriffs auf Unternehmensressourcen mithilfe von Zertifikatprofilen in Microsoft Intune
-Wenn Sie Zugriff auf Unternehmensressourcen über ein VPN, Wi-Fi oder e-Mail-Profile aktivieren, müssen Sie die Option zum Sichern, dass der Zugriff mit einem Zertifikat auf jedem Benutzergerät installiert. So funktioniert es:
 
+# Sicherer Zugriff auf Ressourcen mit Zertifikatprofilen in Microsoft Intune
+Wenn Sie den Zugriff auf Unternehmensressourcen über VPN, WLAN oder E-Mail-Profile aktivieren, können Sie diesen Zugriff mit einem auf jedem Benutzergerät installierten Zertifikat absichern. Gehen Sie dazu folgendermaßen vor:
+
+1. Stellen Sie sicher, dass die richtige Zertifikatinfrastruktur eingerichtet ist, wie unter [Konfigurieren der Zertifikatinfrastruktur](configure-certificate-infrastructure.md) beschrieben..
+
+2. Installieren Sie ein Stammzertifikat (oder eine Zwischenzertifizierungsstelle) auf jedem Gerät, damit das Gerät die Rechtmäßigkeit Ihrer Zertifizierungsstelle erkennt. Dazu mit erstellen Sie ein **vertrauenswürdiges Zertifikatprofil** und stellen es bereit. Wenn Sie dieses Profil bereitstellen, wird das Stammzertifikat von den Geräten, die Sie mit Intune verwalten, angefordert und empfangen. Sie müssen für jede Plattform ein eigenes Profil erstellen. Das **vertrauenswürdige Zertifikatprofil** ist für folgende Plattformen verfügbar:
+ -  iOS 7.1 und höher
+ -  Mac OS X 10.9 und höher
+ -  Android 4,0 und höher
+ -  Windows 8.1 und höher
+ -  Windows Phone 8.1 und höher
+
+3. Im nächsten Schritt richten Sie jedes Gerät so ein, dass es ein Zertifikat für die Authentifizierung des E-Mail-, VPN- und WLAN-Zugriffs anfordert, wie unter [Konfigurieren von Intune-Zertifikatprofilen](configure-intune-certificate-profiles.md) beschrieben. Sie können ein **PKCS #12-Zertifikatprofil (.PFX)** oder ein **SCEP-Zertifikatprofil ** für Geräte auf diesen Plattformen erstellen und bereitstellen:
  
-1.   Zuerst installieren Sie ein Stammzertifikat (oder einer Zwischenzertifizierungsstelle) auf jedem Gerät, damit das Gerät die Legitimität von Ihrer Zertifizierungsstelle erkennt. Dazu mit erstellen und Bereitstellen einer **Profil des vertrauenswürdigen Zertifikats**. Wenn Sie dieses Profil bereitstellen, die Geräte, die Sie mit Intune verwalten anfordern und erhalten das Stammzertifizierungsstellen-Zertifikat. Die **Profil des vertrauenswürdigen Zertifikats** für Geräte unter iOS 7.1 und höher, Mac OS X 10.9 und höher, Android 4.0 und höher und Windows Phone 8.1 und höher verfügbar ist. Sie müssen für jede Plattform ein eigenes Profil erstellen.
+-  Android 4,0 und höher
+-  iOS 7.1 und höher
+-  Windows 10 (Desktop und Mobile) und höher 
 
-2.   Im nächsten Schritt stellen Sie jedes Gerät ein Zertifikat für die Authentifizierung von e-Mail, VPN, anzufordern und Wi-Fi-Zugriff. Für Android 4.0 und höher und Windows 10 (Desktop und Mobile) und höher, erstellen und Bereitstellen der **PKCS #12 (. PFX) Certificate Profile**. Verwenden der **SCEP-Zertifikatprofil** für iOS 7.1 und höher, Mac OS X 10.9 und höher, Android 4.0 und höher und Windows Phone 8.1 und höher. Sie müssen für jede Plattform ein eigenes Profil erstellen. Wenn Sie das Profil erstellen ordnen Sie es der **vertrauenswürdiges stammzertifikatprofil** die Sie bereits erstellt haben.
+Verwenden Sie das **SCEP-Zertifikatprofil** für diese Plattformen:
+-   Mac OS X 10.9 und höher
+-   Windows Phone 8.1 und höher
 
-## Nächste Schritte
-- [Konfigurieren der Zertifikatinfrastruktur](Configure-certificate-infrastructure.md)
-- [Konfigurieren von zertifikatprofilen für Intune](Configure-Intune-certificate-profiles.md)
+Sie müssen für jede Plattform ein eigenes Profil erstellen. Nachdem Sie das Profil erstellt haben, ordnen Sie es dem bereits erstellten **vertrauenswürdigen Stammzertifikatprofil** zu.
+
 > [!NOTE]           
-> -    Wenn Sie eine Unternehmenszertifizierungsstelle verfügen, müssen Sie eines erstellen. 
->- Wenn Sie sich entscheiden, müssen basierend auf Ihrer Geräteplattformen, das Profil vereinfacht Certificate Enrollment Protocol (SCEP) verwenden Sie auch einen Server Network Device Enrollment Service (NDES) konfigurieren.
->-  Gibt an, ob SCEP verwendet werden sollen oder oder. PFX-Profile, müssen Sie zum Herunterladen und Konfigurieren des Microsoft Intune-Zertifikatconnectors.
-> Diese Konfiguration wird in diesem Thema beschriebenen [Zertifikatinfrastruktur konfigurieren](Configure-certificate-infrastructure.md).
+> -    Wenn Sie über keine Unternehmenszertifizierungsstelle verfügen, müssen Sie eine erstellen. 
+>- Wenn Sie sich basierend auf Ihren Geräteplattformen entschließen, das Simple Certificate Enrollment-Protokoll (SCEP) zu verwenden, müssen Sie auch einen NDES-Server (Network Device Enrollment Service, Registrierungsdienst für Netzwerkgeräte) konfigurieren.
+>-  Ganz gleich, ob Sie SCEP- oder .PFX-Profile verwenden möchten, müssen Sie den Microsoft Intune-Zertifikatconnector herunterladen und konfigurieren.
+> Die Konfiguration all dieser Komponenten wird im Thema [Konfigurieren der Zertifikatinfrastruktur](configure-certificate-infrastructure.md) beschrieben..
 
-<!--HONumber=Mar16_HO2-->
+### Nächste Schritte
+- [Konfigurieren der Zertifikatinfrastruktur](configure-certificate-infrastructure.md)
+- [Konfigurieren von Intune-Zertifikatprofilen](configure-intune-certificate-profiles.md)
+
+
+
+<!--HONumber=May16_HO1-->
 
 

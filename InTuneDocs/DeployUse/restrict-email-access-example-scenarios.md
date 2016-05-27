@@ -1,68 +1,91 @@
 ---
-title: Beispielszenarien für den e-Mail-Zugriff einschränken | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
+# required metadata
+
+title: Beispielszenarien für die Beschränkung des E-Mail-Zugriffs | Microsoft Intune
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
-# Einschränken des e-Mail-Zugriffs mit Microsoft Intune: Beispielszenarien
+
+# Beschränken des E-Mail-Zugriffs mit Microsoft Intune: Beispielszenarien
+
+## Blockieren des Zugriffs auf Exchange Online durch Benutzer nicht kompatibler Geräte
+### Anforderungen für das Szenario
+- Der Zugriff auf Exchange Online muss für alle Benutzer in der Active Directory-Sicherheitsgruppe **Accounting** blockiert werden, wenn das verwendete Gerät einer von Ihnen bereitgestellten Kompatibilitätsrichtlinie nicht entspricht.
+- Wenn in dieser Gruppe Benutzer vorhanden sind, deren Geräte von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] nicht unterstützt werden, muss der Zugriff auf Exchange Online über diese Geräte blockiert werden.
+- Benutzer in der Active Directory-Sicherheitsgruppe **Finance** müssen von der Richtlinie ausgenommen werden, auch wenn sie sich ebenfalls in der Sicherheitsgruppe **Accounting** befinden.
+
+Um dies zu erreichen, konfigurieren Sie eine Richtlinie für bedingten Zugriff für Exchange Online mit folgenden Einstellungen:
+
+-   Wählen Sie **Richtlinie für bedingten Zugriff konfigurieren** aus..
+
+- Wählen Sie die Plattformen aus, auf denen Sie Zugriff über Apps mit moderner Authentifizierung zulassen möchten.
+- Wählen Sie für Exchange ActiveSync-Apps **Nicht kompatible Geräte auf Plattformen blockieren, die von Microsoft Intune unterstützt werden** und **Alle weiteren Geräte auf Plattformen blockieren, die nicht von Microsoft Intune unterstützt werden**.
+-   Wählen Sie im Abschnitt **Zielgruppe** unter **Ausgewählte Sicherheitsgruppen** die Benutzergruppe **Accounting** aus.
+
+-   Wählen Sie im Abschnitt **Ausgenommen Gruppe** unter **Ausgewählte Sicherheitsgruppen** die Benutzergruppe **Finance** aus.
+
+
+Der folgende Ablauf wird verwendet, um zu entscheiden, welche Geräte auf Exchange Online zugreifen können:
+
+![Ablauf für Gerätezugriff](./media/ConditionalAccess8-5.png)
 
 ## Alle iOS-Geräte, die auf lokales Exchange zugreifen, müssen von Intune verwaltet werden
-In diesem Beispiel verwendet die Organisation nur Geräte mit iOS. Alle diese Geräte müssen durch [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] verwaltet werden, bevor sie auf Exchange zugreifen können.
+### Anforderungen für das Szenario
+- Nur Geräten, auf denen iOS ausgeführt wird, sollte Zugriff auf lokales Exchange gewährt werden.
+- Die Geräte müssen auch bei Intune registriert sein und die Regeln der Kompatibilitätsrichtlinie erfüllen, bevor sie für den Zugriff auf Exchange verwendet werden können.
 
-Dazu muss in der Richtlinie für bedingten Zugriff Folgendes konfiguriert werden:
+Um dies zu erreichen, konfigurieren Sie die folgende Richtlinie für bedingten Zugriff für lokales Exchange mit folgenden Einstellungen:
 
--   Wählen Sie die Option **Bedingte Zugriffsrichtlinie für Exchange Online aktivieren**aus.
+-   Wählen Sie die Option **Zugriff auf lokales Exchange von E-Mail-Apps blockieren, wenn das Gerät nicht kompatibel oder nicht bei Microsoft Intune registriert ist**. Wenn Sie diese Option auswählen, wird die Richtlinie für bedingten Zugriff aktiviert, die erfordert, dass alle Geräte bei Microsoft Intune registriert sein und die Regeln der Kompatibilitätsrichtlinie erfüllen müssen, bevor sie auf Exchange zugreifen können.
 
--   Wählen Sie für Apps mit modernen Authentifizierung **iOS** für die Plattform aus.
+-   Erstellen Sie für die erweiterten Exchange ActiveSync-Einstellungen Folgendes:
 
--   Wählen Sie für Exchange ActiveSync-Apps **Anfordern, dass Mobilgeräte kompatibel sind**  aus, und blockieren Sie den Zugriff auf E-Mail auf Geräten, die nicht von [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]unterstützt werden.
+  -   Eine Plattformausnahme, die Geräten mit iOS erlaubt, auf Exchange zuzugreifen.   
 
--   Eine Plattformausnahme, die Geräten mit iOS erlaubt, auf Exchange zuzugreifen.
-
--   Eine Standardregel, die angibt, dass ein Gerät blockiert werden sollte, wenn es nicht durch andere Regeln abgedeckt wird.
-
-Der folgende Ablauf wird verwendet, um zu entscheiden, welche Geräte auf Exchange zugreifen können:
-
-![](./media/ConditionalAccess8-3.png)
-
-## Android-Geräte können nicht auf Exchange lokal zugreifen. Alle anderen Geräte, die auf Exchange zugreifen, müssen von Intune verwaltet werden.
-In diesem Beispiel möchte die Organisation Geräten mit Android nicht den Zugriff auf Exchange ermöglichen. Alle anderen unterstützten Geräte können auf Exchange zugreifen, solange sie von [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]verwaltet werden.
-
-Dazu muss in der Richtlinie für bedingten Zugriff Folgendes konfiguriert werden:
-
--   Wählen Sie die Option **Bedingte Zugriffsrichtlinie für Exchange Online aktivieren**aus.
-
--   Eine Plattformausnahme, die verhindert, dass Geräte mit Android auf Exchange zugreifen.
-
--   Eine Standardregel, die angibt, dass ein Gerät zugelassen werden sollte, wenn es nicht durch andere Regeln abgedeckt wird.
+  -   Eine Standardregel, die festlegt, dass der Zugriff auf Exchange über ein Gerät, das nicht durch die Plattformausnahmeregel abgedeckt ist, blockiert werden soll. Diese Regel stellt sicher, dass der Zugriff auf Exchange über Geräte, auf denen iOS nicht ausgeführt wird, blockiert wird.
 
 Der folgende Ablauf wird verwendet, um zu entscheiden, welche Geräte auf Exchange zugreifen können:
 
-![](./media/ConditionalAccess8-4.png)
+![Ablauf für Gerätezugriff](./media/ConditionalAccess8-3.png)
 
-## Exchange Online-Zugriff für Benutzer nicht konformer Geräte in einer angegebenen Active Directory-Sicherheitsgruppe blockieren. Geräte in einer anderen Sicherheitsgruppe ausnehmen
-In diesem Szenario müssen alle Benutzer in der Active Directory-Sicherheitsgruppe **Accounting** am Zugriff auf Exchange Online gehindert werden, wenn das Gerät einer von Ihnen bereitgestellten Konformitätsrichtlinie nicht entspricht. Darüber hinaus müssen alle Benutzer in der Active Directory-Sicherheitsgruppe **Finance** von der Richtlinie ausgenommen werden, auch wenn sie ebenfalls in der Sicherheitsgruppe **Accounting** enthalten sind. Schließlich müssen alle Benutzer in dieser Gruppe, deren Geräte nicht von [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]unterstützt werden, am Zugriff auf Exchange Online über dieses Gerät gehindert werden.
+## Kein Android-Gerät darf auf lokales Exchange zugreifen
+### Anforderungen für das Szenario
+- Der Zugriff auf Exchange soll für alle Android-Geräte blockiert werden.
+- Alle anderen unterstützten Geräte können auf Exchange zugreifen, solange sie von Intune verwaltet werden. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-Dazu muss in der Richtlinie für bedingten Zugriff Folgendes konfiguriert werden:
+Um dies zu erreichen, konfigurieren Sie eine Richtlinie für bedingten Zugriff für lokales Exchange mit folgenden Einstellungen:
 
--   Wählen Sie die Option **Bedingten Zugriff für Exchange Online aktivieren**aus.
+-   Wählen Sie die Option **Zugriff auf lokales Exchange von E-Mail-Apps blockieren, wenn das Gerät nicht kompatibel oder nicht bei Microsoft Intune registriert ist**. Durch Auswahl dieser Option wird festgelegt, dass alle Geräte bei Intune registriert sein und die Regeln der Kompatibilitätsrichtlinie erfüllen müssen.
 
--   Wählen Sie **Accounting** unter **Zielgruppen**aus.
+- Erstellen Sie für die erweiterten Exchange ActiveSync-Einstellungen Folgendes:
+  -   Eine Plattformausnahme, die den Zugriff auf Exchange über Android-Geräte blockiert. Diese Regel stellt sicher, dass Android-Geräte nicht für den Zugriff auf Exchange verwendet werden können.
 
--   Wählen Sie **Finance** unter **Ausgenommene Gruppen**aus.
-
--   Wählen Sie unter **Exchange ActiveSync-E-Mail-Apps**die Option **Anfordern, dass Mobilgeräte kompatibel sind**aus.
+  -   Eine Standardregel, die angibt, dass ein Gerät für den Zugriff auf Exchange zugelassen werden soll, wenn es nicht durch andere Regeln abgedeckt wird. Diese Standardregel stellt sicher, dass Geräte, auf denen andere Plattformen als Android ausgeführt werden, die aber von Microsoft Intune unterstützt werden, für den Zugriff auf Exchange verwendet werden können. Sie müssen jedoch bei Intune registriert sein und die Regeln der Kompatibilitätsrichtlinie erfüllen.
 
 Der folgende Ablauf wird verwendet, um zu entscheiden, welche Geräte auf Exchange zugreifen können:
 
-![](./media/ConditionalAccess8-5.png)
+![Ablauf für Gerätezugriff](./media/ConditionalAccess8-4.png)
 
 
-<!--HONumber=Mar16_HO4-->
+<!--HONumber=May16_HO1-->
 
 

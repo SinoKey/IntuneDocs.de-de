@@ -1,59 +1,42 @@
 ---
-Titel: Was geschieht, wenn Sie die Unternehmensportal-app installieren und registrieren Sie Ihr Gerät in Intune?
-MS.Reviewer: Na
-MS.Custom: Na
-MS.Suite: Na
-MS.tgt_pltfrm: Na
-MS.topic: Artikel
-MS.AssetId:
+# required metadata
 
-# Was geschieht, wenn Sie die Unternehmensportal-app installieren und registrieren Sie Ihr Gerät in Intune?
+title: Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren? | Microsoft Intune
+description:
+keywords:
+author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
 
-Sie beginnen damit, dass Sie die Unternehmensportal-App installieren und dann Ihr Gerät mithilfe der App bei Intune registrieren. Sobald Ihr Gerät registriert ist, können Sie die Unternehmensportal-App für folgende Aufgaben verwenden:
+# optional metadata
 
--   Zugriff auf das Unternehmensnetzwerk, e-Mail, und arbeiten Sie Dateien
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
 
--   Abrufen von Unternehmens-apps aus dem Unternehmensportal-app oder die Unternehmensportal-website
+---
+
+
+# Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?
+
+Wenn Sie die Unternehmensportal-App installieren und Ihr Android-Gerät bei Intune registrieren, können Sie folgende Aufgaben mit der Unternehmensportal-App ausführen:
+
+-   Zugreifen auf das Netzwerk des Unternehmens und auf E-Mail- sowie andere arbeitsbezogene Dateien
+
+-   Abrufen von Unternehmens-Apps aus dem Unternehmensportal
 
 -   Automatisches Konfigurieren Ihres geschäftlichen E-Mail-Kontos
 
 -   Zurücksetzen Ihres Smartphones auf die werkseitigen Standardeinstellungen bei Verlust oder Diebstahl
-
-Wenn Sie Ihr Gerät bei Intune registrieren, gestatten Sie damit Ihrem IT-Administrator, Ihr Gerät zu verwalten, damit die Unternehmensinformationen auf dem Gerät geschützt werden.
-
-**Was wird nicht angezeigt**
-
--   Anrufliste
-
--   SMS
-
--   Persönliche E-Mail, Kontakte und Kalender
-
--   Webverlauf
-
--   Speicherort
-
--   Eigene Aufnahmen
-
--   Personenbezogene Daten
-
-**Was sehen**
-
--   Besitzer
-
--   Gerätename
-
--   Seriennummer
-
--   Hersteller
-
--   Modell
-
--   Betriebssystem
-
--   Unternehmens-Apps
-
--   Persönliche Apps
 
 Wenn Sie Ihr Android-Gerät hinzufügen, gewähren Sie Ihrem IT-Administrator eine Zugriffsberechtigung für das Gerät. IT-Administratoren können folgende Dinge tun:
 
@@ -80,6 +63,6 @@ Wenn Sie Ihr Android-Gerät hinzufügen, gewähren Sie Ihrem IT-Administrator ei
 ### Weitere Informationen:
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Mar16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

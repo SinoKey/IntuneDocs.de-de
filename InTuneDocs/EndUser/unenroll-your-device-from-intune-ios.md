@@ -1,27 +1,44 @@
-Titel: Registrierung Ihres Geräts aus Intune
-MS.Custom: Na
-MS.Reviewer: Na
-MS.Service: Microsoft Intune
-MS.Suite: Na
-MS.tgt_pltfrm: Na
-MS.topic: Artikel
-MS.AssetId: 
-Autor: Staciebarker
-Roboter: Noindex
+---
+# required metadata
+
+title: Aufheben der Registrierung Ihres Geräts bei Intune | Microsoft Intune
+description:
+keywords:
+author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
+
+# optional metadata
+
+ROBOTS: noindex
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
 
 # Aufheben der Registrierung Ihres Geräts in Intune
 
-Wenn Sie die Registrierung Ihres Geräts in Intune aufheben, kann Ihr Gerät nicht mehr auf Unternehmensressourcen zugreifen und wird nicht mehr über Intune verwaltet.
+Wenn Sie die Registrierung Ihres iOS-Geräts bei Intune aufheben, kann Ihr Gerät nicht mehr auf Unternehmensressourcen zugreifen und wird nicht mehr über Intune verwaltet.
 
-Zum Aufheben der Registrierung Ihres Geräts aus Intune enthalten, gehen Sie folgendermaßen vor, oder sehen Sie sich diese [video](http://aka.ms/kfz8j1):
+Zum Aufheben der Registrierung Ihres Geräts bei Intune gehen Sie folgendermaßen vor, oder sehen Sie sich dieses [Video](http://aka.ms/kfz8j1) an:
 
 1.  Wählen Sie in der Unternehmensportal-App unter **Meine Geräte**das Gerät aus, dessen Registrierung Sie aufheben möchten.
 
-2.  Tippen Sie auf  **Entfernen** &gt; **Entfernen**.
+2.  Tippen Sie auf **Entfernen** &gt; **Entfernen**..
 
 Wenn Sie die Registrierung Ihres Geräts bei Intune aufheben passiert Folgendes:
 
--   Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt.
+-   Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt
 
 -   Sie können keine Apps mehr über das Unternehmensportal installieren.
 
@@ -38,8 +55,8 @@ Wenn Sie die Registrierung Ihres Geräts bei Intune aufheben passiert Folgendes:
 -   Geräte, die nur für E-Mail konfiguriert sind, werden nicht mehr in der Unternehmensportal-App oder auf der Unternehmensportal-Website angezeigt.
 
 ### Weitere Informationen:
-[Verwenden IOS- oder Mac OS X-Geräte mit Intune] (using-your-ios-or-mac-os-x Gerät mit intune.md)
+[Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Mar16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

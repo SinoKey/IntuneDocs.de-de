@@ -1,34 +1,61 @@
 ---
-title: Rollout-Phasen für die Bereitstellung von Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9fe7eec1-2a6f-404e-8614-977527a7a15b
+# required metadata
+
+title: Rolloutphasen für die Microsoft Intune-Bereitstellung | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 9fe7eec1-2a6f-404e-8614-977527a7a15b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
 
-## Rollout-Phasen - allgemeine Ressourcen
-Die normalen Bereitstellungsphasen technische sind Projektumfang, Proof of Concept, Pilotphase, unternehmensweiten Rollout und Status ausführen. Diese werden hier kurz mit Links zu weiteren Informationen und Empfehlungen zum Durchlaufen der einzelnen Phasen definiert.
 
--   **[Projektumfänge](project-scope.md):** Verstehen der Ziele, Bereitstellung und Rollout-Strategie.
+# Rolloutphasen für Microsoft Intune
+Die typischen Phasen einer technischen Bereitstellung sind Projektumfang, Proof of Concept, Pilot, Rollout im Unternehmen und Ausführung. Im Folgenden finden Sie eine kurze Definition dieser Phasen sowie Links mit weiteren Informationen und Empfehlungen zum Durchlaufen der einzelnen Phasen.
 
--   **[Prüfung des Konzepts](proof-of-concept.md):** technische Bereitstellung und Netzwerk-Architektur.
+<!--these phase descriptions below are way too short -->
 
--   **[Pilot](pilot.md):** mit einer Stichprobe von registrierten Geräten Szenarien, Ressourcen und Bereitstellungsplans mit wenigen Benutzern als Vorbereitung für eine umfassende Einführung zu überprüfen.
+-   [Projektumfang](project-scope.md): Verstehen der Ziele, der Bereitstellung und der Rolloutstrategie.
 
--   **[Unternehmensweiten Rollout](enterprise-rollout.md):** für alle Abteilungen und Benutzergruppen zu starten.
+-   [Proof of Concept](proof-of-concept.md): Testen der technischen Bereitstellung und der Netzwerkarchitektur.
 
--   **[Führen Sie Status](run-state.md):** Vorgänge planen für alle Phasen/Schwerpunktbereiche, mit einem laufenden Anstieg der Benutzerakzeptanz Schlüssel.
+-   [Pilot](pilot.md): Überprüfen der Szenarien, Ressourcen und Rolloutpläne anhand einiger registrierter Geräte und einiger Benutzer, als Vorbereitung für das umfassende Rollout.
 
-## Einführen von Richtlinien und apps
-Mithilfe dieser Themen können Sie planen die Einführung neuer Richtlinien und apps:
--   **[Roll-out-Richtlinien](policy-rollout.md)**
+-   [Rollout im Unternehmen](enterprise-rollout.md): Einführen in allen Abteilungen und Benutzergruppen.
 
--   **[Roll-out-apps](application-rollout.md)**
+-   [Betrieb und Wartung](operations-and-maintenance.md): Betriebsplan für alle Schlüsselphasen/Schwerpunktbereiche, mit Übernahme durch immer mehr Benutzer.
+
+<!--
+These should be linked to topics in the plan & design section once it is back in the TOC
+## Rolling out policies and apps
+These topics will help you plan for the rollout of new policies and apps:
+-   **[Roll out policies](policy-rollout.md)**
+
+-   **[Roll out apps](application-rollout.md)**
+-->
 
 
-<!--HONumber=Mar16_HO2-->
+>[!div class="step-by-step"]
+
+>[**Projektumfang** &rarr;](project-scope.md)  
+
+
+<!--HONumber=May16_HO1-->
 
 

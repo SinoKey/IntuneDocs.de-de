@@ -1,17 +1,34 @@
 ---
-Titel: Was geschieht, wenn Sie Ihr Gerät aus Intune Abmelden?
-MS.Reviewer: Na
-MS.Custom: Na
-MS.Suite: Na
-MS.tgt_pltfrm: Na
-MS.topic: Artikel
-MS.AssetId:
+# required metadata
 
-# Was geschieht, wenn Sie Ihr Gerät aus Intune Abmelden?
+title: Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben? | Microsoft Intune
+description:
+keywords:
+author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
 
-Hinweise zum Abmelden finden Sie unter [Ihres Geräts aus Intune mithilfe der Unternehmensportal-app Abmelden](unenroll-your-device-from-intune-android.md).
+# optional metadata
 
-Wenn Sie Ihr Gerät aus Intune Abmelden:
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
+
+# Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?
+
+Wenn Sie die Registrierung Ihres Android-Geräts bei Intune aufheben, geschieht Folgendes:
 
 -   Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
 
@@ -21,11 +38,13 @@ Wenn Sie Ihr Gerät aus Intune Abmelden:
 
 -   Unter Umständen haben Sie auf dem Gerät keinen Zugriff mehr auf einige Unternehmensressourcen, z. B. Dateifreigaben oder interne Websites.
 
-Wenn Ihr Gerät nur für Unternehmens-e-Mail erhalten eingerichtet und Sie Ihr Gerät Abmelden von Ihrem Gerät wird nicht mehr im Unternehmensportal angezeigt ist. 
+Wenn Ihr Gerät nur für den Empfang von Unternehmens-E-Mail eingerichtet ist und Sie seine Registrierung aufheben, wird Ihr Gerät nicht mehr im Unternehmensportal angezeigt. 
+
+Anweisungen zum Aufheben der Registrierung finden Sie unter [Aufheben der Registrierung Ihres Geräts bei Intune über die Unternehmensportal-App](unenroll-your-device-from-intune-android.md)..
 
 ### Weitere Informationen:
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Mar16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

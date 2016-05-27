@@ -1,21 +1,39 @@
-Titel: Gerät nicht einhalten, die maximale Betriebssystemversion 
-MS.Custom: Na
-MS.Reviewer: Na
-MS.Service: Microsoft Intune
-MS.Suite: Na
-MS.tgt_pltfrm: Na
-MS.topic: Artikel
-MS.AssetId: 
-Autor: Staciebarker
-Roboter: Noindex
+---
+# required metadata
 
-# Gerät erfüllen nicht die maximale Betriebssystemversion.
+title: Gerät entspricht nicht der maximalen Betriebssystemversion | Microsoft Intune
+description:
+keywords:
+author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: ada223d7-2a80-4415-bd85-5bdf9eca7ace
 
-Ihr Gerät stimmt nicht mit Ihren IT-Administrator-Richtlinie für die maximale Version des Betriebssystems. Wenden Sie sich wegen Hilfe an Ihren IT-Administrator.
+# optional metadata
+
+ROBOTS: noindex
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
+
+# Gerät entspricht nicht der maximalen Betriebssystemversion
+
+Ihr iOS-Gerät entspricht nicht der Richtlinie Ihres IT-Administrators für die maximale Version des Betriebssystems. Wenden Sie sich wegen Hilfe an Ihren IT-Administrator.
 
 ### Weitere Informationen:
-[Verwenden IOS- oder Mac OS X-Geräte mit Intune] (using-your-ios-or-mac-os-x Gerät mit intune.md)
+[Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Mar16_HO3-->
+
+<!--HONumber=May16_HO1-->
 
 
