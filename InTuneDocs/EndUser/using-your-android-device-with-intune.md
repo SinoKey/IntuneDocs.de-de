@@ -63,11 +63,12 @@ Die Informationen in diesem Abschnitt helfen Ihnen beim Beheben von Problemen, d
 - [Senden von Registrierungsfehlern an Ihren IT-Administrator](send-enrollment-errors-to-your-it-administrator-android.md)</br>
 - [Das Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems](device-doesnt-have-the-required-minimum-operating-system-version-android.md)</br>
 - [Gerät entspricht nicht der maximalen Betriebssystemversion](device-doesnt-comply-with-maximum-operating-system-version-android.md)</br>
-- [Von Ihrem Gerät wurden die Nutzungsbeschränkungen entfernt, und Sie können keine Verbindung herstellen](your-device-is-rooted-and-you-cant-connect-android.md)
-- [Auf Ihrem Gerät ist ein erforderliches Zertifikat nicht vorhanden](your-device-is-missing-a-required-certificate-android.md)
+- [Von Ihrem Gerät wurden die Nutzungsbeschränkungen entfernt, und Sie können keine Verbindung herstellen](your-device-is-rooted-and-you-cant-connect-android.md)</br>
+- [Auf Ihrem Gerät ist ein erforderliches Zertifikat nicht vorhanden](your-device-is-missing-a-required-certificate-android.md)</br>
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=May16_HO3-->
 
 

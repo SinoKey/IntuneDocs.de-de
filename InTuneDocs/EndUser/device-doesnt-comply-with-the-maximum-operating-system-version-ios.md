@@ -15,7 +15,7 @@ ms.assetid: ada223d7-2a80-4415-bd85-5bdf9eca7ace
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -34,6 +34,6 @@ Ihr iOS-Gerät entspricht nicht der Richtlinie Ihres IT-Administrators für die 
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

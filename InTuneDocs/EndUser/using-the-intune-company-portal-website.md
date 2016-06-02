@@ -52,9 +52,9 @@ Die meisten Aufgaben, die Sie mithilfe der **Unternehmensportal-App** ausführen
 
 - [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 - [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Verwenden Ihres Android-Geräts mit Intune](using-your-windows-device-with-intune.md)
+- [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 
