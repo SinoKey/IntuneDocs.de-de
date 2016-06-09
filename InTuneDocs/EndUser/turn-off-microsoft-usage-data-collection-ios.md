@@ -18,7 +18,7 @@ ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,6 +35,6 @@ Sie können die Sammlung von Daten auf Ihrem iOS-Gerät mithilfe der Einstellung
 ### Weitere Informationen:
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 
