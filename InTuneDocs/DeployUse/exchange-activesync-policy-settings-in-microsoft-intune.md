@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Einstellungen für Exchange ActiveSync-Richtlinien in Microsoft Intune | Microsoft Intune
+title: Einstellungen für Exchange ActiveSync-Richtlinien | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -47,7 +47,7 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 
 |Name der Einstellung|Details|
 |----------------|
-|**Verschlüsselung auf mobilem Gerät anfordern**<sup>1</sup>|Schreibt auf Geräten die Verschlüsselung der Daten vor, um die Unterstützung zuzulassen.<br>Für Windows Phone 8-Geräte müssen Sie diesen Wert auf **Ja** festlegen..<br /><br />Aktivieren Sie zum Verwenden der Verschlüsselung auf iOS-Geräten die Einstellung **Kennwort zum Entsperren mobiler Geräte erforderlich**..|
+|**Verschlüsselung auf mobilem Gerät anfordern**<sup>1</sup>|Schreibt auf Geräten die Verschlüsselung der Daten vor, um die Unterstützung zuzulassen.<br>Für Windows Phone 8-Geräte müssen Sie hier **Ja**festlegen.<br /><br />Aktivieren Sie zum Verwenden der Verschlüsselung auf iOS-Geräten die Einstellung **Kennwort zum Entsperren mobiler Geräte erforderlich**.|
 |**Verschlüsselung auf Speicherkarten vorschreiben**|Schreibt die Verschlüsselung von Daten vor, die auf externen Speichern, wie etwa SD-Karten, gespeichert sind (auf unterstützten Geräten).
 <sup>1</sup> Zusätzliche Informationen für Geräte, die Windows 8.1 ausführen
 
@@ -86,6 +86,6 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

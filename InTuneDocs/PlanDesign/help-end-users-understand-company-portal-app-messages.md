@@ -45,7 +45,7 @@ Die Meldungen fordert Benutzer auf zu erlauben, dass die Telefonnummer und IMEI 
 > [!NOTE]
 > **Die Unternehmensportal-App tätigt oder verwaltet keine Telefonanrufe!** Der Meldungstext wird von Google gesteuert und kann nicht geändert werden.
 
-Zum Anzeigen der Seite **Hardware** wechseln Sie zu **Gruppen** > **Alle mobilen Geräte** > **Geräte**. Wählen Sie das Gerät des Benutzers aus, und wechseln Sie zu **Eigenschaften anzeigen** > **Hardware**..
+Zum Anzeigen der Seite **Hardware** wechseln Sie zu **Gruppen** > **Alle mobilen Geräte** > **Geräte**. Wählen Sie das Gerät des Benutzers aus, und wechseln Sie zu **Eigenschaften anzeigen** > **Hardware**.
 
 ### Was geschieht, wenn Benutzer den Zugriff erlauben oder verweigern?
 Wenn Benutzer den Zugriff erlauben, werden Telefonnummer und IMEI des Geräts in der Verwaltungskonsole auf der Seite „Hardware“ angezeigt.
@@ -55,7 +55,7 @@ Wenn Benutzer den Zugriff verweigern, können sie die Unternehmensportal-App wei
 Wenn Benutzer den Zugriff zunächst erlauben, später aber verweigern, wird die Meldung wieder angezeigt, wenn sie sich nach der Registrierung das nächste Mal bei der Unternehmensportal-App anmelden.</br></br>Wenn Benutzer den Zugriff später erlauben möchten, müssen sie zu **Einstellungen** > **Apps** > ** Unternehmensportal** > **Berechtigungen** > **Telefon** wechseln, um die Berechtigung zu aktivieren.
 
 ### Wo erhalten die Benutzer weitere Informationen?
-[Anmelden bei der Unternehmensportal-App](/Intune/EndUser/sign-in-to-the-company-portal-app-android)
+In Schritt 5 zum [Registrieren Ihres Android-Geräts bei Intune](/Intune/EndUser/enroll-your-device-in-intune-android)
 
 ## Unternehmensportal den Zugriff auf Fotos, Medien und Dateien auf Ihrem Gerät erlauben?
 
@@ -83,6 +83,6 @@ Wenn Benutzer den Zugriff verweigern und sich dann das nächste Mal bei der Unte
 [Informieren der Endbenutzer über den Einsatz von Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

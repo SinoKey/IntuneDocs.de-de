@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Manuelles Synchronisieren des Geräts
-Wenn die App-Installation bei Ihnen zu lange dauert, gehen Sie folgendermaßen vor, um Ihr Windows-Gerät manuell zu synchronisieren. Dies kann die Installation beschleunigen. Befolgen Sie dazu die Anweisungen, die dem Typ Ihres Geräts entsprechen:
+Wenn die App-Installation bei Ihnen zu lange dauert, gehen Sie folgendermaßen vor, um Ihr Windows-Gerät manuell zu synchronisieren. Dies kann die Installation beschleunigen. Nur unterstützte Versionen sind aufgeführt. Klicken Sie im Abschnitt „Inhalt dieses Artikels“ weiter oben auf den Link, der dem Typ Ihres Geräts entspricht:
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
@@ -37,11 +37,11 @@ Wenn die App-Installation bei Ihnen zu lange dauert, gehen Sie folgendermaßen v
 ## Windows 10 Mobile
 So synchronisieren Sie Ihr Windows 10 Mobile-Gerät manuell, um eine langsame App-Installation zu beschleunigen:
 
-1. Wechseln Sie zu **Alle Apps** > **Einstellungen** > **Konten**..
+1. Wechseln Sie zu **Alle Apps** > **Einstellungen** > **Konten**.
 
     ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
     
-2. Tippen Sie auf **Arbeitsplatzzugriff**..
+2. Tippen Sie auf **Arbeitsplatzzugriff**.
 
     ![win10m-sync-2-work-access](./media/win10m-sync-2-work-access.png)
     
@@ -58,15 +58,15 @@ So synchronisieren Sie Ihr Windows 10 Mobile-Gerät manuell, um eine langsame 
 ## Windows 10 Desktop
 So synchronisieren Sie Ihr Windows 10 Desktop-Gerät manuell, um eine langsame App-Installation zu beschleunigen:
 
-1. Klicken Sie auf die Schaltfläche **Start**, wie unten dargestellt, und wählen Sie dann **Einstellungen**..
+1. Klicken Sie auf die Schaltfläche **Start**, wie unten dargestellt, und anschließend auf **Einstellungen**.
 
     ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
     
-2. Auf der Seite **Einstellungen** wählen Sie **Konten**..
+2. Klicken Sie auf der Seite **Einstellungen** auf **Konten**.
  
     ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
     
-3. Auf der Seite **Konten** wählen Sie **Arbeitsplatzzugriff**.
+3. Auf der Seite **Konten** wählen Sie **Arbeitsplatzzugriff** aus.
     
     ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
     
@@ -83,7 +83,7 @@ So synchronisieren Sie Ihr Windows 10 Desktop-Gerät manuell, um eine langsame
 ## Windows Phone 8.1
 So synchronisieren Sie Ihr Windows Phone 8.1-Gerät manuell, um eine langsame App-Installation zu beschleunigen:
 
-1. Wechseln Sie zu **Alle Apps** > **Einstellungen** > **Arbeitsplatz**..
+1. Wechseln Sie zu **Alle Apps** > **Einstellungen** > **Arbeitsplatz**.
 
     ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
     
@@ -102,6 +102,6 @@ So synchronisieren Sie Ihr Windows Phone 8.1-Gerät manuell, um eine langsame 
 [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

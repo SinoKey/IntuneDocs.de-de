@@ -30,21 +30,23 @@ ms.suite: ems
 
 Wenn Sie die Registrierung Ihres Android-Geräts bei Intune aufheben, geschieht Folgendes:
 
+-   Sie heben die Registrierung Ihres Geräts bei Intune auf, was bedeutet, dass Ihr IT-Administrator das Gerät nicht mehr verwaltet. 
+
+-   Sie verlieren den Zugriff auf Unternehmensdaten und -ressourcen.
+
 -   Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
 
 -   Sie können keine Apps mehr über das Unternehmensportal installieren.
 
 -   Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden, z. B. das Deaktivieren der Kamera oder die Anforderung einer bestimmten Kennwortlänge, werden unwirksam.
 
--   Unter Umständen haben Sie auf dem Gerät keinen Zugriff mehr auf einige Unternehmensressourcen, z. B. Dateifreigaben oder interne Websites.
-
 Wenn Ihr Gerät nur für den Empfang von Unternehmens-E-Mail eingerichtet ist und Sie seine Registrierung aufheben, wird Ihr Gerät nicht mehr im Unternehmensportal angezeigt. 
 
-Anweisungen zum Aufheben der Registrierung finden Sie unter [Aufheben der Registrierung Ihres Geräts bei Intune über die Unternehmensportal-App](unenroll-your-device-from-intune-android.md)..
+Anweisungen zum Aufheben der Registrierung finden Sie unter [Aufheben der Registrierung Ihres Geräts bei Intune über die Unternehmensportal-App](unenroll-your-device-from-intune-android.md).
 
 ### Weitere Informationen:
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

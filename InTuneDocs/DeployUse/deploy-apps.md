@@ -61,10 +61,11 @@ Wenn Sie Apps bereitstellen, können Sie eine der folgenden Bereitstellungsaktio
 
 -   **Erforderliche Installation** – Die App wird auf dem Gerät installiert, ohne dass ein Benutzereingriff erforderlich ist.
 
-    > [!TIP]
-    > Bei iOS-Geräten, die nicht betreut werden, und bei allen Android-Geräten muss der Benutzer das App-Angebot vor der Installation akzeptieren.
+    > [!TIP] Bei iOS-Geräten, die nicht betreut werden, und bei allen Android-Geräten muss der Benutzer das App-Angebot vor der Installation akzeptieren.
     >
     > Sie können keine neuen App-Bereitstellungen für iOS-Geräte mehr erstellen, auf denen ein älteres Betriebssystem als iOS 7.1 ausgeführt wird. Alle vorhandenen App-Bereitstellungen auf Geräten, auf denen ein älteres Betriebssystem als iOS 7.1 ausgeführt wird, funktionieren weiterhin und werden auch weiterhin von Intune verwaltet.
+    > 
+    >  Wenn ein Endbenutzer eine App deinstalliert, die Sie als erforderliche Installation bereitgestellt haben, wird diese App von Intune nach dem nächsten Inventurzyklus (in der Regel nach 7 Tagen) automatisch erneut installiert.
 
 -   **Verfügbare Installation** – Die App wird im Unternehmensportal angezeigt, und Endbenutzer können sie bei Bedarf installieren.
 
@@ -86,8 +87,7 @@ Wenn Sie Apps bereitstellen, können Sie eine der folgenden Bereitstellungsaktio
 |Externer Link (auf einer Gerätegruppe bereitgestellt)|Nein|Nein|Nein|Nein|
 |Verwaltete iOS-App aus dem App Store (für eine Benutzergruppe bereitgestellt)|Ja|Ja|Ja|Ja|
 |Verwaltete iOS-App aus dem App Store (auf einer Gerätegruppe bereitgestellt)|Ja|Nein|Ja|Ja|
-> [!TIP]
-> Wenn Sie beim Bereitstellen von Apps sowohl Benutzer- als auch Gerätegruppen auswählen, können Sie die App nur als **Verfügbare Installation** bereitstellen..
+> [!TIP] Wenn Sie beim Bereitstellen von Apps sowohl Benutzer- als auch Gerätegruppen auswählen, können Sie die App nur als **Verfügbare Installation** bereitstellen.
 
 ## Bereitstellungskonflikte
 Wenn zwei Bereitstellungen mit der gleichen Bereitstellungsaktion von einem Gerät empfangen werden, gelten die folgenden Regeln:
@@ -105,6 +105,6 @@ Wenn zwei Bereitstellungen mit der gleichen Bereitstellungsaktion von einem Ger�
 
 Erfahren Sie mehr zum [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

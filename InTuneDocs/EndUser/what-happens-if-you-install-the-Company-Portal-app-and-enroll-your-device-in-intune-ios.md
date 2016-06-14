@@ -15,7 +15,7 @@ ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -98,11 +98,11 @@ Wenn Ihr Gerät registriert ist, kann Ihr IT-Administrator die folgenden Aufgabe
 
 -   Aktivieren oder Deaktivieren einer automatischen Synchronisierung von Dateien im Roamingmodus auf dem Gerät. Wenn die automatische Synchronisierung von Dateien zulässig ist, können Roaminggebühren anfallen.
 
-Informationen zur Vorgehensweise beim Registrieren finden Sie unter [Registrieren Ihres iOS-Geräts bei Intune](enroll-your-device-in-intune-ios.md) oder [Registrieren Ihres Mac OS X-Geräts bei Intune](enroll-your-device-in-intune-mac-os-x.md)..
+Informationen zur Vorgehensweise beim Registrieren finden Sie unter [Registrieren Ihres iOS-Geräts bei Intune](enroll-your-device-in-intune-ios.md) oder [Registrieren Ihres Mac OS X-Geräts bei Intune](enroll-your-device-in-intune-mac-os-x.md).
 
 ### Weitere Informationen:
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

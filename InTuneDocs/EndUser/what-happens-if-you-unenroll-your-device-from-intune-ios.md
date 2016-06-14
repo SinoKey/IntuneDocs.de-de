@@ -15,7 +15,7 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -44,11 +44,11 @@ Wenn Sie die Registrierung Ihres iOS-Geräts bei Intune aufheben, geschieht Folg
 
 -   Unternehmens-E-Mail-Profile werden vom Gerät entfernt.
 
-Anweisungen zum Aufheben der Registrierung finden Sie unter [Aufheben der Registrierung Ihres Geräts bei Intune](unenroll-your-device-from-intune-ios.md)..
+Anweisungen zum Aufheben der Registrierung finden Sie unter [Aufheben der Registrierung Ihres Geräts bei Intune](unenroll-your-device-from-intune-ios.md).
 
 ### Weitere Informationen:
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

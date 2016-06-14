@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Verstehen Sie Ihre Geräte mithilfe des Inventars in Microsoft Intune | Microsoft Intune
+title: Verstehen Sie Ihre Geräte mithilfe des Inventars | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -66,8 +66,7 @@ Um das von den mobilen Geräten gesammelte Inventar anzuzeigen, führen Sie die 
 |**Verschlüsselung aktiviert**|Alle Geräte|
 
 ## Was wird von Windows-PCs gesammelt
-> [!IMPORTANT]
-> Dieser Abschnitt gilt nur für Windows-PCs, auf denen die Intune-Windows-PC-Clientsoftware ausgeführt wird.
+> [!IMPORTANT] Dieser Abschnitt gilt nur für Windows-PCs, auf denen die Intune-Windows-PC-Clientsoftware ausgeführt wird.
 
 Um das von den Windows-PCs gesammelte Inventar anzuzeigen, führen Sie die [Computerinventurberichte](understand-microsoft-intune-operations-by-using-reports.md) aus. Intune sammelt das folgende Inventar von den Windows-PCs:
 
@@ -113,11 +112,12 @@ Um das von den Windows-PCs gesammelte Inventar anzuzeigen, führen Sie die [Comp
 
 -   **Zuletzt aktualisiert**
 
-### Weitere Informationen
-[Überwachung und Berichte in Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
+<!-- this section below belongs in the planning journey
+### See Also
+[Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
+-->
 
 
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

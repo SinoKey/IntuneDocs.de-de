@@ -39,25 +39,27 @@ Im [Windows Store für Unternehmen](https://www.microsoft.com/business-store) k�
 * Sobald ein Konto für den Windows Store für Unternehmen Intune zugeordnet wurde, können Sie dieses zugeordnete Konto nicht mehr ändern.
 * Apps, die im Windows Store für Unternehmen erworben wurden, können nicht manuell zu Intune hinzugefügt oder aus Intune gelöscht werden. Sie können nur mit dem Windows Store für Unternehmen synchronisiert werden.
 * Intune synchronisiert nur online lizenzierte Apps, die Sie aus dem Windows Store für Unternehmen erworben haben.
+* Geräte müssen mit der Active Directory-Domäne oder dem Arbeitsbereich verknüpft sein, damit diese Funktion verwendet werden kann.
+* Registrierte Geräte müssen die Version 1511 von Windows 10 verwenden.
 
 ## Verknüpfen Ihres Kontos für den Windows Store für Unternehmen mit Intune
 Bevor Sie die Synchronisierung in der Intune-Konsole aktivieren, müssen Sie Ihr Konto für den Windows Store für Unternehmen so konfigurieren, dass Intune als Verwaltungstool verwendet wird:
 1. Stellen Sie sicher, dass Sie sich beim Windows Store für Unternehmen und bei Intune mit demselben Mandantenkonto anmelden.
-2. Wählen Sie im Windows Store für Unternehmen **Einstellungen** > **-Verwaltungstools** aus..
+2. Wählen Sie im Windows Store für Unternehmen **Einstellungen** > **Verwaltungstools** aus.
 3. Wählen Sie auf der Seite „Verwaltungstools“ die Option **Verwaltungstools hinzufügen** und dann „Microsoft Intune“ aus.
 
 Sie können nun fortfahren und die Synchronisierung in der Intune-Konsole einrichten.
 
 ## Konfigurieren der Synchronisierung
 
-1. Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Verwaltung**..
-2. Erweitern Sie im Arbeitsbereich **Verwaltung** den Knoten **Verwaltung mobiler Geräte**, und klicken Sie dann **Store für Geschäfte**..
+1. Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Verwaltung**.
+2. Erweitern Sie im Arbeitsbereich **Verwaltung** den Knoten **Verwaltung mobiler Geräte**, und klicken Sie dann **Store für Geschäfte**.
 3. Gehen Sie auf der Seite **Windows Store für Unternehmen** folgendermaßen vor:
 * Klicken Sie auf den Link zur Registrierung für den Windows Store für Unternehmen, falls Sie dies noch nicht getan haben.
 * Nachdem Sie sich registriert haben, klicken Sie auf **Synchronisierung konfigurieren**.
-4. Wählen Sie im Dialogfeld **App-Synchronisierung mit dem Windows Store für Geschäfte konfigurieren** die Option **Synchronisierung mit dem Windows Store für Geschäfte aktivieren** aus..
+4. Wählen Sie im Dialogfeld **App-Synchronisierung mit dem Windows Store für Geschäfte konfigurieren** die Option **Synchronisierung mit dem Windows Store für Geschäfte aktivieren** aus.
 5. Wählen Sie aus der Dropdownliste **Sprache** die Sprache aus, in der Apps aus dem Windows Store für Unternehmen in der Intune-Konsole angezeigt werden. Die Installation der Apps erfolgt unabhängig von der Anzeigesprache in der Sprache des Endbenutzers, sofern verfügbar.
-6. Klicken Sie auf **OK**..
+6. Klicken Sie auf **OK**.
 
 ## Synchronisieren von Apps
 
@@ -67,7 +69,7 @@ Die Apps werden in diesem Knoten mit der Gesamtzahl der Lizenzen, die Sie besitz
 
 ## Bereitstellen von Apps
 
-Sie stellen Apps aus dem Store auf die gleiche Weise wie andere Intune-Apps bereit. Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md)..
+Sie stellen Apps aus dem Store auf die gleiche Weise wie andere Intune-Apps bereit. Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 Wenn Sie eine App aus dem Windows Store für Unternehmen bereitstellen, wird von jedem Benutzer, der die App installiert, eine Lizenz verwendet. Wenn alle verfügbaren Lizenzen für eine bereitgestellte App verwendet werden, können keine Kopien der App mehr bereitgestellt werden, und Sie müssen eine der folgenden Aktionen ausführen:
 * Deinstallieren der App auf einigen Geräten
 * Beschränken der aktuellen Bereitstellung auf die Anzahl von Benutzern, für die Sie über Lizenzen verfügen
@@ -80,6 +82,6 @@ Wenn Sie eine App aus dem Windows Store für Unternehmen bereitstellen, wird von
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

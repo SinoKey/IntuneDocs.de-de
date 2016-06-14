@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Schützen von Geräten mit Microsoft Intune | Microsoft Intune
+title: Schützen von Geräten | Microsoft Intune
 description:
 keywords:
 author: Robstackmsft
@@ -41,9 +41,9 @@ Die [mehrstufige Authentifizierung](protect-windows-devices-with-multi-factor-au
 Intune ermöglicht die Integration in [Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md). Dies ist eine alternative Anmeldemethode für Windows 10 und höher, die Active Directory oder ein Azure Active Directory-Konto verwendet, um ein Kennwort, eine Smartcard oder eine virtuelle Smartcard zu ersetzen.
 
 ## Schützen von mit dem Intune-Client verwalteten Windows-PCs
-Intune unterstützt auch Sicherheitsrichtlinien für Windows-PCs, die Sie nicht registrieren, sondern über die Intune-Computerclientsoftware verwalten. Erfahren Sie, wie diese Richtlinien Sie beim Sichern Ihrer Windows-PCs unterstützen: [Use policies to help protect Windows PCs that run the Intune client software](policies-to-protect-windows-pcs-in-microsoft-intune.md) (Verwenden von Richtlinien zum Schützen von Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird)..
+Intune unterstützt auch Sicherheitsrichtlinien für Windows-PCs, die Sie nicht registrieren, sondern über die Intune-Computerclientsoftware verwalten. Erfahren Sie, wie diese Richtlinien Sie beim Schützen Ihrer Windows-PCs unterstützen: [Use policies to help protect Windows PCs that run the Intune client software](policies-to-protect-windows-pcs-in-microsoft-intune.md) (Verwenden von Richtlinien zum Schützen von Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

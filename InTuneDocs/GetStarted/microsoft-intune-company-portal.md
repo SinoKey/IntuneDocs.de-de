@@ -27,15 +27,14 @@ ms.suite: ems
 
 # Microsoft Intune-Unternehmensportal-App
 
-Bevor Sie [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] einrichten, lesen Sie dieses Thema und andere Anforderungen, die unter [ Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md) aufgeführt sind..
+Bevor Sie [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] einrichten, lesen Sie dieses Thema und andere Anforderungen, die unter [ Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md) aufgeführt sind.
 
 Das Windows Intune-Unternehmensportal ist ein Tool, das Benutzern Zugriff auf Unternehmensdaten und Apps bereitstellt. Das Unternehmensportal ist in zwei Varianten verfügbar:
 
--   **Die Unternehmensportal-App:** Diese Anwendung ist auf Geräten verfügbar, die Sie mit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] verwalten. Erfahren Sie mehr über die Unternehmensportal-Apps für [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
- und [Windows](/Intune/EndUser/using-your-android-device-with-intune)..
+-   **Die Unternehmensportal-App:** Diese Anwendung ist auf Geräten verfügbar, die Sie mit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] verwalten. Erfahren Sie mehr über die Unternehmensportal-Apps für [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) und [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **Die Unternehmensportal-Website:** Eine Website, die Zugriff über [einen unterstützten Browser](supported-web-browsers.md) bietet. Die URL lautet [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com). Weitere Informationen zu dieser Website finden Sie unter [Verwenden der Intune-Unternehmensportal-Website](/Intune/EndUser/using-the-intune-company-portal-website)..
+- **Die Unternehmensportal-Website:** Eine Website, die Zugriff über [einen unterstützten Browser](supported-web-browsers.md) bietet. Die URL lautet [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx). Weitere Informationen zu dieser Website finden Sie unter [Verwenden der Intune-Unternehmensportal-Website](/Intune/EndUser/using-the-intune-company-portal-website).
 
 Dies sind einige der Aufgaben, die Benutzern im Unternehmensportal ausführen können:
 
@@ -59,6 +58,6 @@ Damit ein Benutzer auf das Unternehmensportal zugreifen kann, muss dem Benutzerk
 [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

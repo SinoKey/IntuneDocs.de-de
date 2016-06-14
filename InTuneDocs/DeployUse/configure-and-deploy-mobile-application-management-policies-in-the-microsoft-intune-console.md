@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Configure and deploy mobile application management policies in the Microsoft Intune console
+# Konfigurieren und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen in der Microsoft Intune-Konsole
 Verwaltungsrichtlinien für mobile Anwendungen in Microsoft Intune ermöglichen Ihnen das Ändern der Funktionalität von Apps, die Sie bereitstellen, um sie auf die Kompatibilitäts- und Sicherheitsrichtlinien Ihres Unternehmens abzustimmen. Sie können z. B. Ausschneide-, Kopier- und Einfügevorgänge innerhalb einer verwalteten App einschränken oder eine App so konfigurieren, dass alle Weblinks innerhalb des Managed Browser geöffnet werden.
 
 Unterstützung der Verwaltungsrichtlinien für mobile Anwendungen:
@@ -34,18 +34,17 @@ Unterstützung der Verwaltungsrichtlinien für mobile Anwendungen:
 
 -   Geräte unter iOS 7 und höher.
 
-> [!TIP]
-> Verwaltungsrichtlinien für mobile Anwendungen unterstützen Geräte, die bei Intune registriert sind.
-> 
-> Informationen zum Erstellen von App-Verwaltungsrichtlinien für Geräte, die nicht von Intune verwaltet werden, finden Sie unter [Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)..
+> [!TIP] Verwaltungsrichtlinien für mobile Anwendungen unterstützen Geräte, die bei Intune registriert sind.
+>
+> Informationen zum Erstellen von App-Verwaltungsrichtlinien für Geräte, die nicht von Intune verwaltet werden, finden Sie unter [Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 Im Gegensatz zu anderen Intune-Richtlinien wird eine Verwaltungsrichtlinie für mobile Anwendungen nicht direkt bereitgestellt. Stattdessen verknüpfen Sie die Richtlinie mit der App, die Sie einschränken möchten. Wenn die Anwendung bereitgestellt wird und auf Geräten installiert ist, werden die von Ihnen angegebenen Einstellungen wirksam.
 
 Zum Anwenden von Einschränkungen auf eine App muss die App das Microsoft App Software Development Kit (SDK) enthalten. Es gibt zwei Möglichkeiten, um diesen App-Typ zu beziehen:
 
--   **Verwenden einer richtlinienverwalteten App**: Verfügt über die integrierte App-SDK. Um diesen App-Typ hinzuzufügen, geben Sie in einem App Store wie iTunes Store oder Google Play einen Link zur App an. Es ist keine weitere Bearbeitung für diesen App-Typ erforderlich. Hier finden Sie eine Liste von [Apps zur Verwendung mit den Microsoft Intune-Verwaltungsrichtlinien für mobile Anwendungen](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)..
+-   **Verwenden einer richtlinienverwalteten App**: Verfügt über die integrierte App-SDK. Um diesen App-Typ hinzuzufügen, geben Sie in einem App Store wie iTunes Store oder Google Play einen Link zur App an. Es ist keine weitere Bearbeitung für diesen App-Typ erforderlich. Hier finden Sie eine Liste von [Apps zur Verwendung mit den Microsoft Intune-Verwaltungsrichtlinien für mobile Anwendungen](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
--   **Verwenden einer „umschlossenen“ App**: Apps, die mithilfe des **Microsoft Intune App Wrapping Tool** neu gepackt werden, sodass sie das App-SDK enthalten. Dieses Tool wird normalerweise verwendet, um Unternehmensanwendungen zu verarbeiten, die intern erstellt wurden. Es kann nicht verwendet werden, um Apps zu verarbeiten, die aus dem App Store heruntergeladen wurden. Weitere Informationen finden Sie unter [Vorbereiten von iOS-Apps für die Verwaltung mobiler Anwendungen mit dem Microsoft Intune App Wrapping-Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) und [Vorbereiten von Android-Apps für die Verwaltung von mobilen Anwendungen mit dem Microsoft Intune App Wrapping-Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)..
+-   **Verwenden einer „umschlossenen“ App**: Apps, die mithilfe des **Microsoft Intune App Wrapping Tool** neu gepackt werden, sodass sie das App-SDK enthalten. Dieses Tool wird normalerweise verwendet, um Unternehmensanwendungen zu verarbeiten, die intern erstellt wurden. Es kann nicht verwendet werden, um Apps zu verarbeiten, die aus dem App Store heruntergeladen wurden. Weitere Informationen finden Sie unter [Vorbereiten von iOS-Apps für die Verwaltung mobiler Anwendungen mit dem Microsoft Intune App Wrapping-Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) und [Vorbereiten von Android-Apps für die Verwaltung von mobilen Anwendungen mit dem Microsoft Intune App Wrapping-Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
 Einige verwaltete Apps, wie die Outlook-App für iOS und Android, unterstützen **mehrere Identitäten**. Dies bedeutet, dass Intune Verwaltungseinstellungen nur auf Unternehmenskonten oder Daten in der App anwendet.
 
@@ -57,8 +56,7 @@ Beispiel für die Verwendung der Outlook-App:
 
 -   Das verwendete Unternehmenskonto muss dasselbe Konto sein, mit dem das Gerät bei Intune registriert wurde.
 
-> [!TIP]
-> Wenn Sie Intune mit Configuration Manager verwenden, finden Sie Informationen unter [Steuern von Apps mithilfe von Verwaltungsrichtlinien für mobile Anwendungen in Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx)..
+> [!TIP] Wenn Sie Intune mit Configuration Manager verwenden, finden Sie Informationen unter [Steuern von Apps mithilfe von Verwaltungsrichtlinien für mobile Anwendungen in Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
 
 ## Erstellen und Bereitstellen einer App mit einer Verwaltungsrichtlinie für mobile Anwendungen
 
@@ -87,11 +85,11 @@ Beim Veröffentlichen einer verwalteten App unterscheiden sich die Verfahren abh
 
 #### So veröffentlichen Sie eine richtlinienverwaltete App
 
-1.  Wenn Sie bereit für den Upload der App in Ihren Cloudspeicher sind, führen Sie die Schritte unter [Hinzufügen von Apps für mobile Geräte in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) aus..
+1.  Wenn Sie bereit für den Upload der App in Ihren Cloudspeicher sind, führen Sie die Schritte unter [Hinzufügen von Apps für mobile Geräte in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) aus.
 
-2.  Verwenden Sie für iOS-Apps unter **Wählen Sie aus, wie diese Software für Geräte bereitgestellt werden soll** die Option **Verwaltete iOS-App aus dem App Store**..
+2.  Verwenden Sie für iOS-Apps unter **Wählen Sie aus, wie diese Software für Geräte bereitgestellt werden soll**die Option **Verwaltete iOS-App aus dem App Store**.
 
-    Wählen Sie für Android-Apps **Externer Link** aus..
+    Wählen Sie für Android-Apps **Externer Link**aus.
 
 3.  Geben Sie unter **Geben Sie die URL an**die zuvor notierte URL zur richtlinienverwalteten App ein.
 
@@ -101,11 +99,11 @@ Nachdem Sie überprüft haben, dass die Anwendung erfolgreich hochgeladen wurde,
 
 #### So veröffentlichen Sie eine App, die mit dem Microsoft Intune App Wrapping Tool verarbeitet wurde
 
-1.  Wenn Sie bereit für den Upload der App in Ihren Cloudspeicher sind, führen Sie die Schritte unter [Hinzufügen von Apps für mobile Geräte in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) aus..
+1.  Wenn Sie bereit für den Upload der App in Ihren Cloudspeicher sind, führen Sie die Schritte unter [Hinzufügen von Apps für mobile Geräte in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) aus.
 
-2.  Geben Sie unter **Wählen Sie aus, wie diese Software für Geräte bereitgestellt werden soll** die Option **Software Installer** an..
+2.  Geben Sie unter **Wählen Sie aus, wie diese Software für Geräte bereitgestellt werden soll**die Option **Software Installer**an.
 
-3.  Wählen Sie **App-Paket für iOS (&#42;IPA-Datei)** unter **Dateityp des Softwareinstallationsprogramms** aus..
+3.  Wählen Sie **App-Paket für iOS (&#42;IPA-Datei)** unter **Dateityp des Softwareinstallationsprogramms** aus.
 
 Nach Abschluss des Uploads wird **Ja** für die **App-Verwaltungsrichtlinien** auf der Seite der **Softwareeigenschaften** für die hochgeladene App angezeigt.
 
@@ -113,7 +111,7 @@ Nachdem Sie überprüft haben, dass die Anwendung erfolgreich hochgeladen wurde,
 
 ## **Schritt 3:** Erstellen Sie eine Verwaltungsrichtlinie für mobile Anwendungen.
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Übersicht** &gt; **Richtlinie hinzufügen**..
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Übersicht** &gt; **Richtlinie hinzufügen**.
 
 2.  Konfigurieren und stellen Sie eine der folgenden **Software** -Richtlinien bereit, je nach Gerätetyp, für den Sie Apps konfigurieren möchten:
 
@@ -121,7 +119,7 @@ Nachdem Sie überprüft haben, dass die Anwendung erfolgreich hochgeladen wurde,
 
     -   **Richtlinie zur mobilen Anwendungsverwaltung (iOS 7 und höher)**
 
-    Sie können die empfohlenen Einstellungen verwenden oder die Einstellungen anpassen. Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+    Sie können die empfohlenen Einstellungen verwenden oder die Einstellungen anpassen. Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Konfigurieren Sie die folgenden Einstellungen nach Bedarf. Die Optionen unterscheiden sich je nach Gerätetyp, für den Sie die Richtlinie konfigurieren.
 
@@ -141,21 +139,20 @@ Nachdem Sie überprüft haben, dass die Anwendung erfolgreich hochgeladen wurde,
     |**Gerätekonformität mit Unternehmensrichtlinien für Zugriff erforderlich**|Lässt die Verwendung der App nur dann zu, wenn das Gerät nicht per Jailbreak oder Rooting manipuliert wurde.|
     |**Überprüfen der Zugriffsanforderungen nach (Minuten)**|Geben Sie im Feld **Timeout** den Zeitraum ein, bevor die Zugriffsanforderungen für die App nach dem Starten der App erneut geprüft werden müssen.|
     |**Offline-Toleranzperiode**|Wenn das Gerät offline ist, geben Sie den Zeitraum ein, bevor die Zugriffsanforderungen für die App erneut geprüft werden.|
-    |**App-Daten verschlüsseln**|Gibt an, dass alle mit dieser App verknüpften Daten verschlüsselt werden, einschließlich extern gespeicherte Daten, z. B. SD-Karten.<br /><br />**Verschlüsselung für iOS**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, werden Daten im Ruhezustand mit vom Betriebssystem bereitgestellter Verschlüsselung auf Geräteebene verschlüsselt. Dies wird durch die Geräte-PIN-Richtlinie aktiviert, die vom IT-Administrator festgelegt werden muss. Wenn eine PIN erforderlich ist, werden die Daten gemäß den Einstellungen in der mobilen Anwendungsverwaltungsrichtlinie verschlüsselt. Wie in der Apple-Dokumentation angegeben, [sind die von iOS 7 verwendeten Module FIPS 140-2-zertifiziert](http://support.apple.com/en-us/HT202739)..<br /><br />**Verschlüsselung für Android**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, wird die Verschlüsselung von Microsoft bereitgestellt. Daten werden während der E/A-Dateivorgänge gemäß der Einstellung in der mobilen Anwendungsverwaltungsrichtlinie synchron verschlüsselt. Verwaltete Apps auf Android verwenden AES-128-Verschlüsselung im CBC-Modus mit den Plattform-Kryptografie-Bibliotheken. Die Verschlüsselungsmethode ist nicht FIPS 140-2-zertifiziert. Inhalt auf dem Speicher des Geräts wird immer verschlüsselt.|
+    |**App-Daten verschlüsseln**|Gibt an, dass alle mit dieser App verknüpften Daten verschlüsselt werden, einschließlich extern gespeicherte Daten, z. B. SD-Karten.<br /><br />**Verschlüsselung für iOS**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, werden Daten im Ruhezustand mit vom Betriebssystem bereitgestellter Verschlüsselung auf Geräteebene verschlüsselt. Dies wird durch die Geräte-PIN-Richtlinie aktiviert, die vom IT-Administrator festgelegt werden muss. Wenn eine PIN erforderlich ist, werden die Daten gemäß den Einstellungen in der mobilen Anwendungsverwaltungsrichtlinie verschlüsselt. Wie in der Apple-Dokumentation angegeben, [sind die von iOS 7 verwendeten Module FIPS 140-2-zertifiziert](http://support.apple.com/en-us/HT202739).<br /><br />**Verschlüsselung für Android**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, wird die Verschlüsselung von Microsoft bereitgestellt. Daten werden während der Datei-E/A-Vorgänge synchron verschlüsselt.  Inhalt auf dem Speicher des Geräts wird immer verschlüsselt. Die Verschlüsselungsmethode ist nicht FIPS 140-2-zertifiziert.|
     |**Blockieren von Bildschirmaufnahmen** (nur Android-Geräte)|Gibt an, dass die Screen Capture-Funktionen des Geräts blockiert werden, wenn Sie diese App verwenden.|
 
-4.  Klicken Sie danach auf **Richtlinie speichern**..
+4.  Klicken Sie danach auf **Richtlinie speichern**.
 
 Die neue Richtlinie wird im Knoten **Konfigurationsrichtlinien** des Arbeitsbereichs **Richtlinie** angezeigt.
 
 ## **Schritt 4:** Verknüpfen Sie die App mit einer Verwaltungsrichtlinie für mobile Anwendungen, und stellen Sie dann die App bereit.
 Wenn Sie die App bereitstellen, wählen Sie die Verwaltungsrichtlinie für mobile Anwendungen auf der Seite **Mobile App-Verwaltung** aus, um die App mit der Richtlinie zu verknüpfen.
 
-Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps.md)..
+Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps.md).
 
-> [!IMPORTANT]
-> Für Geräte, die ältere Betriebssysteme als iOS 7.1 ausführen, werden verknüpfte Richtlinien nicht entfernt, wenn die App deinstalliert wird.
-> 
+> [!IMPORTANT] Für Geräte, die ältere Betriebssysteme als iOS 7.1 ausführen, werden verknüpfte Richtlinien nicht entfernt, wenn die App deinstalliert wird.
+>
 > Wenn das Gerät von Intune abgemeldet wird, werden die Richtlinien nicht aus den Apps entfernt. Alle Apps, auf die Richtlinien angewendet waren, behalten die Richtlinieneinstellungen bei, auch nachdem die App deinstalliert und neu installiert wurde.
 
 ### Maßnahmen, wenn eine App bereits auf Geräten bereitgestellt wurde
@@ -165,15 +162,14 @@ In diesem Fall müssen Sie den Benutzer bitten, die nicht verwaltete Version man
 
 Bei Geräten unter iOS 9 und höher wird der Benutzer automatisch um die Genehmigung gebeten, dass Intune die Verwaltung der vorhandenen App übernehmen darf. Wenn der Benutzer zustimmt, wird die App von Intune verwaltet, und alle Verwaltungsrichtlinien für mobile Anwendungen, die Sie der App zugeordnet haben, werden ebenfalls angewendet.
 
-> [!TIP]
-> Wenn sich das Gerät im überwachten Modus befindet, übernimmt Intune die Verwaltung der vorhandenen App, ohne den Benutzer vorher um Genehmigung zu bitten.
+> [!TIP] Wenn sich das Gerät im überwachten Modus befindet, übernimmt Intune die Verwaltung der vorhandenen App, ohne den Benutzer vorher um Genehmigung zu bitten.
 
 ## **Schritt 5:** Überwachen Sie die App-Bereitstellung.
 Nachdem Sie eine mit einer Verwaltungsrichtlinie für mobile Anwendungen verknüpfte App erstellt und bereitgestellt haben, verwenden Sie das folgende Verfahren, um die App zu überwachen und alle Richtlinienkonflikte zu lösen.
 
 #### Anzeigen des Status der Bereitstellung
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Gruppen** &gt; **Übersicht**..
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Gruppen** &gt; **Übersicht**.
 
 2.  Führen Sie einen der folgenden Schritte aus:
 
@@ -201,9 +197,6 @@ In Fällen, in denen das Gerät oder der Benutzer zwei in Konflikt stehende Rich
 -   Wenn keine Richtlinie für das Gerät bereitgestellt wurde und zwei widersprüchliche Einstellungen bereitgestellt werden, wird die in das Gerät integrierte Standardeinstellung verwendet.
 
 
-
-
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

@@ -46,11 +46,11 @@ Verwenden der Remotesperre zum Sperren Ihres Geräts:
 
 1.  Wählen Sie auf der [Unternehmensportalwebsite](http://portal.manage.microsoft.com) das Gerät aus, das Sie sperren möchten.
 
-2.  Wählen Sie **Remotesperre** aus..
+2.  Tippen Sie auf **Remotesperre**.
 
     Nachdem Sie **Remotesperre** ausgewählt haben, wird der Status „Remotesperre steht aus“ angezeigt.  Wenn die Remotesperre erfolgreich durchgeführt wurde, ändert sich der Status zu „Remotesperre war erfolgreich“.
 
-    Der Status wird an drei Stellen angezeigt:
+    Der Status „Remotesperre“ wird an drei Stellen angezeigt:
 
     * Im Benachrichtigungsbereich der Website. 
     * Auf der Detailseite für das Gerät.
@@ -64,6 +64,6 @@ Verwenden der Remotesperre zum Sperren Ihres Geräts:
 ### Weitere Informationen:
 [Verwenden der Intune-Unternehmensportal-Website](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

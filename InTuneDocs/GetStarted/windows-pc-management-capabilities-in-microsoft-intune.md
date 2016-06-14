@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Verwaltungsfunktionen für Windows-PCs in Microsoft Intune | Microsoft Intune
+title: Funktionen für die Windows-PC-Verwaltung | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -34,7 +34,7 @@ In den meisten Szenarien registrieren Sie Ihre Geräte bei Microsoft Intune, sod
 
 -   **Schutz vor Schadsoftware**: Intune umfasst Endpoint Protection, um Ihre PCs vor Schadsoftware zu schützen.
 
--   **Remoteunterstützung**: Über Intune können Benutzer Kontakt mit IT-Supportmitarbeitern aufnehmen, die ihnen über eine in Intune integrierte Remotedesktopfunktion Unterstützung bieten können.
+-   **Remoteunterstützung**: Über Intune können Benutzer Kontakt mit IT-Supportmitarbeitern aufnehmen, die ihnen über eine in Intune integrierte Remotedesktop-Funktion Unterstützung bieten können (erfordert TeamViewer-Software).
 
 -   **Verwaltung von Softwarelizenzen**: Überwachen Sie, wie viele Lizenzen verfügbar sind und wie viele Lizenzen verwendet werden.
 -   **App-Bereitstellung**: Stellen Sie Software auf PCs bereit, die Sie verwalten. Einige App-Verwaltungsfunktionen sind nicht verfügbar, wenn Sie PCs mit der Clientsoftware verwalten.
@@ -44,13 +44,15 @@ In den meisten Szenarien registrieren Sie Ihre Geräte bei Microsoft Intune, sod
 PCs mit den folgenden Windows-Versionen (x86 und x64) können mit Intune verwaltet werden:
 
 
--   **Windows Vista**: Business, Enterprise und UltimateEdition.
+-   **Windows Vista**: Business, Enterprise und Ultimate.
 
--   **Windows 7**: Professional, Enterprise oder Ultimate Edition (ohne Service Pack oder mit SP1).
+-   **Windows 7**: Professional, Enterprise oder Ultimate (ohne Service Pack oder mit SP1).
 
--   **Windows 8**: Professional oder Enterprise Edition.
+-   **Windows 8**: Pro und Enterprise
 
--   **Windows 8.1**: Professional oder Enterprise Edition.
+-   **Windows 8.1**: Pro und Enterprise
+
+- **Windows 10**: Home, Education, Pro und Enterprise
 
 
 ## Hardwaremindestanforderungen
@@ -72,9 +74,9 @@ Im Folgenden sind die Softwareanforderungen zum Installieren des Intune-PC-Clien
 |Entfernen nicht kompatibler Clientsoftware|Bevor Sie die Intune-PC-Clientsoftware installieren, müssen Sie die folgende Clientsoftware auf dem PC deinstallieren:<br /><br />– Alle Configuration Manager-Versionen<br />– Alle Microsoft Systems Management Server-Versionen (SMS)|
 
 ### Weitere Informationen:
-[Verwaltungsfunktionen für mobile Geräte in Microsoft Intune](/intune/understand/mobile-device-management-capabilties-in-microsoft-intune.md)
+[Verwaltungsfunktionen für mobile Geräte in Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

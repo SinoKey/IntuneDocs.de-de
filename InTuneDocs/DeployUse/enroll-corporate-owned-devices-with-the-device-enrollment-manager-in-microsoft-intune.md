@@ -36,15 +36,21 @@ Mit Intune können Organisationen eine Vielzahl mobiler Geräte mit einem einzel
 
 -   Konfigurieren des Zugriffs auf Unternehmensdaten
 
-Verwenden Sie das Geräte-Manager-Konto nur für Geräte, die keine E-Mails empfangen, oder melden Sie sich als ein bestimmter Benutzer an. Geräte, die mit einem Geräte-Manager-Konto verwaltet werden, können nicht für bedingten Zugriff konfiguriert werden, da es sich dabei auch um benutzerspezifische Szenarien handelt. Der Speicher-Manager kann das Gerät nicht über das Unternehmensportal zurücksetzen.
 
-**Beispiele für ein Geräteregistrierungs-Manager-Szenario:**
-Ein Restaurant wünscht Point-of-Sale-Tablets für sein Bedienpersonal und die Bestellmonitore für seine Küchenmitarbeiter. Die Mitarbeiter müssen niemals auf Unternehmensdaten zugreifen und sich nie als Benutzer anmelden. Der Intune-Administrator erstellt ein Konto für den Geräteregistrierungs-Manager und registriert die firmeneigenen Geräte mit diesem Konto. Alternativ kann der Administrator die Anmeldeinformationen des Geräteregistrierungs-Managers einem Restaurant-Manager geben, sodass dieser die Geräte registrieren und verwalten kann.
+**Beispiele für ein Geräteregistrierungs-Manager-Szenario:** Ein Restaurant wünscht Point-of-Sale-Tablets für sein Bedienpersonal und Bestellmonitore für seine Küchenmitarbeiter. Die Mitarbeiter müssen niemals auf Unternehmensdaten zugreifen und sich nie als Benutzer anmelden. Der Intune-Administrator erstellt ein Konto für den Geräteregistrierungs-Manager und registriert die firmeneigenen Geräte mit diesem Konto. Alternativ kann der Administrator die Anmeldeinformationen des Geräteregistrierungs-Managers einem Restaurant-Manager geben, sodass dieser die Geräte registrieren und verwalten kann.
 
 Der Administrator oder Manager kann rollenspezifische Apps auf den Restaurantgeräten bereitstellen. Ein Administrator kann das Gerät auch in der Intune-Konsole auswählen und es über die Verwaltungskonsole aus der Verwaltung mobiler Geräte entfernen.
 
+Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurden, gelten folgende Einschränkungen:
+  - Kein bestimmter Benutzer – alle Geräte sind „benutzerlos“. Das heißt, es ist kein E-Mail-Zugriff und kein Zugriff auf Unternehmensdaten möglich. Allerdings können z. B. die Geräte-Apps über VPN auf Daten zugreifen.
+  - Kein bedingter Zugriff, da dies benutzerspezifische Szenarien voraussetzen würde.
+  - Ein Zurücksetzen von Geräten über das Unternehmensportal ist nicht möglich.
+  - Apps aus dem Apple Volume Purchase Program (VPP) können nicht verwendet werden, weil für die Verwaltung dieser Apps benutzerspezifische Apple IDs erforderlich sind.
+  - Eine gleichzeitige Registrierung mit Apple Configurator oder mit dem Apple-Geräteregistrierungsprogramm ist nicht möglich (iOS-Geräte).
+
 > [!NOTE]
-> Benutzerkonten für Geräteregistrierungs-Manager mit mehr als 20 registrierten Geräten haben möglicherweise Probleme bei der Verwendung der Unternehmensportal-App. Um Geräten, die mit dem Geräteregistrierungs-Manager verwaltet werden, Unternehmensportal-Apps bereitzustellen, stellen Sie die Unternehmensportal-App als **erforderliche Installation** für das Benutzerkonto des Geräteregistrierungs-Managers bereit.
+> Benutzerkonten für Geräteregistrierungs-Manager mit mehr als 20 registrierten Geräten haben möglicherweise Probleme bei der Verwendung der Unternehmensportal-App. Um Unternehmens-Apps auf Geräten bereitzustellen, die mit dem Geräteregistrierungs-Manager verwaltet werden, stellen Sie die Unternehmensportal-App als **erforderliche Installation** für das Benutzerkonto des Geräteregistrierungs-Managers bereit.
+> Zur Verbesserung der Leistung werden beim Anzeigen der Unternehmensportal-App auf einem mit dem Geräteregistrierungs-Manager verwalteten Gerät nur die lokalen Geräte angezeigt, und dies auch nur dann, wenn die Registrierung über die Unternehmensportal-App vorgenommen wurde. Für die Remoteverwaltung anderer vom Geräteregistrierungs-Manager verwalteter Geräte muss die Intune-Konsole verwendet werden.
 
 ## Erstellen von Konten für Geräteregistrierungs-Manager
 Konten für Geräteregistrierungs-Manager sind Benutzerkonten mit der Berechtigung, eine große Anzahl firmeneigener Geräten anzumelden. Nur Benutzer in der Intune-Konsole können Geräteregistrierungs-Manager sein.
@@ -53,7 +59,7 @@ Konten für Geräteregistrierungs-Manager sind Benutzerkonten mit der Berechtigu
 
 1.  Navigieren Sie zum [Microsoft Intune-Kontenportal](http://go.microsoft.com/fwlink/?LinkId=698854), und melden Sie sich bei Ihrem Administratorkonto an.
 
-2.  Klicken Sie auf **Benutzer hinzufügen**..
+2.  Klicken Sie auf **Benutzer hinzufügen**.
 
 3.  Vergewissern Sie sich, dass das Benutzerkonto aufgeführt wird, das ein Geräteregistrierungs-Manager werden soll. Ist dies nicht der Fall, fügen Sie den Benutzer hinzu, indem Sie auf **Neu** klicken und den Prozess zum Hinzufügen eines Benutzers ausführen. Eine Abonnementlizenz ist für jeden Benutzer erforderlich, der auf den Dienst zugreift und der *Geräteregistrierungs-Manager* kann kein Intune-Administrator sein. Stellen Sie fest, ob Sie weitere Lizenzen benötigen, bevor Sie diese Funktion verwenden.
 
@@ -90,6 +96,6 @@ Wenn Sie einen Geräteregistrierungs-Manager löschen, wirkt sich dies nicht auf
 -   bleibt die Beziehung des gelöschten Geräteregistrierungs-Manager-Kontos zu registrierten Geräten bestehen, es können jedoch keine zusätzlichen Geräte registriert werden.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

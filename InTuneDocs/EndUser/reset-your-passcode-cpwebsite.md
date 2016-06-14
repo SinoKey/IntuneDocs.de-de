@@ -30,14 +30,13 @@ ms.suite: ems
 
 Wenn Sie die PIN oder das Kennwort für ein bei Intune registriertes Gerät verloren haben, können Sie die PIN bzw. das Kennwort über die [Unternehmensportalwebsite](http://portal.manage.microsoft.com) zurücksetzen. Die Unternehmensportalwebsite ist eine Website, auf der Sie Computer und Geräte verwalten können, die Sie bei Intune registriert haben. Hier können Sie die meisten der Aufgaben ausführen, die auch über Ihre Unternehmensportal-App zur Verfügung stehen.
 
-> [!NOTE] 
-> Die Schaltfläche „Kennwort zurücksetzen“ wird möglicherweise auf der Unternehmensportal-Website nicht angezeigt, je nachdem, wie Intune von Ihrem IT-Administrator konfiguriert wurde. Das Zurücksetzen der Kennung wird auf Geräten mit Windows 8.1 und Windows RT nicht unterstützt.
+> [!NOTE] Die Schaltfläche „Kennung zurücksetzen“ wird möglicherweise auf der Unternehmensportal-Website nicht angezeigt, je nachdem, wie Intune von Ihrem IT-Administrator konfiguriert wurde. Das Zurücksetzen der Kennung wird auf Geräten mit Windows 8.1 und Windows RT nicht unterstützt.
 
 So setzen Sie Ihre Kennung zurück
 
 1.  Öffnen Sie die [Unternehmensportal-Website](http://portal.manage.microsoft.com), und tippen Sie auf das Gerät, dessen Kennung Sie zurücksetzen möchten.
 
-2.  Tippen Sie auf **Kennung zurücksetzen**..
+2.  Tippen Sie auf **Kennung zurücksetzen**.
 
     ![tap-passcode-to-reset](./media/iwp-1-tap-reset-passcode.png)
 
@@ -45,7 +44,7 @@ So setzen Sie Ihre Kennung zurück
 
     ![sign-out-sign-back-in](./media/iwp-2-sign-out.png)
 
-4.  Tippen Sie auf **Kennung zurücksetzen**..
+4.  Tippen Sie auf **Kennung zurücksetzen**.
 
     ![tap-reset-passcode](./media/iwp-3-tap-reset-passcode-after-signin.png)
 
@@ -66,6 +65,6 @@ So setzen Sie Ihre Kennung zurück
 ### Weitere Informationen:
 [Verwenden der Intune-Unternehmensportal-Website](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

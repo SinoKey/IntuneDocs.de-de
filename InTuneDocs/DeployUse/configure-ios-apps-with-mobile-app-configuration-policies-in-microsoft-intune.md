@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune | Microsoft Intune
+title: Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -42,19 +42,18 @@ Mit Konfigurationsrichtlinien für mobile Apps können Sie diese Probleme beseit
 
 Sie stellen diese Richtlinien nicht direkt für Benutzer und Geräte bereit. Stattdessen verknüpfen Sie die Richtlinie mit einer App und stellen dann die App bereit. Die Richtlinieneinstellungen werden immer dann verwendet, wenn die Anwendung danach sucht (in der Regel beim ersten Ausführen).
 
-> [!TIP]
-> Dieser Richtlinientyp ist zurzeit nur für Geräte unter iOS 7.1 und höher verfügbar und unterstützt die folgenden App-Installationstypen:
+> [!TIP] Dieser Richtlinientyp ist zurzeit nur für Geräte unter iOS 7.1 und höher verfügbar und unterstützt die folgenden App-Installationstypen:
 > 
 > -   **Verwaltete iOS-App aus dem App Store**
 > -   **App-Paket für iOS**
 > 
-> Weitere Informationen zu Installationstypen von Apps finden Sie unter [Bereitstellen von Apps mit Microsoft Intune](deploy-apps.md)..
+> Weitere Informationen zu Installationstypen von Apps finden Sie unter [Bereitstellen von Apps mit Microsoft Intune](deploy-apps.md).
 
 ## Konfigurieren einer Konfigurationsrichtlinie für mobile Apps
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Übersicht** &gt; **Richtlinie hinzufügen**..
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Übersicht** &gt; **Richtlinie hinzufügen**.
 
-2.  Erweitern Sie in der Liste der Richtlinien den Eintrag **iOS**, klicken Sie auf **Mobile App-Konfiguration**, und klicken Sie dann auf **Richtlinie erstellen**..
+2.  Erweitern Sie in der Liste der Richtlinien den Eintrag **iOS**, klicken Sie auf **Mobile App-Konfiguration**, und klicken Sie dann auf **Richtlinie erstellen**.
 
     > [!TIP]
     > Sie können für diesen Richtlinientyp nur benutzerdefinierte Einstellungen konfigurieren. Empfohlene Einstellungen sind nicht verfügbar.
@@ -63,8 +62,7 @@ Sie stellen diese Richtlinien nicht direkt für Benutzer und Geräte bereit. Sta
 
 4.  Geben oder fügen Sie im Abschnitt **Konfigurationsrichtlinie für mobile Apps** der Seite eine XML-Eigenschaftenliste mit den App-Konfigurationseinstellungen ein, die im Feld verwendet werden sollen.
 
-    > [!TIP]
-    > Weitere Informationen zu XML-Eigenschaftenlisten finden Sie unter [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in der iOS Developer Library.
+    > [!TIP] Weitere Informationen zu XML-Eigenschaftenlisten finden Sie in der iOS Developer Library unter [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Grundlegendes zu XML-Eigenschaftenlisten).
     > 
     > Das Format der XML-Eigenschaftenliste variiert je nach der App, die Sie konfigurieren. Wenden Sie sich an den Hersteller der App, um ausführliche Informationen über das genau zu verwendende Format zu erhalten.
     > 
@@ -81,15 +79,7 @@ Sie stellen diese Richtlinien nicht direkt für Benutzer und Geräte bereit. Sta
     >
         > Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschaftenliste:
     >    
-    > \{\{userprincipalname\}\} – (Beispiel: **John@contoso.com**)
-    > \{\{mail\}\} – (Beispiel: **John@contoso.com**)
-    > \{\{partialupn\}\} – (Beispiel: **John**)
-    > \{\{accountid\}\} – (Beispiel: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-    > \{\{deviceid\}\} – (Beispiel: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-    > \{\{userid\}\} – (Beispiel: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-    > \{\{username\}\} – (Beispiel: **John Doe**)
-    > \{\{serialnumber\}\} - (Beispiel: **F4KN99ZUG5V2**) für iOS-Geräte
-    > \{\{serialnumberlast4digits\}\} - (Beispiel: **G5V2**) für iOS-Geräte
+    > \{\{userprincipalname\}\} – (Beispiel: **John@contoso.com**) \{\{mail\}\} – (Beispiel: **John@contoso.com**) \{\{partialupn\}\} – (Beispiel: **John**) \{\{accountid\}\} – (Beispiel: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**) \{\{deviceid\}\} – (Beispiel: **b9841cd9-9843-405f-be28-b2265c59ef97**) \{\{userid\}\} – (Beispiel: **3ec2c00f-b125-4519-acf0-302ac3761822**) \{\{username\}\} – (Beispiel: **John Doe**) \{\{serialnumber\}\} – (Beispiel: **F4KN99ZUG5V2**) für iOS-Geräte \{\{serialnumberlast4digits\}\} – (Beispiel: **G5V2**) für iOS-Geräte
 >
 > Die Zeichen \{\{ und \}\} werden nur von Tokentypen verwendet und dürfen nicht für andere Zwecke verwendet werden.
 
@@ -101,7 +91,7 @@ Sie stellen diese Richtlinien nicht direkt für Benutzer und Geräte bereit. Sta
     > [!IMPORTANT]
     > Beim Klicken auf **Überprüfen** prüft Intune, ob der von Ihnen eingegebene XML-Code in einem gültigen Format vorliegt. Es wird nicht überprüft, ob die XML-Eigenschaftenliste mit der App verwendet werden kann, der sie zugeordnet ist.
 
-6.  Klicken Sie abschließend auf **Richtlinie speichern**..
+6.  Klicken Sie abschließend auf **Richtlinie speichern**.
 
 Die neue Richtlinie wird im Knoten **Konfigurationsrichtlinien** angezeigt.
 
@@ -114,8 +104,7 @@ Fahren Sie mit dem Bereitstellen und Überwachen der App-Bereitstellung wie gewo
 
 Wenn die bereitgestellte App auf einem Gerät gestartet wird, wird sie mit den Einstellungen ausgeführt, die Sie in der Konfigurationsrichtlinie für mobile Apps konfiguriert haben.
 
-> [!TIP]
-> Wenn mindestens eine Konfigurationsrichtlinie für mobile Apps einen Konflikt verursacht, wird keine Richtlinie durchgesetzt, und der Konflikt wird im **Dashboard** der Intune-Verwaltungskonsole gemeldet..
+> [!TIP] Wenn mindestens eine Konfigurationsrichtlinie für mobile Apps einen Konflikt verursacht, wird keine Richtlinie durchgesetzt, und der Konflikt wird im **Dashboard** der Intune-Verwaltungskonsole gemeldet.
 
 ## Beispielformat für die XML-Datei für die Konfiguration mobiler Apps
 
@@ -150,6 +139,6 @@ Wenn Sie eine Datei für die Konfiguration mobiler Apps erstellen, können Sie e
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

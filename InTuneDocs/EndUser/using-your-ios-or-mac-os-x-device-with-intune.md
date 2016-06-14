@@ -15,7 +15,7 @@ ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -43,6 +43,7 @@ Die Informationen in diesem Abschnitt helfen Ihnen beim Installieren des Intune-
 Die Informationen in diesem Abschnitt helfen Ihnen bei Aktionen, die Sie nach dem Registrieren Ihres iOS-Geräts bei Intune ausführen können.
 
 - [Verwenden verwalteter Apps auf Ihrem Gerät](use-managed-apps-on-your-device-ios.md)</br>
+- [Festlegen oder Ändern der Kennung](set-or-change-your-passcode-ios.md)</br>
 - [Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Geräts](reset-erase-your-lost-or-stolen-device-ios.md)</br>
 - [Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft](turn-off-microsoft-usage-data-collection-ios.md)</br>
 - [Aufheben der Registrierung Ihres Geräts in Intune](unenroll-your-device-from-intune-ios.md)</br>
@@ -65,6 +66,6 @@ Die Informationen in diesem Abschnitt helfen Ihnen beim Beheben von Problemen, d
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

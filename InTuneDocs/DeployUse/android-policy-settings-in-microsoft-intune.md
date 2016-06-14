@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Einstellungen für Android-Konfigurationsrichtlinien in Microsoft Intune | Microsoft Intune
+title: Einstellungen für Android- und Samsung KNOX-Konfigurationsrichtlinien | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Einstellungen für Android-Richtlinien in Microsoft Intune
+# Einstellungen für Android- und Samsung KNOX-Richtlinien in Microsoft Intune
 
 ## Allgemeine Konfigurationsrichtlinie
 
@@ -38,7 +38,7 @@ Verwenden Sie die allgemeine **Android-Konfigurationsrichtlinie** von Microsoft 
 -   **Kompatible und nicht kompatible Apps**: Geben Sie eine Liste von Apps an, die in Ihrem Unternehmen kompatibel bzw. nicht kompatibel sind. Auf Android- und iOS-Geräten können Sie mit dem **Bericht über nicht kompatible Apps** überprüfen, ob die vom Benutzer installierten Apps zu den als von Ihnen kompatibel angegebenen Apps gehören (die Installation der App kann jedoch nicht blockiert werden).
 
 > [!TIP]
-> Sie können Bestimmungen für Benutzer konfigurieren, um sicherzustellen, dass sie bestätigen, dass Apps auf ihrem Gerät, einschließlich persönlicher Apps, ausgewertet werden und dass nicht kompatible Anwendungen entweder blockiert oder als nicht kompatibel gemeldet werden. Benutzer müssen diese Bestimmungen akzeptieren, bevor sie ihr Gerät registrieren und Apps über das Unternehmensportal abrufen können. Weitere Informationen zur Verwendung von Nutzungsbedingungen finden Sie unter [Einstellungen für Nutzungsbedingungsrichtlinien in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md)..
+> Sie können Bestimmungen für Benutzer konfigurieren, um sicherzustellen, dass sie bestätigen, dass Apps auf ihrem Gerät, einschließlich persönlicher Apps, ausgewertet werden und dass nicht kompatible Anwendungen entweder blockiert oder als nicht kompatibel gemeldet werden. Benutzer müssen diese Bestimmungen akzeptieren, bevor sie ihr Gerät registrieren und Apps über das Unternehmensportal abrufen können. Weitere Informationen zur Verwendung von Geschäftsbedingungen finden Sie unter [Einstellungen für Geschäftsbedingungensrichtlinien in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
 Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie sie ggf. mithilfe einer benutzerdefinierten Android-Richtlinie erstellen, die Ihnen das Steuern des Geräts mithilfe von OMA-URI-Einstellungen erlaubt. Weitere Informationen finden Sie weiter unten in diesem Thema unter **Benutzerdefinierte Richtlinieneinstellungen**.
 
@@ -150,7 +150,7 @@ Geben Sie die folgenden Einstellungen für **Samsung KNOX-Geräte** an:
 
 |Name der Einstellung|Details|
 |----------------|--------------------|
-|**Wählen Sie eine verwalteten App aus, die ausgeführt werden darf, während sich das Gerät im Kiosk-Modus befindet**|Klicken Sie auf **Durchsuchen**, und wählen Sie dann eine verwaltete App oder eine App aus einem Store aus, die ausgeführt werden darf, wenn sich das Gerät im Kiosk-Modus befindet. Andere Apps dürfen auf dem Gerät nicht ausgeführt werden.<br /><br />Informationen finden Sie unter „Angeben von URLs zu App Stores“ weiter unten in diesem Thema.|
+|**Wählen Sie eine verwalteten App aus, die ausgeführt werden darf, während sich das Gerät im Kiosk-Modus befindet**|Klicken Sie auf **Durchsuchen**, und wählen Sie dann die verwaltete App aus, die ausgeführt werden darf, wenn sich das Gerät im Kioskmodus befindet (Apps, die als Link zum Store angegeben sind, werden derzeit nicht unterstützt). Andere Apps dürfen auf dem Gerät nicht ausgeführt werden.|
 |**Lautstärkeregler zulassen**|Aktiviert oder deaktiviert die Verwendung der Lautstärkeregler am Gerät.|
 |**Schaltfläche für Standby und Aktivieren zulassen**|Aktiviert oder deaktiviert die Taste für Standby/Aktivierung des Bildschirms am Gerät.|
 
@@ -161,23 +161,23 @@ Im **Bericht über nicht kompatible Apps** können Sie sich über die Konformit�
 
 ###### So führen Sie den Bericht über nicht kompatible Apps aus
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Berichte** &gt; **Bericht über nicht kompatible Apps**..
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Berichte** &gt; **Bericht über nicht kompatible Apps**.
 
-2.  Wählen Sie die Gerätegruppen aus, die Sie überprüfen möchten, geben Sie an, ob Sie nach kompatiblen und/oder nicht kompatiblen Apps suchen möchten, und klicken Sie dann auf **Bericht anzeigen**..
+2.  Wählen Sie die Gerätegruppen aus, die Sie überprüfen möchten, geben Sie an, ob Sie nach kompatiblen und/oder nicht kompatiblen Apps suchen möchten, und klicken Sie dann auf **Bericht anzeigen**.
 
 #### Angeben von URLs zu App-Stores
-Um eine App-URL in der Liste mit kompatiblen und nicht kompatiblen Apps oder in der Option **Verwaltete App auswählen, die ausgeführt werden darf, wenn sich das Gerät im Kioskmodus befindet (nur iOS)** anzugeben, verwenden Sie das folgende Format:
+Verwenden Sie zum Festlegen einer App-URL in der Liste konformer und nicht konformer Apps das folgende Format:
 
 Suchen Sie im [Apps-Bereich von Google Play](https://play.google.com/store/apps) nach der App, die Sie verwenden möchten.
 
 Öffnen Sie die Installationsseite für die App, und kopieren Sie die URL in die Zwischenablage. Jetzt können Sie diese als URL in der Liste mit kompatiblen oder nicht kompatiblen Apps verwenden.
 
-**Beispiel**: Suchen Sie in Google Play nach Microsoft Office Mobile. Die URL, die Sie verwenden, ist **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**..
+**Beispiel**: Suchen Sie in Google Play nach Microsoft Office Mobile. Die URL, die Sie verwenden, ist **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
 ## Benutzerdefinierte Richtlinieneinstellungen
 Stellen Sie mithilfe der **benutzerdefinierten Android-Konfigurationsrichtlinie** von Microsoft Intune die Einstellungen für OMA-URI (Open Mobile Alliance Uniform Resource Identifier) bereit, um Features auf Android-Geräten zu steuern. Dies sind die Standardeinstellungen, die viele Hersteller von mobilen Geräten verwenden, um Gerätefunktionen zu steuern.
 
-Diese Funktion soll es Ihnen ermöglichen, Android-Einstellungen bereitzustellen, die nicht mit Intune-Richtlinien konfigurierbar sind. Weitere Informationen zu den Einstellungen, die Sie mit diesen Richtlinien konfigurieren können, finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+Diese Funktion soll es Ihnen ermöglichen, Android-Einstellungen bereitzustellen, die nicht mit Intune-Richtlinien konfigurierbar sind. Weitere Informationen zu den Einstellungen, die Sie mit diesen Richtlinien konfigurieren können, finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 > [!NOTE]
 > Derzeit unterstützen benutzerdefinierte Android-Richtlinien unterstützt nur das Konfigurieren von WLAN-Einstellungen für Android-Geräte, die einen vorinstallierten Schlüssel enthalten. Weitere Informationen finden Sie später in diesem Abschnitt unter „Konfigurieren eines benutzerdefinierten WLAN-Profils mit einem vorinstallierten Schlüssel“.
@@ -195,7 +195,7 @@ Diese Funktion soll es Ihnen ermöglichen, Android-Einstellungen bereitzustellen
     |--------|--------------------|
     |**Name der Einstellung**|Geben Sie einen eindeutigen Namen für die OMA-URI-Einstellung ein, damit Sie sie in der Liste der Einstellungen leichter identifizieren können.|
     |**Beschreibung der Einstellung**|Geben Sie eine Beschreibung ein, die einen Überblick über die Einstellung bietet, und andere relevante Informationen, die Ihnen die Suche danach erleichtern.|
-    |**Datentyp**|Wählen Sie den Datumstyp aus, in dem Sie diese OMA-URI-Einstellung angeben. Wählen Sie aus **Zeichenfolge, Zeichenfolge (XML), Datum und Uhrzeit, ganze Zahl, Gleitkomma** oder **Boolesch** aus..|
+    |**Datentyp**|Wählen Sie den Datumstyp aus, in dem Sie diese OMA-URI-Einstellung angeben. Wählen Sie aus **Zeichenfolge, Zeichenfolge (XML), Datum und Uhrzeit, ganze Zahl, Gleitkomma** oder **Boolesch** aus.|
     |**OMA-URI (Groß-/Kleinschreibung beachten)**|Geben Sie den OMA-URI an, für den Sie eine Einstellung festlegen möchten.|
     |**Wert**|Geben Sie den mit der zuvor festgelegten OMA-URI-Einstellung zu verknüpfenden Wert an.|
 
@@ -212,7 +212,7 @@ Obwohl Intune WLAN-Profile für Android-Geräte unterstützt, ist derzeit das Ei
 |----------------|--------------------|
 |**Name der Einstellung**|Geben Sie einen Namen Ihrer Wahl für die Einstellung ein.|
 |**Beschreibung der Einstellung**|Geben Sie eine Beschreibung für die Einstellung ein.|
-|**Datentyp**|Wählen Sie **Zeichenfolge (XML)** aus..|
+|**Datentyp**|Wählen Sie **Zeichenfolge (XML)** aus.|
 |**OMA-URI**|Geben Sie Folgendes ein: ./Vendor/MSFT/WiFi/Profile/*&lt;Ihr WLAN-Profil&gt;*/Settings|
 
 3.  Kopieren Sie für **Wert** den folgenden XML-Code und fügen Sie ihn dann ein:
@@ -258,6 +258,6 @@ Obwohl Intune WLAN-Profile für Android-Geräte unterstützt, ist derzeit das Ei
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

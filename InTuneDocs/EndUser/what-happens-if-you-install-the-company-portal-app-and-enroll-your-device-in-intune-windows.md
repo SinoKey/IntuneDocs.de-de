@@ -28,41 +28,7 @@ ms.suite: ems
 
 # Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?
 
-Klicken Sie auf die zu Ihrem Gerät passenden Links, um zu erfahren, was beim Installieren der Unternehmensportal-App und beim Registrieren Ihres Geräts geschieht.
-
-- [Windows 10](#windows-10)
-- [Windows 8.1 und Windows RT](#windows-8-1-and-windows-rt)
-- [Windows Phone 8.1 und Windows Phone 8](#windows-phone-8-1-and-windows-phone-8)
-- [Windows 7 und Vista](#windows-7-and-vista)
-
-## Windows 10
-Wenn Sie die Unternehmensportal-App installieren und dann mithilfe der App Ihr Windows 10 Enterprise- oder Professional-Gerät bei Intune registrieren, können Sie folgende Aufgaben mit der Unternehmensportal-App durchführen:
-
--   Zugreifen auf das Netzwerk des Unternehmens und auf E-Mail- sowie andere arbeitsbezogene Dateien
-
--   Abrufen von Unternehmens-Apps aus dem Unternehmensportal
-
--   Automatisches Konfigurieren Ihres geschäftlichen E-Mail-Kontos
-
--   Zurücksetzen Ihres Smartphones auf die werkseitigen Standardeinstellungen bei Verlust oder Diebstahl
-
-Die Vorgehensweise zum Registrieren finden Sie unter [Registrieren Ihres Windows-Geräts bei Intune](enroll-your-device-in-intune-windows.md). Informationen darüber, was Ihr IT-Administrator auf Ihrem Gerät sehen kann, finden Sie unter [Was kann Ihr IT-Administrator sehen, wenn Sie Ihr Gerät bei Intune registrieren?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)..
-
-Wenn Sie einen Computer hinzufügen:
-
--   Auf Ihrem Computer wird Software installiert, mit deren Hilfe Ihr IT-Administrator den Computer verwalten kann und mit der Sie Unternehmensressourcen wie Apps und Supportinformationen abrufen können. Ihr IT-Administrator kann diese Software automatisch aktualisieren.
-
--   Intune Endpoint Protection wird möglicherweise auf Ihrem Computer installiert. Dies ist eine Software, die den Computer auf Viren und Malware überprüft.
-
--   Ihr IT-Administrator kann die gesamte auf dem Computer installierte Software inventarisieren. Software, die Sie persönlich installiert haben, kann dabei eingeschlossen werden.
-
--   Sie müssen unter Umständen Nutzungsbedingungen akzeptieren.
-
--   Der IT-Administrator kann Daten von der Festplatte Ihres Computers sammeln oder löschen. Ihr IT-Administrator kann auch die gesamte Festplatte löschen.
-
--   Ihr IT-Administrator kann Apps und Updates auf dem Computer installieren.
-
--   Ihr IT-Administrator kann Richtlinien auf dem Computer erzwingen. Beispielsweise kann es erforderlich sein, dass Sie ein Kennwort oder eine PIN auf dem Computer festlegen, wobei zu viele falsche Versuche bei der Kennworteingabe zu einer Sperrung des Computers oder zum Löschen sämtlicher Daten von der Festplatte des Computers führen können.
+Klicken Sie weiter oben im Abschnitt „Inhalt dieses Artikels“ auf den zu Ihrem Gerät passenden Link, um zu erfahren, was beim Installieren der Unternehmensportal-App und Registrieren Ihres Geräts geschieht. Informationen zu Windows 10-Geräten finden Sie auf [dieser Seite](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 
 ## Windows 8.1 und Windows RT
 Wenn Sie die Unternehmensportal-App installieren und dann mithilfe der App Ihr Windows 8.1 Enterprise- oder Professional- oder Ihr Windows RT-Gerät bei Intune registrieren, können Sie folgende Aufgaben mit der Unternehmensportal-App durchführen:
@@ -75,7 +41,7 @@ Wenn Sie die Unternehmensportal-App installieren und dann mithilfe der App Ihr W
 
 -   Zurücksetzen Ihres Smartphones auf die werkseitigen Standardeinstellungen bei Verlust oder Diebstahl
 
-Die Vorgehensweise zum Registrieren finden Sie unter [Registrieren Ihres Windows-Geräts bei Intune](enroll-your-device-in-intune-windows.md). Informationen darüber, was Ihr IT-Administrator auf Ihrem Gerät sehen kann, finden Sie unter [Was kann Ihr IT-Administrator sehen, wenn Sie Ihr Gerät bei Intune registrieren?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)..
+Die Vorgehensweise zum Registrieren finden Sie unter [Registrieren Ihres Windows-Geräts bei Intune](enroll-your-device-in-intune-windows.md). Informationen darüber, was Ihr IT-Administrator auf Ihrem Gerät sehen kann, finden Sie unter [Was kann Ihr IT-Administrator sehen, wenn Sie Ihr Gerät bei Intune registrieren?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 Wenn Sie einen Computer hinzufügen:
 
@@ -104,7 +70,7 @@ Wenn Sie die Unternehmensportal-App installieren und dann mithilfe der App Ihr W
 
 -   Zurücksetzen Ihres Smartphones auf die werkseitigen Standardeinstellungen bei Verlust oder Diebstahl
 
-Die Vorgehensweise zum Registrieren finden Sie unter [Registrieren Ihres Windows-Geräts bei Intune](enroll-your-device-in-intune-windows.md). Informationen darüber, was Ihr IT-Administrator auf Ihrem Gerät sehen kann, finden Sie unter [Was kann Ihr IT-Administrator sehen, wenn Sie Ihr Gerät bei Intune registrieren?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)..
+Die Vorgehensweise zum Registrieren finden Sie unter [Registrieren Ihres Windows-Geräts bei Intune](enroll-your-device-in-intune-windows.md). Informationen darüber, was Ihr IT-Administrator auf Ihrem Gerät sehen kann, finden Sie unter [Was kann Ihr IT-Administrator sehen, wenn Sie Ihr Gerät bei Intune registrieren?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 Wenn Sie Ihr Windows Phone-Gerät hinzufügen, gewähren Sie Ihrem IT-Administrator eine Zugriffsberechtigung für das Gerät. IT-Administratoren können folgende Dinge tun:
 
@@ -141,7 +107,7 @@ Wenn Sie die Unternehmensportal-App installieren und dann mithilfe der App Ihr W
 
 -   Zurücksetzen Ihres Smartphones auf die werkseitigen Standardeinstellungen bei Verlust oder Diebstahl
 
-Informationen darüber, was Ihr IT-Administrator auf Ihrem Gerät sehen kann, finden Sie unter [Was kann Ihr IT-Administrator sehen, wenn Sie Ihr Gerät bei Intune registrieren?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)..
+Informationen darüber, was Ihr IT-Administrator auf Ihrem Gerät sehen kann, finden Sie unter [Was kann Ihr IT-Administrator sehen, wenn Sie Ihr Gerät bei Intune registrieren?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 Wenn Sie einen Computer hinzufügen:
 
@@ -163,6 +129,6 @@ Wenn Sie einen Computer hinzufügen:
 [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

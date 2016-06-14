@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Registrieren von Geräten bei Microsoft Intune | Microsoft Intune
+title: Registrieren von Geräten | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -27,6 +27,12 @@ ms.suite: ems
 
 # Registrieren von Geräten für die Verwaltung in Intune
 Die Registrierung durch die Verwaltung mobiler Geräte (MDM) in Microsoft Intune dient dazu, Geräte in die Verwaltung aufzunehmen und den Zugriff auf Ressourcen zu ermöglichen. Auf welche Weise Sie die Geräte registrieren, hängt von Gerätetyp, Besitz und benötigtem Verwaltungsniveau ab. Szenarien mit „Bring your own Device“- (BYOD) und firmeneigenen Geräten (Company-Owned Device, COD) erfordern eine Registrierung. Organisationen, die Exchange ActiveSync verwenden, entweder lokal oder in der Cloud gehostet, können ein niedrigeres Verwaltungsniveau ohne Registrierungsanforderungen aktivieren. Windows-PCs können auch mit Intune-Clientsoftware verwaltet werden.
+
+###  Unterstützte Geräteplattformen
+
+Intune kann folgende Geräteplattformen verwalten:
+
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ## Aktivieren der Geräteregistrierung  
  Durch die Registrierung können Benutzer von ihren persönlichen Geräten aus auf Unternehmensressourcen zugreifen, und Administrator können sicherstellen, dass diese Geräte Richtlinien zum Schutz von Unternehmensressourcen einhalten. Dies ist die beste Möglichkeit, BYOD-Szenarien mit Intune zu ermöglichen. Der Administrator muss die Registrierung in der Intune-Konsole aktivieren. Dazu kann es erforderlich sein, eine Vertrauensstellung mit dem Gerät einzurichten und Benutzern Lizenzen zuzuweisen. Das Gerät wird dann in der Regel vom Benutzer durch Eingabe der Anmeldeinformationen seines Geschäfts- oder Schulkontos registriert. Das Gerät empfängt anschließend die Richtlinie von Intune und erhält Zugriff auf Ressourcen.
@@ -58,6 +64,6 @@ Mit der Intune-Clientsoftware verwaltete Computer können nicht selektiv zurück
 [Verwalten von Windows-PCs mit Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

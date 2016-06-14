@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Anforderungen an die Netzwerkinfrastruktur für Microsoft Intune
-Bevor Sie Microsoft Intune einrichten, lesen Sie dieses Thema und andere Anforderungen, die unter [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md) aufgeführt sind..
+Bevor Sie Microsoft Intune einrichten, lesen Sie dieses Thema und andere Anforderungen, die unter [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md) aufgeführt sind.
 
 Die in diesem Thema aufgeführten Anforderungen ermöglichen es Ihrer Netzwerkinfrastruktur, die Kommunikation zwischen den Geräten, die Sie verwalten und für die Verwaltung Ihres Intune-Abonnements verwenden, und den Websites im Internet zu übertragen, die vom cloudbasierten Dienst verwendet werden.
 
@@ -169,20 +169,10 @@ Sie können Proxyservereinstellungen entweder auf einzelnen Clientcomputern modi
 Sie können auch einen Proxyserver verwenden, der Inhalte zwischenspeichert, um die [Netzwerkbandbreite zu verringern](network-bandwidth-use.md), die von Intune-Clients verwendet wird.
 
 
-
-## Anforderungen an den Service to Service Connector
-Vom Service to Service Connector wird nur cloudbasiertes Exchange unterstützt. Es gibt keine Anforderungen an die lokale Infrastruktur.
-
-Zum Verwenden dieses Connectors muss folgende Voraussetzung erfüllt sein:
-
--   Sie verfügen über ein Office 365-Abonnement mit einem Exchange Server 2013-Mandanten. Solange der Mandant Exchange Server 2013 entspricht, wird in der gleichen Umgebung Exchange Server 2010 vom Connector unterstützt.
-
--   Das Benutzerkonto, mit dem Sie den lokalen Connector installieren, muss ein Mandantenadministrator für Intune und ein Administrator für den Exchange-Mandanten mit einer Lizenz zur Verwendung von Exchange Server 2013 sein.
-
 ### Weitere Informationen:
 [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Auswählen der Methode zum Verwalten von Geräten mit Microsoft Intune | Microsoft Intune
+title: Auswählen der Methode zum Verwalten von Geräten | Microsoft Intune
 description:
 keywords:
 author: jeffgilb
@@ -31,12 +31,7 @@ ms.suite: ems
 ## Methoden zum Verwalten mobiler Geräte
 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kann folgende Geräteplattformen verwalten:
 
-- Apple iOS 7.1 und höher
-- Google Android 4.0 und höher (einschließlich Samsung KNOX)
-- Windows Phone 8.0 und höher
-- Windows RT und Windows 8.1 RT
-- PCs mit Windows 8.1 und höher
-- Mac OS X 10.9 und höher
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 <div class="alert alert-tip">
   <h5><span class="icon-tip"></span> Tipp</h5>
@@ -80,16 +75,16 @@ Erwägen Sie die Verwendung des Intune-Computerclients für folgende Optionen:
 ## Exchange ActiveSync-Verwaltung
 Sie können Geräte auch mithilfe von Exchange ActiveSync verwalten. Dies erfordert das Installieren von On-Premises Connector oder die Verwendung des integrierten Service to Service Connector, um eine Verbindung mit Exchange Server herzustellen.
 
-Weitere Informationen zu den Hardware- und Softwareanforderungen zur Installation von On-Premises Connector finden Sie unter [Anforderungen für On-Premises Connector](/Intune/network-infrastructure-requirements-for-microsoft-intune.md)..
+Weitere Informationen zu den Hardware- und Softwareanforderungen für die Installation von On-Premises Connector finden Sie unter [Anforderungen für On-Premises Connector](../deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector).
 
-Informationen zum Verwenden von On-Premises Connector oder Service to Service Connector mit Exchange finden Sie unter [Verwaltung mobiler Geräte mit Exchange ActiveSync und Microsoft Intune](/Intune/get-started/mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)..
+Informationen zum Verwenden von On-Premises Connector oder Service to Service Connector mit Exchange finden Sie unter [Verwaltung mobiler Geräte mit Exchange ActiveSync und Microsoft Intune](../deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
 
 
 
 ## Nächste Schritte
-Nachdem Sie einige der Funktionen entdeckt haben, die Sie zum Registrieren Ihrer Geräte mit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] verwenden können, müssen Sie sich auf die [Registrierung Ihrer Geräte](/Intune/get-started/get-ready-to-enroll-devices-in-microsoft-intune.md) vorbereiten. Nachdem Sie Ihre Geräte registriert haben, können Sie alle Funktionen nutzen, über die Sie in diesem Thema gelesen haben. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+Sie haben nun einige der Funktionen kennengelernt, die Sie zum Registrieren Ihrer Geräte bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] verwenden können. Als Nächstes müssen Sie [Ihre Geräte registrieren](../deploy-use/enroll-devices-in-microsoft-intune). Nachdem Sie Ihre Geräte registriert haben, können Sie alle Funktionen nutzen, über die Sie in diesem Thema gelesen haben. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

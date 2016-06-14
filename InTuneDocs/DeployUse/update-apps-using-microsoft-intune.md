@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Aktualisieren von Apps mit Microsoft Intune | Microsoft Intune
+title: Aktualisieren von Apps | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -34,18 +34,18 @@ Wenn eine neue Version einer von Ihnen bereitgestellten App veröffentlicht wird
 > [!IMPORTANT]
 > Beim Bereitstellen einer App mit der Bereitstellungsaktion **Erforderliche Installation** und einer späteren Änderung der Bereitstellungsaktion in **Verfügbare Installation**werden Updates für die App auf Geräten, auf denen die App vor der Bereitstellungsänderung installiert war, nicht automatisch installiert. Gehen Sie wie folgt vor, um dieses Problem zu beheben:
 > 
-> -   Bitten Sie den Benutzer des Geräts, das Unternehmensportal zu öffnen, die installierte App auszuwählen und auf **Installieren**zu klicken..
-> -   Ändern Sie die Bereitstellungsaktion in **Deinstallieren**, und stellen Sie die App nach der Deinstallation der App erneut mit der Bereitstellungsaktion **Verfügbare Installation**bereit..
+> -   Bitten Sie den Benutzer des Geräts das Unternehmensportal zu öffnen, die installierte App auszuwählen und auf **Installieren**zu klicken.
+> -   Ändern Sie die Bereitstellungsaktion in **Deinstallieren**, und stellen Sie die App nach der Deinstallation der App erneut mit der Bereitstellungsaktion **Verfügbare Installation**bereit.
 
 ### So aktualisieren Sie eine App
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Apps** &gt; **Apps**..
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Apps** &gt; **Apps**.
 
-2.  Wählen Sie in der Liste **Apps** die zu aktualisierende App aus, und klicken Sie dann auf **Bearbeiten**..
+2.  Wählen Sie in der Liste **Apps** die zu aktualisierende App aus, und klicken Sie dann auf **Bearbeiten**.
 
 3.  Geben Sie im Assistenten **Software bearbeiten** neue Details für das App-Paket ein.
 
-4.  Klicken Sie danach auf **Aktualisieren**..
+4.  Klicken Sie danach auf **Aktualisieren**.
 
 Wenn Geräte das nächste Mal prüfen, ob Apps verfügbar sind, wird die App automatisch auf die neueste Version aktualisiert.
 
@@ -53,6 +53,6 @@ Wenn Geräte das nächste Mal prüfen, ob Apps verfügbar sind, wird die App aut
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

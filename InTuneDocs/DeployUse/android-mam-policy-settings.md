@@ -61,10 +61,11 @@ Der Begriff **Richtlinienverwaltete Apps** wird verwendet, um auf Apps zu verwei
 
   Für Geräte, die nicht bei Intune registriert sind, können Weblinks in richtlinienverwalteten Apps nur in der Managed Browser-App unter Verwendung der Verwaltungsrichtlinie für mobile Apps geöffnet werden.
 
-  Wenn Sie Intune zum Verwalten Ihrer Geräte verwenden, lesen Sie [Verwalten des Internetzugriffs mittels Richtlinien für verwaltete Browser mit Microsoft Intune](manage-internet-access-using-managed-browser-policies.md)..
+  Wenn Sie Intune zum Verwalten Ihrer Geräte verwenden, lesen Sie [Verwalten des Internetzugriffs mittels Richtlinien für verwaltete Browser mit Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
     **Standardwert = Ja**
 - **App-Daten verschlüsseln:** Wählen Sie **Ja** aus, um die Verschlüsselung zu aktivieren. Wenn diese Einstellung aktiviert ist, wird bei Apps, die einer Verwaltungsrichtlinie für mobile Apps zugeordnet sind, die Verschlüsselung von Microsoft bereitgestellt. Daten werden während der Datei-E/A-Vorgänge synchron verschlüsselt. Inhalt im Speicher des Geräts wird immer verschlüsselt.
+  >[!NOTE] Die Verschlüsselungsmethode ist nicht FIPS 140-2-zertifiziert.
 
   **Standardwert = Ja**
 
@@ -75,12 +76,13 @@ Der Begriff **Richtlinienverwaltete Apps** wird verwendet, um auf Apps zu verwei
 ##  Richtlinieneinstellungen für den Android-Zugriff
 Der Begriff **Richtlinienverwaltete Apps** wird verwendet, um auf Apps zu verweisen, die mit MAM-Richtlinien konfiguriert sind.
 
-- **Einfache PIN für Zugriff erforderlich:** Wählen Sie **Ja** aus, um für richtlinienverwaltete Apps eine PIN anzufordern. Benutzer werden beim ersten Ausführen der App im beruflichen Kontext aufgefordert, diese einzurichten.
+- **PIN für Zugriff erforderlich:** Wählen Sie **Ja** aus, um für richtlinienverwaltete Apps eine PIN anzufordern. Benutzer werden beim ersten Ausführen der App im beruflichen Kontext aufgefordert, diese einzurichten.
 
  **Standardwert = Ja**
-- **Anzahl der Versuche bis zum Zurücksetzen der PIN:** Geben Sie die Anzahl der möglichen PIN-Eingabeversuche an, bevor der Benutzer die PIN zurücksetzen muss.
 
- **Für diese Einstellung gibt es keinen Standardwert.**
+ -  **Einfache PIN zulassen:** Geben Sie an, ob Benutzer einfache PIN-Sequenzen wie z. B. 1234 oder 1111 verwenden dürfen. **Standardwert = Ja**.
+ - **PIN-Länge:** Geben Sie die Mindestanzahl von Ziffern in einer PIN an. **Standardwert = 4**
+ - **Anzahl der Versuche bis zum Zurücksetzen der PIN:** Geben Sie die Anzahl der möglichen PIN-Eingabeversuche an, bevor der Benutzer die PIN zurücksetzen muss. **Für diese Einstellung gibt es keinen Standardwert.**
 - **Unternehmensanmeldeinformationen für den Zugriff erforderlich:** Wählen Sie **Ja** aus, um Unternehmensanmeldeinformationen anstelle einer PIN für den Zugriff auf die App anzufordern.  Wenn Sie diese Einstellung auf **Ja** festlegen, sind PIN oder Fingerabdruckidentifizierung damit hinfällig.  Der Benutzer wird aufgefordert, die Unternehmensanmeldeinformationen einzugeben.
 
   **Standardwert = Nein**
@@ -98,6 +100,6 @@ Der Begriff **Richtlinienverwaltete Apps** wird verwendet, um auf Apps zu verwei
 - **Bildschirmaufnahmen und Android Assistant blockieren (Android 6 Marshmallow oder höher):** Wählen Sie **Ja** aus, um die Bildschirmaufnahme- und **Android Assistant**-Funktionen des Geräts zu blockieren, wenn diese App verwendet wird.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

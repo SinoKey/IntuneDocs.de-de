@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Überwachen der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune
-Nachdem Sie eine MAM-Richtlinie konfiguriert und auf die Benutzer angewendet haben, können Sie den Kompatibilitätsstatus im Azure-Portal überwachen. Das Azure-Portal enthält Informationen über die Benutzer, die von der Richtlinie betroffen sind, den Kompatibilitätsstatus sowie über Probleme, die bei Ihren Endbenutzer möglicherweise auftreten.
+Nachdem Sie eine MAM-Richtlinie konfiguriert und auf die Benutzer angewendet haben, können Sie den Kompatibilitätsstatus im [Azure-Portal](https://portal.azure.com) überwachen. Das Azure-Portal enthält Informationen über die Benutzer, die von der Richtlinie betroffen sind, den Kompatibilitätsstatus sowie über Probleme, die bei Ihren Endbenutzer möglicherweise auftreten.
 ## Zusammenfassungsansicht
 Auf dem Blatt **Mobile Anwendungsverwaltung mit Intune** sehen Sie eine Zusammenfassung des Kompatibilitätsstatus wie unten beschrieben:
 
@@ -39,7 +39,7 @@ Auf dem Blatt **Mobile Anwendungsverwaltung mit Intune** sehen Sie eine Zusammen
 
 -   **KEINE RICHTLINIE:** Die Anzahl der Benutzer, die die der Richtlinie zugeordneten Apps verwenden, jedoch nicht von der Richtlinie betroffen sind.  Sie sollten erwägen, diese Benutzer der Richtlinie hinzuzufügen.
 
-- **Gekennzeichnete Benutzer:** Die Anzahl der Benutzer, die Probleme feststellen. Derzeit werden nur Benutzer mit per Jailbreak manipulierten Geräten unter **Gekennzeichnete Benutzer** gemeldet..
+- **Gekennzeichnete Benutzer:** Die Anzahl der Benutzer, die Probleme feststellen. Derzeit werden nur Benutzer mit per Jailbreak manipulierten Geräten unter **Gekennzeichnete Benutzer** gemeldet.
 
 
 ## Detailansicht
@@ -77,6 +77,6 @@ In der Detailansicht werden die Fehlermeldung, die App, auf die bei Auftreten de
 [Benutzeroberfläche für MAM-fähige App](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

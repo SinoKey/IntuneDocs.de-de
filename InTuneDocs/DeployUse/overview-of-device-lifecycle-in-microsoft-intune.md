@@ -29,10 +29,10 @@ ms.suite: ems
 
 Der Intune-Lebenszyklus für Geräte beginnt zunächst mit dem Registrieren eines Geräts und durchläuft dann verschiedene Schritte, die dann abgeschlossen sind, wenn das Gerät nicht mehr benötigt wird.
 
-![Der Gerätelebenszyklus](./media/devicelifecycle_nobg.png "the Intune device lifecycle")
+![Der Gerätelebenszyklus](./media/device-lifecycle.png "the Intune device lifecycle")
 
 ## Registrieren
-Die heutigen Strategien zur Verwaltung mobiler Geräte (Mobile Device Management, MDM) befassen sich mit verschiedenen Mobiltelefonen, Tablets und PCs (iOS, Android, Windows und Mac OS X). Wenn Sie das Gerät verwalten müssen, was bei unternehmenseigenen Geräten im Allgemeinen der Fall ist, besteht der erste Schritt darin, die [Geräteregistrierung einzurichten](enroll-devices-in-microsoft-intune.md). Durch das Registrieren bei Intune (MDM) oder durch [Installieren der Intune-Clientsoftware](manage-windows-pcs-with-microsoft-intune.md) können Sie auch Computer verwalten..
+Die heutigen Strategien zur Verwaltung mobiler Geräte (Mobile Device Management, MDM) befassen sich mit verschiedenen Mobiltelefonen, Tablets und PCs (iOS, Android, Windows und Mac OS X). Wenn Sie das Gerät verwalten müssen, was bei unternehmenseigenen Geräten im Allgemeinen der Fall ist, besteht der erste Schritt darin, die [Geräteregistrierung einzurichten](enroll-devices-in-microsoft-intune.md). Durch das Registrieren bei Intune (MDM) oder durch [Installieren der Intune-Clientsoftware](manage-windows-pcs-with-microsoft-intune.md) können Sie auch Windows-PCs verwalten.
 
 ## Konfigurieren
 Das Registrieren Ihrer Geräte ist nur der erste Schritt. Um alle Intune-Angebote zu nutzen und um sicherzustellen, dass die Geräte sicher und mit Unternehmensstandards kompatibel sind, können Sie aus einer Vielzahl von **Richtlinien** auswählen, mit denen Sie nahezu jeden Aspekt des Betriebs von verwalteten Geräten konfigurieren können. Sollen Benutzer beispielsweise Kennwörter für Geräte verwenden, die Unternehmensdaten enthalten? Sie können festlegen, dass ein Kennwort erforderlich ist. Haben Sie ein Unternehmens-WLAN? Sie können es automatisch konfigurieren. Hier sind die verfügbaren Typen von Konfigurationsoptionen aufgeführt:
@@ -51,6 +51,6 @@ In der modernen IT-Welt ist der Schutz von Geräten vor unbefugtem Zugriff eine 
 Wenn ein Gerät verloren geht, gestohlen wird oder ersetzt werden muss, oder wenn Benutzer in eine andere Position wechseln, ist es in der Regel an der Zeit, das Gerät [abzukoppeln oder zurückzusetzen](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Hierzu gibt es verschiedene Möglichkeiten, angefangen beim Zurücksetzen des Geräts über das Entfernen des Geräts aus der Verwaltung bis hin zum Löschen der darauf befindlichen Unternehmensdaten.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

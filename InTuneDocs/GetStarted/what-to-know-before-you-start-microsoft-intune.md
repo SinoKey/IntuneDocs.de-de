@@ -26,11 +26,22 @@ ms.suite: ems
 ---
 
 # Was Sie wissen sollten, bevor Sie Microsoft Intune starten
+
 ## Allgemeine Geräte- und App-Verwaltungsfunktionen
-Bevor Sie mit der Einrichtung von [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] beginnen, lesen Sie zunächst die [Einführung in Intune](/intune/understand-explore/introduction-to-microsoft-intune), und machen Sie sich mit den Funktionen von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] vertraut, die in diesem Abschnitt beschrieben werden. Nachdem Sie sich mit den Funktionen von Intune vertraut gemacht haben, können Sie Ihr kostenpflichtiges Abonnement einrichten. Wenn Sie mit einem Testabonnement begonnen haben, können Sie zu einem späteren Zeitpunkt zu einem vollständigen Abonnement wechseln. Weitere Informationen finden Sie unter [Microsoft Intune erwerben](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx)..
+Bevor Sie mit der Einrichtung von Microsoft Intune beginnen, lesen Sie zunächst die [Einführung in Intune](/intune/understand-explore/introduction-to-microsoft-intune), und machen Sie sich mit den Funktionen von Intune vertraut, die in diesem Abschnitt beschrieben werden. Nachdem Sie sich mit den Funktionen von Intune vertraut gemacht haben, können Sie Ihr kostenpflichtiges Abonnement einrichten. Wenn Sie mit einem Testabonnement begonnen haben, können Sie zu einem späteren Zeitpunkt zu einem vollständigen Abonnement wechseln. Weitere Informationen finden Sie unter [Erwerben von Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
 
 ### Verwalten von mobilen Geräten und Computern ohne Server- oder Intranetanforderungen
-Sie können mobile Geräte und Computer auch dann verwalten, wenn diese keiner Domäne angehören oder nicht physisch vor Ort vorhanden sind. So wird [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] zur idealen Lösung für Unternehmen mit mobilen oder geografisch verstreuten Mitarbeitern.
+Sie können die folgenden mobilen Geräte und Computer verwalten:
+
+-   Apple iOS 7.1 und höher
+-   Google Android 4.0 und höher (einschließlich Samsung KNOX)
+-   Windows Phone 8.0 und höher
+-   Windows RT und Windows 8.1 RT
+-   PCs mit Windows 8.1
+-   PCs mit Windows 10 (Home, Education, Pro und Enterprise)
+-   Mac OS X 10.9 und höher
+
+Sie können diese Geräte und PCs auch dann verwalten, wenn sie keiner Domäne angehören oder nicht physisch vor Ort vorhanden sind. Dadurch wird Intune zur idealen Lösung für Unternehmen mit mobilen oder geografisch verstreuten Mitarbeitern. Weitere Informationen zur Verwaltung von Geräten finden Sie unter [Auswählen der Methode zum Verwalten von Geräten](/Intune/Deploy-use/choose-how-to-manage-devices).
 
 ### Festlegen der Verschlüsselung auf mobilen Geräten und Computern
 Bei mobilen Geräten, die eine Verschlüsselung unterstützen, kann diese verpflichtend festgelegt werden. Ferner können Sie die Verwendung der BitLocker-Laufwerksverschlüsselung auf solchen Computern vorschreiben, die diese unterstützen. Geht ein mobiles Gerät mit Verschlüsselung verloren oder wird es gestohlen, dann sind die Daten auf dem Speichermedium des Geräts unlesbar und so vor Diebstahl geschützt.
@@ -45,10 +56,10 @@ Sie können Warnungen erstellen, damit Sie benachrichtigt werden, wenn bei einem
 Benutzer können über das Unternehmensportal Geräte registrieren, am Standort lizenzierte Software installieren oder nach Kontaktdaten von IT-Administratoren suchen.
 
 ### Unterstützen der Multi-Factor Authentication
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] unterstützt Multi-Factor Authentication (MFA). Details finden Sie unter [Schützen von Windows-Geräten mit Multi-Factor Authentication](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication)..
+Intune unterstützt Multi-Factor Authentication (MFA). Details finden Sie unter [Schützen von Windows-Geräten mit Multi-Factor Authentication](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication).
 
 ### Verfügbarkeit in mehreren Sprachen
-Intune ist in den folgenden Sprachen verfügbar: Chinesisch (vereinfacht und traditionell), Dänisch, Deutsch, Englisch, Finnisch, Französisch, Griechisch, Italienisch, Japanisch, Koreanisch, Niederländisch, Norwegisch, Polnisch, Portugiesisch, Rumänisch, Russisch, Schwedisch, Spanisch, Tschechisch, Türkisch, Ungarisch. Eine Liste der Länder und Regionen, in denen der [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Dienst unterstützt wird, finden Sie unter [Internationale Verfügbarkeit](https://products.office.com/en-us/business/international-availability)..
+Intune ist in den folgenden Sprachen verfügbar: Chinesisch (vereinfacht und traditionell), Dänisch, Deutsch, Englisch, Finnisch, Französisch, Griechisch, Italienisch, Japanisch, Koreanisch, Niederländisch, Norwegisch, Polnisch, Portugiesisch, Rumänisch, Russisch, Schwedisch, Spanisch, Tschechisch, Türkisch, Ungarisch. Eine Liste der Länder und Regionen, in denen der Intune-Dienst unterstützt wird, finden Sie unter [Internationale Verfügbarkeit](https://products.office.com/en-us/business/international-availability).
 
 ## Zusätzliche Anforderungen und Funktionen   
 Neben diesen allgemeinen Funktionen sollten Sie sich auch mit den folgenden Funktionen vertraut machen:
@@ -62,6 +73,6 @@ Neben diesen allgemeinen Funktionen sollten Sie sich auch mit den folgenden Funk
 - [Domänennamen für Microsoft Intune](domain-names-for-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

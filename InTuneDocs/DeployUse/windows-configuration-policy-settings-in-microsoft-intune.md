@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Einstellungen für Windows-Richtlinien in Microsoft Intune | Microsoft Intune
+title: Einstellungen für Windows-Richtlinien | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -26,7 +26,13 @@ ms.suite: ems
 ---
 
 # Einstellungen für Windows-Richtlinien in Microsoft Intune
-Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie** von Microsoft Intune, um Einstellungen für registrierte Windows 8- und Windows 8.1-Geräte zu konfigurieren:
+Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und höher)** von Microsoft Intune, um Einstellungen für registrierte Windows 8- und Windows 8.1-Geräte zu konfigurieren:
+
+## Anwendbarkeitseinstellungen
+
+|Name der Einstellung|Details|
+|----------------|----------------------------------|
+|**Alle Konfigurationen auf Windows 10 anwenden**|Erlaubt, dass Einstellungen in dieser Richtlinie zusätzlich zu Windows 8- und Windows 8.1-Geräten auf Windows 10-Geräte angewendet werden.|
 
 ## Sicherheitseinstellungen
 
@@ -47,7 +53,7 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie** von Microsoft 
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Verschlüsselung auf mobilen Geräten vorschreiben**<sup>1</sup>|Erfordert die Verschlüsselung der Dateien auf dem Gerät.<br>Für Windows Phone 8-Geräte müssen Sie hier **Ja** festlegen..|Ja|Nein|
+|**Verschlüsselung auf mobilen Geräten vorschreiben**<sup>1</sup>|Erfordert die Verschlüsselung der Dateien auf dem Gerät.<br>Für Windows Phone 8-Geräte müssen Sie hier **Ja**festlegen.|Ja|Nein|
 <sup>1</sup> Zusätzliche Informationen für Geräte unter Windows 8.1
 
 -   Um die Verschlüsselung auf Geräten zu erzwingen, die Windows 8.1 ausführen, installieren Sie das [MDM-Clientupdate für Windows von Dezember 2014](http://support.microsoft.com/kb/3013816) auf jedem Gerät.
@@ -110,7 +116,7 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie** von Microsoft 
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Datenroaming zulassen**|Lassen Sie Datenroaming zu, wenn das Gerät in einem Mobilfunknetz verwendet wird.|Ja|Nein|
+|**Datenroaming zulassen**|Zulassen des Datenroamings, wenn das Gerät in einem Mobilfunknetz verwendet wird.|Ja|Nein|
 
 
 
@@ -119,6 +125,6 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie** von Microsoft 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

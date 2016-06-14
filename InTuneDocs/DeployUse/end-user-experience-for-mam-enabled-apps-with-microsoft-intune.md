@@ -48,12 +48,11 @@ MAM-Richtlinien (Mobile Application Management, Verwaltung mobiler Anwendungen) 
 
     ![Screenshot der OneDrive-App, die zur Eingabe einer PIN auffordert](../media/AppManagement/iOS_AppPINPrompt.png)
 
-5.  Nach dem Festlegen der PIN und der Bestätigung können Sie auf die Dateien auf Ihrem **OneDrive for Business** zugreifen.
+5.  Nachdem Sie die PIN festgelegt und bestätigt haben, können Sie auf Ihre Dateien in **OneDrive for Business**zugreifen.
 
     ![Screenshot vom geöffneten Dateispeicherort mit der Liste der vorhandenen Dateien](../media/AppManagement/iOS_OneDriveSuccess.png)
 
-    > [!NOTE]
-    > Wenn Sie eine schon bereitgestellte Richtlinie ändern, werden die Änderungen beim nächsten Öffnen der App angewendet.
+    > [!NOTE] Wenn Sie eine schon bereitgestellte Richtlinie ändern, werden die Änderungen beim nächsten Öffnen der App angewendet.
 
 ##  Zugreifen auf OneDrive mit einem Android-Gerät
 
@@ -106,13 +105,13 @@ Microsoft Word wird in diesem Szenario beispielhaft verwendet.
 
     ![Screenshot eines eingegebenen Satzes in einem Word-Dokument](../media/AppManagement/iOS_WordCreateCompanyDoc.PNG)
 
-5.  Öffnen Sie das Dokument, das Sie am Unternehmensspeicherort gespeichert haben.  Kopieren Sie den Text, öffnen Sie Ihr privates **Facebook**-Konto, und versuchen Sie, den kopierten Text einzufügen.  Sie sollten nicht in der Lage sein, den Inhalt in den neuen Facebook-Beitrag einzufügen. Die Einfügeoption ist nicht deaktiviert, aber wenn Sie auf **Einfügen** tippen, passiert nichts..
+5.  Öffnen Sie das Dokument, das Sie am Unternehmensspeicherort gespeichert haben.  Kopieren Sie den Text, öffnen Sie Ihr privates **Facebook**-Konto, und versuchen Sie, den kopierten Text einzufügen.  Sie sollten nicht in der Lage sein, den Inhalt in den neuen Facebook-Beitrag einzufügen. Die Option "Einfügen" ist nicht abgeblendet, aber wenn Sie auf **Einfügen**klicken, erfolgt keine Aktion.
 
     ![Screenshot der Optionen zum Ausschneiden, Kopieren und Einfügen](../media/AppManagement/iOS_WordCopyCompany.png)
 
     ![Screenshot, der nicht eingefügte Daten im Facebook-Beitrag zeigt](../media/AppManagement/iOS_FacebookPasteCompany.png)
 
-6.  Wiederholen Sie jetzt die Schritte 2 und 3, um ein weiteres neues Dokument zu erstellen, geben Sie einen Satz Ihrer Wahl ein, und anstatt das Dokument an Ihrem geschäftlichen Speicherort zu speichern, speichern Sie es an Ihrem privaten Speicherort, etwa **OneDrive – Personal**.
+6.  Wiederholen Sie jetzt die Schritte 2 und 3, um ein weiteres neues Dokument zu erstellen, geben Sie einen Satz Ihrer Wahl ein, und anstatt das Dokument an Ihrem geschäftlichen Speicherort zu speichern, speichern Sie es an Ihrem privaten Speicherort, etwa **OneDrive – Personal**
 
     ![Screenshot der Optionen zum Ausschneiden, Kopieren und Einfügen mit dem ausgewählten zu kopierenden Satz](../media/AppManagement/iOS_WordCopyPersonal.png)
 
@@ -137,24 +136,32 @@ Lesen Sie das Beispielszenario unten, um genauer zu verstehen, wie mehrere Benut
 Benutzer A arbeitet für zwei Unternehmen – **Unternehmen X** und **Unternehmen Y**. Der Benutzer A verfügt für jedes Unternehmen über ein geschäftliches Konto, und beide verwenden Intune zum Bereitstellen von MAM-Richtlinien. **Unternehmen X** stellt MAM-Richtlinien **vor** **Unternehmen Y** bereit. Das **Unternehmen X** zugeordnete Konto erhält die MAM-Richtlinie, nicht jedoch das dem Unternehmen Y zugeordnete Konto. Wenn das Unternehmen Y zugeordnete Konto durch die MAM-Richtlinien verwaltet werden soll, müssen Sie das Unternehmen X zugeordnete Benutzerkonto entfernen.
 ### Hinzufügen eines zweiten Kontos
 #### iOS
-Wenn Sie ein iOS-Gerät verwenden und versuchen, auf demselben Gerät ein zweites Geschäftskonto einzurichten, wird möglicherweise eine Sperrnachricht angezeigt.  Darüber hinaus wird eine Option zum Entfernen des vorhanden Kontos und zum Hinzufügen eines neuen Kontos angezeigt. Klicken Sie hierfür auf **Ja**..
+Wenn Sie ein iOS-Gerät verwenden und versuchen, auf demselben Gerät ein zweites Geschäftskonto einzurichten, wird möglicherweise eine Sperrnachricht angezeigt.  Darüber hinaus wird eine Option zum Entfernen des vorhanden Kontos und zum Hinzufügen eines neuen Kontos angezeigt. Klicken Sie hierfür auf **Ja**.
 
 ![Screenshot des Dialogfelds mit der Sperrnachricht und den Optionen „Ja“ und „Nein“](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
-Wenn Sie ein Android-Gerät verwenden, wird möglicherweise eine Sperrnachricht mit Anweisungen angezeigt, wie Sie das vorhandene Konto entfernen und ein neues Konto hinzufügen können.  Wechseln Sie auf Android-Geräten zum Entfernen eines vorhandenen Kontos zu **Einstellungen &gt; Allgemein &gt; Anwendungs-Manager &gt; Unternehmensportal, und wählen Sie „Daten löschen“ aus.**.
+Wenn Sie ein Android-Gerät verwenden, wird möglicherweise eine Sperrnachricht mit Anweisungen angezeigt, wie Sie das vorhandene Konto entfernen und ein neues Konto hinzufügen können.  Wechseln Sie auf Android-Geräten zum Entfernen eines vorhandenen Kontos zu **Einstellungen &gt; Allgemein &gt; Anwendungs-Manager &gt; Unternehmensportal**, und wählen Sie „Daten löschen“ aus.
 
 ![Screenshot der Fehlermeldung und Anweisungen zum Entfernen des Kontos](../media/AppManagement/Android_SwitchUser.png)
 
 ##  Anzeigen von Mediendateien mit der Rights Management-Freigabeanwendung
-Um unternehmenseigene AV-, PDF- und Bilddateien auf Android-Geräten anzuzeigen, verwenden Sie die [Microsoft Rights Management-Freigabeanwendung](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
+Um unternehmenseigene AV-, PDF- und Bilddateien auf Android-Geräten anzuzeigen, verwenden Sie die [Microsoft Rights Management-Freigabeanwendung](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer) (RMS-Freigabeanwendung).
 
 Laden Sie diese App aus dem Google Play herunter.  Sobald die App auf Ihrem Gerät installiert ist, starten Sie die App, und authentifizieren Sie sich mit Ihren Unternehmens-Anmeldeinformationen. Sie sollten jetzt in der Lage sein, ungeschützte und geschützte Dateien aus anderen per Richtlinie verwalteten Apps anzuzeigen.
+
+**Android-Geräte, die nicht bei Intune registriert sind**
+
+Bevor Sie mithilfe der RMS-Freigabeanwendung Dateien anzeigen können, die aus anderen von Intune verwalteten Apps stammen, müssen Sie die RMS-Anwendung starten und sich mit Ihrem Geschäftskonto anmelden.  Wenn Sie sich angemeldet haben und **nur wenn Sie über keine RMS-Lizenz verfügen**, wird folgende Meldung angezeigt:
+
+**Authentifizierung erfolgreich – Sie können jetzt Unternehmensdateien anzeigen, aber Ihre Organisation ist nicht so eingerichtet, dass Sie auch Dateien schützen können. Weitere Informationen erhalten Sie von Ihrem IT-Administrator.**
+
+Dies verhindert nicht Sie, dass mit der RMS-Freigabeanwendung Unternehmensdateien anzeigen können. Sie können trotzdem Unternehmensdateien aus anderen von Intune verwalteten Apps öffnen und anzeigen, und auch die MAM-Richtlinien werden angewendet.  Diese Meldung besagt lediglich, dass Sie die zusätzlichen Schutzfunktionen der RMS-Freigabeanwendung nicht selbst auf eine Datei anwenden können.  Sie benötigen eine RMS-Lizenz, um Ihre Dateien mit diesen Schutzfunktionen zu schützen. Weitere Informationen über die Schutzfunktionen von RMS für Dateien finden Sie unter [Schützen einer Datei auf einem Gerät](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) und [Schützen einer per E-Mail freigegebenen Datei](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email).
 
 
 ### Weitere Informationen:
 [Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

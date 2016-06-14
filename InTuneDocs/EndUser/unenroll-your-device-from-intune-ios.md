@@ -15,7 +15,7 @@ ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -34,7 +34,7 @@ Zum Aufheben der Registrierung Ihres Geräts bei Intune gehen Sie folgendermaße
 
 1.  Wählen Sie in der Unternehmensportal-App unter **Meine Geräte**das Gerät aus, dessen Registrierung Sie aufheben möchten.
 
-2.  Tippen Sie auf **Entfernen** &gt; **Entfernen**..
+2.  Tippen Sie auf **Entfernen** &gt; **Entfernen**.
 
 Wenn Sie die Registrierung Ihres Geräts bei Intune aufheben passiert Folgendes:
 
@@ -57,6 +57,6 @@ Wenn Sie die Registrierung Ihres Geräts bei Intune aufheben passiert Folgendes:
 ### Weitere Informationen:
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

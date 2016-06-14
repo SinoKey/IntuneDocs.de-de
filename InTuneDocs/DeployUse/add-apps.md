@@ -29,11 +29,11 @@ ms.suite: ems
 Nehmen Sie sich vor der Bereitstellung von Apps mit Microsoft Intune etwas Zeit, um sich mit den in diesem Thema vorgestellten Konzepten vertraut zu machen. Dies hilft Ihnen zu verstehen, welche Apps auf welcher Plattform bereitgestellt werden können. Zudem lernen Sie die erforderlichen Komponenten kennen, die zuvor vorhanden sein müssen.
 
 ## Mit Intune bereitstellbare App-Typen
-Sie können Apps auf allen Gerätetypen bereitstellen, die von Intune unterstützt werden. Je nach Art der Anwendung, die Sie bereitstellen möchten, unterscheiden sich der Prozess und die unterstützten Geräte. Verwenden Sie die folgende Tabelle, um besser zu verstehen, welche Optionen bereitgestellt werden können:
+Sie können Apps auf allen Gerätetypen bereitstellen, die von Intune unterstützt werden. Je nach Art der Anwendung, die Sie bereitstellen möchten, unterscheiden sich der Prozess und die unterstützten Geräte. Verwenden Sie die folgenden Informationen, um besser zu verstehen, welche Optionen bereitgestellt werden können:
 
 
 ### **Windows Installer (&#42;.exe, &#42;.msi)**
-- Diese Art von App muss die automatische Installation ohne Benutzereingabe unterstützen. Die Dokumentation Ihrer App sollte die relevanten Befehlszeilenoptionen einbeziehen, die für die automatische Installation der App erforderlich sind (z. B. **/q**).
+- Diese Art von App muss die automatische Installation ohne Benutzereingabe unterstützen. Die Dokumentation Ihrer App sollte die relevanten Befehlszeilenoptionen einbeziehen, die für die automatische Installation der App erforderlich sind (z. B. **/q**). Eine Liste der gebräuchlichsten Befehlszeilenoptionen finden Sie [hier](https://support.microsoft.com/en-us/kb/227091).
 - Wenn zusätzliche Dateien und Ordner für das Setupprogramm der App erforderlich sind, müssen sie an dem für die Setupdateien angegebenen Speicherort verfügbar sein.
 - In den meisten Fällen müssen bei Windows Installer-Dateien (MSI) und Windows Installer Patch-Dateien (MSP-Dateien) keine Befehlszeilenargumente von Intune installiert werden. Überprüfen Sie die Dokumentation Ihrer App. Sind Befehlszeilenargumente erforderlich, müssen sie in "Name=Wert"-Paaren (z. B. TRANSFORMS=custom_transform.mst) eingegeben werden.
 
@@ -49,17 +49,17 @@ Diese Art von Anwendung wird in Ihren Cloudspeicher hochgeladen.
 
 Diese Art von Anwendung wird in Ihren Cloudspeicher hochgeladen.
 
-Derzeit können Endbenutzer Unternehmens-Apps nicht über die Intune-Unternehmensportal-App für iOS installieren. Dies ist aufgrund der Einschränkungen für apps, die in das iOS-App Store veröffentlicht werden (siehe [App Store Richtlinien](https://developer.apple.com/app-store/review/guidelines/)). Benutzer können auf Unternehmens-Apps (einschließlich verwalteter App Store-Apps und Branchen-App-Pakete) zugreifen, indem sie die Unternehmensportal-App auf ihren Geräten starten und auf die Kachel „Unternehmens-Apps“ tippen. Daraufhin wird der Browser geöffnet, und sie werden zum Intune-Webportal geleitet.
+Derzeit können Endbenutzer Unternehmens-Apps nicht direkt über die Intune-Unternehmensportal-App für iOS installieren. Dies ist aufgrund der Einschränkungen für apps, die in das iOS-App Store veröffentlicht werden (siehe [App Store Richtlinien](https://developer.apple.com/app-store/review/guidelines/)). Benutzer können auf Unternehmens-Apps (einschließlich verwalteter App Store-Apps und Branchen-App-Pakete) zugreifen, indem sie die Unternehmensportal-App auf ihren Geräten starten und auf die Kachel „Unternehmens-Apps“ tippen. Daraufhin wird der Browser geöffnet, und sie werden zum Intune-Webportal geleitet.
 
 ### **Windows Phone-App-Paket (XAP, APPX, APPXBUNDLE)**
-- Sie benötigen ein codesigniertes Zertifikat für mobile Geräte, um Apps bereitstellen zu können. Weitere Informationen finden Sie unter [Einrichten der Windows Phone-Verwaltung mit Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)..
+- Sie benötigen ein codesigniertes Zertifikat für mobile Geräte, um Apps bereitstellen zu können. Weitere Informationen finden Sie unter [Einrichten der Windows Phone-Verwaltung mit Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
 
 Diese Art von Anwendung wird in Ihren Cloudspeicher hochgeladen.
 
 Weitere Informationen zur Installation von Branchen-UWP-Apps (Universelle Windows-Plattform) mit Intune finden Sie weiter unten.
 
 ### **Windows-App-Paket (*.appx, *.appxbundle)**
-- Sie benötigen ein codesigniertes Zertifikat für mobile Geräte, um Apps bereitstellen zu können. Weitere Informationen finden Sie unter [Einrichten der Windows-Geräteverwaltung mit Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)..
+- Sie benötigen ein codesigniertes Zertifikat für mobile Geräte, um Apps bereitstellen zu können. Weitere Informationen finden Sie unter [Einrichten der Windows-Geräteverwaltung mit Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).
 
 Diese Art von Anwendung wird in Ihren Cloudspeicher hochgeladen.
 ### **Windows Installer über MDM (MSI)**
@@ -81,8 +81,7 @@ Für Folgendes verwendet:
 Auf externen Links basierende Apps werden nicht in Ihrem Intune-Cloudspeicher gespeichert.
 ### **Verwaltete iOS-App aus dem App Store**
 Sie können kostenlose iOS-Apps aus dem App Store verwalten und bereitstellen. Sie können auch [Richtlinien für die Verwaltung mobiler Anwendungen](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) mit [kompatiblen Apps](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) verknüpfen und ihren Status in der Administratorkonsole überprüfen.<br /><br />Verwaltete iOS-Apps werden nicht in Ihrem Intune-Cloudspeicher gespeichert.
-> [!TIP]
-> Optionen für mobile Geräte sind nicht verfügbar, bis Sie [die Verwaltungsautorität für mobile Geräte](get-ready-to-enroll-devices-in-microsoft-intune.md) auf Intune festgelegt haben.
+> [!TIP] Optionen für mobile Geräte sind nicht verfügbar, bis Sie die [Verwaltungsautorität für mobile Geräte](get-ready-to-enroll-devices-in-microsoft-intune.md) auf Intune festgelegt haben.
 
 ## Unterstützung für UWP-Apps (Universelle Windows-Plattform)
 Windows 10-Geräte erfordern keinen Sideload-Schlüssel für die Installation von Branchen-Apps. Allerdings muss der Registrierungsschlüssel **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** den Wert **1** haben, um das Querladen zu aktivieren.
@@ -95,8 +94,8 @@ Auf Windows 10 Mobile-Geräten können Sie ein nicht von Symantec stammendes Cod
 
 ## Nächste Schritte 
 
-Als Nächstes müssen Sie Apps in der Intune-Konsole hinzufügen, bevor Sie sie bereitstellen können. Sie können Apps für [registrierte Geräte](add-apps-for-mobile-devices-in-microsoft-intune.md) oder für [Windows-PCs hinzufügen, die Sie mit der Intune-Clientsoftware verwalten](add-apps-for-windows-pcs-in-microsoft-intune.md)..
+Als Nächstes müssen Sie Apps in der Intune-Konsole hinzufügen, bevor Sie sie bereitstellen können. Sie können Apps für [registrierte Geräte](add-apps-for-mobile-devices-in-microsoft-intune.md) oder für [Windows-PCs hinzufügen, die Sie mit der Intune-Clientsoftware verwalten](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

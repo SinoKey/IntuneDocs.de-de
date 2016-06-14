@@ -30,7 +30,7 @@ Dieser Abschnitt enthält Informationen zur Lösung von Problemen mit Softwareup
 
 Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) weitere Möglichkeiten, Hilfe zu erhalten.
 
-In der nachfolgenden Tabelle werden Fehlercodes für den Intune-**Update-Agent** aufgelistet. Wenn Sie in dieser Tabelle einen bestimmten Fehlercode nicht finden, suchen Sie unter [Windows Update Agent Result Codes](http://go.microsoft.com/fwlink/?LinkID=221542) (Windows Update-Agent-Ergebniscodes)..
+In der nachfolgenden Tabelle werden Fehlercodes für den Intune-**Update-Agent** aufgelistet. Wenn Sie in dieser Tabelle einen bestimmten Fehlercode nicht finden, suchen Sie unter [Windows Update Agent Result Codes (Windows Update Agent-Ergebniscodes)](http://go.microsoft.com/fwlink/?LinkID=221542).
 
 |Fehlercode|Symbolischer Name|Weitere Informationen|
 |--------------|-----------------|--------------------|
@@ -250,24 +250,24 @@ In der nachfolgenden Tabelle werden Fehlercodes für den Intune-**Update-Agent**
 - Bei ihnen tritt eine hohe CPU-Auslastung auf.
 - Anwendungen werden bei Installation über das Intune-Portal langsam installiert. 
 - Das Microsoft Intune Center löst den folgenden Fehler aus: *Beim Aktualisieren des Computers trat ein Fehler auf. Fehler: Code 0x800705b4*.
-- Das Statusfeld unter „Intune-Verwaltungskonsole > Gruppen > Alle Geräte“ zeigt an: *Fehler bei mindestens einem der Agents, die auf diesem Computer installiert sind. Die Informationen für diesen Computer sind möglicherweise ungenau oder nicht auf dem neuesten Stand.*.
+- Das Statusfeld unter „Intune-Verwaltungskonsole > Gruppen > Alle Geräte“ zeigt an: *Fehler bei mindestens einem der Agents, die auf diesem Computer installiert sind. Die Informationen für diesen Computer sind möglicherweise ungenau oder nicht auf dem neuesten Stand.*
 
 Dieses Problem kann auftreten, wenn ersetzte Updates (Updates, die durch ein anderes Update ersetzt wurden) für einen längeren Zeitraum nicht abgelehnt wurden. Während bestimmter Prozesse, z. B. dem Installieren einer Anwendung, überprüft Windows nacheinander alle ersetzten Updates, damit die Updates und deren Nachfolger ordnungsgemäß zugeordnet werden können. Wenn die Liste der ersetzten Updates zu groß wird, kann diese Überprüfung aufgrund der Verarbeitungslast und des Zeitaufwands eine hohe CPU-Auslastung verursachen. Dieses Problem betrifft aufgrund der großen Anzahl von ersetzten Updates, die für Windows 7 verfügbar sind, hauptsächlich Clients, auf denen Windows 7 ausgeführt wird. Bei Windows 8 und späteren Betriebssystemen ist die Zahl verfügbarer ersetzter Updates geringer, und sie sind daher nicht so anfällig für dieses Problem.
 
 **Lösung**: Gehen Sie wie folgt vor, um das Problem zu lösen:
-1. Melden Sie sich bei der [Intune-Verwaltungskonsole](https://manage.microsoft.com) an..
-2. Wählen Sie **Updates** > **Alle Updates**..
+1. Melden Sie sich bei der [Intune-Verwaltungskonsole](https://manage.microsoft.com) an.
+2. Wählen Sie **Updates** > **Alle Updates** aus.
 3. Verwenden Sie die Filteroption in der oberen Symbolleiste, um nach ersetzten Updates zu filtern.
 4. Lehnen Sie alle ersetzten Updates ab, die für Windows 7 oder Anwendungen (z. B. Microsoft Office) gelten, die auf den betroffenen Clients installiert wurden. 
 5. Starten Sie die betroffenen Clients neu.
 
-Wenn Sie Windows 7 ausführen, stellen Sie außerdem sicher, dass Sie das folgende Update installiert haben:[3050265 Windows Update-Client für Windows 7: Juni 2015](https://support.microsoft.com/kb/3050265).
+Wenn Sie Windows 7 ausführen, stellen Sie außerdem sicher, dass Sie das folgende Update installiert haben:[3050265 Windows Update-Client für Windows 7: Juni 2015](https://support.microsoft.com/kb/3050265)
 
 ### Nächste Schritte
-Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Microsoft Support..
+Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Microsoft Support.
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

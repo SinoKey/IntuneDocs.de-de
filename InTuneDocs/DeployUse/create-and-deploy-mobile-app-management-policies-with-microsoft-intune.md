@@ -28,14 +28,14 @@ ms.suite: ems
 # Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune
 MAM-Richtlinien (Mobile App Management) können unabhängig davon angewendet werden, ob die Geräte, auf denen die Apps ausgeführt werden, von Intune verwaltet werden oder nicht. Eine ausführlichere Beschreibung zur Funktionsweise von MAM-Richtlinien und den von Intune MAM-Richtlinien unterstützten Szenarien finden Sie im Thema [Schützen von App-Daten mithilfe von Richtlinien zur Verwaltung mobiler Geräte](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
-In diesem Thema wird der Erstellungsvorgang einer MAM-Richtlinie im **Azure-Portal** beschrieben. Die im Azure-Portal erstellte MAM-Richtlinie wird in allen MAM-Szenarien unterstützt:
+In diesem Thema wird der Erstellungsvorgang einer MAM-Richtlinie im **Azure-Portal** beschrieben. Das Azure-Portal ist die neue Verwaltungskonsole zum Erstellen von MAM-Richtlinien, und wir empfehlen, dass Sie Ihre MAM-Richtlinien in diesem Portal erstellen. Das Azure-Portal unterstützt die folgenden MAM-Szenarien:
 - Bei Intune registrierte Geräte
 - Geräte, die mithilfe einer MDM-Lösung eines Drittanbieters verwaltet werden
 - Geräte, die gar keiner Verwaltung durch eine MDM-Lösung unterliegen (BYOD).
 
-Wenn Sie aktuell die **Intune-Verwaltungskonsole** zum Verwalten Ihrer Geräte verwenden, können Sie mithilfe der [Intune-Verwaltungskonsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) eine MAM-Richtlinie erstellen, die Apps für die bei Intune registrierten Geräte unterstützt..
+Wenn Sie derzeit Ihre Geräte mit der **Intune-Verwaltungskonsole** verwalten, können Sie mithilfe der [Intune-Verwaltungskonsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) eine MAM-Richtlinie erstellen, die Apps für die bei Intune registrierten Geräte unterstützt.
 >[!IMPORTANT]
-> Möglicherweise werden in der Intune-Verwaltungskonsole nicht alle MAM-Richtlinieneinstellungen angezeigt. Das Azure-Portal stellt die neue Verwaltungskonsole zum Erstellen von MAM-Richtlinien dar.
+> Möglicherweise werden in der Intune-Verwaltungskonsole nicht alle MAM-Richtlinieneinstellungen angezeigt. Das Azure-Portal stellt die neue Verwaltungskonsole zum Erstellen von MAM-Richtlinien dar. Wenn Sie sowohl in der Intune-Verwaltungskonsole als auch im Azure-Portal MAM-Richtlinien erstellen, wird die im Azure-Portal erstellte Richtlinie auf die Apps angewendet und für die Benutzer bereitgestellt.
 
 Wählen Sie eins der folgenden Themen aus, um eine Liste der für die Plattformen Android und iOS unterstützten Richtlinieneinstellungen anzuzeigen:
 
@@ -49,14 +49,13 @@ Wählen Sie eins der folgenden Themen aus, um eine Liste der für die Plattforme
 
     ![Screenshot des Blatts „Mobile Anwendungsverwaltung mit Intune“](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > [!TIP]
-    > Wenn Sie das Azure-Portal zum ersten Mal verwenden, lesen Sie zuerst [Azure-Portal für MAM-Richtlinien in Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md), um sich mit dem Portal vertraut zu machen.
+    > [!TIP] Wenn Sie das Azure-Portal zum ersten Mal verwenden, lesen Sie zuerst [Azure-Portal für MAM-Richtlinien in Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md), um sich mit dem Portal vertraut zu machen.
 
 2.  Wählen Sie auf dem Blatt **Einstellungen** **App-Richtlinie** aus.  Hiermit wird das Blatt **App-Richtlinie** geöffnet, auf dem Sie neue Richtlinien erstellen und vorhandene bearbeiten können.
 
     ![Screenshot des Blatts „App-Richtlinie“ mit einer Liste vorhandener Richtlinien](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
 
-3.  Wählen Sie **Richtlinie hinzufügen** aus..
+3.  Wählen Sie **Richtlinie hinzufügen** aus.
 
     ![Screenshot des Blatts „App-Richtlinie“ mit hervorgehobener Menüoption „Richtlinie hinzufügen“ ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -66,8 +65,7 @@ Wählen Sie eins der folgenden Themen aus, um eine Liste der für die Plattforme
 
 5.  Wählen Sie **Apps** aus, um das Blatt **Apps** zu öffnen, auf dem einer Liste der verfügbaren Apps angezeigt wird. Sie können eine oder mehrere Apps in der Liste auswählen, mit denen Sie die von Ihnen zu erstellende Richtlinie verknüpfen möchten. Nachdem Sie die Apps ausgewählt haben, wählen Sie die Schaltfläche **Auswählen** unten auf dem Blatt **Apps** aus, um Ihre Auswahl zu speichern.
 
-    > [!IMPORTANT]
-    > Sie müssen mindestens eine App auswählen, um eine Richtlinie erstellen zu können.
+    > [!IMPORTANT] Sie müssen mindestens eine App auswählen, um eine Richtlinie erstellen zu können.
 
 6.  Wählen Sie auf dem Blatt **Richtlinie hinzufügen** **Erforderliche Einstellungen konfigurieren** aus, um das Blatt mit den Richtlinieneinstellungen zu öffnen.
 
@@ -169,6 +167,6 @@ Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finde
 [Benutzeroberfläche für MAM-fähige Apps](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Einstellungen für Windows Phone 8.1-Richtlinien in Microsoft Intune | Microsoft Intune
+title: Einstellungen für Windows Phone 8.1-Richtlinien | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -29,11 +29,17 @@ ms.suite: ems
 
 ## Allgemeine Konfigurationseinstellungen
 
-Konfigurieren Sie mithilfe der **allgemeinen Windows Phone-Konfigurationsrichtlinie** von Microsoft Intune die folgenden Einstellungen für Windows Phone 8.1-Geräte:
+Konfigurieren Sie mithilfe der **allgemeinen Windows Phone-Konfigurationsrichtlinie (Windows Phone 8.1 und höher)** von Microsoft Intune die folgenden Einstellungen für Windows Phone 8.1-Geräte:
 
 -   **Sicherheitseinstellungen für mobile Geräte** – Treffen Sie in einer Liste mit vordefinierten Einstellungen eine Auswahl, mit denen Sie eine Reihe von Features und Funktionen auf dem Gerät steuern können.
 
 -   **Kompatible und nicht kompatible Apps**: Geben Sie eine Liste von Apps an, die in Ihrem Unternehmen kompatibel bzw. nicht kompatibel sind. Die Installation dieser Apps kann auf Windows Phone-Geräten blockiert oder zugelassen werden.
+
+### Anwendbarkeitseinstellungen
+
+|Name der Einstellung|Details|
+|----------------|----------------------------------|
+|**Alle Konfigurationen auf Windows 10 anwenden**|Erlaubt, dass Einstellungen in dieser Richtlinie zusätzlich zu Windows Phone 8.1-Geräten auf Windows 10 Mobile-Geräte angewendet werden.|
 
 ### Kennworteinstellungen
 
@@ -54,7 +60,7 @@ Konfigurieren Sie mithilfe der **allgemeinen Windows Phone-Konfigurationsrichtli
 
 |Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Verschlüsselung auf mobilem Gerät anfordern**|Schreibt vor, dass die Daten auf unterstützten mobilen Geräten verschlüsselt werden müssen.<br>Für Windows Phone 8-Geräte müssen Sie hier **Ja** festlegen..|Ja|Ja|
+|**Verschlüsselung auf mobilem Gerät anfordern**|Schreibt vor, dass die Daten auf unterstützten mobilen Geräten verschlüsselt werden müssen.<br>Für Windows Phone 8-Geräte müssen Sie hier **Ja**festlegen.|Ja|Ja|
 
 ### Systemeinstellungen
 
@@ -108,7 +114,7 @@ Konfigurieren Sie mithilfe der **allgemeinen Windows Phone-Konfigurationsrichtli
 |**Kopieren und Einfügen zulassen**|Lassen Sie Kopier- und Einfügefunktionen auf Geräten zu.|Nein|Ja|
 
 ### Einstellungen für kompatible und nicht kompatible Anwendungen
-Geben Sie in der Liste der **kompatiblen und nicht kompatiblen Apps** eine Liste kompatibler oder nicht kompatibler Apps mit den folgenden Informationen ein:
+Geben Sie in der Liste der **kompatiblen &amp; nicht kompatiblen Apps** eine Liste kompatibler oder nicht kompatibler Apps mit den folgenden Informationen ein:
 
 > [!NOTE]
 > Eine einzelne Richtlinie kann nur eine Liste kompatibler oder eine Liste nicht kompatibler Apps enthalten. Sie können nicht beide Typen in derselben Richtlinie angeben.
@@ -121,8 +127,7 @@ Geben Sie in der Liste der **kompatiblen und nicht kompatiblen Apps** eine Liste
 |**Anwendungen importieren**|Importiert eine Liste von Apps, die Sie in einer CSV-Datei angegeben haben. Verwenden Sie in der Datei das Format Anwendungsname, Herausgeber und App-URL.|
 |**Bearbeiten**|Ermöglicht Ihnen das Bearbeiten von Name, Herausgeber und URL der ausgewählten App.|
 |**Löschen**|Löscht die ausgewählte App aus der Liste.|
-> [!IMPORTANT]
-> Wenn Sie eine Liste von zulässigen Apps für Windows Phone 8.1-Geräte angeben, müssen Sie die Unternehmensportal-App zu dieser Liste hinzufügen, da sie andernfalls blockiert wird.
+> [!IMPORTANT] Wenn Sie eine Liste von zulässigen Apps für Windows Phone 8.1-Geräte angeben, müssen Sie die Unternehmensportal-App zu dieser Liste hinzufügen, da sie andernfalls blockiert wird.
 
 
 ### Referenzinformationen für kompatible und nicht kompatible Apps
@@ -134,14 +139,14 @@ Suchen Sie auf der [Windows Phone-Seite für Apps und Spiele](http://www.windows
 
 Öffnen Sie die Seite der App, und kopieren Sie die URL in die Zwischenablage. Jetzt können Sie diese als URL in der Liste mit kompatiblen oder nicht kompatiblen Apps verwenden.
 
-**Beispiel:** Durchsuchen Sie den Store nach der Skype-App. Die URL, die Sie verwenden, ist **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**..
+**Beispiel:** Durchsuchen Sie den Store nach der Skype-App. Die URL, die Sie verwenden, ist **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
 ## Benutzerdefinierte Richtlinieneinstellungen 
 Stellen Sie mithilfe der **benutzerdefinierten Windows Phone-Richtlinie** von Microsoft Intune Einstellungen für OMA-URI (Open Mobile Alliance Uniform Resource Identifier) bereit, um Features auf **Windows Phone 8.1-Geräten** zu steuern. Dies sind die Standardeinstellungen, die viele Hersteller von mobilen Geräten verwenden, um Gerätefunktionen zu steuern.
 
-Diese Funktion soll es Ihnen ermöglichen, Windows Phone-Einstellungen bereitzustellen, die nicht mit einer allgemeinen Intune-Konfigurationsrichtlinie konfigurierbar sind. Weitere Informationen zu den Einstellungen, die Sie mit diesen Richtlinien konfigurieren können, finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+Diese Funktion soll es Ihnen ermöglichen, Windows Phone-Einstellungen bereitzustellen, die nicht mit einer allgemeinen Intune-Konfigurationsrichtlinie konfigurierbar sind. Weitere Informationen zu den Einstellungen, die Sie mit diesen Richtlinien konfigurieren können, finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-Informationen zum Erstellen von OMA-URI-Einstellungen für Windows Phone-Geräte finden Sie in der [MDM-Protokolldokumentation für Windows Phone 8.1](http://technet.microsoft.com/library/dn499787.aspx)..
+Informationen zum Erstellen von OMA-URI-Einstellungen für Windows Phone-Geräte finden Sie in der [MDM-Protokolldokumentation für Windows Phone 8.1](http://technet.microsoft.com/library/dn499787.aspx).
 
 ### Allgemeine Einstellungen
 
@@ -169,6 +174,6 @@ Geben Sie im Dialogfeld **OMA-URI hinzufügen oder bearbeiten** die folgenden In
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

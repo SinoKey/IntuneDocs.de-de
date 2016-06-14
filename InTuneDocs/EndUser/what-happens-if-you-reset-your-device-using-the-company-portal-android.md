@@ -28,16 +28,19 @@ ms.suite: ems
 
 # Was geschieht, wenn Sie Ihr Gerät mithilfe des Unternehmensportals zurücksetzen?
 
-Wenn Sie das Unternehmensportal zum Zurücksetzen Ihres Android-Geräts verwenden, werden möglicherweise einige Apps oder Einstellungen auf Ihrem Gerät gelöscht. Dazu können auch Ihre persönlichen Daten zählen. Was auf den einzelnen Geräten geschieht, hängt vom Typ des Geräts und seiner Verwendung ab, wie in der folgenden Tabelle beschrieben.
+Wenn Sie das Unternehmensportal verwenden, um Ihr Android-Gerät zurückzusetzen, werden alle Apps, Einstellungen und persönliche Daten auf Ihrem Gerät gelöscht. Außerdem wird das Gerät wieder auf die werkseitigen Standardeinstellungen zurückgesetzt.
 
-|Gerätekonfiguration und -verwaltung|Gerätetyp|
-|---------------------------------------|---------------|
-|Ihr IT-Administrator verwaltet Ihr mobiles Gerät|Wenn Sie Ihr Android-Gerät zurücksetzen, wird Ihr Gerät nicht mehr im Unternehmensportal angezeigt. Ihr Unternehmens-E-Mail-Konto wird ebenso wie nicht gespeicherte E-Mails gelöscht.|
-|Das Gerät kann nur auf Firmen-E-Mail zuzugreifen.|Wenn Sie Ihr Android-Gerät zurücksetzen, wird Ihr Gerät nicht mehr im Unternehmensportal angezeigt, und das Unternehmensportal versucht, das Gerät auf die Werkseinstellungen des Herstellers zurückzusetzen. Alle Ihre persönlichen Daten und Einstellungen werden gelöscht.|
+Wenn Sie über ein Samsung Knox-Gerät verfügen, können Sie ein „selektives Zurücksetzen“ durchführen, indem Sie im Unternehmensportal die Option **Gerät entfernen** wählen. Beim selektiven Zurücksetzen wird nur Folgendes entfernt:
+
+- Unternehmens-Apps, die Ihr IT-Administrator Ihnen zur Verfügung stellt
+- E-Mail-, VPN- und WLAN-Einstellungen
+- Fähigkeit des IT-Administrators, bestimmte Einstellungen zu erzwingen
+
+
 
 ### Weitere Informationen:
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

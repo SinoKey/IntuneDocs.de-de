@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?
 
-Wenn Sie die Unternehmensportal-App auf Ihrem Gerät deinstallieren, wird auch die Registrierung Ihres Geräts bei Intune aufgehoben. Klicken Sie auf den zu Ihrem Gerätetyp passenden Link, um zu erfahren, was bei Ihrem Gerät im Einzelnen geschieht.
+Wenn Sie die Unternehmensportal-App auf Ihrem Gerät deinstallieren, wird auch die Registrierung Ihres Geräts bei Intune aufgehoben. Klicken Sie im Abschnitt „Inhalt dieses Artikels“ weiter oben auf den Link, der dem Typ Ihres Geräts entspricht, um weitere Informationen zu erhalten.
 
 - [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 oder Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -43,8 +43,7 @@ Wenn Sie die Unternehmensportal-App auf Ihrem Gerät deinstallieren, wird auch d
 
 -   Die Intune Endpoint Protection-Software wird von Ihrem Computer entfernt. Wenn auf dem Computer eine andere Virenschutzsoftware installiert ist und diese deaktiviert wurde, wird sie unter Umständen nach dem Entfernen von Intune Endpoint Protection wieder aktiviert. Sie sollten Ihren Computer nach dem Entfernen aus dem Unternehmensportal überprüfen.
 
-    > [!IMPORTANT]
-    > Wenn die andere Virenschutzsoftware nicht wieder aktiviert wird oder keine andere Virenschutzsoftware installiert ist, bleibt der Computer unter Umständen anfällig für Viren und Schadsoftware.
+    > [!IMPORTANT] Wenn die andere Virenschutzsoftware nicht wieder aktiviert wird oder keine andere Virenschutzsoftware installiert ist, bleibt der Computer unter Umständen anfällig für Viren und Schadsoftware.
 
 -   Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden (z. B. das Deaktivieren der Kamera, werden unwirksam).
 
@@ -97,6 +96,6 @@ Wenn Sie Ihr Windows RT-Gerät entfernen, geschieht Folgendes:
 ### Weitere Informationen:
 [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

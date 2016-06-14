@@ -67,11 +67,11 @@ Taskworker nutzen zunehmend mobile Technologien.  Gemeinsam genutzte Tablets sin
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
 ## Ermöglichen des sicheren Zugriffs für Mitarbeiter auf Office 365 von einem nicht verwalteten, öffentlichen Kiosk aus
-Manchmal müssen Ihre Mitarbeiter Geräte, Apps oder Browser verwenden, die von Ihnen nicht verwaltet werden können, z. B. öffentliche Computer auf Messen und in Hotellobbys.  Sollten Sie es den Mitarbeitern gestatten, dass sie über diese öffentlichen Computer auf E-Mails im Unternehmen zugreifen?  Mit Intune und der Enterprise Mobility Suite haben Sie entsprechende Optionen.  Die Antwort kann einfach „Nein“ sein, indem der Zugriff auf E-Mails auf Geräte beschränkt wird, die von Ihrem Unternehmen verwaltet werden.  Alternativ können Sie den eingeschränkten Zugriff auf diese nicht vertrauenswürdigen Computer zulassen, indem Sie eine Multi-Factor Authentification erfordern und lediglich den Browserzugriff (Outlook Web Access) in einem Modus zulassen, in dem Dateien nicht heruntergeladen werden können (z. B. E-Mail-Anlagen).  Dadurch wird sichergestellt, dass der streng authentifizierte Mitarbeiter nicht versehentlich Unternehmensdaten auf nicht vertrauenswürdigen Computern hinterlässt.
+Manchmal müssen Ihre Mitarbeiter Geräte, Apps oder Browser verwenden, die von Ihnen nicht verwaltet werden können, z. B. öffentliche Computer auf Messen und in Hotellobbys. Sollten Sie es den Mitarbeitern gestatten, dass sie über diese öffentlichen Computer auf E-Mails im Unternehmen zugreifen? Mit Intune und der Enterprise Mobility Suite <!--you have choices. The--> können Sie diese Frage einfach mit „nein“ beantworten, indem Sie den E-Mail-Zugriff auf Geräte beschränken, die von Ihrem Unternehmen verwaltet werden.  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  Dadurch wird sichergestellt, dass der streng authentifizierte Mitarbeiter nicht versehentlich Unternehmensdaten auf nicht vertrauenswürdigen Computern hinterlässt.
 
 <!-- Learn more about how to plan and deploy Intune to support kiosks. -->
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

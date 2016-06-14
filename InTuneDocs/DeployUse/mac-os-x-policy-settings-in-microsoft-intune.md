@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Einstellungen für Mac OS X-Richtlinien in Microsoft Intune | Microsoft Intune
+title: Einstellungen für Mac OS X-Richtlinien | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -43,12 +43,12 @@ Wenn die gesuchte Einstellung nicht in dieser Liste enthalten ist, können Sie s
 |----------------|---------------|
 |**Anfordern eines Kennworts zum Entsperren von Geräten**|Gibt an, ob für den Zugriff auf einen Mac-Computer ein Kennwort verwendet werden muss. **Wichtig:** Im Gegensatz zu iOS-Geräten wird der Benutzer bei Mac OS X-Geräten nicht umgehend zum Aktualisieren seines Kennworts aufgefordert, um dieser Einstellung zu entsprechen.|
 |**Erforderlicher Kennworttyp**|Gibt an, ob das verwendete Kennwort ausschließlich Zahlen enthalten darf oder ob die Verwendung **alphanumerischer Zeichen** (Buchstaben und Zahlen) erforderlich ist. **Wichtig:** Diese Einstellung wird lediglich unter Mac OS X 10.10.3 und höher unterstützt.|
-|**Erforderliche Anzahl komplexer Zeichen im Kennwort**|Gibt die Anzahl komplexer Zeichen an, die das Kennwort enthalten muss (**0** - **4**).).<br /><br />Bei komplexen Zeichen handelt es sich um Symbole (z. B. **?**).'|
+|**Erforderliche Anzahl komplexer Zeichen im Kennwort**|Gibt die Anzahl komplexer Zeichen an, die das Kennwort enthalten muss (**0** - **4**).<br /><br />Bei komplexen Zeichen handelt es sich um Symbole (z. B. ein Fragezeichen**?**).|
 |**Minimale Kennwortlänge**|Gibt die Mindestlänge des Kennworts an (zwischen **4** und **14** Zeichen).|
-|**Einfache Kennwörter zulassen**|Ermöglicht die Verwendung einfacher Kennwörter (z. B.**0000**oder**1234**).'.|
+|**Einfache Kennwörter zulassen**|Ermöglicht die Verwendung einfacher Kennwörter (z. B.**0000**oder**1234**).|
 |**Minuten der Inaktivität, bevor ein Kennwort erforderlich ist**|Gibt an, wie lange der Computer inaktiv sein muss, bevor er mithilfe eines Kennworts entsperrt werden muss.|
 |**Kennwortablauf (Tage)**|Gibt an, nach wie vielen Tagen der Benutzer das Kennwort ändern muss (**1** - **255** Tage).|
-|**Kennwortverlauf speichern**|Mit dieser Einstellung wird verhindert, dass der Benutzer ein bereits verwendetes Kennwort erneut verwendet. Bei Auswahl dieser Einstellung kann auch **Wiederverwendung vorheriger Kennwörter verhindern** festgelegt werden, um die Anzahl von vorherigen Kennwörtern anzugeben, die nicht erneut verwendet werden dürfen (ein Wert zwischen **1** - **24**).).|
+|**Kennwortverlauf speichern**|Mit dieser Einstellung wird verhindert, dass der Benutzer ein bereits verwendetes Kennwort erneut verwendet. Bei Auswahl dieser Einstellung kann auch **Wiederverwendung vorheriger Kennwörter verhindern** festgelegt werden, um die Anzahl von vorherigen Kennwörtern anzugeben, die nicht erneut verwendet werden dürfen (**1** - **24**).|
 |**Minuten Inaktivität bis zur Aktivierung des Bildschirmschoners**|Gibt den Zeitraum in Minuten an, während dessen sich der Computer im Leerlauf befinden muss, bevor der Bildschirmschoner aktiviert wird.|
 
 ### Einstellungen für kompatible und nicht kompatible Anwendungen
@@ -61,14 +61,13 @@ Aktivieren Sie in der Liste der **kompatiblen&amp; und nicht kompatiblen Apps f�
 
 |Name der Einstellung|Details|
 |----------------|---------------|
-|**Nichtkompatibilität melden, wenn Benutzer die aufgelisteten Apps installieren**|Listet die Mac OS X-Apps auf, die Benutzer nicht installieren dürfen. Wenn Benutzer diese Apps installieren, werden sie in den **Berichten über nicht kompatible Apps** aufgeführt..|
-|**Nichtkonformität melden, wenn Benutzer die nicht aufgelisteten Apps installieren**|Listet die Mac OS X-Apps auf, die Benutzer installieren dürfen. Wenn Benutzer andere Apps installieren, werden diese in den **Berichten über nicht kompatible Apps** aufgeführt..|
-|**Hinzufügen**|Fügt eine App zur ausgewählten Liste hinzu. Geben Sie einen Namen Ihrer Wahl, optional den Herausgeber der App sowie die Paket-ID der App an. **Tipp:** Zum Ermitteln der Paket-ID einer App führen Sie auf einem Mac-Computer, auf dem die App installiert ist, die folgenden Schritte aus:<ol><li>Öffnen Sie den Ordner, in dem die App installiert ist (z. B. **/Programme**).)</li><li>Wählen Sie das Paket *&lt;App-Name&gt;***.app** und anschließend **Paketinhalt anzeigen** aus.</li><li>Öffnen Sie die Datei **Info.plist** .</li><li>Überprüfen Sie den Wert, der dem Schlüssel **CFBundleIdentifier**zugewiesen ist.</li></ol>Die Paket-ID weist das Format **com.contoso.appname**auf.|
+|**Nichtkompatibilität melden, wenn Benutzer die aufgelisteten Apps installieren**|Listet die Mac OS X-Apps auf, die Benutzer nicht installieren dürfen. Wenn Benutzer diese Apps installieren, werden sie in den **Berichten über nicht richtlinienkonforme Apps**aufgeführt.|
+|**Nichtkonformität melden, wenn Benutzer die nicht aufgelisteten Apps installieren**|Listet die Mac OS X-Apps auf, die Benutzer installieren dürfen. Wenn Benutzer andere Apps installieren, werden diese in den **Berichten über nicht richtlinienkonforme Apps**aufgeführt.|
+|**Hinzufügen**|Fügt eine App zur ausgewählten Liste hinzu. Geben Sie einen Namen Ihrer Wahl, optional den Herausgeber der App sowie die Paket-ID der App an. **Tipp:** Zum Ermitteln der Paket-ID einer App führen Sie auf einem Mac-Computer, auf dem die App installiert ist, die folgenden Schritte aus:<ol><li>Öffnen Sie den Ordner, in dem die App installiert ist (z. B. **/Programme**).</li><li>Wählen Sie das Paket *&lt;App-Name&gt;***.app** und anschließend **Paketinhalt anzeigen** aus.</li><li>Öffnen Sie die Datei **Info.plist** .</li><li>Überprüfen Sie den Wert, der dem Schlüssel **CFBundleIdentifier**zugewiesen ist.</li></ol>Die Paket-ID weist das Format **com.contoso.appname**auf.|
 |**Anwendungen importieren**|Importiert eine Liste von Apps, die Sie in einer CSV-Datei angegeben haben. Verwenden Sie in der Datei das Format App-Name, Herausgeber, Paket-ID der App.|
 |**Bearbeiten**|Ermöglicht Ihnen das Bearbeiten der Werte für Name, Herausgeber und Paket-ID der ausgewählten App.|
 |**Löschen**|Löscht die ausgewählte App aus der Liste.|
-> [!TIP]
-> Weitere Informationen zu Intune-Berichten finden Sie unter [Einblicke in Microsoft Intune-Vorgänge durch Berichte](understand-microsoft-intune-operations-by-using-reports.md)..
+> [!TIP] Weitere Informationen zu Intune-Berichten finden Sie unter [Understand Microsoft Intune operations by using reports](understand-microsoft-intune-operations-by-using-reports.md) (Einblicke in Microsoft Intune-Vorgänge durch Berichte).
 
 > [!IMPORTANT]
 > Wenn sich ein Mac OS X-Gerät im Energiesparmodus befindet, können keine Richtlinien oder Profile bereitgestellt oder inventarisiert werden. Infolgedessen zeigt die Intune-Konsole möglicherweise vorübergehend den Status **Richtlinieneinstellungen mit Fehlern** an, bis das Gerät erneut aktiviert und der Energiesparmodus beendet wird.
@@ -78,9 +77,9 @@ Anhand der **Berichte über nicht richtlinienkonforme Apps** können Sie überpr
 
 #### Ausführen des Berichts
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Berichte** &gt; **Berichte über nicht kompatible Apps**..
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Berichte** &gt; **Berichte über nicht richtlinienkonforme Apps**.
 
-2.  Wählen Sie die Gerätegruppen aus, die Sie überprüfen möchten, geben Sie an, ob Sie nach kompatiblen und/oder nicht kompatiblen Apps suchen möchten, und klicken Sie dann auf **Bericht anzeigen**..
+2.  Wählen Sie die Gerätegruppen aus, die Sie überprüfen möchten, geben Sie an, ob Sie nach kompatiblen und/oder nicht kompatiblen Apps suchen möchten, und klicken Sie dann auf **Bericht anzeigen**.
 
 ## Benutzerdefinierte Mac OS X-Richtlinieneinstellungen in Microsoft Intune
 Verwenden Sie die benutzerdefinierte **Mac OS X-Konfigurationsrichtlinie** in Microsoft Intune, um Mac OS X-Geräten Einstellungen bereitzustellen, die Sie mit dem [Apple Configurator-Tool](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) erstellt haben. Mit diesem Tool können Sie zahlreiche Einstellungen zur Betriebssteuerung dieser Geräte erstellen und in ein Konfigurationsprofil exportieren. Sie können dieses Konfigurationsprofil anschließend in eine benutzerdefinierte Intune-Richtlinie für Mac OS X importieren und die Einstellungen für Benutzer und Geräte in Ihrer Organisation bereitstellen.
@@ -116,7 +115,7 @@ Die Konfigurationsprofildatei, die von der benutzerdefinierten Richtlinie verwen
 
 -   Exportieren Sie die Datei (mit der Erweiterung **.mobileconfig**) aus dem Apple Configurator-Tool.
 
--   Erstellen Sie die Datei selbst unter Verwendung des entsprechenden Schemas aus der [Apple Configuration Profile Key Reference](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html)..
+-   Erstellen Sie die Datei selbst unter Verwendung des entsprechenden Schemas aus der [Apple Configuration Profile Key Reference](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html).
 
 
 > [!IMPORTANT]
@@ -127,6 +126,6 @@ Die Konfigurationsprofildatei, die von der benutzerdefinierten Richtlinie verwen
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

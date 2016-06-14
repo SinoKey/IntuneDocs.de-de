@@ -29,11 +29,11 @@ ms.suite: ems
 
 Der Intune-Lebenszyklus von Apps beginnt, wenn eine App hinzugefügt wird, und durchläuft weitere Phasen, bis Sie sie entfernen.
 
-![Der App-Lebenszyklus](./media/applifecycle_nobg.png "the Intune app lifecycle")
+![Der App-Lebenszyklus](./media/app-lifecycle.png "the Intune app lifecycle")
 
 ## Hinzufügen
 
-Der erste Schritt bei der App-Bereitstellung besteht darin, die Apps hinzuzufügen, die Sie verwalten und in Intune bereitstellen möchten. Es gibt viele verschiedene App-Typen, mit denen Sie arbeiten können, aber die grundlegenden Verfahren sind identisch. Intune ermöglicht das Hinzufügen von Apps sowohl für [registrierte Geräte](add-apps-for-mobile-devices-in-microsoft-intune.md) als auch für [Windows-PCs, die Sie mit der Intune-Clientsoftware verwalten](add-apps-for-windows-pcs-in-microsoft-intune.md)..
+Der erste Schritt bei der App-Bereitstellung besteht darin, die Apps hinzuzufügen, die Sie verwalten und in Intune bereitstellen möchten. Es gibt viele verschiedene App-Typen, mit denen Sie arbeiten können, aber die grundlegenden Verfahren sind identisch. Intune ermöglicht das Hinzufügen von Apps sowohl für [registrierte Geräte](add-apps-for-mobile-devices-in-microsoft-intune.md) als auch für [Windows-PCs, die Sie mit der Intune-Clientsoftware verwalten](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
 ## Bereitstellen
 
@@ -53,9 +53,9 @@ Intune bietet Ihnen viele Möglichkeiten zum Schutz der Daten in Ihren Apps. Die
 
 ## Außerkraftsetzen
 
-Letztlich ist es wahrscheinlich, dass von Ihnen bereitgestellte Apps irgendwann nicht mehr aktuell sind und entfernt werden müssen. Intune vereinfacht die [Außerbetriebnahme von Apps](retire-apps-using-microsoft-intune.md)..
+Letztlich ist es wahrscheinlich, dass von Ihnen bereitgestellte Apps irgendwann nicht mehr aktuell sind und entfernt werden müssen. Intune vereinfacht die [Außerbetriebnahme von Apps](retire-apps-using-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

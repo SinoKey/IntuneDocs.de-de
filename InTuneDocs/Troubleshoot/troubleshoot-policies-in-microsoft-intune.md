@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,31 +53,29 @@ Der folgende Screenshot zeigt zwei eindeutige Beispiele:
 
 ![Intune-Geräterichtlinie](../media/Intune-Device-Policy-v.2.jpg)
 
-> [!NOTE]
-> Denken Sie daran: Wenn zwei Richtlinien mit unterschiedlichen Einschränkungsstufen für das gleiche Gerät gelten, wird in der Praxis die restriktivere Richtlinie angewendet.
+> [!NOTE] Denken Sie daran: Wenn zwei Richtlinien mit unterschiedlichen Einschränkungsstufen für das gleiche Gerät gelten, wird in der Praxis die restriktivere Richtlinie angewendet.
 
 ## Intervalle für Richtlinienaktualisierungen und -updates
 Denken Sie daran, dass Richtlinien in regelmäßigen Abständen aktualisiert werden. Richtlinien sollten in der Regel innerhalb von 15 Minuten nach einer Änderung auf den Geräten registriert werden. Hier finden Sie ausführliche Informationen zu den regelmäßigen Intervallen der Aktualisierung von Richtlinien:
 
 -   **Für die MDM registriertes Windows-Gerät**: Wird durch einen geplanten Task um 3:00 Uhr lokaler Zeit auf dem Gerät ausgelöst und erfolgt täglich.
 
--   **Windows Phone**: Die Richtlinie wird alle 8 Stunden aktualisiert. Dies kann durch eine Aktualisierung im Unternehmensportal unter **Einstellungen** erzwungen werden..
+-   **Windows Phone**: Die Richtlinie wird alle 8 Stunden aktualisiert. Dies kann durch eine Aktualisierung im Unternehmensportal unter **Einstellungen** erzwungen werden.
 
--   **iOS**: Die Richtlinie wird in einem zufälligen Zeitintervall einmal täglich aktualisiert. Dies kann auch erzwungen werden, indem Sie das Unternehmensportal öffnen, das Gerät auswählen und auf **Synchronisieren** klicken..
+-   **iOS**: Die Richtlinie wird in einem zufälligen Zeitintervall einmal täglich aktualisiert. Dies kann auch erzwungen werden, indem Sie das Unternehmensportal öffnen, das Gerät auswählen und auf **Synchronisieren** klicken.
 
--   **Android**: Die Richtlinie wird in einem zufälligen Zeitintervall einmal täglich aktualisiert. Dies kann auch erzwungen werden, indem Sie das Unternehmensportal öffnen, das Gerät auswählen und auf **Synchronisieren** klicken..
+-   **Android**: Die Richtlinie wird in einem zufälligen Zeitintervall einmal täglich aktualisiert. Dies kann auch erzwungen werden, indem Sie das Unternehmensportal öffnen, das Gerät auswählen und auf **Synchronisieren** klicken.
 
 ## Fehler in „policyplatform.log“ im Zusammenhang mit der Microsoft Intune-Richtlinie
 Bei Windows-Geräten ohne MDM können Richtlinienfehler in der Datei „policyplatform.log“ das Ergebnis nicht standardmäßiger Einstellungen in der Windows-Benutzerkontensteuerung (UAC) auf dem Gerät sein. Einige nicht standardmäßige UAC-Einstellungen können Microsoft Intune-Clientinstallationen und Richtlinienausführungen beeinträchtigen.
 
 ### So beheben Sie UAC-Probleme
 
-1.  Koppeln Sie den Computer ab, wie unter [Retire devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management) (Abkoppeln von Geräten in der Microsoft Intune-Verwaltung) beschrieben..
+1.  Koppeln Sie den Computer ab, wie unter [Retire devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management) (Abkoppeln von Geräten in der Microsoft Intune-Verwaltung) beschrieben.
 
 2.  Warten Sie 20 Minuten, bis die Clientsoftware entfernt wurde.
 
-    > [!NOTE]
-    > Versuchen Sie nicht, den Client über „Programme und Funktionen“ zu entfernen.
+    > [!NOTE] Versuchen Sie nicht, den Client über „Programme und Features“ zu entfernen.
 
 3.  Geben Sie im Startmenü **UAC** ein, um die Einstellungen der Benutzerkontensteuerung zu öffnen.
 
@@ -102,8 +100,8 @@ Um dieses Problem zu beheben, legen Sie die lokale Systemzeit so genau wie mögl
 Windows Phone- und Windows RT-Geräte gestatten keine Verringerung der Sicherheitsstufe in Sicherheitsrichtlinien, die mittels MDM oder EAS festgelegt wurden, nachdem diese festgelegt wurden. Angenommen, Sie legen ein **Kennwort mit Mindestanzahl von Zeichen** auf 8 fest und versuchen dann, diesen Wert auf 4 zu verringern. Die restriktivere Richtlinie wurde bereits auf das Gerät angewendet.
 
 Abhängig von der Geräteplattform müssen Sie, wenn Sie die Richtlinie auf einen niedrigeren Sicherheitswert ändern möchten, Sicherheitsrichtlinien möglicherweise zurücksetzen.
-In Windows RT wischen Sie beispielsweise auf dem Desktop von rechts nach innen, um die Leiste **Charms** zu öffnen, und klicken Sie auf **Einstellungen** &gt; **Systemsteuerung**.  Wählen Sie das Applet **Benutzerkonten** aus.
-Im linken Navigationsmenü befindet sich unten ein Link **Sicherheitsrichtlinien zurücksetzen** . Klicken Sie darauf, und klicken Sie dann auf die Schaltfläche **Richtlinien zurücksetzen** .
+In Windows RT wischen Sie beispielsweise auf dem Desktop von rechts nach innen, um die Leiste **Charms** zu öffnen, und wählen Sie **Einstellungen** &gt; **Systemsteuerung**.  Wählen Sie das Applet **Benutzerkonten** aus.
+Im linken Navigationsmenü befindet sich unten ein Link **Sicherheitsrichtlinien zurücksetzen** . Klicken Sie darauf, und klicken Sie dann auf die Schaltfläche **Richtlinien zurücksetzen**.
 Andere MDM-Geräte, wie Android, Windows Phone 8.1 und höher sowie iOS, müssen möglicherweise außer Kraft gesetzt und bei dem Dienst neu registriert werden, damit Sie eine weniger restriktive Richtlinie anwenden können.
 
 ## Android-Geräte erzwingen keine Änderungen von Sicherheitsrichtlinien ohne die Genehmigung durch den Endbenutzer
@@ -115,9 +113,9 @@ Android-MDM gestattet dem Dienst nicht das Erzwingen von Änderungen an der anf�
 **Lösung**: Entfernen Sie im [Office 365 Admin Center](https://portal.office.com/) die Sonderzeichen aus den Firmennamen, und speichern Sie die Unternehmensinformationen.
 
 ### Nächste Schritte
-Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Microsoft Support..
+Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Microsoft Support.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

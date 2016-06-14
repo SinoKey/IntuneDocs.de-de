@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,13 +37,13 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 
 1.  Überprüfen Sie, ob Ihr Konto im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) vorhanden oder deaktiviert ist.
 
-2.  Stellen Sie sicher, dass Ihnen dieses Konto im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) bereitgestellt wurde..
+2.  Stellen Sie sicher, dass Ihnen dieses Konto im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) bereitgestellt wurde.
 
-3.  Stellen Sie im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) sicher, dass Sie den richtigen Benutzernamen und das richtige Kennwort zum Anmelden bei Intune verwenden, und dass der Benutzername das Format **joe@domain.com**aufweist..
+3.  Stellen Sie im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) sicher, dass Sie den richtigen Benutzernamen und das richtige Kennwort zum Anmelden bei Intune verwenden, und dass der Benutzername das Format **joe@domain.com**aufweist.
 
 ### Im Unternehmensportal fehlen die Kontaktinformationen der IT-Abteilung
 
-1.  Klicken Sie in der Intune-Verwaltungskonsole auf **Admin** &gt; **Unternehmensportal**..
+1.  Klicken Sie in der Intune-Verwaltungskonsole auf **Verwaltung** &gt; **Unternehmensportal**.
 
 2.  Legen Sie die Details unter **An IT-Abteilung wenden** fest.
 
@@ -63,7 +63,7 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 
 4.  Wenn die Statusanzeige für das Herunterladen von Apps in iOS vollständig ist, aber die App nicht ordnungsgemäß installiert wird, liegt möglicherweise ein Fehler bei den bereitgestellten App-Dateien vor.
 
-### Wenn Sie auf einen Link zu einer iOS-App klicken, gelangen Sie zu einem früheren Ort im iTunes App Store.
+### Wenn Sie über einen iOS-App-Link zu einem früheren Ort im iTunes App Store gelangen
 
 1.  Von der aktuellen iTunes App Store-Sitzung wird die vorherige App-Seite geöffnet.
 
@@ -87,13 +87,13 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 
 ### Fehler: Herausgeber ist nicht vorhanden
 Sie verwenden **Anderen Softwarevertrag hinzufügen**, um einen Drittanbieter-Lizenzvertrag hinzufügen. Sie versuchen, den Herausgeber von der Seite **Anderer Softwarelizenzvertrag** hinzuzufügen. Die Seite enthält eine Liste der vorhandenen Herausgeber in alphabetischer Reihenfolge.
-Sie geben den fehlenden Herausgeber ein, erhalten jedoch die Fehlermeldung **Der Herausgeber existiert nicht**.. 
+Sie geben den fehlenden Herausgeber ein, erhalten jedoch die Fehlermeldung **Der Herausgeber existiert nicht**. 
 
 Dieser Fehler ist entwurfsbedingt. Intune ermöglicht die Lizenznachverfolgung nur für gängige Softwaretitel. Intune setzt voraus, dass mindestens 4 separate Konten die Software melden, bevor sie in der Lizenzierungsworkload zur Auswahl steht.
 
 ### Wenn der Installationsstatus von verwalteten Anwendungen nicht gemeldet wird
 
-Bei verwalteten App-Installationen wurden vor dem Microsoft Intune-Dienstupdate im November 2014 keine Informationen zum Installationsstatus erfasst. Bei Geräten, auf denen vor diesem Dienstupdate verwaltete Apps installiert wurden, muss jede App-Bereitstellung mit der geeigneten Bereitstellungsaktion aktualisiert werden (z. B. **Verfügbare Installation**). Jedes Gerät wird die App während die automatische Prüfung auf verfügbare Apps aktualisieren. Weitere Informationen finden Sie unter [Update apps using Microsoft Intune](/intune/deploy-use/update-apps-using-microsoft-intune) (Aktualisieren von Apps mit Microsoft Intune)..
+Bei verwalteten App-Installationen wurden vor dem Microsoft Intune-Dienstupdate im November 2014 keine Informationen zum Installationsstatus erfasst. Bei Geräten, auf denen vor diesem Dienstupdate verwaltete Apps installiert wurden, muss jede App-Bereitstellung mit der geeigneten Bereitstellungsaktion aktualisiert werden (z. B. **Verfügbare Installation**). Jedes Gerät wird die App während die automatische Prüfung auf verfügbare Apps aktualisieren. Weitere Informationen finden Sie unter [Update apps using Microsoft Intune](/intune/deploy-use/update-apps-using-microsoft-intune) (Aktualisieren von Apps mit Microsoft Intune).
 
 ## <a name="BKMK_SoftDistErrorCodes"></a>Fehlercodes von App-Bereitstellungsfehlern
 Die folgende Tabelle enthält eine Übersicht über Fehler, die bei der Intune-App-Bereitstellung häufig auftreten, die wahrscheinlichen Fehlerursachen und mögliche Lösungen.
@@ -106,9 +106,9 @@ Die folgende Tabelle enthält eine Übersicht über Fehler, die bei der Intune-A
 |0x80073CFB|Das bereitgestellte Paket ist bereits installiert, und eine erneute Installation des Pakets wird blockiert.|Dieser Fehler kann auftreten, wenn Sie ein Paket installieren, das nicht bitweise mit dem bereits installierten Paket identisch ist. Überprüfen Sie, ob die digitale Signatur auch Teil des Pakets ist. Wenn ein Paket erneut erstellt oder signiert wird, ist das Paket nicht mehr bitweise identisch mit dem zuvor installierten Paket. Es gibt zwei Möglichkeiten, diesen Fehler zu beheben:<br /><br />-   Erhöhen Sie die Versionsnummer der Anwendung, und erstellen und signieren Sie das Paket dann erneut.<br />-   Entfernen Sie das alte Paket für jeden Benutzer des Systems, bevor Sie das neue Paket installieren.|
 
 ### Nächste Schritte
-Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Microsoft Support..
+Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Microsoft Support.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

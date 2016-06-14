@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sicherheitsrichtlinieneinstellungen für mobile Geräte in Microsoft Intune | Microsoft Intune
+title: Sicherheitsrichtlinieneinstellungen für mobile Geräte | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -72,7 +72,7 @@ Wenn Sie eine Kennwortlängenrichtlinie für Geräte mit Windows RT bereitstelle
 
 |Name der Einstellung|Windows 8.1 und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|iOS|Android und Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Verschlüsselung auf mobilem Gerät anfordern**<sup>1</sup><br /><br />Für Windows Phone 8-Geräte müssen Sie hier **Ja**festlegen..<br /><br />Aktivieren Sie zum Verwenden der Verschlüsselung auf iOS-Geräten die Einstellung **Kennwort zum Entsperren mobiler Geräte erforderlich**..|Ja|Nein|Ja|Nein|Ja|
+|**Verschlüsselung auf mobilem Gerät anfordern**<sup>1</sup><br /><br />Für Windows Phone 8-Geräte müssen Sie hier **Ja**festlegen.<br /><br />Aktivieren Sie zum Verwenden der Verschlüsselung auf iOS-Geräten die Einstellung **Kennwort zum Entsperren mobiler Geräte erforderlich**.|Ja|Nein|Ja|Nein|Ja|
 |**Verschlüsselung auf Speicherkarten vorschreiben**<br /><br />Gilt auch für Geräte, die mit Exchange ActiveSync verwaltet werden.|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend (Apps und zugehörige Daten werden automatisch verschlüsselt)|Nicht zutreffend|Ja|
 Zusätzliche Informationen für Geräte die Windows 8.1 ausführen
 
@@ -217,6 +217,6 @@ Zusätzliche Informationen für Geräte die Windows 8.1 ausführen
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -29,7 +29,7 @@ ms.suite: ems
 Sie können Ihre Apps mit dem Intune App Wrapping Tool oder Intune App-SDK für die Verwendung von Verwaltungsrichtlinien für mobile Anwendungen aktivieren. Verwenden Sie diese Informationen, um diese beiden Methoden und den Zeitpunkt für ihre Verwendung kennenzulernen.
 
 ## Intune App Wrapping Tool
-Das App Wrapping Tool wird in erster Linie für interne Line-of-Business-Apps (LOB) verwendet. Das Tool ist eine Befehlszeilenanwendung, die einen Wrapper für die App erstellt, der es der App dann ermöglicht, von der Intune-Verwaltungsrichtlinie für mobile Anwendungen verwaltet zu werden. Der Quellcode ist für die Verwendung des Tools nicht erforderlich, aber Sie benötigen entsprechende Anmeldeinformationen.  Weitere Informationen zu Anmeldeinformationen finden Sie im [Intune-Blog](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx). Die Dokumentation zum App Wrapping Tool finden Sie unter [Android App Wrapping Tool ](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) und [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)..
+Das App Wrapping Tool wird in erster Linie für interne Line-of-Business-Apps (LOB) verwendet. Das Tool ist eine Befehlszeilenanwendung, die einen Wrapper für die App erstellt, der es der App dann ermöglicht, von der Intune-Verwaltungsrichtlinie für mobile Anwendungen verwaltet zu werden. Der Quellcode ist für die Verwendung des Tools nicht erforderlich, aber Sie benötigen entsprechende Anmeldeinformationen.  Weitere Informationen zu Anmeldeinformationen finden Sie im [Intune-Blog](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx). Die Dokumentation zum App Wrapping Tool finden Sie unter [Android App Wrapping Tool ](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) und [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
 Das App Wrapping Tool unterstützt keine Apps im App Store oder Play Store oder Features, die eine Integration zur Entwicklungszeit erfordern (weitere Informationen finden Sie in der folgenden Tabelle zum Funktionsvergleich).
 
@@ -38,13 +38,12 @@ Sie sollten das App Wrapping Tool anstelle des SDKs verwenden, wenn die App bere
 ## Intune App SDK
 Das App-SDK ist in erster Linie für Kunden konzipiert, die im App Store oder Play Store über Apps verfügen und diese Apps mit Intune verwalten möchten. Allerdings kann jede App die Integration des SDKs nutzen, selbst wenn es sich um eine LOB-Anwendung handelt.
 
-Zum Integrieren des SDKs benötigen Sie Zugriff auf den Quellcode der App. Anweisungen zum Integrieren des SDKs finden Sie unter [Microsoft Intune App SDK](https://msdn.microsoft.com/library/mt627769.aspx)..
+Weitere Informationen zum SDK finden Sie unter [Übersicht](/intune/develop/intune-app-sdk). Ein Einführung in das SDK finden Sie unter [Erste Schritte mit dem Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started).
 
 ## Funktionsvergleich
 In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK und App Wrapping Tool verwenden können.
 
-> [!NOTE]
-> Das App Wrapping Tool kann mit eigenständigen Intune-Bereitstellungen oder mit Intune mit Configuration Manager verwendet werden.
+> [!NOTE] Das App Wrapping Tool kann mit eigenständigen Intune-Bereitstellungen oder mit Intune mit Configuration Manager verwendet werden.
 
 |Komponente|App SDK|App Wrapping Tool|
 |-----------|---------------------|-----------|
@@ -74,6 +73,6 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 [Verwenden des SDKs zum Aktivieren von Apps für die Verwaltung von mobilen Anwendungen](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

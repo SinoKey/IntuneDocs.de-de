@@ -15,7 +15,7 @@ ms.assetid: 09cd4ed6-1ce4-4530-9753-59808f01c6d7
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -34,12 +34,12 @@ Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App au
 
 -   Durch Tippen auf **Diagnosebericht senden** auf dem Bildschirm **Info** der Unternehmensportal-App.
 
--   Durch Schütteln Ihres Geräts, während Sie sich in der Unternehmensportal-App befinden, und anschließendes Tippen auf **E-Mail**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** &gt; **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schüttelgeste** aktiviert ist.
+-   Durch Schütteln Ihres Geräts, während Sie sich in der Unternehmensportal-App befinden, und anschließendes Tippen auf **E-Mail**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** &gt; **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schütteln** aktiviert ist.
 
 
 ### Weitere Informationen:
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

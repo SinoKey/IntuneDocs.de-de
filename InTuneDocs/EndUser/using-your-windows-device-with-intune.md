@@ -42,6 +42,7 @@ Die Informationen in diesem Abschnitt helfen Ihnen beim Installieren des Intune-
 Die Informationen in diesem Abschnitt helfen Ihnen bei Aktionen, die Sie nach dem Registrieren Ihres Windows-Geräts bei Intune ausführen können.
 
 - [Registrieren Ihres Geräts](encrypt-your-device-windows.md)</br>
+- [Festlegen oder Ändern des Kennworts](set-or-change-your-password-windows.md)</br>
 - [Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Geräts](reset-erase-your-lost-or-stolen-device-windows.md)</br>
 - [Aufheben der Registrierung Ihres Geräts in Intune](unenroll-your-device-from-intune-windows.md)</br>
 - [Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)</br>
@@ -54,7 +55,7 @@ Die Informationen in diesem Abschnitt helfen Ihnen bei Aktionen, die Sie nach de
 Die Informationen in diesem Abschnitt helfen Ihnen beim Beheben von Problemen, die mit bei Intune registrierten Windows-Geräten auftreten können.
 
 - [Das Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)</br>
-- [Gerät entspricht nicht der maximalen Betriebssystemversion](device-doesnt-comply with-maximum-operating-system-version-windows.md)</br>
+- [Gerät entspricht nicht der maximalen Betriebssystemversion](device-doesnt-comply-with-maximum-operating-system-version-windows.md)</br>
 - [Auf dem Gerät ist BitLocker nicht aktiviert](device-doesnt-have-bitlocker-enabled-windows.md)</br>
 - [Auf dem Gerät ist keine Antischadsoftware aktiviert](device-doesnt-have-antimalware-software-enabled-windows.md)</br>
 - [Auf dem Gerät ist der sichere Start nicht aktiviert](device-doesnt-have-secure-boot-enabled-windows.md)</br>
@@ -63,6 +64,6 @@ Die Informationen in diesem Abschnitt helfen Ihnen beim Beheben von Problemen, d
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen von Apps in Microsoft Intune | Microsoft Intune
+title: Bereitstellen von Apps | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ In dieser Vorgehensweise stellen Sie die App auf ausgewählten Geräten oder fü
 
 1. Klicken Sie in der [Microsoft Intune-Administratorkonsole](https://manage.microsoft.com) auf **Apps** &gt; **Apps**, um die Liste der von Ihnen verwalteten Apps anzuzeigen.
 
-2.  Wählen Sie die bereitzustellende App aus, und klicken Sie anschließend auf **Bereitstellung verwalten**..
+2.  Wählen Sie die bereitzustellende App aus, und klicken Sie anschließend auf **Bereitstellung verwalten**.
 
 3.  Wählen Sie im Dialogfeld *&lt;Name der App&gt;* zuerst auf der Seite **Gruppen auswählen** die Benutzer- oder Gerätegruppen aus, für die die App bereitgestellt werden soll.
 
@@ -39,7 +39,7 @@ In dieser Vorgehensweise stellen Sie die App auf ausgewählten Geräten oder fü
     [Informieren Sie sich, welche Microsoft-Apps mit Richtlinien für die Verwaltung mobiler Anwendungen kompatibel sind.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. Wenn die bereitzustellende App mit Intune-VPN-Profilen kompatibel ist, wird die Seite **VPN-Profil** angezeigt. Auf dieser Seite können Sie festlegen, dass iOS-Apps mit einem von Ihnen bereitgestellten VPN-Profil verknüpft werden sollen. Die VPN-Verbindung wird automatisch geöffnet, wenn die App gestartet wird. Um ein VPN-Profil verfügbar zu machen, müssen Sie die Profileinstellung **VPN pro App** aktivieren.
- Informationen zum Konfigurieren von VPN-Profilen, einschließlich Unterstützung für das Zuordnen von Profilen zu Apps, finden Sie unter [Unterstützen von Benutzern beim Verbinden mit ihrer Arbeit über VPN-Profile in Microsoft Intune](vpn-connections-in-microsoft-intune.md)..
+ Informationen zum Konfigurieren von VPN-Profilen, einschließlich Unterstützung für das Zuordnen von Profilen zu Apps, finden Sie unter [Unterstützen von Benutzern beim Verbinden mit ihrer Arbeit über VPN-Profile in Microsoft Intune](vpn-connections-in-microsoft-intune.md).
 
 ## Beispiel
 
@@ -52,9 +52,9 @@ Wenn Sie die App als **Erforderlich** für ein iOS-Gerät bereitgestellt haben, 
 
 ## Nächste Schritte
 
-Nachdem Sie eine Anwendung bereitgestellt haben, ist es sinnvoll, deren Status zu überwachen. Weitere Informationen finden Sie unter [Überwachen von Apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md)..
+Nachdem Sie eine Anwendung bereitgestellt haben, ist es sinnvoll, deren Status zu überwachen. Weitere Informationen finden Sie unter [Überwachen von Apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

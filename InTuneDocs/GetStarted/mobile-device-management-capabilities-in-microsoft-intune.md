@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Verwaltungsfunktionen für mobile Geräte in Microsoft Intune | Microsoft Intune
+title: Verwaltungsfunktionen für mobile Geräte | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -66,12 +66,13 @@ Verwaltung, Bestandserfassung, Bereitstellung und Außerbetriebnahme von Geräte
 
 |Funktion|Details|Weitere Informationen|
 |--------------|-----------|--------------------|
-|Inventar und Berichterstellung|Suchen Sie nach Informationen zu den Geräten, die Sie verwalten, und der Software, die sie verwenden.<br /><br />Sie haben eine Reihe von Möglichkeiten, um diese Berichte zu filtern, wie z. B. nach Geräteplattform und danach, ob das Gerät Unternehmensstandards einhält.|[Einblicke in Microsoft Intune-Vorgänge durch Berichte](/intune/understand-explore/understand-microsoft-intune-operations-by-using-reports)|
+|Inventar und Berichterstellung|Suchen Sie nach Informationen zu den Geräten, die Sie verwalten, und der Software, die sie verwenden.|[Verstehen Sie Ihre Geräte mithilfe des Inventars in Microsoft Intune](./deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+
 
 ### Weitere Informationen:
-[Funktionen für die Windows-PC-Verwaltung in Microsoft Intune](/intune/understand-explore/windows-pc-management-capabilities-in-microsoft-intune)
+[Funktionen für die Windows-PC-Verwaltung in Microsoft Intune](./windows-pc-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 
