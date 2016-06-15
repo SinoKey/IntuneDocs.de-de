@@ -1,45 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\EndUser\device-compliance-state-is-unknown.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f83a539e9bec5207d7c1c682942b4bb6797d616c/InTuneDocs/EndUser/device-compliance-state-is-unknown.md) | OutofSyncHandedBackSuccess | [Details](#89b8ffcb9b8064fa95eefaa1d9e93f3fb46a9d34276)
- [InTuneDocs\EndUser\you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md) | OutofSyncHandedBackSuccess | [Details](#e5ea21d877c2828545436b211d4e62adc4de402c465)
 
 ## Item Details
-##### <a name='89b8ffcb9b8064fa95eefaa1d9e93f3fb46a9d34276'></a> Source: [InTuneDocs\EndUser\device-compliance-state-is-unknown.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f83a539e9bec5207d7c1c682942b4bb6797d616c/InTuneDocs/EndUser/device-compliance-state-is-unknown.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [device-compliance-state-is-unknown.b9f5d0c753466468ee0eca537e49a273a6f66c1a.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c12276d52083a794f511bd2bf710f21dcaa1c528/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/device-compliance-state-is-unknown.b9f5d0c753466468ee0eca537e49a273a6f66c1a.de-de.xlf)
-* Handoff Datetime: 2016-06-09 00:38:19
-* Handoff Reason: Include
-* Archive File: [device-compliance-state-is-unknown.b9f5d0c753466468ee0eca537e49a273a6f66c1a.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/42caf00699512ae1dc9d027e50d4e074e14eca1a/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/archive/device-compliance-state-is-unknown.b9f5d0c753466468ee0eca537e49a273a6f66c1a.de-de.xlf)
-* Archive Datetime: 2016-06-09 02:01:56
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\device-compliance-state-is-unknown.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/99ea424de8d90732ce528e83803c16834d9b4948/InTuneDocs/EndUser/device-compliance-state-is-unknown.md)
-* Current Handback File: [device-compliance-state-is-unknown.b9f5d0c753466468ee0eca537e49a273a6f66c1a.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/d66b0d3db43e651ccbea794d747ecf1b6a4e06ec/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/device-compliance-state-is-unknown.b9f5d0c753466468ee0eca537e49a273a6f66c1a.de-de.xlf)
-* Current Handback Datetime: 2016-06-15 12:03:52
-* [Back to Top](#report-top)
-
-##### <a name='e5ea21d877c2828545436b211d4e62adc4de402c465'></a> Source: [InTuneDocs\EndUser\you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.c014b43bed4849331750f1bfb49b3b4590dc7dce.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/169deaf2cff2b2afe14f83ace9aac0ca8aeea5b2/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.c014b43bed4849331750f1bfb49b3b4590dc7dce.de-de.xlf)
-* Handoff Datetime: 2016-06-09 18:32:44
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/99ea424de8d90732ce528e83803c16834d9b4948/InTuneDocs/EndUser/you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
-* Current Handback File: [you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.c014b43bed4849331750f1bfb49b3b4590dc7dce.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/d66b0d3db43e651ccbea794d747ecf1b6a4e06ec/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.c014b43bed4849331750f1bfb49b3b4590dc7dce.de-de.xlf)
-* Current Handback Datetime: 2016-06-15 12:03:52
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
