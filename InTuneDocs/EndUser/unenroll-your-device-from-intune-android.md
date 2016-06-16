@@ -18,7 +18,7 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Aufheben der Registrierung Ihres Geräts in Intune
 
-Nachdem Sie die Registrierung Ihres Android-Geräts bei Intune aufgehoben haben, können Sie nicht mehr auf Unternehmensressourcen zugreifen.  Weitere Informationen dazu, was bei Aufheben der Registrierung bei Intune geschieht, finden Sie unter [Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?](what-happens-if-you-unenroll-your-device-from-intune-android.md) (Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?)..
+Nachdem Sie die Registrierung Ihres Android-Geräts bei Intune aufgehoben haben, können Sie nicht mehr auf Unternehmensressourcen zugreifen.  Weitere Informationen dazu, was bei Aufheben der Registrierung bei Intune geschieht, finden Sie unter [Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
 Befolgen Sie zum Aufheben der Registrierung Ihres Geräts bei Intune und Deinstallieren der Unternehmensportal-App die folgenden Anweisungen, oder sehen Sie sich dieses [Video](http://aka.ms/gyq2du) an:
 
@@ -46,10 +46,11 @@ Befolgen Sie zum Aufheben der Registrierung Ihres Geräts bei Intune und Deinsta
 
     ![android-company-portal-unenroll-warning](./media/andr-3-warning-about-remove.png)
 
+Wenn Sie Hilfe benötigen und die Kontaktinformationen für Ihren IT-Administrator nicht finden können, suchen Sie danach auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 ### Weitere Informationen:
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 
