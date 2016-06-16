@@ -18,7 +18,7 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -100,6 +100,6 @@ Der Begriff **Richtlinienverwaltete Apps** wird verwendet, um auf Apps zu verwei
 - **Bildschirmaufnahmen und Android Assistant blockieren (Android 6 Marshmallow oder höher):** Wählen Sie **Ja** aus, um die Bildschirmaufnahme- und **Android Assistant**-Funktionen des Geräts zu blockieren, wenn diese App verwendet wird.
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

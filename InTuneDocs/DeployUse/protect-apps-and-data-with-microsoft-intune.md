@@ -18,7 +18,7 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -56,6 +56,6 @@ Sie können auch [Ihre eigenen, individuellen branchenspezifischen Apps](decide-
 Wenn ein Gerät verloren geht oder gestohlen wird oder der Benutzer nicht mehr für Ihr Unternehmen arbeitet, können Sie [Unternehmensdaten selektiv löschen](wipe-managed-company-app-data-with-microsoft-intune.md) und nur persönliche Daten auf dem Gerät belassen.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
