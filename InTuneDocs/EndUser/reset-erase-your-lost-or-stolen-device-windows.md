@@ -18,7 +18,7 @@ ms.assetid: cefb485f-f555-4da9-b4bf-d569cc4d5581
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Geräts
 
-Wenn Ihr registriertes Windows-Gerät verloren geht oder gestohlen wird, können Sie es auf die Werkseinstellungen zurücksetzen. Diese Schritte erläutern, wie Sie Ihr Gerät mithilfe der Unternehmensportal-App zurücksetzen. Sie können Ihr [Gerät auch über die Unternehmensportal-Website zurücksetzen](reset-your-device-cpwebsite.md)..
+Wenn Ihr registriertes Windows-Gerät verloren geht oder gestohlen wird, können Sie es auf die Werkseinstellungen zurücksetzen. Diese Schritte erläutern, wie Sie Ihr Gerät mithilfe der Unternehmensportal-App zurücksetzen. Sie können Ihr [Gerät auch über die Unternehmensportal-Website zurücksetzen](reset-your-device-cpwebsite.md).
 
 
 > [!WARNING]
@@ -38,14 +38,14 @@ Wenn Ihr registriertes Windows-Gerät verloren geht oder gestohlen wird, können
 
 2.  Wählen Sie unter **Meine Geräte** das verlorene oder gestohlene Gerät aus.
 
-3.  Tippen Sie auf **Zurücksetzen** &gt; **Zurücksetzen**..
+3.  Tippen Sie auf **Zurücksetzen** &gt; **Zurücksetzen**.
 
 > [!NOTE]
-> Wenn Sie Ihr verlorenes oder gestohlenes Gerät nicht zurücksetzen können, bitten Sie Ihre IT-Abteilung, es zurückzusetzen.
+> Wenn Sie Ihr verlorenes oder gestohlenes Gerät nicht zurücksetzen können, bitten Sie Ihre IT-Abteilung, es zurückzusetzen. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 ### Weitere Informationen:
 [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

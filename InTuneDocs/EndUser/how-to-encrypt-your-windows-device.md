@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,28 +26,19 @@ ms.suite: ems
 ---
 
 # Vorgehensweise zum Verschlüsseln Ihres Windows-Geräts
-Um sich wieder mit Ihrer Arbeit zu verbinden, müssen Sie Ihr Gerät wie folgt verschlüsseln:
 
-## Option 1: Hinzufügen eines Microsoft-Kontos
+Zum Schutz Ihrer Firmen- oder Schuldaten schreibt Ihr IT-Administrator Ihnen möglicherweise vor, Ihr Windows-Geräts zu verschlüsseln. Wenn Sie ein Windows Phone verwenden und dieses registriert haben, wird Ihr Gerät automatisch verschlüsselt, wenn eine Verschlüsselung erforderlich ist.
 
-1.  Suchen und starten Sie die App **PC-Einstellungen** .
+Folgen Sie bei einem Desktopgerät den Anweisungen zum Verschlüsseln. 
 
-2.  Klicken Sie auf **Konten** &gt; **Ihr Konto** und dann auf **Mit einem Microsoft-Konto verbinden**..
+1.  Suchen und starten Sie die App **BitLocker verwalten**.
 
-3.  Folgen Sie den angezeigten Anweisungen.
+2.  Klicken Sie auf **BitLocker aktivieren**, und folgen Sie den Anweisungen, um alle Ihre Laufwerke zu verschlüsseln.
 
-4.  Stellen Sie sicher, dass Ihr Gerät bei Intune registriert wird, indem Sie die Anweisungen unter [Registrieren Ihres Geräts für den Einsatz bei der Arbeit](http://go.microsoft.com/fwlink/?LinkId=519071) befolgen..
-
-## Option 2: Aktivieren von BitLocker:
-
-1.  Suchen und starten Sie die App **BitLocker verwalten** .
-
-2.  Klicken Sie auf **BitLocker aktivieren**, folgen Sie den Anweisungen, um die Laufwerke zu verschlüsseln.
-
-3.  Stellen Sie sicher, dass Ihr Gerät bei Intune registriert wird, indem Sie die Anweisungen unter [Registrieren Ihres Geräts für den Einsatz bei der Arbeit](http://go.microsoft.com/fwlink/?LinkId=519071) befolgen..
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

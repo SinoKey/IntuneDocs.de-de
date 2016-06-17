@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: d7c871b8-e5d8-4912-b87f-7e6bc59897be
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Senden von Registrierungsfehlern an Ihren IT-Administrator
 
-Wenn Sie beim Versuch, Ihr Android-Gerät bei Intune zu registrieren, eine Fehlermeldung erhalten, können Sie versuchen, die Registrierung zu wiederholen, indem Sie auf **Wiederholen** tippen. Alternativ dazu können Sie die Fehlerinformationen in einer E-Mail an Ihren IT-Administrator senden, indem Sie auf **Informationen senden** tippen.. 
+Wenn Sie beim Versuch, Ihr Android-Gerät bei Intune zu registrieren, eine Fehlermeldung erhalten, können Sie versuchen, die Registrierung zu wiederholen, indem Sie auf **Wiederholen** tippen. Alternativ dazu können Sie die Fehlerinformationen in einer E-Mail an Ihren IT-Administrator senden, indem Sie auf **Informationen senden** tippen. 
 
 Es wird automatisch eine an den IT-Administrator adressierte E-Mail erstellt, die die Protokolle enthält, die von Ihrem IT-Administrator für die Problembehandlung Ihres Geräts benötigt werden.
 
@@ -40,6 +40,6 @@ Es gibt verschiedene Möglichkeiten, die Datenprotokolle Ihres Geräts an den IT
 ### Weitere Informationen:
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

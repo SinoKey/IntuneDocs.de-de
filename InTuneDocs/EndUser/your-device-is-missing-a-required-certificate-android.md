@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,7 +33,7 @@ Wenn Ihr Android-Gerät nicht bei Intune registriert ist und ein Zertifikat fehl
 
 So wird dieses Problem behoben und das erforderliche Zertifikat bezogen:
 
-1.  Navigieren Sie in einem Browser zu dieser [Digicert-Zertifikatseite](https://www.digicert.com/digicert-root-certificates.htm)..
+1.  Navigieren Sie in einem Browser zu dieser [Digicert-Zertifikatseite](https://www.digicert.com/digicert-root-certificates.htm).
 
 2.  Suchen Sie das Zertifikat „Baltimore CyberTrust Root“ (https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt), und laden Sie es herunter.
 
@@ -41,7 +41,7 @@ So wird dieses Problem behoben und das erforderliche Zertifikat bezogen:
 
 4.  Übernehmen Sie im Dialogfeld **Zertifikat benennen** den Standardzertifikatnamen.
 
-5. Stellen Sie sicher, dass **Verwendung von Anmeldeinformationen** auf **Für VPN und Apps** festgelegt ist, und tippen Sie dann auf **OK**..
+5. Stellen Sie sicher, dass **Verwendung von Anmeldeinformationen** auf **Für VPN und Apps** festgelegt ist, und tippen Sie dann auf **OK**.
 
     ![andr-cert-install-add-cert-name](./media/andr-cert_install-2-add_cert_name.png)
 
@@ -49,6 +49,8 @@ So wird dieses Problem behoben und das erforderliche Zertifikat bezogen:
 
 7. Öffnen Sie die Unternehmensportal-App erneut. Sie sollten sich jetzt bei der Unternehmensportal-App anmelden können. Wenn Sie Hilfe benötigen, wenden Sie sich an Ihren IT-Administrator.
 
-<!--HONumber=May16_HO1-->
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+
+<!--HONumber=Jun16_HO2-->
 
 

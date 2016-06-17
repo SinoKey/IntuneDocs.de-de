@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,9 +34,11 @@ Wenn Sie versuchen, Ihr iOS- oder Mac OS X-Gerät bei Intune registrieren, und S
 2. Tippen Sie auf **Weiter**.
 3. Geben Sie die letzten vier Zeichen der Seriennummer des Geräts ein, damit Intune einfacher prüfen kann, ob Ihr Gerät registriert ist. Informationen zum Bestimmen der Seriennummer finden Sie unter [Wie finde ich die Seriennummer auf meinem Gerät?](how-do-i-find-the-serial-number-on-my-device-ios.md).
 
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+
 ### Weitere Informationen:
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 
