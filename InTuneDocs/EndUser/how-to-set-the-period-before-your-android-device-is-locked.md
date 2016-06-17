@@ -18,7 +18,7 @@ ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,8 +36,8 @@ Um wieder eine Verbindung mit Ihrem Geschäftskonto herzustellen, müssen Sie da
 
 3.  Stellen Sie sicher, dass Ihr Gerät bei Intune registriert wird, indem Sie die Anweisungen unter [Registrieren Ihres Geräts für den Einsatz bei der Arbeit](http://go.microsoft.com/fwlink/?LinkId=519071) befolgen.
 
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

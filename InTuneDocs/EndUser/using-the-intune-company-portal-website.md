@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,7 +42,7 @@ Folgende Aufgaben können Sie auf der Unternehmensportal-Website ausführen:
 
 -   [Manuelles Synchronisieren Ihres Geräts, um langsame App-Installationen zu beschleunigen](sync-your-device-manually-cpwebsite.md)
 
--   Suchen der Kontaktinformationen Ihres IT-Administrators, wenn Ihr IT-Administrator dies konfiguriert hat
+-   Suchen der Kontaktinformationen Ihres IT-Administrators, wenn Ihr IT-Administrator dies konfiguriert hat. 
 
 -   Anzeigen von Einzelheiten zu Ihrem Gerät, einschließlich, ob es die Richtlinien Ihres Unternehmens bzw. Ihrer Bildungseinrichtung erfüllt
 
@@ -55,6 +55,6 @@ Die meisten Aufgaben, die Sie mithilfe der **Unternehmensportal-App** ausführen
 - [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

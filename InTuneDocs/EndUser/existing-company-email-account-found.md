@@ -18,7 +18,7 @@ ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,16 +30,16 @@ Sie haben bereits ein geschäftliches e-Mail-Konto. Um weiterhin Ihre Firma e-Ma
 
 1.  In **Einstellungen** auf Ihrem Gerät, entfernen Sie die Verbindung, die Sie bereits haben, Ihr Unternehmens-e-Mail eingerichtet.
 
-    Tippen Sie beispielsweise auf einem iOS-Gerät auf **Einstellungen** &gt; **E-Mail, Kontakte, Kalender**. Wählen Sie Ihr geschäftliches E-Mail-Konto aus, und klicken Sie dann auf **Löschen**.
+    Tippen Sie z.B. auf einem iOS-Gerät auf **Einstellungen** &gt; **E-Mails, Kontakte, Kalender**. Wählen Sie Ihr geschäftliches e-Mail-Konto, und klicken Sie dann auf **Löschen**.
 
-2.  Öffnen Sie die Unternehmens-Portal-App auf dem Gerät, und tippen Sie auf **Kompatibilität überprüfen**.
+2.  Öffnen Sie die Unternehmensportal-app auf dem Gerät und Tap **Kompatibilität überprüfen**.
 
 3.  Warten Sie kurz für neue e-Mail-Einstellungen automatisch auf das Gerät angewendet werden.
 
-Wenn neue e-Mail-Einstellungen nicht nach einer Weile angezeigt werden, wenden Sie sich an Ihrem IT-Administrator.
+Wenn neue E-Mail-Einstellungen nicht nach einer Weile angezeigt werden, wenden Sie sich an Ihrem IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

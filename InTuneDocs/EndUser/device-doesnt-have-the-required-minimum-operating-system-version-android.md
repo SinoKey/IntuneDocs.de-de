@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 3ef43ff5-8d6b-4be1-baa4-6fb6a7f3c312
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,12 +28,13 @@ ms.suite: ems
 
 # Das Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems
 
-Ihr Android-Gerät erfüllt nicht die Anforderung Ihrer IT-Abteilung an die Mindestversion des Betriebssystems. Überprüfen Sie vor dem Aktualisieren Ihres Geräts die aktuelle Betriebssystemversion durch Tippen auf **Einstellungen** &gt; **Info zu Gerät**. Prüfen Sie dann durch Tippen auf **Einstellungen**, ob ein Update für Ihr Gerät verfügbar ist, und nutzen Sie anschließend die Updateoption.
+Ihr Android-Gerät erfüllt nicht die Anforderung Ihrer IT-Abteilung an die Mindestversion des Betriebssystems. Überprüfen Sie vor dem Aktualisieren Ihres Geräts die aktuelle Betriebssystemversion durch Tippen auf **Einstellungen**&gt;**Info zu Gerät**. Prüfen Sie dann durch Tippen auf **Einstellungen**, ob ein Update für Ihr Gerät verfügbar ist, und nutzen Sie anschließend die Updateoption.
 
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 ### Weitere Informationen:
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

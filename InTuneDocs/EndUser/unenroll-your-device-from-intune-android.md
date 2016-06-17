@@ -46,11 +46,11 @@ Befolgen Sie zum Aufheben der Registrierung Ihres Geräts bei Intune und Deinsta
 
     ![android-company-portal-unenroll-warning](./media/andr-3-warning-about-remove.png)
 
-Wenn Sie Hilfe benötigen und die Kontaktinformationen für Ihren IT-Administrator nicht finden können, suchen Sie danach auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 ### Weitere Informationen:
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

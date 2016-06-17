@@ -18,7 +18,7 @@ ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,16 +36,18 @@ So setzen Sie Ihr Gerät zurück:
 
 1.  Öffnen Sie die [Unternehmensportalwebsite](http://portal.manage.microsoft.com), und tippen Sie auf das Gerät, das Sie zurücksetzen möchten.
 
-2.  Tippen Sie auf **Zurücksetzen**..
+2.  Tippen Sie auf **Zurücksetzen**.
 
     ![reset-device](./media//iwp-1-tap-reset-passcode.png)
 
 Ihr Gerät wurde zurückgesetzt.
 
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+
 ### Weitere Informationen:
 [Verwenden der Intune-Unternehmensportal-Website](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

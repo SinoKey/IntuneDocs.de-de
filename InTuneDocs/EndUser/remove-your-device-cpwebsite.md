@@ -18,7 +18,7 @@ ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,17 +34,19 @@ Wenn Sie Ihr Gerät entfernen, wird es nicht mehr im Unternehmensportal aufgefü
 
 So entfernen Sie Ihr Gerät:
 
-1.  Öffnen Sie die [Unternehmensportalwebsite](http://portal.manage.microsoft.com), und tippen Sie auf das Gerät, das Sie entfernen möchten.
+1.  Öffnen Sie die [Unternehmensportalwebsite](http://portal.manage.microsoft.com), und tippen Sie auf das Gerät, das Sie zurücksetzen möchten.
 
-2.  Tippen Sie auf **Entfernen**..
+2.  Tippen Sie auf **Entfernen**.
 
     ![remove-device](./media/iwp-1-tap-reset-passcode.png)
 
 Ihr Gerät wurde entfernt.
 
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+
 ### Weitere Informationen:
 [Verwenden der Intune-Unternehmensportal-Website](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

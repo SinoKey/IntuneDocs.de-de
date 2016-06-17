@@ -18,7 +18,7 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: esmich
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,9 +46,11 @@ Wenn Sie Probleme beim Einrichten einer Kennung haben, die alle Kennungsanforder
 2. Tippen Sie auf **Kennung ändern**, und geben Sie Ihre alte Kennung ein.
 3. Geben Sie eine neue Kennung ein, die die Anforderungen Ihres IT-Administrators erfüllt, und geben Sie sie zur Bestätigung nochmals ein.
 
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+
 ### Weitere Informationen:
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 
