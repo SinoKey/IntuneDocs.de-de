@@ -2132,14 +2132,14 @@
 
 ##### <a name='c31ee9bb3aafa6b54068adda5b14f2c1cacacd3165'></a> Source: [InTuneDocs\DeployUse\mac-os-x-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/DeployUse/mac-os-x-policy-settings-in-microsoft-intune.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\mac-os-x-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/4d8574b49767ed16312d5db42bb5576c0aeebe5e/InTuneDocs/DeployUse/mac-os-x-policy-settings-in-microsoft-intune.md)
+* Target File: [InTuneDocs\DeployUse\mac-os-x-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/514e466a727d1a1ad291e0d81bb864fe44302503/InTuneDocs/DeployUse/mac-os-x-policy-settings-in-microsoft-intune.md)
 * Handoff File: [mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/d0030186b028f24440de21bea425b0af7756757d/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.de-de.xlf)
 * Handoff Datetime: 2016-05-13 16:03:41
 * Handoff Reason: Include
 * Archive File: [mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/1bd1fca2cde669d0ebee6ff5e0c6cc126c019f67/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/archive/mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.de-de.xlf)
 * Archive Datetime: 2016-06-02 02:11:51
-* Handback File: [mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/832c2bc14f0ce10937a93b202dd3d4ee8ffdf140/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.de-de.xlf)
-* Handback Datetime: 2016-06-14 22:46:16
+* Handback File: [mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/b24a9cde49ea256f277902d7febea840133b0b85/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.de-de.xlf)
+* Handback Datetime: 2016-06-22 17:46:20
 * [Back to Top](#report-top)
 
 ##### <a name='bd7ae595f3edd0d0a21a9941570e567b5b82b56c66'></a> Source: [InTuneDocs\DeployUse\manage-alerts-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/cc64e51499908d08823429871cda91dfb0078b1e/InTuneDocs/DeployUse/manage-alerts-in-microsoft-intune.md)
