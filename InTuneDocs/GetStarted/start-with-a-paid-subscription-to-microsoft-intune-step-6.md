@@ -53,7 +53,7 @@ Mithilfe der folgenden Schritte können Sie eine Konfigurationsrichtlinie für m
 
 4.  Erweitern Sie in der Richtlinienliste die Plattform, für die Sie eine Richtlinie erstellen möchten, und klicken Sie auf **Allgemeine Konfiguration** > **Richtlinie mit den empfohlenen Einstellungen erstellen und bereitstellen** > **Richtlinie erstellen**.
 
-5.  Wählen Sie bei der Aufforderung **Wählen Sie die Gruppen aus, denen die Richtlinie bereitgestellt werden soll** in der Liste der verfügbaren Gruppen den Eintrag **Intune-Benutzer** aus (die Gruppe, die im vorherigen Schritt erstellt wurde), und klicken Sie auf **Hinzufügen** > **OK**.
+5.  Wählen Sie bei der Aufforderung **Wählen Sie die Gruppen aus, denen die Richtlinie bereitgestellt werden soll** in der Liste der verfügbaren Gruppen eine Gruppe aus, und wählen Sie **Hinzufügen** > **OK**.
 
 Die Richtlinie wird in der Liste der Konfigurationsrichtlinien angezeigt und wurde für die Gruppe **Intune-Benutzer** bereitgestellt. Doppelklicken Sie auf die Richtlinie, um die Einstellungen anzuzeigen.
 
@@ -114,6 +114,6 @@ Gratulation! Sie haben Schritt 6 der Kurzanleitung *Erste Schritte mit Intune* 
 >[&larr; **Organisieren von Benutzern und Geräten**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)[**Anpassen des Unternehmensportals** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO3-->
 
 

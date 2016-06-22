@@ -79,17 +79,16 @@ Hier finden Sie eine Liste mit Schritten zum Einstieg in die **Enterprise-Rollou
 
 -   Identifizieren Sie Gruppen, für die möglicherweise zielgerichtete Ansprache und Schulung erforderlich sind.
 
--   Passen Sie die E-Mail-Kommunikation an, aktualisieren Sie die Intranetwebsite
-    Bestimmen Sie den dauerhaften Besitzer der Aktualisierung von Kommunikation und Ressourcen.
+-   Passen Sie die E-Mail-Kommunikation an, aktualisieren Sie die Intranetwebsite. Bestimmen Sie den dauerhaften Besitzer der Aktualisierung von Kommunikation und Ressourcen.
 
 -   Umreißen Sie die einzusetzenden Schulungsmethoden.
 
 -   Erstellen Sie ein Prüfliste für den Einstieg und einen Leitfaden zur Registrierung für Benutzer.
     Verwenden Sie diese Benutzerleitfäden als Ausgangspunkt:
-    -  [Registrieren Ihres Windows-Geräts bei Intune](/intune/enduser/enroll-your-device-in-intune-windows]
-    -  [Registrieren Ihres Android-Geräts bei Intune](/intune/enduser/enroll-your-device-in-intune-android]
-    -  [Registrieren Ihres iOS-Geräts bei Intune](/intune/enduser/enroll-your-device-in-intune-ios]
-    -  [Registrieren Ihres Mac OS X-Geräts bei Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x]
+    -  [Registrieren Ihres Windows-Geräts bei Intune](/intune/enduser/enroll-your-device-in-intune-windows)
+    -  [Registrieren Ihres Android-Geräts bei Intune](/intune/enduser/enroll-your-device-in-intune-android)
+    -  [Registrieren Ihres iOS-Geräts bei Intune](/intune/enduser/enroll-your-device-in-intune-ios)
+    -  [Registrieren Ihres Mac OS X-Geräts bei Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x)
 
 -   Definieren Sie einen Prozess zum Aktualisieren von Schulungsunterlagen bei Bedarf.
 
@@ -114,6 +113,6 @@ Hier sind einige Herausforderungen aufgeführt, mit denen Sie sich möglicherwei
 [Betrieb und Wartung (Operations & Maintenance)](operations-and-maintenance.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

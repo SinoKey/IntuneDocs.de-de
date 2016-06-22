@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,8 +31,8 @@ Bevor Sie Intune einrichten, informieren Sie sich über die Anforderungen hier u
 
 |Intune-Feature |Unterstützte Browser|
 |---------|---------|
-|Intune-Verwaltungskonsole     |  Internet Explorer 10 oder höher<br /><br />Google Chrome (Versionen vor Version 42)<br /><br />Mozilla Firefox <br /><br />**Hinweis:** Edge wird für die Verwaltungskonsole derzeit nicht unterstützt.                      
-|Office 365-Verwaltungsportal     |Alle Browser  |
+|Intune-Verwaltungskonsole     |  Internet Explorer 10 oder höher<br /><br />Google Chrome (Versionen vor Version 42)<br /><br />Mozilla Firefox <br /><br />**Hinweis:** Microsoft Edge und mobile Browser werden für die Verwaltungskonsole nicht unterstützt.                      
+|Office 365-Verwaltungsportal     |Alle Browser, einschließlich mobiler und verwalteter Browser  |
 |Unternehmensportal-Website     |**Auf mobilen Geräten:** Verwenden Sie für jede unterstützte Plattform den Standardwebbrowser.   <br /><br />**Auf Windows-PCs:** Internet Explorer 10 oder höher oder Microsoft Edge<br /><br />**Unter Mac OS X 10.9 oder höher:** Apple Safari    |
 
 
@@ -42,6 +42,6 @@ Bevor Sie Intune einrichten, informieren Sie sich über die Anforderungen hier u
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO3-->
 
 
