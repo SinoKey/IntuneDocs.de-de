@@ -67,7 +67,7 @@ Aktivieren Sie in der Liste der **kompatiblen&amp; und nicht kompatiblen Apps f�
 |**Anwendungen importieren**|Importiert eine Liste von Apps, die Sie in einer CSV-Datei angegeben haben. Verwenden Sie in der Datei das Format App-Name, Herausgeber, Paket-ID der App.|
 |**Bearbeiten**|Ermöglicht Ihnen das Bearbeiten der Werte für Name, Herausgeber und Paket-ID der ausgewählten App.|
 |**Löschen**|Löscht die ausgewählte App aus der Liste.|
-> [!TIP] Weitere Informationen zu Intune-Berichten finden Sie unter [Understand Microsoft Intune operations by using reports](understand-microsoft-intune-operations-by-using-reports.md) (Einblicke in Microsoft Intune-Vorgänge durch Berichte).
+> [!TIP] Weitere Informationen zu Intune-Berichten finden Sie unter [Einblicke in Microsoft Intune-Vorgänge durch Berichte](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
 > Wenn sich ein Mac OS X-Gerät im Energiesparmodus befindet, können keine Richtlinien oder Profile bereitgestellt oder inventarisiert werden. Infolgedessen zeigt die Intune-Konsole möglicherweise vorübergehend den Status **Richtlinieneinstellungen mit Fehlern** an, bis das Gerät erneut aktiviert und der Energiesparmodus beendet wird.
