@@ -18,7 +18,7 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,8 +41,7 @@ MAM-Richtlinien unterstützen Apps auf folgenden Geräten:
 
 -   **Geräte, die mit einer Drittanbieter-Verwaltungslösung für mobile Geräte verwaltet und registriert werden**.   Die Geräte in dieser Kategorie sind in der Regel unternehmenseigene Geräte.
 
-  > [!NOTE]
-  > Verwaltungsrichtlinien für mobile Apps sollten nicht in Verbindung mit Verwaltungslösungen für mobile Geräte von Drittanbietern oder sicheren Containerlösungen verwendet werden.
+  > [!NOTE] Verwaltungsrichtlinien für mobile Apps sollten nicht in Verbindung mit Verwaltungslösungen für mobile Geräte von Drittanbietern oder sicheren Containerlösungen verwendet werden.
 
 -   **Geräte, die nicht verwaltet werden**.  Die Geräte in dieser Kategorie sind in der Regel mitarbeitereigene Geräte, die nicht in Intune verwaltet oder registriert werden, oder andere MDM-Lösungen.
 
@@ -64,6 +63,7 @@ Es gibt weitere Vorteile bei der Verwendung einer MDM mit MAM-Richtlinien, und U
 
 -   Android 4 oder höher
 
+Windows-Geräte werden momentan nicht unterstützt.
 ##  Wie App-Daten mit MAM-Richtlinien geschützt werden
 
 ####  Apps ohne MAM-Richtlinien:
@@ -77,8 +77,7 @@ Wenn Apps ohne Einschränkungen verwendet werden, können Unternehmensdaten und 
 ![Die Abbildung zeigt, wie Unternehmensdaten durch die Anwendung von MAM-Richtlinien geschützt werden. ](../media/Apps_with_mobile_app_policies.png)
 
 Mit MAM-Richtlinien können Sie verhindern, dass Unternehmensdaten im lokalen Speicher des Geräts gespeichert werden. Außerdem können Sie das Verschieben von Daten in andere Apps einschränken, die nicht durch MAM-Richtlinien geschützt sind. MAM-Richtlinieneinstellungen umfassen Folgendes:
-- Richtlinien zur Datenverschiebung wie
- **„Speichern unter“ verhindern**, **Ausschneiden, Kopieren und Einfügen einschränken**.
+- Richtlinien zur Datenverschiebung wie **„Speichern unter“ verhindern**, **Ausschneiden, Kopieren und Einfügen einschränken**.
 - Einstellungen von Zugriffsrichtlinien wie **Einfache PIN für den Zugriff erforderlich**, **Ausführen verwalteter Apps auf Geräten mit Jailbreak oder Rootzugriff blockieren**.
 
 ### Schutz von Daten mit MAM-Richtlinien auf Geräten, die durch eine MDM-Lösung verwaltet werden:
@@ -138,6 +137,6 @@ Alle mobilen Office-Apps unterstützen mehrere Identitäten.
 [Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

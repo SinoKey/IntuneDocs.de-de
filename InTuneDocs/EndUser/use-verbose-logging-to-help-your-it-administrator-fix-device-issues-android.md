@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,11 @@ Wenn Ihr Android-Gerät bei Intune registriert ist, können Sie die Einstellung 
 
 Um die **Ausführliche Protokollierung** zu aktivieren oder zu deaktivieren, melden Sie sich mit Ihren Geschäfts-, Schul- oder Uni-Anmeldeinformationen bei der Unternehmensportal-App an, tippen Sie auf **Einstellungen**, und tippen Sie neben der Einstellung **Ausführliche Protokollierung** auf die Ein/Aus-Schaltfläche.
 
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+
 ### Weitere Informationen:
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

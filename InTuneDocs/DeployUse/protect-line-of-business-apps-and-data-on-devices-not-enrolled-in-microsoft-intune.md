@@ -1,25 +1,25 @@
 ---
 # required metadata
 
-title: [Schützen von branchenspezifischen Apps und Daten auf nicht registrierten Geräten | Microsoft Intune]
+title: Schützen von branchenspezifischen Apps und Daten auf nicht registrierten Geräten | Microsoft Intune
 description:
 keywords:
-author: [karthikaraman]
-manager: [jeffgilb]
+author: karthikaraman
+manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
 ms.service:
 ms.technology:
-ms.assetid: [00219467-a62e-43b6-954b-3084f54c45ba]
+ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [joglocke]
-#ms.suite: ems
+ms.reviewer: joglocke
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
@@ -52,6 +52,11 @@ Um Ihre branchenspezifische App zu MAM-Richtlinien zuzuordnen, müssen Sie Ihrem
 
 ## Schritt 3: Anwenden von MAM-Richtlinien
 Sobald die App-Metadaten in den Dienst hochgeladen wurden, zeigt die App die Liste mit Apps an.  Sie können jetzt [eine neue Richtlinie erstellen oder eine vorhandene Richtlinie verwenden](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) und sie auf die branchenspezifische App anwenden, die Sie in Schritt 2 hinzugefügt haben.
+
+>[!IMPORTANT]
+>Die MAM-Richtlinie muss für die Benutzer erstellt werden, die die umschlossene App verwenden werden.  Benutzer, für die diese Richtlinie nicht bereitgestellt wird, können die App nicht verwenden.
+
+
   ![Screenshot des Blatts mit der Zielliste der Apps mit der angezeigten neuen branchenspezifischen App](../media/mam-azure-portal-lob-on-targeted-app-list.png)
 ## Schritt 4: Verteilen der App
 Sie können Apps für Ihre Endbenutzer wie folgt bereitstellen:
@@ -75,6 +80,6 @@ Sie können eine branchenspezifische App aus der App-Liste entfernen.  Dadurch w
   Dies entfernt Apps aus der Liste der branchenspezifischen Apps und der Zielliste von Apps in der MAM-Richtlinie.
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

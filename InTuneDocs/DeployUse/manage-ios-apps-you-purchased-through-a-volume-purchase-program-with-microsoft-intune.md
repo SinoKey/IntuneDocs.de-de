@@ -18,7 +18,7 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,28 +46,29 @@ Bevor Sie beginnen, müssen Sie ein VPP-Token von Apple abrufen und es in Ihr In
 * Standardmäßig wird Intune zweimal täglich mit dem Apple VPP-Dienst synchronisiert. Sie können jedoch jederzeit eine manuelle Synchronisierung einleiten.
 * Nachdem Sie den VPP-Token in Intune importiert haben, importieren Sie denselben Token in keine andere Geräteverwaltungslösung. Andernfalls kann dies zu einem Verlust von Lizenzzuweisung und Benutzerdatensätzen führen.
 * Bevor Sie iOS VPP mit Intune verwenden, entfernen Sie alle vorhandenen, mit anderen MDM-Anbietern erstellten VPP-Benutzerkonten. Aus Sicherheitsgründen werden diese Benutzerkonten in Intune nicht synchronisiert. Intune synchronisiert nur Daten aus dem Apple VPP-Dienst, der von Intune erstellt wurde. 
+* Sie können keine iOS-VPP-Apps für Geräte bereitstellen, die mithilfe des Geräteregistrierungsprotokolls (Device Enrollment Protocol, DEP) registriert wurden.
 
 ## So können Sie einen Apple VPP-Token abrufen und hochladen
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Verwaltung** &gt; **iOS und Mac OS X** &gt; **Volume Purchase Program**.
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) **Verwaltung** &gt; **iOS und Mac OS X** &gt; **Volume Purchase Program**.
 
-2.  Klicken Sie auf den **Apple VPP-Konto**-Link, und melden Sie sich für das Programm für Volumenlizenzen für Unternehmen (Volume Purchase Program, VPP) an, falls noch nicht erfolgt. Sobald Sie registriert sind, laden Sie das Apple VPP-Token für Ihr Konto herunter.
+2.  Wählen Sie den Link **Apple VPP-Konto**, und melden Sie sich für das Programm für Volumenlizenzen für Unternehmen (Volume Purchase Program, VPP) an, falls noch nicht erfolgt. Sobald Sie registriert sind, laden Sie das Apple VPP-Token für Ihr Konto herunter.
 
-3.  Klicken Sie auf der Seite **Apple Volume Purchase Program (VPP) verwalten** in der Intune-Konsole auf **VPP-Token hochladen**.
+3.  Wählen Sie auf der Seite **Apple Volume Purchase Program (VPP) verwalten** in der Intune-Konsole die Option **VPP-Token hochladen**.
 
-4.  Geben oder fügen Sie im Dialogfeld **VPP-Token hochladen** den VPP-Token-Namen und Ihre Apple-ID ein, und klicken Sie dann auf **Hochladen**.
+4.  Geben oder fügen Sie im Dialogfeld **VPP-Token hochladen** den VPP-Token-Namen und Ihre Apple-ID ein, und wählen Sie dann **Hochladen**.
 
-5.  Klicken Sie im Dialogfeld mit der Warnung auf das Kontrollkästchen, um anzugeben, dass Sie wissen, dass Sie später nicht zu einem anderen VPP-Konto wechseln können, und klicken Sie dann auf **Ja**.
+5.  Aktivieren Sie im Dialogfeld mit der Warnung das Kontrollkästchen, um anzugeben, dass Sie wissen, dass Sie später nicht zu einem anderen VPP-Konto wechseln können, und wählen Sie dann **Ja**.
 
 Auf der Seite **Volume Purchase Program** werden nun Informationen zum Apple VPP-Token angezeigt, einschließlich der letzten Aktualisierung, des Ablaufdatums und der letzten Synchronisierung mit Intune.
 
-Sie können die von Apple gespeicherten Daten jederzeit mit Intune synchronisieren, indem Sie auf **Jetzt synchronisieren** klicken.
+Sie können die von Apple gespeicherten Daten jederzeit mit Intune synchronisieren, indem Sie **Jetzt synchronisieren** wählen.
 
 ## So stellen Sie per Volumenlizenz erworbene Apps bereit
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Apps** &gt; **Verwaltete Software** &gt; **Per Volumenlizenz erworbene Apps**. Diese Liste zeigt alle Apps, die mit dem Apple VPP-Dienst synchronisiert wurden.
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Apps** &gt; **Verwaltete Software** &gt; **Per Volumenlizenz erworbene Apps**. Diese Liste zeigt alle Apps, die mit dem Apple VPP-Dienst synchronisiert wurden.
 
-2.  Wählen Sie die bereitzustellende App aus, und klicken Sie anschließend auf **Bereitstellung verwalten**. Befolgen Sie anschließend die Anweisungen im Thema [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) zum Hochladen, Erstellen und Bereitstellen der App.
+2.  Wählen Sie die bereitzustellende App aus, und wählen Sie dann **Bereitstellung verwalten**. Befolgen Sie anschließend die Anweisungen zum Hochladen, Erstellen und Bereitstellen der App im Thema [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
 Wenn Sie die Anwendung als **erforderliche** Installation bereitstellen, wird eine Lizenz von jedem Benutzer verwendet, der die App installiert.
 
@@ -84,11 +85,11 @@ Sie können überwachen, welche VPP-Apps bereitgestellt wurden und wie viele Liz
 
 > [!TIP] Sie können auch **Filter** für Apps verwenden, um den Status der einzelnen App-Installationen zu überprüfen.
 
-### Siehe auch
+### Weitere Informationen:
 [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

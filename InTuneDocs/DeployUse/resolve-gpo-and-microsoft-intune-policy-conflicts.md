@@ -18,7 +18,7 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,30 +26,30 @@ ms.suite: ems
 ---
 
 # Lösen von Konflikten mit Gruppenrichtlinienobjekten und Microsoft Intune-Richtlinien
-In Intune können Sie Richtlinien zum Verwalten von Einstellungen auf den von Ihnen verwalteten Computern verwenden. Beispielsweise könnten Sie eine Richtlinie verwenden, um Einstellungen für die Windows-Firewall auf Computern zu steuern. Viele der Intune-Einstellungen sind mit Einstellungen vergleichbar, die Sie mit Windows-Gruppenrichtlinien konfigurieren können. Es ist allerdings manchmal möglich, dass die beiden Methoden miteinander in Konflikt stehen.
+In Intune können Sie Richtlinien zum Verwalten von Einstellungen auf den von Ihnen verwalteten Windows-PCs verwenden. Beispielsweise könnten Sie eine Richtlinie verwenden, um Einstellungen für die Windows-Firewall auf PCs zu steuern. Viele der Intune-Einstellungen sind mit Einstellungen vergleichbar, die Sie mit Windows-Gruppenrichtlinien konfigurieren können. Es ist allerdings manchmal möglich, dass die beiden Methoden miteinander in Konflikt stehen.
 
-Wenn Konflikt auftreten, hat die Gruppenrichtlinie auf Domänenebene Vorrang vor der Intune-Richtlinie, sofern die Anmeldung des Computers bei der Domäne möglich ist. In diesem Fall wird die Intune-Richtlinie auf den Clientcomputer angewendet.
+Wenn Konflikte auftreten, hat die Gruppenrichtlinie auf Domänenebene Vorrang vor der Intune-Richtlinie, sofern die Anmeldung des PCs bei der Domäne möglich ist. In diesem Fall wird die Intune-Richtlinie auf den Client-PC angewendet.
 
 ## Vorgehensweise bei Verwendung von Gruppenrichtlinien
 Stellen Sie sicher, dass die Richtlinien, die Sie anwenden, nicht von Gruppenrichtlinien verwaltet werden. Zum Vermeiden von Konflikten können Sie eine oder mehrere der folgenden Methoden verwenden:
 
--   Verschieben Sie Ihre Computer in eine Active Directory-Organisationseinheit (OU), auf die keine Gruppenrichtlinien angewendet werden, bevor Sie den Intune-Client installieren. Sie können bei OUs mit Computern, die in Intune registriert sind und auf die Sie die Gruppenrichtlinieneinstellungen nicht anwenden möchten, auch die Vererbung der Gruppenrichtlinie deaktivieren.
+-   Verschieben Sie Ihre PCs in eine Active Directory-Organisationseinheit (OU), auf die keine Gruppenrichtlinieneinstellungen angewendet werden, bevor Sie den Intune-Client installieren. Sie können bei OUs mit PCs, die in Intune registriert sind und auf die Sie die Gruppenrichtlinieneinstellungen nicht anwenden möchten, auch die Vererbung der Gruppenrichtlinie deaktivieren.
 
--   Verwenden Sie einen WMI-Filter oder einen Sicherheitsfilter, um Gruppenrichtlinienobjekte auf Computer zu beschränken, die nicht mit Intune verwaltet werden. Weitere Informationen und Beispiele hierzu finden Sie unter [Filtern vorhandener Gruppenrichtlinienobjekte, um Konflikte mit Microsoft Intune-Richtlinien zu vermeiden](resolve-gpo-and-microsoft-intune-policy-conflicts.md#BKMK_Filter).
+-   Verwenden Sie einen Sicherheitsgruppenfilter, um Gruppenrichtlinienobjekte auf PCs zu beschränken, die nicht mit Intune verwaltet werden. 
 
 -   Deaktivieren oder entfernen Sie Gruppenrichtlinienobjekte, die mit den Intune-Richtlinien in Konflikt stehen.
 
 Weitere Informationen zu Active Directory und Windows-Gruppenrichtlinien finden Sie in Ihrer Windows Server-Dokumentation.
 
 ## Filtern vorhandener Gruppenrichtlinienobjekte, um Konflikte mit Intune-Richtlinien zu vermeiden
-Wenn Sie Gruppenrichtlinienobjekte ermittelt haben, deren Einstellungen in Konflikt mit Intune-Richtlinien stehen, können Sie eine der folgenden Filtermethoden anwenden, um diese Gruppenrichtlinienobjekte auf Computer zu beschränken, die nicht mit Intune verwaltet werden.
+Wenn Sie Gruppenrichtlinienobjekte ermittelt haben, deren Einstellungen in Konflikt mit Intune-Richtlinien stehen, können Sie Sicherheitsgruppenfilter verwenden, um diese Gruppenrichtlinienobjekte auf PCs zu beschränken, die nicht mit Intune verwaltet werden.
 
-### Verwenden von WMI-Filtern
-Von WMI-Filtern werden GPOs selektiv auf Computer angewendet, die die Bedingungen einer Abfrage erfüllen. Stellen Sie zum Anwenden eines WMI-Filters für alle Computer im Unternehmen eine WMI-Klasseninstanz bereit, bevor Sie Computer beim Intune-Dienst registrieren.
+<!--- ### Use WMI filters
+WMI filters selectively apply GPOs to computers that satisfy the conditions of a query. To apply a WMI filter, deploy a WMI class instance to all PCs in the enterprise before you enroll any PCs in the Intune service.
 
-#### So wenden Sie WMI-Filter auf ein GPO an
+#### To apply WMI filters to a GPO
 
-1.  Erstellen Sie eine Verwaltungsobjektdatei, indem Sie Folgendes kopieren und in eine Textdatei einfügen und diese dann an einem geeigneten Speicherort unter dem Namen **WIT.mof** speichern. Die Datei enthält die WMI-Klasseninstanz, die Sie für Computer bereitstellen, die Sie beim Intune-Dienst registrieren möchten.
+1.  Create a management object file by copying and pasting the following into a text file, and then saving it to a convenient location as **WIT.mof**. The file contains the WMI class instance that you deploy to PCs that you want to enroll in the Intune service.
 
     ```
     //Beginning of MOF file.
@@ -79,38 +79,38 @@ Von WMI-Filtern werden GPOs selektiv auf Computer angewendet, die die Bedingunge
     };
     ```
 
-2.  Verwenden Sie zum Bereitstellen der Datei entweder ein Startskript oder eine Gruppenrichtlinie. Das Folgende ist der Bereitstellungsbefehl für das Startskript. Bevor Sie Clientcomputer beim Intune-Dienst registrieren, muss die WMI-Klasseninstanz bereitgestellt werden.
+2.  Use either a startup script or Group Policy to deploy the file. The following is the deployment command for the startup script. The WMI class instance must be deployed before you enroll client PCs in the Intune service.
 
-    **C:/Windows/System32/Wbem/MOFCOMP &lt;Pfad zur MOF-Datei&gt;\wit.mof**
+    **C:/Windows/System32/Wbem/MOFCOMP &lt;path to MOF file&gt;\wit.mof**
 
-3.  Führen Sie einen der folgenden Befehle aus, um die WMI-Filter zu erstellen. Welchen Befehl Sie ausführen, hängt davon ab, ob das zu filternde Gruppenrichtlinienobjekt für über Intune verwaltete Computer gilt oder für Computer, die nicht über Intune verwaltet werden.
+3.  Run either of the following commands to create the WMI filters, depending on whether the GPO you want to filter applies to PCs that are managed by using Intune or to PCs that are not managed by using Intune.
 
-    -   Verwenden Sie für Gruppenrichtlinienobjekte, die für nicht über Intune verwaltete Computer gelten, den folgenden Befehl:
+    -   For GPOs that apply to PCs that are not managed by using Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=0
         ```
 
-    -   Verwenden Sie für Gruppenrichtlinienobjekte, die für über Intune verwaltete Computer gelten, den folgenden Befehl:
+    -   For GPOs that apply to PCs that are managed by Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=1
         ```
 
-4.  Bearbeiten Sie das GPO in der Gruppenrichtlinien-Verwaltungskonsole so, dass der im vorangegangenen Schritt erstellte WMI-Filter zur Anwendung kommt.
+4.  Edit the GPO in the Group Policy Management console to apply the WMI filter that you created in the previous step.
 
-    -   Für Gruppenrichtlinienobjekte, die nur für über Intune verwaltete Computer gelten sollen, wenden Sie den Filter **WindowsIntunePolicyEnabled=1** an..
+    -   For GPOs that should apply only to PCs that you want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=1**.
 
-    -   Für Gruppenrichtlinienobjekte, die nur für nicht über Intune verwaltete Computer gelten sollen, wenden Sie den Filter **WindowsIntunePolicyEnabled=0** an..
+    -   For GPOs that should apply only to PCs that you do not want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=0**.
 
-Weitere Informationen zum Anwenden von WMI-Filtern bei Gruppenrichtlinien finden Sie im Blogbeitrag [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883) (Sicherheitsfilterung, WMI-Filterung und Zielgruppenadressierung auf Elementebene in Gruppenrichtlinieneinstellungen)..
+For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
-### Verwenden von Sicherheitsgruppenfiltern
-Mit einer Gruppenrichtlinie können Sie GPOs auf nur die Sicherheitsgruppen anwenden, die im Bereich **Sicherheitsfilterung** der Gruppenrichtlinien-Verwaltungskonsole für ein ausgewähltes GPO festgelegt sind. Standardmäßig gelten Gruppenrichtlinienobjekte für **Authentifizierte Benutzer**..
 
--   Erstellen Sie im Snap-In **Active Directory-Benutzer und -Computer** eine neue Sicherheitsgruppe, die Computer und Benutzerkonten enthält, die nicht über Intune verwaltet werden sollen. Nennen Sie die Gruppe z. B. **Nicht in Microsoft Intune**..
+Mit einer Gruppenrichtlinie können Sie GPOs auf nur die Sicherheitsgruppen anwenden, die im Bereich **Sicherheitsfilterung** der Gruppenrichtlinien-Verwaltungskonsole für ein ausgewähltes GPO festgelegt sind. Standardmäßig gelten GPOs für **Authentifizierte Benutzer**.
+
+-   Erstellen Sie im Snap-In **Active Directory-Benutzer und -Computer** eine neue Sicherheitsgruppe, die Computer und Benutzerkonten enthält, die nicht über Intune verwaltet werden sollen. Nennen Sie die Gruppe z. B. **Nicht in Microsoft Intune**.
 
 -   Klicken Sie auf der Registerkarte **Delegierung** in der Gruppenrichtlinien-Verwaltungskonsole mit der rechten Maustaste auf die neue Sicherheitsgruppe, um den Benutzern und Computern in der Sicherheitsgruppe die geeigneten Berechtigungen **Lesen** und **Gruppenrichtlinie übernehmen** zu delegieren. (Die Berechtigungen**Gruppenrichtlinie übernehmen** befinden sich im Dialogfeld **Erweitert** .)
 
@@ -122,6 +122,6 @@ Die neue Sicherheitsgruppe muss in den Intune-Dienständerungen als Registrierun
 [Verwalten von Windows-PCs mit Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

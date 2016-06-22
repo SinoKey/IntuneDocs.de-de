@@ -18,7 +18,7 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,7 +29,7 @@ ms.suite: ems
 Dieses Thema beschreibt die Schritte, die zum Erstellen einer Kompatibilitätsrichtlinie für ein Gerät verwendet werden können, und der ein Gerät entsprechen muss, um als kompatibel angesehen zu werden.
 
 ##  Schritt 1: Hinzufügen einer neuen Richtlinie
-  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Option **Richtlinie** &gt; **Konformitätsrichtlinien** &gt; **Hinzufügen** aus..
+  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Richtlinie** &gt; **Konformitätsrichtlinien** &gt; **Hinzufügen**.
 
   ![Screenshot der Kompatibilitätsrichtlinienseite in der Intune-Verwaltungskonsole mit der Option „Hinzufügen“ im Menü oben auf der Seite](./media/intune-sa-3a-add-compliance-policy.png)
 
@@ -41,7 +41,7 @@ Aktivieren Sie auf der Seite **Richtlinie erstellen** die folgenden Einstellunge
 ![Screenshot der Registerkarte „Allgemein“ auf der Seite „Richtlinie erstellen“ ](./media/intune-sa-3b-create-policy.png)
 
 ##  Schritt 3: Speichern der Richtlinie
-Wenn Sie fertig sind, wählen Sie **Richtlinie speichern** aus..
+Wählen Sie danach die Option **Richtlinie speichern**.
 
 Sie haben die Möglichkeit, die Richtlinie direkt nach dem Speichern bereitzustellen oder können sich für die spätere Bereitstellung entscheiden. Die neue Richtlinie wird im Knoten **Konformitätsrichtlinien** des Arbeitsbereichs **Richtlinie** angezeigt.
 
@@ -84,6 +84,6 @@ Weitere Informationen über die Kompatibilitätseinstellungen, die auf den einze
 [Einführung in Richtlinien zur Gerätekompatibilität](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,7 +40,7 @@ Um Unternehmensdaten aus Apps selektiv zu entfernen, erstellen Sie mithilfe der 
 
     ![Screenshot des Blatts „Mobile Anwendungsverwaltung mit Intune“ mit der Kachel „Zusammenfassung“](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
 
-2.  Wählen Sie **Neue Zurücksetzungsanforderung** aus..
+2.  Wählen Sie **Neue Zurücksetzungsanforderung**.
 
     ![Screenshot des Blatts „Neue Zurücksetzungsanforderung“](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
@@ -58,7 +58,7 @@ Auf dem Blatt **Intune Mobile Application Management** enthält die Kachel **Lö
 
 1.  Wählen Sie auf dem Blatt **Mobile Anwendungsverwaltung mit Intune** die Kachel **Zurücksetzungsanforderung** aus, um das Blatt **Zurücksetzungsanforderung** zu öffnen.
 
-2.  Auf dem Blatt **Löschanforderung** wird eine Liste mit Ihren Anforderungen, gruppiert nach Benutzer, angezeigt.  Da das System für jede geschützte App, die auf dem Gerät ausgeführt wird, eine Löschanforderung erstellt, werden möglicherweise für einen Benutzer mehrere Anforderungen angezeigt.  Der Status gibt an, ob eine Zurücksetzungsanforderung noch **aussteht** oder **fehlgeschlagen** ist bzw. **erfolgreich** ausgeführt wurde..
+2.  Auf dem Blatt **Löschanforderung** wird eine Liste mit Ihren Anforderungen, gruppiert nach Benutzer, angezeigt.  Da das System für jede geschützte App, die auf dem Gerät ausgeführt wird, eine Löschanforderung erstellt, werden möglicherweise für einen Benutzer mehrere Anforderungen angezeigt.  Der Status gibt an, ob eine Löschanforderung noch **aussteht**oder **fehlgeschlagen**ist bzw. **erfolgreich**ausgeführt wurde.
 
 ### Weitere Informationen:
 [Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Apps ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
@@ -66,6 +66,6 @@ Auf dem Blatt **Intune Mobile Application Management** enthält die Kachel **Lö
 [Verwenden des Azure-Portals](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

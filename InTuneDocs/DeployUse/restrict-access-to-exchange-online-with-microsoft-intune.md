@@ -18,7 +18,7 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,7 +35,7 @@ Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Ar
 >[!IMPORTANT]
 >Der bedingte Zugriff für PCs und Windows 10 Mobile-Geräte mit Apps, die die moderne Authentifizierung verwenden, steht zurzeit nicht für alle Intune-Kunden zur Verfügung. Wenn Sie diese Funktionen bereits verwenden, müssen Sie keine weiteren Maßnahmen ergreifen. Sie können diese weiter verwenden.
 
->Wenn Sie keine Richtlinien für bedingten Zugriff für PCs oder Windows 10 Mobile-Geräte mit Apps, die die moderne Authentifizierung verwenden, erstellt haben und dies jetzt tun möchten, müssen Sie eine Anforderung übermitteln.  Allgemeine Informationen, Informationen zu bekannten Problemen sowie Informationen zum Zugriff auf dieses Feature finden Sie auf der [Microsoft Connect-Website](http://go.microsoft.com/fwlink/?LinkId=761472)..
+>Wenn Sie keine Richtlinien für bedingten Zugriff für PCs oder Windows 10 Mobile-Geräte mit Apps, die die moderne Authentifizierung verwenden, erstellt haben und dies jetzt tun möchten, müssen Sie eine Anforderung übermitteln.  Allgemeine Informationen, Informationen zu bekannten Problemen sowie Informationen zum Zugriff auf dieses Feature finden Sie auf der [Microsoft Connect-Website](http://go.microsoft.com/fwlink/?LinkId=761472).
 
 **Bevor** Sie den bedingten Zugriff konfigurieren können, müssen folgende Voraussetzungen erfüllt sein:
 
@@ -43,8 +43,7 @@ Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Ar
 
 -  Sie sollten erwägen, den optionalen **Microsoft Intune Service to Service Connector** zu konfigurieren, der [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] mit Microsoft Exchange Online verbindet und die Verwaltung von Geräteinformationen über die [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Konsole ermöglicht. Der Connector ist zur Verwendung von Kompatibilitätsrichtlinien oder Richtlinien für den bedingten Zugriff nicht zwingend erforderlich, Sie benötigen ihn aber zum Ausführen von Berichten, mit deren Hilfe die Auswirkungen des bedingten Zugriffs bewertet werden.
 
-   > [!NOTE]
-   > Konfigurieren Sie den Service to Service Connector nicht, wenn Sie beabsichtigen, bedingten Zugriff für Exchange Online und lokales Exchange zu verwenden.
+   > [!NOTE] Konfigurieren Sie den Service to Service Connector nicht, wenn Sie beabsichtigen, den bedingten Zugriff sowohl für Exchange Online als auch für Exchange lokal zu verwenden.
 
    Informationen zum Konfigurieren des Connectors finden Sie unter [Intune Service to Service Connector](intune-service-to-service-exchange-connector.md).
 
@@ -78,8 +77,7 @@ Sie können den Zugriff auf Exchange Online-E-Mails über **Outlook** und andere
 
  Die **moderne Authentifizierung** ermöglicht das ADAL-basierte (Active Directory Authentication Library) Anmelden für Microsoft Office-Clients.
 
-> -   Die ADAL-basierte Authentifizierung ermöglicht Office-Clients die Einbindung in die browserbasierte Authentifizierung (auch als passive Authentifizierung bekannt).  Der Benutzer wird zur Authentifizierung zu einer Anmeldewebseite umgeleitet. Diese neue Anmeldemethode bietet größere Sicherheit durch **mehrstufige Authentifizierung** und **zertifikatbasierte Authentifizierung**.
-> Dieser [Artikel](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) enthält weitere ausführliche Informationen zur Funktionsweise der modernen Authentifizierung.
+> -   Die ADAL-basierte Authentifizierung ermöglicht Office-Clients die Einbindung in die browserbasierte Authentifizierung (auch als passive Authentifizierung bekannt).  Der Benutzer wird zur Authentifizierung zu einer Anmeldewebseite umgeleitet. Diese neue Anmeldemethode bietet größere Sicherheit durch **mehrstufige Authentifizierung** und **zertifikatbasierte Authentifizierung**. In diesem [Artikel](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) finden Sie ausführlichere Informationen zur Funktionsweise der modernen Authentifizierung.
 
 
 Auf folgenden Plattformen können Sie den Zugriff auf Exchange-E-Mails über den integrierten **Exchange ActiveSync-E-Mail-Client** blockieren:
@@ -104,27 +102,26 @@ Sie können den bedingten Zugriff für PCs einrichten, auf denen Office-Desktopa
 
 -   [Die moderne Authentifizierung von Office 365 muss aktiviert sein](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) und alle neuesten Office-Updates enthalten.
 
-    Die moderne Authentifizierung ermöglicht Windows-Clients mit Office 2013 eine ADAL-basierte Anmeldung (Active Directory Authentication Library) und bietet größere Sicherheit durch **mehrstufige Authentifizierung** und **zertifikatbasierte Authentifizierung**..
+    Die moderne Authentifizierung ermöglicht Windows-Clients mit Office 2013 eine ADAL-basierte Anmeldung (Active Directory Authentication Library) und bietet größere Sicherheit durch **mehrstufige Authentifizierung** und **zertifikatbasierte Authentifizierung**.
 
--   Setup-ADFS beansprucht Regeln zum Blockieren von nicht moderner Authentifizierungsprotokolle. Detaillierte Anleitungen werden in Szenario 3 beschrieben: [Blockieren des gesamten Zugriffs auf Office 365 außer durch browserbasierte Anwendungen](https://technet.microsoft.com/library/dn592182.aspx)..
+-   Setup-ADFS beansprucht Regeln zum Blockieren von nicht moderner Authentifizierungsprotokolle. Detaillierte Anleitungen werden in Szenario 3 beschrieben: [Blockieren des gesamten Zugriffs auf Office 365 außer durch browserbasierte Anwendungen](https://technet.microsoft.com/library/dn592182.aspx).
 
 ## Konfigurieren des bedingten Zugriffs
 ### Schritt 1: Konfigurieren und Bereitstellen einer Konformitätsrichtlinie
 Stellen Sie sicher, dass Sie eine Kompatibilitätsrichtlinie für die Benutzergruppen [erstellen](create-a-device-compliance-policy-in-microsoft-intune.md) und [bereitstellen](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md), für die auch die Richtlinie für bedingten Zugriff gelten soll.
 
 
-> [!IMPORTANT]
-> Wenn Sie keine Kompatibilitätsrichtlinie bereitgestellt haben, werden die Geräte als kompatibel bewertet und erhalten Zugriff auf Exchange.
+> [!IMPORTANT] Wenn Sie keine Kompatibilitätsrichtlinie bereitgestellt haben, werden die Geräte als kompatibel bewertet und erhalten Zugriff auf Exchange.
 
 ### Schritt 2: Bewerten der Auswirkungen der Richtlinie für bedingten Zugriff
 Mithilfe der **Inventurberichte für mobile Geräte** können Sie ermitteln, für welche Geräte der Zugriff auf Exchange blockiert wird, nachdem Sie die Richtlinie für bedingten Zugriff konfiguriert haben.
 
-Konfigurieren Sie dafür eine Verbindung zwischen [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] und Exchange mithilfe des [Microsoft Intune Service to Service Connectors](intune-service-to-service-exchange-connector.md)..
-1.  Navigieren Sie zu **Berichte -> Inventurberichte für mobile Geräte**..
+Konfigurieren Sie dafür eine Verbindung zwischen [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] und Exchange mithilfe des [Microsoft Intune Service to Service Connectors](intune-service-to-service-exchange-connector.md).
+1.  Navigieren Sie zu **Berichte -> Bestandsberichte zu mobilen Geräten**.
 ![Screenshot Seite mit dem Inventurbericht für mobile Geräte](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 
 2.  Wählen Sie in den Berichtsparametern die auszuwertende [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Gruppe sowie gegebenenfalls die Geräteplattformen aus, auf denen die Richtlinie angewendet werden soll.
-3.  Nachdem Sie die Kriterien ausgewählt haben, die den Anforderungen Ihres Unternehmens entsprechen, wählen Sie **Bericht anzeigen** aus..
+3.  Nachdem Sie die Kriterien ausgewählt haben, die den Anforderungen Ihres Unternehmens entsprechen, wählen Sie **Bericht anzeigen** aus.
 Die Berichtsanzeige wird in einem neuen Fenster geöffnet.
 ![Screenshot eines Beispielinventurberichts für mobile Geräte](../media/IntuneSA2cViewReport.PNG)
 
@@ -138,8 +135,7 @@ Die Berichtsanzeige wird in einem neuen Fenster geöffnet.
 
 -   **##Exchange ActiveSync-ID** – Bei IOS- und Android-Geräten muss die Exchange ActiveSync-ID mit der Geräteregistrierung in Azure Active Directory verknüpft sein. Dies erfolgt, wenn der Benutzer in der Quarantäne-E-Mail den Link zum **Aktivieren von E-Mails** auswählt.
 
-    > [!NOTE]
-    > Für Windows Phone-Geräte wird in dieser Spalte immer ein Wert angezeigt.
+    > [!NOTE] Für Windows Phone-Geräte wird in dieser Spalte immer ein Wert angezeigt.
 
 Bei Geräten, die Teil einer Zielgruppe sind, ist der Zugriff auf Exchange blockiert, sofern die Spaltenwerte nicht mit den in der folgenden Tabelle aufgeführten Werten übereinstimmen:
 
@@ -154,7 +150,7 @@ Sie können den Inhalt des Berichts exportieren und die Benutzer über die in de
 ### Schritt 3: Konfigurieren von Benutzergruppen für die Richtlinie für bedingten Zugriff
 Richtlinien für bedingten Zugriff werden auf verschiedene Azure Active Directory-Sicherheitsgruppen mit Benutzern angewendet. Sie können auch bestimmte Benutzergruppen von dieser Richtlinie ausnehmen.  Bei Benutzern, für die eine Richtlinie gelten soll, muss jedes von ihnen verwendete Gerät die Richtlinie erfüllen, damit sie auf ihre E-Mails zugreifen können.
 
-Sie können diese Gruppen im **Office 365 Admin Center**oder **Intune-Kontenportal** konfigurieren..
+Sie können diese Gruppen im **Office 365 Admin Center**oder **Intune-Kontenportal**konfigurieren.
 
 Sie können für jede Richtlinie zwei Arten von Gruppen angeben:
 
@@ -168,15 +164,14 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
 
 ### Schritt 4: Konfigurieren der Richtlinie für bedingten Zugriff
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** > **Bedingter Zugriff** > **Exchange Online-Richtlinie**..
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Richtlinie** > **Bedingter Zugriff** > **Exchange Online-Richtlinie**.
 ![Screenshot der Seite mit der Exchange Online-Richtlinie für bedingten Zugriff](../media/IntuneSA5dExchangeOnlinePolicy.png)
 
-2.  Aktivieren Sie auf der Seite **Exchange Online-Richtlinie** die Option **Richtlinie für bedingten Zugriff für Exchange Online aktivieren**..
+2.  Aktivieren Sie auf der Seite **Exchange Online-Richtlinie** die Option **Bedingte Zugriffsrichtlinie für Exchange Online aktivieren**.
 
-    > [!NOTE]
-    > Wenn Sie keine Kompatibilitätsrichtlinie bereitgestellt haben, werden Geräte als kompatibel ausgewertet.
+    > [!NOTE] Wenn Sie keine Kompatibilitätsrichtlinie bereitgestellt haben, werden Geräte als kompatibel eingestuft.
     >
-    > Unabhängig vom Kompatibilitätsstatus müssen alle Benutzer, für die die Richtlinie gilt, ihre Geräte bei Intune registrieren. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+    > Unabhängig vom Konformitätsstatus müssen alle Benutzer, denen die Richtlinie zugewiesen ist, ihre Geräte bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] registrieren.
 
 3.  Unter **Anwendungszugriff** haben Sie für Apps, die die moderne Authentifizierung verwenden, zwei Möglichkeiten, auszuwählen, auf welche Plattformen die Richtlinie angewendet werden soll. Zu den unterstützten Plattformen gehören Android, iOS, Windows und Windows Phone.
 
@@ -184,7 +179,7 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
 
         Dies setzt voraus, dass jedes Gerät, das für den Zugriff auf **Exchange Online** verwendet wird, in Intune registriert und kompatibel zu den Richtlinien ist.  Jede Clientanwendung, die die **moderne Authentifizierung** verwendet, unterliegt der Richtlinie für den bedingten Zugriff, und wenn die Plattform gegenwärtig nicht von Intune unterstützt wird, wird der Zugriff auf **Exchange Online** blockiert.
         >[!TIP]
-           Wenn Sie den bedingten Zugriff für PCs nicht bereits verwenden, wird Ihnen diese Option möglicherweise nicht angezeigt.  Verwenden Sie stattdessen die Option **Spezifische Plattformen**, Der bedingte Zugriff für PCs steht zurzeit nicht allen Intune-Kunden zur Verfügung.   Allgemeine Informationen, Informationen zu bekannten Problemen sowie Informationen zum Zugriff auf dieses Feature finden Sie auf der [Microsoft Connect-Website](http://go.microsoft.com/fwlink/?LinkId=761472)..
+           Wenn Sie den bedingten Zugriff für PCs nicht bereits verwenden, wird Ihnen diese Option möglicherweise nicht angezeigt.  Verwenden Sie stattdessen die Option **Spezifische Plattformen**, Der bedingte Zugriff für PCs steht zurzeit nicht allen Intune-Kunden zur Verfügung.   Allgemeine Informationen, Informationen zu bekannten Problemen sowie Informationen zum Zugriff auf dieses Feature finden Sie auf der [Microsoft Connect-Website](http://go.microsoft.com/fwlink/?LinkId=761472).
 
     -   **Bestimmte Plattformen**
 
@@ -195,8 +190,7 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
 
 5.  Wählen Sie unter **Zielgruppen**die Active Directory-Sicherheitsgruppen der Benutzer aus, auf die die Richtlinie angewendet wird. Sie können dies entweder auf alle Benutzer oder eine ausgewählte Liste von Benutzergruppen ausrichten.
 ![Screenshot der Seite mit der Exchange Online-Richtlinie für bedingten Zugriff, mit den Optionen für Zielgruppen und ausgenommene Gruppen](../media/IntuneSA5eTargetedExemptedGroups.PNG)
-    > [!NOTE]
-    > Für Benutzer in den **Zielgruppen** werden die Exchange-Regeln und -Richtlinien durch Intune-Richtlinien ersetzt.
+    > [!NOTE] Für Benutzer in den **Zielgruppen** werden die Exchange-Regeln und -Richtlinien durch Intune-Richtlinien ersetzt.
     >
     > Exchange erzwingt nur in den folgenden Situationen die Exchange-Regeln für Zulassung, Blockierung und Quarantäne sowie Exchange-Richtlinien:
     >
@@ -205,7 +199,7 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
 
 6.  Wählen Sie unter **Ausgenommene Gruppen**die Active Directory-Sicherheitsgruppen der Benutzer aus, die von dieser Richtlinie ausgenommen werden. Wenn ein Benutzer sowohl in den Zielgruppen als auch in den ausgenommenen Gruppen enthalten ist, wird er von der Richtlinie ausgenommen.
 
-7.  Wählen Sie abschließend **Speichern** aus..
+7.  Wählen Sie abschließend **Speichern** aus.
 
 -   Die Richtlinie für bedingten Zugriff wird sofort wirksam und muss nicht explizit bereitgestellt werden.
 
@@ -215,7 +209,7 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
 
 -   Wenn der Benutzer die Registrierung seines Geräts aufhebt, wird der E-Mail-Zugriff nach ca. 6 Stunden blockiert.
 
-**Beispielszenarien für die Konfiguration von Richtlinien für bedingten Zugriff, um den Gerätezugriff zu beschränken, finden Sie unter [Beispielszenarien für die Beschränkung des E-Mail-Zugriffs](restrict-email-access-example-scenarios.md)..**
+**Beispielszenarien für die Konfiguration von Richtlinien für bedingten Zugriff, um den Gerätezugriff zu beschränken, finden Sie unter [Beispielszenarien für die Beschränkung des E-Mail-Zugriffs](restrict-email-access-example-scenarios.md).**
 
 ## Überwachen der Richtlinien für Konformität und bedingten Zugriff
 
@@ -230,6 +224,6 @@ Wählen Sie im [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Dashboard 
 [Beschränken des Zugriffs auf Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -84,7 +84,7 @@ Sie können kostenlose iOS-Apps aus dem App Store verwalten und bereitstellen. S
 > [!TIP] Optionen für mobile Geräte sind nicht verfügbar, bis Sie die [Verwaltungsautorität für mobile Geräte](get-ready-to-enroll-devices-in-microsoft-intune.md) auf Intune festgelegt haben.
 
 ## Unterstützung für UWP-Apps (Universelle Windows-Plattform)
-Windows 10-Geräte erfordern keinen Sideload-Schlüssel für die Installation von Branchen-Apps. Allerdings muss der Registrierungsschlüssel **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** den Wert **1** haben, um das Querladen zu aktivieren.
+Windows 10-PCs erfordern keinen Sideload-Schlüssel für die Installation von branchenspezifischen Apps. Allerdings muss der Registrierungsschlüssel **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** den Wert **1** haben, um das Querladen zu aktivieren.
 
 Wenn dieser Registrierungsschlüssel nicht konfiguriert ist, legt Intune diesen Wert automatisch auf **1** fest, wenn Sie zum ersten Mal eine App auf dem Gerät bereitstellen. Wenn Sie diesen Wert auf **0** festgelegt haben, kann Intune den Wert nicht automatisch ändern, und die Bereitstellung von Sparten-Apps misslingt.
 
@@ -96,6 +96,6 @@ Auf Windows 10 Mobile-Geräten können Sie ein nicht von Symantec stammendes Cod
 
 Als Nächstes müssen Sie Apps in der Intune-Konsole hinzufügen, bevor Sie sie bereitstellen können. Sie können Apps für [registrierte Geräte](add-apps-for-mobile-devices-in-microsoft-intune.md) oder für [Windows-PCs hinzufügen, die Sie mit der Intune-Clientsoftware verwalten](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

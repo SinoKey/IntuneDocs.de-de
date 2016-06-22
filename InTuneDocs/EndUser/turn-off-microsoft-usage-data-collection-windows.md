@@ -32,9 +32,11 @@ Um Produkte und Dienstleistungen zu verbessern, erfasst Microsoft automatisch an
 
 Sie können die Sammlung von Daten auf Ihrem Windows-Gerät mithilfe der Einstellung **Verwendungsdaten** in der Unternehmensportal-App deaktivieren. IT-Administratoren haben keine Kontrolle über die Erfassung der Daten und können Ihre Auswahl für diese Einstellung nicht ändern.
 
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+
 ### Weitere Informationen:
 [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

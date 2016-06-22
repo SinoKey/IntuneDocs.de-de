@@ -18,7 +18,7 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,7 +36,7 @@ In diesem Thema erfahren Sie, wie Sie Apps zu Intune hinzufügen, bevor Sie sie 
 ## Hinzufügen der App
 Mithilfe der folgenden Vorgehensweise verwenden Sie den Intune-Softwareherausgeber, um die Eigenschaften der App zu konfigurieren und sie in Ihren Cloudspeicher hochzuladen:
 
-1.  Klicken Sie in der [Microsoft Intune-Administratorkonsole](https://manage.microsoft.com) auf **Apps** &gt; **Apps hinzufügen**, um den Intune-Softwareherausgeber zu starten.
+1.  Wählen Sie in der [Microsoft Intune-Administratorkonsole](https://manage.microsoft.com) die Option **Apps** &gt; **Apps hinzufügen**, um den Intune-Softwareherausgeber zu starten.
 
     > [!TIP] Möglicherweise müssen Sie Ihren Intune-Benutzernamen und das Kennwort eingeben, bevor der Softwareherausgeber gestartet wird.
 
@@ -47,7 +47,7 @@ Mithilfe der folgenden Vorgehensweise verwenden Sie den Intune-Softwareherausgeb
     **Wählen Sie aus, wie diese Software für Geräte bereitgestellt werden soll.** – Wählen Sie **Softwareinstallationsprogramm**, und legen Sie dann Folgendes fest:
 
     - **Wählen Sie den Dateityp des Softwareinstallationsprogramms aus**: Hiermit wird die Art der Software angegeben, die Sie bereitstellen möchten. Wählen Sie für einen Windows-PC **Windows Installer** aus.
-    - **Geben Sie den Speicherort der Softwaresetupdateien an**: Geben Sie den Speicherort der Installationsdateien ein, oder klicken Sie auf **Durchsuchen**, um den Speicherort in einer Liste auszuwählen.
+    - **Geben Sie den Speicherort der Softwaresetupdateien an**: Geben Sie den Speicherort der Installationsdateien ein, oder wählen Sie **Durchsuchen**, um den Speicherort in einer Liste auszuwählen.
     - **Weitere Dateien und Unterordner aus dem gleichen Ordner einschließen**: Mitunter sind für eine Software, bei der Windows Installer verwendet wird, unterstützende Dateien erforderlich, die sich meist im gleichen Ordner befinden wie die Installationsdateien. Wählen Sie diese Option aus, wenn Sie auch diese unterstützenden Dateien bereitstellen möchten.
 
     Wenn Sie z. B. eine App namens „Application.msi“ für Intune veröffentlichen möchten, würde die Seite wie folgt aussehen: ![PC-Softwareherausgeber](./media/publisher-for-pc.png)
@@ -70,22 +70,23 @@ Mithilfe der folgenden Vorgehensweise verwenden Sie den Intune-Softwareherausgeb
 
 4.  Wählen Sie auf der Seite **Anforderungen** die Anforderungen aus, die erfüllt sein müssen, bevor die App auf einem Gerät installiert werden kann. **Architektur**: Wählen Sie aus, ob die App auf 32-Bit-Betriebssystemen, 64-Bit-Betriebssystemen oder auf beiden Betriebssystemarten installiert werden kann. **Betriebssystem:** Wählen Sie die niedrigste Betriebssystemvariante aus, unter der die App installiert werden kann.
 
-5.  Nur für den **Windows Installer**-Dateityp (nur EXE): Auf der Seite **Erkennungsregeln** können Sie Regeln konfigurieren, anhand derer erkannt wird, ob die konfigurierte App bereits auf dem PC vorhanden ist. Sie können aber auch die Standarderkennungsregeln verwenden, bei denen alle zuvor installierten Versionen der App überschrieben werden.
+5.  Auf der Seite **Erkennungsregeln** können Sie Regeln konfigurieren, anhand derer erkannt wird, ob die konfigurierte App bereits auf dem PC vorhanden ist. Sie können aber auch die Standarderkennungsregeln verwenden, bei denen alle zuvor installierten Versionen der App überschrieben werden. Diese Option gilt für Windows Installer (nur EXE-Dateien).
+6.  
     Sie können folgende Regeln konfigurieren:
     - **Die Datei ist vorhanden:** Geben Sie den Pfad zu der Datei an, die Sie erkennen möchten. Sie können den PC unter **%ProgramFiles%** durchsuchen (dabei wird **Programme**\*&lt;Pfad&gt;* und **Programme (x86)**\*&lt;Pfad&gt;* durchsucht) oder unter **%SystemDrive%** (dabei wird das Stammlaufwerk des PCs durchsucht, in der Regel „C:“)
-    - **Der MSI-Produktcode ist vorhanden:** Klicken Sie auf **Durchsuchen**, um die zu erkennende Windows Installer-Datei (MSI-Datei) auszuwählen. 
+    - **Der MSI-Produktcode ist vorhanden:** Wählen Sie **Durchsuchen**, um die zu erkennende Windows Installer-Datei (MSI-Datei) auszuwählen. 
     - **Der Registrierungsschlüssel ist vorhanden:** Geben Sie einen Registrierungsschlüssel an, der mit **HKEY_LOCAL_MACHINE\\** beginnt. Es werden 32-Bit- und 64-Bit-Registrierungspfade durchsucht. Wenn der angegebene Schlüssel an einem der beiden Speicherorte vorhanden ist, ist die Erkennungsregel erfüllt.
 
     Wenn die App eine der konfigurierten Regeln erfüllt, wird sie nicht installiert.
 
-6.  Nur für den **Windows Installer**-Dateityp (MSI und EXE): Geben Sie auf der Seite **Befehlszeilenargumente** an, ob Sie optionale Befehlszeilenargumente für das Installationsprogramm angeben möchten. Beispielsweise unterstützen einige Installationsprogramme das Argument **/q** für eine unbeaufsichtigte Installation ohne Benutzereingriff.
+7.  Nur für den **Windows Installer**-Dateityp (MSI und EXE): Geben Sie auf der Seite **Befehlszeilenargumente** an, ob Sie optionale Befehlszeilenargumente für das Installationsprogramm angeben möchten. Beispielsweise unterstützen einige Installationsprogramme das Argument **/q** für eine unbeaufsichtigte Installation ohne Benutzereingriff.
 
-7.  Nur für den **Windows Installer**-Dateityp (nur EXE): Auf der Seite **Rückgabecodes** können Sie neue Fehlercodes eingeben, die von Intune interpretiert werden, wenn die App auf einem verwalteten Windows-PC installiert wird.
+8.  Nur für den **Windows Installer**-Dateityp (nur EXE): Auf der Seite **Rückgabecodes** können Sie neue Fehlercodes eingeben, die von Intune interpretiert werden, wenn die App auf einem verwalteten Windows-PC installiert wird.
     Standardmäßig werden in Intune die branchenüblichen Rückgabecodes verwendet, um eine fehlerhafte oder erfolgreiche Installation eines Anwendungspakets zu melden: **0** – Erfolg oder **3010** – Erfolg mit Neustart. Sie können der Liste auch Ihre eigenen Rückgabecodes hinzufügen. Wenn Sie eine Liste von Rückgabecodes angeben und bei der App-Installation ein in der Liste nicht enthaltener Code zurückgegeben wird, wird er als Fehler interpretiert.
 
-8.  Überprüfen Sie auf der Seite **Zusammenfassung** die von Ihnen angegebenen Informationen. Sobald Sie bereit sind, klicken Sie auf **Hochladen**.
+9.  Überprüfen Sie auf der Seite **Zusammenfassung** die von Ihnen angegebenen Informationen. Sobald Sie bereit sind, wählen Sie **Hochladen**.
 
-9. Klicken Sie zum Fertigstellen auf **Schließen**.
+10. Wählen Sie **Schließen**, um den Vorgang abzuschließen.
 
 Die App wird im Arbeitsbereich **Apps** im Knoten **Apps** angezeigt.
 
@@ -93,6 +94,6 @@ Die App wird im Arbeitsbereich **Apps** im Knoten **Apps** angezeigt.
 
 Wenn Sie eine App erstellt haben, umfasst der nächste Schritt die Bereitstellung. Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps.md).
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

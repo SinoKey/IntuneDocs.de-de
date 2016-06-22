@@ -18,7 +18,7 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,7 +35,7 @@ ms.suite: ems
 
 Um dies zu erreichen, konfigurieren Sie eine Richtlinie für bedingten Zugriff für Exchange Online mit folgenden Einstellungen:
 
--   Wählen Sie **Richtlinie für bedingten Zugriff konfigurieren** aus..
+-   Wählen Sie **Richtlinie für bedingten Zugriff aktivieren** aus.
 
 - Wählen Sie die Plattformen aus, auf denen Sie Zugriff über Apps mit moderner Authentifizierung zulassen möchten.
 - Wählen Sie für Exchange ActiveSync-Apps **Nicht kompatible Geräte auf Plattformen blockieren, die von Microsoft Intune unterstützt werden** und **Alle weiteren Geräte auf Plattformen blockieren, die nicht von Microsoft Intune unterstützt werden**.
@@ -70,7 +70,7 @@ Der folgende Ablauf wird verwendet, um zu entscheiden, welche Geräte auf Exchan
 ## Kein Android-Gerät darf auf lokales Exchange zugreifen
 ### Anforderungen für das Szenario
 - Der Zugriff auf Exchange soll für alle Android-Geräte blockiert werden.
-- Alle anderen unterstützten Geräte können auf Exchange zugreifen, solange sie von Intune verwaltet werden. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+- Alle anderen unterstützten Geräte können auf Exchange zugreifen, solange sie von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] verwaltet werden.
 
 Um dies zu erreichen, konfigurieren Sie eine Richtlinie für bedingten Zugriff für lokales Exchange mit folgenden Einstellungen:
 
@@ -86,6 +86,6 @@ Der folgende Ablauf wird verwendet, um zu entscheiden, welche Geräte auf Exchan
 ![Ablauf für Gerätezugriff](./media/ConditionalAccess8-4.png)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

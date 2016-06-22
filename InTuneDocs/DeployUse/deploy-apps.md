@@ -18,7 +18,7 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,7 +44,7 @@ Diese Regeln gelten für den Kauf von zusätzlichem Cloudspeicherplatz für Intu
 
 -   Sie benötigen ein aktives kostenpflichtiges Abonnement, um zusätzlichen Speicherplatz zu kaufen.
 
--   Nur Rechnungsadministratoren oder globale Administratoren für Ihren Microsoft Online Service können zusätzlichen Speicher über das Intune-Kontenportal erwerben. Um diese Administratoren hinzuzufügen, zu löschen oder zu verwalten, müssen Sie ein globaler Administrator und beim Intune-Kontenportal angemeldet sein.
+-   Nur Rechnungsadministratoren oder globale Administratoren für Ihren Microsoft Online Service können zusätzlichen Speicher über das Office 365-Verwaltungsportal erwerben. Um diese Administratoren hinzuzufügen, zu löschen oder zu verwalten, müssen Sie ein globaler Administrator und beim Office 365-Verwaltungsportal angemeldet sein.
 
 -   Volumenlizenzkunden, die Intune oder das Microsoft Intune-Add-On über ein Enterprise Agreement gekauft haben, erhalten Preisinformationen und zusätzlichen Speicherplatz beim zuständigen Microsoft-Kundenbetreuer oder Microsoft-Partner.
 
@@ -105,6 +105,6 @@ Wenn zwei Bereitstellungen mit der gleichen Bereitstellungsaktion von einem Ger�
 
 Erfahren Sie mehr zum [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

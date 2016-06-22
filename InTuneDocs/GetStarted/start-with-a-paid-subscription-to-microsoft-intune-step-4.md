@@ -26,10 +26,10 @@ ms.suite: ems
 ---
 
 # Verwalten von Intune-Lizenzen
-Benutzer benötigen eine Lizenz für Ihr Intune-Abonnement, bevor sie sich beim Dienst anmelden oder Geräte für die Verwaltung registrieren können. Verfügen Benutzer über eine Lizenz, sind sie Mitglieder der [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)]-Benutzergruppe. In dieser Gruppe sind alle Benutzer enthalten, die über eine Lizenz zur Verwendung des Abonnements verfügen. **Jede Benutzerlizenz unterstützt die Registrierung von bis zu fünf Geräten.**.
+Bevor Benutzer sich für die Verwendung des Intune-Diensts anmelden oder ihre Geräte für die Verwaltung registrieren können, muss ihnen zunächst über das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) eine Lizenz für Ihr Intune-Abonnement zugewiesen werden. Sobald eine Lizenz zugewiesen wurde, werden die Namen der Benutzer in der Intune-Verwaltungskonsole angezeigt. Benutzer können anschließend bis zu fünf Geräte registrieren.
 
 ## So werden Intune-Lizenzen zugewiesen
-Wenn Benutzerkonten aus Ihrem lokalen Active Directory synchronisiert oder über das Kontoportal manuell zu Ihrem Clouddienstabonnement hinzugefügt werden, wird ihnen nicht automatisch eine Intune-Lizenz zugewiesen. Stattdessen muss ein Intune-Mandantenadministrator die Benutzerkonten später bearbeiten, um den betreffenden Benutzern eine Lizenz aus dem Kontoportal zuzuweisen.
+Wenn Benutzerkonten aus Ihrer lokalen Active Directory-Bereitstellung synchronisiert oder über das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) manuell zu Ihrem Clouddienstabonnement hinzugefügt werden, wird ihnen nicht automatisch eine Intune-Lizenz zugewiesen. Stattdessen muss ein Intune-Mandantenadministrator die Benutzerkonten später bearbeiten, um den betreffenden Benutzern über das Office 365-Portal eine Lizenz zuzuweisen.
 
 Wenn Azure AD von Ihrem Abonnement und anderen Ihrem Abonnement zugeordneten Clouddiensten gemeinsam verwendet wird, haben Sie ebenfalls Zugriff auf Benutzer, die diesen Diensten hinzugefügt wurden. Diese Benutzer verfügen nicht über eine [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Lizenz, bis Sie jedem von ihnen eine Lizenz zuweisen.
 
@@ -38,16 +38,16 @@ Wenn Azure AD von Ihrem Abonnement und anderen Ihrem Abonnement zugeordneten Clo
 
 ## Zuweisen einer Intune-Benutzerlizenz
 
-Verwenden Sie das **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]**, um cloudbasierte Benutzer manuell hinzuzufügen und um sowohl cloudbasierten Benutzerkonten als auch Konten, die aus Ihrem lokalen Active Directory mit Azure AD synchronisiert wurden, Lizenzen zuzuweisen.
+Verwenden Sie das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854), um cloudbasierte Benutzer manuell hinzuzufügen und um sowohl cloudbasierten Benutzerkonten als auch Konten, die aus Ihrer lokalen Active Directory-Bereitstellung mit Azure AD synchronisiert wurden, Lizenzen zuzuweisen.
 
-1.  Melden Sie sich mit den Anmeldeinformationen Ihres Mandantenadministrators beim Intune-Kontoportal an.
+1.  Melden Sie sich mit den Anmeldeinformationen Ihres Mandantenadministrators beim [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) an, und wählen Sie dann **Personen** > **Alle Benutzer**.
 
-2.  Wählen Sie das Benutzerkonto aus, dem Sie eine Intune-Benutzerlizenz zuweisen möchten, und aktivieren Sie in den Eigenschaften des Benutzerkontos das Kontrollkästchen **Microsoft Intune**.
+2.  Wählen Sie das Benutzerkonto aus, dem Sie eine Intune-Benutzerlizenz zuweisen möchten, und wählen Sie in den Eigenschaften des Benutzerkontos die Option **Microsoft Intune**.
 
-3.  Das Benutzerkonto wird jetzt der Microsoft Intune-Benutzergruppe zugewiesen, die dem Benutzer Berechtigungen zur Verwendung des Diensts und zur Registrierung von Geräten für die Verwaltung gewährt.
+3.  Das Benutzerkonto verfügt jetzt über die erforderlichen Berechtigungen, um den Dienst zu nutzen und Geräte für die Verwaltung zu registrieren.
 
 ### Selektive Verwaltung von EMS-Benutzerlizenzen über PowerShell
-Unternehmen, die die Enterprise Mobility Suite (EMS) von Microsoft verwenden, verfügen möglicherweise über Benutzer, die nur Azure Active Directory Premium- oder Intune-Dienste im EMS-Paket benötigen. Sie können einen oder mehrere Dienste mithilfe von [Azure Active Directory PowerShell-Cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) zuweisen.. 
+Unternehmen, die die Enterprise Mobility Suite (EMS) von Microsoft verwenden, verfügen möglicherweise über Benutzer, die nur Azure Active Directory Premium- oder Intune-Dienste im EMS-Paket benötigen. Sie können einen oder mehrere Dienste mithilfe von [Azure Active Directory PowerShell-Cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) zuweisen. 
 
 Um Benutzerlizenzen für EMS-Dienste selektiv zuzuweisen, öffnen Sie PowerShell als Administrator auf einem Computer, auf dem das [Azure Active Directory-Modul für Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) installiert ist. Sie können PowerShell auf einem lokalen Computer oder einem AD FS-Server installieren.
 
@@ -57,8 +57,7 @@ Sie müssen eine neue Lizenz-SKU-Definition erstellen, die nur für die gewünsc
 
 Sie können den folgenden Befehl ausführen, um den Intune-Serviceplan auszuschließen. Mit der gleichen Methode können Sie die Definition auf eine vollständige Sicherheitsgruppe ausweiten oder detailliertere Filter verwenden. 
 
-**Beispiel 1**
-Erstellen Sie über die Befehlszeile einen neuen Benutzer, und weisen Sie eine EMS-Lizenz zu, ohne den auf Intune bezogenen Teil der Lizenz zu aktivieren:
+**Beispiel 1** Erstellen Sie über die Befehlszeile einen neuen Benutzer, und weisen Sie eine EMS-Lizenz zu, ohne den auf Intune bezogenen Teil der Lizenz zu aktivieren:
 
     Connect-MsolService 
         
@@ -72,8 +71,7 @@ Erstellen Sie über die Befehlszeile einen neuen Benutzer, und weisen Sie eine E
 
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
-**Beispiel 2**
-Deaktivieren Sie den auf Intune bezogenen Teil der EMS-Lizenz für einen Benutzer, dem bereits eine Lizenz zugewiesen wurde:
+**Beispiel 2** Deaktivieren Sie den auf Intune bezogenen Teil der EMS-Lizenz für einen Benutzer, dem bereits eine Lizenz zugewiesen wurde:
 
     Connect-MsolService 
     
@@ -89,12 +87,12 @@ Deaktivieren Sie den auf Intune bezogenen Teil der EMS-Lizenz für einen Benutze
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
 ### Nächste Schritte
-Gratulation! Sie haben Schritt 4 der Kurzanleitung *Erste Schritte mit Intune* abgeschlossen..
+Gratulation! Sie haben Schritt 4 der Kurzanleitung *Erste Schritte mit Intune* abgeschlossen.
 >[!div class="step-by-step"]
 
->[&larr; **Synchronisieren von Benutzern mit Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organisieren von Benutzern und Geräten** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
+>[&larr;**Synchronisieren von Benutzern mit Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organisieren von Benutzern und Geräten** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

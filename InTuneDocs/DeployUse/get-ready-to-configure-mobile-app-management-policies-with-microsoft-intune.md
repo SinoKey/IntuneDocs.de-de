@@ -18,7 +18,7 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,6 +46,7 @@ Wenn Sie derzeit Ihre Geräte mit der **Intune-Verwaltungskonsole** verwalten, k
 
 - Android 4 oder höher
 
+Windows-Geräte werden momentan nicht unterstützt.
 ##  Unterstützte Apps
 * **Microsoft-Apps**: Bei diesen Apps ist das Intune App SDK integriert, und vor der Anwendung von MAM-Richtlinien sind keine weiteren Schritte nötig.
 Die vollständige Liste der unterstützten Microsoft-Apps finden Sie auf der Seite mit den Microsoft Intune-Anwendungspartnern im [Microsoft Intune-Katalog für mobile Anwendungen](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx). Klicken Sie auf eine App, um die unterstützten Szenarien und Plattformen anzuzeigen und zu erfahren, ob die App mehrere Identitäten unterstützt.
@@ -123,6 +124,6 @@ In der folgenden Tabelle werden die Rollen und Berechtigungen aufgelistet, die S
 [Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -50,17 +50,17 @@ Eine vollständige Liste der Intune-Richtlinien finden Sie unter [Referenz zu Mi
 
 ## Erstellen einer Konfigurationsrichtlinie
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Richtlinie** &gt; **Konfigurationsrichtlinien** &gt; **Hinzufügen**.
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Optionen **Richtlinie** &gt; **Konfigurationsrichtlinien** &gt; **Hinzufügen**.
 
 2.  Wählen Sie die gewünschte Richtlinie aus, und wählen Sie, ob Sie die empfohlenen Einstellungen für die Richtlinie verwenden (sofern verfügbar, Sie können diese Einstellungen später ändern) oder eine benutzerdefinierte Richtlinie mit Ihren eigenen Einstellungen erstellen möchten.
 
     > [!TIP] Hilfe zur Auswahl der richtigen Richtlinie finden Sie in der [Referenz zu Microsoft Intune-Richtlinien](microsoft-intune-policy-reference.md).
 
-3.  Wenn Sie bereit sind, klicken Sie auf **Richtlinie erstellen**.
+3.  Wenn Sie bereit sind, wählen Sie **Richtlinie erstellen**.
 
 4.  Konfigurieren Sie im Bildschirm **Richtlinie erstellen** einen Namen und optional eine Beschreibung für die Richtlinie.
 
-5.  Konfigurieren Sie die erforderlichen Richtlinieneinstellungen, und klicken Sie dann auf **Richtlinie speichern**.
+5.  Konfigurieren Sie die erforderlichen Richtlinieneinstellungen, und wählen Sie dann **Richtlinie speichern**.
 
     Wenn Sie Hilfe zu Richtlinieneinstellungen benötigen, wählen Sie Ihren Richtlinientyp aus der folgenden Liste aus:
 
@@ -73,10 +73,10 @@ Eine vollständige Liste der Intune-Richtlinien finden Sie unter [Referenz zu Mi
     - [Upgradeeinstellungen für die Windows-Edition](edition-upgrade-policy-settings-in-microsoft-intune.md)
     - [Einstellungen für Mac OS X-Geräte](mac-os-x-policy-settings-in-microsoft-intune.md)
     - [Einstellungen für Exchange ActiveSync](exchange-activesync-policy-settings-in-microsoft-intune.md)
-    - [Einstellungen für Nutzungsbedingungsrichtlinien](terms-and-condition-policy-settings-in-microsoft-intune.md)
+    - [Einstellungen für die Nutzungsbedingungsrichtlinie](terms-and-condition-policy-settings-in-microsoft-intune.md)
     - [Allgemeine Einstellungen für mobile Geräte (Legacy)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
-4.  Klicken Sie im Bestätigungsdialogfeld auf **Ja** , um die Richtlinie jetzt bereitzustellen, oder auf **Nein** , um die Richtlinie zu erstellen, ohne sie bereitzustellen.
+4.  Wählen Sie im Bestätigungsdialogfeld **Ja**, um die Richtlinie jetzt bereitzustellen, oder **Nein**, um die Richtlinie zu erstellen, ohne sie bereitzustellen.
 
 Sie können die neue Richtlinie anzeigen und bearbeiten, indem Sie durch die Abschnitte für die einzelnen Richtlinientypen im Arbeitsbereich **Richtlinie** navigieren.
 
@@ -89,35 +89,26 @@ Nachdem Sie nun eine Richtlinie erstellt haben, werden Sie sie in der Regel für
 
 ## Bereitstellen einer Konfigurationsrichtlinie
 
-1.  Wählen Sie im Arbeitsbereich **Richtlinie** die Richtlinie aus, die Sie bereitstellen möchten, und klicken Sie dann auf **Bereitstellung verwalten**.
+1.  Wählen Sie im Arbeitsbereich **Richtlinie** die Richtlinie aus, die Sie bereitstellen möchten, und wählen Sie dann **Bereitstellung verwalten** aus.
 
 2.  Führen Sie im Dialogfeld **Bereitstellung verwalten** folgende Schritte aus:
 
     -   **So stellen Sie die Richtlinie bereit**: Wählen Sie mindestens eine Gruppe aus, für die Sie die Richtlinie bereitstellen möchten, und klicken Sie auf **Hinzufügen** &gt; **OK**.
 
-    -   **Wenn Sie das Dialogfeld schließen möchten, ohne die Richtlinie bereitzustellen:** Klicken Sie auf **Abbrechen**.
+    -   **So schließen Sie das Dialogfeld, ohne die Richtlinie bereitzustellen**: Klicken Sie auf **Abbrechen**.
 
 Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informationen zur Bereitstellung im unteren Teil der Richtlinienliste anzeigen.
 
 ## Verwalten von Richtlinien
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/)auf **Richtlinie**, navigieren Sie zu der Richtlinie, die Sie verwalten möchten, und wählen Sie sie aus.
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Richtlinie**, navigieren Sie zu der Richtlinie, die Sie verwalten möchten, und wählen Sie sie aus.
 
 2.  Wählen Sie eine der folgenden Aktionen aus:
 
 - **Bearbeiten:** Hiermit werden die Eigenschaften für die ausgewählte Richtlinie geöffnet, und Sie können Änderungen daran vornehmen.
 - **Löschen:** Hiermit wird die ausgewählte Richtlinie gelöscht.<br>Wenn Sie eine Richtlinie löschen, wird sie aus allen Gruppen entfernt, für die sie bereitgestellt worden war.
-- **Bereitstellung verwalten:** Wählen Sie die Gruppe aus, für die Sie die Richtlinie bereitstellen möchten, und klicken Sie dann auf **Hinzufügen**.
+- **Bereitstellung verwalten:** Wählen Sie die Gruppe aus, für die Sie die Richtlinie bereitstellen möchten, und wählen Sie dann **Hinzufügen**.
 
-## Für Intune-Richtlinien auszuführende Aufgaben
-
-### Wenn Sie die Richtlinien auf einem Gerät aktualisieren und so sicherstellen möchten, dass sie aktuell sind (gilt nur für Windows-PCs, auf denen nur die Intune-Clientsoftware ausgeführt wird)
-
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/)auf **Gruppen**, und wählen Sie dann eine Gerätegruppe aus.
-
-2.  Wählen Sie die Geräte aus, auf denen die Richtlinien aktualisiert werden sollen, und klicken Sie dann auf **Remoteaufgaben** &gt; **Richtlinien aktualisieren**.
-
-3.  Klicken Sie in der Intune-Verwaltungskonsole unten rechts auf **Remoteaufgaben**.
 
 ## Häufig gestellte Fragen zu Intune-Richtlinien
 
@@ -187,25 +178,7 @@ Wenn Sie eine Richtlinie löschen oder ein Gerät aus einer Gruppe entfernen, f�
         - Erforderlicher Kennworttyp
         - Kennwortablauf (Tage)
         - Kennwortverlauf speichern
-        - Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird
-        - Minuten der Inaktivität, bevor ein Kennwort erforderlich ist
-        - Erforderlicher Kennworttyp – Mindestanzahl von Zeichensätzen
-        - Kamera zulassen
-        - Verschlüsselung auf mobilem Gerät anfordern
-        - Wechselspeichermedien zulassen
-        - Webbrowser zulassen
-        - App Store zulassen
-        - Bildschirmaufnahme zulassen
-        - Geolocation zulassen
-        - Microsoft-Konto zulassen
-        - Kopieren und Einfügen zulassen
-        - WLAN-Tethering zulassen
-        - Automatische Verbindung mit unverschlüsselten WLAN-Hotspots zulassen
-        - Berichterstellung für WLAN-Hotspots zulassen
-        - Zurücksetzen auf Werkseinstellungen zulassen
-        - Bluetooth zulassen
-        - NFC zulassen
-        - WLAN zulassen
+        - Anzahl der zulässigen wiederholten Anmeldefehler, bevor die Gerätedaten zurückgesetzt werden – Minuten Inaktivität vor Anforderung des Kennworts – Erforderlicher Kennworttyp – Minimale Anzahl von Zeichensätzen – Kamera zulassen – Verschlüsselung auf mobilen Geräten vorschreiben – Wechselmedien zulassen – Webbrowser zulassen – Anwendungsspeicher zulassen – Bildschirmaufnahme zulassen – Geolocation zulassen – Microsoft-Konto zulassen – Kopieren und Einfügen zulassen – WLAN-Tethering zulassen – Automatische Verbindung mit freien WLAN-Hotspots zulassen – WLAN-Hotspotmeldung zulassen – Rücksetzung auf Werkseinstellungen zulassen – Bluetooth zulassen – NFC zulassen – WLAN zulassen
     
     - **iOS**: Alle Einstellungen werden entfernt, außer:
         - Sprachroaming zulassen
@@ -220,9 +193,16 @@ Wenn Sie eine Richtlinie löschen oder ein Gerät aus einer Gruppe entfernen, f�
 - **Einstellungen für die Windows-Firewall:** Die Einstellungen werden auf die Standardwerte des Computerbetriebssystems zurückgesetzt. Weitere Informationen finden Sie unter [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 
+### Wie kann ich die Richtlinien auf einem Gerät aktualisieren und so sicherstellen, dass sie aktuell sind (gilt nur für Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird)
+
+1.  Wählen Sie in einer beliebigen Gerätegruppe die Geräte aus, auf denen die Richtlinien aktualisiert werden sollen, und wählen Sie dann **Remoteaufgaben** &gt; **Richtlinien aktualisieren**.
+2.  Wählen Sie in der Intune-Verwaltungskonsole unten rechts die Option **Remoteaufgaben**, um den Aufgabenstatus zu überprüfen.
+
+### Wo finde ich Hilfe zur Problembehandlung bei Richtlinien?
+
+Siehe [Behandlung von Problemen mit Richtlinien in Microsoft Intune](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md).
 
 
-
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

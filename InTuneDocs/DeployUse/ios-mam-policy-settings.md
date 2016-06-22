@@ -18,7 +18,7 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,8 +33,7 @@ Es gibt zwei Kategorien von Richtlinieneinstellungen: Datenverlagerung und Zugri
 ##  Einstellungen für die Datenverlagerung
 Der Begriff **Richtlinienverwaltete Apps** wird verwendet, um auf Apps zu verweisen, die mit MAM-Richtlinien konfiguriert sind.
 
-- **iTunes- und iCloud-Datensicherungen verhindern:**
-  Wählen Sie **Ja**, um die Funktion zu deaktivieren, oder **Nein**, um die Datensicherung von Firmendaten aus den richtlinienverwalteten Apps zuzulassen.
+- **iTunes- und iCloud-Sicherungen verhindern:** Wählen Sie **Ja**, um die Funktion zu deaktivieren, oder **Nein**, um das Sichern von Unternehmensdaten aus den richtlinienverwalteten Apps zuzulassen.
 
   **Standardwert = Ja**
 
@@ -52,15 +51,13 @@ Der Begriff **Richtlinienverwaltete Apps** wird verwendet, um auf Apps zu verwei
   -  **Alle Apps**: Datenübertragung von beliebigen Apps zulassen.
   -  **Keine**: Keine Datenübertragung von anderen Apps zulassen.
 
-  **Standardwert = alle Apps**
+  **Standardwert = Alle Apps**
 
-- **„Speichern unter“ verhindern:**
-  Wählen Sie **Ja** aus, um die Verwendung der Option „Speichern unter“ in jeder App zu deaktivieren, die diese Richtlinie verwendet. Wählen Sie **Nein** aus, wenn die Verwendung von „Speichern unter“ zulässig sein soll.
+- **„Speichern unter“ verhindern:** Wählen Sie **Ja** aus, um die Verwendung der Option „Speichern unter“ in jeder App zu deaktivieren, die diese Richtlinie verwendet. Wählen Sie **Nein** aus, wenn die Verwendung von „Speichern unter“ zulässig sein soll.
 
   **Standardwert = Ja**
 
-- **Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken:**
-Geben Sie an, ob Ausschneiden, Kopieren und Einfügen eingeschränkt werden sollen. Wählen Sie aus:
+- **Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken:** Geben Sie an, ob Ausschneiden, Kopieren und Einfügen eingeschränkt werden sollen. Wählen Sie aus:
   -   **Blockiert**: Ausschneiden, Kopieren und Einfügen zwischen richtlinienverwalteten Apps nicht zulassen.
   -   **Richtlinienverwaltete Apps**: Ausschneiden, Kopieren und Einfügen nur zwischen richtlinienverwalteten Apps zulassen.
   -   **Richtlinienverwaltete Apps mit Einfügen**: Ausschneiden oder Kopieren zwischen richtlinienverwalteten Apps zulassen. Einfügen der aus beliebigen Apps ausgeschnittenen oder kopierten Daten in diese App zulassen.
@@ -72,13 +69,13 @@ Geben Sie an, ob Ausschneiden, Kopieren und Einfügen eingeschränkt werden soll
 
   Für Geräte, die nicht bei Intune registriert sind, können Weblinks in richtlinienverwalteten Apps nur in der Managed Browser-App unter Verwendung der Verwaltungsrichtlinie für mobile Apps geöffnet werden.
 
-  Wenn Sie Intune zum Verwalten Ihrer Geräte verwenden, lesen Sie [Verwalten des Internetzugriffs mittels Managed Browser-Richtlinien mit Microsoft Intune](manage-internet-access-using-managed-browser-policies.md)..
+  Wenn Sie Intune zum Verwalten Ihrer Geräte verwenden, lesen Sie [Verwalten des Internetzugriffs mittels Richtlinien für verwaltete Browser mit Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
     **Standardwert = Ja**
 
-- **App-Daten verschlüsseln:** Für Apps, die einer [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, werden Daten im Ruhezustand mit vom Betriebssystem bereitgestellter Verschlüsselung auf Geräteebene verschlüsselt. Wenn eine PIN erforderlich ist, werden die Daten gemäß den Einstellungen in der Verwaltungsrichtlinie für mobile Apps verschlüsselt. Wie in der Apple-Dokumentation angegeben, [sind die von iOS 7 verwendeten Module FIPS 140-2-zertifiziert](http://support.apple.com/en-us/HT202739)..
+- **App-Daten verschlüsseln:** Für Apps, die einer [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, werden Daten im Ruhezustand mit vom Betriebssystem bereitgestellter Verschlüsselung auf Geräteebene verschlüsselt. Wenn eine PIN erforderlich ist, werden die Daten gemäß den Einstellungen in der Verwaltungsrichtlinie für mobile Apps verschlüsselt. Wie in der Apple-Dokumentation angegeben, [sind die von iOS 7 verwendeten Module FIPS 140-2-zertifiziert](http://support.apple.com/en-us/HT202739).
 
-  In den Richtlinieneinstellungen können Sie PIN-Verschlüsselungswerte festlegen.  Diese Werte bestimmen, wann die Daten verschlüsselt werden. Folgende Optionen sind verfügbar:
+  In den Richtlinieneinstellungen können Sie PIN-Verschlüssungswerte festlegen.  Diese Werte bestimmen, wann die Daten verschlüsselt werden. Folgende Optionen sind verfügbar:
   - **Wenn Gerät gesperrt**: Alle App-Daten unter dieser Richtlinie werden verschlüsselt, während das Gerät gesperrt ist.
   -   **Wenn Gerät gesperrt (außer geöffnete Dateien)**: Alle App-Daten unter dieser Richtlinie werden verschlüsselt, wenn das Gerät gesperrt ist, außer den Daten in Dateien, die derzeit in der App geöffnet sind.
   -   **Nach Neustart des Geräts**: Alle App-Daten unter dieser Richtlinie werden verschlüsselt, wenn das Gerät neu gestartet wird, bis das Gerät zum ersten Mal entsperrt wird.
@@ -93,31 +90,33 @@ Geben Sie an, ob Ausschneiden, Kopieren und Einfügen eingeschränkt werden soll
   **Standardwert = Ja**
 ##  Richtlinieneinstellungen für den iOS-Zugriff
 Der Begriff **Richtlinienverwaltete Apps** wird verwendet, um auf Apps zu verweisen, die mit MAM-Richtlinien konfiguriert sind.
-- **Einfache PIN für den Zugriff erforderlich:** Wählen Sie **Ja** aus, um für richtlinienverwaltete Apps eine PIN anzufordern. Benutzer werden beim ersten Ausführen der App im beruflichen Kontext aufgefordert, diese einzurichten.
+- **PIN für Zugriff erforderlich:**  Wählen Sie **Ja** aus, um für richtlinienverwaltete Apps eine PIN anzufordern. Benutzer werden beim ersten Ausführen der App im beruflichen Kontext aufgefordert, diese einzurichten.
 
   **Standardwert = Ja**
-- **Anzahl der Versuche bis zum Zurücksetzen der PIN:** Geben Sie die Anzahl der möglichen PIN-Eingabeversuche an, bevor der Benutzer die PIN zurücksetzen muss.
+    -  **Einfache PIN zulassen:** Geben Sie an, ob Benutzer einfache PIN-Sequenzen wie z. B. 1234 oder 1111 verwenden dürfen. **Standardwert = Ja**.
+    - **PIN-Länge:** Geben Sie die Mindestanzahl von Ziffern in einer PIN an. **Standardwert = 4**
+    - **Anzahl der Versuche bis zum Zurücksetzen der PIN:** Geben Sie die Anzahl der möglichen PIN-Eingabeversuche an, bevor der Benutzer die PIN zurücksetzen muss.
+  **Für diese Einstellung gibt es keinen Standardwert**.
 
-  **Für diese Einstellung gibt es keinen Standardwert.**.
-- **Fingerabdruck anstelle von PIN erforderlich (iOS 8.0+):** Wählen Sie **Ja** aus, um für den Zugriff auf die App einen Identitätsnachweis in Form eines Fingerabdrucks anstelle einer aus Zahlen bestehenden PIN anzufordern.
+  - **Fingerabdruck anstelle von PIN erforderlich (iOS 8.0+):** Wählen Sie **Ja** aus, um für den Zugriff auf die App einen Identitätsnachweis in Form eines Fingerabdrucks anstelle einer aus Zahlen bestehenden PIN anzufordern.
 Auf iOS-Geräten können Sie zulassen, dass sich die Benutzer per Fingerabdruck anstelle einer PIN identifizieren. Wenn der Benutzer versucht, mit seinem Geschäftskonto auf diese App zuzugreifen, wird er aufgefordert seine Identität per Fingerabdruck und nicht durch Eingabe einer PIN zu bestätigen.
 
-  **Standardwert = Ja**
+    **Standardwert = Ja**
 - **Unternehmensanmeldeinformationen für den Zugriff erforderlich:** Wählen Sie **Ja** aus, um Unternehmensanmeldeinformationen anstelle einer PIN für den Zugriff auf die App anzufordern. **Wenn Sie diese Einstellung auf „Ja“ festlegen, sind PIN oder Fingerabdruckidentifizierung damit hinfällig.** Der Benutzer wird aufgefordert, die Unternehmensanmeldeinformationen einzugeben.
 
   **Standardwert = Nein**
-- **Ausführen verwalteter Apps auf Geräten mit Jailbreak oder Rootzugriff blockieren:** Wählen Sie **Ja** aus, wenn Sie die Ausführung von verwalteten Apps auf per Jailbreak oder Rootzugriff manipulierten Geräten blockieren möchten. Der Benutzer kann die Apps weiterhin für private Zwecke verwenden, muss für berufliche Zwecke jedoch ein anderes Gerät verwenden.
+- **Ausführen verwalteter Apps auf Geräten mit Jailbreak oder Rootzugriff blockieren:** Wählen Sie **Ja** aus, wenn Sie die Ausführung von verwalteten Apps auf per Jailbreak oder Rooting manipulierten Geräten blockieren möchten. Der Benutzer kann die Apps weiterhin für private Zwecke verwenden, muss für berufliche Zwecke jedoch ein anderes Gerät verwenden.
 
   **Standardwert = Ja**
-- **Zugriffsanforderungen erneut überprüfen nach (Minuten)**|-   **Timeout:** Die Zeit (in Minuten), bevor die Zugriffsanforderungen der App erneut überprüft werden.
+- **Überprüfen der Zugriffsanforderungen nach (Minuten)**|-   **Timeout:**: Die Zeit (in Minuten), bevor die Zugriffsanforderungen der App erneut überprüft werden.
   -   **Offline-Toleranzperiode**: Wenn das Gerät offline ist, die Zeit (in Minuten), bevor die Zugriffsanforderungen für die App erneut geprüft werden.
 
   **Standardwert = 30 Minuten Timeout, Offline-Toleranzperiode = 720 Minuten**
-  - **Offline-Intervall (in Tagen), bevor App-Daten zurückgesetzt werden:** Sie können die Unternehmensdaten zurücksetzen, wenn ein Gerät für einen bestimmten Zeitraum offline war.  Legen Sie die Anzahl der Tage fest, die ein Gerät offline sein kann, bevor die Unternehmensdaten vom Gerät entfernt werden. **Mit der Eingabe des Werts 0 wird diese Einstellung deaktiviert.**.
+  - **Offline-Intervall, bevor App-Daten zurückgesetzt werden (in Tagen):** Sie können die Unternehmensdaten zurücksetzen, wenn ein Gerät für einen bestimmten Zeitraum offline war.  Legen Sie die Anzahl der Tage fest, die ein Gerät offline sein kann, bevor die Unternehmensdaten vom Gerät entfernt werden. **Mit der Eingabe des Werts 0 wird diese Einstellung deaktiviert**.
 
   **Standardwert = 90 Tage**
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

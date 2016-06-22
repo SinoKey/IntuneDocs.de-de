@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Einstellungen für iOS-Richtlinien in Microsoft Intune | Microsoft Intune
+title: iOS-Richtlinieneinstellungen | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -18,7 +18,7 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ Verwenden Sie die allgemeine **iOS-Konfigurationsrichtlinie** von Microsoft Intu
 -   **Kompatible und nicht kompatible Apps**: Geben Sie eine Liste von Apps an, die in Ihrem Unternehmen kompatibel bzw. nicht kompatibel sind. Auf Android- und iOS-Geräten können Sie mit dem **Bericht über nicht kompatible Apps** überprüfen, ob die vom Benutzer installierten Apps zu den als von Ihnen kompatibel angegebenen Apps gehören (die Installation der App kann jedoch nicht blockiert werden).
 
 > [!TIP]
-> Sie können Bestimmungen für Benutzer konfigurieren, um sicherzustellen, dass sie bestätigen, dass Apps auf ihrem Gerät, einschließlich persönlicher Apps, ausgewertet werden und dass nicht kompatible Anwendungen entweder blockiert oder als nicht kompatibel gemeldet werden. Benutzer müssen diese Bestimmungen akzeptieren, bevor sie ihr Gerät registrieren und Apps über das Unternehmensportal abrufen können. Weitere Informationen zur Verwendung von Nutzungsbedingungen finden Sie unter [Einstellungen für Nutzungsbedingungsrichtlinien in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md)..
+> Sie können Bestimmungen für Benutzer konfigurieren, um sicherzustellen, dass sie bestätigen, dass Apps auf ihrem Gerät, einschließlich persönlicher Apps, ausgewertet werden und dass nicht kompatible Anwendungen entweder blockiert oder als nicht kompatibel gemeldet werden. Benutzer müssen diese Bestimmungen akzeptieren, bevor sie ihr Gerät registrieren und Apps über das Unternehmensportal abrufen können. Weitere Informationen zur Verwendung von Nutzungsbedingungen finden Sie unter [Einstellungen für Nutzungsbedingungsrichtlinien in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
 Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie sie ggf. mithilfe einer benutzerdefinierten iOS-Richtlinie erstellen, die Ihnen das Importieren von Einstellungen erlaubt, die Sie mit dem Tool [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)erstellt haben. Weitere Informationen finden Sie weiter unten in diesem Thema unter **Benutzerdefinierte Richtlinieneinstellungen**.
 
@@ -77,7 +77,7 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 |Name der Einstellung|Details|iOS|
 |----------------|-------|
 |**Sicherung in iCloud zulassen**|Ermöglicht dem Benutzer, das Gerät in iCloud zu sichern.|Ja|
-|**Dokumentsynchronisierung in iCloud zulassen**|Erlaubt die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher.Ja|
+|**Dokumentsynchronisierung in iCloud zulassen**|Erlaubt die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher. Ja|
 |**Photo Stream-Synchronisierung in iCloud zulassen**|Erlaubt, dass Fotos auf dem Gerät mit iCloud synchronisiert werden.|Ja|
 |**Verschlüsselte Sicherung erforderlich**|Fordert an, dass Gerätesicherungen verschlüsselt werden.|Ja|
 
@@ -99,7 +99,7 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 |**App Store zulassen**|Ermöglicht dem Gerät den Zugriff auf den App Store.|Ja|
 |**Kennwort für den Zugriff auf den Anwendungsspeicher erforderlich**|Ja|
 |**In-App-Einkäufe zulassen**|Zulassen, dass Einkäufe im Store in einer ausgeführten App erfolgen.|Ja|
-|**Verwaltete Dokumente in anderen nicht verwalteten Apps zulassen**|Hiermit wird die Anzeige von Unternehmensdokumenten in beliebigen Apps zugelassen.|iOS 7.1 und höher|
+|**Verwaltete Dokumente in anderen nicht verwalteten Apps zulassen**|Hiermit wird die Anzeige von Unternehmensdokumenten in beliebigen Apps zugelassen.<br>**Beispiel:** Sie möchten verhindern, dass Benutzer Dateien aus der OneDrive-App in Dropbox speichern. Legen Sie für diese Einstellung „Nein“ fest. Sobald das Gerät die Richtlinie empfängt (z. B. nach einem Neustart), ist kein Speichern mehr möglich.|iOS 7.1 und höher|
 |**Nicht verwaltete Dokumente in anderen verwalteten Apps zulassen**|Hiermit wird die Anzeige beliebiger Dokumente in verwalteten Apps zugelassen.|iOS 7.1 und höher|
 |**Videokonferenz zulassen**|Zulassen von Videokonferenz-Apps wie Facetime auf dem Gerät.|Ja|
 |**Nicht jugendfreie Inhalte im Medienstore zulassen**|Zulassen, dass das Gerät im Store auf nicht jugendfreie Inhalte zugreift.|Ja|
@@ -135,7 +135,7 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 
 
 ### Einstellungen für kompatible und nicht kompatible Anwendungen
-Geben Sie in der Liste der **kompatiblen und nicht kompatiblen Apps** eine Liste kompatibler oder nicht kompatibler Apps mit den folgenden Informationen ein:
+Geben Sie in der Liste der **kompatiblen &amp; nicht kompatiblen Apps** eine Liste kompatibler oder nicht kompatibler Apps mit den folgenden Informationen ein:
 
 > [!NOTE]
 > Eine einzelne Richtlinie kann nur eine Liste kompatibler oder eine Liste nicht kompatibler Apps enthalten. Sie können nicht beide Typen in derselben Richtlinie angeben.
@@ -153,14 +153,14 @@ Geben Sie in der Liste der **kompatiblen und nicht kompatiblen Apps** eine Liste
 
 |Name der Einstellung|Details|
 |----------------|--------------------|
-|**Wählen Sie eine verwalteten App aus, die ausgeführt werden darf, während sich das Gerät im Kiosk-Modus befindet**|Klicken Sie auf **Durchsuchen**, und geben Sie dann die verwaltete App oder eine App aus einem Store an, die ausgeführt werden darf, wenn sich das Gerät im Kiosk-Modus befindet. Andere Apps dürfen auf dem Gerät nicht ausgeführt werden.Weitere Informationen finden Sie unter **Angeben von URLs zu App-Stores** weiter unten in diesem Thema.|
+|**Wählen Sie eine verwalteten App aus, die ausgeführt werden darf, während sich das Gerät im Kiosk-Modus befindet**|Wählen Sie **Durchsuchen**, und geben Sie dann die verwaltete App oder eine App aus einem Store an, die ausgeführt werden darf, wenn sich das Gerät im Kioskmodus befindet. Andere Apps dürfen auf dem Gerät nicht ausgeführt werden. Weitere Informationen finden Sie unter **Angeben von URLs zu App-Stores** weiter unten in diesem Thema.|
 |**Toucheingabe zulassen**|Aktiviert oder deaktiviert den Touchscreen des Geräts.|
 |**Bildschirmdrehung zulassen**|Aktiviert oder deaktiviert die Funktion zum Ändern der Bildschirmausrichtung, wenn Sie das Gerät drehen.|
 |**Lautstärkeregler zulassen**|Aktiviert oder deaktiviert die Verwendung der Lautstärkeregler am Gerät.|
 |**Ruftonschalter zulassen**|Aktiviert oder deaktiviert den Ruftonschalter (Stummschaltung) am Gerät.|
 |**Schaltfläche für Standby und Aktivieren zulassen**|Aktiviert oder deaktiviert die Taste für Standby/Aktivierung des Bildschirms am Gerät.|
 |**Automatische Sperrung zulassen**|Aktiviert oder deaktiviert die automatische Sperrung des Geräts.|
-|**Mono-/Audio aktivieren**|Aktiviert oder deaktiviert die Barrierefreiheitseinstellung **Mono/Audio**..|
+|**Mono-/Audio aktivieren**|Aktiviert oder deaktiviert die Barrierefreiheitseinstellung **Mono/Audio**.|
 |**Voice-over aktivieren**|Aktiviert oder deaktiviert die Barrierefreiheitseinstellung **VoiceOver** , die den Text auf dem Gerätedisplay laut vorliest.|
 |**Voice-over-Anpassungen aktivieren**|Aktiviert oder deaktiviert Voice-over-Anpassungen, die Ihnen das Anpassen der VoiceOver-Funktion ermöglichen (z. B. wie schnell Bildschirmtext vorgelesen wird).|
 |**Zoom aktivieren**|Aktiviert oder deaktiviert die Barrierefreiheitseinstellung **Zoom** , die Ihnen das Vergrößern des Texts auf dem Gerätedisplay durch Toucheingabe ermöglicht.|
@@ -170,8 +170,7 @@ Geben Sie in der Liste der **kompatiblen und nicht kompatiblen Apps** eine Liste
 |**Touch-Unterstützung aktivieren**|Aktiviert oder deaktiviert die Barrierefreiheitseinstellung **Touch-Unterstützung** , die Benutzer bei der Ausführung von Bildschirmgesten unterstützt, die ihnen Schwierigkeiten bereiten.|
 |**Touch-Unterstützungsanpassungen aktivieren**|Aktiviert oder deaktiviert Touch-Unterstützungsanpassungen, mit denen Sie die Funktion der Touch-Unterstützung individuell einrichten können.|
 |**Sprachauswahl aktivieren**|Aktiviert oder deaktiviert die Barrierefreiheitseinstellung **Sprachauswahl** , mit der ausgewählter Text vorgelesen werden kann.|
-> [!NOTE]
-> Die folgenden Hinweise gelten für Kiosk-Moduseinstellungen für iOS-Geräte:
+> [!NOTE] Die folgenden Hinweise gelten für Kioskmoduseinstellungen für iOS-Geräte:
 > 
 > -   Bevor Sie ein iOS-Gerät für den Kiosk-Modus konfigurieren können, müssen Sie das Gerät mithilfe des [Apple Configurator-Tools](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) oder des Geräteregistrierungs-Managers in den überwachten Modus versetzen. Weitere Informationen zum Apple Configurator-Tool finden Sie in der Apple-Dokumentation.
 > -   Wenn die angegebene iOS-App nach der Bereitstellung der Konfigurationsrichtlinie installiert wird, wird das Gerät erst nach einem Neustart in den Kiosk-Modus versetzt.
@@ -183,9 +182,9 @@ Im **Bericht über nicht kompatible Apps** können Sie sich über die Konformit�
 
 ##### So führen Sie den Bericht über nicht kompatible Apps aus
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Berichte** &gt; **Bericht über nicht kompatible Apps**..
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Berichte** &gt; **Bericht über nicht kompatible Apps**.
 
-2.  Wählen Sie die Gerätegruppen aus, die Sie überprüfen möchten, geben Sie an, ob Sie nach kompatiblen und/oder nicht kompatiblen Apps suchen möchten, und klicken Sie dann auf **Bericht anzeigen**..
+2.  Wählen Sie die Gerätegruppen aus, die Sie überprüfen möchten, geben Sie an, ob Sie nach kompatiblen und/oder nicht kompatiblen Apps suchen möchten, und wählen Sie dann **Bericht anzeigen**.
 
 #### Angeben von URLs zu App-Stores
 Um eine App-URL in der Liste mit kompatiblen und nicht kompatiblen Apps oder in der Option **Verwaltete App auswählen, die ausgeführt werden darf, wenn sich das Gerät im Kioskmodus befindet (nur iOS)** anzugeben, verwenden Sie das folgende Format:
@@ -194,10 +193,9 @@ Suchen Sie mithilfe einer Suchmaschine die gewünschte App im iTunes App Store, 
 
 Kopieren Sie die URL der Seite, und verwenden Sie diese als URL zur Konfiguration der Liste kompatibler oder nicht kompatibler Apps oder der App, die Sie im Kioskmodus ausführen möchten.
 
-**Beispiel:** Suchen Sie nach **Microsoft Word für iPad**. Die URL, die Sie verwenden, ist **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**..
+**Beispiel:** Suchen Sie nach **Microsoft Word für iPad**. Die URL, die Sie verwenden, ist **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
-> [!NOTE]
-> Sie können auch die iTunes-Software verwenden, um die App zu suchen, und dann den Befehl **Link kopieren** , um die App-URL abzurufen.
+> [!NOTE] Sie können auch die iTunes-Software verwenden, um die App zu suchen, und dann den Befehl **Link kopieren**, um die App-URL abzurufen.
 
 
 ## Benutzerdefinierte Richtlinieneinstellungen
@@ -224,7 +222,7 @@ Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigur
 |Name der Einstellung|Details|
     |----------------|--------------------|
 |**Name des benutzerdefinierten Konfigurationsprofils (zur Anzeige beim Benutzer)**|Geben Sie einen Namen für die Richtlinie an, der auf dem Gerät und in Intune-Richtlinienberichten angezeigt wird.|
-|**Profil-Konfigurationsdatei**|Klicken Sie auf **Importieren**, und suchen Sie dann das mit Apple Configurator erstellte Konfigurationsprofil. **Hinweis:** Stellen Sie sicher, dass die Einstellungen, die Sie aus dem Apple Configurator-Tool exportieren, mit der iOS-Version auf den Geräten kompatibel sind, für die Sie die benutzerdefinierte iOS-Richtlinie bereitstellen. Um Informationen zum Korrigieren inkompatibler Einstellungen zu erhalten, suchen Sie nach der **Konfigurationsprofilreferenz** und der **Verwaltungsprotokollreferenz für mobile Geräte** auf der [Apple Developer-Website](https://developer.apple.com/).|
+|**Profil-Konfigurationsdatei**|Wählen Sie **Importieren**, und suchen Sie dann das mit Apple Configurator erstellte Konfigurationsprofil. **Hinweis:** Stellen Sie sicher, dass die Einstellungen, die Sie aus dem Apple Configurator-Tool exportieren, mit der iOS-Version auf den Geräten kompatibel sind, für die Sie die benutzerdefinierte iOS-Richtlinie bereitstellen. Um Informationen zum Korrigieren inkompatibler Einstellungen zu erhalten, suchen Sie nach der **Konfigurationsprofilreferenz** und der **Verwaltungsprotokollreferenz für mobile Geräte** auf der [Apple Developer-Website](https://developer.apple.com/).|
     |**Details zum Konfigurationsprofil**|Zeigt den XML-Code des importierten Konfigurationsprofils an.|
 
 ### Weitere Informationen:
@@ -232,6 +230,6 @@ Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigur
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

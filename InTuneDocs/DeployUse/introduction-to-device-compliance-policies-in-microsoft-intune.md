@@ -18,7 +18,7 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,7 +30,7 @@ ms.suite: ems
 Um Unternehmensdaten zu schützen, müssen Sie sicherstellen, dass die Geräte, die für den Zugriff auf Unternehmens-Apps und -daten verwendet werden, mit bestimmten Regeln, z. B. Verwenden einer PIN für den Zugriff auf das Gerät, und der Verschlüsselung von Daten kompatibel sind, die auf dem Gerät gespeichert sind. Eine Gruppe solcher Regeln wird als Kompatibilitätsrichtlinie bezeichnet.
 
 ## Wie verwende ich Kompatibilitätsrichtlinien?
-Sie können Kompatibilitätsrichtlinien mit Richtlinien für den bedingten Zugriff verwenden, um den Zugriff auf Geräte einzuschränken, die Kompatibilitätsrichtlinienregeln entsprechen. Lesen Sie den Artikel [Einschränken des Zugriffs auf E-Mail- und Office 365-Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), um zu verstehen, wie die beiden Richtlinien zusammen verwendet werden können.
+Sie können Kompatibilitätsrichtlinien mit Richtlinien für den bedingten Zugriff verwenden, um nur Geräte zuzulassen, die Kompatibilitätsrichtlinienregeln für den Zugriff auf E-Mail und andere Dienste entsprechen. Lesen Sie den Artikel [Einschränken des Zugriffs auf E-Mail- und Office 365-Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), um zu verstehen, wie die beiden Richtlinien zusammen verwendet werden können.
 
 Sie können Kompatibilitätsrichtlinien auch unabhängig vom bedingten Zugriff nutzen. Bei unabhängiger Nutzung werden die Zielgeräte ausgewertet und mit ihrem Kompatibilitätsstatus gemeldet. Sie können beispielsweise einen Bericht dazu erstellen, wie viele Geräte nicht verschlüsselt sind oder per Jailbreak oder Rootzugriff manipuliert wurden. Allerdings gelten bei unabhängiger Nutzung keine Zugriffsbeschränkungen für Unternehmensressourcen.
 
@@ -67,6 +67,6 @@ Die folgende Tabelle enthält die von Konformitätsrichtlinien unterstützten Ge
 [Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

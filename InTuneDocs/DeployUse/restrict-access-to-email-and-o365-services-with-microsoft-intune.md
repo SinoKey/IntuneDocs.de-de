@@ -18,7 +18,7 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,7 +40,7 @@ Ein typischer Ablauf des bedingten Zugriffs:
 ![Diagramm zur Veranschaulichung der Entscheidungspunkte, mit denen ermittelt wird, ob ein Gerät Zugriff auf einen Dienst erhält oder blockiert wird](./media/ConditionalAccess4.png)
 
 ## So konfigurieren Sie den bedingten Zugriff
-Verwenden Sie den bedingten Zugriff zur Verwaltung des Zugriffs auf Microsoft **Exchange lokal**, **Exchange Online**, **Exchange Online Dedicated**, **SharePoint Online** und **Skype for Business Online**..
+Verwenden Sie den bedingten Zugriff zur Verwaltung des Zugriffs auf Microsoft **Exchange lokal**, **Exchange Online**, **Exchange Online Dedicated**, **SharePoint Online** und **Skype for Business Online**.
 
 Um den bedingten Zugriff einzurichten, konfigurieren Sie eine Richtlinie für die Gerätekompatibilität und eine Richtlinie für bedingten Zugriff.
 
@@ -69,6 +69,6 @@ Im Gegensatz zu anderen Intune-Richtlinien stellen Sie Richtlinien für bedingte
   - [Bedingte Zugriffsrichtlinie für Skype for Business erstellen](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

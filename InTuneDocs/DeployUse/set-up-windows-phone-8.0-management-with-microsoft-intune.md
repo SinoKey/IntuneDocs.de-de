@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Einrichten der Windows Phone 8.0-Verwaltung mit Microsoft Intune | Microsoft Intune
+title: Einrichten der Windows Phone 8.0-Verwaltung | Microsoft Intune
 description:
 keywords:
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,6 +28,8 @@ ms.suite: ems
 # Einrichten der Geräteverwaltung für Windows Phone 8.0
 
 Windows Phone 8.0 erfordert ein Symantec-Zertifikat, damit die Intune-Unternehmensportal-App installiert und die Geräteverwaltung ermöglicht werden kann. Ein Zertifikat ist auch zum Signieren branchenspezifischer Apps erforderlich. Das folgende Thema gilt nur für Windows Phone 8.0. Informationen zum Verwaltung von Windows Phone 8.1 oder höher (einschließlich Windows 10 Mobile) finden Sie unter [Einrichten der Windows Phone-Registrierung](set-up-windows-phone-management-with-microsoft-intune.md).
+
+> [!IMPORTANT] Ab September 2016 kann die Unternehmensportal-App für Windows 8.0 und Windows Phone 8.0 nicht mehr heruntergeladen werden.
 
 -   **Windows Phone 8**: Zertifikat erforderlich
 -   **Windows Phone 8.1 und Windows 10 Mobile** erfordern nur ein Zertifikat, wenn Folgendes gilt:
@@ -184,6 +186,6 @@ Sie können die Unternehmensportal-App für Windows Phone 8.1-Geräte mit Intun
     > -   Wenn Sideload-Apps installiert werden und Windows Phone 8.0-Geräte sich registrieren müssen und die ssp.xap benötigen, erstellen Sie eine neue Softwarebereitstellung der ssp.xap, und stellen Sie sie mit der Aktion **Deinstallieren** bereit. Windows Phone 8.0-Geräte unterstützen nicht die erzwungene Installation oder Deinstallation von Anwendungen, d. h. sie ignorieren die Bereitstellung. Windows Phone 8.1-Geräte unterstützen den Deinstallationsvorgang und entfernen die ssp.xap.
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 
