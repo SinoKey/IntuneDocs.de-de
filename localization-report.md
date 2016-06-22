@@ -4477,9 +4477,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\understand-microsoft-intune-operations-by-using-reports.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/7916ab8c07a25dd23bdab062f29710b0369d9b52/InTuneDocs/DeployUse/understand-microsoft-intune-operations-by-using-reports.md)
-* Current Handback File: [understand-microsoft-intune-operations-by-using-reports.d55d0cc7ce38170afa526b0b0094526138a0680a.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/80b2222133db655027a1f181a3a61c8627dd17f0/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/understand-microsoft-intune-operations-by-using-reports.d55d0cc7ce38170afa526b0b0094526138a0680a.de-de.xlf)
-* Current Handback Datetime: 2016-06-22 11:52:24
+* Current Target File: [InTuneDocs\DeployUse\understand-microsoft-intune-operations-by-using-reports.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/45bfeda72205f608a5514d56a1b0fb81e46086a9/InTuneDocs/DeployUse/understand-microsoft-intune-operations-by-using-reports.md)
+* Current Handback File: [understand-microsoft-intune-operations-by-using-reports.d55d0cc7ce38170afa526b0b0094526138a0680a.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/736fb37415eee98623aae4f62a654b586e95b124/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/understand-microsoft-intune-operations-by-using-reports.d55d0cc7ce38170afa526b0b0094526138a0680a.de-de.xlf)
+* Current Handback Datetime: 2016-06-22 18:13:41
 * [Back to Top](#report-top)
 
 ##### <a name='55b99e326e4f22aee62b207eb2e976a8d52e70c3249'></a> Source: [InTuneDocs\DeployUse\understand-your-devices-with-inventory-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/DeployUse/understand-your-devices-with-inventory-in-microsoft-intune.md)

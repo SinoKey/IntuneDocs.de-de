@@ -6,19 +6,22 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\mac-os-x-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/DeployUse/mac-os-x-policy-settings-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#c31ee9bb3aafa6b54068adda5b14f2c1cacacd3165)
+ [InTuneDocs\DeployUse\understand-microsoft-intune-operations-by-using-reports.md](https://github.com/Microsoft/IntuneDocs-pr/blob/617f1cd42de49f0c8675bd450591a390af674e73/InTuneDocs/DeployUse/understand-microsoft-intune-operations-by-using-reports.md) | OutofSyncHandedBackSuccess | [Details](#b8af36cef1bcb9077d0ab611a14fb88c0f458ece248)
 
 ## Item Details
-##### <a name='c31ee9bb3aafa6b54068adda5b14f2c1cacacd3165'></a> Source: [InTuneDocs\DeployUse\mac-os-x-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/DeployUse/mac-os-x-policy-settings-in-microsoft-intune.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\mac-os-x-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/514e466a727d1a1ad291e0d81bb864fe44302503/InTuneDocs/DeployUse/mac-os-x-policy-settings-in-microsoft-intune.md)
-* Handoff File: [mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/d0030186b028f24440de21bea425b0af7756757d/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.de-de.xlf)
-* Handoff Datetime: 2016-05-13 16:03:41
+##### <a name='b8af36cef1bcb9077d0ab611a14fb88c0f458ece248'></a> Source: [InTuneDocs\DeployUse\understand-microsoft-intune-operations-by-using-reports.md](https://github.com/Microsoft/IntuneDocs-pr/blob/617f1cd42de49f0c8675bd450591a390af674e73/InTuneDocs/DeployUse/understand-microsoft-intune-operations-by-using-reports.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [understand-microsoft-intune-operations-by-using-reports.d55d0cc7ce38170afa526b0b0094526138a0680a.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/db4baa3b144e0fb789359f3bceec0c7a857f45e2/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/understand-microsoft-intune-operations-by-using-reports.d55d0cc7ce38170afa526b0b0094526138a0680a.de-de.xlf)
+* Handoff Datetime: 2016-06-21 16:56:14
 * Handoff Reason: Include
-* Archive File: [mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/1bd1fca2cde669d0ebee6ff5e0c6cc126c019f67/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/archive/mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.de-de.xlf)
-* Archive Datetime: 2016-06-02 02:11:51
-* Handback File: [mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/b24a9cde49ea256f277902d7febea840133b0b85/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.de-de.xlf)
-* Handback Datetime: 2016-06-22 17:46:20
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [InTuneDocs\DeployUse\understand-microsoft-intune-operations-by-using-reports.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/45bfeda72205f608a5514d56a1b0fb81e46086a9/InTuneDocs/DeployUse/understand-microsoft-intune-operations-by-using-reports.md)
+* Current Handback File: [understand-microsoft-intune-operations-by-using-reports.d55d0cc7ce38170afa526b0b0094526138a0680a.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/736fb37415eee98623aae4f62a654b586e95b124/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/understand-microsoft-intune-operations-by-using-reports.d55d0cc7ce38170afa526b0b0094526138a0680a.de-de.xlf)
+* Current Handback Datetime: 2016-06-22 18:13:41
 * [Back to Top](#report-top)
 
 
