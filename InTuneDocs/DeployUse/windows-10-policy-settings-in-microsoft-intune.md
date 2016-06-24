@@ -18,7 +18,7 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -31,7 +31,7 @@ Verwenden Sie die in diesem Thema aufgeführten Richtlinieneinstellungen, um Ein
 
 ## Allgemeine Konfigurationsrichtlinieneinstellungen
 
-Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für Windows 10, um allgemeine Einstellungen für registrierte Windows 10 Desktop- und Windows 10 Mobile-Geräte zu konfigurieren:
+Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für Windows 10, um allgemeine Einstellungen für registrierte Windows 10 Desktop- und Windows 10 Mobile-Geräte zu konfigurieren. Diese Richtlinie kann nicht verwendet werden, wenn Sie Windows 10-PCs mit der Intune-Clientsoftware verwalten.
 
 
 ### Kennwort
@@ -216,7 +216,7 @@ Wenn Sie die benutzerdefinierte Windows-URI-Richtlinie verwenden möchten, müss
 |**​Automatische Aktualisierung zulassen**<br>(nur Desktop)|**Vollständiger URI-Pfad**: ./Vendor/MSFT/Policy/Config/Update/AllowAutoUpdate<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** - **5** (Standard: **1**)|
 |**Installationstag planen**<br>(nur Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Update/ScheduledInstallDay<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Täglich (Standard)<br>**1** – Sonntag<br>**2** – Montag<br>**3** – Dienstag<br>**4** – Mittwoch<br>**5** – Donnerstag<br>**6** – Freitag<br>**7** – Samstag|
 |**Installationszeit planen**<br>(Desktop und Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Update/ScheduledInstallTime<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – **23** Uhr (**0** ist Mitternacht) (Standard: **3**)|
-|**DeviceLock/AllowIdleReturnWithoutPassword**<br>(nur Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/DeviceLock/AllowIdleReturnWithoutPassword<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Der Benutzer kann den Timer für den den Kennwort-Verlängerungszeitraum nicht festlegen, und der Wert wird auf „immer“ festgelegt.<br>**1** – Der Benutzer kann den Timer für den Kennwort-Verlängerungszeitraum festlegen.|
+|**DeviceLock/AllowIdleReturnWithoutPassword**<br>(nur Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/DeviceLock/AllowIdleReturnWithoutPassword<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Der Benutzer kann den Timer für die Kennwort-Toleranzperiode nicht einstellen, und der Wert wird auf „immer“ festgelegt.<br>**1** – Der Benutzer kann den Timer für den Kennwort-Verlängerungszeitraum festlegen.|
 |**WiFi/AllowWiFi**<br>(nur Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/WiFi/AllowWiFi<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – **WLAN-Verbindung nicht zulassen**.<br>**1** – **WLAN-Verbindung zulassen** (Standard)|
 |**WiFi/AllowInternetSharing**<br>(Desktop und Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/WiFi/AllowInternetSharing<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Nutzung der Internetverbindung nicht zulassen.<br>**1** – Nutzung der Internetverbindung zulassen (Standard)|
 |**WiFi/AllowAutoConnectToWiFiSenseHotspots**<br>(Desktop und Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/WiFi/AllowAutoConnectToWiFiSenseHotspots<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Nicht zulässig<br>**1** – Zulässig (Standard)|
@@ -332,6 +332,6 @@ Wenn Sie die benutzerdefinierte Windows-URI-Richtlinie verwenden möchten, müss
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

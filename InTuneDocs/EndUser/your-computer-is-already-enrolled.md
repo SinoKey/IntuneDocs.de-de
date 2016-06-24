@@ -18,7 +18,7 @@ ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Ihr Computer ist bereits registriert
 
-Wenn Sie die Fehlermeldung erhalten, dass Ihr Computer bereits registriert ist, bedeutet dies, dass Ihr Computer zwar dem Unternehmensportal bereits hinzugefügt, aber noch nicht mit Ihrem Benutzerkonto verknüpft wurde. Führen Sie die folgenden Schritte aus, um Ihren Computer mit Ihrem Benutzerkonto zu verknüpfen und den Vorgang abzuschließen.
+Wenn Sie die Fehlermeldung erhalten, dass Ihr Computer bereits registriert ist, bedeutet dies, dass Ihr Computer dem Unternehmensportal zwar bereits hinzugefügt, aber noch nicht mit Ihrem Benutzerkonto verknüpft wurde. Führen Sie die folgenden Schritte aus, um Ihren Computer mit Ihrem Benutzerkonto zu verknüpfen und den Vorgang abzuschließen.  
 
 So verknüpfen Sie Ihren Computer
 
@@ -38,8 +38,10 @@ So verknüpfen Sie Ihren Computer
 
 3.  Folgen Sie den Anweisungen, um den Computer mit Ihrem Benutzerkonto zu verknüpfen.
 
+Wenn Sie lieber die Registrierung aufheben möchten, befolgen Sie die Anweisungen für Ihren Gerätetyp: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) oder [Windows](unenroll-your-device-from-intune-windows.md).
 
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

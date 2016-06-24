@@ -26,7 +26,9 @@ ms.suite: ems
 ---
 
 # Verwalten von Intune-Lizenzen
-Bevor Benutzer sich für die Verwendung des Intune-Diensts anmelden oder ihre Geräte für die Verwaltung registrieren können, muss ihnen zunächst über das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) eine Lizenz für Ihr Intune-Abonnement zugewiesen werden. Sobald eine Lizenz zugewiesen wurde, werden die Namen der Benutzer in der Intune-Verwaltungskonsole angezeigt. Benutzer können anschließend bis zu fünf Geräte registrieren.
+Bevor Benutzer sich für die Verwendung des Intune-Diensts anmelden oder ihre Geräte für die Verwaltung registrieren können, müssen Sie jedem Benutzer zunächst über das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) eine Lizenz für Ihr Intune-Abonnement zuweisen. Sobald eine Lizenz zugewiesen wurde, werden die Namen der Benutzer in der Intune-Verwaltungskonsole angezeigt. Benutzer können anschließend bis zu fünf Geräte registrieren.
+
+Unternehmen, die die Enterprise Mobility Suite (EMS) von Microsoft verwenden, verfügen möglicherweise über Benutzer, die nur Azure Active Directory Premium- oder Intune-Dienste im EMS-Paket benötigen. Sie können einen oder mehrere Dienste mithilfe von [Azure Active Directory PowerShell-Cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) zuweisen. Weitere Informationen finden Sie unter [Verwalten von Intune-Lizenzen mithilfe von PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
 
 ## So werden Intune-Lizenzen zugewiesen
 Wenn Benutzerkonten aus Ihrer lokalen Active Directory-Bereitstellung synchronisiert oder über das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) manuell zu Ihrem Clouddienstabonnement hinzugefügt werden, wird ihnen nicht automatisch eine Intune-Lizenz zugewiesen. Stattdessen muss ein Intune-Mandantenadministrator die Benutzerkonten später bearbeiten, um den betreffenden Benutzern über das Office 365-Portal eine Lizenz zuzuweisen.
@@ -42,7 +44,7 @@ Verwenden Sie das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=6
 
 1.  Melden Sie sich mit den Anmeldeinformationen Ihres Mandantenadministrators beim [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) an, und wählen Sie dann **Personen** > **Alle Benutzer**.
 
-2.  Wählen Sie das Benutzerkonto aus, dem Sie eine Intune-Benutzerlizenz zuweisen möchten, und wählen Sie in den Eigenschaften des Benutzerkontos die Option **Microsoft Intune**.
+2.  Wählen Sie das Benutzerkonto aus, dem Sie eine Intune-Benutzerlizenz zuweisen möchten, und wählen Sie dann entweder **Microsoft Intune** oder **Enterprise Mobility Suite** aus.
 
 3.  Das Benutzerkonto verfügt jetzt über die erforderlichen Berechtigungen, um den Dienst zu nutzen und Geräte für die Verwaltung zu registrieren.
 
@@ -90,9 +92,9 @@ Sie können den folgenden Befehl ausführen, um den Intune-Serviceplan auszuschl
 Gratulation! Sie haben Schritt 4 der Kurzanleitung *Erste Schritte mit Intune* abgeschlossen.
 >[!div class="step-by-step"]
 
->[&larr;**Synchronisieren von Benutzern mit Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organisieren von Benutzern und Geräten** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
+>[&larr; **Synchronisieren von Benutzern mit Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organisieren von Benutzern und Geräten** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
