@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,7 +39,7 @@ Wenn Sie in einer verwalteten App auf Unternehmensdaten zugreifen, wird eine Mel
 ## Wie erhalte ich verwaltete Apps?
 Es gibt verschiedene Möglichkeiten, verwaltete Apps zu erhalten:
 
--   Wenn Ihr Gerät bei Microsoft Intune registriert ist, installieren Sie die App entweder über die Unternehmensportal-App oder -Website, oder Ihr IT-Administrator installiert sie auf Ihrem Gerät. Informationen zum Registrieren finden Sie unter [Registrieren Ihres Geräts bei Intune](enroll-your-device-in-Intune-android.md)..
+-   Wenn Ihr Gerät bei Microsoft Intune registriert ist, installieren Sie die App entweder über die Unternehmensportal-App oder -Website, oder Ihr IT-Administrator installiert sie auf Ihrem Gerät. Informationen zum Registrieren finden Sie unter [Registrieren Ihres Geräts bei Intune](enroll-your-device-in-Intune-android.md).
 
 -   Sie installieren eine App aus dem Play Store und melden sich dann mit Ihrem Unternehmensbenutzerkonto an, das von Intune verwaltet wird.
 
@@ -66,22 +66,22 @@ Es folgen einige Beispiele für Optionen, die Ihr IT-Administrator in einer App 
 
 Es folgen allgemeine Anwendungen, die Ihre IT-Abteilung ggf. verwaltet:
 
--   Verwalteter Webbrowser
+-   Intune Managed Browser
 
--   Verwaltete Bildanzeige
+-   Intune Image Viewer
 
--   Verwaltete PDF-Anzeige
+-   Intune PDF Viewer
 
--   Verwalteter Audio/Video-Player
+-   Intune AV Player
 
 -   Microsoft Word, Excel, PowerPoint
 
-Wenden Sie sich an Ihren IT-Administrator, um weitere Informationen zu den verwalteten Anwendungen auf Ihrem Gerät zu erhalten.
+Wenden Sie sich an Ihren IT-Administrator, um weitere Informationen zu den verwalteten Anwendungen auf Ihrem Gerät zu erhalten. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 ### Weitere Informationen:
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

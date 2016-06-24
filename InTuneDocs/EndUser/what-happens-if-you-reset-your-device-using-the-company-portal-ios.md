@@ -42,11 +42,11 @@ Wenn Sie das Unternehmensportal zum Zurücksetzen Ihres iPhones oder iPads verwe
 
 -   Ihr Unternehmens-E-Mail-Konto wird gelöscht, und nicht gespeicherte E-Mails werden gelöscht.
 
-Wenn Sie Fragen haben oder die Kontaktinformationen für Ihren IT-Administrator nicht finden können, suchen Sie danach auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 ### Weitere Informationen:
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

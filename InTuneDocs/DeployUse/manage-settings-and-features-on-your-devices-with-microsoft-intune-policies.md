@@ -200,9 +200,9 @@ Wenn Sie eine Richtlinie löschen oder ein Gerät aus einer Gruppe entfernen, f�
 
 ### Wo finde ich Hilfe zur Problembehandlung bei Richtlinien?
 
-Siehe [Behandlung von Problemen mit Richtlinien in Microsoft Intune](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md).
+Siehe [Behandlung von Problemen mit Richtlinien in Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
