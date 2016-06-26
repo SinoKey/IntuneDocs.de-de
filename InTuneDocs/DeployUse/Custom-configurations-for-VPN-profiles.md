@@ -50,7 +50,8 @@ Sie können benutzerdefinierte Konfigurationen verwenden, um VPN-Profile in Intu
 
 Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informationen zur Bereitstellung im unteren Teil der Richtlinienliste anzeigen.
 
-##Beispiel für URI-Einstellungen für eine benutzerdefinierte VPN-Profilkonfiguration Hier folgen Beispieleinträge für URI-Werte zum Erstellen einer benutzerdefinierten Konfiguration für ein VPN in einem fiktiven Unternehmen namens Contoso. Weitere Informationen, wie etwa den Datentyp für die einzelnen Einträge, finden Sie unter [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)
+##Beispiel für URI-Einstellungen für eine benutzerdefinierte VPN-Profilkonfiguration 
+Hier folgen Beispieleinträge für URI-Werte zum Erstellen einer benutzerdefinierten Konfiguration für ein VPN in einem fiktiven Unternehmen namens Contoso. Weitere Informationen, wie etwa den Datentyp für die einzelnen Einträge, finden Sie unter [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)
 
 Natives Contoso-VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
