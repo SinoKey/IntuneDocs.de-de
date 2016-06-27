@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3149e1f54398fee4dec6acb6d5de1a4eec8da59b/InTuneDocs/DeployUse/TOC.md) | OutofSyncHandedBackSuccess | [Details](#d981c3363d5ad6753ac7d8f0123838cf26e98c87248)
 
 ## Item Details
-##### <a name='d981c3363d5ad6753ac7d8f0123838cf26e98c87248'></a> Source: [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3149e1f54398fee4dec6acb6d5de1a4eec8da59b/InTuneDocs/DeployUse/TOC.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/f7dbc77cbb0378a17eec52d14e298caa0661e129/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.de-de.xlf)
-* Handoff Datetime: 2016-06-27 17:47:42
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/463990356feb76c21040dd099b17f73bc9f85f98/InTuneDocs/DeployUse/TOC.md)
-* Current Handback File: [TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/da4590bba619838169ed1a636c763413c310d445/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.de-de.xlf)
-* Current Handback Datetime: 2016-06-27 18:51:08
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
