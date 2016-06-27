@@ -4522,9 +4522,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/0d742d2378b8fed0506df0e645c705d867134798/InTuneDocs/DeployUse/TOC.md)
-* Current Handback File: [TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/8731a5488e7763b3243b362a96c2eb98d9551392/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.de-de.xlf)
-* Current Handback Datetime: 2016-05-27 00:13:24
+* Current Target File: [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/463990356feb76c21040dd099b17f73bc9f85f98/InTuneDocs/DeployUse/TOC.md)
+* Current Handback File: [TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/da4590bba619838169ed1a636c763413c310d445/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.de-de.xlf)
+* Current Handback Datetime: 2016-06-27 18:51:08
 * [Back to Top](#report-top)
 
 ##### <a name='b8af36cef1bcb9077d0ab611a14fb88c0f458ece249'></a> Source: [InTuneDocs\DeployUse\understand-microsoft-intune-operations-by-using-reports.md](https://github.com/Microsoft/IntuneDocs-pr/blob/617f1cd42de49f0c8675bd450591a390af674e73/InTuneDocs/DeployUse/understand-microsoft-intune-operations-by-using-reports.md)
