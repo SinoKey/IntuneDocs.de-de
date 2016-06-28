@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.experimental.md](https://github.com/Microsoft/IntuneDocs-pr/blob/8ec8c952a4d1762dddb15f274367088fea8b9687/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.experimental.md) | OutofSyncHandedBackSuccess | [Details](#ad43197047734eee6d18481a9c6694b6f0b381cf260)
 
 ## Item Details
-##### <a name='ad43197047734eee6d18481a9c6694b6f0b381cf260'></a> Source: [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.experimental.md](https://github.com/Microsoft/IntuneDocs-pr/blob/8ec8c952a4d1762dddb15f274367088fea8b9687/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.experimental.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [whats-new-in-microsoft-intune.experimental.d77a43a101232c802a18c845571c82f5818321f3.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/19d8fba035c6ce869381605acdded6d3a12de7a1/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/whats-new-in-microsoft-intune.experimental.d77a43a101232c802a18c845571c82f5818321f3.de-de.xlf)
-* Handoff Datetime: 2016-06-24 18:46:04
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.experimental.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/4d8574b49767ed16312d5db42bb5576c0aeebe5e/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.experimental.md)
-* Current Handback File: [whats-new-in-microsoft-intune.experimental.d77a43a101232c802a18c845571c82f5818321f3.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/832c2bc14f0ce10937a93b202dd3d4ee8ffdf140/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/whats-new-in-microsoft-intune.experimental.d77a43a101232c802a18c845571c82f5818321f3.de-de.xlf)
-* Current Handback Datetime: 2016-06-14 22:46:16
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
