@@ -1009,9 +1009,6 @@
   "82372661288da89bb59e04aa02fec9bf08b59ea6": [
     "InTuneDocs\\media\\Intune-MDM-Authority.png"
   ],
-  "fd228641a36b69f77af54b978b5a70379e20f636": [
-    "InTuneDocs\\media\\Intune-MDM-Authority.png"
-  ],
   "64f06d45481657e65ee924d286623dc83a514f40": [
     "InTuneDocs\\media\\30-day-trial-walkthrus\\30day-cfg-pol-11-start-mg-mobl-dev.png"
   ],
@@ -2219,9 +2216,6 @@
   "69f39c0fa233ffb62173bd3c434b7ac1b0f949d6": [
     "InTuneDocs\\media\\mam-azure-portal-app-reporting-by-user-settings-blade.png"
   ],
-  "a6222ba1ffdc40fa2280ab62ef32de8053510b94": [
-    "InTuneDocs\\media\\mam-azure-portal-app-reporting-by-user-settings-blade.png"
-  ],
   "5522836a146b306aa18c04ef52fac97e2f41c4c7": [
     "InTuneDocs\\media\\mam-azure-portal-app-reporting-select-user.png"
   ],
@@ -2307,9 +2301,6 @@
     "InTuneDocs\\DeployUse\\overview-of-device-lifecycle-in-microsoft-intune.md"
   ],
   "d331fa9c9cd16ec05782efb1e47ac44692cb0d9f": [
-    "InTuneDocs\\DeployUse\\media\\app-lifecycle.png"
-  ],
-  "7b378232f6a41ddac861ccf2973ab6ab17180b86": [
     "InTuneDocs\\DeployUse\\media\\app-lifecycle.png"
   ],
   "b0c8f6406b62e93d7452847c928898ea15dcd928": [
