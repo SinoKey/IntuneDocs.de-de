@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Informieren der Endbenutzer über den Einsatz von Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Informieren der Endbenutzer über den Einsatz von Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 83f029c97cf34b6c96c6b2ef16cc65ab839c1d55
+ms.openlocfilehash: 893e896fc52e6e883fcd151db2c47030113502a2
+
 
 ---
 
@@ -33,6 +26,8 @@ Verwenden Sie diese Links und Informationen für Folgendes:
 
 - Verstehen der Schritte, die Benutzer für verschiedene Aufgaben in Intune ausführen.
 - Weitergeben an die Benutzer, damit sie Aufgaben abschließen und Probleme bei der Verwendung von Intune lösen können.
+
+Stellen Sie sicher, dass Sie beim [Anpassen des Unternehmensportals](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7) die Kontaktinformationen des IT-Administrators veröffentlichen, damit Benutzer ggf. Hilfe anfordern können.
 
 
 ## Ressourcen mit Informationen zu allgemeinen Aufgaben für Ihre Endbenutzer
@@ -61,9 +56,10 @@ Um zu verstehen, wie Ihre Endbenutzer Apps erhalten, wählen Sie aus den folgend
 
 ## Unterstützen der Endbenutzer beim Verstehen von Meldungen in der Unternehmensportal-App
 
-Um den Benutzern dabei zu helfen, die Probleme zu lösen, die sie möglicherweise bei der Verwendung des Unternehmensportals haben, können Sie die [Liste der Meldungen, die Benutzer möglicherweise im Unternehmensportal sehen](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages) nutzen..
+Um den Benutzern dabei zu helfen, die Probleme zu lösen, die sie möglicherweise bei der Verwendung des Unternehmensportals haben, können Sie die [Liste der Meldungen, die Benutzer möglicherweise im Unternehmensportal sehen](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages) nutzen.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO1-->
 
 

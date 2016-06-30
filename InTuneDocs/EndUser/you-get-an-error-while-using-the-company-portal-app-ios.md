@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Sie erhalten bei Verwendung der Unternehmensportal-App eine Fehlermeldung | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/04/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 09cd4ed6-1ce4-4530-9753-59808f01c6d7
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ROBOTS: 
+ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 98ba0968653ceaf13ab5422468040f8e2ce50422
+ms.openlocfilehash: 9f377cf9293c9697a59c736b07a82bca09728e14
+
 
 ---
 
@@ -40,6 +34,7 @@ Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App au
 ### Weitere Informationen:
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO1-->
 
 

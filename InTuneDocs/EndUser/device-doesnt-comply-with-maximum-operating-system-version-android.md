@@ -1,37 +1,32 @@
 ---
-# required metadata
-
-title: Gerät entspricht nicht der maximalen Betriebssystemversion | Microsoft Intune
-description:
-keywords:
+title: "Gerät entspricht nicht der maximalen Betriebssystemversion | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/02/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 58f2a207-88cf-446c-ac9f-ad10a124e4e2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 902d8a8962bcadbe9fb10845bb80023781cb8b3c
+
 
 ---
 
 # Gerät entspricht nicht der maximalen Betriebssystemversion
 
-Ihr Gerät entspricht nicht der Richtlinie Ihres IT-Administrators für die maximale Version des Betriebssystems. Wenden Sie sich wegen Hilfe an Ihren IT-Administrator.
+Ihr Gerät entspricht nicht der Richtlinie Ihres IT-Administrators für die maximale Version des Betriebssystems. Wenden Sie sich an Ihren IT-Administrator, um Unterstützung zu erhalten. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+
 
 ### Weitere Informationen:
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO2-->
 
 
