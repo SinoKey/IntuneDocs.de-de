@@ -1,39 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\EndUser\enroll-your-device-in-intune-mac-os-x.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f83a539e9bec5207d7c1c682942b4bb6797d616c/InTuneDocs/EndUser/enroll-your-device-in-intune-mac-os-x.md) | InSyncHandedBackSuccess | [Details](#b85d2ac62ca313f0740c68ff6d85918ff7bcd55a293)
- [InTuneDocs\EndUser\sync-your-device-manually-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr/blob/98ba0968653ceaf13ab5422468040f8e2ce50422/InTuneDocs/EndUser/sync-your-device-manually-cpwebsite.md) | InSyncHandedBackSuccess | [Details](#2fc13272848bd70d4ebed2750c550f7a5eb13508434)
 
 ## Item Details
-##### <a name='b85d2ac62ca313f0740c68ff6d85918ff7bcd55a293'></a> Source: [InTuneDocs\EndUser\enroll-your-device-in-intune-mac-os-x.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f83a539e9bec5207d7c1c682942b4bb6797d616c/InTuneDocs/EndUser/enroll-your-device-in-intune-mac-os-x.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\enroll-your-device-in-intune-mac-os-x.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/5ea3bdeed66b5f6a1811448f7ad1bc25e88f9ba9/InTuneDocs/EndUser/enroll-your-device-in-intune-mac-os-x.md)
-* Handoff File: [enroll-your-device-in-intune-mac-os-x.4f13bd894e063db711302a6090fb7a631d192418.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/c12276d52083a794f511bd2bf710f21dcaa1c528/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/enroll-your-device-in-intune-mac-os-x.4f13bd894e063db711302a6090fb7a631d192418.de-de.xlf)
-* Handoff Datetime: 2016-06-09 00:38:19
-* Handoff Reason: Include
-* Archive File: [enroll-your-device-in-intune-mac-os-x.4f13bd894e063db711302a6090fb7a631d192418.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/42caf00699512ae1dc9d027e50d4e074e14eca1a/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/archive/enroll-your-device-in-intune-mac-os-x.4f13bd894e063db711302a6090fb7a631d192418.de-de.xlf)
-* Archive Datetime: 2016-06-09 02:01:56
-* Handback File: [enroll-your-device-in-intune-mac-os-x.4f13bd894e063db711302a6090fb7a631d192418.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/c5b84af154423b02750c7f25fa1606673c6423b0/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/enroll-your-device-in-intune-mac-os-x.4f13bd894e063db711302a6090fb7a631d192418.de-de.xlf)
-* Handback Datetime: 2016-06-30 23:04:13
-* [Back to Top](#report-top)
-
-##### <a name='2fc13272848bd70d4ebed2750c550f7a5eb13508434'></a> Source: [InTuneDocs\EndUser\sync-your-device-manually-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr/blob/98ba0968653ceaf13ab5422468040f8e2ce50422/InTuneDocs/EndUser/sync-your-device-manually-cpwebsite.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\sync-your-device-manually-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/5ea3bdeed66b5f6a1811448f7ad1bc25e88f9ba9/InTuneDocs/EndUser/sync-your-device-manually-cpwebsite.md)
-* Handoff File: [sync-your-device-manually-cpwebsite.134d3dcb8c1828322d1a008204817be65e8251bb.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/074f26d7fe26e30aa81c4209707b3cf768f2048b/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/sync-your-device-manually-cpwebsite.134d3dcb8c1828322d1a008204817be65e8251bb.de-de.xlf)
-* Handoff Datetime: 2016-06-07 16:39:04
-* Handoff Reason: Include
-* Archive File: [sync-your-device-manually-cpwebsite.134d3dcb8c1828322d1a008204817be65e8251bb.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/42caf00699512ae1dc9d027e50d4e074e14eca1a/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/archive/sync-your-device-manually-cpwebsite.134d3dcb8c1828322d1a008204817be65e8251bb.de-de.xlf)
-* Archive Datetime: 2016-06-09 02:01:56
-* Handback File: [sync-your-device-manually-cpwebsite.134d3dcb8c1828322d1a008204817be65e8251bb.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/c5b84af154423b02750c7f25fa1606673c6423b0/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/sync-your-device-manually-cpwebsite.134d3dcb8c1828322d1a008204817be65e8251bb.de-de.xlf)
-* Handback Datetime: 2016-06-30 23:04:13
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
