@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Planen von Benutzer- und Gerätegruppen | Microsoft Intune
-description:
-keywords:
+title: "Planen von Benutzer- und Gerätegruppen | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 82ab2dbfada6c0745195da149d5f0dc1948ceb92
+ms.openlocfilehash: e89d8384532b994d810649fc07c698237e2f3cec
+
 
 ---
 
@@ -158,7 +152,8 @@ Wählen Sie unter den Mitgliedschaftskriterien die Gruppe **US Users Group**, di
 
 In unserem Beispiel haben wir auch eine Gruppe erstellt, die den nahen Osten und Asien (MEA) umfasst.
 
-> [!NOTE] Wenn die Gruppenmitgliedschaft nicht auf Basis der Mitgliedschaft in Sicherheitsgruppen entschieden wird, stellen Sie sicher, dass Sie diesen Mitgliedern Intune-Lizenzen zugewiesen haben.
+> [!NOTE]
+> Wenn die Gruppenmitgliedschaft nicht auf Basis der Mitgliedschaft in Sicherheitsgruppen entschieden wird, stellen Sie sicher, dass Sie diesen Mitgliedern Intune-Lizenzen zugewiesen haben.
 
 ### Gruppen für bestimmte Hardware
 Wenn Ihre Organisation Richtlinien benötigt, die auf bestimmte Hardwaretypen angewendet werden, können Sie die Gruppen auf Basis dieser Anforderung erstellen. Sie können diese auf der Grundlage spezieller Gruppen anlegen, die Sie bereits im lokalen Active Directory erstellt haben, und sie mit Azure AD synchronisieren. Sie können sie auch direkt in Azure AD erstellen. In diesem Beispiel verwenden wir **US Users Group** als übergeordnetes Objekt für die Gruppe der **Laptopbenutzer**.
@@ -174,7 +169,8 @@ Wenn Ihr Unternehmen Richtlinien benötigt, die auf bestimmte Betriebssysteme wi
 
 Nach derselben Methode aus den vorherigen Beispielen können wir Gruppen basierend auf Benutzern <!--devices?--> erstellen, die bestimmte Betriebssysteme verwenden.
 
-> [!NOTE] Wenn Sie über Benutzer verfügen, die mehrere mobile Plattformen/Betriebssysteme verwenden, und Sie keine automatisierte Möglichkeit zum Kategorisieren von Benutzern als Android-, iOS- oder Windows-Benutzer haben, sollten Sie die Anwendung der Richtlinien auf Geräteebene erwägen, sodass Sie eine größere Flexibilität bei der Anwendung von betriebssystemspezifischen Richtlinien erhalten.
+> [!NOTE]
+> Wenn Sie über Benutzer verfügen, die mehrere mobile Plattformen/Betriebssysteme verwenden, und Sie keine automatisierte Möglichkeit zum Kategorisieren von Benutzern als Android-, iOS- oder Windows-Benutzer haben, sollten Sie die Anwendung der Richtlinien auf Geräteebene erwägen, mit der Sie eine größere Flexibilität bei der Anwendung von betriebssystemspezifischen Richtlinien erhalten.
 >
 > Sie können keine Gruppen bereitstellen, die dynamisch auf dem Betriebssystem basieren. Dazu verwenden Sie AD- oder AAD-Sicherheitsgruppen.
 
@@ -218,6 +214,7 @@ Durch diese Art der Benennung der Richtlinien können Sie Richtlinien sowie dere
 [Erstellen von Gruppen](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

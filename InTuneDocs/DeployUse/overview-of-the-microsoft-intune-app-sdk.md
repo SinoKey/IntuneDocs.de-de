@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Übersicht über Microsoft Intune App SDK | Microsoft Intune
-description:
-keywords:
+title: "Übersicht über Microsoft Intune App SDK | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ef1751bb-3a2f-4662-a922-38c076869eb3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 8a9dfe8224b4e0e441691043eaffea73c456b3ec
+
 
 ---
 
@@ -53,7 +47,7 @@ IT-Administratoren können die Verwendung eines verwalteten Browsers („Managed
 IT-Administratoren können eine PIN-Richtlinie beim Starten einer von Intune verwalteten App erzwingen. Diese Richtlinie trägt zur Sicherstellung bei, dass es sich bei den Endbenutzern, die ihre Geräte bei Microsoft Intune registriert haben, um die gleichen Personen handelt, die die Apps starten. Wenn Endbenutzer ihre PIN konfigurieren, verwendet das Intune App SDK Azure Active Directory, um die Anmeldeinformationen der Endbenutzer mit den Anmeldeinformationen bei der Geräteregistrierung abzugleichen. 
 
 ## Erzwingen, dass Benutzer vor dem Starten von Apps Anmeldeinformationen eingeben
-IT-Administratoren können erzwingen, dass Benutzer ihre Anmeldeinformationen eingeben, bevor sie eine von Intune verwaltete App starten können. Das Intune App SDK verwendet Azure Active Directory für die Bereitstellung von einmaligem Anmelden (SSO), damit die einmal eingegebenen Anmeldeinformationen auch für nachfolgende Anmeldungen gelten. Darüber hinaus wird auch die Authentifizierung von Lösungen für die Identitätsverwaltung [im Verbund mit Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx) unterstützt.. 
+IT-Administratoren können erzwingen, dass Benutzer ihre Anmeldeinformationen eingeben, bevor sie eine von Intune verwaltete App starten können. Das Intune App SDK verwendet Azure Active Directory für die Bereitstellung von einmaligem Anmelden (SSO), damit die einmal eingegebenen Anmeldeinformationen auch für nachfolgende Anmeldungen gelten. Darüber hinaus wird auch die Authentifizierung von Lösungen für die Identitätsverwaltung [im Verbund mit Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx) unterstützt. 
 
 ## Überprüfen der Geräteintegrität und -compliance
 IT-Administratoren können die Integrität des Geräts und dessen Compliance mit den Unternehmensrichtlinien abgleichen, bevor Endbenutzer auf von Intune verwaltete Apps zugreifen. Auf der iOS-Plattform überprüft diese Richtlinie, ob es sich um ein Gerät handelt, auf das ein Jailbreak angewendet wurde. Auf der Android-Plattform überprüft diese Richtlinie, ob es sich um ein Gerät handelt, das gerootet wurde.  
@@ -61,6 +55,7 @@ IT-Administratoren können die Integrität des Geräts und dessen Compliance mit
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
