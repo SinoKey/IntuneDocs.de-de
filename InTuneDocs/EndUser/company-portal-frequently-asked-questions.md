@@ -1,33 +1,26 @@
 ---
-# required metadata
-
 title: Informationen zum Unternehmensportal | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-
-# optional metadata
-
-#ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 56edeafa9221b3574ceaba269891dfb92df44408
+
 
 ---
 
 # Informationen zum Unternehmensportal
 
-## Was ist die Unternehmensportal, und was kann ich darin tun?
+## Was ist das Unternehmensportal, und was kann ich darin tun?
 Über das Microsoft Windows Intune-Unternehmensportal erhalten Sie Zugriff auf Daten und Apps Ihres Unternehmens oder Ihrer Bildungseinrichtung. Sie gelangen auf zwei Arten zum Unternehmensportal:
 
 - Durch Installieren der Unternehmensportal-App auf Ihrem Gerät. In der Regel erhalten Sie die Unternehmensportal-App, indem Sie sie aus dem App Store Ihres Geräts herunterladen. Allerdings kann Ihr IT-Administrator die Unternehmensportal-App auch mit verschiedenen Methoden auf dem Gerät installieren.
@@ -42,7 +35,7 @@ Es gibt wenige kleinere Unterschiede zwischen der Unternehmensportal-App und der
 - Zurücksetzen von PIN oder Kennwort
 - Kontaktaufnahme mit der IT-Abteilung bei Supportbedarf
 
-Wenn Sie die Möglichkeiten der Unternehmensportal-Website mit denen der Unternehmensportal-App auf Ihrem Gerät vergleichen möchten, wählen Sie einen der folgenden Links aus.
+Wenn Sie die Möglichkeiten der Unternehmensportal-Website mit denen der Unternehmensportal-App auf Ihrem Gerät vergleichen möchten, wählen Sie einen der folgenden Links aus:
 
 > [!div class="op_single_selector"]
 - [Android](using-your-android-device-with-intune.md)
@@ -53,7 +46,7 @@ Wenn Sie die Möglichkeiten der Unternehmensportal-Website mit denen der Unterne
 ## Was geschieht, wenn ich dem Unternehmensportal einen Computer oder ein Gerät hinzufüge?
 Wenn Sie dem Unternehmensportal einen Computer oder ein Gerät hinzufügen, wird je nach Gerät möglicherweise Software installiert oder eine App heruntergeladen.  Sie gestatten damit Ihrem IT-Administrator, Ihr Gerät zu verwalten, damit die Unternehmensinformationen auf dem Gerät geschützt werden.
 
-Wenn Sie erfahren möchten, was Ihr IT-Administrator auf Ihrem Gerät sehen kann und was er nicht sehen kann, wählen Sie den passenden Link für Ihr Gerät aus.
+Wenn Sie erfahren möchten, was Ihr IT-Administrator auf Ihrem Gerät sehen kann und was er nicht sehen kann, wählen Sie den passenden Link für Ihr Gerät aus:
 
 > [!div class="op_single_selector"]
 - [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
@@ -95,15 +88,20 @@ Eine Anleitung zum Zurücksetzen Ihres Geräts finden Sie, wenn Sie einen der fo
 - [Android](reset-erase-your-lost-or-stolen-device-android.md)
 - [iOS und Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
-- [Zurücksetzen Ihres Geräts über die Unternehmensportal-Website](reset-your-device-cpwebsite.md)
+- [Zurücksetzen Ihres Geräts über die Unternehmensportalwebsite](reset-your-device-cpwebsite.md)
 
 ## Es werden nicht alle meine Geräte im Unternehmensportal angezeigt
 Geräte müssen dem Unternehmensportal hinzugefügt worden sein, damit sie angezeigt werden. Rufen Sie das Unternehmensportal nach den Anweisungen Ihres Administrators auf, und führen Sie die entsprechenden Schritte für Ihr Gerät aus. Es werden ferner keine Geräte angezeigt, die im Besitz Ihres Unternehmens sind und von diesem verwaltet werden.
 
+## Wenn Sie Hilfe benötigen, wenden Sie sich an Ihren IT-Administrator.
+Wenn Sie Hilfe benötigen, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
 
-<!--HONumber=May16_HO2-->
+
+
+
+<!--HONumber=Jun16_HO2-->
 
 
