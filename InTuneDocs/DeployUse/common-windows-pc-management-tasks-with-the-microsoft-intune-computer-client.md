@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 530bf3234001946776593ae0257ea72a06c8612f
 ms.openlocfilehash: 222b9aac19993f184ff68800a00f8d9df8b36237
 
@@ -132,7 +133,8 @@ Wenn Sie einen Computer abkoppeln, werden folgende Aktionen ausgeführt:
 
 -   Abgekoppelte Computer können je nach Konfiguration weiterhin Updates über Windows Server Update Services, Windows Update oder Microsoft Update empfangen.
 
-    > [!IMPORTANT] Wurde die Clientsoftware mithilfe eines Gruppenrichtlinienobjekts installiert, dann müssen Sie zuerst das Gruppenrichtlinienobjekt entfernen, bevor Sie die Clientsoftware entfernen können. So wird verhindert, dass die Software erneut installiert wird.
+    > [!IMPORTANT]
+    > Wurde die Clientsoftware mithilfe eines Gruppenrichtlinienobjekts installiert, dann müssen Sie zuerst das Gruppenrichtlinienobjekt entfernen, bevor Sie die Clientsoftware entfernen können. So wird verhindert, dass die Software erneut installiert wird.
 
     Wenn der Client nicht deinstalliert werden kann, finden Sie hilfreiche Informationen unter [Problembehandlung für Endpoint Protection](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 
@@ -155,7 +157,8 @@ Damit Sie Software für einen Benutzer bereitstellen können, müssen Sie diesen
 
     -   Zum Verknüpfen des Computers mit einem neuen Benutzer wählen Sie diesen in der Liste **Alle Benutzer** aus. Überprüfen Sie, ob die Benutzerdaten korrekt sind, und wählen Sie **OK** aus.
 
-> [!TIP] Wenn Sie die Fähigkeit der Endbenutzer, sich mit Computern zu verknüpfen, einschränken möchten, aktivieren Sie in der Richtlinie **Microsoft Intune-Agent-Einstellungen** die Option **Fähigkeit der Benutzer einschränken, sich mit Computern zu verknüpfen**.
+> [!TIP]
+> Wenn Sie die Fähigkeit der Endbenutzer, sich mit Computern zu verknüpfen, einschränken möchten, aktivieren Sie die Option **Fähigkeit der Benutzer einschränken, sich mit Computern zu verknüpfen** in der Richtlinie **-Microsoft Intune-Agent-Einstellungen**.
 
 <!--- ## Request and provide remote assistance to Windows PCs that use the Intune client software
 
@@ -211,6 +214,6 @@ While in a remote assistance session, you can use all available TeamViewer comma
 From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

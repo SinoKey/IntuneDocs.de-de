@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c22ddd554928b394e14742b8ba7d583d390d1c44
+ms.openlocfilehash: ed14e92d48a2604d16ceee8b844ae5cc0c45f051
+
 
 ---
 
@@ -374,9 +368,10 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 |-2016346011|0x87D10065|Der angegebene SyncML-Befehl wird ausgeführt, wurde aber noch nicht abgeschlossen.|
 
 ### Nächste Schritte
-Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Microsoft Support.
+Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

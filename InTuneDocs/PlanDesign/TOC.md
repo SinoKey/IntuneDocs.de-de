@@ -17,9 +17,10 @@
 <!--- ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)--->
 
 # [Bereitstellen und Verwenden](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
-# [Problembehandlung](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [Entwickeln und Anpassen von Apps](/intune/develop/intune-app-sdk)
+# [Problembehandlung](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 
