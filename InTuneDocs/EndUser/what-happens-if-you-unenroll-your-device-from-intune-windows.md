@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben? | Microsoft Intune
-description:
-keywords:
+title: "Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben? | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
+ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+
 
 ---
 
@@ -43,7 +37,8 @@ Klicken Sie im Abschnitt „Inhalt dieses Artikels“ weiter oben auf den Link, 
 
 -   Die Intune Endpoint Protection-Software wird von Ihrem Computer entfernt. Wenn auf dem Computer eine andere Virenschutzsoftware installiert ist und diese deaktiviert wurde, wird sie unter Umständen nach dem Entfernen von Intune Endpoint Protection wieder aktiviert. Sie sollten Ihren Computer nach dem Entfernen aus dem Unternehmensportal überprüfen.
 
-    > [!IMPORTANT] Wenn die andere Virenschutzsoftware nicht wieder aktiviert wird oder keine andere Virenschutzsoftware installiert ist, bleibt der Computer unter Umständen anfällig für Viren und Schadsoftware.
+    > [!IMPORTANT]
+    > Wenn die andere Virenschutzsoftware nicht wieder aktiviert wird oder keine andere Virenschutzsoftware installiert ist, bleibt der Computer unter Umständen anfällig für Viren und Schadsoftware.
 
 -   Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden (z. B. das Deaktivieren der Kamera, werden unwirksam).
 
@@ -97,6 +92,7 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 ### Weitere Informationen:
 [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
