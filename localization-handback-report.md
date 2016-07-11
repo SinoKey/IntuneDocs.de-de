@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\GetStarted\post-configuration-tasks.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/GetStarted/post-configuration-tasks.md) | InSyncHandedBackSuccess | [Details](#2ea7f48c8d34da920c7cb3a70309d34c3f768fed527)
 
 ## Item Details
+##### <a name='2ea7f48c8d34da920c7cb3a70309d34c3f768fed527'></a> Source: [InTuneDocs\GetStarted\post-configuration-tasks.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/GetStarted/post-configuration-tasks.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\GetStarted\post-configuration-tasks.md](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/b51d8269d53828c40746e411cb1cb610e1785c93/InTuneDocs/GetStarted/post-configuration-tasks.md)
+* Handoff File: [post-configuration-tasks.f79fe63339a1194d34ca5eea9ff678c9b9afdacf.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/1e34e5696762698814a51f5965518ad46df55d5e/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/post-configuration-tasks.f79fe63339a1194d34ca5eea9ff678c9b9afdacf.de-de.xlf)
+* Handoff Datetime: 2016-06-27 10:35:06
+* Handoff Reason: Include
+* Archive File: [post-configuration-tasks.f79fe63339a1194d34ca5eea9ff678c9b9afdacf.de-de.xlf](https://github.com/Microsoft/EM.handoff/blob/e8f5247fd8cffb5857bb8c6e888cd7acdcef8adc/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/archive/post-configuration-tasks.f79fe63339a1194d34ca5eea9ff678c9b9afdacf.de-de.xlf)
+* Archive Datetime: 2016-07-02 00:58:54
+* Handback File: [post-configuration-tasks.f79fe63339a1194d34ca5eea9ff678c9b9afdacf.de-de.xlf](https://github.com/Microsoft/EM.handback/blob/0ca1c9e169662efb20b95d5b508ef80ded36f9dd/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/post-configuration-tasks.f79fe63339a1194d34ca5eea9ff678c9b9afdacf.de-de.xlf)
+* Handback Datetime: 2016-07-11 21:18:49
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
