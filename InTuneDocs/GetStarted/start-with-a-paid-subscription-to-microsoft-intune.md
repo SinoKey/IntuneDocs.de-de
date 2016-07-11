@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Erste Schritte mit Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: ca0ca74357b59d9cc6fbf4ec7eb237dff972c411
+
 
 ---
 
@@ -41,7 +35,7 @@ Die Schritte in dieser Kurzanleitung sind in großen Teilen mit den Schritten im
 -   Anpassen von Intune-Features für die Produktion
 
 >[!TIP]
->Wenn Sie in einem berechtigenden Plan mindestens 150 Lizenzen für Microsoft Intune erwerben, können Sie das „FastTrack Center-Leistungsangebot“ nutzen, einen Dienst, bei dem Microsoft-Spezialisten Sie bei der Vorbereitung Ihrer Umgebung für Intune unterstützen. Siehe [Microsoft Intune-Servicevorteil – Beschreibung](https://technet.microsoft.com/library/mt228265.aspx)..
+>Wenn Sie in einem berechtigenden Plan mindestens 150 Lizenzen für Microsoft Intune erwerben, können Sie das „FastTrack Center-Leistungsangebot“ nutzen, einen Dienst, bei dem Microsoft-Spezialisten Sie bei der Vorbereitung Ihrer Umgebung für Intune unterstützen. Siehe auch [Microsoft Intune-Servicevorteil – Beschreibung](https://technet.microsoft.com/library/mt228265.aspx).
 
 
 ## Vorbereitung
@@ -55,7 +49,7 @@ Verwenden Sie diese Kurzanleitung, wenn Sie mit einem kostenpflichtigen Abonneme
 Bereit für die ersten Schritte? Folgende Elemente sind bei der Nutzung eines kostenpflichtigen Abonnements von Intune erforderlich:
 
 ### Ein Gerät mit einem Webbrowser, in dem Silverlight aktiviert ist
-Diesen benötigen Sie für den Zugriff auf die Intune-Verwaltungskonsole, in der Sie Geräte, Apps und Richtlinien verwalten. Sie benötigen einen Webbrowser ebenfalls für den Zugriff auf das webbasierte Unternehmensportal, wenn Sie nicht über ein mobiles Gerät auf die Unternehmensportal-App zugreifen. Zur Vereinfachung können Sie in dem Browser, den Sie zur Intune-Verwaltung verwenden, auch den Datenschutzmodus aktivieren (in Internet Explorer beispielsweise klicken Sie hierzu auf **Extras** &gt; **InPrivate-Browsen**).).
+Diesen benötigen Sie für den Zugriff auf die Intune-Verwaltungskonsole, in der Sie Geräte, Apps und Richtlinien verwalten. Sie benötigen einen Webbrowser ebenfalls für den Zugriff auf das webbasierte Unternehmensportal, wenn Sie nicht über ein mobiles Gerät auf die Unternehmensportal-App zugreifen. Zur Vereinfachung können Sie in dem Browser, den Sie zur Intune-Verwaltung verwenden, auch den Datenschutzmodus aktivieren (in Internet Explorer klicken Sie hierzu beispielsweise auf **Extras** &gt; **InPrivate-Browsen**).
 
 >[!TIP]
 >Aufgrund dieser Anforderung wird der Zugriff auf die Intune-Verwaltungskonsole über den Microsoft Edge-Browser nicht unterstützt.
@@ -67,11 +61,11 @@ Wenn Sie iOS- oder Windows Phone-Geräte mit Intune verwalten möchten, benötig
 - Für Benutzer von **Windows Phone 8.1**, die die Unternehmensportal-App über den Store installieren, ist kein Zertifikat erforderlich. Für **Windows Phone 8.0** oder zur Verwendung von Intune zum Bereitstellen der Unternehmensportal-App auf Windows Phone 8.1-Geräten ist ein [Symantec-Codesignaturzertifikat](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do) erforderlich.
 
 >[!NOTE]
->In dieser Anleitung wird davon ausgegangen, dass Ihre Benutzer die Unternehmensportal-App aus dem Store auf ein Gerät mit Windows Phone 8.1 oder höher abrufen. Informationen zur Unterstützung von Windows Phone 8.0 finden Sie unter [Einrichten der Windows Phone 8.0-Verwaltung mit Microsoft Intune](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune)..
+>In dieser Anleitung wird davon ausgegangen, dass Ihre Benutzer die Unternehmensportal-App aus dem Store auf ein Gerät mit Windows Phone 8.1 oder höher abrufen. Informationen zur Unterstützung von Windows Phone 8.0 finden Sie unter [Einrichten der Geräteverwaltung für Windows Phone 8.0](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune).
 
-- Für **Windows-PCs** oder **Windows RT-Geräte** bestehen keine Zertifikatanforderungen beim Registrieren von Windows-PCs als Geräte oder beim [Installieren des Windows-PC-Clients für Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune)..
+- Für **Windows-PCs** oder **Windows RT-Geräte** bestehen keine Zertifikatanforderungen beim Registrieren von Windows-PCs als Geräte oder beim [Installieren des Windows-PC-Clients für Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune).
 
-- Für **iOS**- oder **Mac OS X**-Geräte müssen Sie ein Apple Push Notification Service-Zertifikat bei Apple anfordern, wie unter [Einrichten der iOS- und Mac-Verwaltung mit Microsoft Intune](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune), Schritt 3, beschrieben..
+- Für **iOS**- oder **Mac OS X**-Geräte müssen Sie ein Apple Push Notification Service-Zertifikat bei Apple anfordern, wie im Schritt 3 unter [Einrichten der iOS- und Mac-Geräteverwaltung](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) beschrieben.
 
 ### Nächste Schritte
 Legen Sie los mit der Intune-Kurzanleitung!
@@ -80,6 +74,7 @@ Legen Sie los mit der Intune-Kurzanleitung!
 [**Anmelden bei Intune** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

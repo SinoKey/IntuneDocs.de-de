@@ -1,32 +1,26 @@
 ---
-# required metadata
-
 title: Starten eines Microsoft Intune-Tests und Bereitstellen einer iOS-PIN-Richtlinie | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 06cb9a73-0f17-44b3-b334-86c98020316e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
+ms.openlocfilehash: 6787d0c35621b2bc94bfe376dfd1669e9dfe46db
+
 
 ---
 
 # Starten eines Microsoft Intune-Tests und Bereitstellen einer iOS-PIN-Richtlinie
-Diese schrittweisen Anweisungen unterstützen Sie beim Einrichten einer Intune-Testversion und Konfigurieren einer PIN-Richtlinie für iOS-Geräte. Eine Liste mit anderen Intune-Evaluierungsaufgaben, die Sie ausprobieren können, finden Sie unter [Allgemeine Microsoft Intune-Evaluierungsaufgaben](common-microsoft-intune-evaluation-tasks.md)..
+Diese schrittweisen Anweisungen unterstützen Sie beim Einrichten einer Intune-Testversion und Konfigurieren einer PIN-Richtlinie für iOS-Geräte. Eine Liste mit anderen häufigen Intune-Evaluierungsaufgaben, die Sie ausprobieren können, finden Sie unter [Allgemeine Microsoft Intune-Evaluierungsaufgaben](common-microsoft-intune-evaluation-tasks.md).
 
 
 
@@ -42,11 +36,11 @@ Diese schrittweisen Anweisungen unterstützen Sie beim Einrichten einer Intune-T
 > [!NOTE]
 > Wenn Sie bereits über ein Intune-Abonnement verfügen, überspringen Sie diesen Abschnitt und fahren mit dem nächsten Abschnitt fort.
 
-1.  Klicken Sie auf einem Windows-PC mit der rechten Maustaste auf **Internet Explorer** (IE), und wählen Sie **InPrivate-Browsen** aus..
+1.  Klicken Sie auf einem Windows-PC mit der rechten Maustaste auf **Internet Explorer** (IE), und wählen Sie **InPrivate-Browsen** aus.
 
     ![InPrivate-Browsen starten](../media/30-day-trial-walkthrus/30day-start-trial-1-InPrivate.png)
 
-2.  Wechseln Sie zum [Intune-Anmeldungsportal](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1), stellen Sie die erforderlichen Informationen bereit, und klicken Sie dann auf **Weiter**..
+2.  Wechseln Sie zum [Intune-Anmeldungsportal](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1), stellen Sie die erforderlichen Informationen bereit, und klicken Sie dann auf **Weiter**.
 
     ![Registrieren für ein Konto](../media/30-day-trial-walkthrus/30day-start-trial-2-abt-you.png)
 
@@ -58,7 +52,7 @@ Diese schrittweisen Anweisungen unterstützen Sie beim Einrichten einer Intune-T
 
     ![Ihre Angaben überprüfen](../media/30-day-trial-walkthrus/30day-start-trial-4-textme.png)
 
-5.  Speichern Sie die auf dem Bildschirm angezeigten Informationen, und klicken Sie dann auf **Jetzt kann es losgehen...**..
+5.  Speichern Sie die auf dem Bildschirm angezeigten Informationen, und klicken Sie dann auf **Sie sind startbereit...**.
 
     ![Jetzt kann es losgehen](../media/30-day-trial-walkthrus/30day-start-trial-5-ReadyToGo.png)
 
@@ -80,11 +74,11 @@ Diese schrittweisen Anweisungen unterstützen Sie beim Einrichten einer Intune-T
 
     3.  Deaktivieren Sie das Kontrollkästchen **Diese Person muss ihr Kennwort bei der nächsten Anmeldung ändern**.
 
-    4.  Klicken Sie auf **Erstellen**..
+    4.  Klicken Sie auf **Erstellen**.
 
     ![Erstellen eines neuen Benutzerkontos](../media/30-day-trial-walkthrus/30day-crt-user-8-add-user-info.png)
 
-4.  Klicken Sie auf der Seite zur Bestätigung der Erstellung auf **Schließen**..
+4.  Klicken Sie auf der Seite zur Bestätigung der Erstellung auf **Schließen**.
 
     ![Seite zur Bestätigung der Erstellung](../media/30-day-trial-walkthrus/30day-crt-user-9-close-confirm.png)
 
@@ -104,13 +98,13 @@ Diese schrittweisen Anweisungen unterstützen Sie beim Einrichten einer Intune-T
 
         ![Festlegen der Autorität für die Verwaltung mobiler Geräte](../media/30-day-trial-walkthrus/30day-cfg-pol-12-link-set-mdm.png)
 
-2.  Aktivieren Sie iOS-Geräte für die Registrierung. Über diesen Prozess wird zwischen dem Apple Push Notification Service (APNS) und Ihrem Intune-Abonnement ein vertrauenswürdiges Zertifikat eingerichtet.
+2.  Aktivieren Sie iOS-Geräte für die Registrierung. Über diesen Prozess wird zwischen dem Apple Push Notification Service (APNs) und Ihrem Intune-Abonnement ein vertrauenswürdiges Zertifikat eingerichtet.
 
-    1.  Klicken Sie auf **iOS- und Mac OS X-Plattform aktivieren**..
+    1.  Klicken Sie auf **iOS- und Mac OS X-Plattform aktivieren**.
 
         ![Aktivieren der Registrierung bei iOS und Mac OS X](../media/30-day-trial-walkthrus/30day-cfg-pol-13-enbl-ios-plat.png)
 
-    2.  Klicken Sie auf **APNS-Zertifikatanforderung herunterladen**..
+    2.  Klicken Sie auf **APNS-Zertifikatanforderung herunterladen**.
 
         ![Herunterladen des APNS-Zertifikats](../media/30-day-trial-walkthrus/30day-cfg-pol-14-dwnld-cert-reqst.png)
 
@@ -126,19 +120,19 @@ Diese schrittweisen Anweisungen unterstützen Sie beim Einrichten einer Intune-T
 
         ![Anmelden beim Apple Push Certificates-Portal](../media/30-day-trial-walkthrus/30day-cfg-pol-17-id-passw-signin.png)
 
-    6.  Klicken Sie auf **Zertifikat erstellen**..
+    6.  Klicken Sie auf **Zertifikat erstellen**.
 
         ![Erstellen eines APNS-Zertifikats](../media/30-day-trial-walkthrus/30day-cfg-pol-18-create-cert.png)
 
-    7.  Lesen Sie die Nutzungsbedingungen von Apple, aktivieren Sie das Kontrollkästchen, und klicken Sie auf **Annehmen**..
+    7.  Lesen Sie die Nutzungsbedingungen von Apple, aktivieren Sie das Kontrollkästchen, und klicken Sie auf **Annehmen**.
 
         ![Annehmen der Bedingungen](../media/30-day-trial-walkthrus/30day-cfg-pol-19-TOU.png)
 
-    8.  Klicken Sie auf **Durchsuchen**..
+    8.  Klicken Sie auf **Durchsuchen**.
 
         ![Suchen nach dem Speicherort des Zertifikats](../media/30-day-trial-walkthrus/30day-cfg-pol-20-browse.png)
 
-    9. Wählen Sie die zuvor gespeicherte CSR-Datei aus, und klicken Sie auf **Öffnen**..
+    9. Wählen Sie die zuvor gespeicherte CSR-Datei aus, und klicken Sie auf **Öffnen**.
 
         ![Öffnen des Zertifikats](../media/30-day-trial-walkthrus/30day-cfg-pol-21-CSRfile-open.png)
 
@@ -146,43 +140,43 @@ Diese schrittweisen Anweisungen unterstützen Sie beim Einrichten einer Intune-T
 
         ![Hochladen des Zertifikats](../media/30-day-trial-walkthrus/30day-cfg-pol-22-upld-reqst.png)
 
-    11. Wenn Sie zum Herunterladen einer JSON-Datei aufgefordert werden, klicken Sie auf **Speichern unter**..
+    11. Wenn Sie zum Herunterladen einer JSON-Datei aufgefordert werden, klicken Sie auf **Speichern unter**.
 
         ![Speichern der JSON-Datei](../media/30-day-trial-walkthrus/30day-cfg-pol-23-json-saveas.png)
 
-    12. Geben Sie einen Speicherort für die JSON-Datei an, und klicken Sie auf **Speichern**..
+    12. Geben Sie einen Speicherort für die JSON-Datei an, und klicken Sie auf **Speichern**.
 
         ![Angeben des Speicherorts für die JSON-Datei](../media/30-day-trial-walkthrus/30day-cfg-pol-24-json-save-loc.png)
 
-        Wenn auf der Seite nach einigen Sekunden keine automatische Weiterleitung erfolgt, klicken Sie auf **Abbrechen**..
+        Wenn auf der Seite nach einigen Sekunden keine automatische Weiterleitung erfolgt, klicken Sie auf **Abbrechen**.
 
         ![Abbrechen bei ausbleibender Weiterleitung](../media/30-day-trial-walkthrus/30day-cfg-pol-25-json-pg-cancel.png)
 
-    13. Um die neu erstellte Zertifikatdatei abzurufen, klicken Sie auf **Herunterladen**..
+    13. Um die neu erstellte Zertifikatdatei abzurufen, klicken Sie auf **Herunterladen**.
 
         ![Herunterladen des Zertifikats](../media/30-day-trial-walkthrus/30day-cfg-pol-26-dwnld-retrv-cert.png)
 
-    14. Wenn Sie zum Herunterladen einer PEM-Datei aufgefordert werden, klicken Sie auf **Speichern unter**..
+    14. Wenn Sie zum Herunterladen einer PEM-Datei aufgefordert werden, klicken Sie auf **Speichern unter**.
 
         ![Herunterladen der PEM-Datei](../media/30-day-trial-walkthrus/30day-cfg-pol-27-pem-saveas.png)
 
-    15. Geben Sie einen Speicherort für die PEM-Datei an, und klicken Sie auf **Speichern**..
+    15. Geben Sie einen Speicherort für die PEM-Datei an, und klicken Sie auf **Speichern**.
 
         ![Speichern der PEM-Datei](../media/30-day-trial-walkthrus/30day-cfg-pol-28-pem-save-loc.png)
 
-    16. Kehren Sie zur Registerkarte der Intune-Verwaltungskonsole zurück, und klicken Sie auf die **APNS-Zertifikat hochladen**..
+    16. Kehren Sie zur Registerkarte der Intune-Verwaltungskonsole zurück, und klicken Sie auf die **APN-Zertifikat hochladen**.
 
         ![Hochladen des APNS-Zertifikats](../media/30-day-trial-walkthrus/30day-cfg-pol-29-upld-cert.png)
 
-    17. Geben Sie Ihre Apple-ID ein, und klicken Sie auf **Durchsuchen**..
+    17. Geben Sie Ihre Apple-ID ein, und klicken Sie auf **Durchsuchen**.
 
         ![Eingeben der Apple-ID](../media/30-day-trial-walkthrus/30day-cfg-pol-30-app-id-browse.png)
 
-    18. Wählen Sie die soeben gespeicherte PEM-Datei aus, und klicken Sie auf **Öffnen**..
+    18. Wählen Sie die soeben gespeicherte PEM-Datei aus, und klicken Sie auf **Öffnen**.
 
         ![Öffnen der PEM-Datei](../media/30-day-trial-walkthrus/30day-cfg-pol-31-sel-pem-open.png)
 
-    19. Klicken Sie auf **Hochladen**..
+    19. Klicken Sie zum Fertigstellen auf **Hochladen**.
 
         ![Hochladen der PEM-Datei](../media/30-day-trial-walkthrus/30day-cfg-pol-32-pem-upload.png)
 
@@ -192,37 +186,37 @@ Diese schrittweisen Anweisungen unterstützen Sie beim Einrichten einer Intune-T
 
 3.  Erstellen Sie zum Ausrichten der Richtlinie eine Testbenutzergruppe:
 
-    1.  Klicken Sie im linken Bereich auf **Gruppen**..
+    1.  Klicken Sie im linken Bereich auf **Gruppen**.
 
         ![Öffnen von Gruppen](../media/30-day-trial-walkthrus/30day-cfg-pol-34-clk-groups.png)
 
-    2.  Klicken Sie ganz rechts auf **Gruppe erstellen**..
+    2.  Klicken Sie auf der rechten Seite auf **Gruppe erstellen**.
 
         ![Erstellen einer Gruppe](../media/30-day-trial-walkthrus/30day-cfg-pol-35-crt-group.png)
 
-    3.  Geben Sie einen Gruppennamen an, wählen Sie **Alle Benutzer** als übergeordnete Gruppe aus, und klicken Sie dann auf **Weiter**..
+    3.  Geben Sie einen Gruppennamen an, wählen Sie **Alle Benutzer** als übergeordnete Gruppe aus, und klicken Sie dann auf **Weiter**.
 
         ![Auswählen von „Alle Benutzer“ als übergeordnete Gruppe](../media/30-day-trial-walkthrus/30day-cfg-pol-36-name-group.png)
 
-    4.  Wählen Sie im Feld **Gruppenmitgliedschaft starten mit** die Option **Alle Benutzer in der übergeordneten Gruppe** aus, und klicken Sie dann auf **Fertig stellen**..
+    4.  Wählen Sie im Feld **Gruppenmitgliedschaft starten mit** die Option **Alle Benutzer in der übergeordneten Gruppe** aus, und klicken Sie dann auf **Fertig stellen**.
 
         ![Starten der Gruppenmitgliedschaft mit der übergeordneten Gruppe](../media/30-day-trial-walkthrus/30day-cfg-pol-37-all-users-group.png)
 
 4.  Erstellen Sie eine iOS-PIN-Richtlinie, und richten Sie diese auf die Testbenutzergruppe aus:
 
-    1.  Klicken Sie im linken Bereich auf **Richtlinie**..
+    1.  Klicken Sie im linken Bereich auf **Richtlinie**.
 
         ![Öffnen des Arbeitsbereichs „Richtlinie“](../media/30-day-trial-walkthrus/30day-cfg-pol-38-clk-policy.png)
 
-    2.  Klicken Sie ganz rechts auf **Richtlinie hinzufügen**..
+    2.  Klicken Sie ganz rechts auf **Richtlinie hinzufügen**.
 
         ![Hinzufügen einer Richtlinie](../media/30-day-trial-walkthrus/30day-cfg-pol-39-add-policy.png)
 
-    3.  Erweitern Sie den iOS-Knoten, wählen Sie die Zeile **Allgemeine Konfiguration** aus, und klicken Sie auf **Richtlinie erstellen**..
+    3.  Erweitern Sie die iOS-Knoten, wählen Sie die Zeile **Allgemeine Konfiguration** aus, und klicken Sie dann auf **Richtlinie erstellen**.
 
         ![Erstellen einer allgemeinen iOS-Konfigurationsrichtlinie](../media/30-day-trial-walkthrus/30day-cfg-pol-40-gen_cfg_pol.png)
 
-    4.  Geben Sie einen Namen für die Richtlinie ein, aktivieren Sie die Option **Kennwort zum Entsperren mobiler Geräte erforderlich**, und legen Sie für die Option **Minimale Kennwortlänge** den Wert **4** fest..
+    4.  Geben Sie einen Namen für die Richtlinie ein, aktivieren Sie die Option **Anfordern eines Kennworts zum Entsperren mobiler Geräte**, und legen Sie für die Option **Minimale Kennwortlänge** den Wert **4** fest.
 
         ![Konfigurieren der Kennworteinstellungen](../media/30-day-trial-walkthrus/30day-cfg-pol-41-name-policy.png)
 
@@ -230,7 +224,7 @@ Diese schrittweisen Anweisungen unterstützen Sie beim Einrichten einer Intune-T
 
         ![Bereitstellen der Richtlinie](../media/30-day-trial-walkthrus/30day-cfg-pol-42-yes-deploy-pol.png)
 
-    6.  Klicken Sie auf die zuvor erstellte Benutzergruppe, anschließend auf **Hinzufügen** und dann auf **OK**..
+    6.  Klicken Sie auf die zuvor erstellte Benutzergruppe, dann auf **Hinzufügen** und anschließend auf **Ok**.
 
         ![Auswählen der Gruppe für die Richtlinie](../media/30-day-trial-walkthrus/30day-cfg-pol-43-add-pol-to-grp.png)
 
@@ -244,7 +238,7 @@ Diese schrittweisen Anweisungen unterstützen Sie beim Einrichten einer Intune-T
 
     ![Installieren des Unternehmensportals](../media/30-day-trial-walkthrus/30day-cfg-pol-45-cportal-installed.png)
 
-2.  Geben Sie den Namen und das Kennwort für Ihr Testbenutzerkonto ein, und tippen Sie auf **Anmelden**..
+2.  Geben Sie den Namen und das Kennwort für Ihr Testbenutzerkonto ein, und tippen Sie auf **Anmelden**.
 
     ![Eingeben Ihrer Anmeldeinformationen](../media/30-day-trial-walkthrus/30day-cfg-pol-46-cportal-signin.png)
 
@@ -252,19 +246,19 @@ Diese schrittweisen Anweisungen unterstützen Sie beim Einrichten einer Intune-T
 
     ![Starten der Registrierung](../media/30-day-trial-walkthrus/30day-cfg-pol-47-tap-enroll.jpg)
 
-4.  Tippen Sie auf dem Bildschirm **Profil installieren** auf **Installieren**..
+4.  Tippen Sie auf dem Bildschirm **Profil installieren** auf **Installieren**.
 
     ![Installieren eines Profils](../media/30-day-trial-walkthrus/30day-cfg-pol-48-profile-install-1.jpg)
 
-5.  Tippen Sie im Dialogfeld **Profil installieren** auf **Installieren**..
+5.  Tippen Sie im Dialogfeld **Profil installieren** auf **Installieren**.
 
     ![Fortsetzung der Profilinstallation](../media/30-day-trial-walkthrus/30day-cfg-pol-49-profile-install-2.jpg)
 
-6.  Tippen Sie auf dem Bildschirm **Warnung** auf **Installieren**..
+6.  Tippen Sie auf dem Bildschirm **Warnung** auf **Installieren**.
 
     ![Akzeptieren der Warnmeldung](../media/30-day-trial-walkthrus/30day-cfg-pol-50-warning-install-3.png)
 
-7.  Tippen Sie im Dialogfeld **Remoteverwaltung** auf **Vertrauen**..
+7.  Tippen Sie im Dialogfeld **Remoteverwaltung** auf **Vertrauen**.
 
     ![Vertrauensstellung für Remoteverwaltung](../media/30-day-trial-walkthrus/30day-cfg-pol-51-remt-mgmt-trust.jpg)
 
@@ -276,11 +270,11 @@ Diese schrittweisen Anweisungen unterstützen Sie beim Einrichten einer Intune-T
 
     ![Auf OK tippen, um die Unternehmensportal-App zu schließen](../media/30-day-trial-walkthrus/30day-cfg-pol-53-devc-enrolled-ok.png)
 
-10. Wenn Sie zum Konfigurieren einer Kennung aufgefordert werden, tippen Sie auf **Weiter**..
+10. Wenn Sie zum Konfigurieren einer Kennung aufgefordert werden, tippen Sie auf **Weiter**.
 
     ![Akzeptieren der Aufforderung zum Konfigurieren einer Kennung](../media/30-day-trial-walkthrus/30day-cfg-pol-54-passcode-req-cont.png)
 
-11. Geben Sie Ihre Kennung ein, tippen Sie auf **Weiter**, geben Sie Ihre Kennung erneut ein, und tippen Sie auf **Speichern**..
+11. Geben Sie Ihre Kennung ein, tippen Sie auf **Weiter**, geben Sie Ihre Kennung erneut ein, und tippen Sie dann auf **Speichern**.
 
     ![Angeben einer Kennung](../media/30-day-trial-walkthrus/30day-cfg-pol-55-passcode-enter.jpg)
 
@@ -290,6 +284,7 @@ Diese schrittweisen Anweisungen unterstützen Sie beim Einrichten einer Intune-T
 [Intune-Evaluierungsanleitung](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

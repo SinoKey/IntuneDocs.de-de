@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Übersicht über den Gerätelebenszyklus | Microsoft Intune
-description:
-keywords:
+title: "Übersicht über den MDM-Lebenszyklus | Microsoft Intune"
+description: "Erfahren Sie, wie Ihnen Intune mit der Verwaltung von Geräten während ihres Lebenszyklus (vom Registrieren über das Konfigurieren bis zum letztendlichen Abkoppeln) behilflich sein kann."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 751025aa71ef41564100ea57ac0d1fe60619e214
+
 
 ---
 
 # Übersicht über den MDM-Lebenszyklus (mobile Geräteverwaltung)
 
-Der Intune-Lebenszyklus für Geräte beginnt zunächst mit dem Registrieren eines Geräts und durchläuft dann verschiedene Schritte, die dann abgeschlossen sind, wenn das Gerät nicht mehr benötigt wird.
+Alle Geräte, die Sie verwalten, verfügen über einen sogenannten *Lebenszyklus*. Intune hilft Ihnen bei der Verwaltung dieses Lebenszyklus – vom Registrieren bis zum Abkoppeln dieses Gerätes, wenn es nicht mehr benötigt wird:
 
 ![Der Gerätelebenszyklus](./media/device-lifecycle.png "the Intune device lifecycle")
 
@@ -51,6 +44,7 @@ In der modernen IT-Welt ist der Schutz von Geräten vor unbefugtem Zugriff eine 
 Wenn ein Gerät verloren geht, gestohlen wird oder ersetzt werden muss, oder wenn Benutzer in eine andere Position wechseln, ist es in der Regel an der Zeit, das Gerät [abzukoppeln oder zurückzusetzen](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Hierzu gibt es verschiedene Möglichkeiten, angefangen beim Zurücksetzen des Geräts über das Entfernen des Geräts aus der Verwaltung bis hin zum Löschen der darauf befindlichen Unternehmensdaten.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

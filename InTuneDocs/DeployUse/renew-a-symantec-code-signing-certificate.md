@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Erneuern eines Symantec-Codesignaturzertifikats für Ihr Unternehmen zur Verwendung mit Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Erneuern eines Symantec-Codesignaturzertifikats für Ihr Unternehmen zur Verwendung mit Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 566a226c19825990c6a34bffbbd9d1cd6a242ddb
+
 
 ---
 
@@ -41,9 +35,9 @@ Das zur Verwaltung bestimmter mobiler Windows- und Windows Phone-Geräte verwend
 
 ## Installieren des aktualisierten Zertifikats für Windows Phone 8.0
 
-1.  Sie können das neueste Windows Phone-Unternehmensportal von folgender Stelle herunterladen und signieren: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)..
+1.  Das neueste Windows Phone-Unternehmensportal können Sie hier herunterladen und signieren: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
-2.  Öffnen Sie Ihre Intune-Verwaltungskonsole ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)), und wechseln Sie zu **Admin**, **Verwaltung mobiler Geräte** &gt; **Windows Phone**, und klicken Sie auf **Signierte App hochladen**..
+2.  Öffnen Sie Ihre Intune-Verwaltungskonsole ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)), gehen Sie zu **Admin**, **Verwaltung mobiler Geräte** &gt; **Windows Phone**, und klicken Sie auf **Signierte App hochladen**.
 
 3.  Laden Sie das neu signierte Unternehmensportal hoch. Sie benötigen die neu signierte SSP.XAP-Datei und die neue PFX-Datei, die Sie von Symantec erhalten, oder das Anwendungsregistrierungstoken, das mit dieser neuen PFX-Datei erstellt wurde.
 
@@ -55,9 +49,9 @@ Das Bereitstellen einer signierten SSP.XAP-Datei ist derzeit die einzige Möglic
 
 ## Installieren des aktualisierten Zertifikats für Geräte mit Windows Phone 8.1 oder höher
 
-1.  Sie können das neueste Windows Phone-Unternehmensportal aus dem Download Center herunterladen und signieren: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)..
+1.  Das neueste Windows Phone-Unternehmensportal können Sie im Download Center herunterladen und signieren: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
-2.  Öffnen Sie Ihre [Intune-Verwaltungskonsole](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com), und wechseln Sie zu **Admin** &gt; **Verwaltung mobiler Geräte** &gt; **Windows Phone**, und klicken Sie auf **Signierte App hochladen**..
+2.  Öffnen Sie Ihre [Intune-Verwaltungskonsole](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com), gehen Sie zu **Admin** &gt; **Verwaltung mobiler Geräte** &gt; **Windows Phone**, und klicken Sie auf **Signierte App hochladen**.
 
 3.  Laden Sie das neu signierte Unternehmensportal hoch. Sie benötigen die neu signierte SSP.XAP-Datei und die neue PFX-Datei, die Sie von Symantec erhalten, oder das Anwendungsregistrierungstoken, das mit dieser neuen PFX-Datei erstellt wurde.
 
@@ -67,10 +61,11 @@ Das Bereitstellen einer signierten SSP.XAP-Datei ist derzeit die einzige Möglic
 
 
 ### Weitere Informationen:
-[Einrichten der Windows Phone 8.0-Verwaltung](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
-[Einrichten der Windows Phone-Verwaltung](set-up-windows-phone-management-with-microsoft-intune.md)
+[Einrichten der Geräteverwaltung für Windows Phone 8.0](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
+[Einrichten der Windows 10 Mobile- und Windows Phone-Verwaltung mit Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

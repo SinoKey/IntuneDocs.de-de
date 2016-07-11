@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Aktivieren des Zugriffs auf Unternehmensressourcen | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 556b9ea5ac5edcc1126dbcc6310ab7dfa917cb56
+
 
 ---
 
@@ -51,7 +44,7 @@ Erstellen, Bereitstellen und Überwachen von nativen E-Mail-Clienteinstellungen 
 |---------------------|---------------------------|---|-------|------------|
 |Nein|Ja|Ja|Nein|Ja|
 > [!NOTE]
-> [Dieser Beitrag im Intune-Teamblog](http://blogs.technet.com/b/microsoftintune/archive/2015/02/23/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1.aspx) enthält Informationen zum Konfigurieren von Windows Phone 8.1-WLAN-Profilen mithilfe von OMA-URI.
+> [Dieser Beitrag im Intune-Teamblog](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/19/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1/) enthält Informationen zum Konfigurieren von Windows Phone 8.1-WLAN-Profilen mithilfe von OMA-URI.
 
 ## [Zertifikatprofile](secure-resource-access-with-certificate-profiles.md) und unterstützte Plattformen
 Ermöglichen den sicheren Zugriff auf Unternehmensressourcen einschließlich Drahtlosnetzwerken und VPN-Verbindungen.
@@ -61,6 +54,7 @@ Ermöglichen den sicheren Zugriff auf Unternehmensressourcen einschließlich Dra
 |Ja|Ja|Ja|Ja|Ja|
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

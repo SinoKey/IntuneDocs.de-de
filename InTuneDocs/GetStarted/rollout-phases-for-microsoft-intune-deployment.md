@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Rolloutphasen für die Microsoft Intune-Bereitstellung | Microsoft Intune
-description:
-keywords:
+title: "Rolloutphasen für die Microsoft Intune-Bereitstellung | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9fe7eec1-2a6f-404e-8614-977527a7a15b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 9f3fcead3c41506734508d588ad180d17cc901ee
+
 
 ---
 
@@ -29,17 +23,28 @@ ms.suite: ems
 # Rolloutphasen für Microsoft Intune
 Die typischen Phasen einer technischen Bereitstellung sind Projektumfang, Proof of Concept, Pilot, Rollout im Unternehmen und Ausführung. Im Folgenden finden Sie eine kurze Definition dieser Phasen sowie Links mit weiteren Informationen und Empfehlungen zum Durchlaufen der einzelnen Phasen.
 
-<!--these phase descriptions below are way too short -->
+-   [Projektumfang](project-scope.md): Stellen Sie Ihre Ziele, den Zeitplan und Erfolgsmetriken dar, definieren Sie wichtige Faktoren für die Einsatzbereitschaft im Unternehmen, stellen Sie Ihr Projektteam zusammen und beginnen Sie mit ersten Vorbereitungen für alle Phasen, die für die erfolgreiche Einführung von Microsoft Intune in Ihrer Organisation relevant sind.
+     > [!NOTE]           
+       Diese Vorlagen können hilfreich sein, wenn Sie am Projektumfang arbeiten:
+        
+    >- [Intune oder Intune mit Configuration Manager-Entscheidungsvorlage](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
+    >- [Planungsvorlage für Mobile Apps](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
+    >- [Planungsvorlage für die allgemeine Geräteverwaltung](https://gallery.technet.microsoft.com/General-device-management-334c3792)
+    
 
--   [Projektumfang](project-scope.md): Verstehen der Ziele, der Bereitstellung und der Rolloutstrategie.
+-   [Proof of Concept](proof-of-concept.md): Testen Sie die technische Bereitstellung und die Netzwerkarchitektur, und ermitteln Sie die Fähigkeit Ihrer Bereitstellung, die Anforderungen Ihres Unternehmens zu erfüllen. Diese Phase beinhaltet eine einfache Topologie, die auf die Überprüfung bestimmter technischer Szenarien ausgelegt ist.  
 
--   [Proof of Concept](proof-of-concept.md): Testen der technischen Bereitstellung und der Netzwerkarchitektur.
-
--   [Pilot](pilot.md): Überprüfen der Szenarien, Ressourcen und Rolloutpläne anhand einiger registrierter Geräte und einiger Benutzer, als Vorbereitung für das umfassende Rollout.
-
--   [Rollout im Unternehmen](enterprise-rollout.md): Einführen in allen Abteilungen und Benutzergruppen.
+-   [Pilot](pilot.md): Überprüfen der Szenarien, Ressourcen und Rolloutpläne anhand einiger registrierter Geräte und einiger Benutzer, als Vorbereitung für das umfassende Rollout.  In dieser Phase testen Sie außerdem die technische Implementierung, den Kommunikationsplan und Schulungs- und Supportpläne.
+-   [Rolloutphase im Unternehmen](enterprise-rollout.md): Planen Sie Ihre breit angelegte Rolloutstrategie und führen Sie sie aus, einschließlich Kommunikations-, Schulungs- und Supportaktivitäten. Anschließend erfolgt die Einführung in allen Abteilungen und Benutzergruppen.
 
 -   [Betrieb und Wartung](operations-and-maintenance.md): Betriebsplan für alle Schlüsselphasen/Schwerpunktbereiche, mit Übernahme durch immer mehr Benutzer.
+
+### Weitere Informationen:
+
+[Rolloutrichtlinien](policy-rollout.md)
+
+[Rolloutapps](application-rollout.md)
+
 
 <!--
 These should be linked to topics in the plan & design section once it is back in the TOC
@@ -56,6 +61,7 @@ These topics will help you plan for the rollout of new policies and apps:
 >[**Projektumfang** &rarr;](project-scope.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

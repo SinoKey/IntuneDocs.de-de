@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Richtlinienrollout | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 8935fbc42d7b406a5bcdbfc4353209b4447ae413
+
 
 ---
 
@@ -61,7 +55,7 @@ Definieren Sie den Umfang Ihrer Bereitstellung von Intune-Richtlinien:
 ## Proof of Concept
 In der Proof of Concept-Phase testen Sie Ihre Richtlinienbereitstellung in einer Laborumgebung mit Geräten und Benutzern, die Sie ausschließlich für Testzwecke konfiguriert haben.
 
--   Lassen Sie Ihre Helpdeskmitarbeiter an dieser Phase teilnehmen, damit diese erfahren, welche Probleme während der Pilotphase und der Bereitstellung in der Produktion auftreten können. Informationen zur Problembehandlung finden Sie unter [Behandlung von Problemen mit Richtlinien in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)..
+-   Lassen Sie Ihre Helpdeskmitarbeiter an dieser Phase teilnehmen, damit diese erfahren, welche Probleme während der Pilotphase und der Bereitstellung in der Produktion auftreten können. Informationen zur Problembehandlung finden Sie unter [Behandeln von Problemen mit Richtlinien in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 -   An dieser Stelle des Verfahrens sollten Sie Kommunikationspläne für Benutzer in der Pilotphase und in der Produktion entwickeln. Der Plan sollte mindestens beinhalten, welche Verhaltensweisen der Geräte sich wann ändern werden, welcher geschäftliche Anlass für die Änderung vorliegt und welche Aktionen durchgeführt werden sollten, wenn bei Benutzern oder IT-Mitarbeitern Probleme auftreten. Dabei sollten sowohl Informationen zur Selbsthilfe als auch Kontaktinformationen des Helpdesks aufgeführt werden.
 
@@ -102,6 +96,7 @@ Während der Pilotphase stellen Sie die Richtlinie für eine kleine Gruppe von T
 [Behandlung von Problemen mit Richtlinien in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
