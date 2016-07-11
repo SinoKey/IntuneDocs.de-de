@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Hinzufügen von Apps für mobile Geräte | Microsoft Intune
-description:
-keywords:
+title: "Hinzufügen von Apps für registrierte Geräte | Microsoft Intune"
+description: "Bevor Sie eine App bereitstellen können, müssen Sie sie zu Intune hinzufügen. Anschließend ist sie in der Intune-Konsole verfügbar, und Sie können sie verwalten und bereitstellen."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 795843f012434e1a50cd6abab05b6af2c811cf3e
+
 
 ---
 
-# Hinzufügen von Apps für mobile Geräte in Microsoft Intune
+# Hinzufügen von Apps für registrierte Geräte zu Intune
 
-In diesem Thema erfahren Sie, wie Sie Apps zu Intune hinzufügen, bevor Sie sie bereitstellen.
+Bevor Sie eine App bereitstellen oder verwalten können, müssen Sie sie zu Microsoft Intune hinzufügen. In diesem Thema wird Ihnen gezeigt, wie Sie Apps für registrierte Geräte hinzufügen.
 
 
 > [!IMPORTANT]
@@ -36,14 +29,15 @@ In diesem Thema erfahren Sie, wie Sie Apps zu Intune hinzufügen, bevor Sie sie 
 ## Hinzufügen der App
 Sie verwenden den Intune-Softwareherausgeber, um die Eigenschaften der App zu konfigurieren und sie, falls zutreffend, mithilfe der folgenden Vorgehensweise in Ihren Cloudspeicher hochzuladen:
 
-1.  Klicken Sie in der [Microsoft Intune-Administratorkonsole](https://manage.microsoft.com) auf **Apps** &gt; **Apps hinzufügen**, um den Intune-Softwareherausgeber zu starten.
+1.  Wählen Sie in der [Microsoft Intune-Administratorkonsole](https://manage.microsoft.com) die Option **Apps** &gt; **Apps hinzufügen**, um den Intune-Softwareherausgeber zu starten.
 
-    > [!TIP] Möglicherweise müssen Sie Ihren Intune-Benutzernamen und das Kennwort eingeben, bevor der Softwareherausgeber gestartet wird.
+    > [!TIP]
+    > Möglicherweise müssen Sie Ihren Intune-Benutzernamen und das Kennwort eingeben, bevor der Softwareherausgeber gestartet wird.
 
 2.  Wählen Sie auf der Seite **Softwaresetup** eine der folgenden Optionen für **Wählen Sie aus, wie diese Software für Geräte bereitgestellt werden soll** aus:
     - **Softwareinstallationsprogramm**: Für Apps mit der Erweiterung **MSI**, oder **EXE** geben Sie Folgendes an:
         - **Wählen Sie den Dateityp des Softwareinstallationsprogramms aus**: Hiermit wird die Art der Software angegeben, die Sie bereitstellen möchten. Wenn Sie z. B. eine iOS-App bereitstellen möchten, wählen Sie **App-Paket für iOS (IPA-Datei)** aus.
-        - **Geben Sie den Speicherort der Softwaresetupdateien an**: Geben Sie den Speicherort der Installationsdateien ein, oder klicken Sie auf **Durchsuchen**, um den Speicherort in einer Liste auszuwählen.
+        - **Geben Sie den Speicherort der Softwaresetupdateien an**: Geben Sie den Speicherort der Installationsdateien ein, oder wählen Sie **Durchsuchen**, um den Speicherort in einer Liste auszuwählen.
         - **Weitere Dateien und Unterordner aus dem gleichen Ordner einschließen**: Nur für den Dateityp **Windows Installer**.<br>Mitunter sind für eine Software, bei der Windows Installer verwendet wird, unterstützende Dateien erforderlich, die sich meist im gleichen Ordner befinden wie die Installationsdateien. Wählen Sie diese Option aus, wenn Sie auch diese Dateien bereitstellen möchten.<br>Bei diesem Installationstyp wird etwas Cloudspeicherplatz in Anspruch genommen.
 
   -   **Externe Verknüpfung**: Für Apps, die Sie durch Angeben eines Links zu einem App-Store erstellen möchten, geben Sie Folgendes an:
@@ -64,7 +58,8 @@ Sie verwenden den Intune-Softwareherausgeber, um die Eigenschaften der App zu ko
 
 3.  Konfigurieren Sie auf der Seite **Softwarebeschreibung** Folgendes:
 
-    > [!TIP] Je nach Art des verwendeten Installationsprogramms werden einige dieser Werte möglicherweise automatisch eingetragen, oder sie werden nicht angezeigt.
+    > [!TIP]
+    > Je nach Art des verwendeten Installationsprogramms werden einige dieser Werte möglicherweise automatisch eingetragen.
 
     - **Herausgeber:** Geben Sie den Namen des Herausgebers der App ein.
     - **Name:** Geben Sie den Namen der App ein, wie er im Unternehmensportal angezeigt wird.<br>Stellen Sie sicher, dass alle App-Namen eindeutig sind. Wenn ein App-Name zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
@@ -81,13 +76,14 @@ Sie verwenden den Intune-Softwareherausgeber, um die Eigenschaften der App zu ko
 
 4.  Legen Sie auf der Seite **Anforderungen** die Anforderungen fest, die erfüllt sein müssen, bevor die App auf einem Gerät installiert werden kann. Zum Beispiel können Sie bei einem App-Paket für iOS die erforderliche Mindestversion von iOS und den nötigen Gerätetyp festlegen (wie iPhone oder iPad).
 
-    > [!TIP] Die Seite **Anforderungen** wird nicht bei allen Arten von Apps angezeigt.
+    > [!TIP]
+    > Die Seite **Anforderungen** wird nicht bei allen Arten von Apps angezeigt.
 
 5.  Wenn Sie den Dateityp **Windows Installer** auswählen, werden weitere Assistentenseiten angezeigt. Dieser Dateityp wird verwendet, wenn Sie Software auf PCs mit Windows 10 oder höher bereitstellen, die bei Intune registriert sind.
 
-6.  Überprüfen Sie auf der Seite **Zusammenfassung** die von Ihnen angegebenen Informationen. Sobald Sie bereit sind, klicken Sie auf **Hochladen**.
+6.  Überprüfen Sie auf der Seite **Zusammenfassung** die von Ihnen angegebenen Informationen. Sobald Sie bereit sind, wählen Sie **Hochladen**.
 
-7.  Klicken Sie zum Fertigstellen auf **Schließen**.
+7.  Wählen Sie **Schließen**, um den Vorgang abzuschließen.
 
 Die App wird im Arbeitsbereich **Apps** im Knoten **Apps** angezeigt.
 
@@ -106,6 +102,7 @@ Wenn Sie eine App erstellt haben, umfasst der nächste Schritt die Bereitstellun
 
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

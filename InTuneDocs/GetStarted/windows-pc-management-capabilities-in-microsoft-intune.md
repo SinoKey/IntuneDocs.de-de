@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Funktionen für die Windows-PC-Verwaltung | Microsoft Intune
-description:
-keywords:
+title: "Funktionen für die Windows-PC-Verwaltung | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 665e4a1aa7ee22db91b47660a179384f7c3e4393
+ms.openlocfilehash: 9e7a2f5cb2afdeca737c0c8b1b91418352ad5539
+
 
 ---
 
@@ -34,17 +28,19 @@ In den meisten Szenarien registrieren Sie Ihre Geräte bei Microsoft Intune, sod
 
 -   **Schutz vor Schadsoftware**: Intune umfasst Endpoint Protection, um Ihre PCs vor Schadsoftware zu schützen.
 
--   **Remoteunterstützung**: Über Intune können Benutzer Kontakt mit IT-Supportmitarbeitern aufnehmen, die ihnen über eine in Intune integrierte Remotedesktop-Funktion Unterstützung bieten können (erfordert TeamViewer-Software).
+-   **Remoteunterstützung**: Über Intune können Benutzer Kontakt mit IT-Supportmitarbeitern aufnehmen, die ihnen über eine in Intune integrierte Remotedesktopfunktion Unterstützung bieten können <!--- (requires TeamViewer software)--->.
 
 -   **Verwaltung von Softwarelizenzen**: Überwachen Sie, wie viele Lizenzen verfügbar sind und wie viele Lizenzen verwendet werden.
 -   **App-Bereitstellung**: Stellen Sie Software auf PCs bereit, die Sie verwalten. Einige App-Verwaltungsfunktionen sind nicht verfügbar, wenn Sie PCs mit der Clientsoftware verwalten.
 
 
+Intune unterstützt die Installation der PC-Clientsoftware auf bis zu 7.000 Windows-Geräten.
+
 ## Anforderungen an das Betriebssystem
 PCs mit den folgenden Windows-Versionen (x86 und x64) können mit Intune verwaltet werden:
 
 
--   **Windows Vista**: Business, Enterprise und Ultimate.
+-   **Windows Vista**: Business, Enterprise und UltimateEdition.
 
 -   **Windows 7**: Professional, Enterprise oder Ultimate (ohne Service Pack oder mit SP1).
 
@@ -77,6 +73,7 @@ Im Folgenden sind die Softwareanforderungen zum Installieren des Intune-PC-Clien
 [Verwaltungsfunktionen für mobile Geräte in Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

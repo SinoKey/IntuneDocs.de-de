@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Steuern von Microsoft Passport-Einstellungen auf Geräten | Microsoft Intune
-description:
-keywords:
+title: "Steuern von Microsoft Passport-Einstellungen auf Geräten | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
+
 
 ---
 
@@ -57,7 +51,8 @@ Intune wird auf zwei Arten in Passport for Work integriert:
     - **Zulässig**: Benutzer können den Zeichentyp in ihrer PIN verwenden, aber es ist nicht zwingend erforderlich.
     - **Erforderlich**: Benutzer müssen in ihre PIN mindestens einen der Zeichentypen einbeziehen. Beispielsweise ist es üblich, mindestens einen Großbuchstaben und ein Sonderzeichen zu erfordern.
     - **Nicht zulässig** (Standard): Benutzer dürfen diese Zeichentypen in ihrer PIN nicht verwenden (dies trifft auch zu, wenn die Einstellung nicht konfiguriert ist).
-    > [!TIP] Sonderzeichen umfassen: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    > [!TIP]
+    > Sonderzeichen umfassen: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **PIN-Ablauf (Tage)**: Es wird empfohlen, ein Ablaufdatum für eine PIN anzugeben, nach dem sie vom Endbenutzer geändert werden muss. Die Standardeinstellung ist 41 Tage. 
 - **PIN-Verlauf speichern**: Verwenden Sie diese Einstellung, um die Wiederverwendung von zuvor verwendete PINs einzuschränken. Standardmäßig können die letzten fünf PINs nicht erneut verwendet werden.
 
@@ -79,6 +74,7 @@ Weitere Informationen zu Microsoft Passport finden Sie im [Leitfaden](https://te
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

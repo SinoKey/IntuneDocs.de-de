@@ -1,32 +1,26 @@
 ---
-# required metadata
-
 title: Anwendungsrollout | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+
 
 ---
 
 # Anwendungsrollout
-Dieses Thema enthält spezifische Empfehlungen für ein phasenweises Rollout von Apps in Microsoft Intune. Allgemeine Informationen über die Phasen des Rollouts finden Sie unter [Rolloutphasen für die Bereitstellung von Microsoft Intune](rollout-phases-for-microsoft-intune-deployment.md)..
+Dieses Thema enthält spezifische Empfehlungen für ein phasenweises Rollout von Apps in Microsoft Intune. Allgemeine Informationen über die Phasen des Rollouts finden Sie unter [Rolloutphasen für die Bereitstellung von Microsoft Intune](rollout-phases-for-microsoft-intune-deployment.md).
 
 ### Phasen des App-Rollouts
 Phasen des App-Rollouts:
@@ -48,18 +42,21 @@ Beachten Sie Folgendes:
 
 -   Die Eignung der App für Ihre Benutzer und deren Geräte (alle Betriebssysteme, die wahrscheinlich verwendet werden).
 
--   Überprüfen Sie, dass das Installationsprogramm für die ausgewählte App von der App-Verteilung von Intune unterstützt wird, wie in [Hinzufügen von Apps mit Microsoft Intune](/intune/deploy-use/add-apps) beschrieben..
+-   Stellen Sie sicher, dass das Installationsprogramm für die ausgewählte App von der App-Verteilung von Intune unterstützt wird, wie in [Hinzufügen von Apps mit Microsoft Intune](/intune/deploy-use/add-apps) beschrieben.
 
 -   Stellen Sie sicher, dass die erforderlichen Komponenten für die App-Verteilung installiert sind. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->).
 
 -   Ermitteln Sie, ob der App-Typ von Intune unterstützt wird.
 
--   Überprüfen Sie, ob ausreichend Cloudspeicher zum Hochladen der App verfügbar ist. Anweisungen zum Erwerb von zusätzlichem Speicher finden Sie unter [Hinzufügen von Apps mit Microsoft Intune](/intune/deploy-use/add-apps)..
+-   Überprüfen Sie, ob ausreichend Cloudspeicher zum Hochladen der App verfügbar ist. Anweisungen zum Erwerb von zusätzlichem Speicher finden Sie unter [Hinzufügen von Apps mit Microsoft Intune](/intune/deploy-use/add-apps).
+
+> [!NOTE]           
+> Sie können diese [Planungsvorlage für mobile Apps](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59) herunterladen, die Ihnen bei Ihrem Rolloutprozess behilflich sein kann.
 
 ## Proof of Concept
 In der Proof of Concept-Phase testen Sie Ihre App-Bereitstellung in einer Laborumgebung mit Geräten und Benutzern, die Sie ausschließlich für Testzwecke konfiguriert haben.
 
--   Lassen Sie Ihre Helpdeskmitarbeiter an dieser Phase teilnehmen, damit diese erfahren, welche Probleme während der Pilotphase und der Bereitstellung in der Produktion auftreten können. Informationen zur Problembehandlung finden Sie unter [Behandlung von Problemen mit der App-Bereitstellung in Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune)..
+-   Lassen Sie Ihre Helpdeskmitarbeiter an dieser Phase teilnehmen, damit diese erfahren, welche Probleme während der Pilotphase und der Bereitstellung in der Produktion auftreten können. Informationen zur Problembehandlung finden Sie unter [Behandlung von Problemen mit der App-Bereitstellung in Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune).
 
 -   An dieser Stelle des Verfahrens sollten Sie Kommunikationspläne für Benutzer in der Pilotphase und in der Produktion entwickeln. Der Plan sollte mindestens beinhalten, welche App bereitgestellt wird, wann und wie Benutzer sie erhalten, den Geschäftszweck der Bereitstellung und wie bei auftretenden Problemen vorzugehen ist, d. h. sowohl Informationen zur Selbsthilfe als auch Kontaktinformationen des Helpdesks sollten aufgeführt werden.
 
@@ -97,6 +94,7 @@ Während der Pilotphase stellen Sie die App für eine kleine Gruppe von Testbenu
 [Behandlung von Problemen mit der App-Bereitstellung in Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

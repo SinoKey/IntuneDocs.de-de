@@ -1,38 +1,30 @@
 ---
-# required metadata
-
-title: Verwalten des Internetzugriffs mittels Richtlinien für Managed Browser | Microsoft Intune
-description:
-keywords:
+title: "Verwalten des Internetzugriffs mittels Richtlinien für Managed Browser | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 2df44199ecd904dcfb6774a942244338c1384186
+ms.openlocfilehash: c4462af584d54225084159dfa35f5e1d07c36397
+
 
 ---
 
 # Verwalten des Internetzugriffs mittels Richtlinien für verwaltete Browser mit Microsoft Intune
 Managed Browser ist eine Webbrowser-Anwendung, die Sie in Ihrer Organisation mit Microsoft Intune bereitstellen können. Eine Richtlinie für verwaltete Browser konfiguriert die Liste "Zulassen" oder "Blockieren", um die Websites einzuschränken, die Benutzer des verwalteten Browsers besuchen können.
 
-Da diese App eine verwaltete App ist, können Sie darauf auch Verwaltungsrichtlinien für mobile Anwendungen anwenden. Hierzu zählt beispielsweise, die Verwendung der Funktionen zum Ausschneiden, Kopieren und Einfügen zu steuern, Bildschirmaufnahmen zu verhindern und sicherzustellen, dass Links zu Inhalten, auf die Benutzer klicken, in anderen verwalteten Apps geöffnet werden. Weitere Informationen finden Sie unter [Konfigurieren und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen in der Microsoft Intune-Konsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)..
+Da diese App eine verwaltete App ist, können Sie darauf auch Verwaltungsrichtlinien für mobile Anwendungen anwenden. Hierzu zählt beispielsweise, die Verwendung der Funktionen zum Ausschneiden, Kopieren und Einfügen zu steuern, Bildschirmaufnahmen zu verhindern und sicherzustellen, dass Links zu Inhalten, auf die Benutzer klicken, in anderen verwalteten Apps geöffnet werden. Weitere Informationen finden Sie unter [Konfigurieren und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen in der Microsoft Intune-Konsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 > [!IMPORTANT]
->Wenn Benutzer Managed Browser aus dem App Store installieren und die App nicht von Intune verwaltet wird, tritt das folgende Verhalten auf:
-iOS: Die App des verwalteten Browsers kann als Basiswebbrowser verwendet werden, aber einige Features sind nicht verfügbar, und der Zugriff auf Daten anderer von Intune verwalteter Apps ist nicht möglich.
+>Falls Benutzer den Managed Browser aus dem App Store installieren und es nicht von Intune verwaltet wird, gilt Folgendes: iOS – Die Managed Browser-App kann als ein Basiswebbrowser verwendet werden, einige Funktionen stehen jedoch nicht zur Verfügung, und sie wird nicht auf Daten anderer durch Intune verwalteter Apps zugreifen können.
 Android: Die App des verwalteten Browsers kann nicht verwendet werden.
 Wenn Benutzer den verwalteten Browser selbst auf einem iOS-Gerät mit einer Version vor iOS 9 installieren, wird er nicht durch die von Ihnen erstellten Richtlinien verwaltet. Um sicherzustellen, dass der Browser von Intune verwaltet wird, muss die App deinstalliert werden, bevor Sie sie als verwaltete Anwendung bereitstellen können. Wenn Benutzer unter IOS 9 und höher den verwalteten Browser selbst installieren, werden sie aufgefordert, ihn für die Verwaltung durch Richtlinie zuzulassen.
 
@@ -42,11 +34,11 @@ Sie können Richtlinien für verwaltete Browser für die folgenden Gerätetypen 
 
 -   Geräte unter iOS 7.1 und höher
 
-In Intune Managed Browser können Sie Webinhalte von [Microsoft Intune-Anwendungspartnern](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) öffnen..
+Intune Managed Browser unterstützt das Öffnen von Webinhalten von [Microsoft Intune-Anwendungspartnern](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
 ## Erstellen einer Richtlinie für verwaltete Browser
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Richtlinie hinzufügen**..
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Richtlinie hinzufügen**.
 
 2.  Konfigurieren Sie einen der folgenden Richtlinientypen für **Software** :
 
@@ -64,7 +56,7 @@ In Intune Managed Browser können Sie Webinhalte von [Microsoft Intune-Anwendung
     |**Beschreibung**|Geben Sie eine Beschreibung ein, die einen Überblick über die Richtlinie für verwaltete Browser bietet, sowie weitere relevante Informationen, mit denen Sie danach suchen können.|
     |**Aktivieren Sie eine Zulassungsliste oder Sperrliste, um die URLs zu beschränken, die vom verwalteten Browser geöffnet werden können.**|Wählen Sie eine der folgenden Optionen aus:<br /><br />**Der verwaltete Browser kann nur die unten aufgeführten URLs öffnen**: Geben Sie eine Liste mit URLs an, die der verwaltete Browser öffnen kann.<br /><br />**Der verwaltete Browser kann die unten aufgeführten URLs nicht öffnen**: Geben Sie eine Liste mit URLs an, die der verwaltete Browser nicht öffnen kann. **Hinweis:** Eine Richtlinie für verwaltete Browser kann nicht sowohl zulässige als auch blockierte URLs enthalten.<br />Weitere Informationen zu den festlegbaren URL-Formaten finden Sie in diesem Thema unter **URL-Format für zulässige und blockierte URLs**.|
 
-4.  Klicken Sie danach auf **Richtlinie speichern**..
+4.  Klicken Sie danach auf **Richtlinie speichern**.
 
 Die neue Richtlinie wird im Knoten **Konfigurationsrichtlinien** des Arbeitsbereichs **Richtlinie** angezeigt.
 
@@ -76,7 +68,7 @@ Nachdem Sie die Richtlinie für verwaltete Browser erstellt haben, können Sie e
 
 Wenn Sie die App bereitstellen, wählen Sie die Richtlinie für verwaltete Browser auf der Seite **Mobile App-Verwaltung** aus, um die App mit der Richtlinie zu verknüpfen.
 
-Weitere Informationen zum Bereitstellen von Apps finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md)..
+Weitere Informationen zum Bereitstellen von Apps finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
 ## Sicherheit und Datenschutz für den verwalteten Browser
 
@@ -108,7 +100,7 @@ Nachfolgend wird erläutert, welche Formate und Platzhalter Sie zum Festlegen vo
 
     -   Port 443 für https
 
-    Das Verwenden von Platzhaltern für die Portnummer wird nicht unterstützt: Beispiele: **http://www.contoso.com:*;** und **http://www.contoso.com: /*.;**
+    Das Verwenden von Platzhaltern für die Portnummer wird nicht unterstützt: Beispiele: **http&colon;//www&period;contoso&period;com:*;** und **http&colon;//www&period;contoso&period;com: /*;**
 
 -   In der folgenden Tabelle sind die zugelassenen Muster aufgeführt, die Sie zum Festlegen von URLs verwenden können:
 
@@ -157,6 +149,7 @@ Wenn mehrere Richtlinien für verwaltete Browser für ein Gerät bereitgestellt 
 -   Wenn ein Gerät bereits ein Richtlinie für verwaltete Browser erhalten hat und eine zweite Richtlinie mit in Konflikt stehenden Einstellungen bereitgestellt wird, bleiben die ursprünglichen Einstellungen auf dem Gerät bestehen. Sie können die Konflikte über den Knoten **Richtlinienkonflikte** des Arbeitsbereichs **Richtlinie** anzeigen.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

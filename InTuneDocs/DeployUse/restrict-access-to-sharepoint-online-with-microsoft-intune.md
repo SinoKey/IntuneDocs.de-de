@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Beschränken des Zugriffs auf SharePoint Online | Microsoft Intune
-description:
-keywords:
+title: "Beschränken des Zugriffs auf SharePoint Online | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
+
 
 ---
 
@@ -30,7 +24,7 @@ Verwenden Sie den bedingten Zugriff von [!INCLUDE[wit_firstref](../includes/wit_
 Der bedingte Zugriff besteht aus zwei Komponenten:
 - Eine Gerätekompatibilitätsrichtlinie, die das Gerät erfüllen muss, um als kompatibel bewertet zu werden.
 - Eine Richtlinie für bedingten Zugriff, in der Sie die Bedingungen festlegen, die das Gerät erfüllen muss, um auf den Dienst zugreifen zu können.
-Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Beschränken des Zugriffs auf E-Mail, O365 und andere Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 Wenn ein Benutzer versucht, mit einer unterstützten App wie z. B. OneDrive auf seinem Gerät eine Verbindung mit einer Datei herzustellen, erfolgt die folgende Auswertung:
 
@@ -66,6 +60,13 @@ Wenn eine Bedingung nicht erfüllt wird, erhält der Benutzer bei der Anmeldung 
 - Android 4.0 und höher, Samsung KNOX Standard 4.0 oder höher
 - Windows Phone 8.1 und höher
 
+Sie können den Zugriff auf SharePoint Online beschränken, wenn von einem Browser von **iOS**- und **Android**-Geräten aus zugegriffen wird.  Der Zugriff wird nur von unterstützten Browsern auf kompatiblen Geräten gewährt:
+* Safari (iOS)
+* Chrome (Android)
+* Managed Browser (iOS und Android)
+
+**Nicht unterstützte Browser werden blockiert**.
+
 ## Unterstützung für PCs
 - Windows 8.1 und höher (bei Registrierung mit Intune)
 - Windows 7.0 oder Windows 8.1 (bei Einbindung in eine Domäne)
@@ -97,11 +98,13 @@ Benutzer, die in beiden Gruppen enthalten sind, werden von der Richtlinie ausgen
 ### Schritt 2: Konfigurieren und Bereitstellen einer Kompatibilitätsrichtlinie
 Falls noch nicht bereits geschehen, erstellen Sie für die Benutzer, auf die die SharePoint Online-Richtlinie angewendet werden soll, eine Kompatibilitätsrichtlinie und stellen Sie sie bereit.
 
-> [!NOTE] Kompatibilitätsrichtlinien werden für [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Gruppen bereitgestellt, Richtlinien für bedingten Zugriff dagegen werden auf Azure Active Directory-Sicherheitsgruppen angewendet.
+> [!NOTE]
+> Kompatibilitätsrichtlinien werden für [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Gruppen bereitgestellt, Richtlinien für bedingten Zugriff dagegen werden auf Azure Active Directory-Sicherheitsgruppen angewendet.
 
 Ausführliche Informationen zum Konfigurieren der Kompatibilitätsrichtlinie finden Sie unter [Erstellen einer Kompatibilitätsrichtlinie](create-a-device-compliance-policy-in-microsoft-intune.md).
 
-> [!IMPORTANT] Wenn Sie keine Kompatibilitätsrichtlinie bereitgestellt haben, werden die Geräte als kompatibel ausgewertet.
+> [!IMPORTANT]
+> Wenn Sie keine Kompatibilitätsrichtlinie bereitgestellt haben, werden die Geräte als kompatibel ausgewertet.
 
 Wenn Sie soweit sind, fahren Sie mit **Schritt 3**fort.
 
@@ -110,8 +113,8 @@ Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompa
 
 #### <a name="bkmk_spopolicy"></a>
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** > **Bedingter Zugriff** > **SharePoint Online-Richtlinie**.
-![Screenshot der Seite mit der SharePoint Online-Richtlinie](../media/IntuneSASharePointOnlineCAPolicy.png)
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** > **Bedingter Zugriff** > **SharePoint Online-Richtlinie** aus.
+![Screenshot der Seite mit der SharePoint Online-Richtlinie](../media/mdm-ca-spo-policy-configuration.png)
 
 2.  Wählen Sie **Richtlinie für bedingten Zugriff für SharePoint Online aktivieren** aus.
 
@@ -120,6 +123,10 @@ Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompa
     -   **Alle Plattformen**
 
         Dies setzt voraus, dass jedes Gerät, das für den Zugriff auf **SharePoint Online** verwendet wird, in Intune registriert und mit den Richtlinien kompatibel ist.  Jede Clientanwendung, die die **moderne Authentifizierung** verwendet, unterliegt der Richtlinie für bedingten Zugriff. Wenn die Plattform zurzeit von Intune nicht unterstützt wird, ist der Zugriff auf **SharePoint** blockiert.
+
+        Das Auswählen der Option **Alle Plattformen** bedeutet, dass Azure Active Directory diese Richtlinie auf alle Authentifizierungsanforderungen anwendet, ungeachtet der von der Clientanwendung gemeldeten Plattform.  Alle Plattformen müssen registriert und kompatibel sein, mit Ausnahme von:
+        *   Windows-Geräten. Diese müssen registriert werden und kompatibel sein, mit der lokalen Active Directory-Domäne verknüpft sein oder beides
+        * nicht unterstützten Plattformen wie Mac.  Allerdings werden Apps, die die moderne Authentifizierung von diesen Plattformen verwenden, weiterhin blockiert.
         >[!TIP]
         >Wenn Sie den bedingten Zugriff für PCs nicht bereits verwenden, wird Ihnen diese Option möglicherweise nicht angezeigt.  Verwenden Sie stattdessen die Option **Spezifische Plattformen**, Der bedingte Zugriff für PCs steht zurzeit nicht allen Intune-Kunden zur Verfügung.   Allgemeine Informationen, Informationen zu bekannten Problemen sowie Informationen zum Zugriff auf dieses Feature finden Sie auf der [Microsoft Connect-Website](http://go.microsoft.com/fwlink/?LinkId=761472).
 
@@ -135,11 +142,28 @@ Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompa
 
      -   **Geräte müssen kompatibel sein.** Wählen Sie diese Option aus, wenn Sie festlegen möchten, dass die PCs bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] registriert und kompatibel sein. Wenn der PC nicht registriert ist, wird eine Meldung mit Anweisungen zur Registrierung angezeigt.
 
-4.  Klicken Sie unter **Zielgruppen**auf **Ändern** , um die Active Directory-Sicherheitsgruppen auszuwählen, für die die Richtlinie gelten soll. Sie können dies für alle Benutzer oder nur für ausgewählte Benutzergruppen festlegen.
+4.   Unter **Browserzugriff** auf SharePoint Online und OneDrive for Business können Sie auswählen, dass der Zugriff auf Exchange Online ausschließlich über unterstützte Browser gewährt werden soll: Safari (iOS) und Chrome (Android). Der Zugriff von anderen Browsern aus wird blockiert.  Die gleichen Plattformeinschränkungen, die Sie für den Anwendungszugriff für OneDrive ausgewählt haben, gelten auch hier.
 
-5.  Klicken Sie unter **Ausgenommene Gruppen**optional auf **Ändern** , um die Active Directory-Sicherheitsgruppen auszuwählen, die von dieser Richtlinie ausgenommen werden.
+  Auf **Android**-Geräten müssen die Benutzer den Browserzugriff aktivieren.  Zu diesem Zweck müssen Endbenutzer die Option „Browserzugriff aktivieren“ auf dem registrierten Gerät wie folgt aktivieren:
+  1.    Starten Sie die **Unternehmensportal-App**.
+  2.    Wechseln Sie über die Schaltfläche mit den drei Punkten (...) oder über „Hardwaremenü“ zur Seite **Einstellungen**.
+  3.    Klicken Sie auf die Schaltfläche **Browserzugriff aktivieren**.
+  4.  Melden Sie sich im Chrome-Browser aus Office 365 ab, und starten Sie Chrome neu.
 
-6.  Klicken Sie abschließend auf **Speichern**.
+  Auf **iOS- und Android**-Plattformen stellt Azure Active Directory ein Transport Layer Security-Zertifikat (TLS) für das Gerät aus, das für den Zugriff auf den Dienst verwendet wird, damit es identifiziert werden kann.  Das Gerät zeigt den Endbenutzern das Zertifikat zusammen mit einer Eingabeaufforderung zur Auswahl des Zertifikats an, wie in den nachstehenden Screenshots dargestellt. Die Endbenutzer müssen dieses Zertifikat auswählen, bevor sie den Browser weiter verwenden können.
+
+  **iOS**
+
+  ![Screenshot der Zertifikatseingabeaufforderung auf einem iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
+
+  **Android**
+
+  ![Screenshot der Zertifikatseingabeaufforderung auf einem Android-Gerät](../media/mdm-browser-ca-android-cert-prompt.png)
+5.  Wählen Sie unter **Zielgruppen** **Ändern** aus, um die Azure Active Directory-Sicherheitsgruppen auszuwählen, für die die Richtlinie gelten soll. Sie können dies für alle Benutzer oder nur für ausgewählte Benutzergruppen festlegen.
+
+6.  Wählen Sie unter **Exempted Groups** (Ausgenommene Gruppen) optional **Ändern**, um die Azure Active Directory-Sicherheitsgruppen auszuwählen, die von dieser Richtlinie ausgenommen werden.
+
+6.  Wählen Sie abschließend **Speichern** aus.
 
 Die Richtlinie für bedingten Zugriff wird sofort wirksam und muss nicht explizit bereitgestellt werden.
 
@@ -158,6 +182,7 @@ Wählen Sie eine beliebige Gruppe von Mobilgeräten und dann auf der Registerkar
 [Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste mit Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

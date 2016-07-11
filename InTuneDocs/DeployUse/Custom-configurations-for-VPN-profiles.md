@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Benutzerdefinierte Konfigurationen für VPN-Profile | Microsoft Intune
-description:
-keywords:
+title: "Benutzerdefinierte Konfigurationen für VPN-Profile | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d5c48a4cead6250864f5b10444d99d062441bd99
+ms.openlocfilehash: 7e7c50552b5a61804e759a7ec5443029d4bd4584
+
 
 ---
 
@@ -46,11 +40,11 @@ Sie können benutzerdefinierte Konfigurationen verwenden, um VPN-Profile in Intu
 
     -   **Zum Bereitstellen der Richtlinie**: Wählen Sie mindestens eine Gruppe aus, für die Sie die Richtlinie bereitstellen möchten, und klicken Sie auf **Hinzufügen** &gt; **OK**.
 
-    -   **Zum Schließen des Dialogfelds, ohne die Richtlinie bereitzustellen:** Klicken Sie auf **Abbrechen**.
+    -   **Wenn Sie das Dialogfeld schließen möchten, ohne die Richtlinie bereitzustellen:** Klicken Sie auf **Abbrechen**.
 
 Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informationen zur Bereitstellung im unteren Teil der Richtlinienliste anzeigen.
 
-##Beispiel für URI-Einstellungen für eine benutzerdefinierte VPN-Profilkonfiguration 
+##Beispiel für URI-Einstellungen für eine benutzerdefinierte VPN-Profilkonfiguration
 Hier folgen Beispieleinträge für URI-Werte zum Erstellen einer benutzerdefinierten Konfiguration für ein VPN in einem fiktiven Unternehmen namens Contoso. Weitere Informationen, wie etwa den Datentyp für die einzelnen Einträge, finden Sie unter [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)
 
 Natives Contoso-VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
@@ -117,6 +111,7 @@ Beispiele:
 (VPN-Verbindungen in Microsoft Intune)[vpn-connections-in-microsoft-intune.md]
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

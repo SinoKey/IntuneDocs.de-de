@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Benutzeroberfläche für MAM-fähige Apps | Microsoft Intune
-description:
-keywords:
+title: "Benutzeroberfläche für MAM-fähige Apps | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
+ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
+
 
 ---
 
@@ -41,6 +34,7 @@ MAM-Richtlinien (Mobile Application Management, Verwaltung mobiler Anwendungen) 
     ![Screenshot der O365-Anmeldeseite](../media/AppManagement/iOS_O365SignInPage.png)
 
 3.  Nachdem Ihre Anmeldeinformationen von Azure Active Directory erfolgreich authentifiziert wurden, werden die MAM-Richtlinien angewendet, und Sie werden aufgefordert, **OneDrive** neu zu starten.
+  >[HINWEIS!] Das Dialogfeld „Neustart erforderlich“ wird nur auf Geräten angezeigt, die nicht bei Intune registriert sind.
 
     ![Screenshot des Dialogfelds „Neustart erforderlich“](../media/AppManagement/iOS_AppRestartforMAM.png)
 
@@ -79,7 +73,7 @@ MAM-Richtlinien (Mobile Application Management, Verwaltung mobiler Anwendungen) 
 
     ![Screenshot der Unternehmensportal-App](../media/AppManagement/Android_CompanyPortalInstall.png)
 
-5.  Klicken Sie nach Abschluss der Installation auf **Annehmen** , um die Bedingungen zu akzeptieren.
+5.  Wählen Sie nach Abschluss der Installation **Annehmen** aus, um die Bedingungen zu akzeptieren.
 
 6.  **OneDrive** wird automatisch gestartet.
 
@@ -136,7 +130,7 @@ Lesen Sie das Beispielszenario unten, um genauer zu verstehen, wie mehrere Benut
 Benutzer A arbeitet für zwei Unternehmen – **Unternehmen X** und **Unternehmen Y**. Der Benutzer A verfügt für jedes Unternehmen über ein geschäftliches Konto, und beide verwenden Intune zum Bereitstellen von MAM-Richtlinien. **Unternehmen X** stellt MAM-Richtlinien **vor** **Unternehmen Y** bereit. Das **Unternehmen X** zugeordnete Konto erhält die MAM-Richtlinie, nicht jedoch das dem Unternehmen Y zugeordnete Konto. Wenn das Unternehmen Y zugeordnete Konto durch die MAM-Richtlinien verwaltet werden soll, müssen Sie das Unternehmen X zugeordnete Benutzerkonto entfernen.
 ### Hinzufügen eines zweiten Kontos
 #### iOS
-Wenn Sie ein iOS-Gerät verwenden und versuchen, auf demselben Gerät ein zweites Geschäftskonto einzurichten, wird möglicherweise eine Sperrnachricht angezeigt.  Darüber hinaus wird eine Option zum Entfernen des vorhanden Kontos und zum Hinzufügen eines neuen Kontos angezeigt. Klicken Sie hierfür auf **Ja**.
+Wenn Sie ein iOS-Gerät verwenden und versuchen, auf demselben Gerät ein zweites Geschäftskonto einzurichten, wird möglicherweise eine Sperrnachricht angezeigt.  Darüber hinaus wird eine Option zum Entfernen des vorhanden Kontos und zum Hinzufügen eines neuen Kontos angezeigt. Wählen Sie hierfür **Ja** aus.
 
 ![Screenshot des Dialogfelds mit der Sperrnachricht und den Optionen „Ja“ und „Nein“](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
@@ -149,6 +143,18 @@ Um unternehmenseigene AV-, PDF- und Bilddateien auf Android-Geräten anzuzeigen,
 
 Laden Sie diese App aus dem Google Play herunter.  Sobald die App auf Ihrem Gerät installiert ist, starten Sie die App, und authentifizieren Sie sich mit Ihren Unternehmens-Anmeldeinformationen. Sie sollten jetzt in der Lage sein, ungeschützte und geschützte Dateien aus anderen per Richtlinie verwalteten Apps anzuzeigen.
 
+Die folgenden Dateitypen werden unterstützt:
+
+* **Audio:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (erweitertes AAC+), AAC ELD (enhanced low delay ACC; erweitertes AAC mit geringer Verzögerung), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
+* **Video:** H.263, H.264 AVC, MPEG-4 SP, VP8.
+* **Bild:** JPG, PJPG, PNG, PPNG, BMP, PBMP, GIF, PGIF, JPEG, PJPEG.
+* PDF, PPDF
+
+------------
+|**Pfile**|**text**|
+|----|----|
+|Pfile ist ein generisches „Wrapper“-Format für geschützte Dateien, das den verschlüsselten Inhalt und die RMS-Lizenzen einkapselt und zum Schützen aller Dateitypen verwendet werden kann.|Textdateien, einschließlich XML, CSV, etc. können zum Anzeigen in der App geöffnet werden, selbst wenn sie geschützt sind. Dateitypen: TXT, PTXT, CSV, PCSV, LOG, PLOG, XML, PXML.|
+---------------
 **Android-Geräte, die nicht bei Intune registriert sind**
 
 Bevor Sie mithilfe der RMS-Freigabeanwendung Dateien anzeigen können, die aus anderen von Intune verwalteten Apps stammen, müssen Sie die RMS-Anwendung starten und sich mit Ihrem Geschäftskonto anmelden.  Wenn Sie sich angemeldet haben und **nur wenn Sie über keine RMS-Lizenz verfügen**, wird folgende Meldung angezeigt:
@@ -162,6 +168,7 @@ Dies verhindert nicht Sie, dass mit der RMS-Freigabeanwendung Unternehmensdateie
 [Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

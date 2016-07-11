@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Android-MAM-Richtlinieneinstellungen | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 3f43dc871dc0b0a81a6d0b05376a1254957fc35b
+
 
 ---
 
@@ -65,11 +59,12 @@ Der Begriff **Richtlinienverwaltete Apps** wird verwendet, um auf Apps zu verwei
 
     **Standardwert = Ja**
 - **App-Daten verschlüsseln:** Wählen Sie **Ja** aus, um die Verschlüsselung zu aktivieren. Wenn diese Einstellung aktiviert ist, wird bei Apps, die einer Verwaltungsrichtlinie für mobile Apps zugeordnet sind, die Verschlüsselung von Microsoft bereitgestellt. Daten werden während der Datei-E/A-Vorgänge synchron verschlüsselt. Inhalt im Speicher des Geräts wird immer verschlüsselt.
-  >[!NOTE] Die Verschlüsselungsmethode ist nicht FIPS 140-2-zertifiziert.
+  >[!NOTE]
+  >Die Verschlüsselungsmethode ist nicht FIPS 140-2-zertifiziert
 
   **Standardwert = Ja**
 
-- **ContactSyncDisabled:** Wählen **Ja** aus, um zu verhindern, dass Kontaktinformationen mit der native Adressbuch-App auf dem Gerät synchronisiert werden. Wenn Sie **Nein** auswählen, speichert die App die Kontaktinformationen in der nativen Adressbuch-App auf dem Gerät.<br/>Wenn Sie zum Entfernen von Unternehmensdaten eine selektive Zurücksetzung durchführen, werden Kontakte entfernt, die direkt aus der App mit dem nativen Adressbuch synchronisiert werden. Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. Dies gilt derzeit nur für die **Microsoft Outlook**-App.
+- **Kontaktsynchronisierung deaktivieren:** Wählen Sie **Ja** aus, um zu verhindern, dass Kontaktinformationen mit der nativen Adressbuch-App auf dem Gerät synchronisiert werden. Wenn Sie **Nein** auswählen, speichert die App die Kontaktinformationen in der nativen Adressbuch-App auf dem Gerät.<br/>Wenn Sie zum Entfernen von Unternehmensdaten eine selektive Zurücksetzung durchführen, werden Kontakte entfernt, die direkt aus der App mit dem nativen Adressbuch synchronisiert werden. Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. Dies gilt derzeit nur für die **Microsoft Outlook**-App.
 
   **Standardwert = Ja**
 
@@ -100,6 +95,7 @@ Der Begriff **Richtlinienverwaltete Apps** wird verwendet, um auf Apps zu verwei
 - **Bildschirmaufnahmen und Android Assistant blockieren (Android 6 Marshmallow oder höher):** Wählen Sie **Ja** aus, um die Bildschirmaufnahme- und **Android Assistant**-Funktionen des Geräts zu blockieren, wenn diese App verwendet wird.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

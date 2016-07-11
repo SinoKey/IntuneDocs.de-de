@@ -1,36 +1,28 @@
 ---
-# required metadata
-
 title: Konfigurieren von Zertifikatprofilen | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ee6b3607688cb02be7316b83e10424dfbea9746b
+ms.openlocfilehash: 8343abe8861468bbba27272aa1f3569390cb826b
+
 
 ---
 
 # Konfigurieren von Intune-Zertifikatprofilen
-Nachdem Sie Ihre Infrastruktur und Zertifikate konfiguriert haben (gemäß der Beschreibung in [Konfigurieren der Zertifikatinfrastruktur](configure-certificate-infrastructure.md)), können Sie Zertifikatprofile konfigurieren:
+Nachdem Sie Ihre Infrastruktur und Zertifikate konfiguriert haben (gemäß der Beschreibung in [Konfigurieren der Zertifikatinfrastruktur für SCEP](configure-certificate-infrastructure-for-scep.md) oder [Konfigurieren der Zertifikatinfrastruktur für PFX](configure-certificate-infrastructure-for-pfx.md)), können Sie Zertifikatprofile konfigurieren:
 
-**Aufgabe 1**: Exportieren des vertrauenswürdigen Stammzertifizierungsstellenzertifikats
-**Aufgabe 2**: Erstellen von Zertifikatprofilen der vertrauenswürdigen Zertifizierungsstelle
-**Aufgabe 3**: Eine der beiden Optionen:
+**Aufgabe 1**: Exportieren des vertrauenswürdigen Stammzertifizierungsstellenzertifikats **Aufgabe 2**: Erstellen von Zertifikatprofilen der vertrauenswürdigen Zertifizierungsstelle**Aufgabe 3**: Eine der Optionen:
 
 Erstellen von SCEP-Zertifikatprofilen
 
@@ -46,7 +38,7 @@ Sie müssen ein **Profil mit einem vertrauenswürdigen Zertifikat** erstellen, b
 
 ##### So erstellen Sie ein vertrauenswürdiges Zertifikatprofil
 
-1.  Öffnen Sie die [Intune-Verwaltungskonsole](https://manage.microsoft.com), und klicken Sie auf **Richtlinie** &gt; **Richtlinie hinzufügen**..
+1.  Öffnen Sie die [Intune-Verwaltungskonsole](https://manage.microsoft.com), und klicken Sie auf **Richtlinie** &gt; **Richtlinie hinzufügen**.
 
 2.  Konfigurieren Sie einen der folgenden Richtlinientypen:
 
@@ -60,12 +52,12 @@ Sie müssen ein **Profil mit einem vertrauenswürdigen Zertifikat** erstellen, b
 
     **Windows &gt; Vertrauenswürdiges Zertifikatprofil (Windows Phone 8.1 und höher)**
 
-    Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+    Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Stellen Sie die angeforderten Informationen bereit, um die Profileinstellungen vertrauenswürdiger Zertifikate für Android, iOS, Mac OS X, Windows 8.1 oder Windows Phone 8.1 zu konfigurieren: Importieren Sie in der Einstellung **Zertifikatdatei** das Zertifikat der vertrauenswürdigen Stammzertifizierungsstelle (**.cer**), das Sie von der ausstellenden Zertifizierungsstelle exportiert haben. Die Einstellung **Zielspeicher** gilt nur für Geräte mit Windows 8.1 und höher und auch nur, wenn das Gerät über mehr als einen Zertifikatspeicher verfügt.
 
 
-4.  Klicken Sie danach auf **Richtlinie speichern**..
+4.  Klicken Sie danach auf **Richtlinie speichern**.
 
 Die neue Richtlinie wird im Arbeitsbereich **Richtlinie** angezeigt und kann nun bereitgestellt werden.
 
@@ -74,7 +66,7 @@ Nachdem Sie ein Zertifikatprofil der vertrauenswürdigen Zertifizierungsstelle e
 
 ##### Erstellen eines SCEP-Zertifikatprofils
 
-1.  Klicken Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Richtlinie hinzufügen**..
+1.  Klicken Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Richtlinie hinzufügen**.
 
 2.  Konfigurieren Sie einen der folgenden Richtlinientypen:
 
@@ -88,17 +80,17 @@ Nachdem Sie ein Zertifikatprofil der vertrauenswürdigen Zertifizierungsstelle e
 
     **Windows &gt; SCEP-Zertifikatprofil (Windows Phone 8.1 und höher)**
 
-    Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+    Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Befolgen Sie die Anweisungen auf der Profilkonfigurationsseite, um die SCEP-Zertifikatprofileinstellungen zu konfigurieren.
 
-4.  Klicken Sie danach auf **Richtlinie speichern**..
+4.  Klicken Sie danach auf **Richtlinie speichern**.
 
 Die neue Richtlinie wird im Arbeitsbereich **Richtlinie** angezeigt und kann nun bereitgestellt werden.
 
 ##### So erstellen Sie ein PFX-Zertifikatprofil
 
-1.  Klicken Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Richtlinie hinzufügen**..
+1.  Klicken Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Richtlinie hinzufügen**.
 
 2.  Konfigurieren Sie einen der folgenden Richtlinientypen:
 
@@ -112,11 +104,11 @@ Die neue Richtlinie wird im Arbeitsbereich **Richtlinie** angezeigt und kann nun
 
     -    **iOS > PKCS #12 (.PFX) Zertifikatprofil (iOS 7.1 und höher)**    
 
-    Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+    Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Stellen Sie die Informationen zur Verfügung, die auf dem Richtlinienformular angefordert werden.
 
-4.  Klicken Sie danach auf **Richtlinie speichern**..
+4.  Klicken Sie danach auf **Richtlinie speichern**.
 
 Die neue Richtlinie wird im Arbeitsbereich **Richtlinie** angezeigt und kann nun bereitgestellt werden.
 
@@ -134,13 +126,13 @@ Zertifikatprofile werden nur auf den Geräten installiert, die der beim Erstelle
 
 Sie stellen Zertifikatprofile auf die gleiche Weise bereit wie andere Richtlinien für Intune.
 
-1.  Wählen Sie im Arbeitsbereich **Richtlinie** die Richtlinie aus, die Sie bereitstellen möchten, und klicken Sie dann auf **Bereitstellung verwalten**..
+1.  Wählen Sie im Arbeitsbereich **Richtlinie** die Richtlinie aus, die Sie bereitstellen möchten, und klicken Sie dann auf **Bereitstellung verwalten**.
 
 2.  Führen Sie im Dialogfeld **Bereitstellung verwalten** folgende Schritte aus:
 
-    -   **Wenn Sie die Richtlinie bereitstellen möchten:** Wählen Sie mindestens eine Gruppe aus, für die Sie die Richtlinie bereitstellen möchten, und klicken Sie auf **Hinzufügen** &gt; **OK**..
+    -   **Zum Bereitstellen der Richtlinie**: Wählen Sie mindestens eine Gruppe aus, für die Sie die Richtlinie bereitstellen möchten, und klicken Sie auf **Hinzufügen** &gt; **OK**.
 
-    -   **Wenn Sie das Dialogfeld schließen möchten, ohne die Richtlinie bereitzustellen:** Klicken Sie auf **Abbrechen**..
+    -   **Wenn Sie das Dialogfeld schließen möchten, ohne die Richtlinie bereitzustellen:** Klicken Sie auf **Abbrechen**.
 
 Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informationen zur Bereitstellung im unteren Teil der Richtlinienliste anzeigen.
 ###  Nächste Schritte
@@ -152,6 +144,7 @@ Sie können jetzt Zertifikate verwenden, um E-Mail-, WLAN- und VPN-Profile zu sc
 -  [VPN-Verbindungen in Microsoft Intune](vpn-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

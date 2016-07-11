@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Behandlung von Problemen mit Richtlinien | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
+ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+
 
 ---
 
@@ -58,7 +51,7 @@ Der folgende Screenshot zeigt zwei eindeutige Beispiele:
 ## Intervalle für Richtlinienaktualisierungen und -updates
 Denken Sie daran, dass Richtlinien in regelmäßigen Abständen aktualisiert werden. Richtlinien sollten in der Regel innerhalb von 15 Minuten nach einer Änderung auf den Geräten registriert werden. Hier finden Sie ausführliche Informationen zu den regelmäßigen Intervallen der Aktualisierung von Richtlinien:
 
--   **Für die MDM registriertes Windows-Gerät**: Wird durch einen geplanten Task um 3:00 Uhr lokaler Zeit auf dem Gerät ausgelöst und erfolgt täglich.
+-   **Für MDM registriertes Windows-Gerät**: Die Richtlinie wird für Windows 8.1- und Windows 10-Geräte alle 8 Stunden und für Windows RT-Geräte alle 24 Stunden aktualisiert.
 
 -   **Windows Phone**: Die Richtlinie wird alle 8 Stunden aktualisiert. Dies kann durch eine Aktualisierung im Unternehmensportal unter **Einstellungen** erzwungen werden.
 
@@ -113,9 +106,10 @@ Android-MDM gestattet dem Dienst nicht das Erzwingen von Änderungen an der anf�
 **Lösung**: Entfernen Sie im [Office 365 Admin Center](https://portal.office.com/) die Sonderzeichen aus den Firmennamen, und speichern Sie die Unternehmensinformationen.
 
 ### Nächste Schritte
-Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Microsoft Support.
+Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO3-->
 
 

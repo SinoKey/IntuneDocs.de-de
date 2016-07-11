@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Einblicke in Vorgänge durch Berichte | Microsoft Intune
-description:
-keywords:
+title: "Einblicke in Vorgänge durch Berichte | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: pbala
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 617f1cd42de49f0c8675bd450591a390af674e73
+ms.openlocfilehash: b8af36cef1bcb9077d0ab611a14fb88c0f458ece
+
 
 ---
 
@@ -41,10 +34,11 @@ In den Intune-Berichten finden Sie Informationen zu Software, Hardware und Softw
 |**Inventurberichte für mobile Geräte**|Hierin werden Informationen zu den mobilen Geräten in Ihrer Organisation angezeigt. Sie können die angezeigten Informationen nach Gruppen, entfernten Nutzungsbeschränkungen und Betriebssystem filtern.|
 |**Lizenzkaufberichte**|Hierin werden die Softwaretitel jeder lizenzierten Software in ausgewählten Lizenzgruppen auf Basis ihrer Lizenzverträge angezeigt. Wenn die Softwarelizenzinformationen seit mehr als 24 Stunden nicht aktualisiert wurden, werden sie beim Erstellen eines Lizenzberichts aktualisiert. Ein Lizenzbericht stellt keine genaue Berechnung von verwendeten Softwaretiteln und keinen Nachweis der Erfüllung von Verträgen dar. Der Bericht ist ein Tool, das Ihnen dabei hilft, Lizenzierungsentscheidungen für Ihre Organisation zu treffen. Von Intune werden möglicherweise nicht alle Produkte erkannt, für die Microsoft-Volumenlizenzen verfügbar sind. Folgende Filter sind verfügbar:<br /><br />**Alle Verträge** zeigt alle lizenzierten Softwareprodukte an, die mit Intune verwaltet werden.<br /><br />**Volumenlizenzverträge** zeigt nur VLSC-Softwareprodukte an.<br /><br />**Andere Softwarelizenzverträge** zeigt Softwareprodukte an, die außerhalb des VLSC verwaltet werden.|
 |**Lizenzinstallationsberichte**|Hierin wird die auf Computern in Ihrer Organisation installierte Software mit Ihrer aktuellen Lizenzvertragsabdeckung laut Volume Licensing Service Center (VLSC) verglichen. Zu den Filtern gehören:<br /><br />**Alle Verträge** zeigt alle lizenzierten Softwareprodukte an, die mit Intune verwaltet werden.<br /><br />**Volumenlizenzverträge** zeigt nur VLSC-Softwareprodukte an.<br /><br />**Andere Softwarelizenzverträge** zeigt Softwareprodukte an, die außerhalb des VLSC verwaltet werden.|
-|**Berichte zu Nutzungsbedingungen**|Hierin wird angezeigt, ob die Benutzer die von Ihnen bereitgestellten Nutzungsbedingungen akzeptiert haben und welche Version sie akzeptiert haben. Sie können bis zu 10 Benutzer angeben, deren Annahmestatus von beliebigen ihnen bereitgestellten Nutzungsbedingungen angezeigt werden, oder den Annahmestatus für eine bestimmte Bedingung anzeigen.|
+|**Berichte zu Nutzungsbedingungen**|Zeigt an, ob die Benutzer die von Ihnen bereitgestellten Nutzungsbedingungen akzeptiert haben und welche Version sie akzeptiert haben. Sie können bis zu 10 Benutzer angeben, deren Annahmestatus von beliebigen ihnen bereitgestellten Nutzungsbedingungen angezeigt werden, oder den Annahmestatus für eine bestimmte Bedingung anzeigen.|
 |**Nicht kompatible Apps-Berichte**|Es werden Informationen zu den Benutzern mit installierten Apps angezeigt, die in Ihren Listen der kompatiblen und nicht kompatiblen Apps enthalten sind. Verwenden Sie diesen Bericht, um Benutzer und Geräte zu ermitteln, die nicht mit Ihren Unternehmens-App-Richtlinien konform sind.|
-|**Berichte zur Zertifikatkompatibilität**|Zeigt an, welche Zertifikate für Benutzer und Geräte über SCEP oder PKCS #12 (.PFX)ausgestellt wurden. Verwenden Sie diesen Bericht, um ausgestellte, abgelaufene und gesperrte Zertifikate zu suchen.|
-|**Berichte zum Geräteverlauf**|Zeigt ein historisches Protokoll von Abkoppeln-, Zurücksetzen- und Löschen-Aktionen. Verwenden Sie diesen Bericht, um zu ermitteln, welcher Benutzer in der Vergangenheit Aktionen auf Geräten initiiert hat.|
+|**Berichte zur Zertifikatkompatibilität**|Zeigt an, welche Zertifikate für Benutzer und Geräte über SCEP oder PKCS #12 (.PFX) ausgestellt wurden. Verwenden Sie diesen Bericht, um ausgestellte, abgelaufene und gesperrte Zertifikate zu suchen.|
+|**Berichte zum Geräteverlauf**|Zeigt ein Verlaufsprotokoll von Abkoppeln-, Zurücksetzen- und Löschen-Aktionen an. Verwenden Sie diesen Bericht, um zu ermitteln, welcher Benutzer in der Vergangenheit Aktionen auf Geräten initiiert hat.|
+|**Integritätsnachweisberichte**|Zeigt die Integrität von mobilen Geräten an.|
 |**Mac OS X-Hardwarebericht**|Hierin werden Hardwaredetails zu allen registrierten Mac OS X-Geräten in den von Ihnen ausgewählten Gruppen angezeigt. Informationen zu dem von diesen Geräten erfassten Hardwareinventar finden Sie unter [Verstehen Sie Ihre Geräte mithilfe des Inventars in Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Mac OS X-Softwarebericht**|Hierin wird die auf allen Mac OS X-Geräten in den von Ihnen ausgewählten Gruppen installierte Software angezeigt. Im Bericht werden der Softwarename (als Paket-ID), die Kurzversion des Namens (oder der Anzeigename), die Version und die Anzahl von Geräten, auf denen die Software installiert ist, aufgeführt.|
 
@@ -74,6 +68,7 @@ Zusätzlich werden von Berichten die folgenden Aktionen unterstützt:
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO3-->
 
 

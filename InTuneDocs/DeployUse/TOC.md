@@ -47,6 +47,7 @@
 #### [VPN-Verbindungen in Intune](vpn-connections-in-microsoft-intune.md)
 #### [E-Mail-Profile in Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Verwenden von Gruppen zum Verwalten von Benutzern und Geräten](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+### [Zuweisen von Geräten zu Gruppen](categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Verstehen Sie Ihre Geräte mithilfe des Inventars](understand-your-devices-with-inventory-in-microsoft-intune.md)
 ### [Allgemeine Aufgaben zur Verwaltung von PCs](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
@@ -86,14 +87,19 @@
 #### [Für Windows und Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Bereitstellen einer Gerätekompatibilitätsrichtlinie](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Beschränken des Zugriffs auf E-Mail, O365 und andere Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+
+
 #### [Exchange Online und Exchange Online Dedicated (neu)](restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Lokales Exchange und Exchange Online Dedicated (älter)](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+#### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [Beschränken des E-Mail-Zugriffs: Beispiele](restrict-email-access-example-scenarios.md)
 
-### [Schützen von App-Daten](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+### [Beschränken des Zugriffs auf Netzwerke (Cisco ISE)](restrict-access-to-networks.md)
+
+### [Schützen von App-Daten mit MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure-Portal für MAM-Richtlinien](azure-portal-for-microsoft-intune-mam-policies.md)
 #### [Vorbereiten der Konfiguration von MAM-Richtlinien](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Erstellen und Bereitstellen von MAM-Richtlinien](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
@@ -102,6 +108,7 @@
 #### [Überwachen der Richtlinieneinhaltung](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Verwalten der Datenübertragung zwischen iOS-Apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 #### [Endbenutzererfahrung](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+#### [Intune-Verwaltungskonsole für MAM-Richtlinien](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Vorbereiten von Branchen-Apps für MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [Umschließen von iOS-Apps](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
@@ -123,9 +130,9 @@
 
 # [Entwickeln und Anpassen von Apps](/intune/develop/intune-app-sdk)
 
-# [Problembehandlung](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [Problembehandlung](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO5-->
 
 

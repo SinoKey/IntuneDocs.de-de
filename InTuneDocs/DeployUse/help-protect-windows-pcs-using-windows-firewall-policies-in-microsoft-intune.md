@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Firewallrichtlinien für Windows-PCs | Microsoft Intune
-description:
-keywords:
+title: "Firewallrichtlinien für Windows-PCs | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 9f338efe3ef40da3db40c12d1a18c4122e65dc5d
+
 
 ---
 
 # Unterstützen des Schutzes von Windows-PCs mithilfe von Windows-Firewall-Richtlinien in Microsoft Intune
 Microsoft Intune kann Ihnen auf verschiedene Weise helfen, Ihre Computer mit dem Intune-Client zu verwalten. Dies umfasst auch die Verwendung von Richtlinien, die Ihnen das Konfigurieren der Windows-Firewall-Einstellungen auf PCs ermöglichen.
 
-Wenn Sie den Intune-Windows-PC-Client noch nicht auf Ihren Computern installiert haben, finden Sie unter [Installieren des Windows-PC-Clients mit Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) weitere Informationen..
+Falls Sie den Intune-Windows-PC-Client noch nicht auf Ihren Computern installiert haben, finden Sie unter [Installieren des Windows-PC-Clients mit Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) weitere Informationen.
 
 Verwenden Sie die Informationen in den folgenden Abschnitten, um Windows-Firewall-Richtlinien auf Windows-PCs zu konfigurieren, bereitzustellen und zu überwachen.
 
@@ -36,7 +30,7 @@ Verwenden Sie die Informationen in den folgenden Abschnitten, um Windows-Firewal
 Mit der Windows-Firewall-Richtlinie können Sie Einstellungen erstellen und bereitstellen, von denen die Windows-Firewall auf verwalteten PCs gesteuert wird. Es ist nicht möglich, benutzerdefinierte Ausnahmen für die Windows-Firewall zu verwalten, und die Einstellungen haben keine Auswirkungen auf Firewalls anderer Hersteller.
 
 > [!NOTE]
-> Wenn sowohl die Microsoft Intune-Richtlinie als auch die Gruppenrichtlinie zur Verwaltung der gleichen Einstellung auf einem Computer konfiguriert sind, hat die Einstellung der Gruppenrichtlinie Vorrang vor der Microsoft Intune-Richtlinie. Weitere Informationen zur Vermeidung von Konflikten zwischen Intune-Richtlinien und Gruppenrichtlinien finden Sie unter [Lösen von Konflikten mit Gruppenrichtlinienobjekten und Microsoft Intune-Richtlinien](resolve-gpo-and-microsoft-intune-policy-conflicts.md)..
+> Wenn sowohl die Microsoft Intune-Richtlinie als auch die Gruppenrichtlinie zur Verwaltung der gleichen Einstellung auf einem Computer konfiguriert sind, hat die Einstellung der Gruppenrichtlinie Vorrang vor der Microsoft Intune-Richtlinie. Weitere Informationen zur Vermeidung von Konflikten zwischen Intune-Richtlinien und Gruppenrichtlinien finden Sie unter [Lösen von Konflikten mit Gruppenrichtlinienobjekten und Microsoft Intune-Richtlinien](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
 >
 > Wenn Sie die Windows-Firewall-Einstellungen auf Computern mit Windows Vista bereitstellen möchten, müssen Sie auf diesen Computern zuerst [Hotfix KB971800](http://support2.microsoft.com/kb/971800) installieren.
 
@@ -48,9 +42,9 @@ Mit der Windows-Firewall-Richtlinie können Sie Einstellungen erstellen und bere
 
 ## Konfigurieren einer Windows-Firewall-Richtlinie
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Richtlinie** &gt; **Richtlinie hinzufügen**..
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) **Richtlinie** &gt; **Richtlinie hinzufügen** aus.
 
-2.  Konfigurieren Sie eine Richtlinie für **Windows-Firewall-Einstellungen** , und stellen Sie sie bereit. Sie können die empfohlenen Einstellungen verwenden oder die Einstellungen anpassen. Weitere Informationen zum Erstellen und Bereitstellen von Richtlinien finden Sie unter [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)..
+2.  Konfigurieren Sie eine Richtlinie für **Windows-Firewall-Einstellungen** , und stellen Sie sie bereit. Sie können die empfohlenen Einstellungen verwenden oder die Einstellungen anpassen. Weitere Informationen zum Erstellen und Bereitstellen von Richtlinien finden Sie unter [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
     Im folgenden Abschnitt sind die Werte, die Sie in der Richtlinie konfigurieren können, sowie die Standardwerte aufgeführt, die verwendet werden, wenn Sie die Richtlinie nicht anpassen.
 
@@ -73,7 +67,7 @@ Mit diesen Richtlinieneinstellungen konfigurieren Sie die Windows-Firewall zum B
 
 ### Benutzer benachrichtigen, wenn ein neues Programm von der Windows-Firewall blockiert wird
 
-Mit diesen Richtlinieneinstellungen konfigurieren Sie, ob die Windows-Firewall die PCs der Benutzer über das Blockieren von eingehendem Netzwerkverkehr auf verwalteten Computern benachrichtigt, die mit einer Domäne (z. B. am Arbeitsplatz), einem privaten (vertrauenswürdigen) Netzwerk (z. B. einem Heimnetzwerk) oder einem nicht vertrauenswürdigen öffentlichen Netzwerk (z. B. in einem Internetcafé) verbunden sind. Der Standardwert für jede dieser Einstellungen ist **Ja**..
+Mit diesen Richtlinieneinstellungen konfigurieren Sie, ob die Windows-Firewall die PCs der Benutzer über das Blockieren von eingehendem Netzwerkverkehr auf verwalteten Computern benachrichtigt, die mit einer Domäne (z. B. am Arbeitsplatz), einem privaten (vertrauenswürdigen) Netzwerk (z. B. einem Heimnetzwerk) oder einem nicht vertrauenswürdigen öffentlichen Netzwerk (z. B. in einem Internetcafé) verbunden sind. Der Standardwert für jede dieser Einstellungen ist **Ja**.
 
 
 ### Vordefinierte Ausnahmen
@@ -96,7 +90,7 @@ Nachdem Sie die oben angegebenen grundlegenden Werte konfiguriert haben, können
 |**Schlüsselverwaltungsdienst**|Ermöglicht die Zählung von Computern zur Lizenzüberprüfung in Unternehmensumgebungen.|
 |**Media Center Extenders**|Ermöglicht Media Center Extendern die Kommunikation mit Computern, auf denen Windows Media Center ausgeführt wird. Bei dieser Einstellung werden SSDP und qWave verwendet.|
 |**Anmeldedienst**|Dient zum Konfigurieren eines Sicherheitskanals zwischen Domänenclients und einem Domänencontroller zum Authentifizieren von Benutzern und Diensten. Bei dieser Einstellung wird RPC verwendet.|
-|**Netzwerkermittlung**|Ermöglicht, dass andere Geräte im Netzwerk von Computern erkannt werden, und die Computer ihrerseits von anderen Geräten im Netzwerk erkannt werden können. Bei dieser Einstellung werden Funktionssuchehost und Veröffentlichungsdienste sowie die Netzwerkprotokolle SSDP, NetBIOS, LLMNR und UPnPverwendet.|
+|**Netzwerkermittlung**|Ermöglicht, dass andere Geräte im Netzwerk von Computern erkannt werden, und die Computer ihrerseits von anderen Geräten im Netzwerk erkannt werden können. Bei dieser Einstellung werden Funktionssuchehost und Veröffentlichungsdienste sowie die Netzwerkprotokolle SSDP, NetBIOS, LLMNR und UPnP verwendet.|
 |**Leistungsprotokolle und -warnungen**|Ermöglicht die Remoteverwaltung des Diensts für Leistungsprotokolle und -warnungen. Bei dieser Einstellung wird RPC verwendet.|
 |**Remoteverwaltung**|Ermöglicht die Remoteverwaltung des Computers.|
 |**Remoteunterstützung**|Diese Einstellung ermöglicht Benutzer verwalteter Computer Remoteunterstützung von anderen Benutzern im Netzwerk anzufordern. Bei dieser Einstellung werden die Netzwerkprotokolle SSDP, PNRP, Teredo und UPnP verwendet.|
@@ -124,6 +118,7 @@ Nachdem Sie die oben angegebenen grundlegenden Werte konfiguriert haben, können
 [Richtlinien zum Schutz von Windows-PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

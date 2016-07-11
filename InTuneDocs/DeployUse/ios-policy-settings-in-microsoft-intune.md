@@ -1,37 +1,33 @@
 ---
-# required metadata
-
 title: iOS-Richtlinieneinstellungen | Microsoft Intune
-description:
-keywords:
+description: "Erstellen Sie Richtlinien, die Einstellungen und Funktionen auf iOS-Geräten steuern, die Sie mit Intune verwalten."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f9a492a16605130743b943f6aa49d1d633eb97d4
+ms.openlocfilehash: 3292df922eeb53108f2b34d4113b0b6c5a114564
+
 
 ---
 
 # iOS-Richtlinieneinstellungen in Microsoft Intune
 
+Intune bietet eine Auswahl von integrierten allgemeinen Einstellungen, die Sie auf iOS-Geräten konfigurieren können. Darüber hinaus können Sie das Apple Configurator-Tool verwenden, um benutzerdefinierte Einstellungen zu erstellen, die nicht von Intune verfügbar sind.
+
 ## Allgemeine Konfigurationsrichtlinieneinstellungen
 
 Verwenden Sie die allgemeine **iOS-Konfigurationsrichtlinie** von Microsoft Intune zum Konfigurieren von Einstellungen für:
 
--   **Sicherheitseinstellungen für mobile Geräte** – Treffen Sie in einer Liste mit vordefinierten Einstellungen eine Auswahl, mit denen Sie eine Reihe von Features und Funktionen auf dem Gerät steuern können.
+-   **Allgemeine Geräte- und Sicherheitseinstellungen**: Treffen Sie eine Auswahl aus einer Liste mit vordefinierten Einstellungen, mit denen Sie eine Reihe von Funktionen und Funktionalitäten auf dem Gerät steuern können.
 
 -   **Kioskmodus**: Sie können ein Gerät so konfigurieren, dass nur bestimmte Features funktionieren. Beispielsweise können Sie festlegen, dass auf einem Gerät nur eine von Ihnen angegebene verwaltete App ausgeführt werden kann, oder Sie können die Lautstärkeregler eines Geräts deaktivieren. Diese Einstellungen können für ein Demomodell eines Geräts oder ein Gerät nützlich sein, das nur eine bestimmte Funktion ausführen soll, wie z. B. ein Point-of-Sale-Gerät.
 
@@ -47,8 +43,8 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 |Name der Einstellung|Details|iOS|
 |----------------|-------|
 |**Anfordern eines Kennworts zum Entsperren mobiler Geräte**|Legen Sie fest, ob Benutzer ein Kennwort eingeben müssen, um auf ihr Gerät zugreifen zu können.|Ja|
-|**Erforderlicher Kennworttyp**|Gibt den erforderlichen Typ des Kennworts an, z. B. nur numerisch oder alphanumerisch.|Ja|
-|**Erforderlicher Kennworttyp – Mindestanzahl von Zeichensätzen**|Es gibt vier Zeichensätze: Kleinbuchstaben, Großbuchstaben, Zahlen und Symbole. Diese Einstellung gibt an, wie viele Zeichensätze im Kennwort enthalten sein müssen. Für iOS-Geräte wird hiermit jedoch die erforderliche Anzahl von Symbolzeichen im Kennwort angegeben.|Ja|
+|**Erforderlicher Kennworttyp**|Gibt den erforderlichen Typ des Kennworts an, z. B. nur numerisch oder alphanumerisch.|Ja|
+|**Erforderlicher Kennworttyp – Mindestanzahl von Zeichensätzen**|Dies gibt die erforderliche Anzahl von Symbolzeichen (wie **#** oder **@**) an, die im Kennwort enthalten sein müssen.|Ja|
 |**Minimale Kennwortlänge**|Gibt die Mindestanzahl von Zeichen an, die das Kennwort enthalten muss.|Ja|
 |**Einfache Kennwörter zulassen**|Einfache Kennwörter wie „0000“ und „1234“ zulassen.|Ja|
 |**Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird**|Setzt das Gerät zurück, wenn diese Anzahl von Anmeldeversuchen fehlschlägt.|Ja|
@@ -77,7 +73,7 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 |Name der Einstellung|Details|iOS|
 |----------------|-------|
 |**Sicherung in iCloud zulassen**|Ermöglicht dem Benutzer, das Gerät in iCloud zu sichern.|Ja|
-|**Dokumentsynchronisierung in iCloud zulassen**|Erlaubt die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher. Ja|
+|**Dokumentsynchronisierung in iCloud zulassen**|Erlaubt die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher.|Ja|
 |**Photo Stream-Synchronisierung in iCloud zulassen**|Erlaubt, dass Fotos auf dem Gerät mit iCloud synchronisiert werden.|Ja|
 |**Verschlüsselte Sicherung erforderlich**|Fordert an, dass Gerätesicherungen verschlüsselt werden.|Ja|
 
@@ -97,7 +93,7 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 |Name der Einstellung|Details|iOS|
 |----------------|-------|
 |**App Store zulassen**|Ermöglicht dem Gerät den Zugriff auf den App Store.|Ja|
-|**Kennwort für den Zugriff auf den Anwendungsspeicher erforderlich**|Ja|
+|**Kennwort für den Zugriff auf den Anwendungsspeicher erforderlich**|Zwingt den Benutzer ein Kennwort einzugeben, bevor er den App Store besuchen kann.|Ja|
 |**In-App-Einkäufe zulassen**|Zulassen, dass Einkäufe im Store in einer ausgeführten App erfolgen.|Ja|
 |**Verwaltete Dokumente in anderen nicht verwalteten Apps zulassen**|Hiermit wird die Anzeige von Unternehmensdokumenten in beliebigen Apps zugelassen.<br>**Beispiel:** Sie möchten verhindern, dass Benutzer Dateien aus der OneDrive-App in Dropbox speichern. Legen Sie für diese Einstellung „Nein“ fest. Sobald das Gerät die Richtlinie empfängt (z. B. nach einem Neustart), ist kein Speichern mehr möglich.|iOS 7.1 und höher|
 |**Nicht verwaltete Dokumente in anderen verwalteten Apps zulassen**|Hiermit wird die Anzeige beliebiger Dokumente in verwalteten Apps zugelassen.|iOS 7.1 und höher|
@@ -170,7 +166,8 @@ Geben Sie in der Liste der **kompatiblen &amp; nicht kompatiblen Apps** eine Lis
 |**Touch-Unterstützung aktivieren**|Aktiviert oder deaktiviert die Barrierefreiheitseinstellung **Touch-Unterstützung** , die Benutzer bei der Ausführung von Bildschirmgesten unterstützt, die ihnen Schwierigkeiten bereiten.|
 |**Touch-Unterstützungsanpassungen aktivieren**|Aktiviert oder deaktiviert Touch-Unterstützungsanpassungen, mit denen Sie die Funktion der Touch-Unterstützung individuell einrichten können.|
 |**Sprachauswahl aktivieren**|Aktiviert oder deaktiviert die Barrierefreiheitseinstellung **Sprachauswahl** , mit der ausgewählter Text vorgelesen werden kann.|
-> [!NOTE] Die folgenden Hinweise gelten für Kioskmoduseinstellungen für iOS-Geräte:
+> [!NOTE]
+> Die folgenden Hinweise gelten für Kiosk-Moduseinstellungen für iOS-Geräte:
 > 
 > -   Bevor Sie ein iOS-Gerät für den Kiosk-Modus konfigurieren können, müssen Sie das Gerät mithilfe des [Apple Configurator-Tools](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) oder des Geräteregistrierungs-Managers in den überwachten Modus versetzen. Weitere Informationen zum Apple Configurator-Tool finden Sie in der Apple-Dokumentation.
 > -   Wenn die angegebene iOS-App nach der Bereitstellung der Konfigurationsrichtlinie installiert wird, wird das Gerät erst nach einem Neustart in den Kiosk-Modus versetzt.
@@ -195,7 +192,8 @@ Kopieren Sie die URL der Seite, und verwenden Sie diese als URL zur Konfiguratio
 
 **Beispiel:** Suchen Sie nach **Microsoft Word für iPad**. Die URL, die Sie verwenden, ist **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
-> [!NOTE] Sie können auch die iTunes-Software verwenden, um die App zu suchen, und dann den Befehl **Link kopieren**, um die App-URL abzurufen.
+> [!NOTE]
+> Sie können auch die iTunes-Software verwenden, um die App zu suchen, und dann den Befehl **Link kopieren** , um die App-URL abzurufen.
 
 
 ## Benutzerdefinierte Richtlinieneinstellungen
@@ -230,6 +228,7 @@ Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigur
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

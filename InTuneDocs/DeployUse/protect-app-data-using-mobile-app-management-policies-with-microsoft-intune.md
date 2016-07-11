@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Schützen von App-Daten mithilfe von Verwaltungsrichtlinien für mobile Apps | Microsoft Intune
-description:
-keywords:
+title: "Schützen von App-Daten mithilfe von Verwaltungsrichtlinien für mobile Apps | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
+
 
 ---
 
@@ -33,15 +27,16 @@ Ihre Mitarbeiter verwenden mobile Geräte für private und berufliche Aufgaben. 
 Sie können Intune-Verwaltungsrichtlinien für mobile Apps (Mobile App Management, MAM) verwenden, um Ihre Unternehmensdaten zu schützen. Da Intune MAM-Richtlinien unabhängig von Lösungen für die Verwaltung mobiler Geräte (MDM) einsetzbar sind, können Sie sie mit oder ohne Registrierung der Geräte bei einer Geräteverwaltungslösung zum Schutz Ihrer Unternehmensdaten verwenden. Durch die Implementierung von **Richtlinien auf App-Ebene** können Sie den Zugriff auf Unternehmensressourcen einschränken und Daten im Zuständigkeitsbereich der IT-Abteilung halten.
 
 MAM-Richtlinien unterstützen Apps auf folgenden Geräten:
+> [!IMPORTANT]
+> Sie können Verwaltungsrichtlinien für mobile Apps für mobile Office-Apps erstellen, die eine Verbindung mit Office 365-Diensten herstellen. MAM-Richtlinien werden nicht für Apps unterstützt, die eine Verbindung mit lokalen Exchange- oder SharePoint-Diensten herstellen.
 
--   **Geräte, die in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] verwaltet und registriert werden**. Die Geräte in dieser Kategorie sind in der Regel unternehmenseigene Geräte.
 
-  > [!IMPORTANT]
-  > Wenn Sie Intune verwenden, um iOS- und Android-Geräte zu verwalten, können Sie für mobile Office-Apps Verwaltungsrichtlinien für mobile Apps erstellen, die eine Verbindung mit Office 365-Diensten herstellen. MAM-Richtlinien werden nicht für Apps unterstützt, die eine Verbindung mit lokalen Exchange- oder SharePoint-Diensten herstellen.
+- **Geräte, die in Microsoft Intune verwaltet werden und dort registriert sind**. Die Geräte in dieser Kategorie sind in der Regel unternehmenseigene Geräte.
 
 -   **Geräte, die mit einer Drittanbieter-Verwaltungslösung für mobile Geräte verwaltet und registriert werden**.   Die Geräte in dieser Kategorie sind in der Regel unternehmenseigene Geräte.
 
-  > [!NOTE] Verwaltungsrichtlinien für mobile Apps sollten nicht in Verbindung mit Verwaltungslösungen für mobile Geräte von Drittanbietern oder sicheren Containerlösungen verwendet werden.
+  > [!NOTE]
+  > Verwaltungsrichtlinien für mobile Apps sollten nicht in Verbindung mit Verwaltungslösungen für mobile Geräte von Drittanbietern oder sicheren Containerlösungen verwendet werden.
 
 -   **Geräte, die nicht verwaltet werden**.  Die Geräte in dieser Kategorie sind in der Regel mitarbeitereigene Geräte, die nicht in Intune verwaltet oder registriert werden, oder andere MDM-Lösungen.
 
@@ -137,6 +132,7 @@ Alle mobilen Office-Apps unterstützen mehrere Identitäten.
 [Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Behandlung von Problemen bei Softwareupdates | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ca4d4197ac1ece3e9abf44ad462d8ec7a807b4b2
+ms.openlocfilehash: d8470be236ac7b7a9431e07c5ca651cb6bd9fbc0
+
 
 ---
 
@@ -29,6 +23,8 @@ ms.suite: ems
 Dieser Abschnitt enthält Informationen zur Lösung von Problemen mit Softwareupdates in Microsoft Intune.
 
 Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) weitere Möglichkeiten, Hilfe zu erhalten.
+
+## Update-Agent-Fehlercodes
 
 In der nachfolgenden Tabelle werden Fehlercodes für den Intune-**Update-Agent** aufgelistet. Wenn Sie in dieser Tabelle einen bestimmten Fehlercode nicht finden, suchen Sie unter [Windows Update Agent Result Codes (Windows Update Agent-Ergebniscodes)](http://go.microsoft.com/fwlink/?LinkID=221542).
 
@@ -264,10 +260,11 @@ Dieses Problem kann auftreten, wenn ersetzte Updates (Updates, die durch ein and
 Wenn Sie Windows 7 ausführen, stellen Sie außerdem sicher, dass Sie das folgende Update installiert haben:[3050265 Windows Update-Client für Windows 7: Juni 2015](https://support.microsoft.com/kb/3050265)
 
 ### Nächste Schritte
-Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Microsoft Support.
+Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO5-->
 
 

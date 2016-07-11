@@ -1,33 +1,27 @@
 ---
-# required metadata
-
-title: Erstellen von Richtlinien und Veröffentlichen einer App für Benutzer der Evaluierungsversion | Microsoft Intune
-description:
-keywords:
+title: "Erstellen von Richtlinien und Veröffentlichen einer App für Benutzer der Evaluierungsversion | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: 658806c07ea78a327819376c1b47af53ac51f0f9
+
 
 ---
 
 
 # Erstellen von Richtlinien und Veröffentlichen einer App für Benutzer der Evaluierungsversion
-Mit Intune-Richtlinien stehen Einstellungen bereit, mit deren Hilfe Sie die Sicherheitseinstellungen auf mobilen Geräten steuern, die Windows-Firewall- und Endpoint Protection-Einstellungen für Computer warten und Anwendungen bereitstellen können. Wenn Sie planen, Intune nach Ablauf der Evaluierungsversion auf Geräten zu verwenden, die für die Produktion konfiguriert werden, müssen Sie unbedingt die Anweisungen unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) und [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) beachten..
+Mit Intune-Richtlinien stehen Einstellungen bereit, mit deren Hilfe Sie die Sicherheitseinstellungen auf mobilen Geräten steuern, die Windows-Firewall- und Endpoint Protection-Einstellungen für Computer warten und Anwendungen bereitstellen können. Falls Sie planen, Intune nach Ablauf der Evaluierungsversion auf Geräten zu verwenden, die für die Produktion konfiguriert werden, müssen Sie unbedingt die Anweisungen unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) und [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) beachten.
 
 Sie können zwei Arten von App-Installationen mithilfe von Intune ausführen: Die erste ist eine **erforderliche Installation**, bei der die App automatisch auf verwalteten Computern bereitgestellt wird. Die andere ist eine **verfügbare Installation**, bei der die App oder ein Link auf die App über das Intune-Unternehmensportal bereitgestellt wird, damit Benutzer auswählen können, ob die App auf ihren Computern oder mobilen Geräten installiert werden soll.
 
@@ -37,30 +31,30 @@ In den folgenden Schritten werden Sie eine Konfigurationsrichtlinie für mobile 
 
 ## Erstellen und Bereitstellen einer Konfigurationsrichtlinie für mobile Geräte
 
-1.  Öffnen Sie die [Intune-Verwaltungskonsole](https://manage.microsoft.com/)..
+1.  Öffnen Sie die [Intune-Verwaltungskonsole](https://manage.microsoft.com/).
 
 2.  Klicken Sie im linken Bereich auf das Symbol **Richtlinie**.
 
-3.  Klicken Sie auf der Seite **Richtlinienübersicht** in der Liste **Aufgaben** auf **Richtlinie hinzufügen**..
+3.  Klicken Sie auf der Seite **Richtlinienübersicht** in der Liste **Aufgaben** auf **Richtlinie hinzufügen**.
 
-4.  Erweitern Sie in der Richtlinienliste die Plattform, für die Sie eine Richtlinie erstellen möchten, wählen Sie **Allgemeine Konfiguration** sowie **Richtlinie mit den empfohlenen Einstellungen erstellen und bereitstellen** aus, und klicken Sie dann auf **Richtlinie erstellen**..
+4.  Erweitern Sie in der Richtlinienliste die Plattform, für die Sie eine Richtlinie erstellen möchten, wählen Sie **Allgemeine Konfiguration** sowie **Richtlinie mit den empfohlenen Einstellungen erstellen und bereitstellen** aus, und wählen Sie anschließend **Richtlinie erstellen** aus.
 
-5.  Wählen Sie nach Aufforderung in **Gruppen auswählen, die Sie diese Richtlinie bereitstellen möchten** in der Liste **Meine Testbenutzer** aus, und klicken Sie auf **Hinzufügen** &gt; **OK**..
+5.  Wählen Sie bei der Aufforderung **Wählen Sie die Gruppen aus, denen die Richtlinie bereitgestellt werden soll** in der Liste **Meine Testbenutzer** aus, und wählen Sie **Hinzufügen** &gt; **OK**.
 
 Die Richtlinie wird in der Liste der Konfigurationsrichtlinien angezeigt und wurde für die Gruppe **Meine Testbenutzer** bereitgestellt. Doppelklicken Sie auf die Richtlinie, um die Einstellungen anzuzeigen.
 
 ## Veröffentlichen der Skype-App für mobile Geräte
 
-1.  Klicken Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf das Symbol **Apps** und dann auf **Apps** &gt; **App hinzufügen**. Geben Sie Ihre Intune-Anmeldeinformationen ein, wenn Sie dazu aufgefordert werden.
+1.  Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com/) das Symbol **Apps** und anschließend **Apps** &gt; **App hinzufügen** aus. Geben Sie Ihre Intune-Anmeldeinformationen ein, wenn Sie dazu aufgefordert werden.
 
     > [!NOTE]
     > Wenn Sie den **Intune-Softwareherausgeber** erstmals ausführen, kommt es zu einer kurzen Verzögerung, während die Anwendung installiert wird.
 
-2.  Überprüfen Sie die Sicherheitswarnung, und klicken Sie auf **Ausführen**..
+2.  Überprüfen Sie die Sicherheitswarnung, und wählen Sie **Ausführen** aus.
 
-3.  Klicken Sie auf der Seite **Vorbereitung** auf **Weiter**..
+3.  Klicken Sie auf der Seite **Vorbereitung** auf **Weiter**.
 
-4.  Wählen Sie auf der Seite **Softwaresetup** unter **Wählen Sie aus, wie diese Software für Geräte bereitgestellt werden soll** die Option **Externer Link** aus..
+4.  Wählen Sie auf der Seite **Softwaresetup** unter **Wählen Sie aus, wie diese Software für Geräte bereitgestellt werden soll**die Option **Externer Link**aus.
 
 5.  Geben Sie unter **Geben Sie die URL an** den externen Link für die Software ein, und klicken Sie dann auf **Weiter**. Achten Sie darauf, der URL **https://** voranzustellen. Verwenden Sie für die Skype-App den nachfolgenden Link, der der Plattform für mobile Geräte entspricht, die Sie verwenden:
 
@@ -86,13 +80,13 @@ Die Richtlinie wird in der Liste der Konfigurationsrichtlinien angezeigt und wur
 
 7.  Überprüfen Sie auf der Seite **Zusammenfassung** die Softwareinformationen, und klicken Sie dann auf **Hochladen**. Klicken Sie auf **Schließen**, um den Assistenten zu beenden.
 
-8.  Klicken Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Apps** &gt; **Apps** &gt; **Skype** &gt; **Bereitstellung verwalten**..
+8.  Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com/) **Apps** &gt; **Apps** &gt; **Skype** &gt; **Bereitstellung verwalten** aus.
 
-9. Wählen Sie auf der Seite **Gruppen auswählen** die Option **Testbenutzer** aus, um die Software für diese Benutzergruppe bereitzustellen, und klicken Sie auf **Hinzufügen** &gt; **Weiter**..
+9. Wählen Sie auf der Seite **Gruppen auswählen** die Option **Meine Testbenutzer** aus, um die Software für diese Benutzergruppe bereitzustellen, und klicken Sie auf **Hinzufügen** &gt; **Weiter**.
 
 10. Wählen Sie auf der Seite **Bereitstellungsaktion** in der Spalte **Genehmigung** bei jeder Gruppe **Verfügbare Installation** aus.
 
-11. Klicken Sie auf **Fertig stellen**..
+11. Klicken Sie auf **Fertig stellen**.
 
 Die Skype-App kann jetzt über das Unternehmensportal auf mobilen Geräten installiert werden. Doch zunächst müssen Sie Intune-Software auf PCs und mobilen Geräten installieren.
 
@@ -104,6 +98,7 @@ Gratulation! Sie habe soeben Schritt 4 der exemplarischen Vorgehensweise *Micro
 >[&larr; **Erstellen von Gruppen**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)     [**Registrieren von Geräten** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

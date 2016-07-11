@@ -1,34 +1,27 @@
 ---
-# required metadata
-
-title: Softwareupdates für Windows-PCs | Microsoft Intune
-description:
-keywords:
+title: "Softwareupdates für Windows-PCs | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: d650eea62be0c00c414b51ed5c49310c5175acd7
+
 
 ---
 
 # Aktualisieren Ihrer Windows-PCs mit Softwareupdates in Microsoft Intune
 Microsoft Intune unterstützt Sie auf vielfältige Weise beim Schutz Ihrer verwalteten Computer, z. B. durch die Verwaltung von Softwareupdates. Dadurch ist sichergestellt, dass die neuesten Patches und Softwareupdates schnell installiert werden, sodass Ihre Computer immer auf dem neuesten Stand sind.
 
-Wenn Sie den Intune-Client noch nicht auf Ihren Computern installiert haben, finden Sie unter [Installieren des Windows-PC-Clients mit Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) weitere Informationen..
+Falls Sie den Intune-Client noch nicht auf Ihren Computern installiert haben, finden Sie unter [Installieren des Windows-PC-Clients mit Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) weitere Informationen.
 
 Wenn neue Updates bei Microsoft Update verfügbar sind oder Sie ein Drittanbieterupdate erstellt haben und diese Updates auf die von Ihnen verwalteten Computer anwendbar sind, wird eine Benachrichtigung auf der Seite **Übersicht** des Arbeitsbereichs **Updates** angezeigt. Nachdem Sie auf diesen Benachrichtigungslink geklickt haben, können Sie verschiedene Vorgänge durchführen. Sie können beispielsweise weitere Informationen zum Update anzeigen, das Update genehmigen oder ablehnen und die Computer anzeigen, auf denen das Update im Fall der Genehmigung installiert wird.
 
@@ -44,9 +37,9 @@ Bevor Sie mit dem Erstellen und Genehmigen von Softwareupdates beginnen, konfigu
 
 ### So konfigurieren Sie Einstellungen für Updaterichtlinien
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Richtlinie** &gt; **Übersicht** &gt; **Richtlinie hinzufügen**..
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Optionen **Richtlinie** &gt; **Übersicht** &gt; **Richtlinie hinzufügen**.
 
-2.  Konfigurieren Sie eine Richtlinie für **Microsoft Intune-Agent-Einstellungen** für die Update-Einstellungen, und stellen Sie sie bereit. Sie können die empfohlenen Einstellungen verwenden oder die Einstellungen anpassen. Weitere Informationen zum Erstellen und Bereitstellen von Richtlinien finden Sie unter [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)..
+2.  Konfigurieren Sie eine Richtlinie für **Microsoft Intune-Agent-Einstellungen** für die Update-Einstellungen, und stellen Sie sie bereit. Sie können die empfohlenen Einstellungen verwenden oder die Einstellungen anpassen. Weitere Informationen zum Erstellen und Bereitstellen von Richtlinien finden Sie unter [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
 In den folgenden Tabellen sind die Werte, die Sie in der Richtlinie konfigurieren können, sowie die empfohlenen Werte aufgeführt, die verwendet werden, wenn Sie die Richtlinie nicht anpassen. Sie finden diese Einstellungen im Bereich **Updates** .
 
@@ -73,7 +66,7 @@ Bereiten Sie die Verwendung von Softwareupdates mithilfe der folgenden beiden Ve
 
 ### Konfigurieren Sie die Produktkategorien und Updateklassifizierungen, die Sie auf verwalteten Computern verfügbar machen möchten.
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Verwaltung** &gt; **Updates** aus..
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Admin** &gt; **Updates** aus.
 
 2.  Wählen Sie auf der Seite **Diensteinstellungen: Updates** in der Liste **Produktkategorie** die Updatekategorien aus, die Sie auf Computern verfügbar machen möchten. Beachten Sie, dass die am häufigsten verwendeten Updates standardmäßig aktiviert sind.
 
@@ -86,9 +79,9 @@ Bereiten Sie die Verwendung von Softwareupdates mithilfe der folgenden beiden Ve
 
 ### So konfigurieren Sie automatische Genehmigungsregeln für Softwareupdates
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Verwaltung** &gt; **Updates** aus..
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Admin** &gt; **Updates** aus.
 
-2.  Klicken Sie im Bereich **Automatische Genehmigungsregeln** der Seite **Servereinstellungen: Updates** auf **Neu**..
+2.  Wählen Sie im Abschnitt **Automatische Genehmigungsregeln** der Seite **Servereinstellungen: Updates** **Neu** aus.
 
 3.  Geben Sie auf der Seite **Allgemein** des Assistenten zum Erstellen von automatischen Genehmigungsregeln einen Namen und optional eine Beschreibung für die Regeln an.
 
@@ -98,16 +91,16 @@ Bereiten Sie die Verwendung von Softwareupdates mithilfe der folgenden beiden Ve
 
 6.  Gehen Sie auf der Seite **Bereitstellung** folgendermaßen vor:
 
-    -   Wählen Sie die Computergruppen aus, für die die neue Regel bereitgestellt werden soll, und klicken Sie auf **Hinzufügen**..
+    -   Wählen Sie die Computergruppen aus, für die die neue Regel bereitgestellt werden soll, und wählen Sie anschließend **Hinzufügen** aus.
 
     -   Aktivieren Sie zum Angeben eines Installationszeitlimits für die Updates das Kontrollkästchen **Erzwingen Sie ein Installationszeitlimit für diese Updates** , und wählen Sie aus der Liste **Installationszeitlimit** ein Installationszeitlimit aus.
 
         > [!NOTE]
         > Wenn Sie ein Installationszeitlimit angeben, muss der verwaltete Computer nach Ablauf des entsprechenden Intervalls möglicherweise einmal oder mehrmals neu gestartet werden.
 
-    -   Klicken Sie danach auf **Weiter**..
+    -   Wählen Sie anschließend **Weiter** aus.
 
-7.  Überprüfen Sie auf der Seite **Zusammenfassung** die Einstellungen für die neue Regel, und klicken Sie dann auf **Fertig stellen**..
+7.  Überprüfen Sie auf der Seite **Zusammenfassung** die Einstellungen für die neue Regel, und wählen Sie anschließend **Fertig stellen** aus.
 
 Die neue Regel wird im Bereich **Automatische Genehmigungsregeln** auf der Seite **Diensteinstellungen: Updates** angezeigt.
 
@@ -117,15 +110,15 @@ Die neue Regel wird im Bereich **Automatische Genehmigungsregeln** auf der Seite
 
 ### So können Sie eine Regel für die automatische Genehmigung von Updates bearbeiten, ausführen oder löschen
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Verwaltung** &gt; **Updates** aus..
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Admin** &gt; **Updates** aus.
 
 2.  Wählen Sie im Bereich **Automatische Genehmigungsregeln** eine Regel aus, und führen Sie dann einen der folgenden Schritte aus:
 
-    -   Klicken Sie zum Bearbeiten der Regel auf **Bearbeiten**, und ändern Sie dann im **Assistenten für automatische Update-Genehmigungsregeln** die Parameter der Regel..
+    -   Wählen Sie zum Bearbeiten der Regel **Bearbeiten** aus, und ändern Sie anschließend im **Assistenten für automatische Update-Genehmigungsregeln** die Parameter der Regel.
 
-    -   Klicken Sie zum Ausführen der Regel auf **Ausgewählten Satz ausführen**..
+    -   Wählen Sie **Ausgewählten Satz ausführen** aus, um die Regel auszuführen.
 
-    -   Klicken Sie zum Löschen der Regel auf **Löschen**..
+    -   Wählen Sie **Löschen** aus, um die Regel zu löschen.
 
         > [!NOTE]
         > Das Löschen einer Regel hat keine Auswirkungen auf vorherige Updates, die durch diese Regel genehmigt wurden.
@@ -135,7 +128,7 @@ Sie können Updates für Software bereitstellen, die nicht von Microsoft stammt.
 
 ### So laden Sie ein Drittanbieterupdate hoch und konfigurieren es
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Updates** &gt; **Übersicht** &gt; **Hochladen** aus..
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) **Updates** &gt; **Übersicht** &gt; **Hochladen** aus.
 
 2.  Klicken Sie auf der Seite **Updatedateien** auf **Durchsuchen**, um die Setupdateien auszuwählen, die zur Installation des Updatepakets benötigt werden. Hierbei kann es sich um eine Windows Installer-Datei (MSI), eine Windows Installer-Patchdatei (MSP) oder eine Programmdatei (EXE) handeln. Außerdem können Sie ggf. zusätzliche Dateien oder Ordner einschließen, die sich im selben Ordner wie die Setupdatei befinden.
 
@@ -158,7 +151,7 @@ Sie können Updates für Software bereitstellen, die nicht von Microsoft stammt.
 
     -   **Der Registrierungsschlüssel ist vorhanden.**
 
-6.  Geben Sie ggf. weitere Informationen an, die zur Konfiguration der Erkennungsregeln erforderlich sind – beispielsweise einen Dateipfad und -namen, den Windows Installer-Produktcode oder einen Registrierungsschlüssel –, und klicken Sie dann auf **Weiter**..
+6.  Geben Sie alle weiteren, für die Konfiguration der Erkennungsregel erforderlichen Informationen an – beispielsweise einen Dateipfad und -namen, den Windows Installer-Produktcode oder einen Registrierungsschlüssel – und wählen Sie anschließend **Weiter** aus.
 
 7.  Auf der Seite **Erforderliche Komponenten** des Assistenten geben Sie an, welche Software bereits installiert sein muss, damit dieses Update installiert werden kann. Sie können **Keine**angeben, ein bereits hinzugefügtes und von Intune verwaltetes Softwarepaket auswählen oder eine der folgenden Regeln zur Beschreibung der Software angeben:
 
@@ -168,9 +161,9 @@ Sie können Updates für Software bereitstellen, die nicht von Microsoft stammt.
 
     -   **Der Registrierungsschlüssel ist vorhanden.**
 
-8.  Geben Sie ggf. weitere Informationen an, die zur Konfiguration der Erkennungsregeln erforderlich sind – beispielsweise einen Dateipfad und -namen, den Windows Installer-Produktcode oder einen Registrierungsschlüssel –, und klicken Sie dann auf **Weiter**..
+8.  Geben Sie alle weiteren, für die Konfiguration der Erkennungsregel erforderlichen Informationen an – beispielsweise einen Dateipfad und -namen, den Windows Installer-Produktcode oder einen Registrierungsschlüssel – und wählen Sie anschließend **Weiter** aus.
 
-9. Auf der Seite **Befehlszeilenargumente** des Assistenten können Sie erforderliche Installationseigenschaften zur Installationsbefehlszeile hinzufügen, um das Verhalten der Setupdatei zu ändern. Beispielsweise unterstützen verschiedene Softwareprogramme die Eigenschaft **/q** zum Ermöglichen einer automatischen Installation. Weitere Informationen zu unterstützten Befehlszeilenargumenten finden Sie in der Dokumentation zu Ihrem Softwarepaket. Geben Sie ggf. erforderliche Befehlszeilenargumente an, und klicken Sie dann auf **Weiter**..
+9. Auf der Seite **Befehlszeilenargumente** des Assistenten können Sie erforderliche Installationseigenschaften zur Installationsbefehlszeile hinzufügen, um das Verhalten der Setupdatei zu ändern. Beispielsweise unterstützen verschiedene Softwareprogramme die Eigenschaft **/q** zum Ermöglichen einer automatischen Installation. Weitere Informationen zu unterstützten Befehlszeilenargumenten finden Sie in der Dokumentation zu Ihrem Softwarepaket. Geben Sie die ggf. erforderlichen Befehlszeilenargumente an, und wählen Sie anschließend **Weiter** aus.
 
     > [!NOTE]
     > Wird vom Update keine automatische Installation unterstützt, können Sie es nicht mithilfe von Intune installieren.
@@ -185,7 +178,7 @@ Sie können Updates für Software bereitstellen, die nicht von Microsoft stammt.
 11. Alle nicht aufgeführten Rückgabecodes weisen auf Fehler bei der Installation hin.
 Bei einigen Updates gelten die Standardinterpretationen für Rückgabecodes nicht. In diesem Fall können Sie eigene Interpretationen für die Rückgabecodes angeben.
 
-12. Geben Sie die erforderlichen Rückgabecodes an, oder bearbeiten Sie sie, und klicken Sie dann auf **Weiter**..
+12. Geben Sie die erforderlichen Rückgabecodes an, oder bearbeiten Sie sie, und klicken Sie anschließend auf **Weiter**.
 
 13. Überprüfen Sie auf der Seite **Zusammenfassung** des Assistenten die Aktionen, die ausgeführt werden, und klicken Sie dann auf **Hochladen**, um den Assistenten abzuschließen.
 
@@ -204,23 +197,23 @@ Wenn Sie ein Update aus der Liste auswählen, werden weitere Befehle verfügbar,
 |--------|--------------------|
 |**Eigenschaften anzeigen**|Hiermit werden ausführliche Informationen zum Update einschließlich der Anzahl der Computer angezeigt, auf die dieses Update angewendet werden kann.|
 |**Bearbeiten**|Nur für nicht von Microsoft stammende Updates. Hiermit können Sie die Eigenschaften des Updates bearbeiten.|
-|**Genehmigen**|Hiermit wird das ausgewählte Update genehmigt und Ihnen ermöglicht, die Gruppen zu konfigurieren, in denen es bereitgestellt wird. Weitere Informationen finden Sie im Verfahren [So genehmigen Sie Updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md#BKMK_Approve) in diesem Thema.|
+|**Genehmigen**|Hiermit wird das ausgewählte Update genehmigt und Ihnen ermöglicht, die Gruppen zu konfigurieren, in denen es bereitgestellt wird. Weitere Informationen finden Sie im Verfahren **So genehmigen Sie Updates** in diesem Thema.|
 |**Ablehnen**|Hiermit werden alle früheren Genehmigungen für das Update zurückgezogen, und das Update wird in den Standardansichten ausgeblendet. Darüber hinaus werden alle Berichtsdaten für das Update entfernt.<br /><br />Wenn Sie zu einem späteren Zeitpunkt nach einem abgelehnten Updates suchen möchten, legen Sie für den Filter auf der Seite **Alle Updates** die Einstellung **Abgelehnt**fest. Sie können das Update dann erforderlichenfalls genehmigen.<br /><br />Wenn ein Update abgelehnt wurde, weil es in Microsoft Update abgelaufen war, kann dieses Update in der Intune-Verwaltungskonsole nicht genehmigt werden.<br /><br />Wenn Sie eine Richtlinie für Updates löschen, die auf Computern bereitgestellt wurde, werden die Werte dieser Updateeinstellungen auf den Standardstatus für das installierte Betriebssystem zurückgesetzt.|
 |**Löschen**|Nur für nicht von Microsoft stammende Updates. Hiermit wird das ausgewählte Update gelöscht.|
 |**Hochladen**|Hiermit wird der **Assistent zum Hochladen von Updates** gestartet, mit dem Sie bereitzustellende Nicht-Microsoft-Updates hochladen können.|
 
 ### So genehmigen Sie Updates
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Updates** &gt; **Übersicht** &gt; **Neue zu genehmigende Updates**..
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) **Updates** &gt; **Übersicht** &gt; **Neue zu genehmigende Updates** aus.
 
-    Klicken Sie im Arbeitsbereich **Updates** auf **Übersicht** &gt; **Neue zu genehmigende Updates**..
+    Wählen Sie im Arbeitsbereich **Updates** **Übersicht** &gt; **Neue zu genehmigende Updates** aus.
 
     > [!NOTE]
     > Der Link **Neue zu genehmigende Updates** wird nur dann im Bereich **Updatestatus** angezeigt, wenn mindestens ein verwalteter Computer vorhanden ist, für den ein Update genehmigt werden muss.
 
 2.  Wählen Sie ein Update aus, überprüfen Sie unten auf der Seite die Updateeigenschaften, um sich zu vergewissern, dass Sie das Update genehmigen möchten, und klicken Sie dann auf **Genehmigen**. Sie können bei gedrückter **STRG**-Taste auch mehrere Updates auswählen.
 
-3.  Wählen Sie auf der Seite **Gruppen auswählen** eine Gruppe aus, für die Sie die Updates bereitstellen möchten, und klicken Sie auf **Hinzufügen**. Wenn Sie alle Gruppen ausgewählt haben, klicken Sie auf **Weiter**..
+3.  Wählen Sie auf der Seite **Gruppen auswählen** eine Gruppe aus, für die Sie die Updates bereitstellen möchten, und klicken Sie auf **Hinzufügen**. Wenn Sie alle Gruppen angegeben haben, wählen Sie **Weiter** aus.
 
 4.  Führen Sie auf der Seite **Bereitstellungsaktion** folgende Schritte für jede Gruppe in der Liste aus:
 
@@ -259,6 +252,7 @@ Wenn Sie ein Update aus der Liste auswählen, werden weitere Befehle verfügbar,
 [Richtlinien zum Schutz von Windows-PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Barrierefreiheitsfunktionen | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: d34e754e3815b43f4b5b74d24711cf55aacfc757
+
 
 ---
 
@@ -48,11 +42,12 @@ Zusätzlich zu den Funktionen und Tools für die Barrierefreiheit in Microsoft W
 |Liste in einem Menü reduzieren|ALT+NACH-OBEN-TASTE|
 |Zur nächsten Anwendungsgruppe bewegen|NACH-OBEN-TASTE|
 |Aktionen für ein ausgewähltes Gerät anzeigen|Rechtspfeil|
-> In [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]-Portalen kann mithilfe der Standardtastenkombinationen in Internet Explorer navigiert werden.
+> [!NOTE]
+> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] In Portalen kann mithilfe der Standardtastenkombinationen in Internet Explorer navigiert werden.
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

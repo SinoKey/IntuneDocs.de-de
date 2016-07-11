@@ -1,5 +1,5 @@
-Weitere Informationen dazu, wie Barrierefreiheitstechnologien für Computer Personen mit Behinderungen das Leben erleichtern können, finden Sie auf der [Microsoft-Website zur Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431)..
+Weitere Informationen dazu, wie Barrierefreiheitstechnologien für Computer das Leben von Menschen mit Behinderungen erleichtern können, finden Sie unter [Microsoft Accessibility (Microsoft-Barrierefreiheit)](http://go.microsoft.com/fwlink/?LinkId=8431).
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 

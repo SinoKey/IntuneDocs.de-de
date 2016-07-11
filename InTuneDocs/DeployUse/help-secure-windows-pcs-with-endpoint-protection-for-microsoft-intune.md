@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Endpoint Protection für Windows-PCs| Microsoft Intune
-description:
-keywords:
+title: "Endpoint Protection für Windows-PCs| Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: muhosabe
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9b96e6c49ec9122961588156d77bf94cdbccd787
+ms.openlocfilehash: b1b1cc90672903ac0336151373272b5e20e56165
+
 
 ---
 
 # Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune
 Microsoft Intune kann Sie unterstützen, Ihre verwalteten Computer auf vielfältige Weise zu schützen. Dazu dient u. a. Endpoint Protection, das Echtzeitschutz gegen Bedrohungen durch Schadsoftware bietet, Schadsoftwaredefinitionen auf dem neuesten Stand hält und Computer automatisch überprüft. Endpoint Protection bietet außerdem Tools, mit denen Sie Angriffe durch Schadsoftware kontrollieren und überwachen können.
 
-Wenn Sie den Intune-Client noch nicht auf Ihren Computern installiert haben, finden Sie unter [Installieren des Windows-PC-Clients mit Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) weitere Informationen..
+Falls Sie den Intune-Client noch nicht auf Ihren Computern installiert haben, finden Sie unter [Installieren des Windows-PC-Clients mit Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) weitere Informationen.
 
 Verwenden Sie die Informationen in den folgenden Abschnitten zum Konfigurieren, Bereitstellen und Überwachen von Endpoint Protection.
 
@@ -48,7 +42,7 @@ Führen Sie folgende Schritte aus, um von Ihrer aktuellen Endpunktschutzanwendun
 
 3.  Entfernen Sie die Endpunktschutzsoftware des Drittanbieters auf folgende Weise:
 
-    -   Stellen Sie über die Intune-Softwareverteilung ein Tool des Herstellers der Endpunktschutzanwendung bereit, mit dessen Hilfe diese entfernt werden kann. Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps.md)..
+    -   Stellen Sie über die Intune-Softwareverteilung ein Tool des Herstellers der Endpunktschutzanwendung bereit, mit dessen Hilfe diese entfernt werden kann. Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps.md).
 
     -   Entfernen Sie die von einem Drittanbieter stammende Endpunktschutzanwendung manuell.
 
@@ -58,7 +52,7 @@ Führen Sie folgende Schritte aus, um von Ihrer aktuellen Endpunktschutzanwendun
 ## So konfigurieren Sie Microsoft Intune Endpoint Protection
 Über die folgenden Schritte können Sie Microsoft Intune Endpoint Protection konfigurieren.
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Richtlinie** > **Richtlinie hinzufügen**..
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Richtlinie** > **Richtlinie hinzufügen**.
 
 2.  Erweitern Sie **Computerverwaltung**, und wählen Sie **Microsoft Intune-Agent-Einstellungen** aus. Wählen Sie **Benutzerdefinierte Richtlinie erstellen und bereitstellen** aus, um eine Richtlinie für Endpoint Protection-Einstellungen anzugeben, und klicken Sie auf die Schaltfläche **Richtlinie erstellen**. Sie können die empfohlenen Einstellungen verwenden oder die Einstellungen anpassen. Weitere Informationen zum Erstellen und Bereitstellen von Richtlinien finden Sie im Thema [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
@@ -70,7 +64,7 @@ Sie können die bereitgestellte Endpoint Protection-Richtlinie auf der Seite **A
 
 |Richtlinieneinstellung|Details|
 |------------------|--------------------|
-|**Endpoint Protection installieren**|Legen Sie hier **Ja** fest, um Endpoint Protection auf verwalteten Computern zu installieren. Wird bei der Installation eine Endpunktschutzanwendung eines Drittanbieters erkannt, wird Endpoint Protection nur installiert, wenn **Endpoint Protection auch dann installieren, wenn eine Endpunktschutzanwendung von Drittanbietern installiert ist** auf **Ja**.  festgelegt ist.**Hinweis**: Intune Endpoint Protection ist auf verwalteten Computern standardmäßig installiert. Wenn Sie nicht möchten, dass Endpoint Protection auf Ihren verwalteten Computern installiert wird, müssen Sie diese Richtlinie explizit auf **Nein** festlegen. Wenn Endpoint Protection zuvor installiert war und die Richtlinie in **Nein** geändert wird, wird der Endpoint Protection-Client deinstalliert.<br />Empfohlener Wert: **Ja**|
+|**Endpoint Protection installieren**|Legen Sie hier **Ja** fest, um Endpoint Protection auf verwalteten Computern zu installieren. Wird bei der Installation eine Endpunktschutzanwendung eines Drittanbieters erkannt, wird Endpoint Protection nur installiert, falls **Endpoint Protection auch dann installieren, wenn eine Endpunktschutzanwendung von Drittanbietern installiert ist** auf **Ja** festgelegt ist. **Hinweis:** Intune Endpoint Protection ist auf verwalteten Computern standardmäßig installiert. Wenn Sie nicht möchten, dass Endpoint Protection auf Ihren verwalteten Computern installiert wird, müssen Sie diese Richtlinie explizit auf **Nein** festlegen. Wenn Endpoint Protection zuvor installiert war und die Richtlinie in **Nein** geändert wird, wird der Endpoint Protection-Client deinstalliert.<br />Empfohlener Wert: **Ja**|
 |**Endpoint Protection auch dann installieren, wenn eine Endpunktschutzanwendung von Drittanbietern installiert ist**|Legen Sie diese Option auf **Ja** fest, um Microsoft Endpoint Protection zu installieren, auch wenn eine Endpunktschutzanwendung eines Drittanbieters erkannt wird.<br /><br />Empfohlener Wert: **Ja**|
 |**Endpoint Protection aktivieren**|Legen Sie diese Option auf **Ja** fest, um Microsoft Intune Endpoint Protection auf Computern zu aktivieren, die über den Endpoint Protection-Client verfügen.<br /><br />Wenn Sie diese Option auf **Nein** festlegen und Endpoint Protection installiert ist, wird den Benutzern die Benutzeroberfläche des Endpoint Protection-Clients nicht angezeigt, und alle Schutzfunktionen sind inaktiv.<br /><br />Empfohlener Wert: **Ja**|
 |**Clientbenutzeroberfläche deaktivieren**|Legen Sie diese Option auf **Ja** fest, um die Benutzeroberfläche des Microsoft Intune Endpoint Protection-Clients für Benutzer auszublenden. Damit die Einstellung wirksam wird, ist ein Neustart des Clientcomputers erforderlich.<br /><br />Empfohlener Wert: **Nein**|
@@ -128,7 +122,7 @@ Die Einstellung **Von der Überprüfung oder dem Echtzeitschutz auszuschließend
 
 ### Einstellungen für ausgeschlossene Prozesse
 
-Die Einstellung **Prozesse, die beim Ausführen einer Überprüfung oder bei Verwendung des Echtzeitschutzes auszuschließen sind** ermöglicht Ihnen das Ausschließen bestimmter Prozesse von der Ausführung einer Überprüfung oder vom Echtzeitschutz. Sie können nur Dateien mit der Erweiterung **.exe**, **.com** und **.scr** ausschließen..
+Die Einstellung **Prozesse, die beim Ausführen einer Überprüfung oder bei Verwendung des Echtzeitschutzes auszuschließen sind** ermöglicht Ihnen das Ausschließen bestimmter Prozesse von der Ausführung einer Überprüfung oder vom Echtzeitschutz. Sie können nur Dateien mit der Erweiterung **.exe**, **.com** und **.scr** ausschließen.
 
 ### Einstellungen für ausgeschlossene Dateitypen
 
@@ -139,16 +133,16 @@ Microsoft Active Protection Service ist eine Online-Community, die Ihnen hilft z
   - **Standard**: Hierbei werden grundlegende Informationen zu erkannter Schadsoftware an Microsoft gesendet. Hierzu gehören Angaben dazu, woher die Software stammt, welche Aktionen Sie anwenden oder von Endpoint Protection automatisch angewendet werden und ob diese Aktionen erfolgreich waren.
   - **Premium**: Hierbei werden zusätzliche Informationen über Schadsoftware, Spyware oder möglicherweise unerwünschte Software an Microsoft gesendet. Hierzu gehören Angaben zu dem Speicherort der Software, den Dateinamen, der Funktionsweise der Software und der Auswirkung der Software auf Ihren Computer.
 
-Sie können auch **Dynamische Definitionen auf Basis von Microsoft Active Protection Service-Berichten empfangen** verwenden..
+Sie können auch **Dynamische Definitionen auf Basis von Microsoft Active Protection Service-Berichten empfangen**.
 
 ## Verwaltungsaufgaben für Endpoint Protection
 Mithilfe der folgenden Aufgaben können Sie verschiedene Verwaltungsaufgaben auf verwalteten Computern ausführen, auf denen Endpoint Protection ausgeführt wird:
  - Update für Malwaredefinitionen ausführen
-  - Intune-Konsole: Wählen Sie im Arbeitsbereich **Gruppen** die zu aktualisierenden Computer aus. Klicken Sie auf **Remoteaufgaben** &gt; **Update für Malwaredefinitionen ausführen**..
-  - Verwaltete Computer: Starten Sie die Endpoint Protection-Clientsoftware über den Benachrichtigungsbereich von Windows. Klicken Sie zunächst auf die Registerkarte **Aktualisieren** und dann auf **Aktualisieren**..
+  - Intune-Konsole: Wählen Sie im Arbeitsbereich **Gruppen** die zu aktualisierenden Computer aus. Klicken Sie auf **Remoteaufgaben** &gt; **Update für Malwaredefinitionen ausführen**.
+  - Verwaltete Computer: Starten Sie die Endpoint Protection-Clientsoftware über den Benachrichtigungsbereich von Windows. Klicken Sie zunächst auf die Registerkarte **Aktualisieren** und dann auf **Aktualisieren**.
  - Malwareüberprüfung ausführen:
-  - Intune-Konsole: Wählen Sie im Arbeitsbereich **Gruppen** die zu überprüfenden Computer aus. Klicken Sie auf **Vollständige Malwareüberprüfung ausführen** oder auf **Malwareschnellüberprüfung ausführen**..
-  - Verwaltete Computer: Starten Sie die Endpoint Protection-Clientsoftware über den Benachrichtigungsbereich von Windows. Wählen Sie **Schnell**, **Vollständig**oder **Benutzerdefiniert** aus, und klicken Sie auf **Jetzt überprüfen**..
+  - Intune-Konsole: Wählen Sie im Arbeitsbereich **Gruppen** die zu überprüfenden Computer aus. Klicken Sie auf **Vollständige Malwareüberprüfung ausführen** oder auf **Malwareschnellüberprüfung ausführen**.
+  - Verwaltete Computer: Starten Sie die Endpoint Protection-Clientsoftware über den Benachrichtigungsbereich von Windows. Wählen Sie **Schnell**, **Vollständig**oder **Benutzerdefiniert**aus, und klicken Sie auf **Jetzt überprüfen**.
 
 Zur Anzeige des Status einer Remoteaufgabe klicken Sie rechts unten in der Intune-Konsole auf den Link **Remoteaufgaben**. Im Dialogfeld **Status des Remote-Tasks** werden aktuelle Remoteaufgaben, ihr Status, der Gerätename und etwaige berichtete Fehler ggf. mit einem Link zu Problembehandlungsinformationen aufgelistet.
 
@@ -171,19 +165,30 @@ Sie können den Malwarestatus Ihrer Computer mithilfe des Arbeitsbereichs **Schu
 ### Anzeigen der letzten Erkennungspfade für Malware auf Computern
 Intune kann die Pfade der 10 zuletzt erkannten Instanzen von Malware auf einem Gerät anzeigen. Die Option **Letzter Erkennungspfad** ist standardmäßig deaktiviert. So aktivieren Sie diese Anzeige:
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Gruppen** > **Alle Geräte** . **Malware**..
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Gruppen** > **Alle Geräte**. **Malware**.
 
 2.  Klicken Sie mit der rechten Maustaste auf eine Spaltenüberschrift. Eine Liste der verfügbaren Spalten wird angezeigt.
 
 3.  Aktivieren Sie das Kontrollkästchen **Letzte Erkennungspfade** in der Liste. Die Spalte **Letzte Erkennungspfade** wird angezeigt. Sie enthält bis zu 10 der zuletzt auf dem Gerät überwachten Malwareinstanzen.
 
-## Benötigen Sie weitere Hilfe?
-Weitere Hilfe und Unterstützung erhalten Sie unter [Problembehandlung für Endpoint Protection in Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)..
+## Ausführen einer Malwareüberprüfung oder Aktualisieren von Malwaredefinitionen auf einem Computer
+Intune kann auf einem remoteverwalteten PC, der mit dem Intune-Client installiert wurde, entweder eine vollständige oder schnelle Malwareüberprüfung mithilfe von Endpoint Protection oder Windows Defender ausführen.
 
-### Weitere Informationen
+1. Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Gruppen** > **Übersicht** > **Alle Geräte** > **Alle Computer**, und wählen Sie den Computer aus, der verwendet werden soll.
+
+2. Klicken Sie auf die **Remoteaufgaben**-Dropdownliste, und wählen Sie anschließend die Aufgabe aus. Die Aufgabe, die auf dem Remotecomputer ausgeführt werden soll.
+
+
+
+
+## Benötigen Sie weitere Hilfe?
+Weitere Hilfe und Unterstützung erhalten Sie unter [Troubleshoot Endpoint Protection in Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) (Problembehandlung für Endpoint Protection in Microsoft Intune).
+
+### Siehe auch
 [Richtlinien zum Schutz von Windows-PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO5-->
 
 
