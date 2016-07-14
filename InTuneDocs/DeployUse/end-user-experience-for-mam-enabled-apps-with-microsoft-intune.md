@@ -46,6 +46,7 @@ MAM-Richtlinien (Mobile Application Management, Verwaltung mobiler Anwendungen) 
 
     ![Screenshot vom geöffneten Dateispeicherort mit der Liste der vorhandenen Dateien](../media/AppManagement/iOS_OneDriveSuccess.png)
 
+    > [!NOTE]
     > [!NOTE] Wenn Sie eine schon bereitgestellte Richtlinie ändern, werden die Änderungen beim nächsten Öffnen der App angewendet.
 
 ##  Zugreifen auf OneDrive mit einem Android-Gerät
@@ -169,6 +170,6 @@ Dies verhindert nicht Sie, dass mit der RMS-Freigabeanwendung Unternehmensdateie
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

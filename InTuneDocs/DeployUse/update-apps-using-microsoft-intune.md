@@ -49,6 +49,6 @@ Bei Apps, die als Link zu einem Store bereitgestellt wurden, wird das Update von
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

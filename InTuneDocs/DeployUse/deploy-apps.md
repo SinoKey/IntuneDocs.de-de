@@ -28,6 +28,7 @@ Wenn Sie Apps bereitstellen, können Sie eine der folgenden Bereitstellungsaktio
 
 -   **Erforderliche Installation** – Die App wird auf dem Gerät installiert, ohne dass ein Benutzereingriff erforderlich ist.
 
+    > [!TIP]
     > [!TIP] Bei iOS-Geräten, die nicht betreut werden, und bei allen Android-Geräten muss der Benutzer das App-Angebot vor der Installation akzeptieren.
     > 
     >  Wenn ein Endbenutzer eine App deinstalliert, die Sie als erforderliche Installation bereitgestellt haben, wird diese App von Intune nach dem nächsten Inventurzyklus (in der Regel nach 7 Tagen) automatisch erneut installiert.
@@ -52,6 +53,7 @@ Wenn Sie Apps bereitstellen, können Sie eine der folgenden Bereitstellungsaktio
 |Externer Link (auf einer Gerätegruppe bereitgestellt)|Nein|Nein|Nein|Nein|
 |Verwaltete iOS-App aus dem App Store (für eine Benutzergruppe bereitgestellt)|Ja|Ja|Ja|Ja|
 |Verwaltete iOS-App aus dem App Store (auf einer Gerätegruppe bereitgestellt)|Ja|Nein|Ja|Ja|
+> [!TIP]
 > [!TIP] Wenn Sie beim Bereitstellen von Apps sowohl Benutzer- als auch Gerätegruppen auswählen, können Sie die App nur als **Verfügbare Installation** bereitstellen.
 
 ## Bereitstellungskonflikte
@@ -70,6 +72,6 @@ Erfahren Sie mehr zum [Bereitstellen von Apps in Microsoft Intune](deploy-apps-
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
