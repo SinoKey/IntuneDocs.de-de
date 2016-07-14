@@ -1,11 +1,41 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\DeployUse\media\available-install-on-ios.png](https://github.com/Microsoft/IntuneDocs-pr/blob/75ab39f59afa27190ac87e792b143df237eef6c4/InTuneDocs/DeployUse/media/available-install-on-ios.png) | InSyncHandedBackSuccess | [Details](#6496672b6485257094e48fe01425155a3399acc1100)
+ [InTuneDocs\EndUser\media\ios-enroll-3-mgt-profile-install-2.PNG](https://github.com/Microsoft/IntuneDocs-pr/blob/71af89a1feb73bccae1f07007bb5c30ea3f7950e/InTuneDocs/EndUser/media/ios-enroll-3-mgt-profile-install-2.PNG) | InSyncHandedBackSuccess | [Details](#45fb0908384cfdd4d34528ed2e8fe39e922f061e369)
 
 ## Item Details
+##### <a name='6496672b6485257094e48fe01425155a3399acc1100'></a> Source: [InTuneDocs\DeployUse\media\available-install-on-ios.png](https://github.com/Microsoft/IntuneDocs-pr/blob/75ab39f59afa27190ac87e792b143df237eef6c4/InTuneDocs/DeployUse/media/available-install-on-ios.png)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\media\available-install-on-ios.png](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/416cee3ced83ae7272b397a3331699e0768f5c6c/InTuneDocs/DeployUse/media/available-install-on-ios.png)
+* Handoff File: [6496672b6485257094e48fe01425155a3399acc1.png](https://github.com/Microsoft/EM.handoff/blob/6bbb1298093af33d2444f802835e4ac70c7c113d/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/6496672b6485257094e48fe01425155a3399acc1.png)
+* Handoff Datetime: 2016-07-12 17:31:40
+* Handoff Reason: IsDependency
+* Dependency From: InTuneDocs\robstack-v2-of-deploy-apps-to-mobile-devices.md, InTuneDocs\zDeletedTopics\robstack-v2-of-deploy-apps-to-mobile-devices.md, InTuneDocs\DeployUse\deploy-apps-to-mobile-devices-in-microsoft-intune.md, InTuneDocs\DeployUse\deploy-apps-in-microsoft-intune.md, InTuneDocs\zDeletedTopics\deploy-apps-in-microsoft-intune.md
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [6496672b6485257094e48fe01425155a3399acc1.png](https://github.com/Microsoft/EM.handback/blob/512e2e0e7b91251e95742dfd8ded379d24d12745/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/6496672b6485257094e48fe01425155a3399acc1.png)
+* Handback Datetime: 2016-07-14 21:26:08
+* [Back to Top](#report-top)
+
+##### <a name='45fb0908384cfdd4d34528ed2e8fe39e922f061e369'></a> Source: [InTuneDocs\EndUser\media\ios-enroll-3-mgt-profile-install-2.PNG](https://github.com/Microsoft/IntuneDocs-pr/blob/71af89a1feb73bccae1f07007bb5c30ea3f7950e/InTuneDocs/EndUser/media/ios-enroll-3-mgt-profile-install-2.PNG)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\media\ios-enroll-3-mgt-profile-install-2.PNG](https://github.com/Microsoft/IntuneDocs-pr.de-de/blob/416cee3ced83ae7272b397a3331699e0768f5c6c/InTuneDocs/EndUser/media/ios-enroll-3-mgt-profile-install-2.PNG)
+* Handoff File: [45fb0908384cfdd4d34528ed2e8fe39e922f061e.PNG](https://github.com/Microsoft/EM.handoff/blob/b822bdd5d599e10be065c6ff6ecb74e77b4f5a64/ol-handoff/Microsoft/IntuneDocs-pr.de-de/master/45fb0908384cfdd4d34528ed2e8fe39e922f061e.PNG)
+* Handoff Datetime: 2016-07-05 17:19:27
+* Handoff Reason: IsDependency
+* Dependency From: InTuneDocs\md-using-your-ios-device-with-intune.md, InTuneDocs\using-your-ios-or-mac-os-x-device-with-intune.md, InTuneDocs\EndUser\enroll-your-device-in-intune-ios.md
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [45fb0908384cfdd4d34528ed2e8fe39e922f061e.PNG](https://github.com/Microsoft/EM.handback/blob/512e2e0e7b91251e95742dfd8ded379d24d12745/ol-handback/Microsoft/IntuneDocs-pr.de-de/master/45fb0908384cfdd4d34528ed2e8fe39e922f061e.PNG)
+* Handback Datetime: 2016-07-14 21:26:08
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
