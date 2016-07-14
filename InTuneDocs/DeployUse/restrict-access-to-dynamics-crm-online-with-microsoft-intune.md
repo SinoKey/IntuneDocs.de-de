@@ -54,8 +54,10 @@ Benutzer, die in beiden Gruppen enthalten sind, werden von der Richtlinie ausgen
 ### Schritt 2: Konfigurieren und Bereitstellen einer Kompatibilitätsrichtlinie
 Sie müssen eine Kompatibilitätsrichtlinie [erstellen](create-a-device-compliance-policy-in-microsoft-intune.md) und auf allen Geräten [bereitstellen](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md), die von der Richtlinie betroffen sind. Dies sind alle Geräte, die von den Benutzern in den Zielgruppen verwendet werden.
 
+> [!NOTE]
 > [!NOTE] Kompatibilitätsrichtlinien werden für Microsoft Intune-Gruppen bereitgestellt, Richtlinien für den bedingten Zugriff dagegen werden auf Azure Active Directory-Sicherheitsgruppen angewendet.
 
+> [!IMPORTANT]
 > [!IMPORTANT] Wenn Sie keine Kompatibilitätsrichtlinie bereitgestellt haben, werden die Geräte als kompatibel ausgewertet.
 
 Fahren Sie mit Schritt 3 fort.
@@ -94,6 +96,6 @@ Wählen Sie eine beliebige Gruppe von Mobilgeräten und dann auf der Registerkar
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

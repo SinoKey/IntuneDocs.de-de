@@ -46,6 +46,7 @@ Der folgende Screenshot zeigt zwei eindeutige Beispiele:
 
 ![Intune-Geräterichtlinie](../media/Intune-Device-Policy-v.2.jpg)
 
+> [!NOTE]
 > [!NOTE] Denken Sie daran: Wenn zwei Richtlinien mit unterschiedlichen Einschränkungsstufen für das gleiche Gerät gelten, wird in der Praxis die restriktivere Richtlinie angewendet.
 
 ## Intervalle für Richtlinienaktualisierungen und -updates
@@ -68,6 +69,7 @@ Bei Windows-Geräten ohne MDM können Richtlinienfehler in der Datei „policypl
 
 2.  Warten Sie 20 Minuten, bis die Clientsoftware entfernt wurde.
 
+    > [!NOTE]
     > [!NOTE] Versuchen Sie nicht, den Client über „Programme und Features“ zu entfernen.
 
 3.  Geben Sie im Startmenü **UAC** ein, um die Einstellungen der Benutzerkontensteuerung zu öffnen.
@@ -110,6 +112,6 @@ Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, w
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
