@@ -420,10 +420,10 @@ In dieser Version wurden die folgenden Änderungen an den Unternehmensportal-App
 
 >[!div class="step-by-step"]
 
->[&larr; **Neuheiten in Intune**](whats-new-in-microsoft-intune.md)    
+>[&larr; **[!div class="step-by-step"]**](whats-new-in-microsoft-intune.md)    
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
