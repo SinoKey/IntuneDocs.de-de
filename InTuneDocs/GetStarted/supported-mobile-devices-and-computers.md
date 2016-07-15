@@ -33,6 +33,6 @@ Sie können diese Geräte und PCs auch dann verwalten, wenn sie keiner Domäne a
 [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
