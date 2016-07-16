@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Anmerkungen zu Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 1906f14568484ebbf23ac7c4350964fb2d5d508f
+
 
 ---
 
@@ -63,9 +57,9 @@ In beiden Fällen wurde das Profile für den Ressourcenzugriff (E-Mail-Profil) n
 
 **Problemumgehung:** Konfigurieren und speichern Sie die Anmeldeinformationen für den Proxyserver vor der Registrierung auf allen Windows 8.1-Geräten, die bei einem Netzwerk registriert werden müssen, für das ein authentifizierter Proxyserver erforderlich ist. So konfigurieren und speichern Sie die Anmeldeinformationen auf einem Windows 8.1-Gerät
 
-1.  Öffnen Sie **Internet Explorer** auf dem Windows 8.1-Gerät..
+1.  Öffnen Sie **Internet Explorer** auf dem Windows 8.1-Gerät.
 
-2.  Wenn Sie zur Eingabe der Anmeldeinformationen für den Proxyserver aufgefordert werden, geben Sie die entsprechenden Details ein, und wählen Sie die Option **Anmeldedaten speichern**aus..
+2.  Wenn Sie zur Eingabe der Anmeldeinformationen für den Proxyserver aufgefordert werden, geben Sie die entsprechenden Details ein, und wählen Sie die Option **Anmeldedaten speichern**aus.
 
 3.  Registrieren Sie das Gerät.
 
@@ -78,7 +72,7 @@ In beiden Fällen wurde das Profile für den Ressourcenzugriff (E-Mail-Profil) n
 ## Das Microsoft Intune App Wrapping Tool für Android besitzt keine eigene Deinstallationsfunktion.
 **Problem:** Das **Microsoft Intune App Wrapping Tool für Android** besitzt keine eigene Funktion zum Deinstallieren des Tools.
 
-**Problemumgehung:** Navigieren Sie zum Speicherort, in dem Sie das Tool installiert haben, und löschen Sie das Verzeichnis. Der Standardspeicherort für die Installation ist: **C:\Programme (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**. Weitere Informationen zum App Wrapping Tool finden Sie unter [Vorbereiten von Android-Apps für die Verwaltung mit dem App Wrapping Tool](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)..
+**Problemumgehung:** Navigieren Sie zum Speicherort, in dem Sie das Tool installiert haben, und löschen Sie das Verzeichnis. Der Standardspeicherort für die Installation ist: **C:\Programme (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**. Weitere Informationen zum App Wrapping Tool finden Sie unter [Vorbereiten von Android-Apps für die Verwaltung mit dem App Wrapping Tool](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool).
 
 ## Bei Computern mit Windows 8 oder Windows 8.1 ist keine Remoteunterstützung verfügbar
 **Problem:** In dieser Version ist die Remoteunterstützungsfunktion auf Computern mit Windows 8 oder Windows 8.1 nicht verfügbar.
@@ -96,6 +90,7 @@ Das Azure-Vorschauportal basiert auf einer neuen Plattform und unterstützt die 
 Die Intune-Verwaltungskonsole und die mobilen Oberflächen für Endbenutzer unterstützen zusätzlich zu allen vom Azure-Vorschauportal unterstützten Sprachen außerdem Dänisch, Finnisch, Griechisch, Norwegisch und Rumänisch.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Verwalten von Einstellungen und Features auf Ihren Geräten mit Richtlinien | Microsoft Intune
-description:
-keywords:
+title: "Verwalten von Einstellungen und Features auf Ihren Geräten mit Richtlinien | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: ab570d551189ec71b54081229b93d7b4ce8d58d5
+
 
 ---
 
@@ -54,7 +48,8 @@ Eine vollständige Liste der Intune-Richtlinien finden Sie unter [Referenz zu Mi
 
 2.  Wählen Sie die gewünschte Richtlinie aus, und wählen Sie, ob Sie die empfohlenen Einstellungen für die Richtlinie verwenden (sofern verfügbar, Sie können diese Einstellungen später ändern) oder eine benutzerdefinierte Richtlinie mit Ihren eigenen Einstellungen erstellen möchten.
 
-    > [!TIP] Hilfe zur Auswahl der richtigen Richtlinie finden Sie in der [Referenz zu Microsoft Intune-Richtlinien](microsoft-intune-policy-reference.md).
+    > [!TIP]
+    > Hilfe zur Auswahl der richtigen Richtlinie finden Sie in der [Referenz zu Microsoft Intune-Richtlinien](microsoft-intune-policy-reference.md).
 
 3.  Wenn Sie bereit sind, wählen Sie **Richtlinie erstellen**.
 
@@ -73,7 +68,7 @@ Eine vollständige Liste der Intune-Richtlinien finden Sie unter [Referenz zu Mi
     - [Upgradeeinstellungen für die Windows-Edition](edition-upgrade-policy-settings-in-microsoft-intune.md)
     - [Einstellungen für Mac OS X-Geräte](mac-os-x-policy-settings-in-microsoft-intune.md)
     - [Einstellungen für Exchange ActiveSync](exchange-activesync-policy-settings-in-microsoft-intune.md)
-    - [Einstellungen für die Nutzungsbedingungsrichtlinie](terms-and-condition-policy-settings-in-microsoft-intune.md)
+    - [Einstellungen für Nutzungsbedingungsrichtlinien](terms-and-condition-policy-settings-in-microsoft-intune.md)
     - [Allgemeine Einstellungen für mobile Geräte (Legacy)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
 4.  Wählen Sie im Bestätigungsdialogfeld **Ja**, um die Richtlinie jetzt bereitzustellen, oder **Nein**, um die Richtlinie zu erstellen, ohne sie bereitzustellen.
@@ -119,7 +114,7 @@ Wenn ein Gerät sich nach der ersten Benachrichtigung nicht zum Abrufen der Rich
 
 In diesem Fall erhält das Gerät die Richtlinie beim nächsten geplanten Einchecken beim Intune-Dienst wie folgt:
 
-- iOS: alle 6 Stunden
+- iOS und Mac OS X: alle sechs Stunden
 - Android: alle 8 Stunden
 - Windows Phone: alle 8 Stunden
 - Registrierte Windows RT-Geräte: alle 24 Stunden
@@ -127,10 +122,10 @@ In diesem Fall erhält das Gerät die Richtlinie beim nächsten geplanten Einche
 
 Wenn das Gerät gerade registriert wurde, ist die Eincheckfrequenz höher:
 
-- iOS: 6 Stunden lang alle 15 Minuten, danach alle 6 Stunden
+- iOS und Mac OS X: sechs Stunden lang alle 15 Minuten, danach alle sechs Stunden
 - Android: 15 Minuten lang alle 3 Minuten, danach 2 Stunden lang alle 15 Minuten, anschließend alle 8 Stunden
 - Windows Phone: 15 Minuten lang alle 5 Minuten, danach 2 Stunden lang alle 15 Minuten, anschließend alle 8 Stunden
-- Windows-PCs, die als Geräte registriert sind: 30 Minuten lang alle 3 Minuten, danach alle 24 Stunden
+- Windows-PCs, die als Geräte registriert sind: 30 Minuten lang alle drei Minuten, danach alle acht Stunden
 
 Benutzer können auch jederzeit die Unternehmensportal-App starten und das Gerät synchronisieren, um sofort auf Richtlinien zu prüfen.
 
@@ -149,7 +144,7 @@ Bei Bereitstellung mehrerer Richtlinien für denselben Benutzer oder dasselbe Ge
 
 -   Die restriktivste Kompatibilitätsrichtlinie wird angewendet, wenn sie gegen dieselbe Einstellung in einer anderen Kompatibilitätsrichtlinie ausgewertet wird
 
--   Die restriktivste Konfigurationsrichtlinie wird angewendet, wenn sie gegen dieselbe Einstellung in einer anderen Konfigurationsrichtlinie ausgewertet wird
+-   Falls eine Konfigurationsrichtlinieneinstellung im Konflikt mit einer Einstellung in einer anderen Konfigurationsrichtlinie steht, wird dieser Konflikt in der Intune-Konsole angezeigt. Konflikte dieser Art müssen Sie manuell auflösen.
 
 ### Was geschieht, wenn MAM-Richtlinien (mobile Anwendungsverwaltung) miteinander in Konflikt stehen? Welche wird auf die App angewendet?
 Konfliktwerte sind die restriktivsten Einstellungen, die in einer mobilen Anwendungsverwaltungsrichtlinie zur Verfügung stehen, außer für die Zahleneingabefelder (z. B. PIN-Versuche vor dem Zurücksetzen).  Die Zahleneingabefelder werden auf dieselben Werte gesetzt, die auch verwendet werden, wenn Sie eine MAM-Richtlinie in der Konsole mit der Option der empfohlenen Einstellungen erstellen.
@@ -178,7 +173,25 @@ Wenn Sie eine Richtlinie löschen oder ein Gerät aus einer Gruppe entfernen, f�
         - Erforderlicher Kennworttyp
         - Kennwortablauf (Tage)
         - Kennwortverlauf speichern
-        - Anzahl der zulässigen wiederholten Anmeldefehler, bevor die Gerätedaten zurückgesetzt werden – Minuten Inaktivität vor Anforderung des Kennworts – Erforderlicher Kennworttyp – Minimale Anzahl von Zeichensätzen – Kamera zulassen – Verschlüsselung auf mobilen Geräten vorschreiben – Wechselmedien zulassen – Webbrowser zulassen – Anwendungsspeicher zulassen – Bildschirmaufnahme zulassen – Geolocation zulassen – Microsoft-Konto zulassen – Kopieren und Einfügen zulassen – WLAN-Tethering zulassen – Automatische Verbindung mit freien WLAN-Hotspots zulassen – WLAN-Hotspotmeldung zulassen – Rücksetzung auf Werkseinstellungen zulassen – Bluetooth zulassen – NFC zulassen – WLAN zulassen
+        - Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird
+        - Minuten der Inaktivität, bevor ein Kennwort erforderlich ist
+        - Erforderlicher Kennworttyp – Mindestanzahl von Zeichensätzen
+        - Kamera zulassen
+        - Verschlüsselung auf mobilem Gerät anfordern
+        - Wechselspeichermedien zulassen
+        - Webbrowser zulassen
+        - App Store zulassen
+        - Bildschirmaufnahme zulassen
+        - Geolocation zulassen
+        - Microsoft-Konto zulassen
+        - Kopieren und Einfügen zulassen
+        - WLAN-Tethering zulassen
+        - Automatische Verbindung mit unverschlüsselten WLAN-Hotspots zulassen
+        - Berichterstellung für WLAN-Hotspots zulassen
+        - Zurücksetzen auf Werkseinstellungen zulassen
+        - Bluetooth zulassen
+        - NFC zulassen
+        - WLAN zulassen
     
     - **iOS**: Alle Einstellungen werden entfernt, außer:
         - Sprachroaming zulassen
@@ -200,9 +213,10 @@ Wenn Sie eine Richtlinie löschen oder ein Gerät aus einer Gruppe entfernen, f�
 
 ### Wo finde ich Hilfe zur Problembehandlung bei Richtlinien?
 
-Siehe [Behandlung von Problemen mit Richtlinien in Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune).
+Siehe [Behandlung von Problemen mit Richtlinien in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

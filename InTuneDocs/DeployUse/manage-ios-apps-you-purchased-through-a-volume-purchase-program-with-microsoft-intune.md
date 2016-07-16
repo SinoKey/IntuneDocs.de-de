@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Verwalten von iOS-Apps, die über ein Volumenprogramm erworben wurden | Microsoft Intune
-description:
-keywords:
+title: "Verwalten von iOS-Apps, die über ein Volumenprogramm erworben wurden | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
+ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+
 
 ---
 
@@ -76,20 +70,23 @@ Zum Freigeben einer Lizenz müssen Sie die Bereitstellungsaktion in **Deinstalli
 
 Wenn ein Benutzer mit einem geeigneten Gerät erstmals versucht, eine VPP-App zu installieren, wird er aufgefordert, am Programm für Volumenlizenzen (Volume Purchase Program, VPP) von Apple teilzunehmen. Die Teilnahme muss erfolgen, bevor die App-Installation fortgesetzt wird.
 
-> [!TIP] In der Spalte **VPP – Nutzungsbedingungen – Status** wird der Annahmestatus für jeden Benutzer angezeigt, dem die App bereitgestellt wurde.
+> [!TIP]
+> In der Spalte **VPP – Nutzungsbedingungen – Status** wird der Annahmestatus für jeden Benutzer angezeigt, dem die App bereitgestellt wurde.
 
 Wenn keine weiteren Lizenzen verfügbar sind, schlägt die Bereitstellung fehl.
 
 ## So überwachen Sie Apple VPP-Apps
 Sie können überwachen, welche VPP-Apps bereitgestellt wurden und wie viele Lizenzen vom Arbeitsbereich **Apps** auf dem Knoten **Verwaltete Software** &gt; **Per Volumenlizenz erworbene Apps** verwendet werden.
 
-> [!TIP] Sie können auch **Filter** für Apps verwenden, um den Status der einzelnen App-Installationen zu überprüfen.
+> [!TIP]
+> Sie können auch App-**Filter** verwenden, um den Status der einzelnen App-Installationen zu überprüfen.
 
 ### Weitere Informationen:
 [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

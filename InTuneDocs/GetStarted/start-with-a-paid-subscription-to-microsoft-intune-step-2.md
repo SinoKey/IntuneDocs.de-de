@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Konfigurieren eines benutzerdefinierten Domänennamens | Microsoft Intune
-description:
-keywords:
+title: "Konfigurieren eines benutzerdefinierten Domänennamens | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: a202f06fef0bc8b7eec730728ec10e5fbf234902
+
 
 ---
 
@@ -32,19 +26,20 @@ Standardmäßig verwendet Intune den **<domain>.onmicrosoft.com**-Domänennamen,
 
 Bevor Sie neue Benutzerkonten erstellen oder Kunden aus ihrem lokalen Active Directory synchronisieren, wird dringend empfohlen, dass Sie entscheiden, ob nur die .onmicrosoft.com-Domäne verwendet oder benutzerdefinierte Domänennamen hinzugefügt werden sollen. Das Konfigurieren einer benutzerdefinierten Domäne vor dem Hinzufügen von Benutzern kann die Verwaltung von Benutzeridentitäten für Ihr Abonnement vereinfachen, denn die Benutzer werden auf diese Weise in die Lage versetzt, sich mit den Anmeldeinformationen anzumelden, mit denen sie auch auf andere Domänenressourcen zugreifen.
 
-Wenn Sie einen cloudbasierten Dienst von Microsoft abonnieren, wird Ihre Instanz dieses Diensts zu einem Microsoft [Azure AD-Mandanten](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant). Azure AD stellt Identitäts- und Verzeichnisdienste für Ihren cloudbasierten Dienst bereit. Die Aufgaben beim Konfigurieren von Intune zum Verwenden des benutzerdefinierten Domänennamens Ihres Unternehmens sind identisch mit denen bei anderen Azure AD-Mandanten. Daher können Sie sich an den Informationen und Verfahren unter [Hinzufügen Ihrer Domäne](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/) orientieren..
+Wenn Sie einen cloudbasierten Dienst von Microsoft abonnieren, wird Ihre Instanz dieses Diensts zu einem Microsoft [Azure AD-Mandanten](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant). Azure AD stellt Identitäts- und Verzeichnisdienste für Ihren cloudbasierten Dienst bereit. Die Aufgaben beim Konfigurieren von Intune zum Verwenden des benutzerdefinierten Domänennamens Ihres Unternehmens sind identisch mit denen bei anderen Azure AD-Mandanten. Daher können Sie sich an den Informationen und Verfahren unter [Hinzufügen Ihrer Domäne](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/) orientieren.
 
 > [!TIP]
-> Weitere Informationen zum Verwenden Ihrer benutzerdefinierten Domäne mit einem cloudbasierten Dienst von Microsoft finden Sie unter [Konzeptioneller Überblick über benutzerdefinierte Domänennamen in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-concepts/)..
+> Weitere Informationen zum Verwenden Ihrer benutzerdefinierten Domäne mit einem cloudbasierten Dienst von Microsoft finden Sie unter [Konzeptioneller Überblick über benutzerdefinierte Domänennamen in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-concepts/).
 
 ### Nächste Schritte
-Gratulation! Sie haben Schritt 2 der Kurzanleitung *Erste Schritte mit Intune* abgeschlossen..
+Gratulation! Sie haben Schritt 2 der Kurzanleitung *Erste Schritte mit Intune* abgeschlossen.
 
 >[!div class="step-by-step"]
 
->[&larr; **Anmelden bei Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-1.md)     [**Hinzufügen von Benutzern zu Intune** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-3.md)  
+>[&larr;**Anmelden bei Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-1.md)     [**Hinzufügen von Benutzern zu Intune** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-3.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

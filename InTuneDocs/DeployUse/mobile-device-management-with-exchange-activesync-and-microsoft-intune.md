@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Verwaltung mobiler Geräte mit Exchange ActiveSync und Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Verwaltung mobiler Geräte mit Exchange ActiveSync und Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: nathbarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: d24395786daa7aec103ec754895868a75983e099
+
 
 ---
 
@@ -41,7 +35,7 @@ Mit dem Exchange Connector können Sie Ihre Exchange-Bereitstellung in der Intun
 -   [Konfigurieren des Intune Service to Service Connectors für gehostetes Exchange](intune-service-to-service-exchange-connector.md)
 
 ## Anwenden der Richtlinie für mobile Geräte, die mit Exchange verwaltet werden
-Richtlinieneinstellungen können über die Intune-Konsole angewendet werden. Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md). Eine Liste der Exchange ActiveSync-Richtlinieneinstellungen und -Funktionen, die von bestimmten mobilen Geräten unterstützt werden, finden Sie unter [Exchange ActiveSync Client Comparison Table](http://go.microsoft.com/fwlink/?LinkId=247270) (Vergleichstabelle der Exchange ActiveSync-Clients)..
+Richtlinieneinstellungen können über die Intune-Konsole angewendet werden. Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md). Eine Liste der Exchange ActiveSync-Richtlinieneinstellungen und -Funktionen, die von bestimmten mobilen Geräten unterstützt werden, finden Sie unter [Exchange ActiveSync Client Comparison Table](http://go.microsoft.com/fwlink/?LinkId=247270) (Vergleichstabelle der Exchange ActiveSync-Clients).
 
 > [!NOTE]
 > Nach dem Herstellen einer Verbindung zwischen Intune und einer Microsoft Exchange-Umgebung wird bei allen Benutzern, die über Intune verwaltet werden, die EAS-Richtlinie auf die aktuelle Standardrichtlinie auf dem Microsoft Exchange-Server zurückgesetzt, wenn keine spezifische Richtlinie in Intune definiert ist.
@@ -50,6 +44,7 @@ Richtlinieneinstellungen können über die Intune-Konsole angewendet werden. Wei
 Sie können [Unternehmensdaten von mobilen Geräten, die über EAS verwaltet werden, löschen](wipe-for-exchange-managed-mobile-devices.md), wenn diese nicht mehr verwendet werden oder wenn Geräte verloren gehen oder gestohlen werden.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

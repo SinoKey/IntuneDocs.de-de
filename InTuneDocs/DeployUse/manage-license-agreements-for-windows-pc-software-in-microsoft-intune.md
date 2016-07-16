@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Verwalten von Lizenzverträgen für Windows-PC-Software | Microsoft Intune
-description:
-keywords:
+title: "Verwalten von Lizenzverträgen für Windows-PC-Software | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: 575b8525b8b99d06358a911b8deb24ee5de48fe1
+
 
 ---
 
@@ -45,7 +39,8 @@ Im Arbeitsbereich **Lizenzen** der Intune-Verwaltungskonsole können Sie folgend
 
 Darüber hinaus können Sie Berichte zur Zahl der Installationen und Lizenzen für Softwaretitel erstellen. Mit Lizenzberichten können Sie Ihren gesamten Lizenzierungsstand für Microsoft- und Nicht-Microsoft-Softwaretitel beurteilen.
 
-> [!TIP] Der Arbeitsbereich **Lizenzen** wird erst dann in der Verwaltungskonsole angezeigt, wenn Sie mindestens einen Windows-PC mit dem Intune Windows PC-Client verwalten.
+> [!TIP]
+> Der Arbeitsbereich **Lizenzen** wird erst dann in der Administratorkonsole angezeigt, wenn Sie mindestens einen Windows-PC mit dem Intune Windows PC-Client verwalten.
 
 ## Hinzufügen von Microsoft-Volumenlizenzverträgen
 In Intune-Volumenlizenzverträgen werden Lizenzinformationen für Software bereitgestellt, die über Microsoft-Volumenlizenzverträge erworben wurde. Sie können Intune Microsoft-Volumenlizenzverträge hinzufügen, indem Sie passende Paare von Vertragsnummern angeben. Die Vertrags- oder Autorisierungsnummern müssen der richtigen Lizenz- oder Registrierungsnummer zugeordnet werden. Vertragsnummernpaare erhalten Sie vom [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842), wenn Sie Lizenzverträge erwerben.
@@ -96,7 +91,8 @@ In Intune-Volumenlizenzverträgen werden Lizenzinformationen für Software berei
 
         -   **Lizenz-/Registrierungs-/Kundennummer:** Geben Sie die Lizenz-/Registrierungs-/Kundennummer des Lizenzpaars ein.
 
-        > [!NOTE] Wenn Sie mehrere Vertragsnummernpaare hinzufügen, wird von Intune ein Vertrag mit dem Namen, den Sie angeben, erstellt, und alle Paare, die Sie hinzugefügt haben, werden Teil dieses Vertrags.
+        > [!NOTE]
+        > Wenn Sie mehrere Vertragsnummernpaare hinzufügen, wird von Intune ein Vertrag mit dem Namen, den Sie angeben, erstellt, und alle Paare, die Sie hinzugefügt haben, werden Teil dieses Vertrags.
 
     Klicken Sie auf **+**, um ein weiteres Vertragsnummernpaar hinzuzufügen, bzw. auf **-**, um ein bereits eingegebenes Vertragsnummernpaar zu entfernen.
 
@@ -114,7 +110,8 @@ Die Ansicht **Alle Verträge** wird angezeigt, und Intune stellt eine Verbindung
 
 Zum Aktualisieren der Volumenlizenzinformationen nach dem Hinzufügen von Lizenzverträgen in Intune klicken Sie auf der Seite **Übersicht über Lizenzen** auf **Jetzt aktualisieren**. Auf diese Weise werden die aktuellen Lizenzinformationen vom [Microsoft Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842)abgerufen.
 
-> [!IMPORTANT] Bis zur Aktualisierung der Volumenlizenzinformationen stimmen die Daten in der Vertragsliste möglicherweise nicht mit den Berechtigungsinformationen auf der Seite **Vertragsübersicht** überein.
+> [!IMPORTANT]
+> Bis zur Aktualisierung der Volumenlizenzinformationen stimmen die Daten in der Vertragsliste möglicherweise nicht mit den Berechtigungsinformationen auf der Seite **Vertragsübersicht** überein
 
 Nach dem Aktualisieren der Volumenlizenzinformationen können Sie die Lizenzinformationen mit Ihrer erkannten Microsoft-Software im Arbeitsbereich **Apps** vergleichen. Sie können zudem die folgenden Lizenzberichte ausführen:
 
@@ -122,7 +119,8 @@ Nach dem Aktualisieren der Volumenlizenzinformationen können Sie die Lizenzinfo
 
 -   **Lizenzinstallationsberichte:** Anhand dieser Berichte lässt sich ermitteln, ob Sie über ausreichend Lizenzverträge verfügen.
 
-> [!NOTE] Als **Produkttitel** wird für alle Microsoft-Volumenlizenzverträge **Nicht verfügbar** angezeigt.
+> [!NOTE]
+> Als **Produkttitel** wird für alle Microsoft-Volumenlizenzverträge **Nicht verfügbar**angezeigt.
 
 ## Hinzufügen und Bearbeiten anderer Softwarelizenzverträge
 Außerdem können Sie zusätzlich zu Microsoft-Volumenlizenzverträgen weitere Typen von Lizenzverträgen zu Intune hinzufügen. Diese Verträge können sowohl Software einschließen, die nicht von Microsoft stammt, als auch Software, die von Microsoft stammt und über einen Händler erworben wurde.
@@ -184,6 +182,7 @@ Softwarelizenzverträge können zu Lizenzgruppen hinzugefügt werden. Sie könne
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

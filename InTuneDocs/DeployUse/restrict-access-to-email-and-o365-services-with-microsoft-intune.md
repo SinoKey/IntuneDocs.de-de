@@ -1,31 +1,24 @@
 ---
-# required metadata
-
-title: Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste | Microsoft Intune
-description:
-keywords:
+title: "Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
+ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+
 
 ---
 
-# Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste mit Microsoft Intune
+# Beschränken des Zugriffs auf E-Mail, O365 und andere Dienste mit Microsoft Intune
 Sie können den Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens mithilfe des bedingten Zugriffs in Intune beschränken. Mithilfe der Intune-Funktion für den bedingten Zugriff können Sie sicherstellen, dass der Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens auf Geräte beschränkt ist, die den von Ihnen festgelegten Regeln entsprechen.
 ## Funktionsweise des bedingten Zugriffs
 Zur Bewertung der Gerätekompatibilität werden Einstellungen für Kompatibilitätsrichtlinien verwendet. Die Richtlinie für bedingten Zugriff verwendet diese Bewertung, um den Zugriff auf einen bestimmten Dienst zuzulassen oder zu beschränken. Wenn eine Richtlinie für bedingten Zugriff in Kombination mit einer Kompatibilitätsrichtlinie verwendet wird, erhalten nur kompatible Geräte Zugriff auf den Dienst.
@@ -37,7 +30,7 @@ Wenn Geräte die in den Richtlinien festgelegten Bedingungen nicht erfüllen, er
 
 Ein typischer Ablauf des bedingten Zugriffs:
 
-![Diagramm zur Veranschaulichung der Entscheidungspunkte, mit denen ermittelt wird, ob ein Gerät Zugriff auf einen Dienst erhält oder blockiert wird](./media/ConditionalAccess4.png)
+![Das Diagramm veranschaulicht die Entscheidungspunkte, mit denen ermittelt wird, ob ein Gerät Zugriff auf einen Dienst erhält oder blockiert wird](../media/ConditionalAccess4.png)
 
 ## So konfigurieren Sie den bedingten Zugriff
 Verwenden Sie den bedingten Zugriff zur Verwaltung des Zugriffs auf Microsoft **Exchange lokal**, **Exchange Online**, **Exchange Online Dedicated**, **SharePoint Online** und **Skype for Business Online**.
@@ -67,8 +60,10 @@ Im Gegensatz zu anderen Intune-Richtlinien stellen Sie Richtlinien für bedingte
   - [Bedingte Zugriffsrichtlinie für Exchange Online Dedicated (älter) erstellen](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [Bedingte Zugriffsrichtlinie für SharePoint Online erstellen](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Bedingte Zugriffsrichtlinie für Skype for Business erstellen](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+  - [Erstellen bedingter Zugriffsrichtlinie für Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

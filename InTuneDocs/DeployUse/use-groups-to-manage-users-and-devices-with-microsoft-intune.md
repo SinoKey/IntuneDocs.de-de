@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Verwenden von Gruppen zum Verwalten von Benutzern und Geräten | Microsoft Intune
-description:
-keywords:
+title: "Verwenden von Gruppen zum Verwalten von Benutzern und Geräten | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cc64e51499908d08823429871cda91dfb0078b1e
+ms.openlocfilehash: a1f6dfc7629481403c40a1ce927b588f67e5fa74
+
 
 ---
 
@@ -43,16 +37,16 @@ Darüber hinaus werden in der Gruppenhierarchie Statusübersichten angezeigt, da
 >
 > Vermutlich ist es ratsam, eine Standardrichtlinie zu erstellen, die für alle Gruppen und Geräte gilt, um die grundlegenden Compliance-Anforderungen Ihres Unternehmens zu erfüllen. Erstellen Sie anschließend spezifischere Richtlinien für die allgemeinsten Kategorien von Benutzern und Geräten, z. B. E-Mail-Richtlinien für jedes der Gerätebetriebssysteme.
 >
-> Benennen Sie die Richtlinien so, dass Sie diese später problemlos erkennen können. Ein guter, beschreibender Richtlinienname ist beispielsweise **WP-E-Mail-Richtlinie für das gesamte Unternehmen**..
+> Benennen Sie die Richtlinien so, dass Sie diese später problemlos erkennen können. Ein guter, beschreibender Richtlinienname ist beispielsweise **WP-E-Mail-Richtlinie für das gesamte Unternehmen**.
 >
 > Wenn Sie restriktive Richtlinien erstellen, sollten Sie diese Ihren Benutzern mitteilen. Achten Sie daher nach dem Erstellen der allgemeineren Gruppen und Richtlinien darauf, wie Sie kleinere Gruppen erstellen, um eine unnötige Kommunikation zu vermeiden.
 
 
 ## Erstellen einer Gerätegruppe
 
-1.  Klicken Sie in der Intune-Verwaltungskonsole auf **Gruppen** &gt; **Übersicht** &gt; **Gruppe erstellen**..
+1.  Wählen Sie in der Intune-Verwaltungskonsole **Gruppen** &gt; **Übersicht** &gt; **Gruppe erstellen** aus.
 
-2.  Geben Sie einen Namen und wahlweise eine Beschreibung für die Gruppe an, und wählen Sie eine Gerätegruppe als übergeordnete Gruppe aus. Klicken Sie auf **Weiter**..
+2.  Geben Sie einen Namen und wahlweise eine Beschreibung für die Gruppe an, und wählen Sie eine Gerätegruppe als übergeordnete Gruppe aus. Klicken Sie auf **Weiter**.
 
 3.  Wählen Sie auf der Seite **Mitgliedschaftskriterien definieren** den Gerätetyp aus, den die Gruppe enthalten wird. Zusätzliche Optionen zum Konfigurieren der Gruppe hängen vom ausgewählten Gerätetyp ab:
 
@@ -65,15 +59,15 @@ Darüber hinaus werden in der Gruppenhierarchie Statusübersichten angezeigt, da
 4.  Schließen Sie auf der Seite **Direkte Mitgliedschaft definieren** einzelne Geräte ein oder aus, die Sie angeben, indem Sie auf **Durchsuchen**klicken. Wenn Sie die Option zum Auswählen von Geräten verwenden, die nicht in der angegebenen übergeordneten Gruppe enthalten sind, werden diese Geräte der übergeordneten Gruppe automatisch hinzugefügt.
 
 
-5.  Überprüfen Sie auf der Seite **Zusammenfassung** die Aktionen, die ausgeführt werden sollen. Klicken Sie auf **Fertig stellen**..
+5.  Überprüfen Sie auf der Seite **Zusammenfassung** die Aktionen, die ausgeführt werden sollen. Klicken Sie auf **Fertig stellen**.
 
 Sie finden die neue Gruppe im Arbeitsbereich **Gruppen** unter der übergeordneten Gruppe in der Liste **Gruppen**. Hier können Sie die Gruppe auch bearbeiten oder löschen.
 
 ## Erstellen einer Benutzergruppe
 
-1.  Klicken Sie in der Intune-Verwaltungskonsole auf **Gruppen** &gt; **Übersicht** &gt; **Gruppe erstellen**..
+1.  Wählen Sie in der Intune-Verwaltungskonsole **Gruppen** &gt; **Übersicht** &gt; **Gruppe erstellen** aus.
 
-2.  Geben Sie einen Namen und wahlweise eine Beschreibung für die Gruppe an, und wählen Sie eine Benutzergruppe als übergeordnete Gruppe aus. Klicken Sie auf **Weiter**..
+2.  Geben Sie einen Namen und wahlweise eine Beschreibung für die Gruppe an, und wählen Sie eine Benutzergruppe als übergeordnete Gruppe aus. Klicken Sie auf **Weiter**.
 
 3.  Geben Sie auf der Seite **Mitgliedschaftskriterien definieren** an, ob alle Mitglieder der übergeordneten Gruppe eingeschlossen werden sollen oder ob mit einer leeren Gruppe begonnen werden soll.  Sie können dann Mitglieder auf Basis der **Sicherheitsgruppen** ein- oder ausschließen, welche manuell im [Office 365 Admin Center](http://go.microsoft.com/fwlink/?LinkId=698854) konfiguriert oder vom lokalen Active Directory synchronisiert werden. Wenn sich die Mitgliedschaft bei einer Sicherheitsgruppe ändert, können sich auch Mitgliedschaften bei Benutzergruppen auf Basis dieser Sicherheitsgruppe ändern.
 
@@ -81,13 +75,13 @@ Sie finden die neue Gruppe im Arbeitsbereich **Gruppen** unter der übergeordnet
     > Derzeit werden, wenn Ihre Gruppe Mitglieder aus bestimmten Sicherheits- oder Vorgesetztengruppen einschließt und Sie außerdem Mitglieder aus bestimmten Gruppen ausschließen, die Mitglieder, die Sie ursprünglich aufgenommen hatten, entfernt. Um eine Gruppe zu erstellen, die sowohl eingeschlossene als auch ausgeschlossene Mitglieder enthält, empfehlen wir, zuerst eine übergeordnete Gruppe mit den eingeschlossenen Mitgliedern zu erstellen und dann eine dieser Gruppe untergeordnete Gruppe zu erstellen, in der Sie die ausgeschlossenen Mitglieder auflisten. Sie können dann diese untergeordnete Gruppe nach Bedarf für Intune-Richtlinien, -Profile und -App-Verteilung verwenden.
 
     > [!NOTE]
-    > Im Azure-Verwaltungsportal können Sie eine Gruppe auf Grundlage des Vorgesetzten erstellen, dem die Benutzer unterstellt sind. Die Gruppe ist dynamisch und ändert sich mit dem Hinzufügen oder Entfernen von Mitarbeitern im Team dieses Vorgesetzten in Azure Active Directory. Das Verfahren zum Erstellen einer Azure-Gruppe auf Grundlage eines Vorgesetzten wird unter [Verwenden von Attributen zum Erstellen erweiterter Regeln](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) im Abschnitt **So konfigurieren Sie eine Gruppe als „Vorgesetzten“-Gruppe** beschrieben..
+    > Im Azure-Verwaltungsportal können Sie eine Gruppe auf Grundlage des Vorgesetzten erstellen, dem die Benutzer unterstellt sind. Die Gruppe ist dynamisch und ändert sich mit dem Hinzufügen oder Entfernen von Mitarbeitern im Team dieses Vorgesetzten in Azure Active Directory. Das Verfahren zum Erstellen einer Azure-Gruppe auf Grundlage eines Vorgesetzten wird unter [Verwenden von Attributen zum Erstellen erweiterter Regeln](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) im Abschnitt **So konfigurieren Sie eine Gruppe als „Vorgesetzten“-Gruppe** beschrieben.
 
 
 4.  Schließen Sie auf der Seite **Direkte Mitgliedschaft definieren** einzelne Benutzer ein oder aus, die Sie angeben, indem Sie auf **Durchsuchen**klicken. Wenn Sie die Option zum Auswählen von Benutzern verwenden, die nicht in der angegebenen übergeordneten Gruppe enthalten sind, werden diese Benutzer der übergeordneten Gruppe automatisch hinzugefügt. Unten im Dialogfeld **Mitglieder auswählen** finden Sie eine Option zum manuellen Hinzufügen eines Benutzers. Dies ist hilfreich, wenn Sie einen Benutzer hinzufügen möchten, der noch nicht über ein registriertes Gerät verfügt.
 
 
-5.  Überprüfen Sie auf der Seite **Zusammenfassung** die Aktionen, die ausgeführt werden sollen. Klicken Sie auf **Fertig stellen**..
+5.  Überprüfen Sie auf der Seite **Zusammenfassung** die Aktionen, die ausgeführt werden sollen. Klicken Sie auf **Fertig stellen**.
 
 Sie finden die neue Gruppe im Arbeitsbereich **Gruppen** unter der übergeordneten Gruppe in der Liste **Gruppen**. Hier können Sie die Gruppe auch bearbeiten oder löschen.
 
@@ -101,7 +95,7 @@ Mithilfe von gefilterten Gruppenansichten können Sie die Ansichten anpassen, di
 
 -   Jedem IT-Administrator sollen nur relevante Gruppen angezeigt werden.
 
-Sie können gefilterte Gruppenansichten für Dienstadministratoren in der Intune-Verwaltungskonsole konfigurieren. Weitere Informationen finden Sie unter [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](/intune/get-started/what-to-know-before-you-start-microsoft-intune)..
+Sie können gefilterte Gruppenansichten für Dienstadministratoren in der Intune-Verwaltungskonsole konfigurieren. Weitere Informationen finden Sie unter [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](/intune/get-started/what-to-know-before-you-start-microsoft-intune).
 
 Nach dem Konfigurieren von gefilterten Gruppenansichten für einen Dienstadministrator hat der betreffende Administrator folgende Möglichkeiten:
 
@@ -123,11 +117,11 @@ Nach dem Konfigurieren von gefilterten Gruppenansichten für einen Dienstadminis
 
 ### Konfigurieren von gefilterten Gruppenansichten
 
-1.  Klicken Sie in der Intune-Verwaltungskonsole auf **Verwaltung** &gt; **Administratorverwaltung** &gt; **Dienstadministratoren**..
+1.  Wählen Sie in der Intune-Verwaltungskonsole **Admin** &gt; **Administratorverwaltung** &gt; **Dienstadministratoren** aus.
 
-2.  Wählen Sie den Dienstadministrator aus, für den die Gruppen gefiltert werden sollen, und klicken Sie auf **Gruppen verwalten**..
+2.  Wählen Sie den Dienstadministrator aus, für den die Gruppen gefiltert werden sollen, und klicken Sie auf **Gruppen verwalten**.
 
-3.  Fügen Sie im Dialogfeld **Gruppen auswählen, die für diesen Dienstadministrator sichtbar sind** die Gruppen hinzu, auf die der ausgewählte Dienstadministrator zugreifen darf, und klicken Sie dann auf **OK**..
+3.  Fügen Sie im Dialogfeld **Wählen Sie die Gruppen, die diesem Dienstadministrator angezeigt werden** die Gruppen hinzu, auf die der ausgewählte Dienstadministrator zugreifen darf, und klicken Sie dann auf **OK**.
 
 Nach der Konfiguration der gefilterten Gruppenansichten können IT-Administrator nur die Gruppen anzeigen und auswählen, die Sie ausgewählt haben.
 
@@ -141,7 +135,7 @@ Sie können eine Gruppe löschen, die keinen Nutzen mehr für Ihre Organisation 
 ## Nächste Schritte
 
 ### Überprüfen des Entwurfs
-Nachdem Sie die Gruppen und Richtlinien konfiguriert haben, überprüfen Sie die praktischen Auswirkungen dieses Entwurfs. Dazu prüfen Sie die Angaben für **Vorgesehener Wert** und **Status**..
+Nachdem Sie Ihre Gruppen und Richtlinien konfiguriert haben, überprüfen Sie die praktischen Auswirkungen dieses Entwurfs. Dazu prüfen Sie die Angaben für **Vorgesehener Wert** und **Status**.
 
 1. Wählen Sie ein Gerät aus einer Gerätegruppe aus, und navigieren Sie durch die Informationskategorien am oberen Bildschirmrand.
 2. Wählen Sie **Richtlinie** . Sie sehen in etwa diesen Screenshot mit den Richtlinieneinstellungen eines Android-Geräts.
@@ -158,6 +152,7 @@ Jede Richtlinie verfügt über einen **vorgesehenen Wert** und einen **Status**.
 > Denken Sie daran: Wenn zwei Richtlinien mit unterschiedlichen Einschränkungsstufen für das gleiche Gerät gelten, wird in der Praxis die restriktivere Richtlinie angewendet.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

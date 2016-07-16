@@ -1,47 +1,40 @@
 ---
-# required metadata
-
 title: Archiv der Neuheiten | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Lindavr
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 051d06afb0f29f2a97c1f06dc1102138e5f2be8f
+
 
 ---
 
 
 ## September 2015
 ### Updates für die Verwaltung von mobilen Geräten und Apps
-**Alle Intune iOS-Verwaltungsfeatures unterstützen jetzt iOS 9**
-Ausführliche Informationen zu den iOS 9-Verwaltungsfunktionen finden Sie in diesem [Blogbeitrag](http://blogs.technet.com/b/microsoftintune/archive/2015/09/09/day-zero-support-for-ios-9-with-intune.aspx)..
+**Alle Intune-Verwaltungsfunktionen für iOS unterstützen jetzt iOS 9** Ausführliche Informationen zu den iOS 9-Verwaltungsfunktionen finden Sie in [diesem Blogbeitrag](http://blogs.technet.com/b/microsoftintune/archive/2015/09/09/day-zero-support-for-ios-9-with-intune.aspx).
 
-**Neue Konfigurationsrichtlinie für iOS für mobile Apps**
-Mithilfe der neuen Konfigurationsrichtlinie für mobile Apps können Sie automatisch Einstellungen bereitstellen, die eine iOS-App bei der Ausführung möglicherweise benötigt. So könnten Sie beispielsweise einen Netzwerkport oder einen Benutzernamen bereitstellen. Weitere Informationen finden Sie unter [Konfigurieren von Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune](https://technet.microsoft.com/library/mt481447.aspx)..
+**Neue Konfigurationsrichtlinie für mobile Apps für iOS** Verwenden Sie die neue Konfigurationsrichtlinie für mobile Apps, um automatisch die Einstellungen bereitzustellen, die eine iOS-App bei der Ausführung möglicherweise benötigt. So könnten Sie beispielsweise einen Netzwerkport oder einen Benutzernamen bereitstellen. Weitere Informationen finden Sie unter [Konfigurieren von Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune](https://technet.microsoft.com/library/mt481447.aspx).
 
 **Einfachere App-Verwaltung für iOS 9-Benutzer**
- In dieser Version können Sie bereits bereitgestellte Apps für iOS 9-Benutzer unter die Verwaltung von Intune bringen. Wenn Sie bei früheren Versionen von iOS eine App bereitstellen und eine nicht verwaltete Version der App bereits auf einem Gerät installiert ist, müssen Sie den Benutzer nach wie vor bitten, die App manuell zu deinstallieren, bevor Intune die verwaltete App installieren kann.
+ In diesem Release können Sie bereits bereitgestellte Apps für iOS 9-Benutzer in die Intune-Verwaltung integrieren. Wenn Sie bei früheren Versionen von iOS eine App bereitstellen und eine nicht verwaltete Version der App bereits auf einem Gerät installiert ist, müssen Sie den Benutzer nach wie vor bitten, die App manuell zu deinstallieren, bevor Intune die verwaltete App installieren kann.
 
  Aber beginnend mit dieser Version von Intune können Sie Benutzer von iOS 9-Geräten jetzt auffordern, Intune die Verwaltung der App und die Anwendung aller relevanten Verwaltungsrichtlinien für mobile Anwendungen zu erlauben.
 
  **Windows 10-Verwaltung** Verwenden Sie die neue [allgemeine Windows 10-Konfigurationsrichtlinie](https://technet.microsoft.com/library/mt404697.aspx), um die Kennwort-, Geräte-, Browser- und sonstigen Einstellungen für registrierte Geräte, auf denen Windows 10 und Windows 10 Mobile ausgeführt wird, zu konfigurieren.
 
- **Erstellen und Bereitstellen von Apps auf registrierten Windows 10-Geräten** Dank eines neuen Softwareinstallationsprogramm-Typs, Windows Installer über MDM (&#42;.msi), können Sie Windows Installer-Apps für registrierte Geräte, auf denen Windows 10 ausgeführt wird, erstellen und darauf bereitstellen. Weitere Informationen finden Sie unter [Erste Schritte bei der Bereitstellung von Apps in Microsoft Intune](https://technet.microsoft.com/library/dn646955.aspx)..
+ **Erstellen und Bereitstellen von Apps auf registrierten Windows 10-Geräten** Dank eines neuen Softwareinstallationsprogramm-Typs, Windows Installer über MDM (&#42;.msi), können Sie Windows Installer-Apps für registrierte Geräte, auf denen Windows 10 ausgeführt wird, erstellen und darauf bereitstellen. Weitere Informationen finden Sie unter [Erste Schritte bei der Bereitstellung von Apps in Microsoft Intune](https://technet.microsoft.com/library/dn646955.aspx).
 
 ### Änderungen und Updates für die Unternehmensportal-Apps von Microsoft
 In dieser Version wurden die folgenden Änderungen an den Unternehmensportal-Apps vorgenommen:
@@ -68,10 +61,10 @@ In dieser Version wurden die folgenden Änderungen an den Unternehmensportal-App
 ## August 2015
 ### Updates für die Verwaltung von mobilen Geräten und Apps
 * **Geschäftsbedingungen** für die Intune-Registrierung und den Unternehmenszugriff werden [jetzt mithilfe von Richtlinien verwaltet](https://technet.microsoft.com/library/mt405893.aspx). Sie können verschiedene Sätze von Geschäftsbedingungen bereitstellen, um die Anforderungen bestimmter Benutzergruppen zu erfüllen. Beispielsweise können Sie Geschäftsbedingungen in verschiedenen Sprachen für geografisch definierte Benutzergruppen bereitstellen. Sie können auch [Ihre Geschäftsbedingungen bearbeiten](https://technet.microsoft.com/library/mt405893.aspx#BKMK_TCVers) und angeben, ob die Versionsnummern erhöht werden sollen, sodass Benutzer den neuen Geschäftsbedingungen zustimmen müssen, bevor sie das Unternehmensportal verwenden können.
-* **Eine Reihe von Intune-Richtlinien wurde umbenannt** , um die Konsistenz im gesamten Produkt zu erhöhen und sie leichter auffindbar zu machen. Eine Liste aller verfügbaren Intune-Richtlinien finden Sie unter [Verwenden von Richtlinien zum Verwalten von Computern und mobilen Geräten mit Microsoft Intune](https://technet.microsoft.com/library/dn743712.aspx)..
+* **Eine Reihe von Intune-Richtlinien wurde umbenannt** , um die Konsistenz im gesamten Produkt zu erhöhen und sie leichter auffindbar zu machen. Eine Liste aller verfügbaren Intune-Richtlinien finden Sie unter [Verwenden von Richtlinien zum Verwalten von Computern und mobilen Geräten mit Microsoft Intune](https://technet.microsoft.com/library/dn743712.aspx).
 * **Zertifikatprofile vom Typ „PKCS #12 (.PFX)“** sind für Android 4.0 oder höher und Windows 10 (Desktop und mobil) und höher erhältlich. Für die Verwendung von PFX ist kein NDES-Server erforderlich. Weitere Informationen zum Verwenden von PFX-Zertifikatprofilen finden Sie unter [Aktivieren des Zugriffs auf Unternehmensressourcen mithilfe von Zertifikatprofilen mit Microsoft Intune](http://technet.microsoft.com/library/dn818904.aspx).
 * **Einstellungen für Unternehmensgrenzen für Windows 10 Desktop und Mobile** ermöglichen differenzierte VPN-Einstellungen, wie unter [Unterstützen von Benutzern beim Verbinden mit ihrer Arbeit über VPN-Profile in Microsoft Intune](https://technet.microsoft.com/library/dn818905.aspx) beschrieben.
-* **Die OneDrive-App für Android unterstützt jetzt mehrere Identitäten.** Diese und weitere Aktualisierungen an den Verwaltungsrichtlinien für mobile Apps werden in der [Liste der Microsoft-Anwendungen, die verwaltet werden können](https://technet.microsoft.com/library/dn708489.aspx), beschrieben..
+* **Die OneDrive-App für Android unterstützt jetzt mehrere Identitäten.** Dieses und weitere Aktualisierungen an den Verwaltungsrichtlinien für mobile Apps werden in der [Liste der Microsoft-Anwendungen, die verwaltet werden können](https://technet.microsoft.com/library/dn708489.aspx), beschrieben.
 * **Umgehung der iOS-Aktivierungssperre** Wenn firmeneigene iOS-Geräte durch eine Aktivierungssperre geschützt sind, müssen Sie vor dem Löschen oder erneuten Aktivieren des Geräts die Apple-ID und das zugehörige Kennwort des Benutzers eingeben. Dies kann ein Problem darstellen, wenn Benutzer das Unternehmen verlassen und ein firmeneigenes Gerät ohne deaktivierte Aktivierungssperre zurückgeben. Sie können die [Intune-Umgehung der Aktivierungssperre](https://technet.microsoft.com/library/mt414176.aspx) verwenden, um dieses Problem zu beheben.
 
 ### Bedingter Zugriff für PCs
@@ -115,6 +108,7 @@ The following changes have been made to the company portal apps in this release.
 Microsoft automatically collects anonymous data about the performance and use of the company portal to improve Microsoft products and services. End users can turn off data collection by using the Usage Data setting on their device, but administrators have no control over the data collection and cannot change the end user’s selection for this setting.--->
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

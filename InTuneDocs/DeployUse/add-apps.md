@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Hinzufügen von Apps | Microsoft Intune
-description:
-keywords:
+title: "Hinzufügen von Apps | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f85e91b985d9d30c71dff9e0d910293354fc40b7
+ms.openlocfilehash: 119a795697feb0cdbc2b93293cd66df7e77147cf
+
 
 ---
 
@@ -83,6 +76,32 @@ Auf externen Links basierende Apps werden nicht in Ihrem Intune-Cloudspeicher ge
 Sie können kostenlose iOS-Apps aus dem App Store verwalten und bereitstellen. Sie können auch [Richtlinien für die Verwaltung mobiler Anwendungen](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) mit [kompatiblen Apps](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) verknüpfen und ihren Status in der Administratorkonsole überprüfen.<br /><br />Verwaltete iOS-Apps werden nicht in Ihrem Intune-Cloudspeicher gespeichert.
 > [!TIP] Optionen für mobile Geräte sind nicht verfügbar, bis Sie die [Verwaltungsautorität für mobile Geräte](get-ready-to-enroll-devices-in-microsoft-intune.md) auf Intune festgelegt haben.
 
+## Der Intune-Softwareherausgeber
+Der **Microsoft Intune-Softwareherausgeber** wird gestartet, wenn Sie in der Microsoft Intune-Administratorkonsole Apps hinzufügen oder ändern. Im Herausgeber wählen Sie einen Software-Installationsprogrammtyp aus und konfigurieren ihn, der zum Hochladen von Apps (Programme für Computer oder Apps für mobile Geräte) für die Speicherung im Intune-Cloudspeicher oder zum Bereitstellen eines Links zu einem Onlineshop bzw.einer Webanwendung dient.
+
+### Anforderungen
+Bevor Sie mit der Verwendung des Microsoft Intune -Softwareherausgebers beginnen, müssen Sie die Vollversion von [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851) installieren. Nach der Installation müssen Sie möglicherweise den Computer neu starten, damit der Softwareherausgeber ordnungsgemäß geöffnet wird.
+
+## Cloudspeicherplatz
+Alle Apps, die Sie mithilfe des Software-Installationsprogrammtyps erstellen (beispielsweise eine branchenspezifische App), werden verpackt und in den Microsoft Intune-Cloudspeicher hochgeladen. Ein Testabonnement von Intune enthält 2 GB cloudbasierten Speicher, der zum Speichern von verwalteten Apps und Updates verwendet wird. Ein kostenpflichtiges Abonnement umfasst 20 GB und bietet die Option zum Erwerb von weiterem Speicher.
+
+Sie können sehen, wie viel Speicherplatz Sie verwenden, und weiteren Speicher im Knoten **Speichernutzung** des **Administrator**-Arbeitsbereichs kaufen.
+
+Diese Regeln gelten für den Kauf von zusätzlichem Cloudspeicherplatz für Intune:
+
+-   Sie benötigen ein aktives kostenpflichtiges Abonnement, um zusätzlichen Speicherplatz zu kaufen.
+
+-   Nur Rechnungsadministratoren oder globale Administratoren für Ihren Microsoft Online Service können zusätzlichen Speicher über das Office 365-Verwaltungsportal erwerben. Um diese Administratoren hinzuzufügen, zu löschen oder zu verwalten, müssen Sie ein globaler Administrator und beim Office 365-Verwaltungsportal angemeldet sein.
+
+-   Volumenlizenzkunden, die Intune oder das Microsoft Intune-Add-On über ein Enterprise Agreement gekauft haben, erhalten Preisinformationen und zusätzlichen Speicherplatz beim zuständigen Microsoft-Kundenbetreuer oder Microsoft-Partner.
+
+#### Anforderungen für Cloudspeicherplatz
+
+-   Stellen Sie sicher, dass sich alle App-Installationsdateien im selben Ordner befinden.
+
+-   Die maximale Dateigröße für hochgeladene Dateien beträgt 2 GB.
+
+
 ## Unterstützung für UWP-Apps (Universelle Windows-Plattform)
 Windows 10-PCs erfordern keinen Sideload-Schlüssel für die Installation von branchenspezifischen Apps. Allerdings muss der Registrierungsschlüssel **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** den Wert **1** haben, um das Querladen zu aktivieren.
 
@@ -96,6 +115,8 @@ Auf Windows 10 Mobile-Geräten können Sie ein nicht von Symantec stammendes Cod
 
 Als Nächstes müssen Sie Apps in der Intune-Konsole hinzufügen, bevor Sie sie bereitstellen können. Sie können Apps für [registrierte Geräte](add-apps-for-mobile-devices-in-microsoft-intune.md) oder für [Windows-PCs hinzufügen, die Sie mit der Intune-Clientsoftware verwalten](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jun16_HO3-->
 
 

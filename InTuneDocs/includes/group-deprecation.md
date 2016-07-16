@@ -6,6 +6,6 @@
 >Die Zuweisung neuer dynamischer Gerätegruppen kann in Azure Active Directory basierend auf dem Namen des Unternehmensregistrierungsprofils definiert werden. Mit diesem Vorgang wird sichergestellt, dass Geräte, die vorab einer Gerätegruppe zugewiesen wurden, automatisch mit bereitgestellter Richtlinie und bereitgestellten Apps in der Gruppe registriert werden. Weitere Einzelheiten werden in Kürze veröffentlicht.
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 

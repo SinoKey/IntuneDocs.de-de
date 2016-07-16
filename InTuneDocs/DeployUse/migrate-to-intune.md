@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Migrieren zu Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 20394c243b9355cd3f4e30f170dfd00d10e1153f
+
 
 ---
 
@@ -34,7 +27,7 @@ Die Migration aus einer vorhandenen Enterprise Mobility-Verwaltungslösung zu In
 
 ## Benachrichtigen der Benutzer
 
-Wenn Sie sicher sind, dass die Intune-Pilotbereitstellung Ihre Anforderungen erfüllt, informieren Sie die Benutzer über die anstehende Migration ihrer Geräte zu Intune. Mithilfe von E-Mail-Nachrichten, [Anweisungen](http://www.microsoft.com/en-us/download/details.aspx?id=46398), und [Postern](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) können Sie Erwartungen formulieren und Benutzern Registrierungsdetails zu den erforderlichen Schritten zur Verfügung stellen, um eine unterbrechungsfreie Verbindung mit Unternehmensressourcen und Anwendungen sicherzustellen. Vergewissern Sie sich, dass Ihr Supportteam zur Unterstützung der Benutzer während der Migration bereit ist.
+Wenn Sie sicher sind, dass die Intune-Pilotbereitstellung Ihre Anforderungen erfüllt, informieren Sie die Benutzer über die anstehende Migration ihrer Geräte zu Intune. E-Mail-Nachrichten, Anweisungen, und [Poster](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) können bei der Formulierung von Erwartungen helfen und die Registrierungsdetails für die Schritte bieten, die die Benutzer ausführen müssen, um eine unterbrechungsfreie Konnektivität mit Unternehmensressourcen und -anwendungen sicherzustellen. Vergewissern Sie sich, dass Ihr Supportteam zur Unterstützung der Benutzer während der Migration bereit ist.
 
 ## Ändern Ihrer vorhandenen Enterprise Mobility-Verwaltungslösung
 
@@ -75,9 +68,10 @@ Benötigen Sie zusätzliche Hilfe bei der Migration zu Intune? Wir bieten Option
 
 ## Abrufen einer herunterladbaren Version dieses Handbuchs
 
-Aus der [TechNet Gallery](https://gallery.technet.microsoft.com/Migrating-to-Intune-ea439387) können Sie den vollständigen Leitfaden herunterladen..
+Eine herunterladbare Kopie dieses Artikels finden Sie in der [TechNet Gallery](https://gallery.technet.microsoft.com/Migrating-to-Intune-ea439387).
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO2-->
 
 

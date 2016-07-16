@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Beschränken des E-Mail-Zugriffs auf lokales Exchange und ältere Exchange Online Dedicated-Umgebungen | Microsoft Intune
-description:
-keywords:
+title: "Beschränken des E-Mail-Zugriffs auf lokales Exchange und ältere Exchange Online Dedicated-Umgebungen | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 6bc85a0291fa62069ba6a0f63fdd9306db3c4195
+
 
 ---
 
@@ -75,7 +69,8 @@ Das folgende Diagramm veranschaulicht den Ablauf, der von den Richtlinien für b
 -   Systemeigene E-Mail-App unter iOS.
 
 -   Systemeigene E-Mail-App unter Android 4 oder höher
-> [!NOTE] Microsoft Outlook-App unter Android und iOS wird nicht unterstützt.
+> [!NOTE]
+> Microsoft Outlook-App unter Android und iOS wird nicht unterstützt.
 
 ## Unterstützung für PCs
 
@@ -104,7 +99,8 @@ Die **E-Mail**-Anwendung unter Windows 8 und höher (bei Registrierung bei [!IN
 >Wenn Sie beabsichtigen, zuerst alle Geräte zu blockieren, bevor Sie den Zugriff auf E-Mail gewähren, wählen Sie die Regel „Zugriff blockieren“ oder „Quarantäne“ aus. Die Standardregel gilt für alle Gerätetypen, sodass Gerätetypen, die Sie als Plattformausnahmen konfiguriert haben und die nicht von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] unterstützt werden, ebenfalls betroffen sind.
 
   - **Benutzerbenachrichtigung**: Zusätzlich zu der von Exchange gesendeten Benachrichtigungs-E-Mail sendet Intune eine E-Mail mit Schritten zum Entsperren des Geräts. Sie können die Standardnachricht bearbeiten, um Sie an Ihre Bedürfnisse anzupassen. Da die Benachrichtigungs-E-Mail von Intune mit den Lösungsanweisungen an das Exchange-Postfach des Benutzers gesendet wird, kann es vorkommen, dass das Gerät blockiert wird, bevor der Benutzer die E-Mail-Nachricht erhält. In diesem Fall besteht die Möglichkeit, die Nachricht über ein freigeschaltetes Gerät oder eine andere Exchange-Zugriffsmethode anzuzeigen. Dies gilt insbesondere, wenn die **Standardregel** für die Blockierung oder Quarantäne festgelegt ist.  In diesem Fall muss der Endbenutzer seinen App Store besuchen, die Microsoft-Unternehmensportal-App herunterladen und sein Gerät registrieren. Dies gilt für iOS-, Windows- und Samsung KNOX-Geräte.  Für Android-Geräte, auf denen nicht Samsung KNOX ausgeführt wird, müssen Sie die Quarantäne-E-Mail an ein alternatives E-Mail-Konto senden. Der Endbenutzer muss diese Mail auf sein blockiertes Gerät kopieren, um den Registrierungs- und Kompatibilitätsprozess abzuschließen.
-  > [!NOTE] Damit die Benachrichtigungs-E-Mail von Exchange gesendet werden kann, müssen Sie das Konto angeben, das dafür verwendet werden soll.
+  > [!NOTE]
+  > Damit die Benachrichtigungs-E-Mail von Exchange gesendet werden kann, müssen Sie das Konto angeben, das dafür verwendet werden soll.
   >
   > Weitere Informationen finden Sie unter [Konfigurieren des lokalen Exchange Connectors für lokales oder gehostetes Exchange](intune-on-premises-exchange-connector.md).
 
@@ -126,6 +122,7 @@ Die **E-Mail**-Anwendung unter Windows 8 und höher (bei Registrierung bei [!IN
 [Beschränken des Zugriffs auf Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,22 @@
 ---
-# required metadata
-
 title: Verwalten von Warnungen | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: bfea7213f67b55807045bfd8b29fdb083b841a56
+
 
 ---
 
@@ -61,7 +56,7 @@ In am Schwarzen Brett angezeigten Warnungen werden wichtige Dienstankündigungen
 
 #### So zeigen Sie Warnungen am Schwarzen Brett an und verwalten sie
 
-1.  Klicken Sie in der Intune-Verwaltungskonsole auf **Systemübersicht**..
+1.  Klicken Sie in der Intune-Verwaltungskonsole auf **Systemübersicht**.
 
 2.  Wenn wichtige Dienstankündigungen vorliegen, werden Sie im Bereich **Schwarzes Brett** angezeigt.
 
@@ -72,7 +67,7 @@ Im Arbeitsbereich **Systemübersicht** können Sie Probleme, die Ihre sofortige 
 
 #### So zeigen Sie den Status Ihres Abonnements an
 
-1.  Klicken Sie in der Intune-Verwaltungskonsole auf **Systemübersicht**..
+1.  Klicken Sie in der Intune-Verwaltungskonsole auf **Systemübersicht**.
 
 2.  Im Bereich **Systemstatus** können Sie den Status der verschiedenen Microsoft Intune-Komponenten untersuchen. In vielen dieser Elemente sind Links enthalten, mit denen Sie weitere Informationen anzeigen können. Wenn Sie beispielsweise unter **Endpoint Protection** die Anzahl der Instanzen auswählen, wird im Arbeitsbereich **Endpoint Protection** eine Liste mit erkannter Malware angezeigt. Bei Auswahl der Anzahl der Geräte wird der Arbeitsbereich **Gruppen** mit einer Liste von Geräten angezeigt, auf denen die Malware gefunden wurde.
 
@@ -91,27 +86,28 @@ Warnungen, die als geschlossen markiert sind, werden nach 90 Tagen dauerhaft gel
 
 1.  Führen Sie in der Intune-Verwaltungskonsole einen der folgenden Schritte aus:
 
-    1.  **Zum Schließen einer Warnung in der Warnungsliste** klicken Sie auf **Warnungen &gt; Alle Warnungen**. Wählen Sie eine Warnung aus, und klicken Sie dann auf **Warnung schließen**..
+    1.  **Zum Schließen einer Warnung in der Warnungsliste** klicken Sie auf **Warnungen &gt; Alle Warnungen**. Wählen Sie eine Warnung aus, und klicken Sie anschließend auf **Warnung schließen**.
 
-    2.  **Zum Schließen einer Warnung für ein bestimmtes Gerät** klicken Sie auf **Warnungen &gt; Alle Geräte**. Wählen Sie ein Gerät aus, und klicken Sie auf **Eigenschaften anzeigen**. Wählen Sie dann auf der Registerkarte **Warnungen** eine Warnung aus, und klicken Sie auf **Warnung schließen**..
+    2.  **Zum Schließen einer Warnung für ein bestimmtes Gerät** klicken Sie auf **Warnungen &gt; Alle Geräte**. Wählen Sie ein Gerät aus, und klicken Sie auf **Eigenschaften anzeigen**. Wählen Sie auf der Registerkarte **Warnungen** eine Warnung aus, und klicken Sie anschließend auf **Warnung schließen**.
 
     3.  **Zum Schließen einer auf dem Schwarzen Brett angezeigten Warnung** klicken Sie auf **Systemübersicht**. Klicken Sie neben der Warnung am Schwarzen Brett auf das **X**.
 
 #### So zeigen Sie geschlossene Warnungen an und aktivieren sie erneut
 
-1.  Klicken Sie in der Intune-Verwaltungskonsole auf **Warnungen &gt; Alle Warnungen**..
+1.  Klicken Sie in der Intune-Verwaltungskonsole auf **Warnungen &gt; Alle Warnungen**.
 
-2.  Klicken Sie in der Liste **Filter** auf **Geschlossen**..
+2.  Klicken Sie in der Liste **Filter** auf **Geschlossen**.
 
     Die Namen und zusätzliche Informationen zu den Warnungen werden im Verwaltungslistenbereich angezeigt. Details zur ausgewählten Warnung werden im Vorschaufenster angezeigt.
 
-3.  Klicken Sie zum erneuten Aktivieren der ausgewählten Warnung auf **Warnung erneut aktivieren**..
+3.  Klicken Sie zum erneuten Aktivieren der ausgewählten Warnung auf **Warnung erneut aktivieren**.
 
 ### Weitere Informationen:
-[Benachrichtigungen durch Microsoft Intune-Warnungen](get-notified-by-microsoft-intune-alerts.md)
+[Benachrichtigungen durch Microsoft Intune-Warnungen](get-notified-by-alerts.md)
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

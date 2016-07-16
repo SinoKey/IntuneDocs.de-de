@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Schützen von branchenspezifischen Apps und Daten auf nicht registrierten Geräten | Microsoft Intune
-description:
-keywords:
+title: "Schützen von branchenspezifischen Apps und Daten auf nicht registrierten Geräten | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 5e8b2a3f830016bbcd1965898dcf7b5d9a0597b5
+
 
 ---
 
@@ -64,7 +57,7 @@ Sie können Apps für Ihre Endbenutzer wie folgt bereitstellen:
 * Für Geräte, die von keiner MDM-Lösung verwaltet werden, benötigen Sie eine benutzerdefinierte Lösung. Endbenutzer müssen die App herunterladen und auf ihrem Gerät installieren.
 
 ## Ändern der Metadaten
-Wenn Sie App-Details wie den Namen der App oder die Paket-ID ändern müssen, müssen Sie [ die App entfernen](#remove-apps) und mit den neuen Metadaten [hinzufügen](#add-the-app).
+Falls Sie App-Details wie den Namen der App oder die Paket-ID ändern müssen, müssen Sie [die App entfernen](#remove-apps) und mit den neuen Metadaten [hinzufügen](#step-2-add-the-app).
 
 ##  Entfernen von Apps
 Sie können eine branchenspezifische App aus der App-Liste entfernen.  Dadurch wird die App aus der Liste und die Zuordnung zu MAM-Richtlinien entfernt, ohne dass die App jedoch vom Gerät des Endbenutzers entfernt oder deinstalliert wird.  
@@ -80,6 +73,7 @@ Sie können eine branchenspezifische App aus der App-Liste entfernen.  Dadurch w
   Dies entfernt Apps aus der Liste der branchenspezifischen Apps und der Zielliste von Apps in der MAM-Richtlinie.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

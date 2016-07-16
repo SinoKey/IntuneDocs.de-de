@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Einrichten der Windows Phone 8.0-Verwaltung | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 06/09/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: eed5855f3e27460146703ddf40fd935229a974e5
+ms.openlocfilehash: 02f9b7c7abe2daf942299015bfdfb052755ec2de
+
 
 ---
 
@@ -29,7 +23,8 @@ ms.suite: ems
 
 Windows Phone 8.0 erfordert ein Symantec-Zertifikat, damit die Intune-Unternehmensportal-App installiert und die Geräteverwaltung ermöglicht werden kann. Ein Zertifikat ist auch zum Signieren branchenspezifischer Apps erforderlich. Das folgende Thema gilt nur für Windows Phone 8.0. Informationen zum Verwaltung von Windows Phone 8.1 oder höher (einschließlich Windows 10 Mobile) finden Sie unter [Einrichten der Windows Phone-Registrierung](set-up-windows-phone-management-with-microsoft-intune.md).
 
-> [!IMPORTANT] Ab September 2016 kann die Unternehmensportal-App für Windows 8.0 und Windows Phone 8.0 nicht mehr heruntergeladen werden.
+> [!IMPORTANT]
+> Ab September 2016 kann die Unternehmensportal-App für Windows 8.0 und Windows Phone 8.0 nicht mehr heruntergeladen werden.
 
 -   **Windows Phone 8**: Zertifikat erforderlich
 -   **Windows Phone 8.1 und Windows 10 Mobile** erfordern nur ein Zertifikat, wenn Folgendes gilt:
@@ -41,7 +36,8 @@ Windows Phone 8.0 erfordert ein Symantec-Zertifikat, damit die Intune-Unternehme
 
 ![Diagramm für die Zertifikatanforderungen](../media/wpcertreqs.png)
 
-  > [!IMPORTANT] Das zur Verwaltung bestimmter mobiler Windows- und Windows Phone-Geräte verwendete Symantec-Zertifikat [muss regelmäßig verlängert werden](renew-a-symantec-code-signing-certificate.md).
+  > [!IMPORTANT]
+  > Das zur Verwaltung bestimmter mobiler Windows- und Windows Phone-Geräte verwendete Symantec-Zertifikat [muss regelmäßig erneuert werden](renew-a-symantec-code-signing-certificate.md).
 
 Die Setupanforderungen für die Verwaltung von Windows Phone-Mobilgeräten hängen davon ab, wie Sie die Geräte verwalten möchten.  Das Festlegen von zwei CNAMEs in der DNS-Registrierung Ihres Unternehmens erleichtert die Registrierung für die Benutzer. Wenn Ihre Benutzer die Unternehmensportal-App aus dem Store herunterladen, müssen Sie nach dem Konfigurieren der DNS-Einstellungen nur noch das Unternehmensportal einrichten und den Benutzern erklären, wie sie sich registrieren können.  Für Windows Phone 8.0 oder für Windows Phone 8.1 benötigen Sie zur Bereitstellung des Unternehmensportals ein Symantec-Zertifikat, um die App mit einer Codesignatur zu versehen.
 
@@ -186,6 +182,7 @@ Sie können die Unternehmensportal-App für Windows Phone 8.1-Geräte mit Intun
     > -   Wenn Sideload-Apps installiert werden und Windows Phone 8.0-Geräte sich registrieren müssen und die ssp.xap benötigen, erstellen Sie eine neue Softwarebereitstellung der ssp.xap, und stellen Sie sie mit der Aktion **Deinstallieren** bereit. Windows Phone 8.0-Geräte unterstützen nicht die erzwungene Installation oder Deinstallation von Anwendungen, d. h. sie ignorieren die Bereitstellung. Windows Phone 8.1-Geräte unterstützen den Deinstallationsvorgang und entfernen die ssp.xap.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

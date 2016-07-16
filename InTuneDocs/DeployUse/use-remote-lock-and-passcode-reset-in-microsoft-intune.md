@@ -1,25 +1,19 @@
 ---
-title: Verwenden der Remotesperre und Zurücksetzen der Kennung | Microsoft Intune
-description:
-keywords:
+title: "Verwenden der Remotesperre und Zurücksetzen der Kennung | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
+translationtype: Human Translation
+ms.sourcegitcommit: 6d9b79a09eef2546d78a19e061ba5cc3f24f645c
+ms.openlocfilehash: 34379881b8299a2e3f9886b14b6d83e9dfe83373
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: [ALIAS]
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 ---
 # Geräteschutz durch Remotesperre und Zurücksetzen der Kennung
 Microsoft Intune enthält Funktionen zum Remotesperren und zum Zurücksetzen der Kennung.
@@ -39,14 +33,14 @@ Wenn ein Benutzer sein Gerät verliert, können Sie es remote sperren. In der fo
 
 ### So sperren Sie ein mobiles Gerät remote über die Intune-Konsole
 
-1.  Klicken Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) auf **Gruppen** &gt; **Alle Geräte** &gt; **Alle mobilen Geräte**..
+1.  Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com/) **Gruppen** &gt; **Alle Geräte** &gt; **Alle mobilen Geräte** aus.
 
-2.  Klicken Sie bei Geräten, die bei Intune registriert sind, auf **Alle direkt verwalteten Geräte**. Andernfalls klicken Sie auf **Alle mit Exchange ActiveSync verwalteten Geräte**..
+2.  Wählen Sie bei Geräten, die bei Intune registriert sind, **Alle direkt verwalteten Geräte** aus. Andernfalls wählen Sie **Alle mit Exchange ActiveSync verwalteten Geräte** aus.
 
     > [!TIP]
     > Sie können auch nach Benutzer zu einem Gerät navigieren. Klicken Sie auf **Alle Benutzer**. Klicken Sie auf der Eigenschaftenseite des Benutzers auf **Geräte** und dann auf den Namen des mobilen Geräts, das Sie zurücksetzen möchten.
 
-3.  Wählen Sie in der Liste die Geräte aus, die Sie sperren möchten. Klicken Sie auf der Taskleiste auf **Remoteaufgaben**, und wählen Sie **Remotesperre** aus..
+3.  Wählen Sie in der Liste die Geräte aus, die Sie sperren möchten. Wählen Sie auf der Taskleiste **Remoteaufgaben** aus, und wählen Sie **Remotesperre** aus.
 
 ## Zurücksetzen der Kennung auf einem Gerät
 Wenn ein Benutzer seine Kennung vergisst, können Sie die Kennung von einem Gerät entfernen oder eine neue temporäre Kennung auf einem Gerät erzwingen. In der folgenden Tabelle ist die Funktionsweise der Kennungszurücksetzung auf verschiedenen mobilen Plattformen aufgeführt.
@@ -62,21 +56,22 @@ Wenn ein Benutzer seine Kennung vergisst, können Sie die Kennung von einem Ger�
 
 ### So setzen Sie eine Kennung zurück
 
-1.  Klicken Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) auf **Gruppen** &gt; **Alle Geräte** &gt; **Alle mobilen Geräte**..
+1.  Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com/) **Gruppen** &gt; **Alle Geräte** &gt; **Alle mobilen Geräte** aus.
 
-2.  Klicken Sie bei Geräten, die bei Intune registriert sind, auf **Alle direkt verwalteten Geräte**. Andernfalls klicken Sie auf **Alle mit Exchange ActiveSync verwalteten Geräte**..
+2.  Wählen Sie bei Geräten, die bei Intune registriert sind, **Alle direkt verwalteten Geräte** aus. Andernfalls wählen Sie **Alle mit Exchange ActiveSync verwalteten Geräte** aus.
 
     > [!TIP]
     > Sie können auch nach Benutzer zu einem Gerät navigieren. Klicken Sie auf **Alle Benutzer**. Klicken Sie auf der Eigenschaftenseite des Benutzers auf **Geräte** und dann auf den Namen des mobilen Geräts, das Sie zurücksetzen möchten.
 
-3.  Wählen Sie in der Liste die Geräte aus, die Sie sperren möchten. Klicken Sie auf der Taskleiste auf **Remoteaufgaben**, und wählen Sie **Kennungsrückstellung** aus..
+3.  Wählen Sie in der Liste die Geräte aus, die Sie sperren möchten. Wählen Sie auf der Taskleiste **Remoteaufgaben** aus, und wählen Sie **Kennungsrückstellung** aus.
 
 
 ### Weitere Informationen:
-[Abkoppeln von Geräten](retire-devices-from-microsoft-intune-management.md)
-[Windows Selective Wipe for Device Data Management (Selektives Zurücksetzen bei der Gerätedatenverwaltung in Windows)](http://technet.microsoft.com/library/dn486874.aspx)
+[Abkoppeln von Geräten von der Intune-Verwaltung](retire-devices-from-microsoft-intune-management.md)
+[Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx) (Selektives Zurücksetzen bei der Gerätedatenverwaltung in Windows)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Installieren des Windows-PC-Clients mit Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
+ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+
 
 ---
 
@@ -46,11 +40,11 @@ Verwenden Sie dann mindestens eine der folgenden Methoden, um den Client zu inst
 
 -   [Installieren der Microsoft Intune-Clientsoftware als Teil eines Betriebssystemabbilds](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
-Wenn ein Computer nicht mehr mit Intune verwaltet werden soll, können Sie ihn abkoppeln. Hierbei wird auch die Clientsoftware vom Computer entfernt. Weitere Informationen finden Sie unter [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)..
+Wenn ein Computer nicht mehr mit Intune verwaltet werden soll, können Sie ihn abkoppeln. Hierbei wird auch die Clientsoftware vom Computer entfernt. Weitere Informationen finden Sie unter [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
 ### So laden Sie die Clientsoftware herunter
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Verwaltung** &gt; **Download der Clientsoftware**.
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Admin** &gt; **Download der Clientsoftware**.
 
   ![Herunterladen des Intune-PC-Clients](./media/pc-SA-client-download.png)
 
@@ -102,13 +96,13 @@ Benutzer können alle ihre Computer über das Intune-Unternehmensportal selbst r
 
 1.  Melden Sie sich mit dem Computer, den Sie registrieren möchten, beim Unternehmensportal an.
 
-2.  Klicken Sie auf **Gerät hinzufügen**..
+2.  Klicken Sie auf **Gerät hinzufügen**.
 
-3.  Klicken Sie auf **Software herunterladen** und dann auf **Ausführen**..
+3.  Klicken Sie auf **Software herunterladen** und dann auf **Ausführen**.
 
 4.  Klicken Sie auf **Weiter**, um den Setup-Assistenten von Microsoft Intune zu starten.
 
-5.  Klicken Sie nach Abschluss des Setup-Assistenten auf **Fertig stellen**..
+5.  Klicken Sie nach Abschluss des Setup-Assistenten auf **Fertig stellen**.
 
 ### Installieren der Microsoft Intune-Clientsoftware als Teil eines Betriebssystemabbilds
 Sie können die Intune-Clientsoftware als Teil eines Betriebssystemabbilds auf Computern installieren. Verwenden Sie dazu die folgende Beispielvorgehensweise als Basis:
@@ -145,7 +139,7 @@ Verwenden Sie eins der folgenden Verfahren, um die erfolgreiche Clientbereitstel
 
 ### So überprüfen Sie die Installation der Clientsoftware mithilfe der Microsoft Intune-Administratorkonsole
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Gruppen** &gt; **Alle Geräte** &gt; **Alle Computer**..
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Gruppen** &gt; **Alle Geräte** &gt; **Alle Computer**.
 
 2.  Suchen Sie mit einem Bildlauf nach unten in der Liste der Computer die verwalteten Computer, von denen mit Intune kommuniziert wird. Um nach einem bestimmten verwalteten Computer zu suchen, geben Sie den Computernamen oder einen Teil des Namens in das Textfeld **Geräte suchen** ein.
 
@@ -153,9 +147,9 @@ Verwenden Sie eins der folgenden Verfahren, um die erfolgreiche Clientbereitstel
 
 ### So erstellen Sie einen Computerinventurbericht zum Anzeigen aller registrierten Computer
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Berichte** &gt; **Computerinventurberichte**..
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Berichte** &gt; **Computerinventurberichte**.
 
-2.  Belassen Sie auf der Seite **Neuen Bericht erstellen** die Standardwerte in den Feldern (sofern Sie keine Filter anwenden möchten), und klicken Sie auf **Bericht anzeigen**..
+2.  Belassen Sie auf der Seite **Neuen Bericht erstellen** die Standardwerte in den Feldern (sofern Sie keine Filter anwenden möchten), und klicken Sie auf **Bericht anzeigen**.
 
 3.  In einem neuen Fenster wird die Seite **Computerinventurbericht** geöffnet, auf der alle erfolgreich bei Intune registrierten Computer angezeigt werden.
 
@@ -167,6 +161,7 @@ Verwenden Sie eins der folgenden Verfahren, um die erfolgreiche Clientbereitstel
 [Verwalten von Windows-PCs mit Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

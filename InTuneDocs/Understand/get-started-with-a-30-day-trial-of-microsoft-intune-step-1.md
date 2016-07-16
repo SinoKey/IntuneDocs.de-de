@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Registrieren für eine 30-tägige Evaluierung von Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Registrieren für eine 30-tägige Evaluierung von Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: fe1587bead9e4cd350f5ffcf925fe04afd824ea0
+ms.openlocfilehash: f97b619d2b82556685cf0e247700d1fd8c8d4369
+
 
 ---
 
@@ -41,11 +35,11 @@ Berücksichtigen Sie Folgendes, bevor Sie sich bei Intune registrieren oder anme
 
 |Registrieren Sie sich für ein neues Konto, wenn eine der folgenden Aussagen zutrifft:|Melden Sie sich mit Ihrem Geschäfts- oder Schulkonto an, wenn Folgendes zutrifft:|
 |-----------------------------------------------------------------|------------------------------------------------|
-|**Sie besitzen kein Geschäfts- oder Schulkonto.** Ein Geschäfts- oder Schulkonto wird bereitgestellt, wenn Sie einen Volumenlizenzvertrag mit Microsoft abschließen oder Office 365 abonnieren. Wenn Ihre Organisation kein Enterprise Agreement oder keinen entsprechenden Volumenlizenzvertrag mit Microsoft abgeschlossen hat (oder nicht über ein Office 365-Konto verfügt), verfügen Sie nicht über ein Microsoft Online Services-Konto, mit dem Sie sich bei Microsoft Online Services anmelden können.<br /><br />**Sie verwerfen Ihren Intune-Mandanten nach Abschluss der 30-tägigen Evaluierung.** Wenn Sie Ihr kostenloses Intune-Evaluierungsabonnement nur zu Evaluierungszwecken nutzen und beabsichtigen, die Einrichtung des Intune-Diensts und die Gerätebereitstellung nach der Evaluierung erneut durchzuführen, sollten Sie sich für ein neues Konto registrieren. Dies ist die empfohlene Option, wenn Sie planen, Intune mit System Center 2012 Configuration Manager zu verwenden.<br /><br />Wenn Sie sich für ein neues Konto registrieren, können Sie zum Verwalten dieses Kontos kein vorhandenes Geschäfts- oder Schulkonto mehr verwenden und es auch nicht mehr mit vorhandenen Volumenlizenzverträgen kombinieren.|**Sie verfügen über ein Geschäfts- oder Schulkonto, das über einen Volumenlizenzvertrag oder über ein Office 365-Abonnement bereitgestellt wurde, und verwenden diese Evaluierungsversion zur Bewertung von Intune.**<br /><br />Wenn Sie Intune für ein vorhandenes Konto einrichten, wird empfohlen, sich die [Einführung in Microsoft Intune](choose-how-to-manage-devices.md) anzuschauen, bevor Sie den Vorgang mit diesen Schritten fortsetzen.|
+|**Sie besitzen kein Geschäfts- oder Schulkonto.** Ein Geschäfts- oder Schulkonto wird bereitgestellt, wenn Sie einen Volumenlizenzvertrag mit Microsoft abschließen oder Office 365 abonnieren. Wenn Ihre Organisation kein Enterprise Agreement oder keinen entsprechenden Volumenlizenzvertrag mit Microsoft abgeschlossen hat (oder nicht über ein Office 365-Konto verfügt), verfügen Sie nicht über ein Microsoft Online Services-Konto, mit dem Sie sich bei Microsoft Online Services anmelden können.<br /><br />**Sie verwerfen Ihren Intune-Mandanten nach Abschluss der 30-tägigen Evaluierung.** Wenn Sie Ihr kostenloses Intune-Evaluierungsabonnement nur zu Evaluierungszwecken nutzen und beabsichtigen, die Einrichtung des Intune-Diensts und die Gerätebereitstellung nach der Evaluierung erneut durchzuführen, sollten Sie sich für ein neues Konto registrieren. Dies ist die empfohlene Option, wenn Sie planen, Intune mit System Center 2012 Configuration Manager zu verwenden.<br /><br />Wenn Sie sich für ein neues Konto registrieren, können Sie zum Verwalten dieses Kontos kein vorhandenes Geschäfts- oder Schulkonto mehr verwenden und es auch nicht mehr mit vorhandenen Volumenlizenzverträgen kombinieren.|**Sie verfügen über ein Geschäfts- oder Schulkonto, das über einen Volumenlizenzvertrag oder über ein Office 365-Abonnement bereitgestellt wurde, und verwenden diese Evaluierungsversion zur Bewertung von Intune.**<br /><br />Falls Sie Intune für ein vorhandenes Konto einrichten, wird empfohlen, sich den Artikel [Auswählen der Methode zum Verwalten von Geräten](/intune/get-started/choose-how-to-manage-devices) anzuschauen, bevor Sie den Vorgang mit diesen Schritten fortsetzen.|
 
 ## Registrieren oder Anmelden bei Intune
 
-1.  Klicken Sie zunächst [hier, um zur Intune-Anmeldeseite zu gelangen](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)..
+1.  Klicken Sie zunächst [hier, um zur Intune-Anmeldeseite zu gelangen](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
 2.  Auf der Seite **Registrieren** stehen Ihnen zwei Optionen zur Verfügung:
 
@@ -63,9 +57,10 @@ Gratulation! Sie habe soeben Schritt 1 der exemplarischen Vorgehensweise *Micro
 
 >[!div class="step-by-step"]
 
->[&larr; **Erste Schritte**](.\get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**Hinzufügen von Benutzern** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
+>[&larr; **Erste Schritte**](get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**Hinzufügen von Benutzern** &rarr;](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

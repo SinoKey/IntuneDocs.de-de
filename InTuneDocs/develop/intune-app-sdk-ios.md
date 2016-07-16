@@ -1,33 +1,28 @@
 ---
-# required metadata
-
-title: Entwicklerhandbuch zum Microsoft Intune App SDK für iOS | Microsoft Intune
-description:
-keywords:
+title: "Entwicklerhandbuch zum Microsoft Intune App SDK für iOS | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
+ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
+
 
 ---
 
 # Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
-> [!NOTE] Lesen Sie am besten zuerst den [Leitfaden zu den ersten Schritten mit dem Intune App-SDK](intune-app-sdk-get-started.md). Dort finden Sie Informationen zu den Vorbereitungen, die Sie auf den verschiedenen unterstützten Plattformen für die Integration treffen müssen. 
+> [!NOTE]
+> Lesen Sie am besten zuerst den Leitfaden [Erste Schritte mit dem Microsoft Intune App SDK](intune-app-sdk-get-started.md). Dort finden Sie Informationen zu den Vorbereitungen, die Sie auf den verschiedenen unterstützten Plattformen für die Integration treffen müssen.* 
 
 Das Microsoft Intune App SDK für iOS ermöglicht die Integration von Intune Mobile App Management (MAM) in Ihre iOS-App. Eine MAM-aktivierte Anwendung ist eine Anwendung, in die das Intune App SDK integriert ist. Damit können IT-Administratoren Richtlinien in Ihrer mobilen App bereitstellen, wenn die App aktiv verwaltet wird.
 
@@ -232,7 +227,8 @@ Bevor Sie Ihre für MAM aktivierte Anwendung mit Microsoft Intune testen, könne
 
 * Starten Sie die App (entweder innerhalb oder außerhalb von Xcode). Vergewissern Sie sich, dass PIN wie erwartet funktioniert.
 
-> [!NOTE] Sie können nun „Settings -> Name-Ihrer-App -> Enable Test Policies“ verwenden, um Einstellungen zu aktivieren und umzuschalten.
+> [!NOTE]
+> Sie können nun „Settings (Einstellungen) -> Name-Ihrer-App -> Enable Test Policies (Testrichtlinien aktivieren)“ verwenden, um Einstellungen zu aktivieren und umzuschalten.
 
 # Empfohlene und bewährte Methoden für iOS
 
@@ -244,6 +240,7 @@ Wenn Xcode Probleme beim Suchen nach `libIntuneMAM.a`hat, können Sie das Proble
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

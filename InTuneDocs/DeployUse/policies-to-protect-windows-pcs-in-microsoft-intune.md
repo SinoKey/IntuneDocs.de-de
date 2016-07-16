@@ -1,33 +1,27 @@
 ---
-# required metadata
-
 title: Richtlinien zum Schutz von Windows-PCs | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 8d1bad7af972a32ce3509d67edab3f4f9c9df299
+
 
 ---
 
 # Verwenden von Richtlinien zum Schutz von Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird
 
-Microsoft Intune bietet drei Richtlinien, mit denen Sie die Sicherheit von Windows-PCs gewährleisten können, wenn diese mit der [Intune-Clientsoftware](manage-windows-pcs-with-microsoft-intune.md) verwaltet werden.. 
+Microsoft Intune bietet drei Richtlinien, mit denen Sie die Sicherheit von Windows-PCs gewährleisten können, wenn diese mit der [Intune-Clientsoftware](manage-windows-pcs-with-microsoft-intune.md) verwaltet werden. 
 
 
 ## Softwareupdates
@@ -49,6 +43,7 @@ Eine Ihrer wichtigsten Aufgaben als IT-Administrator besteht darin, die von Ihne
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
