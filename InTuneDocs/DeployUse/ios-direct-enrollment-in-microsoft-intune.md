@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Direkte Registrierung für iOS-Geräte | Microsoft Intune
-description:
-keywords:
+title: "Direkte Registrierung für iOS-Geräte | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
+ms.openlocfilehash: 8fea0f7f87972bc643bbb20348095e05f701287e
+
 
 ---
 
@@ -46,6 +40,8 @@ Intune unterstützt die Registrierung unternehmenseigener iOS-Geräte mithilfe d
 
         -   **Gerätegruppen-Vorabzuweisung**: Alle Geräte, die mit diesem Profil bereitgestellt werden, gehören anfänglich zu dieser Gruppe. Sie können die Geräte nach der Registrierung erneut zuweisen.
 
+        >[!Important]
+        >Gruppenzuweisungen werden von Intune zu Azure Active Directory verschoben. [Weitere Informationen](http://go.microsoft.com/fwlink/?LinkID=787064)
     3.  Wählen Sie **Profil speichern**, um das Profil hinzuzufügen.
 
 5.  **Exportieren eines Profils als MOBILECONFIG-Datei für die Bereitstellung auf iOS-Geräten** Wählen Sie das Geräteprofil, das Sie erstellt haben. Wählen Sie **Exportieren…** in der Taskleiste. Wählen Sie **Profil herunterladen**, und speichern Sie die heruntergeladene MOBILECONFIG-Datei.
@@ -89,6 +85,7 @@ Intune unterstützt die Registrierung unternehmenseigener iOS-Geräte mithilfe d
 [Vorbereitungen zum Registrieren von Geräten](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO1-->
 
 

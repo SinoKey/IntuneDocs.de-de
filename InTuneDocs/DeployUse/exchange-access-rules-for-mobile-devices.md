@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Exchange-Zugriffsregeln für mit Microsoft Intune verwaltete mobile Geräte | Microsoft Intune
-description:
-keywords:
+title: "Exchange-Zugriffsregeln für mit Microsoft Intune verwaltete mobile Geräte | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
+
 
 ---
 
@@ -45,19 +39,20 @@ Im folgenden Verfahren wird das Erstellen einer benutzerdefinierten Regel beschr
 
 ## Erstellen einer Standardzugriffsregel
 
-1.  In der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) &gt; **Zugriff** &gt; **Exchange-Zugriff für mobile Geräte**.
+1.  In der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) &gt; **Richtlinie** &gt; **Exchange-Zugriff für mobile Geräte**
 
-2.  Wählen Sie in der Liste **Standardregel** die Zugriffsregel aus, die Sie auf alle mobilen Geräte anwenden möchten, die nicht durch eine Regel oder persönliche Ausnahme abgedeckt werden. Wählen Sie **Speichern** aus..
+2.  Wählen Sie in der Liste **Standardregel** die Zugriffsregel aus, die Sie auf alle mobilen Geräte anwenden möchten, die nicht durch eine Regel oder persönliche Ausnahme abgedeckt werden. Wählen Sie **Speichern** aus.
 
 Im folgenden Verfahren wird das Erstellen einer benutzerdefinierten Regel beschrieben.
 
 ## Erstellen einer benutzerdefinierten Zugriffsregel
 
-1. In der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) &gt; **Zugriff** &gt; **Exchange-Zugriff für mobile Geräte**.
+1. In der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) &gt; **Richtlinie** &gt; **Exchange-Zugriff für mobile Geräte**
 
-2.  Wählen Sie in der Liste **Benutzerdefinierte Regeln** die Option **Regel hinzufügen** aus, und erstellen Sie eine benutzerdefinierte Regel. Wählen Sie **Speichern** aus..
+2.  Wählen Sie in der Liste **Benutzerdefinierte Regeln** die Option **Regel hinzufügen** aus, und erstellen Sie eine benutzerdefinierte Regel. Wählen Sie **Speichern** aus.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

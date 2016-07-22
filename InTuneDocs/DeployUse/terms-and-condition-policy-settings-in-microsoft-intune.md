@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Einstellungen für Nutzungsbedingungsrichtlinien in Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Einstellungen für Nutzungsbedingungsrichtlinien in Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 8079ca5abcedbe024fb6347e02c7cf61ae541a30
+
 
 ---
 
@@ -32,7 +26,7 @@ Sie können mehrere Richtlinien erstellen und bereitstellen, die verschiedene Nu
 
 ## Erstellen einer Nutzungsbedingungsrichtlinie
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**..
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
 
     ![Screenshot für Nutzungsbedingungsrichtlinien](./media/pol-sa-terms-conditions.png)
 
@@ -54,17 +48,17 @@ Sie können mehrere Richtlinien erstellen und bereitstellen, die verschiedene Nu
 
 ## Bereitstellen einer Nutzungsbedingungsrichtlinie
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**..
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
 
-2.  Wählen Sie in der Liste der **Nutzungsbedingungsrichtlinien** die bereitzustellende Richtlinie aus, und klicken Sie dann auf **Bereitstellung verwalten**..
+2.  Wählen Sie in der Liste der **Nutzungsbedingungsrichtlinien** die bereitzustellende Richtlinie aus, und klicken Sie dann auf **Bereitstellung verwalten**.
 
-3.  Wählen Sie im Dialogfeld **Bereitstellung verwalten** die Gruppen aus, für die Sie die Richtlinie bereitstellen möchten, und klicken Sie dann auf **OK**..
+3.  Wählen Sie im Dialogfeld **Bereitstellung verwalten** die Gruppen aus, für die Sie die Richtlinie bereitstellen möchten, und klicken Sie dann auf **OK**.
 
     Wenn die anvisierten Benutzer auf das Unternehmensportal zugreifen, zeigt Intune die bereitgestellten Nutzungsbedingungen an. Benutzer müssen diese Nutzungsbedingungen akzeptieren, bevor sie Zugriff auf Unternehmensressourcen erhalten.
 
 ## Überwachen einer Nutzungsbedingungsrichtlinie
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**..
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
 
 2.  Klicken Sie im Fenster **Neuen Bericht erstellen** auf **Bericht anzeigen**. Der Bericht wird mit ausführlichen Informationen geöffnet, welche Benutzer die bereitgestellten Nutzungsbedingungen akzeptiert haben.
 
@@ -73,9 +67,9 @@ Beim Bearbeiten einer vorhandenen Nutzungsbedingungsrichtlinie können Sie das V
 
 ## Arbeiten mit mehreren Versionen der Nutzungsbedingungen
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**..
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
 
-2.  Wählen Sie die zu bearbeitende Nutzungsbedingungsrichtlinie aus, und klicken Sie dann auf **Bearbeiten**..
+2.  Wählen Sie die zu bearbeitende Nutzungsbedingungsrichtlinie aus, und klicken Sie dann auf **Bearbeiten**.
 
 3.  Nehmen Sie auf der Seite zum **Bearbeiten der Nutzungsbedingungen** alle erforderlichen Änderungen vor, und geben Sie dann an, ob diese neue Version von allen Benutzern eine Zustimmung zu den Nutzungsbedingungen erfordert oder sie nur für neue Benutzer angezeigt wird.
 
@@ -85,6 +79,7 @@ Beim Bearbeiten einer vorhandenen Nutzungsbedingungsrichtlinie können Sie das V
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

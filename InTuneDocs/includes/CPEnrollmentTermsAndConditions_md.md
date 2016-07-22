@@ -1,7 +1,6 @@
-**Festlegen von Nutzungsbedingungen**
-Sie können die Nutzungsbedingungen veröffentlichen, die den Benutzern angezeigt werden, wenn sie das Unternehmensportal das erste Mal auf einem beliebigen Gerät verwenden, unabhängig davon, ob das Gerät bereits registriert ist. Benutzer müssen diese Bedingungen für den Zugriff auf das Portal akzeptieren. Wenn Sie die Nutzungsbedingungen maßgeblich aktualisieren und diese von den Benutzern angezeigt und akzeptiert werden sollen, können Sie die neuen Nutzungsbedingungen als neue Version kennzeichnen. Die Benutzer durchlaufen dann denselben Prozess, wenn sie das Portal das nächste Mal besuchen.
+**Festlegen von Nutzungsbedingungen** Sie können die Nutzungsbedingungen veröffentlichen, die den Benutzern angezeigt werden, wenn sie das Unternehmensportal das erste Mal auf einem beliebigen Gerät verwenden, unabhängig davon, ob das Gerät bereits registriert ist. Benutzer müssen diese Bedingungen für den Zugriff auf das Portal akzeptieren. Wenn Sie die Nutzungsbedingungen maßgeblich aktualisieren und diese von den Benutzern angezeigt und akzeptiert werden sollen, können Sie die neuen Nutzungsbedingungen als neue Version kennzeichnen. Die Benutzer durchlaufen dann denselben Prozess, wenn sie das Portal das nächste Mal besuchen.
 
-Wechseln Sie in der [Microsoft Intune-Administrationskonsole](http://manage.microsoft.com) zu **Unternehmensportal** &gt; **Nutzungsbedingungen**..
+Klicken Sie in der [Microsoft Intune-Administrationskonsole](http://manage.microsoft.com) auf **Unternehmensportal** &gt;**Nutzungsbedingungen**.
 
 Legen Sie Folgendes fest:
 
@@ -13,10 +12,10 @@ Legen Sie Folgendes fest:
 
 -   **Text zur Erläuterung, was das Akzeptieren der Nutzungsbedingungen für die Benutzer bedeutet**
 
-Sie können [Details zu den Nutzungsbedingungen](https://technet.microsoft.com/library/mt405893.aspx) anzeigen.  Mithilfe der [Berichte zu Nutzungsbedingungen](https://technet.microsoft.com/library/dn646977.aspx) können Sie außerdem anzeigen, welche Benutzer die Nutzungsbedingungen akzeptiert haben..
+Sie können [Details zu den Nutzungsbedingungen](https://technet.microsoft.com/library/mt405893.aspx) anzeigen.  Mithilfe der [Berichte zu Nutzungsbedingungen](https://technet.microsoft.com/library/dn646977.aspx) können Sie außerdem anzeigen, welche Benutzer die Nutzungsbedingungen akzeptiert haben.
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 

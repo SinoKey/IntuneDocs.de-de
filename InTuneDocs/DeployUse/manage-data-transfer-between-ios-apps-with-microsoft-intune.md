@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Verwalten der Datenübertragung zwischen iOS-Apps | Microsoft Intune
-description:
-keywords:
+title: "Verwalten der Datenübertragung zwischen iOS-Apps | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 002ebec14a089754849024916590b787431c7efe
+ms.openlocfilehash: fce0081fc1ecb92acf539a2d69f0493fb30ee418
+
 
 ---
 
@@ -51,9 +44,9 @@ Um sicherzustellen, dass Apps, die Sie mithilfe der Drittanbieter-MDM-Lösung be
 Diese Konfiguration ist für Geräte erforderlich, die von der MDM-Lösung eines Drittanbieters verwaltet werden. Das nachfolgend beschriebene Verfahren ist ein allgemeiner Ablauf zum Implementieren der UPN-Einstellung und der resultierenden Benutzerumgebung:
 
 
-1.  Konfigurieren Sie eine Verwaltungsrichtlinie für mobile Apps für die iOS-Plattform. Konfigurieren Sie Richtlinieneinstellungen für alle Unternehmensanforderungen, und wählen Sie die Apps aus, für die diese Richtlinie gelten soll.
+1.  [Konfigurieren Sie eine Verwaltungsrichtlinie für mobile Apps](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) für die iOS-Plattform im Azure-Portal. Konfigurieren Sie Richtlinieneinstellungen für alle Unternehmensanforderungen, und wählen Sie die Apps aus, für die diese Richtlinie gelten soll.
 
-2.  Stellen Sie die Apps und das E-Mail-Profil, die von der MDM-Lösung eines Drittanbieters verwalten werden sollen, mit der in den Schritten 3 und 4 beschriebenen Einstellung bereit.
+2.  Stellen Sie die Apps und das E-Mail-Profil, die **von der MDM-Lösung eines Drittanbieters** verwaltet werden sollen, mit der in den Schritten 3 und 4 beschriebenen Einstellung bereit.
 
 3.  Stellen Sie die App mit den folgenden Einstellungen für die App-Konfiguration bereit: „key=IntuneMAMUPN“, „Value=<benutzername@firma.com>“ [Beispiel: „IntuneMAMUPN“, „johanschulz@microsoft.com“]
 
@@ -80,6 +73,7 @@ Diese Konfiguration ist für Geräte erforderlich, die von der MDM-Lösung eines
 [Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

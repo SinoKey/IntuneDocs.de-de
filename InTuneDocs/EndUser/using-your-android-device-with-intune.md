@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Verwenden Ihres Android-Geräts mit Intune | Microsoft Intune
-description:
-keywords:
+title: "Verwenden Ihres Android-Geräts mit Intune | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
+ms.openlocfilehash: 4622897f5e32514ad80b5000732cf6835224160a
+
 
 ---
 
@@ -52,6 +46,7 @@ Die Informationen in diesem Abschnitt helfen Ihnen bei Aktionen, die Sie nach de
 - [Aufheben der Registrierung Ihres Geräts bei Ablehnung der Nutzungsbedingungen](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [Was geschieht, wenn Sie Ihr Android-Gerät mit der Unternehmensportal-App zurücksetzen?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+<!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
 
 ## Beheben von Problemen mit Ihrem Gerät
 
@@ -65,10 +60,16 @@ Die Informationen in diesem Abschnitt helfen Ihnen beim Behandeln von Problemen,
 - [Gerät entspricht nicht der maximalen Betriebssystemversion](device-doesnt-comply-with-maximum-operating-system-version-android.md)
 - [Von Ihrem Gerät wurden die Nutzungsbeschränkungen entfernt, und Sie können keine Verbindung herstellen](your-device-is-rooted-and-you-cant-connect-android.md)
 - [Auf Ihrem Gerät ist ein erforderliches Zertifikat nicht vorhanden](your-device-is-missing-a-required-certificate-android.md)
+- [Sie werden dazu aufgefordert, die Option „Unbekannte Quellen“ zu deaktivieren](you-are-asked-to-turn-off-unknown-sources-android.md)
+- [Sie werden dazu aufgefordert, das USB-Debuggen zu deaktivieren](you-are-asked-to-turn-off-usb-debugging-android.md)
+- [Sie werden dazu aufgefordert, die Option „Gerät auf Sicherheitsbedrohungen überprüfen“ zu aktivieren](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+- [Ihr Gerät weist nicht den mindestens erforderlichen Sicherheitspatch auf](your-device-does-not-meet-the-minimum-security-patch-android.md)
 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jun16_HO5-->
 
 

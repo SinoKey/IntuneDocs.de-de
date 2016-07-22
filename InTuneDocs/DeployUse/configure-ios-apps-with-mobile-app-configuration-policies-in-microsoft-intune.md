@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps | Microsoft Intune
-description:
-keywords:
+title: "Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: a1b2fb7f2938939725465a18efb594dda91d16bd
+
 
 ---
 
@@ -42,7 +36,8 @@ Mit Konfigurationsrichtlinien für mobile Apps können Sie diese Probleme beseit
 
 Sie stellen diese Richtlinien nicht direkt für Benutzer und Geräte bereit. Stattdessen verknüpfen Sie die Richtlinie mit einer App und stellen dann die App bereit. Die Richtlinieneinstellungen werden immer dann verwendet, wenn die Anwendung danach sucht (in der Regel beim ersten Ausführen).
 
-> [!TIP] Dieser Richtlinientyp ist zurzeit nur für Geräte unter iOS 7.1 und höher verfügbar und unterstützt die folgenden App-Installationstypen:
+> [!TIP]
+> Dieser Richtlinientyp ist zurzeit nur für Geräte unter iOS 7.1 und höher verfügbar und unterstützt die folgenden App-Installationstypen:
 > 
 > -   **Verwaltete iOS-App aus dem App Store**
 > -   **App-Paket für iOS**
@@ -62,7 +57,8 @@ Sie stellen diese Richtlinien nicht direkt für Benutzer und Geräte bereit. Sta
 
 4.  Geben oder fügen Sie im Abschnitt **Konfigurationsrichtlinie für mobile Apps** der Seite eine XML-Eigenschaftenliste mit den App-Konfigurationseinstellungen ein, die im Feld verwendet werden sollen.
 
-    > [!TIP] Weitere Informationen zu XML-Eigenschaftenlisten finden Sie in der iOS Developer Library unter [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Grundlegendes zu XML-Eigenschaftenlisten).
+    > [!TIP]
+    > Weitere Informationen zu XML-Eigenschaftenlisten finden Sie unter [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in der iOS Developer Library.
     > 
     > Das Format der XML-Eigenschaftenliste variiert je nach der App, die Sie konfigurieren. Wenden Sie sich an den Hersteller der App, um ausführliche Informationen über das genau zu verwendende Format zu erhalten.
     > 
@@ -104,7 +100,8 @@ Fahren Sie mit dem Bereitstellen und Überwachen der App-Bereitstellung wie gewo
 
 Wenn die bereitgestellte App auf einem Gerät gestartet wird, wird sie mit den Einstellungen ausgeführt, die Sie in der Konfigurationsrichtlinie für mobile Apps konfiguriert haben.
 
-> [!TIP] Wenn mindestens eine Konfigurationsrichtlinie für mobile Apps einen Konflikt verursacht, wird keine Richtlinie durchgesetzt, und der Konflikt wird im **Dashboard** der Intune-Verwaltungskonsole gemeldet.
+> [!TIP]
+> Falls mindestens eine Konfigurationsrichtlinie für mobile Apps einen Konflikt verursacht, wird keine Richtlinie durchgesetzt, und der Konflikt wird im **Dashboard** der Intune-Verwaltungskonsole gemeldet.
 
 ## Beispielformat für die XML-Datei für die Konfiguration mobiler Apps
 
@@ -139,6 +136,7 @@ Wenn Sie eine Datei für die Konfiguration mobiler Apps erstellen, können Sie e
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

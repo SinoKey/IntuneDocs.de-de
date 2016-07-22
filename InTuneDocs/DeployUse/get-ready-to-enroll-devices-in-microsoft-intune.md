@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Vorbereiten der Registrierung von Geräten | Microsoft Intune
-description:
-keywords:
+title: "Vorbereiten der Registrierung von Geräten | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 71077d9f86a53cc66536928e4799fa4b1a51cdf0
+ms.openlocfilehash: 86d3b7894eca70454fa82393c4d06eab5a99246f
+
 
 ---
 
 # Vorbereiten der Registrierung von Geräten in Microsoft Intune
 Damit Mitarbeiter mobile Geräte (einschließlich [Android](set-up-android-management-with-microsoft-intune.md), [iOS und Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) und [Windows PCs](set-up-windows-device-management-with-microsoft-intune.md)) bei Intune registrieren können, müssen Sie die Geräteregistrierung aktivieren. Um die Registrierung zu ermöglichen, müssen Sie eine Autorität zur Verwaltung mobiler Geräte festlegen, das Intune-Unternehmensportal konfigurieren, Lizenzen zuweisen und die Registrierung für die Geräteplattform aktivieren.
 
-## <a name="BKMK_Set_MDM_Authority"></a>Festlegen der Autorität zur Verwaltung mobiler Geräte
+## Festlegen der Autorität zur Verwaltung mobiler Geräte
 Die Autorität für die Verwaltung mobiler Geräte definiert den Verwaltungsdienst mit der Berechtigung zum Verwalten einer Gruppe von Geräten. Die Optionen für die MDM-Autorität (Mobile Device Management, Verwaltung mobiler Geräte) umfassen Intune selbst und Configuration Manager mit Intune. Wenn Sie Configuration Manager als Verwaltungsautorität festlegen, kann kein anderer Dienst für die Verwaltung mobiler Geräte verwendet werden.
 
 >[!IMPORTANT]
@@ -45,11 +39,18 @@ Die Autorität für die Verwaltung mobiler Geräte definiert den Verwaltungsdien
 3.  Intune erfordert eine Bestätigung, dass es als MDM-Autorität verwendet werden soll. Aktivieren Sie das Kontrollkästchen, und wählen Sie dann **Ja** aus, um Microsoft Intune zum Verwalten mobiler Geräte zu verwenden.
 
 ## Konfigurieren des Intune-Unternehmensportals
+
+Im Intune-Unternehmensportal können Benutzer auf Unternehmensdaten zugreifen, häufige Aufgaben wie das Registrieren von Geräten und das Installieren von Apps ausführen und sich über Unterstützungsmöglichkeiten durch Ihre IT-Abteilung informieren.
+
+> [!TIP]
+> Wenn Sie das Unternehmensportal anpassen, gelten die Konfigurationen sowohl für die Unternehmensportalwebsite als auch für die Unternehmensportal-Apps.
+
 Durch Anpassen des Unternehmensportals können Sie Ihren Endbenutzern eine vertraute und sinnvolle Benutzeroberfläche bereitstellen. Melden Sie sich zu diesem Zweck einfach als Mandanten- oder Dienstadministrator bei der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) an, wählen Sie **Verwaltung** &gt; **Unternehmensportal** aus, und konfigurieren Sie die Einstellungen für das Unternehmensportal.
 
-![admin-console-admin-workspace-comp-portal-settings](../media/cp_setup.png)
+![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
 #### Kontaktdaten und Datenschutzerklärung des Unternehmens
+
 Der Unternehmensname wird als Titel des Unternehmensportals angezeigt. Die Kontaktinformationen werden Benutzern im Unternehmensportal auf dem Bildschirm für die Kontaktaufnahme mit der IT-Abteilung angezeigt. Die Datenschutzerklärung wird angezeigt, wenn ein Benutzer auf den Datenschutzlink klickt.
 
 |Feldname|Max. Länge|Weitere Informationen|
@@ -69,7 +70,9 @@ Die Supportwebsite wird Benutzern im Unternehmensportal angezeigt, um ihnen Zugr
     |URL der Supportwebsite|150|Wenn Sie über eine Supportwebsite verfügen, die Ihre Benutzer verwenden sollen, geben Sie hier die URL an. Die URL muss das Format https://www.contoso.com aufweisen. Wenn Sie keine URL angeben, wird im Unternehmensportal auf der Seite **An IT-Abteilung wenden** keine Supportwebsite angezeigt.|
     |Websitename|40|Dies ist der Anzeigename der URL für die Supportwebsite. Wenn Sie für die Supportwebsite eine URL, aber keinen Anzeigenamen angeben, wird im Unternehmensportal auf der Seite **An IT-Abteilung wenden** der Text **Zur IT-Website wechseln** angezeigt.|
 
-## Anpassen des Unternehmensbrandings
+
+#### Anpassen des Unternehmensbrandings
+
 Sie können Ihr Unternehmensportal mit Ihrem Firmenlogo, Firmennamen, Farbdesign und Hintergrund anpassen.
 
 |Feldname|Weitere Informationen|
@@ -81,13 +84,11 @@ Sie können Ihr Unternehmensportal mit Ihrem Firmenlogo, Firmennamen, Farbdesign
 
 Nach dem Speichern Ihrer Änderungen können Sie über die Links, die am unteren Rand der Seite **Unternehmensportal** in der Verwaltungskonsole angegeben sind, die Unternehmensportalwebsite anzeigen. Diese Links können nicht geändert werden. Wenn ein Benutzer sich anmeldet, werden über diese Links Ihre Abonnements im Unternehmensportal angezeigt.
 
-
-
 ## Zuweisen einer Intune-Benutzerlizenz
 
-Verwenden Sie das **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]**, um cloudbasierte Benutzer manuell hinzuzufügen und um sowohl cloudbasierten Benutzerkonten als auch Konten, die aus Ihrem lokalen Active Directory mit Azure AD synchronisiert wurden, Lizenzen zuzuweisen.
+Verwenden Sie das **Verwaltungsportal von Office 365**, um cloudbasierte Benutzer manuell hinzuzufügen und um sowohl cloudbasierten Benutzerkonten als auch Konten, die aus Ihrem lokalen Active Directory mit Azure AD synchronisiert wurden, Lizenzen zuzuweisen.
 
-1.  Melden Sie sich mit den Anmeldeinformationen Ihres Mandantenadministrators beim [Intune-Kontoportal](https://portal.office.com/Admin/Default.aspx) an.
+1.  Melden Sie sich mit den Anmeldeinformationen Ihres Mandantenadministrators beim [Verwaltungsportal von Office 365](https://portal.office.com/Admin/Default.aspx) an.
 
 2.  Wählen Sie das Benutzerkonto aus, dem Sie eine Intune-Benutzerlizenz zuweisen möchten, und aktivieren Sie in den Eigenschaften des Benutzerkontos das Kontrollkästchen **Microsoft Intune**.
 
@@ -107,6 +108,7 @@ Sie haben auch folgende Möglichkeiten:
  - [Angeben von Geräten im Besitz des Unternehmens mithilfe von IMEI-Nummern](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md), um Geräte zu registrieren und Zielrichtlinien festzulegen
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

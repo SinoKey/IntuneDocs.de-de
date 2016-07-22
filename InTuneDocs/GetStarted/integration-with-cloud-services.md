@@ -1,33 +1,27 @@
 ---
-# required metadata
-
 title: Intune-Integration mit Microsoft-Clouddiensten und -Produkten | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 49675811-08a3-408f-810b-89552ff404bd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: e58b295bf89e200c7c986902c9b4408d23e67c64
+
 
 ---
 
-# Intune-Integration mit Microsoft-Clouddiensten und -Produkten
+# Intune-Integration in Microsoft Cloud Services und Microsoft-Produkte
 
-Bevor Sie [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] einrichten, lesen Sie dieses Thema und andere Anforderungen, die unter [ Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md) aufgeführt sind..
+Bevor Sie [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] einrichten, lesen Sie dieses Thema und andere Anforderungen, die unter [ Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md) aufgeführt sind.
 ##Integration mit anderen Microsoft-Clouddiensten
 
 
@@ -36,17 +30,18 @@ Bevor Sie [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] einrichten, l
 Erfahren Sie mehr über die [Verwaltung von Azure AD](http://technet.microsoft.com/library/hh967611.aspx) in der TechNet-Bibliothek.
 
 ## Integration mit anderen Microsoft-Produkten
-Sie können [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] als eigenständigen oder mit anderen Produkten integrierten Clouddienst verwenden. Gegenwärtig kann nur [!INCLUDE[cmshort](../includes/cmshort_md.md)] direkt integriert werden mit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+Sie können [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] als eigenständigen oder mit anderen Produkten integrierten Clouddienst verwenden. Gegenwärtig kann nur [!INCLUDE[cmshort](../includes/cmshort_md.md)] direkt mit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] integriert werden.
 
 Die Entscheidung zur Integration von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] mit [!INCLUDE[cmshort](../includes/cmshort_md.md)] ist endgültig und erfordert die Festlegung der Autorität für die Verwaltung mobiler Geräte über die [!INCLUDE[cmshort](../includes/cmshort_md.md)]-Konsole statt über die [!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)]. Nachdem die Autorität für die Verwaltung mobiler Geräte festgelegt wurde, können Sie diese Konfiguration nicht mehr ändern.
 
-Bei Verwendung von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] mit [!INCLUDE[cmshort](../includes/cmshort_md.md)] verwenden Sie nicht die [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)], um [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] zu verwalten, sondern die [!INCLUDE[cmshort](../includes/cmshort_md.md)]-Konsole. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] verwendet weiterhin den Cloudspeicher in Azure zum Hosten von Software, die Sie für Geräte bereitstellen, die Sie mit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+Bei Verwendung von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] mit [!INCLUDE[cmshort](../includes/cmshort_md.md)] verwenden Sie nicht die [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)], um [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] zu verwalten, sondern die [!INCLUDE[cmshort](../includes/cmshort_md.md)]-Konsole. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Intune verwendet weiterhin den Cloudspeicher in Azure zum Hosten von Software, die Sie für Geräte bereitstellen, die Sie mit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] verwalten.
 
 Weitere Informationen finden Sie unter [Verwalten von mobilen Geräten mit Configuration Manager und Microsoft Intune](http://msdn.microsoft.com/library/2c6bd0e5-d436-41c8-bf38-30152d76be10) in der Dokumentation zu [!INCLUDE[cm5short](../includes/cm5short_md.md)] SP1.
 
 ### Weitere Informationen:
 [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

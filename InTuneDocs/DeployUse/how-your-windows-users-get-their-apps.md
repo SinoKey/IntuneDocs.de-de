@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Wie Ihre Windows-Benutzer Apps erhalten | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9d867202b8b3cc5e6ed77d97bcfddce2beabdd40
+ms.openlocfilehash: f226ea2a7be64ef759f61c61903bb0dc964c1410
+
 
 ---
 
@@ -38,10 +32,12 @@ Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Endbenutzer 
 
 **Nicht verwaltete Apps**: Apps, die mittels Richtlinien verwaltet werden können und die nicht von Intune umschlossen werden oder nicht in das Intune MAM SDK integriert sind. Diesen Apps lassen sich keine Anwendungsrichtlinien zuweisen.
 
-###Weitere Informationen finden Sie unter [Wie Ihre Android-Benutzer Apps erhalten](how-your-android-users-get-their-apps.md).</br>
+###Weitere Informationen:
+[Wie Ihre Android-Benutzer Apps erhalten](how-your-android-users-get-their-apps.md)</br>
 [Wie Ihre iOS-Benutzer Apps erhalten](how-your-ios-users-get-their-apps.md)
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

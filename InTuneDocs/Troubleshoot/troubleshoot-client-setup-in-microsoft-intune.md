@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Behandlung von Problemen bei der Clienteinrichtung | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c8409d58e3e7a1038e4d030d88a9ffe7d29bc1b6
+ms.openlocfilehash: 78fa086f2e7e6c836aa74acb303d9a6564ed0993
+
 
 ---
 
@@ -32,7 +26,7 @@ Die folgenden Abschnitte enthalten Informationen zu gängigen Problemen bei der 
 
 -   Wenn in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) für den Computer keine Warnungen zur Softwarebereitstellung angezeigt werden, überprüfen Sie Internetverbindung und Proxykonfiguration des Computers und stellen Sie sicher, dass der Computer mit der Dienst-URL [https://manage.microsoft.com](https://manage.microsoft.com/) kommunizieren kann. Wiederholen Sie anschließend die Installation der Clientsoftware.
 
--   Sie können eine E-Mail-Nachricht an ausgewählte Empfänger versenden lassen, wenn eine Fehlerwarnung bei der Bereitstellung von Clientsoftware auftritt. Konfigurieren Sie dazu eine Benachrichtigungsregel im Arbeitsbereich **Admin** . Weitere Informationen finden Sie unter [Benachrichtigungen durch Microsoft Intune-Warnungen](/intune/deploy-use/get-notified-by-microsoft-intune-alerts).
+-   Sie können eine E-Mail-Nachricht an ausgewählte Empfänger versenden lassen, wenn eine Fehlerwarnung bei der Bereitstellung von Clientsoftware auftritt. Konfigurieren Sie dazu eine Benachrichtigungsregel im Arbeitsbereich **Admin** . Weitere Informationen finden Sie unter [Benachrichtigungen durch Microsoft Intune-Warnungen](/intune/deploy-use/get-notified-by-alerts).
 
 -   Intune zeigt die kritische Warnung **Fehler bei der Bereitstellung der Clientsoftware** an, wenn die Bereitstellung der Clientsoftware nicht gelingt. Diese Warnung wird auf den Seiten **Systemübersicht** und **Warnungen** in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) angezeigt. So überprüfen Sie, ob Warnungen vorliegen:
 
@@ -56,23 +50,23 @@ Die folgenden Abschnitte enthalten Informationen zu gängigen Problemen bei der 
 
 ## Computerregistrierungspaket lässt sich nicht herunterladen
 **Problem:** Beim Versuch, einen Computer zu registrieren, geschieht Folgendes:
--  Das Registrierungspaket lässt sich nicht herunterladen. 
+-  Das Registrierungspaket lässt sich nicht herunterladen.
 -  Das Dialogfeld zum Herunterladen wird angezeigt, aber ein Timeout tritt auf.
 
 **Lösung:** Stellen Sie sicher, dass in dem Browser, den Sie für den Download verwenden, für den Zeitraum, in dem der Download erfolgt, Downloads aktiviert sind, und dass verschlüsselte Dateien auf Ihrem lokalen Datenträger gespeichert werden können.
 
 ## Clientinstallation reagiert nicht mehr – Fehlercode 0x80040154
 **Problem:**
- 
+
 -  Clientinstallation reagiert bei Registrierung nicht mehr
 
--  Registrierung des Geräts unmöglich 
+-  Registrierung des Geräts unmöglich
 
 -  Fehler 0x80040154 in WindowsUpdate.log
 
 Das Fehlen kritischer Softwareupdates auf dem PC kommt als Ursache infrage.
 
-**Lösung:** Stellen Sie sicher, dass Ihre Softwareupdaterichtlinie die Installation wichtiger Updates ermöglicht, wie in [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) (Windows-PCs mit Softwareupdates in Microsoft Intune auf aktuellem Stand halten) beschrieben. 
+**Lösung:** Stellen Sie sicher, dass Ihre Softwareupdaterichtlinie die Installation wichtiger Updates ermöglicht, wie in [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) (Windows-PCs mit Softwareupdates in Microsoft Intune auf aktuellem Stand halten) beschrieben.
 
 
 ## Fehler in „policyplatform.log“ im Zusammenhang mit der Microsoft Intune-Richtlinie
@@ -84,7 +78,8 @@ Bei Windows-Geräten ohne MDM können Richtlinienfehler in der Datei „policypl
 
 2.  Warten Sie 20 Minuten, bis die Clientsoftware entfernt wurde.
 
-    > [!NOTE] Versuchen Sie nicht, den Client über „Programme und Features“ zu entfernen.
+    > [!NOTE]
+    > Versuchen Sie nicht, den Client über „Programme und Funktionen“ zu entfernen.
 
 3.  Geben Sie im Startmenü **UAC** ein, um die Einstellungen der Benutzerkontensteuerung zu öffnen.
 
@@ -127,9 +122,10 @@ In der folgenden Tabelle werden Fehlercodes erläutert, die in **Warnungen** ang
 Wenn weiterhin Installationsprobleme auftreten, wenden Sie sich wie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Support. Halten Sie das Registrierungsprotokoll des Clientcomputers (dieses befindet sich unter %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log und %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) und das Windows Update-Protokoll (%*windir*%\windowsupdate.log) für die Supportmitarbeiter bereit.
 
 ### Nächste Schritte
-Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Microsoft Support.
+Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

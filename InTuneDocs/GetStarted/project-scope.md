@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Projektumfang | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9218b1f58032c07eddf84f04a667e2c56b5463ed
+ms.openlocfilehash: cf9b8bf9a07e4d5a29637fe52a0bfb6e0191478e
+
 
 ---
 
@@ -63,6 +57,14 @@ Lesen Sie diesen Abschnitt, um für diese angegebene Rolloutphase eine Anleitung
 ### Planung
 
 Der Großteil des Aufwands während der Phase zum Festlegen des Projektumfangs dreht sich um Planung und Vorbereitung. Berücksichtigen Sie beim Festlegen des Projektumfangs sowohl technische als auch organisatorische Aspekte sowie die jetzige Arbeitsweise der Benutzer und die erforderlichen Verhaltensänderungen. Führen Sie sich zunächst Ihr umfassendes Endziel vor Augen, und erstellen Sie in den nachfolgenden Phasen kleinere Ziele, um die Richtung zu halten.
+
+
+ > [!NOTE]
+ > 
+ > Diese Vorlagen können hilfreich sein, wenn Sie am Projektumfang arbeiten:
+ > > - [Intune oder Intune mit Configuration Manager-Entscheidungsvorlage](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
+ > - [Planungsvorlage für Mobile Apps](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
+>- [Planungsvorlage für die allgemeine Geräteverwaltung](https://gallery.technet.microsoft.com/General-device-management-334c3792)
 
 ### Helpdesk
 Damit Wissensarbeiter von einer produktiven Intune-Umgebung profitieren, sollte der Helpdesk gut vorbereitet sein. Berücksichtigen Sie beim Definieren des Projektumfangs die Rolle des Helpdesks in den einzelnen Phasen sowie die Ressourcen, die erforderlich sind, um die Unterstützung von Endbenutzern durch den Helpdesk zu gewährleisten.
@@ -110,6 +112,7 @@ Hier sind einige Probleme aufgeführt, die möglicherweise während der Phase zu
 [Proof of Concept](proof-of-concept.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

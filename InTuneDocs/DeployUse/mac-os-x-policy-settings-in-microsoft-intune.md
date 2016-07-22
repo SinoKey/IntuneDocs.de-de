@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Einstellungen für Mac OS X-Richtlinien | Microsoft Intune
-description:
-keywords:
+title: "Einstellungen für Mac OS X-Richtlinien | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: bbbb666fdc34a82d247d760d156d48c5ac72374c
+
 
 ---
 
@@ -67,7 +60,8 @@ Aktivieren Sie in der Liste der **kompatiblen&amp; und nicht kompatiblen Apps f�
 |**Anwendungen importieren**|Importiert eine Liste von Apps, die Sie in einer CSV-Datei angegeben haben. Verwenden Sie in der Datei das Format App-Name, Herausgeber, Paket-ID der App.|
 |**Bearbeiten**|Ermöglicht Ihnen das Bearbeiten der Werte für Name, Herausgeber und Paket-ID der ausgewählten App.|
 |**Löschen**|Löscht die ausgewählte App aus der Liste.|
-> [!TIP] Weitere Informationen zu Intune-Berichten finden Sie unter [Einblicke in Microsoft Intune-Vorgänge durch Berichte](understand-microsoft-intune-operations-by-using-reports.md).
+> [!TIP]
+> Weitere Informationen zu Intune-Berichten finden Sie unter [Einblicke in Microsoft Intune-Vorgänge durch Berichte](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
 > Wenn sich ein Mac OS X-Gerät im Energiesparmodus befindet, können keine Richtlinien oder Profile bereitgestellt oder inventarisiert werden. Infolgedessen zeigt die Intune-Konsole möglicherweise vorübergehend den Status **Richtlinieneinstellungen mit Fehlern** an, bis das Gerät erneut aktiviert und der Energiesparmodus beendet wird.
@@ -105,7 +99,7 @@ Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigur
 |Name der Einstellung|Details|
     |----------------|--------------------|
     |**Name des benutzerdefinierten Konfigurationsprofils (zur Anzeige beim Benutzer)**|Geben Sie einen Namen für die Richtlinie an, der auf dem Gerät und in Intune-Richtlinienberichten angezeigt wird.|
-    |**Profil-Konfigurationsdatei**|Klicken Sie auf **Importieren**, und suchen Sie dann das mit Apple Configurator erstellte Konfigurationsprofil. **Tipp:** Hilfe zum Erstellen des Konfigurationsprofils finden Sie in diesem Thema unter [Erstellen einer Konfigurationsprofildatei](#BKMK_Prof).|
+    |**Profil-Konfigurationsdatei**|Klicken Sie auf **Importieren**, und suchen Sie dann das mit Apple Configurator erstellte Konfigurationsprofil. **Tipp:** Hilfe zum Erstellen des Konfigurationsprofils finden Sie in diesem Thema unter **Erstellen einer Konfigurationsprofildatei**.|
     |**Details zum Konfigurationsprofil**|Zeigt den XML-Code des importierten Konfigurationsprofils an.|
 
 
@@ -126,6 +120,7 @@ Die Konfigurationsprofildatei, die von der benutzerdefinierten Richtlinie verwen
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Senden von Diagnosedatenprotokollen an Ihren IT-Administrator per E-Mail | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 57646f103fb0520295729a89a30692c657896e55
+
 
 ---
 
@@ -37,7 +31,7 @@ So aktivieren Sie die ausführliche Protokollierung:
 2.  Tippen Sie auf **Menü** &gt; **Einstellungen**.
 
     > [!NOTE] 
-    > Je nach Typ des vorliegenden Android-Geräts kann **Menü** eine Schaltfläche in der Software oder eine Taste auf dem Gerät sein.
+    > Je nach Typ des Android-Geräts, das Sie haben, kann **Menü** eine Schaltfläche in der Software oder Taste auf dem Gerät sein.
 
 3.  Tippen Sie unter **Diagnosedaten** auf **Daten senden**.
 
@@ -54,6 +48,7 @@ So aktivieren Sie die ausführliche Protokollierung:
 ### Weitere Informationen:
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

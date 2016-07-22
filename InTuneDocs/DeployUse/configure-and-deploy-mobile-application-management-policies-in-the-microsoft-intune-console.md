@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Konfigurieren und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen in der Microsoft Intune-Konsole | Microsoft Intune
-description:
-keywords:
+title: "Konfigurieren und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen in der Microsoft Intune-Konsole | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: a140a2f634397440b35786e7afb3165dccc7d93e
+
 
 ---
 
@@ -34,7 +28,8 @@ Unterstützung der Verwaltungsrichtlinien für mobile Anwendungen:
 
 -   Geräte unter iOS 7 und höher.
 
-> [!TIP] Verwaltungsrichtlinien für mobile Anwendungen unterstützen Geräte, die bei Intune registriert sind.
+> [!TIP]
+> Verwaltungsrichtlinien für mobile Anwendungen unterstützen Geräte, die bei Intune registriert sind.
 >
 > Informationen zum Erstellen von App-Verwaltungsrichtlinien für Geräte, die nicht von Intune verwaltet werden, finden Sie unter [Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
@@ -46,9 +41,9 @@ Zum Anwenden von Einschränkungen auf eine App muss die App das Microsoft Intune
 
 -   **Verwenden einer „umschlossenen“ App**: Apps, die mithilfe des **Microsoft Intune App Wrapping Tool** neu gepackt werden, sodass sie das App-SDK enthalten. Dieses Tool wird normalerweise verwendet, um Unternehmensanwendungen zu verarbeiten, die intern erstellt wurden. Es kann nicht verwendet werden, um Apps zu verarbeiten, die aus dem App Store heruntergeladen wurden. Weitere Informationen finden Sie unter [Vorbereiten von iOS-Apps für die Verwaltung mobiler Anwendungen mit dem Microsoft Intune App Wrapping-Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) und [Vorbereiten von Android-Apps für die Verwaltung von mobilen Anwendungen mit dem Microsoft Intune App Wrapping-Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
-- **Schreiben einer eigenen App, die das Intune App SDK beinhaltet**: Mit dem Intune App SDK können Sie App-Verwaltungsfeatures integrieren, während Sie die App entwickeln. Weitere Informationen finden Sie unter [Übersicht über das Intune App SDK](/develop/intune-app-sdk).
+- **Schreiben einer eigenen App, die das Intune App SDK beinhaltet**: Mit dem Intune App SDK können Sie App-Verwaltungsfeatures integrieren, während Sie die App entwickeln. Weitere Informationen finden Sie unter [Übersicht über das Intune App SDK](/intune/develop/intune-app-sdk)
 
-Hilfe bei der Auswahl der zu verwendenden Methode (App Wrapping-Tool oder Intune App SDK) erhalten Sie unter [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune).
+Hilfe für die Wahl zwischen dem App Wrapping Tool und dem Intune App SDK erhalten Sie unter [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 Einige verwaltete Apps, wie die Outlook-App für iOS und Android, unterstützen **mehrere Identitäten**. Dies bedeutet, dass Intune Verwaltungseinstellungen nur auf Unternehmenskonten oder Daten in der App anwendet.
 
@@ -60,7 +55,8 @@ Beispiel für die Verwendung der Outlook-App:
 
 -   Das verwendete Unternehmenskonto muss dasselbe Konto sein, mit dem das Gerät bei Intune registriert wurde.
 
-> [!TIP] Wenn Sie Intune mit Configuration Manager verwenden, finden Sie Informationen unter [Steuern von Apps mithilfe von Verwaltungsrichtlinien für mobile Anwendungen in Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
+> [!TIP]
+> Wenn Sie Intune mit Configuration Manager verwenden, finden Sie Informationen unter [Steuern von Apps mithilfe von Verwaltungsrichtlinien für mobile Anwendungen in Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
 
 ## Erstellen und Bereitstellen einer App mit einer Verwaltungsrichtlinie für mobile Anwendungen
 
@@ -152,7 +148,8 @@ Wenn Sie die App bereitstellen, wählen Sie die Verwaltungsrichtlinie für mobil
 
 Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps.md).
 
-> [!IMPORTANT] Für Geräte, die ältere Betriebssysteme als iOS 7.1 ausführen, werden verknüpfte Richtlinien nicht entfernt, wenn die App deinstalliert wird.
+> [!IMPORTANT]
+> Für Geräte, die ältere Betriebssysteme als iOS 7.1 ausführen, werden verknüpfte Richtlinien nicht entfernt, wenn die App deinstalliert wird.
 >
 > Wenn das Gerät von Intune abgemeldet wird, werden die Richtlinien nicht aus den Apps entfernt. Alle Apps, auf die Richtlinien angewendet waren, behalten die Richtlinieneinstellungen bei, auch nachdem die App deinstalliert und neu installiert wurde.
 
@@ -163,7 +160,8 @@ In diesem Fall müssen Sie den Benutzer bitten, die nicht verwaltete Version man
 
 Bei Geräten unter iOS 9 und höher wird der Benutzer automatisch um die Genehmigung gebeten, dass Intune die Verwaltung der vorhandenen App übernehmen darf. Wenn der Benutzer zustimmt, wird die App von Intune verwaltet, und alle Verwaltungsrichtlinien für mobile Anwendungen, die Sie der App zugeordnet haben, werden ebenfalls angewendet.
 
-> [!TIP] Wenn sich das Gerät im überwachten Modus befindet, übernimmt Intune die Verwaltung der vorhandenen App, ohne den Benutzer vorher um Genehmigung zu bitten.
+> [!TIP]
+> Wenn sich das Gerät im überwachten Modus befindet, übernimmt Intune die Verwaltung der vorhandenen App, ohne den Benutzer vorher um Genehmigung zu bitten.
 
 ## **Schritt 5:** Überwachen Sie die App-Bereitstellung.
 Nachdem Sie eine mit einer Verwaltungsrichtlinie für mobile Anwendungen verknüpfte App erstellt und bereitgestellt haben, verwenden Sie das folgende Verfahren, um die App zu überwachen und alle Richtlinienkonflikte zu lösen.
@@ -198,6 +196,7 @@ In Fällen, in denen das Gerät oder der Benutzer zwei in Konflikt stehende Rich
 -   Wenn keine Richtlinie für das Gerät bereitgestellt wurde und zwei widersprüchliche Einstellungen bereitgestellt werden, wird die in das Gerät integrierte Standardeinstellung verwendet.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

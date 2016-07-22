@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Installieren einer neuen Version der Unternehmensportal-App | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/30/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 29d409f272800e0c5ccaf71494b5e98d1edaae4e
 
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: priyar
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -44,7 +35,8 @@ Wenn eine neue Version des Unternehmensportals verfügbar ist, wird vom Apple Ap
 
 2.  Folgen Sie den Installationsanweisungen.
 
-    > [!NOTE] Wenn Sie nicht auf den Windows Store zugreifen können, wenden Sie sich an Ihren IT-Administrator.
+    > [!NOTE]
+    > Falls Sie nicht auf den Windows Store zugreifen können, wenden Sie sich an Ihren IT-Administrator.
 
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
@@ -57,6 +49,7 @@ Informationen zu anderen Aufgaben im Zusammenhang mit Ihrem Gerät erhalten Sie,
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

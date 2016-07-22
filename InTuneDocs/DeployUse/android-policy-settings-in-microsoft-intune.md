@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Einstellungen für Android- und Samsung KNOX-Konfigurationsrichtlinien | Microsoft Intune
-description:
-keywords:
+title: "Einstellungen für Android- und Samsung KNOX-Konfigurationsrichtlinien | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 62beaec31a0cdc3c28fd3eed820a6771e42ef3e7
+ms.openlocfilehash: f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad
+
 
 ---
 
@@ -55,6 +49,7 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 |**Kennwortverlauf speichern** – **Wiederverwendung vorheriger Kennwörter verhindern**|Verhindert die Wiederverwendung zuvor verwendeter Kennwörter.|Ja|Ja|
 |**Kennwortqualität**|Wählen Sie den erforderlichen Grad der Kennwortkomplexität aus. Wählen Sie zudem aus, ob biometrische Geräte zulässig sind.|Ja|Ja|
 |**Fingerabdruckentsperrung zulassen**|Lässt das Entsperren des Geräts mittels Fingerabdruck zu.|Nein|Ja|
+|**Zulassen von Smart Lock und anderen Vertrauens-Agents**<br>(Android 5 und höher)|Ermöglicht Ihnen die Steuerung der Smart Lock-Funktion auf kompatiblen Android-Geräten. Diese Telefonfunktion wird manchmal als Vertrauens-Agent bezeichnet und ermöglicht Ihnen das Deaktivieren oder Umgehen des Kennworts für den Gerätesperrbildschirm, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet, z. B. wenn es mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet. Mit dieser Einstellung können Sie verhindern, dass Endbenutzer Smart Lock konfigurieren.|Ja|Nein|
 
 ### Verschlüsselungseinstellungen
 
@@ -73,7 +68,7 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 
 ### Cloudeinstellungen – Dokumente und Daten
 
-|Name der Einstellung|Details|Android und Samsung KNOX|Android 4.0+|
+|Name der Einstellung|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------------------|----------------|
 |**Google-Sicherung zulassen**|Ermöglicht die Verwendung der Google-Sicherung.|Nein|Ja|
 
@@ -95,7 +90,7 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 
 ### Anwendungseinstellungen – Apps
 
-|Name der Einstellung|Android 4.0+|Samsung KNOX|
+|Name der Einstellung|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Google Play Store zulassen**|Ermöglicht dem Benutzer den Zugriff auf den Google Play Store auf dem Gerät.|Nein|Ja|
 
@@ -179,7 +174,8 @@ Stellen Sie mithilfe der **benutzerdefinierten Android-Konfigurationsrichtlinie*
 
 Diese Funktion soll es Ihnen ermöglichen, Android-Einstellungen bereitzustellen, die nicht mit Intune-Richtlinien konfigurierbar sind.
 
-> [!NOTE] Derzeit unterstützen benutzerdefinierte Android-Richtlinien nur das Konfigurieren von WLAN-Einstellungen für Android-Geräte, die einen vorinstallierten Schlüssel enthalten.
+> [!NOTE]
+> Derzeit unterstützen benutzerdefinierte Android-Richtlinien unterstützt nur das Konfigurieren von WLAN-Einstellungen für Android-Geräte, die einen vorinstallierten Schlüssel enthalten.
 
 ### Allgemeine Einstellungen
 
@@ -257,6 +253,7 @@ Obwohl Intune WLAN-Profile für Android-Geräte unterstützt, ist derzeit das Ei
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

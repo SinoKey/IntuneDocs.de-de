@@ -1,38 +1,32 @@
 ---
-# required metadata
-
-title: Entwicklerhandbuch zum Microsoft Intune App SDK für Android | Microsoft Intune
-description:
-keywords:
+title: "Entwicklerhandbuch zum Microsoft Intune App SDK für Android | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
+ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
+
 
 ---
 
 # Microsoft Intune App SDK für Android – Entwicklerhandbuch
 
-> [!NOTE] Lesen Sie am besten zuerst die [Übersicht über das Intune App SDK](intune-app-sdk.md). Dort finden Sie Informationen zu den aktuellen Funktionen des SDK sowie zu den Vorbereitungen, die Sie auf den verschiedenen unterstützten Plattformen für die Integration treffen müssen. 
+> [!NOTE]
+> Lesen Sie am besten zuerst die [Übersicht über das Intune App SDK](intune-app-sdk.md). Dort finden Sie Informationen zu den aktuellen Funktionen des SDK sowie zu den Vorbereitungen, die Sie auf den verschiedenen unterstützten Plattformen für die Integration treffen müssen. 
 
 # Inhalt des SDK 
 
-Das Intune App SDK für Android ist eine Android-Standardbibliothek ohne externe Abhängigkeiten. 
-Das SDK besteht aus:  
+Das Intune App SDK für Android ist eine Android-Standardbibliothek ohne externe Abhängigkeiten. Das SDK besteht aus:  
 
 * **`Microsoft.Intune MAM.SDK.jar`**: Die Schnittstellen, die zum Aktivieren von MAM in einer App sowie zum Aktivieren der Interoperabilität mit der Microsoft Intune-Unternehmensportal-App erforderlich sind. In Apps muss sie als Referenz zu einer Android-Bibliothek angegeben werden.
 
@@ -370,6 +364,7 @@ Das Intune SDK verwaltet des von der Android-API bereitgestellten Vertrag; jedoc
 * Vermeiden Sie eine nicht eindeutige Verwendung von APIs. So führt beispielsweise `Activity.startActivityForResult/onActivityResult` ohne Überprüfung von "requestCode" zu unerwartetem Verhalten.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

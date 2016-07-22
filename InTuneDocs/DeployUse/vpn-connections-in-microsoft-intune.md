@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: VPN-Verbindungen | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 95abe7b12e68755f3c95f91888efd3e85c057119
+ms.openlocfilehash: b55cf263611d6e90805cad9985eb8a5e7ebeb4a0
+
 
 ---
 
@@ -48,19 +42,20 @@ Intune unterstützt die Erstellung von VPN-Profilen mit den folgenden Verbindung
 
 
 
-Verbindungstyp |iOS und Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Desktop und Mobile |
-----------------|------------------|-------|-----------|----------|--------------|-----------------|------------|
+Verbindungstyp |iOS und Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop und Mobile |
+----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Ja |Ja   |Nein    |     Nein    |Nein  |Nein    | Ja (OMA-URI, nur mobil)|     
 Pulse Secure|Ja  |Ja |Ja   |Nein  |Ja  |Ja| Ja|        
 F5 Edge Client|Ja |Ja |Ja |Nein  |Ja  |   Ja |  Ja|   
 Dell SonicWALL Mobile Connect|Ja |Ja |Ja |Nein  |Ja |Ja |Ja|         
 CheckPoint Mobile VPN|Ja |Ja |Ja |Ja |Ja|Ja|Ja|
-Microsoft SSL (SSTP)|Nein |Nein |Nein |Nein |Nein|Nein|Nein|
-Microsoft Automatic|Nein |Nein |Nein |Nein |Nein|Nein|Ja|
-IKEv2|Nein |Nein |Nein |Nein |Nein|Nein|Ja|
-PPTP|Nein |Nein |Nein |Nein |Nein|Nein|Ja|
-L2TP|Nein |Nein |Nein |Nein |Nein|Nein|Ja|
+Microsoft SSL (SSTP)|Nein |Nein |Nein |Nein |Nein|Nein|VPN v1 OMA-URI*|
+Microsoft Automatic|Nein |Nein |Nein |Nein |Nein|Ja (OMA-URI)|Ja|
+IKEv2|Benutzerdefiniertes Profil für iOS|Nein |Nein |Nein |Nein|Ja (OMA-URI)|Ja|
+PPTP|Benutzerdefiniertes Profil für iOS|Nein |Nein |Nein |Nein|Nein|Ja|
+L2TP|Benutzerdefiniertes Profil für iOS|Nein |Nein |Nein |Nein|Ja (OMA-URI)|Ja|
 
+\* Ohne zusätzliche Einstellungen, die andernfalls für Windows 10 verfügbar sind.
 
 > [!IMPORTANT] Vor der Verwendung von VPN-Profilen, die auf einem Gerät bereitgestellt werden, müssen Sie die entsprechende VPN-App für das Profil installieren. Sie können die Informationen im Thema [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) verwenden, um Unterstützung beim Bereitstellen der entsprechenden Anwendung mit Intune zu erhalten.  
 
@@ -164,6 +159,7 @@ Eine Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeit
 [App-bezogenes VPN für Android Pulse Secure](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jul16_HO1-->
 
 

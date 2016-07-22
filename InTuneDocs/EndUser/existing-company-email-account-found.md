@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Vorhandenes geschäftliches E-Mail-Konto gefunden | Microsoft Intune
-description:
-keywords:
+title: "Vorhandenes geschäftliches E-Mail-Konto gefunden | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 02a07a6017ed2bb569dd9d3756f84b7b8078f630
+
 
 ---
 
@@ -40,6 +33,7 @@ Wenn neue E-Mail-Einstellungen nicht nach einer Weile angezeigt werden, wenden S
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

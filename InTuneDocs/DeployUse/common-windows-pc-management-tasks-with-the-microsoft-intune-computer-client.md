@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Allgemeine Aufgaben zur Verwaltung von Windows-PCs | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 530bf3234001946776593ae0257ea72a06c8612f
+ms.openlocfilehash: 222b9aac19993f184ff68800a00f8d9df8b36237
+
 
 ---
 
@@ -42,7 +36,7 @@ Das Microsoft Intune Center bietet Benutzern folgende Möglichkeiten:
 
 -   Verwalten von Microsoft Intune Endpoint Protection
 
--   Anfordern von Remoteunterstützung
+<!--- -   Request remote assistance.--->
 
 Das Microsoft Intune Center ist auf allen verwalteten Computern installiert. Sie können die folgenden Einstellungen in einer Intune Center-Richtlinie konfigurieren, die dann Benutzern im Microsoft Intune Center angezeigt werden:
 
@@ -139,7 +133,8 @@ Wenn Sie einen Computer abkoppeln, werden folgende Aktionen ausgeführt:
 
 -   Abgekoppelte Computer können je nach Konfiguration weiterhin Updates über Windows Server Update Services, Windows Update oder Microsoft Update empfangen.
 
-    > [!IMPORTANT] Wurde die Clientsoftware mithilfe eines Gruppenrichtlinienobjekts installiert, dann müssen Sie zuerst das Gruppenrichtlinienobjekt entfernen, bevor Sie die Clientsoftware entfernen können. So wird verhindert, dass die Software erneut installiert wird.
+    > [!IMPORTANT]
+    > Wurde die Clientsoftware mithilfe eines Gruppenrichtlinienobjekts installiert, dann müssen Sie zuerst das Gruppenrichtlinienobjekt entfernen, bevor Sie die Clientsoftware entfernen können. So wird verhindert, dass die Software erneut installiert wird.
 
     Wenn der Client nicht deinstalliert werden kann, finden Sie hilfreiche Informationen unter [Problembehandlung für Endpoint Protection](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 
@@ -162,61 +157,63 @@ Damit Sie Software für einen Benutzer bereitstellen können, müssen Sie diesen
 
     -   Zum Verknüpfen des Computers mit einem neuen Benutzer wählen Sie diesen in der Liste **Alle Benutzer** aus. Überprüfen Sie, ob die Benutzerdaten korrekt sind, und wählen Sie **OK** aus.
 
-> [!TIP] Wenn Sie die Fähigkeit der Endbenutzer, sich mit Computern zu verknüpfen, einschränken möchten, aktivieren Sie in der Richtlinie **Microsoft Intune-Agent-Einstellungen** die Option **Fähigkeit der Benutzer einschränken, sich mit Computern zu verknüpfen**.
+> [!TIP]
+> Wenn Sie die Fähigkeit der Endbenutzer, sich mit Computern zu verknüpfen, einschränken möchten, aktivieren Sie die Option **Fähigkeit der Benutzer einschränken, sich mit Computern zu verknüpfen** in der Richtlinie **-Microsoft Intune-Agent-Einstellungen**.
 
-## Anfordern und Bereitstellen von Remoteunterstützung für Windows-PCs, die die Intune-Clientsoftware verwenden
+<!--- ## Request and provide remote assistance to Windows PCs that use the Intune client software
 
 > [!IMPORTANT]
-> Möglicherweise werden bei Ihnen die Optionen zum Konfigurieren der TeamViewer-Integration für die Remoteunterstützung in der Intune-Verwaltungskonsole nicht angezeigt. Diese Funktion steht derzeit nicht für alle Kunden zur Verfügung, sie wird jedoch bald auf breiterer Basis angeboten.
+> You might not see the options to configure TeamViewer integration for remote assistance in the Intune admin console. This capability is not currently available to all customers, but will be rolling our more widely soon.
      
 
-In Microsoft Intune können Sie die [TeamViewer](https://www.teamviewer.com)-Software verwenden, um PC-Benutzer remote zu unterstützen, bei denen die Intune-Clientsoftware ausgeführt wird. Sobald ein Benutzer Hilfe über das Microsoft Intune Center anfordert, werden Sie durch eine Warnung benachrichtigt, können die Anforderung annehmen und Unterstützung leisten.
-Diese Funktion ersetzt die vorhandene Funktion „Windows-Remoteunterstützung“ in Intune.
+Microsoft Intune can use the [TeamViewer](https://www.teamviewer.com) software to let users of PCs that run the Intune client software get remote assistance help from you. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance.
+This functionality replaces the existing Windows Remote Assistance functionality in Intune.
 
 
-### Vorbereitung
+### Before you start
 
-Bevor Sie entsprechende Einrichtungsschritte ausführen und auf Anforderungen von Remoteunterstützung reagieren können, müssen Sie sicherstellen, dass folgende Voraussetzungen erfüllt sind:
+Before you can begin to establish and respond to remote assistance requests, you must ensure the following prerequisites are in place:
 
-- Sie müssen sich für ein [TeamViewer-Konto registriert haben](https://login.teamviewer.com/LogOn#register), um sich bei der TeamViewer-Website anzumelden.
-- Die Windows-PCs, die auf denen Sie Administrationsaufgaben ausführen möchten, müssen [durch den Windows-PC-Client verwaltet werden](manage-windows-pcs-with-microsoft-intune.md).
-- Auf allen von Intune unterstützten Windows-PC-Betriebssystemen können Administrationsaufgaben ausgeführt werden.
+- You must have [signed up for a TeamViewer account](https://login.teamviewer.com/LogOn#register) to log into the TeamViewer website.
+- Windows PCs that you want to administer must be [managed by the Windows PC client](manage-windows-pcs-with-microsoft-intune.md)
+- All Windows PC operating systems supported by Intune can be administered.
 
-### Konfigurieren des TeamViewer Connectors
+### Configure the TeamViewer Connector
 
-1. Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Option **Verwaltung** aus.
-2. Wählen Sie im Arbeitsbereich **Verwaltung** die Option **TeamViewer** aus.
-3. Wählen Sie auf der Seite **TeamViewer** unter **TeamViewer Connector** die Option **Aktivieren**.
-4. Lesen Sie im Dialogfeld **TeamViewer aktivieren** die Lizenzbedingungen, und klicken Sie auf **Annehmen**, um sie zu akzeptieren. Wenn Sie noch keine TeamViewer-Lizenz besitzen, wählen Sie **TeamViewer-Lizenz erwerben** aus.
-5. Wenn das TeamViewer-Browserfenster angezeigt wird, melden Sie sich mit Ihren TeamViewer-Anmeldeinformationen bei der Website an.
-6. Lesen Sie auf der TeamViewer-Website die Optionen, um das Herstellen einer Verbindung zwischen Intune und TeamViewer zuzulassen, und akzeptieren Sie sie.
-7. Vergewissern Sie sich in der Intune-Konsole, dass das Element **TeamViewer Connector** als **Aktiviert** angezeigt wird.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin**.
+2. In the **Admin** workspace, choose **TeamViewer**.
+3. On the **TeamViewer** page, under **TeamViewer Connector**, choose **Enable**.
+4. In the **Enable TeamViewer** dialog box, view, then **Accept** the license terms. If you don't already own a TeamViewer license, choose **Purchase a TeamViewer license**.
+5. After the TeamViewer browser window opens, sign into the site with your TeamViewer credentials.
+6. On the TeamViewer site, read, then accept the options to allow Intune to connect with TeamViewer.
+7. In the Intune console, verify that the **TeamViewer Connector** item shows as **Enabled**.
 
 
-### Öffnen einer Remoteunterstützungsanforderung (Endbenutzer)
+### Open a remote assistance request (end user)
 
-1. Öffnen Sie auf einem Windows-Client-PC das **Microsoft Intune Center**.
-2. Wählen Sie unter **Remoteunterstützung** die Option **Remoteunterstützung anfordern** aus.
-3. Nach der Genehmigung der Anforderung (siehe unten) wird TeamViewer auf dem Client geöffnet. Der Benutzer muss alle Meldungen akzeptieren, die darauf hinweisen, dass der Webbrowser die TeamViewer-Anwendung zu öffnen versucht.
-4. Der Benutzer wird in einer Meldung gebeten zuzulassen, dass Sie die Kontrolle über seinen PC übernehmen. Er muss diese Meldung akzeptieren, damit weitere Schritte möglich sind.
-5. Während der Remoteunterstützungssitzung sieht der Benutzer ein Fenster, das anzeigt, dass Sie mit dem Computer des Benutzers verbunden sind. Wenn der Benutzer das Fenster schließt, wird die Remotesitzung beendet.
+1. On a client Windows PC, open the **Microsoft Intune Center**.
+2. Under **Remote Assistance**, choose **Request Remote Assistance**.
+3. After you approve the request (see below), TeamViewer opens on the client. The user must accept any messages indicating that the web browser is trying to open the TeamViewer application.
+4. The user sees a message asking if you can control their PC. They must accept this message to continue.
+5. During the remote assistance session, the user sees a window that shows them you are connected. If they close this window, the remote session ends.
 
-### Reagieren auf eine Remoteunterstützungsanforderung
+### Respond to a remote assistance request
 
-1. Wenn ein Benutzer eine Remoteunterstützungsanforderung übermittelt, können Sie sie im Arbeitsbereich **Warnungen** unter **Überwachung** > **Remoteunterstützung** anzeigen. Beispiel:
-> ![Screenshot einer Remoteunterstützungsanforderung](./media/team-viewer.png)
+1. When a user submits a remote assistance request, you can view it in the **Alerts** workspace, under **Monitoring** > **Remote Assistance**. For example:
+> ![Screenshot of a remote assistance request](./media/team-viewer.png)
 
-<br>Wenn die Anforderung länger als 4 Stunden unbeantwortet bleibt, wird sie entfernt.
-2. Um die Anforderung anzunehmen, wählen Sie **Anforderung genehmigen und Remoteunterstützung starten** aus.
-3. Wählen Sie im Dialogfeld **Eine neue Remoteunterstützungsanforderung steht aus** die Option **Remoteunterstützungsanforderung annehmen** aus. Falls sie noch nicht vorhanden sind, installiert TeamViewer alle nötigen Apps auf Ihrem Computer.
-4. Anschließend benachrichtigt TeamViewer den Endbenutzer, dass Sie die Kontrolle seinen PC übernehmen möchten. Nachdem der Benutzer dies akzeptiert hat, wird das TeamViewer-Fenster geöffnet, und Sie können den PC steuern. 
+<br>If a request goes unanswered for more than 4 hours, it is removed.
+2. To accept the request, choose **Approve request and launch Remote Assistance**.
+3. In the **A New Remote Assistance Request is Pending** dialog box, choose **Accept the remote assistance request**. If it's not already installed, TeamViewer will install any necessary apps on your computer.
+4. TeamViewer then notifies the end user that you want to take control of their PC. After the user has accepted the request, the TeamViewer windows opens, and you can control the PC. 
  
-Während einer Remoteunterstützungssitzung können Sie in alle verfügbaren TeamViewer-Befehle nutzen, um den Remote-PC zu steuern. Weitere Informationen und Hilfe zu diesen Befehlen finden Sie auf der TeamViewer-Website im [Handbuch für Fernsteuerung](http://www.teamviewer.com/en/support/documents/).
+While in a remote assistance session, you can use all available TeamViewer commands to control the remote PC. For help with these commands, download the [Manual for remote control](http://www.teamviewer.com/en/support/documents/) from the TeamViewer website.
 
-### Beenden der Remoteunterstützungssitzung
+### Close the remote assistance session
 
-Wählen Sie im **TeamViewer**-Fenster im Menü **Aktionen** den Befehl **Sitzung beenden** aus.
+From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO1-->
 
 

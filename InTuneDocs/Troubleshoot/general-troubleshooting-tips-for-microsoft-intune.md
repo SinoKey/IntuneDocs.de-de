@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Allgemeine Tipps für die Problembehandlung | Microsoft Intune
-description:
-keywords:
+title: "Allgemeine Tipps für die Problembehandlung | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
+ms.openlocfilehash: 6b2d1d5eecb543e45fca5fbb8aa1854c88ec4f9c
+
 
 ---
 
@@ -46,7 +40,7 @@ Nach der Bereitstellung von Microsoft Intune können möglicherweise Probleme be
 
 -   Könnte beim Benutzer ein Authentifizierungsproblem vorliegen? Wenn diese Möglichkeit besteht, überprüfen Sie, ob der Benutzer sich bei anderen Diensten, die Azure Active Directory verwenden, anmelden kann. Prüfen Sie auch, ob der Benutzer sich von einem anderen Gerät aus anmelden kann.
 
--   Haben Sie den Dienststatus überprüft? Sie können Intune-Dienststatus im [Verwaltungsportal von Office 365](https://portal.office.com/Admin/Default.aspx) überwachen. Wählen Sie im linken Bereich **Dienststatus** aus. 
+-   Haben Sie den Dienststatus überprüft? Sie können Intune-Dienststatus im [Verwaltungsportal von Office 365](https://portal.office.com/Admin/Default.aspx) überwachen. Wählen Sie im linken Bereich **Dienststatus** aus.
 
 ## Sammeln Sie verfügbare Daten
 
@@ -54,9 +48,9 @@ Nach der Bereitstellung von Microsoft Intune können möglicherweise Probleme be
   - [Senden von Android-Diagnosedatenprotokollen an Ihren IT-Administrator mithilfe eines USB-Kabels](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Senden von Android-Diagnosedatenprotokollen an Ihren IT-Administrator per E-Mail](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [Senden von Android-Registrierungsfehlern an Ihren IT-Administrator](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
-  - [Senden von iOS-Registrierungsfehlern an Ihren IT-Administrator](/intune/enduser/send-errors-to-your-it-admin-ios.md)
+  - [Senden von iOS-Registrierungsfehlern an Ihren IT-Administrator](/intune/enduser/send-errors-to-your-it-admin-ios)
 
--   Verwaltungskonsolendaten. Bei Problemen mit der Richtlinienimplementierung sollten Sie z. B. die gewünschte Richtlinie und den Status dieser Richtlinie prüfen, wie in [Verwenden von Gruppen zum Verwalten von Benutzern und Geräten mit Microsoft Intune](/indune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) beschrieben.
+-   Verwaltungskonsolendaten: Bei Problemen mit der Richtlinienimplementierung sollten Sie z.B. die gewünschte Richtlinie und den Status dieser Richtlinie überprüfen, wie in [Erstellen von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) beschrieben.
 
 ## Recherchieren der Lösung
 
@@ -97,6 +91,7 @@ Die unten aufgeführten Themen sind Hilfe zur Problembehandlung für bestimmte P
 [Behandlung von Problemen bei Softwareupdates in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO1-->
 
 

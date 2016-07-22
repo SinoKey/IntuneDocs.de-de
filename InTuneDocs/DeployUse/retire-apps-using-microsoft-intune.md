@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Außerbetriebnahme von Apps | Microsoft Intune
-description:
-keywords:
+title: "Außerbetriebnahme von Apps | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6fbf0805-1144-4e08-bafd-4f181d932bf2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 4857e2ff34175ee6daa64e6f95a59faaaaa3b322
+
 
 ---
 
@@ -31,9 +25,9 @@ Um eine App außer Betrieb zu nehmen, deinstallieren Sie sie einfach. Wenn Sie A
 
 ## Deinstallieren einer App
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Apps** &gt; **Apps**..
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) **Apps** &gt; **Apps**.
 
-2.  Wählen Sie die zu deinstallierende App aus (die Sie zuvor bereitgestellt haben), und klicken Sie dann auf **Bereitstellung verwalten**..
+2.  Wählen Sie die zu deinstallierende App aus (die Sie zuvor bereitgestellt haben), und wählen Sie anschließend **Bereitstellung verwalten** aus.
 
 3.  Wählen Sie auf der Seite **Bereitstellungsaktion** die Option **Deinstallieren** aus der Spalte **Genehmigung** aus.
 
@@ -43,6 +37,7 @@ Wenn das Gerät oder der Computer das nächste Mal die Apps prüft, wird die App
 [Hinzufügen von Apps in Microsoft Intune](add-apps.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

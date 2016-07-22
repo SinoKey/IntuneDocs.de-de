@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: Registrieren Ihres iOS-Geräts bei Intune | Microsoft Intune
-description:
-keywords:
+title: "Registrieren Ihres iOS-Geräts bei Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/18/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ROBOTS: 
+ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 305308aa94a7650df8b44710025620906714421b
+
 
 ---
 
@@ -31,6 +26,7 @@ ms.suite: ems
 Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ihr iOS-Gerät registrieren, um Zugriff auf Unternehmens-E-Mails, Dateien und weitere Ressourcen zu erhalten. Durch das Registrieren Ihrer Geräte kann Ihre IT-Abteilung diese Geschäfts- oder Schulressourcen verwalten und schützen, Ihnen aber gleichzeitig die Möglichkeit bieten, Ihr bevorzugtes Gerät zu verwenden, um Ihre Arbeit erledigen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
 Wenn Sie ein Mac OS X-Gerät registrieren möchten, lesen Sie [Registrieren Ihres Mac OS X-Geräts bei Intune](enroll-your-device-in-intune-mac-os-x.md).
+
 
 
 **So registrieren Sie Ihr iOS-Gerät:**
@@ -79,7 +75,7 @@ Wenn Sie ein Mac OS X-Gerät registrieren möchten, lesen Sie [Registrieren Ihre
 
     ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png) 
 
-12. Tippen Sie auf dem Bildschirm **Unternehmenszugriff einrichten** auf **Weiter**. Wenn Ihr IT-Administrator zusätzliche Sicherheitsanforderungen eingerichtet hat, z. B. die Notwendigkeit zum Festlegen eines Kennworts, folgen Sie den Anweisungen auf dem Bildschirm, bis alle Complianceanforderungen erfüllt sind und Sie zum Bildschirm „Unternehmenszugriff einrichten“ zurückkehren. Tippen Sie dann auf **Weiter**.
+12. Tippen Sie auf dem Bildschirm **Unternehmenszugriff einrichten** auf **Weiter**. Wenn Ihr IT-Administrator zusätzliche Sicherheitsanforderungen eingerichtet hat, z.B. die Notwendigkeit zum Festlegen eines Kennworts, folgen Sie den Anweisungen auf dem Bildschirm, bis alle Complianceanforderungen erfüllt sind und Sie zum Bildschirm „Unternehmenszugriff einrichten“ zurückkehren. Tippen Sie dann auf **Weiter**.
 
     ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png) 
 
@@ -89,13 +85,12 @@ Wenn Sie ein Mac OS X-Gerät registrieren möchten, lesen Sie [Registrieren Ihre
 
 Ihr Gerät ist jetzt bei Intune registriert, und Sie gelangen wieder zur Unternehmensportal-App.
 
-    
-
-  
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 ### Weitere Informationen:
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

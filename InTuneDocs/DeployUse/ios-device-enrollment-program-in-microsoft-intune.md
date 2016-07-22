@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Apple-DEP-Verwaltung für iOS-Geräte mit Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Apple-DEP-Verwaltung für iOS-Geräte mit Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
+ms.openlocfilehash: cd763f9fa0b08cc7b822eccbd043a5b9cd355d0f
+
 
 ---
 
@@ -59,6 +53,12 @@ Bevor Sie unternehmenseigene iOS-Geräte mit DEP registrieren können, benötige
       - **Benutzeraffinität anfordern**: Das Gerät muss während der ersten Installation einem Benutzer zugewiesen werden und dann berechtigt sein, im Namen dieses Benutzers auf Unternehmensdaten und E-Mail zuzugreifen.  **Benutzeraffinität** muss für DEP-verwaltete Geräte konfiguriert werden, die Benutzern gehören und das Unternehmensportal verwenden müssen (um z. B. Apps zu installieren).
       - **Keine Benutzeraffinität**: Das Gerät ist keinem Benutzer zugeordnet. Verwenden Sie diese Zuweisung für Geräte, die Aufgaben ohne den Zugriff auf lokale Benutzerdaten ausführen. Apps, die eine Benutzerzugehörigkeit erfordern, einschließlich der Unternehmensportal-App, die für die Installation branchenspezifischer Apps verwendet, funktionieren nicht.
 
+    Sie können auch **Geräte folgender Gruppe zuweisen**. Klicken Sie auf **Auswählen...**, um eine Gruppe auszuwählen.
+
+    >[!Important]
+    >Gruppenzuweisungen werden von Intune zu Azure Active Directory verschoben. [Erfahren Sie mehr](#changes-to-intune-group-assignments)
+
+
     Aktivieren Sie als Nächstes **DEP-Einstellungen für diese Richtlinie konfigurieren**, um DEP zu unterstützen.
 
       ![Bereich „Setup-Assistent“](../media/pol-sa-corp-enroll.png)
@@ -78,8 +78,16 @@ Bevor Sie unternehmenseigene iOS-Geräte mit DEP registrieren können, benötige
         - **Ortungsdienste**: Falls aktiviert, fordert der Setup-Assistent den Dienst während der Aktivierung an.
         - **Wiederherstellen**: Falls aktiviert, fordert der Setup-Assistent die iCloud-Sicherung während der Aktivierung an.
         - **Apple ID**: Eine Apple ID ist erforderlich, um iOS App Store-Apps herunterzuladen, einschließlich Apps, die von Intune installiert wurden. Falls aktiviert, fordert iOS Benutzer zur Angabe einer Apple ID an, wenn Intune versucht, eine App ohne eine ID zu installieren.
-        - **Geschäftsbedingungen**: Falls aktiviert, fordert der Setup-Assistent Benutzer während der Aktivierung auf, die Apple-Geschäftsbedingungen zu akzeptieren.- **Touch ID**: Falls aktiviert, fordert der Setup-Assistent diesen Dienst während der Aktivierung an.- **Apple Pay**: Falls aktiviert, fordert der Setup-Assistent diesen Dienst während der Aktivierung an.- **Zoom**: Falls aktiviert, fordert der Setup-Assistent diesen Dienst während der Aktivierung an. - **Siri**: Falls aktiviert, fordert der Setup-Assistent diesen Dienst während der Aktivierung an.- **Diagnosedaten an Apple senden**: Falls aktiviert, fordert der Setup-Assistent diesen Dienst während der Aktivierung an.-  **Zusätzliche Verwaltung durch Apple Configurator aktivieren**: Auf **Nicht zulassen** festlegen, um das Synchronisieren von Dateien mit iTunes oder die Verwaltung per Apple Configurator zu verhindern. Microsoft empfiehlt das Festlegen von **Nicht zulassen**, das Exportieren weiteren Konfigurationen aus Apple Configurator und deren anschließende Bereitstellung als benutzerdefiniertes iOS-Konfigurationsprofil per Intune, anstatt diese Einstellung zu wählen, um eine manuelle Bereitstellung mit oder ohne Zertifikat zuzulassen.
-        - **Nicht zulassen**: Verhindert, dass das Gerät per USB kommuniziert (Verbindung wird deaktiviert) - **Zulassen**: Erlaubt dem Gerät das Kommunizieren über eine USB-Verbindung mit einem PC oder Mac- **Zertifikat anfordern**: Ermöglicht eine Verbindung mit einem Mac, indem ein Zertifikat in das Registrierungsprofil importiert wird
+        - **Geschäftsbedingungen**: Falls aktiviert, fordert der Setup-Assistenten Benutzer auf, die Apple-Geschäftsbedingungen während der Aktivierung zu akzeptieren.
+        - **Touch ID**: Falls aktiviert, fordert der Setup-Assistent diesen Dienst während der Aktivierung an.
+        - **Apple Pay**: Falls aktiviert, fordert der Setup-Assistent diesen Dienst während der Aktivierung an.
+        - **Zoom**: Falls aktiviert, fordert der Setup-Assistent diesen Dienst während der Aktivierung an.
+        - **Siri**: Falls aktiviert, fordert der Setup-Assistent diesen Dienst während der Aktivierung an.
+        - **Diagnosedaten an Apple senden**: Falls aktiviert, fordert der Setup-Assistent diesen Dienst während der Aktivierung an.
+     -  **Zusätzliche Verwaltung durch Apple Configurator aktivieren**: Auf **Nicht zulassen** festlegen, um das Synchronisieren von Dateien mit iTunes oder die Verwaltung per Apple Configurator zu verhindern. Microsoft empfiehlt das Festlegen von **Nicht zulassen**, das Exportieren weiteren Konfigurationen aus Apple Configurator und deren anschließende Bereitstellung als benutzerdefiniertes iOS-Konfigurationsprofil per Intune, anstatt diese Einstellung zu wählen, um eine manuelle Bereitstellung mit oder ohne Zertifikat zuzulassen.
+        - **Nicht zulassen**: Verhindert, dass das Gerät per USB kommuniziert (Verbindung wird deaktiviert).
+        - **Zulassen**: Erlaubt dem Gerät das Kommunizieren über eine USB-Verbindung mit einem PC oder Mac.
+        - **Zertifikat anfordern**: Ermöglicht eine Verbindung mit einem Mac, indem ein Zertifikat in das Registrierungsprofil importiert wird.
 
 6.  **Zuweisen von DEP-Geräten zur Verwaltung** Wechseln Sie zum [Device Enrollment Program-Portal](https://deploy.apple.com) (https://deploy.apple.com), und melden Sie sich mit der Apple ID Ihres Unternehmens an. Wechseln Sie zu **Bereitstellungsprogramm** &gt; **Device Enrollment Program** &gt; **Geräte verwalten**. Geben Sie an, wie Sie **Geräte wählen**, fügen Sie Geräteinformationen hinzu, und geben Sie die Details zum Gerät wie **Seriennummer**und **Bestellnummer**an, oder **laden Sie eine CSV-Datei hoch**. Wählen Sie als Nächstes **Zu Server zuweisen** aus. Wählen Sie den für Microsoft Intune angegebenen &lt;Servernamen&gt; aus, und klicken Sie dann auf **OK**.
 
@@ -91,12 +99,15 @@ Bevor Sie unternehmenseigene iOS-Geräte mit DEP registrieren können, benötige
 
 8.  **Verteilen von Geräten an Benutzer** Ihre unternehmenseigenen Geräte können jetzt an Benutzer verteilt werden. Wenn ein iOS-Gerät eingeschaltet wird, wird es für die Verwaltung durch Intune registriert.
 
+## Änderungen an den Intune-Gruppenzuweisungen
 
+Ab September werden Gerätegruppen in Azure Active Directory verwaltet. Nach diesem Übergang zu Azure Active Directory-Gruppen wird die Gruppenzuweisung nicht länger in den Optionen des **Unternehmensregistrierungsprofils** angezeigt. Da diese Änderung über mehrere Monate hinweg umgesetzt wird, wird Ihnen die Änderung möglicherweise nicht sofort angezeigt. Weitere Einzelheiten werden in Kürze veröffentlicht.
 
 ### Weitere Informationen:
 [Vorbereitungen zum Registrieren von Geräten](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

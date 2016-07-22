@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Vorbereiten der Konfiguration von Verwaltungsrichtlinien für mobile Apps | Microsoft Intune
-description:
-keywords:
+title: "Vorbereiten der Konfiguration von Verwaltungsrichtlinien für mobile Apps | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 6a989482e9c3c35c1f377e0b32bf04beb89e60a3
+ms.openlocfilehash: da4020eb71432f9bccb52909272d027da64ee47c
+
 
 ---
 
@@ -36,6 +29,8 @@ Das Azure-Portal ist die neue Verwaltungskonsole zum Erstellen von MAM-Richtlini
 Wenn Sie Ihnen der Umgang mit dem Azure-Portal neu ist, sollten Sie sich im Artikel [Azure-Portal für MAM-Richtlinien in Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) einen kurzen Überblick verschaffen.
 
 Wenn Sie derzeit Ihre Geräte mit der **Intune-Verwaltungskonsole** verwalten, können Sie mithilfe der **Intune-Verwaltungskonsole** MAM-Richtlinien erstellen, die Apps für die bei Intune registrierten Geräte unterstützen. Es wird jedoch empfohlen, dass Sie auch für bei Intune registrierte Geräte das Azure-Portal verwenden. Anweisungen zum Erstellen einer MAM-Richtlinie mithilfe der Intune-Verwaltungskonsole finden Sie [hier](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+
+Die MAM-Richtlinien, die in der Intune-Verwaltungskonsole erstellt wurden, können nicht ins Azure-Portal importiert werden.  Die MAM-Richtlinien müssen im Azure-Portal neu erstellt werden.
 
 >[!IMPORTANT]
 > Möglicherweise werden in der Intune-Verwaltungskonsole nicht alle MAM-Richtlinieneinstellungen angezeigt. Wenn Sie sowohl in der Intune-Verwaltungskonsole als auch im Azure-Portal MAM-Richtlinien erstellen, wird die im Azure-Portal erstellte Richtlinie auf die Apps angewendet und für die Benutzer bereitgestellt.
@@ -62,7 +57,7 @@ Die vollständige Liste der unterstützten Microsoft-Apps finden Sie auf der Sei
 -   Ein **Office 365 (O365)**-Abonnement, das für die folgenden Punkte erforderlich ist:
   - Anwenden von MAM-Richtlinien auf Apps, die mehrere Identitäten unterstützen.
   - Erstellen von SharePoint Online- und Exchange Online-Arbeitskonten. Lokale Exchange- und SharePoint-Bereitstellungen werden nicht unterstützt.
--    **Aktivieren Sie die moderne Authentifizierung** für **Skype for Business Online**. Melden Sie sich bei Microsoft Connect an, und füllen Sie [dieses Formular](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) aus, um sich beim Programm für die moderne Authentifizierung zu registrieren.
+-    [Aktivieren Sie die moderne Authentifizierung](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md) für **Skype for Business Online**.
 
 
 - **Azure Active Directory (Azure AD)** zum Erstellen von Benutzern. Azure AD authentifiziert den Benutzer, wenn der Endbenutzer die App startet und seine geschäftlichen Anmeldeinformationen eingibt.
@@ -124,6 +119,7 @@ In der folgenden Tabelle werden die Rollen und Berechtigungen aufgelistet, die S
 [Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
