@@ -1,33 +1,27 @@
 ---
-# required metadata
-
 title: Microsoft Intune-Unternehmensportal | Microsoft Intune
-description:
-keywords:
+description: Einrichten des Intune-Unternehmensportals
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: b7c8cc22f744449ce83084be88cfb4547e28779b
+
 
 ---
 
-# Microsoft Intune-Unternehmensportal-App
+# Microsoft Intune-Unternehmensportal
 
-Bevor Sie [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] einrichten, lesen Sie dieses Thema und andere Anforderungen, die unter [ Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md) aufgeführt sind.
+Bevor Sie Intune einrichten, lesen Sie dieses Thema und machen Sie sich mit anderen Anforderungen vertraut, die unter [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md) aufgeführt sind.
 
 Das Windows Intune-Unternehmensportal ist ein Tool, das Benutzern Zugriff auf Unternehmensdaten und Apps bereitstellt. Das Unternehmensportal ist in zwei Varianten verfügbar:
 
@@ -58,6 +52,7 @@ Damit ein Benutzer auf das Unternehmensportal zugreifen kann, muss dem Benutzerk
 [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jul16_HO3-->
 
 

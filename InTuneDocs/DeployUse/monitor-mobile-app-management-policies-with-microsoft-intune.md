@@ -1,10 +1,10 @@
 ---
-title: "Überwachen der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune | Microsoft Intune"
-description: 
+title: "Überwachen von MAM-Richtlinien mit Microsoft Intune | Microsoft Intune"
+description: "Finden Sie heraus, für wie viele Benutzer die Richtlinie gilt, und zeigen Sie weitere Details an."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 99b50bd040bbbdfa3ad7937d7703700526c9c4d5
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 1efbecc33e33e5e4864bcc2417ebed1e8a5b5826
 
 
 ---
@@ -49,6 +49,9 @@ Sie können nach einem einzelnen Benutzer suchen und sich den Kompatibilitätsst
 
   **Nicht eingecheckt:** Dies bedeutet, dass die Richtlinie für den Benutzer bereitgestellt wurde, die App seitdem aber nicht im Arbeitskontext verwendet wurde.
 
+>[!NOTE]
+> Wenn für den gesuchten Benutzer keine MAM-Richtlinie bereitgestellt wurde, wird Ihnen eine Meldung angezeigt, dass auf den Benutzer keine App-Richtlinien angewendet werden.
+
 Um die Berichterstattung für einen Benutzer anzuzeigen, gehen Sie folgendermaßen vor:
 
 **Schritt 1:** Um einen Benutzer auszuwählen, klicken Sie auf die Kachel „Zusammenfassung“, oder wählen Sie die Option **APP-BERICHTERSTELLUNG NACH BENUTZER** auf dem Blatt **Einstellungen**, wie unten dargestellt:
@@ -72,6 +75,6 @@ In der Detailansicht werden die Fehlermeldung, die App, auf die bei Auftreten de
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

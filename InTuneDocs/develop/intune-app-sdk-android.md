@@ -13,8 +13,8 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
-ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
+ms.sourcegitcommit: 51f7734e2acced469ec3520d74a8079dac8223f2
+ms.openlocfilehash: bcb62e9c99c1f5a5b53ada688ef39a59674dea04
 
 
 ---
@@ -220,7 +220,7 @@ In einigen Fällen wurde eine in der Android-Klasse verfügbare Methode in der �
 
 # Schutz von Sicherungsdaten 
 
-Seit Android Marshmallow (API 23) bietet Android einer App zwei Möglichkeiten zum Sichern ihrer Daten. Diese Optionen stehen in Ihrer App zur Verwendung zur Verfügung; sie erfordern verschiedene Schritte, um sicherzustellen, dass der MAM-Datenschutz ordnungsgemäß angewendet wird. In der folgenden Tabelle können Sie sich schnell einen Überblick über die entsprechenden Aktionen verschaffen, die für ein korrektes Verhalten beim Datenschutz erforderlich sind.  Weitere Informationen zur Android-Sicherung finden Sie im [Android Developer-Handbuch zur Datensicherung](http://developer.android.com/guide/topics/data/backup.html.). 
+Seit Android Marshmallow (API 23) bietet Android einer App zwei Möglichkeiten zum Sichern ihrer Daten. Diese Optionen stehen in Ihrer App zur Verwendung zur Verfügung; sie erfordern verschiedene Schritte, um sicherzustellen, dass der MAM-Datenschutz ordnungsgemäß angewendet wird. In der folgenden Tabelle können Sie sich schnell einen Überblick über die entsprechenden Aktionen verschaffen, die für ein korrektes Verhalten beim Datenschutz erforderlich sind.  Weitere Informationen zur Android-Sicherung finden Sie im [Android Developer Data Backup guide](http://developer.android.com/guide/topics/data/backup.html) (Android Developer-Handbuch zur Datensicherung). 
 
 ## Automatische vollständige Sicherung
 
@@ -365,6 +365,6 @@ Das Intune SDK verwaltet des von der Android-API bereitgestellten Vertrag; jedoc
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

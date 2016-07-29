@@ -1,27 +1,27 @@
 ---
-title: "Was geschieht, wenn Sie Ihr Gerät mithilfe des Unternehmensportals zurücksetzen? | Microsoft Intune"
+title: "Was geschieht, wenn Sie Ihr iOS-Gerät mithilfe des Unternehmensportals zurücksetzen? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: a9512738cd48438d85c7a98b0d533fbe6e6b8ba2
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 6f7ad227a4b129ae75891813da8795ac7b257e3d
 
 
 ---
 
 
-# Was geschieht, wenn Sie Ihr Gerät mithilfe des Unternehmensportals zurücksetzen?
+# Was geschieht, wenn Sie Ihr iOS-Gerät mithilfe des Unternehmensportals zurücksetzen?
 
 Wenn Sie das Unternehmensportal zum Zurücksetzen Ihres iPhones oder iPads verwenden, werden möglicherweise einige Apps oder Einstellungen auf Ihrem Gerät gelöscht. Dazu können auch einige Ihrer persönlichen Daten zählen. Was auf den einzelnen Geräten geschieht, hängt vom Gerät und seiner Verwendung ab, wie in den folgenden Listen beschrieben.
 
@@ -43,6 +43,6 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: Aktivieren des Zugriffs auf Unternehmensressourcen mithilfe von Zertifikatprofilen | Microsoft Intune
-description: 
+title: "Zertifikatsprofile für den Ressourcenzugriff | Microsoft Intune"
+description: "Sichern von VPN-, WLAN- und E-Mail-Zugriff mit einem Zertifikat, das auf jedem Benutzergerät installiert ist."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
-ms.openlocfilehash: 1d2e6676714daba76a9b54553b4ad1af23a0f880
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c8158b6a54347f6bec1008142eed44daca8946d0
 
 
 ---
@@ -47,7 +47,7 @@ Sie müssen für jede Plattform ein eigenes Profil erstellen. Nachdem Sie das Pr
 > -    Wenn Sie über keine Unternehmenszertifizierungsstelle verfügen, müssen Sie eine erstellen.
 >- Wenn Sie sich basierend auf Ihren Geräteplattformen entschließen, das Simple Certificate Enrollment-Protokoll (SCEP) zu verwenden, müssen Sie auch einen NDES-Server (Network Device Enrollment Service, Registrierungsdienst für Netzwerkgeräte) konfigurieren.
 >-  Ganz gleich, ob Sie SCEP- oder .PFX-Profile verwenden möchten, müssen Sie den Microsoft Intune-Zertifikatconnector herunterladen und konfigurieren.
-> Die Konfiguration all dieser Komponenten wird im Thema [Konfigurieren der Zertifikatinfrastruktur](configure-certificate-infrastructure.md) beschrieben.
+> Alle diese Konfigurationen werden in [Konfigurieren der Zertifikatinfrastruktur für SCEP](configure-certificate-infrastructure-for-scep.md) und [Konfigurieren der Zertifikatinfrastruktur](configure-certificate-infrastructure-for-pfx.md) beschrieben.
 
 ### Nächste Schritte
 - [Konfigurieren der Zertifikatinfrastruktur für SCEP](configure-certificate-infrastructure-for-scep.md)
@@ -56,6 +56,6 @@ Sie müssen für jede Plattform ein eigenes Profil erstellen. Nachdem Sie das Pr
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

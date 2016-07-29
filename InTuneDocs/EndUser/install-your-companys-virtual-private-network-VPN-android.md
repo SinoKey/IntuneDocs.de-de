@@ -3,17 +3,19 @@ title: Installieren des virtuellen privaten Netzwerks (VPN) Ihres Unternehmens |
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 7/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
+ROBOTS: noindex,nofollow
 ms.reviewer: chrisbal
 ms.suite: ems
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: d4c0e05002b3d6f2785b401159c2872d93313524
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 73fee953e10336fe659e271b49d96a518b2730aa
 
 
 ---
@@ -27,7 +29,9 @@ Wenn Ihr IT-Administrator eine VPN-App zum Herstellen einer Verbindung mit den U
 
 2.  Tippen Sie im **Play Store** auf **INSTALLIEREN**, und befolgen Sie die Anweisungen, um die App zu installieren
 
-3.  Tippen Sie auf **VPN-Unternehmensprofil installieren**, und befolgen Sie die Anweisungen, um die App zu akzeptieren und zu aktivieren.
+3.  Tippen Sie auf **VPN-Unternehmensprofil installieren**, und befolgen Sie die Anweisungen. Die Installationsschritte weichen möglicherweise etwas ab, je nachdem, mit welchem VPN-Anbieter Ihr Unternehmen zusammenarbeitet.
+
+
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
@@ -35,6 +39,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

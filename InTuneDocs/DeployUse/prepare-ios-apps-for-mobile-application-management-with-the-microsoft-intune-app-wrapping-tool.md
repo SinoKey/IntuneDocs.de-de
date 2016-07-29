@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Vorbereiten von iOS-Apps für die Verwaltung mit dem App Wrapping Tool | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
+title: "Umschließen von iOS-Apps mit dem App Wrapping Tool | Microsoft Intune"
+description: "In diesem Thema lernen Sie, Ihre iOS-Apps zu umschließen, ohne den Code der App selbst zu ändern. Bereiten Sie die Apps vor, damit Sie Verwaltungsrichtlinien für mobile Apps anwenden können."
+keywords: 
+author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: matgates
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 754c026832b980d3a1cd406e9ab3146585b87b46
+
 
 ---
 
@@ -30,14 +24,14 @@ Verwenden Sie das **Microsoft Intune App Wrapping Tool für iOS** zur Änderung 
 
 Das Tool ist eine Mac OS-Befehlszeilenanwendung, die einen Wrapper um eine App erstellt (sie umschließt). Sobald eine App verarbeitet wurde, können Sie die App-Funktionalität mit von Ihnen konfigurierten [Verwaltungsrichtlinien für mobile Anwendungen](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) ändern.
 
-Informationen zum Herunterladen des Tools finden Sie unter [Microsoft Intune App Wrapping Tool für iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218)..
+Informationen zum Herunterladen des Tools finden Sie unter [Microsoft Intune App Wrapping Tool für iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 ## Schritt 1: Erfüllen der Voraussetzungen für die Verwendung des App Wrapping Tools
 
 |Anforderungen|Weitere Informationen|
 |---------------|--------------------------------|
 |Unterstütztes Betriebssystem und Toolset|Sie müssen das App Wrapping Tool auf einem Mac mit OS X 10.8.5 oder höher ausführen, auf dem die Toolsetversion XCode 5 oder höher installiert wurde.|
-|Signaturzertifikat und Bereitstellungsprofil|Sie müssen ein Apple-Signaturzertifikat und ein Bereitstellungsprofil besitzen. Weitere Informationen hierzu finden Sie in Ihrer [Apple-Entwicklerdokumentation](https://developer.apple.com/)..|
+|Signaturzertifikat und Bereitstellungsprofil|Sie müssen ein Apple-Signaturzertifikat und ein Bereitstellungsprofil besitzen. Weitere Informationen hierzu finden Sie in Ihrer [Apple-Entwicklerdokumentation](https://developer.apple.com/).|
 |Verarbeiten einer App mit dem App Wrapping Tool|Apps müssen von Ihrem Unternehmen oder einem unabhängigen Softwareanbieter (ISV) entwickelt und signiert werden. Mit diesem Tool können Sie keine Apps aus dem Apple Store bearbeiten. Apps müssen für iOS 7.0 oder höher geschrieben sein. Apps müssen im PIE-Format (positionsunabhängige ausführbare Datei) vorliegen. Weitere Informationen zum PIE-Format finden Sie in Ihrer Apple-Entwicklerdokumentation. Die App muss die Erweiterung **.app** oder **.ipa** aufweisen.|
 |Apps, die vom App Wrapping Tool nicht verarbeitet werden können|Verschlüsselte Apps, nicht signierte Apps und Apps mit erweiterten Dateiattributen.|
 |Apps, die die Azure Active Directory-Bibliothek (ADAL) verwenden|Wenn Ihre App ADAL verwendet, muss in der App die ADAL-Version 1.0.2 oder höher integriert sein, und Entwickler müssen ihrer App Zugriff auf die Intune MAM-Ressource (mobile Anwendungsverwaltung) gewähren.<br /><br />Informationen zur Verwendung von ADAL finden Sie in diesem Artikel unter [Informationen für Apps, die die Azure Active Directory-Bibliothek verwenden](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library).|
@@ -47,7 +41,7 @@ Informationen zum Herunterladen des Tools finden Sie unter [Microsoft Intune App
 
 1.  Laden Sie von der Seite **Microsoft Intune App Wrapping Tool für iOS** im [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45218) die Installationsdatei für das App Wrapping Tool auf einen Mac-Computer herunter.
 
-2.  Doppelklicken Sie auf dem Mac-Computer auf die Installationsdatei **Microsoft Intune App Wrapping Tool for iOS.dmg**..
+2.  Doppelklicken Sie auf dem Mac-Computer auf die Installationsdatei **Microsoft Intune App Wrapping Tool for iOS.dmg**.
 
 3.  Wählen Sie **Agree**, um den Endbenutzer-Lizenzvertrag (EULA) zu akzeptieren. Das Installationsprogramm wird bereitgestellt und auf dem Mac-Computer angezeigt.
 
@@ -59,7 +53,7 @@ Informationen zum Herunterladen des Tools finden Sie unter [Microsoft Intune App
 
 1.  Öffnen Sie auf dem Mac-Computer ein Terminalfenster, und navigieren Sie zu dem Ordner, in dem Sie die Dateien gespeichert haben. Da sich die ausführbare Datei im Paket befindet, müssen Sie den Befehl wie folgt ausführen:
 ```
-    ./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
+    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
 ```
     > [!NOTE]
     > Some parameters are optional as shown in the table below.
@@ -126,7 +120,7 @@ Anwendungen, die mit dem App Wrapping Tool umschlossen wurden, generieren Protok
 
 1.  Reproduzieren Sie das Problem durch Ausführen der App.
 
-2.  Sammeln Sie die Konsolenausgabe, indem Sie die folgenden Apple-Anweisungen für das [Debuggen bereitgestellter iOS-Apps](https://developer.apple.com/library/ios/qa/qa1747/_index.html) befolgen..
+2.  Sammeln Sie die Konsolenausgabe mit den folgenden Apple-Anweisungen für das [Debuggen bereitgestellter iOS-Apps](https://developer.apple.com/library/ios/qa/qa1747/_index.html).
 
 3.  Filtern Sie die gespeicherten Protokolle nach der Ausgabe von App-Einschränkungen, indem Sie das folgende Skript in die Konsole eingeben:
 
@@ -149,7 +143,7 @@ Für Apps, die ADAL verwenden, muss Folgendes zutreffen:
 
 -   Die App muss mindestens ADAL-Version 1.0.2 integriert haben.
 
--   Entwickler müssen ihrer App Zugriff auf die Intune MAM-Ressource (mobile Anwendungsverwaltung) gewähren, wie unter [Für Apps, die ADAL verwenden, zu befolgende Schritte](#steps-to-follow-for-apps-that-use-adal) beschrieben..
+-   Entwickler müssen ihrer App Zugriff auf die Intune MAM-Ressource (Mobile Application Management, mobile Anwendungsverwaltung) gewähren, wie unter [Für Apps, die ADAL verwenden, zu befolgende Schritte](#steps-to-follow-for-apps-that-use-adal) beschrieben.
 
 ### Übersicht über die Bezeichner, die Sie abrufen müssen
 Apps, die ADAL verwenden, müssen über das Azure-Verwaltungsportal registriert werden, um zwei eindeutige IDs für ihre App zu erhalten:
@@ -170,9 +164,9 @@ Apps, die ADAL verwenden, müssen über das Azure-Verwaltungsportal registriert 
 
     2.  Klicken Sie in Azure Active Directory auf die Option zur **Registrierung von vorhandenen Branchen-Apps** .
 
-    3.  Wählen Sie im Abschnitt „Konfigurieren“ die Option **Zugriff auf Web-APIs in anderen Anwendungen konfigurieren** aus..
+    3.  Wählen Sie im Abschnitt "Konfigurieren" die Option **Zugriff auf Web-APIs in anderen Anwendungen konfigurieren**aus.
 
-    4.  Im Abschnitt **Berechtigungen für andere Anwendungen** wählen Sie aus der ersten Dropdownliste den Eintrag **Mobile Anwendungsverwaltung mit Intune** aus..
+    4.  Im Abschnitt **Berechtigungen für andere Anwendungen** wählen Sie aus der ersten Dropdownliste den Eintrag **Mobile Anwendungsverwaltung mit Intune** aus.
 
         Jetzt können Sie die Client-ID der App im App Wrapping Tool verwenden. Die Client-ID der App finden Sie im Azure Active Directory-Verwaltungsportal, wie im Abschnitt [Übersicht über die Bezeichner, die Sie abrufen müssen](#overview-of-identifiers-you-need-to-get) beschrieben.
 
@@ -199,7 +193,7 @@ Apps, die ADAL verwenden, müssen über das Azure-Verwaltungsportal registriert 
 -   Doppelte Anmelde-Eingabeaufforderungen werden verhindert, wenn Sie die Client-ID und die Umleitungs-URI für die Clientanwendung bereitstellen. Diese Client-ID muss für den Zugriff auf die veröffentlichte [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM Ressourcen-ID im AAD-Dashboard registriert werden. Falls Sie dies nicht tun, tritt ein Fehler bei der Anmeldung auf, wenn die App ausgeführt wird.
 
 ## Festlegen von App-Berechtigungen
-Vor dem Umschließen Ihrer App können Sie **Berechtigungen** erteilen, um der App zusätzliche Berechtigungen und Funktionen zu gewähren, die in der Regel über das hinaus gehen, was einer App typischerweise gestattet ist.  Eine **Berechtigungsdatei** wird während der Codesignatur verwendet, um spezielle Berechtigungen innerhalb Ihrer App anzugeben (z. B. Zugriff auf einen freigegebenen Schlüsselbund). Bestimmte App-Dienste, als **Funktionen** bezeichnet, werden während der App-Entwicklung innerhalb von Xcode aktiviert. Nach ihrer Aktivierung werden die Funktionen in Ihrer Berechtigungsdatei wiedergegeben. Weitere Informationen zu Berechtigungen und Funktionen finden Sie unter [Hinzufügen von Funktionen](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in der iOS-Entwicklerbibliothek. Eine vollständige Liste der unterstützten Funktionen finden Sie unter [Unterstützte Funktionen](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html)..
+Vor dem Umschließen Ihrer App können Sie **Berechtigungen** erteilen, um der App zusätzliche Berechtigungen und Funktionen zu gewähren, die in der Regel über das hinaus gehen, was einer App typischerweise gestattet ist.  Eine **Berechtigungsdatei** wird während der Codesignatur verwendet, um spezielle Berechtigungen innerhalb Ihrer App anzugeben (z. B. Zugriff auf einen freigegebenen Schlüsselbund). Bestimmte App-Dienste, als **Funktionen** bezeichnet, werden während der App-Entwicklung innerhalb von Xcode aktiviert. Nach ihrer Aktivierung werden die Funktionen in Ihrer Berechtigungsdatei wiedergegeben. Weitere Informationen zu Berechtigungen und Funktionen finden Sie unter [Hinzufügen von Funktionen](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in der iOS-Entwicklerbibliothek. Eine vollständige Liste der unterstützten Funktionen finden Sie unter [Unterstützte Funktionen](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html).
 
 ### Unterstützte Funktionen für das App Wrapping Tool für iOS
 
@@ -211,7 +205,7 @@ Vor dem Umschließen Ihrer App können Sie **Berechtigungen** erteilen, um der A
 |In-App-Käufe|In-App-Käufe bettet einen Store direkt in Ihre App ein, indem Ihnen ermöglicht wird, eine Verbindung mit dem Store herzustellen und Zahlungen des Benutzers sicher zu verarbeiten. Mithilfe von In-App-Käufe können Sie die Zahlungen für erweiterte Funktionen abwickeln oder für zusätzliche Inhalte, die von Ihrer App verwendet werden können.||
 |Schlüsselbundfreigabe|Durch die Aktivierung der Schlüsselbundfreigabe kann Ihre App Kennwörter im Schlüsselbund gemeinsam mit anderen Apps verwenden, die von Ihrem Team entwickelt wurden.|Bei Verwendung der Schlüsselbundfreigabe verwenden Sie Reverse-DNS-Notation:<br /><br />*com.companyName.KeychainGroup*|
 |Persönliches VPN|Aktivieren Sie persönliches VPN, um Ihrer App das Erstellen und Kontrollieren einer benutzerdefinierten VPN-Systemkonfiguration unter Verwendung des Netzwerkerweiterungs-Frameworks zu gestatten.||
-|Pushbenachrichtigungen|Der Apple-Pushbenachrichtigungsdienst (APNs) ermöglicht einer App, die nicht im Vordergrund ausgeführt wird, die Benachrichtigung des Benutzers darüber, dass sie Informationen für den Benutzer besitzt.|Damit Pushbenachrichtigungen funktionieren, müssen Sie ein App-spezifisches Bereitstellungsprofil verwenden.<br /><br />Befolgen Sie die Schritte in der [Apple-Entwicklerdokumentation](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)..|
+|Pushbenachrichtigungen|Der Apple-Pushbenachrichtigungsdienst (APNs) ermöglicht einer App, die nicht im Vordergrund ausgeführt wird, die Benachrichtigung des Benutzers darüber, dass sie Informationen für den Benutzer besitzt.|Damit Pushbenachrichtigungen funktionieren, müssen Sie ein App-spezifisches Bereitstellungsprofil verwenden.<br /><br />Befolgen Sie die Schritte in der [Apple-Entwicklerdokumentation](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html).|
 |Konfiguration drahtlosen Zubehörs|Die Aktivierung der Konfiguration drahtlosen Zubehörs fügt Ihrem Projekt das externe Zubehörframework hinzu und ermöglicht Ihrer App, die Konfiguration von WLAN-Zubehör.||
 
 ### Schritte zur Aktivierung von Berechtigungen
@@ -230,7 +224,7 @@ Vor dem Umschließen Ihrer App können Sie **Berechtigungen** erteilen, um der A
 
     1.  Melden Sie sich beim „Apple Developer Member Center“ an.
 
-    2.  Erstellen Sie ein Bereitstellungsprofil für Ihre App. Anleitungen hierzu finden Sie unter [Abrufen der erforderlichen Komponenten für das Intune App Wrapping Tool für iOS](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx)..
+    2.  Erstellen Sie ein Bereitstellungsprofil für Ihre App. Anleitungen hierzu finden Sie unter [Abrufen der erforderlichen Komponenten für das Intune App Wrapping Tool für iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
 
     3.  Aktivieren Sie in Ihrem Bereitstellungsprofil dieselben Berechtigungen, die Sie in Ihrer App haben. Sie müssen dieselben IDs angeben, die Sie während der Entwicklung Ihrer App angegeben haben.
 
@@ -271,7 +265,7 @@ So überprüfen Sie die vorhandenen Berechtigungen einer signierten App und eine
 Dieser Befehl entfernt alle aktivierten Funktionen in der App, die nicht in der Berechtigungsdatei enthalten sind. Wenn Sie Funktionen entfernen, die von der App verwendet werden, kann dies zu einer Beschädigung der App führen. Fehlende Funktionen können beispielsweise dann entfernt werden, wenn eine Drittanbieter-App standardmäßig über alle Funktionen verfügt.
 
 ```
-./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
 ## Sicherheit und Datenschutz für das App Wrapping Tool
@@ -297,6 +291,7 @@ Verwenden Sie die folgenden bewährten Methoden zu Sicherheit und Datenschutz, w
 - [Verwenden des SDKs zum Aktivieren von Apps für die Verwaltung von mobilen Anwendungen](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

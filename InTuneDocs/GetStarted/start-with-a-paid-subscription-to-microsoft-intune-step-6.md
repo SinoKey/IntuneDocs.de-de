@@ -1,9 +1,9 @@
 ---
 title: "Erstellen von Richtlinien und Veröffentlichen einer App | Microsoft Intune"
-description: 
+description: "Erläutert das Erstellen und Veröffentlichen von Richtlinien anhand einer Beispiel-App für Ihr Intune-Abonnement."
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
-ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: d079452cb41ca8b37c292d75a606eb72ba5304df
 
 
 ---
@@ -23,11 +23,6 @@ ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
 Mit Intune-Richtlinien stehen Einstellungen bereit, mit deren Hilfe Sie die Sicherheitseinstellungen auf mobilen Geräten steuern, die Windows-Firewall- und Endpoint Protection-Einstellungen für Computer warten und Anwendungen bereitstellen können. Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) und [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
 Sie können zwei Arten von App-Installationen mithilfe von Intune ausführen: Die erste ist eine **erforderliche Installation**, bei der die App automatisch auf verwalteten Computern bereitgestellt wird. Die andere ist eine **verfügbare Installation**, bei der die App oder ein Link auf die App über das Intune-Unternehmensportal bereitgestellt wird, damit Benutzer auswählen können, ob die App auf ihren Computern oder mobilen Geräten installiert werden soll.
-
-<!-- this section really isn't necessary and confuses a lot of people because most mobile device apps aren't licensed this way (and our licensing/reporting features aren't super helpful). I think it's best to avoid this during a quick start guide.
-
-Before using Intune to deploy apps, make sure that you have the appropriate licenses to publish, distribute, and use the app. The Licenses workspace lets you add and manage license agreement information for apps or software purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can then create license reports that display managed license usage information throughout your company to stay informed of license usage activity.
--->
 
 Mithilfe der folgenden Schritte können Sie eine Konfigurationsrichtlinie für mobile Geräte und eine Firewallrichtlinie für Windows-PCs einrichten. Darüber hinaus können Sie Skype als verfügbare Installation für mobile Geräte konfigurieren, nachdem diese registriert wurden.
 
@@ -46,6 +41,10 @@ Mithilfe der folgenden Schritte können Sie eine Konfigurationsrichtlinie für m
 3.  Klicken Sie auf der Seite **Richtlinienübersicht** in der Liste **Aufgaben** auf **Richtlinie hinzufügen**.
 
 4.  Erweitern Sie in der Richtlinienliste die Plattform, für die Sie eine Richtlinie erstellen möchten, und klicken Sie auf **Allgemeine Konfiguration** > **Richtlinie mit den empfohlenen Einstellungen erstellen und bereitstellen** > **Richtlinie erstellen**.
+
+> [!NOTE]
+> Es gibt keine empfohlenen Einstellungen für Gerätekonfigurationsrichtlinien, da Sie aus vielen Optionen wählen können. Sie müssen eine benutzerdefinierte Gerätekonfigurationsrichtlinie erstellen.
+
 
 5.  Wählen Sie bei der Aufforderung **Wählen Sie die Gruppen aus, denen die Richtlinie bereitgestellt werden soll** in der Liste der verfügbaren Gruppen eine Gruppe aus, und wählen Sie **Hinzufügen** > **OK**.
 
@@ -110,6 +109,6 @@ Gratulation! Sie haben Schritt 6 der Kurzanleitung *Erste Schritte mit Intune* 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Schützen von Geräten | Microsoft Intune
-description:
-keywords:
+title: "Schützen von Geräten | Microsoft Intune"
+description: "Erfahren Sie mehr über die Methoden, mit denen Intune Ihnen helfen kann, Ihre Geräte vor nicht autorisiertem Zugriff und anderen Bedrohungen zu schützen."
+keywords: 
 author: Robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 53201c36e7a210c1c62d3ed3183093ed8e63dc53
+
 
 ---
 
@@ -40,10 +34,14 @@ Die [mehrstufige Authentifizierung](protect-windows-devices-with-multi-factor-au
 ## Steuern der Microsoft Passport-Einstellungen auf Windows-Geräten
 Intune ermöglicht die Integration in [Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md). Dies ist eine alternative Anmeldemethode für Windows 10 und höher, die Active Directory oder ein Azure Active Directory-Konto verwendet, um ein Kennwort, eine Smartcard oder eine virtuelle Smartcard zu ersetzen.
 
+## Umgehung der Aktivierungssperre auf iOS-Geräten
+Die Aktivierungssperre ist eine Funktion, mit der Geräte von Benutzern geschützt werden, indem die Eingabe der Apple ID und des Kennworts gefordert wird, bevor das Gerät gelöscht oder reaktiviert werden kann. Dies kann jedoch zu Problemen führen, z.B. wenn der Benutzer das Unternehmen verlässt, ohne die Sperre wieder aufzuheben. Mit [Umgehung der iOS-Aktivierungssperre](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md) kann die Sperre von überwachten iOS-Geräten umgangen werden, sodass sie neu zugewiesen oder gelöscht werden können.
+
 ## Schützen von mit dem Intune-Client verwalteten Windows-PCs
-Intune unterstützt auch Sicherheitsrichtlinien für Windows-PCs, die Sie nicht registrieren, sondern über die Intune-Computerclientsoftware verwalten. Erfahren Sie, wie diese Richtlinien Sie beim Schützen Ihrer Windows-PCs unterstützen: [Use policies to help protect Windows PCs that run the Intune client software](policies-to-protect-windows-pcs-in-microsoft-intune.md) (Verwenden von Richtlinien zum Schützen von Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird).
+Intune unterstützt auch Sicherheitsrichtlinien für Windows-PCs, die Sie nicht registrieren, sondern über die Intune-Computerclientsoftware verwalten. Erfahren Sie, wie diese Richtlinien Sie beim Schützen Ihrer Windows-PCs unterstützen: [Verwenden von Richtlinien zum Schutz von Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird](policies-to-protect-windows-pcs-in-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

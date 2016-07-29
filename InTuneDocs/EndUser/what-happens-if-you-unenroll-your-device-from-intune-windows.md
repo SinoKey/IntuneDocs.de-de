@@ -1,26 +1,27 @@
 ---
-title: "Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben? | Microsoft Intune"
+title: "Was geschieht, wenn Sie die Registrierung Ihres Windows-Geräts bei Intune aufheben? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
-ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 38dc295f3b1d591d97c651c948b3cdacbba5b0d4
 
 
 ---
 
 
-# Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?
+# Was geschieht, wenn Sie die Registrierung Ihres Windows-Geräts bei Intune aufheben?
 
 Klicken Sie im Abschnitt „Inhalt dieses Artikels“ weiter oben auf den Link, der dem Typ Ihres Geräts entspricht, um weitere Informationen zu erhalten.
 
@@ -93,6 +94,6 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

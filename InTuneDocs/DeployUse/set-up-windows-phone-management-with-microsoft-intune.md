@@ -1,6 +1,6 @@
 ---
 title: Einrichten der Windows 10 Mobile- und Windows Phone-Verwaltung mit Microsoft Intune | Microsoft Intune
-description: 
+description: "Aktivieren Sie die Verwaltung mobiler Geräte (Mobile Device Management, MDM) für Windows 10 Mobile- oder Windows Phone-Geräte mit Microsoft Intune."
 keywords: 
 author: NathBarn
 manager: jeffgilb
@@ -10,11 +10,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c5d1b53f09ce2f475cd934e36ddb19d019737431
-ms.openlocfilehash: e67a5be851b68d87a4cdda871824cf0ecb14579e
+ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
+ms.openlocfilehash: d1bba612d9f613dde33f71790e2c3b2d6b33fe88
 
 
 ---
@@ -29,7 +29,7 @@ In den meisten Fällen können die Benutzer die Unternehmensportal-App aus dem W
 
 2.  **Festlegen eines DNS-Alias für die Adresse des Registrierungsservers** (optional)
 
-    Durch das Erstellen eines DNS-Alias (Eintragstyp CNAME) erleichtern Sie es den Benutzern, ihre Geräte zu registrieren. Wenn Sie keinen DNS-Alias erstellen, müssen die Benutzer folgende Schritte ausführen:
+    Durch das Erstellen eines DNS-Alias (Eintragstyp CNAME) erleichtern Sie es den Benutzern, ihre Geräte zu registrieren. Der CNAME-DNS-Eintrag ist für die Registrierung von Windows-Geräten zwar optional, es sollte, sofern erforderlich, jedoch mindestens ein Eintrag erstellt werden, um den Prozess der Windows-Geräteregistrierung zu vereinfachen. Wenn kein CNAME-Eintrag gefunden wird, wird der Benutzer aufgefordert, den MDM-Servernamen manuell einzugeben.
 
   1.  Erstellen Sie **CNAME**-DNS-Ressourceneinträge für die Domäne des Unternehmens. Wenn der Name Ihrer Unternehmens-Website beispielsweise contoso.com lautet, erstellen Sie einen CNAME in DNS, von dem EnterpriseEnrollment.contoso.com an manage.microsoft.com umgeleitet wird. Wenn mehr als eine überprüfte Domäne vorhanden ist, erstellen Sie einen CNAME-Eintrag für jede Domäne. Die CNAME-Ressourceneinträge müssen folgende Informationen enthalten:
 
@@ -56,6 +56,6 @@ Es sind keine weiteren Schritte erforderlich, es sei denn, Sie stellen das Unter
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: Intune-Evaluierungsanleitung | Microsoft Intune
-description: 
+description: "Einführung und Voraussetzungen für die Einrichtung einer kostenlosen 30-tägigen Evaluierungsversion von Intune."
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -12,13 +12,14 @@ ms.technology:
 ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 4af13629986e7cef814104f3d1f298eb2be240ac
-ms.openlocfilehash: 26ecc3dfe8816da9f30829901d929af53b1bedc0
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 813b4babc78ae29d213f7c783b6afb3e368c52bd
 
 
 ---
 
-# Intune-Evaluierungsanleitung
+# Intune-Evaluierungshandbuch
 Eine kostenlose 30-tägige Evaluierung von Intune, um Ihre mobilen Geräte und Computer zu verwalten, lässt sich schnell und einfach einrichten. Mit wenigen einfachen Schritten in der Evaluierungsversion können Sie bis zu 100 Benutzer und Geräte hinzufügen, Gruppen einrichten, Kompatibilitätsrichtlinien konfigurieren und mobile Geräte und Computer registrieren und verwalten.
 
 In diesem Thema erfahren grundlegend, wie Sie eine Intune-Evaluierung einrichten und ausführen, und erhalten einen Überblick über den Dienst, sodass Sie die Features und Funktionen von Intune beurteilen können.
@@ -65,6 +66,6 @@ Es ist Zeit, mit Ihrem 30-tägigen Evaluierungsabonnement zu starten!
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

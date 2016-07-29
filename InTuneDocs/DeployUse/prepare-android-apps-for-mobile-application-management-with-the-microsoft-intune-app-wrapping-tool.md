@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Vorbereiten von Android-Apps für die Verwaltung mit dem App Wrapping Tool | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
+title: "Umschließen von Android-Apps mit dem App Wrapping Tool | Microsoft Intune"
+description: "In diesem Thema lernen Sie, Ihre Android-Apps zu umschließen, ohne den Code der App selbst zu ändern. Bereiten Sie die Apps vor, damit Sie Verwaltungsrichtlinien für mobile Apps anwenden können."
+keywords: 
+author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/06/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: matgates
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 76ee04237d54b4c171df74e8c134f003bbc32966
+
 
 ---
 
@@ -32,7 +26,7 @@ Das Tool ist eine Windows-Befehlszeilenanwendung, die in PowerShell ausgeführt 
 
 Wenn die Azure Active Directory Authentication Library (ADAL) von Ihrer App verwendet wird, führen Sie die Schritte unter [Umschließen von Apps, die ADAL (Azure Active Directory Library) verwenden](#how-to-wrap-apps-that-use-the-azure-active-directory-library) aus, bevor Sie Ihre App umschließen. Wenn Sie nicht wissen, ob Ihre Anwendung diese Bibliothek verwendet, wenden Sie sich an den Entwickler der Anwendung.
 
-Lesen Sie vor dem Ausführen des Tools die [Sicherheitsüberlegungen für das Ausführen des App Wrapping Tools](#security-considerations-for-running-the-app-wrapping-tool). Informationen zum Herunterladen des Tools finden Sie unter [Microsoft Intune App Wrapping Tool für Android](https://www.microsoft.com/download/details.aspx?id=47267)..
+Lesen Sie vor dem Ausführen des Tools die [Sicherheitsüberlegungen für das Ausführen des App Wrapping Tools](#security-considerations-for-running-the-app-wrapping-tool). Informationen zum Herunterladen des Tools finden Sie unter [Microsoft Intune App Wrapping Tool für Android](https://www.microsoft.com/download/details.aspx?id=47267).
 
 ## Schritt 1: Erfüllen der Voraussetzungen für die Verwendung des App Wrapping Tools
 
@@ -48,7 +42,7 @@ Lesen Sie vor dem Ausführen des Tools die [Sicherheitsüberlegungen für das Au
 
 -   Die App muss von Ihrem oder für Ihr Unternehmen entwickelt werden. Mit diesem Tool können Sie keine von Google Play Store heruntergeladenen Apps bearbeiten.
 
--   Um das App Wrapping Tool auszuführen, müssen Sie die neueste Version der [Java Runtime Environment](http://java.com/download/) installieren und sicherstellen, dass die Java-Pfadvariable in den Windows-Umgebungsvariablen auf **C:\ProgramData\Oracle\Java\javapath** festgelegt wurde. Weitere Informationen finden Sie in der [Java-Dokumentation](http://java.com/download/help/)..
+-   Um das App Wrapping Tool auszuführen, müssen Sie die neueste Version der [Java Runtime Environment](http://java.com/download/) installieren und sicherstellen, dass die Java-Pfadvariable in den Windows-Umgebungsvariablen auf **C:\ProgramData\Oracle\Java\javapath** festgelegt wurde. Weitere Informationen finden Sie in der [Java-Dokumentation](http://java.com/download/help/).
 
     > [!NOTE]
     > In einigen Fällen kann die 32-Bit-Version von Java zu Speicherproblemen führen. Es wird empfohlen, stattdessen die 64-Bit-Version zu installieren.
@@ -59,11 +53,11 @@ Lesen Sie vor dem Ausführen des Tools die [Sicherheitsüberlegungen für das Au
 
 2.  Akzeptieren Sie den Lizenzvertrag, und schließen Sie die Installation ab.
 
-Merken Sie sich den Ordner, in dem Sie das Tool installieren. Der Standardspeicherort ist: **C:\Programme (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**..
+Merken Sie sich den Ordner, in dem Sie das Tool installieren. Der Standardspeicherort ist: **C:\Programme (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**.
 
 ## Schritt 3: Ausführen des App Wrapping Tools
 
-1.  Öffnen Sie auf dem Windows-Computer, auf dem Sie das App Wrapping Tool installiert haben, ein PowerShell-Fenster.
+1.  Öffnen Sie auf dem Windows-Computer, auf dem Sie das App Wrapping Tool installiert haben, ein PowerShell-Fenster im Administratormodus.
 
 2.  Importieren Sie aus dem Ordner, in dem Sie das Tool installiert haben, das PowerShell-Modul des App Wrapping Tools:
 
@@ -71,14 +65,14 @@ Merken Sie sich den Ordner, in dem Sie das Tool installieren. Der Standardspeich
     Import-Module .\IntuneAppWrappingTool.psm1
     ```
 
-3.  Führen Sie das Tool mithilfe des Befehls **invoke-AppWrappingTool** zusammen mit den folgenden Parametern aus. Parameter, die als "optional" markiert sind, sind für Apps bestimmt, die Azure Active Directory Library (ADAL) verwenden. Weitere Informationen finden Sie unter [Umschließen von Apps, die ADAL (Azure Active Directory Library) verwenden](#how-to-wrap-apps-that-use-the-azure-active-directory-library)..
+3.  Führen Sie das Tool mithilfe des Befehls **invoke-AppWrappingTool** zusammen mit den folgenden Parametern aus. Parameter, die als "optional" markiert sind, sind für Apps bestimmt, die Azure Active Directory Library (ADAL) verwenden. Weitere Informationen finden Sie unter [Umschließen von Apps, die ADAL (Azure Active Directory Library) verwenden](#how-to-wrap-apps-that-use-the-azure-active-directory-library).
 
 |Parameter|Weitere Informationen|Beispiele|
 |-------------|--------------------|---------|
 |**-InputPath**&lt;String&gt;|Pfad der Android-Quelle-App (.apk).| |
 |**-OutputPath**&lt;String&gt;|Pfad zur Android-"Ausgabe"-App. Ist dies der gleiche Verzeichnispfad wie InputPath, schlägt das Verpacken fehl.| |
 |**-KeyStorePath**&lt;String&gt;|Pfad zur KeyStore-Datei, die das Öffentlich/Privat-Schlüsselpaar für die Signierung enthält.| |
-|**-KeyStorePassword**&lt;SecureString&gt;|Das Kennwort zum Entschlüsseln des KeyStore.| |
+|**-KeyStorePassword**&lt;SecureString&gt;|Das Kennwort zum Entschlüsseln des KeyStore. Android erfordert, dass alle Anwendungspakete (APK) signiert sind. Verwenden Sie das Java-Keytool, um das KeyStorePassword wie im Beispiel dargestellt zu generieren. Weitere Informationen zum KeyStore finden Sie [hier](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html).|keytool.exe -genkey -v -keystore keystorefile -alias ks -keyalg RSA -keysize 2048 -validity 50000 |
 |**-KeyAlias**&lt;String&gt;|Der Name des Schlüssels, der zum Signieren verwendet werden soll.| |
 |**-KeyPassword**&lt;SecureString&gt;|Das Kennwort zum Entschlüsseln des privaten Schlüssels, der zum Signieren verwendet wird.| |
 |**-SigAlg**&lt;SecureString&gt;|Der Name des Signaturalgorithmus, der zum Signieren verwendet werden soll. Der Algorithmus muss mit dem privaten Schlüssel kompatibel sein.|Beispiele: SHA256withRSA, SHA1withRSA, MD5withRSA|
@@ -89,24 +83,24 @@ Merken Sie sich den Ordner, in dem Sie das Tool installieren. Der Standardspeich
 
 
 **&lt;CommonParameters&gt;**
-    (optional – unterstützt allgemeine PowerShell-Parameter wie verbose, debug usw.)
+    (optional – unterstützt allgemeine PowerShell-Parameter wie „verbose“, „debug“ usw.)
 
-- Eine Liste der allgemeinen Parameter finden Sie im [Microsoft Script Center](https://technet.microsoft.com/library/hh847884.aspx)..
+- Eine Liste der allgemeinen Parameter finden Sie im [Microsoft Script Center](https://technet.microsoft.com/library/hh847884.aspx).
 
 - Um die Hilfe für das Tool anzuzeigen, geben Sie folgenden Befehl ein:
 
     ```
     Help Invoke-AppWrappingTool
     ```
-- Weitere Informationen zur Integration von Azure Active Directory (AAD) finden Sie unter [Umschließen von Apps, die ADAL (Azure Active Directory Library) verwenden](#how-to-wrap-apps-that-use-the-azure-active-directory-library)..
+- Weitere Informationen zur Integration von Azure Active Directory (AAD) finden Sie unter [Umschließen von Apps, die ADAL (Azure Active Directory Library) verwenden](#how-to-wrap-apps-that-use-the-azure-active-directory-library).
 
 **Beispiel:**
 
 
     Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
-    Invoke-AppWrappingTool –InputPath <input-app.apk> -OutputPath <output-app.apk> -KeyStorePath <path-to-signing.keystore> -KeyAlias <signing-key-name> -ClientID <xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx> -AuthorityURI <http://AzureActiveDirectory.Authority.URL> -SkipBroker<$True|$False> -NonBrokerRedirectURI <urn:xxx:xx:xxxx:xx:xxx>
+    invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app.wrapped\HelloWorld_wrapped2.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\keystorefile" -keyAlias ks -SigAlg SHA1withRSA -Verbose
 
-Anschließend werden Sie zur Eingabe von **KeyStorePassword** und **KeyPassword** aufgefordert..
+Anschließend werden Sie zur Eingabe des **KeyStorePassword** und **KeyPassword**aufgefordert.
 
 Die umschlossene App wird generiert und zusammen mit einer Protokolldatei in dem von Ihnen angegebenen Ausgabepfad gespeichert.
 
@@ -115,9 +109,9 @@ So verhindern Sie ein mögliches Spoofing, das Offenlegen von Informationen und 
 
 -   Stellen Sie sicher, dass sich die Branchenanwendung für die Eingabe, die Ausgabeanwendung und Java KeyStore auf demselben Computer befinden, auf dem auch das App Wrapping Tool ausgeführt wird.
 
--   Importieren Sie die Ausgabeanwendung in die Intune-Konsole auf demselben Computer, auf dem das Tool ausgeführt wird.
+-   Importieren Sie die Ausgabeanwendung in die Intune-Konsole auf demselben Computer, auf dem das Tool ausgeführt wird. Unter [Keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) finden Sie weitere Informationen zum Java-Keytool.
 
--   Wenn sich die Ausgabeanwendung und das Tool in einem UNC-Pfad (Universal Naming Convention) befinden und Sie das Tool und die Eingabedateien nicht auf demselben Computer ausführen, schützen Sie die Umgebung, indem Sie [Internet Protocol Security (IPsec)](http://en.wikipedia.org/wiki/IPsec) oder [SMB-Signaturen (Server Message Block)](https://support.microsoft.com/en-us/kb/887429) konfigurieren..
+-   Wenn sich die Ausgabenanwendung und das Tool in einem Universal Naming Convention (UNC)-Pfad befinden und Sie das Tool und die Eingabedateien nicht auf demselben Computer ausführen, schützen Sie die Umgebung, indem Sie [Internet Protocol Security (IPsec)](http://en.wikipedia.org/wiki/IPsec) oder [SMB-Signaturen (Server Message Block)](https://support.microsoft.com/en-us/kb/887429)konfigurieren.
 
 -   Stellen Sie sicher, dass die Anwendung von einer vertrauenswürdigen Quelle stammt. Dies gilt insbesondere, wenn Sie Azure Active Directory (AAD) verwenden, da die Anwendung dann möglicherweise während der Laufzeit auf das AAD-Token zugreifen kann.
 
@@ -131,7 +125,7 @@ Für Apps, die ADAL verwenden, muss Folgendes zutreffen:
 
 -   In der App muss mindestens ADAL 1.0.2 integriert sein.
 
--   Der Entwickler muss seiner App Zugriff auf die Intune MAM-Ressource (mobile Anwendungsverwaltung) gewähren, wie unter [Schritt 3: Konfigurieren des Zugriffs auf die mobile Anwendungsverwaltung in AAD](#step-3-configure-access-to-mobile-app-management-in-aad) beschrieben..
+-   Der Entwickler muss seiner App Zugriff auf die Intune MAM-Ressource (mobile Anwendungsverwaltung) gewähren, wie unter [Schritt 3: Konfigurieren des Zugriffs auf die mobile Anwendungsverwaltung in AAD](#step-3-configure-access-to-mobile-app-management-in-aad) beschrieben.
 
 ### Schritt 2: Überprüfen der Bezeichner, die Sie beim Registrieren der App abrufen müssen
 Im nächsten Schritt verwenden Sie das Azure-Verwaltungsportal zum Registrieren Ihrer Apps (die ADAL mit Azure Active Directory (AAD) verwenden), um die in der folgenden Tabelle aufgeführten eindeutigen Bezeichner zu erhalten. Anschließend übergeben Sie die Bezeichner beim Integrieren von ADAL in die App dem Entwickler.
@@ -149,13 +143,13 @@ Bevor Sie die AAD-Registrierungswerte einer App im App Wrapping Tool verwenden k
 
 1.  Melden Sie sich bei einem vorhandenen AAD-Konto im Azure-Verwaltungsportal an.
 
-2.  Wählen Sie die **Registrierung von vorhandenen Branchenanwendungen**..
+2.  Wählen Sie die **Registrierung von vorhandenen Branchenanwendungen**.
 
-3.  Wählen Sie im Abschnitt **Konfigurieren** die Option **Zugriff auf Web-APIs in anderen Anwendungen konfigurieren** aus..
+3.  Wählen Sie im Abschnitt **Konfigurieren** die Option **Zugriff auf Web-APIs in anderen Anwendungen konfigurieren**aus.
 
-4.  Im Abschnitt **Berechtigungen für andere Anwendungen** wählen Sie aus der ersten Dropdownliste den Eintrag **Mobile Anwendungsverwaltung mit Intune** aus..
+4.  Im Abschnitt **Berechtigungen für andere Anwendungen** wählen Sie aus der ersten Dropdownliste den Eintrag **Mobile Anwendungsverwaltung mit Intune** aus.
 
-Jetzt können Sie die Client-ID der App im App Wrapping Tool verwenden. Die Client-ID finden Sie im Azure Active Directory-Verwaltungsportal, wie in der Tabelle unter [Schritt 2: Überprüfen der Bezeichner, die Sie beim Registrieren der App abrufen müssen](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app) beschrieben..
+Jetzt können Sie die Client-ID der App im App Wrapping Tool verwenden. Die Client-ID finden Sie im Azure Active Directory-Verwaltungsportal, wie in der Tabelle unter [Schritt 2: Überprüfen der Bezeichner, die Sie beim Registrieren der App abrufen müssen](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app) beschrieben.
 
 ### Schritt 4: Verwenden der AAD-Bezeichnerwerte im App Wrapping Tool
 Geben Sie die Werte im App Wrapping Tool unter Verwendung der Bezeichnerwerte aus dem Registrierungsprozess als Befehlszeileneigenschaften ein. Sie müssen alle Werte in der Tabelle angeben, damit Endbenutzer die App erfolgreich authentifizieren können. Wenn Sie einen Wert nicht angeben, wird der entsprechende Standardwert verwendet.
@@ -169,12 +163,7 @@ Geben Sie die Werte im App Wrapping Tool unter Verwendung der Bezeichnerwerte au
 |Resource ID|ResourceID|
 Beachten Sie beim Wrappen Ihrer App folgende Punkte:
 
--   Das App Wrapping Tool sucht nicht nach ADAL-Binärdateien innerhalb der App (sofern vorhanden). Wenn die App mit einer veralteten Version der Binärdateien verknüpft ist, können Laufzeitfehler während der Anmeldung auftreten, falls Sie die Authentifizierungsrichtlinien aktiviert haben.
-
--   Um zu überprüfen, ob die Authentifizierung erfolgreich war, ruft
-  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] das AAD-Token ab, das der MAM-Ressourcen-ID zugeordnet ist. Das Token wird jedoch in keinem Aufruf verwendet, wodurch die Gültigkeit des Tokens verifiziert würde. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] liest nur den Benutzerprinzipalnamen (UPN) des angemeldeten Benutzers, um den Zugriff auf die App zu bestimmen. Das AAD-Token wird nicht für weitere Dienstaufrufe verwendet.
-
--   Authentifizierungstoken werden von Apps desselben Herausgebers gemeinsam genutzt, da sie in einem freigegebenen Schlüsselbund gespeichert sind. Zum Isolieren einer bestimmten App verwenden Sie für diese ein anderes Signaturzertifikat, einen anderen Bereitstellungsprofil-KeyStore und einen anderen Schlüsselalias.
+-   Um zu überprüfen, ob die Authentifizierung erfolgreich war, ruft [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] das der MAM-Ressourcen-ID zugeordnete AAD-Token ab. Das Token wird jedoch in keinem Aufruf verwendet, wodurch die Gültigkeit des Tokens verifiziert würde. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] liest nur den Benutzerprinzipalnamen (UPN) des angemeldeten Benutzers, um den Zugriff auf die App zu bestimmen. Das AAD-Token wird nicht für weitere Dienstaufrufe verwendet.
 
 -   Doppelte Anmeldeeingabeaufforderungen werden verhindert, wenn Sie die Client-ID und den Registrierungsstellen-URI der Clientanwendung bereitstellen. Die Client-ID muss für den Zugriff auf die veröffentlichte [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM-Ressourcen-ID im AAD-Dashboard registriert werden. Wurde die Client-ID nicht registriert, erhalten Benutzer bei der Anmeldung einen Fehler, wenn die App ausgeführt wird.
 
@@ -185,6 +174,7 @@ Beachten Sie beim Wrappen Ihrer App folgende Punkte:
 - [Verwenden des SDKs zum Aktivieren von Apps für die Verwaltung von mobilen Anwendungen](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Beschränken des E-Mail-Zugriffs auf Dynamics CRM Online | Microsoft Intune"
-description: 
+description: "Schützen und steuern Sie den Zugriff auf Dynamics CRM Online mit bedingtem Zugriff."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: 89e522a99687fc9b6e82db9f721858d17afdce6a
-ms.openlocfilehash: 8f90f99d621d7edebcb7a4c67e0774da59098df7
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: cbcf2c8d923524b8a1993140fbec0234740075ae
 
 
 ---
@@ -55,10 +56,10 @@ Benutzer, die in beiden Gruppen enthalten sind, werden von der Richtlinie ausgen
 Sie müssen eine Kompatibilitätsrichtlinie [erstellen](create-a-device-compliance-policy-in-microsoft-intune.md) und auf allen Geräten [bereitstellen](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md), die von der Richtlinie betroffen sind. Dies sind alle Geräte, die von den Benutzern in den Zielgruppen verwendet werden.
 
 > [!NOTE]
-> [!NOTE] Kompatibilitätsrichtlinien werden für Microsoft Intune-Gruppen bereitgestellt, Richtlinien für den bedingten Zugriff dagegen werden auf Azure Active Directory-Sicherheitsgruppen angewendet.
+> Kompatibilitätsrichtlinien werden für Microsoft Intune-Gruppen bereitgestellt, Richtlinien für den bedingten Zugriff dagegen werden auf Azure Active Directory-Sicherheitsgruppen angewendet.
 
 > [!IMPORTANT]
-> [!IMPORTANT] Wenn Sie keine Kompatibilitätsrichtlinie bereitgestellt haben, werden die Geräte als kompatibel ausgewertet.
+> Wenn Sie keine Kompatibilitätsrichtlinie bereitgestellt haben, werden die Geräte als kompatibel ausgewertet.
 
 Fahren Sie mit Schritt 3 fort.
 ### Schritt 3: Konfigurieren der Dynamics CRM-Richtlinie
@@ -96,6 +97,6 @@ Wählen Sie eine beliebige Gruppe von Mobilgeräten und dann auf der Registerkar
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

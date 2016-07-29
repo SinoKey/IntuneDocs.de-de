@@ -1,10 +1,10 @@
 ---
 title: "Einstellungen für Windows 10-Richtlinien | Microsoft Intune"
-description: 
+description: "Verwenden Sie die in diesem Thema aufgeführten Richtlinieneinstellungen, um integrierte und benutzerdefinierte Einstellungen für registrierte Windows 10 Desktop- und Windows 10-Mobilgeräte zu konfigurieren."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,19 +12,24 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
-ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
-ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+translationtype: Human Translation
+ms.sourcegitcommit: 01356d08257cf381d1a981f749702800c173de33
+ms.openlocfilehash: 08336c56f4e099c8cd0a0152364824455cae0f03
 
 
 ---
 
 # Einstellungen für Windows 10-Richtlinien in Microsoft Intune
 
-Verwenden Sie die in diesem Thema aufgeführten Richtlinieneinstellungen, um Einstellungen für registrierte Windows 10 Desktop- und Windows 10 Mobile-Geräte zu konfigurieren.
+Verwenden Sie die in diesem Thema aufgeführten Richtlinieneinstellungen, um integrierte und benutzerdefinierte Einstellungen für registrierte Windows 10 Desktop- und Windows 10-Mobilgeräte zu konfigurieren.
+
+> [!IMPORTANT]
+> Sie können Windows 10-PCs auf zwei Arten verwalten: durch Registrierung oder durch Installation der Intune-PC-Clientsoftware. Jede Methode bietet verschiedene Funktionen (weitere Informationen finden Sie unter [Auswählen der Methode zum Verwalten von Geräten](/intune/get-started/choose-how-to-manage-devices)).
+> Beim Verwalten Ihrer Windows 10-PCs mit der Intune-PC-Clientsoftware können Sie nicht die in diesem Thema beschriebenen Richtlinien und Einstellungen verwenden. Um diese Einstellungen anzuwenden, müssen Ihre Windows 10-Geräte bei Intune registriert sein.
 
 ## Allgemeine Konfigurationsrichtlinieneinstellungen
 
-Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für Windows 10, um allgemeine Einstellungen für registrierte Windows 10 Desktop- und Windows 10 Mobile-Geräte zu konfigurieren. Diese Richtlinie kann nicht verwendet werden, wenn Sie Windows 10-PCs mit der Intune-Clientsoftware verwalten.
+Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für Windows 10, um allgemeine Einstellungen für registrierte Windows 10 Desktop- und Windows 10 Mobile-Geräte zu konfigurieren. 
 
 
 ### Kennwort
@@ -161,7 +166,7 @@ Alle Einstellungen gelten für nur Windows 10 Desktop.
 |**Intervall zum Aktualisieren von Signaturen**|Geben Sie das Intervall an, in dem Defender auf neue Signaturdateien prüfen soll.|
 |**Cloudschutz zulassen**|Lassen Sie zu, oder verhindern Sie, dass Microsoft Active Protection Service Informationen über Schadsoftwareaktivitäten von den von Ihnen verwalteten Geräten erhält. Diese Informationen werden verwendet, um den Dienst in der Zukunft zu verbessern.|
 |**Beim Senden von Beispielen beim Benutzer nachfragen**|Steuert, ob die Dateien automatisch an Microsoft gesendet werden, die möglicherweise von Microsoft genauer analysiert werden müssen, um festzustellen, ob sie schädlich sind.|
-|**Erkennung möglicherweise unerwünschter Anwendungen**|Mit dieser Einstellung können registrierte Windows-Desktopcomputer gegen die Ausführung von Software geschützt werden, die von Windows Defender als möglicherweise unerwünscht eingestuft wird. Sie können verhindern, dass diese Anwendungen ausgeführt werden, oder den Überwachungsmodus verwenden, um zu melden, wenn eine möglicherweise unerwünschte Anwendung installiert wird.|
+|**Erkennung möglicherweise unerwünschter Anwendungen**|Mit dieser Einstellung können registrierte Windows-Desktopgeräte gegen die Ausführung von Software geschützt werden, die von Windows Defender als möglicherweise unerwünscht eingestuft wird. Sie können verhindern, dass diese Anwendungen ausgeführt werden, oder den Überwachungsmodus verwenden, um zu melden, wenn eine möglicherweise unerwünschte Anwendung installiert wird.|
 |**Von der Überprüfung oder dem Echtzeitschutz auszuschließende Dateien und Ordner**|Fügen Sie Dateien und Ordner wie **C:\Pfad** oder **%ProgramFiles%\Pfad\Dateiname.exe** der Ausschlussliste hinzu. Diese Dateien und Ordner werden nicht in Echtzeitüberprüfungen oder geplante Überprüfungen einbezogen.|
 |**Dateierweiterungen, die beim Ausführen einer Überprüfung oder bei Verwendung des Echtzeitschutzes auszuschließen sind**|Fügen Sie Dateierweiterungen wie **JPG** oder **TXT** der Ausschlussliste hinzu. Dateien mit diesen Erweiterungen werden nicht in Echtzeitüberprüfungen oder geplante Überprüfungen einbezogen.|
 |**Prozesse, die beim Ausführen einer Überprüfung oder bei Verwendung des Echtzeitschutzes auszuschließen sind**|Fügen Sie Prozesse des Typs **.exe**, **.com** oder **.scr** der Ausschlussliste hinzu. Diese Prozesse werden nicht in Echtzeitüberprüfungen oder geplante Überprüfungen einbezogen.| 
@@ -327,6 +332,6 @@ Wenn Sie die benutzerdefinierte Windows-URI-Richtlinie verwenden möchten, müss
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

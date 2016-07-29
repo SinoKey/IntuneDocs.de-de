@@ -1,9 +1,9 @@
 ---
 title: "Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune | Microsoft Intune"
-description: 
+description: "Liste mit Links zu Aufgaben, die Sie auf Ihrem iOS- oder Mac OS X-Mobilgerät ausführen können, wenn das Gerät bei Intune registriert ist."
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
-ms.openlocfilehash: bf298bace896a666d1f2992f2921ebf5a15f05f7
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 6c3d8b3a64d98357b7aac2a9f000ca33125c1858
 
 
 ---
@@ -50,7 +50,7 @@ Die Informationen in diesem Abschnitt helfen Ihnen bei Aktionen, die Sie nach de
 
 Die Informationen in diesem Abschnitt helfen Ihnen beim Beheben von Problemen, die mit bei Intune registrierten iOS-Geräten auftreten können.
 
-- [Wiederherstellen der Verbindung eines gefährdeten iOS-Geräts](how-to-reconnect-a-compromised-ios-device)
+- [Wiederherstellen der Verbindung eines gefährdeten iOS-Geräts](how-to-reconnect-a-compromised-ios-device.md)
 - [Senden von Fehlern an Ihren IT-Administrator](send-errors-to-your-it-admin-ios.md)
 - [Sie erhalten bei Verwendung der Unternehmensportal-App eine Fehlermeldung](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [Es werden Fehlermeldungen angezeigt, wenn Sie versuchen, Ihr Gerät bei Intune zu registrieren](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
@@ -63,6 +63,6 @@ Die Informationen in diesem Abschnitt helfen Ihnen beim Beheben von Problemen, d
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

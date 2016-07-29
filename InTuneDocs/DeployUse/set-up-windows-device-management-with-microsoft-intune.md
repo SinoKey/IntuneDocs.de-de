@@ -1,6 +1,6 @@
 ---
 title: "Einrichten der Windows-Geräteverwaltung mit Microsoft Intune | Microsoft Intune"
-description: 
+description: "Aktivieren Sie die Verwaltung mobiler Geräte (Mobile Device Management, MDM) für Windows-PCs inklusive Windows 10-Geräte mit Microsoft Intune."
 keywords: 
 author: NathBarn
 manager: jeffgilb
@@ -10,11 +10,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
-ms.openlocfilehash: c18445385e8361cf01948b583f08e992658a8762
+ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
+ms.openlocfilehash: 710e34f8f97377bf57a398f74773788df3794654
 
 
 ---
@@ -26,18 +26,20 @@ Durch das Erstellen eines DNS-CNAME-Eintrags können Benutzer sich mit Intune ve
 
 ### Einrichten der Windows-Geräteverwaltung
 
-  1.  Erstellen Sie einen **CNAME**-DNS-Ressourceneintrag für die Domäne des Unternehmens. Wenn der Name Ihrer Unternehmenswebsite beispielsweise contoso.com lautet, erstellen Sie einen CNAME in DNS, der EnterpriseEnrollment.contoso.com an EnterpriseEnrollment-s.manage.microsoft.com umleitet. Wenn mehr als eine überprüfte Domäne vorhanden ist, erstellen Sie einen CNAME-Eintrag für jede Domäne. Die CNAME-Ressourceneinträge müssen folgende Informationen enthalten:
+  1.  Erstellen Sie einen **CNAME**-DNS-Ressourceneintrag für die Domäne des Unternehmens. Wenn der Name Ihrer Unternehmenswebsite beispielsweise contoso.com lautet, erstellen Sie einen CNAME in DNS, der EnterpriseEnrollment.contoso.com an EnterpriseEnrollment-s.manage.microsoft.com umleitet. Der CNAME-DNS-Eintrag ist für die Registrierung von Windows-Geräten zwar optional, es sollte, sofern erforderlich, jedoch mindestens ein Eintrag erstellt werden, um den Prozess der Windows-Geräteregistrierung zu vereinfachen. Wenn kein CNAME-Eintrag gefunden wird, wird der Benutzer aufgefordert, den MDM-Servernamen manuell einzugeben.
+
+  Existieren mehrere überprüfte Domänen, erstellen Sie einen CNAME-Eintrag für jede Domäne. Die CNAME-Ressourceneinträge müssen die folgenden Informationen enthalten:
 
   |TYP|Hostname|Verweist auf|TTL|
   |--------|-------------|-------------|-------|
   |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 Stunde|
   |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 Stunde|
 
-    Es kann bis zu 72 Stunden dauern, bis Änderungen an DNS-Einträgen vollständig verteilt sind. Sie können die DNS-Änderung in Intune erst überprüfen, wenn der DNS-Eintrag verteilt ist.
+  Es kann bis zu 72 Stunden dauern, bis Änderungen an DNS-Einträgen vollständig verteilt sind. Sie können die DNS-Änderung in Intune erst überprüfen, wenn der DNS-Eintrag verteilt ist.
 
-    **EnterpriseEnrollment-s.manage.microsoft.com** – Unterstützt eine Umleitung zum Intune-Dienst mit Domänenerkennung anhand des E-Mail-Domänennamens.
+  **EnterpriseEnrollment-s.manage.microsoft.com** – Unterstützt eine Umleitung zum Intune-Dienst mit Domänenerkennung anhand des E-Mail-Domänennamens.
 
-    **EnterpriseRegistration.windows.net** – Unterstützt Windows 8.1- und Windows 10 Mobile-Geräte, die über das jeweilige Geschäfts-, Schul- oder Unikonto bei Azure Active Directory registriert werden.
+  **EnterpriseRegistration.windows.net** – Unterstützt Windows 8.1- und Windows 10 Mobile-Geräte, die über das jeweilige Geschäfts-, Schul- oder Unikonto bei Azure Active Directory registriert werden.
 
   2.  Klicken Sie in der [Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Admin** &gt; **Verwaltung mobiler Geräte** &gt; **Windows**.
   ![Dialogfeld „Windows-Geräteverwaltung“](../media/enroll-intune-winenr.png)
@@ -48,6 +50,6 @@ Durch das Erstellen eines DNS-CNAME-Eintrags können Benutzer sich mit Intune ve
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Aufheben der Registrierung Ihres Geräts bei Intune | Microsoft Intune"
-description: 
+title: "Aufheben der Registrierung Ihres Windows-Geräts bei Intune | Microsoft Intune"
+description: "Beschreibt das Aufheben der Registrierung eines Windows-Geräts bei Intune."
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: c323aed2b4fbac831ae4919c8145b7253eb97ace
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: e510d9800fde2f1f10c583da273dc28739044009
 
 
 ---
 
 
-# Aufheben der Registrierung Ihres Geräts in Intune
+# Aufheben der Registrierung Ihres Windows-Geräts bei Intune
 
 Wenn Sie in Intune registriert sind, Ihr Windows-Gerät aber nicht mehr für die Arbeit oder in der Schule bzw. Uni verwenden möchten und auch nicht mehr auf geschäftliche oder Schul-/Uni-E-Mails, -Apps oder andere diesbezügliche Ressourcen zugreifen müssen, müssen Sie die Registrierung Ihres Geräts aufheben. Nachdem Sie die Registrierung Ihres Geräts bei Intune aufgehoben haben, können Sie nicht mehr auf diese Ressourcen zugreifen. Weitere Informationen dazu, was bei Aufheben der Registrierung Ihres Geräts bei Intune geschieht, finden Sie unter [Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
@@ -66,6 +66,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

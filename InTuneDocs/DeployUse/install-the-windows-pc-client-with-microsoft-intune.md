@@ -1,20 +1,20 @@
 ---
-title: Installieren des Windows-PC-Clients mit Microsoft Intune | Microsoft Intune
-description: 
+title: Installieren des Windows-PC-Clients | Microsoft Intune
+description: Befolgen Sie diese Anleitung zum Verwalten Ihrer Windows-PCs durch die Microsoft Intune-Clientsoftware.
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
-ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 3cb693eff7545fe4de8e5c082cfa3ab088c005db
 
 
 ---
@@ -35,8 +35,6 @@ Verwenden Sie dann mindestens eine der folgenden Methoden, um den Client zu inst
 -   [So stellen Sie die Clientsoftware manuell bereit](#to-manually-deploy-the-client-software)
 
 -   [So stellen Sie die Clientsoftware mithilfe von Gruppenrichtlinien automatisch bereit](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [So können Benutzer ihre Computer selbst registrieren](#how-users-can-self-enroll-their-computers)
 
 -   [Installieren der Microsoft Intune-Clientsoftware als Teil eines Betriebssystemabbilds](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
@@ -81,28 +79,6 @@ Wenn ein Computer nicht mehr mit Intune verwaltet werden soll, können Sie ihn a
 3.  Verwenden Sie Gruppenrichtlinien, um die Software auf Computern in Ihrem Netzwerk bereitzustellen.
 
     Weitere Informationen zum automatischen Bereitstellen von Software mithilfe von Gruppenrichtlinien finden Sie in Ihrer Windows Server-Dokumentation.
-
-### So können Benutzer ihre Computer selbst registrieren
-Benutzer können alle ihre Computer über das Intune-Unternehmensportal selbst registrieren. Jeder registrierte Computer wird mit dem Benutzerkonto verknüpft, das zum Installieren der Clientsoftware verwendet wurde.
-
-> [!NOTE]
-> -   Der Benutzer muss ein Administrator auf dem Computer sein, um die Clientsoftware zu installieren.
-> -   Für die Selbstregistrierung muss Internet Explorer auf dem Clientcomputer installiert sein.
-> -   Bei jeder Selbstregistrierung eines Computers durch einen Benutzer wird eine Intune-Lizenz verwendet.
-> -   Für die Selbstregistrierung eines Computers müssen Sie ein Geschäfts- oder Schulkonto verwenden. Eine Selbstregistrierung eines Computers mit einem Microsoft-Konto ist nicht möglich.
-> -   Wenn die Clientsoftware auf einem Computer bereits installiert ist, erhält der Endbenutzer eine Fehlermeldung.
-
-### So führen Sie die Selbstregistrierung eines Computers aus (Informationen für Endbenutzer)
-
-1.  Melden Sie sich mit dem Computer, den Sie registrieren möchten, beim Unternehmensportal an.
-
-2.  Klicken Sie auf **Gerät hinzufügen**.
-
-3.  Klicken Sie auf **Software herunterladen** und dann auf **Ausführen**.
-
-4.  Klicken Sie auf **Weiter**, um den Setup-Assistenten von Microsoft Intune zu starten.
-
-5.  Klicken Sie nach Abschluss des Setup-Assistenten auf **Fertig stellen**.
 
 ### Installieren der Microsoft Intune-Clientsoftware als Teil eines Betriebssystemabbilds
 Sie können die Intune-Clientsoftware als Teil eines Betriebssystemabbilds auf Computern installieren. Verwenden Sie dazu die folgende Beispielvorgehensweise als Basis:
@@ -157,11 +133,12 @@ Verwenden Sie eins der folgenden Verfahren, um die erfolgreiche Clientbereitstel
     > Klicken Sie im Bericht auf beliebige Spaltenüberschriften, um die Liste nach dem Inhalt der betreffenden Spalte zu sortieren.
 
 
-### Weitere Informationen
+### Siehe auch
 [Verwalten von Windows-PCs mit Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
+[Problembehandlung beim Clientsetup](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

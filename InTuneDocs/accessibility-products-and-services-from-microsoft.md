@@ -1,13 +1,24 @@
 ---
-Titel: Barrierefreiheitprodukte und Dienste von Microsoft
-MS.Custom: Na
-MS.Reviewer: Na
-MS.Service: Microsoft Intune
-MS.Suite: Na
-MS.tgt_pltfrm: Na
-MS.topic: Artikel
-MS.AssetId: b23d4007-1866-42e9-b6cb-d45408562da4
+title: Barrierefreiheitsprodukte und -dienste von Microsoft | Microsoft Intune
+description: 
+keywords: 
+author: 
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: b23d4007-1866-42e9-b6cb-d45408562da4
+ms.reviewer: jeffgilb
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 966677b7d9488d37d44f42ff8ef8bbac7a5d3914
+
+
 ---
+
 # Barrierefreiheitsprodukte und Barrierefreiheitsdienste von Microsoft
 [!INCLUDE[accessibility1](./includes/accessibility1_md.md)]
 
@@ -44,7 +55,7 @@ MS.AssetId: b23d4007-1866-42e9-b6cb-d45408562da4
 
 [!INCLUDE[accessibility12](./includes/accessibility12_md.md)]
 
-## Kundendienst für Hörgeschädigte
+## Kundendienst für Personen mit Hörschwächen
 [!INCLUDE[accessibility13](./includes/accessibility13_md.md)]
 
 -   [!INCLUDE[accessibility14](./includes/accessibility14_md.md)]
@@ -58,6 +69,7 @@ MS.AssetId: b23d4007-1866-42e9-b6cb-d45408562da4
 
 
 
-<!--HONumber=Mar16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

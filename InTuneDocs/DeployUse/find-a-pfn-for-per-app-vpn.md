@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Suchen eines Paketfamiliennamens (PFN) für VPN pro App | Microsoft Intune
-description:
-keywords:
+title: "Suchen eines Paketfamiliennamens (PFN) für VPN pro App | Microsoft Intune"
+description: "Suchen Sie einen Paketfamiliennamen (PFN), den Sie zum Konfigurieren eines anwendungsbezogenen VPN („VPN pro App“) benötigen."
+keywords: 
 author: nbigman
-manager: [ALIAS]
-ms.date: 05/10/2016
+manager: Arob98
+ms.date: 07/20/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
+ms.reviewer: tycast
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 9a049127d79098bfb8992055a0a8b20fbfafd8c9
+ms.openlocfilehash: 980611a6c1fafdbc990f30d3144766abc97e632b
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: [ALIAS]
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -29,9 +23,9 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 
 Es gibt zwei Möglichen zum Suchen eines Paketfamiliennamens (PFN), den Sie zum Konfigurieren eines anwendungsbezogenen VPNs („VPN pro App“) benötigen.
 
-## Suchen eines PFN für eine App, die auf einem Windows 10-Computer installiert ist 
+## Suchen eines PFN für eine App, die auf einem Windows 10-Computer installiert ist 
 
-Wenn die entsprechende App bereits auf einem Windows 10-Computer installiert ist, können Sie den PFN mit dem PowerShell-Cmdlet [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) abrufen.
+Wenn die entsprechende App bereits auf einem Windows 10-Computer installiert ist, können Sie den PFN mit dem PowerShell-Cmdlet [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) abrufen.
 
 Die Syntax für die „Get-AppxPackage“ lautet:
 
@@ -74,7 +68,7 @@ Für OneNote werden folgende Informationen abgerufen:
 ## Suchen eines PFN, wenn die App nicht auf dem Computer installiert ist
 
 1.  Navigieren Sie zu „https://www.microsoft.com/de-de/store/apps“.
-2.  Geben Sie in der Suchleiste den Namen der App ein. Suchen Sie z. B. nach OneNote.
+2.  Geben Sie in der Suchleiste den Namen der App ein. Suchen Sie z.B. nach OneNote.
 3.  Klicken Sie auf den Link zu der App. Am Ende der nun angezeigten URL finden Sie eine Reihe von Buchstaben. In unserem Beispiel sieht die URL so aus:
 `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
 4.  Fügen Sie die URL `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata` in eine andere Registerkarte Ihres Browsers ein, und ersetzen Sie `<app id>` durch die App-ID, die Sie am ganz Ende von „https://www.microsoft.com/de-de/store/apps“ gefunden haben (die Zeichenfolge mit den Buchstaben aus Schritt 3). In unserem Beispiel für OneNote fügen Sie `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata` ein.
@@ -91,6 +85,7 @@ In Edge werden die gewünschten Informationen sofort angezeigt. In Internet Expl
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,26 +1,26 @@
 ---
-title: "Exchange-Zugriffsregeln für mit Microsoft Intune verwaltete mobile Geräte | Microsoft Intune"
-description: 
+title: "Exchange-Zugriffsregeln für mobile Geräte | Microsoft Intune"
+description: "Die Exchange ActiveSync-Zugriffsregeln für die Verwaltung mobiler Geräte (Mobile Devices Management, MDM) bestimmen die Ebene des Zugriffs, den diese Geräte auf Exchange erhalten."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: f69c086333e359f7d1bf202a8d13667779bd3c86
 
 
 ---
 
 # Exchange-Zugriffsregeln für mobile Geräte
-Die Exchange-Zugriffsregeln für mobile Geräte bestimmen das Ausmaß des Zugriffs, das diese Geräte auf Exchange erhalten. Diese Einstellungen betreffen alle mobilen Geräte, einschließlich der nicht in Microsoft Intune registrierten. Sie können zunächst eine **Standardregel** definieren, die für alle mobilen Geräte gilt, auf welche keine benutzerdefinierten Regeln angewendet werden. Die folgende Tabelle enthält die Zugriffsebenen, die von Exchange ActiveSync verwaltet werden:
+Die Exchange-Zugriffsregeln für mobile Geräte bestimmen die Ebene des Zugriffs, den diese Geräte auf Exchange ActiveSync erhalten. Diese Einstellungen betreffen alle mobilen Geräte, einschließlich der nicht in Microsoft Intune registrierten. Sie können zunächst eine **Standardregel** definieren, die für alle mobilen Geräte gilt, auf welche keine benutzerdefinierten Regeln angewendet werden. Die folgende Tabelle enthält die Zugriffsebenen, die von Exchange ActiveSync verwaltet werden:
 
 |Zugriffsebene|Beschreibung|
 |----------------|---------------|
@@ -53,6 +53,6 @@ Im folgenden Verfahren wird das Erstellen einer benutzerdefinierten Regel beschr
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Verwalten unternehmenseigener Geräte | Microsoft Intune"
-description: 
+description: "Verschiedene Möglichkeiten zum Aufnehmen von unternehmenseigenen Geräte (Corporate-Owned Devices, COD) in die Verwaltung – je nach Gerät, Art des Kaufs und Anforderungen der Organisation."
 keywords: 
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 69cf07aa0747448e0ef3384b5b5132e0e76aed45
-ms.openlocfilehash: e07053b9b26afacc03e45f2cb104eda6088a1e05
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: 6cf620a96b39540c8b7ca618936af1367971bb8f
 
 
 ---
@@ -32,13 +32,27 @@ Mit Intune können Organisationen eine große Anzahl mobiler Geräte mit einem e
 
 [Registrieren von firmeneigenen Geräten mit dem Geräteregistrierungs-Manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 
-## International Mobile Equipment Identity (IMEI)
-Eindeutige IMEI-Nummern (International Mobile Equipment Identity) sind allgemeine Geräteeigenschaften für viele Hersteller von mobilen Geräten. Intune-Administratoren können IMEI-Nummern für Geräte importieren, die sich im Besitz des Unternehmens befinden. Wenn das Gerät von Intune verwaltet wird, kann es als firmeneigenes Gerät gekennzeichnet und mit der entsprechenden Richtlinie versehen werden.
+## Registrieren von unternehmenseigenen Windows 10-Desktops
 
-[Angeben firmeneigener Geräte über IMEI-Nummern (International Mobile Equipment Identity)](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+Wenn Ihre Organisation über Azure Active Directory Premium (AADP) oder die Enterprise Management Suite (EMS) verfügt können Sie [Windows 10 für Unternehmen registrieren](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview). Die Geräte werden automatisch als „unternehmenseigen“ gekennzeichnet, wenn Benutzer ihr Geschäfts-, Schul- oder Unikonto hinzufügen.
+
+## Identifizieren von Geräten als unternehmenseigen
+
+Unternehmenseigene Geräte werden in Gerätelisten unter **Besitz** als **Unternehmen** geführt. Geräte können auf folgende Arten als unternehmenseigen identifiziert werden:
+
+ - [Registriert über den Geräteregistrierungs-Manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+ - Registriert über das [Geräteregistrierungsprogramm](ios-device-enrollment-program-in-microsoft-intune.md) von Apple oder den [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md)
+ - [Vorabdeklarieren von Geräten mit IMEI-Nummern](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+ - [Registrieren von Windows 10-Geräten in Azure Active Directory/Enterprise Management Suite](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)
+
+### International Mobile Equipment Identity (IMEI)
+
+Eindeutige IMEI-Nummern (International Mobile Equipment Identity) sind allgemeine Geräteeigenschaften für viele Hersteller von mobilen Geräten. Intune-Administratoren können IMEI-Nummern für Geräte importieren, die sich im Besitz des Unternehmens befinden. Wenn das Gerät von Intune verwaltet wird, wird es als unternehmenseigenes Gerät gekennzeichnet.
+
+[Angeben unternehmenseigener Geräte über IMEI-Nummern (International Mobile Equipment Identity)](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

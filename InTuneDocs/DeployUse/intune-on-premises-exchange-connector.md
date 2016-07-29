@@ -1,19 +1,20 @@
 ---
-title: "Installieren des Microsoft Intune Exchange Connectors für lokales Exchange | Microsoft Intune"
-description: 
+title: "Exchange-Connector für lokales EAS | Microsoft Intune"
+description: "Verwenden Sie den Connector, um die Kommunikation zwischen der Intune-Verwaltungskonsole und der lokalen Exchange Server-Instanz für Exchange ActiveSync-MDM zu ermöglichen."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 
 
 ---
@@ -36,7 +37,6 @@ In der folgenden Tabelle finden Sie die Anforderungen an den Computer, auf dem S
 |Zusätzliche Software|Eine vollständige Installation von Microsoft .NET Framework 4 und Windows PowerShell 2.0 muss auf dem Computer installiert sein, auf dem der Connector gehostet wird.|
 |Netzwerk|Der Computer, auf dem Sie den Connector installieren, muss sich in einer Domäne befinden, die sich mit der Domäne, in der Exchange Server gehostet wird, in einer Vertrauensstellung befindet.<br /><br />Der Computer erfordert Konfigurationen, die es ihm ermöglichen, über Firewalls und Proxyserver über Port 80 und 443 auf den Intune-Dienst zuzugreifen. Von Intune verwendete Domänen umfassen manage.microsoft.com, &#42;manage.microsoft.com und &#42;.manage.microsoft.com.|
 |Konfiguration und Ausführung von gehostetem Exchange|Unter [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx) finden Sie weitere Informationen. |
-|Festlegen von Intune als Autorität für die Verwaltung mobiler Geräte|[Festlegen von Intune als Ihre Autorität für die Verwaltung mobiler Geräte](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 
 ### Anforderungen an Exchange-Cmdlets
 
@@ -58,16 +58,14 @@ Sie müssen in Active Directory ein Benutzerkonto erstellen, das vom Intune Exch
 
 ## Herunterladen des Softwareinstallationspaket für den lokalen Exchange-Connector
 
-1. Öffnen Sie in einem vom lokalen Exchange-Connector unterstützten Betriebssystem die [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) (http://manage.microsoft.com) mit einem Benutzerkonto, das ein Administrator im Exchange-Mandanten mit einer Lizenz zum Verwenden von Exchange Server ist.
+1. Öffnen Sie in einem vom lokalen Exchange-Connector unterstützten Windows Server-Betriebssystem die [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) (http://manage.microsoft.com) mit einem Benutzerkonto, das ein Administrator im Exchange-Mandanten mit einer Lizenz zum Verwenden von Exchange Server ist.
 ![Öffnen und Einrichten der Exchange-Verbindung](../media/ExchangeConnector.gif)
 
-2.  Wählen Sie im Bereich der Arbeitsbereichsverknüpfungen die Option **ADMIN** aus.
+2.  Wählen Sie im Bereich mit den Arbeitsbereichsverknüpfungen nacheinander **Verwaltung**, **Verwaltung mobiler Geräte** > **Microsoft Exchange** und **Exchange-Verbindung einrichten**.
 
-3.  Erweitern Sie im Navigationsbereich unter **Verwaltung mobiler Geräte** **Microsoft Exchange** ein, und wählen Sie anschließend **Exchange-Verbindung einrichten** aus.
+3.  Wählen Sie auf der Seite **Exchange-Verbindung einrichten** die Option **Lokalen Connector herunterladen** aus.
 
-4.  Wählen Sie auf der Seite **Exchange-Verbindung einrichten** die Option **Lokalen Connector herunterladen** aus.
-
-5.  Der lokale Exchange-Connector ist in einem komprimierten Ordner (ZIP-Archiv) enthalten, der geöffnet oder gespeichert werden kann. Wählen Sie im Dialogfeld **Dateidownload** die Option **Speichern** aus, um den komprimierten Ordner an einem sicheren Speicherort zu speichern.
+4.  Der lokale Exchange-Connector ist in einem komprimierten Ordner (ZIP-Archiv) enthalten, der geöffnet oder gespeichert werden kann. Wählen Sie im Dialogfeld **Dateidownload** die Option **Speichern** aus, um den komprimierten Ordner an einem sicheren Speicherort zu speichern.
 
 > [!IMPORTANT]
 > Die Dateien im Ordner des lokalen Exchange-Connectors dürfen nicht umbenannt oder verschoben werden. Bei Verschieben oder Umbenennen der Inhalt des Ordners ist die Installation nicht mehr funktionsfähig.
@@ -133,6 +131,6 @@ Sie können auch die Uhrzeit und das Datum des letzten erfolgreichen Synchronisa
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

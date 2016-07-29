@@ -1,10 +1,10 @@
 ---
 title: Aktualisieren von Apps | Microsoft Intune
-description: 
+description: Anhand der Informationen in diesem Thema erfahren Sie, wie Sie Apps aktualisieren, wenn eine neue Version erforderlich ist.
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: 0581d1476fba5bedcdd4446df20f8f92b151f41b
-ms.openlocfilehash: 9e5b8f4a467e8e58cc2f8fa495b5f008eee7e35b
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: bb077902e33d6ab18dea33a6ab2d1ff9a70ce937
 
 
 ---
@@ -23,6 +24,16 @@ Microsoft Intune unterstützt Sie bei der Verwaltung von App-Updates. Anhand der
 
 ## Aktualisieren von Apps
 Wenn eine neue Version einer von Ihnen bereitgestellten App veröffentlicht wird, können Sie mit Intune die neuere Version der App aktualisieren und bereitstellen. Sie können eine Bereitstellung nur durch eine neuere Version der gleichen App (mit derselben ID) ersetzen. App-Updates können nicht zum Aktualisieren einer Bereitstellung mit einem anderen App-Paket verwendet werden.
+
+### App-Bezeichner
+Der App-Bezeichner ist eine Eigenschaft, die eine App eindeutig identifiziert. Sie können nicht mehrere Kopien einer App mit dem gleichen Bezeichner installieren. Beispiel:
+
+- **iOS** – Paket-ID (z. B. com.microsoft.excel)
+- **Android** – Paket-ID (z. B. com.microsoft.excel)
+- **Windows Phone-** – (XAP-Installer) mit Produkt-ID (GUID)
+- **Windows** – (Appx/Appxbundle), verwenden Sie den vollständigen Paketnamen
+
+
 
 > [!IMPORTANT]
 > Beim Bereitstellen einer App mit der Bereitstellungsaktion **Erforderliche Installation** und einer späteren Änderung der Bereitstellungsaktion in **Verfügbare Installation**werden Updates für die App auf Geräten, auf denen die App vor der Bereitstellungsänderung installiert war, nicht automatisch installiert. Gehen Sie wie folgt vor, um dieses Problem zu beheben:
@@ -49,6 +60,6 @@ Bei Apps, die als Link zu einem Store bereitgestellt wurden, wird das Update von
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

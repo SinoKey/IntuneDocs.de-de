@@ -1,10 +1,10 @@
 ---
-title: "Einstellungen für Android- und Samsung KNOX-Konfigurationsrichtlinien | Microsoft Intune"
-description: 
+title: "Einstellungen für Android- und Samsung KNOX-Richtlinien | Microsoft Intune"
+description: "Erstellen Sie Richtlinien, die Einstellungen und Features auf Android-Geräten steuern, die Sie mit Intune verwalten."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,15 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 62beaec31a0cdc3c28fd3eed820a6771e42ef3e7
-ms.openlocfilehash: f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: e983f4ac4e396a30db19e5a0d487ac0f9c25ff14
 
 
 ---
 
 # Einstellungen für Android- und Samsung KNOX-Richtlinien in Microsoft Intune
+
+Intune bietet eine Vielzahl von integrierten allgemeinen Einstellungen, die Sie auf Android-Geräten konfigurieren können. Darüber hinaus können Sie OMA-URI-Werte angeben, um benutzerdefinierte Einstellungen zu erstellen, die über Intune nicht verfügbar sind.
 
 ## Allgemeine Konfigurationsrichtlinie
 
@@ -254,6 +256,6 @@ Obwohl Intune WLAN-Profile für Android-Geräte unterstützt, ist derzeit das Ei
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

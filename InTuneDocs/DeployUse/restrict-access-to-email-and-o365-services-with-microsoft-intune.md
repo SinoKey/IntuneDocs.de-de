@@ -1,6 +1,6 @@
 ---
 title: "Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste | Microsoft Intune"
-description: 
+description: "In diesem Thema wird beschrieben, wie Sie bedingten Zugriff einrichten, damit nur kompatible Geräte auf Unternehmens-E-Mail und -daten in SharePoint Online und anderen Diensten zugreifen können."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
-ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: df430a31e13027c7a342beb90b78d48c74bce9e6
 
 
 ---
@@ -21,9 +22,9 @@ ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
 # Beschränken des Zugriffs auf E-Mail, O365 und andere Dienste mit Microsoft Intune
 Sie können den Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens mithilfe des bedingten Zugriffs in Intune beschränken. Mithilfe der Intune-Funktion für den bedingten Zugriff können Sie sicherstellen, dass der Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens auf Geräte beschränkt ist, die den von Ihnen festgelegten Regeln entsprechen.
 ## Funktionsweise des bedingten Zugriffs
-Zur Bewertung der Gerätekompatibilität werden Einstellungen für Kompatibilitätsrichtlinien verwendet. Die Richtlinie für bedingten Zugriff verwendet diese Bewertung, um den Zugriff auf einen bestimmten Dienst zuzulassen oder zu beschränken. Wenn eine Richtlinie für bedingten Zugriff in Kombination mit einer Kompatibilitätsrichtlinie verwendet wird, erhalten nur kompatible Geräte Zugriff auf den Dienst.
+Zur Bewertung der Gerätekompatibilität werden Einstellungen für Kompatibilitätsrichtlinien verwendet. Die Richtlinie für bedingten Zugriff verwendet diese Bewertung, um den Zugriff auf einen bestimmten Dienst zuzulassen oder zu beschränken. Wenn eine Richtlinie für bedingten Zugriff in Kombination mit einer Kompatibilitätsrichtlinie verwendet wird, erhalten nur kompatible Geräte Zugriff auf den Dienst. Die Richtlinien für Konformität und bedingten Zugriff werden dem Benutzer bereitgestellt. Jedes Gerät, das der Benutzer zum Zugriff auf die Dienste verwendet, wird auf die Einhaltung der Richtlinien überprüft.
 
-Bedenken Sie, dass für den Benutzer, der das Gerät verwendet, ebenfalls eine Kompatibilitätsrichtlinie bereitgestellt werden muss, damit das Gerät hinsichtlich der Kompatibilität bewertet werden kann.
+Bedenken Sie, dass für den Benutzer, der das Gerät verwendet, eine Kompatibilitätsrichtlinie bereitgestellt werden muss, damit das Gerät hinsichtlich der Kompatibilität bewertet werden kann.
 Wenn keine Kompatibilitätsrichtlinie für den Benutzer bereitgestellt wird, wird das Gerät als kompatibel behandelt, und es werden keine Zugriffsbeschränkungen angewendet.
 
 Wenn Geräte die in den Richtlinien festgelegten Bedingungen nicht erfüllen, erhält der Benutzer Anweisungen zum Registrieren des Geräts und zum Beheben des Problems, das die Konformität des Geräts verhindert.
@@ -64,6 +65,6 @@ Im Gegensatz zu anderen Intune-Richtlinien stellen Sie Richtlinien für bedingte
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

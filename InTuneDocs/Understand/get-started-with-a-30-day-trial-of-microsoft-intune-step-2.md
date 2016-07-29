@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Hinzufügen von Benutzern zu Ihrer 30-tägigen Evaluierung von Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Hinzufügen von Benutzern zu Ihrer 30-tägigen Intune-Evaluierungsversion | Microsoft Intune"
+description: "So fügen Sie Benutzer – einzeln oder per Massenvorgang – hinzu, wenn Sie sich für eine kostenlose 30-tägige Evaluierungsversion von Intune registrieren."
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9e40999b-46f7-447b-8974-72af82bec7ef
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 5a5ebe474580b98a3696bbd970c889837283b6f0
+
 
 ---
 
@@ -37,7 +31,7 @@ Sie können Mandantenadministratorinformationen mithilfe der Intune-Verwaltungsk
 ## Hinzufügen einzelner Benutzerkonten
 Führen Sie die folgenden Schritte aus, um zusätzliche Benutzerkonten in Ihrem Evaluierungsmandanten zu erstellen. Denken Sie daran, dass jedes von Ihnen hinzugefügte Benutzerkonto als eine der 100 Lizenzen gezählt wird, die Sie im Rahmen der kostenlosen Intune-Evaluierung erhalten.
 
-1.  Wählen Sie im [Office 365 Admin Center](http://go.microsoft.com/fwlink/p/?LinkId=698854) nacheinander **Benutzer hinzufügen** &gt; **Neu**&gt; **Benutzer** aus, um den Assistenten **Neue Benutzer** zu starten.
+1.  Wählen Sie im [Office 365 Admin Center](http://go.microsoft.com/fwlink/?LinkID=787455) nacheinander **Benutzer hinzufügen** &gt; **Neu** &gt; **Benutzer** aus, um den Assistenten **Neue Benutzer** zu starten.
 
 2.  Füllen Sie auf der Seite **Details** die erforderlichen Felder aus.
 
@@ -51,14 +45,14 @@ Führen Sie die folgenden Schritte aus, um zusätzliche Benutzerkonten in Ihrem 
 
 7.  Wenn der neue Benutzer im Office 365 Admin Center angezeigt wird, überprüfen Sie, ob der neue Benutzer erfolgreich erstellt wurde:
 
-    1.  Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com/) nacheinander **Verwaltung** &gt; **Unternehmensportal** aus, und scrollen Sie zum unteren Rand des Bildschirms. Kopieren Sie die unter **Intune-Unternehmensportal** gezeigte URL..
+    1.  Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com/) nacheinander **Verwaltung** &gt; **Unternehmensportal** aus, und scrollen Sie zum unteren Rand des Bildschirms. Kopieren Sie die unter **Intune-Unternehmensportal** gezeigte URL.
 
     2.  Öffnen Sie ein neues Browserfenster im Datenschutzmodus (klicken Sie in Internet Explorer auf **Extras** &gt; **InPrivate-Browsen**) oder auf einem anderen Gerät, und navigieren Sie dann zu der URL, die Sie im vorigen Schritt kopiert haben. Wenn Benutzer sich nun erstmals anmelden, müssen sie ein neues Kennwort für ihr Konto angeben.
 
 ## Massenhaftes Hinzufügen von Benutzern
-Um Benutzer Intune massenhaft hinzuzufügen, verwenden Sie den Assistenten **Benutzer per Massenvorgang hinzufügen**, um eine CSV-Datei (durch Trennzeichen getrennt) hochzuladen, die Ihre Benutzerdaten enthält. Links im Assistenten ermöglichen es Ihnen, eine leere Vorlage und eine CSV-Beispieldatei herunterzuladen. Die erste Zeile Ihrer CSV-Datei muss jede der Beschriftungen für die Benutzerdatenspalten in der richtigen Reihenfolge enthalten. Für jeden Benutzer in der CSV-Datei müssen der **Benutzername** (z. B. **bob@contoso.com**) und ein **Anzeigename** (wie **Bob Kelly**) enthalten sein.).
+Um Benutzer Intune massenhaft hinzuzufügen, verwenden Sie den Assistenten **Benutzer per Massenvorgang hinzufügen**, um eine CSV-Datei (durch Trennzeichen getrennt) hochzuladen, die Ihre Benutzerdaten enthält. Links im Assistenten ermöglichen es Ihnen, eine leere Vorlage und eine CSV-Beispieldatei herunterzuladen. Die erste Zeile Ihrer CSV-Datei muss jede der Beschriftungen für die Benutzerdatenspalten in der richtigen Reihenfolge enthalten. Ferner muss für jeden Benutzer in der CSV-Datei der **Benutzername** (z. B. **bob@contoso.com**) und ein **Anzeigename** (wie **Bob Kelly**) enthalten sein.
 
-1.  Klicken Sie im [Office 365 Admin Center](http://go.microsoft.com/fwlink/p/?LinkId=698854) auf **Benutzer** &gt; **Neu**..
+1.  Klicken Sie im [Office 365 Admin Center](http://go.microsoft.com/fwlink/?LinkID=787455) auf **Benutzer** &gt; **Neu**.
 
 2.  Klicken Sie auf **Massenhinzufügen**, um den Assistenten „Massenhinzufügung von Benutzern“ zu starten.
 
@@ -84,6 +78,7 @@ Gratulation! Sie haben soeben Schritt 2 der exemplarischen Vorgehensweise *Micr
 >[&larr; **Registrieren für eine Evaluierung**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Erstellen von Gruppen** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

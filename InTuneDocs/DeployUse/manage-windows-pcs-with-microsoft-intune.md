@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Windows-PCs mit Intune | Microsoft Intune
+title: Verwalten von Windows-PCs mit dem Intune-PC-Client | Microsoft Intune
 description: 
 keywords: 
 author: nathbarn
@@ -13,21 +13,23 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0335b80afa8e330263baad054f0e902f019f75bb
-ms.openlocfilehash: 92f4ddde3336fd4cf07c701596f5ebe4c0aeb49f
+ms.sourcegitcommit: e09381bbcf073baa67a431546059272e629b5423
+ms.openlocfilehash: d22714f7b6eda1632892785568463fc5bafce8d0
 
 
 ---
 
-# Verwalten von Windows-PCs mit Microsoft Intune
-Zusätzlich zur Registrierung von Geräten können Sie Intune auch zur Verwaltung von Windows-PCs mit unterstützten Betriebssystemen verwenden, indem Sie die Intune-Computerclientsoftware einsetzen. Die Hardware- und Softwarevoraussetzungen zur Ausführung des Computerclients sind minimal. Im Grunde wird jedes System unterstützt, auf dem Windows 7 oder eine höhere Version ausgeführt werden kann.  Die Clientsoftware lässt sich auch problemlos auf Computern innerhalb einer (beliebigen) oder außerhalb einer Domäne installieren.
+# Verwalten von Windows-PCs mit der Intune-PC-Clientsoftware
+Anstatt [Windows-PCs als mobile Geräte zu registrieren](set-up-windows-device-management-with-microsoft-intune.md), können Sie diese PCs auch verwalten, indem Sie die Intune-Clientsoftware installieren. 
 
 Intune verwalten Windows-PCs mithilfe von Richtlinien, ähnlich wie die Gruppenrichtlinienobjekte (Group Policy Objects, GPOs) der Windows Server Active Directory-Domänendienste (Active Directory Domain Services, AD DS). Wenn Sie Computer in einer Active Directory-Domäne mit Intune verwalten, [müssen Sie sicherstellen, dass Intune-Richtlinien nicht zu Konflikten mit GPOs führen](resolve-gpo-and-microsoft-intune-policy-conflicts.md), die für Ihre Organisation eingerichtet sind.
 
-> [!NOTE]
-> Microsoft Intune bietet als eigenständiger Dienst die folgenden Features zum Verwalten von Computern. Geräte, auf denen Windows 8.1 ausgeführt wird, können unter Verwendung des Intune-Clients verwaltet oder als mobile Geräte registriert werden. Die folgenden Informationen gelten für Computer, auf denen der Intune-Client ausgeführt wird.
+Der Intune-Client verwaltet Softwareupdates, Windows-Firewall und Endpoint Protection und unterstützt auf diese Weise [Richtlinien zum Schutz von PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md). Allerdings können auf PCs, die mit dem Intune-Client verwaltet werden, keine anderen Intune-Richtlinien angewendet werden.
 
-## Anforderungen für die PC-Verwaltung durch Intune
+> [!NOTE]
+> Geräte, auf denen Windows 8.1 ausgeführt wird, können unter Verwendung des Intune-Clients verwaltet oder als mobile Geräte registriert werden. Die folgenden Informationen gelten für Computer, auf denen der Intune-Client ausgeführt wird. Die Installation des Intune-PC-Clients und die gleichzeitige Registrierung des Windows-Geräts für die Verwaltung mobiler Geräte werden nicht unterstützt.
+
+## Anforderungen für die Intune-PC-Clientverwaltung
 
 **Hardware**: Im Folgenden sind die Hardwaremindestanforderungen zum Installieren des Intune-Clients aufgeführt:
 
@@ -41,20 +43,19 @@ Intune verwalten Windows-PCs mithilfe von Richtlinien, ähnlich wie die Gruppenr
 
 |Anforderungen|Weitere Informationen|
 |---------------|--------------------|
-|Administratorrechte|Das Konto, mit dem die Clientsoftware installiert wird, muss über lokale Administratorrechte auf dem PC verfügen.|
+|Betriebssystem | Auf dem Windows-Gerät muss Windows 7 oder höher ausgeführt werden. |
+|Administratorrechte|Das Konto, mit dem die Clientsoftware installiert wird, muss über lokale Administratorrechte auf diesem Gerät verfügen.|
 |Windows Installer 3.1|Auf dem PC wird Windows Installer 3.1 oder höher benötigt.<br /><br />So zeigen Sie die Windows Installer-Version auf einem PC an:<br /><br />– Klicken Sie auf dem PC mit der rechten Maustaste auf **%windir%\System32\msiexec.exe**, und klicken Sie dann auf **Eigenschaften**.<br /><br />Sie können die neueste Version von Windows Installer von der Microsoft Developer Network-Website unter [Windows Installer Redistributables (Weitervertreibbare Komponenten für Windows Installer)](http://go.microsoft.com/fwlink/?LinkID=234258) herunterladen.|
 |Entfernen nicht kompatibler Clientsoftware|Bevor Sie die Intune-Clientsoftware installieren, müssen Sie alle auf dem PC vorhandene Configuration Manager- oder Systems Management Server-Clientsoftware deinstallieren.|
 
 ## Installieren des Intune-Computerclients
-Der erste Schritt bei der Verwaltung von Windows-PCs mit Intune besteht darin, den Client zu installieren. Die Clientsoftware kann installiert werden, wenn ein PC durch den Intune-Dienst mit einer der folgenden Methoden für die Verwaltung registriert wurde:
+Die Intune-Clientsoftware kann mithilfe einer der folgenden Methoden installiert werden:
 
--   Sie können [die Microsoft Intune-Clientsoftware manuell bereitstellen](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). Bei dieser Art der Bereitstellung lädt ein Administrator die Intune-Clientsoftware herunter und installiert sie manuell auf jedem PC.
+-   [Stellen Sie die Microsoft Intune-Clientsoftware manuell bereit](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). Bei dieser Art der Bereitstellung lädt ein Administrator die Intune-Clientsoftware herunter und installiert sie manuell auf jedem PC.
 
-    Für den Download der Intune-Clientsoftware öffnen Sie die Intune-Verwaltungskonsole und laden im Bereich "Clientsoftwaredownload" das Clientsoftwarepaket herunter. Nach der Installation der Clientsoftware installiert Intune automatisch zusätzliche Software, die ggf. zur Verwaltung des Computers erforderlich ist.
+  Um die Intune-Clientsoftware herunterzuladen, öffnen Sie die [Intune-Verwaltungskonsole](https://manage.microsoft.com), wählen Sie **Verwaltung** > **Download der Clientsoftware** aus, und klicken Sie auf **Clientsoftware herunterladen**.
 
 -   Sie können die gleichen Dateien, die Sie für die manuelle Installation des Intune-Clients herunterladen, auch zur [Bereitstellung des Clients auf Computern in einer Domäne mithilfe von Active Directory-GPOs verwenden](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy).
-
--   [Endbenutzer können all ihre Computer über das Intune-Unternehmensportal selbst registrieren](install-the-windows-pc-client-with-microsoft-intune.md#how-users-can-self-enroll-their-computers). Jeder registrierte Computer wird automatisch mit dem Benutzerkonto verknüpft, das zum Installieren der Intune-Clientsoftware verwendet wurde.
 
 -   Sie können die Intune-Clientsoftware auch im Rahmen einer [Betriebssystembereitstellung](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image) auf Computern bereitstellen.
 
@@ -85,6 +86,6 @@ Der Intune-Client-Agent wird in der Regel im Hintergrund ausgeführt – Benutze
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Schützen von Apps und Daten | Microsoft Intune"
 description: 
-keywords: 
+keywords: "Dieses Thema beschreibt die verschiedenen Intune-Features und -Funktionen, die Ihnen zum Schutz Ihrer Unternehmens-Apps und Daten zur Verfügung stehen."
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 9445b4b171eb2102d73cf0e866e85b535274eee2
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: c4ee5b25bd737c357e58db6420e69beabf66a74d
 
 
 ---
@@ -39,7 +39,9 @@ Die Sicherung des Zugriffs auf Unternehmensressourcen ist nur der erste Schritt 
 - Sichern des App-Zugriffs durch Anfordern von PIN/Kennung oder Unternehmensanmeldeinformationen.
 - Festlegen, dass alle Weblinks in Intune Managed Browser geöffnet werden.
 
-Dieser Regelsatz wird als [MAM-Richtlinien](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) bezeichnet (Mobile App Management, Verwaltung mobiler Apps).  MAM-Richtlinien können angewendet werden, unabhängig davon, ob die Geräte, auf denen die Apps ausgeführt werden, von Ihnen verwaltet werden oder nicht.  Sie können Ihre Unternehmensdaten mithilfe von MAM-Richtlinien auf verschiedenen Geräten schützen. Hierzu zählen Geräte, die bei Intune registriert sind, Geräte, die bei einem Drittanbieter-MDM-Dienst (Mobile Device Management, Verwaltung mobiler Geräte) registriert sind und dort verwaltet werden, oder Geräte, die nicht von Ihnen verwaltet werden (z. B. Privatgeräte von Mitarbeitern).
+Dieser Regelsatz wird als [MAM-Richtlinien](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) bezeichnet (Mobile App Management, Verwaltung mobiler Apps).  MAM-Richtlinien können angewendet werden, unabhängig davon, ob die Geräte, auf denen die Apps ausgeführt werden, von Ihnen verwaltet werden oder nicht.  
+
+Sie können Ihre Unternehmensdaten mithilfe von MAM-Richtlinien auf verschiedenen Geräten schützen. Hierzu zählen Geräte, die **bei Intune registriert** sind, Geräte, die **bei einem Drittanbieter-MDM-Dienst (Mobile Device Management, Verwaltung mobiler Geräte) registriert sind und dort verwaltet werden**, oder Geräte, die **nicht bei einer MDM-Lösung registriert** sind (z. B. Privatgeräte von Mitarbeitern).
 
 Um eine App mit einer MAM-Richtlinie zu verknüpfen, muss die App das Microsoft Intune App SDK oder das App Wrapping Tool verwenden.
 
@@ -51,6 +53,6 @@ Wenn ein Gerät verloren geht oder gestohlen wird oder der Benutzer nicht mehr f
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

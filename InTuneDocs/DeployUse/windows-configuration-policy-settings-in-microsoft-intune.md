@@ -1,10 +1,10 @@
 ---
 title: "Einstellungen für Windows-Richtlinien | Microsoft Intune"
-description: 
+description: "Verwenden Sie die allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und höher) von Intune, um Einstellungen für registrierte Windows 8- und Windows 8.1-Geräte zu konfigurieren:"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a280fcbecf82e6ff27e40d2d53331b3988953ff7
-ms.openlocfilehash: aa62528e588b0579669ab8d115766efd72e6f9b2
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: a70b81e490a5c55d9ce11bd8dbdfc42ab364273c
 
 
 ---
 
 # Einstellungen für Windows-Richtlinien in Microsoft Intune
-Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und höher)** von Microsoft Intune, um Einstellungen für registrierte Windows 8- und Windows 8.1-Geräte zu konfigurieren:
+Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und höher)** von Microsoft Intune, um die folgenden Einstellungen für registrierte Windows 8- und Windows 8.1-Geräte zu konfigurieren:
 
 ## Anwendbarkeitseinstellungen
 
@@ -120,6 +120,6 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

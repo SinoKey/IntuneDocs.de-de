@@ -1,10 +1,10 @@
 ---
 title: "Direkte Registrierung für iOS-Geräte | Microsoft Intune"
-description: 
+description: "Verwenden Sie den Apple Configurator, um unternehmenseigene iOS-Geräte direkt mit einer vordefinierten Richtlinie zu registrieren, indem Sie sie über USB an einen Mac-Computer anschließen."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,16 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
-ms.openlocfilehash: 8fea0f7f87972bc643bbb20348095e05f701287e
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 2d2db078bbbce5945bf536a845cd8e4fa8f62c7e
 
 
 ---
 
 # Direkte Registrierung von iOS-Geräten mit Apple Configurator
-Intune unterstützt die Registrierung unternehmenseigener iOS-Geräte mithilfe des Tools [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017), das auf einem Mac-Computer ausgeführt wird. Dieser Prozess setzt das Gerät nicht auf die Werkseinstellungen zurück und registriert das Gerät mit einer vordefinierten Richtlinie. Diese Methode ist für Geräte mit der Einstellung **Keine Benutzeraffinität** vorgesehen und erfordert eine USB-Verbindung des iOS-Geräts mit einem Mac-Computer, um die Registrierung beim Unternehmen einzurichten. Die Unternehmensportal-App wird für direkte registrierte Geräte nicht unterstützt. Diese Anleitung setzt voraus, dass Sie Apple Configurator 2.0 auf einem Mac-Computer verwenden.
+Intune unterstützt die Registrierung unternehmenseigener iOS-Geräte mithilfe des Tools [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017), das auf einem Mac-Computer ausgeführt wird. Dieser Prozess setzt das Gerät nicht auf die Werkseinstellungen zurück und registriert das Gerät mit einer vordefinierten Richtlinie. Diese Methode ist für Geräte mit der Einstellung **Keine Benutzeraffinität** vorgesehen und erfordert eine USB-Verbindung des iOS-Geräts mit einem Mac-Computer, um die Registrierung beim Unternehmen einzurichten. Bei der Direktregistrierung können Sie ein iOS-Gerät registrieren, ohne die Seriennummer des Geräts abrufen zu müssen. Sie können dem Gerät zu Identifikationszwecken auch einen Namen zuweisen, bevor Intune den Gerätenamen während der Registrierung erfasst. Die Unternehmensportal-App wird für direkte registrierte Geräte nicht unterstützt. Diese Anleitung setzt voraus, dass Sie Apple Configurator 2.0 auf einem Mac-Computer verwenden.
 
 1.  **Erstellen eines Profils für Geräte** Ein Registrierungsprofil für Geräte definiert die Einstellungen für Geräte. Wenn Sie dies noch nicht getan haben, erstellen Sie ein Registrierungsprofil für iOS-Geräte, die mit Apple Configurator registriert werden.
-
-    #### So erstellen Sie ein Profil
 
     1.  Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) zu **Richtlinie** &gt; **Unternehmensgeräteregistrierung**, und wählen Sie dann **Hinzufügen…**.
 
@@ -40,8 +38,8 @@ Intune unterstützt die Registrierung unternehmenseigener iOS-Geräte mithilfe d
 
         -   **Gerätegruppen-Vorabzuweisung**: Alle Geräte, die mit diesem Profil bereitgestellt werden, gehören anfänglich zu dieser Gruppe. Sie können die Geräte nach der Registrierung erneut zuweisen.
 
-        >[!Important]
-        >Gruppenzuweisungen werden von Intune zu Azure Active Directory verschoben. [Weitere Informationen](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
+
     3.  Wählen Sie **Profil speichern**, um das Profil hinzuzufügen.
 
 5.  **Exportieren eines Profils als MOBILECONFIG-Datei für die Bereitstellung auf iOS-Geräten** Wählen Sie das Geräteprofil, das Sie erstellt haben. Wählen Sie **Exportieren…** in der Taskleiste. Wählen Sie **Profil herunterladen**, und speichern Sie die heruntergeladene MOBILECONFIG-Datei.
@@ -61,8 +59,6 @@ Intune unterstützt die Registrierung unternehmenseigener iOS-Geräte mithilfe d
 
 8.  **Installieren des Profils** Sie können das Profil nun auf dem iOS-Gerät installieren. Auf dem Gerät muss der Setup-Assistent ausgeführt worden sein, und es muss einsatzbereit sein.  Wenn bei der Registrierung Apps bereitgestellt werden müssen, sollten Sie über eine Apple-ID verfügen, da Sie für App-Bereitstellungen mit einer Apple-ID beim App Store angemeldet sein müssen.
 
-    ###### Fertigstellen der Profilannahme für nicht überwachte iOS-Geräte
-
     1.  Entsperren Sie das iOS-Gerät.
 
     2.  Tippen Sie im Dialogfeld **Profil installieren** für das **Verwaltungsprofil** auf **Installieren**.
@@ -81,11 +77,7 @@ Intune unterstützt die Registrierung unternehmenseigener iOS-Geräte mithilfe d
 10. **Verteilen von Geräten** Das iOS-Gerät ist jetzt bei Intune registriert und wird verwaltet.
 
 
-### Weitere Informationen:
-[Vorbereitungen zum Registrieren von Geräten](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
-
-
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

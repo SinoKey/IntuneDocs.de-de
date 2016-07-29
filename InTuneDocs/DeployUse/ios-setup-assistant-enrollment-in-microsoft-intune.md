@@ -1,10 +1,10 @@
 ---
-title: "Registrierung von iOS-Geräten bei Microsoft Intune über den Setup-Assistenten | Microsoft Intune"
-description: 
+title: "Registrieren von iOS-Geräten mit dem Setup-Assistenten | Microsoft Intune"
+description: "Registrieren von unternehmenseigenen iOS-Geräten mithilfe des Apple Configurator-Tools, um die Geräte auf die Werkseinstellungen zurückzusetzen und für die Ausführung des Setup-Assistenten vorzubereiten."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f3637e79e7b6f93820e775932653c41879f369fe
-ms.openlocfilehash: b9cb10ccb26d4f61d63fb2dc6c18be48cc0a3182
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: f36217aa5e691ea22c891c08d1d5b886726f0a9a
 
 
 ---
@@ -27,6 +27,7 @@ Intune unterstützt die Registrierung unternehmenseigener iOS-Geräte mithilfe d
 Mit dem Apple Configurator können Sie iOS-Geräte auf die Werkseinstellungen zurücksetzen und für die Einrichtung durch den neuen Benutzer des Geräts vorbereiten.  Bei dieser Methode muss das iOS über USB mit einem Mac-Computer verbunden werden, um die Registrierung beim Unternehmen einzurichten. Vorausgesetzt wird die Verwendung von Apple Configurator 2.0. Bei den meisten Szenarien ist es erforderlich, dass die auf das iOS-Gerät angewendete Richtlinie *Benutzeraffinität* einschließt, um das Intune-Unternehmensportal zu aktivieren.
 
 **Voraussetzungen**
+* [Aktiviert für die iOS-Registrierung](set-up-ios-and-mac-management-with-microsoft-intune.md) durch Installieren eines APNs-Zertifikats
 * Physischer Zugriff auf iOS-Geräte: Geräte müssen unkonfiguriert sein (Zurücksetzung auf Werkseinstellungen) und dürfen keinen Kennwortschutz aufweisen.
 * Geräteseriennummern: [Abrufen einer iOS-Seriennummer](https://support.apple.com/en-us/HT204308)
 * USB-Verbindungskabel
@@ -36,8 +37,6 @@ Mit dem Apple Configurator können Sie iOS-Geräte auf die Werkseinstellungen zu
 1.  **Erstellen einer mobilen Gerätegruppe** (Optional) Wenn Ihr Unternehmen mobile Gerätegruppen zur Verwaltung von Geräten erfordert, erstellen Sie diese Gruppen. [Verwenden Sie Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
 2.  **Erstellen eines Profils für Geräte** Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Gruppe von Geräten. Wenn Sie dies noch nicht getan haben, erstellen Sie ein Registrierungsprofil für iOS-Geräte, die mit Apple Configurator registriert werden.
-
-    ###### So erstellen Sie ein Profil
 
     1.  Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) zu **Richtlinie** &gt; **Unternehmenseigene Geräte**, und wählen Sie dann **Hinzufügen...**.
 
@@ -62,8 +61,7 @@ Mit dem Apple Configurator können Sie iOS-Geräte auf die Werkseinstellungen zu
 
         -   **Gerätegruppen-Vorabzuweisung**: Alle Geräte, die mit diesem Profil bereitgestellt werden, gehören anfänglich zu dieser Gruppe. Sie können die Geräte nach der Registrierung erneut zuweisen.
 
-        >[!Important]
-        >Gruppenzuweisungen werden von Intune zu Azure Active Directory verschoben. [Erfahren Sie mehr](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
           -  **Geräteregistrierungsprogramm**: Das Apple-Programm zur Geräteregistrierung (Device Enrollment Program, DEP) kann bei der Registrierung mit dem Setup-Assistenten nicht verwendet werden. Stellen Sie sicher, dass die Umschaltfläche auf **aus** festgelegt ist.
 
@@ -153,6 +151,6 @@ Mit dem Apple Configurator können Sie iOS-Geräte auf die Werkseinstellungen zu
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

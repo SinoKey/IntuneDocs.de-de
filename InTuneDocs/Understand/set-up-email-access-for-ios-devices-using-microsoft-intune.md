@@ -1,9 +1,9 @@
 ---
-title: "Einrichten des E-Mail-Zugriffs für iOS-Geräte mit Microsoft Intune | Microsoft Intune"
-description: 
+title: "Einrichten des E-Mail-Zugriffs für iOS-Geräte | Microsoft Intune"
+description: "Einrichten des E-Mail-Zugriffs für iOS-Geräte mit Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 3853673d-290a-400f-8e45-d55e39d42acd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
-ms.openlocfilehash: 5b746cee0806fb44b1fd847efb9791d525673133
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 3b6bb8602ddc7a1f75a0c21ffc4fb6327673d38d
 
 
 ---
@@ -40,7 +40,7 @@ Durch Verwendung eines E-Mail-Profils erfolgt der E-Mail-Zugriff für registrier
 In dieser exemplarischen Vorgehensweise verwenden wir den gehosteten Exchange-Server, der zu einem Testabonnement gehört.
 1. Klicken Sie in der Intune-Konsole auf **Richtlinie** und anschließend auf **Richtlinie hinzufügen**.
 ![<add-policy>](./media/Email-Walkthrough/Email-Walkthrough-1.png)
-2. Erweitern Sie im Dialogfeld **Neue Richtlinie erstellen** die Option **iOS**, wählen Sie **E-Mail-Profil** aus, und klicken Sie anschließend auf **Richtlinie erstellen**.
+2. Erweitern Sie im Dialogfeld **Neue Richtlinie erstellen** die Option **iOS**, wählen Sie **E-Mail-Profil** aus, und klicken Sie anschließend auf **Richtlinie erstellen**.  
 ![<ios-email-profile-policy>](./media/Email-Walkthrough/Email-Walkthrough-2.png)
 3. Geben Sie auf der Seite „Richtlinie erstellen“ einen Namen für die Richtlinie, z. B. **iOS-E-Mail-Profil – Benutzerkennwort** und eine Beschreibung ein. Möglicherweise verfügen Sie über mehrere E-Mail-Profile für verschiedene Gerätetypen und Authentifizierungsmethoden. Daher können Sie im Namen angeben, wofür das Profil gedacht ist.
 4. Geben Sie den Namen des Exchange-Hosts ein. Da wir den in Azure gehosteten Exchange-Server verwenden, geben wir als Hostnamen einfach **outlook.office365.com**
@@ -51,21 +51,23 @@ In dieser exemplarischen Vorgehensweise verwenden wir den gehosteten Exchange-Se
 8. Klicken Sie auf **Richtlinie speichern**.
 9. Ein Dialogfeld wird angezeigt, in dem Sie gefragt werden, ob Sie die Richtlinie jetzt bereitstellen möchten. Klicken Sie auf **Ja**.
 ![<deploy-policy-now-dialog>](./media/Email-Walkthrough/Email-Walkthrough-4.png)
-10. Wählen Sie im Fenster, das als Nächstes angezeigt wird, die Benutzergruppe aus, für die das E-Mail-Profil bereitgestellt werden soll. Klicken Sie auf **Hinzufügen** und anschließend auf **OK**.
-![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png) Nachdem Sie auf **OK** geklickt haben, wird die Richtlinie innerhalb weniger Minuten auf registrierte Geräte übertragen.
+10. Wählen Sie im Fenster, das als Nächstes angezeigt wird, die Benutzergruppe aus, für die das E-Mail-Profil bereitgestellt werden soll. Klicken Sie auf **Hinzufügen** und anschließend auf **OK**.  
+![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png)  
+Nachdem Sie auf **OK** geklickt haben, wird die Richtlinie innerhalb weniger Minuten auf registrierte Geräte übertragen.
 
 ## Schritte zum Überprüfen, ob das Profil erfolgreich angewendet wurde
 
 Um sicherzustellen, dass das Profil angewendet wurde, benötigen Sie Zugriff auf eines der Geräte, auf denen Sie das E-Mail-Profil bereitgestellt haben.
 1. Öffnen Sie auf dem iOS-Gerät die Mail-App.
-Die App fordert Sie zur Angabe des E-Mail-Benutzernamens und -Kennworts auf.
+Die App fordert Sie zur Angabe des E-Mail-Benutzernamens und -Kennworts auf.  
 ![<verify-policy-add-password>](./media/Email-Walkthrough/Email-Walkthrough-6.png)
 2. Geben Sie den Benutzernamen und das Kennwort für das Exchange-E-Mail-Konto des Benutzers ein, und tippen Sie anschließend auf **OK**.
  Die Mail-App wird mit dem Exchange-Konto geöffnet, und es beginnt die Synchronisierung von E-Mails mit dem Gerät.
 ![<exchange-account-opens>](./media/Email-Walkthrough/Email-Walkthrough-7.png)
 3. Überprüfen Sie die Kontoeinstellungen in der Mail-App, um sicherzustellen, dass der Kontoname demjenigen entspricht, den Sie in das E-Mail-Profil eingegeben haben (z. B. **Contoso Mail**), und um sicherzustellen, dass die Synchronisierungseinstellungen ordnungsgemäß festgelegt sind.
 ![<check-account-settings>](./media/Email-Walkthrough/Email-Walkthrough-8.png)
-![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png) Wenn das E-Mail-Profil nicht automatisch auf das Gerät angewendet wurde, können Sie die Richtlinie mithilfe der Unternehmensportal-App auf dem Gerät manuell anwenden.
+![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png)  
+  Wenn das E-Mail-Profil nicht automatisch auf das Gerät angewendet wurde, können Sie die Richtlinie mithilfe der Unternehmensportal-App auf dem Gerät manuell anwenden.
 1. Öffnen Sie die Unternehmensportal-App.
 2. Tippen Sie auf **Meine Geräte**.
 3. Tippen Sie auf den Namen Ihres Geräts.
@@ -78,6 +80,6 @@ Die App fordert Sie zur Angabe des E-Mail-Benutzernamens und -Kennworts auf.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -3,22 +3,24 @@ title: "Sie werden dazu aufgefordert, die Option „Unbekannte Quellen“ zu dea
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 06/16/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
-ms.sourcegitcommit: b76c04545b9b26a0e2470b95a3f5ac0a81b07817
-ms.openlocfilehash: 7ea8494dacb3f9ccf3077c654801979bab9b096b
+ROBOTS: noindex,nofollow
+translationtype: Human Translation
+ms.sourcegitcommit: eeb9888d803a53c2f17d88cdb3f010cf14c9b18d
+ms.openlocfilehash: 0a4bf23b547a4f02db663049b84e77365509aeaf
 
 
 ---
 
 # Sie werden dazu aufgefordert, die Option „Unbekannte Quellen“ zu deaktivieren
 
-Wenn Sie die Meldung „Installation von unbekannten Quellen muss deaktiviert sein“ sehen, müssen Sie zu **Einstellungen** > **Sicherheit** wechseln und **Unbekannte Quellen** deaktivieren. 
+Wenn Sie die Meldung „Installation von unbekannten Quellen muss deaktiviert sein“ sehen, müssen Sie zu **Einstellungen** > **Sicherheit** (möglicherweise auf manchen Geräten stattdessen **Lock screen and security** [Gesperrter Bildschirm und Sicherheit]) wechseln und **Unbekannte Quellen** deaktivieren. 
 
 Ihr IT-Administrator verlangt die Deaktivierung dieser Einstellung, um die Unternehmensdaten auf Ihrem Android-Gerät zu schützen. Wenn **Unbekannte Quellen** aktiviert ist, können Sie Apps aus unbekannten Quellen installieren, was ein Sicherheitsrisiko darstellen könnte.
 
@@ -31,6 +33,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

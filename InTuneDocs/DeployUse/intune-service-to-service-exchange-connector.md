@@ -1,20 +1,20 @@
 ---
-title: "Konfigurieren des Microsoft Intune Service to Service Connector für Hosted Exchange | Microsoft Intune"
-description: 
+title: "Exchange-Connector für Hosted Exchange | Microsoft Intune"
+description: "Verbinden Sie Intune mit dem Office 365-Exchange-Dienst, um die Verwaltung mobiler Geräte (Mobile Device Management, MDM) mit Exchange ActiveSync zu unterstützen."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
-ms.openlocfilehash: 6cfc532cba2f53034c4c3ef0c2df3d6c1e6e7841
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 63697222f024169d9450b9f4fea8c666353e72cc
 
 
 ---
@@ -58,12 +58,12 @@ Der Service to Service Connector wird automatisch konfiguriert und mit Ihrer geh
 
 ## Überprüfen der Exchange-Verbindung
 
-Nachdem Sie den Exchange Connector erfolgreich konfiguriert haben, wählen Sie in der Intune-Verwaltungskonsole den Arbeitsbereich **ADMIN** aus. Wechseln Sie zu **Verwaltung mobiler Geräte** > **Microsoft Exchange**, und stellen Sie sicher, dass die Details, die Sie bereitgestellt haben, unter **Exchange-Verbindungsinformationen** angezeigt werden.
+Nachdem Sie den Exchange Connector erfolgreich konfiguriert haben, wählen Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) den Arbeitsbereich **Verwaltung** aus. Wechseln Sie zu **Verwaltung mobiler Geräte** > **Microsoft Exchange**, und stellen Sie sicher, dass die von Ihnen bereitgestellten Details unter **Exchange-Verbindungsinformationen** angezeigt werden.
 
 Sie können auch die Uhrzeit und das Datum des letzten erfolgreichen Synchronisationsversuchs überprüfen.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

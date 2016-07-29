@@ -1,6 +1,6 @@
 ---
 title: Dienstbeschreibung | Microsoft Intune
-description: 
+description: "Intune ist ein cloudbasierter Dienst, der Ihnen bei der Verwaltung von Windows-PCs sowie mobilen iOS-, Mac OS X-, Android- und Windows-Geräten hilft."
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4794a22b3bdd1f28e6951b81e8379dc208fffc89
-ms.openlocfilehash: 6cab0bacd9157323e342662609de8c9f20550d78
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 98a5013ef42732e6a1a541e128986bedbb004611
 
 
 ---
@@ -34,7 +34,7 @@ Eine Liste der Einstellungen für mobile Geräte finden Sie unter:
 
 -   [Verwaltungsfunktionen für mobile Geräte in Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
--   [Allgemeine Einstellungen für mobile Geräte im Konfigurations-Manager](https://technet.microsoft.com/en-us/library/dn376523.aspx)
+-   [Allgemeine Einstellungen für mobile Geräte im Konfigurations-Manager](https://technet.microsoft.com/library/dn376523.aspx)
 
 Informationen zum System Center 2012 R2 Configuration Manager finden Sie in der [Dokumentationsbibliothek zu System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).
 
@@ -45,9 +45,10 @@ Verwenden Sie die Informationen in diesem Thema, um die Häufigkeit dieser Diens
 
 Informationen zu den Änderungen beim Intune-Dienst finden Sie unter [Neuerungen in Microsoft Intune](/intune/deploy-use/Whats-new-in-microsoft-intune.md). Der [Microsoft Intune-Blog](http://blogs.technet.com/b/microsoftintune/) behandelt auch Änderungen am Dienst und bietet nützliche Tipps, damit Sie Intune optimal nutzen können.
 
-Über wichtige Dienstupdates werden Sie auch im [Verwaltungsportal von Office 365](https://portal.office.com/Admin/Default.aspx) im Nachrichtencenter informiert. Bei Installation der begleitenden [mobilen App für die Office 365-Verwaltung](https://support.office.com/en-us/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) können Sie Benachrichtigungen auf Ihrem mobilen Gerät erhalten.
+Über wichtige Dienstupdates werden Sie auch im [Verwaltungsportal von Office 365](https://portal.office.com/Admin/Default.aspx) im Nachrichtencenter informiert. Wenn Sie die begleitende [mobilen Office 365-Admin-App](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) installieren, können Sie Benachrichtigungen auf Ihrem mobilen Gerät erhalten.
 
-> [!NOTE] Sie können den Intune-Dienststatus im [Verwaltungsportal von Office 365](https://portal.office.com/Admin/Default.aspx) überwachen. Wählen Sie im linken Bereich **Dienststatus** aus.  
+> [!NOTE]
+> Sie können den Intune-Dienststatus im [Verwaltungsportal von Office 365](https://portal.office.com/Admin/Default.aspx) überwachen. Wählen Sie im linken Bereich **Dienststatus** aus.  
 
 Folgende Typen von Benachrichtigungen werden von Microsoft über den Intune-Dienst angeboten:
 -   Abhängig von den Auswirkungen der Änderung werden Sie mindestens 30 bis 90 Tage vor dem Dienstupgrade benachrichtigt, damit Sie Dienständerungen planen können. Dies erfolgt mithilfe der produktinternen Kommunikationskanäle wie Warnungen am Schwarzen Brett. Dies können folgende Änderungen sein:
@@ -82,6 +83,6 @@ Verwenden Sie die folgenden Ressourcen, um weitere Informationen über Intune zu
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

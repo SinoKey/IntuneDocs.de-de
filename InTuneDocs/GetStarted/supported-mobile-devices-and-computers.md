@@ -1,9 +1,9 @@
 ---
 title: "Unterstützte mobile Geräte und Computer | Microsoft Intune"
-description: 
+description: "Von Intune unterstützte mobile Geräte und Computer"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/08/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: aeeccfa4-0f14-447e-a3df-c8435c8a4bb2
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: e91193523284113c2029e0762dfc48ddc15540d4
-ms.openlocfilehash: d908654b30a29e3b1e3a52096767d42019af772f
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 506d8be071d94ac8cdcf536010acd322fc77fea2
 
 
 ---
@@ -33,6 +34,6 @@ Sie können diese Geräte und PCs auch dann verwalten, wenn sie keiner Domäne a
 [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

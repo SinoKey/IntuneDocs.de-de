@@ -1,27 +1,27 @@
 ---
-title: Referenz zu Microsoft Intune-Richtlinien | Microsoft Intune
-description: 
+title: Referenz zur Konfigurationsrichtlinie | Microsoft Intune
+description: "Anhand der Informationen in diesem Thema können Sie entscheiden, welche Microsoft Intune-Richtlinie Sie zum Verwalten Ihrer Geräte benötigen."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: cce19141ef25a8cca785d6ae80d1fe03ab352a8e
 
 
 ---
 
 # Referenz zu Microsoft Intune-Richtlinien
 
-Anhand der Informationen in diesem Thema können Sie entscheiden, welche Microsoft Intune-Richtlinie Sie zum Verwalten Ihrer Geräte benötigen.
+Anhand der Informationen in diesem Thema können Sie entscheiden, welche Microsoft Intune-Konfigurationsrichtlinie Sie zum Verwalten Ihrer Geräte benötigen.
 
 > [!TIP]
 > Weitere Informationen zum Verwenden von Richtlinien finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
@@ -47,11 +47,14 @@ Anhand der Informationen in diesem Thema können Sie entscheiden, welche Microso
 |**Benutzerdefinierte Konfiguration (iOS 7.1 und höher)**|Bereitstellen von Konfigurationsprofilen für iOS-Geräte, die Sie mit dem Apple-Konfigurator-Tool erstellt haben, Dies ist hilfreich, wenn die benötigte Einstellung nicht in einer Konfigurationsrichtlinie für mobile Geräte verfügbar ist.<br /><br />Weitere Informationen finden Sie unter [iOS-Richtlinieneinstellungen in Microsoft Intune](ios-policy-settings-in-microsoft-intune.md).|
 |**E-Mail-Profil (iOS 7.1 und höher)**|Erstellen, Bereitstellen und Überwachen von Exchange ActiveSync-E-Mail-Einstellungen auf verwalteten Geräten. Auf diese Weise erhalten Benutzer Zugriff auf Unternehmens-E-Mails auf ihren persönlichen Geräten, ohne dafür ein Setup vornehmen zu müssen.<br /><br />Weitere Informationen finden Sie unter [Konfigurieren des Zugriffs auf Unternehmens-E-Mail mithilfe von E-Mail-Profilen in Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
 |**Allgemeine Konfiguration (iOS 7.1 und höher)**|Konfigurieren der Sicherheits- und Funktionseinstellungen mobiler Geräte.<br />– Angeben kompatibler und nicht kompatibler Apps und Melden ihrer Nutzung.<br />Konfigurieren des Kioskmodus, bei dem auf Geräten alle außer bestimmten Features gesperrten werden, sodass das Gerät z. B. nur eine App ausführen kann oder der Lautstärkeregler deaktiviert wird.<br /><br />Weitere Informationen finden Sie unter [iOS-Richtlinieneinstellungen in Microsoft Intune](ios-policy-settings-in-microsoft-intune.md).|
+|**Konfigurationsrichtlinie für mobile Apps (iOS 7.1 und höher)**|Verwenden Sie Konfigurationsrichtlinien für mobile Apps, um automatisch Einstellungen bereitzustellen, die beim Ausführen einer iOS-App durch den Benutzer erforderlich sind.<br /><br />Weitere Informationen finden Sie unter [Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).|
+|**Richtlinie für mobile Bereitstellungsprofile (iOS 7.1 und höher)**|Die branchenspezifischen mobilen Apple iOS-Apps wurden mit integriertem Bereitstellungsprofil und per Zertifikat signiertem Code erstellt. Beim Ausführen der App auf einem iOS-Gerät bestätigt iOS die Integrität der iOS-App und erzwingt Richtlinien, die durch das Bereitstellungsprofil definiert werden.<br><br>Das Unternehmenssignaturzertifikat, das Sie zum Signieren von Apps verwenden, ist in der Regel drei Jahre lang gültig. Allerdings läuft das Bereitstellungsprofil nach einem Jahr ab. Verwenden Sie diese Richtlinie, um proaktiv eine neue Richtlinie für Bereitstellungsprofile auf Geräten bereitzustellen, auf denen Apps installiert sind, die bald ablaufen, während das Zertifikat noch gültig ist.<br><br>Weitere Informationen hierzu finden Sie unter [Verwenden von Richtlinien für mobile iOS-Bereitstellungsprofile, um zu verhindern, dass Apps ablaufen](ios-mobile-app-provisioning-profiles.md).|
+|**Zertifikatprofil im Format PKCS #12 (.PFX) (iOS 7.1 und höher)**|Verwenden Sie dieses Profil, um PFX-Einstellungen für Gerätezertifikatanforderungen bereitzustellen.<br /><br />Weitere Informationen finden Sie unter [Sicherer Zugriff auf Ressourcen mit Zertifikatprofilen in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**SCEP-Zertifikatprofil (iOS 7.1 und höher)**|Konfigurieren eines Simple Certificate Enrollment Protocol-Zertifikats, das mit einem Zertifikat eines vertrauenswürdigen mobilen Geräts zum Authentifizieren von mobilen Geräten verwendet werden kann, damit diese Zugriff auf Netzwerkressourcen wie z. B. die von WLAN- und VPN-Profilen konfigurierten erhalten.<br /><br />Weitere Informationen finden Sie unter [Sicherer Zugriff auf Ressourcen mit Zertifikatprofilen in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**Vertrauenswürdiges Zertifikatprofil (iOS 7.1 und höher)**|Konfigurieren eines Zertifikats für ein vertrauenswürdiges mobiles Gerät, das zum Authentifizieren von mobilen Geräten verwendet werden kann, damit diese Zugriff auf Netzwerkressourcen wie z. B. die von WLAN- und VPN-Profilen konfigurierten erhalten.<br /><br />Weitere Informationen finden Sie unter [Sicherer Zugriff auf Ressourcen mit Zertifikatprofilen in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**VPN-Profil (iOS 7.1 und höher)**|Konfigurieren und Bereitstellen von Einstellungen, mit denen Benutzer sicheren Zugriff auf ihr Unternehmensnetzwerk von ihrem mobilen Gerät aus erhalten. Durch Bereitstellen dieser Einstellungen erleichtern Sie dem Endbenutzer, sich mit der Arbeit zu verbinden.<br /><br />Weitere Informationen finden Sie unter [VPN-Verbindungen in Microsoft Intune.md](vpn-connections-in-microsoft-intune.md).|
 |**WLAN-Profil (iOS 7.1 und höher)**|Konfigurieren und Bereitstellen von Einstellungen für drahtlose Netzwerke für Benutzer in Ihrer Organisation. Durch Bereitstellen dieser Einstellungen erleichtern Sie dem Endbenutzer das Herstellen einer Verbindung mit dem drahtlosen Netzwerk.<br /><br />Weitere Informationen finden Sie unter [WLAN-Verbindungen in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md).|
-|**Konfigurationsrichtlinie für mobile Apps (iOS 7.1 und höher)**|Verwenden Sie Konfigurationsrichtlinien für mobile Apps, um automatisch Einstellungen bereitzustellen, die beim Ausführen einer iOS-App durch den Benutzer erforderlich sind.<br /><br />Weitere Informationen finden Sie unter [Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).|
+
 
 ## Mac OS X-Konfigurationsrichtlinien
 
@@ -80,8 +83,10 @@ Gilt nur für Windows Phone und registrierte Windows-Geräte.
 |**PKCS #12-Zertifikatprofil (PFX) (Windows 10 Desktop und Mobile und höher)**|Verwenden Sie dieses Profil, um PFX-Einstellungen für Gerätezertifikatanforderungen bereitzustellen.<br /><br />Weitere Informationen finden Sie unter [Sicherer Zugriff auf Ressourcen mit Zertifikatprofilen in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**SCEP-Zertifikatprofil (Windows 8.1 und höher)**<br /><br />**SCEP-Zertifikatprofil (Windows Phone 8.1 und höher)**|Konfigurieren eines Simple Certificate Enrollment Protocol-Zertifikats, das mit einem Zertifikat eines vertrauenswürdigen mobilen Geräts zum Authentifizieren von mobilen Geräten verwendet werden kann, damit diese Zugriff auf Netzwerkressourcen wie z. B. die von WLAN- und VPN-Profilen konfigurierten erhalten.<br /><br />Weitere Informationen finden Sie unter [Sicherer Zugriff auf Ressourcen mit Zertifikatprofilen in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**Vertrauenswürdiges Zertifikatprofil (Windows 8.1 und höher)**<br /><br />**Vertrauenswürdiges Zertifikatprofil (Windows Phone 8.1 und höher)**|Konfigurieren eines Zertifikats für ein vertrauenswürdiges mobiles Gerät, das zum Authentifizieren von mobilen Geräten verwendet werden kann, damit diese Zugriff auf Netzwerkressourcen wie z. B. die von WLAN- und VPN-Profilen konfigurierten erhalten.<br /><br />Weitere Informationen finden Sie unter [Sicherer Zugriff auf Ressourcen mit Zertifikatprofilen in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
-|**VPN-Profil (Windows 10 Desktop und Mobile und höher)**<br /><br />**VPN-Profil (Windows 8.1 und höher)**<br /><br />**VPN-Profil (Windows Phone 8.1 und höher)**|Konfigurieren und Bereitstellen von Einstellungen, mit denen Benutzer sicheren Zugriff auf ihr Unternehmensnetzwerk von ihrem mobilen Gerät aus erhalten. Durch Bereitstellen dieser Einstellungen erleichtern Sie dem Endbenutzer, sich mit der Arbeit zu verbinden.<br /><br />Weitere Informationen finden Sie unter [VPN-Verbindungen in Microsoft Intune.md](vpn-connections-in-microsoft-intune.md).|
+|**VPN-Profil (Windows 10 Desktop und Mobile und höher)**<br /><br />**VPN-Profil (Windows 8.1 und höher)**<br /><br />**VPN-Profil (Windows Phone 8.1 und höher)**|Konfigurieren und Bereitstellen von Einstellungen, mit denen Benutzer sicheren Zugriff auf ihr Unternehmensnetzwerk von ihrem mobilen Gerät aus erhalten. Durch Bereitstellen dieser Einstellungen erleichtern Sie dem Endbenutzer, sich mit der Arbeit zu verbinden.<br /><br />Weitere Informationen finden Sie unter [VPN-Verbindungen in Microsoft Intune](vpn-connections-in-microsoft-intune.md).|
 |**Importieren von WLAN-Konfigurationen**|Importieren und Bereitstellen von Windows Wi-Fi-Konfigurationen, die Sie zuvor in eine Datei exportiert haben.<br /><br />Weitere Informationen finden Sie unter [WLAN-Verbindungen in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md).|
+|**Windows Information Protection**<br>(früher als Enterprise Data Protection bekannt)|Immer mehr Mitarbeiter möchten mit ihren eigenen Geräten im Unternehmen arbeiten. Dadurch steigt das Risiko versehentlicher Datenlecks durch Apps und Dienste wie E-Mail, soziale Medien und die öffentliche Cloud, die sich außerhalb der Kontrolle des Unternehmens befinden. Einige Beispiele: Ein Mitarbeiter sendet Fotos der neuesten technischen Entwicklung von seinem persönlichen E-Mail-Konto, kopiert Produktinformationen in einen Tweet oder speichert einen laufenden Vertriebsbericht in seinem öffentlichen Cloudspeicher.<br><br>Windows Information Protection unterstützt Sie dabei, das Unternehmen vor solchen potenziellen Datenlecks zu schützen, ohne gleichzeitig die Benutzerfreundlichkeit für die Mitarbeiter einzuschränken. Die Lösung schützt auch Unternehmens-Apps und -Daten vor versehentlichen Datenlecks auf unternehmenseigenen sowie auf persönlichen Geräten, die die Mitarbeiter zur Arbeit mitbringen – ohne dass Sie Ihre Umgebung oder andere Apps ändern müssen.<br><br>Die Intune-Richtlinie verwaltet die Liste der von Windows Information Protection geschützten Apps sowie die zugehörigen Speicherorte im Unternehmensnetzwerk, die Schutzebene und Verschlüsselungseinstellungen.<br><br>Weitere Informationen finden Sie unter [Protect your enterprise data using Windows Information Protection](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-edp) (Schützen Ihrer Unternehmensdaten mit Windows Information Protection).|
+
 
 ## Softwarerichtlinien
 
@@ -129,7 +134,6 @@ Gilt nur für Windows Phone und registrierte Windows-Geräte.
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

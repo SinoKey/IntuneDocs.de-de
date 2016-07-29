@@ -3,18 +3,19 @@ title: "Senden von Diagnosedatenprotokollen an Ihren IT-Administrator über ein 
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 7ad4f4b726f093a14663fc5c4dbadf5603965075
+ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
+ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
 
 
 ---
@@ -22,7 +23,7 @@ ms.openlocfilehash: 7ad4f4b726f093a14663fc5c4dbadf5603965075
 
 # Senden von Diagnosedatenprotokollen an Ihren IT-Administrator über ein USB-Kabel
 
-Wenn Sie statt eines mobilen Geräts einen Computer verwenden und Datenprotokolle von Ihrem mobilen Gerät senden möchten, um Ihren IT-Administrator bei der Diagnose und Behebung des Problems zu unterstützen, gehen Sie folgendermaßen vor:
+Wenn Sie das Datenprotokoll an den IT-Administrator senden möchten, um Hilfe zu einem Problem zu erhalten, können Sie die Protokolle per USB-Kabel mit einem Computer statt von Ihrem mobilen Gerät senden. Gehen Sie wie folgt vor:
 
 1.  Bevor Sie beginnen, stellen Sie sicher, dass Sie über die E-Mail-Adresse Ihres IT-Administrators verfügen. Sie wird in der Regel auf Ihrer Unternehmensportal-Website oder in Ihrer Unternehmensportal-App aufgeführt.
 
@@ -38,6 +39,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

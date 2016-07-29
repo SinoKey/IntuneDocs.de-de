@@ -1,27 +1,27 @@
 ---
-title: "Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren? | Microsoft Intune"
+title: "Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder Mac OS X-Gerät bei Intune registrieren? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: a83edd3ed51bddafd6f057ed9ae2bb0958c88fe4
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: f07eaf82a3bd8fc7fb47032642b30850fcbbb30d
 
 
 ---
 
 
-# Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?
+# Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder Mac OS X-Gerät bei Intune registrieren?
 
 Wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder Mac OS X-Gerät bei Intune registrieren, können Sie folgende Aufgaben mit der Unternehmensportal-App ausführen:
 
@@ -29,9 +29,9 @@ Wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder Mac OS X-Ge
 
 -   Abrufen von Unternehmens-Apps aus dem Unternehmensportal
 
--   Automatisches Konfigurieren Ihres geschäftlichen E-Mail-Kontos
+-   Remote-Zurücksetzen Ihres Smartphones auf die werkseitigen Standardeinstellungen bei Verlust oder Diebstahl
 
--   Zurücksetzen Ihres Smartphones auf die werkseitigen Standardeinstellungen bei Verlust oder Diebstahl
+-   Automatisches Konfigurieren Ihres geschäftlichen E-Mail-Kontos
 
 Wenn Sie Ihr Gerät bei Intune registrieren, gestatten Sie damit Ihrem IT-Administrator, Ihr Gerät zu verwalten, damit die Unternehmensinformationen auf dem Gerät geschützt werden.
 
@@ -64,8 +64,6 @@ Wenn Sie Ihr Gerät bei Intune registrieren, gestatten Sie damit Ihrem IT-Admini
 -   Besitzer
 
 -   Gerätename
-
--   Hersteller
 
 Wenn Ihr Gerät registriert ist, kann Ihr IT-Administrator die folgenden Aufgaben erledigen:
 
@@ -101,6 +99,6 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
