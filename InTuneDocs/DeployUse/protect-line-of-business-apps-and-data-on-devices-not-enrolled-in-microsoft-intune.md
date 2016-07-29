@@ -3,7 +3,7 @@ title: "Schützen von Branchen-Apps auf nicht registrierten Geräten | Microsoft
 description: "In diesem Thema wird beschrieben, wie Sie Ihre benutzerdefinierte Reihe von Branchen-Apps vorbereiten können, sodass Sie Verwaltungsrichtlinien für mobile Apps anwenden können, die helfen können, Datenverluste zu verhindern."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ce0bc5d1256e96e04e5d59420baed2117cb4854d
-ms.openlocfilehash: 1df9d98f45eaf93163116e4f6a4c9d32125043c8
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 39908e4b08a7a7b0f058646a776a7c37de14b770
 
 
 ---
@@ -75,6 +75,6 @@ Sie können eine branchenspezifische App aus der App-Liste entfernen.  Dadurch w
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

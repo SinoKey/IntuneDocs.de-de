@@ -3,7 +3,7 @@ title: Einrichten der iOS- und Mac-Verwaltung | Microsoft Intune
 description: "Aktivieren Sie die mobile Geräteverwaltung (Mobile Device Management, MDM) für iOS-Geräte einschließlich iPads und iPhones sowie Mac OS X-Geräte mit Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
-ms.openlocfilehash: f393f2f34658d9c4c341f1c961e9dd527fcec4b1
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: 8a41c4c4f0ab4b4864fe366a2852046693b6baee
 
 
 ---
@@ -48,6 +48,6 @@ Wenn Ihr Unternehmen oder Ihre Organisation iOS-Geräte für Benutzer erwirbt, k
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

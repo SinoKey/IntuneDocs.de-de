@@ -3,7 +3,7 @@ title: "Auf Ihrem Gerät ist ein erforderliches Zertifikat nicht vorhanden | Mic
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 61dda32b55e108b340923f4ff2a86163da2971dc
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 220d877763352e62c4057494b69633356ef081c6
 
 
 ---
@@ -74,7 +74,7 @@ Um dieses Problem zu beheben und das erforderliche Zertifikat zu erhalten, müss
 
     ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. Klicken Sie im Dialogfeld **Zertifikat** auf die Registerkarte **Zertifizierungspfad**, und identifizieren Sie das Zertifikat, das Sie aus dem Internet abrufen müssen. Der Name des Zertifikats, das Sie benötigen, befindet sich an der gleichen Position wie der, der im obigen Beispielscreenshot hervorgehoben ist. 
+5. Klicken Sie im Dialogfeld **Zertifikat** auf die Registerkarte **Zertifizierungspfad**, und identifizieren Sie das Zertifikat, das Sie aus dem Internet abrufen müssen. Der Name des Zertifikats, das Sie benötigen, befindet sich an der gleichen Position wie der, der im obigen Beispielscreenshot hervorgehoben ist.
 
 ### Herunterladen des fehlenden Zertifikats auf das Android-Gerät und Installation
 
@@ -94,12 +94,13 @@ Um dieses Problem zu beheben und das erforderliche Zertifikat zu erhalten, müss
 
 7. Öffnen Sie die Unternehmensportal-App erneut. Sie sollten sich jetzt bei der Unternehmensportal-App anmelden können. Wenn Sie Hilfe benötigen, wenden Sie sich an Ihren IT-Administrator.
 
-Wenn die gleiche „Zertifikat fehlt“-Nachricht wie oben gezeigt angezeigt wird, und Sie bereits die Schritte oben ausgeführt haben, bedeutet dies wahrscheinlich, dass Ihr IT-Administrator noch ein anderes Zertifikat benötigt, um Ihnen bei der Installation zu helfen. Wenden Sie sich an Ihren IT-Administrator, und senden Sie dieser Person diesen [Link](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues), der die Schritte zum Beheben des Problems enthält. 
+Wenn die gleiche „Zertifikat fehlt“-Nachricht wie oben gezeigt angezeigt wird, und Sie bereits die Schritte oben ausgeführt haben, bedeutet dies wahrscheinlich, dass Ihr IT-Administrator noch ein anderes Zertifikat benötigt, um Ihnen bei der Installation zu helfen. Wenden Sie sich an Ihren IT-Administrator, und senden Sie dieser Person diesen [Link](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues), der die Schritte zum Beheben des Problems enthält.
 
 ### Weitere Informationen:
 [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

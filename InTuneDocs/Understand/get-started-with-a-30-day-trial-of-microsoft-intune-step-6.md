@@ -3,7 +3,7 @@ title: "Andere Optionen und Extras für Intune-Evaluierungsversionen | Microsoft
 description: "Hier werden Warnungen, Benachrichtigungen und Berichte sowie allgemeine Intune-Funktionen beschrieben, die Sie kennen müssen, wenn Sie sich für eine kostenlose 30-tägige Evaluierungsversion von Intune registrieren."
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 30ed78b967d8669999f59046d610eca6c78260a1
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: 34ac9e63541d93a6c4bf323de3b9e14b1d5609e5
 
 
 ---
@@ -58,6 +58,6 @@ Gratulation! Sie habe soeben die exemplarischen Vorgehensweise *Microsoft Intune
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
