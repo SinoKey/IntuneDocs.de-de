@@ -3,7 +3,7 @@ title: WLAN-Verbindungen | Microsoft Intune
 description: "Verwenden Sie VPN-Profile zur Bereitstellung von VPN-Einstellungen für Benutzer und Geräte in Ihrer Organisation."
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 3a59d69be920012b3faa6ea5420b4a96d9c63f46
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 271d2be675ab808365cd6869c69d386058f76ae8
 
 
 ---
@@ -125,8 +125,8 @@ Verwenden Sie zum Importieren von WLAN-Einstellungen für die Bereitstellung an 
 
 2.  Konfigurieren Sie eine Richtlinie vom Typ **Windows** &gt; **WLAN-Import (Windows 8.1 und später)**.
 
-    Diese Richtlinie kann auf Windows 8.1, Windows 10 Desktop und Windows 10 Mobile angewendet werden. 
-    
+    Diese Richtlinie kann auf Windows 8.1, Windows 10 Desktop und Windows 10 Mobile angewendet werden.
+
     Sie können nur eine *benutzerdefinierte* WLAN-Importrichtlinie für Windows erstellen und bereitstellen. Empfohlene Einstellungen sind nicht verfügbar.
 
 3.  Geben Sie die folgenden allgemeinen Informationen für die WLAN-Importrichtlinie an:
@@ -166,6 +166,6 @@ Unter [Erstellen eines WLAN-Profils über einen vorinstallierten Schlüssel](pre
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

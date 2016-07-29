@@ -3,7 +3,7 @@ title: "Verschlüsseln Ihres Geräts | Microsoft Intune"
 description: "Beschreibt das Verschlüsseln eines Android-Geräts."
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/07/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: a69d4c3432867e3b4a808d71645d6a976a9f1c2e
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 777b87328e12b4d6b3de1b338fe802d92c1138a1
 
 
 ---
@@ -24,9 +24,9 @@ ms.openlocfilehash: a69d4c3432867e3b4a808d71645d6a976a9f1c2e
 
 Wenn Ihr Unternehmen oder Ihre Organisation eine Verschlüsselung Ihres Android-Geräts erfordern, bevor Sie auf Unternehmensdateien, E-Mails oder Daten zugreifen können, befolgen Sie die untenstehenden Schritte zum Verschlüsseln des Geräts. Sie werden möglicherweise aufgefordert, vor dem Verschlüsseln eine PIN oder ein Kennwort festzulegen, wenn dies vom IT-Administrator gefordert wird.
 
-Wenn Sie Ihr Telefon jemals abmelden, bleibt es verschlüsselt. 
+Wenn Sie Ihr Telefon jemals abmelden, bleibt es verschlüsselt.
 
-1.  Stellen Sie sicher, dass eine Bildschirmsperren-PIN oder ein Kennwort für das Gerät festgelegt wurde. 
+1.  Stellen Sie sicher, dass eine Bildschirmsperren-PIN oder ein Kennwort für das Gerät festgelegt wurde.
 
 2.  Klicken Sie unter **Einstellungen** auf **Sicherheit** &gt; **Telefon verschlüsseln**.
     (Bei einigen Telefonen müssen Sie auf **Speicher** &gt; **Speicherverschlüsselung** oder **Speicher** &gt; **Sperrbildschirm und Sicherheit** &gt; **Andere Sicherheitseinstellungen** klicken, um auf die Option „Verschlüsseln“ zuzugreifen.)
@@ -47,7 +47,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

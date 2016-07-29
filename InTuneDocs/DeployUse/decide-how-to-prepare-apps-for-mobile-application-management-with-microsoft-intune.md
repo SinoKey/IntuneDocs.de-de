@@ -1,10 +1,10 @@
 ---
-title: "Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune | Microsoft Intune"
-description: 
+title: "Vorbereiten von Apps für die Verwaltung von mobilen Anwendungen | Microsoft Intune"
+description: "Die Informationen in diesem Thema unterstützen Sie bei der Entscheidung, wann Sie das App Wrapping-Tool und die App-SDK verwenden sollten, um Ihrer benutzerdefinierten Reihe von Branchen-Apps die Verwendung der Verwaltungsrichtlinien für mobile Apps zu ermöglichen."
 keywords: 
-author: Staciebarker
+author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 986d864a3169fa3b094241a3522e3f25b7bfe349
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 4a15279bb4460c88412ede6c8678deea72a3629f
 
 
 ---
@@ -68,6 +69,6 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

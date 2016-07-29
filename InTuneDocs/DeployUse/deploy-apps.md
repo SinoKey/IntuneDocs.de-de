@@ -1,10 +1,10 @@
 ---
 title: Bereitstellen von Apps | Microsoft Intune
-description: 
+description: "In diesem Thema werden Grundlagen erläutert, die Sie kennen müssen, bevor Sie mit dem Bereitstellen von Apps mit Intune beginnen."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: e6b995118e66fd146a68b49ce4decdcbd1fe3572
-ms.openlocfilehash: a68cb85602bd585539147c7d7d38c0d906f2b1f7
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 84f19cd198a2367abb0267071bd73ce8ac6d7d05
 
 
 ---
@@ -29,7 +30,7 @@ Wenn Sie Apps bereitstellen, können Sie eine der folgenden Bereitstellungsaktio
 -   **Erforderliche Installation** – Die App wird auf dem Gerät installiert, ohne dass ein Benutzereingriff erforderlich ist.
 
     > [!TIP]
-    > [!TIP] Bei iOS-Geräten, die nicht betreut werden, und bei allen Android-Geräten muss der Benutzer das App-Angebot vor der Installation akzeptieren.
+    > Bei iOS-Geräten, die nicht betreut werden, und bei allen Android-Geräten muss der Benutzer das App-Angebot vor der Installation akzeptieren.
     > 
     >  Wenn ein Endbenutzer eine App deinstalliert, die Sie als erforderliche Installation bereitgestellt haben, wird diese App von Intune nach dem nächsten Inventurzyklus (in der Regel nach 7 Tagen) automatisch erneut installiert.
 
@@ -54,7 +55,7 @@ Wenn Sie Apps bereitstellen, können Sie eine der folgenden Bereitstellungsaktio
 |Verwaltete iOS-App aus dem App Store (für eine Benutzergruppe bereitgestellt)|Ja|Ja|Ja|Ja|
 |Verwaltete iOS-App aus dem App Store (auf einer Gerätegruppe bereitgestellt)|Ja|Nein|Ja|Ja|
 > [!TIP]
-> [!TIP] Wenn Sie beim Bereitstellen von Apps sowohl Benutzer- als auch Gerätegruppen auswählen, können Sie die App nur als **Verfügbare Installation** bereitstellen.
+> Wenn Sie beim Bereitstellen von Apps sowohl Benutzer- als auch Gerätegruppen auswählen, können Sie die App nur als **verfügbare Installation** bereitstellen.
 
 ## Bereitstellungskonflikte
 Wenn zwei Bereitstellungen mit der gleichen Bereitstellungsaktion von einem Gerät empfangen werden, gelten die folgenden Regeln:
@@ -72,6 +73,6 @@ Erfahren Sie mehr zum [Bereitstellen von Apps in Microsoft Intune](deploy-apps-
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

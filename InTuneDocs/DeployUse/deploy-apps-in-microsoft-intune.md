@@ -1,10 +1,10 @@
 ---
 title: Bereitstellen von Apps | Microsoft Intune
-description: 
+description: Die Informationen in diesem Thema helfen Ihnen beim Bereitstellen von Apps mit Microsoft Intune.
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c95a776e79cf3e1c7009d6e27f8f50482434d298
-ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
+ms.sourcegitcommit: 5ef1d2d69acfeea9670324f580d33b191001ffa9
+ms.openlocfilehash: 8ab2517a11ecb6ae5395814472dfbb3e83da132b
 
 ---
-# Bereitstellen von Apps in Microsoft Intune
+# Bereitstellen von Anwendungen in Microsoft Intune
 
-Die Informationen in diesem Thema helfen Ihnen beim Bereitstellen von Microsoft Intune-Apps.
+Die Informationen in diesem Thema helfen Ihnen beim Bereitstellen von Apps mit Microsoft Intune.
 
 
 ## Bereitstellen einer App
-In dieser Vorgehensweise stellen Sie die App auf ausgewählten Geräten oder für ausgewählte Benutzer bereit.
+In dieser Vorgehensweise stellen Sie die App für ausgewählte Gruppen von Geräten oder für ausgewählte Benutzer bereit.
 
 ### So stellen Sie eine App bereit
 
@@ -52,11 +52,11 @@ In dieser Vorgehensweise stellen Sie die App auf ausgewählten Geräten oder fü
 ## Beispiel
 
 In diesem Beispiel haben Sie die App als **Verfügbar** für ein iOS-Gerät bereitgestellt.
-Die App wird auf den Geräten der Benutzer im Unternehmensportal angezeigt, und von dort aus können die Benutzer sie installieren. In diesem Screenshot wurde z. B. die App „Bing für iOS“ mit dem Installationstyp **Externer Link** zusammen mit einem benutzerdefinierten Symbol bereitgestellt. Außerdem wurde die Option **Als ausgewählte App anzeigen und im Unternehmensportal hervorheben** ausgewählt.
-    ![Verfügbare iOS-App](./media/available-install-on-iOS.png)
+Die App wird auf den Geräten der Benutzer im Unternehmensportal angezeigt, und von dort aus können die Benutzer sie installieren. In diesem Screenshot wurde z. B. die App „Bing für iOS“ mit dem Installationstyp **Externer Link** zusammen mit einem benutzerdefinierten Symbol bereitgestellt. Außerdem wurde die Option **Als ausgewählte App anzeigen und im Unternehmensportal hervorheben** ausgewählt.  
+![Verfügbare iOS-App](./media/available-install-on-iOS.png)
 
-Wenn Sie die App als **Erforderlich** für ein iOS-Gerät bereitgestellt haben, wird der Benutzer benachrichtigt, dass diese App zur Installation bereitsteht. In diesem Screenshot wurde z. B. die App „Arbeitsordner für iOS“ mit dem Installationstyp **Verwaltete iOS-App aus dem App Store** bereitgestellt.
-    ![Erforderliche iOS-App](./media/iOS-Required-install.PNG)
+Wenn Sie die App als **Erforderlich** für ein iOS-Gerät bereitgestellt haben, wird der Benutzer benachrichtigt, dass diese App zur Installation bereitsteht. In diesem Screenshot wurde z. B. die App „Arbeitsordner für iOS“ mit dem Installationstyp **Verwaltete iOS-App aus dem App Store** bereitgestellt.  
+![Erforderliche iOS-App](./media/iOS-Required-install.PNG)
 
 ## Nächste Schritte
 
@@ -64,6 +64,6 @@ Nachdem Sie eine Anwendung bereitgestellt haben, ist es sinnvoll, deren Status z
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

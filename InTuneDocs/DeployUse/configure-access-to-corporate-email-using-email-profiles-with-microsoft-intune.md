@@ -1,10 +1,10 @@
 ---
-title: Konfigurieren des Zugriffs auf Unternehmens-E-Mail mithilfe von E-Mail-Profilen | Microsoft Intune
-description: 
+title: Zugriff auf Unternehmens-E-Mail mithilfe von E-Mail-Profilen | Microsoft Intune
+description: "Mithilfe der Einstellungen von E-Mail-Profilen können die Einstellungen für den E-Mail-Zugriff für bestimmte E-Mail-Clients auf mobilen Geräten konfiguriert werden."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 05/05/2016
+manager: Arob98
+ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
-ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c7a3ca7b0390a001624871342c9aa04802be27ff
 
 
 ---
@@ -24,7 +24,7 @@ Viele mobile Plattformen enthalten einen *systemeigenen* E-Mail-Client, der als 
 
 Wenn ein zusätzlicher Schutz vor Datenverlust erforderlich ist, wählen Sie [Bedingter Zugriff](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) aus, um den Zugriff auf das Postfach des Benutzers für alle E-Mail-Clients zu kontrollieren, einschließlich systemeigener E-Mail-Clients.
 
-Mithilfe der Einstellungen von E-Mail-Profilen können die Einstellungen für den E-Mail-Zugriff für bestimmte E-Mail-Clients auf mobilen Geräten konfiguriert werden.   Die meisten mobilen Plattformen enthalten einen *systemeigenen* E-Mail-Client, der als Teil des Betriebssystems bereitgestellt wird.  Auf unterstützten Plattformen können die E-Mail-Clients mithilfe von Microsoft Intune konfiguriert werden, damit Benutzer ohne vorherige Einrichtung über private Geräte auf ihre E-Mails im Unternehmen zugreifen können.  
+Mithilfe der Einstellungen von E-Mail-Profilen können die Einstellungen für den E-Mail-Zugriff für bestimmte E-Mail-Clients auf mobilen Geräten konfiguriert werden. Die meisten mobilen Plattformen enthalten einen *systemeigenen* E-Mail-Client, der als Teil des Betriebssystems bereitgestellt wird.  Auf unterstützten Plattformen können die E-Mail-Clients mithilfe von Microsoft Intune konfiguriert werden, damit Benutzer ohne vorherige Einrichtung über private Geräte auf ihre E-Mails im Unternehmen zugreifen können.  
 
 IT-Administratoren oder Benutzer können auch alternative E-Mail-Clients wie Microsoft Outlook für Android oder iOS installieren.  Diese E-Mail-Clients unterstützen möglicherweise keine E-Mail-Profile und können nicht mithilfe der E-Mail-Profile von Microsoft Intune konfiguriert werden.  
 
@@ -111,6 +111,6 @@ Eine Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeit
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -24,6 +24,7 @@
 #### [Exchange-Zugriffsregeln](exchange-access-rules-for-mobile-devices.md)
 ### [Verwalten von PCs](manage-windows-pcs-with-microsoft-intune.md)
 #### [Installieren des PC-Clients](install-the-windows-pc-client-with-microsoft-intune.md)
+#### [Allgemeine Aufgaben zur Verwaltung von PCs](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Lösen von PC-Richtlinienkonflikten](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 
 ## [Konfigurieren von Geräten](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -49,7 +50,7 @@
 ### [Verwenden von Gruppen zum Verwalten von Benutzern und Geräten](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 ### [Zuweisen von Geräten zu Gruppen](categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Verstehen Sie Ihre Geräte mithilfe des Inventars](understand-your-devices-with-inventory-in-microsoft-intune.md)
-### [Allgemeine Aufgaben zur Verwaltung von PCs](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+
 
 ## [Schützen von Geräten](protect-your-devices-with-microsoft-intune.md)
 ### [Remotesperre und Zurücksetzen der Kennung](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
@@ -76,6 +77,7 @@
 ## [Konfigurieren von Apps](update-apps-using-microsoft-intune.md)
 ### [Aktualisierung von Apps ](update-apps-using-microsoft-intune.md)
 ### [Richtlinien zur Konfiguration von iOS-Apps](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [Bereitstellungsprofile für mobile iOS-Apps](ios-mobile-app-provisioning-profiles.md)
 ### [Verwalten des Internetzugriffs](manage-internet-access-using-managed-browser-policies.md)
 
 
@@ -133,6 +135,6 @@
 # [Problembehandlung](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

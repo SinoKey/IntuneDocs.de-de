@@ -1,6 +1,6 @@
 ---
 title: Erstellen und Bereitstellen von MAM-Richtlinien | Microsoft Intune
-description: 
+description: "Verwenden Sie die schrittweisen Anweisungen in diesem Thema zum Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,24 +12,27 @@ ms.technology:
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
-ms.sourcegitcommit: 3f79de38ce7fc9a5434033ee45ddf43f22517356
-ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
+translationtype: Human Translation
+ms.sourcegitcommit: 3c3fe3f55b625754eac44d245d7c5065514af25c
+ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
 
 
 ---
 
 # Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune
-MAM-Richtlinien (Mobile App Management) können unabhängig davon angewendet werden, ob die Geräte, auf denen die Apps ausgeführt werden, von Intune verwaltet werden oder nicht. Eine ausführlichere Beschreibung zur Funktionsweise von MAM-Richtlinien und den von Intune MAM-Richtlinien unterstützten Szenarien finden Sie im Thema [Schützen von App-Daten mithilfe von Richtlinien zur Verwaltung mobiler Geräte](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+MAM-Richtlinien (Mobile App Management) können unabhängig davon angewendet werden, ob die Geräte, auf denen die Apps ausgeführt werden, von Intune verwaltet werden oder nicht. Eine ausführlichere Beschreibung der Funktionsweise von MAM-Richtlinien und der von Intune MAM-Richtlinien unterstützten Szenarien finden Sie im Thema [Schützen von App-Daten mithilfe von Richtlinien zur Verwaltung mobiler Geräte](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 In diesem Thema wird der Erstellungsvorgang einer MAM-Richtlinie im **Azure-Portal** beschrieben. Das Azure-Portal ist die neue Verwaltungskonsole zum Erstellen von MAM-Richtlinien, und wir empfehlen, dass Sie Ihre MAM-Richtlinien in diesem Portal erstellen. Das Azure-Portal unterstützt die folgenden MAM-Szenarien:
 - Bei Intune registrierte Geräte
 - Geräte, die mithilfe einer MDM-Lösung eines Drittanbieters verwaltet werden
 - Geräte, die gar keiner Verwaltung durch eine MDM-Lösung unterliegen (BYOD).
 
-Wenn Sie derzeit Ihre Geräte mit der **Intune-Verwaltungskonsole** verwalten, können Sie mithilfe der [Intune-Verwaltungskonsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) eine MAM-Richtlinie erstellen, die Apps für die bei Intune registrierten Geräte unterstützt.
+>[!IMPORTANT]
+
+> Wenn Sie derzeit Ihre Geräte mit der **Intune-Verwaltungskonsole** verwalten, können Sie mithilfe der [Intune-Verwaltungskonsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) eine MAM-Richtlinie erstellen, die Apps für die bei Intune registrierten Geräte unterstützt.
 Die MAM-Richtlinien, die in der Intune-Verwaltungskonsole erstellt wurden, können nicht ins Azure-Portal importiert werden.  Die MAM-Richtlinien müssen im Azure-Portal neu erstellt werden.
 
->[!IMPORTANT]
+
 > Möglicherweise werden in der Intune-Verwaltungskonsole nicht alle MAM-Richtlinieneinstellungen angezeigt. Das Azure-Portal stellt die neue Verwaltungskonsole zum Erstellen von MAM-Richtlinien dar. Wenn Sie sowohl in der Intune-Verwaltungskonsole als auch im Azure-Portal MAM-Richtlinien erstellen, wird die im Azure-Portal erstellte Richtlinie auf die Apps angewendet und für die Benutzer bereitgestellt.
 
 Wählen Sie eins der folgenden Themen aus, um eine Liste der für die Plattformen Android und iOS unterstützten Richtlinieneinstellungen anzuzeigen:
@@ -155,8 +158,8 @@ Um die Auswirkungen der Änderungen sofort zu erfahren, muss der Endbenutzer sic
 Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finden Sie in den folgenden Themen:
 
 > [!div class="op_single_selector"]
-  - [iOS-Richtlinien](ios-mam-policy-settings.md)
-  - [Android-Richtlinien](android-mam-policy-settings.md)
+- [iOS-Richtlinien](ios-mam-policy-settings.md)
+- [Android-Richtlinien](android-mam-policy-settings.md)
 
 ## Nächste Schritte
 [Überwachen von Compliance und Benutzerstatus](monitor-mobile-app-management-policies-with-microsoft-intune.md)
@@ -166,6 +169,6 @@ Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finde
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

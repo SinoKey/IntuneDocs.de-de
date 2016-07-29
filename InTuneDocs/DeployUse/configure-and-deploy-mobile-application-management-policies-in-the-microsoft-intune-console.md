@@ -1,10 +1,10 @@
 ---
-title: "Konfigurieren und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen in der Microsoft Intune-Konsole | Microsoft Intune"
-description: 
+title: Konfigurieren von MAM-Richtlinien in der Intune-Konsole | Microsoft Intune
+description: "Verwaltungsrichtlinien für mobile Anwendungen in Microsoft Intune ermöglichen Ihnen das Ändern der Funktionalität von Apps, die Sie bereitstellen, um sie auf die Kompatibilitäts- und Sicherheitsrichtlinien Ihres Unternehmens abzustimmen."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: a140a2f634397440b35786e7afb3165dccc7d93e
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: df75c3512091dff55ace65ef6106dc2cbc503bd2
 
 
 ---
@@ -126,7 +126,7 @@ Nachdem Sie überprüft haben, dass die Anwendung erfolgreich hochgeladen wurde,
     |**Beschreibung**|Geben Sie optional eine Beschreibung für diese Richtlinie ein.|
     |**Einschränken von anzuzeigenden Webinhalten in einem unternehmensverwalteten Browser**|Wenn diese Einstellung aktiviert ist, werden alle Links aus der App in Managed Browser geöffnet. Sie müssen diese App auf Geräten bereitstellen, damit diese Option funktioniert.|
     |**Verhindern von Android-Sicherungen** oder **Verhindern von iTunes- und iCloud-Sicherungen**|Deaktiviert die Sicherung von Informationen aus der App.|
-    |**App Übertragung von Daten an andere Apps erlauben**|Gibt die Apps an, denen diese App Daten senden kann. Sie können auswählen, die Datenübertragung an eine beliebige App nicht zu erlauben, nur die Übertragung an andere verwaltete Apps zu erlauben oder die Übertragung an beliebige Apps zuzulassen. Diese Einstellung steuert nicht die Verwendung der Funktion **Öffnen In** auf mobilen Geräten.<br /><br />Wenn Sie beispielsweise Datenübertragungen nicht zulassen, schränken Sie die Datenübertragung an Dienste wie SMS-Messaging, das Zuweisen von Bildern zu Kontakten und das Posten von Beiträgen in Facebook oder Twitter ein.<br /><br />Um für iOS-Geräte den Austausch von Dokumenten zwischen verwalteten und nicht verwalteten Apps zu verhindern, müssen Sie eine Sicherheitsrichtlinie für mobile Geräte konfigurieren und bereitstellen, die die Einstellung **Verwaltete Dokumente in anderen nicht verwalteten Apps zulassen** deaktiviert. Bei Zulassung der Übertragung nur auf andere verwaltete Apps werden die Intune PDF- und Image-Viewer (sofern bereitgestellt) verwendet, um den Inhalt der jeweiligen Typen zu öffnen.<br /><br />Wenn Sie diese Option auf **Richtlinienverwaltete Apps** oder **Keine** festlegen, wird zudem das iOS 9-Feature blockiert, das der Spotlight-Suche erlaubt, Daten in Apps zu suchen.|
+    |**App Übertragung von Daten an andere Apps erlauben**|Gibt die Apps an, denen diese App Daten senden kann. Sie können auswählen, die Datenübertragung an eine beliebige App nicht zu erlauben, nur die Übertragung an andere verwaltete Apps zu erlauben oder die Übertragung an beliebige Apps zuzulassen. Diese Einstellung steuert nicht die Verwendung der Funktion **Öffnen In** auf mobilen Geräten.<br /><br />Wenn Sie beispielsweise Datenübertragungen nicht zulassen, schränken Sie die Datenübertragung an Dienste wie SMS-Messaging, das Zuweisen von Bildern zu Kontakten und das Posten von Beiträgen in Facebook oder Twitter ein.<br /><br />Um für iOS-Geräte den Austausch von Dokumenten zwischen verwalteten und nicht verwalteten Apps zu verhindern, müssen Sie eine Sicherheitsrichtlinie für mobile Geräte konfigurieren und bereitstellen, die die Einstellung **Verwaltete Dokumente in anderen nicht verwalteten Apps zulassen** deaktiviert. Bei Zulassung der Übertragung nur auf andere verwaltete Apps werden die Intune PDF- und Image-Viewer (sofern bereitgestellt) verwendet, um den Inhalt der jeweiligen Typen zu öffnen.<br /><br />Wenn Sie diese Option auf **Richtlinienverwaltete Apps** oder **Keine** festlegen, wird zudem das iOS 9-Feature blockiert, das der Spotlight-Suche erlaubt, Daten in Apps zu suchen.<br><br>**Diese Einstellung steuert nicht die Verwendung des Features „Öffnen in“ auf mobilen Geräten. Informationen zum Verwalten von „Öffnen in“ finden Sie [hier](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)**.|
     |**App Empfang von Daten aus anderen Apps erlauben**|Gibt die Apps an, von denen diese App Daten empfangen kann. Sie können auswählen, die Datenübertragung aus einer beliebigen App nicht zu erlauben, nur die Übertragung aus anderen verwalteten Apps zu erlauben oder die Übertragung aus beliebigen Apps zuzulassen.<br /><br />Für iOS-Apps, die mehrere Identitäten unterstützen (wobei Intune nur Verwaltungseinstellungen auf Unternehmenskonten oder Daten in der App anwendet) gilt: Wenn ein Benutzer mit einem registrierten Gerät mit angewendeter Verwaltungsrichtlinie für mobile Anwendungen auf Daten aus einer App zugreift, die nicht durch eine Verwaltungsrichtlinie für mobile Anwendungen verwaltet wird, werden die Daten wie Unternehmensdaten behandelt und durch die Richtlinie geschützt.|
     |**„Speichern unter“ verhindern**|Deaktiviert die Verwendung der Option **Speichern unter** zum Speichern von Daten an persönlichen Cloudspeicherorten (z. B. OneDrive Personal oder Dropbox) in einer beliebigen App, die dieser Richtlinie unterliegt.|
     |**Beschränken von Ausschneiden, Kopieren und Einfügen mit anderen Apps**|Gibt an, wie Ausschneiden, Kopieren und Einfügen mit der App verwendet werden kann. Wählen Sie aus:<br /><br />**Blockiert**: Ausschneiden, Kopieren und Einfügen zwischen dieser App und anderen Apps nicht zulassen.<br /><br />**Richtlinienverwaltete Apps**: Nur Ausschneiden, Kopieren und Einfügen zwischen dieser App und anderen verwalteten Apps zulassen.<br /><br />**Richtlinienverwaltete Apps mit Einfügen**: Ermöglicht das Einfügen von aus dieser App ausgeschnittenen oder kopierten Daten nur in andere verwaltete Apps. Einfügen der aus beliebigen Apps ausgeschnittenen oder kopierten Daten in diese App zulassen.<br /><br />**Jede App**: Keine Einschränkungen beim Ausschneiden, Kopieren und Einfügen in oder aus dieser App.<br /><br />Zum Kopieren und Einfügen von Daten zwischen verwalteten Apps muss für beide Apps entweder die Einstellung **Richtlinienverwaltete Apps** oder **Richtlinienverwaltete Apps mit Einfügen** konfiguriert werden.|
@@ -197,6 +197,6 @@ In Fällen, in denen das Gerät oder der Benutzer zwei in Konflikt stehende Rich
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

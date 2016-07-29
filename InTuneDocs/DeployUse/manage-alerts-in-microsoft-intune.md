@@ -3,19 +3,19 @@ title: Verwalten von Warnungen | Microsoft Intune
 description: "Über den Arbeitsbereich „Warnungen“ können Sie sich schnell einen Überblick über die Gesamtintegrität der verwalteten Geräte in Ihrer Organisation verschaffen."
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-ROBOTS: noindex,nofollow
-ms.reviewer: jeffgilb
+ROBOTS: NOINDEX,NOFOLLOW
+ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 47667501cf8235ed59e3915ec8f745381a37ab35
+ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
+ms.openlocfilehash: 54dd8c6bae6c02e7dde3582b439d106261bc490b
 
 
 ---
@@ -33,12 +33,12 @@ ms.openlocfilehash: 47667501cf8235ed59e3915ec8f745381a37ab35
 
         > [!NOTE]
         > In einigen Fällen kann ein Warnungstyp in der Liste **Warnungstypübersicht** mehrmals aufgeführt sein.
-        > 
+        >
         > Beispiel: Die folgenden Instanzen des Warnungstyps "Freier Speicherplatz auf logischem Datenträger" werden möglicherweise in der Liste angezeigt:
-        > 
+        >
         > -   3 Freier Speicherplatz auf logischem Datenträger
         > -   2 Freier Speicherplatz auf logischem Datenträger
-        > 
+        >
         > Diese Situation tritt auf, wenn derselbe Warnungstyp für Geräte mit unterschiedlichen Betriebssystemen generiert wird. In dem Beispiel wurde die erste Instanz des Warnungstyps „Freier Speicherplatz auf logischem Datenträger“ (3 Freier Speicherplatz auf logischem Datenträger) möglicherweise von Computern generiert, auf denen Windows® 7 ausgeführt wird. Die zweite Instanz des Warnungstyps wurde möglicherweise von Computern generiert, auf denen Windows Vista® ausgeführt wird.
 
     -   **Zum Anzeigen aller aktiven Warnungen** klicken Sie auf **Warnungen &gt; Alle Warnungen**. Auf der Seite **Warnungen** wird eine Liste aller aktiven Warnungen mit folgenden Spalten angezeigt:
@@ -107,7 +107,6 @@ Warnungen, die als geschlossen markiert sind, werden nach 90 Tagen dauerhaft gel
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "Erstellen einer Kompatibilitätsrichtlinie für Geräte in Microsoft Intune | Microsoft Intune"
-description: 
+title: "Erstellen einer Kompatibilitätsrichtlinie für Geräte | Microsoft Intune"
+description: "Erstellen Sie eine Kompatibilitätsrichtlinie, um das Sichern mobiler Geräte und PCs zu unterstützen, die zum Zugriff auf Ihre Unternehmensdaten verwendet werden."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: f4f036fc1b6fe2394e05907e2d14289c9fba3426
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 67d9b0e0231b8165500f6995d5c058fb5c3f2df1
 
 
 ---
@@ -32,12 +32,20 @@ Aktivieren Sie auf der Seite **Richtlinie erstellen** die folgenden Einstellunge
   -   Die Einstellungen für die Systemsicherheit, wie Kennwort, Verschlüsselung
   -   Einstellungen für die Geräteintegrität, etwa ob ein Gerät per Jailbreak manipuliert wurde oder vom Windows-Dienst für den Nachweis der Geräteintegrität als intakt gemeldet wird.
   -   Einstellungen von Geräteeigenschaften, etwa die erforderliche minimale oder die zulässige maximale Betriebssystemversion.
-![Screenshot der Registerkarte „Allgemein“ auf der Seite „Richtlinie erstellen“ ](./media/intune-sa-3b-create-policy.png)
+![Registerkarte „Allgemein“ auf der Seite „Richtlinie erstellen“ ](./media/intune-sa-3b-create-policy.png)
+
 
 ##  Schritt 3: Speichern der Richtlinie
 Wählen Sie danach die Option **Richtlinie speichern**.
 
 Sie haben die Möglichkeit, die Richtlinie direkt nach dem Speichern bereitzustellen oder können sich für die spätere Bereitstellung entscheiden. Die neue Richtlinie wird im Knoten **Konformitätsrichtlinien** des Arbeitsbereichs **Richtlinie** angezeigt.
+
+##  Schritt 4: Festlegen des Gültigkeitszeitraums des Kompatibilitätsstatus
+Um den Zeitraum anzugeben, der dem Gerät zum Einchecken zur Verfügung steht, bevor es als nicht kompatibel eingestuft wird, wechseln Sie zu den Konformitätsrichtlinieneinstellungen, und aktualisieren Sie die Zeit.  Der Standard ist auf 30 Tage festgelegt.
+
+![Option „Einstellungen für Kompatibilitätsrichtlinie“ in der Richtlinienmenüleiste](../media/mdm-compliance-policy-settings.png)
+
+![Dialogfeld „Kompatibilitätsrichtlinie“](../media/mdm-ca-compliance-status-validity-period.png)
 
 ## Unterstützte Richtlinieneinstellungen
 In der folgenden Tabelle sind die Einstellungen für die Kompatibilitätsrichtlinie und die Plattformen aufgelistet, auf denen sie unterstützt werden.
@@ -79,6 +87,6 @@ Weitere Informationen über die Kompatibilitätseinstellungen, die auf den einze
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

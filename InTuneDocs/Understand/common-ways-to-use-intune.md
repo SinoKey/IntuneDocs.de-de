@@ -1,9 +1,9 @@
 ---
 title: "Gängige Arten der Verwendung von Intune | Microsoft Intune"
-description: 
+description: "Hier werden sechs der gängigsten Aufgaben aufgeführt, die Benutzer über Intune ausführen möchten."
 keywords: 
 author: jeffgilb
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9cb6894cefad1da14332f9994fdf45fe2d1e9b9c
-ms.openlocfilehash: c854893f457a60a7424010cdf69a91cb8476e167
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 3defa4b8f78e854532d32c66a17f0ed18d36cec7
 
 
 ---
@@ -23,7 +23,8 @@ ms.openlocfilehash: c854893f457a60a7424010cdf69a91cb8476e167
 
 Bevor die Implementierungsaufgaben behandelt werden, ist es wichtig, die Enterprise Mobility-Beteiligten Ihres Unternehmens auf die Geschäftsziele auszurichten.  Dies ist unabhängig davon wichtig, ob Enterprise Mobility für Sie neu ist oder Sie von einem anderen Produkt migrieren.  Die Anforderungen in Bezug auf Enterprise Mobility entwickeln sich dynamisch und die Ansätze von Microsoft zur Behandlung dieser Anforderungen können sich manchmal von anderen Lösungen am Markt unterscheiden.  Die beste Methode zum Ausrichten von Geschäftszielen besteht darin, die Ziele in Bezug auf die Szenarien auszudrücken, die Sie für Mitarbeiter, Partner und die IT-Abteilung ermöglichen möchten.  Nachfolgend finden Sie kurze Einführung zu den sechs häufigsten, auf Intune beruhenden Szenarien sowie Links zu weiteren Informationen, wie diese jeweils geplant und bereitgestellt werden.
 
->[!NOTE] Möchten Sie wissen, wie Microsoft IT Intune verwendet, um Microsoft-Mitarbeitern den Zugriff auf Unternehmensressourcen auf ihren mobilen Geräten zu ermöglichen, während dabei auch die Unternehmensdaten geschützt bleiben? [Lesen Sie diese technische Fallstudie](https://www.microsoft.com/itshowcase/Article/Content/588), um ausführlich zu erfahren, wie Microsoft IT Intune und andere Dienste dazu verwendet, um Identitäten, Geräte, Apps und Daten zu verwalten.  
+>[!NOTE]
+>Möchten Sie wissen, wie Microsoft IT Intune verwendet, um Microsoft-Mitarbeitern den Zugriff auf Unternehmensressourcen auf ihren mobilen Geräten zu ermöglichen, während dabei auch die Unternehmensdaten geschützt bleiben? [Lesen Sie diese technische Fallstudie](https://www.microsoft.com/itshowcase/Article/Content/588), um ausführlich zu erfahren, wie Microsoft IT Intune und andere Dienste dazu verwendet, um Identitäten, Geräte, Apps und Daten zu verwalten.  
 
 ## Sichern Ihrer lokalen E-Mails und Daten für den sicheren Zugriff über mobile Geräte
 Die meisten Enterprise Mobility-Strategien beginnen mit einem Plan, für Mitarbeiter mit mobilen Geräten den sicheren Zugriff auf E-Mails über das Internet zu ermöglichen. Viele Unternehmen verwenden weiterhin lokale Daten und Anwendungsserver wie Microsoft Exchange, die im Unternehmensnetzwerk gehostet werden. Intune und die Enterprise Mobility Suite (EMS) bieten eine eindeutig integrierte Lösung für Exchange Server für den bedingten Zugriff, die sicherstellt, dass keine mobilen Apps auf Ihre E-Mails zugreifen können, bis das Gerät mit Intune registriert wurde, ohne einen weiteren Gatewaycomputer am Rand des Unternehmensnetzwerks bereitstellen zu müssen.
@@ -67,6 +68,6 @@ Manchmal müssen Ihre Mitarbeiter Geräte, Apps oder Browser verwenden, die von 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

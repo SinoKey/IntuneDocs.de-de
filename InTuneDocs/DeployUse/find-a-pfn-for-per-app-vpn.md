@@ -3,7 +3,7 @@ title: "Suchen eines Paketfamiliennamens (PFN) für VPN pro App | Microsoft Intu
 description: "Suchen Sie einen Paketfamiliennamen (PFN), den Sie zum Konfigurieren eines anwendungsbezogenen VPN („VPN pro App“) benötigen."
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a049127d79098bfb8992055a0a8b20fbfafd8c9
-ms.openlocfilehash: 980611a6c1fafdbc990f30d3144766abc97e632b
+ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
+ms.openlocfilehash: 0bbb8aef7929ac09ef5f6a5a466d66b5df03e921
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 980611a6c1fafdbc990f30d3144766abc97e632b
 
 Es gibt zwei Möglichen zum Suchen eines Paketfamiliennamens (PFN), den Sie zum Konfigurieren eines anwendungsbezogenen VPNs („VPN pro App“) benötigen.
 
-## Suchen eines PFN für eine App, die auf einem Windows 10-Computer installiert ist 
+## Suchen eines PFN für eine App, die auf einem Windows 10-Computer installiert ist
 
 Wenn die entsprechende App bereits auf einem Windows 10-Computer installiert ist, können Sie den PFN mit dem PowerShell-Cmdlet [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) abrufen.
 
@@ -74,7 +74,7 @@ Für OneNote werden folgende Informationen abgerufen:
 4.  Fügen Sie die URL `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata` in eine andere Registerkarte Ihres Browsers ein, und ersetzen Sie `<app id>` durch die App-ID, die Sie am ganz Ende von „https://www.microsoft.com/de-de/store/apps“ gefunden haben (die Zeichenfolge mit den Buchstaben aus Schritt 3). In unserem Beispiel für OneNote fügen Sie `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata` ein.
 
 In Edge werden die gewünschten Informationen sofort angezeigt. In Internet Explorer müssen Sie auf **Öffnen** klicken, um die Informationen anzuzeigen. Der PFN wird in der ersten Zeile angegeben. Für unser Beispiel sieht das Ergebnis so aus:
- 
+
 
 `{`
 `  "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",`
@@ -85,7 +85,6 @@ In Edge werden die gewünschten Informationen sofort angezeigt. In Internet Expl
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

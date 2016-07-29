@@ -1,26 +1,27 @@
 ---
-title: "Manuelles Synchronisieren des Geräts | Microsoft Intune"
+title: "Manuelles Synchronisieren des Windows-Geräts | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: fbe46abe0b13e8972a5e9fa09566dff0c09b9939
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 17b0583403c3e23c62a5bd60b9c8217b0621fa80
 
 
 ---
 
 
-# Manuelles Synchronisieren des Geräts
+# Manuelles Synchronisieren des Windows-Geräts
 Wenn die App-Installation bei Ihnen zu lange dauert, gehen Sie folgendermaßen vor, um Ihr Windows-Gerät manuell zu synchronisieren. Dies kann die Installation beschleunigen. Nur unterstützte Versionen sind aufgeführt. Klicken Sie im Abschnitt „Inhalt dieses Artikels“ weiter oben auf den Link, der dem Typ Ihres Geräts entspricht:
 
 * [Windows 10 Mobile](#windows-10-mobile)
@@ -98,6 +99,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

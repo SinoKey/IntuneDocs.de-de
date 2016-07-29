@@ -3,7 +3,7 @@ title: Wie Ihre Windows-Benutzer Apps erhalten | Microsoft Intune
 description: "Methoden, um Windows-Apps für Endbenutzer verfügbar zu machen."
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 79495f03d13e41c5175c857ecbb07ed0221c5fe5
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 6e99ddf519a216d0772f69127f560034ca1895d0
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 79495f03d13e41c5175c857ecbb07ed0221c5fe5
 
 # Wie Ihre Windows-Benutzer Apps erhalten
 
-Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Endbenutzer die Apps erhalten, die Sie über Microsoft Intune verteilen. 
+Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Endbenutzer die Apps erhalten, die Sie über Microsoft Intune verteilen.
 
 **Erforderliche Apps**: Apps, die vom Administrator benötigt werden und auf dem Gerät (abhängig von der Plattform) mit minimalen Benutzereingriffen installiert werden.
 
@@ -38,6 +38,6 @@ Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Endbenutzer 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

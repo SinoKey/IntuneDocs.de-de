@@ -1,6 +1,6 @@
 ---
 title: Anwendungsrollout | Microsoft Intune
-description: 
+description: "Empfehlungen für ein Rollout von Apps in Microsoft Intune in mehreren Phasen."
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+ms.sourcegitcommit: 2427768c0ca73d20140462946ba2984b7999d864
+ms.openlocfilehash: d72247936a0dec8e2e00d107c0d52c1568a92c03
 
 
 ---
@@ -44,7 +44,7 @@ Beachten Sie Folgendes:
 
 -   Stellen Sie sicher, dass das Installationsprogramm für die ausgewählte App von der App-Verteilung von Intune unterstützt wird, wie in [Hinzufügen von Apps mit Microsoft Intune](/intune/deploy-use/add-apps) beschrieben.
 
--   Stellen Sie sicher, dass die erforderlichen Komponenten für die App-Verteilung installiert sind. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->).
+-   Stellen Sie sicher, dass die erforderlichen Komponenten für die App-Verteilung installiert sind. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).--->
 
 -   Ermitteln Sie, ob der App-Typ von Intune unterstützt wird.
 
@@ -95,6 +95,6 @@ Während der Pilotphase stellen Sie die App für eine kleine Gruppe von Testbenu
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

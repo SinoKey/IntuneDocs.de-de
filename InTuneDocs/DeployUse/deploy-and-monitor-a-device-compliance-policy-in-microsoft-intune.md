@@ -1,10 +1,10 @@
 ---
-title: "Bereitstellen und Überwachen der Kompatibilitätsrichtlinie in Microsoft Intune | Microsoft Intune"
-description: 
+title: "Bereitstellen und Überwachen einer Kompatibilitätsrichtlinie | Microsoft Intune"
+description: "Befolgen Sie die schrittweisen Anweisungen in diesem Thema zum Bereitstellen und Überwachen einer Kompatibilitätsrichtlinie für Geräte."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 52da5cf6d14a5fc3ff3db6bdb07823d3bf373466
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 42d326dbe937724141213dacc133aefe5020a61d
 
 
 ---
 
-# Bereitstellen und Überwachen einer Kompatibilitätsrichtlinie für Geräte in Microsoft Intune
+# Bereitstellen und Überwachen einer in Microsoft Intune
 ## Bereitstellen einer Konformitätsrichtlinie
 Stellen Sie die von Ihnen [erstellte](create-a-device-compliance-policy-in-microsoft-intune.md) Kompatibilitätsrichtlinie für eine oder mehrere Gruppen von Benutzern oder Geräten in Ihrer Organisation bereit.
 
@@ -31,7 +31,8 @@ Stellen Sie die von Ihnen [erstellte](create-a-device-compliance-policy-in-micro
 
 Verwenden Sie die Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeitsbereichs **Richtlinie**, um Probleme mit der Richtlinie zu identifizieren, die Ihre Aufmerksamkeit erfordern. Darüber hinaus wird eine Statusübersicht im Arbeitsbereich **Dashboard** angezeigt.
 
-> [!IMPORTANT]Wenn Sie keine Konformitätsrichtlinie bereitgestellt haben und dann die Exchange-Richtlinie für bedingten Zugriff aktivieren, erhalten alle betreffenden Geräte Zugriff.
+> [!IMPORTANT]
+> Wenn Sie keine Konformitätsrichtlinie bereitgestellt haben und dann die Exchange-Richtlinie für bedingten Zugriff aktivieren, erhalten alle betreffenden Geräte Zugriff.
 
 ## Wie Intune-Richtlinienkonflikte gelöst werden
 Richtlinienkonflikte können auftreten, wenn mehrere Intune-Richtlinien auf ein Gerät angewendet werden. Wenn sich Richtlinieneinstellungen überschneiden, löst Intune Konflikte nach den folgenden Regeln:
@@ -71,6 +72,6 @@ Sie können die Konformitätsrichtlinien jetzt zusammen mit bedingten Zugriffsri
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

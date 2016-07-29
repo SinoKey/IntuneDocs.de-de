@@ -1,6 +1,6 @@
 ---
 title: "Azure-Portal für MAM-Richtlinien | Microsoft Intune"
-description: 
+description: "Erstellen Sie Verwaltungsrichtlinien für mobile Apps im Azure-Portal. Die Richtlinien, die Sie hier erstellen, können auf Geräte mit oder ohne Registrierung in Intune angewendet werden."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 519bde55966d88f516553d509af60e34a6af62a9
+ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
+ms.openlocfilehash: c466a854474c1c5ba3270f848caa51edcd5b6856
 
 
 ---
@@ -28,8 +28,10 @@ Das Azure-Portal unterstützt das Erstellen von MAM-Richtlinien für:
 - Apps, die auf Geräten ausgeführt werden, die **nicht** in einer MDM-Lösung registriert sind.
 - Apps, die auf Geräten ausgeführt werden, die **in einer MDM-Lösung von Drittanbietern registriert sind**.
 
-Wenn Sie aktuell die **Intune-Verwaltungskonsole** zum Verwalten Ihrer Geräte verwenden, können Sie mithilfe der [Intune-Verwaltungskonsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) eine MAM-Richtlinie erstellen, die Apps für die bei Intune registrierten Geräte unterstützt.
 >[!IMPORTANT]
+
+> Wenn Sie derzeit Ihre Geräte mit der [Intune-Verwaltungskonsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) verwalten, können Sie mithilfe dieser Konsole eine MAM-Richtlinie erstellen, die Apps für die bei Intune registrierten Geräte unterstützt.
+
 > Möglicherweise werden in der Intune-Verwaltungskonsole nicht alle MAM-Richtlinieneinstellungen angezeigt. Das Azure-Portal stellt die neue Verwaltungskonsole zum Erstellen von MAM-Richtlinien dar. Wenn Sie sowohl in der Intune-Verwaltungskonsole als auch im Azure-Portal MAM-Richtlinien erstellen, wird die im Azure-Portal erstellte Richtlinie auf die Apps angewendet und für die Benutzer bereitgestellt.
 
 ## Melden Sie sich beim Azure-Portal an, und passen Sie Ihre Startseite an.
@@ -59,6 +61,6 @@ Wenn Sie aktuell die **Intune-Verwaltungskonsole** zum Verwalten Ihrer Geräte v
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

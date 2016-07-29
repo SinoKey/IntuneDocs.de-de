@@ -3,7 +3,7 @@ title: "Was geschieht, wenn Sie die Registrierung Ihres Android-Geräts bei Intu
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 3bb5d0dd3fbb48a2645922b550b2ffff295bec59
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
 
 Wenn Sie die Registrierung Ihres Android-Geräts bei Intune aufheben, geschieht Folgendes:
 
--   Sie heben die Registrierung Ihres Geräts bei Intune auf, was bedeutet, dass Ihr IT-Administrator das Gerät nicht mehr verwaltet. 
+-   Sie heben die Registrierung Ihres Geräts bei Intune auf, was bedeutet, dass Ihr IT-Administrator das Gerät nicht mehr verwaltet.
 
 -   Sie verlieren den Zugriff auf Unternehmensdaten und -ressourcen.
 
@@ -35,7 +35,7 @@ Wenn Sie die Registrierung Ihres Android-Geräts bei Intune aufheben, geschieht 
 
 -   Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden, z. B. das Deaktivieren der Kamera oder die Anforderung einer bestimmten Kennwortlänge, werden unwirksam.
 
-Wenn Ihr Gerät nur für den Empfang von Unternehmens-E-Mail eingerichtet ist und Sie seine Registrierung aufheben, wird Ihr Gerät nicht mehr im Unternehmensportal angezeigt. 
+Wenn Ihr Gerät nur für den Empfang von Unternehmens-E-Mail eingerichtet ist und Sie seine Registrierung aufheben, wird Ihr Gerät nicht mehr im Unternehmensportal angezeigt.
 
 Anweisungen zum Aufheben der Registrierung finden Sie unter [Aufheben der Registrierung Ihres Geräts bei Intune über die Unternehmensportal-App](unenroll-your-device-from-intune-android.md).
 
@@ -46,6 +46,7 @@ Benötigen Sie Unterstützung? Wenden Sie sich an Ihren IT-Administrator (überp
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 
