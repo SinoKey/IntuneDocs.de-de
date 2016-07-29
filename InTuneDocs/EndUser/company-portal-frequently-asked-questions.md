@@ -3,7 +3,7 @@ title: Informationen zum Unternehmensportal | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/01/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 299d45f707602cc547fbad4186b8c857864ee5c9
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 609ed567e40cc35a6e36539ca58165f9193cec65
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 299d45f707602cc547fbad4186b8c857864ee5c9
 Über das Microsoft Windows Intune-Unternehmensportal erhalten Sie Zugriff auf Daten und Apps Ihres Unternehmens oder Ihrer Bildungseinrichtung. Sie gelangen auf zwei Arten zum Unternehmensportal:
 
 - Durch Installieren der Unternehmensportal-App auf Ihrem Gerät. In der Regel erhalten Sie die Unternehmensportal-App, indem Sie sie aus dem App Store Ihres Geräts herunterladen. Allerdings kann Ihr IT-Administrator die Unternehmensportal-App auch mit verschiedenen Methoden auf dem Gerät installieren.
-- Durch Besuchen der [Unternehmensportal-Website](http://portal.manage.microsoft.com), die Ihr IT-Administrator eingerichtet hat. 
+- Durch Besuchen der [Unternehmensportal-Website](http://portal.manage.microsoft.com), die Ihr IT-Administrator eingerichtet hat.
 
 Es gibt wenige kleinere Unterschiede zwischen der Unternehmensportal-App und der Unternehmensportal-Website, aber die meisten Aufgaben können sie sowohl in der App als auch auf der Website genauso ausführen. Einige Beispiele sind:
 
@@ -100,10 +100,6 @@ Wenn Sie Hilfe benötigen, wenden Sie sich an Ihren IT-Administrator. Die entspr
 
 
 
-
-
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

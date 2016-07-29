@@ -3,16 +3,17 @@ title: "Festlegen oder Ändern der Kennung | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 5/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
+ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: ca7c8d3f87c90b5f586af6b43d214edb3b99ce4a
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 94c2282688e73a8ab95599b1f7beb05e98eb103a
 
 
 ---
@@ -21,7 +22,7 @@ ms.openlocfilehash: ca7c8d3f87c90b5f586af6b43d214edb3b99ce4a
 
 Wenn Ihr iOS-Gerät die Kennungsrichtlinie Ihres IT-Administrators erfüllt, wird eine Meldung mit einer Kurzbeschreibung des Problems und einer Erläuterung angezeigt, was Sie tun müssen, damit Ihre Kennung die Anforderungen erfüllt.
 
-Der IT-Administrator kann mehr als eine Kennungsanforderung festlegen. Die Kennung muss ggf. eine bestimmte Anzahl von Zeichen und ggf. eine Kombination aus Zahlen und Buchstaben usw. aufweisen. Da mehr als eine Anforderung festgelegt werden kann, wird in diesen Anweisungen nur das Festlegen oder Ändern der Kennung erläutert. Auf alle möglichen Kombinationen von Anforderungen wird nicht eingegangen. 
+Der IT-Administrator kann mehr als eine Kennungsanforderung festlegen. Die Kennung muss ggf. eine bestimmte Anzahl von Zeichen und ggf. eine Kombination aus Zahlen und Buchstaben usw. aufweisen. Da mehr als eine Anforderung festgelegt werden kann, wird in diesen Anweisungen nur das Festlegen oder Ändern der Kennung erläutert. Auf alle möglichen Kombinationen von Anforderungen wird nicht eingegangen.
 
 Wenn Sie Probleme beim Einrichten einer Kennung haben, die alle Kennungsanforderungen erfüllt, bitten Sie Ihren IT-Administrator um Hilfe.
 
@@ -44,6 +45,7 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

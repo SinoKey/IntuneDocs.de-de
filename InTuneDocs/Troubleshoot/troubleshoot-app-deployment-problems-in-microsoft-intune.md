@@ -1,9 +1,9 @@
 ---
 title: Behandlung von Problemen mit der App-Bereitstellung | Microsoft Intune
-description: 
+description: "Diese Themen helfen Ihnen, Probleme mit der App-Bereitstellung mit Microsoft Intune zu lösen."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: 327c3aaf42aaf7f97e2b78d5ae38584bc13773e1
-ms.openlocfilehash: dc782a54983e4db39a029a15183834a925d0e00c
+translationtype: Human Translation
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 46cb56da1623e0de9103ce3fa60465d5d367c974
 
 
 ---
@@ -80,7 +81,7 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 
 ### Fehler: Herausgeber ist nicht vorhanden
 Sie verwenden **Anderen Softwarevertrag hinzufügen**, um einen Drittanbieter-Lizenzvertrag hinzufügen. Sie versuchen, den Herausgeber von der Seite **Anderer Softwarelizenzvertrag** hinzuzufügen. Die Seite enthält eine Liste der vorhandenen Herausgeber in alphabetischer Reihenfolge.
-Sie geben den fehlenden Herausgeber ein, erhalten jedoch die Fehlermeldung **Der Herausgeber existiert nicht**. 
+Sie geben den fehlenden Herausgeber ein, erhalten jedoch die Fehlermeldung **Der Herausgeber existiert nicht**.
 
 Dieser Fehler ist entwurfsbedingt. Intune ermöglicht die Lizenznachverfolgung nur für gängige Softwaretitel. Intune setzt voraus, dass mindestens 4 separate Konten die Software melden, bevor sie in der Lizenzierungsworkload zur Auswahl steht.
 
@@ -104,6 +105,6 @@ Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, w
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 
