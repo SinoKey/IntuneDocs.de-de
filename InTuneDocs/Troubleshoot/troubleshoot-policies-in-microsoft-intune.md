@@ -1,6 +1,6 @@
 ---
 title: Behandlung von Problemen mit Richtlinien | Microsoft Intune
-description: 
+description: Behandeln Sie Richtlinienkonfigurationsprobleme.
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
-ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 64518fc58a97c0d5060d909b60df565c19498389
 
 
 ---
@@ -47,7 +48,7 @@ Der folgende Screenshot zeigt zwei eindeutige Beispiele:
 ![Intune-Geräterichtlinie](../media/Intune-Device-Policy-v.2.jpg)
 
 > [!NOTE]
-> [!NOTE] Denken Sie daran: Wenn zwei Richtlinien mit unterschiedlichen Einschränkungsstufen für das gleiche Gerät gelten, wird in der Praxis die restriktivere Richtlinie angewendet.
+> Denken Sie daran: Wenn zwei Richtlinien mit unterschiedlichen Einschränkungsstufen für das gleiche Gerät gelten, wird in der Praxis die restriktivere Richtlinie angewendet.
 
 ## Intervalle für Richtlinienaktualisierungen und -updates
 Denken Sie daran, dass Richtlinien in regelmäßigen Abständen aktualisiert werden. Richtlinien sollten in der Regel innerhalb von 15 Minuten nach einer Änderung auf den Geräten registriert werden. Hier finden Sie ausführliche Informationen zu den regelmäßigen Intervallen der Aktualisierung von Richtlinien:
@@ -70,7 +71,7 @@ Bei Windows-Geräten ohne MDM können Richtlinienfehler in der Datei „policypl
 2.  Warten Sie 20 Minuten, bis die Clientsoftware entfernt wurde.
 
     > [!NOTE]
-    > [!NOTE] Versuchen Sie nicht, den Client über „Programme und Features“ zu entfernen.
+    > Versuchen Sie nicht, den Client über „Programme und Funktionen“ zu entfernen.
 
 3.  Geben Sie im Startmenü **UAC** ein, um die Einstellungen der Benutzerkontensteuerung zu öffnen.
 
@@ -112,6 +113,6 @@ Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, w
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 
