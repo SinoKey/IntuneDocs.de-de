@@ -3,8 +3,8 @@ title: "Von Ihrem Android-Gerät wurden die Nutzungsbeschränkungen entfernt, un
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 05/30/2016
+manager: angrobe
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 32ddb1865ac1fc8cbc0e51aaa380a5d561f8d203
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 6d4d9a1eaa326b5738aeac1f9e78b51dbd25e5c9
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 32ddb1865ac1fc8cbc0e51aaa380a5d561f8d203
 
 # Von Ihrem Android-Gerät wurden die Nutzungsbeschränkungen entfernt, und Sie können keine Verbindung herstellen
 
-Wenn Nutzungsbeschränkungen von Ihrem Android-Gerät entfernt wurden, bedeutet dies, dass auf Ihrem Gerät bestimmte Funktionen aktiviert wurden, die Unternehmensressourcen und die Sicherheit gefährden können. Wenn diese Meldung angezeigt wird, können Sie nicht auf Unternehmensressourcen zugreifen, bis das Problem behoben ist. 
+Wenn Nutzungsbeschränkungen von Ihrem Android-Gerät entfernt wurden, bedeutet dies, dass auf Ihrem Gerät bestimmte Funktionen aktiviert wurden, die Unternehmensressourcen und die Sicherheit gefährden können. Wenn diese Meldung angezeigt wird, können Sie nicht auf Unternehmensressourcen zugreifen, bis das Problem behoben ist.
 
 Wenn Sie nicht glauben, dass Sie die Nutzungsbeschränkungen absichtlich von Ihrem Gerät entfernt haben, prüfen Sie sich diese anderen Gründe, aus denen die Nutzungsbeschränkungen von Ihrem Gerät entfernt worden sein könnten:
 
@@ -36,6 +36,7 @@ Wenn Sie nicht glauben, dass Sie die Nutzungsbeschränkungen absichtlich von Ihr
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO1-->
 
 

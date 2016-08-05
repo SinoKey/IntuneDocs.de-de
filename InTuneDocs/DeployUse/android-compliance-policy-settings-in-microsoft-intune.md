@@ -3,7 +3,7 @@ title: "Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte | Mi
 description: "In diesem Thema werden die Gerätekompatibilitätsrichtlinien für Android-Geräte beschrieben."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: 38763f73ebb3e6d629c2e7ea43ad34514a8b3ad5
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: f99158924b83254efedb8663b9d6175a6b6775b1
 
 
 ---
@@ -56,9 +56,17 @@ Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folge
 ### Verschlüsselung
 - **Verschlüsselung auf mobilen Geräten vorschreiben:** Legen Sie diese Einstellung auf **Ja** fest, damit Geräte verschlüsselt werden müssen, um eine Verbindung mit Ressourcen herzustellen. Wenn Sie die Einstellung **Kennwort zum Entsperren mobiler Geräte erforderlich** konfigurieren, werden Geräte verschlüsselt.
 
-## Einstellungen für die Geräteintegrität
+## Einstellungen für Geräteintegrität und Sicherheit
 
 - **Gerät darf nicht gehackt und kein Quellgerät sein:** Wenn Sie diese Einstellung aktivieren, werden gehackte Geräte als nicht kompatibel eingestuft.
+- **Installation von Apps aus unbekannten Quellen muss auf Geräten gesperrt sein (Android 4.0 oder höher)** Um Geräte zu blockieren, bei denen die Option **Sicherheit > Unbekannte Quellen** auf dem Gerät aktiviert ist, aktivieren Sie diese Einstellung, und legen Sie **Ja** fest.  
+>[!IMPORTANT]
+>Das Sideloading von Anwendungen erfordert, dass die Einstellung **Unbekannte Quellen** aktiviert ist.  Sie sollten diese Kompatibilitätsrichtlinie nur erzwingen, wenn Sie kein Sideloading von Android-Apps auf Geräten durchführen.
+
+- **USB-Debuggen muss deaktiviert sein (Android 4.2 oder höher)**: Diese Einstellung gibt an, ob die Option für USB-Debuggen auf dem Gerät aktiviert ist.
+- **Aktivierung von „Gerät auf Sicherheitsbedrohungen überprüfen“ auf Geräten erforderlich (Android 4.2-4.4)**: Diese Einstellung gibt an, dass die Option **Apps überprüfen** auf dem Gerät aktiviert ist.
+- **Niedrigste zulässige Android-Sicherheitspatchebene (Android 6.0 und höher)**: Geben Sie mit dieser Einstellung die niedrigste Android-Patchebene an.  Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht kompatibel. Das Datum muss im folgenden Format angegeben werden: JJJJ-MM-TT.
+
 
 ## Einstellungen für Geräteeigenschaften
 - **Minimal erforderliches Betriebssystem:** Wenn ein Gerät die Anforderungen für die minimal erforderliche Betriebssystemversion nicht erfüllt, wird es als nicht kompatibel gemeldet.
@@ -68,6 +76,6 @@ Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folge
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

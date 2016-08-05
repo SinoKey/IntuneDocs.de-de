@@ -3,8 +3,8 @@ title: Erstellen und Bereitstellen von MAM-Richtlinien | Microsoft Intune
 description: "Verwenden Sie die schrittweisen Anweisungen in diesem Thema zum Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c3fe3f55b625754eac44d245d7c5065514af25c
-ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 1782d200ed26473414fbc40f554c84cb5d017d44
 
 
 ---
@@ -50,24 +50,20 @@ Wählen Sie eins der folgenden Themen aus, um eine Liste der für die Plattforme
     > [!TIP]
     > Wenn Sie das Azure-Portal zum ersten Mal verwenden, lesen Sie zuerst [Azure-Portal für MAM-Richtlinien in Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md), um sich mit dem Portal vertraut zu machen.
 
-2.  Wählen Sie auf dem Blatt **Einstellungen** **App-Richtlinie** aus.  Hiermit wird das Blatt **App-Richtlinie** geöffnet, auf dem Sie neue Richtlinien erstellen und vorhandene bearbeiten können.
-
-    ![Screenshot des Blatts „App-Richtlinie“ mit einer Liste vorhandener Richtlinien](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
-
-3.  Wählen Sie **Richtlinie hinzufügen** aus.
+2.  Wählen Sie auf dem Blatt **Einstellungen** **App-Richtlinie** aus.  Hiermit wird das Blatt **App-Richtlinie** geöffnet, auf dem Sie neue Richtlinien erstellen und vorhandene bearbeiten können. Wählen Sie **Richtlinie hinzufügen** aus.
 
     ![Screenshot des Blatts „App-Richtlinie“ mit hervorgehobener Menüoption „Richtlinie hinzufügen“ ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
-4.  Geben Sie einen Namen für die Richtlinie sowie eine kurze Beschreibung ein, und wählen Sie den Plattformtyp aus, um eine Richtlinie für iOS oder Android zu erstellen.  Sie können für jede Plattform mehr als eine Richtlinie erstellen.
+3.  Geben Sie einen Namen für die Richtlinie sowie eine kurze Beschreibung ein, und wählen Sie den Plattformtyp aus, um eine Richtlinie für iOS oder Android zu erstellen.  Sie können für jede Plattform mehr als eine Richtlinie erstellen.
 
     ![Screenshot des Blatts „Richtlinie hinzufügen“](../media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
 
-5.  Wählen Sie **Apps** aus, um das Blatt **Apps** zu öffnen, auf dem einer Liste der verfügbaren Apps angezeigt wird. Sie können eine oder mehrere Apps in der Liste auswählen, mit denen Sie die von Ihnen zu erstellende Richtlinie verknüpfen möchten. Nachdem Sie die Apps ausgewählt haben, wählen Sie die Schaltfläche **Auswählen** unten auf dem Blatt **Apps** aus, um Ihre Auswahl zu speichern.
+4.  Wählen Sie **Apps** aus, um das Blatt **Apps** zu öffnen, auf dem einer Liste der verfügbaren Apps angezeigt wird. Sie können eine oder mehrere Apps in der Liste auswählen, mit denen Sie die von Ihnen zu erstellende Richtlinie verknüpfen möchten. Nachdem Sie die Apps ausgewählt haben, wählen Sie die Schaltfläche **Auswählen** unten auf dem Blatt **Apps** aus, um Ihre Auswahl zu speichern.
 
     > [!IMPORTANT]
     > Sie müssen mindestens eine App auswählen, um eine Richtlinie erstellen zu können.
 
-6.  Wählen Sie auf dem Blatt **Richtlinie hinzufügen** **Erforderliche Einstellungen konfigurieren** aus, um das Blatt mit den Richtlinieneinstellungen zu öffnen.
+5.  Wählen Sie auf dem Blatt **Richtlinie hinzufügen** **Erforderliche Einstellungen konfigurieren** aus, um das Blatt mit den Richtlinieneinstellungen zu öffnen.
 
     Es gibt zwei Kategorien von Richtlinieneinstellungen: **Datenverlagerung** und **Zugriff**.  Richtlinien für die Datenverlagerung beziehen sich auf die Datenverschiebung in und aus Apps, während mit Zugriffsrichtlinien bestimmt wird, wie der Endbenutzer auf die Apps im beruflichen Kontext zugreift.
     Um Ihnen bei den ersten Schritten zu helfen, enthalten die Richtlinieneinstellung Standardwerte.  Sie müssen keine Änderungen vornehmen, wenn die Standardwerte Ihren Anforderungen entsprechen.
@@ -77,11 +73,11 @@ Wählen Sie eins der folgenden Themen aus, um eine Liste der für die Plattforme
 
     ![Screenshot des Blatts „Einstellungen“ zusammen mit dem Blatt „Richtlinie hinzufügen“](../media/AppManagement/AzurePortal_MAM_PolicySettings.png)
 
-7.  Wählen Sie **OK** aus, um diese Konfiguration zu speichern.  Damit befinden Sie sich wieder auf dem Blatt **Richtlinie hinzufügen** . Wählen Sie **Erstellen** aus, um die Richtlinie zu erstellen und Ihre Einstellungen zu speichern.
+6.  Wählen Sie **OK** aus, um diese Konfiguration zu speichern.  Damit befinden Sie sich wieder auf dem Blatt **Richtlinie hinzufügen** . Wählen Sie **Erstellen** aus, um die Richtlinie zu erstellen und Ihre Einstellungen zu speichern.
 
     ![Screenshot eines Blatts „Richtlinie hinzufügen“ mit konfigurierten Apps und Einstellungen](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-    ![Screenshot des Blatts „App-Richtlinie“ mit der Benachrichtigung „Richtlinie wird hinzugefügt“ ](../media/AppManagement/AzurePortal_MAM_AddingPolicyNotification.png)
+
 
 Wenn Sie mit dem Erstellen einer Richtlinie wie im vorherigen Verfahren beschrieben fertig sind, wird sie noch nicht für Benutzer bereitgestellt.  Folgen Sie den Schritten unten, um die Richtlinie bereitzustellen.
 
@@ -169,6 +165,6 @@ Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finde
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

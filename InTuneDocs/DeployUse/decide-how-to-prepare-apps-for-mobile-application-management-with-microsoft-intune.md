@@ -3,7 +3,7 @@ title: "Vorbereiten von Apps für die Verwaltung von mobilen Anwendungen | Micro
 description: "Die Informationen in diesem Thema unterstützen Sie bei der Entscheidung, wann Sie das App Wrapping-Tool und die App-SDK verwenden sollten, um Ihrer benutzerdefinierten Reihe von Branchen-Apps die Verwendung der Verwaltungsrichtlinien für mobile Apps zu ermöglichen."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 4a15279bb4460c88412ede6c8678deea72a3629f
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: d2d11cc8bed7575b2fe818c9aa5b2359a62a77e0
 
 
 ---
@@ -69,6 +69,6 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

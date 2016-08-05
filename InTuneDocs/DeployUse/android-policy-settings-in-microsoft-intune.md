@@ -1,10 +1,11 @@
 ---
+
 title: "Einstellungen für Android- und Samsung KNOX-Richtlinien | Microsoft Intune"
 description: "Erstellen Sie Richtlinien, die Einstellungen und Features auf Android-Geräten steuern, die Sie mit Intune verwalten."
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,45 +14,45 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
-ms.openlocfilehash: e983f4ac4e396a30db19e5a0d487ac0f9c25ff14
+ms.sourcegitcommit: 8465ab2ead21b825141c1aa6e77c02a9b7061a66
+ms.openlocfilehash: 5e7ba0d4546c13106e32359c9578a6f0a49d6de7
 
 
 ---
 
 # Einstellungen für Android- und Samsung KNOX-Richtlinien in Microsoft Intune
 
-Intune bietet eine Vielzahl von integrierten allgemeinen Einstellungen, die Sie auf Android-Geräten konfigurieren können. Darüber hinaus können Sie OMA-URI-Werte angeben, um benutzerdefinierte Einstellungen zu erstellen, die über Intune nicht verfügbar sind.
+Intune bietet eine Vielzahl von integrierten allgemeinen Einstellungen, die Sie auf Android-Geräten konfigurieren können. Darüber hinaus können Sie OMA-URI-Werte (Open Mobile Alliance Uniform Resource Identifier) angeben, um benutzerdefinierte Einstellungen zu erstellen, die über Intune nicht verfügbar sind.
 
 ## Allgemeine Konfigurationsrichtlinie
 
-Verwenden Sie die allgemeine **Android-Konfigurationsrichtlinie** von Microsoft Intune zum Konfigurieren von Einstellungen für:
+Verwenden Sie die allgemeine **Android-Konfigurationsrichtlinie** von Intune zum Konfigurieren von Einstellungen für:
 
--   **Sicherheitseinstellungen für mobile Geräte** – Treffen Sie in einer Liste mit vordefinierten Einstellungen eine Auswahl, mit denen Sie eine Reihe von Features und Funktionen auf dem Gerät steuern können.
+-   **Sicherheitseinstellungen für mobile Geräte**: Treffen Sie in einer Liste mit vordefinierten Einstellungen eine Auswahl, mit denen Sie eine Reihe von Features und Funktionen auf dem Gerät steuern können.
 
--   **Kiosk-Modus** (nur für Samsung KNOX-Geräte) – Sperren Sie ein Gerät, sodass nur bestimmte Features ausgeführt werden können. Beispielsweise können Sie festlegen, dass auf einem Gerät nur eine von Ihnen angegebene verwaltete App ausgeführt werden kann, oder Sie können die Lautstärkeregler eines Geräts deaktivieren. Diese Einstellungen können für ein Demomodell eines Geräts oder ein Gerät nützlich sein, das nur eine bestimmte Funktion ausführen soll, wie z. B. ein Point-of-Sale-Gerät.
+-   **Kiosk-Modus** (nur für Samsung KNOX-Geräte): Sperren Sie ein Gerät, sodass nur bestimmte Features ausgeführt werden können. Beispielsweise können Sie festlegen, dass auf einem Gerät nur eine von Ihnen angegebene verwaltete App ausgeführt werden kann, oder Sie können die Lautstärkeregler eines Geräts deaktivieren. Diese Einstellungen können für ein Demomodell eines Geräts oder ein Gerät nützlich sein, das nur eine bestimmte Funktion ausführen soll, z. B. ein Point-of-Sale-Gerät.
 
--   **Kompatible und nicht kompatible Apps**: Geben Sie eine Liste von Apps an, die in Ihrem Unternehmen kompatibel bzw. nicht kompatibel sind. Auf Android- und iOS-Geräten können Sie mit dem **Bericht über nicht kompatible Apps** überprüfen, ob die vom Benutzer installierten Apps zu den als von Ihnen kompatibel angegebenen Apps gehören (die Installation der App kann jedoch nicht blockiert werden).
+-   **Kompatible und nicht kompatible Apps**: Geben Sie eine Liste von Apps an, die in Ihrem Unternehmen kompatibel bzw. nicht kompatibel sind. Auf Android- und iOS-Geräten können Sie mit dem **Bericht über nicht kompatible Apps** überprüfen, ob die vom Benutzer installierten Apps zu den als von Ihnen kompatibel angegebenen Apps gehören. Die Installation der App kann jedoch nicht durch den Bericht blockiert werden.
 
 > [!TIP]
-> Sie können Bestimmungen für Benutzer konfigurieren, um sicherzustellen, dass sie bestätigen, dass Apps auf ihrem Gerät, einschließlich persönlicher Apps, ausgewertet werden und dass nicht kompatible Anwendungen entweder blockiert oder als nicht kompatibel gemeldet werden. Benutzer müssen diese Bestimmungen akzeptieren, bevor sie ihr Gerät registrieren und Apps über das Unternehmensportal abrufen können. Weitere Informationen zur Verwendung von Geschäftsbedingungen finden Sie unter [Einstellungen für Geschäftsbedingungensrichtlinien in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> Sie können Bestimmungen für Benutzer konfigurieren, um sicherzustellen, dass sie bestätigen, dass alle Apps auf ihrem Gerät, einschließlich persönlicher Apps, ausgewertet werden und dass nicht kompatible Anwendungen entweder blockiert oder als nicht kompatibel gemeldet werden. Benutzer müssen diese Bestimmungen akzeptieren, bevor sie ihr Gerät registrieren und Apps über das Unternehmensportal abrufen können. Weitere Informationen zur Verwendung von Geschäftsbedingungen finden Sie unter [Einstellungen für Geschäftsbedingungensrichtlinien in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
-Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie sie ggf. mithilfe einer benutzerdefinierten Android-Richtlinie erstellen, die Ihnen das Steuern des Geräts mithilfe von OMA-URI-Einstellungen erlaubt. Weitere Informationen finden Sie weiter unten in diesem Thema unter **Benutzerdefinierte Richtlinieneinstellungen**.
+Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie sie ggf. mithilfe einer benutzerdefinierten Android-Richtlinie erstellen, die Ihnen das Steuern des Geräts mithilfe von OMA-URI-Einstellungen erlaubt. Weitere Informationen finden Sie weiter unten in diesem Thema unter [Benutzerdefinierte Richtlinieneinstellungen](#custom-policy-settings).
 
 ### Kennworteinstellungen
 
 |Name der Einstellung|Details|Android 4.0+|Samsung KNOX|
 |----------------|-|----------------|----------------|
-|**Anfordern eines Kennworts zum Entsperren mobiler Geräte**|Auf unterstützten Geräten ein Kennwort erfordern.|Ja|Ja|
-|**Minimale Kennwortlänge**|Die Mindestlänge für das Kennwort.|Ja|Ja|
-|**Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird**|Setzt das Gerät zurück, wenn diese Anzahl von Anmeldeversuchen fehlschlägt.|Ja|Ja|
-|**Minuten der Inaktivität, bevor der Bildschirm ausgeschaltet wird**|Geben Sie die Anzahl der Minuten an, bevor das Gerät automatisch gesperrt wird.|Ja|Ja|
-|**Kennwortablauf (Tage)**|Die Anzahl der Tage, bevor ein Kennwort geändert werden muss.|Ja|Ja|
-|**Kennwortverlauf speichern**|Diese Anzahl zuvor verwendeter Kennwörter speichern.|Ja|Ja|
-|**Kennwortverlauf speichern** – **Wiederverwendung vorheriger Kennwörter verhindern**|Verhindert die Wiederverwendung zuvor verwendeter Kennwörter.|Ja|Ja|
-|**Kennwortqualität**|Wählen Sie den erforderlichen Grad der Kennwortkomplexität aus. Wählen Sie zudem aus, ob biometrische Geräte zulässig sind.|Ja|Ja|
+|**Anfordern eines Kennworts zum Entsperren mobiler Geräte**|Gibt an, ob auf unterstützten Geräten ein Kennwort erforderlich ist.|Ja|Ja|
+|**Minimale Kennwortlänge**|Gibt die Mindestlänge für das Kennwort an.|Ja|Ja|
+|**Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird**|Gibt die Anzahl zulässiger Anmeldefehler an, bevor das Gerät zurückgesetzt wird.|Ja|Ja|
+|**Minuten der Inaktivität, bevor der Bildschirm ausgeschaltet wird**|Gibt die Anzahl der inaktiven Minuten an, bevor das Gerät automatisch gesperrt wird.|Ja|Ja|
+|**Kennwortablauf (Tage)**|Gibt die Anzahl der Tage an, bevor das Kennwort geändert werden muss.|Ja|Ja|
+|**Kennwortverlauf speichern**|Gibt die Anzahl der zuvor bereits verwendeten Kennwörter an, die gespeichert werden sollen.|Ja|Ja|
+|**Kennwortverlauf speichern** - **Wiederverwendung vorheriger Kennwörter verhindern**|Verhindert die Wiederverwendung vorheriger Kennwörter.|Ja|Ja|
+|**Kennwortqualität**|Gibt den erforderlichen Grad der Kennwortkomplexität an. Zudem wird angegeben, ob biometrische Geräte zulässig sind.|Ja|Ja|
 |**Fingerabdruckentsperrung zulassen**|Lässt das Entsperren des Geräts mittels Fingerabdruck zu.|Nein|Ja|
-|**Zulassen von Smart Lock und anderen Vertrauens-Agents**<br>(Android 5 und höher)|Ermöglicht Ihnen die Steuerung der Smart Lock-Funktion auf kompatiblen Android-Geräten. Diese Telefonfunktion wird manchmal als Vertrauens-Agent bezeichnet und ermöglicht Ihnen das Deaktivieren oder Umgehen des Kennworts für den Gerätesperrbildschirm, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet, z. B. wenn es mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet. Mit dieser Einstellung können Sie verhindern, dass Endbenutzer Smart Lock konfigurieren.|Ja|Nein|
+|**Zulassen von Smart Lock und anderen Vertrauens-Agents**<br>(Android 5 und höher)|Ermöglicht Ihnen die Steuerung der Smart Lock-Funktion auf kompatiblen Android-Geräten. Diese Telefonfunktion wird manchmal als Vertrauens-Agent bezeichnet und ermöglicht Ihnen das Deaktivieren oder Umgehen des Kennworts für den Gerätesperrbildschirm, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet, (wenn es z. B. mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet). Mit dieser Einstellung können Sie verhindern, dass Benutzer Smart Lock konfigurieren.|Ja|Nein|
 
 ### Verschlüsselungseinstellungen
 
@@ -84,11 +85,11 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 
 |Name der Einstellung|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
-|**Webbrowser zulassen**|Gibt an, ob der Webbrowser des Geräts verwendet werden darf.|Nein|Ja|
-|**AutoAusfüllen zulassen**|Hiermit wird die Verwendung der AutoAusfüllen-Funktion des Webbrowsers zugelassen.|Nein|Ja|
+|**Webbrowser zulassen**|Gibt an, ob der Standardwebbrowser des Geräts verwendet werden darf.|Nein|Ja|
+|**AutoAusfüllen zulassen**|Ermöglicht die Verwendung der AutoAusfüllen-Funktion des Webbrowsers.|Nein|Ja|
 |**Popupblocker zulassen**|Hiermit wird die Verwendung des Popupblockers im Webbrowser zugelassen.|Nein|Ja|
-|**Cookies zulassen**|Hiermit wird die Verwendung von Cookies durch den Webbrowser des Geräts zugelassen.|Nein|Ja|
-|**Active Scripting zulassen**|Hiermit wird die Verwendung von Active Scripting durch den Webbrowser des Geräts zugelassen.|Nein|Ja|
+|**Cookies zulassen**|Ermöglicht die Verwendung von Cookies durch den Webbrowser des Geräts.|Nein|Ja|
+|**Active Scripting zulassen**|Ermöglicht die Verwendung von Active Scripting durch den Webbrowser des Geräts.|Nein|Ja|
 
 ### Anwendungseinstellungen – Apps
 
@@ -113,9 +114,9 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 
 |Name der Einstellung|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
-|**Sprachroaming zulassen**|Zulassen des Sprachroamings, wenn das Gerät in einem Mobilfunknetz verwendet wird.|Nein|Ja|
-|**Datenroaming zulassen**|Zulassen des Datenroamings, wenn das Gerät in einem Mobilfunknetz verwendet wird.|Nein|Ja|
-|**SMS/MMS-Messaging zulassen**|Zulassen der Verwendung von SMS- und MMS-Nachrichten auf dem Gerät.|Nein|Ja|
+|**Sprachroaming zulassen**|Ermöglicht das Sprachroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.|Nein|Ja|
+|**Datenroaming zulassen**|Ermöglicht das Datenroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.|Nein|Ja|
+|**SMS/MMS-Messaging zulassen**|Ermöglicht die Verwendung von SMS- und MMS-Nachrichten auf dem Gerät.|Nein|Ja|
 
 ### Einstellungen für Gerätefunktionen - Funktionen
 
@@ -123,21 +124,21 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 |----------------|----------------|----------------|
 |**Sprach-Assistent zulassen**|Zulassen der Verwendung von Sprach-Assistent-Software auf dem Gerät.|Nein|Ja|
 |**Sprachwahl zulassen**|Aktiviert oder deaktiviert die Verwendung des Features „Sprachwahlverfahren“ auf dem Gerät.|Nein|Ja|
-|**Kopieren und Einfügen zulassen**|Zulassen von Kopier- und Einfügefunktionen auf dem Gerät.|Nein|Ja|
-|**Freigabe der Zwischenablage zwischen Anwendungen zulassen**|Verwenden Sie die Zwischenablage zum Kopieren und Einfügen zwischen Apps.|Nein|Ja|
-|**YouTube zulassen**|Zulassen der Verwendung von YouTube auf dem Gerät.|Nein|Ja|
+|**Kopieren und Einfügen zulassen**|Ermöglicht Kopier- und Einfügefunktionen auf dem Gerät.|Nein|Ja|
+|**Freigabe der Zwischenablage zwischen Anwendungen zulassen**|Ermöglicht die Verwendung der Zwischenablage zum Kopieren und Einfügen zwischen Apps.|Nein|Ja|
+|**YouTube zulassen**|Ermöglicht die Verwendung von YouTube auf dem Gerät.|Nein|Ja|
 
 ### Einstellungen für kompatible und nicht kompatible Anwendungen
 Geben Sie in der Liste der **kompatiblen &amp; nicht kompatiblen Apps** eine Liste kompatibler oder nicht kompatibler Apps mit den folgenden Informationen ein:
 
 > [!NOTE]
-> Eine einzelne Richtlinie kann nur eine Liste kompatibler oder eine Liste nicht kompatibler Apps enthalten. Sie können nicht beide Typen in derselben Richtlinie angeben.
+> Eine einzelne Richtlinie kann nur eine Liste kompatibler Apps oder eine Liste nicht kompatibler Apps enthalten. Sie können nicht beide Typen in derselben Richtlinie angeben.
 
 |Name der Einstellung|Details|
 |----------------|--------------------|
 |**Nichtkompatibilität melden, wenn Benutzer die aufgelisteten Apps installieren**|Listet die Apps auf, die nicht von Intune verwaltet werden und die Benutzer nicht installieren und ausführen sollen. Wenn Benutzer diese Apps installieren, werden sie in den Berichten über nicht richtlinienkonforme Apps aufgeführt.|
-|**Nichtkompatibilität nicht melden, wenn Benutzer die aufgelisteten Apps installieren**|Listet die Apps auf, die in Ihrem Unternehmen zulässig sein sollen. Um die Kompatibilität zu gewährleisten, dürfen Benutzer keine Apps installieren, die in dieser Liste nicht aufgeführt sind. Apps, die von Intune verwaltet werden, sind automatisch zugelassen.|
-|**Hinzufügen**|Fügt eine App zur ausgewählten Liste hinzu. Geben Sie einen Namen Ihrer Wahl sowie die URL zur App im App-Store und optional den Herausgeber der App an.<br /><br />Informationen finden Sie unter „Angeben von URLs zu App Stores“ weiter unten in diesem Thema.|
+|**Nichtkompatibilität nicht melden, wenn Benutzer die aufgelisteten Apps installieren**|Listet die Apps auf, die zulässig sein sollen. Um die Kompatibilität zu gewährleisten, dürfen Benutzer keine Apps installieren, die in dieser Liste nicht aufgeführt sind. Apps, die von Intune verwaltet werden, sind automatisch zugelassen.|
+|**Hinzufügen**|Fügt eine App zur ausgewählten Liste hinzu. Geben Sie den Namen der App, den Herausgeber der App (optional) sowie die URL zur App im App-Store an.<br /><br />Weitere Informationen finden Sie unter [Angeben von URLs zu App Stores](#specify-urls-to-app-stores) weiter unten in diesem Thema.|
 |**Anwendungen importieren**|Importiert eine Liste von Apps, die Sie in einer CSV-Datei angegeben haben. Verwenden Sie in der Datei das Format Anwendungsname, Herausgeber und App-URL.|
 |**Bearbeiten**|Ermöglicht Ihnen das Bearbeiten von Name, Herausgeber und URL der ausgewählten App.|
 |**Löschen**|Löscht die ausgewählte App aus der Liste.|
@@ -147,7 +148,7 @@ Geben Sie die folgenden Einstellungen für **Samsung KNOX-Geräte** an:
 
 |Name der Einstellung|Details|
 |----------------|--------------------|
-|**Wählen Sie eine verwalteten App aus, die ausgeführt werden darf, während sich das Gerät im Kiosk-Modus befindet**|Wählen Sie **Durchsuchen**, und wählen Sie dann die verwaltete App aus, die ausgeführt werden darf, wenn sich das Gerät im Kioskmodus befindet (Apps, die als Link zum Store angegeben sind, werden derzeit nicht unterstützt). Andere Apps dürfen auf dem Gerät nicht ausgeführt werden.|
+|**Wählen Sie eine verwalteten App aus, die ausgeführt werden kann, während sich das Gerät im Kioskmodus befindet**|Wählen Sie **Durchsuchen**, und wählen Sie dann die verwaltete App aus, die ausgeführt werden kann, wenn sich das Gerät im Kioskmodus befindet (Apps, die als Link zum Store angegeben sind, werden derzeit nicht unterstützt). Andere Apps dürfen auf dem Gerät nicht ausgeführt werden.|
 |**Lautstärkeregler zulassen**|Aktiviert oder deaktiviert die Verwendung der Lautstärkeregler am Gerät.|
 |**Schaltfläche für Standby und Aktivieren zulassen**|Aktiviert oder deaktiviert die Taste für Standby/Aktivierung des Bildschirms am Gerät.|
 
@@ -160,19 +161,19 @@ Im **Bericht über nicht kompatible Apps** können Sie sich über die Konformit�
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Berichte** &gt; **Bericht über nicht kompatible Apps**.
 
-2.  Wählen Sie die Gerätegruppen aus, die Sie überprüfen möchten, geben Sie an, ob Sie nach kompatiblen und/oder nicht kompatiblen Apps suchen möchten, und wählen Sie dann **Bericht anzeigen**.
+2.  Wählen Sie die Gerätegruppen aus, die Sie überprüfen möchten. Wählen Sie dann aus, ob Sie auf kompatible und/oder nicht kompatible Apps prüfen möchten. Wählen Sie abschließend **Bericht anzeigen** aus.
 
 #### Angeben von URLs zu App-Stores
-Verwenden Sie zum Festlegen einer App-URL in der Liste konformer und nicht konformer Apps das folgende Format:
+Verwenden Sie zum Festlegen einer App-URL in der Liste kompatibler und nicht kompatibler Apps die folgenden Schritte:
 
 Suchen Sie im [Apps-Bereich von Google Play](https://play.google.com/store/apps) nach der App, die Sie verwenden möchten.
 
-Öffnen Sie die Installationsseite für die App, und kopieren Sie die URL in die Zwischenablage. Jetzt können Sie diese als URL in der Liste mit kompatiblen oder nicht kompatiblen Apps verwenden.
+Öffnen Sie die Installationsseite für die App, und kopieren Sie dann die URL in die Zwischenablage. Jetzt können Sie diese als URL in der Liste mit kompatiblen oder nicht kompatiblen Apps verwenden.
 
-**Beispiel**: Suchen Sie in Google Play nach Microsoft Office Mobile. Die URL, die Sie verwenden, ist **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Beispiel: Suchen Sie in Google Play nach Microsoft Office Mobile. Die URL, die Sie verwenden, ist **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
 ## Benutzerdefinierte Richtlinieneinstellungen
-Stellen Sie mithilfe der **benutzerdefinierten Android-Konfigurationsrichtlinie** von Microsoft Intune die Einstellungen für OMA-URI (Open Mobile Alliance Uniform Resource Identifier) bereit, um Features auf Android-Geräten zu steuern. Dies sind die Standardeinstellungen, die viele Hersteller von mobilen Geräten verwenden, um Gerätefunktionen zu steuern.
+Stellen Sie mithilfe der **benutzerdefinierten Android-Konfigurationsrichtlinie** von Microsoft Intune die Einstellungen für OMA-URI bereit, um Features auf Android-Geräten zu steuern. Dies sind die Standardeinstellungen, die viele Hersteller von mobilen Geräten verwenden, um Gerätefunktionen zu steuern.
 
 Diese Funktion soll es Ihnen ermöglichen, Android-Einstellungen bereitzustellen, die nicht mit Intune-Richtlinien konfigurierbar sind.
 
@@ -192,70 +193,20 @@ Diese Funktion soll es Ihnen ermöglichen, Android-Einstellungen bereitzustellen
     |--------|--------------------|
     |**Name der Einstellung**|Geben Sie einen eindeutigen Namen für die OMA-URI-Einstellung ein, damit Sie sie in der Liste der Einstellungen leichter identifizieren können.|
     |**Beschreibung der Einstellung**|Geben Sie eine Beschreibung ein, die einen Überblick über die Einstellung bietet, und andere relevante Informationen, die Ihnen die Suche danach erleichtern.|
-    |**Datentyp**|Wählen Sie den Datumstyp aus, in dem Sie diese OMA-URI-Einstellung angeben. Wählen Sie aus **Zeichenfolge, Zeichenfolge (XML), Datum und Uhrzeit, ganze Zahl, Gleitkomma** oder **Boolesch** aus.|
+    |**Datentyp**|Wählen Sie den Datentyp aus, in dem Sie diese OMA-URI-Einstellung angeben. Wählen Sie aus **Zeichenfolge, Zeichenfolge (XML), Datum und Uhrzeit, ganze Zahl, Gleitkomma** oder **Boolesch** aus.|
     |**OMA-URI (Groß-/Kleinschreibung beachten)**|Geben Sie den OMA-URI an, für den Sie eine Einstellung festlegen möchten.|
     |**Wert**|Geben Sie den mit der zuvor festgelegten OMA-URI-Einstellung zu verknüpfenden Wert an.|
 
-### Beispiel: Konfigurieren eines benutzerdefinierten WLAN-Profils mit einem vorinstallierten Schlüssel
-Obwohl Intune WLAN-Profile für Android-Geräte unterstützt, ist derzeit das Einbeziehen eines vorinstallierten Schlüssels in die Konfiguration nicht möglich. In diesem Beispiel erfahren Sie, wie Sie eine benutzerdefinierte Android-Richtlinie erstellen, die ein WLAN-Profil mit einem vorinstallierten Schlüssel auf dem Android-Gerät erstellt.
+### Beispiele
 
-#### So erstellen Sie ein WLAN-Profil mit einem vorinstallierten Schlüssel
-
-1.  Stellen Sie sicher, dass die Benutzer die neueste Version der [Intune-Unternehmensportal-App](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) für Android verwenden.
-
-2.  Erstellen Sie eine benutzerdefinierte Android-Richtlinie, und fügen Sie die folgende Einstellung hinzu:
-
-|Name der Einstellung|Details|
-|----------------|--------------------|
-|**Name der Einstellung**|Geben Sie einen Namen Ihrer Wahl für die Einstellung ein.|
-|**Beschreibung der Einstellung**|Geben Sie eine Beschreibung für die Einstellung ein.|
-|**Datentyp**|Wählen Sie **Zeichenfolge (XML)** aus.|
-|**OMA-URI**|Geben Sie Folgendes ein: ./Vendor/MSFT/WiFi/Profile/*&lt;Ihr WLAN-Profil&gt;*/Settings|
-
-3.  Kopieren Sie für **Wert** den folgenden XML-Code und fügen Sie ihn dann ein:
-
-    ```
-    <!--
-    WEP Wifi Profile
-                    <Name of wifi profile> = Name of profile 
-                    <SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-                    <WEP password> = Password to connect to the network
-    -->
-    <WLANProfile 
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <name><SSID of wifi profile></name>
-        </SSID>
-      </SSIDConfig>
-      <connectionType>ESS</connectionType>
-      <MSM>
-        <security>
-          <authEncryption>
-            <authentication>open</authentication>
-            <encryption>WEP</encryption>
-            <useOneX>false</useOneX>
-          </authEncryption>
-          <sharedKey>
-            <keyType>networkKey</keyType>
-            <protected>false</protected>
-            <keyMaterial><WEP password></keyMaterial>
-          </sharedKey>
-          <keyIndex>0</keyIndex>
-        </security>
-      </MSM>
-    </WLANProfile>
-    ```
-
-4.  Wenn Sie fertig sind, speichern Sie die Richtlinie und stellen sie den erforderlichen Android-Geräten bereit. Das neue WLAN-Profil wird in der Liste der Verbindungen auf dem Gerät angezeigt.
+- [Erstellen eines WLAN-Profils über einen vorinstallierten Schlüssel](pre-shared-key-wi-fi-profile.md)
+- [Verwenden einer benutzerdefinierten Richtlinie zum Erstellen eines Profils für ein App-bezogenes VPN für Android-Geräte](per-app-vpn-for-android-pulse-secure.md)
 
 ### Weitere Informationen:
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 
