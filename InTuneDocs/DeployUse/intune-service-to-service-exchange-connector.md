@@ -1,10 +1,10 @@
 ---
-title: "Exchange-Connector für Hosted Exchange | Microsoft Intune"
+title: "Exchange-Connector für Exchange Online | Microsoft Intune"
 description: "Verbinden Sie Intune mit dem Office 365-Exchange-Dienst, um die Verwaltung mobiler Geräte (Mobile Device Management, MDM) mit Exchange ActiveSync zu unterstützen."
 keywords: 
 author: NathBarn
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,24 +13,24 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 63697222f024169d9450b9f4fea8c666353e72cc
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 1aabf820170483eacc83bec5e2b275e84dc07ffd
 
 
 ---
 
 # Konfigurieren des Microsoft Intune Service to Service Connector für Hosted Exchange
 
-Anhand dieser Informationen können Sie Microsoft Intune und den von Office 365 gehosteten Exchange Online-Dienst verbinden.
+Anhand dieser Informationen können Sie Microsoft Intune und Exchange Online oder den neuen Exchange Online Dedicated-Dienst verbinden. Wenn Sie herausfinden möchten, ob es sich bei Ihrer Exchange Online Dedicated-Umgebung um die **neue** oder die **ältere** Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer. Intune unterstützt pro Abonnement nur eine Exchange Connector-Verbindung eines beliebigen Typs.
 
 ## Anforderungen an Service to Service Connector
-Der **Service to Service Connector** unterstützt nur cloudbasiertes Exchange und weist keine Anforderungen an lokale Infrastruktur auf.
+Der **Service to Service Connector** unterstützt nur Exchange Online oder das neue Exchange Cloud Dedicated und stellt keine Anforderungen an die lokale Infrastruktur.
 
 |Anforderungen|Weitere Informationen|
 |---------------|--------------------|
-|Konfiguration und Ausführung von gehostetem Exchange|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
+|Konfiguration und Ausführung von Exchange Online|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |Autorität für die Verwaltung mobiler Geräte| [Festlegen von Microsoft Intune als Autorität für die Verwaltung mobiler Geräte](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
-|Microsoft Exchange-Version|Sie müssen über ein Office 365-Abonnement mit einem Exchange Server 2013-Mandanten (oder höher) verfügen. Solange der Mandant Exchange Server 2013 (oder höher) ist, wird in der gleichen Umgebung Exchange Server 2010 vom Connector unterstützt.|
+|Microsoft Exchange-Version|Exchange Online oder Exchange Online Dedicated (neu)|
 |Active Directory-Synchronisierung|Bevor Sie den Intune-Connector verwenden können, müssen Sie die [Active Directory-Synchronisierung einrichten](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), damit Ihre lokalen Benutzer und Sicherheitsgruppen mit Ihrer Instanz von Azure Active Directory synchronisiert werden.|
 
 ### Anforderungen an Exchange-Cmdlets
@@ -54,7 +54,7 @@ Sie müssen in Exchange Online ein Benutzerkonto erstellen, das vom Intune Excha
 3.  Wählen Sie auf der Seite **Exchange-Verbindung einrichten** die Option **Dienst für Service Connector einrichten** aus.
 
 
-Der Service to Service Connector wird automatisch konfiguriert und mit Ihrer gehosteten Exchange-Umgebung synchronisiert.
+Der Service to Service Connector wird automatisch konfiguriert und mit Ihrer Exchange Online- oder neuen Exchange Online Dedicated-Umgebung synchronisiert.
 
 ## Überprüfen der Exchange-Verbindung
 
@@ -64,6 +64,6 @@ Sie können auch die Uhrzeit und das Datum des letzten erfolgreichen Synchronisa
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

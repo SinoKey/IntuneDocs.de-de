@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 777b87328e12b4d6b3de1b338fe802d92c1138a1
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
 
 
 ---
@@ -34,9 +34,11 @@ Wenn Sie Ihr Telefon jemals abmelden, bleibt es verschlüsselt.
 3.  Folgen Sie den Anweisungen auf dem Bildschirm. Während der Verschlüsselung startet Ihr Gerät möglicherweise mehrmals neu.
 
 ### Vorgehensweise bei Problemen
-**Problem**: Sie haben Ihr Gerät bereits verschlüsselt, und Sie stellen eines der folgenden Probleme fest: -  Die Schaltfläche „Verschlüsselung“ ist deaktiviert.
--  Eine Meldung wird angezeigt, dass die Verschlüsselung noch ausgeführt werden muss.
--  Es treten Fehler beim Nutzen der Unternehmensportal-App auf.
+**Problem**: Sie haben Ihr Gerät bereits verschlüsselt und stellen eines der folgenden Probleme fest:
+
+- Die Schaltfläche „Verschlüsselung“ ist deaktiviert.
+- Eine Meldung wird angezeigt, dass die Verschlüsselung noch ausgeführt werden muss.
+- Es treten Fehler beim Nutzen der Unternehmensportal-App auf.
 
 **Vorgehensweise**: Stellen Sie sicher, dass Sie auf Ihrem Gerät eine PIN oder ein Kennwort festgelegt haben.
 
@@ -47,6 +49,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

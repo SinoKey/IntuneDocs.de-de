@@ -1,33 +1,33 @@
 ---
-title: Verwalten von Windows-PCs mit dem Intune-PC-Client | Microsoft Intune
-description: 
+title: Verwalten von Windows-PCs mit Intune-Client | Microsoft Intune
+description: Verwalten Sie Windows-PCs durch die Installation der Intune-Clientsoftware.
 keywords: 
 author: nathbarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e09381bbcf073baa67a431546059272e629b5423
-ms.openlocfilehash: d22714f7b6eda1632892785568463fc5bafce8d0
+ms.sourcegitcommit: aa1d6105a5be9c329c75681857a9d6e553088b65
+ms.openlocfilehash: be45b2ffb99eb75e71c0d591fc84089b83735905
 
 
 ---
 
 # Verwalten von Windows-PCs mit der Intune-PC-Clientsoftware
-Anstatt [Windows-PCs als mobile Geräte zu registrieren](set-up-windows-device-management-with-microsoft-intune.md), können Sie diese PCs auch verwalten, indem Sie die Intune-Clientsoftware installieren. 
+Anstatt [Windows-PCs als mobile Geräte zu registrieren](set-up-windows-device-management-with-microsoft-intune.md), können Sie diese PCs auch verwalten, indem Sie die Intune-Clientsoftware installieren.
 
 Intune verwalten Windows-PCs mithilfe von Richtlinien, ähnlich wie die Gruppenrichtlinienobjekte (Group Policy Objects, GPOs) der Windows Server Active Directory-Domänendienste (Active Directory Domain Services, AD DS). Wenn Sie Computer in einer Active Directory-Domäne mit Intune verwalten, [müssen Sie sicherstellen, dass Intune-Richtlinien nicht zu Konflikten mit GPOs führen](resolve-gpo-and-microsoft-intune-policy-conflicts.md), die für Ihre Organisation eingerichtet sind.
 
 Der Intune-Client verwaltet Softwareupdates, Windows-Firewall und Endpoint Protection und unterstützt auf diese Weise [Richtlinien zum Schutz von PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md). Allerdings können auf PCs, die mit dem Intune-Client verwaltet werden, keine anderen Intune-Richtlinien angewendet werden.
 
 > [!NOTE]
-> Geräte, auf denen Windows 8.1 ausgeführt wird, können unter Verwendung des Intune-Clients verwaltet oder als mobile Geräte registriert werden. Die folgenden Informationen gelten für Computer, auf denen der Intune-Client ausgeführt wird. Die Installation des Intune-PC-Clients und die gleichzeitige Registrierung des Windows-Geräts für die Verwaltung mobiler Geräte werden nicht unterstützt.
+> Geräte, auf denen Windows 8.1 oder höher ausgeführt wird, können unter Verwendung des Intune-Clients verwaltet oder als mobile Geräte registriert werden. Die folgenden Informationen gelten für Computer, auf denen der Intune-Client ausgeführt wird. Die Installation des Intune-PC-Clients und die gleichzeitige Registrierung des Windows-Geräts für die Verwaltung mobiler Geräte werden nicht unterstützt.
 
 ## Anforderungen für die Intune-PC-Clientverwaltung
 
@@ -86,6 +86,6 @@ Der Intune-Client-Agent wird in der Regel im Hintergrund ausgeführt – Benutze
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

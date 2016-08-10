@@ -3,8 +3,8 @@ title: "Exchange-Connector für lokales EAS | Microsoft Intune"
 description: "Verwenden Sie den Connector, um die Kommunikation zwischen der Intune-Verwaltungskonsole und der lokalen Exchange Server-Instanz für Exchange ActiveSync-MDM zu ermöglichen."
 keywords: 
 author: NathBarn
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 # Einrichten des lokalen Exchange-Connectors
 
 
-Zum Einrichten einer Verbindung, über die Microsoft Intune mit dem Exchange-Server kommunizieren kann, auf dem die Postfächer der mobilen Geräte gehostet werden, müssen Sie den lokalen Connector über die Intune-Administratorkonsole herunterladen und konfigurieren.
+Zum Einrichten einer Verbindung, über die Microsoft Intune mit dem Exchange-Server kommunizieren kann, auf dem die Postfächer der mobilen Geräte gehostet werden, müssen Sie den lokalen Connector über die Intune-Administratorkonsole herunterladen und konfigurieren. Intune unterstützt pro Abonnement nur eine Exchange Connector-Verbindung eines beliebigen Typs.
 
 ## Anforderungen an den lokalen Connector
 In der folgenden Tabelle finden Sie die Anforderungen an den Computer, auf dem Sie den lokalen Exchange-Connector installieren.
@@ -30,7 +30,7 @@ In der folgenden Tabelle finden Sie die Anforderungen an den Computer, auf dem S
 |Anforderungen|Weitere Informationen|
 |---------------|--------------------|
 |Betriebssysteme|Intune unterstützt den lokalen Exchange-Connector auf Computern, auf denen eine beliebige Edition von Windows Server 2008 SP2 (64 Bit), Windows Server 2008 R2, Windows Server 2012 oder Windows Server 2012 R2 ausgeführt wird.<br /><br />Auf Server Core-Installationen wird der Connector nicht unterstützt.|
-|Microsoft Exchange-Version|Der lokale Connector erfordert mindestens Microsoft Exchange 2010 SP1.|
+|Microsoft Exchange-Version|Der lokale Connector erfordert mindestens Microsoft Exchange 2010 SP1 oder die Exchange Online Dedicated-Legacyumgebung. Wenn Sie herausfinden möchten, ob es sich bei Ihrer Exchange Online Dedicated-Umgebung um die **neue** oder die **ältere** Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer.|
 |Autorität für die Verwaltung mobiler Geräte| [Festlegen von Intune als Autorität für die Verwaltung mobiler Geräte](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).|
 |Hardware|Der Computer, auf dem Sie den Connector installieren, erfordert eine CPU mit 1,6 GHz und 2 GB RAM sowie mindestens 10 GB freien Speicherplatz.|
 |Active Directory-Synchronisierung|Bevor Sie einen Connector für die Verbindung von Intune mit Ihrem Exchange-Server verwenden können, müssen Sie die [Active Directory-Synchronisierung](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) einrichten, damit Ihre lokalen Benutzer und Sicherheitsgruppen mit Ihrer Instanz von Azure AD synchronisiert werden.|
@@ -92,7 +92,7 @@ Führen Sie die folgenden Schritte aus, den lokalen Exchange-Connector für Intu
 
       2.  Wählen Sie das „?“ oben links, und wählen Sie **Info**aus.
 
-      3.  Suchen Sie den Wert **Externer POP-Server** .
+      3.  Suchen Sie den Wert **Externer POP-Server**.
 
       4.  Wählen Sie **Proxyserver** aus, um die Proxyservereinstellungen für Ihren gehosteten Exchange-Server anzugeben.
         1.  Wählen Sie **Beim Synchronisieren von Informationen für mobile Geräte einen Proxyserver verwenden**aus.
@@ -131,6 +131,6 @@ Sie können auch die Uhrzeit und das Datum des letzten erfolgreichen Synchronisa
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

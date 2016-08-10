@@ -3,8 +3,8 @@ title: "Vorbereiten der Registrierung von Geräten | Microsoft Intune"
 description: "Einrichten der Voraussetzungen für die Verwaltung mobiler Geräte (Mobile Device Management, MDM) und Vorbereiten der Registrierung für verschiedene Betriebssysteme."
 keywords: 
 author: NathBarn
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: f7fd551ab35408236a58ccd581382a6b11343dda
+ms.sourcegitcommit: 9b7b8f6e5182e228458f5ea75e804a638f1e2a2b
+ms.openlocfilehash: 7e3e29113dd03ea25f102d7f71c63e5c3faefad8
 
 
 ---
 
 # Vorbereiten der Registrierung von Geräten in Microsoft Intune
-Damit Mitarbeiter mobile Geräte (einschließlich [Android](set-up-android-management-with-microsoft-intune.md), [iOS und Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) und [Windows-PCs](set-up-windows-device-management-with-microsoft-intune.md)) bei Intune registrieren können, müssen Sie die Geräteregistrierung aktivieren. Um die Registrierung zu ermöglichen, müssen Sie eine Autorität zur Verwaltung mobiler Geräte (MDM-Autorität) festlegen, das Intune-Unternehmensportal konfigurieren, Lizenzen zuweisen und die Registrierung für die Geräteplattform aktivieren.
+Damit Mitarbeiter mobile Geräte (einschließlich [Android](set-up-android-management-with-microsoft-intune.md), [iOS und Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) und [Windows-PCs](set-up-windows-device-management-with-microsoft-intune.md)) bei Intune registrieren oder unternehmenseigene Geräte verwalten können, müssen Sie die Geräteregistrierung aktivieren. Um die Registrierung zu ermöglichen, müssen Sie eine Autorität zur Verwaltung mobiler Geräte (MDM-Autorität) festlegen, das Intune-Unternehmensportal konfigurieren, Lizenzen zuweisen und die Registrierung für die Geräteplattform aktivieren.
 
 ## Festlegen der Autorität zur Verwaltung mobiler Geräte
 Die MDM-Autorität definiert den Verwaltungsdienst, der über die Berechtigung zum Verwalten einer Gruppe von Geräten verfügt. Die Optionen für die MDM-Autorität umfassen Intune selbst und Configuration Manager mit Intune. Wenn Sie Configuration Manager als Verwaltungsautorität festlegen, kann kein anderer Dienst für die Verwaltung mobiler Geräte verwendet werden.
@@ -68,7 +68,7 @@ Die Supportwebsite wird Benutzern im Unternehmensportal angezeigt, um ihnen Zugr
 |Feldname|Max. Länge|Weitere Informationen|
     |----------|------------------------|----------------|
     |URL der Supportwebsite|150|Wenn Sie über eine Supportwebsite verfügen, die Ihre Benutzer verwenden sollen, geben Sie hier die URL an. Die URL muss das Format https://www.contoso.com aufweisen. Wenn Sie keine URL angeben, wird im Unternehmensportal auf der Seite **An IT-Abteilung wenden** keine Supportwebsite angezeigt.|
-    |Websitename|40|Dies ist der Anzeigename der URL für die Supportwebsite. Wenn Sie für die Supportwebsite eine URL, aber keinen Anzeigenamen angeben, wird im Unternehmensportal auf der Seite **An IT-Abteilung wenden** der Text **Zur IT-Website wechseln** angezeigt.|
+    |Name der Website|40|Dies ist der Anzeigename der URL für die Supportwebsite. Wenn Sie für die Supportwebsite eine URL, aber keinen Anzeigenamen angeben, wird im Unternehmensportal auf der Seite **An IT-Abteilung wenden** der Text **Zur IT-Website wechseln** angezeigt.|
 
 
 ### Anpassen des Unternehmensbrandings
@@ -109,6 +109,6 @@ Sie haben auch folgende Möglichkeiten:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -69,7 +69,7 @@ ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
 |Liechtenstein|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr CET (UTC +1)|Französisch&#42;, Deutsch&#42;, Italienisch&#42;, Englisch|0800000300|0227614114|
 |Litauen|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr EET (UTC +2)|Litauisch&#42;, Englisch|880030960||
 |Luxemburg|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr CET (UTC +1)|Französisch&#42;, Deutsch&#42;, Englisch|80021094|24871510|
-|EJR Mazedonien|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr CET (UTC +1)|Englisch|0800-94288<br /><br />Schritt 1: Wählen Sie die Telefonnummer.<br /><br />Schritt 2: Geben Sie 001 ein.<br /><br />Schritt 3: Geben Sie 877-663-5075 ein.||
+|Mazedonien, ehemalige jugoslawische Republik|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr CET (UTC +1)|Englisch|0800-94288<br /><br />Schritt 1: Wählen Sie die Telefonnummer.<br /><br />Schritt 2: Geben Sie 001 ein.<br /><br />Schritt 3: Geben Sie 877-663-5075 ein.||
 |Malaysia|24 x 7|Montag-Freitag<br /><br />09:00-18:00 Uhr MYT (UTC +8)|Bahasa&#42;, Malaiisch&#42;, Englisch|1800 220030|362074606|
 |Malta|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr CET (UTC +1)|Englisch|0 80062231||
 |Mexiko|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr CST (UTC -6)|Spanisch&#42;, Englisch|01-8005630605|55473856567|
@@ -102,14 +102,14 @@ ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
 |Sri Lanka|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr IST (UTC +5:30)|Englisch||2423-254|
 |Schweden|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr CET (UTC +1)|Schwedisch&#42;, Englisch|0201605899|0851761966|
 |Schweiz|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr CET (UTC +1)|Französisch&#42;, Deutsch&#42;, Italienisch&#42;, Englisch|0800000300|0227614114|
-|Taiwan|24 x 7|Montag-Freitag<br /><br />09:00-18:00 Uhr CST (UTC +8)|Mandarin&#42;, Englisch|0800 666802|02 26567301|
+|Republik China (Taiwan)|24 x 7|Montag-Freitag<br /><br />09:00-18:00 Uhr CST (UTC +8)|Mandarin&#42;, Englisch|0800 666802|02 26567301|
 |Thailand|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr PHT (UTC +8)|Englisch|1800 4412619||
 |Trinidad und Tobago|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr AST (UTC -4)|Englisch|1-8552147711||
 |Tunesien|24 x 7|Sonntag bis Donnerstag<br /><br />09:00-19:00 Uhr CET (UTC +2)|Französisch&#42;, Englisch||+216 71 16 68 02<br /><br />Schritt 1: Wählen Sie Option 1 aus.<br /><br />Schritt 2: Wählen Sie Option 1 aus.<br /><br />Schritt 3: Wählen Sie Option 9 aus.<br /><br />Schritt 4: Geben Sie Code 7703 ein.|
 |Türkei|24 x 7|Montag-Freitag<br /><br />09:00-18:00 Uhr EET (UTC +3)|Türkisch&#42;, Englisch|00800 448824556||
 |Vereinigte Arabische Emirate|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr AST (UTC +4)|Englisch|8000 4441578||
 |Ukraine|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr EET (UTC +2)|Russisch&#42;, Englisch|0 800 308 800<br /><br />Schritt 1: Wählen Sie 5 aus.||
-|Großbritannien|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr GMT (UTC)|Englisch|0800 032 6417|02034506455|
+|Vereinigtes Königreich|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr GMT (UTC)|Englisch|0800 032 6417|02034506455|
 |USA|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr PST (UTC -8)|Englisch|800-865-9408||
 |Uruguay|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr UYST (UTC -2)|Spanisch&#42;, Englisch|000-411-002-7131||
 |Venezuela|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr VET (UTC -4:30)|Spanisch&#42;, Englisch|0-800-100-8763||

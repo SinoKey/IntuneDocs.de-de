@@ -1,9 +1,9 @@
 ---
 title: "Registrieren von Geräten | Microsoft Intune"
-description: "Die Registrierung durch die Verwaltung mobiler Geräte (MDM) in Microsoft Intune dient dazu, Geräte in die Verwaltung aufzunehmen und den Zugriff auf Ressourcen zu ermöglichen."
+description: "Die Registrierung durch die Verwaltung mobiler Geräte (MDM) dient dazu, Geräte in die Verwaltung aufzunehmen und den Zugriff auf Ressourcen zu ermöglichen."
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: d128b9c9f0c9eda70abed058afeb665377047f66
+ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
+ms.openlocfilehash: 15f4af1f870d619f4fd51e88d1aef91b0b45e66d
 
 
 ---
@@ -89,7 +89,7 @@ Gibt an, ob die Registrierungsmethode „Benutzeraffinität“ unterstützt, was
   - Bedingten Zugriff auf E-Mail- und Unternehmensdaten
   - Unternehmensportal-App
 
-[Benutzeraffinität](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#enrollment-of-company-owned-ios-devices-with-user-affinity) ([Zurück zur Tabelle](#overview-of-device-enrollment-methods))
+[Benutzeraffinität](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices) ([Zurück zur Tabelle](#overview-of-device-enrollment-methods))
 
 ### Sperren
 Gibt an, ob das Gerät gesperrt werden kann, um zu verhindern, dass der Benutzer die Intune-Richtlinie entfernt, was dem Entfernen des Geräts aus der Verwaltung entspricht. iOS-Geräte müssen im Modus „Überwacht“ ausgeführt werden, damit sie gesperrt werden können.
@@ -124,6 +124,6 @@ Mit der Intune-Clientsoftware verwaltete Computer können nicht selektiv zurück
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

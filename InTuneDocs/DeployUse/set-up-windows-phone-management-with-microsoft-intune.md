@@ -1,10 +1,10 @@
 ---
-title: Einrichten der Windows 10 Mobile- und Windows Phone-Verwaltung mit Microsoft Intune | Microsoft Intune
+title: "Einrichten der Windows 10 Mobile- und Windows Phone-Verwaltung | Microsoft Intune"
 description: "Aktivieren Sie die Verwaltung mobiler Geräte (Mobile Device Management, MDM) für Windows 10 Mobile- oder Windows Phone-Geräte mit Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,16 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
-ms.openlocfilehash: d1bba612d9f613dde33f71790e2c3b2d6b33fe88
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: 344f1cf4367deb12288f9c361e043d345f9846bb
 
 
 ---
 
 
 # Einrichten der Windows 10 Mobile- und Windows Phone-Verwaltung mit Microsoft Intune
+[Hier](../enduser/using-your-windows-device-with-intune.md) finden Sie Unterstützung zum Einrichten Ihres Windows-Geräts.
+
 Bevor Sie Windows 10 Mobile- oder Windows Phone-Geräte mit Intune verwalten können, müssen die Geräte mit Intune kommunizieren können. Um dies zu vereinfachen, können Sie einen DNS-Eintrag erstellen. Dann brauchen die Benutzer nicht die Adresse des Servers einzugeben. Die folgenden Schritte beschreiben, wie Sie die Registrierung für die Benutzer vereinfachen.  
 
 In den meisten Fällen können die Benutzer die Unternehmensportal-App aus dem Windows Store installieren. Wenn Sie Windows Phone 8.0-Geräte verwalten oder das Unternehmensportal auf Windows Phone-Geräten bereitstellen müssen, müssen Sie die Unternehmensportal-App zusätzlich herunterladen und signieren. Siehe [Einrichten der Windows Phone 8.0-Verwaltung](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
@@ -50,12 +52,16 @@ In den meisten Fällen können die Benutzer die Unternehmensportal-App aus dem W
 
     3.  Geben Sie die URL der überprüften Domäne der Unternehmenswebsite in das Feld **Verifizierten Domänennamen eingeben** ein, und klicken Sie dann auf **Automatische Erkennung testen**.
 
+    4.  Ihre Benutzer müssen wissen, wie sie ihre Geräte registrieren können und was sie erwartet, wenn die Geräte in die Verwaltung eingebunden sind.
+        - [Informieren der Endbenutzer über den Einsatz von Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+        - [Endbenutzer-Leitfaden für Windows-Geräte](../enduser/using-your-windows-device-with-intune.md)
+
 
 
 Es sind keine weiteren Schritte erforderlich, es sei denn, Sie stellen das Unternehmensportal selbst auf Geräten bereit.  Die Schritte 2 und 3 in der Verwaltungskonsole können ignoriert werden.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

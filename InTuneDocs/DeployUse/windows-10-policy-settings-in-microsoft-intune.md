@@ -4,7 +4,7 @@ description: "Verwenden Sie die in diesem Thema aufgeführten Richtlinieneinstel
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 07/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
+ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
+ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 
 
 ---
@@ -45,14 +45,13 @@ Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für 
 |**Kennwortablauf (Tage)**|Gibt die Zeitspanne an, nach der das Kennwort für das Gerät geändert werden muss.|
 |**Kennwortverlauf speichern**|Gibt an, ob Sie verhindern möchten, dass der Endbenutzer zuvor verwendete Kennwörter erstellt.|
 |**Kennwortverlauf speichern** - **Wiederverwendung vorheriger Kennwörter verhindern**|Gibt an, wie viele zuvor verwendete Kennwörter vom Gerät gespeichert werden.|
-|**Bildkennwort und PIN zulassen**|Ermöglicht Ihnen die Verwendung einfacher Gesten auf einem Bild oder einer einfachen PIN zur Anmeldung.<br>(Nur Windows 10 Desktop)|
 |**Kennwort anfordern, wenn das Gerät aus dem Leerlauf zurückkehrt**|Ist diese Einstellung aktiviert, muss der Benutzer ein Kennwort zum Entsperren des Geräts nach dem Leerlauf eingeben.<br>(Nur Windows 10 Mobile)|
 
 ### Verschlüsselung
 
 |Name der Einstellung|Details|
 |----------------|----------------------|
-|**Verschlüsselung auf mobilem Gerät anfordern**|Ermöglicht die Verschlüsselung auf Zielgeräten.<br>(Nur Windows 10 Mobile)|
+|**Verschlüsselung auf mobilen Geräten vorschreiben**|Ermöglicht die Verschlüsselung auf Zielgeräten.<br>(Nur Windows 10 Mobile)|
 
 ### System
 
@@ -72,14 +71,6 @@ Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für 
 |**Manuelles Hinzufügen von Nicht-Microsoft-Konten zulassen**|Ermöglicht dem Benutzer, dem Gerät E-Mail-Konten hinzuzufügen, die nicht mit einem Microsoft-Konto verknüpft sind.|
 |**Synchronisierung von Einstellungen für Microsoft-Konten zulassen**|Ermöglicht das Synchronisieren der mit einem Microsoft-Konto verknüpften Geräte- und App-Einstellungen zwischen Geräten.|
 
-### E-Mail-Einstellungen
-
-|Name der Einstellung|Details|
-|----------------|----------------------|---------------------|
-|**Microsoft-Konto in Windows Mail-Anwendung optional machen**|Konfigurieren Sie diese Einstellung, um die Anforderung für ein Microsoft-Konto in Windows Mail zu entfernen.<br>Nur Windows 10 Desktop|
-
-
-
 ### Microsoft Edge
 
 |Name der Einstellung|Details|
@@ -87,7 +78,7 @@ Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für 
 |**Webbrowser zulassen**|Ermöglichen Sie die Verwendung des Edge-Webbrowsers auf dem Gerät.<br>(Nur Windows 10 Mobile)|
 |**Suchvorschläge auf der Adressleiste zulassen**|Ermöglicht dem Suchmodul, Websites während der Eingabe von Suchausdrücken vorzuschlagen.|
 |**Senden von Intranetdatenverkehr an Internet Explorer zulassen**|Ermöglicht Benutzern, Intranetwebsites in Internet Explorer zu öffnen.<br>(Nur Windows 10 Desktop)|
-|**Do Not Track (nicht verfolgen) zulassen**|Konfiguriert den Edge-Browser zum Senden von DNT-Headern (Do Not Track, nicht nachverfolgen) an Websites, die Benutzer besuchen.|
+|**Nicht verfolgen (Do not track) zulassen**|Konfiguriert den Edge-Browser zum Senden von DNT-Headern (Do Not Track, nicht nachverfolgen) an Websites, die Benutzer besuchen.|
 |**SmartScreen aktivieren**|Aktiviert die SmartScreen-Browsereinstellung auf Geräten.|
 |**Active Scripting zulassen**|Ermöglicht die Ausführung von Skripts wie JavaScript im Edge-Browser.|
 |**Popups zulassen**|Aktiviert oder deaktiviert den Popupblocker des Browsers.<br>(Nur Windows 10 Desktop)|
@@ -127,7 +118,6 @@ Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für 
 |**Bluetooth zulassen**|Ermöglicht die Verwendung von Bluetooth-Funktionen auf dem Gerät.|
 |**Sichtbaren Modus für Bluetooth zulassen**|Ermöglicht die Erkennung dieses Geräts durch andere Bluetooth-Geräte.|
 |**Bluetooth-Werbung zulassen**|Ermöglicht Geräten dem Empfang von Werbung über Bluetooth.|
-|**Verbindungsfähigen Modus für Bluetooth zulassen**|**Wichtig**: Diese Einstellung wird von Windows 10 nicht mehr unterstützt und künftig entfernt.|
 |**Handyzurücksetzung zulassen**|Steuert, ob Benutzer ihre Geräte auf Werkseinstellungen zurücksetzen dürfen.|
 |**USB-Verbindung zulassen**|Steuert, ob die Geräte über eine USB-Verbindung auf externe Speichergeräte zugreifen können.|
 |**Diebstahlschutzmodus zulassen**|Konfigurieren Sie, ob der Windows-Diebstahlschutzmodus aktiviert ist.|
@@ -177,6 +167,7 @@ Alle Einstellungen gelten für nur Windows 10 Desktop.
 |Name der Einstellung|Details|
 |----------------|---------------|
 |**Automatische Updates zulassen**|Aktivieren Sie diese Einstellung, um automatische Updates zuzulassen. Konfigurieren Sie dann eine der folgenden Einstellungen, um das Updateverhalten zu steuern:<br /><br />**Download benachrichtigen**<br /><br />**Automatische Installation während der Wartung**<br /><br />**Automatische Installation und Neustart während der Wartung**<br /><br />**Zur festgelegten Zeit automatisch installieren und neu starten** **Hinweis**: Wenn diese Option ausgewählt ist, können Sie auch die folgenden Einstellungen konfigurieren: **Benachrichtigung für Endbenutzer unterdrücken** und **Installationstag für geplante Updates definieren**.<br>(Nur Windows 10 Desktop)|
+|**Features der Vorabversion zulassen**|Bietet Microsoft die Möglichkeit, Einstellungen und Features der Vorabversion für Windows 10-Geräte bereitzustellen. Sie können auswählen, ob nur Einstellungen oder alle Einstellungen und Features der Vorabversion installiert werden sollen.|
 
 ## Benutzerdefinierte Richtlinieneinstellungen
 Stellen Sie mithilfe der **benutzerdefinierten Microsoft Intune-Konfigurationsrichtlinie** für Windows 10 und Windows 10 Mobile Einstellungen für OMA-URI (Open Mobile Alliance Uniform Resource Identifier) bereit, um Features auf Windows 10- und Windows 10 Mobile-Geräten zu steuern. Dies sind die Standardeinstellungen, die viele Hersteller von mobilen Geräten verwenden, um Gerätefunktionen zu steuern.
@@ -250,7 +241,7 @@ Wenn Sie die benutzerdefinierte Windows-URI-Richtlinie verwenden möchten, müss
 |**Security/AllowRemoveProvisioningPackage**<br>(Desktop und Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Security/AllowRemoveProvisioningPackage<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Nicht zulässig<br>**1** – Zulässig (Standard)|
 |**Security/RequireProvisioningPackageSignature**<br>(Desktop und Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Security/RequireProvisioningPackageSignature<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** (Standard)<br>**1**|
 |**AboveLock/AllowActionCenterNotifications**<br>(Desktop und Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/AboveLock/AllowActionCenterNotifications<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Nicht zulässig<br>**1** – Zulässig (Standard)|
-|**TextInput/AllowIMENetworkAccess**<br>(nur Desktop)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowIMENetworkAccess<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Nicht zulassen<br>Offenes erweitertes Wörterbuch ist deaktiviert.<br>Ein Benutzer kann nicht:<br>Ein neues offenes erweitertes Wörterbuch hinzufügen<br /><br />Eine neue Konfigurationsdatei für die Suchintegration hinzufügen<br>Die Cloudkandidat-Funktion verwenden<br>Von Benutzer registriertes Wort senden<br>Darüber hinaus gilt:<br>Ein offenes erweitertes Wörterbuch, das hinzugefügt wurde, bevor Sie diese Richtlinieneinstellung aktiviert haben, wird für die Konvertierung nicht verwendet.<br>Eine Konfigurationsdatei für die Suchintegration, die vor der Aktivierung dieser Richtlinieneinstellung installiert wurde, wird nicht verwendet.<br>**1** – Zulassen<br>Offenes erweitertes Wörterbuch kann hinzugefügt und als Standard verwendet werden. Darüber hinaus kann die Suchintegrationsfunktion als Standard verwendet werden.<br>Ein Benutzer kann:<br>Die Cloudkandidat-Funktion verwenden<br>Vom Benutzer registriertes Wort senden|
+|**TextInput/AllowIMENetworkAccess**<br>(nur Desktop)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowIMENetworkAccess<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Nicht zulassen<br>Offenes erweitertes Wörterbuch ist deaktiviert.<br>Ein Benutzer kann nicht:<br>Ein neues offenes erweitertes Wörterbuch hinzufügen<br /><br />Eine neue Konfigurationsdatei für die Suchintegration hinzufügen<br>Die Cloudkandidat-Funktion verwenden<br>Von Benutzer registriertes Wort senden<br>Darüber hinaus gilt:<br>Ein offenes erweitertes Wörterbuch, das hinzugefügt wurde, bevor Sie diese Richtlinieneinstellung aktiviert haben, wird für die Konvertierung nicht verwendet.<br>Eine Konfigurationsdatei für die Suchintegration, die vor der Aktivierung dieser Richtlinieneinstellung installiert wurde, wird nicht verwendet.<br>**1** – Zulassen<br>Offenes erweitertes Wörterbuch kann hinzugefügt und als Standard verwendet werden. Darüber hinaus kann die Suchintegrationsfunktion als Standard verwendet werden.<br>Ein Benutzer kann:<br>Die Cloudkandidat-Funktion verwenden<br>Von Benutzer registriertes Wort senden|
 |**TextInput/AllowIMELogging**<br>(nur Desktop)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowIMELogging<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Fehlerkonvertierungsprotokollierung ist deaktiviert. Automatisch optimierte Daten und Eingabeverlaufsdaten werden nicht in einer Datei gespeichert.<br>**1** – Fehlerkonvertierungsprotokollierung ist aktiviert. Automatisch optimierte Daten und Eingabeverlaufsdaten werden in einer Datei gespeichert (Standard).|
 |**TextInput/AllowJapaneseNonPublishingStandardGlyph**<br>(nur Desktop)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseNonPublishingStandardGlyph<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Nicht zulässig<br>**1** – Zulässig (Standard)|
 |**TextInput/AllowJapaneseIVSCharacters**<br>(nur Desktop)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseIVSCharacters<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Nicht zulässig<br>**1** – Zulässig (Standard)|
@@ -318,7 +309,7 @@ Wenn Sie die benutzerdefinierte Windows-URI-Richtlinie verwenden möchten, müss
 |**Browser zulassen**<br>(nur Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Browser/AllowBrowser<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0**: Browsen deaktiviert<br>**1**: Browsen aktiviert (Standard)|
 |**AllowSearchSuggestionsinAddressBar**<br>(Desktop und Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Browser/AllowSearchSuggestionsinAddressBar<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0**: Keine Suchvorschläge anzeigen<br>**1**: Suchvorschläge anzeigen (Standard)|
 |**SendIntranetTraffictoInternetExplorer**<br>(nur Desktop)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0**: Deaktiviert (Intranetsites im Edge-Browser öffnen – Standard)<br>**1**: Aktiviert (Intranetsites in Internet Explorer öffnen)|
-|**DNT (Do Not Track) zulassen**<br>(Desktop und Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Deaktiviert (DNT nicht senden – Standard)<br>**1** – Aktiviert (DNT senden)|
+|**Nicht verfolgen (Do not track) zulassen**<br>(Desktop und Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Deaktiviert (DNT nicht senden – Standard)<br>**1** – Aktiviert (DNT senden)|
 |**SmartScreen konfigurieren**<br>(Desktop und Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Nicht zulässig<br>**1** – Zulassen (Standard)|
 |**Popups zulassen**<br>(nur Desktop)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Browser/AllowPopups<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Keine Popups zulassen (Standard)<br>**1** – Popups zulassen|
 |**Cookies zulassen**<br>(Desktop und Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Browser/AllowCookies<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Nicht blockieren. Cookies von allen Websites zulassen (Standard)<br>**1** – Cookies anderer Anbieter blockieren<br>**2** – Alle Cookies blockieren|
@@ -332,6 +323,6 @@ Wenn Sie die benutzerdefinierte Windows-URI-Richtlinie verwenden möchten, müss
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

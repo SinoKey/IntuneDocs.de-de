@@ -13,8 +13,8 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 2d2db078bbbce5945bf536a845cd8e4fa8f62c7e
+ms.sourcegitcommit: aabe68a3621a02b8f3142ab3f593190cc23053dd
+ms.openlocfilehash: 17836bc826bc89e3f041f7b369be09c1cce9ea4f
 
 
 ---
@@ -30,11 +30,11 @@ Intune unterstützt die Registrierung unternehmenseigener iOS-Geräte mithilfe d
 
     2.  Geben Sie die Details für die Geräteprofile ein:
 
-        -   **Name** : Name des Geräteanmeldungsprofils. Für Benutzer nicht sichtbar.
+        -   **Name**: Name des Geräteanmeldungsprofils. Für Benutzer nicht sichtbar.
 
         -   **Beschreibung**: Beschreibung des Geräteanmeldungsprofils. Für Benutzer nicht sichtbar.
 
-        -   **Benutzerzuweisung** : Gibt an, wie Geräte registriert werden. Wählen Sie für die direkte Anmeldung **Keine Benutzeraffinität**aus.
+        -   **Benutzerzuweisung**: Gibt an, wie Geräte registriert werden. Wählen Sie für die direkte Anmeldung **Keine Benutzeraffinität**aus.
 
         -   **Gerätegruppen-Vorabzuweisung**: Alle Geräte, die mit diesem Profil bereitgestellt werden, gehören anfänglich zu dieser Gruppe. Sie können die Geräte nach der Registrierung erneut zuweisen.
 
@@ -53,7 +53,7 @@ Intune unterstützt die Registrierung unternehmenseigener iOS-Geräte mithilfe d
 
     2.  Verbinden Sie das iOS-Gerät mit dem Mac-Computer über ein USB-Kabel. Schließen **Fotos**, **iTunes** und andere Apps, die für das Gerät geöffnet werden, wenn das Gerät erkannt wird.
 
-    3.  Klicken Sie in Apple Configurator mit einem Einmalklick auf das verbundene iOS-Gerät, und wählen Sie dann die Schaltfläche **Hinzufügen**. Optionen, die dem Gerät hinzugefügt werden können, werden in der Dropdownliste angezeigt. Wählen Sie **Profile** .
+    3.  Klicken Sie in Apple Configurator mit einem Einmalklick auf das verbundene iOS-Gerät, und wählen Sie dann die Schaltfläche **Hinzufügen**. Optionen, die dem Gerät hinzugefügt werden können, werden in der Dropdownliste angezeigt. Wählen Sie **Profile**.
 
     4.  Verwenden Sie die Dateiauswahl zum Auswählen der aus Intune exportierten MOBILECONFIG-Datei, und wählen Sie dann **Hinzufügen**. Das Profil wird zum Gerät hinzugefügt.  Wenn das Gerät **nicht überwacht** wird, muss der Installation auf dem Gerät zugestimmt werden.
 
@@ -78,6 +78,6 @@ Intune unterstützt die Registrierung unternehmenseigener iOS-Geräte mithilfe d
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

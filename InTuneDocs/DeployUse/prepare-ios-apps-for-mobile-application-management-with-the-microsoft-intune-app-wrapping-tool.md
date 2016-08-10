@@ -13,8 +13,8 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: matgates
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 19a5b8f8260bace2bbe3626da3df281306f53024
-ms.openlocfilehash: ebd68513da55b8bb1715d2c82636abf791cae1ff
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 
 
 ---
@@ -27,12 +27,13 @@ Das Tool ist eine Mac OS-Befehlszeilenanwendung, die einen Wrapper um eine App 
 Informationen zum Herunterladen des Tools finden Sie unter [Microsoft Intune App Wrapping Tool für iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 ## Schritt 1: Erfüllen der Voraussetzungen für die Verwendung des App Wrapping Tools
+Weitere Informationen zu den Voraussetzungen und erforderlichen Einstellungen finden Sie in [diesem Blogbeitrag](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 |Anforderungen|Weitere Informationen|
 |---------------|--------------------------------|
 |Unterstütztes Betriebssystem und Toolset|Sie müssen das App Wrapping Tool auf einem Mac mit OS X 10.8.5 oder höher ausführen, auf dem die Toolsetversion XCode 5 oder höher installiert wurde.|
 |Signaturzertifikat und Bereitstellungsprofil|Sie müssen ein Apple-Signaturzertifikat und ein Bereitstellungsprofil besitzen. Weitere Informationen hierzu finden Sie in Ihrer [Apple-Entwicklerdokumentation](https://developer.apple.com/).|
-|Verarbeiten einer App mit dem App Wrapping Tool|Apps müssen von Ihrem Unternehmen oder einem unabhängigen Softwareanbieter (ISV) entwickelt und signiert werden. Mit diesem Tool können Sie keine Apps aus dem Apple Store bearbeiten. Apps müssen für iOS 7.0 oder höher geschrieben sein. Apps müssen im PIE-Format (positionsunabhängige ausführbare Datei) vorliegen. Weitere Informationen zum PIE-Format finden Sie in Ihrer Apple-Entwicklerdokumentation. Die App muss die Erweiterung **.app** oder **.ipa** aufweisen.|
+|Verarbeiten einer App mit dem App Wrapping Tool|Apps müssen von Ihrem Unternehmen oder einem unabhängigen Softwareanbieter (ISV) entwickelt und signiert werden. Mit diesem Tool können Sie keine Apps aus dem Apple Store bearbeiten. Apps müssen für iOS 7.1 oder höher geschrieben sein. Apps müssen im PIE-Format (positionsunabhängige ausführbare Datei) vorliegen. Weitere Informationen zum PIE-Format finden Sie in Ihrer Apple-Entwicklerdokumentation. Die App muss die Erweiterung **.app** oder **.ipa** aufweisen.|
 |Apps, die vom App Wrapping Tool nicht verarbeitet werden können|Verschlüsselte Apps, nicht signierte Apps und Apps mit erweiterten Dateiattributen.|
 |Apps, die die Azure Active Directory-Bibliothek (ADAL) verwenden|Wenn Ihre App ADAL verwendet, muss in der App die ADAL-Version 1.0.2 oder höher integriert sein, und Entwickler müssen ihrer App Zugriff auf die Intune MAM-Ressource (mobile Anwendungsverwaltung) gewähren.<br /><br />Informationen zur Verwendung von ADAL finden Sie in diesem Artikel unter [Informationen für Apps, die die Azure Active Directory-Bibliothek verwenden](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library).|
 |Festlegen von Berechtigungen für Ihre App|Sie müssen Berechtigungen festlegen, die der App zusätzliche Berechtigungen und Funktionen über die typischerweise gewährten hinaus erteilen, bevor Sie die App umschließen. Anleitungen finden Sie unter [Festlegen von App-Berechtigungen](#setting-app-entitlements).|
@@ -137,11 +138,11 @@ Anwendungen, die mit dem App Wrapping Tool umschlossen wurden, generieren Protok
 ## Informationen für Apps, die die Azure Active Directory-Bibliothek verwenden
 Die Informationen in diesem Abschnitt gelten nur für Apps, die die Azure Active Directory-Bibliothek (ADAL) verwenden. Wenn Sie nicht wissen, ob Ihre Anwendung diese Bibliothek verwendet, wenden Sie sich an den Entwickler der Anwendung.
 
-In der App muss mindestens ADAL 1.0.2 integriert sein.
+In die App muss mindestens ADAL 1.0.2 integriert sein.
 
 Für Apps, die ADAL verwenden, muss Folgendes zutreffen:
 
--   Die App muss mindestens ADAL-Version 1.0.2 integriert haben.
+-   In die App muss mindestens ADAL 1.0.2 integriert sein.
 
 -   Entwickler müssen ihrer App Zugriff auf die Intune MAM-Ressource (Mobile Application Management, mobile Anwendungsverwaltung) gewähren, wie unter [Für Apps, die ADAL verwenden, zu befolgende Schritte](#steps-to-follow-for-apps-that-use-adal) beschrieben.
 
@@ -292,6 +293,6 @@ Verwenden Sie die folgenden bewährten Methoden zu Sicherheit und Datenschutz, w
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: Zugriff auf Unternehmens-E-Mail mithilfe von E-Mail-Profilen | Microsoft 
 description: "Mithilfe der Einstellungen von E-Mail-Profilen können die Einstellungen für den E-Mail-Zugriff für bestimmte E-Mail-Clients auf mobilen Geräten konfiguriert werden."
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: c7a3ca7b0390a001624871342c9aa04802be27ff
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: cddc1a68b14520774555416dcd496a06a0f89385
 
 
 ---
@@ -36,6 +36,18 @@ Sie können E-Mail-Profile verwenden, um den systemeigenen E-Mail-Client auf den
 
 
 Sie können nicht nur ein E-Mail-Konto auf dem Gerät konfigurieren, sondern auch Synchronisierungseinstellungen (beispielsweise wie viele E-Mails synchronisiert werden sollen und abhängig vom Gerätetyp die zu synchronisierenden Inhaltstypen).
+>[!NOTE]
+>
+>Wenn der Benutzer ein E-Mail-Profil installiert hat, bevor ein Profil durch Intune bereitgestellt wurde, hat die Bereitstellung des Intune-E-Mail-Profils je nach Geräteplattform folgende Auswirkungen:
+
+>-**iOS**: Intune erkennt basierend auf dem Hostnamen und der E-Mail-Adresse ein vorhandenes doppeltes E-Mail-Profil. Das vom Benutzer erstellte doppelte E-Mail-Profil blockiert die Bereitstellung eines Profils, das vom Intune-Administrator erstellt wurde. Das ist ein häufig auftretendes Problem, da iOS-Benutzer in der Regel ein E-Mail-Profil erstellen und anschließend die Registrierung vornehmen. Das Unternehmensportal informiert den Benutzer darüber, dass es aufgrund seines manuell konfigurierten E-Mail-Profils nicht kompatibel ist, und fordert ihn dazu auf, dieses Profil zu entfernen. Der Benutzer sollte sein E-Mail-Profil entfernen, damit das Intune-Profil bereitgestellt werden kann. Weisen Sie Ihre Benutzer an, sich vor der Installation eines E-Mail-Profils zu registrieren und die Bereitstellung des Profils durch Intune zuzulassen, um das Problem zu vermeiden.
+
+>-**Windows**: Intune erkennt basierend auf dem Hostnamen und der E-Mail-Adresse ein vorhandenes doppeltes E-Mail-Profil. Intune überschreibt das vorhandene, vom Benutzer erstellte E-Mail-Profil.
+
+>-**Samsung KNOX**: Intune identifiziert basierend auf der E-Mail-Adresse ein doppeltes E-Mail-Konto und überschreibt es mit dem Intune-Profil. Wenn der Benutzer dieses Konto konfiguriert, wird es erneut durch das Intune-Profil überschrieben. Dies kann für den Benutzer, dessen Kontokonfiguration überschrieben wird, verwirrend sein.
+
+>Da Samsung KNOX zum Identifizieren des Profils keinen Hostnamen verwendet, wird davon abgeraten, mehrere E-Mail-Profile für die Bereitstellung unter derselben E-Mail-Adresse auf unterschiedlichen Hosts zu erstellen, da sie sich gegenseitig überschreiben.
+    
 
 ## Schützen von E-Mail-Profilen
 E-Mail-Profile können mit einer von zwei Methoden geschützt werden:
@@ -82,7 +94,7 @@ Das Kennwort ist nicht im E-Mail-Profil enthalten, sodass der Benutzer dieses be
     |**Anzahl der Tage für die E-Mail-Synchronisierung**|Die Anzahl der Tage von E-Mails, die synchronisiert werden sollen, oder wählen Sie **Unbegrenzt** aus, um alle verfügbaren E-Mail-Nachrichten zu synchronisieren.|
     |**Synchronisierungszeitplan** (Samsung KNOX, Windows Phone 8 und höher, Windows 10)|Wählen Sie den Zeitplan aus, nach dem Geräte mit Daten vom Exchange-Server synchronisiert werden. Sie können auch **Wenn Nachrichten eintreffen** auswählen, wobei die Daten sofort bei Eintreffen synchronisiert werden, oder **Manuell**, wobei der Benutzer des Geräts die Synchronisierung initiieren muss.|
     |**SSL verwenden**|Verwendet SSL-Kommunikation (Secure Sockets Layer) beim Senden und Empfangen von E-Mails sowie bei der Kommunikation mit dem Exchange-Server.<br /><br />Für Geräte mit Samsung KNOX 4.0 oder höher müssen Sie Ihr Exchange Server-SSL-Zertifikat exportieren und es als ein Android Trusted Certificate Profile in Intune bereitstellen. Intune unterstützt den Zugriff auf dieses Zertifikat nicht, wenn es auf andere Weise auf dem Exchange Server installiert wurde.|
-    |**Zu synchronisierender Inhaltstyp**|Wählen Sie die Inhaltstypen aus, die auf Geräten synchronisiert werden sollen.| 
+    |**Zu synchronisierender Inhaltstyp**|Wählen Sie die Inhaltstypen aus, die auf Geräten synchronisiert werden sollen.|
     |**Senden von E-Mails über Anwendungen von Drittanbietern zulassen** (nur iOS)|Benutzern die Auswahl dieses Profils als das Standardkonto für das Versenden von E-Mails erlauben und Anwendungen von Drittanbietern das Öffnen von E-Mails in der nativen E-Mal-App erlauben, um beispielsweise Dateien an E-Mails anzuhängen.|
 
     > [!IMPORTANT]
@@ -109,8 +121,6 @@ Eine Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeit
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

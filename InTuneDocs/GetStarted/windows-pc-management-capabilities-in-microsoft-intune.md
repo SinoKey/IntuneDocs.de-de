@@ -4,7 +4,7 @@ description: "Erfahren Sie mehr über die Funktionen von Intune bei der Verwaltu
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: b2e5b04df846db1a0076da7db63a5906fbd25558
+ms.sourcegitcommit: 49a236359692a5bbccf9ee0bb263094434049a91
+ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
 
 
 ---
@@ -28,7 +28,7 @@ In den meisten Szenarien registrieren Sie Ihre Geräte bei Microsoft Intune, sod
 
 -   **Schutz vor Schadsoftware**: Intune umfasst Endpoint Protection, um Ihre PCs vor Schadsoftware zu schützen.
 
--   **Remoteunterstützung**: Über Intune können Benutzer Kontakt mit IT-Supportmitarbeitern aufnehmen, die ihnen über eine in Intune integrierte Remotedesktopfunktion Unterstützung bieten können <!--- (requires TeamViewer software)--->.
+-   **Remoteunterstützung**: Über Intune können Benutzer Kontakt mit IT-Supportmitarbeitern aufnehmen, die ihnen über eine in Intune integrierte Remotedesktop-Funktion Unterstützung bieten können (erfordert TeamViewer-Software).
 
 -   **Verwaltung von Softwarelizenzen**: Überwachen Sie, wie viele Lizenzen verfügbar sind und wie viele Lizenzen verwendet werden.
 -   **App-Bereitstellung**: Stellen Sie Software auf PCs bereit, die Sie verwalten. Einige App-Verwaltungsfunktionen sind nicht verfügbar, wenn Sie PCs mit der Clientsoftware verwalten.
@@ -48,7 +48,7 @@ PCs mit den folgenden Windows-Versionen (x86 und x64) können mit Intune verwalt
 
 -   **Windows 8.1**: Pro und Enterprise
 
-- **Windows 10**: Home, Education, Pro und Enterprise
+- **Windows 10**: Pro, Education und Enterprise
 
 
 ## Hardwaremindestanforderungen
@@ -74,6 +74,6 @@ Im Folgenden sind die Softwareanforderungen zum Installieren des Intune-PC-Clien
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

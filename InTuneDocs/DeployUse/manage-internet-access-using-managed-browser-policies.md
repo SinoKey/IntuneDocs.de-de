@@ -4,7 +4,7 @@ description: "Stellen Sie die Managed Browser-Anwendung bereit, um das Browsen i
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,21 +13,22 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 44f6ee1354f1fdfc7f8db7d5b844dc12c01e686c
+ms.sourcegitcommit: 2fcd53d335aa18701ba0b8c3c75569febbee2cd5
+ms.openlocfilehash: d07a5dde05055c54f5b89c8aa5f49203d0a22b97
 
 
 ---
 
-# Verwalten des Internetzugriffs mittels Richtlinien für verwaltete Browser mit Microsoft Intune
-Managed Browser ist eine Webbrowser-Anwendung, die Sie in Ihrer Organisation mit Microsoft Intune bereitstellen können. Eine Richtlinie für verwaltete Browser konfiguriert die Liste "Zulassen" oder "Blockieren", um die Websites einzuschränken, die Benutzer des verwalteten Browsers besuchen können.
+# Verwalten des Internetzugriffs mittels Richtlinien für Managed Browser mit Microsoft Intune
+Managed Browser ist eine Webbrowseranwendung, die Sie mit Microsoft Intune in Ihrer Organisation bereitstellen können. Mit einer Richtlinie für Managed Browser wird eine Zulassungs- oder Blockierungsliste konfiguriert, um die Websites einzuschränken, die Benutzer von Managed Browser besuchen können.
 
-Da diese App eine verwaltete App ist, können Sie darauf auch Verwaltungsrichtlinien für mobile Anwendungen anwenden. Hierzu zählt beispielsweise, die Verwendung der Funktionen zum Ausschneiden, Kopieren und Einfügen zu steuern, Bildschirmaufnahmen zu verhindern und sicherzustellen, dass Links zu Inhalten, auf die Benutzer klicken, in anderen verwalteten Apps geöffnet werden. Weitere Informationen finden Sie unter [Konfigurieren und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen in der Microsoft Intune-Konsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+Da diese App eine verwaltete App ist, können Sie auch Richtlinien für die Verwaltung mobiler Anwendungen darauf anwenden. Mithilfe dieser Richtlinien können beispielsweise Ausschneide-, Kopier- und Einfügevorgänge gesteuert und Bildschirmaufnahmen verhindert werden. Außerdem kann sichergestellt werden, dass Links zu Inhalten, die von Benutzern ausgewählt werden, nur in anderen verwalteten Apps geöffnet werden. Weitere Informationen finden Sie unter [Konfigurieren und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen in der Microsoft Intune-Konsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 > [!IMPORTANT]
->Falls Benutzer den Managed Browser aus dem App Store installieren und es nicht von Intune verwaltet wird, gilt Folgendes: iOS – Die Managed Browser-App kann als ein Basiswebbrowser verwendet werden, einige Funktionen stehen jedoch nicht zur Verfügung, und sie wird nicht auf Daten anderer durch Intune verwalteter Apps zugreifen können.
-Android: Die App des verwalteten Browsers kann nicht verwendet werden.
-Wenn Benutzer den verwalteten Browser selbst auf einem iOS-Gerät mit einer Version vor iOS 9 installieren, wird er nicht durch die von Ihnen erstellten Richtlinien verwaltet. Um sicherzustellen, dass der Browser von Intune verwaltet wird, muss die App deinstalliert werden, bevor Sie sie als verwaltete Anwendung bereitstellen können. Wenn Benutzer unter IOS 9 und höher den verwalteten Browser selbst installieren, werden sie aufgefordert, ihn für die Verwaltung durch Richtlinie zuzulassen.
+>Wenn Benutzer Managed Browser aus dem App Store installieren und die App nicht von Intune verwaltet wird, gilt Folgendes:<br /><br />
+iOS: Die Managed Browser-App kann als Basiswebbrowser verwendet werden, aber einige Features sind nicht verfügbar, und der Zugriff auf Daten anderer von Intune verwalteter Apps ist nicht möglich.<br />
+Android: Die Managed Browser-App kann nicht verwendet werden.<br /><br />
+Wenn Benutzer Managed Browser selbst auf einem iOS-Gerät mit einer Version vor iOS 9 installieren, wird er nicht durch die von Ihnen erstellten Richtlinien verwaltet. Um sicherzustellen, dass der Browser von Intune verwaltet wird, muss die App deinstalliert werden, bevor Sie sie als verwaltete Anwendung für Benutzer bereitstellen können. Wenn Benutzer unter iOS 9 und höher Managed Browser selbst installieren, werden sie aufgefordert, die Verwaltung des Browsers durch Richtlinien zuzulassen.
 
 Sie können Richtlinien für verwaltete Browser für die folgenden Gerätetypen erstellen:
 
@@ -37,9 +38,9 @@ Sie können Richtlinien für verwaltete Browser für die folgenden Gerätetypen 
 
 Intune Managed Browser unterstützt das Öffnen von Webinhalten von [Microsoft Intune-Anwendungspartnern](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
-## Erstellen einer Richtlinie für verwaltete Browser
+## Erstellen einer Richtlinie für Managed Browser
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Richtlinie hinzufügen**.
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** &gt; **Richtlinie hinzufügen** aus.
 
 2.  Konfigurieren Sie einen der folgenden Richtlinientypen für **Software** :
 
@@ -49,49 +50,51 @@ Intune Managed Browser unterstützt das Öffnen von Webinhalten von [Microsoft I
 
     Weitere Informationen zum Erstellen und Bereitstellen von Richtlinien finden Sie im Thema [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Orientieren Sie sich bei der Konfiguration der Richtlinieneinstellungen für verwaltete Browser an der folgenden Tabelle:
+3.  Orientieren Sie sich bei der Konfiguration der Richtlinieneinstellungen für Managed Browser an folgenden Informationen:
 
-|Name der Einstellung|Details|
-    |----------------|--------------------|
-    |**Name**|Geben Sie einen eindeutigen Namen für die Richtlinie für Managed Browser ein, damit Sie sie leichter in der Intune-Konsole identifizieren können.|
-    |**Beschreibung**|Geben Sie eine Beschreibung ein, die einen Überblick über die Richtlinie für verwaltete Browser bietet, sowie weitere relevante Informationen, mit denen Sie danach suchen können.|
-    |**Aktivieren Sie eine Zulassungsliste oder Sperrliste, um die URLs zu beschränken, die vom verwalteten Browser geöffnet werden können.**|Wählen Sie eine der folgenden Optionen aus:<br /><br />**Der verwaltete Browser kann nur die unten aufgeführten URLs öffnen**: Geben Sie eine Liste mit URLs an, die der verwaltete Browser öffnen kann.<br /><br />**Der verwaltete Browser kann die unten aufgeführten URLs nicht öffnen**: Geben Sie eine Liste mit URLs an, die der verwaltete Browser nicht öffnen kann. **Hinweis:** Eine Richtlinie für verwaltete Browser kann nicht sowohl zulässige als auch blockierte URLs enthalten.<br />Weitere Informationen zu den festlegbaren URL-Formaten finden Sie in diesem Thema unter **URL-Format für zulässige und blockierte URLs**.|
+    - **Name**. Geben Sie einen eindeutigen Namen für die Richtlinie für Managed Browser ein, damit Sie sie leichter in der Intune-Konsole identifizieren können.
+    - **Beschreibung**. Geben Sie eine Beschreibung ein, die einen Überblick über die Richtlinie für Managed Browser bietet, sowie weitere relevante Informationen, mit denen Sie danach suchen können.
+    - **Aktivieren Sie eine Zulassungs- oder Blockierungsliste, um die URLs einzuschränken, die mit Managed Browser geöffnet werden können**. Wählen Sie eine der folgenden Optionen aus:
+        - **Nur das Öffnen der im Folgenden aufgelisteten URLs über Managed Browser erlauben**. Gibt eine Liste der URLs an, die von Managed Browser geöffnet werden dürfen.
+        - **Öffnen der im Folgenden aufgelisteten URLs über Managed Browser blockieren**. Gibt eine Liste der URLs an, die von Managed Browser nicht geöffnet werden dürfen.
+**Hinweis:** Eine Richtlinie für Managed Browser kann nicht sowohl zulässige als auch blockierte URLs enthalten.
+Weitere Informationen zu den festlegbaren URL-Formaten finden Sie in diesem Thema unter **URL-Format für zulässige und blockierte URLs**.
 
-4.  Klicken Sie danach auf **Richtlinie speichern**.
+4.  Wählen Sie danach die Option **Richtlinie speichern**.
 
 Die neue Richtlinie wird im Knoten **Konfigurationsrichtlinien** des Arbeitsbereichs **Richtlinie** angezeigt.
 
 ## Erstellen einer Bereitstellung für die Managed Browser-App
-Nachdem Sie die Richtlinie für verwaltete Browser erstellt haben, können Sie eine Softwarebereitstellung für die Managed Browser-App erstellen und der von Ihnen erstellten Richtlinie für verwaltete Browser zugeordnet.
+Nachdem Sie die Richtlinie für Managed Browser erstellt haben, können Sie eine Softwarebereitstellung für die Managed Browser-App erstellen und der von Ihnen erstellten Richtlinie für Managed Browser zuordnen.
 
 > [!IMPORTANT]
-> Richtlinien für Managed Browser werden nicht auf die gleiche Weise wie andere Intune-Richtlinien bereitgestellt. Diese Art von Richtlinie muss dem Softwarepaket für verwaltete Browser zugeordnet werden.
+> Richtlinien für Managed Browser werden nicht auf die gleiche Weise wie andere Intune-Richtlinien bereitgestellt. Diese Art von Richtlinie muss dem Softwarepaket für Managed Browser zugeordnet werden.
 
-Wenn Sie die App bereitstellen, wählen Sie die Richtlinie für verwaltete Browser auf der Seite **Mobile App-Verwaltung** aus, um die App mit der Richtlinie zu verknüpfen.
+Wenn Sie die App bereitstellen, wählen Sie die Richtlinie für Managed Browser auf der Seite **Mobile App-Verwaltung** aus, um die App mit der Richtlinie zu verknüpfen.
 
 Weitere Informationen zum Bereitstellen von Apps finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
-## Sicherheit und Datenschutz für den verwalteten Browser
+## Sicherheit und Datenschutz für Managed Browser
 
 -   Auf iOS-Geräten können von Benutzern besuchte Websites, deren Zertifikat abgelaufen oder nicht vertrauenswürdig ist, nicht geöffnet werden.
 
--   Einstellungen, die Benutzer für den integrierten Browser auf ihren Geräten vornehmen, werden nicht vom verwalteten Browser verwendet. Dies liegt daran, da der verwaltete Browser keinen Zugriff auf diese Einstellungen hat.
+-   Einstellungen, die Benutzer für den integrierten Browser auf ihren Geräten vornehmen, werden von Managed Browser nicht verwendet. Dies liegt daran, dass Managed Browser keinen Zugriff auf diese Einstellungen hat.
 
--   Wenn Sie die Option **Einfache PIN für Zugriff anfordern** oder **Unternehmensanmeldeinformationen für Zugriff anfordern** in einer Richtlinie für die Verwaltung mobiler Anwendung konfigurieren, die mit dem verwalteten Browser verknüpft ist, und ein Benutzer auf der Authentifizierungsseite auf den Hilfe-Link klickt, kann er beliebige Websites auch dann durchsuchen, wenn diese in der Richtlinie für verwaltete Browser einer Sperrliste hinzugefügt wurden.
+-   Wenn Sie die Option **Einfache PIN für den Zugriff erforderlich** oder **Unternehmensanmeldeinformationen für den Zugriff erforderlich** in einer Richtlinie für die Verwaltung mobiler Anwendungen konfigurieren, die Managed Browser zugeordnet ist, und ein Benutzer auf der Authentifizierungsseite den Hilfelink auswählt, kann er beliebige Websites besuchen. Dies gilt unabhängig davon, ob sie in der Richtlinie für Managed Browser einer Blockierungsliste hinzugefügt wurden.
 
--   Der verwaltete Browser kann nur den Zugriff auf Websites blockieren, wenn darauf direkt zugegriffen wird. Der Zugriff auf die Website kann nicht blockiert werden, wenn dafür Zwischendienste (z. B. ein Übersetzungsdienst) verwendet werden.
+-   Managed Browser kann den Zugriff auf Websites nur blockieren, wenn direkt darauf zugegriffen wird. Der Zugriff auf die Website kann nicht blockiert werden, wenn dafür Zwischendienste (z. B. ein Übersetzungsdienst) verwendet werden.
 
--   Um die Authentifizierung zuzulassen und sicherzustellen, dass auf die Intune-Dokumentation zugegriffen werden kann, ist **&#42;.microsoft.com** von den Zulassungs- und Sperrlisten ausgenommen – diese Adresse ist immer zugelassen.
+-   Um die Authentifizierung zuzulassen und sicherzustellen, dass auf die Intune-Dokumentation zugegriffen werden kann, ist **&#42;.microsoft.com** von den Zulassungs- oder Blockierungslisten ausgenommen und immer zulässig.
 
 ### Deaktivieren von Nutzungsdaten
-Microsoft erfasst automatisch anonyme Daten über die Leistung und die Verwendung des verwalteten Browsers, um Microsoft-Produkte und -Dienste zu verbessern. Benutzer können die Datenerfassung jedoch über die Einstellung **Nutzungsdaten** auf ihrem Gerät deaktivieren. Sie haben keine Kontrolle über die Erfassung dieser Daten.
+Microsoft sammelt automatisch anonyme Daten über die Leistung und die Verwendung von Managed Browser, um Microsoft-Produkte und -Dienste zu verbessern. Benutzer können die Erfassung von Daten mithilfe der Einstellung für **Nutzungsdaten** auf ihren Geräten deaktivieren. Sie haben keine Kontrolle über die Erfassung dieser Daten.
 
 ## Referenzinformationen
 
 ### URL-Format für zulässige und blockierte URLs
-Nachfolgend wird erläutert, welche Formate und Platzhalter Sie zum Festlegen von URLs in den Zulassungs- und Sperrlisten verwenden können.
+Nachfolgend wird erläutert, welche Formate und Platzhalter Sie zum Festlegen von URLs in den Zulassungs- und Blockierungslisten verwenden können:
 
--   Sie können das Platzhaltersymbol „**&#42;**“ gemäß den Regeln in der nachfolgenden Liste mit zugelassenen Mustern verwenden.
+-   Sie können das Platzhaltersymbol (**&#42;**) gemäß den Regeln in der folgenden Liste mit zulässigen Mustern verwenden.
 
 -   Stellen Sie sicher, dass Sie bei der Eingabe in die Liste allen URLs **http** oder **https** voranstellen.
 
@@ -101,22 +104,22 @@ Nachfolgend wird erläutert, welche Formate und Platzhalter Sie zum Festlegen vo
 
     -   Port 443 für https
 
-    Das Verwenden von Platzhaltern für die Portnummer wird nicht unterstützt: Beispiele: **http&colon;//www&period;contoso&period;com:*;** und **http&colon;//www&period;contoso&period;com: /*;**
+    Die Verwendung von Platzhaltern für die Portnummer wird nicht unterstützt. „**http&colon;//www&period;contoso&period;com:*;**“ und „**http&colon;//www&period;contoso&period;com: /*;**“ werden beispielsweise nicht unterstützt.
 
--   In der folgenden Tabelle sind die zugelassenen Muster aufgeführt, die Sie zum Festlegen von URLs verwenden können:
+-   In der folgenden Tabelle sind die zulässigen Muster aufgeführt, die Sie zum Festlegen von URLs verwenden können:
 
 |URL|Details|Treffer|Stimmt nicht überein mit|
     |-------|---------------|-----------|------------------|
     |http://www.contoso.com|Entspricht einer einzelnen Seite|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
     |http://contoso.com|Entspricht einer einzelnen Seite|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|Entspricht allen URLs, die mit www.contoso.com beginnen|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|Entspricht allen Unterdomänen unter "contoso.com"|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
+    |http://www.contoso.com/&#42;|Entspricht allen URLs, die mit „www.contoso.com“ beginnen|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
+    |http://&#42;.contoso.com/&#42;|Entspricht allen Unterdomänen unter „contoso.com“|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
     |http://www.contoso.com/images|Entspricht einem einzelnen Ordner|www.contoso.com/images|www.contoso.com/images/dogs|
     |http://www.contoso.com:80|Entspricht einer einzelnen Seite mit einer Portnummer|http://www.contoso.com:80||
     |https://www.contoso.com|Entspricht einer einzelnen, sicheren Seite|https://www.contoso.com|http://www.contoso.com|
     |http://www.contoso.com/images/&#42;|Entspricht einem einzelnen Ordner und allen Unterordnern|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
--   Es folgen Beispiele für einige der Eingaben, die Sie nicht festlegen können:
+-   Im Folgenden Beispiele für Eingaben, die nicht unterstützt werden:
 
     -   &#42;.com
 
@@ -139,18 +142,18 @@ Nachfolgend wird erläutert, welche Formate und Platzhalter Sie zum Festlegen vo
     -   http://www.contoso.com: /&#42;
 
 ### Lösen von Konflikten zwischen der Zulassungs- und Sperrliste
-Wenn mehrere Richtlinien für verwaltete Browser für ein Gerät bereitgestellt werden und Einstellungen in Konflikt stehen, werden sowohl der Modus (zulassen oder blockieren) als auch die URL-Listen ausgewertet. Bei einem Konflikt gilt folgendes Verhalten:
+Wenn mehrere Richtlinien für Managed Browser für ein Gerät bereitgestellt werden und Einstellungen in Konflikt stehen, werden sowohl der Modus (zulassen oder blockieren) als auch die URL-Listen ausgewertet. Bei einem Konflikt gilt folgendes Verhalten:
 
 -   Wenn die Modi in jeder Richtlinie identisch sind, aber die URL-Listen voneinander abweichen, werden die URLs auf dem Gerät nicht erzwungen.
 
 -   Wenn die Modi in jeder Richtlinie voneinander abweichen, aber die URL-Listen identisch sind , werden die URLs auf dem Gerät nicht erzwungen.
 
--   Wenn ein Gerät erstmals Richtlinien für verwaltete Browser empfängt und zwei Richtlinien in Konflikt stehen, werden die URLs auf dem Gerät nicht erzwungen. Sie können die Konflikte über den Knoten **Richtlinienkonflikte** des Arbeitsbereichs **Richtlinie** anzeigen.
+-   Wenn ein Gerät erstmals Richtlinien für Managed Browser empfängt und zwei Richtlinien in Konflikt stehen, werden die URLs auf dem Gerät nicht erzwungen. Sie können die Konflikte über den Knoten **Richtlinienkonflikte** des Arbeitsbereichs **Richtlinie** anzeigen.
 
--   Wenn ein Gerät bereits ein Richtlinie für verwaltete Browser erhalten hat und eine zweite Richtlinie mit in Konflikt stehenden Einstellungen bereitgestellt wird, bleiben die ursprünglichen Einstellungen auf dem Gerät bestehen. Sie können die Konflikte über den Knoten **Richtlinienkonflikte** des Arbeitsbereichs **Richtlinie** anzeigen.
+-   Wenn ein Gerät bereits ein Richtlinie für Managed Browser erhalten hat und eine zweite Richtlinie mit in Konflikt stehenden Einstellungen bereitgestellt wird, bleiben die ursprünglichen Einstellungen auf dem Gerät bestehen. Sie können die Konflikte über den Knoten **Richtlinienkonflikte** des Arbeitsbereichs **Richtlinie** anzeigen.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

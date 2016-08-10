@@ -1,10 +1,10 @@
 ---
-title: Einrichten der Android-Verwaltung mit Microsoft Intune | Microsoft Intune
+title: Einrichten der Android-Verwaltung | Microsoft Intune
 description: "Aktivieren Sie die Verwaltung mobiler Geräte (Mobile Device Management, MDM) für Android- und KNOX-Geräte mit Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,15 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
-ms.openlocfilehash: f06dd89d24dae37a9166aae2cf5c7b87b9d26f59
+ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
+ms.openlocfilehash: e42f49558ea9744b59693be873aa5130c7e1a0c3
 
 
 ---
 
 # Einrichten der Android-Geräteverwaltung
+[Hier](../enduser/using-your-android-device-with-intune.md) finden Sie Unterstützung zum Einrichten Ihres Windows-Geräts.
+
 In Microsoft Intune können Sie BYOD („Bring Your Own Device“) für Android-Geräte aktivieren, ohne weitere Aufgaben für die Plattform auszuführen.
 
 Wählen Sie eine der folgenden Geräteplattformoptionen aus, um mehr dazu zu erfahren:
@@ -41,11 +43,15 @@ Mobile Android-Geräte ermöglichen Benutzern die Registrierung über die Untern
 3.  **Bereitstellen von Informationen für Benutzer zum Zugriff auf Unternehmensressourcen über das Unternehmensportal**<br>
     Ihre Benutzer müssen wissen, wie sie ihre Geräte registrieren können und was sie erwartet, wenn die Geräte in die Verwaltung eingebunden sind. [Informieren der Endbenutzer über den Einsatz von Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
+4.  Ihre Benutzer müssen wissen, wie sie ihre Geräte registrieren können und was sie erwartet, wenn die Geräte in die Verwaltung eingebunden sind.
+        - [Informieren der Endbenutzer über den Einsatz von Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+        - [Endbenutzer-Leitfaden für Windows-Geräte](../enduser/using-your-android-device-with-intune.md)
+
 ### Weitere Informationen:
 [Vorbereiten der Registrierung von Geräten in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

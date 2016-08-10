@@ -15,7 +15,8 @@
 ## [Behandlung von Problemen bei Softwareupdates](Troubleshoot-software-updates-in-microsoft-intune.md)
 ## [Behandlung von Problemen bei E-Mail-Profilen](Troubleshoot-email-profiles-in-microsoft-intune.md)
 ## [Problembehandlung beim bedingten Zugriff](troubleshoot-conditional-access.md)
+## [Exchange Connector-Problembehandlung](troubleshoot-exchange-connector.md)
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

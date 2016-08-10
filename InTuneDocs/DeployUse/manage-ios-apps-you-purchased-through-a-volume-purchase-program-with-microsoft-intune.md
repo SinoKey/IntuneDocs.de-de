@@ -4,7 +4,7 @@ description: "Verwenden Sie Intune, um Apps zu verwalten, die Sie über ein Volu
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 8f7e77f00e6082c5b272a7ec2be835bc1ef97a28
+ms.sourcegitcommit: c64fb33893027d0000cae4cc3d9c3ed28cc38901
+ms.openlocfilehash: 5db23913601973630a4d013aae86cf26af337c4b
 
 
 ---
@@ -64,6 +64,9 @@ Sie können die von Apple gespeicherten Daten jederzeit mit Intune synchronisier
 
 2.  Wählen Sie die bereitzustellende App aus, und wählen Sie dann **Bereitstellung verwalten**. Befolgen Sie anschließend die Anweisungen zum Hochladen, Erstellen und Bereitstellen der App im Thema [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
+> [!TIP]
+> Sie müssen eine Bereitstellungsaktion vom Typ **Erforderlich** auswählen. „Verfügbare“ Installationen werden derzeit nicht unterstützt.
+
 Wenn Sie die Anwendung als **erforderliche** Installation bereitstellen, wird eine Lizenz von jedem Benutzer verwendet, der die App installiert.
 
 Zum Freigeben einer Lizenz müssen Sie die Bereitstellungsaktion in **Deinstallieren** ändern. Die Lizenz wird freigegeben, sobald die App deinstalliert ist.
@@ -87,6 +90,6 @@ Sie können überwachen, welche VPP-Apps bereitgestellt wurden und wie viele Liz
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

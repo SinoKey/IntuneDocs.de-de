@@ -13,13 +13,15 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 8a41c4c4f0ab4b4864fe366a2852046693b6baee
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: e61e764f4761ab83500ff6f0febe253d427729d9
 
 
 ---
 
 # Einrichten der iOS- und Mac-Geräteverwaltung
+[Hier](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md) finden Sie Unterstützung zum Einrichten Ihres iOS- oder Mac-Geräts.
+
 Mobile Intune-Geräteverwaltung von iPads, iPhones und Mac OS X-Geräten und Erteilung des Zugriffs auf Unternehmens-E-Mail und Apps. Zum Verwalten von iOS- und Mac-Geräten benötigen Sie ein APNS-Zertifikat (Apple Push Notification Service). Sobald das Zertifikat in Intune hinzugefügt ist, können Benutzer die Unternehmensportal-App zur Registrierung ihrer Geräte installieren, oder der Administrator kann die [Verwaltung von firmeneigenen iOS-Geräten](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) einrichten.
 
 1.  **Einrichten von Intune**<br>
@@ -38,16 +40,18 @@ Mobile Intune-Geräteverwaltung von iPads, iPhones und Mac OS X-Geräten und Ert
 4.  **Hinzufügen des APNs-Zertifikats zu Intune**<br>
     Navigieren Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) zu **Verwaltung** &gt; **Verwaltung mobiler Geräte** &gt; **iOS und Mac OS X** &gt; **APNS-Zertifikat hochladen**, und klicken Sie auf **APNS-Zertifikat hochladen**. **Wechseln Sie** zur Zertifikatdatei (.pem), klicken Sie auf **Öffnen** , und geben Sie Ihre **Apple-ID**ein. Mit dem APNs-Zertifikat kann Intune iOS-Geräte registrieren und verwalten, indem die Richtlinie auf registrierte mobile Geräte übertragen wird.
 
-5.  **Erläutern des Zugriffs auf Unternehmensressourcen über das Unternehmensportal**<br>
-    Ihre Benutzer müssen wissen, wie sie ihre Geräte registrieren können und was sie erwartet, wenn die Geräte in die Verwaltung eingebunden sind. [Informieren der Endbenutzer über den Einsatz von Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+5.  **Bereitstellen von Informationen für Benutzer zum Zugriff auf Unternehmensressourcen über das Unternehmensportal**<br>
+    Ihre Benutzer müssen wissen, wie sie ihre Geräte registrieren können und was sie erwartet, wenn die Geräte in die Verwaltung eingebunden sind.
+    - [Informieren der Endbenutzer über den Einsatz von Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    - [Endbenutzer-Leitfaden für iOS- und Mac-Geräte](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
 
 Wenn Ihr Unternehmen oder Ihre Organisation iOS-Geräte für Benutzer erwirbt, können diese Geräte ebenfalls zur Verwaltung als [unternehmenseigene iOS-Geräte](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) registriert werden.
 
-### Siehe auch
+### Weitere Informationen:
 [Vorbereiten der Registrierung von Geräten in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

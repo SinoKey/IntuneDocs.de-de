@@ -3,8 +3,8 @@ title: Vorbereiten der Konfiguration von MAM-Richtlinien | Microsoft Intune
 description: "Dieses Thema beschreibt die erforderlichen Voraussetzungen und Schritte zur Einrichtung von Benutzern, bevor Sie Verwaltungsrichtlinien für mobile Apps erstellen können."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: ca84a9ce4a1a418c1107f11dbb66cf64362a77f5
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: aeaa64124384a71126eeca7339416b80d395d07d
 
 
 ---
@@ -58,7 +58,7 @@ Die vollständige Liste der unterstützten Microsoft-Apps finden Sie in der [Mic
 -   Ein Office 365-Abonnement, das für Folgendes erforderlich ist:
   - Anwenden von MAM-Richtlinien auf Apps, die mehrere Identitäten unterstützen.
   - Erstellen von SharePoint Online- und Exchange Online-Arbeitskonten. Lokale Exchange- und SharePoint-Bereitstellungen werden nicht unterstützt.
--   Einrichten von Skype for Business Online für die moderne Authentifizierung. Weitere Informationen finden Sie unter [Enable modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md) (Aktivieren der modernen Authentifizierung).
+-   Einrichten von Skype for Business Online für die moderne Authentifizierung. Weitere Informationen finden Sie unter [Aktivieren der modernen Authentifizierung](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) zum Erstellen von Benutzern. Azure AD authentifiziert Benutzer, wenn diese die App starten und ihre geschäftlichen Anmeldeinformationen eingeben.
@@ -79,11 +79,13 @@ Die vollständige Liste der unterstützten Microsoft-Apps finden Sie in der [Mic
 
     ![Seite „Aktive Benutzer“ im Office-Portal](../media/AppManagement/OfficePortal_AddUsers.png)
 
+    ![Seite „Benutzer bearbeiten“ im Office-Portal](../media/AppManagement/OfficePortal_AssignLicenses.png)
+
 4.  Um einem Benutzer Zugriff auf das Office-Portal, das Azure AD-Portal und das Azure-Portal zu gewähren, weisen Sie dem Benutzer die Rolle **Globaler Administrator** zu.
 
     ![Seite zum Bearbeiten von Benutzerrollen im Office-Portal](../media/AppManagement/OfficePortal_AddRoletoUser.png)
 
-5.  MAM-Richtlinien werden für Benutzergruppen in Azure Active Directory bereitgestellt. Um Benutzergruppen für Ihre MAM-Richtlinien zu erstellen, navigieren Sie im Office-Portal zur Seite **Gruppen**, und klicken Sie auf das **+**-Symbol, um eine neue Sicherheitsgruppe zu erstellen.  Geben Sie einen Namen und eine Beschreibung ein, und klicken Sie auf **Erstellen**. Nachdem die Gruppe erstellt wurde, können Sie ihr Benutzer hinzufügen, indem Sie auf **Mitglieder bearbeiten** klicken. Die Sicherheitsgruppe wird in Azure Active Directory erstellt.
+5.  MAM-Richtlinien werden für Benutzergruppen in Azure Active Directory bereitgestellt. Um Benutzergruppen für Ihre MAM-Richtlinien zu erstellen, navigieren Sie im Office-Portal zur Seite **Gruppen**, und klicken Sie im oberen Menü auf die Option **Gruppe hinzufügen**, um eine neue Sicherheitsgruppe zu erstellen.  Geben Sie einen Namen und eine Beschreibung ein, und klicken Sie auf **Erstellen**. Nachdem die Gruppe erstellt wurde, können Sie ihr Benutzer hinzufügen, indem Sie auf **Mitglieder bearbeiten** klicken. Die Sicherheitsgruppe wird in Azure Active Directory erstellt.
 
     ![Seite für Sicherheitsgruppen im Office-Portal](../media/AppManagement/OfficePortal_CreateGroups.png)
 
@@ -105,7 +107,7 @@ Globale Administratoren haben Zugriff auf das [Azure-Portal](https://portal.azur
 
     ![Blatt „Benutzer“ im Azure-Portal](../media/AppManagement/AzurePortal_MAM_AddUsers.png)
 
-2.  Klicken Sie auf **Hinzufügen** , um das Blatt **Zugriff hinzufügen** zu öffnen.
+2.  Klicken Sie auf **Hinzufügen**, um das Blatt **Zugriff hinzufügen** zu öffnen.
 
 3.  Klicken Sie auf **Rolle auswählen**, und klicken Sie dann auf **Mitwirkender**.
 
@@ -123,6 +125,6 @@ Globale Administratoren haben Zugriff auf das [Azure-Portal](https://portal.azur
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

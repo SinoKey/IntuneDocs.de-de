@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: ef0210d7ca2d44608c5baa8f48ef56a2b9b5ce3a
+ms.sourcegitcommit: b93c6fe16e598c6f4b0d87981de8655f3de9c8d3
+ms.openlocfilehash: 051f2994c59b2886a81a50d7c72f51627064bc6a
 
 
 ---
@@ -24,6 +24,15 @@ Erfahren Sie, was in diesem Release von Microsoft Intune neu ist. Sie erhalten a
 
 Alle diese Features werden letztlich auch für hybride Kundenbereitstellungen (Configuration Manager mit Intune) unterstützt. Weitere Informationen zu neuen hybriden Features finden Sie auf unserer [Seite mit neuen hybriden Funktionen](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
+## August 2016
+## Aktualisierungen am Unternehmensportal
+
+### Android
+- **Android-Unternehmensportal-App**<br/>
+Die Intune-Unternehmensportal-App für Android bietet „Day-0“-Unterstützung für das bevorstehende Android 7.0-Betriebssystem für mobile Geräte.  
+
+- **Funktion für das Remote-Zurücksetzen von Passcodes auf Android 7.0-Geräten von Google entfernt**<br/>
+IT-Administratoren und Endbenutzer von Intune sind nicht in der Lage, den Gerätepasscode auf Android 7.0-Geräten remote zurückzusetzen, da diese Funktion von Google für Android 7.0-Geräte entfernt wurde. Bei Versionen vor Android 7.0 kann ein Benutzerpasscode weiterhin von IT-Administratoren remote zurückgesetzt werden, und Endbenutzer sind weiterhin in der Lage, ihre Passcodes auf der Unternehmensportal-Website zurückzusetzen.
 
 ## Juli 2016
 ## App-Verwaltung
@@ -41,7 +50,9 @@ Mit der Intune-App-SDK-Xamarin-Komponente können Sie die Intune-Verwaltungsfeat
 Intune erhöhte das maximal konfigurierbare Limit für die Geräteregistrierung von 5 auf 15 Geräte pro Benutzer.
 <!---TFS 1289896 --->
 
-
+### TeamViewer-Integration für Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird
+Mithilfe der [TeamViewer](https://www.teamviewer.com)-Integration für Windows-PCs, auf denen der Intune-Client ausgeführt wird, können Sie Remoteunterstützungssitzungen mit Windows-PCs herstellen, um Helpdeskabteilungen für Endbenutzer zu entlasten. Dies gilt für Windows 7, 8, 8.1 und Windows 10. Weitere Informationen finden Sie unter [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient](intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
+<!---TFS 1284856--->
 
 ## Aktualisierungen am Unternehmensportal
 ### Unternehmensportal-Website
@@ -93,7 +104,7 @@ Zusätzlich zu Änderungen der Gruppenverwaltung werden die folgende Funktionen 
 Weitere Informationen dazu, wie diese Veralterungen entschärft werden können, werden im August veröffentlicht.
 
 ### Hinzufügen von „Benachrichtigungen“ zum Unternehmensportal für Android
-Wir veröffentlichen ein Update für das Unternehmensportal für Android im August, mit dem ein neues Symbol **Benachrichtigungen** auf der Startseite eingeführt wird. Beim Tippen auf dieses Symbol wird die Seite **Benachrichtigungen** aufgerufen, auf der für Ihre Endbenutzer alle Elemente angezeigt werden, die in der Unternehmensportal-App Aufmerksamkeit erfordern, z. B. Nichtkompatibilität, Registrierungsupdate und Registrierungsaktivierung. Wenn Sie auch die iOS-Unternehmensportal-App verwenden, sehen Sie die Benachrichtigungen bereits. Wenn die Seite **Benachrichtigungen** eingeführt wird, werden Sie die Seite **Unternehmenszugriff einrichten** nicht bei jedem Start bzw. jeder Fortsetzung des Unternehmensportals für Android sehen, solange das Gerät bereits registriert ist. Wir haben erfahren, dass viele von Ihnen Endbenutzeranleitungen erstellt haben, und würden eine vorherige Mitteilung schätzen, wenn Ihre Anleitung/Screenshots vielleicht aktualisiert werden müssen. Bitte aktualisieren Sie Ihre Dokumentation gemäß der anstehenden Änderung der Benutzeroberfläche. Aktualisierte Screenshots finden Sie hier: https://aka.ms/androidcpupdate.  
+Im September veröffentlichen wir ein Update zum Unternehmensportal für Android, mit dem auf der Startseite das neue Symbol **Benachrichtigungen** eingeführt wird. Beim Tippen auf dieses Symbol wird die Seite **Benachrichtigungen** aufgerufen, auf der für Ihre Endbenutzer alle Elemente angezeigt werden, die in der Unternehmensportal-App Aufmerksamkeit erfordern, z. B. Nichtkompatibilität, Registrierungsupdate und Registrierungsaktivierung. Wenn Sie auch die iOS-Unternehmensportal-App verwenden, sehen Sie die Benachrichtigungen bereits. Wenn die Seite **Benachrichtigungen** eingeführt wird, werden Sie die Seite **Unternehmenszugriff einrichten** nicht bei jedem Start bzw. jeder Fortsetzung des Unternehmensportals für Android sehen, solange das Gerät bereits registriert ist. Wir haben erfahren, dass viele von Ihnen Endbenutzeranleitungen erstellt haben, und würden eine vorherige Mitteilung schätzen, wenn Ihre Anleitung/Screenshots vielleicht aktualisiert werden müssen. Bitte aktualisieren Sie Ihre Dokumentation gemäß der anstehenden Änderung der Benutzeroberfläche. Aktualisierte Screenshots finden Sie hier: https://aka.ms/androidcpupdate.  
 
 
 
@@ -147,6 +158,6 @@ Wenn Sie feststellen möchten, was während der letzten sechs Monate in Intune v
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

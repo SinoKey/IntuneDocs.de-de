@@ -4,7 +4,7 @@ description: "Intune bietet eine Auswahl von integrierten allgemeinen Einstellun
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 07/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 04fca72cd426ee4718e100cb2633ca2c967b4c05
+ms.sourcegitcommit: 1648a070cc2d318df4d434955f6068cd4b42690c
+ms.openlocfilehash: 87021459424c84feed3b676364cf890f43ff32d9
 
 
 ---
@@ -43,7 +43,7 @@ Konfigurieren Sie mithilfe der **allgemeinen Windows Phone-Konfigurationsrichtli
 |----------------|-----------------------------------------|
 |**Anfordern eines Kennworts zum Entsperren mobiler Geräte**|Gibt an, ob Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können.|Ja|Ja|
 |**Erforderlicher Kennworttyp**|Gibt den erforderlichen Typ des Kennworts an, z. B. nur numerisch oder alphanumerisch.|Ja|Ja|
-|**Erforderlicher Kennworttyp – Mindestanzahl von Zeichensätzen**|Es gibt vier Zeichensätze: Kleinbuchstaben, Großbuchstaben, Zahlen und Symbole. Diese Einstellung gibt an, wie viele Zeichensätze im Kennwort enthalten sein müssen. Für iOS-Geräte wird hiermit jedoch die erforderliche Anzahl von Symbolzeichen im Kennwort angegeben.|Ja|Ja|
+|**Erforderlicher Kennworttyp – Minimale Anzahl von Zeichensätzen**|Es gibt vier Zeichensätze: Kleinbuchstaben, Großbuchstaben, Zahlen und Symbole. Diese Einstellung gibt an, wie viele Zeichensätze im Kennwort enthalten sein müssen. Für iOS-Geräte wird hiermit jedoch die erforderliche Anzahl von Symbolzeichen im Kennwort angegeben.|Ja|Ja|
 |**Minimale Kennwortlänge**|Gibt die Mindestanzahl von Zeichen an, die das Kennwort enthalten muss.|Ja|Ja|
 |**Einfache Kennwörter zulassen**|Einfache Kennwörter enthalten '0000' und '1234'.|Ja|Ja|
 |**Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird**|Gibt an, wie häufig ein falsches Kennwort eingegeben werden kann, bis das Gerät zurückgesetzt wird.|Ja|Ja|
@@ -56,7 +56,7 @@ Konfigurieren Sie mithilfe der **allgemeinen Windows Phone-Konfigurationsrichtli
 
 |Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Verschlüsselung auf mobilem Gerät anfordern**|Schreibt vor, dass die Daten auf unterstützten mobilen Geräten verschlüsselt werden müssen.<br>Für Windows Phone 8-Geräte müssen Sie hier **Ja**festlegen.|Ja|Ja|
+|**Verschlüsselung auf mobilen Geräten vorschreiben**|Schreibt vor, dass die Daten auf unterstützten mobilen Geräten verschlüsselt werden müssen.<br>Für Windows Phone 8-Geräte müssen Sie hier **Ja**festlegen.|Ja|Ja|
 
 ### Systemeinstellungen
 
@@ -109,11 +109,11 @@ Konfigurieren Sie mithilfe der **allgemeinen Windows Phone-Konfigurationsrichtli
 |----------------|-----------------------------------------|
 |**Kopieren und Einfügen zulassen**|Lassen Sie Kopier- und Einfügefunktionen auf Geräten zu.|Nein|Ja|
 
-### Einstellungen für kompatible und nicht kompatible Anwendungen
-Geben Sie in der Liste der **kompatiblen &amp; nicht kompatiblen Apps** eine Liste kompatibler oder nicht kompatibler Apps mit den folgenden Informationen ein:
+### Einstellungen für zulässige und blockierte Apps
+Geben Sie in der **Liste zulässiger oder blockierter Apps** die jeweiligen Apps mit den folgenden Informationen an:
 
 > [!NOTE]
-> Eine einzelne Richtlinie kann nur eine Liste kompatibler oder eine Liste nicht kompatibler Apps enthalten. Sie können nicht beide Typen in derselben Richtlinie angeben.
+> Eine einzelne Richtlinie kann nur eine Liste zulässiger oder eine Liste blockierter Apps enthalten. Sie können nicht beide Typen in derselben Richtlinie angeben.
 
 |Name der Einstellung|Details|
 |----------------|--------------------|
@@ -127,14 +127,14 @@ Geben Sie in der Liste der **kompatiblen &amp; nicht kompatiblen Apps** eine Lis
 > Wenn Sie eine Liste von zulässigen Apps für Windows Phone 8.1-Geräte angeben, müssen Sie die Unternehmensportal-App zu dieser Liste hinzufügen, da sie andernfalls blockiert wird.
 
 
-### Referenzinformationen für kompatible und nicht kompatible Apps
+### Referenzinformationen für zulässige und blockierte Apps
 
 #### Angeben von URLs zu App-Stores
-Verwenden Sie zum Festlegen einer App-URL in der Liste konformer und nicht konformer Apps das folgende Format:
+Verwenden Sie das folgende Format, um eine App-URL in der Liste zulässiger und blockierter Apps anzugeben:
 
 Suchen Sie auf der [Windows Phone-Seite für Apps und Spiele](http://www.windowsphone.com/en-us/store/overview) nach der App, die Sie verwenden möchten.
 
-Öffnen Sie die Seite der App, und kopieren Sie die URL in die Zwischenablage. Jetzt können Sie diese als URL in der Liste mit kompatiblen oder nicht kompatiblen Apps verwenden.
+Öffnen Sie die Seite der App, und kopieren Sie die URL in die Zwischenablage. Sie können diese URL nun in der Liste kompatibler oder nicht kompatibler Apps verwenden.
 
 **Beispiel:** Durchsuchen Sie den Store nach der Skype-App. Die URL, die Sie verwenden, ist **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
@@ -172,6 +172,6 @@ Geben Sie im Dialogfeld **OMA-URI hinzufügen oder bearbeiten** die folgenden In
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 
