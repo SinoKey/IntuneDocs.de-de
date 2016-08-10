@@ -145,7 +145,7 @@ Allgemeines Feedback zu Microsoft Intune, z. B. zur Archivierung von DCRs (Desi
 * [Löschen verwalteter Unternehmensdaten aus Apps mit Microsoft Intune](https://technet.microsoft.com/library/mt627826.aspx): Informationen zum Entfernen von Unternehmensdaten aus Apps.
 
 **Aktualisierter Inhalt**
-* [Einstellungen für Windows 10-Konfigurationsrichtlinien in Microsoft Intune](https://technet.microsoft.com/library/mt404697.aspx): Es wurden neue Einstellungen für den Edge-Browser hinzugefügt.
+* [Einstellungen für Windows 10-Konfigurationsrichtlinien in Microsoft Intune](https://technet.microsoft.com/library/mt404697.aspx): Es wurden neue Einstellungen für den Microsoft Edge-Browser hinzugefügt.
 * [Einrichten der iOS- und Mac-Verwaltung mit Microsoft Intune](http://technet.microsoft.com/library/dn408185.aspx): Es wurden Informationen zum Registrieren von Mac OS X-Geräten hinzugefügt.
 * [Verstehen Sie Ihre Geräte mithilfe des Inventars in Microsoft Intune](https://technet.microsoft.com/library/jj733634.aspx): Es wurden Informationen zum Inventar hinzugefügt, das von Mac OS X-Geräte gesammelt wurde. Zudem wurde das Thema mit den neuesten Informationen für alle Plattformen aktualisiert.
 * [Einblicke in Microsoft Intune-Vorgänge durch Berichte](https://technet.microsoft.com/library/dn646977.aspx): Es wurden Informationen zu den beiden neuen Berichten hinzugefügt, mit denen Informationen zu Ihren verwalteten Mac OS X-Geräten angezeigt werden können.
