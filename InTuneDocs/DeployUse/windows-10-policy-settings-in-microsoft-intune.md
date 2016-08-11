@@ -75,16 +75,16 @@ Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für 
 
 |Name der Einstellung|Details|
 |----------------|----------------------|
-|**Webbrowser zulassen**|Ermöglichen Sie die Verwendung des Edge-Webbrowsers auf dem Gerät.<br>(Nur Windows 10 Mobile)|
+|**Webbrowser zulassen**|Ermöglichen Sie die Verwendung des Microsoft Edge-Webbrowsers auf dem Gerät.<br>(Nur Windows 10 Mobile)|
 |**Suchvorschläge auf der Adressleiste zulassen**|Ermöglicht dem Suchmodul, Websites während der Eingabe von Suchausdrücken vorzuschlagen.|
 |**Senden von Intranetdatenverkehr an Internet Explorer zulassen**|Ermöglicht Benutzern, Intranetwebsites in Internet Explorer zu öffnen.<br>(Nur Windows 10 Desktop)|
-|**Nicht verfolgen (Do not track) zulassen**|Konfiguriert den Edge-Browser zum Senden von DNT-Headern (Do Not Track, nicht nachverfolgen) an Websites, die Benutzer besuchen.|
+|**Nicht verfolgen (Do not track) zulassen**|Konfiguriert den Microsoft Edge-Browser zum Senden von DNT-Headern (Do Not Track, nicht nachverfolgen) an Websites, die Benutzer besuchen.|
 |**SmartScreen aktivieren**|Aktiviert die SmartScreen-Browsereinstellung auf Geräten.|
-|**Active Scripting zulassen**|Ermöglicht die Ausführung von Skripts wie JavaScript im Edge-Browser.|
+|**Active Scripting zulassen**|Ermöglicht die Ausführung von Skripts wie JavaScript im Microsoft Edge-Browser.|
 |**Popups zulassen**|Aktiviert oder deaktiviert den Popupblocker des Browsers.<br>(Nur Windows 10 Desktop)|
 |**Cookies zulassen**|Aktiviert oder deaktiviert Cookies.|
 |**AutoAusfüllen zulassen**|Ermöglicht Benutzern, die Einstellungen für AutoVervollständigen im Browser zu ändern.<br>(Nur Windows 10 Desktop)|
-|**Kennwort-Manager zulassen**|Aktivieren oder deaktivieren Sie den Edge-Kennwort-Manager.|
+|**Kennwort-Manager zulassen**|Aktivieren oder deaktivieren Sie den Microsoft Edge-Kennwort-Manager.|
 |**Ort der Standortliste für Enterprise-Modus**|Gibt an, wo Sie die Liste der Websites finden, die im Unternehmensmodus geöffnet werden. Benutzer können diese Liste nicht bearbeiten.<br>(Nur Windows 10 Desktop)|
 
 ### Apps
@@ -302,13 +302,13 @@ Wenn Sie die benutzerdefinierte Windows-URI-Richtlinie verwenden möchten, müss
 |**ExcludedPaths**<br>(nur Desktop)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Datentyp:** Zeichenfolge<br /><br />**Zulässige Werte:**<br /><br />*&lt;Liste der durch Semikolon getrennten Pfade&gt;*<br /><br />Beispiel: **c:\test;c:\test1.exe**<br /><br />**Standardwert:** Keine Pfade ausgeschlossen|
 |**ExcludedProcesses**<br>(nur Desktop)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Datentyp:** Zeichenfolge<br /><br />**Zulässige Werte:**<br>*&lt;Liste der durch Semikolon getrennten Pfade&gt;*<br>Beispiel: **c:\test.exe;c:\test1.exe**<br>**Standardwert:** Keine Prozesse ausgeschlossen|
 
-### URI-Einstellungen für den Edge-Browser
+### URI-Einstellungen für den Microsoft Edge-Browser
 
 |Name der Richtlinie|Details|
 |---------------|------------|-----------|
 |**Browser zulassen**<br>(nur Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Browser/AllowBrowser<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0**: Browsen deaktiviert<br>**1**: Browsen aktiviert (Standard)|
 |**AllowSearchSuggestionsinAddressBar**<br>(Desktop und Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Browser/AllowSearchSuggestionsinAddressBar<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0**: Keine Suchvorschläge anzeigen<br>**1**: Suchvorschläge anzeigen (Standard)|
-|**SendIntranetTraffictoInternetExplorer**<br>(nur Desktop)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0**: Deaktiviert (Intranetsites im Edge-Browser öffnen – Standard)<br>**1**: Aktiviert (Intranetsites in Internet Explorer öffnen)|
+|**SendIntranetTraffictoInternetExplorer**<br>(nur Desktop)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0**: Deaktiviert (Intranetsites im Microsoft Edge-Browser öffnen – Standard)<br>**1**: Aktiviert (Intranetsites in Internet Explorer öffnen)|
 |**Nicht verfolgen (Do not track) zulassen**<br>(Desktop und Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Deaktiviert (DNT nicht senden – Standard)<br>**1** – Aktiviert (DNT senden)|
 |**SmartScreen konfigurieren**<br>(Desktop und Mobile)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Nicht zulässig<br>**1** – Zulassen (Standard)|
 |**Popups zulassen**<br>(nur Desktop)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Browser/AllowPopups<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0** – Keine Popups zulassen (Standard)<br>**1** – Popups zulassen|
