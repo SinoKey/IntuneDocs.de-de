@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 5468914de3444a709068b4d3d143d3b2828616eb
+ms.sourcegitcommit: 6dbb6012389d8058c2d9b1c46b4ae8c2418a6130
+ms.openlocfilehash: 30ebdfa1729df81a3b4a4a90b71aadacf373bb2d
 
 
 ---
@@ -26,7 +26,7 @@ Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Endbenutzer 
 
 **Erforderliche Apps**: Apps, die vom Administrator benötigt werden und auf dem Gerät (abhängig von der Plattform) mit minimalen Benutzereingriffen installiert werden.
 
-**Nicht erforderlich Apps **: Apps, die in der App-Liste im Unternehmensportal enthalten sind und die ein Benutzer optional installieren kann.
+**Verfügbare Apps **: Apps, die in der App-Liste im Unternehmensportal enthalten sind und die ein Benutzer optional installieren kann.
 
 **Verwaltete Apps**: Apps, die mittels Richtlinien verwaltet werden können und die von Intune „umschlossen“ werden oder mit dem Intune Mobile Application Management (MAM) Software Development Kit (SDK) erstellt wurden. Diese Apps können von Intune verwaltet werden, und ihnen lassen sich Anwendungsrichtlinien zuweisen.
 
@@ -38,6 +38,6 @@ Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Endbenutzer 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

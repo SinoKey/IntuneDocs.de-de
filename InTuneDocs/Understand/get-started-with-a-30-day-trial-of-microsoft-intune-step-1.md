@@ -2,9 +2,9 @@
 title: "Registrieren für eine 30-tägige Evaluierung von Microsoft Intune | Microsoft Intune"
 description: "Registrieren für eine kostenlose 30-tägige Evaluierungsversion von Intune und Erwägungen vor der Registrierung."
 keywords: 
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: 5c36bac82389453d83504564cf26beb1027feefe
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 081d396975473cd605e9619498aef78fb2d0e1dd
 
 
 ---
@@ -61,6 +61,6 @@ Gratulation! Sie habe soeben Schritt 1 der exemplarischen Vorgehensweise *Micro
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52d9d2ad912de7bc775cde2c40c8de27a09ba2af
-ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
+ms.sourcegitcommit: 87aea89a323fb05087322fb117d0be2e579a06ff
+ms.openlocfilehash: 6eda2828a801700e885d1bed667f9260f325e175
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
 
 Sie können ein App-bezogenes VPN-Profil für Android-Geräte erstellen, die von Intune verwaltet werden. Zunächst erstellen Sie ein VPN-Profil, das den Verbindungstyp „Pulse Secure“ verwendet, und anschließend eine benutzerdefinierte Konfigurationsrichtlinie, die dieses Profil bestimmten Apps zuordnet. Nachdem Sie diese Richtlinien auf Ihrem Android-Gerät oder für Ihre Benutzergruppen bereitgestellt haben, wird beim Öffnen einer der angegebenen Apps auf diesen Geräten eine VPN-Verbindung für die jeweilige App geöffnet.
 
-> [HINWEIS]
+> [!NOTE]
 > 
 > Für dieses Profil wird nur der Verbindungstyp „Pulse Secure“ unterstützt.
 
@@ -37,7 +37,8 @@ Sie können ein App-bezogenes VPN-Profil für Android-Geräte erstellen, die von
 4. Vervollständigen und speichern Sie das VPN-Profil. Weitere Informationen zu VPN-Profilen finden Sie unter [VPN-Verbindungen](vpn-connections-in-microsoft-intune.md).
 
 > [!NOTE]
-Notieren Sie den Namen des VPN-Profils für den nächsten Schritt. Beispiel: **MeineApp-VPN-Profil**.
+> 
+> Notieren Sie den Namen des VPN-Profils für den nächsten Schritt.   Beispiel: **MeineApp-VPN-Profil**.
 
 ### Schritt 2: Erstellen einer benutzerdefinierten Konfiguration
 
@@ -81,6 +82,6 @@ Eine Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeit
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 
