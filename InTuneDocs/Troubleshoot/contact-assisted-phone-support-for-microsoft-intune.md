@@ -52,7 +52,7 @@ ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
 |Deutschland|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr CET (UTC +1)|Deutsch&#42;, Englisch|0800 5892332|069380789508||
 |Griechenland|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr EET (UTC +2)|Griechisch&#42;, Englisch|0080044142831||
 |Guatemala|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr CST (UTC -6)|Spanisch&#42;, Englisch|1-800-300-0069<br /><br />Schritt 1: Wählen Sie Option 4 aus (für beschränkten Zugriff)<br /><br />Schritt 2. Geben Sie Code 7007 ein.||
-|Hongkong (SAR)|24 x 7|Montag-Freitag<br /><br />09:00-18:00 Uhr HKT (UTC +8)|Kantonesisch&#42;, Mandarin&#42;, Englisch||30713055|
+|Hongkong SAR|24 x 7|Montag-Freitag<br /><br />09:00-18:00 Uhr HKT (UTC +8)|Kantonesisch&#42;, Mandarin&#42;, Englisch||30713055|
 |Ungarn|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr CET (UTC +1)|Ungarisch&#42;, Englisch|36 80 983 899|36 1 778 9292|
 |Island|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr GMT (UTC)|Englisch|8009609||
 |Indien|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr IST (UTC +5:30)|Englisch|000800 4402038|18002002052|
