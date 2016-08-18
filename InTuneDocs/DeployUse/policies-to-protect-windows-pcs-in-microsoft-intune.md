@@ -13,15 +13,15 @@ ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 65924fc508c415d2146d955e891d403ba280b324
+ms.sourcegitcommit: 321a19c38a4b69f5d16f10f054dd517b696b44eb
+ms.openlocfilehash: e649db8209f6c3c99af3353188fb8ebf463d922f
 
 
 ---
 
 # Verwenden von Richtlinien zum Schutz von Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird
 
-Microsoft Intune bietet drei Richtlinien, mit denen Sie die Sicherheit von Windows-PCs gewährleisten können, wenn diese mit der [Intune-Clientsoftware](manage-windows-pcs-with-microsoft-intune.md) verwaltet werden. 
+Microsoft Intune bietet drei Richtlinien, mit denen Sie die Sicherheit von Windows-PCs gewährleisten können, die von der [Intune-Clientsoftware](manage-windows-pcs-with-microsoft-intune.md) verwaltet werden.
 
 
 ## Softwareupdates
@@ -38,12 +38,11 @@ Eine Ihrer wichtigsten Aufgaben als IT-Administrator besteht darin, die von Ihne
 
 
 
-### Weitere Informationen
+### Weitere Informationen:
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Auswählen der Methode zum Verwalten von Geräten | Microsoft Intune"
-description: 
+description: "Hier erhalten Sie Informationen zu den verschiedenen Möglichkeiten, mit denen Sie Geräte registrieren und verwalten können."
 keywords: 
-author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+author: robstackmsft
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a7c6d8f4e47f050888e9fcf5edfa586c4a24065
-ms.openlocfilehash: 502a08c1bf49057220917d929a8ffe0b98d3de2a
+ms.sourcegitcommit: 7c244554eb4b6ae5a248b53a7b4b6171807f4bfa
+ms.openlocfilehash: e353391375ce7b54f0be479607349e5618de1c37
 
 
 ---
@@ -42,7 +42,7 @@ Für Betriebssysteme mobiler Geräte, einschließlich iOS, Android und Windows P
 |**Beschreibung**|Persönliches, mit Microsoft Intune registriertes Gerät|Firmeneigenes Gerät für einzelnen Benutzer|Firmeneigenes Gerät, das über ein von vielen Benutzern gemeinsam genutztes Managerkonto verwaltet wird|Firmeneigenes, benutzerunabhängiges Gerät, das von vielen Benutzern verwendet wird|
 |**Benutzer des Geräts**|Besitzer|Zugewiesener Benutzer|Kein benutzerspezifisches Konto|Kein bestimmter Benutzer|
 |**Registriert von**|Besitzer|Administrator|Geräte-Manager|Beliebig|
-|**Aufhebung der Registrierung durch**|Besitzer oder Administrator|Administrator|Administrator|Administrator|
+|**Aufhebung der Registrierung durch**|Besitzer oder Administrator|Plattform |Administrator oder Benutzer|Administrator oder Benutzer|
 |**Berechtigung zum Zurücksetzen**|Besitzer oder Administrator|Administrator|Administrator|Administrator|
 
 <div class="alert alert-tip">
@@ -80,6 +80,6 @@ Sie haben nun einige der Funktionen kennengelernt, die Sie zum Registrieren Ihre
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

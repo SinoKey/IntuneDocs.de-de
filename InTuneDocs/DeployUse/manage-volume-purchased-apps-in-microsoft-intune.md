@@ -13,8 +13,8 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 6da7393834b7cb14085e090a014e030d2df3ff2f
+ms.sourcegitcommit: 533163d58b3d5f838074c31832ea5500aaef36c2
+ms.openlocfilehash: 9735708dc636f015e259eb4a852ddd57b90f1b92
 
 
 ---
@@ -27,7 +27,7 @@ Microsoft Intune unterstützt Sie bei der Verwaltung von Apps, die über ein sol
 
 ## Welche Arten von Apps können verwaltet werden?
 
-Mit Intune können Sie zurzeit Apps verwalten, die Sie im Rahmen von Volumenprogrammen im iOS App Store und dem Windows Store für Unternehmen erworben haben.
+Mit Intune können Sie Apps verwalten, die Sie im Rahmen von Volumenprogrammen im iOS App Store und dem Windows Store für Unternehmen erworben haben.
 Informationen zum Verwalten von lizenzierten Apps aus den einzelnen Stores finden Sie in den folgenden Themen:
 
 - [Verwalten von Apps aus einem iOS-Volumenprogramm](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
@@ -35,9 +35,6 @@ Informationen zum Verwalten von lizenzierten Apps aus den einzelnen Stores finde
 
 
 
-
-
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
-ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
+ms.sourcegitcommit: 0178bba517b0fc9e02ba67e6f3aba7a8a0ee445f
+ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
 
 
 ---
@@ -32,7 +32,7 @@ Verwenden Sie die in diesem Thema aufgeführten Richtlinieneinstellungen, um int
 Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für Windows 10, um allgemeine Einstellungen für registrierte Windows 10 Desktop- und Windows 10 Mobile-Geräte zu konfigurieren. 
 
 
-### Kennwort
+## – Kennwort
 
 |Name der Einstellung|Details|
 |----------------|----------------------|
@@ -47,13 +47,13 @@ Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für 
 |**Kennwortverlauf speichern** - **Wiederverwendung vorheriger Kennwörter verhindern**|Gibt an, wie viele zuvor verwendete Kennwörter vom Gerät gespeichert werden.|
 |**Kennwort anfordern, wenn das Gerät aus dem Leerlauf zurückkehrt**|Ist diese Einstellung aktiviert, muss der Benutzer ein Kennwort zum Entsperren des Geräts nach dem Leerlauf eingeben.<br>(Nur Windows 10 Mobile)|
 
-### Verschlüsselung
+## – Verschlüsselung
 
 |Name der Einstellung|Details|
 |----------------|----------------------|
 |**Verschlüsselung auf mobilen Geräten vorschreiben**|Ermöglicht die Verschlüsselung auf Zielgeräten.<br>(Nur Windows 10 Mobile)|
 
-### System
+## – System
 
 |Name der Einstellung|Details|
 |----------------|----------------------|
@@ -63,7 +63,7 @@ Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für 
 |**Senden von Diagnose- und Verwendungsdaten an Microsoft zulassen**|Bestimmt den Umfang an Diagnose- und Verwendungsdaten, die von Geräten an Microsoft gesendet werden.<br><br>**Nein**: Keine Daten werden an Microsoft gesendet.<br>**Standard**: Das Gerät sendet nur begrenzte Informationen an Microsoft.<br>**Erweitert**: Das Gerät sendet erweiterte Diagnosedaten an Microsoft.<br>**Vollständig (empfohlen)**: Das Gerät sendet die gleichen Daten wie mit **Erweitert** sowie zusätzliche Daten über den Gerätezustand.|
 
 
-### Konto und Synchronisierung
+## – Konto und Synchronisierung
 
 |Name der Einstellung|Details|
 |----------------|----------------------|---------------------|
@@ -71,7 +71,7 @@ Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für 
 |**Manuelles Hinzufügen von Nicht-Microsoft-Konten zulassen**|Ermöglicht dem Benutzer, dem Gerät E-Mail-Konten hinzuzufügen, die nicht mit einem Microsoft-Konto verknüpft sind.|
 |**Synchronisierung von Einstellungen für Microsoft-Konten zulassen**|Ermöglicht das Synchronisieren der mit einem Microsoft-Konto verknüpften Geräte- und App-Einstellungen zwischen Geräten.|
 
-### Microsoft Edge
+## – Microsoft Edge
 
 |Name der Einstellung|Details|
 |----------------|----------------------|
@@ -87,7 +87,7 @@ Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für 
 |**Kennwort-Manager zulassen**|Aktivieren oder deaktivieren Sie den Microsoft Edge-Kennwort-Manager.|
 |**Ort der Standortliste für Enterprise-Modus**|Gibt an, wo Sie die Liste der Websites finden, die im Unternehmensmodus geöffnet werden. Benutzer können diese Liste nicht bearbeiten.<br>(Nur Windows 10 Desktop)|
 
-### Apps
+## – Apps
 
 |Name der Einstellung|Details|
 |----------------|----------------------|---------------------|
@@ -95,7 +95,7 @@ Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für 
 
 
 
-### Mobilfunk
+## – Mobilfunk
 
 |Name der Einstellung|Details|
 |----------------|----------------------|---------------------|
@@ -103,7 +103,7 @@ Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für 
 |**VPN über Mobilfunk zulassen**|Steuert, ob das Gerät auf VPN-Verbindungen zugreifen kann, wenn es mit einem Mobilfunknetz verbunden ist.|
 |**VPN-Roaming über Mobilfunk zulassen**|Steuert, ob das Gerät beim Roaming in einem Mobilfunknetz auf VPN-Verbindungen zugreifen kann.|
 
-### Hardware
+## – Hardware
 
 |Name der Einstellung|Details|
 |----------------|----------------------|
@@ -122,7 +122,7 @@ Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für 
 |**USB-Verbindung zulassen**|Steuert, ob die Geräte über eine USB-Verbindung auf externe Speichergeräte zugreifen können.|
 |**Diebstahlschutzmodus zulassen**|Konfigurieren Sie, ob der Windows-Diebstahlschutzmodus aktiviert ist.|
 
-### Features
+## – Features
 
 |Name der Einstellung|Details|
 |----------------|----------------------|---------------------|
@@ -131,7 +131,7 @@ Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für 
 |**Cortana zulassen**|Aktivieren oder deaktivieren Sie den Cortana-Sprach-Assistenten.|
 |**Info-Center-Benachrichtigungen zulassen**|Aktivieren oder deaktivieren Sie Wartungscenterbenachrichtigungen auf dem Gerätesperrbildschirm.<br>(Nur Windows 10 Mobile)|
 
-### Defender
+## – Windows Defender
 
 Alle Einstellungen gelten für nur Windows 10 Desktop.
 
@@ -162,7 +162,7 @@ Alle Einstellungen gelten für nur Windows 10 Desktop.
 |**Prozesse, die beim Ausführen einer Überprüfung oder bei Verwendung des Echtzeitschutzes auszuschließen sind**|Fügen Sie Prozesse des Typs **.exe**, **.com** oder **.scr** der Ausschlussliste hinzu. Diese Prozesse werden nicht in Echtzeitüberprüfungen oder geplante Überprüfungen einbezogen.| 
 
 
-### Updateeinstellungen
+## – Updates
 
 |Name der Einstellung|Details|
 |----------------|---------------|
@@ -176,14 +176,14 @@ Diese Funktion soll es Ihnen ermöglichen, Windows 10-Einstellungen bereitzustel
 
 
 
-### Allgemeine Einstellungen der benutzerdefinierten Richtlinie
+## – Allgemein
 
 |Name der Einstellung|Details|
     |----------------|--------------------|
     |**Name**|Geben Sie einen eindeutigen Namen für die Richtlinie ein, damit Sie sie leichter in der Intune-Konsole identifizieren können.|
     |**Beschreibung**|Geben Sie eine Beschreibung ein, die einen Überblick über die Richtlinie bietet, und andere relevante Informationen, die Ihnen die Suche danach erleichtern.|
 
-### OMA-URI-Einstellungen der benutzerdefinierten Richtlinie
+## – OMA-URI-Einstellungen
 
 |Name der Einstellung|Details|
     |--------|--------------------|
@@ -194,12 +194,12 @@ Diese Funktion soll es Ihnen ermöglichen, Windows 10-Einstellungen bereitzustel
     |**Wert**|Geben Sie den mit der zuvor festgelegten OMA-URI-Einstellung zu verknüpfenden Wert an.|
 
 
-## Benutzerdefinierte URI-Einstellungen für Windows 10-Geräte
+## – Windows 10-URI-Einstellungen
 In diesem Thema werden die Einstellungen aufgeführt, die Sie für Windows 10- und Windows 10 Mobile-Geräte in einer **benutzerdefinierten Windows 10-Richtlinie** von Microsoft Intune konfigurieren können.
 
 Wenn Sie die benutzerdefinierte Windows-URI-Richtlinie verwenden möchten, müssen alle Geräte bei Intune registriert sein.
 
-### URI-Einstellungen von Richtlinien
+## – Richtlinie
 
 |Name der Richtlinie|Details|
 |---------------|------------|-----------|
@@ -272,7 +272,7 @@ Wenn Sie die benutzerdefinierte Windows-URI-Richtlinie verwenden möchten, müss
 |**Update/DeferUpgradePeriod**<br>(Desktop und Mobile)|**Beschreibung**: Richtlinie zum Zurückstellen von Featureupgrades für bis zu 8 Monate<br /><br />**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0**: Updates umgehend anwenden (Standardeinstellung)<br>**1**-**8**: Anzahl von Monaten für das Zurückstellen von Featureupgrades.<br /><br />Weitere Informationen finden Sie in folgenden Quellen:<br>[Einführung in die Wartung von Windows 10](https://technet.microsoft.com/library/mt598226.aspx)<br>[Planen der Windows 10-Bereitstellung](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/PauseDeferrals**<br>(Desktop und Mobile)|**Beschreibung**: Mit dieser Einstellung wird der Empfang von Updates und Upgrades auf einem CBB-Computer für bis zu 5 Wochen unterbrochen. Verwenden Sie diese Einstellung, wenn mit einem Update ein Problem auftritt.<br /><br />**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**Datentyp:** Ganzzahl<br /><br />**Zulässige Werte:**<br>**0**: Updates umgehend anwenden (Standardeinstellung)<br>**1**: Updates und Upgrades anhalten (läuft nach 5 Wochen ab)|
 
-### Windows Defender-URI-Einstellungen
+## – Windows Defender
 
 |Name der Richtlinie|Details|
 |---------------|-----------|
@@ -302,7 +302,7 @@ Wenn Sie die benutzerdefinierte Windows-URI-Richtlinie verwenden möchten, müss
 |**ExcludedPaths**<br>(nur Desktop)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Datentyp:** Zeichenfolge<br /><br />**Zulässige Werte:**<br /><br />*&lt;Liste der durch Semikolon getrennten Pfade&gt;*<br /><br />Beispiel: **c:\test;c:\test1.exe**<br /><br />**Standardwert:** Keine Pfade ausgeschlossen|
 |**ExcludedProcesses**<br>(nur Desktop)|**Vollständiger URI-Pfad:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Datentyp:** Zeichenfolge<br /><br />**Zulässige Werte:**<br>*&lt;Liste der durch Semikolon getrennten Pfade&gt;*<br>Beispiel: **c:\test.exe;c:\test1.exe**<br>**Standardwert:** Keine Prozesse ausgeschlossen|
 
-### URI-Einstellungen für den Microsoft Edge-Browser
+## – Edgebrowser
 
 |Name der Richtlinie|Details|
 |---------------|------------|-----------|
@@ -323,6 +323,6 @@ Wenn Sie die benutzerdefinierte Windows-URI-Richtlinie verwenden möchten, müss
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -13,23 +13,23 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 70e5920679149791c4856a1db905e564dc1278bd
+ms.sourcegitcommit: e64c4e077a3d2b75a8c246f097fcf7472d7edac6
+ms.openlocfilehash: 286f159e57820a8c8723004c167ae7296626894c
 
 
 ---
 
 # Lösen von Konflikten mit Gruppenrichtlinienobjekten und Microsoft Intune-Richtlinien
-In Intune können Sie Richtlinien zum Verwalten von Einstellungen auf den von Ihnen verwalteten Windows-PCs verwenden. Beispielsweise könnten Sie eine Richtlinie verwenden, um Einstellungen für die Windows-Firewall auf PCs zu steuern. Viele der Intune-Einstellungen sind mit Einstellungen vergleichbar, die Sie mit Windows-Gruppenrichtlinien konfigurieren können. Es ist allerdings manchmal möglich, dass die beiden Methoden miteinander in Konflikt stehen.
+In Intune können Sie Richtlinien zum Verwalten der Einstellungen auf Windows-PCs verwenden. Beispielsweise können Sie eine Richtlinie verwenden, um Einstellungen für die Windows-Firewall auf PCs zu steuern. Viele Intune-Einstellungen sind mit Einstellungen vergleichbar, die Sie mit Windows-Gruppenrichtlinien konfigurieren können. Es ist allerdings manchmal möglich, dass die beiden Methoden miteinander in Konflikt stehen.
 
 Wenn Konflikte auftreten, hat die Gruppenrichtlinie auf Domänenebene Vorrang vor der Intune-Richtlinie, sofern die Anmeldung des PCs bei der Domäne möglich ist. In diesem Fall wird die Intune-Richtlinie auf den Client-PC angewendet.
 
 ## Vorgehensweise bei Verwendung von Gruppenrichtlinien
-Stellen Sie sicher, dass die Richtlinien, die Sie anwenden, nicht von Gruppenrichtlinien verwaltet werden. Zum Vermeiden von Konflikten können Sie eine oder mehrere der folgenden Methoden verwenden:
+Stellen Sie sicher, dass Richtlinien, die Sie anwenden, nicht von Gruppenrichtlinien verwaltet werden. Zum Vermeiden von Konflikten können Sie eine oder mehrere der folgenden Methoden verwenden:
 
 -   Verschieben Sie Ihre PCs in eine Active Directory-Organisationseinheit (OU), auf die keine Gruppenrichtlinieneinstellungen angewendet werden, bevor Sie den Intune-Client installieren. Sie können bei OUs mit PCs, die in Intune registriert sind und auf die Sie die Gruppenrichtlinieneinstellungen nicht anwenden möchten, auch die Vererbung der Gruppenrichtlinie deaktivieren.
 
--   Verwenden Sie einen Sicherheitsgruppenfilter, um Gruppenrichtlinienobjekte auf PCs zu beschränken, die nicht mit Intune verwaltet werden. 
+-   Verwenden Sie einen Sicherheitsgruppenfilter, um Gruppenrichtlinienobjekte auf PCs zu beschränken, die nicht mit Intune verwaltet werden.
 
 -   Deaktivieren oder entfernen Sie Gruppenrichtlinienobjekte, die mit den Intune-Richtlinien in Konflikt stehen.
 
@@ -102,9 +102,9 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
-Mit einer Gruppenrichtlinie können Sie GPOs auf nur die Sicherheitsgruppen anwenden, die im Bereich **Sicherheitsfilterung** der Gruppenrichtlinien-Verwaltungskonsole für ein ausgewähltes GPO festgelegt sind. Standardmäßig gelten GPOs für **Authentifizierte Benutzer**.
+Sie können GPOs auf nur die Sicherheitsgruppen anwenden, die im Bereich **Sicherheitsfilterung** der Gruppenrichtlinien-Verwaltungskonsole für ein ausgewähltes GPO festgelegt sind. Standardmäßig gelten Gruppenrichtlinienobjekte für *Authentifizierte Benutzer*.
 
--   Erstellen Sie im Snap-In **Active Directory-Benutzer und -Computer** eine neue Sicherheitsgruppe, die Computer und Benutzerkonten enthält, die nicht über Intune verwaltet werden sollen. Nennen Sie die Gruppe z. B. **Nicht in Microsoft Intune**.
+-   Erstellen Sie im Snap-In **Active Directory-Benutzer und -Computer** eine neue Sicherheitsgruppe, die Computer und Benutzerkonten enthält, die nicht über Intune verwaltet werden sollen. Nennen Sie die Gruppe z. B. *Nicht in Microsoft Intune*.
 
 -   Klicken Sie auf der Registerkarte **Delegierung** in der Gruppenrichtlinien-Verwaltungskonsole mit der rechten Maustaste auf die neue Sicherheitsgruppe, um den Benutzern und Computern in der Sicherheitsgruppe die geeigneten Berechtigungen **Lesen** und **Gruppenrichtlinie übernehmen** zu delegieren. (Die Berechtigungen**Gruppenrichtlinie übernehmen** befinden sich im Dialogfeld **Erweitert** .)
 
@@ -117,6 +117,6 @@ Die neue Sicherheitsgruppe muss in den Intune-Dienständerungen als Registrierun
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

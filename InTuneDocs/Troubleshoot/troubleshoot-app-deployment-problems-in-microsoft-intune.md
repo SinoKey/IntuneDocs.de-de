@@ -2,7 +2,7 @@
 title: Behandlung von Problemen mit der App-Bereitstellung | Microsoft Intune
 description: "Diese Themen helfen Ihnen, Probleme mit der App-Bereitstellung mit Microsoft Intune zu lösen."
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,27 +13,22 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
+ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
+ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 
 
 ---
 
 # Behandlung von Problemen mit der App-Bereitstellung in Microsoft Intune
-Diese Themen helfen Ihnen, Probleme mit der App-Bereitstellung mit Microsoft Intune zu lösen.
+Wenn beim Bereitstellen und Verwalten von Apps mit Intune Probleme auftreten, beginnen Sie hier. In diesem Thema werden einige allgemeine Probleme, die auftreten können, sowie deren Lösungen behandelt.
 
-Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) weitere Möglichkeiten, Hilfe zu erhalten.
+## Häufige Probleme bei der App-Bereitstellung
 
+### Benutzer können nicht beim Intune-Unternehmensportal anmelden
 
-## Übliche Probleme bei der App-Bereitstellung
+1.  Stellen Sie sicher, das Konto des Benutzers vorhanden und im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) aktiviert ist.
 
-### Wenn Sie sich nicht beim Microsoft Intune-Unternehmensportal anmelden können
-
-1.  Überprüfen Sie, ob Ihr Konto im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) vorhanden oder deaktiviert ist.
-
-2.  Stellen Sie sicher, dass Ihnen dieses Konto im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) bereitgestellt wurde.
-
-3.  Stellen Sie im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) sicher, dass Sie den richtigen Benutzernamen und das richtige Kennwort zum Anmelden bei Intune verwenden, und dass der Benutzername das Format **joe@domain.com**aufweist.
+3.  Stellen Sie im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) sicher, dass der Benutzer den richtigen Benutzernamen zum Anmelden bei Intune eingibt, und dass der Benutzername das Format **joe@domain.com** aufweist. Wenn ein Benutzer das falsche Kennwort eingibt, bitten Sie ihn, das Kennwort zurückzusetzen.
 
 ### Im Unternehmensportal fehlen die Kontaktinformationen der IT-Abteilung
 
@@ -105,6 +100,6 @@ Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, w
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

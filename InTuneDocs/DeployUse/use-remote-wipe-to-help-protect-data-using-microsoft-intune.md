@@ -1,37 +1,67 @@
 ---
 title: "Remotezurücksetzung zum Schützen von Daten | Microsoft Intune"
-description: 
+description: "Intune bietet Funktionen zum selektiven und vollständigen Zurücksetzen, um vertrauliche Unternehmensdaten und den Zugriff auf viele Unternehmensressourcen zu entfernen."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
-ms.reviewer: jeffgilb
+ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06f144693fe4e535b2ed423c95f5431e391f316f
-ms.openlocfilehash: 077f35afc5084b0381fd330236e45d62e1242484
+ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
+ms.openlocfilehash: a09c9b55d7906ab792bda90b172a36b3656ed6dd
 
 
 ---
 
 # Schützen von Daten durch vollständiges oder selektives Zurücksetzen mit Microsoft Intune
-Genauso wie Geräte möchten oder müssen Sie mitunter auch Apps [außer Betrieb nehmen](retire-apps-using-microsoft-intune.md), die auf PCs und mobilen Geräten bereitgestellt sind. Dies ist z. B. der Fall, wenn sie nicht mehr benötigt werden. Außerdem möchten Sie u. U. auch Unternehmensdaten von dem Gerät entfernen. Zu diesem Zweck enthält Intune Funktionen zum vollständigen oder selektiven Zurücksetzen. Da auf mobilen Geräten sensible Unternehmensdaten gespeichert sein können und die Geräte mitunter Zugriff auf zahlreiche Unternehmensressourcen bieten, haben Sie über die Intune die Möglichkeit, bei Verlust oder Diebstahl eines Geräts einen Remotebefehl zum Zurücksetzen des Geräts zu erteilen. Für private Geräte, die in Intune registriert sind, können die Benutzer über Intune einen Remotebefehl zum Zurücksetzen des Geräts erteilen.
+Gibt an, ob Sie Apps und Daten von einem mit Intune verwalteten Gerät, das nicht mehr benötigt wird, einem neuen Zweck zugeführt wurde oder verloren gegangen ist, zurücksetzen können. Zu diesem Zweck enthält Intune Funktionen zum vollständigen oder selektiven Zurücksetzen. Für private Geräte, die in Intune registriert sind, können die Benutzer über das Intune-Unternehmensportal einen Remotebefehl zum Zurücksetzen des Geräts erteilen.
 
   > [!NOTE]
-  > In diesem Thema wird das Zurücksetzen von Geräten behandelt, die von Intune verwaltet werden. Sie können auch das [Azure-Vorschauportal](https://portal.azure.com) zum [Entfernen von Unternehmensdaten aus Apps](wipe-managed-company-app-data-with-microsoft-intune.md) verwenden.
+  > In diesem Thema wird nur das Zurücksetzen von Geräten behandelt, die von der Verwaltung mobiler Geräte für Intune verwaltet werden. Sie können auch das [Azure-Vorschauportal](https://portal.azure.com) zum [Entfernen von Unternehmensdaten aus Apps](wipe-managed-company-app-data-with-microsoft-intune.md) verwenden. Außerdem können Sie [mit der Intune-Clientsoftware verwaltete Computer abkoppeln](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
 
 ## Vollständiges Zurücksetzen
 
-
 **Vollständiges Zurücksetzen** setzt ein Gerät auf die werkseitigen Standardeinstellungen zurück, wobei alle Unternehmens- und Benutzerdaten und -einstellungen entfernt werden. Das Gerät wird aus Intune entfernt. Das vollständige Zurücksetzen ist hilfreich, wenn Sie ein Gerät vor der Übergabe an einen neuen Benutzer zurücksetzen möchten oder wenn ein Gerät verloren oder gestohlen wurde.  **Überlegen Sie sich genau, ob Sie ein Gerät wirklich vollständig zurücksetzen möchten. Die Daten auf dem Gerät können anschließend nicht wiederhergestellt werden.**
+
 
 > [!Warning]
 > Nach dem Zurücksetzen ist der Zugriff auf Windows 10 RTM-Geräte (d. h. Geräte vor Windows 10, Version 1511) mit weniger als 4 GB RAM vielleicht nicht möglich. Um auf ein Windows 10-Gerät zuzugreifen, das nicht mehr reagiert hat, können Sie das Gerät von einem USB-Laufwerk aus starten oder eine ähnliche Problemumgehung nutzen.
+
+### Remotezurücksetzen eines Geräts über die Intune-Administratorkonsole
+
+1.  Wählen Sie Geräte aus, die zurückgesetzt werden sollen. Sie können diese nach Benutzer oder Gerät suchen.
+
+    -   **Nach Benutzer:**
+
+        1.  Klicken Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) auf **Gruppen** &gt; **Alle Benutzer**.
+
+        2.  Klicken Sie auf den Namen des Benutzers, dessen mobiles Gerät Sie zurücksetzen möchten. Klicken Sie auf **Eigenschaften anzeigen**.
+
+        3.  Klicken Sie auf der Seite **Eigenschaften** des Benutzers auf **Geräte** und dann auf den Namen des mobilen Geräts, das Sie zurücksetzen möchten. Halten Sie die STRG-Taste gedrückt, und klicken Sie, um mehrere Geräte auszuwählen.
+
+    -   **Nach Gerät:**
+
+        1.  Klicken Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) auf **Gruppen** &gt; **Alle mobilen Geräte**.
+
+      ![Starten eines Vorgangs zum Abkoppeln oder Zurücksetzen](../media/dev-sa-wipe.png)
+
+        2.  Klicken Sie auf **Geräte** und dann auf den Namen des mobilen Geräts, das Sie zurücksetzen möchten. Halten Sie die STRG-Taste gedrückt, und klicken Sie, um mehrere Geräte auszuwählen.
+
+2.  Klicken Sie auf **Abkoppeln/Zurücksetzen**.
+
+3.  Durch eine Meldung werden Sie aufgefordert, zu bestätigen, ob Sie das Gerät abkoppeln möchten.
+
+    -   Klicken Sie zum Ausführen einer **selektiven Zurücksetzung**, bei der nur unternehmenseigene Apps und Daten entfernt werden, auf **Ja**.
+
+    -   Wählen Sie zum Ausführen einer **vollständigen Zurücksetzung**, bei der alle Apps und Daten gelöscht werden und das Gerät auf die werkseitigen Standardeinstellungen zurückgesetzt wird, auf **Gerät vor dem Abkoppeln zurücksetzen**. Diese Aktion gilt für alle Plattformen außer Windows 8.1. **Daten, die durch ein vollständiges Zurücksetzen entfernt wurden, können nicht wiederhergestellt werden**.
+
+Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minuten, bis ein Befehl zum Zurücksetzen über alle Gerätetypen weitergegeben wurde.
 
 ## Selektives Zurücksetzen
 
@@ -78,36 +108,6 @@ Beim **selektiven Zurücksetzen** werden die Unternehmensdaten und bei Bedarf au
 |E-Mail|Entfernt EFS-aktivierte E-Mails, darunter die E-Mail-App für Windows-E-Mails und -Anlagen.|Nicht unterstützt|E-Mail-Profile, die über Intune bereitgestellt werden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|Entfernt EFS-aktivierte E-Mails, darunter die E-Mail-App für Windows-E-Mails und -Anlagen. Entfernt E-Mail-Konten, die von Intune bereitgestellt wurden.|
 |Azure Active Directory (AAD)-Verbindung aufgehoben|Nein|Nein|AAD-Datensatz entfernt|Nicht zutreffend. Windows 10 unterstützt kein selektives Zurücksetzen für Geräte, die in Azure Active Directory eingebunden wurden.|
 
-### Remotezurücksetzen eines Geräts über die Intune-Administratorkonsole
-
-1.  Wählen Sie Geräte aus, die zurückgesetzt werden sollen. Sie können diese nach Benutzer oder Gerät suchen.
-
-    -   **Nach Benutzer:**
-
-        1.  Klicken Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) auf **Gruppen** &gt; **Alle Benutzer**.
-
-        2.  Klicken Sie auf den Namen des Benutzers, dessen mobiles Gerät Sie zurücksetzen möchten. Klicken Sie auf **Eigenschaften anzeigen**.
-
-        3.  Klicken Sie auf der Seite **Eigenschaften** des Benutzers auf **Geräte** und dann auf den Namen des mobilen Geräts, das Sie zurücksetzen möchten. Halten Sie die STRG-Taste gedrückt, und klicken Sie, um mehrere Geräte auszuwählen.
-
-    -   **Nach Gerät:**
-
-        1.  Klicken Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) auf **Gruppen** &gt; **Alle mobilen Geräte**.
-
-      ![Starten eines Vorgangs zum Abkoppeln oder Zurücksetzen](../media/dev-sa-wipe.png)
-
-        2.  Klicken Sie auf **Geräte** und dann auf den Namen des mobilen Geräts, das Sie zurücksetzen möchten. Halten Sie die STRG-Taste gedrückt, und klicken Sie, um mehrere Geräte auszuwählen.
-
-2.  Klicken Sie auf **Abkoppeln/Zurücksetzen**.
-
-3.  Durch eine Meldung werden Sie aufgefordert, zu bestätigen, ob Sie das Gerät abkoppeln möchten.
-
-    -   Klicken Sie zum Ausführen einer **selektiven Zurücksetzung**, bei der nur unternehmenseigene Apps und Daten entfernt werden, auf **Ja**.
-
-    -   Wählen Sie zum Ausführen einer **vollständigen Zurücksetzung**, bei der alle Apps und Daten gelöscht werden und das Gerät auf die werkseitigen Standardeinstellungen zurückgesetzt wird, auf **Gerät vor dem Abkoppeln zurücksetzen**. Diese Aktion gilt für alle Plattformen außer Windows 8.1. **Daten, die durch ein vollständiges Zurücksetzen entfernt wurden, können nicht wiederhergestellt werden**.
-
-Das Verteilen des Zurücksetzens über alle Gerätetypen dauert höchstens 15 Minuten.
-
 ## Zurücksetzen EFS-aktivierter Inhalte
 Das selektive Zurücksetzen von EFS-verschlüsselten Inhalten wird von Windows 8.1 und Windows RT 8.1 unterstützt. Folgendes gilt für das selektive Zurücksetzen von EFS-aktivierten Inhalten:
 
@@ -142,6 +142,6 @@ So erhalten Sie einen Bericht zu Geräten, die abgekoppelt, zurückgesetzt oder 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

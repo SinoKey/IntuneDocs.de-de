@@ -3,8 +3,8 @@ title: "Registrieren Ihres Android-Geräts bei Intune | Microsoft Intune"
 description: "Beschreibt, wie Sie ein Android-Gerät bei Intune registrieren."
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
+ms.sourcegitcommit: 46479cfe3d2648eefbaefd0a831af2412b509fce
+ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
 
 
 ---
@@ -44,7 +44,27 @@ Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftre
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
-5.  Wenn Sie Android 6.0 oder höher verwenden, führen Sie diesen Schritt aus. Fahren Sie andernfalls mit dem nächsten Schritt fort. 
+5.  Melden Sie sich bei der Unternehmensportal-App mit Ihrem Geschäfts- oder Schulkonto und dem zugehörigen Kennwort an, und tippen Sie auf **Anmelden**.
+
+    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
+
+6.  Tippen Sie auf dem Bildschirm **Unternehmenszugriff einrichten** auf **BEGINNEN**.
+
+    ![Bildschirm „Unternehmenszugriff einrichten“](./media/and-enroll-4a-comp-access-setup.png)
+
+7.  Lesen Sie auf dem Bildschirm **Gründe für das Registrieren Ihres Geräts**, welche Möglichkeiten Sie haben, wenn Sie Ihr Gerät registrieren, und tippen Sie dann auf **WEITER**.
+
+    ![Gründe für das Registrieren Ihres Geräts](./media/and-enroll-4b-why-enroll.png)
+
+8.  Prüfen Sie in einer Liste, was Ihr IT-Administrator auf Ihrem Gerät anzeigen kann und was nicht, und tippen Sie auf **WEITER**.
+
+    ![Datenschutzeinstellungen](./media/and-enroll-4c-we-care-privacy.png)
+
+9.  Lesen Sie im Bildschirm **Was ist der nächste Schritt?**, was während der Registrierung passiert, und tippen Sie dann auf **REGISTRIEREN**.
+
+    ![Was ist der nächste Schritt?](./media/and-enroll-4d-what-comes-next.png)
+
+10.  Wenn Sie Android 6.0 oder höher verwenden, führen Sie diesen Schritt aus. Fahren Sie andernfalls mit dem nächsten Schritt fort.
 
     Wenn Ihr IT-Administrator bestimmte Richtlinien eingerichtet hat, werden möglicherweise folgende Meldungen angezeigt:
     -   **Zulassen, dass das Unternehmensportal Telefonanrufe tätigt und verwaltet?**
@@ -63,26 +83,6 @@ Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftre
 
     Wenn Sie den Zugriff verweigern, wird die Meldung beim nächsten Tippen auf **Daten senden** angezeigt. Sie können künftige Meldungen jedoch deaktivieren, indem Sie das Kontrollkästchen **Nicht mehr nachfragen** aktivieren. Wenn Sie den Zugriff später erlauben möchten, wechseln Sie zu **Einstellungen** &gt; **Apps** &gt; **Unternehmensportal** &gt; **Berechtigungen** &gt; **Speicher**, um die Berechtigung zu aktivieren.
 
-6.  Melden Sie sich bei der Unternehmensportal-App mit Ihrem Geschäfts- oder Schulkonto und dem zugehörigen Kennwort an, und tippen Sie auf **Anmelden**.
-
-    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
-
-7.  Tippen Sie auf dem Bildschirm **Unternehmenszugriff einrichten** auf **BEGINNEN**.
-
-    ![Bildschirm „Unternehmenszugriff einrichten“](./media/and-enroll-4a-comp-access-setup.png)
-
-8.  Lesen Sie auf dem Bildschirm **Gründe für das Registrieren Ihres Geräts**, welche Möglichkeiten Sie haben, wenn Sie Ihr Gerät registrieren, und tippen Sie dann auf **WEITER**.
-
-    ![Gründe für das Registrieren Ihres Geräts](./media/and-enroll-4b-why-enroll.png)
-
-9.  Prüfen Sie in einer Liste, was Ihr IT-Administrator auf Ihrem Gerät anzeigen kann und was nicht, und tippen Sie auf **WEITER**.
-
-    ![Datenschutzeinstellungen](./media/and-enroll-4c-we-care-privacy.png)
-
-10.  Lesen Sie im Bildschirm **Was ist der nächste Schritt?**, was während der Registrierung passiert, und tippen Sie dann auf **REGISTRIEREN**.
-
-    ![Was ist der nächste Schritt?](./media/and-enroll-4d-what-comes-next.png)
-
 11.  Klicken Sie auf dem Bildschirm **Geräteadministrator aktivieren** auf **Aktivieren**.
 
     ![Bildschirm „Geräteadministrator aktivieren?“](./media/and-enroll-5-activate.png)
@@ -91,17 +91,11 @@ Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftre
 
     ![Eingeben von PIN oder Kennwort](./media/and-enroll-6-PIN-native.png)
 
-13.  Führen Sie die folgenden Schritte für den verwendeten Gerätetyp aus (natives Android oder Samsung Knox). Wenn Sie ein Samsung Knox-Gerät haben, wechseln Sie zu **Einstellungen** &gt; **Info zu Gerät**. Wird „KNOX-Version“ nicht angezeigt, verfügen Sie über ein natives Android-Gerät.
-
-    -   Natives (nicht Samsung Knox-) Gerät: Tippen Sie im Bildschirm **Zertifikat benennen** auf **OK**, um das Standardzertifikat zu akzeptieren.
-
-    ![Bildschirm „Zertifikat benennen“](./media/and-enroll-7-cert-native.png)
-
-    -   Samsung Knox-Gerät: Akzeptieren Sie die Datenschutzrichtlinie, und tippen Sie auf **BESTÄTIGEN**.
+13.  Wenn Sie ein Samsung Knox-Gerät verwenden, tippen Sie auf **Bestätigen**. Es wird eine Meldung angezeigt, die besagt, dass das Gerät registriert wird. Wenn Sie ein natives Android-Gerät verwenden, beachten Sie den Bildschirm unten, der anzeigt, dass das Gerät registriert wird.
 
     ![Samsung KNOX-Datenschutzrichtlinie](./media/and-enroll-7-knox-privacy-policy.png)
 
-    Die folgende Meldung wird auf dem Bildschirm angezeigt, während Intune Ihr Gerät registriert.
+    Dieser Bildschirm zeigt an, dass das Gerät registriert wird.
 
     ![Bildschirm „Gerät wird registriert“](./media/and-enroll-8-device-enrolling.png)
 
@@ -123,6 +117,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

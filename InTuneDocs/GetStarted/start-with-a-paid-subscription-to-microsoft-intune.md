@@ -3,7 +3,7 @@ title: Erste Schritte mit Intune | Microsoft Intune
 description: "Anforderungen und erforderliche Komponenten für den Beginn der Verwendung Ihres Intune-Abonnements"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e7ecf24c3fa678e68603f0e3523f2694a73e145c
+ms.sourcegitcommit: 13ff2feb5918725306ebee96cdbf8e5212066ddc
+ms.openlocfilehash: c8984d37296fc79eb67b5604ab735b1be47d4e11
 
 
 ---
@@ -26,7 +26,7 @@ Diese Kurzanleitung führt Sie durch die notwendigen Schritte zum Einrichten ein
 >[!NOTE]
 >In diesem Artikel geht es um die Einrichtung von Intune als eigenständiger Dienst. Wenn Sie derzeit Microsoft System Center Configuration Manager zum Verwalten von Computern und Servern verwenden, können Sie alternativ [Configuration Manager zum Verwalten mobiler Geräte erweitern](https://technet.microsoft.com/library/jj884158.aspx). Dazu können Sie in einer hybriden Bereitstellung der mobilen Geräteverwaltung (Mobile Device Management, MDM) Intune mit Configuration Manager verbinden.
 
-Die Schritte in dieser Kurzanleitung sind in großen Teilen mit den Schritten im [Intune-Evaluierungsleitfaden](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) identisch. Wenn Sie nach der Evaluierungsphase bereit sind, Ihre mobilen Geräte zu verwalten, müssen Sie einige weitere Aktionen durchführen:
+Diese Kurzanleitung ist in großen Teilen mit den Schritten im [Intune-Evaluierungsleitfaden](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) identisch. Wenn Sie nach der Evaluierungsphase bereit sind, Ihre mobilen Geräte zu verwalten, müssen Sie einige weitere Aktionen durchführen:
 
 -   Synchronisieren von lokalen Active Directory-Konten mit Intune und Azure Active Directory.
 
@@ -75,6 +75,6 @@ Legen Sie los mit der Intune-Kurzanleitung!
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

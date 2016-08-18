@@ -13,8 +13,8 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6ddb0fda0e818b09d274276076fd6310d29b99cb
-ms.openlocfilehash: 8ce6b10478927177e5d6d8de0677cf06bed00f08
+ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
+ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
 
 
 ---
@@ -119,7 +119,7 @@ Wenn von einem Computer keine Verbindung mit Intune hergestellt werden kann, wir
 
 Wenn Sie einen Computer abkoppeln, werden folgende Aktionen ausgeführt:
 
--   Der Computer wird aus dem Intune-Inventar entfernt, und die mit dem Computer verknüpfte Lizenz steht zur erneuten Verwendung zur Verfügung.
+-   Der Computer wird aus dem Intune-Verwaltung und -Inventar entfernt, und die mit dem Computer verknüpfte Lizenz steht zur erneuten Verwendung zur Verfügung. Durch „Abkoppeln/Zurücksetzen“ wird der Intune-Softwareclient vom Computer entfernt, es werden aber keine Apps oder Daten gelöscht.
 
 -   Der Status des Computers wird nicht mehr in der Intune-Konsole angezeigt.
 

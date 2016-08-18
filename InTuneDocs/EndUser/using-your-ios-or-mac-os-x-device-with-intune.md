@@ -3,8 +3,8 @@ title: "Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune | Microsoft Intune
 description: "Liste mit Links zu Aufgaben, die Sie auf Ihrem iOS- oder Mac OS X-Mobilgerät ausführen können, wenn das Gerät bei Intune registriert ist."
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 06/03/2016
+manager: angrobe
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,18 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 6c3d8b3a64d98357b7aac2a9f000ca33125c1858
+ms.sourcegitcommit: 5c11b33ef2986ef3a88823c34900663a7f8195ac
+ms.openlocfilehash: d40620c3b4384e178af9c84bae85bcb09b4ffeee
 
 
 ---
 
 # Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune
 
-Befolgen Sie diese Schritte für Aufgaben, die Sie auf Ihrem iOS- oder Mac OS X-Gerät ausführen müssen, wenn Ihr Unternehmen Microsoft Intune verwendet.
+Dieser Artikel enthält Links zu allen Aufgaben, die Endbenutzer auf ihren von Intune verwalteten Geräten durchführen können. IT-Administratoren können auf diese Informationen verweisen, um die Schritte anzuzeigen, die Benutzer zum Durchführen einer Vielzahl von Aufgaben befolgen, die in Kategorien gruppiert werden: 
+- Installation der Unternehmensportal-App und Intune-Registrierung 
+- Verwaltungsaufgaben nach der Registrierung
+- Kompatibilitätsprobleme
 
 ## Installation der Unternehmensportal-App und Intune-Registrierung
 
@@ -61,8 +64,6 @@ Die Informationen in diesem Abschnitt helfen Ihnen beim Beheben von Problemen, d
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 
