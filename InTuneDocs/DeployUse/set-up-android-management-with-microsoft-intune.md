@@ -13,8 +13,8 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
-ms.openlocfilehash: e42f49558ea9744b59693be873aa5130c7e1a0c3
+ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
+ms.openlocfilehash: 947a7ba62d817e6b02d8a6bb0a0d0bddf53e7d4e
 
 
 ---
@@ -44,14 +44,14 @@ Mobile Android-Geräte ermöglichen Benutzern die Registrierung über die Untern
     Ihre Benutzer müssen wissen, wie sie ihre Geräte registrieren können und was sie erwartet, wenn die Geräte in die Verwaltung eingebunden sind. [Informieren der Endbenutzer über den Einsatz von Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 4.  Ihre Benutzer müssen wissen, wie sie ihre Geräte registrieren können und was sie erwartet, wenn die Geräte in die Verwaltung eingebunden sind.
-        - [Informieren der Endbenutzer über den Einsatz von Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-        - [Endbenutzer-Leitfaden für Windows-Geräte](../enduser/using-your-android-device-with-intune.md)
+  - [Informieren der Endbenutzer über den Einsatz von Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [Endbenutzer-Leitfaden für Windows-Geräte](../enduser/using-your-android-device-with-intune.md)
 
 ### Weitere Informationen:
 [Vorbereiten der Registrierung von Geräten in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 
