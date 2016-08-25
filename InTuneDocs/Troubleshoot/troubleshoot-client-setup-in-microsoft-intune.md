@@ -1,0 +1,131 @@
+---
+title: Behandlung von Problemen bei der Clienteinrichtung | Microsoft Intune
+description: Problembehandlung bei allgemeinen Problemen bei der Clienteinrichtung.
+keywords: 
+author: Nbigman
+manager: angrobe
+ms.date: 08/02/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
+ms.reviewer: tscott
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: 3f7e5752780d7159ce3081ec7a194f4e81e4cd16
+
+
+---
+
+# Behandlung von Problemen bei der Clienteinrichtung in Microsoft Intune
+Die folgenden Abschnitte enthalten Informationen zu gängigen Problemen bei der Clienteinrichtung. Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) weitere Möglichkeiten, Hilfe zu erhalten.
+
+## Fehler bei Clientinstallation
+
+-   Wenn in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) für den Computer keine Warnungen zur Softwarebereitstellung angezeigt werden, überprüfen Sie Internetverbindung und Proxykonfiguration des Computers und stellen Sie sicher, dass der Computer mit der Dienst-URL [https://manage.microsoft.com](https://manage.microsoft.com/) kommunizieren kann. Wiederholen Sie anschließend die Installation der Clientsoftware.
+
+-   Sie können eine E-Mail-Nachricht an ausgewählte Empfänger versenden lassen, wenn eine Fehlerwarnung bei der Bereitstellung von Clientsoftware auftritt. Konfigurieren Sie dazu eine Benachrichtigungsregel im Arbeitsbereich **Admin** . Weitere Informationen finden Sie unter [Benachrichtigungen durch Microsoft Intune-Warnungen](/intune/deploy-use/get-notified-by-alerts).
+
+-   Intune zeigt die kritische Warnung **Fehler bei der Bereitstellung der Clientsoftware** an, wenn die Bereitstellung der Clientsoftware nicht gelingt. Diese Warnung wird auf den Seiten **Systemübersicht** und **Warnungen** in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) angezeigt. So überprüfen Sie, ob Warnungen vorliegen:
+
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Warnungen** &gt; **Übersicht**.
+
+2.  Auf der Seite **Warnungsübersicht** finden Sie die folgenden Informationen:
+
+    -   die drei wichtigsten Warnungen, sortierbar nach Datum, Kategorie oder Schweregrad
+
+    -   die Gesamtzahl der aktiven Warnungen
+
+3.  Klicken Sie auf **Alle Warnungen**, um die folgenden Informationen auf der Seite **Warnungen** anzuzeigen. Kritische Warnungen werden zuerst angezeigt:
+
+    -   **Name** : Dies ist der Name des Warnungstyps, von dem die Warnung generiert wurde.
+
+    -   **Quelle** : Dies ist ein Link zur Quelle der Warnung.  Wenn der Anzeigeschwellenwert des Warnungstyps auf **Alle**festgelegt ist, wird über diesen Link ein einzelnes betroffenes Gerät angezeigt.  Wenn der Anzeigeschwellenwert des Warnungstyps auf einen Wert festgelegt ist, wird über diesen Link eine Liste aller Geräte angezeigt, die von dieser Warnung betroffen sind.
+
+    -   **Zuletzt aktualisiert** : Hier wird angegeben, wann die Warnung zuletzt geändert wurde. Wenn eine Warnung geschlossen ist, wird hier die Uhrzeit angezeigt, zu der die Warnung geschlossen wurde.
+
+    -   **Schweregrad** : Gibt den Schweregrad der Warnung an
+
+## Computerregistrierungspaket lässt sich nicht herunterladen
+**Problem:** Beim Versuch, einen Computer zu registrieren, geschieht Folgendes:
+-  Das Registrierungspaket lässt sich nicht herunterladen.
+-  Das Dialogfeld zum Herunterladen wird angezeigt, aber ein Timeout tritt auf.
+
+**Lösung:** Stellen Sie sicher, dass in dem Browser, den Sie für den Download verwenden, für den Zeitraum, in dem der Download erfolgt, Downloads aktiviert sind, und dass verschlüsselte Dateien auf Ihrem lokalen Datenträger gespeichert werden können.
+
+## Clientinstallation reagiert nicht mehr – Fehlercode 0x80040154
+**Problem:**
+
+-  Clientinstallation reagiert bei Registrierung nicht mehr
+
+-  Registrierung des Geräts unmöglich
+
+-  Fehler 0x80040154 in WindowsUpdate.log
+
+Das Fehlen kritischer Softwareupdates auf dem PC kommt als Ursache infrage.
+
+**Lösung:** Stellen Sie sicher, dass Ihre Softwareupdaterichtlinie die Installation wichtiger Updates ermöglicht, wie in [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) (Windows-PCs mit Softwareupdates in Microsoft Intune auf aktuellem Stand halten) beschrieben.
+
+
+## Fehler in „policyplatform.log“ im Zusammenhang mit der Microsoft Intune-Richtlinie
+Bei Windows-Geräten ohne MDM können Richtlinienfehler in der Datei „policyplatform.log“ das Ergebnis nicht standardmäßiger Einstellungen in der Windows-Benutzerkontensteuerung (UAC) auf dem Gerät sein. Einige nicht standardmäßige UAC-Einstellungen können Microsoft Intune-Clientinstallationen und Richtlinienausführungen beeinträchtigen.
+
+### So beheben Sie UAC-Probleme
+
+1.  Koppeln Sie den Computer ab, wie unter [Retire data and devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management) (Abkoppeln von Daten und Geräten in der Microsoft Intune-Verwaltung) beschrieben.
+
+2.  Warten Sie 20 Minuten, bis die Clientsoftware entfernt wurde.
+
+    > [!NOTE]
+    > Versuchen Sie nicht, den Client über „Programme und Funktionen“ zu entfernen.
+
+3.  Geben Sie im Startmenü **UAC** ein, um die Einstellungen der Benutzerkontensteuerung zu öffnen.
+
+4.  Verschieben Sie den Schieberegler für Benachrichtigungen auf die Standardeinstellung.
+
+## Vorgehensweise, wenn sich der Client nicht in der Microsoft Intune-Administratorkonsole deinstallieren lässt
+
+### So entfernen Sie die Clientsoftware unter Verwendung des Microsoft Intune-Befehlszeilentools
+
+1.  Öffnen Sie eine Eingabeaufforderung im Administratormodus.
+
+2.  Navigieren Sie zum Ordner *%programfiles%\Microsoft\OnlineManagement\Common*.
+
+3.  Folgenden Befehl ausführen ``ProvisioningUtil.exe /UninstallAgents /MicrosoftIntune``
+
+## Fehlercodes bei der Clientinstallation
+In der folgenden Tabelle werden Fehlercodes erläutert, die in **Warnungen** angezeigt werden, wenn die Installation der Clientsoftware fehlschlägt. Gleichzeitig werden Vorschläge zur Behebung der Probleme vorgestellt, für die die Fehlercodes stehen.
+
+|Fehlercode|Mögliches Problem|Lösungsvorschlag|
+|--------------|--------------------|------------------------|
+|**0x80CF0437**|Die Uhr des Clientcomputers ist nicht auf die richtige Uhrzeit eingestellt.|Stellen Sie sicher, dass die Uhr und die Zeitzone des Clientcomputers richtig eingestellt sind.|
+|**0x80240438**, **0x80CF0438**, **0x80CF401B**|Verbindung mit dem Intune-Dienst ist nicht möglich. Überprüfen Sie die Proxy-Einstellungen des Clients.|Überprüfen Sie, ob die Proxykonfiguration des Clientcomputers von Intune unterstützt wird, und ob der Clientcomputer Zugang zum Internet hat. Weitere Informationen zu unterstützten Proxykonfigurationen finden Sie unter [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).|
+|**0x80CF402C**|Verbindung mit dem Intune-Dienst ist nicht möglich. Überprüfen Sie die Netzwerkverbindungen.|Überprüfen Sie, ob der Computer über eine Netzwerkverbindung verfügt. Stellen Sie sicher, dass das Netzwerkkabel verbunden bzw. das Funknetzwerk aktiv ist.|
+|**0x80240438, 0x80CF0438**|Proxyeinstellungen in Internet Explorer und im lokalen System sind nicht konfiguriert.|Überprüfen Sie die Proxyeinstellungen des Clients, und vergewissern Sie sich, dass die Proxykonfiguration des Clientcomputers von Intune unterstützt wird, und der Clientcomputer mit dem Internet verbunden ist. Weitere Informationen zu unterstützten Proxykonfigurationen finden Sie unter [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).|
+|**0x80043001**|Das Registrierungspaket ist nicht mehr aktuell.|Laden Sie das aktuellste Clientsoftwarepaket vom Arbeitsbereich **Admin** herunter, und installieren Sie es. Anweisungen finden Sie im Thema [Install the Windows PC client with Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune) (Installieren des Windows-PC-Clients mit Microsoft Intune).|
+|**0x80043004**|Das Abonnement ist nicht vorhanden oder wurde deaktiviert.|Prüfen Sie, ob Ihr Konto und Ihr Abonnement für Intune noch aktiv sind. Melden Sie sich zum Anzeigen Ihrer Kontoeinstellungen bei Ihrem Konto im [Office 365 Admin Center](http://go.microsoft.com/fwlink/?LinkId=698854%20) an.|
+|**0x80043002**|Das Konto befindet sich im Wartungsmodus.|Wenn sich das Konto im Wartungsmodus befindet, können Sie keine neuen Clientcomputer registrieren. Melden Sie sich zum Anzeigen Ihrer Kontoeinstellungen bei Ihrem Konto im [Office 365 Admin Center](http://go.microsoft.com/fwlink/?LinkId=698854%20) an.|
+|**0x80043003**|Das Konto wurde gelöscht.|Prüfen Sie, ob Ihr Konto und Ihr Abonnement für Intune noch aktiv sind. Melden Sie sich zum Anzeigen Ihrer Kontoeinstellungen bei Ihrem Konto an.|
+|**0x80043005**|Der Clientcomputer wurde abgekoppelt.|Warten Sie einige Stunden, entfernen Sie ältere Versionen der Clientsoftware von dem Computer, und versuchen Sie dann erneut, die Clientsoftware auf dem Computer zu installieren. Weitere Anweisungen finden Sie weiter oben unter **Vorgehensweise, wenn sich der Client nicht in der Microsoft Intune-Administratorkonsole deinstallieren lässt**.|
+|**0x80043006**|Die maximal zulässige Anzahl von Arbeitsplätzen für das Konto wurde erreicht.|Ihr Unternehmen muss zusätzliche Arbeitsplätze erwerben, bevor Sie weitere Clientcomputer bei dem Dienst registrieren können.|
+|**0x80043007**|Zertifikatsdatei wurde im Ordner des Installationsprogramms nicht gefunden.|Extrahieren Sie alle Dateien, bevor Sie die Installation starten. Die extrahierten Dateien dürfen nicht umbenannt oder verschoben werden: Alle Dateien müssen im selben Ordner vorhanden sein, da die Installation sonst fehlschlägt. Weitere Informationen finden Sie unter [Installieren des Windows-PC-Clients mit Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune).|
+|**0x8024D015**, **0x00240005**, **0x80070BC2**, **0x80070BC9**, **0x80CFD015**|Die Software kann nicht installiert werden, weil ein Neustart des Clientcomputers aussteht.|Starten Sie den Computer neu, und wiederholen Sie dann die Installation der Clientsoftware.|
+|**0x80070032**|Eine oder mehrere Voraussetzungen, die für die Installation der Clientsoftware erforderlich sind, wurden auf dem Clientcomputer nicht gefunden.|Stellen Sie sicher, dass alle erforderlichen Updates auf dem Clientcomputer installiert sind, und versuchen Sie dann erneut, die Clientsoftware zu installieren. Weitere Informationen zu den Voraussetzungen für die Installation der Clientsoftware finden Sie unter [Anforderungen an die Netzwerkinfrastruktur für Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune).|
+|**0x80043008**|Der Dienst „Updates für Microsoft Online Management“ konnte nicht gestartet werden.|Wenden Sie sich dazu an den Microsoft Support, wie unter [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben.|
+|**0x80043009**|Der Clientcomputer ist bereits für den Dienst registriert.|Sie müssen den Clientcomputer abkoppeln, bevor sie ihn erneut für den Dienst registrieren können. Anweisungen finden Sie unter [Abkoppeln von Geräten in der Microsoft Intune-Verwaltung](/intune/deploy-use/retire-devices-from-microsoft-intune-management).|
+|**0x8004300B**|Das Installationspaket für die Clientsoftware kann nicht ausgeführt werden, da die Windows-Version auf dem Client nicht unterstützt wird.|Die auf dem Client ausgeführte Windows-Version wird von Intune nicht unterstützt. Eine Liste der unterstützten Betriebssysteme finden Sie unter [Network infrastructure requirements for Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune) (Anforderungen an die Netzwerkinfrastruktur für Microsoft Intune).|
+|**0xAB2**|Fehler beim Zugriff auf die VBScript-Laufzeit für die benutzerdefinierte Aktion.|Dieser Fehler wird von einer benutzerdefinierten Aktion verursacht, die auf DLLs (Dynamic-Link Libraries) aufbaut. Um den DLL-Fehler zu ermitteln, benötigen Sie möglicherweise die Tools, die im Artikel 198038 der [Microsoft Support-KB: Hilfreiche Tools bei Problemen mit der Paketerstellung und Weitergabe](http://go.microsoft.com/fwlink/?LinkID=234255)erläutert werden.|
+|**0x8004300f**|Die Software kann nicht installiert werden, da der System Center Configuration Manager-Client bereits installiert ist.|Entfernen Sie den Configuration Manager-Client, und wiederholen Sie dann die Installation der Clientsoftware.|
+|**0x80043010**|Die Software kann nicht installiert werden, da der OMADM-Client (Open Mobile Alliance Device Management) bereits installiert ist.|Heben Sie die Registrierung des OMADM-Clients auf, und wiederholen Sie dann die Installation der Clientsoftware.|
+Wenn weiterhin Installationsprobleme auftreten, wenden Sie sich wie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Support. Halten Sie das Registrierungsprotokoll des Clientcomputers (dieses befindet sich unter %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log und %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) und das Windows Update-Protokoll (%*windir*%\windowsupdate.log) für die Supportmitarbeiter bereit.
+
+### Nächste Schritte
+Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
+
+
+
+<!--HONumber=Aug16_HO1-->
+
+

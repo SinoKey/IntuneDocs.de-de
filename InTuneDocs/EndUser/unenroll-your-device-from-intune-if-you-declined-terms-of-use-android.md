@@ -1,0 +1,50 @@
+---
+title: "Aufheben der Registrierung Ihres Geräts bei Intune bei Ablehnung der Nutzungsbedingungen | Microsoft Intune"
+description: "Beschreibt, wie Sie die Registrierung eines Android-Geräts bei Intune aufheben, wenn Sie die Nutzungsbedingungen abgelehnt haben und sich nicht bei der Unternehmensportal-App anmelden können."
+keywords: 
+author: staciebarker
+manager: arob98
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
+ms.reviewer: chrisbal
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 06e2fa597e9e4143d17e817daee7eeac8eb46bf7
+
+
+---
+
+
+# Aufheben der Registrierung Ihres Geräts bei Intune bei Ablehnung der Nutzungsbedingungen
+
+Die beste Methode zum Aufheben der Registrierung Ihres Android-Geräts ist das Akzeptieren der Nutzungsbedingungen, Anmelden bei der Unternehmensportal-App und anschließendes Aufheben der Registrierung unter Beachtung [dieser Anweisungen](unenroll-your-device-from-intune-android.md). Wenn Sie allerdings die Nutzungsbedingungen beim Versuch, sich bei der Unternehmensportal-App anzumelden, abgelehnt haben, können Sie sich nicht mit zukünftigen Versuchen bei der Unternehmensportal-App anmelden, d. h. Sie müssen diese Anweisungen zur „Problemumgehung“ verwenden, um das Gerät zu registrieren.
+
+Wenn Sie die Unternehmensportal-App deinstallieren, wird auch die Registrierung Ihres Geräts bei Intune aufgehoben. Das bedeutet, dass Ihr Gerät keinen Zugriff auf Unternehmensressourcen mehr hat.  Weitere Informationen dazu, was bei Aufheben der Registrierung bei Intune geschieht, finden Sie unter [Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
+
+Vor der Deinstallation der Unternehmensportal-App müssen Sie zur Einstellung **Geräteadministratoren** wechseln und **Unternehmensportal** deaktivieren. Je nach Android-Gerät können sich diese Schritte geringfügig unterscheiden.
+
+So können Sie die Registrierung Ihres Geräts bei Intune aufheben und die Unternehmensportal-App deinstallieren
+
+1.  Wechseln Sie zu **Einstellungen**&gt;**Sicherheit&amp; Sperrbildschirm** &gt; **Geräteadministratoren**.
+
+    Durch das Ausführen dieses Schritts wird die Registrierung Ihres Geräts sofort aufgehoben.
+
+2.  Deaktivieren Sie das Kontrollkästchen daneben, oder deaktivieren Sie **Unternehmensportal**.
+
+    Sie können die Unternehmensportal-App jetzt deinstallieren.
+
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (überprüfen Sie die [Unternehmensportal-Website](http://portal.manage.microsoft.com) auf Kontaktinformationen), oder schreiben Sie dem Microsoft Android-Team unter wintunedroidfbk@microsoft.com.
+
+
+### Weitere Informationen:
+[Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
+
+
+<!--HONumber=Jul16_HO3-->
+
+
