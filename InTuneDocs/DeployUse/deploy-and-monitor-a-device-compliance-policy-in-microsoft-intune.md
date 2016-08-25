@@ -13,21 +13,21 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 7e038f489399cce2c73eabbef265c7be4be5c895
+ms.sourcegitcommit: 711e650086d7528f26d9ba7b447ecb0185faff23
+ms.openlocfilehash: 8658df1fb9932fb2cab984a13557aad684569df5
 
 
 ---
 
 # Bereitstellen und Überwachen einer in Microsoft Intune
 ## Bereitstellen einer Konformitätsrichtlinie
-Stellen Sie die von Ihnen [erstellte](create-a-device-compliance-policy-in-microsoft-intune.md) Kompatibilitätsrichtlinie für eine oder mehrere Gruppen von Benutzern oder Geräten in Ihrer Organisation bereit.
+Stellen Sie die von Ihnen [erstellte](create-a-device-compliance-policy-in-microsoft-intune.md) Kompatibilitätsrichtlinie für eine oder mehrere Gruppen von Benutzern in Ihrer Organisation bereit. Wenn Sie eine Kompatibilitätsrichtlinie für einen Benutzer bereitstellen, wird die Kompatibilität der Geräte des Benutzers überprüft.
 
 1.  Wählen Sie im Arbeitsbereich **Richtlinie** die Richtlinie aus, die Sie bereitstellen möchten, und wählen Sie dann **Bereitstellung verwalten** aus.
 ![Screenshot der Seite „Kompatibilitätsrichtlinie“ mit der Menüoption „Bereitstellung verwalten“ ganz oben](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  Wählen Sie im Dialogfeld **Bereitstellung verwalten** mindestens eine Gruppe aus, für die die Richtlinie bereitgestellt werden soll. Wählen Sie dann **Hinzufügen > OK** aus.
-![Screenshot zum Dialogfeld „Bereitstellung verwalten“](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) Kompatibilitätsrichtlinien können für Benutzer und/oder Geräte bereitgestellt werden. Verwenden Sie bereits erstellte und mit Intune synchronisierte Active Directory-Gruppen aus, oder erstellen Sie diese Gruppen manuell in der Intune-Konsole. Weitere Informationen zum Bereitstellen von Richtlinien finden Sie unter [Bereitstellen einer Konfigurationsrichtlinie](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+![Screenshot zum Dialogfeld „Bereitstellung verwalten“](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) Kompatibilitätsrichtlinien können für Benutzer bereitgestellt werden. Verwenden Sie bereits erstellte und mit Intune synchronisierte Active Directory-Gruppen aus, oder erstellen Sie diese Gruppen manuell in der Intune-Konsole. Weitere Informationen zum Bereitstellen von Richtlinien finden Sie unter [Bereitstellen einer Konfigurationsrichtlinie](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 Verwenden Sie die Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeitsbereichs **Richtlinie**, um Probleme mit der Richtlinie zu identifizieren, die Ihre Aufmerksamkeit erfordern. Darüber hinaus wird eine Statusübersicht im Arbeitsbereich **Dashboard** angezeigt.
 
@@ -72,6 +72,6 @@ Sie können die Konformitätsrichtlinien jetzt zusammen mit bedingten Zugriffsri
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

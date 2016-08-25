@@ -3,18 +3,18 @@ title: "Benutzerdefinierte Konfigurationen für VPN-Profile | Microsoft Intune"
 description: Verwenden Sie benutzerdefinierte Konfigurationen, um VPN-Profile in Intune zu erstellen.
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: b61a4c90cfed9922df151a6c1ac93e276db18623
+ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
+ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
 
 
 ---
@@ -24,28 +24,28 @@ ms.openlocfilehash: b61a4c90cfed9922df151a6c1ac93e276db18623
 ## Erstellen einer benutzerdefinierten Konfiguration
 Sie können benutzerdefinierte Konfigurationen verwenden, um VPN-Profile in Intune zu erstellen. So erstellen Sie eine benutzerdefinierte Konfiguration:
 
-   1. Wählen Sie in der Intune-Verwaltungskonsole **Richtlinie** -> **Richtlinie hinzufügen** -> *<Expand platform>* -> **Benutzerdefinierte Konfiguration** -> **Richtlinie erstellen** aus.
+   1. Wählen Sie in der Intune-Verwaltungskonsole **Richtlinie** > **Richtlinie hinzufügen** > *<Expand platform>* > **Benutzerdefinierte Konfiguration** > **Richtlinie erstellen** aus.
    2. Geben Sie einen Namen für die Richtlinie an.
-   3. Klicken Sie für jede URI-Einstellung auf **Hinzufügen**, und geben Sie die erforderlichen Informationen an. Beispiel:
+   3. Wählen Sie für jede URI-Einstellung **Hinzufügen** aus, und geben Sie die erforderlichen Informationen an. Beispiel:
 
    ![Dialogfeld „Benutzerdefinierte VPN-Profilkonfiguration“](./media/Intune_Add_VPN_URI.png)
 
-   4.  Nachdem Sie alle URI-Einstellungen eingegeben haben, klicken Sie auf **Richtlinie speichern**, und stellen Sie die Richtlinie dann bereit.
+   4.  Nachdem Sie alle URI-Einstellungen eingegeben haben, wählen Sie **Richtlinie speichern** aus, und stellen Sie die Richtlinie anschließend bereit.
 
 ## Bereitstellen einer Konfigurationsrichtlinie
 
-1.  Wählen Sie im Arbeitsbereich **Richtlinie** die Richtlinie aus, die Sie bereitstellen möchten, und klicken Sie dann auf **Bereitstellung verwalten**.
+1.  Wählen Sie im Arbeitsbereich **Richtlinie** die Richtlinie aus, die Sie bereitstellen möchten, und klicken Sie anschließend auf **Bereitstellung verwalten**.
 
 2.  Führen Sie im Dialogfeld **Bereitstellung verwalten** folgende Schritte aus:
 
-    -   **Zum Bereitstellen der Richtlinie**: Wählen Sie mindestens eine Gruppe aus, für die Sie die Richtlinie bereitstellen möchten, und klicken Sie auf **Hinzufügen** &gt; **OK**.
+    -   **So stellen Sie die Richtlinie bereit**: Wählen Sie mindestens eine Gruppe aus, für die Sie die Richtlinie bereitstellen möchten, und klicken Sie anschließend auf **Hinzufügen** &gt; **OK**.
 
-    -   **Wenn Sie das Dialogfeld schließen möchten, ohne die Richtlinie bereitzustellen:** Klicken Sie auf **Abbrechen**.
+    -   **So schließen Sie das Dialogfeld, ohne die Richtlinie bereitzustellen**: Klicken Sie auf **Abbrechen**.
 
 Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informationen zur Bereitstellung im unteren Teil der Richtlinienliste anzeigen.
 
 ##Beispiel für URI-Einstellungen für eine benutzerdefinierte VPN-Profilkonfiguration
-Hier folgen Beispieleinträge für URI-Werte zum Erstellen einer benutzerdefinierten Konfiguration für ein VPN in einem fiktiven Unternehmen namens Contoso. Weitere Informationen, wie etwa den Datentyp für die einzelnen Einträge, finden Sie unter [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)
+Hier folgen Beispieleinträge für URI-Werte zum Erstellen einer benutzerdefinierten Konfiguration für ein VPN in einem fiktiven Unternehmen namens Contoso. Weitere Informationen, wie den Datentyp für die einzelnen Einträge, finden Sie unter [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
 
 Natives Contoso-VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -83,22 +83,22 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-Informationen zur Verwendung dieser Einstellungen und weitere Details zu ihrer Funktion finden Sie in der CSP-Dokumentation: https://msdn.microsoft.com/de-de/library/windows/hardware/dn914776(v=vs.85).aspx
+Informationen zur Verwendung dieser Einstellungen und weitere Details zu ihrer Funktion finden Sie in der CSP-Dokumentation (Configuration Service Provider; Kryptografiedienstanbieter): https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
 ## URI-Einstellungen für Android pro App VPN auf PulseSecure
-### BENUTZERDEFINIERTE URI FÜR DIE PAKETLISTE 
+### BENUTZERDEFINIERTE URI FÜR DIE PAKETLISTE
 -  Datentyp = String
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList 
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
 -  Wert = durch Trennzeichen getrennte Paketliste.
    - Trennzeichen: Semikolon (;), Doppelpunkt (:), Komma (,), senkrechter Strich (|)
 
-Beispiele: 
+Beispiele:
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
 ### BENUTZERDEFINIERTE URI FÜR MODUS (OPTIONAL)
 - Datentyp = String
-- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode 
+- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
 > Hinweise
 > - Verwenden Sie den gleichen *Namen*, dem Sie dem benutzerdefinierten Profil zugewiesen haben.
@@ -112,6 +112,6 @@ Beispiele:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -3,18 +3,19 @@ title: "Zurücksetzen Ihrer Kennung über die Unternehmensportalwebsite | Micros
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
+ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 31023a2d51d4dd4cb854c1fa077f5a9910232bb4
+ms.sourcegitcommit: fd74fcdb26827b94d894b28d9d7f48e62420b14a
+ms.openlocfilehash: 8f7b33a7e3cf73caee62eaa696fed8b7f65f28dc
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 31023a2d51d4dd4cb854c1fa077f5a9910232bb4
 
 Wenn Sie die PIN oder das Kennwort für ein bei Intune registriertes Gerät verloren haben, können Sie die PIN bzw. das Kennwort über die [Unternehmensportalwebsite](http://portal.manage.microsoft.com) zurücksetzen. Die Unternehmensportalwebsite ist eine Website, auf der Sie Computer und Geräte verwalten können, die Sie bei Intune registriert haben. Hier können Sie die meisten der Aufgaben ausführen, die auch über Ihre Unternehmensportal-App zur Verfügung stehen.
 
-> [!NOTE] 
+> [!NOTE]
 > Die Schaltfläche „Kennung zurücksetzen“ wird möglicherweise auf der Unternehmensportal-Website nicht angezeigt, je nachdem, wie Intune von Ihrem IT-Administrator konfiguriert wurde. Das Zurücksetzen der Kennung wird auf Geräten mit Windows 8.1 und Windows RT nicht unterstützt.
 
 So setzen Sie Ihre Kennung zurück
@@ -33,7 +34,7 @@ So setzen Sie Ihre Kennung zurück
 
 2.  Tippen Sie auf **Kennung zurücksetzen**.
 
-    ![tap-passcode-to-reset](./media/iwp-1-tap-reset-passcode.png)
+    ![resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
 3.  Tippen Sie auf **Abmelden**, und melden Sie sich dann mit den Anmeldeinformationen Ihres Geschäfts- oder Schulkontos wieder an. Sie müssen sich innerhalb von fünf Minuten wieder anmelden.
 
@@ -63,6 +64,7 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 [Verwenden der Intune-Unternehmensportal-Website](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO3-->
 
 

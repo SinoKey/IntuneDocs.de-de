@@ -13,21 +13,21 @@ ms.assetid: 6fbf0805-1144-4e08-bafd-4f181d932bf2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: fca1e1becb36bec2310c905ea8f65263c303b2c2
+ms.sourcegitcommit: 06f5c027a73f0980c62310a24c038d8629aefd49
+ms.openlocfilehash: 81edb231be0cfd31fd39c031ef0d13240f9e7cf7
 
 
 ---
 
 # Außerbetriebnahme von Apps mit Microsoft Intune
 
-Um eine App außer Betrieb zu nehmen, deinstallieren Sie sie einfach. Wenn Sie Apps mit Intune bereitstellen und verwalten, ist der Prozess zum Deinstallieren der App für mobile Geräte und Windows-PCs identisch. Damit dieses Verfahren erfolgreich ausgeführt werden kann, muss die App die Deinstallation unterstützen.
+Um eine App außer Betrieb zu nehmen, deinstallieren Sie sie einfach. Wenn Sie Apps mit Intune bereitstellen und verwalten, ist der Prozess zum Deinstallieren der App für mobile Geräte und Windows-PCs identisch. Damit dieses Verfahren erfolgreich ausgeführt werden kann, muss die App den Deinstallationsprozess unterstützen.
 
 ## Deinstallieren einer App
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) **Apps** &gt; **Apps**.
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) **Apps** &gt; **Apps** aus.
 
-2.  Wählen Sie die zu deinstallierende App aus (die Sie zuvor bereitgestellt haben), und wählen Sie anschließend **Bereitstellung verwalten** aus.
+2.  Wählen Sie die zu deinstallierende App aus (eine, die zuvor bereitgestellt wurde), und wählen Sie anschließend **Bereitstellung verwalten** aus.
 
 3.  Wählen Sie auf der Seite **Bereitstellungsaktion** die Option **Deinstallieren** aus der Spalte **Genehmigung** aus.
 
@@ -38,6 +38,6 @@ Wenn das Gerät oder der Computer das nächste Mal die Apps prüft, wird die App
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

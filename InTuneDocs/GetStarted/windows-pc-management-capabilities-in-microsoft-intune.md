@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 49a236359692a5bbccf9ee0bb263094434049a91
-ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
+ms.sourcegitcommit: a6caef9e0f4d6235ecf1a89c1765d6c8e6ce1a7b
+ms.openlocfilehash: e5e3833a38434d4fe55cae554fc49f567b606ad8
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
 # Verwaltungsfunktionen für Windows-PCs (mit dem Microsoft Intune-PC-Client)
 In den meisten Szenarien registrieren Sie Ihre Geräte bei Microsoft Intune, sodass Sie über eine größere Anzahl von Funktionen verfügen können als mit dem Intune-PC-Client. Allerdings können Sie PCs auch mit dem Intune-PC-Client verwalten, der die folgenden Funktionen bietet:
 
--   **Verwalten von Softwareupdates**: Sie können PCs auf dem aktuellen Stand halten und festlegen, wann Updates angewendet werden sollen.
+-   **Softwareupdateverwaltung**: Sie können PCs auf dem aktuellen Stand halten und entscheiden, wann Updates angewendet werden sollen.
 
 -   **Windows-Firewall-Richtlinie**: Hiermit können Sie sicherstellen, dass die Windows-Firewall auf keinem von Ihrem Unternehmen verwendeten PC inaktiv oder nicht ordnungsgemäß konfiguriert ist.
 
@@ -37,18 +37,18 @@ In den meisten Szenarien registrieren Sie Ihre Geräte bei Microsoft Intune, sod
 Intune unterstützt die Installation der PC-Clientsoftware auf bis zu 7.000 Windows-Geräten.
 
 ## Anforderungen an das Betriebssystem
-PCs mit den folgenden Windows-Versionen (x86 und x64) können mit Intune verwaltet werden:
+PCs, die die folgenden Windows-Versionen (jeweils 32-Bit und 64-Bit) ausführen, können mit Intune verwaltet werden:
 
 
--   **Windows Vista**: Business, Enterprise und UltimateEdition.
+-   **Windows Vista**: Business-, Enterprise- und Ultimate-Versionen
 
--   **Windows 7**: Professional, Enterprise oder Ultimate (ohne Service Pack oder mit SP1).
+-   **Windows 7**: Professional-, Enterprise- oder Ultimate-Versionen (ohne Service Pack oder mit SP1)
 
--   **Windows 8**: Pro und Enterprise
+-   **Windows 8**: Pro- und Enterprise-Versionen
 
--   **Windows 8.1**: Pro und Enterprise
+-   **Windows 8.1**: Pro- und Enterprise-Versionen
 
-- **Windows 10**: Pro, Education und Enterprise
+- **Windows 10**: Pro-, Education- und Enterprise-Versionen
 
 
 ## Hardwaremindestanforderungen
@@ -65,8 +65,8 @@ Im Folgenden sind die Softwareanforderungen zum Installieren des Intune-PC-Clien
 
 |Anforderungen|Details|
 |---------------|--------------------|
-|Administratorrechte|Das Konto, mit dem die Clientsoftware installiert wird, muss über lokale Administratorrechte auf dem PC verfügen.|
-|Windows Installer 3.1|Auf dem PC muss Windows Installer 3.1 oder höher installiert sein.|
+|Administratorrechte|Das Konto, mit dem die Clientsoftware installiert wird, muss über lokale Administratorrechte für den PC verfügen.|
+|Windows Installer 3.1|Auf dem PC wird Windows Installer 3.1 oder höher benötigt.|
 |Entfernen nicht kompatibler Clientsoftware|Bevor Sie die Intune-PC-Clientsoftware installieren, müssen Sie die folgende Clientsoftware auf dem PC deinstallieren:<br /><br />– Alle Configuration Manager-Versionen<br />– Alle Microsoft Systems Management Server-Versionen (SMS)|
 
 ### Weitere Informationen:
@@ -74,6 +74,6 @@ Im Folgenden sind die Softwareanforderungen zum Installieren des Intune-PC-Clien
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

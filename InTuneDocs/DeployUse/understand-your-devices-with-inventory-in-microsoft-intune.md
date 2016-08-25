@@ -4,7 +4,7 @@ description: "Verwenden Sie Intune zum Anzeigen von Informationen zur Hardware d
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 7d11642f13dfbe554661ecc4149c3aaf3e7448c2
+ms.sourcegitcommit: df4e0bc8a818f22d6f7327f9f1348f67882e0c49
+ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 7d11642f13dfbe554661ecc4149c3aaf3e7448c2
 Mit Microsoft Intune können Sie das Inventar an registrierten Geräten und Windows-PCs anzeigen, auf denen die Intune-Clientsoftware ausgeführt wird.
 
 ## Welche Daten registrierter Geräte werden gesammelt?
-Um das von den mobilen Geräten gesammelte Inventar anzuzeigen, führen Sie die [Inventurberichte für mobile Geräte](understand-microsoft-intune-operations-by-using-reports.md)aus. Intune sammelt das folgende Inventar von den mobilen Geräten:
+Um das von den mobilen Geräten gesammelte Inventar anzuzeigen, führen Sie die [Inventurberichte für mobile Geräte](understand-microsoft-intune-operations-by-using-reports.md) aus. Intune sammelt das folgende Inventar von den mobilen Geräten:
 
 |Eigenschaft|Gesammelt von|
 |------------|-----------------------|
@@ -42,9 +42,9 @@ Um das von den mobilen Geräten gesammelte Inventar anzuzeigen, führen Sie die 
 |**Exchange ActiveSync-ID**|Alle Geräte|
 |**Jailbreak oder Rooting**|Nur iOS- und Android-Geräte|
 |**Eindeutige Geräte-ID**|Alle Geräte mit Ausnahme von Exchange ActiveSync|
-|**Seriennummer**|iOS-, Mac OS X-, Android-, Windows 8.1-, Windows 10-Geräte|
-|**Gesamtmenge des Speicherplatzes**|iOS-, Mac OS X-, Windows 8.1-, Windows 10-Geräte|
-|**Freier Speicherplatz**|iOS-, Mac OS X-, Windows 8.1-, Windows 10-Geräte|
+|**Seriennummer**|iOS-, Mac OS X-, Android-, Windows 8.1- und Windows 10-Geräte|
+|**Gesamtmenge des Speicherplatzes**|iOS-, Mac OS X-, Windows 8.1- und Windows 10-Geräte|
+|**Freier Speicherplatz**|iOS-, Mac OS X-, Windows 8.1- und Windows 10-Geräte|
 |**Telefonnummer**<br>Telefone, die als geschäftlich eingestuft sind, werden jetzt mit der vollständigen Telefonnummer identifiziert, wenn Sie beispielsweise einen Inventurbericht für mobile Geräte ausführen. BYOD-Telefonnummern werden mit &#42; maskiert, und nur die letzten vier Ziffern werden angezeigt.|iOS-, Android- und Windows Phone-Geräte|
 |**IMEI**|Exchange ActiveSync-, iOS-, Android- und Windows Phone-Geräte|
 |**MEID**<br>Mobile Equipment Identifier|Nur iOS-Geräte|
@@ -59,7 +59,7 @@ Um das von den mobilen Geräten gesammelte Inventar anzuzeigen, führen Sie die 
 |**Aktivierungssperre aktiviert**|Nur iOS-Geräte|
 |**Verschlüsselung aktiviert**|Alle Geräte|
 
-## Was wird von Windows-PCs gesammelt
+## Was wird von Windows-PCs gesammelt?
 > [!IMPORTANT]
 > Dieser Abschnitt gilt nur für Windows-PCs, auf denen die Intune-Windows-PC-Clientsoftware ausgeführt wird.
 
@@ -114,6 +114,6 @@ Um das von den Windows-PCs gesammelte Inventar anzuzeigen, führen Sie die [Comp
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

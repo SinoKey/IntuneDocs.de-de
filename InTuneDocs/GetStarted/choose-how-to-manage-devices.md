@@ -10,32 +10,30 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7c244554eb4b6ae5a248b53a7b4b6171807f4bfa
-ms.openlocfilehash: e353391375ce7b54f0be479607349e5618de1c37
+ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
+ms.openlocfilehash: cfd9df3814d0d306a254a5566155a91ce5d0ca16
 
 
 ---
 
 # Auswählen der Methode zum Verwalten von Geräten
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ermöglicht Ihnen das Verwalten einer Vielzahl von Geräten, indem Sie diese beim Dienst *registrieren*. Benutzer können dann über ein *Unternehmensportal* eine Reihe von Vorgängen ausführen, z. B. ihr Gerät registrieren, Apps suchen und installieren, sicherstellen, dass ihr Gerät die Unternehmensrichtlinien erfüllt und sich an ihren IT-Support wenden.
+Intune ermöglicht Ihnen das Verwalten einer Vielzahl von Geräten, indem Sie diese beim Dienst *registrieren*. Benutzer können dann über ein *Unternehmensportal* eine Reihe von Vorgängen ausführen, z. B. ihr Gerät registrieren, Apps suchen und installieren, sicherstellen, dass ihr Gerät die Unternehmensrichtlinien erfüllt und sich an ihren IT-Support wenden.
 
 ## Methoden zum Verwalten mobiler Geräte
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kann folgende Geräteplattformen verwalten:
+Intune kann folgende Geräteplattformen verwalten:
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
-<div class="alert alert-tip">
-  <h5><span class="icon-tip"></span> Tipp</h5>
-  <p>Wenn Sie bereits Geräte registriert haben, auf denen eine frühere Version von iOS als die oben genannte unterstützte Version ausgeführt wird, bleiben diese registriert. Überprüfen Sie jedoch die Dokumentation für die einzelnen [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], um sicherzustellen, dass die iOS-Version von dem Feature unterstützt wird.</p>
-</div>
+> [!NOTE]
+> Wenn Sie bereits Geräte registriert haben, auf denen eine frühere Version von iOS als die unterstützte Version ausgeführt wird, bleiben die Geräte registriert. Lesen Sie die Dokumentation, um sicherzustellen, dass die Funktion diese iOS-Version unterstützt.
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kann auch die Geräte der Benutzer verwalten (was als „Bring your own device“ bzw. BYOD bezeichnet wird). Es dient auch zum Verwalten von Geräten im Besitz des Unternehmens, z. B. in Szenarien, in denen das Unternehmen eine Liste mit Geräten anbietet, aus denen die Benutzer wählen können ("Choose your own device" oder CYOD).
+Intune kann die Geräte der Benutzer verwalten (was als „Bring your own device“ bzw. „BYOD“ bezeichnet wird). Es dient auch zum Verwalten von Geräten im Besitz des Unternehmens, z. B. in Szenarien, in denen das Unternehmen eine Liste mit Geräten anbietet, aus denen die Benutzer wählen können ("Choose your own device" oder CYOD).
 
 ### Registrieren von Geräten für die Verwaltung
-Für Betriebssysteme mobiler Geräte, einschließlich iOS, Android und Windows Phone, müssen Sie die Geräte immer registrieren. Die Methode zum Registrieren von Geräten hängt jedoch von den Anforderungen Ihres Unternehmens ab:
+Für Betriebssysteme mobiler Geräte, einschließlich iOS, Android und Windows Phone, müssen Sie die Geräte immer registrieren. Die Methode zum Registrieren von Geräten hängt von den Anforderungen Ihres Unternehmens ab:
 
 |Registrierungstyp|BYOD|CYOD|Gemeinsam genutzte Geräte mit Managerkonto|Gemeinsam genutzte Geräte ohne Benutzerkonto|
 |-------------------|--------|--------|--------------------------------------|----------------------------------------|
@@ -45,26 +43,21 @@ Für Betriebssysteme mobiler Geräte, einschließlich iOS, Android und Windows P
 |**Aufhebung der Registrierung durch**|Besitzer oder Administrator|Plattform |Administrator oder Benutzer|Administrator oder Benutzer|
 |**Berechtigung zum Zurücksetzen**|Besitzer oder Administrator|Administrator|Administrator|Administrator|
 
-<div class="alert alert-tip">
-  <h5><span class="icon-tip"></span> Tipp</h5>
-  <p>Eine vollständige Liste der Funktionen, die Ihnen durch die Registrierung Ihrer Geräte zur Verfügung stehen, finden Sie unter [Verwaltungsfunktionen für mobile Geräte](mobile-device-management-capabilities-in-microsoft-intune.md).</p>
-</div>
+Weitere Hilfestellungen finden Sie unter [Auswählen der Methode zum Registrieren mobiler Geräte](/intune/get-started/choose-how-to-enroll-devices1).
 
-
+> [!NOTE]
+> Eine vollständige Liste der Funktionen, die Ihnen durch die Registrierung Ihrer Geräte zur Verfügung stehen, finden Sie unter [Verwaltungsfunktionen für mobile Geräte](mobile-device-management-capabilities-in-microsoft-intune.md).
 
 ## Methoden zum Verwalten von Windows-PCs
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kann Windows-PCs mit Windows Vista und höher mithilfe des Intune-Computerclients verwalten. Für Windows-PCs können Sie jedoch zwischen deren Registrierung und der Installation der [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-PC-Clientsoftware wählen, die einige Funktionen bietet, die beim Registrieren von Geräten nicht verfügbar sind. In den meisten Szenarien registrieren Sie Ihre Windows-Geräte mit Intune, sodass Sie über eine größere Anzahl von Funktionen verfügen können als mit dem Computerclient.
+Intune kann Windows-PCs mit Windows Vista und höher mithilfe des Intune-Computerclients verwalten. Für Windows-PCs können Sie jedoch zwischen deren Registrierung und der Installation der Intune-PC-Clientsoftware wählen, die einige Funktionen bietet, die beim Registrieren von Geräten nicht verfügbar sind. In den meisten Szenarien registrieren Sie Ihre Windows-Geräte mit Intune, sodass Sie über eine größere Anzahl von Funktionen verfügen können als mit dem Computerclient.
 
 Erwägen Sie die Verwendung des Intune-Computerclients für folgende Optionen:
-<ul>
-<li>Verwenden einer der aktivierten Funktionen des Microsoft Intune-Computerclients zum Verwalten von Windows-PCs.</li>
-<li>Verwalten eines Windows-PCs mit einem Betriebssystem, das für die Registrierung nicht unterstützt wird.</li>
-</ul>
 
-<div class="alert alert-tip">
-  <h5><span class="icon-tip"></span> Tipp</h5>
-  <p>Eine vollständige Liste der Funktionen, die Ihnen durch Installieren des Intune-Computerclients auf unterstützten Windows-PCs zur Verfügung stehen, finden Sie unter [Funktionen für die Windows-PC-Verwaltung](windows-pc-management-capabilities-in-microsoft-intune.md).</p>
-</div>
+- Verwenden einer der aktivierten Funktionen des Microsoft Intune-Computerclients zum Verwalten von Windows-PCs
+- Verwalten eines Windows-PCs mit einem Betriebssystem, das für die Registrierung nicht unterstützt wird
+
+> [!NOTE]
+> Eine vollständige Liste der Funktionen, die Ihnen durch Installieren des Intune-Computerclients auf unterstützten Windows-PCs zur Verfügung stehen, finden Sie unter [Funktionen für die Windows-PC-Verwaltung](windows-pc-management-capabilities-in-microsoft-intune.md).
 
 ## Exchange ActiveSync-Verwaltung
 Sie können Geräte auch mithilfe von Exchange ActiveSync verwalten. Dies erfordert das Installieren von On-Premises Connector oder die Verwendung des integrierten Service to Service Connector, um eine Verbindung mit Exchange Server herzustellen.
@@ -80,6 +73,6 @@ Sie haben nun einige der Funktionen kennengelernt, die Sie zum Registrieren Ihre
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

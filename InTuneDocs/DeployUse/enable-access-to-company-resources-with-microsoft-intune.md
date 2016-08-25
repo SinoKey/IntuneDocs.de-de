@@ -3,7 +3,7 @@ title: Aktivieren des Zugriffs auf Unternehmensressourcen | Microsoft Intune
 description: "Die WLAN-, VPN- und E-Mail-Profile greifen ineinander, um Ihre Benutzer beim Zugriff auf die Dateien und Ressourcen, die sie benötigen, zu unterstützen."
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 9448b5fd9121a3bce33b947c79fee7290d2a43f9
+ms.sourcegitcommit: 167db9027e69dd6419d5deec758a8a0a0b119a97
+ms.openlocfilehash: 8605a665a0033fdc9b05ba452f5bf966e76699ca
 
 
 ---
@@ -24,15 +24,15 @@ Die WLAN-, VPN- und E-Mail-Profile von Microsoft Intune greifen ineinander, um I
 
 ## [WLAN-Profile](wi-fi-connections-in-microsoft-intune.md) und unterstützte Plattformen
 
-Bereitstellen von Einstellungen für drahtlose Netzwerke für Ihre Benutzer. Durch Bereitstellen dieser Einstellungen erleichtern Sie dem Endbenutzer das Herstellen einer Verbindung mit dem Unternehmensnetzwerk.
+Bereitstellen von Einstellungen für drahtlose Netzwerke für Ihre Benutzer. Diese Einstellungen erleichtern Ihren Benutzern die Verbindung mit dem Unternehmensnetzwerk.
 #### Unterstützte Plattformen
 
 |Windows 8.1 und höher|Windows Phone 8.1 und höher|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
-|Ja (Sie können ein Windows-WLAN-Profil importieren)|Ja (Sie können OMA-URI konfigurieren) |Ja|Ja|Ja|
+|Ja (Sie können ein Windows-WLAN-Profil importieren.)|Ja (Sie können OMA-URI konfigurieren.) |Ja|Ja|Ja|
 
 ## [VPN-Profile](vpn-connections-in-microsoft-intune.md) und unterstützte Plattformen
-Stellen Einstellungen für ein virtuelles privates Netzwerk (VPN) für Benutzer bereit. Durch Bereitstellen dieser Einstellungen erleichtern Sie dem Endbenutzer das Herstellen einer Verbindung mit Ressourcen im Unternehmensnetzwerk.
+Stellen Sie Einstellungen für ein virtuelles privates Netzwerk (VPN) für Ihre Benutzer bereit. Diese Einstellungen erleichtern Ihren Benutzern die Verbindung mit Ressourcen im Unternehmensnetzwerk.
 
 |Windows 8.1 und höher|Windows Phone 8.1 und höher|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
@@ -56,6 +56,6 @@ Ermöglichen den sicheren Zugriff auf Unternehmensressourcen einschließlich Dra
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

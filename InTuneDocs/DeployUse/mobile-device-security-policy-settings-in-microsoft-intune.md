@@ -13,17 +13,18 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 648cc02b47682a58195ee927560763818b6d32ac
+ms.sourcegitcommit: 388426657c5fa96289f5e14a85e8c299e4b50037
+ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
+
 
 
 ---
 
 # Sicherheitsrichtlinieneinstellungen für mobile Geräte in Microsoft Intune
 > [!IMPORTANT]
-> Microsoft Intune bietet jetzt getrennte Konfigurationsrichtlinien für jede Geräteplattform, wobei diese Richtlinien die neuesten Einstellungen berücksichtigen, die Sie verwenden können. Sie können die Sicherheitsrichtlinie für mobile Geräte weiter nutzen, wobei alle vorhandenen Bereitstellungen weiterhin funktionieren. Sie sollten allerdings die Migration zu den neuen Konfigurationsrichtlinien so bald wie möglich planen, da die Sicherheitsrichtlinie für mobile Geräte in Zukunft entfernt werden wird.
+> Microsoft Intune bietet nun separate Konfigurationsrichtlinien für jede Geräteplattform. Diese Richtlinien enthalten die neuesten Einstellungen, die Sie verwenden können. Sie können die Sicherheitsrichtlinie für mobile Geräte weiterhin nutzen, wobei alle vorhandenen Bereitstellungen weiterhin funktionieren. Sie sollten allerdings die Migration zu den neuen Konfigurationsrichtlinien so bald wie möglich planen, da die Sicherheitsrichtlinie für mobile Geräte in Zukunft entfernt werden wird.
 
-Verwenden Sie Intune-Sicherheitsrichtlinien für mobile Geräte, um eine Vielzahl von Einstellungen zu konfigurieren, die Sie für verwaltete Geräte in Ihrer Organisation bereitstellen können. Diese Einstellungen können verwendet werden, um die Funktionalität und die Sicherheit Ihrer Geräte zu steuern.
+Sie können die Intune-Sicherheitsrichtlinien für mobile Geräte verwenden, um eine Vielzahl von Einstellungen zu konfigurieren, die Sie für verwaltete Geräte in Ihrer Organisation bereitstellen können. Diese Einstellungen werden dazu verwendet, die Funktionalität und die Sicherheit Ihrer Geräte zu steuern.
 
 Sie können die Sicherheitsrichtlinien für mobile Geräte für die folgenden Gerätetypen erstellen und bereitstellen:
 
@@ -38,17 +39,17 @@ Sie können die Sicherheitsrichtlinien für mobile Geräte für die folgenden Ge
 -   Android und Samsung KNOX
 
 > [!NOTE]
-> Einige Einstellungen sind auf einigen Geräten nicht anwendbar. In der nachfolgenden Tabelle finden Sie eine vollständige Liste der Einstellungen, die Sie konfigurieren können.
+> Einige Einstellungen sind auf einigen Geräten nicht anwendbar. In den nachfolgenden Tabellen finden Sie eine vollständige Liste der Einstellungen, die Sie konfigurieren können.
 
 ## Sicherheitseinstellungen
 
 |Name der Einstellung|Windows 8.1 und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|iOS|Android und Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Anfordern eines Kennworts zum Entsperren mobiler Geräte**|Nein|Nein|Ja|Ja|Ja|
-|**Erforderlicher Kennworttyp**<br /><br />(gibt den erforderlichen Typ des Kennworts an, z. B. nur numerisch oder alphanumerisch)|Ja|Ja|Ja|Ja|Nein|
-|**Erforderlicher Kennworttyp – Mindestanzahl von Zeichensätzen**<br /><br />Es gibt vier Zeichensätze: Kleinbuchstaben, Großbuchstaben, Zahlen und Symbole. Diese Einstellung gibt an, wie viele Zeichensätze im Kennwort enthalten sein müssen. Für iOS-Geräte wird hiermit jedoch die erforderliche Anzahl von Symbolzeichen im Kennwort angegeben.|Ja|Ja|Ja|Ja|Nein|
+|**Erforderlicher Kennworttyp**<br /><br />Diese Einstellung gibt den erforderlichen Typ des Kennworts an, z.B. nur numerisch oder alphanumerisch.|Ja|Ja|Ja|Ja|Nein|
+|**Erforderlicher Kennworttyp – Minimale Anzahl von Zeichensätzen**<br /><br />Es gibt vier Zeichensätze: Kleinbuchstaben, Großbuchstaben, Zahlen und Symbole. Diese Einstellung gibt an, wie viele Zeichensätze im Kennwort enthalten sein müssen. Für iOS-Geräte wird hiermit jedoch die erforderliche Anzahl von Symbolzeichen im Kennwort angegeben.|Ja|Ja|Ja|Ja|Nein|
 |**Minimale Kennwortlänge**|Ja|Ja|Ja|Ja|Ja|
-|**Einfache Kennwörter zulassen**<br /><br />Einfache Kennwörter enthalten '0000' und '1234'.|Nein|Nein|Ja|Ja|Nein|
+|**Einfache Kennwörter zulassen**<br /><br />Einfache Kennwörter sind z. B. '0000' und '1234'.|Nein|Nein|Ja|Ja|Nein|
 |**Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird**|Ja|Ja|Ja|Ja|Ja|
 |**Minuten der Inaktivität, bevor der Bildschirm ausgeschaltet wird**<sup>1</sup>|Ja|Ja|Ja|Ja|Ja|
 |**Kennwortablauf (Tage)**|Ja|Ja|Ja|Ja|Ja|
@@ -58,7 +59,7 @@ Sie können die Sicherheitsrichtlinien für mobile Geräte für die folgenden Ge
 |**Bildkennwort und PIN zulassen**|Ja|Ja|Nein|Nein|Nein|
 |**Minuten der Inaktivität, bevor ein Kennwort erforderlich ist**|Nein|Nein|Nein|Ja|Nein|
 |**Fingerabdruckentsperrung zulassen**|Nein|Nein|Nein|iOS 7 und höher|Nein|
-Wenn Sie für iOS-Geräte die Einstellungen **Minuten der Inaktivität, bevor der Bildschirm ausgeschaltet wird** und **Minuten Inaktivität vor erneuter Anforderung des Kennworts** konfigurieren, werden sie nacheinander angewendet. Wenn Sie beispielsweise den Wert für beide Einstellungen auf **5** Minuten einstellen, wird der Bildschirm automatisch nach 5 Minuten deaktiviert, und das Gerät wird nach weiteren 5 Minuten gesperrt. Wenn der Benutzer den Bildschirm jedoch manuell deaktiviert, wird die zweite Einstellung sofort angewendet. Im selben Beispiel wird das Gerät 5 Minuten später gesperrt, nachdem der Benutzer den Bildschirm deaktiviert hat.
+<sup>1</sup>Wenn Sie für iOS-Geräte die Einstellungen **Minutes of inactivity before screen turns off** (Inaktivität in Minuten bis zur Abschaltung des Bildschirms) und **Minutes of inactivity before password is required** (Inaktivität in Minuten vor erneuter Anforderung des Kennworts) konfigurieren, werden sie nacheinander angewendet. Wenn Sie beispielsweise den Wert für beide Einstellungen auf **5** Minuten einstellen, wird der Bildschirm automatisch nach 5 Minuten deaktiviert, und das Gerät wird nach weiteren 5 Minuten gesperrt. Wenn der Benutzer den Bildschirm jedoch manuell deaktiviert, wird die zweite Einstellung sofort angewendet. Im selben Beispiel wird das Gerät 5 Minuten später gesperrt, nachdem der Benutzer den Bildschirm deaktiviert hat.
 
 Wenn Sie eine Kennwortlängenrichtlinie für Geräte mit Windows RT bereitstellen, müssen Benutzer ihr Kennwort zurücksetzen, selbst wenn ihr aktuelles Kennwort den Richtlinienanforderungen entspricht.
 
@@ -67,8 +68,8 @@ Wenn Sie eine Kennwortlängenrichtlinie für Geräte mit Windows RT bereitstelle
 |Name der Einstellung|Windows 8.1 und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|iOS|Android und Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Verschlüsselung auf mobilem Gerät anfordern**<sup>1</sup><br /><br />Für Windows Phone 8-Geräte müssen Sie hier **Ja**festlegen.<br /><br />Aktivieren Sie zum Verwenden der Verschlüsselung auf iOS-Geräten die Einstellung **Kennwort zum Entsperren mobiler Geräte erforderlich**.|Ja|Nein|Ja|Nein|Ja|
-|**Verschlüsselung auf Speicherkarten vorschreiben**<br /><br />Gilt auch für Geräte, die mit Exchange ActiveSync verwaltet werden.|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend (Apps und zugehörige Daten werden automatisch verschlüsselt)|Nicht zutreffend|Ja|
-Zusätzliche Informationen für Geräte die Windows 8.1 ausführen
+|**Verschlüsselung auf Speicherkarten vorschreiben**<br /><br />Diese Einstellung gilt auch für Geräte, die mit Exchange ActiveSync verwaltet werden.|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend <br />Apps und zugehörige Daten werden automatisch verschlüsselt.|Nicht zutreffend|Ja|
+<sup>1</sup>Hier finden Sie zusätzliche Informationen für Geräte mit Windows 8.1:
 
 -   Um die Verschlüsselung auf Geräten zu erzwingen, die Windows 8.1 ausführen, installieren Sie das [MDM-Clientupdate für Windows von Dezember 2014](http://support.microsoft.com/kb/3013816) auf jedem Gerät.
 
@@ -90,7 +91,7 @@ Zusätzliche Informationen für Geräte die Windows 8.1 ausführen
 |Name der Einstellung|Windows 8.1 und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|iOS|Android und Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Automatische Updates erforderlich**|Ja|Nein|Nein|Nein|Nein|
-|**Automatische Updates erforderlich – Mindestklassifizierung von Updates, die automatisch installiert werden**<br /><br />Wählen Sie die Klassifizierungen der Updates, die automatisch installiert werden:<br /><br />**Wichtig**: Installiert alle Updates, die als wichtig klassifiziert sind.<br /><br />**Empfohlen**: Installiert alle Updates, die als wichtige oder empfohlene klassifiziert sind.|Ja|Nein|Nein|Nein|Nein|
+|**Automatische Updates erforderlich – Mindestklassifizierung von Updates, die automatisch installiert werden**<br /><br />Wählen Sie die Klassifizierungen der Updates, die automatisch installiert werden:<br /><br />- **Wichtig**. Installiert alle Updates, die als wichtig klassifiziert sind.<br /><br />- **Empfohlen**. Installiert alle Updates, die als wichtig oder empfohlen klassifiziert sind.|Ja|Nein|Nein|Nein|Nein|
 |**Bildschirmaufnahme zulassen**|Nein|Nein|Nur Windows Phone 8.1|Ja|Ja (nur Samsung KNOX)|
 |**Kontrollcenter auf Sperrbildschirm zulassen**|Nein|Nein|Nein|iOS 7 und höher|Nein|
 |**Benachrichtigungsansicht auf Sperrbildschirm zulassen**|Nein|Nein|Nein|iOS 7 und höher|Nein|
@@ -110,7 +111,7 @@ Zusätzliche Informationen für Geräte die Windows 8.1 ausführen
 |**Dokumentsynchronisierung in iCloud zulassen**|Nein|Nein|Nein|Ja|Nein|
 |**Photo Stream-Synchronisierung in iCloud zulassen**|Nein|Nein|Nein|Ja|Nein|
 |**Verschlüsselte Sicherung erforderlich**|Nein|Nein|Nein|Ja|Nein|
-|**URL der Arbeitsordner**<br /><br />(legt die URL des Arbeitsordners so fest, dass Dokumente auf verschiedenen Geräten synchronisiert werden können)|Ja|Nein|Nein|Nein|Nein|
+|**URL der Arbeitsordner**<br /><br />Diese Einstellung legt die URL des Arbeitsordners so fest, dass Dokumente auf verschiedenen Geräten synchronisiert werden können.|Ja|Nein|Nein|Nein|Nein|
 |**Google-Sicherung zulassen**|Nein|Nein|Nein|Nein|Ja (nur Samsung KNOX)|
 
 ## Cloudeinstellungen – Konten und Synchronisierung
@@ -125,8 +126,8 @@ Zusätzliche Informationen für Geräte die Windows 8.1 ausführen
 |Name der Einstellung|Windows 8.1 und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|iOS|Android und Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Herunterladen von E-Mail-Anhängen für Benutzer zulassen**<sup>1</sup>|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
-|**Synchronisierungszeitraum für E-Mail** Gilt auch für Geräte, die mit Exchange ActiveSync verwaltet werden.|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
-|**Synchronisierung mit Exchange (Exchange ActiveSync) für mobile Geräte zulassen, die diese Einstellungen nicht vollständig unterstützen** Gilt auch für Geräte, die mit Exchange ActiveSync verwaltet werden.|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
+|**Synchronisierungszeitraum für E-Mail** <br /><br />Diese Einstellung gilt auch für Geräte, die mit Exchange ActiveSync verwaltet werden.|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
+|**Synchronisierung mit Exchange (Exchange ActiveSync) für mobile Geräte zulassen, die diese Einstellungen nicht vollständig unterstützen** <br /><br />Diese Einstellung gilt auch für Geräte, die mit Exchange ActiveSync verwaltet werden.|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
 |**Microsoft-Konto in Windows Mail-Anwendung optional machen**|Ja|Nein|Nein|Nein|Nein|
 |**Benutzerdefinierte E-Mail-Konten erlauben**|Nein|Nein|Nur Windows Phone 8.1|Nein|Nein|
 
@@ -141,7 +142,7 @@ Zusätzliche Informationen für Geräte die Windows 8.1 ausführen
 |**Plug-Ins zulassen**|Ja|Nein|Nein|Nein|Nein|
 |**Active Scripting zulassen**|Ja|Nein|Nein|Ja|Ja (nur Samsung KNOX)|
 |**Betrugswarnung zulassen**|Ja|Nein|Nein|Ja|Nein|
-|**Wechsel zu Intranetsite nach Eingabe eines einzelnen Worts zulassen**<br /><br />(erlaubt die Verwendung eines einzelnen Wortes, um Internet Explorer auf eine Website wie "Bing" weiterzuleiten)|Ja|Nein|Nein|Nein|Nein|
+|**Wechsel zu Intranetsite nach Eingabe eines einzelnen Worts zulassen**<br /><br />(Diese Einstellung ermöglicht die Verwendung eines einzelnen Wortes, um Internet Explorer auf eine Website zu leiten, z.B. „Bing“.)|Ja|Nein|Nein|Nein|Nein|
 |**Automatische Erkennung des Intranets zulassen**|Ja|Nein|Nein|Nein|Nein|
 |**Sicherheitsstufe für Internet**|Ja|Nein|Nein|Nein|Nein|
 |**Sicherheitsstufe für Intranet**|Ja|Nein|Nein|Nein|Nein|
@@ -180,9 +181,9 @@ Zusätzliche Informationen für Geräte die Windows 8.1 ausführen
 |**WLAN zulassen**|Nein|Nein|Nur Windows Phone 8.1|Nein|Ja (nur Samsung KNOX)|
 |**WLAN-Tethering zulassen**|Nein|Nein|Nur Windows Phone 8.1|Nein|Ja (nur Samsung KNOX)|
 |**Automatische Verbindung mit unverschlüsselten WLAN-Hotspots zulassen**|Nein|Nein|Nur Windows Phone 8.1|Nein|Nein|
-|**Berichterstellung für WLAN-Hotspots zulassen**<br /><br />(Informationen über WLAN-Verbindungen senden, um nahegelegene Verbindungen zu ermitteln)|Nein|Nein|Nur Windows Phone 8.1|Nein|Nein|
-|**Geolocation zulassen**<br /><br />(erlaubt dem Gerät die Nutzung von Standortinformationen)|Nein|Nein|Nur Windows Phone 8.1|Nein|Ja (nur Samsung KNOX)|
-|**NFC zulassen**<br /><br />(erlaubt Vorgänge, die NFC bzw. Near Field Communication verwenden)|Nein|Nein|Nur Windows Phone 8.1|Nein|Ja (nur Samsung KNOX)|
+|**Berichterstellung für WLAN-Hotspots zulassen**<br /><br />Diese Einstellung sendet Informationen über WLAN-Verbindungen, um nahegelegene Verbindungen zu ermitteln.|Nein|Nein|Nur Windows Phone 8.1|Nein|Nein|
+|**Geolocation zulassen**<br /><br />Diese Einstellung erlaubt dem Gerät die Nutzung von Standortinformationen.|Nein|Nein|Nur Windows Phone 8.1|Nein|Ja (nur Samsung KNOX)|
+|**NFC zulassen**<br /><br />Diese Einstellung erlaubt Vorgänge, die NFC (Near Field Communication) verwenden.|Nein|Nein|Nur Windows Phone 8.1|Nein|Ja (nur Samsung KNOX)|
 |**Bluetooth zulassen**|Nein|Nein|Nur Windows Phone 8.1|Nein|Ja (nur Samsung KNOX)|
 |**Ausschalten zulassen**<br>Wenn diese Einstellung deaktiviert ist, funktioniert die Einstellung **Anzahl der zulässigen wiederholten Anmeldefehler, bevor die Gerätedaten zurückgesetzt werden** für Samsung KNOX-Geräte nicht.|Nein|Nein|Nein|Nein|Ja (nur Samsung KNOX)|
 
@@ -211,7 +212,6 @@ Zusätzliche Informationen für Geräte die Windows 8.1 ausführen
 
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

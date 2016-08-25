@@ -13,35 +13,35 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 809c8dc87e9b7c2f27e8015a55606e376c5319ab
+ms.sourcegitcommit: 7fdfe64a18fe359ee4b3b4507ef4108ad65ab573
+ms.openlocfilehash: 3102e4637c61bbae002fb30947acd1f82204ac93
 
 
 ---
 
 # Einstellungen für Windows-Richtlinien in Microsoft Intune
-Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und höher)** von Microsoft Intune, um die folgenden Einstellungen für registrierte Windows 8- und Windows 8.1-Geräte zu konfigurieren:
+Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und höher)** von Microsoft Intune, um die folgenden Einstellungen für registrierte Windows 8- und Windows 8.1-Geräte zu konfigurieren:
 
 ## Anwendbarkeitseinstellungen
 
 |Name der Einstellung|Details|
 |----------------|----------------------------------|
-|**Alle Konfigurationen auf Windows 10 anwenden**|Erlaubt, dass Einstellungen in dieser Richtlinie zusätzlich zu Windows 8- und Windows 8.1-Geräten auf Windows 10-Geräte angewendet werden.|
+|**Alle Konfigurationen auf Windows 10 anwenden**|Aktiviert Einstellungen in dieser Richtlinie, die zusätzlich zu Windows 8- und Windows 8.1-Geräten auf Windows 10-Geräte angewendet werden.|
 
 ## Sicherheitseinstellungen
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Erforderlicher Kennworttyp**|Gibt den erforderlichen Typ des Kennworts an, z. B. nur numerisch oder alphanumerisch.|Ja|Ja|
-|**Erforderlicher Kennworttyp – Mindestanzahl von Zeichensätzen**|Es gibt vier Zeichensätze: Kleinbuchstaben, Großbuchstaben, Zahlen und Symbole. Diese Einstellung gibt an, wie viele Zeichensätze im Kennwort enthalten sein müssen. Für iOS-Geräte wird hiermit jedoch die erforderliche Anzahl von Symbolzeichen im Kennwort angegeben.|Ja|Ja|
-|**Minimale Kennwortlänge**<sup>1</sup>|Konfiguriert die erforderliche Mindestlänge (in Zeichen) für das Kennwort auf Geräten.|Ja|Ja|
-|**Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird**|Setzt das Gerät zurück, wenn die angegebene Anzahl fehlgeschlagener Anmeldeversuche erreicht ist.|Ja|Ja|
-|**Minuten der Inaktivität, bevor der Bildschirm ausgeschaltet wird**|Wählen Sie die Anzahl von Minuten aus, die ein Gerät im Leerlauf sein muss, bevor ein Kennwort zum Entsperren erforderlich ist.| Ja|Ja|
+|**Erforderlicher Kennworttyp**|Gibt den erforderlichen Typ des Kennworts an, z.B. nur alphanumerisch oder numerisch.|Ja|Ja|
+|**Erforderlicher Kennworttyp – Minimale Anzahl von Zeichensätzen**|Gibt an, wie viele verschiedene Zeichensätze im Kennwort enthalten sein müssen. Es gibt vier Zeichensätze: Kleinbuchstaben, Großbuchstaben, Zahlen und Symbole. Für iOS-Geräte gibt diese Einstellung jedoch die erforderliche Anzahl von Symbolen im Kennwort an.|Ja|Ja|
+|**Minimale Kennwortlänge**<sup>1</sup>|Konfiguriert die erforderliche Mindestlänge (in Zeichen) für das Kennwort.|Ja|Ja|
+|**Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird**|Setzt das Gerät zurück, wenn diese Anzahl von Anmeldeversuchen fehlschlägt.|Ja|Ja|
+|**Minuten der Inaktivität, bevor der Bildschirm ausgeschaltet wird**|Gibt die Anzahl von Minuten an, die ein Gerät im Leerlauf sein muss, bevor ein Kennwort zum Entsperren erforderlich ist.| Ja|Ja|
 |**Kennwortablauf (Tage)**|Gibt die Anzahl der Tage an, bevor das Gerätekennwort geändert werden muss.|Ja|Ja|
 |**Kennwortverlauf speichern**|Gibt an, ob der Benutzer zuvor verwendete Kennwörter konfigurieren kann.|Ja|Ja|
 |**Kennwortverlauf speichern** – **Wiederverwendung vorheriger Kennwörter verhindern**|Gibt an, wie viele zuvor verwendete Kennwörter vom Gerät gespeichert werden.|Ja|Ja|
-|**Bildkennwort und PIN zulassen**|Ermöglicht die Verwendung eines Bildkennworts und einer PIN auf dem Gerät. Mit einem Bildkennwort kann sich der Benutzer mit Gesten auf einem Bild anmelden. Mit einer PIN kann sich der Benutzer mit einem vierstelligen Code schnell anmelden.|Ja|Ja|
-<sup>1</sup> Wenn Sie eine Kennwortlängenrichtlinie für Geräte unter Windows RT bereitstellen, müssen Benutzer ihr Kennwort zurücksetzen, selbst wenn ihr aktuelles Kennwort den Richtlinienanforderungen entspricht.
+|**Bildkennwort und PIN zulassen**|Aktiviert die Verwendung eines Bildkennworts und einer PIN. Mit einem Bildkennwort kann sich der Benutzer mit Gesten auf einem Bild anmelden. Mit einer PIN kann sich der Benutzer mit einem vierstelligen Code schnell anmelden.|Ja|Ja|
+<sup>1</sup> Wenn Sie eine Kennwortlängenrichtlinie für Geräte unter Windows RT bereitstellen, müssen Benutzer ihre Kennwörter zurücksetzen, selbst wenn ihr aktuelles Kennwort den Richtlinienanforderungen entspricht.
 
 ## Verschlüsselungseinstellungen
 
@@ -62,17 +62,17 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Netzwerkfirewall erforderlich**|Legen Sie fest, dass die Windows-Firewall aktiviert sein muss.|Ja|Nein|
-|**SmartScreen aktivieren**|Legen Sie fest, dass Windows SmartScreen auf Geräten verwendet werden muss.|Ja|Nein|
+|**Netzwerkfirewall erforderlich**|Erfordert, dass die Windows-Firewall aktiviert sein muss.|Ja|Nein|
+|**SmartScreen aktivieren**|Erfordert, dass Windows SmartScreen verwendet werden muss.|Ja|Nein|
 
 ## Systemeinstellungen
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Automatische Updates erforderlich**|Aktivieren Sie die Einstellung für automatische Updates auf Geräten.|Ja|Nein|
-|**Automatische Updates erforderlich – Mindestklassifizierung von Updates, die automatisch installiert werden**|Wählen Sie die Klassifizierungen der Updates, die automatisch installiert werden:<br /><br />-   **Wichtig**: Installiert alle Updates, die als wichtig klassifiziert sind.<br />-   **Empfohlen**: Installiert alle Updates, die als wichtige oder empfohlene klassifiziert sind.|Ja|Nein|
-|**Benutzerkontensteuerung**|Legen Sie fest, dass die Benutzerkontensteuerung (User Account Control, UAC) auf Geräten verwendet werden muss.|Ja|Nein|
-|**Übermitteln von Diagnosedaten zulassen**|Lassen Sie zu, dass das Gerät Diagnoseinformationen an Microsoft übermittelt.|Ja|Nein|
+|**Automatische Updates erforderlich**|Aktiviert die Einstellung für automatische Updates auf Geräten.|Ja|Nein|
+|**Automatische Updates erforderlich – Mindestklassifizierung von Updates, die automatisch installiert werden**|Wählt die Klassifizierungen der Updates aus, die automatisch installiert werden:<br /><br />-   **Wichtig** – Installiert alle Updates, die als wichtig klassifiziert sind.<br />-   **Empfohlen** – Installiert alle Updates, die als wichtig oder empfohlen klassifiziert sind.|Ja|Nein|
+|**Benutzerkontensteuerung**|Erfordert, dass die Benutzerkontensteuerung (User Account Control; UAC) auf Geräten verwendet werden muss.|Ja|Nein|
+|**Übermitteln von Diagnosedaten zulassen**|Ermöglicht, dass das Gerät Diagnoseinformationen an Microsoft übermittelt.|Ja|Nein|
 
 
 ## Cloudeinstellungen – Dokumente und Daten
@@ -85,32 +85,32 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Microsoft-Konto in Windows Mail-Anwendung optional machen**|Hiermit wird der Zugriff auf die Windows Mail-Anwendung ohne Microsoft-Konto zugelassen.|Ja|Nein|
+|**Microsoft-Konto in Windows Mail-Anwendung optional machen**|Ermöglicht den Zugriff auf die Windows Mail-Anwendung ohne Microsoft-Konto.|Ja|Nein|
 
 ## Anwendungseinstellungen – Browser
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**AutoAusfüllen zulassen**|Benutzer können die Einstellungen für AutoVervollständigen im Browser ändern.|Ja|Nein|
+|**AutoAusfüllen zulassen**|Ermöglicht Benutzern, die Einstellungen für AutoVervollständigen im Browser zu ändern.|Ja|Nein|
 |**Popupblocker zulassen**|Aktiviert oder deaktiviert den Popupblocker des Browsers.|Ja|Nein|
-|**Plug-Ins zulassen**|Benutzer können Plug-Ins zu Internet Explorer hinzufügen.|Ja|Nein|
-|**Active Scripting zulassen**|Browser können Skripts ausführen, z. B. ActiveX-Skripts.|Ja|Nein|
-|**Betrugswarnung zulassen**|Aktivieren oder deaktivieren von Warnungen zu potenziell betrügerischen Websites.|Ja|Nein|
-|**Wechsel zu Intranetsite nach Eingabe eines einzelnen Worts zulassen**|Lässt die Verwendung eines einzelnen Worts zu, um Internet Explorer auf eine Website wie „Bing“ weiterzuleiten.|Ja|Nein|
+|**Plug-Ins zulassen**|Ermöglicht Benutzern, Plug-Ins zu Internet Explorer hinzuzufügen.|Ja|Nein|
+|**Active Scripting zulassen**|Ermöglicht dem Browser, Skripts auszuführen, z.B. ActiveX-Skripts.|Ja|Nein|
+|**Betrugswarnung zulassen**|Aktiviert oder deaktiviert Warnungen zu potenziell betrügerischen Websites.|Ja|Nein|
+|**Wechsel zu Intranetsite nach Eingabe eines einzelnen Worts zulassen**|Ermöglicht die Verwendung eines einzelnen Worts, um Internet Explorer auf eine Website wie „Bing“ weiterzuleiten.|Ja|Nein|
 |**Automatische Erkennung des Intranets zulassen**|Hilft bei der Konfiguration der Sicherheit für Intranetsites in Internet Explorer.|Ja|Nein|
-|**Sicherheitsstufe für Internet**|Legen Sie die Internet Explorer-Sicherheitsstufe für Internetsites fest.|Ja|Nein|
-|**Sicherheitsstufe für Intranet**|Legen Sie die Internet Explorer-Sicherheitsstufe für Intranetsites fest.|Ja|Nein|
-|**Sicherheitsstufe für vertrauenswürdige Sites**|Konfigurieren Sie die Sicherheitsstufe für die Zone vertrauenswürdiger Sites.|Ja|Nein|
-|**Sicherheitsstufe für eingeschränkte Sites**|Konfigurieren Sie die Sicherheitsstufe für Zone eingeschränkter Sites.|Ja|Nein|
-|**Header "Nicht nachverfolgen" senden**|Hiermit wird in Internet Explorer ein DNT-Header (Do Not Track, nicht nachverfolgen) an besuchte Websites gesendet.|Ja|Nein|
-|**Menüzugriff im Enterprise-Modus erlauben**|Ermöglicht dem Benutzer, auf die Menüoptionen für den Unternehmensmodus von Internet Explorer zuzugreifen.<br>Wenn diese Einstellung ausgewählt ist, können Sie auch einen **Speicherort des Protokollberichts** angeben. Dieser enthält eine URL zu einem Bericht, in dem Websites angezeigt werden, für die Benutzer Zugriff im Unternehmensmodus aktiviert haben.|Ja|Nein|
-|**Ort der Standortliste für Enterprise-Modus**|Geben Sie den Speicherort der Liste der Websites an, die den Unternehmensmodus verwenden, wenn er aktiv ist.|Ja|Nein|
+|**Sicherheitsstufe für Internet**|Legt die Internet Explorer-Sicherheitsstufe für Internetsites fest.|Ja|Nein|
+|**Sicherheitsstufe für Intranet**|Legt die Internet Explorer-Sicherheitsstufe für Intranetsites fest.|Ja|Nein|
+|**Sicherheitsstufe für vertrauenswürdige Sites**|Konfiguriert die Sicherheitsstufe für die Zone vertrauenswürdiger Sites.|Ja|Nein|
+|**Sicherheitsstufe für eingeschränkte Sites**|Konfiguriert die Sicherheitsstufe für Zone eingeschränkter Sites.|Ja|Nein|
+|**Header "Nicht nachverfolgen" senden**|Hiermit wird ein DNT-Header (Do Not Track, nicht nachverfolgen) an besuchte Websites in Internet Explorer gesendet.|Ja|Nein|
+|**Menüzugriff im Enterprise-Modus erlauben**|Ermöglicht dem Benutzer, auf die Menüoptionen für den Unternehmensmodus von Internet Explorer zuzugreifen.<br>Wenn Sie diese Einstellung ausgewählt haben, können Sie auch einen **Speicherort des Protokollberichts** angeben. Dieser enthält eine URL zu einem Bericht, in dem Websites angezeigt werden, für die Benutzer Zugriff im Unternehmensmodus aktiviert haben.|Ja|Nein|
+|**Ort der Standortliste für Enterprise-Modus**|Gibt den Speicherort der Liste der Websites an, die den Unternehmensmodus verwenden, wenn er aktiv ist.|Ja|Nein|
 
 ## Einstellungen für Gerätefunktionen - Mobiltelefon
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Datenroaming zulassen**|Zulassen des Datenroamings, wenn das Gerät in einem Mobilfunknetz verwendet wird.|Ja|Nein|
+|**Datenroaming zulassen**|Ermöglicht das Datenroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.|Ja|Nein|
 
 
 
@@ -119,7 +119,6 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und
 
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

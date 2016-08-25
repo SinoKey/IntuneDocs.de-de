@@ -3,8 +3,8 @@ title: "Verwenden Ihres Android-Geräts mit Intune | Microsoft Intune"
 description: "Liste mit Links zu Aufgaben, die Sie auf Ihrem Android-Mobilgerät ausführen können, wenn das Gerät bei Intune registriert ist."
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e0ff9b0b1c31e0037f34e223ff26c2b111c5a0aa
+ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
+ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 
 ---
@@ -22,7 +22,11 @@ ms.openlocfilehash: e0ff9b0b1c31e0037f34e223ff26c2b111c5a0aa
 
 # Verwenden Ihres Android-Geräts mit Intune
 
-Die folgenden Aufgaben und Schritte müssen Sie auf Ihrem Android-Gerät ausführen, wenn Ihr Unternehmen Microsoft Intune verwendet:
+Dieser Artikel enthält Links zu allen Aufgaben, die Endbenutzer auf ihren von Intune verwalteten Geräten durchführen können. IT-Administratoren können auf diese Informationen verweisen, um die Schritte anzuzeigen, die Benutzer zum Durchführen einer Vielzahl von Aufgaben befolgen, die in Kategorien gruppiert werden: 
+
+- Installation der Unternehmensportal-App und Intune-Registrierung 
+- Verwaltungsaufgaben nach der Registrierung
+- Kompatibilitätsprobleme
 
 ## Installation der Unternehmensportal-App und Intune-Registrierung
 
@@ -67,9 +71,6 @@ Die Informationen in diesem Abschnitt helfen Ihnen beim Behandeln von Problemen,
 
 
 
-
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

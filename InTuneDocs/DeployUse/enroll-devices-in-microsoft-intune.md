@@ -13,14 +13,16 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: 41c21da7c95ef15f817aa344aa5b2d6479b65922
+ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
+ms.openlocfilehash: 9d624da7931c56476b476b7a9fd5711f398052c4
 
 
 ---
 
 # Registrieren von Geräten für die Verwaltung in Intune
 Die Registrierung durch die Verwaltung mobiler Geräte (MDM) in Microsoft Intune dient dazu, Geräte in die Verwaltung aufzunehmen und den Zugriff auf Ressourcen zu ermöglichen. Auf welche Weise Sie die Geräte registrieren, hängt von Gerätetyp, Besitz und benötigtem Verwaltungsniveau ab. Szenarien mit „Bring your own Device“- (BYOD) und firmeneigenen Geräten (Company-Owned Device, COD) erfordern eine Registrierung. Organisationen, die Exchange ActiveSync verwenden, entweder lokal oder in der Cloud gehostet, können ein niedrigeres Verwaltungsniveau ohne Registrierungsanforderungen aktivieren. Windows-PCs können auch mit Intune-Clientsoftware verwaltet werden.
+
+Hilfe finden Sie unter [Auswählen der Methode zum Registrieren mobiler Geräte](/intune/get-started/choose-how-to-enroll-devices1).
 
 ###  Unterstützte Geräteplattformen
 
@@ -149,6 +151,6 @@ Mit der Intune-Clientsoftware verwaltete Computer können nicht selektiv zurück
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

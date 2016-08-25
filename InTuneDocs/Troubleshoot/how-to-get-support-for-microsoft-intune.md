@@ -13,8 +13,8 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: d22fc07989feb7d74a7e576b7a69ae026fd60c48
+ms.sourcegitcommit: f400f8b2ffd85b6328eceb74b97de1e67203ee6b
+ms.openlocfilehash: 3342ee86179348dbff880cb5884bf2975d26b50d
 
 
 ---
@@ -25,6 +25,11 @@ ms.openlocfilehash: d22fc07989feb7d74a7e576b7a69ae026fd60c48
 In diesem Thema wird erläutert, wie Sie eine Serviceanfrage stellen oder telefonischen Support in vielen Sprachen anfordern.
 
 Informationen zur Selbsthilfe für Intune finden Sie unter [Allgemeine Tipps für die Problembehandlung für Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) oder in einem der Themen zur Behandlung bestimmter Probleme, die Sie in diesem Thema unter **Weitere Informationen** finden.
+
+>[!NOTE]
+>
+>Premier-Kunden können ein Intune-Supportticket auf der [Premier Support-Seite](https://support.microsoft.com/en-us/premier/contacts) öffnen.
+
 ## Erstellen einer Onlineserviceanfrage
 
 1.  Melden Sie sich mit Ihren Intune-Anmeldeinformationen beim [Office 365 Admin Center](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage) an.
@@ -140,6 +145,6 @@ Unsere Aufgabe besteht darin:
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -13,13 +13,68 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 53a7bda5dd5adcac512c413c7069723ae638f279
+ms.sourcegitcommit: 5ab9592c253238fd832f8b48372e5474fcfc5331
+ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
 
 
 ---
+## Benachrichtigung über kommende Verbesserungen an der Gruppenverwaltung
+
+Um Ihren Wünschen nach einem einheitlichen Handling für Gruppierung und Adressierung in Enterprise Mobility + Security gerecht zu werden, konvertieren wir Intune-Gruppen zu Sicherheitsgruppen auf Azure Active Directory Basis. Dies vereinheitlicht die Gruppenverwaltung in Intune und Azure Active Directory (Azure AD). Durch die neue Benutzeroberfläche müssen Sie keine Gruppen zwischen Diensten duplizieren, und es wird eine Erweiterung unter Verwendung von PowerShell und Graph bereitgestellt. 
+
+### Inwiefern betrifft das mich?
+Diese Änderung betrifft Sie jetzt nicht, doch wir können Ihnen sagen, was die Zukunft bereithält:
+
+-   Im September werden neue Konten, die nach der monatlichen Dienstversion bereitgestellt wurden, Azure AD-Sicherheitsgruppen und nicht mehr Intune-Benutzergruppen verwenden.   
+-   Im Oktober werden neue Konten, die nach der monatlichen Dienstversion bereitgestellt wurden, jeweils benutzer- und gerätebasierte Gruppen im Azure AD-Portal verwalten. Keine Beeinträchtigung für existierende Kunden
+-   Im November beginnt das Intune-Produktteam existierende Kunden zur neuen Azure AD-basierten Gruppenverwaltungsoberfläche zu migrieren. Alle Benutzer- und Gerätegruppen, die sich jetzt in Intune befinden, werden zu Azure AD-Sicherheitsgruppen migriert. Die Migration wird ab November in Batches durchgeführt. Wir beginnen nicht mit der Migration, bis wir nicht jede Auswirkung auf Ihre tägliche Arbeit minimieren können und keine Auswirkungen auf den Endbenutzer erwarten können. Vor der Migration Ihres Kontos erhalten Sie von uns eine Nachricht.
+
+
+### Wie und wann werde ich zur neuen Gruppenoberfläche migrieren?
+Aktuelle Kunden werden innerhalb eines Zeitraum migriert. Wir sind dabei, den Zeitplan für diese Migration fertigzustellen und aktualisieren dieses Thema in ein paar Wochen, um Ihnen weitere Details mitzuteilen. Bevor Sie migriert werden, erhalten Sie eine Benachrichtigung. Kontaktieren Sie unser Migrationsteam unter [intunegrps@microsoft.com](intunegrps@microsoft.com), wenn Sie Probleme mit der Migration haben.
+
+### Was geschieht mit meinen vorhandenen Benutzer- und Gerätegruppen?
+ Benutzer- und Gerätegruppen, die sie erstellt haben, werden zu Azure AD-Sicherheitsgruppen migriert. Intune-Standardgruppen, z.B. die Gruppe „Alle Benutzer“ werden nur migriert, wenn Sie sie bei der Bereitstellung zum Zeitpunkt der Migration verwenden. Die Migration kann für einige Gruppen komplexer sein, und Sie werden benachrichtigt, falls weitere Schritte für die Migration erforderlich sind.
+
+### Welche neuen Funktionen sind für mich verfügbar?
+Hier werden die neuen Funktionen erklärt:
+
+-    Azure AD-Sicherheitsgruppen werden in Intune für alle Bereitstellungsarten unterstützt.
+-    Azure AD-Sicherheitsgruppen unterstützen das Gruppieren von Geräten und Benutzern.
+-    Azure AD-Sicherheitsgruppen unterstützen dynamische Gruppen mit Intune-Geräteattributen. Sie können beispielsweise Geräte basierend auf einer Plattform dynamisch gruppieren, z.B. iOS. Wenn ein neues iOS-Gerät in Ihrer Organisation registriert wird, wird es auf diese Weise automatisch der dynamischen iOS-Gerätegruppe hinzugefügt.
+-    Gemeinsam genutzte Administratoroberflächen für Gruppenverwaltung in Azure AD und Intune.
+- Die Rolle *Intune-Dienstadministrator* wird Azure AD hinzugefügt, um Dienstadministratoren in Intune die Ausführung von Gruppenverwaltungstasks in Azure AD zu erlauben.
+
+
+
+
+### Welche Intune-Funktion wird nicht verfügbar sein?
+Obwohl sich die Gruppenoberfläche verbessern wird, gibt es einige Intune-Funktionen, die nach der Migration nicht verfügbar sein werden.
+
+#### Gruppenverwaltungsfunktion
+
+-   Sie können keine Mitglieder oder Gruppen mehr ausschließen, wenn Sie eine neue Gruppe erstellen. Jedoch erlauben Ihnen dynamische Azure AD-Gruppen die Verwendung von Attributen zum Erstellen von erweiterten Regeln, um Mitglieder basierend auf Kriterien auszuschließen.
+-   Für die Gruppen **Nicht gruppierte Benutzer** und **Nicht gruppierte Geräte** wird es keinen Support geben. Diese Gruppen werden nicht migriert.
+
+
+#### Gruppenabhängige Funktionen
+
+-   Die Serviceadministratorrolle wird über keine **Verwalten von Gruppen**-Berechtigungen verfügen.
+-   Sie können keine Exchange ActiveSync-Geräte gruppieren.  Ihre Gruppe **Alle von EAS verwalteten Geräte** wird von einer Gruppe in eine Berichtsansicht konvertiert.
+-  Pivotieren mit Gruppen in Berichten ist nicht verfügbar.
+-  Adressierung benutzerdefinierter Zielgruppen mithilfe von Benachrichtigungsregeln ist nicht verfügbar.
+
+### Wie sollte ich mich für die Änderung vorbereiten?
+ Wir haben Empfehlungen für Sie, die Ihnen diese Umstellung vereinfachen:
+
+- Bereinigen Sie alle unerwünschten oder nicht benötigten Intune-Gruppen vor der Migration.
+- Überdenken Sie die Verwendung der Ausschlussfunktion in Ihren Gruppen, und ziehen Sie in Erwägung, Ihre Gruppen ggf. so zu bearbeiten, dass sie die Ausschlussfunktion nicht benötigen.
+-  Wenn Sie Administratoren haben, die über keine Berechtigung verfügen, Gruppen in Azure AD zu erstellen, fragen Sie Ihren Azure AD-Administrator, ob er diese zur Azure AD-Rolle **Intune-Dienstadministrator** hinzufügen kann.
+
 
 # Erstellen von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune
+
+In diesem Abschnitt wird beschrieben, wie Intune-Gruppen in der Intune-Verwaltungskonsole erstellt werden.
 
 Zum Erstellen und Verwalten von Gruppen verwenden Sie den Arbeitsbereich **Gruppen** der Microsoft Intune-Verwaltungskonsole. Die Seite **Gruppenübersicht** enthält folgende Statusübersichten, mit denen Sie Probleme, die Ihre Aufmerksamkeit erfordern, schnell erkennen und priorisieren können:
 
@@ -153,6 +208,6 @@ Jede Richtlinie verfügt über einen **vorgesehenen Wert** und einen **Status**.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

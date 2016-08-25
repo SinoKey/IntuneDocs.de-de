@@ -3,8 +3,8 @@ title: "Verwenden Ihres Windows-Geräts mit Intune | Microsoft Intune"
 description: "Liste mit Links zu Aufgaben, die Sie auf Ihrem Windows- Gerät ausführen können, wenn das Gerät bei Intune registriert ist."
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 07/20/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,18 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 018d8936fe9158ebd85920cac978844e6949fb64
-ms.openlocfilehash: c1fe0db8967ad2c483718bdc908097967be8b459
+ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
+ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
 
 
 ---
 
 # Verwenden Ihres Windows-Geräts mit Intune
 
-Befolgen Sie diese Schritte für Aufgaben, die Sie auf Ihrem Windows-Gerät oder -Computer ausführen müssen, wenn Ihr Unternehmen Microsoft Intune verwendet.
+Dieser Artikel enthält Links zu allen Aufgaben, die Endbenutzer auf ihren von Intune verwalteten Geräten durchführen können. IT-Administratoren können auf diese Informationen verweisen, um die Schritte anzuzeigen, die Benutzer zum Durchführen einer Vielzahl von Aufgaben befolgen, die in Kategorien gruppiert werden: 
+- Installation der Unternehmensportal-App und Intune-Registrierung 
+- Verwaltungsaufgaben nach der Registrierung
+- Kompatibilitätsprobleme
 
 ## Installation der Unternehmensportal-App und Intune-Registrierung
 
@@ -57,8 +60,6 @@ Die Informationen in diesem Abschnitt helfen Ihnen beim Beheben von Problemen, d
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 
