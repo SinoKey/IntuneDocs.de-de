@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bc5ff023b5d29ded999c7e49c5e7c2aee8a23bba
-ms.openlocfilehash: e71cc1e8e2cb0f46507ff63d962f3d477acfb72e
+ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
+ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
 
 
 ---
@@ -233,6 +233,77 @@ Die folgenden Einstellungen können auf Geräten mit iOS 7.1 und höher konfigur
 |**Installation von Konfigurationsprofilen und Zertifikaten durch den Benutzer zulassen**|Ermöglicht dem Benutzer die Installation von Konfigurationsprofilen und Zertifikaten.|
 |**Verwendung der Nachrichten-App auf dem Gerät zulassen**|Gestatten Sie die Verwendung der Nachrichten-App zum Senden von SMS.|
 
+### Einblenden oder Ausblenden von Apps
+
+Verwenden Sie die **Liste von aus- und eingeblendeten Apps**, um auf überwachten Geräten mit iOS 9.3 oder höher Folgendes zu steuern:
+
+- Angeben einer Liste von Apps, die vor Benutzern verborgen werden. Benutzer können diese Apps weder anzeigen noch starten.
+- Angeben einer Liste von Apps, die Benutzer anzeigen und starten können. Es können keine anderen Apps angezeigt oder gestartet werden.
+
+
+#### So erstellen Sie eine Liste von aus- oder eingeblendeten Apps
+
+Geben Sie die folgenden Einstellungen an:
+
+|Name der Einstellung|Details|
+|-|-|
+|**Liste von aus- und eingeblendeten Apps**|Aktivieren Sie diese Einstellung, wenn Sie eine Liste von aus- oder eingeblendeten Apps erstellen möchten.|
+|**Ausblenden der aufgelisteten Apps vor Benutzern**|Wählen Sie diese Option aus, wenn Sie eine Liste von Apps erstellen möchten, die vor Benutzern ausgeblendet werden.|
+|**Einblenden ausschließlich der aufgelisteten Apps für Benutzer**|Wählen Sie diese Option aus, wenn Sie eine Liste von Apps erstellen möchten, die Benutzern angezeigt werden.<br>Beim Erstellen dieses Listentyps werden alle anderen Apps mit Ausnahme der iOS-**Einstellungen** und **Telefon**-Apps (für iPhones) ausgeblendet.<br>Sie müssen der Liste darüber hinaus das Unternehmensportal und alle Apps hinzufügen, die Sie bereitgestellt haben und über Intune verwalten.|
+|**Hinzufügen**|Fügt eine App zur ausgewählten Liste hinzu.<br>Für die Liste von ausgeblendeten Apps müssen Sie den **Namen**, den **Herausgeber** und die **App-URL oder Paket-ID** jeder App angeben, die Sie ausblenden möchten.<br>Für die Liste von eingeblendeten Apps können Sie entweder **eine verwaltete App auswählen**, wodurch Ihnen eine Liste von Apps zum Auswählen angezeigt wird, die Sie über Intune verwalten. Alternativ können Sie eine Store-App auswählen, wobei Sie den **Namen**, den **Herausgeber** und die **App-URL oder Paket-ID** jeder App angeben müssen, die Sie anzeigen möchten.|
+|**Anwendungen importieren**|Importiert eine Liste von Apps, die Sie in einer CSV-Datei angegeben haben. Verwenden Sie in der Datei das Format Anwendungsname, Herausgeber und App-URL.|
+|**Bearbeiten**|Ermöglicht Ihnen das Bearbeiten von Name, Herausgeber und URL der ausgewählten App.|
+|**Löschen**|Löscht die ausgewählte App aus der Liste.|
+
+#### App-Informationen für integrierte iOS-Apps
+
+Verwenden Sie die Informationen in dieser Liste zur Identifizierung des Namens, des Herausgebers und der Paket-ID der integrierten iOS-Apps, die Sie ein- oder ausblenden möchten. Wenn Sie alle Apps in der Liste ein- oder ausblenden möchten, können Sie die nachstehenden Daten in eine Textdatei mit der Erweiterung **.csv** kopieren. Verwenden Sie anschließend die Option **Anwendungen importieren**, um alle Apps gleichzeitig zu importieren.
+
+```
+App Store,Apple,com.apple.AppStore
+Calculator,Apple,com.apple.calculator
+Calendar,Apple,com.apple.mobilecal
+Camera,Apple,com.apple.camera
+Clock,Apple,com.apple.mobiletimer
+Compass,Apple,com.apple.compass
+Contacts,Apple,com.apple.MobileAddressBook
+FaceTime,Apple,com.apple.facetime
+Find Friends,Apple,com.apple.mobileme.fmf1
+Find iPhone,Apple,com.apple.mobileme.fmip1
+Game Center,Apple,com.apple.gamecenter
+GarageBand,Apple,com.apple.mobilegarageband
+Health,Apple,com.apple.Health
+iBooks,Apple,com.apple.iBooks
+iTunes Store,Apple,com.apple.MobileStore
+iTunes U,Apple,com.apple.itunesu
+Keynote,Apple,com.apple.Keynote
+Mail,Apple,com.apple.mobilemail
+Maps,Apple,com.apple.Maps
+Messages,Apple,com.apple.MobileSMS
+Music,Apple,com.apple.Music
+News,Apple,com.apple.news
+Notes,Apple,com.apple.mobilenotes
+Numbers,Apple,com.apple.Numbers
+Pages,Apple,com.apple.Pages
+Photo Booth,Apple,com.apple.Photo-Booth
+Photos,Apple,com.apple.mobileslideshow
+Podcasts,Apple,com.apple.podcasts
+Reminders,Apple,com.apple.reminders
+Safari,Apple,com.apple.mobilesafari
+Settings,Apple,com.apple.Preferences
+Stocks,Apple,com.apple.stocks
+Tips,Apple,com.apple.tips
+Videos,Apple,com.apple.videos
+VoiceMemos,Apple,com.apple.VoiceMemos
+Wallet,Apple,com.apple.Passbook
+Watch,Apple,com.apple.Bridge
+Weather,Apple,com.apple.weather
+
+
+```
+
+
+
 
 ## Benutzerdefinierte Richtlinieneinstellungen
 
@@ -266,6 +337,6 @@ Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigur
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 
