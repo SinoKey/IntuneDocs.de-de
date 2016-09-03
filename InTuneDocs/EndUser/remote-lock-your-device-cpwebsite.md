@@ -3,18 +3,19 @@ title: "Sperren eines Geräts remote über die Unternehmensportalwebsite | Micro
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 7e5d48d35e8216bac2fae8e2f9a1ba82d3493acc
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 19369b8914eee60eececd3e749eae12891cd1a2e
 
 
 ---
@@ -42,15 +43,19 @@ Verwenden der Remotesperre zum Sperren Ihres Geräts:
 
 2.  Tippen Sie auf **Remotesperre**.
 
+    ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+
+3.  Lesen die Warnmeldung, die angibt, dass Sie das Gerät sperren, und tippen Sie dann auf **Remotesperre**, damit die Unternehmensportal-Website versucht, das Gerät zu sperren.
+
     Nachdem Sie **Remotesperre** ausgewählt haben, wird der Status „Remotesperre steht aus“ angezeigt.  Wenn die Remotesperre erfolgreich durchgeführt wurde, ändert sich der Status zu „Remotesperre war erfolgreich“.
 
     Der Status „Remotesperre“ wird an drei Stellen angezeigt:
 
-    * Im Benachrichtigungsbereich der Website. 
+    * Im Benachrichtigungsbereich der Website.
     * Auf der Detailseite für das Gerät.
     * Auf der Kachel mit dem Gerätenamen im Bereich „Geräte“ auf der Seite.
 
-    Wenn eine Meldung „Fehler bei der Remotesperre“ angezeigt wird, warten Sie einige Minuten, und versuchen Sie erneut, das Gerät zu sperren. Sobald Sie die Option zum erneuten Versuchen auswählen, ändert sich der Status wieder zu „Remotesperre steht aus“. 
+    Wenn eine Meldung „Fehler bei der Remotesperre“ angezeigt wird, warten Sie einige Minuten, und versuchen Sie erneut, das Gerät zu sperren. Sobald Sie die Option zum erneuten Versuchen auswählen, ändert sich der Status wieder zu „Remotesperre steht aus“.
 
     Wenn der erneute Versuch nicht funktioniert, wenden Sie sich an Ihren IT-Administrator. Wenn Sie Ihr Gerät wiederfinden und die Remotesperre aufheben möchten, geben Sie einfach Ihre Kennung ein.
 
@@ -60,6 +65,7 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 [Verwenden der Intune-Unternehmensportal-Website](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO4-->
 
 

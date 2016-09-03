@@ -2,8 +2,8 @@
 title: Microsoft Intune-Unternehmensportal | Microsoft Intune
 description: Einrichten des Intune-Unternehmensportals
 keywords: 
-author: Staciebarker
-manager: arob98
+author: barlanmsft
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: b7c8cc22f744449ce83084be88cfb4547e28779b
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: b6dc2a6b9f8464bb6accbbc5163700a6d7da1fdb
 
 
 ---
@@ -28,7 +28,7 @@ Das Windows Intune-Unternehmensportal ist ein Tool, das Benutzern Zugriff auf Un
 -   **Die Unternehmensportal-App:** Diese Anwendung ist auf Geräten verfügbar, die Sie mit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] verwalten. Erfahren Sie mehr über die Unternehmensportal-Apps für [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) und [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **Die Unternehmensportal-Website:** Eine Website, die Zugriff über [einen unterstützten Browser](supported-web-browsers.md) bietet. Die URL lautet [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx). Weitere Informationen zu dieser Website finden Sie unter [Verwenden der Intune-Unternehmensportal-Website](/Intune/EndUser/using-the-intune-company-portal-website).
+- **Unternehmensportal-Website**: Eine Website, auf die Sie mit einem [unterstützten Browser](supported-web-browsers.md) zugreifen, über die Endbenutzer die meisten Schritte ausführen können, die sie auch über die plattformspezifische Unternehmensportal-App durchführen können. Die URL lautet [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Weitere Informationen zu dieser Website finden Sie unter [Verwenden der Intune-Unternehmensportal-Website](/Intune/EndUser/using-the-intune-company-portal-website).
 
 Dies sind einige der Aufgaben, die Benutzern im Unternehmensportal ausführen können:
 
@@ -53,6 +53,6 @@ Damit ein Benutzer auf das Unternehmensportal zugreifen kann, muss dem Benutzerk
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

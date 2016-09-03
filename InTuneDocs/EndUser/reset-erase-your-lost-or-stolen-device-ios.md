@@ -3,19 +3,19 @@ title: "Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen iOS-Geräts |
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 05/09/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 70788dca-765f-47a7-9994-a286f8a88588
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 9ab65b409bbb2168e3457050202d6e88db0472d2
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 192c61fb06a8af4c40e228aafbd383fd21142c57
 
 
 ---
@@ -30,7 +30,7 @@ Wenn ein in Intune registriertes Mobilgerät verloren geht oder gestohlen wird, 
 
 ## So setzen Sie Ihr Gerät über die Unternehmensportal-App zurück
 
-1.  Öffnen Sie das Unternehmensportal in Ihrem Browser, und melden Sie sich bei Ihrem Geschäftskonto an.
+1.  Öffnen Sie auf einem anderen registrierten Gerät die Unternehmensportal-App, und melden Sie sich mit Ihrem Geschäfts- oder Schulkonto an.
 
 2.  Wählen Sie unter **Meine Geräte** das verlorene oder gestohlene Gerät aus.
 
@@ -40,7 +40,7 @@ Wenn ein in Intune registriertes Mobilgerät verloren geht oder gestohlen wird, 
 
 Sie können die folgenden Schritte verwenden, oder sehen Sie sich dieses Video an.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=6UFtBrBWUUI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+<iframe width="675" height="379" src="https://www.youtube.com/embed/3rrXe8XmtgU" frameborder="0" allowfullscreen></iframe>
 
 1.  Wählen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) das Gerät aus, das Sie löschen möchten.
 
@@ -52,6 +52,7 @@ Wenn Sie Ihr verlorenes oder gestohlenes Gerät nicht zurücksetzen können, bit
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

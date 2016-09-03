@@ -3,19 +3,19 @@ title: "Senden von Diagnosedatenprotokollen an Ihren IT-Administrator über ein 
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 07/20/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 86a7805809bd6cfd363c0363795024677bf55a2e
 
 
 ---
@@ -23,9 +23,11 @@ ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
 
 # Senden von Diagnosedatenprotokollen an Ihren IT-Administrator über ein USB-Kabel
 
-Wenn Sie das Datenprotokoll an den IT-Administrator senden möchten, um Hilfe zu einem Problem zu erhalten, können Sie die Protokolle per USB-Kabel mit einem Computer statt von Ihrem mobilen Gerät senden. Gehen Sie wie folgt vor:
+Wenn Sie Datenprotokolle an den IT-Administrator senden möchten, um Hilfe zu einem Problem zu erhalten, können Sie die Protokolle per USB-Kabel mit einem Computer statt von Ihrem mobilen Gerät senden. Gehen Sie wie folgt vor:
 
-1.  Bevor Sie beginnen, stellen Sie sicher, dass Sie über die E-Mail-Adresse Ihres IT-Administrators verfügen. Sie wird in der Regel auf Ihrer Unternehmensportal-Website oder in Ihrer Unternehmensportal-App aufgeführt.
+1.  Tippen Sie auf dem Fehlerbildschirm auf **Info senden**. Wenn Sie in einer Meldung gefragt werden, über welche Methode Sie die Protokolle senden möchten, wählen Sie die Option aus, bei der die Dateien auf Ihrem Gerät gespeichert werden.
+
+2.  Bevor Sie beginnen, stellen Sie sicher, dass Sie über die E-Mail-Adresse Ihres IT-Administrators verfügen, die in der Regel auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) oder in der Unternehmensportal-App angezeigt wird.
 
 2.  Verbinden Sie Ihr Android-Gerät über ein USB-Kabel mit einem Computer.
 
@@ -39,6 +41,7 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

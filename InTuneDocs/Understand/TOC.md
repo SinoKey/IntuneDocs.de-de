@@ -8,12 +8,12 @@
 ### [Registrieren mobiler Geräte und Installieren einer App](get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)
 ### [Andere Optionen und Extras](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Nächste Schritte](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-## [Allgemeine Intune-Evaluierungsaufgaben](common-microsoft-intune-evaluation-tasks.md)
-### [Starten eines Tests und Bereitstellen einer iOS-PIN-Richtlinie](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
-### [Einrichten des E-Mail-Zugriffs für iOS-Geräte](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 ## [Häufige Szenarien](common-ways-to-use-intune.md)
-
-<!--- ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)--->
+## [Erste Schritte](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Verhindern von Kompromittierungen im Unternehmen durch mobile Office 365-Apps](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Veröffentlichen mobiler Apps für Benutzer](publish-mobile-apps-to-users.md)
+### [Schützen von Windows-PCs vor Schadsoftware](protect-pcs-against-malware-threats.md)
+### [Vereinfachen der E-Mail-Konfiguration auf mobilen Geräten](simplify-email-configuration-on-mobile-devices.md)
 
 # [Erste Schritte](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
@@ -22,6 +22,6 @@
 # [Problembehandlung](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 
