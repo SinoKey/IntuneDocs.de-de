@@ -3,19 +3,19 @@ title: "Manuelles Synchronisieren des Windows-Geräts | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 17b0583403c3e23c62a5bd60b9c8217b0621fa80
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 7798a186d7c7563b4b62bf87382b81f044635b87
 
 
 ---
@@ -35,19 +35,19 @@ So synchronisieren Sie Ihr Windows 10 Mobile-Gerät manuell, um eine langsame 
 1. Wechseln Sie zu **Alle Apps** > **Einstellungen** > **Konten**.
 
     ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
-    
+
 2. Tippen Sie auf **Arbeitsplatzzugriff**.
 
     ![win10m-sync-2-work-access](./media/win10m-sync-2-work-access.png)
-    
+
 3. Tippen Sie unter **Für Geräteverwaltung registrieren** auf den Namen Ihres Unternehmens, wie unten dargestellt.
 
     ![win10m-sync-3-tap-comp-name](./media/win10m-sync-3-tap-comp-name.png)
-    
+
 4. Tippen Sie auf das **Sync**-Symbol.
 
     ![win10m-sync-4-tap-sync](./media/win10m-sync-4-tap-sync.png)
-    
+
     Oben auf dem Bildschirm wird die Meldung „Ihr Konto wird synchronisiert“ angezeigt. Die Schaltfläche „Sync“ wird abgeblendet, bis die Synchronisierung des Geräts abgeschlossen ist.
 
 ## Windows 10 Desktop
@@ -56,23 +56,23 @@ So synchronisieren Sie Ihr Windows 10 Desktop-Gerät manuell, um eine langsame
 1. Klicken Sie auf die Schaltfläche **Start**, wie unten dargestellt, und anschließend auf **Einstellungen**.
 
     ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
-    
+
 2. Klicken Sie auf der Seite **Einstellungen** auf **Konten**.
- 
+
     ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
-    
+
 3. Auf der Seite **Konten** wählen Sie **Arbeitsplatzzugriff** aus.
-    
+
     ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
-    
+
 4. Klicken Sie unter **Für Geräteverwaltung registrieren** auf den Namen Ihres Unternehmens, wie unten durch die blaue Hervorhebung gezeigt.
-    
+
     ![win10pc-sync-4-tap-com-name](./media/win10pc-sync-4-tap-com-name.png)
-   
+
 5. Klicken Sie auf die Schaltfläche **Synchronisieren**.
-    
+
     ![win10pc-sync-5-tap-sync](./media/win10pc-sync-5-tap-sync.png)
-   
+
    Die Schaltfläche wird solange abgeblendet, bis die Synchronisierung abgeschlossen ist.
 
 ## Windows Phone 8.1
@@ -81,15 +81,15 @@ So synchronisieren Sie Ihr Windows Phone 8.1-Gerät manuell, um eine langsame 
 1. Wechseln Sie zu **Alle Apps** > **Einstellungen** > **Arbeitsplatz**.
 
     ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
-    
+
 2. Tippen Sie auf den Namen Ihres Unternehmens, wie unten durch die blaue Hervorhebung gezeigt.
 
     ![wp81-2-sync-tap-compname](./media/wp81-2-sync-tap-compname.png)
-   
+
 3. Tippen Sie auf das **Sync**-Symbol.
 
     ![wp81-3-sync-tap-sync-button](./media/wp81-3-sync-tap-sync-button.png)
-    
+
    Oben auf dem Bildschirm wird die Meldung „Ihr Konto wird synchronisiert“ angezeigt, bis die Synchronisierung des Geräts abgeschlossen ist.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
@@ -99,6 +99,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -3,19 +3,19 @@ title: "Vorhandenes geschäftliches E-Mail-Konto gefunden | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: cca55c987b42894547977d94bd549342b4ca4bd8
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 3fd4b6dbac9b3ad41ed0aedba7fecfb117193d50
 
 
 ---
@@ -27,7 +27,7 @@ Sie haben bereits ein geschäftliches e-Mail-Konto. Um weiterhin Ihre Firma e-Ma
 
     Tippen Sie z.B. auf einem iOS-Gerät auf **Einstellungen** &gt; **E-Mails, Kontakte, Kalender**. Wählen Sie Ihr geschäftliches e-Mail-Konto, und klicken Sie dann auf **Löschen**.
 
-2.  Öffnen Sie die Unternehmensportal-app auf dem Gerät und Tap **Kompatibilität überprüfen**.
+2.  Öffnen Sie die Unternehmensportal-App auf dem Gerät, und tippen Sie auf **Kompatibilität überprüfen**.
 
 3.  Warten Sie kurz für neue e-Mail-Einstellungen automatisch auf das Gerät angewendet werden.
 
@@ -35,7 +35,6 @@ Wenn neue E-Mail-Einstellungen nicht nach einer Weile angezeigt werden, wenden S
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

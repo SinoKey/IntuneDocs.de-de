@@ -2,8 +2,8 @@
 title: "Registrieren mobiler Geräte und Installieren einer App | Microsoft Intune"
 description: "Erläutert das Registrieren mobiler Geräte und das Installieren einer App auf einem bei Intune registrierten Gerät."
 keywords: 
-author: Staciebarker
-manager: arob98
+author: barlanmsft
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: a3a1ef90533296dce7938d12ebe5246f9846685c
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: 0da8725262ba08b9345d3b7195a64faae13eaece
 
 
 ---
@@ -64,6 +64,6 @@ Gratulation! Sie haben den letzten Schritt der Kurzanleitung *Erste Schritte mit
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

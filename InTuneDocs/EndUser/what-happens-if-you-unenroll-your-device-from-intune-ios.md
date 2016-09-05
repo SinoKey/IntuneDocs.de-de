@@ -3,19 +3,19 @@ title: "Was geschieht, wenn Sie die Registrierung Ihres iOS-Geräts bei Intune a
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 29b209e1d73cd3e50f12f344abd50bf70e11dc6f
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: a0a23db190efc915625058983f564e892c542259
 
 
 ---
@@ -47,6 +47,7 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

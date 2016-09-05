@@ -2,7 +2,7 @@
 title: Administratorkonten, Websites und Berechtigungen | Microsoft Intune
 description: Administratorkonten, Berechtigungen, Websites
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
@@ -13,15 +13,15 @@ ms.assetid: db3075e7-38fd-4dfe-b266-26aed10ac8ea
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: e174cb6706e7910d511d5f39836cec6b9a98403d
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: 017de4d0cc65c00129a45f140eebea11a61154af
 
 
 ---
 
 # Administratorkonten, Websites und Berechtigungen in Microsoft Intune
 
-Bevor Sie Microsoft Intune einrichten, lesen Sie dieses Thema, und machen Sie sich mit anderen Anforderungen vertraut, die unter [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md) aufgeführt sind.
+Bevor Sie Microsoft Intune einrichten, lesen Sie dieses Thema und andere Anforderungen, die unter [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md) aufgeführt sind.
 
 Verwenden Sie Folgendes zum Verwalten von Intune:
 - Zwei Arten von Administratorkonten
@@ -94,6 +94,6 @@ Erfahren Sie mehr über das [Hinzufügen von Benutzern für Ihr Abonnement](star
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
