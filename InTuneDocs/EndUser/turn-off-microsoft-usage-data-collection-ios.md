@@ -3,19 +3,19 @@ title: "Deaktivieren der Erfassung von Nutzungsdaten für iOS durch Microsoft | 
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 07/20/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c017a666bf208e02c1db8f1137281435217fc5e6
-ms.openlocfilehash: 6e43167afc58e9c8592bf53c090b788c381fbf4f
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: cecb9c936c077efe2390faccdd53f4b06d7f9094
 
 
 ---
@@ -23,16 +23,19 @@ ms.openlocfilehash: 6e43167afc58e9c8592bf53c090b788c381fbf4f
 
 # Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft
 
-Um Produkte und Dienstleistungen zu verbessern, erfasst Microsoft automatisch anonyme Daten über die Zuverlässigkeit und Leistung der Unternehmensportal-App sowie deren Verwendung. 
+Um Produkte und Dienstleistungen zu verbessern, erfasst Microsoft automatisch anonyme Daten über die Zuverlässigkeit und Leistung der Unternehmensportal-App sowie deren Verwendung.
 
-Sie können die Sammlung von Daten auf Ihrem iOS-Gerät mithilfe der Einstellung **Verwendungsdaten** in der Unternehmensportal-App deaktivieren. IT-Administratoren haben keine Kontrolle über die Erfassung der Daten und können Ihre Auswahl für diese Einstellung nicht ändern.
+Wechseln Sie zum Deaktivieren der Erfassung von Nutzungsdaten auf Ihrem iOS-Gerät zu **Einstellungen**, tippen Sie auf **Unternehmensportal**, und deaktivieren Sie dann die Einstellung **Nutzungsdaten**.
+
+IT-Administratoren haben keine Kontrolle über die Erfassung der Daten und können Ihre Auswahl für diese Einstellung nicht ändern.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
-### Weitere Informationen:
+### Siehe auch
 [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

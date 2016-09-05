@@ -4,7 +4,7 @@ description: Behandeln Sie Richtlinienkonfigurationsprobleme.
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 436d0c40ef317e1d258654d2164e7a1f8c35c5e1
-ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
+ms.sourcegitcommit: 1f133d31311706365888cf33ceb4c4412deec333
+ms.openlocfilehash: a8afc681b8b12e1e760dea3f784e4beac4697242
 
 
 ---
@@ -46,17 +46,6 @@ Der folgende Screenshot zeigt zwei eindeutige Beispiele:
 
 > [!NOTE]
 > Denken Sie daran: Wenn zwei Richtlinien mit unterschiedlichen Einschränkungsstufen für das gleiche Gerät gelten, wird in der Praxis die restriktivere Richtlinie angewendet.
-
-## Intervalle für Richtlinienaktualisierungen und -updates
-Denken Sie daran, dass Richtlinien in regelmäßigen Abständen aktualisiert werden. Richtlinien sollten in der Regel innerhalb von 15 Minuten nach einer Änderung auf den Geräten registriert werden. Hier finden Sie ausführliche Informationen zu den regelmäßigen Intervallen der Aktualisierung von Richtlinien:
-
--   **Für MDM registriertes Windows-Gerät**: Die Richtlinie wird für Windows 8.1- und Windows 10-Geräte alle 8 Stunden und für Windows RT-Geräte alle 24 Stunden aktualisiert.
-
--   **Windows Phone**: Die Richtlinie wird alle 8 Stunden aktualisiert. Dies kann durch eine Aktualisierung im Unternehmensportal unter **Einstellungen** erzwungen werden.
-
--   **iOS**: Die Richtlinie wird in einem zufälligen Zeitintervall einmal täglich aktualisiert. Dies kann auch erzwungen werden, indem Sie das Unternehmensportal öffnen, das Gerät auswählen und auf **Synchronisieren** klicken.
-
--   **Android**: Die Richtlinie wird in einem zufälligen Zeitintervall einmal täglich aktualisiert. Dies kann auch erzwungen werden, indem Sie das Unternehmensportal öffnen, das Gerät auswählen und auf **Synchronisieren** klicken.
 
 ## Fehler in „policyplatform.log“ im Zusammenhang mit der Microsoft Intune-Richtlinie
 Bei Windows-Geräten ohne MDM können Richtlinienfehler in der Datei „policyplatform.log“ das Ergebnis nicht standardmäßiger Einstellungen in der Windows-Benutzerkontensteuerung (UAC) auf dem Gerät sein. Einige nicht standardmäßige UAC-Einstellungen können Microsoft Intune-Clientinstallationen und Richtlinienausführungen beeinträchtigen.
@@ -93,9 +82,6 @@ In Windows RT wischen Sie beispielsweise auf dem Desktop von rechts nach innen, 
 Im linken Navigationsmenü befindet sich unten ein Link **Sicherheitsrichtlinien zurücksetzen** . Klicken Sie darauf, und klicken Sie dann auf die Schaltfläche **Richtlinien zurücksetzen**.
 Andere MDM-Geräte, wie Android, Windows Phone 8.1 und höher sowie iOS, müssen möglicherweise außer Kraft gesetzt und bei dem Dienst neu registriert werden, damit Sie eine weniger restriktive Richtlinie anwenden können.
 
-## Android-Geräte erzwingen keine Änderungen von Sicherheitsrichtlinien ohne die Genehmigung durch den Endbenutzer
-Android-MDM gestattet dem Dienst nicht das Erzwingen von Änderungen an der anfänglichen Richtlinie auf Geräten, wie es andere Plattformen zulassen. Dies liegt an der Funktionalität von Android und steht in keinem Zusammenhang mit dem Intune-Dienst. Android-Geräte fordern den Endbenutzer über das Benachrichtigungsfenster der zugehörigen Richtlinienänderung auf (z. B. Kennwort, Verschlüsselung usw.).  Der Endbenutzer muss auf die Aufforderung reagieren, und nachdem er bestätigt hat, sollte die Richtlinie angewendet werden.
-
 ## Erstellen einer Richtlinie oder Registrieren von Clients ist nicht möglich, wenn der Firmenname Sonderzeichen enthält
 **Problem:** Sie können keine Richtlinie erstellen bzw. keine Clients registrieren.
 
@@ -106,6 +92,6 @@ Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, w
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 
