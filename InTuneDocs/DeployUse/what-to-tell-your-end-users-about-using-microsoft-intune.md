@@ -4,7 +4,7 @@ description: "Links zu Informationen zur Freigabe für Ihre Endbenutzer"
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: e904f7e7e91d86359a0fd818032833caa382edcc
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
 
 
 ---
@@ -33,7 +33,9 @@ Stellen Sie sicher, dass Sie beim [Anpassen des Unternehmensportals](/Intune/get
 
 ## Ressourcen mit Informationen zu allgemeinen Aufgaben für Ihre Endbenutzer
 
-Stellen Sie Ihren Endbenutzern die folgenden Links zu Hilfethemen für Endbenutzer bereit, wenn sie Informationen zur Verwendung von Intune auf ihren Geräten suchen. Unter den folgenden Links finden Benutzer Schritte zum Installieren der Unternehmensportal-App, zum Registrieren ihrer Geräte, zum Abrufen verwalteter Apps, zur Problembehandlung und mehr.
+Wenn registrierte Benutzer bei der Verwendung von Intune Hilfe benötigen, wird ihnen in der Regel ein Link auf der Unternehmensportal-Website oder in der Unternehmensportal-App angezeigt, der auf einen bestimmten Artikel mit Schritten zur Problembehandlung oder zum Durchführen der Aufgabe verweist. Wenn Android-Benutzer beispielsweise in einer Meldung darauf hingewiesen werden, dass ihnen ein erforderliches Zertifikat fehlt, können sie auf einen Link zum Beheben dieses Problems tippen, um zu einem Artikel mit den Schritten zum Abrufen des Zertifikats zu gelangen. 
+
+Die folgenden Links sind für IT-Administratoren bestimmt. Diese Seiten enthalten Links zu allen Artikeln, zu denen Benutzer von der Unternehmensportal-Website oder -App aus geleitet werden. Die Links sind in Abschnitte unterteilt: Installation der Unternehmensportal-App und Intune-Registrierung, Aufgaben, die Benutzer auf ihren Geräten durchführen können (beispielsweise Verwenden verwalteter Apps und manuelles Synchronisieren ihrer Geräte) sowie Problembehandlung.
 
 - [Verwenden Ihres Android-Geräts mit Intune](/Intune/EndUser/using-your-android-device-with-intune)
 - [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -59,8 +61,10 @@ Um zu verstehen, wie Ihre Endbenutzer Apps erhalten, wählen Sie aus den folgend
 
 Um den Benutzern dabei zu helfen, die Probleme zu lösen, die sie möglicherweise bei der Verwendung des Unternehmensportals haben, können Sie die [Liste der Meldungen, die Benutzer möglicherweise im Unternehmensportal sehen](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages) nutzen.
 
+Wenn in diesem Artikel weitere Informationen behandelt werden sollen, fügen Sie Ihren Vorschlag unten in diesem Thema im Feld „Kommentar“ hinzu. Danke!
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO4-->
 
 

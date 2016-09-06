@@ -1,10 +1,10 @@
 ---
-title: "Verwaltungsfunktionen für mobile Geräte | Microsoft Intune"
-description: "In diesem Thema erfahren Sie, wie Intune Sie bei der Verwaltung Ihrer mobilen Geräte unterstützen kann, die Sie bei diesem Dienst registrieren."
+title: "Verwaltungsfunktionen für registrierte Geräte | Microsoft Intune"
+description: "In diesem Thema erfahren Sie, wie Intune Sie bei der Verwaltung registrierter Geräte unterstützen kann."
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2ef264e963f689bb5a47a795170e0b9915848eec
-ms.openlocfilehash: efe86b7fd56603de2b910a8ec76b6de91db3b698
+ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
+ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
 
 
 ---
-# Verwaltungsfunktionen für mobile Geräte in Microsoft Intune
+# Verwaltungsfunktionen für registrierte Geräte in Microsoft Intune
 
 Mit Microsoft Intune können Sie eine Vielzahl von Geräten verwalten, indem Sie diese beim Dienst *registrieren*. Sie können einige Gerätetypen selbst registrieren, oder Benutzer können die Registrierung über die *Unternehmensportal*-App vornehmen. Diese ermöglicht Benutzern auch Vorgänge wie das Durchsuchen und Installieren von Apps, wobei sichergestellt wird, dass ihre Geräte mit den Unternehmensrichtlinien kompatibel sind, sowie das Kontaktieren des IT-Supports.
 
@@ -70,6 +70,6 @@ Verwaltung, Bestandserfassung, Bereitstellung und Außerbetriebnahme von Geräte
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
-ms.openlocfilehash: 9d624da7931c56476b476b7a9fd5711f398052c4
+ms.sourcegitcommit: a7a0f834df939432910e32e6e635a70f021b37a9
+ms.openlocfilehash: 63405b43609eda515656ad397c5c7ff4253a8167
 
 
 ---
@@ -76,7 +76,7 @@ Die folgende Tabelle zeigt Registrierungsmethoden für unternehmenseigene Gerät
 |**[BYOD](#BYOD)** | Nein|    Ja |   Nein |
 |**[Geräteregistrierungs-Manager (DEM)](#DEM)**|   Nein |Nein |Nein  |
 
-**Registrierungsmethoden für unternehmenseigene Geräte**
+**Registrierungsmethoden für Geräte**
 
 ### BYOD
 „Bring Your Own Device (eigenes Gerät nutzen).“ Benutzer installieren die Unternehmensportal-App und registrieren ihr Gerät. Beim Registrieren eines Geräts im Unternehmensportal erfolgt eine Arbeitsplatzeinbindung des Geräts. Für das Registrieren von iOS-Geräten im Unternehmensportal ist eine Apple ID erforderlich. BYOD erfordert keine zusätzliche Konfiguration für unternehmenseigene Geräte. Siehe die Schritte zum [Einrichten der Geräteverwaltung](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management). ([Zurück zur Tabelle](#overview-of-device-enrollment-methods))
@@ -151,6 +151,6 @@ Mit der Intune-Clientsoftware verwaltete Computer können nicht selektiv zurück
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
