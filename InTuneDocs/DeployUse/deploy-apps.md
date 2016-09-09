@@ -3,8 +3,8 @@ title: Bereitstellen von Apps | Microsoft Intune
 description: "In diesem Thema werden Grundlagen erläutert, die Sie kennen müssen, bevor Sie mit dem Bereitstellen von Apps mit Intune beginnen."
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 84f19cd198a2367abb0267071bd73ce8ac6d7d05
+ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
+ms.openlocfilehash: ef042e24af2300250cf2bd1bf9803678e252b773
 
 
 ---
@@ -31,14 +31,14 @@ Wenn Sie Apps bereitstellen, können Sie eine der folgenden Bereitstellungsaktio
 
     > [!TIP]
     > Bei iOS-Geräten, die nicht betreut werden, und bei allen Android-Geräten muss der Benutzer das App-Angebot vor der Installation akzeptieren.
-    > 
-    >  Wenn ein Endbenutzer eine App deinstalliert, die Sie als erforderliche Installation bereitgestellt haben, wird diese App von Intune nach dem nächsten Inventurzyklus (in der Regel nach 7 Tagen) automatisch erneut installiert.
+    >
+    >  Wenn ein Benutzer eine App deinstalliert, die Sie als erforderliche Installation bereitgestellt haben, installiert Intune diese App nach dem nächsten Inventurzyklus (in der Regel nach sieben Tagen) automatisch erneut.
 
--   **Verfügbare Installation** – Die App wird im Unternehmensportal angezeigt, und Endbenutzer können sie bei Bedarf installieren.
+-   **Verfügbare Installation** – Die App wird im Unternehmensportal angezeigt, und Benutzer können sie bei Bedarf installieren.
 
 -   **Deinstallieren** : Die App wird vom Gerät deinstalliert.
 
--   **Nicht verfügbar** : Die App wird nicht im Unternehmensportal angezeigt und wird auf keinem Gerät installiert.
+-   **Nicht verfügbar** – Die App wird nicht im Unternehmensportal angezeigt und wird auf keinem Gerät installiert.
 
 #### Verfügbare Bereitstellungsaktionen für die verschiedenen Installationsprogrammtypen
 
@@ -60,11 +60,11 @@ Wenn Sie Apps bereitstellen, können Sie eine der folgenden Bereitstellungsaktio
 ## Bereitstellungskonflikte
 Wenn zwei Bereitstellungen mit der gleichen Bereitstellungsaktion von einem Gerät empfangen werden, gelten die folgenden Regeln:
 
--   Bereitstellungen auf einer Gerätegruppe haben Vorrang vor Bereitstellung für eine Benutzergruppe. Wenn jedoch eine App für eine Benutzergruppe mit der Bereitstellungsaktion **Verfügbar** bereitgestellt wird und dieselbe App auf einer Gerätegruppe mit der Bereitstellungsaktion **Nicht verfügbar**bereitgestellt wird, wird die App im Unternehmensportal Benutzern zur Installation zur Verfügung gestellt.
+-   Bereitstellungen auf einer Gerätegruppe haben Vorrang vor Bereitstellung für eine Benutzergruppe. Wenn jedoch eine App für eine Benutzergruppe mit der Bereitstellungsaktion **Verfügbar** bereitgestellt wird und dieselbe App auf einer Gerätegruppe mit der Bereitstellungsaktion **Nicht verfügbar** bereitgestellt wird, wird die App im Unternehmensportal Benutzern zur Installation zur Verfügung gestellt.
 
 -   Eine Installationsaktion hat Vorrang vor einer Deinstallationsaktion.
 
--   Falls sowohl eine erforderliche als auch eine verfügbare Installation vom Gerät empfangen werden, werden die Aktionen zusammengefasst (die App ist sowohl erforderlich als auch verfügbar – anders gesagt, der Endbenutzer kann sie vom Unternehmensportal installieren, bevor die erforderliche Installation beginnt).
+-   Wenn eine erforderliche Installation und eine verfügbare Installation von einem Gerät empfangen werden, werden die Aktionen zusammengefasst. Das bedeutet, dass der Benutzer die App aus dem Unternehmensportal installieren kann, bevor die erforderliche Installation beginnt.
 
 
 ## Nächste Schritte
@@ -73,6 +73,6 @@ Erfahren Sie mehr zum [Bereitstellen von Apps in Microsoft Intune](deploy-apps-
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -4,15 +4,15 @@ description: "Enthält Links zu Informationen über die Registrierung verschiede
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 06/06/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 translationtype: Human Translation
-ms.sourcegitcommit: fc18b9f1caf9f0e6c6b1c8d21d95f42a0c40c507
-ms.openlocfilehash: 8d3cc70379fdba7c7e3f6c0c82bc6bfb7b534b2c
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 5ea154c58207b1ddcce8c51c0cd039532bda4cad
 
 
 ---
@@ -23,18 +23,15 @@ Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ih
 
 Um die Anweisungen für die Registrierung anzuzeigen, klicken Sie auf den Link für den Typ Ihres Geräts:
 
-- [Registrieren Ihres Android-Geräts bei Intune](enroll-your-device-in-Intune-android.md)</br>
-- [Registrieren Ihres iOS-Geräts bei Intune](enroll-your-device-in-intune-ios.md)</br>
-- [Registrieren Ihres Mac OS X-Geräts bei Intune](enroll-your-device-in-intune-mac-os-x.md)</br>
-- [Registrieren Ihres Windows-Geräts bei Intune](enroll-your-device-in-intune-windows.md)</br>
-
-### Weitere Informationen:
-- [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)</br>
-- [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)</br>
-- [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
+- [Registrieren Ihres Android-Geräts bei Intune](enroll-your-device-in-Intune-android.md)
+- [Registrieren Ihres iOS-Geräts bei Intune](enroll-your-device-in-intune-ios.md)
+- [Registrieren Ihres Mac OS X-Geräts bei Intune](enroll-your-device-in-intune-mac-os-x.md)
+- [Registrieren Ihres Windows-Geräts bei Intune](enroll-your-device-in-intune-windows.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

@@ -3,8 +3,8 @@ title: "Verschlüsseln Ihres Windows-Geräts | Microsoft Intune"
 description: "Beschreibt die Vorgehensweise beim Verschlüsseln eines Windows-Geräts"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 06/03/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 19772cc52501ad00420b341e694557a01cf88b90
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: f42ef4e3f5e4592ed6f3d5ec3a3c75d1599022f9
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 19772cc52501ad00420b341e694557a01cf88b90
 
 Zum Schutz Ihrer Firmen- oder Schuldaten schreibt Ihr IT-Administrator Ihnen möglicherweise vor, Ihr Windows-Geräts zu verschlüsseln. Wenn Sie ein Windows Phone verwenden und dieses registriert haben, wird Ihr Gerät automatisch verschlüsselt, wenn eine Verschlüsselung erforderlich ist.
 
-Folgen Sie bei einem Desktopgerät den Anweisungen zum Verschlüsseln. 
+Folgen Sie bei einem Desktopgerät den Anweisungen zum Verschlüsseln.
 
 1.  Suchen und starten Sie die App **BitLocker verwalten**.
 
@@ -32,11 +32,10 @@ Folgen Sie bei einem Desktopgerät den Anweisungen zum Verschlüsseln.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
-### Weitere Informationen:
-[Registrieren Ihres Windows-Geräts bei Intune](enroll-your-device-in-intune-windows.md)</br>
-[Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

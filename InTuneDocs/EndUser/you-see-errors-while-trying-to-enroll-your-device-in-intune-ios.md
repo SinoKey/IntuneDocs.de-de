@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/15/2016
+ms.date: 08/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: e8b6da8348f9c4d8ba1b85687510388cd40eac8a
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: e2493f93c08aaf7c10c47a0835de498349799e28
 
 
 ---
@@ -35,11 +35,10 @@ In der folgenden Tabelle sind Fehler aufgeführt, die bei der Registrierung Ihre
 |UserLicenseTypeInvalid|Sie können Ihr mobiles Gerät nicht registrieren, da Ihr Benutzerkonto noch kein Mitglied einer erforderlichen Benutzergruppe ist.<br /><br />Wenden Sie sich an Ihre IT-Administratoren, und teilen Sie ihnen mit, dass die Meldung **UserLicenseTypeInvalid** beim Versuch angezeigt wird, Ihr mobiles Gerät zu registrieren, und informieren Sie sie über die Lösung in dieser Tabelle.|Bevor Benutzer ihre Geräte registrieren können, müssen sie Mitglied der richtigen Benutzergruppe sein. Diese Meldung bedeutet, dass der Benutzer den falschen Lizenztyp für die festgelegte Autorität für die Verwaltung mobiler Geräte hat. Beispielsweise wird dieser Fehler angezeigt, wenn Intune als Autorität für die Verwaltung mobiler Geräte festgelegt wurde und der Benutzer eine System Center 2012 R2 Configuration Manager-Lizenz verwendet.<br /><br />In den folgenden Abschnitten erhalten Sie weitere Informationen:<br /><br />Weitere Informationen finden Sie unter [Einrichten der iOS- und Mac-Verwaltung mit Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) und im Abschnitt über das Einrichten von Benutzern [Synchronisieren von Active Directory und Hinzufügen von Benutzern zu Intune] (/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) und unter [Organisieren von Benutzern und Geräten](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |MdmAuthorityNotDefined|Ihr IT-Administrator muss die Verwaltung mobiler Geräte in Ihrem Unternehmen konfigurieren.<br /><br />Wenden Sie sich an Ihre IT-Administratoren, und teilen Sie ihnen mit, dass die Meldung **MdmAuthorityNotDefined** beim Versuch angezeigt wird, Ihr mobiles Gerät zu registrieren, und informieren Sie sie über die Lösung in dieser Tabelle.|Die Autorität für die Verwaltung mobiler Geräte wurde in Intune nicht festgelegt.<br /><br />Lesen Sie Punkt 1 im Abschnitt „Schritt 6: Registrieren mobiler Geräte und Installieren einer App“ in [Erste Schritte mit einer 30-Tage-Testversion von Microsoft Intune](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).|
 
-### Weitere Informationen:
-[Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 
