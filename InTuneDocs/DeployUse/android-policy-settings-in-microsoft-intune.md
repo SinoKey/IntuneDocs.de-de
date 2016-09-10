@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 1809f619173ca57868cfd2b8466e6e2bcf05f0c7
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 870d735644f08e3eca8c72bca2b156947d798cb5
 
 
 ---
@@ -57,14 +57,14 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 ### Verschlüsselungseinstellungen
 
 |Name der Einstellung|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Verschlüsselung auf mobilem Gerät anfordern**|Erfordert die Verschlüsselung von Dateien auf dem mobilen Gerät.|Ja|Ja|
 |**Verschlüsselung auf Speicherkarten vorschreiben**|Gibt an, ob die Gerätespeicherkarte verschlüsselt werden muss.|Nein|Ja|
 
 ### Systemeinstellungen
 
 |Name der Einstellung|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Bildschirmaufnahme zulassen**|Ermöglicht dem Benutzer, den Bildschirminhalt als Bild zu erfassen.|Nein|Ja|
 |**Übermitteln von Diagnosedaten zulassen**|Ermöglicht, dass das Gerät Diagnoseinformationen an Google übermittelt.|Nein|Ja|
 |**Zurücksetzen auf Werkseinstellungen zulassen**|Ermöglicht dem Benutzer das Zurücksetzen des Geräts auf die Werkseinstellungen.|Nein|Ja|
@@ -72,19 +72,19 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 ### Cloudeinstellungen – Dokumente und Daten
 
 |Name der Einstellung|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------------------|----------------|
+|----------------|----|------------------------|----------------|
 |**Google-Sicherung zulassen**|Ermöglicht die Verwendung der Google-Sicherung.|Nein|Ja|
 
 ### Cloudeinstellungen – Konten und Synchronisierung
 
 |Name der Einstellung|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Automatische Synchronisierung mit Google-Konto zulassen**|Ermöglicht die automatische Synchronisierung der Einstellungen von Google-Konten.|Nein|Ja|
 
 ### Anwendungseinstellungen – Browser
 
 |Name der Einstellung|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Webbrowser zulassen**|Gibt an, ob der Standardwebbrowser des Geräts verwendet werden darf.|Nein|Ja|
 |**AutoAusfüllen zulassen**|Ermöglicht die Verwendung der AutoAusfüllen-Funktion des Webbrowsers.|Nein|Ja|
 |**Popupblocker zulassen**|Hiermit wird die Verwendung des Popupblockers im Webbrowser zugelassen.|Nein|Ja|
@@ -94,13 +94,13 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 ### Anwendungseinstellungen – Apps
 
 |Name der Einstellung|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Google Play Store zulassen**|Ermöglicht dem Benutzer den Zugriff auf den Google Play Store auf dem Gerät.|Nein|Ja|
 
 ### Einstellungen für Gerätefunktionen - Hardware
 
 |Name der Einstellung|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Kamera zulassen**|Ermöglicht die Verwendung der Gerätekamera.|Ja|Ja|
 |**Wechselspeichermedien zulassen**|Ermöglicht dem Gerät die Verwendung von Wechselmedien, z. B. SD-Karten.|Nein|Ja|
 |**WLAN zulassen**|Ermöglicht die Verwendung der WLAN-Funktionen des Geräts.|Nein|Ja|
@@ -113,7 +113,7 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 ### Einstellungen für Gerätefunktionen - Mobiltelefon
 
 |Name der Einstellung|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Sprachroaming zulassen**|Ermöglicht das Sprachroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.|Nein|Ja|
 |**Datenroaming zulassen**|Ermöglicht das Datenroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.|Nein|Ja|
 |**SMS/MMS-Messaging zulassen**|Ermöglicht die Verwendung von SMS- und MMS-Nachrichten auf dem Gerät.|Nein|Ja|
@@ -121,7 +121,7 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 ### Einstellungen für Gerätefunktionen - Funktionen
 
 |Name der Einstellung|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Sprach-Assistent zulassen**|Zulassen der Verwendung von Sprach-Assistent-Software auf dem Gerät.|Nein|Ja|
 |**Sprachwahl zulassen**|Aktiviert oder deaktiviert die Verwendung des Features „Sprachwahlverfahren“ auf dem Gerät.|Nein|Ja|
 |**Kopieren und Einfügen zulassen**|Ermöglicht Kopier- und Einfügefunktionen auf dem Gerät.|Nein|Ja|
@@ -208,6 +208,6 @@ Diese Funktion soll es Ihnen ermöglichen, Android-Einstellungen bereitzustellen
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

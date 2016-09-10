@@ -13,8 +13,8 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: d8f7de4013c1bdf6174cd4e1d7491514b11a14a3
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 9a481e1ce7815a0411651fc724e3fc2f5d374eac
 
 
 ---
@@ -26,7 +26,7 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 ## Kennworteinstellungen
 
 |Name der Einstellung|Details
-|----------------|
+|----------------|---|
 |**Anfordern eines Kennworts zum Entsperren mobiler Geräte**|Gibt an, ob Geräte mithilfe eines Kennworts gesperrt werden müssen.<br>(Dies trifft nicht auf Geräte zu, auf denen Windows RT ausgeführt wird.)|
 |**Erforderlicher Kennworttyp**|Gibt den erforderlichen Typ des Kennworts an, z. B. nur numerisch oder alphanumerisch.|
 |**Minimale Kennwortlänge**|Gibt die Mindestanzahl von Zeichen an, die das Gerätekennwort enthalten muss.|
@@ -40,7 +40,7 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 ## Verschlüsselungseinstellungen
 
 |Name der Einstellung|Details|
-|----------------|
+|----------------|---|
 |**Verschlüsselung auf mobilen Geräten vorschreiben**<sup>1</sup>|Erfordert die Verschlüsselung der Daten auf einem Gerät, falls dies unterstützt wird.<br><br>Für Windows Phone 8-Geräte müssen Sie hier **Ja**festlegen.<br /><br />Aktivieren Sie zum Verwenden der Verschlüsselung auf iOS-Geräten die Einstellung **Kennwort zum Entsperren mobiler Geräte erforderlich**.|
 |**Verschlüsselung auf Speicherkarten vorschreiben**|Erfordert die Verschlüsselung von Daten, die auf externen Speichern, wie etwa SD-Karten, gespeichert sind (auf unterstützten Geräten).
 <sup>1</sup> Zusätzliche Informationen für Geräte unter Windows 8.1
@@ -56,7 +56,7 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 ## E-Mail-Einstellungen
 
 |Name der Einstellung|Details
-|----------------|
+|----------------|---|
 |**Herunterladen von E-Mail-Anhängen für Benutzer zulassen**|Gibt an, ob E-Mail-Anlagen auf das Gerät heruntergeladen werden können.|
 |**Synchronisierungszeitraum für E-Mail**|Gibt die Anzahl der Tage an, über die empfangene E-Mails mit dem Gerät synchronisiert werden.
 |**Synchronisierung mit Exchange ActiveSync für mobile Geräte zulassen, die diese Einstellungen nicht vollständig unterstützen**|Gibt an, ob Exchange der Zugriff auf Geräte erlaubt wird, die eine oder mehrere Exchange ActiveSync-Einstellungen nicht unterstützen.
@@ -64,13 +64,13 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 ## Browsereinstellungen
 
 |Name der Einstellung|Details
-|----------------|-
+|----------------|---|
 |**Webbrowser zulassen**|Gibt an, ob der Webbrowser des Geräts verwendet werden darf.<br>(Für Windows RT oder Windows Phone nicht verfügbar.)
 
 ## Hardware-Einstellungen
 
 |Name der Einstellung|Details
-|----------------|
+|----------------|---|
 |**Kamera zulassen**|Gibt an, ob die Kamera des Geräts verwendet werden darf.<br>(Für Windows RT oder Windows Phone nicht verfügbar.)
 
 
@@ -80,6 +80,6 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
