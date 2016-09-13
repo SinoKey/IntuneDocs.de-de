@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4279ecd098ddaa6d6eb239ee71f9c3f7d450ab3f
-ms.openlocfilehash: f2ccc52ceae6bbb63ea76ff4391922099c69f4dd
+ms.sourcegitcommit: c6b3f193606f13427a68c561d688b75d38221950
+ms.openlocfilehash: 315e492b301387c2030440e7188dfdb35a99ddd9
 
 
 ---
@@ -40,7 +40,7 @@ Konfigurieren Sie mithilfe der **allgemeinen Windows Phone-Konfigurationsrichtli
 ### Kennworteinstellungen
 
 |Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|-----|------------------------------|
 |**Anfordern eines Kennworts zum Entsperren mobiler Geräte**|Gibt an, ob Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können.|Ja|Ja|
 |**Erforderlicher Kennworttyp**|Gibt den erforderlichen Typ des Kennworts an, z.B. alphanumerisch oder nur numerisch.|Ja|Ja|
 |**Erforderlicher Kennworttyp – Minimale Anzahl von Zeichensätzen**|Gibt an, wie viele verschiedene Zeichensätze im Kennwort enthalten sein müssen. Es gibt vier Zeichensätze: Kleinbuchstaben, Großbuchstaben, Zahlen und Symbole. Für iOS-Geräte wird hiermit jedoch die erforderliche Anzahl von Symbolzeichen im Kennwort angegeben.|Ja|Ja|
@@ -55,44 +55,44 @@ Konfigurieren Sie mithilfe der **allgemeinen Windows Phone-Konfigurationsrichtli
 ### Verschlüsselungseinstellungen
 
 |Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|------|-----------------------------|
 |**Verschlüsselung auf mobilen Geräten vorschreiben**|Schreibt vor, dass die Daten auf unterstützten mobilen Geräten verschlüsselt werden müssen.<br>Für Windows Phone 8-Geräte müssen Sie hier **Ja**festlegen.|Ja|Ja|
 
 ### Systemeinstellungen
 
 |Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|------|------------------------------|
 |**Bildschirmaufnahme zulassen**|Ermöglicht dem Benutzer, den Bildschirminhalt als Bilddatei zu erfassen.|Nein|Ja|
 |**Übermitteln von Diagnosedaten zulassen**|Ermöglicht, dass das Gerät Diagnoseinformationen an Microsoft übermittelt.|Nein|Ja|
 
 ### Cloudeinstellungen – Konten und Synchronisierung
 
 |Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|-----|------------------------------|
 |**Microsoft-Konto erlauben**|Ermöglicht, dass ein Microsoft-Konto mit dem mobilen Gerät verknüpft werden kann.|Nein|Ja|
 
 ### E-Mail-Einstellungen
 
 |Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|-----|-------------------------------|
 |**Benutzerdefinierte E-Mail-Konten erlauben**|Ermöglicht, dass das Gerät eine Verbindung mit nicht von Microsoft stammenden E-Mail-Konten herstellen kann.|Nein|Ja|
 
 ### Anwendungseinstellungen – Browser
 
 |Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|-----|-------------------------------|
 |**Webbrowser zulassen**|Ermöglicht oder blockiert die Verwendung des integrierten Webbrowser auf Geräten.|Nein|Ja|
 
 ### Anwendungseinstellungen – Apps
 
 |Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|------|------------------------------|
 |**App Store zulassen**|Ermöglicht Benutzern, über das Gerät eine Verbindung mit dem App Store herzustellen.|Nein|Ja|
 
 ### Einstellungen für Gerätefunktionen - Hardware
 
 |Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|----|--------------------------------|
 |**Kamera zulassen**|Ermöglicht oder blockiert die Verwendung der Kamera des Geräts.|Nein|Ja|
 |**Wechselspeichermedien zulassen**|Ermöglicht dem Gerät, Wechselmedien wie eine SD-Karte zu verwenden.|Ja|Ja|
 |**WLAN zulassen**|Aktiviert oder deaktiviert die WLAN-Funktionalität des Geräts.|Nein|Ja|
@@ -106,7 +106,7 @@ Konfigurieren Sie mithilfe der **allgemeinen Windows Phone-Konfigurationsrichtli
 ### Einstellungen für Gerätefunktionen - Funktionen
 
 |Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|----|------|-------------------------------|
 |**Kopieren und Einfügen zulassen**|Lässt Kopier- und Einfügefunktionen auf Geräten zu.|Nein|Ja|
 
 ### Einstellungen für zulässige und blockierte Apps
@@ -171,6 +171,6 @@ Geben Sie im Dialogfeld **OMA-URI hinzufügen oder bearbeiten** die folgenden In
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

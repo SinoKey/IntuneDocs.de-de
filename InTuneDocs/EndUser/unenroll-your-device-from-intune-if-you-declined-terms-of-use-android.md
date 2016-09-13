@@ -3,8 +3,8 @@ title: "Aufheben der Registrierung Ihres Geräts bei Intune bei Ablehnung der Nu
 description: "Beschreibt, wie Sie die Registrierung eines Android-Geräts bei Intune aufheben, wenn Sie die Nutzungsbedingungen abgelehnt haben und sich nicht bei der Unternehmensportal-App anmelden können."
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 06e2fa597e9e4143d17e817daee7eeac8eb46bf7
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 373b349a6a43e79d83ce44a8c1670410ca17c6cf
 
 
 ---
@@ -38,13 +38,11 @@ So können Sie die Registrierung Ihres Geräts bei Intune aufheben und die Unter
 
     Sie können die Unternehmensportal-App jetzt deinstallieren.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (überprüfen Sie die [Unternehmensportal-Website](http://portal.manage.microsoft.com) auf Kontaktinformationen), oder schreiben Sie dem Microsoft Android-Team unter wintunedroidfbk@microsoft.com.
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen), oder schreiben Sie dem Microsoft Android-Team unter wintunedroidfbk@microsoft.com.
 
 
-### Weitere Informationen:
-[Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

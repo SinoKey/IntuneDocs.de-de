@@ -4,7 +4,7 @@ description: "Beschreibt das Verschlüsseln eines Android-Geräts."
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 06/07/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6c6a6fed876e49888d8fda1fd93b39313387ba38
-ms.openlocfilehash: 6cb6c0b8a8f4c1b88565ce4b7a5690406b4ddf40
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 2fff575f84512304a119508b49486d02695a06bd
 
 
 ---
@@ -58,13 +58,12 @@ Wenn Sie Ihr Telefon jemals abmelden, bleibt es verschlüsselt.
 
     e. Öffnen Sie die Unternehmensportal-App, wählen Sie das Gerät aus, und tippen Sie auf **Kompatibilität überprüfen**.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (überprüfen Sie die [Unternehmensportal-Website](http://portal.manage.microsoft.com) auf Kontaktinformationen), oder schreiben Sie dem Microsoft Android-Team unter wintunedroidfbk@microsoft.com.
-
-### Weitere Informationen:
-[Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen), oder schreiben Sie dem Microsoft Android-Team unter wintunedroidfbk@microsoft.com.
 
 
 
-<!--HONumber=Aug16_HO2-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

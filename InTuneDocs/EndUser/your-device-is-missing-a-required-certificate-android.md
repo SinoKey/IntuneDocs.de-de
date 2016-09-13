@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: e10de556babc49d4e2f1ebf6ba9c766291d58efd
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 6740962e55b1232330c6fab43ce1250a54e3a97b
 
 
 ---
@@ -96,11 +96,10 @@ Um dieses Problem zu beheben und das erforderliche Zertifikat zu erhalten, müss
 
 Wenn die gleiche „Zertifikat fehlt“-Nachricht wie oben gezeigt angezeigt wird, und Sie bereits die Schritte oben ausgeführt haben, bedeutet dies wahrscheinlich, dass Ihr IT-Administrator noch ein anderes Zertifikat benötigt, um Ihnen bei der Installation zu helfen. Wenden Sie sich an Ihren IT-Administrator, und senden Sie dieser Person diesen [Link](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues), der die Schritte zum Beheben des Problems enthält.
 
-### Weitere Informationen:
-[Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

@@ -10,6 +10,6 @@
 Der [Intune-Softwareclient](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) kann Windows-PCs mit dem Betriebssystem Windows 7 und höher verwalten. Kunden mit der Enterprise Management Suite (EMS) können auch [Azure Active Directory (AAD) verwenden, um Windows 10-Geräte zu registrieren](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview).
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ede9c4db136eb0498cad6d196488d03768741328
-ms.openlocfilehash: 382dd93a5aec7415e5fb738f3068820e36d8ae06
+ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
+ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
 
 
 ---
@@ -29,37 +29,41 @@ Sie müssen keine Einrichtungsschritte in Ihrem Intune-Mandanten vornehmen, um d
 ### Schritt 1: Verwalten der Zertifikate
 1. Exportieren Sie das Zertifikat in der Azure Active Directory-Konsole (Azure AD).
 
-    #### Internet Explorer 11
+#### Internet Explorer 11
 
 
-    a. Führen Sie Internet Explorer als Administrator aus, und melden Sie sich bei der Azure AD-Konsole an.
+   a. Führen Sie Internet Explorer als Administrator aus, und melden Sie sich bei der Azure AD-Konsole an.
 
-    b. Wählen Sie das Schlosssymbol in der Adressleiste und **Anzeigen von Zertifikaten** aus.
+   b. Wählen Sie das Schlosssymbol in der Adressleiste und **Anzeigen von Zertifikaten** aus.
 
-    c. Wählen Sie auf der Registerkarte **Details** der Zertifikateigenschaften **In Datei kopieren** aus.
+   c. Wählen Sie auf der Registerkarte **Details** der Zertifikateigenschaften **In Datei kopieren** aus.
 
-    d. Wählen Sie auf der Startseite **Assistent für den Zertifikatexport** **Weiter** aus.
+   d. Wählen Sie auf der Startseite **Assistent für den Zertifikatexport** **Weiter** aus.
 
-    e. Lassen Sie auf der Seite **Format der zu exportierenden Datei** den Standardwert **DER-codiert-binär x. 509 (. CER)**, und wählen Sie **Weiter** aus.  
+   e. Lassen Sie auf der Seite **Format der zu exportierenden Datei** den Standardwert **DER-codiert-binär x. 509 (. CER)**, und wählen Sie **Weiter** aus.  
 
-    f. Wählen Sie auf der Seite **Zu exportierende Datei** **Durchsuchen** aus, um einen Speicherort zum Speichern der Datei auszuwählen, und geben Sie einen Dateinamen ein. Obwohl es so aussieht, als ob Sie eine Datei zum exportieren auswählen, benennen Sie tatsächlich die Datei, in der das exportierte Zertifikat gespeichert wird. Wählen Sie **Weiter** &gt; **Fertig stellen** aus.
+   f. Wählen Sie auf der Seite **Zu exportierende Datei** **Durchsuchen** aus, um einen Speicherort zum Speichern der Datei auszuwählen, und geben Sie einen Dateinamen ein. Obwohl es so aussieht, als ob Sie eine Datei zum exportieren auswählen, benennen Sie tatsächlich die Datei, in der das exportierte Zertifikat gespeichert wird. Wählen Sie **Weiter** &gt; **Fertig stellen** aus.
 
-    #### Safari
+#### Safari
 
-    a. Melden Sie sich bei der Azure AD-Konsole an.
+ a. Melden Sie sich bei der Azure AD-Konsole an.
 
-    b. Wählen Sie das Schlosssymbol aus &gt;  **Weitere Informationen**.
+b. Wählen Sie das Schlosssymbol aus &gt;  **Weitere Informationen**.
 
-    c. Wählen Sie **Zertifikat anzeigen** &gt; **Details** aus.
+   c. Wählen Sie **Zertifikat anzeigen** &gt; **Details** aus.
 
-    d. Wählen Sie das Zertifikat und anschließend **Exportieren** aus.  
+   d. Wählen Sie das Zertifikat und anschließend **Exportieren** aus.  
 
-    > [!IMPORTANT]
-    > Überprüfen Sie das Ablaufdatum des Zertifikats, da Sie ein neues Zertifikat exportieren und importieren müssen, wenn dieses abläuft.
+> [!IMPORTANT]
+>
+> Überprüfen Sie das Ablaufdatum des Zertifikats, da Sie ein neues Zertifikat exportieren und importieren müssen, wenn dieses abläuft.
 
 
 2. Importieren Sie von der ISE-Konsole aus das Intune-Zertifikat (die Datei, die Sie exportiert haben) in den **Vertrauenswürde Zertifikate**-Speicher.
+
+
 ### Abrufen eines selbstsignierten Zertifikats von ISE 
+
 1.  Wechseln Sie in der ISE-Konsole zu **Verwaltung** > **Zertifikate** > **Systemzertifikaten** > **Selbstsigniertes Zertifikat generieren**.  
 2.       Exportieren Sie das selbstsignierte Zertifikat.
 3. Bearbeiten Sie in einem Text-Editor das exportierte Zertifikat:
@@ -146,6 +150,6 @@ Es gibt auch [herunterladbare Registrierungsanweisungen](https://gallery.technet
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO1-->
 
 
