@@ -13,8 +13,8 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7fdfe64a18fe359ee4b3b4507ef4108ad65ab573
-ms.openlocfilehash: 3102e4637c61bbae002fb30947acd1f82204ac93
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 6b2d805561067d2dc0de70d93c45622a951e5981
 
 
 ---
@@ -31,7 +31,7 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und
 ## Sicherheitseinstellungen
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**Erforderlicher Kennworttyp**|Gibt den erforderlichen Typ des Kennworts an, z.B. nur alphanumerisch oder numerisch.|Ja|Ja|
 |**Erforderlicher Kennworttyp – Minimale Anzahl von Zeichensätzen**|Gibt an, wie viele verschiedene Zeichensätze im Kennwort enthalten sein müssen. Es gibt vier Zeichensätze: Kleinbuchstaben, Großbuchstaben, Zahlen und Symbole. Für iOS-Geräte gibt diese Einstellung jedoch die erforderliche Anzahl von Symbolen im Kennwort an.|Ja|Ja|
 |**Minimale Kennwortlänge**<sup>1</sup>|Konfiguriert die erforderliche Mindestlänge (in Zeichen) für das Kennwort.|Ja|Ja|
@@ -46,7 +46,7 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und
 ## Verschlüsselungseinstellungen
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Verschlüsselung auf mobilen Geräten vorschreiben**<sup>1</sup>|Erfordert die Verschlüsselung der Dateien auf dem Gerät.<br>Für Windows Phone 8-Geräte müssen Sie hier **Ja**festlegen.|Ja|Nein|
 <sup>1</sup> Zusätzliche Informationen für Geräte unter Windows 8.1
 
@@ -61,14 +61,14 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und
 ## Malwareeinstellungen
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Netzwerkfirewall erforderlich**|Erfordert, dass die Windows-Firewall aktiviert sein muss.|Ja|Nein|
 |**SmartScreen aktivieren**|Erfordert, dass Windows SmartScreen verwendet werden muss.|Ja|Nein|
 
 ## Systemeinstellungen
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-------|---------------------------|--------------|
 |**Automatische Updates erforderlich**|Aktiviert die Einstellung für automatische Updates auf Geräten.|Ja|Nein|
 |**Automatische Updates erforderlich – Mindestklassifizierung von Updates, die automatisch installiert werden**|Wählt die Klassifizierungen der Updates aus, die automatisch installiert werden:<br /><br />-   **Wichtig** – Installiert alle Updates, die als wichtig klassifiziert sind.<br />-   **Empfohlen** – Installiert alle Updates, die als wichtig oder empfohlen klassifiziert sind.|Ja|Nein|
 |**Benutzerkontensteuerung**|Erfordert, dass die Benutzerkontensteuerung (User Account Control; UAC) auf Geräten verwendet werden muss.|Ja|Nein|
@@ -78,19 +78,19 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und
 ## Cloudeinstellungen – Dokumente und Daten
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**URL der Arbeitsordner**|Legt die URL des Arbeitsordners so fest, dass Dokumente auf verschiedenen Geräten synchronisiert werden können.|Ja|Nein|
 
 ## E-Mail-Einstellungen
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Microsoft-Konto in Windows Mail-Anwendung optional machen**|Ermöglicht den Zugriff auf die Windows Mail-Anwendung ohne Microsoft-Konto.|Ja|Nein|
 
 ## Anwendungseinstellungen – Browser
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**AutoAusfüllen zulassen**|Ermöglicht Benutzern, die Einstellungen für AutoVervollständigen im Browser zu ändern.|Ja|Nein|
 |**Popupblocker zulassen**|Aktiviert oder deaktiviert den Popupblocker des Browsers.|Ja|Nein|
 |**Plug-Ins zulassen**|Ermöglicht Benutzern, Plug-Ins zu Internet Explorer hinzuzufügen.|Ja|Nein|
@@ -109,7 +109,7 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und
 ## Einstellungen für Gerätefunktionen - Mobiltelefon
 
 |Name der Einstellung|Details|Windows 8.1 und Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|----|------------------------------|--------------|
 |**Datenroaming zulassen**|Ermöglicht das Datenroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.|Ja|Nein|
 
 
@@ -119,6 +119,6 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

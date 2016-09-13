@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: d233ea540d7db00d9df5b5ed1f5db2cff6cd7b9e
+ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
+ms.openlocfilehash: ab765d181cb2eb9e3e6a9c79c597241c4fd5985f
 
 
 ---
@@ -35,7 +35,7 @@ Wenn ein Benutzer versucht, mit einer unterstützten App wie z. B. OneDrive auf
 >[!IMPORTANT]
 >Der bedingte Zugriff für PCs und Windows 10 Mobile-Geräte mit Apps, die die moderne Authentifizierung verwenden, steht zurzeit nicht für alle Intune-Kunden zur Verfügung. Wenn Sie diese Funktionen bereits verwenden, müssen Sie keine weiteren Maßnahmen ergreifen. Sie können diese weiter verwenden.
 
->Wenn Sie keine Richtlinien für bedingten Zugriff für PCs oder Windows 10 Mobile-Geräte mit Apps, die die moderne Authentifizierung verwenden, erstellt haben und dies jetzt tun möchten, müssen Sie eine Anforderung übermitteln.  Allgemeine Informationen, Informationen zu bekannten Problemen sowie Informationen zum Zugriff auf dieses Feature finden Sie auf der [Connect-Website](http://go.microsoft.com/fwlink/?LinkId=761472).
+>Wenn Sie keine Richtlinien für bedingten Zugriff für PCs und Windows 10 Mobile für Apps mit moderner Authentifizierung erstellt haben und dies jetzt nachholen möchten, registrieren Sie sich für die öffentliche Vorschauversion von Azure Active Directory, welche den auf Geräten basierenden bedingten Zugriff für von Intune verwaltete Geräte oder in Domänen eingebundene Windows-PCs umfasst. Weitere Informationen finden Sie in [diesem Blogbeitrag](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
 **Bevor** Sie eine bedingte Zugriffsrichtlinie für SharePoint Online konfigurieren, müssen folgende Voraussetzungen erfüllt sein:
 - Sie müssen über ein **SharePoint Online-Abonnement** verfügen, und Benutzer müssen für SharePoint Online lizenziert sein.
@@ -134,7 +134,7 @@ Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompa
         *   Windows-Geräten. Diese müssen registriert werden und kompatibel sein, mit der lokalen Active Directory-Domäne verknüpft sein oder beides
         * nicht unterstützten Plattformen wie Mac.  Allerdings werden Apps, die die moderne Authentifizierung von diesen Plattformen verwenden, weiterhin blockiert.
         >[!TIP]
-        >Wenn Sie den bedingten Zugriff für PCs nicht bereits verwenden, wird Ihnen diese Option möglicherweise nicht angezeigt.  Verwenden Sie stattdessen die Option **Spezifische Plattformen**, Der bedingte Zugriff für PCs steht zurzeit nicht allen Intune-Kunden zur Verfügung.   Allgemeine Informationen, Informationen zu bekannten Problemen sowie Informationen zum Zugriff auf dieses Feature finden Sie auf der [Microsoft Connect-Website](http://go.microsoft.com/fwlink/?LinkId=761472).
+        >Wenn Sie den bedingten Zugriff für PCs nicht bereits verwenden, wird Ihnen diese Option möglicherweise nicht angezeigt.  Verwenden Sie stattdessen die Option **Spezifische Plattformen**, Der bedingte Zugriff für PCs steht zurzeit nicht allen Intune-Kunden zur Verfügung.   Weitere Informationen zum Zugriff auf dieses Feature finden Sie [in diesem Blogbeitrag](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **Bestimmte Plattformen**
 
@@ -189,6 +189,6 @@ Wählen Sie eine beliebige Gruppe von Mobilgeräten und dann auf der Registerkar
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

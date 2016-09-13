@@ -13,11 +13,15 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab9592c253238fd832f8b48372e5474fcfc5331
-ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
+ms.sourcegitcommit: e7c680c43b8c9120755ec3c652cf7ec1cbcc3472
+ms.openlocfilehash: b13e2ff2f4822d71ef8cff9d835e32b99cb3e4ab
 
 
 ---
+# Verwenden von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune
+
+In diesem Thema wird das Erstellen von Gruppen in Intune beschrieben. Darüber hinaus erhalten Sie Informationen dazu, wie sich die Verwaltung von Gruppen in den nächsten Monaten verändern wird. Informationen zum *aktuellen* Ansatz der Gruppenverwaltung finden Sie in diesem Thema unter [Erstellen von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune).
+
 ## Benachrichtigung über kommende Verbesserungen an der Gruppenverwaltung
 
 Um Ihren Wünschen nach einem einheitlichen Handling für Gruppierung und Adressierung in Enterprise Mobility + Security gerecht zu werden, konvertieren wir Intune-Gruppen zu Sicherheitsgruppen auf Azure Active Directory Basis. Dies vereinheitlicht die Gruppenverwaltung in Intune und Azure Active Directory (Azure AD). Durch die neue Benutzeroberfläche müssen Sie keine Gruppen zwischen Diensten duplizieren, und es wird eine Erweiterung unter Verwendung von PowerShell und Graph bereitgestellt. 
@@ -72,7 +76,7 @@ Obwohl sich die Gruppenoberfläche verbessern wird, gibt es einige Intune-Funkti
 -  Wenn Sie Administratoren haben, die über keine Berechtigung verfügen, Gruppen in Azure AD zu erstellen, fragen Sie Ihren Azure AD-Administrator, ob er diese zur Azure AD-Rolle **Intune-Dienstadministrator** hinzufügen kann.
 
 
-# Erstellen von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune
+## Erstellen von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune
 
 In diesem Abschnitt wird beschrieben, wie Intune-Gruppen in der Intune-Verwaltungskonsole erstellt werden.
 
@@ -208,6 +212,6 @@ Jede Richtlinie verfügt über einen **vorgesehenen Wert** und einen **Status**.
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

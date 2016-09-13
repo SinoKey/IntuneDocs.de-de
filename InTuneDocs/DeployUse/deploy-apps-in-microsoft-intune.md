@@ -4,7 +4,7 @@ description: Die Informationen in diesem Thema helfen Ihnen beim Bereitstellen v
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c6f795031ec23ffe6f332b3510eea43d5fbdbcd
-ms.openlocfilehash: 4c9f5b111fbd95f9e1c928cfaaa0c7ebf61dad2a
+ms.sourcegitcommit: 6b6a5e2435a3cdffeaf27b0045dee9b8263cdc7a
+ms.openlocfilehash: 1e6e0656fb3da0d77dab10736e7b1607d77e6335
 
 ---
 # Bereitstellen von Apps in Microsoft Intune
@@ -57,7 +57,7 @@ Die App wird für Benutzergeräte im Unternehmensportal angezeigt. Die Benutzer 
 In diesem Screenshot wurde z. B. die App „Bing for iOS“ mit dem Installationstyp **Externer Link** zusammen mit einem benutzerdefinierten Symbol bereitgestellt. Die Option **Als ausgewählte App anzeigen und im Unternehmensportal hervorheben** wurde ausgewählt.  
 ![Verfügbare iOS-App](./media/available-install-on-iOS.png)
 
-Wenn Sie die App als **Erforderlich** für ein iOS-Gerät bereitgestellt haben, wird der Benutzer benachrichtigt, dass diese App zur Installation bereitsteht. In diesem Screenshot wurde z. B. die App „Work Folders for iOS“ mit dem Installationstyp **Verwaltete iOS-App aus dem App Store** bereitgestellt.
+Wenn Sie die App als **Erforderlich** für ein iOS-Gerät bereitgestellt haben, wird der Benutzer benachrichtigt, dass diese App zur Installation bereitsteht. In diesem Screenshot wurde z. B. die App „Work Folders for iOS“ mit dem Installationstyp **Verwaltete iOS-App aus dem App Store** bereitgestellt.  
 ![Erforderliche iOS-App](./media/iOS-Required-install.PNG)
 
 ## Nächste Schritte
@@ -66,6 +66,6 @@ Nachdem Sie eine Anwendung bereitgestellt haben, ist es sinnvoll, deren Status z
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO5-->
 
 

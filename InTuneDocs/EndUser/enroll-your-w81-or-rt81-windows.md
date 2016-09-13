@@ -13,8 +13,8 @@ ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 48520979cfd0ae9a4e5df331f8660333780a783b
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 9eecefaf5f56adb0959bf3ce23c7d7062ff7c9f6
 
 
 ---
@@ -63,12 +63,9 @@ Außerdem wird empfohlen, dass Sie die Unternehmensportal-App installieren, mit 
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
-### Weitere Informationen:
-[Registrieren Ihres Windows-Geräts bei Intune](enroll-your-device-in-intune-windows.md)</br>
-[Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO5-->
 
 

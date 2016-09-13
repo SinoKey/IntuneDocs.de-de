@@ -13,15 +13,22 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: ad5e9453f8132d383f8c23886e48505769c7f44b
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: 29d13dcbc367c18d64f9522fa9a3b962226feebb
 
 
 ---
 
 # Abkoppeln von Geräten von der Intune-Verwaltung
 
-Unabhängig davon, ob Geräte Unternehmenseigentum sind oder den Mitarbeitern persönlich gehören – es kommt der Zeitpunkt, an dem ein verwaltetes Gerät aus Intune-Verwaltung entfernt werden muss. Das Abkoppeln von Geräten ist recht einfach. Sie können Geräte, die als mobile Geräte verwaltet werden, wahlweise selektiv oder vollständig zurücksetzen. Außerdem können Sie mit Intune-Clientsoftware verwaltete PCs abkoppeln.
+Unabhängig davon, ob Geräte Unternehmenseigentum sind oder den Mitarbeitern persönlich gehören – es kommt der Zeitpunkt, an dem ein verwaltetes Gerät aus Intune-Verwaltung entfernt werden muss. Es gibt eine Vielzahl von Gründen, ein Gerät aus dem Betrieb zu nehmen:
+
+-   Ein Benutzer verlässt ein Unternehmen planmäßig („verwalteter“ Abschied)
+-   Ein Benutzer verlässt das Unternehmen plötzlich (wird entlassen, kündigt etc.)
+-   Verlust des Geräts
+-   Umfunktionieren eines Geräts (Übertragen auf einen anderen Benutzer, Wiederverwendung für einen anderen Zweck usw.)
+
+Sie können Geräte, die als mobile Geräte verwaltet werden, entweder selektiv oder vollständig zurücksetzen oder ein Gerät sperren und das Kennwort zurücksetzen. Durch das Zurücksetzen des Geräts geben Sie das Abonnement des Benutzers frei, sodass Sie ein anderes Gerät hinzufügen können. Außerdem können Sie mit der Intune-Clientsoftware verwaltete PCs außer Betrieb nehmen.
 
 ## Löschen von Daten und Apps von Geräten
 Sowohl beim selektiven als auch beim vollständigen Zurücksetzen wird das Gerät aus der Intune-Verwaltung entfernt, indem die zugehörige Richtlinie und das Unternehmensportal entfernt werden. Dies bedeutet, dass das Gerät nicht mehr über die notwendigen Informationen zur Anmeldung bei Unternehmensressourcen wie Microsoft SharePoint, E-Mails oder Office 365 verfügt.
@@ -62,6 +69,6 @@ Manchmal ist es das Gerät selbst, das das Ende seines Lebenszyklus erreicht hat
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 
