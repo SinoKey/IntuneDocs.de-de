@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
-ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
+ms.sourcegitcommit: aa96cf3a1909e3ea2187a3beb0aede3228894504
+ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
 
 
 ---
@@ -23,12 +23,6 @@ ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 Wenn beim Bereitstellen und Verwalten von Apps mit Intune Probleme auftreten, beginnen Sie hier. In diesem Thema werden einige allgemeine Probleme, die auftreten können, sowie deren Lösungen behandelt.
 
 ## Häufige Probleme bei der App-Bereitstellung
-
-### Benutzer können nicht beim Intune-Unternehmensportal anmelden
-
-1.  Stellen Sie sicher, das Konto des Benutzers vorhanden und im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) aktiviert ist.
-
-3.  Stellen Sie im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) sicher, dass der Benutzer den richtigen Benutzernamen zum Anmelden bei Intune eingibt, und dass der Benutzername das Format **joe@domain.com** aufweist. Wenn ein Benutzer das falsche Kennwort eingibt, bitten Sie ihn, das Kennwort zurückzusetzen.
 
 ### Im Unternehmensportal fehlen die Kontaktinformationen der IT-Abteilung
 
@@ -52,15 +46,6 @@ Wenn beim Bereitstellen und Verwalten von Apps mit Intune Probleme auftreten, be
 
 4.  Wenn die Statusanzeige für das Herunterladen von Apps in iOS vollständig ist, aber die App nicht ordnungsgemäß installiert wird, liegt möglicherweise ein Fehler bei den bereitgestellten App-Dateien vor.
 
-### Wenn Sie über einen iOS-App-Link zu einem früheren Ort im iTunes App Store gelangen
-
-1.  Von der aktuellen iTunes App Store-Sitzung wird die vorherige App-Seite geöffnet.
-
-2.  Schließen Sie den iTunes App Store auf dem Gerät, und folgen Sie den Link erneut.
-
-### Beim Starten einer iOS-App erhalten Sie eine Fehlermeldung
-
-1.  Das Ablaufdatum der App ist möglicherweise nicht gültig.
 
 ### Der Upload Ihrer App bleibt im Zustand "Läuft" stehen
 
@@ -73,12 +58,6 @@ Wenn beim Bereitstellen und Verwalten von Apps mit Intune Probleme auftreten, be
 1.  Stellen Sie sicher, dass der Zugriff auf die Apple-Bereitstellungs- und -Zertifizierungswebsites durch die Firewall Ihrer Organisation zugelassen wird.
 
 2.  Weitere Informationen finden Sie in der Apple-Entwicklerdokumentation.
-
-### Fehler: Herausgeber ist nicht vorhanden
-Sie verwenden **Anderen Softwarevertrag hinzufügen**, um einen Drittanbieter-Lizenzvertrag hinzufügen. Sie versuchen, den Herausgeber von der Seite **Anderer Softwarelizenzvertrag** hinzuzufügen. Die Seite enthält eine Liste der vorhandenen Herausgeber in alphabetischer Reihenfolge.
-Sie geben den fehlenden Herausgeber ein, erhalten jedoch die Fehlermeldung **Der Herausgeber existiert nicht**.
-
-Dieser Fehler ist entwurfsbedingt. Intune ermöglicht die Lizenznachverfolgung nur für gängige Softwaretitel. Intune setzt voraus, dass mindestens 4 separate Konten die Software melden, bevor sie in der Lizenzierungsworkload zur Auswahl steht.
 
 ### Wenn der Installationsstatus von verwalteten Anwendungen nicht gemeldet wird
 
@@ -93,13 +72,13 @@ Die folgende Tabelle enthält eine Übersicht über Fehler, die bei der Intune-A
 |0x80073CF0|Das Paket konnte nicht geöffnet werden.|Mögliche Ursachen:<br /><br />-   Das Paket ist nicht signiert.<br />-   Der Namen des Herausgebers stimmt nicht mit dem Signaturzertifikat des Antragstellers überein.<br /><br />Prüfen Sie das Ereignisprotokoll „AppxPackagingOM“, um weitere Informationen zu erhalten.|
 |0x80073CF3|Fehler bei Updates des Pakets (Abhängigkeits- oder Konfliktüberprüfung)|Mögliche Ursachen:<br /><br />-   Das eingehende Paket ist mit einem installierten Paket nicht vereinbar.<br />-   Eine angegebene Paketabhängigkeit wurde nicht gefunden.<br />-   Das Paket unterstützt nicht die richtige Prozessorarchitektur.<br /><br />Prüfen Sie das Ereignisprotokoll „AppXDeployment-Server“, um weitere Informationen zu erhalten.|
 |0x80073CFB|Das bereitgestellte Paket ist bereits installiert, und eine erneute Installation des Pakets wird blockiert.|Dieser Fehler kann auftreten, wenn Sie ein Paket installieren, das nicht bitweise mit dem bereits installierten Paket identisch ist. Überprüfen Sie, ob die digitale Signatur auch Teil des Pakets ist. Wenn ein Paket erneut erstellt oder signiert wird, ist das Paket nicht mehr bitweise identisch mit dem zuvor installierten Paket. Es gibt zwei Möglichkeiten, diesen Fehler zu beheben:<br /><br />-   Erhöhen Sie die Versionsnummer der Anwendung, und erstellen und signieren Sie das Paket dann erneut.<br />-   Entfernen Sie das alte Paket für jeden Benutzer des Systems, bevor Sie das neue Paket installieren.|
-|0x87D1041C|Die Anwendung wurde erfolgreich installiert, wird jedoch nicht erkannt.|- Der Benutzer hat die App aus dem Unternehmensportal installiert und anschließend direkt vom Gerät deinstalliert. Installieren Sie die App erneut aus dem Unternehmensportal.<br /><br />- Die Versionsnummer einer branchenspezifischen App, wie von Intune erkannt, stimmt möglicherweise nicht mit der Version überein, die auf dem Gerät installiert ist. Vergewissern Sie sich, dass Intune über die richtige Version verfügt, und installieren Sie die App erneut.|
+|0x87D1041C|Die Anwendung wurde erfolgreich installiert, wird jedoch nicht erkannt.|– Die App wurde erfolgreich von Intune bereitgestellt und später deinstalliert (möglicherweise vom Endbenutzer). Weisen Sie den Benutzer an, die App aus dem Unternehmensportal neu zu installieren. Erforderliche Apps werden automatisch beim nächsten Einchecken des Geräts neu installiert.|
 
 ### Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Microsoft Support.
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

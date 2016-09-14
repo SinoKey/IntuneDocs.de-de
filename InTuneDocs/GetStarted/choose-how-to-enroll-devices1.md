@@ -13,8 +13,8 @@ ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
-ms.openlocfilehash: d4fc57f50e2adf70a49f64174f85dd03709e8ce3
+ms.sourcegitcommit: a5f80058e004f119acc9a918123c897b72b71314
+ms.openlocfilehash: 7474d6fc583c2fd514cfd0b2d0dfd497b1d14480
 
 
 ---
@@ -26,7 +26,7 @@ Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmet
 ## **Bringen die Mitarbeiter ihre eigenen Geräte mit (BYOD), oder werden die Geräte von Ihrer Organisation bereitgestellt (COD)?**
 
 > [!div class="button"]
-[BYOD >](choose-how-to-enroll-devices2.md)   [COD >](choose-how-to-enroll-devices3.md)
+[BYOD >](choose-how-to-enroll-devices2.md)<br>[COD >](choose-how-to-enroll-devices3.md)
 
 - **Geräte von Benutzern** – „BYOD“-Registrierung (Bring Your Own Device) – Benutzer können die Intune-Unternehmensportal-App auf ihrem Gerät installieren und dieses dann registrieren, um Zugriff auf Unternehmensressourcen wie E-Mail, Unternehmens-Apps, Unternehmensdaten und Support zu erhalten.  
 
@@ -34,6 +34,6 @@ Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmet
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

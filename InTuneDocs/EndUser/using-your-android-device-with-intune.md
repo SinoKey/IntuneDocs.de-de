@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
+ms.sourcegitcommit: 63f86f135d369d8c96903c0add1e194fd9d5ded2
+ms.openlocfilehash: e98aa19d38af47ba2d19a2a67b7a836796aded2a
 
 
 ---
@@ -22,9 +22,9 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 # Verwenden Ihres Android-Geräts mit Intune
 
-Dieser Artikel enthält Links zu allen Aufgaben, die Endbenutzer auf ihren von Intune verwalteten Geräten durchführen können. IT-Administratoren können auf diese Informationen verweisen, um die Schritte anzuzeigen, die Benutzer zum Durchführen einer Vielzahl von Aufgaben befolgen, die in Kategorien gruppiert werden: 
+Dieser Artikel enthält Links zu allen Aufgaben, die Endbenutzer auf ihren von Intune verwalteten Geräten durchführen können. IT-Administratoren können auf diese Informationen verweisen, um die Schritte anzuzeigen, die Benutzer zum Durchführen einer Vielzahl von Aufgaben befolgen müssen, die in folgenden Kategorien gruppiert werden:
 
-- Installation der Unternehmensportal-App und Intune-Registrierung 
+- Installation der Unternehmensportal-App und Intune-Registrierung
 - Verwaltungsaufgaben nach der Registrierung
 - Kompatibilitätsprobleme
 
@@ -54,7 +54,7 @@ Die Informationen in diesem Abschnitt helfen Ihnen bei Aktionen, die Sie nach de
 
 ## Beheben von Problemen mit Ihrem Gerät
 
-Die Informationen in diesem Abschnitt helfen Ihnen beim Behandeln von Problemen, die mit Android-Geräten auftreten können, die bei Intune registriert sind.
+Die Informationen in diesem Abschnitt helfen Ihnen beim Beheben von Problemen, die mit bei Intune registrierten Android-Geräten auftreten können.
 
 - [Verwenden der ausführlichen Protokollierung zur leichteren Behebung von Geräteproblemen durch den IT-Administrator](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Senden von Diagnosedatenprotokollen an Ihren IT-Administrator per E-Mail](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
@@ -71,6 +71,6 @@ Die Informationen in diesem Abschnitt helfen Ihnen beim Behandeln von Problemen,
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -9,8 +9,9 @@
 ## [Registrieren von Geräten](enroll-devices-in-microsoft-intune.md)
 ### [Vorbereiten der Registrierung von Geräten in Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 #### [Einrichten der iOS- und Mac-Verwaltung](set-up-ios-and-mac-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile und Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+#### [Android-Verwaltung](set-up-android-management-with-microsoft-intune.md)
 #### [Windows-Geräteverwaltung ](set-up-windows-device-management-with-microsoft-intune.md)
+#### [Windows 10 Mobile und Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Verwalten firmeneigener Geräte](manage-corporate-owned-devices.md)
 #### [Registrieren firmeneigener iOS-Geräte](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Registrierung mit dem iOS-Einrichtungsassistenten](ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -107,6 +108,7 @@
 #### [Erstellen und Bereitstellen von MAM-Richtlinien](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM-Richtlinien für Android](android-mam-policy-settings.md)
 #### [MAM-Richtlinien für iOS](ios-mam-policy-settings.md)
+#### [Überprüfung von MAM-Richtlinien](validate-mobile-application-management.md)
 #### [Überwachen der Richtlinieneinhaltung](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Verwalten der Datenübertragung zwischen iOS-Apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 #### [Endbenutzererfahrung](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
@@ -135,6 +137,6 @@
 # [Problembehandlung](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO1-->
 
 
