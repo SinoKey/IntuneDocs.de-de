@@ -7,9 +7,9 @@
   - PCs mit Windows 10 (Home, Education, Pro und Enterprise)
   - Mac OS X 10.9 und höher
 
-Der [Intune-Softwareclient](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) kann Windows-PCs mit dem Betriebssystem Windows 7 und höher verwalten. Kunden mit der Enterprise Management Suite (EMS) können auch [Azure Active Directory (AAD) verwenden, um Windows 10-Geräte zu registrieren](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview).
+Der [Intune-Softwareclient](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) kann Windows PCs verwalten, auf denen das Betriebssystem Windows Vista oder neuer ausgeführt wird. Dies gilt nicht für die Home-Editionen von Windows, da diese nicht unterstützt werden.  Kunden mit Enterprise Management + Security (EMS) können auch [Azure Active Directory (AAD) verwenden, um Windows 10-Geräte zu registrieren](set-up-windows-device-management-with-microsoft-intune.md#azure-active-directory-enrollment).
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
