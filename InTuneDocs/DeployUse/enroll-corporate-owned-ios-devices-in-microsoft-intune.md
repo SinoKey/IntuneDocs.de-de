@@ -4,7 +4,7 @@ description: "Registrieren firmeneigener iOS-Geräte mithilfe des Apple Device E
 keywords: 
 author: NathBarn
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d81ef697518745b258598124d6e73899bdd76a0f
-ms.openlocfilehash: 00d7e73154bb293fec48b74b6f6454d67e5ef378
+ms.sourcegitcommit: bee93334e7b868ef6c827fba9efc3318c8419527
+ms.openlocfilehash: b295ee11d566fbfbe84513c045f3a76dfd51cda4
 
 
 ---
@@ -40,6 +40,11 @@ Auf über das DEP erworbenen Geräten wird ein Registrierungsprofil „Drahtlos�
 ## Verwenden des Unternehmensportals auf Geräten, die über DEP oder Apple Configurator registriert wurden
 
 Auf mit Benutzeraffinität konfigurierten Geräte kann die Unternehmensportal-App installiert und ausgeführt werden, um Apps herunterzuladen und Geräte zu verwalten. Nachdem Benutzer ihre Geräte erhalten haben, müssen sie verschiedene zusätzliche Schritte ausführen, um den Setup-Assistenten abzuschließen und die Unternehmensportal-App zu installieren.
+
+Benutzeraffinität ist erforderlich, um Folgendes zu unterstützen:
+  - MAM-Apps (Mobile Application Management, Verwaltung mobiler Anwendungen)
+  - Bedingten Zugriff auf E-Mail- und Unternehmensdaten
+  - Unternehmensportal-App
 
 **Registrieren von firmeneigenen iOS-Geräten mit Benutzeraffinität durch Benutzer**
 1. Wenn Benutzer ihr Gerät einschalten, werden sie aufgefordert, den Setup-Assistenten zu durchlaufen. Während des Setups werden Benutzer zur Eingabe ihrer Anmeldeinformationen aufgefordert. Sie müssen die Anmeldeinformationen (d. h. den eindeutigen persönlichen Namen) verwenden, die ihrem Abonnement in Intune zugeordnet sind.
@@ -75,6 +80,6 @@ Wenn Benutzeraffinität erforderlich ist, muss vor der Registrierung des Geräts
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
