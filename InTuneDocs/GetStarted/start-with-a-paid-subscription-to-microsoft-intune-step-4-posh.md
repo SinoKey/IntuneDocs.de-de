@@ -67,6 +67,6 @@ Gratulation! Sie haben Schritt 4 der Kurzanleitung *Erste Schritte mit Intune* 
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
