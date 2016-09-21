@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 005992d7d763b67db4d65aa30f19a209f82e3811
+ms.sourcegitcommit: 4386e9c545c3427060478e0fb3482074a8c1d5a0
+ms.openlocfilehash: ba1869e63d9c9e83199ecfde312129c548dd5f07
 
 
 ---
@@ -29,7 +29,7 @@ Wenn Sie Ihr Gerät zurücksetzen, wird es im Unternehmensportal nicht mehr aufg
 
 So setzen Sie Ihr Gerät zurück:
 
-1.  Öffnen Sie die [Unternehmensportalwebsite](http://portal.manage.microsoft.com), und tippen Sie auf das Gerät, das Sie zurücksetzen möchten.
+1.  Öffnen Sie die [Unternehmensportal-Website](http://portal.manage.microsoft.com), und tippen Sie auf das Gerät, das Sie zurücksetzen möchten.
 
 2.  Tippen Sie auf **Zurücksetzen**.
 
@@ -41,11 +41,10 @@ Ihr Gerät wurde zurückgesetzt.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
-### Weitere Informationen:
-[Verwenden der Intune-Unternehmensportal-Website](using-the-intune-company-portal-website.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO1-->
 
 

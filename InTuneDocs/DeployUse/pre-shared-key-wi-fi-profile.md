@@ -3,7 +3,7 @@ title: "WLAN über PSK | Microsoft Intune"
 description: "Erstellen Sie anhand der benutzerdefinierten Konfiguration ein WLAN-Profil mit einem vorinstallierten Schlüssel."
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: afdd0c3569c0c294a9bef47755de2d9e77e7507d
+ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
+ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
 
 
 
@@ -22,11 +22,11 @@ ms.openlocfilehash: afdd0c3569c0c294a9bef47755de2d9e77e7507d
 # Erstellen eines WLAN-Profils über einen vorinstallierten Schlüssel
 Hier wird erläutert, wie Sie anhand der **benutzerdefinierten Konfiguration** von Intune ein WLAN-Profil mit einem vorinstallierten Schlüssel erstellen. Dieses Thema umfasst außerdem ein Beispiel für die Erstellung eines EAP-basierten WLAN-Profils.
 
-Hinweis:
+> [!NOTE]
 -   Möglicherweise ist es für Sie einfacher, den Code von einem Computer zu kopieren, der eine Verbindung mit dem jeweiligen Netzwerk herstellt, wie unten beschrieben.
 - Bei Android haben Sie auch die Möglichkeit, diesen von Johnathon Biersack bereitgestellten [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) zu verwenden.
 -   Sie können mehrere Netzwerke und Schlüssel hinzufügen, indem Sie weitere OMA-URI-Einstellungen hinzufügen.
--  Verwenden Sie für iOS den Apple Configurator auf einer Mac-Station, um das Profil zu konfigurieren. Verwenden Sie alternativ diesen [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/), der von Johnathon Biersack bereitgestellt wird.
+-  Verwenden Sie für iOS den Apple Configurator auf einer Mac-Station, um das Profil einzurichten. Verwenden Sie alternativ diesen [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/), der von Johnathon Biersack bereitgestellt wird.
 
 
 1.  Um ein WLAN-Profil mit einem vorinstallierten Schlüssel für Android oder Windows oder ein EAP-basiertes WLAN-Profil zu erstellen, wählen Sie beim Erstellen einer Richtlinie statt eines WLAN-Profils die Option **Benutzerdefinierte Konfiguration** für die jeweilige Geräteplattform aus.
@@ -40,15 +40,27 @@ Hinweis:
 
    c.   **Datentyp**: Legen Sie diesen auf "String(XML)" fest.
 
-   d.   **OMA-URI**: ./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
+   d.   **OMA-URI**:
 
-Hinweis: Stellen Sie sicher, dass Sie den Punkt am Anfang eingeben.
+    - **Für Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+    - **Für Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-SSID steht für die SSID, für die Sie die Richtlinie erstellen. Beispiel:
-`./Vendor/MSFT/Wi-Fi/Profile/Hotspot-1/Settings`
+    > [!NOTE]
+Stellen Sie sicher, dass Sie den Punkt am Anfang eingeben.
 
-  e.    Feld „Wert“: Hier fügen Sie Ihren XML-Code ein. Hier sehen Sie ein Beispiel. Die einzelnen Werte sollten an Ihre Netzwerkeinstellungen angepasst werden. Einige Hinweise finden Sie im Kommentarabschnitt des Codes.
+    SSID steht für die SSID, für die Sie die Richtlinie erstellen. Beispiel:
+    `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
+  e. **Wertfeld** Hier fügen Sie Ihren XML-Code ein. Hier sehen Sie ein Beispiel. Die einzelnen Werte sollten an Ihre Netzwerkeinstellungen angepasst werden. Einige Hinweise finden Sie im Kommentarabschnitt des Codes.
+4. Wählen Sie **OK** aus, speichern Sie, und stellen Sie anschließend die Richtlinie bereit.
+
+    > [!NOTE]
+Diese Richtlinie kann nur für Benutzergruppen bereitgestellt werden.
+
+Wenn sich die einzelnen Geräte das nächste Mal anmelden, wird die Richtlinie angewendet, und auf dem Gerät wird ein WLAN-Profil erstellt. Das Gerät kann automatisch eine Verbindung mit dem Netzwerk herstellen.
+## Android- oder Windows-WLAN-Profil
+
+Hier sehen Sie ein Beispiel für den XML-Code eines Android- oder Windows-WLAN-Profils:
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -170,25 +182,23 @@ Hier sehen Sie ein Beispiel für den XML-Code eines EAP-basierten WLAN-Profils:
       </MSM>
     </WLANProfile>
 
-4.  Klicken Sie auf „OK“, speichern Sie die Richtlinie, und stellen Sie sie dann bereit.
-HINWEIS. Diese Richtlinie kann nur für Benutzergruppen bereitgestellt werden.
-
-Wenn sich die einzelnen Geräte das nächste Mal anmelden, wird die Richtlinie angewendet, und auf dem Gerät wird ein WLAN-Profil erstellt. Das Gerät kann automatisch eine Verbindung mit dem Netzwerk herstellen.
 ## Erstellen der XML-Datei aus einer vorhandenen WLAN-Verbindung
 Sie können die XML-Datei auch aus einer vorhandenen WLAN-Verbindung erstellen:
-1.     Öffnen Sie auf einem Computer, der mit dem WLAN verbunden ist oder vor kurzem damit verbunden war, den folgenden Ordner: „C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}“. Es wird empfohlen, einen Computer zu verwenden, der nicht mit allzu vielen WLANs verbunden ist, weil Sie die einzelnen Profile durchsuchen müssen, um das richtige zu finden.
+1. Öffnen Sie auf einem Computer, der mit dem WLAN verbunden ist oder vor kurzem damit verbunden war, den folgenden Ordner: „C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}“.
+
+    Es wird empfohlen, einen Computer zu verwenden, der nicht mit allzu vielen WLANs verbunden ist, weil Sie die einzelnen Profile durchsuchen müssen, um das richtige zu finden.
 3.     Durchsuchen Sie die XML-Dateien, um die Datei mit dem richtigen Namen zu finden.
-4.     Wenn Sie die richtige XML-Datei gefunden haben, kopieren Sie den XML-Code in das Feld „Daten“ auf der Seite mit den OMA-URI-Einstellungen.
+4.     Nachdem Sie die richtige XML-Datei gefunden haben, kopieren Sie den XML-Code in das Feld „Daten“ auf der Seite mit den OMA-URI-Einstellungen.
 
 ## Bereitstellen der Richtlinie
 
-1.  Wählen Sie im Arbeitsbereich **Richtlinie** die Richtlinie aus, die Sie bereitstellen möchten, und klicken Sie dann auf **Bereitstellung verwalten**.
+1.  Wählen Sie im Arbeitsbereich **Richtlinie** die Richtlinie aus, die Sie bereitstellen möchten, und wählen Sie dann **Bereitstellung verwalten** aus.
 
 2.  Führen Sie im Dialogfeld **Bereitstellung verwalten** folgende Schritte aus:
 
-    -   **Zum Bereitstellen der Richtlinie**: Wählen Sie mindestens eine Gruppe aus, für die Sie die Richtlinie bereitstellen möchten, und klicken Sie auf **Hinzufügen** &gt; **OK**.
+    -   **So stellen Sie die Richtlinie bereit**: Wählen Sie mindestens eine Gruppe aus, für die Sie die Richtlinie bereitstellen möchten, und klicken Sie auf **Hinzufügen** &gt; **OK**.
 
-    -   **Wenn Sie das Dialogfeld schließen möchten, ohne die Richtlinie bereitzustellen:** Klicken Sie auf **Abbrechen**.
+    -   **So schließen Sie das Dialogfeld, ohne die Richtlinie bereitzustellen**: Klicken Sie auf **Abbrechen**.
 
 Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informationen zur Bereitstellung im unteren Teil der Richtlinienliste anzeigen.
 
@@ -197,6 +207,6 @@ Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informa
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

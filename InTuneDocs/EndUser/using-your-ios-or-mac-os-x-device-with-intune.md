@@ -14,16 +14,16 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: 83564abcfcbb6597656e19031e5af1c7d7a3252d
+ms.sourcegitcommit: 20101b6c65bcab413441e16b3ac6a08a982e6a28
+ms.openlocfilehash: 3794a610996f5001e52f4d19d4cdafd849de3455
 
 
 ---
 
 # Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune
 
-Dieser Artikel enthält Links zu allen Aufgaben, die Endbenutzer auf ihren von Intune verwalteten Geräten durchführen können. IT-Administratoren können auf diese Informationen verweisen, um die Schritte anzuzeigen, die Benutzer zum Durchführen einer Vielzahl von Aufgaben befolgen, die in Kategorien gruppiert werden: 
-- Installation der Unternehmensportal-App und Intune-Registrierung 
+Dieser Artikel enthält Links zu allen Aufgaben, die Endbenutzer auf ihren von Intune verwalteten Geräten durchführen können. IT-Administratoren können auf diese Informationen verweisen, um die Schritte anzuzeigen, die Benutzer zum Durchführen einer Vielzahl von Aufgaben befolgen müssen, die in Kategorien gruppiert werden:
+- Installation der Unternehmensportal-App und Intune-Registrierung
 - Verwaltungsaufgaben nach der Registrierung
 - Kompatibilitätsprobleme
 
@@ -64,6 +64,6 @@ Die Informationen in diesem Abschnitt helfen Ihnen beim Beheben von Problemen, d
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 
