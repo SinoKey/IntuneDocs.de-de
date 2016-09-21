@@ -13,38 +13,27 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c162e2a885887d0aa69da2a4cec55c7737bccd1
-ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 8ceeca6735267ab66ab14e72570ace3dc8a9b524
 
 
 ---
 
-# Installieren des Windows-PC-Clients mit Microsoft Intune
-Befolgen Sie diese Anleitung zum Verwalten Ihrer Windows-PCs durch die Microsoft Intune-Clientsoftware.
+# Installieren des Intune-Softwareclients auf Windows-PCs
+Windows-PCs können mithilfe der Installation der Intune-Clientsoftware registriert werden. Die Intune-Clientsoftware kann auf folgenden Wegen installiert werden:
 
-## Vorbereitung
-Bevor Sie mit dem Installieren der Intune-Clientsoftware beginnen, lesen Sie das Thema [Lösen von Konflikten mit Gruppenrichtlinienobjekten und Microsoft Intune-Richtlinien](resolve-gpo-and-microsoft-intune-policy-conflicts.md), um zu erfahren, welche Voraussetzungen erfüllt sein müssen, um den Client ordnungsgemäß zu installieren. Fahren Sie dann mit den vorliegenden Anleitungen fort.
+- manuell
+- mithilfe von Gruppenrichtlinien
+- als Include in einem Datenträgerimage
+- Benutzerinstallation
 
-## Installieren des Clients
-Führen Sie die folgenden Schritte aus, um den Client zu installieren:
+## Herunterladen der Intune-Clientsoftware
 
--   [So laden Sie die Clientsoftware herunter](#to-download-the-client-software)
-
-Verwenden Sie dann mindestens eine der folgenden Methoden, um den Client zu installieren:
-
--   [So stellen Sie die Clientsoftware manuell bereit](#to-manually-deploy-the-client-software)
-
--   [So stellen Sie die Clientsoftware mithilfe von Gruppenrichtlinien automatisch bereit](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [Installieren der Microsoft Intune-Clientsoftware als Teil eines Betriebssystemabbilds](#install-the-microsoft-intune-client-software-as-part-of-an-image)
-
-Wenn ein Computer nicht mehr mit Intune verwaltet werden soll, können Sie ihn abkoppeln. Hierbei wird auch die Clientsoftware vom Computer entfernt. Weitere Informationen finden Sie unter [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
-
-### So laden Sie die Clientsoftware herunter
+Alle Methoden, bis auf die eigenhändige Installation der Intune-Clientsoftware von Benutzern, erfordern einen Softwaredownload für die Bereitstellung.
 
 1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Admin** &gt; **Download der Clientsoftware**.
 
-  ![Herunterladen des Intune-PC-Clients](./media/pc-SA-client-download.png)
+  ![Herunterladen des Intune-PC-Clients](../media/pc-sa-client-download.png)
 
 2.  Klicken Sie auf der Seite **Download der Clientsoftware** auf **Clientsoftware herunterladen**, und speichern Sie das Paket **Microsoft_Intune_Setup.zip** mit der Software an einem sicheren Ort in Ihrem Netzwerk.
 
@@ -56,14 +45,14 @@ Wenn ein Computer nicht mehr mit Intune verwaltet werden soll, können Sie ihn a
     > [!IMPORTANT]
     > Sie dürfen die extrahierte Datei **ACCOUNTCERT** weder umbenennen noch entfernen, da sonst die Installation der Clientsoftware misslingt.
 
-### So stellen Sie die Clientsoftware manuell bereit
+## Manuelle Bereitstellung
 
 1.  Navigieren Sie auf einem Computer zum Ordner, in dem sich die Installationsdateien der Clientsoftware befinden, und führen Sie dann **Microsoft_Intune_Setup.exe** aus, um die Clientsoftware zu installieren.
 
     > [!NOTE]
     > Der Installationsstatus wird angezeigt, wenn Sie mit dem Mauszeiger auf das Symbol in der Taskleiste des Clientcomputers zeigen.
 
-### So stellen Sie die Clientsoftware mithilfe von Gruppenrichtlinien automatisch bereit
+## Bereitstellung mithilfe von Gruppenrichtlinien
 
 1.  Führen Sie im Ordner, der die Dateien **Microsoft_Intune_Setup.exe** und **MicrosoftIntune.accountcert** enthält, den folgenden Befehl aus, um die Windows Installer-basierten Installationsprogramme für 32-Bit- und 64-Bit-Computer zu extrahieren:
 
@@ -80,7 +69,7 @@ Wenn ein Computer nicht mehr mit Intune verwaltet werden soll, können Sie ihn a
 
     Weitere Informationen zum automatischen Bereitstellen von Software mithilfe von Gruppenrichtlinien finden Sie in Ihrer Windows Server-Dokumentation.
 
-### Installieren der Microsoft Intune-Clientsoftware als Teil eines Betriebssystemabbilds
+## Installation als Teil eines Images
 Sie können die Intune-Clientsoftware als Teil eines Betriebssystemabbilds auf Computern installieren. Verwenden Sie dazu die folgende Beispielvorgehensweise als Basis:
 
 1.  Kopieren Sie die Clientinstallationsdateien **Microsoft_Intune_Setup.exe** und **MicrosoftIntune.accountcert** in den Ordner **%Systemdrive%\Temp\Microsoft_Intune_Setup** auf dem Referenzcomputer.
@@ -109,6 +98,12 @@ Wenn der Zielcomputer nach Beenden von Windows Setup neu gestartet wird, wird de
 Bei der Ausführung dieser Aufgabe zur automatischen Registrierung zum nächsten geplanten Zeitpunkt prüft die Aufgabe das Vorhandensein des Registrierungswerts **WindowsIntuneEnrollPending** und versucht, den Ziel-PC bei Intune zu registrieren. Sollte die Registrierung aus einem beliebigen Grund fehlschlagen, wird die Registrierung beim nächsten Ausführen der Aufgabe erneut versucht. Die Wiederholungen werden in einem Zeitraum von einem Monat ausgeführt.
 
 Die Aufgabe zur automatischen Intune-Registrierung, der Registrierungswert **WindowsIntuneEnrollPending** und das Kontozertifikat werden vom Zielcomputer gelöscht, sobald die Registrierung erfolgreich war oder ein Monat vergangen ist.
+
+## Einweisen von Benutzern in die eigenständige Registrierung
+
+Benutzer können die Intune-Clientsoftware über [http://portal.manage.microsoft.com](http://portal..manage.microsoft.com) installieren. Wenn das Webportal erkennt, dass es sich bei dem Gerät um einen Windows-PC handelt, fordert es dazu auf, den PC durch Herunterladen des Intune-Softwareclients zu registrieren. Nach dem Herunterladen können Benutzer die Software installieren, um ihren PC über Intune verwalten zu lassen.
+
+![Intune Portal prompting to download the Intune software client](../media/software-client-download.png)
 
 ## Überwachen und Überprüfen der erfolgreichen Clientbereitstellung
 Verwenden Sie eins der folgenden Verfahren, um die erfolgreiche Clientbereitstellung zu überwachen und zu überprüfen.
@@ -139,6 +134,6 @@ Verwenden Sie eins der folgenden Verfahren, um die erfolgreiche Clientbereitstel
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

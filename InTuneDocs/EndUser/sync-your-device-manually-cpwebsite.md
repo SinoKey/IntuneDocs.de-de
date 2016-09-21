@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
 
 
 ---
@@ -23,7 +23,9 @@ ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
 
 # Manuelles Synchronisieren Ihres Geräts über die Unternehmensportalwebsite
 
-Wenn die App-Installation bei Ihnen zu lange dauert, können Sie versuchen, Ihr Gerät manuell zu synchronisieren. Dies kann die Installation beschleunigen. Befolgen Sie die nachstehenden Anweisungen, die dem Typ Ihres Geräts oder der Windows-Version entsprechen, die Sie verwenden. Das Beschleunigen der App-Installation mithilfe der Synchronisierung ist nur mit den unten aufgelisteten Versionen möglich.
+Wenn die App-Installation oder ein anderer Task bei Ihnen zu lange dauert, können Sie versuchen, Ihr Gerät manuell zu synchronisieren. Dies kann die Installation oder den Task beschleunigen. Verwenden Sie die nachstehenden Anweisungen, die Ihrem Gerät entsprechen. 
+
+Die Synchronisierungsfunktion funktioniert nur für die nachstehend aufgelisteten Funktionen.
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
@@ -32,6 +34,6 @@ Wenn die App-Installation bei Ihnen zu lange dauert, können Sie versuchen, Ihr 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -1,35 +1,37 @@
 ---
 title: "Verwenden der Remotesperre und Zurücksetzen der Kennung | Microsoft Intune"
-description: 
+description: "Intune enthält Funktionen zum Remotesperren und zum Zurücksetzen der Kennung."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
+ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: 6d9b79a09eef2546d78a19e061ba5cc3f24f645c
-ms.openlocfilehash: 34379881b8299a2e3f9886b14b6d83e9dfe83373
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: 0b52bd8360f11e226674aefe80a578c451c2679d
 
 ---
 # Geräteschutz durch Remotesperre und Zurücksetzen der Kennung
 Microsoft Intune enthält Funktionen zum Remotesperren und zum Zurücksetzen der Kennung.
 
 ## Remotesperrung eines Geräts
-Wenn ein Benutzer sein Gerät verliert, können Sie es remote sperren. In der folgenden Tabelle ist die Funktionsweise der Remotesperrung auf verschiedenen mobilen Plattformen aufgeführt.
+Wenn ein Benutzer sein Gerät verliert, können Sie es remote sperren. In der folgenden Tabelle ist die Funktionsweise der Remotesperrung auf verschiedenen mobilen Plattformen aufgeführt. Die Remotesperre wird nicht unterstützt
 
 |Plattform|Remotesperre|
 |------------|---------------|
 |iOS|Unterstützt|
 |Android|Unterstützt|
-|Windows 10 Mobile|Unterstützt|
+|Windows 10 und Windows 10 Mobile|Unterstützt|
 |Windows Phone 8 und Windows Phone 8.1|Unterstützt|
 |Windows RT 8.1 und Windows RT|Unterstützt, wenn der aktuelle Benutzer des Geräts derjenige ist, der das Gerät registriert hat.|
-|Windows 8.1|Unterstützt, wenn der aktuelle Benutzer des Geräts derjenige ist, der das Gerät registriert hat.|
+|Windows 8.1|Unterstützt, wenn der aktuelle Benutzer des Geräts derjenige ist, der das Gerät registriert hat.|
 
+Die Remotesperre wird für Windows-PCs, die mit dem Intune-Softwareclient registriert wurden, nicht unterstützt.
 
 ### So sperren Sie ein mobiles Gerät remote über die Intune-Konsole
 
@@ -52,7 +54,9 @@ Wenn ein Benutzer seine Kennung vergisst, können Sie die Kennung von einem Ger�
 |Windows 10 Mobile|Unterstützt|
 |Windows Phone 8 und Windows Phone 8.1|Unterstützt|
 |Windows RT 8.1 und Windows RT|Nicht unterstützt|
-|Windows 8.1|Nicht unterstützt|
+|Windows 8.1|Nicht unterstützt|
+
+Das Zurücksetzen der Kennung wird für Windows-PCs, die mit dem Intune-Softwareclient registriert wurden, nicht unterstützt.
 
 ### So setzen Sie eine Kennung zurück
 
@@ -72,6 +76,6 @@ Wenn ein Benutzer seine Kennung vergisst, können Sie die Kennung von einem Ger�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

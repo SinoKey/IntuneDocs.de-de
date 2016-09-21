@@ -4,7 +4,7 @@ description: "Anhand der Informationen in diesem Thema können Sie entscheiden, 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a8d2702037b7b96b454078e991dea429143e733
-ms.openlocfilehash: aa081dd17c0067082e314ac45d2a52792f66b8d6
+ms.sourcegitcommit: 06a9c78300d7ff384299957102114c69c43a1ad5
+ms.openlocfilehash: 06616ba43069cc6e81692a4c638f2bf8b072fdc1
 
 
 ---
 
-# Referenz zu Microsoft Intune-Richtlinien
+# Referenz zur Microsoft Intune-Konfigurationsrichtlinie
 
 Anhand der Informationen in diesem Thema können Sie entscheiden, welche Microsoft Intune-Konfigurationsrichtlinie Sie zum Verwalten Ihrer Geräte benötigen.
 
@@ -74,7 +74,7 @@ Gilt nur für Windows Phone und registrierte Windows-Geräte.
 |---------------|------------------------|
 |**Benutzerdefinierte Konfiguration (Windows 10 Desktop und Mobile und höher)**|Bereitstellen von OMA-URI-Einstellungen, die zum Steuern von Gerätefunktionen verwendet werden können. Dies ist hilfreich, wenn die benötigte Einstellung nicht in einer Konfigurationsrichtlinie für mobile Geräte verfügbar ist.<br />    Weitere Informationen finden Sie unter [Windows 10-Richtlinieneinstellungen in Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md).|
 |**Benutzerdefinierte Konfiguration (Windows Phone 8.1 und höher)**|Bereitstellen von OMA-URI-Einstellungen, die zum Steuern von Gerätefunktionen verwendet werden können. Dies ist hilfreich, wenn die benötigte Einstellung nicht in einer Konfigurationsrichtlinie für mobile Geräte verfügbar ist.<br /><br />Weitere Informationen finden Sie unter [Windows Phone 8.1-Richtlinieneinstellungen in Microsoft Intune](windows-phone-8-1-policy-settings-in-microsoft-intune.md).|
-|**Upgraderichtlinie für die Edition (Windows 10 Desktop und höher)**<br><br>**Upgraderichtlinie für die Edition (Windows 10 Holographic und höher)**|Konfigurieren und Bereitstellen von Richtlinien mit Lizenz- oder Product Key-Informationen zum Aktualisieren von Windows 10-Geräten auf eine neuere Version.<br><br>Weitere Informationen finden Sie unter [Einstellungen der Upgraderichtlinie für die Windows-Edition in Microsoft Intune](edition-upgrade-policy-settings-in-microsoft-intune.md).|  
+|**Upgraderichtlinie für die Edition (Windows 10 Desktop und höher)**<br><br>**Upgraderichtlinie für die Edition (Windows 10 Holographic und höher)**<br><br>**Upgraderichtlinie für die Edition (Windows 10 Mobile und höher)**|Konfigurieren und Bereitstellen von Richtlinien mit Lizenz- oder Product Key-Informationen zum Aktualisieren von Windows 10-Geräten auf eine neuere Version.<br><br>Weitere Informationen finden Sie unter [Einstellungen der Upgraderichtlinie für die Windows-Edition in Microsoft Intune](edition-upgrade-policy-settings-in-microsoft-intune.md).|  
 |**E-Mail-Profil (Windows Phone 8 und höher)**<br /><br />**E-Mail-Profil (Windows 10 Desktop und Windows 10 Mobile oder höher)**|Erstellen, Bereitstellen und Überwachen von Exchange ActiveSync-E-Mail-Einstellungen auf verwalteten Geräten. Auf diese Weise erhalten Benutzer Zugriff auf Unternehmens-E-Mails auf ihren persönlichen Geräten, ohne dafür ein Setup vornehmen zu müssen.<br /><br />Weitere Informationen finden Sie unter [Konfigurieren des Zugriffs auf Unternehmens-E-Mail mithilfe von E-Mail-Profilen in Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
 |**Allgemeine Konfiguration (Windows 10 Desktop und Mobile und höher)**|Konfigurieren der Sicherheits- und Funktionseinstellungen für registrierte mobile Geräte unter Windows 10 Desktop und Mobile.<br /><br />Weitere Informationen finden Sie unter [Windows 10-Richtlinieneinstellungen in Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md).|
 |**Allgemeine Konfiguration (Windows 10 Team und höher)**|Konfigurieren Sie die Gerätesicherheit und die Funktionseinstellungen für registrierte Windows 10 Team-Geräte (z. B. ein Surface Hub-Gerät).<br /><br />Weitere Informationen finden Sie unter [Einstellungen für Windows Team-Konfigurationsrichtlinie in Microsoft Intune](windows-team-configuration-policy-settings-in-microsoft-intune.md).|
@@ -104,25 +104,7 @@ Gilt nur für Windows Phone und registrierte Windows-Geräte.
 > [!IMPORTANT]
 Microsoft Intune bietet jetzt getrennte **Konfigurationsrichtlinien** für jede Geräteplattform, wobei diese Richtlinien die neuesten Einstellungen berücksichtigen, die Sie verwenden können. Sie können die Sicherheitsrichtlinie für mobile Geräte weiter nutzen, wobei alle vorhandenen Bereitstellungen weiterhin funktionieren. Sie sollten allerdings die Migration zu den neuen Konfigurationsrichtlinien so bald wie möglich planen.<br />Weitere Informationen finden Sie unter [Sicherheitsrichtlinieneinstellungen für mobile Geräte in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).|
 
-## Bedingter Zugriff und Kompatibilitätsrichtlinien
-
-### Bedingter Zugriff
-
-|Name der Richtlinie|Zweck|
-|---------------|------------------------|
-|**Exchange Online-Richtlinie**<br /><br />**Lokale Exchange-Richtlinie**|Verwalten des Zugriffs auf Microsoft Exchange-E-Mail auf Geräten, die nicht von Intune verwaltet werden oder nicht mit einer von Ihnen erstellten Richtlinie kompatibel sind.<br /><br />Weitere Informationen finden Sie unter [Beschränken des E-Mail-Zugriffs auf Exchange Online- und neue Exchange Online Dedicated-Umgebungen mit Intune](restrict-access-to-exchange-online-with-microsoft-intune.md).|
-|**SharePoint Online-Richtlinie**|Verwalten des Zugriffs auf SharePoint Online auf Geräten, die nicht von Intune verwaltet werden oder nicht mit einer von Ihnen erstellten Richtlinie kompatibel sind.<br /><br />Weitere Informationen finden Sie unter [Beschränken des Zugriffs auf SharePoint Online mit Microsoft Intune](restrict-access-to-sharepoint-online-with-microsoft-intune.md).|
-|**Skype for Business**|Verwalten des Zugriffs auf Skype for Business auf Geräten, die nicht von Intune verwaltet werden oder nicht mit einer von Ihnen erstellten Richtlinie kompatibel sind.<br /><br />Weitere Informationen finden Sie unter [Beschränken des Zugriffs auf Skype for Business mit Microsoft Intune](restrict-access-to-skype-for-business-online-with-microsoft-intune.md).|
-> [!NOTE]
-> Sie stellen Benutzern und Geräten keine bedingten Zugriffsrichtlinien bereit. Stattdessen konfigurieren Sie die benötigte Richtlinie und wenden sie auf alle Gruppen an, für die die Richtlinie gelten soll.
-
-### Kompatibilitätsrichtlinien
-
-|Name der Richtlinie|Zweck|
-|---------------|------------------------|
-|**Kompatibilitätsrichtlinien**|Definieren des Grads der Kompatibilität für Geräte und Melden nicht kompatibler Geräte. Diese Richtlinien werden mit bedingtem Zugriff verwendet, um Geräte einfacher zu bestimmen, die für Dienste gesperrt werden sollen.<br /><br />Weitere Informationen finden Sie unter [Gerätekompatibilitätsrichtlinien in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).|
-
-## Windows-PC-Verwaltung
+## Richtlinien für Windows-PCs, die vom Intune-Softwareclient verwaltet werden
 
 |Name der Richtlinie|Zweck|
 |---------------|------------------------|
@@ -136,6 +118,6 @@ Microsoft Intune bietet jetzt getrennte **Konfigurationsrichtlinien** für jede 
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

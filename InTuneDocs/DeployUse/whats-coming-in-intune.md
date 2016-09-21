@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d70a46d9c13aad1bc0a940836d83a99b93bb95e
-ms.openlocfilehash: 7f84ad1566431a7a72897750fadbc90cb56ec5ce
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: 0949172a7b8517b12fb46e8fd1f8a3cd70d93099
 
 
 ---
@@ -78,31 +78,9 @@ Zusätzlich zu Änderungen der Gruppenverwaltung **werden die folgende Funktione
 - Pivotieren mit Gruppen in Berichten
 <!--- TFS 1295329--->
 
-## Unternehmensportal
-
-### Feedbacklink vom Unternehmensportal zu Microsoft
-Auf der Unternehmensportal-Website können Endbenutzer auf einen neuen „Feedbacklink“ am unteren Seitenrand tippen, um Feedback zu ihren Erfahrungen mit der Website an Microsoft zu senden. Das gesammelte anonymisierte Feedback hilft Microsoft, die Benutzerfreundlichkeit der Unternehmensportal-Website zu verbessern.
-<!--- TFS 1313657--->
-
-### Hinzufügen von „Benachrichtigungen“ zum Unternehmensportal für Android
-Im September veröffentlichen wir ein Update zum Unternehmensportal für Android, mit dem auf der Startseite das neue Symbol **Benachrichtigungen** eingeführt wird. Beim Tippen auf dieses Symbol wird die Seite **Benachrichtigungen** aufgerufen, auf der für Ihre Endbenutzer alle Elemente angezeigt werden, die in der Unternehmensportal-App Aufmerksamkeit erfordern, z. B. Nichtkompatibilität, Registrierungsupdate und Registrierungsaktivierung. Wenn Sie auch die iOS-Unternehmensportal-App verwenden, sehen Sie die Benachrichtigungen bereits. Wenn die Seite **Benachrichtigungen** eingeführt wird, werden Sie die Seite **Unternehmenszugriff einrichten** nicht bei jedem Start bzw. jeder Fortsetzung des Unternehmensportals für Android sehen, solange das Gerät bereits registriert ist. Wir haben erfahren, dass viele von Ihnen Endbenutzeranleitungen erstellt haben, und würden eine vorherige Mitteilung schätzen, wenn Ihre Anleitung/Screenshots vielleicht aktualisiert werden müssen. Bitte aktualisieren Sie Ihre Dokumentation gemäß der anstehenden Änderung der Benutzeroberfläche. Aktualisierte Screenshots finden Sie hier: https://aka.ms/androidcpupdate.  
-
-### Verbesserungen für das Abrufen von Apps durch iOS-Endbenutzer
-Die folgenden Änderungen werden im September an den App-Kacheln in der Unternehmensportal-App für iOS vorgenommen, damit Benutzer für all ihre Apps an verschiedene Ansichten einer einzigen Stelle verwiesen werden: der Unternehmensportal-Website. Zurzeit verhindern Apple-Einschränkungen das Auflisten branchenspezifischer und verwalteter App Store-Apps in der Unternehmensportal-App, sodass Benutzer verschiedene Ansichten besuchen müssen, um all ihre Apps zu finden.
-
-- Die Kachel **Unternehmens-Apps** verweist derzeit auf eine Liste aller Apps auf der Registerkarte ALLE der Unternehmensportal-Website, und diese Funktion bleibt weiterhin bestehen. Der Name der Kachel ändert sich in **Alle Apps**.
-- Die Kachel **Andere Apps** verweist zurzeit auf eine Ansicht innerhalb der Unternehmensportal-App, in der alle Apps aufgeführt werden, deren Anzeige Apple der Unternehmensportal-App gestattet. Der Name der Kachel wird in **Ausgewählte Apps** geändert, und durch Tippen auf die Kachel gelangen Benutzer auf die Registerkarte AUSGEWÄHLTE der Unternehmensportal-Website.
--  Die Kachel **Kategorien** verweist zurzeit auf eine Ansicht innerhalb der Unternehmensportal-App, in der Kategorien von Apps aufgeführt werden. Der Name der Kachel wird nicht geändert, aber sie verweist jetzt auf die Registerkarte KATEGORIEN der Unternehmensportal-Website.
-Aktualisierte Screenshots finden Sie [hier](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
-<!---TFS 1317133--->
-
-### Aufforderung zur Installation der iOS-App „Managed Browser“, wenn IT-Experten diese Anforderung für eine App festlegen
-Wenn Sie einen Webclip so konfiguriert haben, dass er nur im verwalteten Browser geöffnet wird, und der verwaltete Browser ist auf einem Gerät nicht installiert, wird der Benutzer in der Septemberversion der iOS-Unternehmensportal-App von der Unternehmensportal-App auf dem Gerät aufgefordert, den verwalteten Browser zu installieren, damit der Webclip installiert werden kann. 
-<!---TFS 1228570--->
-
 ## Veraltete Dienste
 ### Unternehmensportal-Apps für Windows 8 und Windows Phone 8 gelten ab September 2016 als veraltet
-Ab September 2016 stellt Microsoft Intune die Unterstützung für die Microsoft Intune-Unternehmensportal-Apps für die Plattformen Windows Phone 8 und Windows 8 ein. Aktualisieren Sie die Geräte auf Windows 8.1 und Windows Phone 8.1, und nutzen Sie die entsprechenden Windows 8.1- und Windows Phone 8.1-Unternehmensportal-Apps, um weiterhin Apps an diese Geräte zu verteilen.
+Ab Oktober 2016 wird Microsoft Intune die Unterstützung für Windows 8- und Windows Phone 8-Unternehmensportal-Apps beenden. Microsoft Intune wird auch die Unterstützung für die Windows Phone 8-Plattform beenden. Daher werden Sie keine Windows Phone 8-Geräte mehr registrieren oder aktualisieren können. Sie können weiterhin Windows Phone 8 und Windows 8-Geräte verwalten, die bereits registriert sind. Aktualisieren Sie Windows Phone 8- und Windows 8-Geräte auf Windows Phone 8.1 und Windows 8.1, und nutzen Sie die entsprechenden Windows Phone 8.1- und Windows 8.1-Unternehmensportal-Apps, um weiterhin Apps an diese Geräte verteilen zu können.
 <!---TFS 1255391--->
 
 ### Adressierung benutzerdefinierter Zielgruppen mithilfe von Benachrichtigungsregeln entfernt
@@ -135,6 +113,6 @@ Details zu aktuellen Entwicklungen finden Sie unter [Neuheiten in Microsoft Intu
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -13,16 +13,16 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
+ms.sourcegitcommit: d0cc50bb5d79f4840afee7984cf3f58f6dd26dac
+ms.openlocfilehash: 8832235ffdc8cd0b5b3eec244315711cfa59e069
 
 
 ---
 
 # Verwenden Ihres Windows-Geräts mit Intune
 
-Dieser Artikel enthält Links zu allen Aufgaben, die Endbenutzer auf ihren von Intune verwalteten Geräten durchführen können. IT-Administratoren können auf diese Informationen verweisen, um die Schritte anzuzeigen, die Benutzer zum Durchführen einer Vielzahl von Aufgaben befolgen, die in Kategorien gruppiert werden: 
-- Installation der Unternehmensportal-App und Intune-Registrierung 
+Dieser Artikel enthält Links zu allen Aufgaben, die Benutzer auf ihren von Intune verwalteten Geräten durchführen können. IT-Administratoren können auf diese Informationen verweisen, um die Schritte anzuzeigen, die Benutzer zum Durchführen einer Vielzahl von Aufgaben befolgen, die wie folgt in Kategorien gruppiert werden:
+- Installation der Unternehmensportal-App und Intune-Registrierung
 - Verwaltungsaufgaben nach der Registrierung
 - Kompatibilitätsprobleme
 
@@ -47,7 +47,7 @@ Die Informationen in diesem Abschnitt helfen Ihnen bei Aktionen, die Sie nach de
 - [Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
 - [Manuelles Synchronisieren des Geräts](sync-your-device-manually-windows.md)
 
-## Beheben von Problemen mit Ihrem Gerät
+## So beheben Sie Probleme mit Ihrem Gerät
 
 Die Informationen in diesem Abschnitt helfen Ihnen beim Beheben von Problemen, die mit bei Intune registrierten Windows-Geräten auftreten können.
 
@@ -60,6 +60,6 @@ Die Informationen in diesem Abschnitt helfen Ihnen beim Beheben von Problemen, d
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

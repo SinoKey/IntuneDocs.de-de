@@ -13,8 +13,8 @@ ms.assetid: 24b8ecbf-7336-4543-8094-32688bda0b8f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: e1fe6b167b7d46f03472833bc1c3c19030f47bce
-ms.openlocfilehash: 498e1a68c2c87e57851e229d55e5054060affa81
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: fc2f95b0e780b42dbeab977c340f3b2b7c9881e5
 
 
 ---
@@ -25,7 +25,9 @@ Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmet
 ## **Werden Ihre unternehmenseigenen Geräte gemeinsam genutzt oder von dedizierten Benutzern verwendet?**
 
 > [!div class="button"]
-[Gemeinsam genutzt >](choose-how-to-enroll-devices4.md)   [Dediziert >](choose-how-to-enroll-devices6.md)
+[Freigegeben >](choose-how-to-enroll-devices4.md)
+> [!div class="button"]
+[Dediziert >](choose-how-to-enroll-devices6.md)
 
 - **Gemeinsam genutzte unternehmenseigene Geräte** – Diese Geräte werden nicht nur von einem einzelnen Benutzer verwendet und sind in der Regel nicht für den E-Mail-Zugriff konfiguriert. Dazu zählen beispielsweise Kiosk-Geräte oder aufgabenspezifische Geräte, die die Benutzer bei Bedarf einem Pool entnehmen und dann zurückgeben. Die empfohlenen Registrierungsmethoden hängen von der Geräteplattform ab.
 
@@ -36,6 +38,6 @@ Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmet
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO2-->
 
 

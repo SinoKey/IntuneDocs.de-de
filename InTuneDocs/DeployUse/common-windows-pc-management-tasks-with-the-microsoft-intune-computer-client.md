@@ -1,6 +1,6 @@
 ---
 title: Allgemeine Aufgaben zur Verwaltung von Windows-PCs | Microsoft Intune
-description: "Überprüfen Sie die Aufgaben in diesem Thema, um zu erfahren, wie Sie Computer verwalten, auf denen die Intune-PC-Clientsoftware ausgeführt wird."
+description: "Machen Sie sich mit den Aufgaben in diesem Thema vertraut, um zu erfahren, wie Sie Windows PCs verwalten, auf denen der Intune-Softwareclient ausgeführt wird."
 keywords: 
 author: NathBarn
 manager: angrobe
@@ -13,22 +13,24 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
-ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
 
 
 ---
 
-# Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient
-Überprüfen Sie die Aufgaben in diesem Thema, um zu erfahren, wie Sie Computer verwalten, auf denen die Intune-PC-Clientsoftware ausgeführt wird. Wenn Sie den Client noch nicht auf Ihren Computern installiert haben, finden Sie unter [Installieren des Windows-PC-Clients mit Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) weitere Informationen.
+# Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Intune-Softwareclient
+Machen Sie sich mit den Aufgaben in diesem Thema vertraut, um zu erfahren, wie Sie Computer verwalten, auf denen der Intune-Softwareclient ausgeführt wird. Wenn Sie den Client noch nicht auf Ihren Computern installiert haben, finden Sie weitere Informationen unter [Installieren des Windows-PC-Clients mit Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
 ## Verwenden von Richtlinien zum Vereinfachen der Verwaltung von PCs
-### Verwalten der Windows-Firewall
-Mit Richtlinien lässt sich die Verwaltung der Einstellungen der Windows-Firewall auf verwalteten Computern vereinfachen. Weitere Informationen finden Sie unter [Unterstützen des Schutzes von Windows-PCs mithilfe von Windows-Firewall-Richtlinien in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
+
+Windows-PCs, auf denen der Intune Softwareclient ausgeführt wird, können mithilfe der **Computerverwaltungsrichtlinien** von Intune verwaltet werden.
+
+![Richtlinienvorlage für Windows-PCs](../media/pc_policy_template.png)
 
 ### Verwalten des Microsoft Intune Center
-Das Microsoft Intune Center bietet Benutzern folgende Möglichkeiten:
+Benutzern wird der Intune-Softwareclient als das **Microsoft Intune Center** angezeigt. Das Microsoft Intune Center bietet Benutzern folgende Möglichkeiten:
 
 -   Abrufen von Anwendungen aus dem Unternehmensportal
 
@@ -49,11 +51,14 @@ Das Microsoft Intune Center ist auf allen verwalteten Computern installiert. Sie
 |**URL der Website**|URL der Supportwebsite<br /><br />Maximale Länge: 150 Zeichen|
 |**Hinweise**|Hinweis, der Benutzern angezeigt wird<br /><br />Maximale Länge: 120 Zeichen|
 
-### Verwalten der Einstellungen für Softwareupdates
-Mit Richtlinien können Sie die Einstellungen konfigurieren, mit deren Hilfe von verwalteten Computern nach Softwareupdates von Microsoft und Drittanbietern gesucht und diese heruntergeladen werden. Weitere Informationen finden Sie unter [Aktualisieren Ihrer Windows-PCs mit Softwareupdates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+## Einstellungen für Softwareupdates
+Mit Richtlinien können Sie die Einstellungen konfigurieren, mit deren Hilfe von verwalteten Computern nach Softwareupdates von Microsoft und Drittanbietern gesucht und diese heruntergeladen werden. Diese Updates enthalten keine Upgrades des Betriebssystems (d.h. keine  Updates von Windows 7 auf Windows 10 oder von Windows 10 auf eine höhere Version). Weitere Informationen finden Sie unter [Aktualisieren Ihrer Windows-PCs mit Softwareupdates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
-### Verwalten der Endpoint Protection-Einstellungen
+### Endpoint Protection-Einstellungen
 Konfigurieren Sie die Einstellungen für Endpoint Protection mithilfe von Richtlinien, und stellen Sie sie dann auf verwalteten Computern bereit. Dies schließt Überprüfungszeitpläne, nach dem Erkennen von Schadsoftware durchzuführende Schritte und mehr ein. Weitere Informationen finden Sie unter [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+
+## Windows-Firewall-Einstellungen
+Mit Richtlinien lässt sich die Verwaltung der Einstellungen der Windows-Firewall auf verwalteten Computern vereinfachen. Weitere Informationen finden Sie unter [Unterstützen des Schutzes von Windows-PCs mithilfe von Windows-Firewall-Richtlinien in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
 
 ## Anzeigen des Hardware- und Softwareinventars
 Durch Intune werden ausführliche Informationen zur Hardware und Software der verbreiteten Computer erfasst. In den nachfolgend beschriebenen Verfahren lernen Sie, wie Sie
@@ -113,17 +118,17 @@ Durch Intune werden ausführliche Informationen zur Hardware und Software der ve
 
 2.  Wählen Sie die Geräte aus, die Sie abkoppeln möchten, und wählen Sie dann **Abkoppeln/Zurücksetzen** aus.
 
-Zum erneuten Registrieren eines Computers bei Intune müssen Sie die Clientsoftware erneut auf dem Computer installieren. Gehen Sie hierzu vor wie im Thema [Installieren des Windows-PC-Clients mit Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) beschrieben.
+Installieren Sie zum erneuten Registrieren eines Computers bei Intune den Softwareclient erneut auf dem Computer. Gehen Sie hierzu vor wie unter [Installieren des Windows-PC-Clients mit Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) beschrieben.
 
 Wenn von einem Computer keine Verbindung mit Intune hergestellt werden kann, wird im Arbeitsbereich **Dashboard** eine Meldung angezeigt.
 
 Wenn Sie einen Computer abkoppeln, werden folgende Aktionen ausgeführt:
 
--   Der Computer wird aus dem Intune-Verwaltung und -Inventar entfernt, und die mit dem Computer verknüpfte Lizenz steht zur erneuten Verwendung zur Verfügung. Durch „Abkoppeln/Zurücksetzen“ wird der Intune-Softwareclient vom Computer entfernt, es werden aber keine Apps oder Daten gelöscht.
+-   Der Computer wird aus dem Intune-Verwaltung und -Inventar entfernt, und die mit dem Computer verknüpfte Lizenz steht zur erneuten Verwendung zur Verfügung. Durch „Abkoppeln/Zurücksetzen“ wird der Intune-Softwareclient vom Computer entfernt, es werden aber keine Apps oder Daten gelöscht. Diese Abkopplung führt keine vollständige Zurücksetzung auf dem Computer aus.
 
 -   Der Status des Computers wird nicht mehr in der Intune-Konsole angezeigt.
 
--   Die Clientsoftware wird von Intune vom Computer entfernt. Wenn der Computer nicht mit dem Intune-Dienst verbunden ist, wird die Clientsoftware nach dem nächsten Herstellen der Verbindung entfernt.
+-   Intune entfernt den Softwareclient von dem Computer. Wenn der Computer nicht mit Intune verbunden ist, wird der Softwareclient nach der nächsten Verbindungsherstellung entfernt.
 
 -   Microsoft Intune Endpoint Protection wird vom Computer entfernt. Wenn auf dem Computer eine andere Endpunktanwendung installiert ist und diese deaktiviert ist, kann sie unter Umständen nach dem Entfernen von Microsoft Intune Endpoint Protection wieder aktiviert werden, um sicherzustellen, dass Ihre Computer geschützt sind.
 
@@ -160,9 +165,9 @@ Damit Sie Software für einen Benutzer bereitstellen können, müssen Sie diesen
 > [!TIP]
 > Wenn Sie die Fähigkeit der Endbenutzer, sich mit Computern zu verknüpfen, einschränken möchten, aktivieren Sie die Option **Fähigkeit der Benutzer einschränken, sich mit Computern zu verknüpfen** in der Richtlinie **-Microsoft Intune-Agent-Einstellungen**.
 
-## Anfordern und Bereitstellen von Remoteunterstützung für Windows-PCs, die die Intune-Clientsoftware verwenden
+## Anfordern und Bereitstellen von Remoteunterstützung für Windows-PCs
 
-In Microsoft Intune können Sie die [TeamViewer](https://www.teamviewer.com)-Software verwenden, um PC-Benutzer remote zu unterstützen, bei denen die Intune-Clientsoftware ausgeführt wird. Sobald ein Benutzer Hilfe über das Microsoft Intune Center anfordert, werden Sie durch eine Warnung benachrichtigt, können die Anforderung annehmen und Unterstützung leisten.
+In Microsoft Intune können Sie die nicht im Lieferumfang inbegriffene [TeamViewer](https://www.teamviewer.com)-Software verwenden, um PC-Benutzer remote zu unterstützen, bei denen der Intune-Softwareclient ausgeführt wird. Sobald ein Benutzer Hilfe über das Microsoft Intune Center anfordert, werden Sie durch eine Warnung benachrichtigt, können die Anforderung annehmen und Unterstützung leisten.
 Diese Funktion ersetzt die vorhandene Funktion „Windows-Remoteunterstützung“ in Intune.
 
 
@@ -211,6 +216,6 @@ Wählen Sie im **TeamViewer**-Fenster im Menü **Aktionen** den Befehl **Sitzung
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO1-->
 
 

@@ -4,7 +4,7 @@ description: "Erstellen Sie Richtlinien, die Einstellungen und Funktionen auf iO
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
+ms.sourcegitcommit: cac39b60226939334032d954eb49d1417493b28d
+ms.openlocfilehash: 00e3a1b65c8475384bb05e64a4ef9f5d9de348ff
 
 
 ---
@@ -81,6 +81,8 @@ Alle Einstellungen gelten für iOS 7.1 und höher.
 |**Verschlüsselte Sicherung erforderlich**|Fordert an, dass Gerätesicherungen verschlüsselt werden.|
 |**Datensynchronisierung mit iCloud durch verwaltete Apps zulassen**|Ermöglicht es Apps, die Sie mit Intune verwalten, Daten mit dem iCloud-Konto des Benutzers zu synchronisieren.|
 |**Fortsetzung von Aktivitäten durch HandOff auf einem anderen Gerät zulassen**|Ermöglicht es dem Benutzer, die Arbeit, die er auf einem iOS-Gerät gestartet hat, auf einem anderen iOS- oder Mac OS X-Gerät fortzusetzen.|
+|**iCloud-Fotofreigabe zulassen**|Ermöglicht es dem Benutzer, die iOS-Funktion zur Fotofreigabe zuzulassen.|
+|**iCloud-Fotomediathek zulassen**|Ermöglicht es dem Benutzer, Fotos auf iCloud zu speichern. Wenn diese Funktion deaktiviert ist, werden bereits auf iCloud gespeicherten Fotos entfernt.|
 
 ### Anwendungseinstellungen für den Browser
 Alle Einstellungen gelten für iOS 7.1 und höher.
@@ -99,14 +101,14 @@ Alle Einstellungen gelten für iOS 7.1 und höher.
 
 |Name der Einstellung|Details|
 |----------------|-------|
-|**App Store zulassen**|Ermöglicht dem Gerät den Zugriff auf den App Store.|
+|**Installation von Apps zulassen**|Ermöglicht dem Gerät den Zugriff auf den App Store und die Installation von Apps.|
 |**Kennwort für den Zugriff auf den Anwendungsspeicher erforderlich**|Erzwingt die Kennworteingabe vom Benutzer, bevor er den App Store besuchen kann.|
 |**In-App-Einkäufe zulassen**|Zulassen, dass Einkäufe im Store in einer ausgeführten App erfolgen.|
 |**Verwaltete Dokumente in anderen nicht verwalteten Apps zulassen**|Hiermit wird die Anzeige von Unternehmensdokumenten in beliebigen Apps zugelassen.<br>**Beispiel:** Sie möchten verhindern, dass Benutzer Dateien aus der OneDrive-App in Dropbox speichern. Legen Sie für diese Einstellung „Nein“ fest. Sobald das Gerät die Richtlinie empfängt (z. B. nach einem Neustart), ist kein Speichern mehr möglich.|
 |**Nicht verwaltete Dokumente in anderen verwalteten Apps zulassen**|Hiermit wird die Anzeige beliebiger Dokumente in verwalteten Apps zugelassen.|
 |**Videokonferenz zulassen**|Lässt Videokonferenz-Apps wie FaceTime auf dem Gerät zu.|
-|**Nicht jugendfreie Inhalte im Medienstore zulassen**|Zulassen, dass das Gerät im Store auf nicht jugendfreie Inhalte zugreift.|
-|**Benutzern das Herunterladen von iBooks Store-Inhalt mit der Kennzeichnung „Erotik“ gestatten**|Gestattet dem Benutzer das Herunterladen von Büchern aus der Kategorie „Erotik“.|
+|**Benutzern das Einstufen von Autoren neuer Unternehmens-Apps als vertrauenswürdig gestatten**|Ermöglicht es dem Benutzer zu entscheiden, ob Apps, die nicht aus dem App Store heruntergeladen wurden, vertraut werden soll.|
+
 
 ### Anwendungseinstellungen für Spiele
 Alle Einstellungen gelten für iOS 7.1 und höher.
@@ -116,12 +118,23 @@ Alle Einstellungen gelten für iOS 7.1 und höher.
 |**Hinzufügung von Game Center-Freunden zulassen**|Ermöglichen, dass der Benutzer im Game Center Freunde hinzufügt.|
 |**Spielen für mehrere Spieler zulassen**|Ermöglichen, dass der Benutzer Spiele für mehrere Spieler auf dem Gerät spielt.|
 
+### Anwendungseinstellungen für Medieninhalte
+Alle Einstellungen gelten für iOS 7.1 und höher.
+
+|Name der Einstellung|Details|
+|----------------|-------|
+|**Bewertungsregion**|Wählen Sie eine Region aus, und wählen Sie die maximale Bewertung aus, die Benutzer für **Filme**, **Fernsehsendungen** und **Apps** herunterladen können.|
+|**Nicht jugendfreie Inhalte im Medienstore zulassen**|Zulassen, dass das Gerät im Store auf nicht jugendfreie Inhalte zugreift.|
+|**Benutzern das Herunterladen von iBooks Store-Inhalt mit der Kennzeichnung „Erotik“ gestatten**|Gestattet dem Benutzer das Herunterladen von Büchern aus der Kategorie „Erotik“.|
+
+
 ### Einstellungen für Gerätefunktionen der Hardware
 Alle Einstellungen gelten für iOS 7.1 und höher.
 
 |Name der Einstellung|Details|
 |----------------|-------|
 |**Kamera zulassen**|Gibt an, ob die Kamera des Geräts verwendet werden darf.|
+|**Handgelenkerkennung für gekoppelte Apple Watch-Geräte erzwingen**|Wenn diese Funktion aktiviert ist, zeigt die Apple Watch keine Benachrichtigungen an, wenn sie nicht getragen wird.|
 |**Kopplungskennwort für ausgehende AirPlay-Anforderungen erforderlich**|Erfordert ein Kopplungskennwort, wenn der Benutzer AirPlay zum Streamen von Inhalten auf andere Apple-Geräte verwendet.|
 
 ### Einstellungen für Gerätefunktionen von Mobiltelefonen
@@ -141,6 +154,7 @@ Alle Einstellungen gelten für iOS 7.1 und höher.
 |**Siri zulassen**|Verwendung des Sprach-Assistenten Siri auf dem Gerät zulassen.|
 |**Siri bei gesperrtem Gerät zulassen**|Verwendung des Sprach-Assistenten Siri auf dem Gerät zulassen, während das Gerät gesperrt ist.|
 |**Sprachwahl zulassen**|Die Verwendung des Features „Sprachwahlverfahren“ auf dem Gerät erlauben.|
+|**Airdrop für verwaltete Apps nicht zulassen**|Verhindert, dass verwaltete Apps Daten über  Airdrop senden.|
 
 
 ### Einstellungen für kompatible und nicht kompatible Anwendungen
@@ -214,24 +228,55 @@ Alle Einstellungen gelten für iOS 7.1 und höher.
 |----------------|--------------------|
 |**Aktivierungssperre zulassen, wenn sich das Gerät im überwachten Modus befindet**|Aktiviert die Aktivierungssperre auf überwachten iOS-Geräten.|
 
-### Überwachung
+### Einstellungen für den überwachten Modus
 Die folgenden Einstellungen können auf Geräten mit iOS 7.1 und höher konfiguriert werden, die sich im überwachten Modus befinden.
+
+### Einstellungen für den überwachten Modus für Gerätebeschränkungen
 
 |Name der Einstellung|Details|
 |----------------|--------------------|
 |**Kontoänderung zulassen**|Benutzern die Änderung der Kontoeinstellungen zulassen, z. B. der E-Mail-Konfigurationen.|
-|**AirDrop zulassen**|Lässt die Verwendung von AirDrop zum Austauschen von Inhalten mit Geräten in der Nähe zu.|
 |**Änderungen an Mobilfunk-Datennutzungseinstellungen für Apps zulassen**|Gestatten Sie Benutzern die Steuerung, welche Apps Mobilfunkdaten verwenden dürfen.|
-|**Abfrage von benutzergeneriertem Inhalt aus dem Internet durch Siri zulassen**|Erlaubt Siri den Zugriff auf Websites, um Fragen zu beantworten.|
-|**Zugriff auf iBooks Store zulassen**|Gestatten Sie Benutzern die Suche nach Büchern im iBooks-Store sowie den Kauf gefundener Bücher.|
-|**Änderungen an den Einstellungen der App „Meine Freunde suchen“ zulassen**|Gestatten Sie Benutzern das Ändern von Einstellungen für die App „Meine Freunde suchen“.|
 |**Verwendung der Option zum Löschen aller Inhalte und Einstellungen auf dem Gerät zulassen**|Erlaubt dem Benutzer die Verwendung der Option zum Löschen aller Inhalte und Einstellungen auf dem Gerät.|
 |**Aktivierung von Einschränkungen in den Geräteeinstellungen durch den Benutzer zulassen**|Erlaubt dem Benutzer das Konfigurieren von Geräteeinschränkungen (Jugendschutz) auf dem Gerät.|
-|**Zurückgeben von Ergebnissen aus dem Internet über die Spotlight-Suche zulassen**|Erlaubt der Spotlight-Suche, eine Verbindung mit dem Internet herzustellen, um weitere Ergebnisse bereitzustellen.|
-|**Verwendung der Game Center-App zulassen**|Gestatten Sie die Verwendung der Game Center-App.|
-|**Steuerung der Geräte, mit denen ein iOS-Gerät gekoppelt werden kann, durch Hostkopplung zulassen**|Lässt die Hostkopplung zu, damit der Administrator steuern kann, mit welchen Geräten ein iOS 7-Gerät gekoppelt werden kann.|
+|**Steuerung der Geräte, mit denen ein iOS-Gerät gekoppelt werden kann, durch Hostkopplung zulassen**|Ermöglicht die Hostkopplung, damit der Administrator steuern kann, mit welchen Geräten ein iOS-Gerät gekoppelt werden kann.|
 |**Installation von Konfigurationsprofilen und Zertifikaten durch den Benutzer zulassen**|Ermöglicht dem Benutzer die Installation von Konfigurationsprofilen und Zertifikaten.|
+|**Änderung von Gerätenamen zulassen**|Ermöglicht es dem Benutzer, den Namen des Geräts zu ändern.|
+|**Änderung von Kennungen zulassen**|Ermöglicht das Hinzufügen, Ändern oder Entfernen des Gerätekennworts.|
+|**Apple Watch-Kopplung zulassen**|Ermöglicht die Gerätekopplung mit einer Apple Watch.|
+|**Änderung der Benachrichtigungseinstellungen zulassen**|Ermöglicht es dem Benutzer, die Benachrichtigungseinstellungen des Geräts zu ändern.|
+|**Änderung von Hintergrundbildern zulassen**|Ermöglicht es dem Benutzer, das Hintergrundbild auf dem Gerät zu ändern.|
+
+### Einstellungen für den überwachten Modus für Funktionsbeschränkungen
+
+|Name der Einstellung|Details|
+|----------------|--------------------|
+|**AirDrop zulassen**|Lässt die Verwendung von AirDrop zum Austauschen von Inhalten mit Geräten in der Nähe zu.|
+|**Abfrage von benutzergeneriertem Inhalt aus dem Internet durch Siri zulassen**|Erlaubt Siri den Zugriff auf Websites, um Fragen zu beantworten.|
+|**Siri-Filter für anstößige Ausdrücke verwenden**|Verhindert, dass Siri anstößige Ausdrücke diktiert oder verwendet.|
+|**Zurückgeben von Ergebnissen aus dem Internet über die Spotlight-Suche zulassen**|Erlaubt der Spotlight-Suche, eine Verbindung mit dem Internet herzustellen, um weitere Ergebnisse bereitzustellen.|
+|**Suche nach Wortdefinitionen zulassen**|Aktiviert die iOS-Funktion, mit der Sie ein Wort markieren und dessen Definition nachschlagen können.|
+|**Tastaturwortvorschläge zulassen**|Ermöglicht Tastaturwortvorschläge, die Wörter vorschlagen, die der Benutzer möglicherweise verwenden möchte.|
+|**Autokorrektur zulassen**|Ermöglicht dem Gerät die automatische Korrektur von falsch geschriebenen Wörter.|
+|**Rechtschreibprüfung über Tastatur zulassen**|Aktiviert die Rechtschreibprüfung des Geräts.|
+|**Tastaturkurzbefehle zulassen**|Ermöglicht die Verwendung von Tastaturkurzbefehlen.|
+
+### Einstellungen für den überwachten Modus für App-Beschränkungen
+
+|Name der Einstellung|Details|
+|----------------|--------------------|
+|**Änderung von Vertrauensstellungseinstellungen für Unternehmens-Apps zulassen**||
+|**Installation von Apps nur mit Apple Configurator und iTunes zulassen**||
+|**Automatische App-Downloads zulassen**||
+|**Änderungen an den Einstellungen der App „Meine Freunde suchen“ zulassen**|Gestatten Sie Benutzern das Ändern von Einstellungen für die App „Meine Freunde suchen“.|
+|**Zugriff auf iBooks Store zulassen**|Gestatten Sie Benutzern die Suche nach Büchern im iBooks-Store sowie den Kauf gefundener Bücher.|
 |**Verwendung der Nachrichten-App auf dem Gerät zulassen**|Gestatten Sie die Verwendung der Nachrichten-App zum Senden von SMS.|
+|**Verwendung von Podcasts zulassen**|Ermöglicht die Verwendung Podcast-App.|
+|**Verwendung des Music-Diensts zulassen**|Ermöglicht die Verwendung der Apple Music-App.|
+|**iTunes Radio-Dienst zulassen**|Ermöglicht die Verwendung der iTunes Radio-App.|
+|**Apple News zulassen**|Ermöglicht die Verwendung der Apple News-App.|
+|**Game Center zulassen**|Gestatten Sie die Verwendung der Game Center-App.|
+
 
 ### Einblenden oder Ausblenden von Apps
 
@@ -337,6 +382,6 @@ Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigur
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

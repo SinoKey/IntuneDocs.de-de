@@ -4,7 +4,7 @@ description: "Erläutert, wie Sie Benutzern Lizenzen für Ihr Intune-Abonnement 
 keywords: 
 author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,16 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: 82b972d9a34d545099321fd64230aae36be7022e
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: 564edd672052f41215294a9562101289f20128db
 
 
 ---
 
 # Verwalten von Intune-Lizenzen
-Bevor Benutzer sich für die Verwendung des Intune-Diensts anmelden oder ihre Geräte für die Verwaltung registrieren können, müssen Sie jedem Benutzer zunächst über das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) eine Lizenz für Ihr Intune-Abonnement zuweisen. Sobald eine Lizenz zugewiesen wurde, werden die Namen der Benutzer in der Intune-Verwaltungskonsole angezeigt. Benutzer können anschließend bis zu fünf Geräte registrieren.
+Bevor Benutzer sich für die Verwendung des Intune-Diensts anmelden oder ihre Geräte für die Verwaltung registrieren können, müssen Sie jedem Benutzer zunächst über das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) eine Lizenz für Ihr Intune-Abonnement zuweisen.
 
-Unternehmen, die die Enterprise Mobility Suite (EMS) von Microsoft verwenden, verfügen möglicherweise über Benutzer, die nur Azure Active Directory Premium- oder Intune-Dienste im EMS-Paket benötigen. Sie können einen oder mehrere Dienste mithilfe von [Azure Active Directory PowerShell-Cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) zuweisen. Weitere Informationen finden Sie unter [Verwalten von Intune-Lizenzen mithilfe von PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
+Unternehmen, die die Enterprise Mobility + Security (EMS) von Microsoft verwenden, verfügen möglicherweise über Benutzer, die nur Azure Active Directory Premium- oder Intune-Dienste im EMS-Paket benötigen. Sie können einen oder mehrere Dienste mithilfe von [Azure Active Directory PowerShell-Cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) zuweisen. Weitere Informationen finden Sie unter [Verwalten von Intune-Lizenzen mithilfe von PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
 
 ## So werden Intune-Lizenzen zugewiesen
 Wenn Benutzerkonten aus Ihrer lokalen Active Directory-Bereitstellung synchronisiert oder über das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) manuell zu Ihrem Clouddienstabonnement hinzugefügt werden, wird ihnen nicht automatisch eine Intune-Lizenz zugewiesen. Stattdessen muss ein Intune-Mandantenadministrator die Benutzerkonten später bearbeiten, um den betreffenden Benutzern über das Office 365-Portal eine Lizenz zuzuweisen.
@@ -42,8 +42,10 @@ Verwenden Sie das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=6
 
 3.  Das Benutzerkonto verfügt jetzt über die erforderlichen Berechtigungen, um den Dienst zu nutzen und Geräte für die Verwaltung zu registrieren.
 
+> [!NOTE] Benutzer werden in der Konsole angezeigt, sobald sie ein Gerät registriert haben. 
+
 ### Selektive Verwaltung von EMS-Benutzerlizenzen über PowerShell
-Unternehmen, die die Enterprise Mobility Suite (EMS) von Microsoft verwenden, verfügen möglicherweise über Benutzer, die nur Azure Active Directory Premium- oder Intune-Dienste im EMS-Paket benötigen. Sie können einen oder mehrere Dienste mithilfe von [Azure Active Directory PowerShell-Cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) zuweisen.
+Organisationen, die Microsoft Enterprise Mobility + Security (EMS, früher Enterprise Mobility Suite) verwenden, verfügen jedoch möglicherweise über Benutzer, die nur Azure Active Directory Premium- oder Intune-Dienste im EMS-Paket benötigen. Sie können einen oder mehrere Dienste mithilfe von [Azure Active Directory PowerShell-Cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) zuweisen.
 
 Um Benutzerlizenzen für EMS-Dienste selektiv zuzuweisen, öffnen Sie PowerShell als Administrator auf einem Computer, auf dem das [Azure Active Directory-Modul für Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) installiert ist. Sie können PowerShell auf einem lokalen Computer oder einem AD FS-Server installieren.
 
@@ -90,6 +92,6 @@ Gratulation! Sie haben Schritt 4 der Kurzanleitung *Erste Schritte mit Intune* 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
