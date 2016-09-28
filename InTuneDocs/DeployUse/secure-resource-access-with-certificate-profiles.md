@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4ff2d245586d4803aab62ffb51ac21bdb8e3669
-ms.openlocfilehash: 361e4d81b3d5dd807312a1c88cd9b5abaa5dc567
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: b5b0270468cbb1e5bbd2a3b4970329a467927cee
 
 
 ---
@@ -25,7 +25,7 @@ Wenn Sie Benutzern den Zugriff auf Unternehmensressourcen über VPN, WLAN oder E
 1. Stellen Sie sicher, dass die richtige Zertifikatinfrastruktur eingerichtet ist, wie unter [Konfigurieren der Zertifikatinfrastruktur für SCEP](configure-certificate-infrastructure-for-scep.md) und [Konfigurieren der Zertifikatinfrastruktur für PFX](configure-certificate-infrastructure-for-pfx.md) beschrieben.
 
 2. Installieren Sie auf jedem Gerät ein Stammzertifikat oder ein Zertifikat einer Zwischenzertifizierungsstelle, damit das Gerät die Rechtmäßigkeit Ihrer Zertifizierungsstelle erkennt. Zu diesem Zweck erstellen Sie ein **vertrauenswürdiges Zertifikatprofil** und stellen dieses bereit. Wenn Sie dieses Profil bereitstellen, wird das Stammzertifikat von den Geräten, die Sie mit Intune verwalten, angefordert und empfangen. Sie müssen für jede Plattform ein eigenes Profil erstellen. Das **vertrauenswürdige Zertifikatprofil** ist für folgende Plattformen verfügbar:
- -  iOS 7.1 und höher
+ -  iOS 8.0 und höher
  -  Mac OS X 10.9 und höher
  -  Android 4,0 und höher
  -  Windows 8.1 und höher
@@ -33,7 +33,7 @@ Wenn Sie Benutzern den Zugriff auf Unternehmensressourcen über VPN, WLAN oder E
 
 3. Erstellen Sie Zertifikatprofile, damit Geräte ein Zertifikat für die Authentifizierung des VPN-, WLAN- und E-Mail-Zugriffs anfordern, wie unter [Konfigurieren von Intune-Zertifikatprofilen](configure-intune-certificate-profiles.md) beschrieben. Sie können ein **PKCS #12-Zertifikatprofil (.PFX)** *oder* ein **SCEP-Zertifikatprofil** für Geräte auf diesen Plattformen erstellen und bereitstellen:
 
-  -  iOS 7.1 und höher
+  -  iOS 8.0 und höher
   -  Android 4,0 und höher
   -  Windows 10 (Desktop und Mobile) und höher
 
@@ -56,6 +56,6 @@ Sie müssen für jede Plattform ein eigenes Profil erstellen. Nachdem Sie das Pr
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

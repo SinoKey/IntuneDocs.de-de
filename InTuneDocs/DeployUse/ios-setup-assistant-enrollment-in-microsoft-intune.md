@@ -3,7 +3,7 @@ title: "Registrieren von iOS-Geräten mit dem Setup-Assistenten | Microsoft Intu
 description: "Registrieren von unternehmenseigenen iOS-Geräten mithilfe des Apple Configurator-Tools, um die Geräte auf die Werkseinstellungen zurückzusetzen und für die Ausführung des Setup-Assistenten vorzubereiten."
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
-ms.openlocfilehash: f36217aa5e691ea22c891c08d1d5b886726f0a9a
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: 45aa4511945ab4763dc0dc35baefe47887e561bb
 
 
 ---
@@ -24,7 +24,7 @@ Intune unterstützt die Registrierung unternehmenseigener iOS-Geräte mithilfe d
 
 
 ## Registrierung von iOS-Geräten bei Microsoft Intune über den Setup-Assistenten
-Mit dem Apple Configurator können Sie iOS-Geräte auf die Werkseinstellungen zurücksetzen und für die Einrichtung durch den neuen Benutzer des Geräts vorbereiten.  Bei dieser Methode muss das iOS über USB mit einem Mac-Computer verbunden werden, um die Registrierung beim Unternehmen einzurichten. Vorausgesetzt wird die Verwendung von Apple Configurator 2.0. Bei den meisten Szenarien ist es erforderlich, dass die auf das iOS-Gerät angewendete Richtlinie *Benutzeraffinität* einschließt, um das Intune-Unternehmensportal zu aktivieren.
+Mit dem Apple Configurator können Sie iOS-Geräte auf die Werkseinstellungen zurücksetzen und für die Einrichtung durch den neuen Benutzer des Geräts vorbereiten.  Bei dieser Methode muss das iOS über USB mit einem Mac-Computer verbunden werden, um die Registrierung beim Unternehmen einzurichten. Vorausgesetzt wird die Verwendung von Apple Configurator 2.0. Bei den meisten Szenarien ist es erforderlich, dass die auf das iOS-Gerät angewendete Richtlinie **Benutzeraffinität** einschließt, um das Intune-Unternehmensportal zu aktivieren.
 
 **Voraussetzungen**
 * [Aktiviert für die iOS-Registrierung](set-up-ios-and-mac-management-with-microsoft-intune.md) durch Installieren eines APNs-Zertifikats
@@ -38,8 +38,7 @@ Mit dem Apple Configurator können Sie iOS-Geräte auf die Werkseinstellungen zu
 
 2.  **Erstellen eines Profils für Geräte** Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Gruppe von Geräten. Wenn Sie dies noch nicht getan haben, erstellen Sie ein Registrierungsprofil für iOS-Geräte, die mit Apple Configurator registriert werden.
 
-    1.  Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) zu **Richtlinie** &gt; **Unternehmenseigene Geräte**, und wählen Sie dann **Hinzufügen...**.
-
+    1.  Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) zu **Richtlinie** &gt; **Unternehmensgeräteregistrierung**, und wählen Sie dann **Hinzufügen…**.
     ![Erstellen eines Geräteregistrierungsprofils](../media/pol-sa-corp-enroll.png)
 
     2.  Geben Sie die Details für die Geräteprofile ein:
@@ -50,14 +49,9 @@ Mit dem Apple Configurator können Sie iOS-Geräte auf die Werkseinstellungen zu
 
         -   **Registrierungsdetails**: Gibt an, wie Geräte registriert werden.
 
-            -   **Eingabeaufforderung für Benutzeraffinität**: Das Gerät kann während der ersten Installation einem Benutzer zugewiesen werden und dann berechtigt sein, auf Unternehmensdaten und E-Mail im Namen dieses Benutzers zuzugreifen. In den meisten Szenarien verwenden Sie im Setup-Assistenten die Option **Eingabeaufforderung für Benutzeraffinität**.
-            Dieser Modus unterstützt eine Reihe von Szenarien:
+            -   **Benutzeraffinität anfordern**: Das Gerät muss während der ersten Installation einem Benutzer zugewiesen werden und dann berechtigt sein, im Namen dieses Benutzers auf Unternehmensdaten und E-Mail zuzugreifen. **Benutzeraffinität** muss für DEP-verwaltete Geräte konfiguriert werden, die Benutzern gehören und das Unternehmensportal verwenden müssen (um z. B. Apps zu installieren).
 
-                -   **Persönliches firmeneigenes Gerät**: „Choose Your Own Device“ (CYOD) Ähnlich privaten oder persönlichen Geräten, aber der Administrator hat bestimmte Rechte, z. B. die Berechtigung zum Löschen, Zurücksetzen, Verwalten und Abmelden des Geräts. Der Benutzer des Geräts kann Apps installieren und hat die meisten anderen Berechtigungen für die Verwendung des Geräts, soweit diese nicht durch Verwaltungsrichtlinien gesperrt sind.
-
-                -   **Konto des Geräteregistrierungs-Managers**: Das Gerät wird mit einem speziellen Intune-Administratorkonto registriert. Es kann als privates Konto verwaltet werden, aber nur ein Benutzer, der die Anmeldeinformationen des Registrierungs-Managers kennt, kann Apps installieren, löschen, zurücksetzen, verwalten und das Gerät abmelden. Informationen zum Registrieren eines von mehreren Benutzern genutzten Geräts über ein gemeinsames Konto finden Sie unter [Registrieren von unternehmenseigenen Geräten mit dem Geräteregistrierungs-Manager in Microsoft Intune](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
-
-            -   **Keine Benutzeraffinität**: Für das Gerät sind keine Eingriffe durch Benutzer erforderlich. Verwenden Sie diese Zuweisung für Geräte, die Aufgaben ohne den Zugriff auf lokale Benutzerdaten ausführen. Apps, die eine Benutzerzuweisung erfordern, werden deaktiviert oder funktionieren nicht.
+            -   **Keine Benutzeraffinität**: Das Gerät ist keinem Benutzer zugeordnet. Verwenden Sie diese Zuweisung für Geräte, die Aufgaben ohne den Zugriff auf lokale Benutzerdaten ausführen. Apps, die eine Benutzerzugehörigkeit erfordern, einschließlich der Unternehmensportal-App, die für die Installation branchenspezifischer Apps verwendet, funktionieren nicht.
 
         -   **Gerätegruppen-Vorabzuweisung**: Alle Geräte, die mit diesem Profil bereitgestellt werden, gehören anfänglich zu dieser Gruppe. Sie können die Geräte nach der Registrierung erneut zuweisen.
 
@@ -121,26 +115,24 @@ Mit dem Apple Configurator können Sie iOS-Geräte auf die Werkseinstellungen zu
 
     3. Geben Sie den **Namen** und die **Registrierungs-URL** für den MDM-Server aus Schritt 6 oben ein. Geben Sie für die Registrierungs-URL die aus Intune exportierte Registrierungsprofil-URL ein. Klicken Sie auf **Weiter**.  
 
-       Wenn Sie eine Warnung zu Anforderungen eines vertrauenswürdigen Profils für App TV erhalten, können Sie die Option **Vertrauenswürdiges Profil** gefahrlos abbrechen, indem Sie das graue „X“ wählen. Sie können auch Ankerzertifikatwarnungen bedenkenlos ignorieren. Um den Vorgang fortzusetzen, wählen Sie **Weiter**, bis der Assistent abgeschlossen ist.
+       Wenn Sie eine Warnung mit dem Hinweis erhalten, dass die Server-URL nicht überprüft wird, können Sie die Warnung problemlos ignorieren. Um den Vorgang fortzusetzen, wählen Sie **Weiter**, bis der Assistent abgeschlossen ist.
 
-    4.  Wählen Sie im Bereich **Server** neben dem neuen Serverprofil die Option „Bearbeiten“. Stellen Sie sicher, dass die Registrierungs-URL genau mit der aus Intune exportierten URL übereinstimmt. Geben Sie die ursprüngliche URL ein, falls diese sich unterscheidet, und **speichern** Sie das aus Intune exportierte Registrierungsprofil.
-
-    5.  Verbinden Sie die mobilen iOS-Geräte über einen USB-Adapter mit dem Apple-Computer.
+    4.  Verbinden Sie die mobilen iOS-Geräte über einen USB-Adapter mit dem Apple-Computer.
 
         > [!WARNING]
         > Während des Registrierungsprozesses werden die Geräte auf Werkseinstellungen zurückgesetzt. Als bewährte Methode empfiehlt sich, das Gerät zurückzusetzen und einzuschalten. Beim Starten des Setup-Assistenten sollte auf Geräten der Begrüßungsbildschirm **Hallo** angezeigt werden.
 
-    6.  Wählen Sie **Vorbereiten**. Wählen Sie im Bereich **iOS-Gerät vorbereiten** die Option **Manuell** aus, und wählen Sie dann **Weiter**.
+    5.  Wählen Sie **Vorbereiten**. Wählen Sie im Bereich **iOS-Gerät vorbereiten** die Option **Manuell** aus, und wählen Sie dann **Weiter**.
 
-    7. Wählen Sie im Bereich **Beim MDM-Server registrieren** den erstellten Servernamen aus, und wählen Sie dann **Weiter**.
+    6. Wählen Sie im Bereich **Beim MDM-Server registrieren** den erstellten Servernamen aus, und wählen Sie dann **Weiter**.
 
-    8. Wählen Sie im Bereich **Geräte überwachen** den Grad der Überwachung aus, und wählen Sie dann **Weiter**.
+    7. Wählen Sie im Bereich **Geräte überwachen** den Grad der Überwachung aus, und wählen Sie dann **Weiter**.
 
-    9. Wählen Sie im Bereich **Organisation erstellen** die **Organisation** aus, oder erstellen Sie eine neue Organisation, und wählen Sie dann **Weiter**.
+    8. Wählen Sie im Bereich **Organisation erstellen** die **Organisation** aus, oder erstellen Sie eine neue Organisation, und wählen Sie dann **Weiter**.
 
-    10. Wählen Sie im Bereich **iOS-Setup-Assistenten konfigurieren** die Schritte aus, die dem Benutzer angezeigt werden, und wählen Sie dann **Vorbereiten**. Authentifizieren Sie sich, wenn Sie dazu aufgefordert werden, um die Vertrauenseinstellungen zu aktualisieren.  
+    9. Wählen Sie im Bereich **iOS-Setup-Assistenten konfigurieren** die Schritte aus, die dem Benutzer angezeigt werden, und wählen Sie dann **Vorbereiten**. Authentifizieren Sie sich, wenn Sie dazu aufgefordert werden, um die Vertrauenseinstellungen zu aktualisieren.  
 
-    11. Nach Abschluss der Vorbereitung des iOS-Geräts können Sie das USB-Kabel trennen.  
+    10. Nach Abschluss der Vorbereitung des iOS-Geräts können Sie das USB-Kabel trennen.  
 
 8.  **Verteilen von Geräten** Die Geräte sind nun für die Unternehmensregistrierung bereit. Schalten Sie die Geräte aus, und verteilen Sie sie an Benutzer. Beim Einschalten des Geräts wird der Setup-Assistent gestartet.
 
@@ -151,6 +143,6 @@ Mit dem Apple Configurator können Sie iOS-Geräte auf die Werkseinstellungen zu
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

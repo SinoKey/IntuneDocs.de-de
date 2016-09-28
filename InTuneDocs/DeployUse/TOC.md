@@ -56,7 +56,7 @@
 ## [Schützen von Geräten](protect-your-devices-with-microsoft-intune.md)
 ### [Remotesperre und Zurücksetzen der Kennung](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 ### [Schützen von Windows-Geräten mit MFA](protect-windows-devices-with-multi-factor-authentication.md)
-### [Steuern der Microsoft Passport-Einstellungen auf Geräten](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
+### [Steuern der Einstellungen von Windows Hello for Business](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Umgehen der Aktivierungssperre bei iOS](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Richtlinien zum Schutz von Windows-PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [Softwareupdates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
@@ -66,8 +66,9 @@
 ## [Abkoppeln von Geräten](retire-devices-from-microsoft-intune-management.md)
 
 ## [Hinzufügen von Apps](add-apps.md)
-### [Hinzufügen von Apps für mobile Geräte](add-apps-for-mobile-devices-in-microsoft-intune.md)
-### [Hinzufügen von Apps für Windows-PCs](add-apps-for-windows-pcs-in-microsoft-intune.md)
+### [Hinzufügen von Apps für registrierte Geräte](add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Hinzufügen von Apps für Intune-Client-PCs](add-apps-for-windows-pcs-in-microsoft-intune.md)
+#### [Verwalten von Lizenzverträgen für Intune-Client-PCs](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Bereitstellen von Apps](deploy-apps.md)
 ### [Bereitstellen von Apps auf Geräten und PCs](deploy-apps-in-microsoft-intune.md)
 ### [Überwachen von Apps](monitor-apps-in-microsoft-intune.md)
@@ -101,6 +102,11 @@
 #### [Beschränken des E-Mail-Zugriffs: Beispiele](restrict-email-access-example-scenarios.md)
 
 ### [Beschränken des Zugriffs auf Netzwerke (Cisco ISE)](restrict-access-to-networks.md)
+### [Einschränken des Zugriffs auf der Basis von Geräte-, Netzwerk- und Anwendungsrisiko](restrict-access-based-on-device-network-app-risk.md)
+#### [Einrichten von Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
+#### [Aktivieren von Lookout in Intune](enable-lookout-mtp-connection-in-intune.md)
+#### [Bereitstellen von Lookout for Work-Apps](configure-and-deploy-lookout-for-work-apps.md)
+#### [Aktivieren der Geräte-Kompatibilitätsrichtlinie zum Schutz vor Bedrohungen](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 ### [Schützen von App-Daten mit MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure-Portal für MAM-Richtlinien](azure-portal-for-microsoft-intune-mam-policies.md)
@@ -137,6 +143,6 @@
 # [Problembehandlung](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -13,14 +13,14 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d0e2b79a19dfce1541506bc1da89cb716a1d0af
-ms.openlocfilehash: c03c309e1e27a47b65a87aae8833b88680b0d8e8
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: 2b44779fdac0764a3e7a18f1c365050e9800f902
 
 
 ---
 
 # Unterstützen des Schutz von iOS-Geräten durch Umgehung der Aktivierungssperre für Microsoft Intune
-Microsoft Intune kann Sie beim Verwalten der iOS-Aktivierungssperre unterstützen, einem Feature der App „Mein iPhone suchen“ für iOS 7.1 und höher. Die Aktivierungssperre wird automatisch aktiviert, wenn ein Benutzer die App „Mein iPhone suchen“ auf einem Gerät öffnet. Nach der Aktivierung müssen die Apple-ID und das Kennwort des Benutzers eingegeben werden, bevor folgende Vorgänge möglich sind: 
+Microsoft Intune kann Sie bei der Verwaltung der iOS-Aktivierungssperre unterstützen, einer Funktion der Mein iPhone suchen-App für Geräte mit iOS 8.0 und höher. Die Aktivierungssperre wird automatisch aktiviert, wenn ein Benutzer die App „Mein iPhone suchen“ auf einem Gerät öffnet. Nach der Aktivierung müssen die Apple-ID und das Kennwort des Benutzers eingegeben werden, bevor folgende Vorgänge möglich sind: 
 
 -   Deaktivieren von „Mein iPhone suchen“
 
@@ -43,7 +43,7 @@ Apple hat zur Behebung dieser Probleme eine Umgehung der Aktivierungssperre in i
 > Im überwachten Modus für iOS-Geräte können Sie mit dem Apple Configurator ein Gerät sperren, um die Funktionen auf bestimmte geschäftliche Zwecke zu beschränken. Der überwachte Modus ist in der Regel nur für firmeneigene Geräte vorgesehen.
 
 ## Unterstützung von Intune beim Verwalten der Aktivierungssperre
-Intune kann den Status der Aktivierungssperre von überwachten und nicht überwachten Geräten anfordern, die iOS 7.1 und höher ausführen. Ausschließlich für überwachte Geräte kann Intune den Umgehungscode der Aktivierungssperre abrufen und ihn direkt auf das Gerät anwenden. Wenn das Gerät zurückgesetzt wurde, können Sie direkt auf das Gerät zugreifen, indem Sie den Code als Benutzernamen und ein leeres Kennwort verwenden.
+Intune kann den Status der Aktivierungssperre von überwachten und nicht überwachten Geräten anfordern, die iOS 8.0 und höher ausführen. Ausschließlich für überwachte Geräte kann Intune den Umgehungscode der Aktivierungssperre abrufen und ihn direkt auf das Gerät anwenden. Wenn das Gerät zurückgesetzt wurde, können Sie direkt auf das Gerät zugreifen, indem Sie den Code als Benutzernamen und ein leeres Kennwort verwenden.
 
 **Folgende Geschäftsvorteile ergeben sich**:
 
@@ -76,7 +76,7 @@ Es gibt zwei Möglichkeiten zur Ermittlung, welche Geräte die Aktivierungssperr
 
     -   Nicht aktiviert
 
-    Das Feld **Status der Aktivierungssperre** ist für Geräte leer, auf denen nicht iOS 7.1 oder höher ausgeführt wird.
+    Das Feld **Status der Aktivierungssperre** ist für Geräte leer, auf denen nicht iOS 8.0 oder höher ausgeführt wird.
 
 -   Wählen Sie ein Gerät in einer Gruppenansicht aus, um den Status der Aktivierungssperre im Gerätedetailbereich anzuzeigen.
 
@@ -92,6 +92,6 @@ Es gibt zwei Möglichkeiten zur Ermittlung, welche Geräte die Aktivierungssperr
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
