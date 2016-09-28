@@ -29,7 +29,7 @@ Lesen Sie die allgemeinen Informationen und die Zusammenfassungsdaten über akti
 
 #### So zeigen Sie aktive Warnungen an
 
-Führen Sie in der Intune-Verwaltungskonsole eine der folgenden Reihe von Schritten aus:
+Führen Sie in der Intune-Verwaltungskonsole eines der folgenden Verfahren aus:
 
 -  Klicken Sie **zum Anzeigen allgemeiner Informationen zu Warnungen**, einschließlich der drei wichtigsten Warnungen und der Gesamtanzahl von aktiven Warnungen, auf **Systemübersicht**. Wählen Sie die Links in diesen Warnungen aus, um ausführlichere Informationen anzuzeigen.
 
@@ -90,7 +90,7 @@ Warnungen, die als geschlossen markiert sind, werden nach 90 Tagen dauerhaft gel
 
 #### So schließen Sie eine Warnung manuell
 
-Führen Sie in der Intune-Verwaltungskonsole eine der folgenden Reihe von Schritten aus:
+Führen Sie in der Intune-Verwaltungskonsole eines der folgenden Verfahren aus:
 
 - Wählen Sie **zum Schließen einer Warnung in der Warnungsliste** **Warnungen** > **Alle Warnungen** aus. Wählen Sie eine Warnung und anschließend **Warnung schließen** aus.
 

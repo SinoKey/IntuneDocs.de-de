@@ -13,8 +13,8 @@ ms.assetid: aeeccfa4-0f14-447e-a3df-c8435c8a4bb2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: e14a56fce0aa57b3744946d7dbf6641b8d98773b
+ms.sourcegitcommit: 5f8a145fa2c0355eaffc403084872c1f9524b6e5
+ms.openlocfilehash: 2cb4920663019f8a1ff66a7c52e12b1313f33871
 
 
 ---
@@ -29,7 +29,7 @@ Sie können die folgenden Gerätetypen registrieren und anschließend verwalten:
 
 Informationen zu den Funktionen, die Ihnen bei der Geräteregistrierung zur Verfügung stehen, finden Sie unter [Auswählen der Methode zum Verwalten von Geräten](/Intune/get-started/choose-how-to-manage-devices).
 
-Alternativ können Sie Windows-PCs mit der Clientsoftware Intune PC verwalten. Die Clientsoftware Intune PC unterstützt Windows 7 und neuer, mit Ausnahme von Windows 10 Home. Informationen zu den Funktionen, die Ihnen die Clientsoftware bei der Verwaltung von PCs bietet, finden sie in der [Intune-Dokumentation](/Intune/).
+Alternativ können Sie Windows-PCs mit der Clientsoftware Intune PC verwalten. Die Intune-PC-Clientsoftware unterstützt Windows 7 und höher, mit Ausnahme von Windows 10 Home. Die PC-Verwaltung mit dieser Clientsoftware bietet [diese Möglichkeiten](set-up-windows-device-management-with-microsoft-intune.md).
 
 Kunden mit der Enterprise Management Suite können auch Azure Active Directory ( Azure AD) verwenden, um Windows 10-Geräte zu registrieren.
 
@@ -38,6 +38,6 @@ Kunden mit der Enterprise Management Suite können auch Azure Active Directory (
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

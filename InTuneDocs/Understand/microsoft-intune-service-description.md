@@ -4,7 +4,7 @@ description: "Intune ist ein cloudbasierter Dienst, der Ihnen bei der Verwaltung
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,15 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: c13366ea7f42272e6fc3d606cb8dbe0ed1c45fe4
+ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
+ms.openlocfilehash: e3694f80d6148abbce004bb0c7143bf394b313d9
 
 
 ---
 
 # Microsoft Intune-Dienstbeschreibung
 
-Microsoft Intune ist ein cloudbasierter Dienst, der Ihnen bei der Verwaltung von Windows-PCs sowie mobilen iOS-, Mac OS X-, Android- und Windows-Geräten hilft. Intune hilft Ihnen außerdem dabei, Unternehmensanwendungen und -daten zu schützen. Sie können Intune eigenständig verwenden oder in System Center 2012 R2 Configuration Manager integrieren, um Ihre Verwaltungsfunktionen zu erweitern.
+Microsoft Intune ist ein cloudbasierter Dienst, der Ihnen bei der Verwaltung von Windows-PCs sowie mobilen iOS-, Mac OS X-, Android- und Windows-Geräten hilft. Intune hilft Ihnen außerdem dabei, Unternehmensanwendungen und -daten zu schützen. Sie können Intune eigenständig verwenden oder in System Center Configuration Manager integrieren, um die Verwaltungsfunktionen zu erweitern. 
 
 Microsoft bietet den Vorteil des Intune Onboardings für zulässige Dienste in zulässigen Plänen. Das Onboarding ermöglichen Ihnen die Remotezusammenarbeit mit Microsoft-Spezialisten, um Ihre Intune-Umgebung einzurichten. Weitere Informationen finden Sie in der [Beschreibung der Vorteile des Microsoft Intune-Onboardings](http://go.microsoft.com/fwlink/?LinkId=619281).
 
@@ -32,18 +32,18 @@ Sie können Intune zunächst mit einer 30-tägigen kostenlosen Testversion verwe
 
 Eine Liste der Einstellungen für mobile Geräte finden Sie unter:
 
--   [Verwaltungsfunktionen für mobile Geräte in Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
+-   [Verwaltungsfunktionen für registrierte Geräte in Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
--   [Allgemeine Einstellungen für mobile Geräte im Konfigurations-Manager](https://technet.microsoft.com/library/dn376523.aspx)
+-   [Hybride Verwaltung mobiler Geräte (Mobile Device Management, MDM) mit System Center Configuration Manager und Microsoft Intune](https://technet.microsoft.com/library/mt627883.aspx) 
 
-Informationen zum System Center 2012 R2 Configuration Manager finden Sie in der [Dokumentationsbibliothek zu System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).
+Informationen zum System Center Configuration Manager finden Sie in der [Dokumentationsbibliothek zu System Center Configuration Manager](https://technet.microsoft.com/library/mt346023.aspx).
 
 ## Auswirkungen von Intune-Dienstupdates auf Sie
 Da Intune ein Onlinedienst ist, kann Microsoft ihn in regelmäßigen Abständen aktualisieren.
 
 Verwenden Sie die Informationen in diesem Thema, um die Häufigkeit dieser Dienstupdates besser zu verstehen und die Vorabbenachrichtigung, die Sie von uns erhalten, wenn sich ein Update auf Ihre Verwendung des Diensts auswirken kann.
 
-Informationen zu den Änderungen beim Intune-Dienst finden Sie unter [Neuerungen in Microsoft Intune](/intune/deploy-use/Whats-new-in-microsoft-intune.md). Der [Microsoft Intune-Blog](http://blogs.technet.com/b/microsoftintune/) behandelt auch Änderungen am Dienst und bietet nützliche Tipps, damit Sie Intune optimal nutzen können.
+Informationen zu den Änderungen beim Intune-Dienst finden Sie unter [Neuerungen in Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune). Der [Microsoft Intune-Blog](http://blogs.technet.com/b/microsoftintune/) behandelt auch Änderungen am Dienst und bietet nützliche Tipps, damit Sie Intune optimal nutzen können. 
 
 Über wichtige Dienstupdates werden Sie auch im [Verwaltungsportal von Office 365](https://portal.office.com/Admin/Default.aspx) im Nachrichtencenter informiert. Wenn Sie die begleitende [mobilen Office 365-Admin-App](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) installieren, können Sie Benachrichtigungen auf Ihrem mobilen Gerät erhalten.
 
@@ -65,7 +65,7 @@ Sie können Intune auf unterschiedlichste Weise konfigurieren, um die mobilen Ge
 
 -   **Eigenständige Intune-Konfiguration.** Verwenden Sie die webbasierte Verwaltungskonsole in Intune, um Geräte in Ihrer Organisation zu verwalten. Intune kann ohne lokale IT-Infrastruktur verwendet werden. Wenn Sie jedoch Intune mit Active Directory-Domänendiensten verwenden, können Sie Domänenbenutzerkonten verwenden, die Sie mit Domänendiensten mit Intune verwalten.
 
--   **Intune mit System Center Configuration Manager.** Verwenden Sie die Configuration Manager-Verwaltungskonsole, um Computer und mobile Geräte in Ihrem Unternehmen zu verwalten. Mit dieser Konfiguration können Sie alle Geräte der Organisation zentral über die Configuration Manager-Verwaltungskonsole verwalten. Configuration Manager unterstützt eine große Anzahl mobiler Geräte, Server und Computer. Weitere Informationen finden Sie unter [Verwalten von mobilen Geräten mit Configuration Manager und Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=271118) in der [Dokumentationsbibliothek zu System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).  Weitere Informationen dazu, welcher Ansatz für Sie geeignet ist, finden Sie unter [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](https://technet.microsoft.com/en-us/library/mt706478.aspx) (Auswählen zwischen eigenständigem Microsoft Intune und der hybriden Verwaltung mobiler Geräte mit Configuration Manager).
+-   **Intune mit System Center Configuration Manager.** Verwenden Sie die Configuration Manager-Verwaltungskonsole, um Computer und mobile Geräte in Ihrem Unternehmen zu verwalten. Mit dieser Konfiguration können Sie alle Geräte der Organisation zentral über die Configuration Manager-Verwaltungskonsole verwalten. Configuration Manager unterstützt eine große Anzahl mobiler Geräte, Server und Computer. Weitere Informationen erhalten Sie unter [Hybride Verwaltung mobiler Geräte (Mobile Device Management, MDM) mit System Center Configuration Manager und Microsoft Intune](https://technet.microsoft.com/library/mt627883.aspx).  Weitere Informationen dazu, welcher Ansatz für Sie geeignet ist, finden Sie unter [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](https://technet.microsoft.com/en-us/library/mt706478.aspx) (Auswählen zwischen eigenständigem Microsoft Intune und der hybriden Verwaltung mobiler Geräte mit Configuration Manager). 
 
 
 ## Weitere Informationen zu Intune
@@ -73,16 +73,16 @@ Verwenden Sie die folgenden Ressourcen, um weitere Informationen über Intune zu
 
 -   Das [Microsoft Intune Trust Center](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/) bietet Informationen zu den Vorgehensweisen für Sicherheit, Datenschutz und Kompatibilität von Intune und beschreibt einige der Zertifizierungen von Intune.
 
--   [Verwaltungsfunktionen für mobile Geräte in Microsoft Intune](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune)
+-   [Verwaltungsfunktionen für registrierte Geräte in Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
 ### Weitere Informationen:
 [Microsoft Intune](https://docs.microsoft.com/intune/)
 [Dokumentationsbibliothek zu System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx)
 
-[Neuerungen in Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune)
+[Neuheiten in Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

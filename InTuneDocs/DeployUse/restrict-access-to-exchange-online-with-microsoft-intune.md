@@ -4,7 +4,7 @@ description: "Schützen und steuern Sie den Zugriff auf Unternehmens-E-Mail in E
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 06/16/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
+ms.sourcegitcommit: 99b01f5ca5bb389fc8a9d87e956796823fee6c0d
+ms.openlocfilehash: dd5ae411cc2541566805131d0076efc15875c988
 
 
 ---
@@ -67,7 +67,7 @@ Das folgende Diagramm veranschaulicht den Ablauf, der von den Richtlinien für b
 Sie können den Zugriff auf Exchange Online-E-Mails über **Outlook** und andere ** Apps, die die moderne Authentifizierung verwenden**, beschränken:
 
 - Android 4.0 und höher, Samsung KNOX Standard 4.0 und höher
-- iOS 7.1 und höher
+- iOS 8.0 und höher
 - Windows Phone 8.1 und höher
 
 Die **moderne Authentifizierung** ermöglicht das ADAL-basierte (Active Directory Authentication Library) Anmelden für Microsoft Office-Clients.
@@ -93,7 +93,7 @@ Auf folgenden Plattformen können Sie den Zugriff auf Exchange-E-Mails über den
 
 - Android 4.0 und höher, Samsung KNOX Standard 4.0 und höher
 
-- iOS 7.1 und höher
+- iOS 8.0 und höher
 
 - Windows Phone 8.1 und höher
 
@@ -262,6 +262,6 @@ Wählen Sie im [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Dashboard 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

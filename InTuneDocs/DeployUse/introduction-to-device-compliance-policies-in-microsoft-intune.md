@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
-ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
+ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
+ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
 
 
 ---
@@ -32,9 +32,9 @@ Sie stellen Kompatibilitätsrichtlinien für Benutzer bereit. Wenn Sie eine Komp
 
 Die folgende Tabelle enthält die von Konformitätsrichtlinien unterstützten Gerätetypen. Zudem ist darin angegeben, wie nicht konforme Einstellungen gehandhabt werden, wenn die Richtlinie mit einer bedingten Zugriffsrichtlinie verwendet wird.
 
---------------
+-----------------------------
 
-|Richtlinieneinstellung| Windows 8.1 und höher| Windows Phone 8.1 und höher| iOS 6.0 und höher|Android 4,0 und höher<br/>Samsung KNOX Standard 4.0 und höher|
+|Richtlinieneinstellung| Windows 8.1 und höher| Windows Phone 8.1 und höher| iOS 8.0 und höher|Android 4,0 und höher<br/>Samsung KNOX Standard 4.0 und höher|
 |-----|----|----|----|----|
 |**PIN- oder Kennwortkonfiguration** |Wiederhergestellt|Wiederhergestellt|Wiederhergestellt|Isoliert|
 |**Geräteverschlüsselung**|N/V|Wiederhergestellt|Wiederhergestellt (durch Festlegen der PIN)|Isoliert|
@@ -43,7 +43,9 @@ Die folgende Tabelle enthält die von Konformitätsrichtlinien unterstützten Ge
 |**Minimale Version des Betriebssystems**|Isoliert|Isoliert|Isoliert|Isoliert|
 |**Maximale Version des Betriebssystems**|Isoliert| Isoliert| Isoliert| Isoliert|
 |**Windows-Integritätsnachweis**|Windows 10 und Windows 10 Mobile sind isoliert.<br /><br />Einstellung gilt nicht für Windows 8.1|N/V|N/V|N/V|
---------------
+
+------------------------------
+
 **Wiederhergestellt** = Konformität wird vom Betriebssystem des Geräts erzwungen (z. B. wird der Benutzer gezwungen, eine PIN festzulegen).  Es ist nie der Fall, wenn die Einstellung nicht kompatibel ist.
 
 **Unter Quarantäne** = Das Betriebssystem des Geräts erzwingt keine Konformität (z. B. zwingen Android-Geräte den Benutzer nicht dazu, das Gerät zu verschlüsseln). Wenn die Geräte nicht kompatibel sind, erfolgen die folgenden Aktionen:
@@ -62,6 +64,6 @@ Die folgende Tabelle enthält die von Konformitätsrichtlinien unterstützten Ge
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
