@@ -4,7 +4,7 @@ description: In diesem Thema werden Fehler- und Statuscodes beschrieben, die Ihn
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
+ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
+ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 
 ---
@@ -33,7 +33,7 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 |30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|Inhalt wird abgerufen.|Mögliche Ursache: Auftragsstatus 30 gibt an, dass beim Herunterladen einer App durch einen Benutzer ein Fehler aufgetreten ist.<br /><br />Mögliche Ursachen können sein:<br /><br />Die Internetverbindung des Geräts wurde während des Downloads unterbrochen.<br /><br />Möglicherweise ist das Zertifikat abgelaufen, das bei der Registrierung für das Gerät ausgestellt wurde.<br /><br />Lösung:<br /><br />Starten Sie die Unternehmens-Apps-Anwendung in der Systemsteuerung auf dem Gerät, um zu prüfen, ob das Gerätezertifikat noch gültig ist. Andernfalls müssen Sie das Gerät erneut registrieren.<br /><br />Vergewissern Sie sich, dass das Gerät mit dem Internet verbunden ist, und rufen Sie die App erneut ab.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|Download abgeschlossen.||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Installation läuft||
-|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|InstallationFehler aufgetreten.|Die heruntergeladene App konnte nicht installiert werden.<br /><br />Das Codesignaturzertifikat, mit dem die Anwendung signiert wurde, ist nicht auf dem Gerät vorhanden.<br /><br />Eine Frameworkabhängigkeit, von der die Anwendung abhängt, ist nicht auf dem Gerät installiert.<br /><br />Stellen Sie sicher, dass das Codesignaturzertifikat, mit dem die App signiert wurde, auf dem Gerät vorhanden ist. Lassen Sie sich zudem vom Administrator bestätigen, dass ein solches Zertifikat für alle im Unternehmen registrierten Windows RT-Geräte vorgesehen war.<br /><br />Falls der Installationsfehler aufgrund einer fehlenden Frameworkabhängigkeit aufgetreten ist, muss der Administrator die Anwendung erneut veröffentlichen und dabei das Framework zusammen mit dem Anwendungspaket verpacken.<br /><br />Das heruntergeladene Anwendungspaket ist kein gültiges Paket, wurde möglicherweise beschädigt oder ist nicht mit der Version des Betriebssystems auf dem Gerät kompatibel.|
+|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Installationsfehler|Die heruntergeladene App konnte nicht installiert werden.<br /><br />Das Codesignaturzertifikat, mit dem die Anwendung signiert wurde, ist nicht auf dem Gerät vorhanden.<br /><br />Eine Frameworkabhängigkeit, von der die Anwendung abhängt, ist nicht auf dem Gerät installiert.<br /><br />Stellen Sie sicher, dass das Codesignaturzertifikat, mit dem die App signiert wurde, auf dem Gerät vorhanden ist. Lassen Sie sich zudem vom Administrator bestätigen, dass ein solches Zertifikat für alle im Unternehmen registrierten Windows RT-Geräte vorgesehen war.<br /><br />Falls der Installationsfehler aufgrund einer fehlenden Frameworkabhängigkeit aufgetreten ist, muss der Administrator die Anwendung erneut veröffentlichen und dabei das Framework zusammen mit dem Anwendungspaket verpacken.<br /><br />Das heruntergeladene Anwendungspaket ist kein gültiges Paket, wurde möglicherweise beschädigt oder ist nicht mit der Version des Betriebssystems auf dem Gerät kompatibel.|
 |70 (APP_CI_ENFORCEMENT_SUCCEEDED)|Installation erfolgreich.||
 |80 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Deinstallation wird durchgeführt.||
 |90 (APP_CI_ENFORCEMENT_ERROR)|Fehler beim Deinstallieren.||
@@ -127,7 +127,7 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 |-2016314112|0x87D17D00|22000: Ungültige Schlüsselverwendung.|
 |-2016315105|0x87D1791F|21007: Konto kann nicht überprüft werden.|
 |-2016315106|0x87D1791E|21006: Zertifikat kann nicht entschlüsselt werden.|
-|-2016315107|0x87D1791D|21005: Konto nicht eindeutig.|
+|-2016315107|0x87D1791D|21005: Konto nicht eindeutig (Es ist bereits ein E-Mail-Profil auf diesem Gerät vorhanden)|
 |-2016315108|0x87D1791C|21004: Konto kann nicht erstellt werden.|
 |-2016315109|0x87D1791B|21003: Kein Hostname.|
 |-2016315110|0x87D1791A|21002: Verletzung der Verschlüsselungsrichtlinie vom Server.|
@@ -372,6 +372,6 @@ Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, w
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Intune Windows Hello for Business integriert wird
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/02/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3d212869051719b6b1f1d527ee52044420df0c14
-ms.openlocfilehash: c2c2774dd85d8ce9c056248f801220e06f17063b
+ms.sourcegitcommit: 73379311acad6f2a7054e262dea701d3e7b9ad45
+ms.openlocfilehash: 40344947d7c94c90258c967da36c09c95a54335c
 
 
 ---
@@ -29,6 +29,18 @@ Intune integriert Hello for Business auf zwei Arten:
 -   Sie können mithilfe einer Intune-Richtlinie steuern, welche Aktionen von Benutzern zum Anmelden verwendet werden können.
 
 -   Sie können Authentifizierungszertifikate im Windows Hello for Business-Schlüsselspeicheranbieter (Key Storage Provider, KSP) speichern. Weitere Informationen finden Sie unter [Sicherer Zugriff auf Ressourcen mit Zertifikatprofilen in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).
+
+> [!IMPORTANT]
+> Bei Desktop- und mobilen Versionen von Windows 10 vor dem Anniversary Update konnten Sie zwei unterschiedliche PINS für die Authentifizierung bei Ressourcen festlegen:
+- Die **Geräte-PIN** konnte zum Entsperren des Geräts und zur Verbindung mit Cloudressourcen verwendet werden.
+- Die **Arbeits-PIN** wurde für den Zugang zu Azure AD-Ressourcen auf persönlichen Geräten von Benutzern (BYOD) verwendet.
+
+>Im Anniversary Update wurden diese beiden PINs in eine einzige Geräte-PIN zusammengeführt.
+Dieser neue PIN-Wert wird jetzt sowohl von allen Intune-Konfigurationsrichtlinien, die Sie zum Steuern der Geräte-PIN festlegen, als auch von allen konfigurierten Windows Hello for Business-Richtlinien festgelegt.
+Wenn Sie beide Richtlinientypen für die PIN-Steuerung eingerichtet haben, wird sowohl auf Desktop- als auch auf mobilen Geräten mit Windows 10 die Windows Hello for Business-Richtlinie angewendet.
+Um sicherzustellen, dass Richtlinienkonflikte gelöst werden und dass die PIN-Richtlinie korrekt angewendet wird, aktualisieren Sie Ihre Windows Hello for Business-Richtlinie auf die Einstellungen in der Konfigurationsrichtlinie. Fordern Sie auch die Benutzer auf, ihre Geräte in der Unternehmensportal-App zu synchronisieren.
+
+
 
 ## Erstellen einer Windows Hello for Business-Richtlinie
 
@@ -67,6 +79,6 @@ Weitere Informationen zu Microsoft Passport finden Sie im [Leitfaden](https://te
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
