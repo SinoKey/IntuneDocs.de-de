@@ -4,7 +4,7 @@ description: "Erstellen Sie Richtlinien, die Einstellungen und Funktionen auf iO
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/30/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cac39b60226939334032d954eb49d1417493b28d
-ms.openlocfilehash: 00e3a1b65c8475384bb05e64a4ef9f5d9de348ff
+ms.sourcegitcommit: cd5930995a6da130fedcb6d89851460e6f0614eb
+ms.openlocfilehash: 24540a74ce98adbf3f908cbea401328f027867ca
 
 
 ---
@@ -39,7 +39,7 @@ Verwenden Sie die allgemeine **iOS-Konfigurationsrichtlinie** von Microsoft Intu
 Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie sie ggf. mithilfe einer benutzerdefinierten iOS-Richtlinie erstellen, die Ihnen das Importieren von Einstellungen erlaubt, die Sie mit dem [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)-Tool erstellt haben. Weitere Informationen finden Sie weiter unten in diesem Thema unter „Benutzerdefinierte Richtlinieneinstellungen“.
 
 ### Sicherheitseinstellungen
-Alle Einstellungen gelten für iOS 7.1 und höher.
+Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
 
 |Name der Einstellung|Details|
 |----------------|-------|
@@ -58,7 +58,7 @@ Alle Einstellungen gelten für iOS 7.1 und höher.
 <sup>1</sup> Wenn Sie für iOS-Geräte die Einstellungen **Minuten der Inaktivität, bevor der Bildschirm ausgeschaltet wird** und **Minuten Inaktivität vor erneuter Anforderung des Kennworts** konfigurieren, werden sie nacheinander angewendet. Wenn Sie beispielsweise den Wert für beide Einstellungen auf **5** Minuten einstellen, wird der Bildschirm automatisch nach 5 Minuten deaktiviert, und das Gerät wird nach weiteren 5 Minuten gesperrt. Wenn der Benutzer den Bildschirm jedoch manuell deaktiviert, wird die zweite Einstellung sofort angewendet. Im selben Beispiel wird das Gerät 5 Minuten später gesperrt, nachdem der Benutzer den Bildschirm deaktiviert hat.
 
 ### Systemeinstellungen
-Alle Einstellungen gelten für iOS 7.1 und höher.
+Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
 
 |Name der Einstellung|Details|
 |----------------|-------|
@@ -71,7 +71,7 @@ Alle Einstellungen gelten für iOS 7.1 und höher.
 |**Passbook bei Sperre zulassen**|Erlaubt dem Benutzer den Zugriff auf die Passbook-App, während das Gerät gesperrt ist.|
 
 ### Cloudeinstellungen für Dokumente und Daten
-Alle Einstellungen gelten für iOS 7.1 und höher.
+Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
 
 |Name der Einstellung|Details|
 |----------------|-------|
@@ -85,7 +85,7 @@ Alle Einstellungen gelten für iOS 7.1 und höher.
 |**iCloud-Fotomediathek zulassen**|Ermöglicht es dem Benutzer, Fotos auf iCloud zu speichern. Wenn diese Funktion deaktiviert ist, werden bereits auf iCloud gespeicherten Fotos entfernt.|
 
 ### Anwendungseinstellungen für den Browser
-Alle Einstellungen gelten für iOS 7.1 und höher.
+Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
 
 |Name der Einstellung|Details|
 |----------------|-------|
@@ -97,7 +97,7 @@ Alle Einstellungen gelten für iOS 7.1 und höher.
 |**Betrugswarnung zulassen**|Ermöglicht die Verwendung von Betrugswarnungen im Browser.|
 
 ### Anwendungseinstellungen für Apps
-Alle Einstellungen gelten für iOS 7.1 und höher.
+Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
 
 |Name der Einstellung|Details|
 |----------------|-------|
@@ -111,7 +111,7 @@ Alle Einstellungen gelten für iOS 7.1 und höher.
 
 
 ### Anwendungseinstellungen für Spiele
-Alle Einstellungen gelten für iOS 7.1 und höher.
+Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
 
 |Name der Einstellung|Details|
 |----------------|-------|
@@ -119,7 +119,7 @@ Alle Einstellungen gelten für iOS 7.1 und höher.
 |**Spielen für mehrere Spieler zulassen**|Ermöglichen, dass der Benutzer Spiele für mehrere Spieler auf dem Gerät spielt.|
 
 ### Anwendungseinstellungen für Medieninhalte
-Alle Einstellungen gelten für iOS 7.1 und höher.
+Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
 
 |Name der Einstellung|Details|
 |----------------|-------|
@@ -129,7 +129,7 @@ Alle Einstellungen gelten für iOS 7.1 und höher.
 
 
 ### Einstellungen für Gerätefunktionen der Hardware
-Alle Einstellungen gelten für iOS 7.1 und höher.
+Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
 
 |Name der Einstellung|Details|
 |----------------|-------|
@@ -138,7 +138,7 @@ Alle Einstellungen gelten für iOS 7.1 und höher.
 |**Kopplungskennwort für ausgehende AirPlay-Anforderungen erforderlich**|Erfordert ein Kopplungskennwort, wenn der Benutzer AirPlay zum Streamen von Inhalten auf andere Apple-Geräte verwendet.|
 
 ### Einstellungen für Gerätefunktionen von Mobiltelefonen
-Alle Einstellungen gelten für iOS 7.1 und höher.
+Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
 
 |Name der Einstellung|Details|
 |----------------|-------|
@@ -147,14 +147,14 @@ Alle Einstellungen gelten für iOS 7.1 und höher.
 |**Globales Abrufen im Hintergrund beim Roaming zulassen**|Zulassen, dass das Gerät Daten wie E-Mails beim Roaming in einem Mobilfunknetz abruft.|
 
 ### Einstellungen für Gerätefunktionen von Features
-Alle Einstellungen gelten für iOS 7.1 und höher.
+Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
 
 |Name der Einstellung|Details|
 |----------------|-------|
 |**Siri zulassen**|Verwendung des Sprach-Assistenten Siri auf dem Gerät zulassen.|
 |**Siri bei gesperrtem Gerät zulassen**|Verwendung des Sprach-Assistenten Siri auf dem Gerät zulassen, während das Gerät gesperrt ist.|
 |**Sprachwahl zulassen**|Die Verwendung des Features „Sprachwahlverfahren“ auf dem Gerät erlauben.|
-|**Airdrop für verwaltete Apps nicht zulassen**|Verhindert, dass verwaltete Apps Daten über  Airdrop senden.|
+|**Airdrop für verwaltete Apps nicht zulassen**|Verwaltete Apps am Senden von Daten mit Airdrop hindern.|
 
 
 ### Einstellungen für kompatible und nicht kompatible Anwendungen
@@ -196,7 +196,7 @@ Geben Sie in der Liste der **kompatiblen und nicht kompatiblen Apps** anhand der
 > [!NOTE]
 > Die folgenden Hinweise gelten für Kiosk-Moduseinstellungen für iOS-Geräte:
 >
-> -   Bevor Sie ein iOS-Gerät für den Kioskmodus konfigurieren können, müssen Sie das Gerät mithilfe des [Apple Configurator-Tools](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) oder des Geräteregistrierungs-Managers in den überwachten Modus versetzen. Weitere Informationen zum Apple Configurator-Tool finden Sie in der Apple-Dokumentation.
+> -   Damit Sie ein iOS-Gerät für den Kioskmodus konfigurieren können, müssen Sie das [Apple Configurator-Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) oder das [Apple-Programm zur Geräteregistrierung](ios-device-enrollment-program-in-microsoft-intune) verwenden, um das Gerät in den überwachten Modus zu versetzen. Weitere Informationen zum Apple Configurator-Tool finden Sie in der Apple-Dokumentation.
 > -   Wenn die angegebene iOS-App nach der Bereitstellung der Konfigurationsrichtlinie installiert wird, wird das Gerät erst nach einem Neustart in den Kioskmodus versetzt.
 
 ### Referenzinformationen für kompatible und nicht kompatible Apps
@@ -222,14 +222,14 @@ Um eine App-URL in der Liste mit kompatiblen und nicht kompatiblen Apps oder in 
 > Sie können auch die iTunes-Software verwenden, um die App zu suchen, und dann den Befehl **Link kopieren** , um die App-URL abzurufen.
 
 ### Registrierungseinstellungen
-Alle Einstellungen gelten für iOS 7.1 und höher.
+Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
 
 |Name der Einstellung|Details|
 |----------------|--------------------|
 |**Aktivierungssperre zulassen, wenn sich das Gerät im überwachten Modus befindet**|Aktiviert die Aktivierungssperre auf überwachten iOS-Geräten.|
 
 ### Einstellungen für den überwachten Modus
-Die folgenden Einstellungen können auf Geräten mit iOS 7.1 und höher konfiguriert werden, die sich im überwachten Modus befinden.
+Die folgenden Einstellungen können auf Geräten mit iOS 8.0 und höher konfiguriert werden, die sich im überwachten Modus befinden.
 
 ### Einstellungen für den überwachten Modus für Gerätebeschränkungen
 
@@ -265,9 +265,9 @@ Die folgenden Einstellungen können auf Geräten mit iOS 7.1 und höher konfigur
 
 |Name der Einstellung|Details|
 |----------------|--------------------|
-|**Änderung von Vertrauensstellungseinstellungen für Unternehmens-Apps zulassen**||
-|**Installation von Apps nur mit Apple Configurator und iTunes zulassen**||
-|**Automatische App-Downloads zulassen**||
+|**Änderung von Vertrauensstellungseinstellungen für Unternehmens-Apps zulassen**|Ermöglicht Benutzern das Ändern der Vertrauensstellungseinstellungen für Unternehmens-Apps.|
+|**Installation von Apps nur mit Apple Configurator und iTunes zulassen**|Aktiviert oder deaktiviert den App Store auf dem Startbildschirm des Geräts. Benutzer können weiterhin iTunes oder das Apple Configurator-Tool zum Installieren und Aktualisieren von Apps verwenden.|
+|**Automatische App-Downloads zulassen**|Den automatischen Download von auf anderen Geräten erworbenen Apps auf dieses Gerät erlauben. Diese Einstellung wirkt sich nicht auf App-Updates aus.|
 |**Änderungen an den Einstellungen der App „Meine Freunde suchen“ zulassen**|Gestatten Sie Benutzern das Ändern von Einstellungen für die App „Meine Freunde suchen“.|
 |**Zugriff auf iBooks Store zulassen**|Gestatten Sie Benutzern die Suche nach Büchern im iBooks-Store sowie den Kauf gefundener Bücher.|
 |**Verwendung der Nachrichten-App auf dem Gerät zulassen**|Gestatten Sie die Verwendung der Nachrichten-App zum Senden von SMS.|
@@ -382,6 +382,6 @@ Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigur
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

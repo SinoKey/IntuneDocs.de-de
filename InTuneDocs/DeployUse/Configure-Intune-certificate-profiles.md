@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie ein Intune-Zertifikatprofil erstellen.
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e3f7cac8eb3495aad3835ec4713d67a58383c66
-ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 
 ---
@@ -41,22 +41,16 @@ Sie müssen ein vertrauenswürdiges Zertifikatprofil erstellen, bevor Sie ein Si
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** &gt; **Richtlinie hinzufügen** aus.
 2.  Fügen Sie einen der folgenden Richtlinientypen hinzu:
     - **Android &gt; Profil des vertrauenswürdigen Zertifikats (Android 4 und höher)**
-    - **iOS &gt; Profil des vertrauenswürdigen Zertifikats (iOS 7.1 und höher)**
+    - **iOS &gt; Profil des vertrauenswürdigen Zertifikats (iOS 8.0 und höher)**
     - **Mac OS X &gt; Vertrauenswürdiges Zertifikatprofil (Mac OS X 10.9 und höher)**
     - **Windows &gt; Vertrauenswürdiges Zertifikatprofil (Windows 8.1 und höher)**
     - **Windows &gt; Vertrauenswürdiges Zertifikatprofil (Windows Phone 8.1 und höher)**
 
     Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Geben Sie die angeforderten Informationen ein, um die Profileinstellungen vertrauenswürdiger Zertifikate für Android, iOS, Mac OS X, Windows 8.1 oder Windows Phone 8.1 zu konfigurieren.
-
-    - Importieren Sie in der Einstellung **Zertifikatdatei** das Zertifikat der vertrauenswürdigen Stamm-CA (CER-Datei), das Sie aus der ausstellenden Zertifizierungsstelle exportiert haben. Die Einstellung **Zielspeicher** gilt nur für Geräte mit Windows 8.1 und höher und auch nur, wenn das Gerät über mehr als einen Zertifikatspeicher verfügt.
-    -  Wählen Sie unter **Format des Antragstellernamens** die Option **Benutzerdefiniert** aus, um ein benutzerdefiniertes Format für den Antragstellernamen einzugeben.  
-        Die beiden derzeit für das benutzerdefinierte Format unterstützten Variablen sind `Common Name (CN)` und `Email (E)`. Durch eine Kombination dieser Variablen mit statischen Zeichenfolgen können Sie ein benutzerdefiniertes Format wie dieses für den Antragstellernamen erstellen:  
-
-        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
-
-        In diesem Beispiel hat der Administrator ein Format für den Antragstellernamen erstellt, das zusätzlich zu den Variablen `CN` und `E` entsprechende Zeichenfolgen für Organisationseinheit (OU), Organisation (O), Ort (L), Bundesland/Kanton (ST) und Land (C) verwendet. Die [CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx)-Funktion listet unterstützte Zeichenfolgen auf.  
+3.  Geben Sie die angeforderten Informationen ein, um die Profileinstellungen vertrauenswürdiger Zertifikate für Android, iOS, Mac OS X, Windows 8.1 oder Windows Phone 8.1 zu konfigurieren. 
+4.  Importieren Sie in der Einstellung **Zertifikatdatei** das Zertifikat der vertrauenswürdigen Stamm-CA (CER-Datei), das Sie aus der ausstellenden Zertifizierungsstelle exportiert haben. Die Einstellung **Zielspeicher** gilt nur für Geräte mit Windows 8.1 und höher und auch nur, wenn das Gerät über mehr als einen Zertifikatspeicher verfügt.
+    
 4.  Wählen Sie **Richtlinie speichern** aus.
 
 Die neue Richtlinie wird im Arbeitsbereich **Richtlinie** angezeigt. Sie können sie nun bereitstellen.
@@ -69,7 +63,7 @@ Nachdem Sie ein Profil des vertrauenswürdigen Zertifizierungsstellenzertifikats
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** &gt; **Richtlinie hinzufügen** aus.
 2.  Fügen Sie einen der folgenden Richtlinientypen hinzu:
     - **Android &gt; SCEP-Zertifikatprofil (Android 4 und höher)**
-    - **iOS &gt; SCEP-Zertifikatprofil (iOS 7.1 und höher)**
+    - **iOS &gt; SCEP-Zertifikatprofil (iOS 8.0 und höher)**
     - **Mac OS X &gt; SCEP-Zertifikatprofil (Mac OS X 10.9 und höher)**
     - **Windows &gt; SCEP-Zertifikatprofil (Windows 8.1 und höher)**
     - **Windows &gt; SCEP-Zertifikatprofil (Windows Phone 8.1 und höher)**
@@ -79,7 +73,7 @@ Nachdem Sie ein Profil des vertrauenswürdigen Zertifizierungsstellenzertifikats
 3.  Befolgen Sie die Anweisungen auf der Profilkonfigurationsseite, um die SCEP-Zertifikatprofileinstellungen zu konfigurieren.
     > [!NOTE]
     >
-    > Wählen Sie unter **Format des Antragstellernamens** die Option **Benutzerdefiniert** aus, um ein benutzerdefiniertes Format für den Antragstellernamen einzugeben.
+    > Wählen Sie unter **Format des Antragstellernamens** die Option **Benutzerdefiniert** aus, um ein benutzerdefiniertes Format für den Antragstellernamen einzugeben (nur in iOS-Profilen).
     >
     > Die beiden derzeit für das benutzerdefinierte Format unterstützten Variablen sind `Common Name (CN)` und `Email (E)`. Durch eine Kombination dieser Variablen mit statischen Zeichenfolgen können Sie ein benutzerdefiniertes Format wie dieses für den Antragstellernamen erstellen:
 
@@ -98,7 +92,7 @@ Die neue Richtlinie wird im Arbeitsbereich **Richtlinie** angezeigt. Sie können
   - **Android &gt; PFX-Zertifikatprofil (Android 4 und höher)**
   - **Windows &gt; PKCS #12-Zertifikatprofil (PFX) (Windows 10 und höher)**
   - **Windows &gt; PKCS #12-Zertifikatprofil (PFX) (Windows Phone 10 und höher)**
-  - **iOS > PKCS #12 (.PFX) Zertifikatprofil (iOS 7.1 und höher)**    
+  - **iOS > PKCS #12 (.PFX) Zertifikatprofil (iOS 8.0 und höher)**    
     Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  Geben Sie die Informationen ein, die auf dem Richtlinienformular angefordert werden.
 4.  Wählen Sie **Richtlinie speichern** aus.
@@ -136,6 +130,6 @@ Erfahren Sie nun, wie Sie mithilfe von Zertifikaten E-Mail-, WLAN- und VPN-Profi
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 
