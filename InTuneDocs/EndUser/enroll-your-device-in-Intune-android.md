@@ -4,7 +4,7 @@ description: "Beschreibt, wie Sie ein Android-Gerät bei Intune registrieren."
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 09/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 6fa1e13b6b0e29144c3740f00b232807e6e4e984
+ms.sourcegitcommit: 47f9654af126d0e83890f797c321100f40ae497b
+ms.openlocfilehash: 3d06e55607172d52538c7f4ec7aed843b64e3f53
 
 
 ---
@@ -71,7 +71,7 @@ Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftre
 
     ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    Wenn diese Meldung angezeigt wird, tippen Sie auf **ZULASSEN**. Sie können ruhig auf „ZULASSEN“ tippen, da **Microsoft niemals Ihre Telefonanrufe tätigt oder verwaltet!** Google steuert den Meldungstext, daher kann er von Microsoft nicht geändert werden. Wenn Sie Zugriff gewähren, erlauben Sie Ihrem Gerät lediglich das Schreiben von Datenprotokollen auf die SD-Karte des Geräts, sodass Sie diese Protokolle mithilfe eines USB-Kabels woanders speichern können.
+    Wenn diese Meldung angezeigt wird, tippen Sie auf **ZULASSEN**. Sie können ruhig auf „ZULASSEN“ tippen, da **Microsoft niemals Ihre Telefonanrufe tätigt oder verwaltet!** Google steuert den Meldungstext, daher kann er von Microsoft nicht geändert werden. Um den Zugriff zuzulassen, ist dazu nur erforderlich, dass Sie Ihrem Gerät das Senden seiner IMEI-Nummer an Intune gestatten. Die IMEI ist eine Nummer, ähnlich einer Seriennummer, mit der ein mobiles Gerät eindeutig identifiziert wird.
 
     Wenn Sie den Zugriff verweigern, wird die Meldung bei Ihrer nächsten Anmeldung beim Unternehmensportal angezeigt. Sie können künftige Meldungen jedoch deaktivieren, indem Sie das Kontrollkästchen **Nicht mehr nachfragen** aktivieren.  Wenn Sie den Zugriff später erlauben möchten, wechseln Sie zu **Einstellungen** &gt; **Apps** &gt; **Unternehmensportal** &gt; **Berechtigungen** &gt; **Telefon**, um die Berechtigung zu aktivieren.
 
@@ -81,7 +81,7 @@ Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftre
 
     Wenn diese Meldung angezeigt wird, tippen Sie auf **ZULASSEN**. Sie können ruhig auf „ZULASSEN“ tippen, da **Microsoft niemals auf Ihre Kontakte zugreift!** Google steuert den Meldungstext, daher kann er von Microsoft nicht geändert werden. Wenn Sie Zugriff gewähren, wird der Unternehmensportal-App lediglich das Erstellen, Verwenden und Verwalten Ihres Geschäftskontos erlaubt.
 
-    Wenn Sie den Zugriff verweigern, wird die Meldung beim nächsten Tippen auf **Daten senden** angezeigt. Sie können künftige Meldungen jedoch deaktivieren, indem Sie das Kontrollkästchen **Nicht mehr nachfragen** aktivieren. Wenn Sie den Zugriff später erlauben möchten, wechseln Sie zu **Einstellungen** &gt; **Apps** &gt; **Unternehmensportal** &gt; **Berechtigungen** &gt; **Speicher**, um die Berechtigung zu aktivieren.
+    Wenn Sie den Zugriff verweigern, wird die Meldung bei Ihrer nächsten Anmeldung beim Unternehmensportal angezeigt. Sie können künftige Meldungen jedoch deaktivieren, indem Sie das Kontrollkästchen **Nicht mehr nachfragen** aktivieren.  Wenn Sie den Zugriff später erlauben möchten, wechseln Sie zu **Einstellungen** &gt; **Apps** &gt; **Unternehmensportal** &gt; **Berechtigungen** &gt; **Telefon**, um die Berechtigung zu aktivieren.
 
 11.  Klicken Sie auf dem Bildschirm **Geräteadministrator aktivieren** auf **Aktivieren**.
 
@@ -116,6 +116,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

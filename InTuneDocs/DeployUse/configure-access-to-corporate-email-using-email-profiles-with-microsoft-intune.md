@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8a4fd4673560d6e2ffb4264ba8d8e56b0e5cb8d
-ms.openlocfilehash: 59b8cc2ad33521fd4575e46d78129c168da757b3
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: ef4041b7d9f47d9e1e1463e62274f93597fc6503
 
 
 ---
@@ -31,7 +31,7 @@ IT-Administratoren oder Benutzer können auch alternative E-Mail-Clients install
 Sie können E-Mail-Profile verwenden, um den systemeigenen E-Mail-Client auf den folgenden Gerätetypen zu konfigurieren:
 -   Windows Phone 8 und höher
 -   Windows 10 (Desktopversion), Windows 10 Mobile und höher
--   iOS 7.1 und höher
+-   iOS 8.0 und höher
 -   Samsung KNOX Standard (4.0 und höher)
 
 Sie können nicht nur ein E-Mail-Konto auf dem Gerät einrichten, sondern auch, wie viele E-Mails und welche Inhaltstypen synchronisiert werden sollen, abhängig vom Gerätetyp.
@@ -71,7 +71,7 @@ Das Kennwort ist nicht im E-Mail-Profil enthalten, sodass der Benutzer dieses be
 
     -   **E-Mail-Profil für Samsung KNOX Standard (4.0 oder höher)**
 
-    -   **E-Mail-Profil (iOS 7.1 und höher)**
+    -   **E-Mail-Profil (iOS 8.0 und höher)**
 
     -   **E-Mail-Profil (Windows Phone 8 und höher)**
 
@@ -122,6 +122,6 @@ Eine Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeit
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

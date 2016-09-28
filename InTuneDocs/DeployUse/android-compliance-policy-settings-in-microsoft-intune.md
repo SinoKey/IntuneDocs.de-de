@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: f99158924b83254efedb8663b9d6175a6b6775b1
+ms.sourcegitcommit: 777c0ac6ea309db81b127fb254e0c5f88444e475
+ms.openlocfilehash: cf1fde5b5ed55552e573c724b6165203033683da
 
 
 ---
@@ -66,7 +66,14 @@ Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folge
 - **USB-Debuggen muss deaktiviert sein (Android 4.2 oder höher)**: Diese Einstellung gibt an, ob die Option für USB-Debuggen auf dem Gerät aktiviert ist.
 - **Aktivierung von „Gerät auf Sicherheitsbedrohungen überprüfen“ auf Geräten erforderlich (Android 4.2-4.4)**: Diese Einstellung gibt an, dass die Option **Apps überprüfen** auf dem Gerät aktiviert ist.
 - **Niedrigste zulässige Android-Sicherheitspatchebene (Android 6.0 und höher)**: Geben Sie mit dieser Einstellung die niedrigste Android-Patchebene an.  Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht kompatibel. Das Datum muss im folgenden Format angegeben werden: JJJJ-MM-TT.
+- **Schutz vor Gerätebedrohungen muss aktiviert sein**: Verwenden Sie diese Einstellung, um die Risikobewertung mit der Lookout MTP-Lösung als Kompatibilitätsvoraussetzung zu fordern. Wählen Sie aus den folgenden Optionen die maximal zulässige Bedrohungsstufe aus:
 
+  - **Keine (geschützt)**: Dies ist die sicherste Einstellung. Dies bedeutet, dass das Gerät keinerlei Bedrohungen unterliegen darf. Wenn auf dem Gerät Bedrohungen jeglicher Stufe erkannt werden, wird es als nicht kompatibel bewertet.
+  - **Niedrig**: Das Gerät wird als kompatibel bewertet, wenn nur Bedrohungen niedriger Stufen vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
+  - **Mittel**: Das Gerät wird als kompatibel bewertet, wenn die auf dem Gerät gefundenen Bedrohungen niedriger oder mittlerer Stufe sind. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
+  - **Hoch**: Dies ist die unsicherste Einstellung. Mit dieser Einstellung werden grundsätzlich alle Bedrohungsstufen zugelassen. Sie ist daher wahrscheinlich nur für Berichtszwecke sinnvoll.
+
+  Weitere Informationen finden Sie unter [Aktivieren der Regel zum Schutz vor Bedrohungen auf dem Gerät in der Kompatibilitätsrichtlinie](enable-device-threat-protection-rule-in-compliance-policy.md).
 
 ## Einstellungen für Geräteeigenschaften
 - **Minimal erforderliches Betriebssystem:** Wenn ein Gerät die Anforderungen für die minimal erforderliche Betriebssystemversion nicht erfüllt, wird es als nicht kompatibel gemeldet.
@@ -76,6 +83,6 @@ Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folge
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
-ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: daecea644300ee1e47db9b028b72d71b3211f46d
 
 
 
@@ -55,12 +55,18 @@ Stellen Sie sicher, dass Sie den Punkt am Anfang eingeben.
 4. Wählen Sie **OK** aus, speichern Sie, und stellen Sie anschließend die Richtlinie bereit.
 
     > [!NOTE]
-Diese Richtlinie kann nur für Benutzergruppen bereitgestellt werden.
+    > Diese Richtlinie kann nur für Benutzergruppen bereitgestellt werden.
 
 Wenn sich die einzelnen Geräte das nächste Mal anmelden, wird die Richtlinie angewendet, und auf dem Gerät wird ein WLAN-Profil erstellt. Das Gerät kann automatisch eine Verbindung mit dem Netzwerk herstellen.
 ## Android- oder Windows-WLAN-Profil
 
 Hier sehen Sie ein Beispiel für den XML-Code eines Android- oder Windows-WLAN-Profils:
+
+> [!IMPORTANT]
+> 
+> `<protected>false</protected>`: Auf **FALSCH** festgelegt, da **WAHR** dazu führen könnte, dass das Gerät ein verschlüsseltes Kennwort erwartet, das es dann zu entschlüsseln versucht, was einen Verbindungsfehler bewirken würde.
+> 
+>  `<hex>53534944</hex>` sollte auf den hexadezimalen Wert von `<name><SSID of wifi profile></name>` festgelegt werden.
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -70,6 +76,7 @@ Hier sehen Sie ein Beispiel für den XML-Code eines Android- oder Windows-WLAN-P
     <Type of encryption> = Type of encryption used by the network
     <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
     <password> = Password to connect to the network
+    <hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
     -->
     <WLANProfile
     xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -207,6 +214,6 @@ Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informa
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

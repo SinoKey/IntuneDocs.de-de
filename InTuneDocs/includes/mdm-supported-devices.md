@@ -1,5 +1,5 @@
 
-  - Apple iOS 7.1 und höher
+  - Apple iOS 8.0 und höher
   - Google Android 4.0 und höher (einschließlich Samsung KNOX SDK 4.0 und höher)
   - Windows Phone 8.0 und höher
   - Windows RT und Windows 8.1 RT

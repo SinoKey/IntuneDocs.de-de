@@ -4,7 +4,7 @@ description: "Stellen Sie die Managed Browser-Anwendung bereit, um das Browsen i
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/03/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fcd53d335aa18701ba0b8c3c75569febbee2cd5
-ms.openlocfilehash: d07a5dde05055c54f5b89c8aa5f49203d0a22b97
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: d4d05508e44fe0864ce6dabf0864f6ed67109a7c
 
 
 ---
@@ -34,7 +34,7 @@ Sie können Richtlinien für verwaltete Browser für die folgenden Gerätetypen 
 
 -   Geräte unter Android 4 und höher
 
--   Geräte unter iOS 7.1 und höher
+-   Geräte unter iOS 8.0 und höher
 
 Intune Managed Browser unterstützt das Öffnen von Webinhalten von [Microsoft Intune-Anwendungspartnern](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
@@ -44,9 +44,9 @@ Intune Managed Browser unterstützt das Öffnen von Webinhalten von [Microsoft I
 
 2.  Konfigurieren Sie einen der folgenden Richtlinientypen für **Software** :
 
-    -   **Richtlinie für Managed Browser (Android 4 und höher)**
+    -   **Managed Browser (Android 4 und höher)**
 
-    -   **Richtlinie für Managed Browser (iOS 7.1 und höher)**
+    -   **Managed Browser (iOS 8.0 und höher)**
 
     Weitere Informationen zum Erstellen und Bereitstellen von Richtlinien finden Sie im Thema [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -154,6 +154,6 @@ Wenn mehrere Richtlinien für Managed Browser für ein Gerät bereitgestellt wer
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -4,7 +4,7 @@ description: "Beschreibt das Registrieren Ihres Windows 10-Geräts (mobil oder 
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/27/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d1df63c349685333fbebcbba527e46b1f3047f43
-ms.openlocfilehash: a34d3fb4fe45ad4dd6da3dfacc832f0e97b5bee6
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: fb950108f3232af8049e90af977b0f3f9f2b3576
 
 
 ---
@@ -59,7 +59,7 @@ So registrieren Sie Ihr Windows 10 Mobile- oder Windows 10-Desktopgerät:
 
 4. Wenn die Seite **Alles bereit!** angezeigt wird, tippen Sie auf **Schließen**. Der Vorgang ist abgeschlossen.
 
-  ![Tap close on the "You're all set!" screen](./media/w10-enroll-rs1-youre-all-set.png)
+  ![Klicken Sie auf dem Bildschirm „Alles erledigt!" auf „Schließen“.](./media/w10-enroll-rs1-youre-all-set.png)
 
 5. Wenn Sie die Verbindung noch einmal überprüfen möchten, kehren Sie zu den **Einstellungen** zurück. Ihr Geschäfts-, Schul- oder Unikonto wird jetzt aufgeführt.
 
@@ -106,6 +106,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

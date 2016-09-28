@@ -1,5 +1,5 @@
 ---
-title: "Hinzufügen von Apps für Windows-PCs | Microsoft Intune"
+title: "Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird | Microsoft Intune"
 description: "In diesem Thema erfahren Sie, wie Sie Apps für Windows-PCs zu Intune hinzufügen, bevor Sie sie bereitstellen."
 keywords: 
 author: robstackmsft
@@ -13,18 +13,18 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 24767de9ad5a1f0ebe6f713018098a5dd692466e
+ms.sourcegitcommit: f01f2715ebd5666b53de848f06300e7aa3344caf
+ms.openlocfilehash: 33ef6a417c38ab04095afc8fb7573ea92253f229
 
 
 ---
 
-# Hinzufügen von Apps für Windows-PCs in Microsoft Intune
+# Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird
 
 In diesem Thema erfahren Sie, wie Sie Apps zu Intune hinzufügen, bevor Sie sie bereitstellen.
 
 > [!IMPORTANT]
-> Die Informationen in diesem Thema helfen Ihnen beim Hinzufügen von Apps für Windows-PCs, die Sie mithilfe der Intune-PC-Clientsoftware verwalten. Wenn Sie Apps für registrierte Windows-PCs und andere mobile Geräte hinzufügen möchten, finden Sie weitere Informationen unter [Hinzufügen von Apps für mobile Geräte in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+> Die Informationen in diesem Thema helfen Ihnen beim Hinzufügen von Apps für Windows-PCs, die Sie mithilfe des Intune-Softwareclients verwalten. Wenn Sie Apps für registrierte Windows-PCs und andere mobile Geräte hinzufügen möchten, finden Sie weitere Informationen unter [Hinzufügen von Apps für mobile Geräte in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 
 ## Hinzufügen der App
@@ -90,6 +90,6 @@ Nachdem Sie eine App erstellt haben, umfasst der nächste Schritt die Bereitstel
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

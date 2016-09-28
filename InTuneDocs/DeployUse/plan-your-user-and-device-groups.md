@@ -44,7 +44,7 @@ Richtlinien werden für Gruppen bereitgestellt, daher ist die Gruppenhierarchie 
 
     * **Gerätegruppen**. Hierbei sind sowohl Computer als auch mobile Geräte enthalten. Bevor Sie einer Gruppe einen Computer hinzufügen können, muss dieser registriert werden. Bevor Sie einer Gruppe ein mobiles Gerät hinzufügen können, muss Ihre Umgebung für die Unterstützung mobiler Geräte konfiguriert werden, und die Geräte müssen entweder registriert oder über Exchange ActiveSync ermittelt werden.
 
-    * **Benutzergruppen**. Eine Gruppe kann Benutzer aus Sicherheitsgruppen aufweisen. Sicherheitsgruppen sind mit Ihrer Active Directory-Instanz synchronisiert. Wenn Sie keine Active Directory-Synchronisierung verwenden, können sie diese Gruppen manuell erstellen.
+    * **Benutzergruppen**. Eine Gruppe kann Benutzer aus Sicherheitsgruppen aufweisen. Sicherheitsgruppen sind mit Ihrer Active Directory-Instanz synchronisiert. Wenn Sie keine Active Directory-Synchronisierung verwenden, können Sie diese Gruppen manuell erstellen.
 
 - Ein Gerät oder ein Benutzer kann zu mehr als einer Gruppe gehören.
 
@@ -74,7 +74,7 @@ Richtlinien werden für Gruppen bereitgestellt, daher ist die Gruppenhierarchie 
 
 - Beim Löschen einer übergeordneten Gruppe werden alle untergeordneten Gruppen gelöscht.
 
-- Es ist möglich, Inhalt und Richtlinien für eine übergeordnete Gruppe bereitzustellen aber die Bereitstellung für untergeordnete Gruppen auszuschließen.
+- Es ist möglich, Inhalt und Richtlinien für eine übergeordnete Gruppe bereitzustellen, aber die Bereitstellung für untergeordnete Gruppen auszuschließen.
 
 - Sie können bestimmte Benutzer oder Geräte einer untergeordneten Gruppe hinzufügen, wenn der Benutzer oder das Gerät noch kein Mitglied der übergeordneten Gruppe ist. Wenn Sie dies tun, wird das neue Mitglied der untergeordneten Gruppe der übergeordneten Gruppe hinzugefügt.
 
@@ -116,7 +116,7 @@ In Intune sind neun integrierte Gruppen verfügbar, die Sie weder bearbeiten noc
 
 
 ### Alle Benutzer und Geräte in Ihrem Unternehmen
-Definieren Sie eine übergeordnete Gruppe für alle Benutzer und Geräte in Ihrem Unternehmen. Sie verfügen wahrscheinlich über Richtlinien, die für alle gelten. Zu diesem Zweck können Sie die Intune-Standardgruppen **Alle Benutzer** und **Alle Geräte** in Intune verwenden. Untergruppen, die Geräte nach speziellen Eigenschaften organisieren, z.B. eine Gruppe für Ihre eigenen Geräte (Bring Your Own Device, BYOD) und eine Gruppe für unternehmenseigene Geräte (Corporate-Owned; CO), können den übergeordneten Gruppen **Alle Benutzer** und **Alle Geräte** untergeordnet sein.
+Definieren Sie eine übergeordnete Gruppe für alle Benutzer und Geräte in Ihrem Unternehmen. Sie verfügen wahrscheinlich über Richtlinien, die für alle gelten. Zu diesem Zweck können Sie die Intune-Standardgruppen **Alle Benutzer** und **Alle Geräte** verwenden. Untergruppen, die Geräte nach speziellen Eigenschaften organisieren, z.B. eine BYOD-Gruppe (Bring Your Own Device) und eine Gruppe für unternehmenseigene Geräte (Corporate-Owned, CO), können den übergeordneten Gruppen **Alle Benutzer** und **Alle Geräte** untergeordnet sein.
 
 ## Anpassen von Gruppen für Ihre Organisation
 
@@ -134,9 +134,9 @@ Ebenso können Sie eine Gruppe für die Benutzer eines CO-Geräts in Ihrer Organ
 <!---START HERE--->
 
 ### Gruppen für geografische Regionen
-Wenn Ihre Organisation Richtlinien für bestimmte Regionen benötigt, können Sie Gruppen basierend auf der geografischen Region erstellen. Sie können diese auf Grundlage regionaler Gruppen anlegen, die Sie möglicherweise bereits in Ihrer Active Directory-Instanz erstellt haben, und sie mit Azure Active Directory synchronisieren. Sie können regionale Gruppen auch direkt in Azure Active Directory erstellen.
+Wenn Ihre Organisation Richtlinien für bestimmte Regionen benötigt, können Sie Gruppen basierend auf der geografischen Region erstellen. Sie können diese auf Grundlage regionaler Gruppen anlegen, die Sie möglicherweise bereits in Ihrer Active Directory-Instanz erstellt haben, und Sie mit Azure Active Directory synchronisieren. Sie können regionale Gruppen auch direkt in Azure Active Directory erstellen.
 
-Die nächsten Screenshots zeigen Ihnen, wie Sie Intune-Gruppen basierend auf Gruppen erstellen, die mit Ihrer lokalen Active-Directory-Instanz synchronisiert sind. In diesen Beispielen wird vorausgesetzt, dass Sie über eine Active Directory-Sicherheitsgruppe namens **US Users Group** verfügen.
+Die nächsten Screenshots zeigen Ihnen, wie Sie Intune-Gruppen basierend auf Gruppen erstellen, die mit Ihrer lokalen Active Directory-Instanz synchronisiert sind. In diesen Beispielen wird vorausgesetzt, dass Sie über eine Active Directory-Sicherheitsgruppe namens **US Users Group** verfügen.
 
 Stellen Sie zunächst allgemeine Informationen bereit.
 
@@ -150,13 +150,13 @@ Wählen Sie unter den **Mitgliedschaftskriterien** die Gruppe **US Users Group**
 
 ![Screenshot des Dialogfelds „Gruppe bearbeiten“](../media/Intune_Planning_Groups_AD_Summary_small.png)
 
-In unserem Beispiel haben wir auch eine Gruppe namens **MEA**, die den nahen Osten und Asien (MEA) umfasst.
+In unserem Beispiel haben wir auch eine Gruppe namens **MEA**, die den Nahen Osten und Asien (MEA) umfasst.
 
 > [!NOTE]
 > Wenn die Gruppenmitgliedschaft nicht auf Basis der Mitgliedschaft in Sicherheitsgruppen entschieden wird, stellen Sie sicher, dass Sie Gruppenmitgliedern Intune-Lizenzen zugewiesen haben.
 
 ### Gruppen für bestimmte Hardware
-Wenn Ihre Organisation Richtlinien benötigt, die auf bestimmte Hardwaretypen angewendet werden, können Sie die Gruppen auf Basis dieser Anforderung erstellen. Sie können die Richtlinien basierend auf bestimmten Gruppen anlegen, die Sie bereits in Ihrer lokalen Active Directory-Instanz erstellt haben, und sie anschließend mit Azure Active Directory synchronisieren. Sie können Gruppen auch direkt in Azure Active Directory erstellen. In diesem Beispiel verwenden wir **US Users Group** als übergeordnete Gruppe für die Gruppe der **Laptopbenutzer**.
+Wenn Ihre Organisation Richtlinien benötigt, die auf bestimmte Hardwaretypen angewendet werden, können Sie die Gruppen auf Basis dieser Anforderung erstellen. Sie können die Richtlinien basierend auf bestimmten Gruppen anlegen, die Sie bereits in Ihrer lokalen Active Directory-Instanz erstellt haben, und Sie anschließend mit Azure Active Directory synchronisieren. Sie können Gruppen auch direkt in Azure Active Directory erstellen. In diesem Beispiel verwenden wir **US Users Group** als übergeordnete Gruppe für die Gruppe der **Laptopbenutzer**.
 
 ![Dialogfeld „Sicherheitsgruppe auswählen“](../media/Intune_Planning_Groups_Laptop_small.png)
 
@@ -165,20 +165,20 @@ An diesem Punkt sollte die Hierarchie Ihrer Gruppe ähnlich wie der nächste Scr
 ![Anzeigen der Gruppe „Laptopbenutzer“](../media/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
 
 ### Gruppen für bestimmte Betriebssysteme
-Wenn Ihr Unternehmen Richtlinien benötigt, die auf bestimmte Betriebssysteme wie Android, iOS oder Windows angewendet werden, können Sie die Gruppen auf Basis dieser Anforderung erstellen. Wie in früheren Beispielen gezeigt, können Sie diese auf Basis betriebssystemspezifischer Gruppen anlegen, die Sie bereits in Ihrer lokalen Active Directory-Instanz erstellt haben, und sie mit Azure Active Directory synchronisieren. Sie können sie auch direkt in Ihrer Azure Active Directory-Instanz erstellen.
+Wenn Ihr Unternehmen Richtlinien benötigt, die auf bestimmte Betriebssysteme wie Android, iOS oder Windows angewendet werden, können Sie die Gruppen auf Basis dieser Anforderung erstellen. Wie in früheren Beispielen gezeigt, können Sie diese auf Basis betriebssystemspezifischer Gruppen anlegen, die Sie bereits in Ihrer lokalen Active Directory-Instanz erstellt haben, und Sie mit Azure Active Directory synchronisieren. Sie können Sie auch direkt in Ihrer Azure Active Directory-Instanz erstellen.
 
-Mithilfe derselben Methode aus vorherigen Beispielen können Sie Gruppen erstellen, die auf Benutzern <!--devices?--> basieren, die bestimmte Betriebssystemplattformen verwenden.
+Mithilfe der in früheren Beispielen vorgestellten Methode können Sie Gruppen erstellen, die auf Benutzern <!--devices?--> basieren, die bestimmte Betriebssystemplattformen verwenden.
 
 > [!NOTE]
 > Wenn Sie über Benutzer verfügen, die mehrere mobile Plattformen/Betriebssysteme verwenden, und Sie keine automatisierte Möglichkeit zum Kategorisieren von Benutzern als Android-, iOS- oder Windows-Benutzer haben, sollten Sie die Anwendung der Richtlinien auf Geräteebene erwägen. Dadurch erhalten Sie mehr Flexibilität bei der Anwendung von betriebssystemspezifischen Richtlinien.
 >
 > Sie können keine Gruppen bereitstellen, die dynamisch auf dem Betriebssystem des Geräts basieren. Führen Sie stattdessen diesen Schritt aus, indem Sie Active Directory oder die Sicherheitsgruppen von Azure Active Directory verwenden.
 
-![Laptopbenutzergruppe](../media/Intune_Planning_Groups_OS_Hierachy_small.png)
+![Gruppe „Laptopbenutzer“](../media/Intune_Planning_Groups_OS_Hierachy_small.png)
 
 Nachdem alle Ihre Benutzergruppen basierend auf diesen Anforderungen Ihres Unternehmens aufgefüllt wurden, sollte die Gruppenhierarchie in etwa wie folgt aussehen:
 
-![Group hierarchy view](../media/Intune_Planning_Groups_Midpoint_Hierachy_small.png)
+![Ansicht der Gruppenhierarchie](../media/Intune_Planning_Groups_Midpoint_Hierachy_small.png)
 
 Sie können diese Hierarchie dazu verwenden, die Richtlinien des Unternehmens anzuwenden.
 
@@ -187,7 +187,7 @@ Sie können auch ähnliche Gruppen für Geräte erstellen, wie hier gezeigt, wob
 
 ![Dialogfeld „Gruppe erstellen“](../media/Intune_Planning_Groups_Device_General_small.png)
 
-Stellen Sie sicher, dass Sie die Option **Alle Geräte (Computer und mobile Geräte)** auswählen, damit die Gruppe alle BYO-Geräte umfasst:
+Stellen Sie sicher, dass Sie die Option **Alle Geräte (Computer und mobile Geräte)** auswählen, damit die Gruppe alle BYOD-Geräte umfasst:
 
 ![Seite „Mitgliedschaftskriterien definieren“](../media/Intune_Planning_Groups_Device_Criteria_small.png)
 
@@ -200,13 +200,13 @@ Setzen Sie die Erstellung der Gerätegruppen fort, bis Sie über eine Gerätegru
 ![Intune-Ansicht der Gruppenhierarchie](../media/Intune_Groups_Hierarchy_Final_Small.png)
 
 ## Gruppenhierarchien und Benennungskonventionen
-Zur Vereinfachung der Richtlinienverwaltung wird empfohlen, dass Sie jede Richtlinie gemäß dem Zweck, der Plattform und dem Bereich ihrer Anwendung benennen. Verwenden Sie einen Benennungsstandard, der die Struktur befolgt, die Sie erstellt haben, als Sie sich darauf vorbereitet haben, Ihre Richtlinien anzuwenden.
+Zur Vereinfachung der Richtlinienverwaltung wird empfohlen, jede Richtlinie gemäß dem Zweck, der Plattform und dem Bereich ihrer Anwendung zu benennen. Verwenden Sie einen Benennungsstandard, der die Struktur befolgt, die Sie erstellt haben, als Sie sich darauf vorbereitet haben, Ihre Richtlinien anzuwenden.
 
 Eine Android-Richtlinie, die auf alle unternehmenseigenen mobilen Android-Geräte in den USA angewendet wird, kann z.B. wie folgt benannt werden: **CO_US_Mob_Android_General**
 
 ![Erstellen einer Richtlinie für Android](../media/Intune_planning_policy_android_small.png)
 
-Wenn sie Ihre Richtlinien auf diese Art benennen, können Sie Richtlinien sowie deren vorgesehenen Zweck und Gültigkeitsbereich im **Richtlinienknoten** erkennen, wie nachfolgend dargestellt:
+Wenn Sie Ihre Richtlinien auf diese Art benennen, können Sie Richtlinien sowie deren vorgesehenen Zweck und Gültigkeitsbereich im **Richtlinienknoten** erkennen, wie nachfolgend dargestellt:
 
 ![Liste der Intune-Richtlinien](../media/Intune_planning_policy_view_small.png)
 

@@ -13,8 +13,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
-ms.openlocfilehash: a13c03cde29c46a78577b58f85daad30a076bf89
+ms.sourcegitcommit: a4cc8b7e34e8809eebd7fdec8ffac0599c96d309
+ms.openlocfilehash: ce27fc737fdf47903d7554eb15f24f07b3524406
 
 
 ---
@@ -43,7 +43,7 @@ Der Intune-Softwareclient verwaltet Softwareupdates, Windows-Firewall und Endpoi
 
 |Anforderungen|Weitere Informationen|
 |---------------|--------------------|
-|Betriebssystem | Auf dem Windows-Gerät muss Windows 7 oder höher ausgeführt werden. |
+|Betriebssystem | Windows-Gerät, auf dem Windows Vista oder höher ausgeführt wird. Versionen der Home-Edition werden nicht unterstützt.|
 |Administratorrechte|Das Konto, mit dem die Clientsoftware installiert wird, muss über lokale Administratorrechte auf diesem Gerät verfügen.|
 |Windows Installer 3.1|Auf dem PC wird Windows Installer 3.1 oder höher benötigt.<br /><br />So zeigen Sie die Windows Installer-Version auf einem PC an:<br /><br />– Klicken Sie auf dem PC mit der rechten Maustaste auf **%windir%\System32\msiexec.exe**, und klicken Sie dann auf **Eigenschaften**.<br /><br />Sie können die neueste Version von Windows Installer von der Microsoft Developer Network-Website unter [Windows Installer Redistributables (Weitervertreibbare Komponenten für Windows Installer)](http://go.microsoft.com/fwlink/?LinkID=234258) herunterladen.|
 |Entfernen nicht kompatibler Clientsoftware|Bevor Sie die Intune-Clientsoftware installieren, müssen Sie alle auf dem PC vorhandene Configuration Manager- oder Systems Management Server-Clientsoftware deinstallieren.|
@@ -75,6 +75,6 @@ Der Intune-Client-Agent wird in der Regel im Hintergrund ausgeführt – Benutze
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

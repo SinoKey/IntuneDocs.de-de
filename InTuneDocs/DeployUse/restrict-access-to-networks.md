@@ -4,7 +4,7 @@ description: "Verwenden Sie Cisco ISE mit Intune, damit Geräte bei Intune regis
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 06/24/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
-ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
+ms.sourcegitcommit: ecaf92b327538e3da4df268e4c67c73af262b731
+ms.openlocfilehash: fa73c5e2b4e6737377acd206807399b31df37364
 
 
 ---
@@ -27,7 +27,7 @@ Die Intune-Integration mit Cisco Identity Services Engine (ISE) erlaubt Ihnen, i
 Sie müssen keine Einrichtungsschritte in Ihrem Intune-Mandanten vornehmen, um diese Integration zu aktivieren. Sie müssen Berechtigungen für Ihren Cisco ISE-Server für den Zugriff auf den Intune-Mandanten bereitstellen. Nachdem dies erfolgt ist, wird der Rest des Setups auf Ihrem Cisco ISE-Server durchgeführt. In diesem Artikel erhalten Sie Anweisungen, wie Sie für Ihren ISE-Server die Berechtigungen bereitstellen, auf Ihren Intune-Mandanten zuzugreifen.
 
 ### Schritt 1: Verwalten der Zertifikate
-1. Exportieren Sie das Zertifikat in der Azure Active Directory-Konsole (Azure AD).
+Exportieren Sie die Zertifikate aus der Azure Active Directory-Konsole (Azure AD), und importieren Sie sie anschließend in den Speicher „Vertrauenswürdige Zertifikate“ der ISE-Konsole:
 
 #### Internet Explorer 11
 
@@ -44,6 +44,8 @@ Sie müssen keine Einrichtungsschritte in Ihrem Intune-Mandanten vornehmen, um d
 
    f. Wählen Sie auf der Seite **Zu exportierende Datei** **Durchsuchen** aus, um einen Speicherort zum Speichern der Datei auszuwählen, und geben Sie einen Dateinamen ein. Obwohl es so aussieht, als ob Sie eine Datei zum exportieren auswählen, benennen Sie tatsächlich die Datei, in der das exportierte Zertifikat gespeichert wird. Wählen Sie **Weiter** &gt; **Fertig stellen** aus.
 
+   g. Importieren Sie von der ISE-Konsole aus das Intune-Zertifikat (die Datei, die Sie exportiert haben) in den **Vertrauenswürde Zertifikate**-Speicher.
+
 #### Safari
 
  a. Melden Sie sich bei der Azure AD-Konsole an.
@@ -52,14 +54,13 @@ b. Wählen Sie das Schlosssymbol aus &gt;  **Weitere Informationen**.
 
    c. Wählen Sie **Zertifikat anzeigen** &gt; **Details** aus.
 
-   d. Wählen Sie das Zertifikat und anschließend **Exportieren** aus.  
+   d. Wählen Sie das Zertifikat und anschließend **Exportieren** aus. 
+
+   e. Importieren Sie von der ISE-Konsole aus das Intune-Zertifikat (die Datei, die Sie exportiert haben) in den **Vertrauenswürde Zertifikate**-Speicher.
 
 > [!IMPORTANT]
 >
 > Überprüfen Sie das Ablaufdatum des Zertifikats, da Sie ein neues Zertifikat exportieren und importieren müssen, wenn dieses abläuft.
-
-
-2. Importieren Sie von der ISE-Konsole aus das Intune-Zertifikat (die Datei, die Sie exportiert haben) in den **Vertrauenswürde Zertifikate**-Speicher.
 
 
 ### Abrufen eines selbstsignierten Zertifikats von ISE 
@@ -97,8 +98,57 @@ Stellen Sie sicher, dass sich der gesamte Text in einer Zeile befindet
 |OAuth 2.0-Tokenendpunkt|Token ausgebende URL|
 |Code mit Client-ID aktualisieren|Client-ID|
 
+### Schritt 4: Hochladen des selbstsignierten Zertifikats aus ISE in die ISE-App, die Sie in Azure AD erstellt haben
+1.     Rufen Sie den base64-codierten Zertifikatswert und Fingerabdruck aus einer öffentlichen CER X509-Zertifikatsdatei ab. In diesem Beispiel wird PowerShell verwendet:
+   
+      
+    `$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2`
+     `$cer.Import(“mycer.cer”)`
+      `$bin = $cer.GetRawCertData()`
+      `$base64Value = [System.Convert]::ToBase64String($bin)`
+      `$bin = $cer.GetCertHash()`
+      `$base64Thumbprint = [System.Convert]::ToBase64String($bin)`
+      `$keyid = [System.Guid]::NewGuid().ToString()`
+ 
+    Speichern Sie die Werte für „$base64Thumbprint“, „$base64Value“ und „$keyid“, die im nächsten Schritt verwendet werden.
+2.       Laden Sie das Zertifikat mithilfe der Manifestdatei hoch. Melden Sie sich beim [Azure-Verwaltungsportal](https://manage.windowsazure.com) an
+2.      Suchen Sie im Azure AD-Snap-In die Anwendung, die Sie mit einem X.509-Zertifikat konfigurieren möchten.
+3.      Laden Sie die Anwendungsmanifestdatei herunter. 
+5.      Ersetzen Sie die leere Eigenschaft „KeyCredentials“: [] durch den folgenden JSON-Code.  Der komplexe Typ „KeyCredentials“ ist in der [Entity and complex type reference (Referenz zu Entitäten und komplexen Typen)](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType) dokumentiert.
 
-### Schritt 3: Konfigurieren der ISE-Einstellungen
+ 
+    `“keyCredentials“: [`
+    `{`
+     `“customKeyIdentifier“: “$base64Thumbprint_from_above”,`
+     `“keyId“: “$keyid_from_above“,`
+     `“type”: “AsymmetricX509Cert”,`
+     `“usage”: “Verify”,`
+     `“value”:  “$base64Value_from_above”`
+     `}2. `
+     `], `
+ 
+Beispiel:
+ 
+    `“keyCredentials“: [`
+    `{`
+    `“customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,`
+    `“keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,`
+    `“type”: “AsymmetricX509Cert”,`
+    `“usage”: “Verify”,`
+    `“value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”`
+    `}`
+    `],`
+ 
+6.      Speichern Sie die Änderung an der Anwendungsmanifestdatei.
+7.      Laden Sie die bearbeitete Anwendungsmanifestdatei mithilfe des Azure-Verwaltungsportals hoch.
+8.      Optional: Laden Sie das Manifest erneut herunter, um zu überprüfen, ob Ihr X.509-Zertifikat in der Anwendung vorhanden ist.
+
+>[!NOTE]
+>
+> „KeyCredentials“ ist eine Sammlung, daher können Sie in Rolloverszenarien mehrere X.509-Zertifikate hochladen oder Zertifikate in Kompromittierungsszenarien löschen.
+
+
+### Schritt 4: Konfigurieren der ISE-Einstellungen
 Geben Sie in der Verwaltungskonsole von ISE diese Einstellungswerte ein:
   - **Servertyp**: Mobile Device Manager
   - **Authentifizierungstyp**: OAuth – Anmeldeinformationen des Clients
@@ -150,6 +200,6 @@ Es gibt auch [herunterladbare Registrierungsanweisungen](https://gallery.technet
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
