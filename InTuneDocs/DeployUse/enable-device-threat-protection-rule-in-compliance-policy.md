@@ -13,8 +13,8 @@ ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa05027e1785bb27a607aa9e31b685107a84f63f
-ms.openlocfilehash: 3de68238515a2584b6f1a5785e13688097468415
+ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
+ms.openlocfilehash: c074dd8850aef8cec79a9362222c3678d679bf4f
 
 
 ---
@@ -22,18 +22,18 @@ ms.openlocfilehash: 3de68238515a2584b6f1a5785e13688097468415
 # Aktivieren der Regel zum Schutz vor Bedrohungen von mobilen Geräten in der Kompatibilitätsrichtlinie
 Intune mit Lookout Mobile Threat Protection gibt Ihnen die Möglichkeit, Bedrohungen von mobilen Geräten zu erkennen und eine Risikobewertung für das Gerät vorzunehmen. Sie können eine Regel für die Kompatibilitätsrichtlinie erstellen, in die die Risikoanalyse zum Bestimmen einbezogen wird, ob das Gerät kompatibel ist. Anschließend können Sie die Regel für bedingten Zugriff verwenden, um den Zugriff auf Exchange, SharePoint und andere Dienste auf Grundlage der Gerätekompatibilität zuzulassen oder zu blockieren.
 
-So geben Sie der Lookout MTP-Bedrohungserkennung Einfluss auf die Kompatibilitätsrichtlinie für das Gerät:
+So geben Sie der Lookout-Bedrohungserkennung für Geräte Einfluss auf die Kompatibilitätsrichtlinie für das Gerät:
 
 * Die Regel **Schutz vor Gerätebedrohungen** muss in der Kompatibilitätsrichtlinie aktiviert sein.
 
 * Die Seite **Lookout-Status** in der **Intune-Verwaltungskonsole** muss als **Aktiv** angezeigt werden. Weitere Details und Anweisungen zum Aktivieren der Lookout-Integration finden Sie im Thema [Aktivieren der Lookout MTP-Verbindung in Intune](enable-lookout-mtp-connection-in-intune.md).
 
 
-Bevor Sie die Regel zum Schutz vor Gerätebedrohungen in der Unternehmensrichtlinie erstellen, sollten Sie [Ihr Abonnement für Lookout MTP einrichten](set-up-your-subscription-with-lookout-mtp.md), die [Lookout-Verbindung in Intune konfigurieren](enable-lookout-mtp-connection-in-intune.md) und die [Lookout for Work-App konfigurieren](configure-and-deploy-lookout-for-work-apps.md). Die Kompatibilitätsregel wird erst erzwungen, nachdem das Setup abgeschlossen wurde.
+Bevor Sie die Regel zum Schutz vor Gerätebedrohungen in der Unternehmensrichtlinie erstellen, sollten Sie [Ihr Abonnement für den Lookout-Schutz vor Gerätebedrohungen einrichten](set-up-your-subscription-with-lookout-mtp.md), die [Lookout-Verbindung in Intune konfigurieren](enable-lookout-mtp-connection-in-intune.md) und die [Lookout for Work-App konfigurieren](configure-and-deploy-lookout-for-work-apps.md). Die Kompatibilitätsregel wird erst erzwungen, nachdem das Setup abgeschlossen wurde.
 
 Um die Regel zum Schutz vor Gerätebedrohungen zu aktivieren, können Sie entweder eine vorhandene Kompatibilitätsrichtlinie verwenden oder eine neue erstellen.
 
-Im Rahmen des Lookout MTP-Setups haben Sie in der [Lookout MTP-Konsole](https://aad.lookout.com) eine Richtlinie erstellt, die verschiedene Bedrohungen in die Klassen hoch, mittel und schwer einstuft. In der Intune-Kompatibilitätsrichtlinie verwenden Sie die Bedrohungsstufe zum Festlegen der maximal zulässigen Bedrohungsstufe.
+Beim Setup des Lookout-Schutzes vor Gerätebedrohungen haben Sie in der [Lookout-Konsole](https://aad.lookout.com) eine Richtlinie erstellt, die verschiedene Bedrohungen in die Klassen hoch, mittel und schwer einstuft. In der Intune-Kompatibilitätsrichtlinie verwenden Sie die Bedrohungsstufe zum Festlegen der maximal zulässigen Bedrohungsstufe.
 
 Wechseln Sie in der **Intune-Verwaltungskonsole** auf der Seite **Kompatibilitätsrichtlinie** zu **Geräteintegrität**, und aktivieren Sie mithilfe der Umschaltoption die Regel **Schutz vor Gerätebedrohungen**. Wählen Sie anschließend die maximal zulässige Bedrohungsstufe aus, nämlich eine der folgenden:
 * **Keine (geschützt)**: Dies ist die sicherste Einstellung.  Dies bedeutet, dass das Gerät keinerlei Bedrohungen unterliegen darf.  Wenn Bedrohungen beliebiger Stufen gefunden werden, wird das Gerät als nicht kompatibel bewertet.  
@@ -61,6 +61,6 @@ Sie können den Kompatibilitätszustand eines Geräts in der **Intune-Verwaltung
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
