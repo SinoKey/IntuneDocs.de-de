@@ -13,8 +13,8 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 93c05ecd0154bb637f421dcc5d7ee56ff8d3ab2d
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: c4b1e5d3bb8b949096f7d15ddbbf0d1540485d0d
 
 
 ---
@@ -46,7 +46,7 @@ Auf externen Links basierende Apps werden nicht in Ihrem Intune-Cloudspeicher ge
 Sie können kostenlose iOS-Apps aus dem App Store mithilfe verwalteter iOS-Apps verwalten und bereitstellen. Sie können mithilfe verwalteter iOS-Apps auch [Richtlinien für die Verwaltung mobiler Anwendungen](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) mit [kompatiblen Apps](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) verknüpfen und ihren Status in der Administratorkonsole überprüfen.<br /><br />Verwaltete iOS-Apps werden nicht in Ihrem Intune-Cloudspeicher gespeichert.
 
 > [!TIP]
-> Optionen für mobile Geräte sind nicht verfügbar, bis Sie [die MDM-Autorität](get-ready-to-enroll-devices-in-microsoft-intune.md) auf Intune festgelegt haben.
+> Optionen für mobile Geräte sind nicht verfügbar, bis Sie [die MDM-Autorität](prerequisites-for-enrollment.md) auf Intune festgelegt haben.
 
 ## Intune-Softwareherausgeber
 Der Microsoft Intune-Softwareherausgeber wird gestartet, wenn Sie in der Intune-Administratorkonsole Apps hinzufügen oder ändern. Vom Herausgeber wählen und konfigurieren Sie einen Software-Installationsprogrammtyp, für den eine der folgenden Optionen gilt:
@@ -82,6 +82,6 @@ Sie müssen Apps in der Intune-Konsole hinzufügen, bevor Sie sie bereitstellen 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

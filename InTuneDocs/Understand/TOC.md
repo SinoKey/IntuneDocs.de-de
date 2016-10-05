@@ -9,19 +9,16 @@
 ### [Andere Optionen und Extras](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Nächste Schritte](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Häufige Szenarien](common-ways-to-use-intune.md)
-## [Erste Schritte](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
-### [Verhindern von Kompromittierungen im Unternehmen durch mobile Office 365-Apps](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
-### [Veröffentlichen mobiler Apps für Benutzer](publish-mobile-apps-to-users.md)
-### [Schützen von Windows-PCs vor Schadsoftware](protect-pcs-against-malware-threats.md)
-### [Vereinfachen der E-Mail-Konfiguration auf mobilen Geräten](simplify-email-configuration-on-mobile-devices.md)
+## [Glossar](intune-glossary.md)
 
 # [Erste Schritte](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Neuigkeiten](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Bereitstellen und Verwenden](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Entwickeln und Anpassen von Apps](/intune/develop/intune-app-sdk)
 # [Problembehandlung](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 
