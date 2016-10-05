@@ -1,5 +1,6 @@
 # [Verstehen und Kennenlernen](/intune/understand-explore/introduction-to-microsoft-intune)
 # [Erste Schritte](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Neuigkeiten](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Bereitstellen und Verwenden](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Entwickeln und Anpassen von Apps](intune-app-sdk.md)
 ## [Übersicht über Microsoft Intune App SDK](intune-app-sdk.md)
@@ -9,6 +10,6 @@
 # [Problembehandlung](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 

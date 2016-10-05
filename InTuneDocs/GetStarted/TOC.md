@@ -11,6 +11,12 @@
 ### [Nutzung der Netzwerkbandbreite](network-bandwidth-use.md)
 ### [Benutzerdefinierte Domänennamen](domain-names-for-microsoft-intune.md)
 
+## [Auswählen der Methode zum Verwalten von Geräten](choose-how-to-manage-devices.md)
+### [Verwaltungsfunktionen für registrierte Geräte](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Funktionen des Intune-PC-Softwareclients](windows-pc-management-capabilities-in-microsoft-intune.md)
+
+## [Migrieren zu Intune](migrate-to-intune.md)
+
 ## [Erste Schritte mit Intune](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Anmelden bei Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Konfigurieren eines benutzerdefinierten Domänennamens](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -22,10 +28,6 @@
 ### [Registrieren mobiler Geräte und Installieren einer App](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Aufgaben nach der Konfiguration](post-configuration-tasks.md)
 
-## [Auswählen der Methode zum Verwalten von Geräten](choose-how-to-manage-devices.md)
-### [Verwaltungsfunktionen für registrierte Geräte](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Funktionen des Intune-PC-Softwareclients](windows-pc-management-capabilities-in-microsoft-intune.md)
-
 ## [Rolloutphasen für die Intune-Bereitstellung](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Projektumfang](project-scope.md)
 ### [Proof of Concept](proof-of-concept.md)
@@ -34,11 +36,12 @@
 ### [Betrieb und Wartung](operations-and-maintenance.md)
 
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
+# [Neuigkeiten](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Bereitstellen und Verwenden](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Entwickeln und Anpassen von Apps](/intune/develop/intune-app-sdk)
 # [Problembehandlung](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

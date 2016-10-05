@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 ---
@@ -28,7 +28,7 @@ Dieses Thema enthält Vorschläge zur Problembehandlung bei Problemen mit der Ge
 
 Bevor Sie mit der Problembehandlung beginnen, stellen Sie sicher, dass Intune ordnungsgemäß konfiguriert wurde, um die Registrierung zu ermöglichen. Informationen zu diesen Konfigurationsanforderungen finden Sie unter:
 
--   [Vorbereiten der Registrierung von Geräten in Microsoft Intune](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+-   [Vorbereiten der Registrierung von Geräten in Microsoft Intune](/intune/deploy-use/gprerequisites-for-enrollment.md)
 -   [Einrichten der iOS- und Mac-Geräteverwaltung](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Einrichten der Windows 10 Mobile- und Windows Phone-Verwaltung mit Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Einrichten der Windows-Geräteverwaltung](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -306,6 +306,6 @@ Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, w
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

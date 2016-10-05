@@ -2,9 +2,9 @@
 title: Neuheiten | Microsoft Intune
 description: Erfahren Sie, was im Release dieses Monats und in den vergangenen Releases von Microsoft Intune neu ist
 keywords: 
-author: Lindavr
+author: barlanmsft
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03a5dd14b854fedf7e2cb5b949580960a0eab9de
-ms.openlocfilehash: 1d09e5a0adb3ecfa8f2d64f668ea7ff16bdf31fa
+ms.sourcegitcommit: 5b3256852431efb83fb2cc9fa067dd3f4a68a050
+ms.openlocfilehash: cef0a26204a22c95d2b639500246e435fcf7f9f7
 
 
 ---
@@ -72,6 +72,11 @@ Endbenutzer nicht kompatibler Geräte werden zur Registrierung aufgefordert, und
 Dem Unternehmensportal für Android wurde auf der Startseite ein neues Symbol „Benachrichtigungen“ hinzugefügt. Beim Tippen auf dieses Symbol wird auf die Seite „Benachrichtigungen“ zugegriffen, die Ihren Endbenutzern alle Elemente in der Unternehmensportal-App anzeigt, die ihr Eingreifen erfordern, etwa inkompatible Geräte, Aktualisierung der Registrierung und Aktivierung der Registrierung. Das iOS-Unternehmensportal verfügt bereits über diese Benachrichtigungsfunktionalität. Durch die neue Seite „Benachrichtigungen“ wird Benutzern nicht bei jedem Starten oder erneuten Anzeigen des Unternehmensportals die Seite „Einrichten des Unternehmenszugriffs“ angezeigt, sofern das Gerät bereits registriert ist. Wenn Sie eine eigene Hilfestellung für Endbenutzer erstellen, empfiehlt es sich, Ihre Dokumentation entsprechend zu aktualisieren, um dieser Änderung Rechnung zu tragen. Aktualisierte Screenshots finden Sie [hier](https://aka.ms/androidcpupdate).  
 <!---TFS 1095560--->
 
+**Geben von Feedback im Unternehmensportal für Android**</br>
+Dem Menü des Unternehmensportals für Android wurde ein neues Element hinzugefügt. Nach Tippen auf **Hilfe und Feedback** werden drei Aktionen angezeigt:
+* Über **Hilfe anfordern** können Sie Ihrer IT-Abteilung Probleme mit dem Unternehmensportal melden. Die IT erstellt eine E-Mail mit Ihrem E-Mail-Client, an die die Unternehmensportalprotokolle angefügt werden. **Hilfe anfordern** ersetzt die Option **Daten senden** auf der Seite **Einstellungen**.
+* Verwenden Sie **Feedback geben**, um dem für das Unternehmensportal zuständigen Team Feedback zu geben.
+* Nutzen Sie **App bewerten**, um für die Unternehmensportal-App eine Bewertung oder Kritik auf Google Play zu hinterlassen.
 
 ### iOS
 **Änderungen bei der Unterstützung der iOS-Unternehmensportal-App**<br/>
@@ -88,7 +93,7 @@ Aktualisierte Screenshots finden Sie [hier](https://gallery.technet.microsoft.co
 <!---TFS 1317133--->
 
 **Aufforderung zur Installation der iOS-App „Managed Browser“, wenn IT-Experten diese Anforderung für eine App festlegen**<br/>
-Wenn Sie einen Webclip so konfiguriert haben, dass er nur im verwalteten Browser geöffnet wird, und der verwaltete Browser auf einem Gerät nicht installiert ist, wird der Benutzer von der Unternehmensportal-App auf dem Gerät aufgefordert, den verwalteten Browser zu installieren, damit der Webclip installiert werden kann. 
+Wenn Sie einen Webclip so konfiguriert haben, dass er nur im verwalteten Browser geöffnet wird, und der verwaltete Browser auf einem Gerät nicht installiert ist, wird der Benutzer von der Unternehmensportal-App auf dem Gerät aufgefordert, den verwalteten Browser zu installieren, damit der Webclip installiert werden kann.
 <!---TFS 1228570--->
 
 ### Windows
@@ -141,6 +146,6 @@ Wenn Sie feststellen möchten, was während der letzten sechs Monate in Intune v
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
