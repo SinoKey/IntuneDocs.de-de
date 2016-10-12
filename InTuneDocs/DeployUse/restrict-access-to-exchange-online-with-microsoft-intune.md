@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99b01f5ca5bb389fc8a9d87e956796823fee6c0d
-ms.openlocfilehash: dd5ae411cc2541566805131d0076efc15875c988
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
 
 
 ---
@@ -26,14 +26,12 @@ Wenn Sie über eine Exchange Online Dedicated-Umgebung verfügen und herausfinde
 Um den E-Mail-Zugriff auf Exchange Online oder die neue Exchange Online Dedicated-Umgebung zu steuern, konfigurieren Sie den bedingten Zugriff für Exchange Online in Intune.
 Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Beschränken des Zugriffs auf E-Mail, O365 und andere Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
->[!IMPORTANT]
->Der bedingte Zugriff für PCs und Windows 10 Mobile-Geräte mit Apps, die die moderne Authentifizierung verwenden, steht zurzeit nicht für alle Intune-Kunden zur Verfügung. Wenn Sie diese Funktionen bereits verwenden, müssen Sie keine weiteren Maßnahmen ergreifen. Sie können diese weiter verwenden.
-
->Wenn Sie keine Richtlinien für bedingten Zugriff für PCs und Windows 10 Mobile für Apps mit moderner Authentifizierung erstellt haben und dies jetzt nachholen möchten, registrieren Sie sich für die öffentliche Vorschauversion von Azure Active Directory, welche den auf Geräten basierenden bedingten Zugriff für von Intune verwaltete Geräte oder in Domänen eingebundene Windows-PCs umfasst. Weitere Informationen finden Sie in [diesem Blogbeitrag](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).  
 
 **Bevor** Sie den bedingten Zugriff konfigurieren können, müssen folgende Voraussetzungen erfüllt sein:
 
 -   Sie müssen über ein **Office 365-Abonnement verfügen, das Exchange Online (z. B. E3)** umfasst, und die Benutzer müssen für Exchange Online lizenziert sein.
+
+- Sie müssen über ein **Enterprise Mobility + Security- oder Azure Active Directory Premium-Abonnement** verfügen, und die Benutzer müssen für EMS oder Azure AD lizenziert sein. Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -  Sie sollten erwägen, den optionalen **Microsoft Intune Service to Service Connector** zu konfigurieren, der [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] mit Microsoft Exchange Online verbindet und die Verwaltung von Geräteinformationen über die [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Konsole ermöglicht. Der Connector ist zur Verwendung von Kompatibilitätsrichtlinien oder Richtlinien für den bedingten Zugriff nicht zwingend erforderlich, Sie benötigen ihn aber zum Ausführen von Berichten, mit deren Hilfe die Auswirkungen des bedingten Zugriffs bewertet werden.
 
@@ -84,9 +82,7 @@ Sie können den Zugriff auf **Outlook Web Access (OWA)** auf Exchange Online bes
 
 **Nicht unterstützte Browser werden blockiert**.
 
-Die OWA-Apps für iOS und Android werden nicht unterstützt.  Sie sollten durch Anspruchsregeln für Active Directory-Verbunddienste (ADFS) blockiert werden.
-
-
+**Die OWA-App für iOS und Android kann so geändert werden, dass die moderne Authentifizierung nicht verwendet wird, und sie wird nicht unterstützt.  Der Zugriff über die OWA-App muss durch AD FS-Anspruchsregeln blockiert werden.**
 
 
 Auf folgenden Plattformen können Sie den Zugriff auf Exchange-E-Mails über den integrierten **Exchange ActiveSync-E-Mail-Client** blockieren:
@@ -101,14 +97,18 @@ Auf folgenden Plattformen können Sie den Zugriff auf Exchange-E-Mails über den
 
 Sie können den bedingten Zugriff für PCs einrichten, auf denen Office-Desktopanwendungen ausgeführt werden, um auf **Exchange Online** und **SharePoint Online** zuzugreifen. Dies gilt für PCs, die folgende Anforderungen erfüllen:
 
--   Auf dem PC muss Windows 7.0 oder Windows 8.1 ausgeführt werden.
+-   Der PC muss unter Windows 7.0, Windows 8.1 oder Windows 10 ausgeführt werden.
 
--   Der PC muss entweder in die Domäne eingebunden oder mit den Kompatibilitätsrichtlinien kompatibel sein.
+  >[!NOTE]
+  > Damit Sie den bedingten Zugriff auf Windows 10-PCs verwenden können, müssen Sie diese PCs mit dem Windows 10 Anniversary-Update aktualisieren.
 
-    Damit der PC als kompatibel bewertet wird, muss er bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] registriert sein und den Richtlinien entsprechen.
+  Der PC muss entweder in die Domäne eingebunden oder mit den Kompatibilitätsrichtlinien kompatibel sein.
 
-    Für in die Domäne eingebundene PCs müssen Sie das Gerät für eine [automatische Registrierung](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) bei Azure Active Directory einrichten.
-    >[!NOTE]
+  Damit der PC als kompatibel bewertet wird, muss er bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] registriert sein und den Richtlinien entsprechen.
+
+  Für in die Domäne eingebundene PCs müssen Sie das Gerät für eine [automatische Registrierung](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) bei Azure Active Directory einrichten.
+
+  >[!NOTE]
     >Bedingter Zugriff wird nicht auf PCs unterstützt, auf denen der Intune Computerclient-Agent ausgeführt wird.
 
 -   [Die moderne Authentifizierung von Office 365 muss aktiviert sein](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) und alle neuesten Office-Updates enthalten.
@@ -177,6 +177,10 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
 
 ### Schritt 4: Konfigurieren der Richtlinie für bedingten Zugriff
 
+>[!NOTE]
+> Sie können die Richtlinie für bedingten Zugriff auch in der Azure AD-Verwaltungskonsole erstellen. In der Azure AD-Verwaltungskonsole können Sie zusätzlich zu anderen Richtlinien für bedingten Zugriff wie Richtlinien für die mehrstufige Authentifizierung auch Richtlinien für bedingten Zugriff für Intune-Geräte erstellen (die in Azure AD als **gerätebasierte bedingte Zugriffsrichtlinien** bezeichnet werden).  Sie können auch Richtlinien für bedingten Zugriff für Unternehmens-Apps von Drittanbietern wie Salesforce und Box festlegen, die von Azure AD unterstützt werden. Weitere Informationen finden Sie unter [Festlegen von gerätebasierten Azure Active Directory-Richtlinien für bedingten Zugriff zur Steuerung des Zugriffs auf über Azure Active Directory verbundene Anwendungen](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+
+
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Richtlinie** > **Bedingter Zugriff** > **Exchange Online-Richtlinie**.
 ![Screenshot der Seite mit der Exchange Online-Richtlinie für bedingten Zugriff](../media/mdm-ca-exo-policy-configuration.png)
 
@@ -196,9 +200,6 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
         Die Auswahl der Option **Alle Plattformen** bedeutet, dass Azure Active Directory diese Richtlinie auf alle Authentifizierungsanforderungen anwendet, unabhängig von der Plattform, die von der Clientanwendung gemeldet wird.  Alle Plattformen müssen registriert und kompatibel sein, mit Ausnahme von:
         *   Windows-Geräten. Diese müssen registriert werden und kompatibel sein, mit der lokalen Active Directory-Domäne verknüpft sein oder beides
         * Nicht unterstützte Plattformen wie Mac OS  Allerdings werden Apps, die die moderne Authentifizierung von diesen Plattformen verwenden, weiterhin blockiert.
-
-        >[!TIP]
-           Wenn Sie den bedingten Zugriff für PCs nicht bereits verwenden, wird Ihnen diese Option möglicherweise nicht angezeigt.  Verwenden Sie stattdessen die Option **Spezifische Plattformen**, Der bedingte Zugriff für PCs steht zurzeit nicht allen Intune-Kunden zur Verfügung.   Weitere Informationen zum Zugriff auf dieses Feature finden Sie [in diesem Blogbeitrag](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **Bestimmte Plattformen**
 
@@ -262,6 +263,6 @@ Wählen Sie im [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Dashboard 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

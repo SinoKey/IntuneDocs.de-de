@@ -4,7 +4,7 @@ description: "Erfahren Sie, wie Sie Windows 10-Geräte mit Intune automatisch a
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06a9c78300d7ff384299957102114c69c43a1ad5
-ms.openlocfilehash: 45130e3e12968d9df579a7a9d0cade0343b7c165
+ms.sourcegitcommit: f2aa531744dbd0774958e0450819e45e60a91086
+ms.openlocfilehash: 93a632f0f0b8d31149fa1d5fbe15b31d715d20a8
 
 
 ---
@@ -24,6 +24,12 @@ Mithilfe der Microsoft Intune-**Upgraderichtlinie für die Edition** können Sie
 * Windows 10 Desktop
 * Windows 10 Holographic
 * Windows 10 Mobile
+
+Die folgenden Upgradepfade werden unterstützt:
+- Von Windows 10 Pro auf Windows 10 Enterprise
+- Von Windows 10 Home auf Windows 10 Education
+- Von Windows 10 Mobile auf Windows 10 Mobile Enterprise
+- Von Windows 10 Holographic Pro auf Windows 10 Holographic Enterprise
 
 ## Vorbereitung
 Bevor Sie beginnen, Geräte auf die neueste Version zu aktualisieren, benötigen Sie eines der folgenden Dinge:
@@ -46,6 +52,6 @@ Bevor Sie beginnen, Geräte auf die neueste Version zu aktualisieren, benötigen
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO5-->
 
 

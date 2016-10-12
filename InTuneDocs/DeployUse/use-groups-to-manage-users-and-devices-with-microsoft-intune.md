@@ -4,7 +4,7 @@ description: "Erstellen und Verwalten von Gruppen mithilfe des Arbeitsbereichs �
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8c474810f8d3c7db4784c38c45c85c83b647860b
-ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 ---
@@ -24,7 +24,9 @@ In diesem Thema wird das Erstellen von Gruppen in Intune beschrieben. Darüber h
 
 >[!IMPORTANT]
 >
->Wenn Sie den Arbeitsbereich „Gruppen“ im Intune-Portal öffnen und dort einen Link zum Azure AD-Portal (Azure Active Directory) vorfinden, verwenden Sie bereits den *neuen* Ansatz für Azure AD-Sicherheitsgruppen für die Gruppenverwaltung in Intune, der unter [Ankündigung bevorstehender Verbesserungen an der Administratoroberfläche für Gruppen](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups) beschrieben wird. Klicken Sie auf den Link zum Azure AD-Portal, um Ihre Gruppen zu erstellen und zu verwalten. Informationen über das Arbeiten mit Azure AD-Sicherheitsgruppen finden Sie unter [Verwalten des Zugriffs auf Ressourcen mit Azure Active Directory-Gruppen](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
+>Wenn Sie den Arbeitsbereich „Gruppen“ im Intune-Portal öffnen und dort einen Link zum Azure AD-Portal (Azure Active Directory) vorfinden, verwenden Sie bereits den *neuen* Ansatz für Azure AD-Sicherheitsgruppen für die Gruppenverwaltung in Intune, der unter [Ankündigung bevorstehender Verbesserungen an der Administratoroberfläche für Gruppen](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups) beschrieben wird. Klicken Sie auf den Link zum Azure AD-Portal, um Ihre Gruppen zu erstellen und zu verwalten.
+>
+>![Screenshot des Links zur Azure-Gruppenverwaltung](../media/groups-link-azure.png) 
 >
 >Wenn der Link zum Azure AD-Portal nicht angezeigt wird, verwenden Sie noch den *aktuellen* Ansatz zur Gruppenverwaltung, der unter [Erstellen von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in diesem Thema beschrieben ist.
 
@@ -42,7 +44,7 @@ Diese Änderung betrifft Sie jetzt nicht. Aber das kommt demnächst:
 
 
 ### Wie und wann werde ich zur neuen Gruppenoberfläche migrieren?
-Wir migrieren die aktuellen Intune-Kunden über einen längeren Zeitraum. Wir sind dabei, den Zeitplan für diese Migration fertigzustellen und aktualisieren dieses Thema in ein paar Wochen, um Ihnen weitere Details mitzuteilen. Sie erhalten Sie eine Benachrichtigung, bevor Sie migriert werden. Kontaktieren Sie unser Migrationsteam unter <intunegrps@microsoft.com>, wenn Sie Probleme mit der Migration haben.
+Wir migrieren die aktuellen Intune-Kunden über einen längeren Zeitraum. Wir sind dabei, den Zeitplan für diese Migration fertigzustellen und aktualisieren dieses Thema in ein paar Wochen, um Ihnen weitere Details mitzuteilen. Sie erhalten Sie eine Benachrichtigung, bevor Sie migriert werden. Kontaktieren Sie unser Migrationsteam unter [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com), wenn Sie Probleme mit der Migration haben. Einzelheiten darüber, wie Gruppen migriert werden, finden Sie unter [Migrieren von Gruppen zu Azure Active Directory](migrating-groups-to-azure-active-directory.md).
 
 ### Was geschieht mit meinen vorhandenen Benutzer- und Gerätegruppen?
  Benutzergruppen und Gerätegruppen, die Sie in Intune erstellt haben, werden zu Azure AD-Sicherheitsgruppen migriert. Intune-Standardgruppen, z.B. die Gruppe „Alle Benutzer“ werden nur migriert, wenn Sie sie zum Zeitpunkt der Migration in Bereitstellungen verwenden. Für einige Gruppen kann die Migration komplexer sein. Wir benachrichtigen Sie, wenn weitere Schritte in Ihrer Organisation zum Ausführen der Migration erforderlich sind.
@@ -202,6 +204,6 @@ Jede Richtlinie verfügt über einen **vorgesehenen Wert** und einen **Status**.
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 
