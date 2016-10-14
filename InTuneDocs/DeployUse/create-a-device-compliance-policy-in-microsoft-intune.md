@@ -4,7 +4,7 @@ description: "Erstellen Sie eine Kompatibilitätsrichtlinie, um das Sichern mobi
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 2ff0b24d0a6991c22b23da5da5c63a9bb26ccdd2
+ms.sourcegitcommit: 55fea2e479273af7ff915449c96a72aeebba85a9
+ms.openlocfilehash: 3f434fc4cb9c90e28e516620383def8d91f11138
 
 
 ---
@@ -53,24 +53,24 @@ In der folgenden Tabelle sind die Einstellungen für die Kompatibilitätsrichtli
 -------------
 |Einstellung|iOS|Android|Windows|
 |-----|----|-----|-----|
-|Anfordern eines Kennworts zum Entsperren mobiler Geräte|iOS 6 und höher|Android 4,0 und höher <br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8 und höher|
-|Einfache Kennwörter zulassen|iOS 6 und höher|Nicht unterstützt|Windows Phone 8 und höher|
-|Minimale Kennwortlänge|iOS 6 und höher| Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher| Windows Phone 8 und höher<br>Windows 8.1|
-|Erforderlicher Kennworttyp|iOS 6 und höher|Nicht verfügbar|Windows Phone 8 und höher <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
-|Minimale Anzahl von Zeichensätzen|iOS 6 und höher|Nicht verfügbar|Windows Phone 8 und höher <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Anfordern eines Kennworts zum Entsperren mobiler Geräte|iOS 6 und höher|Android 4,0 und höher <br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8.1 und höher|
+|Einfache Kennwörter zulassen|iOS 6 und höher|Nicht unterstützt|Windows Phone 8.1 und höher|
+|Minimale Kennwortlänge|iOS 6 und höher| Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher| Windows Phone 8.1 und höher<br>Windows 8.1|
+|Erforderlicher Kennworttyp|iOS 6 und höher|Nicht verfügbar|Windows Phone 8.1 und höher <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Minimale Anzahl von Zeichensätzen|iOS 6 und höher|Nicht verfügbar|Windows Phone 8.1 und höher <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |Kennwortqualität|Nicht verfügbar|Android 4,0 und höher <br>Samsung KNOX Standard 4.0 und höher|Nicht verfügbar|
-|Minuten der Inaktivität, bevor ein Kennwort erforderlich ist|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8 und höher<br>Windows RT und Windows RT 8.1<br>Windows 8.1|
-|Kennwortablauf (Tage)|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8 und höher<br>Windows RT und Windows RT 8.1<br>Windows 8.1|
-|Kennwortverlauf speichern|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8 und höher<br>Windows RT und Windows RT 8.1<br>Windows 8.1|
-|Wiederverwendung vorheriger Kennwörter verhindern|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8 und höher<br>Windows RT und Windows RT 8.1<br>Windows 8.1|
+|Minuten der Inaktivität, bevor ein Kennwort erforderlich ist|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8.1 und höher<br>Windows RT und Windows RT 8.1<br>Windows 8.1|
+|Kennwortablauf (Tage)|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8.1 und höher<br>Windows RT und Windows RT 8.1<br>Windows 8.1|
+|Kennwortverlauf speichern|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8.1 und höher<br>Windows RT und Windows RT 8.1<br>Windows 8.1|
+|Wiederverwendung vorheriger Kennwörter verhindern|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8.1 und höher<br>Windows RT und Windows RT 8.1<br>Windows 8.1|
 |Kennwort anfordern, wenn das Gerät aus dem Leerlauf zurückkehrt| Nicht verfügbar| Nicht verfügbar|Windows 10 Mobile|
-|Verschlüsselung auf mobilem Gerät anfordern|Nicht verfügbar|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8 und höher<br> Windows 8.1|
+|Verschlüsselung auf mobilem Gerät anfordern|Nicht verfügbar|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8.1 und höher<br> Windows 8.1|
 |Anforderung, dass Geräte als fehlerfrei gemeldet werden| Nicht verfügbar| Nicht verfügbar|Windows <br>Windows 10 Mobile|
 |Gerät darf nicht per Jailbreak oder Rooting manipuliert worden sein|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Nicht verfügbar|
 |E-Mail-Konto muss von Intune verwaltet werden|iOS 6 und höher|Nicht verfügbar| Nicht verfügbar|
 |Wählen Sie das E-Mail-Profil aus, das von Intune verwaltet werden muss|iOS 6 und höher|Nicht verfügbar| Nicht verfügbar|
-|Minimal erforderliches Betriebssystem|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher| Windows Phone 8 und höher<br>Windows 8.1|
-|Maximal zulässige Betriebssystemversion|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8 und höher<br>Windows 8.1|
+|Minimal erforderliches Betriebssystem|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher| Windows Phone 8.1 und höher<br>Windows 8.1|
+|Maximal zulässige Betriebssystemversion|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8.1 und höher<br>Windows 8.1|
 
 Weitere Informationen über die Kompatibilitätseinstellungen, die auf den einzelnen Plattformen unterstützt werden, finden Sie in den folgenden Themen:
 > [!div class="op_single_selector"]
@@ -87,6 +87,6 @@ Weitere Informationen über die Kompatibilitätseinstellungen, die auf den einze
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
