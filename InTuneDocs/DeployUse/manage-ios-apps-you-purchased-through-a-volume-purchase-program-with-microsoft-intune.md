@@ -4,7 +4,7 @@ description: "Verwenden Sie Intune, um Apps zu verwalten, die Sie über ein Volu
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 164f9656246a46bf39e263fc3c5f16828674e1fd
-ms.openlocfilehash: a5c37c470f937c682d9138a636d1211f641da784
+ms.sourcegitcommit: 611cfb0176a922234c29642c305dd03699922c5f
+ms.openlocfilehash: 5981a2e147c89776d304226250170ec4114e35d8
 
 
 ---
@@ -26,6 +26,7 @@ Microsoft Intune unterstützt Sie bei der Verwaltung von Apps, die über ein sol
 
 > [!Important]
 > Derzeit weist Intune App-Lizenzen des Programms für Volumenlizenzen für Unternehmen (Volume Purchase Program for Business, VPP) Benutzern und nicht Geräten zu. Aus diesem Grund müssen Benutzer zum Installieren der App ihr Apple-ID-Kennwort eingeben.
+> Das Apple Volume Purchase Program für Bildungseinrichtungen wird in dieser Version nicht unterstützt.
 
 ## Verwalten von Apps für iOS-Geräte, die über ein Volumenprogramm erworben wurden
 Sie erwerben mehrere Lizenzen für iOS-Apps über das [Programm für Volumenlizenzen für Unternehmen (Volume Purchase Program, VPP) von Apple](http://www.apple.com/business/vpp/). Dies umfasst das Einrichten eines Apple VPP-Kontos auf der Apple-Website und das Hochladen des Apple VPP-Tokens in Intune.  Anschließend können Sie Ihre Informationen zum Volumenerwerb mit Intune synchronisieren und die Verwendung der im Rahmen des Volumenprogramms erworbenen App verfolgen.
@@ -89,6 +90,6 @@ Sie können überwachen, welche VPP-Apps bereitgestellt wurden und wie viele Liz
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 
