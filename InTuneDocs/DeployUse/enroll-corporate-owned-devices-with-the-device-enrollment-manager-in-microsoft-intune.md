@@ -13,8 +13,8 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e332bbf9aa8f6543950eba7e1fd734b3fb4b1edb
-ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
 
 ---
@@ -44,7 +44,7 @@ Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurd
   - Ein Zurücksetzen von Geräten über das Unternehmensportal ist nicht möglich.
   - Nur das lokale Gerät erscheint in der Unternehmensportal-App oder -Website.
   - Apps aus dem Apple Volume Purchase Program (VPP) können nicht verwendet werden, weil für die Verwaltung dieser Apps benutzerspezifische Apple IDs erforderlich sind.
-  - Eine gleichzeitige Registrierung mit Apple Configurator oder mit dem Apple-Geräteregistrierungsprogramm ist nicht möglich (iOS-Geräte).
+  - (iOS) Diese Geräte können auch nicht mit Apple Configurator oder dem Apple-Programm zur Geräteregistrierung (Apple Device Enrollment Program, DEP) registriert werden. Mithilfe von DEP oder Apple Configurator verwaltete Geräte können jedoch ohne Benutzeraffinität registriert werden.
 
 > [!NOTE]
 > Um Unternehmens-Apps auf Geräten bereitzustellen, die mit dem Geräteregistrierungs-Manager verwaltet werden, stellen Sie die Unternehmensportal-App als **erforderliche Installation** für das Benutzerkonto des Geräteregistrierungs-Managers bereit.
@@ -95,6 +95,6 @@ Wenn Sie einen Geräteregistrierungs-Manager löschen, wirkt sich dies nicht auf
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

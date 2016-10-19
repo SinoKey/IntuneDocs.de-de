@@ -4,7 +4,7 @@ description: "Intune bietet eine Auswahl von integrierten allgemeinen Einstellun
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/30/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c6b3f193606f13427a68c561d688b75d38221950
-ms.openlocfilehash: 315e492b301387c2030440e7188dfdb35a99ddd9
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 3c9c75e5e9e19574a5b4525688103dc95e3d6b9b
 
 
 ---
@@ -39,75 +39,75 @@ Konfigurieren Sie mithilfe der **allgemeinen Windows Phone-Konfigurationsrichtli
 
 ### Kennworteinstellungen
 
-|Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|-----|------------------------------|
-|**Anfordern eines Kennworts zum Entsperren mobiler Geräte**|Gibt an, ob Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können.|Ja|Ja|
-|**Erforderlicher Kennworttyp**|Gibt den erforderlichen Typ des Kennworts an, z.B. alphanumerisch oder nur numerisch.|Ja|Ja|
-|**Erforderlicher Kennworttyp – Minimale Anzahl von Zeichensätzen**|Gibt an, wie viele verschiedene Zeichensätze im Kennwort enthalten sein müssen. Es gibt vier Zeichensätze: Kleinbuchstaben, Großbuchstaben, Zahlen und Symbole. Für iOS-Geräte wird hiermit jedoch die erforderliche Anzahl von Symbolzeichen im Kennwort angegeben.|Ja|Ja|
-|**Minimale Kennwortlänge**|Gibt die Mindestanzahl von Zeichen an, die das Kennwort enthalten muss.|Ja|Ja|
-|**Einfache Kennwörter zulassen**|Gibt an, dass einfache Kennwörter, wie z.B: „0000“ und „1234“ verwendet werden können.|Ja|Ja|
-|**Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird**|Gibt an, wie häufig ein falsches Kennwort eingegeben werden kann, bevor das Gerät zurückgesetzt wird.|Ja|Ja|
-|**Inaktivität in Minuten bis zur Abschaltung des Bildschirms**|Gibt die Zeitdauer an, die ein Gerät im Leerlauf bleiben muss, bevor der Bildschirm automatisch gesperrt wird.|Ja|Ja|
+|Name der Einstellung|Details|
+|----------------|------|
+|**Anfordern eines Kennworts zum Entsperren mobiler Geräte**|Gibt an, ob Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können.|
+|**Erforderlicher Kennworttyp**|Gibt den erforderlichen Typ des Kennworts an, z.B. alphanumerisch oder nur numerisch.|
+|**Erforderlicher Kennworttyp – Minimale Anzahl von Zeichensätzen**|Gibt an, wie viele verschiedene Zeichensätze im Kennwort enthalten sein müssen. Es gibt vier Zeichensätze: Kleinbuchstaben, Großbuchstaben, Zahlen und Symbole. Für iOS-Geräte wird hiermit jedoch die erforderliche Anzahl von Symbolzeichen im Kennwort angegeben.|
+|**Minimale Kennwortlänge**|Gibt die Mindestanzahl von Zeichen an, die das Kennwort enthalten muss.|
+|**Einfache Kennwörter zulassen**|Gibt an, dass einfache Kennwörter, wie z.B: „0000“ und „1234“ verwendet werden können.|
+|**Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird**|Gibt an, wie häufig ein falsches Kennwort eingegeben werden kann, bevor das Gerät zurückgesetzt wird.|
+|**Inaktivität in Minuten bis zur Abschaltung des Bildschirms**|Gibt die Zeitdauer an, die ein Gerät im Leerlauf bleiben muss, bevor der Bildschirm automatisch gesperrt wird.|
 |**Kennwortablauf (Tage)**|Gibt die Anzahl der Tage an, bevor das Gerätekennwort geändert werden muss.|Ja|Ja|
-|**Kennwortverlauf speichern**|Gibt an, ob zuvor verwendete Kennwörter gespeichert werden, um zu verhindern, dass der Benutzer sie erneut verwendet.|Ja|Ja|
-|**Kennwortverlauf speichern** – **Wiederverwendung vorheriger Kennwörter verhindern**|Gibt an, wie viele zuvor verwendete Kennwörter gespeichert werden.|Ja|Ja|
+|**Kennwortverlauf speichern**|Gibt an, ob zuvor verwendete Kennwörter gespeichert werden, um zu verhindern, dass der Benutzer sie erneut verwendet.|
+|**Kennwortverlauf speichern** – **Wiederverwendung vorheriger Kennwörter verhindern**|Gibt an, wie viele zuvor verwendete Kennwörter gespeichert werden.|
 
 ### Verschlüsselungseinstellungen
 
-|Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|------|-----------------------------|
-|**Verschlüsselung auf mobilen Geräten vorschreiben**|Schreibt vor, dass die Daten auf unterstützten mobilen Geräten verschlüsselt werden müssen.<br>Für Windows Phone 8-Geräte müssen Sie hier **Ja**festlegen.|Ja|Ja|
+|Name der Einstellung|Details|
+|----------------|------|
+|**Verschlüsselung auf mobilem Gerät anfordern**|Schreibt vor, dass die Daten auf unterstützten mobilen Geräten verschlüsselt werden müssen.|
 
 ### Systemeinstellungen
 
-|Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|------|------------------------------|
-|**Bildschirmaufnahme zulassen**|Ermöglicht dem Benutzer, den Bildschirminhalt als Bilddatei zu erfassen.|Nein|Ja|
-|**Übermitteln von Diagnosedaten zulassen**|Ermöglicht, dass das Gerät Diagnoseinformationen an Microsoft übermittelt.|Nein|Ja|
+|Name der Einstellung|Details|
+|----------------|-----|
+|**Bildschirmaufnahme zulassen**|Ermöglicht dem Benutzer, den Bildschirminhalt als Bilddatei zu erfassen.|
+|**Übermitteln von Diagnosedaten zulassen**|Ermöglicht, dass das Gerät Diagnoseinformationen an Microsoft übermittelt.|
 
 ### Cloudeinstellungen – Konten und Synchronisierung
 
-|Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|-----|------------------------------|
-|**Microsoft-Konto erlauben**|Ermöglicht, dass ein Microsoft-Konto mit dem mobilen Gerät verknüpft werden kann.|Nein|Ja|
+|Name der Einstellung|Details|
+|----------------|------|
+|**Microsoft-Konto erlauben**|Ermöglicht, dass ein Microsoft-Konto mit dem mobilen Gerät verknüpft werden kann.|
 
 ### E-Mail-Einstellungen
 
-|Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|-----|-------------------------------|
-|**Benutzerdefinierte E-Mail-Konten erlauben**|Ermöglicht, dass das Gerät eine Verbindung mit nicht von Microsoft stammenden E-Mail-Konten herstellen kann.|Nein|Ja|
+|Name der Einstellung|Details|
+|----------------|-----|
+|**Benutzerdefinierte E-Mail-Konten erlauben**|Ermöglicht, dass das Gerät eine Verbindung mit nicht von Microsoft stammenden E-Mail-Konten herstellen kann.|
 
 ### Anwendungseinstellungen – Browser
 
-|Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|-----|-------------------------------|
-|**Webbrowser zulassen**|Ermöglicht oder blockiert die Verwendung des integrierten Webbrowser auf Geräten.|Nein|Ja|
+|Name der Einstellung|Details|
+|----------------|-----|
+|**Webbrowser zulassen**|Ermöglicht oder blockiert die Verwendung des integrierten Webbrowser auf Geräten.|
 
 ### Anwendungseinstellungen – Apps
 
-|Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|------|------------------------------|
-|**App Store zulassen**|Ermöglicht Benutzern, über das Gerät eine Verbindung mit dem App Store herzustellen.|Nein|Ja|
+|Name der Einstellung|Details|
+|----------------|-----|
+|**App Store zulassen**|Ermöglicht Benutzern, über das Gerät eine Verbindung mit dem App Store herzustellen.|
 
 ### Einstellungen für Gerätefunktionen - Hardware
 
-|Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|----|--------------------------------|
-|**Kamera zulassen**|Ermöglicht oder blockiert die Verwendung der Kamera des Geräts.|Nein|Ja|
-|**Wechselspeichermedien zulassen**|Ermöglicht dem Gerät, Wechselmedien wie eine SD-Karte zu verwenden.|Ja|Ja|
-|**WLAN zulassen**|Aktiviert oder deaktiviert die WLAN-Funktionalität des Geräts.|Nein|Ja|
-|**WLAN-Tethering zulassen**|Ermöglicht die Verwendung des WLAN-Tetherings auf dem Gerät.|Nein|Ja
-|**Automatische Verbindung mit unverschlüsselten WLAN-Hotspots zulassen**|Ermöglicht, dass das Gerät automatisch eine Verbindung mit unverschlüsselten WLAN-Hotspots herstellen und die Geschäftsbedingungen für die Verbindung automatisch akzeptieren kann.|Nein|Ja|
-|**Berichterstellung für WLAN-Hotspots zulassen**|Sendet Informationen über WLAN-Verbindungen, um nahegelegene Verbindungen zu ermitteln.|Nein|Ja|
-|**Geolocation zulassen**|Erlaubt dem Gerät die Nutzung von Standortinformationen.|Nein|Ja|
-|**NFC zulassen**|Erlaubt Vorgänge, die NFC (Near Field Communication) verwenden.|Nein|Ja|
-|**Bluetooth zulassen**|Aktiviert oder deaktiviert die Bluetooth-Funktionalität des Geräts.|Nein|Ja|
+|Name der Einstellung|Details|
+|----------------|-----|
+|**Kamera zulassen**|Ermöglicht oder blockiert die Verwendung der Kamera des Geräts.|
+|**Wechselspeichermedien zulassen**|Ermöglicht dem Gerät, Wechselmedien wie eine SD-Karte zu verwenden.|
+|**WLAN zulassen**|Aktiviert oder deaktiviert die WLAN-Funktionalität des Geräts.|
+|**WLAN-Tethering zulassen**|Ermöglicht die Verwendung des WLAN-Tetherings auf dem Gerät.|
+|**Automatische Verbindung mit unverschlüsselten WLAN-Hotspots zulassen**|Ermöglicht, dass das Gerät automatisch eine Verbindung mit unverschlüsselten WLAN-Hotspots herstellen und die Geschäftsbedingungen für die Verbindung automatisch akzeptieren kann.|
+|**Berichterstellung für WLAN-Hotspots zulassen**|Sendet Informationen über WLAN-Verbindungen, um nahegelegene Verbindungen zu ermitteln.|
+|**Geolocation zulassen**|Erlaubt dem Gerät die Nutzung von Standortinformationen.|
+|**NFC zulassen**|Erlaubt Vorgänge, die NFC (Near Field Communication) verwenden.|
+|**Bluetooth zulassen**|Aktiviert oder deaktiviert die Bluetooth-Funktionalität des Geräts.|
 
 ### Einstellungen für Gerätefunktionen - Funktionen
 
-|Name der Einstellung|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|----|------|-------------------------------|
-|**Kopieren und Einfügen zulassen**|Lässt Kopier- und Einfügefunktionen auf Geräten zu.|Nein|Ja|
+|Name der Einstellung|Details|
+|----------------|----|
+|**Kopieren und Einfügen zulassen**|Lässt Kopier- und Einfügefunktionen auf Geräten zu.|
 
 ### Einstellungen für zulässige und blockierte Apps
 Geben Sie in der **Liste zulässiger oder blockierter Apps** eine Liste der jeweiligen Apps mit den folgenden Informationen an:
@@ -171,6 +171,6 @@ Geben Sie im Dialogfeld **OMA-URI hinzufügen oder bearbeiten** die folgenden In
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

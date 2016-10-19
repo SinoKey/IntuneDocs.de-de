@@ -13,8 +13,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: fb950108f3232af8049e90af977b0f3f9f2b3576
+ms.sourcegitcommit: 9e0321b23bbbaaa16c28c23e56b5fbcaee0d3c24
+ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 
 
 ---
@@ -43,7 +43,7 @@ So registrieren Sie Ihr Windows 10 Mobile- oder Windows 10-Desktopgerät:
 
 ## Zu befolgende Schritte bei Anzeige von „Zugriff auf Geschäfts-, Schul- oder Unikonto“
 
-1.  Tippen Sie auf **Zugriff auf Geschäfts-, Schul- oder Unikonto**.
+1.  Tippen Sie auf **Auf Arbeits- oder Schulkonto zugreifen** und dann auf **Verbinden**.
 
     ![Tap Access work school account](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
@@ -106,6 +106,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

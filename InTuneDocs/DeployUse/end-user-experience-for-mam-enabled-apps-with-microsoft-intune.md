@@ -13,8 +13,8 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1a8d80ad2b0ee66101ad9e67532e806ebc4b690
-ms.openlocfilehash: 3361c9069a3258621b9349a0cf332a38c206d041
+ms.sourcegitcommit: 26c62a000470030ef0109b397261b3049d3984ed
+ms.openlocfilehash: 710e5b2a59121d6ace53bd23f125dbe398c9ddae
 
 
 ---
@@ -140,30 +140,24 @@ Wenn Sie ein Android-Gerät verwenden, wird möglicherweise eine Sperrnachricht 
 
 ![Screenshot der Fehlermeldung und Anweisungen zum Entfernen des Kontos](../media/AppManagement/Android_SwitchUser.png)
 
-##  Anzeigen von Mediendateien mit der Rights Management-Freigabeanwendung
-Um unternehmenseigene AV-, PDF- und Bilddateien auf Android-Geräten anzuzeigen, verwenden Sie die [Microsoft Rights Management-Freigabeanwendung](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer) (RMS-Freigabeanwendung).
+##  Anzeigen von Mediendateien mit der Azure Information Protection-App (zuvor bekannt als Rights Management-Freigabeanwendung)
+Verwenden Sie zum Anzeigen unternehmenseigener AV-, PDF- und Bilddateien auf Android-Geräten die [Azure Information Protection-App](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
 
-Laden Sie diese App aus dem Google Play herunter.  Sobald die App auf Ihrem Gerät installiert ist, starten Sie die App, und authentifizieren Sie sich mit Ihren Unternehmens-Anmeldeinformationen. Sie sollten jetzt in der Lage sein, ungeschützte und geschützte Dateien aus anderen per Richtlinie verwalteten Apps anzuzeigen.
+Laden Sie diese App aus dem Google Play herunter.  
 
 Die folgenden Dateitypen werden unterstützt:
 
 * **Audio:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (erweitertes AAC+), AAC ELD (enhanced low delay ACC; erweitertes AAC mit geringer Verzögerung), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
 * **Video:** H.263, H.264 AVC, MPEG-4 SP, VP8.
 * **Bild:** JPG, PJPG, PNG, PPNG, BMP, PBMP, GIF, PGIF, JPEG, PJPEG.
-* PDF, PPDF
+* **PDF, PPDF**
 
 ------------
 |**Pfile**|**text**|
 |----|----|
-|Pfile ist ein generisches „Wrapper“-Format für geschützte Dateien, das den verschlüsselten Inhalt und die RMS-Lizenzen einkapselt und zum Schützen aller Dateitypen verwendet werden kann.|Textdateien, einschließlich XML, CSV, etc. können zum Anzeigen in der App geöffnet werden, selbst wenn sie geschützt sind. Dateitypen: TXT, PTXT, CSV, PCSV, LOG, PLOG, XML, PXML.|
+|Pfile ist ein generisches „Wrapper“-Format für geschützte Dateien, das den verschlüsselten Inhalt sowie die Azure Information Protection-Lizenzen kapselt und zum Schützen beliebiger Dateitypen verwendet werden kann.|Textdateien, einschließlich XML, CSV, etc. können zum Anzeigen in der App geöffnet werden, selbst wenn sie geschützt sind. Dateitypen: TXT, PTXT, CSV, PCSV, LOG, PLOG, XML, PXML.|
 ---------------
-**Android-Geräte, die nicht bei Intune registriert sind**
 
-Bevor Sie mithilfe der RMS-Freigabeanwendung Dateien anzeigen können, die aus anderen von Intune verwalteten Apps stammen, müssen Sie die RMS-Anwendung starten und sich mit Ihrem Geschäftskonto anmelden.  Wenn Sie sich angemeldet haben und **nur wenn Sie über keine RMS-Lizenz verfügen**, wird folgende Meldung angezeigt:
-
-**Authentifizierung erfolgreich – Sie können jetzt Unternehmensdateien anzeigen, aber Ihre Organisation ist nicht so eingerichtet, dass Sie auch Dateien schützen können. Weitere Informationen erhalten Sie von Ihrem IT-Administrator.**
-
-Dies verhindert nicht Sie, dass mit der RMS-Freigabeanwendung Unternehmensdateien anzeigen können. Sie können trotzdem Unternehmensdateien aus anderen von Intune verwalteten Apps öffnen und anzeigen, und auch die MAM-Richtlinien werden angewendet.  Diese Meldung besagt lediglich, dass Sie die zusätzlichen Schutzfunktionen der RMS-Freigabeanwendung nicht selbst auf eine Datei anwenden können.  Sie benötigen eine RMS-Lizenz, um Ihre Dateien mit diesen Schutzfunktionen zu schützen. Weitere Informationen über die Schutzfunktionen von RMS für Dateien finden Sie unter [Schützen einer Datei auf einem Gerät](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) und [Schützen einer per E-Mail freigegebenen Datei](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email).
 
 
 ### Weitere Informationen:
@@ -171,6 +165,6 @@ Dies verhindert nicht Sie, dass mit der RMS-Freigabeanwendung Unternehmensdateie
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

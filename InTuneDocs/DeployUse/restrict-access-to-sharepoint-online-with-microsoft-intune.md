@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
-ms.openlocfilehash: 84c9d355fde49fd18899a43ed0def0c801694291
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
 
 
 ---
@@ -32,14 +32,11 @@ Wenn ein Benutzer versucht, mit einer unterstützten App wie z. B. OneDrive auf
 
 ![Diagramm zur Veranschaulichung der Entscheidungspunkte, mit denen ermittelt wird, ob ein Gerät Zugriff auf SharePoint erhält oder blockiert wird ](../media/ConditionalAccess8-6.png)
 
->[!IMPORTANT]
->Der bedingte Zugriff für PCs und Windows 10 Mobile-Geräte mit Apps, die die moderne Authentifizierung verwenden, steht zurzeit nicht für alle Intune-Kunden zur Verfügung. Wenn Sie diese Funktionen bereits verwenden, müssen Sie keine weiteren Maßnahmen ergreifen. Sie können diese weiter verwenden.
-
->Wenn Sie keine Richtlinien für bedingten Zugriff für PCs und Windows 10 Mobile für Apps mit moderner Authentifizierung erstellt haben und dies jetzt nachholen möchten, registrieren Sie sich für die öffentliche Vorschauversion von Azure Active Directory, welche den auf Geräten basierenden bedingten Zugriff für von Intune verwaltete Geräte oder in Domänen eingebundene Windows-PCs umfasst. Weitere Informationen finden Sie in [diesem Blogbeitrag](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
 **Bevor** Sie eine bedingte Zugriffsrichtlinie für SharePoint Online konfigurieren, müssen folgende Voraussetzungen erfüllt sein:
 - Sie müssen über ein **SharePoint Online-Abonnement** verfügen, und Benutzer müssen für SharePoint Online lizenziert sein.
-- Sie müssen über ein Abonnement für **Enterprise Mobility Suite** oder **Azure Active Directory Premium** verfügen.
+- Sie müssen über ein **Enterprise Mobility + Security- oder Azure Active Directory Premium-Abonnement** verfügen, und die Benutzer müssen für EMS oder Azure AD lizenziert sein. Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+
 
   Zum Herstellen einer Verbindung mit den gewünschten Dateien muss das Gerät die folgenden Voraussetzungen erfüllen:
 -   Es muss bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] oder einem in die Domäne eingebundenen PC **registriert** sein.
@@ -61,6 +58,7 @@ Wenn eine Bedingung nicht erfüllt wird, erhält der Benutzer bei der Anmeldung 
 
 >[!NOTE]
 >Wenn Sie den bedingten Zugriff für SharePoint Online aktivieren, sollten Sie die Domäne in der Liste wie im Thema [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) beschrieben deaktivieren.  
+
 ## Unterstützung für mobile Geräte
 - iOS 8.0 und höher
 - Android 4.0 und höher, Samsung KNOX Standard 4.0 oder höher
@@ -75,7 +73,9 @@ Sie können den Zugriff auf SharePoint Online beschränken, wenn von einem Brows
 
 ## Unterstützung für PCs
 - Windows 8.1 und höher (bei Registrierung mit Intune)
-- Windows 7.0 oder Windows 8.1 (bei Einbindung in eine Domäne)
+- Windows 7.0, Windows 8.1 oder Windows 10 (bei Einbindung in eine Domäne)
+> [!NOTE]
+>Damit Sie den bedingten Zugriff auf Windows 10-PCs verwenden können, müssen Sie diese PCs mit dem Windows 10 Anniversary-Update aktualisieren.
 
   - In die Domäne eingebundene PCs müssen für die [automatische Registrierung](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) bei Azure Active Directory eingerichtet werden.
 AAD DRS wird automatisch für Intune und Office 365-Kunden aktiviert. Kunden, die bereits den AD FS Device Registration Service bereitgestellt haben, sehen keine registrierten Geräte in ihrem lokalen Active Directory.
@@ -122,6 +122,10 @@ Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompa
 
 #### <a name="bkmk_spopolicy"></a>
 
+>[!NOTE]
+> Sie können die Richtlinie für bedingten Zugriff auch in der Azure AD-Verwaltungskonsole erstellen. In der Azure AD-Verwaltungskonsole können Sie zusätzlich zu anderen Richtlinien für bedingten Zugriff wie Richtlinien für die mehrstufige Authentifizierung auch Richtlinien für bedingten Zugriff für Intune-Geräte erstellen (die in Azure AD als **gerätebasierte bedingte Zugriffsrichtlinien** bezeichnet werden).  Sie können auch Richtlinien für bedingten Zugriff für Unternehmens-Apps von Drittanbietern wie Salesforce und Box festlegen, die von Azure AD unterstützt werden. Weitere Informationen finden Sie unter [Festlegen von gerätebasierten Azure Active Directory-Richtlinien für bedingten Zugriff zur Steuerung des Zugriffs auf über Azure Active Directory verbundene Anwendungen](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+
+
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** > **Bedingter Zugriff** > **SharePoint Online-Richtlinie** aus.
 ![Screenshot der Seite mit der SharePoint Online-Richtlinie](../media/mdm-ca-spo-policy-configuration.png)
 
@@ -136,8 +140,6 @@ Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompa
         Das Auswählen der Option **Alle Plattformen** bedeutet, dass Azure Active Directory diese Richtlinie auf alle Authentifizierungsanforderungen anwendet, ungeachtet der von der Clientanwendung gemeldeten Plattform.  Alle Plattformen müssen registriert und kompatibel sein, mit Ausnahme von:
         *   Windows-Geräten. Diese müssen registriert werden und kompatibel sein, mit der lokalen Active Directory-Domäne verknüpft sein oder beides
         * nicht unterstützten Plattformen wie Mac.  Allerdings werden Apps, die die moderne Authentifizierung von diesen Plattformen verwenden, weiterhin blockiert.
-        >[!TIP]
-        >Wenn Sie den bedingten Zugriff für PCs nicht bereits verwenden, wird Ihnen diese Option möglicherweise nicht angezeigt.  Verwenden Sie stattdessen die Option **Spezifische Plattformen**, Der bedingte Zugriff für PCs steht zurzeit nicht allen Intune-Kunden zur Verfügung.   Weitere Informationen zum Zugriff auf dieses Feature finden Sie [in diesem Blogbeitrag](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **Bestimmte Plattformen**
 
@@ -192,6 +194,6 @@ Wählen Sie eine beliebige Gruppe von Mobilgeräten und dann auf der Registerkar
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 

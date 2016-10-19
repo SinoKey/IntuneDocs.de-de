@@ -4,7 +4,7 @@ description: "Verwaltungsrichtlinien für mobile Anwendungen in Microsoft Intune
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b1d92786bd9f4d4893dd19c3116dcd5a047744ea
-ms.openlocfilehash: af9d8dd7830efe28aa5c994a2b5ec2bdcd4cc3cb
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
 
 
 ---
@@ -24,9 +24,9 @@ Verwaltungsrichtlinien für mobile Anwendungen (MAM) in Microsoft Intune ermögl
 
 Unterstützung der Verwaltungsrichtlinien für mobile Anwendungen:
 
--   Geräte unter Android 4 und höher.
+-   Geräte unter Android 4 und höher
 
--   Geräte unter iOS 7 und höher.
+-   Geräte unter iOS 8.0 und höher
 
 > [!TIP]
 > Verwaltungsrichtlinien für mobile Anwendungen unterstützen Geräte, die bei Intune registriert sind.
@@ -112,7 +112,7 @@ Nachdem Sie überprüft haben, dass die Anwendung erfolgreich hochgeladen wurde,
 
     -   **Richtlinie zur mobilen Anwendungsverwaltung (Android 4 und höher)**
 
-    -   **Richtlinie zur mobilen Anwendungsverwaltung (iOS 7 und höher)**
+    -   **Richtlinie zur Verwaltung von mobilen Anwendungen (iOS 8.0 und höher)**
 
     Sie können die empfohlenen Einstellungen verwenden oder die Einstellungen anpassen. Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -134,7 +134,7 @@ Nachdem Sie überprüft haben, dass die Anwendung erfolgreich hochgeladen wurde,
     |**Gerätekonformität mit Unternehmensrichtlinien für Zugriff erforderlich**|Diese Einstellung lässt die Verwendung der App nur dann zu, wenn das Gerät nicht per Jailbreak oder Rooting manipuliert wurde.|
     |**Überprüfen der Zugriffsanforderungen nach (Minuten)**|Geben Sie im Feld **Timeout** den Zeitraum ein, bevor die Zugriffsanforderungen für die App nach dem Öffnen der App erneut geprüft werden müssen.|
     |**Offline-Toleranzperiode**|Wenn das Gerät offline ist, geben Sie den Zeitraum ein, bevor die Zugriffsanforderungen für die App erneut geprüft werden.|
-    |**App-Daten verschlüsseln**|Diese Einstellung gibt an, dass alle dieser App zugeordneten Daten verschlüsselt werden. Dies umfasst extern gespeicherte Daten, z. B. auf SD-Karten.<br /><br />**Verschlüsselung für iOS**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, werden Daten im Ruhezustand mit vom Betriebssystem bereitgestellter Verschlüsselung auf Geräteebene verschlüsselt. Dies wird durch die Geräte-PIN-Richtlinie aktiviert, die vom IT-Administrator festgelegt wird. Wenn eine PIN erforderlich ist, werden die Daten gemäß den Einstellungen in der mobilen Anwendungsverwaltungsrichtlinie verschlüsselt. Wie in der Apple-Dokumentation angegeben, [sind die von iOS 7 verwendeten Module FIPS 140-2-zertifiziert](http://support.apple.com/en-us/HT202739).<br /><br />**Verschlüsselung für Android**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, stellt Microsoft die Verschlüsselung bereit. Daten werden während der Datei-E/A-Vorgänge synchron verschlüsselt.  Inhalt auf dem Speicher des Geräts wird immer verschlüsselt. Die Verschlüsselungsmethode ist nicht FIPS 140-2-zertifiziert.|
+    |**App-Daten verschlüsseln**|Diese Einstellung gibt an, dass alle dieser App zugeordneten Daten verschlüsselt werden. Dies umfasst extern gespeicherte Daten, z. B. auf SD-Karten.<br /><br />**Verschlüsselung für iOS**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, werden Daten im Ruhezustand mit vom Betriebssystem bereitgestellter Verschlüsselung auf Geräteebene verschlüsselt. Dies wird durch die Geräte-PIN-Richtlinie aktiviert, die vom IT-Administrator festgelegt wird. Wenn eine PIN erforderlich ist, werden die Daten gemäß den Einstellungen in der mobilen Anwendungsverwaltungsrichtlinie verschlüsselt. Wie in der Apple-Dokumentation angegeben, [sind die von iOS verwendeten Module FIPS 140-2-zertifiziert](http://support.apple.com/en-us/HT202739).<br /><br />**Verschlüsselung für Android**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, stellt Microsoft die Verschlüsselung bereit. Daten werden während der Datei-E/A-Vorgänge synchron verschlüsselt.  Inhalt auf dem Speicher des Geräts wird immer verschlüsselt. Die Verschlüsselungsmethode ist nicht FIPS 140-2-zertifiziert.|
     |**Blockieren von Bildschirmaufnahmen** (nur Android-Geräte)|Diese Einstellung gibt an, dass die Bildschirmaufnahmefunktionen des Geräts blockiert werden, wenn jemand diese App verwendet.|
     
 4. Wählen Sie danach die Option **Richtlinie speichern**.
@@ -147,8 +147,6 @@ Stellen Sie sicher, dass Sie die Verwaltungsrichtlinie für mobile Anwendungen a
 Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps.md).
 
 > [!IMPORTANT]
-> Für Geräte, die ältere Betriebssysteme als iOS 7.1 ausführen, werden verknüpfte Richtlinien nicht entfernt, wenn die App deinstalliert wird.
->
 > Wenn das Gerät von Intune abgemeldet wird, werden die Richtlinien nicht aus den Apps entfernt. Alle Apps, auf die Richtlinien angewendet wurden, behalten die Richtlinieneinstellungen bei, wenn die App deinstalliert und neu installiert wurde.
 
 ### Maßnahmen, wenn eine App bereits auf Geräten bereitgestellt wurde
@@ -195,6 +193,6 @@ In Fällen, in denen das Gerät oder der Benutzer zwei in Konflikt stehende Rich
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 
