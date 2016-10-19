@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 translationtype: Human Translation
-ms.sourcegitcommit: 52d9301f6297065f752cea1dd19024efb11f0730
-ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
+ms.sourcegitcommit: 0736b5f24065f55d8fbd312395e4bb7226ebf619
+ms.openlocfilehash: 5b6253d3d4c969b6947d83b5c8695a484f8c1d27
 
 
 ---
@@ -24,10 +24,10 @@ ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
 Dieses Thema enthält Informationen zum Suchen nach Problemen nach der Einrichtung der mobilen Anwendungsverwaltung (MAM). Diese Anleitung gilt für MAM-Richtlinien im Azure-Portal.
 
 ### Suchen nach Symptomen
-Benutzer melden so gut wie keine Probleme, da MAM ein Tool zum Schutz von Daten ist. Liegt ein Problem mit der MAM-Konfiguration vor, erhält der Benutzer uneingeschränkten Zugriff, so wie es ohne MAM der Fall wäre, und er würde nicht bemerken, dass es ein Problem gibt. Aus diesem Grund wird empfohlen, dass Sie Ihre MAM-Konfiguration überprüfen, indem Sie Ihre MAM-Richtlinien mit einer kleinen Gruppe von Benutzern steuern, die bewusst die MAM-Einschränkungen testen können. 
+Benutzer melden so gut wie keine Probleme, da MAM ein Tool zum Schutz von Daten ist. Liegt ein Problem mit der MAM-Konfiguration vor, erhält der Benutzer uneingeschränkten Zugriff, so wie es ohne MAM der Fall wäre, und er würde nicht bemerken, dass es ein Problem gibt. Aus diesem Grund wird empfohlen, dass Sie Ihre MAM-Konfiguration überprüfen, indem Sie Ihre MAM-Richtlinien mit einer kleinen Gruppe von Benutzern steuern, die bewusst die MAM-Einschränkungen testen können.
 
 
-### Was soll überprüft werden? 
+### Was soll überprüft werden?
 
 Wenn der Test zeigt, dass das Verhalten Ihrer MAM-Richtlinie nicht wie erwartet ist, empfiehlt es sich, folgende Punkte zu überprüfen:
 
@@ -40,7 +40,7 @@ Wenn der Test zeigt, dass das Verhalten Ihrer MAM-Richtlinie nicht wie erwartet 
 
 2. Wählen Sie einen Benutzer aus der Liste aus, oder suchen Sie einen Benutzer und wählen Sie Ihn aus. Wählen Sie anschließend **Benutzer auswählen** aus. Am oberen Rand der Spalte **App-Berichterstellung** sehen Sie, ob der Benutzer für die MAM lizenziert ist. Nachfolgend sehen Sie, ob der Benutzer für Office 365 und den App-Status aller Geräte des Benutzers lizenziert ist.
 
-![App-Statuts für MAM](..\media\ts-mam-use-apps.png) 
+![App-Statuts für MAM](..\media\ts-mam-user-apps.png) 
 
 ### Aktion
 Hier sind die Aktionen, die basierend auf den Benutzerstatus durchgeführt werden müssen:
@@ -57,6 +57,6 @@ Hier sind die Aktionen, die basierend auf den Benutzerstatus durchgeführt werde
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

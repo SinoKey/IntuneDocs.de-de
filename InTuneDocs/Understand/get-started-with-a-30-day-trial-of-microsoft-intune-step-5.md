@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 7bd5f5d8f4931133a8ef1e697b2fec4cccd07b83
 
 
 ---
@@ -49,16 +49,10 @@ Installieren Sie die **Intune-Unternehmensportal-App** der Microsoft Corporation
 ### Windows Phone 8.1
 Benutzer installieren die **Unternehmensportal-App** der Microsoft Corporation, die im Windows Phone Store verfügbar ist, und melden sich mit den oben hinzugefügten Intune-Anmeldeinformationen an.  Rufen Sie **Angemeldete Geräte** auf, um Ihr Gerät hinzuzufügen.
 
- ### Windows Phone 8.0
- Benutzer klicken auf **Systemeinstellungen** &gt; **Unternehmens-Apps** und melden sich mit den oben hinzugefügten Intune-Anmeldeinformationen an. Die Unternehmensportal-App wird auf Ihrem Telefon bereitgestellt.
-
-Wenn Sie zur Eingabe einer **Serveradresse**aufgefordert werden, geben Sie "manage.microsoft.com" ein.
-
-
 ## Installieren der zuvor bereitgestellten App
 Öffnen Sie auf dem Gerät das Unternehmensportal, wählen Sie **Apps** aus, und installieren Sie anschließend **Microsoft Skype**.
 
-Weitere Informationen zum Verwalten von mobilen Geräten mit Intune finden Sie unter [Vorbereiten der Registrierung von Geräten bei Microsoft Intune](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+Weitere Informationen zum Verwalten von mobilen Geräten mit Intune finden Sie unter [Vorbereiten der Registrierung von Geräten in Microsoft Intune](/Intune/deploy-use/prerequisites-for-enrollment).
 
 ### Nächste Schritte
 Gratulation! Sie habe soeben Schritt 5 der exemplarischen Vorgehensweise *Microsoft Intune-Evaluierung* ausgeführt.
@@ -69,6 +63,6 @@ Gratulation! Sie habe soeben Schritt 5 der exemplarischen Vorgehensweise *Micro
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 
