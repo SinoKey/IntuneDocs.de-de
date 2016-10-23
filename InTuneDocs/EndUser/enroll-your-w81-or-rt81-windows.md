@@ -13,8 +13,8 @@ ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: ce39a013186942e3d5a2b355d1425edbed4fa769
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 53e9313bc85c149960fa985b655a22065b55b8a0
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: ce39a013186942e3d5a2b355d1425edbed4fa769
 
 # Registrieren Ihres Windows 8.1- oder Windows RT 8.1-Geräts bei Intune
 
-Wenn Ihre Firma oder Schule Microsoft Intune verwendet, können Sie Ihre Geräte registrieren, um Zugriff auf die Unternehmens-E-Mail, Dateien und weitere Ressourcen zu erhalten. Durch das Registrieren Ihrer Geräte kann Ihre Organisation Unternehmensdaten schützen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) und unter [Was Ihr IT-Administrator auf Ihrem Gerät sehen bzw. nicht sehen kann](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ihre Geräte registrieren, um Zugriff auf Unternehmens-E-Mails, Dateien und weitere Ressourcen zu erhalten. Wenn Sie Ihre Geräte registrieren, kann Ihre Organisation Unternehmensdaten schützen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) und unter [Was Ihr IT-Administrator auf Ihrem Gerät sehen bzw. nicht sehen kann](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 
 So registrieren Sie Ihr Windows 8.1- oder Windows RT 8.1-Gerät:
@@ -33,9 +33,9 @@ So registrieren Sie Ihr Windows 8.1- oder Windows RT 8.1-Gerät:
 
 2.  Geben Sie Ihre E-Mail-Adresse (Geschäft, Schule oder Uni) als Benutzer-ID ein, und tippen Sie dann auf **Beitreten**.
 
-    Wenn Ihre Benutzer-ID nicht erforderlich ist, wird die E-Mail-Adresse verwendet, die Sie beim Anmelden bei diesem Gerät eingegeben haben.
+    Wenn Ihre Benutzer-ID nicht erforderlich ist, wird die E-Mail-Adresse verwendet, die Sie beim Anmelden auf diesem Gerät eingegeben haben.
 
-3.  Geben Sie das Kennwort für Ihr Geschäfts-, Schul- oder Uni-E-Mail ein.
+3.  Geben Sie das Kennwort für Ihre Geschäfts-, Schul- oder Uni-E-Mail-Adresse ein.
 
     ![Kennwort eingeben](./media/W81-2-workplacesettings_signin.png)
 
@@ -43,7 +43,7 @@ So registrieren Sie Ihr Windows 8.1- oder Windows RT 8.1-Gerät:
 
     ![Aktivieren der Geräteverwaltung](./media/W81-3-dev-mgt-turn-on.png)
 
-5.  Aktivieren Sie im Dialogfeld **Apps und Dienste des IT-Administrators zulassen** das Kontrollkästchen **Ich stimme zu**, und tippen Sie dann auf **Aktivieren**.
+5.  Aktivieren Sie im Dialogfeld **Apps und Dienste des IT-Administrators zulassen** das Kästchen **Ich stimme zu**, und tippen Sie dann auf **Aktivieren**.
 
     ![Aktivieren von Apps und Diensten](./media/W81-4-agree-allow-apps-services.png)
 
@@ -51,7 +51,7 @@ So registrieren Sie Ihr Windows 8.1- oder Windows RT 8.1-Gerät:
 
     ![Die Registrierung ist abgeschlossen.](./media/W81-5-enrolled-done.png)
 
-Außerdem wird empfohlen, dass Sie die Unternehmensportal-App installieren, mit der Sie die Unternehmens-Apps einfach bestimmen und abrufen können, die für Sie und Ihre Rolle relevant sind. Abhängig von der Intune-Konfiguration Ihres Unternehmens wurde die Unternehmensportal-App möglicherweise bereits als Teil Ihres Registrierungsprozesses installiert. Um zu prüfen, ob Sie die App haben, suchen Sie in der Liste Ihrer Apps nach **Unternehmensportal**. Wenn das Unternehmensportal nicht in der Liste der Apps angezeigt wird, gehen Sie folgendermaßen vor, um es zu installieren.
+Außerdem wird empfohlen, dass Sie die Unternehmensportal-App installieren, mit der Sie die Unternehmens-Apps einfach bestimmen und abrufen können, die für Sie und Ihre Rolle relevant sind. Abhängig von der Intune-Konfiguration Ihres Unternehmens wurde die Unternehmensportal-App möglicherweise bereits im Rahmen Ihres Registrierungsprozesses installiert. Um zu prüfen, ob Sie die App haben, suchen Sie in der Liste Ihrer Apps nach **Unternehmensportal**. Wenn das Unternehmensportal nicht in der Liste der Apps angezeigt wird, gehen Sie folgendermaßen vor, um es zu installieren.
 
 1.  Tippen Sie auf **Starten** &gt; **Store**.
 
@@ -59,13 +59,12 @@ Außerdem wird empfohlen, dass Sie die Unternehmensportal-App installieren, mit 
 
 3.  Tippen Sie in der Liste der Ergebnisse auf **Unternehmensportal**.
 
-4.  Tippen Sie auf **Installieren** oder **Kostenlos**. Die angezeigte Option hängt davon ab, wie Ihr Unternehmen die App konfiguriert hat.
+4.  Tippen Sie auf **Installieren** oder **Kostenlos**. Die angezeigte Option hängt davon ab, wie Ihr Unternehmen die App eingerichtet hat.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

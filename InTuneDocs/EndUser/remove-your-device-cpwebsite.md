@@ -1,6 +1,6 @@
 ---
 title: "Entfernen Ihres Geräts aus dem Unternehmensportal | Microsoft Intune"
-description: 
+description: "Entfernen eines Geräts aus dem Unternehmensportal"
 keywords: 
 author: Staciebarker
 manager: angrobe
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 1e555beced073c6c2f2fcfe271992f3255a6c8ed
+ms.sourcegitcommit: 5a0f3e42568634a4c5369919ad4feaf1be4b941e
+ms.openlocfilehash: 4c0186214893e9a056e331e7ec081dbdbee3a71e
 
 
 ---
@@ -23,28 +23,26 @@ ms.openlocfilehash: 1e555beced073c6c2f2fcfe271992f3255a6c8ed
 
 # Entfernen Ihres Geräts aus dem Unternehmensportal
 
-Wenn Sie Ihr Gerät nicht mehr von Intune und Ihrem IT-Administrator verwalten lassen möchten, können Sie es über die [Unternehmensportalwebsite](http://portal.manage.microsoft.com) aus dem Unternehmensportal entfernen. Die Unternehmensportalwebsite ist eine Website, auf der Sie Computer und Geräte verwalten können, die Sie bei Intune registriert haben. Hier können Sie die meisten der Aufgaben ausführen, die auch über Ihre Unternehmensportal-App zur Verfügung stehen.
+Wenn Sie Ihr Gerät nicht mehr von Intune und Ihrem IT-Administrator verwalten lassen möchten, können Sie es über die [Unternehmensportal-Website](http://portal.manage.microsoft.com) aus dem Unternehmensportal entfernen. Die Unternehmensportal-Website ist eine Webseite, die Sie verwenden können, um Computer und Geräte zu verwalten, die Sie in Intune registriert haben. Auf der Unternehmensportal-Website können Sie die meisten der verfügbaren Tasks auf Ihrer Unternehmensportal-App ausführen.
 
 Wenn Sie Ihr Gerät entfernen, wird es nicht mehr im Unternehmensportal aufgeführt, und Sie haben möglicherweise keinen Zugriff mehr auf die Daten, Apps und E-Mails Ihres Unternehmens oder Ihrer Schule.
 
 So entfernen Sie Ihr Gerät:
 
-1.  Öffnen Sie die [Unternehmensportalwebsite](http://portal.manage.microsoft.com), und tippen Sie auf das Gerät, das Sie zurücksetzen möchten.
+1.  Öffnen Sie die [Unternehmensportal-Website](http://portal.manage.microsoft.com), und tippen Sie auf den Namen des Geräts, das Sie entfernen möchten.
 
 2.  Tippen Sie auf **Entfernen**.
 
-    ![remove-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+    ![Option „Gerät entfernen“ auf der Unternehmensportal-Website](./media/iwp-screen-with-all-options.png)
 
-3. Lesen Sie die Warnung, die angibt, was geschieht, wenn Sie das Gerät entfernen, und tippen Sie dann auf **Entfernen**, um Ihr Gerät aus dem Unternehmensportal zu entfernen.
+3. Lesen Sie die Warnung, und tippen Sie anschließend auf **Entfernen**, um Ihr Gerät aus dem Unternehmensportal zu entfernen.
 
 Ihr Gerät wurde entfernt.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die Kontaktinformationen Ihres IT-Administrators finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

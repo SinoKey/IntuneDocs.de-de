@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: b23073a0bad085c8994f5e9b7c1b46e2985cd05c
+ms.sourcegitcommit: 1d133011004fa9c684f81c7adc085dc43a4a2ee4
+ms.openlocfilehash: 29bc67a9ce4120cbb9f157c8d0eefb78dce020ca
 
 
 ---
@@ -29,7 +29,7 @@ Das Unternehmensportal ist eine App, die Sie auf Ihrem iOS-Gerät installieren, 
 
 2.  Laden Sie die App **Microsoft Intune-Unternehmensportal** herunter.
 
-    ![download-ios-comp-portal-app](./media/ios-cpinstall-1-cpinstore.png)
+    ![Herunterladen der Unternehmensportal-App](./media/ios-cpinstall-1-cpinstore.png)
 
 3.  Öffnen Sie die Unternehmensportal-App, geben Sie die E-Mail-Adresse und das Kennwort Ihres Geschäfts-, Schul- oder Unikontos ein, und tippen Sie dann auf **Anmelden**.
 
@@ -39,7 +39,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -4,7 +4,7 @@ description: "In diesem Thema werden die Verwaltungsrichtlinieneinstellungen fü
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 652f3aac9bd0925bd8e8718df04c0eb4b5629902
+ms.sourcegitcommit: 7313854dc9cee26412ed4759e570f0aecc5f156b
+ms.openlocfilehash: e8b1ccca0c905ccdefd5c4a97b78561c6edb7908
 
 
 ---
@@ -67,6 +67,9 @@ Der Begriff **Richtlinienverwaltete Apps** wird verwendet, um auf Apps zu verwei
 - **Kontaktsynchronisierung deaktivieren:** Wählen Sie **Ja** aus, um zu verhindern, dass Kontaktinformationen mit der nativen Adressbuch-App auf dem Gerät synchronisiert werden. Wenn Sie **Nein** auswählen, speichert die App die Kontaktinformationen in der nativen Adressbuch-App auf dem Gerät.<br/>Wenn Sie zum Entfernen von Unternehmensdaten eine selektive Zurücksetzung durchführen, werden Kontakte entfernt, die direkt aus der App mit dem nativen Adressbuch synchronisiert werden. Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. Dies gilt derzeit nur für die **Microsoft Outlook**-App.
 
   **Standardwert = Ja**
+- **Drucken deaktivieren:** Wählen Sie **Ja** aus, um zu verhindern, dass Unternehmensdaten aus Apps gedruckt werden, die mit der MAM-Richtlinie verknüpft sind.
+
+  **Standardwert = Ja**
 
 ##  Richtlinieneinstellungen für den Android-Zugriff
 Der Begriff **Richtlinienverwaltete Apps** wird verwendet, um auf Apps zu verweisen, die mit MAM-Richtlinien konfiguriert sind.
@@ -96,6 +99,6 @@ Der Begriff **Richtlinienverwaltete Apps** wird verwendet, um auf Apps zu verwei
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

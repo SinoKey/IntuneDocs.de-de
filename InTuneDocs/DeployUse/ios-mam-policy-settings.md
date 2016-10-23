@@ -4,7 +4,7 @@ description: "In diesem Thema werden die Richtlinieneinstellungen zur Verwaltung
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
+ms.sourcegitcommit: 3f6e500ef942e0f0e89ffd9ddb4889384f296e16
+ms.openlocfilehash: 36d21aee42c8a4812b1ed9623be2da3e65442bff
 
 
 ---
@@ -84,6 +84,11 @@ Der Begriff **Richtlinienverwaltete Apps** wird verwendet, um auf Apps zu verwei
   Wenn Sie zum Entfernen von Unternehmensdaten eine selektive Zurücksetzung durchführen, werden Kontakte entfernt, die direkt aus der App mit dem nativen Adressbuch synchronisiert werden. Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. Dies gilt derzeit nur für die **Microsoft Outlook**-App.
 
   **Standardwert = Ja**
+  
+- **Drucken deaktivieren:** Wählen Sie **Ja** aus, um zu verhindern, dass Unternehmensdaten aus Apps gedruckt werden, die mit der MAM-Richtlinie verknüpft sind.
+
+    **Standardwert = Ja**
+
 ##  Richtlinieneinstellungen für den iOS-Zugriff
 Der Begriff **Richtlinienverwaltete Apps** wird verwendet, um auf Apps zu verweisen, die mit MAM-Richtlinien konfiguriert sind.
 - **PIN für Zugriff erforderlich:**  Wählen Sie **Ja** aus, um für richtlinienverwaltete Apps eine PIN anzufordern. Benutzer werden beim ersten Ausführen der App im beruflichen Kontext aufgefordert, diese einzurichten.
@@ -114,6 +119,6 @@ Auf iOS-Geräten können Sie zulassen, dass sich die Benutzer per Fingerabdruck 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

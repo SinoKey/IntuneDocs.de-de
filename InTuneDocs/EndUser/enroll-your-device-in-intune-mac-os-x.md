@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 0460982186386378d5461861d9098ac3269e6fd0
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 4a682db8e949fa087fdffe945a758554c1bfb164
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 0460982186386378d5461861d9098ac3269e6fd0
 
 # Registrieren Ihres Mac OS X-Geräts bei Intune
 
-Die Registrierung Ihres Mac OS X-Geräts bei Intune ermöglicht Ihnen den Zugriff auf das Netzwerk des Unternehmens, Ihre geschäftlichen E-Mails und Arbeitsdateien sowie den Abruf von Unternehmens-Apps. Weitere Informationen, was geschieht, wenn Sie Ihr Gerät registrieren, finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Wenn Sie Ihr Mac OS X-Gerät bei Intune registrieren, können Sie auf das Netzwerk des Unternehmens sowie auf Ihre Geschäfts-E-Mails und Arbeitsdateien zugreifen. Sie können darüber hinaus auch Unternehmens-Apps darauf installieren. Weitere Informationen, was geschieht, wenn Sie Ihr Gerät registrieren, finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
 Wenn Sie ein iOS-Gerät registrieren möchten, lesen Sie [Registrieren Ihres iOS-Geräts bei Intune](enroll-your-device-in-intune-ios.md).
 
@@ -40,11 +40,11 @@ So registrieren Sie Ihr Mac OS X-Gerät
 
     ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png)
 
-4.  Tippen Sie im Dialogfeld **Verwaltungsprofil installieren** auf **Installieren**. Wenn ein Dialogfeld angezeigt wird, in dem Sie aufgefordert werden, Ihre Anmeldeinformationen einzugeben, geben Sie Ihren Benutzernamen und Ihr Kennwort ein, und tippen Sie dann auf **Weiter** &gt; **Installieren**.
+4.  Tippen Sie im Dialogfeld **Install Management Profile** (Verwaltungsprofil installieren) auf **Installieren**. Wenn ein Dialogfeld angezeigt wird, in dem Sie zur Eingabe Ihrer Anmeldeinformationen aufgefordert werden, geben Sie Ihren Benutzernamen und Ihr Kennwort ein, und tippen Sie dann auf **Weiter** &gt; **Installieren**.
 
     ![install-management-profile](./media/3-macosx-enroll-tap-install.png)
 
-    Wenn Sie die Registrierung abgeschlossen haben, wird die Seite „Verwaltungsprofil“ mit der Angabe angezeigt, dass Ihr Profil überprüft wurde.
+    Wenn Sie die Registrierung abgeschlossen haben, wird auf der Seite **Management Profile** (Verwaltungsprofil) angezeigt, dass Ihr Profil überprüft wurde.
 
     ![management-profile-verified](./media/4-macosx-enroll-done.png)
 
@@ -52,7 +52,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7c334b96134040fd124c348c6f2a4b2e5c85886a
-ms.openlocfilehash: d56d9b62a7df3a17b38b7ac01881245c079dc6d4
+ms.sourcegitcommit: de65f43ac83b25fa2dd1dacd2a7807668c2b6e9a
+ms.openlocfilehash: fa3230e1faf24bdbbd7e84a211ca95c1fd0fadfd
 
 
 ---
@@ -63,7 +63,7 @@ In den nächsten Schritten werden die Aufgaben vorgestellt, die zum Abschließen
 
 ### Schritt 2: Konfigurieren des Intune-Connectors
 
-1.  Gehen Sie in der Lookout-Konsole zum Modul **System**, wählen Sie die Registerkarte **Connectors** und dann **Intune** aus.
+1.  Wählen Sie in der Lookout-Konsole vom Modul **System** die Registerkarte **Connectors** und dann **Intune** aus.
 
   ![Screenshot der Lookout-Konsole mit geöffneter Registerkarte „Connectors“ und hervorgehobener Option „Intune“](../media/mtp/lookout_mtp_setup-intune-connector.png)
 
@@ -77,6 +77,7 @@ Definieren Sie in der Option **Registrierungsverwaltung** eine Menge von Benutze
 Um in Registrierungsgruppen einzusteigen, definieren Sie zuerst eine Azure AD-Sicherheitsgruppe, die eine geeignete Menge von Benutzern bildet, für die Registrierung für den Lookout-Schutz vor Gerätebedrohungen. Nachdem Sie die Gruppe in Azure AD erstellt haben, navigieren Sie in der Lookout-Konsole zur Option **Registrierungsverwaltung** und fügen die Azure AD-Sicherheitsgruppe **Anzeigename(n)** zur Registrierung hinzu.
 
 Wenn sich ein Benutzer in einer Registrierungsgruppe befindet, werden alle Geräte der Gruppe, die in Azure AD unterstützt werden, registriert und sind dann für die Aktivierung für den Lookout-Schutz vor Gerätebedrohungen berechtigt.  Beim ersten Öffnen der Lookout for Work-App auf einem unterstützten Gerät wird das Gerät in Lookout aktiviert.
+
 ![Screenshot der Intune-Seite zur Connectorregistrierung](../media/mtp/lookout-mtp-enrollment.png)
 
 Die bewährte Methode ist das Verwenden des Standardwerts (5 Minuten) für die Überprüfung auf neue Geräte.
@@ -97,11 +98,16 @@ Geben Sie in der Option **Fehlerverwaltung** die E-Mail-Adresse ein, an die die 
 
 ![Screenshot der Intune-Seite zur Connector-Fehlerverwaltung](../media/mtp/lookout-mtp-connector-error-notifications.png)
 
-### Schritt 6: Konfigurieren von E-Mail-Benachrichtigungen
+### Schritt 6: Konfigurieren von Registrierungseinstellungen
+Geben Sie im Modul **System** auf der Seite **Connectors** die Anzahl von Tagen an, bevor ein Gerät als getrennt bezeichnet werden kann.  Nicht verbundene Geräte gelten als nicht kompatibel und der Zugriff auf Unternehmensanwendungen wird ihnen auf Grundlage der Intune-Richtlinien für den bedingten Zugriff verwehrt. Sie können Werte zwischen 1 und 90 Tagen angeben.
+
+![](../media/mtp/lookout-console-enrollment-settings.png)
+
+### Schritt 7: Konfigurieren von E-Mail-Benachrichtigungen
 Wenn Sie bei Bedrohungen Warnungen per E-Mail erhalten möchten, melden Sie sich bei der [Lookout-Konsole](https://aad.lookout.com) mit dem Benutzerkonto an, das die Benachrichtigungen erhalten soll. Wählen Sie im Modul **System** auf der Registerkarte **Einstellungen** die gewünschten Benachrichtigungen aus, und legen Sie sie auf **EIN** fest. Speichern Sie die Änderungen.
 
 ![Screenshot der Seite „Einstellungen“ mit angezeigtem Benutzerkonto](../media/mtp/lookout-mtp-email-notifications.png) Wenn Sie keine E-Mail-Benachrichtigungen mehr empfangen möchten, legen Sie die Benachrichtigungen auf **AUS** fest und speichern Ihre Änderungen.
-### Schritt 7: Konfigurieren der Bedrohungsklassifizierung
+### Schritt 8: Konfigurieren der Bedrohungsklassifizierung
 Der Lookout-Schutz vor Gerätebedrohungen klassifiziert verschiedene Typen von Bedrohungen für mobile Geräte. Den [Lookout-Bedrohungsklassifizierungen](http://personal.support.lookout.com/hc/en-us/articles/114094130693) sind Standardrisikostufen zugeordnet. Sie können diese jederzeit gemäß den Anforderungen Ihres Unternehmens ändern.
 
 ![Screenshot der Richtlinienseite mit Bedrohung und Klassifikationen](../media/mtp/lookout-mtp-threat-classification.png)
@@ -116,6 +122,6 @@ Nachdem das Setup abgeschlossen wurde, beginnt der Lookout-Schutz vor Gerätebed
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

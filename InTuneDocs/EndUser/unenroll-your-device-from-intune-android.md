@@ -13,8 +13,8 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 8ae9b8b128408d6afe56f99886a70155e858c9e8
+ms.sourcegitcommit: 891cf629725392beae1a6b8fbbb39f2bead8eb90
+ms.openlocfilehash: 17f7841daa79473b3c92cf50962b60b67224e4ee
 
 
 ---
@@ -30,24 +30,22 @@ Befolgen Sie zum Aufheben der Registrierung Ihres Geräts bei Intune und Deinsta
 
 1.  Melden Sie sich bei der Unternehmensportal-App an.
 
-2.  Tippen Sie auf **MEINE GERÄTE**, und wählen Sie das Gerät aus, dessen Registrierung Sie aufheben möchten.
+2.  Tippen Sie auf **MEINE GERÄTE**, und wählen Sie dann das Gerät aus, dessen Registrierung Sie aufheben möchten.
 
-    ![android-company-portal-unenroll-choose-device](./media/andr-1-my-devices-choose.png)
+    ![Wählen Sie das Gerät aus, für das Sie die Registrierung aufheben möchten.](./media/andr-1-my-devices-choose.png)
 
 3.  Tippen Sie auf das Papierkorbsymbol.
 
-    ![android-company-portal-unenroll-tap-trash](./media/andr-2-tap-trashcan.png)
+    ![Tippen Sie auf das Papierkorbsymbol.](./media/andr-2-tap-trashcan.png)
 
     Tippen Sie auf der Warnungsseite auf **OK**, um die Registrierung Ihres Geräts aufzuheben.
 
-    ![android-company-portal-unenroll-warning](./media/andr-3-warning-about-remove.png)
+    ![Entfernen Sie das Gerät.](./media/andr-3-warning-about-remove.png)
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen), oder schreiben Sie dem Microsoft Android-Team unter wintunedroidfbk@microsoft.com.
-
-
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen), oder schreiben Sie eine E-Mail an das Microsoft Android-Team unter wintunedroidfbk@microsoft.com.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

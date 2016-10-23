@@ -21,7 +21,7 @@ Mit der automatischen Registrierung können Benutzer entweder unternehmenseigene
 
 5. Angeben der URLs für Intune:
 
-  - **MDM-Registrierungs-URL** – Verwenden Sie `https://enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc` für die MDM-Registrierungs-URL.
+  - **MDM-Registrierungs-URL** – Verwenden Sie den Standardwert.
   - **MDM-Nutzungsbedingungs-URL** – Verwenden Sie den Standardwert. Diese URL zeigt die Nutzungsbedingungen für Benutzer an, wenn Geräte registriert werden.
   - **MDM-Richtlinien-URL** – Verwenden Sie den Standardwert. Wenn ein Gerät als nicht kompatibel gemeldet wird, wird die Nachricht **Zugriff verweigert.** mit dieser URL angezeigt. Die URL verweist auf eine Seite, die Benutzern hilft, zu verstehen, warum ihr Gerät nicht mit der Richtlinie kompatibel ist und wie sie die Kompatibilität wiederherstellen können.
 
@@ -34,6 +34,6 @@ Mit der automatischen Registrierung können Benutzer entweder unternehmenseigene
 7. Wählen Sie **Speichern** aus.
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -4,7 +4,7 @@ description: "Benutzerdefiniertes Profil, um eine Liste der zulässigen und bloc
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 937e291f193f61329598395baa63c24d7fefa25f
+ms.sourcegitcommit: c7679d624ba22b2a062ef2534a642e38a5f57fde
+ms.openlocfilehash: 273627573f58e1bde4fd19c548ce87639f25ca4b
 
 
 
@@ -23,7 +23,7 @@ ms.openlocfilehash: 937e291f193f61329598395baa63c24d7fefa25f
 
 Verwenden Sie die Verfahren in diesem Thema, um eine benutzerdefinierte Microsoft Intune-Richtlinie zu erstellen, die eine der folgenden Listen erstellt:
 
-- Eine Liste von Apps, deren Ausführung auf dem Gerät blockiert wird. Keine anderen Apps dürfen ausgeführt werden. Die Ausführung der Apps in dieser Liste wird blockiert, auch wenn diese bereits vor der Anwendung der Richtlinie installiert waren.
+- Eine Liste von Apps, deren Ausführung auf dem Gerät blockiert wird. Die Ausführung der Apps in dieser Liste wird blockiert, auch wenn diese bereits vor der Anwendung der Richtlinie installiert waren.
 - Eine Liste von Apps, die Benutzer des Geräts aus dem Google Play Store installieren dürfen. Nur die aufgelisteten Apps können installiert werden. Es können keine anderen Apps aus dem Store installiert werden.
 
 Diese Einstellungen können nur von Geräten verwendet werden, auf denen Samsung KNOX ausgeführt wird.
@@ -51,7 +51,8 @@ Diese Einstellungen können nur von Geräten verwendet werden, auf denen Samsung
 
 4. Klicken Sie auf **OK**, und klicken Sie anschließend auf **Richtlinie speichern**. 
 
->[TIPP] Sie finden die Paket-ID einer App, indem Sie in Google Play Store zu der App navigieren. Die Paket-ID ist in der URL der Seite der App enthalten. Die Paket-ID der Microsoft Word-App lautet z.B. **com.microsoft.office.word**.
+>[!TIP]
+> Sie finden die Paket-ID einer App, indem Sie im Google Play Store zu der App navigieren. Die Paket-ID ist in der URL der Seite der App enthalten. Die Paket-ID der Microsoft Word-App lautet z.B. **com.microsoft.office.word**.
 
 Die App-Einstellungen werden beim nächsten Einchecken jedes Zielgeräts angewendet.
 
@@ -70,6 +71,6 @@ Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informa
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 
