@@ -3,6 +3,7 @@ title: "Registrieren Ihres iOS-Geräts bei Intune | Microsoft Intune"
 description: "Beschreibt, wie Sie ein iOS-Gerät bei Intune registrieren."
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

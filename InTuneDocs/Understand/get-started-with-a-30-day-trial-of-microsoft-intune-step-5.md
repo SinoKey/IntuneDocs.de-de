@@ -3,6 +3,7 @@ title: "Registrieren von mobilen Geräten für die Evaluierung | Microsoft Intun
 description: "So registrieren Sie mobile Geräte und installieren eine App, wenn Sie sich für eine kostenlose 30-tägige Evaluierungsversion von Intune registrieren."
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

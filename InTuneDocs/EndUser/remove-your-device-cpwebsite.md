@@ -3,6 +3,7 @@ title: "Entfernen Ihres Geräts aus dem Unternehmensportal | Microsoft Intune"
 description: "Entfernen eines Geräts aus dem Unternehmensportal"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

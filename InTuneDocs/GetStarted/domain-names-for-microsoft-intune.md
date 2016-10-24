@@ -3,6 +3,7 @@ title: "Domänennamen für Microsoft Intune | Microsoft Intune"
 description: "Hinzufügen von Domänennamen für Intune"
 keywords: 
 author: andredm7
+ms.author: andredm
 manager: swadhwa
 ms.date: 10/11/2016
 ms.topic: article

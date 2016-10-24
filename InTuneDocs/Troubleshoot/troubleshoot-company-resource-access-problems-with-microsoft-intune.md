@@ -3,6 +3,7 @@ title: Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen | Mic
 description: In diesem Thema werden Fehler- und Statuscodes beschrieben, die Ihnen helfen, Probleme beim Ressourcenzugriff zu behandeln.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

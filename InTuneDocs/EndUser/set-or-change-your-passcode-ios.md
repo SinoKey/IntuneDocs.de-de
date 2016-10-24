@@ -3,6 +3,7 @@ title: "Festlegen oder Ändern der Kennung | Microsoft Intune"
 description: "Festlegen oder Ändern der Kennung"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

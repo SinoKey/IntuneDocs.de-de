@@ -3,6 +3,7 @@ title: "Beschränken des E-Mail-Zugriffs auf Exchange lokal | Microsoft Intune"
 description: "Schützen und steuern Sie den Zugriff auf Unternehmens-E-Mail in Exchange lokal mit bedingtem Zugriff."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

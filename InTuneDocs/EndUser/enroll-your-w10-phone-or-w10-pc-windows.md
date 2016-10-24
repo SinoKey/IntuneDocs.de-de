@@ -3,6 +3,7 @@ title: "Registrieren Ihres Windows 10-Geräts bei Intune | Microsoft Intune"
 description: "Beschreibt das Registrieren Ihres Windows 10-Geräts (mobil oder Desktop) bei Intune."
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

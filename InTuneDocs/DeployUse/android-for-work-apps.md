@@ -3,6 +3,7 @@ title: "Bereitstellen von Apps für Android for Work-Geräte | Microsoft Intune"
 description: "Verwenden Sie dieses Thema zum Synchronisieren und anschließenden Bereitstellen von Apps für Android for Work-Geräte über den Google Play for Work Store."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

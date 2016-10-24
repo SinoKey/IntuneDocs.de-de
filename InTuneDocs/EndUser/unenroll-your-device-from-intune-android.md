@@ -3,6 +3,7 @@ title: "Aufheben der Registrierung Ihres Android-Geräts bei Intune | Microsoft 
 description: "Beschreibt das Aufheben der Registrierung eines Android-Geräts bei Intune."
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

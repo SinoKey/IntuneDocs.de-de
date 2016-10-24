@@ -3,6 +3,7 @@ title: Behandlung von Problemen mit Richtlinien | Microsoft Intune
 description: Behandeln Sie Richtlinienkonfigurationsprobleme.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

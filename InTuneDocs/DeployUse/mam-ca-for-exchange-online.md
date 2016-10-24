@@ -3,6 +3,7 @@ title: "Konfigurieren des App-Zugriffs für Exchange Online | Microsoft Intune"
 description: "In diesem Thema wird beschrieben, wie Sie eine Richtlinie für bedingten Zugriff für MAM-Apps konfigurieren können."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Verwenden von Gruppen zum Verwalten von Benutzern und Geräten | Microso
 description: "Erstellen und Verwalten von Gruppen mithilfe des Arbeitsbereichs „Gruppen“."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

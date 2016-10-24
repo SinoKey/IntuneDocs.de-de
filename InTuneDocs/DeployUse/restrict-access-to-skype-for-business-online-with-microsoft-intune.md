@@ -3,6 +3,7 @@ title: "Beschränken des Zugriffs auf Skype for Business Online | Microsoft Intu
 description: "Schützen und steuern Sie den Zugriff auf Skype for Business Online mit bedingtem Zugriff."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

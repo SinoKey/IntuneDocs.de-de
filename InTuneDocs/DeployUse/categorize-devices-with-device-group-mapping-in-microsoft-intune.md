@@ -3,6 +3,7 @@ title: "Kategorisieren von Geräten mithilfe der Gerätegruppenzuordnung in Micr
 description: "Verwenden Sie die Gerätegruppenzuordnung in Microsoft Intune, um Geräte in von Ihnen definierte Kategorien zu gruppieren, damit Sie diese Geräte einfacher verwalten können."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

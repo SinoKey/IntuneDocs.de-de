@@ -3,6 +3,7 @@ title: "iOS-Gerät entspricht nicht der maximalen Betriebssystemversion | Micros
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Beschränken des E-Mail-Zugriffs auf Exchange Online | Microsoft Intune"
 description: "Schützen und steuern Sie den Zugriff auf Unternehmens-E-Mail in Exchange Online mit bedingtem Zugriff."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

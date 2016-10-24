@@ -3,6 +3,7 @@ title: "Schützen von App-Daten mithilfe von MAM-Richtlinien | Microsoft Intune"
 description: "In diesem Thema wird erläutert, wie Verwaltungsrichtlinien für mobile Apps helfen können, Ihre Unternehmensdaten zu schützen, Datenverlust zu verhindern sowie persönliche und geschäftliche Daten voneinander zu trennen."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

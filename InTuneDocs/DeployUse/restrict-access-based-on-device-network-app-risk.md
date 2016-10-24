@@ -3,6 +3,7 @@ title: "Einschränken des Zugriffs mithilfe von Schutz vor Gerätebedrohungen | 
 description: "Einschränken des Zugriffs auf Unternehmensressourcen auf der Basis von Geräte-, Netzwerk- und Anwendungsrisiko."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

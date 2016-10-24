@@ -3,6 +3,7 @@ title: "Manuelles Synchronisieren Ihres Geräts mithilfe der Unternehmensportalw
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

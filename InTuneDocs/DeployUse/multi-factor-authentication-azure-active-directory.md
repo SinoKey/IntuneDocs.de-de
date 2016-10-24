@@ -3,6 +3,7 @@ title: Mehrstufige Authentifizierung mit Azure AD | Microsoft Intune
 description: "Anfordern der mehrstufigen Authentifizierung in Azure AD für die Geräteregistrierung."
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article

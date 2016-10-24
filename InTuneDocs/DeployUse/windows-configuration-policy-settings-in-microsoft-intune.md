@@ -3,6 +3,7 @@ title: "Einstellungen für Windows-Richtlinien | Microsoft Intune"
 description: "Verwenden Sie die allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und höher) von Intune, um Einstellungen für registrierte Windows 8- und Windows 8.1-Geräte zu konfigurieren:"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

@@ -5,6 +5,7 @@ title: "Einführung in Microsoft Intune | Microsoft Intune"
 description: "Erfahren Sie, wie Intune die Komponente der mobilen Geräteverwaltung der „Enterprise Mobility + Security“-Lösung darstellt."
 keywords: 
 author: Lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/10/2016
 ms.topic: article

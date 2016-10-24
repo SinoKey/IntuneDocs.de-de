@@ -3,6 +3,7 @@ title: "Sicherheitsrichtlinieneinstellungen für mobile Geräte | Microsoft Intu
 description: "Verwenden Sie Intune, um eine Vielzahl von Einstellungen zu konfigurieren, die Sie für verwaltete Geräte in Ihrer Organisation bereitstellen können."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

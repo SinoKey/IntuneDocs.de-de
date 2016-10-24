@@ -3,6 +3,7 @@ title: Wie Ihre Android-Benutzer Apps erhalten | Microsoft Intune
 description: "Methoden, um Android-Apps für Endbenutzer verfügbar zu machen."
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article

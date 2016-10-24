@@ -3,6 +3,7 @@ title: "Verschlüsseln Ihres Windows-Geräts | Microsoft Intune"
 description: "Beschreibt die Vorgehensweise beim Verschlüsseln eines Windows-Geräts"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

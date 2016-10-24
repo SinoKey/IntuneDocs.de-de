@@ -3,6 +3,7 @@ title: "Umschließen von Android-Apps mit dem App Wrapping Tool | Microsoft Intu
 description: "In diesem Thema lernen Sie, Ihre Android-Apps zu umschließen, ohne den Code der App selbst zu ändern. Bereiten Sie die Apps vor, damit Sie Verwaltungsrichtlinien für mobile Apps anwenden können."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

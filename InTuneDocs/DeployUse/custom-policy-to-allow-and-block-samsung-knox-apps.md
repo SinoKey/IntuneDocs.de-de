@@ -3,6 +3,7 @@ title: "Zulässige und blockierte Apps für KNOX | Microsoft Intune"
 description: "Benutzerdefiniertes Profil, um eine Liste der zulässigen und blockierten Apps für KNOX zu erstellen."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

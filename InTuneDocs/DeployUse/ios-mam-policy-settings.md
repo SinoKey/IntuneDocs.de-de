@@ -3,6 +3,7 @@ title: iOS-MAM-Richtlinieneinstellungen | Microsoft Intune
 description: "In diesem Thema werden die Richtlinieneinstellungen zur Verwaltung mobiler Apps für iOS-Geräte beschrieben."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

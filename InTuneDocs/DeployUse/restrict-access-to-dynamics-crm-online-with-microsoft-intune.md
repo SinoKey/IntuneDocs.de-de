@@ -3,6 +3,7 @@ title: "Beschränken des E-Mail-Zugriffs auf Dynamics CRM Online | Microsoft Int
 description: "Schützen und steuern Sie den Zugriff auf Dynamics CRM Online mit bedingtem Zugriff."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article

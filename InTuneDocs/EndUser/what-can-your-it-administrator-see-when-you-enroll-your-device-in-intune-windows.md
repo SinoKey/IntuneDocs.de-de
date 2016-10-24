@@ -3,6 +3,7 @@ title: "Was kann Ihr IT-Administrator sehen, wenn Sie Ihr Gerät bei Intune regi
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

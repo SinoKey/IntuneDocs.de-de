@@ -3,6 +3,7 @@ title: Problembehandlung der Lookout-Integration | Microsoft Intune
 description: "Dieses Thema beschreibt die Behandlung von Problemen, die im Zusammenhang mit der Lookout-Integration häufig auftreten."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

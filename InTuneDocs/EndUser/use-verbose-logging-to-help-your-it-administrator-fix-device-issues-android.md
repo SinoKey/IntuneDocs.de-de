@@ -3,6 +3,7 @@ title: "Verwenden der ausführlichen Protokollierung zur leichteren Behebung von
 description: "Unterstützen Ihres IT-Administrators durch die Verwenden der ausführlichen Protokollierung zur leichteren Behebung von Geräteproblemen"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

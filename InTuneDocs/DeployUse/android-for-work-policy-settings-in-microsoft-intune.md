@@ -4,6 +4,7 @@ title: Android for Work-Richtlinieneinstellungen | Microsoft Intune
 description: "Erstellen Sie Richtlinien, die Einstellungen und Features auf Android for Work-Geräten steuern, die Sie mit Intune verwalten."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

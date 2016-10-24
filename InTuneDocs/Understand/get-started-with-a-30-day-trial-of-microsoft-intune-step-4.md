@@ -3,6 +3,7 @@ title: "Erstellen von Richtlinien und Veröffentlichen einer App für Benutzer |
 description: "So erstellen Sie Richtlinien und veröffentlichen eine App, wenn Sie sich für eine kostenlose 30-tägige Evaluierungsversion von Intune registrieren."
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

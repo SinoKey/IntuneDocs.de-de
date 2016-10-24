@@ -3,6 +3,7 @@ title: Wie Ihre Windows-Benutzer Apps erhalten | Microsoft Intune
 description: "Methoden, um Windows-Apps für Benutzer verfügbar zu machen"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article

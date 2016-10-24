@@ -3,6 +3,7 @@ title: Ressourcen zu Endbenutzerszenarios | Microsoft Intune
 description: "Links zu Informationen zur Freigabe für Ihre Endbenutzer"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: get-started-article

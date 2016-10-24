@@ -3,6 +3,7 @@ title: Referenz zur Konfigurationsrichtlinie | Microsoft Intune
 description: "Anhand der Informationen in diesem Thema können Sie entscheiden, welche Microsoft Intune-Richtlinie Sie zum Verwalten Ihrer Geräte benötigen."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

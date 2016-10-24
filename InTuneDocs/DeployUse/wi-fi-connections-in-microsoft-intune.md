@@ -3,6 +3,7 @@ title: WLAN-Verbindungen | Microsoft Intune
 description: Verwenden Sie WLAN-Profile, um Benutzern zu helfen, eine Verbindung mit Ihren WLAN-Netzwerken herzustellen.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

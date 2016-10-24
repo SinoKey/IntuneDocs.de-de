@@ -3,6 +3,7 @@ title: "Einstellungen für Kompatibilitätsrichtlinien für Android for Work | M
 description: "In diesem Thema werden die Gerätekompatibilitätsrichtlinien für Android-Geräte beschrieben, die mit Android for Work kompatibel sind."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

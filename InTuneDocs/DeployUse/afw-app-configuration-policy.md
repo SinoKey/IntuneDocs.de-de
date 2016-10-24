@@ -3,6 +3,7 @@ title: "Verwenden von Konfigurationsrichtlinien für mobile Android for Work-App
 description: "Verwenden Sie Konfigurationsrichtlinien für mobile Apps in Intune, um Einstellungen anzugeben, die beim Ausführen einer Android for Work-App durch Benutzer erforderlich sind."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

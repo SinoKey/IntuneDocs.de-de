@@ -3,6 +3,7 @@ title: "Senden von Diagnosedatenprotokollen an Ihren IT-Administrator über ein 
 description: "Senden von Datenprotokollen über ein USB-Kabel"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

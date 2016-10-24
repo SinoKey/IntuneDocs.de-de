@@ -3,6 +3,7 @@ title: "Registrieren Ihres Android-Geräts bei Intune | Microsoft Intune"
 description: "Beschreibt, wie Sie ein Android-Gerät bei Intune registrieren."
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/09/2016
 ms.topic: article

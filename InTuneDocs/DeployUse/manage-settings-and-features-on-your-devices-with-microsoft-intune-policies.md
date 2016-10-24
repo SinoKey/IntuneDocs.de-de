@@ -3,6 +3,7 @@ title: "Verwalten von Geräteeinstellungen mit Richtlinien | Microsoft Intune"
 description: "Verwenden Sie Intune, um Richtlinien zu erstellen und bereitzustellen, die Einstellungen und Features auf registrierten, von Ihnen verwalteten Geräten steuern."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Wie Ihre iOS-Benutzer Apps erhalten | Microsoft Intune
 description: "Methoden, um iOS-Apps für Endbenutzer verfügbar zu machen."
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Hinzufügen von Apps | Microsoft Intune"
 description: Nehmen Sie sich vor der Bereitstellung von Apps mit Intune etwas Zeit, um sich mit den in diesem Thema vorgestellten Konzepten vertraut zu machen.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

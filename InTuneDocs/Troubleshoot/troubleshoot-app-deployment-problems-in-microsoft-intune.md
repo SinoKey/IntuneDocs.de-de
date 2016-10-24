@@ -3,6 +3,7 @@ title: Behandlung von Problemen mit der App-Bereitstellung | Microsoft Intune
 description: "Diese Themen helfen Ihnen, Probleme mit der App-Bereitstellung mit Microsoft Intune zu lösen."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/27/2016
 ms.topic: article

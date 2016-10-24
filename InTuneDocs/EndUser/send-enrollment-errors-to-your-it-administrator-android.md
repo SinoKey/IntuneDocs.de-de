@@ -3,6 +3,7 @@ title: Senden von Registrierungsfehlern an Ihren IT-Administrator | Microsoft In
 description: Senden von Registrierungsfehlern an Ihren Administrator
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

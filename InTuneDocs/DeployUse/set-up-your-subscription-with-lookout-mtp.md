@@ -3,6 +3,7 @@ title: "Einrichten Ihres Abonnements für Lookout | Microsoft Intune"
 description: "In diesem Thema werden Details zum Konfigurieren des Lookout-Schutzes vor Gerätebedrohungen erläutert."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

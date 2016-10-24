@@ -3,6 +3,7 @@ title: "Registrieren mobiler Geräte und Installieren einer App | Microsoft Intu
 description: "Erläutert das Registrieren mobiler Geräte und das Installieren einer App auf einem bei Intune registrierten Gerät."
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

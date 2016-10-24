@@ -3,6 +3,7 @@ title: Intune-Evaluierungsanleitung | Microsoft Intune
 description: "Einführung und Voraussetzungen für die Einrichtung einer kostenlosen 30-tägigen Evaluierungsversion von Intune."
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
