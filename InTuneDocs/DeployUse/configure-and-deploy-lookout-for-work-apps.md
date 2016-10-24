@@ -12,8 +12,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99005e15268a60cd801ef1c717088dff2f82927b
-ms.openlocfilehash: 8dce0689d5c4a0672b227eedf3ae738217eb17cf
+ms.sourcegitcommit: 4a69be67c3ef9f028c77c738de5f1fcbd59a8d33
+ms.openlocfilehash: 2c626cb0a36c38c7b5deeca0ff1e902018540634
 
 
 ---
@@ -40,7 +40,7 @@ Aktivieren Sie die Option **Erforderliche Installation**, um vorzuschreiben, das
 
 ## iOS (Enterprise-signierte Version der Lookout-App)
 
-* **Schritt 1:** Stellen Sie sicher, dass die **iOS-Verwaltung** auf Ihrem Gerät eingerichtet ist. Eine Anleitung zum Einrichten Ihres Geräts für die iOS-Verwaltung finden Sie unter [Einrichten der iOS- und Mac-Geräteverwaltung](Set up iOS and Mac device management.md).
+* **Schritt 1:** Stellen Sie sicher, dass die **iOS-Verwaltung** auf Ihrem Gerät eingerichtet ist. Eine Anleitung zum Einrichten Ihres Geräts für die iOS-Verwaltung finden Sie unter [Einrichten der iOS- und Mac-Geräteverwaltung](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
 * **Schritt 2:** Sie müssen nun die Lookout for Work-App für iOS **neu signieren**. Lookout verteilt die Lookout for Work-App für iOS außerhalb von iOS App Store. **Vor der Verteilung der App** müssen Sie die App mit Ihrem iOS Enterprise Developer-Zertifikat neu signieren. Ausführliche Anweisungen zum erneuten Signieren der Lookout for Work-Apps für iOS finden Sie unter [iOS App Re-Signing Process (Erneute Signatur bei iOS-Apps)](https://personal.support.lookout.com/hc/en-us/articles/114094038714) auf der Lookout-Website.
 
@@ -49,7 +49,7 @@ Aktivieren Sie die Option **Erforderliche Installation**, um vorzuschreiben, das
   1.  Melden Sie sich beim [Azure Active Directory-Verwaltungsportal](https://manage.windowsazure.com) an, und navigieren Sie zur Anwendungsseite.
   2.  Fügen Sie die **Lookout for Work-App für iOS** als **native Clientanwendung** hinzu.
   ![Screenshot mit dem Dialogfeld zum Hinzufügen von Apps mit der Option für die native Clientanwendung](../media/mtp/aad-add-app.png)
-  
+
   3. Ersetzen Sie **com.lookout.enterprise.yourcompanyname** durch die Kundenpaket-ID, die Sie beim Signieren der IPA ausgewählt haben.
   4.  Fügen Sie einen zusätzlichen Umleitungs-URI hinzu: **&lt;companyportal://code/>**, gefolgt von einer URL-codierten Version Ihres ursprünglichen Umleitungs-URI.
   5.  Fügen Sie **delegierte Berechtigungen** zu Ihrer App hinzu.

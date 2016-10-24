@@ -1,7 +1,7 @@
 ---
 title: "Schützen von Apps und Daten | Microsoft Intune"
-description: 
-keywords: "Dieses Thema beschreibt die verschiedenen Intune-Features und -Funktionen, die Ihnen zum Schutz Ihrer Unternehmens-Apps und Daten zur Verfügung stehen."
+description: "Dieses Thema beschreibt die verschiedenen Intune-Features und -Funktionen, die Ihnen zum Schutz Ihrer Unternehmens-Apps und Daten zur Verfügung stehen."
+keywords: 
 author: karthikaraman
 manager: angrobe
 ms.date: 07/18/2016
@@ -13,8 +13,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: cf2ef1510aa9dafeddf54855123c826c9ccc2fd0
+ms.sourcegitcommit: dd7a51b5ba176c8c7b593d2d7a3e5cfabd72a1e6
+ms.openlocfilehash: 77ce4cca5f85f1847e599a6151411bfc12afbc8b
 
 
 ---
@@ -53,6 +53,6 @@ Wenn ein Gerät verloren geht oder gestohlen wird oder der Benutzer nicht mehr f
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 
