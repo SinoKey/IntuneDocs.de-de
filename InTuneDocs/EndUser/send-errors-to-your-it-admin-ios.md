@@ -2,8 +2,8 @@
 title: Senden von Fehlern an Ihren IT-Administrator | Microsoft Intune
 description: Senden von Fehlern an Ihren Administrator
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

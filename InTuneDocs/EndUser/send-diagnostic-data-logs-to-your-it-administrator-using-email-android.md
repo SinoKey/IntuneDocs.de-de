@@ -2,8 +2,8 @@
 title: Senden von Diagnosedatenprotokollen an Ihren IT-Administrator per E-Mail | Microsoft Intune
 description: "Senden von Datenprotokollen per E-Mail auf einem Android-Gerät"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article

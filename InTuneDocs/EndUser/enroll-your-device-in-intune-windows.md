@@ -2,8 +2,8 @@
 title: "Registrieren Ihres Windows-Geräts bei Intune | Microsoft Intune"
 description: "Beschreibt, wie Sie ein Windows-Gerät bei Intune registrieren."
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

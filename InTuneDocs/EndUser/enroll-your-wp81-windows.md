@@ -2,8 +2,8 @@
 title: "Registrieren eines Windows Phone 8.1-Geräts bei Intune | Microsoft Intune"
 description: "Beschreibt das Registrieren eines Windows Phone 8.1-Geräts bei Intune."
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
