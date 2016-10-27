@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 2fff575f84512304a119508b49486d02695a06bd
+ms.sourcegitcommit: 690c94c970a97057a65f3f3d5aafa86c235c6df0
+ms.openlocfilehash: 57ede1360c2f85df24dc0245a715d420165b348a
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 2fff575f84512304a119508b49486d02695a06bd
 
 # Registrieren Ihres Geräts
 
-Wenn Ihr Unternehmen oder Ihre Organisation eine Verschlüsselung Ihres Android-Geräts erfordern, bevor Sie auf Unternehmensdateien, E-Mails oder Daten zugreifen können, befolgen Sie die untenstehenden Schritte zum Verschlüsseln des Geräts. Sie werden möglicherweise aufgefordert, vor dem Verschlüsseln eine PIN oder ein Kennwort festzulegen, wenn dies vom IT-Administrator gefordert wird.
+Wenn Ihr Unternehmen oder Ihre Organisation Sie um die Verschlüsselung Ihres Android-Geräts bittet, bevor Sie auf Unternehmensdateien, E-Mails oder Daten zugreifen können, befolgen Sie die untenstehenden Schritte zum Verschlüsseln des Geräts. Sie werden möglicherweise aufgefordert, vor dem Verschlüsseln eine PIN oder ein Kennwort festzulegen, wenn dies vom IT-Administrator gefordert wird.
 
 Wenn Sie Ihr Telefon jemals abmelden, bleibt es verschlüsselt.
 
@@ -64,6 +64,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

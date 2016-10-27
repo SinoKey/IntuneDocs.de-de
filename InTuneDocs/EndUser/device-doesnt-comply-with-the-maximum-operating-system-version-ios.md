@@ -3,6 +3,7 @@ title: "iOS-Gerät entspricht nicht der maximalen Betriebssystemversion | Micros
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article
@@ -14,21 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: e9ffe9caddf6c0f6bf93f19b49672f197dc64708
+ms.sourcegitcommit: 994fbd726b5173ce18e284c94a658189f100a9b0
+ms.openlocfilehash: 99c41c884d1e6e4e0d1ba6d2edb0d902551ea21a
 
 
 ---
 
 
-# iOS-Gerät entspricht nicht der maximalen Betriebssystemversion
+# iOS-Gerät entspricht nicht der Einstellung für die neueste Betriebssystemversion
 
-Ihr iOS-Gerät entspricht nicht der Richtlinie Ihres IT-Administrators für die maximale Version des Betriebssystems. Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-
-
+Ihr iOS-Gerät entspricht nicht der Richtlinie Ihres IT-Administrators für die neueste zulässige Version des Betriebssystems, die Sie benutzen dürfen. Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

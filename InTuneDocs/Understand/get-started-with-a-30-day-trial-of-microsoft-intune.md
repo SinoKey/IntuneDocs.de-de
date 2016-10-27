@@ -3,6 +3,7 @@ title: Intune-Evaluierungsanleitung | Microsoft Intune
 description: "Einführung und Voraussetzungen für die Einrichtung einer kostenlosen 30-tägigen Evaluierungsversion von Intune."
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: cbf863619a385d596630ee4ff0b216a4cbbe6cb7
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
 
 
 ---
@@ -37,12 +38,12 @@ Bevor Sie mit Intune loslegen, benötigen Sie Folgendes:
 
 -   Wenn Sie über ein vorhandenes Microsoft Online Services-Konto verfügen, dann benötigen Sie die Anmeldeinformationen des Administrators für dieses Konto. Wenn Sie nicht über ein solches Konto verfügen oder diesen Intune-Mandanten nur zu Evaluierungszwecken verwenden möchten, dann benötigen Sie diese Administratoranmeldeinformationen nicht.
 
--   Wenn Sie iOS- oder Windows Phone-Geräte mit der Intune-Evaluierungsversion verwalten möchten, benötigen Sie Zertifikate (oder Schlüssel) und Konten, um diese Zertifikate abzurufen (siehe die folgende Tabelle) Für Android-Geräte sind keine zusätzlichen Zertifikate erforderlich.
+-   Wenn Sie iOS- oder Windows Phone 8.1-Geräte mit der Intune-Evaluierungsversion verwalten möchten, benötigen Sie Zertifikate (oder Schlüssel) und Konten, um diese Zertifikate abzurufen (siehe die folgende Tabelle). Für Android-Geräte sind keine zusätzlichen Zertifikate erforderlich.
 
     |Plattform|Zertifikatanforderungen|Weitere Informationen|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 und Windows Phone 8 |Für Benutzer von Windows Phone 8.1, die die Unternehmensportal-App über den Store installieren, ist kein Zertifikat erforderlich. Für Windows Phone 8.0 oder zur Verwendung von Intune zum Bereitstellen der Unternehmensportal-App auf Windows Phone 8.1-Geräten ist ein Symantec-Zertifikat erforderlich.|In dieser Anleitung wird davon ausgegangen, dass Ihre Benutzer die Unternehmensportal-App aus dem Store auf ein Gerät mit Windows Phone 8.1 oder höher abrufen. Weitere Informationen zur Unterstützung von Windows Phone 8.0 finden Sie unter [Einrichten der Windows 10 Mobile- und Windows Phone-Verwaltung mit Microsoft Intune](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).|
-    |Geräte mit Windows 10, Windows RT 8.1, Windows RT oder Windows 8.1|Es bestehen keine Zertifikatanforderungen beim Registrieren von Geräten mit Windows RT und Windows.|[Installieren des Windows-PC-Clients mit Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
+    |Windows Phone 8.1 |Für Benutzer von Windows Phone 8.1, die die Unternehmensportal-App über den Store installieren, ist kein Zertifikat erforderlich. |In dieser Anleitung wird davon ausgegangen, dass Ihre Benutzer die Unternehmensportal-App aus dem Store auf ein Gerät mit Windows Phone 8.1 oder höher abrufen. |
+    |Windows 10-, Windows RT 8.1- oder Windows 8.1-Geräte|Es bestehen keine Zertifikatanforderungen beim Registrieren von Geräten mit Windows RT und Windows.|[Installieren des Windows-PC-Clients mit Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
     |iOS 7.1 oder höher|Beziehen Sie ein Apple Push Notification Service-Zertifikat.|Fordern Sie ein Apple Push Notification Service-Zertifikat bei Apple an, wie unter [Einrichten der iOS- und Mac-Geräteverwaltung mit Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune) beschrieben.|
 
 ## Schritte zum Durchführen einer 30-tägigen Evaluierung von Intune
@@ -66,6 +67,6 @@ Es ist Zeit, mit Ihrem 30-tägigen Evaluierungsabonnement zu starten!
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

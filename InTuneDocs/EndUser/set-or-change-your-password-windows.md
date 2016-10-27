@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 82a6a97dec78ad6e12fa5f8ccecae90a5bcc1e53
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: 1b9401a01a8621ebc03102757b0c839702e48f06
 
 
 ---
@@ -26,7 +26,7 @@ Der IT-Administrator kann mehr als eine Kennwortanforderung festlegen. Das Kennw
 
 Wenn Sie Probleme beim Einrichten eines Kennworts haben, das alle Kennwortanforderungen erfüllt, bitten Sie Ihren IT-Administrator um Hilfe.
 
-## So ändern Sie ein Kennwort für Windows Phone 8 oder 8.1
+## So ändern Sie Ihr Kennwort auf Windows Phone 8.1:
 
 1. Tippen Sie auf dem **Startbildschirm** auf **Einstellungen**, und wählen Sie dann **Sperrbildschirm** aus.
 2. Scrollen Sie nach unten zu **Kennwort**, und tippen Sie auf **Kennwort ändern**.
@@ -34,7 +34,7 @@ Wenn Sie Probleme beim Einrichten eines Kennworts haben, das alle Kennwortanford
 4. Geben Sie in das Feld **Neues Kennwort** Ihr neues Kennwort ein, und wiederholen Sie die Eingabe des neuen Kennworts im Feld **Kennwort bestätigen**.
 4. Tippen Sie auf **Fertig**.
 
-## So legen Sie für Windows Phone 8 oder 8.1 ein Kennwort fest
+## So legen Sie Ihr Kennwort auf Windows Phone 8.1 fest:
 
 1. Tippen Sie auf dem **Startbildschirm** auf **Einstellungen**, und wählen Sie dann **Sperrbildschirm** aus.
 2. Scrollen Sie nach unten zu **Kennwort**, und schieben Sie die Leiste **Kennwort** auf **Ein**.
@@ -47,6 +47,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

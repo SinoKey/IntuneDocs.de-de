@@ -3,6 +3,7 @@ title: "Einstellungen für Windows Phone 8.1-Richtlinien | Microsoft Intune"
 description: "Intune bietet eine Auswahl von integrierten allgemeinen Einstellungen, die Sie auf Windows Phone 8.1-Geräten konfigurieren können. Darüber hinaus können Sie OMA-URI-Werte angeben, um benutzerdefinierte Einstellungen zu erstellen, die über Intune nicht verfügbar sind."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

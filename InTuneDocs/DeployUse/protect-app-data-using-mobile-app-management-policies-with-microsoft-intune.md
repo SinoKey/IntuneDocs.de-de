@@ -3,6 +3,7 @@ title: "Schützen von App-Daten mithilfe von MAM-Richtlinien | Microsoft Intune"
 description: "In diesem Thema wird erläutert, wie Verwaltungsrichtlinien für mobile Apps helfen können, Ihre Unternehmensdaten zu schützen, Datenverlust zu verhindern sowie persönliche und geschäftliche Daten voneinander zu trennen."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,13 +14,13 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 6163f2b2a1c562e5315785b8b4c486fe2347f89d
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
 
 
 ---
 
-# Schützen von App-Daten mithilfe von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune
+# Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune
 
 ## Wie Sie Ihre App-Daten schützen können
 Ihre Mitarbeiter verwenden mobile Geräte für private und berufliche Aufgaben.  Sie möchten einerseits die Produktivität Ihrer Mitarbeiter sicherstellen, möchten andererseits aber auch Datenverlust verhindern, sei er beabsichtigt oder unbeabsichtigt.  Darüber hinaus möchten Sie auch dann die Möglichkeit zum Schützen der Unternehmensdaten haben, wenn der Zugriff darauf über Geräte erfolgt, die nicht von Ihnen verwaltet werden.
@@ -122,8 +123,6 @@ Apps, die mehrere Identitäten unterstützen, bieten Ihnen die Möglichkeit, ver
 
 Wenn der Benutzer beispielsweise die OneDrive-App mit seinem Geschäftskonto startet, kann er die Dateien nicht an einen persönlichen Speicherort verschieben. Wenn der Benutzer OneDrive jedoch mit einem persönlichen Konto verwendet, kann er Daten ohne Einschränkung aus dem persönlichen OneDrive kopieren und verschieben.  
 
-Eine ausführliche Erläuterung zur Verwendung von Apps, die MAM-Richtlinien zugeordnet sind, und dazu, wie Sie MAM-Richtlinien bei Apps mit Unterstützung mehrerer Identitäten nur auf den Arbeitskontext anwenden können, finden Sie unter [Verwenden von Apps mit Unterstützung für mehrere Identitäten](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support).
-
 Alle mobilen Office-Apps unterstützen mehrere Identitäten.
 
 ##  Nächste Schritte
@@ -133,6 +132,6 @@ Alle mobilen Office-Apps unterstützen mehrere Identitäten.
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

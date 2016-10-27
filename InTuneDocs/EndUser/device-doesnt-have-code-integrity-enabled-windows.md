@@ -3,6 +3,7 @@ title: "Auf dem Gerät ist die Codeintegrität nicht aktiviert | Microsoft Intun
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 00bd999dc8d49b2f01e0eb52a8fa28600f050246
+ms.sourcegitcommit: 85cdfd1aac6fdf738754539c746aee8e5d045ae9
+ms.openlocfilehash: 60e29209718ca206ae96ccc2df330650e2f93c1d
 
 
 ---
@@ -23,20 +24,18 @@ ms.openlocfilehash: 00bd999dc8d49b2f01e0eb52a8fa28600f050246
 
 # Auf dem Gerät ist die Codeintegrität nicht aktiviert
 
-Ihr Unternehmen erfordert, dass Sie die Windows-Codeintegrität aktivieren, ein Feature, mit dem Treiber und Systemdateien auf dem Gerät überprüft werden, um sicherzustellen, dass diese sicher sind.
+Ihre Organisation setzt voraus, dass Sie die Windows-Codeintegrität aktivieren. Diese Funktion prüft die Treiber und Systemdateien auf dem Gerät, um sicherzustellen, dass sie sicher sind.
 
 Aktivieren Sie das Feature „sicherer Start“, um die Windows-Codeintegrität zu aktivieren. Das Feature für die Codeintegrität wird dann automatisch aktiviert.
 
 Das Aktivieren des sicheren Starts ist eine fortgeschrittene Aufgabe. Wenn Sie ein mobiles Gerät verwenden, bitten Sie Ihren IT-Administrator um Hilfe.
 
-Wenn Sie einen PC verwenden, können Sie sich an Ihren IT-Administrator wenden oder den Abschnitt „So aktivieren Sie den sicheren Start erneut“ auf der Seite [Deaktivieren des sicheren Starts](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) lesen, um zu versuchen, den sicheren Start selbst zu aktivieren.
+Wenn Sie einen PC verwenden, können Sie sich mit Ihrem IT-Administrator in Verbindung setzen. Lesen Sie alternativ den Abschnitt „So aktivieren Sie „Sicherer Start“ erneut“ auf der Seite [Deaktivieren von „Sicherer Start“](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx), um zu versuchen, den sicheren Start selbst zu aktivieren.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

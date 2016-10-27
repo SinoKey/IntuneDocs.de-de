@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie ein Intune-Zertifikatprofil erstellen.
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 3f657e6a49fb83faddf9c139985369f27656b4bd
 
 
 ---
@@ -38,13 +38,22 @@ Sie müssen ein vertrauenswürdiges Zertifikatprofil erstellen, bevor Sie ein Si
 
 ### So erstellen Sie ein vertrauenswürdiges Zertifikatprofil
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** &gt; **Richtlinie hinzufügen** aus.
-2.  Fügen Sie einen der folgenden Richtlinientypen hinzu:
-    - **Android &gt; Profil des vertrauenswürdigen Zertifikats (Android 4 und höher)**
-    - **iOS &gt; Profil des vertrauenswürdigen Zertifikats (iOS 8.0 und höher)**
-    - **Mac OS X &gt; Vertrauenswürdiges Zertifikatprofil (Mac OS X 10.9 und höher)**
-    - **Windows &gt; Vertrauenswürdiges Zertifikatprofil (Windows 8.1 und höher)**
-    - **Windows &gt; Vertrauenswürdiges Zertifikatprofil (Windows Phone 8.1 und höher)**
+1.  Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** &gt; **Richtlinie hinzufügen** und anschließend eine Geräteplattform aus. Sie können ein vertrauenswürdiges Zertifikatprofil für diese Geräte erstellen:
+
+-  Android 4 und höher
+
+-  Android for Work
+
+-  iOS 7.1 und höher
+
+-  Mac OS X 10.9 und höher
+
+-  Windows 8.1 und höher
+
+-  Windows Phone 8.1 und höher
+
+
+2.  Fügen Sie eine Richtlinie für ein **vertrauenswürdiges Zertifikatprofil** hinzu.
 
     Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -60,14 +69,22 @@ Nachdem Sie ein Profil des vertrauenswürdigen Zertifizierungsstellenzertifikats
 
 ### So erstellen Sie ein SCEP-Zertifikatprofil
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** &gt; **Richtlinie hinzufügen** aus.
-2.  Fügen Sie einen der folgenden Richtlinientypen hinzu:
-    - **Android &gt; SCEP-Zertifikatprofil (Android 4 und höher)**
-    - **iOS &gt; SCEP-Zertifikatprofil (iOS 8.0 und höher)**
-    - **Mac OS X &gt; SCEP-Zertifikatprofil (Mac OS X 10.9 und höher)**
-    - **Windows &gt; SCEP-Zertifikatprofil (Windows 8.1 und höher)**
-    - **Windows &gt; SCEP-Zertifikatprofil (Windows Phone 8.1 und höher)**
+1.  Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** &gt; **Richtlinie hinzufügen** und anschließend eine Geräteplattform aus.  Sie können ein SCEP-Zertifikatprofil für diese Geräte erstellen:
 
+-  Android 4 und höher
+
+-  Android for Work
+
+-  iOS 7.1 und höher
+
+-  Mac OS X 10.9 und höher
+
+-  Windows 8.1 und höher
+
+-  Windows Phone 8.1 und höher
+
+2.  Fügen Sie eine Richtlinie für ein **SCEP-Zertifikatprofil** hinzu.
+    
     Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Befolgen Sie die Anweisungen auf der Profilkonfigurationsseite, um die SCEP-Zertifikatprofileinstellungen zu konfigurieren.
@@ -87,13 +104,16 @@ Die neue Richtlinie wird im Arbeitsbereich **Richtlinie** angezeigt. Sie können
 
 ### So erstellen Sie ein PFX-Zertifikatprofil
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** &gt; **Richtlinie hinzufügen** aus.
-2.  Fügen Sie einen der folgenden Richtlinientypen hinzu:
-  - **Android &gt; PFX-Zertifikatprofil (Android 4 und höher)**
-  - **Windows &gt; PKCS #12-Zertifikatprofil (PFX) (Windows 10 und höher)**
-  - **Windows &gt; PKCS #12-Zertifikatprofil (PFX) (Windows Phone 10 und höher)**
-  - **iOS > PKCS #12 (.PFX) Zertifikatprofil (iOS 8.0 und höher)**    
-    Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+1.  Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** &gt; **Richtlinie hinzufügen** und anschließend eine Geräteplattform aus. PFX-Zertifikate werden für folgende Betriebssysteme unterstützt:
+  - Android 4 und höher
+  - Android for Work
+  - Windows 10 und höher
+  - Windows Phone 10 und höher
+  - iOS 8.0 und höher)    
+
+    
+2.  Fügen Sie eine Richtlinie für ein **PFX-Zertifikatprofil** hinzu. 
+      Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  Geben Sie die Informationen ein, die auf dem Richtlinienformular angefordert werden.
 4.  Wählen Sie **Richtlinie speichern** aus.
 
@@ -130,6 +150,6 @@ Erfahren Sie nun, wie Sie mithilfe von Zertifikaten E-Mail-, WLAN- und VPN-Profi
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

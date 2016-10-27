@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: ebd1300c490f3d69110a5f1920fd25d1dc5cb850
 
 
 ---
@@ -23,11 +23,7 @@ ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
 
 # Was geschieht, wenn Sie die Registrierung Ihres Windows-Geräts bei Intune aufheben?
 
-Klicken Sie im Abschnitt „Inhalt dieses Artikels“ weiter oben auf den Link, der dem Typ Ihres Geräts entspricht, um weitere Informationen zu erhalten.
-
-- [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
-- [Windows 10, Windows 8.1 oder Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
-- [Windows RT, das Windows 8.1 oder Windows RT ausführt](#windows-rt-running-windows-8-1-or-windows-rt)
+Weitere Informationen zum verwendeten Gerätetyp finden Sie über die Links rechts auf dieser Seite unter „Inhalt dieses Artikels“.
 
 
 ## Windows 10, Windows 8.1, Windows 8, Windows 7, Vista
@@ -55,7 +51,7 @@ Zusätzlich für Windows 8.1:
 
 -   Unter Umständen haben Sie auf dem Gerät keinen Zugriff mehr auf einige Unternehmensressourcen, z. B. Dateifreigaben oder interne Websites.
 
-## Windows 10 Mobile, Windows Phone 8.1 oder Windows Phone 8
+## Windows 10 Mobile und Windows Phone 8.1
 
 -   Die Unternehmensportal-App wird auf Ihrem Gerät deinstalliert, d. h. das Gerät wird nicht mehr im Unternehmensportal angezeigt, und Sie sind dann nicht mehr in der Lage, Apps aus der Unternehmensportal-App oder von der Unternehmensportal-Website zu installieren.
 
@@ -66,7 +62,7 @@ Zusätzlich für Windows 8.1:
     > [!IMPORTANT]
     > Die einzige Ausnahme sind die Verschlüsselungsrichtlinien, die weiterhin wirksam sind. Wenn in Ihrer Unternehmensrichtlinie vorgeschrieben war, dass Windows Phone verschlüsselt sein muss, können Sie Ihr Telefon nur noch entschlüsseln, indem Sie es auf Windows Phone über das Menü **Einstellungen** zurücksetzen.
 
-## Windows RT, das Windows 8.1 oder Windows RT ausführt
+## Windows RT, das Windows 8.1 ausführt
 
 -   Die Unternehmensportal-App wird auf Ihrem Gerät deinstalliert, d. h. das Gerät wird nicht mehr im Unternehmensportal angezeigt, und Sie sind dann nicht mehr in der Lage, Apps aus der Unternehmensportal zu installieren.
 
@@ -93,6 +89,6 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

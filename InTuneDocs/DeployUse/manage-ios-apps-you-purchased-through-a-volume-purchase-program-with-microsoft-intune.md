@@ -3,6 +3,7 @@ title: "Verwalten von über ein Volumenprogramm erworbenen iOS-Apps | Microsoft 
 description: "Verwenden Sie Intune, um Apps zu verwalten, die Sie über ein Volumenprogramm von Apple erworben haben. Dazu importieren Sie die Lizenzinformationen aus dem App-Store, verfolgen nach, wie viele Lizenzen verwendet wurden, und verhindern, dass mehr App-Kopien installiert werden, als Sie erworben haben."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/01/2016
 ms.topic: article

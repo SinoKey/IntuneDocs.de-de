@@ -3,6 +3,7 @@ title: "Manuelles Synchronisieren des iOS-Geräts | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 54633d57fc1898c70abf1f37cff08e2dd553e5a1
+ms.sourcegitcommit: 3aadcc1acccb5cf54ce4a452a2c639175fccd81b
+ms.openlocfilehash: f012f980015214769bae3b960b9ae4398463c111
 
 
 ---
@@ -23,17 +24,17 @@ ms.openlocfilehash: 54633d57fc1898c70abf1f37cff08e2dd553e5a1
 
 # Manuelles Synchronisieren des iOS-Geräts
 
-Wenn die App-Installation bei Ihnen zu lange dauert, gehen Sie folgendermaßen vor, um Ihr iOS-Gerät manuell zu synchronisieren. Dies kann die Installation beschleunigen. Die Synchronisierungsfunktion gilt nur für iOS, nicht für Mac OS X.
+Wenn die Installation der App bei Ihnen zu lange dauert, gehen Sie folgendermaßen vor, um Ihr iOS-Gerät manuell zu synchronisieren. Manuelles Synchronisieren kann hilfreich sein, um die Installation zu beschleunigen. Die Synchronisierungsfunktion gilt nur für iOS, nicht für Mac OS X.
 
 1. Öffnen Sie die iOS-Unternehmensportal-App.
 
-2. Tippen Sie im Abschnitt **Meine Geräte** auf das derzeit verwendete Gerät. Dies ist die Gerätekachel ganz links mit dem Häkchen.
+2. Wählen Sie im Abschnitt **Meine Geräte** das derzeit verwendete Gerät aus. Dies ist die Gerätekachel ganz links mit dem Häkchen.
 
-    ![ios-sync-1-comp-portal-apps](./media/ios-sync-1-comp-portal-apps.png)
+    ![Der Bildschirm mit dem Abschnitt „Meine Geräte“](./media/ios-sync-1-comp-portal-apps.png)
 
-3.  Tippen Sie unten rechts auf dem Bildschirm auf die Schaltfläche **Sync**.
+3.  Wählen Sie unten rechts auf dem Bildschirm die Schaltfläche **Sync** aus.
 
-    ![ios-sync-2-sync-button](./media/ios-sync-2-sync-button.png)
+    ![Gerätedetails mit der Schaltfläche „Synchronisierung“](./media/ios-sync-2-sync-button.png)
 
 Auf dem Bildschirm wird ein sich drehender Kreis angezeigt, bis die Synchronisierung abgeschlossen ist.
 
@@ -41,7 +42,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
