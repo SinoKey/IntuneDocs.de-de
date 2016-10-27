@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 6942bd5653bcb0aa11cdab18055bda7b86d0eae2
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: b597e3557ec2c5661490b417e1d0459eb4e8b477
 
 
 ---
@@ -27,8 +27,8 @@ Wenn Sie Ihr Windows-Gerät mithilfe der Unternehmensportal-App oder [Unternehme
 
 |Gerätekonfiguration und -verwaltung|Gerätetyp|
 |---------------------------------------|---------------|
-|Ihr IT-Administrator verwaltet Ihr mobiles Gerät|**Windows 10, Windows Phone 8.1 und Windows Phone 8**</br>Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt, und das Unternehmensportal versucht, das Gerät auf die Standardeinstellungen des Herstellers zurückzusetzen. Ihre persönlichen Daten, Apps und Einstellungen werden entfernt. <br /><br />**Windows 10 Mobile**: Die einzige Möglichkeit zum Aufheben der Registrierung Ihres Geräts ist dessen Zurücksetzung.<br /><br />**Windows RT**<br />Ein Gerät mit dem Betriebssystem Windows RT kann nicht zurückgesetzt werden, es sei denn, es wird nur zum Abrufen von E-Mails verwendet.|
-|Das Gerät kann nur auf Firmen-E-Mail zuzugreifen.|**Windows Phone 8.1 und Windows Phone 8**<br />Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt und Ihr Unternehmens-E-Mail-Konto wird ebenso wie nicht gespeicherte E-Mails gelöscht.<br /><br />**Windows RT**<br />Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt und Ihr Unternehmens-E-Mail-Konto wird ebenso wie nicht gespeicherte E-Mails gelöscht.<br /><br />**Windows 7- oder Windows Vista-Computer**<br />Ein Computer mit dem Betriebssystem Windows 7 oder älter, der nur zum Abrufen von E-Mails verwendet wird, kann nicht zurückgesetzt werden.<br /><br />**Windows 8.1- und Windows 8-Computer**<br />Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt und Ihr Unternehmens-E-Mail-Konto wird ebenso wie nicht gespeicherte E-Mails gelöscht.|
+|Ihr IT-Administrator verwaltet Ihr mobiles Gerät|**Windows 10 und Windows Phone 8.1**</br>Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt, und das Unternehmensportal versucht, das Gerät auf die Standardeinstellungen des Herstellers zurückzusetzen. Ihre persönlichen Daten, Apps und Einstellungen werden entfernt. <br /><br />**Windows 10 Mobile**: Die einzige Möglichkeit zum Aufheben der Registrierung Ihres Geräts ist dessen Zurücksetzung.|
+|Das Gerät kann nur auf Firmen-E-Mail zuzugreifen.|**Windows Phone 8.1**<br />Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt und Ihr Unternehmens-E-Mail-Konto wird ebenso wie nicht gespeicherte E-Mails gelöscht.<br /><br />**Windows 7- oder Windows Vista-Computer**<br />Ein Computer mit dem Betriebssystem Windows 7 oder älter, der nur zum Abrufen von E-Mails verwendet wird, kann nicht zurückgesetzt werden.<br /><br />**Windows 8.1- und Windows 8-Computer**<br />Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt und Ihr Unternehmens-E-Mail-Konto wird ebenso wie nicht gespeicherte E-Mails gelöscht.|
 |PCs und Laptops|**Windows 8.1- und Windows 8-Computer**<br />Ein Computer mit dem Betriebssystem Windows 8 oder Windows 8.1 kann nicht zurückgesetzt werden, sofern er nicht nur zum Abrufen von E-Mails verwendet wird.<br /><br />**Windows 7- oder Windows Vista-Computer**<br />Ein Computer mit dem Betriebssystem Windows 7 oder älter kann nicht zurückgesetzt werden.|
 
 Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
@@ -37,6 +37,6 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

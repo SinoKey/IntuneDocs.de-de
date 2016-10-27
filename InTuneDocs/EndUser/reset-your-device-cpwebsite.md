@@ -3,6 +3,7 @@ title: "Zurücksetzen Ihres Geräts über die Unternehmensportalwebsite | Micros
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

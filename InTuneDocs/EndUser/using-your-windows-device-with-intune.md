@@ -3,6 +3,7 @@ title: "Verwenden Ihres Windows-Geräts mit Intune | Microsoft Intune"
 description: "Liste mit Links zu Aufgaben, die Sie auf Ihrem Windows- Gerät ausführen können, wenn das Gerät bei Intune registriert ist."
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

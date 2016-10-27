@@ -3,6 +3,7 @@ title: "Einstellungen der Upgraderichtlinie für die Windows-Edition | Microsoft
 description: "Erfahren Sie, wie Sie Windows 10-Geräte mit Intune automatisch auf die neueste Version aktualisieren."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

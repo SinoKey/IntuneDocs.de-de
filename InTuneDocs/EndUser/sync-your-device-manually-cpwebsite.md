@@ -1,8 +1,9 @@
 ---
-title: "Manuelles Synchronisieren Ihres Geräts über die Unternehmensportalwebsite | Microsoft Intune"
+title: "Manuelles Synchronisieren Ihres Geräts mithilfe der Unternehmensportalwebsite | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
+ms.sourcegitcommit: 6d53602bf4d767341924c4c4af8edae0d376a149
+ms.openlocfilehash: c49aa7e21f002110155e883894d211266ddbcb6c
 
 
 ---
 
 
-# Manuelles Synchronisieren Ihres Geräts über die Unternehmensportalwebsite
+# Manuelles Synchronisieren Ihres Geräts mithilfe der Unternehmensportalwebsite
 
-Wenn die App-Installation oder ein anderer Task bei Ihnen zu lange dauert, können Sie versuchen, Ihr Gerät manuell zu synchronisieren. Dies kann die Installation oder den Task beschleunigen. Verwenden Sie die nachstehenden Anweisungen, die Ihrem Gerät entsprechen. 
+Wenn die App-Installation oder ein anderer Task bei Ihnen zu lange dauert, können Sie versuchen, Ihr Gerät manuell zu synchronisieren. Manuelles Synchronisieren kann hilfreich sein, um die Installation oder den Vorgang zu beschleunigen.
 
-Die Synchronisierungsfunktion funktioniert nur für die nachstehend aufgelisteten Funktionen.
+Die Synchronisierungsfunktion funktioniert nur für die folgenden Versionen. Verwenden Sie die Anweisungen, die Ihrem Gerät entsprechen.
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
@@ -34,6 +35,6 @@ Die Synchronisierungsfunktion funktioniert nur für die nachstehend aufgelistete
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

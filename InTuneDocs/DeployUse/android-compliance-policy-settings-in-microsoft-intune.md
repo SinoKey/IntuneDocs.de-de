@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 777c0ac6ea309db81b127fb254e0c5f88444e475
-ms.openlocfilehash: cf1fde5b5ed55552e573c724b6165203033683da
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: ed8f280de4582863f77e5b0e9cb5dfb2f20159c4
 
 
 ---
@@ -35,7 +35,7 @@ Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folge
 
 -  **Minimale Kennwortlänge:** Geben Sie die Mindestanzahl an Ziffern oder Zeichen an, die das Benutzerkennwort enthalten muss.
 
-- **Kennwortstärke:** Aktivieren Sie diese Einstellung zum Konfigurieren des Domänenkennworts für Android-Geräte. Wählen Sie aus:
+- **Kennwortstärke:** Mit dieser Einstellung wird erkannt, ob die angegebenen Kennwortanforderungen auf dem Gerät konfiguriert wurden. Aktivieren Sie diese Einstellung, um festzulegen, dass Benutzer für Android-Geräte bestimmte Kennwortanforderungen konfigurieren müssen. Wählen Sie aus:
   -   **Biometrie auf niedriger Sicherheitsstufe**
   - **Erforderlich**
   -   **Mindestens numerisch**
@@ -83,6 +83,6 @@ Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folge
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

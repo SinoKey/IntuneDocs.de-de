@@ -14,14 +14,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: ce231116ad405d274546cee81dbdd0b0909b2d01
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
 
 
 ---
 
 # Vorhandene geschäftliches e-Mail-Konto gefunden
-Sie haben bereits ein geschäftliches e-Mail-Konto. Um weiterhin Ihre Firma e-Mail-Adresse herstellen, müssen Sie die folgenden Schritte ausführen, um Ihren IT-Administrator korrekt eingerichtet, und verwalten Sie Ihr Konto zu aktivieren:
+Sie haben bereits ein geschäftliches e-Mail-Konto. Um sich weiterhin mit Ihrer Geschäfts-E-Mail-Adresse verbinden zu können, müssen Sie die folgenden Schritte ausführen, damit Ihr IT-Administrator Ihr Konto korrekt einrichten und verwalten kann:
 
 1.  In **Einstellungen** auf Ihrem Gerät, entfernen Sie die Verbindung, die Sie bereits haben, Ihr Unternehmens-e-Mail eingerichtet.
 
@@ -35,6 +35,6 @@ Wenn neue E-Mail-Einstellungen nicht nach einer Weile angezeigt werden, wenden S
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

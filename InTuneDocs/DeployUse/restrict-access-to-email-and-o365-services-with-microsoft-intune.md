@@ -3,6 +3,7 @@ title: "Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste | Microsof
 description: "In diesem Thema wird beschrieben, wie Sie bedingten Zugriff einrichten, damit nur kompatible Geräte auf Unternehmens-E-Mail und -daten in SharePoint Online und anderen Diensten zugreifen können."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

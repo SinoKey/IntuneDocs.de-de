@@ -2,7 +2,8 @@
 title: "Registrieren eines Windows Phone 8.1-Geräts bei Intune | Microsoft Intune"
 description: "Beschreibt das Registrieren eines Windows Phone 8.1-Geräts bei Intune."
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: d1c65c826a978fc5d263cfc0ed4eeee0854d0c3b
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 843011aca535d8416b931f43bb622bc5c01ed546
 
 
 ---
@@ -22,7 +23,7 @@ ms.openlocfilehash: d1c65c826a978fc5d263cfc0ed4eeee0854d0c3b
 
 # Registrieren Ihres Windows Phone 8.1-Geräts bei Intune
 
-Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ihre Geräte registrieren, um Zugriff auf Unternehmens-E-Mails, Dateien und weitere Ressourcen zu erhalten. Durch das Registrieren Ihrer Geräte kann Ihre Organisation Unternehmensdaten schützen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) und unter [Was Ihr IT-Administrator auf Ihrem Gerät sehen bzw. nicht sehen kann](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ihre Geräte registrieren, um Zugriff auf Unternehmens-E-Mails, Dateien und weitere Ressourcen zu erhalten. Wenn Sie Ihre Geräte registrieren, kann Ihre Organisation Unternehmensdaten schützen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) und unter [Was Ihr IT-Administrator auf Ihrem Gerät sehen bzw. nicht sehen kann](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 
 Befolgen Sie die für Ihre Firma oder Schule geltenden Anweisungen, um Ihr Phone 8.1-Gerät bei Intune zu registrieren:
@@ -66,7 +67,7 @@ Registrieren Sie Ihr Gerät:
 
     ![Bildschirm „Einstellungen für den Arbeitsplatz“](./media/WP81-enroll-3-workplace-add-acct.png)
 
-7.  Geben Sie den Anforderungen entsprechend zusätzliche Informationen ein, und tippen Sie dann auf **Anmelden**, um die Registrierung abzuschließen. Ihr Arbeitsplatzkonto sollte nun auf der Seite **Einstellungen** &gt; **Arbeitsplatz** angezeigt werden.
+7.  Geben Sie den Anforderungen entsprechend weitere Informationen ein, und tippen Sie dann auf **Anmelden**, um die Registrierung abzuschließen. Ihr Arbeitsplatzkonto sollte nun auf der Seite **Einstellungen** &gt; **Arbeitsplatz** angezeigt werden.
 
     ![Bildschirm „Konto hinzugefügt“](./media/WP81-enroll-4-account-added.png)
 
@@ -76,17 +77,16 @@ Registrieren Sie Ihr Gerät:
 
 2.  Tippen Sie auf **Konto hinzufügen**, und melden Sie sich mit Ihrem Geschäftskonto an.
 
-3.  Geben Sie den Anforderungen entsprechend zusätzliche Informationen ein, und tippen Sie dann auf **Anmelden**, um die Registrierung abzuschließen.
+3.  Geben Sie den Anforderungen entsprechend weitere Informationen ein, und tippen Sie dann auf **Anmelden**, um die Registrierung abzuschließen.
 
 4.  Wenn Sie aufgefordert werden, die Unternehmens-App oder den Hub zu installieren, stellen Sie sicher, dass das entsprechende Kontrollkästchen aktiviert ist, und tippen Sie dann auf **Fertig**.
 
-Wenn Ihr IT-Administrator das Unternehmensportal so konfiguriert hat, dass es während der Anmeldung installiert wird, wird das Unternehmensportal in Ihrer App-Liste angezeigt.
+Wenn Ihr IT-Administrator das Unternehmensportal so eingerichtet hat, dass es während der Anmeldung installiert wird, wird das Unternehmensportal in Ihrer App-Liste angezeigt.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

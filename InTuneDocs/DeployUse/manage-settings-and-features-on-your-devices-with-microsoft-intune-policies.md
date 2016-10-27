@@ -3,8 +3,9 @@ title: "Verwalten von Geräteeinstellungen mit Richtlinien | Microsoft Intune"
 description: "Verwenden Sie Intune, um Richtlinien zu erstellen und bereitzustellen, die Einstellungen und Features auf registrierten, von Ihnen verwalteten Geräten steuern."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
-ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
 
 
 ---
@@ -61,6 +62,7 @@ Eine vollständige Liste der Intune-Richtlinien finden Sie unter [Referenz zu Mi
 
     - [Einstellungen für iOS-Geräte](ios-policy-settings-in-microsoft-intune.md)
     - [Einstellungen für Android-Geräte](android-policy-settings-in-microsoft-intune.md)
+    - [Einstellungen für Android for Work-Geräte](android-for-work-policy-settings-in-microsoft-intune.md)
     - [Einstellungen für Geräte mit Windows 8 und Windows 8.1](windows-configuration-policy-settings-in-microsoft-intune.md)
     - [Einstellungen für Geräte mit Windows Phone 8.1](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
     - [Einstellungen für Desktop- und mobile Geräte mit Windows 10](windows-10-policy-settings-in-microsoft-intune.md)
@@ -115,7 +117,6 @@ Wenn ein Gerät sich nach der ersten Benachrichtigung nicht zum Abrufen der Rich
 - iOS und Mac OS X: alle sechs Stunden.
 - Android: alle acht Stunden.
 - Windows Phone: alle acht Stunden.
-- Registrierte Windows RT-Geräte: alle 24 Stunden.
 - Als Geräte registrierte PCs unter Windows 8.1 und Windows 10: alle acht Stunden.
 
 Wenn das Gerät gerade registriert wurde, ist die Eincheckfrequenz höher:
@@ -212,6 +213,6 @@ Siehe [Behandlung von Problemen mit Richtlinien in Microsoft Intune](/intune/tro
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

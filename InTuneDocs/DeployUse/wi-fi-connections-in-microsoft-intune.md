@@ -3,8 +3,9 @@ title: WLAN-Verbindungen | Microsoft Intune
 description: Verwenden Sie WLAN-Profile, um Benutzern zu helfen, eine Verbindung mit Ihren WLAN-Netzwerken herzustellen.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 7b49b7d9b6054f7d153359c1ee1b6cf5875fba32
 
 
 ---
@@ -29,7 +30,7 @@ Beispiel: Sie installieren ein neues WLAN-Netzwerk mit dem Namen **Contoso Wi-Fi
 
 1.   Erstellen Sie ein WLAN-Profil mit den Einstellungen, die zum Verbinden mit dem Drahtlosnetzwerk **Contoso Wi-Fi** erforderlich sind.
 
-2. Stellen Sie das Profil der Gruppe von Benutzern mit iOS-Geräten bereit.
+2.   Stellen Sie das Profil der Gruppe von Benutzern mit iOS-Geräten bereit.
 
 3.   Auf den Endgeräten der Benutzer erscheint das Netzwerk **Contoso Wi-Fi** in der Liste der Drahtlosnetzwerke, und es kann bequem eine Verbindung zu diesem Netzwerk hergestellt werden.
 
@@ -39,6 +40,8 @@ Beispiel: Sie installieren ein neues WLAN-Netzwerk mit dem Namen **Contoso Wi-Fi
 Sie können WLAN-Profile auf den folgenden Plattformen bereitstellen:
 
 -   Android 4,0 und höher
+
+-   Android for Work   
 
 -   iOS 8.0 und höher
 
@@ -52,10 +55,13 @@ Sie können für Windows 8.1, Windows 10 Desktop oder Windows 10 Mobile ein WLAN
 
     -   WLAN-Profil (Android 4 und höher)
 
+    -   WLAN-Profil (Android for Work)
+
     -   WLAN-Profil (iOS 8.0 und höher)
 
     -   WLAN-Profil (Mac OS X 10.9 und höher)
-
+    
+    
     Es gibt keine empfohlenen Einstellungen für diesen Richtlinientyp. Sie müssen eine benutzerdefinierte Richtlinie erstellen.
 
 3.  Geben Sie den Namen und die Beschreibung für das Profil an.
@@ -173,6 +179,6 @@ Unter [Erstellen eines WLAN-Profils über einen vorinstallierten Schlüssel](pre
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

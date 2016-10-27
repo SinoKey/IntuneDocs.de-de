@@ -3,6 +3,7 @@ title: "Registrieren mobiler Geräte und Installieren einer App | Microsoft Intu
 description: "Erläutert das Registrieren mobiler Geräte und das Installieren einer App auf einem bei Intune registrierten Gerät."
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 182601f7e4a4bd38c70f7961188eb4af593f6107
+ms.sourcegitcommit: 3306d772b074ddcfd1bfcf7178b32f9b371321e7
+ms.openlocfilehash: f57728bb41b750f53b021bed532de18187e764a0
 
 
 ---
@@ -52,7 +53,7 @@ In [Schritt 6](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) di
 
 Öffnen Sie das Unternehmensportal auf dem registrierten Gerät, wählen Sie **Apps** aus, und installieren Sie dann **Microsoft Skype**.
 
-Weitere Informationen zum Verwalten von mobilen Geräten mit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] finden Sie unter [Vorbereiten der Registrierung von Geräten in Microsoft Intune](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+Weitere Informationen zum Verwalten von mobilen Geräten mit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] finden Sie unter [Voraussetzungen für die Registrierung von Geräten in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment).
 
 
 ### Nächste Schritte
@@ -64,6 +65,6 @@ Gratulation! Sie haben den letzten Schritt der Kurzanleitung *Erste Schritte mit
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

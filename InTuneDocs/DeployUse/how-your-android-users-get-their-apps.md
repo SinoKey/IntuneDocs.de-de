@@ -3,6 +3,7 @@ title: Wie Ihre Android-Benutzer Apps erhalten | Microsoft Intune
 description: "Methoden, um Android-Apps für Endbenutzer verfügbar zu machen."
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
@@ -13,15 +14,15 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
-ms.openlocfilehash: d3d37b9bcf8cc5833b4e11185b49902e26a625dc
+ms.sourcegitcommit: 627914b2ac877c1b5ff5bc95f7f2098ab8988250
+ms.openlocfilehash: 98e712fb852c89c1d092b87482f30ada33010a33
 
 
 ---
 
 
 # Wie Ihre Android-Benutzer Apps erhalten
-Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Android-Endbenutzer die Apps erhalten, die Sie über Microsoft Intune verteilen. Diese Informationen können für native Android-Geräte und Samsung KNOX-Geräte unterschiedlich sein.
+Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Android-Endbenutzer die Apps erhalten, die Sie über Microsoft Intune verteilen. Die Informationen können je nach Gerätetyp variieren (native Android-Geräte oder Samsung Knox-Geräte).
 
 ## Native Android-Geräte (nicht Samsung KNOX)
 
@@ -39,9 +40,9 @@ Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Android-Endb
 
 Apps können verwaltet oder nicht verwaltet sein, wie unten beschrieben. Das Verfahren, mit dem Apps in die Verwaltung eingebunden werden, ist das gleiche für alle Arten von Android-Geräten.
 
-**Verwaltete Apps**: Apps, die mittels Richtlinien verwaltet werden können und die von Intune „umschlossen“ werden oder mit dem Intune Mobile Application Management (MAM) Software Development Kit (SDK) erstellt wurden. Diese Apps können von Intune verwaltet werden, und ihnen lassen sich Anwendungsrichtlinien zuweisen.
+**Verwaltete Apps:** Dabei handelt es sich um Apps, die mittels Richtlinien verwaltet werden können. Sie wurden von Intune „umschlossen“ oder mit dem Software Development Kit (SDK) für die Verwaltung mobiler Anwendungen (MAM) in Intune erstellt. Diese Apps können von Intune verwaltet werden, und ihnen lassen sich Anwendungsrichtlinien zuweisen.
 
-**Nicht verwaltete Apps**: Apps, die mittels Richtlinien verwaltet werden können und die nicht von Intune umschlossen werden oder nicht in das Intune MAM SDK integriert sind. Diesen Apps lassen sich keine Anwendungsrichtlinien zuweisen.
+**Nicht verwaltete Apps:** Dabei handelt es sich um Apps, die nicht über Richtlinien verwaltet werden können. Diese Apps wurden nicht von Intune „umschlossen“ oder sind nicht in das Intune MAM SDK integriert. Diesen Apps lassen sich keine Anwendungsrichtlinien zuweisen.
 
 ### Weitere Informationen:
 [Hinzufügen von Apps mit Microsoft Intune](/intune/deploy-use/add-apps)
@@ -52,6 +53,6 @@ Apps können verwaltet oder nicht verwaltet sein, wie unten beschrieben. Das Ver
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "Behandlung von Problemen bei der Geräteregistrierung | Microsoft Intune
 description: "Vorschläge zur Problembehandlung bei Problemen mit der Geräteregistrierung."
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article

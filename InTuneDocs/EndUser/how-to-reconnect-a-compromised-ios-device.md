@@ -3,6 +3,7 @@ title: "Wiederherstellen der Verbindung eines gefährdeten iOS-Geräts | Microso
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,17 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: c47a7097d86ded8e6f38f0270352a7c432110464
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: 166c0708645d191abaaa73aa3143ca558d64ffd0
 
 
 ---
 
 # Wiederherstellen der Verbindung eines gefährdeten iOS-Geräts
-Ihr IT-Administrator hat erkannt, dass Sie ein Gerät verwenden, auf dem ein Jailbreak ausgeführt wurde. Bei einem „Jailbreak“ werden die von iOS festgelegten Softwarebeschränkungen aufgehoben. Dies kann die Sicherheit beeinträchtigen und eine Bedrohung für die Unternehmensressourcen darstellen. In diesem Fall kann das Gerät nicht mehr auf Unternehmensressourcen zugreifen, und Sie müssen Ihren IT-Administrator um Hilfe bitten. Die Kontaktinformationen Ihres IT-Administrators finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Ihr IT-Administrator hat erkannt, dass Sie ein Gerät verwenden, auf das ein Jailbreak angewendet wurde. Ein Jailbreak bedeutet, dass die von iOS festgelegten Nutzungsbeschränkungen entfernt wurden. Die Entfernung dieser Beschränkungen kann die Sicherheit beeinträchtigen und eine Bedrohung für Ihre Unternehmensressourcen darstellen. 
+
+In diesem Fall kann das Gerät nicht mehr auf Unternehmensressourcen zugreifen, und Sie müssen Ihren IT-Administrator um Hilfe bitten. Die Kontaktinformationen Ihres IT-Administrators finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

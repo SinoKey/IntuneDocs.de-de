@@ -3,6 +3,7 @@ title: "Aktivieren der Geräteschutzregel in der Kompatibilitätsrichtlinie | Mi
 description: "Aktivieren der Regel zum Schutz vor Bedrohungen von mobilen Geräten in der Gerätekompatibilitätsrichtlinie."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

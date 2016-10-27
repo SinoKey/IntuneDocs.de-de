@@ -3,8 +3,9 @@ title: "Beschränken des E-Mail-Zugriffs auf Exchange lokal | Microsoft Intune"
 description: "Schützen und steuern Sie den Zugriff auf Unternehmens-E-Mail in Exchange lokal mit bedingtem Zugriff."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 9a6455ded35bf77fbd5da1d4f345759836f38c7f
+ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
+ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
 
 
 ---
@@ -64,17 +65,19 @@ Das folgende Diagramm veranschaulicht den Ablauf, der von den Richtlinien für b
 -   Wenn das Gerät nicht kompatibel ist, wird eine Meldung angezeigt, die den Benutzer zur [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Unternehmensportalwebsite oder zur Unternehmensportal-App weiterleitet. Dort findet der Benutzer Informationen zum Problem und zur Lösung.
 
 ## Unterstützung für mobile Geräte
--   Windows Phone 8 und höher
+-   Windows Phone 8.1 und höher
 
 -   Systemeigene E-Mail-App unter iOS.
 
--   Systemeigene E-Mail-App unter Android 4 oder höher
+-   EAS-E-Mail-Clients wie Gmail unter Android 4 oder höher.
+- EAS-E-Mail-Clients für **Android for Work-Geräte:** Nur **Gmail**- und **Nine Work**-Apps im **Arbeitsprofil** werden auf Android for Work-Geräten unterstützt. Damit der bedingte Zugriff unter Android for Work funktioniert, müssen Sie ein E-Mail-Profil für die Gmail- oder Nine Work-App sowie diese Apps als erforderliche Installation bereitstellen. 
+
 > [!NOTE]
 > Microsoft Outlook-App unter Android und iOS wird nicht unterstützt.
 
 ## Unterstützung für PCs
 
-Die **E-Mail**-Anwendung unter Windows 8 und höher (bei Registrierung bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+Die **E-Mail**-Anwendung unter Windows 8.1 und höher (bei Registrierung bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
 
 ##  Konfigurieren einer Richtlinie für bedingten Zugriff
 
@@ -123,6 +126,6 @@ Die **E-Mail**-Anwendung unter Windows 8 und höher (bei Registrierung bei [!IN
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

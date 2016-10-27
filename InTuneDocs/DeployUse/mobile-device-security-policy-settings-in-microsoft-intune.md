@@ -3,8 +3,9 @@ title: "Sicherheitsrichtlinieneinstellungen für mobile Geräte | Microsoft Intu
 description: "Verwenden Sie Intune, um eine Vielzahl von Einstellungen zu konfigurieren, die Sie für verwaltete Geräte in Ihrer Organisation bereitstellen können."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 388426657c5fa96289f5e14a85e8c299e4b50037
-ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 279b2fbcbdc7bace99d99eca5bc766972dcea3b8
 
 
 
@@ -40,6 +41,7 @@ Sie können die Sicherheitsrichtlinien für mobile Geräte für die folgenden Ge
 
 > [!NOTE]
 > Einige Einstellungen sind auf einigen Geräten nicht anwendbar. In den nachfolgenden Tabellen finden Sie eine vollständige Liste der Einstellungen, die Sie konfigurieren können.
+> Ab Oktober 2016 wird Microsoft Intune die Unterstützung für Windows 8-Unternehmensportal-Apps beenden. Microsoft Intune wird auch die Unterstützung für die Windows Phone 8- und WinRT-Plattformen beenden. Die Registrierung oder Aktualisierung von Windows Phone 8- oder WinRT-Geräten wird daher nicht mehr möglich sein. Bereits registrierte Windows Phone 8-, WinRT- und Windows 8-Geräte können weiterhin verwaltet werden. Aktualisieren Sie Windows Phone 8- und Windows 8-Geräte auf Windows Phone 8.1 und Windows 8.1, und nutzen Sie die entsprechenden Windows Phone 8.1- und Windows 8.1-Unternehmensportal-Apps, um weiterhin Apps an diese Geräte verteilen zu können.
 
 ## Sicherheitseinstellungen
 
@@ -212,6 +214,6 @@ Wenn Sie eine Kennwortlängenrichtlinie für Geräte mit Windows RT bereitstelle
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "Erstellen einer Kompatibilitätsrichtlinie für Geräte | Microsoft Intu
 description: "Erstellen Sie eine Kompatibilitätsrichtlinie, um das Sichern mobiler Geräte und PCs zu unterstützen, die zum Zugriff auf Ihre Unternehmensdaten verwendet werden."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

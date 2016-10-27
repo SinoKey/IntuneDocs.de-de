@@ -4,7 +4,7 @@ description: "Verwenden Sie VPN-Profile zur Bereitstellung von VPN-Einstellungen
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,22 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 957edcf6910dd15f15ab5020773233c6a6ba0ea7
-ms.openlocfilehash: fb5fbbe50295d3fc26f3cd4def4f40898bb6ffd2
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
 
 
 ---
 
 # VPN-Verbindungen in Microsoft Intune
- Mithilfe virtueller privater Netzwerke (VPN) können Sie Benutzern sicheren Remotezugriff auf Ihr Unternehmensnetzwerk bieten. Remotebenutzer können genau so arbeiten wie bei einer physischen Verbindung des Geräts mit dem Netzwerk. Geräte verwenden ein VPN-Verbindungsprofil, um eine Verbindung mit dem VPN-Server zu initiieren. *VPN-Profile* in Microsoft Intune ermöglichen Ihnen die Bereitstellung von VPN-Einstellungen für Benutzer und Geräte in Ihrer Organisation. Durch Bereitstellen dieser Einstellungen erleichtern Sie dem Endbenutzer das Verbinden mit Ressourcen im Unternehmensnetzwerk.
+
+Virtuelle private Netzwerke (virtual private networks, VPNs) bieten Ihren Benutzern sicheren Remotezugriff auf Ihr Unternehmensnetzwerk. Geräte verwenden ein *VPN-Verbindungsprofil*, um eine Verbindung mit dem VPN-Server zu initiieren. *VPN-Profile* in Microsoft Intune ermöglichen Ihnen die Bereitstellung von VPN-Einstellungen für Benutzer und Geräte in Ihrer Organisation, damit diese leicht eine sichere Verbindung zum Netzwerk herstellen können. 
 
 Nehmen Sie z. B. an, Sie möchten allen iOS-Geräten die Einstellungen zur Verfügung stellen, die zum Verbinden mit einer Dateifreigabe im Unternehmensnetzwerk erforderlich sind. Sie erstellen ein VPN-Profil mit den Einstellungen, die zum Herstellen einer Verbindung mit dem Unternehmensnetzwerk erforderlich sind, und stellen dieses Profil dann für alle Benutzer mit iOS-Geräten bereit. Die Benutzer sehen die VPN-Verbindung in der Liste der verfügbaren Netzwerke und können mit geringem Aufwand eine Verbindung herstellen.
 
 Sie können die folgenden Gerätetypen mit VPN-Profilen konfigurieren:
 
 * Geräte unter Android 4 und höher
+* Android for Work-Geräte
 * Geräte unter iOS 8.0 und höher
 * Geräte unter Mac OS X 10.9 und höher
 * Registrierte Geräte unter Windows 8.1 und höher
@@ -70,9 +72,7 @@ VPN-Profile können eine Reihe verschiedener Verbindungstypen und Protokolle von
 
 ### Zertifikate
 
-Beim Erstellen des VPN-Profils wählen Sie ein SCEP- oder PFX-Zertifikatprofil aus, das Sie zuvor in Intune erstellt haben.
-
-Dies wird als Identitätszertifikat bezeichnet. Es dient zur Authentifizierung anhand eines von Ihnen erstellten vertrauenswürdigen Zertifikatprofils (oder eines Stammzertifikats), mit dem überprüft wird, ob das Gerät des Benutzers eine Verbindung herstellen darf. Das vertrauenswürdige Zertifikat wird auf dem Computer bereitgestellt, der die VPN-Verbindung authentifiziert, in der Regel ist dies der VPN-Server.
+Beim Erstellen des VPN-Profils wählen Sie ein SCEP- oder PFX-Zertifikatprofil aus, das Sie zuvor in Intune erstellt haben. Dies wird als Identitätszertifikat bezeichnet. Es dient zur Authentifizierung anhand eines von Ihnen erstellten vertrauenswürdigen Zertifikatprofils (oder eines *Stammzertifikats*), mit dem überprüft wird, ob das Gerät des Benutzers eine Verbindung herstellen darf. Das vertrauenswürdige Zertifikat wird auf dem Computer bereitgestellt, der die VPN-Verbindung authentifiziert, in der Regel ist dies der VPN-Server.
 
 Weitere Informationen zum Erstellen und Verwenden von Zertifikatprofilen in Intune finden Sie unter [Sicherer Zugriff auf Ressourcen mit Zertifikatprofilen](secure-resource-access-with-certificate-profiles.md).
 
@@ -85,6 +85,7 @@ Der Benutzer authentifiziert sich beim VPN-Server durch Angabe seines Benutzerna
 1. Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** > **Richtlinie hinzufügen**.
 2. Wählen Sie eine Vorlage für die neue Richtlinie aus, indem Sie den entsprechenden Gerätetyp erweitern, und wählen Sie dann das VPN-Profil für dieses Gerät aus:
     * **VPN-Profil (Android 4 und höher)**
+    * **VPN-Profil (Android for Work)**
     * **VPN-Profil (iOS 8.0 und höher)**
     * **VPN-Profil (Mac OS X 10.9 und höher)**
     * **VPN-Profil (Windows 8.1 und höher)**
@@ -92,6 +93,9 @@ Der Benutzer authentifiziert sich beim VPN-Server durch Angabe seines Benutzerna
     * **VPN-Profil (Windows 10 Desktop und Mobile und höher)**
 
  Sie können nur benutzerdefinierte VPN-Profilrichtlinien erstellen und bereitstellen. Empfohlene Einstellungen sind nicht verfügbar.
+
+> [!Note]
+> Ein VPN-Profil für Android for Work-Geräte lässt nur für solche Apps eine VPN-Verbindung zu, die auf dem Arbeitsprofil des Geräts installiert sind.
 
 3. Orientieren Sie sich bei der Konfiguration der Einstellungen für das VPN-Profil an der folgenden Tabelle:
 
@@ -192,6 +196,6 @@ Eine Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeit
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 
