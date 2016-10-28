@@ -2,8 +2,8 @@
 title: "Deaktivieren der Erfassung von Nutzungsdaten für iOS durch Microsoft | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 1b193a401c05ae649456e27222503ee5bd9e150f
 ---
 
 
-# Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft
+# <a name="turn-off-microsoft-usage-data-collection"></a>Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft
 
 Um Produkte und Dienstleistungen zu verbessern, erfasst Microsoft automatisch anonyme Daten über die Zuverlässigkeit und Leistung der Unternehmensportal-App sowie deren Verwendung.
 

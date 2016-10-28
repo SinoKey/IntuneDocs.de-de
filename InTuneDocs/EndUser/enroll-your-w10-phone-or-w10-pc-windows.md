@@ -2,8 +2,8 @@
 title: "Registrieren Ihres Windows 10-Geräts bei Intune | Microsoft Intune"
 description: "Beschreibt das Registrieren Ihres Windows 10-Geräts (mobil oder Desktop) bei Intune."
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/18/2016
 ms.topic: article
@@ -21,7 +21,7 @@ ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 ---
 
 
-# Registrieren Ihres Windows 10 Mobile- oder Windows 10-Desktopgeräts bei Intune
+# <a name="enroll-your-windows-10-mobile-or-windows-10-desktop-device-in-intune"></a>Registrieren Ihres Windows 10 Mobile- oder Windows 10-Desktopgeräts bei Intune
 
 Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ihre Geräte registrieren, um Zugriff auf Unternehmens-E-Mails, Dateien und weitere Ressourcen zu erhalten. Durch das Registrieren Ihrer Geräte kann Ihre Organisation Unternehmensdaten schützen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) und unter [Was Ihr IT-Administrator auf Ihrem Gerät sehen bzw. nicht sehen kann](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
@@ -42,7 +42,7 @@ So registrieren Sie Ihr Windows 10 Mobile- oder Windows 10-Desktopgerät:
 
     ![Ihr Konto](./media/w10-enroll-2-accounts-your-account.png)
 
-## Zu befolgende Schritte bei Anzeige von „Zugriff auf Geschäfts-, Schul- oder Unikonto“
+## <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Zu befolgende Schritte bei Anzeige von „Zugriff auf Geschäfts-, Schul- oder Unikonto“
 
 1.  Tippen Sie auf **Auf Arbeits- oder Schulkonto zugreifen** und dann auf **Verbinden**.
 
@@ -69,7 +69,7 @@ So registrieren Sie Ihr Windows 10 Mobile- oder Windows 10-Desktopgerät:
 Wenn Sie die obigen Schritte ausgeführt haben und trotzdem nicht auf E-Mails und Dateien Ihres Geschäfts-, Schul- oder Unikontos zugreifen können, befolgen Sie die Schritte unter [Schritte zur Problembehandlung bei Anzeige von „Zugriff auf Geschäfts-, Schul- oder Unikonto“](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
 
 
-## Zu befolgende Schritte bei Anzeige von „Mein Konto“
+## <a name="steps-to-follow-if-you-see-your-account"></a>Zu befolgende Schritte bei Anzeige von „Mein Konto“
 
 1.  Wechseln Sie zu den **Windows-Einstellungen**, und tippen Sie auf **Konten**.
 
