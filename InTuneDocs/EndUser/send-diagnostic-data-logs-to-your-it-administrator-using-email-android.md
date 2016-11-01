@@ -3,7 +3,7 @@ title: Senden von Diagnosedatenprotokollen an Ihren IT-Administrator per E-Mail 
 description: "Senden von Datenprotokollen per E-Mail auf einem Android-Gerät"
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article

@@ -2,8 +2,8 @@
 title: Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen | Microsoft Intune
 description: In diesem Thema werden Fehler- und Statuscodes beschrieben, die Ihnen helfen, Probleme beim Ressourcenzugriff zu behandeln.
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -44,7 +44,7 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 |130 (APP_CI_ENFORCEMENT_ERROR)|Fehler bei der Installation der MSADP-Lizenz.||
 |Kein Statuscode (APP_CI_ENFORCEMENT_UNKNOWN)|Nicht zutreffend|Der Status ist aktuell unbekannt.|
 
-## <a name="company-resource-access-(common-errors)"></a>Zugriff auf Unternehmensressourcen (allgemeine Fehler)
+## <a name="company-resource-access-common-errors"></a>Zugriff auf Unternehmensressourcen (allgemeine Fehler)
 
 |Statuscode|Hexadezimaler Fehlercode|Fehlermeldung|
 |---------------|--------------------------|-----------------|
