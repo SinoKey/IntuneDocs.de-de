@@ -2,7 +2,7 @@
 title: Senden von Fehlern an Ihren IT-Administrator | Microsoft Intune
 description: Senden von Fehlern an Ihren Administrator
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
@@ -22,7 +22,7 @@ ms.openlocfilehash: c7ddd516273360d42426d05528f7846f144c6667
 ---
 
 
-# Senden von Fehlern an Ihren IT-Administrator
+# <a name="send-errors-to-your-it-admin"></a>Senden von Fehlern an Ihren IT-Administrator
 
 Wenn Sie auf Ihrem iOS-Gerät eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App verwenden, können Sie Informationen senden, um Ihrem IT-Administrator bei der Behandlung des Problems zu helfen. Sie können Fehlerinformationen auf unterschiedliche Weise senden:
 

@@ -2,7 +2,7 @@
 title: "Fehler beim Auswerten des Geräts | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
@@ -22,7 +22,7 @@ ms.openlocfilehash: 43688a00d61785ddabdfef3c45bd30a533a85fe7
 ---
 
 
-# Fehler beim Auswerten des Geräts
+# <a name="error-evaluating-device"></a>Fehler beim Auswerten des Geräts
 Ihr Gerät verstößt gegen mindestens eine Richtlinie Ihres Unternehmens, allerdings kann der Fehler nicht angezeigt werden, da während der Auswertung Ihres Geräts ein Fehler im System aufgetreten ist.  
 
 Um dieses Problem zu beheben, warten Sie einige Minuten, und tippen Sie dann auf **Kompatibilität überprüfen**. Wenn das Problem weiterhin besteht, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).

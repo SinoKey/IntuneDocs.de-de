@@ -2,8 +2,8 @@
 title: Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen | Microsoft Intune
 description: In diesem Thema werden Fehler- und Statuscodes beschrieben, die Ihnen helfen, Probleme beim Ressourcenzugriff zu behandeln.
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -20,12 +20,12 @@ ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 ---
 
-# Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen in Microsoft Intune
+# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen in Microsoft Intune
 Verwenden Sie die Fehle- und Statuscodes in diesem Thema zur Problembehandlung, wenn von einer Microsoft Intune-Aktion ein Fehlercode zurückgegeben wurde.
 
 Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) weitere Möglichkeiten, Hilfe zu erhalten.
 
-## Statuscodes für MDM-verwaltete Windows-Geräte
+## <a name="status-codes-for-mdm-managed-windows-devices"></a>Statuscodes für MDM-verwaltete Windows-Geräte
 
 |Statuscode|Fehlermeldung|Aktion|
 |---------------|-----------------|--------------|
@@ -44,7 +44,7 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 |130 (APP_CI_ENFORCEMENT_ERROR)|Fehler bei der Installation der MSADP-Lizenz.||
 |Kein Statuscode (APP_CI_ENFORCEMENT_UNKNOWN)|Nicht zutreffend|Der Status ist aktuell unbekannt.|
 
-## Zugriff auf Unternehmensressourcen (allgemeine Fehler)
+## <a name="company-resource-access-common-errors"></a>Zugriff auf Unternehmensressourcen (allgemeine Fehler)
 
 |Statuscode|Hexadezimaler Fehlercode|Fehlermeldung|
 |---------------|--------------------------|-----------------|
@@ -73,7 +73,7 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 |-2016341111|0x87D11389|iOS-Gerät hat einen unerwarteten Leerlaufstatus zurückgegeben.|
 |-2016341112|0x87D11388|iOS-Gerät ist derzeit ausgelastet.|
 
-## iOS-Geräte haben Fehler zurückgegeben.
+## <a name="errors-returned-by-ios-devices"></a>iOS-Geräte haben Fehler zurückgegeben.
 
 |Statuscode|Hexadezimaler Fehlercode|Fehlermeldung|
 |---------------|--------------------------|-----------------|
@@ -283,7 +283,7 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 |-2016335111|0x87D12AF9|1001: Nicht unterstützte Profilversion.|
 |-2016335112|0x87D12AF8|1000: Falsche Profilsyntax.|
 
-## OMA-Antwortcodes
+## <a name="oma-response-codes"></a>OMA-Antwortcodes
 
 |Statuscode|Hexadezimaler Fehlercode|Fehlermeldung|
 |---------------|--------------------------|-----------------|
@@ -368,7 +368,7 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 |-2016345912|0x87D100C8|Der SyncML-Befehl wurde erfolgreich abgeschlossen.|
 |-2016346011|0x87D10065|Der angegebene SyncML-Befehl wird ausgeführt, wurde aber noch nicht abgeschlossen.|
 
-### Nächste Schritte
+### <a name="next-steps"></a>Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
 
 
