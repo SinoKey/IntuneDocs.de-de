@@ -2,7 +2,7 @@
 title: "Senden von Diagnosedatenprotokollen an Ihren IT-Administrator über ein USB-Kabel | Microsoft Intune"
 description: "Senden von Datenprotokollen über ein USB-Kabel"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
@@ -22,7 +22,7 @@ ms.openlocfilehash: e26a97d52cc753f83eb49e3f733668eb83ef4932
 ---
 
 
-# Senden von Diagnosedatenprotokollen an Ihren IT-Administrator über ein USB-Kabel
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-a-usb-cable"></a>Senden von Diagnosedatenprotokollen an Ihren IT-Administrator über ein USB-Kabel
 
 Wenn Sie Datenprotokolle an den IT-Administrator senden möchten, können Sie die Protokolle per Computer und USB-Kabel statt von Ihrem mobilen Gerät senden.
 

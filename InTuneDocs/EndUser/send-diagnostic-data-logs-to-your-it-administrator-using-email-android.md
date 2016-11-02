@@ -2,7 +2,7 @@
 title: Senden von Diagnosedatenprotokollen an Ihren IT-Administrator per E-Mail | Microsoft Intune
 description: "Senden von Datenprotokollen per E-Mail auf einem Android-Gerät"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/21/2016
@@ -22,7 +22,7 @@ ms.openlocfilehash: 9dd0f089d220538a5526979a84dc165151b86f4f
 ---
 
 
-# Senden von Diagnosedatenprotokollen an Ihren IT-Administrator per E-Mail
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-email"></a>Senden von Diagnosedatenprotokollen an Ihren IT-Administrator per E-Mail
 
 Wenn Sie auf Ihrem Android-Gerät eine Fehlermeldung erhalten, während Sie mit Ihren Geschäfts- bzw. Schul-Apps arbeiten oder sich in der Unternehmensportal-App befinden, können Sie Diagnosedatenprotokolle senden, um Ihrem IT-Administrator bei der Diagnose und Behebung des Fehlers zu helfen. Damit alle Details in die Protokolle aufgenommen werden, wodurch Ihrem IT-Administrator die Diagnose des Problems erleichtert wird, aktivieren Sie die ausführliche Protokollierung. Weitere Informationen zur ausführlichen Protokollierung finden Sie unter [Verwenden der ausführlichen Protokollierung zur leichteren Behebung von Geräteproblemen durch den IT-Administrator](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
