@@ -3,6 +3,7 @@ title: "Verwalten der Datenübertragung zwischen iOS-Apps | Microsoft Intune"
 description: "Dieses Thema erläutert die Verwendung des iOS-Features „Öffnen in“ und der Richtlinien für die Verwaltung mobiler Apps, um Datenübertragungen zwischen Apps zu verwalten."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
 
 
 ---
 
-# Verwalten der Datenübertragung zwischen iOS-Apps mit Microsoft Intune
-## Verwalten von iOS-Apps
+# <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Verwalten der Datenübertragung zwischen iOS-Apps mit Microsoft Intune
+## <a name="manage-ios-apps"></a>Verwalten von iOS-Apps
 Der Schutz der Unternehmensdaten umfasst die Sicherstellung, dass die Übertragung von Dateien auf Apps beschränkt ist, die von Ihnen verwaltet werden.  Sie können iOS-Apps auf folgende Weise verwalten:
 
 -   Verhindern Sie den Verlust von Unternehmensdaten, indem Sie eine MAM-Richtlinie für die Apps konfigurieren, die als **richtlinienverwaltete** Apps bezeichnet werden.
@@ -28,7 +29,7 @@ Der Schutz der Unternehmensdaten umfasst die Sicherstellung, dass die Übertragu
 -   Sie können Apps auch über den **MDM-Kanal** bereitstellen und verwalten.  Dies erfordert, dass die Geräte in der MDM-Lösung registriert sind. Dabei kann es sich um **richtlinienverwaltete** Apps oder andere verwaltete Apps handeln.
 
 Mit dem Feature **Open in Management** für iOS-Geräte kann die Übertragung von Dateien zwischen Apps, die über den **MDM-Kanal** bereitgestellt werden, eingeschränkt werden. Die Einschränkungen für „Open in Management“ werden in den Konfigurationseinstellungen festgelegt und mithilfe der MDM-Lösung bereitgestellt.  Wenn der Benutzer die bereitgestellte App installiert, werden die festgelegten Einschränkungen angewendet.
-##  Verwenden von MAM mit iOS-Apps
+##  <a name="using-mam-with-ios-apps"></a>Verwenden von MAM mit iOS-Apps
 Verwaltungsrichtlinien für mobile Apps (MAM) können mit dem Feature **Open in Management** verwendet werden, um Unternehmensdaten auf folgende Weite zu schützen:
 
 -   **Im Besitz der Mitarbeiter befindliche Geräte, die von keiner MDM-Lösung verwaltet werden:** Sie können die MAM-Richtlinieneinstellungen so festlegen, dass die **App nur Daten an verwaltete Apps übertragen kann**. Wenn der Endbenutzer eine geschützte Datei in einer Anwendung öffnet, die nicht richtlinienverwaltet ist, kann die Datei nicht gelesen werden.
@@ -41,7 +42,7 @@ Um sicherzustellen, dass Apps, die Sie mithilfe der Drittanbieter-MDM-Lösung be
 > [!IMPORTANT]
 > Die Benutzer-UPN-Einstellung ist nur für Apps erforderlich, die auf Geräten bereitgestellt werden, die von einer MDM-Lösung eines Drittanbieters verwaltet werden.  Diese Einstellung ist für Geräte nicht erforderlich, die von Intune verwaltet werden.
 
-## Konfigurieren der Benutzer-UPN-Einstellung
+## <a name="configure-user-upn-setting"></a>Konfigurieren der Benutzer-UPN-Einstellung
 Diese Konfiguration ist für Geräte erforderlich, die von der MDM-Lösung eines Drittanbieters verwaltet werden. Das nachfolgend beschriebene Verfahren ist ein allgemeiner Ablauf zum Implementieren der UPN-Einstellung und der resultierenden Benutzerumgebung:
 
 
@@ -49,11 +50,11 @@ Diese Konfiguration ist für Geräte erforderlich, die von der MDM-Lösung eines
 
 2.  Stellen Sie die Apps und das E-Mail-Profil, die **von der MDM-Lösung eines Drittanbieters** verwaltet werden sollen, mit der in den Schritten 3 und 4 beschriebenen Einstellung bereit.
 
-3.  Stellen Sie die App mit den folgenden Einstellungen für die App-Konfiguration bereit: „key=IntuneMAMUPN“, „Value=<benutzername@firma.com>“ [Beispiel: „IntuneMAMUPN“, „johanschulz@microsoft.com“]
+3.  Stellen Sie die App mit den folgenden Einstellungen für die App-Konfiguration bereit: „key=IntuneMAMUPN“, „Value=<username@company.com>“ [Beispiel: „IntuneMAMUPN“, ‘jondoe@microsoft.com’]
 
 4.  Stellen Sie die Richtlinie „Open in Management“ auf registrierten Geräten bereit.
 
-### Beispiel für die Benutzerumgebung
+### <a name="example-end-user-experience"></a>Beispiel für die Benutzerumgebung
 
 1.  Der Endbenutzer installiert die Microsoft Word-App auf dem Gerät.
 
@@ -70,11 +71,11 @@ Diese Konfiguration ist für Geräte erforderlich, die von der MDM-Lösung eines
 
 6.  Jetzt erfolgt die erfolgreiche Datenübertragung und das Dokument wird in der App als Unternehmensidentität markiert. Darüber hinaus werden die Daten in einem Arbeitskontext behandelt und die Richtlinieneinstellungen werden entsprechend angewendet.
 
-### Weitere Informationen:
+### <a name="see-also"></a>Weitere Informationen:
 [Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 
