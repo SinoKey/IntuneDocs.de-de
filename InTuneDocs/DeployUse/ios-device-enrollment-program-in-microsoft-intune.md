@@ -116,6 +116,6 @@ Ab November werden Gerätegruppen in Azure Active Directory verwaltet. Nach dies
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
