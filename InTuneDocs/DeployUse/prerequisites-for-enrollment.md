@@ -13,8 +13,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 77c8df8f1886786a2e772429d93b034798b22a66
-ms.openlocfilehash: 8c500a5bfd59f801d1177a681fa9d55d1aa1ee0e
+ms.sourcegitcommit: 92e40930c0ccbeb3d98bef43b115fd92f24beaef
+ms.openlocfilehash: 93a29266ad9d18f444f0cc0c5aadf9b414eedfa2
 
 
 ---
@@ -24,23 +24,23 @@ Damit Mitarbeiter ihre mobilen Geräten bei Intune registrieren können, sind di
 
 |Schritte|Details|  
 |-----------|-------------|  
-|**Schritt 1:** [Geräteregistrierungsabhängigkeiten](#step-1-device-enrollment-dependencies)|Stellen Sie sicher, dass der benutzerdefinierte Domänenname konfiguriert und die Netzwerkkommunikation eingerichtet ist.|  
-|**Schritt 2:** [Festlegen der Autorität für die Verwaltung mobiler Geräte](#step-2-set-mobile-device-management-authority)|Die Autorität für die Verwaltung mobiler Geräte definiert den Dienst, der Ihren Geräten zugewiesen ist.|
-|**Schritt 3:** [Konfigurieren des Intune-Unternehmensportals](#step-3-configure-the-intune-company-portal)|Konfigurieren Sie benutzerseitige Einstellungen für die Unternehmensportal-App.|  
-|**Schritt 4:** [Zuweisen von Intune-Benutzerlizenzen](#step-4-assign-intune-user-licenses)|Weisen Sie den Benutzern Intune-Lizenzen zu, damit sie ihre Geräte registrieren können.|
-|**Schritt 5:** [Einrichten der Geräteverwaltung](#step-5-set-up-device-management)|Aktivieren Sie plattformspezifische Einstellungen für die iOS- und Windows-Verwaltung. Für Android-Geräte ist keine weitere Konfiguration erforderlich.|
+|**Schritt 1:** [Aktivieren von Verbindungen](#step-1-enable-connections)|Stellen Sie sicher, dass der benutzerdefinierte Domänenname konfiguriert und die Netzwerkkommunikation eingerichtet ist.|  
+|**Schritt 2:** [Festlegen der MDM-Autorität](#step-2-set-mdm-authority)|Die Autorität für die Verwaltung mobiler Geräte definiert den Dienst, der Ihren Geräten zugewiesen ist.|
+|**Schritt 3:** [Konfigurieren des Unternehmensportals](#step-3-configure-company-portal)|Konfigurieren Sie benutzerseitige Einstellungen für die Unternehmensportal-App.|  
+|**Schritt 4:** [Zuweisen von Benutzerlizenzen](#step-4-assign-user-licenses)|Weisen Sie den Benutzern Intune-Lizenzen zu, damit sie ihre Geräte registrieren können.|
+|**Schritt 5:** [Aktivieren der Registrierung](#step-5-enable-enrollment)|Aktivieren Sie plattformspezifische Einstellungen für die iOS- und Windows-Verwaltung. Für Android-Geräte ist keine weitere Konfiguration erforderlich.|
 
 Suchen Sie nach Intune mit Configuration Manager?
 > [!div class="button"]
 [SCCM-Dokumentation anzeigen](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
-## Schritt 1: Geräteregistrierungsabhängigkeiten
+## Schritt 1: Aktivieren von Verbindungen
 
 Bevor Sie die Registrierung mobiler Geräte aktivieren, müssen Sie die folgenden Aufgaben ausgeführt haben:
 - [Überprüfen der erforderlichen Netzwerk-URLs und -ports](../get-started/network-infrastructure-requirements-for-microsoft-intune)
 - [Hinzufügen und Überprüfen Ihres Domänennamens](../get-started/domain-names-for-microsoft-intune)
 
-## Schritt 2: Festlegen der Autorität für die Verwaltung mobiler Geräte
+## Schritt 2: Festlegen der MDM-Autorität
 Die MDM-Autorität definiert den Verwaltungsdienst, der über die Berechtigung zum Verwalten einer Gruppe von Geräten verfügt. Die Optionen für die MDM-Autorität umfassen Intune selbst und Configuration Manager mit Intune. Wenn Sie Configuration Manager als Verwaltungsautorität festlegen, kann kein anderer Dienst für die Verwaltung mobiler Geräte verwendet werden.
 
 >[!IMPORTANT]
@@ -56,7 +56,7 @@ Die MDM-Autorität definiert den Verwaltungsdienst, der über die Berechtigung z
 
 3.  Intune erfordert eine Bestätigung, dass es als MDM-Autorität verwendet werden soll. Aktivieren Sie das Kontrollkästchen, und wählen Sie dann **Ja** aus, um Microsoft Intune zum Verwalten mobiler Geräte zu verwenden.
 
-## Schritt 3: Konfigurieren des Intune-Unternehmensportals
+## Schritt 3: Konfigurieren des Unternehmensportals
 
 Im Intune-Unternehmensportal können Benutzer auf Unternehmensdaten zugreifen, häufige Aufgaben wie das Registrieren von Geräten und das Installieren von Apps ausführen und sich über Unterstützungsmöglichkeiten durch Ihre IT-Abteilung informieren.
 
@@ -102,7 +102,7 @@ Sie können Ihr Unternehmensportal mit Ihrem Firmenlogo, Firmennamen, Farbdesign
 
 Nach dem Speichern Ihrer Änderungen können Sie über die Links, die am unteren Rand der Seite **Unternehmensportal** in der Verwaltungskonsole angegeben sind, die Unternehmensportalwebsite anzeigen. Diese Links können nicht geändert werden. Wenn ein Benutzer sich anmeldet, werden über diese Links Ihre Abonnements im Unternehmensportal angezeigt.
 
-## Schritt 4: Zuweisen von Intune-Benutzerlizenzen
+## Schritt 4: Zuweisen von Benutzerlizenzen
 
 Verwenden Sie das **Office 365-Verwaltungsportal**, um cloudbasierte Benutzer manuell hinzuzufügen und um sowohl cloudbasierten Benutzerkonten als auch Konten, die aus Ihrem lokalen Active Directory mit Azure Active Directory (Azure AD) synchronisiert wurden, Lizenzen zuzuweisen. Sie können [lokale Benutzer mit Azure AD synchronisieren](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
 
@@ -119,7 +119,7 @@ Verwenden Sie das **Office 365-Verwaltungsportal**, um cloudbasierte Benutzer m
 3. Führen Sie die [Azure AD Connect-Synchronisierung](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) aus, um Ihre lokalen Benutzer mit Azure AD zu integrieren.
 4. Sobald die Informationen des Benutzerkontos erfolgreich synchronisiert wurden, können Sie mithilfe des [Verwaltungsportals für Office 365](https://portal.office.com/Admin/Default.aspx) Microsoft Intune-Lizenzen zuweisen.
 
-## Schritt 5: Einrichten der Geräteverwaltung
+## Schritt 5: Aktivieren der Registrierung
 Nach dem Einrichten der MDM-Autorität müssen Sie die Geräteverwaltung für die Betriebssysteme einrichten, die Ihre Organisation unterstützen möchte. Die zum Einrichten der Geräteverwaltung erforderlichen Schritte unterscheiden sich je nach Betriebssystem. Beispielsweise müssen Sie für Android-Betriebssysteme keinerlei Aktivitäten in der Intune-Verwaltungskonsole ausführen. Andererseits setzen Windows und iOS eine Vertrauensbeziehung zwischen den Geräten und Intune voraus, um die Verwaltung zu ermöglichen.
 
 Richten Sie Verwaltung für die folgenden Plattformen ein:
@@ -134,6 +134,6 @@ Sie haben auch folgende Möglichkeiten:
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

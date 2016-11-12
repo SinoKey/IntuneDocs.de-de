@@ -2,9 +2,10 @@
 title: "Sie werden aufgefordert, Lookout for Work auf Ihrem iOS-Gerät zu installieren | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,66 +13,48 @@ ms.technology:
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 29eb7c7fb17eb640eefb0cb4a58834d5e3d77591
-ms.openlocfilehash: a8f198633bcaf460f2a94257a052284003230d58
+ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
+ms.openlocfilehash: 03eee971fe74b73983111549338b13bf4068a85c
 
 
 ---
 
 # Sie werden aufgefordert, Lookout for Work auf Ihrem iOS-Gerät zu installieren
 
-Damit Sie auf Ihre Arbeit zugreifen können, verlangt der IT-Administrator von Ihnen, dass Sie die Lookout for Work-App installieren, die Ihnen hilft, Ihr Gerät zu schützen, indem sie mögliche Sicherheitsbedrohungen erkennt.
-
+Damit Sie auf Ihre Arbeit zugreifen können, verlangt der IT-Administrator von Ihnen, dass Sie die Lookout for Work-App installieren, die Ihnen hilft, Ihr Gerät zu schützen, indem sie mögliche Sicherheitsbedrohungen erkennt. Möglicherweise werden auf Ihrem Gerät abhängig davon, wie Ihr IT-Administrator Lookout for Work eingerichtet hat, andere Aufforderungen angezeigt.
 
 **Gehen Sie wie folgt vor:**
 
-1.  Wenn die Meldung **Erforderliche Anwendung: Lookout for Work aus dem App Store installieren** angezeigt wird, tippen Sie darauf. Sie werden im App Store auf die Installationsseite von Lookout for Work weitergeleitet.
+1.  Wenn die folgende Aufforderung angezeigt wird, tippen Sie auf **Installieren**, um die Installation von Lookout for Work auf Ihrem Gerät zuzulassen.
 
-2.  Installieren Sie Lookout for Work, und tippen Sie dann auf **ZUSTIMMEN**, um Lookout for Work den Zugriff auf Ihr Gerät zu erlauben.
+    ![Auf „Installieren“ tippen, um Lookout for Work zu installieren](./media/ios-lfw-install-app-request.png)
 
-    ![Tippen Sie auf „Zustimmen“, um Lookout for Work den Zugriff auf Ihr Gerät zu erlauben](./media/lookout-accept-store-permissions-android.png)
+2. Wenn die folgende Meldung angezeigt wird, tippen Sie auf **Einstellungen**, aktivieren Sie **Ortungsdienste**, und tippen Sie anschließend auf **Weiter**.
 
-3. Öffnen Sie Lookout for Work, und tippen Sie auf **Aktivieren**.
+    ![Tippen auf „Einstellungen“ und anschließend auf „Ortungsdienste“](./media/ios-lfw-allow-location-services.png)
 
-    ![Lookout for Work öffnen und auf „Aktivieren“ tippen](./media/lookout-activate-button-android.png)
+3. Überprüfen Sie die Berechtigungen, die Lookout for Work benötigt, und tippen Sie auf **Weiter**.
 
-4. Tippen Sie auf **Bei Azure Active Directory anmelden**, und geben Sie das Konto ein, das Sie für den Zugriff auf Ihre Geschäfts-, Schul- oder Uni-E-Mails und die entsprechenden Dateien verwenden.
+    ![Sie sind jetzt mit Lookout for Work verbunden](./media/ios-lfw-permissions-lookout-needs.png)
 
-    ![Mit Ihrem Geschäfts- oder Schulkonto anmelden](./media/lookout-sign-in-azure-android.png)
+4. Tippen Sie bei der Aufforderung, bei der Sie gefragt werden, ob Sie Benachrichtigungen von Lookout for Work zulassen möchten, auf **Zulassen**.
 
-5. Wählen Sie das Konto aus, das Sie für den Zugriff auf Geschäfts-, Schul- oder Uni-E-Mails und die entsprechenden Dateien verwenden, und tippen Sie dann auf **KONTO HINZUFÜGEN**. Sie sehen einen Bildschirm, der etwa wie folgt aussieht.
+    ![Tippen auf „Einstellungen“ und anschließend auf „Ortungsdienste“](./media/ios-lfw-allow-notifications.png)
 
-    ![Auswählen des Geschäfts-, Schul- oder Unikontos und Tippen auf „Konto hinzufügen“](./media/lookout-pick-account-android.png)
+    
+Die Installation von Lookout for Work wird abgeschlossen, und der folgende Bildschirm wird angezeigt, wenn auf Ihrem Gerät keine Sicherheitsbedrohungen gefunden wurden.
 
-6. Tippen Sie auf **Zustimmen**, um Lookout for Work die Berechtigung zu erteilen, Sie anzumelden und Ihr Profil zu lesen.
+![Lookout for Work hat keine Sicherheitsbedrohungen gefunden](./media/ios-lfw-no-threats-found.png)
 
-    ![Tippen auf „Zustimmen“, um Lookout for Work die Berechtigung zu Lesen des Profils zu erteilen](./media/lookout-needs-permission-to-view-profile-android.png)
+Wenn Lookout for Work eine Sicherheitsbedrohung auf Ihrem Gerät erkennt, erhalten Sie Anweisungen zur Behebung des Problems.
 
-    Es wird ein Bildschirm angezeigt, der darüber informiert, dass Lookout for Work eine Verbindung mit der Lookout Security Cloud herstellt.
+**Wenn die Installation nicht funktioniert**
 
-7. Überprüfen Sie die Einträge, die darüber informieren, wie Lookout Ihr Gerät schützt, und tippen Sie dann auf **OK**.
-
-    ![Überprüfen der Weise, in der Lookout for Work das Gerät schützt](./media/lookout-how-it-protects-your-device-android.png)
-
-    Wenn der folgende Bildschirm angezeigt wird, bedeutet das, dass Lookout jetzt eingerichtet ist und eine Verbindung besteht.
-
-    ![Sie sind jetzt mit Lookout for Work verbunden](./media/lookout-you-are-now-connected-android.png)
-
-    Lookout for Work beginnt sofort mit der Überprüfung Ihres Geräts auf Sicherheitsbedrohungen. Wenn keine Bedrohungen gefunden werden, wird der folgende Bildschirm angezeigt.
-
-    ![Lookout for Work hat keine Sicherheitsbedrohungen gefunden](./media/lookout-scan-no-threats-found-android.png)
-
-    Der Bildschirm „Gerätedetails“ im Unternehmensportal zeigt jetzt, dass Sie mit den Sicherheitsanforderungen Ihres Unternehmens kompatibel sind.
-
-    Wenn Lookout for Work eine Sicherheitsbedrohung auf Ihrem Gerät erkennt, erhalten Sie Anweisungen zur Behebung des Problems.
-
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihrer Kontrolle Fehler auf. Wenden Sie sich in einem solchen Fall an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
 
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

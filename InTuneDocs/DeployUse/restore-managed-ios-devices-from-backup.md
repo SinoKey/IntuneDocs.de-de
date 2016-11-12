@@ -1,10 +1,11 @@
 ---
 title: "Wiederherstellen von durch Intune verwalteten iOS-Geräten aus einer Sicherung | Microsoft Intune"
 description: "Stellen Sie einen Leitfaden für Endbenutzer bereit, der erklärt, wie sie ihre Geräte nach der Wiederherstellung aus einer Sicherung erneut registrieren können."
-keywords: 
+keywords: wiederherstellen, verwaltet, iOS
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/13/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 612b0954a81de1ee8d4a1e96c7440239437dec14
-ms.openlocfilehash: 5fc4423f8fd0c5829be5fe6c96949e126991e430
+ms.sourcegitcommit: e6bb539c87c4a13a490ba98c016d814bea5c7bbc
+ms.openlocfilehash: 6395e50b3e4c06e7363acc136b5ed9eb2ef75abd
 
 
 ---
@@ -37,8 +38,18 @@ Wenn die Sicherung auf einem anderen Gerät wiederhergestellt wird, wird der Reg
 > [!TIP]
 > Eine Beispielmitteilung für Ihre Benutzer könnte wie folgt lauten: Um sich auf Ihrem neuen Gerät zu registrieren, vergewissern Sie sich, dass die Version der Unternehmensportal-App Version 2.1.22 oder höher ist. Um die Version zu überprüfen, öffnen Sie die Unternehmensportal-App, tippen Sie auf die Schaltfläche „Menu“ (Menü) oben rechts und anschließend auf „About“ (Info). Wenn Sie eine ältere Version installiert haben, beenden Sie die Unternehmensportal-App, und öffnen Sie den App Store. Tippen Sie in der unteren rechten Ecke auf die Schaltfläche „Updates“ und anschließend auf die Schaltfläche „Update“ (Aktualisieren) neben dem Element der Unternehmensportal-App in der Liste. Sobald das Update abgeschlossen ist, starten Sie die Unternehmensportal-App, und [registrieren Sie Ihr iOS-Gerät bei Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
 
+## Lösen von bekannten Problemen beim Wiederherstellen
+
+Benutzer können mit Problemen konfrontiert sein, wenn sie ihr Gerät wiederhergestellt und die Unternehmensportal-App gestartet haben, während sie noch Version 2.1.21 oder eine frühere Version der Unternehmensportal-App verwendeten. Diese Probleme können durch die entsprechenden Schritte für die Situation des Benutzers behoben werden.
+
+### Für Benutzer, die nur ihr neues Gerät verwenden
+Starten Sie die Unternehmensportal-App, und heben Sie die Registrierung auf, indem Sie die Kachel des aktuellen Geräts auswählen und auf die Schaltfläche __Entfernen__ tippen. Befolgen Sie nach dem Entfernen die Standardschritte zum [Registrieren eines iOS-Geräts bei Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
+
+### Für Benutzer, die sowohl ihre alten als auch ihre neuen Geräte verwenden
+Löschen Sie die Cookies von Safari, indem Sie auf __Einstellungen__ > __Safari__ > __Verlauf und Websitedaten löschen__ tippen. Deinstallieren Sie die Unternehmensportal-App nach dem Löschen der Cookies, und installieren Sie diese erneut. Befolgen Sie anschließend die Standardschritte zum [Registrieren eines iOS-Geräts bei Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
 
 
-<!--HONumber=Oct16_HO2-->
+
+<!--HONumber=Oct16_HO3-->
 
 

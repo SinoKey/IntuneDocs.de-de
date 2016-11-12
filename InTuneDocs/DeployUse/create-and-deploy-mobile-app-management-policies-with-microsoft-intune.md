@@ -3,6 +3,7 @@ title: Erstellen und Bereitstellen von MAM-Richtlinien | Microsoft Intune
 description: "Verwenden Sie die schrittweisen Anweisungen in diesem Thema zum Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 74d9c9843fd6119095c9670a76afd26443bcc796
-ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e5befdd4925f88d41c454d9c1c36eaf02fdb598d
 
 
 ---
@@ -111,8 +112,9 @@ Von der Richtlinie sind nur Benutzer betroffen, denen [!INCLUDE[wit_nextref](../
 >[!IMPORTANT]
 > Wenn Sie Intune mit Configuration Manager verwenden, um Ihre iOS- und Android-Geräte zu verwalten, wird die Richtlinie nur auf Benutzer in der Gruppe angewendet, die Sie ausgewählt haben.  Mitglieder untergeordneter Gruppen, die in der ausgewählten Gruppe geschachtelt sind, sind nicht betroffen.
 
-Die Endbenutzer können die Apps aus dem App Store oder aus Google Play herunterladen. Eine detaillierte exemplarische Vorgehensweise zum Schutz von Unternehmensdaten auf Geräten mithilfe von MAM finden Sie im Thema [Benutzeroberfläche von Apps mit aktiviertem MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md).
-
+Die Endbenutzer können die Apps aus dem App Store oder aus Google Play herunterladen. Weitere Informationen finden Sie in folgenden Quellen:
+* [Was Sie erwartet, wenn Ihre Android-App von MAM-Richtlinien verwaltet wird](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Was Sie erwartet, wenn Ihre iOS-App von MAM-Richtlinien verwaltet wird](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 ##  Ändern vorhandener Richtlinien
 Sie können eine vorhandene Richtlinie bearbeiten und sie auf die als Ziel festgelegten Benutzer anwenden. Wenn Sie vorhandene Richtlinien ändern, werden diese Änderungen für Benutzer, die bereits bei der App angemeldet sind, jedoch in den nächsten acht Stunden nicht wirksam.
 
@@ -165,10 +167,11 @@ Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finde
 [Überwachen von Compliance und Benutzerstatus](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### Weitere Informationen:
-[Benutzeroberfläche für MAM-fähige Apps](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+* [Was Sie erwartet, wenn Ihre Android-App von MAM-Richtlinien verwaltet wird](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Was Sie erwartet, wenn Ihre iOS-App von MAM-Richtlinien verwaltet wird](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

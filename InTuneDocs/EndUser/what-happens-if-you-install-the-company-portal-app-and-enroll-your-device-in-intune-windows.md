@@ -3,6 +3,7 @@ title: "Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr 
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
 
 
 ---
@@ -23,30 +24,30 @@ ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
 
 # Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Windows-Gerät bei Intune registrieren?
 
-Wenn Sie die Unternehmensportal-App installieren und damit anschließend ein Windows- oder Windows Phone-Gerät registrieren, erlauben Sie Ihrem IT-Administrator, Ihr Gerät zu verwalten, um die Daten von Unternehmen oder Schule zu schützen, wie unten für Geräte vor Windows 10 beschrieben. Informationen zur Registrierung von Windows 10-Geräten finden Sie auf [folgender Seite](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
+Wenn Sie die Unternehmensportal-App installieren und damit anschließend ein Windows- oder Windows Phone-Gerät registrieren, erlauben Sie Ihrem IT-Administrator, Ihr Gerät zu verwalten, um die Daten von Unternehmen oder Schule zu schützen. In diesem Thema wird beschrieben, was bei Geräten mit einer früheren Version als Windows 10 geschieht. Windows 10-Geräte werden im [verwandten Thema](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) behandelt.
 
 ## Was mit allen Windows-Geräten nach der Registrierung geschieht
 Wenn Sie Ihr Windows- oder Windows Phone-Gerät bei Intune registrieren, haben Sie folgende Möglichkeiten:
 
--   Zugreifen auf das Netzwerk des Unternehmens und auf E-Mail- sowie andere arbeitsbezogene Dateien
+-   Zugreifen auf das Netzwerk des Unternehmens und auf E-Mails sowie andere arbeitsbezogene Dateien
 
--   Abrufen von Unternehmens-Apps von der Unternehmensportal-Website (für Windows 7 und Vista können Sie Unternehmens-Apps nur von der Unternehmensportal-Website abrufen)
+-   Abrufen von Unternehmens-Apps aus dem Unternehmensportal (Bei Windows 7 und Windows Vista können Sie Unternehmens-Apps nur von der Unternehmensportal-Website abrufen)
 
--   Automatisches Einrichten Ihres geschäftlichen oder Schul-E-Mail-Kontos
+-   Automatisches Einrichten Ihres Unternehmens- oder Schul-E-Mail-Kontos
 
--   Zurücksetzen Ihres Smartphones auf die werkseitigen Standardeinstellungen bei Verlust oder Diebstahl
+-   Zurücksetzen Ihres Smartphones auf die Werkseinstellungen bei Verlust oder Diebstahl
 
 Wenn Sie Ihr Gerät registrieren, erteilen Sie Ihrem IT-Administrator eine Berechtigung für Aktionen wie die folgenden:
 
--   Zurücksetzen des Geräts auf die standardmäßigen Werkseinstellungen. Dies ist hilfreich, wenn das Gerät verloren geht oder gestohlen wird.
+-   Zurücksetzen des Geräts auf die Werkseinstellungen. Dies ist hilfreich, wenn das Gerät verloren geht oder gestohlen wird.
 
--   Entfernen von ausschließlich unternehmensrelevanten Dateien und Geschäfts-Apps. **Ihre persönlichen Daten und Einstellungen werden nicht entfernt.**
+-   Entfernen von ausschließlich unternehmensrelevanten Dateien und Geschäfts-Apps. *Ihre persönlichen Daten und Einstellungen werden nicht entfernt.*
 
 -   Ihr IT-Administrator kann die auf dem Gerät installierte Software anzeigen, einschließlich Software, die Sie persönlich installiert haben.
 
--   Festlegen von Anforderungen auf Ihrem Gerät. Z.B. muss ein Gerätekennwort oder eine PIN gesetzt sein, um Unternehmensdaten zu schützen. Ihr IT-Administrator kann möglicherweise auch einschränken, wie oft Sie ein falsches Kennwort eingeben können und das Gerät für Sie sperren, wenn Sie das Kennwort zu oft falsch eingeben.
+-   Festlegen von Anforderungen auf Ihrem Gerät. Beispielsweise muss ein Gerätekennwort oder eine PIN festgelegt sein, um zu helfen, Unternehmensdaten zu schützen. Ihr IT-Administrator kann möglicherweise auch einschränken, wie oft Sie ein falsches Kennwort eingeben können und das Gerät für Sie sperren, wenn Sie das Kennwort zu oft falsch eingeben.
 
--   Erfordern, dass Sie die Daten auf Ihrem Gerät verschlüsseln, um Unternehmensdaten bei Verlust oder Diebstahl Ihres Geräts zu schützen. 
+-   Erfordern, dass Sie die Daten auf Ihrem Gerät verschlüsseln, um Unternehmensdaten bei Verlust oder Diebstahl Ihres Geräts zu schützen.
 
 -   Sie müssen die Bedingungen akzeptieren.
 
@@ -54,9 +55,9 @@ Wenn Sie Ihr Gerät registrieren, erteilen Sie Ihrem IT-Administrator eine Berec
 
 ## Was mit allen Windows-PCs nach der Registrierung geschieht
 
--  Auf Ihrem Computer wird Software installiert, mit deren Hilfe Ihr IT-Administrator den Computer verwalten kann und mit der Sie Unternehmensressourcen wie Apps und Supportinformationen abrufen können. Ihr IT-Administrator kann diese Software automatisch aktualisieren.
+-  Auf Ihrem Computer wird Software installiert, mit deren Hilfe Ihr IT-Administrator den Computer verwalten kann und mit der Sie Unternehmensressourcen wie Apps und Supportinformationen abrufen können. Ihr IT-Administrator kann diese Software möglicherweise automatisch aktualisieren.
 
--  Intune Endpoint Protection wird möglicherweise auf Ihrem Computer installiert. Dies ist eine Software, die den Computer auf Viren und Malware überprüft.
+-  Intune Endpoint Protection wird möglicherweise auf Ihrem Computer installiert. Diese Software überprüft den Computer auf Viren und Malware.
 
 -  Der IT-Administrator kann Daten von der Festplatte Ihres Computers sammeln oder löschen.
 
@@ -75,7 +76,6 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 
 
 
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

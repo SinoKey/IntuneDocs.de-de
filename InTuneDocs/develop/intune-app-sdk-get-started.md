@@ -19,15 +19,15 @@ ms.openlocfilehash: c80868fdee79df62aae0aa64e378be5dcc9664ae
 
 ---
 
-# <a name="getting-started-with-the-microsoft-intune-app-sdk"></a>Erste Schritte mit dem Microsoft Intune App SDK
+# Erste Schritte mit dem Microsoft Intune App SDK
 
 Dieser Leitfaden für die ersten Schritte soll Ihnen dabei helfen, Ihre mobile App schnell für die Verwaltung mobiler Anwendungen (Mobile Application Management, MAM) mit Microsoft Intune zu aktivieren. Unter Umständen ist es ratsam, sich zuerst in der [Übersicht über das Intune App SDK](intune-app-sdk.md) mit den Vorteilen des Intune App SDK vertraut machen.
 
 In diesem Leitfaden werden die wichtigsten Schritte zum Aktivieren der Verwaltung mobiler Anwendungen in Ihrer App mit Microsoft Intune vorgestellt. Das Intune App SDK unterstützt plattformübergreifend vergleichbare Szenarien und soll für den IT-Administrator eine plattformübergreifende konsistente Umgebung darstellen. Bei der Unterstützung bestimmter Funktionen gibt es jedoch geringfügige Unterschiede, die auf Einschränkungen der jeweiligen Plattform zurückzuführen sind.
 
-# <a name="getting-started"></a>Erste Schritte
+# Erste Schritte
 
-## <a name="register-your-store-app-with-microsoft"></a>Registrieren Ihrer Store-App bei Microsoft
+## Registrieren Ihrer Store-App bei Microsoft
 
 **Wenn Ihre App für die firmeninterne Verwendung bestimmt ist und nicht in einem öffentlichen App Store zur Verfügung gestellt wird**:
 
@@ -55,7 +55,7 @@ Wenn sich in Zukunft der Deep-Link Ihrer Store-App ändert, müssen Sie Ihre App
 
 
 
-## <a name="download-the-sdk-files"></a>Herunterladen der SDK-Dateien
+## Herunterladen der SDK-Dateien
 
 Die Intune App SDKs für natives iOS und Android werden auf einem Microsoft-GitHub-Konto gehostet. Die folgenden öffentlichen Repositorys enthalten die SDK-Dateien für IOS bzw. Android:
 
@@ -73,7 +73,7 @@ Wir empfehlen Ihnen, sich für ein GitHub-Konto zu registrieren, mit dem Sie For
 
 
 
-## <a name="enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk"></a>Aktivieren von mobilen iOS- oder Android-Apps für die Verwaltung mobiler Anwendungen (MAM) mit dem SDK
+## Aktivieren von mobilen iOS- oder Android-Apps für die Verwaltung mobiler Anwendungen (MAM) mit dem SDK
 
 Damit Sie das Intune App SDK in Ihre native iOS-App integrieren können, benötigen Sie Folgendes: 
 
@@ -87,7 +87,7 @@ Damit Sie das Intune App SDK in Ihre Android-App integrieren können, benötigen
 Die Dokumentation für die Intune App SDK-Xamarin-Komponente und das Intune App SDK-Cordova-Plugin finden Sie in den jeweiligen GitHub-Repositorys. 
 
 
-## <a name="configuring-telemetry-for-your-app"></a>Konfigurieren der Telemetrie für Ihre App
+## Konfigurieren der Telemetrie für Ihre App
 
 Microsoft Intune sammelt Daten zu Nutzungsstatistiken für Ihre App.
 
@@ -97,7 +97,7 @@ Microsoft Intune sammelt Daten zu Nutzungsstatistiken für Ihre App.
 
 * **Intune App SDK für Android**: Vom SDK werden keine Telemetriedaten protokolliert.
 
-## <a name="test-your-mam-enabled-app-with-microsoft-intune"></a>Testen Ihrer für die Verwaltung mobiler Anwendungen (MAM) aktivierten App mit Microsoft Intune
+## Testen Ihrer für die Verwaltung mobiler Anwendungen (MAM) aktivierten App mit Microsoft Intune
 
 Nachdem Sie die notwendigen Schritte zur Integration des Intune App SDK in Ihre iOS- oder Android-App abgeschlossen haben, müssen Sie sicherstellen, dass alle App-Verwaltungsrichtlinien für den Endbenutzer und IT-Administrator aktiviert und funktionsfähig sind. Zum Testen Ihrer integrierten App benötigen Sie Folgendes:
 

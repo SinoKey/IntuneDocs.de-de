@@ -4,17 +4,17 @@ description: "Von Intune unterstützte Webbrowser"
 keywords: 
 author: barlanmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6f4ff11d-dc81-481a-bcd9-d8cdab32f876
-ms.reviewer: jeffgilb
+ms.reviewer: camoya
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 7d2852c2ae18ff09eddd99bc76a1e1800546d304
+ms.sourcegitcommit: b63b82b6eb87a90013452825a2049c2a2bc4e91d
+ms.openlocfilehash: de5ca1b5fda988f96437696ff705178b9c49814f
 
 
 ---
@@ -25,16 +25,17 @@ Bevor Sie Intune einrichten, informieren Sie sich über die Anforderungen hier u
 
 |Intune-Feature |Unterstützte Browser|
 |---------|---------|
-|Intune-Verwaltungskonsole     |  Internet Explorer 10 oder höher<br /><br />Google Chrome (Versionen vor Version 42)<br /><br />Mozilla Firefox <br /><br />**Hinweis:** Microsoft Edge und mobile Browser werden für die Verwaltungskonsole nicht unterstützt.                      
+|Intune-Verwaltungskonsole     |  Internet Explorer 10 oder höher<br /><br />Google Chrome (Versionen vor Version 42)<br /><br />Mozilla Firefox <br /><br />**Hinweis:** Microsoft Edge und mobile Browser werden für die Verwaltungskonsole<sup>1</sup> nicht unterstützt.                      
 |Office 365-Verwaltungsportal     |Alle Browser, einschließlich mobiler und verwalteter Browser  |
 |Unternehmensportal-Website     |**Auf mobilen Geräten:** Verwenden Sie für jede unterstützte Plattform den Standardwebbrowser.   <br /><br />**Auf Windows-PCs:** Internet Explorer 10 oder höher oder Microsoft Edge<br /><br />**Unter Mac OS X 10.9 oder höher:** Apple Safari    |
 
+> [!Note] <sup>1</sup>Microsoft Edge und mobile Browser werden für die Verwaltungskonsole nicht unterstützt, da sie [Microsoft Silverlight](https://msdn.microsoft.com/en-us/library/cc838158(v=vs.95).aspx) nicht unterstützen. Für die Intune-Konsole wird in Zukunft nicht mehr Silverlight verwendet, letztlich werden alle Intune-Features zur Verwaltung mobiler Geräte und Anwendungen [im neuen Azure-Portal verfügbar gemacht](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/). Diese Umstellung wird jedoch eine Zeit lang dauern.
 
 ### Weitere Informationen:
 [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 
