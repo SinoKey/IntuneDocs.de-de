@@ -14,13 +14,13 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dd7a51b5ba176c8c7b593d2d7a3e5cfabd72a1e6
-ms.openlocfilehash: 77ce4cca5f85f1847e599a6151411bfc12afbc8b
+ms.sourcegitcommit: 30fae0cc2e9b3b08f9195c2622b0daec639e0d62
+ms.openlocfilehash: 3b8a263a45690c9bb213128b592e1ef9788cacd8
 
 
 ---
 
-# Schützen von Apps und Daten mit Microsoft Intune
+# <a name="protect-apps-and-data-with-microsoft-intune"></a>Schützen von Apps und Daten mit Microsoft Intune
 
 
 Intune schützt Unternehmensdaten auf verschiedenen Technologieebenen.  Auf Ebene der Identität wird Schutz über das Konzept des bedingten Zugriffs implementiert: Der Zugriff auf Dienste ist nur über verwaltete und kompatible Geräte gestattet.  Auf Ebene der Clientanwendung schützt die Verwaltung mobiler Apps (Mobile App Management, MAM) vor Datenverlusten: Daten werden nicht an ungeschützte Apps oder Speicherorte verschoben, und bei Verlust oder Diebstahl eines Geräts werden Daten gelöscht.  Diese beiden Schutzebenen sollten zusammen verwendet werden, um die Daten zu sichern und gleichzeitig dafür zu sorgen, dass mobile Mitarbeiter produktiv arbeiten können.
@@ -46,7 +46,7 @@ Sie können Ihre Unternehmensdaten mithilfe von MAM-Richtlinien auf verschiedene
 
 Um eine App mit einer MAM-Richtlinie zu verknüpfen, muss die App das Microsoft Intune App SDK oder das App Wrapping Tool verwenden.
 
-In Microsoft Office-Apps beispielsweise ist das App SDK integriert. Eine vollständige Liste der unterstützten Apps finden Sie auf der Seite mit den Microsoft Intune-Anwendungspartnern im [Microsoft Intune-Katalog mit mobilen Anwendungen](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx). Wählen Sie eine App aus, um die unterstützten Szenarien, Plattformen und Informationen dazu anzuzeigen, ob die App mehrere Identitäten unterstützt.
+In Microsoft Office-Apps beispielsweise ist das App SDK integriert. Eine vollständige Liste der unterstützten Apps finden Sie auf der Seite mit den Microsoft Intune-Anwendungspartnern im [Microsoft Intune-Katalog mit mobilen Anwendungen](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps). Wählen Sie eine App aus, um die unterstützten Szenarien, Plattformen und Informationen dazu anzuzeigen, ob die App mehrere Identitäten unterstützt.
 
 Sie können auch [Ihre eigenen, individuellen branchenspezifischen Apps](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) für die Verwendung mit MAM-Richtlinien aktivieren.
 
@@ -54,6 +54,6 @@ Wenn ein Gerät verloren geht oder gestohlen wird oder der Benutzer nicht mehr f
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -3,8 +3,9 @@ title: Pilotphase | Microsoft Intune
 description: "Empfehlungen für die Pilotphase einer Intune-Bereitstellung."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 14e55841-37f1-472c-9678-a1ba847cb331
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: a607737b808f3c53ec8f83e507369d9d58309c9d
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 813b03f5d172749076723f60d4cfe0b6c50a261c
 
 
 ---
@@ -56,7 +57,7 @@ Der Schlüssel zu einem erfolgreichen Pilotprojekt ist eine gute Planung. Dazu g
 ### Helpdesk
 Ein Supportplan, der proaktive Unterstützung umfasst, kann das Vertrauen der Benutzer erheblich steigern und führt zu mehr Benutzerzufriedenheit und einer höheren Akzeptanz. Der Helpdesk muss die Änderungen kennen, die sich durch die Implementierung von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ergeben, und sich potenzieller Probleme bewusst sein, sodass für individuelle Probleme schnelle Lösungen gefunden werden können. Der Helpdesk kann auch an das Entwicklungsteam zurück berichten, wenn der Entwurfsansatz für die Benutzer zu Problemen führt.
 
-### Sensibilisierung
+### Informationsbedarf
 Pilotbenutzer müssen alle Umstände des Projekts kennen: die beteiligten Personen und Ressourcen, den Zeitplan, die Umgebung und die Gründe für das Projekt. „Inwiefern betrifft mich das Pilotprojekt?“ ist die wichtigste Frage, die Benutzer stellen werden. Versetzen Sie sich in die Lage der Benutzer, um zu verstehen, dass das Benutzererlebnis insgesamt von großer Bedeutung sein wird. Nutzen Sie Aktivitäten und Kommunikation zur Sensibilisierung, damit Benutzer ihre Zuständigkeiten begreifen und wissen, wie sie während der Pilotphase unterstützt werden.
 
 ### Training
@@ -92,7 +93,7 @@ Hier finden Sie eine Liste von Schritten für den Einstieg in die **Pilotphase**
 
 -   Veranstalten Sie ein Kickoff-Event und andere Sensibilisierungsaktivitäten für das Pilotprojekt.
 
-## Gängige Probleme
+## Gängige Herausforderungen
 Hier sind einige Probleme aufgeführt, die möglicherweise während der **Pilotphase** auftreten können.
 
 -   **Problem:** Das Pilotprojekt wird mit IT-Benutzern und allgemeinen Geschäftskunden durchgeführt, die für das Unternehmen als Ganzes nicht repräsentativ sind. Eine echte Überprüfung von Prozessen und Ressourcen ist nicht möglich.
@@ -108,6 +109,6 @@ Hier sind einige Probleme aufgeführt, die möglicherweise während der **Pilotp
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

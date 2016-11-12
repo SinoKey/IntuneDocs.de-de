@@ -2,7 +2,8 @@
 title: "Zurücksetzen Ihrer Kennung über die Unternehmensportalwebsite | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,44 +15,44 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: 381364e42430842032ced3b5c8c9cc8de19e8186
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: b3a3b7c2a983776f79ffa8562e130bb11e714e29
 
 
 ---
 
 
-# Zurücksetzen Ihrer Kennung über die Unternehmensportalwebsite
+# <a name="reset-your-device-passcode-from-the-company-portal-website"></a>Zurücksetzen Ihrer Kennung über die Unternehmensportalwebsite
 
-Wenn Sie die PIN oder das Kennwort für ein bei Intune registriertes Gerät verloren haben, können Sie die PIN bzw. das Kennwort über die [Unternehmensportalwebsite](http://portal.manage.microsoft.com) zurücksetzen. Die Unternehmensportalwebsite ist eine Website, auf der Sie Computer und Geräte verwalten können, die Sie bei Intune registriert haben. Hier können Sie die meisten der Aufgaben ausführen, die auch über Ihre Unternehmensportal-App zur Verfügung stehen.
+Wenn Sie die PIN oder das Kennwort für ein bei Intune registriertes Gerät verloren haben, können Sie die PIN bzw. das Kennwort über die [Unternehmensportalwebsite](http://portal.manage.microsoft.com) zurücksetzen. Sie können die Unternehmensportal-Website verwenden, um Computer und Geräte zu verwalten, die Sie bei Intune registriert haben. Außerdem können Sie auf dieser die meisten der Aufgaben ausführen, die auch über Ihre Unternehmensportal-App zur Verfügung stehen.
 
 > [!NOTE]
-> Die Schaltfläche „Kennung zurücksetzen“ wird möglicherweise auf der Unternehmensportal-Website nicht angezeigt, je nachdem, wie Intune von Ihrem IT-Administrator konfiguriert wurde. Das Zurücksetzen der Kennung wird auf Geräten mit Windows 8.1 nicht unterstützt.
+> Die Schaltfläche **Kennung zurücksetzen** wird auf der Unternehmensportal-Website möglicherweise nicht angezeigt, je nachdem, wie Intune von Ihrem IT-Administrator konfiguriert wurde. Das Zurücksetzen der Kennung wird auf Geräten mit Windows 8.1 nicht unterstützt.
 
 So setzen Sie Ihre Kennung zurück
 
-1.  Öffnen Sie die [Unternehmensportal-Website](http://portal.manage.microsoft.com), und tippen Sie auf das Gerät, dessen Kennung Sie zurücksetzen möchten.
+1.  Öffnen Sie die [Unternehmensportal-Website](http://portal.manage.microsoft.com), und wählen Sie das Gerät aus, dessen Kennung Sie zurücksetzen möchten.
 
-2.  Tippen Sie auf **Kennung zurücksetzen**.
+2.  Wählen Sie **Kennung zurücksetzen** aus.
 
-    ![resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+    ![Details zum Gerät mit der Schaltfläche „Kennung zurücksetzen“](./media/iwp-screen-with-all-options.png)
 
-3.  Tippen Sie auf **Abmelden**, und melden Sie sich dann mit den Anmeldeinformationen Ihres Geschäfts- oder Schulkontos wieder an. Sie müssen sich innerhalb von fünf Minuten wieder anmelden.
+3.  Wählen Sie **Abmelden** aus, und melden Sie sich dann mit den Anmeldeinformationen Ihres Geschäfts-, Schul- oder Unikontos wieder an. Sie müssen sich innerhalb von fünf Minuten wieder anmelden.
 
-    ![sign-out-sign-back-in](./media/iwp-2-sign-out.png)
+    ![Zurücksetzungsmeldung mit der Schaltfläche „Abmelden“](./media/iwp-2-sign-out.png)
 
-4.  Tippen Sie auf **Kennung zurücksetzen**.
+4.  Wählen Sie **Kennung zurücksetzen** aus.
 
-    ![tap-reset-passcode](./media/iwp-3-tap-reset-passcode-after-signin.png)
+    ![Meldung, die erklärt, was geschieht, wenn Sie die Kennung zurücksetzen](./media/iwp-3-tap-reset-passcode-after-signin.png)
 
-    In der Tabelle finden Sie Informationen zur Funktionsweise von „Kennung zurücksetzen“ auf Ihrem Gerät.
+    In der Tabelle finden Sie Informationen zur Funktionsweise von **Kennung zurücksetzen** auf Ihrem Gerät.
 
     |Plattform|Unterstützung|
     |------------|-----------|
-    |Android|Erstellt eine neue, temporäre, alphanumerische Kennung.|
+    |Android|Erstellt eine temporäre, alphanumerische Kennung|
     |iOS|Entfernt die Kennung vom Gerät und erstellt keine neue temporäre Kennung. Wenn Sie Touch ID verwenden, müssen Sie es auf dem Gerät erneut einrichten, da es beim Zurücksetzen der Kennung entfernt wird.|
-    |Windows 10 (nur mobile Geräte)|Erstellt eine neue, temporäre, alphanumerische Kennung. Windows Hello wird unterstützt.|
-    |Windows Phone 8.1|Erstellt eine neue, temporäre, numerische Kennung.|
+    |Windows 10 (nur mobile Geräte)|Erstellt eine temporäre, alphanumerische Kennung. Windows Hello wird unterstützt.|
+    |Windows Phone 8.1|Erstellt eine temporäre, numerische Kennung.|
     Nachdem Sie Ihr Gerät entsperrt haben, können Sie auf Ihrem Gerät unter **Einstellungen** eine neue Kennung festlegen.
 
 5.  Entsperren Sie Ihr Gerät, und legen Sie eine neue Kennung fest, oder ändern Sie die temporäre Kennung auf Ihrem Gerät unter **Einstellungen**.
@@ -62,8 +63,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

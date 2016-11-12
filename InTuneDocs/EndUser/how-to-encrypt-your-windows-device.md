@@ -2,9 +2,10 @@
 title: "Vorgehensweise zum Verschlüsseln Ihres Windows-Geräts | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 3b775464b494f5d28c870df4b2c58bb59f58eb78
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 66edf19ad9cea6f49504b70946b4e0c02dcfc99f
 
 
 ---
 
-# Vorgehensweise zum Verschlüsseln Ihres Windows-Geräts
+# <a name="how-to-encrypt-your-windows-device"></a>Vorgehensweise zum Verschlüsseln Ihres Windows-Geräts
 
 Zum Schutz Ihrer Firmen- oder Schuldaten schreibt Ihr IT-Administrator Ihnen möglicherweise vor, Ihr Windows-Geräts zu verschlüsseln. Wenn Sie ein Windows Phone verwenden und dieses registriert haben, wird Ihr Gerät automatisch verschlüsselt, wenn eine Verschlüsselung erforderlich ist.
 
@@ -34,6 +35,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,8 +2,8 @@
 title: "Entfernen Ihres Geräts aus dem Unternehmensportal | Microsoft Intune"
 description: "Entfernen eines Geräts aus dem Unternehmensportal"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a0f3e42568634a4c5369919ad4feaf1be4b941e
-ms.openlocfilehash: 4c0186214893e9a056e331e7ec081dbdbee3a71e
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: a4cd1655098d2df2b3d095ff0906762d1f0561e5
 
 
 ---
 
 
-# Entfernen Ihres Geräts aus dem Unternehmensportal
+# <a name="remove-your-device-from-the-company-portal"></a>Entfernen Ihres Geräts aus dem Unternehmensportal
 
 Wenn Sie Ihr Gerät nicht mehr von Intune und Ihrem IT-Administrator verwalten lassen möchten, können Sie es über die [Unternehmensportal-Website](http://portal.manage.microsoft.com) aus dem Unternehmensportal entfernen. Die Unternehmensportal-Website ist eine Webseite, die Sie verwenden können, um Computer und Geräte zu verwalten, die Sie in Intune registriert haben. Auf der Unternehmensportal-Website können Sie die meisten der verfügbaren Tasks auf Ihrer Unternehmensportal-App ausführen.
 
@@ -40,10 +40,10 @@ So entfernen Sie Ihr Gerät:
 
 Ihr Gerät wurde entfernt.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die Kontaktinformationen Ihres IT-Administrators finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

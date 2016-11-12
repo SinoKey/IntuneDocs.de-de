@@ -2,9 +2,10 @@
 title: "Aufheben der Registrierung Ihres iOS-Geräts bei Intune | Microsoft Intune"
 description: "Beschreibt das Aufheben der Registrierung eines iOS-Geräts bei Intune."
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +15,14 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: af520ef10b50631bafdfdf4d240a8e2541f5c3d6
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 5db58b87e5c48c40794315e7781d32b02a653b2b
 
 
 ---
 
 
-# Aufheben der Registrierung Ihres iOS-Geräts bei Intune
+# <a name="unenroll-your-ios-device-from-intune"></a>Aufheben der Registrierung Ihres iOS-Geräts bei Intune
 
 Wenn Sie die Registrierung Ihres iOS-Geräts bei Intune aufheben, kann Ihr Gerät nicht mehr auf Unternehmensressourcen zugreifen und wird nicht mehr über Intune verwaltet.
 
@@ -30,13 +31,13 @@ Zum Aufheben der Registrierung Ihres Geräts bei Intune gehen Sie folgendermaße
 <iframe width="675" height="379" src="https://www.youtube.com/embed/6UFtBrBWUUI" frameborder="0" allowfullscreen></iframe>
 
 
-1.  Wählen Sie in der Unternehmensportal-App unter **Meine Geräte**das Gerät aus, dessen Registrierung Sie aufheben möchten.
+1.  Wählen Sie in der Unternehmensportal-App unter **Meine Geräte** das Gerät aus, dessen Registrierung Sie aufheben möchten.
 
 2.  Tippen Sie auf **Entfernen** &gt; **Entfernen**.
 
 Wenn Sie die Registrierung Ihres Geräts bei Intune aufheben passiert Folgendes:
 
--   Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt
+-   Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
 
 -   Sie können keine Apps mehr über das Unternehmensportal installieren.
 
@@ -56,7 +57,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

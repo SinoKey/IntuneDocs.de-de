@@ -2,10 +2,10 @@
 title: "Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen iOS-Geräts | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 705c70b034378113a29003891f465a0e88186c69
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 586eb09811bf52cecf93dd51d1de76b2287b80ea
 
 
 ---
 
 
-# Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen iOS-Geräts
+# <a name="reset-erase-your-lost-or-stolen-ios-device"></a>Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen iOS-Geräts
 
 Wenn ein in Intune registriertes Mobilgerät verloren geht oder gestohlen wird, können Sie es auf die werkseitigen Standardeinstellungen zurücksetzen, indem Sie über ein anderes Gerät oder die [Unternehmensportal-Website](http://portal.manage.microsoft.com) auf die Unternehmensportal-App zugreifen.
 
 > [!WARNING]
 > Durch das Zurücksetzen eines Geräts auf die werkseitigen Standardeinstellungen werden Ihre persönlichen und arbeitsbezogenen Informationen vom Gerät gelöscht. Weitere Informationen darüber, was geschieht, wenn Sie Ihr Gerät zurücksetzen, finden Sie unter [Was geschieht, wenn Sie Ihr Gerät im Unternehmensportal zurücksetzen?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md).
 
-## So setzen Sie Ihr Gerät über die Unternehmensportal-App zurück
+## <a name="to-reset-your-device-using-the-company-portal-app"></a>So setzen Sie Ihr Gerät über die Unternehmensportal-App zurück
 
 1.  Öffnen Sie auf einem anderen registrierten Gerät die Unternehmensportal-App, und melden Sie sich mit Ihrem Geschäfts- oder Schulkonto an.
 
@@ -37,7 +37,7 @@ Wenn ein in Intune registriertes Mobilgerät verloren geht oder gestohlen wird, 
 
 3.  Tippen Sie auf **Zurücksetzen** &gt; **Zurücksetzen**.
 
-## So setzen Sie Ihr Gerät über die Unternehmensportalwebsite zurück
+## <a name="to-reset-your-device-using-the-company-portal-website"></a>So setzen Sie Ihr Gerät über die Unternehmensportalwebsite zurück
 
 Sie können die folgenden Schritte verwenden, oder sehen Sie sich dieses Video an.
 
@@ -51,8 +51,6 @@ Wenn Sie Ihr verlorenes oder gestohlenes Gerät nicht zurücksetzen können, bit
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

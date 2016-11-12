@@ -2,9 +2,10 @@
 title: "Was geschieht, wenn Sie die Registrierung Ihres iOS-Geräts bei Intune aufheben? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 05c94004bf8a4c26ad8063f3e5dc0ba581022e0a
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 7c01f0f2dee8fb15f766264489d39df76932e97e
 
 
 ---
 
 
-# Was geschieht, wenn Sie die Registrierung Ihres iOS-Geräts bei Intune aufheben?
+# <a name="what-happens-if-you-unenroll-your-ios-device-from-intune"></a>Was geschieht, wenn Sie die Registrierung Ihres iOS-Geräts bei Intune aufheben?
 
 Wenn Sie die Registrierung Ihres iOS-Geräts bei Intune aufheben, geschieht Folgendes:
 
@@ -29,13 +30,13 @@ Wenn Sie die Registrierung Ihres iOS-Geräts bei Intune aufheben, geschieht Folg
 
 -   Sie können keine Apps mehr über das Unternehmensportal installieren.
 
--   Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden, z. B. das Deaktivieren der Kamera oder die Anforderung einer bestimmten Kennwortlänge, werden unwirksam.
+-   Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden, z.B. das Deaktivieren der Kamera oder die Anforderung einer bestimmten Kennwortlänge, werden unwirksam.
 
--   Unter Umständen haben Sie auf dem Gerät keinen Zugriff mehr auf einige Unternehmensressourcen, z. B. Dateifreigaben oder interne Websites.
+-   Unter Umständen haben Sie auf dem Gerät keinen Zugriff mehr auf einige Unternehmensressourcen wie Dateifreigaben oder interne Websites.
 
 -   Sie können keine Unternehmens-Apps und Unternehmensdaten mehr auf dem Gerät verwenden.
 
--   Möglicherweise können Sie keine Verbindung mehr zum Unternehmensnetzwerk über WiFi oder ein virtuelles privates Netzwerk (VPN) herstellen.
+-   Möglicherweise können Sie mit dem Unternehmensnetzwerk keine Verbindung mehr über WLAN oder ein virtuelles privates Netzwerk (VPN) herstellen.
 
 -   Unternehmens-E-Mail-Profile werden vom Gerät entfernt.
 
@@ -45,8 +46,6 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

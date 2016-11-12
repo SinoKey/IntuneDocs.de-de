@@ -2,9 +2,10 @@
 title: Festlegen von PIN oder Kennwort | Microsoft Intune
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e050c7b4947f0a3aae87c545ec8cca282c22fe55
-ms.openlocfilehash: 2c9fd5714f64477e7e07d66429ae68e17e2e1bb7
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 9d70549b2a2c30bb7d3e056550ad75848433d885
 
 
 ---
 
-# Festlegen von PIN oder Kennwort
+# <a name="set-your-pin-or-password"></a>Festlegen von PIN oder Kennwort
 
-Ihr IT-Administrator kann möglicherweise verlangen, dass Sie auf Ihrem Android-Gerät eine PIN oder ein Kennwort festlegen müssen, um mit Intune auf Ihr Geschäfts-, Schul- oder Unikonto zuzugreifen. Wenn Sie in einer Meldung zum Festlegen einer PIN oder eines Kennworts aufgefordert werden, führen Sie die folgenden Schritte aus.
+Ihr IT-Administrator kann möglicherweise verlangen, dass Sie auf Ihrem Android-Gerät eine PIN oder ein Kennwort festlegen müssen, um mit Intune auf Ihr Geschäfts-, Schul- oder Unikonto zuzugreifen. Möglicherweise werden Ihnen auch Meldungen angezeigt, die verlangen, dass Sie Ihre PIN oder Ihr Kennwort länger oder komplexer machen, damit sie bzw. es sicherer ist.  
+
+Sie können die folgenden Schritte verwenden, um eine PIN oder ein Kennwort festzulegen.
 
 1.  Tippen Sie auf **Einstellungen** &gt; **Sicherheit** &gt; **Bildschirmsperre** &gt; **Kennwort**.
 
@@ -33,6 +36,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
