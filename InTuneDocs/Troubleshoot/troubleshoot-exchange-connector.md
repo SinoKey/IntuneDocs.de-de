@@ -2,8 +2,8 @@
 title: Exchange Connector-Problembehandlung | Microsoft Intune
 description: Behandeln von Problemen, die sich auf den Intune Exchange Connector beziehen.
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/26/2016
 ms.topic: article
@@ -20,10 +20,10 @@ ms.openlocfilehash: f6b673d05e385ddfe6ef3d3e63cf857439b164de
 
 ---
 
-# Exchange Connector-Problembehandlung
+# <a name="troubleshoot-the-exchange-connector"></a>Exchange Connector-Problembehandlung
 In diesem Thema wird die Behandlung von Problemen beschrieben, die sich möglicherweise auf den Intune Exchange Connector beziehen.
 
-## Schritte zum Überprüfen der Exchange Connector-Konfiguration 
+## <a name="steps-for-checking-the-connector-configuration"></a>Schritte zum Überprüfen der Exchange Connector-Konfiguration 
 
 Überprüfen Sie die Exchange Connector-Konfiguration, und prüfen Sie dann, ob das Problem behoben wurde.
 
@@ -32,7 +32,7 @@ In diesem Thema wird die Behandlung von Problemen beschrieben, die sich möglich
 - Geben Sie bei der Exchange Connector-Konfiguration einen Clientzugriffsserver (CAS) an, der sich so nah wie möglich beim Server befindet, der den Exchange Connector hostet. Die Latenz bei der Kommunikation zwischen dem Clientzugriffsserver und dem Exchange Connector kann zu Verzögerungen bei der Geräteerkennung führen, insbesondere bei der dedizierten Verwendung von Office 365.
 - Denken Sie daran, dass zwischen Exchange Connector-Synchronisierungen mit dem Exchange-Clientzugriffsserver eine zeitliche Verzögerung auftritt. Eine vollständige Synchronisierung erfolgt einmal täglich, während eine schnelle Synchronisierung (Delta) alle zwei Stunden durchgeführt wird. Es besteht die Wahrscheinlichkeit, dass bei einem Benutzer mit einem neu registrierten Gerät Verzögerungen beim Zugriff auftreten.
 - 
-## Exchange ActiveSync-Gerät wurde von Exchange nicht erkannt
+## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Exchange ActiveSync-Gerät wurde von Exchange nicht erkannt
 Überprüfen Sie, ob das Exchange Connector mit dem Exchange-Server synchronisiert wird. Suchen Sie dazu Protokolle für eine vollständige Synchronisierung oder eine Deltasynchronisierung. Weitere Informationen finden Sie unter „Exchange Connector-Protokolle“. Wenn seit der Einbindung des Geräts eine vollständige Synchronisierung oder Deltasynchronisierung erfolgreich abgeschlossen wurde, haben Sie dies als Quelle des Problems beseitigt. Wenn keine Synchronisierung stattgefunden hat, sammeln Sie die Synchronisierungsprotokolle, und fügen Sie sie an Ihre Supportanforderung an.
 
 - Wenn ein Benutzer keine Intune-Lizenz besitzt, erkennt der Exchange Connector seine Geräte nicht.
@@ -41,12 +41,12 @@ In diesem Thema wird die Behandlung von Problemen beschrieben, die sich möglich
 - Für dedizierte Exchange-Umgebungen (Office 365 dediziert) müssen Sie den Exchange Connector während des anfänglichen Setups auf einen Exchange 2013-Clientzugriffsserver (nicht 2010) in der dedizierten Umgebung verweisen, da dieser bei der Ausführung von PowerShell-Cmdlets nur mit diesem Clientzugriffsserver kommuniziert.
 
 
-## Verwenden von PowerShell zum Abrufen weiterer Daten bei Exchange Connector-Problemen
+## <a name="using-powershell-to-get-more-data-on-exchange-connector-issues"></a>Verwenden von PowerShell zum Abrufen weiterer Daten bei Exchange Connector-Problemen
 - Verwenden Sie „Get-ActiveSyncDeviceStatistics -mailbox mbx“, um eine Liste aller mobilen Geräte für ein Postfach abzurufen.
 - Verwenden Sie „Get-Mailbox -Identity user | select emailaddresses | fl“, um eine Liste von SMTP-Adressen für ein Postfach abzurufen.
 - Verwenden Sie „Get-CASMailbox <upn> | fl“, um ausführliche Informationen zum Zugriffsstatus eines Geräts abzurufen.
 
-### Nächste Schritte
+### <a name="next-steps"></a>Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
 
 
