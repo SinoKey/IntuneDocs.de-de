@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3ba40ad3a8c5eaba684d589c7526435ba87d0390
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: 4718d61f9d76a903ffc1820c77fc755d1ca1707b
 
 
 ---
 
-# Löschen verwalteter Unternehmensdaten aus Apps mit Microsoft Intune
+# <a name="wipe-managed-company-app-data-with-microsoft-intune"></a>Löschen verwalteter Unternehmensdaten aus Apps mit Microsoft Intune
 Wenn ein Gerät verloren geht oder gestohlen wird oder wenn der Mitarbeiter das Unternehmen verlässt, müssen Sie sicherstellen, dass Unternehmensdaten in Apps vom Gerät entfernt werden. Allerdings sollten Sie persönliche Daten nicht vom Gerät entfernen, insbesondere dann nicht, wenn das Gerät dem Mitarbeiter gehört.
 
 Um Unternehmensdaten aus Apps selektiv zu entfernen, erstellen Sie mithilfe der Schritte im Abschnitt **Erstellen einer Zurücksetzungsanforderung** in diesem Thema eine Zurücksetzungsanforderung.  Nach Abschluss der Anforderung werden die Unternehmensdaten beim nächsten Ausführen der Anwendung aus der App entfernt.
@@ -29,7 +29,7 @@ Um Unternehmensdaten aus Apps selektiv zu entfernen, erstellen Sie mithilfe der 
 
 
 
-## Erstellen einer Zurücksetzungsanforderung
+## <a name="create-a-wipe-request"></a>Erstellen einer Zurücksetzungsanforderung
 
 1.  Wählen Sie auf dem Blatt **Mobile Anwendungsverwaltung mit Intune** die Kachel **Zurücksetzungsanforderungen** aus.
 
@@ -48,20 +48,24 @@ Um Unternehmensdaten aus Apps selektiv zu entfernen, erstellen Sie mithilfe der 
 
 ![Screenshot der Kachel „Zurücksetzungsanforderungen“ ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
-## Überwachen der Löschanforderungen
+## <a name="monitor-your-wipe-requests"></a>Überwachen der Löschanforderungen
 Auf dem Blatt **Intune Mobile Application Management** enthält die Kachel **Löschanforderung** einen zusammenfassenden Bericht.  Angezeigt wird der Gesamtstatus mit der Anzahl der ausstehenden Anforderungen und Fehlern. Weitere Informationen erhalten Sie mithilfe der im Folgenden beschriebenen Schritte:
 
 1.  Wählen Sie auf dem Blatt **Mobile Anwendungsverwaltung mit Intune** die Kachel **Zurücksetzungsanforderung** aus, um das Blatt **Zurücksetzungsanforderung** zu öffnen.
 
 2.  Auf dem Blatt **Löschanforderung** wird eine Liste mit Ihren Anforderungen, gruppiert nach Benutzer, angezeigt.  Da das System für jede geschützte App, die auf dem Gerät ausgeführt wird, eine Löschanforderung erstellt, werden möglicherweise für einen Benutzer mehrere Anforderungen angezeigt.  Der Status gibt an, ob eine Löschanforderung noch **aussteht**oder **fehlgeschlagen**ist bzw. **erfolgreich**ausgeführt wurde.
 
-### Weitere Informationen:
-[Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Apps ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+Der Benutzer muss die App für das Zurücksetzen öffnen, und das Zurücksetzen dauert bis zu 30 Minuten, nachdem die Anforderung gestellt wurde. 
+
+Zurücksetzungen mit Status „Ausstehend“ werden angezeigt, bis Sie sie manuell löschen.  Um eine Anforderung zum Zurücksetzen manuell zu löschen, klicken Sie mit der rechten Maustaste, und wählen Sie „Löschen“.
+
+### <a name="see-also"></a>Weitere Informationen:
+[Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Apps](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Verwenden des Azure-Portals](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

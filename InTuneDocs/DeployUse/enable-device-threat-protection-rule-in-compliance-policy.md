@@ -8,19 +8,19 @@ manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
-ms.openlocfilehash: c074dd8850aef8cec79a9362222c3678d679bf4f
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: ec287d49910a72c22122f45a01850bcbd3a7d203
 
 
 ---
 
-# Aktivieren der Regel zum Schutz vor Bedrohungen von mobilen Geräten in der Kompatibilitätsrichtlinie
+# <a name="enable-device-threat-protection-rule-in-the-compliance-policy"></a>Aktivieren der Regel zum Schutz vor Bedrohungen von mobilen Geräten in der Kompatibilitätsrichtlinie
 Intune mit Lookout Mobile Threat Protection gibt Ihnen die Möglichkeit, Bedrohungen von mobilen Geräten zu erkennen und eine Risikobewertung für das Gerät vorzunehmen. Sie können eine Regel für die Kompatibilitätsrichtlinie erstellen, in die die Risikoanalyse zum Bestimmen einbezogen wird, ob das Gerät kompatibel ist. Anschließend können Sie die Regel für bedingten Zugriff verwenden, um den Zugriff auf Exchange, SharePoint und andere Dienste auf Grundlage der Gerätekompatibilität zuzulassen oder zu blockieren.
 
 So geben Sie der Lookout-Bedrohungserkennung für Geräte Einfluss auf die Kompatibilitätsrichtlinie für das Gerät:
@@ -52,7 +52,7 @@ Sie können den Kompatibilitätszustand eines Geräts in der **Intune-Verwaltung
 
 ![Screenshot der Seite für Geräte in der Intune-Verwaltungskonsole mit Kompatibilitätsstatus eines Geräts](../media/mtp/mtp-device-status-intune-console.png)
 
-## Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 * Erstellen einer Richtlinie für bedingten Zugriff
   * [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
   * [Exchange lokal](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
@@ -62,6 +62,6 @@ Sie können den Kompatibilitätszustand eines Geräts in der **Intune-Verwaltung
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
