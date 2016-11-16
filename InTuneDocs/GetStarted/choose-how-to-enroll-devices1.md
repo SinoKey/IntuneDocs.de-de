@@ -3,6 +3,7 @@ title: "Auswählen der Methode zum Registrieren mobiler Geräte | Microsoft Intu
 description: "Entscheiden Sie über die Registrierung mobiler Geräte in Intune durch Beantworten einiger einfacher Fragen"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
-ms.openlocfilehash: 509a0af6949d95a0c66c72043e67567b70ace22d
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: e87fb7eaadcb578303a83d3d81ba650e65f6853c
 
 
 ---
@@ -36,6 +37,6 @@ Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmet
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

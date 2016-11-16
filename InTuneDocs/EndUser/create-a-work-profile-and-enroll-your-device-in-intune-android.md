@@ -2,7 +2,8 @@
 title: "Erstellen eines Arbeitsprofils und Registrieren Ihres Geräts bei Intune | Microsoft Intune"
 description: "Beschreibt das Verschlüsseln eines Android-Geräts."
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29eb7c7fb17eb640eefb0cb4a58834d5e3d77591
-ms.openlocfilehash: 528f2e3c2e4acbc45132d12e127dc9b7a4e3f49b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
 
 
 ---
 
 
-# Erstellen eines Arbeitsprofils und Registrieren Ihres Geräts bei Intune
+# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Erstellen eines Arbeitsprofils und Registrieren Ihres Geräts bei Intune
 
-Sie können ein Arbeitsprofil auf Ihrem Gerät einrichten, um auf Ihre Geschäfts-, Schul- oder Uni-E-Mails, -Apps und -Dateien zugreifen zu können. Weitere Informationen dazu finden Sie unter [Was geschieht beim Erstellen eines Arbeitsprofils?](what-happens-when-you-create-a-work-profile-android.md).
+Durch die Registrierung Ihres Android-Geräts können Sie auf Geschäfts-E-Mails, -Apps und andere unternehmensspezifische Daten zugreifen. Im Rahmen der Anmeldung richten Sie ein Arbeitsprofil ein, das die privaten Daten auf Ihrem Gerät von Ihren Arbeitsdaten trennt. Ihr IT-Administrator kann nur das Arbeitsprofil verwalten, das Ihre Geschäftsdaten enthält. Ihr IT-Administrator kann nicht die privaten Daten auf dem Gerät verwalten. Weitere Informationen dazu finden Sie unter [Was geschieht beim Erstellen eines Arbeitsprofils?](what-happens-when-you-create-a-work-profile-android.md).
 
 So erstellen Sie ein Arbeitsprofil:
 
@@ -56,11 +57,11 @@ So erstellen Sie ein Arbeitsprofil:
 
     Ihnen wird eine Reihe von Nachrichten mit dem Text „Einrichten Ihres Arbeitsprofils“ und „Registrierung des Geräts“ angezeigt.
 
-8. Tippen Sie auf dem Bildschirm **Die Hälfte ist geschafft!**  auf das Symbol der Unternehmensportal-App mit dem Pin.
+8. Wenn Sie auf dem **You‘re Halfway There!**-Bildschirm (Sie haben es fast geschafft!) angelangt sind, warten Sie ein paar Sekunden, bis die Unternehmensportal-App geöffnet wird.
 
     ![Tippen Sie auf die Unternehmensportal-App mit dem Pin](./media/andr-afw-tap-work-badged-company-portal-icon2.png)
 
-9. Tippen Sie im Android-Unternehmensportal auf dem **Willkommensbildschirm** auf **Anmelden**, und melden Sie sich dann mit Ihrem Geschäfts-, Schul- oder Unikonto an.
+9. Tippen Sie im Android-Unternehmensportal auf dem **Willkommensbildschirm** auf **Anmelden**, und melden Sie sich dann mit dem gleichen Geschäfts-, Schul- oder Unikonto an, das Sie früher in diesem Prozess zum Anmelden verwendet haben.
 
 10. Beachten Sie auf dem Bildschirm **Unternehmenszugriff einrichten**, dass das Setup Ihres Arbeitsprofils jetzt abgeschlossen ist, und tippen Sie dann auf **WEITER**.
 
@@ -72,11 +73,11 @@ So erstellen Sie ein Arbeitsprofil:
 
     ![Einrichtung des Unternehmenszugriffs zeigt an, dass die Einrichtung des Arbeitsprofils und die Registrierung abgeschlossen sind](./media/andr-afw-company-access-setup-green-checks.png)
 
-12. Tippen Sie auf dem Bildschirm **Einrichten des Unternehmenszugriffs abgeschlossen** auf **FERTIG**.
+12. Tippen Sie auf dem Bildschirm **Einrichten des Unternehmenszugriffs abgeschlossen** auf **FERTIG**. Sie müssen möglicherweise weitere Schritte ausführen, wenn Ihr IT-Administrator andere Anforderungen hinzugefügt hat.
 
     ![Einrichtung des Unternehmenszugriffs ist abgeschlossen](./media/andr-afw-company-access-setup-complete.png)
 
-    Sie werden zu Google Play for Work weitergeleitet, wo Sie jetzt Unternehmens-Apps erstehen können.
+    Sie erhalten nun Unternehmens-Apps aus dem Play Store for Work.
 
     ![App-Seite Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
 

@@ -2,10 +2,10 @@
 title: "Beschränken des Netzwerkzugriffs mit Cisco ISE | Microsoft Intune"
 description: "Verwenden Sie Cisco ISE mit Intune, damit Geräte bei Intune registriert sind und mit der Richtlinie kompatibel sind, bevor sie auf WLAN und VPN zugreifen, die von Cisco ISE gesteuert werden."
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 10/05/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,23 +14,23 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
-ms.openlocfilehash: 44dc8ce90537580ef30ba4b8c9f3ee2dd5e20c24
+ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
+ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
 
 
 ---
 
-# Verwenden von Cisco ISE mit Microsoft Intune
+# <a name="using-cisco-ise-with-microsoft-intune"></a>Verwenden von Cisco ISE mit Microsoft Intune
 Die Intune-Integration mit Cisco Identity Services Engine (ISE) erlaubt Ihnen, in Ihrer ISE-Umgebung Netzwerkrichtlinien mithilfe der Intune-Geräteregistrierung und des Kompatibilitätszustands zu verfassen. Sie können diese Richtlinien so einsetzen, dass der Zugriff auf Ihr Unternehmensnetzwerk auf Geräte beschränkt wird, die von Intune verwaltet werden und mit Intune-Richtlinien kompatibel sind.
 
-## Konfigurationsschritte
+## <a name="configuration-steps"></a>Konfigurationsschritte
 
 Sie müssen keine Einrichtungsschritte in Ihrem Intune-Mandanten vornehmen, um diese Integration zu aktivieren. Sie müssen Berechtigungen für Ihren Cisco ISE-Server für den Zugriff auf den Intune-Mandanten bereitstellen. Nachdem dies erfolgt ist, wird der Rest des Setups auf Ihrem Cisco ISE-Server durchgeführt. In diesem Artikel erhalten Sie Anweisungen, wie Sie für Ihren ISE-Server die Berechtigungen bereitstellen, auf Ihren Intune-Mandanten zuzugreifen.
 
-### Schritt 1: Verwalten der Zertifikate
+### <a name="step-1-manage-the-certificates"></a>Schritt 1: Verwalten der Zertifikate
 Exportieren Sie die Zertifikate aus der Azure Active Directory-Konsole (Azure AD), und importieren Sie sie anschließend in den Speicher „Vertrauenswürdige Zertifikate“ der ISE-Konsole:
 
-#### Internet Explorer 11
+#### <a name="internet-explorer-11"></a>Internet Explorer 11
 
 
    a. Führen Sie Internet Explorer als Administrator aus, und melden Sie sich bei der Azure AD-Konsole an.
@@ -47,7 +47,7 @@ Exportieren Sie die Zertifikate aus der Azure Active Directory-Konsole (Azure AD
 
    g. Importieren Sie von der ISE-Konsole aus das Intune-Zertifikat (die Datei, die Sie exportiert haben) in den **Vertrauenswürde Zertifikate**-Speicher.
 
-#### Safari
+#### <a name="safari"></a>Safari
 
  a. Melden Sie sich bei der Azure AD-Konsole an.
 
@@ -64,18 +64,19 @@ b. Wählen Sie das Schlosssymbol aus &gt;  **Weitere Informationen**.
 > Überprüfen Sie das Ablaufdatum des Zertifikats, da Sie ein neues Zertifikat exportieren und importieren müssen, wenn dieses abläuft.
 
 
-### Abrufen eines selbstsignierten Zertifikats von ISE 
+### <a name="obtain-a-selfsigned-cert-from-ise"></a>Abrufen eines selbstsignierten Zertifikats von ISE 
 
 1.  Wechseln Sie in der ISE-Konsole zu **Verwaltung** > **Zertifikate** > **Systemzertifikaten** > **Selbstsigniertes Zertifikat generieren**.  
 2.       Exportieren Sie das selbstsignierte Zertifikat.
-3. Bearbeiten Sie in einem Text-Editor das exportierte Zertifikat:
+3. Bearbeiten Sie das exportierte Zertifikat in einem Texteditor:
+
  - Löschen Sie ** -----BEGIN CERTIFICATE-----**
  - Löschen Sie ** -----END CERTIFICATE-----**
  
 Stellen Sie sicher, dass sich der gesamte Text in einer Zeile befindet
 
 
-### Schritt 2: Erstellen einer App für ISE in Ihrem Azure AD-Mandanten
+### <a name="step-2-create-an-app-for-ise-in-your-azure-ad-tenant"></a>Schritt 2: Erstellen einer App für ISE in Ihrem Azure AD-Mandanten
 1. Wählen Sie in der Konsole von Azure AD **Anwendungen** > **Hinzufügen einer Anwendung** > **Eine von meinem Unternehmen entwickelte Anwendung hinzufügen** aus.
 2. Stellen Sie einen Namen und eine URL für die App bereit. Die URL könnte die Website Ihres Unternehmens sein.
 3. Laden Sie das App-Manifest (eine JSON-Datei) herunter.
@@ -99,7 +100,7 @@ Stellen Sie sicher, dass sich der gesamte Text in einer Zeile befindet
 |OAuth 2.0-Tokenendpunkt|Token ausgebende URL|
 |Code mit Client-ID aktualisieren|Client-ID|
 
-### Schritt 4: Hochladen des selbstsignierten Zertifikats aus ISE in die ISE-App, die Sie in Azure AD erstellt haben
+### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Schritt 4: Hochladen des selbstsignierten Zertifikats aus ISE in die ISE-App, die Sie in Azure AD erstellt haben
 1.     Rufen Sie den base64-codierten Zertifikatswert und Fingerabdruck aus einer öffentlichen CER X509-Zertifikatsdatei ab. In diesem Beispiel wird PowerShell verwendet:
    
       
@@ -136,7 +137,7 @@ Beispiel:
 > „KeyCredentials“ ist eine Sammlung, daher können Sie in Rolloverszenarien mehrere X.509-Zertifikate hochladen oder Zertifikate in Kompromittierungsszenarien löschen.
 
 
-### Schritt 4: Konfigurieren der ISE-Einstellungen
+### <a name="step-4-configure-ise-settings"></a>Schritt 4: Konfigurieren der ISE-Einstellungen
 Geben Sie in der Verwaltungskonsole von ISE diese Einstellungswerte ein:
   - **Servertyp**: Mobile Device Manager
   - **Authentifizierungstyp**: OAuth – Anmeldeinformationen des Clients
@@ -147,7 +148,7 @@ Geben Sie in der Verwaltungskonsole von ISE diese Einstellungswerte ein:
 
 
 
-## Informationen die zwischen Ihrem Intune-Mandanten und Ihrem Cisco ISE-Server freigegeben sind.
+## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Informationen die zwischen Ihrem Intune-Mandanten und Ihrem Cisco ISE-Server freigegeben sind.
 Diese Tabelle listet die Informationen auf, die zwischen Ihrem Intune-Mandanten und Ihrem Cisco ISE-Server für die mit Intune verwalteten Geräte freigegeben sind.
 
 |Eigenschaft|  Beschreibung|
@@ -166,7 +167,7 @@ Diese Tabelle listet die Informationen auf, die zwischen Ihrem Intune-Mandanten 
 |lastContactTimeUtc|Das Datum und die Uhrzeit, zu der das Gerät sich das letzte Mal beim Intune-Verwaltungsdienst gemeldet hat.
 
 
-## Benutzerfreundlichkeit
+## <a name="user-experience"></a>Benutzerfreundlichkeit
 
 Wenn ein Benutzer versucht, auf Ressourcen mittels eines Gerätes zuzugreifen, das nicht registriert ist, wird er zur Registrierung aufgefordert, so wie hier gezeigt.
 
@@ -182,12 +183,12 @@ Wenn der Benutzer sich für die Registrierung entscheidet, wird er zum Intune-Re
 Es gibt auch [herunterladbare Registrierungsanweisungen](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a), die Sie verwenden können, um einen angepassten Leitfaden für Ihre Benutzerfreundlichkeit zu erstellen.
 
 
-### Weitere Informationen:
+### <a name="see-also"></a>Weitere Informationen:
 
 [Cisco Identity Services Engine-Administratorhandbuch, Version 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

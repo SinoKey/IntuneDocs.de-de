@@ -3,8 +3,9 @@ title: Proof of Concept | Microsoft Intune
 description: "Empfehlungen für die Proof of Concept-Phase einer Intune-Bereitstellung."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: f3c97380-23ca-40da-acbc-78108507cad7
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: bffd46199873f01e2c03fe8b30cdfb3c425a07ee
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 5b19835e7f726e23d402bbab408796cad9028bd0
 
 
 ---
@@ -44,7 +45,7 @@ Bevor Sie Ihre PoC-Infrastruktur bereitstellen, müssen Sie die zu überprüfend
 ### Helpdesk
 Der Helpdesk braucht keine Vorbereitung für diese Phase des Projekts, da keine Produktionsbenutzer oder Geräte daran beteiligt sind. Dies ist für den Helpdesk jedoch eine Möglichkeit, die Bereitstellung und den Betrieb von Intune kennen zu lernen.
 
-### Sensibilisierung
+### Informationsbedarf
 Das Technikteam und die finanzierende Geschäftsleitung sollten Einblick in Verlauf der Szenariotests erhalten. Das Designteam muss über die gewonnenen Erkenntnisse informiert werden, um sie im Entwurf zu berücksichtigen.
 
 ### Training
@@ -78,6 +79,6 @@ Hier sind einige Probleme aufgeführt, die möglicherweise während der **Proof 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

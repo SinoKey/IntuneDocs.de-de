@@ -3,6 +3,7 @@ title: Einrichten der Windows Phone 8.0-Verwaltung | Microsoft Intune
 description: "Aktivieren Sie die Verwaltung mobiler Geräte (Mobile Device Management, MDM) für Windows Phone 8.0-Geräte mit Microsoft Intune."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/09/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 5b659bb63c34887684f90fd56ea853bade8bf791
+ms.sourcegitcommit: 067b46c4e537f6def75142411a6d6b60a63cd642
+ms.openlocfilehash: 32d1272d1e125c8a1a5b9f7c6291fb4acf14ea6e
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 5b659bb63c34887684f90fd56ea853bade8bf791
 Windows Phone 8.0 erfordert ein Symantec-Zertifikat, damit die Intune-Unternehmensportal-App installiert und die Geräteverwaltung ermöglicht werden kann. Ein Zertifikat ist auch zum Signieren branchenspezifischer Apps erforderlich. Das folgende Thema gilt nur für Windows Phone 8.0. Informationen zum Verwaltung von Windows Phone 8.1 oder höher (einschließlich Windows 10 Mobile) finden Sie unter [Einrichten der Windows Phone-Registrierung](set-up-windows-phone-management-with-microsoft-intune.md).
 
 > [!IMPORTANT]
-> Ab September 2016 kann die Unternehmensportal-App für Windows 8.0 und Windows Phone 8.0 nicht mehr heruntergeladen werden.
+> Ab September 2016 steht die Unternehmensportal-App für Windows Phone 8 und Windows 8 nicht mehr zum Download zur Verfügung.
 
 -   **Windows Phone 8**: Zertifikat erforderlich
 -   **Windows Phone 8.1 und Windows 10 Mobile** erfordern nur ein Zertifikat, wenn Folgendes gilt:
@@ -42,7 +43,7 @@ Windows Phone 8.0 erfordert ein Symantec-Zertifikat, damit die Intune-Unternehme
 Die Setupanforderungen für die Verwaltung von Windows Phone-Mobilgeräten hängen davon ab, wie Sie die Geräte verwalten möchten.  Das Festlegen von zwei CNAMEs in der DNS-Registrierung Ihres Unternehmens erleichtert die Registrierung für die Benutzer. Wenn Ihre Benutzer die Unternehmensportal-App aus dem Store herunterladen, müssen Sie nach dem Konfigurieren der DNS-Einstellungen nur noch das Unternehmensportal einrichten und den Benutzern erklären, wie sie sich registrieren können.  Für Windows Phone 8.0 oder für Windows Phone 8.1 benötigen Sie zur Bereitstellung des Unternehmensportals ein Symantec-Zertifikat, um die App mit einer Codesignatur zu versehen.
 
 ## Konfigurieren der Einrichtungsanforderungen zum Aktivieren der Windows Phone-Verwaltung
-1.  **Einrichten von Intune** Falls nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch [Festlegen der Autorität für die Verwaltung mobiler Geräte](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) auf **Microsoft Intune** vor.
+1.  **Einrichten von Intune** Falls nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch [Festlegen der Autorität für die Verwaltung mobiler Geräte](prerequisites-for-enrollment.md#set-mobile-device-management-authority) auf **Microsoft Intune** und Einrichten von MDM vor.
 
 2.  **Festlegen eines DNS-Alias für die Adresse des Registrierungsservers** (optional)
 
@@ -183,6 +184,6 @@ Sie können die Unternehmensportal-App für Windows Phone 8.1-Geräte mit Intun
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

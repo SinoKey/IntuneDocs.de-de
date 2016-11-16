@@ -2,7 +2,8 @@
 title: "Registrieren mit dem Geräteregistrierungs-Manager | Microsoft Intune"
 description: "Das Geräteregistrierungs-Manager-Konto (Device Enrollment Manager, DEM) kann eine große Anzahl gemeinsam genutzter, firmeneigener mobiler Geräte mit einem einzigen Benutzerkonto verwalten."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/12/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
-ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 51e5f248c5e8759d5992918a99e1f114e2614142
 
 
 ---
 
 
-# Registrieren von firmeneigenen Geräten mit dem Geräteregistrierungs-Manager in Microsoft Intune
+# <a name="enroll-corporateowned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Registrieren von firmeneigenen Geräten mit dem Geräteregistrierungs-Manager in Microsoft Intune
 Mit Intune können Organisationen eine Vielzahl mobiler Geräte mit einem einzelnen Benutzerkonto verwalten. Das Konto *Geräteregistrierungs-Manager* ist ein spezielles Intune-Konto mit dem bis zu 1.000 Geräte registriert werden können. Es empfiehlt sich, Geräte zu verwenden, die mithilfe dieses Kontos als freigegebene Geräte registriert wurden, statt persönlicher („BYOD“) Geräte. Die Benutzer werden beispielsweise keine „nativen“ E-Mail-Apps verwenden können.
 
 Sie können beispielsweise einem Speicher-Manager oder Supervisor ein Benutzerkonto für einen Geräteregistrierungs-Manager zuweisen, um ihm folgende Möglichkeiten zu geben:
@@ -50,10 +51,10 @@ Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurd
 > Um Unternehmens-Apps auf Geräten bereitzustellen, die mit dem Geräteregistrierungs-Manager verwaltet werden, stellen Sie die Unternehmensportal-App als **erforderliche Installation** für das Benutzerkonto des Geräteregistrierungs-Managers bereit.
 > Zur Verbesserung der Leistung werden beim Anzeigen der Unternehmensportal-App auf einem mit dem Geräteregistrierungs-Manager verwalteten Gerät nur das lokale Gerät angezeigt. Für die Remoteverwaltung anderer vom Geräteregistrierungs-Manager verwalteter Geräte muss die Intune-Verwaltungskonsole verwendet werden.
 
-## Erstellen von Konten für Geräteregistrierungs-Manager
+## <a name="create-device-enrollment-manager-accounts"></a>Erstellen von Konten für Geräteregistrierungs-Manager
 Konten für Geräteregistrierungs-Manager sind Benutzerkonten mit der Berechtigung, eine große Anzahl firmeneigener Geräten anzumelden. Nur Benutzer in der Intune-Konsole können Geräteregistrierungs-Manager sein.
 
-#### Hinzufügen eines Geräteregistrierungs-Managers zu Intune
+#### <a name="add-a-device-enrollment-manager-to-intune"></a>Hinzufügen eines Geräteregistrierungs-Managers zu Intune
 
 1.  Navigieren Sie zum [Microsoft Intune-Kontenportal](http://go.microsoft.com/fwlink/?LinkId=698854), und melden Sie sich bei Ihrem Administratorkonto an.
 
@@ -71,7 +72,7 @@ Konten für Geräteregistrierungs-Manager sind Benutzerkonten mit der Berechtigu
 
 8.  Der Geräteregistrierungs-Manager kann nun Mobilgeräte über dasselbe Verfahren registrieren, das ein Endbenutzer für ein BYOD-Szenario im Unternehmensportal verwendet.
 
-## Löschen eines Geräteregistrierungs-Managers aus Intune
+## <a name="delete-a-device-enrollment-manager-from-intune"></a>Löschen eines Geräteregistrierungs-Managers aus Intune
 
 1.  Melden Sie sich beim [Microsoft Intune-Verwaltungsportal](http://manage.microsoft.com) mit Ihren Administratoranmeldedaten an.
 
@@ -95,6 +96,6 @@ Wenn Sie einen Geräteregistrierungs-Manager löschen, wirkt sich dies nicht auf
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

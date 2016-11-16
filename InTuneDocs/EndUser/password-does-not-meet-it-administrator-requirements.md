@@ -3,8 +3,9 @@ title: "Kennwort erfüllt nicht die Anforderungen des IT-Administrators | Micros
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -12,34 +13,42 @@ ms.technology:
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 782fb6132a8f049e67446085babe5d7e699c4749
+ms.sourcegitcommit: b13d2a37cc6a1e4d2b6287fc8d43675441386f03
+ms.openlocfilehash: fa9a3a89e50e8d03beb2efc067925ca0a4fcd68c
 
 
 ---
 
 # Kennwort erfüllt nicht die Anforderungen des IT-Administrators
 
-Das Kennwort, mit dem Sie auf Unternehmens- oder Schulressourcen zugreifen, erfüllt nicht die Anforderungen, die der IT-Administrator für Ihr Gerät festgelegt hat. Je nach den Richtlinien, die der IT-Administrator erstellt hat, kann eines der folgenden Probleme (auch in Kombination) vorliegen:
+Das Kennwort, mit dem Sie auf Unternehmens- oder Schulressourcen zugreifen, erfüllt mindestens eine der Anforderungen nicht, die Ihr IT-Administrator eingerichtet hat. Um das Problem zu beheben, befolgen Sie die Anweisungen, die auf Ihrem Gerät angezeigt werden. Beschreibungen der Probleme sind nachstehend aufgelistet.
 
-- Das Kennwort enthält keine komplexen Zeichen.
-- Das Kennwort ist nicht komplex und sicher genug.
-- Das Kennwort ist abgelaufen.
-- Das Kennwort ist nicht festgelegt.
-- Das Kennwort ist zu kurz.
-- Das Kennwort wurde erst kürzlich verwendet.
-- Das Kennwort ist nicht komplex genug, um Anforderungen zu erfüllen.
-
-Um Informationen zum Festlegen von PIN oder Kennwort oder Informationen zu anderen Aufgaben im Zusammenhang mit Ihrem Gerät zu erhalten, wählen Sie den Link, der zu Ihrem Gerätetyp passt:
+Schritte zum Festlegen Ihrer PIN bzw. Ihres Kennworts finden Sie unter dem Link, der mit Ihrem Gerätetyp übereinstimmt:
 
 - [Festlegen der PIN oder des Kennworts für Ihr Android-Gerät](set-your-pin-or-password-android.md)
 - [Festlegen oder Ändern der Kennung Ihres iOS-Geräts](set-or-change-your-passcode-ios.md)
 - [Festlegen oder Ändern des Kennworts Ihres Windows-Geräts](set-or-change-your-password-windows.md)
 
+Beschreibungen der PIN- bzw. Kennwortprobleme:
+
+- **Das Kennwort enthält keine komplexen Zeichen**. Ihr IT-Administrator verlangt, dass Sie komplexe Zeichen in Ihrem Kennwort verwenden. Beispiele für komplexe Zeichen sind Zahlen, Großbuchstaben und Symbole wie $, % und #. 
+
+- **Das Kennwort ist zu einfach und zu unsicher**. Beispiele für einfache Kennwörter sind 1234 oder 1111. Wenn Sie nicht sicher sind, welche Arten von Kennwörtern zulässig sind, versuchen Sie sich zu vergewissern, dass Ihr Kennwort keine sequenziellen oder wiederholenden Zahlen, wie im Beispiel gezeigt, enthält.
+
+- **Das Kennwort ist abgelaufen**. Ihr Kennwort ist abgelaufen. Sie müssen daher ein neues Kennwort festlegen, das die von Ihrem IT-Administrator festgelegten Anforderungen erfüllt.
+
+- **Das Kennwort ist nicht festgelegt**. Bevor Sie über Ihr Gerät auf Unternehmens-E-Mails und -daten zugreifen können, müssen Sie ein Kennwort festlegen, das die von Ihrem IT-Administrator festgelegten Anforderungen erfüllt.
+
+- **Das Kennwort ist zu kurz**. Ihr IT-Administrator verlangt, dass Sie ein längeres Kennwort mit mehr Zeichen verwenden.
+
+- **Das Kennwort wurde erst kürzlich verwendet**. Ihr IT-Administrator verhindert, dass Sie vorherige Kennwörter verwenden, die Sie in der Vergangenheit bereits verwendet haben. Wählen Sie ein Kennwort aus, das Sie zuvor noch nicht verwendet haben. 
+
+- **Das Kennwort ist nicht komplex genug, um Anforderungen zu erfüllen**. Ihr IT-Administrator verlangt, dass Sie komplexere Zeichen in Ihrem Kennwort verwenden. Versuchen Sie es mit Zeichen wie Zahlen, Großbuchstaben und Symbolen wie $, % und #. 
+
 Wenn Sie Probleme haben herauszufinden, wie Ihr Kennwort diese Anforderungen erfüllt, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

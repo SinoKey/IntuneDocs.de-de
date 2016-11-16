@@ -2,9 +2,10 @@
 title: Zugriff auf Unternehmens-E-Mail mithilfe von E-Mail-Profilen | Microsoft Intune
 description: "Mithilfe der Einstellungen von E-Mail-Profilen können die Einstellungen für den E-Mail-Zugriff für bestimmte E-Mail-Clients auf mobilen Geräten konfiguriert werden."
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,16 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: befe1b3446770509c83a360c854993d4aaada09d
-ms.openlocfilehash: 1bd5d64dfff1cf1fc42247c5f89861e216da77d5
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
 
 
 ---
 
-# Konfigurieren des Zugriffs auf Unternehmens-E-Mail mithilfe von E-Mail-Profilen in Microsoft Intune
+# <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Konfigurieren des Zugriffs auf Unternehmens-E-Mail mithilfe von E-Mail-Profilen in Microsoft Intune
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 Viele mobile Plattformen enthalten einen nativen E-Mail-Client, der als Teil des Betriebssystems bereitgestellt wird. Einige dieser Clients können mithilfe von E-Mail-Profilen eingerichtet werden, wie in diesem Thema beschrieben.
 
 Mithilfe der Einstellungen von E-Mail-Profilen können die Einstellungen für den E-Mail-Zugriff für bestimmte E-Mail-Clients auf mobilen Geräten eingerichtet werden. Auf unterstützten Plattformen können die E-Mail-Clients mithilfe von Microsoft Intune eingerichtet werden, damit Benutzer ohne vorheriges zusätzliches Setup über Ihre privaten Geräte auf ihre E-Mails im Unternehmen zugreifen können.
@@ -29,14 +33,14 @@ Wenn zusätzliche Maßnahmen zum Schutz vor Datenverlust erforderlich sind, verw
 IT-Administratoren oder Benutzer können auch alternative E-Mail-Clients installieren (z.B. Microsoft Outlook für Android oder iOS). Diese E-Mail-Clients unterstützen möglicherweise keine E-Mail-Profile und können nicht mithilfe der E-Mail-Profile von Intune eingerichtet werden.  
 
 Sie können E-Mail-Profile verwenden, um den systemeigenen E-Mail-Client auf den folgenden Gerätetypen zu konfigurieren:
--   Windows Phone 8 und höher
+-   Windows Phone 8.1 und höher
 -   Windows 10 (Desktopversion), Windows 10 Mobile und höher
 -   iOS 8.0 und höher
 -   Samsung KNOX Standard (4.0 und höher)
 -   Android for Work
 
 >[!NOTE]
->Intune stellt zwei Android for Work-E-Mail-Profile bereit: eines für die Gmail-E-Mail-App und eines für die Nine Work-E-Mail-App. Diese Apps sind im Google Play Store erhältlich und unterstützen Verbindungen mit Exchange. Stellen Sie auf den Geräten der Benutzer eine dieser E-Mail-Apps bereit, erstellen Sie das entsprechende Profil, und stellen Sie dieses bereit, um die E-Mail-Konnektivität zu aktivieren. 
+>Intune stellt zwei Android for Work-E-Mail-Profile bereit: eines für die Gmail-E-Mail-App und eines für die Nine Work-E-Mail-App. Diese Apps sind im Google Play Store erhältlich und unterstützen Verbindungen mit Exchange. Stellen Sie auf den Geräten der Benutzer eine dieser E-Mail-Apps bereit, erstellen Sie das entsprechende Profil, und stellen Sie dieses bereit, um die E-Mail-Konnektivität zu aktivieren.
 
 Sie können nicht nur ein E-Mail-Konto auf dem Gerät einrichten, sondern auch, wie viele E-Mails und welche Inhaltstypen synchronisiert werden sollen, abhängig vom Gerätetyp.
 
@@ -52,23 +56,23 @@ Sie können nicht nur ein E-Mail-Konto auf dem Gerät einrichten, sondern auch, 
 
 >Da Samsung KNOX zum Identifizieren des Profils keinen Hostnamen verwendet, wird davon abgeraten, mehrere E-Mail-Profile für die Verwendung unter derselben E-Mail-Adresse auf unterschiedlichen Hosts zu erstellen, da sie sich gegenseitig überschreiben.
 
->**Android for Work**: Das Intune-Profil wird nur auf das Arbeitsprofil des Geräts angewendet und hat keine Auswirkungen auf E-Mail-Profile im Benutzerprofil des Geräts.
+>**Android for Work**: Das Intune-Profil wird nur auf spezifische E-Mail-Apps im Arbeitsprofil des Geräts angewendet und hat keine Auswirkungen auf die E-Mail-Konfiguration im Benutzerprofil des Geräts.
 
 
-## Schützen von E-Mail-Profilen
-E-Mail-Profile können mithilfe einer von zwei Methoden geschützt werden: mithilfe eines Zertifikats oder Kennworts.
+## <a name="secure-email-profiles"></a>Schützen von E-Mail-Profilen
+E-Mail-Profile können mithilfe eines Zertifikats oder Kennworts geschützt werden.
 
-### Zertifikate
+### <a name="certificates"></a>Zertifikate
 Beim Erstellen des E-Mail-Profils wählen Sie ein Zertifikatprofil aus, das Sie zuvor in Intune erstellt haben. Dieses wird als Identitätszertifikat bezeichnet und dient zur Authentifizierung anhand eines vertrauenswürdigen Zertifikatprofils (oder eines Stammzertifikats), mit dem überprüft wird, ob das Gerät des Benutzers eine Verbindung herstellen darf. Das vertrauenswürdige Zertifikat wird auf dem Computer bereitgestellt, der die E-Mail-Verbindung authentifiziert. In der Regel ist dies der systemeigene Mailserver.
 
 Weitere Informationen zum Erstellen und Verwenden von Zertifikatprofilen in Intune finden Sie unter [Sicherer Zugriff auf Ressourcen mit Zertifikatprofilen](secure-resource-access-with-certificate-profiles.md).
 
-### Benutzername und Kennwort
+### <a name="user-name-and-password"></a>Benutzername und Kennwort
 Der Benutzer authentifiziert sich beim nativen Mailserver durch Angabe seines Benutzernamens und Kennworts.
 
 Das Kennwort ist nicht im E-Mail-Profil enthalten, sodass der Benutzer dieses beim Herstellen einer Verbindung mit dem E-Mail-System bereitstellen muss.
 
-### Erstellen eines E-Mail-Profils
+### <a name="create-an-email-profile"></a>Erstellen eines E-Mail-Profils
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** &gt; **Richtlinie hinzufügen** aus.
 
@@ -76,12 +80,12 @@ Das Kennwort ist nicht im E-Mail-Profil enthalten, sodass der Benutzer dieses be
 
     -   **E-Mail-Profil für Samsung KNOX Standard (4.0 oder höher)**
 
-    -   **E-Mail-Profil (iOS 8.0 und höher)**
+    -   **E-Mail-Profil (iOS 8.0 und höher)**
 
-    -   **E-Mail-Profil (Windows Phone 8 und höher)**
+    -   **E-Mail-Profil (Windows Phone 8.1 und höher)**
 
-    -   **E-Mail-Profil (Windows 10 Desktop und Windows 10 Mobile oder höher)**
-    
+    -   **E-Mail-Profil (Windows 10 Desktop und Windows 10 Mobile oder höher)**
+
     -   **E-Mail-Profil (Android for Work – Gmail)**
 
     -   **E-Mail-Profil (Android for Work – Nine Work)**
@@ -95,7 +99,7 @@ Das Kennwort ist nicht im E-Mail-Profil enthalten, sodass der Benutzer dieses be
     |**Name**|Eindeutiger Name für das E-Mail-Profil.|
     |**Beschreibung**|Eine Beschreibung, die Sie beim Identifizieren dieses Profils unterstützt.|
     |**Host**|Der Hostname Ihres Unternehmensservers, der Ihren nativen E-Mail-Dienst hostet.|
-    |**Account name**|Der Anzeigename für das E-Mail-Konto, wie er den Benutzern auf ihren Geräten angezeigt wird.|
+    |**Kontoname**|Der Anzeigename für das E-Mail-Konto, wie er den Benutzern auf ihren Geräten angezeigt wird.|
     |**Benutzername**|Vorgehensweise beim Abrufen des Benutzernamens für das E-Mail-Konto. Wählen Sie **Benutzername** für einen lokalen Exchange-Server oder **Benutzerprinzipalname** für Office 365 aus.|
     |**E-Mail-Adresse**|Vorgehensweise beim Generieren der E-Mail-Adresse für den Benutzer auf den einzelnen Geräten. Wählen Sie **Primäre SMTP-Adresse** aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden. Verwenden Sie **Benutzerprinzipalname**, um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden.|
     |**Authentifizierungsmethode** (Android for Work, Samsung KNOX und iOS)|Wählen Sie entweder **Benutzername und Kennwort** oder **Zertifikat** als Authentifizierungsmethode aus, die vom E-Mail-Profil verwendet werden soll.|
@@ -107,14 +111,16 @@ Das Kennwort ist nicht im E-Mail-Profil enthalten, sodass der Benutzer dieses be
     |**SSL verwenden**|Verwenden Sie die SSL-Kommunikation (Secure Sockets Layer) beim Senden und Empfangen von E-Mails sowie bei der Kommunikation mit dem Exchange-Server. Für Geräte mit Samsung KNOX 4.0 oder höher müssen Sie Ihr Exchange Server-SSL-Zertifikat exportieren und es als ein vertrauenswürdiges Zertifikatprofil für Android in Intune bereitstellen. Intune unterstützt den Zugriff auf dieses Zertifikat nicht, wenn es auf andere Weise auf dem Exchange-Server installiert wurde.|
     |**Zu synchronisierender Inhalt** (alle Plattformen außer Android for Work – Gmail)|Wählen Sie die Inhaltstypen aus, die auf Geräten synchronisiert werden sollen.|
     |**Senden von E-Mails über Anwendungen von Drittanbietern zulassen** (nur iOS)|Erlauben Sie dem Benutzer die Auswahl dieses Profils als das Standardkonto für das Versenden von E-Mails, und erlauben Sie Anwendungen von Drittanbietern das Öffnen von E-Mails in der nativen E-Mail-App, um beispielsweise Dateien an E-Mails anzuhängen.|
-    > [!IMPORTANT]
-    > If you have deployed an email profile and then wish to change the values for **host** or **Email address**, you must delete the existing email profile and create a new one with the required values.
+
+> [!IMPORTANT]
+>
+> Wenn Sie ein E-Mail-Profil bereitgestellt haben und dann die Werte für **Host** oder **E-Mail-Adresse** ändern möchten, müssen Sie das vorhandene E-Mail-Profil löschen und ein neues mit den erforderlichen Werten erstellen.
 
 4.  Klicken Sie danach auf **Richtlinie speichern**.
 
 Die neue Richtlinie wird im Knoten **Konfigurationsrichtlinien** des Arbeitsbereichs **Richtlinie** angezeigt.
 
-## Bereitstellen der Richtlinie
+## <a name="deploy-the-policy"></a>Bereitstellen der Richtlinie
 
 1.  Wählen Sie im Arbeitsbereich **Richtlinie** die Richtlinie aus, die Sie bereitstellen möchten, und wählen Sie anschließend **Bereitstellung verwalten** aus.
 
@@ -127,10 +133,11 @@ Die neue Richtlinie wird im Knoten **Konfigurationsrichtlinien** des Arbeitsbere
 Eine Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeitsbereichs **Richtlinie** identifiziert Probleme mit der Richtlinie, die Ihre Aufmerksamkeit erfordern. Darüber hinaus wird eine Statusübersicht im Arbeitsbereich „Dashboard“ angezeigt.
 
 > [!NOTE]
-> Wenn Sie ein E-Mail-Profil von einem Gerät entfernen, bearbeiten Sie die Bereitstellung, und entfernen Sie alle Gruppen, in denen das Gerät Mitglied ist.
+> - Stellen Sie zusätzlich zu den entsprechenden E-Mail-Profilen auch die Gmail- oder die Nine Work-E-Mail-App für Android for Work bereit.
+> - Wenn Sie ein E-Mail-Profil von einem Gerät entfernen, bearbeiten Sie die Bereitstellung, und entfernen Sie alle Gruppen, in denen das Gerät Mitglied ist.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

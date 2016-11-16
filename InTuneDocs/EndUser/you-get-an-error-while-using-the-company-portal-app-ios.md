@@ -2,7 +2,8 @@
 title: Sie erhalten bei Verwendung der Unternehmensportal-App eine Fehlermeldung | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,28 +15,27 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6d8b46a20e415f03d23b58b22ecf77fe887d344c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: fde8d231c9638f5923826942cadf1f9bad731f55
 
 
 ---
 
 
-# Sie erhalten bei Verwendung der Unternehmensportal-App eine Fehlermeldung
+# <a name="you-get-an-error-while-using-the-company-portal-app"></a>Sie erhalten bei Verwendung der Unternehmensportal-App eine Fehlermeldung
 
 Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App auf Ihrem iOS-Gerät verwenden, können Sie Informationen über den Fehler senden, um Ihrem IT-Administrator bei der Behandlung des Problems zu helfen. Sie können Fehlerinformationen auf unterschiedliche Weise senden:
 
--   Durch Tippen auf **Melden** in Fehlermeldungen.
+-   Tippen Sie in Fehlermeldungen auf **Bericht**.
 
--   Durch Tippen auf **Diagnosebericht senden** auf dem Bildschirm **Info** der Unternehmensportal-App.
+-   Tippen Sie im Bildschirm **Info** der Unternehmensportal-App auf **Diagnosebericht senden**.
 
--   Durch Schütteln Ihres Geräts, während Sie sich in der Unternehmensportal-App befinden, und anschließendes Tippen auf **E-Mail**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** &gt; **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schütteln** aktiviert ist.
+-   Schütteln Sie Ihr Gerät, während Sie die Unternehmensportal-App geöffnet haben, und tippen Sie auf **E-Mail**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** &gt; **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schütteln** aktiviert ist.
 
-
-
-
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Sep16_HO3-->
+
+<!--HONumber=Nov16_HO2-->
 
 

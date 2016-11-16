@@ -2,9 +2,10 @@
 title: Verwalten von Warnungen | Microsoft Intune
 description: "Über den Arbeitsbereich „Warnungen“ in Intune können Sie sich schnell einen Überblick über die Gesamtintegrität der Geräte in Ihrer Organisation verschaffen."
 keywords: 
-author: Nbigman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed8b7e42bd7c6f3839cc93cc3efcdd3241e88e2a
-ms.openlocfilehash: f254c1a486305e54305392b9688c563b8be93237
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 3bbeafbe78148d038b7673ee8c1abfd5bc6c5f87
 
 
 ---
 
-# Verwalten von Warnungen in Microsoft Intune
+# <a name="manage-alerts-in-microsoft-intune"></a>Verwalten von Warnungen in Microsoft Intune
 Über den Arbeitsbereich **Warnungen** in der Intune-Verwaltungskonsole können Sie sich schnell einen Überblick über die Gesamtintegrität der verwalteten Geräte innerhalb Ihres Unternehmens verschaffen und Probleme erkennen.
 
-## Anzeigen aktiver Warnungen
+## <a name="view-active-alerts"></a>Anzeigen aktiver Warnungen
 
 Lesen Sie die allgemeinen Informationen und die Zusammenfassungsdaten über aktive Warnungen.
 
-#### So zeigen Sie aktive Warnungen an
+#### <a name="to-view-active-alerts"></a>So zeigen Sie aktive Warnungen an
 
 Führen Sie in der Intune-Verwaltungskonsole eines der folgenden Verfahren aus:
 
@@ -55,10 +56,10 @@ Führen Sie in der Intune-Verwaltungskonsole eines der folgenden Verfahren aus:
 
     -   **Schweregrad**. Diese Spalte gibt den Schweregrad der Warnung an.
 
-## Anzeigen von Warnungen am Schwarzen Brett
+## <a name="view-notice-board-alerts"></a>Anzeigen von Warnungen am Schwarzen Brett
 Warnungen am schwarzen Brett stellen wichtige Dienstankündigungen bereit. Sie stellen möglicherweise Informationen über ein zukünftiges Dienstupgrade, einen Wartungszeitplan oder den Status eines Ausfalls bereit.
 
-#### So zeigen Sie Warnungen am Schwarzen Brett an und verwalten sie
+#### <a name="to-view-and-manage-notice-board-alerts"></a>So zeigen Sie Warnungen am Schwarzen Brett an und verwalten sie
 
 1.  Wählen Sie in der Intune-Verwaltungskonsole **Systemübersicht** aus.
 
@@ -66,10 +67,10 @@ Warnungen am schwarzen Brett stellen wichtige Dienstankündigungen bereit. Sie s
 
 3.  Wenn Sie eine am Schwarzen Brett angezeigte Warnung in eine CSV-Datei (mit kommagetrennten Werten) oder eine HTML-Datei importieren möchten, wählen Sie in der Intune-Verwaltungskonsole **Warnungen** > **Alle Warnungen** >    **Benachrichtigungen** aus. Wählen Sie eine Benachrichtigung aus, wählen Sie das Symbol **Liste exportieren** aus, und folgen Sie anschließend den Anweisungen.
 
-## Überprüfen des Systemstatus von Intune
+## <a name="review-intune-system-status"></a>Überprüfen des Systemstatus von Intune
 Im Arbeitsbereich **Systemübersicht** können Sie Probleme, die Ihre sofortige Aufmerksamkeit erfordern, anhand der **Systemstatusübersichten** für Endpoint Protection, Updates, Agent-Integrität, Richtlinien und Softwarekategorien erkennen und priorisieren. Fehlermeldungen nach Systemunterbrechungen sind mit der Übersicht **Dienststatus** verknüpft. In der Übersicht **Dienststatus** werden Details zum Problem an jedem Speicherort sowie der Zeitpunkt der letzten Aktualisierung der Statuszusammenfassung angezeigt.
 
-#### So zeigen Sie den Status Ihres Abonnements an
+#### <a name="to-view-the-status-of-your-subscription"></a>So zeigen Sie den Status Ihres Abonnements an
 
 1.  Wählen Sie in der Intune-Verwaltungskonsole **Systemübersicht** aus.
 
@@ -77,7 +78,7 @@ Im Arbeitsbereich **Systemübersicht** können Sie Probleme, die Ihre sofortige 
 
   Viele der Elemente sind verknüpft, damit Ihnen mehr Informationen angezeigt werden. Wenn Sie beispielsweise unter **Endpoint Protection** die Anzahl von Instanzen auswählen, wird im Arbeitsbereich **Endpoint Protection** eine Liste mit erkannter Malware angezeigt. Wenn Sie die Anzahl von Geräten auswählen, wird der Arbeitsbereich **Gruppen** mit einer Liste von Geräten angezeigt, auf denen Malware gefunden wurde.
 
-## Schließen und erneutes Aktivieren von Warnungen
+## <a name="close-and-reactivate-alerts"></a>Schließen und erneutes Aktivieren von Warnungen
 Intune-Warnungen bleiben bis zum Auftreten eines der folgenden Ereignisse aktiv:
 
 -   Das Problem, das die Generierung der Warnung verursacht hatte, wurde behoben.
@@ -88,7 +89,7 @@ Intune-Warnungen bleiben bis zum Auftreten eines der folgenden Ereignisse aktiv:
 
 Warnungen, die als geschlossen markiert sind, werden nach 90 Tagen dauerhaft gelöscht.
 
-#### So schließen Sie eine Warnung manuell
+#### <a name="to-manually-close-an-alert"></a>So schließen Sie eine Warnung manuell
 
 Führen Sie in der Intune-Verwaltungskonsole eines der folgenden Verfahren aus:
 
@@ -98,7 +99,7 @@ Führen Sie in der Intune-Verwaltungskonsole eines der folgenden Verfahren aus:
 
 - Wählen Sie **zum Schließen einer auf dem Schwarzen Brett angezeigten Warnung** **Systemübersicht** aus. Wählen Sie neben der Warnung am Schwarzen Brett das **X** aus.
 
-#### So zeigen Sie geschlossene Warnungen an und aktivieren sie erneut
+#### <a name="to-view-and-reactivate-closed-alerts"></a>So zeigen Sie geschlossene Warnungen an und aktivieren sie erneut
 
 1.  Wählen Sie in der Intune-Verwaltungskonsole **Warnungen** > **Alle Warnungen** aus.
 
@@ -108,11 +109,11 @@ Führen Sie in der Intune-Verwaltungskonsole eines der folgenden Verfahren aus:
 
 3.  Wählen Sie zum erneuten Aktivieren der ausgewählten Warnung **Warnung erneut aktivieren** aus.
 
-### Weitere Informationen:
+### <a name="see-also"></a>Weitere Informationen:
 [Benachrichtigungen durch Microsoft Intune-Warnungen](../deploy-use/get-notified-by-alerts.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

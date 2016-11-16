@@ -14,8 +14,8 @@ ms.assetid: 098b652c-01e0-45d1-a731-620b0d3dc7c1
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f78ece8bbaf813c0082e6b764d174cf25bcb618
-ms.openlocfilehash: 89f0bc5dd10c173718f9698e6e0342b5eb8c56e8
+ms.sourcegitcommit: 5083cb49e7a98f19ff21c1972149b00aee4ec93e
+ms.openlocfilehash: 8c2718da6f90f18ffbaa6a977dfca7fbc9a1bb09
 
 
 ---
@@ -27,11 +27,16 @@ Zum Blockieren dieser Apps wird Folgendes empfohlen:
 
 * Setup-ADFS beansprucht Regeln zum Blockieren von nicht moderner Authentifizierungsprotokolle. Detaillierte Anleitungen werden in Szenario 3 beschrieben: [Blockieren des gesamten Zugriffs auf Office 365, bis auf browserbasierte Anwendungen](https://technet.microsoft.com/library/dn592182.aspx).
 
+>[!IMPORTANT]
+>MAM CA darf nicht mit der zertifikatbasierten Authentifizierung von Azure Active Directory (Azure AD) verwendet werden. Es darf immer jeweils nur eine Authentifizierungsmethode konfiguriert werden.
+
+
+
 ### Weitere Informationen:
 [Allow only apps supported by Intune to access O365 services (Nur von Intune unterstützten Apps den Zugriff auf O365-Dienste erlauben)](allow-policy-managed-apps-access-to-o365.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

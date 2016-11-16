@@ -2,9 +2,10 @@
 title: "Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder Mac OS X-Gerät bei Intune registrieren? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: fd5ad37706bc4d7f780c5059bda5305335b4ff68
 
 
 ---
@@ -25,13 +26,13 @@ ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 Wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder Mac OS X-Gerät bei Intune registrieren, können Sie folgende Aufgaben mit der Unternehmensportal-App ausführen:
 
--   Zugreifen auf das Netzwerk des Unternehmens und auf E-Mail- sowie andere arbeitsbezogene Dateien
+-   Zugreifen auf das Netzwerk des Unternehmens und auf E-Mails sowie andere arbeitsbezogene Dateien
 
 -   Abrufen von Unternehmens-Apps aus dem Unternehmensportal
 
--   Remote-Zurücksetzen Ihres Smartphones auf die werkseitigen Standardeinstellungen bei Verlust oder Diebstahl
+-   Remote-Zurücksetzen Ihres Telefons auf die Werkseinstellungen bei Verlust oder Diebstahl
 
--   Automatisches Konfigurieren Ihres geschäftlichen E-Mail-Kontos
+-   Automatisches Einrichten Ihres Unternehmens-E-Mail-Kontos
 
 Wenn Sie Ihr Gerät bei Intune registrieren, gestatten Sie damit Ihrem IT-Administrator, Ihr Gerät zu verwalten, damit die Unternehmensinformationen auf dem Gerät geschützt werden.
 
@@ -95,6 +96,6 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -2,8 +2,8 @@
 title: "Sperren eines Geräts remote über die Unternehmensportalwebsite | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: b53e57b28cbf2de2e7820ffd38fc94ef05b994b6
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 31b3f4c556c27de7a1793bfe84a1d3eb12302424
 
 
 ---
 
 
-# Sperren eines Geräts remote über die Unternehmensportalwebsite
+# <a name="remotely-lock-a-device-from-the-company-portal-website"></a>Sperren eines Geräts remote über die Unternehmensportalwebsite
 
 Wenn Ihr Gerät verloren gegangen ist oder gestohlen wurde, können Sie das Gerät über die [Unternehmensportalwebsite](http://portal.manage.microsoft.com) mithilfe der Remotesperrfunktion sperren. Die Remotesperre funktioniert für die folgenden Gerätetypen:
 
@@ -64,6 +64,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

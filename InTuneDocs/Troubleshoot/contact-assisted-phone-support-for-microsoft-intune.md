@@ -1,8 +1,9 @@
 ---
 title: An den telefonischen Support wenden | Microsoft Intune
-description: 
+description: "Telefonnummern für den Intune-Support"
 keywords: 
-author: Nbigman
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,15 +14,15 @@ ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
+ms.sourcegitcommit: 3a081109cd499d3bdda75cb6c8a4dab9d9d28fab
+ms.openlocfilehash: 67eec76113deca2e3dabe74bff9cabfeb41fcbce
 
 
 ---
 
-# An den telefonischen Support für Microsoft Intune wenden
+# <a name="contact-assisted-phone-support-for-microsoft-intune"></a>An den telefonischen Support für Microsoft Intune wenden
 
-## Telefonnummern und Geschäftszeiten
+## <a name="phone-numbers-and-business-hours"></a>Telefonnummern und Geschäftszeiten
 
 |Land/Region|Erreichbarkeit des technischen Supports|Geschäftszeiten|Unterstützte Sprachen|Gebührenfreie Telefonnummern|Örtliche Telefonnummern|
 |------------------|---------------------------|------------------|-----------------------|---------------------------|-----------------------|
@@ -117,6 +118,6 @@ ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

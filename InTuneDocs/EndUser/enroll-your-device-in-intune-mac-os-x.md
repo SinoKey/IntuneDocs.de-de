@@ -2,8 +2,8 @@
 title: "Registrieren Ihres Mac OS X-Geräts bei Intune | Microsoft Intune"
 description: "Beschreibt, wie Sie ein Mac OS X-Gerät bei Intune registrieren."
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 4a682db8e949fa087fdffe945a758554c1bfb164
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: ab8292843c540842a93e97377db21109a7e9fa33
 
 
 ---
 
 
-# Registrieren Ihres Mac OS X-Geräts bei Intune
+# <a name="enroll-your-mac-os-x-device-in-intune"></a>Registrieren Ihres Mac OS X-Geräts bei Intune
 
 Wenn Sie Ihr Mac OS X-Gerät bei Intune registrieren, können Sie auf das Netzwerk des Unternehmens sowie auf Ihre Geschäfts-E-Mails und Arbeitsdateien zugreifen. Sie können darüber hinaus auch Unternehmens-Apps darauf installieren. Weitere Informationen, was geschieht, wenn Sie Ihr Gerät registrieren, finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
@@ -53,6 +53,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
