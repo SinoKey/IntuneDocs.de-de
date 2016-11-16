@@ -2,8 +2,8 @@
 title: Mehrstufige Authentifizierung mit Azure AD | Microsoft Intune
 description: "Anfordern der mehrstufigen Authentifizierung in Azure AD für die Geräteregistrierung."
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -19,7 +19,7 @@ ms.openlocfilehash: ccd55cc8637ebccfdbddd05c4f6b182c7923a2ab
 
 ---
 
-# Mehrstufige Authentifizierung für Microsoft Intune
+# <a name="multifactor-authentication-for-microsoft-intune"></a>Mehrstufige Authentifizierung für Microsoft Intune
 
 Intune integriert die mehrstufige Authentifizierung (MFA) von Azure AD, damit Sie Ihre Unternehmensressourcen über die Geräteregistrierung sichern können. MFA erfordert zusätzlich zu Benutzernamen und Kennwörtern weitere Authentifizierungsfaktoren, wie z.B eine Bestätigung per SMS. Dies wird für Geräte unter iOS, Android, Windows 8.1 oder höher und Windows Phone 8.1 oder höher unterstützt.
 
@@ -27,7 +27,7 @@ Intune integriert die mehrstufige Authentifizierung (MFA) von Azure AD, damit Si
 >
 > In älteren Versionen von Configuration Manager (vor Release 1610) wird in der Configuration Manager-Verwaltungskonsole noch immer die MFA-Einstellung angezeigt. MFA kann nicht über die Configuration Manager-Verwaltungskonsole konfiguriert werden. Konfigurieren Sie MFA wie in diesem Thema beschrieben.
 
-### Konfigurieren von Intune für das Anfordern der mehrstufigen Authentifizierung bei der Geräteregistrierung
+### <a name="configuring-intune-to-require-multifactor-authentication-at-device-enrollment"></a>Konfigurieren von Intune für das Anfordern der mehrstufigen Authentifizierung bei der Geräteregistrierung
 Um MFA bei der Registrierung des Geräts anzufordern, gehen Sie folgendermaßen vor:
 
 1. Melden Sie sich mit Ihren Administratoranmeldeinformationen beim [Microsoft Azure-Portal](https://manage.windowsazure.com) an.

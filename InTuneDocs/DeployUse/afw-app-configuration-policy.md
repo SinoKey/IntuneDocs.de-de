@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,7 +20,10 @@ ms.openlocfilehash: a986e859e38e0936f53c57a75872dc86de3ee181
 
 ---
 
-# Konfigurieren von Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune
+# <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Konfigurieren von Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 Verwenden Sie Konfigurationsrichtlinien für mobile Apps in Microsoft Intune, um Einstellungen anzugeben, die beim Ausführen einer App durch Benutzer erforderlich sind. Beispielsweise kann eine App vom Benutzer Folgendes anfordern:
 
 -   Eine benutzerdefinierte Portnummer
@@ -37,7 +40,7 @@ Damit Richtlinien für die App-Konfiguration verwendet werden können, muss der 
 
 Die Richtlinie für die App-Konfiguration stellen Sie für die Benutzer bereit, für die Sie die App bereitgestellt haben, die Sie konfigurieren möchten. Die Richtlinieneinstellungen werden immer dann verwendet, wenn die App ausgeführt wird.
 
-## Konfigurieren einer Konfigurationsrichtlinie für mobile Apps
+## <a name="configure-a-mobile-app-configuration-policy"></a>Konfigurieren einer Konfigurationsrichtlinie für mobile Apps
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Richtlinie** &gt; **Übersicht** &gt; **Richtlinie hinzufügen**.
 
@@ -61,7 +64,7 @@ Die Richtlinie für die App-Konfiguration stellen Sie für die Benutzer bereit, 
 Die neue Richtlinie wird im Knoten **Konfigurationsrichtlinien** angezeigt.
 
 
-## Bereitstellen der Richtlinie für die App-Konfiguration
+## <a name="deploy-the-app-configuration-policy"></a>Bereitstellen der Richtlinie für die App-Konfiguration
 Nachdem Sie die Richtlinie zur Konfiguration mobiler Apps erstellt haben, müssen Sie sie für die Benutzer bereitstellen, für die Sie die App bereitstellen, für die die Einstellungen gelten.
 
 Informationen zum Bereitstellen von Richtlinien finden Sie unter [Bereitstellen einer Konfigurationsrichtlinie](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy).
@@ -72,10 +75,6 @@ Wenn die bereitgestellte App auf einem Gerät gestartet wird, wird sie mit den E
 
 > [!TIP]
 > Stellen Sie für jede App nur eine App-Konfigurationsrichtlinie für einen Benutzer bereit.
-
-
-
-
 
 
 

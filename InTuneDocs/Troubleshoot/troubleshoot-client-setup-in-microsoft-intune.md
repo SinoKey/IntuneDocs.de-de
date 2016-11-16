@@ -2,7 +2,8 @@
 title: Behandlung von Problemen bei der Clienteinrichtung | Microsoft Intune
 description: Problembehandlung bei allgemeinen Problemen bei der Clienteinrichtung.
 keywords: 
-author: Nbigman
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 3f7e5752780d7159ce3081ec7a194f4e81e4cd16
+ms.sourcegitcommit: 889a13bd50943b9cdf0f40d50b6f8ce263dde56d
+ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
 
 
 ---
 
-# Behandlung von Problemen bei der Clienteinrichtung in Microsoft Intune
+# <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Behandlung von Problemen bei der Clienteinrichtung in Microsoft Intune
 Die folgenden Abschnitte enthalten Informationen zu gängigen Problemen bei der Clienteinrichtung. Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) weitere Möglichkeiten, Hilfe zu erhalten.
 
-## Fehler bei Clientinstallation
+## <a name="client-installation-fails"></a>Fehler bei Clientinstallation
 
 -   Wenn in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) für den Computer keine Warnungen zur Softwarebereitstellung angezeigt werden, überprüfen Sie Internetverbindung und Proxykonfiguration des Computers und stellen Sie sicher, dass der Computer mit der Dienst-URL [https://manage.microsoft.com](https://manage.microsoft.com/) kommunizieren kann. Wiederholen Sie anschließend die Installation der Clientsoftware.
 
@@ -48,14 +49,14 @@ Die folgenden Abschnitte enthalten Informationen zu gängigen Problemen bei der 
 
     -   **Schweregrad** : Gibt den Schweregrad der Warnung an
 
-## Computerregistrierungspaket lässt sich nicht herunterladen
+## <a name="computer-enrollment-package-doesnt-download"></a>Computerregistrierungspaket lässt sich nicht herunterladen
 **Problem:** Beim Versuch, einen Computer zu registrieren, geschieht Folgendes:
 -  Das Registrierungspaket lässt sich nicht herunterladen.
 -  Das Dialogfeld zum Herunterladen wird angezeigt, aber ein Timeout tritt auf.
 
 **Lösung:** Stellen Sie sicher, dass in dem Browser, den Sie für den Download verwenden, für den Zeitraum, in dem der Download erfolgt, Downloads aktiviert sind, und dass verschlüsselte Dateien auf Ihrem lokalen Datenträger gespeichert werden können.
 
-## Clientinstallation reagiert nicht mehr – Fehlercode 0x80040154
+## <a name="client-installation-hangs-with-error-code-0x80040154"></a>Clientinstallation reagiert nicht mehr – Fehlercode 0x80040154
 **Problem:**
 
 -  Clientinstallation reagiert bei Registrierung nicht mehr
@@ -69,10 +70,10 @@ Das Fehlen kritischer Softwareupdates auf dem PC kommt als Ursache infrage.
 **Lösung:** Stellen Sie sicher, dass Ihre Softwareupdaterichtlinie die Installation wichtiger Updates ermöglicht, wie in [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) (Windows-PCs mit Softwareupdates in Microsoft Intune auf aktuellem Stand halten) beschrieben.
 
 
-## Fehler in „policyplatform.log“ im Zusammenhang mit der Microsoft Intune-Richtlinie
+## <a name="microsoft-intune-policyrelated-errors-in-policyplatformlog"></a>Fehler in „policyplatform.log“ im Zusammenhang mit der Microsoft Intune-Richtlinie
 Bei Windows-Geräten ohne MDM können Richtlinienfehler in der Datei „policyplatform.log“ das Ergebnis nicht standardmäßiger Einstellungen in der Windows-Benutzerkontensteuerung (UAC) auf dem Gerät sein. Einige nicht standardmäßige UAC-Einstellungen können Microsoft Intune-Clientinstallationen und Richtlinienausführungen beeinträchtigen.
 
-### So beheben Sie UAC-Probleme
+### <a name="to-resolve-uac-issues"></a>So beheben Sie UAC-Probleme
 
 1.  Koppeln Sie den Computer ab, wie unter [Retire data and devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management) (Abkoppeln von Daten und Geräten in der Microsoft Intune-Verwaltung) beschrieben.
 
@@ -85,17 +86,17 @@ Bei Windows-Geräten ohne MDM können Richtlinienfehler in der Datei „policypl
 
 4.  Verschieben Sie den Schieberegler für Benachrichtigungen auf die Standardeinstellung.
 
-## Vorgehensweise, wenn sich der Client nicht in der Microsoft Intune-Administratorkonsole deinstallieren lässt
+## <a name="what-to-do-if-the-client-will-not-uninstall-from-the-microsoft-intune-administrator-console"></a>Vorgehensweise, wenn sich der Client nicht in der Microsoft Intune-Administratorkonsole deinstallieren lässt
 
-### So entfernen Sie die Clientsoftware unter Verwendung des Microsoft Intune-Befehlszeilentools
+### <a name="to-remove-the-client-software-by-using-the-microsoft-intune-command-line-tool"></a>So entfernen Sie die Clientsoftware unter Verwendung des Microsoft Intune-Befehlszeilentools
 
 1.  Öffnen Sie eine Eingabeaufforderung im Administratormodus.
 
 2.  Navigieren Sie zum Ordner *%programfiles%\Microsoft\OnlineManagement\Common*.
 
-3.  Folgenden Befehl ausführen ``ProvisioningUtil.exe /UninstallAgents /MicrosoftIntune``
+3.  Führen Sie den folgenden Befehl aus: ``ProvisioningUtil.exe /UninstallAgents /MicrosoftIntune``
 
-## Fehlercodes bei der Clientinstallation
+## <a name="client-installation-error-codes"></a>Fehlercodes bei der Clientinstallation
 In der folgenden Tabelle werden Fehlercodes erläutert, die in **Warnungen** angezeigt werden, wenn die Installation der Clientsoftware fehlschlägt. Gleichzeitig werden Vorschläge zur Behebung der Probleme vorgestellt, für die die Fehlercodes stehen.
 
 |Fehlercode|Mögliches Problem|Lösungsvorschlag|
@@ -116,16 +117,16 @@ In der folgenden Tabelle werden Fehlercodes erläutert, die in **Warnungen** ang
 |**0x80043008**|Der Dienst „Updates für Microsoft Online Management“ konnte nicht gestartet werden.|Wenden Sie sich dazu an den Microsoft Support, wie unter [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben.|
 |**0x80043009**|Der Clientcomputer ist bereits für den Dienst registriert.|Sie müssen den Clientcomputer abkoppeln, bevor sie ihn erneut für den Dienst registrieren können. Anweisungen finden Sie unter [Abkoppeln von Geräten in der Microsoft Intune-Verwaltung](/intune/deploy-use/retire-devices-from-microsoft-intune-management).|
 |**0x8004300B**|Das Installationspaket für die Clientsoftware kann nicht ausgeführt werden, da die Windows-Version auf dem Client nicht unterstützt wird.|Die auf dem Client ausgeführte Windows-Version wird von Intune nicht unterstützt. Eine Liste der unterstützten Betriebssysteme finden Sie unter [Network infrastructure requirements for Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune) (Anforderungen an die Netzwerkinfrastruktur für Microsoft Intune).|
-|**0xAB2**|Fehler beim Zugriff auf die VBScript-Laufzeit für die benutzerdefinierte Aktion.|Dieser Fehler wird von einer benutzerdefinierten Aktion verursacht, die auf DLLs (Dynamic-Link Libraries) aufbaut. Um den DLL-Fehler zu ermitteln, benötigen Sie möglicherweise die Tools, die im Artikel 198038 der [Microsoft Support-KB: Hilfreiche Tools bei Problemen mit der Paketerstellung und Weitergabe](http://go.microsoft.com/fwlink/?LinkID=234255)erläutert werden.|
+|**0xAB2**|Fehler beim Zugriff auf die VBScript-Laufzeit für die benutzerdefinierte Aktion.|Dieser Fehler wird von einer benutzerdefinierten Aktion verursacht, die auf DLLs (Dynamic-Link Libraries) aufbaut. Um den DLL-Fehler zu ermitteln, benötigen Sie möglicherweise die Tools, die im Artikel 198038 der [Microsoft Support-KB: Hilfreiche Tools bei Problemen mit der Paketerstellung und Weitergabe](http://go.microsoft.com/fwlink/?LinkID=234255) erläutert werden.|
 |**0x8004300f**|Die Software kann nicht installiert werden, da der System Center Configuration Manager-Client bereits installiert ist.|Entfernen Sie den Configuration Manager-Client, und wiederholen Sie dann die Installation der Clientsoftware.|
 |**0x80043010**|Die Software kann nicht installiert werden, da der OMADM-Client (Open Mobile Alliance Device Management) bereits installiert ist.|Heben Sie die Registrierung des OMADM-Clients auf, und wiederholen Sie dann die Installation der Clientsoftware.|
 Wenn weiterhin Installationsprobleme auftreten, wenden Sie sich wie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Support. Halten Sie das Registrierungsprotokoll des Clientcomputers (dieses befindet sich unter %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log und %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) und das Windows Update-Protokoll (%*windir*%\windowsupdate.log) für die Supportmitarbeiter bereit.
 
-### Nächste Schritte
+### <a name="next-steps"></a>Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

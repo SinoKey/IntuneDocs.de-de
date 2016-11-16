@@ -2,9 +2,10 @@
 title: "Ihr Gerät weist nicht den mindestens erforderlichen Sicherheitspatch auf | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +13,8 @@ ms.technology:
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: ee858ef820cb78e05078b24fff023f29134b1dcf
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: 8569d99d7f79b0a27f31aec33f364d30499c6520
 
 
 ---
@@ -22,7 +23,7 @@ ms.openlocfilehash: ee858ef820cb78e05078b24fff023f29134b1dcf
 
 Wenn Sie die Meldung „Minimum Android security patch level is not configured“ (Niedrigste zulässige Android-Sicherheitspatchebene ist nicht konfiguriert) sehen, müssen Sie den mindestens erforderlichen Sicherheitspatch oder eine höhere Version installieren. Ihr IT-Administrator verlangt diese Installation, um die Unternehmensdaten auf Ihrem Android-Gerät zu schützen.
 
-Der Speicherort der aktuellen Sicherheitspatchebene kann je nach Android-Gerät variieren. Sie müssen herausfinden, ob es sich bei Ihrem Gerät um ein Samsung Knox-Gerät oder einen anderen Typ von Android-Gerät handelt. Wechseln Sie zu **Einstellungen** > **About phone** (Info zu Gerät), um zu ermitteln, ob es sich bei Ihrem Gerät um ein Samsung Knox-Gerät handelt. Wird das Wort „Knox“ dort nicht aufgelistet, verfügen Sie nicht über ein Samsung Knox-Gerät.
+Der Speicherort der aktuellen Sicherheitspatchebene variiert je nach Android-Gerät. Sie müssen herausfinden, ob es sich bei Ihrem Gerät um ein Samsung Knox-Gerät oder einen anderen Typ von Android-Gerät handelt. Wechseln Sie zu **Einstellungen** > **Geräteinformationen**, um zu überprüfen, ob es sich bei Ihrem Gerät um ein Samsung Knox-Gerät handelt. Wird das Wort „Knox“ dort nicht aufgelistet, verfügen Sie nicht über ein Samsung Knox-Gerät.
 
 **So ermitteln Sie die neueste Softwareversion auf Ihrem Gerät:**
 
@@ -40,8 +41,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

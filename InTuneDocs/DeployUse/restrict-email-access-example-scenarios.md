@@ -3,8 +3,9 @@ title: "Beispielszenarien für die Beschränkung des E-Mail-Zugriffs | Microsoft
 description: "Einige Beispielszenarien und wie sie mit bedingtem Zugriff implementiert werden könnten."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +14,16 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 6b4751a67414a0b8a16886070b323a0296eeb829
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 6c1a1c90b442eac039f93103264059ea415b43ff
 
 
 ---
 
-# Beschränken des E-Mail-Zugriffs mit Microsoft Intune: Beispielszenarien
+# <a name="restrict-access-to-email-with-microsoft-intune-example-scenarios"></a>Beschränken des E-Mail-Zugriffs mit Microsoft Intune: Beispielszenarien
 
-## Blockieren des Zugriffs auf Exchange Online durch Benutzer nicht kompatibler Geräte
-### Anforderungen für das Szenario
+## <a name="block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>Blockieren des Zugriffs auf Exchange Online durch Benutzer nicht kompatibler Geräte
+### <a name="scenario-requirements"></a>Anforderungen für das Szenario
 - Der Zugriff auf Exchange Online muss für alle Benutzer in der Active Directory-Sicherheitsgruppe **Accounting** blockiert werden, wenn das verwendete Gerät einer von Ihnen bereitgestellten Kompatibilitätsrichtlinie nicht entspricht.
 - Wenn in dieser Gruppe Benutzer vorhanden sind, deren Geräte von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] nicht unterstützt werden, muss der Zugriff auf Exchange Online über diese Geräte blockiert werden.
 - Benutzer in der Active Directory-Sicherheitsgruppe **Finance** müssen von der Richtlinie ausgenommen werden, auch wenn sie sich ebenfalls in der Sicherheitsgruppe **Accounting** befinden.
@@ -42,8 +43,8 @@ Der folgende Ablauf wird verwendet, um zu entscheiden, welche Geräte auf Exchan
 
 ![Ablauf für Gerätezugriff](./media/ConditionalAccess8-5.png)
 
-## Alle iOS-Geräte, die auf lokales Exchange zugreifen, müssen von Intune verwaltet werden
-### Anforderungen für das Szenario
+## <a name="all-ios-devices-that-access-exchange-onpremises-must-be-managed-by-intune"></a>Alle iOS-Geräte, die auf lokales Exchange zugreifen, müssen von Intune verwaltet werden
+### <a name="scenario-requirements"></a>Anforderungen für das Szenario
 - Nur Geräten, auf denen iOS ausgeführt wird, sollte Zugriff auf lokales Exchange gewährt werden.
 - Die Geräte müssen auch bei Intune registriert sein und die Regeln der Kompatibilitätsrichtlinie erfüllen, bevor sie für den Zugriff auf Exchange verwendet werden können.
 
@@ -61,8 +62,8 @@ Der folgende Ablauf wird verwendet, um zu entscheiden, welche Geräte auf Exchan
 
 ![Ablauf für Gerätezugriff](./media/ConditionalAccess8-3.png)
 
-## Kein Android-Gerät darf auf lokales Exchange zugreifen
-### Anforderungen für das Szenario
+## <a name="no-android-devices-can-access-exchange-onpremises"></a>Kein Android-Gerät darf auf lokales Exchange zugreifen
+### <a name="scenario-requirements"></a>Anforderungen für das Szenario
 - Der Zugriff auf Exchange soll für alle Android-Geräte blockiert werden.
 - Alle anderen unterstützten Geräte können auf Exchange zugreifen, solange sie von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] verwaltet werden.
 
@@ -81,6 +82,6 @@ Der folgende Ablauf wird verwendet, um zu entscheiden, welche Geräte auf Exchan
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

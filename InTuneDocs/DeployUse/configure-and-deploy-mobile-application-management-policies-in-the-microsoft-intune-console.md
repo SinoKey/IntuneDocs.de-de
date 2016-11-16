@@ -14,13 +14,13 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
 
 
 ---
 
-# Konfigurieren und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen in der Microsoft Intune-Konsole
+# <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Konfigurieren und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen in der Microsoft Intune-Konsole
 Verwaltungsrichtlinien für mobile Anwendungen (MAM) in Microsoft Intune ermöglichen Ihnen das Ändern der Funktionalität von Apps, die Sie bereitstellen, um sie auf die Kompatibilitäts- und Sicherheitsrichtlinien Ihres Unternehmens abzustimmen. Sie können z. B. Ausschneide-, Kopier- und Einfügevorgänge innerhalb einer verwalteten App einschränken oder eine App so konfigurieren, dass alle Weblinks innerhalb des Managed Browser geöffnet werden.
 
 Unterstützung der Verwaltungsrichtlinien für mobile Anwendungen:
@@ -59,7 +59,7 @@ Beispiel für die Verwendung der Outlook-App:
 > [!TIP]
 > Wenn Sie Intune mit Configuration Manager verwenden, finden Sie Informationen unter [Steuern von Apps mithilfe von Verwaltungsrichtlinien für mobile Anwendungen in Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
 
-## Erstellen und Bereitstellen einer App mit einer Verwaltungsrichtlinie für mobile Anwendungen
+## <a name="create-and-deploy-an-app-with-a-mobile-application-management-policy"></a>Erstellen und Bereitstellen einer App mit einer Verwaltungsrichtlinie für mobile Anwendungen
 
 -   **Schritt 1:** Rufen Sie den Link zu einer richtlinienverwalteten App ab, und erstellen Sie eine umschlossene App, oder verwenden Sie das Intune App SDK, um eine für MAM aktivierte App zu erstellen.
 
@@ -71,15 +71,15 @@ Beispiel für die Verwendung der Outlook-App:
 
 -   **Schritt 5:** Überwachen Sie die App-Bereitstellung.
 
-## Schritt 1: Rufen Sie den Link zu einer richtlinienverwalteten App ab, und erstellen Sie eine umschlossene App, oder verwenden Sie das Intune App-SDK, um eine für MAM aktivierte App zu erstellen.
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>Schritt 1: Rufen Sie den Link zu einer richtlinienverwalteten App ab, und erstellen Sie eine umschlossene App, oder verwenden Sie das Intune App-SDK, um eine für MAM aktivierte App zu erstellen.
 
 Suchen Sie im App Store die URL der richtlinienverwalteten App, die Sie bereitstellen möchten, und notieren Sie sie. Die URL der Microsoft Word für iPad-App lautet beispielsweise **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 
-## Schritt 2: Veröffentlichen Sie die App in Ihrem Cloudspeicher.
+## <a name="step-2-publish-the-app-to-your-cloud-storage-space"></a>Schritt 2: Veröffentlichen Sie die App in Ihrem Cloudspeicher.
 Beim Veröffentlichen einer verwalteten App unterscheiden sich die Verfahren abhängig davon, ob Sie eine richtlinienverwaltete App veröffentlichen oder eine App, die mit dem Microsoft Intune App Wrapping Tool für iOS verarbeitet wurde.
 
-#### So veröffentlichen Sie eine richtlinienverwaltete App
+#### <a name="to-publish-a-policy-managed-app"></a>So veröffentlichen Sie eine richtlinienverwaltete App
 
 1.  Wenn Sie bereit für den Upload der App in Ihren Cloudspeicher sind, führen Sie die Schritte unter [Hinzufügen von Apps für mobile Geräte in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) aus.
 
@@ -93,7 +93,7 @@ Nach Abschluss des Uploads wird **Ja** für die **App-Verwaltungsrichtlinien** a
 
 Nachdem Sie überprüft haben, dass die Anwendung erfolgreich hochgeladen wurde, fahren Sie mit Schritt 3 fort.
 
-#### So veröffentlichen Sie eine App, die mit dem Microsoft Intune App Wrapping Tool verarbeitet wurde
+#### <a name="to-publish-an-app-that-was-processed-through-the-microsoft-intune-app-wrapping-tool"></a>So veröffentlichen Sie eine App, die mit dem Microsoft Intune App Wrapping Tool verarbeitet wurde
 
 1.  Wenn Sie bereit für den Upload der App in Ihren Cloudspeicher sind, führen Sie die Schritte unter [Hinzufügen von Apps für mobile Geräte in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) aus.
 
@@ -105,7 +105,7 @@ Nach Abschluss des Uploads wird **Ja** für die **App-Verwaltungsrichtlinien** a
 
 Nachdem Sie überprüft haben, dass die Anwendung erfolgreich hochgeladen wurde, fahren Sie mit Schritt 3 fort.
 
-## Schritt 3: Erstellen einer Verwaltungsrichtlinie für mobile Anwendungen
+## <a name="step-3-create-a-mobile-application-management-policy"></a>Schritt 3: Erstellen einer Verwaltungsrichtlinie für mobile Anwendungen
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Richtlinie** &gt; **Übersicht** &gt; **Richtlinie hinzufügen**.
 
@@ -127,7 +127,7 @@ Nachdem Sie überprüft haben, dass die Anwendung erfolgreich hochgeladen wurde,
     |**Verhindern von Android-Sicherungen** oder **Verhindern von iTunes- und iCloud-Sicherungen**|Diese Einstellung deaktiviert die Sicherung von Informationen aus der App.|
     |**App Übertragung von Daten an andere Apps erlauben**|Diese Einstellung gibt die Apps an, denen diese App Daten senden kann. Sie können auswählen, die Datenübertragung an eine beliebige App nicht zu erlauben, nur die Übertragung an andere verwaltete Apps zu erlauben oder die Übertragung an beliebige Apps zuzulassen. <br /><br />Wenn Sie beispielsweise Datenübertragungen nicht zulassen, schränken Sie die Datenübertragung an Dienste wie SMS-Messaging, das Zuweisen von Bildern zu Kontakten und das Posten von Beiträgen in Facebook oder Twitter ein.<br /><br />Um für iOS-Geräte den Austausch von Dokumenten zwischen verwalteten und nicht verwalteten Apps zu verhindern, müssen Sie eine Sicherheitsrichtlinie für mobile Geräte konfigurieren und bereitstellen, die die Einstellung **Verwaltete Dokumente in anderen nicht verwalteten Apps zulassen**deaktiviert. Bei Zulassung der Übertragung nur auf andere verwaltete Apps werden die Intune PDF- und Image-Viewer (sofern bereitgestellt) verwendet, um den Inhalt der jeweiligen Typen zu öffnen.<br /><br />Wenn Sie diese Option auf **Richtlinienverwaltete Apps** oder **Keine** festlegen, wird zudem das iOS 9-Feature blockiert, das der Spotlight-Suche erlaubt, Daten in Apps zu suchen.<br><br>Diese Einstellung steuert nicht die Verwendung des Features „Öffnen in“ auf mobilen Geräten. Informationen zum Verwalten von „Öffnen in“ finden Sie unter [Verwalten der Datenübertragung zwischen iOS-Apps mit Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).|
     |**App Empfang von Daten aus anderen Apps erlauben**|Diese Einstellung gibt die Apps an, von denen diese App Daten empfangen kann. Sie können auswählen, die Datenübertragung aus einer beliebigen App nicht zu erlauben, nur die Übertragung aus anderen verwalteten Apps zu erlauben oder die Übertragung aus beliebigen Apps zuzulassen.<br /><br />Wenn ein Benutzer mit einem registrierten Gerät mit angewendeter Verwaltungsrichtlinie für mobile Anwendungen auf Daten aus einer App zugreift, die nicht durch eine Verwaltungsrichtlinie für mobile Anwendungen verwaltet wird, werden die Daten wie Unternehmensdaten behandelt und durch die Richtlinie geschützt. Dies gilt für iOS-Apps, die mehrere Identitäten unterstützen (wobei Intune Verwaltungseinstellungen nur auf Unternehmenskonten oder Daten in der App anwendet). Oder dies gilt für ein registriertes Gerät, auf das eine Richtlinie für die mobile Anwendungsverwaltung angewendet wird.|
-    |**„Speichern unter“ verhindern**|Diese Einstellung deaktiviert die Verwendung der Option **Speichern unter** zum Speichern von Daten an persönlichen Cloudspeicherorten (z. B. OneDrive oder Dropbox) in einer beliebigen App, die dieser Richtlinie unterliegt.|
+    |**"Speichern unter" verhindern**|Diese Einstellung deaktiviert die Verwendung der Option **Speichern unter** zum Speichern von Daten an persönlichen Cloudspeicherorten (z. B. OneDrive oder Dropbox) in einer beliebigen App, die dieser Richtlinie unterliegt.|
     |**Beschränken von Ausschneiden, Kopieren und Einfügen mit anderen Apps**|Diese Einstellung gibt an, wie Ausschneiden, Kopieren und Einfügen mit der App verwendet werden kann. Wählen Sie aus:<br /><br />**Blockiert**. Ausschneiden, Kopieren und Einfügen zwischen dieser App und anderen Apps nicht zulassen.<br /><br />**Richtlinienverwaltete Apps**. Nur Ausschneiden, Kopieren und Einfügen zwischen dieser App und anderen verwalteten Apps zulassen.<br /><br />**Richtlinienverwaltete Apps mit Einfügen**. Ermöglicht das Einfügen von aus dieser App ausgeschnittenen oder kopierten Daten nur in andere verwaltete Apps. Einfügen der aus beliebigen Apps ausgeschnittenen oder kopierten Daten in diese App zulassen.<br /><br />**Jede App**. Keine Einschränkungen beim Ausschneiden, Kopieren und Einfügen in oder aus dieser App.<br /><br />Zum Kopieren und Einfügen von Daten zwischen verwalteten Apps muss für beide Apps entweder die Einstellung **Richtlinienverwaltete Apps** oder **Richtlinienverwaltete Apps mit Einfügen** konfiguriert werden.|
     |**Einfache PIN für Zugriff erforderlich**|Für diese Einstellung muss der Benutzer eine PIN-Nummer eingeben, um die App zu verwenden. Benutzer werden aufgefordert, diese beim ersten Ausführen der App zu erstellen.|
     |**Anzahl der Versuche vor dem Zurücksetzen der PIN**|Geben Sie die Anzahl der möglichen PIN-Eingabeversuche, bevor der Benutzer die PIN zurücksetzen muss.|
@@ -142,7 +142,7 @@ Nachdem Sie überprüft haben, dass die Anwendung erfolgreich hochgeladen wurde,
 
 Die neue Richtlinie wird im Knoten **Konfigurationsrichtlinien** des Arbeitsbereichs **Richtlinie** angezeigt.
 
-## Schritt 4: Verknüpfen Sie die App mit einer Verwaltungsrichtlinie für mobile Anwendungen, und stellen Sie dann die App bereit.
+## <a name="step-4-associate-the-app-with-a-mobile-application-management-policy-and-then-deploy-the-app"></a>Schritt 4: Verknüpfen Sie die App mit einer Verwaltungsrichtlinie für mobile Anwendungen, und stellen Sie dann die App bereit.
 Stellen Sie sicher, dass Sie die Verwaltungsrichtlinie für mobile Anwendungen auf der Seite **Mobile App-Verwaltung** des Dialogfelds **Bereitstellung verwalten** verwenden, um die App mit der Richtlinie zu verknüpfen.
 
 Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps.md).
@@ -150,7 +150,7 @@ Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intu
 > [!IMPORTANT]
 > Wenn das Gerät von Intune abgemeldet wird, werden die Richtlinien nicht aus den Apps entfernt. Alle Apps, auf die Richtlinien angewendet wurden, behalten die Richtlinieneinstellungen bei, wenn die App deinstalliert und neu installiert wurde.
 
-### Maßnahmen, wenn eine App bereits auf Geräten bereitgestellt wurde
+### <a name="what-to-do-when-an-app-is-already-deployed-on-devices"></a>Maßnahmen, wenn eine App bereits auf Geräten bereitgestellt wurde
 Es kann die Situation eintreten, dass Sie eine App bereitstellen und von einem der Benutzer oder auf einem der Geräte bereits eine nicht verwaltete Version der App installiert wurde. Beispiel: Ein Benutzer hat Microsoft Word über den App Store installiert.
 
 In diesem Fall müssen Sie den Benutzer bitten, die nicht verwaltete Version manuell zu deinstallieren, damit die von Ihnen konfigurierte verwaltete Version installiert werden kann.
@@ -160,10 +160,10 @@ Bei Geräten unter iOS 9 und höher wird der Benutzer automatisch um die Genehmi
 > [!TIP]
 > Wenn sich das Gerät im überwachten Modus befindet, übernimmt Intune die Verwaltung der vorhandenen App, ohne den Benutzer vorher um Genehmigung zu bitten.
 
-## Schritt 5: Überwachen der App-Bereitstellung
+## <a name="step-5-monitor-the-app-deployment"></a>Schritt 5: Überwachen der App-Bereitstellung
 Nachdem Sie eine mit einer Verwaltungsrichtlinie für mobile Anwendungen verknüpfte App erstellt und bereitgestellt haben, verwenden Sie das folgende Verfahren, um die App zu überwachen und alle Richtlinienkonflikte zu lösen.
 
-#### Anzeigen des Status der Bereitstellung
+#### <a name="to-view-the-status-of-the-deployment"></a>Anzeigen des Status der Bereitstellung
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Gruppen** &gt; **Übersicht**.
 
@@ -181,7 +181,7 @@ Nachdem Sie eine mit einer Verwaltungsrichtlinie für mobile Anwendungen verknü
 
 6.  Nachdem Sie einen Konflikt ermittelt haben, können Sie in Konflikt stehende Richtlinieneinstellungen überarbeiten, sodass sie die dieselbe Einstellung verwenden, oder nur eine Richtlinie für die App und die Benutzer bereitstellen.
 
-### Wie Richtlinienkonflikte gelöst werden
+### <a name="how-policy-conflicts-are-resolved"></a>Wie Richtlinienkonflikte gelöst werden
 Wenn bei einer Verwaltungsrichtlinie für mobile Anwendungen bei der ersten Bereitstellung für den Benutzer oder das Gerät ein Konflikt auftritt, wird der jeweilige in Konflikt stehende Einstellungswert aus der Richtlinie für die App entfernt. Die App verwendet einen vorgegebenen Konfliktwert.
 
 Wenn bei einer späteren Bereitstellung ein Konflikt in der Verwaltungsrichtlinie für mobile Anwendungen für den Benutzer oder das Gerät auftritt, wird der jeweilige in Konflikt stehende Einstellungswert nicht in der Richtlinie für die App aktualisiert. Die App verwendet den vorhandenen Wert für diese Einstellung.
@@ -194,6 +194,6 @@ In Fällen, in denen das Gerät oder der Benutzer zwei in Konflikt stehende Rich
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

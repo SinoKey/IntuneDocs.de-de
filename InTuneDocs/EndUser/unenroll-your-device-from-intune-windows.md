@@ -3,6 +3,7 @@ title: "Aufheben der Registrierung Ihres Windows-Geräts bei Intune | Microsoft 
 description: "Beschreibt das Aufheben der Registrierung eines Windows-Geräts bei Intune."
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 93374a2098447a11b164ae3fb5d7b1b3d4824806
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
 
 
 ---
@@ -44,11 +45,11 @@ Klicken Sie zum Aufheben der Registrierung Ihres Geräts im Abschnitt „Inhalt 
 
 1.  Navigieren Sie zu **PC-Einstellungen** &gt; **Netzwerk** &gt; **Arbeitsplatz**.
 
-2.  Tippen Sie unter **Arbeitsplatzbeitritt** auf **Verlassen**.
+2.  Wählen Sie unter **Arbeitsplatzeinbindung** **Leave** (Verlassen) aus.
 
-3.  Tippen Sie unter **Geräteverwaltung aktivieren** auf **Deaktivieren**.
+3.  Wählen Sie unter **Turn on device management** (Geräteverwaltung aktivieren) **Turn off** (Deaktivieren) aus.
 
-4.  Tippen Sie im sich öffnenden Popupfenster auf **Deaktivieren**.
+4.  Wählen Sie im sich öffnenden Popupfenster **Turn off** (Deaktivieren) aus.
 
 ## Aufheben der Registrierung Ihres Windows Phone 8.1-Geräts
 
@@ -64,7 +65,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

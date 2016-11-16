@@ -3,8 +3,9 @@ title: Projektumfang | Microsoft Intune
 description: "Empfehlungen für die Projektumfangphase einer Intune-Bereitstellung."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: 14c65bdef3c9663c81ac9ecc00b662845f3209e5
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 500d97e79471ce78434729457bc4c6b82e23aa1e
 
 
 ---
@@ -69,7 +70,7 @@ Der Großteil des Aufwands während der Phase zum Festlegen des Projektumfangs d
 ### Helpdesk
 Damit Wissensarbeiter von einer produktiven Intune-Umgebung profitieren, sollte der Helpdesk gut vorbereitet sein. Berücksichtigen Sie beim Definieren des Projektumfangs die Rolle des Helpdesks in den einzelnen Phasen sowie die Ressourcen, die erforderlich sind, um die Unterstützung von Endbenutzern durch den Helpdesk zu gewährleisten.
 
-### Sensibilisierung
+### Informationsbedarf
 Eine klar definierte Sensibilisierungskampagne ist entscheidend, um Änderungen und eine anhaltende Akzeptanz herbeizuführen. Berücksichtigen Sie beim Definieren des Projektumfangs Ihre Zielgruppen für die einzelnen Phasen, und legen Sie die jeweils erforderliche Kommunikation fest. Identifizieren Sie zunächst Ressourcen aus Ihren Marketing- und Kommunikationsteams sowie das mögliche Budget für die Umsetzung des Plans.
 
 ### Training
@@ -93,7 +94,7 @@ Hier finden Sie eine Liste von Schritten für den Einstieg in die Phase zum **Fe
 
 -   Holen Sie sich die Genehmigung für den Plan von den wichtigsten Stakeholdern ein.
 
-## Gängige Probleme
+## Gängige Herausforderungen
 Hier sind einige Probleme aufgeführt, die möglicherweise während der Phase zum **Festlegen des Projektumfangs** auftreten können.
 
 -   **Problem:** Einsatzbereitschaft im Unternehmen und Benutzerfreundlichkeit werden zu spät bedacht oder im anfänglichen Projektumfang nicht berücksichtigt. Das Unternehmen führt zuerst die Bereitstellung durch, und wartet dann ab, was passiert. Dieser Ansatz führt zu geringer Nutzung und Akzeptanz.
@@ -113,6 +114,6 @@ Hier sind einige Probleme aufgeführt, die möglicherweise während der Phase zu
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

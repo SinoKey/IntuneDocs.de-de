@@ -3,8 +3,9 @@ title: Vorherige Versionen | Microsoft Intune
 description: 
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,77 +14,156 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffbb26f30c7801789a47d57ffed00696f5e6d81a
-ms.openlocfilehash: 11e90ce994d17d9dcc62edba775dd0ab8110414e
+ms.sourcegitcommit: 1360a23647d6e66ba682548ad2b158bb9047265d
+ms.openlocfilehash: ec1b118b2c7681f351d83f469b8c32e95f8fa71f
 
 
 ---
 
 # Vorherige Versionen von Intune
+
+## September 2016
+### Neue Funktionen, Ankündigungen und Informationen
+* [Bedingter Zugriff für Windows](#windows-conditional-access)
+* [iOS 10-Unterstützung](#ios-10-support)
+* [Das App Wrapping-Tool unterstützt MAM ohne Geräteregistrierung für Android und iOS](#app-wrapping-tool-supports-mam-without-device-enrollment-for-android-and-ios)
+* [Die Umstellung von Intune-Gruppen auf Azure Active Directory beginnt im September](#intune-groups-begin-transitioning-to-azure-active-directory-in-september)
+* [Lookout-Integration zum Schutz von Android-Geräten](#lookout-integration-to-protect-android-devices)
+* [Unternehmensportal-Updates für Android, iOS und Windows](#company-portal-updates)
+* [Intune-Glossar](#intune-glossary)
+* [Was steht an?](#whats-coming)
+
+### Bedingter Zugriff für Windows
+Sie können jetzt über die Intune-Verwaltungskonsole Richtlinien für bedingten Zugriff erstellen, um den Zugriff von Windows-PCs auf Exchange Online und SharePoint Online zu blockieren. Sie können auch Richtlinien für bedingten Zugriff erstellen, um den Zugriff auf Office-Desktop- und universelle Anwendungen zu blockieren.
+
+### iOS 10-Unterstützung
+Vorhandene Intune-MDM- und-MAM-Szenarien sind mit iOS 10 kompatibel. Tipps finden Sie im [Intune-Supportteamblog](https://blogs.technet.microsoft.com/intunesupport/2016/09/13/support-tip-intune-support-for-ios-10/).
+
+### Das App Wrapping-Tool unterstützt MAM ohne Geräteregistrierung für Android und iOS
+Das Intune App Wrapping-Tool ist ein Befehlszeilentool, das verwendet wird, um Intune-MAM in Branchen-Apps (LOB, Line-of-Business) für iOS und Android zu aktivieren . Es stellt die einfachste Möglichkeit dar, das Intune MAM-SDK in Ihre App zu integrieren, sodass Ihre App die durch Intune bereitgestellten MAM-Richtlinien durchsetzen kann. MAM-Richtlinien bieten Ihnen diese Möglichkeiten:
+
+1. Verschlüsseln der Daten der App.
+2. Vorschreiben der Eingabe einer PIN beim Starten der App durch den Information Worker.
+3. Einschränken der Übermittlung von Daten durch die App auf andere verwaltete Apps.
+4. Verhindern der Sicherung von Daten nach Android, iTunes und iCloud durch die App.
+5. Ausschneiden, Kopieren und Einfügen nur im Zusammenwirken mit anderen verwalteten Apps.
+
+Die öffentliche Vorschau des aktualisierten Intune App Wrapping-Tools unterstützt jetzt MAM ohne Geräteregistrierung für interne Branchen-Apps unter iOS und Android. Das bedeutet, dass Ihre Benutzer ihre Geräte nicht bei Intune registrieren müssen, um MAM-aktivierte Branchen-Apps zu verwenden.
+
+Jeder kann die öffentliche Vorschausoftware testen und die nützliche Dokumentation lesen, die sich auf dem msintuneappsdk-GitHub befindet:
+
+http://www.github.com/msintuneappsdk/intune-app-wrapper-ios-preview
+
+http://www.github.com/msintuneappsdk/intune-app-wrapper-android-preview
+
+Damit Sie das Microsoft Intune App Wrapper für Android und iOS Pre-Release installieren und verwenden können, müssen diese Voraussetzungen erfüllt sein:
+
+* Sie müssen die Microsoft-Lizenzbedingungen für das Microsoft Intune App Wrapping-Tool für Android und iOS Pre-Release lesen
+* Drucken Sie die Lizenzbedingungen aus, und heben Sie eine Kopie für Ihre Unterlagen auf. Indem Sie das Microsoft Intune App Wrapping-Tool für Android Pre-Release herunterladen und verwenden, stimmen Sie diesen Lizenzbedingungen zu. Wenn Sie sie nicht akzeptieren, dürfen Sie die Software nicht verwenden.
+<!---TFS 1235607--->
+
+### Die Umstellung von Intune-Gruppen auf Azure Active Directory beginnt im September
+Einige neue Intune-Konten verwenden Azure Active Directory-Sicherheitsgruppen anstelle von Intune-Benutzergruppen. Sie werden bemerken, dass Sie mit Sicherheitsgruppen arbeiten, da die Gruppenseite auf dem Intune-Portal dann über einen Link zum Azure-Verwaltungsportal verfügt.
+
+### Lookout-Integration zum Schutz von Android-Geräten
+Microsoft integriert die Lookout-Lösung zum Schutz vor Bedrohungen auf mobilen Geräten, um mobile Android-Geräte durch das Erkennen von Schadsoftware, gefährlichen Apps und mehr auf Geräten zu schützen. Mithilfe der Lösung von Lookout können Sie die Bedrohungsstufe bestimmen und konfigurieren. Sie können in Intune eine Regel der Kompatibilitätsrichtlinie erstellen, um die Gerätekonformität auf der Grundlage der Risikobewertung durch Lookout zu bestimmen. Mithilfe von Richtlinien für den bedingten Zugriff können Sie den Zugriff auf Unternehmensressourcen auf der Basis des Kompatibilitätsstatus des Geräts zulassen oder blockieren.
+
+Endbenutzer nicht kompatibler Geräte werden zur Registrierung aufgefordert, und die Installation der Lookout for Work-Anwendung auf Android-Geräten, die Aktivierung der App und die Behebung der in der Lookout for Work-Anwendung erkannten Bedrohungen wird vorgeschrieben, bevor der Zugriff erteilt wird. Weitere Informationen finden Sie unter [Einschränken des Zugriffs auf der Basis von Geräte-, Netzwerk- und Anwendungsrisiko](restrict-access-based-on-device-network-app-risk.md).
+
+
+### Aktualisierungen am Unternehmensportal
+
+### Android
+**Hinzufügen von „Benachrichtigungen“ zum Unternehmensportal für Android**<br/>
+Dem Unternehmensportal für Android wurde auf der Startseite ein neues Symbol „Benachrichtigungen“ hinzugefügt. Beim Tippen auf dieses Symbol wird auf die Seite „Benachrichtigungen“ zugegriffen, die Ihren Endbenutzern alle Elemente in der Unternehmensportal-App anzeigt, die ihr Eingreifen erfordern, etwa inkompatible Geräte, Aktualisierung der Registrierung und Aktivierung der Registrierung. Das iOS-Unternehmensportal verfügt bereits über diese Benachrichtigungsfunktionalität. Durch die neue Seite „Benachrichtigungen“ wird Benutzern nicht bei jedem Starten oder erneuten Anzeigen des Unternehmensportals die Seite „Einrichten des Unternehmenszugriffs“ angezeigt, sofern das Gerät bereits registriert ist. Wenn Sie eine eigene Hilfestellung für Endbenutzer erstellen, empfiehlt es sich, Ihre Dokumentation entsprechend zu aktualisieren, um dieser Änderung Rechnung zu tragen. Aktualisierte Screenshots finden Sie [hier](https://aka.ms/androidcpupdate).  
+<!---TFS 1095560--->
+
+**Abgeben von Feedback im Unternehmensportal für Android**</br>
+Dem Menü des Unternehmensportals für Android wurde ein neues Element hinzugefügt. Nach Tippen auf **Hilfe und Feedback** werden drei Aktionen angezeigt:
+* Über **Hilfe anfordern** können Sie Ihrer IT-Abteilung Probleme mit dem Unternehmensportal melden. Die IT erstellt eine E-Mail mit Ihrem E-Mail-Client, an die die Unternehmensportalprotokolle angefügt werden. **Hilfe anfordern** ersetzt die Option **Daten senden** auf der Seite **Einstellungen**.
+* Verwenden Sie **Feedback abgeben**, um dem für das Unternehmensportal zuständigen Team Feedback zu geben.
+* Verwenden Sie **App bewerten**, um für die Unternehmensportal-App eine Bewertung oder Kritik auf Google Play zu hinterlassen.
+
+### iOS
+**Änderungen bei der Unterstützung der iOS-Unternehmensportal-App**<br/>
+Alle Benutzer der Microsoft Intune-Unternehmensportal-App für iOS müssen jetzt die aktuelle Version verwenden. Neue Benutzer können ausschließlich die neueste Version herunterladen, und aktuelle Benutzer müssen ein Update auf sie ausführen. Die aktuelle Version erfordert iOS 8.0 oder höher. Daher können Benutzer von Geräten mit älteren iOS-Versionen das Unternehmensportal erst dann nutzen und eine Registrierung durchführen, wenn sie ihr Gerät auf iOS 8.0 oder höher aktualisieren und anschließend die Unternehmensportal-App auf die aktuelle Version aktualisieren. Registrierte Geräte mit Versionen vor iOS 8.0 werden weiterhin verwaltet und in der Intune-Verwaltungskonsole aufgeführt.
+<!---TFS 1283165--->
+
+**Verbesserungen für das Abrufen von Apps durch iOS-Endbenutzer**<br/>
+Die folgenden Änderungen wurden an den App-Kacheln in der Unternehmensportal-App für iOS vorgenommen, damit Benutzer für alle ihre Apps an einer einzigen Stelle an verschiedene Ansichten verwiesen werden: auf der Unternehmensportal-Website. Einschränkungen seitens Apple verhindern das Auflisten branchenspezifischer und verwalteter App Store-Apps in der Unternehmensportal-App, sodass Benutzer verschiedene Ansichten besuchen müssen, um all ihre Apps zu finden.
+
+- Die Kachel **Unternehmens-Apps** verwies zuvor auf eine Liste aller Apps auf der Registerkarte ALLE der Unternehmensportal-Website, und diese Funktion bleibt weiterhin bestehen. Der Name der Kachel wurde in **Alle Apps** geändert.
+- Die Kachel **Andere Apps** verwies zuvor auf eine Ansicht innerhalb der Unternehmensportal-App, in der alle Apps aufgeführt werden, deren Anzeige Apple der Unternehmensportal-App gestattet. Der Name der Kachel wurde in **Ausgewählte Apps** geändert, und durch Tippen auf die Kachel gelangen Benutzer auf die Registerkarte AUSGEWÄHLTE der Unternehmensportal-Website.
+-  Die Kachel **Kategorien** verwies zuvor auf eine Ansicht innerhalb der Unternehmensportal-App, in der Kategorien von Apps aufgeführt werden. Der Name der Kachel hat sich nicht geändert, aber sie verweist jetzt auf die Registerkarte KATEGORIEN der Unternehmensportal-Website.
+Aktualisierte Screenshots finden Sie [hier](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
+<!---TFS 1317133--->
+
+**Aufforderung zur Installation der iOS-App „Managed Browser“, wenn IT-Experten diese Anforderung für eine App festlegen**<br/>
+Wenn Sie einen Webclip so konfiguriert haben, dass er nur im verwalteten Browser geöffnet wird, und der verwaltete Browser auf einem Gerät nicht installiert ist, wird der Benutzer von der Unternehmensportal-App auf dem Gerät aufgefordert, den verwalteten Browser zu installieren, damit der Webclip installiert werden kann.
+<!---TFS 1228570--->
+
+### Windows
+**Der Windows Phone 8.1-Unternehmensportal-App wurde eine Feedback-Schaltfläche hinzugefügt**<br/>
+Die Windows Phone 8.1-Unternehmensportal-App ermöglicht Endbenutzern, Feedback zur App mithilfe einer neuen Schaltfläche „Feedback senden“ zu senden. Benutzer finden die Schaltfläche durch Tippen auf das Drei-Punkte-Menü unten rechts auf dem Bildschirm der Unternehmensportal-App und anschließendes Tippen auf **Feedback senden**. Das gesammelte anonymisierte Feedback hilft Microsoft, die Benutzerfreundlichkeit der Unternehmensportal-App zu verbessern.
+<!---TFS 1317806--->
+
+### Intune-Glossar</br>
+Wir haben der Bibliothek einen neuen [Glossarabschnitt](https://docs.microsoft.com/intune/understand-explore/intune-glossary) hinzugefügt, in dem einige der im Intune-Produkt verwendeten Begriffe erläutert werden.
+
+
 ## August 2016
-## August 2016
-## App-Verwaltung
+### App-Verwaltung
 <!---@Barry, I created the buckets of App management, Device management, etc but am not tied to them. Just wanted to break up and organize the feature list. If you're going to take over the Company Portal section, please talk to Stacie about how she's been organizing it. --->
 
-### Ausgeblendete und eingeblendete Apps für iOS 9.3
-Bei überwachten Geräten mit iOS 9.3 oder höher können Sie die Liste für ausgeblendete und eingeblendete Apps in der allgemeinen iOS-Konfigurationsrichtlinie für folgende Aufgaben verwenden:
+__Aus- und eingeblendete Apps für iOS 9.3__ Bei überwachten Geräten mit iOS 9.3 oder höher können Sie die Liste für aus- und eingeblendete Apps in der allgemeinen iOS-Konfigurationsrichtlinie für folgende Aufgaben verwenden:
 - Angeben einer Liste von Apps, die vor Benutzern verborgen werden. Benutzer können diese Apps weder anzeigen noch starten.
 - Angeben einer Liste von Apps, die Benutzer anzeigen und starten können. Es können keine anderen Apps angezeigt oder gestartet werden.
 
 Die Apps, die Sie angeben können, umfassen sowohl von Ihnen bereitgestellte Apps als auch integrierte iOS-Apps, wie „Nachrichten“ und „Notizen“. Weitere Informationen finden Sie unter [iOS-Richtlinieneinstellungen in Microsoft Intune]( /intune/deploy-use/ios-policy-settings-in-microsoft-intune).
 <!---TFS 1279009 checked--->
-### Richtlinie für zulässige und blockierte Apps für Samsung KNOX-Geräte
-Sie können jetzt eine benutzerdefinierte Richtlinie für Samsung KNOX-Geräte konfigurieren, die Ihnen das Erstellen einer der folgenden Listen ermöglicht:
+__Richtlinie für zugelassene und blockierte Apps für Samsung Knox-Geräte__ Sie können jetzt eine benutzerdefinierte Richtlinie für Samsung Knox-Geräte konfigurieren, die Ihnen das Erstellen einer der folgenden Listen ermöglicht:
 - Eine Liste von Apps, deren Ausführung auf dem Gerät blockiert wird. Eine in der Liste blockierter Apps definierte App kann nicht auf dem Gerät aktiviert werden, auch wenn sie auf dem Gerät installiert ist.
 - Eine Liste von Apps, die Benutzer des Geräts aus dem Google Play Store installieren dürfen. Es können keine anderen Apps aus dem Store installiert werden.
 
 Diese Einstellungen können nur von Geräten verwendet werden, auf denen Samsung KNOX ausgeführt wird.
 Weitere Informationen finden Sie unter [Use custom policies to allow and block apps for Samsung KNOX devices](/intune/deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps) (Verwenden von benutzerdefinierten Richtlinien zum Zulassen und Blockieren von Apps für Samsung KNOX-Geräte).
 <!---TFS 1311629 checked --->
-### Neue, mit MAM-Richtlinien kompatible Apps
-Die Yammer-App für [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) und [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) ist nun mit [Intune-Richtlinien für die Verwaltung mobiler Anwendungen](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) (Mobile Application Management, MAM) kompatibel. Dies gilt unabhängig davon, ob das Gerät registriert ist oder nicht.
+__Neue Apps, die mit MAM-Richtlinien (Verwaltung mobiler Anwendungen) kompatibel sind__ Die Yammer-App für [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) und [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) ist nun mit [Intune-Richtlinien für die Verwaltung mobiler Anwendungen (mobile application management, MAM)](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) kompatibel. Dies gilt unabhängig davon, ob das Gerät registriert ist oder nicht.
 
 Eine vollständige Liste MAM-kompatibler Apps finden Sie auf der Website [Microsoft Intune-Anwendungspartner](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners).
 <!--- TFS 1252335 & 1252336 checked--->
 
-
 <!--- I started putting TFS numbers in the What's Coming topic and found it helpful when updating the What's New. Up to you if you want to continue. --->
 
-### Intune Viewer-Apps
-Mit der Veröffentlichung der neuen RMS-Freigabe-App werden wir ab August 2016 die folgenden Intune Viewer-Apps entfernen:
+__Intune Viewer-Apps__ Mit dem Release der neuen RMS-Freigabeanwendung werden wir ab August 2016 die folgenden Intune Viewer-Apps entfernen:
 - Intune AV Viewer
 - Intune PDF Viewer
 - Intune Image Viewer für Android aus Google Play
 
 Anstatt die Intune-Viewer-Apps zu verwenden, empfehlen wir die Nutzung der neuen [Rights Management-App (RMS-Freigabe)](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app) für Android, die Ihnen das Bereitstellen einer App anstelle von drei getrennten Apps ermöglicht, um Unternehmensdateien sicher auf Android-Geräten anzuzeigen. Wenn die Intune-Viewer-App nicht mehr unterstützt wird, wird sie aus dem Google Store entfernt und steht nicht mehr zur zukünftigen Verwendung zur Verfügung.
 
-## Geräteverwaltung
-### Android 7.0-Unterstützung
-Intune bietet „Day-0“-Unterstützung für das bevorstehende Android 7.0-Betriebssystem für mobile Geräte.
+### Geräteverwaltung
+__Android 7.0-Unterstützung__ Intune bietet „Tag 0“-Unterstützung für das bevorstehende Android 7.0-Betriebssystem für mobile Geräte.
 <!---TFS 1262053--->
-### Funktion für das Remote-Zurücksetzen von Passcodes auf Android 7.0-Geräten von Google entfernt
-Die Funktion, durch die IT-Administratoren und Endbenutzer den Passcode von Android 7.0-Geräten remote zurücksetzen konnten, wurde von Google entfernt. Zuvor konnten IT-Administratoren Benutzerpasscodes remote zurücksetzen, und Endbenutzer konnten ihre Passcodes auf der Unternehmensportal-Website zurücksetzen.
 
+__Funktion für das Remote-Zurücksetzen von Kennungen auf Android 7.0-Geräten von Google entfernt__ Die Funktion, durch die IT-Administratoren und Endbenutzer die Kennung von Android 7.0-Geräten remote zurücksetzen konnten, wurde von Google entfernt. Zuvor konnten IT-Administratoren Benutzerpasscodes remote zurücksetzen, und Endbenutzer konnten ihre Passcodes auf der Unternehmensportal-Website zurücksetzen.
 
-
-## Aktualisierungen am Unternehmensportal
-### Unternehmensportal-Website
+### Aktualisierungen am Unternehmensportal
+__Unternehmensportal-Website__
 - **Feedbacklink vom Unternehmensportal zu Microsoft** <br/>
 Auf der Unternehmensportal-Website können Endbenutzer auf einen neuen „Feedbacklink“ am unteren Seitenrand tippen, um Feedback zu ihren Erfahrungen mit der Website an Microsoft zu senden. Das gesammelte anonymisierte Feedback hilft Microsoft, die Benutzerfreundlichkeit der Unternehmensportal-Website zu verbessern.
 <!--- TFS 1313657 checked--->
 
-### iOS
+__iOS__
 - **Minimale Version des Managed Browser für iOS auf 8.0 aktualisiert**<br/>
 Die Microsoft Intune Managed Browser-App für iOS wurde aktualisiert, um Geräte zu unterstützen, die iOS 8.0 oder höher ausführen. iOS 7.1-Geräte können zwar weiterhin die vorhandene Managed Browser-App verwenden, fordern Sie Ihre Benutzer jedoch auf, auf iOS 8.0 oder höher zu aktualisieren, um die neuen Features von Managed Browser in vollem Umfang zu nutzen.  
 <!---TFS 1313253 checked--->
 
-## Was steht an?
+### Was steht an?
 
-### iOS 10-Unterstützung
-Intune unterstützt iOS 10 in vollem Umfang. Weitere Informationen folgen nach dem öffentlichen Release von iOS 10.
+__iOS 10-Unterstützung__ Intune unterstützt iOS 10 in vollem Umfang. Weitere Informationen folgen nach dem öffentlichen Release von iOS 10.
 
-### Übergang von Intune-Gruppen zu Azure Active Directory-Gruppen ab September 2016
-Intune erstellt eine neue Benutzeroberfläche für die Gruppenverwaltung, die Azure Active Directory-Sicherheitsgruppen (AAD) als Benutzer- und Gerätegruppen in Intune verwendet. Diese Gruppen werden für sämtliche Gruppenverwaltung, Richtlinien- und Profilbereitstellung verwendet, **wenn das neue Intune-Verwaltungsportal auf Azure-Basis eingeführt wird**.
+__Übergang von Intune-Gruppen zu Azure Active Directory-Gruppen ab September 2016__ Intune erstellt eine neue Benutzeroberfläche für die Gruppenverwaltung, die Azure Active Directory-Sicherheitsgruppen (AAD) als Benutzer- und Gerätegruppen in Intune verwendet. Diese Gruppen werden für sämtliche Gruppenverwaltung, Richtlinien- und Profilbereitstellung verwendet, **wenn das neue Intune-Verwaltungsportal auf Azure-Basis eingeführt wird**.
 
 Diese neue Benutzeroberfläche verhindert, dass Sie Gruppen zwischen Diensten duplizieren müssen, **ermöglicht Ihnen den Zugriff auf einige neue Gruppenfeatures in Azure Active Directory Premium (AADP)** und bietet Erweiterbarkeit mithilfe von PowerShell und Graph. Dies vereinheitlicht auch die Gruppenverwaltungsoberfläche der Enterprise Mobility-Verwaltung übergreifend.
 
@@ -99,11 +179,9 @@ Zusätzlich zu Änderungen der Gruppenverwaltung **werden die folgende Funktione
 - Pivotieren mit Gruppen in Berichten
 <!--- TFS 1295329--->
 
-### Hinzufügen von „Benachrichtigungen“ zum Unternehmensportal für Android
-Im September veröffentlichen wir ein Update zum Unternehmensportal für Android, mit dem auf der Startseite das neue Symbol **Benachrichtigungen** eingeführt wird. Beim Tippen auf dieses Symbol wird die Seite **Benachrichtigungen** aufgerufen, auf der für Ihre Endbenutzer alle Elemente angezeigt werden, die in der Unternehmensportal-App Aufmerksamkeit erfordern, z. B. Nichtkompatibilität, Registrierungsupdate und Registrierungsaktivierung. Wenn Sie auch die iOS-Unternehmensportal-App verwenden, sehen Sie die Benachrichtigungen bereits. Wenn die Seite **Benachrichtigungen** eingeführt wird, werden Sie die Seite **Unternehmenszugriff einrichten** nicht bei jedem Start bzw. jeder Fortsetzung des Unternehmensportals für Android sehen, solange das Gerät bereits registriert ist. Wir haben erfahren, dass viele von Ihnen Endbenutzeranleitungen erstellt haben, und würden eine vorherige Mitteilung schätzen, wenn Ihre Anleitung/Screenshots vielleicht aktualisiert werden müssen. Bitte aktualisieren Sie Ihre Dokumentation gemäß der anstehenden Änderung der Benutzeroberfläche. Aktualisierte Screenshots finden Sie hier: https://aka.ms/androidcpupdate.  
+__Hinzufügen von „Benachrichtigungen“ zum Unternehmensportal für Android__ Im September veröffentlichen wir ein Update zum Unternehmensportal für Android, mit dem auf der Startseite das neue Symbol **Benachrichtigungen** eingeführt wird. Beim Tippen auf dieses Symbol wird die Seite **Benachrichtigungen** aufgerufen, auf der für Ihre Endbenutzer alle Elemente angezeigt werden, die in der Unternehmensportal-App Aufmerksamkeit erfordern, z. B. Nichtkompatibilität, Registrierungsupdate und Registrierungsaktivierung. Wenn Sie auch die iOS-Unternehmensportal-App verwenden, sehen Sie die Benachrichtigungen bereits. Wenn die Seite **Benachrichtigungen** eingeführt wird, werden Sie die Seite **Unternehmenszugriff einrichten** nicht bei jedem Start bzw. jeder Fortsetzung des Unternehmensportals für Android sehen, solange das Gerät bereits registriert ist. Wir haben erfahren, dass viele von Ihnen Endbenutzeranleitungen erstellt haben, und würden eine vorherige Mitteilung schätzen, wenn Ihre Anleitung/Screenshots vielleicht aktualisiert werden müssen. Bitte aktualisieren Sie Ihre Dokumentation gemäß der anstehenden Änderung der Benutzeroberfläche. Aktualisierte Screenshots finden Sie hier: https://aka.ms/androidcpupdate.  
 
-### Verbesserungen für das Abrufen von Apps durch iOS-Endbenutzer
-Die folgenden Änderungen werden im September an den App-Kacheln in der Unternehmensportal-App für iOS vorgenommen, damit Benutzer für all ihre Apps an verschiedene Ansichten einer einzigen Stelle verwiesen werden: der Unternehmensportal-Website. Zurzeit verhindern Apple-Einschränkungen das Auflisten branchenspezifischer und verwalteter App Store-Apps in der Unternehmensportal-App, sodass Benutzer verschiedene Ansichten besuchen müssen, um all ihre Apps zu finden.
+__Verbesserungen für das Abrufen von Apps durch iOS-Endbenutzer__ Die folgenden Änderungen werden im September an den App-Kacheln in der Unternehmensportal-App für iOS vorgenommen, damit Benutzer für all ihre Apps an verschiedene Sichten einer einzigen Stelle verwiesen werden: der Unternehmensportal-Website. Zurzeit verhindern Apple-Einschränkungen das Auflisten branchenspezifischer und verwalteter App Store-Apps in der Unternehmensportal-App, sodass Benutzer verschiedene Ansichten besuchen müssen, um all ihre Apps zu finden.
 
 - Die Kachel **Unternehmens-Apps** verweist derzeit auf eine Liste aller Apps auf der Registerkarte ALLE der Unternehmensportal-Website, und diese Funktion bleibt weiterhin bestehen. Der Name der Kachel ändert sich in **Alle Apps**.
 - Die Kachel **Andere Apps** verweist zurzeit auf eine Ansicht innerhalb der Unternehmensportal-App, in der alle Apps aufgeführt werden, deren Anzeige Apple der Unternehmensportal-App gestattet. Der Name der Kachel wird in **Ausgewählte Apps** geändert, und durch Tippen auf die Kachel gelangen Benutzer auf die Registerkarte AUSGEWÄHLTE der Unternehmensportal-Website.
@@ -144,30 +222,30 @@ Intune notification rules define who an email alert will be sent to from Intune.
 
 ## Juli 2016
 ### App-Verwaltung
-#### Verbessern der Benutzererfahrung beim Update des App-Bereitstellungsprofils
-Die Apple iOS-Reihe mobiler Geschäfts-Apps wird mit einem integrierten Bereitstellungsprofil erstellt und mit Code, der mit einem Zertifikat signiert wurde. Beim Ausführen der App auf einem iOS-Gerät bestätigt iOS die Integrität der iOS-App und erzwingt Richtlinien, die durch das Bereitstellungsprofil definiert werden.
+
+__Verbessern der Benutzererfahrung beim Update des App-Bereitstellungsprofils__ Die Apple iOS-Reihe mobiler Geschäfts-Apps wird mit einem integrierten Bereitstellungsprofil erstellt und mit Code, der mit einem Zertifikat signiert wurde. Beim Ausführen der App auf einem iOS-Gerät bestätigt iOS die Integrität der iOS-App und erzwingt Richtlinien, die durch das Bereitstellungsprofil definiert werden.
 
 Das Unternehmenssignaturzertifikat, das Sie zum Signieren von Apps verwenden, ist in der Regel 3 Jahre lang gültig. Allerdings läuft das Bereitstellungsprofil nach 1 Jahr ab. Mit diesem Update stellt Intune Ihnen die Tools zum proaktiven Bereitstellen einer neuen Richtlinie für Bereitstellungsprofile auf Geräten zur Verfügung, auf denen Apps installiert sind, die bald ablaufen, während das Zertifikat noch gültig ist. Weitere Informationen finden Sie unter [Use iOS mobile provisioning profile policies to keep your line of business apps up to date](/intune/deploy-use/ios-mobile-app-provisioning-profiles) (Verwenden von Richtlinien für iOS-Mobilbereitstellungsprofile, um Ihre Business-Apps aktuell zu halten).
 <!--- TFS 1280247--->
-#### Xamarin-SDK für Intune-Apps ist verfügbar
-Mit der Intune-App-SDK-Xamarin-Komponente können Sie die Intune-Verwaltungsfeatures für mobile Apps in Ihren mit Xamarin erstellten mobilen iOS- und Android-Apps aktivieren. Sie finden die Komponente im [Xamarin Store](https://components.xamarin.com/view/Microsoft.Intune.MAM) oder auf der [Microsoft Intune-Github-Seite](https://github.com/msintuneappsdk).
+
+__Xamarin SDK für Intune-Apps ist verfügbar__ Mit der Intune-App SDK-Xamarin-Komponente können Sie die Intune-Verwaltungsfeatures für mobile Apps in Ihren mit Xamarin erstellten mobilen iOS- und Android-Apps aktivieren. Sie finden die Komponente im [Xamarin Store](https://components.xamarin.com/view/Microsoft.Intune.MAM) oder auf der [Microsoft Intune-Github-Seite](https://github.com/msintuneappsdk).
 <!--- TFS 1061478 --->
 
 ### Geräteverwaltung
-#### Höhere Limits bei der Geräteregistrierung
-Intune erhöhte das maximal konfigurierbare Limit für die Geräteregistrierung von 5 auf 15 Geräte pro Benutzer.
+__Höhere Limits bei der Geräteregistrierung__ Intune erhöhte das maximal konfigurierbare Limit für die Geräteregistrierung von 5 auf 15 Geräte pro Benutzer.
 <!---TFS 1289896 --->
 
-#### TeamViewer-Integration für Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird
-Mithilfe der [TeamViewer](https://www.teamviewer.com)-Integration für Windows-PCs, auf denen der Intune-Client ausgeführt wird, können Sie Remoteunterstützungssitzungen mit Windows-PCs herstellen, um Helpdeskabteilungen für Endbenutzer zu entlasten. Dies gilt für Windows 7, 8, 8.1 und Windows 10. Weitere Informationen finden Sie unter [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
+__TeamViewer-Integration für Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird__
+ Mithilfe der [TeamViewer](https://www.teamviewer.com)-Integration für Windows-PCs, auf denen der Intune-Client ausgeführt wird, können Sie Remoteunterstützungssitzungen mit Windows-PCs herstellen, um Helpdeskabteilungen für Endbenutzer zu entlasten. Dies gilt für Windows 7, 8, 8.1 und Windows 10. Weitere Informationen finden Sie unter [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
 <!---TFS 1284856--->
 
 ### Aktualisierungen am Unternehmensportal
-#### Unternehmensportal-Website
+
+__Unternehmensportal-Website__
 - **Verbesserte Endbenutzererfahrung bei der Registrierung von Windows-Geräten**<br/>
 Wenn Sie den bedingten Zugriff verwenden, werden die Registrierungsschritte für Windows 8.1, Windows 10 Desktop und Windows 10 Mobile in der Unternehmensportal-Website erklärt. Benutzer sehen jetzt die separaten Schritte „Geräteregistrierung“ und „Workplace Join“, mit denen sie leichter den Status ihres Geräts anzeigen und den Prozess abschließen können, wenn ein Fehler beim Workplace Join (WPJ) auftritt. Die separaten Schritte sollten auch die Problembehandlung für IT-Administratoren vereinfachen. Wenn Endbenutzer versuchten, das Gerät zu registrieren, und alle Registrierungsschritte außer dem WPJ erfolgreich verliefen, wurde das registrierte Gerät bisher nicht in der Liste der Geräte angezeigt, die Benutzer identifizieren konnten, und dies verwirrte die Benutzer.
 
-#### Android
+__Android__
 - **Android-Unternehmensportal-App**<br/>
 Wenn Android-Endbenutzer eine Fehlermeldung erhalten, ihrem Gerät fehle ein erforderliches Zertifikat, können sie auf eine Schaltfläche „Problembehebung“ tippen, um [Schritte](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) für die Installation des fehlenden Zertifikats abzurufen. Wenn Benutzer die Schritte ausführen, jedoch eine zusätzliche „Fehlendes Zertifikat“-Fehlermeldung angezeigt wird, werden sie aufgefordert, sich an ihren IT-Administrator zu wenden und diesen [Link](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues) anzugeben, der Schritte enthält, mit denen IT-Administratoren das Zertifikatsproblem beheben können.
 
@@ -175,7 +253,7 @@ Wenn Android-Endbenutzer eine Fehlermeldung erhalten, ihrem Gerät fehle ein erf
 Auf Android-Geräten können nicht mehr Apps über die Unternehmensportal-Website installiert werden, es sei denn, die Geräte wurden mithilfe der Intune-Unternehmensportal-App für Android in Intune registriert.
 <!---TFS 1299082--->
 
-#### iOS
+__iOS__
 - **Änderungen an den Geräteregistrierungs-Manager-Konten in der iOS-Unternehmensportal-App**<br/>
 Zum Verbessern der Leistung und Skalierung zeigt Intune nicht mehr alle Geräte des Geräteregistrierungs-Managers (Device Enrollment Manager, DEM) im Bereich **Meine Geräte** der Unternehmensportal-App für iOS an. Nur das lokale Gerät, das die App ausführt, wird angezeigt, und dies nur, wenn es über die Unternehmensportal-App registriert wurde.
 
@@ -215,9 +293,9 @@ Informationen zum Status des Intune-Diensts wurden wie für andere Microsoft-Die
 - **Dynamics CRM Online unterstützt den bedingten Zugriff.** Sie können eine Richtlinie für den bedingten Zugriff für [Dynamics CRM Online](/intune/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) festlegen, sodass nur der Zugriff durch verwaltete und kompatible iOS- und Android-Geräte möglich ist. Endbenutzer, die versuchen, sich bei der mobilen Dynamics CRM-App für iOS und Android anzumelden, werden aufgefordert, sich bei Intune zu registrieren und alle Kompatibilitätsprobleme zu beheben, bevor die Anmeldung abgeschlossen werden kann.
 <!---TFS1295358--->
 
-##Aktualisierungen des E-Unternehmensportals
+### Aktualisierungen des Intune-Unternehmensportals
 
-#### Android-Unternehmensportal-App
+__Android-Unternehmensportal-App__
 
 - Wenn IT-Administratoren die neue Richtlinie „Require that devices disallow installation of apps from unknown sources (Android 4.0+)“ (Geräte dürfen die Installation von Apps aus unbekannten Quellen nicht erlauben (Android 4.0 und höher)) anwenden, wird Endbenutzern mit Geräten mit Android 4.0 oder höher die Meldung „Die Installation von unbekannten Quellen muss deaktiviert sein.“ angezeigt. Benutzer müssen zu **Einstellungen** > **Sicherheit** wechseln und **Unbekannte Quellen** deaktivieren. Durch einen Link in der Konformitätsmeldung erhalten Benutzer mehr [Informationen](/Intune/EndUser/you-are-asked-to-turn-off-unknown-sources-android) zu der Meldung und zu dem Grund, aus dem sie dazu aufgefordert werden, die Einstellung zu deaktivieren.
 
@@ -227,7 +305,7 @@ Informationen zum Status des Intune-Diensts wurden wie für andere Microsoft-Die
 
 - Wenn IT-Administratoren die neue Richtlinie „Niedrigste zulässige Android-Sicherheitspatchebene (Android 6.0 und höher)“ anwenden, wird Endbenutzern mit Geräten mit Android 6.0 oder höher die Meldung „Dieses Gerät weist nicht die mindestens erforderliche Ebene für Android-Sicherheitspatches auf.“ angezeigt. Benutzer müssen den erforderlichen Sicherheitspatch installieren. Durch einen Link in der Konformitätsmeldung erhalten Benutzer mehr [Informationen](/Intune/EndUser/you-are-asked-to-turn-on-scan-device-for-security-threats-android) dazu, wie der erforderliche Sicherheitspatch installiert wird und wie Sie sehen können, welcher Sicherheitspatch aktuell installiert ist.
 
-#### iOS-Unternehmensportal-App
+__iOS-Unternehmensportal-App__
 
 - Wenn Endbenutzer branchenspezifische Apps installieren, sehen sie jetzt eine verbesserte Benutzeroberfläche für die App-Installation. Wenn die App-Installation sehr lange dauert, können Benutzer das Gerät manuell synchronisieren, um eine Fortsetzung des Synchronisierungsprozesses zu erzwingen. Die Anweisungen für Endbenutzer finden Sie unter [Manuelles Synchronisieren des Geräts](/Intune/EndUser/sync-your-device-manually-ios).
 
@@ -235,7 +313,6 @@ Informationen zum Status des Intune-Diensts wurden wie für andere Microsoft-Die
 
 
 ## Mai 2016
-
 Alle diese Features werden auch für hybride Bereitstellungen (Configuration Manager mit Intune) unterstützt. Weitere Informationen zu neuen Hybridfeatures finden Sie auf unserer [Seite mit neuen Hybridfeatures](https://technet.microsoft.com/en-us/library/mt718155.aspx).
 
 ### Dokumentation
@@ -266,15 +343,6 @@ Weitere Informationen finden Sie in [diesem Blogbeitrag](https://blogs.technet.m
 #### Unternehmensportal-Website
 - **Unternehmensportal-Website: Banner für die Geräteidentifikation stellt zusätzliche Informationen für Endbenutzer bereit.** Benutzer können das ausgewählte Gerät nun leichter identifizieren, wenn sie die Unternehmensportal-Website verwenden. Wenn das falsche Gerät ausgewählt wird, können sie das richtige Gerät auswählen, indem sie auf den Link **Hier tippen** im Banner auf der Startseite tippen.
 
-## Was steht an?
-- **Integration des Nachrichtencenters**. Im Rahmen der Migration von Intune in das [Office 365-Verwaltungsportal](https://portal.office.com/) beginnen wir damit, das Nachrichtencenter zu nutzen, um über neue Features und andere Benachrichtigungen zu informieren. Wenn Sie zudem die mobile Begleit-App Office 365 Admin installieren, können Sie Benachrichtigungen auf Ihrem Mobiltelefon empfangen und problemlos alle Nachrichten an Benutzer oder einen Verteilungsalias weiterleiten.
-Wir beginnen mit unserer Maiversion damit, das Nachrichtencenter zu nutzen, um Sie zu benachrichtigen, wenn Updates abgeschlossen sind, und wir werden Informationen zu neuen und verbesserten Features von Intune aufnehmen. Sehen Sie sich das Nachrichtencenter noch heute an, indem Sie sich beim [Office 365-Verwaltungsportal](https://portal.office.com/) anmelden und im linken Navigationsbereich die Option NACHRICHTENCENTER auswählen.
-
-- **Änderungen an den Konten für Geräteregistrierungs-Manager**. Zum Verbessern der Leistung und Skalierung zeigt Intune nicht mehr **alle** Geräte des Geräteregistrierungs-Managers (Device Enrollment Manager, DEM) im Bereich **Meine Geräte** der iOS-Unternehmensportal-App an. Nur das lokale Gerät, das die App ausführt, wird angezeigt, und dies nur, wenn es über die Unternehmensportal-App registriert wurde. Der DEM-Benutzer kann Aktionen auf dem lokalen Gerät ausführen, aber die Remoteverwaltung der anderen registrierten Geräte kann nur über die Intune-Verwaltungskonsole ausgeführt werden. Darüber hinaus wird in Intune die Verwendung von DEM-Konten mit dem Apple-Geräteregistrierungsprogramm oder dem Apple Configurator-Tool eingestellt. Diese beiden Registrierungsmethoden unterstützen bereits die benutzerunabhängige Registrierung für gemeinsam genutzte iOS-Geräte. Verwenden Sie DEM-Konten nur, wenn die benutzerunabhängige Registrierung für gemeinsam genutzte Geräte nicht verfügbar ist.
-
-### Fahrplan für die Cloud
-Halten Sie sich mit dem [Fahrplan für die Cloudplattform](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune) zu den anstehenden Entwicklungen für Intune auf dem Laufenden.
-
 ### Veraltete Dienste
 - **Intune Viewer-Apps.** Mit der Veröffentlichung der neuen RMS-Freigabe-App werden wir ab August 2016 die folgenden Intune Viewer-Apps entfernen:
     - Intune AV Viewer
@@ -303,6 +371,7 @@ Intune-Benachrichtigungsregeln definieren, an wen aus Intune eine E-Mail-Benachr
 
 ## April 2016
 Alle diese Features werden auch für hybride Kundenbereitstellungen (Configuration Manager integriert in Intune) unterstützt.
+
 ### App-Verwaltung
 - **MAM-Benutzerkompatibilität.**
 Sie können nun den [Status](/intune/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) von Anwendungsverwaltungsrichtlinien für alle Benutzer in Ihrem Azure Active Directory-Mandanten (AAD) anzeigen. Dies umfasst u. a.:
@@ -337,148 +406,12 @@ Eine neue Einstellung ist für die [Verwaltung mobiler Anwendungen](/intune/depl
 
 Bevor diese Statusangaben hinzugefügt wurden, waren die Benutzer verunsichert, wenn die Installation einer App sehr lange dauerte, da nur ein Status „Wird installiert“ angezeigt wurde – und das möglicherweise für Stunden. Das Hinzufügen der neuen Statusangaben bedeutet, dass sich Benutzer nicht an den Support wenden müssen, sondern auf den Link „Gerätesynchronisierung ausstehend“ tippen und den Anweisungen folgen können, um die Fortsetzung des Synchronisierungsprozesses zu erzwingen.
 
-
-## März 2016
-### Neuheiten seit dem 29. März 2016
-Mit Ausnahme des Updates auf die allgemeine Windows 10-Konfigurationsrichtlinie werden alle Funktionen, die am 29. März 2016 freigegeben wurden, auch für hybride Kundenbereitstellungen unterstützt (in Intune integrierter Configuration Manager). Die Hybridunterstützung für die Aktualisierung der allgemeinen Windows 10-Konfigurationsrichtlinie ist bald erhältlich. Beachten Sie, dass für einige dieser Features die neueste Version von Configuration Manager erforderlich sein kann.
-
-### App-Verwaltung
-- **MAM-Steuerelemente zum Verhindern der Synchronisierung von Outlook-Kontakten (iOS).** Eine neue Einstellung ist für die Verwaltung mobiler Anwendungen ohne Geräteregistrierung verfügbar. Mit dieser Einstellung kann verhindert werden, dass eine Anwendung Kontakte mit dem nativen Adressbuch auf iOS-Geräten synchronisiert. Wenn diese Einstellung aktiviert ist, kann die App keine Kontakte mehr im nativen Adressbuch speichern. Wenn diese Einstellung deaktiviert ist, kann die App Kontakte im nativen Adressbuch speichern. Wenn Sie ein Gerät oder eine App selektiv zurücksetzen, werden alle Kontakte entfernt, die bereits im nativen Adressbuch gespeichert wurden. Diese neue Einstellung wird von der Outlook-Anwendung auf iOS-Geräten unterstützt. Weitere Informationen zu diesen und anderen Einstellungen finden Sie unter [Erstellen und Bereitstellen von MAM-Richtlinien](https://technet.microsoft.com/en-us/library/dn292747.aspx).
-
-### Zugriffssteuerung
-- **Skype for Business Online unterstützt bedingten Zugriff.** Sie können eine Richtlinie für bedingten Zugriff für Skype for Business Online festlegen, sodass nur verwaltete und kompatible iOS- und Android-Geräte darauf zugreifen können. Endbenutzer, die versuchen, sich bei der mobilen Skype for Business-App für iOS und Android anzumelden, werden aufgefordert, sich bei Intune zu registrieren und alle Kompatibilitätsprobleme zu beheben, bevor die Anmeldung abgeschlossen werden kann. Weitere Informationen finden Sie unter [Verwalten des Zugriffs auf Skype for Business Online](https://technet.microsoft.com/en-us/library/mt695297.aspx).
-
-### Geräteverwaltung
-- **Intune-Unterstützung für iOS 9.3.** Am Montag, dem 21. März, verkündete Apple die Verfügbarkeit von iOS 9.3. Wir haben daran gearbeitet, Microsoft Intune mit der neuesten Version des Apple-Betriebssystems für Mobilgeräte kompatibel zu machen, und [geben hiermit bekannt, dass Intune die Verwaltung von iOS 9.3-Geräten unterstützt](https://blogs.technet.microsoft.com/microsoftintune/2016/03/23/microsoft-intune-provides-support-for-ios-9-3/).
-
-  Alle vorhandenen Intune-Features, die derzeit für die Verwaltung von iOS-Geräten verfügbar sind, werden weiterhin reibungslos funktionieren, wenn Benutzer ihre Geräte auf iOS 9.3 aktualisieren. Außerdem wird iOS 9.3 auch jetzt für hybride Kundenbereitstellungen (Configuration Manager integriert in Intune) unterstützt.
-
-- **Die allgemeine Windows 10-Konfigurationsrichtlinie enthält jetzt Einstellungen für die Verwaltung von Windows Defender auf registrierten Windows 10-PCs.** Weitere Informationen finden Sie unter [Einstellungen für Windows 10-Konfigurationsrichtlinien in Microsoft Intune](https://technet.microsoft.com/en-us/library/mt404697.aspx).
-
-
-### Unternehmensportal
-
-- **Windows-App-Pakete stehen direkt über die Website des Unternehmensportals zur Verfügung.** Benutzer von Windows 8-, Windows 8.1- und Windows RT-PCs können Windows-App-Pakete (mit der Erweiterung APPX) nun direkt von der Website des Unternehmensportals installieren. Zuvor mussten Sie sie bereitstellen, oder die Benutzer mussten die Unternehmensportal-App auf ihren Geräten installieren, um Apps zu installieren.
-
-- **Benutzer können ihre Geräte remote über die Website des Unternehmensportals sperren.** Eine neue Option für Remotesperren wurde der Website des Unternehmensportals hinzugefügt, damit die Benutzer ihr Gerät bei Verlust oder Diebstahl über das Portal remote sperren können. Informationen finden Sie in den [Endbenutzeranweisungen](https://technet.microsoft.com/library/mt590895.aspx/?wt.mc_id=ui#BKMK_iwp_remote_lock). Die folgende Tabelle enthält eine Übersicht über die Plattformunterstützung für Remotesperren für eigenständiges Intune und Intune mit Configuration Manager.
-
-|Plattform | Details zur Unterstützung|
-|---------|----------------|
-|Android |Unterstützt|
-|iOS |Unterstützt|
-|Windows 10 Mobile |Wird nur unterstützt, wenn für das Telefon eine Kennung festgelegt wurde|
-|Windows 10 Desktop |Nicht unterstützt|
-|Windows Phone 8.1 |Wird nur unterstützt, wenn für das Telefon eine Kennung festgelegt wurde|
-|Windows Phone 8.0 |Nicht unterstützt|
-|PC (Windows 8.0 und früher) |Nicht unterstützt|
-|PC (Windows 8.1) |Nicht unterstützt|
-
-### Neuheiten seit dem 10. März 2016
-
-### App-Verwaltung
-
-- **Verwenden der Verwaltungsfunktionen für mobile Geräte des Drittanbieters, dass die iOS-Verwaltungsfunktion „Öffnen in“ genutzt wird** Sie können die Verwaltungsfunktionen für mobile Geräte des Drittanbieters so verwenden, dass die iOS-Verwaltungsfunktion „Öffnen in“ genutzt wird. Sie können die Einschränkungen in den Konfigurationsprofileinstellungen festlegen und die App anhand der Informationen unter [Verwalten der Datenübertragung zwischen iOS-Apps](/intune/deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune) bereitstellen.
-
-     Dieser Ansatz hat zwei wesentliche Vorteile:
-
-     1. Benutzer müssen sich bei ihrem Geschäftskonto anmelden, bevor sie Zugriff auf Unternehmensdaten in Clouddiensten oder anderen Apps erhalten. Dadurch wird sichergestellt, dass die Richtlinien für die Verwaltung mobiler Geräte (Mobile App Management, MAM) gelten, wenn auf die Daten zugegriffen wird.
-
-     2. Verwaltete E-Mail-Profile und andere über die MDM-Lösung eines Drittanbieters verwaltete Apps können Dateien und Daten mit den Apps gemeinsam nutzen, die über Intune MAM-Richtlinien verfügen.
-
-- **Verwalten der Microsoft Outlook-App mit MAM-Richtlinien für nicht in Intune registrierte Geräte** Sie können jetzt die Microsoft Outlook-App auf Geräten verwalten, die nicht mithilfe der Intune-Richtlinie für die Verwaltung mobiler Anwendungen in Intune registriert sind. Die aktualisierte Microsoft Outlook-App mit den MAM-Funktionen ist sowohl für [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8)- als auch für [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook)-Geräte verfügbar. Verwenden Sie die Anweisungen im Abschnitt [Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps](https://technet.microsoft.com/library/mt627829.aspx), um eine MAM-Richtlinie zu erstellen.  
-
-
-- **Konfigurationsrichtlinien für mobile Apps bieten mehr Flexibilität beim Angeben von Benutzerinformationen für iOS-Apps** Sie können Benutzereinstellungen angeben, die eine iOS-App beim Öffnen möglicherweise benötigt. Sie können beispielsweise einen Netzwerkport oder Benutzernamen angeben. Weitere Informationen finden Sie unter [Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
-
-
-- **Bereitstellen von Adobe Reader für Microsoft Intune für von Intune verwaltete iOS-Geräte in Ihrem Unternehmen** Die Adobe Reader-App für iOS kann jetzt auf registrierten Geräten mit der Intune-Richtlinie für die Verwaltung mobiler Anwendungen verwaltet werden.
-
-- **Sicherstellen, dass bereitgestellte Webclips im Managed Browser geöffnet werden** Sie können zielabhängige Webclips bereitstellen, die auf iOS- und Android-Geräten nur im Managed Browser geöffnet werden können. Angenommen, Sie stellen Links zu Unternehmensressourcen über das Unternehmensportal bereit. Wenn Benutzer zu den Links navigieren, werden diese direkt im Managed Browser geöffnet, in dem sie durch die MAM-Richtlinie geschützt werden können. Weitere Informationen finden Sie unter [Bereitstellen von Apps](/intune/deploy-use/deploy-apps).
-
-
-- **Suchen, Verwalten und Verteilen von Windows Store für Unternehmen-Apps für Windows 10-Geräte in der Intune-Verwaltungskonsole** Intune bietet Unterstützung für Windows Store für Unternehmen und hilft beim Suchen, Verwalten und Verteilen von Apps auf Windows 10-Geräten, die Sie verwalten. Windows Store für Unternehmen ermöglicht Ihnen die Bereitstellung und Überwachung dieser Apps in der Intune-Verwaltungskonsole, die Sie bereits für die Verwaltung anderer Apps nutzen. Insbesondere verwaltet Windows Store für Unternehmen den Inhalt und die Lizenzierung von „online lizenzierten Apps“. Weitere Informationen finden Sie unter [Verwalten von Apps, die im Windows Store für Unternehmen erworben wurden](/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
-
-
-### Geräteverwaltung
-- **Verteilen von PFX-Zertifikaten an iOS-Geräte** Intune-Administratoren können iOS-PFX-Zertifikate für die WLAN-, E-Mail- und VPN-Authentifizierung auf iOS-Geräten erstellen und bereitstellen. Diese Funktion ist bereits für Android- und Windows 10-Geräte verfügbar. Weitere Informationen finden Sie unter [Aktivieren des Zugriffs auf Unternehmensressourcen mithilfe von Zertifikatprofilen](/intune/deploy-use/secure-resource-access-with-certificate-profiles).
-
-
-- **Anwenden von Apps und Richtlinien auf verschiedene Gerätegruppen basierend auf der Benutzerkategorieauswahl** Intune-Administratoren können jetzt benutzerdefinierte Gerätekategorien für Benutzer definieren, aus deren während der Registrierung ausgewählt werden kann. Administratoren können beispielsweise die Benutzer bitten anzugeben, ob sie ein Gerät für „Kasse“, „Lieferfahrzeug“ oder „Lagerraum“ registrieren. Die ausgewählte Kategorie sorgt dafür, dass das Gerät Mitglied einer Intune-Gerätegruppe wird, die für die Bereitstellung anderer Apps und Richtlinien für das registrierte Gerät verwendet werden kann. Weitere Informationen finden Sie unter [Kategorisieren von Geräten mithilfe der Zuordnung von Gerätegruppen](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune).
-
-### Änderungen und Updates für das Unternehmensportal von Microsoft
-In dieser Version wurden die folgenden Änderungen am Unternehmensportal vorgenommen:
-
-**Android-Unternehmensportal-App**
-
-* Wenn Ihre Benutzer eine App starten, die durch die mobile Anwendungsverwaltung (MAM) verwaltet wird, wird ihnen eine Meldung angezeigt, die sie darüber benachrichtigt, dass die App von ihrem Unternehmen verwaltet wird. Benutzer können jetzt auf einen Link zu weiteren Informationen tippen, um hier [weitere Informationen](https://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_use_mgd_apps) zur Bedeutung von „verwalteten Apps“ zu erhalten. Sie können auch auf die Option „Nicht mehr anzeigen“ tippen, damit die Nachricht beim Starten der App nicht mehr angezeigt wird.
-* Es wurden neue Bildschirme hinzugefügt, um die Benutzer durch den Registrierungsprozess zu leiten und weitere Informationen dazu bereitzustellen, warum sich Benutzer registrieren sollten. Zudem werden Informationen angezeigt, welche IT-Administratoren ihre registrierten Geräte anzeigen können und welche dazu nicht in der Lage sind. Weitere Informationen finden Sie in den [Registrierungsanweisungen](https://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_enroll_devc).
-* Fehlermeldungen für die Registrierung werden jetzt in der Unternehmensportal-App angezeigt. Zuvor wurden diese Nachrichten auf der Unternehmensportal-Website angezeigt. Durch diese Änderung werden alle Fehlermeldungen jetzt an einem und nicht an zwei verschiedenen Orten angezeigt.
-
-
-**iOS-Unternehmensportal-App**
-* Wenn Ihre Benutzer eine App starten, die durch die mobile Anwendungsverwaltung (MAM) verwaltet wird, wird ihnen eine Meldung angezeigt, die sie darüber benachrichtigt, dass die App von ihrem Unternehmen verwaltet wird. Benutzer können jetzt auf einen Link zu weiteren Informationen tippen, um hier [weitere Informationen](https://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_use_mgd_apps) zur Bedeutung von „verwalteten Apps“ zu erhalten. Sie können auch auf die Option „Nicht mehr anzeigen“ tippen, damit die Nachricht beim Starten der App nicht mehr angezeigt wird.
-* Es wurden neue Bildschirme hinzugefügt, um die Benutzer durch den Registrierungsprozess zu leiten und weitere Informationen dazu bereitzustellen, warum sich Benutzer registrieren sollten. Zudem werden Informationen angezeigt, welche IT-Administratoren ihre registrierten Geräte anzeigen können und welche dazu nicht in der Lage sind. Weitere Informationen finden Sie in den [Registrierungsanweisungen](https://technet.microsoft.com/library/mt598622.aspx#BKMK_enroll_ios_device).
-* Fehlermeldungen für die Registrierung werden jetzt in der Unternehmensportal-App angezeigt. Zuvor wurden diese Nachrichten auf der Unternehmensportal-Website angezeigt. Durch diese Änderung werden alle Fehlermeldungen jetzt an einem und nicht an zwei verschiedenen Orten angezeigt.
-
-
-
-
-## Februar 2016
-### Änderungen und Updates für das Unternehmensportal von Microsoft
-
-In dieser Version wurden die folgenden Änderungen am Unternehmensportal vorgenommen:
-
-#### Android-Unternehmensportal-App
-- Es wurden neue Bildschirme hinzugefügt, um die Benutzer durch den Registrierungsprozess zu leiten und weitere Informationen dazu bereitzustellen, warum sich Benutzer registrieren sollten. Zudem werden Informationen angezeigt, welche IT-Administratoren ihre registrierten Geräte anzeigen können und welche dazu nicht in der Lage sind. Weitere Informationen finden Sie in den [Registrierungsanweisungen](https://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_enroll_devc).
-- Fehlermeldungen für die Registrierung werden jetzt in der Unternehmensportal-App angezeigt. Zuvor wurden diese Nachrichten auf der Unternehmensportal-Website angezeigt. Durch diese Änderung werden alle Fehlermeldungen jetzt an einem und nicht an zwei verschiedenen Orten angezeigt.
-
-#### iOS-Unternehmensportal-App
- - Es wurden neue Bildschirme hinzugefügt, um die Benutzer durch den Registrierungsprozess zu leiten und weitere Informationen dazu bereitzustellen, warum sich Benutzer registrieren sollten. Zudem werden Informationen angezeigt, welche IT-Administratoren ihre registrierten Geräte anzeigen können und welche dazu nicht in der Lage sind. Weitere Informationen finden Sie in den [Registrierungsanweisungen](https://technet.microsoft.com/library/mt598622.aspx#BKMK_enroll_ios_device).
-
- - Fehlermeldungen für die Registrierung werden jetzt in der Unternehmensportal-App angezeigt. Zuvor wurden diese Nachrichten auf der Unternehmensportal-Website angezeigt. Durch diese Änderung werden alle Fehlermeldungen jetzt an einem und nicht an zwei verschiedenen Orten angezeigt.
-
-
-## Januar 2016
-
-### Nutzen von Windows 10-Features
-* **Bedingter Zugriff mit dem Integritätsnachweisdienst** Intune-Administratoren können jetzt den Status des Windows 10-Nachweises zur Geräteintegrität in der Intune-Verwaltungskonsole anzeigen. Mit dem Nachweis der Geräteintegrität kann der Administrator sicherstellen, dass Clientcomputer über vertrauenswürdige BIOS-, TPM- und Bootsoftwarekonfigurationen verfügen. Damit Sie den Nachweis der Geräteintegration unterstützen, müssen die Clientgeräte Windows 10 mit aktiviertem TPM 2 ausführen. Der Nachweis der Geräteintegrität zeigt die Anzahl der Geräte an, die jeweils für Folgendes aktiviert sind:
-    * Antischadsoftware-Frühstart
-    * BitLocker
-    * Sicherer Start
-    * Codeintegrität
-
-    Weitere Informationen zum Festlegen der Geräteintegrität, zu erfassten Datenpunkten und zum Integritätsnachweisbericht finden Sie unter [Einführung in Gerätekompatibilitätsrichtlinien für Microsoft Intune](/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune). Die [HAS-Dienstdetails](https://msdn.microsoft.com/en-us/library/dn934876.aspx) erläutern den Dienst ausführlich.
-
-* **Windows 10 Passport for Work-Richtlinie und Zertifikatverwaltung** Intune ermöglicht die [Integration in Microsoft Passport for Work](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune). Dies ist eine alternative Anmeldemethode für Windows 10, die Active Directory oder ein Azure Active Directory-Konto verwendet, um ein Kennwort, eine Smartcard oder eine virtuelle Smartcard zu ersetzen. Mit Passport können Sie anstelle eines Kennworts eine Benutzeraktion zur Anmeldung verwenden. Eine Benutzeraktion kann eine einfache PIN, eine biometrische Authentifizierung wie Windows Hello oder ein externes Gerät sein, z. B. ein Fingerabdruckleser.
-
-* **VPN für bestimmte Apps** Sie können Apps auswählen, die automatisch eine Verbindung zum Unternehmensnetzwerk über VPN herstellen. Erstellen Sie die Liste der Apps bei der Einrichtung des VPN-Profils, wie unter „Benutzer beim Herstellen einer Verbindung zu ihren VPN-Profilen mit Microsoft Intune unterstützen“.
-
-* **Unterstützung für vollständiges Zurücksetzen unter Windows 10** Sie können jetzt eine vollständige Remotezurücksetzung von Windows 10-Desktopgeräten starten, die über die Intune-Verwaltungskonsole bei Intune registriert wurden. Bei der vollständigen Zurücksetzung unter Windows 10 wird das Gerät auf die Werkseinstellungen zurückgesetzt.
-
-
-### VPP-Update (Apple Volume Purchase Program)
-Intune kann Sie jetzt beim [Verwalten von Apps unterstützen, die Sie über das Apple Volume Purchase Program (VPP) for Business erworben haben](/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune). Dies umfasst die Synchronisierung von Lizenzinformationen zwischen Apple und Intune sowie die Nachverfolgung der Anzahl von Kopien, die Sie von jeder App bereitgestellt haben.
-
-### Verwenden von IMEI-Nummern zum Identifizieren von unternehmenseigenen Geräten
-Sie können jetzt für mobile Geräteplattformen, die über eine IMEI-Nummer verfügen, die entsprechenden [IMEI-Nummern (International Mobile Equipment Identity) importieren](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers), um die Identifizierung von unternehmenseigenen mobilen Geräten zu unterstützen. Nach der Registrierung in Intune werden Geräte mit importierten IMEI-Nummern als unternehmenseigene Geräte gekennzeichnet, die zum Anwenden von Richtlinien verwendet werden können, die sich von denen unterscheiden, die auf Geräte angewendet werden, die sich im privaten Besitz befinden.
-
-### Weitere Apps sind jetzt mit Intune MAM-Richtlinien kompatibel.
-Weitere Apps von Microsoft-Partnern sind jetzt mit Intune-Verwaltungsrichtlinien für mobile Anwendungen (MAM) kompatibel (für Geräte, die von Intune verwaltet werden):
-* Box for EMM (von Box Inc) – nur iOS
-* Adobe Reader (von Adobe) – nur Android
-* Foxit PDF Reader (von der Foxit Corporation) – iOS und Android
-
-
-### Unterstützung von Internet Explorer 9 endet im Januar
-Ab Februar 2016 wird Internet Explorer 9 nicht mehr als offizieller Browser für den Zugriff auf die Microsoft Intune-Unternehmensportalwebsite, das Intune-Kontoportal und die Intune-Verwaltungskonsole unterstützt. Sie müssen zu Internet Explorer 10 oder höher migrieren.
-
-
 >[!div class="step-by-step"]
 
 >[&larr; **Neuheiten in Intune**](whats-new-in-microsoft-intune.md)    
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

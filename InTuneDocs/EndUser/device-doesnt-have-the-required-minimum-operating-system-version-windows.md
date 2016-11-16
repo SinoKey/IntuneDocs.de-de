@@ -2,10 +2,10 @@
 title: "Das Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a9343f7aa1ab4761bcbf36f829fe0e9be293515
-ms.openlocfilehash: a14f347ae65118852ba914085548cd17c8ec31aa
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 376866a4d2a96594413d8edd92f2a20cc37339cb
 
 
 ---
 
 
-# Das Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems
+# <a name="device-doesnt-have-the-required-minimum-operating-system-version"></a>Das Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems
 
 Ihr Windows-Gerät erfüllt nicht die Anforderung Ihrer IT-Abteilung an die Mindestversion des Betriebssystems. Überprüfen Sie vor dem Aktualisieren Ihres mobilen Geräts die aktuelle Version des Betriebssystems, indem Sie auf **Einstellungen** &gt; **Info** auswählen. Um Ihr Gerät anschließend zu aktualisieren, wählen Sie **Einstellungen** &gt; **Handyupdate** &gt; **Nach Updates suchen**.
 
@@ -37,6 +37,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

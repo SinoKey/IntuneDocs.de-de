@@ -2,7 +2,8 @@
 title: Was geschieht beim Erstellen eines Arbeitsprofils? | Microsoft Intune
 description: "Beschreibt das Verschlüsseln eines Android-Geräts."
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: ad24422cd2708eb4fa59bb96d9f39b7a6444219b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 77d420bd1a635f8cd64b32c584c2be62f52f1706
 
 
 ---
 
 
-# Was geschieht beim Erstellen eines Arbeitsprofils?
+# <a name="what-happens-when-you-create-a-work-profile"></a>Was geschieht beim Erstellen eines Arbeitsprofils?
 
-Sie können ein Arbeitsprofil auf Ihrem Gerät einrichten, um auf Ihre Geschäfts-, Schul- oder Uni-E-Mails, -Apps und -Dateien zugreifen zu können.
+Ein Arbeitsprofil legen Sie auf Ihrem Gerät fest, um Ihre Geschäfts-, Schul- oder Uni-E-Mails, -Apps und -daten von Ihren privaten Daten zu trennen.
 
 Folgendes geschieht beim Erstellen eines Arbeitsprofils:
 
-- Ihr IT-Administrator kann nur arbeitsbezogene Apps, Einstellungen und Konfigurationen auf Ihrem Gerät verwalten, nicht jedoch Ihre persönlichen Apps oder Daten.
+- Ihr IT-Administrator kann nur arbeitsbezogene E-Mails, Apps, Einstellungen und Daten auf Ihrem Gerät verwalten, nicht jedoch Ihre privaten Apps oder Daten.
 
 - Arbeitsbezogene Apps erhalten Sie über den Play Store for Work. Persönliche Apps erhalten Sie wie gewohnt über den Google Play Store. Der IT-Administrator kann Ihre persönlichen Apps weder anzeigen noch verwalten.
 

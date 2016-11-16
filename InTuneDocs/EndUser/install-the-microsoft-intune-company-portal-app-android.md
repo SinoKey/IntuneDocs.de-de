@@ -2,8 +2,8 @@
 title: Installieren der Microsoft Intune-Unternehmensportal-App | Microsoft Intune
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 734e58a590b6d6eab97379c10b7999d5560be225
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 1d0116a9ac57078cb5c546619ac8f3df7594d26d
 
 
 ---
 
 
-# Installieren der Microsoft Intune-Unternehmensportal-App
+# <a name="install-the-microsoft-intune-company-portal-app"></a>Installieren der Microsoft Intune-Unternehmensportal-App
 
 Das Unternehmensportal ist eine App, die Sie auf Ihrem Android-Gerät installieren, damit Sie Zugriff auf Ihre Unternehmens-, Schul- oder Uni-Apps, E-Mail und das Netzwerk erhalten.  Bevor Sie Zugriff erhalten, müssen Sie die Unternehmensportal-App installieren und dann mithilfe der App Ihr Gerät bei Microsoft Intune registrieren. Weitere Informationen dazu, was es bedeutet, wenn Sie Ihr Gerät registrieren, finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
 
@@ -49,6 +49,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

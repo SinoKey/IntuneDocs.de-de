@@ -3,6 +3,7 @@ title: "Verwalten der iOS-Aktivierungssperre auf Geräten | Microsoft Intune"
 description: "Microsoft Intune kann Sie beim Verwalten der iOS-Aktivierungssperre unterstützen, einem Feature der App „Mein iPhone suchen“ für iOS 7.1 und höher."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
-ms.openlocfilehash: 2b44779fdac0764a3e7a18f1c365050e9800f902
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 4e19836f4ce30434bb7d34db8323f811adf5d770
 
 
 ---
@@ -92,6 +93,6 @@ Es gibt zwei Möglichkeiten zur Ermittlung, welche Geräte die Aktivierungssperr
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

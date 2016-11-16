@@ -3,8 +3,9 @@ title: Konfigurieren von Zertifikatprofilen | Microsoft Intune
 description: Erfahren Sie, wie Sie ein Intune-Zertifikatprofil erstellen.
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
-ms.openlocfilehash: 3f657e6a49fb83faddf9c139985369f27656b4bd
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
 
 
 ---
@@ -63,6 +64,11 @@ Sie müssen ein vertrauenswürdiges Zertifikatprofil erstellen, bevor Sie ein Si
 4.  Wählen Sie **Richtlinie speichern** aus.
 
 Die neue Richtlinie wird im Arbeitsbereich **Richtlinie** angezeigt. Sie können sie nun bereitstellen.
+
+> [!NOTE]
+>
+> Android- und Android for Work-Geräte zeigen eine Benachrichtigung an, dass ein Drittanbieter ein vertrauenswürdiges Zertifikat installiert hat.
+    
 
 ## **Aufgabe 3**: Erstellen von SCEP- oder PFX-Zertifikatprofilen
 Nachdem Sie ein Profil des vertrauenswürdigen Zertifizierungsstellenzertifikats erstellt haben, erstellen Sie SCEP- oder PFX-Zertifikatprofile für jede Plattform, die Sie verwenden möchten. Wenn Sie ein SCEP-Zertifikatprofil erstellen, müssen Sie ein vertrauenswürdiges Zertifikatprofil für dieselbe Plattform angeben. Auf diese Weise werden die beiden Zertifikatprofile verknüpft. Sie müssen jedes Profil trotzdem separat bereitstellen.

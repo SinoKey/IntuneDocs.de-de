@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/11/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
-ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
+ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
+ms.openlocfilehash: b2cba92c4cf75412b562267aef9d6a138f25952b
 
 
 ---
 
-# Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien
+# <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien
 Microsoft Intune-*Richtlinien* sind Gruppen von Einstellungen zur Steuerung der Features auf mobilen Geräten und Computern. Sie erstellen Richtlinien mithilfe von Vorlagen, in denen empfohlene oder benutzerdefinierte Einstellungen enthalten sind, und stellen diese dann für Geräte- oder Benutzergruppen bereit.
 
-## Richtlinientypen
+## <a name="types-of-policies"></a>Richtlinientypen
 
 Intune-Richtlinien lassen sich in die folgenden Kategorien einteilen: Die von Ihnen verwendete Kategorie bestimmt, wie Sie die Richtlinie erstellen und bereitstellen können.
 
@@ -37,13 +37,11 @@ Weitere Informationen finden Sie unter [Beschränken des Zugriffs auf E-Mail- un
 - **Ressourcenzugriffsrichtlinien:** Diese Richtlinien ermöglichen Benutzern den Zugriff auf die Dateien und Ressourcen, die sie für ihre Arbeit benötigen, und zwar unabhängig davon, wo sie sich befinden.
 Weitere Informationen finden Sie unter [Aktivieren des Zugriffs auf Unternehmensressourcen mit Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Eine vollständige Liste der Intune-Richtlinien finden Sie unter [Referenz zu Microsoft Intune-Richtlinien](microsoft-intune-policy-reference.md).
 
-
-
-
-## Erstellen einer Konfigurationsrichtlinie
+## <a name="create-a-configuration-policy"></a>Erstellen einer Konfigurationsrichtlinie
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Optionen **Richtlinie** &gt; **Konfigurationsrichtlinien** &gt; **Hinzufügen**.
 
@@ -84,7 +82,7 @@ Nachdem Sie eine Richtlinie erstellt haben, werden Sie sie in der Regel für ein
 > [!TIP]
 > Sie stellen nicht alle Richtlinientypen bereit. Beispielsweise wird die Richtlinie für die Verwaltung mobiler Anwendungen (Mobile Application Management, MAM) nicht bereitgestellt. Diese Richtlinie wird stattdessen einer App zugeordnet, die Sie dann bereitstellen.
 
-## Bereitstellen einer Konfigurationsrichtlinie
+## <a name="deploy-a-configuration-policy"></a>Bereitstellen einer Konfigurationsrichtlinie
 
 1.  Wählen Sie im Arbeitsbereich **Richtlinie** die Richtlinie aus, die Sie bereitstellen möchten, und wählen Sie dann **Bereitstellung verwalten** aus.
 
@@ -96,7 +94,7 @@ Nachdem Sie eine Richtlinie erstellt haben, werden Sie sie in der Regel für ein
 
 Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informationen zur Bereitstellung im unteren Teil der Richtlinienliste anzeigen.
 
-## Verwalten von Richtlinien
+## <a name="manage-policies"></a>Verwalten von Richtlinien
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Richtlinie**, navigieren Sie zu der Richtlinie, die Sie verwalten möchten, und wählen Sie sie aus.
 
@@ -107,9 +105,9 @@ Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informa
 - **Bereitstellung verwalten**: Wählen Sie die Gruppe aus, für die Sie die Richtlinie bereitstellen möchten, und wählen Sie dann **Hinzufügen**.
 
 
-## Häufig gestellte Fragen zu Intune-Richtlinien
+## <a name="frequently-asked-questions-about-intune-policies"></a>Häufig gestellte Fragen zu Intune-Richtlinien
 
-### Wie lange dauert es, bis mobile Geräte Richtlinien oder Apps nach ihrer Bereitstellung abrufen können?
+### <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-deployed"></a>Wie lange dauert es, bis mobile Geräte Richtlinien oder Apps nach ihrer Bereitstellung abrufen können?
 Wenn eine Richtlinie oder App bereitgestellt wird, beginnt Intune sofort mit dem Versuch, das Gerät zu benachrichtigen und zum Einchecken beim Intune-Dienst zu veranlassen. Dies dauert normalerweise weniger als fünf Minuten.
 
 Wenn ein Gerät sich nach der ersten Benachrichtigung nicht zum Abrufen der Richtlinie eincheckt, unternimmt Intune drei weitere Versuche.  Wenn das Gerät offline ist (z. B. ausgeschaltet oder nicht mit einem Netzwerk verbunden), erhält es die Benachrichtigungen möglicherweise nicht. In diesem Fall erhält das Gerät die Richtlinie beim nächsten geplanten Einchecken beim Intune-Dienst wie folgt:
@@ -128,12 +126,12 @@ Wenn das Gerät gerade registriert wurde, ist die Eincheckfrequenz höher:
 
 Benutzer können auch jederzeit die Unternehmensportal-App öffnen und das Gerät synchronisieren, um sofort auf Richtlinien zu prüfen.
 
-### Bei welchen Aktionen sendet Intune sofort eine Benachrichtigung an ein Gerät?
+### <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Bei welchen Aktionen sendet Intune sofort eine Benachrichtigung an ein Gerät?
 Geräte checken bei Intune entweder beim Erhalt einer Benachrichtigung ein, die sie dazu auffordert, oder während ihres regelmäßigen geplanten Eincheckvorgangs.  Wenn Sie für ein Gerät oder einen Benutzer ausdrücklich eine Aktion durchführen, wie z. B. Zurücksetzen, Sperren, Zurücksetzen der Kennung, App-Bereitstellung, Profilbereitstellung (WLAN, VPN, E-Mail usw.) oder Bereitstellung der Richtlinie, beginnt Intune sofort mit dem Versuch, das Gerät zu benachrichtigen, dass es sich zum Erhalten dieser Updates beim Intune-Dienst einchecken soll.
 
 Andere Änderungen, wie z. B. die Überarbeitung der Kontaktinformationen im Unternehmensportal, führen nicht zu einer sofortigen Benachrichtigung von Geräten.
 
-### Wie finde ich heraus, welche Einstellungen angewendet werden, wenn für denselben Benutzer oder dasselbe Gerät mehrere Richtlinien bereitgestellt werden?
+### <a name="if-multiple-policies-are-deployed-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Wie finde ich heraus, welche Einstellungen angewendet werden, wenn für denselben Benutzer oder dasselbe Gerät mehrere Richtlinien bereitgestellt werden?
 Bei Bereitstellung mehrerer Richtlinien für denselben Benutzer oder dasselbe Gerät erfolgt die Auswertung, welche Einstellung angewendet werden soll, auf der Ebene der einzelnen Einstellungen:
 
 -   Kompatibilitätsrichtlinieneinstellungen haben immer Vorrang vor Konfigurationsrichtlinieneinstellungen.
@@ -142,22 +140,22 @@ Bei Bereitstellung mehrerer Richtlinien für denselben Benutzer oder dasselbe Ge
 
 -   Falls eine Konfigurationsrichtlinieneinstellung im Konflikt mit einer Einstellung in einer anderen Konfigurationsrichtlinie steht, wird dieser Konflikt in der Intune-Konsole angezeigt. Konflikte dieser Art müssen Sie manuell auflösen.
 
-### Was geschieht, wenn Richtlinien für die Verwaltung mobiler Anwendungen miteinander in Konflikt stehen? Welche wird auf die App angewendet?
+### <a name="what-happens-when-mobile-application-management-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>Was geschieht, wenn Richtlinien für die Verwaltung mobiler Anwendungen miteinander in Konflikt stehen? Welche wird auf die App angewendet?
 Konfliktwerte sind die restriktivsten Einstellungen, die in einer MAM-Richtlinie zur Verfügung stehen, außer für die Zahleneingabefelder (z. B. PIN-Versuche vor dem Zurücksetzen).  Die Zahleneingabefelder werden auf dieselben Werte gesetzt, die auch verwendet werden, wenn Sie in der Konsole eine MAM-Richtlinie erstellen und die empfohlenen Einstellungen verwenden.
 
 Konflikte treten auf, wenn zwei Richtlinieneinstellungen identisch sind.  Beispielsweise haben Sie zwei MAM-Richtlinien konfiguriert, die mit Ausnahme der Einstellung für Kopieren/Einfügen identisch sind.  In diesem Szenario wird die Einstellung für Kopieren und Einfügen auf den restriktivsten Wert festgelegt, die übrigen Einstellungen werden jedoch wie konfiguriert angewendet.
 
 Wenn eine Richtlinie für die App bereitgestellt wird und in Kraft tritt und anschließend eine weitere bereitgestellt wird, erhält die zuerst bereitgestellte Richtlinie Vorrang und bleibt wirksam, während die zweite als in Konflikt stehend angezeigt wird. Wenn beide Richtlinien gleichzeitig angewendet werden, also keine vorherige Richtlinie vorhanden ist, stehen beide in Konflikt. Alle in Konflikt stehenden Einstellungen werden auf die restriktivsten Werte festgelegt.
 
-### Was geschieht, wenn Sie benutzerdefinierte iOS-Richtlinien in Konflikt stehen?
+### <a name="what-happens-when-ios-custom-policies-conflict"></a>Was geschieht, wenn Sie benutzerdefinierte iOS-Richtlinien in Konflikt stehen?
 Intune bewertet nicht die Nutzlast von Apple-Konfigurationsdateien oder einer benutzerdefinierten OMA-URI-Richtlinie (Open Mobile Alliance Uniform Resource Identifier). Es dient lediglich als Übermittlungsmechanismus.
 
 Wenn Sie eine benutzerdefinierte Richtlinie bereitstellen, stellen Sie sicher, dass die konfigurierten Einstellungen nicht mit Kompatibilitäts-, Konfigurations- oder anderen benutzerdefinierten Richtlinien in Konflikt stehen. Bei einer benutzerdefinierten Richtlinie mit Einstellungskonflikten werden die Einstellungen in zufälliger Reihenfolge angewendet.
 
-### Was geschieht, wenn eine Richtlinie gelöscht wird oder nicht mehr gilt?
+### <a name="what-happens-when-a-policy-is-deleted-or-no-longer-applicable"></a>Was geschieht, wenn eine Richtlinie gelöscht wird oder nicht mehr gilt?
 Wenn Sie eine Richtlinie löschen oder ein Gerät aus einer Gruppe entfernen, für die eine Richtlinie bereitgestellt wurde, werden die Richtlinie und die Einstellungen gemäß den folgenden Listen von dem Gerät entfernt.
 
-#### Angemeldete Geräte
+#### <a name="enrolled-devices"></a>Angemeldete Geräte
 
 - WLAN-, VPN-, Zertifikat- und E-Mail-Profile: Diese Profile werden von allen unterstützten registrierten Geräten entfernt.
 - Alle anderen Richtlinientypen:
@@ -194,7 +192,7 @@ Wenn Sie eine Richtlinie löschen oder ein Gerät aus einer Gruppe entfernen, f�
         - Datenroaming zulassen
         - Automatische Synchronisierung beim Roaming zulassen
 
-#### Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird
+#### <a name="windows-pcs-running-the-intune-client-software"></a>Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird
 
 - **Endpoint Protection-Einstellungen**: Die Einstellungen werden auf die empfohlenen Werte zurückgesetzt. Die einzige Ausnahme ist die Einstellung **Microsoft Active Protection Service beitreten**, deren Standardwert **Nein** lautet. Weitere Informationen finden Sie unter [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 - **Einstellungen für Softwareupdates**: Die Einstellungen werden auf die Standardwerte des Betriebssystems zurückgesetzt. Weitere Informationen finden Sie unter [Aktualisieren Ihrer Windows-PCs mit Softwareupdates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
@@ -202,17 +200,17 @@ Wenn Sie eine Richtlinie löschen oder ein Gerät aus einer Gruppe entfernen, f�
 - **Einstellungen für die Windows-Firewall**: Die Einstellungen werden auf die Standardwerte des Computerbetriebssystems zurückgesetzt. Weitere Informationen finden Sie unter [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 
-### Wie kann ich die Richtlinien auf einem Gerät aktualisieren und so sicherstellen, dass sie aktuell sind (gilt nur für Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird)?
+### <a name="how-can-i-refresh-the-policies-on-a-device-to-ensure-that-they-are-current-applies-to-windows-pcs-running-the-intune-client-software-only"></a>Wie kann ich die Richtlinien auf einem Gerät aktualisieren und so sicherstellen, dass sie aktuell sind (gilt nur für Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird)?
 
 1.  Wählen Sie in einer beliebigen Gerätegruppe die Geräte aus, auf denen die Richtlinien aktualisiert werden sollen, und wählen Sie dann **Remoteaufgaben** &gt; **Richtlinien aktualisieren**.
 2.  Wählen Sie in der Intune-Verwaltungskonsole unten rechts die Option **Remoteaufgaben**, um den Aufgabenstatus zu überprüfen.
 
-### Wo finde ich Hilfe zur Problembehandlung bei Richtlinien?
+### <a name="where-can-i-find-help-troubleshooting-policies"></a>Wo finde ich Hilfe zur Problembehandlung bei Richtlinien?
 
 Siehe [Behandlung von Problemen mit Richtlinien in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

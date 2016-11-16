@@ -2,10 +2,10 @@
 title: "Das iOS-Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a9343f7aa1ab4761bcbf36f829fe0e9be293515
-ms.openlocfilehash: da1c2da0970d38b410ba67a03f1c302c2b352f27
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: bfd12893c2ffbff07119c66a89909bdacc216108
 
 
 ---
 
 
-# Das iOS-Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems
+# <a name="ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>Das iOS-Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems
 
 Ihr iOS-Gerät erfüllt nicht die Anforderung Ihrer IT-Abteilung an die Mindestversion des Betriebssystems. Überprüfen Sie vor dem Aktualisieren Ihres Geräts die aktuelle Version des Betriebssystems, indem Sie auf **Einstellungen** &gt; **Info** auswählen. Um Ihr Gerät auf die neueste Version zu aktualisieren, wählen Sie **Einstellungen** &gt; **Allgemein** &gt; **Softwareupdate** aus.
 
@@ -30,6 +30,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

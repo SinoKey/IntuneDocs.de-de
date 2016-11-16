@@ -3,6 +3,7 @@ title: "Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr 
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/16/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: bf3d0db1b4322ff417e96331b29faabd046abb65
 
 
 ---
@@ -25,21 +26,21 @@ ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 Wenn Sie die Unternehmensportal-App installieren und Ihr Android-Gerät bei Intune registrieren, können Sie folgende Aufgaben mit der Unternehmensportal-App ausführen:
 
--   Zugreifen auf das Netzwerk des Unternehmens und auf E-Mail- sowie andere arbeitsbezogene Dateien
+-   Zugreifen auf das Netzwerk des Unternehmens und auf E-Mails sowie andere arbeitsbezogene Dateien
 
 -   Abrufen von Unternehmens-Apps aus dem Unternehmensportal
 
--   Automatisches Konfigurieren Ihres geschäftlichen E-Mail-Kontos
+-   Automatisches Einrichten Ihres Unternehmens-E-Mail-Kontos
 
--   Zurücksetzen Ihres Smartphones auf die werkseitigen Standardeinstellungen bei Verlust oder Diebstahl
+-   Zurücksetzen Ihres Smartphones auf die Werkseinstellungen bei Verlust oder Diebstahl
 
 Wenn Sie Ihr Android-Gerät registrieren, erteilen Sie Ihrem IT-Administrator eine Zugriffsberechtigung für das Gerät. IT-Administratoren können folgende Dinge tun:
 
--   Zurücksetzen des Geräts auf die standardmäßigen Werkseinstellungen. Dies ist hilfreich, wenn das Gerät verloren geht oder gestohlen wird.
+-   Zurücksetzen des Geräts auf die Werkseinstellungen. Dies ist hilfreich, wenn das Gerät verloren geht oder gestohlen wird.
 
 -   Entfernen aller unternehmensrelevanten Daten. Ihre persönlichen Daten und Einstellungen werden nicht entfernt.
 
--   Festlegen von Anforderungen auf Ihrem Gerät. Z.B. muss ein Gerätekennwort oder eine PIN gesetzt sein, um Unternehmensdaten zu schützen. Ihr IT-Administrator kann möglicherweise auch einschränken, wie oft Sie ein falsches Kennwort eingeben können und das Gerät für Sie sperren, wenn Sie das Kennwort zu oft falsch eingeben.
+-   Festlegen von Anforderungen auf Ihrem Gerät. Beispielsweise muss ein Gerätekennwort oder eine PIN festgelegt sein, um zu helfen, Unternehmensdaten zu schützen. Ihr IT-Administrator kann möglicherweise auch einschränken, wie oft Sie ein falsches Kennwort eingeben können und das Gerät für Sie sperren, wenn Sie das Kennwort zu oft falsch eingeben.
 
 -   Sie müssen die Bedingungen akzeptieren.
 
@@ -47,19 +48,18 @@ Wenn Sie Ihr Android-Gerät registrieren, erteilen Sie Ihrem IT-Administrator ei
 
 -   Erfordern, dass alle Daten auf dem Gerät verschlüsselt sind, sodass die Daten geschützt sind, falls das Gerät verloren geht oder gestohlen wird
 
--   Nachdem das Gerät zum Unternehmensportal hinzugefügt wurde, erfolgt im Intervall von ca. acht Stunden Folgendes:
+Nachdem das Gerät zum Unternehmensportal hinzugefügt wurde, erfolgt im Intervall von ca. acht Stunden Folgendes:
 
-    -   Herunterladen aller Richtlinien- oder App-Updates, die Ihr IT-Administrator zur Verfügung gestellt hat.
+-   Herunterladen aller Richtlinien- oder App-Updates, die Ihr IT-Administrator zur Verfügung gestellt hat.
 
-    -   Senden aller Hardwareinventur-Updates (diese Updates enthalten keine persönlichen Informationen).
+-   Senden aller Hardwareinventur-Updates. (Diese Updates verfügen über keine privaten Informationen.)
 
-    -   Senden aller Unternehmens-App-Inventaraktualisierungen (diese Updates enthalten keine persönlichen Informationen).
+-   Senden aller Unternehmens-App-Inventaraktualisierungen. (Diese Updates verfügen über keine privaten Informationen.)
 
-Benötigen Sie Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen), oder schreiben Sie dem Microsoft Android-Team unter wintunedroidfbk@microsoft.com.
-
-
+Benötigen Sie Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen), oder schreiben Sie dem Microsoft Android-Team unter „wintunedroidfbk@microsoft.com“.
 
 
-<!--HONumber=Sep16_HO4-->
+
+<!--HONumber=Oct16_HO2-->
 
 

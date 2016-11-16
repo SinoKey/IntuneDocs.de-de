@@ -1,10 +1,11 @@
 ---
 title: "Einstellungen für Kompatibilitätsrichtlinien für Windows Geräte | Microsoft Intune"
-description: 
+description: "In diesem Thema werden die Regeln und Einstellungen beschrieben, die Sie für eine Kompatibilitätsrichtlinie für Windows-Geräte konfigurieren können."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 12239464012029e3ffff3a9bed4f4ccb2cebe633
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: c330f730b4eced38f9d0ee972063198ccafc0bcf
 
 
 ---
 
-# Einstellungen für Kompatibilitätsrichtlinien für Windows Geräte in Microsoft Intune
+# <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Einstellungen für Kompatibilitätsrichtlinien für Windows Geräte in Microsoft Intune
 
 Die in diesem Thema beschriebenen Richtlinieneinstellungen gelten für Geräte mit dem Windows-Betriebssystem. Auf die spezifische unterstützte Windows-Version wird in den folgenden Abschnitten hingewiesen.
 
@@ -27,12 +28,13 @@ Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folge
 > [!div class="op_single_selector"]
 - [Einstellungen für Kompatibilitätsrichtlinien für iOS-Geräte](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Einstellungen für Kompatibilitätsrichtlinien für Android for Work](afw-compliance-policy-settings-in-microsoft-intune)
 
-## Einstellungen für Kompatibilitätsrichtlinien für Windows Phone-Geräte
+## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Einstellungen für Kompatibilitätsrichtlinien für Windows Phone-Geräte
 Die in diesem Abschnitt aufgeführten Einstellungen werden unter Windows Phone 8.1 und höher unterstützt.
 
-## Einstellungen für die Systemsicherheit
-### Kennwort
+## <a name="system-security-settings"></a>Einstellungen für die Systemsicherheit
+### <a name="password"></a>Kennwort
 - **Kennwort zum Entsperren mobiler Geräte erforderlich:**    Legen Sie für diese Einstellung **Ja** fest, damit Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können.
 
 - **Einfache Kennwörter zulassen:**    Legen Sie für diese Einstellung **Ja** fest, damit Benutzer einfache Kennwörter wie „**1234**“ oder „**1111**“ erstellen können.
@@ -59,27 +61,27 @@ Die in diesem Abschnitt aufgeführten Einstellungen werden unter Windows Phone 8
 - **Kennworteingabe verlangen, wenn das Gerät aus dem Leerlauf zurückkehrt:** Diese Einstellung sollte zusammen mit der Einstellung **Minuten Inaktivität vor erneuter Anforderung des Kennworts** verwendet werden. Die Endbenutzer werden zur Eingabe eines Kennworts aufgefordert, um auf ein Gerät zugreifen zu können, das für die in der Einstellung **Minuten Inaktivität vor erneuter Anforderung des Kennworts** angegebene Zeit inaktiv war.
 
   **Diese Einstellung gilt nur für Windows 10 Mobile-Geräte.**
-### Verschlüsselung
+### <a name="encryption"></a>Verschlüsselung
 - **Verschlüsselung auf mobilen Geräten vorschreiben:** Legen Sie diese Einstellung auf **Ja** fest, damit das Gerät verschlüsselt werden muss, um eine Verbindung mit Ressourcen herzustellen.
 
-## Einstellungen für die Geräteintegrität
+## <a name="device-health-settings"></a>Einstellungen für die Geräteintegrität
 - **Geräte müssen als fehlerfrei gemeldet werden:** Sie können eine Regel festlegen, die erfordert, dass **Windows 10 Mobile**-Geräte in neuen oder vorhandenen Kompatibilitätsrichtlinien als fehlerfrei gemeldet werden.  Wenn diese Einstellung aktiviert ist, werden Windows 10-Geräte über den Integritätsnachweisdienst (Health Attestation Service, HAS) für die folgenden Datenpunkte ausgewertet:
   -  **BitLocker ist aktiviert:** Wenn BitLocker aktiviert ist, kann das Gerät auf dem Laufwerk gespeicherte Daten vor unbefugtem Zugriff schützen, wenn das System ausgeschaltet wird oder in den Ruhezustand wechselt. Die Windows BitLocker-Laufwerksverschlüsselung verschlüsselt alle auf einem Volume mit Windows-Betriebssystem gespeicherten Daten. BitLocker verwendet TPM zum Schutz des Windows-Betriebssystems und der Benutzerdaten und stellt damit sicher, dass ein Computer nicht manipuliert wird, selbst wenn dieser unbeaufsichtigt ist, verloren geht oder gestohlen wird. Wenn der Computer mit einem kompatiblen TPM ausgestattet ist, verwendet BitLocker das TPM zum Sperren der Verschlüsselungsschlüssel, die die Daten schützen. Daher kann auf die Schlüssel nicht zugegriffen werden, bis das TPM den Zustand des Computers überprüft hat.
   -  **Codeintegrität ist aktiviert:** Die Codeintegrität ist ein Feature, das die Integrität eines Treibers oder einer Systemdatei jedes Mal überprüft, wenn diese(r) in den Speicher geladen wird. Die Codeintegrität erkennt, ob ein nicht signierter Treiber oder eine Systemdatei in den Kernel geladen wird, oder ob eine Systemdatei durch böswillige Software manipuliert wurde, die von einem Benutzerkonto mit Administratorrechten ausgeführt wird.
   - **Sicherer Start ist aktiviert:** Wenn der sichere Start aktiviert ist, wird das System gezwungen, in einem vertrauenswürdigen Zustand zu starten. Wenn der sichere Start aktiviert ist, müssen die zum Starten des Computers verwendeten Kernkomponenten zudem über die richtigen kryptografischen Signaturen verfügen, denen das Unternehmen vertraut, das das Gerät hergestellt hat. Dies wird von der UEFI-Firmware überprüft, bevor der Computer gestartet werden kann. Wenn Dateien manipuliert wurden und dadurch die Signatur ungültig ist, wird das System nicht gestartet.
 
   Informationen zur Funktionsweise des HAS-Diensts finden Sie unter [Integritätsnachweis-CSP](https://msdn.microsoft.com/library/dn934876.aspx).
-##  Einstellungen für Geräteeigenschaften
+##  <a name="device-property-settings"></a>Einstellungen für Geräteeigenschaften
 - **Minimal erforderliches Betriebssystem:** Wenn ein Gerät die Anforderungen für die minimal erforderliche Betriebssystemversion nicht erfüllt, wird es als nicht kompatibel gemeldet.
     Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Die Endbenutzer können ein Upgrade des Geräts durchführen und anschließend auf die Unternehmensressourcen zugreifen.
 
 - **Maximal zulässige Betriebssystemversion:** Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt, und der Benutzer wird gebeten, sich an den IT-Administrator zu wenden. Mit diesem Gerät kann solange nicht auf Unternehmensressourcen zugegriffen werden, bis die Regel geändert und die betreffende Betriebssystemversion zugelassen wird.
 
 
-## Einstellungen für Kompatibilitätsrichtlinien für Windows-PCs
+## <a name="compliance-policy-settings-for-windows-pcs"></a>Einstellungen für Kompatibilitätsrichtlinien für Windows-PCs
 Die in diesem Abschnitt aufgeführten Einstellungen werden auf Windows-PCs unterstützt.
-## Einstellungen für die Systemsicherheit
-### Kennwort
+## <a name="system-security-settings"></a>Einstellungen für die Systemsicherheit
+### <a name="password"></a>Kennwort
 - **Minimale Kennwortlänge:** Wird unter Windows 8.1 unterstützt.
 
   Geben Sie die Mindestanzahl an Ziffern oder Zeichen an, die das Benutzerkennwort enthalten muss.
@@ -112,7 +114,7 @@ Die in diesem Abschnitt aufgeführten Einstellungen werden auf Windows-PCs unter
 
   Wenn **Kennwortverlauf speichern** aktiviert ist, geben Sie die Anzahl der zuvor verwendeten Kennwörter ein, die nicht erneut verwendet werden dürfen.
 
-## Einstellungen für die Geräteintegrität
+## <a name="device-health-settings"></a>Einstellungen für die Geräteintegrität
 - **Geräte müssen als fehlerfrei gemeldet werden:** Wird auf Windows 10-Geräten unterstützt.
 Sie können eine Regel festlegen, die erfordert, dass Windows 10-Geräte in neuen oder vorhandenen Konformitätsrichtlinien als fehlerfrei gemeldet werden.  Wenn diese Einstellung aktiviert ist, werden Windows 10-Geräte über den Integritätsnachweisdienst (Health Attestation Service, HAS) für die folgenden Datenpunkte ausgewertet:
   -  **BitLocker ist aktiviert:** Wenn BitLocker aktiviert ist, kann das Gerät auf dem Laufwerk gespeicherte Daten vor unbefugtem Zugriff schützen, wenn das System ausgeschaltet wird oder in den Ruhezustand wechselt. Die Windows BitLocker-Laufwerksverschlüsselung verschlüsselt alle auf einem Volume mit Windows-Betriebssystem gespeicherten Daten. BitLocker verwendet TPM zum Schutz des Windows-Betriebssystems und der Benutzerdaten und stellt damit sicher, dass ein Computer nicht manipuliert wird, selbst wenn dieser unbeaufsichtigt ist, verloren geht oder gestohlen wird. Wenn der Computer mit einem kompatiblen TPM ausgestattet ist, verwendet BitLocker das TPM zum Sperren der Verschlüsselungsschlüssel, die die Daten schützen. Daher kann auf die Schlüssel nicht zugegriffen werden, bis das TPM den Zustand des Computers überprüft hat.
@@ -122,7 +124,7 @@ Sie können eine Regel festlegen, die erfordert, dass Windows 10-Geräte in neue
 
   Informationen zur Funktionsweise des HAS-Diensts finden Sie unter [Integritätsnachweis-CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 
-## Einstellungen für Geräteeigenschaften
+## <a name="device-property-settings"></a>Einstellungen für Geräteeigenschaften
 - **Minimal erforderliches Betriebssystem:** Wird unter Windows 8.1 und Windows 10 unterstützt.
 
   Geben Sie hier die Hauptversion.Nebenversion.Buildnummer an. Die Versionsnummer muss derjenigen entsprechen, die durch den winver-Befehl zurückgegeben wird.
@@ -140,6 +142,6 @@ Um die Betriebssystemversion für die Einstellungen **Minimal erforderliches Bet
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

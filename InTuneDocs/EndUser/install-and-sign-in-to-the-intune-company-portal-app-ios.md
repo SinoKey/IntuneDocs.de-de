@@ -2,10 +2,10 @@
 title: Installieren und Anmelden bei der Microsoft Intune-Unternehmensportal-App | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1d133011004fa9c684f81c7adc085dc43a4a2ee4
-ms.openlocfilehash: 29bc67a9ce4120cbb9f157c8d0eefb78dce020ca
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 5633cc9b9a97211bd5ff6a2d876bdb36ee8888c9
 
 
 ---
 
 
-# Installieren und Anmelden bei der Microsoft Intune-Unternehmensportal-App
+# <a name="install-and-sign-in-to-the-intune-company-portal-app"></a>Installieren und Anmelden bei der Microsoft Intune-Unternehmensportal-App
 
 Das Unternehmensportal ist eine App, die Sie auf Ihrem iOS-Gerät installieren, damit Sie Zugriff auf Ihre Unternehmens-, Schul- oder Uni-Apps, E-Mail und das Netzwerk erhalten.  Bevor Sie Zugriff erhalten, müssen Sie die Unternehmensportal-App installieren und dann mithilfe der App Ihr Gerät bei Microsoft Intune registrieren. Weitere Informationen finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
@@ -40,6 +40,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

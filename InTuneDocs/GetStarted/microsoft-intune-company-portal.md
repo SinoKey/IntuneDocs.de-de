@@ -3,18 +3,19 @@ title: Microsoft Intune-Unternehmensportal | Microsoft Intune
 description: Einrichten des Intune-Unternehmensportals
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-ms.reviewer: jeffgilb
+ms.reviewer: jve
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 7c9fceaae077907480d4c207d56f654d168248a1
+ms.sourcegitcommit: 584cfc22cd885149054c1e5e42cc539a478db637
+ms.openlocfilehash: 0a9d7bdce29532f63c724d406cd13cd619c9034e
 
 
 ---
@@ -48,11 +49,18 @@ Dies sind einige der Aufgaben, die Benutzern im Unternehmensportal ausführen k�
 
 Damit ein Benutzer auf das Unternehmensportal zugreifen kann, muss dem Benutzerkonto eine Lizenz für die Verwendung von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] gewährt werden, und es muss den Anmeldestatus **Zugelassen** aufweisen. Erfahren Sie mehr über das [Hinzufügen von Benutzern](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) und das [Zuweisen von Lizenzen für Ihr Abonnement](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). Sie können die [ Unternehmensportal-Website auch mit Ihrem Unternehmenslogo, Ihren Nutzungsbedingungen usw. anpassen](start-with-a-paid-subscription-to-microsoft-intune-step-7.md). Für den Zugriff auf die Unternehmensportal-Website ruft der Benutzer die Website aus und meldet sich mit seinem Geschäfts- oder Schulkonto an.
 
+> [!NOTE]
+> Die Unternehmensportal-App ist in einigen Ländern noch nicht verfügbar.
+
+> __iOS__: Die Unternehmensportal-App für iOS wird [in allen verfügbaren Gebieten](https://go.microsoft.com/fwlink/?linkid=831284) für den Apple iOS App Store veröffentlicht.
+
+> __Android__: Die Unternehmensportal-App für Android in Antigua und Barbuda, Aruba, Benin, Burkina Faso, Kambodscha, China, Kuba, Gabun, Guinea-Bissau, Haiti, Iran, Laos, Mali, Mosambik, Myanmar (Burma), Niederländische Antillen, Niger, Papua-Neuguinea, Sudan, Togo. Für diese Länder ist eine alternative Lösung, [die Android-Version der Unternehmensportal-App querzuladen](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
+
 ### Weitere Informationen:
 [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

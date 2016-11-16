@@ -2,8 +2,8 @@
 title: "Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Windows-Geräts | Microsoft Intune"
 description: "Zurücksetzen eines verloren gegangenen oder gestohlenen Windows-Geräts"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f2283b5896541e58d7ae515cab9d4faa1e9df735
-ms.openlocfilehash: 4a206e30c1334681f82b8077da6191ef3e28e4b1
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2af464dd1eb4fa97c6500131f51d48b6636b0cf2
 
 
 ---
 
 
-# Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Geräts
+# <a name="reset-erase-your-lost-or-stolen-device"></a>Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Geräts
 
 Wenn ein in Intune registriertes Gerät verloren geht oder gestohlen wird, können Sie es auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) auf die Standardwerkseinstellungen zurücksetzen.
 
@@ -41,6 +41,6 @@ Wenn Sie Ihr verlorenes oder gestohlenes Gerät nicht zurücksetzen können, bit
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
