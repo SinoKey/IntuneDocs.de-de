@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,25 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e24de6814d9e01c64768f425e961a7822f4b27a1
-ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: 2fd4d3c7cb92e27a01090fdec85e02db4010f859
 
 
 ---
 
 
-# Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte in Microsoft Intune
+# <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte in Microsoft Intune
 
-Die in diesem Thema beschriebenen Richtlinieneinstellungen gelten für Geräte mit Android 4.0 und höher oder Samsung KNOX 4.0 und höher.
+Die in diesem Thema beschriebenen Richtlinieneinstellungen gelten für Geräte mit Android 4.0 und höher oder Samsung KNOX Standard 4.0 und höher.
 
 Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folgenden Optionen:
-> [!div class="op_single_selector"]
+> [!div class = "op_single_selector"]
+- [Einstellungen für Kompatibilitätsrichtlinien für Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 - [Einstellungen für Kompatibilitätsrichtlinien für iOS-Geräte](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Einstellungen für Kompatibilitätsrichtlinien für Windows-Geräte](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## Einstellungen für die Systemsicherheit
-### Kennwort
+## <a name="system-security-settings"></a>Einstellungen für die Systemsicherheit
+### <a name="password"></a>Kennwort
 - **Kennwort zum Entsperren mobiler Geräte erforderlich:** Legen Sie für diese Einstellung **Ja** fest, damit Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können.
 
 -  **Minimale Kennwortlänge:** Geben Sie die Mindestanzahl an Ziffern oder Zeichen an, die das Benutzerkennwort enthalten muss.
@@ -55,10 +56,10 @@ Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folge
 
 - **Kennworteingabe verlangen, wenn das Gerät aus dem Leerlauf zurückkehrt:** Verwenden Sie diese Einstellung zusammen mit der Einstellung **Minuten Inaktivität vor erneuter Anforderung des Kennworts**. Der Benutzer wird zur Eingabe eines Kennworts aufgefordert, um auf ein Gerät zugreifen zu können, das für die in der Einstellung **Minuten Inaktivität vor erneuter Anforderung des Kennworts** angegebene Zeit inaktiv war.
 
-### Verschlüsselung
+### <a name="encryption"></a>Verschlüsselung
 - **Verschlüsselung auf mobilen Geräten erforderlich:** Legen Sie diese Einstellung auf **Ja** fest, damit Geräte verschlüsselt werden müssen, um eine Verbindung mit Ressourcen herzustellen. Wenn Sie die Einstellung **Kennwort zum Entsperren mobiler Geräte erforderlich** auswählen, werden Geräte verschlüsselt.
 
-## Einstellungen für Geräteintegrität und Sicherheit
+## <a name="device-health-and-security-settings"></a>Einstellungen für Geräteintegrität und Sicherheit
 
 - **Gerät darf keinen Jailbreak oder Rootzugriff verwenden:** Wenn Sie diese Einstellung aktivieren, werden Geräte mit Jailbreak als nicht kompatibel eingestuft.
 - **Installation von Apps aus unbekannten Quellen muss auf Geräten gesperrt sein (Android 4.0 und höher)** Um Geräte zu blockieren, bei denen die Option **Sicherheit** > **Unbekannte Quellen** auf dem Gerät aktiviert ist, aktivieren Sie diese Einstellung, und legen Sie sie auf **Ja** fest.  
@@ -77,7 +78,7 @@ Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folge
 
   Weitere Informationen finden Sie unter [Aktivieren der Regel zum Schutz vor Bedrohungen auf dem Gerät in der Kompatibilitätsrichtlinie](enable-device-threat-protection-rule-in-compliance-policy.md).
 
-## Einstellungen für Geräteeigenschaften
+## <a name="device-property-settings"></a>Einstellungen für Geräteeigenschaften
 - **Minimal erforderliches Betriebssystem:** Wenn ein Gerät die Anforderungen für die minimal erforderliche Betriebssystemversion nicht erfüllt, wird es als nicht kompatibel gemeldet.
   Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Benutzer kann ein Upgrade des Geräts durchführen und anschließend auf die Unternehmensressourcen zugreifen.
 
@@ -85,6 +86,6 @@ Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folge
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
