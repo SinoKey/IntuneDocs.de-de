@@ -1,9 +1,10 @@
 ---
 title: "Verwalten unternehmenseigener Geräte | Microsoft Intune"
-description: "Verschiedene Möglichkeiten zum Aufnehmen von unternehmenseigenen Geräte (Corporate-Owned Devices, COD) in die Verwaltung – je nach Gerät, Art des Kaufs und Anforderungen der Organisation."
+description: "Registrieren Sie unternehmenseigene Geräte auf verschiedene Weise, je nach Gerätetyp, Art des Kaufs und den Anforderungen der Organisation."
 keywords: 
-author: NathBarn
-manager: jeffgilb
+author: staciebarker
+ms.author: stabar
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,46 +14,53 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
-ms.openlocfilehash: 6cf620a96b39540c8b7ca618936af1367971bb8f
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 7577cbab528d88635e8551bf8de1ffd49becaa84
 
 
 ---
 
-# Registrieren firmeneigener Geräten bei Microsoft Intune
-Organisations- bzw. unternehmenseigene Geräte können je nach Gerät und Art des Kaufs sowie den geschäftlichen Anforderungen auf verschiedene Arten in die Verwaltung aufgenommen werden.
+# <a name="enroll-corporateowned-devices-by-using-intune"></a>Registrieren unternehmenseigener Geräte über Intune
 
-## Firmeneigene iOS-Geräte
-Dieser Registrierungsmethoden eignen sich für CYOD-Szenarien („Choose your own Device“), in denen die Organisation die Geräte der Benutzer erwirbt, jedoch die Verwaltung der Geräte beibehalten möchte. Wenn Ihre Organisation iOS-Geräte erworben hat, können Sie die Registrierung vorab konfigurieren, damit jedes Gerät von Moment der Inbetriebnahme durch den Benutzer verwaltet wird. Intune unterstützt die Registrierung mithilfe des [Apple-Programms zur Geräteregistrierung (Device Enrollment Program, DEP)](ios-device-enrollment-program-in-microsoft-intune.md) oder des Tools Apple Configurator, das auf einem Mac-Computer für die [direkte](ios-direct-enrollment-in-microsoft-intune.md) Registrierung oder die Registrierung mit dem [Setup-Assistenten](ios-setup-assistant-enrollment-in-microsoft-intune.md) ausgeführt wird.
+Sie können organisations- bzw. unternehmenseigene Geräte auf verschiedene Weise für die Verwaltung durch Intune registrieren, je nachdem, um welches Gerät es sich handelt, wie es erworben wurde und welche Anforderungen der Organisation bestehen. Sie können auch die Unternehmensportal-App installieren, um unternehmenseigene Geräte zu registrieren und zu verwalten, ähnlich wie in einem BYOD-Szenario („Bring Your Own Device“).
 
-[Registrieren firmeneigener iOS-Geräte](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
+## <a name="enroll-corporateowned-ios-devices"></a>Registrieren firmeneigener iOS-Geräte
 
-## Geräteregistrierungsmanager
-Mit Intune können Organisationen eine große Anzahl mobiler Geräte mit einem einzigen Benutzerkonto verwalten, dem so genannten Geräteregistrierungsmanager-Kontos. Nach dem Erstellen eines Geräteregistrierungsmanager-Kontos kann dieses Konto von einem Manager zum Registrieren von mehr als den standardmäßig zulässigen fünf Geräten verwendet werden, die ein normaler Benutzer registrieren darf. Das Registrieren von Geräten mit einem Geräteregistrierungsmanager funktioniert nur für Geräte, die nicht von einem bestimmten Benutzer verwendet. Diese Geräte eignen sich z. B. für POS- oder -Hilfsprogramm-Apps, sind aber ungeeignet für Benutzer, die Zugriff auf E-Mail oder Unternehmensressourcen benötigen.
+Die Registrierungsmethoden für unternehmenseigene Geräte eignen sich gut für CYOD-Szenarien („Choose Your Own Device“). In einer CYOD-Umgebung bezahlt die Organisation das Gerät, das der Benutzer sich aussucht, und die Organisation verwaltet das Gerät auch.
 
-[Registrieren von firmeneigenen Geräten mit dem Geräteregistrierungs-Manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+Wenn Sie iOS-Geräte zur Auswahl anbieten, können Sie die Registrierung vorkonfigurieren, sodass das Gerät direkt ab dem ersten Einschalten durch den Benutzer über Intune verwaltet wird. Intune unterstützt die Registrierung mithilfe des [Apple-Programms zur Geräteregistrierung (Device Enrollment Program, DEP)](ios-device-enrollment-program-in-microsoft-intune.md) oder des Tools Apple Configurator, das auf einem Mac-Computer für die [direkte](ios-direct-enrollment-in-microsoft-intune.md) Registrierung oder die Registrierung mit dem [Setup-Assistenten](ios-setup-assistant-enrollment-in-microsoft-intune.md) ausgeführt wird.
 
-## Registrieren von unternehmenseigenen Windows 10-Desktops
+Erfahren Sie, wie Sie [unternehmenseigene iOS-Geräte registrieren](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
-Wenn Ihre Organisation über Azure Active Directory Premium (AADP) oder die Enterprise Management Suite (EMS) verfügt können Sie [Windows 10 für Unternehmen registrieren](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview). Die Geräte werden automatisch als „unternehmenseigen“ gekennzeichnet, wenn Benutzer ihr Geschäfts-, Schul- oder Unikonto hinzufügen.
+## <a name="create-a-device-enrollment-manager-account"></a>Erstellen eines Kontos für Geräteregistrierungs-Manager
 
-## Identifizieren von Geräten als unternehmenseigen
+Sie können ein DEM-Konto (Device Enrollment Manager) für einen Einzelbenutzer in Intune erstellen, um eine Vielzahl von mobilen Geräten für Ihre Organisation zu verwalten. Nachdem Sie das DEM-Konto erstellt haben, kann ein festgelegter Konto-Manager mehr als die fünfzehn Geräte registrieren, die ein Standardbenutzer registrieren darf.
 
-Unternehmenseigene Geräte werden in Gerätelisten unter **Besitz** als **Unternehmen** geführt. Geräte können auf folgende Arten als unternehmenseigen identifiziert werden:
+Sie können ein DEM-Konto verwenden, um nur Geräte zu registrieren, die nicht von einem bestimmten Benutzer verwendet werden. Diese Gerätetypen eignen sich z.B. für POS- oder -Hilfsprogramm-Apps, nicht aber für Benutzer, die Zugriff auf E-Mails oder Unternehmensressourcen benötigen.
 
- - [Registriert über den Geräteregistrierungs-Manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
- - Registriert über das [Geräteregistrierungsprogramm](ios-device-enrollment-program-in-microsoft-intune.md) von Apple oder den [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md)
- - [Vorabdeklarieren von Geräten mit IMEI-Nummern](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
- - [Registrieren von Windows 10-Geräten in Azure Active Directory/Enterprise Management Suite](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)
+Erfahren Sie, wie Sie [unternehmenseigene Geräte mithilfe eines DEM-Kontos registrieren](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
 
-### International Mobile Equipment Identity (IMEI)
+## <a name="enroll-corporateowned-windows-10-enterprise-devices"></a>Registrieren von unternehmenseigenen Windows 10 Enterprise-Geräten
 
-Eindeutige IMEI-Nummern (International Mobile Equipment Identity) sind allgemeine Geräteeigenschaften für viele Hersteller von mobilen Geräten. Intune-Administratoren können IMEI-Nummern für Geräte importieren, die sich im Besitz des Unternehmens befinden. Wenn das Gerät von Intune verwaltet wird, wird es als unternehmenseigenes Gerät gekennzeichnet.
+Wenn Sie in Ihrer Organisation Azure Active Directory oder die Microsoft Enterprise Mobility Suite verwenden, können Sie [Windows 10 Enterprise-Geräte registrieren](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview). Wenn ein Benutzer auf einem Gerät ein Geschäfts-, Schul- oder Unikonto hinzufügt, wird das Gerät automatisch als „unternehmenseigen“ markiert.
 
-[Angeben unternehmenseigener Geräte über IMEI-Nummern (International Mobile Equipment Identity)](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+## <a name="import-imei-numbers"></a>Importieren von IMEI-Nummern
+
+Viele Hersteller von mobilen Geräten verwenden für jedes Gerät eine eindeutige Nummer, eine so genannte IMEI-Nummer (International Mobile Equipment Identity). Sie können IMEI-Nummern für Geräte importieren, die sich im Besitz Ihrer Organisation befinden. Wenn ein Gerät von Intune verwaltet wird, wird es als unternehmenseigenes Gerät markiert.
+
+Erfahren Sie, wie Sie [unternehmenseigene Geräte mithilfe von IMEI-Nummern markieren](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md).
+
+## <a name="identify-a-device-as-corporateowned"></a>Identifizieren von Geräten als unternehmenseigen
+
+In einer Geräteliste lautet der Wert für den **Besitz** für die entsprechenden Geräte **Unternehmen**. Ein unternehmenseigenes Gerät weist eines dieser Merkmale auf:
+
+ - Das Gerät wurde [mithilfe eines DEM-Kontos registriert](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
+ - Das Gerät wurde mithilfe von [Apple DEP](ios-device-enrollment-program-in-microsoft-intune.md) oder [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) registriert.
+ - Der Gerätehersteller [hat das Gerät mithilfe von IMEI-Nummern vorab deklariert](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md).
+ - Jedes Gerät ist in [Azure Active Directory oder der Enterprise Mobility Suite als Windows 10 Enterprise-Gerät](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) registriert.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
