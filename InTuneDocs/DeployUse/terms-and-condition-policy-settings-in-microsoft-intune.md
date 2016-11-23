@@ -2,8 +2,8 @@
 title: "Einstellungen für Nutzungsbedingungsrichtlinien | Microsoft Intune"
 description: "Sie können Intune-Nutzungsbedingungen für Benutzergruppen bereitstellen, um zu erläutern, wie sich die Registrierung, der Zugriff auf Arbeitsressourcen und die Verwendung des Unternehmensportals auf Geräte und Benutzer auswirken."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
@@ -14,18 +14,18 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 70fcc08a5619892387aaf8223e9a74661d9c90f6
-ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
 
 
 ---
 
-# Einstellungen für Nutzungsbedingungsrichtlinien in Microsoft Intune
+# <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Einstellungen für Nutzungsbedingungsrichtlinien in Microsoft Intune
 Sie können Intune-Nutzungsbedingungen für Benutzergruppen bereitstellen, um zu erläutern, wie sich die Registrierung, der Zugriff auf Arbeitsressourcen und das Unternehmensportal auf Geräte und Benutzer auswirken. Benutzer müssen die Nutzungsbedingungen akzeptieren, bevor sie sich über das Unternehmensportal registrieren und auf ihre Arbeit zugreifen können.
 
 Sie können mehrere Richtlinien erstellen und bereitstellen, die verschiedene Nutzungsbedingungen enthalten. Sie können auch Versionen derselben Nutzungsbedingungen in verschiedenen Sprachen erstellen und diese dann für die entsprechenden Gruppen bereitstellen.
 
-## Erstellen einer Nutzungsbedingungsrichtlinie
+## <a name="create-a-terms-and-conditions-policy"></a>Erstellen einer Nutzungsbedingungsrichtlinie
 
 1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
 
@@ -47,7 +47,7 @@ Sie können mehrere Richtlinien erstellen und bereitstellen, die verschiedene Nu
 
 4.  Wenn Sie fertig sind, klicken Sie auf **Speichern**. Die neue Richtlinie wird im Knoten für die **Nutzungsbedingungen** des Arbeitsbereichs **Richtlinie** angezeigt.
 
-## Bereitstellen einer Nutzungsbedingungsrichtlinie
+## <a name="deploy-a-terms-and-conditions-policy"></a>Bereitstellen einer Nutzungsbedingungsrichtlinie
 
 1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
 
@@ -57,16 +57,16 @@ Sie können mehrere Richtlinien erstellen und bereitstellen, die verschiedene Nu
 
     Wenn die anvisierten Benutzer auf das Unternehmensportal zugreifen, zeigt Intune die bereitgestellten Nutzungsbedingungen an. Benutzer müssen diese Nutzungsbedingungen akzeptieren, bevor sie Zugriff auf Unternehmensressourcen erhalten.
 
-## Überwachen einer Nutzungsbedingungsrichtlinie
+## <a name="monitor-a-terms-and-conditions-policy"></a>Überwachen einer Nutzungsbedingungsrichtlinie
 
 1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
 
 2.  Klicken Sie im Fenster **Neuen Bericht erstellen** auf **Bericht anzeigen**. Der Bericht wird mit ausführlichen Informationen geöffnet, welche Benutzer die bereitgestellten Nutzungsbedingungen akzeptiert haben.
 
-### Updates und Versionskontrolle für Nutzungsbedingungen
+### <a name="updates-and-version-control-for-terms-and-conditions"></a>Updates und Versionskontrolle für Nutzungsbedingungen
 Beim Bearbeiten einer vorhandenen Nutzungsbedingungsrichtlinie können Sie auswählen, welches Verhalten erfolgt, wenn Sie die Richtlinie bereitstellen. Verwenden Sie das folgende Verfahren beim Aktualisieren vorhandener Nutzungsbedingungsrichtlinien.
 
-## Arbeiten mit mehreren Versionen der Nutzungsbedingungen
+## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Arbeiten mit mehreren Versionen der Nutzungsbedingungen
 
 1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
 
@@ -76,11 +76,11 @@ Beim Bearbeiten einer vorhandenen Nutzungsbedingungsrichtlinie können Sie ausw�
 
     Es wird empfohlen, dass Sie jedes Mal die Versionsnummer erhöhen und die Zustimmung zu den Nutzungsbedingungen anfordern, wenn Sie wichtige Änderungen an der Nutzungsbedingungsrichtlinie vornehmen. Behalten Sie die aktuelle Versionsnummer bei, wenn Sie z. B. Tippfehler korrigieren oder die Formatierung ändern.
 
-### Weitere Informationen:
+### <a name="see-also"></a>Weitere Informationen:
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

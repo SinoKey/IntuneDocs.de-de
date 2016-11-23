@@ -2,9 +2,10 @@
 title: "Konfigurieren der Zertifikatinfrastruktur für SCEP | Microsoft Intune"
 description: "Die Infrastruktur für das Erstellen und Bereitstellen von SCEP-Zertifikatprofilen."
 keywords: 
-author: nbigman
-manager: Arob98
-ms.date: 05/16/2016
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,14 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: e7d6bc1e06217237a79c547c9b449c1fc16aeed4
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: fc9140ac9e6727ae5ac76b3da950baab29326078
 
 ---
-# Konfigurieren der Zertifikatinfrastruktur für SCEP
+# <a name="configure-certificate-infrastructure-for-scep"></a>Konfigurieren der Zertifikatinfrastruktur für SCEP
 In diesem Thema wird beschrieben, welche Infrastruktur Sie zum Erstellen und Bereitstellen von SCEP-Zertifikatprofilen benötigen.
 
-### Lokale Infrastruktur
+### <a name="onpremises-infrastructure"></a>Lokale Infrastruktur
 
 -    **Active Directory-Domäne**: Alle in diesem Abschnitt aufgeführten Server (außer dem Webanwendungsproxy-Server) müssen der Active Directory-Domäne angehören.
 
@@ -39,14 +40,16 @@ I
 >-  Zudem muss der Server, der WAP hostet, über ein SSL-Zertifikat verfügen, das mit dem Namen übereinstimmt, der für externe Clients veröffentlicht wird. Ferner muss der Server dem SSL-Zertifikat vertrauen, das auf dem NDES-Server verwendet wird. Diese Zertifikate ermöglichen dem WAP-Server, die SSL-Verbindung von Clients zu beenden und eine neue SSL-Verbindung mit dem NDES-Server herzustellen.
     Weitere Informationen über Zertifikate für WAP finden Sie im Abschnitt **Planen von Zertifikaten** des Themas [Installieren und Konfigurieren des Webanwendungsproxys für die Veröffentlichung interner Anwendungen](https://technet.microsoft.com/library/dn383650.aspx). Allgemeine Informationen zu WAP-Servern finden Sie unter [Verwenden des Webanwendungsproxys](http://technet.microsoft.com/library/dn584113.aspx).|
 
-### Netzwerkanforderungen
+### <a name="network-requirements"></a>Netzwerkanforderungen
 
 Für Datenverkehr aus dem Internet zum Umkreisnetzwerk: Lassen Sie über Port 443 Datenverkehr von allen Hosts/IP-Adressen im Internet zum NDES-Server zu.
 
 Für Datenverkehr aus dem Umkreisnetzwerk zum vertrauenswürdigen Netzwerk: Lassen Sie alle Ports und Protokolle zu, die für den Domänenzugriff auf den in die Domäne eingebundenen NDES-Server benötigt werden. Der NDES-Server benötigt Zugriff auf die Zertifikatserver, die DNS-Server, die Configuration Manager-Server und die Domänencontroller.
 
+Es wird empfohlen, den NDES-Server über einen Proxy zu veröffentlichen, z. B. über den [Azure AD-Anwendungsproxy](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx) oder einen Proxy eines Drittanbieters.
 
-### <a name="BKMK_CertsAndTemplates"></a>Zertifikate und Vorlagen
+
+### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>Zertifikate und Vorlagen
 
 |Objekt|Details|
 |----------|-----------|
@@ -55,13 +58,13 @@ Für Datenverkehr aus dem Umkreisnetzwerk zum vertrauenswürdigen Netzwerk: Lass
 |**Serverauthentifizierungszertifikat**|Dieses SSL-Zertifikat, das von der ausstellenden Zertifizierungsstelle oder öffentlichen Zertifizierungsstelle angefordert wurde, installieren und binden Sie in IIS auf dem NDES-Server.|
 |**Zertifikat der vertrauenswürdigen Stammzertifizierungsstelle**|Sie exportieren dieses als **CER**-Datei von der Stammzertifizierungsstelle oder von Geräten, die der Stammzertifizierungsstelle vertrauen, und stellen es mit dem Zertifikatprofil der vertrauenswürdigen Zertifizierungsstelle für Geräte bereit.<br /><br />Sie verwenden für jede Betriebssystemplattform ein einzelnes Zertifikat der vertrauenswürdigen Stammzertifizierungsstelle und ordnen es dem jeweiligen vertrauenswürdigen Stammzertifikatprofil zu, das Sie erstellen.<br /><br />Sie können bei Bedarf zusätzliche vertrauenswürdige Stammzertifizierungsstellenzertifikate verwenden. Sie können dies zum Beispiel vornehmen, um einer Zertifizierungsstelle eine Vertrauensstellung zu gewähren, die die Serverauthentifizierungszertifikate für Ihre WLAN-Zugriffspunkte signiert.|
 
-### <a name="BKMK_Accounts"></a>Konten
+### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>Konten
 
 |Name|Details|
 |--------|-----------|
 |**NDES-Dienstkonto**|Sie geben ein Domänenbenutzerkonto an, das als NDES-Dienstkonto verwendet werden soll.|
 
-## <a name="BKMK_ConfigureInfrastructure"></a>Konfigurieren der Infrastruktur
+## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>Konfigurieren der Infrastruktur
 Vor dem Konfigurieren von Zertifikatprofilen müssen Sie die folgenden Aufgaben ausführen, für die Sie Kenntnisse über Windows Server 2012 R2 und Active Directory-Zertifikatdienste (ADCS) benötigen:
 
 **Aufgabe 1**: Erstellen eines NDES-Dienstkontos
@@ -74,21 +77,21 @@ Vor dem Konfigurieren von Zertifikatprofilen müssen Sie die folgenden Aufgaben 
 
 **Aufgabe 5**: Aktivieren, Installieren und Konfigurieren des Intune Certificate Connectors
 
-### Aufgabe 1: Erstellen eines NDES-Dienstkontos
+### <a name="task-1-create-an-ndes-service-account"></a>Aufgabe 1: Erstellen eines NDES-Dienstkontos
 
 Erstellen Sie ein Domänenbenutzerkonto, das als NDES-Dienstkonto verwendet werden soll. Sie geben dieses Konto an, wenn Sie Vorlagen auf der ausstellenden Zertifizierungsstelle konfigurieren, bevor Sie NDES installieren und konfigurieren. Stellen Sie sicher, dass der Benutzer über die Standardrechte **Lokal anmelden**, **Anmelden als Dienst** und **Anmelden als Batchauftrag** verfügt. In einigen Organisationen werden diese Rechte durch Härtungsrichtlinien deaktiviert.
 
 
 
 
-### Aufgabe 2: Konfigurieren von Zertifikatvorlagen für die Zertifizierungsstelle
+### <a name="task-2-configure-certificate-templates-on-the-certification-authority"></a>Aufgabe 2: Konfigurieren von Zertifikatvorlagen für die Zertifizierungsstelle
 Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 -   Konfigurieren einer Zertifikatvorlage für NDES
 
 -   Veröffentlichen der Zertifikatvorlage für NDES
 
-##### So konfigurieren Sie die Zertifizierungsstelle
+##### <a name="to-configure-the-certification-authority"></a>So konfigurieren Sie die Zertifizierungsstelle
 
 1.  Melden Sie sich als Unternehmensadministrator an. 
 
@@ -141,12 +144,12 @@ Um die Zertifizierungsstelle so zu konfigurieren, dass der Antragsteller die Gü
 
 4.  Verwenden Sie auf der ausstellenden Zertifizierungsstelle das Zertifizierungsstellen-Snap-In, um die Zertifikatvorlage zu veröffentlichen.
 
-    1.  Wählen Sie den Knoten **Zertifikatvorlagen** aus, klicken Sie auf **Aktion** -&gt; **Neu** &gt; **Auszustellende Zertifikatvorlage**, und wählen Sie dann die Vorlage aus, die Sie in Schritt 2 erstellt haben.
+    1.  Wählen Sie den Knoten **Zertifikatvorlagen** aus, klicken Sie auf **Aktion**-&gt; **Neu** &gt; **Auszustellende Zertifikatvorlage**, und wählen Sie dann die Vorlage aus, die Sie in Schritt 2 erstellt haben.
 
     2.  Überprüfen Sie, ob die Vorlage veröffentlicht wurde, indem Sie sie im Ordner **Zertifikatvorlagen** anzeigen.
 
 
-### Aufgabe 3: Konfigurieren der Voraussetzungen auf dem NDES-Server
+### <a name="task-3-configure-prerequisites-on-the-ndes-server"></a>Aufgabe 3: Konfigurieren der Voraussetzungen auf dem NDES-Server
 Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 -   Hinzufügen von NDES zu einem Windows-Server und Konfigurieren von IIS zur Unterstützung von NDES
@@ -187,7 +190,7 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
-### Aufgabe 4: Konfigurieren von NDES für die Verwendung mit Intune
+### <a name="task-4-configure-ndes-for-use-with-intune"></a>Aufgabe 4: Konfigurieren von NDES für die Verwendung mit Intune
 Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 -   Konfigurieren von NDES für die Verwendung mit der ausstellenden Zertifizierungsstelle
@@ -196,7 +199,7 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 -   Konfigurieren der Anforderungsfilterung in IIS
 
-##### So konfigurieren Sie NDES für die Verwendung mit Intune
+##### <a name="to-configure-ndes-for-use-with-intune"></a>So konfigurieren Sie NDES für die Verwendung mit Intune
 
 1.  Öffnen Sie auf dem NDES-Server den AD CS-Konfigurations-Assistenten, und nehmen Sie dann die folgenden Konfigurationen vor.
 
@@ -245,7 +248,7 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
     Wenn Sie die Meldung **503 – Dienst nicht verfügbar** erhalten, überprüfen Sie die Ereignisanzeige. Wahrscheinlich wurde der Anwendungspool beendet, weil eine notwendige Berechtigung für den NDES-Benutzer fehlt. Die entsprechenden Berechtigungen sind in Aufgabe 1 beschrieben.
 
-##### So installieren und binden Sie Zertifikate auf dem NDES-Server
+##### <a name="to-install-and-bind-certificates-on-the-ndes-server"></a>So installieren und binden Sie Zertifikate auf dem NDES-Server
 
 1.  Fordern Sie auf dem NDES-Server ein **Serverauthentifizierungszertifikat** von der internen oder einer öffentlichen Zertifizierungsstelle an, und installieren Sie es. Sie binden dieses SSL-Zertifikat anschließend in IIS.
 
@@ -269,7 +272,7 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
     **Antragstellername**: Dies muss mit dem DNS-Namen des Servers identisch sein, auf dem das Zertifikat installiert wird (d. h. dem NDES-Server).
 
-##### So konfigurieren Sie die IIS-Anforderungsfilterung
+##### <a name="to-configure-iis-request-filtering"></a>So konfigurieren Sie die IIS-Anforderungsfilterung
 
 1.  Öffnen Sie auf dem NDES-Server den **IIS-Manager**, wählen Sie im Fenster **Verbindungen** die Option **Standardwebsite** , und öffnen Sie dann die **Anforderungsfilterung**.
 
@@ -291,14 +294,14 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 4.  Starten Sie den NDES-Server neu. Der Server ist jetzt bereit zur Unterstützung des Zertifikatconnectors.
 
-### Aufgabe 5: Aktivieren, Installieren und Konfigurieren des Intune Certificate Connectors
+### <a name="task-5-enable-install-and-configure-the-intune-certificate-connector"></a>Aufgabe 5: Aktivieren, Installieren und Konfigurieren des Intune Certificate Connectors
 Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 Aktivieren der Unterstützung für NDES in Intune
 
 Herunterladen, Installieren und Konfigurieren des Certificate Connectors auf dem NDES-Server
 
-##### So aktivieren Sie die Unterstützung für den Zertifikatconnector
+##### <a name="to-enable-support-for-the-certificate-connector"></a>So aktivieren Sie die Unterstützung für den Zertifikatconnector
 
 1.  Öffnen Sie die [Intune-Verwaltungskonsole](https://manage.microsoft.com), und klicken Sie auf **Verwaltung** &gt; **Certificate Connector**.
 
@@ -306,7 +309,7 @@ Herunterladen, Installieren und Konfigurieren des Certificate Connectors auf dem
 
 3.  Wählen Sie **Zertifikatconnector aktivieren**aus, und klicken Sie dann auf **OK**.
 
-##### So wird der Zertifikatconnector heruntergeladen, installiert und konfiguriert
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>So wird der Zertifikatconnector heruntergeladen, installiert und konfiguriert
 
 1.  Öffnen Sie die [Intune-Verwaltungskonsole](https://manage.microsoft.com), und klicken Sie dann auf **Verwaltung** &gt; **Verwaltung mobiler Geräte** &gt; **Certificate Connector** &gt; **Certificate Connector herunterladen**.
 
@@ -342,11 +345,11 @@ Um zu überprüfen, das der Dienst ausgeführt wird, öffnen Sie einen Browser, 
 
 **http:// &lt;FQDN_des_NDES_Servers&gt;/certsrv/mscep/mscep.dll**
 
-## Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 Sie sind jetzt bereit, Zertifikatprofile gemäß der Beschreibung in [Konfigurieren von Zertifikatprofilen](Configure-Intune-certificate-profiles.md) zu konfigurieren.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
