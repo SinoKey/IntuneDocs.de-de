@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: 930419b20b675aa48c2b8bf1c49a1b576bbab414
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: 1d7aa8f028d57d4749706b8632aec342483cac5e
 
 
 ---
@@ -34,7 +34,10 @@ Intune ermöglicht die Verwaltung mobiler Geräte (mobile device management, MDM
 3.  **Abrufen eines Apple Push Notification Service-Zertifikats**<br>
     Wechseln Sie zum [Apple Push Certificates-Portal](http://go.microsoft.com/fwlink/?LinkId=269844), und melden Sie sich mit Ihrer Unternehmens-Apple-ID an, um das APNs-Zertifikat mithilfe der CSR-Datei zu erstellen. Nachdem Sie im Apple Push Certificates-Portal **Hochladen** ausgewählt haben, erhalten Sie eine JSON-Datei, die für APNs nicht verwendet werden kann. Schließen Sie den Download ab, kehren Sie zum Apple Push Certificates-Portal für **Zertifikate für Drittanbieterserver** zurück, und wählen Sie anschließend **Herunterladen** aus.
 
-    Laden Sie das APNs-Zertifikat (.pem) herunter, und speichern Sie die Datei lokal. Diese Apple-ID muss später verwendet werden, um das APNs-Zertifikat zu erneuern.
+    Laden Sie das APNs-Zertifikat (.pem) herunter, und speichern Sie die Datei lokal. 
+
+    > [!NOTE]
+    > Sie müssen dieses APNs-Zertifikat jährlich verlängern (nicht ersetzen). Verwenden Sie dieselbe Apple-ID, um sich im Apple Push Certificate-Portal anzumelden und das Zertifikat zu verlängern. Folgen Sie dann denselben Anweisungen in diesem Thema, um das Zertifikat herunterzuladen und es dann in Intune hochzuladen.
 
 4.  **Hinzufügen des APNs-Zertifikats zu Intune**<br>
     Navigieren Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) zu **Verwaltung** &gt; **Verwaltung mobiler Geräte** &gt; **iOS und Mac OS X** &gt; **APNs-Zertifikat hochladen**, und wählen Sie anschließend **APNs-Zertifikat hochladen** aus. Wechseln Sie zur Zertifikatdatei (.pem), wählen Sie **Öffnen** aus, und geben Sie anschließend Ihre **Apple-ID**ein. Mit dem APNs-Zertifikat kann Intune iOS-Geräte registrieren und verwalten, indem die Richtlinie auf registrierte mobile Geräte übertragen wird.
@@ -54,6 +57,6 @@ Wenn Ihr Unternehmen oder Ihre Organisation iOS-Geräte für Benutzer erwirbt, k
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
