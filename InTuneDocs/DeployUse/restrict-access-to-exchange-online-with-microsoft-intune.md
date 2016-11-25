@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
-ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
+ms.sourcegitcommit: 07f18c0011624f760f4d1db05cf954551dee3a85
+ms.openlocfilehash: d63f62011acaad154790b88f710eb4eda4fb261b
 
 
 ---
 
-# Beschränken des E-Mail-Zugriffs auf Exchange Online- und neue Exchange Online Dedicated-Umgebungen mit Intune
+# <a name="restrict-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Beschränken des E-Mail-Zugriffs auf Exchange Online- und neue Exchange Online Dedicated-Umgebungen mit Intune
 
 Wenn Sie über eine Exchange Online Dedicated-Umgebung verfügen und herausfinden müssen, ob es sich um die neue oder die ältere Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer.
 
@@ -62,12 +62,14 @@ Das folgende Diagramm veranschaulicht den Ablauf, der von den Richtlinien für b
 
 ![Diagramm zur Veranschaulichung der Entscheidungspunkte, die bestimmen, ob der Zugriff für das Gerät zugelassen oder blockiert wird](../media/ConditionalAccess8-1.png)
 
-## Unterstützung für mobile Geräte
+## <a name="support-for-mobile-devices"></a>Unterstützung für mobile Geräte
 Sie können den Zugriff auf Exchange Online-E-Mails über **Outlook** und andere ** Apps, die die moderne Authentifizierung verwenden**, beschränken:
 
 - Android 4.0 und höher, Samsung KNOX Standard 4.0 und höher sowie Android for Work
 - iOS 8.0 und höher
 - Windows Phone 8.1 und höher
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Die **moderne Authentifizierung** ermöglicht das ADAL-basierte (Active Directory Authentication Library) Anmelden für Microsoft Office-Clients.
 
@@ -79,11 +81,11 @@ Sie können den Zugriff auf **Outlook Web Access (OWA)** auf Exchange Online bes
 
 * Safari (iOS)
 * Chrome (Android)
-* Managed Browser (iOS und Android)
+* Managed Browser (iOS und Android 5.0 und höher)
 
 **Nicht unterstützte Browser werden blockiert**.
 
-**Die OWA-App für iOS und Android kann so geändert werden, dass die moderne Authentifizierung nicht verwendet wird, und sie wird nicht unterstützt.  Der Zugriff über die OWA-App muss durch AD FS-Anspruchsregeln blockiert werden.**
+**Die OWA-App für iOS und Android kann so geändert werden, dass die moderne Authentifizierung nicht verwendet und unterstützt wird.  Der Zugriff über die OWA-App muss durch AD FS-Anspruchsregeln blockiert werden.**
 
 
 Auf folgenden Plattformen können Sie den Zugriff auf Exchange-E-Mails über den integrierten **Exchange ActiveSync-E-Mail-Client** blockieren:
@@ -94,7 +96,7 @@ Auf folgenden Plattformen können Sie den Zugriff auf Exchange-E-Mails über den
 
 - Windows Phone 8.1 und höher
 
-## Unterstützung für PCs
+## <a name="support-for-pcs"></a>Unterstützung für PCs
 
 Sie können den bedingten Zugriff für PCs einrichten, auf denen Office-Desktopanwendungen ausgeführt werden, um auf **Exchange Online** und **SharePoint Online** zuzugreifen. Dies gilt für PCs, die folgende Anforderungen erfüllen:
 
@@ -118,20 +120,20 @@ Sie können den bedingten Zugriff für PCs einrichten, auf denen Office-Desktopa
 
 -   Richten Sie die Anspruchsregeln für Active Directory-Verbunddienste (ADFS) dahingehend ein, dass nicht moderne Authentifizierungsprotokolle blockiert werden. Detaillierte Anleitungen werden in Szenario 3 beschrieben: [Blockieren des gesamten Zugriffs auf Office 365 außer durch browserbasierte Anwendungen](https://technet.microsoft.com/library/dn592182.aspx).
 
-## Konfigurieren des bedingten Zugriffs
-### Schritt 1: Konfigurieren und Bereitstellen einer Konformitätsrichtlinie
+## <a name="configure-conditional-access"></a>Konfigurieren des bedingten Zugriffs
+### <a name="step-1-configure-and-deploy-a-compliance-policy"></a>Schritt 1: Konfigurieren und Bereitstellen einer Konformitätsrichtlinie
 Stellen Sie sicher, dass Sie eine Kompatibilitätsrichtlinie für die Benutzergruppen [erstellen](create-a-device-compliance-policy-in-microsoft-intune.md) und [bereitstellen](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md), für die auch die Richtlinie für bedingten Zugriff gelten soll.
 
 
 > [!IMPORTANT]
 > Wenn Sie keine Kompatibilitätsrichtlinie bereitgestellt haben, werden die Geräte als kompatibel bewertet und erhalten Zugriff auf Exchange.
 
-### Schritt 2: Bewerten der Auswirkungen der Richtlinie für bedingten Zugriff
+### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>Schritt 2: Bewerten der Auswirkungen der Richtlinie für bedingten Zugriff
 Mithilfe der **Inventurberichte für mobile Geräte** können Sie ermitteln, für welche Geräte der Zugriff auf Exchange blockiert wird, nachdem Sie die Richtlinie für bedingten Zugriff konfiguriert haben.
 
 Konfigurieren Sie dafür eine Verbindung zwischen [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] und Exchange mithilfe des [Microsoft Intune Service to Service Connectors](intune-service-to-service-exchange-connector.md).
 1.  Navigieren Sie zu **Berichte -> Bestandsberichte zu mobilen Geräten**.
-![Screenshot Seite mit dem Inventurbericht für mobile Geräte](../media/IntuneSA2bMobileDeviceInventoryReport.png)
+![Screenshot der Seite mit dem Inventurbericht für mobile Geräte](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 
 2.  Wählen Sie in den Berichtsparametern die auszuwertende [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Gruppe sowie gegebenenfalls die Geräteplattformen aus, auf denen die Richtlinie angewendet werden soll.
 3.  Nachdem Sie die Kriterien ausgewählt haben, die den Anforderungen Ihres Unternehmens entsprechen, wählen Sie **Bericht anzeigen** aus.
@@ -161,7 +163,7 @@ Bei Geräten, die Teil einer Zielgruppe sind, ist der Zugriff auf Exchange block
 ----------------------
 Sie können den Inhalt des Berichts exportieren und die Benutzer über die in der Spalte **E-Mail-Adresse** enthaltene Adresse informieren, dass sie blockiert werden.
 
-### Schritt 3: Konfigurieren von Benutzergruppen für die Richtlinie für bedingten Zugriff
+### <a name="step-3-configure-user-groups-for-the-conditional-access-policy"></a>Schritt 3: Konfigurieren von Benutzergruppen für die Richtlinie für bedingten Zugriff
 Richtlinien für bedingten Zugriff werden auf verschiedene Azure Active Directory-Sicherheitsgruppen mit Benutzern angewendet. Sie können auch bestimmte Benutzergruppen von dieser Richtlinie ausnehmen.  Bei Benutzern, für die eine Richtlinie gelten soll, muss jedes von ihnen verwendete Gerät die Richtlinie erfüllen, damit sie auf ihre E-Mails zugreifen können.
 
 Sie können diese Gruppen im **Office 365 Admin Center**oder **Intune-Kontenportal**konfigurieren.
@@ -176,14 +178,14 @@ Benutzer, die in beiden Gruppen enthalten sind, werden von der Richtlinie ausgen
 
 Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zugriff gilt.
 
-### Schritt 4: Konfigurieren der Richtlinie für bedingten Zugriff
+### <a name="step-4-configure-the-conditional-access-policy"></a>Schritt 4: Konfigurieren der Richtlinie für bedingten Zugriff
 
 >[!NOTE]
 > Sie können die Richtlinie für bedingten Zugriff auch in der Azure AD-Verwaltungskonsole erstellen. In der Azure AD-Verwaltungskonsole können Sie zusätzlich zu anderen Richtlinien für bedingten Zugriff wie Richtlinien für die mehrstufige Authentifizierung auch Richtlinien für bedingten Zugriff für Intune-Geräte erstellen (die in Azure AD als **gerätebasierte bedingte Zugriffsrichtlinien** bezeichnet werden).  Sie können auch Richtlinien für bedingten Zugriff für Unternehmens-Apps von Drittanbietern wie Salesforce und Box festlegen, die von Azure AD unterstützt werden. Weitere Informationen finden Sie unter [Festlegen von gerätebasierten Azure Active Directory-Richtlinien für bedingten Zugriff zur Steuerung des Zugriffs auf über Azure Active Directory verbundene Anwendungen](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Richtlinie** > **Bedingter Zugriff** > **Exchange Online-Richtlinie**.
-![Screenshot der Seite mit der Exchange Online-Richtlinie für bedingten Zugriff](../media/mdm-ca-exo-policy-configuration.png)
+
 
 2.  Aktivieren Sie auf der Seite **Exchange Online-Richtlinie** die Option **Bedingte Zugriffsrichtlinie für Exchange Online aktivieren**.
 
@@ -214,11 +216,11 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
   3.    Klicken Sie auf die Schaltfläche **Browserzugriff aktivieren**.
   4.    Melden Sie sich im Chrome-Browser aus Office 365 ab, und starten Sie Chrome neu.
 
-  Auf **iOS- und Android**-Plattformen stellt Azure Active Directory ein Transport Layer Security-Zertifikat (TLS) für das Gerät aus, das für den Zugriff auf den Dienst verwendet wird, damit es identifiziert werden kann.  Das Gerät zeigt den Endbenutzern das Zertifikat zusammen mit einer Eingabeaufforderung zur Auswahl des Zertifikats an, wie in den nachstehenden Screenshots dargestellt. Die Endbenutzer müssen dieses Zertifikat auswählen, bevor sie den Browser weiter verwenden können.
+  Auf **iOS- und Android**-Plattformen stellt Azure Active Directory ein Transport Layer Security-Zertifikat (TLS) für das Gerät aus, das für den Zugriff auf den Dienst verwendet wird, damit es identifiziert werden kann.  Das Gerät zeigt den Endbenutzern das Zertifikat zusammen mit einer Eingabeaufforderung zur Auswahl des Zertifikats an, wie in den nachstehenden Screenshots dargestellt. Der Endbenutzer muss dieses Zertifikat auswählen, bevor der Browser weiterhin verwendet werden kann.
 
   **iOS**
 
-  ![Screenshot der Zertifikatseingabeaufforderung auf einem iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
+  ![Screenshot der Zertifikataufforderung auf einem iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
 
   **Android**
 
@@ -227,7 +229,7 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
 5.  Unter **Exchange ActiveSync-Apps** können Sie festlegen, dass der Zugriff auf Exchange Online für nicht kompatible Geräte blockiert wird. Sie können auch auswählen, ob der Zugriff auf E-Mails zugelassen oder blockiert werden soll, wenn das Gerät nicht unter einer unterstützten Plattform ausgeführt wird. Zu den unterstützten Plattformen gehören Android, iOS, Windows und Windows Phone.
 
  Exchange Active Sync-Apps für **Android for Work**-Geräte:
- -  Nur **Gmail**- und **Nine Work**-Apps im **Arbeitsprofil** werden auf Android for Work-Geräten unterstützt. Damit der bedingte Zugriff auf Android for Work-Geräten funktioniert, müssen Sie ein E-Mail-Profil für die Gmail- oder Nine Work-App bereitstellen und dieses zudem als **erforderliche** Installation bereitstellen. 
+ -  Nur **Gmail**- und **Nine Work**-Apps im **Arbeitsprofil** werden auf Android for Work-Geräten unterstützt. Damit der bedingte Zugriff auf Android for Work-Geräten funktioniert, müssen Sie ein E-Mail-Profil für die Gmail- oder Nine Work-App bereitstellen und dieses zudem als **erforderliche** Installation bereitstellen.
 
 6.  Wählen Sie unter **Zielgruppen**die Active Directory-Sicherheitsgruppen der Benutzer aus, auf die die Richtlinie angewendet wird. Sie können dies entweder auf alle Benutzer oder eine ausgewählte Liste von Benutzergruppen ausrichten.
 ![Screenshot der Seite mit der Exchange Online-Richtlinie für bedingten Zugriff, mit den Optionen für Zielgruppen und ausgenommene Gruppen](../media/IntuneSA5eTargetedExemptedGroups.PNG)
@@ -251,22 +253,22 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
 
 -   Wenn der Benutzer die Registrierung seines Geräts aufhebt, wird der E-Mail-Zugriff nach ca. 6 Stunden blockiert.
 
-**Beispielszenarien für die Konfiguration von Richtlinien für bedingten Zugriff, um den Gerätezugriff zu beschränken, finden Sie unter [Beispielszenarien für die Beschränkung des E-Mail-Zugriffs](restrict-email-access-example-scenarios.md).**
+**Beispielszenarien für die Konfiguration von Richtlinien für bedingten Zugriff zur Beschränkung des Gerätezugriffs finden Sie unter [Beispielszenarien für die Beschränkung des E-Mail-Zugriffs](restrict-email-access-example-scenarios.md).**
 
-## Überwachen der Richtlinien für Konformität und bedingten Zugriff
+## <a name="monitor-the-compliance-and-conditional-access-policies"></a>Überwachen der Richtlinien für Konformität und bedingten Zugriff
 
-#### So zeigen Sie Geräte an, die in Exchange blockiert wurden
+#### <a name="to-view-devices-that-are-blocked-from-exchange"></a>So zeigen Sie Geräte an, die in Exchange blockiert wurden
 
 Wählen Sie im [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Dashboard die Kachel **Geräte mit blockiertem Exchange-Zugriff** aus, um die Anzahl der blockierten Geräte und Links zu weiteren Informationen anzuzeigen.
 ![Screenshot des Intune-Dashboards mit der Anzahl der Geräte, für die der Zugriff auf Exchange blockiert ist](../media/IntuneSA6BlockedDevices.PNG)
 
-## Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 [Beschränken des Zugriffs auf SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 [Beschränken des Zugriffs auf Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
