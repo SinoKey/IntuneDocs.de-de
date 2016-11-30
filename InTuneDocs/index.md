@@ -9,14 +9,14 @@ keywords: "Intune-Dokumentation, App-Verwaltung, Geräteverwaltung, MDM-Dokument
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 10/07/2016
+ms.date: 11/15/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: 315c159869303fd6a26caa35160d5ba3c7ccdc1f
-ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
+ms.sourcegitcommit: f9ab2200b1d357d6a805e3e5cd37f3c4391e3571
+ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
       <h2 class="section-heading"><span class="icon icon-warning"></span> Wichtige Inhalte</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/whats-new/whats-new-in-microsoft-intune">Neuheiten</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">Mehr als 150 Lizenzen? Nutzen Sie Ihre FastTrack-Vorteile</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Gängige Arten der Verwendung von Intune</a></li>
           <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Schützen von App-Daten</a></li>
         </ul>
@@ -68,7 +68,7 @@ ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
                 <li class="column-third">
                   <a href="/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
                     <h3>Intune-Evaluierungsanleitung</h3>
-                    <p>Im Evaluierungsleitfaden sind die Schritte zum Einrichten Ihrer Testversion mit bis zu 100 Benutzern und Geräten beschrieben.</p>
+                    <p>Im Evaluierungsleitfaden sind die Schritte zum Einrichten Ihrer Testversion mit bis zu 100 Benutzern und Geräten beschrieben.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -155,8 +155,8 @@ ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste</h3>
-                    <p>Beschränken Sie den Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens mithilfe des bedingten Zugriffs in Intune.</p>
+                    <h3>Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste</h3>
+                    <p>Beschränken Sie den Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens mithilfe des bedingten Zugriffs in Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -285,6 +285,6 @@ ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

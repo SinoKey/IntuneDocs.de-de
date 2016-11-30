@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
+ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
+ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
 
 
 ---
@@ -100,7 +100,7 @@ Das Kennwort ist nicht im E-Mail-Profil enthalten, sodass der Benutzer dieses be
     |**Beschreibung**|Eine Beschreibung, die Sie beim Identifizieren dieses Profils unterstützt.|
     |**Host**|Der Hostname Ihres Unternehmensservers, der Ihren nativen E-Mail-Dienst hostet.|
     |**Kontoname**|Der Anzeigename für das E-Mail-Konto, wie er den Benutzern auf ihren Geräten angezeigt wird.|
-    |**Benutzername**|Vorgehensweise beim Abrufen des Benutzernamens für das E-Mail-Konto. Wählen Sie **Benutzername** für einen lokalen Exchange-Server oder **Benutzerprinzipalname** für Office 365 aus.|
+    |**Benutzername**|Dies ist das Attribut in Active Directory (AD) oder Azure AD, das verwendet wird, um den Benutzernamen für dieses E-Mail-Profil zu generieren. Wählen Sie die primäre SMTP-Adresse, z.B. *user1@contoso.com* oder den Benutzerprinzipalnamen, z.B. *user1* oder *user1@contoso.com*.|
     |**E-Mail-Adresse**|Vorgehensweise beim Generieren der E-Mail-Adresse für den Benutzer auf den einzelnen Geräten. Wählen Sie **Primäre SMTP-Adresse** aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden. Verwenden Sie **Benutzerprinzipalname**, um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden.|
     |**Authentifizierungsmethode** (Android for Work, Samsung KNOX und iOS)|Wählen Sie entweder **Benutzername und Kennwort** oder **Zertifikat** als Authentifizierungsmethode aus, die vom E-Mail-Profil verwendet werden soll.|
     |**Wählen Sie ein Clientzertifikat für die Clientauthentifizierung (Identitätszertifikat) aus** (Android for Work, Samsung KNOX und iOS)|Wählen Sie das zuvor erstellte SCEP-Clientzertifikat aus, das zur Authentifizierung der Exchange-Verbindung verwendet werden soll. Weitere Informationen zum Verwenden von Zertifikatprofilen in Intune finden Sie unter [Sicherer Zugriff auf Ressourcen mit Zertifikatprofilen](secure-resource-access-with-certificate-profiles.md). Diese Option wird nur für die Authentifizierungsmethode **Zertifikate** angezeigt.|
@@ -138,6 +138,6 @@ Eine Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeit
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3d01ec8c2b848b4fa1e507ec9e7a31125badf30e
+ms.sourcegitcommit: dbf3ac5c7ab326fd82acb979ea7a4933ac68ff1c
+ms.openlocfilehash: 1bfb47cccc6438bae54a57271e585bdc9f9f6611
 
 
 ---
 
-# Verstehen Sie Ihre Geräte mithilfe des Inventars in Microsoft Intune
+# <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Verstehen Sie Ihre Geräte mithilfe des Inventars in Microsoft Intune
 Mit Microsoft Intune können Sie das Inventar an registrierten Geräten und Windows-PCs anzeigen, auf denen die Intune-Clientsoftware ausgeführt wird.
 Intune sammelt normalerweise alle 7 Tage den Bestand von verwalteten Geräten. Aus diesem Grund entsteht möglicherweise eine Verzögerung, bevor Berichte die Ergebnisse von kürzlich durchgeführten Änderungen an Geräten anzeigen, z.B. eine Änderung am Gerätenamen oder am freien Speicherplatz.
 
-## Welche Daten registrierter Geräte werden gesammelt?
+## <a name="whats-collected-from-enrolled-devices"></a>Welche Daten registrierter Geräte werden gesammelt?
 Um das von den mobilen Geräten gesammelte Inventar anzuzeigen, führen Sie die [Inventurberichte für mobile Geräte](understand-microsoft-intune-operations-by-using-reports.md) aus. Intune sammelt das folgende Inventar von den mobilen Geräten:
 
 |Eigenschaft|Gesammelt von|
@@ -40,13 +40,13 @@ Um das von den mobilen Geräten gesammelte Inventar anzuzeigen, führen Sie die 
 |**EAS-Aktivierungs-ID**|Alle Geräte mit Ausnahme von Mac OS X|
 |**EAS-Aktivierungszeitpunkt**|Alle Geräte mit Ausnahme von Mac OS X|
 |**Verwaltungsstatus**|Alle Geräte|
-|**Email Address**|Alle Geräte|
+|**E-Mail-Adresse**|Alle Geräte|
 |**Exchange ActiveSync-ID**|Alle Geräte|
 |**Jailbreak oder Rooting**|Nur iOS- und Android-Geräte|
 |**Eindeutige Geräte-ID**|Alle Geräte mit Ausnahme von Exchange ActiveSync|
-|**Seriennummer**|iOS-, Mac OS X-, Android-, Windows 8.1- und Windows 10-Geräte|
-|**Gesamtmenge des Speicherplatzes**|iOS-, Mac OS X-, Windows 8.1- und Windows 10-Geräte|
-|**Freier Speicherplatz**|iOS-, Mac OS X-, Windows 8.1- und Windows 10-Geräte|
+|**Seriennummer**|iOS-, Mac OS X-, Android-, Windows 8.1- und Windows 10-Desktopgeräte|
+|**Gesamtmenge des Speicherplatzes**|iOS-, Mac OS X-, Android-, Windows 8.1- und Windows 10-Desktopgeräte und -mobile Geräte|
+|**Freier Speicherplatz**|iOS-, Mac OS X-, Windows 8.1- und Windows 10-Desktopgeräte|
 |**Telefonnummer**<br>Telefone, die als geschäftlich eingestuft sind, werden jetzt mit der vollständigen Telefonnummer identifiziert, wenn Sie beispielsweise einen Inventurbericht für mobile Geräte ausführen. BYOD-Telefonnummern werden mit &#42; maskiert, und nur die letzten vier Ziffern werden angezeigt.|iOS-, Android- und Windows Phone-Geräte|
 |**IMEI**|Exchange ActiveSync-, iOS-, Android- und Windows Phone-Geräte|
 |**MEID**<br>Mobile Equipment Identifier|Nur iOS-Geräte|
@@ -61,7 +61,7 @@ Um das von den mobilen Geräten gesammelte Inventar anzuzeigen, führen Sie die 
 |**Aktivierungssperre aktiviert**|Nur iOS-Geräte|
 |**Verschlüsselung aktiviert**|Alle Geräte|
 
-## Was wird von Windows-PCs gesammelt?
+## <a name="whats-collected-from-windows-pcs"></a>Was wird von Windows-PCs gesammelt?
 > [!IMPORTANT]
 > Dieser Abschnitt gilt nur für Windows-PCs, auf denen die Intune-Windows-PC-Clientsoftware ausgeführt wird.
 
@@ -116,6 +116,6 @@ Um das von den Windows-PCs gesammelte Inventar anzuzeigen, führen Sie die [Comp
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

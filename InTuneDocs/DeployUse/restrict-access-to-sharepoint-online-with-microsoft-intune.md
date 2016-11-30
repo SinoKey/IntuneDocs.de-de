@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: 5e8fa073cfd98d77ad7fd269fa14bce117e3e9e5
 
 
 ---
 
-# Beschränken des Zugriffs auf SharePoint Online mit Microsoft Intune
+# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>Beschränken des Zugriffs auf SharePoint Online mit Microsoft Intune
 Verwenden Sie den bedingten Zugriff von [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], um den Zugriff auf Dateien zu steuern, die in SharePoint Online gespeichert sind.
 Der bedingte Zugriff besteht aus zwei Komponenten:
 - Eine Gerätekompatibilitätsrichtlinie, die das Gerät erfüllen muss, um als kompatibel bewertet zu werden.
@@ -29,7 +29,7 @@ Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Ar
 
 Die Richtlinien für Konformität und bedingten Zugriff werden dem Benutzer bereitgestellt. Jedes Gerät, das der Benutzer zum Zugriff auf die Dienste verwendet, wird auf die Einhaltung der Richtlinien überprüft.
 
-Wenn ein Benutzer versucht, mit einer unterstützten App wie z. B. OneDrive auf seinem Gerät eine Verbindung mit einer Datei herzustellen, erfolgt die folgende Auswertung:
+Wenn ein Benutzer versucht, mit einer unterstützten App wie z. B. OneDrive auf seinem Gerät eine Verbindung mit einer Datei herzustellen, erfolgt die folgende Auswertung:
 
 ![Diagramm zur Veranschaulichung der Entscheidungspunkte, mit denen ermittelt wird, ob ein Gerät Zugriff auf SharePoint erhält oder blockiert wird ](../media/ConditionalAccess8-6.png)
 
@@ -55,24 +55,24 @@ Wenn eine Bedingung nicht erfüllt wird, erhält der Benutzer bei der Anmeldung 
 
 -   Wenn das Gerät nicht kompatibel ist, wird eine Meldung angezeigt, die den Benutzer zum [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Unternehmensportalwebsite oder zur Unternehmensportal-App weiterleitet. Dort findet der Benutzer Informationen zum Problem und zur Lösung.
 
-**Bedingter Zugriff wird auf allen SharePoint-Websites erzwungen und externe Freigabe ist blockiert**
+**Keine Anwendung des bedingten Zugriffs bei externem Sharing**. Um zu erfahren, wie externes Sharing in Ihrer Mandantensammlung oder einer Seitensammlung verhindert werden kann, lesen Sie [Verwalten der externen Freigabe für Ihre SharePoint Online-Umgebung](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 >[!NOTE]
 >Wenn Sie den bedingten Zugriff für SharePoint Online aktivieren, sollten Sie die Domäne in der Liste wie im Thema [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) beschrieben deaktivieren.  
 
-## Unterstützung für mobile Geräte
+## <a name="support-for-mobile-devices"></a>Unterstützung für mobile Geräte
 - iOS 8.0 und höher
-- Android 4.0 und höher, Samsung KNOX Standard 4.0 oder höher
+- Android 4.0 und höher, Samsung KNOX Standard 4.0 oder höher
 - Windows Phone 8.1 und höher
 
 Sie können den Zugriff auf SharePoint Online beschränken, wenn von einem Browser von **iOS**- und **Android**-Geräten aus zugegriffen wird.  Der Zugriff wird nur von unterstützten Browsern auf kompatiblen Geräten gewährt:
 * Safari (iOS)
 * Chrome (Android)
-* Managed Browser (iOS und Android)
+* Managed Browser (iOS und Android 5.0 und höher)
 
 **Nicht unterstützte Browser werden blockiert**.
 
-## Unterstützung für PCs
+## <a name="support-for-pcs"></a>Unterstützung für PCs
 - Windows 8.1 und höher (bei Registrierung mit Intune)
 - Windows 7.0, Windows 8.1 oder Windows 10 (bei Einbindung in eine Domäne)
 > [!NOTE]
@@ -87,14 +87,14 @@ AAD DRS wird automatisch für Intune und Office 365-Kunden aktiviert. Kunden, di
   >[!NOTE]
   >Bedingter Zugriff wird nicht auf PCs unterstützt, auf denen der Intune Computerclient-Agent ausgeführt wird.
 
--    [Die moderne Authentifizierung von Office 365 muss aktiviert sein](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) und alle neuesten Office-Updates enthalten.
+-    [Die moderne Authentifizierung von Office 365 muss aktiviert sein](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) und alle neuesten Office-Updates enthalten.
 
     Die moderne Authentifizierung ermöglicht Windows-Clients mit Office 2013 eine ADAL-basierte Anmeldung (Active Directory Authentication Library) und bietet größere Sicherheit durch **mehrstufige Authentifizierung** und **zertifikatbasierte Authentifizierung**.
 
 
-## Konfigurieren des bedingten Zugriffs für SharePoint Online
+## <a name="configure-conditional-access-for-sharepoint-online"></a>Konfigurieren des bedingten Zugriffs für SharePoint Online
 
-### Schritt 1: Konfigurieren von Active Directory-Sicherheitsgruppen
+### <a name="step-1-configure-active-directory-security-groups"></a>Schritt 1: Konfigurieren von Active Directory-Sicherheitsgruppen
 Bevor Sie beginnen, konfigurieren Sie Azure Active Directory-Sicherheitsgruppen für die bedingte Zugriffsrichtlinien. Sie können diese Gruppen im **Office 365 Admin Center**oder **Intune-Kontenportal**konfigurieren. Diese Gruppen werden verwendet, um die Richtlinie auf Benutzer anzuwenden oder Benutzer von der Richtlinie auszunehmen. Bei Benutzern, für die eine Richtlinie gelten soll, muss jedes von ihnen verwendete Gerät die Richtlinie erfüllen, damit sie auf Ressourcen zugreifen können.
 
 Sie können zwei Arten von Gruppentypen in einer SharePoint Online-Richtlinie angeben:
@@ -105,7 +105,7 @@ Sie können zwei Arten von Gruppentypen in einer SharePoint Online-Richtlinie an
 
 Benutzer, die in beiden Gruppen enthalten sind, werden von der Richtlinie ausgenommen.
 
-### Schritt 2: Konfigurieren und Bereitstellen einer Kompatibilitätsrichtlinie
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>Schritt 2: Konfigurieren und Bereitstellen einer Kompatibilitätsrichtlinie
 Falls noch nicht bereits geschehen, erstellen Sie für die Benutzer, auf die die SharePoint Online-Richtlinie angewendet werden soll, eine Kompatibilitätsrichtlinie und stellen Sie sie bereit.
 
 > [!NOTE]
@@ -118,7 +118,7 @@ Ausführliche Informationen zum Konfigurieren der Kompatibilitätsrichtlinie fin
 
 Wenn Sie soweit sind, fahren Sie mit **Schritt 3**fort.
 
-### Schritt 3: Konfigurieren der SharePoint Online-Richtlinie
+### <a name="step-3-configure-the-sharepoint-online-policy"></a>Schritt 3: Konfigurieren der SharePoint Online-Richtlinie
 Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompatible Geräte auf SharePoint Online zugreifen dürfen. Diese Richtlinie wird in Azure Active Directory gespeichert.
 
 #### <a name="bkmk_spopolicy"></a>
@@ -162,11 +162,11 @@ Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompa
   3.    Klicken Sie auf die Schaltfläche **Browserzugriff aktivieren**.
   4.  Melden Sie sich im Chrome-Browser aus Office 365 ab, und starten Sie Chrome neu.
 
-  Auf **iOS- und Android**-Plattformen stellt Azure Active Directory ein Transport Layer Security-Zertifikat (TLS) für das Gerät aus, das für den Zugriff auf den Dienst verwendet wird, damit es identifiziert werden kann.  Das Gerät zeigt den Endbenutzern das Zertifikat zusammen mit einer Eingabeaufforderung zur Auswahl des Zertifikats an, wie in den nachstehenden Screenshots dargestellt. Die Endbenutzer müssen dieses Zertifikat auswählen, bevor sie den Browser weiter verwenden können.
+  Auf **iOS- und Android**-Plattformen stellt Azure Active Directory ein Transport Layer Security-Zertifikat (TLS) für das Gerät aus, das für den Zugriff auf den Dienst verwendet wird, damit es identifiziert werden kann.  Das Gerät zeigt den Endbenutzern das Zertifikat zusammen mit einer Eingabeaufforderung zur Auswahl des Zertifikats an, wie in den nachstehenden Screenshots dargestellt. Der Endbenutzer muss dieses Zertifikat auswählen, bevor der Browser weiterhin verwendet werden kann.
 
   **iOS**
 
-  ![Screenshot der Zertifikatseingabeaufforderung auf einem iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
+  ![Screenshot der Zertifikataufforderung auf einem iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
 
   **Android**
 
@@ -179,7 +179,7 @@ Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompa
 
 Die Richtlinie für bedingten Zugriff wird sofort wirksam und muss nicht explizit bereitgestellt werden.
 
-### Schritt 4: Überwachen der Richtlinien für Kompatibilität und bedingten Zugriff
+### <a name="step-4-monitor-the-compliance-and-conditional-access-policies"></a>Schritt 4: Überwachen der Richtlinien für Kompatibilität und bedingten Zugriff
 Im Arbeitsbereich **Gruppen** können Sie den Status Ihrer Geräte anzeigen.
 
 Wählen Sie eine beliebige Gruppe von Mobilgeräten und dann auf der Registerkarte **Geräte** einen der folgenden **Filter**aus:
@@ -190,11 +190,11 @@ Wählen Sie eine beliebige Gruppe von Mobilgeräten und dann auf der Registerkar
 
 -   **Geräte, die bei AAD registriert und kompatibel sind** : Diese Geräte können auf SharePoint Online zugreifen.
 
-### Weitere Informationen:
-[Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste mit Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### <a name="see-also"></a>Weitere Informationen:
+[Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste mit Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -5,32 +5,32 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 55377981cfcf1f7c9a0de7c9dbcd8fc80417d1e2
+ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
+ms.openlocfilehash: 7859266f639e148a032b6dd44d9313733aaa0269
 
 
 ---
-# Auswählen der Methode zum Registrieren mobiler Geräte
+# <a name="choose-how-to-enroll-mobile-devices"></a>Auswählen der Methode zum Registrieren mobiler Geräte
 
 Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmethode für die von Ihnen verwalteten Geräte zu ermitteln.
 
-## **Wie werden dedizierte, unternehmenseigene Geräte verwaltet?**
+## <a name="how-will-you-manage-dedicated-corporate-owned-devices"></a>**Wie werden dedizierte, unternehmenseigene Geräte verwaltet?**
 
   > [!div class="button"]
 [iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
 [iOS-Setup-Assistent >](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
 > [!div class="button"]
-[Das Tag mit der IMEI >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+[Tag mit IMEI >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   Sie können unternehmenseigene Geräte mit dedizierten Benutzern wie folgt registrieren:
 
@@ -45,6 +45,6 @@ Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmet
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

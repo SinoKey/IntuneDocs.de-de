@@ -2,8 +2,8 @@
 title: "Endpoint Protection für Windows-PCs| Microsoft Intune"
 description: "Sichern Sie Ihre verwalteten Computer mit Endpoint Protection, einer Lösung, die Echtzeitschutz vor Malwarebedrohungen bietet."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: arob98
 ms.date: 07/25/2016
 ms.topic: article
@@ -14,20 +14,20 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 00409205a78d6f8fca353bf70d4f8d3f91e1e8d2
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: f960ac0671e3003a8b16f5e270c54a4e353516b6
 
 
 ---
 
-# Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune
+# <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune
 Microsoft Intune kann Sie unterstützen, Ihre verwalteten Computer mit Endpoint Protection zu schützen, das Echtzeitschutz gegen Bedrohungen durch Schadsoftware bietet, Schadsoftwaredefinitionen auf dem neuesten Stand hält und Computer automatisch überprüft. Endpoint Protection bietet außerdem Tools, mit denen Sie Angriffe durch Schadsoftware kontrollieren und überwachen können.
 
 Falls Sie den Intune-Client noch nicht auf Ihren Computern installiert haben, finden Sie unter [Installieren des Windows-PC-Clients mit Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) weitere Informationen.
 
 Verwenden Sie die Informationen in den folgenden Abschnitten zum Konfigurieren, Bereitstellen und Überwachen von Endpoint Protection.
 
-## Wann eignet sich Endpoint Protection?
+## <a name="choose-when-to-use-endpoint-protection"></a>Wann eignet sich Endpoint Protection?
 Eine ihrer wichtigsten Aufgaben als IT-Administrator besteht darin, die von Ihnen verwalteten Computer frei von Schadsoftware und Viren zu halten. Bevor Sie Intune auf Windows-PCs in Ihrer Organisation bereitstellen, sollten Sie entscheiden, wie Sie Ihre Computer schützen. Hierzu wählen Sie eine der folgenden Optionen aus und konfigurieren die zugehörigen Richtlinieneinstellungen:
 
 |Zweck:|Richtlinieneinstellungen für Endpoint Protection|Weitere Informationen|
@@ -50,7 +50,7 @@ Führen Sie folgende Schritte aus, um von Ihrer aktuellen Endpunktschutzanwendun
 > [!NOTE]
 > Endpunktschutzanwendungen von Drittanbietern werden von Intune nicht automatisch deinstalliert.
 
-## Konfigurieren von Microsoft Intune Endpoint Protection
+## <a name="configure-microsoft-intune-endpoint-protection"></a>Konfigurieren von Microsoft Intune Endpoint Protection
 Über die folgenden Schritte können Sie Microsoft Intune Endpoint Protection konfigurieren.
 
 1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Richtlinie** > **Richtlinie hinzufügen**.
@@ -63,7 +63,7 @@ Sie können die empfohlenen Einstellungen verwenden oder die Einstellungen anpas
 
 Sie können die bereitgestellte Endpoint Protection-Richtlinie auf der Seite **Alle Richtlinien** des Arbeitsbereichs **Richtlinie** anzeigen.
 
-## Festlegen von Endpoint Protection-Diensteinstellungen
+## <a name="specify-endpoint-protection-service-settings"></a>Festlegen von Endpoint Protection-Diensteinstellungen
 
 |Richtlinieneinstellung|Details|
 |------------------|--------------------|
@@ -78,12 +78,12 @@ Wenn Sie die Richtlinienwerte für die Einstellungen **Endpoint Protection insta
 
   Microsoft Security Essentials warnt Sie aufgrund seines Echtzeitschutzes, wenn potenzielle Bedrohungen wie Viren oder Spyware versuchen, sich auf Ihrem PC zu installieren oder auszuführen. In dem Moment, in dem dies passiert, wird ganz rechts auf der Taskleiste eine Meldung im Infobereich angezeigt.
 
-### Festlegen von Einstellungen für den Echtzeitschutz
+### <a name="specify-real-time-protection-settings"></a>Festlegen von Einstellungen für den Echtzeitschutz
 
 |Richtlinieneinstellung|Details|
 |------------------|--------------------|
 |**Echtzeitschutz aktivieren**|Hiermit werden Überwachung und Überprüfung aller Dateien und Anwendungen aktiviert, auf die zugegriffen wird. Zudem werden schädliche Dateien oder Anwendungen blockiert, bevor sie auf Computern ausgeführt werden können.<br /><br />Empfohlener Wert: **Ja**|
-|**Alle Downloads werden überprüft**|Hiermit wird die Überprüfung aller Dateien und Anhänge aktiviert, die aus dem Internet auf Clientcomputer heruntergeladen werden.<br /><br />Empfohlener Wert: **Ja**|
+|**Alle Downloads überprüfen**|Hiermit wird die Überprüfung aller Dateien und Anhänge aktiviert, die aus dem Internet auf Clientcomputer heruntergeladen werden.<br /><br />Empfohlener Wert: **Ja**|
 |**Datei- und Programmaktivität auf Computern überwachen**|Hiermit wird die Überwachung eingehender und ausgehender Dateien sowie von Programmaktivitäten auf Computern aktiviert. Mit dieser Einstellung kann Endpoint Protection überwachen, wann die Ausführung von Dateien und Programmen beginnt, und Sie werden über alle Aktionen informiert, die von bzw. an ihnen durchgeführt werden.<br /><br />Empfohlener Wert: **Ja**|
 |**Überwachte Dateien**|Ermöglicht Ihnen anzugeben, ob nur eingehende, nur ausgehende oder alle Dateien überwacht werden.<br /><br />Empfohlener Wert: **Alle Dateien überwachen**|
 |**Aktivieren der Verhaltensüberwachung**|Mit dieser Richtlinieneinstellung kann Microsoft Intune Endpoint Protection Clientcomputer auf bestimmte verdächtige Aktivitätsmuster prüfen.<br /><br />Empfohlener Wert: **Ja**|
@@ -91,16 +91,16 @@ Wenn Sie die Richtlinienwerte für die Einstellungen **Endpoint Protection insta
 
   ![Echtzeiteinstellungen für Endpoint Protection](./media/pol-sa-pc-policy-realtime.png)
 
-### Einstellungen für den Überprüfungszeitplan
+### <a name="specify-scan-schedule-settings"></a>Einstellungen für den Überprüfungszeitplan
 
 |Richtlinieneinstellung|Weitere Informationen|
 |------------------|--------------------|
-|**Eine tägliche Schnellüberprüfung planen**|Hiermit wird eine tägliche Schnellüberprüfung von häufig verwendeten Dateien und wichtigen Systemdateien auf verwalteten Computern geplant. Diese Schnellüberprüfung wirkt sich geringfügig auf die Leistung aus.<br /><br />Empfohlener Wert: **Ja**|
-|**Eine Schnellüberprüfung ausführen, wenn zwei aufeinander folgende Schnellüberprüfungen verpasst wurden**|Hiermit wird Endpoint Protection so konfiguriert, dass automatisch eine Schnellüberprüfung auf Computern ausgeführt wird, wenn bei diesen zwei aufeinanderfolgende Schnellüberprüfungen verpasst wurden.<br /><br />Empfohlener Wert: **Ja**|
+|**Tägliche Schnellüberprüfung planen**|Hiermit wird eine tägliche Schnellüberprüfung von häufig verwendeten Dateien und wichtigen Systemdateien auf verwalteten Computern geplant. Diese Schnellüberprüfung wirkt sich geringfügig auf die Leistung aus.<br /><br />Empfohlener Wert: **Ja**|
+|**Schnellüberprüfung ausführen, wenn zwei aufeinanderfolgende Schnellüberprüfungen verpasst wurden**|Hiermit wird Endpoint Protection so konfiguriert, dass automatisch eine Schnellüberprüfung auf Computern ausgeführt wird, wenn bei diesen zwei aufeinanderfolgende Schnellüberprüfungen verpasst wurden.<br /><br />Empfohlener Wert: **Ja**|
 |**Vollständige Überprüfung planen**|Hiermit wird eine vollständige Überprüfung aller Dateien und Ressourcen auf den lokalen Computerfestplatten konfiguriert. Diese Überprüfung kann einige Zeit in Anspruch nehmen und sich auf die Computerleistung auswirken (die erforderliche Zeit hängt von der Anzahl der überprüften Dateien und Ressourcen ab).<br /><br />Empfohlener Wert: **Nein**|
-|**Eine vollständige Überprüfung ausführen, wenn zwei aufeinander folgende vollständige Überprüfungen verpasst wurden**|Hiermit wird Endpoint Protection so konfiguriert, dass automatisch eine vollständige Überprüfung auf Computern ausgeführt wird, wenn bei diesen zwei aufeinanderfolgende Überprüfungen verpasst wurden.<br /><br />Empfohlener Wert: Nicht konfiguriert|
+|**Vollständige Überprüfung ausführen, wenn zwei aufeinanderfolgende vollständige Überprüfungen verpasst wurden**|Hiermit wird Endpoint Protection so konfiguriert, dass automatisch eine vollständige Überprüfung auf Computern ausgeführt wird, wenn bei diesen zwei aufeinanderfolgende Überprüfungen verpasst wurden.<br /><br />Empfohlener Wert: Nicht konfiguriert|
 
-### Festlegen von Einstellungen für Überprüfungsoptionen
+### <a name="specify-scan-options-settings"></a>Festlegen von Einstellungen für Überprüfungsoptionen
 
 |Richtlinieneinstellung|Details|
 |------------------|--------------------|
@@ -109,38 +109,38 @@ Wenn Sie die Richtlinienwerte für die Einstellungen **Endpoint Protection insta
 |**Geplante Überprüfung nur starten, wenn sich der Computer im Leerlauf befindet**|Legen Sie hier **Ja** fest, um zu verhindern, dass geplante Überprüfungen auf Computern gestartet werden, während diese benutzt werden, und so eine Beeinträchtigung der Benutzerproduktivität zu vermeiden.<br /><br />Empfohlener Wert: **Ja**|
 |**Vor dem Start der Überprüfung die aktuellsten Malwaredefinitionen abrufen**|Legen Sie diese Option auf **Ja** fest, um Endpoint Protection so zu konfigurieren, dass vor einer Überprüfung von Clientcomputern automatisch nach den neuesten Schadsoftwaredefinitionen gesucht wird.<br /><br />Empfohlener Wert: **Ja**|
 |**Archivdateien überprüfen**|Legen Sie hier **Ja** fest, um Endpoint Protection so zu konfigurieren, dass Archivdateien wie ZIP- oder CAB-Dateien auf Computern auf Schadsoftware überprüft werden.<br /><br />Empfohlener Wert: **Nein**|
-|**Scannen von E-Mail-Nachrichten**|Legen Sie diese Option auf **Ja** fest, um Endpoint Protection so zu konfigurieren, dass auf Computern eingehende E-Mail-Nachrichten überprüft werden.<br /><br />Empfohlener Wert: **Ja**|
+|**E-Mail-Nachrichten überprüfen**|Legen Sie diese Option auf **Ja** fest, um Endpoint Protection so zu konfigurieren, dass auf Computern eingehende E-Mail-Nachrichten überprüft werden.<br /><br />Empfohlener Wert: **Ja**|
 |**Dateien überprüfen, die in freigegebenen Netzwerkordnern geöffnet wurden**|Legen Sie diese Option auf **Ja** fest, um Endpoint Protection zum Überprüfen von Dateien zu konfigurieren, die in freigegebenen Netzwerkordnern geöffnet werden. In der Regel sind dies Dateien, auf die über einen UNC-Pfad (Universal Naming Convention) zugegriffen wird. Die Aktivierung dieser Funktion kann Benutzern Probleme bereiten, die nur über Lesezugriff verfügen, da sie Malware nicht entfernen können.<br /><br />Empfohlener Wert: **Nein**|
 |**Zugeordnete Netzwerklaufwerke überprüfen**|Legen Sie diese Option auf **Ja** fest, um Endpoint Protection für das Überprüfen von Dateien auf zugeordneten Netzwerklaufwerken zu konfigurieren. Die Aktivierung dieser Funktion kann Benutzern Probleme bereiten, die nur über Lesezugriff verfügen, da sie Malware nicht entfernen können.<br /><br />Empfohlener Wert: **Nein**|
 |**Wechseldatenträger überprüfen**|Legen Sie diese Option auf **Ja** fest, um Endpoint Protection für das Überprüfen von Wechseldatenträgern (z. B. USB-Sticks) auf Schadsoftware und unerwünschte Software beim Ausführen einer vollständigen Überprüfung auf Computern zu konfigurieren.<br /><br />Empfohlener Wert: **Ja**|
-|**Prozessornutzung während der Überprüfung begrenzen auf**|Legt den maximalen Prozentsatz der Prozessornutzung fest, der bei geplanten Überprüfungen auf Clientcomputern beansprucht werden darf. Sie können hierfür einen Wert zwischen 1 und 100 Prozent festlegen.<br /><br />Empfohlener Wert: **50 %**|
+|**CPU-Auslastung während einer Überprüfung begrenzen**|Legt den maximalen Prozentsatz der Prozessornutzung fest, der bei geplanten Überprüfungen auf Clientcomputern beansprucht werden darf. Sie können hierfür einen Wert zwischen 1 und 100 Prozent festlegen.<br /><br />Empfohlener Wert: **50 %**|
 
-### Auswählen der Standardeinstellungen für Aktionen
+### <a name="choose-default-actions-settings"></a>Auswählen der Standardeinstellungen für Aktionen
 
 Die Einstellung **Auswählen, wie von Endpoint Protection mit Malware der folgenden Warnstufen verfahren werden soll** gibt die Standardaktion an, die Endpoint Protection ausführt, wenn Schadsoftware mit verschiedenen Warnstufen erkannt wird. Sie können für jede Warnstufe festlegen, dass die Malware entfernt oder in Quarantäne versetzt oder die von Microsoft empfohlene Aktion ausgeführt wird.
 
 Empfohlener Wert: **Empfohlene Aktion** ermöglicht Endpoint Protection das Empfehlen einer Aktion.   
 
-### Entscheiden, ob die Einstellungen für ausgeschlossene Dateien und Ordner verwendet werden sollen
+### <a name="decide-whether-to-choose-the-excluded-files-and-folders-settings"></a>Entscheiden, ob die Einstellungen für ausgeschlossene Dateien und Ordner verwendet werden sollen
 
 Die Einstellung **Von der Überprüfung oder dem Echtzeitschutz auszuschließende Dateien und Ordner** schließt bestimmte Dateien und Ordner aus, wenn eine Überprüfung ausgeführt wird oder Echtzeitschutz auf Computern aktiv ist.
 
-### Entscheiden, ob die Einstellungen für ausgeschlossene Prozesse verwendet werden sollen
+### <a name="decide-whether-to-choose-the-excluded-processes-settings"></a>Entscheiden, ob die Einstellungen für ausgeschlossene Prozesse verwendet werden sollen
 
 Die Einstellung **Prozesse, die beim Ausführen einer Überprüfung oder bei Verwendung des Echtzeitschutzes auszuschließen sind** schließt bestimmte Prozesse aus, wenn eine Überprüfung ausgeführt wird oder Echtzeitschutz auf Computern aktiv ist. Sie können nur Dateien mit der Erweiterung **.exe**, **.com** und **.scr** ausschließen.
 
-### Entscheiden, ob die Einstellungen für ausgeschlossene Dateitypen verwendet werden sollen
+### <a name="decide-whether-to-choose-the-excluded-file-types-settings"></a>Entscheiden, ob die Einstellungen für ausgeschlossene Dateitypen verwendet werden sollen
 
 Die Einstellung **Dateierweiterungen, die beim Ausführen einer Überprüfung oder bei Verwendung des Echtzeitschutzes auszuschließen sind** schließt bestimmte Dateinamenerweiterungen aus, wenn eine Überprüfung ausgeführt wird oder Echtzeitschutz auf Computern aktiv ist.
 
-### Einstellungen für Microsoft Active Protection Service angeben
+### <a name="specify-microsoft-active-protection-service-settings"></a>Einstellungen für Microsoft Active Protection Service angeben
 Microsoft Active Protection Service ist eine Online-Community, die Ihnen hilft zu entscheiden, wie Sie auf potenzielle Bedrohungen reagieren. Diese Community trägt auch dazu bei, die Weiterverbreitung neuer Infektionen mit Malware zu unterbinden. Sie können **Microsoft Active Protection Service beitreten**, indem Sie **Ja** auswählen und dann Ihre **Mitgliedschaftsstufe** angeben:
   - **Standard**: Hierbei werden grundlegende Informationen zu erkannter Schadsoftware an Microsoft gesendet. Hierzu gehören Angaben dazu, woher die Software stammt, welche Aktionen Sie anwenden oder von Endpoint Protection automatisch angewendet werden und ob diese Aktionen erfolgreich waren.
   - **Premium**: Hierbei werden zusätzliche Informationen über Schadsoftware, Spyware oder möglicherweise unerwünschte Software an Microsoft gesendet. Hierzu gehören Informationen zum Speicherort der Software, den Dateinamen, der Funktionsweise der Software und der Auswirkung der Software auf Ihren Computer.
 
 Sie können auch **Dynamische Definitionen auf Basis von Microsoft Active Protection Service-Berichten empfangen**.
 
-## Auswählen von Verwaltungsaufgaben für Endpoint Protection
+## <a name="choose-management-tasks-for-endpoint-protection"></a>Auswählen von Verwaltungsaufgaben für Endpoint Protection
 Mithilfe der folgenden Aufgaben können Sie verschiedene Verwaltungsaufgaben auf verwalteten Computern ausführen, auf denen Endpoint Protection ausgeführt wird:
  - Update für Malwaredefinitionen ausführen
   - Intune-Konsole: Wählen Sie im Arbeitsbereich **Gruppen** die zu aktualisierenden Computer aus. Wählen Sie **Remoteaufgaben** &gt; **Update für Malwaredefinitionen ausführen** aus.
@@ -151,7 +151,7 @@ Mithilfe der folgenden Aufgaben können Sie verschiedene Verwaltungsaufgaben auf
 
 Zur Anzeige des Status einer Remoteaufgabe wählen Sie rechts unten in der Intune-Konsole den Link **Remoteaufgaben** aus. Im Dialogfeld **Taskstatus** werden die aktuellen Remoteaufgaben, der Aufgabenstatus, der Gerätename und etwaige gemeldete Fehler aufgelistet. Es enthält außerdem einen Link zu Informationen zur Problembehandlung, sollte er benötigt werden.
 
-## Überwachen von Endpoint Protection
+## <a name="monitor-endpoint-protection"></a>Überwachen von Endpoint Protection
 Sie können den Malwarestatus Ihrer Computer mithilfe des Arbeitsbereichs **Schutz** der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/)überwachen. Dieser Arbeitsbereich enthält zwei Seiten:
  - **Übersicht über Endpoint Protection**: Hier werden wichtige Probleme als Links angezeigt, die Sie auswählen können, um weitere Informationen zu erhalten. Die folgenden Arten von Problemen können angezeigt werden:
   - **Instanzen von Schadsoftware, die Nachverfolgung erfordern**: Klicken Sie auf den Link, um eine Liste mit Schadsoftwareproblemen sowie den zur Lösung des jeweiligen Problems erforderlichen Folgemaßnahmen anzuzeigen. Sie können diese Liste weiter durchsuchen, um festzustellen, welche Computer betroffen sind.
@@ -167,7 +167,7 @@ Sie können den Malwarestatus Ihrer Computer mithilfe des Arbeitsbereichs **Schu
 
   ![Überwachen von Endpoint Protection](./media/pol-sa-ep-monitor.png)
 
-### Anzeigen der letzten Erkennungspfade für Malware auf Computern
+### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Anzeigen der letzten Erkennungspfade für Malware auf Computern
 Intune kann die Pfade von bis zu 10 der zuletzt erkannten Instanzen von Malware auf einem Gerät anzeigen. Die Option **Letzter Erkennungspfad** ist standardmäßig deaktiviert. So aktivieren Sie diese Anzeige:
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) **Gruppen** > **Alle Geräte** > **Malware** aus.
@@ -176,7 +176,7 @@ Intune kann die Pfade von bis zu 10 der zuletzt erkannten Instanzen von Malware 
 
 3.  Aktivieren Sie das Kontrollkästchen **Letzte Erkennungspfade** in der Liste. Die Spalte **Letzte Erkennungspfade** wird angezeigt. Sie enthält bis zu 10 der zuletzt auf dem Gerät überwachten Malwareinstanzen.
 
-## Ausführen einer Malwareüberprüfung oder Aktualisieren von Malwaredefinitionen auf einem Computer
+## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Ausführen einer Malwareüberprüfung oder Aktualisieren von Malwaredefinitionen auf einem Computer
 Intune kann auf einem remoteverwalteten PC, auf dem der Intune-Client installiert wurde, entweder eine vollständige oder schnelle Malwareüberprüfung mithilfe von Endpoint Protection oder Windows Defender ausführen.
 
 1. Gehen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) zu **Gruppen** > **Übersicht** > **Alle Geräte** > **Alle Computer**, und wählen Sie dann den Computer aus, der verwendet werden soll.
@@ -186,14 +186,14 @@ Intune kann auf einem remoteverwalteten PC, auf dem der Intune-Client installier
 
 
 
-## Benötigen Sie weitere Hilfe?
+## <a name="need-more-help"></a>Benötigen Sie weitere Hilfe?
 Weitere Hilfe und Unterstützung erhalten Sie unter [Troubleshoot Endpoint Protection in Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) (Problembehandlung für Endpoint Protection in Microsoft Intune).
 
-### Siehe auch
+### <a name="see-also"></a>Weitere Informationen
 [Richtlinien zum Schutz von Windows-PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
