@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 11/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
-ms.openlocfilehash: fc9140ac9e6727ae5ac76b3da950baab29326078
+ms.sourcegitcommit: c68e89755d753b3913004a2c1cb1c41158ce5703
+ms.openlocfilehash: 787533f4b1c24cc4af125cbf6b2a4a18e48c4d3e
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Konfigurieren der Zertifikatinfrastruktur für SCEP
 In diesem Thema wird beschrieben, welche Infrastruktur Sie zum Erstellen und Bereitstellen von SCEP-Zertifikatprofilen benötigen.
 
-### <a name="onpremises-infrastructure"></a>Lokale Infrastruktur
+### <a name="on-premises-infrastructure"></a>Lokale Infrastruktur
 
 -    **Active Directory-Domäne**: Alle in diesem Abschnitt aufgeführten Server (außer dem Webanwendungsproxy-Server) müssen der Active Directory-Domäne angehören.
 
@@ -46,7 +46,7 @@ Für Datenverkehr aus dem Internet zum Umkreisnetzwerk: Lassen Sie über Port 44
 
 Für Datenverkehr aus dem Umkreisnetzwerk zum vertrauenswürdigen Netzwerk: Lassen Sie alle Ports und Protokolle zu, die für den Domänenzugriff auf den in die Domäne eingebundenen NDES-Server benötigt werden. Der NDES-Server benötigt Zugriff auf die Zertifikatserver, die DNS-Server, die Configuration Manager-Server und die Domänencontroller.
 
-Es wird empfohlen, den NDES-Server über einen Proxy zu veröffentlichen, z. B. über den [Azure AD-Anwendungsproxy](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx) oder einen Proxy eines Drittanbieters.
+Es wird empfohlen, den NDES-Server über einen Proxy zu veröffentlichen, z. B. über den [Azure AD-Anwendungsproxy](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx) oder einen Proxy eines Drittanbieters.
 
 
 ### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>Zertifikate und Vorlagen
@@ -77,14 +77,14 @@ Vor dem Konfigurieren von Zertifikatprofilen müssen Sie die folgenden Aufgaben 
 
 **Aufgabe 5**: Aktivieren, Installieren und Konfigurieren des Intune Certificate Connectors
 
-### <a name="task-1-create-an-ndes-service-account"></a>Aufgabe 1: Erstellen eines NDES-Dienstkontos
+### <a name="task-1---create-an-ndes-service-account"></a>Aufgabe 1: Erstellen eines NDES-Dienstkontos
 
 Erstellen Sie ein Domänenbenutzerkonto, das als NDES-Dienstkonto verwendet werden soll. Sie geben dieses Konto an, wenn Sie Vorlagen auf der ausstellenden Zertifizierungsstelle konfigurieren, bevor Sie NDES installieren und konfigurieren. Stellen Sie sicher, dass der Benutzer über die Standardrechte **Lokal anmelden**, **Anmelden als Dienst** und **Anmelden als Batchauftrag** verfügt. In einigen Organisationen werden diese Rechte durch Härtungsrichtlinien deaktiviert.
 
 
 
 
-### <a name="task-2-configure-certificate-templates-on-the-certification-authority"></a>Aufgabe 2: Konfigurieren von Zertifikatvorlagen für die Zertifizierungsstelle
+### <a name="task-2---configure-certificate-templates-on-the-certification-authority"></a>Aufgabe 2: Konfigurieren von Zertifikatvorlagen für die Zertifizierungsstelle
 Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 -   Konfigurieren einer Zertifikatvorlage für NDES
@@ -149,7 +149,7 @@ Um die Zertifizierungsstelle so zu konfigurieren, dass der Antragsteller die Gü
     2.  Überprüfen Sie, ob die Vorlage veröffentlicht wurde, indem Sie sie im Ordner **Zertifikatvorlagen** anzeigen.
 
 
-### <a name="task-3-configure-prerequisites-on-the-ndes-server"></a>Aufgabe 3: Konfigurieren der Voraussetzungen auf dem NDES-Server
+### <a name="task-3---configure-prerequisites-on-the-ndes-server"></a>Aufgabe 3: Konfigurieren der Voraussetzungen auf dem NDES-Server
 Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 -   Hinzufügen von NDES zu einem Windows-Server und Konfigurieren von IIS zur Unterstützung von NDES
@@ -190,7 +190,7 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
-### <a name="task-4-configure-ndes-for-use-with-intune"></a>Aufgabe 4: Konfigurieren von NDES für die Verwendung mit Intune
+### <a name="task-4---configure-ndes-for-use-with-intune"></a>Aufgabe 4: Konfigurieren von NDES für die Verwendung mit Intune
 Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 -   Konfigurieren von NDES für die Verwendung mit der ausstellenden Zertifizierungsstelle
@@ -220,7 +220,7 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\**
 
-    Um diesen Schlüssel zu bearbeiten, ermitteln Sie den **Zweck** der Zertifikatvorlage, wie auf der entsprechenden Registerkarte **Anforderungsverarbeitung** aufgeführt, und bearbeiten Sie dann den zugehörigen Eintrag in der Registrierung. Ersetzen Sie hierzu die vorhandenen Daten durch den Namen der Zertifikatvorlage (nicht den Anzeigenamen der Vorlage), den Sie in Aufgabe 1 festgelegt haben. In der folgenden Tabelle ist der Zertifikatvorlagenzweck den Werten in der Registrierung zugeordnet:
+    Um diesen Schlüssel zu bearbeiten, ermitteln Sie den **Zweck** der Zertifikatvorlage, wie auf der entsprechenden Registerkarte **Anforderungsverarbeitung** aufgeführt, und bearbeiten Sie dann den zugehörigen Eintrag in der Registrierung. Ersetzen Sie hierzu die vorhandenen Daten durch den Namen der Zertifikatvorlage (nicht den Anzeigenamen der Vorlage), den Sie in Aufgabe 1 festgelegt haben. In der folgenden Tabelle ist der Zertifikatvorlagenzweck den Werten in der Registrierung zugeordnet:
 
     |Zertifikatvorlagenzweck (auf der Registerkarte „Anforderungsverarbeitung“)|Zu bearbeitender Registrierungswert|In der Intune-Verwaltungskonsole für das SCEP-Profil angezeigter Wert|
     |--------------------------------------------------------------|--------------------------|------------------------------------------------------------------------------------------------------------|
@@ -270,7 +270,7 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
     **Erweiterte Schlüsselverwendung**: Dies muss die **Clientauthentifizierung** umfassen.
 
-    **Antragstellername**: Dies muss mit dem DNS-Namen des Servers identisch sein, auf dem das Zertifikat installiert wird (d. h. dem NDES-Server).
+    **Antragstellername**: Dies muss mit dem DNS-Namen des Servers identisch sein, auf dem das Zertifikat installiert wird (d. h. dem NDES-Server).
 
 ##### <a name="to-configure-iis-request-filtering"></a>So konfigurieren Sie die IIS-Anforderungsfilterung
 
@@ -294,7 +294,7 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 4.  Starten Sie den NDES-Server neu. Der Server ist jetzt bereit zur Unterstützung des Zertifikatconnectors.
 
-### <a name="task-5-enable-install-and-configure-the-intune-certificate-connector"></a>Aufgabe 5: Aktivieren, Installieren und Konfigurieren des Intune Certificate Connectors
+### <a name="task-5---enable-install-and-configure-the-intune-certificate-connector"></a>Aufgabe 5: Aktivieren, Installieren und Konfigurieren des Intune Certificate Connectors
 Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 Aktivieren der Unterstützung für NDES in Intune
@@ -343,13 +343,13 @@ Herunterladen, Installieren und Konfigurieren des Certificate Connectors auf dem
 
 Um zu überprüfen, das der Dienst ausgeführt wird, öffnen Sie einen Browser, und geben Sie die folgenden URL ein. Es sollte ein **403** -Fehler zurückgegeben werden:
 
-**http:// &lt;FQDN_des_NDES_Servers&gt;/certsrv/mscep/mscep.dll**
+**https://&lt;FQDN des NDES-Servers&gt;/certsrv/mscep/mscep.dll**
 
 ## <a name="next-steps"></a>Nächste Schritte
 Sie sind jetzt bereit, Zertifikatprofile gemäß der Beschreibung in [Konfigurieren von Zertifikatprofilen](Configure-Intune-certificate-profiles.md) zu konfigurieren.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

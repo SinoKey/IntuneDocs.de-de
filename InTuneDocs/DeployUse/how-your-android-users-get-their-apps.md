@@ -2,10 +2,10 @@
 title: Wie Ihre Android-Benutzer Apps erhalten | Microsoft Intune
 description: "Methoden, um Android-Apps für Endbenutzer verfügbar zu machen."
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,24 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 627914b2ac877c1b5ff5bc95f7f2098ab8988250
-ms.openlocfilehash: 98e712fb852c89c1d092b87482f30ada33010a33
+ms.sourcegitcommit: 1c131a017e08482f0c31f7f4579cc8d317a366a0
+ms.openlocfilehash: 15151552da5365958ff784b678e58ae5c88fed0e
 
 
 ---
 
 
-# Wie Ihre Android-Benutzer Apps erhalten
-Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Android-Endbenutzer die Apps erhalten, die Sie über Microsoft Intune verteilen. Die Informationen können je nach Gerätetyp variieren (native Android-Geräte oder Samsung Knox-Geräte).
+# <a name="how-your-android-users-get-their-apps"></a>Wie Ihre Android-Benutzer Apps erhalten
+Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Android-Endbenutzer die Apps erhalten, die Sie über Microsoft Intune verteilen. Die Informationen können je nach Gerätetyp variieren (native Android-Geräte oder Samsung Knox Standard-Geräte).
 
-## Native Android-Geräte (nicht Samsung KNOX)
+## <a name="native-non-samsung-knox-standard-android-devices"></a>Native Android-Geräte (nicht Samsung Knox Standard)
 
 | App-Typ | Branchenspezifische Apps | Play Store-Apps  |
 | ------------- |-------------| -----|
 | Verfügbare Apps      | Benutzer tippen im Unternehmensportal auf **Installieren**. Es wird eine Benachrichtigung angezeigt, auf die die Benutzer tippen, um die Installation zu starten. Nachdem die Installation erfolgreich durchgeführt wurde, verschwindet die Benachrichtigung. | Benutzer tippen im Unternehmensportal auf die App und werden zu einer App-Seite im Play Store weitergeleitet, auf der sie die Installation starten können.|
 | Required apps      | Benutzern wird eine Benachrichtigung angezeigt, die sie nicht verwerfen können, in der sie darauf hingewiesen werden, dass sie eine App installieren müssen. Benutzer tippen auf die Benachrichtigung, um die Installation zu starten. Nachdem die Installation erfolgreich durchgeführt wurde, verschwindet die Benachrichtigung.    | Benutzern wird eine Benachrichtigung angezeigt, die sie nicht verwerfen können, in der sie darauf hingewiesen werden, dass sie eine App installieren müssen. Benutzer tippen auf die Benachrichtigung und werden zu einer App-Seite im Play Store weitergeleitet, auf der sie die Installation starten können. Nachdem die Installation erfolgreich durchgeführt wurde, verschwindet die Benachrichtigung. |
 
-## Android-Geräte mit Samsung KNOX
+## <a name="samsung-knox-standard-android-devices"></a>Android-Geräte mit Samsung Knox Standard
 
 | App-Typ | Branchenspezifische Apps | Play Store-Apps  |
 | ------------- |-------------| -----|
@@ -44,7 +44,7 @@ Apps können verwaltet oder nicht verwaltet sein, wie unten beschrieben. Das Ver
 
 **Nicht verwaltete Apps:** Dabei handelt es sich um Apps, die nicht über Richtlinien verwaltet werden können. Diese Apps wurden nicht von Intune „umschlossen“ oder sind nicht in das Intune MAM SDK integriert. Diesen Apps lassen sich keine Anwendungsrichtlinien zuweisen.
 
-### Weitere Informationen:
+### <a name="see-also"></a>Weitere Informationen:
 [Hinzufügen von Apps mit Microsoft Intune](/intune/deploy-use/add-apps)
 
 [Wie Ihre iOS-Benutzer Apps erhalten](how-your-ios-users-get-their-apps.md)
@@ -53,6 +53,6 @@ Apps können verwaltet oder nicht verwaltet sein, wie unten beschrieben. Das Ver
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

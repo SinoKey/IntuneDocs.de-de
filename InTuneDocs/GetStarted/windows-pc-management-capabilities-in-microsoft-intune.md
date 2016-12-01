@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e786cd33b5c963fa373d281e93721d0dd0f5456c
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 1bc5370574c038d0fe34746aa89067d06cc80c31
 
 
 ---
 
-# Funktionen zur Verwaltung von Windows-PCs bei Verwendung des Intune-Softwareclients
+# <a name="windows-pc-management-capabilities-when-you-use-the-intune-software-client"></a>Funktionen zur Verwaltung von Windows-PCs bei Verwendung des Intune-Softwareclients
 In den meisten Szenarios registrieren Sie Ihre Geräte bei Microsoft Intune, sodass Sie über eine größere Anzahl von Funktionen verfügen. Allerdings können Sie PCs auch mit dem Intune-Softwareclient verwalten, der die folgenden Funktionen bietet:
 
 -   **[Softwareupdateverwaltung](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)**: Sie können PCs auf dem aktuellen Stand halten und entscheiden, wann Updates angewendet werden sollen.
@@ -37,7 +37,7 @@ In den meisten Szenarios registrieren Sie Ihre Geräte bei Microsoft Intune, sod
 
 Intune unterstützt die Installation des Softwareclients auf bis zu 7.000 Windows-Geräten.
 
-## Anforderungen an das Betriebssystem
+## <a name="operating-system-requirements"></a>Anforderungen an das Betriebssystem
 PCs, die die folgenden Windows-Versionen (jeweils 32-Bit und 64-Bit) ausführen, können mit Intune verwaltet werden:
 
 
@@ -52,7 +52,7 @@ PCs, die die folgenden Windows-Versionen (jeweils 32-Bit und 64-Bit) ausführen,
 - **Windows 10**: Pro-, Education- und Enterprise-Versionen
 
 
-## Hardwaremindestanforderungen
+## <a name="minimum-hardware-requirements"></a>Hardwaremindestanforderungen
 Im Folgenden sind die Hardwaremindestanforderungen zum Installieren des Intune-Softwareclients aufgeführt:
 
 |Anforderungen|Details|
@@ -61,7 +61,7 @@ Im Folgenden sind die Hardwaremindestanforderungen zum Installieren des Intune-S
 |Prozessor und Arbeitsspeicher|Weitere Informationen entnehmen Sie den Prozessor- und Arbeitsspeicheranforderungen des PC-Betriebssystems.|
 |Speicherplatz|200 MB verfügbarer Speicherplatz vor der Installation der Clientsoftware|
 
-## Weitere Anforderungen
+## <a name="further-requirements"></a>Weitere Anforderungen
 Im Folgenden sind die Softwareanforderungen zum Installieren des Intune-Softwareclients aufgeführt:
 
 |Anforderungen|Details|
@@ -70,11 +70,11 @@ Im Folgenden sind die Softwareanforderungen zum Installieren des Intune-Software
 |Windows Installer 3.1|Auf dem PC wird Windows Installer 3.1 oder höher benötigt.|
 |Entfernen nicht kompatibler Clientsoftware|Bevor Sie die Intune-PC-Clientsoftware installieren, müssen Sie die folgende Clientsoftware auf dem PC deinstallieren:<br /><br />– Alle Configuration Manager-Versionen<br />– Alle Microsoft Systems Management Server-Versionen (SMS)|
 
-### Weitere Informationen:
+### <a name="see-also"></a>Weitere Informationen:
 [Verwaltungsfunktionen für registrierte Geräte in Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

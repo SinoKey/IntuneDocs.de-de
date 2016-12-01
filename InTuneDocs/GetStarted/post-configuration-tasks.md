@@ -2,10 +2,10 @@
 title: Aufgaben nach der Konfiguration | Microsoft Intune
 description: "Schließen Sie optionale Konfigurationsaufgaben ab, um die Funktionen der Verwaltung mobiler Geräte zu optimieren."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 1/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0e125a283a017685c2442c34194da29466c8e67a
-ms.openlocfilehash: 81dfaeb25de75f178d8993b47aadb5d4880970c7
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 7a4f1af9843cba6fa7b7325d0a678dd445cc1000
 
 
 ---
 
-# Aufgaben nach der Konfiguration
+# <a name="post-configuration-tasks"></a>Aufgaben nach der Konfiguration
 Nach Abschluss der anfänglichen Konfigurationsschritte für ein kostenpflichtiges Intune-Abonnement können Sie zusätzliche Verwaltungsfunktionen für mobile Geräte aktivieren.
 
 -   **Verbinden von Exchange mit Intune**: Für Benutzer von mobilen Geräten, die noch nicht in Intune registriert sind, können Sie mithilfe eines Connectors für lokales Exchange und Exchange Online die Exchange ActiveSync-Verwaltung in Microsoft Office 365 aktivieren. Mit dem Exchange Connector stellen Sie eine Verbindung mit Ihrer Exchange-Bereitstellung her und können mobile Geräte über die Intune-Verwaltungskonsole verwalten. Weitere Informationen zum Exchange Connector finden Sie unter [Verwalten mobiler Geräte mit Exchange ActiveSync und Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
@@ -31,6 +31,6 @@ Nach Abschluss der anfänglichen Konfigurationsschritte für ein kostenpflichtig
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

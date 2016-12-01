@@ -5,33 +5,33 @@ layout: HubPage
 title: "Intune-Dokumentation – MDM-Dokumentation | Microsoft Docs"
 description: "Technische Dokumentation zu Microsoft Intune – Mobile Geräte- und Anwendungsverwaltung"
 keywords: "Intune-Dokumentation, MDM-Dokumentation, Mobile Device Management-Dokumentation, Mobile Geräte- und Anwendungsverwaltung – Dokumentation"
-author: jeffgilb
-ms.author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+author: arob98
+ms.author: angrobe
+manager: angrobe
+ms.date: 11/15/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: bbab228b86bbec49bf68c7d91a05c4d0e7f37209
-ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
+ms.sourcegitcommit: f9ab2200b1d357d6a805e3e5cd37f3c4391e3571
+ms.openlocfilehash: 89789e5b5f7b5030f8ec1bd0c62e8e410b9ed8be
 
 
 ---
-# Intune-Dokumentation
+# <a name="intune-documentation"></a>Intune-Dokumentation
 <article id="main">
     <section id="hero-content">
       <h1>Intune-Dokumentation</h1>
       <h2>Erfahren Sie, wie Sie Microsoft Intune bereitstellen und verwalten: unseren Verwaltungsdienst für mobile Geräte und Anwendungen.</h2>
-      <h3>Intune mit Configuration Manager verwalten? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Configuration Manager-Dokumentation anzeigen &rarr;</a></h3>
+      <h3>Intune mit Configuration Manager verwalten? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Configuration Manager-Dokumentation anzeigen&rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Wichtige Inhalte</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Einführung in Microsoft Intune</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">Mehr als 150 Lizenzen? Nutzen Sie Ihre FastTrack-Vorteile</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Häufige Szenarien, die auf Intune beruhen</a></li>
           <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Erste Schritte mit Intune</a></li>
         </ul>
@@ -68,7 +68,7 @@ ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
                 <li class="column-third">
                   <a href="/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
                     <h3>Intune-Evaluierungsanleitung</h3>
-                    <p>Im Evaluierungsleitfaden sind die Schritte zum Einrichten Ihrer Testversion mit bis zu 100 Benutzern und Geräten beschrieben.</p>
+                    <p>Im Evaluierungsleitfaden sind die Schritte zum Einrichten Ihrer Testversion mit bis zu 100 Benutzern und Geräten beschrieben.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -155,8 +155,8 @@ ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste</h3>
-                    <p>Beschränken Sie den Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens mithilfe des bedingten Zugriffs in Intune.</p>
+                    <h3>Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste</h3>
+                    <p>Beschränken Sie den Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens mithilfe des bedingten Zugriffs in Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -285,6 +285,6 @@ ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 66d533d094a12239ca4ed1a30f9ce3a06e5cece1
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: ce460c1b87b4759dcdeed061c2342b68dd491820
 
 
 ---
@@ -35,7 +35,9 @@ Sie können Benutzern erlauben, ihre Geräte mithilfe der Intune-Unternehmenspor
 
 1.  **Einrichten von Intune**<br>Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch [Festlegen der Autorität für die Verwaltung mobiler Geräte (mobile device management, MDM)](prerequisites-for-enrollment.md#set-mobile-device-management-authority) auf **Microsoft Intune** und durch anschließendes Einrichten von MDM vor.
 
-2.  **Erstellen von CNAME-Einträgen** (optional)<br>Erstellen Sie **CNAME**-DNS-Ressourceneinträge für die Domäne des Unternehmens. Wenn der Name Ihrer Unternehmenswebsite beispielsweise „contoso.com“ lautet, erstellen Sie einen CNAME-Eintrag im DNS, der „EnterpriseEnrollment.contoso.com“ auf „enterpriseenrollment-s.manage.microsoft.com“ umleitet. 
+2.  **Erstellen von CNAME-Einträgen** (optional)<br>Erstellen Sie **CNAME**-DNS-Ressourceneinträge für die Domäne des Unternehmens. Wenn der Name Ihrer Unternehmenswebsite beispielsweise „contoso.com“ lautet, erstellen Sie einen CNAME-Eintrag im DNS, der „EnterpriseEnrollment.contoso.com“ auf „enterpriseenrollment-s.manage.microsoft.com“ umleitet.
+
+    Obwohl die Erstellung von CNAME DNS-Einträgen optional ist, vereinfachen diese die Registrierung für Benutzer. Wenn kein CNAME-Eintrag für die Registrierung gefunden wurde, werden Benutzer dazu aufgefordert, manuell den MDM-Servernamen „https://manage.microsoft.com“ einzugeben. 
 
     Wenn Sie aktuell über einen CNAME-Eintrag im DNS verfügen, der „EnterpriseEnrollment.contoso.com“ auf „manage.microsoft.com“ umleitet, empfehlen wir, ihn durch einen CNAME-Eintrag im DNS zu ersetzen, der „EnterpriseEnrollment.contoso.com“ auf „enterpriseenrollment-s.manage.microsoft.com“ umleitet. Wir empfehlen Ihnen diese Änderung, da der Endpunkt „manage.microsoft.com“ in einem zukünftigen Release nicht mehr verwendet werden kann.
 
@@ -72,6 +74,6 @@ Es sind keine weiteren Schritte erforderlich, es sei denn, Sie stellen das Unter
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
