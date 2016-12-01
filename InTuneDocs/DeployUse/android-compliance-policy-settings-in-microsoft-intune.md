@@ -14,8 +14,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
-ms.openlocfilehash: 2fd4d3c7cb92e27a01090fdec85e02db4010f859
+ms.sourcegitcommit: b7d81d6e02602559c417a9f2a0cac51de8ab472e
+ms.openlocfilehash: aacdf9967cee3544d0b647fa2bff6240211df920
 
 
 ---
@@ -23,11 +23,10 @@ ms.openlocfilehash: 2fd4d3c7cb92e27a01090fdec85e02db4010f859
 
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte in Microsoft Intune
 
-Die in diesem Thema beschriebenen Richtlinieneinstellungen gelten für Geräte mit Android 4.0 und höher oder Samsung KNOX Standard 4.0 und höher.
+Die in diesem Thema beschriebenen Richtlinieneinstellungen gelten für Geräte mit Android 4.0 und höher oder Samsung KNOX 4.0 und höher.
 
 Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folgenden Optionen:
-> [!div class = "op_single_selector"]
-- [Einstellungen für Kompatibilitätsrichtlinien für Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+> [!div class="op_single_selector"]
 - [Einstellungen für Kompatibilitätsrichtlinien für iOS-Geräte](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Einstellungen für Kompatibilitätsrichtlinien für Windows-Geräte](windows-compliance-policy-settings-in-microsoft-intune.md)
 
@@ -46,46 +45,48 @@ Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folge
   -   **Mindestens alphanumerisch**
   -   **Alphanumerisch mit Symbolen**
 
-- **Minuten Inaktivität vor erneuter Anforderung des Kennworts**: Geben Sie die Leerlaufzeit an, nach der ein Benutzer sein Kennwort erneut eingeben muss.
+- **Minuten Inaktivität vor erneuter Anforderung des Kennworts**: Gibt die Leerlaufzeit an, nach der ein Benutzer sein Kennwort erneut eingeben muss.
 
 - **Kennwortablauf (Tage):** Wählen Sie die Anzahl von Tagen aus, bevor das Kennwort des Benutzers abläuft und er ein neues erstellen muss.
 
 - **Kennwortverlauf speichern:** Verwenden Sie diese Einstellung zusammen mit **Wiederverwendung vorheriger Kennwörter verhindern**, um zu verhindern, dass der Benutzer zuvor bereits verwendete Kennwörter erstellt.
 
-- **Wiederverwendung vorheriger Kennwörter verhindern:** Wenn Sie **Kennwortverlauf speichern** aktiviert haben, geben Sie die Anzahl der zuvor verwendeten Kennwörter ein, die nicht erneut verwendet werden dürfen.
+- **Wiederverwendung vorheriger Kennwörter verhindern:** Wenn **Kennwortverlauf speichern** aktiviert ist, geben Sie die Anzahl der zuvor verwendeten Kennwörter ein, die nicht erneut verwendet werden dürfen.
 
-- **Kennworteingabe verlangen, wenn das Gerät aus dem Leerlauf zurückkehrt:** Verwenden Sie diese Einstellung zusammen mit der Einstellung **Minuten Inaktivität vor erneuter Anforderung des Kennworts**. Der Benutzer wird zur Eingabe eines Kennworts aufgefordert, um auf ein Gerät zugreifen zu können, das für die in der Einstellung **Minuten Inaktivität vor erneuter Anforderung des Kennworts** angegebene Zeit inaktiv war.
+- **Kennworteingabe verlangen, wenn das Gerät aus dem Leerlaufbetrieb zurückkehrt:** Verwenden Sie diese Einstellung zusammen mit der Einstellung **Minuten der Inaktivität vor erneuter Anforderung des Kennworts**. Die Benutzer werden zur Eingabe eines Kennworts aufgefordert, um auf ein Gerät zugreifen zu können, das für die in der Einstellung **Minuten der Inaktivität vor erneuter Anforderung des Kennworts** angegebene Zeit inaktiv war.
 
 ### <a name="encryption"></a>Verschlüsselung
-- **Verschlüsselung auf mobilen Geräten erforderlich:** Legen Sie diese Einstellung auf **Ja** fest, damit Geräte verschlüsselt werden müssen, um eine Verbindung mit Ressourcen herzustellen. Wenn Sie die Einstellung **Kennwort zum Entsperren mobiler Geräte erforderlich** auswählen, werden Geräte verschlüsselt.
+- **Verschlüsselung auf mobilen Geräten vorschreiben:** Legen Sie diese Einstellung auf **Ja** fest, damit Geräte verschlüsselt werden müssen, um eine Verbindung mit Ressourcen herzustellen. Wenn Sie die Einstellung **Kennwort zum Entsperren mobiler Geräte erforderlich** konfigurieren, werden Geräte verschlüsselt.
 
 ## <a name="device-health-and-security-settings"></a>Einstellungen für Geräteintegrität und Sicherheit
 
 - **Gerät darf keinen Jailbreak oder Rootzugriff verwenden:** Wenn Sie diese Einstellung aktivieren, werden Geräte mit Jailbreak als nicht kompatibel eingestuft.
-- **Installation von Apps aus unbekannten Quellen muss auf Geräten gesperrt sein (Android 4.0 und höher)** Um Geräte zu blockieren, bei denen die Option **Sicherheit** > **Unbekannte Quellen** auf dem Gerät aktiviert ist, aktivieren Sie diese Einstellung, und legen Sie sie auf **Ja** fest.  
+- **Installation von Apps aus unbekannten Quellen muss auf Geräten gesperrt sein (Android 4.0 und höher)**: Um Geräte zu blockieren, bei denen die Option **Sicherheit > Unbekannte Quellen** aktiviert ist, aktivieren Sie diese Einstellung, und legen Sie sie auf **Ja** fest.  
+
 >[!IMPORTANT]
 >Das Sideloading von Anwendungen erfordert, dass die Einstellung **Unbekannte Quellen** aktiviert ist. Erzwingen Sie diese Kompatibilitätsrichtlinie nur, wenn Sie kein Sideloading von Android-Apps auf Geräten durchführen.
 
-- **USB-Debuggen muss deaktiviert sein (Android 4.2 und höher)**: Diese Einstellung gibt an, ob die Option für USB-Debuggen auf dem Gerät aktiviert ist.
-- **Aktivierung von „Gerät auf Sicherheitsbedrohungen überprüfen“ auf Geräten erforderlich (Android 4.2-4.4)**: Diese Einstellung gibt an, dass die Option **Apps überprüfen** auf dem Gerät aktiviert ist.
-- **Niedrigste zulässige Android-Sicherheitspatchebene (Android 6.0 und höher)**: Geben Sie mit dieser Einstellung die niedrigste Android-Patchebene an. Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht kompatibel. Das Datum muss im folgenden Format angegeben werden: JJJJ-MM-TT.
+- **USB-Debuggen muss deaktiviert sein (Android 4.2 und höher)**: Gibt an, ob ermittelt werden soll, ob die Option für USB-Debuggen auf dem Gerät aktiviert ist.
+- **Aktivierung von "Gerät auf Sicherheitsbedrohungen überprüfen" auf Geräten erforderlich (Android 4.2–4.4)**: Gibt an, dass die Funktion **Apps überprüfen** auf dem Gerät aktiviert ist.
+- **Niedrigste zulässige Android-Sicherheitspatchebene (Android 6.0 und höher)**: Geben Sie die niedrigste Android-Patchebene an.  Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht kompatibel. Das Datum muss im folgenden Format angegeben werden: JJJJ-MM-TT.
 - **Schutz vor Gerätebedrohungen muss aktiviert sein**: Verwenden Sie diese Einstellung, um die Risikobewertung mit der Lookout MTP-Lösung als Kompatibilitätsvoraussetzung zu fordern. Wählen Sie aus den folgenden Optionen die maximal zulässige Bedrohungsstufe aus:
 
-  - **Keine (geschützt)**: Dies ist die sicherste Einstellung. Dies bedeutet, dass das Gerät keinerlei Bedrohungen unterliegen darf. Wenn auf dem Gerät Bedrohungen jeglicher Stufe erkannt werden, wird es als nicht kompatibel bewertet.
-  - **Niedrig**: Das Gerät wird als kompatibel bewertet, wenn nur Bedrohungen niedriger Stufen vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
-  - **Mittel**: Das Gerät wird als kompatibel bewertet, wenn die auf dem Gerät gefundenen Bedrohungen niedriger oder mittlerer Stufe sind. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
-  - **Hoch**: Dies ist die am wenigsten sichere Option. Sie lässt im Wesentlichen alle Bedrohungsstufen zu. Es ist möglicherweise hilfreich, diese Lösung nur zu Meldungszwecken zu verwenden.
+  - **Keine (geschützt)**: Dies ist die sicherste Einstellung. Dies bedeutet, dass das Gerät keinerlei Bedrohungen unterliegen darf. Wenn auf dem Gerät Bedrohungen erkannt werden, wird es als nicht kompatibel bewertet.
+  - **Niedrig**: Das Gerät wird als kompatibel bewertet, wenn nur Bedrohungen auf niedrigen Stufen vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
+  - **Mittel:** Das Gerät wird als kompatibel bewertet, wenn auf dem Gerät Bedrohungen auf niedriger oder mittlerer Stufe gefunden werden. Wenn auf dem Gerät Bedrohungen auf hoher Stufe erkannt werden, wird es als nicht kompatibel bewertet.
+  - **Hoch**: Dies ist die unsicherste Einstellung. Mit dieser Einstellung werden grundsätzlich alle Bedrohungsstufen zugelassen. Sie ist daher üblicherweise nur für Berichtszwecke sinnvoll.
 
   Weitere Informationen finden Sie unter [Aktivieren der Regel zum Schutz vor Bedrohungen auf dem Gerät in der Kompatibilitätsrichtlinie](enable-device-threat-protection-rule-in-compliance-policy.md).
 
 ## <a name="device-property-settings"></a>Einstellungen für Geräteeigenschaften
+
 - **Minimal erforderliches Betriebssystem:** Wenn ein Gerät die Anforderungen für die minimal erforderliche Betriebssystemversion nicht erfüllt, wird es als nicht kompatibel gemeldet.
-  Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Benutzer kann ein Upgrade des Geräts durchführen und anschließend auf die Unternehmensressourcen zugreifen.
+  Ein Link zum Durchführen von Upgrades wird angezeigt. Der Benutzer kann ein Upgrade des Geräts durchführen und anschließend auf die Unternehmensressourcen zugreifen.
 
-- **Maximal zulässige Betriebssystemversion:** Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt, und der Benutzer wird gebeten, sich an den IT-Administrator zu wenden. Mit diesem Gerät kann solange nicht auf Unternehmensressourcen zugegriffen werden, bis die Regeln geändert werden und die betreffende Betriebssystemversion zugelassen wird.
+- **Maximal zulässige Betriebssystemversion:** Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt, und der Benutzer wird gebeten, sich an den IT-Administrator zu wenden. Mit diesem Gerät kann solange nicht auf Unternehmensressourcen zugegriffen werden, bis die Regel geändert und die betreffende Betriebssystemversion zugelassen wird.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

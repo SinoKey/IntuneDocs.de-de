@@ -2,9 +2,10 @@
 title: "Benutzerdefinierte Konfigurationen für VPN-Profile | Microsoft Intune"
 description: Verwenden Sie benutzerdefinierte Konfigurationen, um VPN-Profile in Intune zu erstellen.
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +14,26 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
-ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
+ms.sourcegitcommit: fb3b6cccaa3e62be3a7271ae6a67e76f8cf8d858
+ms.openlocfilehash: a1c7648a4ee4ab91e00f5305a8124a07570824fc
 
 
 ---
 
-# Benutzerdefinierte Konfigurationen für VPN-Profile
+# <a name="custom-configurations-for-vpn-profiles"></a>Benutzerdefinierte Konfigurationen für VPN-Profile
 
-## Erstellen einer benutzerdefinierten Konfiguration
-Sie können benutzerdefinierte Konfigurationen verwenden, um VPN-Profile in Intune zu erstellen. So erstellen Sie eine benutzerdefinierte Konfiguration:
+## <a name="create-a-custom-configuration"></a>Erstellen einer benutzerdefinierten Konfiguration
+Sie können benutzerdefinierte Konfigurationen verwenden, um VPN-Profile in Intune zu erstellen für:
 
-   1. Wählen Sie in der Intune-Verwaltungskonsole **Richtlinie** > **Richtlinie hinzufügen** > *<Expand platform>* > **Benutzerdefinierte Konfiguration** > **Richtlinie erstellen** aus.
+* Geräte unter Android 4 und höher
+* Android for Work-Geräte
+* Registrierte Geräte unter Windows 8.1 und höher
+* Geräte unter Windows Phone 8.1 und höher
+* Geräte unter Windows 10 Desktop und Mobile
+
+So erstellen Sie eine benutzerdefinierte Konfiguration:
+
+   1. Wählen Sie in der Intune-Verwaltungskonsole **Richtlinie** > **Richtlinie hinzufügen** > *Plattform erweitern* > **Benutzerdefinierte Konfiguration** > **Richtlinie erstellen** aus.
    2. Geben Sie einen Namen für die Richtlinie an.
    3. Wählen Sie für jede URI-Einstellung **Hinzufügen** aus, und geben Sie die erforderlichen Informationen an. Beispiel:
 
@@ -32,7 +41,7 @@ Sie können benutzerdefinierte Konfigurationen verwenden, um VPN-Profile in Intu
 
    4.  Nachdem Sie alle URI-Einstellungen eingegeben haben, wählen Sie **Richtlinie speichern** aus, und stellen Sie die Richtlinie anschließend bereit.
 
-## Bereitstellen einer Konfigurationsrichtlinie
+## <a name="deploy-a-configuration-policy"></a>Bereitstellen einer Konfigurationsrichtlinie
 
 1.  Wählen Sie im Arbeitsbereich **Richtlinie** die Richtlinie aus, die Sie bereitstellen möchten, und klicken Sie anschließend auf **Bereitstellung verwalten**.
 
@@ -44,7 +53,7 @@ Sie können benutzerdefinierte Konfigurationen verwenden, um VPN-Profile in Intu
 
 Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informationen zur Bereitstellung im unteren Teil der Richtlinienliste anzeigen.
 
-##Beispiel für URI-Einstellungen für eine benutzerdefinierte VPN-Profilkonfiguration
+##<a name="example-of-uri-settings-for-a-custom-vpn-profile-configuration"></a>Beispiel für URI-Einstellungen für eine benutzerdefinierte VPN-Profilkonfiguration
 Hier folgen Beispieleinträge für URI-Werte zum Erstellen einer benutzerdefinierten Konfiguration für ein VPN in einem fiktiven Unternehmen namens Contoso. Weitere Informationen, wie den Datentyp für die einzelnen Einträge, finden Sie unter [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
 
 Natives Contoso-VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
@@ -85,10 +94,10 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 Informationen zur Verwendung dieser Einstellungen und weitere Details zu ihrer Funktion finden Sie in der CSP-Dokumentation (Configuration Service Provider; Kryptografiedienstanbieter): https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
-## URI-Einstellungen für Android pro App VPN auf PulseSecure
-### BENUTZERDEFINIERTE URI FÜR DIE PAKETLISTE
+## <a name="uri-settings-for-android-per-app-vpn-on-pulsesecure"></a>URI-Einstellungen für Android pro App VPN auf PulseSecure
+### <a name="custom-uri-for-package-list"></a>BENUTZERDEFINIERTE URI FÜR DIE PAKETLISTE
 -  Datentyp = String
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList
 -  Wert = durch Trennzeichen getrennte Paketliste.
    - Trennzeichen: Semikolon (;), Doppelpunkt (:), Komma (,), senkrechter Strich (|)
 
@@ -96,7 +105,7 @@ Beispiele:
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
-### BENUTZERDEFINIERTE URI FÜR MODUS (OPTIONAL)
+### <a name="custom-uri-for-mode-optional"></a>BENUTZERDEFINIERTE URI FÜR MODUS (OPTIONAL)
 - Datentyp = String
 - OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
@@ -107,11 +116,11 @@ Beispiele:
 > - Standardmäßig *WHITELIST*, wenn eine PackageList angegeben ist
 
 
-### Weitere Informationen:
+### <a name="see-also"></a>Weitere Informationen:
 (VPN-Verbindungen in Microsoft Intune)[vpn-connections-in-microsoft-intune.md]
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

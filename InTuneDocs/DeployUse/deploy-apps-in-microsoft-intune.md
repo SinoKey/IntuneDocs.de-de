@@ -14,19 +14,19 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 6ae7bd35157da261d0627f70933fe2a808f9e677
+ms.sourcegitcommit: d73df65a36b348f0941b1e7889d083406bc082f9
+ms.openlocfilehash: b13d1a6a1a0f995b1169fabd09a2f0a4cf9b630d
 
 ---
-# Bereitstellen von Apps in Microsoft Intune
+# <a name="deploy-apps-in-microsoft-intune"></a>Bereitstellen von Apps in Microsoft Intune
 
 Die Informationen in diesem Thema helfen Ihnen beim Bereitstellen von Apps mit Microsoft Intune.
 
 
-## Bereitstellen einer App
+## <a name="deploy-an-app"></a>Bereitstellen einer App
 Bei dieser Vorgehensweise stellen Sie die App für ausgewählte Gruppen von Geräten oder für ausgewählte Benutzer bereit.
 
-### So stellen Sie eine App bereit
+### <a name="to-deploy-an-app"></a>So stellen Sie eine App bereit
 
 1. Klicken Sie in der [Microsoft Intune-Administratorkonsole](https://manage.microsoft.com) auf **Apps** &gt; **Apps**, um die Liste der von Ihnen verwalteten Apps anzuzeigen.
 
@@ -50,7 +50,12 @@ Bei dieser Vorgehensweise stellen Sie die App für ausgewählte Gruppen von Ger�
 6. Wenn die bereitzustellende App mit Intune-VPN-Profilen kompatibel ist, wird die Seite **VPN-Profil** angezeigt. Auf dieser Seite können Sie festlegen, dass iOS-Apps mit einem von Ihnen bereitgestellten VPN-Profil verknüpft werden sollen. Die VPN-Verbindung wird automatisch geöffnet, wenn die App gestartet wird. Um ein VPN-Profil verfügbar zu machen, müssen Sie die Profileinstellung **VPN pro App** aktivieren.
  Informationen zum Konfigurieren von VPN-Profilen, einschließlich Informationen zum Verknüpfen von Profilen mit Apps, finden Sie unter [VPN-Verbindungen in Microsoft Intune](vpn-connections-in-microsoft-intune.md).
 
-## Beispiel
+<!---
+>[!TIP]
+>If an end user previously installed an iOS app and you now deploy it with a deployment action of **Available**, Intune will automatically begin to manage that app with no further action required by you, or the end-user.
+--->
+
+## <a name="example"></a>Beispiel
 
 In diesem Beispiel haben Sie die App als **Verfügbar** für ein iOS-Gerät bereitgestellt.
 Die App wird für Benutzergeräte im Unternehmensportal angezeigt. Die Benutzer können die App vom Portal aus installieren.
@@ -58,15 +63,15 @@ Die App wird für Benutzergeräte im Unternehmensportal angezeigt. Die Benutzer 
 In diesem Screenshot wurde z. B. die App „Bing for iOS“ mit dem Installationstyp **Externer Link** zusammen mit einem benutzerdefinierten Symbol bereitgestellt. Die Option **Als ausgewählte App anzeigen und im Unternehmensportal hervorheben** wurde ausgewählt.  
 ![Verfügbare iOS-App](./media/available-install-on-iOS.png)
 
-Wenn Sie die App als **Erforderlich** für ein iOS-Gerät bereitgestellt haben, wird der Benutzer benachrichtigt, dass diese App zur Installation bereitsteht. In diesem Screenshot wurde z. B. die App „Work Folders for iOS“ mit dem Installationstyp **Verwaltete iOS-App aus dem App Store** bereitgestellt.  
+Wenn Sie die App als **Erforderlich** für ein iOS-Gerät bereitgestellt haben, wird der Benutzer benachrichtigt, dass diese App zur Installation bereitsteht. In diesem Screenshot wurde z. B. die App „Work Folders for iOS“ mit dem Installationstyp **Verwaltete iOS-App aus dem App Store** bereitgestellt.  
 ![Erforderliche iOS-App](./media/iOS-Required-install.PNG)
 
-## Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 Nachdem Sie eine Anwendung bereitgestellt haben, ist es sinnvoll, deren Status zu überwachen. Weitere Informationen finden Sie unter [Überwachen von Apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md).
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

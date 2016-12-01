@@ -2,8 +2,8 @@
 title: Problembehandlung bei Endpoint Protection | Microsoft Intune
 description: "Lösen Sie Probleme, während Sie den Endpunktschutz von Microsoft Intune verwenden."
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -14,20 +14,20 @@ ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 95c9b857665bdb97ea035fd4cee18ca4508c4cbb
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: bdcbe263529844cab04b1e5b715fe6eafd3feb86
 
 
 ---
 
-# Troubleshoot Endpoint Protection in Microsoft Intune
+# <a name="troubleshoot-endpoint-protection-in-microsoft-intune"></a>Troubleshoot Endpoint Protection in Microsoft Intune
 
 Dieser Abschnitt enthält Informationen zur Lösung von Problemen in Verbindung mit Endpoint Protection in Microsoft Intune.
 
 Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) weitere Möglichkeiten, Hilfe zu erhalten.
 
 
-### Fehlermeldungen für die Endpoint Protection
+### <a name="endpoint-protection-error-messages"></a>Fehlermeldungen für die Endpoint Protection
 Dieser Abschnitt beschreibt mögliche Ursachen und Lösungen für die folgenden Fehler und Warnungen, die in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) im Bereich **Endpoint Protection-Status** angezeigt werden.
 
 |Angezeigter Status|Mögliche Ursachen|Mögliche Lösungen|
@@ -45,11 +45,11 @@ Dieser Abschnitt beschreibt mögliche Ursachen und Lösungen für die folgenden 
 |**Schnellüberprüfung ist überfällig**|Seit 14 Tagen wurde keine Schnellüberprüfung ausgeführt. Ursache hierfür kann ein Neustart während einer Schnellüberprüfung sein.|Wenn eine Schnellüberprüfung überfällig ist, können Sie diese einmalig ausführen oder wiederholt über die [Intune-Verwaltungskonsole](https://manage.microsoft.com) mithilfe der Informationen im Thema [Common Windows PC management tasks with the Microsoft Intune computer client](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client) (Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient) planen.|
 |**Eine andere Endpunktschutzanwendung wird ausgeführt**|Eine andere Endpunktschutzanwendung wird ausgeführt, und der Computer befindet sich in einem fehlerfreien Zustand.|Ist eine andere Endpunktschutzanwendung installiert, und wird diese von Intune erkannt, deaktiviert Endpoint Protection sich standardmäßig automatisch. Erkennt Intune die andere Endpunktschutzanwendung nicht, bleibt Endpoint Protection aktiviert. Weitere Informationen finden Sie unter [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).|
 
-### Nächste Schritte
+### <a name="next-steps"></a>Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

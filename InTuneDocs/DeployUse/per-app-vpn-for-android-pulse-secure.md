@@ -2,9 +2,10 @@
 title: "App-bezogenes VPN für Android mithilfe von Pulse Secure | Microsoft Intune"
 description: "Sie können ein App-bezogenes VPN-Profil für Android-Geräte erstellen, die von Intune verwaltet werden."
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,35 +14,35 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eb2260f6bd37647d34871c9776dba3628d0aa8f6
-ms.openlocfilehash: a2af91827f3a5ebc549e7f474943f1b0cc6208dd
+ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
+ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
 
 
 ---
 
-# Verwenden einer benutzerdefinierten Richtlinie zum Erstellen eines Profils für ein App-bezogenes VPN für Android-Geräte
+# <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>Verwenden einer benutzerdefinierten Richtlinie zum Erstellen eines Profils für ein App-bezogenes VPN für Android-Geräte
 
-Sie können ein App-bezogenes VPN-Profil für Android 5.0-Geräte oder höher erstellen, die von Intune verwaltet werden. Erstellen Sie zunächst ein VPN-Profil, das den Pulse Secure-Verbindungstyp verwendet. Erstellen Sie anschließend eine benutzerdefinierte Konfigurationsrichtlinie, die das VPN-Profil angegebenen Apps zuordnet. 
+Sie können ein App-bezogenes VPN-Profil für Android 5.0-Geräte oder höher erstellen, die von Intune verwaltet werden. Erstellen Sie zunächst ein VPN-Profil, das den Pulse Secure- oder Citrix-Verbindungstyp verwendet. Erstellen Sie anschließend eine benutzerdefinierte Konfigurationsrichtlinie, die das VPN-Profil angegebenen Apps zuordnet. 
 
-Nachdem Sie die Richtlinie auf Ihrem Android-Gerät oder für Ihre Benutzergruppe bereitstellen, sollten Benutzer das Pulse Secure-VPN starten. Pulse Secure erlaubt es dann lediglich den angegebenen Apps, die offene VPN-Verbindung für ihren Datenverkehr zu nutzen.
+Nachdem Sie die Richtlinie auf Ihrem Android-Gerät oder für Ihre Benutzergruppe bereitstellen, sollten Benutzer den Pulse Secure- oder Citrix-VPN starten. Pulse Secure erlaubt es dann nur den angegebenen Apps, die offene VPN-Verbindung zu nutzen.
 
 > [!NOTE]
 >
 > Für dieses Profil wird nur der Verbindungstyp „Pulse Secure“ unterstützt.
 
 
-### Schritt 1: Erstellen eines VPN-Profils
+### <a name="step-1-create-a-vpn-profile"></a>Schritt 1: Erstellen eines VPN-Profils
 
 1. Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** > **Richtlinie hinzufügen**.
 2. Wählen Sie eine Vorlage für die neue Richtlinie aus, indem Sie **Android** erweitern und anschließend **VPN-Profil (Android 4 und höher)** auswählen.
-3. Wählen Sie in der Vorlage für **Verbindungstyp** die Option **Pulse Secure** aus.
+3. Wählen Sie in der Vorlage für **Verbindungstyp** die Option **Pulse Secure** oder **Citrix** aus.
 4. Stellen Sie das VPN-Profil fertig, und speichern Sie es. Weitere Informationen zu VPN-Profilen finden Sie unter [VPN-Verbindungen](../deploy-use/vpn-connections-in-microsoft-intune.md).
 
 > [!NOTE]
 >
 > Notieren Sie den Namen des VPN-Profils für den nächsten Schritt. Beispiel: MeineApp-VPN-Profil.
 
-### Schritt 2: Erstellen einer benutzerdefinierten Konfigurationsrichtlinie
+### <a name="step-2-create-a-custom-configuration-policy"></a>Schritt 2: Erstellen einer benutzerdefinierten Konfigurationsrichtlinie
 
    1. Wählen Sie in der Intune-Verwaltungskonsole **Richtlinie** > **Richtlinie hinzufügen** > **Android** > **Benutzerdefinierte Konfiguration** > **Richtlinie erstellen** aus.
    2. Geben Sie einen Namen für die Richtlinie ein.
@@ -53,7 +54,7 @@ Nachdem Sie die Richtlinie auf Ihrem Android-Gerät oder für Ihre Benutzergrupp
 
 ![Beispiel einer benutzerdefinierten Richtlinie für ein App-bezogenes VPN für Android](./media/android_per_app_vpn_oma_uri.png)
 
-#### Festlegen, ob Ihre App-Liste eine Positivliste (Whitelist) oder eine Negativliste (Blacklist) sein soll (optional)
+#### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>Festlegen, ob Ihre App-Liste eine Positivliste (Whitelist) oder eine Negativliste (Blacklist) sein soll (optional)
   Sie können eine Liste von Apps angeben, die die VPN-Verbindung *nicht* verwenden können, indem Sie den Wert **BLACKLIST** verwenden. Alle anderen Apps stellen über das VPN eine Verbindung her.
 Alternativ können Sie den Wert **WHITELIST** verwenden, um eine Liste von Apps anzugeben, die die VPN-Verbindung verwenden *können*. Apps, die sich nicht auf der Liste befinden, werden keine Verbindung über das VPN herstellen.
   1.    Wählen Sie unter **OMA-URI-Einstellungen** **Hinzufügen** aus.
@@ -64,7 +65,7 @@ Alternativ können Sie den Wert **WHITELIST** verwenden, um eine Liste von Apps 
 
 
 
-### Schritt 3: Bereitstellen beider Richtlinien
+### <a name="step-3-deploy-both-policies"></a>Schritt 3: Bereitstellen beider Richtlinien
 
 Sie müssen *beide* Richtlinien für die *gleichen* Intune-Gruppen bereitstellen.
 
@@ -77,6 +78,6 @@ Eine Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeit
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

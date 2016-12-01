@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: 0b60e7a7a921762e682185af273bb94f24441a0c
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: d880123a9b4d4afd74e9941ce0590f5dae554667
 
 
 ---
@@ -27,14 +27,15 @@ Wenn Sie [Exchange ActiveSync](#mobile-device-management-with-exchange-activesyn
 
 ## <a name="overview-of-device-enrollment-methods"></a>Übersicht über die Geräteregistrierungsmethoden
 
-In der folgenden Tabelle werden die Registrierungsmethoden von Intune zusammen mit den von ihnen unterstützten Funktionen dargestellt. Diese Funktionen beinhalten:
-- **Zurücksetzen** –Zurücksetzen des Geräts auf Werkseinstellungen, wobei alle Daten entfernt werden. Weitere Informationen finden Sie auf der Seite [Abkoppeln von Geräten von der Intune-Verwaltung](retire-devices-from-microsoft-intune-management.md).
+Die folgende Tabelle zeigt Intune-Registrierungsmethoden und die unterstützten Funktionen und Anforderungen der einzelnen Methoden. Die Funktionen und Anforderungen werden nachfolgend beschrieben.
+
+- **Zurücksetzen** – Gibt an, ob das Gerät zurückgesetzt werden muss, bevor Benutzer das Gerät registrieren können. Der Begriff „Zurücksetzen“ bedeutet die Zurücksetzung des Geräts auf Werkseinstellungen, wobei alle Daten entfernt werden. Weitere Informationen finden Sie auf der Seite [Abkoppeln von Geräten von der Intune-Verwaltung](retire-devices-from-microsoft-intune-management.md).
 - **Affinität** – Ordnet Geräte Benutzern zu. Für die Verwaltung mobiler Geräte (MAM, Mobile Application Management) und den bedingten Zugriff auf Unternehmensdaten erforderlich. Weitere Informationen finden Sie auf der Seite [Registrieren firmeneigener iOS-Geräte in Microsoft Intune](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices).
 - **Sperre** – Hindert Benutzer daran, das Gerät aus der Verwaltung zu entfernen. Für iOS-Geräte ist der Modus „Betreut“ für die Sperre erforderlich. Weitere Informationen finden Sie unter [Geräteschutz durch Remotesperre und Zurücksetzen der Kennung](retire-devices-from-microsoft-intune-management.md#block-access-a-device).
 
 **iOS-Registrierungsmethoden**
 
-| **Methode** |  **Zurücksetzen** |  **Affinität**    |   **Sperren** | **Details** |
+| **Methode** |  **Zurücksetzen erforderlich?** |    **Affinität**    |   **Sperren** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | Nein|    Ja |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|   Nein |Nein |Nein  | [Weitere Informationen](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
@@ -44,14 +45,14 @@ In der folgenden Tabelle werden die Registrierungsmethoden von Intune zusammen m
 
 **Windows-Registrierungsmethoden**
 
-| **Methode** |  **Zurücksetzen** |  **Affinität**    |   **Sperren** | **Details**|
+| **Methode** |  **Zurücksetzen erforderlich?** |    **Affinität**    |   **Sperren** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | Ja|   Ja |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|   Nein |Nein |Nein  |[Weitere Informationen](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android-Registrierungsmethoden**
 
-| **Methode** |  **Zurücksetzen** |  **Affinität**    |   **Sperren** | **Details**|
+| **Methode** |  **Zurücksetzen erforderlich?** |    **Affinität**    |   **Sperren** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | Nein|    Ja |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|   Nein |Nein |Nein  |[Weitere Informationen](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
@@ -61,7 +62,7 @@ Eine Reihe von Fragen, die Sie beim Ermitteln der richtigen Methode unterstütze
 ## <a name="byod"></a>BYOD
 BYOD-Benutzer installieren die Unternehmensportal-App und registrieren ihr Gerät. Dadurch können Benutzer Verbindungen mit dem Unternehmensnetzwerk herstellen und zur Domäne oder zu Azure Active Directory beitreten. Für die meisten Plattformen müssen Sie BYOD-Registrierung für viele COD-Szenarios ermöglichen. Weitere Informationen finden Sie unter [Voraussetzungen für die Verwaltung von mobilen Geräten in Intune](prerequisites-for-enrollment.md). ([Zurück zur Tabelle](#overview-of-device-enrollment-methods))
 
-## <a name="corporateowned-devices"></a>Firmeneigene Geräte
+## <a name="corporate-owned-devices"></a>Firmeneigene Geräte
 Firmeneigene Geräte (Corporate-owned devices, COD) können mithilfe der Intune-Konsole verwaltet werden. iOS-Geräte können direkt über die von Apple bereitgestellten Tools registriert werden. Alle Gerätetypen können von einem Administrator oder Manager die unter Verwendung des Geräteregistrierungs-Managers registriert werden. Geräte mit einer IMEI-Nummer können auch als firmeneigene Geräte identifiziert und gekennzeichnet werden, um COD-Szenarien zu unterstützen.
 
 Weitere Informationen finden Sie unter [Registrieren firmeneigener Geräte bei Microsoft Intune](manage-corporate-owned-devices.md).
@@ -78,7 +79,7 @@ Mit der Apple DEP-Verwaltung (Device Enrollment Program, Programm zur Gerätereg
 
 Erfahren Sie mehr über das [Geräteregistrierungsprogramm](ios-device-enrollment-program-in-microsoft-intune.md). ([Zurück zur Tabelle](#overview-of-device-enrollment-methods))
 
-### <a name="usbsa"></a>USB (Setup-Assistent)
+### <a name="usb-sa"></a>USB (Setup-Assistent)
 Über USB angeschlossene, unternehmenseigene Geräte werden mit der Intune-Richtlinie vorbereitet. Der Administrator erstellt für die Registrierung mit dem Einrichtungsassistenten diese Intune-Richtlinie und exportiert sie in Apple Configurator. Der Administrator muss jedes Gerät manuell registrieren. Benutzer erhalten ihre Geräte und führen den Setup-Assistenten aus, um ihr Gerät zu registrieren. Diese Methode unterstützt den iOS-Modus **Überwacht**, der wiederum Folgendes ermöglicht:
   - Bedingter Zugriff
   - Erkennung von Jailbreaks
@@ -86,7 +87,7 @@ Erfahren Sie mehr über das [Geräteregistrierungsprogramm](ios-device-enrollmen
 
 Erfahren Sie mehr über die [Registrierung über den Setup-Assistenten mit Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md). ([Zurück zur Tabelle](#overview-of-device-enrollment-methods))
 
-### <a name="usbdirect"></a>USB (direkt)
+### <a name="usb-direct"></a>USB (direkt)
 Der Administrator erstellt für die direkte Registrierung eine Intune-Richtlinie und exportiert sie in Apple Configurator. Über USB angeschlossene, unternehmenseigene Geräte werden direkt registriert, ohne dass ein Zurücksetzen auf Werkseinstellungen erforderlich ist. Der Administrator muss jedes Gerät manuell registrieren. Geräte werden als benutzerlose Geräte verwaltet. Sie werden nicht gesperrt oder überwacht und unterstützen nicht den bedingten Zugriff, die Erkennung von Jailbreaks oder die Verwaltung mobiler Geräte. Erfahren Sie mehr über die [direkte Registrierung mit Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md). ([Zurück zur Tabelle](#overview-of-device-enrollment-methods))
 
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Verwaltung mobiler Geräte mit Exchange ActiveSync und Intune
@@ -119,6 +120,6 @@ Intune kann folgende Geräteplattformen verwalten:
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

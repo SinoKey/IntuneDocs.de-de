@@ -1,58 +1,13 @@
 ---
-title: "Registrieren Ihres Mac OS X-Geräts bei Intune | Microsoft Intune"
-description: "Beschreibt, wie Sie ein Mac OS X-Gerät bei Intune registrieren."
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 08/29/2016
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
-ROBOTS: 
-ms.reviewer: esmich
-ms.suite: ems
+redirect_url: https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: ab8292843c540842a93e97377db21109a7e9fa33
-
+ms.sourcegitcommit: 790182817aa07852db2a37609d3329f509cd88df
+ms.openlocfilehash: c085f3f3dc5c2fc522e1732e4e8ecf7bb21be1d0
 
 ---
 
 
-# <a name="enroll-your-mac-os-x-device-in-intune"></a>Registrieren Ihres Mac OS X-Geräts bei Intune
 
-Wenn Sie Ihr Mac OS X-Gerät bei Intune registrieren, können Sie auf das Netzwerk des Unternehmens sowie auf Ihre Geschäfts-E-Mails und Arbeitsdateien zugreifen. Sie können darüber hinaus auch Unternehmens-Apps darauf installieren. Weitere Informationen, was geschieht, wenn Sie Ihr Gerät registrieren, finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
-
-Wenn Sie ein iOS-Gerät registrieren möchten, lesen Sie [Registrieren Ihres iOS-Geräts bei Intune](enroll-your-device-in-intune-ios.md).
-
-
-So registrieren Sie Ihr Mac OS X-Gerät
-
-1.  Öffnen Sie in einem Safari-Browser die [Unternehmensportal-Website](https://portal.manage.microsoft.com), und tippen Sie auf die Benachrichtigungsleiste.
-
-2.  Tippen Sie auf **Dieses Gerät ist nicht registriert, oder es kann im Unternehmensportal nicht identifiziert werden**.
-
-    ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png)
-
-3.  Tippen Sie auf **Installieren**, um die Registrierung des Geräts zu starten.
-
-    ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png)
-
-4.  Tippen Sie im Dialogfeld **Install Management Profile** (Verwaltungsprofil installieren) auf **Installieren**. Wenn ein Dialogfeld angezeigt wird, in dem Sie zur Eingabe Ihrer Anmeldeinformationen aufgefordert werden, geben Sie Ihren Benutzernamen und Ihr Kennwort ein, und tippen Sie dann auf **Weiter** &gt; **Installieren**.
-
-    ![install-management-profile](./media/3-macosx-enroll-tap-install.png)
-
-    Wenn Sie die Registrierung abgeschlossen haben, wird auf der Seite **Management Profile** (Verwaltungsprofil) angezeigt, dass Ihr Profil überprüft wurde.
-
-    ![management-profile-verified](./media/4-macosx-enroll-done.png)
-
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO4-->
 
 

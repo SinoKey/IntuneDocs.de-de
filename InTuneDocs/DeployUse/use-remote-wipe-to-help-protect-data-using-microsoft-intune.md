@@ -2,9 +2,10 @@
 title: "Remotezurücksetzung zum Schützen von Daten | Microsoft Intune"
 description: "Intune bietet Funktionen zum selektiven und vollständigen Zurücksetzen, um vertrauliche Unternehmensdaten und den Zugriff auf viele Unternehmensressourcen zu entfernen."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,27 +14,27 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
-ms.openlocfilehash: a09c9b55d7906ab792bda90b172a36b3656ed6dd
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
 
 
 ---
 
-# Schützen von Daten durch vollständiges oder selektives Zurücksetzen mit Microsoft Intune
-Gibt an, ob Sie Apps und Daten von einem mit Intune verwalteten Gerät, das nicht mehr benötigt wird, einem neuen Zweck zugeführt wurde oder verloren gegangen ist, zurücksetzen können. Zu diesem Zweck enthält Intune Funktionen zum vollständigen oder selektiven Zurücksetzen. Für private Geräte, die in Intune registriert sind, können die Benutzer über das Intune-Unternehmensportal einen Remotebefehl zum Zurücksetzen des Geräts erteilen.
+# <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Schützen von Daten durch vollständiges oder selektives Zurücksetzen mit Microsoft Intune
+Sie können Apps und Daten von Intune-verwalteten Geräten zurücksetzen, die nicht mehr benötigt werden, einem neuen Zweck zugeführt werden oder verloren gegangen sind. Zu diesem Zweck enthält Intune Funktionen zum vollständigen oder selektiven Zurücksetzen. Für private Geräte, die in Intune registriert sind, können die Benutzer über die Intune-Unternehmensportal-App einen Remotebefehl zum Zurücksetzen des Geräts erteilen.
 
   > [!NOTE]
-  > In diesem Thema wird nur das Zurücksetzen von Geräten behandelt, die von der Verwaltung mobiler Geräte für Intune verwaltet werden. Sie können auch das [Azure-Vorschauportal](https://portal.azure.com) zum [Entfernen von Unternehmensdaten aus Apps](wipe-managed-company-app-data-with-microsoft-intune.md) verwenden. Außerdem können Sie [mit der Intune-Clientsoftware verwaltete Computer abkoppeln](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+  > In diesem Thema wird nur das Zurücksetzen von Geräten behandelt, die von der Verwaltung mobiler Geräte für Intune verwaltet werden. Sie können auch das [Azure-Portal](https://portal.azure.com) zum [Entfernen von Unternehmensdaten aus Apps](wipe-managed-company-app-data-with-microsoft-intune.md) verwenden. Außerdem können Sie [mit der Intune-Clientsoftware verwaltete Computer abkoppeln](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
 
-## Vollständiges Zurücksetzen
+## <a name="full-wipe"></a>Vollständiges Zurücksetzen
 
 **Vollständiges Zurücksetzen** setzt ein Gerät auf die werkseitigen Standardeinstellungen zurück, wobei alle Unternehmens- und Benutzerdaten und -einstellungen entfernt werden. Das Gerät wird aus Intune entfernt. Das vollständige Zurücksetzen ist hilfreich, wenn Sie ein Gerät vor der Übergabe an einen neuen Benutzer zurücksetzen möchten oder wenn ein Gerät verloren oder gestohlen wurde.  **Überlegen Sie sich genau, ob Sie ein Gerät wirklich vollständig zurücksetzen möchten. Die Daten auf dem Gerät können anschließend nicht wiederhergestellt werden.**
 
 
 > [!Warning]
-> Nach dem Zurücksetzen ist der Zugriff auf Windows 10 RTM-Geräte (d. h. Geräte vor Windows 10, Version 1511) mit weniger als 4 GB RAM vielleicht nicht möglich. Um auf ein Windows 10-Gerät zuzugreifen, das nicht mehr reagiert hat, können Sie das Gerät von einem USB-Laufwerk aus starten oder eine ähnliche Problemumgehung nutzen.
+> Nach dem Zurücksetzen ist der Zugriff auf Windows 10 RTM-Geräte (Geräte vor Windows 10, Version 1511) mit weniger als 4 GB RAM vielleicht nicht möglich. Um auf ein Windows 10-Gerät zuzugreifen, das nicht mehr reagiert hat, können Sie das Gerät von einem USB-Laufwerk aus starten.
 
-### Remotezurücksetzen eines Geräts über die Intune-Administratorkonsole
+### <a name="remotely-wipe-a-device-from-the-intune-administrator-console"></a>Remotezurücksetzen eines Geräts über die Intune-Administratorkonsole
 
 1.  Wählen Sie Geräte aus, die zurückgesetzt werden sollen. Sie können diese nach Benutzer oder Gerät suchen.
 
@@ -43,72 +44,74 @@ Gibt an, ob Sie Apps und Daten von einem mit Intune verwalteten Gerät, das nich
 
         2.  Klicken Sie auf den Namen des Benutzers, dessen mobiles Gerät Sie zurücksetzen möchten. Klicken Sie auf **Eigenschaften anzeigen**.
 
-        3.  Klicken Sie auf der Seite **Eigenschaften** des Benutzers auf **Geräte** und dann auf den Namen des mobilen Geräts, das Sie zurücksetzen möchten. Halten Sie die STRG-Taste gedrückt, und klicken Sie, um mehrere Geräte auszuwählen.
+        3.  Klicken Sie auf der Seite **Eigenschaften** des Benutzers auf **Geräte** und dann auf den Namen des mobilen Geräts, das Sie zurücksetzen möchten. Zum Auswählen mehrerer Geräte halten Sie die STRG-Taste gedrückt und klicken auf jedes gewünschte Gerät.
 
     -   **Nach Gerät:**
 
         1.  Klicken Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) auf **Gruppen** &gt; **Alle mobilen Geräte**.
 
-      ![Starten eines Vorgangs zum Abkoppeln oder Zurücksetzen](../media/dev-sa-wipe.png)
+         ![Starten eines Vorgangs zum Abkoppeln oder Zurücksetzen](../media/dev-sa-wipe.png)
 
-        2.  Klicken Sie auf **Geräte** und dann auf den Namen des mobilen Geräts, das Sie zurücksetzen möchten. Halten Sie die STRG-Taste gedrückt, und klicken Sie, um mehrere Geräte auszuwählen.
+        2.  Klicken Sie auf **Geräte** und dann auf den Namen des mobilen Geräts, das Sie zurücksetzen möchten. Zum Auswählen mehrerer Geräte halten Sie die STRG-Taste gedrückt und klicken auf jedes gewünschte Gerät.
 
 2.  Klicken Sie auf **Abkoppeln/Zurücksetzen**.
 
-3.  Durch eine Meldung werden Sie aufgefordert, zu bestätigen, ob Sie das Gerät abkoppeln möchten.
+3.  Sie werden in einer Bestätigungsmeldung gefragt, ob Sie das Gerät abkoppeln möchten.
 
     -   Klicken Sie zum Ausführen einer **selektiven Zurücksetzung**, bei der nur unternehmenseigene Apps und Daten entfernt werden, auf **Ja**.
 
-    -   Wählen Sie zum Ausführen einer **vollständigen Zurücksetzung**, bei der alle Apps und Daten gelöscht werden und das Gerät auf die werkseitigen Standardeinstellungen zurückgesetzt wird, auf **Gerät vor dem Abkoppeln zurücksetzen**. Diese Aktion gilt für alle Plattformen außer Windows 8.1. **Daten, die durch ein vollständiges Zurücksetzen entfernt wurden, können nicht wiederhergestellt werden**.
+    -   Wählen Sie zum Ausführen einer **vollständigen Zurücksetzung**, bei der alle Apps und Daten gelöscht werden und das Gerät auf die werkseitigen Standardeinstellungen zurückgesetzt wird, die Option **Gerät vor dem Abkoppeln zurücksetzen**. Diese Aktion gilt für alle Plattformen außer Windows 8.1. **Daten, die durch ein vollständiges Zurücksetzen entfernt wurden, können nicht wiederhergestellt werden**.
 
-Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minuten, bis ein Befehl zum Zurücksetzen über alle Gerätetypen weitergegeben wurde.
+Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minuten, bis ein Befehl zum Zurücksetzen an alle Gerätetypen weitergegeben wurde.
 
-## Selektives Zurücksetzen
+## <a name="selective-wipe"></a>Selektives Zurücksetzen
 
-Beim **selektiven Zurücksetzen** werden die Unternehmensdaten und bei Bedarf auch die Daten für die Verwaltung mobiler Apps (MAM, Mobile App Management) vom Gerät entfernt. Außerdem werden Einstellungen und E-Mail-Profile entfernt. Die persönlichen Daten des Benutzers bleiben beim selektiven Zurücksetzen auf dem Gerät erhalten. Das Gerät wird aus Intune entfernt. In der folgenden Tabelle wird nach Plattform sortiert beschrieben, welche Daten bei einem selektiven Zurücksetzen entfernt werden und mit welchen Auswirkungen auf verbleibende Daten zu rechnen ist.
+Beim **selektiven Zurücksetzen** werden die Unternehmensdaten und bei Bedarf auch die Daten für die Verwaltung mobiler Apps (MAM, Mobile App Management) vom Gerät entfernt. Außerdem werden Einstellungen und E-Mail-Profile entfernt. Die persönlichen Daten des Benutzers bleiben beim selektiven Zurücksetzen auf dem Gerät erhalten. Das Gerät wird aus Intune entfernt. Die folgende Tabelle beschreibt, welche Daten bei einem selektiven Zurücksetzen entfernt werden und mit welchen Auswirkungen auf die auf dem Gerät verbleibenden Daten zu rechnen ist. (Diese Tabellen sind nach Plattform sortiert.)
 
 **iOS**
 
 |Datentyp|iOS|
 |-------------|-------|
-|Unternehmensanwendungen und zugehörige Daten, die von Intune installiert wurden.|Apps werden deinstalliert. Daten von Unternehmens-Apps werden entfernt.<br /><br />App-Daten aus Microsoft-Anwendungen, die die Verwaltung von mobilen Anwendungen verwenden, werden entfernt. Die App wird nicht entfernt.|
+|Von Intune installierte Unternehmens-Apps und zugehörige Daten|Apps werden deinstalliert. Daten von Unternehmens-Apps werden entfernt.<br /><br />App-Daten aus Microsoft-Anwendungen, die die Verwaltung von mobilen Anwendungen verwenden, werden entfernt. Die App wird nicht entfernt.|
 |Einstellungen|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|
-|Einstellungen für WLAN- und VPN-Profil|Entfernt|
-|Zertifikatprofil-Einstellungen|Zertifikate wurden entfernt und gesperrt.|
+|Einstellungen für WLAN- und VPN-Profil|Entfernt.|
+|Zertifikatprofil-Einstellungen|Zertifikate werden entfernt und gesperrt.|
 |Verwaltungs-Agent|Das Verwaltungsprofil wird entfernt.|
-|E-Mail|E-Mail-Profile, die über Intune bereitgestellt werden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|
-|Azure Active Directory (AAD)-Verbindung aufgehoben|AAD-Datensatz entfernt|
+|E-Mail|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht. Wenn Microsoft Exchange lokal gehostet wird, werden E-Mail-Profile und zwischengespeicherte E-Mails nicht entfernt.|
+|Outlook|E-Mails, die über die Microsoft Outlook-App für iOS empfangen wurden, werden entfernt.</br>Ausnahme: Wenn Exchange lokal gehostet wird, werden E-Mails nicht entfernt.|
+|Azure Active Directory (AAD)-Verbindung aufgehoben|AAD-Datensatz wird entfernt.|
 |Kontakte | Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.
 
 **Android**
 
-|Datentyp|Android|Android Samsung KNOX|
+|Datentyp|Android|Android Samsung KNOX Standard|
 |-------------|-----------|------------------------|
-|Weblinks|Entfernt.|Entfernt|
+|Weblinks|Entfernt.|Entfernt.|
 |Nicht verwaltete Google Play-Apps|Apps und Daten bleiben installiert.|Apps und Daten bleiben installiert.|
-|Nicht verwaltete Geschäftssparten-Apps|Apps und Daten bleiben installiert.|Apps werden deinstalliert, und lokale App-Daten werden daher entfernt. Es werden keine Daten außerhalb der App (SD-Karte usw.) entfernt.|
-|Verwaltete Google Play-Apps|App-Daten werden entfernt. App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (SD-Karte usw.) geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt.|App-Daten werden entfernt. App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (SD-Karte usw.) geschützt sind, bleiben verschlüsselt, werden aber nicht entfernt.|
-|Verwaltete Geschäftssparten-Apps|App-Daten werden entfernt. App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (SD-Karte usw.) geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt.|App-Daten werden entfernt. App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (SD-Karte usw.) geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt.|
-|Einstellung|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|
-|Einstellungen für WLAN- und VPN-Profil|Entfernt|Entfernt|
+|Nicht verwaltete Geschäftssparten-Apps|Apps und Daten bleiben installiert.|Apps werden deinstalliert, und daher werden auch lokal für die App gespeicherte Daten entfernt. Daten außerhalb der App (z.B. auf einer SD-Karte) werden nicht entfernt.|
+|Verwaltete Google Play-Apps|App-Daten werden entfernt. App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (z.B. auf einer SD-Karte) geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt.|App-Daten werden entfernt. App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (z.B. auf einer SD-Karte) geschützt sind, bleiben verschlüsselt, werden aber nicht entfernt.|
+|Verwaltete Geschäftssparten-Apps|App-Daten werden entfernt. App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (z.B. auf einer SD-Karte) geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt.|App-Daten werden entfernt. App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (z.B. auf einer SD-Karte) geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt.|
+|Einstellungen|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|
+|Einstellungen für WLAN- und VPN-Profil|Entfernt.|Entfernt.|
 |Zertifikatprofil-Einstellungen|Zertifikate gesperrt, aber nicht entfernt.|Zertifikate wurden entfernt und gesperrt.|
 |Verwaltungs-Agent|Die Berechtigung „Geräteadministrator“ wird gesperrt.|Die Berechtigung „Geräteadministrator“ wird gesperrt.|
-|E-Mail|E-Mails, die über die Microsoft Outlook-App für Android empfangen wurden, werden entfernt.|E-Mail-Profile, die über Intune bereitgestellt werden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|
-|Azure Active Directory (AAD)-Verbindung aufgehoben|AAD-Datensatz entfernt|AAD-Datensatz entfernt|
+|E-Mail|E-Mails, die über die Microsoft Outlook-App für Android empfangen wurden, werden entfernt.|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht. Wenn Microsoft Exchange lokal gehostet wird, werden E-Mail-Profile und zwischengespeicherte E-Mails nicht entfernt.|
+|Outlook|E-Mails, die über die Microsoft Outlook-App für iOS empfangen wurden, werden entfernt.</br>Ausnahme: Wenn Exchange lokal gehostet wird, werden E-Mails nicht entfernt.|E-Mails, die über die Microsoft Outlook-App für iOS empfangen wurden, werden entfernt.</br>Ausnahme: Wenn Exchange lokal gehostet wird, werden E-Mails nicht entfernt.|
+|Azure Active Directory (AAD)-Verbindung aufgehoben|AAD-Datensatz wird entfernt.|AAD-Datensatz wird entfernt.|
 |Kontakte | Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.|Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.
 
 **Windows**
 
 |Datentyp|Windows 8.1 (MDM) und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Unternehmensanwendungen und zugehörige Daten, die von Intune installiert wurden.|Bei Dateien, die durch ein EFS geschützt sind, wird der Schlüssel gesperrt, und der Benutzer kann die Dateien nicht mehr öffnen.|Unternehmensanwendungen werden nicht entfernt.|Ursprünglich über das Unternehmensportal installierte Anwendungen werden deinstalliert. Daten von Unternehmens-Apps werden entfernt.|Anwendungen werden deinstalliert, und Sideload-Schlüssel werden entfernt.|
+|Von Intune installierte Unternehmens-Apps und zugehörige Daten|Bei Dateien, die durch ein EFS geschützt sind, wird der Schlüssel gesperrt, und der Benutzer kann die Dateien nicht mehr öffnen.|Unternehmensanwendungen werden nicht entfernt.|Ursprünglich über das Unternehmensportal installierte Anwendungen werden deinstalliert. Daten von Unternehmens-Apps werden entfernt.|Anwendungen werden deinstalliert, und Sideload-Schlüssel werden entfernt.|
 |Einstellungen|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|
-|Einstellungen für WLAN- und VPN-Profil|Entfernt|Entfernt|Nicht unterstützt|Entfernt|
-|Zertifikatprofil-Einstellungen|Zertifikate wurden entfernt und gesperrt.|Zertifikate wurden entfernt und gesperrt.|Nicht unterstützt|Zertifikate wurden entfernt und gesperrt.|
-|E-Mail|Entfernt EFS-aktivierte E-Mails, darunter die E-Mail-App für Windows-E-Mails und -Anlagen.|Nicht unterstützt|E-Mail-Profile, die über Intune bereitgestellt werden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|Entfernt EFS-aktivierte E-Mails, darunter die E-Mail-App für Windows-E-Mails und -Anlagen. Entfernt E-Mail-Konten, die von Intune bereitgestellt wurden.|
-|Azure Active Directory (AAD)-Verbindung aufgehoben|Nein|Nein|AAD-Datensatz entfernt|Nicht zutreffend. Windows 10 unterstützt kein selektives Zurücksetzen für Geräte, die in Azure Active Directory eingebunden wurden.|
+|Einstellungen für WLAN- und VPN-Profil|Entfernt.|Entfernt.|Nicht unterstützt.|Entfernt.|
+|Zertifikatprofil-Einstellungen|Zertifikate wurden entfernt und gesperrt.|Zertifikate wurden entfernt und gesperrt.|Nicht unterstützt.|Zertifikate wurden entfernt und gesperrt.|
+|E-Mail|Entfernt EFS-aktivierte E-Mails, darunter die E-Mail-App für Windows-E-Mails und -Anlagen.|Nicht unterstützt.|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|Entfernt EFS-aktivierte E-Mails, darunter die E-Mail-App für Windows-E-Mails und -Anlagen. Entfernt E-Mail-Konten, die von Intune bereitgestellt wurden.</br>**Ausnahme**: Wenn Microsoft Exchange lokal gehostet wird, werden E-Mail-Konten nicht entfernt.|
+|Azure Active Directory (AAD)-Verbindung aufgehoben|Nein.|Nein.|AAD-Datensatz wird entfernt.|Nicht zutreffend. Windows 10 unterstützt kein selektives Zurücksetzen für Geräte, die in Azure Active Directory eingebunden wurden.|
 
-## Zurücksetzen EFS-aktivierter Inhalte
+## <a name="wipe-encryption-file-system-efs-enabled-content"></a>Zurücksetzen EFS-aktivierter Inhalte
 Das selektive Zurücksetzen von EFS-verschlüsselten Inhalten wird von Windows 8.1 und Windows RT 8.1 unterstützt. Folgendes gilt für das selektive Zurücksetzen von EFS-aktivierten Inhalten:
 
 -   Nur Apps und Daten, die mit dem verschlüsselnden Dateisystem (EFS, Encrypting File System) geschützt sind und die die gleiche Internetdomäne wie das Intune-Konto verwenden, werden selektiv zurückgesetzt. Weitere Informationen finden Sie unter [Selektives Zurücksetzen bei der Gerätedatenverwaltung in Windows](http://technet.microsoft.com/library/dn486874.aspx).
@@ -127,21 +130,22 @@ Folgende Daten und Apps werden derzeit vom selektiven Zurücksetzen mit EFS unte
 
 -   Wenn Ihr Unternehmen seine Identität in Active Directory verwaltet, muss das Tool Verzeichnissynchronisierung (DirSync) verwendet werden, um Informationen in AAD zu synchronisieren, damit das selektive EFS-Zurücksetzen ordnungsgemäß funktioniert.  Weitere Informationen zu DirSync finden Sie unter [Verzeichnissynchronisierungsszenario](http://technet.microsoft.com/library/dn441212.aspx) in der Azure Active Directory-Dokumentation.
 
-## Überwachen von Abkopplungs-, Zurücksetzungs- und Löschaktionen
-So erhalten Sie einen Bericht zu Geräten, die abgekoppelt, zurückgesetzt oder gelöscht wurde, und zum Zuständigen für die Aktion
+## <a name="monitor-retire-wipe-and-delete-actions"></a>Überwachen von Abkopplungs-, Zurücksetzungs- und Löschaktionen
+So erhalten Sie einen Bericht zu Geräten, die abgekoppelt, zurückgesetzt oder gelöscht wurden:
 
 1.  Klicken Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) auf **Berichte** &gt; **Geräteverlaufsberichte**.
 
 2.  Geben Sie ein Start- und Enddatum für den Bericht ein, und klicken Sie dann auf **Bericht anzeigen**.
 
+Dieser Bericht zeigt auch, welcher Benutzer die Aktion ausgeführt hat.
 
-### Weitere Informationen:
+### <a name="see-also"></a>Weitere Informationen:
 [Abkoppeln von Geräten](retire-devices-from-microsoft-intune-management.md)
 
 [Windows Selective Wipe for Device Data Management (Selektives Zurücksetzen bei der Gerätedatenverwaltung in Windows)](http://technet.microsoft.com/library/dn486874.aspx)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,7 +2,8 @@
 title: "Registrieren firmeneigener iOS-Geräte | Microsoft Intune"
 description: "Registrieren firmeneigener iOS-Geräte mithilfe des Apple Device Enrollment Program (DEP) oder Apple Configurator"
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/07/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bee93334e7b868ef6c827fba9efc3318c8419527
-ms.openlocfilehash: b295ee11d566fbfbe84513c045f3a76dfd51cda4
+ms.sourcegitcommit: 00ca6ea06aa63646d6ede6337f8e70d1ab956c5f
+ms.openlocfilehash: cfc97f4ed931a5c7dc5b38eafd0a2d081bc30975
 
 
 ---
 
-# Registrieren firmeneigener iOS-Geräte in Microsoft Intune
+# <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Registrieren firmeneigener iOS-Geräte in Microsoft Intune
 Microsoft Intune unterstützt die Registrierung von firmeneigenen iOS-Geräten mithilfe des Apple-Programms zur Geräteregistrierung (Device Enrollment Program, DEP) oder des Tools [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017), das auf einem Mac-Computer ausgeführt wird.
 
 **Voraussetzung:** Ein [Apple Push Notification Service-Zertifikat](set-up-ios-and-mac-management-with-microsoft-intune.md) ist erforderlich.
 
 Sie können im Unternehmen registrierte iOS-Geräte auf drei Arten registrieren: mit Apple Configurator, DEP oder dem Unternehmensportal.
 
-## Verwenden von Apple Configurator
+## <a name="use-apple-configurator"></a>Verwenden von Apple Configurator
 
 Sie können iOS-Geräte registrieren, indem Sie ein Unternehmensregistrierungsprofil exportieren und dies mobilen Geräte anschließend mit einem Mac verbinden, auf dem Apple Configurator ausgeführt wird. Apple Configurator unterstützt zwei Formen der Registrierung:
 
@@ -34,10 +35,10 @@ Sie können iOS-Geräte registrieren, indem Sie ein Unternehmensregistrierungspr
 
 - **Direkte Registrierung**: Erstellt eine Apple Configurator-kompatible Datei zur Verwendung während der Vorbereitung des Geräts. Das registrierte Gerät wird nicht auf die Werkseinstellungen zurückgesetzt, aber ist keinem Benutzer zugewiesen. Bei dieser Methode muss der Administrator das iOS-Gerät per USB mit einem Macintosh-Computer verbinden, auf dem [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) ausgeführt wird, um das Gerät zu registrieren. Weitere Informationen finden Sie unter [Registrierung von iOS-Geräte mit der Option „Direkte Registrierung“ von Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md).
 
-## Verwenden des Geräteregistrierungsprogramms (Device Enrollment Program, DEP)
+## <a name="use-the-device-enrollment-program-dep"></a>Verwenden des Geräteregistrierungsprogramms (Device Enrollment Program, DEP)
 Auf über das DEP erworbenen Geräten wird ein Registrierungsprofil „Drahtlos“ bereitgestellt. Wenn ein Benutzer auf dem Gerät den Setup-Assistenten ausführt, wird das Gerät bei Intune registriert.  Die Registrierung von Geräten über DEP kann von Benutzern nicht rückgängig gemacht werden. Weitere Informationen finden Sie unter [Registrieren von iOS-Geräten, die über das Apple-Programm zur Geräteregistrierung erworben wurden](ios-device-enrollment-program-in-microsoft-intune.md).
 
-## Verwenden des Unternehmensportals auf Geräten, die über DEP oder Apple Configurator registriert wurden
+## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>Verwenden des Unternehmensportals auf Geräten, die über DEP oder Apple Configurator registriert wurden
 
 Auf mit Benutzeraffinität konfigurierten Geräte kann die Unternehmensportal-App installiert und ausgeführt werden, um Apps herunterzuladen und Geräte zu verwalten. Nachdem Benutzer ihre Geräte erhalten haben, müssen sie verschiedene zusätzliche Schritte ausführen, um den Setup-Assistenten abzuschließen und die Unternehmensportal-App zu installieren.
 
@@ -67,7 +68,7 @@ Benutzeraffinität ist erforderlich, um Folgendes zu unterstützen:
 
 8. Die Registrierung ist damit abgeschlossen. Der Benutzer kann nun die Funktionen des Geräts in vollem Umfang nutzen.
 
-### Informationen zu unternehmenseigenen verwalteten Geräten ohne Benutzeraffinität
+### <a name="about-corporate-owned-managed-devices-with-no-user-affinity"></a>Informationen zu unternehmenseigenen verwalteten Geräten ohne Benutzeraffinität
 
 Ohne Benutzeraffinität konfigurierte Geräte unterstützen das Unternehmensportal nicht und dürfen nicht die App installieren. Das Unternehmensportal ist für Benutzer gedacht, die über Anmeldeinformationen ihres Unternehmens verfügen und Zugriff auf personalisierte Unternehmensressourcen (z. B. E-Mail) benötigen. Geräte, die ohne Benutzeraffinität registriert wurden, bieten nicht die Anmeldung dedizierter Benutzer. Kiosk-, Verkaufsstellen- (POS-) oder gemeinsam genutzte Geräte sind typisch Anwendungsfälle für Geräte, die ohne Benutzeraffinität registriert werden.
 
@@ -75,11 +76,11 @@ Wenn Benutzeraffinität erforderlich ist, muss vor der Registrierung des Geräts
 
 
 
-### Weitere Informationen:
-[Vorbereiten der Registrierung von Geräten in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+### <a name="see-also"></a>Weitere Informationen:
+[Voraussetzungen für die Registrierung von Geräten in Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 
