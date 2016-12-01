@@ -1,11 +1,11 @@
 ---
-title: "Registrieren mobiler Geräte und Installieren einer App | Microsoft Intune"
-description: "Erläutert das Registrieren mobiler Geräte und das Installieren einer App auf einem bei Intune registrierten Gerät."
+title: "Aktivieren der Geräteregistrierung | Microsoft Intune"
+description: "Legen Sie die MDM-Autorität fest, und aktivieren Sie die Registrierung für iOS-, Windows-, Android- und Mac-Geräte."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,49 +14,50 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3306d772b074ddcfd1bfcf7178b32f9b371321e7
-ms.openlocfilehash: f57728bb41b750f53b021bed532de18187e764a0
+ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
+ms.openlocfilehash: ca6e016927da1de6604b0c6a2924702ec90c9fab
 
 
 ---
 
-# Registrieren mobiler Geräte und Installieren einer App
-Um die Verwaltung mobiler Geräte mit Intune einzurichten, müssen Sie zunächst die Autorität für die Verwaltung mobiler Geräte festlegen, die Verwaltung der Geräteplattformen aktivieren und Ihre Geräte anschließend bei der Unternehmensportal-App registrieren. Dann können Sie die Microsoft Skype-Anwendung bereitstellen, die Sie in Schritt 6 veröffentlicht haben.
+# <a name="enroll-mobile-devices-and-install-an-app"></a>Registrieren mobiler Geräte und Installieren einer App
+Um die Verwaltung mobiler Geräte mit Intune einzurichten, müssen Sie zunächst die *Autorität für die Verwaltung mobiler Geräte* (Mobile Device Management, MDM) festlegen, die den Dienst identifiziert, der Ihrem Konto zugeordnete Geräte verwalten kann. In diesem Leitfaden wird vorausgesetzt, dass Sie nicht den System Center Configuration Manager, sondern den Intune-Dienst verwenden. Nachdem die MDM-Autorität festgelegt wurde, können Sie die Verwaltung für Geräteplattformen aktivieren und Ihre Geräte mit der Unternehmensportal-App registrieren.
 
-## Aktivieren der Geräteverwaltung und Registrieren von Geräten
+## <a name="enable-device-enrollment"></a>Aktivieren der Geräteregistrierung
 
-1.  **Festlegen von Intune als Verwaltungsstelle für mobile Geräte** Klicken Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Verwaltung** > **Verwaltung mobiler Geräte**. Wählen Sie unter **Aufgaben** die Option **MDM-Autorität** festlegen.  Klicken Sie im Dialogfeld „MDM-Autorität“ auf **Ja**.
+1. **Festlegen von Intune als MDM-Autorität**
+    Klicken Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) auf **Verwaltung** > **Verwaltung mobiler Geräte**. Wählen Sie dann unter **Aufgaben** die Option **MDM-Autorität festlegen**.  
+
+2. Klicken Sie im Dialogfeld „MDM-Autorität“ auf **Ja**.
+
     ![Verwaltungskonsole – MDM auf „Intune“ festlegen](./media/mdmAuthority.png)
 
-2.  **Aktivieren von MDM für Ihre Geräteplattform** Aktivieren Sie die Verwaltung mobiler Geräte für die Geräteplattform, die Sie verwalten möchten. Je nach Plattform sind andere Anforderungen relevant:
+## <a name="choose-how-to-enroll-devices"></a>Auswählen der Registrierungsmethode für Geräte
 
-    -   **iOS und Mac OS X**: Siehe [Einrichten der iOS- und Mac-Verwaltung mit Microsoft Intune](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).
+Intune kann je nach Unternehmensanforderungen Geräte in unterschiedlicher Weise verwalten. Zu den verfügbaren Registrierungsszenarien gehören beispielsweise BYOD (Bring Your Own Device), unternehmenseigene Geräte, CYOD (Choose Your Own Device) und Geräte im Kioskmodus.
 
-    -   **Windows Phone**: Siehe [Einrichten der Windows Phone-Verwaltung mit Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
+Führen Sie diese Schritte zum [Auswählen der Registrierungsmethode für Geräte](choose-how-to-enroll-devices1.md) aus.
 
-    -   **Android**: Mobile Android-Geräte ermöglichen Benutzern die Registrierung über die Unternehmensportal-App, die in [Google Play](https://play.google.com/store/apps/details?id=com.skype.raider) zur Verfügung steht. Es ist keine weitere Konfiguration in Intune erforderlich.
+## <a name="enable-mdm-for-your-device-platform"></a>Aktivieren von MDM für Ihre Geräteplattform
+Die Registrierung muss für iOS-, Mac- und Android for Work-Geräte aktiviert werden, indem eine Beziehung zwischen dem Plattformanbieter und Ihrem Intune-Mandanten eingerichtet wird. Für Windows- und Android-Geräte sind keine zusätzlichen Schritte erforderlich, aber für Windows-Geräte können Sie die Geräteregistrierung für Ihre Benutzer vereinfachen, indem Sie einen besonderen DNS-Registrierungseintrag erstellen.
 
-3.  **Registrieren von Geräten**:
+Aktivieren Sie die Geräteregistrierung für die Geräteplattform, die Sie verwalten möchten. Je nach Plattform sind andere Anforderungen relevant:
 
-    -   **Android**: Installieren Sie die **Intune-Unternehmensportal**-App der Microsoft Corporation, die in [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612) verfügbar ist, und melden Sie sich mit den oben hinzugefügten Intune-Anmeldeinformationen an.
+-  [iOS und Mac OS](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [Windows-PC](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-  [Windows 10 Mobile und Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
-    -   **iOS und Mac OS X**: Installieren Sie die **Microsoft Intune-Unternehmensportal**-App der Microsoft Corporation, die im App Store verfügbar ist, und melden Sie sich mit den oben hinzugefügten Intune-Anmeldeinformationen an. Rufen Sie **Angemeldete Geräte** auf, um Ihr Gerät hinzuzufügen.
+Sobald die Registrierung aktiviert wurde, können Benutzer die Unternehmensportal-App auf ihr Gerät herunterladen und den Vorgang zur Geräteregistrierung durchführen.
 
-    -   **Windows Phone 8.1**: Benutzer installieren die **Unternehmensportal**-App der Microsoft Corporation, die im Windows Phone Store verfügbar ist, und melden sich mit den oben hinzugefügten Intune-Anmeldeinformationen an.  Rufen Sie **Angemeldete Geräte** auf, um Ihr Gerät hinzuzufügen.
+### <a name="enable-company-owned-device-enrollment"></a>Aktivieren der Registrierung für unternehmenseigene Geräte
+Sie können auch verschiedene Szenarien für die [Registrierung unternehmenseigener Geräte](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices) unterstützen, darunter:
+- [Apple-Geräteregistrierungsprogramm](https://docs.microsoft.com/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+- [Registrierung über den Setup-Assistenten für Apple Configurator](https://docs.microsoft.com/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+- [Registrierung über den Setup-Assistenten für Apple Configurator](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [Geräteregistrierungs-Manager](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
-    -   **Windows Phone 8.0**: Benutzer klicken auf **Systemeinstellungen** &gt; **Unternehmens-Apps**, und melden sich mit den oben hinzugefügten Intune-Anmeldeinformationen an. Die Unternehmensportal-App wird auf Ihrem Telefon bereitgestellt.
-
-    Wenn Sie zur Eingabe einer **Serveradresse**aufgefordert werden, geben Sie "manage.microsoft.com" ein.
-
-## Installieren einer App auf einem registrierten Gerät
-In [Schritt 6](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) dieser Kurzanleitung haben Sie die Skype-App für Ihre benutzerdefinierte Intune-Benutzergruppe veröffentlicht. Jetzt installieren Sie diese App auf einem neu registrierten Gerät.
-
-Öffnen Sie das Unternehmensportal auf dem registrierten Gerät, wählen Sie **Apps** aus, und installieren Sie dann **Microsoft Skype**.
-
-Weitere Informationen zum Verwalten von mobilen Geräten mit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] finden Sie unter [Voraussetzungen für die Registrierung von Geräten in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment).
-
-
-### Nächste Schritte
+### <a name="next-steps"></a>Nächste Schritte
 Gratulation! Sie haben den letzten Schritt der Kurzanleitung *Erste Schritte mit Intune* abgeschlossen. Ihre anfängliche Konfiguration ist jetzt abgeschlossen, und Sie können in Betracht ziehen, weitere MDM-Funktionen zu aktivieren.
 
 >[!div class="step-by-step"]
@@ -65,6 +66,6 @@ Gratulation! Sie haben den letzten Schritt der Kurzanleitung *Erste Schritte mit
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

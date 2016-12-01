@@ -1,24 +1,24 @@
 # [Verstehen und Kennenlernen](/intune/understand-explore/introduction-to-microsoft-intune)
-# [Erste Schritte](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Erste Schritte](/intune/get-started/get-started)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
 # [Neuigkeiten](/intune/whats-new/whats-new-in-microsoft-intune)
-# [Bereitstellen und Verwenden](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
+# Bereitstellen und Verwenden
 ## [Übersicht über die Lebenszyklen von Geräten und Apps](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [Gerätelebenszyklus](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [App-Lebenszyklus](overview-of-app-lifecycle-in-microsoft-intune.md)
 ## [Registrieren von Geräten](enroll-devices-in-microsoft-intune.md)
 ### [Voraussetzungen für MDM](prerequisites-for-enrollment.md)
-#### [Einrichten der iOS- und Mac-Verwaltung](set-up-ios-and-mac-management-with-microsoft-intune.md)
+#### [iOS- und Mac-Verwaltung](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android-Verwaltung](set-up-android-management-with-microsoft-intune.md)
 #### [Android for Work-Verwaltung](set-up-android-for-work.md)
-#### [Windows-Geräteverwaltung ](set-up-windows-device-management-with-microsoft-intune.md)
+#### [Windows-Geräteverwaltung](set-up-windows-device-management-with-microsoft-intune.md)
 #### [Windows 10 Mobile und Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
-### [Verwalten firmeneigener Geräte](manage-corporate-owned-devices.md)
-#### [Registrieren firmeneigener iOS-Geräte](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
-##### [Registrierung mit dem iOS-Einrichtungsassistenten](ios-setup-assistant-enrollment-in-microsoft-intune.md)
-##### [Direkte Registrierung von iOS-Geräten](ios-direct-enrollment-in-microsoft-intune.md)
-##### [DEP-Registrierung von iOS-Geräten](ios-device-enrollment-program-in-microsoft-intune.md)
+### [Verwalten unternehmenseigener Geräte](manage-corporate-owned-devices.md)
+#### [Registrieren unternehmenseigener iOS-Geräte](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
+##### [Registrierung mit dem Setup-Assistenten](ios-setup-assistant-enrollment-in-microsoft-intune.md)
+##### [Direkte Registrierung](ios-direct-enrollment-in-microsoft-intune.md)
+##### [DEP-Registrierung](ios-device-enrollment-program-in-microsoft-intune.md)
 #### [Registrieren mit dem Geräteregistrierungs-Manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 #### [Markieren von Geräten mit IMEI-Nummern](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 ### [MDM mit Exchange ActiveSync](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
@@ -35,13 +35,16 @@
 ### [Verwalten von Einstellungen und Features auf Ihren Geräten mit Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [Einstellungen für iOS](ios-policy-settings-in-microsoft-intune.md)
 #### [Android- und Samsung KNOX-Einstellungen](android-policy-settings-in-microsoft-intune.md)
+##### [Verwenden einer benutzerdefinierten Richtlinie zum Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel](pre-shared-key-wi-fi-profile.md)
+##### [Verwenden einer benutzerdefinierten Richtlinie zum Erstellen eines Profils für ein App-bezogenes VPN für Android-Geräte](per-app-vpn-for-android-pulse-secure.md)
+##### [Verwenden von benutzerdefinierten Richtlinien zum Zulassen und Blockieren von Apps für Samsung KNOX-Geräte](custom-policy-to-allow-and-block-samsung-knox-apps.md)
 #### [Einstellungen für Android for Work](android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Einstellungen für Windows 8 und Windows 8.1](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Einstellungen für Windows Phone 8.1](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [Einstellungen für Windows 10 Desktop und Mobile](windows-10-policy-settings-in-microsoft-intune.md)
-#### [Teameinstellungen für Windows](windows-team-configuration-policy-settings-in-microsoft-intune.md)
+#### [Einstellungen für Windows-Team](windows-team-configuration-policy-settings-in-microsoft-intune.md)
 #### [Upgradeeinstellungen für die Windows-Edition](edition-upgrade-policy-settings-in-microsoft-intune.md)
-#### [Einstellungen für Mac OS X](mac-os-x-policy-settings-in-microsoft-intune.md)
+#### [Einstellungen für Mac OS X](mac-os-x-policy-settings-in-microsoft-intune.md)
 #### [Einstellungen für Exchange ActiveSync](exchange-activesync-policy-settings-in-microsoft-intune.md)
 #### [Einstellungen zu Nutzungsbedingungen](terms-and-condition-policy-settings-in-microsoft-intune.md)
 #### [Allgemeine Einstellungen (älter)](mobile-device-security-policy-settings-in-microsoft-intune.md)
@@ -81,17 +84,17 @@
 #### [Verwalten von Windows-Apps aus einem Volumenprogramm](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## [Konfigurieren von Apps](update-apps-using-microsoft-intune.md)
-### [Aktualisierung von Apps ](update-apps-using-microsoft-intune.md)
+### [Aktualisieren von Apps](update-apps-using-microsoft-intune.md)
 ### [Richtlinien zur Konfiguration von iOS-Apps](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
 ### [Android for Work-Konfigurationsrichtlinien für Apps](afw-app-configuration-policy.md)
 ### [Bereitstellungsprofile für mobile iOS-Apps](ios-mobile-app-provisioning-profiles.md)
 ### [Verwalten des Internetzugriffs](manage-internet-access-using-managed-browser-policies.md)
-
+### [Querladen von branchenspezifischen Apps](sideload-apps-for-windows.md)
 
 ## [Schützen von Apps und Daten](protect-apps-and-data-with-microsoft-intune.md)
 ### [Gerätekompatibilitätsrichtlinien](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 #### [Erstellen einer Gerätekompatibilitätsrichtlinie](create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [ Android](android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android](android-compliance-policy-settings-in-microsoft-intune.md)
 #### [Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 #### [iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
 #### [Windows und Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
@@ -106,7 +109,8 @@
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [Beschränken des E-Mail-Zugriffs: Beispiele](restrict-email-access-example-scenarios.md)
-### [Zugriff auf Office 365-Dienste nur für richtlinienverwaltete Apps erlauben](allow-policy-managed-apps-access-to-o365.md)
+### [Zulassen des Zugriffs auf Office 365-Dienste nur für richtlinienverwaltete Apps](allow-policy-managed-apps-access-to-o365.md)
+#### [Apps mit MAM CA](use-apps-with-mam-ca.md)
 #### [Exchange Online](mam-ca-for-exchange-online.md)
 #### [Blockieren von Apps ohne ADAL](block-apps-with-no-modern-authentication.md)
 ### [Beschränken des Zugriffs auf Netzwerke (Cisco ISE)](restrict-access-to-networks.md)
@@ -114,7 +118,7 @@
 #### [Einrichten des Lookout-Schutzes vor Gerätebedrohungen](set-up-your-subscription-with-lookout-mtp.md)
 #### [Aktivieren von Lookout in Intune](enable-lookout-mtp-connection-in-intune.md)
 #### [Bereitstellen von Lookout for Work-Apps](configure-and-deploy-lookout-for-work-apps.md)
-#### [Aktivieren der Geräte-Kompatibilitätsrichtlinie zum Schutz vor Bedrohungen](enable-device-threat-protection-rule-in-compliance-policy.md)
+#### [Aktivieren der Gerätekompatibilitätsrichtlinie zum Schutz vor Bedrohungen](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 ### [Schützen von App-Daten mit MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure-Portal für MAM-Richtlinien](azure-portal-for-microsoft-intune-mam-policies.md)
@@ -126,7 +130,7 @@
 #### [Überwachen der Richtlinieneinhaltung](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Verwalten der Datenübertragung zwischen iOS-Apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-#### [Intune-Verwaltungskonsole für MAM-Richtlinien](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
+#### [Intune-Administratorkonsole für MAM-Richtlinien](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Vorbereiten von Branchen-Apps für MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [Umschließen von iOS-Apps](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
@@ -135,9 +139,9 @@
 #### [Verwenden des SDKs beim Schreiben von Apps](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-## [Außerbetriebnahme von Apps und Daten](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
+## [Abkoppeln von Apps und Daten](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
 ### [Verwenden des vollständigen oder selektiven Zurücksetzens](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-### [Außerbetriebnahme von Apps ](retire-apps-using-microsoft-intune.md)
+### [Abkoppeln von Apps](retire-apps-using-microsoft-intune.md)
 ### [Löschen verwalteter Unternehmensdaten aus Apps](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Ressourcen zu Endbenutzerszenarios](what-to-tell-your-end-users-about-using-microsoft-intune.md)
@@ -150,6 +154,6 @@
 # [Problembehandlung](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

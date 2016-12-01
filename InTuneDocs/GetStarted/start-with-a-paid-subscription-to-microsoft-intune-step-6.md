@@ -1,10 +1,11 @@
 ---
-title: "Erstellen von Richtlinien und Veröffentlichen einer App | Microsoft Intune"
-description: "Erläutert das Erstellen und Veröffentlichen von Richtlinien anhand einer Beispiel-App für Ihr Intune-Abonnement."
+title: Bereitstellen von Richtlinien und Apps | Microsoft Intune
+description: "Sie können Richtlinieneinstellungen aktivieren und Apps bereitstellen, die angewendet werden, sobald die Geräte für die Verwaltung registriert wurden."
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,95 +14,58 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 0bf3eb60b60e8ad1c91d3010230a41ce5d863dfe
+ms.sourcegitcommit: 0d2a3e5c05180c1a3f2ee3bf91813df3b5fa7bc6
+ms.openlocfilehash: 679c49d135c9161ecae5db704a3f6c96add003dc
 
 
 ---
 
-# Erstellen von Richtlinien und Veröffentlichen einer App
-Mit Intune-Richtlinien stehen Einstellungen bereit, mit deren Hilfe Sie die Sicherheitseinstellungen auf mobilen Geräten steuern, die Windows-Firewall- und Endpoint Protection-Einstellungen für Computer warten und Anwendungen bereitstellen können. Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) und [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
+# <a name="create-policies-and-publish-apps"></a>Erstellen von Richtlinien und Veröffentlichen von Apps
+Bevor Sie Apps in Intune registrieren, können Sie Richtlinieneinstellungen und Apps aktivieren, die bereitgestellt werden, sobald diese Geräte der Verwaltung hinzugefügt werden. Mit Intune-Richtlinien stehen Einstellungen bereit, mit deren Hilfe Sie die Sicherheitseinstellungen auf mobilen Geräten steuern, die Windows-Firewall- und Endpoint Protection-Einstellungen für Computer warten und Anwendungen bereitstellen können. Sie können Richtlinien konfigurieren, Apps hinzufügen und diese Apps bereitstellen, damit Geräte die Einstellungen und Apps empfangen, sobald sie in Intune registriert werden.
 
-Sie können zwei Arten von App-Installationen mithilfe von Intune ausführen: Die erste ist eine **erforderliche Installation**, bei der die App automatisch auf verwalteten Computern bereitgestellt wird. Die andere ist eine **verfügbare Installation**, bei der die App oder ein Link auf die App über das Intune-Unternehmensportal bereitgestellt wird, damit Benutzer auswählen können, ob die App auf ihren Computern oder mobilen Geräten installiert werden soll.
+Richtlinien und Apps sind plattformspezifisch.
 
-Mithilfe der folgenden Schritte können Sie eine Konfigurationsrichtlinie für mobile Geräte und eine Firewallrichtlinie für Windows-PCs einrichten. Darüber hinaus können Sie Skype als verfügbare Installation für mobile Geräte konfigurieren, nachdem diese registriert wurden.
+## <a name="manage-device-settings"></a>Verwalten von Geräteeinstellungen
 
-> [!TIP]
-> Nachdem Sie eine neue Richtlinie hinzugefügt und bereitgestellt haben, erben alle Benutzer oder Geräte in der Gruppe, für die Sie die Richtlinie bereitgestellt haben, die Einstellungen als Basisrichtlinie. Sie können die Details dieser Richtlinien später jederzeit über den Arbeitsbereich für Richtlinien überprüfen und bearbeiten.
+ Richtlinieneinstellungen für Geräte werden plattformbasiert konfiguriert und verwaltet. Sie können Richtlinien für die folgenden Plattformen konfigurieren:
 
+- [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
+- [Android und Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
+- [Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
+- [Windows 10 (PC und mobil)](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+- [Windows 8.1](https://docs.microsoft.com/intune/deploy-use/windows-configuration-policy-settings-in-microsoft-intune)
+- [Windows Phone 8.1](https://docs.microsoft.com/intune/deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune)
+- [Windows Team](https://docs.microsoft.com/intune/deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune)
+- [Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird](https://docs.microsoft.com/intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
 
-## Erstellen und Bereitstellen einer Konfigurationsrichtlinie für mobile Geräte
+Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
 
-1.  Öffnen Sie die [Intune-Verwaltungskonsole](https://manage.microsoft.com/).
+## <a name="add-and-deploy-apps"></a>Hinzufügen und Bereitstellen von Apps
 
-2.  Klicken Sie im linken Bereich auf das Symbol **Richtlinie**.
+Sie können Apps zu Intune hinzufügen und sie dann auf zwei Arten auf verwalteten Geräten bereitstellen:
+- **Erforderliche Installation**: Die Apps werden automatisch auf den verwalteten Geräten installiert.
+- **Verfügbare Installation**: Die Apps werden im Intune-Unternehmensportal angezeigt und die Benutzer können auswählen, ob sie die Apps auf ihren Geräten installieren möchten.
 
-    ![admin-console-policy-workspace](./media/policy.png)
+### <a name="add-apps"></a>Hinzufügen von Apps
 
-3.  Klicken Sie auf der Seite **Richtlinienübersicht** in der Liste **Aufgaben** auf **Richtlinie hinzufügen**.
+Zunächst müssen Sie die Apps mithilfe einer der folgenden Methoden in Intune verfügbar machen:
+- [Hinzufügen von Apps für registrierte Geräte](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)
+- [Hinzufügen von Apps für Intune-Softwareclient-PCs](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)
 
-4.  Erweitern Sie in der Richtlinienliste die Plattform, für die Sie eine Richtlinie erstellen möchten, und klicken Sie auf **Allgemeine Konfiguration** > **Richtlinie mit den empfohlenen Einstellungen erstellen und bereitstellen** > **Richtlinie erstellen**.
+### <a name="deploy-apps"></a>Bereitstellen von Apps
 
-> [!NOTE]
-> Es gibt keine empfohlenen Einstellungen für Gerätekonfigurationsrichtlinien, da Sie aus vielen Optionen wählen können. Sie müssen eine benutzerdefinierte Gerätekonfigurationsrichtlinie erstellen.
+Sobald die App in Intune zur Verfügung steht, können Sie sie auf verwalteten Geräten bereitstellen:
+- [Bereitstellen von Apps auf Geräten](https://docs.microsoft.com/intune/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
+- Bereitstellen von Apps aus einem Volumenprogramm:
+    - [iOS: Volume Purchase Program (VPP)](https://docs.microsoft.com/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+    - [Windows Store für Unternehmen](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+    - [Android for Work](https://docs.microsoft.com/en-us/Intune/deploy-use/android-for-work-apps)
 
-
-5.  Wählen Sie bei der Aufforderung **Wählen Sie die Gruppen aus, denen die Richtlinie bereitgestellt werden soll** in der Liste der verfügbaren Gruppen eine Gruppe aus, und wählen Sie **Hinzufügen** > **OK**.
-
-Die Richtlinie wird in der Liste der Konfigurationsrichtlinien angezeigt und wurde für die Gruppe **Intune-Benutzer** bereitgestellt. Doppelklicken Sie auf die Richtlinie, um die Einstellungen anzuzeigen.
-
-## Veröffentlichen der Skype-App für mobile Geräte
-
-1.  Klicken Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf das Symbol **Apps** und dann auf **Apps** > **App hinzufügen**. Geben Sie Ihre [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Anmeldeinformationen ein, wenn Sie dazu aufgefordert werden.
-
-    ![admin-console-apps-workspace](./media/apps.png)
-
-    > [!NOTE]
-    > Wenn Sie den **Intune-Softwareherausgeber** erstmals ausführen, kommt es zu einer kurzen Verzögerung, während die Anwendung installiert wird.
-
-2.  Überprüfen Sie die Sicherheitswarnung, und klicken Sie auf **Ausführen**.
-
-3.  Klicken Sie auf der Seite **Vorbereitung** auf **Weiter**.
-
-4.  Wählen Sie auf der Seite **Softwaresetup** unter **Wählen Sie aus, wie diese Software für Geräte bereitgestellt werden soll** die Option **Externer Link** aus.
-
-5.  Geben Sie unter **Geben Sie die URL an** den externen Link für die Software ein, und klicken Sie dann auf **Weiter**. Achten Sie darauf, der URL **http://** voranzustellen. Verwenden Sie für die Skype-App den nachfolgenden Link, der der Plattform für mobile Geräte entspricht, die Sie verwenden:
-
-    -   **iOS:** [https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
-
-    -   **Android:** [https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
-
-    -   **Windows Phone 8 oder Windows Phone 8.1:** [http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
-
-6.  Geben Sie auf der Seite **Softwarebeschreibung** die Informationen ein, die den Benutzern im Unternehmensportal zu der Software angezeigt werden sollen. Klicken Sie dann auf **Weiter**. Die folgenden Einstellungen stehen zur Verfügung (dieses Beispiel bezieht sich auf Skype):
-
-    -   **Herausgeber:** Geben Sie den Namen des Herausgebers ein: „Microsoft“.
-
-    -   **Name:** Geben Sie **Skype**
-
-    -   **Beschreibung:** Geben Sie eine Beschreibung für die Software ein, z. B. **Skype-Kommunikations-App**
-
-    -   **Kategorie:** Wählen Sie die Kategorie aus, die dieser Software am ehesten entspricht, z. B. **Zusammenarbeit**
-
-    -   **Als ausgewählte App anzeigen und im Unternehmensportal hervorheben:** Wählen Sie diese Option aus, um die App im Unternehmensportal auf mobilen Geräten an hervorgehobener Stelle zu präsentieren.
-
-    -   **Symbol**: Wählen Sie aus, ob der Software ein Symbol zugeordnet werden soll. Die maximale Größe für das optionale Symbol beträgt 250 x 250 Pixel, die empfohlene Größe beträgt 32 x 32 Pixel.
-
-7.  Überprüfen Sie auf der Seite **Zusammenfassung** die Softwareinformationen, und klicken Sie dann auf **Hochladen**. Klicken Sie auf **Schließen**, um den Assistenten zu beenden.
-
-8.  Klicken Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Apps** > **Apps** > **Skype** > **Bereitstellung verwalten**.
-
-9. Wählen Sie auf der Seite **Gruppen auswählen** die Option **Intune-Benutzer** aus, um die Software für diese Benutzergruppe bereitzustellen, und klicken Sie auf **Hinzufügen** > **Weiter**.
-
-10. Wählen Sie auf der Seite **Bereitstellungsaktion** in der Spalte **Genehmigung** bei jeder Gruppe **Verfügbare Installation** aus.
-
-11. Klicken Sie auf **Fertig stellen**.
-
-Die Skype-App kann jetzt über das Unternehmensportal auf mobilen Geräten installiert werden, zunächst müssen Sie jedoch [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Software auf Computern und mobilen Geräten installieren.
+    Nachdem Sie die Apps für die Bereitstellung konfiguriert haben, können Sie [Apps konfigurieren](https://docs.microsoft.com/intune/deploy-use/update-apps-using-microsoft-intune) und [Apps überwachen](https://docs.microsoft.com/intune/deploy-use/monitor-apps-in-microsoft-intune).
 
 
-### Nächste Schritte
-Gratulation! Sie haben Schritt 6 der Kurzanleitung *Erste Schritte mit Intune* abgeschlossen.
+### <a name="next-steps"></a>Nächste Schritte
+Gratulation! Sie haben Schritt 6 der Kurzanleitung *Erste Schritte mit Intune* abgeschlossen.
 
 >[!div class="step-by-step"]
 
@@ -109,6 +73,6 @@ Gratulation! Sie haben Schritt 6 der Kurzanleitung *Erste Schritte mit Intune* 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 
