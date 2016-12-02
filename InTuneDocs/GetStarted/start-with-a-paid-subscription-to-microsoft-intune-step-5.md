@@ -14,8 +14,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f8db75ed17e70dae5d3507b6af33a835c1658e9
-ms.openlocfilehash: 5195de40f35085c45ae63957da1a9058ed7d6493
+ms.sourcegitcommit: dcca68485db7e2c206077ce457081fdbf5cccea4
+ms.openlocfilehash: 92c59bd8061648cedaf31e50c5c599a96302a50f
 
 
 ---
@@ -31,7 +31,7 @@ Mit Gruppen erhalten Sie in Intune maximale Flexibilität beim Verwalten Ihrer G
 
 >[!IMPORTANT]
 >
->Wenn Sie den Arbeitsbereich „Gruppen“ im Intune-Portal öffnen und dort den Hinweis **Intune-Benutzergruppen werden jetzt als Gruppen in Active Directory verwaltet** mit einem Link zum Azure Active Directory-Portal sehen, verwenden Sie bereits den *neuen* Ansatz für Azure AD-Sicherheitsgruppen für die Gruppenverwaltung in Intune. Informationen zum Erstellen von Gruppen finden Sie unter [Verwalten von Gruppen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups).
+>Wenn Sie den Arbeitsbereich „Gruppen“ im Intune-Portal öffnen und dort den Hinweis **Intune-Benutzergruppen werden jetzt als Gruppen in Active Directory verwaltet** mit einem Link zum Azure Active Directory-Portal sehen, verwenden Sie bereits den *neuen* Ansatz für Azure AD-Sicherheitsgruppen für die Gruppenverwaltung in Intune. Informationen zum Erstellen von Gruppen finden Sie unter [Verwalten von Gruppen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal).
 >
 >Wenn kein Link zum Azure AD-Portal angezeigt wird, verwenden Sie noch das Intune-Portal für die Gruppenverwaltung.
 
@@ -89,6 +89,6 @@ Gratulation! Sie haben Schritt 5 der Kurzanleitung *Erste Schritte mit Intune* a
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

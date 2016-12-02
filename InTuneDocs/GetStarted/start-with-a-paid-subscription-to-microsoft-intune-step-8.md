@@ -14,8 +14,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
-ms.openlocfilehash: ca6e016927da1de6604b0c6a2924702ec90c9fab
+ms.sourcegitcommit: 031cf995da4fa46b244b65a6b1c51b6a1aa00d9f
+ms.openlocfilehash: 8c3076b26844669f9927478b5847f88f2265c6c9
 
 
 ---
@@ -43,7 +43,7 @@ Die Registrierung muss für iOS-, Mac- und Android for Work-Geräte aktiviert we
 
 Aktivieren Sie die Geräteregistrierung für die Geräteplattform, die Sie verwalten möchten. Je nach Plattform sind andere Anforderungen relevant:
 
--  [iOS und Mac OS](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS und Mac OS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
 -  [Windows-PC](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -  [Windows 10 Mobile und Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
@@ -66,6 +66,6 @@ Gratulation! Sie haben den letzten Schritt der Kurzanleitung *Erste Schritte mit
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

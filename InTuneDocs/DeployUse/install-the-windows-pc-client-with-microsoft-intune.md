@@ -3,8 +3,7 @@
 title: Installieren der PC-Clientsoftware | Microsoft Intune
 description: Befolgen Sie diese Anleitung zum Verwalten Ihrer Windows-PCs durch die Microsoft Intune-Clientsoftware.
 keywords: 
-author: NathBarn
-manager: arob98
+author: staciebarker
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +13,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
-ms.openlocfilehash: 7d239a80ed68d39b2a7179a45178ba6ae11c5423
+ms.sourcegitcommit: 103e7065d1e2c3281f8f04808ee2546d3c7e2b53
+ms.openlocfilehash: 32af8a615453b8c72e704f40dcdf0de6fbf10907
 
 
 ---
@@ -104,7 +103,7 @@ Bei der Ausführung dieser Aufgabe zur automatischen Registrierung zum nächsten
 
 Die Aufgabe zur automatischen Intune-Registrierung, der Registrierungswert **WindowsIntuneEnrollPending** und das Kontozertifikat werden entweder vom Zielcomputer gelöscht, sobald die Registrierung erfolgreich war oder ein Monat vergangen ist (egal was zuerst kommt).
 
-## <a name="instruct-users-to-selfenroll"></a>Einweisen von Benutzern in die eigenständige Registrierung
+## <a name="instruct-users-to-self-enroll"></a>Einweisen von Benutzern in die eigenständige Registrierung
 
 Benutzer können die Intune-Clientsoftware installieren, indem Sie auf die [Unternehmensportal-Website](http://portal.manage.microsoft.com) gehen. Wenn das Webportal erkennt, dass es sich bei dem Gerät um einen Windows-PC handelt, fordert es Benutzer dazu auf, den PC durch Herunterladen des Intune-Softwareclients zu registrieren. Nach dem Herunterladen der Software können Benutzer diese installieren, um ihren PC über Intune verwalten zu lassen.
 
@@ -139,6 +138,6 @@ Verwenden Sie eins der folgenden Verfahren, um die erfolgreiche Clientbereitstel
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO5-->
 
 

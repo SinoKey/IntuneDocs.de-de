@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
-ms.openlocfilehash: d880123a9b4d4afd74e9941ce0590f5dae554667
+ms.sourcegitcommit: 686321a1c19acb9a3a7e262822b11304d07adb40
+ms.openlocfilehash: 77789c04d13e12d7d0ecc5fb8959bc3396bd625f
 
 
 ---
@@ -30,7 +30,7 @@ Wenn Sie [Exchange ActiveSync](#mobile-device-management-with-exchange-activesyn
 Die folgende Tabelle zeigt Intune-Registrierungsmethoden und die unterstützten Funktionen und Anforderungen der einzelnen Methoden. Die Funktionen und Anforderungen werden nachfolgend beschrieben.
 
 - **Zurücksetzen** – Gibt an, ob das Gerät zurückgesetzt werden muss, bevor Benutzer das Gerät registrieren können. Der Begriff „Zurücksetzen“ bedeutet die Zurücksetzung des Geräts auf Werkseinstellungen, wobei alle Daten entfernt werden. Weitere Informationen finden Sie auf der Seite [Abkoppeln von Geräten von der Intune-Verwaltung](retire-devices-from-microsoft-intune-management.md).
-- **Affinität** – Ordnet Geräte Benutzern zu. Für die Verwaltung mobiler Geräte (MAM, Mobile Application Management) und den bedingten Zugriff auf Unternehmensdaten erforderlich. Weitere Informationen finden Sie auf der Seite [Registrieren firmeneigener iOS-Geräte in Microsoft Intune](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices).
+- **Affinität** – Ordnet Geräte Benutzern zu. Für die Verwaltung mobiler Geräte (MAM, Mobile Application Management) und den bedingten Zugriff auf Unternehmensdaten erforderlich. Weitere Informationen finden Sie auf der Seite [Registrieren firmeneigener iOS-Geräte in Microsoft Intune](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
 - **Sperre** – Hindert Benutzer daran, das Gerät aus der Verwaltung zu entfernen. Für iOS-Geräte ist der Modus „Betreut“ für die Sperre erforderlich. Weitere Informationen finden Sie unter [Geräteschutz durch Remotesperre und Zurücksetzen der Kennung](retire-devices-from-microsoft-intune-management.md#block-access-a-device).
 
 **iOS-Registrierungsmethoden**
@@ -120,6 +120,6 @@ Intune kann folgende Geräteplattformen verwalten:
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 
