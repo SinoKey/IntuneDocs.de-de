@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 
 
 ---
@@ -64,6 +64,25 @@ Sie können Apps und Daten von Intune-verwalteten Geräten zurücksetzen, die ni
 
 Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minuten, bis ein Befehl zum Zurücksetzen an alle Gerätetypen weitergegeben wurde.
 
+#### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>So löschen Sie Geräte im Azure Active Directory-Portal
+
+1.  Navigieren Sie zu [http://aka.ms/accessaad](http://aka.ms/accessaad), oder klicken Sie unter [https://portal.office.com](https://portal.office.com) auf **Verwaltung** &gt; **Azure AD**.
+
+2.  Melden Sie sich mit Ihrer Organisations-ID über den Link im linken Bereich der Seite an.
+
+3.  Erstellen Sie ein Azure-Abonnement, wenn Sie noch keins besitzen. Hierzu sollte keine Kreditkarte oder Zahlung erforderlich sein, wenn Sie ein gebührenpflichtiges Konto besitzen (klicken Sie auf den Abonnementlink **Ihr kostenloses Azure Active Directory registrieren** ).
+
+4.  Wählen Sie zuerst **Active Directory** und dann Ihre Organisation aus.
+
+5.  Wählen Sie die Registerkarte **Benutzer** aus.
+
+6.  Wählen Sie den Benutzer aus, dessen Geräte Sie löschen möchten.
+
+7.  Klicken Sie auf **Geräte**.
+
+8.  Entfernen Sie Geräte nach Bedarf, z. B. solche, die nicht mehr verwendet werden oder fehlerhafte Definitionen haben.
+
+
 ## <a name="selective-wipe"></a>Selektives Zurücksetzen
 
 Beim **selektiven Zurücksetzen** werden die Unternehmensdaten und bei Bedarf auch die Daten für die Verwaltung mobiler Apps (MAM, Mobile App Management) vom Gerät entfernt. Außerdem werden Einstellungen und E-Mail-Profile entfernt. Die persönlichen Daten des Benutzers bleiben beim selektiven Zurücksetzen auf dem Gerät erhalten. Das Gerät wird aus Intune entfernt. Die folgende Tabelle beschreibt, welche Daten bei einem selektiven Zurücksetzen entfernt werden und mit welchen Auswirkungen auf die auf dem Gerät verbleibenden Daten zu rechnen ist. (Diese Tabellen sind nach Plattform sortiert.)
@@ -95,7 +114,7 @@ Beim **selektiven Zurücksetzen** werden die Unternehmensdaten und bei Bedarf au
 |Einstellungen für WLAN- und VPN-Profil|Entfernt.|Entfernt.|
 |Zertifikatprofil-Einstellungen|Zertifikate gesperrt, aber nicht entfernt.|Zertifikate wurden entfernt und gesperrt.|
 |Verwaltungs-Agent|Die Berechtigung „Geräteadministrator“ wird gesperrt.|Die Berechtigung „Geräteadministrator“ wird gesperrt.|
-|E-Mail|E-Mails, die über die Microsoft Outlook-App für Android empfangen wurden, werden entfernt.|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht. Wenn Microsoft Exchange lokal gehostet wird, werden E-Mail-Profile und zwischengespeicherte E-Mails nicht entfernt.|
+|E-Mail|E-Mails, die über die Microsoft Outlook-App für Android empfangen wurden, werden entfernt.|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|
 |Outlook|E-Mails, die über die Microsoft Outlook-App für iOS empfangen wurden, werden entfernt.</br>Ausnahme: Wenn Exchange lokal gehostet wird, werden E-Mails nicht entfernt.|E-Mails, die über die Microsoft Outlook-App für iOS empfangen wurden, werden entfernt.</br>Ausnahme: Wenn Exchange lokal gehostet wird, werden E-Mails nicht entfernt.|
 |Azure Active Directory (AAD)-Verbindung aufgehoben|AAD-Datensatz wird entfernt.|AAD-Datensatz wird entfernt.|
 |Kontakte | Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.|Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.
@@ -146,6 +165,6 @@ Dieser Bericht zeigt auch, welcher Benutzer die Aktion ausgeführt hat.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
