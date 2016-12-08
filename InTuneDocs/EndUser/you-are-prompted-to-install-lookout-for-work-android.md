@@ -2,8 +2,8 @@
 title: "Sie werden aufgefordert, Lookout for Work auf Ihrem Android-Gerät zu installieren | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
 ms.topic: article
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
-ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: d55c7d4a7c77472453e6d317a22c4ad6209255a5
 
 
 ---
 
-# Sie werden aufgefordert, Lookout for Work zu installieren
+# <a name="you-are-prompted-to-install-lookout-for-work"></a>Sie werden aufgefordert, Lookout for Work zu installieren
 
 Damit Sie auf Ihre Arbeit zugreifen können, verlangt der IT-Administrator von Ihnen, dass Sie die Lookout for Work-App installieren, die Ihnen hilft, Ihr Gerät zu schützen, indem sie mögliche Sicherheitsbedrohungen erkennt.
 
@@ -82,6 +82,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

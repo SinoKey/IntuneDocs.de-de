@@ -2,7 +2,8 @@
 title: "Überprüfen der Kompatibilität auf Ihrem Android-Gerät | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -14,20 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
-ms.openlocfilehash: e5f519253cfa380a973db428bc5acaac3a2101df
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 22786ed9a7598222003847c33311209faa3291c1
 
 
 ---
 
 
-# Überprüfen der Kompatibilität auf Ihrem Android-Gerät
+# <a name="check-compliance-on-your-android-device"></a>Überprüfen der Kompatibilität auf Ihrem Android-Gerät
 
 Wenn Ihr Gerät sich eine Zeit lang nicht bei Intune angemeldet hat, können Sie möglicherweise nicht auf Ihre Firmen- oder Schulressourcen zugreifen. Gehen Sie wie folgt vor, um wieder Zugriff zu erhalten:
 
 1. Öffnen Sie die Android-Unternehmensportal-App auf Ihrem Gerät.
 
-2. 
+2. Tippen Sie auf **Kompatibilität prüfen**.
 
 Wenn Sie Ihr verlorenes oder gestohlenes Gerät nicht zurücksetzen können, bitten Sie Ihren IT-Administrator, es zurückzusetzen. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
@@ -35,6 +36,6 @@ Wenn Sie Ihr verlorenes oder gestohlenes Gerät nicht zurücksetzen können, bit
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

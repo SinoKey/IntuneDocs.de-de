@@ -14,31 +14,40 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: karthikaraman
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
-ms.openlocfilehash: e2d43fff8772046fe7426b267e39d53b278d4e5c
+ms.sourcegitcommit: af7df3fcf50c3508d495522341bb287c638f40a3
+ms.openlocfilehash: 2ea1763881a7d10ae8bc21c98754d2767b2fc954
 
 
 ---
 
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Intune App SDK-Xamarin-Komponente
 
+> [!NOTE]
+> Lesen Sie am besten zuerst den Leitfaden [Erste Schritte mit dem Microsoft Intune App SDK](intune-app-sdk-get-started.md). Dort finden Sie Informationen zu den Vorbereitungen, die Sie auf den verschiedenen unterstützten Plattformen für die Integration treffen müssen.
+
+
+
 ## <a name="overview"></a>Übersicht
-Mit der [Intune App SDK-Xamarin-Komponente](https://components.xamarin.com/view/microsoft.intune.mam) können Sie die [Intune-Verwaltungsfunktionen für mobile Apps](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in Ihren mit Xamarin erstellten mobilen iOS- und Android-Apps aktivieren. Die Komponente erlaubt Entwicklern die einfache Erstellung von App-Beschränkungen und Datenschutzfunktionen in ihrer Xamarin-basierten App.
+Mit der [Intune App SDK-Xamarin-Komponente](https://components.xamarin.com/view/microsoft.intune.mam) können Sie die [Intune-Verwaltungsfunktionen für mobile Apps](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in Ihren mit Xamarin erstellten mobilen iOS- und Android-Apps aktivieren. Die Komponente erlaubt Entwicklern, App-Schutzfunktionen von Intune auf einfache Weise in ihre Xamarin-basierten App zu integrieren.
 
-Sie werden feststellen, dass Sie die meisten SDK-Funktionen aktivieren können, ohne das Verhalten Ihrer App zu ändern. Sobald Sie die Komponente auf Ihrer mobilen App für iOS oder Android erstellt haben, kann der IT-Administrator über Microsoft Intune Richtlinien bereitstellen, die eine Vielzahl von Funktionen zur Datenschutzaktivierung unterstützen.
+Sie werden feststellen, dass Sie die meisten SDK-Funktionen aktivieren können, ohne das Verhalten Ihrer App zu ändern. Sobald Sie die Komponente auf Ihrer mobilen App auf iOS oder Android erstellt haben, kann der IT-Administrator über die mobile Anwendungsverwaltung in Microsoft Intune (Mobile Application Management, MAM) Richtlinien bereitstellen, die eine Vielzahl von Datenschutzfunktionen unterstützten.
 
-## <a name="supported-scenarios"></a>Unterstützte Szenarien
+## <a name="whats-supported"></a>Was wird unterstützt?
 
-### <a name="platforms"></a>Plattformen
+### <a name="developer-machines"></a>Entwicklercomputer
+* Windows
+
+
+### <a name="mobile-app-platforms"></a>Mobile App-Plattformen
 * Android
 * iOS
 
 
-### <a name="emm-scenarios"></a>EMM-Szenarios
+### <a name="intune-mobile-application-management-scenarios"></a>Intune MAM-Szenarien
 
-* Intune MAM auf mit Intune MDM registrierten Geräten
-* Intune MAM auf mit EMM registrierten Geräten von Drittparteien
-* Intune MAM oder unregistrierte, nicht verwaltete Geräte
+* Mit Intune MDM registrierte Geräte
+* Mit EMM registrierte Geräte von Drittanbietern
+* Nicht verwaltete (bei keiner MDM-Lösung registrierte) Geräte
 
 Xamarin-Apps, die mit Intune App SDK-Xamarin-Komponenten erstellt wurden, können jetzt sowohl auf Geräten mit Intune Mobilgeräteverwaltung (MDM) als auch auf nicht registrierten Geräten Intune-Richtlinien des mobilen Anwendungsmanagements (MAM) empfangen.
 
@@ -116,6 +125,6 @@ Sie haben die grundlegenden Schritte zum Erstellen der Komponente auf Ihrer App 
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

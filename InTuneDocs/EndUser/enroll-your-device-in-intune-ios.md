@@ -2,10 +2,10 @@
 title: "Registrieren Ihres iOS-Geräts bei Intune | Microsoft Intune"
 description: "Beschreibt, wie Sie ein iOS-Gerät bei Intune registrieren."
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,20 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 577d14f29880d16046bbb703773d6362c2458c1b
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 7d11e716750c4920234de5419e262d6c2c6e2d44
 
 
 ---
 
 
-# Registrieren Ihres iOS-Geräts bei Intune
+# <a name="enroll-your-ios-device-in-intune"></a>Registrieren Ihres iOS-Geräts bei Intune
 
 Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ihr iOS-Gerät registrieren, um Zugriff auf Unternehmens-E-Mails, Dateien und weitere Ressourcen zu erhalten. Wenn Sie Ihre Geräte registrieren, kann Ihre IT-Abteilung diese Geschäfts-, Schul- oder Uniressourcen verwalten, schützen und Ihnen gleichzeitig die Möglichkeit bieten, Ihr bevorzugtes Gerät zu verwenden, um Ihre Arbeit erledigen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
 Wenn Sie ein Mac OS X-Gerät registrieren möchten, lesen Sie [Registrieren Ihres Mac OS X-Geräts bei Intune](enroll-your-device-in-intune-mac-os-x.md).
 
-**Vorbereitungen:**
+**Vorbereitung:**
 
 - Stellen Sie sicher, dass Sie die Registrierung auch abschließen, wenn Sie mit dieser Anleitung beginnen. Wenn Sie die Registrierung nicht abschließen, funktioniert sie möglicherweise nicht mehr, wenn Sie sie später fortsetzen möchten.
 - Stellen Sie sicher, dass Ihr WLAN funktioniert. Andernfalls schlägt die Registrierung fehl.
@@ -96,6 +96,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,7 +2,7 @@
 title: "Sie werden aufgefordert, Lookout for Work auf Ihrem iOS-Gerät zu installieren | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
-ms.openlocfilehash: 03eee971fe74b73983111549338b13bf4068a85c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 0c1fd681cd2ef9001083df16d4fb7506c47f9572
 
 
 ---
 
-# Sie werden aufgefordert, Lookout for Work auf Ihrem iOS-Gerät zu installieren
+# <a name="you-are-prompted-to-install-lookout-for-work-on-your-ios-device"></a>Sie werden aufgefordert, Lookout for Work auf Ihrem iOS-Gerät zu installieren
 
 Damit Sie auf Ihre Arbeit zugreifen können, verlangt der IT-Administrator von Ihnen, dass Sie die Lookout for Work-App installieren, die Ihnen hilft, Ihr Gerät zu schützen, indem sie mögliche Sicherheitsbedrohungen erkennt. Möglicherweise werden auf Ihrem Gerät abhängig davon, wie Ihr IT-Administrator Lookout for Work eingerichtet hat, andere Aufforderungen angezeigt.
 
@@ -55,6 +55,6 @@ Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihre
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

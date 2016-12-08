@@ -2,7 +2,7 @@
 title: "Registrieren Ihres Android-Geräts bei Intune | Microsoft Intune"
 description: "Beschreibt, wie Sie ein Android-Gerät bei Intune registrieren."
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/09/2016
@@ -14,18 +14,18 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 5d7507d9c09867b5c302caba409f1a7347fae4b6
+ms.sourcegitcommit: 6dc3173207d1e99e1bd0207f8ea5a5b137b36be1
+ms.openlocfilehash: b87799b0ee8dcf98b82bd8353ca7684ede0d8bc2
 
 
 ---
 
 
-# Registrieren Ihres Android-Geräts bei Intune
+# <a name="enroll-your-android-device-in-intune"></a>Registrieren Ihres Android-Geräts bei Intune
 
 Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ihr Android-Gerät registrieren, um Zugriff auf Unternehmens-E-Mails, Dateien und weitere Ressourcen zu erhalten. Wenn Sie Ihre Geräte registrieren, kann Ihre IT-Abteilung diese Geschäfts-, Schul- oder Uniressourcen verwalten, schützen und Ihnen gleichzeitig die Möglichkeit bieten, Ihr bevorzugtes Gerät zu verwenden, um Ihre Arbeit erledigen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn ich die Unternehmensportal-App installiere und mein Gerät registriere?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)
 
-Diese Registrierungsanweisungen sind für Samsung Knox-Geräte mit Android und native Android-Geräte (ohne Samsung Knox) bestimmt. Um zu ermitteln, ob Sie ein Samsung Knox-Gerät haben, wechseln Sie zu **Einstellungen** &gt; **About device** (Infos zum Gerät). Wird „KNOX-Version“ nicht angezeigt, verfügen Sie über ein natives Android-Gerät.
+Diese Registrierungsanweisungen sind für Samsung KNOX-Geräte mit Android und „native“ Android-Geräte (ohne Samsung Knox) bestimmt. Um zu ermitteln, ob Sie ein Samsung KNOX-Gerät haben, wechseln Sie zu **Einstellungen** &gt; **About device** (Infos zum Gerät). Wird „KNOX-Version“ nicht angezeigt, verfügen Sie über ein natives Android-Gerät.
 
 Vor oder nach der Registrierung werden Sie möglicherweise aufgefordert, eine Kategorie auszuwählen, die am besten beschreibt, wie Sie Ihr Gerät nutzen. Ihr IT-Administrator verwendet diese Kategorie, um die Apps zu überprüfen, auf die Sie Zugriff haben.
 
@@ -110,10 +110,10 @@ Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftre
 
 Bevor Sie versuchen, Unternehmens-Apps zu installieren, wechseln Sie zu **Einstellungen** &gt; **Sicherheit**, und aktivieren Sie **Unknown sources** (Unbekannte Quellen). Wenn Sie diese Option nicht aktivieren, bevor Sie versuchen, Apps zu installieren, wird die folgende Meldung angezeigt: „Installation blockiert. Aus Sicherheitsgründen ist Ihr Gerät so eingestellt, dass die Installation von Apps aus unbekannten Quellen blockiert wird.“ Sie können im Fehlerdialogfeld auf **Einstellungen** tippen, um zur Option **Unknown sources** zu wechseln.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen), oder schreiben Sie dem Microsoft Android-Team unter „wintunedroidfbk@microsoft.com“.
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das Microsoft Android-Team unter wintunedroidfbk@microsoft.com..
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

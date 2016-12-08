@@ -2,10 +2,10 @@
 title: Unenroll your device from Intune if you declined "Terms of Use" | Microsoft Intune
 description: "Beschreibt, wie Sie die Registrierung eines Android-Geräts bei Intune aufheben, wenn Sie die Nutzungsbedingungen abgelehnt haben und sich nicht bei der Unternehmensportal-App anmelden können"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
-ms.openlocfilehash: 4f5088bc645fed0451885078f5ab0dcd04a33d81
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 6303400645bf26ede733413fe2dabdb360e3bafb
 
 
 ---
 
 
-# Aufheben der Registrierung Ihres Geräts bei Intune bei Ablehnung der „Nutzungsbedingungen“
+# <a name="unenroll-your-device-from-intune-if-you-declined-terms-of-use"></a>Aufheben der Registrierung Ihres Geräts bei Intune bei Ablehnung der „Nutzungsbedingungen“
 
-Die beste Methode zum Aufheben der Registrierung Ihres Android-Geräts ist, die Nutzungsbedingungen zu akzeptieren, sich bei der Unternehmensportal-App anzumelden und die Registrierung anschließend unter Beachtung [dieser Anweisungen](unenroll-your-device-from-intune-android.md) aufzuheben. Wenn Sie allerdings die Nutzungsbedingungen beim Versuch, sich bei der Unternehmensportal-App anzumelden, abgelehnt haben, werden Sie bei zukünftigen Versuchen daran gehindert, sich bei der Unternehmensportal-App anzumelden. In diesem Fall sollten Sie diese „Umgehungsanweisungen“ befolgen, um die Registrierung für Ihr Gerät aufzuheben.
+Die beste Methode zum Aufheben der Registrierung Ihres Android-Geräts ist, die Nutzungsbedingungen zu akzeptieren, sich bei der Unternehmensportal-App anzumelden und die Registrierung anschließend unter Beachtung [dieser Anweisungen](unenroll-your-device-from-intune-android.md) aufzuheben. Wenn Sie allerdings beim Versuch, sich bei der Unternehmensportal-App anzumelden, die Nutzungsbedingungen abgelehnt haben, können Sie sich bei späteren Versuchen nicht mehr bei der Unternehmensportal-App anmelden, d.h. Sie müssen diese Anweisungen zur Problemumgehung verwenden, um das Gerät zu registrieren.
 
 Wenn Sie die Unternehmensportal-App deinstallieren, wird auch die Registrierung Ihres Geräts bei Intune aufgehoben. Ihr Gerät wird nicht mehr auf Unternehmensressourcen zugreifen können. Weitere Informationen dazu, was bei Aufheben der Registrierung bei Intune geschieht, finden Sie unter [Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
@@ -39,10 +39,10 @@ So können Sie die Registrierung Ihres Geräts bei Intune aufheben und die Unter
 
     Sie können die Unternehmensportal-App jetzt deinstallieren.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen), oder schreiben Sie dem Microsoft Android-Team unter „wintunedroidfbk@microsoft.com“.
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das [Microsoft Android-Team](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

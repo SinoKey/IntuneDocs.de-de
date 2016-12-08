@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 11/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
 
 
 ---
@@ -29,7 +29,7 @@ Dieses Thema enthält Vorschläge zur Problembehandlung bei Problemen mit der Ge
 
 Bevor Sie mit der Problembehandlung beginnen, stellen Sie sicher, dass Intune ordnungsgemäß konfiguriert wurde, um die Registrierung zu ermöglichen. Informationen zu diesen Konfigurationsanforderungen finden Sie unter:
 
--   [Vorbereiten der Registrierung von Geräten in Microsoft Intune](/intune/deploy-use/gprerequisites-for-enrollment.md)
+-   [Vorbereiten der Registrierung von Geräten in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment.md)
 -   [Einrichten der iOS- und Mac-Geräteverwaltung](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Einrichten der Windows 10 Mobile- und Windows Phone-Verwaltung mit Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Einrichten der Windows-Geräteverwaltung](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -50,13 +50,13 @@ Diese Probleme können auf allen Geräteplattformen auftreten.
 ### <a name="device-cap-reached"></a>Gerätekapazität erreicht
 **Problem**: Benutzer erhalten während der Registrierung eine Fehlermeldung auf ihrem Gerät, z. B. den Fehler **Unternehmensportal vorübergehend nicht verfügbar** auf einem iOS-Gerät, und die Datei „DMPdownloader.log“ in Configuration Manager enthält den Fehler **DeviceCapReached**.
 
-**Lösung:** Beabsichtigt. Benutzer können nicht mehr als 5 Geräte registrieren.
+**Lösung:**
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>Überprüfen Sie die Anzahl der registrierten und zulässigen Geräte.
 
-1.  Überprüfen Sie im Intune-Verwaltungsportal, dass dem Benutzer nicht mehr als 5 Geräte zugewiesen sind.
+1.  Stellen Sie mithilfe des Intune-Verwaltungsportals sicher, dass dem Benutzer nicht mehr als die maximal zulässigen 15 Geräte zugewiesen sind.
 
-2.  Überprüfen Sie im Intune-Verwaltungsportal unter „Admin\Mobile Device Management\Enrollment Rules“, dass der Grenzwert für die Geräteregistrierung auf 5 festgelegt ist.
+2.  Überprüfen Sie in der Intune-Administratorkonsole unter „Admin\Mobile Device Management\Enrollment Rules“, ob der Grenzwert für die Geräteregistrierung auf 15 festgelegt ist.
 
 Benutzer von mobilen Geräten können Geräte unter folgender URL löschen: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
 
@@ -89,7 +89,7 @@ Administratoren können Geräte im Azure Active Directory-Portal löschen.
 ### <a name="company-portal-temporarily-unavailable"></a>Unternehmensportal vorübergehend nicht verfügbar
 **Problem**: Sie erhalten auf dem Gerät die Fehlermeldung **Unternehmensportal vorübergehend nicht verfügbar**.
 
-#### <a name="troubleshooting-company-portal-temporarily-unavailable-error"></a>Behandlung des Fehlers „Unternehmensportal vorübergehend nicht verfügbar“
+**Lösung:**
 
 1.  Entfernen Sie die Intune-Unternehmensportal-App von dem Gerät.
 
@@ -104,7 +104,7 @@ Administratoren können Geräte im Azure Active Directory-Portal löschen.
 ### <a name="mdm-authority-not-defined"></a>MDM-Autorität nicht definiert
 **Problem**: Sie erhalten die Fehlermeldung **MDM-Autorität nicht definiert**.
 
-#### <a name="troubleshooting-mdm-authority-not-defined-error"></a>Behandlung des Fehlers „MDM-Autorität nicht definiert“
+**Lösung:**
 
 1.  Stellen Sie sicher, dass die MDM-Autorität entsprechend der Version des von Ihnen verwendeten Intune-Diensts festgelegt wurde, d. h. für Intune Office 365 MDM oder System Center Configuration Manager mit Intune. Für Intune wird die MDM-Autorität in **Verwaltung** &gt; **Verwaltung mobiler Geräte** festgelegt. Für Configuration Manager mit Intune legen Sie sie fest, wenn Sie den Intune-Connector konfigurieren, und in Office 365 gibt es dafür die Einstellung **Mobilgeräte**.
 
@@ -152,16 +152,65 @@ Administratoren können Geräte im Azure Active Directory-Portal löschen.
 
 
 ## <a name="android-issues"></a>Android-Probleme
+### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Geräte können nicht beim Intune-Dienst eingecheckt werden und werden als in der Intune-Administratorkonsole als „Fehlerhaft“ angezeigt.
+**Problem**: Einige Samsung-Geräte, auf denen die Android-Versionen 4.4.x und 5.x ausgeführt werden, beenden den Vorgang zum Einchecken beim Intune-Dienst. Für nicht eingecheckte Geräte gilt Folgendes:
+
+- Sie können keine Richtlinien, Apps und Remotebefehle vom Intune-Dienst empfangen.
+- Sie werden in der Administratorkonsole mit dem Status **Fehlerhaft** angezeigt.
+- Benutzer, die über Richtlinien für den bedingten Zugriff geschützt werden, verlieren möglicherweise ihren Zugriff auf Unternehmensressourcen.
+
+Samsung hat bestätigt, dass die Samsung Smart Manager-Software, die auf bestimmten Samsung-Geräten vorinstalliert ist, das Intune-Unternehmensportal und die zugehörigen Komponenten deaktivieren kann. Wenn sich das Unternehmensportal in einem deaktivierten Zustand befindet, kann es nicht im Hintergrund ausgeführt werden und somit nicht mit dem Intune-Dienst kommunizieren.
+
+**Lösung 1**:
+
+Weisen Sie Ihre Benutzer an, die Unternehmensportal-App manuell zu starten. Nach dem App-Neustart wird das Gerät beim Intune-Dienst eingecheckt.
+
+> [!IMPORTANT]
+> Das manuelle Öffnen der Unternehmensportal-App ist eine vorübergehende Lösung, weil die Unternehmensportal-App durch den Samsung Smart Manager erneut deaktiviert werden kann.
+
+**Lösung 2**:
+
+Weisen Sie Ihre Benutzer an, ein Upgrade auf Android 6.0 durchzuführen. Das Problem der Deaktivierung tritt auf Android 6.0-Geräten nicht auf. Um zu überprüfen, ob ein Update verfügbar ist, können die Benutzer zu **Einstellungen** > **Geräteinformationen** > **Updates manuell herunterladen**, und folgen Sie den Anweisungen auf dem Gerät.
+
+**Lösung 3**:
+
+Wenn Lösung 2 nicht zur Behebung des Problems führt, führen Sie die folgenden Schritte aus, um die Unternehmensportal-App als Smart Manager-Ausnahme festzulegen:
+
+1. Starten Sie die Smart Manager-App auf dem Gerät.
+
+  ![Smart Manager-Symbol auf dem Gerät auswählen](./media/smart-manager-app-icon.png)
+
+2. Wählen Sie die Kachel **Akku** aus.
+
+  ![Kachel „Akku“ auswählen](./media/smart-manager-battery-tile.png)
+
+3. Wählen Sie unter **App-Energiesparmodus** oder **App-Optimierung** die Option **Detail** aus.
+
+  ![Option „Detail“ unter „App-Energiesparmodus“ oder „App-Optimierung“ auswählen](./media/smart-manager-app-power-saving-detail.png)
+
+4. Wählen Sie aus der Liste der Apps den Eintrag **Unternehmensportal** aus.
+
+  ![Unternehmensportal aus der Liste der Apps auswählen](./media/smart-manager-company-portal.png)
+
+5. Wählen Sie **Deaktivieren** aus.
+
+  ![Option „Deaktivieren“ im Dialogfeld „App-Optimierung“ auswählen](./media/smart-manager-app-optimization-turned-off.png)
+
+6. Vergewissern Sie sich unter **App-Energiesparmodus** oder **App-Optimierung**, dass das Unternehmensportal deaktiviert ist.
+
+  ![Überprüfen, ob das Unternehmensportal deaktiviert ist](./media/smart-manager-verify-comp-portal-turned-off.png)
+
+
 ### <a name="profile-installation-failed"></a>Fehler bei der Profilinstallation
 **Problem**: Sie erhalten auf einem Android-Gerät die Fehlermeldung **Fehler bei der Profilinstallation**.
 
-### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Schritte zur Problembehandlung bei fehlgeschlagener Profilinstallation
+**Lösung:**
 
 1.  Vergewissern Sie sich, dass dem Benutzer eine geeignete Lizenz für die Version des von Ihnen verwendeten Intune-Diensts zugewiesen wurde.
 
 2.  Stellen Sie sicher, dass das Gerät nicht bereits bei einem anderen MDM-Anbieter registriert ist oder dass nicht bereits ein Verwaltungsprofil darauf installiert ist.
 
-4.  Vergewissern Sie sich, dass Chrome für Android der Standardbrowser ist und dass Cookies aktiviert sind.
+3.  Vergewissern Sie sich, dass Chrome für Android der Standardbrowser ist und dass Cookies aktiviert sind.
 
 ### <a name="android-certificate-issues"></a>Android-Zertifikatsprobleme
 
@@ -170,15 +219,15 @@ Administratoren können Geräte im Azure Active Directory-Portal löschen.
 **Lösung**:
 
 - Der Benutzer kann in der Lage sein, das fehlende Zertifikat mit [diesen Anweisungen](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) abzurufen.
-- Wenn der Benutzer das Zertifikat nicht abrufen kann, können Zwischenzertifikate auf Ihrem AD FS-Server fehlen. Die Zwischenzertifikate benötigt Android, um dem Server zu vertrauen.
+- Wenn der Benutzer das Zertifikat nicht abrufen kann, können Zwischenzertifikate auf Ihrem AD FS-Server fehlen. Die Zwischenzertifikate benötigt Android, um dem Server zu vertrauen.
 
-Sie können die Zertifikate wie folgt in den Zwischenspeicher auf dem AD FS-Server oder Proxys importieren:
+Sie können die Zertifikate wie folgt in den Zwischenspeicher auf dem AD FS-Server oder Proxys importieren:
 
-1.  Starten Sie auf dem AD FS-Server die **Microsoft Management Console**, und fügen Sie das Zertifikate-Snap-In für das **Computerkonto** hinzu.
-5.  Suchen Sie das Zertifikat, das Ihr AD FS-Dienst verwendet, und zeigen Sie sein übergeordnetes Zertifikat an.
+1.  Starten Sie auf dem AD FS-Server die **Microsoft Management Console**, und fügen Sie das Zertifikate-Snap-In für das **Computerkonto** hinzu.
+5.  Suchen Sie das Zertifikat, das Ihr AD FS-Dienst verwendet, und zeigen Sie sein übergeordnetes Zertifikat an.
 6.  Kopieren Sie das übergeordnete Zertifikat, und fügen Sie es unter **Computer\Intermediate Certification Authorities\Certificates** ein.
-7.  Kopieren Sie Ihre Zertifikate für AD FS, AD FS Decrypting und AD FS Signing, und fügen Sie sie in den privaten Speicher für den AD FS-Dienst ein.
-8.  Starten Sie die AD FS-Server neu.
+7.  Kopieren Sie Ihre Zertifikate für AD FS, AD FS Decrypting und AD FS Signing, und fügen Sie sie in den privaten Speicher für den AD FS-Dienst ein.
+8.  Starten Sie die AD FS-Server neu.
 
 Der Benutzer sollte sich jetzt mit dem Android-Gerät bei der Unternehmensportal-App anmelden können.
 
@@ -255,7 +304,7 @@ Eine Liste von iOS-Registrierungsfehlern finden Sie in unserer Gerät-/Benutzerd
 
 ## <a name="pc-issues"></a>PC-Probleme
 
-### <a name="the-machine-is-already-enrolled-error-hr-0x8007064c"></a>Der Computer ist bereits registriert – Fehler hr 0x8007064c
+### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>Der Computer ist bereits registriert – Fehler hr 0x8007064c
 **Problem:** Fehler bei Registrierung: **Der Computer ist bereits registriert**. Das Registrierungsprotokoll zeigt Fehler **hr 0x8007064c** an.
 
 Möglicherweise wurde der Computer bereits vorher registriert oder hat das geklonte Image eines Computers, der registriert wurde. Das Kontozertifikat des vorherigen Kontos ist immer noch auf dem Computer vorhanden.
@@ -307,6 +356,6 @@ Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, w
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

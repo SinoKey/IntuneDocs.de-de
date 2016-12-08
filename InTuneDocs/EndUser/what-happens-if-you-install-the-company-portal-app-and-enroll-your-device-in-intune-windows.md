@@ -2,10 +2,10 @@
 title: "Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Windows-Gerät bei Intune registrieren? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2d56c2f23fd70ab0ca593d1ad5d60889e5855a7a
 
 
 ---
 
 
-# Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Windows-Gerät bei Intune registrieren?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Windows-Gerät bei Intune registrieren?
 
 Wenn Sie die Unternehmensportal-App installieren und damit anschließend ein Windows- oder Windows Phone-Gerät registrieren, erlauben Sie Ihrem IT-Administrator, Ihr Gerät zu verwalten, um die Daten von Unternehmen oder Schule zu schützen. In diesem Thema wird beschrieben, was bei Geräten mit einer früheren Version als Windows 10 geschieht. Windows 10-Geräte werden im [verwandten Thema](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) behandelt.
 
-## Was mit allen Windows-Geräten nach der Registrierung geschieht
+## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>Was mit allen Windows-Geräten nach der Registrierung geschieht
 Wenn Sie Ihr Windows- oder Windows Phone-Gerät bei Intune registrieren, haben Sie folgende Möglichkeiten:
 
 -   Zugreifen auf das Netzwerk des Unternehmens und auf E-Mails sowie andere arbeitsbezogene Dateien
@@ -53,7 +53,7 @@ Wenn Sie Ihr Gerät registrieren, erteilen Sie Ihrem IT-Administrator eine Berec
 
 -   Verhindern, dass Sie Fotos von unternehmensrelevanten Daten machen
 
-## Was mit allen Windows-PCs nach der Registrierung geschieht
+## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>Was mit allen Windows-PCs nach der Registrierung geschieht
 
 -  Auf Ihrem Computer wird Software installiert, mit deren Hilfe Ihr IT-Administrator den Computer verwalten kann und mit der Sie Unternehmensressourcen wie Apps und Supportinformationen abrufen können. Ihr IT-Administrator kann diese Software möglicherweise automatisch aktualisieren.
 
@@ -63,7 +63,7 @@ Wenn Sie Ihr Gerät registrieren, erteilen Sie Ihrem IT-Administrator eine Berec
 
 -  Ihr IT-Administrator kann Apps und Updates auf dem Computer installieren.
 
-## Was nach der Registrierung des Geräts alle acht Stunden geschieht
+## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Was nach der Registrierung des Geräts alle acht Stunden geschieht
 Etwa alle acht Stunden führen registrierte Geräte folgende Aktionen aus:
 
 -   Herunterladen aller Richtlinien- oder App-Updates, die Ihr IT-Administrator zur Verfügung gestellt hat.
@@ -76,6 +76,6 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
