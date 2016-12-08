@@ -14,7 +14,7 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 
 
@@ -133,7 +133,7 @@ Wenn Sie eine Kennwortlängenrichtlinie für Geräte mit Windows RT bereitstelle
 |**Microsoft-Konto in Windows Mail-Anwendung optional machen**|Ja|Nein|Nein|Nein|Nein|
 |**Benutzerdefinierte E-Mail-Konten zulassen**|Nein|Nein|Nur Windows Phone 8.1|Nein|Nein|
 
-## <a name="application-settings-browser"></a>Anwendungseinstellungen – Browser
+## <a name="application-settings---browser"></a>Anwendungseinstellungen – Browser
 
 |Name der Einstellung|Windows 8.1 und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|iOS|Android und Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -154,7 +154,7 @@ Wenn Sie eine Kennwortlängenrichtlinie für Geräte mit Windows RT bereitstelle
 |**Zugriff auf das Menü „Unternehmensmodus“ zulassen**|Ja|Nein|Nein|Nein|Nein|
 |**Ort der Standortliste für Enterprise-Modus**|Ja|Nein|Nein|Nein|Nein|
 
-## <a name="application-settings-apps"></a>Anwendungseinstellungen – Apps
+## <a name="application-settings---apps"></a>Anwendungseinstellungen – Apps
 
 |Name der Einstellung|Windows 8.1 und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|iOS|Android und Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -167,14 +167,14 @@ Wenn Sie eine Kennwortlängenrichtlinie für Geräte mit Windows RT bereitstelle
 |**Nicht jugendfreie Inhalte im Medienstore zulassen**|Nein|Nein|Nein|Ja|Nein|
 |**App-Installation zulassen**|Nein|Nein|Nein|iOS 6 und höher|Nein|
 
-## <a name="application-settings-gaming"></a>Anwendungseinstellungen – Spiele
+## <a name="application-settings---gaming"></a>Anwendungseinstellungen – Spiele
 
 |Name der Einstellung|Windows 8.1 und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|iOS|Android und Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Game Center-Freunde zulassen**|Nein|Nein|Nein|Ja|Nein|
 |**Spielen für mehrere Spieler zulassen**|Nein|Nein|Nein|Ja|Nein|
 
-## <a name="device-capabilities-settings-hardware"></a>Einstellungen für Gerätefunktionen - Hardware
+## <a name="device-capabilities-settings---hardware"></a>Einstellungen für Gerätefunktionen - Hardware
 
 |Name der Einstellung|Windows 8.1 und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|iOS|Android und Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -189,7 +189,7 @@ Wenn Sie eine Kennwortlängenrichtlinie für Geräte mit Windows RT bereitstelle
 |**Bluetooth zulassen**|Nein|Nein|Nur Windows Phone 8.1|Nein|Ja (nur Samsung KNOX Standard)|
 |**Ausschalten zulassen**<br>Wenn diese Einstellung deaktiviert ist, funktioniert die Einstellung **Anzahl der zulässigen wiederholten Anmeldefehler, bevor die Gerätedaten zurückgesetzt werden** für Samsung KNOX Standard-Geräte nicht.|Nein|Nein|Nein|Nein|Ja (nur Samsung KNOX Standard)|
 
-## <a name="device-capabilities-settings-cellular"></a>Einstellungen für Gerätefunktionen - Mobiltelefon
+## <a name="device-capabilities-settings---cellular"></a>Einstellungen für Gerätefunktionen - Mobiltelefon
 
 |Name der Einstellung|Windows 8.1 und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|iOS|Android und Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -198,7 +198,7 @@ Wenn Sie eine Kennwortlängenrichtlinie für Geräte mit Windows RT bereitstelle
 |**Automatische Synchronisierung beim Roaming zulassen**|Nein|Nein|Nein|Ja|Nein|
 |**SMS- und MMS-Nachrichten zulassen**|Nein|Nein|Nein|Nein|Ja (nur Samsung KNOX Standard)|
 
-## <a name="device-capabilities-settings-features"></a>Einstellungen für Gerätefunktionen - Funktionen
+## <a name="device-capabilities-settings---features"></a>Einstellungen für Gerätefunktionen - Funktionen
 
 |Name der Einstellung|Windows 8.1 und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|iOS|Android und Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
