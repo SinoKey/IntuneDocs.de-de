@@ -2,8 +2,8 @@
 title: "Zurücksetzen Ihres Geräts über die Unternehmensportalwebsite | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 05f54088f3b18d90368e1b408b7012d28021abfc
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: c5791e70c35446fb11971321b6b7a4178ebdfdb5
 
 
 ---
 
 
-# Zurücksetzen Ihres Geräts über die Unternehmensportalwebsite
+# <a name="reset-your-device-from-the-company-portal-website"></a>Zurücksetzen Ihres Geräts über die Unternehmensportalwebsite
 
-Wenn Ihr Gerät verloren geht oder gestohlen wird, empfiehlt es sich, das Gerät auf die Werkseinstellungen zurückzusetzen, um nicht autorisierten Zugriff auf Ihre Daten zu verhindern. Sie können Ihr Gerät remote über die [Unternehmensportalwebsite](http://portal.manage.microsoft.com) zurücksetzen. Die Unternehmensportalwebsite ist eine Website, auf der Sie Computer und Geräte verwalten können, die Sie bei Intune registriert haben. Hier können Sie die meisten der Aufgaben ausführen, die auch über Ihre Unternehmensportal-App zur Verfügung stehen.
+Wenn Ihr Gerät verloren geht oder gestohlen wird, empfiehlt es sich, das Gerät auf die Werkseinstellungen zurückzusetzen, um nicht autorisierten Zugriff auf Ihre Daten zu verhindern. Sie können Ihr Gerät remote über die [Unternehmensportalwebsite](http://portal.manage.microsoft.com) zurücksetzen. Die Unternehmensportal-Website ist eine Webseite, die Sie verwenden können, um Computer und Geräte zu verwalten, die Sie in Intune registriert haben. Auf dieser Website können Sie die meisten der Aufgaben ausführen, die Sie auch mithilfe Ihrer Unternehmensportal-App ausführen können.
 
 Wenn Sie Ihr Gerät zurücksetzen, wird es im Unternehmensportal nicht mehr aufgeführt und auf die Werkseinstellungen zurückgesetzt.
 
@@ -46,6 +46,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -1,11 +1,11 @@
 ---
 title: Verwenden der Intune-Unternehmensportal-Website | Microsoft Intune
-description: "Beschreibt die Unternehmensportal-Website und enthält Links zu Schritten für Aufgaben, die Sie auf der Website ausführen können."
+description: "Beschreibt die Unternehmensportal-Website und enthält Links zu Schritten für Aufgaben, die Endbenutzer auf der Website ausführen können."
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d69ae68d704a7a4178c43cb1239b27d132221f5a
-ms.openlocfilehash: 1078832ee0296674ea96ee2827795e86148031d4
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: aaecaf82bc4635beefa84fed5702476c9e66a90e
 
 
 ---
 
-# Verwenden der Intune-Unternehmensportal-Website
-Die [Unternehmensportal-Website](http://portal.manage.microsoft.com) ist eine Webseite, die Sie verwenden können, um Computer und Geräte zu verwalten, die Sie in Intune registriert haben.
+# <a name="using-the-intune-company-portal-website"></a>Verwenden der Intune-Unternehmensportal-Website
+Die [Unternehmensportal-Website](http://portal.manage.microsoft.com) ist eine Webseite, die Endbenutzer verwenden können, um Computer und Geräte zu verwalten, die sie in Intune registriert haben.
 
-Folgende Aufgaben können Sie auf der Unternehmensportal-Website ausführen:
+Benutzer können folgende Aufgaben auf der Unternehmensportal-Website ausführen:
 
 -   [Umbenennen Ihres Geräts](rename-your-device-cpwebsite.md)
 
@@ -37,13 +37,13 @@ Folgende Aufgaben können Sie auf der Unternehmensportal-Website ausführen:
 
 -   [Manuelles Synchronisieren Ihres Geräts, um langsame App-Installationen zu beschleunigen](sync-your-device-manually-cpwebsite.md)
 
--   Suchen der Kontaktinformationen Ihres IT-Administrators, wenn Ihr IT-Administrator dies konfiguriert hat
+-   Suchen der Kontaktinformationen des IT-Administrators, wenn diese konfiguriert sind
 
--   Anzeigen von Einzelheiten zu Ihrem Gerät, einschließlich, ob es die Richtlinien Ihres Unternehmens bzw. Ihrer Bildungseinrichtung erfüllt
+-   Anzeigen von Einzelheiten zum Gerät, einschließlich Informationen dazu, ob es die Richtlinien Ihres Unternehmens bzw. Ihrer Bildungseinrichtung erfüllt
 
--   Remoteverwaltung Ihres PCs (funktioniert nur bei PCs)
+-   Remoteverwaltung des PCs (funktioniert nur bei PCs)
 
-Die meisten Aufgaben, die Sie mithilfe der **Unternehmensportal-App** ausführen können, die Sie auf Ihrem Gerät installieren, können Sie auch auf der **Unternehmensportal-Website** ausführen. Weitere Informationen zur Unternehmensportal-App, zum Registrieren eines Geräts bei Intune usw. erhalten Sie, indem Sie auf den Link für Ihren Gerätetyp tippen:
+Die Aufgaben, die Endbenutzer auf der **Unternehmensportal-Website** und in der auf dem Gerät installierten **Unternehmensportal-App** ausführen können, sind nahezu deckungsgleich. Auf den folgenden Seiten finden Sie Links zu allen Aufgaben, die Endbenutzer auf ihren Geräten durchführen können:
 
 - [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
 - [Verwenden Ihres iOS- oder Mac OS X-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
@@ -51,6 +51,6 @@ Die meisten Aufgaben, die Sie mithilfe der **Unternehmensportal-App** ausführen
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
