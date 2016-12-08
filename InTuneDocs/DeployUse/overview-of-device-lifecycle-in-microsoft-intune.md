@@ -24,7 +24,7 @@ ms.openlocfilehash: 71ef65adcc98d905302eb661f110b6037e4d16b0
 
 Alle Geräte, die Sie verwalten, verfügen über einen sogenannten *Lebenszyklus*. Intune hilft Ihnen bei der Verwaltung dieses Lebenszyklus – vom Registrieren über das Konfigurieren und Schützen bis zum Abkoppeln zum Abkoppeln des Gerätes, wenn es nicht mehr benötigt wird:
 
-![Der Gerätelebenszyklus](./media/device-lifecycle.png "the Intune device lifecycle")
+![Der Gerätelebenszyklus](./media/device-lifecycle.png "Der Intune Gerätelebenszyklus")
 
 ## Registrieren
 Die heutigen Strategien zur Verwaltung mobiler Geräte (Mobile Device Management, MDM) befassen sich mit einer Vielzahl von Mobiltelefonen, Tablets und PCs (iOS, Android, Windows und Mac OS X). Wenn Sie das Gerät verwalten müssen, was bei unternehmenseigenen Geräten im Allgemeinen der Fall ist, besteht der erste Schritt darin, die [Geräteregistrierung einzurichten](enroll-devices-in-microsoft-intune.md). Durch das Registrieren bei Intune (MDM) oder durch [Installieren der Intune-Clientsoftware](manage-windows-pcs-with-microsoft-intune.md) können Sie auch Windows-PCs verwalten.
