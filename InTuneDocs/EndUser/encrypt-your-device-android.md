@@ -2,10 +2,10 @@
 title: "Verschlüsseln Ihres Geräts | Microsoft Intune"
 description: "Beschreibt das Verschlüsseln eines Android-Geräts."
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 11/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
-ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
+ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
+ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
 
 
 ---
 
 
-# Registrieren Ihres Geräts
+# <a name="encrypt-your-device"></a>Registrieren Ihres Geräts
 
 Wenn Ihr Unternehmen oder Ihre Organisation Sie um die Verschlüsselung Ihres Android-Geräts bittet, bevor Sie auf Unternehmensdateien, E-Mails oder Daten zugreifen können, befolgen Sie die untenstehenden Schritte zum Verschlüsseln des Geräts. Sie werden möglicherweise aufgefordert, vor dem Verschlüsseln eine PIN oder ein Kennwort festzulegen, wenn dies vom IT-Administrator gefordert wird.
 
@@ -34,7 +34,7 @@ Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
 
 3.  Folgen Sie den Anweisungen auf dem Bildschirm. Während der Verschlüsselung startet Ihr Gerät möglicherweise mehrmals neu.
 
-### Vorgehensweise bei Problemen
+### <a name="what-to-do-if-you-have-issues"></a>Vorgehensweise bei Problemen
 **Problem**: Sie haben Ihr Gerät bereits verschlüsselt und stellen eines der folgenden Probleme fest:
 
 - Die Schaltfläche „Verschlüsselung“ ist deaktiviert.
@@ -57,10 +57,10 @@ Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
 
     5. Öffnen Sie die Unternehmensportal-App, wählen Sie das Gerät aus, und tippen Sie auf **Kompatibilität überprüfen**.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen), oder schreiben Sie dem Microsoft Android-Team unter „wintunedroidfbk@microsoft.com“.
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das [Microsoft Android-Team](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

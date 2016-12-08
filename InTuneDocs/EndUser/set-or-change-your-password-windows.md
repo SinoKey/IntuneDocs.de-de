@@ -1,11 +1,11 @@
 ---
-title: "Festlegen oder Ändern der Kennung | Microsoft Intune"
+title: "Festlegen oder Ändern des Kennworts | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,20 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 56f2cd4b92a383bc801cfb02ffde3d092f059d44
+ms.sourcegitcommit: 6a5bf59f3ef25df590625033fca4c114c3ace62f
+ms.openlocfilehash: 9a2f435220b9b2d4304f78e30cf152a4bb2af0c6
 
 
 ---
 
-# <a name="set-or-change-your-passcode"></a>Festlegen oder Ändern der Kennung
+# <a name="make-your-device-safer-with-the-right-password"></a>Machen Sie Ihr Gerät mit dem richtigen Kennwort sicherer
+
+Personen müssen täglich über ihre Windows-Geräte auf Unternehmensressourcen zugreifen, z. B. E-Mails und Dokumente. Ihre Organisation möchte sicherstellen, dass Ihr Gerät diesen Vorgang sicher ausführen kann. Eine Möglichkeit, den Zugriff von Ihrem Gerät auf diese Ressourcen sicher zu machen, besteht darin, die Verwendung eines Gerätekennworts zu verlangen.
 
 Wenn Ihr Windows-Gerät die Kennwortrichtlinie Ihres IT-Administrators nicht erfüllt, wird eine Meldung mit einer Kurzbeschreibung des Problems und einer Erläuterung angezeigt, was Sie tun müssen, damit Ihr Kennwort die Anforderungen erfüllt.
 
-Der IT-Administrator kann mehr als eine Kennwortanforderung festlegen. Das Kennwort muss ggf. eine bestimmte Anzahl von Zeichen und ggf. eine Kombination aus Zahlen und Buchstaben aufweisen. Da mehr als eine Anforderung festgelegt werden kann, wird in diesen Anweisungen nur das Festlegen oder Ändern des Kennworts erläutert. Auf alle möglichen Kombinationen von Anforderungen wird nicht eingegangen.
-
-Wenn Sie Probleme beim Einrichten eines Kennworts haben, das alle Kennwortanforderungen erfüllt, bitten Sie Ihren IT-Administrator um Hilfe.
+> [!Note]
+> Der IT-Administrator kann mehr als eine Kennwortanforderung festlegen. Das Kennwort muss ggf. eine bestimmte Anzahl von Zeichen und ggf. eine Kombination aus Zahlen und Buchstaben aufweisen. Da mehr als eine Anforderung festgelegt werden kann, wird in diesen Anweisungen nur das Festlegen oder Ändern des Kennworts erläutert. Auf alle möglichen Kombinationen von Anforderungen wird nicht eingegangen.
 
 ## <a name="to-change-your-password-on-windows-phone-81"></a>So ändern Sie Ihr Kennwort auf Windows Phone 8.1
 
@@ -46,6 +47,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 
