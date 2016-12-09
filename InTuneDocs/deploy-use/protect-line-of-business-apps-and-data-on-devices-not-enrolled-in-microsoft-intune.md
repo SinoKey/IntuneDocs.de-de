@@ -2,8 +2,8 @@
 title: "Schützen von Branchen-Apps auf nicht registrierten Geräten | Microsoft Intune"
 description: "In diesem Thema wird beschrieben, wie Sie Ihre benutzerdefinierte Reihe von Branchen-Anwendungen vorbereiten können, sodass Sie Verwaltungsrichtlinien für mobile Apps anwenden können, die helfen können, Datenverluste zu verhindern."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3bce8989944985c36a3d233fbb05d2f3f135b7e7
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: bc1efb1e0c62e6bd52658690db95901c70403d4d
 
 
 ---
@@ -29,9 +29,9 @@ In diesem Thema werden die erforderlichen Schritte zum Anwenden von MAM-Richtlin
 
 ##  <a name="step-1-prepare-the-app"></a>Schritt 1: Vorbereiten der App
 
-Bevor Sie MAM-Richtlinien auf eine App anwenden können, müssen Sie die App zuerst mit dem Microsoft Intune App Wrapping Tool für [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) und [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) umschließen, oder das [Intune App SDK](/../develop/intune-app-sdk) verwenden, um die Schutzfunktionen der Intune-App manuell zu integrieren.
+Bevor Sie MAM-Richtlinien auf eine App anwenden können, müssen Sie die App zuerst mit dem Microsoft Intune App Wrapping Tool für [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) und [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) umschließen, oder das [Intune App SDK](../develop/intune-app-sdk.md) verwenden, um die Schutzfunktionen der Intune-App manuell zu integrieren.
 
-Weitere Informationen zur Entscheidung zwischen dem App Wrapping Tool und dem SDK finden Sie unter [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune).
+Weitere Informationen zur Entscheidung zwischen dem App Wrapping Tool und dem SDK finden Sie unter [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 
 ## <a name="step-2-add-the-app"></a>Schritt 2: Hinzufügen der App
 
@@ -81,6 +81,6 @@ Sie können eine branchenspezifische App aus der App-Liste entfernen. Dadurch wi
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

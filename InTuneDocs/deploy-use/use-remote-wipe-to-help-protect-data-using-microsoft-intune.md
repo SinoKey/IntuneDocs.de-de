@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 Sie können Apps und Daten von Intune-verwalteten Geräten zurücksetzen, die nicht mehr benötigt werden, einem neuen Zweck zugeführt werden oder verloren gegangen sind. Zu diesem Zweck enthält Intune Funktionen zum vollständigen oder selektiven Zurücksetzen. Für private Geräte, die in Intune registriert sind, können die Benutzer über die Intune-Unternehmensportal-App einen Remotebefehl zum Zurücksetzen des Geräts erteilen.
 
   > [!NOTE]
-  > In diesem Thema wird nur das Zurücksetzen von Geräten behandelt, die von der Verwaltung mobiler Geräte für Intune verwaltet werden. Sie können auch das [Azure-Portal](https://portal.azure.com) zum [Entfernen von Unternehmensdaten aus Apps](wipe-managed-company-app-data-with-microsoft-intune.md) verwenden. Außerdem können Sie [mit der Intune-Clientsoftware verwaltete Computer abkoppeln](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+  > In diesem Thema wird nur das Zurücksetzen von Geräten behandelt, die von der Verwaltung mobiler Geräte für Intune verwaltet werden. Sie können auch das [Azure-Portal](https://portal.azure.com) zum [Entfernen von Unternehmensdaten aus Apps](wipe-managed-company-app-data-with-microsoft-intune.md) verwenden. Außerdem können Sie [mit der Intune-Clientsoftware verwaltete Computer abkoppeln](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## <a name="full-wipe"></a>Vollständiges Zurücksetzen
 
@@ -32,7 +32,7 @@ Sie können Apps und Daten von Intune-verwalteten Geräten zurücksetzen, die ni
 
 
 > [!Warning]
-> Nach dem Zurücksetzen ist der Zugriff auf Windows 10 RTM-Geräte (Geräte vor Windows 10, Version 1511) mit weniger als 4 GB RAM vielleicht nicht möglich. Um auf ein Windows 10-Gerät zuzugreifen, das nicht mehr reagiert hat, können Sie das Gerät von einem USB-Laufwerk aus starten.
+> Nach dem Zurücksetzen ist der Zugriff auf Windows 10 RTM-Geräte (Geräte vor Windows 10, Version 1511) mit weniger als 4 GB RAM vielleicht nicht möglich. Um auf ein Windows 10-Gerät zuzugreifen, das nicht mehr reagiert hat, können Sie das Gerät von einem USB-Laufwerk aus starten.
 
 ### <a name="remotely-wipe-a-device-from-the-intune-administrator-console"></a>Remotezurücksetzen eines Geräts über die Intune-Administratorkonsole
 
@@ -60,7 +60,7 @@ Sie können Apps und Daten von Intune-verwalteten Geräten zurücksetzen, die ni
 
     -   Klicken Sie zum Ausführen einer **selektiven Zurücksetzung**, bei der nur unternehmenseigene Apps und Daten entfernt werden, auf **Ja**.
 
-    -   Wählen Sie zum Ausführen einer **vollständigen Zurücksetzung**, bei der alle Apps und Daten gelöscht werden und das Gerät auf die werkseitigen Standardeinstellungen zurückgesetzt wird, die Option **Gerät vor dem Abkoppeln zurücksetzen**. Diese Aktion gilt für alle Plattformen außer Windows 8.1. **Daten, die durch ein vollständiges Zurücksetzen entfernt wurden, können nicht wiederhergestellt werden**.
+    -   Wählen Sie zum Ausführen einer **vollständigen Zurücksetzung**, bei der alle Apps und Daten gelöscht werden und das Gerät auf die werkseitigen Standardeinstellungen zurückgesetzt wird, die Option **Gerät vor dem Abkoppeln zurücksetzen**. Diese Aktion gilt für alle Plattformen außer Windows 8.1. **Daten, die durch ein vollständiges Zurücksetzen entfernt wurden, können nicht wiederhergestellt werden**.
 
 Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minuten, bis ein Befehl zum Zurücksetzen an alle Gerätetypen weitergegeben wurde.
 
@@ -165,6 +165,6 @@ Dieser Bericht zeigt auch, welcher Benutzer die Aktion ausgeführt hat.
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

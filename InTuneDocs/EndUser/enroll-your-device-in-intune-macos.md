@@ -15,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 162d176c5f272f5f19ba18cdd07fe815ac1bcce7
-ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 650e9b0700971e626e4062c312111ef60e74badc
 
 
 ---
@@ -46,7 +46,7 @@ Sie benötigen Zugriff auf Apps, Daten und Ressourcen Ihrer Organisation, um Ihr
  ![Dieses Mac OS-Gerät registrieren](./media/macOS_enroll_003_enroll_popup.png)
 
   > [!NOTE]
-  > Intune benötigt Zugriff auf Ihren Computer, um sicherzustellen, dass die Gerätesicherheit für den Zugriff auf Organisationsinformationen ausreicht. Finden Sie heraus, [was geschieht, wenn Sie Ihr Gerät bei Intune registrieren](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios).
+  > Intune benötigt Zugriff auf Ihren Computer, um sicherzustellen, dass die Gerätesicherheit für den Zugriff auf Organisationsinformationen ausreicht. Finden Sie heraus, [was geschieht, wenn Sie Ihr Gerät bei Intune registrieren](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md).
 
 6. Die __Systemeinstellungen__ werden geöffnet, und Sie erhalten die Meldung __„Verwaltungsprofil“ installieren?__ Klicken Sie auf __Installieren__, um den Vorgang fortzusetzen, oder zeigen Sie weitere Details an, indem Sie auf __Profil anzeigen__ klicken.
 
@@ -64,6 +64,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

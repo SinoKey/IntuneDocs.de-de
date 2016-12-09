@@ -13,8 +13,8 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
-ms.openlocfilehash: ce460c1b87b4759dcdeed061c2342b68dd491820
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 3141d4b2ad1a21e2ac5ba7b6cafb74f567d07f7a
 
 
 ---
@@ -33,11 +33,11 @@ Als Intune-Administrator können Sie die Registrierung und die Verwaltung für W
 ## <a name="company-portal-app-enrollment"></a>Registrierung der Unternehmensportal-App
 Sie können Benutzern erlauben, ihre Geräte mithilfe der Intune-Unternehmensportal-App zu installieren und zu registrieren. Wenn Sie DNS-CNAME-Ressourceneinträge erstellen, können Benutzer sich mit Intune verbinden und dort registrieren, ohne einen Servernamen eingeben zu müssen.
 
-1.  **Einrichten von Intune**<br>Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch [Festlegen der Autorität für die Verwaltung mobiler Geräte (mobile device management, MDM)](prerequisites-for-enrollment.md#set-mobile-device-management-authority) auf **Microsoft Intune** und durch anschließendes Einrichten von MDM vor.
+1.  **Einrichten von Intune**<br>Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch [Festlegen der Autorität für die Verwaltung mobiler Geräte (mobile device management, MDM)](prerequisites-for-enrollment.md#step-2-set-mdm-authority) auf **Microsoft Intune** und durch anschließendes Einrichten von MDM vor.
 
 2.  **Erstellen von CNAME-Einträgen** (optional)<br>Erstellen Sie **CNAME**-DNS-Ressourceneinträge für die Domäne des Unternehmens. Wenn der Name Ihrer Unternehmenswebsite beispielsweise „contoso.com“ lautet, erstellen Sie einen CNAME-Eintrag im DNS, der „EnterpriseEnrollment.contoso.com“ auf „enterpriseenrollment-s.manage.microsoft.com“ umleitet.
 
-    Obwohl die Erstellung von CNAME DNS-Einträgen optional ist, vereinfachen diese die Registrierung für Benutzer. Wenn kein CNAME-Eintrag für die Registrierung gefunden wurde, werden Benutzer dazu aufgefordert, manuell den MDM-Servernamen „https://manage.microsoft.com“ einzugeben. 
+    Obwohl die Erstellung von CNAME DNS-Einträgen optional ist, vereinfachen diese die Registrierung für Benutzer. Wenn kein CNAME-Eintrag für die Registrierung gefunden wurde, werden Benutzer dazu aufgefordert, manuell den MDM-Servernamen „https://manage.microsoft.com“ einzugeben.
 
     Wenn Sie aktuell über einen CNAME-Eintrag im DNS verfügen, der „EnterpriseEnrollment.contoso.com“ auf „manage.microsoft.com“ umleitet, empfehlen wir, ihn durch einen CNAME-Eintrag im DNS zu ersetzen, der „EnterpriseEnrollment.contoso.com“ auf „enterpriseenrollment-s.manage.microsoft.com“ umleitet. Wir empfehlen Ihnen diese Änderung, da der Endpunkt „manage.microsoft.com“ in einem zukünftigen Release nicht mehr verwendet werden kann.
 
@@ -64,7 +64,7 @@ Sie können Benutzern erlauben, ihre Geräte mithilfe der Intune-Unternehmenspor
 
 5.  **Benutzern erklären, wie sie ihre Geräte registrieren, um auf Unternehmensressourcen zugreifen zu können.**
 
-    Registrierungsanleitungen für Endbenutzer finden Sie unter [Registrieren Ihres Windows-Geräts bei Intune](../enduser/enroll-your-device-in-intune-windows.md). Sie können Benutzer auch auf den Artikel [Was kann Ihr IT-Administrator sehen, wenn Sie Ihr Gerät bei Intune registrieren?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) verweisen.
+    Registrierungsanleitungen für Endbenutzer finden Sie unter [Registrieren Ihres Windows-Geräts bei Intune](../enduser/enroll-your-device-in-intune-windows.md). Sie können Benutzer auch auf den Artikel [Was kann Ihr IT-Administrator sehen, wenn Sie Ihr Gerät bei Intune registrieren?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) verweisen.
 
     Informationen zu anderen Endbenutzeraufgaben finden Sie in den folgenden Artikeln:
     - [Informieren der Endbenutzer über den Einsatz von Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
@@ -74,6 +74,6 @@ Es sind keine weiteren Schritte erforderlich, es sei denn, Sie stellen das Unter
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

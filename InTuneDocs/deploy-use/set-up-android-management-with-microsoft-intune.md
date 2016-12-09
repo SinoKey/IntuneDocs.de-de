@@ -14,8 +14,8 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: 504b8334485217ab00d42080e1fab8728e7b62c4
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: f1e019d66858357987ee34e8a5144fb6a3511400
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 504b8334485217ab00d42080e1fab8728e7b62c4
 Als Intune-Administrator können Sie die Verwaltung von Android-Geräten, einschließlich Samsung KNOX Standard-Geräten, über das Unternehmensportal aktivieren. Benutzer können ihre Geräte anschließend über die Unternehmensportal-App registrieren, die in Google Play zur Verfügung steht.
 
 1.  **Einrichten von Intune**<br>
-    Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch [Festlegen der Autorität für die Verwaltung mobiler Geräte](prerequisites-for-enrollment.md#set-mobile-device-management-authority) auf **Microsoft Intune** und Einrichten von MDM vor.
+    Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch [Festlegen der Autorität für die Verwaltung mobiler Geräte](prerequisites-for-enrollment.md#step-2-set-mdm-authority) auf **Microsoft Intune** und Einrichten von MDM vor.
 
 2.  **Android-Registrierung aktiviert**<br>
     Um die Registrierung mobiler Android-Geräte zu ermöglichen, sind keine weiteren Konfigurationen in der Intune-Konsole erforderlich.
@@ -42,6 +42,6 @@ Als Intune-Administrator können Sie die Verwaltung von Android-Geräten, einsch
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 
