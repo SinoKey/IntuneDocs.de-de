@@ -2,7 +2,8 @@
 title: Problembehandlung beim bedingten Zugriff| Microsoft Intune
 description: "Was zu tun ist, wenn Ihre Benutzer durch bedingten Intune-Zugriff nicht auf Ressourcen zugreifen können."
 keywords: 
-author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
+ms.sourcegitcommit: 001bacbfc6a61a1c6b8f75c8e7ca55e311a1fa71
+ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
 
 
 ---
@@ -79,7 +80,7 @@ Der bedingte Zugriff ist für ein Gerät möglicherweise blockiert, ohne eine E-
 - Überprüfen Sie die Exchange Connector-Protokolle für die Sendemail-Aktivität, und suchen Sie nach Fehlern. Ein Beispiel für den zu suchenden Befehl ist „SendEmail from notification account to useremail“.
 - Bevor das Gerät vom Exchange Connector blockiert wird, sendet er die Aktivierungs-E-Mail. Wenn das Gerät offline ist, erhält es die Aktivierungs-E-Mail möglicherweise nicht. Überprüfen Sie, ob für den E-Mail-Client des Geräts der E-Mail-Abruf per Push (anstelle von „Abrufen“) aktiviert ist, da der Benutzer dadurch ebenfalls die E-Mail verpassen könnte. Wechseln Sie zu „Abrufen“ und überprüfen Sie, ob das Gerät die E-Mail empfängt.
 
-## <a name="noncompliant-device-not-blocked"></a>Nicht kompatibles Gerät wird nicht blockiert
+## <a name="non-compliant-device-not-blocked"></a>Nicht kompatibles Gerät wird nicht blockiert
 
 Wenn Sie ein Gerät ermitteln, das nicht kompatibel ist, aber weiterhin Zugriff hat, gehen Sie folgendermaßen vor.
 
@@ -158,6 +159,6 @@ Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, w
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

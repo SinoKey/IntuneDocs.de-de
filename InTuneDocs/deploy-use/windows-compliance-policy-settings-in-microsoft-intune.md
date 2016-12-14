@@ -2,8 +2,8 @@
 title: "Einstellungen für Kompatibilitätsrichtlinien für Windows Geräte | Microsoft Intune"
 description: "In diesem Thema werden die Regeln und Einstellungen beschrieben, die Sie für eine Kompatibilitätsrichtlinie für Windows-Geräte konfigurieren können."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
-ms.openlocfilehash: 8712d822eea2a619abeaf86f7fec9d0eb67c826f
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
 
 
 ---
@@ -28,7 +28,7 @@ Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine dieser Pl
 > [!div class="op_single_selector"]
 - [Einstellungen für Kompatibilitätsrichtlinien für iOS-Geräte](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Einstellungen für Kompatibilitätsrichtlinien für Android for Work](afw-compliance-policy-settings-in-microsoft-intune)
+- [Einstellungen für Kompatibilitätsrichtlinien für Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Einstellungen für Kompatibilitätsrichtlinien für Windows Phone-Geräte
 Die in diesem Abschnitt aufgeführten Einstellungen werden unter Windows Phone 8.1 und höher unterstützt.
@@ -151,6 +151,6 @@ Um die Betriebssystemversion für die Einstellungen **Minimal erforderliches Bet
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 
