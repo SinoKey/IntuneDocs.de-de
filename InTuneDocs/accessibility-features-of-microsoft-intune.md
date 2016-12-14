@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 1c4f44619f025b5a35a089c0970188b989b710e6
+ms.sourcegitcommit: b99c90bfafd65e87e258e1e0ac01691e83581659
+ms.openlocfilehash: 9915f85e6bc2dc20b061618fc8ccc6da8f3cec36
 
 
 ---
 
-# Barrierefreiheitsfunktionen von Windows Intune
+# <a name="accessibility-features-of-microsoft-intune"></a>Barrierefreiheitsfunktionen von Windows Intune
 Zusätzlich zu den Funktionen und Tools für die Barrierefreiheit in Microsoft Windows verbessern folgende Funktionen in [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] die Barrierefreiheit für Personen mit Behinderungen:
 
 -   Verwenden von Tastenkombinationen
@@ -28,7 +28,7 @@ Zusätzlich zu den Funktionen und Tools für die Barrierefreiheit in Microsoft W
 > [!NOTE]
 > [!INCLUDE[accessibility6](./includes/accessibility6_md.md)]
 
-## Verwenden von Tastenkombinationen
+## <a name="using-keyboard-shortcuts"></a>Verwenden von Tastenkombinationen
 
 |Zweck|Tastenkombination|
 |--------------|------------------------------|
@@ -44,11 +44,10 @@ Zusätzlich zu den Funktionen und Tools für die Barrierefreiheit in Microsoft W
 |Zur nächsten Anwendungsgruppe bewegen|NACH-OBEN-TASTE|
 |Aktionen für ein ausgewähltes Gerät anzeigen|Rechtspfeil|
 > [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] In Portalen kann mithilfe der Standardtastenkombinationen in Internet Explorer navigiert werden.
+> In [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]-Portalen kann mithilfe der Standardtastenkombinationen in Internet Explorer navigiert werden.
 
 
 
-
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

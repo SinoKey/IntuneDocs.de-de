@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
 
 
 ---
@@ -29,7 +29,7 @@ Nur die folgenden Versionen werden unterstützt. Wenn Ihr Gerät nicht aufgefüh
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-8-1)
+* [Windows Phone 8.1](#windows-phone-81)
 
 
 ## <a name="windows-10-mobile"></a>Windows 10 Mobile
@@ -54,7 +54,7 @@ So synchronisieren Sie Ihr Windows 10 Mobile-Gerät manuell, um eine langsame 
     Oben auf dem Bildschirm wird die Meldung „Ihr Konto wird synchronisiert“ angezeigt. Die Schaltfläche **Sync** wird ausgegraut, bis die Synchronisierung des Geräts abgeschlossen ist.
 
 ## <a name="windows-10-desktop"></a>Windows 10 Desktop
-Es existiert mehr als eine Version von Windows 10, daher gibt es zwei Vorgehensweisen. Um herauszufinden, welche Vorgehensweise Sie verwenden sollten, sehen Sie sich den Screenshot an, und wählen Sie dann die Vorgehensweise aus, die mit der Anzeige auf Ihrem Gerät übereinstimmt. 
+Es existiert mehr als eine Version von Windows 10, daher gibt es zwei Vorgehensweisen. Um herauszufinden, welche Vorgehensweise Sie verwenden sollten, sehen Sie sich den Screenshot an, und wählen Sie dann die Vorgehensweise aus, die mit der Anzeige auf Ihrem Gerät übereinstimmt.
 
 1. Wählen Sie die Schaltfläche **Start** und dann **Einstellungen** aus.
 
@@ -72,7 +72,7 @@ Es existiert mehr als eine Version von Windows 10, daher gibt es zwei Vorgehensw
 
     Wenn dieser Bildschirm angezeigt wird („Arbeitsplatzzugriff“), befolgen Sie die Schritte unter [Zu befolgende Schritte bei Anzeige von „Arbeitsplatzzugriff“](#steps-to-follow-if-you-see-your-account).
 
-    ![Auswählen des Arbeitsplatzzugriffs als den Kontotyp](./media/win10pc-sync-3-work-access.png) 
+    ![Auswählen des Arbeitsplatzzugriffs als den Kontotyp](./media/win10pc-sync-3-work-access.png)
 
 ### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Zu befolgende Schritte bei Anzeige von „Zugriff auf Geschäfts-, Schul- oder Unikonto“
 
@@ -80,9 +80,9 @@ Es existiert mehr als eine Version von Windows 10, daher gibt es zwei Vorgehensw
 
     ![Auswählen von „Zugriff auf Geschäfts-, Schul- oder Unikonto“](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. Wählen Sie Ihr Geschäfts-, Schul- oder Unikonto aus. Abhängig von der Einrichtung Ihres IT-Administrators werden Ihnen möglicherweise zwei Konten angezeigt, die ähnlich wie im nachstehenden Beispiel aussehen. Neben einem Konto wird eine Aktentasche angezeigt und neben dem anderen das Microsoft-Logo. 
+2. Wählen Sie Ihr Geschäfts-, Schul- oder Unikonto aus. Abhängig von der Einrichtung Ihres IT-Administrators werden Ihnen möglicherweise zwei Konten angezeigt, die ähnlich wie im nachstehenden Beispiel aussehen. Neben einem Konto wird eine Aktentasche angezeigt und neben dem anderen das Microsoft-Logo.
 
-    - Wenn Ihnen das Konto mit der Aktentasche angezeigt wird, wählen Sie es aus, und suchen Sie darunter nach der Schaltfläche **Info**. 
+    - Wenn Ihnen das Konto mit der Aktentasche angezeigt wird, wählen Sie es aus, und suchen Sie darunter nach der Schaltfläche **Info**.
     - Wenn Ihnen nur das Konto mit dem Microsoft-Logo angezeigt wird, wählen Sie es aus, und suchen Sie darunter nach der Schaltfläche **Info**.
 
     ![Auswählen Ihres Kontonamens neben der Aktentasche oder dem Microsoft-Logo](./media/win10pc-rs1-sync-info-button.png)
@@ -94,7 +94,7 @@ Es existiert mehr als eine Version von Windows 10, daher gibt es zwei Vorgehensw
 4. Wählen Sie die Schaltfläche **Synchronisieren** aus. Ihr Gerät wird mit Intune synchronisiert werden.
 
 ### <a name="steps-to-follow-if-you-see-work-access"></a>Zu befolgende Schritte bei Anzeige von „Arbeitsplatzzugriff“
-    
+
 1. Auf der Seite **Konten** wählen Sie **Arbeitsplatzzugriff** aus.
 
     ![Auswählen des Arbeitsplatzzugriffs als den Kontotyp](./media/win10pc-sync-3-work-access.png)
@@ -130,6 +130,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

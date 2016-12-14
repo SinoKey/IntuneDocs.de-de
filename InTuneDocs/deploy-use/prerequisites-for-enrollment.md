@@ -14,8 +14,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
 
 
 ---
@@ -40,8 +40,8 @@ Suchen Sie nach Intune mit Configuration Manager?
 ## <a name="step-1-enable-connections"></a>Schritt 1: Aktivieren von Verbindungen
 
 Bevor Sie die Registrierung mobiler Geräte aktivieren, müssen Sie die folgenden Aufgaben ausgeführt haben:
-- [Überprüfen der erforderlichen Netzwerk-URLs und -ports](../get-started/network-infrastructure-requirements-for-microsoft-intune)
-- [Hinzufügen und Überprüfen Ihres Domänennamens](../get-started/domain-names-for-microsoft-intune)
+- [Überprüfen der erforderlichen Netzwerk-URLs und -ports](../get-started/network-infrastructure-requirements-for-microsoft-intune.md)
+- [Hinzufügen und Überprüfen Ihres Domänennamens](../get-started/domain-names-for-microsoft-intune.md)
 
 ## <a name="step-2-set-mdm-authority"></a>Schritt 2: Festlegen der MDM-Autorität
 Die MDM-Autorität definiert den Verwaltungsdienst, der über die Berechtigung zum Verwalten einer Gruppe von Geräten verfügt. Die Optionen für die MDM-Autorität umfassen Intune selbst und Configuration Manager mit Intune. Wenn Sie Configuration Manager als Verwaltungsautorität festlegen, kann kein anderer Dienst für die Verwaltung mobiler Geräte verwendet werden.
@@ -111,7 +111,7 @@ Nach dem Speichern Ihrer Änderungen können Sie über die Links, die am unteren
 
 ## <a name="step-5-assign-user-licenses"></a>Schritt 5: Zuweisen von Benutzerlizenzen
 
-Verwenden Sie das **Office 365-Verwaltungsportal**, um cloudbasierte Benutzer manuell hinzuzufügen und um sowohl cloudbasierten Benutzerkonten als auch Konten, die aus Ihrem lokalen Active Directory mit Azure Active Directory (Azure AD) synchronisiert wurden, Lizenzen zuzuweisen. Sie können [lokale Benutzer mit Azure AD synchronisieren](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
+Verwenden Sie das **Office 365-Verwaltungsportal**, um cloudbasierte Benutzer manuell hinzuzufügen und um sowohl cloudbasierten Benutzerkonten als auch Konten, die aus Ihrem lokalen Active Directory mit Azure Active Directory (Azure AD) synchronisiert wurden, Lizenzen zuzuweisen. Sie können [lokale Benutzer mit Azure AD synchronisieren](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Melden Sie sich mit den Anmeldeinformationen Ihres Mandantenadministrators beim [Office 365-Verwaltungsportal](https://portal.office.com/Admin/Default.aspx) an.
 
@@ -136,7 +136,7 @@ Richten Sie Verwaltung für die folgenden Plattformen ein:
 - [Windows-PCs und -Laptops](set-up-windows-device-management-with-microsoft-intune.md)
 - [Windows 10 Mobile und Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
-Sie können auch die [Registrierung von unternehmenseigenen Geräten](manage-corporate-owned-devices) aktivieren.
+Sie können auch die [Registrierung von unternehmenseigenen Geräten](manage-corporate-owned-devices.md) aktivieren.
 
 ## <a name="step-7-next-steps"></a>Schritt 7: Nächste Schritte
 
@@ -149,6 +149,6 @@ Nachdem nun die Registrierung aktiviert ist, sollten Sie die Verwaltung einricht
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

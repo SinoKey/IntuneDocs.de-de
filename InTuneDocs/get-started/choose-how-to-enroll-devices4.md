@@ -14,8 +14,8 @@ ms.assetid: 0be369d5-d4ad-433a-8a81-c04b070d76e3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
-ms.openlocfilehash: e87b8a42be01b9d43515effce34f253e5a251214
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 1e36b98d678fb9ecd991eac12899948a0a1d00cf
 
 
 ---
@@ -25,18 +25,18 @@ Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmet
 
 ## <a name="what-operating-system-are-your-shared-devices-running"></a>**Welche Betriebssysteme werden auf den freigegebenen Geräten ausgeführt?**
 
-  > [!div class="button"]
-  [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
-  > [!div class="button"]
-  [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
-  > [!div class="button"]
-  [iOS >](choose-how-to-enroll-devices5.md)
+> [!div class="button"]
+[Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+> [!div class="button"]
+[Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+> [!div class="button"]
+[iOS >](choose-how-to-enroll-devices5.md)
 
-  > [!div class="button"]
-  [< Zurück](choose-how-to-enroll-devices3.md)
+> [!div class="button"]
+[< Zurück](choose-how-to-enroll-devices3.md)
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

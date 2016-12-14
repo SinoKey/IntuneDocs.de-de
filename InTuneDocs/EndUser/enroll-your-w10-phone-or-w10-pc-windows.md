@@ -1,6 +1,6 @@
 ---
-title: "Registrieren Ihres Windows 10-Geräts bei Intune | Microsoft Intune"
-description: "Beschreibt das Registrieren Ihres Windows 10-Geräts (mobil oder Desktop) bei Intune."
+title: "Registrieren Ihres Windows 10-Geräts bei Intune | Microsoft Intune"
+description: "Beschreibt das Registrieren Ihres Windows 10-Geräts (mobil oder Desktop) bei Intune."
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -14,8 +14,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5fa0e9db799c7b3a9619d63ebc1ba5ffe010b1fd
-ms.openlocfilehash: ff780fa8ead4b1e54fb6b8dd2da6246c77c76b38
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 3e6a4ca1e415eb56dd5792c8d9f6a9fe83f6d362
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: ff780fa8ead4b1e54fb6b8dd2da6246c77c76b38
 
 Wenn Sie Ihre Geräte bei Microsoft Intune registrieren, können Ihre Windows 10-Geräte Zugriff auf die sicheren Daten Ihres Unternehmens wie E-Mails, Dateien und andere Ressourcen erhalten. Dies gilt für Windows 10 Desktop- und Windows 10 Mobile-Geräte. Durch die Registrierung Ihrer Geräte können Sie diesen Zugriff sowohl für sich selbst als auch für Ihr Unternehmen sichern und Ihre Arbeitsdaten von Ihren persönlichen Daten getrennt halten.
 
-Möchten Sie mehr erfahren? Erfahren Sie, was geschieht, wenn Sie [Ihr Gerät bei Intune registrieren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows), und was das für die [Informationen auf Ihrem Gerät](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) bedeutet.
+Möchten Sie mehr erfahren? Erfahren Sie, was geschieht, wenn Sie [Ihr Gerät bei Intune registrieren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), und was das für die [Informationen auf Ihrem Gerät](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) bedeutet.
 
 ## <a name="windows-10-desktop-devices"></a>Windows 10 Desktop-Geräte
 1.  Öffnen Sie das __Startmenü__.
@@ -40,19 +40,19 @@ Möchten Sie mehr erfahren? Erfahren Sie, was geschieht, wenn Sie [Ihr Gerät be
 
  ![Windows 10 Desktop „PC-Infos“](../media/settings_about_pc.png)
 
-3.  Wenn Ihre Version __1607__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-access-work-or-school) fort. Wenn Ihre Version __1511__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-your-account) fort.
+3.  Wenn Ihre Version __1607__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-access-work-or-school.md) fort. Wenn Ihre Version __1511__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-your-account.md) fort.
 
 ## <a name="windows-10-mobile-devices"></a>Windows 10 Mobile-Geräte
 
 1.  Navigieren Sie unter __Start__ zur Liste __Alle Apps__, und wählen Sie anschließend die App __Einstellungen__ aus.
 2.  Tippen Sie auf __System__, anschließend auf __About__ (Informationen).
 3.  Unter __Geräteinformationen__, tippen Sie auf __Details__. Sie sehen eine Liste mit Informationen zu Ihrem Gerät. Suchen Sie in der Liste nach der __Version__.
-4.  Wenn Ihre Version __1607__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-access-work-or-school) fort. Wenn Ihre Version __1511__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-your-account) fort.
+4.  Wenn Ihre Version __1607__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-access-work-or-school.md) fort. Wenn Ihre Version __1511__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-your-account.md) fort.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

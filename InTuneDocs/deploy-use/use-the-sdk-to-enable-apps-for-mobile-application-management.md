@@ -2,8 +2,8 @@
 title: "Verwenden des SDK zum Aktivieren von Apps für MAM | Microsoft Intune"
 description: "Dieses Thema bietet Ihnen eine schnelle Übersicht der Gründe für die Verwendung des Intune App SDKs."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8c2d3f7fd7478130184b2c66beca8d6106e6dd87
-ms.openlocfilehash: e6d4036565dc0b2a88e282b9bda060971ae0c67e
+ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
+ms.openlocfilehash: 0a0a9271d32531e4727c7aa20f456f7d3ba53d13
 
 
 ---
@@ -40,6 +40,6 @@ Eine Übersicht über das SDK finden Sie auf der Seite [Übersicht](/intune/deve
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

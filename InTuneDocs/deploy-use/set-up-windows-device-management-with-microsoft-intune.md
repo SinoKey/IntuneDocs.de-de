@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 13959c1456a0b160ce1fdcb76888d67cd13a5991
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 7c518c176e315cbf005b2fceb8d74de09bdcfa98
 
 
 ---
@@ -32,7 +32,7 @@ Als Intune-Administrator können Sie die Registrierung und die Verwaltung für W
 Sie können Benutzern erlauben, ihre Geräte mithilfe der Intune-Unternehmensportal-App zu installieren und zu registrieren. Wenn Sie DNS-CNAME-Ressourceneinträge erstellen, können Benutzer sich mit Intune verbinden und dort registrieren, ohne einen Servernamen eingeben zu müssen.
 
 1. **Einrichten von Intune**<br>
-Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch [Festlegen der Autorität für die Verwaltung mobiler Geräte (mobile device management, MDM)](prerequisites-for-enrollment.md#set-mobile-device-management-authority) auf **Microsoft Intune** und durch anschließendes Einrichten von MDM vor.
+Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch [Festlegen der Autorität für die Verwaltung mobiler Geräte (mobile device management, MDM)](prerequisites-for-enrollment.md#step-2-set-mdm-authority) auf **Microsoft Intune** und durch anschließendes Einrichten von MDM vor.
 
 2. **Erstellen von CNAME-Einträgen** (optional)<br>Erstellen Sie **CNAME**-DNS-Ressourceneinträge für die Domäne des Unternehmens. Wenn der Name Ihrer Unternehmenswebsite beispielsweise „contoso.com“ lautet, erstellen Sie einen CNAME in DNS, der „EnterpriseEnrollment.contoso.com“ an „enterpriseenrollment.manage.microsoft.com“ umleitet.
 
@@ -72,6 +72,6 @@ Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch 
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

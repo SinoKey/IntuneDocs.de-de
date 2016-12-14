@@ -14,8 +14,8 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
+ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
+ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 
 
 ---
@@ -55,7 +55,7 @@ Geräte, die einem neuen Verwendungszweck zugewiesen werden sollen, können Sie 
 8.  Wählen Sie die gewünschten Geräte und anschließend **Gerät löschen** aus. Das Gerät wird bei der nächsten Synchronisierung mit Active Directory gelöscht. Dies geschieht in der Regel innerhalb von vier Stunden. Nach der Synchronisierung wird das Gerät aus der Verwaltung entfernt. Dadurch wird dieses Gerät beim Gerätegrenzwert für diesen Benutzer nicht mehr berücksichtigt.
 
 ## <a name="retire-managed-computers"></a>Abkoppeln von verwalteten Computern
-Computer, die mit Intune-Clientsoftware verwaltet werden, können in der Intune-Verwaltungskonsole von der Verwaltung entfernt werden. Dadurch wird gleichzeitig die Clientsoftware deinstalliert, und die Intune-Richtlinien werden vom Computer gelöscht. Hier erhalten Sie Informationen zum [Abkoppeln von mit der Intune-Clientsoftware verwalteten Computer](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+Computer, die mit Intune-Clientsoftware verwaltet werden, können in der Intune-Verwaltungskonsole von der Verwaltung entfernt werden. Dadurch wird gleichzeitig die Clientsoftware deinstalliert, und die Intune-Richtlinien werden vom Computer gelöscht. Hier erhalten Sie Informationen zum [Abkoppeln von mit der Intune-Clientsoftware verwalteten Computer](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## <a name="block-access-a-device"></a>Blockieren des Zugriffs auf ein Gerät
 Wenn ein Gerät verloren gegangen ist oder wenn ein Gerät außer Kraft gesetzt werden muss, weil ein Mitarbeiter Ihr Unternehmen verlassen hat, ohne firmeneigene Hardware zurückzugeben, können Sie für das Gerät auch [die Kennung zurücksetzen und es remote sperren](use-remote-lock-and-passcode-reset-in-microsoft-intune.md). Dadurch wird verhindert, dass Firmeninformationen missbräuchlich verwendet werden, obwohl Sie das Gerät möglicherweise als Verlust abschreiben müssen.
@@ -70,6 +70,6 @@ Manchmal ist es das Gerät selbst, das das Ende seines Lebenszyklus erreicht hat
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 
