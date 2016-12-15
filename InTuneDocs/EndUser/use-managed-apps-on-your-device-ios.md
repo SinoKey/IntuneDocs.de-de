@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: c051fe1128f2156943eac7eb4d4fa5983ed90771
+ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
+ms.openlocfilehash: 340c160b2741856c91e7136fa60318c83b1ea8bb
 
 
 ---
@@ -35,7 +35,7 @@ Wenn Sie in einer verwalteten App auf Unternehmensdaten zugreifen, wird eine Mel
 ### <a name="how-do-i-get-managed-apps"></a>Wie erhalte ich verwaltete Apps?
 Es gibt verschiedene Möglichkeiten, verwaltete Apps zu erhalten:
 
--   Wenn Ihr Gerät bei Microsoft Intune registriert ist, installieren Sie die App entweder über die Unternehmensportal-App oder -Website, oder Ihr IT-Administrator installiert sie auf Ihrem Gerät. Informationen zum Registrieren finden Sie unter [Registrieren Ihres iOS-Geräts bei Intune](enroll-your-device-in-intune-ios.md) oder [Registrieren Ihres Mac OS X-Geräts bei Intune](enroll-your-device-in-intune-mac-os-x.md).
+-   Wenn Ihr Gerät bei Microsoft Intune registriert ist, installieren Sie die App entweder über die Unternehmensportal-App oder -Website, oder Ihr IT-Administrator installiert sie auf Ihrem Gerät. Informationen zum Registrieren finden Sie unter [Registrieren Ihres iOS-Geräts bei Intune](enroll-your-device-in-intune-ios.md) oder [Registrieren Ihres macOS-Geräts bei Intune](enroll-your-device-in-intune-macos.md).
 
 -   Sie installieren eine App aus dem App Store und melden sich dann mit Ihrem Unternehmensbenutzerkonto an, das von Intune verwaltet wird.
 
@@ -65,6 +65,6 @@ Wenden Sie sich an Ihren IT-Administrator, um weitere Informationen zu den verwa
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

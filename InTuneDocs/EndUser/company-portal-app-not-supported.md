@@ -1,11 +1,11 @@
 ---
-title: "Unternehmensportal-App wird nicht unterstützt | Microsoft Intune"
+title: Aktualisieren Ihrer Unternehmensportal-App | Microsoft Intune
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: a1811f14b4ee6d9fbc58d9998eba78c974235cb2
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: b3e98f32901512b9164c2e28c38e3bad751f7e8a
 
 
 ---
 
-# <a name="company-portal-app-not-supported"></a>Unternehmensportal-App wird nicht unterstützt
-Diese Version des Unternehmensportals kann nicht mehr verwendet werden. Installieren Sie die aktuelle **Unternehmensportal**-App aus dem Windows Store, um den Vorgang fortzusetzen.
-
+# <a name="your-company-portal-app-is-out-of-date"></a>Ihre Unternehmensportal-App ist veraltet
+Sie müssen die Unternehmensportal-App aktualisieren, um weiterhin auf Komponenten wie Unternehmens-E-Mail, Kontakte und Dokumente zugreifen zu können. Um dieses Problem zu beheben, öffnen Sie den **Windows Store**, und installieren Sie die neue Version der **Unternehmensportal**-App.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 
