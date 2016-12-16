@@ -2,8 +2,8 @@
 title: "Überprüfen Ihres MAM-Setups | Microsoft Docs"
 description: "In diesem Thema wird beschrieben, wie Sie testen und überprüfen können, ob Ihre MAM-Richtlinie ordnungsgemäß eingerichtet wurde und wie erwartet funktioniert."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angerobe
 ms.date: 08/16/2016
 ms.topic: article
