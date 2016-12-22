@@ -9,14 +9,14 @@ keywords: "Intune-Dokumentation, App-Verwaltung, Geräteverwaltung, MDM-Dokument
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 12/7/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: f9ab2200b1d357d6a805e3e5cd37f3c4391e3571
-ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
+ms.sourcegitcommit: b921a15ca5fd24d9ddbf54789c42a0740b72d7f6
+ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
 
 
 ---
@@ -24,8 +24,8 @@ ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
 <article id="main">
     <section id="hero-content">
       <h1>Intune-Dokumentation</h1>
-      <h2>Erfahren Sie, wie Sie Microsoft Intune bereitstellen und verwalten: unseren Verwaltungsdienst für mobile Geräte und Anwendungen.</h2>
-      <h3>Möchten Sie Intune mit Configuration Manager verwalten? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">Erfahren Sie mehr über die hybride Verwaltung mobiler Geräte&rarr;</a></h3>
+      <h2>Verwaltung von mobilen Gerät, Apps und PCs aus der Cloud </h2>
+      <h3>Möchten Sie Intune mit Configuration Manager verwalten? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management" target="_blank">Erfahren Sie mehr über die hybride Verwaltung mobiler Geräte&rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Wichtige Inhalte</h2>
@@ -33,7 +33,7 @@ ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
         <ul class="column column-half">
           <li><a href="http://fasttrack.microsoft.com/ems">Mehr als 150 Lizenzen? Nutzen Sie Ihre FastTrack-Vorteile</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Gängige Arten der Verwendung von Intune</a></li>
-          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Schützen von App-Daten</a></li>
+          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune in der Vorschau von des Azure-Portals</a></li>
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">Schützen des Zugriffs auf Unternehmensressourcen</a></li>
@@ -68,7 +68,7 @@ ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
                 <li class="column-third">
                   <a href="/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
                     <h3>Intune-Evaluierungsanleitung</h3>
-                    <p>Im Evaluierungsleitfaden sind die Schritte zum Einrichten Ihrer Testversion mit bis zu 100 Benutzern und Geräten beschrieben.</p>
+                    <p>Im Evaluierungsleitfaden sind die Schritte zum Einrichten Ihrer Testversion mit bis zu 100 Benutzern und Geräten beschrieben.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -155,8 +155,8 @@ ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste</h3>
-                    <p>Beschränken Sie den Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens mithilfe des bedingten Zugriffs in Intune.</p>
+                    <h3>Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste</h3>
+                    <p>Beschränken Sie den Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens mithilfe des bedingten Zugriffs in Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -285,6 +285,6 @@ ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO1-->
 
 

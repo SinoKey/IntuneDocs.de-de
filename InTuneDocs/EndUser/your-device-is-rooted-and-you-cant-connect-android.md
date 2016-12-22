@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,28 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 5b7586c57f3f2825edfa9ae45a3fdec9af0fe956
+ms.sourcegitcommit: 06da6823465521b5784188123aab3544fef9fc2e
+ms.openlocfilehash: 4c58060bad8b269394e577df5bb3ccd50b8fa97b
 
 
 ---
 
+# <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Von Ihrem Android-Gerät wurden die Nutzungsbeschränkungen entfernt, daher können Sie keine Verbindung herstellen
 
-# <a name="your-android-device-is-rooted-and-you-cant-connect"></a>Von Ihrem Android-Gerät wurden die Nutzungsbeschränkungen entfernt, und Sie können keine Verbindung herstellen
+Sie wurden hierher weitergeleitet, da Ihnen in einer Meldung mitgeteilt wurde, dass bei Ihrem Gerät die _Nutzungsbeschränkungen entfernt_ wurden.
 
-Wenn Nutzungsbeschränkungen von Ihrem Android-Gerät entfernt wurden, bedeutet dies, dass auf Ihrem Gerät bestimmte Funktionen aktiviert wurden, die Unternehmensressourcen und die Sicherheit gefährden könnten. Wenn diese Meldung angezeigt wird, können Sie nicht auf Unternehmensressourcen zugreifen, bis das Problem gelöst ist.
+Wenn bei einem Android-Gerät die Nutzungsbeschränkungen entfernt wurden, bedeutet dies, dass ein Teil der Software des Geräts geändert wurde, um Funktionen zu aktivieren, die andernfalls nicht verfügbar wären. Diese Änderungen gefährden häufig den sicheren Zugriff auf Unternehmensressourcen wie E-Mails und Dokumente. Geräten mit entfernten Nutzungsbeschränkungen wird der Zugriff auf diese Ressourcen daher erst dann wieder erlaubt, wenn das Problem behoben ist.  
 
-Wenn Sie glauben, dass Sie die Nutzungsbeschränkungen nicht absichtlich von Ihrem Gerät entfernt haben, prüfen Sie sich diese anderen Gründe, aus denen die Nutzungsbeschränkungen von Ihrem Gerät entfernt worden sein können:
+Es gibt ein paar gängige Methoden, wie die Nutzungsbeschränkungen möglicherweise von Ihrem Gerät entfernt wurden:
 
-- Sie könnten eine App auf Ihrem Gerät installiert haben, die die Rooterkennungssoftware als Sicherheitsrisiko einstuft. Wenn diese Meldung nach der Installation einer App angezeigt wird, könnten Sie versuchen, die App zu deinstallieren, um festzustellen, ob dies hilft.
+- Sie könnten eine App auf Ihrem Gerät installiert haben, die die Rooterkennungssoftware als Sicherheitsrisiko einstuft. Wenn diese Meldung unmittelbar nach der Installation einer App angezeigt wird, deinstallieren Sie die App wieder.
 
-- Der Hersteller des Geräts hat Software auf Ihrem Gerät installiert, die die Rooterkennungssoftware als Sicherheitsrisiko einstuft. Sie müssen Ihren IT-Administrator um Unterstützung bitten. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+- Der Hersteller des Geräts hat Software auf Ihrem Gerät installiert, die die Rooterkennungssoftware als Sicherheitsrisiko einstuft. Bitten Sie in diesem Fall Ihren IT-Administrator um Unterstützung. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+
+Wenn Sie selbst die Nutzungsbeschränkungen von Ihrem Gerät entfernt haben, müssen Sie den Vorgang rückgängig machen und das Gerät wieder in den nicht manipulierten Zustand zurückversetzen.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

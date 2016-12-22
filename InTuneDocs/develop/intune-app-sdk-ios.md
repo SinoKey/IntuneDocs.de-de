@@ -1,21 +1,21 @@
 ---
-title: "Entwicklerhandbuch zum Microsoft Intune App SDK für iOS | Microsoft Intune"
+title: "Entwicklerhandbuch zum Microsoft Intune App SDK für iOS | Microsoft Docs"
 description: 
 keywords: 
-author: Msmbaldwin
+author: mtillman
 manager: angrobe
-ms.author: oydang
-ms.date: 09/08/2016
+ms.author: mtillman
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01b927178ad5fb1019781863e243133861887148
-ms.openlocfilehash: eb14be40a94513a21dbd24a62e42afb7a3e57381
+ms.sourcegitcommit: b55147e2be338bd46661695134fd0f0de105bb72
+ms.openlocfilehash: b8a723fce088c1d61bddb5f2479da59a4b5c3771
 
 
 ---
@@ -32,6 +32,8 @@ Mit dem Microsoft Intune App SDK für iOS können Sie die Intune-App-Schutzricht
 * Sie benötigen einen Mac OS-Computer, der mit OS X 10.8.5 oder höher läuft und der die Xcode-Toolsetversion 5 oder höher installiert hat.
 
 * Lesen Sie [die Lizenzbedingungen für das Intune App SDK für iOS (in englischer Sprache)](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Drucken Sie die Lizenzbedingungen aus, und heben Sie eine Kopie für Ihre Unterlagen auf. Indem Sie das Intune App SDK für iOS herunterladen und verwenden, stimmen Sie diesen Lizenzbestimmungen zu.  Wenn Sie sie nicht akzeptieren, dürfen Sie die Software nicht verwenden.
+
+* Laden Sie die Dateien für das Intune App SDK für iOS von [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) herunter.
 
 ## <a name="whats-in-the-sdk"></a>Inhalt des SDK
 
@@ -322,9 +324,9 @@ Bei einem Fehler bei der Registrierung sollte die App den erneuten Aufruf dieser
 
 Nachdem diese API aufgerufen wurde, kann die App anschließend normal funktionieren. Wenn die Registrierung erfolgreich ist, benachrichtigt das SDK den Benutzer, dass ein Neustart der App erforderlich ist.
 
-## <a name="debug-information"></a>Informationen zum Debuggen
+## <a name="status-result-and-debug-notifications"></a>Status-, Ergebnis- und Debugbenachrichtigungen
 
-Die App kann Debugbenachrichtigungen zu den folgenden Anforderungen an den Intune MAM-Dienst empfangen:
+Die App kann Status-, Ergebnis- und Debugbenachrichtigungen zu den folgenden Anforderungen an den Intune MAM-Dienst empfangen:
 
  - Registrierungsanforderungen
  - Anforderungen zur Richtlinienaktualisierung
@@ -365,7 +367,7 @@ Diese Stellvertretermethoden geben ein `IntuneMAMEnrollmentStatus`-Objekt zurüc
 
 Dieses Objekt ist in „Headers/IntuneMAMEnrollmentStatus.h“ zusammen mit den spezifischen Statuscodes definiert, die zurückgegeben werden können.
 
-Es ist wichtig zu beachten, dass die Geschäftslogik keiner App auf diesen Benachrichtigungen basieren sollte. Die zugrundeliegende Idee ist, dass die App diese Informationen zu Debug- und Überwachungszwecken an einen Telemetriedienst senden kann.
+
 
 
 ## <a name="sample-code"></a>Beispielcode
@@ -637,7 +639,7 @@ Ja, der IT-Administrator kann einen Befehl zum selektiven Zurücksetzen an die A
 
 ## <a name="submit-your-app-to-the-app-store"></a>Übermitteln Ihrer App an den App Store
 
-Sowohl die statische Bibliothek als auf Frameworkbuilds des Intune App SDK sind universelle Binärdateien. Das bedeutet, dass sie Code für alle Geräte- und Simulatorarchitekturen enthalten. Apple lehnt für den App Store eingereichte Apps ab, wenn sie Simulatorcode enthalten. Beim Kompilieren mit der statischen Bibliothek für nur für Geräte bestimmte Builds entfernt der Linker den Simulatorcode automatisch.
+Sowohl die statische Bibliothek als auf Frameworkbuilds des Intune App SDK sind universelle Binärdateien. Das bedeutet, dass sie Code für alle Geräte- und Simulatorarchitekturen enthalten. Apple lehnt für den App Store eingereichte Apps ab, wenn sie Simulatorcode enthalten. Beim Kompilieren mit der statischen Bibliothek für nur für Geräte bestimmte Builds entfernt der Linker den Simulatorcode automatisch. Gehen Sie folgendermaßen vor, um sicherzustellen, dass der gesamte Simulatorcode entfernt wird, bevor Sie Ihre App in den App Store hochladen.
 
 1. Stellen Sie sicher, dass sich `IntuneMAM.framework` auf dem Desktop befindet.
 
@@ -654,6 +656,6 @@ Sowohl die statische Bibliothek als auf Frameworkbuilds des Intune App SDK sind 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

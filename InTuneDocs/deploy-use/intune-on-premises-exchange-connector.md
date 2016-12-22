@@ -2,8 +2,8 @@
 title: "Exchange Connector für lokales EAS | Microsoft Intune"
 description: "Verwenden Sie den Connector, um die Kommunikation zwischen der Intune-Verwaltungskonsole und der lokalen Exchange Server-Instanz für Exchange ActiveSync-MDM zu ermöglichen."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 16f8520e6f302c1896039aa5a11b0002e87959c9
+ms.sourcegitcommit: d50a5751a5afd987196336e9443dc5a429a283fd
+ms.openlocfilehash: 58c5ab6b506695fb5b0f7556dc1deac39580f59b
 
 
 ---
@@ -32,7 +32,7 @@ In der folgenden Tabelle finden Sie die Anforderungen an den Computer, auf dem S
 |---------------|--------------------|
 |Betriebssysteme|Intune unterstützt den lokalen Exchange Connector auf Computern, auf denen eine beliebige Edition von Windows Server 2008 SP2 (64 Bit), Windows Server 2008 R2, Windows Server 2012 oder Windows Server 2012 R2 ausgeführt wird.<br /><br />Auf Server Core-Installationen wird der Connector nicht unterstützt.|
 |Microsoft Exchange|Für lokale Connectors ist Microsoft Exchange 2010 SP1 oder höher oder die Exchange Online Dedicated-Legacyumgebung erforderlich. Wenn Sie herausfinden möchten, ob es sich bei Ihrer Exchange Online Dedicated-Umgebung um die **neue** oder die **ältere** Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer.|
-|Autorität für die Verwaltung mobiler Geräte| [Festlegen von Intune als Autorität für die Verwaltung mobiler Geräte](prerequisites-for-enrollment.md#set-mobile-device-management-authority).|
+|Autorität für die Verwaltung mobiler Geräte| [Festlegen von Intune als Autorität für die Verwaltung mobiler Geräte](prerequisites-for-enrollment.md#step-2-set-mdm-authority).|
 |Hardware|Der Computer, auf dem Sie den Connector installieren, erfordert eine CPU mit 1,6 GHz und 2 GB RAM sowie mindestens 10 GB freien Speicherplatz.|
 |Active Directory-Synchronisierung|Bevor Sie einen Connector für die Verbindung von Intune mit Exchange Server verwenden können, müssen Sie die [Active Directory-Synchronisierung](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) einrichten, damit Ihre lokalen Benutzer und Sicherheitsgruppen mit Ihrer Instanz von Azure Active Directory synchronisiert werden.|
 |Zusätzliche Software|Eine vollständige Installation von Microsoft .NET Framework 4.5 und Windows PowerShell 2.0 muss auf dem Computer installiert sein, auf dem der Connector gehostet wird.|
@@ -91,7 +91,7 @@ Führen Sie die folgenden Schritte aus, um den lokalen Exchange Connector für I
 
     1. Öffnen Sie die Outlook Web-App für Office 365.
 
-    2. Wählen Sie oben links das **?**-Symbol  und anschließend **Info** aus.
+    2. Wählen Sie das **?**-Symbol  oben links und anschließend **Info** aus.
 
     3. Suchen Sie den Wert **Externer POP-Server**.
 
@@ -132,6 +132,6 @@ Sie können auch die Uhrzeit und das Datum des letzten erfolgreichen Synchronisa
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
