@@ -1,5 +1,5 @@
 ---
-title: "Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder Mac OS X-Gerät bei Intune registrieren? | Microsoft Intune"
+title: "Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder macOS-Gerät bei Intune registrieren? | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 737effbcd9d7e70186d874c3aefd8afaab05fca8
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 4d169a5d9f27037378df6f2e3b1997ebbc9e8ab7
 
 
 ---
 
 
-# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-mac-os-x-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder Mac OS X-Gerät bei Intune registrieren?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder macOS-Gerät bei Intune registrieren?
 
-Wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder Mac OS X-Gerät bei Intune registrieren, können Sie folgende Aufgaben mit der Unternehmensportal-App ausführen:
+Wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder macOS-Gerät bei Intune registrieren, können Sie folgende Aufgaben mit der Unternehmensportal-App ausführen:
 
 -   Zugreifen auf das Netzwerk des Unternehmens und auf E-Mails sowie andere arbeitsbezogene Dateien
 
@@ -96,6 +96,6 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

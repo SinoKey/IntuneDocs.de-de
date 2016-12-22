@@ -1,21 +1,21 @@
 ---
-title: Microsoft Intune App SDK-Xamarin-Komponente | Microsoft Intune
+title: Microsoft Intune App SDK-Xamarin-Komponente | Microsoft Docs
 description: 
 keywords: sdk, Xamarin, intune
-author: oydang
-manager: karthikaraman
-ms.author: oydang
+author: mtillman
+manager: angrobe
+ms.author: mtillman
 ms.date: 11/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
-ms.reviewer: karthikaraman
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af7df3fcf50c3508d495522341bb287c638f40a3
-ms.openlocfilehash: 2ea1763881a7d10ae8bc21c98754d2767b2fc954
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
 
 
 ---
@@ -83,7 +83,7 @@ Xamarin-Apps, die mit Intune App SDK-Xamarin-Komponenten erstellt wurden, könne
 
       ```
 
-2.  Nachdem die Komponente hinzugefügt und gestartet wurde, können die allgemeinen Schritte ausgeführt werden, die zum Einrichten der App-SDK in der mobilen iOS-Anwendung notwendig sind. Die kompletten Unterlagen zur Aktivierung nativer iOS-Apps finden Sie unter [Microsoft Intune App SDK für iOS – Entwicklerhandbuch](intune-app-sdk-ios).
+2.  Nachdem die Komponente hinzugefügt und gestartet wurde, können die allgemeinen Schritte ausgeführt werden, die zum Einrichten der App-SDK in der mobilen iOS-Anwendung notwendig sind. Die kompletten Unterlagen zur Aktivierung nativer iOS-Apps finden Sie unter [Microsoft Intune App SDK für iOS – Entwicklerhandbuch](intune-app-sdk-ios.md).
 3. **Wichtig**: Es gibt verschiedene Modifikationen, die spezifisch für Xamarin-basierte iOS-Apps sind. Wenn beispielsweise Schlüsselbundgruppen aktiviert werden, muss folgendes hinzugefügt werden, um die Xamarin-Beispiel-App, die von uns in die Komponente integriert wurde, zu integrieren. Nachstehend finden Sie das Beispiel einer Gruppe, die Sie in Ihren Schlüsselbund-Zugriffsgruppen benötigen:
 
       ```xml
@@ -102,10 +102,10 @@ Xamarin-Apps, die mit Intune App SDK-Xamarin-Komponenten erstellt wurden, könne
       </plist>
       ```
 
-Sie haben die notwendigen Schritte ausgeführt um die Komponente in Ihrer Xamarin-basierten iOS-App einzurichten. Wenn Sie XCode zur Projekterstellung verwenden, können Sie `Intune App SDK Settings.bundle` verwenden. So können Sie die Intune-Richtlinieneinstellungen ein- und ausschalten, während Sie Ihr Projekt zum Testen und Debuggen erstellen. Um das Paket bestmöglich zu nutzen, folgen Sie den Schritten im [Intune App SDK für iOS – Entwicklerhandbuch](intune-app-sdk-ios) und lesen Sie den Abschnitt zu [Debuggen in Xcode](intune-app-sdk-ios#debug-information).
+Sie haben die notwendigen Schritte ausgeführt um die Komponente in Ihrer Xamarin-basierten iOS-App einzurichten. Wenn Sie XCode zur Projekterstellung verwenden, können Sie `Intune App SDK Settings.bundle` verwenden. So können Sie die Intune-Richtlinieneinstellungen ein- und ausschalten, während Sie Ihr Projekt zum Testen und Debuggen erstellen. Um das Paket bestmöglich zu nutzen, folgen Sie den Schritten im [Intune App SDK für iOS – Entwicklerhandbuch](intune-app-sdk-ios.md) und lesen Sie den Abschnitt zu [Debuggen in Xcode](intune-app-sdk-ios.md#status-result-and-debug-notifications).
 
 ## <a name="enabling-mam-in-your-android-mobile-app"></a>Aktivieren von MAM in Ihrer mobilen Android-App
-Für Xamarin-basierte Android-Apps, die kein UI-Framework verwenden, lesen und befolgen Sie das [Intune App SDK für Android – Entwicklerhandbuch]. Für Xamarin-basierte Android-Apps müssen die Klasse, Methoden und Aktivitäten mit dem MAM-Äquivalent ersetzt werden, das auf der [Tabelle](intune-app-sdk-android#replace-classes-methods-and-activities-with-their-mam-equivalent-required) basiert und im Handbuch zu finden ist. Wenn Ihre App keine `android.app.Application`-Klasse definiert, müssen Sie eine erstellen. Es muss sichergestellt werden, dass Sie von `MAMApplication` erben.
+Für Xamarin-basierte Android-Apps, die kein UI-Framework verwenden, lesen und befolgen Sie das [Intune App SDK für Android – Entwicklerhandbuch]. Für Xamarin-basierte Android-Apps müssen die Klasse, Methoden und Aktivitäten mit dem MAM-Äquivalent ersetzt werden, das auf der [Tabelle](intune-app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent-required) basiert und im Handbuch zu finden ist. Wenn Ihre App keine `android.app.Application`-Klasse definiert, müssen Sie eine erstellen. Es muss sichergestellt werden, dass Sie von `MAMApplication` erben.
 
 Für Xamarin.Forms und andere UI-Frameworks haben wir ein Tool bereit gestellt. Es heißt `MAM.Remapper`. Das Tool wird für Sie den Klassentausch vornehmen. Folgende Schritte müssen dennoch durchgeführt werden:
 
@@ -125,6 +125,6 @@ Sie haben die grundlegenden Schritte zum Erstellen der Komponente auf Ihrer App 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

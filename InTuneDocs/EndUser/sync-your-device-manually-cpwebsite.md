@@ -2,10 +2,10 @@
 title: "Manuelles Synchronisieren Ihres Geräts mithilfe der Unternehmensportalwebsite | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,26 +15,27 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d53602bf4d767341924c4c4af8edae0d376a149
-ms.openlocfilehash: c49aa7e21f002110155e883894d211266ddbcb6c
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 68e4df02fa298af68f6c01a4dbb658cca5bb231b
 
 
 ---
 
 
-# Manuelles Synchronisieren Ihres Geräts mithilfe der Unternehmensportalwebsite
+# <a name="use-the-company-portal-website-to-sync-your-device"></a>Synchronisieren Ihres Geräts über die Unternehmensportalwebsite
 
-Wenn die App-Installation oder ein anderer Task bei Ihnen zu lange dauert, können Sie versuchen, Ihr Gerät manuell zu synchronisieren. Manuelles Synchronisieren kann hilfreich sein, um die Installation oder den Vorgang zu beschleunigen.
+Manchmal kann das Installieren einer App oder das Ausführen einer anderen Aufgabe länger dauern als normal. Wenn eine Aufgabe zu lange dauert, können Sie versuchen, sie zu beschleunigen, indem Sie Ihr Gerät manuell synchronisieren.
 
-Die Synchronisierungsfunktion funktioniert nur für die folgenden Versionen. Verwenden Sie die Anweisungen, die Ihrem Gerät entsprechen.
+> [!Note]
+> Das Synchronisierungsfeature steht zurzeit nicht für alle Geräte zur Verfügung. Wenn Ihr Gerät nicht aufgeführt ist, setzen Sie Ihr Gerät zurück, indem Sie das WLAN ungefähr 30 Sekunden lang deaktivieren, und stellen Sie die Verbindung mit dem Netzwerk anschließend wieder her.
 
-* [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
-* [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
-* [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-8-1)
 * [iOS](sync-your-device-manually-ios.md)
+* [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
+* [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
+* [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-81)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

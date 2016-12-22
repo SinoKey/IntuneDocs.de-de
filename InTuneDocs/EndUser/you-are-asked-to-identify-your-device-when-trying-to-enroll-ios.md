@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 106a39e4c51831a01a88db39270cda07421d2c9a
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 52633b881b0fb4c22848e8e408de7cd183db12df
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 106a39e4c51831a01a88db39270cda07421d2c9a
 
 # <a name="you-are-asked-to-identify-your-device-when-youre-trying-to-enroll"></a>Sie werden aufgefordert, Ihr Gerät zu identifizieren, wenn Sie versuchen, sich zu registrieren
 
-Wenn Sie versuchen, Ihr iOS- oder Mac OS X-Gerät bei Intune zu registrieren, und Sie einen Bildschirm sehen, der Sie auffordert, Ihr Gerät zu identifizieren, wurde mindestens eines Ihrer Geräte bereits registriert und Ihrem Konto mithilfe einer anderen Methode als der Unternehmensportal-App zugewiesen. Damit die Unternehmensportal-App ordnungsgemäß funktioniert, müssen Sie feststellen, ob das Gerät, das Sie verwenden, bereits bei Intune registriert wurde.
+Wenn Sie versuchen, Ihr iOS- oder macOS-Gerät bei Intune zu registrieren, und Sie einen Bildschirm sehen, der Sie auffordert, Ihr Gerät zu identifizieren, wurde mindestens eines Ihrer Geräte bereits registriert und Ihrem Konto mithilfe einer anderen Methode als der Unternehmensportal-App zugewiesen. Damit die Unternehmensportal-App ordnungsgemäß funktioniert, müssen Sie feststellen, ob das Gerät, das Sie verwenden, bereits bei Intune registriert wurde.
 
 1. Wenn Ihr Gerät in der Liste angezeigt wird, tippen Sie darauf. Wenn Sie es nicht sehen, tippen Sie auf **Neues Gerät**.
 2. Tippen Sie auf **Weiter**.
@@ -34,6 +34,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 

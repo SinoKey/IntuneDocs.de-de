@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
+ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
+ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 
 ---
@@ -86,7 +86,7 @@ Administratoren können Geräte im Azure Active Directory-Portal löschen.
 >
 > Ein Benutzerkonto das der Gruppe „Geräteregistrierungs-Manager“ hinzugefügt wird, kann die Registrierung nicht abschließen, wenn die bedingte Zugriffsrichtlinie für diese spezielle Benutzeranmeldung erzwungen wird.
 
-### <a name="company-portal-temporarily-unavailable"></a>Unternehmensportal vorübergehend nicht verfügbar
+### <a name="company-portal-emporarily-unavailable"></a>Unternehmensportal vorübergehend nicht verfügbar
 **Problem**: Sie erhalten auf dem Gerät die Fehlermeldung **Unternehmensportal vorübergehend nicht verfügbar**.
 
 **Lösung:**
@@ -214,23 +214,40 @@ Wenn Lösung 2 nicht zur Behebung des Problems führt, führen Sie die folgenden
 
 ### <a name="android-certificate-issues"></a>Android-Zertifikatsprobleme
 
-**Problem**: Benutzer erhält die folgende Meldung auf seinem Gerät: *Sie können sich nicht anmelden, da dem Gerät ein erforderliches Zertifikat fehlt.*
+**Problem**: Benutzer erhalten die folgende Meldung auf ihren Geräten: *Sie können sich nicht anmelden, da dem Gerät ein erforderliches Zertifikat fehlt.*
 
-**Lösung**:
+**Lösung 1**:
 
-- Der Benutzer kann in der Lage sein, das fehlende Zertifikat mit [diesen Anweisungen](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) abzurufen.
-- Wenn der Benutzer das Zertifikat nicht abrufen kann, können Zwischenzertifikate auf Ihrem AD FS-Server fehlen. Die Zwischenzertifikate benötigt Android, um dem Server zu vertrauen.
+Bitten Sie die Benutzer, die Anweisungen unter [Dem Gerät fehlt ein erforderliches Zertifikat](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) zu befolgen. Wenn der Fehler weiterhin auftritt, nachdem die Benutzer die Anweisungen ausgeführt haben, versuchen Sie es mit Lösung 2.
 
-Sie können die Zertifikate wie folgt in den Zwischenspeicher auf dem AD FS-Server oder Proxys importieren:
+**Lösung 2**:
 
-1.  Starten Sie auf dem AD FS-Server die **Microsoft Management Console**, und fügen Sie das Zertifikate-Snap-In für das **Computerkonto** hinzu.
-5.  Suchen Sie das Zertifikat, das Ihr AD FS-Dienst verwendet, und zeigen Sie sein übergeordnetes Zertifikat an.
-6.  Kopieren Sie das übergeordnete Zertifikat, und fügen Sie es unter **Computer\Intermediate Certification Authorities\Certificates** ein.
-7.  Kopieren Sie Ihre Zertifikate für AD FS, AD FS Decrypting und AD FS Signing, und fügen Sie sie in den privaten Speicher für den AD FS-Dienst ein.
-8.  Starten Sie die AD FS-Server neu.
+Tritt der Fehler wegen des fehlenden Zertifikats weiterhin auf, nachdem die Benutzer die Anmeldeinformationen des Unternehmens eingegeben haben und zur Umgebung für die Verbundanmeldung umgeleitet wurden, fehlt möglicherweise ein Zwischenzertifikat auf Ihrem AD FS-Server (Active Directory-Verbunddienste).
 
+Der Zertifikatfehler tritt auf, da auf Android-Geräten Zwischenzertifikate für ein [SSL-Server-Hello](https://technet.microsoft.com/library/cc783349.aspx) benötigt werden, eine standardmäßige AD FS-Server- oder AD FS-Proxyserverinstallation in der SSL-Server-Hello-Antwort auf ein SSL-Client-Hello aktuell aber nur das SSL-Zertifikat des AD FS-Diensts sendet.
+
+Um das Problem zu beheben, importieren Sie die Zertifikate wie folgt in die persönlichen Zertifikate des Computers auf dem AD FS-Server oder den Proxys:
+
+1.  Starten Sie die Konsole zur Zertifikatverwaltung für den lokalen Computer auf dem AD FS- und dem Proxyserver, indem Sie mit der rechten Maustaste auf die Schaltfläche **Start** klicken, **Ausführen** auswählen und **certlm.msc** eingeben.
+2.  Erweitern Sie **Persönlich**, und wählen Sie **Zertifikate** aus.
+3.  Suchen Sie das Zertifikat für Ihre Kommunikation mit dem AD FS-Dienst (ein öffentlich signiertes Zertifikat), und doppelklicken Sie darauf, um seine Eigenschaften anzuzeigen.
+4.  Klicken Sie auf die Schaltfläche **Zertifizierungspfad**, um die übergeordneten Zertifikate des Zertifikats anzuzeigen.
+5.  Wählen Sie in jedem übergeordneten Zertifikat die Option **Zertifikat anzeigen** aus.
+6.  Klicken Sie auf der Registerkarte **Details** auf **In Datei kopieren**.
+7.  Führen Sie die Anweisungen des Assistenten aus, um den des öffentlichen Schlüssel des Zertifikats an den gewünschten Speicherort zu exportieren oder zu speichern.
+8.  Importieren Sie die übergeordneten Zertifikate, die in Schritt 3 nach „Local Computer\Personal\Certificates“ exportiert wurden, indem Sie mit der rechten Maustaste auf **Zertifikate** klicken, **Alle Aufgaben** > **Importieren** auswählen und dann den Anweisungen des Assistenten zum Importieren der Zertifikate folgen.
+9.  Starten Sie die AD FS-Server neu.
+10. Wiederholen Sie die oben stehenden Schritte auf allen AD FS- und Proxyservern.
 Der Benutzer sollte sich jetzt mit dem Android-Gerät bei der Unternehmensportal-App anmelden können.
 
+**So überprüfen Sie, ob das Zertifikat richtig installiert wurde**
+
+Die folgenden Schritte beschreiben nur eine von vielen Methoden und Tools, die Sie verwenden können, um zu überprüfen, ob das Zertifikat richtig installiert wurde.
+
+1. Wechseln Sie zum [kostenlosen Digicert-Tool](ttps://www.digicert.com/help/).
+2. Geben Sie den vollqualifizierten Domänennamen Ihres AD FS-Servers ein (z. B. sts.contoso.com), und wählen Sie **CHECK SERVER** aus.
+
+Wenn das Serverzertifikat ordnungsgemäß installiert wurde, werden in den Ergebnissen alle Häkchen angezeigt. Wenn das oben beschriebene Problem vorhanden ist, wird in den Abschnitten „Certificate Name Matches“ und „SSL Certificate is correctly Installed“ des Berichts ein rotes X angezeigt.
 
 
 ## <a name="ios-issues"></a>iOS-Probleme
@@ -356,6 +373,6 @@ Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, w
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

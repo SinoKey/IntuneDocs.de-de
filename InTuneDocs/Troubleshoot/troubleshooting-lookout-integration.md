@@ -1,11 +1,11 @@
 ---
-title: Problembehandlung der Lookout-Integration | Microsoft Intune
+title: Problembehandlung der Lookout-Integration | Microsoft Docs
 description: "Dieses Thema beschreibt die Behandlung von Problemen, die im Zusammenhang mit der Lookout-Integration häufig auftreten."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: aa29f702803d657f783ff0dfc6ea66981484c569
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: 416f200bdb72bae98897cb8d279dbdb767757da9
 
 
 ---
@@ -39,7 +39,7 @@ Möglicherweise wird der folgende Fehler angezeigt, wenn der globale Administrat
 
 ![Screenshot des Lookout-Anmeldebildschirms, der den Anmeldefehler darstellt](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-Um dieses Problem zu beheben, muss sich der globale Administratorbenutzer bei „https://aad.lookout.com/les?action=consent“ anmelden und die Aufforderung zum Starten von Setup akzeptieren. Ausführlichere Informationen finden Sie im Thema [Einrichten Ihres Abonnements für Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
+Um dieses Problem zu beheben, muss sich der globale Administratorbenutzer bei „https://aad.lookout.com/les?action=consent“ anmelden und die Aufforderung zum Starten von Setup akzeptieren. Ausführlichere Informationen finden Sie im Thema [Einrichten Ihres Abonnements für Lookout MTP](../deploy-use/set-up-your-subscription-with-lookout-mtp.md)
 
 ## <a name="troubleshoot-device-status-issues"></a>Behandeln von Problemen mit dem Gerätestatus
 
@@ -90,6 +90,6 @@ Sofern der neue Benutzer sich in einer der Registrierungsgruppen befindet, die i
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 
