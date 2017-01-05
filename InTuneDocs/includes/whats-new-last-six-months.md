@@ -403,6 +403,6 @@ __iOS-Unternehmensportal-App__
 - Die Microsoft Windows Intune-Unternehmensportal-App für iOS wurde aktualisiert, um die iOS-Version 8.0 und höher zu unterstützen. Dieses Update bedeutet, dass Endbenutzer nur dann die Unternehmensportal-App installieren und neue Geräte in Intune registrieren können, wenn das Gerät iOS Version 8.0 oder höher ausführt. Benutzer, die bereits Geräte registriert haben, auf denen eine nicht unterstützte Version von iOS ausgeführt wird, können weiterhin die auf ihrem Gerät vorhandene Unternehmensportal-App verwenden.
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
