@@ -1,5 +1,5 @@
 ---
-title: Windows 8.0-Unternehmensportal-App veraltet | Microsoft Intune
+title: Windows 8.0-Unternehmensportal-App veraltet | Microsoft-Dokumentation
 description: "Aktivieren Sie die Verwaltung mobiler Geräte (Mobile Device Management, MDM) für Windows Phone 8.0-Geräte mit Microsoft Intune."
 keywords: 
 author: NathBarn
@@ -13,18 +13,20 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 7cab684c3d51dc9d51ac252b5cbb7b61ffd29dfa
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: c1e39aa0944785f2f0fa624a8ba2cd55814ece7f
 
 
 ---
 
-#  Windows Phone 8.0-Unternehmensportal-App veraltet
+#  <a name="windows-phone-80-company-portal-app-deprecated"></a>Windows Phone 8.0-Unternehmensportal-App veraltet
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Ab September 2016 wurde die Windows 8.0-Unternehmensportal-App als veraltet markiert. Registrierte Windows 8.0-Geräte werden weiterhin verwaltet, es können aber keine neuen Geräte registriert werden.
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

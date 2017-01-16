@@ -1,12 +1,12 @@
 ---
 
-title: Android for Work-Richtlinieneinstellungen | Microsoft Intune
+title: Android for Work-Richtlinieneinstellungen | Microsoft-Dokumentation
 description: "Erstellen Sie Richtlinien, die Einstellungen und Features auf Android for Work-Geräten steuern, die Sie mit Intune verwalten."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 12/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,15 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
 
 
 ---
 
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Einstellungen für Android for Work-Richtlinien in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -66,9 +68,7 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 Stellen Sie mithilfe der **benutzerdefinierten Android for Work-Konfigurationsrichtlinie** von Microsoft Intune die Einstellungen für OMA-URI bereit, um Features auf Android for Work-Geräten zu steuern. Dies sind die Standardeinstellungen, die viele Hersteller von mobilen Geräten verwenden, um Gerätefunktionen zu steuern.
 
 Diese Funktion soll es Ihnen ermöglichen, Android-Einstellungen bereitzustellen, die nicht mit Intune-Richtlinien konfigurierbar sind.
-
-> [!NOTE]
-> Derzeit unterstützen benutzerdefinierte Android-Richtlinien unterstützt nur das Konfigurieren von WLAN-Einstellungen für Android-Geräte, die einen vorinstallierten Schlüssel enthalten.
+Intune unterstützt zurzeit eine begrenzte Anzahl von benutzerdefinierten Android-Richtlinien. Mit den Beispielen in diesem Thema finden Sie heraus, welche Richtlinien Sie konfigurieren können.
 
 ### <a name="general-settings"></a>Allgemeine Einstellungen
 
@@ -97,6 +97,6 @@ Diese Funktion soll es Ihnen ermöglichen, Android-Einstellungen bereitzustellen
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

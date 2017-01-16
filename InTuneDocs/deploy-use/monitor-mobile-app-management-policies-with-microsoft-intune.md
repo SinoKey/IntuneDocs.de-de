@@ -1,9 +1,9 @@
 ---
-title: "Überwachen von MAM-Richtlinien mit Microsoft Intune | Microsoft Intune"
+title: "Überwachen von MAM-Richtlinien mit Microsoft Intune | Microsoft-Dokumentation"
 description: "Finden Sie heraus, für wie viele Benutzer die Richtlinie gilt, und zeigen Sie weitere Details an."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 487fe778bae73c2ac5564f90c21328932060f576
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: 2a18ad7226c6fc6de0277f1f20443ea64dc8b918
 
 
 ---
 
 # <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Überwachen der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Nachdem Sie eine MAM-Richtlinie (Mobile App Management, Verwaltung mobiler Apps) eingerichtet und auf Benutzer angewendet haben, können Sie den Kompatibilitätsstatus im [Azure-Portal](https://portal.azure.com) überwachen. Das Azure-Portal enthält Informationen über die Benutzer, die von der Richtlinie betroffen sind, den Kompatibilitätsstatus sowie über Probleme, die bei den Benutzern möglicherweise auftreten.
 ## <a name="summary-view"></a>Zusammenfassungsansicht
 Auf dem Blatt **Mobile Anwendungsverwaltung mit Intune** sehen Sie eine Zusammenfassung des Kompatibilitätsstatus:
@@ -80,6 +83,6 @@ In der Detailansicht werden die Fehlermeldung, die App, auf die bei Auftreten de
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

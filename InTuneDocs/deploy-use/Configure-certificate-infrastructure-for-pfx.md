@@ -1,5 +1,5 @@
 ---
-title: "Konfigurieren der Zertifikatinfrastruktur für PFX | Microsoft Intune"
+title: "Konfigurieren der Zertifikatinfrastruktur für PFX | Microsoft-Dokumentation"
 description: Erstellen Sie PFX-Zertifikatprofile, und stellen Sie sie bereit.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
-ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 12773352970deeacf30b1336a4e560e08b400ee3
 
 
 
 ---
 # <a name="configure-certificate-infrastructure"></a>Konfigurieren der Zertifikatinfrastruktur
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In diesem Thema werden die Anforderungen beschrieben, die zum Erstellen und Bereitstellen von PFX-Zertifikatprofilen erfüllt sein müssen.
 
 Für jede zertifikatbasierte Authentifizierung im Unternehmen benötigen Sie eine Unternehmenszertifizierungsstelle.
@@ -31,7 +34,7 @@ Damit Sie PFX-Zertifikatprofile verwenden können, benötigen Sie zusätzlich zu
 
 -  den Intune Zertifikatconnector, der auf dem Computer ausgeführt wird, der mit der Zertifizierungsstelle kommunizieren kann.
 
-## <a name="onpremises-infrastructure-description"></a>Beschreibung der lokalen Infrastruktur
+## <a name="on-premises-infrastructure-description"></a>Beschreibung der lokalen Infrastruktur
 
 
 -    **Active Directory-Domäne**: Alle in diesem Abschnitt aufgeführten Server (außer dem Webanwendungsproxy-Server) müssen der Active Directory-Domäne angehören.
@@ -65,7 +68,7 @@ Bevor Sie Zertifikatprofile konfigurieren können, müssen Sie die folgenden Auf
 - **Aufgabe 1**: Konfigurieren von Zertifikatvorlagen für die Zertifizierungsstelle
 - **Aufgabe 2**: Aktivieren, Installieren und Konfigurieren des Intune Certificate Connectors
 
-### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>Aufgabe 1: Konfigurieren von Zertifikatvorlagen für die Zertifizierungsstelle
+### <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>Aufgabe 1: Konfigurieren von Zertifikatvorlagen für die Zertifizierungsstelle
 Bei dieser Aufgabe veröffentlichen Sie die Zertifikatvorlage.
 
 ##### <a name="to-configure-the-certification-authority"></a>So konfigurieren Sie die Zertifizierungsstelle
@@ -104,7 +107,7 @@ Bei dieser Aufgabe veröffentlichen Sie die Zertifikatvorlage.
 
 4.  Stellen Sie auf dem Zertifizierungsstellencomputer sicher, dass der Computer, der den Intune Certificate Connector hostet, die Berechtigung „Registrieren“ hat, damit dieser auf die Vorlage zugreifen kann, die zum Erstellen des PFX-Profils verwendet wurde. Legen Sie diese Berechtigung auf der Registerkarte **Sicherheit** in den Eigenschaften des Computers mit der Zertifizierungsstelle fest.
 
-### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>Aufgabe 2: Aktivieren, Installieren und Konfigurieren des Intune Certificate Connectors
+### <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>Aufgabe 2: Aktivieren, Installieren und Konfigurieren des Intune Certificate Connectors
 Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 Herunterladen, Installieren und Konfigurieren des Certificate Connectors
@@ -156,6 +159,6 @@ Sie sind jetzt bereit, Zertifikatprofile gemäß der Beschreibung in [Konfigurie
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

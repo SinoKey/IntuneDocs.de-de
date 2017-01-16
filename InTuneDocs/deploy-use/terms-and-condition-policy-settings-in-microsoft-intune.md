@@ -1,5 +1,5 @@
 ---
-title: "Einstellungen für Nutzungsbedingungsrichtlinien | Microsoft Intune"
+title: "Einstellungen für Nutzungsbedingungsrichtlinien | Microsoft-Dokumentation"
 description: "Sie können Intune-Nutzungsbedingungen für Benutzergruppen bereitstellen, um zu erläutern, wie sich die Registrierung, der Zugriff auf Arbeitsressourcen und die Verwendung des Unternehmensportals auf Geräte und Benutzer auswirken."
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
-ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
 
 
 ---
 
 # <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Einstellungen für Nutzungsbedingungsrichtlinien in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Sie können Intune-Nutzungsbedingungen für Benutzergruppen bereitstellen, um zu erläutern, wie sich die Registrierung, der Zugriff auf Arbeitsressourcen und das Unternehmensportal auf Geräte und Benutzer auswirken. Benutzer müssen die Nutzungsbedingungen akzeptieren, bevor sie sich über das Unternehmensportal registrieren und auf ihre Arbeit zugreifen können.
 
 Sie können mehrere Richtlinien erstellen und bereitstellen, die verschiedene Nutzungsbedingungen enthalten. Sie können auch Versionen derselben Nutzungsbedingungen in verschiedenen Sprachen erstellen und diese dann für die entsprechenden Gruppen bereitstellen.
@@ -81,6 +84,6 @@ Beim Bearbeiten einer vorhandenen Nutzungsbedingungsrichtlinie können Sie ausw�
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

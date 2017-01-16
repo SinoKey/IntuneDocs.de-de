@@ -1,5 +1,5 @@
 ---
-title: "Suchen eines Paketfamiliennamens (PFN) für VPN pro App | Microsoft Intune"
+title: "Suchen eines Paketfamiliennamens (PFN) für VPN pro App | Microsoft-Dokumentation"
 description: "Suchen Sie einen Paketfamiliennamen (PFN), den Sie zum Konfigurieren eines anwendungsbezogenen VPN („VPN pro App“) benötigen."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
-ms.openlocfilehash: 6d3e43c1380114634c44bd364076df404bce95e3
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: b0006416f2b078c8c0cf5eb14ccea4749604e1dc
 
 
 ---
 
-# <a name="find-a-package-family-name-pfn-for-perapp-vpn-configuration"></a>Suchen eines Paketfamiliennamens (PFN) für eine Konfiguration mit VPN pro App
+# <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>Suchen eines Paketfamiliennamens (PFN) für eine Konfiguration mit VPN pro App
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Es gibt zwei Möglichkeiten zum Suchen eines Paketfamiliennamens (PFN), den Sie zum Einrichten eines anwendungsbezogenen VPNs benötigen.
 
@@ -86,6 +88,6 @@ In Microsoft Edge werden die gewünschten Informationen angezeigt. In Internet E
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Sie müssen eine Bedrohung beseitigen, die Lookout for Work auf Ihrem iOS-Gerät erkannt hat | Microsoft Intune"
+title: "Sie müssen eine Bedrohung beseitigen, die Lookout for Work auf Ihrem iOS-Gerät erkannt hat | Microsoft-Dokumentation"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,10 +11,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: c5b1be5043b5e0ad2774d9214a3e09ccd8d9d991
-ms.openlocfilehash: 88b6a7107efb04accac4e7028e04a5505d8c865b
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 9e958dc7421ac9373d80268db654c87c61ab3729
 
 
 ---
@@ -51,6 +53,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

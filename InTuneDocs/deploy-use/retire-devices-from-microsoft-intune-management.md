@@ -1,11 +1,11 @@
 ---
-title: "Abkoppeln von Geräten | Microsoft Intune"
+title: "Außerbetriebnahme von Geräten | Microsoft-Dokumentation"
 description: "Intune unterstützt sowohl die selektive als auch die vollständige Zurücksetzung, um das Gerät aus der Intune-Verwaltung zu entfernen, indem die Richtlinie und das Unternehmensportal entfernt werden."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,21 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
-ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
+ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
+ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 
 ---
 
 # <a name="retire-devices-from-intune-management"></a>Abkoppeln von Geräten von der Intune-Verwaltung
 
-Unabhängig davon, ob Geräte Unternehmenseigentum sind oder den Mitarbeitern persönlich gehören – irgendwann muss ein verwaltetes Gerät aus der Intune-Verwaltung entfernt werden. Es kann aus einer Vielzahl von Gründen erforderlich sein, ein Gerät außer Kraft zu setzen:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Unabhängig davon, ob Geräte Unternehmenseigentum sind oder den Mitarbeitern persönlich gehören – irgendwann muss ein verwaltetes Gerät aus der Intune-Verwaltung entfernt werden. 
+
+Geräte werden nie ohne Ihr Zutun aus Intune entfernt, selbst wenn die Geräte eine Zeitlang keine Verbindung mit dem Intune-Dienst hergestellt haben. 
+
+Es kann aus einer Vielzahl von Gründen erforderlich sein, ein Gerät außer Kraft zu setzen:
 
 -   Ein Benutzer verlässt ein Unternehmen planmäßig („verwalteter“ Abschied)
 -   Ein Benutzer verlässt das Unternehmen plötzlich (wird entlassen, kündigt etc.)
@@ -70,6 +76,6 @@ Manchmal ist es das Gerät selbst, das das Ende seines Lebenszyklus erreicht hat
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

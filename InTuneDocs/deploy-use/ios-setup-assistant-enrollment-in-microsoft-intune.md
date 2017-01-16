@@ -1,5 +1,5 @@
 ---
-title: "Registrieren von iOS-Geräten mit dem Setup-Assistenten | Microsoft Intune"
+title: "Registrieren von iOS-Geräten mit dem Setup-Assistenten | Microsoft-Dokumentation"
 description: "Registrieren von unternehmenseigenen iOS-Geräten mithilfe des Apple Configurator-Tools, um die Geräte auf die Werkseinstellungen zurückzusetzen und für die Ausführung des Setup-Assistenten vorzubereiten."
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: ea6a4732e747dccf9c42732c06bd1b8cdf20e91f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 01de894167a65f6b3a46808610232feb8dd7e536
 
 
 ---
 
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Registrieren von iOS-Geräten mithilfe von Apple Configurator und Setup-Assistent
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune unterstützt die Registrierung unternehmenseigener iOS-Geräte mithilfe des Tools [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017), das auf einem Mac-Computer ausgeführt wird. Dieser Prozess setzt das Gerät auf die Werkseinstellungen zurück und bereitet es auf die Ausführung des Setup-Assistenten vor, um die Unternehmensrichtlinien für den neuen Benutzer des Geräts zu installieren.
 
 ## <a name="setup-assistant-enrollment-for-ios-devices-with-microsoft-intune"></a>Registrierung von iOS-Geräten bei Microsoft Intune über den Setup-Assistenten
@@ -151,6 +154,6 @@ Mit Apple Configurator können Sie ein iOS-Gerät auf die Werkseinstellungen zur
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

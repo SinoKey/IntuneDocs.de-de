@@ -1,5 +1,5 @@
 ---
-title: "Festlegen oder Ändern der Kennung | Microsoft Intune"
+title: "Festlegen oder Ändern der Kennung | Microsoft-Dokumentation"
 description: "Festlegen oder Ändern der Kennung"
 keywords: 
 author: barlanmsft
@@ -11,10 +11,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 6e941b8ac3d26afce65eb5a7d60f7c56dbbdbe87
+ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
+ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
 
 
 ---
@@ -27,13 +29,13 @@ Der IT-Administrator kann mehr als eine Kennungsanforderung festlegen. Die Kennu
 
 Wenn Sie Probleme beim Einrichten einer Kennung haben, die die Kennungsanforderungen erfüllt, bitten Sie Ihren IT-Administrator um Hilfe.
 
-## <a name="set-your-passcode"></a>Festlegen der Kennung##
+## <a name="set-your-passcode"></a>Festlegen der Kennung
 
 1. Tippen Sie auf **Einstellungen** > **Touch ID und Kennung**.
 2. Tippen Sie im Menü **Touch ID und Kennung** auf **Kennung aktivieren**.
 3. Geben Sie eine neue Kennung ein, die die Anforderungen Ihres IT-Administrators erfüllt, und geben Sie sie zur Bestätigung nochmals ein.
 
-## <a name="change-your-passcode"></a>Ändern Ihrer Kennung##
+## <a name="change-your-passcode"></a>Ändern Ihrer Kennung
 
 1. Tippen Sie auf **Einstellungen** > **Touch ID und Kennung**.
 2. Geben Sie Ihre Kennung ein. Das Menü **Touch ID und Kennung** wird geöffnet.
@@ -44,6 +46,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

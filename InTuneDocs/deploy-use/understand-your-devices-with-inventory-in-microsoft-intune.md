@@ -1,5 +1,5 @@
 ---
-title: "Verstehen Sie Ihre Geräte mithilfe des Inventars | Microsoft Intune"
+title: "Verstehen Sie Ihre Geräte mithilfe des Inventars | Microsoft-Dokumentation"
 description: "Verwenden Sie Intune zum Anzeigen von Informationen zur Hardware der Geräte, die Sie verwalten."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dbf3ac5c7ab326fd82acb979ea7a4933ac68ff1c
-ms.openlocfilehash: 1bfb47cccc6438bae54a57271e585bdc9f9f6611
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 3ae5809f8506e2255d9443d3587f2564bc863066
 
 
 ---
 
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Verstehen Sie Ihre Geräte mithilfe des Inventars in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Mit Microsoft Intune können Sie das Inventar an registrierten Geräten und Windows-PCs anzeigen, auf denen die Intune-Clientsoftware ausgeführt wird.
 Intune sammelt normalerweise alle 7 Tage den Bestand von verwalteten Geräten. Aus diesem Grund entsteht möglicherweise eine Verzögerung, bevor Berichte die Ergebnisse von kürzlich durchgeführten Änderungen an Geräten anzeigen, z.B. eine Änderung am Gerätenamen oder am freien Speicherplatz.
 
@@ -116,6 +119,6 @@ Um das von den Windows-PCs gesammelte Inventar anzuzeigen, führen Sie die [Comp
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

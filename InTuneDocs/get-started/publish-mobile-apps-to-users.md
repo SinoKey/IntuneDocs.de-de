@@ -1,12 +1,12 @@
 ---
-title: "Veröffentlichen mobiler Apps für Benutzer | Microsoft Intune"
+title: "Veröffentlichen mobiler Apps für Benutzer | Microsoft-Dokumentation"
 description: 
 keywords: 
 author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 21e79e5dc5fa47c3612182bbc7040c488f94849b
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: fc2fb3c2c59b4fc2de048d8a27a6eadec592fba3
 
 
 ---
 
 # <a name="quick-start-guide-publish-mobile-apps-to-your-users"></a>Erste Schritte: Veröffentlichen mobiler Apps für Benutzer
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune kann Ihnen dabei helfen, die Produktivität der Endbenutzer zu erhöhen, indem Sie ihnen schnell und einfach Zugriff auf die mobilen und Desktop-Apps gewähren, die sie auf den Geräten ihrer Wahl benötigen. Durch die einfache Bereitstellung von Apps für Endbenutzer ist weniger Zeit und Aufwand für Benutzer erforderlich, um die richtigen Apps zu suchen und zu installieren, wodurch Anrufe beim Helpdesk aufgrund nicht gefundener erforderlicher Apps verringert werden.   
 
 ## <a name="is-this-quick-start-guide-right-for-me"></a>Ist dieses Schnellstarthandbuch für mich geeignet?
@@ -42,6 +45,6 @@ Wenn das Veröffentlichen von mobilen Office-Apps mit dem Ziel erfolgt, die MAM-
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

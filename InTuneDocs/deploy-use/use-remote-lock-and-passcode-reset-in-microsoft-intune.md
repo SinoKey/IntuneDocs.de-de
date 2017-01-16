@@ -1,5 +1,5 @@
 ---
-title: "Remotesperre und Zurücksetzen der Kennung | Microsoft Intune"
+title: "Remotesperre und Zurücksetzen der Kennung | Microsoft-Dokumentation"
 description: "Intune enthält Funktionen zum Remotesperren und zum Zurücksetzen der Kennung."
 keywords: 
 author: staciebarker
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 8dc7f1c7eb32828854b4e2309c915f4fd0cba9a2
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 641ca955c2790dc3029e8408d32a66b7b0418a12
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Geräteschutz durch Remotesperre und Zurücksetzen der Kennung
@@ -79,6 +79,6 @@ Das Zurücksetzen der Kennung wird für Windows-PCs, die mit dem Intune-Software
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

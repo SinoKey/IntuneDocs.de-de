@@ -1,26 +1,27 @@
 ---
-title: Senden von Fehlern an Ihren IT-Administrator | Microsoft Intune
+title: Senden von Fehlern an Ihren IT-Administrator | Microsoft-Dokumentation
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: fbc9c2b9-b454-4b33-86cc-650742bbf1e1
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: 577e26066095b42542cfcd7b917877ddb0a88c55
+ms.sourcegitcommit: 4e1b2094a89940355e02c062614620a4abf70e53
+ms.openlocfilehash: 5de975c1c4b06d1cce0dcdb2564826d09a53260e
 
 
 ---
-
 
 # <a name="send-errors-to-your-it-admin"></a>Senden von Fehlern an Ihren IT-Administrator
 
@@ -30,10 +31,12 @@ Wenn Sie auf Ihrem iOS-Gerät eine Fehlermeldung erhalten, während Sie die Unte
 
 -   Im Bildschirm **Info** der Unternehmensportal-App: Tippen Sie auf **Diagnosebericht senden**.
 
--   In der Unternehmensportal-App: Schütteln Sie Ihr Gerät, und tippen Sie auf **E-Mail**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** &gt; **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schütteln** aktiviert ist.
+-   In der Unternehmensportal-App: Schütteln Sie Ihr Gerät, und tippen Sie auf **E-Mail**, wenn die Diagnosewarnung angezeigt wird. Wenn beim Schütteln des Geräts keine Warnung angezeigt wird, öffnen Sie **Einstellungen** > **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schüttelgeste** aktiviert ist.
+
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

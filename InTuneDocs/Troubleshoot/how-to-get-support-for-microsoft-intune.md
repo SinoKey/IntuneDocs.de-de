@@ -1,5 +1,5 @@
 ---
-title: Anfordern von Support | Microsoft Intune
+title: Anfordern von Support | Microsoft-Dokumentation
 description: "Der Support ist für kostenpflichtige Abonnements und für Testabonnements online und telefonisch verfügbar."
 keywords: 
 author: staciebarker
@@ -14,13 +14,15 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c97ecfbb7b8ec7d76bead6a553df402f24296307
-ms.openlocfilehash: 9e976973b6230b985a6e9ae4331f452bc43e1a9a
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1a83bd41e4dc3aaa2e98b78b918b0cfe4c74dfe3
 
 
 ---
 
 # <a name="how-to-get-admin-support-for-microsoft-intune"></a>So fordern Sie Administratorunterstützung für Microsoft Intune an
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft bietet für Microsoft Intune Unterstützung bei allgemeinen technischen Fragen, der Vertriebsvorbereitung sowie bei Fragen zu Rechnungen und Abonnements. Der Support ist für kostenpflichtige Abonnements und für Testabonnements online und telefonisch verfügbar. Der technische Onlinesupport ist nur auf Englisch und Japanisch verfügbar. Der telefonische Support und der Support zu Abrechnungen sind in zusätzlichen Sprachen verfügbar.
 
@@ -114,6 +116,6 @@ Wenn Sie von Microsoft bereits Lizenzen im Rahmen eines Volumenlizenzprogramms e
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

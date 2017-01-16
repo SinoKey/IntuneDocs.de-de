@@ -1,5 +1,5 @@
 ---
-title: "Aktivieren der Geräteregistrierung | Microsoft Intune"
+title: "Aktivieren der Geräteregistrierung | Microsoft-Dokumentation"
 description: "Legen Sie die MDM-Autorität fest, und aktivieren Sie die Registrierung für iOS-, Windows-, Android- und Mac-Geräte."
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 031cf995da4fa46b244b65a6b1c51b6a1aa00d9f
-ms.openlocfilehash: 8c3076b26844669f9927478b5847f88f2265c6c9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 654c5b65a9fde6742f3682b1fd5ba6c056d0d45b
 
 
 ---
 
 # <a name="enroll-mobile-devices-and-install-an-app"></a>Registrieren mobiler Geräte und Installieren einer App
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Um die Verwaltung mobiler Geräte mit Intune einzurichten, müssen Sie zunächst die *Autorität für die Verwaltung mobiler Geräte* (Mobile Device Management, MDM) festlegen, die den Dienst identifiziert, der Ihrem Konto zugeordnete Geräte verwalten kann. In diesem Leitfaden wird vorausgesetzt, dass Sie nicht den System Center Configuration Manager, sondern den Intune-Dienst verwenden. Nachdem die MDM-Autorität festgelegt wurde, können Sie die Verwaltung für Geräteplattformen aktivieren und Ihre Geräte mit der Unternehmensportal-App registrieren.
 
 ## <a name="enable-device-enrollment"></a>Aktivieren der Geräteregistrierung
@@ -66,6 +69,6 @@ Gratulation! Sie haben den letzten Schritt der Kurzanleitung *Erste Schritte mit
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Anfordern und Bereitstellen von Remoteunterstützung für Windows-PCs | Microsoft Intune"
-description: "Beschreibt Schritte für Endbenutzer und IT-Administratoren zur Bereitstellung von Remoteunterstützung für Windows-PCs und zum Remotestarten eines PCs."
+title: "Anfordern und Bereitstellen von Remoteunterstützung für Windows-PCs | Microsoft-Dokumentation"
+description: "Beschreibt Schritte für Endbenutzer und IT-Administratoren zur Bereitstellung von Remoteunterstützung für Windows-Desktops, die als PCs verwaltet werden, und zum Remotestarten eines PCs."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,17 @@ ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ab954204fffa6ad67a4a0d0f5e2e521c795eae31
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: 628875c2f874c824761befd9886d7f7987c045df
 
 
 ---
 
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Anfordern und Bereitstellen von Remoteunterstützung für Windows-PCs
 
-In Microsoft Intune können Sie die nicht im Lieferumfang inbegriffene [TeamViewer](https://www.teamviewer.com)-Software verwenden, um Ihre Benutzer, bei denen der Intune-Softwareclient ausgeführt wird, remote zu unterstützen. Sobald ein Benutzer Hilfe über das Microsoft Intune Center anfordert, werden Sie durch eine Warnung benachrichtigt, können die Anforderung annehmen und Unterstützung leisten. Diese Funktion ersetzt die vorhandene Funktion „Windows-Remoteunterstützung“ in Intune.
+Die Informationen in diesem Thema gelten nur für Windows-Desktops, die Sie als PCs mithilfe des Intune-Softwareclients verwalten.
+
+In Intune können Sie die nicht im Lieferumfang inbegriffene [TeamViewer](https://www.teamviewer.com)-Software verwenden, um Ihre Benutzer, bei denen der Intune-Softwareclient ausgeführt wird, remote zu unterstützen. Sobald ein Benutzer Hilfe über das Microsoft Intune Center anfordert, werden Sie durch eine Warnung benachrichtigt, können die Anforderung annehmen und Unterstützung leisten. Diese Funktion ersetzt die vorhandene Funktion „Windows-Remoteunterstützung“ in Intune.
 
 
 ## <a name="before-you-start"></a>Vorbereitung
@@ -30,7 +32,7 @@ In Microsoft Intune können Sie die nicht im Lieferumfang inbegriffene [TeamView
 Bevor Sie entsprechende Einrichtungsschritte ausführen und auf Anforderungen für Remoteunterstützung reagieren können, stellen Sie sicher, dass folgende Voraussetzungen erfüllt sind:
 
 - Sie müssen sich für ein [TeamViewer-Konto registriert haben](https://login.teamviewer.com/LogOn#register), um sich bei der TeamViewer-Website anzumelden.
-- Die Windows-PCs, die auf denen Sie Administrationsaufgaben ausführen möchten, müssen [durch den Windows-PC-Client verwaltet werden](manage-windows-pcs-with-microsoft-intune.md).
+- Die Windows-PCs, die auf denen Sie Administrationsaufgaben ausführen möchten, müssen [durch den Windows-Softwareclient verwaltet werden](manage-windows-pcs-with-microsoft-intune.md).
 - Auf allen von Intune unterstützten Windows-PC-Betriebssystemen können Administrationsaufgaben ausgeführt werden.
 
 ## <a name="configure-the-teamviewer-connector"></a>Konfigurieren des TeamViewer Connectors
@@ -59,7 +61,7 @@ Bevor Sie entsprechende Einrichtungsschritte ausführen und auf Anforderungen f�
 
 <br>Wenn die Anforderung länger als 4 Stunden unbeantwortet bleibt, wird sie entfernt.
 2. Um die Anforderung anzunehmen, wählen Sie **Anforderung genehmigen und Remoteunterstützung starten** aus.
-3. Wählen Sie im Dialogfeld **Eine neue Remoteunterstützungsanforderung steht aus** die Option **Remoteunterstützungsanforderung annehmen** aus. Falls sie noch nicht vorhanden sind, installiert TeamViewer alle nötigen Apps auf Ihrem Computer.
+3. Wählen Sie im Dialogfeld **Eine neue Remoteunterstützungsanforderung steht aus** die Option **Remoteunterstützungsanforderung annehmen** aus. Falls sie noch nicht vorhanden sind, installiert TeamViewer alle nötigen Apps auf Ihrem PC.
 4. Anschließend benachrichtigt TeamViewer den Endbenutzer, dass Sie die Kontrolle seinen PC übernehmen möchten. Nachdem der Benutzer dies akzeptiert hat, wird das TeamViewer-Fenster geöffnet, und Sie können den PC steuern.
 
 Während einer Remoteunterstützungssitzung können Sie in alle verfügbaren TeamViewer-Befehle nutzen, um den Remote-PC zu steuern. Weitere Informationen und Hilfe zu diesen Befehlen finden Sie auf der TeamViewer-Website im [Handbuch für Fernsteuerung](http://www.teamviewer.com/en/support/documents/).
@@ -71,9 +73,9 @@ Wählen Sie im **TeamViewer**-Fenster im Menü **Aktionen** den Befehl **Sitzung
 ## <a name="remotely-restart-a-windows-pc"></a>Remoteneustart eines Windows-PCs
 Wenn Sie Ihre Benutzer bei Problemen unterstützen, müssen Sie deren PC möglicherweise von Zeit zu Zeit remote neu starten. Gehen Sie folgendermaßen vor, um einen Remoteneustart für einen Windows-PC auszuführen.
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Gruppen** &gt; **Alle Geräte** aus (oder eine andere Gruppe, in der der Computer enthalten ist, den Sie erneut starten möchten).
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Gruppen** &gt; **Alle Geräte** aus (oder eine andere Gruppe, in der der PC enthalten ist, den Sie erneut starten möchten).
 
-2.  Wählen Sie mindestens einen Computer aus, und wählen Sie dann **Remoteaufgaben** &gt; **Computer neu starten**.
+2.  Wählen Sie mindestens einen PC aus, und wählen Sie dann **Remoteaufgaben** &gt; **Computer neu starten**.
 
 3.  Zur Anzeige des Aufgabenstatus wählen Sie **Remoteaufgaben** unten rechts auf der Seite aus.
 
@@ -84,6 +86,6 @@ Wenn Sie Ihre Benutzer bei Problemen unterstützen, müssen Sie deren PC möglic
 [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Intune-Softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

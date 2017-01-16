@@ -1,11 +1,11 @@
 ---
-title: Konfigurieren von MAM-Richtlinien in der Intune-Konsole | Microsoft Intune
+title: Konfigurieren von MAM-Richtlinien in der Intune-Konsole | Microsoft-Dokumentation
 description: "Verwaltungsrichtlinien für mobile Anwendungen in Microsoft Intune ermöglichen Ihnen das Ändern der Funktionalität von Apps, die Sie bereitstellen, um sie auf die Kompatibilitäts- und Sicherheitsrichtlinien Ihres Unternehmens abzustimmen."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
 
 
 ---
 
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Konfigurieren und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen in der Microsoft Intune-Konsole
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Verwaltungsrichtlinien für mobile Anwendungen (MAM) in Microsoft Intune ermöglichen Ihnen das Ändern der Funktionalität von Apps, die Sie bereitstellen, um sie auf die Kompatibilitäts- und Sicherheitsrichtlinien Ihres Unternehmens abzustimmen. Sie können z. B. Ausschneide-, Kopier- und Einfügevorgänge innerhalb einer verwalteten App einschränken oder eine App so konfigurieren, dass alle Weblinks innerhalb des Managed Browser geöffnet werden.
 
 Unterstützung der Verwaltungsrichtlinien für mobile Anwendungen:
@@ -71,7 +74,7 @@ Beispiel für die Verwendung der Outlook-App:
 
 -   **Schritt 5:** Überwachen Sie die App-Bereitstellung.
 
-## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>Schritt 1: Rufen Sie den Link zu einer richtlinienverwalteten App ab, und erstellen Sie eine umschlossene App, oder verwenden Sie das Intune App-SDK, um eine für MAM aktivierte App zu erstellen.
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mam-enabled-app"></a>Schritt 1: Rufen Sie den Link zu einer richtlinienverwalteten App ab, und erstellen Sie eine umschlossene App, oder verwenden Sie das Intune App-SDK, um eine für MAM aktivierte App zu erstellen.
 
 Suchen Sie im App Store die URL der richtlinienverwalteten App, die Sie bereitstellen möchten, und notieren Sie sie. Die URL der Microsoft Word für iPad-App lautet beispielsweise **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
@@ -194,6 +197,6 @@ In Fällen, in denen das Gerät oder der Benutzer zwei in Konflikt stehende Rich
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

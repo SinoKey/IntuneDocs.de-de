@@ -1,9 +1,9 @@
 ---
-title: "Voraussetzungen für MAM-Richtlinien | Microsoft Intune"
+title: "Voraussetzungen für MAM-Richtlinien | Microsoft-Dokumentation"
 description: "Dieses Thema beschreibt die Voraussetzungen für das Einrichten von Benutzern vor dem Erstellen von Verwaltungsrichtlinien für mobile Apps."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/29/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: ac820146d81fb121a60f7029f6a52a0056d6ab0a
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: cb525deb240668c0f0f14b19f39eb1226e338629
 
 
 ---
 
 # <a name="get-ready-to-configure-mobile-app-management-policies-on-the-azure-portal"></a>Vorbereiten der Konfiguration von Verwaltungsrichtlinien für mobile Apps im Azure-Portal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In diesem Thema beschreibt die Voraussetzungen und die Schritte, die Sie ausführen müssen, **bevor** Sie im Azure-Portal Richtlinien für die Verwaltung von mobilen Apps (MAM, Mobile App Management) erstellen können.
 
 Um zu verstehen, wie MAM-Richtlinien in Intune Ihre Unternehmensdaten schützen kann, gehen Sie unter [Schützen von Apps und Daten mit Microsoft Intune](protect-apps-and-data-with-microsoft-intune.md).
@@ -121,6 +124,6 @@ In der folgenden Tabelle werden die Rollen und Berechtigungen aufgelistet, die S
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

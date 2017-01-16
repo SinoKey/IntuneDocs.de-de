@@ -1,11 +1,11 @@
 ---
-title: Verwalten des Webzugriffs mit dem Managed Browser | Microsoft Intune
+title: Verwalten des Webzugriffs mit dem Managed Browser | Microsoft-Dokumentation
 description: "Stellen Sie die Managed Browser-Anwendung bereit, um das Browsen im Web und die Übertragung von Webdaten an andere Apps einzuschränken."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: a85aa3ce78425f2e00479ab0e48338e5eef8aec3
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
 
 
 ---
 
-# Verwalten des Internetzugriffs mittels Richtlinien für Managed Browser mit Microsoft Intune
+# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Verwalten des Internetzugriffs mittels Richtlinien für Managed Browser mit Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Managed Browser ist eine Webbrowseranwendung, die Sie mit Microsoft Intune in Ihrer Organisation bereitstellen können. Mit einer Richtlinie für Managed Browser wird eine Zulassungs- oder Blockierungsliste konfiguriert, um die Websites einzuschränken, die Benutzer von Managed Browser besuchen können.
 
 Da diese App eine verwaltete App ist, können Sie auch Richtlinien für die Verwaltung mobiler Anwendungen darauf anwenden. Mithilfe dieser Richtlinien können beispielsweise Ausschneide-, Kopier- und Einfügevorgänge gesteuert und Bildschirmaufnahmen verhindert werden. Außerdem kann sichergestellt werden, dass Links zu Inhalten, die von Benutzern ausgewählt werden, nur in anderen verwalteten Apps geöffnet werden. Weitere Informationen finden Sie unter [Konfigurieren und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen in der Microsoft Intune-Konsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
@@ -39,7 +42,7 @@ Sie können Richtlinien für verwaltete Browser für die folgenden Gerätetypen 
 
 Intune Managed Browser unterstützt das Öffnen von Webinhalten von [Microsoft Intune-Anwendungspartnern](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
-## Erstellen einer Richtlinie für Managed Browser
+## <a name="create-a-managed-browser-policy"></a>Erstellen einer Richtlinie für Managed Browser
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** &gt; **Richtlinie hinzufügen** aus.
 
@@ -65,7 +68,7 @@ Weitere Informationen zu den festlegbaren URL-Formaten finden Sie in diesem Them
 
 Die neue Richtlinie wird im Knoten **Konfigurationsrichtlinien** des Arbeitsbereichs **Richtlinie** angezeigt.
 
-## Erstellen einer Bereitstellung für die Managed Browser-App
+## <a name="create-a-deployment-for-the-managed-browser-app"></a>Erstellen einer Bereitstellung für die Managed Browser-App
 Nachdem Sie die Richtlinie für Managed Browser erstellt haben, können Sie eine Softwarebereitstellung für die Managed Browser-App erstellen und der von Ihnen erstellten Richtlinie für Managed Browser zuordnen.
 
 > [!IMPORTANT]
@@ -75,7 +78,7 @@ Wenn Sie die App bereitstellen, wählen Sie die Richtlinie für Managed Browser 
 
 Weitere Informationen zum Bereitstellen von Apps finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
-## Sicherheit und Datenschutz für Managed Browser
+## <a name="security-and-privacy-for-the-managed-browser"></a>Sicherheit und Datenschutz für Managed Browser
 
 -   Auf iOS-Geräten können von Benutzern besuchte Websites, deren Zertifikat abgelaufen oder nicht vertrauenswürdig ist, nicht geöffnet werden.
 
@@ -87,12 +90,12 @@ Weitere Informationen zum Bereitstellen von Apps finden Sie unter [Bereitstellen
 
 -   Um die Authentifizierung zuzulassen und sicherzustellen, dass auf die Intune-Dokumentation zugegriffen werden kann, ist **&#42;.microsoft.com** von den Zulassungs- oder Blockierungslisten ausgenommen und immer zulässig.
 
-### Deaktivieren von Nutzungsdaten
+### <a name="turn-off-usage-data"></a>Deaktivieren von Nutzungsdaten
 Microsoft sammelt automatisch anonyme Daten über die Leistung und die Verwendung von Managed Browser, um Microsoft-Produkte und -Dienste zu verbessern. Benutzer können die Erfassung von Daten mithilfe der Einstellung für **Nutzungsdaten** auf ihren Geräten deaktivieren. Sie haben keine Kontrolle über die Erfassung dieser Daten.
 
-## Referenzinformationen
+## <a name="reference-information"></a>Referenzinformationen
 
-### URL-Format für zulässige und blockierte URLs
+### <a name="url-format-for-allowed-and-blocked-urls"></a>URL-Format für zulässige und blockierte URLs
 Nachfolgend wird erläutert, welche Formate und Platzhalter Sie zum Festlegen von URLs in den Zulassungs- und Blockierungslisten verwenden können:
 
 -   Sie können das Platzhaltersymbol (**&#42;**) gemäß den Regeln in der folgenden Liste mit zulässigen Mustern verwenden.
@@ -142,7 +145,7 @@ Nachfolgend wird erläutert, welche Formate und Platzhalter Sie zum Festlegen vo
 
     -   http://www.contoso.com: /&#42;
 
-### Lösen von Konflikten zwischen der Zulassungs- und Sperrliste
+### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>Lösen von Konflikten zwischen der Zulassungs- und Sperrliste
 Wenn mehrere Richtlinien für Managed Browser für ein Gerät bereitgestellt werden und Einstellungen in Konflikt stehen, werden sowohl der Modus (zulassen oder blockieren) als auch die URL-Listen ausgewertet. Bei einem Konflikt gilt folgendes Verhalten:
 
 -   Wenn die Modi in jeder Richtlinie identisch sind, aber die URL-Listen voneinander abweichen, werden die URLs auf dem Gerät nicht erzwungen.
@@ -155,6 +158,6 @@ Wenn mehrere Richtlinien für Managed Browser für ein Gerät bereitgestellt wer
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

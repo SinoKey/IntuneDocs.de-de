@@ -1,5 +1,5 @@
 ---
-title: "Umschließen von iOS-Apps mit dem Intune App Wrapping Tool | Microsoft Intune"
+title: "Umschließen von iOS-Apps mit dem Intune App Wrapping Tool | Microsoft-Dokumentation"
 description: "In diesem Thema lernen Sie, Ihre iOS-Apps zu umschließen, ohne den Code der App selbst zu ändern. Bereiten Sie die Apps vor, damit Sie Verwaltungsrichtlinien für mobile Apps anwenden können."
 keywords: 
 author: mtillman
@@ -14,34 +14,154 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
+ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
+ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
 
 
 ---
 
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Vorbereiten von iOS-Apps für die Verwaltung mobiler Anwendungen mit dem Intune App Wrapping Tool
 
-Verwenden Sie das Microsoft Intune App Wrapping Tool für iOS zur Änderung des Verhaltens interner iOS-Apps, indem Sie Intune-App-Schutzfeatures aktivieren, ohne den eigentlichen Code der App zu ändern.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Das Tool ist eine macOS-Befehlszeilenanwendung, die einen Wrapper um eine App erstellt. Sobald eine App verarbeitet wurde, können Sie die App-Funktionalität mit Intune-[Richtlinien für die mobile Anwendungsverwaltung](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) ändern, die vom IT-Administrator bereitgestellt werden.
+Verwenden Sie das Microsoft Intune App Wrapping Tool für iOS zum Aktivieren von Intune-App-Schutzrichtlinien für interne iOS-Apps, ohne den Code der App selbst zu ändern.
+
+Das Tool ist eine macOS-Befehlszeilenanwendung, die einen Wrapper um eine App erstellt. Sobald eine App verarbeitet wurde, können Sie die App-Funktionen ändern, indem Sie [App-Schutzrichtlinien](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) für diese bereitstellen.
 
 Das Tools können Sie unter [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) in GitHub herunterladen.
 
 
 
-## <a name="fulfill-the-prerequisites-for-the-app-wrapping-tool"></a>Erfüllen der Voraussetzungen für das App Wrapping Tool
-Weitere Informationen zum Erfüllen der Voraussetzungen finden Sie im Blogbeitrag [How to obtain prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Abrufen der erforderlichen Komponenten für das Intune App Wrapping Tool für iOS).
+## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>Allgemeine Voraussetzungen für das App Wrapping Tool
 
-|Anforderungen|Weitere Informationen|
-|---------------|--------------------------------|
-|Unterstütztes Betriebssystem und Toolset | Sie müssen das App Wrapping Tool auf einem macOS-Computer mit OS X 10.8.5 oder höher ausführen, auf dem die Toolsetversion XCode 5 oder höher installiert wurde.|
-|Signaturzertifikat und Bereitstellungsprofil | Sie müssen ein Apple-Signaturzertifikat und ein Bereitstellungsprofil besitzen. Weitere Informationen hierzu finden Sie in Ihrer [Apple-Entwicklerdokumentation](https://developer.apple.com/).|
-|Verarbeiten einer App mit dem App Wrapping Tool  |Apps müssen von Ihrem Unternehmen oder einem unabhängigen Softwareanbieter (ISV) entwickelt und signiert werden. Mit diesem Tool können Sie keine Apps aus dem Apple Store bearbeiten. Apps müssen für iOS 8.0 oder höher geschrieben sein. Apps müssen im PIE-Format (positionsunabhängige ausführbare Datei) vorliegen. Weitere Informationen zum PIE-Format finden Sie in Ihrer Apple-Entwicklerdokumentation. Die App muss die Erweiterung **APP** oder **IPA** aufweisen.|
-|Apps, die vom Tool nicht verarbeitet werden können | Verschlüsselte Apps, nicht signierte Apps und Apps mit erweiterten Dateiattributen.|
-|Festlegen von Berechtigungen für Ihre App|Bevor Sie die App umschließen, müssen Sie Berechtigungen festlegen, die der App zusätzliche Berechtigungen und Funktionen über die typischerweise gewährten hinaus erteilen. Anleitungen finden Sie unter [Festlegen von App-Berechtigungen](#setting-app-entitlements).|
+Bevor Sie das App Wrapping Tool ausführen, müssen Sie einige allgemeine Voraussetzungen erfüllen:
 
-## <a name="install-the-app-wrapping-tool"></a>Installieren des App Wrapping Tools
+* Laden Sie das [Microsoft Intune App Wrapping Tool für iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) von GitHub herunter.
+
+* Mac OS-Computer mit OS X 10.8.5 oder höher und installierter Xcode-Toolsetversion 5 oder höher.
+
+* Die Ausgangs-iOS-App muss von Ihrem Unternehmen oder einem unabhängigen Softwareanbieter (ISV) entwickelt und signiert werden.
+
+  * Die Ausgangs-App-Datei muss die Erweiterung **.ipa** oder **.app** haben.
+
+  * Die Ausgangs-App muss für iOS 8.0 kompiliert sein. oder höher kompiliert werden.
+
+  * Die Ausgangs-App darf nicht verschlüsselt werden.
+
+  * Die Ausgangs-App darf keine erweiterten Dateiattribute haben.
+
+  * Die Ausgangs-App benötigt festgelegte Berechtigungen, bevor sie vom Intune App Wrapping Tool verarbeitet wird. Diese [Berechtigungen](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) gehen über die üblicherweise erteilten hinaus und ermöglichen zusätzliche Funktionen. Anleitungen finden Sie unter [Festlegen von App-Berechtigungen](#setting-app-entitlements).
+
+## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>Apple Developer-Voraussetzungen für das App Wrapping Tool
+
+
+Um mit dem Wrapping Tool bearbeitete Apps exklusiv an Benutzer in Ihrer Organisation zu verteilen, benötigen Sie ein [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/)-Konto und mehrere Entitäten für die App-Signierung, die mit Ihrem Apple Developer-Konto verknüpft sind.
+
+Weitere Informationen zum internen Verteilen von iOS-Apps an die Benutzer in Ihrer Organisation finden Sie im offiziellen Handbuch zum [Verteilen von Apple Developer Enterprise Program-Apps](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingEnterpriseProgramApps/DistributingEnterpriseProgramApps.html#//apple_ref/doc/uid/TP40012582-CH33-SW1).
+
+Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrapper versehen werden:
+
+* Ein Entwicklerkonto im Apple Developer Enterprise Program.
+
+* Internes und Ad-hoc-Signaturzertifikat für die Verteilung mit gültigem Teambezeichner.
+
+  * Sie benötigen den SHA1-Hash des Signaturzertifikats als Parameter für das Intune App Wrapping Tool.
+
+
+* Bereitstellungsprofil für die interne Verteilung.
+
+### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>Schritte zum Erstellen eines Apple Developer Enterprise-Kontos
+1. Wechseln Sie zur Website [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/).
+
+2. Klicken Sie links oben auf **Enroll**.
+
+3. Lesen Sie die Checkliste unter „What You Need to Enroll“ durch. Klicken Sie auf unten auf der Seite auf **Start Your Enrollment**.
+
+4. **Melden Sie sich** mit der Apple ID Ihres Unternehmens an. Wenn Sie keine haben, klicken Sie auf **Create Apple ID**.
+
+5. Wählen Sie Ihren **Entitätstyp** aus, und klicken Sie auf **Continue**.
+
+6. Füllen Sie das Formular mit den Informationen Ihrer Organisation aus. Klicken Sie auf **Continue**(Weiter). An dieser Stelle kontaktiert Apple Sie, um zu prüfen, ob Sie zum Registrieren Ihrer Organisation berechtigt sind.
+
+8. Klicken Sie nach der Bestätigung auf **Agree to License**.
+
+9. Beenden Sie nach Zustimmen zu den Lizenzbedingungen den Vorgang durch **Erwerben und Aktivieren des Programms**.
+
+10. Wenn Sie sind der Team-Agent (die Person, die im Auftrag Ihres Unternehmens am Apple Developer Enterprise Program teilnimmt) sind, erstellen Sie zunächst Ihr Team, indem Sie Teammitglieder einladen und Rollen zuweisen. Informationen zum Verwalten Ihres Teams finden Sie in der Apple-Dokumentation unter [Managing Your Developer Account Team](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1).
+
+### <a name="steps-to-create-an-apple-signing-certificate"></a>Schritte zum Erstellen eines Apple-Signaturzertifikats
+
+1. Wechseln Sie zum [Apple Developer-Portal](https://developer.apple.com/).
+
+2. Klicken Sie rechts oben auf der Seite auf **Account**.
+
+3. **Melden Sie sich** mit der Apple ID Ihrer Organisation an.
+
+4. Klicken Sie auf **Certificates, IDs & Profiles**.
+
+  ![Apple Developer-Portal](../media/app-wrapper/iOS-signing-cert-1.png)
+
+5. Klicken Sie auf ![das Pluszeichen im Apple Developer-Portal](../media/app-wrapper/iOS-signing-cert-2.png) (rechts oben), um ein iOS-Zertifikat hinzuzufügen.
+
+6. Wählen Sie unter **Production** das Erstellen eines Zertifikats des Typs **In-House and Ad Hoc** aus.
+
+  ![Wählen Sie das „In-House and Ad Hoc“-Zertifikat aus.](../media/app-wrapper/iOS-signing-cert-3.png)
+
+7. Klicken Sie unten auf der Seite auf **Next**.
+
+8. Lesen Sie die Anweisungen zum Erstellen einer **Zertifikatsignieranforderung (Certificate Signing Request, CSR)** mithilfe der Anwendung „Schlüsselbundverwaltung“ auf Ihrem macOS-Computer.
+
+  ![Lesen der Anweisungen zum Erstellen einer CSR](../media/app-wrapper/iOS-signing-cert-4.png)
+
+9. Befolgen Sie die Anweisungen zum Erstellen einer Zertifikatsignieranforderung. Starten Sie auf dem macOS-Computer die Anwendung **Schlüsselbundverwaltung**.
+
+10. Wechseln Sie im macOS-Menü oben auf dem Bildschirm zu **Schlüsselbundverwaltung > Zertifikatsassistent > Zertifikat einer Zertifizierungsinstanz anfordern**.  
+
+  ![Anfordern eines Zertifikats von einer Zertifizierungsinstanz in Schlüsselbundverwaltung](../media/app-wrapper/iOS-signing-cert-5.png)
+
+11. Befolgen Sie die obigen Anweisungen auf der Apple Developer-Website zum Erstellen einer CSR-Datei. Speichern Sie die CSR-Datei auf Ihrem macOS-Computer.
+
+  ![Anfordern eines Zertifikats von einer Zertifizierungsinstanz in Schlüsselbundverwaltung](../media/app-wrapper/iOS-signing-cert-6.png)
+
+12. Kehren Sie zur Apple Developer-Website zurück. Klicken Sie auf **Continue**(Weiter). Laden Sie dann die CSR-Datei hoch.
+
+13. Apple generiert Ihr Signaturzertifikat. Laden Sie es herunter, und speichern Sie es an einem einprägsamen Speicherort auf Ihrem macOS-Computer.
+
+  ![Herunterladen Ihres Signaturzertifikats](../media/app-wrapper/iOS-signing-cert-7.png)
+
+14. Doppelklicken Sie auf die Zertifikatsdatei, die Sie gerade heruntergeladen haben, um das Zertifikat einem Schlüsselbund hinzuzufügen.
+
+15. Öffnen Sie **Schlüsselbundverwaltung** erneut. Suchen Sie Ihr Zertifikat, indem Sie im Fenster „Schlüsselbundverwaltung“ rechts oben auf der Suchleiste nach **iPhone** suchen. Klicken Sie mit der rechten Maustaste auf das Element, um das Menü einzublenden, und klicken Sie auf **Informationen**.
+
+  ![Hinzufügen Ihres Zertifikats zu einem Schlüsselbund](../media/app-wrapper/iOS-signing-cert-8.png)
+
+16. Ein Informationsfenster wird angezeigt. Scrollen Sie nach unten, und sehen Sie unter der Bezeichnung **Fingerabdrücke** nach. Kopieren Sie die **SHA1**-Zeichenfolge, die Sie als Parameter „-c“ für das App Wrapping Tool verwenden.
+
+  ![Hinzufügen Ihres Zertifikats zu einem Schlüsselbund](../media/app-wrapper/iOS-signing-cert-9.png)
+
+
+
+### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>Schritte zum Erstellen eines Bereitstellungsprofils für die interne Verteilung
+
+1. Wechseln Sie zurück zum [Apple Developer-Kontoportal](https://developer.apple.com/account/), und **melden Sie sich** mit der Apple ID Ihrer Organisation an.
+
+2. Klicken Sie auf **Certificates, IDs & Profiles**.
+
+3. Klicken Sie auf ![das Pluszeichen im Apple Developer-Portal](../media/app-wrapper/iOS-signing-cert-2.png) (rechts oben), um ein iOS-Bereitstellungsprofil hinzuzufügen.
+
+4. Wählen Sie unter **Distribution** das Erstellen eines Bereitstellungsprofils des Typs **In House** aus.
+
+  ![Auswählen des Bereitstellungsprofils „In House“](../media/app-wrapper/iOS-provisioning-profile-1.png)
+
+5. Klicken Sie auf **Continue**(Weiter). Verknüpfen Sie unbedingt das zuvor generierte Signaturzertifikat mit dem Bereitstellungsprofil.
+
+6. Befolgen Sie die Anweisungen zum Herunterladen Ihres Profils (mit der Erweiterung „.mobileprovision“) auf Ihren macOS-Computer.
+
+7. Speichern Sie die Datei an einem einprägsamen Speicherort. Diese Datei wird mit im App Wrapping Tool für den Parameter „-p“ verwendet.
+
+
+
+## <a name="download-the-app-wrapping-tool"></a>Herunterladen des App Wrapping Tools
 
 1.  Laden Sie die Dateien für das App Wrapping Tool aus [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) auf einen macOS-Computer herunter.
 

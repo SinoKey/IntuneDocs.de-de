@@ -1,12 +1,12 @@
 ---
 
-title: "Einstellungen für Android- und Samsung KNOX Standard-Richtlinien | Microsoft Intune"
+title: "Einstellungen für Android- und Samsung KNOX Standard-Richtlinien | Microsoft-Dokumentation"
 description: "Erstellen Sie Richtlinien, die Einstellungen und Features auf Android-Geräten steuern, die Sie mit Intune verwalten."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,15 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
+ms.sourcegitcommit: a90e5bc6ed9c4c7447f6ed673f9b75db99257c04
+ms.openlocfilehash: 3f7236989ec2d444601aba4a594175a289e2fc77
 
 
 ---
 
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Einstellungen für Android- und Samsung KNOX Standard-Richtlinien in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune bietet eine Vielzahl von integrierten allgemeinen Einstellungen, die Sie auf Android-Geräten konfigurieren können. Darüber hinaus können Sie OMA-URI-Werte (Open Mobile Alliance Uniform Resource Identifier) angeben, um benutzerdefinierte Einstellungen zu erstellen, die über Intune nicht verfügbar sind.
 
@@ -144,6 +146,8 @@ Geben Sie in der Liste der **kompatiblen &amp; nicht kompatiblen Apps** eine Lis
 |**Bearbeiten**|Ermöglicht Ihnen das Bearbeiten von Name, Herausgeber und URL der ausgewählten App.|
 |**Löschen**|Löscht die ausgewählte App aus der Liste.|
 
+Richtlinien mit kompatiblen und nicht kompatiblen App-Einstellungen müssen für Benutzergruppen bereitgestellt werden.
+
 ### <a name="kiosk-mode-settings"></a>Einstellungen für den Kioskmodus
 Geben Sie die folgenden Einstellungen für **Samsung KNOX Standard-Geräte** an:
 
@@ -177,9 +181,7 @@ Beispiel: Suchen Sie in Google Play nach Microsoft Office Mobile. Die URL, die S
 Stellen Sie mithilfe der **benutzerdefinierten Android-Konfigurationsrichtlinie** von Microsoft Intune die Einstellungen für OMA-URI bereit, um Features auf Android-Geräten zu steuern. Dies sind die Standardeinstellungen, die viele Hersteller von mobilen Geräten verwenden, um Gerätefunktionen zu steuern.
 
 Diese Funktion soll es Ihnen ermöglichen, Android-Einstellungen bereitzustellen, die nicht mit Intune-Richtlinien konfigurierbar sind.
-
-> [!NOTE]
-> Derzeit unterstützen benutzerdefinierte Android-Richtlinien unterstützt nur das Konfigurieren von WLAN-Einstellungen für Android-Geräte, die einen vorinstallierten Schlüssel enthalten.
+Intune unterstützt zurzeit eine begrenzte Anzahl von benutzerdefinierten Android-Richtlinien. Mit den Beispielen in diesem Thema finden Sie heraus, welche Richtlinien Sie konfigurieren können.
 
 ### <a name="general-settings"></a>Allgemeine Einstellungen
 
@@ -209,6 +211,6 @@ Diese Funktion soll es Ihnen ermöglichen, Android-Einstellungen bereitzustellen
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

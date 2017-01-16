@@ -1,5 +1,5 @@
 ---
-title: Aktivieren des Zugriffs auf Unternehmensressourcen | Microsoft Intune
+title: Aktivieren des Zugriffs auf Unternehmensressourcen | Microsoft-Dokumentation
 description: "Die WLAN-, VPN- und E-Mail-Profile greifen ineinander, um Ihre Benutzer beim Zugriff auf die Dateien und Ressourcen, die sie benötigen, zu unterstützen."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f91c3530599b75093f536fd85eaf21d0b4e86e50
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: bda32f27216c7b65bd02334bae2882e840e7a99d
 
 
 ---
 
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>Aktivieren des Zugriffs auf Unternehmensressourcen mit Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Die WLAN-, VPN- und E-Mail-Profile von Microsoft Intune greifen ineinander, um Ihre Benutzer beim Zugriff auf die Dateien und Ressourcen, die sie für ihre Arbeit benötigen, zu unterstützen, unabhängig davon, wo sie gespeichert sind. Dieser Zugriff wird mithilfe von Zertifikatprofilen gesichert.
 
 ## <a name="wi-fi-profileswi-fi-connections-in-microsoft-intunemd-and-supported-platforms"></a>[WLAN-Profile](wi-fi-connections-in-microsoft-intune.md) und unterstützte Plattformen
@@ -57,6 +60,6 @@ Ermöglichen den sicheren Zugriff auf Unternehmensressourcen einschließlich Dra
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

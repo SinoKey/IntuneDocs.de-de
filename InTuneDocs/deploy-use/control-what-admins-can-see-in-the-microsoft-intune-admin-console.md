@@ -1,11 +1,11 @@
 ---
-title: "Anpassen von Konsolenansichten für Administratorrollen | Microsoft Intune"
+title: "Anpassen von Konsolenansichten für Administratorrollen | Microsoft-Dokumentation"
 description: "Filtern Sie wie in diesem Thema beschrieben die Intune-Verwaltungskonsolenansicht, damit Administratoren nur die Elemente anzeigen können, die sie für ihre Rolle benötigen."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,19 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 02448f2f960d98b28780798b469aea23cdab0e2d
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: ee35fb2c8e39af099fb061211ea1fdf767230217
 
 
 ---
 
-# Anpassen von Intune-Konsolenansichten an Administratorrollen
+# <a name="customize-intune-console-views-according-to-admin-roles"></a>Anpassen von Intune-Konsolenansichten an Administratorrollen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Sie können die Microsoft Intune-Verwaltungskonsolenansicht filtern, damit Administratoren nur die Elemente anzeigen können, die sie für ihre Rolle benötigen. Beispielsweise empfiehlt es sich, nur den Operatoren der Verwaltungskonsole die Erlaubnis zu erteilen, Malwaredefinitionen zu aktualisieren oder die Kennung auf Geräten zurückzusetzen. Dies erfolgt mithilfe der vorab festgelegten **Bezeichnungen**, die Sie bestimmten Benutzern zuweisen. Wenn diese Benutzer auf die Verwaltungskonsole zugreifen, sehen sie nur die für ihre Bezeichnung bestimmten Elemente.
 
-## So erstellen Sie eine benutzerdefinierte Ansicht
+## <a name="to-create-a-custom-view"></a>So erstellen Sie eine benutzerdefinierte Ansicht
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Option **Admin** &gt; **Dienstadministratoren** aus.
 
@@ -69,6 +72,6 @@ Wenn der von Ihnen konfigurierte Administrator das nächste Mal die Intune-Verwa
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

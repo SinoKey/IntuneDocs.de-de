@@ -1,11 +1,11 @@
 ---
-title: "Einstellungen für Exchange ActiveSync-Richtlinien | Microsoft Intune"
+title: "Einstellungen für Exchange ActiveSync-Richtlinien | Microsoft-Dokumentation"
 description: "Verwenden Sie die Intune Exchange ActiveSync-Richtlinie, um Einstellungen zu konfigurieren, mit denen Sie Features und Funktionen auf Geräten steuern können, die von Exchange ActiveSync verwaltet werden."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,20 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 770871d8cc7a32fb54ef01fb9ac84b1fdee2ec90
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: f35a6da93e48141489b89e62b37b473d885479cf
 
 
 ---
 
-# Einstellungen für Exchange ActiveSync-Richtlinien in Microsoft Intune
+# <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Einstellungen für Exchange ActiveSync-Richtlinien in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einstellungen zu konfigurieren, mit denen Sie eine Reihe von Features und Funktionen auf Geräten steuern können, die von Exchange ActiveSync verwaltet werden.
 
 
-## Kennworteinstellungen
+## <a name="password-settings"></a>Kennworteinstellungen
 
 |Name der Einstellung|Details
 |----------------|---|
@@ -36,9 +39,9 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 |**Kennwortablauf (Tage)**|Gibt die Anzahl der Tage an, nach denen das Gerätekennwort geändert werden muss.
 |**Kennwortverlauf speichern**|Gibt an, ob dem Benutzer zuvor bereits verwendete Kennwörter erlaubt werden sollen.|
 |**Kennwortverlauf speichern** – **Wiederverwendung vorheriger Kennwörter verhindern**|Gibt die Anzahl der zuvor bereits verwendeten Kennwörter an, die nicht erneut verwendet werden können.|
-|**Minuten Inaktivität vor erneuter Anforderung des Kennworts**|Gibt den Zeitraum an, über den sich das Gerät im Leerlauf befinden muss, bevor der Bildschirm gesperrt wird.
+|**Minuten Inaktivität vor Anforderung des Kennworts**|Gibt den Zeitraum an, über den sich das Gerät im Leerlauf befinden muss, bevor der Bildschirm gesperrt wird.
 
-## Verschlüsselungseinstellungen
+## <a name="encryption-settings"></a>Verschlüsselungseinstellungen
 
 |Name der Einstellung|Details|
 |----------------|---|
@@ -54,21 +57,21 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 
 -   Wenn Sie die Verschlüsselung auf einem Windows 8.1-Gerät erzwingen, ist der Wiederherstellungsschlüssel nur über das Microsoft-Konto des Benutzers zugänglich. Der Zugriff erfolgt über das OneDrive-Konto des Benutzers. Sie können diesen Schlüssel nicht im Auftrag eines Benutzers wiederherstellen.
 
-## E-Mail-Einstellungen
+## <a name="email-settings"></a>E-Mail-Einstellungen
 
 |Name der Einstellung|Details
 |----------------|---|
 |**Herunterladen von E-Mail-Anhängen für Benutzer zulassen**|Gibt an, ob E-Mail-Anlagen auf das Gerät heruntergeladen werden können.|
 |**Synchronisierungszeitraum für E-Mail**|Gibt die Anzahl der Tage an, über die empfangene E-Mails mit dem Gerät synchronisiert werden.
-|**Synchronisierung mit Exchange ActiveSync für mobile Geräte zulassen, die diese Einstellungen nicht vollständig unterstützen**|Gibt an, ob Exchange der Zugriff auf Geräte erlaubt wird, die eine oder mehrere Exchange ActiveSync-Einstellungen nicht unterstützen.
+|**Synchronisierung mit Exchange für mobile Geräte zulassen, von denen Exchange ActiveSync-Einstellungen nicht vollständig unterstützt werden**|Gibt an, ob Exchange der Zugriff auf Geräte erlaubt wird, die eine oder mehrere Exchange ActiveSync-Einstellungen nicht unterstützen.
 
-## Browsereinstellungen
+## <a name="browser-settings"></a>Browsereinstellungen
 
 |Name der Einstellung|Details
 |----------------|---|
 |**Webbrowser zulassen**|Gibt an, ob der Webbrowser des Geräts verwendet werden darf.<br>(Für Windows RT oder Windows Phone nicht verfügbar.)
 
-## Hardware-Einstellungen
+## <a name="hardware-settings"></a>Hardware-Einstellungen
 
 |Name der Einstellung|Details
 |----------------|---|
@@ -76,11 +79,11 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 
 
 
-### Weitere Informationen:
+### <a name="see-also"></a>Weitere Informationen:
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

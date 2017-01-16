@@ -14,75 +14,72 @@ ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: 416f200bdb72bae98897cb8d279dbdb767757da9
+ms.sourcegitcommit: 80e96003c584c67cb6b0289a7e2ed1ff3a833c2c
+ms.openlocfilehash: 076fbc5e2c73a7c6d5a17130f477a840c3c4ed19
 
 
 ---
 
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Problembehandlung der Lookout-Integration mit Intune
 In diesem Thema werden einige häufige Probleme beschrieben, die möglicherweise bei Ihrer Bereitstellung von Lookout Mobile Threat Protection (MTP) auftreten.
-## <a name="troubleshoot-login-errors"></a>Problembehandlung für Anmeldefehler
-### <a name="403-errors"></a>403-Fehler
-Bei der Anmeldung an der [Lookout MTP-Konsole](https://aad.lookout.com) tritt möglicherweise ein 403-Fehler auf: **Sie sind nicht zum Zugriff auf den Dienst berechtigt** Dies kann geschehen, wenn der von Ihnen angegebene Benutzername kein Mitglied der Azure Active Directory-Gruppe (Azure AD) ist, die für den Zugriff auf Lookout MTP konfiguriert ist.
 
-Lookout MTP ist dafür konfiguriert, nur Benutzern aus einer konfigurierten Azure AD-Gruppe den Zugriff zu erteilen. Wenn Sie nicht sicher sind, für welche Gruppe der Zugriff auf Lookout MTP konfiguriert ist, wenden Sie sich an den Lookout-Support.
+**Anmeldefehler**
 
-Sie können sich auf den folgenden Wegen an den Lookout-Support wenden:
+## <a name="403-errors"></a>403-Fehler
+Bei der Anmeldung an der [Lookout MTP-Konsole](https://aad.lookout.com) tritt ein 403-Fehler auf: **Sie sind nicht zum Zugriff auf den Dienst berechtigt**. Dies kann geschehen, wenn der angegebene Benutzername kein Mitglied der Azure Active Directory-Gruppe (Azure AD) ist, die für den Zugriff auf Lookout MTP konfiguriert ist.
+
+Lookout MTP erlaubt nur Benutzern in einer konfigurierten Azure AD-Gruppe den Zugriff auf den Dienst. Um zu ermitteln, für welche Gruppe der Zugriff auf Lookout MTP konfiguriert ist, wenden Sie sich an den Lookout-Support:
 
 * E-Mail: enterprisesupport@lookout.com
 * Melden Sie sich bei der [MTP-Konsole](http://aad.lookout.com) an, und navigieren Sie zum Modul **Support**.
 * Navigieren Sie zu: „https://enterprise.support.lookout.com/hc/en-us/requests“, und stellen Sie eine Supportanfrage.
 
-### <a name="unable-to-sign-in"></a>Die Anmeldung ist nicht möglich
-Möglicherweise wird der folgende Fehler angezeigt, wenn der globale Administratorbenutzer von Azure AD das erstmalige Lookout-Setup nicht akzeptiert hat.
+## <a name="unable-to-sign-in"></a>Die Anmeldung ist nicht möglich
+Der folgende Fehler wird angezeigt, wenn der globale Administratorbenutzer von Azure AD das erstmalige Lookout-Setup nicht akzeptiert hat.
 
 ![Screenshot des Lookout-Anmeldebildschirms, der den Anmeldefehler darstellt](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
 Um dieses Problem zu beheben, muss sich der globale Administratorbenutzer bei „https://aad.lookout.com/les?action=consent“ anmelden und die Aufforderung zum Starten von Setup akzeptieren. Ausführlichere Informationen finden Sie im Thema [Einrichten Ihres Abonnements für Lookout MTP](../deploy-use/set-up-your-subscription-with-lookout-mtp.md)
 
-## <a name="troubleshoot-device-status-issues"></a>Behandeln von Problemen mit dem Gerätestatus
+**Probleme mit dem Gerätestatus**
 
-### <a name="device-not-showing-up-in-the-lookout-mtp-console-device-list"></a>Das Gerät wird in der Geräteliste in der Lookout MTP-Konsole nicht angezeigt
+## <a name="device-missing-from-lookout-device-list"></a>Gerät fehlt in der Lookout-Geräteliste.
 
 Diese Problem kann in allen folgenden Szenarien auftreten:
-* Wenn der Benutzer, der das Gerät besitzt, nicht Mitglied der in der **Lookout MTP-Konsole** angegebenen **Registrierungsgruppe** ist.  Gehen Sie im Modul **System** zur Registerkarte **Intune-Connector**, und zeigen Sie die Einstellungen unter **Registrierungsverwaltung** an.  Sie sollten mindestens eine Azure AD-Gruppe sehen, die für die Registrierung konfiguriert ist.  Überprüfen Sie, ob der Benutzer, dem das fehlende Gerät gehört, Teil einer der angegebenen Azure AD-Gruppen ist.  Nachdem der Registrierungsgruppe ein neuer Benutzer hinzugefügt wurde, benötigt es bis zum Ablauf des konfigurierten Abrufintervalls (der Standardwert ist 5 Minuten), bis das Gerät im Modul **Geräte** der Lookout MTP-Konsole angezeigt wird.
-
+* Der Benutzer des Geräts ist kein Mitglied der in der **Lookout MTP-Konsole** angegebenen **Registrierungsgruppe**.  Wechseln Sie in der [Lookout-Konsole](http://aad.lookout.com) zu **System** > **Intune-Connector** > **Registrierungsverwaltung**.  Überprüfen Sie die für die Registrierung konfigurierten Azure AD-Gruppen, und stellen Sie sicher, dass der Benutzer des Geräts Mitglied einer der Azure AD-Gruppen ist.  Nachdem der Registrierungsgruppe ein Benutzer hinzugefügt wurde, kann es bis zum Ablauf des konfigurierten Abrufintervalls dauern (standardmäßig 5 Minuten), bis das Gerät im Modul **Geräte** der Lookout MTP-Konsole angezeigt wird.
 * Wenn das Gerät nicht von Lookout MTP unterstützt wird.  Nicht unterstützte Geräte werden in der Lookout MTP-Konsole im Abschnitt **Verwaltete Geräte** der Connectoreinstellungen angezeigt.
 
-### <a name="device-continues-to-be-reported-as-pending"></a>Das Gerät wird weiterhin als **ausstehend** gemeldet
+### <a name="device-reported-as-pending"></a>Gerät wird als **ausstehend** gemeldet.
 
-Ein Gerät, das als **Ausstehend** angezeigt wird, bedeutet, dass der Endbenutzer die Lookout for Work-App nicht geöffnet und auf die Schaltfläche **Aktivieren** getippt hat. Weitere Details zur Geräteaktivierung mit der Lookout for Work-App finden Sie im folgenden Thema:
+Ein Gerät wird als **Ausstehend** angezeigt, wenn der Endbenutzer die Lookout for Work-App nicht geöffnet und auf die Schaltfläche **Aktivieren** getippt hat. Weitere Informationen zur Geräteaktivierung mit der Lookout for Work-App finden Sie unter [Sie werden aufgefordert, Lookout for Work auf Ihrem Android-Gerät zu installieren](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android) und [Sie werden aufgefordert, Lookout for Work auf Ihrem iOS-Gerät zu installieren](https://docs.microsoft.com/en-us/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios).
 
-[Sie werden aufgefordert, Lookout for Work auf Ihrem Android-Gerät zu installieren](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
+## <a name="device-whos-active-but-has-no-device-id"></a>Gerät ist aktiv, verfügt aber nicht über eine Geräte-ID.
+Wenn ein aktives Gerät in der Lookout MTP-Konsole nicht über eine Geräte-ID verfügt, befindet sich der Benutzer des Geräts nicht in der Registrierungsgruppe. Ein Gerät kann diesen Zustand aufweisen, wenn der Benutzer des Geräts aus der Registrierungsgruppe entfernt wurde oder wenn die Registrierungsgruppe entfernt wurde.
 
-### <a name="in-the-lookout-mtp-console-a-device-is-showing-as-active-but-does-not-have-a-device-id"></a>In der Lookout MTP-Konsole wird ein Gerät als aktiv angezeigt, es weist aber keine Geräte-ID auf.  
-Dies bedeutet, dass der Benutzer, der das Gerät besitzt, sich nicht in der in der Lookout MTP-Konsole angegebenen Registrierungsgruppe befindet.   Ein Gerät kann in diesen Zustand kommen, wenn der Benutzer, der das Gerät besitzt, aus der Registrierungsgruppe entfernt wurde oder die Registrierungsgruppe entfernt wurde, zu der der Benutzer gehört.
-
-Navigieren Sie im Modul **System** der Lookout MTP-Konsole zur Registerkarte **Intune-Connector**, und überprüfen Sie die Einstellungen unter **Registrierung**.  Sie sollten mindestens eine Azure AD-Gruppe sehen, die für die Registrierung konfiguriert ist.  Überprüfen Sie, ob der Benutzer, dem das Gerät gehört, Teil einer der angegebenen Azure AD-Gruppen ist.  
+Wechseln Sie in der [Lookout-Konsole](http://aad.lookout.com) zu **System** > **Intune-Connector** > **Registrierung**, und überprüfen Sie die Einstellungen.  Überprüfen Sie die Azure AD-Gruppen, und stellen Sie sicher, dass der Benutzer des Geräts Mitglied einer der Azure AD-Gruppen ist.
 
 Während ein Gerät sich in diesem Zustand befindet, informiert Lookout den Benutzer weiterhin über alle erkannten Bedrohungen, sendet aber keine Bedrohungsinformationen an Intune.
 
-### <a name="device-shows-disconnected-state"></a>Das Gerät zeigt den Status „getrennt“ an
+## <a name="device-reported-as-disconnected"></a>Gerät wird als **getrennt** gemeldet.
 
-„Getrennt“ bedeutet, dass Lookout MTP über einen vorkonfigurierten Zeitraum hinaus (der Standard sind 30 Tage, der Minimalwert 7 Tage) nicht mehr von dem Gerät gehört hat. Dies hat den Grund, dass entweder die Unternehmensportal-App oder die Lookout for Work-App nicht auf dem Gerät installiert ist oder deinstalliert wurde. Das Problem sollte sich durch erneutes Installieren der Apps beheben lassen. Wenn der Benutzer Lookout for Work öffnet und die App aktiviert, synchronisiert sich das Gerät erneut mit Lookout MTP und Intune.    
+**Getrennt** bedeutet, dass das Gerät nicht innerhalb des konfigurierten Intervalls mit Lookout MTP synchronisiert wurde. Der Standardwert hierfür beträgt 30 Tage, der Mindestwert 7 Tage. Entweder die Unternehmensportal-App oder die Lookout for Work-App fehlt auf dem Gerät. Das Problem sollte sich durch erneutes Installieren der Apps beheben lassen. Wenn der Benutzer Lookout for Work öffnet und die App aktiviert, synchronisiert sich das Gerät erneut mit Lookout MTP und Intune.    
 
-### <a name="forcing-a-resync-on-the-device"></a>Erzwingen einer erneuten Synchronisierung auf dem Gerät
+### <a name="forcing-a-device-sync"></a>Erzwingen einer Gerätesynchronisierung
 Der Administrator kann das Gerät im Modul **Geräte** der Lookout MTP-Konsole auswählen und sich entscheiden, es zu löschen.   Wenn der Gerätebesitzer die Lookout for Work-App das nächste Mal öffnet und auf **Aktivieren** klickt, erfolgt eine vollständige Neusynchronisierung des Gerätezustands.
 
-### <a name="the-owner-of-the-device-is-no-longer-using-this-device"></a>Der Besitzer verwendet dieses Gerät nicht mehr
-Sie müssen das Gerät zurücksetzen und den neuen Besitzer bitten, sich zu registrieren.  Wählen Sie das Gerät in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Abkoppeln/Zurücksetzen** aus, um das Gerät aus der Verwaltung zu entfernen. Nach dem Abkoppeln können Sie das Gerät löschen.
+## <a name="device-has-a-new-user"></a>Gerät verfügt über einen neuen Benutzer.
+Sie sollten das Gerät zurücksetzen und den neuen Benutzer bitten, sich zu registrieren.  Wählen Sie das Gerät in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Abkoppeln/Zurücksetzen** aus, um das Gerät aus der Verwaltung zu entfernen. Nach dem Abkoppeln können Sie das Gerät löschen.
 
 ![Screenshot des Gerätemoduls in der Intune-Verwaltungskonsole mit dargestellter Option „Abkoppeln/Zurücksetzen“](../media/mtp/mtp-retire-device-intune-console.png)
 
-Alternativ können Sie in der Lookout MTP-Konsole zum Modul **Geräte** navigieren und **Löschen** auswählen.  
+Sie können auch in der [Lookout-Konsole](http://aad.lookout.com) zum Modul **Geräte** navigieren und **Löschen** auswählen.  
 
-Sofern der neue Benutzer sich in einer der Registrierungsgruppen befindet, die in der Lookout MTP-Konsole angegeben sind, wird das Gerät angezeigt, nachdem Azure AD das Gerät dem neuen Benutzer zugeordnet hat.
+Wenn sich der neue Benutzer in einer Lookout MTP-Registrierungsgruppe befindet, wird das Gerät angezeigt, nachdem Azure AD das Gerät dem neuen Benutzer zugeordnet hat.
 
 ## <a name="compliance-remediation-workflows"></a>Arbeitsabläufe zur Wiederherstellung der Kompatibilität
-[Sie werden aufgefordert, Lookout for Work auf Ihrem Android-Gerät zu installieren]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
-
-[Sie müssen eine Bedrohung beseitigen, die Lookout for Work auf Ihrem Android-Gerät erkannt hat](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+- [Sie werden aufgefordert, Lookout for Work auf Ihrem Android-Gerät zu installieren]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
+- [Sie müssen eine Bedrohung beseitigen, die Lookout for Work auf Ihrem Android-Gerät erkannt hat](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+- [Sie müssen eine Bedrohung beseitigen, die Lookout for Work auf Ihrem iOS-Gerät erkannt hat](https://docs.microsoft.com/en-us/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 
 ### <a name="see-also"></a>Weitere Informationen:
@@ -90,6 +87,6 @@ Sofern der neue Benutzer sich in einer der Registrierungsgruppen befindet, die i
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 
