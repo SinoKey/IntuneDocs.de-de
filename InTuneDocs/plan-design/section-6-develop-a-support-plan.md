@@ -14,15 +14,15 @@ ms.assetid: b9428769-4333-4778-b677-f23dea1f74da
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 53bb650bbb20d5efae0ba53f0c0bc257a19cbaae
-ms.openlocfilehash: 96f6ca25229244a9cde24609e0c4c37412a3eb01
+ms.sourcegitcommit: 874146573898e8a28de83ed599dbd4829ea8f335
+ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
 
 
 ---
 
 # <a name="develop-an-intune-support-plan"></a>Entwickeln eines Intune-Supportplans
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
 Ein Intune-Supportplan kann vorteilhaft sein, um Intune-bezogene Probleme effektiv zu identifizieren und zu beheben und um bei Endbenutzern für einen besseren Gesamteindruck von Intune zu sorgen. Hier sind einige Fragen aufgeführt, die beim Entwickeln Ihres Intune-Supportplans berücksichtigt werden sollten:
 
@@ -38,7 +38,7 @@ Ein Intune-Supportplan kann vorteilhaft sein, um Intune-bezogene Probleme effekt
 
 Betrachten wir die einzelnen Bereiche im Detail.
 
-## <a name="which-teams-are-responsible-for-providing-support"></a>Welche Teams sind für die Bereitstellung von Support verantwortlich? 
+## <a name="which-teams-are-responsible-for-providing-support"></a>Welche Teams sind für die Bereitstellung von Support verantwortlich?
 
 Organisationen bieten möglicherweise mehrere Supportebenen/-stufen (1 bis 3) an. Beispielsweise sind die Ebenen 1 und 2 Teil des Supportteams, und die Ebene 3 umfasst Mitglieder des MDM-Teams, die für die Bereitstellung von Intune verantwortlich sind.
 
@@ -46,7 +46,7 @@ Organisationen bieten möglicherweise mehrere Supportebenen/-stufen (1 bis 3) an
 
 Ebene 1 ist normalerweise die erste Supportebene und in der Regel die erste Ebene, mit der der Benutzer bei Supportanfragen in Kontakt tritt. Wenn Ebene 1 das Problem des Endbenutzers nicht beheben kann, wird es an Ebene 2 eskaliert, und Ebene 2 eskaliert es bei Bedarf an Ebene 3. Darüber hinaus kann der Microsoft-Support als Ebene 4 betrachtet werden.
 
--   Weitere Informationen zum [Intune-Support](/intune/troubleshoot/how-to-get-support-for-microsoft-intune.md).
+-   Weitere Informationen zum [Intune-Support](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 Für die anfänglichen Produktionsrolloutphasen können alle drei Ebenen einer Organisation an einem Konferenz- oder Skype-Anruf teilnehmen. Hier sehen Sie ein Beispiel dafür, wie eine Organisation ihre Workflows für IT-Support/Helpdesk implementieren kann:
 
@@ -84,10 +84,10 @@ Ein Beispiel für eine Trainingsagenda für den Intune-Support ist unten angegeb
 
 -   Fragen und Antworten
 
->[!TIP] 
+>[!TIP]
 > Unter [Weitere Ressourcen](additional-resources.md) finden Sie technische Ressourcen, die für Ihr Supportteam möglicherweise als Referenz und bei der Inbetriebnahme von Microsoft Intune nützlich sind.
 
-## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>Welche Möglichkeiten gibt es, das Supportteam zu einem früheren Zeitpunkt einzubeziehen? 
+## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>Welche Möglichkeiten gibt es, das Supportteam zu einem früheren Zeitpunkt einzubeziehen?
 
 Das Einbeziehen des IT-Support-/Helpdeskpersonals in frühe Phasen der Planung der Intune-Bereitstellung und in das entsprechende Pilotprojekt kann für Organisationen von großem Vorteil sein. Das Supportpersonal erhält die Gelegenheit, sich mit der Lösung vertraut zu machen und wertvolle Erfahrungen zu gewinnen. Außerdem kann sich das IT-Support-/Helpdeskpersonal auf den Support beim vollständigen Produktionsrollout der Organisation vorbereiten.
 
@@ -97,6 +97,6 @@ Der nächste Abschnitt enthält Hinweise zum [Entwerfen von Intune](section-7-cr
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 
