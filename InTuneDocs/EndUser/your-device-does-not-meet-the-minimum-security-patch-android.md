@@ -1,46 +1,13 @@
 ---
-title: "Ihr Gerät weist nicht den mindestens erforderlichen Sicherheitspatch auf | Microsoft-Dokumentation"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 09/25/2016
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-ROBOTS: NOINDEX,NOFOLLOW
+redirect_url: https://docs.microsoft.com/intune/enduser/you-need-to-update-your-device-os-security-patch-android
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: bdcaa12d8b62b5e7497a844d91777e2af0a76bfd
-
+ms.sourcegitcommit: 5311b186af1e17994eaf67c53541ccac19482a92
+ms.openlocfilehash: 4568cc1525da20930ada172310ed43f319825fb6
 
 ---
 
-# <a name="your-device-does-not-meet-the-minimum-security-patch"></a>Ihr Gerät weist nicht den mindestens erforderlichen Sicherheitspatch auf
-
-Wenn Sie die Meldung „Minimum Android security patch level is not configured“ (Niedrigste zulässige Android-Sicherheitspatchebene ist nicht konfiguriert) sehen, müssen Sie den mindestens erforderlichen Sicherheitspatch oder eine höhere Version installieren. Ihr IT-Administrator verlangt diese Installation, um die Unternehmensdaten auf Ihrem Android-Gerät zu schützen.
-
-Der Speicherort der aktuellen Sicherheitspatchebene variiert je nach Android-Gerät. Sie müssen herausfinden, ob es sich bei Ihrem Gerät um ein Samsung Knox-Gerät oder einen anderen Typ von Android-Gerät handelt. Wechseln Sie zu **Einstellungen** > **Geräteinformationen**, um zu überprüfen, ob es sich bei Ihrem Gerät um ein Samsung Knox-Gerät handelt. Wird das Wort „Knox“ dort nicht aufgelistet, verfügen Sie nicht über ein Samsung Knox-Gerät.
-
-**So ermitteln Sie die neueste Softwareversion auf Ihrem Gerät:**
-
-- Nicht-Samsung Knox-Geräte: Versuchen Sie die Softwareermittlung wie folgt. Wechseln Sie zu **Einstellungen** > **Info** > **Softwareinformationen** > **Mehr**, und sehen Sie anschließend unter **Android security patch level** (Android-Sicherheitspatchebene) nach. Die Menünamen und Speicherorte können bei verschiedenen Android-Geräten leicht abweichen.
-
-- Samsung Knox-Geräte: Wechseln Sie zu **Einstellungen** > **About Phone** (Info zu Gerät) > **Security software version** (Sicherheitssoftwareversion).
-
-**So installieren Sie den erforderlichen Sicherheitspatch:**
-
-- Nicht-Samsung Knox-Geräte: Wechseln Sie zu **Einstellungen** > **Info** > **Softwareupdates**.
-
-- Samsung Knox-Geräte: Wechseln Sie zu **Einstellungen** > **Systemupdates** > **Check for new system update** (Auf neues Systemupdate überprüfen).
-
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
-
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
