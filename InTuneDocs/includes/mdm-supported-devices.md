@@ -5,7 +5,7 @@
   - Mac OS X 10.9 und höher
 
 ### <a name="windows"></a>Windows
-  - PCs mit Windows 10 (Home, Education, Pro und Enterprise)
+  - PCs mit Windows 10 (Education, Pro und Enterprise)
   - Windows Phone 8.1 und höher
   - Windows 8.1 RT
   - PCs mit Windows 8.1
@@ -23,6 +23,6 @@ Kunden mit Enterprise Management + Security (EMS) können auch [Azure Active Dir
  
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 
