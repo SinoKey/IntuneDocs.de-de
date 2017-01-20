@@ -66,9 +66,9 @@ Bei diesem Ansatz ist der Benutzer für das Registrieren des eigenen Geräts ver
 
 Dies bezeichnet man als den „White Glove“-Ansatz, bei dem ein Mitglied des IT-Teams den Benutzer persönlich oder über Skype durch den Registrierungsvorgang leitet. Dieser Ansatz wird häufig bei Führungskräften und anderen Gruppen verwendet, die während des Registrierungsvorgangs mehr Unterstützung benötigen.
 
-### <a name="it-tech-fair"></a>IT-Technologiemesse
+### <a name="it-tech-fair"></a>IT-Hausmesse
 
-Eine weitere Option für die Intune-Benutzerregistrierung besteht in der Veranstaltung einer IT-Technologiemesse. Bei dieser Veranstaltung richtet die IT-Gruppe einen Stand zur Unterstützung bei der Intune-Registrierung ein, an dem Benutzer Informationen zur Intune-Registrierung erhalten, Fragen stellen und Unterstützung beim Registrierungsvorgang anfordern können. Die Nutzung dieser Option kann sowohl für die IT-Gruppe als auch für den Benutzer von Vorteil sein, insbesondere in den frühen Phasen des Intune-Rollouts.
+Eine weitere Option für die Intune-Benutzerregistrierung besteht in der Veranstaltung einer IT-Hausmesse. Bei dieser Veranstaltung richtet die IT-Gruppe einen Stand zur Unterstützung bei der Intune-Registrierung ein, an dem Benutzer Informationen zur Intune-Registrierung erhalten, Fragen stellen und Unterstützung beim Registrierungsvorgang anfordern können. Die Nutzung dieser Option kann sowohl für die IT-Gruppe als auch für den Benutzer von Vorteil sein, insbesondere in den frühen Phasen des Intune-Rollouts.
 
 Hier sehen Sie ein Beispiel für einen Intune-Rolloutplan mit Zielgruppen, Zeitrahmen und Registrierungsansätzen:
 
