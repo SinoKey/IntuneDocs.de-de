@@ -1,11 +1,11 @@
 ---
-title: "Beschränken des E-Mail-Zugriffs auf Exchange lokal | Microsoft-Dokumentation"
+title: "Schützen des E-Mail-Zugriffs auf Exchange lokal | Microsoft-Dokumentation"
 description: "Schützen und steuern Sie den Zugriff auf Unternehmens-E-Mail in Exchange lokal mit bedingtem Zugriff."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,22 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51e06bafef761eaf06d35343b459262524ad9168
-ms.openlocfilehash: c090d4bbc539d4174deee139e51242bae94feeb3
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 24d000f650cafffc0c998ef80ba52bd06b56afe2
 
 
 ---
 
-# <a name="restrict-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Beschränken des E-Mail-Zugriffs auf lokale Exchange- und ältere Exchange Online Dedicated-Umgebungen mit Intune
+# <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Schützen des E-Mail-Zugriffs auf lokale Exchange- und ältere Exchange Online Dedicated-Umgebungen mit Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > Wenn Sie über eine Exchange Online Dedicated-Umgebung verfügen und herausfinden müssen, ob es sich um die neue oder die ältere Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer.
 
 
 Um den E-Mail-Zugriff auf lokales Exchange oder Ihre ältere Exchange Online Dedicated-Umgebung zu steuern, können Sie den bedingten Zugriff für lokales Exchange in Microsoft Intune konfigurieren.
-Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Protect access to email and O365 services (Schützen des Zugriffs auf E-Mail- und Office 365-Dienste)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 **Bevor** Sie den bedingten Zugriff konfigurieren können, müssen Sie Folgendes überprüfen:
 
@@ -125,15 +127,15 @@ Folgendes wird unterstützt:
 
 -   Wenn der Benutzer das Gerät bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] deregistriert, kann es ein bis drei Stunden dauern, bis das Gerät blockiert wird.
 
-**Beispielszenarien für die Konfiguration von Richtlinien für bedingten Zugriff zur Beschränkung des Gerätezugriffs[ finden Sie unter ](restrict-email-access-example-scenarios.md)Beispielszenarien für die Beschränkung des E-Mail-Zugriffs**.
+**Beispielszenarios für die Konfiguration von Richtlinien für bedingten Zugriff zum Schutz des Gerätezugriffs finden Sie unter [Protect email access example scenarios (Beispielszenarios für den Schutz des E-Mail-Zugriffs)](restrict-email-access-example-scenarios.md).**
 
 ## <a name="next-steps"></a>Nächste Schritte
--   [Beschränken des Zugriffs auf SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+-   [Protect access to SharePoint Online (Schützen des Zugriffs auf SharePoint Online)](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
--   [Beschränken des Zugriffs auf Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+-   [Protect access to Skype for Business Online (Schützen des Zugriffs auf Skype for Business Online)](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

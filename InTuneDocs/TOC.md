@@ -7,7 +7,7 @@
 ### [Andere Optionen und Extras](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Konvertieren eines Testabonnements in ein kostenpflichtiges Abonnement](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Häufige Szenarien](understand-explore/common-ways-to-use-intune.md)
-## [Glossar](understand-explore/intune-glossary.md)
+
 
 # [Erste Schritte](get-started/get-started.md)
 ## [Einrichten von Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
@@ -42,8 +42,9 @@
 ## [Abschnitt 9: Testen und Überprüfen](plan-design/section-9-test-and-validation.md)
 ## [Zusätzliche Ressourcen](plan-design/additional-resources.md)
 
-# Neuigkeiten
+# [Neuigkeiten](whats-new/whats-new-in-microsoft-intune.md)
 ## [Neuerungen](whats-new/whats-new-in-microsoft-intune.md)
+## [Neuigkeiten in der Azure-Vorschau](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Neuheiten – Archiv](whats-new/whats-new-archive.md)
 
 # Bereitstellen und Verwenden
@@ -142,20 +143,20 @@
 #### [Windows und Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Bereitstellen einer Gerätekompatibilitätsrichtlinie](deploy-use/deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [Einschränken des Zugriffs basierend auf der Gerätekompatibilität](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Schützen des Zugriffs basierend auf der Gerätekompatibilität](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 #### [Exchange Online und Exchange Online Dedicated (neu)](deploy-use/restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Lokales Exchange und Exchange Online Dedicated (älter)](deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype for Business Online](deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-#### [Beschränken des E-Mail-Zugriffs: Beispiele](deploy-use/restrict-email-access-example-scenarios.md)
+#### [Protect email access: examples (Schützen des E-Mail-Zugriffs: Beispiele)](deploy-use/restrict-email-access-example-scenarios.md)
 ### [Zulassen des Zugriffs auf Office 365-Dienste nur für richtlinienverwaltete Apps](deploy-use/allow-policy-managed-apps-access-to-o365.md)
 #### [Apps mit MAM CA](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [Blockieren von Apps ohne ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
-### [Beschränken des Zugriffs auf Netzwerke (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [Einschränken des Zugriffs auf der Basis von Geräte-, Netzwerk- und Anwendungsrisiko](deploy-use/restrict-access-based-on-device-network-app-risk.md)
+### [Protect access to networks (Cisco ISE) (Schützen des Zugriffs auf Netzwerke (Cisco ISE))](deploy-use/restrict-access-to-networks.md)
+### [Protect access based on device, network, and application risk (Schützen des Zugriffs auf der Basis von Geräte-, Netzwerk- und Anwendungsrisiko)](deploy-use/restrict-access-based-on-device-network-app-risk.md)
 #### [Einrichten des Lookout-Schutzes vor Gerätebedrohungen](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
 #### [Aktivieren von Lookout in Intune](deploy-use/enable-lookout-mtp-connection-in-intune.md)
 #### [Bereitstellen von Lookout for Work-Apps](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
@@ -179,6 +180,7 @@
 #### [Branchenspezifische Apps auf Geräten, die nicht von Intune verwaltet werden](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [Verwenden des SDKs beim Schreiben von Apps](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
+### [MAM and app protection FAQ (MAM- und App-Schutz – Häufig gestellte Fragen)](deploy-use/mam-faq.md)
 
 ## Außerbetriebnahme von Apps und Daten
 ### [Verwenden des vollständigen oder selektiven Zurücksetzens](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
@@ -215,7 +217,9 @@
 
 ## [Problembehandlung der Lookout-Integration](troubleshoot/troubleshooting-lookout-integration.md)
 
+# [Glossar](understand-explore/intune-glossary.md)
 
-<!--HONumber=Dec16_HO5-->
+
+<!--HONumber=Jan17_HO2-->
 
 

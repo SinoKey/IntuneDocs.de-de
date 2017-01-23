@@ -5,18 +5,20 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1df8924bd7f94040db28f0c26f0aa29bb7620a0a
-ms.openlocfilehash: 6d57eae82b84b4cd64e0f22829d02fc02bbd9663
+ms.sourcegitcommit: 30695011befb8c590bbd90656843e38638759443
+ms.openlocfilehash: 148660008fbe0eeea3ee9f7d9490443f60abbf0c
 
 
 ---
@@ -24,24 +26,24 @@ ms.openlocfilehash: 6d57eae82b84b4cd64e0f22829d02fc02bbd9663
 
 # <a name="sync-your-ios-device-manually"></a>Manuelles Synchronisieren des iOS-Geräts
 
-Wenn die Installation der App zu lange dauert, können Sie versuchen, Ihr Gerät manuell zu synchronisieren. Manuelles Synchronisieren kann hilfreich sein, um die Installation zu beschleunigen. Die Synchronisierungsfunktion gilt nur für iOS.
+Manchmal kann es zu lange dauern, bis Ihre App aus dem Unternehmensportal heruntergeladen wird. In diesem Fall können Sie versuchen, Ihr Gerät manuell zu synchronisieren. Das bedeutet, dass Sie Ihr Gerät dazu auffordern, noch einmal zu versuchen, die Informationen herunterzuladen, bei denen es sich zuvor schwer getan hat.
 
-1. Öffnen Sie die iOS-Unternehmensportal-App.
+1. Öffnen Sie die Unternehmensportal-App.
 
-2. Wählen Sie im Abschnitt **Meine Geräte** das derzeit verwendete Gerät aus. Dies ist die Gerätekachel ganz links mit dem Häkchen.
+2. Wählen Sie im Abschnitt **Meine Geräte** das derzeit verwendete Gerät aus. Dies ist die Kachel, die sich ganz links befindet. Es ist ebenfalls ein Häkchen darauf zu sehen.
 
     ![Der Bildschirm mit dem Abschnitt „Meine Geräte“](./media/ios-sync-1-comp-portal-apps.png)
 
-3.  Wählen Sie unten rechts auf dem Bildschirm die Schaltfläche **Sync** aus.
+3. Tippen Sie unten rechts auf dem Bildschirm auf die Schaltfläche **Sync**.
 
     ![Gerätedetails mit der Schaltfläche „Synchronisierung“](./media/ios-sync-2-sync-button.png)
 
-Auf dem Bildschirm wird ein sich drehender Kreis angezeigt, bis die Synchronisierung abgeschlossen ist.
+Es wird ein Ladebalken auf dem Bildschirm angezeigt, und es wird geladen, bis die Synchronisation abgeschlossen ist.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

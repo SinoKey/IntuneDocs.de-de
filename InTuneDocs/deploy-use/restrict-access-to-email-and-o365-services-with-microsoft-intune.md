@@ -1,11 +1,11 @@
 ---
-title: "Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste | Microsoft-Dokumentation"
+title: "Schützen des Zugriffs auf E-Mail- und Office 365-Dienste | Microsoft-Dokumentation"
 description: "In diesem Thema wird beschrieben, wie Sie bedingten Zugriff verwenden können, damit nur kompatible Geräte auf Unternehmens-E-Mail und -daten in SharePoint Online und anderen Diensten zugreifen können."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,17 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2e342bef07ff28bf2df027240471f74dfe373f83
-ms.openlocfilehash: a55087b96855645ef3f6e161fe85f6244c30120d
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 911c97a724c28b97bb2bc6e236532e4e0d89c7b1
 
 
 ---
 
-# <a name="restrict-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Beschränken des Zugriffs auf E-Mail, Office 365 und andere Dienste mit Microsoft Intune
-Sie können den Zugriff auf Ihre geschäftlichen E-Mails, Office 365-Dienste wie **lokales Exchange**, **Exchange Online**, **Exchange Online Dedicated**, **SharePoint Online**, **Skype for Business Online** und andere Dienste mithilfe des bedingten EMS-Zugriffs (Enterprise Mobility + Security) beschränken. Mithilfe dieser Funktion können Sie sicherstellen, dass der Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens auf Geräte beschränkt ist, die den von Ihnen festgelegten Regeln für den bedingten Zugriff entsprechen. Diese werden entweder in der Intune-Verwaltungskonsole oder im klassischen Azure-Portal festgelegt.
+# <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Schützen des Zugriffs auf E-Mail, Office 365 und andere Dienste mit Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Sie können den Zugriff auf Ihre geschäftlichen E-Mails, Office 365-Dienste wie **lokales Exchange**, **Exchange Online**, **Exchange Online Dedicated**, **SharePoint Online**, **Skype for Business Online** und andere Dienste mithilfe des bedingten EMS-Zugriffs (Enterprise Mobility + Security) schützen. Mithilfe dieser Funktion können Sie sicherstellen, dass der Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens auf Geräte beschränkt ist, die den von Ihnen festgelegten Regeln für den bedingten Zugriff entsprechen. Diese werden entweder in der Intune-Verwaltungskonsole oder im klassischen Azure-Portal festgelegt.
 ## <a name="how-does-conditional-access-work"></a>Funktionsweise des bedingten Zugriffs
 Mit den Kompatibilitätsrichtlinieneinstellungen können Sie die Kompatibilität eines Geräts bewerten. Eine Richtlinie für bedingten Zugriff verwendet diese Bewertung, um den Zugriff auf einen bestimmten Dienst zuzulassen oder zu beschränken. Wenn Sie eine Richtlinie für bedingten Zugriff in Kombination mit einer Gerätekompatibilitätsrichtlinie verwenden, erhalten nur kompatible Geräte Zugriff auf den Dienst. Die Richtlinien für Konformität und bedingten Zugriff werden dem Benutzer bereitgestellt. Jedes Gerät, das der Benutzer zum Zugriff auf die Dienste verwendet, wird auf die Einhaltung der Richtlinien überprüft.
 
@@ -40,7 +43,7 @@ Ein typischer Ablauf des bedingten Zugriffs:
 
 Microsoft Intune und Azure Active Directory Premium (Azure AD) arbeiten nahtlos zusammen, um mithilfe des bedingten EMS-Zugriffs mehrere Steuerungsebenen zu bieten. Wenn Sie Richtlinien für den bedingten Zugriff mithilfe von Intune bereitstellen möchten, benötigen Sie eine Lizenz für beide Produkte.
 
-**Azure AD Premium-Lizenzen** können als eigenständiger Dienst oder im Rahmen der Enterprise-Lizenz (zusammen mit Intune) erworben werden. Wenn Sie bedingte Zugriffsrichtlinien mit Intune bereitgestellt haben, stellen Sie sicher, dass Sie die entsprechenden Azure AD Premium- oder **EMS Lizenzen** bezogen haben.
+**Azure AD Premium-Lizenzen** können als eigenständiger Dienst oder im Rahmen von Enterprise Agreement (zusammen mit Intune) erworben werden. Wenn Sie bedingte Zugriffsrichtlinien mit Intune bereitgestellt haben, stellen Sie sicher, dass Sie die entsprechenden Azure AD Premium- oder **EMS Lizenzen** bezogen haben.
 
 - Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
@@ -54,7 +57,7 @@ Um den bedingten Zugriff einzurichten, konfigurieren Sie eine Richtlinie für di
 
 ### <a name="conditional-access-policy"></a>Richtlinie für bedingten Zugriff
 
-Sie können eine Richtlinie für bedingten Zugriff festlegen, um den Zugriff anhand folgender Aspekte zu beschränken:
+Sie können eine Richtlinie für bedingten Zugriff festlegen, um den Zugriff anhand folgender Aspekte zu schützen:
 - Der Status der Gerätekompatibilität.
 - Die auf dem Gerät ausgeführte Plattform.
 - Die Art von Apps, die für den Zugriff auf die Dienste verwendet werden.
@@ -79,6 +82,6 @@ Im Gegensatz zu anderen Intune-Richtlinien stellen Sie Richtlinien für bedingte
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

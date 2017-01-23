@@ -2,10 +2,10 @@
 title: "Löschen verwalteter Unternehmens-App-Daten | Microsoft-Dokumentation"
 description: "Erfahren Sie, wie Sie selektiv Unternehmensdaten von Geräten entfernen können."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: stabar
+ms.author: staciebarker
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 42e8feba18330539389fc4ab7af5cbd18a8ace16
+ms.sourcegitcommit: 89f5dc1581571cfcb6e03b5dce740bc7f8a8a9ce
+ms.openlocfilehash: a02a015ce1208ee5fa081e60ce0b88c69d4efa50
 
 
 ---
@@ -34,29 +34,31 @@ Um Unternehmensdaten aus Apps selektiv zu entfernen, erstellen Sie mithilfe der 
 
 ## <a name="create-a-wipe-request"></a>Erstellen einer Zurücksetzungsanforderung
 
-1.  Wählen Sie auf dem Blatt **Mobile Anwendungsverwaltung mit Intune** die Kachel **Zurücksetzungsanforderungen** aus.
+1.  Melden Sie sich beim Azure-Portal an, und wählen Sie **More Services** (Weitere Dienste) > **Other** (Andere) > **Intune** aus.
 
-    ![Screenshot des Blatts „Mobile Anwendungsverwaltung mit Intune“ mit den Kacheln „Zusammenfassung“](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
+2.  Wählen sie auf dem Blatt „Intune“ die Option **Manage Apps** (Verwalten von Apps) aus.
 
-2.  Wählen Sie **Neue Zurücksetzungsanforderung**. Dadurch wird das Blatt **Neue Zurücksetzungsanforderung** geöffnet.
+3.  Wählen Sie **Neue Zurücksetzungsanforderung**. Dadurch wird das Blatt **Neue Zurücksetzungsanforderung** geöffnet.
 
     ![Screenshot des Blatts „Neue Zurücksetzungsanforderung“](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
-3.  Wählen Sie **Benutzer** aus, um das Blatt **Benutzer** zu öffnen, und den Benutzer auszuwählen, dessen App-Daten gelöscht werden sollen.
+4.  Wählen Sie **Benutzer** aus, um das Blatt **Benutzer** zu öffnen, und den Benutzer auszuwählen, dessen App-Daten gelöscht werden sollen.
 
-4.  Wählen Sie **Gerät** aus.  Daraufhin wird das Blatt **Gerät** geöffnet, auf dem alle dem ausgewählten Benutzer zugeordneten Geräte aufgeführt sind.  Wählen Sie das Gerät aus, das zurückgesetzt werden soll.
+5.  Wählen Sie **Gerät** aus.  Daraufhin wird das Blatt **Gerät** geöffnet, auf dem alle dem ausgewählten Benutzer zugeordneten Geräte aufgeführt sind.  Wählen Sie das Gerät aus, das zurückgesetzt werden soll.
 
-5.  Sie befinden sich nun wieder auf dem Blatt **Neue Zurücksetzungsanforderung**. Wählen Sie **OK** aus, um eine Zurücksetzungsanforderung zu erstellen. Der Dienst erstellt für jede geschützte App auf dem Gerät eine separate Löschanforderung und überwacht diese.
-
+6.  Sie befinden sich nun wieder auf dem Blatt **Neue Zurücksetzungsanforderung**. Wählen Sie **OK** aus, um eine Zurücksetzungsanforderung zu erstellen. Der Dienst erstellt für jede geschützte App auf dem Gerät eine separate Löschanforderung und überwacht diese.
 
 ![Screenshot der Kachel „Zurücksetzungsanforderungen“ ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
 ## <a name="monitor-your-wipe-requests"></a>Überwachen der Löschanforderungen
-Auf dem Blatt **Intune Mobile Application Management** enthält die Kachel **Löschanforderung** einen zusammenfassenden Bericht.  Angezeigt wird der Gesamtstatus mit der Anzahl der ausstehenden Anforderungen und Fehler. Weitere Einzelheiten erhalten Sie durch Ausführen dieser Schritte:
 
-1.  Wählen Sie auf dem Blatt **Mobile Anwendungsverwaltung mit Intune** die Kachel **Zurücksetzungsanforderung** aus, um das Blatt **Zurücksetzungsanforderung** zu öffnen.
+Auf der Kachel **Zurücksetzungsanforderung** finden Sie einen zusammengefassten Bericht, der den Gesamtstatus der Zurücksetzungsanforderung zeigt und die Anzahl der ausstehenden Anforderungen und Fehler enthält. Um weitere Informationen zu erhalten, gehen Sie folgendermaßen vor:
 
-2.  Auf dem Blatt **Zurücksetzungsanforderung** wird eine Liste mit Ihren Anforderungen, gruppiert nach Benutzer, angezeigt. Da das System für jede geschützte App, die auf dem Gerät ausgeführt wird, eine Zurücksetzungsanforderung erstellt, werden möglicherweise für einen Benutzer mehrere Anforderungen angezeigt. Der Status gibt an, ob eine Zurücksetzungsaufforderung noch **aussteht**oder **fehlgeschlagen**ist, bzw. **erfolgreich**ausgeführt wurde.
+1.  Wählen sie auf dem Blatt „Intune“ die Option **Manage Apps** (Verwalten von Apps) aus.
+
+2.  Wählen Sie auf dem Blatt **Zurücksetzungsanforderung** die Kachel **Zurücksetzungsanforderung** aus, um das Blatt **Zurücksetzungsanforderung** zu öffnen.
+
+3.  Auf dem Blatt **Zurücksetzungsanforderung** wird eine Liste mit Ihren Anforderungen, gruppiert nach Benutzer, angezeigt. Da das System für jede geschützte App, die auf dem Gerät ausgeführt wird, eine Zurücksetzungsanforderung erstellt, werden möglicherweise für einen Benutzer mehrere Anforderungen angezeigt. Der Status gibt an, ob eine Zurücksetzungsaufforderung noch **aussteht**oder **fehlgeschlagen**ist, bzw. **erfolgreich**ausgeführt wurde.
 
 Der Benutzer muss die App für das Zurücksetzen öffnen, und das Zurücksetzen dauert bis zu 30 Minuten, nachdem die Anforderung gestellt wurde.
 
@@ -69,6 +71,6 @@ Zurücksetzungen mit Status „Ausstehend“ werden angezeigt, bis Sie sie manue
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

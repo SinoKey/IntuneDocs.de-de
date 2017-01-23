@@ -14,13 +14,15 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b83d06ecbe6e202bf022444c288e0866b3507c6
-ms.openlocfilehash: fc6a729ecd51adba2581c5b2ca4b3665970d4563
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 517d2b4675f2e0fbaf84f22f828a35bac2ae8497
 
 
 ---
 
 # <a name="set-up-your-subscription-for-lookout-device-threat-protection"></a>Einrichten Ihres Abonnements für den Lookout-Schutz vor Gerätebedrohungen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Folgende Schritte sind erforderlich, um den Lookout-Schutz vor Gerätebedrohungen einzurichten:
 
@@ -62,7 +64,7 @@ Führen Sie die folgenden Schritte aus, um die Informationen zusammenzustellen, 
 
   ![Screenshot der Eigenschaftenseite mit hervorgehobenem Feld „GroupID“](../media/mtp/aad_group_object_id.png)
 
-4. Sobald Sie alle Informationen zusammengestellt haben, wenden Sie sich an den Lookout-Support (E-Mail: enterprisesupport@lookout.com).. Der Lookout-Support arbeitet mit Ihrem primären Kontakt zusammen, um mithilfe Ihrer Informationen Ihr Abonnement zu integrieren und Ihr Lookout Enterprise-Konto zu erstellen.
+4. Nachdem Sie diese Informationen gesammelt haben, wenden Sie sich an den Lookout-Support (E-Mail: enterprisesupport@lookout.com)). Der Lookout-Support arbeitet mit Ihrem primären Kontakt zusammen, um Ihr Abonnement mithilfe der von Ihnen gesammelten Informationen zu integrieren und Ihr Lookout Enterprise-Konto zu erstellen.
 
 ## <a name="configure-your-subscription"></a>Konfigurieren des Abonnements
 1. Nachdem das Lookout-Supportteam Ihr Lookout-Enterprise-Konto erstellt hat, wird von Lookout eine E-Mail an den primären Kontakt Ihres Unternehmens gesendet, die einen Link zur Anmelde-URL enthält: https://aad.lookout.com/les?action=consent.
@@ -137,6 +139,6 @@ Nachdem das Setup abgeschlossen wurde, beginnt der Lookout-Schutz vor Gerätebed
 
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 

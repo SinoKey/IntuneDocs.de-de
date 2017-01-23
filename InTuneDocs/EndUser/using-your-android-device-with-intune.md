@@ -14,8 +14,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
-ms.openlocfilehash: 1c4e77d3089df2ff184a414ba668b01b2d040854
+ms.sourcegitcommit: b264ea53e727f706bc635ed9c738ad605e1ac750
+ms.openlocfilehash: a88b0eafdf72f00b5c28d0347010eeee3c9effc4
 
 
 ---
@@ -59,13 +59,13 @@ Die Informationen in diesem Abschnitt helfen Benutzern bei Aktionen, die sie nac
 Die Informationen in diesem Abschnitt helfen Benutzern beim Beheben von Problemen, die mit bei Intune registrierten Android-Geräten auftreten können.
 
 - [Verwenden der ausführlichen Protokollierung zur leichteren Behebung von Geräteproblemen durch den IT-Administrator](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Senden von Diagnosedatenprotokollen an Ihren IT-Administrator per E-Mail](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-- [Senden von Diagnosedatenprotokollen an Ihren IT-Administrator über ein USB-Kabel](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
-- [Senden von Registrierungsfehlern an Ihren IT-Administrator](send-enrollment-errors-to-your-it-administrator-android.md)
+- [Senden von Protokollen an Ihren IT-Administrator per E-Mail](send-logs-to-your-it-admin-by-email-android.md)
+- [Senden von Protokollen an Ihren IT-Administrator über ein USB-Kabel](send-logs-to-your-it-admin-using-cable-android.md)
+- [Senden von Registrierungsfehlern an Ihren IT-Administrator](send-enrollment-errors-to-your-it-admin-android.md)
 - [Das Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems](you-need-to-update-your-android-device.md)
 - [Gerät entspricht nicht der maximalen Betriebssystemversion](your-android-version-isnt-yet-supported.md)
 - [Von Ihrem Gerät wurden die Nutzungsbeschränkungen entfernt, und Sie können keine Verbindung herstellen](your-device-is-rooted-and-you-cant-connect-android.md)
-- [Auf Ihrem Gerät ist ein erforderliches Zertifikat nicht vorhanden](your-device-is-missing-a-required-certificate-android.md)
+- [Auf Ihrem Gerät ist ein erforderliches Zertifikat nicht vorhanden](your-device-is-missing-a-required-certificate-landing-android.md)
 - [Sie werden dazu aufgefordert, die Option „Unbekannte Quellen“ zu deaktivieren](you-are-asked-to-turn-off-unknown-sources-android.md)
 - [Sie werden dazu aufgefordert, das USB-Debuggen zu deaktivieren](you-are-asked-to-turn-off-usb-debugging-android.md)
 - [Sie werden dazu aufgefordert, die Option „Gerät auf Sicherheitsbedrohungen überprüfen“ zu aktivieren](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
@@ -75,6 +75,6 @@ Die Informationen in diesem Abschnitt helfen Benutzern beim Beheben von Probleme
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

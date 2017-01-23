@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 01/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
-ms.openlocfilehash: d07c7e667dbb5c01a9dcd8b2f69e7d930c27f25a
+ms.sourcegitcommit: a567d55141c4510a5c81861df1522f118104de61
+ms.openlocfilehash: 900b3a9bcc9ce58cd165b14592c850b50739a33a
 
 
 ---
@@ -43,7 +43,7 @@ Die Intune-Geräteverwaltung bietet [diese Funktionen](mobile-device-management-
 
 ### <a name="windows-pc-software-client"></a>Softwareclient für Windows-PCs
 
-Ein [Intune-Softwareclient](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) auf Windows-PCs als eine alternative Registrierungsmethode bereitgestellt und installiert werden. Sie können den Intune-Softwareclient zum Verwalten von PCs mit Windows 7 und höher (mit Ausnahme der Windows 10 Home-Edition) verwenden. Die PC-Verwaltung mit dieser Clientsoftware bietet [diese Möglichkeiten](windows-pc-management-capabilities-in-microsoft-intune.md).
+Ein [Intune-Softwareclient](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) auf Windows-PCs als eine alternative Registrierungsmethode bereitgestellt und installiert werden. Sie können den Intune-Softwareclient zum Verwalten von PCs mit Windows 7 und höher verwenden. Die PC-Verwaltung mit dieser Clientsoftware bietet [diese Möglichkeiten](windows-pc-management-capabilities-in-microsoft-intune.md).
 
 ### <a name="exchange-activesync-management"></a>Exchange ActiveSync-Verwaltung
 
@@ -74,6 +74,6 @@ Lediglich Benutzer mit Dienstadministratorrechten oder Mandantenadministratoren 
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

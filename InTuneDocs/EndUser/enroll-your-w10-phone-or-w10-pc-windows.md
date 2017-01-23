@@ -5,17 +5,19 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
-ms.reviewer: priyar
+searchScope:
+- Company Portal
+ms.reviewer: jieyan
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 8d1644c5a52d728aecd095979fec130cfa8a86f2
+ms.sourcegitcommit: 81ee6143d53ca08f03dfd3555b118f77319ccf2d
+ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
 
 
 ---
@@ -40,19 +42,19 @@ Möchten Sie mehr erfahren? Erfahren Sie, was geschieht, wenn Sie [Ihr Gerät be
 
  ![Windows 10 Desktop „PC-Infos“](../media/settings_about_pc.png)
 
-3.  Wenn Ihre Version __1607__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-access-work-or-school.md) fort. Wenn Ihre Version __1511__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-your-account.md) fort.
+3.  Wenn Ihre Version __1607__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-access-work-or-school.md) fort. Wenn Ihre Version __1511 oder älter__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-your-account.md) fort.
 
 ## <a name="windows-10-mobile-devices"></a>Windows 10 Mobile-Geräte
 
 1.  Navigieren Sie unter __Start__ zur Liste __Alle Apps__, und wählen Sie anschließend die App __Einstellungen__ aus.
 2.  Tippen Sie auf __System__, anschließend auf __About__ (Informationen).
 3.  Unter __Geräteinformationen__, tippen Sie auf __Details__. Sie sehen eine Liste mit Informationen zu Ihrem Gerät. Suchen Sie in der Liste nach der __Version__.
-4.  Wenn Ihre Version __1607__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-access-work-or-school.md) fort. Wenn Ihre Version __1511__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-your-account.md) fort.
+4.  Wenn Ihre Version __1607__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-access-work-or-school.md) fort. Wenn Ihre Version __1511 oder älter__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-your-account.md) fort.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

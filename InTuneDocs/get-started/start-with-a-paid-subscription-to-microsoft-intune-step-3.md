@@ -14,13 +14,15 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 247bc72fce1146d83729cadb9905d8ceed134c14
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
 
 
 ---
 
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Hinzufügen von Benutzern und Gewähren von Administratorrechten für Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Als Administrator können Sie Benutzer direkt oder durch Synchronisieren mit Ihrem lokalen Active Directory hinzufügen. Nachdem ein Benutzer hinzugefügt wurde, kann er Geräte registrieren und auf Unternehmensressourcen zugreifen. Sie können Benutzern auch zusätzliche Berechtigungen erteilen, beispielsweise *Mandantenadministrator*-, *Dienstadministrator*- und *Geräteregistrierungs-Manager-Berechtigungen*.
 
@@ -101,6 +103,6 @@ Geräteregistrierungs-Manager sind Standardbenutzerkonten mit der zusätzlichen 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

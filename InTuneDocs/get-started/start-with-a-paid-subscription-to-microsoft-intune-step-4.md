@@ -14,13 +14,16 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 68cdc77de1fa77b4fed6a1f37850b5427fb2b121
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 1d0bb386cab923f3d1b45a0c6b64296fd2291460
 
 
 ---
 
 # <a name="manage-intune-licenses"></a>Verwalten von Intune-Lizenzen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Bevor Benutzer sich für die Verwendung des Intune-Diensts anmelden oder ihre Geräte für die Verwaltung registrieren können, müssen Sie jedem Benutzer zunächst über das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) eine Lizenz für Ihr Intune-Abonnement zuweisen.
 
 Unternehmen, die die Enterprise Mobility + Security (EMS) von Microsoft verwenden, verfügen möglicherweise über Benutzer, die nur Azure Active Directory Premium- oder Intune-Dienste im EMS-Paket benötigen. Sie können einen oder mehrere Dienste mithilfe von [Azure Active Directory PowerShell-Cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) zuweisen. Weitere Informationen finden Sie unter [Verwalten von Intune-Lizenzen mithilfe von PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
@@ -94,6 +97,6 @@ Deaktivieren Sie den auf Intune bezogenen Teil der EMS-Lizenz für einen Benutze
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

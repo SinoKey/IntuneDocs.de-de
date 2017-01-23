@@ -14,13 +14,16 @@ ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80e96003c584c67cb6b0289a7e2ed1ff3a833c2c
-ms.openlocfilehash: 076fbc5e2c73a7c6d5a17130f477a840c3c4ed19
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: ed4d828b19620f421461228e04bda7b7be799444
 
 
 ---
 
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Problembehandlung der Lookout-Integration mit Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In diesem Thema werden einige häufige Probleme beschrieben, die möglicherweise bei Ihrer Bereitstellung von Lookout Mobile Threat Protection (MTP) auftreten.
 
 **Anmeldefehler**
@@ -87,6 +90,6 @@ Wenn sich der neue Benutzer in einer Lookout MTP-Registrierungsgruppe befindet, 
 
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 

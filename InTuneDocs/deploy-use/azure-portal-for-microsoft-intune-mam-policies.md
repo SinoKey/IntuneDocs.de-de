@@ -14,8 +14,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
-ms.openlocfilehash: 423f525be6ff9fb72542af46ff18a57d00d04d79
+ms.sourcegitcommit: fe44466fbcef67d02b16d3d2d335f657251451d3
+ms.openlocfilehash: fa8d839da1cf0b2d207edc0b28de8a714ba0df02
 
 
 ---
@@ -24,21 +24,17 @@ ms.openlocfilehash: 423f525be6ff9fb72542af46ff18a57d00d04d79
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-## <a name="use-the-azure-portal"></a>Verwenden des Azure-Portals
-Über das Azure-Portal können Sie Richtlinien zur Verwaltung mobiler Apps (mobile application management, MAM) erstellen und verwalten.
+Das Azure-Portal wird verwendet, um Richtlinien zur Verwaltung mobiler Apps (mobile application management, MAM) für die folgenden zu erstellen und zu verwalten:
 
-Das Azure-Portal unterstützt das Erstellen von MAM-Richtlinien für:
 - Apps, die auf Geräten ausgeführt werden, die **in Intune registriert und verwaltet** werden.
 
 - Apps, die auf Geräten ausgeführt werden, die **nicht** in einer MDM-Lösung registriert sind.
 - Apps, die auf Geräten ausgeführt werden, die **in einer MDM-Lösung von Drittanbietern registriert sind**.
 
 >[!IMPORTANT]
+> Das Azure-Portal ist die neue Administratorkonsole für die Erstellung von MAM-Richtlinien. Sie können jedoch auch eine MAM-Richtlinie erstellen, die Apps für Geräte unterstützt, die bei Intune registriert sind, indem Sie die [Intune-Verwaltungskonsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) für MDM-Szenarios verwenden.
 
-
-> Wenn Sie die Intune-Verwaltungskonsole zum Verwalten Ihrer Geräte verwenden, können Sie mithilfe der [Intune-Verwaltungskonsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) eine MAM-Richtlinie erstellen, die Apps für die bei Intune registrierten Geräte unterstützt.
-
-> Möglicherweise werden in der Intune-Verwaltungskonsole nicht alle MAM-Richtlinieneinstellungen angezeigt. Das Azure-Portal stellt die neue Verwaltungskonsole zum Erstellen von MAM-Richtlinien dar. Wenn Sie sowohl in der Intune-Verwaltungskonsole als auch im Azure-Portal MAM-Richtlinien erstellen, wird die im Azure-Portal erstellte Richtlinie auf die Apps angewendet und für die Benutzer bereitgestellt.
+> Möglicherweise sind in der Intune-Verwaltungskonsole nicht alle MAM-Richtlinieneinstellungen verfügbar. Darüber hinaus werden die Richtlinien, die im Azure-Portal erstellt wurden, die in der Intune-Verwaltungskonsole überschreiben, wenn Sie MAM-Richtlinien sowohl in der Intune-Verwaltungskonsole als auch im Azure-Portal erstellen. In diesem Szenario werden die MAM-Richtlinien des Azure-Portals auf die Apps angewendet und für Benutzer bereitgestellt.
 
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>Melden Sie sich beim Azure-Portal an, und passen Sie Ihre Startseite an.
@@ -51,24 +47,25 @@ Das Azure-Portal unterstützt das Erstellen von MAM-Richtlinien für:
 
     ![Screenshot zum Dashboard des Azure-Portals](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  Über das Menü **Durchsuchen** finden Sie **Intune**. ![Screenshot des Menüs „Durchsuchen“ mit hervorgehobenem Intune](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
+3.  Suchen Sie im Menü **Durchsuchen** die Option **Intune**.
+
+    ![Screenshot des Menüs „Durchsuchen“ mit hervorgehobenem Intune](../media/AppManagement/MAM-Azure-Portal-1.png)
 
 4.  Wählen Sie **Intune** > **Mobile Anwendungsverwaltung mit Intune** > **Einstellungen** aus.
 
-    ![Screenshot des Blatts „Mobile Anwendungsverwaltung mit Intune“](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+    ![Screenshot des Blatts „Mobile Anwendungsverwaltung mit Intune“](../media/AppManagement/MAM-Azure-Portal-2.png)
 
-    > [!TIP]
-
-    > Zum Anheften eines Blatts an die **Startseite** können Sie auf dem Blatt die Option zum **Anheften** verwenden. Klicken Sie auf dem Blatt **Mobile Anwendungsverwaltung mit Intune** auf das Stecknadelsymbol, um das Blatt an die **Startseite** anzuheften.
+5. (Optional:)Zum Anheften eines Blatts an die **Startseite** können Sie auf dem Blatt die Option zum **Anheften** verwenden. Klicken Sie auf dem Blatt **Mobile Anwendungsverwaltung mit Intune** auf das Stecknadelsymbol, um das Blatt an die **Startseite** anzuheften.
 
     ![Screenshot des Blatts „Mobile Anwendungsverwaltung mit Intune“ mit hervorgehobenem Pinsymbol](../media/AppManagement/AzurePortal_MAM_PinBladeAction.png)
 
     ![Screenshot des Dashboards mit angehefteter Intune-Kachel](../media/AppManagement/AzurePortal_MAM_Startboard_withMAM.png)
+
 ## <a name="next-steps"></a>Nächste Schritte
 [Vorbereiten der Konfiguration von Verwaltungsrichtlinien für mobile Apps](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

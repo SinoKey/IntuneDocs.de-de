@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ccd9dacdb2c59febdd741b1a95617cadc1347639
+ms.sourcegitcommit: 18f200ca30cfcd4c9fb00519c149f48e9b9fa8cb
+ms.openlocfilehash: b566b13f8c93c8a6bddccdbc0da5eb508907dac2
 
 
 ---
@@ -60,6 +60,9 @@ Sie verwenden den Intune-Softwareherausgeber, um die Eigenschaften der App zu ko
 
         ![Intune-Softwareherausgeber](./media/publisher-for-mobile.png)
 
+> [!NOTE]
+> Wenn Sie eine App aus einem Store hinzufügen und bereitstellen, müssen Endbenutzer über ein Konto bei diesem Store verfügen, um die App installieren zu können.
+
 3.  Konfigurieren Sie auf der Seite **Softwarebeschreibung** Folgendes:
 
     > [!TIP]
@@ -102,6 +105,6 @@ Nachdem Sie eine App erstellt haben, umfasst der nächste Schritt die Bereitstel
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
