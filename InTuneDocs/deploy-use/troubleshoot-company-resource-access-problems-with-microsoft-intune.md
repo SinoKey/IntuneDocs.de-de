@@ -1,5 +1,5 @@
 ---
-title: Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen | Microsoft Intune
+title: Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen | Microsoft-Dokumentation
 description: In diesem Thema werden Fehler- und Statuscodes beschrieben, die Ihnen helfen, Probleme beim Ressourcenzugriff zu behandeln.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 76056f04440b53aa76f833b5fd4f5cf3cbeb88b5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: dd1ada2bf6505552e7dbf8b185c929fa4e40104c
 
 
 ---
 
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Verwenden Sie die Fehle- und Statuscodes in diesem Thema zur Problembehandlung, wenn von einer Microsoft Intune-Aktion ein Fehlercode zurückgegeben wurde.
 
 Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [How to get support for Microsoft Intune](../troubleshoot/how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) weitere Möglichkeiten, Hilfe zu erhalten.

@@ -1,9 +1,9 @@
 ---
-title: "Azure-Portal für MAM-Richtlinien | Microsoft Intune"
+title: "Azure-Portal für MAM-Richtlinien | Microsoft-Dokumentation"
 description: "Erstellen Sie Verwaltungsrichtlinien für mobile Apps mithilfe des Azure-Portals. Die Richtlinien, die Sie hier erstellen, können auf Geräte mit oder ohne Registrierung in Intune angewendet werden."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/22/2016
 ms.topic: article
@@ -14,13 +14,15 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b377d527621693f4c231f6f8b16cab277853cdf7
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: 423f525be6ff9fb72542af46ff18a57d00d04d79
 
 
 ---
 
 # <a name="azure-portal-for-microsoft-intune-mam-policies"></a>Azure-Portal für MAM-Richtlinien in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="use-the-azure-portal"></a>Verwenden des Azure-Portals
 Über das Azure-Portal können Sie Richtlinien zur Verwaltung mobiler Apps (mobile application management, MAM) erstellen und verwalten.
@@ -67,6 +69,6 @@ Das Azure-Portal unterstützt das Erstellen von MAM-Richtlinien für:
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

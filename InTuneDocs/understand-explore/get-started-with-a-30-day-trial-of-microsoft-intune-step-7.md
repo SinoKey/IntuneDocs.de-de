@@ -1,5 +1,5 @@
 ---
-title: Konvertieren in ein kostenpflichtiges Abonnement | Microsoft Intune
+title: Konvertieren in ein kostenpflichtiges Abonnement | Microsoft-Dokumentation
 description: "Wichtige Informationen zu Abonnements und Lizenzen, nachdem Sie Ihre kostenlose 30-tägige Evaluierungsversion von Intune eingerichtet haben."
 keywords: 
 author: lindavr
@@ -13,13 +13,16 @@ ms.technology:
 ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a2b037e0c066422d53d71ffd401deb3e48a2ba7f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f121ff01a3eee20473637626128239c4d883e826
 
 
 ---
 
 # <a name="ways-to-subscribe-to-microsoft-intune"></a>Möglichkeiten zum Abonnieren von Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Wenn Sie in einem berechtigenden Plan mindestens 150 Lizenzen für Microsoft Intune erwerben, können Sie das „FastTrack Center-Leistungsangebot“ nutzen, einen Dienst, bei dem Microsoft-Spezialisten Sie bei der Vorbereitung Ihrer Umgebung für Intune unterstützen. Informationen hierzu finden Sie unter [FastTrack Center-Leistungsangebot für Enterprise Mobility Suite (EMS)](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
 
 Sie können Ihre kostenlose Intune-Evaluierungsversion auf folgende Weisen in ein kostenpflichtiges Abonnement umwandeln:
@@ -34,6 +37,6 @@ Sie können Ihre kostenlose Intune-Evaluierungsversion auf folgende Weisen in ei
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

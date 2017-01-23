@@ -1,5 +1,5 @@
 ---
-title: WLAN-Verbindungen | Microsoft Intune
+title: WLAN-Verbindungen | Microsoft-Dokumentation
 description: Verwenden Sie WLAN-Profile, um Benutzern zu helfen, eine Verbindung mit Ihren WLAN-Netzwerken herzustellen.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: df3f5bd6f44b9de8c4f24a82c7f4e000f08aac5a
-ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
 
 
 ---
 
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Konfigurieren von Geräten zur Herstellung einer Verbindung mit Ihren WLAN-Unternehmensnetzwerken
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Verwenden Sie WLAN-Profile in Microsoft Intune, um Benutzern und Geräten in Ihrer Organisation Einstellungen für Drahtlosnetzwerke bereitzustellen. Wenn Sie ein WLAN-Profil bereitstellen, erhalten Ihre Benutzer Zugriff auf Ihr Unternehmens-WLAN, ohne es selbst konfigurieren zu müssen.
 
@@ -45,7 +47,7 @@ Sie können WLAN-Profile auf den folgenden Plattformen bereitstellen:
 
 -   iOS 8.0 und höher
 
--   Mac OS X 10.9 und höher
+-   Mac OS X 10.9 und höher
 
 Für Geräte mit Windows 8.1, Windows 10 Desktop oder mobilen Betriebssystemen können Sie ein WLAN-Konfigurationsprofil importieren, das zuvor in eine Datei exportiert wurde. Ausführliche Informationen finden Sie unter [Exportieren oder Importieren eines WLAN-Konfigurationsprofils für Windows-Geräte](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices).
 
@@ -59,9 +61,9 @@ Für Geräte mit Windows 8.1, Windows 10 Desktop oder mobilen Betriebssystemen k
 
     -   WLAN-Profil (Android for Work)
 
-    -   WLAN-Profil (iOS 8.0 und höher)
+    -   WLAN-Profil (iOS 8.0 und höher)
 
-    -   WLAN-Profil (Mac OS X 10.9 und höher)
+    -   WLAN-Profil (Mac OS X 10.9 und höher)
 
 
 Es gibt keine empfohlenen Einstellungen für diesen Richtlinientyp. Sie müssen eine benutzerdefinierte Richtlinie erstellen.
@@ -181,6 +183,6 @@ Unter [WLAN-Profil mit vorinstalliertem Schlüssel](pre-shared-key-wi-fi-profile
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

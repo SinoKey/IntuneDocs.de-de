@@ -9,14 +9,14 @@ keywords: "Intune-Dokumentation, App-Verwaltung, Geräteverwaltung, MDM-Dokument
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/7/2016
+ms.date: 12/20/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: b921a15ca5fd24d9ddbf54789c42a0740b72d7f6
-ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
+ms.sourcegitcommit: d63d670f12f27511671b9015ad53a93f1a784c40
+ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
 
 
 ---
@@ -37,8 +37,8 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">Schützen des Zugriffs auf Unternehmensressourcen</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-ios">Microsoft Intune App SDK für iOS –Entwicklerhandbuch</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-android">Entwicklerhandbuch zu Microsoft Intune App SDK für Android</a></li>
+          <li><a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/intune_graph_overview">Arbeiten mit Intune in Microsoft Graph</a></li>
+          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">Ressourcen zu Endbenutzerszenarios in Microsoft Intune</a></li>
         </ul>
       </div>
     </section>
@@ -61,13 +61,13 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
               <ul class="row">
                 <li class="column-third">
                   <a href="/intune/understand-explore/introduction-to-microsoft-intune">
-                    <h3>Einführung in Intune</h3>
+                    <h3>Was ist Intune?</h3>
                     <p>Finden Sie heraus, wie Intune Geräte-, App- und Datenverwaltungsfunktionen für mobile Geräte (iOS-Geräte, Android-Geräte, Windows-Mobiltelefone) und Windows-PCs bereitstellt.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
-                    <h3>Intune-Evaluierungsanleitung</h3>
+                    <h3>Ist Intune für Sie geeignet?</h3>
                     <p>Im Evaluierungsleitfaden sind die Schritte zum Einrichten Ihrer Testversion mit bis zu 100 Benutzern und Geräten beschrieben.</p>
                   </a>
                 </li>
@@ -94,21 +94,21 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
-                    <h3>Was Sie wissen sollten, bevor Sie starten</h3>
-                    <p>Machen Sie sich im Handumdrehen mit den Grundvoraussetzungen für eine Intune-Bereitstellung vertraut.</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">
-                    <h3>Erste Schritte mit Intune</h3>
-                    <p>In diesem Thema werden Sie anhand des Leitfadens für die 30-tägige Testversion durch die Azure Active Directory-Synchronisierung, Überlegungen zu Domänen und DNS sowie weitere Anpassungen im Zusammenhang mit Intune gleitet.</p>
+                    <h3>Leitfaden „Erste Schritte“</h3>
+            <p>In diesem Thema werden Sie anhand des Leitfadens für die 30-tägige Testversion durch die Azure Active Directory-Synchronisierung, Überlegungen zu Domänen und DNS sowie weitere Anpassungen im Zusammenhang mit Intune gleitet.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/get-started/rollout-phases-for-microsoft-intune-deployment">
-                    <h3>Rolloutphasen</h3>
-                    <p>Definieren Sie Ihre Intune-Ziele sowie Ihre Pläne im Zusammenhang mit Architektur, Pilotprojekten und Produktionsrollout.</p>
+                  <a href="/intune/get-started/prevent-company-data-leaks-from-office-365-mobile-apps">
+                    <h3>Verhindern von Kompromittierungen im Unternehmen durch mobile Office 365-Apps</h3>
+                    <p>Sichern Sie die Daten Ihrer Organisation mithilfe von App-Schutzrichtlinien, um Datenlecks zu verhindern.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/get-started/simplify-email-configuration-on-mobile-devices">
+                    <h3>Vereinfachen der E-Mail-Konfiguration auf mobilen Geräten</h3>
+                    <p>Sparen Sie Ihrem Unternehmen Zeit und Ressourcen, indem Sie E-Mail-Profile (sowie VPN- und WLAN-Profile) für Windows-, iOS- und Android-Mobilgeräte bereitstellen, die vom Intune-Dienst verwaltet werden.</p>
                   </a>
                 </li>
               </ul>
@@ -155,8 +155,8 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste</h3>
-                    <p>Beschränken Sie den Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens mithilfe des bedingten Zugriffs in Intune.</p>
+                    <h3>Schützen des Zugriffs auf E-Mail- und Office 365-Dienste</h3>
+                    <p>Schützen Sie den Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens mithilfe des bedingten Zugriffs in Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -285,6 +285,6 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

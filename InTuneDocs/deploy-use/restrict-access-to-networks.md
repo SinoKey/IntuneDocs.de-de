@@ -1,5 +1,5 @@
 ---
-title: "Beschränken des Netzwerkzugriffs mit Cisco ISE | Microsoft Intune"
+title: "Beschränken des Netzwerkzugriffs mit Cisco ISE | Microsoft-Dokumentation"
 description: "Verwenden Sie Cisco ISE mit Intune, damit Geräte bei Intune registriert sind und mit der Richtlinie kompatibel sind, bevor sie auf WLAN und VPN zugreifen, die von Cisco ISE gesteuert werden."
 keywords: 
 author: robstackmsft
@@ -14,8 +14,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
-ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9eb0ea307702f3ae07db4d5c5a82d03f13b727fb
 
 
 ---
@@ -64,7 +64,7 @@ b. Wählen Sie das Schlosssymbol aus &gt;  **Weitere Informationen**.
 > Überprüfen Sie das Ablaufdatum des Zertifikats, da Sie ein neues Zertifikat exportieren und importieren müssen, wenn dieses abläuft.
 
 
-### <a name="obtain-a-selfsigned-cert-from-ise"></a>Abrufen eines selbstsignierten Zertifikats von ISE 
+### <a name="obtain-a-self-signed-cert-from-ise"></a>Abrufen eines selbstsignierten Zertifikats von ISE 
 
 1.  Wechseln Sie in der ISE-Konsole zu **Verwaltung** > **Zertifikate** > **Systemzertifikaten** > **Selbstsigniertes Zertifikat generieren**.  
 2.       Exportieren Sie das selbstsignierte Zertifikat.
@@ -100,7 +100,7 @@ Stellen Sie sicher, dass sich der gesamte Text in einer Zeile befindet
 |OAuth 2.0-Tokenendpunkt|Token ausgebende URL|
 |Code mit Client-ID aktualisieren|Client-ID|
 
-### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Schritt 4: Hochladen des selbstsignierten Zertifikats aus ISE in die ISE-App, die Sie in Azure AD erstellt haben
+### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Schritt 4: Hochladen des selbstsignierten Zertifikats aus ISE in die ISE-App, die Sie in Azure AD erstellt haben
 1.     Rufen Sie den base64-codierten Zertifikatswert und Fingerabdruck aus einer öffentlichen CER X509-Zertifikatsdatei ab. In diesem Beispiel wird PowerShell verwendet:
    
       
@@ -189,6 +189,6 @@ Es gibt auch [herunterladbare Registrierungsanweisungen](https://gallery.technet
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

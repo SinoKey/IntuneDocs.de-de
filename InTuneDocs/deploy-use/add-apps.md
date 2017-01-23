@@ -1,11 +1,11 @@
 ---
-title: "Hinzufügen von Apps | Microsoft Intune"
+title: "Hinzufügen von Apps | Microsoft-Dokumentation"
 description: Nehmen Sie sich vor der Bereitstellung von Apps mit Intune etwas Zeit, um sich mit den in diesem Thema vorgestellten Konzepten vertraut zu machen.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f896f51c21beaf7561168f3f622cfc7b0d0c8068
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 27e6a4d59c0cc00ac9dd154605518d9c937e5fc6
 
 
 ---
 
 # <a name="add-apps-with-microsoft-intune"></a>Hinzufügen von Apps mit Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Nehmen Sie sich vor der Bereitstellung von Apps mit Microsoft Intune etwas Zeit, um sich mit den in diesem Thema vorgestellten Konzepten vertraut zu machen. Diese Konzepte helfen Ihnen dabei zu verstehen, welche Apps auf welcher Plattform bereitgestellt werden können. Außerdem bieten sie Informationen zu den Voraussetzungen, die vorhanden sein müssen, bevor Sie die Apps bereitstellen.
 
 ## <a name="app-types-that-you-can-deploy"></a>Für die Bereitstellung verfügbare App-Typen
@@ -93,6 +96,6 @@ Sie müssen Apps in der Intune-Konsole hinzufügen, bevor Sie sie bereitstellen 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

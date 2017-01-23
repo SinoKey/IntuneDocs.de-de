@@ -68,7 +68,7 @@ ms.openlocfilehash: 89789e5b5f7b5030f8ec1bd0c62e8e410b9ed8be
                 <li class="column-third">
                   <a href="/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
                     <h3>Intune-Evaluierungsanleitung</h3>
-                    <p>Im Evaluierungsleitfaden sind die Schritte zum Einrichten Ihrer Testversion mit bis zu 100 Benutzern und Geräten beschrieben.</p>
+                    <p>Im Evaluierungsleitfaden sind die Schritte zum Einrichten Ihrer Testversion mit bis zu 100 Benutzern und Geräten beschrieben.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -155,8 +155,8 @@ ms.openlocfilehash: 89789e5b5f7b5030f8ec1bd0c62e8e410b9ed8be
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste</h3>
-                    <p>Beschränken Sie den Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens mithilfe des bedingten Zugriffs in Intune.</p>
+                    <h3>Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste</h3>
+                    <p>Beschränken Sie den Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens mithilfe des bedingten Zugriffs in Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -285,6 +285,6 @@ ms.openlocfilehash: 89789e5b5f7b5030f8ec1bd0c62e8e410b9ed8be
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

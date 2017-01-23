@@ -1,11 +1,11 @@
 ---
-title: Was ist das Unternehmensportal? | Microsoft Intune
+title: Was ist das Unternehmensportal? | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3891d0389df3526ea328fc2952e3d181b1e766c0
-ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
+ms.sourcegitcommit: 01d2fcd0202f1ef347693c973edb82acfae6c818
+ms.openlocfilehash: 13198d264d7d49454e2aba76604b4c2e9445a502
 
 
 ---
@@ -41,10 +41,10 @@ Es gibt wenige kleinere Unterschiede zwischen der Unternehmensportal-App und der
 Wenn Sie die Möglichkeiten der Unternehmensportal-Website mit denen der Unternehmensportal-App auf Ihrem Gerät vergleichen möchten, wählen Sie einen der folgenden Links aus:
 
 > [!div class="op_single_selector"]
-- [Android](using-your-android-device-with-intune.md)
-- [iOS und Mac OS](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Windows](using-your-windows-device-with-intune.md)
-- [Unternehmensportal-Website](using-the-intune-company-portal-website.md)
+- [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
+- [Verwenden Ihrer iOS- und macOS-Geräte mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
+- [Verwenden der Unternehmensportal-Website](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>Was geschieht beim Hinzufügen eines Computers oder Geräts zum Unternehmensportal?
 Wenn Sie dem Unternehmensportal einen Computer oder ein Gerät hinzufügen, wird je nach Gerät möglicherweise Software installiert oder eine App heruntergeladen.  Sie gestatten damit Ihrem IT-Administrator, Ihr Gerät zu verwalten, damit die Unternehmensinformationen auf dem Gerät geschützt werden.
@@ -58,9 +58,9 @@ Wenn Sie erfahren möchten, was Ihr IT-Administrator auf Ihrem Gerät sehen kann
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Welche Art von Computern und Geräten können Sie dem Unternehmensportal hinzufügen?
 
--   iPhones, iPads und macOS-Geräte
+-   Apple-Geräte unter iOS (iPhone, iPad) und macOS (iMac, MacBook)
 
--   Android-Mobilgeräte
+-   Android-Geräte
 
 -   Windows-Geräte
     -   Windows 10 Mobile
@@ -96,6 +96,6 @@ Wenn Sie Hilfe benötigen, wenden Sie sich an Ihren IT-Administrator. Die entspr
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

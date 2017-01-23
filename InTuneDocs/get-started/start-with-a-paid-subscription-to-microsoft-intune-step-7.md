@@ -1,11 +1,11 @@
 ---
-title: Anpassen des Unternehmensportals | Microsoft Intune
+title: Anpassen des Unternehmensportals | Microsoft-Dokumentation
 description: "Mit dem Unternehmensportal können Benutzer gängige Aufgaben ausführen und z.B. Geräte registrieren, Apps installieren und Informationen zur IT-Abteilung abrufen."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 12/13/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 04cccd410417dca4477c0d6cd61b0940dda8c389
+ms.sourcegitcommit: 063b073d85dac9fce7d1cbab80ea320c5d237961
+ms.openlocfilehash: 0d8a86b55904198612e0d53fbc387d850d88a449
 
 
 ---
@@ -31,7 +31,7 @@ Das Intune-Unternehmensportal stellt Benutzern Zugriff auf Unternehmensdaten und
 - **Die Unternehmensportal-Website**: Eine Website, mit der Endbenutzer die meisten der Aufgaben ausführen können, die mit der Unternehmensportal-App ausgeführt werden können. Die URL zum Intune-Unternehmensportal lautet [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Weitere Informationen zu dieser Website finden Sie unter [Verwenden der Intune-Unternehmensportal-Website](/Intune/EndUser/using-the-intune-company-portal-website).
 
 > [!TIP]
-> Wenn Sie das Unternehmensportal anpassen, gelten die Konfigurationen sowohl für die Unternehmensportalwebsite als auch für die Unternehmensportal-Apps.
+> Wenn Sie das Unternehmensportal anpassen, gelten die Konfigurationen sowohl für die Unternehmensportal-Website als auch für die Unternehmensportal-Apps.
 
 Dies sind einige der Aufgaben, die Benutzern im Unternehmensportal ausführen können:
 
@@ -42,11 +42,6 @@ Dies sind einige der Aufgaben, die Benutzern im Unternehmensportal ausführen k�
 -   Remotesperren des Geräts
 -   Herunterladen von Software, die von der Organisation bereitgestellt wird
 -   Wenden Sie sich zu Supportzwecken an die IT-Abteilung.
-
-> [!NOTE]
-> Die Unternehmensportal-App ist in einigen Ländern noch nicht verfügbar.
-> __iOS__: Die Unternehmensportal-App für iOS wird [in allen verfügbaren Gebieten](https://go.microsoft.com/fwlink/?linkid=831284) für den Apple iOS App Store veröffentlicht.
-> __Android__: Die Unternehmensportal-App für Android ist in China zurzeit nicht verfügbar. Für diese Länder ist eine alternative Lösung, [die Android-Version der Unternehmensportal-App querzuladen](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
 
 ## <a name="customize-company-portal-settings"></a>Anpassen von Unternehmensportaleinstellungen
 Durch Anpassen des Unternehmensportals können Sie Ihren Endbenutzern eine vertraute und sinnvolle Benutzeroberfläche bereitstellen. Melden Sie sich zu diesem Zweck einfach als Mandanten- oder Dienstadministrator bei der [Microsoft Intune-Administratorkonsole](https://manage.microsoft.com) an, wählen Sie **Verwaltung** &gt; **Unternehmensportal** aus, und konfigurieren Sie die Einstellungen für das Unternehmensportal.
@@ -83,7 +78,7 @@ Sie können Ihr Unternehmensportal mit Ihrem Firmenlogo, Firmennamen, Farbdesign
     |Hintergrund für die [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)]-Unternehmensportal- App auswählen|Diese Einstellung betrifft nur den Hintergrund der Unternehmensportal-App für [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)].|
 
 
-Nach dem Speichern Ihrer Änderungen können Sie über die Links, die am unteren Rand der Seite **Unternehmensportal** in der Administratorkonsole angegeben sind, die Unternehmensportalwebsite anzeigen. Diese Links können nicht geändert werden. Wenn ein Benutzer sich anmeldet, werden über diese Links Ihre Abonnements im Unternehmensportal angezeigt.
+Nach dem Speichern Ihrer Änderungen können Sie über die Links, die am unteren Rand der Seite **Unternehmensportal** in der Administratorkonsole angegeben sind, die Unternehmensportal-Website anzeigen. Diese Links können nicht geändert werden. Wenn ein Benutzer sich anmeldet, werden über diese Links Ihre Abonnements im Unternehmensportal angezeigt.
 
 >[!div class="step-by-step"]
 

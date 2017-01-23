@@ -20,6 +20,9 @@ ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
 ---
 
 # <a name="evaluate-mobile-device-management-in-microsoft-intune"></a>Evaluieren der Verwaltung mobiler Geräte (MDM) in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In diesem Evaluierungshandbuch wird die Funktionsweise der Verwaltung mobiler Geräte in Intune beschrieben. Sie lernen Folgendes:
 - Registrieren eines Geräts für die Verwaltung mit Intune
 - Erstellen von Gruppen zum Organisieren von Benutzern und Geräten
@@ -117,6 +120,6 @@ Open the Company Portal on the mobile device, choose **Apps**, and then install 
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

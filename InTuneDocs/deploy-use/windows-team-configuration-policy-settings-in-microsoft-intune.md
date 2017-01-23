@@ -1,11 +1,11 @@
 ---
-title: "Einstellungen für Windows Team-Konfigurationsrichtlinie | Microsoft Intune"
+title: "Einstellungen für Windows Team-Konfigurationsrichtlinie | Microsoft-Dokumentation"
 description: "Verwenden Sie die **allgemeine Windows 10 Team-Konfigurationsrichtlinie** von Microsoft Intune, um Einstellungen für registrierte Windows 10 Team-Geräte (z. B. Microsoft Surface Hub) zu konfigurieren."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,32 +14,35 @@ ms.assetid: 38194ef3-e26e-4682-958d-14b395fccba1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 75866e1854211ad42084f3ededaf1e3c0f6d5119
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 136f83a7340424b420e4a487a0758992a802ece3
 
 
 ---
 
-# Einstellungen für Windows Team-Konfigurationsrichtlinie in Microsoft Intune
+# <a name="windows-team-configuration-policy-settings-in-microsoft-intune"></a>Einstellungen für Windows Team-Konfigurationsrichtlinie in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Verwenden Sie die **allgemeine Windows 10 Team-Konfigurationsrichtlinie** von Microsoft Intune, um Einstellungen für registrierte Windows 10 Team-Geräte (z. B. Microsoft Surface Hub) zu konfigurieren.
 
 |Name der Einstellung|Details|
 |----------------|-----------|
-|**Wenn sich jemand im Raum automatisch zu reaktivieren Bildschirms zulassen**|Ermöglicht das automatische Aktivieren des Geräts, wenn der Sensor eine Person im Raum erkennt.|
-|**PIN für funkprojektion anfordern**|Gibt an, ob Sie eine PIN eingeben müssen, bevor Sie die drahtlosen Projektionsfunktionen des Geräts verwenden können.|
-|**Einrichten eines Wartungsfensters für Geräteupdates**|Konfiguriert das Fenster, in dem Updates am Gerät vorgenommen werden können. Sie können die Startzeit und Länge des Fensters (1 bis 5 Stunden) konfigurieren.|
-|**Aktivieren von Azure Operational Insights**|Azure Operational Insights ist Teil der Microsoft Operations Manager-Suite und sammelt, speichert und analysiert Protokolldaten von Windows 10-Teamgeräten.<br /><br />Sie müssen eine **Arbeitsbereichs-ID** und einen **Arbeitsbereichsschlüssel** angeben, um die Verbindung mit Azure Operational Insights herstellen zu können.|
-|**Aktivieren der drahtlosen Miracast-Projektion**|Aktivieren Sie diese Option, wenn Sie es dem Windows 10-Teamgerät ermöglichen möchten, für Miracast aktivierte Geräte zum Projizieren zu verwenden.<br /><br />Wenn Sie diese Option aktivieren, wählen Sie unter **Miracast-Kanal auswählen** den Miracast-Kanal aus, der zum Projizieren von Inhalten verwendet wurde.|
-|**Auswählen der auf der Begrüßungsseite angezeigten Besprechungsinformationen**|Wenn Sie diese Option aktivieren, können Sie die Informationen auswählen, die auf der Kachel **Besprechungen** des Bildschirms **Willkommen** angezeigt werden. Sie können:<br /><br />-   **Nur Organisator und Zeit anzeigen**<br />-   **Organisator, Zeit und Betreff anzeigen (Betreff wird für private Besprechungen ausgeblendet)**|
-|**URL für Hintergrundbild des Sperrbildschirms**|Aktivieren Sie diese Einstellung, um auf dem Bildschirm **Willkommen** für Windows 10-Teamgeräte einen benutzerdefinierten Hintergrund über die von Ihnen angegebene URL anzuzeigen.<br /><br />Das Bild muss im PNG-Format vorliegen und die URL muss mit **https://** beginnen.|
+|**Zulassen der automatischen Aktivierung des Bildschirms, wenn Sensoren eine Person im Raum feststellen**|Ermöglicht das automatische Aktivieren des Geräts, wenn der Sensor eine Person im Raum erkennt.|
+|**PIN für Funkprojektion anfordern**|Gibt an, ob Sie eine PIN eingeben müssen, bevor Sie die drahtlosen Projektionsfunktionen des Geräts verwenden können.|
+|**Wartungsfenster für Geräteupdates festlegen**|Konfiguriert das Fenster, in dem Updates am Gerät vorgenommen werden können. Sie können die Startzeit und Länge des Fensters (1 bis 5 Stunden) konfigurieren.|
+|**Azure Operational Insights aktivieren**|Azure Operational Insights ist Teil der Microsoft Operations Manager-Suite und sammelt, speichert und analysiert Protokolldaten von Windows 10-Teamgeräten.<br /><br />Sie müssen eine **Arbeitsbereichs-ID** und einen **Arbeitsbereichsschlüssel** angeben, um die Verbindung mit Azure Operational Insights herstellen zu können.|
+|**Miracast-Funkprojektion aktivieren**|Aktivieren Sie diese Option, wenn Sie es dem Windows 10-Teamgerät ermöglichen möchten, für Miracast aktivierte Geräte zum Projizieren zu verwenden.<br /><br />Wenn Sie diese Option aktivieren, wählen Sie unter **Miracast-Kanal auswählen** den Miracast-Kanal aus, der zum Projizieren von Inhalten verwendet wurde.|
+|**Im Willkommensbildschirm angezeigte Besprechungsinformationen auswählen**|Wenn Sie diese Option aktivieren, können Sie die Informationen auswählen, die auf der Kachel **Besprechungen** des Bildschirms **Willkommen** angezeigt werden. Sie können:<br /><br />-   **Nur Organisator und Zeit anzeigen**<br />-   **Organisator, Zeit und Thema anzeigen (Thema bei privaten Besprechungen ausblenden)**|
+|**URL zum Bild für den Sperrbildschirmhintergrund**|Aktivieren Sie diese Einstellung, um auf dem **Willkommensbildschirm** von Windows 10 Team-Geräten einen benutzerdefinierten Hintergrund aus der angegebenen URL anzuzeigen.<br /><br />Das Bild muss im PNG-Format vorliegen und die URL muss mit **https://** beginnen.|
 
 
-### Weitere Informationen:
+### <a name="see-also"></a>Weitere Informationen:
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

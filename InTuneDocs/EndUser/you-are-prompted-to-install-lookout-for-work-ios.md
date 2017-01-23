@@ -1,5 +1,5 @@
 ---
-title: "Sie werden aufgefordert, Lookout for Work auf Ihrem iOS-Gerät zu installieren | Microsoft Intune"
+title: "Sie werden aufgefordert, Lookout for Work auf Ihrem iOS-Gerät zu installieren | Microsoft-Dokumentation"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,10 +11,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 0c1fd681cd2ef9001083df16d4fb7506c47f9572
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 64e094c8648c0737cdbc0dcdc4ec6b3a8bc96831
 
 
 ---
@@ -55,6 +57,6 @@ Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihre
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

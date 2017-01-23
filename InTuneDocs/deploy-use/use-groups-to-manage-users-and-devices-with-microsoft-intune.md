@@ -1,11 +1,11 @@
 ---
-title: "Verwenden von Gruppen zum Verwalten von Benutzern und Geräten | Microsoft Intune"
+title: "Verwenden von Gruppen zum Verwalten von Benutzern und Geräten | Microsoft-Dokumentation"
 description: "Erstellen und Verwalten von Gruppen mithilfe des Arbeitsbereichs „Gruppen“."
 keywords: 
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,78 +14,26 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
+ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
+ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
 
 
 ---
 # <a name="use-groups-to-manage-users-and-devices-in-microsoft-intune"></a>Verwenden von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In diesem Thema wird das Erstellen von Gruppen in Intune beschrieben. Darüber hinaus erhalten Sie Informationen dazu, wie sich die Verwaltung von Gruppen in den nächsten Monaten verändern wird. 
 
 >[!IMPORTANT]
 >
->Wenn Sie den Arbeitsbereich „Gruppen“ im Intune-Portal öffnen und dort einen Link zum Azure AD-Portal (Azure Active Directory) vorfinden, verwenden Sie bereits den *neuen* Ansatz für Azure AD-Sicherheitsgruppen für die Gruppenverwaltung in Intune, der unter [Ankündigung bevorstehender Verbesserungen an der Administratoroberfläche für Gruppen](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups) beschrieben wird. Klicken Sie auf den Link zum Azure AD-Portal, um Ihre Gruppen zu erstellen und zu verwalten.
+>Wenn Sie den Arbeitsbereich „Gruppen“ im Intune-Portal öffnen und dort einen Link zum Azure AD-Portal (Azure Active Directory) sehen, verwenden Sie bereits den *neuen* Ansatz mit Azure AD-Sicherheitsgruppen für die Gruppenverwaltung in Intune, der unter [Migrieren von Gruppen zu Azure Active Directory](migrating-groups-to-azure-active-directory.md) beschrieben wird. Klicken Sie auf den Link zum Azure AD-Portal, um Ihre Gruppen zu erstellen und zu verwalten.
 >
 >![Screenshot des Links zur Azure-Gruppenverwaltung](../media/groups-link-azure.png) 
 >
 >Wenn der Link zum Azure AD-Portal nicht angezeigt wird, verwenden Sie noch den *aktuellen* Ansatz zur Gruppenverwaltung, der unter [Erstellen von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in diesem Thema beschrieben ist.
 
-
-## <a name="notice-of-upcoming-improvements-to-the-admin-experience-for-groups"></a>Ankündigung bevorstehender Verbesserungen an der Administratoroberfläche für Gruppen
-
-Sie haben uns zu verstehen gegeben, dass Sie übergreifend eine einheitliche Oberfläche für Gruppierung und Zielfestlegung in Enterprise Mobility und Security wünschen. Wir haben auf Sie gehört. Auf der Grundlage Ihres Feedbacks konvertieren wir in Kürze die Intune Gruppen in auf Azure Active Directory-basierende Sicherheitsgruppen. Durch diese Änderung wird die Gruppenverwaltung zwischen Intune und Azure Active Directory (Azure AD) vereinheitlicht. Die neue Oberfläche bringt den Vorteil mit sich, dass Sie keine Gruppen mehr dienstübergreifend verdoppeln müssen. Durch die Optionen zur Verwendung von Windows PowerShell und Microsoft Graph wird so außerdem Erweiterbarkeit verfügbar.
-
-### <a name="how-does-this-affect-me-right-now"></a>Inwiefern betrifft das mich?
-Wenn Sie bereits Intune-Kunde sind, sind Sie von diesen Änderungen nicht betroffen. Aber das kommt demnächst:
-
--   Neue Konten werden Azure AD-Sicherheitsgruppen statt Intune-*Benutzergruppen* verwenden.   
--   Im November 2016 verwalten neue Konten, die nach dem monatlichen Service Release bereitgestellt wurden, jeweils benutzerbasierte Gruppen und gerätebasierte Gruppen im Azure AD-Portal. Bestandskunden sind davon nicht betroffen.
--   Im Dezember 2016 beginnt das Intune-Produktteam mit der Migration von Bestandskunden zur neuen Azure AD-basierten Gruppenverwaltungsoberfläche. Alle Benutzer- und Gerätegruppen, die jetzt in Intune vorhanden sind, werden zu Azure AD-Sicherheitsgruppen migriert. Mit den Migrationen wird erst begonnen, wenn wir die Auswirkungen auf Ihre alltägliche Arbeit auf ein Minimum beschränken und erwarten können, dass Auswirkungen auf Ihre Benutzer ausbleiben. Außerdem benachrichtigen wir Sie, bevor wir Ihr Konto migrieren.
-
-
-### <a name="how-and-when-will-i-migrate-to-the-new-groups-experience"></a>Wie und wann werde ich zur neuen Gruppenoberfläche migrieren?
-Wir migrieren die aktuellen Intune-Kunden über einen längeren Zeitraum. Wir sind dabei, den Zeitplan für diese Migration fertigzustellen und aktualisieren dieses Thema in ein paar Wochen, um Ihnen weitere Details mitzuteilen. Sie erhalten Sie eine Benachrichtigung, bevor Sie migriert werden. Kontaktieren Sie unser Migrationsteam unter [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com), wenn Sie Probleme mit der Migration haben. Einzelheiten darüber, wie Gruppen migriert werden, finden Sie unter [Migrieren von Gruppen zu Azure Active Directory](migrating-groups-to-azure-active-directory.md).
-
-### <a name="what-happens-to-my-existing-user-and-device-groups"></a>Was geschieht mit meinen vorhandenen Benutzer- und Gerätegruppen?
- Benutzergruppen und Gerätegruppen, die Sie in Intune erstellt haben, werden zu Azure AD-Sicherheitsgruppen migriert. Intune-Standardgruppen, z.B. die Gruppe „Alle Benutzer“ werden nur migriert, wenn Sie sie zum Zeitpunkt der Migration in Bereitstellungen verwenden. Für einige Gruppen kann die Migration komplexer sein. Wir benachrichtigen Sie, wenn weitere Schritte in Ihrer Organisation zum Ausführen der Migration erforderlich sind.
-
-### <a name="what-new-features-will-be-available-to-me"></a>Welche neuen Funktionen sind für mich verfügbar?
-Das ist die neue Funktionalität, die wir mit dieser Migration von Intune nach Azure Active Directory einführen:
-
--    Azure AD-Sicherheitsgruppen werden in Intune für alle Bereitstellungsarten unterstützt.
--    Azure AD-Sicherheitsgruppen unterstützen das Gruppieren von Geräten und Benutzern.
--    Azure AD-Sicherheitsgruppen unterstützen dynamische Gruppen mit Intune-Geräteattributen. Sie können beispielsweise Geräte anhand der Plattform, wie etwa iOS, dynamisch gruppieren. Wenn ein neues iOS-Gerät in Ihrer Organisation registriert wird, wird es der dynamischen iOS-Gerätegruppe automatisch hinzugefügt.
--    Sie arbeiten mit einer gemeinsamen Administratoroberfläche für die Gruppenverwaltung in Azure AD und Intune.
-- Die Rolle „Intune-Dienstadministrator“ wird zu Azure AD hinzugefügt, sodass Intune-Dienstadministratoren Gruppenverwaltungsaufgaben in Azure AD ausführen können.
-
-### <a name="what-intune-functionality-wont-be-available"></a>Welche Intune-Funktion wird nicht verfügbar sein?
-Zwar wird die Gruppenoberfläche insgesamt verbessert, jedoch stehen einige Intune-Funktionen nach der Migration der Organisation von Intune-Gruppen zu Azure AD-Sicherheitsgruppen nicht mehr zur Verfügung.
-
-#### <a name="group-management-functionality"></a>Gruppenverwaltungsfunktion
-
--   Nach der Migration können beim Erstellen einer neuen Gruppe keine Mitglieder oder Gruppen mehr ausgeschlossen werden. In dynamischen Gruppen von Azure AD können jedoch Attribute verwendet werden, mit denen sich erweiterte Regeln erstellen lassen, die Sie zum Ausschließen von Mitgliedern aus einer Gruppe auf der Grundlage der von Ihnen festgelegten Kriterien verwenden können.
--   Gruppen aus nicht gruppierten Benutzern und nicht gruppierten Geräten werden nicht unterstützt. Diese Gruppen werden nicht von Intune nach Azure AD migriert.
-
-
-#### <a name="group-dependent-functionality"></a>Gruppenabhängige Funktionen
-
--   Die Serviceadministratorrolle wird über keine **Verwalten von Gruppen**-Berechtigungen verfügen.
--   Sie können keine Exchange ActiveSync-Geräte gruppieren. Ihre Gruppe „Alle von EAS verwalteten Geräte“ wird von einer Gruppe in eine Berichtsansicht konvertiert.
--  Pivotieren mit Gruppen in Berichten ist nicht verfügbar.
--  Adressierung benutzerdefinierter Zielgruppen mithilfe von Benachrichtigungsregeln ist nicht verfügbar.
-
-### <a name="what-should-i-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
- Wir haben Empfehlungen für Sie, die Ihnen diese Umstellung vereinfachen:
-
-- Bereinigen Sie alle unerwünschten oder nicht benötigten Intune-Gruppen vor der Migration.
-- Überdenken Sie die Verwendung der Ausschlussfunktion in Ihren Gruppen, und ziehen Sie in Erwägung, Ihre Gruppen ggf. so zu bearbeiten, dass sie die Ausschlussfunktion nicht benötigen.
--  Wenn Administratoren von Ihnen keine Berechtigung zum Erstellen von Gruppen in Azure AD besitzen, bitten Sie Ihren Azure AD-Administrator, sie zur Azure AD-Rolle „Intune-Dienstadministrator“ hinzuzufügen.
-
-
-## <a name="create-groups-to-manage-users-and-devices-with-microsoft-intune"></a>Erstellen von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune
-
-In diesem Abschnitt wird beschrieben, wie Intune-Gruppen in der Intune-Verwaltungskonsole erstellt werden.
+In diesem Thema wird beschrieben, wie Intune-Gruppen in der Intune-Verwaltungskonsole erstellt werden.
 
 Sie können Gruppen im Arbeitsbereich **Gruppen** in der Microsoft Intune-Verwaltungskonsole erstellen und verwalten. Die Seite **Gruppenübersicht** enthält Statusübersichten, die Ihnen helfen, Probleme, die Ihre Aufmerksamkeit erfordern, schnell zu erkennen und zu priorisieren. Statusübersichten betreffen diese Bereiche:
 
@@ -108,7 +56,7 @@ Darüber hinaus werden in der Gruppenhierarchie Statusübersichten angezeigt, da
 >
 > Jedes Mal, wenn Sie eine einschränkende Richtlinie erstellen sollten Sie das Ihren Benutzern mitteilen. Achten Sie daher nach dem Erstellen der allgemeineren Gruppen und Richtlinien darauf, in welcher Weise Sie kleinere Gruppen erstellen, um unnötige Kommunikation zu vermeiden.
 
-### <a name="to-create-a-device-group"></a>So erstellen Sie eine Gerätegruppe
+## <a name="to-create-a-device-group"></a>So erstellen Sie eine Gerätegruppe
 
 1.  Wählen Sie in der Intune-Verwaltungskonsole **Gruppen** &gt; **Übersicht** &gt; **Gruppe erstellen** aus.
 
@@ -128,7 +76,7 @@ Darüber hinaus werden in der Gruppenhierarchie Statusübersichten angezeigt, da
 
 Die neu erstellte Gruppe wird in der Liste **Gruppen** im Arbeitsbereich **Gruppen** unter der übergeordneten Gruppe angezeigt. Das ist auch der Ort, an dem Sie die Gruppe bearbeiten oder löschen können.
 
-### <a name="to-create-a-user-group"></a>So erstellen Sie eine Benutzergruppe
+## <a name="to-create-a-user-group"></a>So erstellen Sie eine Benutzergruppe
 
 1.  Wählen Sie in der Intune-Verwaltungskonsole **Gruppen** &gt; **Übersicht** &gt; **Gruppe erstellen** aus.
 
@@ -205,6 +153,6 @@ Jede Richtlinie verfügt über einen **vorgesehenen Wert** und einen **Status**.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

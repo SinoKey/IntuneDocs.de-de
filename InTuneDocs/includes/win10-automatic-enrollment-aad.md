@@ -1,4 +1,4 @@
-## Azure Active Directory-Registrierung
+## <a name="azure-active-directory-enrollment"></a>Azure Active Directory-Registrierung
 
 Mit der automatischen Registrierung können Benutzer entweder unternehmenseigene oder private Windows 10-PCs und Windows 10 Mobile-Geräte in Intune registrieren, indem Sie ein Geschäfts- oder Schulkonto hinzufügen und zustimmen, dass das Gerät verwaltet wird. So einfach ist das. Im Hintergrund registriert sich das Gerät des Benutzers und tritt Azure Active Directory bei. Nach der Registrierung wird das Gerät mit Intune verwaltet.
 
@@ -7,7 +7,7 @@ Mit der automatischen Registrierung können Benutzer entweder unternehmenseigene
 - Microsoft Intune-Abonnement
 
 
-### Konfigurieren der automatischen MDM-Registrierung
+### <a name="configure-automatic-mdm-enrollment"></a>Konfigurieren der automatischen MDM-Registrierung
 
 1. Wechseln Sie im [Azure-Verwaltungsportal](https://manage.windowsazure.com) (https://manage.windowsazure.com) zum Knoten **Active Directory**, und wählen Sie Ihr Verzeichnis aus.
 
@@ -25,15 +25,15 @@ Mit der automatischen Registrierung können Benutzer entweder unternehmenseigene
   - **MDM-Nutzungsbedingungs-URL** – Verwenden Sie den Standardwert. Diese URL zeigt die Nutzungsbedingungen für Benutzer an, wenn Geräte registriert werden.
   - **MDM-Richtlinien-URL** – Verwenden Sie den Standardwert. Wenn ein Gerät als nicht kompatibel gemeldet wird, wird die Nachricht **Zugriff verweigert.** mit dieser URL angezeigt. Die URL verweist auf eine Seite, die Benutzern hilft, zu verstehen, warum ihr Gerät nicht mit der Richtlinie kompatibel ist und wie sie die Kompatibilität wiederherstellen können.
 
-6.  Geben Sie an, welche Geräte von Benutzern von Microsoft Intune verwaltet werden sollen. Die Windows 10-Geräte der Benutzer werden automatisch für die Verwaltung mit Microsoft Intune registriert.
+6.  Geben Sie an, welche Geräte von Benutzern von Microsoft Intune verwaltet werden sollen. Die Windows 10-Geräte dieser Benutzer werden automatisch für die Verwaltung mit Microsoft Intune registriert.
 
-  - **All**
+  - **Alle**
   - **Gruppen**
   - **Keine**
 
 7. Wählen Sie **Speichern** aus.
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

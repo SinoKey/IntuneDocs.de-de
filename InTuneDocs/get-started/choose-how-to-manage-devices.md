@@ -1,12 +1,12 @@
 ---
-title: "Auswählen der Methode zum Verwalten von Geräten | Microsoft Intune"
+title: "Auswählen der Methode zum Verwalten von Geräten | Microsoft-Dokumentation"
 description: "Hier erhalten Sie Informationen zu den verschiedenen Möglichkeiten, mit denen Sie Geräte registrieren und verwalten können."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,15 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: b97ee1e99778c2a39e92061dd5aa051ecdf35caa
+ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
+ms.openlocfilehash: dea0700e2901bfed566a87d7c599569219de85a2
 
 
 ---
 
 # <a name="choose-how-to-manage-devices"></a>Auswählen der Methode zum Verwalten von Geräten
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Um Vorteile aus den zahlreichen Funktionen zu ziehen, die Intune anbietet, wie z.B. die App-Bereitstellung und die Steuerung von Geräteeinstellungen, müssen Ihre Geräte *verwaltet* werden. Die Art, wie Sie Geräte verwalten, hängt von den Intune-Funktionen ab, die Sie verwenden möchten. Dieses Thema hilft Ihnen bei der Auswahl der Methode, die Ihren Bedürfnissen entspricht.
 
@@ -44,7 +46,7 @@ Registrieren Sie Windows PCs, um von den meisten Funktionen zu profitieren. Der 
 - Remoteunterstützung für Benutzer mithilfe der TeamViewer-Software
 
 Eine ausführliche Liste der Funktionen für die Verwaltung, die Sie zu jeder Methode erhalten, finden Sie unter [Verwaltungsfunktionen für mobile Geräte](mobile-device-management-capabilities-in-microsoft-intune.md) und [Funktionen des Intune-PC-Softwareclients](windows-pc-management-capabilities-in-microsoft-intune.md).
-Informationen zu den Geräten und PCs, die von Intune unterstützt werden, finden Sie unter [Unterstützte mobile Geräte und Computer](/intune/get-started/supported-mobile-devices-and-computers).
+Informationen zu den Geräten und PCs, die von Intune unterstützt werden, finden Sie unter [Unterstützte mobile Geräte und Computer](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -54,6 +56,6 @@ Informationen zu den Geräten und PCs, die von Intune unterstützt werden, finde
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

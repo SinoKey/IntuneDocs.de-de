@@ -1,5 +1,5 @@
 ---
-title: "Verwalten von Windows Store für Unternehmen-Apps | Microsoft Intune"
+title: "Verwalten von Windows Store für Unternehmen-Apps | Microsoft-Dokumentation"
 description: "Stellen Sie eine Verbindung zwischen Microsoft Intune und dem Windows Store für Unternehmen her, wenn Sie über ein Volumenprogramm erworbene Apps über die Intune-Konsole verwalten und bereitstellen möchten."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 37044da4c7a58749c7b3423b1872b07d1673603d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1e0cb157182415e25cd5829e244e47b2bd5b539b
 
 
 ---
 
 # <a name="manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>Verwalten von Apps, die im Windows Store für Unternehmen erworben wurden, mit Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Im [Windows Store für Unternehmen](https://www.microsoft.com/business-store) können Sie Apps für Ihre Organisation suchen und einzeln oder im Rahmen eines Volumenprogramms erwerben. Indem Sie den Store mit Microsoft Intune verbinden, können Sie im Rahmen von Volumenprogrammen erworbene Apps über die Intune-Konsole verwalten. Beispiel:
 * Sie können die Liste der Apps, die Sie im Speicher erworben haben, mit Intune synchronisieren.
 * Synchronisierte Apps werden in der Intune-Verwaltungskonsole angezeigt und können wie alle anderen Apps bereitgestellt werden.
@@ -80,6 +83,6 @@ Wenn Sie eine App aus dem Windows Store für Unternehmen bereitstellen, wird von
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

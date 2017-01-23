@@ -1,11 +1,11 @@
 ---
-title: Allgemeine Aufgaben zur Verwaltung von Windows-PCs | Microsoft Intune
+title: Allgemeine Aufgaben zur Verwaltung von Windows-PCs | Microsoft-Dokumentation
 description: "Lernen Sie Möglichkeiten kennen, wie Sie Windows-PCs verwalten, auf denen der Intune-Softwareclient ausgeführt wird."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 94cb6278e0df458ee3696cc0c8e1018822c44cd8
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: 2fc2d7e57267f82897dac8a0cc222c2b7009d14d
 
 
 ---
 
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Intune-Softwareclient
-Schauen Sie sich die Liste der möglichen Aufgaben zum Verwalten Ihrer PCs an, auf denen der Intune-Softwareclient ausgeführt wird. Wenn Sie den Client noch nicht auf Ihren Computern installiert haben, finden Sie weitere Informationen unter [Installieren des Windows-PC-Clients mit Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
+Dieses Thema führt Aufgaben auf, die Sie bei der Verwaltung von Desktops als PCs ausführen können, indem Sie den Intune-Softwareclient installieren. Die Verwaltung von PCs als mobile Geräte wird in diesem Thema nicht behandelt. Wenn Sie den Client noch nicht auf Ihren PCs installiert haben, finden Sie weitere Informationen unter [Installieren des Intune-Softwareclients](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
 - [Verwenden von Richtlinien zur Vereinfachung der Verwaltung von PCs](use-policies-to-simplify-windows-pc-management.md): Beschreibt die Intune-Richtlinien zur **Computerverwaltung** und stellt eine Liste der Einstellungen für das Microsoft Intune Center bereit.
@@ -30,7 +30,7 @@ Schauen Sie sich die Liste der möglichen Aufgaben zum Verwalten Ihrer PCs an, a
 
 - [Abkoppeln eines Windows-PCs](retire-a-windows-pc-with-microsoft-intune.md): Listet die Schritte zum Abkoppeln eines Windows-PCs auf und beschreibt, was geschieht, wenn Sie einen PC abkoppeln.
 
-- [Verwalten von Verknüpfungen zwischen Benutzern und Geräten für Windows-PCs](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md): Erläutert, wann und wie Sie einen Benutzer mit einem Computer verknüpfen müssen, bevor Sie Software für den Benutzer bereitstellen.
+- [Verwalten von Verknüpfungen zwischen Benutzern und Geräten für Windows-PCs](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md): Erläutert, wann und wie Sie einen Benutzer mit einem PC verknüpfen müssen, bevor Sie Software für den Benutzer bereitstellen.
 
 - [Anfordern und Bereitstellen von Remoteunterstützung für Windows-PCs](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md): Erläutert, wie Intune-PC-Benutzer Remoteunterstützung von Ihnen erhalten, und beschreibt die Voraussetzungen und das TeamViewer-Setup.
 
@@ -38,6 +38,6 @@ Schauen Sie sich die Liste der möglichen Aufgaben zum Verwalten Ihrer PCs an, a
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

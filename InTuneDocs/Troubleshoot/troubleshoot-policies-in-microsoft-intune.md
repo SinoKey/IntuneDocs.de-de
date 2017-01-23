@@ -1,11 +1,11 @@
 ---
-title: Behandlung von Problemen mit Richtlinien | Microsoft Intune
+title: Behandlung von Problemen mit Richtlinien | Microsoft-Dokumentation
 description: Behandeln Sie Richtlinienkonfigurationsprobleme.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
-ms.openlocfilehash: fbc18b12c00a4b61f7419731c6b4306b583638cc
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 2a620d1e499e286365e5913be0ceb3d1efe3b846
 
 
 ---
 
-# Behandlung von Problemen mit Richtlinien in Microsoft Intune
+# <a name="troubleshoot-policies-in-microsoft-intune"></a>Behandlung von Problemen mit Richtlinien in Microsoft Intune
 
 Wenn beim Bereitstellen und Verwalten von Richtlinien mit Intune Probleme auftreten, beginnen Sie hier. In diesem Thema werden einige allgemeine Probleme, die auftreten können, sowie deren Lösungen behandelt.
 
-## Allgemeine Probleme
+## <a name="general-issues"></a>Allgemeine Probleme
 
-### Wurde eine bereitgestellte Richtlinie auf das Gerät angewendet?
+### <a name="was-a-deployed-policy-applied-to-the-device"></a>Wurde eine bereitgestellte Richtlinie auf das Gerät angewendet?
 **Problem:** Sie sind sich nicht sicher, ob eine Richtlinie ordnungsgemäß angewendet wurde.
 
 In der Intune-Verwaltungskonsole verfügt jedes Gerät unter **Geräteeigenschaften**über eine Registerkarte „Richtlinie“. Jede Richtlinie verfügt über einen **vorgesehenen Wert** und einen **Status**. Den vorgesehenen Wert möchten Sie durch Zuweisen der Richtlinie erzielen. Der Status gibt an, was tatsächlich angewendet wurde, wenn alle für das Gerät geltenden Richtlinien sowie die Einschränkungen und Anforderungen der Hardware und des Betriebssystems zusammen betrachtet werden. Mögliche Status sind:
@@ -49,14 +49,14 @@ Der folgende Screenshot zeigt zwei eindeutige Beispiele:
 > Denken Sie daran: Wenn zwei Richtlinien mit unterschiedlichen Einschränkungsstufen für das gleiche Gerät gelten, wird in der Praxis die restriktivere Richtlinie angewendet.
 
 
-## Probleme mit registrierten Geräten
+## <a name="issues-with-enrolled-devices"></a>Probleme mit registrierten Geräten
 
-### Warnung: Fehler beim Speichern von Zugriffsregeln in Exchange
+### <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Warnung: Fehler beim Speichern von Zugriffsregeln in Exchange
 **Problem**: Sie erhalten die Warnung **Fehler beim Speichern von Zugriffsregeln in Exchange**  in der Verwaltungskonsole.
 
 Wenn Sie Richtlinien im Exchange-Arbeitsbereich „Lokale Richtlinie“ in der Verwaltungskonsole erstellt haben, aber Office 365 verwenden, werden die konfigurierten Richtlinieneinstellungen von Intune nicht erzwungen. Beachten Sie die Richtlinienquelle in der Warnung.  Löschen Sie im Exchange-Arbeitsbereich „Lokale Richtlinie“ die Legacyregeln, weil diese in Intune globale Exchange-Regeln für lokales Exchange und für Office 365 nicht relevant sind. Erstellen Sie dann eine neue Richtlinie für Office 365.
 
-### Sicherheitsrichtlinie für verschiedene registrierte Geräte kann nicht geändert werden
+### <a name="cannot-change-security-policy-for-various-enrolled-devices"></a>Sicherheitsrichtlinie für verschiedene registrierte Geräte kann nicht geändert werden
 Windows Phone-Geräte gestatten keine Verringerung der Sicherheitsstufe in Sicherheitsrichtlinien, die mittels MDM oder EAS festgelegt wurden, nachdem diese festgelegt wurden. Angenommen, Sie legen ein **Kennwort mit Mindestanzahl von Zeichen** auf 8 fest und versuchen dann, diesen Wert auf 4 zu verringern. Die restriktivere Richtlinie wurde bereits auf das Gerät angewendet.
 
 Abhängig von der Geräteplattform müssen Sie, wenn Sie die Richtlinie auf einen niedrigeren Sicherheitswert ändern möchten, Sicherheitsrichtlinien möglicherweise zurücksetzen.
@@ -64,12 +64,12 @@ In Windows wischen Sie beispielsweise auf dem Desktop von rechts nach innen, um 
 Im linken Navigationsmenü befindet sich unten ein Link **Sicherheitsrichtlinien zurücksetzen** . Klicken Sie darauf, und klicken Sie dann auf die Schaltfläche **Richtlinien zurücksetzen**.
 Andere MDM-Geräte, wie Android, Windows Phone 8.1 und höher sowie iOS, müssen möglicherweise außer Kraft gesetzt und bei dem Dienst neu registriert werden, damit Sie eine weniger restriktive Richtlinie anwenden können.
 
-## Probleme mit PCs mit dem Intune-Softwareclient
+## <a name="issues-with-pcs-that-run-the-intune-software-client"></a>Probleme mit PCs mit dem Intune-Softwareclient
 
-### Fehler in „policyplatform.log“ im Zusammenhang mit der Microsoft Intune-Richtlinie
+### <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Fehler in „policyplatform.log“ im Zusammenhang mit der Microsoft Intune-Richtlinie
 Bei Windows-PCs, die mit dem Intune-Softwareclient verwaltet werden, können Richtlinienfehler in der Datei „policyplatform.log“ das Ergebnis nicht standardmäßiger Einstellungen in der Windows-Benutzerkontensteuerung (UAC) auf dem Gerät sein. Einige nicht standardmäßige UAC-Einstellungen können Microsoft Intune-Clientinstallationen und Richtlinienausführungen beeinträchtigen.
 
-#### So beheben Sie UAC-Probleme
+#### <a name="to-resolve-uac-issues"></a>So beheben Sie UAC-Probleme
 
 1.  Koppeln Sie den Computer ab, wie unter [Retire devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management) (Abkoppeln von Geräten in der Microsoft Intune-Verwaltung) beschrieben.
 
@@ -82,7 +82,7 @@ Bei Windows-PCs, die mit dem Intune-Softwareclient verwaltet werden, können Ric
 
 4.  Verschieben Sie den Schieberegler für Benachrichtigungen auf die Standardeinstellung.
 
-### FEHLER: Der Wert kann nicht vom Computer abgerufen werden, 0x80041013
+### <a name="error-cannot-obtain-the-value-from-the-computer-0x80041013"></a>FEHLER: Der Wert kann nicht vom Computer abgerufen werden, 0x80041013
 Dieser Fehler kann auftreten, wenn die Zeit auf dem lokalen System um mindestens fünf Minuten abweicht. Wenn die Zeit auf dem lokalen Computer nicht synchron ist, schlagen sichere Transaktionen fehl, da der Zeitstempel ungültig ist.
 
 Um dieses Problem zu beheben, legen Sie die lokale Systemzeit so genau wie möglich auf die Internetzeit oder die auf den Domänencontrollern im Netzwerk eingestellte Zeit fest.
@@ -94,11 +94,11 @@ Um dieses Problem zu beheben, legen Sie die lokale Systemzeit so genau wie mögl
 
 
 
-### Nächste Schritte
+### <a name="next-steps"></a>Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

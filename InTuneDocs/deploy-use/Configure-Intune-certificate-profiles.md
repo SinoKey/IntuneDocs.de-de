@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Zertifikatprofilen | Microsoft Intune
+title: Konfigurieren von Zertifikatprofilen | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie ein Intune-Zertifikatprofil erstellen.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bafb86b1e388163c07110559e2a51bbe0dadc5ed
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f5b5bc13a834cb5071ebf875f3c5512c564efe93
 
 
 ---
 
 # <a name="configure-intune-certificate-profiles"></a>Konfigurieren von Intune-Zertifikatprofilen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Nachdem Sie Ihre Infrastruktur und Zertifikate konfiguriert haben (gemäß der Beschreibung in [Konfigurieren der Zertifikatinfrastruktur für SCEP](configure-certificate-infrastructure-for-scep.md) oder [Konfigurieren der Zertifikatinfrastruktur für PFX](configure-certificate-infrastructure-for-pfx.md)), können Sie Zertifikatprofile erstellen. Gehen Sie dazu folgendermaßen vor:
 
 - **Aufgabe 1**: Exportieren des Zertifikats der vertrauenswürdigen Stamm-CA
@@ -157,6 +160,6 @@ Erfahren Sie nun, wie Sie mithilfe von Zertifikaten E-Mail-, WLAN- und VPN-Profi
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

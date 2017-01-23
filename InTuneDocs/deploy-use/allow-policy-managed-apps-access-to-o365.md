@@ -1,5 +1,5 @@
 ---
-title: App-basierter bedingter Zugriff auf O365 | Microsoft Intune
+title: App-basierter bedingter Zugriff auf O365 | Microsoft-Dokumentation
 description: "Informationen dazu, wie Sie mit bedingtem Zugriff für die Verwaltung mobiler Anwendungen bestimmen können, welche Apps auf O365-Dienste zugreifen dürfen."
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: c966d955365611781e83eea9f2aec743f0fc0321
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2babdeaaf10e9a58716d299cbde0babe45967fb1
 
 
 ---
 
 # <a name="allow-only-mobile-apps-that-support-intune-mam-policies-to-access-office-365-services"></a>Zulassen des Zugriffs auf Office 365-Dienste ausschließlich für mobile Apps, die Intune-Richtlinien für die Verwaltung mobiler Anwendungen unterstützen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 [Intune-Richtlinien für die Verwaltung mobiler Anwendungen (MAM)](protect-apps-and-data-with-microsoft-intune.md) unterstützen Sie beim Schutz Ihrer Unternehmensdaten auf Geräten, die für die Verwaltung in Intune registriert sind. Richtlinien für die Verwaltung mobiler Anwendungen können Sie auch auf **mitarbeitereigenen Geräten verwenden, die nicht für die Verwaltung in Intune registriert sind**.  Auch wenn Sie das Gerät nicht verwalten, müssen Sie in diesem Fall dennoch sicherstellen, dass Unternehmensdaten und -ressourcen geschützt sind. Mithilfe des bedingten Zugriffs für die Verwaltung mobiler Anwendungen (MAM CA) können Sie eine Richtlinie erstellen, mit der nur mobile Apps auf O365-Dienste wie Exchange Online zugreifen können, die Intune-Richtlinien für die Verwaltung mobiler Anwendungen unterstützen.
 
 Wenn Sie beispielsweise zulassen, dass nur die **Microsoft Outlook-App** auf Exchange Online zugreifen kann, können Sie so **verhindern, dass die in iOS und Android integrierten Mail-Apps**, die nicht über den Datenschutz von Intune-Richtlinien für die Verwaltung mobiler Anwendungen verfügen, E-Mails von **Exchange Online** empfangen.

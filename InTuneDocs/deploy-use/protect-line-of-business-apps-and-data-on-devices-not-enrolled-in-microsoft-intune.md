@@ -1,5 +1,5 @@
 ---
-title: "Schützen von Branchen-Apps auf nicht registrierten Geräten | Microsoft Intune"
+title: "Schützen von Branchen-Apps auf nicht registrierten Geräten | Microsoft-Dokumentation"
 description: "In diesem Thema wird beschrieben, wie Sie Ihre benutzerdefinierte Reihe von Branchen-Anwendungen vorbereiten können, sodass Sie Verwaltungsrichtlinien für mobile Apps anwenden können, die helfen können, Datenverluste zu verhindern."
 keywords: 
 author: mtillman
@@ -14,13 +14,15 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: bc1efb1e0c62e6bd52658690db95901c70403d4d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
 
 
 ---
 
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Schützen von branchenspezifischen Apps und Daten auf nicht in Microsoft Intune registrierten Geräten
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Mit Richtlinien zur Verwaltung mobiler Anwendungen (Mobile App Management, MAM) können Sie Unternehmensdaten schützen, indem Aktionen, die zu Datenlecks führen könnten, eingeschränkt und Datenzugriffsanforderungen wie die Eingabe einer App-PIN erzwungen werden. Zum Anwenden von MAM-Richtlinien auf branchenspezifische iOS- und Android-Apps müssen Sie die App zunächst mit dem Microsoft Intune App Wrapping Tool umschließen. Bei diesem Prozess wird einer mobilen App eine Verwaltungsebene hinzugefügt, ohne dass die zugrunde liegende Anwendung geändert werden muss. Nachdem die App umschlossen ist, können Sie MAM-Richtlinien darauf anwenden und sie an Ihre Benutzer verteilen.  
 

@@ -1,5 +1,5 @@
 ---
-title: "Konfigurieren des App-Zugriffs für Exchange Online | Microsoft Intune"
+title: "Konfigurieren des App-Zugriffs für Exchange Online | Microsoft-Dokumentation"
 description: "In diesem Thema wird beschrieben, wie Sie eine Richtlinie für bedingten Zugriff für MAM-Apps konfigurieren können."
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
-ms.openlocfilehash: a0c0bac5082119b2cfa1518934dea8cdc3f75067
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 49b5b50016e2b36a7ad88fdf0a4e3ae2153290ba
 
 
 ---
 
 # <a name="create-an-exchange-online-conditional-access-to-only-allow-apps-supported-by-mam"></a>Erstellen eines bedingten Zugriffs für Exchange Online, um nur Apps zuzulassen, die von MAM unterstützt werden
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Dieses Thema bietet Ihnen eine Schritt-für-Schritt-Anleitung, wie Sie den bedingten Zugriff für Exchange Online einrichten, um nur mobile Apps zuzulassen, die Intune-Richtlinien zur Verwaltung mobiler Apps (Mobile Application Management, MAM) unterstützen.
 
 

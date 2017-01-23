@@ -1,11 +1,11 @@
 ---
-title: "Verwalten von Softwarelizenzverträgen für PCs, auf denen der Intune-Softwareclient ausgeführt wird | Microsoft Intune"
+title: "Verwalten von Softwarelizenzverträgen für PCs, auf denen der Intune-Softwareclient ausgeführt wird | Microsoft-Dokumentation"
 description: "Mit Intune können Sie Lizenzverträge für Software hinzufügen und verwalten, die im Rahmen von Microsoft-Volumenlizenzverträgen oder auf anderem Wege erworben wurde."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 6eead7cd7f04641687b334c8f0c09a3af1f9b4ba
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 47c923cf145a7783a1bc2222442831fcbc0f6a47
 
 
 ---
 
-# Verwalten von Lizenzverträgen für Windows-PC-Software in Microsoft Intune
+# <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Verwalten von Lizenzverträgen für Windows-PC-Software in Microsoft Intune
 Mit Microsoft Intune können Sie Lizenzvertragsinformationen für Software, die im Rahmen von Microsoft-Volumenlizenzverträgen gekauft wurde, hinzufügen und verwalten. Gleiches gilt für Microsoft- oder Nicht-Microsoft-Software, die auf anderem Wege erworben wurde. Diese Informationen lassen sich in logischen Gruppen organisieren.
 
 > [!IMPORTANT]
@@ -43,7 +43,7 @@ Darüber hinaus können Sie Berichte zur Zahl der Installationen und Lizenzen f�
 > [!TIP]
 > Der Arbeitsbereich **Lizenzen** wird erst dann in der Administratorkonsole angezeigt, wenn Sie mindestens einen Windows-PC mit dem Intune Windows PC-Client verwalten.
 
-## Hinzufügen von Microsoft-Volumenlizenzverträgen
+## <a name="add-microsoft-volume-licensing-agreements"></a>Hinzufügen von Microsoft-Volumenlizenzverträgen
 In Intune-Volumenlizenzverträgen werden Lizenzinformationen für Software bereitgestellt, die über Microsoft-Volumenlizenzverträge erworben wurde. Sie können Intune Microsoft-Volumenlizenzverträge hinzufügen, indem Sie passende Paare von Vertragsnummern angeben. Die Vertrags- oder Autorisierungsnummern müssen der richtigen Lizenz- oder Registrierungsnummer zugeordnet werden. Vertragsnummernpaare erhalten Sie vom [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842), wenn Sie Lizenzverträge erwerben.
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://account.manage.microsoft.com/admin/default.aspx) die Option **Lizenzen** aus.
@@ -123,13 +123,13 @@ Nach dem Aktualisieren der Volumenlizenzinformationen können Sie die Lizenzinfo
 > [!NOTE]
 > Als **Produkttitel** wird für alle Microsoft-Volumenlizenzverträge **Nicht verfügbar**angezeigt.
 
-## Hinzufügen und Bearbeiten anderer Softwarelizenzverträge
+## <a name="add-and-edit-other-software-licensing-agreements"></a>Hinzufügen und Bearbeiten anderer Softwarelizenzverträge
 Außerdem können Sie zusätzlich zu Microsoft-Volumenlizenzverträgen weitere Typen von Lizenzverträgen zu Intune hinzufügen. Diese Verträge können sowohl Software einschließen, die nicht von Microsoft stammt, als auch Software, die von Microsoft stammt und über einen Händler erworben wurde.
 
 > [!IMPORTANT]
 > Es muss mindestens ein Windows-PC in Intune registriert sein, bevor Sie einen Vertrag hinzufügen können.  Zusätzlich muss auf mindestens einem registrierten Computer ein lizenzierbares Softwarepaket hochgeladen sein, das Sie zum Hinzufügen eines Lizenzvertrags verwenden möchten.
 
-### So fügen Sie andere Softwareverträge hinzu
+### <a name="to-add-other-software-agreements"></a>So fügen Sie andere Softwareverträge hinzu
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://account.manage.microsoft.com/admin/default.aspx) die Option **Lizenzen** aus.
 
@@ -168,7 +168,7 @@ Außerdem können Sie zusätzlich zu Microsoft-Volumenlizenzverträgen weitere T
 
 Die Listenansicht **Alle Verträge** wird angezeigt.
 
-## Verwalten von Lizenzverträgen
+## <a name="manage-license-agreements"></a>Verwalten von Lizenzverträgen
 Softwarelizenzverträge können zu Lizenzgruppen hinzugefügt werden. Sie können Lizenzgruppen verwenden, um Ihre Lizenzverträge in Einheiten zu organisieren, die für Ihre Organisation logisch sind. Darüber hinaus können Sie Lizenzverträge löschen, die Sie zuvor erstellt haben.
 
 |||
@@ -181,6 +181,6 @@ Softwarelizenzverträge können zu Lizenzgruppen hinzugefügt werden. Sie könne
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

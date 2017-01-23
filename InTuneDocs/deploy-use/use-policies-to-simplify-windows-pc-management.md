@@ -1,11 +1,11 @@
 ---
-title: Verwenden von Richtlinien zur Vereinfachung der Verwaltung von Windows-PCs | Microsoft Intune
+title: Verwenden von Richtlinien zum Vereinfachen der Verwaltung von Windows-PCs | Microsoft-Dokumentation
 description: "Beschreibt die Verwaltungsrichtlinien für Windows-PCs und die Einstellungen für das Microsoft Intune Center."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 10/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1c6800ea3fde39603478437de6da7200ecae5afb
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: da0dad4cd40a21aec9485f46ff918a48611b869d
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Verwenden von Richtlinien zum Vereinfachen der Verwaltung von Windows-PCs
 
-Windows-PCs, auf denen der Intune Softwareclient ausgeführt wird, können mithilfe der **Computerverwaltungsrichtlinien** von Intune verwaltet werden. Verwenden Sie die Intune-Richtlinien zur **Computerverwaltung**, um die Einstellungen im Microsoft Intune Center zu konfigurieren, Updates auf PCs zu steuern und die Windows-Firewall für PCs zu konfigurieren.
+Um Windows-Desktops durch Ausführen des Intune-Softwareclients als PCs zu verwalten, können Sie nur die Richtlinien verwenden, die sich in der Intune-Verwaltungskonsole in den Richtlinien zur **Computerverwaltung** befinden. Alle anderen Richtlinien in der Verwaltungskonsole gelten nur für mobile Geräte. Mit den Richtlinien zur **Computerverwaltung** können Sie die Einstellungen im Microsoft Intune Center konfigurieren, Updates auf PCs steuern und die Windows-Firewall für PCs konfigurieren.
 
 ![Richtlinienvorlage für Windows-PCs](../media/pc_policy_template.png)
 
@@ -63,6 +63,6 @@ Finden Sie Informationen zu Richtlinien und Einstellungen für Windows-PCs in de
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

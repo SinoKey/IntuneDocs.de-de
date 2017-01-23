@@ -1,5 +1,5 @@
 ---
-title: "Einstellungen für Windows 10-Richtlinien | Microsoft Intune"
+title: "Einstellungen für Windows 10-Richtlinien | Microsoft-Dokumentation"
 description: "Verwenden Sie die in diesem Thema aufgeführten Richtlinieneinstellungen, um integrierte und benutzerdefinierte Einstellungen für registrierte Windows 10 Desktop- und Windows 10-Mobilgeräte zu konfigurieren."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 8c970a4d1362def67e17da656b5e12e5bab2667b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 5a1a861096bdfae461b6ad05e424f770796279a2
 
 
 ---
 
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Intune-Richtlinieneinstellungen für Windows 10-Geräte in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Dieses Thema enthält Informationen zum Verständnis der Intune-Richtlinieneinstellungen, die Sie zum Verwalten von Windows 10-Geräten verwenden können. Lesen Sie dieses Thema zusammen mit den Verfahren in [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md), um integrierte und benutzerdefinierte Einstellungen für registrierte Windows 10-Desktop- und Windows 10 Mobile-Geräte zu konfigurieren. Diese Richtlinien können nicht für PCs verwendet werden, auf denen die [Intune-PC-Clientsoftware](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune) ausgeführt wird.
 

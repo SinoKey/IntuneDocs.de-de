@@ -1,11 +1,11 @@
 ---
-title: "Einstellungen für Mac OS X-Richtlinien | Microsoft Intune"
+title: "Einstellungen für Mac OS X-Richtlinien | Microsoft-Dokumentation"
 description: "Intune bietet eine Reihe integrierter allgemeiner Einstellungen, die Sie auf Mac OS X-Geräten konfigurieren können. Darüber hinaus können Sie das Apple Configurator-Tool verwenden, um benutzerdefinierte Einstellungen zu erstellen, die nicht von Intune verfügbar sind."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,19 @@ ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: ce30ab0e5a4ce709aafa5892789590b42b484db4
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 58dc1d872e7e12978652542d80061dd7ed86aeb2
 
 
 ---
 
-# Einstellungen für Mac OS X-Konfigurationsrichtlinien in Microsoft Intune
+# <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Einstellungen für Mac OS X-Konfigurationsrichtlinien in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune bietet eine Reihe integrierter allgemeiner Einstellungen, die Sie auf Mac OS X-Geräten konfigurieren können. Darüber hinaus können Sie das Apple Configurator-Tool verwenden, um benutzerdefinierte Einstellungen zu erstellen, die nicht von Intune verfügbar sind.
 
-## Allgemeine Konfigurationsrichtlinieneinstellungen
+## <a name="general-configuration-policy-settings"></a>Allgemeine Konfigurationsrichtlinieneinstellungen
 
 Verwenden Sie die allgemeine **Mac OS X-Konfigurationsrichtlinie** von Microsoft Intune zum Konfigurieren von Einstellungen für:
 
@@ -34,7 +36,7 @@ Verwenden Sie die allgemeine **Mac OS X-Konfigurationsrichtlinie** von Microso
 
 Wenn die gesuchte Einstellung nicht in dieser Liste enthalten ist, können Sie sie ggf. mithilfe einer benutzerdefinierten Mac OS X-Richtlinie erstellen, die Ihnen das Importieren von Einstellungen erlaubt, die Sie mit dem Apple Configurator-Tool erstellt haben. Weitere Informationen finden Sie weiter unten in diesem Thema unter „Benutzerdefinierte Richtlinieneinstellungen“.
 
-### Kennworteinstellungen
+### <a name="password-settings"></a>Kennworteinstellungen
 
 |Name der Einstellung|Details|
 |----------------|---------------|
@@ -43,12 +45,12 @@ Wenn die gesuchte Einstellung nicht in dieser Liste enthalten ist, können Sie s
 |**Erforderliche Anzahl komplexer Zeichen im Kennwort**|Gibt die Anzahl komplexer Zeichen an, die das Kennwort enthalten muss (**0** bis **4**).<br /><br />Bei komplexen Zeichen handelt es sich um Symbole (z. B. ein Fragezeichen**?**).|
 |**Minimale Kennwortlänge**|Gibt die Mindestlänge für das Kennwort an (**4** bis **14** Zeichen).|
 |**Einfache Kennwörter zulassen**|Ermöglicht die Verwendung einfacher Kennwörter (z. B.**0000**oder**1234**).|
-|**Minuten Inaktivität vor erneuter Anforderung des Kennworts**|Gibt an, wie lange der Computer inaktiv sein muss, bevor er mithilfe eines Kennworts entsperrt werden muss.|
+|**Minuten Inaktivität vor Anforderung des Kennworts**|Gibt an, wie lange der Computer inaktiv sein muss, bevor er mithilfe eines Kennworts entsperrt werden muss.|
 |**Kennwortablauf (Tage)**|Gibt an, nach wie vielen Tagen der Benutzer das Kennwort ändern muss (**1** bis **255** Tage).|
 |**Kennwortverlauf speichern**|Verhindert, dass der Benutzer ein bereits verwendetes Kennwort erneut verwendet. Bei Auswahl dieser Einstellung kann auch **Wiederverwendung vorheriger Kennwörter verhindern** festgelegt werden, um die Anzahl von vorherigen Kennwörtern anzugeben, die nicht erneut verwendet werden dürfen (**1** bis **24**).|
 |**Minuten Inaktivität bis zur Aktivierung des Bildschirmschoners**|Gibt an, wie lange sich der Computer im Leerlauf befinden muss, bevor der Bildschirmschoner aktiviert wird.|
 
-### Einstellungen für kompatible und nicht kompatible Anwendungen
+### <a name="settings-for-compliant-and-noncompliant-apps"></a>Einstellungen für kompatible und nicht kompatible Anwendungen
 Aktivieren Sie in der Liste der **kompatiblen und nicht kompatiblen Apps für Mac OS X** die Einstellung **Verwaltete Einstellungen für Geräte**, und geben Sie anhand der folgenden Informationen eine Liste kompatibler oder nicht kompatibler Apps an.
 
 > [!NOTE]
@@ -70,27 +72,27 @@ Aktivieren Sie in der Liste der **kompatiblen und nicht kompatiblen Apps für Ma
 > [!IMPORTANT]
 > Wenn sich ein Mac OS X-Gerät im Energiesparmodus befindet, können keine Richtlinien oder Profile bereitgestellt oder inventarisiert werden. Infolgedessen zeigt die Intune-Konsole möglicherweise vorübergehend den Status **Richtlinieneinstellungen mit Fehlern** an, bis das Gerät wieder aus dem Energiesparmodus aktiviert wird.
 
-### Überwachen kompatibler und nicht kompatibler Apps
+### <a name="monitor-compliant-and-noncompliant-apps"></a>Überwachen kompatibler und nicht kompatibler Apps
 Anhand der **Berichte über nicht kompatible Apps** können Sie überprüfen, ob die angegebenen Apps kompatibel sind.
 
-#### So führen Sie einen Bericht aus
+#### <a name="to-run-a-report"></a>So führen Sie einen Bericht aus
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Berichte** &gt; **Berichte über nicht richtlinienkonforme Apps** aus.
 
 2.  Wählen Sie die Gerätegruppen aus, die Sie überprüfen möchten, geben Sie an, ob Sie nach kompatiblen und/oder nicht kompatiblen Apps suchen möchten, und wählen Sie dann **Bericht anzeigen** aus.
 
-## Benutzerdefinierte Mac OS X-Richtlinieneinstellungen in Microsoft Intune
+## <a name="mac-os-x-custom-policy-settings-in-microsoft-intune"></a>Benutzerdefinierte Mac OS X-Richtlinieneinstellungen in Microsoft Intune
 Verwenden Sie die **benutzerdefinierte Mac OS X-Konfigurationsrichtlinie** von Microsoft Intune, um auf Mac OS X-Geräten Einstellungen bereitzustellen, die Sie mit dem [Apple Configurator-Tool](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) erstellt haben. Mit diesem Tool können Sie zahlreiche Einstellungen zur Betriebssteuerung dieser Geräte erstellen und in ein Konfigurationsprofil exportieren. Sie können dieses Konfigurationsprofil anschließend in eine benutzerdefinierte Intune-Richtlinie für Mac OS X importieren und die Einstellungen für Benutzer und Geräte in Ihrer Organisation bereitstellen.
 
 Mit dieser Funktion können Sie Mac OS X-Einstellungen bereitstellen, die nicht mit der allgemeinen Mac OS X-Konfigurationsrichtlinie von Intune konfigurierbar sind.
 
-### Voraussetzungen
+### <a name="prerequisites"></a>Voraussetzungen
 Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigurationsdatei mit den Einstellungen erstellt haben, die Sie für Benutzer oder Geräte bereitstellen möchten. Um Apple Configurator herunterzuladen und mehr darüber zu erfahren, besuchen Sie den [Mac App Store](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12).
 
 > [!NOTE]
 > Intune gibt keine Auskunft über die Kompatibilität der einzelnen Einstellungen einer benutzerdefinierten Mac OS X-Richtlinie. Die Gesamtkompatibilität der Richtlinie wird jedoch angegeben.
 
-### Allgemeine Einstellungen
+### <a name="general-settings"></a>Allgemeine Einstellungen
 
 |Name der Einstellung|Details|
     |----------------|--------------------|
@@ -98,17 +100,17 @@ Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigur
     |**Beschreibung**|Geben Sie eine Beschreibung ein, die einen Überblick über die benutzerdefinierte Mac OS X-Richtlinie bietet, sowie weitere relevante Informationen, mit denen Sie danach suchen können.|
 
 
-### Benutzerdefinierte Einstellungen
+### <a name="custom-settings"></a>Benutzerdefinierte Einstellungen
 
 |Name der Einstellung|Details|
     |----------------|--------------------|
-    |**Name des benutzerdefinierten Konfigurationsprofils (zur Anzeige beim Benutzer)**|Geben Sie einen Namen für die Richtlinie an, der auf dem Gerät und in Intune-Richtlinienberichten angezeigt wird.|
-    |**Profil-Konfigurationsdatei**|Wählen Sie **Importieren** aus, und suchen Sie dann das mit Apple Configurator erstellte Konfigurationsprofil. **Tipp:** Hilfe zum Erstellen des Konfigurationsprofils finden Sie in diesem Thema unter „Erstellen einer Konfigurationsprofildatei“.|
+    |**Name des benutzerdefinierten Konfigurationsprofils (wird Benutzern angezeigt)**|Geben Sie einen Namen für die Richtlinie an, der auf dem Gerät und in Intune-Richtlinienberichten angezeigt wird.|
+    |**Konfigurationsprofildatei**|Wählen Sie **Importieren** aus, und suchen Sie dann das mit Apple Configurator erstellte Konfigurationsprofil. **Tipp:** Hilfe zum Erstellen des Konfigurationsprofils finden Sie in diesem Thema unter „Erstellen einer Konfigurationsprofildatei“.|
     |**Details zum Konfigurationsprofil**|Zeigt den XML-Code des importierten Konfigurationsprofils an.|
 
 
 
-### Erstellen einer Konfigurationsprofildatei
+### <a name="how-to-create-a-configuration-profile-file"></a>Erstellen einer Konfigurationsprofildatei
 Die Konfigurationsprofildatei, die von der benutzerdefinierten Richtlinie verwendet wird, kann über zwei Methoden erstellt werden.
 
 -   Exportieren Sie die Datei (mit der Erweiterung **.mobileconfig**) aus dem Apple Configurator-Tool.
@@ -116,11 +118,11 @@ Die Konfigurationsprofildatei, die von der benutzerdefinierten Richtlinie verwen
 -   Erstellen Sie die Datei selbst unter Verwendung des entsprechenden Schemas aus der [Apple Configuration Profile Key Reference](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html).
 
 
-### Weitere Informationen:
+### <a name="see-also"></a>Weitere Informationen:
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

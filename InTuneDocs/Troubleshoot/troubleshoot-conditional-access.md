@@ -1,5 +1,5 @@
 ---
-title: Problembehandlung beim bedingten Zugriff| Microsoft Intune
+title: Problembehandlung beim bedingten Zugriff | Microsoft-Dokumentation
 description: "Was zu tun ist, wenn Ihre Benutzer durch bedingten Intune-Zugriff nicht auf Ressourcen zugreifen können."
 keywords: 
 author: andredm7
@@ -14,13 +14,15 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 001bacbfc6a61a1c6b8f75c8e7ca55e311a1fa71
-ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: d4b935ba28edc1b41afb46b0aa7d0ee586de2a1c
 
 
 ---
 
 # <a name="troubleshoot-conditional-access"></a>Problembehandlung beim bedingten Zugriff
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 In der Regel versucht ein Benutzer, auf E-Mail oder SharePoint zuzugreifen, und wird zur Registrierung aufgefordert. Diese Aufforderung führt den Benutzer zum Unternehmensportal.
 

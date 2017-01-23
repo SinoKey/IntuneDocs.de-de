@@ -1,5 +1,5 @@
 ---
-title: Installieren einer neuen Version der Unternehmensportal-App | Microsoft Intune
+title: Installieren einer neuen Version der Unternehmensportal-App | Microsoft-Dokumentation
 description: 
 keywords: 
 author: barlanmsft
@@ -11,10 +11,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: e831586172ef700b869a392d9938821b004f1e04
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 82679d4d9ef017dd29429b83a039f3edbfb7911d
 
 
 ---
@@ -51,6 +53,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

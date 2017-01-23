@@ -1,5 +1,5 @@
 ---
-title: "Registrieren Ihres Windows-Geräts bei Intune | Microsoft Intune"
+title: "Registrieren Ihres Windows-Geräts bei Intune | Microsoft-Dokumentation"
 description: "Beschreibt, wie Sie ein Windows-Gerät bei Intune registrieren."
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d217ddcf-4908-4047-97a1-716bd433a13c
+searchScope:
+- Company Portal
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 1515eef929d08f8639921313d1cfcb0ea6964fa9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 850a85e724a15859d925bd466171212c75d91691
 
 
 ---
@@ -33,6 +35,6 @@ Verwenden Sie zum Registrieren den Link, der dem Gerät entspricht, das Sie verw
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

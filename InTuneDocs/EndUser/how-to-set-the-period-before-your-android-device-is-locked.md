@@ -1,5 +1,5 @@
 ---
-title: "Festlegen des Zeitraums, bevor Ihr Android-Gerät gesperrt wird | Microsoft Intune"
+title: "Festlegen des Zeitraums, bevor Ihr Android-Gerät gesperrt wird | Microsoft-Dokumentation"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7407be9c7ae96652270692eeb70e35743dff2602
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 5df88351d84da28c93d010b8484601b7dbcdaf7e
 
 
 ---
@@ -24,7 +26,7 @@ ms.openlocfilehash: 7407be9c7ae96652270692eeb70e35743dff2602
 # <a name="how-to-set-the-period-before-your-android-device-is-locked"></a>Festlegen des Zeitraums, bevor Ihr Android-Gerät gesperrt wird
 Um wieder eine Verbindung mit Ihrem Geschäftskonto herzustellen, müssen Sie das Kennworttimeout auf Ihrem Gerät festlegen. Die Vorgehensweise hierbei unterscheidet sich je nach Gerätetyp.
 
-## <a name="native-nonsamsung-knox-device"></a>Natives Gerät (nicht Samsung KNOX)
+## <a name="native-non-samsung-knox-device"></a>Natives Gerät (nicht Samsung KNOX)
 
 1.  Tippen Sie auf Ihrem Gerät unter **Einstellungen** auf **Sicherheit** &gt; **Automatisch sperren** (auf manchen Geräten wird hier **Telefon sperren nach** angezeigt).
 
@@ -44,6 +46,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 
