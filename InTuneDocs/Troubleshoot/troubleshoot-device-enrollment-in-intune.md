@@ -1,11 +1,11 @@
 ---
-title: "Behandlung von Problemen bei der Geräteregistrierung | Microsoft Intune"
+title: "Behandlung von Problemen bei der Geräteregistrierung | Microsoft-Dokumentation"
 description: "Vorschläge zur Problembehandlung bei Problemen mit der Geräteregistrierung."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/20/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
-ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
+ms.sourcegitcommit: d12e2c0a38e406aa8b96cc03e97d327126503531
+ms.openlocfilehash: 5afc7a3bc91dae95581f42979cbe7d8d6d57ba8d
 
 
 ---
@@ -29,7 +29,7 @@ Dieses Thema enthält Vorschläge zur Problembehandlung bei Problemen mit der Ge
 
 Bevor Sie mit der Problembehandlung beginnen, stellen Sie sicher, dass Intune ordnungsgemäß konfiguriert wurde, um die Registrierung zu ermöglichen. Informationen zu diesen Konfigurationsanforderungen finden Sie unter:
 
--   [Vorbereiten der Registrierung von Geräten in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment.md)
+-   [Vorbereiten der Registrierung von Geräten in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -   [Einrichten der iOS- und Mac-Geräteverwaltung](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Einrichten der Windows 10 Mobile- und Windows Phone-Verwaltung mit Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Einrichten der Windows-Geräteverwaltung](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -58,7 +58,7 @@ Diese Probleme können auf allen Geräteplattformen auftreten.
 
 2.  Überprüfen Sie in der Intune-Administratorkonsole unter „Admin\Mobile Device Management\Enrollment Rules“, ob der Grenzwert für die Geräteregistrierung auf 15 festgelegt ist.
 
-Benutzer von mobilen Geräten können Geräte unter folgender URL löschen: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
+<!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
 Administratoren können Geräte im Azure Active Directory-Portal löschen.
 
@@ -86,7 +86,7 @@ Administratoren können Geräte im Azure Active Directory-Portal löschen.
 >
 > Ein Benutzerkonto das der Gruppe „Geräteregistrierungs-Manager“ hinzugefügt wird, kann die Registrierung nicht abschließen, wenn die bedingte Zugriffsrichtlinie für diese spezielle Benutzeranmeldung erzwungen wird.
 
-### <a name="company-portal-emporarily-unavailable"></a>Unternehmensportal vorübergehend nicht verfügbar
+### <a name="company-portal-temporarily-unavailable"></a>Unternehmensportal vorübergehend nicht verfügbar
 **Problem**: Sie erhalten auf dem Gerät die Fehlermeldung **Unternehmensportal vorübergehend nicht verfügbar**.
 
 **Lösung:**
@@ -319,7 +319,7 @@ Wenn das Serverzertifikat ordnungsgemäß installiert wurde, werden in den Ergeb
 ### <a name="other-ios-enrollment-errors"></a>Weitere iOS-Registrierungsfehler
 Eine Liste von iOS-Registrierungsfehlern finden Sie in unserer Gerät-/Benutzerdokumentation unter [Es werden Fehlermeldungen angezeigt, wenn Sie versuchen, Ihr Gerät bei Intune zu registrieren](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune).
 
-## <a name="pc-issues"></a>PC-Probleme
+## <a name="pc--issues"></a>PC-Probleme
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>Der Computer ist bereits registriert – Fehler hr 0x8007064c
 **Problem:** Fehler bei Registrierung: **Der Computer ist bereits registriert**. Das Registrierungsprotokoll zeigt Fehler **hr 0x8007064c** an.
@@ -373,6 +373,6 @@ Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, w
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

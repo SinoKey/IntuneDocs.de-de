@@ -1,5 +1,5 @@
 ---
-title: "Löschen verwalteter Unternehmens-App-Daten | Microsoft Intune"
+title: "Löschen verwalteter Unternehmens-App-Daten | Microsoft-Dokumentation"
 description: "Erfahren Sie, wie Sie selektiv Unternehmensdaten von Geräten entfernen können."
 keywords: 
 author: NathBarn
@@ -14,13 +14,16 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: d32a66ee283906586e25173e736c02ee8bf23042
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 42e8feba18330539389fc4ab7af5cbd18a8ace16
 
 
 ---
 
 # <a name="wipe-managed-company-app-data-with-microsoft-intune"></a>Löschen verwalteter Unternehmensdaten aus Apps mit Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Wenn ein Gerät verloren geht oder gestohlen wird oder wenn der Mitarbeiter das Unternehmen verlässt, müssen Sie sicherstellen, dass Unternehmensdaten in Apps vom Gerät entfernt werden. Allerdings sollten Sie persönliche Daten nicht vom Gerät entfernen, insbesondere dann nicht, wenn das Gerät dem Mitarbeiter gehört.
 
 Um Unternehmensdaten aus Apps selektiv zu entfernen, erstellen Sie mithilfe der Schritte in diesem Thema eine Zurücksetzungsanforderung. Nach Abschluss der Anforderung werden die Unternehmensdaten beim nächsten Ausführen der Anwendung aus der App entfernt.

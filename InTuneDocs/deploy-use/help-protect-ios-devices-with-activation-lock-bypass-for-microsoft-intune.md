@@ -1,11 +1,11 @@
 ---
-title: "Verwalten der iOS-Aktivierungssperre auf Geräten | Microsoft Intune"
+title: "Verwalten der iOS-Aktivierungssperre auf Geräten | Microsoft-Dokumentation"
 description: "Microsoft Intune kann Sie beim Verwalten der iOS-Aktivierungssperre unterstützen, einem Feature der App „Mein iPhone suchen“ für iOS 7.1 und höher."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 4e19836f4ce30434bb7d34db8323f811adf5d770
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: fa61114e0bd338725c5d42f788212903ebdccf7a
 
 
 ---
 
-# Unterstützen des Schutz von iOS-Geräten durch Umgehung der Aktivierungssperre für Microsoft Intune
+# <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>Unterstützen des Schutz von iOS-Geräten durch Umgehung der Aktivierungssperre für Microsoft Intune
 Microsoft Intune kann Sie bei der Verwaltung der iOS-Aktivierungssperre unterstützen, einer Funktion der Mein iPhone suchen-App für Geräte mit iOS 8.0 und höher. Die Aktivierungssperre wird automatisch aktiviert, wenn ein Benutzer die App „Mein iPhone suchen“ auf einem Gerät öffnet. Nach der Aktivierung müssen die Apple-ID und das Kennwort des Benutzers eingegeben werden, bevor folgende Vorgänge möglich sind: 
 
 -   Deaktivieren von „Mein iPhone suchen“
@@ -29,7 +29,7 @@ Microsoft Intune kann Sie bei der Verwaltung der iOS-Aktivierungssperre unterst�
 
 -   Reaktivieren des Geräts
 
-## Auswirkungen der Aktivierungssperre
+## <a name="how-activation-lock-affects-you"></a>Auswirkungen der Aktivierungssperre
 Obwohl die Aktivierungssperre zum Schutz von iOS-Geräten beiträgt und die Chancen einer Wiederherstellung bei Verlust oder Diebstahl des Geräts erhöht, kann diese Funktion Sie als IT-Administrator vor eine Reihe von Herausforderungen stellen. Beispiel:
 
 -   Ein Benutzer richtet die Aktivierungssperre auf einem Gerät ein. Anschließend verlässt der Benutzer das Unternehmen und gibt das Gerät zurück. Ohne die Apple-ID und das Kennwort des Benutzers gibt es keine Möglichkeit, das Gerät zu reaktivieren.
@@ -43,8 +43,8 @@ Apple hat zur Behebung dieser Probleme eine Umgehung der Aktivierungssperre in i
 > [!TIP]
 > Im überwachten Modus für iOS-Geräte können Sie mit dem Apple Configurator ein Gerät sperren, um die Funktionen auf bestimmte geschäftliche Zwecke zu beschränken. Der überwachte Modus ist in der Regel nur für firmeneigene Geräte vorgesehen.
 
-## Unterstützung von Intune beim Verwalten der Aktivierungssperre
-Intune kann den Status der Aktivierungssperre von überwachten und nicht überwachten Geräten anfordern, die iOS 8.0 und höher ausführen. Ausschließlich für überwachte Geräte kann Intune den Umgehungscode der Aktivierungssperre abrufen und ihn direkt auf das Gerät anwenden. Wenn das Gerät zurückgesetzt wurde, können Sie direkt auf das Gerät zugreifen, indem Sie den Code als Benutzernamen und ein leeres Kennwort verwenden.
+## <a name="how-intune-helps-you-manage-activation-lock"></a>Unterstützung von Intune beim Verwalten der Aktivierungssperre
+Intune kann den Status der Aktivierungssperre von überwachten und nicht überwachten Geräten anfordern, die iOS 8.0 und höher ausführen. Ausschließlich für überwachte Geräte kann Intune den Umgehungscode der Aktivierungssperre abrufen und ihn direkt auf das Gerät anwenden. Wenn das Gerät zurückgesetzt wurde, können Sie direkt auf das Gerät zugreifen, indem Sie einen leeren Benutzernamen und den Code als Kennwort verwenden.
 
 **Folgende Geschäftsvorteile ergeben sich**:
 
@@ -52,7 +52,7 @@ Intune kann den Status der Aktivierungssperre von überwachten und nicht überwa
 
 -   Sie können es den Benutzern ermöglichen, ihre Arbeit zu erledigen, in dem Wissen, dass Sie das Gerät außer Kraft setzen oder entsperren können, wenn es einem neuen Zweck zugewiesen werden soll.
 
-## Verwenden der Umgehung der Aktivierungssperre über die Intune-Verwaltungskonsole
+## <a name="how-to-use-activation-lock-bypass-from-the-intune-admin-console"></a>Verwenden der Umgehung der Aktivierungssperre über die Intune-Verwaltungskonsole
 > [!IMPORTANT]
 > Nachdem die Aktivierungssperre auf einem Gerät umgangen wurde, wird automatisch eine neue Aktivierungssperre angewendet, wenn die App „Mein iPhone suchen“ geöffnet wird. Aus diesem Grund **muss das Gerät physisch verfügbar sein, bevor Sie dieses Verfahren ausführen**.
 
@@ -64,7 +64,7 @@ Intune kann den Status der Aktivierungssperre von überwachten und nicht überwa
 
 Sie können den Status der Entsperranforderung auf der Detailseite für das Gerät überprüfen.
 
-## Ermitteln der Geräte mit Aktivierungssperre
+## <a name="how-to-see-which-devices-are-using-activation-lock"></a>Ermitteln der Geräte mit Aktivierungssperre
 Es gibt zwei Möglichkeiten zur Ermittlung, welche Geräte die Aktivierungssperre verwenden:
 
 -   Führen Sie die **Bestandsberichte zu mobilen Geräten**aus. In diesem Bericht werden die Spalten **Status der Aktivierungssperre** und **Überwacht** angezeigt, um den Status der Geräte anzugeben. Die Werte für **Überwacht** sind **Ja** oder **Nein**, und die Werte für **Status der Aktivierungssperre** lauten:
@@ -87,12 +87,12 @@ Es gibt zwei Möglichkeiten zur Ermittlung, welche Geräte die Aktivierungssperr
     >Intune erfasst alle sieben Tage den Status der Aktivierungssperre auf Geräten. Aus diesem Grund werden Geräte in der Intune-Konsole möglicherweise nicht sofort mit dem richtigen Status der Aktivierungssperre angezeigt.
 
 
-### Weitere Informationen:
+### <a name="see-also"></a>Weitere Informationen:
 [Abkoppeln von Geräten](retire-devices-from-microsoft-intune-management.md)
 [Geräteschutz durch Remotesperre und Zurücksetzen der Kennung](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

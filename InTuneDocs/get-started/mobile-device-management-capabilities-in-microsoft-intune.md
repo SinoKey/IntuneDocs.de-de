@@ -1,12 +1,12 @@
 ---
-title: "Verwaltungsfunktionen für registrierte Geräte | Microsoft Intune"
+title: "Verwaltungsfunktionen für registrierte Geräte | Microsoft-Dokumentation"
 description: "In diesem Thema erfahren Sie, wie Intune Sie bei der Verwaltung registrierter Geräte unterstützen kann."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/01/2016
-ms.topic: article
+ms.date: 12/12/2016
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,12 +14,14 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 710295f0eaeee71bba549c22706ecbfd062ffcb1
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 898975338edcd3267fd47d62d23b35e295f0d99b
 
 
 ---
-# Verwaltungsfunktionen für registrierte Geräte in Microsoft Intune
+# <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Verwaltungsfunktionen für registrierte Geräte in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Mit Microsoft Intune können Sie eine Vielzahl von Geräten verwalten, indem Sie diese beim Dienst *registrieren*. Sie können einige Gerätetypen selbst registrieren, oder Benutzer können die Registrierung über die *Unternehmensportal*-App vornehmen. Diese ermöglicht Benutzern auch Vorgänge wie das Durchsuchen und Installieren von Apps, wobei sichergestellt wird, dass ihre Geräte mit den Unternehmensrichtlinien kompatibel sind, sowie das Kontaktieren des IT-Supports.
 
@@ -29,7 +31,7 @@ Verwaltung, Bestandserfassung, Bereitstellung und Außerbetriebnahme von Geräte
 
 
 
-## Gerätesicherheit und Konfiguration
+## <a name="device-security-and-configuration"></a>Gerätesicherheit und Konfiguration
 
 |Funktion|Details|Weitere Informationen|
 |--------------|-----------|--------------------|
@@ -37,7 +39,7 @@ Verwaltung, Bestandserfassung, Bereitstellung und Außerbetriebnahme von Geräte
 |Remotezurücksetzen, Remotesperre und Kennungsrückstellung|Löscht sensible Daten, wenn ein Gerät verloren geht oder gestohlen wird. Beispielsweise können Sie das Gerät remote sperren, die Werkseinstellungen wiederherstellen oder nur Unternehmensdaten zurücksetzen.<br><br>Sie können Passcodes zurücksetzen, wenn Benutzer nicht mehr auf ihr Gerät zugreifen können, und verlorene oder gestohlene Geräte sperren oder alle darauf vorhandenen Daten zurücksetzen.|[Geräteschutz durch Remotesperre und Zurücksetzen der Kennung](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune) und [ Außerkraftsetzen von Geräten in der Intune Verwaltung](/intune/deploy-use/retire-devices-from-microsoft-intune-management)|
 |Kioskmodus|Ermöglicht das Sperren bestimmter Features mobiler Geräte, z.B. der Bildschirmaufnahme und Netzschaltern. Außerdem können Sie Geräte auf die Ausführung einer einzigen, von Ihnen angegebenen App beschränken.|[Einstellungen für iOS-Konfigurationsrichtlinien in Microsoft Intune](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)|
 
-## App-Verwaltung
+## <a name="app-management"></a>App-Verwaltung
 
 |Funktion|Details|Weitere Informationen|
 |--------------|-----------|--------------------|
@@ -50,28 +52,28 @@ Verwaltung, Bestandserfassung, Bereitstellung und Außerbetriebnahme von Geräte
 |Windows Hello for Business|Ermöglicht die Integration in Windows Hello for Business. Dies ist eine alternative Anmeldemethode für Windows 10, die Active Directory (lokal) oder Azure Active Directory verwendet, um Kennwörter, Smartcards oder virtuelle Smartcards zu ersetzen.|[Steuern der Einstellungen von Windows Hello for Business auf Geräten mit Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
 |Per Volumenlizenz erworbene Apps|Unterstützt Sie bei der Verwaltung von Apps, die über ein Volume Purchase Program erworben wurden. Dazu werden die Lizenzinformationen aus dem App Store importiert, es wird nachverfolgt, wie viele Lizenzen Sie verwendet haben, und verhindert, dass mehr App-Kopien installiert werden, als Sie erworben haben.|[Verwalten von Apps, die über ein Volumenprogramm erworben wurden, mithilfe von Microsoft Intune](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
 
-## Zugriff auf Unternehmensressourcen
+## <a name="company-resource-access"></a>Zugriff auf Unternehmensressourcen
 
 |Funktion|Details|Weitere Informationen|
 |--------------|-----------|--------------------|
-|Zertifikatprofile|Erstellt vertrauenswürdige Zertifikatprofile und Simple Certificate Enrollment Protocol-Zertifikate (SCEP), die zum Sichern und Authentifizieren von WLAN-, VPN- und E-Mail-Profilen verwendet werden können, und stellt diese bereit.|[Sicherer Zugriff auf Ressourcen mit Zertifikatprofilen in Microsoft Intune](/intune/deploy-use/secure-resource-access-with-certificate-profiles)|
+|Zertifikatprofile|Erstellt vertrauenswürdige Zertifikatprofile und Simple Certificate Enrollment Protocol-Zertifikate (SCEP), die zum Sichern und Authentifizieren von WLAN-, VPN- und E-Mail-Profilen verwendet werden können, und stellt diese bereit.|[Sicherer Ressourcenzugriff mit Zertifikatprofilen in Microsoft Intune](/intune/deploy-use/secure-resource-access-with-certificate-profiles)|
 |WLAN-Profile|Stellt Einstellungen für drahtlose Netzwerke für Ihre Benutzer bereit. Durch das Bereitstellen dieser Einstellungen erleichtern Sie dem Benutzer das Herstellen einer Verbindung mit dem Unternehmensnetzwerk.|[WLAN-Verbindungen in Microsoft Intune](/intune/deploy-use/wi-fi-connections-in-microsoft-intune)|
 |E-Mail-Profile|Erstellt E-Mail-Einstellungen für Geräte und stellt diese bereit. Dies bedeutet, dass Benutzer Zugriff auf Unternehmens-E-Mails auf ihren persönlichen Geräten erhalten, ohne dafür ein Setup vornehmen zu müssen.|[Konfigurieren des Zugriffs auf Unternehmens-E-Mail mithilfe von E-Mail-Profilen in Microsoft Intune](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)|
 |VPN-Profile|Stellt VPN-Einstellungen für Benutzer und Geräte in Ihrer Organisation bereit. Durch das Bereitstellen dieser Einstellungen erleichtern Sie dem Benutzer das Verbinden mit Ressourcen im Unternehmensnetzwerk.|[VPN-Verbindungen in Microsoft Intune](/intune/deploy-use/vpn-connections-in-microsoft-intune)|
 |Bedingte Zugriffsrichtlinien|Verwaltet den Zugriff auf Microsoft Exchange-E-Mail und SharePoint Online auf Geräten, die nicht von Intune verwaltet werden.|[Beschränken des Zugriffs auf E-Mail und SharePoint mit Microsoft Intune](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)|
 
-## Inventar und Berichterstellung
+## <a name="inventory-and-reporting"></a>Inventar und Berichterstellung
 
 |Funktion|Details|Weitere Informationen|
 |--------------|-----------|--------------------|
 |Inventar und Berichterstellung|Sucht nach Informationen zu den Geräten, die Sie verwalten, und der Software, die die Geräte verwenden.|[Verstehen Sie Ihre Geräte mithilfe des Inventars in Microsoft Intune](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
 
 
-### Weitere Informationen:
+### <a name="see-also"></a>Weitere Informationen:
 [Funktionen für die Windows-PC-Verwaltung in Microsoft Intune](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

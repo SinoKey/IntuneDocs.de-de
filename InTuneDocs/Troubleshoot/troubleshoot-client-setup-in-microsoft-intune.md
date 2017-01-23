@@ -1,5 +1,5 @@
 ---
-title: Behandlung von Problemen bei der Clienteinrichtung | Microsoft Intune
+title: Behandlung von Problemen bei der Clienteinrichtung | Microsoft-Dokumentation
 description: Problembehandlung bei allgemeinen Problemen bei der Clienteinrichtung.
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 889a13bd50943b9cdf0f40d50b6f8ce263dde56d
-ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2d5c7d4800e1140efb502c47151ea8cc87548acd
 
 
 ---
 
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Behandlung von Problemen bei der Clienteinrichtung in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Die folgenden Abschnitte enthalten Informationen zu gängigen Problemen bei der Clienteinrichtung. Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) weitere Möglichkeiten, Hilfe zu erhalten.
 
 ## <a name="client-installation-fails"></a>Fehler bei Clientinstallation
@@ -70,7 +73,7 @@ Das Fehlen kritischer Softwareupdates auf dem PC kommt als Ursache infrage.
 **Lösung:** Stellen Sie sicher, dass Ihre Softwareupdaterichtlinie die Installation wichtiger Updates ermöglicht, wie in [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) (Windows-PCs mit Softwareupdates in Microsoft Intune auf aktuellem Stand halten) beschrieben.
 
 
-## <a name="microsoft-intune-policyrelated-errors-in-policyplatformlog"></a>Fehler in „policyplatform.log“ im Zusammenhang mit der Microsoft Intune-Richtlinie
+## <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Fehler in „policyplatform.log“ im Zusammenhang mit der Microsoft Intune-Richtlinie
 Bei Windows-Geräten ohne MDM können Richtlinienfehler in der Datei „policyplatform.log“ das Ergebnis nicht standardmäßiger Einstellungen in der Windows-Benutzerkontensteuerung (UAC) auf dem Gerät sein. Einige nicht standardmäßige UAC-Einstellungen können Microsoft Intune-Clientinstallationen und Richtlinienausführungen beeinträchtigen.
 
 ### <a name="to-resolve-uac-issues"></a>So beheben Sie UAC-Probleme
@@ -127,6 +130,6 @@ Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, w
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

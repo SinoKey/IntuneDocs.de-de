@@ -1,5 +1,5 @@
 ---
-title: "Umbenennen Ihres Geräts über die Unternehmensportalwebsite | Microsoft Intune"
+title: "Umbenennen Ihres Geräts über die Unternehmensportalwebsite | Microsoft-Dokumentation"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: a7a5faffc77d1b55bcb0216f0c87aeba2e12bda7
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: c539af3b4ac901029faeaa4947491eec8ff0c378
 
 
 ---
@@ -40,6 +40,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

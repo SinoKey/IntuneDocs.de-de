@@ -1,11 +1,11 @@
 ---
-title: "Schützen von Apps und Daten | Microsoft Intune"
+title: "Schützen von Apps und Daten | Microsoft-Dokumentation"
 description: "Dieses Thema beschreibt die verschiedenen Intune-Features und -Funktionen, die Ihnen zum Schutz Ihrer Unternehmens-Apps und Daten zur Verfügung stehen."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 4f8cb86126a982b21ad3288108295d1784f08df3
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
 
 
 ---
 
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Schützen von Apps und Daten mit Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune schützt Unternehmensdaten auf verschiedenen Technologieebenen. Auf Ebene der Identität wird Schutz über das Konzept des bedingten Zugriffs implementiert: Der Zugriff auf Dienste ist nur über verwaltete und kompatible Geräte gestattet. Auf Ebene der Clientanwendung schützt die Verwaltung mobiler Anwendungen (Mobile App Management, MAM) vor Datenverlusten: Daten werden nicht an ungeschützte Apps oder Speicherorte verschoben, und bei Verlust oder Diebstahl eines Geräts werden Daten gelöscht. Es empfiehlt sich, diese beiden Schutzebenen zusammen zu verwenden, um den Schutz der Daten zu gewährleisten und gleichzeitig dafür zu sorgen, dass mobile Mitarbeiter produktiv arbeiten können.
 
@@ -54,6 +55,6 @@ Wenn ein Gerät verloren geht oder gestohlen wird oder der Benutzer nicht mehr f
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

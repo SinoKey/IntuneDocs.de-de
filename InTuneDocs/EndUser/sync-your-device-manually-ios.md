@@ -1,5 +1,5 @@
 ---
-title: "Manuelles Synchronisieren des iOS-Geräts | Microsoft Intune"
+title: "Manuelles Synchronisieren des iOS-Geräts | Microsoft-Dokumentation"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
-ms.openlocfilehash: 8a8f3416f22cb5ce11fe0951f126d8ce36a248bd
+ms.sourcegitcommit: 1df8924bd7f94040db28f0c26f0aa29bb7620a0a
+ms.openlocfilehash: 6d57eae82b84b4cd64e0f22829d02fc02bbd9663
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 8a8f3416f22cb5ce11fe0951f126d8ce36a248bd
 
 # <a name="sync-your-ios-device-manually"></a>Manuelles Synchronisieren des iOS-Geräts
 
-Wenn die Installation der App zu lange dauert, können Sie versuchen, Ihr Gerät manuell zu synchronisieren. Manuelles Synchronisieren kann hilfreich sein, um die Installation zu beschleunigen. Die Synchronisierungsfunktion gilt nur für iOS, nicht für macOS.
+Wenn die Installation der App zu lange dauert, können Sie versuchen, Ihr Gerät manuell zu synchronisieren. Manuelles Synchronisieren kann hilfreich sein, um die Installation zu beschleunigen. Die Synchronisierungsfunktion gilt nur für iOS.
 
 1. Öffnen Sie die iOS-Unternehmensportal-App.
 
@@ -42,6 +42,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

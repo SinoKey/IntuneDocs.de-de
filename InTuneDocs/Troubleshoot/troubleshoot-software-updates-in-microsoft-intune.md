@@ -1,11 +1,11 @@
 ---
-title: Behandlung von Problemen bei Softwareupdates | Microsoft Intune
+title: Behandlung von Problemen bei Softwareupdates | Microsoft-Dokumentation
 description: "Lösen Sie Probleme mit Softwareupdates in Microsoft Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 9c08ebe1a4cf1a7768b5dbecf7ffccdd7c8d8006
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 66ec65e856c0ab70264b797bb3ef7fe4f5673b54
 
 
 ---
 
-# Behandlung von Problemen bei Softwareupdates in Microsoft Intune
+# <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Behandlung von Problemen bei Softwareupdates in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Dieser Abschnitt enthält Informationen zur Lösung von Problemen mit Softwareupdates in Microsoft Intune.
 
 Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) weitere Möglichkeiten, Hilfe zu erhalten.
 
-## Update-Agent-Fehlercodes
+## <a name="update-agent-error-codes"></a>Update-Agent-Fehlercodes
 
 In der nachfolgenden Tabelle werden Fehlercodes für den Intune-**Update-Agent** aufgelistet. Wenn Sie in dieser Tabelle einen bestimmten Fehlercode nicht finden, suchen Sie unter [Windows Update Agent Result Codes (Windows Update Agent-Ergebniscodes)](http://go.microsoft.com/fwlink/?LinkID=221542).
 
@@ -241,7 +244,7 @@ In der nachfolgenden Tabelle werden Fehlercodes für den Intune-**Update-Agent**
 |**0x80af0005**|OMC_E_INSTALL_NOT_ALLOWED_REBOOT_REQUIRED|Bei der Installation ist ein Fehler aufgrund eines ausstehenden obligatorischen Neustarts aufgetreten.|
 |**0x80af0006**|OMC_E_DOWNLOAD_CANCELLED|Das Herunterladen wurde abgebrochen.|
 
-## Windows 7-Computer mit vielen ersetzten Updates beenden das Berichten an Microsoft Intune-Verwaltungskonsole
+## <a name="windows-7-based-computers-with-lots-of-superseded-updates-stop-reporting-to-the-microsoft-intune-console"></a>Windows 7-Computer mit vielen ersetzten Updates beenden das Berichten an Microsoft Intune-Verwaltungskonsole
 **Problem**: Bei Microsoft Intune-Clients können eines oder mehrere der folgenden Symptome auftreten:
 - Sie beenden plötzlich das Berichten an die Microsoft-Verwaltungskonsole.  
 - Bei ihnen tritt eine hohe CPU-Auslastung auf.
@@ -260,11 +263,11 @@ Dieses Problem kann auftreten, wenn ersetzte Updates (Updates, die durch ein and
 
 Wenn Sie Windows 7 ausführen, stellen Sie außerdem sicher, dass Sie das folgende Update installiert haben:[3050265 Windows Update-Client für Windows 7: Juni 2015](https://support.microsoft.com/kb/3050265)
 
-### Nächste Schritte
+### <a name="next-steps"></a>Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

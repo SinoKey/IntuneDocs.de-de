@@ -1,11 +1,11 @@
 ---
-title: Bereitstellen von Apps | Microsoft Intune
+title: Bereitstellen von Apps | Microsoft-Dokumentation
 description: "In diesem Thema werden Grundlagen erläutert, die Sie kennen müssen, bevor Sie mit dem Bereitstellen von Apps mit Intune beginnen."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,20 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: eedf7db0a974f9a0aa0a21b27b64ed8b4a91b378
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: efa8245020b961797405a6f8b90df7e7b172b4c3
 
 
 ---
 
-# Bereitstellen von Apps mit Microsoft Intune
+# <a name="deploy-apps-with-microsoft-intune"></a>Bereitstellen von Apps mit Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 In diesem Thema werden einige Grundlagen erläutert, die Sie kennen müssen, bevor Sie mit dem Bereitstellen von Apps mit Microsoft Intune beginnen.
 
 
-## App-Bereitstellungsaktionen
+## <a name="app-deployment-actions"></a>App-Bereitstellungsaktionen
 Wenn Sie Apps bereitstellen, können Sie eine der folgenden Bereitstellungsaktionen auswählen:
 
 -   **Erforderliche Installation** – Die App wird auf dem Gerät installiert, ohne dass ein Benutzereingriff erforderlich ist.
@@ -41,7 +43,7 @@ Wenn Sie Apps bereitstellen, können Sie eine der folgenden Bereitstellungsaktio
 
 -   **Nicht verfügbar** – Die App wird nicht im Unternehmensportal angezeigt und wird auf keinem Gerät installiert.
 
-#### Verfügbare Bereitstellungsaktionen für die verschiedenen Installationsprogrammtypen
+#### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>Verfügbare Bereitstellungsaktionen für die verschiedenen Installationsprogrammtypen
 
 |Typ des Installationsprogramms|Erforderliche Installation|Verfügbare Installation|Deinstallieren|Nicht verfügbar|
 |------------------|--------------------|---------------------|-------------|------------------|
@@ -58,7 +60,7 @@ Wenn Sie Apps bereitstellen, können Sie eine der folgenden Bereitstellungsaktio
 > [!TIP]
 > Wenn Sie beim Bereitstellen von Apps sowohl Benutzer- als auch Gerätegruppen auswählen, können Sie die App nur als **verfügbare Installation** bereitstellen.
 
-## Bereitstellungskonflikte
+## <a name="deployment-conflicts"></a>Bereitstellungskonflikte
 Wenn zwei Bereitstellungen mit der gleichen Bereitstellungsaktion von einem Gerät empfangen werden, gelten die folgenden Regeln:
 
 -   Bereitstellungen auf einer Gerätegruppe haben Vorrang vor Bereitstellung für eine Benutzergruppe. Wenn jedoch eine App für eine Benutzergruppe mit der Bereitstellungsaktion **Verfügbar** bereitgestellt wird und dieselbe App auf einer Gerätegruppe mit der Bereitstellungsaktion **Nicht verfügbar** bereitgestellt wird, wird die App im Unternehmensportal Benutzern zur Installation zur Verfügung gestellt.
@@ -68,12 +70,12 @@ Wenn zwei Bereitstellungen mit der gleichen Bereitstellungsaktion von einem Ger�
 -   Wenn eine erforderliche Installation und eine verfügbare Installation von einem Gerät empfangen werden, werden die Aktionen zusammengefasst. Das bedeutet, dass der Benutzer die App aus dem Unternehmensportal installieren kann, bevor die erforderliche Installation beginnt.
 
 
-## Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 Erfahren Sie mehr zum [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

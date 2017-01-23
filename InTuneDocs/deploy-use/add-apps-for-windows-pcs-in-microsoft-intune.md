@@ -1,11 +1,11 @@
 ---
-title: "Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird | Microsoft Intune"
+title: "Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird | Microsoft-Dokumentation"
 description: "In diesem Thema erfahren Sie, wie Sie Apps für Windows-PCs zu Intune hinzufügen, bevor Sie sie bereitstellen."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e6537b7b0a42c76ec99d51a6a09fe1f6ab4400a1
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: da23e1df3dcda7f90fd592b5a6f5a587c63815f1
 
 
 ---
 
-# Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird
+# <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird
 
 In diesem Thema erfahren Sie, wie Sie Apps zu Intune hinzufügen, bevor Sie sie bereitstellen.
 
@@ -28,7 +28,7 @@ In diesem Thema erfahren Sie, wie Sie Apps zu Intune hinzufügen, bevor Sie sie 
 > Die Informationen in diesem Thema helfen Ihnen beim Hinzufügen von Apps für Windows-PCs, die Sie mithilfe des Intune-Softwareclients verwalten. Wenn Sie Apps für registrierte Windows-PCs und andere mobile Geräte hinzufügen möchten, finden Sie weitere Informationen unter [Hinzufügen von Apps für mobile Geräte in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 
-## Hinzufügen der App
+## <a name="add-the-app"></a>Hinzufügen der App
 Mithilfe der folgenden Vorgehensweise verwenden Sie den Intune-Softwareherausgeber, um die Eigenschaften der App zu konfigurieren und sie in Ihren Cloudspeicher hochzuladen:
 
 1.  Wählen Sie in der [Microsoft Intune-Administratorkonsole](https://manage.microsoft.com) die Option **Apps** &gt; **Apps hinzufügen**, um den Intune-Softwareherausgeber zu starten.
@@ -85,12 +85,12 @@ Mithilfe der folgenden Vorgehensweise verwenden Sie den Intune-Softwareherausgeb
 
 Die App wird im Arbeitsbereich **Apps** im Knoten **Apps** angezeigt.
 
-## Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 Nachdem Sie eine App erstellt haben, umfasst der nächste Schritt die Bereitstellung. Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps.md).
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

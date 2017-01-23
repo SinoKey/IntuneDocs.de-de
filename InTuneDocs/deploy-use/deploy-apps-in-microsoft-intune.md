@@ -1,11 +1,11 @@
 ---
-title: Bereitstellen von Apps | Microsoft Intune
+title: 'Gewusst wie: Bereitstellen von Apps | Microsoft-Dokumentation'
 description: Die Informationen in diesem Thema helfen Ihnen beim Bereitstellen von Apps mit Microsoft Intune.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,13 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d73df65a36b348f0941b1e7889d083406bc082f9
-ms.openlocfilehash: b13d1a6a1a0f995b1169fabd09a2f0a4cf9b630d
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
 
 ---
-# <a name="deploy-apps-in-microsoft-intune"></a>Bereitstellen von Apps in Microsoft Intune
+# <a name="deploy-apps-in-microsoft-intune"></a>Bereitstellen von Apps in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Die Informationen in diesem Thema helfen Ihnen beim Bereitstellen von Apps mit Microsoft Intune.
 
@@ -63,7 +65,7 @@ Die App wird für Benutzergeräte im Unternehmensportal angezeigt. Die Benutzer 
 In diesem Screenshot wurde z. B. die App „Bing for iOS“ mit dem Installationstyp **Externer Link** zusammen mit einem benutzerdefinierten Symbol bereitgestellt. Die Option **Als ausgewählte App anzeigen und im Unternehmensportal hervorheben** wurde ausgewählt.  
 ![Verfügbare iOS-App](./media/available-install-on-iOS.png)
 
-Wenn Sie die App als **Erforderlich** für ein iOS-Gerät bereitgestellt haben, wird der Benutzer benachrichtigt, dass diese App zur Installation bereitsteht. In diesem Screenshot wurde z. B. die App „Work Folders for iOS“ mit dem Installationstyp **Verwaltete iOS-App aus dem App Store** bereitgestellt.  
+Wenn Sie die App als **Erforderlich** für ein iOS-Gerät bereitgestellt haben, wird der Benutzer benachrichtigt, dass diese App zur Installation bereitsteht. In diesem Screenshot wurde z. B. die App „Work Folders for iOS“ mit dem Installationstyp **Verwaltete iOS-App aus dem App Store** bereitgestellt.  
 ![Erforderliche iOS-App](./media/iOS-Required-install.PNG)
 
 ## <a name="next-steps"></a>Nächste Schritte
@@ -72,6 +74,6 @@ Nachdem Sie eine Anwendung bereitgestellt haben, ist es sinnvoll, deren Status z
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

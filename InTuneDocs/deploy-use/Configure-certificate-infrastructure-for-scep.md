@@ -1,5 +1,5 @@
 ---
-title: "Konfigurieren der Zertifikatinfrastruktur für SCEP | Microsoft Intune"
+title: "Konfigurieren der Zertifikatinfrastruktur für SCEP | Microsoft-Dokumentation"
 description: "Die Infrastruktur für das Erstellen und Bereitstellen von SCEP-Zertifikatprofilen."
 keywords: 
 author: robstackmsft
@@ -14,11 +14,14 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c68e89755d753b3913004a2c1cb1c41158ce5703
-ms.openlocfilehash: 787533f4b1c24cc4af125cbf6b2a4a18e48c4d3e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 4140c310bb14faf1731e3c316e1dafae5dc0f97a
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Konfigurieren der Zertifikatinfrastruktur für SCEP
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In diesem Thema wird beschrieben, welche Infrastruktur Sie zum Erstellen und Bereitstellen von SCEP-Zertifikatprofilen benötigen.
 
 ### <a name="on-premises-infrastructure"></a>Lokale Infrastruktur
@@ -46,7 +49,7 @@ Für Datenverkehr aus dem Internet zum Umkreisnetzwerk: Lassen Sie über Port 44
 
 Für Datenverkehr aus dem Umkreisnetzwerk zum vertrauenswürdigen Netzwerk: Lassen Sie alle Ports und Protokolle zu, die für den Domänenzugriff auf den in die Domäne eingebundenen NDES-Server benötigt werden. Der NDES-Server benötigt Zugriff auf die Zertifikatserver, die DNS-Server, die Configuration Manager-Server und die Domänencontroller.
 
-Es wird empfohlen, den NDES-Server über einen Proxy zu veröffentlichen, z. B. über den [Azure AD-Anwendungsproxy](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx) oder einen Proxy eines Drittanbieters.
+Es wird empfohlen, den NDES-Server über einen Proxy zu veröffentlichen, z. B. über den [Azure AD-Anwendungsproxy](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx) oder einen Proxy eines Drittanbieters.
 
 
 ### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>Zertifikate und Vorlagen
@@ -93,7 +96,7 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 ##### <a name="to-configure-the-certification-authority"></a>So konfigurieren Sie die Zertifizierungsstelle
 
-1.  Melden Sie sich als Unternehmensadministrator an. 
+1.  Melden Sie sich als Unternehmensadministrator an.
 
 2.  Verwenden Sie auf der ausstellenden Zertifizierungsstelle das Zertifikatsvorlagen-Snap-In, um eine neue benutzerdefinierte Vorlage zu erstellen oder eine vorhandene Vorlage zu kopieren. Bearbeiten Sie dann eine vorhandene Vorlage (z. B. die Vorlage „Benutzer“) für die Verwendung mit NDES.
 
@@ -109,7 +112,7 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
         > Bearbeiten Sie für iOS- und Mac OS X-Zertifikatvorlagen auf der Registerkarte **Erweiterungen** die Option **Schlüsselverwendung** , und stellen Sie sicher, dass die Option **Signatur ist Ursprungsnachweis** nicht aktiviert ist.
 
     -   Fügen Sie auf der Registerkarte **Sicherheit** das Dienstkonto für NDES hinzu, und weisen Sie ihm Berechtigungen zum **Registrieren** der Vorlage zu. Intune-Administratoren, die SCEP-Profile erstellen, benötigen die Berechtigung **Lesen**, damit sie beim Erstellen von SCEP-Profilen zu der Vorlage navigieren können.
-    
+
     > [!NOTE]
     > Zum Widerrufen von Zertifikaten benötigt das NDES-Dienstkonto die Berechtigung *Zertifikate ausstellen und verwalten* für jede Zertifikatvorlage, die von einem Zertifikatprofil verwendet wird.
 
@@ -120,19 +123,19 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 Hier sehen Sie einige Screenshots für eine Beispielkonfiguration:
 
-![Vorlage, Registerkarte „Anforderungsverarbeitung“](..\media\scep_ndes_request_handling.png) 
+![Vorlage, Registerkarte „Anforderungsverarbeitung“](..\media\scep_ndes_request_handling.png)
 
-![Vorlage, Registerkarte „Antragstellername“](..\media\scep_ndes_subject_name.jpg) 
+![Vorlage, Registerkarte „Antragstellername“](..\media\scep_ndes_subject_name.jpg)
 
-![Vorlage, Registerkarte „Sicherheit“](..\media\scep_ndes_security.jpg) 
+![Vorlage, Registerkarte „Sicherheit“](..\media\scep_ndes_security.jpg)
 
-![Vorlage, Registerkarte „Erweiterungen“](..\media\scep_ndes_extensions.jpg) 
+![Vorlage, Registerkarte „Erweiterungen“](..\media\scep_ndes_extensions.jpg)
 
-![Vorlage, Registerkarte „Ausstellungsvoraussetzungen“](..\media\scep_ndes_issuance_reqs.jpg) 
+![Vorlage, Registerkarte „Ausstellungsvoraussetzungen“](..\media\scep_ndes_issuance_reqs.jpg)
 
 >   [!IMPORTANT]
     > Fügen Sie für „Anwendungsrichtlinien“ (im vierten Screenshot) nur die erforderlichen Anwendungsrichtlinien hinzu. Sprechen Sie die auszuwählenden Optionen mit Ihren Sicherheitsadministratoren ab.
-   
+
 
 
 Um die Zertifizierungsstelle so zu konfigurieren, dass der Antragsteller die Gültigkeitsdauer festlegen kann, führen Sie auf der Zertifizierungsstelle die folgenden Befehle aus:
@@ -220,7 +223,7 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\**
 
-    Um diesen Schlüssel zu bearbeiten, ermitteln Sie den **Zweck** der Zertifikatvorlage, wie auf der entsprechenden Registerkarte **Anforderungsverarbeitung** aufgeführt, und bearbeiten Sie dann den zugehörigen Eintrag in der Registrierung. Ersetzen Sie hierzu die vorhandenen Daten durch den Namen der Zertifikatvorlage (nicht den Anzeigenamen der Vorlage), den Sie in Aufgabe 1 festgelegt haben. In der folgenden Tabelle ist der Zertifikatvorlagenzweck den Werten in der Registrierung zugeordnet:
+    Um diesen Schlüssel zu bearbeiten, ermitteln Sie den **Zweck** der Zertifikatvorlage, wie auf der entsprechenden Registerkarte **Anforderungsverarbeitung** aufgeführt, und bearbeiten Sie dann den zugehörigen Eintrag in der Registrierung. Ersetzen Sie hierzu die vorhandenen Daten durch den Namen der Zertifikatvorlage (nicht den Anzeigenamen der Vorlage), den Sie in Aufgabe 1 festgelegt haben. In der folgenden Tabelle ist der Zertifikatvorlagenzweck den Werten in der Registrierung zugeordnet:
 
     |Zertifikatvorlagenzweck (auf der Registerkarte „Anforderungsverarbeitung“)|Zu bearbeitender Registrierungswert|In der Intune-Verwaltungskonsole für das SCEP-Profil angezeigter Wert|
     |--------------------------------------------------------------|--------------------------|------------------------------------------------------------------------------------------------------------|
@@ -239,12 +242,12 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 4. Wählen Sie im IIS-Manager **Standardwebsite** -> **Anforderungsfilterung** -> **Featureeinstellungen bearbeiten** aus, und ändern Sie die **Maximale URL-Länge** und die **Maximale Länge einer Abfragezeichenfolge** in *65534*, wie abgebildet.
 
-    ![Maximale Länge für URL und Abfragezeichenfolge in IIS](..\media\SCEP_IIS_max_URL.png) 
+    ![Maximale Länge für URL und Abfragezeichenfolge in IIS](..\media\SCEP_IIS_max_URL.png)
 
 5.  Starten Sie den Server neu. Das Ausführen von **iisreset** auf dem Server reicht nicht aus, um diese Änderungen zu finalisieren.
 6. Navigieren Sie zu http://*FQDN*/certsrv/mscep/mscep.dll. Eine NDES-Seite wird angezeigt, die der Folgenden ähnelt:
 
-    ![Testen von NDES](..\media\SCEP_NDES_URL.png) 
+    ![Testen von NDES](..\media\SCEP_NDES_URL.png)
 
     Wenn Sie die Meldung **503 – Dienst nicht verfügbar** erhalten, überprüfen Sie die Ereignisanzeige. Wahrscheinlich wurde der Anwendungspool beendet, weil eine notwendige Berechtigung für den NDES-Benutzer fehlt. Die entsprechenden Berechtigungen sind in Aufgabe 1 beschrieben.
 
@@ -270,7 +273,7 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
     **Erweiterte Schlüsselverwendung**: Dies muss die **Clientauthentifizierung** umfassen.
 
-    **Antragstellername**: Dies muss mit dem DNS-Namen des Servers identisch sein, auf dem das Zertifikat installiert wird (d. h. dem NDES-Server).
+    **Antragstellername**: Dies muss mit dem DNS-Namen des Servers identisch sein, auf dem das Zertifikat installiert wird (d. h. dem NDES-Server).
 
 ##### <a name="to-configure-iis-request-filtering"></a>So konfigurieren Sie die IIS-Anforderungsfilterung
 
@@ -350,6 +353,6 @@ Sie sind jetzt bereit, Zertifikatprofile gemäß der Beschreibung in [Konfigurie
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

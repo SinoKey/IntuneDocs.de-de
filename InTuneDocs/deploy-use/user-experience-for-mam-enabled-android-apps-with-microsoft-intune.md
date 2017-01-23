@@ -1,5 +1,5 @@
 ---
-title: Android-Apps mit MAM-Richtlinien | Microsoft Intune
+title: Android-Apps mit MAM-Richtlinien | Microsoft-Dokumentation
 description: "In diesem Thema wird beschrieben, was Sie erwartet, wenn Ihre App von Verwaltungsrichtlinien für mobile Apps verwaltet wird."
 keywords: 
 author: NathBarn
@@ -14,13 +14,16 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 945c9f48846fc37358c44b83990feed1f3694966
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: aeacfddb3ed42938dd9443e2734222c977436430
 
 
 ---
 
 # <a name="what-to-expect-when-your-android-app-is-managed-by-mam-policies"></a>Was Sie erwartet, wenn Ihre Android-App von MAM-Richtlinien verwaltet wird
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Dieses Thema beschreibt die Benutzerumgebung für Apps mit MAM-Richtlinien (Mobile Application Management, Verwaltung mobiler Anwendungen). MAM-Richtlinien gelten nur, wenn Apps in einem geschäftlichen Kontext verwendet werden, z. B. wenn der Benutzer ein Geschäftskonto für den Zugriff auf Apps verwendet oder auf Dateien zugreift, die an einem OneDrive for Business-Speicherort im Unternehmen gespeichert sind.
 ##  <a name="access-apps"></a>Zugriff auf Apps
 
@@ -75,7 +78,7 @@ Die folgenden Dateitypen werden unterstützt:
 
 |**pfile**|**text**|
 |----|----|
-|Pfile ist ein generisches „Wrapper“-Format für geschützte Dateien, das den verschlüsselten Inhalt sowie die Azure Information Protection-Lizenzen kapselt  und zum Schützen beliebiger Dateitypen verwendet werden kann.|Textdateien, einschließlich XML, CSV, etc., können zum Anzeigen in der App geöffnet werden, selbst wenn sie geschützt sind. Dateitypen: TXT, PTXT, CSV, PCSV, LOG, PLOG, XML, PXML.|
+|Pfile ist ein generisches „Wrapper“-Format für geschützte Dateien, das den verschlüsselten Inhalt sowie die Azure Information Protection-Lizenzen kapselt. Es kann zum Schützen beliebiger Dateitypen verwendet werden.|Textdateien, einschließlich XML, CSV, etc., können zum Anzeigen in der App geöffnet werden, selbst wenn sie geschützt sind. Dateitypen: TXT, PTXT, CSV, PCSV, LOG, PLOG, XML, PXML.|
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Was Sie erwartet, wenn Ihre iOS-App von MAM-Richtlinien verwaltet wird](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)

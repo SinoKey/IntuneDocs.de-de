@@ -1,11 +1,11 @@
 ---
-title: VPN-Verbindungen | Microsoft Intune
+title: VPN-Verbindungen | Microsoft-Dokumentation
 description: "Verwenden Sie VPN-Profile zur Bereitstellung von VPN-Einstellungen für Benutzer und Geräte in Ihrer Organisation."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,19 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
+ms.sourcegitcommit: 0ba06e1d698e051ba72e9f88a654d37041c57cf1
+ms.openlocfilehash: cd9785889ca8b2a78a49ea2b04284d32b3fa8a65
 
 
 ---
 
 # <a name="vpn-connections-in-microsoft-intune"></a>VPN-Verbindungen in Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Virtuelle private Netzwerke (virtual private networks, VPNs) bieten Ihren Benutzern sicheren Remotezugriff auf Ihr Unternehmensnetzwerk. Geräte verwenden ein *VPN-Verbindungsprofil*, um eine Verbindung mit dem VPN-Server zu initiieren. *VPN-Profile* in Microsoft Intune ermöglichen Ihnen die Bereitstellung von VPN-Einstellungen für Benutzer und Geräte in Ihrer Organisation, damit diese leicht eine sichere Verbindung zum Netzwerk herstellen können.
 
-Nehmen Sie z. B. an, Sie möchten allen iOS-Geräten die Einstellungen zur Verfügung stellen, die zum Verbinden mit einer Dateifreigabe im Unternehmensnetzwerk erforderlich sind. Sie erstellen ein VPN-Profil mit den Einstellungen, die zum Herstellen einer Verbindung mit dem Unternehmensnetzwerk erforderlich sind, und stellen dieses Profil dann für alle Benutzer mit iOS-Geräten bereit. Die Benutzer sehen die VPN-Verbindung in der Liste der verfügbaren Netzwerke und können mit geringem Aufwand eine Verbindung herstellen.
+Nehmen Sie z. B. an, Sie möchten allen iOS-Geräten die Einstellungen zur Verfügung stellen, die zum Verbinden mit einer Dateifreigabe im Unternehmensnetzwerk erforderlich sind. Sie erstellen ein VPN-Profil mit den Einstellungen, die zum Herstellen einer Verbindung mit dem Unternehmensnetzwerk erforderlich sind, und stellen dieses Profil dann für alle Benutzer mit iOS-Geräten bereit. Die Benutzer sehen die VPN-Verbindung in der Liste der verfügbaren Netzwerke und können mit geringem Aufwand eine Verbindung herstellen.
 
 Sie können die folgenden Gerätetypen mit VPN-Profilen konfigurieren:
 
@@ -34,7 +36,7 @@ Sie können die folgenden Gerätetypen mit VPN-Profilen konfigurieren:
 * Geräte unter Mac OS X 10.9 und höher
 * Registrierte Geräte unter Windows 8.1 und höher
 * Geräte unter Windows Phone 8.1 und höher
-* Geräte unter Windows 10 Desktop und Mobile
+* Geräte unter Windows 10 Desktop und Mobile
 
 Die Konfigurationsoptionen für VPN-Profile variieren je nach gewähltem Gerätetyp.
 
@@ -47,7 +49,7 @@ Intune unterstützt die Erstellung von VPN-Profilen mit den folgenden Verbindung
 
 
 
-Verbindungstyp |iOS und Mac OS X  |Android und Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop und Mobile |
+Verbindungstyp |iOS und Mac OS X  |Android und Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop und Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Ja |Ja   |Nein    |Nein  |Nein    | Ja (OMA-URI, nur mobil)|     
 Cisco (IPsec)|Ja |Ja   |Nein  |Nein  |Nein | Nein|
@@ -67,7 +69,7 @@ L2TP|Benutzerdefiniertes Profil für iOS|Nein |Nein |Nein|Ja (OMA-URI)|Ja|
 > [!IMPORTANT]
 > Vor der Verwendung von VPN-Profilen, die auf einem Gerät bereitgestellt werden, müssen Sie die entsprechende VPN-App für das Profil installieren. Sie können die Informationen im Thema [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) verwenden, um Unterstützung beim Bereitstellen der entsprechenden Anwendung mit Intune zu erhalten.  
 
- Informationen zum Erstellen benutzerdefinierter VPN-Profile mithilfe von URI-Einstellungen finden Sie unter [Benutzerdefinierte Konfigurationen für VPN-Profile](custom-configurations-for-vpn-profiles.md).     
+ Informationen zum Erstellen benutzerdefinierter VPN-Profile mithilfe von URI-Einstellungen finden Sie unter [Benutzerdefinierte Konfigurationen für VPN-Profile](create-custom-vpn-profiles.md).     
 
 ## <a name="methods-of-securing-vpn-profiles"></a>Methoden zum Schützen von VPN-Profilen
 
@@ -120,14 +122,14 @@ Name der Einstellung  |Weitere Informationen
 **Rolle**| Geben Sie den Namen der Benutzerrolle an, die Zugriff auf diese Verbindung hat. Eine Benutzerrolle definiert persönliche Einstellungen und Optionen und aktiviert oder deaktiviert bestimmte Zugriffsfeatures. Diese Option wird nur für den Verbindungstyp **Pulse Secure** oder **Citrix** angezeigt.
 **Bereich**|Geben Sie den Namen des gewünschten Authentifizierungsbereichs an. Ein Authentifizierungsbereich ist eine Gruppe von Authentifizierungsressourcen, die vom Verbindungstyp „Pulse Secure“ oder „Citrix“ verwendet werden. Diese Option wird nur für den Verbindungstyp **Pulse Secure** oder **Citrix** angezeigt.
 **Anmeldegruppe oder Domäne**|Geben Sie den Namen der Anmeldegruppe oder Domäne an, mit der Sie eine Verbindung herstellen möchten. Diese Option wird nur für den Verbindungstyp **Dell SonicWALL Mobile Connect** angezeigt.
-**Fingerabdruck**|Geben Sie eine Zeichenfolge (z. B. „Contoso-Fingerabdruckcode“) an, anhand der überprüft wird, ob der VPN-Server vertrauenswürdig ist. Ein Fingerabdruck kann an den Client gesendet werden, damit dieser weiß, dass alle Server vertrauenswürdig sind, die beim Verbinden den betreffenden Fingerabdruck vorweisen. Wenn das Gerät nicht über den Fingerabdruck verfügt, wird der Benutzer aufgefordert, dem VPN-Server zu vertrauen, mit dem Verbindung hergestellt wird, während der Fingerabdruck angezeigt wird. (Der Benutzer überprüft den Fingerabdruck manuell und wählt **Vertrauen** aus, um die Verbindung herzustellen.) Diese Option wird nur für den Verbindungstyp **CheckPoint Mobile VPN** angezeigt.
+**Fingerabdruck**|Geben Sie eine Zeichenfolge (z. B. „Contoso-Fingerabdruckcode“) an, anhand der überprüft wird, ob der VPN-Server vertrauenswürdig ist. Ein Fingerabdruck kann an den Client gesendet werden, damit dieser weiß, dass alle Server vertrauenswürdig sind, die beim Verbinden den betreffenden Fingerabdruck vorweisen. Wenn das Gerät nicht über den Fingerabdruck verfügt, wird der Benutzer aufgefordert, dem VPN-Server zu vertrauen, mit dem Verbindung hergestellt wird, während der Fingerabdruck angezeigt wird. (Der Benutzer überprüft den Fingerabdruck manuell und wählt **Vertrauen** aus, um die Verbindung herzustellen.) Diese Option wird nur für den Verbindungstyp **CheckPoint Mobile VPN** angezeigt.
 **VPN für App**|Mit dieser Option können Sie diese VPN-Verbindung einer iOS- oder Mac OS X-App zuzuordnen, sodass die Verbindung geöffnet wird, wenn die Anwendung ausgeführt wird. Die Zuordnung des VPN-Profils zu einer App kann bei der Bereitstellung der Software erfolgen. Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 **Bedarfsgesteuertes VPN**|Sie können für Geräte mit iOS 8.0 und höher ein bedarfsgesteuertes VPN einrichten. Eine Anleitung zum Einrichten eines bedarfsgesteuerten VPN finden Sie unter [Bedarfsgesteuertes VPN für iOS-Geräte](#on-demand-vpn-for-ios-devices).
 **Proxyeinstellungen automatisch erkennen** (nur iOS, Mac OS X, Windows 8.1 und Windows Phone 8.1)|Wenn der VPN-Server einen Proxyserver für die Verbindung erfordert, geben Sie an, ob Geräte die Verbindungseinstellungen automatisch erkennen können sollen. Weitere Informationen finden Sie in der Windows Server-Dokumentation.
 **Automatisches Konfigurationsskript verwenden** (nur iOS, Mac OS X, Windows 8.1 und Windows Phone 8.1)|Wenn der VPN-Server einen Proxyserver für die Verbindung erfordert, geben Sie an, ob Sie die Einstellungen mit einem automatischen Konfigurationsskript definieren und dann eine URL zur Datei mit den Einstellungen angeben möchten. Weitere Informationen finden Sie in der Windows Server-Dokumentation.
 **Proxyserver verwenden** (nur iOS, Mac OS X, Windows 8.1 und Windows Phone 8.1)|Wenn der VPN-Server einen Proxyserver für die Verbindung erfordert, aktivieren Sie diese Option, und geben Sie dann die Adresse und die Portnummer des Proxyservers an. Weitere Informationen finden Sie in der Windows Server-Dokumentation.
 **Proxyeinstellungen für lokale Adressen umgehen** (nur iOS, Mac OS X, Windows 8.1 und Windows Phone 8.1)|Wenn der VPN-Server einen Proxyserver für die Verbindung erfordert, aktivieren Sie diese Option, wenn der Proxyserver für von Ihnen angegebene lokale Adressen nicht verwendet werden soll. Weitere Informationen finden Sie in der Windows Server-Dokumentation.
-**Benutzerdefiniertes XML** (Windows 8.1 und höher sowie Windows Phone 8.1 und höher)|Geben Sie benutzerdefinierte XML-Befehle zum Konfigurieren der VPN-Verbindung an. Beispiel für **Pulse Secure**: &lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;. Beispiel für **CheckPoint Mobile VPN**: &lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true"  debug="3" /&gt;. Beispiel für **Dell SonicWALL Mobile Connect**: &lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;. Beispiel für **F5 Edge Client**: &lt;f5-vpn-conf&gt;&lt;single-sign-on-credential /&gt;&lt;/f5-vpn-conf&gt;. Weitere Informationen zum Erstellen von benutzerdefinierten XML-Befehlen finden Sie in der VPN-Dokumentation des jeweiligen Herstellers.
+**Benutzerdefiniertes XML** (Windows 8.1 und höher sowie Windows Phone 8.1 und höher)|Geben Sie benutzerdefinierte XML-Befehle zum Konfigurieren der VPN-Verbindung an. Beispiel für **Pulse Secure**: &lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;. Beispiel für **CheckPoint Mobile VPN**: &lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true"  debug="3" /&gt;. Beispiel für **Dell SonicWALL Mobile Connect**: &lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;. Beispiel für **F5 Edge Client**: &lt;f5-vpn-conf&gt;&lt;single-sign-on-credential /&gt;&lt;/f5-vpn-conf&gt;. Weitere Informationen zum Erstellen von benutzerdefinierten XML-Befehlen finden Sie in der VPN-Dokumentation des jeweiligen Herstellers.
 **DNS-Suffix-Suchliste** (nur Windows Phone 8.1)|Geben Sie in jeder Zeile ein DNS-Suffix an. Jedes angegebene DNS-Suffix wird beim Verbinden mit einer Website unter Verwendung eines Kurznamens gesucht. Geben Sie z. B. die DNS-Suffixe **domain1.contoso.com** und **domain2.contoso.com** ein, rufen Sie die URL **http://mywebsite** auf, und die URLs **http://mywebsite.domain1.contoso.com** und **http://mywebsite.domain2.contoso.com** werden durchsucht.
 **Bei Verbindung mit dem Unternehmens-WLAN VPN umgehen** (nur Windows Phone 8.1)|Wählen Sie diese Option aus, um anzugeben, dass die VPN-Verbindung nicht verwendet wird, wenn das Gerät mit dem Unternehmens-WLAN verbunden ist.
 **VPN umgehen, wenn mit Heimat-WLAN-Netzwerk verbunden** (nur Windows Phone 8.1)|Wählen Sie diese Option aus, um anzugeben, dass die VPN-Verbindung nicht verwendet wird, wenn das Gerät mit einem privaten WLAN verbunden ist.
@@ -145,11 +147,11 @@ Name der Einstellung  |Weitere Informationen
 > [!IMPORTANT]
 > Es wird empfohlen, alle Listen mit Apps zu schützen, die Sie für die Verwendung in der Konfiguration eines App-bezogenen VPN zusammenstellen. Wenn ein nicht autorisierter Benutzer die Liste ändert und Sie sie in die Liste der Apps für App-bezogenes VPN importieren, autorisieren Sie möglicherweise den VPN-Zugriff auf Apps, auf die nicht zugegriffen werden soll. Eine Möglichkeit, App-Listen zu schützen, ist die Verwendung einer Zugriffssteuerungsliste (Access Control List, ACL).
 
-Im Folgenden finden Sie ein Beispiel für die Verwendung von Einstellungen für Unternehmensgrenzen. Wenn Sie das VPN nur für Remotedesktops aktivieren möchten, erstellen Sie eine Regel für den Netzwerkdatenverkehr, die Datenverkehr für Protokoll 27 am externen Port 3996 zulässt. Kein anderer Datenverkehr verwendet das VPN.
+Im Folgenden finden Sie ein Beispiel für die Verwendung von Einstellungen für Unternehmensgrenzen. Wenn Sie das VPN nur für Remotedesktops aktivieren möchten, erstellen Sie eine Regel für den Netzwerkdatenverkehr, die Datenverkehr für Protokoll 27 am externen Port 3996 zulässt. Kein anderer Datenverkehr verwendet das VPN.
 
 Das Definieren von Routen innerhalb von Unternehmensgrenzen ist nützlich, wenn Sie für Ihren VPN-Verbindungstyp nicht definieren können, wie Datenverkehr bei getrenntem Tunneln behandelt wird. Verwenden Sie in diesem Fall **Routen**, um die Routen aufzulisten, die das VPN verwenden.
 
-Sie können die VPN-Nutzung für Windows 10-Geräte auf bestimmte Apps beschränken, indem Sie eine benutzerdefinierte OMA-URI-Einstellung erstellen.
+Sie können die VPN-Nutzung für Windows 10-Geräte auf bestimmte Apps beschränken, indem Sie eine benutzerdefinierte OMA-URI-Einstellung erstellen.
 
 Die neue Richtlinie wird im Knoten **Konfigurationsrichtlinien** des Arbeitsbereichs **Richtlinie** angezeigt.
 
@@ -164,7 +166,7 @@ Sie können für Geräte mit iOS 8.0 und höher ein bedarfsgesteuertes VPN konfi
 2. Wählen Sie **Hinzufügen** aus, um eine Regel zu erstellen. Es gibt zwei Arten von Übereinstimmungen, die Sie in der Regel einrichten können. Sie können pro Regel jeweils nur eine Art konfigurieren.
   - **SSIDs** beziehen sich auf drahtlose Netzwerke.
   - **DNS-Suchdomänen**, welche ...  Sie können vollständig qualifizierte Domänennamen wie z. B. *team. corp.contoso.com* oder Domänen wie *contoso.com* verwenden (dies entspricht der Verwendung von * *.contoso.com*).
-3. Optional: Geben Sie eine URL-Zeichenfolgetest an, d. h. eine URL, die von der Regel als Test verwendet wird. Wenn das Gerät, auf dem dieses Profil installiert wird, auf diese URL ohne Umleitung zugreifen kann, wird das VPN eingerichtet, und das Gerät stellt eine Verbindung mit der Ziel-URL her. Der URL-Zeichenfolgentest-Standort wird dem Benutzer nicht angezeigt. Ein Beispiel für einen URL-Zeichenfolgentest ist die Adresse eines Überwachungswebservers, der die Gerätekompatibilität prüft, bevor die VPN-Verbindung hergestellt wird. Eine andere Möglichkeit besteht darin, mit der URL zu testen, ob das VPN eine Verbindung mit einem Standort herstellen kann, bevor das Gerät über das VPN mit der Ziel-URL verbunden wird.
+3. Optional: Geben Sie eine URL-Zeichenfolgetest an, d. h. eine URL, die von der Regel als Test verwendet wird. Wenn das Gerät, auf dem dieses Profil installiert wird, auf diese URL ohne Umleitung zugreifen kann, wird das VPN eingerichtet, und das Gerät stellt eine Verbindung mit der Ziel-URL her. Der URL-Zeichenfolgentest-Standort wird dem Benutzer nicht angezeigt. Ein Beispiel für einen URL-Zeichenfolgentest ist die Adresse eines Überwachungswebservers, der die Gerätekompatibilität prüft, bevor die VPN-Verbindung hergestellt wird. Eine andere Möglichkeit besteht darin, mit der URL zu testen, ob das VPN eine Verbindung mit einem Standort herstellen kann, bevor das Gerät über das VPN mit der Ziel-URL verbunden wird.
 4. Wählen Sie eine der folgenden Aktionen aus:
   - **Verbinden**
   - **Verbindung auswerten** verfügt über drei Einstellungen: a. **Domänenaktion** – Wählen Sie **Bei Bedarf verbinden** oder **Nie verbinden**
@@ -194,13 +196,10 @@ Nach der erfolgreichen Bereitstellung sehen Benutzer den von Ihnen angegebenen V
 
 Eine Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeitsbereichs **Richtlinie** identifiziert Probleme mit der Richtlinie, die Ihre Aufmerksamkeit erfordern. Darüber hinaus wird eine Statusübersicht im Arbeitsbereich „Dashboard“ angezeigt.
 
-### <a name="see-also"></a>Weitere Informationen:
-[Benutzerdefinierte Konfigurationen für VPN-Profile](Custom-configurations-for-VPN-profiles.md)
-
-[App-bezogenes VPN für Android Pulse Secure](per-app-vpn-for-android-pulse-secure.md)
 
 
 
-<!--HONumber=Nov16_HO2-->
+
+<!--HONumber=Dec16_HO3-->
 
 

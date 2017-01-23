@@ -1,5 +1,5 @@
 ---
-title: Wie Ihre Android-Benutzer Apps erhalten | Microsoft Intune
+title: Wie Ihre Android-Benutzer Apps erhalten | Microsoft-Dokumentation
 description: "Methoden, um Android-Apps für Endbenutzer verfügbar zu machen."
 keywords: 
 author: barlanmsft
@@ -14,14 +14,17 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1c131a017e08482f0c31f7f4579cc8d317a366a0
-ms.openlocfilehash: 15151552da5365958ff784b678e58ae5c88fed0e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 370dd5d4a96253f0b7d208ef85659beeace18739
 
 
 ---
 
 
 # <a name="how-your-android-users-get-their-apps"></a>Wie Ihre Android-Benutzer Apps erhalten
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Android-Endbenutzer die Apps erhalten, die Sie über Microsoft Intune verteilen. Die Informationen können je nach Gerätetyp variieren (native Android-Geräte oder Samsung Knox Standard-Geräte).
 
 ## <a name="native-non-samsung-knox-standard-android-devices"></a>Native Android-Geräte (nicht Samsung Knox Standard)
@@ -53,6 +56,6 @@ Apps können verwaltet oder nicht verwaltet sein, wie unten beschrieben. Das Ver
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

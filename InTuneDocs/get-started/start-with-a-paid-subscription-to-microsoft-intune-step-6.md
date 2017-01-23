@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen von Richtlinien und Apps | Microsoft Intune
+title: Bereitstellen von Richtlinien und Apps | Microsoft-Dokumentation
 description: "Sie können Richtlinieneinstellungen aktivieren und Apps bereitstellen, die angewendet werden, sobald die Geräte für die Verwaltung registriert wurden."
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 56f7d1578ba6b193c6547686675e0fd4fde5f378
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 
 ---
 
 # <a name="create-policies-and-publish-apps"></a>Erstellen von Richtlinien und Veröffentlichen von Apps
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Bevor Sie Apps in Intune registrieren, können Sie Richtlinieneinstellungen und Apps aktivieren, die bereitgestellt werden, sobald diese Geräte der Verwaltung hinzugefügt werden. Mit Intune-Richtlinien stehen Einstellungen bereit, mit deren Hilfe Sie die Sicherheitseinstellungen auf mobilen Geräten steuern, die Windows-Firewall- und Endpoint Protection-Einstellungen für Computer warten und Anwendungen bereitstellen können. Sie können Richtlinien konfigurieren, Apps hinzufügen und diese Apps bereitstellen, damit Geräte die Einstellungen und Apps empfangen, sobald sie in Intune registriert werden.
 
 Richtlinien und Apps sind plattformspezifisch.

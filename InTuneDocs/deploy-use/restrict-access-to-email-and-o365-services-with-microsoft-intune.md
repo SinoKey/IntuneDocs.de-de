@@ -1,5 +1,5 @@
 ---
-title: "Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste | Microsoft Intune"
+title: "Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste | Microsoft-Dokumentation"
 description: "In diesem Thema wird beschrieben, wie Sie bedingten Zugriff verwenden können, damit nur kompatible Geräte auf Unternehmens-E-Mail und -daten in SharePoint Online und anderen Diensten zugreifen können."
 keywords: 
 author: andredm7
@@ -14,16 +14,16 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 5665ca431eb186d4378953b7047228e07ae9dc60
+ms.sourcegitcommit: 2e342bef07ff28bf2df027240471f74dfe373f83
+ms.openlocfilehash: a55087b96855645ef3f6e161fe85f6244c30120d
 
 
 ---
 
 # <a name="restrict-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Beschränken des Zugriffs auf E-Mail, Office 365 und andere Dienste mit Microsoft Intune
-Sie können den Zugriff auf E-Mail-, Office 365- und andere Dienste Ihres Unternehmens mithilfe des bedingten Zugriffs in Intune beschränken. Mithilfe der Intune-Funktion für den bedingten Zugriff können Sie sicherstellen, dass der Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens auf Geräte beschränkt ist, die den von Ihnen festgelegten Regeln entsprechen.
+Sie können den Zugriff auf Ihre geschäftlichen E-Mails, Office 365-Dienste wie **lokales Exchange**, **Exchange Online**, **Exchange Online Dedicated**, **SharePoint Online**, **Skype for Business Online** und andere Dienste mithilfe des bedingten EMS-Zugriffs (Enterprise Mobility + Security) beschränken. Mithilfe dieser Funktion können Sie sicherstellen, dass der Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens auf Geräte beschränkt ist, die den von Ihnen festgelegten Regeln für den bedingten Zugriff entsprechen. Diese werden entweder in der Intune-Verwaltungskonsole oder im klassischen Azure-Portal festgelegt.
 ## <a name="how-does-conditional-access-work"></a>Funktionsweise des bedingten Zugriffs
-Mit den Kompatibilitätsrichtlinieneinstellungen können Sie die Kompatibilität eines Geräts bewerten. Eine Richtlinie für bedingten Zugriff verwendet diese Bewertung, um den Zugriff auf einen bestimmten Dienst zuzulassen oder zu beschränken. Wenn Sie eine Richtlinie für bedingten Zugriff in Kombination mit einer Kompatibilitätsrichtlinie verwenden, erhalten nur kompatible Geräte Zugriff auf den Dienst. Die Richtlinien für Konformität und bedingten Zugriff werden dem Benutzer bereitgestellt. Jedes Gerät, das der Benutzer zum Zugriff auf die Dienste verwendet, wird auf die Einhaltung der Richtlinien überprüft.
+Mit den Kompatibilitätsrichtlinieneinstellungen können Sie die Kompatibilität eines Geräts bewerten. Eine Richtlinie für bedingten Zugriff verwendet diese Bewertung, um den Zugriff auf einen bestimmten Dienst zuzulassen oder zu beschränken. Wenn Sie eine Richtlinie für bedingten Zugriff in Kombination mit einer Gerätekompatibilitätsrichtlinie verwenden, erhalten nur kompatible Geräte Zugriff auf den Dienst. Die Richtlinien für Konformität und bedingten Zugriff werden dem Benutzer bereitgestellt. Jedes Gerät, das der Benutzer zum Zugriff auf die Dienste verwendet, wird auf die Einhaltung der Richtlinien überprüft.
 
 Bedenken Sie, dass für den Benutzer, der das Gerät verwendet, eine Kompatibilitätsrichtlinie bereitgestellt werden muss, damit das Gerät hinsichtlich der Kompatibilität bewertet werden kann.
 Wenn keine Kompatibilitätsrichtlinie für den Benutzer bereitgestellt wird, wird das Gerät als kompatibel behandelt, und es werden keine Zugriffsbeschränkungen angewendet.
@@ -34,12 +34,25 @@ Ein typischer Ablauf des bedingten Zugriffs:
 
 ![Das Diagramm veranschaulicht die Entscheidungspunkte, mit denen ermittelt wird, ob ein Gerät Zugriff auf einen Dienst erhält oder blockiert wird](../media/ConditionalAccess4.png)
 
-## <a name="how-to-configure-conditional-access"></a>So konfigurieren Sie den bedingten Zugriff
-Verwenden Sie den bedingten Zugriff zur Verwaltung des Zugriffs auf Microsoft **Exchange lokal**, **Exchange Online**, **Exchange Online Dedicated**, **SharePoint Online** und **Skype for Business Online**.
+## <a name="setup-considerations"></a>Überlegungen zur Einrichtung
 
-Um den bedingten Zugriff einzurichten, konfigurieren Sie eine Richtlinie für die Gerätekompatibilität und eine Richtlinie für bedingten Zugriff.
+### <a name="licensing"></a>Lizenzierung
 
-Die Kompatibilitätsrichtlinie enthält Einstellungen wie z. B. Kennung, Verschlüsselung und Informationen dazu, ob ein Gerät per Jailbreak manipuliert wurde. Das Gerät muss diesen Regeln entsprechen, um als kompatibel anerkannt zu werden.
+Microsoft Intune und Azure Active Directory Premium (Azure AD) arbeiten nahtlos zusammen, um mithilfe des bedingten EMS-Zugriffs mehrere Steuerungsebenen zu bieten. Wenn Sie Richtlinien für den bedingten Zugriff mithilfe von Intune bereitstellen möchten, benötigen Sie eine Lizenz für beide Produkte.
+
+**Azure AD Premium-Lizenzen** können als eigenständiger Dienst oder im Rahmen der Enterprise-Lizenz (zusammen mit Intune) erworben werden. Wenn Sie bedingte Zugriffsrichtlinien mit Intune bereitgestellt haben, stellen Sie sicher, dass Sie die entsprechenden Azure AD Premium- oder **EMS Lizenzen** bezogen haben.
+
+- Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+
+Stellen Sie darüber sicher, dass den Benutzern, für die Richtlinien für bedingten Zugriff gelten sollen, [Azure AD Premium- oder EMS-Lizenzen](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) zugewiesen wurden.
+
+### <a name="device-compliance-settings"></a>Gerätekompatibilitätseinstellungen
+
+Um den bedingten Zugriff einzurichten, konfigurieren Sie eine Richtlinie für die Gerätekompatibilität und eine Richtlinie für bedingten Zugriff. Die Kompatibilitätsrichtlinie enthält Einstellungen wie z. B. Kennung, Verschlüsselung und Informationen dazu, ob ein Gerät per Jailbreak manipuliert wurde. Das Gerät muss diesen Regeln entsprechen, um als kompatibel anerkannt zu werden.
+
+- Erfahren Sie mehr über die [Richtlinie für die Gerätekompatibilität und ihre Funktionsweise](introduction-to-device-compliance-policies-in-microsoft-intune.md).
+
+### <a name="conditional-access-policy"></a>Richtlinie für bedingten Zugriff
 
 Sie können eine Richtlinie für bedingten Zugriff festlegen, um den Zugriff anhand folgender Aspekte zu beschränken:
 - Der Status der Gerätekompatibilität.
@@ -50,11 +63,11 @@ Im Gegensatz zu anderen Intune-Richtlinien stellen Sie Richtlinien für bedingte
 
 
 ## <a name="next-steps"></a>Nächste Schritte
-1. [Informationen zur Richtlinie für die Gerätekompatibilität und ihrer Funktionsweise](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
-2. [Erstellen einer Konformitätsrichtlinie](create-a-device-compliance-policy-in-microsoft-intune.md)
 
-2.  Erstellen Sie eine Richtlinie für bedingten Zugriff für einen der folgenden Dienste:
+2. [Erstellen einer Gerätekompatibilitätsrichtlinie](create-a-device-compliance-policy-in-microsoft-intune.md)
+
+2.  Erstellen Sie eine Richtlinie für bedingten Zugriff für eines/n der folgenden Microsoft-Clouddienste bzw. -produkte:
 > [!div class="op_single_selector"]
   - [Bedingte Zugriffsrichtlinie für Exchange Online erstellen](restrict-access-to-exchange-online-with-microsoft-intune.md)
   - [Bedingte Zugriffsrichtlinie für Exchange Online lokal erstellen](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
@@ -66,6 +79,6 @@ Im Gegensatz zu anderen Intune-Richtlinien stellen Sie Richtlinien für bedingte
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

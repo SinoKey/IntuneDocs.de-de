@@ -1,11 +1,11 @@
 ---
-title: "Mehrstufige Authentifizierung für Windows | Microsoft Intune"
+title: "Mehrstufige Authentifizierung für Windows | Microsoft-Dokumentation"
 description: Intune integriert die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA), um Ihre Unternehmensressourcen zu sichern.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/15/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1bfd17f9fcc73049254bc77351eae48da874fb4c
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: cc60ffb2cd7a1d0cad141712ba7e2341954b1f02
 
 
 ---
 
 # <a name="protect-windows-devices-with-multi-factor-authentication"></a>Schützen von Windows-Geräten mit mehrstufiger Authentifizierung
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune integriert die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA), um Ihre Unternehmensressourcen zu sichern. MFA erfordert zusätzlich zu Benutzernamen und Kennwörtern weitere Authentifizierungsfaktoren, wie z.B eine Bestätigung per SMS. Intune unterstützt die Verwendung von MFA während der Registrierung von Geräten unter Windows 8.1 oder höher, Windows Phone 8.1 oder Windows 10 Desktop und Mobile.
+
+>[!NOTE]
+>
+>MFA kann auf dem AD FS-Server pro Benutzer oder pro Gruppe angefordert werden.  
+
 
 ## <a name="on-premises-infrastructure-requirements-for-adfs-mfa"></a>Lokale Infrastrukturanforderungen für ADFS-MFA
 Um die mehrstufige Authentifizierung einzurichten, benötigen Sie Folgendes:
@@ -40,6 +48,7 @@ Die Server müssen die Systemanforderungen unter [Systemanforderungen und Instal
 Verfügt Ihre Organisation über eine lokale IT-Infrastruktur, die eine Active Directory-Domäne mit Active Directory-Verbunddiensten (Active Directory Federation Services; AD FS) umfasst, können Sie MFA auf dem Verbundserver einrichten und anschließend für die Intune-Registrierung aktivieren. Durch Konfigurieren von MFA auf Intune können Benutzer sich einmalig während der Registrierung authentifizieren und anschließend Unternehmensressourcen verwenden, ohne jedes Mal den MFA-Prozess durchlaufen zu müssen.
 
 >[!NOTE]
+>
 >MFA kann auf dem AD FS-Server pro Benutzer oder pro Gruppe angefordert werden.  
 
 #### <a name="mfa-without-intune"></a>MFA ohne Intune
@@ -60,6 +69,6 @@ Informationen zum Aktivieren der MFA in ADFS finden Sie unter [Verwalten von Ris
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

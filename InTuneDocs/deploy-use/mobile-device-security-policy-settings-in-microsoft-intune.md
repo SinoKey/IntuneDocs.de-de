@@ -1,5 +1,5 @@
 ---
-title: "Sicherheitsrichtlinieneinstellungen für mobile Geräte | Microsoft Intune"
+title: "Sicherheitsrichtlinieneinstellungen für mobile Geräte | Microsoft-Dokumentation"
 description: "Verwenden Sie Intune, um eine Vielzahl von Einstellungen zu konfigurieren, die Sie für verwaltete Geräte in Ihrer Organisation bereitstellen können."
 keywords: 
 author: robstackmsft
@@ -14,14 +14,17 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 755cf7d87d7145c55eb5fe583748bd98d34e8fb1
 
 
 
 ---
 
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Sicherheitsrichtlinieneinstellungen für mobile Geräte in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!IMPORTANT]
 > Microsoft Intune bietet nun separate Konfigurationsrichtlinien für jede Geräteplattform. Diese Richtlinien enthalten die neuesten Einstellungen, die Sie verwenden können. Sie können die Sicherheitsrichtlinie für mobile Geräte weiterhin nutzen, wobei alle vorhandenen Bereitstellungen weiterhin funktionieren. Sie sollten allerdings die Migration zu den neuen Konfigurationsrichtlinien so bald wie möglich planen, da die Sicherheitsrichtlinie für mobile Geräte in Zukunft entfernt werden wird.
 
@@ -61,7 +64,7 @@ Sie können die Sicherheitsrichtlinien für mobile Geräte für die folgenden Ge
 |**Bildkennwort und PIN zulassen**|Ja|Ja|Nein|Nein|Nein|
 |**Minuten Inaktivität vor Anforderung des Kennworts**|Nein|Nein|Nein|Ja|Nein|
 |**Fingerabdruckentsperrung zulassen**|Nein|Nein|Nein|iOS 7 und höher|Nein|
-<sup>1</sup>Wenn Sie für iOS-Geräte die Einstellungen **Minuten Inaktivität bis zur Abschaltung des Bildschirms** und **Minuten Inaktivität vor Anforderung des Kennworts** konfigurieren, werden diese nacheinander angewendet. Wenn Sie beispielsweise den Wert für beide Einstellungen auf **5** Minuten einstellen, wird der Bildschirm automatisch nach 5 Minuten deaktiviert, und das Gerät wird nach weiteren 5 Minuten gesperrt. Wenn der Benutzer den Bildschirm jedoch manuell deaktiviert, wird die zweite Einstellung sofort angewendet. Im selben Beispiel wird das Gerät 5 Minuten später gesperrt, nachdem der Benutzer den Bildschirm deaktiviert hat.
+<sup>1</sup> Wenn Sie für iOS-Geräte die Einstellungen **Minuten Inaktivität bis zur Abschaltung des Bildschirms** und **Minuten Inaktivität vor Anforderung des Kennworts** konfigurieren, werden diese nacheinander angewendet. Wenn Sie beispielsweise den Wert für beide Einstellungen auf **5** Minuten einstellen, wird der Bildschirm automatisch nach 5 Minuten deaktiviert, und das Gerät wird nach weiteren 5 Minuten gesperrt. Wenn der Benutzer den Bildschirm jedoch manuell deaktiviert, wird die zweite Einstellung sofort angewendet. Im selben Beispiel wird das Gerät 5 Minuten später gesperrt, nachdem der Benutzer den Bildschirm deaktiviert hat.
 
 Wenn Sie eine Kennwortlängenrichtlinie für Geräte mit Windows RT bereitstellen, müssen Benutzer ihr Kennwort zurücksetzen, selbst wenn ihr aktuelles Kennwort den Richtlinienanforderungen entspricht.
 
@@ -105,7 +108,7 @@ Wenn Sie eine Kennwortlängenrichtlinie für Geräte mit Windows RT bereitstelle
 |**Zurücksetzen auf Werkseinstellungen zulassen**|Nein|Nein|Nein|Nein|Ja (nur Samsung KNOX Standard)|
 
 
-## <a name="cloud-settings-documents-and-data"></a>Cloudeinstellungen – Dokumente und Daten
+## <a name="cloud-settings--documents-and-data"></a>Cloudeinstellungen – Dokumente und Daten
 
 |Name der Einstellung|Windows 8.1 und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|iOS|Android und Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -116,7 +119,7 @@ Wenn Sie eine Kennwortlängenrichtlinie für Geräte mit Windows RT bereitstelle
 |**URL der Arbeitsordner**<br /><br />Diese Einstellung legt die URL des Arbeitsordners so fest, dass Dokumente auf verschiedenen Geräten synchronisiert werden können.|Ja|Nein|Nein|Nein|Nein|
 |**Google-Sicherung zulassen**|Nein|Nein|Nein|Nein|Ja (nur Samsung KNOX Standard)|
 
-## <a name="cloud-settings-accounts-and-synchronization"></a>Cloudeinstellungen – Konten und Synchronisierung
+## <a name="cloud-settings--accounts-and-synchronization"></a>Cloudeinstellungen – Konten und Synchronisierung
 
 |Name der Einstellung|Windows 8.1 und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|iOS|Android und Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -214,6 +217,6 @@ Wenn Sie eine Kennwortlängenrichtlinie für Geräte mit Windows RT bereitstelle
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

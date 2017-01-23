@@ -1,11 +1,11 @@
 ---
-title: iOS-Apps mit MAM-Richtlinien | Microsoft Intune
+title: iOS-Apps mit MAM-Richtlinien | Microsoft-Dokumentation
 description: "In diesem Thema wird beschrieben, was Sie erwartet, wenn Ihre iOS-App von Verwaltungsrichtlinien für mobile Apps verwaltet wird."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,26 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 3aa6728036ff66ea489176063af2d136bef4c7cc
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: f5a26d3d5ed060571892d91637dc12cae08f1a69
 
 
 ---
 
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-mam-policies"></a>Was Sie erwartet, wenn Ihre iOS-App von MAM-Richtlinien verwaltet wird
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
  Dieses Thema beschreibt die Benutzerumgebung für Apps mit MAM-Richtlinien (Mobile Application Management, Verwaltung mobiler Anwendungen). MAM-Richtlinien gelten nur, wenn Apps im geschäftlichen Kontext verwendet werden, z. B. wenn der Benutzer ein Geschäftskonto für den Zugriff auf Apps verwendet oder auf Dateien zugreift, die an einem OneDrive for Business-Speicherort im Unternehmen gespeichert sind.
 
 ##  <a name="access-apps"></a>Zugriff auf Apps
 
-Wenn das Gerät **nicht bei Intune registriert** ist, wird der Benutzer beim ersten Verwenden der App aufgefordert, die App neu zu starten.  Ein Neustart ist erforderlich, damit MAM-Richtlinien auf die App angewendet werden können. Der folgende Screenshot aus der Skype-App stellt diese Neustartanforderung dar:
+Wenn das Gerät **nicht bei Intune registriert** ist, wird der Benutzer beim ersten Verwenden der App aufgefordert, die App neu zu starten.  Ein Neustart ist erforderlich, damit MAM-Richtlinien auf die App angewendet werden können. 
+
+<!--- The following screenshot from the Skype app illustrates this restart request: --->
 
 
-![Screenshot des iOS-Geräts mit der PIN-Eingabeaufforderung](../media/appmanagement/iOS_AppPINPrompt.png)
+<!---  ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png) --->
 
 Bei Geräten, die **für die Verwaltung in Intune registriert** sind, wird dem Benutzer eine Meldung angezeigt, dass seine App nun verwaltet wird:
 
@@ -47,7 +52,7 @@ Intune unterstützt die Bereitstellung von MAM-Richtlinien nur auf je einem Benu
 * Abhängig von der verwendeten App, ist der zweite Benutzer auf dem Gerät möglicherweise blockiert. Unter allen Umständen wirken sich die MAM-Richtlinien nur auf den ersten Benutzer aus.
   * **Microsoft Word**, **Excel** und **PowerPoint** blockieren ein zweites Benutzerkonto nicht, die MAM-Richtlinien wirken sich auf das zweite Benutzerkonto aber nicht aus.  
 
-  * Für **OneDrive**- und **Outlook-Apps** können Sie nur ein geschäftliches Konto verwenden. Sie können für diese Apps nicht mehrere Geschäftskonten hinzufügen. Sie können jedoch einen Benutzer entfernen und auf dem Gerät einen weiteren Benutzer hinzufügen.
+  * Für **OneDrive**- und **Outlook-Apps** können Sie nur ein Geschäftskonto verwenden. Sie können für diese Apps nicht mehrere Geschäftskonten hinzufügen. Sie können jedoch einen Benutzer entfernen und auf dem Gerät einen weiteren Benutzer hinzufügen.
 
 * Wenn für ein Gerät vor der Bereitstellung der MAM-Richtlinien mehrere Benutzerkonten vorhanden sind, wird das Konto, für das die MAM-Richtlinien zuerst bereitgestellt werden, durch die Intune MAM-Richtlinien verwaltet.
 
@@ -68,6 +73,6 @@ Wenn Sie ein iOS-Gerät verwenden und versuchen, auf diesem Gerät ein zweites G
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

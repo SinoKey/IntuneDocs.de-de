@@ -1,5 +1,5 @@
 ---
-title: "Querladen von Apps für Windows und Windows Phone | Microsoft Intune"
+title: "Querladen von Apps für Windows und Windows Phone | Microsoft-Dokumentation"
 description: "Erfahren Sie, wie Sie branchenspezifische Apps signieren, um sie mit Intune bereitstellen zu können."
 keywords: 
 author: robstackmsft
@@ -11,12 +11,14 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 938e3a1914f379d115bf24ebd7d990f6e1d319a9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2e8220f850e3b38a24aa4c48bcc3a59088251c24
 
 
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Signieren Sie branchenspezifische Apps, damit sie mit Intune auf Windows-Geräten bereitgestellt werden können
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Als Intune-Administrator können Sie branchenspezifische Apps – einschließlich der Unternehmensportal-App – auf Windows- und Windows 10 Mobile-Geräten bereitstellen. Um APPX- oder XAP-Apps auf Windows 10- und Windows 10 Mobile-Geräten oder beliebige branchenspezifische App auf Windows 8.1- oder Windows Phone 8.1-Geräten bereitzustellen, müssen Sie ein **Symantec Enterprise Mobile Code Signing-Zertifikat** erwerben. Nur das Symantec-Zertifikat wird für diese Apps auf den jeweiligen Windows-Geräten als vertrauenswürdig eingestuft. Für Windows 10-Apps und universelle Apps können Sie Ihre eigene Zertifizierungsstelle verwenden. Dieses Zertifikat ist für folgende Zwecke erforderlich:
 

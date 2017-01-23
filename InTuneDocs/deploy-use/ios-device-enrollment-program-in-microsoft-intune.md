@@ -1,5 +1,5 @@
 ---
-title: "Apple-DEP-Verwaltung für iOS-Geräte | Microsoft Intune"
+title: "Apple-DEP-Verwaltung für iOS-Geräte | Microsoft-Dokumentation"
 description: "Stellen Sie ein Registrierungsprofil bereit, das über das iOS-Programm zur Geräteregistrierung (Device Enrollment Program, DEP) erworbene iOS-Geräte drahtlos registriert, damit Sie Apple-Geräte verwalten können."
 keywords: 
 author: staciebarker
@@ -14,8 +14,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: d1e534677bf5e5098f3a3665765983305a6bac69
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f8f5c1e5d69cf91413ebc4a71f1f9f8f8e1c8231
 
 
 ---
@@ -97,7 +97,7 @@ Bevor Sie unternehmenseigene iOS-Geräte mit DEP registrieren können, benötige
         - **Zulassen**: Erlaubt einem Gerät das Kommunizieren über eine USB-Verbindung mit jedem PC oder Mac
         - **Zertifikat anfordern**: Ermöglicht eine Verbindung mit einem Mac, indem ein Zertifikat in das Registrierungsprofil importiert wird.
 
-6.  **Zuweisen von DEP-Geräten zur Verwaltung** Wechseln Sie zum [Device Enrollment Program-Portal](https://deploy.apple.com) (https://deploy.apple.com), und melden Sie sich mit der Apple ID Ihres Unternehmens an. Wechseln Sie zu **Bereitstellungsprogramm** &gt; **Programm zur Geräteregistrierung** &gt; **Geräte verwalten**. Geben Sie an, wie Sie **Geräte wählen**, fügen Sie Geräteinformationen hinzu, und geben Sie die Details zum Gerät wie **Seriennummer**und **Bestellnummer**an, oder **laden Sie eine CSV-Datei hoch**. Wählen Sie als Nächstes **Zu Server zuweisen** aus. Wählen Sie den für Microsoft Intune angegebenen &lt;Servernamen&gt; und anschließend **OK** aus.
+6.  **Zuweisen von DEP-Geräten zur Verwaltung** Wechseln Sie zum [Device Enrollment Program-Portal](https://deploy.apple.com) (https://deploy.apple.com), und melden Sie sich mit der Apple ID Ihres Unternehmens an. Wechseln Sie zu **Bereitstellungsprogramm** &gt; **Programm zur Geräteregistrierung** &gt; **Geräte verwalten**. Geben Sie an, wie Sie **Geräte wählen**, fügen Sie Geräteinformationen hinzu, und geben Sie die Details zum Gerät wie **Seriennummer**und **Bestellnummer**an, oder **laden Sie eine CSV-Datei hoch**. Wählen Sie als Nächstes **Zu Server zuweisen** aus. Wählen Sie den für Microsoft Intune angegebenen &lt;Servernamen&gt; und anschließend **OK** aus.
 
 7.  **Synchronisieren von mit DEP verwalteten Geräten** Öffnen Sie als Administrator die [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com), wechseln Sie zu **Verwaltung** &gt; **Verwaltung mobiler Geräte** &gt; **iOS** &gt; **Programm zur Geräteregistrierung**, und wählen Sie anschließend **Jetzt synchronisieren** aus. Eine Synchronisierungsanforderung wird an Apple gesendet. Um mit DEP verwaltete Geräte nach der Synchronisierung anzuzeigen, navigieren Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) zu **Gruppen** &gt; **Alle Geräte** &gt; **Vorabregistrierte Unternehmensgeräte** &gt; **Nach iOS-Seriennummer**. Im Arbeitsbereich **Nach iOS-Seriennummer** wird der **Status** verwalteter Geräte als „Nicht kontaktiert“ angezeigt, bis das Gerät eingeschaltet und der Setup-Assistent darauf ausgeführt wird.
 
@@ -105,7 +105,7 @@ Bevor Sie unternehmenseigene iOS-Geräte mit DEP registrieren können, benötige
      -  Eine vollständige DEP-Synchronisation kann nicht öfter als einmal alle sieben Tage erfolgen. Während einer vollständigen Synchronisierung aktualisiert Intune jede Seriennummer, die Intune von Apple zugewiesen wurde, und zwar unabhängig davon, ob die Seriennummer vorher synchronisiert wurde oder nicht. Wenn eine vollständige Synchronisierung innerhalb von sieben Tagen nach der vorherigen vollständigen Synchronisierung versucht wird, aktualisiert Intune nur Seriennummern, die nicht bereits in Intune aufgeführt sind.
      -  Synchronisierungsanforderungen müssen binnen 10 Minuten abgeschlossen werden. Während dieser Zeit oder bis zum erfolgreichen Erfüllen der Anforderung wird die Schaltfläche **Synchronisieren** deaktiviert.
 
-8.  **Verteilen von Geräten an Benutzer** Ihre unternehmenseigenen Geräte können jetzt an Benutzer verteilt werden. Wenn ein iOS-Gerät eingeschaltet wird, wird es für die Verwaltung durch Intune registriert.
+8.  **Verteilen von Geräten an Benutzer** Ihre unternehmenseigenen Geräte können jetzt an Benutzer verteilt werden. Wenn ein iOS-Gerät eingeschaltet wird, wird es für die Verwaltung durch Intune registriert.
 
 ## <a name="changes-to-intune-group-assignments"></a>Änderungen an den Intune-Gruppenzuweisungen
 
@@ -116,6 +116,6 @@ Ab November werden Gerätegruppen in Azure Active Directory verwaltet. Nach dies
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

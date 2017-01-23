@@ -1,11 +1,11 @@
 ---
-title: iOS-Richtlinieneinstellungen | Microsoft Intune
+title: iOS-Richtlinieneinstellungen | Microsoft-Dokumentation
 description: "Erstellen Sie Richtlinien, die Einstellungen und Funktionen auf iOS-Geräten steuern, die Sie mit Intune verwalten."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: dfde68e4ef889ba881ff2fa93b226f879d01cbc8
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 05d47e6cf5c7b380ac981d06a3938f38b27a430b
 
 
 ---
 
 # <a name="ios-policy-settings-in-microsoft-intune"></a>iOS-Richtlinieneinstellungen in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune bietet eine Reihe integrierter allgemeiner Einstellungen, die Sie auf iOS-Geräten konfigurieren können. Darüber hinaus können Sie das Apple Configurator-Tool verwenden, um benutzerdefinierte Einstellungen zu erstellen, die nicht von Intune verfügbar sind.
 
@@ -78,12 +80,12 @@ Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
 |----------------|-------|
 |**Sicherung in iCloud zulassen**|Ermöglicht es dem Benutzer, das Gerät in iCloud zu sichern.|
 |**Dokumentsynchronisierung in iCloud zulassen**|Erlaubt die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher.|
-|**Fotostream-Synchronisierung auf iCloud zulassen**|Erlaubt, dass Fotos auf dem Gerät mit iCloud synchronisiert werden.|
+|**Fotostream-Synchronisierung auf iCloud zulassen**|Ermöglicht Benutzern das Aktivieren von **Mein Photo Stream** auf ihrem Gerät, um Fotos mit iCloud zu synchronisieren, damit diese auf allen Geräten des Benutzers verfügbar sind.|
 |**Verschlüsselte Sicherung erforderlich**|Fordert an, dass Gerätesicherungen verschlüsselt werden.|
 |**Datensynchronisierung mit iCloud durch verwaltete Apps zulassen**|Ermöglicht es Apps, die Sie mit Intune verwalten, Daten mit dem iCloud-Konto des Benutzers zu synchronisieren.|
 |**Fortsetzung von Aktivitäten durch Handoff auf einem anderen Gerät zulassen**|Ermöglicht es dem Benutzer, die Arbeit, die er auf einem iOS-Gerät gestartet hat, auf einem anderen iOS- oder Mac OS X-Gerät fortzusetzen.|
-|**iCloud-Fotofreigabe zulassen**|Ermöglicht es dem Benutzer, die iOS-Funktion zur Fotofreigabe zuzulassen.|
-|**iCloud-Fotomediathek zulassen**|Ermöglicht es dem Benutzer, Fotos auf iCloud zu speichern. Wenn diese Funktion deaktiviert ist, werden bereits auf iCloud gespeicherten Fotos entfernt.|
+|**iCloud-Fotofreigabe zulassen**|Legen Sie diese Einstellung auf **Nein** fest, um die **iCloud-Fotofreigabe** auf dem Gerät zu deaktivieren.|
+|**iCloud-Fotomediathek zulassen**|Bei Festlegung auf **Nein** wird die Verwendung der iCloud-Fotomediathek deaktiviert, die Benutzern das Speichern von Fotos und Videos in der Cloud ermöglicht.   Fotos, die nicht vollständig aus der iCloud-Fotomediathek auf das Gerät heruntergeladen wurden, werden bei Festlegung auf **Nein** vom Gerät entfernt.|
 
 ### <a name="application-settings-for-the-browser"></a>Anwendungseinstellungen für den Browser
 Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
@@ -172,6 +174,8 @@ Geben Sie in der Liste der **kompatiblen und nicht kompatiblen Apps** anhand der
 |**Anwendungen importieren**|Importiert eine Liste von Apps, die Sie in einer durch Trennzeichen getrennten Datei angegeben haben. Verwenden Sie in der Datei das Format Anwendungsname, Herausgeber, App-URL.|
 |**Bearbeiten**|Ermöglicht das Bearbeiten des Namens, Herausgebers und der URL der ausgewählten App.|
 |**Löschen**|Löscht die ausgewählte App aus der Liste.|
+
+Richtlinien mit kompatiblen und nicht kompatiblen App-Einstellungen müssen für Benutzergruppen bereitgestellt werden.
 
 ### <a name="kiosk-mode-settings"></a>Einstellungen für den Kioskmodus
 
@@ -383,6 +387,6 @@ Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigur
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

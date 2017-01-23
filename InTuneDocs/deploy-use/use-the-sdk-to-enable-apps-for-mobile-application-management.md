@@ -1,26 +1,29 @@
 ---
-title: "Verwenden des SDK zum Aktivieren von Apps für MAM | Microsoft Intune"
+title: "Verwenden des SDK zum Aktivieren von Apps für MAM | Microsoft-Dokumentation"
 description: "Dieses Thema bietet Ihnen eine schnelle Übersicht der Gründe für die Verwendung des Intune App SDKs."
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 0a0a9271d32531e4727c7aa20f456f7d3ba53d13
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 7b35b461cf261f837007ebd532ea8dfc1cabfc17
 
 
 ---
 
 # <a name="use-the-sdk-to-enable-apps-for-mobile-application-management"></a>Verwenden des SDKs zum Aktivieren von Apps für die Verwaltung von mobilen Anwendungen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Verwenden Sie das Microsoft Intune App SDK, um es Intune zu ermöglichen, bestimmte Features Ihrer iOS- oder Android-Apps zu verwalten. Nachdem Ihre App aktiviert ist, können Sie für die App Richtlinien bereitstellen. Diese Richtlinien verwenden diese Funktionen zum Schutz Ihrer Unternehmensdaten. Beispiele für die Arten von Schutz, die Sie mit dem SDK implementieren können:
 
 -   Benutzer am Kopieren von Unternehmensdokumenten in die Cloud hindern.
@@ -40,6 +43,6 @@ Eine Übersicht über das SDK finden Sie auf der Seite [Übersicht](/intune/deve
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

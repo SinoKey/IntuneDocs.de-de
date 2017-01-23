@@ -1,5 +1,5 @@
 ---
-title: Was ist Microsoft Intune? | Microsoft Docs
+title: Was ist Microsoft Intune? | Microsoft-Dokumentation
 description: "Erfahren Sie mehr zu Intune, der Verwaltungskomponente für mobile Geräte der „Enterprise Mobility + Security“-Lösung, und wie Intune Sie beim Schutz von Unternehmensdaten unterstützt."
 keywords: Was ist Intune
 author: Lindavr
@@ -14,13 +14,16 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e373fe71f54472bca538ba4a14beff39d090e23d
+ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
+ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
 
 
 ---
 
 # <a name="what-is-intune"></a>Was ist Intune?
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune ist ein cloudbasierter Enterprise Mobility-Verwaltungsdienst (Enterprise Mobility Management; EMM), der die Produktivität Ihrer Mitarbeiter unterstützt und gleichzeitig Ihre Unternehmensdaten schützt. Mit Intune können Sie folgende Aktionen ausführen:
 * Die mobilen Geräte verwalten, die Ihre Mitarbeiter verwenden, um auf Unternehmensdaten zuzugreifen
 * Die mobilen Apps verwalten, die Ihre Mitarbeiter verwenden
@@ -92,7 +95,7 @@ Die meisten Enterprise Mobility Management-Lösungen unterstützen grundlegende 
 
 Unternehmen unterscheiden sich, inwieweit sie Szenarios ohne Registrierung übernehmen. Einige Unternehmen machen dieses Szenario zu Ihrem Standard. Einige ermöglichen es bloß für Begleitgeräte wie z.B. ein persönliches Tablet. Andere unterstützen es überhaupt nicht. Auch im letzten Fall, in dem eine Organisation von allen Mitarbeitern fordert, ihre Geräte in MDM zu registrieren, unterstützen diese Organisationen in der Regel Szenarios ohne Registrierung für Auftragnehmer, Lieferanten und für andere Geräte, die über eine bestimmte Freistellung verfügen.
 
-Sie können die Intune-Technologie für die Geräteverwendung ohne Registrierung sogar auf registrierten Geräten verwenden. Beispielsweise kann vom mobilen Betriebssystem für ein Gerät, das in MDM registriert ist, die Schutzfunktion „Öffnen In“ bereitgestellt werden. Darüber hinaus kann die IT die App-Schutzrichtlinie auf EMS-verwaltete mobile Apps anwenden, um die Option „Speichern als“ zu steuern oder eine mehrstufige Authentifizierung bereitzustellen.
+Sie können die Intune-Technologie für die Geräteverwendung ohne Registrierung sogar auf registrierten Geräten verwenden. Beispielsweise kann vom mobilen Betriebssystem für ein Gerät, das in MDM registriert ist, die Schutzfunktion „Öffnen In“ bereitgestellt werden. (Es handelt sich hierbei um ein iOS-Feature, das Sie daran hindert, ein Dokument aus einer App, z.B. Outlook, in einer anderen App, z.B Word, zu öffnen – es sei denn, beide Apps werden vom MDM-Anbieter verwaltet.) Darüber hinaus kann die IT die App-Schutzrichtlinie auf EMS-verwaltete mobile Apps anwenden, um die Option „Speichern als“ zu steuern oder eine mehrstufige Authentifizierung bereitzustellen.
 
 Intune verfügt als Teil von EMS über Tools, mit denen Sie Ihre Produktivität steigern und gleichzeitig Ihre Unternehmensdaten schützen können – unabhängig von der Position Ihrer Organisation zu registrierten und nicht registrierten mobilen Geräten und Apps.
 
@@ -113,6 +116,6 @@ Die folgende Liste geschäftlicher Probleme verweist auf ausführlichere Informa
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

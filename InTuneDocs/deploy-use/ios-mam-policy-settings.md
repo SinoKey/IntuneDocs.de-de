@@ -1,9 +1,9 @@
 ---
-title: iOS-MAM-Richtlinieneinstellungen | Microsoft Intune
+title: iOS-MAM-Richtlinieneinstellungen | Microsoft-Dokumentation
 description: "In diesem Thema werden die Richtlinieneinstellungen zur Verwaltung mobiler Apps für iOS-Geräte beschrieben."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article
@@ -14,115 +14,51 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 126974152c638fc4bc69ef92b5fa79beeb0eed0c
+ms.sourcegitcommit: d80f548f0c1382e1bd024bd31078d2a4e6366656
+ms.openlocfilehash: a2130fa76f66528f6e77c720bc93286e0d01aba2
 
 
 ---
 
 #  <a name="ios-mobile-app-management-policy-settings"></a>iOS-Richtlinieneinstellungen für die Verwaltung mobiler Apps
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Die in diesem Thema beschriebenen Richtlinieneinstellungen können im Azure-Portal auf dem Blatt **Einstellungen** für eine MAM-Richtlinie (mobile application management, Verwaltung mobiler Anwendungen) [konfiguriert](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) werden.
 
-Es gibt zwei Kategorien von Richtlinieneinstellungen: Datenverlagerungs- und Zugriffseinstellungen. In diesem Thema verweist der Begriff *Richtlinienverwaltete Apps* auf Apps, die mit MAM-Richtlinien konfiguriert sind.
+Es gibt zwei Kategorien von Richtlinieneinstellungen: Datenverlagerungs- und Zugriffseinstellungen. In diesem Thema bezieht sich der Begriff _**richtlinienverwaltete Apps**_ auf Apps, die mit MAM-Richtlinien konfiguriert sind.
 
 ##  <a name="data-relocation-settings"></a>Einstellungen für die Datenverlagerung
 
-- **iTunes- und iCloud-Sicherungen verhindern**: Wählen Sie **Ja**, um die Funktion zu deaktivieren, oder **Nein**, um das Sichern von Unternehmensdaten über richtlinienverwaltete Apps zuzulassen.
+| Einstellung | Verwendung | Standardwert |
+|------|------|------|
+| **iTunes- und iCloud-Sicherungen verhindern** | Wählen Sie **Ja**, um zu verhindern, dass diese App Geschäfts-, Schul- oder Unidaten in iTunes und iCloud sichert. Wählen Sie **Nein**, um dieser App zu erlauben, Geschäfts-, Schul- oder Unidaten in iTunes und iCloud zu sichern.| Ja |
+| **Zulassen, dass die App Daten an andere Apps überträgt** | Geben Sie an, welche Apps Daten von dieser App empfangen können: <ul><li> **Richtlinienverwaltete Apps**: Datenübertragung nur an andere richtlinienverwaltete Apps zulassen</li> <li>**Alle Apps**: Datenübertragung an beliebige Apps zulassen </li> <li>**Keine**: Keine Datenübertragung an beliebige Apps zulassen, auch nicht an andere richtlinienverwaltete Apps.</li></ul> Wenn Sie diese Option auf **Richtlinienverwaltete Apps** oder **Keine** festlegen, wird zudem das iOS 9-Feature blockiert, das der Spotlight-Suche die Suche von Daten in Apps erlaubt. <br><br> | Alle Apps |
+| **App Empfang von Daten aus anderen Apps erlauben** | Geben Sie an, welche Apps Daten an diese App übertragen können: <ul><li>**Richtlinienverwaltete Apps**: Datenübertragung nur von anderen richtlinienverwalteten Apps zulassen</li><li>**Alle Apps**: Datenübertragung von beliebigen Apps zulassen</li><li>**Keine**: Keine Datenübertragung von beliebigen Apps zulassen, auch nicht von anderen richtlinienverwalteten Apps. | Alle Apps |
+| **„Speichern unter“ verhindern** | Wählen Sie **Ja** aus, um die Verwendung der Option „Speichern unter“ in dieser App zu deaktivieren. Wählen Sie **Nein** aus, wenn die Verwendung von „Speichern unter“ zulässig sein soll. | Nein |
+| **Beschränken von Ausschneiden, Kopieren und Einfügen mit anderen Apps** | Geben Sie an, wann Ausschneide-, Kopier- und Einfügeaktionen in dieser App erlaubt sind. Wählen Sie aus: <ul><li>**Blockiert**: Ausschneide-, Kopier- und Einfügeaktionen zwischen dieser App und anderen Apps nicht zulassen.</li><li>**Richtlinienverwaltete Apps**: Nur Ausschneide-, Kopier- und Einfügeaktionen zwischen dieser App und anderen richtlinienverwalteten Apps zulassen.</li><li>**Richtlinienverwaltete Apps mit Einfügen**: Ausschneiden oder Kopieren zwischen dieser App und anderen richtlinienverwalteten Apps zulassen. Einfügen von Daten aus beliebigen Apps in diese App zulassen.</li><li>**Jede App**: Keine Einschränkungen für das Ausschneiden, Kopieren und Einfügen in und aus dieser App. | Jede App |
+|**Anzeige von Webinhalten auf den Managed Browser beschränken** | Wählen Sie **Ja** zum Erzwingen, dass Weblinks in der App in der Managed Browser-App geöffnet werden. <br><br> Für Geräte, die nicht bei Intune registriert sind, können Weblinks in richtlinienverwalteten Apps nur in der Managed Browser-App geöffnet werden. <br><br> Wenn Sie Intune zum Verwalten Ihrer Geräte verwenden, lesen Sie [Verwalten des Internetzugriffs mittels Richtlinien für Managed Browser mit Microsoft Intune](manage-internet-access-using-managed-browser-policies.md). | Nein |
+| **App-Daten verschlüsseln** | Für richtlinienverwaltete Apps werden Daten im Ruhezustand mithilfe des von iOS bereitgestellten Verschlüsselungsschemas auf Geräteebene verschlüsselt. Wenn eine PIN erforderlich ist, werden die Daten gemäß den Einstellungen in der App-Schutzrichtlinie verschlüsselt. <br><br> Wechseln Sie [hier](https://support.apple.com/HT202739) zur offiziellen Apple-Dokumentation, um zu prüfen, welche iOS-Verschlüsselungsmodule FIPS 140-2-zertifiziert sind bzw. bei welchen die FIPS 140-2-Zertifizierung aussteht. <br><br> Geben Sie an, wann Geschäfts-, Schul- oder Unidaten in dieser App verschlüsselt werden. Es stehen die folgenden Optionen zur Auswahl: <ul><li>**Wenn das Gerät gesperrt ist**: Alle App-Daten, die dieser Richtlinie unterliegen, werden verschlüsselt, solange das Gerät gesperrt ist.</li><li>**Wenn das Gerät gesperrt ist und Dateien geöffnet sind**: Alle App-Daten, die dieser Richtlinie unterliegen, werden verschlüsselt, solange das Gerät gesperrt ist, außer den Daten in Dateien, die derzeit in der App geöffnet sind.</li><li>**Nach Geräteneustart**: Alle App-Daten unter dieser Richtlinie werden verschlüsselt, wenn das Gerät neu gestartet wird, bis das Gerät zum ersten Mal entsperrt wird.</li><li>**Geräteeinstellungen verwenden**: App-Daten werden basierend auf den Standardeinstellungen des Geräts verschlüsselt. <br><br> Wenn Sie diese Einstellung aktivieren, muss der Benutzer eine PIN einrichten und verwenden, um auf sein Gerät zuzugreifen.  Wenn keine PIN eingerichtet wurde, werden die Apps nicht geöffnet, und der Benutzer wird mit der Meldung „Ihre Organisation hat festgelegt, dass Sie zunächst eine Geräte-PIN aktivieren müssen, um auf diese App zuzugreifen“ aufgefordert, eine PIN einzurichten. </li></ul> | Wenn das Gerät gesperrt ist |
+| **Kontaktsynchronisierung deaktivieren** | Wählen Sie **Ja**, um zu verhindern, dass die App Daten in der nativen App „Kontakte“ auf dem Gerät speichert. Wenn Sie **Nein** wählen, darf die App Daten in der nativen App „Kontakte“ auf dem Gerät speichern. <br><br>Bei Ausführung eines selektiven Zurücksetzens zum Entfernen von Geschäfts-, Schul- oder Unidaten aus der App werden Kontakte entfernt, die direkt aus der App in die native App „Kontakte“ synchronisiert wurden. Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. Dies gilt derzeit nur für die Microsoft Outlook-App. | Nein |
+| **Drucken deaktivieren** | Wählen Sie **Ja**, um zu verhindern, dass die App Geschäfts-, Schul- oder Unidaten druckt. | Nein |
 
-  Standardwert = **Ja**
 
-- **Zulassen, dass die App Daten an andere Apps überträgt**: Wählen Sie eine der Optionen, um die Apps anzugeben, die Daten von richtlinienverwalteten Apps empfangen dürfen:
-  - **Richtlinienverwaltete Apps**: Datenübertragung nur an andere Apps zulassen, für die die MAM-Richtlinie gilt.
-  - **Alle Apps**: Datenübertragung an beliebige Apps zulassen
-  - **Keine**: Keine Datenübertragung an beliebige Apps zulassen, auch nicht an andere richtlinienverwaltete Apps.
+> [!NOTE]
+> Keine der Einstellungen für die Datenverlagerung steuert die von Apple verwaltete Funktion „Öffnen in“ auf iOS-Geräten. Informationen zum Verwalten der Apple-Funktion „Öffnen in“ finden Sie unter [Verwalten der Datenübertragung zwischen iOS-Apps mit Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
 
-  Wenn Sie diese Option auf **Richtlinienverwaltete Apps** oder **Keine** festlegen, wird zudem das iOS 9-Feature blockiert, das der Spotlight-Suche die Suche von Daten in Apps erlaubt.
 
-  >[!NOTE]
-  >Diese Einstellung steuert nicht die Verwendung des Features „Öffnen in“ auf mobilen Geräten. Informationen zum Verwalten von „Öffnen in“ finden Sie unter [Verwalten der Datenübertragung zwischen iOS-Apps mit Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
+## <a name="access-settings"></a>Zugriffseinstellungen
 
-  Standardwert = **Richtlinienverwaltete Apps**
-
-- **Zulassen, dass die App Daten von anderen Apps empfängt:** Geben Sie Apps an, die Daten an die richtlinienverwalteten Apps übertragen dürfen:
-  -  **Richtlinienverwaltete Apps**: Datenübertragung nur von anderen richtlinienverwalteten Apps zulassen
-  -  **Alle Apps**: Datenübertragung von beliebigen Apps zulassen
-  -  **Keine**: Keine Datenübertragung von anderen Apps zulassen.
-
-  Standardwert = **Alle Apps**
-
-- **„Speichern unter“ verhindern:** Wählen Sie **Ja** aus, um die Verwendung der Option „Speichern unter“ in jeder App zu deaktivieren, die diese Richtlinie verwendet. Wählen Sie **Nein** aus, wenn die Verwendung von „Speichern unter“ zulässig sein soll.
-
-  Standardwert = **Ja**
-
-- **Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken:** Geben Sie an, ob Ausschneiden, Kopieren und Einfügen eingeschränkt werden sollen. Wählen Sie aus:
-  -   **Blockiert**: Ausschneiden, Kopieren und Einfügen zwischen richtlinienverwalteten Apps nicht zulassen
-  -   **Richtlinienverwaltete Apps**: Ausschneiden, Kopieren und Einfügen nur zwischen richtlinienverwalteten Apps zulassen.
-  -   **Richtlinienverwaltete Apps mit Einfügen**: Ausschneiden oder Kopieren zwischen richtlinienverwalteten Apps zulassen. Einfügen der aus beliebigen Apps ausgeschnittenen oder kopierten Daten in diese App zulassen.
-  - **Jede App**: Keine Einschränkungen für das Ausschneiden, Kopieren und Einfügen zwischen beliebigen Apps.
-
-  Standardwert = **Richtlinienverwaltete Apps mit Einfügen**
-
-- **Anzeige von Webinhalten auf den Managed Browser beschränken:** Wenn diese Einstellung aktiviert ist, werden alle Links aus der App in der Managed Browser-App geöffnet.
-
-  Für Geräte, die nicht bei Intune registriert sind, können Weblinks in richtlinienverwalteten Apps nur in der Managed Browser-App geöffnet werden.
-
-  Wenn Sie Intune zum Verwalten Ihrer Geräte verwenden, lesen Sie [Verwalten des Internetzugriffs mittels Richtlinien für Managed Browser mit Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
-
-  Standardwert = **Ja**
-
-- **App-Daten verschlüsseln**: Für Apps, die einer Intune-MAM-Richtlinie zugeordnet sind, werden ruhende Daten mit vom Betriebssystem bereitgestellter Verschlüsselung auf Geräteebene verschlüsselt. Wenn eine PIN erforderlich ist, werden die Daten gemäß den Einstellungen in der MAM-Richtlinie verschlüsselt. Wie in der Apple-Dokumentation angegeben, [sind die von iOS 7 verwendeten Module FIPS 140-2-zertifiziert](http://support.apple.com/en-us/HT202739).
-
-  In den Richtlinieneinstellungen können Sie PIN-Verschlüssungswerte festlegen. Diese Werte bestimmen, wann die Daten verschlüsselt werden. Folgende Optionen sind verfügbar:
-  -   **Wenn das Gerät gesperrt ist**: Alle App-Daten unter dieser Richtlinie werden verschlüsselt, solange das Gerät gesperrt ist.
-  -   **Wenn das Gerät gesperrt ist (außer geöffnete Dateien)**: Alle App-Daten unter dieser Richtlinie werden verschlüsselt, solange das Gerät gesperrt ist, außer den Daten in Dateien, die derzeit in der App geöffnet sind.
-  -   **Nach Geräteneustart**: Alle App-Daten unter dieser Richtlinie werden verschlüsselt, wenn das Gerät neu gestartet wird, bis das Gerät zum ersten Mal entsperrt wird.
-  -   **Geräteeinstellungen verwenden**: App-Daten werden basierend auf den Standardeinstellungen des Geräts verschlüsselt.
-  Wenn Sie diese Einstellung aktivieren, muss der Benutzer eine PIN einrichten und verwenden, um auf sein Gerät zuzugreifen.  Wenn keine PIN eingerichtet wurde, werden die Apps nicht geöffnet, und der Benutzer wird mit der Meldung „Ihr Unternehmen hat festgelegt, dass Sie zunächst eine Geräte-PIN aktivieren müssen, um auf diese Anwendung zuzugreifen“ aufgefordert, eine PIN einzurichten.
-
-  Standardwert = Die Verschlüsselungsoption ist nicht ausgewählt.
-- **Kontaktsynchronisierung deaktivieren:** Wählen Sie **Ja** aus, um zu verhindern, dass Kontaktinformationen mit der nativen Adressbuch-App auf dem Gerät synchronisiert werden. Wenn Sie **Nein** auswählen, speichert die App die Kontaktinformationen in der nativen Adressbuch-App auf dem Gerät.
-
-  Wenn Sie zum Entfernen von Unternehmensdaten eine selektive Zurücksetzung durchführen, werden Kontakte entfernt, die direkt aus der App mit dem nativen Adressbuch synchronisiert werden. Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. Dies gilt derzeit nur für die Microsoft Outlook-App.
-
-  Standardwert = **Ja**
-
-- **Drucken deaktivieren:** Wählen Sie **Ja** aus, um zu verhindern, dass Unternehmensdaten aus Apps gedruckt werden, die mit der MAM-Richtlinie verknüpft sind.
-
-    Standardwert = **Ja**
-
-##  <a name="access-settings"></a>Zugriffseinstellungen
-
-- **PIN für Zugriff erforderlich:** Wählen Sie **Ja** aus, um für richtlinienverwaltete Apps eine PIN anzufordern. Benutzer werden beim ersten Ausführen der App im beruflichen Kontext aufgefordert, diese einzurichten.
-
-  Standardwert = **Ja**
-    -  **Einfache PIN zulassen:** Geben Sie an, ob Benutzer einfache PIN-Sequenzen wie z B. 1234 oder 1111 verwenden dürfen. Standardwert = **Ja**
-    - **PIN-Länge:** Geben Sie die Mindestanzahl von Ziffern in einer PIN an. Standardwert = **4**
-    - **Anzahl der Versuche bis zum Zurücksetzen der PIN:** Geben Sie die Anzahl der möglichen PIN-Eingabeversuche an, bevor der Benutzer die PIN zurücksetzen muss. Für diese Einstellung gibt es keinen Standardwert.
-
-- **Fingerabdruck anstelle von PIN erforderlich (iOS 8.0+):** Wählen Sie **Ja** aus, um für den Zugriff auf die App einen Identitätsnachweis in Form eines Fingerabdrucks anstelle einer PIN anzufordern.
-Auf iOS-Geräten können Sie zulassen, dass sich die Benutzer per Fingerabdruck anstelle einer PIN identifizieren. Wenn der Benutzer versucht, mit seinem Geschäftskonto auf diese App zuzugreifen, wird er aufgefordert, seine Identität per Fingerabdruck und nicht durch Eingabe einer PIN zu bestätigen.
-
-  Standardwert = **Ja**
-- **Unternehmensanmeldeinformationen für den Zugriff erforderlich:** Wählen Sie **Ja** aus, um Unternehmensanmeldeinformationen anstelle einer PIN für den Zugriff auf die App anzufordern. Wenn Sie diese Einstellung auf **Ja** festlegen, sind PIN oder Fingerabdruckidentifizierung damit hinfällig. Der Benutzer wird aufgefordert, die Unternehmensanmeldeinformationen einzugeben.
-
-  Standardwert = **Nein**
-- **Ausführen verwalteter Apps auf Geräten mit Jailbreak oder Rootzugriff blockieren:** Wählen Sie **Ja** aus, wenn Sie die Ausführung von verwalteten Apps auf Geräten mit entfernten Nutzungsbeschränkungen blockieren möchten. Der Benutzer kann die Apps weiterhin für private Zwecke verwenden, muss für berufliche Zwecke jedoch ein anderes Gerät verwenden.
-
-  Standardwert = **Ja**
-- **Überprüfen der Zugriffsanforderungen nach (Minuten)**
-  -   **Timeout:** Geben Sie die Zeit (in Minuten) an, bevor die Zugriffsanforderungen der App erneut überprüft werden.
-  -   **Offline-Toleranzperiode**: Wenn das Gerät offline ist, geben Sie die Zeit (in Minuten) an, bevor die Zugriffsanforderungen für die App erneut geprüft werden.
-
-  Standardwerte = **30** Minuten Timeout, Offline-Toleranzperiode = **720** Minuten
-- **Offline-Intervall, bevor App-Daten zurückgesetzt werden (in Tagen):** Sie können die Unternehmensdaten zurücksetzen, wenn ein Gerät für einen bestimmten Zeitraum offline war. Legen Sie die Anzahl der Tage fest, die ein Gerät offline sein kann, bevor die Unternehmensdaten vom Gerät entfernt werden.
-
-  >[!TIP]
-  >Durch die Eingabe des Werts **0** wird diese Einstellung deaktiviert.
-
-  Standardwert = **90** Tage
+| Einstellung | Verwendung | Standardwert |
+|------|------|------|
+| **PIN für Zugriff anfordern** | Wählen Sie **Ja**, um zum Verwenden dieser App eine PIN anzufordern. Benutzer werden beim ersten Ausführen der App in einem Geschäfts-, Schul- oder Unikontext aufgefordert, diese PIN einzurichten. Standardwert = **Ja**<br><br> Konfigurieren Sie die folgenden Einstellungen für die PIN: <ul><li>**Anzahl der Versuche vor dem Zurücksetzen der PIN**: Geben Sie die Anzahl der Versuche an, die der Benutzer zum erfolgreichen Eingeben seiner PIN hat, ehe diese zurückgesetzt werden muss. Standardwert = **5**.</li><li> **Einfache PIN zulassen:** Wählen Sie **Ja**, um Benutzern das Verwenden einfacher PIN-Sequenzen wie z.B. 1234 oder 1111 zu erlauben. Wählen Sie **Nein**, um zu verhindern, dass einfache Sequenzen verwendet werden. Standardwert = **Ja** </li><li> **PIN-Länge:** Geben Sie die Mindestanzahl von Ziffern in einer PIN-Sequenz an. Standardwert = **4** </li><li> **Fingerabdruck anstelle von PIN zulassen (iOS 8.0 und höher):** Wählen Sie **Ja**, um Benutzern für den Zugriff auf die App das Verwenden einer [Touch ID](https://support.apple.com/en-us/HT201371) anstelle einer PIN zu erlauben. Standardwert = **Ja**<br><br> Auf iOS-Geräten können Sie Benutzern erlauben, ihre Identität mithilfe einer [Touch ID](https://support.apple.com/en-us/HT201371) statt einer PIN nachzuweisen. Wenn der Benutzer versucht, diese App mit seinem Geschäfts-, Schul- oder Unikonto zu nutzen, wird er aufgefordert, seine Identität per Fingerabdruck und nicht durch Eingabe einer PIN zu bestätigen. </li></ul>| PIN anfordern: Ja <br><br> Versuche zum Zurücksetzen der PIN: 5 <br><br> Einfache PIN zulassen: Ja <br><br> PIN-Länge: 4 <br><br> Fingerabdruckentsperrung zulassen: Ja |
+| **Unternehmensanmeldeinformationen für Zugriff erforderlich** | Wählen Sie **Ja**, um anzufordern, dass sich der Benutzer für den Zugriff auf die App mit seinem Geschäfts-, Schul- oder Unikonto anmeldet, anstatt eine PIN einzugeben. Wenn Sie diese Einstellung auf **Ja** festlegen, sind PIN oder Fingerabdruckidentifizierung damit hinfällig.  | Nein |
+| **Ausführen verwalteter Apps auf Geräten mit Jailbreak oder Rootzugriff blockieren** |  Wählen Sie **Ja** aus, um die Ausführung dieser App auf per Jailbreak oder Rootzugriff manipulierten Geräten zu verhindern. Der Benutzer kann diese App weiterhin für private Zwecke verwenden, muss jedoch für den Zugriff auf Geschäfts-, Schul- oder Unidaten ein anderes Gerät verwenden. | Ja |
+| **Überprüfen der Zugriffsanforderungen nach (Minuten)** | Konfigurieren Sie die folgenden Einstellungen: <ul><li>**Timeout:** Geben Sie die Zeit (in Minuten) an, bevor die Zugriffsanforderungen der App erneut überprüft werden. Standardwert = **30** Minuten.</li><li>**Offline-Toleranzperiode**: Wenn das Gerät offline ist, geben Sie die Zeit (in Minuten) an, bevor die Zugriffsanforderungen für die App erneut geprüft werden. Standardwert = **720** Minuten (12 Stunden).</li></ul>| Timeout: 30 <br><br> Offline: 720 |
+| **Offline-Intervall (in Tagen), bevor App-Daten zurückgesetzt werden** | Geschäfts-, Schul- oder Unidaten in dieser App können zurückgesetzt werden, wenn ein Gerät über einen bestimmten Zeitraum hinaus offline war. Legen Sie die Anzahl der Tage fest, die ein Gerät offline sein kann, ehe die Geschäfts-, Schul- oder Unidaten vom Gerät entfernt werden. <br><br> | 90 Tage |
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

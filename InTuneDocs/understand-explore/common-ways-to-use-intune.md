@@ -1,12 +1,12 @@
 ---
-title: "Gängige Arten der Verwendung von Intune | Microsoft Intune"
+title: "Gängige Arten der Verwendung von Intune | Microsoft-Dokumentation"
 description: "Hier werden sechs der gängigsten Aufgaben aufgeführt, bei denen Intune behilflich ist."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/09/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,15 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39e68e467c3295f4751bf3466957a8a377a8e7d6
-ms.openlocfilehash: 095be86be3658a294d3f0aab525f5e0dd29b4cfe
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 6a38eb2a071dc2134c9b255b22b5b21a2ef783d0
 
 
 ---
 
 # <a name="common-ways-to-use-intune"></a>Gängige Arten der Verwendung von Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Bevor die Implementierungsaufgaben behandelt werden, ist es wichtig, dass die Enterprise Mobility-Beteiligten Ihres Unternehmens dieselben Geschäftsziele verfolgen.  Dies ist unabhängig davon wichtig, ob Enterprise Mobility für Sie neu ist oder Sie von einem anderen Produkt migrieren.  
 
@@ -49,7 +51,7 @@ In diesen Fällen besteht die einzige Möglichkeit für den Zugriff auf Unterneh
 ## <a name="protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>Schützen von Office 365-E-Mails und -Daten für den sicheren Zugriff über mobile Geräte
 Das Schützen von Unternehmensdaten in Office 365 (E-Mails, Dokumente, Sofortnachrichten, Kontakte) könnte für Sie nicht einfacher oder für Ihre Benutzer nicht problemloser verlaufen.
 
-Intune und Microsoft Enterprise Mobility + Security bieten eine auf einzigartige Weise integrierte Lösung für den bedingten Zugriff, die sicherstellt, dass keine Benutzer, Apps oder Geräte auf Office 365-Daten zugreifen können, die nicht den Kompatibilitätsanforderungen Ihres Unternehmens entsprechen ([Multi-Factor Authentification](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication) wurde ausgeführt, Registrierung mit Intune ist erfolgt und Folgendes wird verwendet: verwaltete App, unterstützte Betriebssystemversion, Geräte-PIN, Profil mit geringem Benutzerrisiko usw.). Die mobilen Office-Apps in ihren entsprechenden App-Stores sind bereit, den Richtlinien zur Datenaufnahme zu entsprechen, die Sie über Intune konfigurieren können. Dadurch haben Sie die Möglichkeit, die Datenfreigabe für Apps (z. B. eine systemeigene E-Mail-App) und Speicherorte (z. B. Dropbox) zu verhindern, die nicht von der IT-Abteilung verwaltet werden.  Diese Funktionalität ist in Office 365 und EMS vollständig integriert.  Sie müssen keine zusätzlichen Infrastruktur bereitstellen, um dies zu erreichen.
+Intune und Microsoft Enterprise Mobility + Security bieten eine auf einzigartige Weise integrierte Lösung für den bedingten Zugriff, die sicherstellt, dass keine Benutzer, Apps oder Geräte auf Office 365-Daten zugreifen können, die nicht den Kompatibilitätsanforderungen Ihres Unternehmens entsprechen ([Multi-Factor Authentification](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication) wurde ausgeführt, Registrierung mit Intune ist erfolgt und Folgendes wird verwendet: verwaltete App, unterstützte Betriebssystemversion, Geräte-PIN, Profil mit geringem Benutzerrisiko usw.). Die mobilen Office-Apps in ihren entsprechenden App-Stores sind bereit, den Richtlinien zur Datenaufnahme zu entsprechen, die Sie über Intune konfigurieren können. Dadurch haben Sie die Möglichkeit, die Datenfreigabe für Apps (z. B. eine systemeigene E-Mail-App) und Speicherorte (z. B. Dropbox) zu verhindern, die nicht von der IT-Abteilung verwaltet werden.  Diese Funktionalität ist in Office 365 und EMS vollständig integriert.  Sie müssen keine zusätzlichen Infrastruktur bereitstellen, um dies zu erreichen.
 
 Die mobilen Office-Apps in ihren jeweiligen App-Stores sind bereit, Datenbeschränkungsrichtlinien einzuhalten, die Sie über Intune konfigurieren können. Mit diesen Funktionen können Sie verhindern, dass Daten für nicht von der IT verwaltete Apps (beispielsweise eine native E-Mail-App) und Speicherorte (beispielsweise Dropbox) freigegeben werden.  Diese Funktionalität ist in Office 365 und EMS vollständig integriert.  Sie müssen keine zusätzliche Infrastruktur bereitstellen, um dies zu erreichen.
 
@@ -99,6 +101,6 @@ Sollten Sie es den Mitarbeitern gestatten, dass sie über diese öffentlichen Co
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

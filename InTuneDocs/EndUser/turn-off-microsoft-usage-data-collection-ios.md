@@ -1,40 +1,38 @@
 ---
-title: "Deaktivieren der Erfassung von Nutzungsdaten für iOS durch Microsoft | Microsoft Intune"
+title: Deaktivieren der Sammlung von Daten durch Microsoft | Microsoft-Dokumentation
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 1b193a401c05ae649456e27222503ee5bd9e150f
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 29fb52fd86aa84a2c5bab6be14d71d198d6b8deb
 
 
 ---
 
-
 # <a name="turn-off-microsoft-usage-data-collection"></a>Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft
 
-Um Produkte und Dienstleistungen zu verbessern, erfasst Microsoft automatisch anonyme Daten über die Zuverlässigkeit und Leistung der Unternehmensportal-App sowie deren Verwendung.
+Microsoft sammelt automatisch bestimmte Daten zu Microsoft-Produkten und -Diensten. Dies dient dazu, die Zuverlässigkeit und Leistungsfähigkeit der Microsoft-Produkte, wie z.B. der Unternehmensportal-App, zu verbessern. Auch wenn diese Daten anonymisiert sind, sind einige Benutzer möglicherweise mit der Sammlung nicht einverstanden. Ihr IT-Administrator hat keine Kontrolle über die Sammlung der Daten und kann Ihre Auswahl für diese Einstellung nicht ändern.
 
-Wechseln Sie zum Deaktivieren der Erfassung von Nutzungsdaten auf Ihrem iOS-Gerät zu **Einstellungen**, tippen Sie auf **Unternehmensportal**, und deaktivieren Sie dann die Einstellung **Nutzungsdaten**.
-
-IT-Administratoren haben keine Kontrolle über die Erfassung der Daten und können Ihre Auswahl für diese Einstellung nicht ändern.
+Wenn Sie die Sammlung von Nutzungsdaten auf Ihrem iOS-Gerät deaktivieren möchten, öffnen Sie **Einstellungen**, tippen Sie auf **Unternehmensportal**, und deaktivieren Sie **Nutzungsdaten**.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

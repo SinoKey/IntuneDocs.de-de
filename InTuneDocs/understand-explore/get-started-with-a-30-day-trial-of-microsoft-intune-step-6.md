@@ -1,5 +1,5 @@
 ---
-title: "Andere Optionen und Extras für Intune-Evaluierungsversionen | Microsoft Intune"
+title: "Andere Optionen und Extras für Intune-Evaluierungsversionen | Microsoft-Dokumentation"
 description: "Hier werden Warnungen, Benachrichtigungen und Berichte sowie allgemeine Intune-Funktionen beschrieben, die Sie kennen müssen, wenn Sie sich für eine kostenlose 30-tägige Evaluierungsversion von Intune registrieren."
 keywords: 
 author: lindavr
@@ -13,13 +13,15 @@ ms.technology:
 ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 21b0cba6cf1d0cd7048cd0abee3a21dd9d74eadd
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
 
 
 ---
 
 # <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Andere Optionen und Extras für Intune-Evaluierungsabonnements
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="alerts-notifications-and-reports"></a>Warnungen, Benachrichtigungen und Berichte
 Über **Warnungen** in der Intune-Verwaltungskonsole können Sie sich schnell einen Überblick über die Gesamtintegrität der verwalteten Geräte innerhalb Ihres Unternehmens verschaffen. Sie können Warnungen konfigurieren und anpassen, sodass von ihnen nur die Informationen gemeldet und angezeigt werden, die für Ihre Organisation relevant sind. Sie können folgende Aktionen ausführen: festlegen, ob eine Warnung aktiviert oder deaktiviert wird; den Schweregrad konfigurieren; mithilfe des Anzeigeschwellenwerts bestimmen, wie oft ein Warnereignis ausgelöst werden muss, damit eine Warnung angezeigt wird; Einstellungen konfigurieren, die für bestimmte Warnungstypen spezifisch sind.
@@ -56,6 +58,6 @@ Konvertieren eines Testabonnements in ein [kostenpflichtiges Abonnement](get-sta
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

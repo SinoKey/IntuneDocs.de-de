@@ -1,5 +1,5 @@
 ---
-title: "Verwenden Ihres Windows-Geräts mit Intune | Microsoft Intune"
+title: "Verwenden Ihres Windows-Geräts mit Intune | Microsoft-Dokumentation"
 description: "Liste mit Links zu Aufgaben, die Benutzer auf ihrem Windows-Gerät ausführen können, wenn das Gerät bei Intune registriert ist."
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
+searchScope:
+- Company Portal
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 05eb711e65e6db13e480a966849e7f39d3ec8c71
+ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
+ms.openlocfilehash: a3433e1976063513ee836189738ff02d85d40044
 
 
 ---
@@ -52,15 +54,15 @@ Die Informationen in diesem Abschnitt helfen Benutzern bei Aktionen, die sie nac
 
 Die Informationen in diesem Abschnitt helfen Benutzern beim Beheben von Problemen, die mit bei Intune registrierten Windows-Geräten auftreten können.
 
-- [Das Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
-- [Gerät entspricht nicht der maximalen Betriebssystemversion](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
-- [Auf dem Gerät ist BitLocker nicht aktiviert](device-doesnt-have-bitlocker-enabled-windows.md)
-- [Auf dem Gerät ist keine Antischadsoftware aktiviert](device-doesnt-have-antimalware-software-enabled-windows.md)
-- [Auf dem Gerät ist der sichere Start nicht aktiviert](device-doesnt-have-secure-boot-enabled-windows.md)
-- [Auf dem Gerät ist die Codeintegrität nicht aktiviert](device-doesnt-have-code-integrity-enabled-windows.md)
+- [Das Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems](you-need-to-update-your-windows-device.md)
+- [Gerät entspricht nicht der maximalen Betriebssystemversion](your-windows-version-isnt-yet-supported.md)
+- [Auf dem Gerät ist BitLocker nicht aktiviert](you-need-to-enable-windows-encryption.md)
+- [Auf dem Gerät ist keine Antischadsoftware aktiviert](your-device-needs-antimalware-software.md)
+- [Auf dem Gerät ist der sichere Start nicht aktiviert](you-need-to-enable-secure-boot-windows.md)
+- [Auf dem Gerät ist die Codeintegrität nicht aktiviert](you-need-to-enable-code-integrity.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

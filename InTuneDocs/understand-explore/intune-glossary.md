@@ -1,24 +1,26 @@
 ---
-title: Intune-Glossar | Microsoft Intune
+title: Intune-Glossar | Microsoft-Dokumentation
 description: "Erläuterungen zu einigen der in Microsoft Intune verwendeten Begriffe"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/17/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 translationtype: Human Translation
-ms.sourcegitcommit: 0c6c9d44e6a328b4bfb3827f54ac35b83e3c7aac
-ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 
 
 ---
 
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune-Glossar
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="a"></a>A
 
@@ -32,7 +34,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 ## <a name="b"></a>B
 |||
 |-|-|
-|BYOD|[Bring Your Own Device](/intune/get-started/choose-how-to-enroll-devices1). Benutzer können die Intune-Unternehmensportal-App auf ihrem Gerät installieren und dieses dann registrieren, um Zugriff auf Unternehmensressourcen wie E-Mail, Unternehmens-Apps, Unternehmensdaten und Support zu erhalten.| 
+|BYOD|[Bring Your Own Device](/intune/get-started/choose-how-to-enroll-devices1). Benutzer können die Intune-Unternehmensportal-App auf ihrem Gerät installieren und dieses dann registrieren, um Zugriff auf Unternehmensressourcen wie E-Mail, Unternehmens-Apps, Unternehmensdaten und Support zu erhalten.|
 
 ## <a name="c"></a>C
 |||
@@ -95,7 +97,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 |-|-|
 |Managed Browser|Eine [Webbrowseranwendung](/intune/deploy-use/manage-internet-access-using-managed-browser-policies), die Sie mit Microsoft Intune in Ihrer Organisation bereitstellen können. Mit einer Richtlinie für Managed Browser wird eine Zulassungs- oder Blockierungsliste konfiguriert, um die Websites einzuschränken, die Benutzer von Managed Browser besuchen können.|
 |Mobile Anwendungsverwaltung|Mit der [mobilen Anwendungsverwaltung (Mobile Application Management, MAM)](/intune/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) können Sie mobile Apps für Ihre Benutzer veröffentlichen, per Push bereitstellen, konfigurieren, schützen, überwachen und aktualisieren.
-|Verwaltung mobiler Geräte|Mit der [Verwaltung mobiler Geräte (Mobile Device Management, MDM)](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) können Sie Geräte in Intune registrieren, sodass Sie diese Gräte bereitstellen, konfigurieren, überwachen und Aktionen darauf ausführen können. 
+|Verwaltung mobiler Geräte|Mit der [Verwaltung mobiler Geräte (Mobile Device Management, MDM)](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) können Sie Geräte in Intune registrieren, sodass Sie diese Gräte bereitstellen, konfigurieren, überwachen und Aktionen darauf ausführen können.
 |MDM-Autorität|Die [MDM-Autorität](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) definiert den Verwaltungsdienst, der über die Berechtigung zum Verwalten einer Gruppe von Geräten verfügt. Die Optionen für die MDM-Autorität umfassen Intune selbst und Configuration Manager mit Intune.|
 |Richtlinie zur Bereitstellung mobiler Apps|Eine iOS-Richtlinie, mit der Sie sicherstellen können, dass die [Bereitstellungsprofile](/intune/deploy-use/ios-mobile-app-provisioning-profiles) für die von Ihnen bereitgestellten iOS-Apps nicht ablaufen.|
 |Richtlinie zur Konfiguration mobiler Apps|Eine iOS-Richtlinie, die zum [Angeben von Einstellungen für kompatible iOS-Apps](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) bei deren Ausführung verwendet wird, beispielsweise zur Angabe eines Firmennamens oder einer Serveradresse.|
@@ -146,9 +148,6 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 
 
 
-
-
-
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Manuelles Synchronisieren Ihres Geräts mithilfe der Unternehmensportalwebsite | Microsoft Intune"
+title: "Manuelles Synchronisieren Ihres Geräts mithilfe der Unternehmensportal-Website | Microsoft-Dokumentation"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,18 +11,20 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132b
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 68e4df02fa298af68f6c01a4dbb658cca5bb231b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: fbbe9233ae2e07209356a0cec14d085f742e6436
 
 
 ---
 
 
-# <a name="use-the-company-portal-website-to-sync-your-device"></a>Synchronisieren Ihres Geräts über die Unternehmensportalwebsite
+# <a name="use-the-company-portal-website-to-sync-your-device"></a>Synchronisieren Ihres Geräts über die Unternehmensportal-Website
 
 Manchmal kann das Installieren einer App oder das Ausführen einer anderen Aufgabe länger dauern als normal. Wenn eine Aufgabe zu lange dauert, können Sie versuchen, sie zu beschleunigen, indem Sie Ihr Gerät manuell synchronisieren.
 

@@ -1,11 +1,11 @@
 ---
-title: "Erstellen von Richtlinien und Veröffentlichen einer App für Benutzer | Microsoft Intune"
+title: "Erstellen von Richtlinien und Veröffentlichen einer App für Benutzer | Microsoft-Dokumentation"
 description: "So erstellen Sie Richtlinien und veröffentlichen eine App, wenn Sie sich für eine kostenlose 30-tägige Evaluierungsversion von Intune registrieren."
 keywords: 
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 12/12/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,17 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 64f857307046ea061e702d0b383968b322b89c33
+ms.sourcegitcommit: 53b05e0ad1be63315dcb5e5b9938a7d9459cb6c3
+ms.openlocfilehash: edcef68c4dd6715c0e3b7c8a164d6266d1c154ae
 
 
 ---
 
 
 # <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>Erstellen von Richtlinien und Veröffentlichen einer App für Benutzer der Evaluierungsversion
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Mit Intune-Richtlinien stehen Einstellungen bereit, mit deren Hilfe Sie die Sicherheitseinstellungen auf mobilen Geräten steuern, die Windows-Firewall- und Endpoint Protection-Einstellungen für Computer warten und Anwendungen bereitstellen können. Falls Sie planen, Intune nach Ablauf der Evaluierungsversion auf Geräten zu verwenden, die für die Produktion konfiguriert werden, müssen Sie unbedingt die Anweisungen unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) und [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) beachten.
 
 Sie können zwei Arten von App-Installationen mithilfe von Intune ausführen: Die erste ist eine **erforderliche Installation**, bei der die App automatisch auf verwalteten Geräten bereitgestellt wird. Die andere ist eine **verfügbare Installation**, bei der die App oder ein Link auf die App über das Intune-Unternehmensportal bereitgestellt wird, damit Benutzer auswählen können, ob die App auf ihren Computern oder mobilen Geräten installiert werden soll.
@@ -102,6 +105,6 @@ Konvertieren eines Testabonnements in ein [kostenpflichtiges Abonnement](get-sta
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

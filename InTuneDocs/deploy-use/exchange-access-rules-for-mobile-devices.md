@@ -1,5 +1,5 @@
 ---
-title: "Exchange-Zugriffsregeln für mobile Geräte | Microsoft Intune"
+title: "Exchange-Zugriffsregeln für mobile Geräte | Microsoft-Dokumentation"
 description: "Exchange ActiveSync-Zugriffsregeln, die Geräteverbindungen mit EAS zulassen oder blockieren"
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e11263115088005123562b2afae1804528d0d5d5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
 
 
 ---
 
 # <a name="exchange-access-rules-for-mobile-devices"></a>Exchange-Zugriffsregeln für mobile Geräte
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Die Exchange-Zugriffsregeln für mobile Geräte bestimmen die Ebene des Zugriffs, den diese Geräte auf Exchange ActiveSync erhalten. Diese Einstellungen betreffen alle mobilen Geräte, einschließlich der Geräte, die nicht in Microsoft Intune registriert sind. Sie können zunächst eine **Standardregel** definieren, die für alle mobilen Geräte gilt, auf welche keine benutzerdefinierten Regeln angewendet werden.
 
 Die folgende Tabelle enthält die Zugriffsebenen, die von Exchange ActiveSync verwaltet werden:
@@ -56,6 +59,6 @@ Im folgenden Verfahren wird das Erstellen einer benutzerdefinierten Regel beschr
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

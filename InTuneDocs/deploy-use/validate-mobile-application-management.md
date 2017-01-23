@@ -21,6 +21,8 @@ ms.openlocfilehash: 080d8f4fd4b6e1b53df860f4319b1c199d504c06
 
 # <a name="validating-your-mobile-application-management-setup"></a>Überprüfen des Setups für die Verwaltung Ihrer mobilen Anwendungen
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Dieses Thema enthält Informationen zum Suchen nach Problemen nach der Einrichtung der mobilen Anwendungsverwaltung (MAM). Diese Anleitung gilt für MAM-Richtlinien im Azure-Portal.
 
 ### <a name="checking-for-symptoms"></a>Suchen nach Symptomen

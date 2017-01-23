@@ -1,22 +1,24 @@
 ---
-title: Sie erhalten bei Verwendung der Unternehmensportal-App eine Fehlermeldung | Microsoft Intune
+title: Sie erhalten bei Verwendung der Unternehmensportal-App eine Fehlermeldung | Microsoft-Dokumentation
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 09cd4ed6-1ce4-4530-9753-59808f01c6d7
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: fde8d231c9638f5923826942cadf1f9bad731f55
+ms.sourcegitcommit: 1bf478eae73bb7385369e4d5cde26b937831e665
+ms.openlocfilehash: e4c91d96c11847dac28142993d9825c42d9f2b31
 
 
 ---
@@ -30,12 +32,12 @@ Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App au
 
 -   Tippen Sie im Bildschirm **Info** der Unternehmensportal-App auf **Diagnosebericht senden**.
 
--   Schütteln Sie Ihr Gerät, während Sie die Unternehmensportal-App geöffnet haben, und tippen Sie auf **E-Mail**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** &gt; **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schütteln** aktiviert ist.
+-   Schütteln Sie Ihr Gerät, während Sie die Unternehmensportal-App geöffnet haben, und tippen Sie auf **E-Mail**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** > **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schüttelgeste** aktiviert ist.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

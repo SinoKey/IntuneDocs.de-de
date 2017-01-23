@@ -1,5 +1,5 @@
 ---
-title: "Exchange Connector für lokales EAS | Microsoft Intune"
+title: "Exchange Connector für lokales EAS | Microsoft-Dokumentation"
 description: "Verwenden Sie den Connector, um die Kommunikation zwischen der Intune-Verwaltungskonsole und der lokalen Exchange Server-Instanz für Exchange ActiveSync-MDM zu ermöglichen."
 keywords: 
 author: andredm7
@@ -14,13 +14,15 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d50a5751a5afd987196336e9443dc5a429a283fd
-ms.openlocfilehash: 58c5ab6b506695fb5b0f7556dc1deac39580f59b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1b74d19762a81313325eac27cab50a144a569620
 
 
 ---
 
 # <a name="install-the-intune-on-premises-exchange-connector"></a>Installieren des lokalen Exchange Connectors für Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 
 Zum Einrichten einer Verbindung, über die Microsoft Intune mit dem Exchange-Server kommunizieren kann, auf dem die Postfächer für die mobilen Geräte gehostet werden, müssen Sie den lokalen Exchange Connector von der Intune-Administratorkonsole herunterladen und konfigurieren. Intune unterstützt pro Abonnement nur eine Exchange Connector-Verbindung eines beliebigen Typs.
@@ -91,7 +93,7 @@ Führen Sie die folgenden Schritte aus, um den lokalen Exchange Connector für I
 
     1. Öffnen Sie die Outlook Web-App für Office 365.
 
-    2. Wählen Sie das **?**-Symbol  oben links und anschließend **Info** aus.
+    2. Wählen Sie das **?** links oben und anschließend **Info** aus.
 
     3. Suchen Sie den Wert **Externer POP-Server**.
 

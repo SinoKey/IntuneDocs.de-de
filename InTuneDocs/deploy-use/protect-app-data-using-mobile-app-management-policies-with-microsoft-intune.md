@@ -1,9 +1,9 @@
 ---
-title: "Schützen von App-Daten mithilfe von MAM-Richtlinien | Microsoft Intune"
+title: "Schützen von App-Daten mithilfe von MAM-Richtlinien | Microsoft-Dokumentation"
 description: "In diesem Thema wird erläutert, wie Verwaltungsrichtlinien für mobile Anwendungen helfen können, Ihre Unternehmensdaten zu schützen, Datenverlust zu verhindern sowie persönliche und geschäftliche Daten voneinander zu trennen."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,15 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 66a5814ba34f9fd15460512b0a6d40566ec33401
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: c2293306e847148ff7413be3e9eeafb8349e33fe
 
 
 ---
 
 # <a name="protect-app-data-using-mobile-application-management-policies-with-microsoft-intune"></a>Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Anwendungen mit Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>Wie Sie Ihre App-Daten schützen können
 Ihre Mitarbeiter verwenden mobile Geräte für private und berufliche Aufgaben. Sie möchten einerseits die Produktivität Ihrer Mitarbeiter sicherstellen, möchten andererseits aber auch Datenverlust verhindern, sei er beabsichtigt oder unbeabsichtigt.  Darüber hinaus möchten Sie Unternehmensdaten schützen können, auf die Mitarbeiter mit Geräten zugreifen, die nicht durch Sie verwaltet werden.
@@ -130,6 +132,6 @@ Alle mobilen Office-Apps unterstützen den Zugriff über mehrere Identitäten.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

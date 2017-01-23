@@ -1,12 +1,12 @@
 ---
-title: "Vereinfachen der E-Mail-Konfiguration auf mobilen Geräten | Microsoft Intune"
+title: "Vereinfachen der E-Mail-Konfiguration auf mobilen Geräten | Microsoft-Dokumentation"
 description: 
 keywords: 
 author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
 ms.date: 12/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: a2ddf2b972f90aea6ac0e47372bd4f0b4de5cf19
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: bf25dd15aa9074692017d94bb94285b4c8e77ca8
 
 
 ---
 
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>Erste Schritte: Vereinfachen der E-Mail-Konfiguration auf mobilen Geräten
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune spart Ihrem Unternehmen Zeit und Ressourcen, indem es Ihnen ermöglicht wird, E-Mail-Profile (sowie VPN- und WLAN-Profile) für Windows-, iOS- und Android-Mobilgeräte bereitzustellen, die vom Intune-Dienst verwaltet werden. Die automatische Konfiguration von E-Mail-Profilen kann die Endbenutzererfahrung erheblich verbessern und die Kundenzufriedenheit erhöhen sowie gleichzeitig die Kosten für den Helpdesk reduzieren.
 
 ## <a name="is-this-quick-start-guide-right-for-me"></a>Ist dieses Schnellstarthandbuch für mich geeignet?
@@ -28,7 +31,7 @@ Möchten Sie die Zeit und den Aufwand verringern, die Ihre Benutzer zum Konfigur
 
 Wenn dies der Fall ist, kann Microsoft Intune für die von Intune verwalteten Geräte Ihrer Mitarbeiter automatisch die E-Mail-Funktion konfigurieren, indem E-Mail-Profile auf ihren Geräten bereitgestellt werden, damit sie den Zugriff auf geschäftliche E-Mails nicht manuell konfigurieren müssen. Diese Funktion bietet eine bessere Endbenutzererfahrung und verringert insgesamt die Kosten für den Helpdesk, indem die Anzahl der Aktivitäten für E-Mail-Konfigurationsprobleme auf den Windows-, iOS- und Android-Geräten der Benutzer reduziert werden.
 
-Nachdem das E-Mail-Profil konfiguriert wurde, können Sie den Zugriff auf geschäftliche E-Mails und Office 365-Dienste mithilfe der Intune-Richtlinien für den bedingten Zugriff problemlos einschränken. Mithilfe dieser Richtlinien können Sie sicherstellen, dass der Zugriff auf die geschäftlichen E-Mails und Office 365-Dienste auf Geräte beschränkt ist, die den von Ihnen in Intune festgelegten Regeln entsprechen.
+Nachdem das E-Mail-Profil konfiguriert wurde, können Sie den Zugriff auf geschäftliche E-Mails und Office 365-Dienste mithilfe der Intune-Richtlinien für den bedingten Zugriff problemlos einschränken. Mithilfe dieser Richtlinien können Sie sicherstellen, dass der Zugriff auf die geschäftlichen E-Mails und Office 365-Dienste auf Geräte beschränkt ist, die den von Ihnen in Intune festgelegten Regeln entsprechen.
 
 ## <a name="how-do-i-do-it"></a>Wie gehe ich dabei vor?
 1.  [Konfigurieren Sie die E-Mail-Profile der Endbenutzer automatisch](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) auf Windows-, iOS- und Android-Geräten.
@@ -47,6 +50,6 @@ Nachdem das E-Mail-Profil konfiguriert wurde, können Sie den Zugriff auf gesch�
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

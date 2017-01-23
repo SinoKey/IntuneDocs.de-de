@@ -1,11 +1,11 @@
 ---
-title: App-Bereitstellungsprofile | Microsoft Intune
+title: App-Bereitstellungsprofile | Microsoft-Dokumentation
 description: "Intune stellt Ihnen die Tools zum proaktiven Bereitstellen einer neuen Richtlinie für Bereitstellungsprofile auf Geräten zur Verfügung, auf denen Apps installiert sind, die bald ablaufen."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.assetid: 86fbe736-7bdb-4f5e-ae21-13c91eb2462c
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 409433dbe5ca777b33b21a2655e15cde8003b4a2
-ms.openlocfilehash: d67b26b23e65d4a144c1efda1494de1df94cc33c
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: db76786da0428b0e064f2091089653244d90ee2a
 
 
 ---
 
 # <a name="use-ios-mobile-provisioning-profile-policies-to-prevent-your-apps-from-expiring"></a>Verwenden von Richtlinien für mobile iOS-Bereitstellungsprofile, um zu verhindern, dass Apps ablaufen
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Die auf iPhones und iPads bereitgestellten branchenspezifischen Apple iOS-Apps wurden mit integriertem Bereitstellungsprofil und per Zertifikat signiertem Code erstellt. Beim Ausführen der App bestätigt iOS die Integrität der iOS-App und erzwingt Richtlinien, die durch das Bereitstellungsprofil definiert werden. Folgende Überprüfungen finden statt:
 
@@ -53,6 +54,6 @@ Nach Ablauf des Zertifikats müssen Sie die App mit einem neuen Zertifikat erneu
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

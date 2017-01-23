@@ -1,5 +1,5 @@
 ---
-title: "Registrieren Ihres Windows 10-Geräts bei Intune | Microsoft Intune"
+title: "Registrieren Ihres Windows 10-Geräts bei Intune | Microsoft-Dokumentation"
 description: "Registrieren Sie ein Windows 10 1511-Gerät bei Intune."
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
+searchScope:
+- Company Portal
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5fa0e9db799c7b3a9619d63ebc1ba5ffe010b1fd
-ms.openlocfilehash: 83c69c69f006128a755053f22c7b6848441c522c
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 32bde9552e79d91dd967050b96cec62146367f9b
 
 
 ---
@@ -54,6 +56,6 @@ Wenn das Unternehmensportal nicht in der Liste der Apps angezeigt wird, gehen Si
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

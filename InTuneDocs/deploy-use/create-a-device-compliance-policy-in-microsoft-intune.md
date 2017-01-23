@@ -1,5 +1,5 @@
 ---
-title: "Erstellen einer Kompatibilitätsrichtlinie für Geräte | Microsoft Intune"
+title: "Erstellen einer Kompatibilitätsrichtlinie für Geräte | Microsoft-Dokumentation"
 description: "Erstellen Sie eine Kompatibilitätsrichtlinie, um das Sichern mobiler Geräte und PCs zu unterstützen, die zum Zugriff auf Ihre Unternehmensdaten verwendet werden."
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b21fcbf10659e072d8eb73703dfdd6695ac9a9b0
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 21875001129da8f5ca01869fa69960f18ae28c56
 
 
 ---
 
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Erstellen einer Kompatibilitätsrichtlinie für Geräte in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Dieses Thema beschreibt die Schritte, die zum Erstellen einer Kompatibilitätsrichtlinie für ein Gerät verwendet werden können, und der ein Gerät entsprechen muss, um als kompatibel angesehen zu werden.
 
 ##  <a name="step-1-add-a-new-policy"></a>Schritt 1: Hinzufügen einer neuen Richtlinie
@@ -28,7 +31,7 @@ Dieses Thema beschreibt die Schritte, die zum Erstellen einer Kompatibilitätsri
 
   ![Screenshot der Kompatibilitätsrichtlinienseite in der Intune-Verwaltungskonsole mit der Option „Hinzufügen“ im Menü oben auf der Seite](./media/intune-sa-3a-add-compliance-policy.png)
 
-##  <a name="step-2-configure-settings"></a>Schritt 2: Konfigurieren von Einstellungen
+##  <a name="step-2--configure-settings"></a>Schritt 2: Konfigurieren von Einstellungen
 Aktivieren Sie auf der Seite **Richtlinie erstellen** die folgenden Einstellungen nach Bedarf:
   -   Die Einstellungen für die Systemsicherheit, wie Kennwort und Verschlüsselung
   -   Einstellungen für die Geräteintegrität, etwa ob ein Gerät per Jailbreak manipuliert wurde oder vom Windows-Dienst für den Nachweis der Geräteintegrität als intakt gemeldet wird
