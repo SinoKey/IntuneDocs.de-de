@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/10/17
+ms.date: 01/24/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: f6cbca6207b0e253077682bbf213a916b20c5247
+ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
+ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
 
 
 ---
@@ -294,32 +294,20 @@ Sobald die Geräte registriert sind, ist ihr Integritätsstatus gut, und sie erh
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Ein registriertes iOS-Gerät wird nicht in der Konsole angezeigt, wenn der System Center Configuration Manager mit Intune verwendet wird.
 **Problem:** Der Benutzer registriert das iOS-Gerät, aber es wird nicht in der Configuration Manager-Verwaltungskonsole angezeigt. Das Gerät zeigt nicht an, dass es registriert wurde. Mögliche Ursachen:
 
-- Vielleicht haben Sie Ihren Intune-Connector erst in einem Konto und dann in einem anderen Konto registriert.
+- Der Microsoft Intune-Connector an Ihrem Configuration Manager-Standort kommuniziert nicht mit dem Intune-Dienst.
+- Entweder die ddm-Komponente (Data Discovery Manager) oder die statmgr-Komponente (Status-Manager) verarbeitet keine Nachrichten vom Intune-Dienst.
 - Vielleicht haben Sie das MDM-Zertifikat von einem Konto heruntergeladen und auf einem anderen Konto verwendet.
 
 
-**Lösung:** Führen Sie die folgenden Schritte aus:
+**Lösung:** Prüfen Sie die folgenden Protokolldateien auf mögliche Fehler:
 
-1. Deaktivieren Sie iOS im Windows Intune-Connector.
-    1. Klicken Sie mit der rechten Maustaste auf das Intune-Abonnement, und wählen Sie **Eigenschaften** aus.
-    1. Deaktivieren Sie auf der Registerkarte „iOS“ die Option „iOS-Registrierung aktivieren“.
+- dmpdownloader.log
+- ddm.log
+- statmgr.log
 
-
-
-1. Führen Sie in SQL die folgenden Schritte in der CAS-Datenbank aus:
-
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
-    1. delete from MDMPolicy where PolicyType = 7
-    1. delete from MDMPolicyAssignment where PolicyType = 7
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
-    1. delete from MDMPolicy where PolicyType = 11
-    1. delete from MDMPolicyAssignment where PolicyType = 11
-    1. DELETE Drs_Signals
-1. Starten Sie den SMS-Executive-Dienst oder den CM-Server neu.
+Demnächst werden Beispiele hinzugefügt, die zeigen, wonach in diesen Protokolldateien zu suchen ist.
 
 
-
-1. Rufen Sie ein neues APN-Zertifikat ab und laden Sie es hoch: Klicken Sie mit der rechten Maustaste im linken Bereich des Configuration Manager auf das Intune-Abonnement. Wählen Sie **APNs-Zertifikatanforderung erstellen **, und folgen Sie den Anweisungen.
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Probleme bei der Verwendung von System Center Configuration Manager mit Intune
 ### <a name="mobile-devices-disappear"></a>Mobile Geräte verschwinden
 **Problem:** Nach der erfolgreichen Registrierung eines mobilen Geräts bei Configuration Manager verschwindet es aus der Auflistung der Mobilgeräte, aber das Gerät besitzt weiterhin das Verwaltungsprofil und wird im CSS-Gateway aufgeführt.
@@ -389,7 +377,7 @@ Möglicherweise wurde der Computer bereits vorher registriert oder hat das geklo
 |0x80043008, 0x80CF3008|Microsoft-Onlinedienst zur Updateverwaltung konnte nicht gestartet werden.|Wenden Sie sich dazu an den Microsoft Support, wie unter [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben.|
 |0x80043009, 0x80CF3009|Der Clientcomputer ist bereits für den Dienst registriert.|Sie müssen den Clientcomputer abkoppeln, bevor sie ihn erneut für den Dienst registrieren können.|
 |0x8004300B, 0x80CF300B|Das Installationspaket für die Clientsoftware kann nicht ausgeführt werden, da die Windows-Version auf dem Client nicht unterstützt wird.|Die auf dem Client ausgeführte Windows-Version wird von Intune nicht unterstützt.|
-|0xAB2|Fehler beim Zugriff auf die VBScript-Laufzeit für die benutzerdefinierte Aktion.|Dieser Fehler wird von einer benutzerdefinierten Aktion verursacht, die auf DLLs (Dynamic-Link Libraries) aufbaut. Um den DLL-Fehler zu ermitteln, benötigen Sie möglicherweise die Tools, die im Artikel 198038 der [Microsoft Support-KB: Hilfreiche Tools bei Problemen mit der Paketerstellung und Weitergabe](https://support.microsoft.com/en-us/kb/198038) erläutert werden.|
+|0xAB2|Fehler beim Zugriff auf die VBScript-Laufzeit für die benutzerdefinierte Aktion.|Dieser Fehler wird von einer benutzerdefinierten Aktion verursacht, die auf DLLs (Dynamic-Link Libraries) aufbaut. Um den DLL-Fehler zu ermitteln, benötigen Sie möglicherweise die Tools, die im Artikel&19803;8 der [Microsoft Support-KB: Hilfreiche Tools bei Problemen mit der Paketerstellung und Weitergabe](https://support.microsoft.com/en-us/kb/198038) erläutert werden.|
 |0x80cf0440|Die Verbindung zum Dienstendpunkt wurde abgebrochen.|Test- oder kostenpflichtige Konto wird angehalten. Erstellen Sie ein neues Test- oder kostenpflichtiges Konto und registrieren Sie sich erneut.|
 
 
@@ -400,6 +388,6 @@ Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, w
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

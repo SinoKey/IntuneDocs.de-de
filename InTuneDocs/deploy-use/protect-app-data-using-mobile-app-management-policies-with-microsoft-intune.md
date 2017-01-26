@@ -14,8 +14,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
-ms.openlocfilehash: c2293306e847148ff7413be3e9eeafb8349e33fe
+ms.sourcegitcommit: af067236e27a65c52c78107fefdb956ad0fd5aa5
+ms.openlocfilehash: b4672b19517f1871a276000c6e8f5d01c0280e35
 
 
 ---
@@ -60,7 +60,9 @@ MAM-Richtlinien werden zurzeit für Folgendes unterstützt:
 -   iOS 8.1 oder höher
 -   Android 4 oder höher
 
-Windows-Geräte werden momentan nicht unterstützt.
+>[!NOTE]
+>Windows-Geräte werden in der MAM nicht ohne Registrierungsszenario unterstützt. Wenn Sie jedoch Windows 10-Geräte mit Intune registrieren, können Sie Windows Information Protection verwenden, das ähnliche Funktionen bietet. Weitere Informationen finden Sie unter [Schutz von Unternehmensdaten mit Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+>
 ##  <a name="how-mam-policies-protect-app-data"></a>Wie App-Daten mit MAM-Richtlinien geschützt werden
 
 ###  <a name="apps-without-mam-policies"></a>Apps ohne MAM-Richtlinien
@@ -132,6 +134,6 @@ Alle mobilen Office-Apps unterstützen den Zugriff über mehrere Identitäten.
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 
