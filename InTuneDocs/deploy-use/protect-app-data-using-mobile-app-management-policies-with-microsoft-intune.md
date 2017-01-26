@@ -62,7 +62,8 @@ MAM-Richtlinien werden zurzeit für Folgendes unterstützt:
 
 >[!NOTE]
 >Windows-Geräte werden in der MAM nicht ohne Registrierungsszenario unterstützt. Wenn Sie jedoch Windows 10-Geräte mit Intune registrieren, können Sie Windows Information Protection verwenden, das ähnliche Funktionen bietet. Weitere Informationen finden Sie unter [Schutz von Unternehmensdaten mit Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
->
+
+
 ##  <a name="how-mam-policies-protect-app-data"></a>Wie App-Daten mit MAM-Richtlinien geschützt werden
 
 ###  <a name="apps-without-mam-policies"></a>Apps ohne MAM-Richtlinien
