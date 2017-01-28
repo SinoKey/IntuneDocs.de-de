@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: arob98
-ms.date: 07/19/2016
+ms.date: 12/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: f8f5c1e5d69cf91413ebc4a71f1f9f8f8e1c8231
+ms.sourcegitcommit: 8063b933a767740a7951fa69a918a8677b664d02
+ms.openlocfilehash: e8a21ace32b5668f8158b9a383b882b7c2f524df
 
 
 ---
 
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Registrieren unternehmenseigener iOS-Geräte mithilfe des Programm zur Geräteregistrierung (Device Enrollment Program, DEP)
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune kann ein Registrierungsprofil bereitstellen, das über das Programm zur Geräteregistrierung (Device Enrollment Program, DEP) erworbene iOS-Geräte drahtlos registriert. Das Registrierungspaket kann Setup-Assistent-Optionen für das Gerät enthalten. Die Registrierung von Geräten über DEP kann von Benutzern nicht rückgängig gemacht werden.
 
 ## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>Apple-DEP-Verwaltung für iOS-Geräte mit Microsoft Intune
@@ -109,13 +112,13 @@ Bevor Sie unternehmenseigene iOS-Geräte mit DEP registrieren können, benötige
 
 ## <a name="changes-to-intune-group-assignments"></a>Änderungen an den Intune-Gruppenzuweisungen
 
-Ab November werden Gerätegruppen in Azure Active Directory verwaltet. Nach diesem Übergang zu Azure Active Directory-Gruppen wird die Gruppenzuweisung nicht länger in den Optionen des **Unternehmensregistrierungsprofils** angezeigt. Da diese Änderung über mehrere Monate hinweg umgesetzt wird, wird Ihnen die Änderung möglicherweise nicht sofort angezeigt. Nach dem Wechsel zum neuen Portal können die Zuweisungen dynamischer Gerätegruppen basierend auf dem Namen des Unternehmensregistrierungsprofils definiert werden. Mit diesem Vorgang wird sichergestellt, dass Geräte, die bereits einer Gerätegruppe zugewiesen wurden, automatisch mit bereitgestellter Richtlinie und bereitgestellten Apps in der Gruppe registriert werden. [Weitere Informationen zu Azure Active Directory-Gruppen](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+Ab Dezember 2016 werden Gerätegruppen in Azure Active Directory verschoben. Nach diesem Übergang zu Azure Active Directory-Gruppen wird die Gruppenzuweisung nicht länger in den Optionen des **Unternehmensregistrierungsprofils** angezeigt. Da diese Änderung über mehrere Monate hinweg umgesetzt wird, wird Ihnen die Änderung möglicherweise nicht sofort angezeigt. Nach dem Wechsel zum neuen Portal können die Zuweisungen dynamischer Gerätegruppen basierend auf dem Namen des Unternehmensregistrierungsprofils definiert werden. Mit diesem Vorgang wird sichergestellt, dass Geräte, die bereits einer Gerätegruppe zugewiesen wurden, automatisch mit bereitgestellter Richtlinie und bereitgestellten Apps in der Gruppe registriert werden. [Weitere Informationen zu Azure Active Directory-Gruppen](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Voraussetzungen für die Registrierung von Geräten](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

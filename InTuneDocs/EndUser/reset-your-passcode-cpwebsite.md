@@ -5,29 +5,30 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 975759db98854c8276999592d6ecdba195438681
+ms.sourcegitcommit: beba9603ffb43d025132d2d86f0996ff505a9019
+ms.openlocfilehash: f9d66fe07173245ff831f204dd120598ad7564db
 
 
 ---
 
-
-# <a name="reset-your-device-passcode-from-the-company-portal-website"></a>Zurücksetzen Ihrer Kennung über die Unternehmensportalwebsite
+# <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>So setzen Sie Ihre Kennung über die Unternehmensportalwebsite zurück
 
 Wenn Sie die PIN oder das Kennwort für ein bei Intune registriertes Gerät verloren haben, können Sie die PIN bzw. das Kennwort über die [Unternehmensportalwebsite](http://portal.manage.microsoft.com) zurücksetzen. Sie können die Unternehmensportal-Website verwenden, um Computer und Geräte zu verwalten, die Sie bei Intune registriert haben. Außerdem können Sie auf dieser die meisten der Aufgaben ausführen, die auch über Ihre Unternehmensportal-App zur Verfügung stehen.
 
 > [!NOTE]
-> Die Schaltfläche **Kennung zurücksetzen** wird auf der Unternehmensportal-Website möglicherweise nicht angezeigt, je nachdem, wie Intune von Ihrem IT-Administrator konfiguriert wurde. Das Zurücksetzen der Kennung wird auf Geräten mit Windows 8.1 nicht unterstützt.
+> Es ist möglich, dass Sie die Schaltfläche **Kennung zurücksetzen** auf der Unternehmensportal-Website nicht sehen. Wenn das der Fall ist, wenden Sie sich bitte an Ihren IT-Administrator für Hilfe auf der Unternehmensportal-Website.
 
 So setzen Sie Ihre Kennung zurück
 
@@ -47,15 +48,14 @@ So setzen Sie Ihre Kennung zurück
 
     In der Tabelle finden Sie Informationen zur Funktionsweise von **Kennung zurücksetzen** auf Ihrem Gerät.
 
-    |Plattform|Unterstützung|
+    |Gerätetyp|Was geschieht beim Zurücksetzen?|
     |------------|-----------|
-    |Android|Erstellt eine temporäre, alphanumerische Kennung|
-    |iOS|Entfernt die Kennung vom Gerät und erstellt keine neue temporäre Kennung. Wenn Sie Touch ID verwenden, müssen Sie es auf dem Gerät erneut einrichten, da es beim Zurücksetzen der Kennung entfernt wird.|
-    |Windows 10 (nur mobile Geräte)|Erstellt eine temporäre, alphanumerische Kennung. Windows Hello wird unterstützt.|
-    |Windows Phone 8.1|Erstellt eine temporäre, numerische Kennung.|
-    Nachdem Sie Ihr Gerät entsperrt haben, können Sie auf Ihrem Gerät unter **Einstellungen** eine neue Kennung festlegen.
+    |Android|Entfernt die vorhandene Kennung und erstellt eine vorübergehende Kennung mit jeweils Buchstaben und Zahlen|
+    |iOS|Entfernt die aktuelle Kennung und erstellt keine neue temporäre Kennung. Wenn Sie den Touch ID-Fingerabdruckscanner zum Öffnen Ihres Geräts oder zum Abwickeln von Käufen nutzen, müssen Sie diesen erneut einrichten.|
+    |Windows 10 Mobile|Entfernt die vorhandene Kennung und erstellt eine vorübergehende Kennung mit jeweils Buchstaben und Zahlen. Wenn Sie die Windows Hello-Gesichtserkennung zum Anmelden verwenden, wird diese noch immer unterstützt.|
+    |Windows Phone 8.1|Entfernt die vorhandene Kennung und erstellt eine vorübergehende Kennung mit Zahlen.|
 
-5.  Entsperren Sie Ihr Gerät, und legen Sie eine neue Kennung fest, oder ändern Sie die temporäre Kennung auf Ihrem Gerät unter **Einstellungen**.
+    5.  Entsperren Sie Ihr Gerät, und legen Sie eine neue Kennung fest, oder ändern Sie die temporäre Kennung auf Ihrem Gerät unter **Einstellungen**.
 
     Um eine Benachrichtigung anzuzeigen, die bestätigt, dass Ihr Kennwort erfolgreich zurückgesetzt wurde, klicken Sie auf das Benachrichtigungskennzeichen oben rechts auf der Unternehmensportal-Website.
 
@@ -63,6 +63,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

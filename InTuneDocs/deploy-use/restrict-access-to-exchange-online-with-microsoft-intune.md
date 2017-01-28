@@ -1,11 +1,11 @@
 ---
-title: "Beschränken des E-Mail-Zugriffs auf Exchange Online | Microsoft-Dokumentation"
+title: "Schützen des E-Mail-Zugriffs auf Exchange Online | Microsoft-Dokumentation"
 description: "Schützen und steuern Sie den Zugriff auf Unternehmens-E-Mail in Exchange Online mit bedingtem Zugriff."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,21 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51e06bafef761eaf06d35343b459262524ad9168
-ms.openlocfilehash: 1b5ee2f53f19643cb50e803f538fdac4ec5d2ad9
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
 
 
 ---
 
 
-# <a name="restrict-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Beschränken des E-Mail-Zugriffs auf Exchange Online- und neue Exchange Online Dedicated-Umgebungen mit Intune
+# <a name="protect-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Schützen des E-Mail-Zugriffs auf Exchange Online- und neue Exchange Online Dedicated-Umgebungen mit Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 >Wenn Sie über eine Exchange Online Dedicated-Umgebung verfügen und herausfinden müssen, ob es sich um die neue oder die ältere Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer.
 
-Um den E-Mail-Zugriff auf Exchange Online oder die neue Exchange Online Dedicated-Umgebung zu steuern, können Sie den bedingten Zugriff für Exchange Online mithilfe von Microsoft Intune konfigurieren. Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Beschränken des Zugriffs auf E-Mail, O365 und andere Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Um den E-Mail-Zugriff auf Exchange Online oder die neue Exchange Online Dedicated-Umgebung zu steuern, können Sie den bedingten Zugriff für Exchange Online mithilfe von Microsoft Intune konfigurieren. Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Protect access to email, O365, and other services (Schützen des Zugriffs auf E-Mail, O365 und andere Dienste)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 
 **Bevor** Sie den bedingten Zugriff konfigurieren können, müssen folgende Voraussetzungen erfüllt sein:
@@ -64,7 +66,7 @@ Das folgende Diagramm veranschaulicht den Ablauf, den Richtlinien für bedingten
 ![Diagramm zur Veranschaulichung der Entscheidungspunkte, die bestimmen, ob der Zugriff für das Gerät zugelassen oder blockiert wird](../media/ConditionalAccess8-1.png)
 
 ## <a name="support-for-mobile-devices"></a>Unterstützung für mobile Geräte
-Sie können den Zugriff auf Exchange Online-E-Mails über **Outlook** und andere **Apps, die die moderne Authentifizierung verwenden**, beschränken. Die folgenden Betriebssysteme werden unterstützt:
+Sie können den Zugriff auf Exchange Online-E-Mails über **Outlook** und andere **Apps, die die moderne Authentifizierung verwenden**, schützen. Die folgenden Betriebssysteme werden unterstützt:
 
 - Android 4.0 und höher, Samsung KNOX Standard 4.0 und höher sowie Android for Work
 - iOS 8.0 und höher
@@ -77,7 +79,7 @@ Die **moderne Authentifizierung** ermöglicht das ADAL-basierte (Active Director
 -   Die ADAL-basierte Authentifizierung ermöglicht Office-Clients die Einbindung in die browserbasierte Authentifizierung (auch als passive Authentifizierung bekannt). Ein Benutzer wird zur Authentifizierung zu einer Anmeldewebseite umgeleitet.
 -   Diese neue Anmeldemethode bietet mehr Sicherheitsmerkmale wie z.B. die **mehrstufige Authentifizierung** und die **zertifikatbasierte Authentifizierung**. Weitere ausführliche Informationen finden Sie unter [Funktionsweise der modernen Authentifizierung](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517). Sie können Anspruchsregeln für Active Directory-Verbunddienste (AD FS) so einrichten, dass nicht moderne Authentifizierungsprotokolle blockiert werden. Detaillierte Anleitungen werden in Szenario 3 beschrieben: [Blockieren des gesamten Zugriffs auf Office 365 außer durch browserbasierte Anwendungen](https://technet.microsoft.com/library/dn592182.aspx).
 
-Sie können den Zugriff auf **Outlook Web Access (OWA)** auf Exchange Online beschränken, wenn von einem Browser auf **iOS**- und **Android**-Geräten aus zugegriffen wird. Der Zugriff wird nur von unterstützten Browsern auf kompatiblen Geräten gewährt:
+Sie können den Zugriff auf **Outlook Web Access (OWA)** auf Exchange Online schützen, wenn von einem Browser auf **iOS**- und **Android**-Geräten aus zugegriffen wird. Der Zugriff wird nur von unterstützten Browsern auf kompatiblen Geräten gewährt:
 
 * Safari (iOS)
 * Chrome (Android)
@@ -88,7 +90,7 @@ Sie können den Zugriff auf **Outlook Web Access (OWA)** auf Exchange Online bes
 **Die OWA-App für iOS und Android kann so geändert werden, dass die moderne Authentifizierung nicht verwendet und unterstützt wird. Der Zugriff über die OWA-App muss durch AD FS-Anspruchsregeln blockiert werden.**
 
 
-Auf folgenden Plattformen können Sie den Zugriff auf Exchange-E-Mails über den integrierten **Exchange ActiveSync-E-Mail-Client** blockieren:
+Auf folgenden Plattformen können Sie den Zugriff auf Exchange-E-Mails über den integrierten **Exchange ActiveSync-E-Mail-Client** schützen:
 
 - Android 4.0 und höher, Samsung KNOX Standard 4.0 und höher
 
@@ -254,7 +256,7 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
 
 -   Wenn der Benutzer die Registrierung seines Geräts aufhebt, wird der E-Mail-Zugriff nach ca. sechs Stunden blockiert.
 
-**Beispielszenarien für die Konfiguration von Richtlinien für bedingten Zugriff zur Beschränkung des Gerätezugriffs** finden Sie unter [Beispielszenarien für die Beschränkung des E-Mail-Zugriffs](restrict-email-access-example-scenarios.md).
+**Beispielszenarios für die Konfiguration von Richtlinien für bedingten Zugriff zum Schutz des Gerätezugriffs** finden Sie unter [Protect email access example scenarios (Beispielszenarios für den Schutz des E-Mail-Zugriffs)](restrict-email-access-example-scenarios.md).
 
 ## <a name="monitor-the-compliance-and-conditional-access-policies"></a>Überwachen der Richtlinien für Konformität und bedingten Zugriff
 
@@ -264,12 +266,12 @@ Wählen Sie im [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Dashboard 
 ![Screenshot des Intune-Dashboards mit der Anzahl der Geräte, für die der Zugriff auf Exchange blockiert ist](../media/IntuneSA6BlockedDevices.PNG)
 
 ## <a name="next-steps"></a>Nächste Schritte
-- [Beschränken des Zugriffs auf SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+- [Protect access to SharePoint Online (Schützen des Zugriffs auf SharePoint Online)](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-- [Beschränken des Zugriffs auf Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+- [Protect access to Skype for Business Online (Schützen des Zugriffs auf Skype for Business Online)](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

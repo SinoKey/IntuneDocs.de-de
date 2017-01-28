@@ -1,5 +1,5 @@
 ---
-title: "Erstellen von Gruppen zum Organisieren von Benutzern und Geräten | Microsoft-Dokumentation"
+title: "Kostenlose Testversion zum Erstellen von Gruppen zum Organisieren von Benutzern und Geräten | Microsoft-Dokumentation"
 description: "So erstellen Sie Geräte- und Benutzergruppen, wenn Sie sich für eine kostenlose 30-tägige Evaluierungsversion von Microsoft Intune registrieren."
 keywords: 
 author: lindavr
@@ -13,13 +13,16 @@ ms.technology:
 ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: e4072108d5d06857acb10f243df68ef2c33066a2
+ms.sourcegitcommit: 89e190e6a3e514c0f38b33409cde2abea0776885
+ms.openlocfilehash: 0cdf5bf8f9fad1f44dbb0ef11de71aea55949d89
 
 
 ---
 
 # <a name="create-groups-to-organize-evaluation-subscription-users-and-devices"></a>Erstellen von Gruppen zum Organisieren von Benutzern und Geräten für das Evaluierungsabonnement
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Mit Gruppen erhalten Sie in Intune maximale Flexibilität beim Verwalten Ihrer Geräte und Benutzer. Sie können Gruppen einrichten, die Ihren organisatorischen Anforderungen (z. B. nach geografischem Standort, nach Abteilung oder nach Hardwareeigenschaften) entsprechen und diese verwenden, um verschiedene anstehende Verwaltungsaufgaben auszuführen, die von der Festlegung von Richtlinien für eine Gruppe von Benutzern bis zur Bereitstellung von Anwendungen auf einer Reihe von Geräten reichen.
 
 ## <a name="create-a-device-group"></a>Erstellen einer Gerätegruppe
@@ -61,6 +64,6 @@ Weitere Informationen zum Verwenden von Gruppen finden Sie unter [Erstellen von 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -5,18 +5,20 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01d2fcd0202f1ef347693c973edb82acfae6c818
-ms.openlocfilehash: 13198d264d7d49454e2aba76604b4c2e9445a502
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: fa9c3fd2c995615e9aa9a16f3bd834b0c145b6d0
 
 
 ---
@@ -24,7 +26,7 @@ ms.openlocfilehash: 13198d264d7d49454e2aba76604b4c2e9445a502
 # <a name="about-the-company-portal"></a>Informationen zum Unternehmensportal
 
 ## <a name="what-is-the-company-portal-and-what-can-you-do-with-it"></a>Was ist das Unternehmensportal, und was kann ich darin tun?
-Über das Microsoft Windows Intune-Unternehmensportal erhalten Sie Zugriff auf die Daten und Apps Ihres Unternehmens oder Ihrer Bildungseinrichtung. Sie gelangen auf zwei Arten zum Unternehmensportal:
+Über das Unternehmensportal erhalten Sie Zugriff auf die Daten und Apps Ihres Unternehmens oder Ihrer Bildungseinrichtung. Sie gelangen auf zwei Arten zum Unternehmensportal:
 
 - Durch Installieren der Unternehmensportal-App auf Ihrem Gerät. In der Regel erhalten Sie die Unternehmensportal-App, indem Sie sie aus dem App Store Ihres Geräts herunterladen. Allerdings kann auch Ihr IT-Administrator die Unternehmensportal-App auf dem Gerät installieren.
 - Durch Besuchen der [Unternehmensportal-Website](http://portal.manage.microsoft.com), die Ihr IT-Administrator eingerichtet hat.
@@ -42,7 +44,7 @@ Wenn Sie die Möglichkeiten der Unternehmensportal-Website mit denen der Unterne
 
 > [!div class="op_single_selector"]
 - [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
-- [Verwenden Ihrer iOS- und macOS-Geräte mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Verwenden Ihrer iOS- und macOS-Geräte mit Intune](using-your-ios-or-macOS-device-with-intune.md)
 - [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
 - [Verwenden der Unternehmensportal-Website](using-the-intune-company-portal-website.md)
 
@@ -96,6 +98,6 @@ Wenn Sie Hilfe benötigen, wenden Sie sich an Ihren IT-Administrator. Die entspr
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

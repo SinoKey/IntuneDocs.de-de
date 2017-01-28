@@ -1,11 +1,11 @@
 ---
-title: "Beschränken des Zugriffs auf Dynamics CRM Online | Microsoft-Dokumentation"
+title: "Schützen des Zugriffs auf Dynamics CRM Online | Microsoft-Dokumentation"
 description: "Schützen und steuern Sie den Zugriff auf Dynamics CRM Online mit bedingtem Zugriff."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: abbfeb493d9e85eaa601b127d618996f2e01a01d
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 0049da7a47070e42cf0f377da5a99d3222d9ed82
 
 
 ---
 
-# <a name="restrict-access-to-dynamics-crm-online-with-intune"></a>Beschränken des Zugriffs auf Dynamics CRM Online mit Intune
+# <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Schützen des Zugriffs auf Dynamics CRM Online mit Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Sie können den Zugriff auf Microsoft Dynamics CRM Online von iOS- und Android-Geräten mithilfe des bedingten Zugriffs von Microsoft Intune steuern.  Der bedingte Zugriff in Intune besteht aus zwei Komponenten:
 * Einer [Gerätekompatibilitätsrichtlinie](introduction-to-device-compliance-policies-in-microsoft-intune.md), die das Gerät erfüllen muss, um als kompatibel bewertet zu werden
 * Einer [Richtlinie für bedingten Zugriff](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), in der Sie die Bedingungen festlegen, die das Gerät erfüllen muss, um auf den Dienst zugreifen zu können
 
-Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Beschränken des Zugriffs auf E-Mail, O365 und andere Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [protect access to email, 0365, and other services (Schützen des Zugriffs auf E-Mail, Office 365 und andere Dienste mit Microsoft Intune)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 > [!IMPORTANT]
 > Zum Bereitstellen des bedingten Zugriffs müssen Sie über Abonnements für Intune und Azure Active Directory Premium verfügen, und Benutzer müssen für beide Produkte lizenziert sein. Das **Abonnement für Enterprise Mobility + Security (EMS)** umfasst sowohl das Intune- als auch das Azure Active Directory Premium-Abonnement. Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Falls Sie nicht über ein EMS-Abonnement verfügen, können Sie ein Abonnement für Azure Active Directory Premium erwerben. Weitere Informationen finden Sie in der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
@@ -92,15 +95,15 @@ Wählen Sie eine beliebige Gruppe von Mobilgeräten und dann auf der Registerkar
 * **Geräte, die bei AAD registriert und kompatibel sind**. Diese Geräte können auf Dynamics CRM zugreifen.
 
 ##  <a name="next-steps"></a>Nächste Schritte
-* [Beschränken des Zugriffs auf Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
+* [Protect access to Exchange Online (Beschränken des Zugriffs auf Exchange Online)](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
-* [Beschränken des Zugriffs auf Exchange lokal](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-* [Beschränken des Zugriffs auf SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+* [Protect access to Exchange on-premises (Schützen des Zugriffs auf Exchange lokal)](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+* [Protect access to SharePoint Online (Schützen des Zugriffs auf SharePoint Online)](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-* [Beschränken des Zugriffs auf Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+* [Protect access to Skype for Business Online (Schützen des Zugriffs auf Skype for Business Online)](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

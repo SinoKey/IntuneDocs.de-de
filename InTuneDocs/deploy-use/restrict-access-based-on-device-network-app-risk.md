@@ -1,11 +1,11 @@
 ---
-title: "Einschränken des Zugriffs mithilfe des Schutzes vor Gerätebedrohungen | Microsoft-Dokumentation"
-description: "Einschränken des Zugriffs auf Unternehmensressourcen auf der Basis von Geräte-, Netzwerk- und Anwendungsrisiko."
+title: "Schützen des Zugriffs mithilfe des Schutzes vor Gerätebedrohungen | Microsoft-Dokumentation"
+description: "Schützen Sie den Zugriff auf Unternehmensressourcen auf der Basis von Geräte-, Netzwerk- und Anwendungsrisiko."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b83d06ecbe6e202bf022444c288e0866b3507c6
-ms.openlocfilehash: 1dd2c4a46857aef1ba273904d58d5eacae99c7bc
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 184002a3a9f4af671a467ce9fe79fe0050bd00df
 
 
 ---
 
-# <a name="restrict-access-to-company-resource-based-on-device-network-and-application-risk"></a>Einschränken des Zugriffs auf Unternehmensressourcen auf der Basis von Geräte-, Netzwerk- und Anwendungsrisiko
+# <a name="protect-access-to-company-resource-based-on-device-network-and-application-risk"></a>Schützen des Zugriffs auf Unternehmensressourcen auf der Basis von Geräte-, Netzwerk- und Anwendungsrisiko
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Sie können den Zugriff mobiler Geräte auf Unternehmensressourcen basierend auf Risikobewertungen steuern, die von Lookout vorgenommen werden, einer Lösung für den Schutz vor Gerätebedrohungen, die in Microsoft Intune integriert ist. Das Risiko wird basierend auf Telemetriedaten bewertet, die vom Lookout-Dienst auf Geräten erfasst werden, wie z.B.:
 - Sicherheitsrisiken des Betriebssystems
 - Installierte Apps, die Schadsoftware enthalten
@@ -71,7 +74,7 @@ Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie
 ![Diagramm, das die Richtlinie für bedingten Zugriff darstellt, die den Zugriff erteilt, nachdem das Gerät nach der Sanierung als kompatibel bewertet wurde](../media/mtp/malicious-apps-unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Steuern des Zugriffs basierend auf der Bedrohung für das Netzwerk
-Erkennen von Bedrohungen Ihres Netzwerks, wie etwa Man-in-the-Middle-Angriffe, und Einschränken des Zugriffs auf WLANs auf der Grundlage des Geräterisikos.
+Erkennen von Bedrohungen Ihres Netzwerks, wie etwa Man-in-the-Middle-Angriffe, und Schutz des Zugriffs auf WLANs auf der Grundlage des Geräterisikos.
 
 **Zugriff auf das Netzwerk über WLAN blockiert:**
 ![Diagramm, das die Blockierung des WLAN-Zugriffs durch bedingten Zugriff auf Grundlage von Netzwerkbedrohungen zeigt](../media/mtp/network-wifi-blocked.png)
@@ -102,6 +105,6 @@ Hier sind die wichtigsten Schritte, die Sie ausführen müssen, um diese Lösung
 
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

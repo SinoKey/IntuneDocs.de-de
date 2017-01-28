@@ -1,11 +1,11 @@
 ---
-title: "Beispielszenarien für die Beschränkung des E-Mail-Zugriffs | Microsoft-Dokumentation"
+title: "Beispielszenarios für den Schutz des E-Mail-Zugriffs | Microsoft-Dokumentation"
 description: "Einige Beispielszenarien und wie sie mit bedingtem Zugriff implementiert werden könnten."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2d6ead1495a64e4e215c49b14064e390065a06de
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: eca68c053185dbd5e7f89a426d3bed44cc09acf1
 
 
 ---
 
-# <a name="restrict-access-to-email-with-microsoft-intune-example-scenarios"></a>Beschränken des E-Mail-Zugriffs mit Microsoft Intune: Beispielszenarien
+# <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>Schützen des E-Mail-Zugriffs mit Microsoft Intune: Beispielszenarios
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>Szenario 1: Blockieren des Zugriffs auf Exchange Online durch Benutzer nicht kompatibler Geräte
 ### <a name="scenario-requirements"></a>Anforderungen für das Szenario
@@ -82,6 +84,6 @@ Sie verwenden den folgenden Ablauf, um zu entscheiden, welche Geräte auf Exchan
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

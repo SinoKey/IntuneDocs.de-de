@@ -1,25 +1,26 @@
 ---
 title: "Registrieren Ihres Windows 8.1- oder Windows RT 8.1-Geräts | Microsoft-Dokumentation"
-description: "Beschreibt das Registrieren Ihres Windows 8.1- oder Windows RT 8.1-Geräts bei Intune."
+description: "Erfahren Sie, wie Sie ein Windows 8.1- oder Windows RT 8.1-Geräts bei Intune registrieren."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
+searchScope:
+- Company Portal
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: d0a773edf51214ac9f921c17185b32f6b3fbf287
+ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
+ms.openlocfilehash: 70a7f590ba19cc672086671edfdaa5faf5f3e568
 
 
 ---
-
 
 # <a name="enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Registrieren Ihres Windows 8.1- oder Windows RT 8.1-Geräts bei Intune
 
@@ -66,6 +67,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

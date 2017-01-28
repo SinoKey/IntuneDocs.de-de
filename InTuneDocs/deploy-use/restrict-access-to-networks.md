@@ -1,11 +1,11 @@
 ---
-title: "Beschränken des Netzwerkzugriffs mit Cisco ISE | Microsoft-Dokumentation"
+title: "Schützen des Netzwerkzugriffs mit Cisco ISE | Microsoft-Dokumentation"
 description: "Verwenden Sie Cisco ISE mit Intune, damit Geräte bei Intune registriert sind und mit der Richtlinie kompatibel sind, bevor sie auf WLAN und VPN zugreifen, die von Cisco ISE gesteuert werden."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/06/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 9eb0ea307702f3ae07db4d5c5a82d03f13b727fb
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
 
 
 ---
 
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Verwenden von Cisco ISE mit Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Die Intune-Integration mit Cisco Identity Services Engine (ISE) erlaubt Ihnen, in Ihrer ISE-Umgebung Netzwerkrichtlinien mithilfe der Intune-Geräteregistrierung und des Kompatibilitätszustands zu verfassen. Sie können diese Richtlinien so einsetzen, dass der Zugriff auf Ihr Unternehmensnetzwerk auf Geräte beschränkt wird, die von Intune verwaltet werden und mit Intune-Richtlinien kompatibel sind.
 
 ## <a name="configuration-steps"></a>Konfigurationsschritte
@@ -189,6 +192,6 @@ Es gibt auch [herunterladbare Registrierungsanweisungen](https://gallery.technet
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
