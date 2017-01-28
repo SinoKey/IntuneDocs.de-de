@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b264ea53e727f706bc635ed9c738ad605e1ac750
-ms.openlocfilehash: a88b0eafdf72f00b5c28d0347010eeee3c9effc4
+ms.sourcegitcommit: bb949c9a83fdde630dd2023765d32e98c43a1c20
+ms.openlocfilehash: 22a5cab46a6ca8cf2d350ba9844328a3dea13766
 
 
 ---
@@ -66,15 +68,15 @@ Die Informationen in diesem Abschnitt helfen Benutzern beim Beheben von Probleme
 - [Gerät entspricht nicht der maximalen Betriebssystemversion](your-android-version-isnt-yet-supported.md)
 - [Von Ihrem Gerät wurden die Nutzungsbeschränkungen entfernt, und Sie können keine Verbindung herstellen](your-device-is-rooted-and-you-cant-connect-android.md)
 - [Auf Ihrem Gerät ist ein erforderliches Zertifikat nicht vorhanden](your-device-is-missing-a-required-certificate-landing-android.md)
-- [Sie werden dazu aufgefordert, die Option „Unbekannte Quellen“ zu deaktivieren](you-are-asked-to-turn-off-unknown-sources-android.md)
-- [Sie werden dazu aufgefordert, das USB-Debuggen zu deaktivieren](you-are-asked-to-turn-off-usb-debugging-android.md)
-- [Sie werden dazu aufgefordert, die Option „Gerät auf Sicherheitsbedrohungen überprüfen“ zu aktivieren](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+- [Notwendigkeit der Deaktivierung unbekannter Quellen](you-need-to-turn-off-unknown-sources-android.md)
+- [Notwendigkeit der Deaktivierung des USB-Debuggings](you-need-to-turn-off-usb-debugging-android.md)
+- [Notwendigkeit der Aktivierung der Überprüfung auf Sicherheitsbedrohungen](you-need-to-turn-on-scanning-for-security-threats-android.md)
 - [Ihr Gerät weist nicht den mindestens erforderlichen Sicherheitspatch auf](your-device-does-not-meet-the-minimum-security-patch-android.md)
 - [Sie werden aufgefordert, Lookout for Work auf Ihrem Android-Gerät zu installieren](you-are-prompted-to-install-lookout-for-work-android.md)
 - [Sie müssen eine Bedrohung beseitigen, die Lookout for Work auf Ihrem Android-Gerät erkannt hat](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

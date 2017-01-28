@@ -14,8 +14,8 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a567d55141c4510a5c81861df1522f118104de61
-ms.openlocfilehash: 900b3a9bcc9ce58cd165b14592c850b50739a33a
+ms.sourcegitcommit: e2810513646828cc5da734f3af9cc8d81e0c03fc
+ms.openlocfilehash: 444d08d1a5e709572efbc2f639cef037453b9c0e
 
 
 ---
@@ -43,7 +43,7 @@ Die Intune-Geräteverwaltung bietet [diese Funktionen](mobile-device-management-
 
 ### <a name="windows-pc-software-client"></a>Softwareclient für Windows-PCs
 
-Ein [Intune-Softwareclient](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) auf Windows-PCs als eine alternative Registrierungsmethode bereitgestellt und installiert werden. Sie können den Intune-Softwareclient zum Verwalten von PCs mit Windows 7 und höher verwenden. Die PC-Verwaltung mit dieser Clientsoftware bietet [diese Möglichkeiten](windows-pc-management-capabilities-in-microsoft-intune.md).
+Ein [Intune-Softwareclient](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) auf Windows-PCs als eine alternative Registrierungsmethode bereitgestellt und installiert werden. Sie können den Intune-Softwareclient zum Verwalten von PCs mit Windows 7 und höher (mit Ausnahme der Windows 10 Home-Edition) verwenden. Die PC-Verwaltung mit dieser Clientsoftware bietet [diese Möglichkeiten](windows-pc-management-capabilities-in-microsoft-intune.md).
 
 ### <a name="exchange-activesync-management"></a>Exchange ActiveSync-Verwaltung
 

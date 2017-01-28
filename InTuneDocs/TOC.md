@@ -42,7 +42,7 @@
 ## [Abschnitt 9: Testen und Überprüfen](plan-design/section-9-test-and-validation.md)
 ## [Zusätzliche Ressourcen](plan-design/additional-resources.md)
 
-# [Neuigkeiten](whats-new/whats-new-in-microsoft-intune.md)
+# Neuigkeiten
 ## [Neuerungen](whats-new/whats-new-in-microsoft-intune.md)
 ## [Neuigkeiten in der Azure-Vorschau](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Neuheiten – Archiv](whats-new/whats-new-archive.md)
@@ -73,6 +73,7 @@
 #### [Installieren des PC-Clients](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 #### [Allgemeine Aufgaben zur Verwaltung von PCs](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Lösen von PC-Richtlinienkonflikten](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+### [Verwalten von Android for Work](deploy-use/android-for-work.md)
 
 ## Konfigurieren von Geräten
 ### [Verwalten von Einstellungen und Features auf Ihren Geräten mit Richtlinien](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -98,6 +99,7 @@
 #### [VPN-Verbindungen in Intune](deploy-use/vpn-connections-in-microsoft-intune.md)
 #### [E-Mail-Profile in Intune](deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Verwenden von Gruppen zum Verwalten von Benutzern und Geräten](deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+#### [Migrieren von Gruppen nach Azure](deploy-use/migrating-groups-to-azure-active-directory.md)
 ### [Zuweisen von Geräten zu Gruppen](deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Verstehen Sie Ihre Geräte mithilfe des Inventars](deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md)
 
@@ -151,16 +153,16 @@
 #### [Skype for Business Online](deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [Protect email access: examples (Schützen des E-Mail-Zugriffs: Beispiele)](deploy-use/restrict-email-access-example-scenarios.md)
-### [Zulassen des Zugriffs auf Office 365-Dienste nur für richtlinienverwaltete Apps](deploy-use/allow-policy-managed-apps-access-to-o365.md)
+### [Zulassen des Zugriffs auf Office&365;-Dienste nur für richtlinienverwaltete Apps](deploy-use/allow-policy-managed-apps-access-to-o365.md)
 #### [Apps mit MAM CA](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [Blockieren von Apps ohne ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Protect access to networks (Cisco ISE) (Schützen des Zugriffs auf Netzwerke (Cisco ISE))](deploy-use/restrict-access-to-networks.md)
-### [Protect access based on device, network, and application risk (Schützen des Zugriffs auf der Basis von Geräte-, Netzwerk- und Anwendungsrisiko)](deploy-use/restrict-access-based-on-device-network-app-risk.md)
-#### [Einrichten des Lookout-Schutzes vor Gerätebedrohungen](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
-#### [Aktivieren von Lookout in Intune](deploy-use/enable-lookout-mtp-connection-in-intune.md)
-#### [Bereitstellen von Lookout for Work-Apps](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
-#### [Aktivieren der Gerätekompatibilitätsrichtlinie zum Schutz vor Bedrohungen](deploy-use/enable-device-threat-protection-rule-in-compliance-policy.md)
+### [Protect access based on device, network, and application risk (Schützen des Zugriffs auf der Basis von Geräte-, Netzwerk- und Anwendungsrisiko)](deploy-use/device-threat-protection.md)
+#### [Einrichten des Lookout-Schutzes vor Gerätebedrohungen](deploy-use/device-threat-protection-subscription-setup.md)
+#### [Aktivieren von Lookout in Intune](deploy-use/device-threat-protection-enable.md)
+#### [Bereitstellen von Lookout for Work-Apps](deploy-use/device-threat-protection-apps.md)
+#### [Aktivieren der Gerätekompatibilitätsrichtlinie zum Schutz vor Bedrohungen](deploy-use/device-threat-protection-policy.md)
 
 ### [Schützen von App-Daten mit MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure-Portal für MAM-Richtlinien](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
@@ -220,6 +222,6 @@
 # [Glossar](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO3-->
 
 
