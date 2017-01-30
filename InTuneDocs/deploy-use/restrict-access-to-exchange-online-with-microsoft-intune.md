@@ -1,5 +1,5 @@
 ---
-title: "Schützen des E-Mail-Zugriffs auf Exchange Online | Microsoft-Dokumentation"
+title: "Schützen von E-Mail auf Exchange Online | Microsoft-Dokumentation"
 description: "Schützen und steuern Sie den Zugriff auf Unternehmens-E-Mail in Exchange Online mit bedingtem Zugriff."
 keywords: 
 author: andredm7
@@ -14,8 +14,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 185f6fd051946ab118490717ecfb7250521fb764
 
 
 ---
@@ -272,6 +272,6 @@ Wählen Sie im [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Dashboard 
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Schützen des Zugriffs auf SharePoint Online | Microsoft-Dokumentation"
+title: "Schützen von SharePoint Online | Microsoft-Dokumentation"
 description: "Schützen und steuern Sie den Zugriff auf Unternehmensdaten in SharePoint Online mithilfe von bedingtem Zugriff."
 keywords: 
 author: andredm7
@@ -14,8 +14,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
 
 
 ---
@@ -195,10 +195,10 @@ Wählen Sie eine beliebige Gruppe von Mobilgeräten aus. Wählen Sie dann auf de
 -   **Geräte, die bei AAD registriert und kompatibel sind**. Diese Geräten können auf SharePoint Online zugreifen.
 
 ### <a name="see-also"></a>Weitere Informationen:
-[Protect access to email and O365 services with Microsoft Intune (Schützen des Zugriffs auf E-Mail- und Office 365-Dienste mit Microsoft Intune)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+[Protect access to email and O365 services with Microsoft Intune (Schützen des Zugriffs auf E-Mail- und Office&365;-Dienste mit Microsoft Intune)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

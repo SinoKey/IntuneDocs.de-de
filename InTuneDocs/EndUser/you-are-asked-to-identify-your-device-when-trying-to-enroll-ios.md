@@ -1,11 +1,11 @@
 ---
-title: "Sie werden aufgefordert, Ihr Gerät zu identifizieren, wenn Sie versuchen, sich zu registrieren | Microsoft-Dokumentation"
+title: "Identifizierung Ihres iOS-Geräts beim Versuch der Registrierung | Microsoft-Dokumentation"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,14 +17,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 94380907981fbb50892b35244ef5eecab8fd8e7b
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: a1a669b12e3c072bf532dc25352889015aec7d47
 
 
 ---
 
 
-# <a name="you-are-asked-to-identify-your-device-when-youre-trying-to-enroll"></a>Sie werden aufgefordert, Ihr Gerät zu identifizieren, wenn Sie versuchen, sich zu registrieren
+# <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>Identifizierung Ihres Geräts beim Versuch der Registrierung
 
 Wenn Sie versuchen, Ihr iOS- oder macOS-Gerät bei Intune zu registrieren, und Sie einen Bildschirm sehen, der Sie auffordert, Ihr Gerät zu identifizieren, wurde mindestens eines Ihrer Geräte bereits registriert und Ihrem Konto mithilfe einer anderen Methode als der Unternehmensportal-App zugewiesen. Damit die Unternehmensportal-App ordnungsgemäß funktioniert, müssen Sie feststellen, ob das Gerät, das Sie verwenden, bereits bei Intune registriert wurde.
 
@@ -36,6 +36,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

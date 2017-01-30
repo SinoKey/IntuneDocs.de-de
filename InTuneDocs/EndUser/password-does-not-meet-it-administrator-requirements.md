@@ -1,11 +1,11 @@
 ---
-title: "Kennwort erfüllt nicht die Anforderungen des IT-Administrators | Microsoft-Dokumentation"
+title: Ihr Kennwort entspricht nicht den Anforderungen Ihres IT-Administrators | Microsoft-Dokumentation
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/20/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 14ac49d73648244f71eff90b71272b60a07cd37e
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 395c9bdc8aad13123b6a22b6edac0b8714323f2f
 
 
 ---
 
-# <a name="password-does-not-meet-it-administrator-requirements"></a>Kennwort erfüllt nicht die Anforderungen des IT-Administrators
+# <a name="your-password-does-not-meet-your-it-admins-requirements"></a>Ihr Kennwort entspricht nicht den Anforderungen Ihres IT-Administrators
 
 Das Kennwort, mit dem Sie auf Unternehmens- oder Schulressourcen zugreifen, erfüllt mindestens eine der Anforderungen nicht, die Ihr IT-Administrator eingerichtet hat. Um das Problem zu beheben, befolgen Sie die Anweisungen, die auf Ihrem Gerät angezeigt werden. Beschreibungen der Probleme sind nachstehend aufgelistet.
 
@@ -51,6 +51,6 @@ Wenn Sie Probleme haben herauszufinden, wie Ihr Kennwort diese Anforderungen erf
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

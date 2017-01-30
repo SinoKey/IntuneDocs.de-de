@@ -1,11 +1,11 @@
 ---
-title: "Sie werden aufgefordert, Lookout for Work auf Ihrem iOS-Gerät zu installieren | Microsoft-Dokumentation"
+title: "Installieren von Lookout for Work auf Ihrem iOS-Gerät | Microsoft-Dokumentation"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 64e094c8648c0737cdbc0dcdc4ec6b3a8bc96831
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 15c820d4b25b8deb3ab17601a4835c57e5ede780
 
 
 ---
 
-# <a name="you-are-prompted-to-install-lookout-for-work-on-your-ios-device"></a>Sie werden aufgefordert, Lookout for Work auf Ihrem iOS-Gerät zu installieren
+# <a name="you-need-to-install-lookout-for-work-on-your-ios-device"></a>Installieren von Lookout for Work auf Ihrem iOS-Gerät
 
 Damit Sie auf Ihre Arbeit zugreifen können, verlangt der IT-Administrator von Ihnen, dass Sie die Lookout for Work-App installieren, die Ihnen hilft, Ihr Gerät zu schützen, indem sie mögliche Sicherheitsbedrohungen erkennt. Möglicherweise werden auf Ihrem Gerät abhängig davon, wie Ihr IT-Administrator Lookout for Work eingerichtet hat, andere Aufforderungen angezeigt.
 
@@ -43,7 +43,7 @@ Damit Sie auf Ihre Arbeit zugreifen können, verlangt der IT-Administrator von I
 
     ![Tippen auf „Einstellungen“ und anschließend auf „Ortungsdienste“](./media/ios-lfw-allow-notifications.png)
 
-    
+
 Die Installation von Lookout for Work wird abgeschlossen, und der folgende Bildschirm wird angezeigt, wenn auf Ihrem Gerät keine Sicherheitsbedrohungen gefunden wurden.
 
 ![Lookout for Work hat keine Sicherheitsbedrohungen gefunden](./media/ios-lfw-no-threats-found.png)
@@ -56,7 +56,6 @@ Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihre
 
 
 
-
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
