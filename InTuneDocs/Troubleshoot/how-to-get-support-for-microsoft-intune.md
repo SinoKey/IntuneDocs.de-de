@@ -14,19 +14,35 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1a83bd41e4dc3aaa2e98b78b918b0cfe4c74dfe3
+ms.sourcegitcommit: 9d891933178d4bdf1079287efc151fe8859c7e83
+ms.openlocfilehash: e91c9da9614791e128a64add822d7f101818b9c0
 
 
 ---
 
-# <a name="how-to-get-admin-support-for-microsoft-intune"></a>So fordern Sie Administratorunterstützung für Microsoft Intune an
+# <a name="how-admins-get-support-for-microsoft-intune"></a>So erhalten Administratoren Support für Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft bietet für Microsoft Intune Unterstützung bei allgemeinen technischen Fragen, der Vertriebsvorbereitung sowie bei Fragen zu Rechnungen und Abonnements. Der Support ist für kostenpflichtige Abonnements und für Testabonnements online und telefonisch verfügbar. Der technische Onlinesupport ist nur auf Englisch und Japanisch verfügbar. Der telefonische Support und der Support zu Abrechnungen sind in zusätzlichen Sprachen verfügbar.
 
 Der Support für Intune und für Intune mit Configuration Manager ist kostenlos. Für Premier Support-Kunden fallen Gebühren für Fragen zur Vorgehensweise an (z. B., wie ein Intune-Feature konfiguriert wird).
+
+## <a name="find-help-without-opening-a-support-ticket"></a>Suchen nach Hilfe, ohne ein Supportticket zu öffnen
+
+Überprüfen Sie die folgenden Ressourcen auf Antworten, bevor Sie eine Supportticket erstellen.
+
+### <a name="microsoft-intune-technet-forums"></a>Microsoft Intune TechNet-Foren
+
+Stellen Sie eine Frage, oder beginnen Sie eine Diskussion mit den technischen Experten von Microsoft! Wir bieten Antworten und Erkenntnisse im durchsuchbaren [Microsoft Intune TechNet-Forum](https://social.technet.microsoft.com/Forums/home).
+
+    ![Microsoft Intune TechNet Forum](../media/technet-forum-for-support.png)
+
+### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Website für das Microsoft Intune UserVoice-Produktfeedback
+
+Haben Sie Feedback für Microsoft zur Verbesserung von Intune? Teilen Sie uns Ihre Ideen auf der [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas)-Feedbackwebsite von Microsoft Intune mit. Sie können auch für Ideen abstimmen, die andere Personen auf UserVoice gepostet haben. 
+
+    ![Microsoft Intune UserVoice feedback page](../media/intune-uservoice-feedback-page.png)
 
 ## <a name="create-an-online-service-ticket"></a>Erstellen eines Onlineservicetickets
 
@@ -116,6 +132,6 @@ Wenn Sie von Microsoft bereits Lizenzen im Rahmen eines Volumenlizenzprogramms e
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
