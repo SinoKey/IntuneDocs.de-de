@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/10/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -23,8 +23,6 @@ ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Konfigurieren des Zugriffs auf Unternehmens-E-Mail mithilfe von E-Mail-Profilen in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Viele mobile Plattformen enthalten einen nativen E-Mail-Client, der als Teil des Betriebssystems bereitgestellt wird. Einige dieser Clients können mithilfe von E-Mail-Profilen eingerichtet werden, wie in diesem Thema beschrieben.
 

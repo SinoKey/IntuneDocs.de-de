@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -50,8 +50,6 @@ Sie können WLAN-Profile auf den folgenden Plattformen bereitstellen:
 -   Mac OS X 10.9 und höher
 
 Für Geräte mit Windows 8.1, Windows 10 Desktop oder mobilen Betriebssystemen können Sie ein WLAN-Konfigurationsprofil importieren, das zuvor in eine Datei exportiert wurde. Ausführliche Informationen finden Sie unter [Exportieren oder Importieren eines WLAN-Konfigurationsprofils für Windows-Geräte](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices).
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 1.  Wählen Sie in der [Microsoft Intune-Administratorkonsole](https://manage.microsoft.com) **Richtlinie** &gt; **Richtlinie hinzufügen** aus.
 
