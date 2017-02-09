@@ -2,8 +2,8 @@
 title: "Geräteverwaltung mit Exchange ActiveSync | Microsoft-Dokumentation"
 description: "Verwalten mobiler Geräte mit der Exchange ActiveSync (EAS)-Verwaltung und dem Exchange Connector"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
