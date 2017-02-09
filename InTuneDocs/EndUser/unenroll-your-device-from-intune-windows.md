@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
@@ -29,9 +30,9 @@ Wenn Sie in Intune registriert sind, Ihr Windows-Gerät aber nicht mehr für die
 
 Klicken Sie zum Aufheben der Registrierung Ihres Geräts im Abschnitt „Inhalt dieses Artikels“ weiter oben auf den Link, der dem Typ Ihres Geräts entspricht:
 
--   [Aufheben der Registrierung Ihres Windows 10-Geräts](#unenroll-your-windows-10-device)
--   [Aufheben der Registrierung Ihres Computers mit Windows 8.1](#unenroll-your-windows-8-1-computer)
--   [Aufheben der Registrierung Ihres Windows Phone 8.1-Geräts](#unenroll-your-windows-phone-8-1-device)
+-    [Aufheben der Registrierung Ihres Windows 10-Geräts](#unenroll-your-windows-10-device)
+-    [Aufheben der Registrierung Ihres Computers mit Windows 8.1](#unenroll-your-windows-8-1-computer)
+-    [Aufheben der Registrierung Ihres Windows Phone 8.1-Geräts](#unenroll-your-windows-phone-8-1-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>Aufheben der Registrierung Ihres Windows 10-Geräts
 

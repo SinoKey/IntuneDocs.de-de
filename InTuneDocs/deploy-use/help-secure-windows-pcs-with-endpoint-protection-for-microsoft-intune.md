@@ -2,10 +2,10 @@
 title: "Endpoint Protection für Windows-PCs | Microsoft-Dokumentation"
 description: "Sichern Sie Ihre verwalteten Computer mit Endpoint Protection, einer Lösung, die Echtzeitschutz vor Malwarebedrohungen bietet."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: arob98
-ms.date: 07/25/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
