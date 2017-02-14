@@ -57,8 +57,7 @@
 #### [Android-Verwaltung](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Android for Work-Verwaltung](deploy-use/set-up-android-for-work.md)
 #### [Windows-Geräteverwaltung](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile und Windows Phone](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
-### [Verwalten unternehmenseigener Geräte](deploy-use/manage-corporate-owned-devices.md)
+### [Verwalten firmeneigener Geräte](deploy-use/manage-corporate-owned-devices.md)
 #### [Registrieren unternehmenseigener iOS-Geräte](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Registrierung mit dem Setup-Assistenten](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
 ##### [Direkte Registrierung](deploy-use/ios-direct-enrollment-in-microsoft-intune.md)
@@ -222,6 +221,6 @@
 # [Glossar](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 
