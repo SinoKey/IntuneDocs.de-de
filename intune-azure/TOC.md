@@ -4,6 +4,7 @@
 <!---(introduction/get-started.md) --->
 ### [Registrieren Sie sich für eine kostenlose Testversion](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [Neuerungen](introduction/whats-new.md)
+## [Bekannte Probleme](introduction/known-issues-in-the-intune-preview.md)
 <!--- ## [Get support](introduction/get-support.md)
 ## [Related resources](introduction/related-resources.md)
 
@@ -37,9 +38,7 @@
 #### [Hinzufügen von Apple Configurator-Seriennummern](enroll-devices/add-apple-configurator-serial-numbers.md)
 #### [Registrieren von iOS-Geräten mithilfe des Programms zur Geräteregistrierung](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Registrieren von Geräten mithilfe des Geräteregistrierungs-Managers](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
-### Windows-Geräte registrieren
-#### [Registrieren von Windows Phone- und Windows 10-Mobilgeräten](enroll-devices/enroll-windows-mobile-devices.md)
-#### [Registrieren von Windows-PCs als mobile Geräte](enroll-devices/enroll-windows-pcs-as-mobile-devices.md)
+### [Registrieren von Windows-Geräten](enroll-devices/enroll-window-devices.md)
 ### Verwalten der Geräteregistrierung
 #### [Festlegen von Nutzungsbedingungen](enroll-devices/create-terms-and-conditions.md)
 #### [Festlegen von Registrierungseinschränkungen](enroll-devices/set-enrollment-restrictions.md)
@@ -81,14 +80,14 @@
 ### [Zuweisen von Apps](manage-apps/deploy-apps.md)
 ### [Überwachen von Apps](manage-apps/monitor-apps.md)
 ### [Verwenden von Richtlinien zur App-Konfiguration](manage-apps/app-configuration-policies.md)
-<!--- ### [Selectively wipe apps](manage-apps/app-selective-wipe.md)--->
+### [Selektives Zurücksetzen von Apps](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [Arbeiten mit per Volumenlizenz erworbenen Apps](manage-apps/volume-purchased-apps.md)
 #### [VPP-Apps für iOS](manage-apps/ios-vpp-apps.md)
 #### [Windows Store für Unternehmen-Apps](manage-apps/wsfb-apps.md)
 ### [Konfigurieren der Unternehmensportal-App](manage-apps/company-portal-app.md)
 ## Verwenden der App-Schutzrichtlinien
-### [Erstellen & Bereitstellen von App-Schutzrichtlinien](manage-apps/app-protection-policies.md)
+### [Erstellen & Zuweisen von App-Schutzrichtlinien](manage-apps/app-protection-policies.md)
 #### [Einstellungen für Android](manage-apps/android-app-protection-policy-settings.md)
 #### [Einstellungen für iOS](manage-apps/ios-app-protection-policy-settings.md)
 ### [Überprüfen von App-Schutzrichtlinien](manage-apps/validate-app-protection-policies.md)
@@ -187,6 +186,6 @@
 ## [Intune Graph-API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 
