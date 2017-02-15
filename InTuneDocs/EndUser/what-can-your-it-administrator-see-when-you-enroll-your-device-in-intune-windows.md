@@ -30,35 +30,35 @@ Wenn Sie Ihr Windows-Gerät bei Intune registrieren, gestatten Sie damit Ihrem I
 
 **Das kann der IT-Administrator nicht sehen**
 
--   Anrufliste und Webverlauf
+- Anrufliste und Webverlauf
 
--   Standort
+-    Standort
 
--   E-Mail-Nachrichten und SMS
+- E-Mail-Nachrichten und SMS
 
--   Kontakte
+- Kontakte
 
--   Kennwörter
+-    Kennwörter
 
--   Kalender
+- Kalender
 
--   Eigene Aufnahmen
+- Eigene Aufnahmen
 
 **Das kann der IT-Administrator sehen**
 
--   Modell
+- Modell
 
--   Seriennummer
+- Seriennummer
 
--   Betriebssystem
+- Betriebssystem
 
--   App-Namen
+- App-Namen
 
--   Besitzer
+- Besitzer
 
--   Gerätename
+- Gerätename
 
--   Hersteller
+- Hersteller
 
 Weitere Informationen finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Windows-Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md).
 
