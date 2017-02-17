@@ -38,11 +38,12 @@
 #### [Hinzufügen von Apple Configurator-Seriennummern](enroll-devices/add-apple-configurator-serial-numbers.md)
 #### [Registrieren von iOS-Geräten mithilfe des Programms zur Geräteregistrierung](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Registrieren von Geräten mithilfe des Geräteregistrierungs-Managers](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+### [Registrieren von macOS-Geräten](enroll-devices/enroll-macos-devices.md)
 ### [Registrieren von Windows-Geräten](enroll-devices/enroll-window-devices.md)
 ### Verwalten der Geräteregistrierung
 #### [Festlegen von Nutzungsbedingungen](enroll-devices/create-terms-and-conditions.md)
 #### [Festlegen von Registrierungseinschränkungen](enroll-devices/set-enrollment-restrictions.md)
-#### [Zuordnen von Gerätegruppen](enroll-devices/how-to-use-device-group-mapping.md)
+#### [Zuweisen von Geräten zu Gruppen](enroll-devices/how-to-use-device-group-mapping.md)
 #### [Hinzufügen von Unternehmensbezeichnern](enroll-devices/add-corporate-identifiers.md)
 #### [Verwenden von Windows Hello for Business](enroll-devices/how-to-use-windows-hello.md)
 <!--- ## [Troubleshoot](enroll-devices/troubleshooting.md) --->
