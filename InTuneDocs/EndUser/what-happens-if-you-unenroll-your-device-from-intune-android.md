@@ -16,6 +16,7 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 16d970e13bfac29460bab885188f45df1202a4d9
@@ -30,7 +31,7 @@ Wenn Sie die Registrierung Ihres Android-Geräts bei Intune aufheben, geschieht 
 
 -   Ihr IT-Administrator verwaltet das Gerät nicht mehr.
 
--   Sie verlieren den Zugriff auf Unternehmensdaten und -ressourcen.
+-    Sie verlieren den Zugriff auf Unternehmensdaten und -ressourcen.
 
 -   Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
 

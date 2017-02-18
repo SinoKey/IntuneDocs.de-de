@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
 ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
@@ -81,8 +82,8 @@ Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompa
   * **iOS**
   * **Android**
 4.  Wählen Sie unter **Zielgruppen** **Ändern** aus, um die Azure Active Directory-Sicherheitsgruppen auszuwählen, für die die Richtlinie gelten soll. Sie können dies für alle Benutzer oder nur für eine ausgewählte Benutzergruppe festlegen.
-5.  Wählen Sie unter **Exempted Groups** (Ausgenommene Gruppen) optional **Ändern**, um die Azure Active Directory-Sicherheitsgruppen auszuwählen, die von dieser Richtlinie ausgenommen werden.
-6.  Wählen Sie abschließend **Speichern** aus.
+5.    Wählen Sie unter **Exempted Groups** (Ausgenommene Gruppen) optional **Ändern**, um die Azure Active Directory-Sicherheitsgruppen auszuwählen, die von dieser Richtlinie ausgenommen werden.
+6.    Wählen Sie abschließend **Speichern** aus.
 
 Sie haben den bedingten Zugriff für Dynamics CRM konfiguriert. Die Richtlinie für bedingten Zugriff wird sofort wirksam und muss nicht explizit bereitgestellt werden.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>Überwachen der Richtlinien für Konformität und bedingten Zugriff

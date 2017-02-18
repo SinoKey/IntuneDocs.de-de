@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
 ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
@@ -154,7 +155,7 @@ Geben Sie in der Verwaltungskonsole von ISE diese Einstellungswerte ein:
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Informationen die zwischen Ihrem Intune-Mandanten und Ihrem Cisco ISE-Server freigegeben sind.
 Diese Tabelle listet die Informationen auf, die zwischen Ihrem Intune-Mandanten und Ihrem Cisco ISE-Server für die mit Intune verwalteten Geräte freigegeben sind.
 
-|Eigenschaft|  Beschreibung|
+|Eigenschaft|    Beschreibung|
 |---------------|------------------------------------------------------------|
 |complianceState|Die Zeichenfolge TRUE oder FALSE, die angibt, ob das Gerät kompatibel ist oder nicht.|
 |isManaged|Die Zeichenfolge TRUE oder FALSE, die angibt, ob der Client durch Intune verwaltet wird oder nicht.|

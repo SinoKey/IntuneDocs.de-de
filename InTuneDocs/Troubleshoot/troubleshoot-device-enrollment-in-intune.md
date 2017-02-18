@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
 ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
@@ -31,10 +32,10 @@ Dieses Thema enthält Vorschläge zur Problembehandlung bei Problemen mit der Ge
 
 Bevor Sie mit der Problembehandlung beginnen, stellen Sie sicher, dass Intune ordnungsgemäß konfiguriert wurde, um die Registrierung zu ermöglichen. Informationen zu diesen Konfigurationsanforderungen finden Sie unter:
 
--   [Vorbereiten der Registrierung von Geräten in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
--   [Einrichten der iOS- und Mac-Geräteverwaltung](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--   [Einrichten der Windows 10 Mobile- und Windows Phone-Verwaltung mit Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
--   [Einrichten der Windows-Geräteverwaltung](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-    [Vorbereiten der Registrierung von Geräten in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
+-    [Einrichten der iOS- und Mac-Geräteverwaltung](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-    [Einrichten der Windows 10 Mobile- und Windows Phone-Verwaltung mit Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+-    [Einrichten der Windows-Geräteverwaltung](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
 
 Ihre Benutzer verwalteter Geräte können Registrierungs- und Diagnoseprotokolle erfassen, die Sie überprüfen können. Benutzeranleitungen zur Erfassung der Protokolle finden Sie unter:
@@ -227,16 +228,16 @@ Der Zertifikatfehler tritt auf, da auf Android-Geräten Zwischenzertifikate für
 
 Um das Problem zu beheben, importieren Sie die Zertifikate wie folgt in die persönlichen Zertifikate des Computers auf dem AD FS-Server oder den Proxys:
 
-1.  Starten Sie die Konsole zur Zertifikatverwaltung für den lokalen Computer auf dem AD FS- und dem Proxyserver, indem Sie mit der rechten Maustaste auf die Schaltfläche **Start** klicken, **Ausführen** auswählen und **certlm.msc** eingeben.
-2.  Erweitern Sie **Persönlich**, und wählen Sie **Zertifikate** aus.
-3.  Suchen Sie das Zertifikat für Ihre Kommunikation mit dem AD FS-Dienst (ein öffentlich signiertes Zertifikat), und doppelklicken Sie darauf, um seine Eigenschaften anzuzeigen.
-4.  Klicken Sie auf die Schaltfläche **Zertifizierungspfad**, um die übergeordneten Zertifikate des Zertifikats anzuzeigen.
-5.  Wählen Sie in jedem übergeordneten Zertifikat die Option **Zertifikat anzeigen** aus.
-6.  Klicken Sie auf der Registerkarte **Details** auf **In Datei kopieren**.
-7.  Führen Sie die Anweisungen des Assistenten aus, um den des öffentlichen Schlüssel des Zertifikats an den gewünschten Speicherort zu exportieren oder zu speichern.
-8.  Importieren Sie die übergeordneten Zertifikate, die in Schritt 3 nach „Local Computer\Personal\Certificates“ exportiert wurden, indem Sie mit der rechten Maustaste auf **Zertifikate** klicken, **Alle Aufgaben** > **Importieren** auswählen und dann den Anweisungen des Assistenten zum Importieren der Zertifikate folgen.
-9.  Starten Sie die AD FS-Server neu.
-10. Wiederholen Sie die oben stehenden Schritte auf allen AD FS- und Proxyservern.
+1.    Starten Sie die Konsole zur Zertifikatverwaltung für den lokalen Computer auf dem AD FS- und dem Proxyserver, indem Sie mit der rechten Maustaste auf die Schaltfläche **Start** klicken, **Ausführen** auswählen und **certlm.msc** eingeben.
+2.    Erweitern Sie **Persönlich**, und wählen Sie **Zertifikate** aus.
+3.    Suchen Sie das Zertifikat für Ihre Kommunikation mit dem AD FS-Dienst (ein öffentlich signiertes Zertifikat), und doppelklicken Sie darauf, um seine Eigenschaften anzuzeigen.
+4.    Klicken Sie auf die Schaltfläche **Zertifizierungspfad**, um die übergeordneten Zertifikate des Zertifikats anzuzeigen.
+5.    Wählen Sie in jedem übergeordneten Zertifikat die Option **Zertifikat anzeigen** aus.
+6.    Klicken Sie auf der Registerkarte **Details** auf **In Datei kopieren**.
+7.    Führen Sie die Anweisungen des Assistenten aus, um den des öffentlichen Schlüssel des Zertifikats an den gewünschten Speicherort zu exportieren oder zu speichern.
+8.    Importieren Sie die übergeordneten Zertifikate, die in Schritt 3 nach „Local Computer\Personal\Certificates“ exportiert wurden, indem Sie mit der rechten Maustaste auf **Zertifikate** klicken, **Alle Aufgaben** > **Importieren** auswählen und dann den Anweisungen des Assistenten zum Importieren der Zertifikate folgen.
+9.    Starten Sie die AD FS-Server neu.
+10.    Wiederholen Sie die oben stehenden Schritte auf allen AD FS- und Proxyservern.
 Der Benutzer sollte sich jetzt mit dem Android-Gerät bei der Unternehmensportal-App anmelden können.
 
 **So überprüfen Sie, ob das Zertifikat richtig installiert wurde**

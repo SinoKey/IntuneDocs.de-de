@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
 ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
@@ -143,7 +144,7 @@ Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompa
         Dies setzt voraus, dass jedes Gerät, das für den Zugriff auf **SharePoint Online** verwendet wird, in Intune registriert und mit den Richtlinien kompatibel ist. Jede Clientanwendung, die die **moderne Authentifizierung** verwendet, unterliegt der Richtlinie für bedingten Zugriff. Wenn die Plattform zurzeit von Intune nicht unterstützt wird, ist der Zugriff auf **SharePoint** blockiert.
 
         Die Auswahl der Option **Alle Plattformen** bedeutet, dass Azure Active Directory diese Richtlinie auf alle Authentifizierungsanforderungen anwendet, unabhängig von der Plattform, die von der Clientanwendung gemeldet wird. Alle Plattformen müssen registriert und kompatibel sein, mit Ausnahme von:
-        *   Windows-Geräten. Diese müssen registriert werden und kompatibel sein, mit der lokalen Active Directory-Domäne verknüpft sein oder beides.
+        *    Windows-Geräten. Diese müssen registriert werden und kompatibel sein, mit der lokalen Active Directory-Domäne verknüpft sein oder beides.
         * nicht unterstützten Plattformen wie Mac. Allerdings werden Apps, die die moderne Authentifizierung von diesen Plattformen verwenden, weiterhin blockiert.
 
     -   **Bestimmte Plattformen**

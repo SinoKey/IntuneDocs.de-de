@@ -14,6 +14,7 @@ ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 15c820d4b25b8deb3ab17601a4835c57e5ede780
@@ -27,7 +28,7 @@ Damit Sie auf Ihre Arbeit zugreifen können, verlangt der IT-Administrator von I
 
 **Gehen Sie wie folgt vor:**
 
-1.  Wenn die folgende Aufforderung angezeigt wird, tippen Sie auf **Installieren**, um die Installation von Lookout for Work auf Ihrem Gerät zuzulassen.
+1.    Wenn die folgende Aufforderung angezeigt wird, tippen Sie auf **Installieren**, um die Installation von Lookout for Work auf Ihrem Gerät zuzulassen.
 
     ![Auf „Installieren“ tippen, um Lookout for Work zu installieren](./media/ios-lfw-install-app-request.png)
 
