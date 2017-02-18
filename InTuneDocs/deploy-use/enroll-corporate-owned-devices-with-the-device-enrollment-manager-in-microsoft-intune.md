@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/04/17
+ms.date: 01/29/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b06bb501e71bae5225d451d9ee460213eee183de
-ms.openlocfilehash: 058212ff935f085d569b37298f146623d217ddbe
+ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
+ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
 
 
 ---
@@ -25,9 +26,12 @@ ms.openlocfilehash: 058212ff935f085d569b37298f146623d217ddbe
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Mit Intune können Organisationen eine Vielzahl mobiler Geräte mit einem einzelnen Benutzerkonto verwalten. Das Konto *Geräteregistrierungs-Manager* (device enrollment manager, DEM) ist ein spezielles Benutzerkonto mit dem bis zu 1.000 Geräte registriert werden können. Sie fügen vorhandene Benutzer zum Konto des Geräteregistrierungs-Managers (DEM) hinzu, damit diese bestimmte DEM-Fähigkeiten erhalten. Jedes registrierte Gerät verwendet eine Einzellizenz. Es empfiehlt sich, Geräte zu verwenden, die mithilfe dieses Kontos als freigegebene Geräte registriert wurden, statt persönlicher („BYOD“) Geräte.  
+Mit Intune können Organisationen eine Vielzahl mobiler Geräte mit einem einzelnen Benutzerkonto verwalten. Das Konto *Geräteregistrierungs-Manager* (device enrollment manager, DEM) ist ein spezielles Benutzerkonto mit dem bis zu 1.000 Geräte registriert werden können. Sie fügen vorhandene Benutzer zum Konto des Geräteregistrierungs-Managers (DEM) hinzu, damit diese bestimmte DEM-Fähigkeiten erhalten. Jedes registrierte Gerät verwendet eine Einzellizenz. Wir empfehlen, dass Sie Geräte verwenden, die mithilfe dieses Kontos als freigegebene Geräte registriert wurden (also ohne Benutzeraffinität) und nicht als persönliche Geräte (BYOD).  
 
 Es müssen Benutzer im Azure-Portal vorhanden sein, damit sie als Geräteregistrierungs-Manager hinzugefügt werden können. Für die optimale Sicherheit darf der DEM-Benutzer nicht zusätzlich Intune-Administrator sein.
+
+>[!NOTE]
+>Die Registrierung mithilfe des DEM-Kontos kann nicht zusammen mit der Registrierung mithilfe des [Setup-Assistenten von Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md), mit der [direkten Registrierung](ios-direct-enrollment-in-microsoft-intune.md) oder der [Registrierung über das Programm zur Geräteregistrierung](ios-device-enrollment-program-in-microsoft-intune.md) verwendet werden. 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Beispiel für ein Geräteregistrierungs-Manager-Szenario:
 
@@ -105,6 +109,6 @@ Wenn Sie einen Geräteregistrierungs-Manager löschen, wirkt sich dies nicht auf
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

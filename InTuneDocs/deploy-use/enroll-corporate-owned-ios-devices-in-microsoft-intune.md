@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 09/07/2016
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fdaeddae669a5b519973117b9adf676b43ce1aa1
+ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
+ms.openlocfilehash: 03f5da3a819768ff8221257f091a000f18f00fb4
 
 
 ---
@@ -26,9 +27,18 @@ ms.openlocfilehash: fdaeddae669a5b519973117b9adf676b43ce1aa1
 
 Microsoft Intune unterstützt die Registrierung von firmeneigenen iOS-Geräten mithilfe des Apple-Programms zur Geräteregistrierung (Device Enrollment Program, DEP) oder des Tools [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017), das auf einem Mac-Computer ausgeführt wird.
 
-**Voraussetzung:** Ein [Apple Push Notification Service-Zertifikat](set-up-ios-and-mac-management-with-microsoft-intune.md) ist erforderlich.
+**Voraussetzung:** Ein [Apple Push Notification Service-Zertifikat](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-Sie können im Unternehmen registrierte iOS-Geräte auf drei Arten registrieren: mit Apple Configurator, DEP oder dem Unternehmensportal.
+Sie können firmeneigene iOS-Geräte registrieren, indem Sie eine der drei folgenden Methoden auswählen:
+
+- Apple Configurator, das Verwenden des Setup-Assistenten oder die direkte Registrierung
+- Programm zur Geräteregistrierung
+- Unternehmensportal-App
+
+>[!NOTE]
+>Die Registrierung mithilfe von Apple Configurator oder dem Programm zur Geräteregistrierung kann nicht zusammen mit der Registrierung mithilfe des [Geräteregistrierungs-Managers](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) verwendet werden.
+
+Standardmäßig dürfen alle iOS-Geräte in Intune registriert werden. Um persönliche oder unternehmenseigene Daten für die Registrierung zu blockieren, melden Sie sich mit Ihren Administratoranmeldeinformationen im [Microsoft Intune-Verwaltungsportal](http://manage.microsoft.com) an. Wählen Sie **Admin** (Administrator) > **Verwaltung mobiler Geräte** > **Registrierungsregeln** aus, und deaktivieren Sie anschließend die anwendbaren Optionen.
 
 ## <a name="use-apple-configurator"></a>Verwenden von Apple Configurator
 
@@ -47,8 +57,8 @@ Auf mit Benutzeraffinität konfigurierten Geräte kann die Unternehmensportal-Ap
 
 Benutzeraffinität ist erforderlich, um Folgendes zu unterstützen:
   - MAM-Apps (Mobile Application Management, Verwaltung mobiler Anwendungen)
-  - Bedingten Zugriff auf E-Mail- und Unternehmensdaten
-  - Unternehmensportal-App
+  -    Bedingten Zugriff auf E-Mail- und Unternehmensdaten
+  -    Unternehmensportal-App
 
 **Registrieren von firmeneigenen iOS-Geräten mit Benutzeraffinität durch Benutzer**
 1. Wenn Benutzer ihr Gerät einschalten, werden sie aufgefordert, den Setup-Assistenten zu durchlaufen. Während des Setups werden Benutzer zur Eingabe ihrer Anmeldeinformationen aufgefordert. Sie müssen die Anmeldeinformationen (d. h. den eindeutigen persönlichen Namen) verwenden, die ihrem Abonnement in Intune zugeordnet sind.
@@ -84,6 +94,6 @@ Wenn Benutzeraffinität erforderlich ist, muss vor der Registrierung des Geräts
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 
