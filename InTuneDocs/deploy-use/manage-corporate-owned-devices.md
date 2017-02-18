@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 58270feb34185441406abc15e1f889c2924722e8
+ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
+ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
 
 
 ---
@@ -25,6 +26,8 @@ ms.openlocfilehash: 58270feb34185441406abc15e1f889c2924722e8
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Sie können organisations- bzw. unternehmenseigene Geräte auf verschiedene Weise für die Verwaltung durch Intune registrieren, je nachdem, um welches Gerät es sich handelt, wie es erworben wurde und welche Anforderungen der Organisation bestehen. Sie können auch die Unternehmensportal-App installieren, um unternehmenseigene Geräte zu registrieren und zu verwalten, ähnlich wie in einem BYOD-Szenario („Bring Your Own Device“).
+
+Standardmäßig dürfen Geräte für alle Plattformen in Intune registriert werden. Um Geräte für die Registrierung zu blockieren, melden Sie sich mit Ihren Administratoranmeldeinformationen im [Microsoft Intune-Verwaltungsportal](http://manage.microsoft.com) an. Wählen Sie **Admin**(Administrator) > **Verwaltung mobiler Geräte** > **Registrierungsregeln**, und deaktivieren Sie die entsprechenden Kontrollkästchen, die Sie blockieren möchten.
 
 ## <a name="enroll-corporate-owned-ios-devices"></a>Registrieren firmeneigener iOS-Geräte
 
@@ -65,6 +68,6 @@ Wenn ein Gerät als Unternehmensgerät markiert wurde, wird im Gerätedatensatz 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 

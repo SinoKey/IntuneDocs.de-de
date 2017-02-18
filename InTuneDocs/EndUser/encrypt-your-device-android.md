@@ -1,11 +1,11 @@
 ---
-title: "Verschlüsseln Ihres Geräts | Microsoft-Dokumentation"
-description: "Beschreibt das Verschlüsseln eines Android-Geräts."
+title: "Schützen Ihres Android-Geräts mit Verschlüsselung | Microsoft-Dokumentation"
+description: "Schützen Ihres Android-Geräts"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/7/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,24 @@ ms.technology:
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 54439c96b75efd60e2068207eb1602e669504831
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
 
 
 ---
 
 
-# <a name="encrypt-your-device"></a>Registrieren Ihres Geräts
+# <a name="how-to-protect-your-android-device-using-encryption"></a>So schützen Sie Ihr Android-Gerät mit Verschlüsselung
 
-Wenn Ihr Unternehmen oder Ihre Organisation Sie um die Verschlüsselung Ihres Android-Geräts bittet, bevor Sie auf Unternehmensdateien, E-Mails oder Daten zugreifen können, befolgen Sie die untenstehenden Schritte zum Verschlüsseln des Geräts. Sie werden möglicherweise aufgefordert, vor dem Verschlüsseln eine PIN oder ein Kennwort festzulegen, wenn dies vom IT-Administrator gefordert wird.
+Wenn Sie ein Gerät verschlüsseln, umschließen Sie die darauf enthaltenen Informationen mit einer Schicht aus schützendem Code, der den Zugriff durch Unbefugte darauf verhindert. Damit sichergestellt werden kann, dass Ihre Informationen geschützt sind, werden Sie von Ihrer Organisation angewiesen, Ihr Android-Gerät zu schützen, bevor Sie auf Unternehmensdateien, -E-Mails und -daten zugreifen können.
+
+> [!Note]
+> Sie werden möglicherweise aufgefordert, vor dem Verschlüsseln eine PIN oder ein Kennwort festzulegen, wenn dies vom IT-Administrator gefordert wird.
 
 Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
 
@@ -63,6 +68,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 
