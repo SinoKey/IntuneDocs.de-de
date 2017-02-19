@@ -1,6 +1,6 @@
 ---
 
-title: "Einstellungen für Android- und Samsung KNOX Standard-Richtlinien | Microsoft-Dokumentation"
+title: "Einstellungen für Android- und Samsung KNOX-Richtlinien | Microsoft-Dokumentation"
 description: "Erstellen Sie Richtlinien, die Einstellungen und Features auf Android-Geräten steuern, die Sie mit Intune verwalten."
 keywords: 
 author: robstackmsft
@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a90e5bc6ed9c4c7447f6ed673f9b75db99257c04
-ms.openlocfilehash: 3f7236989ec2d444601aba4a594175a289e2fc77
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 2da96c2ffb6cc826494972ab8c88ce62981eeae6
 
 
 ---
@@ -211,6 +212,6 @@ Intune unterstützt zurzeit eine begrenzte Anzahl von benutzerdefinierten Androi
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
