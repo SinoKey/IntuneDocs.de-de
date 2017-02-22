@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 590a5df066c69e2369d0b586d52def1abd64a379
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 
 
 ---
@@ -24,18 +25,19 @@ ms.openlocfilehash: 590a5df066c69e2369d0b586d52def1abd64a379
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Sie können den E-Mail-Zugriff auf lokales Exchange oder auf die ältere Exchange Online Dedicated-Umgebung mithilfe von Microsoft Intune konfigurieren.
+Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Protect access to email and O365 services (Schützen des Zugriffs auf E-Mail- und Office&365;-Dienste)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+
 > [!NOTE]
 > Wenn Sie über eine Exchange Online Dedicated-Umgebung verfügen und herausfinden müssen, ob es sich um die neue oder die ältere Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer.
 
+## <a name="before-you-begin"></a>Vorbereitung
 
-Um den E-Mail-Zugriff auf lokales Exchange oder Ihre ältere Exchange Online Dedicated-Umgebung zu steuern, können Sie den bedingten Zugriff für lokales Exchange in Microsoft Intune konfigurieren.
-Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Protect access to email and O365 services (Schützen des Zugriffs auf E-Mail- und Office&365;-Dienste)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
-
-**Bevor** Sie den bedingten Zugriff konfigurieren können, müssen Sie Folgendes überprüfen:
+Stellen Sie Folgendes sicher:
 
 -   Bei Ihrer Exchange-Version muss es sich um **Exchange 2010 oder höher** handeln. Exchange Server-Clientzugriffsserver-Arrays werden unterstützt.
 
--   Sie müssen den **lokalen Exchange Connector** verwenden, der [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] mit dem lokalen Exchange verbindet. Auf diese Weise können Sie Geräte über die [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Konsole verwalten. Informationen zum Connector finden Sie unter [Lokaler Exchange-Connector für Intune](intune-on-premises-exchange-connector.md).
+-   Sie müssen den [lokalen Intune Exchange-Connector](intune-on-premises-exchange-connector.md) verwenden, der [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] mit dem lokalen Exchange verbindet. Auf diese Weise können Sie Geräte über die [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Konsole verwalten.
 
     -   Der lokale Exchange Connector, der Ihnen in der Intune-Konsole zur Verfügung steht, ist spezifisch für Ihren Intune-Mandanten und kann mit keinem anderen Mandanten verwendet werden. Es wird empfohlen sicherzustellen, dass der Exchange-Connector für Ihren Mandanten **nur auf einem Computer** installiert ist.
 
@@ -47,6 +49,8 @@ Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Ar
 
 -   Sie müssen **Exchange ActiveSync** für die zertifikatbasierte Authentifizierung oder die Eingabe von Anmeldeinformationen durch Benutzer konfigurieren.
 
+### <a name="device-compliance-requirements"></a>Konformitätsanfoderungen für Geräte
+
 Wenn Sie Richtlinien für bedingten Zugriff konfigurieren und auf einen Benutzer anwenden, muss das **Gerät**, das der Benutzer zum Abrufen von E-Mails verwendet, folgende Voraussetzungen erfüllen:
 
 -  Es muss ein in die Domäne eingebundener PC oder bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] **registriert** sein.
@@ -57,11 +61,13 @@ Wenn Sie Richtlinien für bedingten Zugriff konfigurieren und auf einen Benutzer
 
 -   Es muss mit allen für das Gerät festgelegten [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Kompatibilitätsrichtlinien **kompatibel** sein.
 
+### <a name="how-conditional-access-works-with-exchange-on-premises"></a>So funktioniert der bedingte Zugriff bei lokalem Exchange
+
 Das folgende Diagramm veranschaulicht den Ablauf, der von den Richtlinien für bedingten Zugriff für die lokale Exchange-Umgebung verwendet wird, um zu bewerten, ob Geräte zugelassen oder blockiert werden.
 
 ![Diagramm mit den Entscheidungspunkten, die bestimmen, ob der Zugriff eines Geräts auf lokales Exchange zugelassen oder blockiert wird](../media/ConditionalAccess8-2.png)
 
-Wenn eine Bedingung für bedingten Zugriff nicht erfüllt wird, erhält der Benutzer bei der Anmeldung die folgenden Meldungen:
+Wenn eine Richtlinie für bedingten Zugriff nicht erfüllt wird, gilt ein 10-minütiges Zeitfenster zwischen dem Sperren des Geräts und dem Erhalt einer der folgenden Quarantänenachrichten durch den Benutzer bei seiner Anmeldung:
 
 - Wenn das Gerät nicht bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] oder in Azure Active Directory registriert ist, wird eine Meldung mit Anweisungen zum Installieren der Unternehmensportal-App, zum Registrieren des Geräts und zum Aktivieren des E-Mail-Zugriffs angezeigt. Dieser Prozess verknüpft auch die Exchange ActiveSync-ID mit dem Eintrag des Geräts in Azure Active Directory.
 
@@ -136,6 +142,6 @@ Folgendes wird unterstützt:
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
+ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
+ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
 
 
 ---
@@ -33,11 +34,11 @@ Wenn zusätzliche Maßnahmen zum Schutz vor Datenverlust erforderlich sind, verw
 IT-Administratoren oder Benutzer können auch alternative E-Mail-Clients installieren (z.B. Microsoft Outlook für Android oder iOS). Diese E-Mail-Clients unterstützen möglicherweise keine E-Mail-Profile und können nicht mithilfe der E-Mail-Profile von Intune eingerichtet werden.  
 
 Sie können E-Mail-Profile verwenden, um den systemeigenen E-Mail-Client auf den folgenden Gerätetypen zu konfigurieren:
--   Windows Phone 8.1 und höher
--   Windows 10 (Desktopversion), Windows 10 Mobile und höher
--   iOS 8.0 und höher
--   Samsung KNOX Standard (4.0 und höher)
--   Android for Work
+-    Windows Phone 8.1 und höher
+-    Windows 10 (Desktopversion), Windows 10 Mobile und höher
+-    iOS 8.0 und höher
+-    Samsung KNOX Standard (4.0 und höher)
+-    Android for Work
 
 >[!NOTE]
 >Intune stellt zwei Android for Work-E-Mail-Profile bereit: eines für die Gmail-E-Mail-App und eines für die Nine Work-E-Mail-App. Diese Apps sind im Google Play Store erhältlich und unterstützen Verbindungen mit Exchange. Stellen Sie auf den Geräten der Benutzer eine dieser E-Mail-Apps bereit, erstellen Sie das entsprechende Profil, und stellen Sie dieses bereit, um die E-Mail-Konnektivität zu aktivieren.
@@ -88,7 +89,7 @@ Das Kennwort ist nicht im E-Mail-Profil enthalten, sodass der Benutzer dieses be
 
     -   **E-Mail-Profil (Android for Work – Gmail)**
 
-    -   **E-Mail-Profil (Android for Work – Nine Work)**
+    -    **E-Mail-Profil (Android for Work – Nine Work)**
 
     Sie können nur benutzerdefinierte E-Mail-Profilrichtlinien erstellen. Empfohlene Einstellungen sind nicht verfügbar.
 
@@ -134,10 +135,10 @@ Eine Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeit
 
 > [!NOTE]
 > - Stellen Sie zusätzlich zu den entsprechenden E-Mail-Profilen auch die Gmail- oder die Nine Work-E-Mail-App für Android for Work bereit.
-> - Wenn Sie ein E-Mail-Profil von einem Gerät entfernen, bearbeiten Sie die Bereitstellung, und entfernen Sie alle Gruppen, in denen das Gerät Mitglied ist.
+> - Wenn Sie ein E-Mail-Profil von einem Gerät entfernen, bearbeiten Sie die Bereitstellung, und entfernen Sie alle Gruppen, in denen das Gerät Mitglied ist. Beachten Sie, dass Sie ein E-Mail-Profil nur dann auf diese Weise entfernen können, wenn es nicht das einzige E-Mail-Profil auf dem Gerät ist.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

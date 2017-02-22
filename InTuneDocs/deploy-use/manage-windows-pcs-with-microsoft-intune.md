@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 08/30/2016
+ms.date: 02/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3d2f3a7233ea7a5127baf5a08be1ccb41f717244
-ms.openlocfilehash: 4344251ede6d8cc338d84782d224d87fd78d5bd8
+ms.sourcegitcommit: 45c32cf08e4d6fd570af287ed64411edc9d9b394
+ms.openlocfilehash: 21e83b68bb68384a8916db8d7f779cddde18a8a6
 
 
 ---
@@ -23,12 +23,27 @@ ms.openlocfilehash: 4344251ede6d8cc338d84782d224d87fd78d5bd8
 # <a name="manage-windows-pcs-with-intune-pc-client-software"></a>Verwalten von Windows-PCs mit der Intune-PC-Clientsoftware
 Anstatt [Windows-PCs als mobile Geräte zu registrieren](set-up-windows-device-management-with-microsoft-intune.md), können Sie Windows-PCs auch registrieren und verwalten, indem Sie die Intune-Clientsoftware installieren.
 
-Intune verwaltet Windows-PCs mithilfe von Richtlinien ähnlich wie die Gruppenrichtlinienobjekte (Group Policy Objects, GPOs) der Windows Server Active Directory Domain Services (AD DS). Wenn Sie Computer in einer Active Directory-Domäne mit Intune verwalten, [stellen Sie sicher, dass Intune-Richtlinien nicht zu Konflikten mit GPOs führen](resolve-gpo-and-microsoft-intune-policy-conflicts.md), die für Ihre Organisation eingerichtet sind.
+Intune verwaltet Windows-PCs mithilfe von Richtlinien ähnlich wie die Gruppenrichtlinienobjekte (Group Policy Objects, GPOs) der Windows Server Active Directory Domain Services (AD DS). Wenn Sie Computer in einer Active Directory-Domäne mit Intune verwalten, [stellen Sie sicher, dass Intune-Richtlinien nicht zu Konflikten mit GPOs führen](resolve-gpo-and-microsoft-intune-policy-conflicts.md), die für Ihre Organisation eingerichtet sind. Weitere Informationen hierzu finden Sie unter [Gruppenrichtlinienobjekte (GPOs)](https://technet.microsoft.com/library/hh147307.aspx).
 
-Der Intune-Softwareclient verwaltet Softwareupdates, Windows-Firewall und Endpoint Protection und unterstützt auf diese Weise [Verwaltungsfunktionen zum Schutz von PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md). Allerdings können auf PCs, die mit dem Intune-Softwareclient verwaltet werden, keine anderen Intune-Richtlinien angewendet werden. Dies gilt auch für **Windows**-Richtlinieneinstellungen speziell für die Verwaltung mobiler Geräte.
+Der Intune-Softwareclient verwaltet Softwareupdates, Windows-Firewall und Endpoint Protection und unterstützt auf diese Weise [Verwaltungsfunktionen zum Schutz von PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md). Allerdings können auf PCs, die mit dem Intune-Softwareclient verwaltet werden, keine anderen Intune-Richtlinien angewendet werden. Dies gilt auch für **Windows**-Richtlinieneinstellungen speziell für die Verwaltung mobiler Geräte. 
+
+Wenn Sie den Intune-Softwareclient zum Verwalten von Windows-PCs verwenden, können Sie nur die Richtlinien im Abschnitt **Computerverwaltung** verwenden.
+
+  ![Auswählen der Vorlage für neue Windows-PC-Richtlinien](../media/select-template-for-pc-policy.png)
+
+Eine ausführliche Beschreibung der Richtlinien, die Sie festlegen können, finden Sie unter:
+
+- [Verwenden von Richtlinien zum Schutz von Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird](https://docs.microsoft.com/intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
+- [Aktualisieren Ihrer Windows-PCs mit Softwareupdates in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
+- [Unterstützen des Schutzes von Windows-PCs mithilfe von Windows-Firewall-Richtlinien in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)
+- [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+
+Wenn Sie Apps bereitstellen, können Sie außerdem nur Windows Installer (EXE, MSI) verwenden.
+
+  ![Auswählen von Plattform und Speicherort für PC-Clientsoftwaredateien](../media/select-platform-of-software-files-for-pc-agent.png)
 
 > [!NOTE]
-> Sie können Geräte mit Windows 8.1 oder höher entweder als PCs mithilfe des Intune-Clients oder als mobile Geräte mithilfe der Funktionalität zur Verwaltung mobiler Geräte (Mobile Device Management, MDM) verwalten. Sie können nicht beide Methoden zusammen verwenden. Dieses Thema gilt nur für das Verwalten von Geräten als PCs mithilfe des Intune-Softwareclients.
+> Sie können Geräte mit Windows 8.1 oder höher entweder als PCs mithilfe des Intune-Clients oder als mobile Geräte mithilfe der Funktionalität zur Verwaltung mobiler Geräte (Mobile Device Management, MDM) verwalten. Sie können nicht beide Methoden zusammen verwenden, daher müssen Sie Ihre Entscheidung sorgfältig überdenken, bevor Sie PCs mit dem Intune-Softwareclient verwalten. Dieses Thema gilt nur für das Verwalten von Geräten als PCs mithilfe des Intune-Softwareclients.
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Anforderungen für die Intune-PC-Clientverwaltung
 
@@ -44,17 +59,21 @@ Der Intune-Softwareclient verwaltet Softwareupdates, Windows-Firewall und Endpoi
 
 |Anforderungen|Weitere Informationen|
 |---------------|--------------------|
-|Betriebssystem | Windows-Gerät, auf dem Windows Vista oder höher ausgeführt wird. Versionen der Home-Edition werden nicht unterstützt.|
+|Betriebssystem | Windows-Gerät, auf dem Windows Vista oder höher ausgeführt wird. </br></br>**Versionen der Home Edition werden nicht unterstützt.**|
 |Administratorrechte|Das Konto, mit dem die Clientsoftware installiert wird, muss über lokale Administratorrechte auf diesem Gerät verfügen.|
 |Windows Installer 3.1|Auf dem PC wird Windows Installer 3.1 oder höher benötigt.<br /><br />So zeigen Sie die Windows Installer-Version auf einem PC an:<br /><br />  Klicken Sie auf dem PC mit der rechten Maustaste auf **%windir%\System32\msiexec.exe**, und klicken Sie dann auf **Eigenschaften**.<br /><br />Sie können die neueste Version von Windows Installer von der Microsoft Developer Network-Website unter [Windows Installer Redistributables (Weitervertreibbare Komponenten für Windows Installer)](http://go.microsoft.com/fwlink/?LinkID=234258) herunterladen.|
 |Entfernen nicht kompatibler Clientsoftware|Bevor Sie die Intune-Clientsoftware installieren, deinstallieren Sie sämtliche Clientsoftware für Configuration Manager, Operations Manager, Operations Management Suite und Service Manager auf diesem PC.|
 
-## <a name="computer-management-with-the-intune-computer-client"></a>Computerverwaltung mit dem Intune-Computerclient
+## <a name="computer-management-capabilities-with-the-intune-software-client"></a>Computerverwaltungsfunktionen mit dem Intune-Softwareclient
+
 Nach der Installation der Clientsoftware sind u.a. die folgenden Verwaltungsfunktionen möglich: 
 
 - [Anwendungsverwaltung](deploy-apps-in-microsoft-intune.md)
 
 - [Überwachung in Echtzeit und Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
+
+ > [!NOTE]
+ > Endpoint Protection ist dasselbe wie Windows Defender. Endpoint Protection betrifft Windows 7 und Windows 8. Ab Windows 10 wurde der Name des Produkts in Windows Defender geändert.
 
 - [Verwaltung von Windows-Firewall-Einstellungen](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md), Hardware- und Softwareinventur, Remotesteuerung (über Remoteunterstützungsanforderungen)
 
@@ -62,32 +81,38 @@ Nach der Installation der Clientsoftware sind u.a. die folgenden Verwaltungsfunk
 
 - Erstellen von Berichten zu Kompatibilitätseinstellungen
 
-Bestimmte Verwaltungsoptionen für PCs, die als mobile Geräte verwaltet werden, stehen nicht für über den Softwareclient verwaltete PCs zur Verfügung, wie z.B.:
+In der Intune-Verwaltungskonsole werden bestimmte Abschnitte, z.B. „Updates“, „Schutz“ und „Lizenzen“ nur angezeigt, wenn Sie Geräte mit dem Intune-Softwareclient registriert haben.
 
--   Vollständiges Zurücksetzen (selektives Zurücksetzen ist verfügbar)
+  ![Elemente der Verwaltungskonsole, die nur für den PC-Client angezeigt werden](../media/admin-console-settings-only-for-pc-agent.png)
 
--   Bedingter Zugriff
-
--   Windows-Richtlinien außer **Computerverwaltungsrichtlinien**
-
-  ![Richtlinienvorlage für Windows-PCs](../media/pc_policy_template.png)
-
-Zusätzlich zu den Aktionen, die der Intune-Client-Agent lokal auf einzelnen Computern ausführt, können Sie die Intune-Verwaltungskonsole auch für andere [allgemeine Computerverwaltungsaufgaben](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) auf Windows-PCs verwenden, auf denen der Client installiert ist:
+Sie können auch die Intune-Verwaltungskonsole verwenden, um andere [allgemeine Verwaltungsaufgaben](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) auf Windows-PCs auszuführen, auf denen der Client installiert ist:
 
 -   Anzeigen von Informationen zum Hardware- und Softwarebestand auf verwalteten Computern
 
 -   Remoteneustart eines Computers
 
--   Abkoppeln eines Computers zum Deinstallieren der Clientsoftware und Entfernen aus der Intune-Verwaltung
+-   Abkoppeln eines Computers zum Deinstallieren des Softwareclients und Entfernen aus der Intune-Verwaltung
 
 -   Verknüpfen von Benutzern mit bestimmten verwalteten Computern
 
 -   Reagieren auf Remoteunterstützungsanforderungen
 
-Der Intune-Client-Agent wird in der Regel im Hintergrund ausgeführt – Benutzerinteraktionen oder Maßnahmen zur Fehlerbehebung sind nur selten erforderlich. Sollten Sie jedoch Hilfe beim Lösen von Problemen mit der Computerverwaltung benötigen, stehen verschiedene [Ressourcen zur Lösung zur Verfügung](/intune/troubleshoot/troubleshoot-client-setup-in-microsoft-intune).
+## <a name="management-limitations-of-the-intune-software-client"></a>Verwaltungseinschränkungen des Intune-Softwareclients
+
+Einige Verwaltungsoptionen, die zum Verwalten von PCs als mobile Geräte verwendet werden können, sind nicht für PCs geeignet, die mit dem Intune-Softwareclient verwaltet werden:
+
+-   Vollständiges Zurücksetzen (selektives Zurücksetzen ist verfügbar)
+
+-   Bedingter Zugriff
+
+## <a name="help-with-troubleshooting"></a>Hilfe bei der Problembehandlung
+
+Der Intune-Client-Agent wird in der Regel im Hintergrund ausgeführt – Benutzerinteraktionen oder Maßnahmen zur Fehlerbehebung sind nur selten erforderlich. Wenn Sie Probleme mit der Computerverwaltung beheben müssen, können Sie die Protokolle überprüfen. Der Intune-Softwareclient und zugehörige Protokolle sind im Verzeichnis „%Program Files%\Microsoft\OnlineManagement“ installiert.
+
+Unter [Behandlung von Problemen bei der Clienteinrichtung in Microsoft Intune](/intune/troubleshoot/troubleshoot-client-setup-in-microsoft-intune) finden Sie auch Hinweise zu möglichen Problemen und etwaige Lösungen oder Problemumgehungen.
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

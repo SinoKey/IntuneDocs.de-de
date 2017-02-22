@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 185f6fd051946ab118490717ecfb7250521fb764
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 
 
 ---
@@ -25,24 +26,26 @@ ms.openlocfilehash: 185f6fd051946ab118490717ecfb7250521fb764
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Sie können bedingten Zugriff für Exchange Online oder Exchange Online Dedicated mithilfe Microsoft Intune konfigurieren. Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Protect access to email, O365, and other services (Schützen des Zugriffs auf E-Mail, O365 und andere Dienste)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+
 > [!NOTE]
 >Wenn Sie über eine Exchange Online Dedicated-Umgebung verfügen und herausfinden müssen, ob es sich um die neue oder die ältere Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer.
 
-Um den E-Mail-Zugriff auf Exchange Online oder die neue Exchange Online Dedicated-Umgebung zu steuern, können Sie den bedingten Zugriff für Exchange Online mithilfe von Microsoft Intune konfigurieren. Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Protect access to email, O365, and other services (Schützen des Zugriffs auf E-Mail, O365 und andere Dienste)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+## <a name="before-you-begin"></a>Vorbereitung
 
-
-**Bevor** Sie den bedingten Zugriff konfigurieren können, müssen folgende Voraussetzungen erfüllt sein:
+Um den bedingten Zugriff zu konfigurieren, müssen Sie folgende Schritte ausführen:
 
 -   Sie müssen über ein **Office 365-Abonnement verfügen, das Exchange Online (z.B. E3)** umfasst, und die Benutzer müssen für Exchange Online lizenziert sein.
 
 - Sie müssen über ein **Enterprise Mobility + Security- (EMS)** oder **Azure Active Directory (Azure AD) Premium-Abonnement** verfügen, und Benutzer müssen für EMS oder Azure AD lizenziert sein. Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -  Sie sollten erwägen, den optionalen **Intune Service to Service Connector** zu konfigurieren, der [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] mit Exchange Online verbindet und die Verwaltung von Geräteinformationen über die [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Konsole ermöglicht. Der Connector ist zur Verwendung von Kompatibilitätsrichtlinien oder Richtlinien für den bedingten Zugriff nicht zwingend erforderlich, Sie benötigen ihn aber zum Ausführen von Berichten, mit deren Hilfe die Auswirkungen des bedingten Zugriffs bewertet werden.
+    -  Erfahren Sie mehr über den [Intune Service to Service Connector](intune-service-to-service-exchange-connector.md).
 
    > [!NOTE]
-   > Konfigurieren Sie den Service to Service Connector nicht, wenn Sie beabsichtigen, bedingten Zugriff für Exchange Online und lokales Exchange zu verwenden.
+   > Konfigurieren Sie den Intune Service to Service Connector nicht, wenn Sie beabsichtigen, die Zugangsberechtigung für Exchange Online und lokales Exchange zu verwenden.
 
-   Informationen zum Konfigurieren des Connectors finden Sie unter [Intune Service to Service Connector](intune-service-to-service-exchange-connector.md).
+### <a name="device-compliance-requirements"></a>Konformitätsanfoderungen für Geräte
 
 Wenn Sie Richtlinien für bedingten Zugriff konfigurieren und auf einen Benutzer anwenden, muss das **Gerät**, das der Benutzer zum Abrufen von E-Mails verwendet, folgende Voraussetzungen erfüllen:
 
@@ -54,12 +57,15 @@ Wenn Sie Richtlinien für bedingten Zugriff konfigurieren und auf einen Benutzer
 
 -   Es muss mit allen [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Kompatibilitätsrichtlinien **kompatibel** sein, die auf diesem Gerät bereitgestellt wurden, oder es muss einer lokalen Domäne beigetreten sein.
 
-Wenn eine Bedingung für bedingten Zugriff nicht erfüllt wird, erhält der Benutzer bei der Anmeldung die folgenden Meldungen:
+### <a name="when-the-device-is-not-compliant"></a>Wenn das Gerät nicht konform ist
+
+Wenn eine Richtlinie für bedingten Zugriff nicht erfüllt wird, wird das Gerät sofort unter Quarantäne gestellt, und der Benutzer erhält eine E-Mail-Nachricht mit einer der folgenden Quarantänenachrichten bei seiner Anmeldung:
 
 - Wenn das Gerät nicht bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] oder in Azure Active Directory registriert ist, wird eine Meldung mit Anweisungen zum Installieren der Unternehmensportal-App, zum Registrieren des Geräts und zum Aktivieren des E-Mail-Zugriffs angezeigt. Dieser Prozess verknüpft auch die Exchange ActiveSync-ID mit dem Eintrag in Azure Active Directory.
 
 -   Wenn das Gerät als nicht kompatibel mit den Kompatibilitätsrichtlinien ausgewertet wird, wird der Benutzer zur [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Unternehmensportalwebsite oder zur Unternehmensportal-App weitergeleitet. Dort findet der Benutzer Informationen zum Problem und zur Lösung.
 
+### <a name="how-conditional-access-works-with-exchange-online"></a>So funktioniert der bedingte Zugriff für Exchange Online
 
 Das folgende Diagramm veranschaulicht den Ablauf, den Richtlinien für bedingten Zugriff für Exchange Online befolgen.
 
@@ -70,7 +76,6 @@ Sie können den Zugriff auf Exchange Online-E-Mails über **Outlook** und andere
 
 - Android 4.0 und höher, Samsung KNOX Standard 4.0 und höher sowie Android for Work
 - iOS 8.0 und höher
-- Windows Phone 8.1 und höher
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -85,7 +90,8 @@ Sie können den Zugriff auf **Outlook Web Access (OWA)** auf Exchange Online sch
 * Chrome (Android)
 * Intune Managed Browser (iOS, Android 5.0 und höher)
 
-**Nicht unterstützte Browser werden blockiert**.
+   > [!IMPORTANT]
+   > **Nicht unterstützte Browser werden blockiert**.
 
 **Die OWA-App für iOS und Android kann so geändert werden, dass die moderne Authentifizierung nicht verwendet und unterstützt wird. Der Zugriff über die OWA-App muss durch AD FS-Anspruchsregeln blockiert werden.**
 
@@ -204,7 +210,7 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
         Dies setzt voraus, dass jedes Gerät, das für den Zugriff auf **Exchange Online** verwendet wird, in Intune registriert und mit den Richtlinien kompatibel ist. Jede Clientanwendung, die die **moderne Authentifizierung** verwendet, unterliegt der Richtlinie für bedingten Zugriff. Wenn die Plattform zurzeit von Intune nicht unterstützt wird, ist der Zugriff auf **Exchange Online** blockiert.
 
         Die Auswahl der Option **Alle Plattformen** bedeutet, dass Azure Active Directory diese Richtlinie auf alle Authentifizierungsanforderungen anwendet, unabhängig von der Plattform, die von der Clientanwendung gemeldet wird. Alle Plattformen müssen registriert und kompatibel sein, mit Ausnahme von:
-        *   Windows-Geräten. Diese müssen registriert werden und kompatibel sein, mit der lokalen Active Directory-Domäne verknüpft sein oder beides.
+        *    Windows-Geräten. Diese müssen registriert werden und kompatibel sein, mit der lokalen Active Directory-Domäne verknüpft sein oder beides.
         * Nicht unterstützte Plattformen wie Mac OS Allerdings werden Apps, die die moderne Authentifizierung von diesen Plattformen verwenden, weiterhin blockiert.
 
     -   **Bestimmte Plattformen**
@@ -272,6 +278,6 @@ Wählen Sie im [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Dashboard 
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

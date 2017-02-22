@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/26/2017
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3ab53e40f4b7ea67733127f445005ecb77a404f7
-ms.openlocfilehash: 37031eed6efa48ff52ec37a942fa77af414f78fe
+ms.sourcegitcommit: 053cf0a1b5d06496397b36cbd1a7ebdce420fed3
+ms.openlocfilehash: 5158d58c32066ea720335a878fef87451542c195
 
 
 ---
@@ -55,8 +55,11 @@ Links inside of the Company Portal app for iOS, including those to documentation
 ### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Verbesserte Unterstützung der Verwaltung mobiler Apps für das selektive Zurücksetzen <!--581242-->
 Endbenutzer erhalten zusätzliche Anleitungen, um erneut Zugriff auf Geschäfts-, Schul- oder Unidaten zu erhalten, wenn diese Daten aufgrund der Richtlinie „Offline-Intervall, bevor App-Daten zurückgesetzt werden“ automatisch entfernt wurden.<!--, or the removal of the Intune Company Portal on Android.-->
 
+### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>Links im Unternehmensportal für iOS öffnen sich innerhalb der App <!--665954-->
+Links in der Unternehmensportal-App für iOS, einschließlich Links zu Dokumentationen und Apps, werden über eine In-App-Ansicht von Safari direkt in der Unternehmensportal-App geöffnet. Dieses Update wird getrennt vom Dienstupdate im Januar ausgeliefert.
+
 ### <a name="modernizing-the-company-portal-website---753980--"></a>Modernisieren der Unternehmensportal-Website<!--753980-->
-Ab Februar unterstützt die Unternehmensportal-Website Apps, die für Benutzer bestimmt sind, die über keine verwalteten Geräte verfügen. Die Website ist mit anderen Microsoft-Produkten und -Diensten durch ein gegensätzliches Farbschema, dynamische Illustrationen und ein „Hamburger-Menü“ ![Unternehmensportal-Website Hamburger-Menü](../media/CP_hamburger_menu.png) verbunden, das Kontaktinformationen für den Helpdesk sowie Informationen für vorhandene verwaltete Geräte enthält. Die Angebotsseite wird neu angeordnet, um Apps hervorzuheben, die für Benutzer verfügbar sind, und mit einer Karussellsicht für empfohlene und kürzlich aktualisierte Apps. Auf der Seite [What's new in the Intune App UI (Neues auf der Intune-App-Benutzeroberfläche)](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui#January_2017) finden Sie Vorher- und Nachherbilder.
+Ab Februar unterstützt die Unternehmensportal-Website Apps, die für Benutzer bestimmt sind, die über keine verwalteten Geräte verfügen. Die Website ist mit anderen Microsoft-Produkten und -Diensten durch ein gegensätzliches Farbschema, dynamische Illustrationen und ein „Hamburger-Menü“ ![Unternehmensportal-Website Hamburger-Menü](./media/CP_hamburger_menu.png) verbunden, das Kontaktinformationen für den Helpdesk sowie Informationen für vorhandene verwaltete Geräte enthält. Die Angebotsseite wird neu angeordnet, um Apps hervorzuheben, die für Benutzer verfügbar sind, und mit einer Karussellsicht für empfohlene und kürzlich aktualisierte Apps. Auf der Seite [Änderungen an der Intune App-Benutzeroberfläche](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui#January_2017) finden Sie Vorher-nachher-Bilder.
 
 ### <a name="new-documentation-for-app-protection-policies---583398--"></a>Neue Dokumentation für App-Schutzrichtlinien <!--583398-->
 Wir haben unsere Dokumentation für Administratoren und App-Entwickler aktualisiert, die App-Schutzrichtlinien (so genannte MAM-Richtlinien) mit dem Intune App Wrapping Tool oder dem Intune App SDK in ihren iOS- und Android-Apps aktivieren möchten.
@@ -75,6 +78,9 @@ Folgende Artikel wurden der Dokumentbibliothek neu hinzugefügt:
 
 <!--### Progress bar when launching the Company Portal on iOS <!--665978
 The Company Portal for iOS is introducing a progress bar on the launch screen to provide the user with information about the loading processes that occur. There will be a phased rollout of the progress bar to replace the spinner. This means that some of your users will see the new progress bar while others will continue to see the spinner.-->
+
+### <a name="progress-bar-when-launching-the-company-portal-on-ios---665978--"></a>Statusanzeige beim Starten des Unternehmensportals in iOS <!--665978-->
+Für das Unternehmensportal für iOS wurde eine Statusanzeige auf dem Startbildschirm eingeführt, um den Benutzer über die Prozesse zu informieren, die gerade geladen werden. Die Einführung der Statusanzeige, die das Drehfeld ersetzt, wird in mehreren Phasen erfolgen. Dies bedeutet, dass einige Ihrer Benutzer bereits die neue Statusanzeige sehen, andere dagegen noch das Drehfeld.
 
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Neuigkeiten in der öffentlichen Vorschau der neuen Intune-Administratoroberfläche auf Azure <!--736542-->
 
@@ -97,6 +103,6 @@ Neuigkeiten in der Intune-Vorschau in Azure finden Sie [hier](https://docs.micro
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

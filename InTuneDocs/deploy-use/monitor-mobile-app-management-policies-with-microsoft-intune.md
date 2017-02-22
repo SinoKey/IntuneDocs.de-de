@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fe44466fbcef67d02b16d3d2d335f657251451d3
-ms.openlocfilehash: e60d707833ee276971000411e50564f39b41b207
+ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
+ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 
 
 ---
 
 # <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Überwachen der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune
-Sie können den Konformitätsstatus der Verwaltungsrichtlinien für mobile Apps (MAM) überwachen, die Sie auf Benutzer auf dem Blatt „Intune-Schutz für Apps“ im [Azure-Portal](https://portal.azure.com) angewendet haben. Sie können Informationen über die Benutzer finden, die von der MAM-Richtlinie betroffen sind, deren Konformitätsstatus sowie Probleme, die bei den Benutzern möglicherweise auftreten.
+Sie können den Konformitätsstatus der Verwaltungsrichtlinien für mobile Apps (MAM) überwachen, die Sie auf Benutzer angewendet haben. Sie können Informationen über die Benutzer finden, die von der MAM-Richtlinie betroffen sind, deren Konformitätsstatus sowie Probleme, die bei den Benutzern möglicherweise auftreten.
 
 Es gibt drei verschiedenen Stellen, an denen der Konformitätsstatus überwacht werden kann:
 
@@ -36,7 +36,7 @@ Es gibt drei verschiedenen Stellen, an denen der Konformitätsstatus überwacht 
 Führen Sie die folgenden drei Schritte aus,um die Ansicht „Zusammenfassung“ zu öffnen:
 
 1. Navigieren Sie zum [Azure-Portal](https://portal.azure.com), und geben Sie Ihre-Anmeldeinformationen ein.
-2. Wählen Sie **Weitere Dienste** aus, und geben Sie „Intune“ ein.
+2. Wählen Sie **Weitere Dienste** aus, und geben Sie in das Filtertextfeld **Intune** ein.
 3. Wählen Sie **Intune-Schutz für Apps** aus.
 
 Auf dem Blatt **Mobile Anwendungsverwaltung mit Intune** sehen Sie eine Zusammenfassung des Kompatibilitätsstatus:
@@ -89,13 +89,11 @@ In der Detailansicht werden die Fehlermeldung, die App, auf die bei Auftreten de
 
 Sie können die gleichen Berichte in der Detailansicht finden sowie zusätzliche Berichte, die Ihnen mit dem Konformitätsstatus der MAM-Richtlinie weiterhelfen:
 
-![Screenshot 4](../media/MAM-reporting-7.png)
+![Screenshot&4;](../media/MAM-reporting-7.png)
 
 -   **App protection user report** (Benutzerbericht App-Schutz): Darin werden dieselben Informationen dargestellt, die Sie auch im **Benutzerstatus**-Bericht im Abschnitt „Detailansicht“ weiter hoben sehen können.
 
 -   **App protection app report** (App-Bericht App-Schutz): Es werden zwei verschiedene Status zum App-Schutz bereitgestellt, die Administratoren auswählen können, bevor sie den Bericht generieren. Der Status kann geschützt oder nicht geschützt sein.
-
-    ![Screenshot 1](../media/MAM-reporting-1.png)
 
     -   Benutzerstatus für verwaltete MAM-Aktivität (Geschützt): Dieser Bericht zeigt die Aktivität von jeder verwalteten MAM-App auf Benutzerebene.
 
@@ -107,7 +105,28 @@ Sie können die gleichen Berichte in der Detailansicht finden sowie zusätzliche
 
         -   Alle Apps sind eingecheckt, erhalten jedoch keine MAM-Richtlinien.
 
-![Screenshot 2](../media/MAM-reporting-4.png)
+![Screenshot&2;](../media/MAM-reporting-4.png)
+
+## <a name="table-grouping"></a>Tabellengruppierung
+
+Sobald die Daten im **Benutzerbericht zum App-Schutz** angezeigt werden, können Sie Daten folgendermaßen aggregieren:
+
+- **Überprüfungsergebnis:** Die Daten werden nach dem App-Schutzstatus – Fehler, Warnung oder Erfolg – gruppiert.
+- **App-Name:** Die Daten werden nach Apps (tatsächlicher App-Name) mit Fehlern, Warnungen oder Erfolgen gruppiert.
+
+## <a name="export-app-protection-activities-to-csv"></a>Exportieren von App-Schutzaktivitäten in eine CSV-Datei
+
+Sie können alle Aktivitäten im Zusammenhang mit Ihren App-Schutzrichtlinien in eine CSV-Datei exportieren. Dies kann hilfreich sein, um alle App-Schutzstatus zu analysieren, die von den Benutzern gemeldeten wurden.
+
+Gehen Sie zum Generieren des App-Schutzberichts wie folgt vor:
+
+1. Wählen Sie auf dem Blatt „Mobile Anwendungsverwaltung mit Intune“ den App-Schutzbericht aus.
+
+    ![Screenshot&6;](../media/app-protection-report-csv-2.png)
+
+2. Wählen Sie „Ja“ aus, um den Bericht zu speichern, und wählen Sie dann „Speichern unter“ und den Ordner aus, in dem der Bericht gespeichert werden soll.
+
+    ![Screenshot&7;](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Weitere Informationen:
 [Verwalten der Datenübertragung zwischen iOS-Apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
@@ -117,6 +136,6 @@ Sie können die gleichen Berichte in der Detailansicht finden sowie zusätzliche
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

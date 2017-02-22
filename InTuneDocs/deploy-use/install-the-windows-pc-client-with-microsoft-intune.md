@@ -14,8 +14,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
-ms.openlocfilehash: 7cef6b6eac01c0056f7c75a7010ee280932a5dfb
+ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
+ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
 
 
 ---
@@ -56,8 +56,8 @@ Mit Ausnahme der Methode, bei denen Benutzer die Intune-Clientsoftware selbst in
 
 Auf den Computern, auf denen der Softwareclient installiert werden soll, wechseln Sie zu dem Ordner, in dem sich die Installationsdateien der Clientsoftware befinden. Führen Sie dann **Microsoft_Intune_Setup.exe** aus, um die Clientsoftware zu installieren.
 
-    > [!NOTE]
-    > The status of the installation is displayed when you hover over the icon in the taskbar on the client computer.
+> [!NOTE]
+> Der Installationsstatus wird angezeigt, wenn Sie mit dem Mauszeiger auf das Symbol in der Taskleiste des Clientcomputers zeigen.
 
 ## <a name="deploy-the-client-software-by-using-group-policy"></a>Bereitstellen der Clientsoftware mithilfe von Gruppenrichtlinien
 
@@ -74,7 +74,7 @@ Auf den Computern, auf denen der Softwareclient installiert werden soll, wechsel
 
 3.  Verwenden Sie Gruppenrichtlinien, um die Software auf Computern in Ihrem Netzwerk bereitzustellen.
 
-    Weitere Informationen zum automatischen Bereitstellen von Software mithilfe von Gruppenrichtlinien finden Sie in Ihrer Windows Server-Dokumentation.
+    Weitere Informationen zum automatischen Bereitstellen von Software mithilfe von Gruppenrichtlinien finden Sie unter [Gruppenrichtlinien für Anfänger](https://technet.microsoft.com/library/hh147307.aspx).
 
 ## <a name="deploy-the-client-software-as-part-of-an-image"></a>Bereitstellen der Clientsoftware als Teil eines Images
 Sie können die Intune-Clientsoftware als Teil eines Betriebssystemabbilds auf Computern installieren. Verwenden Sie dazu die folgende Vorgehensweise als Leitfaden:
@@ -100,11 +100,11 @@ Sie können die Intune-Clientsoftware als Teil eines Betriebssystemabbilds auf C
 
 5.  Erstellen Sie ein Systemabbild des Referenzcomputers, und stellen sie es auf den Zielcomputern bereit.
 
-Wenn der Zielcomputer nach Beenden von Windows Setup neu gestartet wird, wird der Registrierungsschlüssel **WindowsIntuneEnrollPending** erstellt. Mit dem Registrierungspaket wird überprüft, ob der Computer registriert ist. Wenn der Computer registriert ist, ist keine weitere Aktion erforderlich. Wenn der Computer nicht registriert ist, wird vom Registrierungspaket eine Aufgabe zur automatischen Microsoft Intune-Registrierung erstellt.
+    Wenn der Zielcomputer nach Beenden von Windows Setup neu gestartet wird, wird der Registrierungsschlüssel **WindowsIntuneEnrollPending** erstellt. Mit dem Registrierungspaket wird überprüft, ob der Computer registriert ist. Wenn der Computer registriert ist, ist keine weitere Aktion erforderlich. Wenn der Computer nicht registriert ist, wird vom Registrierungspaket eine Aufgabe zur automatischen Microsoft Intune-Registrierung erstellt.
 
-Bei der Ausführung dieser Aufgabe zur automatischen Registrierung zum nächsten geplanten Zeitpunkt prüft die Aufgabe das Vorhandensein des Registrierungswerts **WindowsIntuneEnrollPending** und versucht, den Ziel-PC bei Intune zu registrieren. Sollte die Registrierung aus einem beliebigen Grund fehlschlagen, wird die Registrierung beim nächsten Ausführen der Aufgabe erneut versucht. Die Wiederholungen werden für einen Monat ausgeführt.
+    Bei der Ausführung dieser Aufgabe zur automatischen Registrierung zum nächsten geplanten Zeitpunkt prüft die Aufgabe das Vorhandensein des Registrierungswerts **WindowsIntuneEnrollPending** und versucht, den Ziel-PC bei Intune zu registrieren. Sollte die Registrierung aus einem beliebigen Grund fehlschlagen, wird die Registrierung beim nächsten Ausführen der Aufgabe erneut versucht. Die Wiederholungen werden für einen Monat ausgeführt.
 
-Die Aufgabe zur automatischen Intune-Registrierung, der Registrierungswert **WindowsIntuneEnrollPending** und das Kontozertifikat werden entweder vom Zielcomputer gelöscht, sobald die Registrierung erfolgreich war oder ein Monat vergangen ist (egal was zuerst kommt).
+    Die Aufgabe zur automatischen Intune-Registrierung, der Registrierungswert **WindowsIntuneEnrollPending** und das Kontozertifikat werden entweder vom Zielcomputer gelöscht, sobald die Registrierung erfolgreich war oder ein Monat vergangen ist (egal was zuerst kommt).
 
 ## <a name="instruct-users-to-self-enroll"></a>Einweisen von Benutzern in die eigenständige Registrierung
 
@@ -143,6 +143,6 @@ Verwenden Sie eins der folgenden Verfahren, um die erfolgreiche Clientbereitstel
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 
