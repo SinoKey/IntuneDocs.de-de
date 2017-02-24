@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,10 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 395c9bdc8aad13123b6a22b6edac0b8714323f2f
+ms.sourcegitcommit: c5c857b46c13aee790ab5f780a59d9cd51029cd2
+ms.openlocfilehash: a2af33a5b274b01f6651c76bd0b0038dc74b785f
 
 
 ---
@@ -45,12 +46,12 @@ Beschreibungen der PIN- bzw. Kennwortprobleme:
 
 - **Das Kennwort wurde erst kürzlich verwendet**. Ihr IT-Administrator verhindert, dass Sie vorherige Kennwörter verwenden, die Sie in der Vergangenheit bereits verwendet haben. Wählen Sie ein Kennwort aus, das Sie zuvor noch nicht verwendet haben.
 
-- **Das Kennwort ist nicht komplex genug, um Anforderungen zu erfüllen**. Ihr IT-Administrator verlangt, dass Sie komplexere Zeichen in Ihrem Kennwort verwenden. Versuchen Sie es mit Zeichen wie Zahlen, Großbuchstaben und Symbolen wie $, % und #.
+- **Das Kennwort ist nicht komplex genug, um Anforderungen zu erfüllen**. Ihr IT-Administrator verlangt, dass Sie komplexere Zeichen in Ihrem Kennwort verwenden. Versuchen Sie es mit Zeichen wie Zahlen, Großbuchstaben und Symbolen wie $, % und #. Dies kann auch für andere Konten auf Ihrem Gerät gelten, überprüfen Sie also alle anderen Arbeitskonten, um sicherzustellen, dass Ihr Kennwort den Anforderungen entspricht, die von der IT für Ihr Gerät festgelegt wurden.
 
 Wenn Sie Probleme haben herauszufinden, wie Ihr Kennwort diese Anforderungen erfüllt, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

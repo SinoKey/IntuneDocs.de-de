@@ -1,11 +1,11 @@
 ---
-title: "Änderungen an der Intune App-Benutzeroberfläche | Microsoft-Dokumentation"
+title: "Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune | Microsoft-Dokumentation"
 description: "Erfahren Sie, was sich an der Benutzeroberfläche für Apps geändert hat, die auf Endbenutzergeräten mit Intune funktionieren."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/26/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,49 +13,54 @@ ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3ab53e40f4b7ea67733127f445005ecb77a404f7
-ms.openlocfilehash: 630053679b8ca1e0b26108e366986862e10d4f29
+ms.sourcegitcommit: bac9e6784ed6814d27bec9ad07b507facc9e8fc2
+ms.openlocfilehash: 48fe5f0a124a6608434f87905c24cda822fe63b7
 
 
 ---
-# <a name="whats-new-in-the-intune-app-ui"></a>Änderungen an der Intune App-Benutzeroberfläche
-Erfahren Sie, welche Aktualisierungen wir an der Benutzeroberfläche für Apps vorgenommen haben, die Ihre Endbenutzer in dieser Version von Microsoft Intune ausführen werden. Damit werden Sie bei der Benutzerkommunikation sowie bei allen aktualisierten Benutzerdokumentationen unterstützt, die Sie zur Unterstützung Ihrer Entwicklung erstellt haben.
+# <a name="ui-updates-for-intune-end-user-apps"></a>Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune
+Erfahren Sie, welche Aktualisierungen wir an der Benutzeroberfläche für Apps vorgenommen haben, die Ihre Endbenutzer in dieser Version von Microsoft Intune sehen werden. Damit werden Sie bei der Benutzerkommunikation sowie bei allen aktualisierten Benutzerdokumentationen unterstützt, die Sie zur Unterstützung Ihrer Entwicklung erstellt haben. Es kann auch helfen, zu verstehen, wie Probleme behandelt werden, die auftauchen, wenn Benutzer den Helpdesk für den Support mithilfe des Unternehmensportals aufrufen.
 
-## <a name="january-2017"></a>Januar 2017
+> [!Note]
+> Bitte beachten Sie, dass die Bilder unten Vorschauen darstellen und das angekündigte Produkt sich von den abgebildeten Versionen unterscheiden kann.
 
-### <a name="modernizing-the-company-portal-website---753980--"></a>Modernisieren der Unternehmensportal-Website<!--753980-->
-Ab Februar unterstützt die Unternehmensportal-Website Apps, die für Benutzer bestimmt sind, die über keine verwalteten Geräte verfügen. Die Website ist mit anderen Microsoft-Produkten und -Diensten durch ein gegensätzliches Farbschema, dynamische Illustrationen und ein „Hamburger-Menü“ ![Unternehmensportal-Website Hamburger-Menü](../media/CP_hamburger_menu.png) verbunden, das Kontaktinformationen für den Helpdesk sowie Informationen für vorhandene verwaltete Geräte enthält. Die Angebotsseite wird neu angeordnet, um Apps hervorzuheben, die für Benutzer verfügbar sind, und mit einer Karussellsicht für empfohlene und kürzlich aktualisierte Apps. Auf der Seite [What's new in the Intune App UI (Neues auf der Intune-App-Benutzeroberfläche)](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui) finden Sie Vorher- und Nachherbilder.
+## <a name="whats-coming"></a>Was steht an?
+
+### <a name="february-2017"></a>Februar 2017
+
+#### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Neue Benutzeroberfläche für die Unternehmensportal-App für Android <!--621622, announced 1702-->
+Ab März befolgt die Unternehmensportal-App für Android die [material design guidelines (Richtlinien für Materialdesign)](https://material.io/guidelines/material-design/introduction.html), um ein moderneres Erscheinungsbild zu vermitteln. Diese verbesserte Benutzeroberfläche enthält Folgendes:
+
+* __Farben__: Die Farben der Registerkartentitel können mithilfe Ihrer benutzerdefinierten Farbpalette angepasst werden.
+
+![Auf der linken Seite sehen Sie ein Bild der Unternehmensportal-App für Android vor der Aktualisierung. Auf der rechten Seite sehen Sie ein Bild der Unternehmensportal-App für Android nach der Aktualisierung. Beide Bilder zeigen als ausgewählte Registerkarte die Registerkarte „Geräte“ aus den drei Registerkarten „Apps“, „Geräte“ und „An IT-Abteilung wenden“.](./media/CP_Android_DevicesTab_BeforeAfter.png)
+
+* __Schnittstelle__: Die Schaltflächen __Empfohlene Apps__ und __Alle Apps__ wurden in der Registerkarte __Apps__ aktualisiert. Die Schaltfläche __Suche__ ist nun eine unverankerte interaktive Schaltfläche.
+
+![Auf der linken Seite sehen Sie ein Bild der Unternehmensportal-App für Android vor der Aktualisierung. Auf der rechten Seite sehen Sie ein Bild der Unternehmensportal-App für Android nach der Aktualisierung. Beide Bilder zeigen als ausgewählte Registerkarte die Registerkarte „Apps“ aus den drei Registerkarten „Apps“, „Geräte“ und „An IT-Abteilung wenden“.](./media/CP_Android_AppsTab_BeforeAfter.png)
+
+* __Navigation__: Alle Apps zeigen die Registerkartenansicht __Featured__ (Highlights), __Alle__ und __Kategorien__ für die einfachere Navigation. __An IT-Abteilung wenden__ wurde zur besseren Lesbarkeit optimiert.
 
 <html>
-
 <body>
-
-<table>
-
-<tr>
-
-<td>
-
-<img src="https://docs.microsoft.com/InTune/media/CP_website_before_Feb_2017.png" style="float: left; margin-right: 5px; margin-bottom: 10px;">
-
-</td>
-
-<!-- Column two -->
-
-<td>
-
-<img src="https://docs.microsoft.com/InTune/media/CP_website_after_Feb_2017.png" style="float: right; margin-left: 5px; margin-bottom: 10px;">
-
-</td>
-
-</tr>
-
-</table>
-
+   <table id="wrapper">
+      <tr>
+         <td>
+            <img src="https://docs.microsoft.com/en-us/InTune/whats-new/media/cp_android_contactit_after.png" alt="The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information." width=200 height=366 align=center>
+          </td>
+      </tr>
+   </table>
 </body>
-
 </html>
+
+### <a name="january-2017"></a>Januar 2017
+
+#### <a name="modernizing-the-company-portal-website---753980-announced-1701--"></a>Modernisieren der Unternehmensportal-Website<!--753980, announced 1701-->
+Ab Februar unterstützt die Unternehmensportal-Website Apps, die für Benutzer bestimmt sind, die über keine verwalteten Geräte verfügen. Die Website wird an andere Microsoft-Produkte und -Dienste mithilfe eines neuen Farbschemas, dynamischen Illustrationen und einem „Hamburger-Menü“ ausgerichtet, ![Miniaturansicht des Hamburger-Menüs, das nun in der linken oberen Ecke der Unternehmensportal-App zu sehen ist,](./media/CP_hamburger_menu.png) das nun Helpdesk-Kontaktdetails enthält sowie Informationen zu vorhandenen verwalteten Diensten. Die Angebotsseite wird neu angeordnet, um Apps hervorzuheben, die für Benutzer verfügbar sind, und mit einer Karussellsicht für empfohlene und kürzlich aktualisierte Apps.
+
+![Auf der linken Seite sehen Sie ein Bild der aktuellen Version der Unternehmensportal-Website mit den derzeitigen Versionen von Apps, Meine Geräte sowie den Ansichten „Featured“ (Highlights) und „Kategorien“. Auf der rechten Seite sehen Sie ein Bild der neuen Version der Unternehmensportal-Website mit einem aktualisierten App-Karussell, einer Liste mit kürzlich veröffentlichten Apps und einer aktualisierten Ansicht „Kategorien“.](./media/CP_Website_BeforeAfter_Feb2016.png)
 
 
 ### <a name="see-also"></a>Weitere Informationen:
@@ -66,6 +71,6 @@ Ab Februar unterstützt die Unternehmensportal-Website Apps, die für Benutzer b
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

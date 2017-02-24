@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b1f16df329c01aeb45885f3981e2d9d7ef854e8b
 
 
 ---
@@ -23,6 +24,8 @@ ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Hinzufügen von Benutzern und Gewähren von Administratorrechten für Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+In diesem Thema erfahren Administratoren, wie sie Benutzer zu Intune hinzufügen können und welche Administratorberechtigungen im Intune-Dienst verfügbar sind.
 
 Als Administrator können Sie Benutzer direkt oder durch Synchronisieren mit Ihrem lokalen Active Directory hinzufügen. Nachdem ein Benutzer hinzugefügt wurde, kann er Geräte registrieren und auf Unternehmensressourcen zugreifen. Sie können Benutzern auch zusätzliche Berechtigungen erteilen, beispielsweise *Mandantenadministrator*-, *Dienstadministrator*- und *Geräteregistrierungs-Manager-Berechtigungen*.
 
@@ -35,7 +38,7 @@ Dieses Thema enthält Hilfe zu folgenden Themen:
   - [Geräteregistrierungs-Manager](#device-enrollment-managers)
 
 ## <a name="add-users-to-intune"></a>Hinzufügen von Benutzern zu Intune
-Sie können Benutzer manuell über das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) zu Ihrem Intune-Abonnement hinzufügen, ihnen werden nicht automatisch Intune-Lizenzen zugewiesen. Stattdessen muss ein Intune-Mandantenadministrator die Benutzerkonten später bearbeiten, um den betreffenden Benutzern über das Office 365-Portal eine Lizenz zuzuweisen. Eine Anleitung hierzu finden Sie unter [Hinzufügen von einzelnen Benutzern oder Massenhinzufügen von Benutzern zu Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+Sie können Benutzer manuell über das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) zu Ihrem Intune-Abonnement hinzufügen, ihnen werden jedoch nicht automatisch Intune-Lizenzen zugewiesen. Stattdessen muss ein Intune-Mandantenadministrator die Benutzerkonten später bearbeiten, um den betreffenden Benutzern über das Office 365-Portal eine Lizenz zuzuweisen. Eine Anleitung hierzu finden Sie unter [Hinzufügen von einzelnen Benutzern oder Massenhinzufügen von Benutzern zu Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ### <a name="sync-active-directory-and-add-users-to-intune"></a>Synchronisieren von Active Directory und Hinzufügen von Benutzern zu Intune
 Sie können die Verzeichnissynchronisierung so konfigurieren, dass Benutzerkonten aus Ihrem lokalen Active Directory in Microsoft Azure Active Directory (Azure AD) importiert werden. Dies schließt Intune Benutzer ein. Wenn Ihr lokaler Active Directory-Dienst mit all Ihren Azure Active Directory-basierten Diensten verbunden ist, gestaltet sich die Verwaltung der Benutzeridentität viel einfacher. Sie können auch Features für die einmalige Anmeldung konfigurieren, damit die Benutzer mit der Art der Authentifizierung vertraut sind und diese problemlos verläuft. Durch das Verknüpfen eines [Azure AD-Mandanten](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) mit mehreren Diensten sind die zuvor synchronisierten Benutzerkonten für alle cloudbasierten Dienste verfügbar.
@@ -95,7 +98,7 @@ Als Dienstadministrator verwenden Sie dieses Portal für tägliche Aufgaben wie 
 
 ### <a name="device-enrollment-managers"></a>Geräteregistrierungsmanager
 
-Geräteregistrierungs-Manager sind Standardbenutzerkonten mit der zusätzlichen Berechtigung zum Registrieren großer Mengen von benutzerlosen Geräten. Standardmäßig kann jeder Intune-Benutzer bis zu 15 Geräte registrieren. Als Administrator können Sie einem Benutzerkonto die Geräteregistrierungs-Manager-Berechtigung erteilen. Dieses Konto kann große Mengen unternehmenseigener Geräte registrieren. Dies ist hilfreich, wenn die Geräte den Benutzern möglicherweise nur vorübergehend zugewiesen werden oder sie im Kioskmodus arbeiten, bei dem die Zuordnung des Geräts zu einem Benutzer nicht erforderlich ist. Weitere Informationen finden Sie unter [Geräteregistrierungs-Manager](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+Geräteregistrierungs-Manager sind Standardbenutzerkonten mit der zusätzlichen Berechtigung zum Registrieren großer Mengen von benutzerlosen Geräten. Standardmäßig kann jeder Intune-Benutzer bis zu&15; Geräte registrieren. Als Administrator können Sie einem Benutzerkonto die Geräteregistrierungs-Manager-Berechtigung erteilen. Dieses Konto kann große Mengen unternehmenseigener Geräte registrieren. Dies ist hilfreich, wenn die Geräte den Benutzern möglicherweise nur vorübergehend zugewiesen werden oder sie im Kioskmodus arbeiten, bei dem die Zuordnung des Geräts zu einem Benutzer nicht erforderlich ist. Weitere Informationen finden Sie unter [Geräteregistrierungs-Manager](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 
 >[!div class="step-by-step"]
 
@@ -103,6 +106,6 @@ Geräteregistrierungs-Manager sind Standardbenutzerkonten mit der zusätzlichen 
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

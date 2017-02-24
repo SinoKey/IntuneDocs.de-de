@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: a738771d62d50999e014c1df3ad49399f754a99a
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: ab6d1cf6a6b77be6aff6398ff99135674471ba35
 
 
 ---
@@ -24,11 +25,11 @@ ms.openlocfilehash: a738771d62d50999e014c1df3ad49399f754a99a
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Dieses Thema bietet Ihnen eine Schritt-für-Schritt-Anleitung, wie Sie den bedingten Zugriff für Exchange Online einrichten, um nur mobile Apps zuzulassen, die Intune-Richtlinien zur Verwaltung mobiler Apps (Mobile Application Management, MAM) unterstützen.
+Dieses Thema bietet Ihnen eine ausführliche Anleitung, wie Sie den bedingten Zugriff für Exchange Online einrichten, um nur mobile Apps zuzulassen, die App-Schutzrichtlinie für Intune unterstützen.
 
 
 ## <a name="create-an-exchange-online-policy"></a>Erstellen einer Exchange Online-Richtlinie
-1.  Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an, das das App-Zugriffsfeature enthält. Wenn Sie noch nicht mit dem Azure-Portal vertraut sind, lesen Sie das Thema [Azure-Portal für MAM-Richtlinien in Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md).
+1.  Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an, das das App-Zugriffsfeature enthält. Wenn Sie noch nicht mit dem Azure-Portal vertraut sind, lesen Sie das Thema [Azure-Portal für App-Schutzrichtlinien](azure-portal-for-microsoft-intune-mam-policies.md).
 
 2.  Wählen Sie **Weitere Dienste** aus, und geben Sie „Intune“ ein.
 
@@ -40,7 +41,7 @@ Dieses Thema bietet Ihnen eine Schritt-für-Schritt-Anleitung, wie Sie den bedin
 
     ![Screenshot des Blatts „Einstellungen“, das den Abschnitt „Bedingter Zugriff“ anzeigt, wobei die Option „Exchange Online“ hervorgehoben ist](../media/MAM-conditional-access-1.png)
 
-6. Wählen Sie auf dem Blatt **Zulässige Apps** die Option **Allow apps that support Intune app policies** (Apps zulassen, die Intune-App-Richtlinien unterstützen), um nur Apps zuzulassen, die von Intune-MAM-Richtlinien unterstützt werden, damit sie auf Exchange Online zugreifen können. Wenn Sie diese Option auswählen, wird die Liste der unterstützten Apps angezeigt.
+6. Wählen Sie auf dem Blatt **Zulässige Apps** die Option **Allow apps that support Intune app policies** (Apps zulassen, die Intune-App-Richtlinien unterstützen), um nur Apps zuzulassen, die von Intune-App-Schutzrichtlinien unterstützt werden, damit sie auf Exchange Online zugreifen können. Wenn Sie diese Option auswählen, wird die Liste der unterstützten Apps angezeigt.
 
     >[!NOTE]
     >Alle E-Mail-Clients von Exchange Active Sync, einschließlich der integrierten E-Mail-Clients unter iOS und >Android, die eine Verbindung mit Exchange Online herstellen, werden daran gehindert, >E-Mails zu senden oder zu empfangen. Benutzer erhalten stattdessen eine einzige E-Mail, die sie darüber informiert, dass sie die >Outlook-E-Mail-App verwenden müssen.
@@ -60,10 +61,10 @@ Um aus der Liste der **eingeschränkten Benutzergruppen** **eine Benutzergruppe 
 ## <a name="next-steps"></a>Nächste Schritte
 [Blockieren von Apps, die über keine moderne Authentifizierung verfügen](block-apps-with-no-modern-authentication.md)
 ### <a name="see-also"></a>Weitere Informationen:
-[Schützen von App-Daten mithilfe von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Protect app data with app protection policies (Schützen von App-Daten mithilfe von App-Schutzrichtlinien)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

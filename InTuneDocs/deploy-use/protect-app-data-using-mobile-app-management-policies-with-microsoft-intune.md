@@ -13,50 +13,51 @@ ms.technology:
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: af067236e27a65c52c78107fefdb956ad0fd5aa5
-ms.openlocfilehash: b4672b19517f1871a276000c6e8f5d01c0280e35
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: 651899219458f799e26ed7957ccef97d7ae2af09
 
 
 ---
 
-# <a name="protect-app-data-using-mobile-application-management-policies-with-microsoft-intune"></a>Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Anwendungen mit Microsoft Intune
+# <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Schützen von App-Daten mithilfe der App-Schutzrichtlinien mit Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>Wie Sie Ihre App-Daten schützen können
 Ihre Mitarbeiter verwenden mobile Geräte für private und berufliche Aufgaben. Sie möchten einerseits die Produktivität Ihrer Mitarbeiter sicherstellen, möchten andererseits aber auch Datenverlust verhindern, sei er beabsichtigt oder unbeabsichtigt.  Darüber hinaus möchten Sie Unternehmensdaten schützen können, auf die Mitarbeiter mit Geräten zugreifen, die nicht durch Sie verwaltet werden.
 
-Sie können Intune-Verwaltungsrichtlinien für mobile Anwendungen (Mobile App Management, MAM) verwenden, um Ihre Unternehmensdaten zu schützen. Da Intune MAM-Richtlinien **unabhängig von Lösungen für die Verwaltung mobiler Geräte (MDM)** einsetzbar sind, können Sie MAM mit oder ohne Registrierung der Geräte bei einer Geräteverwaltungslösung zum Schutz Ihrer Unternehmensdaten verwenden. Durch die Implementierung von **Richtlinien auf App-Ebene** können Sie den Zugriff auf Unternehmensressourcen einschränken und Daten im Zuständigkeitsbereich der IT-Abteilung halten.
+Sie können Intune-App-Schutzrichtlinien verwenden, um Ihre Unternehmensdaten zu schützen. Da Intune-App-Schutzrichtlinien **unabhängig von Lösungen für die Verwaltung mobiler Geräte (MDM) einsetzbar sind**, können Sie MAM mit oder ohne Registrierung der Geräte bei einer Geräteverwaltungslösung zum Schutz Ihrer Unternehmensdaten verwenden. Durch die Implementierung von **Richtlinien auf App-Ebene** können Sie den Zugriff auf Unternehmensressourcen einschränken und Daten im Zuständigkeitsbereich der IT-Abteilung halten.
 
-Sie können MAM-Richtlinien für Apps konfigurieren, die auf Geräten ausgeführt werden, die folgende Voraussetzungen erfüllen:
+Sie können App-Schutzrichtlinien für Apps konfigurieren, die auf Geräten ausgeführt werden, die folgende Voraussetzungen erfüllen:
 
 -   **Registriert bei Microsoft Intune:** Die Geräte in dieser Kategorie sind in der Regel unternehmenseigene Geräte.
 
 -   **Registriert bei einer MDM-Lösung eines Drittanbieters:** Die Geräte in dieser Kategorie sind in der Regel unternehmenseigene Geräte.
 
   > [!NOTE]
-  > Die Verwendung von MAM-Richtlinien mit MAM- oder sicheren Containerlösungen von Drittanbietern wird nicht empfohlen.
+  > Die Verwendung von App-Schutzrichtlinien mit der mobilen Anwendungsverwaltung von Drittanbietern oder sicheren Containerlösungen wird nicht empfohlen.
 
 -   **Nicht bei einer MDM-Lösung registriert:** Die Geräte in dieser Kategorie sind in der Regel mitarbeitereigene Geräte, die weder bei Intune noch anderen MDM-Lösungen registriert sind oder dort verwaltet werden.
 
 > [!IMPORTANT]
-> Sie können MAM-Richtlinien für mobile Office-Apps erstellen, die eine Verbindung mit Office 365-Diensten herstellen. MAM-Richtlinien werden nicht für Apps unterstützt, die eine Verbindung mit Exchange lokal, Skype for Business oder SharePoint-Diensten herstellen.
+> Sie können App-Schutzrichtlinien für mobile Office-Apps erstellen, die eine Verbindung mit Office 365-Diensten herstellen. App-Schutzrichtlinien werden nicht für Apps unterstützt, die eine Verbindung mit Exchange lokal, Skype for Business oder SharePoint-Diensten herstellen.
 
-## <a name="benefits-of-using-mam-policies"></a>Vorteile von MAM-Richtlinien
+## <a name="benefits-of-using-app-protection-policies"></a>Vorteile der Verwendung von App-Schutzrichtlinien
 
 -   **Sie erleichtern den Schutz Ihrer Unternehmensdaten auf App-Ebene.** Da die Verwaltung von mobilen Anwendungen keine Geräteverwaltung voraussetzt, können Sie Unternehmensdaten auf verwalteten und auf unverwalteten Geräten schützen. Bei der Verwaltung wird die Benutzeridentität in den Mittelpunkt gestellt, wodurch sich die Geräteverwaltung erübrigt.
 
 -   **Die Produktivität der Benutzer wird nicht beeinträchtigt, und die Richtlinien werden nicht angewendet, wenn Sie die App im privaten Kontext verwenden.** Die Richtlinien werden nur auf den beruflichen Kontext angewendet, wodurch Sie die Möglichkeit haben, Unternehmensdaten zu schützen, ohne dass private Daten einbezogen werden.
 
-Es gibt weitere Vorteile bei der Verwendung einer MDM mit MAM-Richtlinien, und Unternehmen können MAM gleichzeitig mit und ohne MDM verwenden. So kann ein Mitarbeiter beispielsweise ein unternehmenseigenes Smartphone und ein privates Tablet verwenden. In diesem Fall wird das unternehmenseigene Smartphone in einer MDM registriert und von MAM-Richtlinien geschützt, während das private Geräte nur mit MAM-Richtlinien geschützt wird.
+Es gibt weitere Vorteile bei der Verwendung einer MDM mit App-Schutzrichtlinien, und Unternehmen können MAM gleichzeitig mit und ohne MDM verwenden. So kann ein Mitarbeiter beispielsweise ein unternehmenseigenes Smartphone und ein privates Tablet verwenden. In diesem Fall wird das unternehmenseigene Smartphone in einer MDM registriert und von App-Schutzrichtlinien geschützt, während das private Geräte nur mit App-Schutzrichtlinien geschützt wird.
 
 - **Eine MDM-Lösung stellt sicher, dass das Gerät geschützt ist.** So können Sie beispielsweise die Eingabe einer PIN für den Zugriff auf das Gerät anfordern, oder Sie können verwaltete Apps auf dem Gerät bereitstellen. Sie können Apps auch über die MDM-Lösung auf Geräten bereitstellen, um mehr Kontrolle über die App-Verwaltung zu haben.
 
-- **MAM-Richtlinien stellen sicher, dass Schutzfunktionen auf App-Ebene vorhanden sind.** So können Sie beispielsweise über eine Richtlinie verfügen, die eine PIN anfordert, wenn eine App im beruflichen Kontext geöffnet werden soll, und verhindert, dass Daten zwischen Apps ausgetauscht werden oder dass App-Daten des Unternehmens an einem privaten Speicherort gespeichert werden.
+- **App-Schutzrichtlinien stellen sicher, dass Schutzfunktionen auf App-Ebene vorhanden sind**. So können Sie beispielsweise über eine Richtlinie verfügen, die eine PIN anfordert, wenn eine App im beruflichen Kontext geöffnet werden soll, und verhindert, dass Daten zwischen Apps ausgetauscht werden oder dass App-Daten des Unternehmens an einem privaten Speicherort gespeichert werden.
 
 ## <a name="devices-that-support-mam"></a>Geräte, die MAM unterstützen
-MAM-Richtlinien werden zurzeit für Folgendes unterstützt:
+App-Schutzrichtlinien werden zurzeit für Folgendes unterstützt:
 -   iOS 8.1 oder höher
 -   Android 4 oder höher
 
@@ -64,27 +65,27 @@ MAM-Richtlinien werden zurzeit für Folgendes unterstützt:
 >Windows-Geräte werden in der MAM nicht ohne Registrierungsszenario unterstützt. Wenn Sie jedoch Windows 10-Geräte mit Intune registrieren, können Sie Windows Information Protection verwenden, das ähnliche Funktionen bietet. Weitere Informationen finden Sie unter [Schutz von Unternehmensdaten mit Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 
-##  <a name="how-mam-policies-protect-app-data"></a>Wie App-Daten mit MAM-Richtlinien geschützt werden
+##  <a name="how-app-protection-policies-protect-app-data"></a>So schützen App-Schutzrichtlinien Ihre App-Daten
 
-###  <a name="apps-without-mam-policies"></a>Apps ohne MAM-Richtlinien
+###  <a name="apps-without-app-protection-policies"></a>Apps ohne App-Schutzrichtlinien
 
-![Die Abbildung zeigt, wie Daten ungehindert zwischen Apps verschoben werden können, wenn keine MAM-Richtlinien angewendet werden.](../media/Apps_without_MAM_policies.png)
+![Die Abbildung zeigt, wie Daten ungehindert zwischen Apps verschoben werden können, wenn keine App-Schutzrichtlinien angewendet werden.](../media/Apps_without_MAM_policies.png)
 
 Wenn Sie Apps ohne Einschränkungen verwenden, können Unternehmensdaten und private Daten vermischt werden. Unternehmensdaten könnten damit an Speicherorten wie dem persönlichen Speicher abgelegt oder an Apps außerhalb Ihres Zuständigkeitsbereichs übermittelt werden, was zu Datenverlusten führen könnte. Die Pfeile im Diagramm zeigen die uneingeschränkte Datenbewegung zwischen Apps (geschäftlich und privat) und zu Speicherorten.
 
-### <a name="data-protection-with-mam-policies"></a>Schutz von Daten mit MAM-Richtlinien
+### <a name="data-protection-with-app-protection-policies"></a>Datenschutz mit App-Schutzrichtlinien
 
-![Die Abbildung zeigt, wie Unternehmensdaten durch die Anwendung von MAM-Richtlinien geschützt werden.](../media/Apps_with_mobile_app_policies.png)
+![Das Bild zeigt, wie Unternehmensdaten durch die Anwendung von App-Schutzrichtlinien geschützt werden](../media/Apps_with_mobile_app_policies.png)
 
-Mit MAM-Richtlinien können Sie verhindern, dass Unternehmensdaten im lokalen Speicher des Geräts abgelegt werden. Außerdem können Sie das Verschieben von Daten in andere Apps, die nicht durch MAM-Richtlinien geschützt sind, einschränken. MAM-Richtlinieneinstellungen umfassen Folgendes:
+Mit App-Schutzrichtlinien können Sie verhindern, dass Unternehmensdaten im lokalen Speicher des Geräts gespeichert werden. Außerdem können Sie das Verschieben von Daten in andere Apps einschränken, die nicht durch App-Schutzrichtlinien geschützt sind. Einstellungen für App-Schutzrichtlinien:
 - Richtlinien zur Datenverschiebung wie **„Speichern unter“ verhindern**und **Ausschneiden, Kopieren und Einfügen einschränken**.
 - Einstellungen von Zugriffsrichtlinien wie **Einfache PIN für den Zugriff erforderlich** und **Ausführen verwalteter Apps auf mit Jailbreak oder Rooting manipulierten Geräten blockieren**.
 
-### <a name="data-protection-with-mam-policies-on-devices-that-are-managed-by-a-mdm-solution"></a>Schutz von Daten mit MAM-Richtlinien auf Geräten, die durch eine MDM-Lösung verwaltet werden
+### <a name="data-protection-with-app-protection-on-devices-that-are-managed-by-a-mdm-solution"></a>Schutz von Daten mit App-Schutzrichtlinien auf Geräten, die durch eine MDM-Lösung verwaltet werden
 
-![Die Abbildung zeigt, wie MAM-Richtlinien auf BYOD-Geräten (Bring Your Own Devices) funktionieren.](../media/MAM_BYOD_November.png)
+![Das Bild zeigt, wie App-Schutzrichtlinien auf BYOD-Geräten (Bring Your Own Devices) funktionieren](../media/MAM_BYOD_November.png)
 
-**Für Geräte, die in einer MDM-Lösung registriert sind**: Das Diagramm oben zeigt die Schutzebenen, die MDM- und MAM-Richtlinien zusammen bieten.
+**Für Geräte, die in einer MDM-Lösung registriert sind**: Das Diagramm oben zeigt die Schutzebenen, die MDM-Richtlinien und App-Schutzichtlinien zusammen bieten.
 
 Die MDM-Lösung:
 
@@ -94,7 +95,7 @@ Die MDM-Lösung:
 
 -   Sorgt für kontinuierliche Gerätekompatibilität und -verwaltung.
 
-**MAM-Richtlinien schaffen Mehrwert, denn:**
+**App-Schutzrichtlinien bieten Mehrwert wegen folgender Gründe:**
 
 -   Sie tragen zum Schutz der Unternehmensdaten bei, indem der Zugriff durch Verbraucher-Apps und -Dienste verhindert wird.
 
@@ -103,13 +104,13 @@ Die MDM-Lösung:
 -   Unternehmensdaten können aus Apps entfernt werden, ohne die Apps vom Gerät zu löschen.
 
 
-### <a name="data-protection-with-mam-policies-for-devices-without-enrollment"></a>Schutz von Daten mit MAM-Richtlinien für Geräte ohne Registrierung:
+### <a name="data-protection-with-app-protection-policies-for-devices-without-enrollment"></a>Schutz von Daten mit App-Schutzrichtlinien für Geräte ohne Registrierung
 
-![Die Abbildung zeigt, wie MAM-Richtlinien auf verwalteten Geräten funktionieren.](../media/MAM_ManagedDevices_November.png)
+![Das Bild zeigt, wie App-Schutzrichtlinien auf verwalteten Geräten funktionieren](../media/MAM_ManagedDevices_November.png)
 
 Das voranstehende Diagramm zeigt, wie Datenschutzrichtlinien auf App-Ebene ohne MDM funktionieren.
 
-Bei BYOD-Geräten, die nicht in einer MDM-Lösung registriert sind, können MAM-Richtlinien dazu beitragen, Unternehmensdaten auf App-Ebene zu schützen.
+Bei BYOD-Geräten, die nicht in einer MDM-Lösung registriert sind, können App-Schutzrichtlinien dazu beitragen, Unternehmensdaten auf App-Ebene zu schützen.
 
 Es gibt jedoch einige Einschränkungen, die Sie kennen sollten:
 
@@ -122,19 +123,19 @@ Es gibt jedoch einige Einschränkungen, die Sie kennen sollten:
 
 ## <a name="multi-identity"></a>Mehrere Identitäten
 
-Apps, die mehrere Identitäten unterstützen, bieten Ihnen die Möglichkeit, verschiedene Konten (Geschäfts- und persönliche Konten) für den Zugriff auf die gleichen Apps zu verwenden. Hierbei werden MAM-Richtlinien nur angewendet, wenn die Apps im Arbeitskontext verwendet werden.  
+Apps, die mehrere Identitäten unterstützen, bieten Ihnen die Möglichkeit, verschiedene Konten (Geschäfts- und persönliche Konten) für den Zugriff auf die gleichen Apps zu verwenden. Hierbei werden App-Schutzrichtlinien nur angewendet, wenn die Apps im Arbeitskontext verwendet werden.  
 
 Wenn ein Benutzer beispielsweise die OneDrive-App mit seinem Geschäftskonto startet, kann er die Dateien nicht an einen persönlichen Speicherort verschieben. Wenn der Benutzer OneDrive jedoch mit einem persönlichen Konto verwendet, kann er Daten ohne Einschränkung aus dem persönlichen OneDrive kopieren und verschieben.  
 
 Alle mobilen Office-Apps unterstützen den Zugriff über mehrere Identitäten.
 
 ##  <a name="next-steps"></a>Nächste Schritte
-- [Vorbereiten der Konfiguration von Verwaltungsrichtlinien für mobile Anwendungen](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+- [Vorbereitungen zum Konfigurieren von App-Schutzrichtlinien](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
-- [Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen mit Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+- [Erstellen und Bereitstellen von App-Schutzrichtlinien mit Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 
