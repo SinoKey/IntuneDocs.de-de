@@ -18,8 +18,8 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: d593b00ee3fd30adec6c36c3939c895647e8dada
 
 
 ---
@@ -38,36 +38,6 @@ Wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder macOS-Gerät 
 -   Automatisches Einrichten Ihres Unternehmens-E-Mail-Kontos
 
 Wenn Sie Ihr Gerät bei Intune registrieren, gestatten Sie damit Ihrem IT-Administrator, Ihr Gerät zu verwalten, damit die Unternehmensinformationen auf dem Gerät geschützt werden.
-
-**Das kann der IT-Administrator nicht sehen**
-
--   Anrufliste und Webverlauf
-
--    Standort
-
--   E-Mail-Nachrichten und SMS
-
--   Kontakte
-
--    Kennwörter
-
--   Kalender
-
--   Eigene Aufnahmen
-
-**Das kann der IT-Administrator sehen**
-
--   Modell
-
--   Seriennummer
-
--   Betriebssystem
-
--   App-Namen
-
--   Besitzer
-
--   Gerätename
 
 Wenn Ihr Gerät registriert ist, kann Ihr IT-Administrator die folgenden Aufgaben erledigen:
 
@@ -99,6 +69,6 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

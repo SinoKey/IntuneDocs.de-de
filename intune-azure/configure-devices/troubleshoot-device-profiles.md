@@ -1,5 +1,6 @@
 ---
-title: "Behandeln von Problemen mit Geräteprofilen in Microsoft Intune | Intune in Azure (Vorschau) | Microsoft Docs"
+title: "Behandeln von Problemen mit Geräteprofilen in Microsoft Intune"
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Wenn Sie nicht weiter kommen, verwenden Sie die Informationen in diesem Thema zum Lösen von Problemen mit Intune-Geräteprofilen."
 keywords: 
 author: robstackmsft
@@ -13,9 +14,10 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 132c0b308031a57277c20cedd5b4ad37bfdf92e6
-ms.openlocfilehash: fe2a694d7b6135b4e8f7aaf1c863bc1685e93ea6
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
 
 
 ---
@@ -499,6 +501,6 @@ Andere MDM-Geräte, wie Android, Windows Phone 8.1 und höher sowie iOS, müssen
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune) beschrieben an den Microsoft Support.
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 
