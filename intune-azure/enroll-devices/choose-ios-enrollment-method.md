@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: c228601451b33238d0f6929987dcdec3a5e56e8d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a08274fd4b2d3105b28f46a6d35257b3664f7510
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -32,7 +33,7 @@ Ihre Entscheidung, welche Methode zum Registrieren von iOS-Geräten verwendet wi
 
 ## <a name="user-owned-ios-devices-byod"></a>iOS-Gerät im Besitz des Benutzers (BYOD)
 
-Wenn Benutzer ihre privaten BYOD-Geräte (Bring Your Own Device) registrieren möchten, besteht die einzige verfügbare Registrierungsmethode darin, dass Benutzer die Unternehmensportal-App für iOS aus dem App Store herunterladen und die Registrierungsanweisungen in der App befolgen. Nach der Registrierung können Benutzer eine Verbindung mit dem Unternehmensnetzwerk herstellen, der Domäne oder Azure Active Directory beitreten und Zugriff auf Unternehmensressourcen erhalten.
+Wenn Benutzer ihre privaten BYOD-Geräte (Bring Your Own Device) registrieren möchten, besteht die einzige verfügbare Registrierungsmethode darin, dass Benutzer die Unternehmensportal-App für iOS aus dem App Store herunterladen und die Registrierungsanweisungen in der App befolgen. Nach der Registrierung können Benutzer eine Verbindung mit dem Unternehmensnetzwerk herstellen, der Domäne oder Azure Active Directory beitreten und Zugriff auf Unternehmensressourcen erhalten. Sie können die Registrierung von persönlichen iOS-Geräten blockieren. Unter [Festlegen von Gerätetypbeschränkungen](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) finden Sie Anweisungen.
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
@@ -48,9 +49,4 @@ Auf über das DEP erworbenen Geräten wird ein Registrierungsprofil „Drahtlos�
 
 ## <a name="use-the-device-enrollment-manager-dem"></a>Verwenden des Geräteregistrierungs-Managers
 Der Geräteregistrierungs-Manager ist eine Art von Benutzerkonto, mit der bis zu 1.000 Geräte registriert werden können. Sie fügen dem Konto des Geräteregistrierungs-Managers (DEM) vorhandene Benutzer hinzu, damit diese bestimmte Fähigkeiten erhalten. Jedes Gerät, das der DEM-Benutzer registriert, verwendet eine einzelne Intune-Lizenz. Weitere Informationen finden Sie unter [Registrieren von Geräten mithilfe des Geräteregistrierungs-Managers](enroll-devices-using-device-enrollment-manager.md).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

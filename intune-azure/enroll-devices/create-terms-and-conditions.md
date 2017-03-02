@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 694e5ac5eff0e2d39d44d992fe9dcc2262c112ce
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: f7d6ebc9d71a077492ab615a3bc5397e092b1deb
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -29,7 +30,7 @@ Sie können mehrere Richtlinien erstellen und bereitstellen, die verschiedene Nu
 
 **So erstellen Sie Geschäftsbedingungen**
 
-1. Wählen Sie im Azure-Portal **Weitere Dienste** aus, geben Sie **Intune** in das Textfeld ein, und wählen Sie dann **Andere** > **Intune** aus.
+1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
 2. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Nutzungsbedingungen** aus.
 
@@ -50,9 +51,4 @@ Sie können mehrere Richtlinien erstellen und bereitstellen, die verschiedene Nu
    - **Nutzungsbedingungen:** Die rechtliche Bezeichnung, die Benutzern angezeigt wird und die sie annehmen oder ablehnen müssen, z.B. „Ich stimme den Geschäftsbedingungen zu“.
 
 6. Wählen Sie **OK** aus.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

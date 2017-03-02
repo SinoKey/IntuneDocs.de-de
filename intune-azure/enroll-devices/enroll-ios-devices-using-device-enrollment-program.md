@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 2986e659d384eaa67b64af1ce3ae48a1ac81a600
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -50,7 +51,7 @@ Die folgenden Voraussetzungen müssen vor dem Einrichten der Registrierung von i
 
 Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Gruppe von Geräten. Die folgenden Schritte zeigen, wie Sie ein Registrierungsprofil für iOS-Geräte erstellen, die mit dem Programm zur Geräteregistrierung registriert werden.
 
-1. Wählen Sie im Azure-Portal **Weitere Dienste** aus, geben Sie **Intune** in das Textfeld ein, und wählen Sie dann **Andere** > **Intune** aus.
+1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
 2. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Apple-Registrierung** aus.
 
@@ -110,17 +111,19 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Grup
 
 ## <a name="synchronize-dep-managed-devices"></a>Synchronisieren von DEP-verwalteten Geräten
 
-1. Wählen Sie im Azure-Portal auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Apple-Registrierung** aus.
+1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
-2. Wählen Sie unter **APPLE-DEP-EINSTELLUNGEN (PROGRAMM ZUR GERÄTEREGISTRIERUNG) VERWALTEN** die Option **DEP-Seriennummern** aus.
+2. Wählen Sie im Azure-Portal auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Apple-Registrierung** aus.
+
+3. Wählen Sie unter **APPLE-DEP-EINSTELLUNGEN (PROGRAMM ZUR GERÄTEREGISTRIERUNG) VERWALTEN** die Option **DEP-Seriennummern** aus.
 
 4. Wählen Sie auf dem Blatt **DEP-Seriennummern** die Option **Synchronisieren** aus.
 
 5. Wählen Sie auf dem Blatt **Synchronisieren** die Option **Synchronisierung anfordern** aus. Die Statusanzeige zeigt die Zeitdauer, die Sie warten müssen, bevor Sie die Synchronisierung erneut anfordern können.
 
     Zur Einhaltung der Apple-Bedingungen für zulässigen DEP-Datenverkehr erzwingt Intune die folgenden Einschränkungen:
-     -  Eine vollständige DEP-Synchronisation kann nicht öfter als einmal alle sieben Tage erfolgen. Während einer vollständigen Synchronisierung aktualisiert Intune jede Seriennummer, die Intune von Apple zugewiesen wurde, und zwar unabhängig davon, ob die Seriennummer vorher synchronisiert wurde oder nicht. Wenn eine vollständige Synchronisierung innerhalb von sieben Tagen nach der vorherigen vollständigen Synchronisierung versucht wird, aktualisiert Intune nur Seriennummern, die nicht bereits in Intune aufgeführt sind.
-     -  Synchronisierungsanforderungen müssen binnen 10 Minuten abgeschlossen werden. Während dieser Zeit oder bis zum erfolgreichen Erfüllen der Anforderung wird die Schaltfläche **Synchronisieren** deaktiviert.
+     -    Eine vollständige DEP-Synchronisation kann nicht öfter als einmal alle sieben Tage erfolgen. Während einer vollständigen Synchronisierung aktualisiert Intune jede Seriennummer, die Intune von Apple zugewiesen wurde, und zwar unabhängig davon, ob die Seriennummer vorher synchronisiert wurde oder nicht. Wenn eine vollständige Synchronisierung innerhalb von sieben Tagen nach der vorherigen vollständigen Synchronisierung versucht wird, aktualisiert Intune nur Seriennummern, die nicht bereits in Intune aufgeführt sind.
+     -    Synchronisierungsanforderungen müssen binnen 10 Minuten abgeschlossen werden. Während dieser Zeit oder bis zum erfolgreichen Erfüllen der Anforderung wird die Schaltfläche **Synchronisieren** deaktiviert.
 
 >[!NOTE]
 >Sie können auch auf dem Blatt **DEP-Seriennummern** Profilen DEP-Seriennummern zuweisen.
@@ -153,9 +156,4 @@ Auf mit Benutzeraffinität konfigurierten Geräte kann die Unternehmensportal-Ap
 7. Nachdem die Seriennummer überprüft wurde, wird die Unternehmensportal-App zur Unternehmensportal-Website umgeleitet, um die Registrierung abzuschließen. Anschließend fordert die Website den Benutzer auf, zur App zurückzukehren.
 
 Die Registrierung ist damit abgeschlossen, und die Benutzer können nun die Funktionen des Geräts in vollem Umfang nutzen.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

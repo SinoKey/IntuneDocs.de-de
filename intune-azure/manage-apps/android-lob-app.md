@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: ef43194daa5cbdf058b4fe0ed94e775fe2e7340e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: dbeaabe0f119a0e819857ef7181bbf6de2b1dbd8
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-android-line-of-business-lob-apps-to-intune"></a>Hinzufügen von Android-Branchen-Apps in Intune
+# <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen Android-Apps (LOB) in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -53,9 +54,4 @@ Klicken Sie auf dem Blatt **Setupdatei auswählen** auf die Schaltfläche „Dur
 3. Wenn Sie fertig sind, wählen Sie auf dem Blatt **App hinzufügen** die Option **Speichern** aus.
 
 Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie ausgewählten Gruppen zuweisen können. Hilfe finden Sie unter [Zuweisen von Apps zu Gruppen](/intune-azure/manage-apps/deploy-apps).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

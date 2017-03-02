@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/17
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,18 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: 71d29a245f8f900a7427528167bae0b52565d42b
+ms.sourcegitcommit: 37c56d0c219c61c345874b24e8ba9ac640f1ef76
+ms.openlocfilehash: 4c2ebe535935518127a799ae0518c43a2e53de72
+ms.lasthandoff: 02/17/2017
 
 
 ---
 
-# <a name="add-apple-configurator-serial-numbers"></a>Hinzufügen von Apple Configurator-Seriennummern 
+# <a name="add-apple-configurator-serial-numbers"></a>Hinzufügen von Apple Configurator-Seriennummern
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Wenden Sie diese Schritte an, um in Intune Seriennummern für das [Registrieren unternehmenseigener iOS-Geräte mit Apple Configurator mit Setup-Assistent]((enroll-ios-devices-with-apple-configurator-and-setup-assistant.md) hinzuzufügen. Sie können Seriennummern einzeln hinzufügen oder eine mit Trennzeichen getrennte CSV-Datei mit Seriennummern hochladen. Nachdem Sie Seriennummern hinzugefügt haben, können Sie ihnen ein Profil zuweisen. Das Profil enthält die spezifischen Verwaltungseinstellungen, die Sie auf Geräte anwenden möchten. 
+Wenden Sie diese Schritte an, um in Intune Seriennummern für das [Registrieren unternehmenseigener iOS-Geräte mithilfe von Apple Configurator mit Setup-Assistent](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md) hinzuzufügen. Sie können Seriennummern einzeln hinzufügen oder eine mit Komma getrennte CSV-Datei mit Seriennummern hochladen. Nachdem Sie Seriennummern hinzugefügt haben, können Sie ihnen ein Profil zuweisen. Das Profil enthält die spezifischen Verwaltungseinstellungen, die Sie auf Geräte anwenden möchten.
 
 Andere Methoden zum Registrieren von iOS-Geräten werden in [Auswählen der Registrierung von iOS-Geräten in Intune](choose-ios-enrollment-method.md) beschriebenen.
 
@@ -35,7 +36,7 @@ Andere Methoden zum Registrieren von iOS-Geräten werden in [Auswählen der Regi
     F7TLWCLBX196,Gerätedetails</br>
     DLXQPCWVGHMJ,Gerätedetails
 
-2. Wählen Sie im Azure-Portal **Weitere Dienste** aus, geben Sie **Intune** in das Textfeld ein, und wählen Sie dann **Andere** > **Intune** aus.
+2. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
 3.  Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Apple-Registrierung** aus.
 
@@ -51,11 +52,13 @@ Andere Methoden zum Registrieren von iOS-Geräten werden in [Auswählen der Regi
 
 Mit Intune können Sie Profile von zwei verschiedenen Stellen im Azure-Portal zuweisen. Sie können anhand der folgenden Schritte vorgehen, oder Sie können Profilen vom Blatt „Apple Configurator-Registrierungsprofile“ zuweisen, auf dem Sie das Profil erstellt haben (siehe [Registrieren von iOS-Geräten mithilfe von Apple Configurator und Setup-Assistent](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)). Anhand der folgenden Schritte können Sie das Profil nur zuweisen, wenn Sie es bereits erstellt haben.
 
-1. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Apple-Registrierung** aus.
+1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
-2. Wählen Sie auf dem Blatt **Apple Configurator-Seriennummern** die Seriennummern aus, denen Sie ein Profil zuweisen möchten, und wählen Sie dann **Profil zuweisen** aus.
+2. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Apple-Registrierung** aus.
 
-3. Wählen Sie auf dem Blatt **Profil zuweisen** das Profil, das Sie zuweisen möchten, und dann **Zuweisen** aus.
+3. Wählen Sie auf dem Blatt **Apple Configurator-Seriennummern** die Seriennummern aus, denen Sie ein Profil zuweisen möchten, und wählen Sie dann **Profil zuweisen** aus.
+
+4. Wählen Sie auf dem Blatt **Profil zuweisen** das Profil, das Sie zuweisen möchten, und dann **Zuweisen** aus.
 
 ## <a name="delete-serial-numbers"></a>Löschen von Seriennummern
 Sie können Seriennummern löschen, die Sie zuvor importiert haben. Sie können Seriennummern nur dann löschen, wenn zunächst die Registrierung des Geräts aufgehoben wurde. Wenn Sie eine Seriennummer entfernen, können nicht Sie Apple Configurator nur dann über den Setup-Assistenten verwenden, wenn Sie die Seriennummer erneut hinzufügen.
@@ -70,9 +73,4 @@ Die Seriennummern des Geräts kann einen von zwei Status aufweisen:
 **So zeigen Sie den Status einer Seriennummer an**
 
 Wählen Sie auf dem Blatt **Apple Configurator-Seriennummern** die Seriennummer aus, deren Status Sie anzeigen möchten, und sehen Sie unter dem Element **Zustand** nach.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 938129f210d1a4a6b4719deb63d1dc47dad21b29
-ms.openlocfilehash: e36ecf949bf9a604c29de2f21a3761125eb60f7f
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: e48ef79726c542da210e167707c4ca044a7cdd51
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-monitor-device-profiles-with-intune-azure-preview"></a>Überwachen von Geräteprofilen mit der Vorschau von Intune in Azure
+# <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>So überwachen Sie Geräteprofile in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -34,9 +35,4 @@ Sie können den Zuweisungsstatus von Intune-Geräteprofilen auf zwei Arten über
 2. Wählen Sie auf dem Blatt mit der Liste der Profile das Profil aus, das Sie verwalten möchten, und klicken Sie dann auf eine der folgenden Optionen:
     - Wählen Sie auf dem Blatt <*Profilname*> **Berichte** die Option **Übersicht** aus, um grundlegende Informationen zum Profil und seinen Zuweisungen anzuzeigen.
     - Wählen Sie auf dem Blatt <*Profilname*> **Berichte** die Option **Berichte** aus, um ausführliche Informationen zum Profil und seinen Zuweisungen anzuzeigen.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/010/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: 78f0ff9a1b7bdaf30721d8702c36ff0e613b109e
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 8d56b6600ca86faabbb50d29405969385eb29940
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -46,7 +47,7 @@ Diese Probleme können auf allen Geräteplattformen auftreten.
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>Überprüfen Sie die Anzahl der registrierten und zulässigen Geräte.
 
-Wechseln Sie im Azure-Portal auf dem Blatt „Intune“ zu **Geräte registrieren** > **Registrierungsbeschränkungen**, und vergewissern Sie sich, dass dem Benutzer nicht mehr als die zulässige Höchstzahl von 15 Geräten zugewiesen ist.
+Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus. Wechseln Sie im Azure-Portal auf dem Blatt „Intune“ zu **Geräte registrieren** > **Registrierungsbeschränkungen**, und vergewissern Sie sich, dass dem Benutzer nicht mehr als die zulässige Höchstzahl von 15 Geräten zugewiesen ist.
 
 <!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
@@ -218,16 +219,16 @@ Der Zertifikatfehler tritt auf, da auf Android-Geräten Zwischenzertifikate für
 
 Um das Problem zu beheben, importieren Sie die Zertifikate wie folgt in die persönlichen Zertifikate des Computers auf dem AD FS-Server oder den Proxys:
 
-1.  Starten Sie die Konsole zur Zertifikatverwaltung für den lokalen Computer auf dem AD FS- und dem Proxyserver, indem Sie mit der rechten Maustaste auf die Schaltfläche **Start** klicken, **Ausführen** auswählen und **certlm.msc** eingeben.
-2.  Erweitern Sie **Persönlich**, und wählen Sie **Zertifikate** aus.
-3.  Suchen Sie das Zertifikat für Ihre Kommunikation mit dem AD FS-Dienst (ein öffentlich signiertes Zertifikat), und doppelklicken Sie darauf, um seine Eigenschaften anzuzeigen.
-4.  Klicken Sie auf die Schaltfläche **Zertifizierungspfad**, um die übergeordneten Zertifikate des Zertifikats anzuzeigen.
-5.  Wählen Sie in jedem übergeordneten Zertifikat die Option **Zertifikat anzeigen** aus.
-6.  Klicken Sie auf der Registerkarte **Details** auf **In Datei kopieren**.
-7.  Führen Sie die Anweisungen des Assistenten aus, um den des öffentlichen Schlüssel des Zertifikats an den gewünschten Speicherort zu exportieren oder zu speichern.
-8.  Importieren Sie die übergeordneten Zertifikate, die in Schritt 3 nach „Local Computer\Personal\Certificates“ exportiert wurden, indem Sie mit der rechten Maustaste auf **Zertifikate** klicken, **Alle Aufgaben** > **Importieren** auswählen und dann den Anweisungen des Assistenten zum Importieren der Zertifikate folgen.
-9.  Starten Sie die AD FS-Server neu.
-10. Wiederholen Sie die oben stehenden Schritte auf allen AD FS- und Proxyservern.
+1.    Starten Sie die Konsole zur Zertifikatverwaltung für den lokalen Computer auf dem AD FS- und dem Proxyserver, indem Sie mit der rechten Maustaste auf die Schaltfläche **Start** klicken, **Ausführen** auswählen und **certlm.msc** eingeben.
+2.    Erweitern Sie **Persönlich**, und wählen Sie **Zertifikate** aus.
+3.    Suchen Sie das Zertifikat für Ihre Kommunikation mit dem AD FS-Dienst (ein öffentlich signiertes Zertifikat), und doppelklicken Sie darauf, um seine Eigenschaften anzuzeigen.
+4.    Klicken Sie auf die Schaltfläche **Zertifizierungspfad**, um die übergeordneten Zertifikate des Zertifikats anzuzeigen.
+5.    Wählen Sie in jedem übergeordneten Zertifikat die Option **Zertifikat anzeigen** aus.
+6.    Klicken Sie auf der Registerkarte **Details** auf **In Datei kopieren**.
+7.    Führen Sie die Anweisungen des Assistenten aus, um den des öffentlichen Schlüssel des Zertifikats an den gewünschten Speicherort zu exportieren oder zu speichern.
+8.    Importieren Sie die übergeordneten Zertifikate, die in Schritt 3 nach „Local Computer\Personal\Certificates“ exportiert wurden, indem Sie mit der rechten Maustaste auf **Zertifikate** klicken, **Alle Aufgaben** > **Importieren** auswählen und dann den Anweisungen des Assistenten zum Importieren der Zertifikate folgen.
+9.    Starten Sie die AD FS-Server neu.
+10.    Wiederholen Sie die oben stehenden Schritte auf allen AD FS- und Proxyservern.
 Der Benutzer sollte sich jetzt mit dem Android-Gerät bei der Unternehmensportal-App anmelden können.
 
 **So überprüfen Sie, ob das Zertifikat richtig installiert wurde**
@@ -386,9 +387,4 @@ Möglicherweise trat dieser Fehler auf, weil der Computer bereits vorher registr
 
 ### <a name="next-steps"></a>Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune) beschrieben an den Microsoft Support.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

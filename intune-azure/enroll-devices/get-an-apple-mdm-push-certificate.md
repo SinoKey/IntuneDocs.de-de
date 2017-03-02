@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: c0884ded1c8c55bb1b7968e483864b42f5bd6bde
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a6ac1074055892f5ec42fb4057e47e9349fb5a33
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -27,8 +28,7 @@ ms.openlocfilehash: c0884ded1c8c55bb1b7968e483864b42f5bd6bde
 Intune ermöglicht die Verwaltung mobiler Geräte (mobile device management, MDM) wie iPads, iPhones und Mac OS X-Geräte und ermöglicht Benutzern den Zugriff auf Unternehmens-E-Mails und -Apps. Zum Verwalten von iOS- und Mac-Geräten benötigen Sie ein APNS-Zertifikat (Apple Push Notification Service). Sobald Sie das Zertifikat in Intune hinzufügen, können Ihre Benutzer die Unternehmensportal-App zur Registrierung ihrer Geräte installieren, oder Sie können die Verwaltung von firmeneigenen iOS-Geräten einrichten.
 
 **So rufen Sie das MDM-Push-Zertifikat ab**<br>
-
-Wählen Sie im Azure-Portal **Weitere Dienste** aus, geben Sie **Intune** in das Textfeld ein, und wählen Sie dann **Andere** > **Intune** aus. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** > **Apple-MDM-Push-Zertifikat** aus, und befolgen Sie die nachstehend dargestellten nummerierten Schritte im Azure-Portal.
+Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** > **Apple-MDM-Push-Zertifikat** aus, und befolgen Sie die nachstehend dargestellten nummerierten Schritte im Azure-Portal.
 
 **Schritt 1: Laden Sie die erforderliche Anforderung zur Signierung eines Intune-Zertifikats herunter, um ein Apple-MDM-Push-Zertifikat erstellen zu können.**<br>
 Wählen Sie **CSR herunterladen** aus, um die CSR-Datei herunterzuladen und lokal zu speichern. Die CSR-Datei wird verwendet, um ein Vertrauensstellungszertifikat vom Apple Push Certificates-Portal anzufordern.
@@ -41,9 +41,4 @@ Hinweis
 
 **Schritt 4: Navigieren Sie zu Ihrem hochzuladenden Apple-MDM-Push-Zertifikat.**<br>
 Wechseln Sie zur Zertifikatsdatei (.pem), wählen Sie **Öffnen** aus, und wählen Sie dann **Hochladen**aus. Mit dem Push-Zertifikat kann Intune iOS-Geräte registrieren und verwalten, indem die Richtlinie auf registrierte mobile Geräte übertragen wird.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

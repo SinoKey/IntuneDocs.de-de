@@ -14,8 +14,9 @@ ms.assetid: 7e5c79c5-2883-4841-9be6-74cba16ee447
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: c740dedebdc4afd909a8c38447f698c2724de5a1
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: b2c79e92f6378825bdaac03d2d9be699bdaca95b
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -31,7 +32,7 @@ Zum Verwalten unternehmenseigener iOS-Geräte mit dem Apple-Programm zur Geräte
 > Lesen Sie diesen Hinweis nur, wenn Sie ein Kunde sind, die von der Intune-Verwaltungskonsole zum Azure-Portal migriert wurde. Wenn Sie während der Migrationsphase ein Apple-DEP-Token über die Intune-Verwaltungskonsole gelöscht haben, wurde das DEP-Token möglicherweise in Ihrem Intune-Konto wiederhergestellt. In diesem Fall müssen Sie das DEP-Token einfach vom Azure-Portal löschen. 
 
 **So rufen Sie das Apple-DEP-Zertifikat ab**</br>
-Wählen Sie im Azure-Portal **Weitere Dienste** aus, geben Sie **Intune** in das Textfeld ein, und wählen Sie dann **Andere** > **Intune** aus. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** > **Apple-Apple-DEP-Token** aus, und befolgen Sie die nachstehend dargestellten nummerierten Schritte im Azure-Portal.
+Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** > **Apple-Apple-DEP-Token** aus, und befolgen Sie die nachstehend dargestellten nummerierten Schritte im Azure-Portal.
 
 **Schritt 1: Laden Sie ein Intune-Zertifikat mit öffentlichem Schlüssel herunter, das zum Erstellen eines Apple-DEP-Tokens erforderlich ist.**<br>
 Wählen Sie **Laden Sie Ihr Zertifikat mit öffentlichem Schlüssel herunter** aus, um die Verschlüsselungsschlüsseldatei (PEM) herunterzuladen und lokal zu speichern. Die PEM-Datei wird verwendet, um ein Vertrauensstellungszertifikat vom Apple Device Enrollment Program-Portal anzufordern.
@@ -53,9 +54,4 @@ Wählen Sie [DEP-Token über Apple-Bereitstellungsprogramme erstellen](https://d
 
 **Schritt 4: Navigieren Sie zu Ihrem hochzuladenden Apple-DEP-Token. Intune führt automatisch eine Synchronisierung mit Ihrem DEP-Konto durch.**<br>
 Wechseln Sie zur Zertifikatsdatei (.pem), wählen Sie **Öffnen** aus, und wählen Sie dann **Hochladen**aus. Mit dem Push-Zertifikat kann Intune iOS-Geräte registrieren und verwalten, indem die Richtlinie auf registrierte mobile Geräte übertragen wird.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

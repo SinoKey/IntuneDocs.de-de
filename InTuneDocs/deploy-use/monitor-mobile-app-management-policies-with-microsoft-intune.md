@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
-ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
+ms.lasthandoff: 02/14/2017
 
 
 ---
 
-# <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Überwachen der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune
-Sie können den Konformitätsstatus der Verwaltungsrichtlinien für mobile Apps (MAM) überwachen, die Sie auf Benutzer angewendet haben. Sie können Informationen über die Benutzer finden, die von der MAM-Richtlinie betroffen sind, deren Konformitätsstatus sowie Probleme, die bei den Benutzern möglicherweise auftreten.
+# <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Überprüfen von App-Schutzrichtlinien mit Microsoft Intune
+Sie können den Konformitätsstatus der App-Schutzrichtlinien überwachen, die Sie auf Benutzer angewendet haben. Sie können Informationen über die Benutzer finden, die von den App-Schutzrichtlinien betroffen sind, deren Konformitätsstatus sowie Probleme, die bei den Benutzern möglicherweise auftreten.
 
 Es gibt drei verschiedenen Stellen, an denen der Konformitätsstatus überwacht werden kann:
 
@@ -59,7 +61,7 @@ Sie können zur detaillierten Ansicht der Zusammenfassung gelangen, indem Sie au
 Sie können nach einem einzelnen Benutzer suchen und den Kompatibilitätsstatus für diesen Benutzer überprüfen. Auf dem Blatt **App-Berichterstellung** werden für einen ausgewählten Benutzer die folgenden Informationen angezeigt:
 - Geräte, die dem Benutzerkonto zugeordnet sind
 
-- Apps mit MAM-Richtlinie auf dem Gerät
+- Apps mit einer App-Schutzrichtlinie auf dem Gerät
 
 - Status:
 
@@ -68,7 +70,7 @@ Sie können nach einem einzelnen Benutzer suchen und den Kompatibilitätsstatus 
   - **Nicht eingecheckt:** Die Richtlinie wurde für den Benutzer bereitgestellt, die App seitdem aber nicht im Arbeitskontext verwendet.
 
 >[!NOTE]
-> Wenn für den gesuchten Benutzer keine MAM-Richtlinie bereitgestellt wurde, wird Ihnen eine Meldung angezeigt, dass auf den Benutzer keine MAM-Richtlinien angewendet werden.
+> Wenn für den gesuchten Benutzer keine App-Schutzrichtlinie bereitgestellt wurde, wird Ihnen eine Meldung angezeigt, dass auf den Benutzer keine App-Schutzrichtlinien angewendet werden.
 
 Um die Berichterstattung für einen Benutzer anzuzeigen, gehen Sie folgendermaßen vor:
 
@@ -87,7 +89,7 @@ In der Detailansicht werden die Fehlermeldung, die App, auf die bei Auftreten de
 
 ## <a name="reporting-view"></a>Berichterstellung
 
-Sie können die gleichen Berichte in der Detailansicht finden sowie zusätzliche Berichte, die Ihnen mit dem Konformitätsstatus der MAM-Richtlinie weiterhelfen:
+Sie können die gleichen Berichte in der Detailansicht finden sowie zusätzliche Berichte, die Ihnen mit dem Konformitätsstatus der App-Schutzrichtlinie weiterhelfen:
 
 ![Screenshot&4;](../media/MAM-reporting-7.png)
 
@@ -97,13 +99,13 @@ Sie können die gleichen Berichte in der Detailansicht finden sowie zusätzliche
 
     -   Benutzerstatus für verwaltete MAM-Aktivität (Geschützt): Dieser Bericht zeigt die Aktivität von jeder verwalteten MAM-App auf Benutzerebene.
 
-        -   Er zeigt alle Apps, die unter MAM-Richtlinien für jeden Benutzer fallen, und schlüsselt den Status jeder App, die unter MAM-Richtlinien eingecheckt sind oder die unter eine MAM-Richtlinie fallen, doch nie eingecheckt waren.
+        -   Er zeigt alle Apps, die unter App-Schutzrichtlinien für jeden Benutzer fallen, und schlüsselt den Status jeder App auf, die unter den App-Schutzrichtlinien eingecheckt sind oder die unter eine App-Schutzrichtlinie fallen, doch nie eingecheckt waren.
 <br></br>
     -   Benutzerstatus für nicht verwaltete MAM-Aktivität (nicht geschützt): Dieser Bericht beschreibt die Aktivitäten auf Benutzerbasis von mit MAM aktivierten Apps, die derzeit nicht verwaltet sind. Dies kann entsprechend der folgenden Gründe auftreten:
 
-        -   Diese Apps werden entweder von einem Benutzer oder von einer App verwendet, die derzeit nicht unter eine MAM-Richtlinie fällt.
+        -   Diese Apps werden entweder von einem Benutzer oder einer App verwendet, die derzeit nicht unter eine App-Schutzrichtlinie fällt.
 
-        -   Alle Apps sind eingecheckt, erhalten jedoch keine MAM-Richtlinien.
+        -   Alle Apps sind eingecheckt, erhalten jedoch keine App-Schutzrichtlinien.
 
 ![Screenshot&2;](../media/MAM-reporting-4.png)
 
@@ -131,11 +133,6 @@ Gehen Sie zum Generieren des App-Schutzberichts wie folgt vor:
 ## <a name="see-also"></a>Weitere Informationen:
 [Verwalten der Datenübertragung zwischen iOS-Apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [Was Sie erwartet, wenn Ihre Android-App von MAM-Richtlinien verwaltet wird](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Was Sie erwartet, wenn Ihre iOS-App von MAM-Richtlinien verwaltet wird](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+* [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 

@@ -19,11 +19,11 @@ Mit der automatischen Registrierung können Benutzer entweder unternehmenseigene
 
 4. Wählen Sie **Konfigurieren** aus, um mit der Konfiguration der automatischen MDM-Registrierung mit Microsoft Intune zu beginnen.
 
-5. Angeben der URLs für Intune:
+5. Verwenden Sie die Standardwerte für die folgenden URLs:
 
-  - **MDM-Registrierungs-URL** – Verwenden Sie den Standardwert.
-  - **MDM-Nutzungsbedingungs-URL** – Verwenden Sie den Standardwert. Diese URL zeigt die Nutzungsbedingungen für Benutzer an, wenn Geräte registriert werden.
-  - **MDM-Richtlinien-URL** – Verwenden Sie den Standardwert. Wenn ein Gerät als nicht kompatibel gemeldet wird, wird die Nachricht **Zugriff verweigert.** mit dieser URL angezeigt. Die URL verweist auf eine Seite, die Benutzern hilft, zu verstehen, warum ihr Gerät nicht mit der Richtlinie kompatibel ist und wie sie die Kompatibilität wiederherstellen können.
+  - **MDM-Registrierung**
+  - **MDM-Nutzungsbedingungen** 
+  - **MDM-Konformität**
 
 6.  Geben Sie an, welche Geräte von Benutzern von Microsoft Intune verwaltet werden sollen. Die Windows 10-Geräte dieser Benutzer werden automatisch für die Verwaltung mit Microsoft Intune registriert.
 
@@ -32,8 +32,3 @@ Mit der automatischen Registrierung können Benutzer entweder unternehmenseigene
   - **Keine**
 
 7. Wählen Sie **Speichern** aus.
-
-
-<!--HONumber=Feb17_HO2-->
-
-

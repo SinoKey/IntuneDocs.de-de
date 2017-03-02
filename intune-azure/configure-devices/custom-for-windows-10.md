@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0da8c0fe399f76f43439cc66eaecd12bb454f9a6
-ms.openlocfilehash: 05856480f8bb76e561f2b459d4ab800f9909a40a
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: bc740d9e43e2937757075bf84735fe611433f6f0
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-device-settings-for-windows-10-devices-in-intune-azure-preview"></a>Benutzerdefinierte Einstellungen für Windows 10-Geräte in der Vorschau von Intune in Azure
+# <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Benutzerdefinierte Geräteeinstellungen für Windows 10-Geräte in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -167,9 +168,4 @@ Im folgenden Screenshot ist die Einstellung **Connectivity/AllowVPNOverCellular*
 |**Speichern von Kennwörtern zulassen**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|Desktop und Mobile<br />**Datentyp:** Ganzzahl<br />**Werte:**<br>**0** – Kennwort-Manager deaktiviert <br>**1** – Kennwort-Manager aktiviert|
 |**AutoAusfüllen zulassen**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|nur Desktop<br />**Datentyp:** Ganzzahl<br />**Werte:** **0** – Deaktiviert (Standard), **1** – Aktiviert|
 |**Websiteliste für den Unternehmensmodus konfigurieren**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|nur Desktop<br />**Datentyp:** Zeichenfolge<br />**Werte:<br>**0** – Nicht konfiguriert<br>**1** – Websiteliste für den Unternehmensmodus von Internet Explorer verwenden, sofern konfiguriert (Standard)<br>**2** – Speicherort für die Websiteliste für den Unternehmensmodus angeben|
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

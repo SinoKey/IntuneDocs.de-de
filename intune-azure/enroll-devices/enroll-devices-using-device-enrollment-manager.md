@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: 1ab58388f3d126d5d831c65ad3342ec87fb77b91
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 78eca605a277c1e0fc750900ece028d8f2c7c5b2
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -66,7 +67,7 @@ Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurd
 
 ## <a name="add-a-device-enrollment-manager"></a>Hinzufügen eines Geräteregistrierungs-Managers
 
-1.  Wählen Sie im Azure-Portal **Weitere Dienste** aus, geben Sie **Intune** in das Textfeld ein, und wählen Sie dann **Andere** > **Intune** aus.
+1.  Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
 2.  Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Geräteregistrierungs-Manager** aus.
 
@@ -88,18 +89,17 @@ Wenn Sie einen Geräteregistrierungs-Manager entfernen, wirkt sich dies nicht au
 
 **So entfernen Sie einen Geräteregistrierungs-Manager**
 
-1. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Geräteregistrierungs-Manager** aus.
+1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
-2. Klicken Sie auf dem Blatt **Geräteregistrierungs-Manager** mit der rechten Maustaste auf den Geräteregistrierungs-Manager-Benutzer, und wählen Sie **Entfernen** aus.
+2. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Geräteregistrierungs-Manager** aus.
+
+3. Klicken Sie auf dem Blatt **Geräteregistrierungs-Manager** mit der rechten Maustaste auf den Geräteregistrierungs-Manager-Benutzer, und wählen Sie **Entfernen** aus.
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Anzeigen der Eigenschaften des Geräteregistrierungs-Managers
 
-1. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Geräteregistrierungs-Manager** aus.
+1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
-2. Klicken Sie auf dem Blatt **Geräteregistrierungs-Manager** mit der rechten Maustaste auf den Geräteregistrierungs-Manager-Benutzer, und wählen Sie **Eigenschaften** aus.
+2. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Geräteregistrierungs-Manager** aus.
 
-
-
-<!--HONumber=Feb17_HO1-->
-
+3. Klicken Sie auf dem Blatt **Geräteregistrierungs-Manager** mit der rechten Maustaste auf den Geräteregistrierungs-Manager-Benutzer, und wählen Sie **Eigenschaften** aus.
 

@@ -14,8 +14,9 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 3c0de501c172484f036aa2d812f0c40fcfa1d93f
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 72a162175e278faa236add5698d65233fa851c7b
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -36,14 +37,9 @@ Die Einstellung für die Autorität für die Verwaltung mobiler Geräte bestimmt
 
 **So richten Sie die Autorität für die Verwaltung mobiler Geräte ein**
 
-1. Wählen Sie im Azure-Portal **Weitere Dienste** aus, geben Sie **Intune** in das Textfeld ein, und wählen Sie dann **Andere** > **Intune** aus.
+1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
 2. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Übersicht** aus.
 
 3. Wählen Sie auf dem Blatt **Mit der Geräteverwaltung beginnen** die Option **MDM-Autorität auf Intune festlegen** aus. Eine Meldung zeigt an, dass Sie die MDM-Autorität erfolgreich auf Intune festgelegt haben.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

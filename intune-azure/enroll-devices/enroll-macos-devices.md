@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 1/3/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba2affcdbcdfcd690d671c7b20f9d1e14a74f764
-ms.openlocfilehash: 171175689adca027181f3da4d05222117de97e13
+ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
+ms.openlocfilehash: f217988313debd33bcba3f8168aa03b6dbf8586e
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 171175689adca027181f3da4d05222117de97e13
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Als Intune-Administrator können Sie die macOS-Geräte verwalten. Standardmäßig ermöglicht das Azure-Portal Benutzern die Registrierung ihrer macOS-Geräte. Sie müssen den Benutzern nur auf die [Unternehmensportal-Website](http://portal.manage.microsoft.com) verweisen, damit sie dort ihre macOS-Gerät registrieren. 
+Intune ermöglicht es Ihnen, macOS-Geräte zu verwalten. Um die Geräteverwaltung zu aktivieren, müssen Ihre Benutzer ihre Geräte registrieren, indem sie auf die [Unternehmensportal-Website](http://portal.manage.microsoft.com) gehen und die Aufforderungen befolgen. Sobald sich macOS-Geräte unter Verwaltung befinden, können Sie [benutzerdefinierte Einstellungen für macOS-Geräte erstellen](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos). Weitere Funktionen sind in Kürze verfügbar.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -39,20 +40,17 @@ Die folgenden Voraussetzungen müssen vor dem Einrichten der Registrierung von m
 
 ## <a name="set-up-macos-enrollment"></a>Einrichten der macOS-Registrierung
 
-Standardmäßig ist Intune bereits dafür eingerichtet, die Registrierung von macOS-Geräten zu erlauben. 
+Standardmäßig erlaubt Intune bereits die Registrierung von macOS-Geräten. 
 
-Um die Einstellung zum Zulassen oder Blockieren der Registrierung von macOS-Geräten anzuzeigen, wechseln Sie im Azure-Portal zum Blatt „Intune“ und wählen **Registrierung** > **Registrierungsbeschränkungen** aus. 
+Informationen zum Blockieren der Registrierung von macOS-Geräten finden Sie unter [Festlegen von Gerätetypbeschränkungen](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions). 
+
+Um die maximale Anzahl von Geräten festzulegen, die ein Benutzer registrieren kann, sehen Sie sich das Thema [Festlegen von Einschränkungen zum Gerätelimit](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions) an.
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Kommunizieren der Geräteregistrierung für den Zugriff auf Unternehmensressourcen an die Benutzer
 
-Registrierungsanleitungen für Endbenutzer finden Sie unter [Registrieren Ihres macOS-Geräts bei Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos). Im Laufe des Registrierungsprozesses werden Benutzer darüber informiert, was sie erwarten können und was IT-Administratoren auf ihren Geräten sehen können und was nicht.
+Ihre Endbenutzer müssen auf die [Unternehmensportal-Website](http://portal.manage.microsoft.com) gehen und den Aufforderungen folgen, um ihre Geräte zu registrieren. Sie können ihnen auch einen Link für Online-Registrierungsschritte senden: [Registrieren Ihres Mac OS-Geräts bei Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos). 
 
 Informationen zu anderen Endbenutzeraufgaben finden Sie in den folgenden Artikeln:
 
 - [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
 - [Verwenden Ihres iOS- oder Mac OS-Geräts mit Intune](https://docs.microsoft.com/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)
-
-
-<!--HONumber=Feb17_HO1-->
-
-

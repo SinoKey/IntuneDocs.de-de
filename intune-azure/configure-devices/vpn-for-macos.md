@@ -14,13 +14,14 @@ ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6cd3069a63bd657d1c9f5e33b96db39a3b3f98d2
-ms.openlocfilehash: 6f7bcfaec34c4916f7c916210b00440062b83694
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 758573964627b1d5e4f98ea3729df696bf96bf1c
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-macos-devices-in-intune-azure-preview"></a>VPN-Einstellungen für macOS-Geräte in der Vorschau von Intune in Azure
+# <a name="vpn-settings-for-macos-devices-in-microsoft-intune"></a>VPN-Einstellungen für macOS-Geräte in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -57,9 +58,4 @@ Wenn Sie **Benutzerdefiniertes VPN** ausgewählt haben, konfigurieren Sie diese 
 - **Automatisches Konfigurationsskript:** Verwenden Sie eine Datei zum Konfigurieren des Proxyservers. Geben Sie die **Proxyserver-URL** ein (z.B. **http://proxy.contoso.com**), unter der die Konfigurationsdatei zu finden ist.
 - **Adresse:** Geben Sie die Adresse des Proxyservers (als IP-Adresse) ein.
 - **Portnummer:** Geben Sie die Portnummer ein, die dem Proxyserver zugeordnet ist.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

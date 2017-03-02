@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 677c41a2-5344-4c52-85f0-809dce3a5d5b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e6e0540acd5488077ae5217f8862e3bc5462ed71
-ms.openlocfilehash: 342681922944fd1ea4be6aa4ddcb0725f6cfd42b
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: ab9c879763ce1ed02a52a57e66fdc06fa970c2a4
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="windows-10-team-device-restriction-settings-in-intune-azure-preview"></a>Einstellungen für Geräteeinschränkungen für Windows 10 Team in der Vorschau von Intune in Azure
+# <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Windows 10 Team in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -33,9 +34,4 @@ ms.openlocfilehash: 342681922944fd1ea4be6aa4ddcb0725f6cfd42b
 - **URL für Hintergrundbild des Willkommensbildschirms:** Aktivieren Sie diese Einstellung, um auf dem **Willkommensbildschirm** von Windows 10 Team-Geräten einen benutzerdefinierten Hintergrund aus der angegebenen URL anzuzeigen.<br>Das Bild muss im PNG-Format vorliegen und die URL muss mit **https://** beginnen.
 - **Wartungsfenster für Updates:** Konfiguriert das Fenster, in dem Updates am Gerät vorgenommen werden können. Sie können die Startzeit und Länge des Fensters (1 bis 5 Stunden) konfigurieren.
 - **Azure Operational Insights:** Azure Operational Insights ist Teil der Microsoft Operations Management Suite und sammelt, speichert und analysiert Protokolldaten von Windows 10-Team-Geräten.<br>Sie müssen eine **Arbeitsbereichs-ID** und einen **Arbeitsbereichsschlüssel** angeben, um die Verbindung mit Azure Operational Insights herstellen zu können.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/16/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: edd6303f3bb05dfff758cbb7d4bd08e21f083998
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 99b790e33843efcf83a4687490b186a6e174bd81
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: edd6303f3bb05dfff758cbb7d4bd08e21f083998
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Als Intune-Administrator können Sie die Verwaltung von Android-Geräten, einschließlich Samsung KNOX Standard-Geräten, über das Unternehmensportal aktivieren. Benutzer können ihre Geräte anschließend über die Unternehmensportal-App registrieren, die in Google Play zur Verfügung steht.
+Mit Intune können Sie Android-Geräte, einschließlich Samsung Knox Standard-Geräte, verwalten. Um die Geräteverwaltung zu aktivieren, müssen die Benutzer ihre Geräte durch Herunterladen der Intune-Unternehmensportal-App, die bei Google Play verfügbar ist, registrieren und anschließend die App öffnen und den Anweisungen zum Registrieren folgen. Sobald sich Android-Geräte unter Verwaltung befinden, können Sie [Konformitätsrichtlinien erstellen](https://docs.microsoft.com/intune-azure/set-device-compliance/create-a-compliance-policy-for-android), [Apps verwalten](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-management) und mehr.
 
 ## <a name="prerequisite"></a>Voraussetzung
 
@@ -32,20 +33,19 @@ Sie müssen die MDM-Autorität auf **Microsoft Intune** festlegen, um die Verwal
 
 ## <a name="set-up-android-enrollment"></a>Einrichten der Android-Registrierung
 
-Standardmäßig ist Intune so eingerichtet, dass die Registrierung von Android- und Samsung KNOX Standard-Geräte zugelassen wird. 
+Standardmäßig erlaubt Intune bereits die Registrierung von Android- und Samsung KNOX Standard-Geräten. 
 
-Um die Einstellung zum Zulassen oder Blockieren der Registrierung von Android-Geräten anzuzeigen, wechseln Sie im Azure-Portal zum Blatt „Intune“ und wählen **Registrierung** > **Registrierungsbeschränkungen** aus. 
+Um Android-Geräte oder nur die Registrierung von persönlichen Android-Geräten zu blockieren, gehen Sie unter [Festlegen von Gerätetypbeschränkungen](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions). 
+
+Um die maximale Anzahl von Geräten festzulegen, die ein Benutzer registrieren kann, sehen Sie sich das Thema [Festlegen von Einschränkungen zum Gerätelimit](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions) an.
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Kommunizieren der Geräteregistrierung für den Zugriff auf Unternehmensressourcen an die Benutzer
 
-Registrierungsanleitungen für Endbenutzer finden Sie unter [Registrieren Ihres Android-Geräts bei Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-android). Im Laufe des Registrierungsprozesses werden Benutzer darüber informiert, was sie erwarten können und was IT-Administratoren auf ihren Geräten sehen können und was nicht.
+Ihre Endbenutzer müssen unter Google Play die Intune-Unternehmensportal-App herunterladen, sie dann öffnen und den Aufforderungen folgen, um ihr Gerät zu registrieren. Im Laufe des von der App geführten Registrierungsprozesses werden Benutzer darüber informiert, was sie erwarten können und was IT-Administratoren auf ihren Geräten sehen können und was nicht.
+
+Sie können auch einen Link für Online-Registrierungsschritte senden: [Registrieren Ihres Android-Geräts bei Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-android). 
 
 Informationen zu anderen Endbenutzeraufgaben finden Sie in den folgenden Artikeln:
 
 - [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
 - [Verwenden Ihres Android-Geräts mit Intune](https://docs.microsoft.com/intune/enduser/using-your-android-device-with-intune)
-
-
-<!--HONumber=Feb17_HO1-->
-
-

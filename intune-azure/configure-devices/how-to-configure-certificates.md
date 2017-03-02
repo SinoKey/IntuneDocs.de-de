@@ -1,11 +1,12 @@
 ---
-title: Konfigurieren von Zertifikaten mit Intune | Intune in Azure (Vorschau) | Microsoft Docs
+title: Konfigurieren von Zertifikaten mit Intune
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie mit Intune Zertifikate erstellen und zuweisen, mit denen Sie WLAN-, VPN- und andere Verbindungen schützen können."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: a0183f2a170ed458b19c7688b20ee5ba5c2c696e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 364534ad788466f8b268b4091decee5326b94163
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-certificates-with-intune-azure-preview"></a>Konfigurieren von Zertifikaten mit der Vorschau von Intune in Azure
+# <a name="how-to-configure-certificates-in-microsoft-intune"></a>Konfigurieren von Zertifikaten in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -42,8 +45,8 @@ Wenn Sie Benutzern den Zugriff auf Unternehmensressourcen über VPN-, WLAN- oder
 
     Ein SCEP-Zertifikatprofil können Sie nur bei folgenden Plattformen anwenden:
 
--   macOS 10.9 und höher
--   Windows Phone 8.1 und höher
+-     macOS 10.9 und höher
+-     Windows Phone 8.1 und höher
 
 Sie müssen für jede Geräteplattform ein eigenes Profil erstellen. Nachdem Sie das Profil erstellt haben, ordnen Sie es dem bereits erstellten vertrauenswürdigen Stammzertifikatprofil zu.
 
@@ -196,9 +199,4 @@ Beachten Sie Folgendes, bevor Sie Gruppen Zertifikatprofile zuweisen:
 
 ## <a name="next-steps"></a>Nächste Schritte
 Allgemeine Informationen zum Zuweisen von Geräteprofilen finden Sie unter [Zuweisen von Geräteprofilen](how-to-assign-device-profiles.md).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

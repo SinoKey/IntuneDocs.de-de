@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 4a95e575-2c63-4bfc-b9c4-f0a132eef618
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01e5bfeb98aee9314fa04679cc27c8aba0e18fb0
-ms.openlocfilehash: 307819e2416ebefa091166af338e6b1a0a8a6cc7
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 4a08e0ac90faa0715172e7c5355b474822536afe
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-windows-phone-81-store-apps-to-intune"></a>Hinzufügen von Store-Apps für Windows Phone 8.1 in Intune
+# <a name="how-to-add-windows-phone-81-store-apps-to-microsoft-intune"></a>Hinzufügen von Windows Phone 8.1 Store-Apps in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -47,8 +48,3 @@ ms.openlocfilehash: 307819e2416ebefa091166af338e6b1a0a8a6cc7
 8. Wenn Sie fertig sind, wählen Sie auf dem Blatt **App hinzufügen** die Option **Speichern** aus.
 
 Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie ausgewählten Gruppen zuweisen können. Hilfe finden Sie unter [Zuweisen von Apps zu Gruppen](/intune-azure/manage-apps/deploy-apps).
-
-
-<!--HONumber=Feb17_HO1-->
-
-
