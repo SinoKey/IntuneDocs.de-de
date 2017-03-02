@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/24/17
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
 ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
+ms.lasthandoff: 01/25/2017
 
 
 ---
@@ -261,7 +262,7 @@ Wenn das Serverzertifikat ordnungsgemäß installiert wurde, werden in den Ergeb
 
 **Lösung:** Teilen Sie die folgenden Lösungen mit Ihren Endbenutzern, damit Sie wieder Zugriff auf Unternehmensressourcen erhalten.
 
-Wenn Benutzer die iOS-Unternehmensportal-App starten, können sie sehen, ob deren Gerät keinen Kontakt mehr mit Intune hat. Wenn erkannt wird, dass kein Kontakt mehr mit Intune besteht, wird automatisch versucht, eine Synchronisation mit Intune durchzuführen, um die Verbindung wieder herzustellen. Benutzer sehen die **Synchronisierungsversuch...**- Inlinemeldung. 
+Wenn Benutzer die iOS-Unternehmensportal-App starten, können sie sehen, ob deren Gerät keinen Kontakt mehr mit Intune hat. Wenn erkannt wird, dass kein Kontakt mehr mit Intune besteht, wird automatisch versucht, eine Synchronisation mit Intune durchzuführen, um die Verbindung wieder herzustellen. Benutzer sehen die **Synchronisierungsversuch...**- Inlinemeldung.
 
   ![Versuch, Benachrichtigungen zu synchronisieren](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -269,11 +270,11 @@ Wenn die Synchronisierung erfolgreich ist, sehen Sie die Inlinemeldung **Synchro
 
   ![Benachrichtigung „Synchronisierung erfolgreich“](./media/ios_cp_app_sync_successful_notification.png)
 
-Wenn die Synchronisierung nicht erfolgreich ist, sehen Benutzer die Inlinemeldung **Synchronisierung nicht möglich** in der iOS-Unternehmensportal-App. 
+Wenn die Synchronisierung nicht erfolgreich ist, sehen Benutzer die Inlinemeldung **Synchronisierung nicht möglich** in der iOS-Unternehmensportal-App.
 
   ![Benachrichtigung „Synchronisierung nicht möglich“](./media/ios_cp_app_unable_to_sync_notification.png)
 
-Um das Problem zu beheben, müssen Benutzer die Schaltfläche **Set up** (Einrichten) auswählen, die sich rechts von der Meldung **Synchronisierung nicht möglich** befindet. Die Schaltfläche „Set up“ (Einrichten) führt die Benutzer zum Bildschirm „Company Access Setup“ (Unternehmenszugriff einrichten), auf dem sie die Anforderungen befolgen können, um ihr Gerät zu registrieren. 
+Um das Problem zu beheben, müssen Benutzer die Schaltfläche **Set up** (Einrichten) auswählen, die sich rechts von der Meldung **Synchronisierung nicht möglich** befindet. Die Schaltfläche „Set up“ (Einrichten) führt die Benutzer zum Bildschirm „Company Access Setup“ (Unternehmenszugriff einrichten), auf dem sie die Anforderungen befolgen können, um ihr Gerät zu registrieren.
 
   ![Bildschirm „Unternehmenszugriff einrichten“](./media/ios_cp_app_company_access_setup.png)
 
@@ -386,9 +387,4 @@ Möglicherweise wurde der Computer bereits vorher registriert oder hat das geklo
 
 ### <a name="next-steps"></a>Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
