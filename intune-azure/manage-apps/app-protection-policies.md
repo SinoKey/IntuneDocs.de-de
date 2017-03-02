@@ -1,5 +1,6 @@
 ---
-title: Erstellen und Bereitstellen von App-Schutzrichtlinien | Intune in Azure (Vorschau) | Microsoft Docs
+title: Erstellen und Bereitstellen von App-Schutzrichtlinien
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Intune-App-Schutzrichtlinien dabei helfen, Unternehmensdaten zu schützen, die von Apps in Ihrer Verwaltung verwendet werden."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 5112c6641577f3faefb85650dd06bd1634542019
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 607598812a414843f1f33a00670a6a85b6687878
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -122,9 +125,4 @@ Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finde
 ### <a name="see-also"></a>Weitere Informationen:
 * [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](app-protection-enabled-android-apps.md)
 * [Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

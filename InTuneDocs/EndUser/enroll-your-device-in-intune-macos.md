@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: esmich
+ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
-ms.openlocfilehash: 60879acf553934d246c662060e3d57ec50c51658
+ms.sourcegitcommit: e2a507ff6f803cf022536824ca2f12f6d6a64d75
+ms.openlocfilehash: 4b532299070bdb8ddf0e9de1e6b598e8dcd8ffb3
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,37 +37,36 @@ Sie benötigen Zugriff auf Apps, Daten und Ressourcen Ihrer Organisation, um Ihr
 
   [!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
 
-3. Nach der Anmeldung sehen Sie alle verfügbaren __Apps__, __Meine Geräte__ sowie __Kontaktinformationen__, um sich mit dem IT-Personal in Verbindung zu setzen. Oben auf der Seite wird folgender Hinweis angezeigt: **Entweder ist das Gerät nicht registriert, oder das Gerät kann nicht durch das Unternehmensportal identifiziert werden. <u>Tippen Sie hier</u>, um ein anderes Gerät auszuwählen.** Klicken Sie auf __Tippen Sie hier__.
+3. Wenn Sie sich anmelden, werden Ihnen die verfügbaren Registerkarten der __Startseite__, der __Apps__ und der __Kategorien__ angezeigt. Auf dieser Seite wird Ihnen angezeigt, welche Apps installiert werden können. Wenn Sie noch keine registrierten Geräte haben, wird Ihnen die Meldung **We can‘t show you any apps** (Keine Apps verfügbar) angezeigt. Um fortzufahren wählen Sie __Meine Geräte__ aus.
 
- ![Mac OS-Startseite des Unternehmensportals](./media/macOS_enroll_001_landing_page.png)
+ ![Ein Screenshot der Startseite des Webportals; im Webportal wird angezeigt, dass noch keine Apps installiert werden können; darunter die Schaltfläche „Meine Geräte“.](./media/macOS_enroll_001_landing_page.png)
 
-4. Es wird ein Popupfenster mit einer kurzen Erläuterung dazu geöffnet, warum Sie __dieses Gerät identifizieren oder registrieren__ müssen. Lesen Sie die angezeigten Informationen, und klicken Sie auf __Registrieren__, um den Vorgang fortzusetzen.
+4. Auf der Seite __Meine Geräte__ wird entweder eine Liste der registrierten Geräte angezeigt oder einfach nur ein Banner. Dies hängt davon ab, ob Sie bereits ein macOS- oder ein anderes Gerät registriert haben. Wählen Sie das Banner __Wenn Ihr Gerät aufgelistet ist, klicken Sie hier, um es zu identifizieren.  Sie können auch hier klicken, um ein nicht aufgelistetes Gerät zu registrieren__ aus, um ein nicht aufgelistetes Gerät zu registrieren.
 
- ![Dieses Mac OS-Gerät identifizieren oder registrieren](./media/macOS_enroll_002_IDenroll_popup.png)
+  ![Ein Screenshot der Seite „Meine Geräte“ mit mehreren nicht identifizierten Geräten oberhalb der Banneraufforderung, nicht aufgelistete Geräte zu registrieren oder nicht identifizierte Geräte zu identifizieren.](./media/macOS_enroll_002_tap_here_banner.png)
 
-5. Es wird ein zweites Popupfenster mit einer kurzen Erläuterung dazu geöffnet, was bei der __Registrierung dieses Geräts__ geschieht. Lesen Sie die angezeigten Informationen, und klicken Sie auf __Installieren__, um den Vorgang fortzusetzen.
+5. Es wird ein Popupfenster mit einer kurzen Erläuterung dazu geöffnet, warum Sie __dieses Gerät identifizieren oder registrieren__ müssen. Lesen Sie die angezeigten Informationen, und klicken Sie auf __Registrieren__, um den Vorgang fortzusetzen.
 
- ![Dieses Mac OS-Gerät registrieren](./media/macOS_enroll_003_enroll_popup.png)
+ ![Dieses Mac OS-Gerät identifizieren oder registrieren](./media/macOS_enroll_003_IDenroll_popup.png)
+
+6. Es wird ein zweites Popupfenster mit einer kurzen Erläuterung dazu geöffnet, was bei der __Registrierung dieses Geräts__ geschieht. Lesen Sie die angezeigten Informationen, und klicken Sie auf __Installieren__, um den Vorgang fortzusetzen.
+
+ ![Dieses Mac OS-Gerät registrieren](./media/macOS_enroll_004_enroll_popup.png)
 
   > [!NOTE]
   > Intune benötigt Zugriff auf Ihren Computer, um sicherzustellen, dass die Gerätesicherheit für den Zugriff auf Organisationsinformationen ausreicht. Finden Sie heraus, [was geschieht, wenn Sie Ihr Gerät bei Intune registrieren](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md).
 
-6. Die __Systemeinstellungen__ werden geöffnet, und Sie erhalten die Meldung __„Verwaltungsprofil“ installieren?__ Klicken Sie auf __Installieren__, um den Vorgang fortzusetzen, oder zeigen Sie weitere Details an, indem Sie auf __Profil anzeigen__ klicken.
+7. Die __Systemeinstellungen__ werden geöffnet, und Sie erhalten die Meldung __„Verwaltungsprofil“ installieren?__ Klicken Sie auf __Installieren__, um den Vorgang fortzusetzen, oder zeigen Sie weitere Details an, indem Sie auf __Profil anzeigen__ klicken.
 
- ![Verwaltungsprofil installieren](./media/macOS_enroll_004_sysprefs_mgmt_profile.png)
+ ![Verwaltungsprofil installieren](./media/macOS_enroll_005_sysprefs_mgmt_profile.png)
 
-7. Ein Mac OS-Popupfenster wird angezeigt. Bestätigen Sie, dass Sie die Änderungen durchführen möchten, indem Sie den __Benutzernamen__ und das __Kennwort__ für Ihren Computer eingeben, und klicken Sie auf __OK__. Daraufhin wird das Verwaltungsprofil auf Ihrem Mac installiert.
+8. Ein Mac OS-Popupfenster wird angezeigt. Bestätigen Sie, dass Sie die Änderungen durchführen möchten, indem Sie den __Benutzernamen__ und das __Kennwort__ für Ihren Computer eingeben, und klicken Sie auf __OK__. Daraufhin wird das Verwaltungsprofil auf Ihrem Mac installiert.
 
- ![Popupfenster zur Mac OS-Profilinstallation](./media/macOS_enroll_005_sysprefs_admin_login.png)
+ ![Popupfenster zur Mac OS-Profilinstallation](./media/macOS_enroll_006_sysprefs_admin_login.png)
 
-8. Möglicherweise werden auf Ihrem Mac zusätzliche Meldungen mit weiteren Details zum Profil angezeigt, oder Sie müssen die __Installation__ bestätigen. Klicken Sie auf __Weiter__ und __Installieren__, um den Vorgang fortzusetzen. Sobald die Installation abgeschlossen ist, können Sie das neu installierte __Verwaltungsprofil__ in der Liste der __Geräteprofile__ anzeigen.
+9. Möglicherweise werden auf Ihrem Mac zusätzliche Meldungen mit weiteren Details zum Profil angezeigt, oder Sie müssen die __Installation__ bestätigen. Klicken Sie auf __Weiter__ und __Installieren__, um den Vorgang fortzusetzen. Sobald die Installation abgeschlossen ist, können Sie das neu installierte __Verwaltungsprofil__ in der Liste der __Geräteprofile__ anzeigen.
 
- ![Installiertes Mac OS-Profil](./media/macOS_enroll_006_sysprefs_installed_profile.png)
+ ![Installiertes Mac OS-Profil](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Sie finden entsprechende Kontaktinformationen auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

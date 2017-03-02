@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2d5c7d4800e1140efb502c47151ea8cc87548acd
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: 9de1c3f8c3dbb7a5e00c5384cc7321aedfa5b9b5
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -120,17 +121,22 @@ In der folgenden Tabelle werden Fehlercodes erläutert, die in **Warnungen** ang
 |**0x80070032**|Eine oder mehrere Voraussetzungen, die für die Installation der Clientsoftware erforderlich sind, wurden auf dem Clientcomputer nicht gefunden.|Stellen Sie sicher, dass alle erforderlichen Updates auf dem Clientcomputer installiert sind, und versuchen Sie dann erneut, die Clientsoftware zu installieren. Weitere Informationen zu den Voraussetzungen für die Installation der Clientsoftware finden Sie unter [Anforderungen an die Netzwerkinfrastruktur für Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune).|
 |**0x80043008**|Der Dienst „Updates für Microsoft Online Management“ konnte nicht gestartet werden.|Wenden Sie sich dazu an den Microsoft Support, wie unter [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben.|
 |**0x80043009**|Der Clientcomputer ist bereits für den Dienst registriert.|Sie müssen den Clientcomputer abkoppeln, bevor sie ihn erneut für den Dienst registrieren können. Anweisungen finden Sie unter [Abkoppeln von Geräten in der Microsoft Intune-Verwaltung](/intune/deploy-use/retire-devices-from-microsoft-intune-management).|
+|**0x8004300A**|(Phase 21) Beim Bereitstellen des Registrierungspakets ins GPO zur Installation auf der Benutzer- und nicht auf der Computerebene tritt ein Fehler auf. |Stellen Sie sicher, dass das GPO auf der Computerebene über GPSI korrekt anvisiert wird. Forumsbeiträge zu diesem Thema finden Sie im [TechNet-Forum](https://social.technet.microsoft.com/Forums/en-US/bb9fa71c-c132-4954-abb0-70be8acbd925/failed-to-install-windows-intune?forum=microsoftintuneprod).|
 |**0x8004300B**|Das Installationspaket für die Clientsoftware kann nicht ausgeführt werden, da die Windows-Version auf dem Client nicht unterstützt wird.|Die auf dem Client ausgeführte Windows-Version wird von Intune nicht unterstützt. Eine Liste der unterstützten Betriebssysteme finden Sie unter [Network infrastructure requirements for Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune) (Anforderungen an die Netzwerkinfrastruktur für Microsoft Intune).|
-|**0xAB2**|Fehler beim Zugriff auf die VBScript-Laufzeit für die benutzerdefinierte Aktion.|Dieser Fehler wird von einer benutzerdefinierten Aktion verursacht, die auf DLLs (Dynamic-Link Libraries) aufbaut. Um den DLL-Fehler zu ermitteln, benötigen Sie möglicherweise die Tools, die im Artikel 198038 der [Microsoft Support-KB: Hilfreiche Tools bei Problemen mit der Paketerstellung und Weitergabe](http://go.microsoft.com/fwlink/?LinkID=234255) erläutert werden.|
+|**0xAB2**|Fehler beim Zugriff auf die VBScript-Laufzeit für die benutzerdefinierte Aktion.|Dieser Fehler wird von einer benutzerdefinierten Aktion verursacht, die auf DLLs (Dynamic-Link Libraries) aufbaut. Um den DLL-Fehler zu ermitteln, benötigen Sie möglicherweise die Tools, die im Artikel&19803;8 der [Microsoft Support-KB: Hilfreiche Tools bei Problemen mit der Paketerstellung und Weitergabe](http://go.microsoft.com/fwlink/?LinkID=234255) erläutert werden.|
 |**0x8004300f**|Die Software kann nicht installiert werden, da der System Center Configuration Manager-Client bereits installiert ist.|Entfernen Sie den Configuration Manager-Client, und wiederholen Sie dann die Installation der Clientsoftware.|
 |**0x80043010**|Die Software kann nicht installiert werden, da der OMADM-Client (Open Mobile Alliance Device Management) bereits installiert ist.|Heben Sie die Registrierung des OMADM-Clients auf, und wiederholen Sie dann die Installation der Clientsoftware.|
 Wenn weiterhin Installationsprobleme auftreten, wenden Sie sich wie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Support. Halten Sie das Registrierungsprotokoll des Clientcomputers (dieses befindet sich unter %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log und %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) und das Windows Update-Protokoll (%*windir*%\windowsupdate.log) für die Supportmitarbeiter bereit.
 
+## <a name="what-to-do-if-endpoint-protection-is-not-uninstalled-when-you-uninstall-the-client"></a>Was Sie machen können, wenn Endpoint Protection bei der Deinstallation des Clients nicht deinstalliert ist
+
+Manchmal bleibt der Agent für Host Protection (Endpoint Protection) möglicherweise zurück, nachdem Sie die obenstehenden Befehle ausgeführt haben. Sollte dies so sein, führen Sie folgenden Befehl mit erhöhten Benutzerrechten aus:
+
+    ```
+    "C:\Program Files\Managed Defender\Setup.exe" /x /q /s
+    ```
+
+
 ### <a name="next-steps"></a>Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

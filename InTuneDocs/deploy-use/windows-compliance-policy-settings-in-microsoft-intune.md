@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: a7edd3d23a28f3496b22efdc3b17fb25b40399b6
+ms.sourcegitcommit: 1fa570c3bca5d24ad234e8437a8553bf358520b8
+ms.openlocfilehash: c0baa59aacc6475544d70d2ead5f6fbf45429dfd
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -75,6 +76,9 @@ Die in diesem Abschnitt aufgeführten Einstellungen werden unter Windows Phone 8
   -  **BitLocker ist aktiviert:** Wenn BitLocker aktiviert ist, kann das Gerät auf dem Laufwerk gespeicherte Daten vor unbefugtem Zugriff schützen, wenn das System ausgeschaltet wird, oder in den Ruhezustand wechselt. Die Windows BitLocker-Laufwerksverschlüsselung verschlüsselt alle auf einem Volume mit Windows-Betriebssystem gespeicherten Daten. BitLocker verwendet das TPM zum Schutz des Windows-Betriebssystems und der Benutzerdaten. BitLocker stellt auch sicher, dass ein Computer nicht manipuliert wird, selbst wenn dieser unbeaufsichtigt ist, verloren gegangen ist, oder gestohlen wurde. Wenn der Computer mit einem kompatiblen TPM ausgestattet ist, verwendet BitLocker das TPM zum Sperren der Verschlüsselungsschlüssel, die die Daten schützen. Daher kann auf die Schlüssel nicht zugegriffen werden, bis das TPM den Zustand des Computers überprüft hat.
   -  **Codeintegrität ist aktiviert:** Die Codeintegrität ist ein Feature, das die Integrität eines Treibers oder einer Systemdatei jedes Mal überprüft, wenn diese(r) in den Speicher geladen wird. Die Codeintegrität erkennt, ob ein nicht signierter Treiber oder eine Systemdatei in den Kernel geladen wird. Sie erkennt auch, ob eine Systemdatei durch böswillige Software manipuliert wurde, die von einem Benutzerkonto mit Administratorrechten ausgeführt wird.
   - **Sicherer Start ist aktiviert**: Wenn der sichere Start aktiviert ist, wird das System gezwungen, in einem vertrauenswürdigen Zustand zu starten. Wenn der sichere Start aktiviert ist, müssen die zum Starten des Computers verwendeten Kernkomponenten zudem über die richtigen kryptografischen Signaturen verfügen, denen das Unternehmen vertraut, das das Gerät hergestellt hat. Dies wird von der UEFI-Firmware überprüft, bevor der Computer gestartet werden kann. Wenn Dateien manipuliert wurden und dadurch die Signatur ungültig ist, wird das System nicht gestartet.
+
+  > [!IMPORTANT]
+  > Windows-Geräte unterstützen keine Software für **Antischadstoff-Frühstarts** (Early Launch Anti Malware, ELAM) von Drittanbietern, die im Rahmen des Nachweises der Geräteintegrität installiert wurden.
 
   Informationen zur Funktionsweise des HAS-Diensts finden Sie unter [Integritätsnachweis-CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 ###  <a name="device-property-settings"></a>Einstellungen für Geräteeigenschaften
@@ -151,9 +155,4 @@ Um die Betriebssystemversion für die Einstellungen **Minimal erforderliches Bet
 
 - Bei PCs unter Windows 10 muss die Version auf **10.0** plus Buildnummer des Betriebssystems festgelegt werden, die vom **winver**-Befehl zurückgegeben wird. Beispiel: 10.0.10586.
 > ![Die Buildversion des Betriebssystems wird im Dialogfeld „Info“ markiert](./media/ca_win10-os-version.png)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

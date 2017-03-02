@@ -1,5 +1,6 @@
 ---
-title: Bekannte Probleme in der Microsoft Intune-Vorschau | Intune in Azure (Vorschau) | Microsoft Docs
+title: Bekannte Probleme in der Microsoft Intune-Vorschau
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie etwas über bekannte Probleme in der Vorschau."
 keywords: 
 author: robstackmsft
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f479b4236243fd05630229520633a09c451e6e1e
-ms.openlocfilehash: c1f79db598651b6a8a1c2a34627a901eff6a0beb
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -35,9 +38,4 @@ Wenn Sie ein neues Feature für Intune anfordern möchten, sollten Sie auf unser
 ## <a name="administration-and-accounts"></a>Verwaltung und Konten
 
 - Globale Administratoren (auch als Mandantenadministratoren bezeichnet) können weiterhin alltägliche Verwaltungsaufgaben ausführen, ohne über eine separate Intune- oder EMS-Lizenz (Enterprise Mobility Suite) zu verfügen. Wenn globale Administratoren den Dienst jedoch verwenden möchten, um z. B. ihr eigenes Gerät oder ein unternehmenseigenes Gerät zu registrieren bzw. das Intune-Unternehmensportal zu verwenden, benötigen sie wie alle anderen Benutzer eine Intune- oder EMS-Lizenz.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

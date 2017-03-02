@@ -1,5 +1,6 @@
 ---
-title: "Vollständiges oder selektives Zurücksetzen auf Geräten mit Intune | Intune in Azure (Vorschau) | Microsoft Docs"
+title: "Vollständiges oder selektives Zurücksetzen von Geräten mit Intune"
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie eine selektive Zurücksetzung von Unternehmensdaten auf einem Gerät oder eine vollständige Zurücksetzung des Geräts auf Werkseinstellungen durchführen."
 keywords: 
 author: staciebarker
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 9188f4bb4ea526227ccd9f2029fc9b44cbd4a334
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 22e188e81f2bc278045bb0988642b1b68372d6af
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -122,9 +125,4 @@ Beim **selektiven Zurücksetzen** werden die Unternehmensdaten und bei Bedarf au
 3.  Wählen Sie auf dem Blatt mit dem Namen des Geräts **Unternehmensdaten entfernen** und dann zur Bestätigung des Zurücksetzens **Ja** aus.
 
 Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minuten, bis ein Befehl zum Zurücksetzen an alle Gerätetypen weitergegeben wurde.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

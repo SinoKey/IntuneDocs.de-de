@@ -1,11 +1,11 @@
 ---
-title: "Behandeln häufig auftretender Probleme mit dem iOS-Gerät"
-description: 
+title: "Behandeln häufig auftretender Probleme mit Ihrem iOS-Gerät | Microsoft-Dokumentation"
+description: "Lösungen für häufig auftretende Probleme mit Ihrem iOS-Gerät."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: ea1b967619ffa50912ef8d152485dce04f49ad2f
-ms.openlocfilehash: ab8602dfd098c9da29af6bbfdd5167f375df9e73
+ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
+ms.openlocfilehash: 53062067c250434b65911c47b8c2eda052a353c3
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -27,19 +29,14 @@ ms.openlocfilehash: ab8602dfd098c9da29af6bbfdd5167f375df9e73
 
 Gelegentlich können Probleme mit dem iOS-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Probleme empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) an Ihren IT-Administrator zu wenden.
 
-- [Wiederherstellen der Verbindung eines gefährdeten iOS-Geräts](how-to-reconnect-a-compromised-ios-device.md)
-- [Senden von Fehlern an Ihren IT-Administrator](send-errors-to-your-it-admin-ios.md)
-- [Sie erhalten bei Verwendung der Unternehmensportal-App eine Fehlermeldung](you-get-an-error-while-using-the-company-portal-app-ios.md)
-- [Es werden Fehlermeldungen angezeigt, wenn Sie versuchen, Ihr Gerät bei Intune zu registrieren](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
-- [Sie werden aufgefordert, Ihr Gerät zu identifizieren, wenn Sie versuchen, sich zu registrieren](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
+- [Ich muss die Verbindung zu einem gefährdeten iOS-Geräts wiederherstellen](how-to-reconnect-a-compromised-ios-device.md)
+- [Ich muss Fehlermeldungen an einen IT-Administrator senden](send-errors-to-your-it-admin-ios.md)
+- [Bei Verwendung der Unternehmensportal-App ist ein Fehler aufgetreten](you-get-an-error-while-using-the-company-portal-app-ios.md)
+- [Bei der Registrierung meines Geräts in Intune sind Fehler aufgetreten](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
+- [Ich muss mein Gerät für die Registrierung identifizieren](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 - [Wie finde ich die Seriennummer auf meinem Gerät?](how-do-i-find-the-serial-number-on-my-device-ios.md)
-- [Das Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems](you-need-to-update-your-ios-device.md)
-- [Gerät entspricht nicht der maximalen Betriebssystemversion](you-need-to-update-your-ios-device.md)
-- [Sie werden aufgefordert, Lookout for Work auf Ihrem iOS-Gerät zu installieren](you-are-prompted-to-install-lookout-for-work-ios.md)
-- [Sie müssen eine Bedrohung beseitigen, die Lookout for Work auf Ihrem iOS-Gerät erkannt hat](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+- [Ich muss mein iOS-Gerät aktualisieren](you-need-to-update-your-ios-device.md)
+- [Meine iOS-Version wird noch nicht unterstützt](your-ios-version-isnt-yet-supported.md)
+- [Ich muss Lookout for Work auf meinem iOS-Gerät installieren](you-are-prompted-to-install-lookout-for-work-ios.md)
+- [Ich muss eine Bedrohung beseitigen, die Lookout for Work auf meinem iOS-Gerät erkannt hat](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
 

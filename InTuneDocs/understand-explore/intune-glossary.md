@@ -11,9 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -61,7 +63,7 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |-|-|
 |E-Mail-Profil|Diese Richtlinie kann verwendet werden, um [E-Mail-Zugriffseinstellungen](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) für bestimmte E-Mail-Clients auf mobilen Geräten einzurichten, sodass der Einrichtungsaufwand für den Endbenutzer minimiert wird.|
 |EMS|Microsoft Enterprise Mobility + Security (vormals Enterprise Mobility Suite) schützt Ihre Unternehmensdaten und ermöglicht den Benutzern gleichzeitig den [Zugriff auf die Apps und Inhalte, die sie benötigen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility).|
-|Endbenutzer|[Benutzer von Geräten wie Smartphones und PCs](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune), die Sie mithilfe von Intune verwalten.|
+|Endbenutzer|[Gerätebenutzer von z.B. Telefonen und PCs](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune), die mit Intune verwaltet werden.|
 |Registrieren|Microsoft Intune verwendet die [Registrierung](/intune/deploy-use/enroll-devices-in-microsoft-intune) dazu, Geräte in die Verwaltung aufzunehmen und den Zugriff auf Ressourcen zu ermöglichen.|
 
 ## <a name="f"></a>F
@@ -145,9 +147,4 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |||
 |-|-|
 |Wi-Fi-Profil|Eine Richtlinie, die [Drahtlosnetzwerkeinstellungen](/intune/deploy-use/wi-fi-connections-in-microsoft-intune) für Geräte bereitstellt, sodass Benutzer eine Verbindung mit Ihrem Firmennetzwerk herstellen können, ohne entsprechende Einstellungen kennen oder konfigurieren zu müssen.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

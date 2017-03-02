@@ -1,11 +1,12 @@
 ---
-title: "Rollenbasierte Zugriffssteuerung für Microsoft Intune | Intune in Azure (Vorschau) | Microsoft Docs"
+title: "Rollenbasierte Zugriffssteuerung für Microsoft Intune"
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie mit der rollenbasierten Zugriffssteuerung steuern können, wer Aktionen ausführen und Änderungen vornehmen kann."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1024d2a33d843c628ffbb68f7b01a5d511191e7e
-ms.openlocfilehash: db0f88db8eee33781ccf3ef54e34089a25118726
+ms.sourcegitcommit: f4a80949dafbd3acc0413c75bbb0b8b5f5ae5664
+ms.openlocfilehash: 2507626d23beece9723134191e8747f731478ddb
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -40,7 +43,7 @@ Die folgenden Rollen sind in Intune integriert. Sie können diese Rollen anpasse
 - **Intune Administrator:** besitzt vollständige Berechtigungen für alle Intune Vorgänge
 - **Application Manager:** verwaltet Anwendungen und Profile und stellt sie bereit
 - **Configuration Policy Manager:** verwaltet Konfigurationseinstellungen und Profile und stellt sie bereit
-- **Helpdesk Operator:** führt Remoteaufgaben durch und zeigt Benutzer- und Geräteinformationen an
+- **Helpdesk Operator:** führt Remoteaufgaben durch und zeigt Benutzer- und Geräteinformationen an.
 - **Read Only Operator:** zeigt Informationen im Intune-Portal an, ohne Änderungen vornehmen zu können
 
 
@@ -171,8 +174,3 @@ Wenn Sie eine benutzerdefinierte Rolle erstellen, können Sie eine oder mehrere 
 |**Löschen**|Löschen von Einstellungen für Geschäftsbedingungen|
 |**Lesen**|Lesen von Einstellungen für Geschäftsbedingungen im Intune-Portal|
 |**Aktualisieren**|Aktualisieren von Einstellungen für Geschäftsbedingungen|
-
-
-<!--HONumber=Feb17_HO1-->
-
-

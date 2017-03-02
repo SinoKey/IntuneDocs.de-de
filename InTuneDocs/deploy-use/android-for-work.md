@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: 1c7c0967cfd29f68e8d6d0428f1f8407e2cbd9cb
+ms.sourcegitcommit: a5c024c2139536f004799b18a0f6d1d1eb4875b2
+ms.openlocfilehash: bdacb61d1713bf24b2f33f144afa0db356e10ee0
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -83,11 +84,7 @@ Erfahren Sie mehr darüber unter [Sicherer Zugriff auf Ressourcen mit Zertifikat
 Von Android for Work verwaltete WLAN-Profile werden entfernt, wenn das Gerät von Intune zurückgezogen und das Arbeitsprofil gelöscht wird. Erfahren Sie mehr über [Konfigurieren von Geräten zur Herstellung einer Verbindung mit Ihren WLAN-Unternehmensnetzwerken](wi-fi-connections-in-microsoft-intune.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Aktivieren der Registrierung von Android for Work-Geräten](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-android-for-work)
+[Aktivieren der Android for Work-Registrierung](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-android-for-work)
+
 [Bereitstellen von Apps für Android for Work-Geräte mit Intune](https://docs.microsoft.com/en-us/intune/deploy-use/android-for-work-apps)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
-ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
+ms.sourcegitcommit: 879f8faa37309edae9d1cbb0456d372ff27b8b98
+ms.openlocfilehash: a36c7dca0274b465315493261f03ab362c09383a
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -40,6 +41,9 @@ Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
     (Bei einigen Telefonen müssen Sie **Speicher** &gt; **Speicherverschlüsselung** oder **Speicher** &gt; **Sperrbildschirm und Sicherheit** &gt; **Andere Sicherheitseinstellungen** auswählen, um auf die Option „Verschlüsseln“ zuzugreifen).
 
 3.  Folgen Sie den Anweisungen auf dem Bildschirm. Während der Verschlüsselung startet Ihr Gerät möglicherweise mehrmals neu.
+
+> [!Note]
+> Bestimmte Android-Geräte können nicht verschlüsselt werden. [Hier](your-device-appears-encrypted-but-cp-says-otherwise-android.md) erfahren Sie mehr.
 
 ### <a name="what-to-do-if-you-have-issues"></a>Vorgehensweise bei Problemen
 **Problem**: Sie haben Ihr Gerät bereits verschlüsselt und stellen eines der folgenden Probleme fest:
@@ -64,10 +68,6 @@ Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
 
     5. Öffnen Sie die Unternehmensportal-App, wählen Sie das Gerät aus, und tippen Sie auf **Kompatibilität überprüfen**.
 
+
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das [Microsoft Android-Team](mailto:wintunedroidfbk@microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

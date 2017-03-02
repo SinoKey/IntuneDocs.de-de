@@ -1,6 +1,7 @@
 ---
-title: "Festlegen von Registrierungseinschränkungen in Intune | Intune Azure-Vorschau | Microsoft-Dokumentation"
-description: "Intune Azure-Vorschau: Einschränken der Registrierung nach Plattform und Festlegen eines Grenzwerts für die Geräteregistrierung in Intune "
+title: "Festlegen von Registrierungseinschränkungen in Intune"
+titleSuffix: Intune Azure preview
+description: "Intune in Azure (Vorschau): Einschränken der Registrierung nach Plattform und Festlegen eines Grenzwerts für die Geräteregistrierung in Intune "
 keywords: 
 author: staciebarker
 ms.author: stabar
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: c4fa22fad4df9c0e4699cf258eb9518a1534bb94
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 56996592febf0be5ab74b158a70404728fe17a4d
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -23,11 +26,11 @@ ms.openlocfilehash: c4fa22fad4df9c0e4699cf258eb9518a1534bb94
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Sie können die Typen und die maximale Anzahl von Geräten festlegen, die für die Registrierung zugelassen werden. Sie können auf dem Blatt „Registrierungsbeschränkungen“ Folgendes festlegen:
+Sie können die Typen und die maximale Anzahl von Geräten festlegen, die für die Registrierung zugelassen werden. Sie können auf dem Blatt „Registrierungseinschränkungen“ Folgendes festlegen:
 
-- Die Plattformen, die für die Registrierung zulässig sind, und ob die Registrierung von persönlichen Geräten für Android und iOS blockiert werden soll
+- Die Plattformen, die für die Registrierung zulässig sind; ob die Registrierung von persönlichen Geräten für Android und iOS blockiert werden soll
 
-- Die maximale Anzahl der Geräte, die ein Benutzer registrieren darf
+- Die maximale Anzahl der Geräte, die ein Benutzer registrieren darf.
 
 ## <a name="set-device-type-restrictions"></a>Festlegen von Gerätetypbeschränkungen
 
@@ -63,9 +66,4 @@ Sie können die Typen und die maximale Anzahl von Geräten festlegen, die für d
 4. Auf dem Blatt **Alle Benutzer** wählen Sie **Gerätegrenzwert** aus.
 
 5. Wählen Sie die maximale Anzahl der Geräte aus, die ein Benutzer registrieren kann, und klicken Sie dann auf **Speichern**.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
