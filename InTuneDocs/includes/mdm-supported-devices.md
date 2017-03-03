@@ -5,7 +5,7 @@
   - Mac OS X 10.9 und höher
 
 ### <a name="windows"></a>Windows
-  - PCs mit Windows 10 (Education, Pro und Enterprise)
+  - PCs mit Windows 10 (Home, Education, Pro und Enterprise)
   - Windows Phone 8.1 und höher
   - Windows 8.1 RT
   - PCs mit Windows 8.1
@@ -13,14 +13,17 @@
   - Geräte unter Windows 10 IoT Mobile Enterprise
   - Windows Holographic und Windows Holographic Enterprise
 
-Kunden mit Enterprise Management + Security (EMS) können auch [Azure Active Directory (AAD) verwenden, um Windows 10-Geräte zu registrieren](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
+  Kunden mit Enterprise Management + Security (EMS) können auch [Azure Active Directory (AAD) verwenden, um Windows 10-Geräte zu registrieren](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
+
+  Sie können die [Intune-Clientsoftware](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) zum Verwalten von PCs mit Windows 7 und höher verwenden, mit Ausnahme der Windows 10 Home-Edition.
 
 ### <a name="google"></a>Google
 - Google Android 4.0 und höher (einschließlich Samsung KNOX Standard 4.0 und höher)*
 - Google Android for Work ([Voraussetzungen](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
 
 *Die folgenden Samsung Galaxy Ace-Telefonmodelle können von Intune nicht als Samsung KNOX Standard-Geräte verwaltet werden: SM-G313HU, SM-G313HY, SM-G313M, SM-G313MY und SM-G313U. Diese Geräte werden als Android-Standardgeräte verwaltet. Weitere Informationen finden Sie auf der [Samsung KNOX-Website](https://www.samsungknox.com/en).
- 
+
+Eine vollständige Liste der Geräte und Verwaltungsmethoden finden Sie unter [Von Intune unterstützte Geräte](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
 
 
 <!--HONumber=Jan17_HO2-->

@@ -1,19 +1,20 @@
 ---
-title: "Einrichten der Verwaltung für Android for Work | Microsoft-Dokumentation"
+title: Einrichten von Android for Work | Microsoft-Dokumentation
 description: "Aktivieren Sie die Verwaltung mobiler Geräte (Mobile Device Management, MDM) für Android for Work-Geräte mit Microsoft Intune."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: e0116fb151cd8d05d2d854f0102894a9d72b818e
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 24ab39a92d69e92e1c202005fcd783018c4d4621
 
 
 ---
@@ -21,8 +22,6 @@ ms.openlocfilehash: e0116fb151cd8d05d2d854f0102894a9d72b818e
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Aktivieren der Registrierung von Android for Work-Geräten
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Für die Aktivierung der Verwaltung von Android for Work-Geräten müssen Sie eine Android for Work-Bindung zu Intune hinzufügen. Zur Registrierung von Geräten, die Android for Work unterstützen, aber zuvor als reguläre Android-Geräte registriert wurden, muss die Registrierung der Geräte aufgehoben werden. Anschließend muss die Registrierung erneuert werden.
 
@@ -54,7 +53,7 @@ Nach der Konfiguration der Bindung und der Einstellung für Android for Work kö
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>Aufheben der Bindung Ihres Android for Work-Administratorkontos
 
-Sie können die Registrierung und die Verwaltung von Android for Work deaktivieren. Wenn Sie auf **Unbind** (Bindung aufheben) klicken, werden alle registrierten Android for Work-Geräte aus der Registrierung entfernt und die Beziehung zwischen dem Android for Work-Konto und Intune wird entfernt.
+Sie können die Registrierung und die Verwaltung von Android for Work deaktivieren. Wenn Sie in der Intune-Verwaltungskonsole auf **Unbind** (Bindung aufheben) klicken, werden alle registrierten Android for Work-Geräte aus der Registrierung entfernt und die Beziehung zwischen dem Android for Work-Konto und Intune wird entfernt.
 
 ### <a name="how-to-unbind-an-android-for-work-account"></a>So heben Sie die Bindung für ein Android for Work-Konto auf
 
@@ -66,6 +65,6 @@ Sie können die Registrierung und die Verwaltung von Android for Work deaktivier
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

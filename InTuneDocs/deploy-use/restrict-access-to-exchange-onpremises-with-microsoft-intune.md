@@ -1,11 +1,11 @@
 ---
-title: "Beschränken des E-Mail-Zugriffs auf Exchange lokal | Microsoft-Dokumentation"
+title: "Schützen von E-Mails an Exchange lokal | Microsoft-Dokumentation"
 description: "Schützen und steuern Sie den Zugriff auf Unternehmens-E-Mail in Exchange lokal mit bedingtem Zugriff."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,27 +13,31 @@ ms.technology:
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 51e06bafef761eaf06d35343b459262524ad9168
-ms.openlocfilehash: c090d4bbc539d4174deee139e51242bae94feeb3
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 
 
 ---
 
-# <a name="restrict-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Beschränken des E-Mail-Zugriffs auf lokale Exchange- und ältere Exchange Online Dedicated-Umgebungen mit Intune
+# <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Schützen des E-Mail-Zugriffs auf lokale Exchange- und ältere Exchange Online Dedicated-Umgebungen mit Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Sie können den E-Mail-Zugriff auf lokales Exchange oder auf die ältere Exchange Online Dedicated-Umgebung mithilfe von Microsoft Intune konfigurieren.
+Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Protect access to email and O365 services (Schützen des Zugriffs auf E-Mail- und Office&365;-Dienste)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 > [!NOTE]
 > Wenn Sie über eine Exchange Online Dedicated-Umgebung verfügen und herausfinden müssen, ob es sich um die neue oder die ältere Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer.
 
+## <a name="before-you-begin"></a>Vorbereitung
 
-Um den E-Mail-Zugriff auf lokales Exchange oder Ihre ältere Exchange Online Dedicated-Umgebung zu steuern, können Sie den bedingten Zugriff für lokales Exchange in Microsoft Intune konfigurieren.
-Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
-
-**Bevor** Sie den bedingten Zugriff konfigurieren können, müssen Sie Folgendes überprüfen:
+Stellen Sie Folgendes sicher:
 
 -   Bei Ihrer Exchange-Version muss es sich um **Exchange 2010 oder höher** handeln. Exchange Server-Clientzugriffsserver-Arrays werden unterstützt.
 
--   Sie müssen den **lokalen Exchange Connector** verwenden, der [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] mit dem lokalen Exchange verbindet. Auf diese Weise können Sie Geräte über die [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Konsole verwalten. Informationen zum Connector finden Sie unter [Lokaler Exchange-Connector für Intune](intune-on-premises-exchange-connector.md).
+-   Sie müssen den [lokalen Intune Exchange-Connector](intune-on-premises-exchange-connector.md) verwenden, der [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] mit dem lokalen Exchange verbindet. Auf diese Weise können Sie Geräte über die [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Konsole verwalten.
 
     -   Der lokale Exchange Connector, der Ihnen in der Intune-Konsole zur Verfügung steht, ist spezifisch für Ihren Intune-Mandanten und kann mit keinem anderen Mandanten verwendet werden. Es wird empfohlen sicherzustellen, dass der Exchange-Connector für Ihren Mandanten **nur auf einem Computer** installiert ist.
 
@@ -45,6 +49,8 @@ Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Ar
 
 -   Sie müssen **Exchange ActiveSync** für die zertifikatbasierte Authentifizierung oder die Eingabe von Anmeldeinformationen durch Benutzer konfigurieren.
 
+### <a name="device-compliance-requirements"></a>Konformitätsanfoderungen für Geräte
+
 Wenn Sie Richtlinien für bedingten Zugriff konfigurieren und auf einen Benutzer anwenden, muss das **Gerät**, das der Benutzer zum Abrufen von E-Mails verwendet, folgende Voraussetzungen erfüllen:
 
 -  Es muss ein in die Domäne eingebundener PC oder bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] **registriert** sein.
@@ -55,11 +61,13 @@ Wenn Sie Richtlinien für bedingten Zugriff konfigurieren und auf einen Benutzer
 
 -   Es muss mit allen für das Gerät festgelegten [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Kompatibilitätsrichtlinien **kompatibel** sein.
 
+### <a name="how-conditional-access-works-with-exchange-on-premises"></a>So funktioniert der bedingte Zugriff bei lokalem Exchange
+
 Das folgende Diagramm veranschaulicht den Ablauf, der von den Richtlinien für bedingten Zugriff für die lokale Exchange-Umgebung verwendet wird, um zu bewerten, ob Geräte zugelassen oder blockiert werden.
 
 ![Diagramm mit den Entscheidungspunkten, die bestimmen, ob der Zugriff eines Geräts auf lokales Exchange zugelassen oder blockiert wird](../media/ConditionalAccess8-2.png)
 
-Wenn eine Bedingung für bedingten Zugriff nicht erfüllt wird, erhält der Benutzer bei der Anmeldung die folgenden Meldungen:
+Wenn eine Richtlinie für bedingten Zugriff nicht erfüllt wird, gilt ein 10-minütiges Zeitfenster zwischen dem Sperren des Geräts und dem Erhalt einer der folgenden Quarantänenachrichten durch den Benutzer bei seiner Anmeldung:
 
 - Wenn das Gerät nicht bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] oder in Azure Active Directory registriert ist, wird eine Meldung mit Anweisungen zum Installieren der Unternehmensportal-App, zum Registrieren des Geräts und zum Aktivieren des E-Mail-Zugriffs angezeigt. Dieser Prozess verknüpft auch die Exchange ActiveSync-ID mit dem Eintrag des Geräts in Azure Active Directory.
 
@@ -125,15 +133,15 @@ Folgendes wird unterstützt:
 
 -   Wenn der Benutzer das Gerät bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] deregistriert, kann es ein bis drei Stunden dauern, bis das Gerät blockiert wird.
 
-**Beispielszenarien für die Konfiguration von Richtlinien für bedingten Zugriff zur Beschränkung des Gerätezugriffs[ finden Sie unter ](restrict-email-access-example-scenarios.md)Beispielszenarien für die Beschränkung des E-Mail-Zugriffs**.
+**Beispielszenarios für die Konfiguration von Richtlinien für bedingten Zugriff zum Schutz des Gerätezugriffs finden Sie unter [Protect email access example scenarios (Beispielszenarios für den Schutz des E-Mail-Zugriffs)](restrict-email-access-example-scenarios.md).**
 
 ## <a name="next-steps"></a>Nächste Schritte
--   [Beschränken des Zugriffs auf SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+-   [Protect access to SharePoint Online (Schützen des Zugriffs auf SharePoint Online)](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
--   [Beschränken des Zugriffs auf Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+-   [Protect access to Skype for Business Online (Schützen des Zugriffs auf Skype for Business Online)](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

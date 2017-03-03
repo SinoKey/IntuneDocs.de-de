@@ -4,7 +4,7 @@ description: "Aktivieren Sie die Verwaltung mobiler Geräte (Mobile Device Manag
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 11/10/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,9 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: d58b2d57ec99add7bbc372584f0ecc430830530a
+ms.sourcegitcommit: 1ab8f29012bc47ce983942af4d17e7a1b3a0ea17
+ms.openlocfilehash: c743c074bfc66a9017baea674663bedf801f08f7
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -24,58 +25,4 @@ ms.openlocfilehash: d58b2d57ec99add7bbc372584f0ecc430830530a
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Als Intune-Administrator können Sie die Registrierung und die Verwaltung für Windows 10 Mobile- und Windows Phone-Geräte auf zwei Arten aktivieren:
-
-- **[Automatische Registrierung mit Azure Active Directory](#azure-active-directory-enrollment)**: Windows 10- und Windows 10 Mobile-Benutzer registrieren ihre Geräte, indem Sie dem Gerät ein Geschäfts-, Schul- oder Unikonto hinzufügen.
-- **[Unternehmensportal-Registrierung](#company-portal-app-enrollment)**: Benutzer von Windows Phone 8.1 und höher registrieren ihre Geräte durch das Herunterladen und Installieren der Unternehmensportal-App und die anschließende Eingabe der Anmeldeinformationen des Geschäfts-, Schul- oder Unikontos in der App.
-
-
-[!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
-
-## <a name="company-portal-app-enrollment"></a>Registrierung der Unternehmensportal-App
-Sie können Benutzern erlauben, ihre Geräte mithilfe der Intune-Unternehmensportal-App zu installieren und zu registrieren. Wenn Sie DNS-CNAME-Ressourceneinträge erstellen, können Benutzer sich mit Intune verbinden und dort registrieren, ohne einen Servernamen eingeben zu müssen.
-
-1.  **Einrichten von Intune**<br>Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch [Festlegen der Autorität für die Verwaltung mobiler Geräte (mobile device management, MDM)](prerequisites-for-enrollment.md#step-2-set-mdm-authority) auf **Microsoft Intune** und durch anschließendes Einrichten von MDM vor.
-
-2.  **Erstellen von CNAME-Einträgen** (optional)<br>Erstellen Sie **CNAME**-DNS-Ressourceneinträge für die Domäne des Unternehmens. Wenn der Name Ihrer Unternehmenswebsite beispielsweise „contoso.com“ lautet, erstellen Sie einen CNAME-Eintrag im DNS, der „EnterpriseEnrollment.contoso.com“ auf „enterpriseenrollment-s.manage.microsoft.com“ umleitet.
-
-    Obwohl die Erstellung von CNAME DNS-Einträgen optional ist, vereinfachen diese die Registrierung für Benutzer. Wenn kein CNAME-Eintrag für die Registrierung gefunden wurde, werden Benutzer dazu aufgefordert, manuell den MDM-Servernamen „https://manage.microsoft.com“ einzugeben.
-
-    Wenn Sie aktuell über einen CNAME-Eintrag im DNS verfügen, der „EnterpriseEnrollment.contoso.com“ auf „manage.microsoft.com“ umleitet, empfehlen wir, ihn durch einen CNAME-Eintrag im DNS zu ersetzen, der „EnterpriseEnrollment.contoso.com“ auf „enterpriseenrollment-s.manage.microsoft.com“ umleitet. Wir empfehlen Ihnen diese Änderung, da der Endpunkt „manage.microsoft.com“ in einem zukünftigen Release nicht mehr verwendet werden kann.
-
-    Existieren mehrere überprüfte Domänen, erstellen Sie einen CNAME-Eintrag für jede Domäne. Die CNAME-Ressourceneinträge müssen die folgenden Informationen enthalten:
-
-  |TYP|Hostname|Verweist auf|TTL|
-  |--------|-------------|-------------|-------|
-  |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 Stunde|
-  |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 Stunde|
-
-  `EnterpriseEnrollment-s.manage.microsoft.com` – unterstützt eine Umleitung zum Intune-Dienst mit Domänenerkennung anhand des E-Mail-Domänennamens.
-
-  `EnterpriseRegistration.windows.net` – unterstützt Windows 8.1- und Windows 10 Mobile-Geräte, die über das Geschäfts-, Schul- oder Unikonto bei Azure Active Directory registriert werden.
-
-  Wenn Ihr Unternehmen mehrere Domänen für die Anmeldeinformationen der Benutzer verwendet, erstellen Sie CNAME-Einträge für jede Domäne.
-
-  Wenn der Name Ihrer Unternehmenswebsite beispielsweise contoso.com lautet, erstellen Sie einen CNAME in DNS, der EnterpriseEnrollment.contoso.com an EnterpriseEnrollment-s.manage.microsoft.com umleitet. Es kann bis zu 72 Stunden dauern, bis Änderungen an DNS-Einträgen vollständig verteilt sind. Sie können die DNS-Änderung in Intune erst überprüfen, wenn der DNS-Eintrag verteilt ist.
-
-3.  **Überprüfen von CNAME**<br>Wählen Sie in der [Intune-Verwaltungskonsole](http://manage.microsoft.com) **Verwaltung** &gt; **Verwaltung mobiler Geräte** &gt; **Windows Phone** aus. Geben Sie die URL der überprüften Domäne der Unternehmenswebsite in das Feld **Verifizierten Domänennamen eingeben** ein, und wählen Sie anschließend **Automatische Erkennung testen** aus.
-
-    ![Dialogfeld „Verwaltung mobiler Geräte für Windows einrichten“](../media/windows-phone-enrollment.png)
-
-4.  **Optionale Schritte**<br>Der Schritt **Hinzufügen von Sideload-Schlüsseln** wird für Windows 10 nicht benötigt. Der Schritt **Codesignaturzertifikat hochladen** wird nur benötigt, wenn Sie branchenspezifische Apps, die nicht im Windows Store verfügbar sind, für Geräte verteilen.
-
-5.  **Benutzern erklären, wie sie ihre Geräte registrieren, um auf Unternehmensressourcen zugreifen zu können.**
-
-    Registrierungsanleitungen für Endbenutzer finden Sie unter [Registrieren Ihres Windows-Geräts bei Intune](../enduser/enroll-your-device-in-intune-windows.md). Sie können Benutzer auch auf den Artikel [Was kann Ihr IT-Administrator sehen, wenn Sie Ihr Gerät bei Intune registrieren?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) verweisen.
-
-    Informationen zu anderen Endbenutzeraufgaben finden Sie in den folgenden Artikeln:
-    - [Informieren der Endbenutzer über den Einsatz von Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-    - [Endbenutzer-Leitfaden für Windows-Geräte](../enduser/using-your-windows-device-with-intune.md)
-
-Es sind keine weiteren Schritte erforderlich, es sei denn, Sie stellen das Unternehmensportal selbst auf Geräten bereit.  Die Schritte 2 und 3 in der Verwaltungskonsole können ignoriert werden.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
-
+Die Informationen aus diesem Thema finden Sich unter folgendem Thema: [Einrichten der Windows-Geräteverwaltung](set-up-windows-device-management-with-microsoft-intune.md). In diesem Thema finden Sie Informationen darüber, wie Sie alle unterstützten Versionen von Windows- und Windows Phone-Geräten registrieren.

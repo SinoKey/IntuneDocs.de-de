@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
@@ -43,15 +44,13 @@ Sie können WLAN-Profile auf den folgenden Plattformen bereitstellen:
 
 -   Android 4,0 und höher
 
--   Android for Work   
+-    Android for Work   
 
 -   iOS 8.0 und höher
 
 -   Mac OS X 10.9 und höher
 
 Für Geräte mit Windows 8.1, Windows 10 Desktop oder mobilen Betriebssystemen können Sie ein WLAN-Konfigurationsprofil importieren, das zuvor in eine Datei exportiert wurde. Ausführliche Informationen finden Sie unter [Exportieren oder Importieren eines WLAN-Konfigurationsprofils für Windows-Geräte](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices).
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 1.  Wählen Sie in der [Microsoft Intune-Administratorkonsole](https://manage.microsoft.com) **Richtlinie** &gt; **Richtlinie hinzufügen** aus.
 

@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2b7fe00a2f3b289958aa77df5eaffd35de7c8c97
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -50,8 +52,7 @@ Bevor Sie die Registrierung mobiler Geräte aktivieren, müssen Sie die folgende
 Die MDM-Autorität definiert den Verwaltungsdienst, der über die Berechtigung zum Verwalten einer Gruppe von Geräten verfügt. Die Optionen für die MDM-Autorität umfassen Intune selbst und Configuration Manager mit Intune. Wenn Sie Configuration Manager als Verwaltungsautorität festlegen, kann kein anderer Dienst für die Verwaltung mobiler Geräte verwendet werden.
 
 >[!IMPORTANT]
-> Sie sollten sorgfältig überlegen, ob Sie mobile Geräte nur mit Intune (Onlinedienst) oder mit System Center Configuration Manager mit Intune (lokale Softwarelösung in Verbindung mit dem Onlinedienst) verwalten möchten. Nachdem Sie die Autorität für die Verwaltung mobiler Geräte festgelegt haben, kann sie nicht mehr geändert werden.
-
+> Sie sollten sorgfältig überlegen, ob Sie mobile Geräte nur mit Intune (Onlinedienst) oder mit System Center Configuration Manager mit Intune (lokale Softwarelösung in Verbindung mit dem Onlinedienst) verwalten möchten. Nachdem Sie die Autorität für die Verwaltung mobiler Geräte festgelegt haben, können Sie keine Änderungen mehr ohne den Microsoft Support vornehmen. Anweisungen finden Sie unter [What to do if you choose the wrong MDM authority setting (Was Sie machen können, wenn Sie die falsche MDM-Autoritätseinstellung vorgenommen haben)](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
 
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) die Optionen **Verwaltung** &gt; **Verwaltung mobiler Geräte** aus.
@@ -150,8 +151,63 @@ Nachdem nun die Registrierung aktiviert ist, sollten Sie die Verwaltung einricht
 - [Hinzufügen von Apps](add-apps.md) und [Bereitstellen von Apps](deploy-apps.md) auf verwalteten Geräten
 - [Erstellen von Gerätekompatibilitätsrichtlinien](introduction-to-device-compliance-policies-in-microsoft-intune.md) und [Beschränken des Zugriffs basierend auf Kompatibilität](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
+## <a name="what-to-do-if-you-choose-the-wrong-mdm-authority-setting"></a>Was Sie machen können, wenn Sie die falsche MDM-Autoritätseinstellung vorgenommen haben
 
+Wenn Sie feststellen, dass Sie die falsche MDM-Autoritätseinstellung vorgenommen haben, und Sie diese ändern möchten, wenden Sie sich an den Microsoft Support. Sie können die Einstellung nicht selbst ändern. Bevor Sie sich an den Microsoft Support wenden, schauen Sie sich bitte die folgenden Informationen an, welche Angaben Sie dem Microsoft Support machen müssen, damit diese die Änderungen vornehmen können.
 
-<!--HONumber=Dec16_HO2-->
+Es gibt drei Möglichkeiten, Ihre MDM-Autorität zurückzusetzen. In Ihrer Anfrage an den Support müssen Sie die Möglichkeit auswählen, die auf Ihren Fall zutrifft. Falls Ihr Szenario zu keiner der Möglichkeiten passt, wenden Sie sich an den Microsoft Support.
 
+Der Microsoft Support wird Sie darum bitten, folgende Angaben zu bestätigen:
+
+- Mandanten-ID: die Domäne, mit der Sie sich im Dienst anmelden (z.B. intune.onmicrosoft.com)
+- Die MDM-Autorität, zu der Sie wechseln möchten
+- Die Bestätigung, dass Sie die erforderlichen Schritte abgeschlossen haben (siehe unten)
+
+Wenn Sie Koexistenz verwenden, müssen Sie sowohl die Intune- als auch die Office 365-Checklisten überprüfen.
+
+### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>MDM-Autorität von Intune auf Configuration Manager zurücksetzen
+
+Führen Sie zum Zurücksetzen Ihrer MDM-Autorität diese Schritte durch, bevor Sie sich an den Microsoft Support wenden.
+
+- Alle Geräte aus der Intune-Administratorkonsole außer Kraft setzen. Versuchen Sie nicht, ein Gerät im Gerät selbst außer Kraft zu setzen. 
+- Löschen Sie den Service to Service Connector (unter **Administration** > **Verwaltung mobiler Geräte** > **Microsoft Exchange**), oder deaktivieren Sie den Exchange Connector, falls dieser eingerichtet ist. 
+- Entfernen Sie die Verwaltungsrolle des Geräteregistrierungs-Managers aus **Admin** > **Geräteregistrierungs-Manager**.
+- Deaktivieren Sie die Gerätegruppenzuordnung unter **Admin** > **Verwaltung mobiler Geräte** > **Gerätegruppenzuordnung** aus.
+- Entfernen Sie Sideload-Schlüssel aus **Admin** > **Verwaltung mobiler Geräte** > **Windows** > **Sideload-Schlüssel**.
+- Löschen Sie das APNS-Zertifikat von iOS unter **Admin** > **Verwaltung mobiler Geräte** > **iOS**.
+- Löschen Sie das iOS-DEP-Token unter **Admin** > **Verwaltung mobiler Geräte** > **iOS**.
+- Löschen Sie alle Richtlinien, die für MDM-Geräte vorgesehen sind, unter **Richtlinie** > **Konfigurationsrichtlinien**.
+- Löschen Sie alle veröffentlichten Anwendungen, die für MDM-Geräte vorgesehen sind, unter **Apps** > **Verwaltete Software**.
+
+### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>MDM-Autorität von Configuration Manager auf Intune zurücksetzen
+
+Führen Sie zum Zurücksetzen Ihrer MDM-Autorität diese Schritte durch, bevor Sie sich an den Microsoft Support wenden.
+
+- Alle als mobile Geräte verwaltete Geräte aus der Configuration Manager-Konsole außer Kraft setzen. Versuchen Sie nicht, ein Gerät im Gerät selbst außer Kraft zu setzen. 
+- Entfernen sie alle Benutzer aus der Intune-Benutzergruppe. Richten Sie das Intune-Abonnement auf eine leere Benutzersammlung, oder entfernen Sie alle Benutzer aus der anvisierten Sammlung.  Bestätigen Sie in der Datei CloudUserSync.log, dass alle Benutzer entfernt wurden. 
+- Deaktivieren sie die iOS-Plattform, um das APNS-Zertifikat zu bereinigen.
+- Löschen Sie alle veröffentlichten Anwendungen, die für MDM-Geräte vorgesehen sind.
+- Löschen Sie alle Richtlinien, die für MDM-Geräte vorgesehen sind. 
+- Entfernen Sie den Windows Intune Connector aus der Configuration Manager-Konsole (gilt nur für R2 SP1 oder davor).
+Entfernen Sie das Intune-Abonnement, indem Sie mit der rechten Maustaste auf das Abo klicken und dann **Löschen** auswählen.
+- SMS-Executive-Dienst neu starten.
+- Stellen Sie uns einige Beispielbenutzer zur Verfügung, sodass wir, nachdem der Prozess abgeschlossen wurde, überprüfen können, ob Configuration Manager-Lizenzen entfernt wurden.
+
+### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>MDM-Autorität von Office 365 auf Configuration Manager zurücksetzen
+
+1. Navigieren Sie zu [https://protection.office.com](https://protection.office.com).
+2. Wählen Sie die Registerkarte **Sicherheitsrichtlinien** dann **Geräteverwaltung** aus. 
+3. Setzen Sie alle Geräte mit **Selektives Zurücksetzen** außer Kraft. Versuchen Sie nicht, ein Gerät im Gerät selbst außer Kraft zu setzen. Wenn das selektive Zurücksetzen deaktiviert ist, ist keine weitere Aktion erforderlich.
+4. Wählen Sie die Registerkarte **Sicherheitsrichtlinien** dann **Gerätesicherheitsrichtlinien** aus. 
+5. Wählen Sie für alle vorhandenen Richtlinien **Löschen** aus. Wenn sich die Richtlinien im Status „ausstehend“ befinden, ist keine weitere Aktion erforderlich.
+
+>[!NOTE]
+>Das APNS-Zertifikat von iOS kann nicht gelöscht werden und bleibt an den Account angeschlossen. 
+
+### <a name="next-steps-for-mdm-authority-resets"></a>Die nächsten Schritte für ein Zurücksetzen der MDM-Autorität
+
+Sobald der Microsoft Support die Elemente auf der verfügbaren Checkliste überprüft hat, kann das Zurücksetzen der MDM-Autorität bis zu drei Werktage in Anspruch nehmen – normalerweise dauert es aber nur einen Tag. 
+
+>[!IMPORTANT]
+>Bitte konfigurieren Sie Ihr Abonnement erst, wenn der Microsoft Support bestätigt hat, dass das Zurücksetzen erfolgreich abgeschlossen wurde! Frühzeitige Konfiguration kann dazu führen, dass Schäden auftreten bzw. dass Sie in der Benutzung Ihres Intune eingeschränkt werden. 
 

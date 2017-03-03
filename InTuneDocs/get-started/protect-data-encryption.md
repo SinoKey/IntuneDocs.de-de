@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
@@ -42,9 +43,9 @@ Dieses Schnellstarthandbuch stellt eine gute Ressource für Sie dar, wenn Sie di
 Dieser Leitfaden hilft Ihnen dabei, Ihr Unternehmen vor Datenverlust zu schützen, indem eine Kennung sowie die Datenverschlüsselung erzwungen wird. Dies erfolgt durch die Verwendung von Richtlinien in mobilen Apps, die Ihre Mitarbeiter für den Zugriff auf sensible Daten verwenden, ohne dass eine vollständige Registrierung bei einer Geräteverwaltungslösung erforderlich ist. Microsoft Intune ermöglicht Ihnen das Festlegen von MAM-Richtlinien (mobile application management, Verwaltung mobiler Anwendungen) in mobilen Office-Apps für [iOS](https://products.office.com/en-us/mobile/office-mobile-apps-for-ios) und [Android](https://products.office.com/en-us/mobile/office-mobile-apps-for-android). Dadurch werden O365-Daten geschützt, ohne dass Benutzer ihre Geräte in einer MDM-Lösung (mobile device management, Verwaltung mobiler Geräte) registrieren müssen, wobei zudem gleichzeitig eine hervorragende Endbenutzerfreundlichkeit der mobilen Office-Apps bewahrt wird.
 
 ## <a name="how-do-i-do-it"></a>Wie gehe ich dabei vor?
-1.  [Lesen Sie, wie Sie App-Daten schützen können](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-2.  [Vorbereiten der Konfiguration von Verwaltungsrichtlinien für mobile Apps](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-3.  [Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+1.    [Lesen Sie, wie Sie App-Daten schützen können](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+2.    [Vorbereiten der Konfiguration von Verwaltungsrichtlinien für mobile Apps](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+3.    [Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="additional-information"></a>Zusätzliche Informationen:
 - [Erfahren Sie mehr über die Endbenutzererfahrung für MAM-fähige Apps mit Microsoft Intune.](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)

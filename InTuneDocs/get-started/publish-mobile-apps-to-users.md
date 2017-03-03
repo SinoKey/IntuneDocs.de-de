@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: fc2fb3c2c59b4fc2de048d8a27a6eadec592fba3
@@ -32,9 +33,9 @@ Möchten Sie, dass Ihre Benutzer schnell Zugriff auf alle Apps erhalten, die sie
 Wenn dies der Fall ist, können Sie mit Microsoft Intune entsprechende Apps (Office Mobile, interne branchenspezifische oder andere mobile und Desktop-Apps) in einem einzelnen allgemeinen Portal veröffentlichen: die [App oder Website für das Intune-Unternehmensportal](/intune/enduser/company-portal-frequently-asked-questions).
 
 ## <a name="how-do-i-do-it"></a>Wie gehe ich dabei vor?
-1.  [Registrieren Sie Geräte](/intune/deploy-use/enroll-devices-in-microsoft-intune) in der mobilen Geräteverwaltung von Intune.
-2.  [Fügen Sie Apps zu Intune hinzu](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune), die Sie auf registrierten Geräten bereitstellen möchten.
-3.  [Stellen Sie Apps mithilfe von Intune](/intune/deploy-use/deploy-apps) auf registrierten Geräten bereit.
+1.    [Registrieren Sie Geräte](/intune/deploy-use/enroll-devices-in-microsoft-intune) in der mobilen Geräteverwaltung von Intune.
+2.    [Fügen Sie Apps zu Intune hinzu](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune), die Sie auf registrierten Geräten bereitstellen möchten.
+3.    [Stellen Sie Apps mithilfe von Intune](/intune/deploy-use/deploy-apps) auf registrierten Geräten bereit.
 
 ### <a name="additional-information"></a>Zusätzliche Informationen:
 Wenn das Veröffentlichen von mobilen Office-Apps mit dem Ziel erfolgt, die MAM-Funktionen von Intune zum Verwalten des Schutzes vor Datenverlust für solche Apps zu verwenden, muss jedem Endbenutzer, dem MAM-Richtlinien zugewiesen werden, [eine Benutzerlizenz für Office 365 zugewiesen werden](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).

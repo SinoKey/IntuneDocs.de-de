@@ -2,10 +2,10 @@
 title: "Registrieren von Geräten | Microsoft-Dokumentation"
 description: "Die Registrierung durch die Verwaltung mobiler Geräte (MDM) dient dazu, Geräte in die Verwaltung aufzunehmen und den Zugriff auf Ressourcen zu ermöglichen."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 09/15/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: bfb1cee100b9c7bfcdc862489254e6ccefe9ecf0
+ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
+ms.openlocfilehash: d1b24b745fe1e860e42fa23647976aadea1953cd
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -24,9 +26,11 @@ ms.openlocfilehash: bfb1cee100b9c7bfcdc862489254e6ccefe9ecf0
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Sie können Geräte, einschließlich Windows PCs, registrieren, um die Verwaltung mobiler Geräte (MDM, Mobile Device Management) mit Microsoft Intune zu aktivieren. Dieses Thema beschreibt die verschiedenen Methoden zum Registrieren von mobilen Geräten in der Intune-Verwaltung. Auf welche Weise Sie Ihre Geräte registrieren, hängt von Gerätetyp, Besitz und benötigtem Verwaltungsniveau ab. Bei der BYOD-Registrierung (Bring Your Own Device, private Geräte der Mitarbeiter) können die Benutzer ihre privaten Smartphones, Tablets oder PCs selbst registrieren. Die COD-Registrierung (Corporate-Owned Device, Firmeneigene Geräte) ermöglicht Verwaltungsszenarien wie das Remotezurücksetzen, gemeinsam verwendete Geräte oder Benutzeraffinität für ein Gerät.
+Sie können Geräte, einschließlich Windows PCs, registrieren, um die Verwaltung mobiler Geräte (MDM, Mobile Device Management) mit Microsoft Intune zu aktivieren. Dieses Thema beschreibt die verschiedenen Methoden zum Registrieren von mobilen Geräten in der Intune-Verwaltung. Auf welche Weise Sie Ihre Geräte registrieren, hängt von Gerätetyp, Besitz und benötigtem Verwaltungsniveau ab. Bei der BYOD-Registrierung (Bring Your Own Device, private Geräte der Mitarbeiter) können die Benutzer ihre privaten Smartphones, Tablets oder PCs selbst registrieren. Die Registrierung von unternehmenseigenen Geräten (corporate-owned devices, COD) macht Verwaltungsszenarios wie die automatische Registrierung, freigegebene Geräte oder Anforderungen für eine vorautorisierte Registrierung möglich.
 
-Wenn Sie [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune) verwenden, entweder lokal oder in der Cloud gehostet, können Sie eine einfache Intune-Verwaltung ohne Registrierung aktivieren. Auch Windows-PCs können mit [Intune-Clientsoftware](#manage-windows-pcs-with-intune) verwaltet werden.
+Wenn Sie [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune) entweder lokal oder in der Cloud gehostet verwenden, können Sie eine einfache Intune-Verwaltung ohne Registrierung aktivieren. Auch Windows-PCs können mit [Intune-Clientsoftware](#manage-windows-pcs-with-intune) verwaltet werden.
+
+Standardmäßig dürfen Geräte für alle Plattformen in Intune registriert werden. Um Geräte für die Registrierung zu blockieren, melden Sie sich mit Ihren Administratoranmeldeinformationen im [Microsoft Intune-Verwaltungsportal](http://manage.microsoft.com) an. Wählen Sie **Admin**(Administrator) > **Verwaltung mobiler Geräte** > **Registrierungsregeln** aus, und deaktivieren Sie die entsprechenden Kontrollkästchen, die Sie blockieren möchten.
 
 ## <a name="overview-of-device-enrollment-methods"></a>Übersicht über die Geräteregistrierungsmethoden
 
@@ -34,31 +38,45 @@ Die folgende Tabelle zeigt Intune-Registrierungsmethoden und die unterstützten 
 
 - **Zurücksetzen** – Gibt an, ob das Gerät zurückgesetzt werden muss, bevor Benutzer das Gerät registrieren können. Der Begriff „Zurücksetzen“ bedeutet die Zurücksetzung des Geräts auf Werkseinstellungen, wobei alle Daten entfernt werden. Weitere Informationen finden Sie auf der Seite [Abkoppeln von Geräten von der Intune-Verwaltung](retire-devices-from-microsoft-intune-management.md).
 - **Affinität** – Ordnet Geräte Benutzern zu. Für die Verwaltung mobiler Geräte (MAM, Mobile Application Management) und den bedingten Zugriff auf Unternehmensdaten erforderlich. Weitere Informationen finden Sie auf der Seite [Registrieren firmeneigener iOS-Geräte in Microsoft Intune](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
-- **Sperre** – Hindert Benutzer daran, das Gerät aus der Verwaltung zu entfernen. Für iOS-Geräte ist der Modus „Betreut“ für die Sperre erforderlich. Weitere Informationen finden Sie unter [Geräteschutz durch Remotesperre und Zurücksetzen der Kennung](retire-devices-from-microsoft-intune-management.md#block-access-a-device).
+- **Sperren**: Zeigt an, wenn Benutzer daran gehindert werden, die Registrierung ihrer Geräte mit nativen Betriebssystemsmenüs aufzuheben. Benutzer können die Registrierung ihrer Geräte auf allen Plattformen mithilfe ihrer Unternehmensportal-App aufheben. 
 
 **iOS-Registrierungsmethoden**
 
-| **Methode** |  **Zurücksetzen erforderlich?** |    **Affinität**    |   **Sperren** | **Details** |
+| **Methode** |    **Zurücksetzen erforderlich?** |    **Affinität**    |    **Sperren** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein|    Ja |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   Nein |Nein |Nein  | [Weitere Informationen](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
-|**[DEP](#dep)**|   Ja |   Optional |  Optional|[Weitere Informationen](ios-device-enrollment-program-in-microsoft-intune.md)|
-|**[USB (Setup-Assistent)](#usb-sa)**| Ja |   Optional |  Nein| [Weitere Informationen](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
-|**[USB (direkt)](#usb-direct)**| Nein |    Nein  | Nein|[Weitere Informationen](ios-direct-enrollment-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Nein|    Ja |    Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    Nein |Nein |Nein    | [Weitere Informationen](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[DEP](#dep)**|    Ja |    Optional |    Optional|[Weitere Informationen](ios-device-enrollment-program-in-microsoft-intune.md)|
+|**[USB (Setup-Assistent)](#usb-sa)**|    Ja |    Optional |    Nein| [Weitere Informationen](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
+|**[USB (direkt)](#usb-direct)**|    Nein |    Nein    | Nein|[Weitere Informationen](ios-direct-enrollment-in-microsoft-intune.md)|
 
 **Windows-Registrierungsmethoden**
 
-| **Methode** |  **Zurücksetzen erforderlich?** |    **Affinität**    |   **Sperren** | **Details**|
+| **Methode** |    **Zurücksetzen erforderlich?** |    **Affinität**    |    **Sperren** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Ja|   Ja |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   Nein |Nein |Nein  |[Weitere Informationen](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Ja|    Ja |    Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    Nein |Nein |Nein    |[Weitere Informationen](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android-Registrierungsmethoden**
 
-| **Methode** |  **Zurücksetzen erforderlich?** |    **Affinität**    |   **Sperren** | **Details**|
+| **Methode** |    **Zurücksetzen erforderlich?** |    **Affinität**    |    **Sperren** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein|    Ja |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   Nein |Nein |Nein  |[Weitere Informationen](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Nein|    Ja |    Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    Nein |Nein |Nein    |[Weitere Informationen](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+
+**Android for Work-Registrierungsmethoden**
+
+| **Methode** |    **Zurücksetzen erforderlich?** |    **Affinität**    |    **Sperren** | **Details**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#byod)** | Nein|    Ja |    Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    Nein |Nein |Nein    |[Weitere Informationen](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+
+**macOS-Registrierungsmethoden**
+
+| **Methode** |    **Zurücksetzen erforderlich?** |    **Affinität**    |    **Sperren** | **Details**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#byod)** | Ja|    Ja |    Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
+
 
 Eine Reihe von Fragen, die Sie beim Ermitteln der richtigen Methode unterstützen, finden Sie unter [Auswählen der Registrierungsart von Geräten](/intune/get-started/choose-how-to-enroll-devices1).
 
@@ -75,28 +93,23 @@ Der Geräteregistrierungs-Manager ist ein besonderes Intune-Konto, das zum Regis
 
 ### <a name="dep"></a>DEP (Device Enrollment Program)
 Mit der Apple DEP-Verwaltung (Device Enrollment Program, Programm zur Geräteregistrierung) können Sie Richtlinien erstellen und „drahtlos“ auf iOS-Geräten bereitstellen, die mit DEP erworben wurden und verwaltet werden. Das Gerät wird beim ersten Einschalten durch den Benutzer registriert und führt dann den iOS-Setup-Assistenten aus. Diese Methode unterstützt den iOS-Modus **Überwacht**, der wiederum Folgendes ermöglicht:
-  - Gesperrte Registrierung
-  - Bedingter Zugriff
-  - Erkennung von Jailbreaks
-  - Mobile Anwendungsverwaltung
+  -    Gesperrte Registrierung
+  -    Kioskmodus und andere erweiterte Konfigurationen und Einschränkungen
 
 Erfahren Sie mehr über das [Geräteregistrierungsprogramm](ios-device-enrollment-program-in-microsoft-intune.md). ([Zurück zur Tabelle](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-sa"></a>USB (Setup-Assistent)
-Über USB angeschlossene, unternehmenseigene Geräte werden mit der Intune-Richtlinie vorbereitet. Der Administrator erstellt für die Registrierung mit dem Einrichtungsassistenten diese Intune-Richtlinie und exportiert sie in Apple Configurator. Der Administrator muss jedes Gerät manuell registrieren. Benutzer erhalten ihre Geräte und führen den Setup-Assistenten aus, um ihr Gerät zu registrieren. Diese Methode unterstützt den iOS-Modus **Überwacht**, der wiederum Folgendes ermöglicht:
-  - Bedingter Zugriff
-  - Erkennung von Jailbreaks
-  - Mobile Anwendungsverwaltung
+IT-Administratoren benutzen den Apple Configurator über USB, um jedes unternehmenseigene Gerät manuell für die Registrierung mit dem Setup-Assistenten vorzubereiten. Der IT- Administrator erstellt ein Registrierungsprofil und exportiert dieses in Apple Configurator. Wenn die Benutzer ihre Geräte erhalten, werden sie aufgefordert, den Setup-Assistenten auszuführen. Diese Methode unterstützt den iOS-Modus **Überwacht**, der wiederum Folgendes ermöglicht:
+  -    Gesperrte Registrierung
+  -    Kioskmodus und andere erweiterte Konfigurationen und Einschränkungen
 
 Erfahren Sie mehr über die [Registrierung über den Setup-Assistenten mit Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md). ([Zurück zur Tabelle](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-direct"></a>USB (direkt)
-Der Administrator erstellt für die direkte Registrierung eine Intune-Richtlinie und exportiert sie in Apple Configurator. Über USB angeschlossene, unternehmenseigene Geräte werden direkt registriert, ohne dass ein Zurücksetzen auf Werkseinstellungen erforderlich ist. Der Administrator muss jedes Gerät manuell registrieren. Geräte werden als benutzerlose Geräte verwaltet. Sie werden nicht gesperrt oder überwacht und unterstützen nicht den bedingten Zugriff, die Erkennung von Jailbreaks oder die Verwaltung mobiler Geräte. Erfahren Sie mehr über die [direkte Registrierung mit Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md). ([Zurück zur Tabelle](#overview-of-device-enrollment-methods))
+Für die direkte Registrierung muss der Administrator jedes Gerät manuell registrieren, indem er eine Registrierungsrichtlinie erstellt und in Apple Configurator exportiert. Über USB angeschlossene, unternehmenseigene Geräte werden direkt registriert, ohne dass ein Zurücksetzen auf Werkseinstellungen erforderlich ist. Geräte werden als benutzerlose Geräte verwaltet. Sie werden nicht gesperrt oder überwacht und unterstützen nicht den bedingten Zugriff, die Erkennung von Jailbreaks oder die Verwaltung mobiler Geräte.  Erfahren Sie mehr über die [direkte Registrierung mit Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md). ([Zurück zur Tabelle](#overview-of-device-enrollment-methods))
 
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Verwaltung mobiler Geräte mit Exchange ActiveSync und Intune
-Mobile Geräte, die nicht registriert, aber mit Exchange ActiveSync (EAS) verbunden sind, können von Intune mit der MDM EAS-Richtlinie verwaltet werden. Intune verwendet Exchange Connector für die Kommunikation mit EAS, entweder lokal oder in der Cloud gehostet.
-
-Weitere Informationen finden Sie unter [Verwaltung mobiler Geräte mit Exchange ActiveSync und Microsoft Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md).
+Mobile Geräte, die nicht registriert, aber mit Exchange ActiveSync (EAS) verbunden sind, können von Intune mit der MDM EAS-Richtlinie verwaltet werden. Intune verwendet Exchange Connector für die Kommunikation mit EAS, entweder lokal oder in der Cloud gehostet. Weitere Informationen finden Sie unter [Verwaltung mobiler Geräte mit Exchange ActiveSync und Microsoft Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md).
 
 
 ## <a name="windows-pc-management-with-intune"></a>Aktivieren der Windows PC-Verwaltung mit Intune  
@@ -106,9 +119,7 @@ Sie können Microsoft Intune auch verwenden, um Windows-PCs mit der Intune-Clien
  - Desktopanwendung installieren (z. B. EXE- und MSI-Dateien)
  - Verwalten von Firewall-Einstellungen
 
-PCs, die mit der Intune-Clientsoftware verwaltet werden, können nicht vollständig zurückgesetzt werden, obwohl das selektive Zurücksetzen verfügbar ist. Mit dem Intune-Softwareclient verwaltete PCs können viele der Intune Verwaltungsfunktionen wie z.B. den bedingten Zugriff, VPN- und WLAN-Einstellungen oder die Bereitstellung von Zertifikaten und E-Mail-Konfigurationen nicht nutzen.
-
-Weitere Informationen finden Sie unter [Verwalten von Windows-PCs mit der Intune-PC-Clientsoftware](manage-windows-pcs-with-microsoft-intune.md).
+PCs, die mit der Intune-Clientsoftware verwaltet werden, können nicht vollständig zurückgesetzt werden, obwohl das selektive Zurücksetzen verfügbar ist. Mit dem Intune-Softwareclient verwaltete PCs können viele der Intune Verwaltungsfunktionen wie z.B. den bedingten Zugriff, VPN- und WLAN-Einstellungen oder die Bereitstellung von Zertifikaten und E-Mail-Konfigurationen nicht nutzen. Weitere Informationen finden Sie unter [Verwalten von Windows-PCs mit der Intune-PC-Clientsoftware](manage-windows-pcs-with-microsoft-intune.md).
 
 ## <a name="supported-device-platforms"></a>Unterstützte Geräteplattformen
 
@@ -117,12 +128,7 @@ Intune kann folgende Geräteplattformen verwalten:
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ## <a name="next-steps"></a>Nächste Schritte
-- [Voraussetzungen für die Geräteregistrierung](prerequisites-for-enrollment.md)
+- [Prerequisites for device enrollment( Voraussetzungen für die Geräteregistrierung)](prerequisites-for-enrollment.md)
 - [Verwalten firmeneigener Geräte](manage-corporate-owned-devices.md)
 - [Unterstützte mobile Geräte und Computer](../get-started/supported-mobile-devices-and-computers.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

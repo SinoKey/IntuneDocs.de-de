@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
@@ -46,7 +47,7 @@ Um Ihre branchenspezifische App zu MAM-Richtlinien zuzuordnen, müssen Sie Ihrem
 2. Wählen Sie auf dem Blatt **Branchenspezifische Apps** die Option **Benutzerdefinierte App hinzufügen** aus.
 
   ![Screenshot des Blatts „Branchenspezifische Apps“ mit der Schaltfläche „Benutzerdefinierte App hinzufügen“ oben](../media/mam-azure-portal-add-lob-app-action.png)
-3.  Geben Sie einen Namen für die App, die Paket-ID in das Feld „App-ID“ und die Plattform (iOS oder Android) an.
+3.    Geben Sie einen Namen für die App, die Paket-ID in das Feld „App-ID“ und die Plattform (iOS oder Android) an.
 
   ![Screenshot des Blatts „Benutzerdefinierte App hinzufügen“](../media/mam-azure-portal-add-app-details.png)
 
@@ -71,11 +72,11 @@ Falls Sie App-Details wie den Namen der App oder die Paket-ID ändern müssen, m
 ##  <a name="remove-apps"></a>Entfernen von Apps
 Sie können eine branchenspezifische App aus der App-Liste entfernen. Dadurch wird die App aus der Liste und die Zuordnung zu MAM-Richtlinien entfernt, ohne dass die App jedoch vom Gerät des Benutzers entfernt oder deinstalliert wird.  
 
-1.  Wechseln Sie im [Azure-Portal](https://portal.azure.com/) zu **Intune-Verwaltung von mobilen Anwendungen** > **Einstellungen**. Wählen Sie auf dem Blatt **Einstellungen** den Eintrag **Branchenspezifische Apps**, um die Liste vorhandener Apps anzuzeigen.  
-2.  Wählen Sie die App aus, die Sie entfernen möchten, und klicken Sie auf **(...)**, um das Kontextmenü zu öffnen.
+1.    Wechseln Sie im [Azure-Portal](https://portal.azure.com/) zu **Intune-Verwaltung von mobilen Anwendungen** > **Einstellungen**. Wählen Sie auf dem Blatt **Einstellungen** den Eintrag **Branchenspezifische Apps**, um die Liste vorhandener Apps anzuzeigen.  
+2.    Wählen Sie die App aus, die Sie entfernen möchten, und klicken Sie auf **(...)**, um das Kontextmenü zu öffnen.
 
   ![Screenshot des Blatts „Branchenspezifische Apps“ mit der Schaltfläche mit den Auslassungszeichen](../media/mam-azure-portal-lob-context-menu.png)
-3.  Wählen Sie **Anwendung löschen** aus, um die App zu löschen.
+3.    Wählen Sie **Anwendung löschen** aus, um die App zu löschen.
 
   ![Screenshot des Blatts „Branchenspezifische Apps“ mit der Option „Anwendung löschen“](../media/mam-azure-portal-delete-app.png)
 

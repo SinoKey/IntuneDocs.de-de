@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,21 @@ ms.technology:
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 68cdc77de1fa77b4fed6a1f37850b5427fb2b121
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b6ab60eff3c65244290b7141e81a7b052dd790ed
+ms.lasthandoff: 02/15/2017
 
 
 ---
 
 # <a name="manage-intune-licenses"></a>Verwalten von Intune-Lizenzen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+In diesem Thema erfahren Administratoren, wie sie Benutzern Intune-Lizenzen zuweisen können, damit Geräte für die Verwaltung aufgenommen werden können.
+
 Bevor Benutzer sich für die Verwendung des Intune-Diensts anmelden oder ihre Geräte für die Verwaltung registrieren können, müssen Sie jedem Benutzer zunächst über das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) eine Lizenz für Ihr Intune-Abonnement zuweisen.
 
 Unternehmen, die die Enterprise Mobility + Security (EMS) von Microsoft verwenden, verfügen möglicherweise über Benutzer, die nur Azure Active Directory Premium- oder Intune-Dienste im EMS-Paket benötigen. Sie können einen oder mehrere Dienste mithilfe von [Azure Active Directory PowerShell-Cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) zuweisen. Weitere Informationen finden Sie unter [Verwalten von Intune-Lizenzen mithilfe von PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
@@ -84,16 +91,11 @@ Deaktivieren Sie den auf Intune bezogenen Teil der EMS-Lizenz für einen Benutze
 
 Überprüfen Sie das Ergebnis:
 
-    (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com" .Licenses.ServiceStatus
+    (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
 >[!div class="step-by-step"]
 
 >[&larr; **Synchronisieren von Benutzern mit Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organisieren von Benutzern und Geräten** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

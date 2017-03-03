@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d92b8b03c1c71898a15b1d1f0a1ee5e1f288dc2e
-ms.openlocfilehash: 759e5b7d04ccbbfb338d182bad03e0b0218cdeca
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 43ac18d298901f24c8d6352537b285bf0108f667
 
 
 ---
@@ -46,7 +47,7 @@ Sie müssen die Registrierung von Geräten bei der vorhandenen Enterprise Mobili
 
 ## <a name="enrolling-devices-in-intune"></a>Registrieren von Geräten bei Intune
 
-Benutzer, deren Migration geplant ist, sollten sich sofort bei Intune registrieren, entweder, um einen Verlust des Zugriffs auf Unternehmensressourcen, E-Mail und Anwendungen zu verhindern bzw. den Zugriff wiederzuerlangen. Wenn Sie den bedingten Zugriff konfiguriert haben und Benutzer versuchen, auf E-Mails zuzugreifen, bevor sie sich bei Intune registriert haben, wird der Zugriff blockiert, und sie erhalten eine Registrierungs-E-Mail mit einer Begrüßung. Diese E-Mail enthält Anweisungen zur Registrierung ihres Geräts bei Intune.  Alternativ können Benutzer sich über die Intune-Unternehmensportal-App oder direkt über das Betriebssystem (Windows 8.1 und Windows 10 Mobile) bei Intune registrieren. Weitere Anleitungen zu den Registrierungsschritten für die verschiedenen Plattformen finden Sie unter [Informieren der Endbenutzer über den Einsatz von Microsoft Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
+Benutzer, deren Migration geplant ist, sollten sich sofort bei Intune registrieren, entweder, um einen Verlust des Zugriffs auf Unternehmensressourcen, E-Mail und Anwendungen zu verhindern bzw. den Zugriff wiederzuerlangen. Wenn Sie den bedingten Zugriff konfiguriert haben und Benutzer versuchen, auf E-Mails zuzugreifen, bevor sie sich bei Intune registriert haben, wird der Zugriff blockiert, und sie erhalten eine Registrierungs-E-Mail mit einer Begrüßung. Diese E-Mail enthält Anweisungen zur Registrierung ihres Geräts bei Intune.  Alternativ können Benutzer sich über die Intune-Unternehmensportal-App oder direkt über das Betriebssystem (Windows 8.1 und Windows 10 Mobile) bei Intune registrieren. Weitere Anleitungen zu den Registrierungsschritten für die verschiedenen Plattformen finden Sie unter [Informieren der Endbenutzer über den Einsatz von Microsoft Intune](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).
 
 ## <a name="configure-intune-conditional-access-optional"></a>Konfigurieren des bedingten Zugriffs für Intune (optional)
 
@@ -75,6 +76,6 @@ Eine herunterladbare Kopie dieses Artikels finden Sie in der [TechNet Gallery](h
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

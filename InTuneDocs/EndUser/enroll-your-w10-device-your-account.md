@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,30 +13,35 @@ ms.technology:
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 32bde9552e79d91dd967050b96cec62146367f9b
+ms.sourcegitcommit: 580ca62628981016c444b2992e792ecc4a5da442
+ms.openlocfilehash: 7afe4eca15c395806bcc800bc261d5e6b7ba5f0c
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrieren eines Windows 10-Geräts bei Intune
 
-1.  Wechseln Sie zu den **Windows-Einstellungen**, und tippen Sie auf **Konten**.
+1.  Zum Öffnen der Windows-**Einstellungen** klicken Sie im **Startmenü** auf die Schaltfläche **Einstellungen**. Sie können auch über die Suchleiste nach „Einstellungen“ suchen.
+
+2. Wählen Sie **Konten** aus.
 
     ![Go to Settings and Accounts](./media/W10-enroll-1-settings-accounts.png)
 
-2.  Tippen Sie auf **Mein Konto**.
+3. Wählen Sie **Ihr Konto** aus.
 
-    ![Tap your account](./media/W10-enroll-2-accounts-your-account.png)
+    ![Wählen Sie „Ihr Konto“ aus.](./media/W10-enroll-2-accounts-your-account.png)
 
-3.  Tippen Sie auf **Geschäfts- oder Schulkonto hinzufügen**.
+4. Wählen Sie **Geschäfts- oder Schulkonto hinzufügen** aus.
 
-    ![Tap add a work or school account](./media/w10-enroll-3-add-work-school-acct.png)
+    ![Wählen Sie „Geschäfts- oder Schulkonto hinzufügen“ aus.](./media/w10-enroll-3-add-work-school-acct.png)
 
-4.  Melden Sie sich mit den Anmeldeinformationen Ihres Geschäfts- oder Schulkontos an.
+5. Melden Sie sich mit den Anmeldeinformationen Ihres Geschäfts- oder Schulkontos an.
 
     ![Anmelden](./media/W10-enroll-4-sign-in.png)
 
@@ -46,16 +51,11 @@ Können Sie immer noch nicht auf Ihre Geschäfts-, Schul- oder Uni-E-Mails, -Dat
 
 Wenn das Unternehmensportal nicht in der Liste der Apps angezeigt wird, gehen Sie folgendermaßen vor, um es zu installieren.
 
-1.  Tippen Sie auf **Starten** &gt; **Store**.
+1. Wählen Sie **Start** > **Store** aus.
 
-2.  Tippen Sie auf **Suchen**, und geben Sie **Unternehmensportal** ein.
+2. Wählen Sie **Suchen** aus, und geben Sie dann **Unternehmensportal** ein.
 
-3.  Tippen Sie in der Liste der Ergebnisse auf **Unternehmensportal** &gt; **Installieren**.
+3. Wählen Sie in der Liste der Ergebnisse **Unternehmensportal** > **Installieren** aus.
 
-4.  Tippen Sie auf **Installieren** oder **Kostenlos**. Es gibt keinen Unterschied zwischen diesen beiden Optionen für Sie. Die angezeigte Auswahl hängt davon ab, wie Ihr Unternehmen die Unternehmensportal-App eingerichtet hat.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
+4. Wählen Sie **Installieren** oder **Kostenlos** aus. Es gibt keinen Unterschied zwischen diesen beiden Optionen für Sie. Die angezeigte Auswahl hängt davon ab, wie Ihr Unternehmen die Unternehmensportal-App eingerichtet hat.
 

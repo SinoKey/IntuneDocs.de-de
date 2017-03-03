@@ -13,35 +13,35 @@ ms.technology:
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
-ms.openlocfilehash: 3e077bfa8a03526b9472b4e9fdd4a75da22c28c8
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
 
 
 ---
 
-# <a name="create-and-deploy-mobile-app-management-policies-with-microsoft-intune"></a>Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune
+# <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Erstellen und Bereitstellen von App-Schutzrichtlinien mit Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-MAM-Richtlinien (Mobile App Management) können unabhängig davon angewendet werden, ob die Geräte, auf denen die Apps ausgeführt werden, von Intune verwaltet werden oder nicht. Eine ausführlichere Beschreibung der Funktionsweise von MAM-Richtlinien und der von Intune MAM-Richtlinien unterstützten Szenarios finden Sie im Thema [Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+In diesem Thema wird der Erstellungsvorgang einer App-Schutzrichtlinie im **Azure-Portal** beschrieben. Das Azure-Portal ist die neue Verwaltungskonsole zum Erstellen von App-Schutzrichtlinien, und wir empfehlen, dass Sie Ihre App-Schutzrichtlinien in diesem Portal erstellen. Das Azure-Portal unterstützt die folgenden MAM-Szenarien:
 
-In diesem Thema wird der Erstellungsvorgang einer MAM-Richtlinie im **Azure-Portal** beschrieben. Das Azure-Portal ist die neue Verwaltungskonsole zum Erstellen von MAM-Richtlinien, und wir empfehlen, dass Sie Ihre MAM-Richtlinien in diesem Portal erstellen. Das Azure-Portal unterstützt die folgenden MAM-Szenarien:
 - Bei Intune registrierte Geräte
 - Geräte, die mithilfe einer MDM-Lösung eines Drittanbieters verwaltet werden
 - Geräte, die gar keiner Verwaltung durch eine MDM-Lösung unterliegen (BYOD).
 
 >[!IMPORTANT]
-Beachten Sie Folgendes, wenn Sie aktuell die **Intune-Verwaltungskonsole** zum Verwalten Ihrer Geräte verwenden:
+Hier sind ein paar Überlegungen, wenn Sie aktuell die **Intune-Verwaltungskonsole** zum Verwalten Ihrer Geräte verwenden:
 
-> * Sie können mithilfe der [Intune-Verwaltungskonsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) eine MAM-Richtlinie erstellen, die Apps für Geräte unterstützt, die bei Intune registriert sind.
-> * Die MAM-Richtlinien, die in der Intune-Verwaltungskonsole erstellt wurden, können nicht ins Azure-Portal importiert werden.  Die MAM-Richtlinien müssen im Azure-Portal neu erstellt werden.
+> * Sie können mithilfe der [Intune-Verwaltungskonsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) eine App-Schutzrichtlinie erstellen, die Apps für Geräte unterstützt, die bei Intune registriert sind.
+> * Die App-Schutzrichtlinien, die in der Intune-Verwaltungskonsole erstellt wurden, können nicht ins Azure-Portal importiert werden.  Die App-Schutzrichtlinien müssen im Azure-Portal neu erstellt werden.
 
-> * Möglicherweise werden in der Intune-Verwaltungskonsole nicht alle MAM-Richtlinieneinstellungen angezeigt. Das Azure-Portal stellt die neue Verwaltungskonsole zum Erstellen von MAM-Richtlinien dar.
+> * Möglicherweise werden in der Intune-Verwaltungskonsole nicht alle App-Schutzrichtlinieneinstellungen angezeigt. Das Azure-Portal stellt die neue Verwaltungskonsole zum Erstellen von App-Schutzrichtlinien dar.
 
-> * Sie müssen in der Intune-Verwaltungskonsole eine MAM-Richtlinie erstellen, um verwaltete Apps bereitzustellen. In diesem Fall möchten Sie möglicherweise eine MAM-Richtlinie sowohl in der Intune-Verwaltungskonsole als auch im Azure-Portal erstellen: In der Intune-Verwaltungskonsole, um sicherzustellen, dass Sie verwaltete Apps bereitstellen können und im Azure-Portal, da es die neue Verwaltungskonsole darstellt, die über alle MAM-Richtlinieneinstellungen verfügt.
+> * Sie müssen in der Intune-Verwaltungskonsole eine App-Schutzrichtlinie erstellen, um verwaltete Apps bereitzustellen. In diesem Fall möchten Sie möglicherweise eine App-Schutzrichtlinie sowohl in der Intune-Verwaltungskonsole als auch im Azure-Portal erstellen: In der Intune-Verwaltungskonsole, um sicherzustellen, dass Sie verwaltete Apps bereitstellen können und im Azure-Portal, da es die neue Verwaltungskonsole darstellt, die über alle App-Schutzrichtlinieneinstellungen verfügt.
 
-> * Wenn Sie sowohl in der Intune-Verwaltungskonsole als auch im Azure-Portal MAM-Richtlinien erstellen, wird die im Azure-Portal erstellte Richtlinie auf die Apps angewendet.
+> * Wenn Sie sowohl in der Intune-Verwaltungskonsole als auch im Azure-Portal App-Schutzrichtlinien erstellen, wird die im Azure-Portal erstellte Richtlinie auf die Apps angewendet.
 
 Wählen Sie eins der folgenden Themen aus, um eine Liste der für die Plattformen Android und iOS unterstützten Richtlinieneinstellungen anzuzeigen:
 
@@ -49,16 +49,24 @@ Wählen Sie eins der folgenden Themen aus, um eine Liste der für die Plattforme
 - [iOS-Richtlinien](ios-mam-policy-settings.md)
 - [Android-Richtlinien](android-mam-policy-settings.md)
 
-##  <a name="create-a-mam-policy"></a>Erstellen einer MAM-Richtlinie
-Überprüfen Sie vor dem Erstellen einer MAM-Richtlinie die Informationen zu [Voraussetzungen und Support](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md).
-1.  Wählen Sie **Intune-Verwaltung von mobilen Anwendungen &gt; Einstellungen** aus, um das Blatt **Einstellungen** zu öffnen.
+- Eine ausführlichere Beschreibung der Funktionsweise von App-Schutzrichtlinien und der von Intune App-Schutzrichtlinien unterstützten Szenarios finden Sie im Thema [Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Anwendungen mit Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
-    ![Screenshot des Blatts „Mobile Anwendungsverwaltung mit Intune“](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+##  <a name="create-an-app-protection-policy"></a>Erstellen einer App-Schutzrichtlinie
+App-Schutzrichtlinien werden im Azure-Portal erstellt. Wenn Sie das Azure-Portal zum ersten Mal verwenden, lesen Sie [Azure portal for Microsoft Intune app protection policies (Azure-Portal für App-Schutzrichtlinien in Microsoft Intune)](azure-portal-for-microsoft-intune-mam-policies.md), um das Azure-Portal besser kennenzulernen. Überprüfen Sie vor dem Erstellen einer App-Schutzrichtlinie die Informationen zu [Voraussetzungen und Support](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md).
 
-    > [!TIP]
-    > Wenn Sie das Azure-Portal zum ersten Mal verwenden, lesen Sie zuerst [Azure-Portal für MAM-Richtlinien in Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md), um sich mit dem Portal vertraut zu machen.
+Gehen Sie folgendermaßen vor, um App-Schutzrichtlinien zu erstellen:
 
-2.  Wählen Sie auf dem Blatt **Einstellungen** **App-Richtlinie** aus. Hiermit wird das Blatt **App-Richtlinie** geöffnet, auf dem Sie neue Richtlinien erstellen und vorhandene bearbeiten können. Wählen Sie **Richtlinie hinzufügen** aus.
+1. Navigieren Sie zum [Azure-Portal](http://portal.azure.com), und geben Sie Ihre-Anmeldeinformationen ein.
+
+2. Wählen Sie **Weitere Dienste** aus, und geben Sie „Intune“ ein.
+
+3. Wählen Sie **Intune-Schutz für Apps** aus.
+
+4. Wählen Sie **Intune-Verwaltung von mobilen Anwendungen &gt; Einstellungen** aus, um das Blatt **Alle Einstellungen** zu öffnen.
+
+    ![Screenshot des Blatts „Mobile Anwendungsverwaltung mit Intune“](../media/AppManagement/AzurePortal_MAM_Mainblade-2.png)
+
+2.  Wählen Sie auf dem Blatt **Alle Einstellungen** **App-Richtlinie** aus. Hiermit wird das Blatt **App-Richtlinie** geöffnet, auf dem Sie neue Richtlinien erstellen und vorhandene bearbeiten können. Wählen Sie **Richtlinie hinzufügen** aus.
 
     ![Screenshot des Blatts „App-Richtlinie“ mit hervorgehobener Menüoption „Richtlinie hinzufügen“ ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -90,10 +98,10 @@ Wählen Sie eins der folgenden Themen aus, um eine Liste der für die Plattforme
 Wenn Sie mit dem Erstellen einer Richtlinie wie im vorherigen Verfahren beschrieben fertig sind, wird sie noch nicht für Benutzer bereitgestellt. Informationen zum Bereitstellen einer Richtlinie finden Sie im Abschnitt „Bereitstellen einer Richtlinie für Benutzer“.
 
 > [!IMPORTANT]
-> Wenn Sie eine MAM-Richtlinie für eine App mithilfe der Intune-Verwaltungskonsole und eine MAM-Richtlinie mithilfe des Azure-Portals erstellen, erhält die im Azure-Portal erstellte Richtlinie den Vorrang. Mit der Berichterstattung in der Intune- oder Configuration Manager-Verwaltungskonsole werden jedoch die Richtlinieneinstellungen zurückgegeben, die in der Intune-Verwaltungskonsole erstellt wurden. Beispiel:
+> Wenn Sie eine App-Schutzrichtlinie für eine App mithilfe der Intune-Verwaltungskonsole und eine App-Schutzrichtlinie mithilfe des Azure-Portals erstellen, erhält die im Azure-Portal erstellte Richtlinie den Vorrang. Mit der Berichterstattung in der Intune- oder Configuration Manager-Verwaltungskonsole werden jedoch die Richtlinieneinstellungen zurückgegeben, die in der Intune-Verwaltungskonsole erstellt wurden. Beispiel:
 >
-> -   Sie haben eine MAM-Richtlinie in der Intune-Verwaltungskonsole erstellt, mit der Kopien aus einer Anwendung verhindert werden.
-> -   Sie haben eine MAM-Richtlinie in der Azure-Verwaltungskonsole erstellt, die Kopien aus einer Anwendung zulässt.
+> -   Sie haben eine App-Schutzrichtlinie in der Intune-Verwaltungskonsole erstellt, mit der Kopien aus einer Anwendung verhindert werden.
+> -   Sie haben eine App-Schutzrichtlinie in der Azure-Konsole erstellt, die Kopien aus einer Anwendung zulässt.
 > -   Sie führen beide Richtlinien in derselben App zusammen.
 > -   Die Richtlinie, die Sie in der Azure-Verwaltungskonsole erstellt haben, hat Vorrang, und Kopien sind möglich.
 > -   Status und Berichte der Intune-Verwaltungskonsole geben jedoch fälschlicherweise an, dass Kopien nicht möglich sind.
@@ -116,8 +124,8 @@ Von der Richtlinie sind nur Benutzer betroffen, denen [!INCLUDE[wit_nextref](../
 > Wenn Sie Intune mit Configuration Manager verwenden, um Ihre iOS- und Android-Geräte zu verwalten, wird die Richtlinie nur auf Benutzer in der Gruppe angewendet, die Sie ausgewählt haben. Mitglieder untergeordneter Gruppen, die in der ausgewählten Gruppe geschachtelt sind, sind nicht betroffen.
 
 Endbenutzer können die Apps aus dem App Store oder aus Google Play herunterladen. Weitere Informationen finden Sie in folgenden Quellen:
-* [Was Sie erwartet, wenn Ihre Android-App von MAM-Richtlinien verwaltet wird](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Was Sie erwartet, wenn Ihre iOS-App von MAM-Richtlinien verwaltet wird](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [What to expect when your Android app is managed by app protection policies (Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird)](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [What to expect when your iOS app is managed by app protection policies (Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird)](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 ##  <a name="change-existing-policies"></a>Ändern vorhandener Richtlinien
 Sie können eine vorhandene Richtlinie bearbeiten und sie auf die als Ziel festgelegten Benutzer anwenden. Wenn Sie vorhandene Richtlinien ändern, werden diese Änderungen für Benutzer, die bereits bei der App angemeldet sind, jedoch in den nächsten acht Stunden nicht wirksam.
@@ -171,11 +179,11 @@ Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finde
 [Überwachen der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Weitere Informationen:
-* [Was Sie erwartet, wenn Ihre Android-App von MAM-Richtlinien verwaltet wird](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Was Sie erwartet, wenn Ihre iOS-App von MAM-Richtlinien verwaltet wird](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [What to expect when your Android app is managed by app protection policies (Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird)](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [What to expect when your iOS app is managed by app protection policies (Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird)](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

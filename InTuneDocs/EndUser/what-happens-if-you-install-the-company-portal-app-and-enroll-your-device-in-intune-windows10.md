@@ -1,11 +1,11 @@
 ---
-title: "Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Windows 10-Gerät bei Intune registrieren? | Microsoft Docs"
+title: "Installieren der Unternehmensportal-App für Windows 10 | Microsoft-Dokumentation"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,13 +16,13 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1f872d245144727406d926b0c9401827939470f1
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: 329d34e7a6ad83512e98dce85e1effe9c54a1bce
 
 
 ---
-
 
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Windows 10-Gerät bei Intune registrieren?
 
@@ -36,7 +36,7 @@ Wenn Sie die Unternehmensportal-App installieren und dann mithilfe der App Ihr W
 
 -   Zurücksetzen Ihres Smartphones auf die Werkseinstellungen bei Verlust oder Diebstahl
 
-Die Registrierungsschritte finden Sie unter [Registrieren Ihres Windows 10 Mobile- oder Windows 10-Desktopgeräts bei Intune](enroll-your-w10-phone-or-w10-pc-windows.md). Informationen darüber, was Ihr IT-Administrator auf Ihrem Gerät sehen kann, finden Sie unter [Was kann Ihr IT-Administrator sehen, wenn Sie Ihr Gerät bei Intune registrieren?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+Die Registrierungsschritte finden Sie unter [Registrieren Ihres Windows 10 Mobile- oder Windows 10-Desktopgeräts bei Intune](enroll-your-w10-phone-or-w10-pc-windows.md). Informationen darüber, was Ihr IT-Administrator auf Ihrem Gerät sehen kann, finden Sie unter [Was kann Ihr IT-Administrator sehen, wenn Sie Ihr Gerät bei Intune registrieren?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 Wenn Sie einen Computer hinzufügen:
 
@@ -58,6 +58,6 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

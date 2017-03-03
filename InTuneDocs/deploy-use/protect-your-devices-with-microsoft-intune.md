@@ -1,11 +1,11 @@
 ---
-title: "Schützen von Geräten | Microsoft-Dokumentation"
+title: "Schützen von Geräten mit Microsoft Intune | Microsoft-Dokumentation"
 description: "Erfahren Sie mehr über die Methoden, mit denen Intune Ihnen helfen kann, Ihre Geräte vor nicht autorisiertem Zugriff und anderen Bedrohungen zu schützen."
 keywords: 
 author: Robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 47263a7b0e4255cfa3fe830c969ce6116447ae9f
+ms.sourcegitcommit: 10191f27ae7efd097ea6e74b557776f8be8fe6e6
+ms.openlocfilehash: 042c5673c48bb19aacd624028260267670f9846e
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -45,10 +47,10 @@ Intune bietet [Gerätekompatibilitätsrichtlinien](introduction-to-device-compli
 ### <a name="protect-apps-and-the-data-they-use"></a>Schützen von Apps und Daten, die verwendet werden
 Intune bietet Ihnen eine Reihe von Funktionen an, die Sie zum Schützen Ihrer Apps und deren Daten verwenden können. Mobile Anwendungsverwaltungsrichtlinien (MAM) können z.B. verhindern, dass Daten von einer geschützten App gesichert werden, das Kopieren und Einfügen zu anderen Apps beschränken, und angeben, dass eine PIN für den Zugriff auf eine App nötig ist usw. Weitere Informationen zum Schutz von Apps finden Sie unter [Schützen von Apps und Daten mit Microsoft Intune](protect-apps-and-data-with-microsoft-intune.md).
 
-## <a name="further-capabilities-for-windows-devices"></a>Weitere Funktionen für Windows-Geräte
+### <a name="add-an-additional-layer-of-protection-to-devices"></a>Hinzufügen einer zusätzlichen Schutzebene für Geräte
+Die [mehrstufige Authentifizierung](multi-factor-authentication-azure-active-directory.md) (Multi-Factor Authentication, MFA) ist eine sicherere Methode der Authentifizierung der Benutzer von Geräten im Netzwerk.  Bei Verwendung von MFA müssen Benutzer ihre Identität zusätzlich zu Benutzername und Kennwort über einen Telefonanruf oder eine SMS bestätigen.
 
-### <a name="add-an-additional-layer-of-protection-to-windows-devices"></a>Hinzufügen einer zusätzlichen Schutzebene für Windows-Geräte
-Die [mehrstufige Authentifizierung](protect-windows-devices-with-multi-factor-authentication.md) (Multi-Factor Authentication, MFA) ist eine sicherere Methode der Authentifizierung der Benutzer von Windows- und Windows Phone-Geräten im Netzwerk.  Bei Verwendung von MFA müssen Benutzer ihre Identität zusätzlich zu Benutzername und Kennwort über einen Telefonanruf oder eine SMS bestätigen.
+## <a name="further-capabilities-for-windows-devices"></a>Weitere Funktionen für Windows-Geräte
 
 ### <a name="control-windows-hello-for-business-settings-on-windows-devices"></a>Steuern der Einstellungen von Windows Hello for Business auf Windows-Geräten
 Intune ermöglicht die Integration in [Windows Hello for Business](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) (zuvor Microsoft Passport). Dies ist eine alternative Anmeldemethode für Windows 10 und höher, die Active Directory oder ein Azure Active Directory-Konto verwendet, um ein Kennwort, eine Smartcard oder eine virtuelle Smartcard zu ersetzen.
@@ -62,9 +64,4 @@ Die Aktivierungssperre ist eine Funktion, mit der Geräte von Benutzern geschüt
 
 ## <a name="protect-windows-pcs-managed-with-the-intune-client"></a>Schützen von mit dem Intune-Client verwalteten Windows-PCs
 Intune unterstützt auch Sicherheitsrichtlinien für Windows-PCs, die Sie nicht registrieren, sondern über die Intune-Computerclientsoftware verwalten. Erfahren Sie, wie diese Richtlinien Sie beim Schützen Ihrer Windows-PCs unterstützen: [Verwenden von Richtlinien zum Schutz von Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird](policies-to-protect-windows-pcs-in-microsoft-intune.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

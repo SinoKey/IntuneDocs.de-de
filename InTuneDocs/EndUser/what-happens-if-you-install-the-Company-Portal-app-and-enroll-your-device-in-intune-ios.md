@@ -1,11 +1,11 @@
 ---
-title: "Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder macOS-Gerät bei Intune registrieren? | Microsoft Docs"
+title: "Installieren der Unternehmensportal-App für iOS und macOS | Microsoft-Dokumentation"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: cef8045c071396419805274ba94cbcfff864a495
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: d593b00ee3fd30adec6c36c3939c895647e8dada
 
 
 ---
@@ -37,36 +38,6 @@ Wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder macOS-Gerät 
 -   Automatisches Einrichten Ihres Unternehmens-E-Mail-Kontos
 
 Wenn Sie Ihr Gerät bei Intune registrieren, gestatten Sie damit Ihrem IT-Administrator, Ihr Gerät zu verwalten, damit die Unternehmensinformationen auf dem Gerät geschützt werden.
-
-**Das kann der IT-Administrator nicht sehen**
-
--   Anrufliste und Webverlauf
-
--   Standort
-
--   E-Mail-Nachrichten und SMS
-
--   Kontakte
-
--   Kennwörter
-
--   Kalender
-
--   Eigene Aufnahmen
-
-**Das kann der IT-Administrator sehen**
-
--   Modell
-
--   Seriennummer
-
--   Betriebssystem
-
--   App-Namen
-
--   Besitzer
-
--   Gerätename
 
 Wenn Ihr Gerät registriert ist, kann Ihr IT-Administrator die folgenden Aufgaben erledigen:
 
@@ -98,6 +69,6 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
