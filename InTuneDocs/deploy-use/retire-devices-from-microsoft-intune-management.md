@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
-ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
+ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
+ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
 
 
 ---
@@ -24,16 +25,16 @@ ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Unabhängig davon, ob Geräte Unternehmenseigentum sind oder den Mitarbeitern persönlich gehören – irgendwann muss ein verwaltetes Gerät aus der Intune-Verwaltung entfernt werden. 
+Unabhängig davon, ob Geräte Unternehmenseigentum sind oder den Mitarbeitern persönlich gehören – irgendwann muss ein verwaltetes Gerät aus der Intune-Verwaltung entfernt werden.
 
-Geräte werden nie ohne Ihr Zutun aus Intune entfernt, selbst wenn die Geräte eine Zeitlang keine Verbindung mit dem Intune-Dienst hergestellt haben. 
+Geräte werden nie ohne Ihr Zutun aus Intune entfernt, selbst wenn die Geräte eine Zeitlang keine Verbindung mit dem Intune-Dienst hergestellt haben.
 
 Es kann aus einer Vielzahl von Gründen erforderlich sein, ein Gerät außer Kraft zu setzen:
 
--   Ein Benutzer verlässt ein Unternehmen planmäßig („verwalteter“ Abschied)
--   Ein Benutzer verlässt das Unternehmen plötzlich (wird entlassen, kündigt etc.)
--   Verlust des Geräts
--   Umfunktionieren eines Geräts (Übertragen auf einen anderen Benutzer, Wiederverwendung für einen anderen Zweck usw.)
+-    Ein Benutzer verlässt ein Unternehmen planmäßig („verwalteter“ Abschied)
+-    Ein Benutzer verlässt das Unternehmen plötzlich (wird entlassen, kündigt etc.)
+-    Verlust des Geräts
+-    Umfunktionieren eines Geräts (Übertragen auf einen anderen Benutzer, Wiederverwendung für einen anderen Zweck usw.)
 
 Sie können ein Gerät, das als mobiles Gerät verwaltet wird, entweder selektiv oder vollständig zurücksetzen oder ein Gerät sperren und das Kennwort zurücksetzen. Durch das Zurücksetzen des Geräts geben Sie das Abonnement des Benutzers frei, sodass Sie ein anderes Gerät hinzufügen können. Außerdem können Sie mit der Intune-Clientsoftware verwaltete PCs außer Betrieb nehmen.
 
@@ -43,6 +44,9 @@ Sowohl bei der selektiven als auch bei der vollständigen Zurücksetzung wird da
 [Selektives Zurücksetzen](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) ist die bevorzugte Maßnahme für Mitarbeiter, die ihre eigenen Geräte bei Intune registriert haben, da persönliche Informationen auf dem Gerät nicht betroffen sind. Es werden nur Unternehmensdaten entfernt.
 
 Geräte, die einem neuen Verwendungszweck zugewiesen werden sollen, können Sie auch [vollständig zurücksetzen](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe), um sie auf die Werks- bzw. Standardeinstellungen zurückzusetzen.
+
+### <a name="removing-user-licenses-and-managed-devices"></a>Entfernen von Benutzerlizenzen und verwalteten Geräten
+Wenn Sie eine Benutzerlizenz entfernen, werden die registrierten Geräte von Benutzern nicht mehr angemeldet. Als bewährte Methode sollten Sie das selektive Zurücksetzen verwenden, um Unternehmensdaten von verwalteten Geräten zu entfernen, bevor Sie die Intune-Lizenz für einen Benutzer entfernen. Sobald die Benutzerlizenz entfernt ist, ist das Gerät nicht mehr für Remoteaktionen vorgesehen.
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>So löschen Sie Geräte im Azure Active Directory-Portal
 
@@ -76,6 +80,6 @@ Manchmal ist es das Gerät selbst, das das Ende seines Lebenszyklus erreicht hat
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 

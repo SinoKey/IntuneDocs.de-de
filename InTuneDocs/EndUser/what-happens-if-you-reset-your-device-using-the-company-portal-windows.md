@@ -1,5 +1,5 @@
 ---
-title: "Was geschieht, wenn Sie Ihr Windows-Gerät mithilfe des Unternehmensportals zurücksetzen? | Microsoft Docs"
+title: "Was geschieht, wenn Sie Ihr Windows-Gerät zurücksetzen? | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: cc2800d11bc36b4414f9b76587e3c4bf751d3224
+ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
+ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: cc2800d11bc36b4414f9b76587e3c4bf751d3224
 
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Was geschieht, wenn Sie Ihr Windows-Gerät mithilfe des Unternehmensportals zurücksetzen?
 
-Wenn Sie Ihr Windows-Gerät mithilfe der Unternehmensportal-App oder [Unternehmensportal-Website](reset-your-device-cpwebsite.md) zurücksetzen, wird das Gerät auf die Werkseinstellungen zurückgesetzt. Dabei werden alle Apps, Einstellungen und Daten, einschließlich Ihrer persönlichen Daten, gelöscht. Was auf den einzelnen Geräten geschieht, hängt vom Typ des Geräts und seiner Verwendung ab (wie in der folgenden Tabelle beschrieben). Anweisungen zum Zurücksetzen des verloren gegangenen oder gestohlenen Geräts finden Sie unter [Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Geräts](reset-erase-your-lost-or-stolen-device-windows.md).
+Wenn Sie Ihr Windows-Gerät mithilfe der Unternehmensportal-App oder [Unternehmensportal-Website](reset-erase-your-device-cpwebsite.md) zurücksetzen, wird das Gerät auf die Werkseinstellungen zurückgesetzt. Dabei werden alle Apps, Einstellungen und Daten, einschließlich Ihrer persönlichen Daten, gelöscht. Was auf den einzelnen Geräten geschieht, hängt vom Typ des Geräts und seiner Verwendung ab (wie in der folgenden Tabelle beschrieben). Anweisungen zum Zurücksetzen des verloren gegangenen oder gestohlenen Geräts finden Sie unter [Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Geräts](reset-erase-your-device-cpwebsite.md).
 
 |Gerätekonfiguration und -verwaltung|Gerätetyp|
 |---------------------------------------|---------------|
@@ -38,6 +39,6 @@ Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entspreche
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

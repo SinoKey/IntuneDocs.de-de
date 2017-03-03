@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: bf25dd15aa9074692017d94bb94285b4c8e77ca8
@@ -34,8 +35,8 @@ Wenn dies der Fall ist, kann Microsoft Intune für die von Intune verwalteten Ge
 Nachdem das E-Mail-Profil konfiguriert wurde, können Sie den Zugriff auf geschäftliche E-Mails und Office 365-Dienste mithilfe der Intune-Richtlinien für den bedingten Zugriff problemlos einschränken. Mithilfe dieser Richtlinien können Sie sicherstellen, dass der Zugriff auf die geschäftlichen E-Mails und Office 365-Dienste auf Geräte beschränkt ist, die den von Ihnen in Intune festgelegten Regeln entsprechen.
 
 ## <a name="how-do-i-do-it"></a>Wie gehe ich dabei vor?
-1.  [Konfigurieren Sie die E-Mail-Profile der Endbenutzer automatisch](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) auf Windows-, iOS- und Android-Geräten.
-2.  [Kontrollieren Sie den Zugriff auf geschäftliche E-Mails](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) mithilfe von Richtlinien für den bedingten Zugriff.
+1.    [Konfigurieren Sie die E-Mail-Profile der Endbenutzer automatisch](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) auf Windows-, iOS- und Android-Geräten.
+2.    [Kontrollieren Sie den Zugriff auf geschäftliche E-Mails](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) mithilfe von Richtlinien für den bedingten Zugriff.
 
 
 ### <a name="additional-information"></a>Zusätzliche Informationen:

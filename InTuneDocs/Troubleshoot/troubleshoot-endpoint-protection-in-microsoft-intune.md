@@ -2,10 +2,10 @@
 title: Problembehandlung bei Endpoint Protection | Microsoft-Dokumentation
 description: "Lösen Sie Probleme, während Sie den Endpunktschutz von Microsoft Intune verwenden."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: c0942dc6911a67dc7c3fa0c19e5a38ac60ec18b8
+ms.sourcegitcommit: a43fc6fcd33f65725d325060a513d5380baae10f
+ms.openlocfilehash: b47469c8c5d35098e2e932e5ae9c9de4f5cdafb8
 
 
 ---
@@ -24,10 +25,9 @@ ms.openlocfilehash: c0942dc6911a67dc7c3fa0c19e5a38ac60ec18b8
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Dieser Abschnitt enthält Informationen zur Lösung von Problemen in Verbindung mit Endpoint Protection in Microsoft Intune.
+Dieser Abschnitt enthält Informationen zur Lösung von Problemen in Verbindung mit Endpoint Protection in Microsoft Intune. Sie können auch die Informationen unter [Behandeln von Problemen mit Windows Defender](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-windows-defender-in-windows-10).
 
 Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) weitere Möglichkeiten, Hilfe zu erhalten.
-
 
 ### <a name="endpoint-protection-error-messages"></a>Fehlermeldungen für die Endpoint Protection
 Dieser Abschnitt beschreibt mögliche Ursachen und Lösungen für die folgenden Fehler und Warnungen, die in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) im Bereich **Endpoint Protection-Status** angezeigt werden.
@@ -52,6 +52,6 @@ Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, w
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

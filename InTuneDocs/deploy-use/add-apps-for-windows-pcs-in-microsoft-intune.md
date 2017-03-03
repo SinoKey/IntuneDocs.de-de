@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: da23e1df3dcda7f90fd592b5a6f5a587c63815f1
+ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
+ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
 
 
 ---
@@ -26,6 +27,8 @@ In diesem Thema erfahren Sie, wie Sie Apps zu Intune hinzufügen, bevor Sie sie 
 
 > [!IMPORTANT]
 > Die Informationen in diesem Thema helfen Ihnen beim Hinzufügen von Apps für Windows-PCs, die Sie mithilfe des Intune-Softwareclients verwalten. Wenn Sie Apps für registrierte Windows-PCs und andere mobile Geräte hinzufügen möchten, finden Sie weitere Informationen unter [Hinzufügen von Apps für mobile Geräte in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+
+Damit Apps für PCs installiert werden können, müssen Sie automatisch ohne Benutzereingriff installiert werden können. Wenn dies nicht der Fall ist, schlägt die Installation fehl.
 
 
 ## <a name="add-the-app"></a>Hinzufügen der App
@@ -40,7 +43,7 @@ Mithilfe der folgenden Vorgehensweise verwenden Sie den Intune-Softwareherausgeb
 
     - **Wählen Sie den Dateityp des Softwareinstallationsprogramms aus**. Hiermit wird die Art der Software angegeben, die Sie bereitstellen möchten. Wählen Sie für einen Windows-PC **Windows Installer** aus.
     - **Geben Sie den Speicherort der Softwaresetupdateien an**. Geben Sie den Speicherort der Installationsdateien ein, oder wählen Sie **Durchsuchen** aus, um den Speicherort in einer Liste auszuwählen.
-    - **Weitere Dateien und Unterordner aus dem gleichen Ordner einschließen**. Einige Programme, die Windows Installer verwenden, erfordern unterstützende Dateien. Diese befinden sich normalerweise im gleichen Ordner wie die Installationsdateien. Wählen Sie diese Option aus, wenn Sie auch diese unterstützenden Dateien bereitstellen möchten.
+    - **Weitere Dateien und Unterordner aus dem gleichen Ordner einschließen**. Einige Programme, die Windows Installer verwenden, erfordern unterstützende Dateien. Diese müssen sich im selben Ordner wie die Installationsdatei befinden. Wählen Sie diese Option aus, wenn Sie auch diese unterstützenden Dateien bereitstellen möchten.
 
     Wenn Sie z. B. eine App namens „Application.msi“ für Intune veröffentlichen möchten, würde die Seite wie folgt aussehen: ![Seite „Softwaresetup“ des Herausgebers](./media/publisher-for-pc.png).
 
@@ -73,7 +76,11 @@ Mithilfe der folgenden Vorgehensweise verwenden Sie den Intune-Softwareherausgeb
 
     Wenn die App eine der konfigurierten Regeln erfüllt, wird sie nicht installiert.
 
-6.  Nur für den **Windows Installer**-Dateityp (MSI und EXE): Geben Sie auf der Seite **Befehlszeilenargumente** an, ob Sie optionale Befehlszeilenargumente für das Installationsprogramm angeben möchten. Beispielsweise unterstützen einige Installationsprogramme das Argument **/q** für eine unbeaufsichtigte Installation ohne Benutzereingriff.
+6.  Nur für den **Windows Installer**-Dateityp (MSI und EXE): Geben Sie auf der Seite **Befehlszeilenargumente** an, ob Sie optionale Befehlszeilenargumente für das Installationsprogramm angeben möchten.
+    Die folgenden Parameter werden automatisch von Intune hinzugefügt:
+    - Für EXE-Dateien wird **/install** hinzugefügt.
+    - Für MSI-Dateien wird **/quiet** hinzugefügt.
+    Beachten Sie, dass diese Optionen nur funktionieren, wenn der Ersteller des App-Pakets diese Funktion aktiviert hat.
 
 7.  Nur für den **Windows Installer**-Dateityp (nur EXE): Auf der Seite **Rückgabecodes** können Sie neue Fehlercodes eingeben, die von Intune interpretiert werden, wenn die App auf einem verwalteten Windows-PC installiert wird.
 
@@ -89,8 +96,10 @@ Die App wird im Arbeitsbereich **Apps** im Knoten **Apps** angezeigt.
 
 Nachdem Sie eine App erstellt haben, umfasst der nächste Schritt die Bereitstellung. Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps.md).
 
+Wenn Sie weitere Informationen zu Tipps und Tricks zum Bereitstellen von Software auf Windows-PCs lesen möchten, lesen Sie den Blogbeitrag [Support Tip: Best Practices for Intune Software Distribution to PC’s (Tipp des Supports: Bewährte Methoden zur Intune-Softwareverteilung auf PCs)](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).
 
 
-<!--HONumber=Dec16_HO5-->
+
+<!--HONumber=Feb17_HO3-->
 
 

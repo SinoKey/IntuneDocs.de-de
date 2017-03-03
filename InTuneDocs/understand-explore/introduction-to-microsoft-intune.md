@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
 ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
@@ -71,7 +72,7 @@ In Verbindung mit den Features des Betriebssystems für den Schutz von Daten (z.
 Wenn Sie Intune mit den anderen Diensten in EMS verwenden, können Sie für die mobilen Anwendungen Ihres Unternehmens Sicherheit jenseits dessen bereitstellen, was das mobile Betriebssystem und die mobilen Apps über die App-Konfiguration bereitstellen. Eine App, die mit EMS verwaltet wird, hat Zugriff auf eine größere Auswahl von Schutzfunktionen für mobile Apps und Daten, einschließlich:
 
 * [Einmaliges Anmelden](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [Multi-Factor Authentication](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
+*    [Multi-Factor Authentication](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
 * [bedingter App-Zugriff (Zugriff zulassen, wenn die mobile App Unternehmensdaten enthält)](https://docs.microsoft.com/en-us/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
 * [Trennen von Unternehmensdaten und persönlichen Daten in der gleichen App](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
 * [App-Schutzrichtlinie (PIN, Verschlüsselung, Speichern unter, Zwischenablage usw.)](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)

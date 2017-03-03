@@ -1,11 +1,11 @@
 ---
-title: "Beschränken des Zugriffs auf SharePoint Online | Microsoft-Dokumentation"
+title: "Schützen von SharePoint Online | Microsoft-Dokumentation"
 description: "Schützen und steuern Sie den Zugriff auf Unternehmensdaten in SharePoint Online mithilfe von bedingtem Zugriff."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,23 @@ ms.technology:
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6b900f2bf41ea84088f8453f59b71136e013a884
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
 
-# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>Beschränken des Zugriffs auf SharePoint Online mit Microsoft Intune
+# <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Schützen des Zugriffs auf SharePoint Online mit Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Verwenden Sie den bedingten Zugriff von [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], um den Zugriff auf Dateien zu steuern, die in SharePoint Online gespeichert sind.
 Der bedingte Zugriff besteht aus zwei Komponenten:
 - Einer Gerätekompatibilitätsrichtlinie, die das Gerät erfüllen muss, um als kompatibel bewertet zu werden
 - Einer Richtlinie für bedingten Zugriff, in der Sie die Bedingungen festlegen, die das Gerät erfüllen muss, um auf den Dienst zugreifen zu können
-Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Beschränken des Zugriffs auf E-Mail, O365 und andere Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Thema [Protect access to email, O365, and other services (Schützen des Zugriffs auf E-Mail, O365 und andere Dienste)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 Sie stellen Benutzern die Richtlinien für Konformität und bedingten Zugriff bereit. Jedes Gerät, das ein Benutzer zum Zugriff auf die Dienste verwendet, wird auf die Einhaltung der Richtlinien überprüft.
 
@@ -66,7 +70,7 @@ Die folgenden Betriebssysteme werden unterstützt:
 - Android 4.0 und höher, Samsung KNOX Standard 4.0 oder höher
 - Windows Phone 8.1 und höher
 
-Sie können den Zugriff auf SharePoint Online beschränken, wenn der Zugriff von **iOS**- und **Android**-Geräten über einen Browser erfolgt. Der Zugriff wird nur von unterstützten Browsern auf kompatiblen Geräten gewährt:
+Sie können den Zugriff auf SharePoint Online schützen, wenn der Zugriff von **iOS**- und **Android**-Geräten über einen Browser erfolgt. Der Zugriff wird nur von unterstützten Browsern auf kompatiblen Geräten gewährt:
 * Safari (iOS)
 * Chrome (Android)
 * Intune Managed Browser (iOS und Android 5.0 und höher)
@@ -140,7 +144,7 @@ Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompa
         Dies setzt voraus, dass jedes Gerät, das für den Zugriff auf **SharePoint Online** verwendet wird, in Intune registriert und mit den Richtlinien kompatibel ist. Jede Clientanwendung, die die **moderne Authentifizierung** verwendet, unterliegt der Richtlinie für bedingten Zugriff. Wenn die Plattform zurzeit von Intune nicht unterstützt wird, ist der Zugriff auf **SharePoint** blockiert.
 
         Die Auswahl der Option **Alle Plattformen** bedeutet, dass Azure Active Directory diese Richtlinie auf alle Authentifizierungsanforderungen anwendet, unabhängig von der Plattform, die von der Clientanwendung gemeldet wird. Alle Plattformen müssen registriert und kompatibel sein, mit Ausnahme von:
-        *   Windows-Geräten. Diese müssen registriert werden und kompatibel sein, mit der lokalen Active Directory-Domäne verknüpft sein oder beides.
+        *    Windows-Geräten. Diese müssen registriert werden und kompatibel sein, mit der lokalen Active Directory-Domäne verknüpft sein oder beides.
         * nicht unterstützten Plattformen wie Mac. Allerdings werden Apps, die die moderne Authentifizierung von diesen Plattformen verwenden, weiterhin blockiert.
 
     -   **Bestimmte Plattformen**
@@ -150,8 +154,6 @@ Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompa
      Bei Windows-PCs muss ein PC entweder in die Domäne eingebunden oder bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] registriert und kompatibel sein. Sie können die folgenden Anforderungen festlegen:
 
      -   **Geräte müssen in eine Domäne eingebunden oder kompatibel sein.** Wählen Sie diese Option aus, wenn Sie festlegen möchten, dass die PCs entweder in die Domäne eingebunden oder mit den in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] festgelegten Richtlinien kompatibel sein müssen. Wenn ein PC keine der Anforderungen erfüllt, wird der Benutzer aufgefordert, das Gerät bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] zu registrieren.
-
-     -   **Geräte müssen in eine Domäne eingebunden sein.** Wählen Sie diese Option aus, wenn Sie festlegen möchten, dass PCs für den Zugriff auf Exchange Online in die Domäne eingebunden sein müssen. Wenn ein Computer in keine Domäne eingebunden ist, wird der E-Mail-Zugriff blockiert und der Benutzer aufgefordert, den IT-Administrator zu kontaktieren.
 
      -   **Geräte müssen kompatibel sein.** Wählen Sie diese Option aus, wenn Sie festlegen möchten, dass PCs bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] registriert und kompatibel sein müssen. Wenn ein PC nicht registriert ist, wird eine Meldung mit Anweisungen zur Registrierung angezeigt.
 
@@ -192,10 +194,10 @@ Wählen Sie eine beliebige Gruppe von Mobilgeräten aus. Wählen Sie dann auf de
 -   **Geräte, die bei AAD registriert und kompatibel sind**. Diese Geräten können auf SharePoint Online zugreifen.
 
 ### <a name="see-also"></a>Weitere Informationen:
-[Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste mit Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+[Protect access to email and O365 services with Microsoft Intune (Schützen des Zugriffs auf E-Mail- und Office&365;-Dienste mit Microsoft Intune)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

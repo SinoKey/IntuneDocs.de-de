@@ -13,8 +13,10 @@ ms.technology:
 ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: 215e630141aa2739a2fe73926476db965c42922a
@@ -45,8 +47,6 @@ Folgendes geschieht beim Erstellen eines Arbeitsprofils:
 Eine Anleitung zum Erstellen eines Arbeitsprofils finden Sie unter [Erstellen eines Arbeitsprofils und Registrieren Ihres Geräts bei Intune](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-
-
 
 
 

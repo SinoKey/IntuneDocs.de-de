@@ -1,11 +1,11 @@
 ---
-title: "Erstellen eines Arbeitsprofils und Registrieren Ihres Geräts bei Intune | Microsoft-Dokumentation"
-description: "Beschreibt das Verschlüsseln eines Android-Geräts."
+title: "Registrieren Ihres Geräts mithilfe eines Arbeitsprofils | Microsoft-Dokumentation"
+description: "So verbessern Sie Android-Geräte durch Arbeitsprofile"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,13 @@ ms.technology:
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: d4e3d60115bf5e2f41a40cd3746c9678cfb915bd
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 2384889d377713757b6172a12d608b32a1756978
 
 
 ---
@@ -71,7 +73,7 @@ So erstellen Sie ein Arbeitsprofil:
 
     Die Meldung „Registrierung Ihres Geräts“ wird kurz angezeigt.
 
-11. Wenn der Bildschirm **Unternehmenszugriff einrichten** anzeigt, dass alles ordnungsgemäß eingerichtet wurde, tippen Sie auf **WEITER**. 
+11. Wenn der Bildschirm **Unternehmenszugriff einrichten** anzeigt, dass alles ordnungsgemäß eingerichtet wurde, tippen Sie auf **WEITER**.
 
     ![Einrichtung des Unternehmenszugriffs zeigt an, dass die Einrichtung des Arbeitsprofils und die Registrierung abgeschlossen sind](./media/andr-afw-company-access-setup-green-checks.png)
 
@@ -87,8 +89,6 @@ Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO5-->
 
 

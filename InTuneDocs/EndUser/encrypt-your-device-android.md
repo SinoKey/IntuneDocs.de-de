@@ -1,11 +1,11 @@
 ---
-title: "Verschlüsseln Ihres Geräts | Microsoft-Dokumentation"
-description: "Beschreibt das Verschlüsseln eines Android-Geräts."
+title: "Schützen Ihres Android-Geräts mit Verschlüsselung | Microsoft-Dokumentation"
+description: "Schützen Ihres Android-Geräts"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/7/2016
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,25 @@ ms.technology:
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 54439c96b75efd60e2068207eb1602e669504831
+ms.sourcegitcommit: 879f8faa37309edae9d1cbb0456d372ff27b8b98
+ms.openlocfilehash: a36c7dca0274b465315493261f03ab362c09383a
+ms.lasthandoff: 02/23/2017
 
 
 ---
 
 
-# <a name="encrypt-your-device"></a>Registrieren Ihres Geräts
+# <a name="how-to-protect-your-android-device-using-encryption"></a>So schützen Sie Ihr Android-Gerät mit Verschlüsselung
 
-Wenn Ihr Unternehmen oder Ihre Organisation Sie um die Verschlüsselung Ihres Android-Geräts bittet, bevor Sie auf Unternehmensdateien, E-Mails oder Daten zugreifen können, befolgen Sie die untenstehenden Schritte zum Verschlüsseln des Geräts. Sie werden möglicherweise aufgefordert, vor dem Verschlüsseln eine PIN oder ein Kennwort festzulegen, wenn dies vom IT-Administrator gefordert wird.
+Wenn Sie ein Gerät verschlüsseln, umschließen Sie die darauf enthaltenen Informationen mit einer Schicht aus schützendem Code, der den Zugriff durch Unbefugte darauf verhindert. Damit sichergestellt werden kann, dass Ihre Informationen geschützt sind, werden Sie von Ihrer Organisation angewiesen, Ihr Android-Gerät zu schützen, bevor Sie auf Unternehmensdateien, -E-Mails und -daten zugreifen können.
+
+> [!Note]
+> Sie werden möglicherweise aufgefordert, vor dem Verschlüsseln eine PIN oder ein Kennwort festzulegen, wenn dies vom IT-Administrator gefordert wird.
 
 Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
 
@@ -35,6 +41,9 @@ Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
     (Bei einigen Telefonen müssen Sie **Speicher** &gt; **Speicherverschlüsselung** oder **Speicher** &gt; **Sperrbildschirm und Sicherheit** &gt; **Andere Sicherheitseinstellungen** auswählen, um auf die Option „Verschlüsseln“ zuzugreifen).
 
 3.  Folgen Sie den Anweisungen auf dem Bildschirm. Während der Verschlüsselung startet Ihr Gerät möglicherweise mehrmals neu.
+
+> [!Note]
+> Bestimmte Android-Geräte können nicht verschlüsselt werden. [Hier](your-device-appears-encrypted-but-cp-says-otherwise-android.md) erfahren Sie mehr.
 
 ### <a name="what-to-do-if-you-have-issues"></a>Vorgehensweise bei Problemen
 **Problem**: Sie haben Ihr Gerät bereits verschlüsselt und stellen eines der folgenden Probleme fest:
@@ -59,10 +68,6 @@ Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
 
     5. Öffnen Sie die Unternehmensportal-App, wählen Sie das Gerät aus, und tippen Sie auf **Kompatibilität überprüfen**.
 
+
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das [Microsoft Android-Team](mailto:wintunedroidfbk@microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

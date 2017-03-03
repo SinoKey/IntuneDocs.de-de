@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,25 @@ ms.technology:
 ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 063b073d85dac9fce7d1cbab80ea320c5d237961
-ms.openlocfilehash: 0d8a86b55904198612e0d53fbc387d850d88a449
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 2191295407e0c1bb2c3861b8a8d168dd3697da45
 
 
 ---
 
 # <a name="customize-the-company-portal"></a>Anpassen des Unternehmensportals
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+In diesem Thema erfahren Administratoren, wie Sie die Intune-Unternehmensportal-App sowie die Unternehmensportal-Website anpassen können.
+
 Im Intune-Unternehmensportal können Benutzer auf Unternehmensdaten zugreifen, häufige Aufgaben wie das Registrieren von Geräten und das Installieren von Apps ausführen und sich über Unterstützungsmöglichkeiten durch Ihre IT-Abteilung informieren.
 
 Das Intune-Unternehmensportal stellt Benutzern Zugriff auf Unternehmensdaten und -Apps bereit. Das Unternehmensportal ist in zwei Varianten verfügbar:
 
--   **Die Unternehmensportal-App**: Diese Anwendung ist auf Geräten verfügbar, die Sie mit Intune verwalten. Erfahren Sie mehr über die Unternehmensportal-Apps für [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) und [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
+-   **Die Unternehmensportal-App**: Diese Anwendung ist auf Geräten verfügbar, die Sie mit Intune verwalten. Erfahren Sie mehr über die Unternehmensportal-Apps für [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune) und [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
 - **Die Unternehmensportal-Website**: Eine Website, mit der Endbenutzer die meisten der Aufgaben ausführen können, die mit der Unternehmensportal-App ausgeführt werden können. Die URL zum Intune-Unternehmensportal lautet [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Weitere Informationen zu dieser Website finden Sie unter [Verwenden der Intune-Unternehmensportal-Website](/Intune/EndUser/using-the-intune-company-portal-website).
@@ -86,6 +92,6 @@ Nach dem Speichern Ihrer Änderungen können Sie über die Links, die am unteren
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

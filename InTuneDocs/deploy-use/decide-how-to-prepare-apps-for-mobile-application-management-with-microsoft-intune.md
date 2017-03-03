@@ -1,11 +1,11 @@
 ---
-title: "Vorbereiten von Apps für die Verwaltung mobiler Anwendungen | Microsoft-Dokumentation"
+title: "Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune | Microsoft Docs"
 description: "Die Informationen in diesem Thema unterstützen Sie bei der Entscheidung, wann Sie das App Wrapping Tool und das App SDK verwenden sollten, um Ihrer benutzerdefinierten Reihe von Branchen-Apps die Verwendung der Verwaltungsrichtlinien für mobile Apps zu ermöglichen."
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,15 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 8ee3f539e619d4646013db4982ea96223eea5896
+ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
+ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 
 ---
 
-# <a name="decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune"></a>Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune
+# <a name="prepare-line-of-business-apps-for-mam"></a>Vorbereiten von Branchen-Apps für MAM
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -55,7 +56,7 @@ Weitere Informationen zum App Wrapping Tool für MAM auf Geräten, die nicht bei
 ## <a name="intune-app-sdk"></a>Intune App SDK
 Das App SDK ist in erster Linie für Kunden konzipiert, die über Apps im Apple App Store oder Google Play Store verfügen und diese Apps mit Intune verwalten möchten. Das SDK kann jedoch in jede App integriert werden, auch in branchenspezifische Apps.
 
-Weitere Informationen zum SDK finden Sie unter [Übersicht](/intune/develop/intune-app-sdk). Ein Einführung in das SDK finden Sie unter [Erste Schritte mit dem Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started).
+Weitere Informationen zum SDK finden Sie unter [Übersicht](../develop/intune-app-sdk.md). Ein Einführung in das SDK finden Sie unter [Erste Schritte mit dem Microsoft Intune App SDK](../develop/intune-app-sdk-get-started.md).
 
 ### <a name="reasons-to-use-the-sdk"></a>Gründe für die Verwendung des SDKs
 * Ihre App verfügt nicht über integrierte Datenschutzfunktionen.
@@ -69,8 +70,8 @@ Weitere Informationen zum SDK finden Sie unter [Übersicht](/intune/develop/intu
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Ja – [Intune App SDK-Xamarin-Komponente](/../develop/intune-app-sdk-xamarin) verwenden|Ja – [Intune App SDK-Cordova-Plug-In](/../develop/intune-app-sdk-cordova) verwenden|
-|**Android**| Ja – [Intune App SDK-Xamarin-Komponente](/../develop/intune-app-sdk-xamarin) verwenden|Ja – [Intune App SDK-Cordova-Plug-In](/../develop/intune-app-sdk-cordova) verwenden|
+|**iOS**|Ja – [Intune App SDK-Xamarin-Komponente](../develop/intune-app-sdk-xamarin.md) verwenden|Ja – [Intune App SDK-Cordova-Plug-In](../develop/intune-app-sdk-cordova.md) verwenden|
+|**Android**| Ja – [Intune App SDK-Xamarin-Komponente](../develop/intune-app-sdk-xamarin.md) verwenden|Ja – [Intune App SDK-Cordova-Plug-In](../develop/intune-app-sdk-cordova.md) verwenden|
 
 ## <a name="feature-comparison"></a>Funktionsvergleich
 In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK und App Wrapping Tool verwenden können.
@@ -109,6 +110,6 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

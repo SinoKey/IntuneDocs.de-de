@@ -1,11 +1,11 @@
 ---
-title: "Kennwort erfüllt nicht die Anforderungen des IT-Administrators | Microsoft-Dokumentation"
+title: Ihr Kennwort entspricht nicht den Anforderungen Ihres IT-Administrators | Microsoft-Dokumentation
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/20/2016
+ms.date: 02/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 14ac49d73648244f71eff90b71272b60a07cd37e
+ms.sourcegitcommit: c5c857b46c13aee790ab5f780a59d9cd51029cd2
+ms.openlocfilehash: a2af33a5b274b01f6651c76bd0b0038dc74b785f
 
 
 ---
 
-# <a name="password-does-not-meet-it-administrator-requirements"></a>Kennwort erfüllt nicht die Anforderungen des IT-Administrators
+# <a name="your-password-does-not-meet-your-it-admins-requirements"></a>Ihr Kennwort entspricht nicht den Anforderungen Ihres IT-Administrators
 
 Das Kennwort, mit dem Sie auf Unternehmens- oder Schulressourcen zugreifen, erfüllt mindestens eine der Anforderungen nicht, die Ihr IT-Administrator eingerichtet hat. Um das Problem zu beheben, befolgen Sie die Anweisungen, die auf Ihrem Gerät angezeigt werden. Beschreibungen der Probleme sind nachstehend aufgelistet.
 
@@ -45,12 +46,12 @@ Beschreibungen der PIN- bzw. Kennwortprobleme:
 
 - **Das Kennwort wurde erst kürzlich verwendet**. Ihr IT-Administrator verhindert, dass Sie vorherige Kennwörter verwenden, die Sie in der Vergangenheit bereits verwendet haben. Wählen Sie ein Kennwort aus, das Sie zuvor noch nicht verwendet haben.
 
-- **Das Kennwort ist nicht komplex genug, um Anforderungen zu erfüllen**. Ihr IT-Administrator verlangt, dass Sie komplexere Zeichen in Ihrem Kennwort verwenden. Versuchen Sie es mit Zeichen wie Zahlen, Großbuchstaben und Symbolen wie $, % und #.
+- **Das Kennwort ist nicht komplex genug, um Anforderungen zu erfüllen**. Ihr IT-Administrator verlangt, dass Sie komplexere Zeichen in Ihrem Kennwort verwenden. Versuchen Sie es mit Zeichen wie Zahlen, Großbuchstaben und Symbolen wie $, % und #. Dies kann auch für andere Konten auf Ihrem Gerät gelten, überprüfen Sie also alle anderen Arbeitskonten, um sicherzustellen, dass Ihr Kennwort den Anforderungen entspricht, die von der IT für Ihr Gerät festgelegt wurden.
 
 Wenn Sie Probleme haben herauszufinden, wie Ihr Kennwort diese Anforderungen erfüllt, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Verwenden von Konfigurationsrichtlinien für mobile Android for Work-Apps | Microsoft-Dokumentation"
+title: "App-Konfigurationsrichtlinie für Android for Work | Microsoft-Dokumentation"
 description: "Verwenden Sie Konfigurationsrichtlinien für mobile Apps in Intune, um Einstellungen anzugeben, die beim Ausführen einer Android for Work-App durch Benutzer erforderlich sind."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/3/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 42581ff16740da0ebcc7160c96b7f70962662ba9
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 58671d037c7f62e5fdaa56657737a4470c90bdb7
 
 
 ---
@@ -29,18 +30,16 @@ ms.openlocfilehash: 42581ff16740da0ebcc7160c96b7f70962662ba9
 Verwenden Sie Konfigurationsrichtlinien für mobile Apps in Microsoft Intune, um Einstellungen anzugeben, die beim Ausführen einer App durch Benutzer erforderlich sind. Beispielsweise kann eine App vom Benutzer Folgendes anfordern:
 
 -   Eine benutzerdefinierte Portnummer
-
 -   Spracheinstellungen
+-   Brandingeinstellungen wie z. B. ein Unternehmenslogo
 
--   Brandingeinstellungen, z. B. ein Unternehmenslogo
+Wenn Benutzer Einstellungen nicht ordnungsgemäß eingeben, kann dies zur erhöhten Belastung Ihres Helpdesks führen und die Annahme der neuen Apps verlangsamen.
 
-Wenn Benutzer diese Einstellungen nicht ordnungsgemäß eingeben, kann dies zur erhöhten Belastung Ihres Helpdesks führen und die Annahme der neuen Apps verlangsamen.
+Mit Richtlinien zur Konfiguration von mobilen Apps können Sie diese Einstellungen auf Geräten bereitstellen, bevor Benutzer die App ausführen. Die Einstellungen werden automatisch bereitgestellt, und die Benutzer müssen keine weitere Aktion durchführen.
 
-Mit Konfigurationsrichtlinien für mobile Apps können Sie diese Probleme beseitigen, da Sie diese Einstellungen für Benutzer bereitstellen können, bevor die Benutzer die App ausführen. Die Einstellungen werden dann automatisch bereitgestellt, und die Benutzer müssen keine weitere Aktion durchführen.
+Damit Richtlinien für die App-Konfiguration verwendet werden können, muss der App-Entwickler beim Erstellen der App Konfigurationseinstellungen für Unternehmens-Apps verfügbar machen. Für Google Chrome werden beispielsweise Einstellungen bereitgestellt, mit denen Sie Standardlesezeichen, zulässige und verweigerte Websites und vieles mehr festlegen können. Wenden Sie sich an den Entwickler der App, um herauszufinden, ob diese Einstellungen unterstützt und wie sie in der Richtlinie angegeben werden.
 
-Damit Richtlinien für die App-Konfiguration verwendet werden können, muss der Entwickler der App beim Erstellen der App Konfigurationseinstellungen für Unternehmens-Apps verfügbar machen. Für Google Chrome werden beispielsweise Einstellungen bereitgestellt, mit denen Sie Standardlesezeichen, zulässige und verweigerte Websites und vieles mehr festlegen können. Wenden Sie sich an den Entwickler der App, um herauszufinden, ob diese Einstellungen unterstützt und wie sie in der Richtlinie angegeben werden.
-
-Die Richtlinie für die App-Konfiguration stellen Sie für die Benutzer bereit, für die Sie die App bereitgestellt haben, die Sie konfigurieren möchten. Die Richtlinieneinstellungen werden immer dann verwendet, wenn die App ausgeführt wird.
+Die Richtlinie für die App-Konfiguration stellen Sie für die Benutzer bereit, für die Sie die App bereitgestellt haben, die Sie konfigurieren möchten. App-Einstellungen werden angewendet, wenn die App ausgeführt wird.
 
 ## <a name="configure-a-mobile-app-configuration-policy"></a>Konfigurieren einer Konfigurationsrichtlinie für mobile Apps
 
@@ -80,6 +79,6 @@ Wenn die bereitgestellte App auf einem Gerät gestartet wird, wird sie mit den E
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

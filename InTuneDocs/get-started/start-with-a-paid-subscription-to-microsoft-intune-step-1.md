@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,21 @@ ms.technology:
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 047a2fb0ad286ece183116a70466fc259b9a0dea
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
 
 
 ---
 
 
 # <a name="sign-up-or-sign-in-to-intune"></a>Registrieren oder Anmelden bei Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+In diesem Thema werden Systemadministratoren darauf hingewiesen, wie sie sich für ein Intune-Konto anmelden können.
+
 Bevor Sie sich bei Intune registrieren oder anmelden können, müssen Sie ermitteln, ob Ihr Unternehmen bereits über ein Geschäfts- oder Schulkonto für Microsoft Online Services verfügt. Sie müssen ebenfalls feststellen, ob Ihr Unternehmen über ein Enterprise Agreement oder einen vergleichbaren Volumenlizenzvertrag mit Microsoft verfügt. Ein Geschäfts- oder Schulkonto wird bereitgestellt, wenn Sie einen Volumenlizenzvertrag mit Microsoft abschließen oder andere Microsoft-Clouddienste wie Office 365 abonnieren.
 
 Wenn Sie bereits über ein Geschäfts- oder Schulkonto verfügen, können Sie sich einfach mit diesem Konto **anmelden**, um Intune zu Ihrer vorhandenen Abonnementumgebung hinzuzufügen. Andernfalls müssen Sie sich **registrieren**, um ein neues Konto zu erstellen, mit dem Sie Intune für Ihr Unternehmen verwalten können.
@@ -50,6 +56,6 @@ Nach Abschluss des Registrierungsprozesses werden Sie an eine Seite weitergeleit
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

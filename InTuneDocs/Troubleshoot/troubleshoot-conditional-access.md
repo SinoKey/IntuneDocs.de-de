@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: d4b935ba28edc1b41afb46b0aa7d0ee586de2a1c
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
 
 
 ---
@@ -33,11 +34,11 @@ In diesem Thema wird beschrieben, was zu tun ist, wenn Ihre Benutzer durch bedin
 
 Sie müssen folgende Bedingungen erfüllen, damit der bedingte Zugriff funktioniert:
 
--   Das Gerät muss von Intune verwaltet werden.
--   Das Gerät muss bei Azure Active Directory (AAD) registriert sein. Unter normalen Umständen erfolgt diese Registrierung automatisch während der Intune-Registrierung.
--   Das Gerät muss mit Ihren Intune-Kompatibilitätsrichtlinien für das Gerät und für den Benutzer des Geräts kompatibel sein.  Wenn keine Kompatibilitätsrichtlinien vorhanden sind, ist die Intune-Registrierung ausreichend.
--   Exchange ActiveSync muss auf dem Gerät aktiviert werden, wenn der Benutzer E-Mails über den nativen E-Mail-Client des Geräts anstatt über Outlook empfängt.     Dies geschieht für iOS,Windows Phone-und Android-/KNOX-Standard-Geräte automatisch.
--   Ihr Intune Exchange Connector muss ordnungsgemäß konfiguriert sein. Weitere Informationen finden Sie unter [Problembehandlung für den Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md).
+-    Das Gerät muss von Intune verwaltet werden.
+-    Das Gerät muss bei Azure Active Directory (AAD) registriert sein. Unter normalen Umständen erfolgt diese Registrierung automatisch während der Intune-Registrierung.
+-    Das Gerät muss mit Ihren Intune-Kompatibilitätsrichtlinien für das Gerät und für den Benutzer des Geräts kompatibel sein.  Wenn keine Kompatibilitätsrichtlinien vorhanden sind, ist die Intune-Registrierung ausreichend.
+-    Exchange ActiveSync muss auf dem Gerät aktiviert werden, wenn der Benutzer E-Mails über den nativen E-Mail-Client des Geräts anstatt über Outlook empfängt.     Dies geschieht für iOS,Windows Phone-und Android-/KNOX-Standard-Geräte automatisch.
+-    Ihr Intune Exchange Connector muss ordnungsgemäß konfiguriert sein. Weitere Informationen finden Sie unter [Problembehandlung für den Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md).
 
 Diese Bedingungen können für jedes Gerät im Azure-Verwaltungsportal und im Geräteinventurbericht angezeigt werden.
 
@@ -52,7 +53,7 @@ Diese Bedingungen können für jedes Gerät im Azure-Verwaltungsportal und im Ge
  -  Die Registrierung der Kompatibilitätsinformationen für ein Gerät kann einige Zeit in Anspruch nehmen. Warten Sie einige Minuten, und versuchen Sie es erneut.
  -  Geräte unter iOS:
      -   Ein vom Benutzer erstelltes, vorhandenes E-Mail-Profil blockiert die Bereitstellung eines Profils, das vom Intune-Administrator erstellt wurde. Das ist ein häufig auftretendes Problem, da iOS-Benutzer in der Regel ein E-Mail-Profil erstellen und anschließend die Registrierung vornehmen. Das Unternehmensportal informiert den Benutzer darüber, dass es aufgrund seines manuell konfigurierten E-Mail-Profils nicht kompatibel ist, und fordert ihn dazu auf, dieses Profil zu entfernen. Der Benutzer sollte sein E-Mail-Profil entfernen, damit das Intune-Profil bereitgestellt werden kann. Weisen Sie Ihre Benutzer an, die Registrierung ohne das Installieren eines E-Mail-Profils vorzunehmen und Intune die Bereitstellung des Profils zu erlauben, um das Problem zu vermeiden.
-     -   Ein iOS-Gerät kann beim Überprüfen der Kompatibilität hängen bleiben, wodurch verhindert wird, dass der Benutzer einen weiteren Eincheckvorgang initiiert. Dieses Problem kann durch einen Neustart des Unternehmensportals behoben werden und der Kompatibilitätsstatus spiegelt den Gerätestatus in Intune wider. Nachdem alle Daten von einer Gerätesynchronisierung erfasst wurden, erfolgt die Kompatibilitätsprüfung sehr schnell und sie benötigt im Durchschnitt weniger als eine halbe Sekunde.
+     -     Ein iOS-Gerät kann beim Überprüfen der Kompatibilität hängen bleiben, wodurch verhindert wird, dass der Benutzer einen weiteren Eincheckvorgang initiiert. Dieses Problem kann durch einen Neustart des Unternehmensportals behoben werden und der Kompatibilitätsstatus spiegelt den Gerätestatus in Intune wider. Nachdem alle Daten von einer Gerätesynchronisierung erfasst wurden, erfolgt die Kompatibilitätsprüfung sehr schnell und sie benötigt im Durchschnitt weniger als eine halbe Sekunde.
 
         In der Regel verbleiben Geräte in diesem Zustand, weil sie Probleme beim Herstellen einer Verbindung mit dem Dienst haben oder die Synchronisierung lange dauert.  Tritt das Problem für verschiedene Netzwerkkonfigurationen (Mobilfunk, WLAN, VPN), nach Geräteneustarts und nach der Überprüfung, dass der SSP auf dem Gerät aktuell ist, weiterhin auf, wenden Sie sich gemäß der Beschreibung in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) an den Microsoft-Support.
 
@@ -125,7 +126,7 @@ Verwenden Sie zum Anzeigen der Exchange Connector-Protokolle das [Service Trace 
 
     „Getting the mobile device list without a time filter (full sync) for 4 users completed successfully.“ Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
--   Suchen Sie eine schnelle Synchronisierung (Delta) in den Protokollen, indem Sie nach **Schnellsynchronisierung** suchen.
+-    Suchen Sie eine schnelle Synchronisierung (Delta) in den Protokollen, indem Sie nach **Schnellsynchronisierung** suchen.
 
 ##### <a name="exceptions-in-get-next-command"></a>Ausnahmen im Befehl „Get next“
 Überprüfen Sie die Exchange Connector-Protokolle auf Ausnahmen im **Befehl „Get next“**, und stellen Sie diese dem Microsoft-Support bereit.
@@ -134,9 +135,9 @@ Verwenden Sie zum Anzeigen der Exchange Connector-Protokolle das [Service Trace 
 
 So aktivieren Sie die ausführliche Protokollierung
 
-1.  Öffnen Sie die Konfigurationsdatei für die Exchange Connector-Ablaufverfolgung. Die Datei befindet sich unter: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
-2.  Suchen Sie nach „TraceSourceLine“ mit dem folgenden Schlüssel: „OnPremisesExchangeConnectorService“
-3.  Ändern Sie den Knotenwert für **SourceLevel** von **Warning ActivityTracing** (Standardeinstellung) in **Verbose ActivityTracing**, wie nachfolgend veranschaulicht.
+1.    Öffnen Sie die Konfigurationsdatei für die Exchange Connector-Ablaufverfolgung. Die Datei befindet sich unter: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
+2.    Suchen Sie nach „TraceSourceLine“ mit dem folgenden Schlüssel: „OnPremisesExchangeConnectorService“
+3.    Ändern Sie den Knotenwert für **SourceLevel** von **Warning ActivityTracing** (Standardeinstellung) in **Verbose ActivityTracing**, wie nachfolgend veranschaulicht.
 
     <TraceSourceLine>
           <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
@@ -161,6 +162,6 @@ Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, w
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

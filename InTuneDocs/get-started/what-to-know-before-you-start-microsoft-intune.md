@@ -1,11 +1,11 @@
 ---
-title: Voraussetzungen | Microsoft-Dokumentation
-description: "Links zu erforderlichen Komponenten und Anforderungen für Intune"
+title: "Unterstützte Geräte – Microsoft Intune | Microsoft Docs"
+description: "Liste der unterstützten Geräteplattformen und Browser für die Intune-Geräteverwaltung"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,19 @@ ms.technology:
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
-ms.openlocfilehash: d07c7e667dbb5c01a9dcd8b2f69e7d930c27f25a
+ms.sourcegitcommit: b3732d0c6461f9fb8462ae5584055204d597aae0
+ms.openlocfilehash: 0af4f49713a65900079d69a09f20d210797c935c
 
 
 ---
 
-# <a name="prerequisites-to-getting-started-with-intune"></a>Voraussetzungen für den Einstieg in Intune
+# <a name="supported-devices-and-browsers"></a>Unterstützte Geräte und Browser
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Dieser Artikel richtet sich an Systemadministratoren, die für die Verwaltung der Geräte im Unternehmen verantwortlich sind. Hilfe zur Installation von Intune auf Ihrem Telefon finden Sie unter [Verwenden verwalteter Geräte zum Erledigen von Aufgaben](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
 
 Prüfen Sie die folgenden Anforderungen, bevor Sie mit der Einrichtung von Microsoft Intune beginnen:
 
@@ -74,6 +77,6 @@ Lediglich Benutzer mit Dienstadministratorrechten oder Mandantenadministratoren 
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

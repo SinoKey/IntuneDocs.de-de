@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 5f05aa4a27be14a05663aa9de82af63291699403
+ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
+ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 
 ---
@@ -135,7 +136,7 @@ Betrachten wir diese gängigen externen Abhängigkeiten unten im Detail.
 
 ### <a name="identity"></a>Identität
 
-Die Identität bezeichnet, wie wir die Benutzer identifizieren, die Ihrer Organisation angehören und ein Gerät registrieren. Intune erfordert Azure Active Directory (Azure AD) als Benutzeridentitätsanbieter. Wenn Sie diesen Dienst bereits verwenden, können Sie Ihre bereits in der Cloud vorhandene Identität nutzen. Azure AD Connect ist außerdem das empfohlene Tool zum Synchronisieren Ihrer lokalen Benutzeridentitäten mit Microsoft Cloud Services. Wenn in Ihrer Organisation bereits Office 365 verwendet wird, muss Intune unbedingt dieselbe Azure Active Directory-Umgebung verwenden.
+Mit der Identität identifizieren wir die Benutzer, die Ihrer Organisation angehören und ein Gerät registrieren. Intune erfordert Azure Active Directory (Azure AD) als Benutzeridentitätsanbieter. Wenn Sie diesen Dienst bereits verwenden, können Sie Ihre bereits in der Cloud vorhandene Identität nutzen. Azure AD Connect ist außerdem das empfohlene Tool zum Synchronisieren Ihrer lokalen Benutzeridentitäten mit Microsoft Cloud Services. Wenn in Ihrer Organisation bereits Office 365 verwendet wird, muss Intune unbedingt dieselbe Azure Active Directory-Umgebung verwenden.
 
 Unten finden Sie weitere Informationen zu den Intune-Identitätsanforderungen.
 
@@ -147,7 +148,7 @@ Unten finden Sie weitere Informationen zu den Intune-Identitätsanforderungen.
 
 ### <a name="user-and-device-groups"></a>Benutzer- und Gerätegruppen
 
-Benutzer- und Gerätegruppen legen das Ziel einer Bereitstellung fest. Dazu gehört beispielsweise die Festlegung von Bereitstellungszielen für Richtlinien, Anwendungen und Profile. Die Intune-Cloud unterstützt nur Benutzer- und Gerätegruppen – Sie müssen festlegen, welche Benutzer- und Gerätegruppen benötigt werden. Es wird empfohlen, alle Gruppen im lokalen Active Directory zu erstellen und dann mit Azure Active Directory zu synchronisieren. Unten finden Sie weitere Informationen zur Planung und Erstellung von Benutzer- und Gerätegruppen.
+Benutzer- und Gerätegruppen legen das Ziel einer Bereitstellung fest. Dazu gehört beispielsweise die Festlegung von Bereitstellungszielen für Richtlinien, Anwendungen und Profile. Die Intune-Cloud unterstützt Benutzer- und Gerätegruppen – Sie müssen festlegen, welche Benutzer- und Gerätegruppen benötigt werden. Es wird empfohlen, alle Gruppen im lokalen Active Directory zu erstellen und dann mit Azure Active Directory zu synchronisieren. Unten finden Sie weitere Informationen zur Planung und Erstellung von Benutzer- und Gerätegruppen.
 
 -   Weitere Informationen zu [Planen von Benutzer- und Gerätegruppen](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
 
@@ -411,6 +412,6 @@ Der nächste Abschnitt enthält Hinweise zum [Intune-Implementierungsprozess](se
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO3-->
 
 

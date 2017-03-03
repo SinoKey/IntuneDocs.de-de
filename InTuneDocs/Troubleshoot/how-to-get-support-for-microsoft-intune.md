@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/16/2016
+ms.date: 01/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,15 @@ ms.technology:
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1a83bd41e4dc3aaa2e98b78b918b0cfe4c74dfe3
+ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
+ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
 
 
 ---
 
-# <a name="how-to-get-admin-support-for-microsoft-intune"></a>So fordern Sie Administratorunterstützung für Microsoft Intune an
+# <a name="how-admins-get-support-for-microsoft-intune"></a>So erhalten Administratoren Support für Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -28,7 +29,35 @@ Microsoft bietet für Microsoft Intune Unterstützung bei allgemeinen technische
 
 Der Support für Intune und für Intune mit Configuration Manager ist kostenlos. Für Premier Support-Kunden fallen Gebühren für Fragen zur Vorgehensweise an (z. B., wie ein Intune-Feature konfiguriert wird).
 
-## <a name="create-an-online-service-ticket"></a>Erstellen eines Onlineservicetickets
+## <a name="find-help-without-opening-a-support-ticket"></a>Suchen nach Hilfe, ohne ein Supportticket zu öffnen
+
+Vor dem Erstellen eines Supporttickets können Sie sich unter den folgenden Ressourcen weitere Informationen und Antworten auf Ihre Fragen holen. Vielleicht interessieren Sie sich auch für [Allgemeine Tipps für die Problembehandlung für Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune).
+
+### <a name="microsoft-intune-technet-forums"></a>Microsoft Intune TechNet-Foren
+
+Stellen Sie eine Frage, oder beginnen Sie eine Diskussion mit den technischen Experten von Microsoft! Wir bieten Antworten und Erkenntnisse im durchsuchbaren [Microsoft Intune TechNet-Forum](https://social.technet.microsoft.com/Forums/home).
+
+![Microsoft Intune TechNet-Forum](./media/technet-forum-for-support.png)
+
+### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Website für das Microsoft Intune UserVoice-Produktfeedback
+
+Haben Sie Feedback für Microsoft zur Verbesserung von Intune? Teilen Sie uns Ihre Ideen auf der [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas)-Feedbackwebsite von Microsoft Intune mit. Sie können auch für Ideen abstimmen, die andere Personen auf UserVoice gepostet haben. 
+
+![Website für das Microsoft Intune UserVoice-Feedback](./media/intune-uservoice-feedback-page.png)
+
+## <a name="create-an-online-support-ticket"></a>Erstellen eines Onlinesupporttickets
+
+Falls Sie in den Selbsthilferessourcen keine Lösungen finden, können Sie ein Onlinesupportticket erstellen.
+
+**Bitte gehen Sie in Ihrem Supportticket nur auf ein Problem ein**. So können wir Ihnen besser helfen. Warum sollen Sie das tun?
+
+- Die Supportmitarbeiter, die Ihnen helfen, sind meist auf einem bestimmten Gebiet spezialisiert und so ist es einfacher, einen geeigneten Experten für Ihr Problem zu finden.
+- Die Technikteams können so ihre Arbeit für die Produktbereiche, in denen es die meisten Anfragen gibt, priorisieren. 
+- So ist es einfacher, anspruchsvolle Probleme an die geeignete Stelle weiterzuleiten.
+
+Bitte beachten Sie den Abschnitt [Definition of a support incident (Definition eines Supportfalls)](#definition-of-a-support-incident).
+
+**Erstellen eines Onlinesupporttickets**:
 
 1.  Melden Sie sich mit Ihren Intune-Anmeldeinformationen beim [Office 365 Admin Center](https://portal.office.com) an.
     >[!NOTE]
@@ -71,12 +100,12 @@ Gehen Sie folgendermaßen vor, wenn Ihre Support-Seite wie folgt aussieht:
 ## <a name="get-phone-support"></a>Anfordern von telefonischem Support
 Unter [An den telefonischen Support für Microsoft Intune wenden](contact-assisted-phone-support-for-microsoft-intune.md) finden Sie eine Liste der Länder und Regionen mit den entsprechenden Supportelefonnummern, Supportzeiten und unterstützten Sprachen.
 
-## <a name="track-your-service-requests"></a>Verfolgen Ihrer Serviceanfragen
+## <a name="track-your-support-requests"></a>Nachverfolgen Ihrer Supportanfragen
 1.  Melden Sie sich mit Ihren Intune-Anmeldeinformationen beim [Office 365 Admin Center](https://portal.office.com) an.
 2.  Wählen Sie die **Admin**-Kachel aus.
 3.  Wählen Sie auf der linken Seite unter **Support** die Option **Serviceanfragen** aus. Hier können Sie Ihre Anfragen überprüfen.
 
-Unsere Antwortzeiten für Serviceanfragen hängen vom Schweregrad des Problems ab. Für die schwerwiegendsten Probleme erhalten unsere Professional-Kunden die erste Antwort innerhalb von zwei Stunden. Die Antwortzeit für unsere Premier Support-Kunden hängt von Ihrer Supportvereinbarung ab. Hierbei handelt es sich um folgende Fälle:
+Unsere Antwortzeiten für Supportanfragen hängen vom Schweregrad des Problems ab. Für die schwerwiegendsten Probleme erhalten unsere Professional-Kunden die erste Antwort innerhalb von zwei Stunden. Die Antwortzeit für unsere Premier Support-Kunden hängt von Ihrer Supportvereinbarung ab. Hierbei handelt es sich um folgende Fälle:
 
 - Mindestens ein Dienst ist nicht verfügbar oder kann nicht verwendet werden.
 - Produktion oder Profitabilität bzw. Termine für Produktion, Vorgänge oder Bereitstellung werden schwerwiegend beeinträchtigt.
@@ -99,12 +128,6 @@ Für andere Probleme erhalten unsere Professional-Kunden die erste Antwort inner
 >
 > Für den technischen Support für System Center Configuration Manager oder System Center Endpoint Protection ist entweder eine Zahlung erforderlich, oder der Betrag wird von Ihrer vorhandenen Lizenz oder Premier-Supportvereinbarungen abgezogen.
 
-## <a name="resolve-issues-without-opening-a-support-ticket"></a>Beheben von Problemen, ohne ein Supportticket zu öffnen
-
-Sie können Ihr Problem möglicherweise selbst lösen, ohne ein Supportticket öffnen zu müssen.
-
-Informationen zur Selbsthilfe für Intune finden Sie unter [Allgemeine Tipps für die Problembehandlung für Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) oder in einem der Themen zur Behandlung bestimmter Probleme. Sie können auch nach einer Lösung suchen oder Ihre Fragen im [Intune-Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod) posten.
-
 ## <a name="find-support-for-volume-licensing"></a>Anfordern von Support für Volumenlizenzierung
 Wenn Sie von Microsoft bereits Lizenzen im Rahmen eines Volumenlizenzprogramms erworben haben, erhalten Sie hier Support:
 
@@ -114,8 +137,18 @@ Wenn Sie von Microsoft bereits Lizenzen im Rahmen eines Volumenlizenzprogramms e
 
 -   Allgemeine Informationen zur Volumen-Lizenzierung finden Sie unter [Volume Licensing](http://go.microsoft.com/fwlink/p/?LinkID=282015).
 
+## <a name="definition-of-a-support-incident"></a>Definition eines Supportfalls
+
+Ein Supportfall ist ein einzelnes Supportproblem und die Arbeit, die benötigt wird, um dieses Problem zu beheben. Ein einzelnes Supportproblem kann nicht in untergeordnete Probleme aufgeteilt werden. Wenn Sie untergeordnete Probleme erkennen können, wird jedes untergeordnete Problem als einzelner Vorfall angesehen. Mehrere Kontakte und eine Offlinerecherche können erforderlich sein, um ein vorhandenes Problem zu beheben. Der Zeitaufwand für die Lösungsfindung ist unabhängig vom Betrag, der Ihnen in Rechnung gestellt wird.
+
+Ein Problemsupport ist in einem Abonnement von Microsoft Intune und Mobile Device Management für Office 365 enthalten. Deshalb entstehen für Sie durch weitere Supportfälle keine zusätzlichen Kosten.
+
+Wenn ein Supportmitarbeiter Sie bittet, weitere Supportfälle für weitere Probleme zu erstellen, macht dies die Arbeit für alle leichter. Vielen Dank für Ihr Verständnis und die Entscheidung, mit uns zusammenzuarbeiten, um eine erstklassige Supportleistung zu ermöglichen.
+
+Preise pro Vorfall und Schweregrade finden Sie unter [Professional Support-Optionen](https://support.microsoft.com/gp/offerprophone).
 
 
-<!--HONumber=Dec16_HO2-->
+
+<!--HONumber=Jan17_HO4-->
 
 

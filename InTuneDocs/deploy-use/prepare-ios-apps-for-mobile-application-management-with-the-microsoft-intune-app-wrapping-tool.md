@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
-ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
+ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
+ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 
 
 ---
@@ -107,6 +108,9 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 
   ![Wählen Sie das „In-House and Ad Hoc“-Zertifikat aus.](../media/app-wrapper/iOS-signing-cert-3.png)
 
+>[!NOTE]
+>Wenn Sie nicht planen, die App zu verteilen und sie nur intern testen möchten, können Sie ein iOS App-Entwicklungszertifikat anstelle eines Produktionszertifikats verwenden. Wenn Sie ein Entwicklungszertifikat verwenden, stellen Sie sicher, dass das mobile Bereitstellungsprofil auf Geräte verweist, auf denen die App installiert wird.
+
 7. Klicken Sie unten auf der Seite auf **Next**.
 
 8. Lesen Sie die Anweisungen zum Erstellen einer **Zertifikatsignieranforderung (Certificate Signing Request, CSR)** mithilfe der Anwendung „Schlüsselbundverwaltung“ auf Ihrem macOS-Computer.
@@ -131,11 +135,12 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 
 14. Doppelklicken Sie auf die Zertifikatsdatei, die Sie gerade heruntergeladen haben, um das Zertifikat einem Schlüsselbund hinzuzufügen.
 
-15. Öffnen Sie **Schlüsselbundverwaltung** erneut. Suchen Sie Ihr Zertifikat, indem Sie im Fenster „Schlüsselbundverwaltung“ rechts oben auf der Suchleiste nach **iPhone** suchen. Klicken Sie mit der rechten Maustaste auf das Element, um das Menü einzublenden, und klicken Sie auf **Informationen**.
+15. Öffnen Sie **Schlüsselbundverwaltung** erneut. Suchen Sie Ihr Zertifikat, indem Sie rechts oben in der Suchleiste nach ihrem Namen suchen. Klicken Sie mit der rechten Maustaste auf das Element, um das Menü einzublenden, und klicken Sie auf **Informationen**. In den Beispielbildschirmen verwenden wir ein Entwicklungszertifikat anstelle eines Produktionszertifikats.
+
 
   ![Hinzufügen Ihres Zertifikats zu einem Schlüsselbund](../media/app-wrapper/iOS-signing-cert-8.png)
 
-16. Ein Informationsfenster wird angezeigt. Scrollen Sie nach unten, und sehen Sie unter der Bezeichnung **Fingerabdrücke** nach. Kopieren Sie die **SHA1**-Zeichenfolge, die Sie als Parameter „-c“ für das App Wrapping Tool verwenden.
+16. Ein Informationsfenster wird angezeigt. Scrollen Sie nach unten, und sehen Sie unter der Bezeichnung **Fingerabdrücke** nach. Kopieren Sie die **SHA1**-Zeichenfolge (unscharf), die Sie als Parameter „-c“ für das App Wrapping Tool verwenden.
 
   ![Hinzufügen Ihres Zertifikats zu einem Schlüsselbund](../media/app-wrapper/iOS-signing-cert-9.png)
 
@@ -397,6 +402,6 @@ Verwenden Sie die folgenden bewährten Methoden zu Sicherheit und Datenschutz, w
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/09/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
 
 
 ---
@@ -25,9 +26,7 @@ ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-Intune bietet eine Vielzahl von integrierten allgemeinen Einstellungen, die Sie auf Android for Work-Geräten konfigurieren können.
+Intune bietet eine Vielzahl von integrierten allgemeinen Einstellungen, die Sie auf [Android for Work-Geräten](android-for-work.md) konfigurieren können.
 
 ## <a name="general-configuration-policy"></a>Allgemeine Konfigurationsrichtlinie
 
@@ -60,8 +59,6 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 |**Datenaustausch zwischen Arbeitsprofilen und persönlichen Profilen zulassen**|Lässt zu, dass Apps im Arbeitsprofil Daten mit Apps im persönlichen Profil des Benutzers austauschen. Wählen Sie aus:<br><br>- **Freigabe über Grenzen hinweg verhindern**<br>- **Apps im Arbeitsprofil können Freigabeanforderungen vom persönlichen Profil verarbeiten**<br>- **Keine Einschränkungen bei Freigabe**|
 |**Benachrichtigungen des Arbeitsprofils ausblenden, wenn das Gerät gesperrt ist**<br>(Android 6 und höher)|Legt fest, ob Benachrichtigungen aus dem Arbeitsprofil angezeigt werden, wenn das Gerät gesperrt ist.|
 |**Standardberechtigungsrichtlinie für Apps festlegen**<br>(Android 6 und höher)|Legt die Standardberechtigungsrichtlinie für alle Apps im Arbeitsprofil fest.|
-
-
 
 
 ## <a name="custom-policy-settings"></a>Benutzerdefinierte Richtlinieneinstellungen
@@ -97,6 +94,6 @@ Intune unterstützt zurzeit eine begrenzte Anzahl von benutzerdefinierten Androi
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

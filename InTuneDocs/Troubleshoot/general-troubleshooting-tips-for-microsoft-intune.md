@@ -1,11 +1,10 @@
 ---
-title: "Allgemeine Tipps für die Problembehandlung | Microsoft Intune"
+title: "Allgemeine Tipps für die Problembehandlung | Microsoft-Dokumentation"
 description: "Allgemeine Ressourcen zur Lösung von Problemen mit Intune"
 keywords: 
 author: staciebarker
-ms.author: staciebarker
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 12/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +12,19 @@ ms.technology:
 ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 266ee94f0c61a3f99824a0210ec6f7a205343b21
-ms.openlocfilehash: 93add0c558be2288cd4776f1976101c2eaa2a378
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: ef6c482a45a7c759cec1062b129d2644562d0da2
 
 
 ---
 
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Allgemeine Tipps für die Problembehandlung für Microsoft Intune
-Nach der Bereitstellung von Microsoft Intune können möglicherweise Probleme bei der Konfiguration oder mit Clients auftreten. Die unten aufgeführten Ressourcen können Ihnen dabei helfen, die Ursache des Problems zu ermitteln, damit Sie es beheben können.
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Nach der Bereitstellung von Microsoft Intune können möglicherweise Probleme bei der Konfiguration oder mit Clientgeräten auftreten. Die folgenden Ressourcen helfen Ihnen, die Ursache des Problems herauszufinden, sodass Sie es beheben können.
 
 > [!NOTE]
 > Um eine Supportanfrage zu erstellen oder eine vorhandene Anfrage anzuzeigen, [besuchen Sie das Office 365 Admin Center](https://portal.office.com/admin/default.aspx). Weitere Informationen zu Supportoptionen finden Sie unter [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
@@ -36,7 +39,7 @@ Nach der Bereitstellung von Microsoft Intune können möglicherweise Probleme be
 
 -   Welche Änderungen haben Sie an der Intune- oder Gerätekonfiguration vorgenommen?
 
--   Überlegen Sie, ob an der Umgebung, in der Sie arbeiten, andere Änderungen als Änderungen an der Konfiguration vorgenommen wurden.
+-   Wurden an der Umgebung, in der Sie arbeiten, andere Änderungen als Änderungen an der Konfiguration vorgenommen?
 
 -   Wie häufig tritt dieses Problem auf, und tritt es sporadisch oder dauerhaft auf?
 
@@ -46,25 +49,25 @@ Nach der Bereitstellung von Microsoft Intune können möglicherweise Probleme be
 
 ## <a name="collect-available-data"></a>Sammeln Sie verfügbare Daten
 
--   Geräteprotokolle. Weitere Informationen zum Sammeln von Geräteprotokollen finden Sie unter:
+-   In den folgenden Ressourcen wird erläutert, wie Sie Geräteprotokolle erfassen:
   - [Senden von Android-Diagnosedatenprotokollen an Ihren IT-Administrator über ein USB-Kabel](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Senden von Android-Diagnosedatenprotokollen an Ihren IT-Administrator per E-Mail](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [Senden von Android-Registrierungsfehlern an Ihren IT-Administrator](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
   - [Senden von iOS-Registrierungsfehlern an Ihren IT-Administrator](/intune/enduser/send-errors-to-your-it-admin-ios)
 
--   Verwaltungskonsolendaten: Bei Problemen mit der Richtlinienimplementierung sollten Sie z.B. die gewünschte Richtlinie und den Status dieser Richtlinie überprüfen, wie in [Erstellen von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) beschrieben.
+-   Bei Verwaltungskonsolendaten (z. B. bei Problemen mit der Richtlinienimplementierung) überprüfen Sie die gewünschte Richtlinie und den Status dieser Richtlinie, wie in [Erstellen von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) beschrieben.
 
 ## <a name="research-the-solution"></a>Recherchieren der Lösung
 
--   Suchen Sie im Internet nach einer Lösung. Wenn Sie z. B. den Fehler 0x80073CF0 erhalten, können Sie im Internet nach **Technet Intune 0x80073cf0** suchen, und finden den Artikel [Behandlung von Problemen mit der App-Bereitstellung in Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md), der Vorschläge zur Behebung dieses Problems enthält.
+-   Suchen Sie im Internet nach einer Lösung. Wenn Sie z. B. den Fehler 0x80073CF0 erhalten, suchen Sie im Internet nach **Technet Intune 0x80073cf0** und finden den Artikel [Behandlung von Problemen mit der App-Bereitstellung in Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md). Der Artikel enthält Vorschläge zur Behebung dieses Fehlers.
 
--   Sie können im [Intune TechNet-Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod) nach einer Antwort suchen.  Wenn das Problem noch nicht behandelt wurde, stellen Sie Ihre Fragen im Forum, um zu schauen, welche Lösungsvorschläge von der Community kommen.
+-   Suchen Sie im [Intune TechNet-Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod) nach einer Antwort.  Wenn das Problem noch nicht behandelt wurde, stellen Sie Ihre Fragen im Forum, um zu schauen, welche Lösungsvorschläge von der Community kommen.
 
--   Sie können eine Supportanfrage öffnen. Das Intune-Supportteam kann Sie bei der Problembehandlung besser unterstützen, wenn Sie das Problem definiert und die verfügbaren Daten erfasst haben.
+-   Öffnen Sie eine Supportanfrage. Das Intune-Supportteam kann Sie bei der Problembehandlung besser unterstützen, wenn Sie das Problem definiert und die verfügbaren Daten erfasst haben.
 
     Zum Erstellen einer Supportanfrage [besuchen Sie das Office 365 Admin Center](https://portal.office.com/admin/default.aspx). Weitere Informationen zu Supportoptionen finden Sie unter [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
-## <a name="community-resources"></a>Communityressourcen
+## <a name="find-community-resources"></a>Suchen von Communityressourcen
 Weitere hilfreiche Informationen finden Sie in diesen Communityressourcen:
 
 -   Der [Microsoft Intune Survival Guide](http://social.technet.microsoft.com/wiki/contents/articles/23431.microsoft-intune-survival-guide.aspx) enthält Links zu vielen Ressourcen, die Sie beim Konfigurieren, Verwalten und beim Beheben von Problemen mit Intune unterstützen können.
@@ -76,7 +79,7 @@ Weitere hilfreiche Informationen finden Sie in diesen Communityressourcen:
 -   [Intune-Foren](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="next-steps"></a>Nächste Schritte
-Die unten aufgeführten Themen sind Hilfe zur Problembehandlung für bestimmte Probleme. Wenn diese Informationen für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
+Die folgenden Themen enthalten Hilfe zur Behandlung bestimmter Probleme. Wenn diese Informationen für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
 
 [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
 
@@ -94,6 +97,6 @@ Die unten aufgeführten Themen sind Hilfe zur Problembehandlung für bestimmte P
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

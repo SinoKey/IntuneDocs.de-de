@@ -1,11 +1,11 @@
 ---
-title: "Beschränken des Zugriffs auf Skype for Business Online | Microsoft-Dokumentation"
+title: "Schützen von Skype for Business Online | Microsoft-Dokumentation"
 description: "Schützen und steuern Sie den Zugriff auf Skype for Business Online unter Verwendung von bedingtem Zugriff."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,23 @@ ms.technology:
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 23199b84ca1acf202442e096c637f0dbad53f3e0
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
 
 
 ---
 
-# <a name="restrict-access-to-skype-for-business-online-with-microsoft-intune"></a>Beschränken des Zugriffs auf Skype for Business Online mit Microsoft Intune
+# <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Schützen des Zugriffs auf Skype for Business Online mit Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Sie können die Richtlinie für bedingten Zugriff für **Skype for Business Online** zum Steuern des Zugriffs auf Skype for Business Online verwenden.
 Der bedingte Zugriff besteht aus zwei Komponenten:
 - Einer Gerätekompatibilitätsrichtlinie, die das Gerät erfüllen muss, um als kompatibel bewertet zu werden
 - Einer Richtlinie für bedingten Zugriff, in der Sie die Bedingungen festlegen, die das Gerät erfüllen muss, damit Sie auf den Dienst zugreifen können
-Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Protect access to email and O365 services (Schützen des Zugriffs auf E-Mail- und Office&365;-Dienste)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 Wenn ein Benutzer, für den der bedingte Zugriff gilt, versucht, Skype for Business Online auf seinem Gerät zu verwenden, erfolgt folgende Auswertung:
 
@@ -117,6 +121,6 @@ Wählen Sie eine beliebige Gruppe von Mobilgeräten aus. Wählen Sie dann auf de
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -5,41 +5,43 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: c539af3b4ac901029faeaa4947491eec8ff0c378
+ms.sourcegitcommit: f413846b6f302502c31ca7b4178ebca4d1e0350e
+ms.openlocfilehash: 8d5165465e0e99462cefaae9494481d618acc80f
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-
 # <a name="rename-your-device-from-the-company-portal-website"></a>Umbenennen Ihres Geräts über die Unternehmensportalwebsite
 
-Wenn Sie Ihr Gerät umbenennen möchten, können Sie dies remote über die [Unternehmensportalwebsite](http://portal.manage.microsoft.com) tun. Die Unternehmensportalwebsite ist eine Website, auf der Sie Computer und Geräte verwalten können, die Sie bei Intune registriert haben. Hier können Sie die meisten der Aufgaben ausführen, die auch über Ihre Unternehmensportal-App zur Verfügung stehen.
+Vielleicht entscheiden Sie sich dafür, Ihr Gerät umzubenennen, damit es einfacher identifiziert werden kann. Dies können Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) tun. Die Unternehmensportal-Website ist eine Website, die Sie verwenden können, um Computer und Geräte zu verwalten, die Sie mit Ihrer IT-Abteilung registriert haben.
 
 So benennen Sie Ihr Gerät um:
 
-1.  Öffnen Sie die [Unternehmensportalwebsite](http://portal.manage.microsoft.com), und tippen Sie auf das Gerät, das Sie zurücksetzen möchten.
+1.    Tippen Sie auf der [Unternehmensportalwebsite](http://portal.manage.microsoft.com) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
 
-2.  Tippen Sie auf **Umbenennen**.
+2. Wählen Sie auf der Seite __Meine Geräte__ den Namen des Geräts aus, das Sie umbenennen möchten.
 
-    ![rename-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+  ![Ein Screenshot der Seite „Meine Geräte“ mit mehreren nicht identifizierten Geräten oberhalb der Banneraufforderung, nicht aufgelistete Geräte zu registrieren oder nicht identifizierte Geräte zu identifizieren.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Geben Sie in dem Feld, das den aktuellen Gerätenamen enthält, den neuen Namen für Ihr Gerät ein, und tippen Sie auf die Schaltfläche **Umbenennen**. Das Gerät wird jetzt mit dem neuen Namen angezeigt.
+3.    Das Gerät wird in einem Popupfenster geöffnet. Tippen Sie auf die Schaltfläche **Umbenennen**.
+
+    ![Alle Optionen für ein ausgewähltes Gerät auf der Unternehmensportalwebsite, darunter „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/iwp-screen-with-all-options.png)
+
+4.  Geben Sie in dem Feld, das den Gerätenamen enthält, einen neuen Namen für Ihr Gerät ein, und tippen Sie auf die Schaltfläche **Umbenennen**. Das Gerät wird jetzt mit dem neuen Namen angezeigt.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

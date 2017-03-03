@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 8131d130e843db37e99b05ab17cd1b8ba23c7c57
+ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
+ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
 
 
 ---
@@ -117,10 +118,14 @@ Beim **selektiven Zurücksetzen** werden die Unternehmensdaten und bei Bedarf au
 |Einstellungen für WLAN- und VPN-Profil|Entfernt.|Entfernt.|
 |Zertifikatprofil-Einstellungen|Zertifikate gesperrt, aber nicht entfernt.|Zertifikate wurden entfernt und gesperrt.|
 |Verwaltungs-Agent|Die Berechtigung „Geräteadministrator“ wird gesperrt.|Die Berechtigung „Geräteadministrator“ wird gesperrt.|
-|E-Mail|E-Mails, die über die Microsoft Outlook-App für Android empfangen wurden, werden entfernt.|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|
-|Outlook|E-Mails, die über die Microsoft Outlook-App für iOS empfangen wurden, werden entfernt.</br>Ausnahme: Wenn Exchange lokal gehostet wird, werden E-Mails nicht entfernt.|E-Mails, die über die Microsoft Outlook-App für iOS empfangen wurden, werden entfernt.</br>Ausnahme: Wenn Exchange lokal gehostet wird, werden E-Mails nicht entfernt.|
+|E-Mail|– Siehe das Outlook-Element.|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|
+|Outlook|Von der Microsoft Outlook-App für Android empfangene E-Mail werden entfernt, allerdings nur, wenn Outlook durch MAM-Richtlinien geschützt wird. Andernfalls wird Outlook bei der Aufhebung der Registrierung nicht zurückgesetzt.</br>Ausnahme: Wenn Exchange lokal gehostet wird, werden E-Mails nicht entfernt.|Von der Microsoft Outlook-App für Android empfangene E-Mail werden entfernt, allerdings nur, wenn Outlook durch MAM-Richtlinien geschützt wird. Andernfalls wird Outlook bei der Aufhebung der Registrierung nicht zurückgesetzt.</br>Ausnahme: Wenn Exchange lokal gehostet wird, werden E-Mails nicht entfernt.|
 |Azure Active Directory (AAD)-Verbindung aufgehoben|AAD-Datensatz wird entfernt.|AAD-Datensatz wird entfernt.|
 |Kontakte | Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.|Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.
+
+**Android for Work**
+
+Das selektive Zurücksetzen auf Android for Work-Geräten entfernt alle Daten, Apps und Einstellungen im Arbeitsprofil auf diesem Gerät. Dies koppelt das Gerät von der Intuneverwaltung ab. Das vollständigen Zurücksetzen wird für Android for Work nicht unterstützt.
 
 **Windows**
 
@@ -168,6 +173,6 @@ Dieser Bericht zeigt auch, welcher Benutzer die Aktion ausgeführt hat.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 
