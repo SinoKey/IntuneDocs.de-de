@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 4b5f0129d6824a51c36662a1cc7ef4e8a2de9e20
-ms.openlocfilehash: 0c594c7a22a86ab576c9bdb191ed02f13cdcc19c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 57a067684ccada3df4faa15e6bf009b39caf5c94
+ms.openlocfilehash: 598ecac4aafaff5715e311dcfc058c1d2661bd3e
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -40,7 +40,8 @@ Mit Intune können Sie Ihre Arbeit auf verschiedene Weise erleichtern. Dies ist 
 
 - [Verwenden verwalteter Apps auf Ihrem Gerät](use-managed-apps-on-your-device-ios.md)
 - [Festlegen oder Ändern der Kennung](set-or-change-your-passcode-ios.md)
-- [Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Geräts](reset-erase-your-lost-or-stolen-device-ios.md)
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
+- [Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Geräts](reset-erase-your-device-cpwebsite.md)
 - [Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft](turn-off-microsoft-usage-data-collection-ios.md)
 - [Aufheben der Registrierung Ihres Geräts in Intune](unenroll-your-device-from-intune-ios.md)
 - [Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
