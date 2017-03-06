@@ -4,7 +4,7 @@ description: "Verwenden Sie den Apple Configurator, um unternehmenseigene iOS-Ge
 keywords: 
 author: staciebarker
 ms.author: stabar
-manager: arob98
+manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -91,9 +92,4 @@ Wenn Sie iOS-Geräte direkt registrieren, können Sie ein Gerät registrieren, o
 9.  Öffnen Sie auf dem iOS-Gerät **Einstellungen**, und wechseln Sie zu **Allgemein** &gt; **Geräteverwaltung** &gt; **Management Profile** (Verwaltungsprofil). Vergewissern Sie sich, dass die Profilinstallation aufgelistet ist, und überprüfen Sie die iOS-Richtlinieneinschränkungen und die installierten Apps. Es kann bis zu 10 Minuten dauern, bis Richtlinieneinschränkungen und Apps auf dem Gerät angezeigt werden.
 
 10.  Verteilen von Geräten. Das iOS-Gerät ist jetzt bei Intune registriert und wird verwaltet.
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 
