@@ -45,7 +45,7 @@
 ## [Zusätzliche Ressourcen](plan-design/additional-resources.md)
 
 # [Neuerungen](whats-new/whats-new-in-microsoft-intune.md)
-## [Was gibt es Neues auf der App-Benutzeroberfläche](whats-new/whats-new-in-intune-app-ui.md)?
+## [Was gibt es Neues auf der App-Benutzeroberfläche](whats-new/whats-new-in-intune-app-ui.md)
 ## [Neuigkeiten in der Azure-Vorschau](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Neuheiten – Archiv](whats-new/whats-new-archive.md)
 
