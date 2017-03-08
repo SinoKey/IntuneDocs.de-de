@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
+ms.custom: intune-classic EXPIERIMENT
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 0b368ad490672c3d554dcb004e07b883e4851ee1
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -36,9 +38,4 @@ Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmet
 - **Geräte von Benutzern** – „BYOD“-Registrierung (Bring Your Own Device) – Benutzer können die Intune-Unternehmensportal-App auf ihrem Gerät installieren und dieses dann registrieren, um Zugriff auf Unternehmensressourcen wie E-Mail, Unternehmens-Apps, Unternehmensdaten und Support zu erhalten.  
 
 - **Dem Unternehmen gehörende Geräte** – Für die Registrierung von dem Unternehmen gehörenden Geräten (Company-Owned Device, COD) gibt es eine Vielzahl von Möglichkeiten, je nach den Anforderungen der Organisation und den Typen der zu verwaltenden Geräte.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
