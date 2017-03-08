@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
 ms.openlocfilehash: ad18e2bdfe8a045077a1c91abfcc123afec72cb9
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -88,9 +89,4 @@ Registrieren Sie Ihr Gerät:
 Wenn Ihr IT-Administrator das Unternehmensportal so eingerichtet hat, dass es während der Anmeldung installiert wird, wird das Unternehmensportal in Ihrer App-Liste angezeigt.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

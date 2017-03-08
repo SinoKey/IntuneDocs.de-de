@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 6da5f6a3b017a93446011f8d59e73a4ea7730196
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -65,9 +66,4 @@ Es folgen einige Beispiele für Optionen, die Ihr IT-Administrator in einer App 
 
 
 Wenden Sie sich an Ihren IT-Administrator, um weitere Informationen zu den verwalteten Anwendungen auf Ihrem Gerät zu erhalten. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

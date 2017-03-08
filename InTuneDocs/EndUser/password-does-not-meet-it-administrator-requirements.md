@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: c5c857b46c13aee790ab5f780a59d9cd51029cd2
 ms.openlocfilehash: a2af33a5b274b01f6651c76bd0b0038dc74b785f
+ms.lasthandoff: 02/10/2017
 
 
 ---
@@ -49,9 +50,4 @@ Beschreibungen der PIN- bzw. Kennwortprobleme:
 - **Das Kennwort ist nicht komplex genug, um Anforderungen zu erfüllen**. Ihr IT-Administrator verlangt, dass Sie komplexere Zeichen in Ihrem Kennwort verwenden. Versuchen Sie es mit Zeichen wie Zahlen, Großbuchstaben und Symbolen wie $, % und #. Dies kann auch für andere Konten auf Ihrem Gerät gelten, überprüfen Sie also alle anderen Arbeitskonten, um sicherzustellen, dass Ihr Kennwort den Anforderungen entspricht, die von der IT für Ihr Gerät festgelegt wurden.
 
 Wenn Sie Probleme haben herauszufinden, wie Ihr Kennwort diese Anforderungen erfüllt, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

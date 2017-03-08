@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
 ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,9 +37,4 @@ Wenn Sie Ihr Windows-Gerät mithilfe der Unternehmensportal-App oder [Unternehme
 |PCs und Laptops|**Windows 8.1 und Windows 8**<br />Ein Computer mit dem Betriebssystem Windows 8 oder Windows 8.1 kann nicht zurückgesetzt werden, sofern er nicht nur zum Abrufen von E-Mails verwendet wird.<br /><br />**Windows 7 oder Windows Vista**<br />Ein Computer mit dem Betriebssystem Windows 7 oder älter kann nicht zurückgesetzt werden.|
 
 Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

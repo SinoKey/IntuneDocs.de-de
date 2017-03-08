@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e6c4fedc-47b6-44b1-8c59-2fb81417f978
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: 613bbe5da9a7f9dcbcb1af1a0b1c00b7aaa88efe
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -33,9 +34,4 @@ Die Seriennummer für Ihr Gerät identifiziert dieses eindeutig und kann Ihrem I
 3. Tippen Sie auf __Geräteinformationen__, und scrollen Sie zu __Seriennummer__.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

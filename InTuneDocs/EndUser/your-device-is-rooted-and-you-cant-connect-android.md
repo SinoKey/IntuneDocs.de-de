@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bebc6cb1d44e99f8337a057eadfae676904ea3d
 ms.openlocfilehash: 27b57f7f8723a1271442b4ed18e219660959b0a8
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -37,9 +38,4 @@ Es gibt ein paar gängige Methoden, wie die Nutzungsbeschränkungen möglicherwe
 - Der Hersteller des Geräts hat Software auf Ihrem Gerät installiert, die die Rooterkennungssoftware als Sicherheitsrisiko einstuft. Bitten Sie in diesem Fall Ihren IT-Administrator um Unterstützung. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 
 Wenn Sie selbst die Nutzungsbeschränkungen von Ihrem Gerät entfernt haben, müssen Sie den Vorgang rückgängig machen und das Gerät wieder in den nicht manipulierten Zustand zurückversetzen.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
