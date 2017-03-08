@@ -20,10 +20,10 @@ ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: f80c6e7089519860e822f974753ac9dc0356e055
+ms.lasthandoff: 01/24/2017
 
 
 ---
-
 
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Android-Gerät bei Intune registrieren?
 
@@ -60,9 +60,4 @@ Nachdem das Gerät zum Unternehmensportal hinzugefügt wurde, erfolgt im Interva
 -   Senden aller Unternehmens-App-Inventaraktualisierungen. (Diese Updates verfügen über keine privaten Informationen.)
 
 Benötigen Sie Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das [Microsoft Android-Team](mailto:wintunedroidfbk@microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
