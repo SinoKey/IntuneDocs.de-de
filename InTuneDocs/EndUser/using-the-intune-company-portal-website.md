@@ -11,11 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1314fad0c387224302a4c2b67c913f9d2ec6c5d4
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
+ms.lasthandoff: 01/05/2017
 
 
 ---
@@ -35,7 +40,7 @@ Benutzer können folgende Aufgaben auf der Unternehmensportal-Website ausführen
 
 -   [Remotesperren eines Geräts](remote-lock-your-device-cpwebsite.md)
 
--   [Manuelles Synchronisieren Ihres Geräts, um langsame App-Installationen zu beschleunigen](sync-your-device-manually-cpwebsite.md)
+-    [Manuelles Synchronisieren Ihres Geräts, um langsame App-Installationen zu beschleunigen](sync-your-device-manually-cpwebsite.md)
 
 -   Suchen der Kontaktinformationen des IT-Administrators, wenn diese konfiguriert sind
 
@@ -46,11 +51,6 @@ Benutzer können folgende Aufgaben auf der Unternehmensportal-Website ausführen
 Die Aufgaben, die Endbenutzer auf der **Unternehmensportal-Website** und in der auf dem Gerät installierten **Unternehmensportal-App** ausführen können, sind nahezu deckungsgleich. Auf den folgenden Seiten finden Sie Links zu allen Aufgaben, die Endbenutzer auf ihren Geräten durchführen können:
 
 - [Verwenden Ihres Android-Geräts mit Intune](using-your-android-device-with-intune.md)
-- [Verwenden Ihres iOS- oder Mac OS-Geräts mit Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Verwenden Ihres iOS- oder Mac OS-Geräts mit Intune](using-your-ios-or-macOS-device-with-intune.md)
 - [Verwenden Ihres Windows-Geräts mit Intune](using-your-windows-device-with-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
