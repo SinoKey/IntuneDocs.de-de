@@ -2,8 +2,8 @@
 title: Verwalten von PCs mit Clientsoftware | Microsoft-Dokumentation
 description: Verwalten Sie Windows-PCs durch die Installation der Intune-Clientsoftware.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/09/2017
 ms.topic: article

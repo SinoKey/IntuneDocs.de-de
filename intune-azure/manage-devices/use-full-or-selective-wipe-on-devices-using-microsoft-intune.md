@@ -3,8 +3,8 @@ title: "Vollständiges oder selektives Zurücksetzen von Geräten mit Intune"
 titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie eine selektive Zurücksetzung von Unternehmensdaten auf einem Gerät oder eine vollständige Zurücksetzung des Geräts auf Werkseinstellungen durchführen."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article

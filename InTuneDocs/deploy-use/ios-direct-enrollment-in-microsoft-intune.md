@@ -2,8 +2,8 @@
 title: "Direkte Registrierung für iOS-Geräte | Microsoft-Dokumentation"
 description: "Verwenden Sie den Apple Configurator, um unternehmenseigene iOS-Geräte direkt mit einer vordefinierten Richtlinie zu registrieren, indem Sie sie über USB an einen Mac-Computer anschließen."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article

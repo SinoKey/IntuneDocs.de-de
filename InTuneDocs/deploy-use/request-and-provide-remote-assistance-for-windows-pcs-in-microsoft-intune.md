@@ -2,8 +2,8 @@
 title: "Anfordern und Bereitstellen von Remoteunterstützung für Windows-PCs | Microsoft-Dokumentation"
 description: "Beschreibt Schritte für Endbenutzer und IT-Administratoren zur Bereitstellung von Remoteunterstützung für Windows-Desktops, die als PCs verwaltet werden, und zum Remotestarten eines PCs."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 628875c2f874c824761befd9886d7f7987c045df
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -85,8 +86,3 @@ Wenn Sie Ihre Benutzer bei Problemen unterstützen, müssen Sie deren PC möglic
 ### <a name="see-also"></a>Weitere Informationen:
 
 [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Intune-Softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-<!--HONumber=Dec16_HO3-->
-
-

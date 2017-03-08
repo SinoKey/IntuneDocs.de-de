@@ -2,7 +2,8 @@
 title: "Einrichten der Windows 10 Mobile- und Windows Phone-Verwaltung | Microsoft-Dokumentation"
 description: "Aktivieren Sie die Verwaltung mobiler Geräte (Mobile Device Management, MDM) für Windows 10 Mobile- oder Windows Phone-Geräte mit Microsoft Intune."
 keywords: 
-author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/08/2017
 ms.topic: article

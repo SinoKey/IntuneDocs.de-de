@@ -2,8 +2,8 @@
 title: Anfordern von Support | Microsoft-Dokumentation
 description: "Der Support ist für kostenpflichtige Abonnements und für Testabonnements online und telefonisch verfügbar."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/27/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
 ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
+ms.lasthandoff: 01/28/2017
 
 
 ---
@@ -146,9 +147,4 @@ Ein Problemsupport ist in einem Abonnement von Microsoft Intune und Mobile Devic
 Wenn ein Supportmitarbeiter Sie bittet, weitere Supportfälle für weitere Probleme zu erstellen, macht dies die Arbeit für alle leichter. Vielen Dank für Ihr Verständnis und die Entscheidung, mit uns zusammenzuarbeiten, um eine erstklassige Supportleistung zu ermöglichen.
 
 Preise pro Vorfall und Schweregrade finden Sie unter [Professional Support-Optionen](https://support.microsoft.com/gp/offerprophone).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

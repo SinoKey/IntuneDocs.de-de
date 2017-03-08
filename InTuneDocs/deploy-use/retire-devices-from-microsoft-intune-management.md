@@ -2,8 +2,8 @@
 title: "Außerbetriebnahme von Geräten | Microsoft-Dokumentation"
 description: "Intune unterstützt sowohl die selektive als auch die vollständige Zurücksetzung, um das Gerät aus der Intune-Verwaltung zu entfernen, indem die Richtlinie und das Unternehmensportal entfernt werden."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
 ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -77,9 +78,4 @@ Manchmal ist es das Gerät selbst, das das Ende seines Lebenszyklus erreicht hat
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Schützen von Daten durch vollständiges oder selektives Zurücksetzen](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

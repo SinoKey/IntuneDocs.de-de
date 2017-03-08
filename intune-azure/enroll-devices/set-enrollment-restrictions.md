@@ -3,8 +3,8 @@ title: "Festlegen von Registrierungseinschränkungen in Intune"
 titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Einschränken der Registrierung nach Plattform und Festlegen eines Grenzwerts für die Geräteregistrierung in Intune "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

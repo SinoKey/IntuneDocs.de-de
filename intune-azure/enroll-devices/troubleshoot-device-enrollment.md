@@ -3,8 +3,8 @@ title: "Behandlung von Problemen bei der Geräteregistrierung"
 titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie Probleme bei der Registrierung von Geräten behandeln."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

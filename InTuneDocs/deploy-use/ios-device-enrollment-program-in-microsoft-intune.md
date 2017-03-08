@@ -2,8 +2,8 @@
 title: "Apple-DEP-Verwaltung für iOS-Geräte | Microsoft-Dokumentation"
 description: "Stellen Sie ein Registrierungsprofil bereit, das über das iOS-Programm zur Geräteregistrierung (Device Enrollment Program, DEP) erworbene iOS-Geräte drahtlos registriert, damit Sie Apple-Geräte verwalten können."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

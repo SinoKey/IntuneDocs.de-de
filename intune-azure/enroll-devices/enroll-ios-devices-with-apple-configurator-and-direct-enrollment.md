@@ -3,8 +3,8 @@ title: "Registrieren von iOS-Geräten mithilfe von Apple Configurator und direkt
 titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie unternehmenseigene iOS-Geräte mit Apple Configurator und der direkten Registrierung registrieren."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

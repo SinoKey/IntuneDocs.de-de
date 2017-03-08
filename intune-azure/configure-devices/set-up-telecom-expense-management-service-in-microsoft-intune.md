@@ -3,8 +3,8 @@ title: Einrichten eines TEM-Diensts (Telecom Expense Management)
 titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Konfigurieren Sie den Saaswedo-TEM-Dienst für die Integration mit Intune."
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article
