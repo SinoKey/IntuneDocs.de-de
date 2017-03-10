@@ -43,7 +43,6 @@ Mit Intune können Sie Ihre Arbeit auf verschiedene Weise erleichtern. Dies ist 
 - [Festlegen von PIN oder Kennwort](set-your-pin-or-password-android.md)
 - [Installieren des virtuellen privaten Netzwerks (VPN) Ihres Unternehmens.](install-your-companys-virtual-private-network-VPN-android.md)
 - [Festlegen des Zeitraums, bevor das Gerät gesperrt wird](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Geräts](reset-erase-your-device-cpwebsite.md)
 - [Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft](turn-off-microsoft-usage-data-collection-android.md)
 - [Aufheben der Registrierung Ihres Geräts in Intune](unenroll-your-device-from-intune-android.md)
