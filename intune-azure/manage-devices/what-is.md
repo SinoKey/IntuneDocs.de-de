@@ -1,5 +1,6 @@
 ---
-title: "Verwalten von Geräten mit Intune | Intune in Azure (Vorschau) | Microsoft Docs"
+title: "Verwalten von Geräten mit Intune"
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie die mit Intune verwalteten Geräte anzeigen und mit diesen verschiedene Aktionen durchführen."
 keywords: 
 author: robstackmsft
@@ -12,10 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 5ed437eca48375def0e4da9715693325845f53a9
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: d5d7b87f58604b93ba3b65d5d264a0a5e3743d45
+ms.lasthandoff: 02/18/2017
 
 
 ---

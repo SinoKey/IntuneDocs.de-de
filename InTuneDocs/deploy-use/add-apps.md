@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
-ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
+ms.sourcegitcommit: 0945fb2f67c6cc49ca8d10bb5c24f3c4a5f9b2c5
+ms.openlocfilehash: c65dc8ec22f717c5dcce51bb3c45d65bad8d8bde
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -33,7 +34,7 @@ Nehmen Sie sich vor der Bereitstellung von Apps mit Microsoft Intune etwas Zeit,
 
 |App-Typ|Details|
 |----------------|-------|
-|**Windows Installer (&#42;.exe, &#42;.msi)**|Diese Art von App muss die automatische Installation ohne Benutzereingabe unterstützen. Die Dokumentation Ihrer App sollte die relevanten Befehlszeilenoptionen einbeziehen, die für die automatische Installation der App erforderlich sind (z. B. **/q**). Eine Liste der gebräuchlichsten Befehlszeilenschalter finden Sie unter [Befehlszeilenschalter für Microsoft Windows Installer](https://support.microsoft.com/en-us/kb/227091).<br><br>Alle zusätzlichen Dateien und Ordner, die für das Setupprogramm der App erforderlich sind, müssen an dem für die Setupdateien angegebenen Speicherort verfügbar sein.<br><br>In den meisten Fällen müssen bei Windows Installer-Dateien (MSI) und Windows Installer Patch-Dateien (MSP-Dateien) von Intune keine Befehlszeilenargumente installiert werden. Überprüfen Sie die Dokumentation Ihrer App.<br><br>Sind Befehlszeilenargumente erforderlich, müssen sie in "Name=Wert"-Paaren (z. B. TRANSFORMS=custom_transform.mst) eingegeben werden.|
+|**Windows Installer (&#42;.exe, &#42;.msi)**|Diese Art von App muss die automatische Installation ohne Benutzereingabe unterstützen. Die Dokumentation Ihrer App sollte die relevanten Befehlszeilenoptionen einbeziehen, die für die automatische Installation der App erforderlich sind (z. B. **/q**). Eine Liste der gebräuchlichsten Befehlszeilenschalter finden Sie unter [Befehlszeilenschalter für Microsoft Windows Installer](https://support.microsoft.com/en-us/kb/227091).<br><br>Alle zusätzlichen Dateien und Ordner, die für das Setupprogramm der App erforderlich sind, müssen an dem für die Setupdateien angegebenen Speicherort verfügbar sein.<br><br>In den meisten Fällen müssen bei Windows Installer-Dateien (MSI) und Windows Installer Patch-Dateien (MSP-Dateien) von Intune keine Befehlszeilenargumente installiert werden. Überprüfen Sie die Dokumentation Ihrer App.<br><br>Sind Befehlszeilenargumente erforderlich, müssen sie in "Name=Wert"-Paaren (z. B. TRANSFORMS=custom_transform.mst) eingegeben werden.<br><br>Dieser App-Typ gilt nur für PCs, die den Intune-Softwareclient ausführen.|
 |**App Package für Android (&#42;.apk)**|Zum Bereitstellen von Android-Apps müssen Sie über ein gültiges APK-Paket verfügen.|
 |**App Package für iOS (&#42;.ipa)**|Zum Bereitstellen von iOS-Apps müssen Sie über ein gültiges IPA-Paket verfügen.<br><br>Das IPA-Paket muss von Apple signiert sein, und das im Bereitstellungsprofil angegebene Ablaufdatum darf noch nicht erreicht sein. Intune kann iOS-Anwendungen mit Unternehmenszertifikat verteilen.<br><br>Es werden nicht alle Apps mit Entwicklerzertifikat von Apple unterstützt.<br><br>Ihr Unternehmen muss für das iOS Developer Enterprise Program registriert sein.<br><br>Stellen Sie sicher, dass der Zugriff auf die iOS-Bereitstellungs- und -Zertifizierungswebsites durch die Firewall Ihrer Organisation zugelassen wird.<br><br>Sie müssen keine Manifestdatei (PLIST) mit der App bereitstellen.|
 |**Windows Phone-App-Paket (&#42;.xap, &#42;.appx, &#42;.appxbundle)**|Sie benötigen ein codesigniertes Zertifikat für mobile Geräte, um Apps bereitstellen zu können. Weitere Informationen finden Sie unter [Einrichten der Windows Phone-Verwaltung mit Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).|
@@ -94,9 +95,4 @@ Auf diese Weise werden beim Hochladen der App nach Intune alle Dateien im Ordner
 ## <a name="next-steps"></a>Nächste Schritte
 
 Sie müssen Apps in der Intune-Konsole hinzufügen, bevor Sie sie bereitstellen können. Sie können Apps für [registrierte Geräte](add-apps-for-mobile-devices-in-microsoft-intune.md) oder für [Windows-PCs hinzufügen, die Sie mit der Intune-Clientsoftware verwalten](add-apps-for-windows-pcs-in-microsoft-intune.md).
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

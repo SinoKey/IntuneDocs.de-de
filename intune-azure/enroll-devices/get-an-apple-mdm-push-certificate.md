@@ -1,9 +1,10 @@
 ---
-title: Abrufen eines Apple-MDM-Push-Zertifikats | Intune in Azure (Vorschau) | Microsoft Docs
+title: Abrufen eines Apple-MDM-Push-Zertifikats
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Lernen Sie die Schritte zum Abrufen eines Apple-MDM-Push-Zertifikats zum Verwalten von iOS-Geräten mit Intune."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: a6ac1074055892f5ec42fb4057e47e9349fb5a33
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 26991bd0c7632d04b75ecbec023d96c1045f337a
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -27,7 +29,7 @@ ms.lasthandoff: 02/15/2017
 
 Intune ermöglicht die Verwaltung mobiler Geräte (mobile device management, MDM) wie iPads, iPhones und Mac OS X-Geräte und ermöglicht Benutzern den Zugriff auf Unternehmens-E-Mails und -Apps. Zum Verwalten von iOS- und Mac-Geräten benötigen Sie ein APNS-Zertifikat (Apple Push Notification Service). Sobald Sie das Zertifikat in Intune hinzufügen, können Ihre Benutzer die Unternehmensportal-App zur Registrierung ihrer Geräte installieren, oder Sie können die Verwaltung von firmeneigenen iOS-Geräten einrichten.
 
-**So rufen Sie das MDM-Push-Zertifikat ab**<br>
+## <a name="steps-to-get-your-certificate"></a>Erforderliche Schritte, um Ihr Zertifikat abzurufen
 Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** > **Apple-MDM-Push-Zertifikat** aus, und befolgen Sie die nachstehend dargestellten nummerierten Schritte im Azure-Portal.
 
 **Schritt 1: Laden Sie die erforderliche Anforderung zur Signierung eines Intune-Zertifikats herunter, um ein Apple-MDM-Push-Zertifikat erstellen zu können.**<br>

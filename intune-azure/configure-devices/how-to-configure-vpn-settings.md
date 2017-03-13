@@ -1,5 +1,6 @@
 ---
-title: Konfigurieren von Intune-VPN-Einstellungen | Intune in Azure (Vorschau) | Microsoft Docs
+title: So konfigurieren Sie Intune-VPN-Einstellungen
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie mit Intune VPN-Einstellungen auf Geräten, die Sie verwalten, konfigurieren."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: ff05d9ed7bae2742de8dbbe908f2c92d2459a7f4
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 2d93edb688dbf296137a133f0b7ae065fc1cc89d
+ms.lasthandoff: 02/18/2017
 
 
 ---

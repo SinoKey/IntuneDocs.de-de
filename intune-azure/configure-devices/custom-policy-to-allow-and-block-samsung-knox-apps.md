@@ -1,5 +1,6 @@
 ---
-title: "Intune-Richtlinie für das Zulassen/Blockieren von Apps für Samsung KNOX | Intune in Azure (Vorschau) | Microsoft Docs"
+title: "Intune-Richtlinie zum Zulassen/Blockieren von Apps für Samsung KNOX"
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erstellen eines benutzerdefinierten Profils zum Zulassen und Blockieren von Apps für Samsung KNOX Standard-Geräte"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: f5267d2e06f1cd7ec471fd1782bfd965843d1c7e
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: f7680666ca466bd37711eeb363fe2c1f9d52e371
+ms.lasthandoff: 02/18/2017
 
 
 

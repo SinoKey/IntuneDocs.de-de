@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
+ms.sourcegitcommit: 7ac6041fb33f95e5b0c53b81c2af9aef42767a38
+ms.openlocfilehash: 115a27512930fa995a2781afc8a94c1d7f97958e
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -159,9 +160,4 @@ So aktivieren Sie die ausführliche Protokollierung
 
 ### <a name="next-steps"></a>Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

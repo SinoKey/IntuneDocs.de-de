@@ -1,5 +1,6 @@
 ---
-title: "Intune-E-Mail-Einstellungen für Windows Phone 8.1 | Intune in Azure (Vorschau) | Microsoft Docs"
+title: "Intune-E-Mail-Einstellungen für Windows Phone 8.1"
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie etwas über die Intune-Einstellungen, die Sie zum Konfigurieren von E-Mail-Verbindungen auf Windows Phone 8.1-Geräten verwenden können."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 352d6bd9-ec8c-439e-be3a-ad3daf307df2
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: ba745c2cefb159619b105d5b623849ba2766e8c8
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: c656f46c9dd19ffbefb499220c102c3471ff9c56
+ms.lasthandoff: 02/18/2017
 
 
 ---

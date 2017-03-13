@@ -1,5 +1,6 @@
 ---
-title: Konfigurieren von Windows 10-Editionsupgrades mit Intune | Intune in Azure (Vorschau) | Microsoft Docs
+title: Konfigurieren von Windows 10-Editionsupgrades mit Intune
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie mit Intune Windows 10-Geräte, die Sie verwalten, upgraden."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 49da713cfe61ce21501e0a8e0f6e0c225b2bc291
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 5edcdf20d07c63a33707c31134af8adf22049929
+ms.lasthandoff: 02/18/2017
 
 
 ---

@@ -1,5 +1,6 @@
 ---
-title: "VPN-Profil pro App für Android – Pulse Secure | Intune in Azure (Vorschau) | Microsoft Docs"
+title: "App-bezogenes VPN-Profile für Android – Pulse Secure"
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie ein VPN-Profil pro App für Android-Geräte erstellen, die von Intune verwaltet werden."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: aeed271699656addce8f2bd8cde2a69ab8ede8f9
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 0cf638348df2f01d70c0765a4932abc3eb801f23
+ms.lasthandoff: 02/18/2017
 
 
 ---

@@ -1,9 +1,10 @@
 ---
-title: "Was ist die Microsoft Intune-Geräteregistrierung| Intune in Azure (Vorschau) | Microsoft Docs"
+title: "Was ist die Microsoft Intune Geräteregistrierung?"
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Informationen zur Registrierung für iOS-, Android- und Windows-Geräte."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: get-started-article
@@ -11,12 +12,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
-ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 900883ea9e38342cced195f97693447fafd0e73f
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/15/2017
 
 Dieses Thema beschreibt die Registrierung und die verschiedenen Methoden zum Registrieren von mobilen Geräten in der Intune-Verwaltung.
 
-Sie registrieren Geräte, einschließlich der Windows-Computer, in Intune, um diese Geräte verwalten zu können. Diese Funktion wird in der Intune-Dokumentation als Verwaltung mobiler Geräte (Mobile Device Management, MDM) bezeichnet. Wenn Geräte als mobile Geräte (nicht als PCs) registriert sind, erhalten sie ein MDM-Zertifikat, das von den Geräten dann für die Kommunikation mit dem Intune-Dienst verwendet wird. 
+Sie registrieren Geräte, einschließlich der Windows-Computer, in Intune, um diese Geräte verwalten zu können. Diese Funktion wird in der Intune-Dokumentation als Verwaltung mobiler Geräte (Mobile Device Management, MDM) bezeichnet. Wenn Geräte als mobile Geräte (nicht als PCs) registriert sind, erhalten sie ein MDM-Zertifikat, das von den Geräten dann für die Kommunikation mit dem Intune-Dienst verwendet wird.
 
 Auf welche Weise Sie Ihre Geräte registrieren, hängt von Gerätetyp, Besitz und benötigtem Verwaltungsniveau ab. Bei der BYOD-Registrierung (Bring Your Own Device, private Geräte der Mitarbeiter) können die Benutzer ihre privaten Smartphones, Tablets oder PCs selbst registrieren. Die Registrierung von unternehmenseigenen Geräten (corporate-owned devices, COD) macht Verwaltungsszenarios wie die automatische Registrierung, freigegebene Geräte oder Anforderungen für eine vorautorisierte Registrierung möglich.
 
@@ -76,7 +77,7 @@ BYOD-Benutzer installieren die Unternehmensportal-App und registrieren ihr Gerä
 Firmeneigene Geräte (Corporate-Owned Devices, COD) können über das Azure-Portal verwaltet werden. iOS-Geräte können direkt über die von Apple bereitgestellten Tools registriert werden. Alle Gerätetypen können von einem Administrator oder Manager die unter Verwendung des Geräteregistrierungs-Managers registriert werden. Geräte mit einer IMEI-Nummer können auch als firmeneigene Geräte identifiziert und gekennzeichnet werden, um COD-Szenarien zu unterstützen.
 
 ### <a name="dem"></a>Geräteregistrierungs-Manager (DEM)
-Der Geräteregistrierungs-Manager ist ein besonderes Benutzerkonto, das zum Registrieren und Verwalten mehrere firmeneigener Geräte verwendet wird. Manager können das Unternehmensportal installieren und viele benutzerlose Geräte registrieren. Erfahren Sie mehr über den [DEM](enroll-devices-using-device-enrollment-manager.md). ([Zurück zur Tabelle](#overview-of-device-enrollment-methods))
+Der Geräteregistrierungs-Manager (DEM) ist ein besonderes Benutzerkonto, das zum Registrieren und Verwalten mehrerer firmeneigener Geräte verwendet wird. Manager können das Unternehmensportal installieren und viele benutzerlose Geräte registrieren. Erfahren Sie mehr über den [DEM](enroll-devices-using-device-enrollment-manager.md). ([Zurück zur Tabelle](#overview-of-device-enrollment-methods))
 
 ### <a name="dep"></a>DEP (Device Enrollment Program)
 Mit der Apple DEP-Verwaltung (Device Enrollment Program, Programm zur Geräteregistrierung) können Sie Richtlinien erstellen und „drahtlos“ auf iOS-Geräten bereitstellen, die mit DEP erworben wurden und verwaltet werden. Das Gerät wird beim ersten Einschalten durch den Benutzer registriert und führt dann den iOS-Setup-Assistenten aus. Diese Methode unterstützt den iOS-Modus **Überwacht**, der wiederum Folgendes ermöglicht:
@@ -87,7 +88,7 @@ Mit der Apple DEP-Verwaltung (Device Enrollment Program, Programm zur Gerätereg
 Weitere Informationen zur iOS-Registrierung finden Sie unter:
 
 - [Auswählen der Registrierungsmethode für iOS-Geräte](choose-ios-enrollment-method.md)
-- [Registrieren von iOS-Geräten mithilfe des Programms zur Geräteregistrierung](enroll-ios-devices-using-device-enrollment-program.md) 
+- [Registrieren von iOS-Geräten mithilfe des Programms zur Geräteregistrierung](enroll-ios-devices-using-device-enrollment-program.md)
 - [Zurück zur Tabelle oben](#overview-of-device-enrollment-methods)
 
 ### <a name="usb-sa"></a>USB (Setup-Assistent)
@@ -98,10 +99,10 @@ IT-Administratoren benutzen den Apple Configurator über USB, um jedes unternehm
 Weitere Informationen zur iOS-Registrierung finden Sie unter:
 
 - [Auswählen der Registrierungsmethode für iOS-Geräte](choose-ios-enrollment-method.md)
-- [Registrieren von iOS-Geräten mithilfe von Configurator und Setup-Assistent](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md) 
+- [Registrieren von iOS-Geräten mithilfe von Configurator und Setup-Assistent](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
 
 ### <a name="usb-direct"></a>USB (direkt)
-Für die direkte Registrierung muss der Administrator jedes Gerät manuell registrieren, indem er eine Registrierungsrichtlinie erstellt und in Apple Configurator exportiert. Über USB angeschlossene, unternehmenseigene Geräte werden direkt registriert, ohne dass ein Zurücksetzen auf Werkseinstellungen erforderlich ist. Geräte werden als benutzerlose Geräte verwaltet. Sie werden nicht gesperrt oder überwacht und unterstützen nicht den bedingten Zugriff, die Erkennung von Jailbreaks oder die Verwaltung mobiler Geräte. 
+Für die direkte Registrierung muss der Administrator jedes Gerät manuell registrieren, indem er eine Registrierungsrichtlinie erstellt und in Apple Configurator exportiert. Über USB angeschlossene, unternehmenseigene Geräte werden direkt registriert, ohne dass ein Zurücksetzen auf Werkseinstellungen erforderlich ist. Geräte werden als benutzerlose Geräte verwaltet. Sie werden nicht gesperrt oder überwacht und unterstützen nicht den bedingten Zugriff, die Erkennung von Jailbreaks oder die Verwaltung mobiler Geräte.
 
 Weitere Informationen zur iOS-Registrierung finden Sie unter:
 
