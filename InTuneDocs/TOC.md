@@ -193,12 +193,10 @@
 ### [Löschen verwalteter Unternehmensdaten aus Apps](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Informieren der Endbenutzer über Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
-### [Ein Android-Gerät mit Intune verwenden](EndUser/using-your-android-device-with-intune.md)
-#### [Wie Ihre Android-Benutzer Apps erhalten](deploy-use/how-your-android-users-get-their-apps.md)
-### [Ein iOS-Gerät mit Intune verwenden](EndUser/using-your-iOS-or-macos-device-with-intune.md)
-#### [Wie Ihre iOS-Benutzer Apps erhalten](deploy-use/how-your-ios-users-get-their-apps.md)
-### [Ein Windows-Gerät mit Intune verwenden](EndUser/using-your-windows-device-with-intune.md)
-#### [Wie Ihre Windows-Benutzer Apps erhalten](deploy-use/how-your-windows-users-get-their-apps.md)
+### [Endbenutzer werden vom Unternehmensportal benachrichtigt; siehe](deploy-use/help-end-users-understand-company-portal-app-messages.md)
+### [Wie Ihre Android-Benutzer Apps erhalten](deploy-use/how-your-android-users-get-their-apps.md)
+### [Wie Ihre iOS-Benutzer Apps erhalten](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Wie Ihre Windows-Benutzer Apps erhalten](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Entwickeln und Anpassen von Apps
 ## [Übersicht über Microsoft Intune App SDK](develop/intune-app-sdk.md)
