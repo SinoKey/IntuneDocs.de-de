@@ -6,7 +6,7 @@
 ## [Neuerungen](introduction/whats-new.md)
 ## [Bekannte Probleme](introduction/known-issues-in-the-intune-preview.md)
 ## [Support anfordern](introduction/how-to-get-support-for-microsoft-intune.md)
-<!--- 
+<!---
 
 ## [Related resources](introduction/related-resources.md)
 
@@ -138,6 +138,7 @@
 #### [Windows 8.1 & Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
 
 ### [Konfigurieren der Einstellungen des Windows 10-Editionsupgrades](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
+### [Konfigurieren von Einstellungen für Windows Update for Business](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Konfigurieren von Zertifikaten](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
 #### [PKCS](configure-devices/configure-certificate-infrastructure-for-pfx.md)
