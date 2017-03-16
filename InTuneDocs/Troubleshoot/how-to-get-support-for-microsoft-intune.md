@@ -15,9 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
-ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
-ms.lasthandoff: 01/28/2017
+ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
+ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -42,15 +42,13 @@ Stellen Sie eine Frage, oder beginnen Sie eine Diskussion mit den technischen Ex
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Website für das Microsoft Intune UserVoice-Produktfeedback
 
-Haben Sie Feedback für Microsoft zur Verbesserung von Intune? Teilen Sie uns Ihre Ideen auf der [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas)-Feedbackwebsite von Microsoft Intune mit. Sie können auch für Ideen abstimmen, die andere Personen auf UserVoice gepostet haben. 
+Haben Sie Feedback für Microsoft zur Verbesserung von Intune? Teilen Sie uns Ihre Ideen auf der [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas)-Feedbackwebsite von Microsoft Intune mit. Sie können auch für Ideen abstimmen, die andere Personen auf UserVoice gepostet haben.
 
 ![Website für das Microsoft Intune UserVoice-Feedback](./media/intune-uservoice-feedback-page.png)
 
-## <a name="create-an-online-support-ticket"></a>Erstellen eines Onlinesupporttickets
+## <a name="create-a-support-ticket"></a>Erstellen eines Supporttickets
 
-Falls Sie in den Selbsthilferessourcen keine Lösungen finden, können Sie ein Onlinesupportticket erstellen.
-
-**Bitte gehen Sie in Ihrem Supportticket nur auf ein Problem ein**. So können wir Ihnen besser helfen. Warum sollen Sie das tun?
+Falls Sie in den Selbsthilferessourcen keine Lösungen finden, können Sie ein Onlinesupportticket erstellen. **Bitte gehen Sie in Ihrem Supportticket nur auf ein Problem ein**. So können wir Ihnen besser helfen. Warum sollen Sie das tun?
 
 - Die Supportmitarbeiter, die Ihnen helfen, sind meist auf einem bestimmten Gebiet spezialisiert und so ist es einfacher, einen geeigneten Experten für Ihr Problem zu finden.
 - Die Technikteams können so ihre Arbeit für die Produktbereiche, in denen es die meisten Anfragen gibt, priorisieren. 
@@ -58,12 +56,15 @@ Falls Sie in den Selbsthilferessourcen keine Lösungen finden, können Sie ein O
 
 Bitte beachten Sie den Abschnitt [Definition of a support incident (Definition eines Supportfalls)](#definition-of-a-support-incident).
 
-**Erstellen eines Onlinesupporttickets**:
+### <a name="steps-to-create-an-online-support-ticket"></a>Schritte zum Erstellen eines Onlinesupporttickets
 
 1.  Melden Sie sich mit Ihren Intune-Anmeldeinformationen beim [Office 365 Admin Center](https://portal.office.com) an.
+
+    Als Premier Support-Kunde sollten Sie stattdessen ein Intune-Supportticket auf der [Premier Support-Seite](https://support.microsoft.com/en-us/premier/contacts) öffnen.
+
     >[!NOTE]
     >
-    >Premier Support-Kunden können ein Intune-Supportticket auf der [Premier Support-Seite](https://support.microsoft.com/en-us/premier/contacts) öffnen.
+    >Premier Support-Kunden sollten ein Intune-Supportticket auf der [Premier Support-Seite](https://support.microsoft.com/en-us/premier/contacts) öffnen.
 
 2.  Wählen Sie die **Admin**-Kachel aus.
 3.  Wählen Sie auf der linken Seite unter **Support** die Option **Support** aus, um ein Ticket zu öffnen.
@@ -84,9 +85,9 @@ Bitte beachten Sie den Abschnitt [Definition of a support incident (Definition e
 
 3.  Folgen Sie den Anweisungen, um Ihre Anfrage zu öffnen.
 
-### <a name="create-a-support-ticket-with-alternate-methods"></a>Erstellen eines Supporttickets mit alternativen Methoden
+### <a name="steps-to-create-a-support-ticket-with-alternate-methods"></a>Schritte zum Erstellen eines Supporttickets mit alternativen Methoden
 
-Gehen Sie folgendermaßen vor, wenn Ihre Support-Seite wie folgt aussieht:
+Gehen Sie folgendermaßen vor, wenn Ihre Support-Seite im Office 365 Admin Center wie folgt aussieht:
 
 ![Alternativer Intune-Support](../media/alternate-support-ui.png)
 
@@ -102,30 +103,30 @@ Gehen Sie folgendermaßen vor, wenn Ihre Support-Seite wie folgt aussieht:
 Unter [An den telefonischen Support für Microsoft Intune wenden](contact-assisted-phone-support-for-microsoft-intune.md) finden Sie eine Liste der Länder und Regionen mit den entsprechenden Supportelefonnummern, Supportzeiten und unterstützten Sprachen.
 
 ## <a name="track-your-support-requests"></a>Nachverfolgen Ihrer Supportanfragen
-1.  Melden Sie sich mit Ihren Intune-Anmeldeinformationen beim [Office 365 Admin Center](https://portal.office.com) an.
+1.  Melden Sie sich mit Ihren Intune-Administratoranmeldeinformationen beim [Office 365 Admin Center](https://portal.office.com) an.
 2.  Wählen Sie die **Admin**-Kachel aus.
 3.  Wählen Sie auf der linken Seite unter **Support** die Option **Serviceanfragen** aus. Hier können Sie Ihre Anfragen überprüfen.
 
-Unsere Antwortzeiten für Supportanfragen hängen vom Schweregrad des Problems ab. Für die schwerwiegendsten Probleme erhalten unsere Professional-Kunden die erste Antwort innerhalb von zwei Stunden. Die Antwortzeit für unsere Premier Support-Kunden hängt von Ihrer Supportvereinbarung ab. Hierbei handelt es sich um folgende Fälle:
+Unsere Antwortzeiten für Supportanfragen hängen vom Schweregrad des Problems ab. Für die schwerwiegendsten Probleme erhalten unsere Professional-Kunden die erste Antwort innerhalb von zwei Stunden. Die Antwortzeit für unsere Premier Support-Kunden hängt von Ihrer Supportvereinbarung ab. Ein Fall ist **schwerwiegendst**, wenn:
 
 - Mindestens ein Dienst ist nicht verfügbar oder kann nicht verwendet werden.
 - Produktion oder Profitabilität bzw. Termine für Produktion, Vorgänge oder Bereitstellung werden schwerwiegend beeinträchtigt.
 - Es sind mehrere Benutzer oder Dienste betroffen.
 
-Für die nicht so schwerwiegenden Probleme erhalten unsere Professional-Kunden die erste Antwort innerhalb von vier Stunden. Die Antwortzeit für unsere Premier Support-Kunden hängt von Ihrer Supportvereinbarung ab.  Hierbei handelt es sich um folgende Fälle:
+Für die nicht so schwerwiegenden Probleme erhalten unsere Professional-Kunden die erste Antwort innerhalb von vier Stunden. Die Antwortzeit für unsere Premier Support-Kunden hängt von Ihrer Supportvereinbarung ab. Ein Fall ist **nicht so schwerwiegend**, wenn:
 
 - Der Dienst kann genutzt werden, funktioniert jedoch nicht so wie gewohnt.
 - Die Situation hat mittelschwere geschäftliche Auswirkungen und kann innerhalb der Geschäftszeiten behoben werden.
 - Ein einzelner Benutzer, Kunde oder Dienst ist teilweise betroffen.
 
-Für andere Probleme erhalten unsere Professional-Kunden die erste Antwort innerhalb von acht Stunden. Die Antwortzeit für unsere Premier Support-Kunden hängt von Ihrer Supportvereinbarung ab.  Hierbei handelt es sich um folgende Fälle:
+Für andere Probleme erhalten unsere Professional-Kunden die erste Antwort innerhalb von acht Stunden. Die Antwortzeit für unsere Premier Support-Kunden hängt von Ihrer Supportvereinbarung ab. Ein Fall ist am wenigsten schwerwiegend, wenn:
 
 - Die Situation hat geringe geschäftliche Auswirkungen.
 - Das Problem ist wichtig, hat für den Kunden jedoch keine unmittelbaren, signifikanten Auswirkungen auf Dienste oder Produktivität.
 - Ein einzelner Benutzer stellt teilweise Dienstunterbrechungen fest, es ist jedoch eine akzeptable Problemumgehung vorhanden.
 
 > [!NOTE]
-> Bei Verwendung von **Microsoft System Center Configuration Manager** oder **Microsoft System Center Endpoint Protection**: Um technischen Support zu Configuration Manager oder Endpoint Protection zu erhalten, wenden Sie sich an Ihren Partner, oder rufen Sie das [Lösungscenter für Microsoft System Center Configuration Manager und System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) auf. Hier finden Sie umfangreiche Materialien zur Selbsthilfe. Hier haben Sie außerdem die Möglichkeit, online oder per Telefon eine Supportanfrage zu stellen.
+> Bei Verwendung von **Microsoft System Center Configuration Manager** oder **Microsoft System Center Endpoint Protection**: Um technischen Support zu Configuration Manager oder Endpoint Protection zu erhalten, wenden Sie sich an Ihren Partner, oder rufen Sie die Dokumentation zu [Microsoft System Center Configuration Manager](https://docs.microsoft.com/sccm/) und [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx) auf. Hier finden Sie umfangreiche Materialien zur Selbsthilfe. Hier haben Sie außerdem die Möglichkeit, online oder per Telefon eine Supportanfrage zu stellen.
 >
 > Für den technischen Support für System Center Configuration Manager oder System Center Endpoint Protection ist entweder eine Zahlung erforderlich, oder der Betrag wird von Ihrer vorhandenen Lizenz oder Premier-Supportvereinbarungen abgezogen.
 

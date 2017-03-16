@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: e67ec317b22e18d0be8bca449b9382f74935d6e8
+ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
+ms.openlocfilehash: 3b608d42f04b9fce457b6b61587d05ab5d59bb0a
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -59,18 +60,28 @@ Weitere Informationen zum Hochladen und Veröffentlichen von Android-Apps finden
 
 ## <a name="deploy-an-android-for-work-app"></a>Bereitstellen einer Android for Work-App
 
-In der Regel wird Intune zweimal täglich mit dem Google Play for Work Store synchronisiert. Wenn Sie eine App aus dem Store genehmigt haben und diese im Knoten **Per Volumenlizenz erworbene Apps** des Arbeitsbereichs **Apps** nicht angezeigt wird, können Sie wie folgt eine sofortige Synchronisierung erzwingen:
+Wenn Sie eine App aus dem Store genehmigt haben und diese im Knoten **Per Volumenlizenz erworbene Apps** des Arbeitsbereichs **Apps** nicht angezeigt wird, können Sie wie folgt eine sofortige Synchronisierung erzwingen:
 
 1. Klicken Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com) auf **Verwaltung** > **Verwaltung mobiler Geräte** > **Android for Work**.
 2. Wählen Sie auf der Seite **Android for Work Mobile Device Management Setup** (Android for Work-MDM-Einrichtung) die Option **Jetzt synchronisieren** aus.
 3. Auf der Seite werden außerdem die Uhrzeit und der Status der letzten Synchronisierung angezeigt.
 
-Wenn die App im Knoten **Per Volumenlizenz erworbene Apps** des Arbeitsbereichs **Apps** angezeigt wird, können Sie [sie wie jede andere App bereitstellen](deploy-apps-in-microsoft-intune.md). Die App kann nur für Benutzergruppen bereitgestellt werden. Derzeit können nur die Aktionen **Erforderlich** und **Deinstallieren** gewählt werden. Ab Oktober 2016 fügen wir für neue Mandanten die Bereitstellungsoption **Verfügbar** hinzu.
+Wenn die App im Knoten **Per Volumenlizenz erworbene Apps** des Arbeitsbereichs **Apps** angezeigt wird, können Sie [sie wie jede andere App bereitstellen](deploy-apps-in-microsoft-intune.md). Die App kann nur für Benutzergruppen bereitgestellt werden. Derzeit können nur die Aktionen **Erforderlich** und **Deinstallieren** gewählt werden.
+
+Das neue Feature für Gruppierung und Zielgruppenadressierung ermöglicht, eine App als **Verfügbar** bereitzustellen. Neu bereitgestellte Intune-Dienstkonten werden dieses Feature nutzen können, sobald es veröffentlicht ist. Vorhandene Intune-Kunden können das Feature verwenden, sobald der zugehörige Mandant zum Azure-Portal für Intune migriert worden ist. Bestandskunden dürfen gerne ein Intune-Testkonto einrichten, um das Feature zu testen und die Nutzung zu planen, bis der zugehörige Mandant migriert wurde.
 
 Nachdem Sie die App bereitgestellt haben, wird sie auf den vorgesehenen Geräten installiert. Der Benutzer wird nicht zur Genehmigung aufgefordert.
 
+## <a name="manage-app-permissions"></a>Verwalten von App-Berechtigungen
+Android for Work erfordert, dass Sie Apps in der verwalteten Play-Webkonsole von Google genehmigen, bevor Sie sie mit Intune synchronisieren und Ihren Benutzern bereitstellen.  Da Sie diese Apps mit Android for Work im Hintergrund und automatisch auf die Geräte der Benutzer übertragen können, müssen Sie die App-Berechtigungen im Interesse aller Ihrer Benutzer akzeptieren.  Endbenutzern werden bei der Installation keine App-Berechtigungen angezeigt, daher ist es wichtig, dass Sie diese Berechtigungen lesen und verstehen.
 
+Wenn ein App-Entwickler eine neue Version der App mit aktualisierten Berechtigungen veröffentlicht, werden diese Berechtigungen auch dann nicht automatisch akzeptiert, wenn Sie die vorherigen Berechtigungen genehmigt haben. Geräte, die die alte Version der App ausführen, können sie weiterhin verwenden, aber die App wird nicht aktualisiert, solange die neuen Berechtigungen nicht genehmigt sind. Geräte, auf denen die App nicht installiert ist, können die App nicht installieren, solange Sie die neuen Berechtigungen nicht genehmigt haben.
 
-<!--HONumber=Feb17_HO1-->
+### <a name="how-to-update-app-permissions"></a>Aktualisieren von Berechtigungen für die App
 
+Besuchen Sie regelmäßig die verwaltete Google Play-Konsole, um zu prüfen, ob neue Berechtigungen vorliegen. Wenn Sie eine App bereitstellen und feststellen, dass sie nicht auf Geräten installiert ist, überprüfen Sie mit den folgenden Schritten, ob neue Berechtigungen vorliegen:
+
+1. Besuchen Sie „http://play.google.com/work“.
+2. Melden Sie sich mit dem Google-Konto an, das Sie zum Veröffentlichen und Genehmigen der Apps verwendet haben.
+3. Rufen Sie die Registerkarte **Aktualisierungen** auf, um festzustellen, ob Apps vorhanden sind, die ein Update erfordern.  Alle aufgelisteten Apps erfordern neue Berechtigungen und werden nicht bereitgestellt, solange diese Berechtigungen nicht vorliegen.  
 

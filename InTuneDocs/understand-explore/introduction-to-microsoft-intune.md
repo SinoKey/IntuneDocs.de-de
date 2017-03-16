@@ -5,7 +5,7 @@ keywords: Was ist Intune
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 03/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
-ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: ee1f41384df083d6479804ba05c0252d9ba12e1b
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -31,7 +32,7 @@ Intune ist ein cloudbasierter Enterprise Mobility-Verwaltungsdienst (Enterprise 
 * Ihre Unternehmensinformationen schützen, indem Sie steuern, wie Ihre Mitarbeiter darauf zugreifen und diese freigeben
 * Sicherstellen, dass Geräte und Apps kompatibel mit den Sicherheitsanforderungen des Unternehmens sind
 
-Die Lösung lässt sich eng in Azure Active Directory (Azure AD) integrieren und bietet Identitäts- und Zugriffsteuerungsfunktionen sowie Azure Rights Management (Azure RMS) für den Datenschutz. Es ist der *Verwaltungszweig* von Microsoft Enterprise Mobility + Security (EMS), während Office 365 der *Produktivitätszweig* der Mobilitätslösung von Microsoft ist.  
+Die Lösung lässt sich eng in Azure Active Directory (Azure AD) integrieren und bietet Identitäts- und Zugriffsteuerungsfunktionen sowie Azure Information Protection für den Datenschutz. Es ist der *Verwaltungszweig* von Microsoft Enterprise Mobility + Security (EMS), während Office 365 der *Produktivitätszweig* der Mobilitätslösung von Microsoft ist.  
 
 Zusammen ermöglichen Office 365 und EMS Ihren Mitarbeitern auf allen ihren Geräten produktiv zu arbeiten, während die Informationen Ihres Unternehmens geschützt bleiben. Office 365 mit EMS ist eine vollständig integrierte Enterprise Mobility Suite, die Funktionen für Produktivität, Identität, Zugriffsteuerung, Verwaltung und Datenschutz bietet. Sie bietet Ihnen eine effektive Möglichkeit für die Bereitstellung und den Betrieb einer Mobilitätslösung in Ihrer Organisation.
 
@@ -114,9 +115,4 @@ Die folgende Liste geschäftlicher Probleme verweist auf ausführlichere Informa
 * Erfahren Sie mehr über einige der [gängigsten Arten der Verwendung von Intune](common-ways-to-use-intune.md).
 * Machen Sie sich [mit einer 30-Tage-Testversion von Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md) mit dem Produkt vertraut.
 * Lernen Sie die [technischen Anforderungen und Funktionen](/intune/get-started/what-to-know-before-you-start-microsoft-intune) von Intune detailliert kennen.
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 
