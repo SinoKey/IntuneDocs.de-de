@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 03/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
-ms.openlocfilehash: d1b24b745fe1e860e42fa23647976aadea1953cd
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
+ms.openlocfilehash: 8f18f9ff2c32bb24b68fa987a8aad990b911a549
+ms.lasthandoff: 03/11/2017
 
 
 ---
@@ -38,7 +38,7 @@ Die folgende Tabelle zeigt Intune-Registrierungsmethoden und die unterstützten 
 
 - **Zurücksetzen** – Gibt an, ob das Gerät zurückgesetzt werden muss, bevor Benutzer das Gerät registrieren können. Der Begriff „Zurücksetzen“ bedeutet die Zurücksetzung des Geräts auf Werkseinstellungen, wobei alle Daten entfernt werden. Weitere Informationen finden Sie auf der Seite [Abkoppeln von Geräten von der Intune-Verwaltung](retire-devices-from-microsoft-intune-management.md).
 - **Affinität** – Ordnet Geräte Benutzern zu. Für die Verwaltung mobiler Geräte (MAM, Mobile Application Management) und den bedingten Zugriff auf Unternehmensdaten erforderlich. Weitere Informationen finden Sie auf der Seite [Registrieren firmeneigener iOS-Geräte in Microsoft Intune](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
-- **Sperren**: Zeigt an, wenn Benutzer daran gehindert werden, die Registrierung ihrer Geräte mit nativen Betriebssystemsmenüs aufzuheben. Benutzer können die Registrierung ihrer Geräte auf allen Plattformen mithilfe ihrer Unternehmensportal-App aufheben. 
+- **Sperren**: Zeigt an, wenn Benutzer daran gehindert werden, die Registrierung ihrer Geräte mit nativen Betriebssystemsmenüs aufzuheben. Benutzer können die Registrierung ihrer Geräte auf allen Plattformen mithilfe ihrer Unternehmensportal-App aufheben.
 
 **iOS-Registrierungsmethoden**
 
@@ -54,7 +54,7 @@ Die folgende Tabelle zeigt Intune-Registrierungsmethoden und die unterstützten 
 
 | **Methode** |    **Zurücksetzen erforderlich?** |    **Affinität**    |    **Sperren** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Ja|    Ja |    Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | Nein|    Ja |    Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|    Nein |Nein |Nein    |[Weitere Informationen](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android-Registrierungsmethoden**
@@ -75,7 +75,7 @@ Die folgende Tabelle zeigt Intune-Registrierungsmethoden und die unterstützten 
 
 | **Methode** |    **Zurücksetzen erforderlich?** |    **Affinität**    |    **Sperren** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Ja|    Ja |    Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | Nein|    Ja |    Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
 
 
 Eine Reihe von Fragen, die Sie beim Ermitteln der richtigen Methode unterstützen, finden Sie unter [Auswählen der Registrierungsart von Geräten](/intune/get-started/choose-how-to-enroll-devices1).
