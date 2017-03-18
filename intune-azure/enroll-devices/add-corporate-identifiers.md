@@ -3,10 +3,10 @@ title: "Hinzufügen von IMEI-IDs zu Intune"
 titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie in Microsoft Intune Unternehmensbezeichner (IMEI-Nummern) hinzufügen. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 0d7c8eedbdad917a43d43d2e79ead5663e8e2871
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: d8cb15d1b8c1c100f15084e43d2c3c4633fd64b5
+ms.openlocfilehash: f12d538b1f4cd327b893d234f2b558185cdd9d85
+ms.lasthandoff: 03/09/2017
 
 ---
 
@@ -44,6 +44,9 @@ In einem Text-Editor sieht die CSV-Liste etwa wie folgt aus:
 3. Wenn Sie eine Datei mit den neuen Daten importieren, werden die bereits vorhandenen überschrieben. Wählen Sie **Hiermit überschreiben Sie Details für vorhandene Bezeichner** aus, um die vorhandenen Bezeichner durch die neuen zu ersetzen.
 
 4. Navigieren Sie zu der IMEI-CSV-Datei, und wählen Sie **Hinzufügen** aus.
+
+> [!IMPORTANT]
+> Einige Android-Geräte verfügen über mehrere IMEI-Nummern. Intune inventarisiert eine IMEI-Nummer pro Gerät. Wenn Sie eine IMEI-Nummer importieren, es sich aber nicht um die IMEI-Nummer handelt, die von Intune inventarisiert wurde, wird das Gerät als ein persönliches Gerät und nicht als ein unternehmenseigenes Gerät eingestuft. Wenn Sie mehrere IMEI-Nummern für ein Gerät importieren, werden nicht inventarisierte Nummern als Anmeldungsstatus **Unbekannt** anzeigen.
 
 **So löschen Sie eine CSV-Liste mit Unternehmensbezeichnern**
 
