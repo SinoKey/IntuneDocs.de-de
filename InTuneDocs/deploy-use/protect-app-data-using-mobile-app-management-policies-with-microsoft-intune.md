@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
 ms.openlocfilehash: 651899219458f799e26ed7957ccef97d7ae2af09
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -36,8 +37,8 @@ Sie können App-Schutzrichtlinien für Apps konfigurieren, die auf Geräten ausg
 
 -   **Registriert bei einer MDM-Lösung eines Drittanbieters:** Die Geräte in dieser Kategorie sind in der Regel unternehmenseigene Geräte.
 
-  > [!NOTE]
-  > Die Verwendung von App-Schutzrichtlinien mit der mobilen Anwendungsverwaltung von Drittanbietern oder sicheren Containerlösungen wird nicht empfohlen.
+      > [!NOTE]
+      > Die Verwendung von App-Schutzrichtlinien mit der mobilen Anwendungsverwaltung von Drittanbietern oder sicheren Containerlösungen wird nicht empfohlen.
 
 -   **Nicht bei einer MDM-Lösung registriert:** Die Geräte in dieser Kategorie sind in der Regel mitarbeitereigene Geräte, die weder bei Intune noch anderen MDM-Lösungen registriert sind oder dort verwaltet werden.
 
@@ -133,9 +134,4 @@ Alle mobilen Office-Apps unterstützen den Zugriff über mehrere Identitäten.
 - [Vorbereitungen zum Konfigurieren von App-Schutzrichtlinien](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Erstellen und Bereitstellen von App-Schutzrichtlinien mit Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
