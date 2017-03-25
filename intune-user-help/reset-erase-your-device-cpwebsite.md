@@ -14,13 +14,13 @@ ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
 searchScope:
 - User help
 ROBOTS: 
-ms.reviewer: mamoriss
+ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a43dd820581c0a3dbc01f75e5825942a44be2041
-ms.openlocfilehash: 711cc8554ee8095c5d50b73cab28a46670825923
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
+ms.openlocfilehash: ce0ce291f303b04f0851b93add5f5cde5e2ee13f
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -39,7 +39,7 @@ So setzen Sie Ihr Gerät zurück:
 
 1.    Tippen Sie auf der [Unternehmensportalwebsite](http://portal.manage.microsoft.com) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
 
-2. Auf der Seite __Meine Geräte__, wählen Sie den Namen des Geräts aus, das Sie umbenennen möchten.
+2. Wählen Sie auf der Seite __Meine Geräte__ den Namen des Geräts aus, das Sie umbenennen möchten.
 
   ![Ein Screenshot der Seite „Meine Geräte“ mit mehreren nicht identifizierten Geräten oberhalb der Banneraufforderung, nicht aufgelistete Geräte zu registrieren oder nicht identifizierte Geräte zu identifizieren.](./media/macOS_enroll_002_tap_here_banner.png)
 

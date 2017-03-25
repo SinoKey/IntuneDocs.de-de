@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: b7188dd8163334429396e7b7c8687810a6e63bb2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: b664620f424f9ef612d17beb810564dbdd68ff79
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -31,13 +31,13 @@ Mit Intune können Sie Android-Geräte, einschließlich Samsung Knox Standard-Ge
 
 ## <a name="prerequisite"></a>Voraussetzung
 
-Sie müssen die MDM-Autorität auf **Microsoft Intune** festlegen, um die Verwaltung mobiler Geräte vorzubereiten. Anweisungen finden Sie unter [Festlegen der MDM-Autorität](set-mdm-authority.md). Sie legen dieses Element nur einmal fest, wenn Sie die Ersteinrichtung von Intune für die Verwaltung mobiler Geräte durchführen, sodass dies eventuell bereits erfolgt ist. 
+Sie müssen die MDM-Autorität auf **Microsoft Intune** festlegen, um die Verwaltung mobiler Geräte vorzubereiten. Anweisungen finden Sie unter [Festlegen der MDM-Autorität](set-mdm-authority.md). Sie legen dieses Element nur einmal fest, wenn Sie die Ersteinrichtung von Intune für die Verwaltung mobiler Geräte durchführen, sodass dies eventuell bereits erfolgt ist.
 
 ## <a name="set-up-android-enrollment"></a>Einrichten der Android-Registrierung
 
-Standardmäßig erlaubt Intune bereits die Registrierung von Android- und Samsung KNOX Standard-Geräten. 
+Standardmäßig erlaubt Intune bereits die Registrierung von Android- und Samsung KNOX Standard-Geräten.
 
-Um Android-Geräte oder nur die Registrierung von persönlichen Android-Geräten zu blockieren, gehen Sie unter [Festlegen von Gerätetypbeschränkungen](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions). 
+Um Android-Geräte oder nur die Registrierung von persönlichen Android-Geräten zu blockieren, gehen Sie unter [Festlegen von Gerätetypbeschränkungen](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions).
 
 Um die maximale Anzahl von Geräten festzulegen, die ein Benutzer registrieren kann, sehen Sie sich das Thema [Festlegen von Einschränkungen zum Gerätelimit](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions) an.
 
@@ -45,9 +45,10 @@ Um die maximale Anzahl von Geräten festzulegen, die ein Benutzer registrieren k
 
 Ihre Endbenutzer müssen unter Google Play die Intune-Unternehmensportal-App herunterladen, sie dann öffnen und den Aufforderungen folgen, um ihr Gerät zu registrieren. Im Laufe des von der App geführten Registrierungsprozesses werden Benutzer darüber informiert, was sie erwarten können und was IT-Administratoren auf ihren Geräten sehen können und was nicht.
 
-Sie können auch einen Link für Online-Registrierungsschritte senden: [Registrieren Ihres Android-Geräts bei Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-android). 
+Sie können auch einen Link für Online-Registrierungsschritte senden: [Registrieren Ihres Android-Geräts bei Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-android).
 
 Informationen zu anderen Endbenutzeraufgaben finden Sie in den folgenden Artikeln:
 
-- [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
+- [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
 - [Verwenden Ihres Android-Geräts mit Intune](https://docs.microsoft.com/intune/enduser/using-your-android-device-with-intune)
+
