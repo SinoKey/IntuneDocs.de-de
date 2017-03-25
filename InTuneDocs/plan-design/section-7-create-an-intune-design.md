@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
-ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -25,11 +26,11 @@ ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-Der Handbuchabschnitt sollte parallel zu anderen Themen in Abschnitt 2 verwendet werden. Dieser Entwurf basiert auf den Informationen und Entscheidungen, die Sie beim Bearbeiten der vorherigen Abschnitte dieses Handbuchs gesammelt bzw. getroffen haben. In diesem Entwurfsabschnitt konzentrieren wir uns auf die eigenständige Version von Intune, einem cloudbasierten Microsoft-Dienst, der sich in der Cloud befindet.
+Der Handbuchabschnitt sollte parallel zu anderen Themen in Abschnitt 2 verwendet werden. Dieser Entwurf basiert auf den Informationen und Entscheidungen, die Sie beim Bearbeiten der vorherigen Abschnitte dieses Handbuchs gesammelt bzw. getroffen haben. In diesem Entwurfsabschnitt konzentrieren wir uns auf die eigenständige Version von Intune, einem cloudbasierten Microsoft-Dienst.
 
-Auch wenn minimale lokale Infrastrukturanforderungen vorliegen, wird dennoch die Arbeit an einem Entwurfsplan empfohlen. So können Sie sicherzustellen, dass Sie die richtige Verwaltungslösung für Mobilgeräte verwenden, die Ihren Zielen und Anforderungen entspricht.
+Die Anforderungen an die lokale Infrastruktur sind überschaubar. Erstellen Sie aber dennoch einen Entwurfsplan, um sicherzustellen, dass Sie eine Verwaltungslösung für Mobilgeräte verwenden, die Ihren Zielen und Anforderungen gerecht wird.
 
-Darüber hinaus ist es während der Implementierungs- und Testphase üblich, dass Entwurfsänderungen anfallen. Stellen Sie sicher, dass all diese Änderungen sowie deren Gründe sofort dokumentiert werden. Die folgenden Bereiche werden erörtert:
+Während der Implementierungs- und Testphase kommt es häufig zu Entwurfsänderungen. Diese Änderungen sowie deren Gründe sollten sorgfältig dokumentiert werden. Die folgenden Bereiche werden erörtert:
 
 -   Die aktuelle Umgebung
 
@@ -409,9 +410,4 @@ Hier sehen Sie ein Beispiel für das Dokumentieren von Richtlinien für den bedi
 ## <a name="next-section"></a>Nächster Abschnitt
 
 Der nächste Abschnitt enthält Hinweise zum [Intune-Implementierungsprozess](section-8-onboarding-process.md).
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

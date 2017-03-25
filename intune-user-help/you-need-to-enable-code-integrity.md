@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: d73777a0fb6cb981d57c92740a70e9d3058c03cb
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 4a1639c289e335d4f50c549da7b7d895dd2a10bb
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -32,9 +32,9 @@ Für die Aufbewahrung der Informationen Ihrer Organisation sind verschiedene Typ
 Codeintegrität wird automatisch aktiviert, wenn Ihr System die Option „Sicherer Start“ aktiv verwendet.
 
 > [!Tip]
-> Das Aktivieren des sicheren Starts ist eine fortgeschrittene Aufgabe. Wenn Sie ein Windows-Mobilgerät verwenden, bitten Sie Ihren IT-Administrator um Hilfe. Wenn Sie ein Desktopgerät verwenden, können Sie sich mit Ihrem IT-Administrator in Verbindung setzen.
+> Das Aktivieren des sicheren Starts ist eine fortgeschrittene Aufgabe. Lassen Sie sich bei dieser Aufgabe am besten von Ihrem IT-Administrator unterstützen.
 
-<!--Or, see the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.-->
+Wenn Sie sich der Aufgabe gewachsen fühlen, lesen Sie sich auf der Seite [Deaktivieren von „Sicherer Start“](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) den Abschnitt „So aktivieren Sie „Sicherer Start“ erneut“ durch, und versuchen Sie, den sicheren Start selbst zu aktivieren.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 

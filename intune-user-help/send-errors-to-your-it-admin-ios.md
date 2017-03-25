@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 4e1b2094a89940355e02c062614620a4abf70e53
-ms.openlocfilehash: 5de975c1c4b06d1cce0dcdb2564826d09a53260e
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: c6a9c0aa97a06f7b54768ee6927ea8866c40eb13
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -33,7 +33,9 @@ Wenn Sie auf Ihrem iOS-Gerät eine Fehlermeldung erhalten, während Sie die Unte
 
 -   Im Bildschirm **Info** der Unternehmensportal-App: Tippen Sie auf **Diagnosebericht senden**.
 
--   In der Unternehmensportal-App: Schütteln Sie Ihr Gerät, und tippen Sie auf **E-Mail**, wenn die Diagnosewarnung angezeigt wird. Wenn beim Schütteln des Geräts keine Warnung angezeigt wird, öffnen Sie **Einstellungen** > **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schüttelgeste** aktiviert ist.
+-   In der Unternehmensportal-App: Schütteln Sie Ihr Gerät, und tippen Sie auf **E-Mail**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** > **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schüttelgeste** aktiviert ist.
+
+Bei Problemen mit dieser Art der Protokollübermittlung können Sie [Ihre IT-Administratorprotokolle per E-Mail senden](send-logs-to-your-it-admin-by-email-iOS.md).
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 

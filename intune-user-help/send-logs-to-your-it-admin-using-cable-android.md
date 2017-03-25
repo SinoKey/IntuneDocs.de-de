@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2b60f327c2e48c3c933a6cff0a68df138df4dd3d
-ms.openlocfilehash: ffc912af791c4b243877f026a554cc14b614ffa0
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 3e91ccb2aae973892044f19d0d26c7f57bd5d786
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/05/2017
 
 # <a name="send-logs-to-your-it-admin-using-a-usb-cable"></a>Senden von Protokollen an Ihren IT-Administrator über ein USB-Kabel
 
-Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App auf Ihrem Android-Gerät verwenden, können Sie Informationen über den Fehler senden, um Ihrem IT-Administrator bei der Behandlung des Problems zu helfen. Diese Informationen werden auf Ihrem Gerät in einem speziellen Dokument gespeichert, einem so genannten _Diagnoseprotokoll_.
+Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App auf Ihrem Android-Gerät verwenden, können Sie Informationen über den Fehler senden, um Ihrem IT-Administrator bei der Behandlung des Problems zu helfen. Die Informationen werden auf Ihrem Gerät in einem speziellen Dokument (einem so genannten _Diagnoseprotokoll_) gespeichert.
 
 > [!Note]
 > Bevor Sie beginnen, stellen Sie sicher, dass Sie die E-Mail-Adresse Ihres IT-Administrators zur Hand haben. Sie wird auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) oder in Ihrer Unternehmensportal-App aufgeführt.

@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 874146573898e8a28de83ed599dbd4829ea8f335
-ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: e21b088dbb7fdcef9996e2b970bb406cab5ee0aa
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -29,7 +30,7 @@ Ein Intune-Supportplan kann vorteilhaft sein, um Intune-bezogene Probleme effekt
 
 -   Welche Teams sind für die Bereitstellung von Intune-Support zuständig?
 
--   Wenn Ihre Supportorganisation mehrere Ebenen umfasst (z.B. Ebene 1 bis 3), welche Intune-Supportaufgaben gelten für die einzelnen Ebenen?
+-   Falls Ihre Supportorganisation mehrere Ebenen umfasst (beispielsweise Ebene 1 bis 3): Welche Intune-Supportaufgaben werden von den einzelnen Ebenen übernommen?
 
 -   Welcher Prozess wird zum Bereitstellen von Intune-Support verwendet?
 
@@ -41,7 +42,7 @@ Betrachten wir die einzelnen Bereiche im Detail.
 
 ## <a name="which-teams-are-responsible-for-providing-support"></a>Welche Teams sind für die Bereitstellung von Support verantwortlich?
 
-Organisationen bieten möglicherweise mehrere Supportebenen/-stufen (1 bis 3) an. Beispielsweise sind die Ebenen 1 und 2 Teil des Supportteams, und die Ebene 3 umfasst Mitglieder des MDM-Teams, die für die Bereitstellung von Intune verantwortlich sind.
+Organisationen bieten möglicherweise mehrere Supportebenen/-stufen (1 bis&3;) an. Beispielsweise sind die Ebenen 1 und 2 Teil des Supportteams, und die Ebene 3 umfasst Mitglieder des MDM-Teams, die für die Bereitstellung von Intune verantwortlich sind.
 
 ## <a name="what-is-the-support-process"></a>Wie verläuft der Supportprozess?
 
@@ -95,9 +96,4 @@ Das Einbeziehen des IT-Support-/Helpdeskpersonals in frühe Phasen der Planung d
 ## <a name="next-section"></a>Nächster Abschnitt
 
 Der nächste Abschnitt enthält Hinweise zum [Entwerfen von Intune](section-7-create-an-intune-design.md).
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

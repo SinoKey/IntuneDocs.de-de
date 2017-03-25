@@ -16,45 +16,24 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 5c8e0d2bec63c3eab5c1af08471d54f66feb5231
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: a0950e3b816128ccd042620eb1344f908c915a21
+ms.lasthandoff: 03/10/2017
 
 
 ---
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview"></a>Erstellen einer Konformitätsrichtlinie für Android-Geräte in der Vorschau von Intune in Azure
+# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview-portal"></a>Erstellen einer Gerätekompatibilitätsrichtlinie für Android-Geräte über das Intune Azure-Vorschauportal
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Konformitätsrichtlinien werden für jede Plattform erstellt.  Sie können eine Konformitätsrichtlinie im Azure-Portal erstellen. Weitere Informationen dazu, was eine Konformitätsrichtlinie ist, finden Sie unter dem Thema [Was ist Gerätekonformität](what-is-device-compliance.md). Weitere Informationen zu den Voraussetzungen für das Erstellen einer Konformitätsrichtlinie finden Sie unter dem Thema [Erste Schritte mit der Gerätekonformität](get-started-with-device-compliance.md).
+Gerätekompatibilitätsrichtlinien werden für jede Plattform über das Intune Azure-Vorschauportal erstellt. 
 
-In der Tabelle unten wird beschrieben, wie nicht konforme Einstellungen verwaltet werden, wenn eine Konformitätsrichtlinie mit einer Richtlinie für bedingten Zugriff verwendet wird.
+- Weitere Informationen dazu, was eine Konformitätsrichtlinie ist, finden Sie unter dem Thema [Was ist Gerätekonformität](what-is-device-compliance.md).
+- Weitere Informationen zu den Voraussetzungen für das Erstellen einer Konformitätsrichtlinie finden Sie unter dem Thema [Erste Schritte mit der Gerätekonformität](get-started-with-device-compliance.md).
 
---------------------
-
-|**Richtlinieneinstellung**| **Android 4.0 und höher, Samsung KNOX Standard 4.0 und höher** |
-| --- | ----|
-| **PIN- oder Kennwortkonfiguration** |  Isoliert |
-| **Geräteverschlüsselung** | Isoliert |
-| **Per Jailbreak oder Rootzugriff manipuliertes Gerät** | Unter Quarantäne gestellt (keine Einstellung) |
-| **E-Mail-Profil** | Nicht verfügbar |
-| **Minimale Version des Betriebssystems** | Isoliert |
-| **Maximale Version des Betriebssystems** |   Isoliert |
-| **Windows-Integritätsnachweis** | Nicht verfügbar |
-
---------------------------
-
-
-**Wiederhergestellt** = Das Betriebssystem des Geräts erzwingt die Kompatibilität. (Beispiel: Der Benutzer ist gezwungen, eine PIN festzulegen.)+
-
-**Isoliert** = Das Betriebssystem des Geräts erzwingt keine Kompatibilität. (Beispiel: Android-Geräte zwingen den Benutzer nicht, das Gerät zu verschlüsseln.) Wenn die Geräte nicht konform sind, erfolgen die folgenden Aktionen:+
-
-- Das Gerät wird blockiert, wenn eine Richtlinie für bedingten Zugriff für den Benutzer gilt.
-- Das Unternehmensportal benachrichtigt den Benutzer über Kompatibilitätsprobleme.
-
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Erstellen einer Konformitätsrichtlinie im Azure-Portal
+## <a name="to-create-a-device-compliance-policy"></a>So erstellen Sie eine Gerätekompatibilitätsrichtlinie
 
 1. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekompatibilität festlegen** aus. Wählen Sie unter **Verwalten** die Option **Alle Gerätekonformitätsrichtlinien** und dann **Erstellen** aus.
 2. Geben Sie einen Namen und eine Beschreibung ein, und wählen Sie die Plattform aus, auf die Sie diese Richtlinie anwenden möchten.
@@ -67,7 +46,7 @@ In der Tabelle unten wird beschrieben, wie nicht konforme Einstellungen verwalte
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.-->
 
-## <a name="assign-user-groups"></a>Zuweisen von Benutzergruppen
+## <a name="to-assign-user-groups"></a>So weisen Sie Benutzergruppen zu
 
 Wählen Sie zum Zuweisen einer Konformitätsrichtlinie zu Benutzern eine Richtlinie aus, die Sie konfiguriert haben. Vorhandene Richtlinien finden Sie auf dem Blatt **Kompatibilitätsrichtlinien**.
 
@@ -77,6 +56,26 @@ Wählen Sie zum Zuweisen einer Konformitätsrichtlinie zu Benutzern eine Richtli
 Sie haben die Richtlinie auf Benutzer angewendet.  Die von den Benutzern, denen die Richtlinie zugewiesen wurde, verwendeten Geräte werden auf Konformität überprüft.
 
 <!---##  Compliance policy settings--->
+
+## <a name="device-health-and-security-settings"></a>Einstellungen für Geräteintegrität und Sicherheit
+
+- **Gerät darf keinen Jailbreak oder Rootzugriff verwenden:** Wenn Sie diese Einstellung aktivieren, werden Geräte mit Jailbreak als nicht konform eingestuft.
+- **Installation von Apps aus unbekannten Quellen muss auf Geräten gesperrt sein (Android 4.0 und höher):** Um Geräte zu blockieren, bei denen die Option **Sicherheit** > **Unbekannte Quellen** aktiviert ist, aktivieren Sie diese Einstellung, und legen Sie sie auf **Ja** fest.
+
+### <a name="important"></a>Wichtig
+
+Das Sideloading von Anwendungen erfordert, dass die Einstellung **Unbekannte Quellen** aktiviert ist. Erzwingen Sie diese Kompatibilitätsrichtlinie nur, wenn Sie kein Sideloading von Android-Apps auf Geräten durchführen.
+
+- **USB-Debuggen muss deaktiviert sein (Android 4.2 und höher)**: Diese Einstellung gibt an, ob die Option für USB-Debuggen auf dem Gerät aktiviert ist.
+- **Aktivierung von „Gerät auf Sicherheitsbedrohungen überprüfen“ auf Geräten erforderlich (Android 4.2-4.4)**: Diese Einstellung gibt an, dass die Option **Apps überprüfen** auf dem Gerät aktiviert ist.
+- **Niedrigste zulässige Android-Sicherheitspatchebene (Android 6.0 und höher)**: Geben Sie mit dieser Einstellung die niedrigste Android-Patchebene an. Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht kompatibel. Das Datum muss im folgenden Format angegeben werden: JJJJ-MM-TT.
+- **Schutz vor Gerätebedrohungen muss aktiviert sein:** Verwenden Sie diese Einstellung, um die Risikobewertung mit der Lookout MTP-Lösung als Konformitätsvoraussetzung zu fordern. Wählen Sie aus den folgenden Optionen die maximal zulässige Bedrohungsstufe aus:
+  - **Keine (geschützt)**: Dies ist die sicherste Einstellung. Dies bedeutet, dass das Gerät keinerlei Bedrohungen unterliegen darf. Wenn auf dem Gerät Bedrohungen jeglicher Stufe erkannt werden, wird es als nicht kompatibel bewertet.
+  - **Niedrig:** Das Gerät wird als konform bewertet, wenn nur Bedrohungen auf niedrigen Stufen vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
+  - **Mittel:** Das Gerät wird als konform bewertet, wenn auf dem Gerät Bedrohungen auf niedriger oder mittlerer Stufe gefunden werden. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
+  - **Hoch:** Dies ist die unsicherste Einstellung. Sie lässt im Wesentlichen alle Bedrohungsstufen zu. Es ist möglicherweise hilfreich, diese Lösung nur zu Meldungszwecken zu verwenden.
+
+Weitere Informationen finden Sie unter [Aktivieren der Regel zum Schutz vor Bedrohungen auf dem Gerät in der Kompatibilitätsrichtlinie](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## <a name="system-security-settings"></a>Einstellungen für die Systemsicherheit
 
@@ -101,30 +100,35 @@ Sie haben die Richtlinie auf Benutzer angewendet.  Die von den Benutzern, denen 
 
 - **Verschlüsselung auf mobilen Geräten erforderlich:** Legen Sie diese Einstellung auf **Ja** fest, damit Geräte verschlüsselt werden müssen, um eine Verbindung mit Ressourcen herzustellen. Wenn Sie die Einstellung **Kennwort zum Entsperren mobiler Geräte erforderlich** auswählen, werden Geräte verschlüsselt.
 
-## <a name="device-health-and-security-settings"></a>Einstellungen für Geräteintegrität und Sicherheit
-
-- **Gerät darf keinen Jailbreak oder Rootzugriff verwenden:** Wenn Sie diese Einstellung aktivieren, werden Geräte mit Jailbreak als nicht konform eingestuft.
-- **Installation von Apps aus unbekannten Quellen muss auf Geräten gesperrt sein (Android 4.0 und höher):** Um Geräte zu blockieren, bei denen die Option **Sicherheit** > **Unbekannte Quellen** aktiviert ist, aktivieren Sie diese Einstellung, und legen Sie sie auf **Ja** fest.
-
-### <a name="important"></a>Wichtig
-
-Das Sideloading von Anwendungen erfordert, dass die Einstellung **Unbekannte Quellen** aktiviert ist. Erzwingen Sie diese Kompatibilitätsrichtlinie nur, wenn Sie kein Sideloading von Android-Apps auf Geräten durchführen.
-
-- **USB-Debuggen muss deaktiviert sein (Android 4.2 und höher)**: Diese Einstellung gibt an, ob die Option für USB-Debuggen auf dem Gerät aktiviert ist.
-- **Aktivierung von „Gerät auf Sicherheitsbedrohungen überprüfen“ auf Geräten erforderlich (Android 4.2-4.4)**: Diese Einstellung gibt an, dass die Option **Apps überprüfen** auf dem Gerät aktiviert ist.
-- **Niedrigste zulässige Android-Sicherheitspatchebene (Android 6.0 und höher)**: Geben Sie mit dieser Einstellung die niedrigste Android-Patchebene an. Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht kompatibel. Das Datum muss im folgenden Format angegeben werden: JJJJ-MM-TT.
-- **Schutz vor Gerätebedrohungen muss aktiviert sein:** Verwenden Sie diese Einstellung, um die Risikobewertung mit der Lookout MTP-Lösung als Konformitätsvoraussetzung zu fordern. Wählen Sie aus den folgenden Optionen die maximal zulässige Bedrohungsstufe aus:
-  - **Keine (geschützt)**: Dies ist die sicherste Einstellung. Dies bedeutet, dass das Gerät keinerlei Bedrohungen unterliegen darf. Wenn auf dem Gerät Bedrohungen jeglicher Stufe erkannt werden, wird es als nicht kompatibel bewertet.
-  - **Niedrig:** Das Gerät wird als konform bewertet, wenn nur Bedrohungen auf niedrigen Stufen vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
-  - **Mittel:** Das Gerät wird als konform bewertet, wenn auf dem Gerät Bedrohungen auf niedriger oder mittlerer Stufe gefunden werden. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
-  - **Hoch:** Dies ist die unsicherste Einstellung. Sie lässt im Wesentlichen alle Bedrohungsstufen zu. Es ist möglicherweise hilfreich, diese Lösung nur zu Meldungszwecken zu verwenden.
-
-Weitere Informationen finden Sie unter [Aktivieren der Regel zum Schutz vor Bedrohungen auf dem Gerät in der Kompatibilitätsrichtlinie](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
-
 ## <a name="device-property-settings"></a>Einstellungen für Geräteeigenschaften
 
 - **Minimal erforderliches Betriebssystem:** Wenn ein Gerät die Anforderungen an die erforderliche Mindestversion des Betriebssystems nicht erfüllt, wird es als nicht konform gemeldet. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Benutzer kann ein Upgrade des Geräts durchführen und anschließend auf die Unternehmensressourcen zugreifen.
 - **Maximal zulässige Betriebssystemversion:** Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt, und der Benutzer wird gebeten, sich an den IT-Administrator zu wenden. Mit diesem Gerät kann solange nicht auf Unternehmensressourcen zugegriffen werden, bis die Regeln geändert werden und die betreffende Betriebssystemversion zugelassen wird.
+
+## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>Wie werden nicht kompatible Einstellungen im Zusammenhang mit Richtlinien für bedingten Zugriff gehandhabt?
+
+In der folgenden Tabelle erfahren Sie, wie nicht kompatible Einstellungen verwaltet werden, wenn eine Kompatibilitätsrichtlinie mit einer Richtlinie für bedingten Zugriff verwendet wird.
+
+--------------------
+
+|**Richtlinieneinstellung**| **Android 4.0 und höher, Samsung KNOX Standard 4.0 und höher** |
+| --- | ----|
+| **PIN- oder Kennwortkonfiguration** |  Isoliert |
+| **Geräteverschlüsselung** | Isoliert |
+| **Per Jailbreak oder Rootzugriff manipuliertes Gerät** | Unter Quarantäne gestellt (keine Einstellung) |
+| **E-Mail-Profil** | Nicht verfügbar |
+| **Minimale Version des Betriebssystems** | Isoliert |
+| **Maximale Version des Betriebssystems** |   Isoliert |
+| **Windows-Integritätsnachweis** | Nicht verfügbar |
+
+--------------------------
+
+**Wiederhergestellt** = Das Betriebssystem des Geräts erzwingt die Kompatibilität. (Beispiel: Der Benutzer ist gezwungen, eine PIN festzulegen.)+
+
+**Isoliert** = Das Betriebssystem des Geräts erzwingt keine Kompatibilität. (Beispiel: Android-Geräte zwingen den Benutzer nicht, das Gerät zu verschlüsseln.) Wenn die Geräte nicht konform sind, erfolgen die folgenden Aktionen:+
+
+- Das Gerät wird blockiert, wenn eine Richtlinie für bedingten Zugriff für den Benutzer gilt.
+- Das Unternehmensportal benachrichtigt den Benutzer über Kompatibilitätsprobleme.
 
 <!--- ## Next steps
 

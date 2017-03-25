@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,19 +18,19 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: b90aec6297fdeb00940109ae0465e2bc25ab9436
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 364b2b4bfbf91f006447dd42d6a196f0b3b81542
+ms.lasthandoff: 03/16/2017
 
 
 ---
 
 
-# <a name="device-doesnt-have-secure-boot-enabled"></a>Auf dem Gerät ist der sichere Start nicht aktiviert
+# <a name="you-need-to-enable-secure-boot"></a>Sicherer Start muss aktiviert werden
 
 Ihr Unternehmen erfordert das Aktivieren des sicheren Starts für Windows, bei dem es sich um ein Sicherheitsfeature handelt, das den Schutz des Geräts erhöht.
 
-Das Aktivieren des sicheren Starts ist eine fortgeschrittene Aufgabe. Wenn Sie ein mobiles Gerät verwenden, bitten Sie Ihren IT-Administrator um Hilfe.
+Das Aktivieren des sicheren Starts ist eine fortgeschrittene Aufgabe. Wenn Sie ein mobiles Gerät verwenden, wenden Sie sich für Hilfe an Ihren IT-Administrator.
 
 Wenn Sie einen PC verwenden, können Sie sich an Ihren IT-Administrator wenden oder den Abschnitt „So aktivieren Sie den sicheren Start erneut“ auf der Seite [Deaktivieren des sicheren Starts](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) lesen, um zu versuchen, den sicheren Start selbst zu aktivieren.
 

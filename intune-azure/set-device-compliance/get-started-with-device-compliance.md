@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a3e3d4968623f29e320f1fcca8243c861c7caab4
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -28,19 +28,20 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-In diesem Thema erhalten Sie weitere Informationen zu den Voraussetzungen vor dem Erstellen einer Gerätekonformitäts-Richtlinie sowie einen kurzen Blick auf die Möglichkeiten im Azure-Portal. Wenn Sie Gerätekonformität neu für Sie ist, empfiehlt es sich, dieses Thema zu lesen. Erfahren Sie, was Gerätekonformität ist und wie Sie sie in Ihrem Unternehmen verwenden.
+Dieses Thema enthält Folgendes: 
+
+- Informationen zu den Voraussetzungen für die Erstellung einer Gerätekompatibilitätsrichtlinie
+- Einen kurzen Überblick über die Informationen und Möglichkeiten des Intune-Vorschauportals 
+
+Falls Sie noch nicht mit der Gerätekompatibilität vertraut sind, können Sie sich in [diesem Thema](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance) darüber informieren, worum es sich dabei handelt und wie Sie sie in Ihrer Organisation verwenden.
 
 ##  <a name="pre-requisites"></a>Voraussetzungen
-
 
 -   Ein Abonnement für Intune
 
 -   Ein Abonnement von Azure Active Directory
 
-
-
 ##  <a name="supported-platforms"></a>Unterstützte Plattformen:
-
 
 -   Android
 
@@ -54,8 +55,7 @@ In diesem Thema erhalten Sie weitere Informationen zu den Voraussetzungen vor de
 
 ##  <a name="azure-portal-workflow"></a>Workflow im Azure-Portal
 
-
-Hier finden Sie eine Übersicht über das Erstellen und Verwalten der Gerätekonformität im Azure-Portal.
+Hier finden Sie eine Übersicht über die Erstellung und Verwaltung der Gerätekompatibilität im Intune Azure-Vorschauportal.
 
 <!---### Overview
 
