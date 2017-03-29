@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 4140c310bb14faf1731e3c316e1dafae5dc0f97a
+ms.lasthandoff: 12/10/2016
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Konfigurieren der Zertifikatinfrastruktur für SCEP
@@ -53,7 +54,7 @@ Für Datenverkehr aus dem Umkreisnetzwerk zum vertrauenswürdigen Netzwerk: Lass
 Es wird empfohlen, den NDES-Server über einen Proxy zu veröffentlichen, z. B. über den [Azure AD-Anwendungsproxy](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx) oder einen Proxy eines Drittanbieters.
 
 
-### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>Zertifikate und Vorlagen
+### <a name="BKMK_CertsAndTemplates"></a>Zertifikate und Vorlagen
 
 |Objekt|Details|
 |----------|-----------|
@@ -62,13 +63,13 @@ Es wird empfohlen, den NDES-Server über einen Proxy zu veröffentlichen, z. B.
 |**Serverauthentifizierungszertifikat**|Dieses SSL-Zertifikat, das von der ausstellenden Zertifizierungsstelle oder öffentlichen Zertifizierungsstelle angefordert wurde, installieren und binden Sie in IIS auf dem NDES-Server.|
 |**Zertifikat der vertrauenswürdigen Stammzertifizierungsstelle**|Sie exportieren dieses als **CER**-Datei von der Stammzertifizierungsstelle oder von Geräten, die der Stammzertifizierungsstelle vertrauen, und stellen es mit dem Zertifikatprofil der vertrauenswürdigen Zertifizierungsstelle für Geräte bereit.<br /><br />Sie verwenden für jede Betriebssystemplattform ein einzelnes Zertifikat der vertrauenswürdigen Stammzertifizierungsstelle und ordnen es dem jeweiligen vertrauenswürdigen Stammzertifikatprofil zu, das Sie erstellen.<br /><br />Sie können bei Bedarf zusätzliche vertrauenswürdige Stammzertifizierungsstellenzertifikate verwenden. Sie können dies zum Beispiel vornehmen, um einer Zertifizierungsstelle eine Vertrauensstellung zu gewähren, die die Serverauthentifizierungszertifikate für Ihre WLAN-Zugriffspunkte signiert.|
 
-### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>Konten
+### <a name="BKMK_Accounts"></a>Konten
 
 |Name|Details|
 |--------|-----------|
 |**NDES-Dienstkonto**|Sie geben ein Domänenbenutzerkonto an, das als NDES-Dienstkonto verwendet werden soll.|
 
-## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>Konfigurieren der Infrastruktur
+## <a name="BKMK_ConfigureInfrastructure"></a>Konfigurieren der Infrastruktur
 Vor dem Konfigurieren von Zertifikatprofilen müssen Sie die folgenden Aufgaben ausführen, für die Sie Kenntnisse über Windows Server 2012 R2 und Active Directory-Zertifikatdienste (ADCS) benötigen:
 
 **Aufgabe 1**: Erstellen eines NDES-Dienstkontos
@@ -176,7 +177,7 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
         -   **Webserver** &gt; **Sicherheit** &gt; **Anforderungsfilterung**
 
-        -   **Webserver** &gt; **Anwendungsentwicklung** &gt; ** ASP.NET 3.5**. Bei der Installation von ASP.NET 3,5 wird .NET Framework 3,5 installiert. Installieren Sie bei Installation von .NET Framework 3.5 sowohl das Feature **.NET Framework 3.5** als auch die **HTTP-Aktivierung**.
+        -   **Webserver** &gt; **Anwendungsentwicklung** &gt; **ASP.NET 3.5**. Bei der Installation von ASP.NET 3,5 wird .NET Framework 3,5 installiert. Installieren Sie bei Installation von .NET Framework 3.5 sowohl das Feature **.NET Framework 3.5** als auch die **HTTP-Aktivierung**.
 
         -   **Webserver** &gt; **Anwendungsentwicklung** &gt; **ASP.NET 4.5**. Bei der Installation von ASP.NET 4.5 wird .NET Framework 4.5 installiert. Installieren Sie bei der Installation von .NET Framework 4.5 das Kernfeature **.NET Framework 4.5**, das Feature **ASP.NET 4.5** und das Feature **WCF-Dienste** &gt; **HTTP-Aktivierung**.
 
@@ -351,9 +352,4 @@ Um zu überprüfen, das der Dienst ausgeführt wird, öffnen Sie einen Browser, 
 
 ## <a name="next-steps"></a>Nächste Schritte
 Sie sind jetzt bereit, Zertifikatprofile gemäß der Beschreibung in [Konfigurieren von Zertifikatprofilen](Configure-Intune-certificate-profiles.md) zu konfigurieren.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
