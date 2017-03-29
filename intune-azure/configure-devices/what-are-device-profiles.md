@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: eb48265e4655117976c9847b1f5bee712f0c2e3c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Verwenden Sie die Workload **Konfigurieren von Geräten** von Microsoft Intune, um Einstellungen und Features auf allen Geräten zu verwalten. Sie werden diesen Workload größtenteils verwenden, um Geräteprofile zu erstellen, die Ihnen die Verwaltung und Steuerung von einer Vielzahl von unterschiedlichen Features und Funktionen auf den von Ihnen verwalteten Geräten erlauben.
+Verwenden Sie die Workload **Gerätekonfiguration** von Microsoft Intune, um Einstellungen und Features auf allen Geräten zu verwalten. Sie werden diesen Workload größtenteils verwenden, um Geräteprofile zu erstellen, die Ihnen die Verwaltung und Steuerung von einer Vielzahl von unterschiedlichen Features und Funktionen auf den von Ihnen verwalteten Geräten erlauben.
 
 Wenn Sie diese Workload öffnen, werden die folgenden Optionen angezeigt:
 
@@ -41,8 +41,13 @@ Der Workflow zum Erstellen von Geräteprofilen ist für alle Profile ähnlich. W
 
 Sie können die folgenden Funktionen auf Ihren Geräten verwalten:
 
+## <a name="device-features"></a>Gerätefunktionen
+
+Mit Gerätefunktionen können Sie Funktionen auf iOS- und macOS-Geräten wie AirPrint, Benachrichtigungen und freigegebene Gerätekonfigurationen steuern.
+Weitere Informationen finden Sie unter [How to configure device feature settings (Konfigurieren der Gerätefunktionseinstellungen)](how-to-configure-device-features.md). Unterstützt iOS und macOS.
+
 ## <a name="device-restrictions"></a>Geräteeinschränkungen
-Mit Geräteeinschränkungen können Sie eine Vielzahl von Einstellungen und Features für eine ganze Reihe von Kategorien steuern, einschließlich Sicherheit, Browser, Hardware und Einstellungen zur Datenfreigabe. Sie könnten beispielsweise ein Geräteeinschränkungsprofil erstellen, das verhindert, dass Benutzer von iOS-Geräten auf die Kamera des Geräts zugreifen.
+Mit Geräteeinschränkungen können Sie eine Vielzahl von Einstellungen auf Geräten für eine ganze Reihe von Kategorien steuern, einschließlich Sicherheit, Browser, Hardware und Einstellungen zur Datenfreigabe. Sie könnten beispielsweise ein Geräteeinschränkungsprofil erstellen, das verhindert, dass Benutzer von iOS-Geräten auf die Kamera des Geräts zugreifen.
 Weitere Informationen finden Sie unter [Konfigurieren von Einstellungen für Geräteeinschränkungen](how-to-configure-device-restrictions.md). Unterstützt: Android, iOS, macOS, Windows 10 und Windows 10 Team.
 
 ## <a name="email"></a>E-Mail
@@ -57,6 +62,10 @@ Weitere Informationen finden Sie unter [Konfigurieren von WLAN-Einstellungen](ho
 Virtuelle private Netzwerke (virtual private networks, VPNs) bieten Ihren Benutzern sicheren Remotezugriff auf Ihr Unternehmensnetzwerk. Geräte verwenden ein VPN-Verbindungsprofil, um eine Verbindung mit dem VPN-Server zu initiieren. VPN-Profile ermöglichen Ihnen die Bereitstellung von VPN-Einstellungen für Benutzer und Geräte in Ihrer Organisation, damit diese einfach eine sichere Verbindung mit dem Netzwerk herstellen können.
 Weitere Informationen finden Sie unter [Konfigurieren von VPN-Einstellungen](how-to-configure-vpn-settings.md).
 Unterstützt: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 und Windows 10.
+
+## <a name="education"></a>Education
+Damit können Sie Optionen für die Windows Take a Test-App konfigurieren. Wenn Sie diese Optionen konfigurieren, können keine anderen Apps auf dem Gerät ausgeführt werden, bis der Test abgeschlossen ist.
+Weitere Informationen finden Sie unter [How to configure education settings (Konfigurieren von Education-Einstellungen)](how-to-configure-education-settings.md).
 
 ## <a name="certificates"></a>Zertifikate
 Mit diesem Profiltyp können Sie vertrauenswürdige SCEP- und PKCS-Zertifikate konfigurieren, die Geräten zugewiesen und zum Authentifizieren von WLAN-, VPN- und E-Mail-Profilen verwendet werden können.

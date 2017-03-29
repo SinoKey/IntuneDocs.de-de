@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -59,7 +60,7 @@ Wenn Sie Richtlinien für bedingten Zugriff konfigurieren und auf einen Benutzer
 
 ### <a name="when-the-device-is-not-compliant"></a>Wenn das Gerät nicht konform ist
 
-Wenn eine Richtlinie für bedingten Zugriff nicht erfüllt wird, wird das Gerät sofort unter Quarantäne gestellt, und der Benutzer erhält eine E-Mail-Nachricht mit einer der folgenden Quarantänenachrichten bei seiner Anmeldung:
+Wenn eine Richtlinie für bedingten Zugriff nicht erfüllt wird, wird das Gerät sofort unter Quarantäne gestellt, und der Benutzer erhält bei der Anmeldung eine E-Mail-Nachricht mit einer der folgenden Quarantänenachrichten:
 
 - Wenn das Gerät nicht bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] oder in Azure Active Directory registriert ist, wird eine Meldung mit Anweisungen zum Installieren der Unternehmensportal-App, zum Registrieren des Geräts und zum Aktivieren des E-Mail-Zugriffs angezeigt. Dieser Prozess verknüpft auch die Exchange ActiveSync-ID mit dem Eintrag in Azure Active Directory.
 
@@ -275,9 +276,4 @@ Wählen Sie im [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Dashboard 
 - [Protect access to SharePoint Online (Schützen des Zugriffs auf SharePoint Online)](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 - [Protect access to Skype for Business Online (Schützen des Zugriffs auf Skype for Business Online)](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

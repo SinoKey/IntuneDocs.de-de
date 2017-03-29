@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/14/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 957192c744bf05cd835dfae60b6bb521b8f8b26b
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -73,9 +73,10 @@ Falls ein Gerät verloren geht oder gestohlen wird, können Sie den Modus für v
 2.    Aktivieren Sie auf dem Blatt **Modus für verlorene Geräte** den Modus für verlorene Geräte, und geben Sie die anzuzeigende Nachricht sowie optional eine Kontakttelefonnummer ein.
 3.    Klicken Sie auf **OK**.
 Wenn Sie den Modus für verlorene Geräte aktivieren, kann das Gerät nicht mehr verwendet werden. Der Benutzer kann erst wieder auf das Gerät zugreifen, wenn Sie den Modus für verlorene Geräte wieder deaktivieren. Bei aktiviertem Modus für verlorene Geräte können Sie mithilfe der Aktion **Gerät suchen** ermitteln, wo sich das Gerät befindet.
+Um den Modus für verlorene Geräte zu verwenden, muss es sich bei dem Gerät um ein firmeneigenes, über DEP registriertes iOS-Gerät im überwachten Modus handeln.
 
 ### <a name="locate-device"></a>**Gerät suchen**
-Mithilfe dieser Remoteaktion können Sie den Standort eines verloren gegangenen oder gestohlenen iOS-Geräts auf einer Karte anzeigen. Bei dem Gerät muss es sich um ein firmeneigenes iOS-Gerät im überwachten Modus handeln. Diese Aktion kann nur verwendet werden, wenn das Gerät zuvor in den Modus für verlorene Geräte versetzt wurde.
+Mithilfe dieser Remoteaktion können Sie den Standort eines verloren gegangenen oder gestohlenen iOS-Geräts auf einer Karte anzeigen. Bei dem Gerät muss es sich um ein firmeneigenes, über DEP registriertes iOS-Gerät im überwachten Modus handeln. Diese Aktion kann nur verwendet werden, wenn das Gerät zuvor in den Modus für verlorene Geräte versetzt wurde.
 1.    Wählen Sie auf dem Blatt mit den Eigenschaften eines iOS-Geräts die Option **Mehr** > **Gerät suchen** aus.
 2.    Wenn das Gerät gefunden wurde, wird seine Position auf dem Blatt **Gerät suchen** angezeigt. 
     Blatt ![Gerät suchen](./media/locate-device.png)

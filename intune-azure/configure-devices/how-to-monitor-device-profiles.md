@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 5c6bf134ad49edb64e994b95bf7378602042052e
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: ae5cf453d578dd7df4ce0590b14e97468c893093
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -32,7 +32,7 @@ Sie können den Zuweisungsstatus von Intune-Geräteprofilen auf zwei Arten über
 
 1. Melden Sie sich beim Azure-Portal an.
 2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte konfigurieren** aus.
+3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
 2. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
 2. Wählen Sie auf dem Blatt mit der Liste der Profile das Profil aus, das Sie verwalten möchten, und klicken Sie dann auf eine der folgenden Optionen:
     - Wählen Sie auf dem Blatt <*Profilname*> **Berichte** die Option **Übersicht** aus, um grundlegende Informationen zum Profil und seinen Zuweisungen anzuzeigen.

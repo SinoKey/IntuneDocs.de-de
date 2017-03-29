@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: c6a9c0aa97a06f7b54768ee6927ea8866c40eb13
-ms.lasthandoff: 03/16/2017
+ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
+ms.openlocfilehash: 1e501c1a94a44c677569b8b85be7704844587694
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -33,7 +33,7 @@ Wenn Sie auf Ihrem iOS-Gerät eine Fehlermeldung erhalten, während Sie die Unte
 
 -   Im Bildschirm **Info** der Unternehmensportal-App: Tippen Sie auf **Diagnosebericht senden**.
 
--   In der Unternehmensportal-App: Schütteln Sie Ihr Gerät, und tippen Sie auf **E-Mail**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** > **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schüttelgeste** aktiviert ist.
+-   In der Unternehmensportal-App: Schütteln Sie Ihr Gerät, und tippen Sie auf **Diagnosebericht senden**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** > **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schüttelgeste** aktiviert ist.
 
 Bei Problemen mit dieser Art der Protokollübermittlung können Sie [Ihre IT-Administratorprotokolle per E-Mail senden](send-logs-to-your-it-admin-by-email-iOS.md).
 

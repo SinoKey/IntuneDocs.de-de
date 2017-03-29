@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: 464b9b60e9e8a5cb3e195bbec88d496eb4dc9ecf
-ms.lasthandoff: 03/16/2017
+ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
+ms.openlocfilehash: a4886c9fb780f2748aa767e426f404e03671f42e
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -60,10 +60,10 @@ Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftre
 
     ![Bildschirm „Unternehmenszugriff einrichten“](./media/and-enroll-4a-comp-access-setup.png)
 
-> [!NOTE]
-> Die gelben Dreiecke bedeuten nicht, dass bereits ein Fehler vorliegt. Sie geben lediglich an, dass für den Registrierungsprozess noch Schritte ausgeführt werden müssen.
+    > [!NOTE]
+    > Die gelben Dreiecke bedeuten nicht, dass bereits ein Fehler vorliegt. Sie geben lediglich an, dass für den Registrierungsprozess noch Schritte ausgeführt werden müssen.
 
-7.  Lesen Sie auf dem Bildschirm **Gründe für das Registrieren Ihres Geräts**, welche Möglichkeiten Sie haben, wenn Sie Ihr Gerät registrieren, und tippen Sie dann auf **WEITER**.
+7. Lesen Sie auf dem Bildschirm **Gründe für das Registrieren Ihres Geräts**, welche Möglichkeiten Sie haben, wenn Sie Ihr Gerät registrieren, und tippen Sie dann auf **WEITER**.
 
     ![Gründe für das Registrieren Ihres Geräts](./media/and-enroll-4b-why-enroll.png)
 
@@ -90,13 +90,19 @@ Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftre
 
         ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-    Wenn diese Meldung angezeigt wird, tippen Sie auf **ZULASSEN**. Sie können ruhig auf „ZULASSEN“ tippen, weil **Microsoft niemals auf Ihre Kontakte zugreift**! Google steuert den Meldungstext, daher kann er von Microsoft nicht geändert werden. Wenn Sie den Zugriff gewähren, wird der Unternehmensportal-App lediglich das Erstellen, Verwenden und Verwalten Ihres Geschäftskontos erlaubt.
+        Wenn diese Meldung angezeigt wird, tippen Sie auf **ZULASSEN**. Sie können ruhig auf „ZULASSEN“ tippen, weil **Microsoft niemals auf Ihre Kontakte zugreift**! Google steuert den Meldungstext, daher kann er von Microsoft nicht geändert werden. Wenn Sie den Zugriff gewähren, wird der Unternehmensportal-App lediglich das Erstellen, Verwenden und Verwalten Ihres Geschäftskontos erlaubt.
 
-    Wenn Sie den Zugriff verweigern, wird die Meldung bei Ihrer nächsten Anmeldung beim Unternehmensportal angezeigt. Sie können künftige Meldungen jedoch deaktivieren, indem Sie das Kontrollkästchen **Nicht mehr nachfragen** aktivieren. Wenn Sie den Zugriff später erlauben möchten, wechseln Sie zu **Einstellungen** &gt; **Apps** &gt; **Unternehmensportal** &gt; **Berechtigungen** &gt; **Telefon**, um die Berechtigung zu aktivieren.
+        Wenn Sie den Zugriff verweigern, wird die Meldung bei Ihrer nächsten Anmeldung beim Unternehmensportal angezeigt. Sie können künftige Meldungen jedoch deaktivieren, indem Sie das Kontrollkästchen **Nicht mehr nachfragen** aktivieren. Wenn Sie den Zugriff später erlauben möchten, wechseln Sie zu **Einstellungen** &gt; **Apps** &gt; **Unternehmensportal** &gt; **Berechtigungen** &gt; **Telefon**, um die Berechtigung zu aktivieren.
 
 11.  Klicken Sie auf dem Bildschirm **Geräteadministrator aktivieren** auf **Aktivieren**.
 
     ![Bildschirm „Geräteadministrator aktivieren?“](./media/and-enroll-5-activate.png)
+
+    Die Geräteadministratorrolle wird vom Unternehmensportal benötigt, um Ihr Gerät zu verwalten. Damit kann Ihr Administrator bestimmte Dinge sehen – zum Beispiel wie oft Sie versucht haben, Ihren Bildschirm zu entsperren – und einige Aktionen vornehmen.
+
+    Es gilt zu beachten, dass diese Aktionen im Namen der Sicherheit ausgeführt werden. Ihr IT-Administrator wird nicht versuchen, Ihre Privatsphäre zu verletzen oder Ihre Daten ohne Grund zu löschen, möchte aber sicherstellen, dass Unternehmensdaten sicher aufbewahrt werden.
+
+    Microsoft wird diese Meldung nicht kontrollieren, und wir wissen, dass die Ausdrucksweise etwas drastisch erscheinen kann. Es gibt keine Möglichkeit, dass das Unternehmensportal nur die Einschränkungen und Zugriffe anzeigt, die für Ihre Organisation relevant sind. Alle werden auf diesem Bildschirm auf einmal erteilt. Wenden Sie sich mithilfe der Kontaktinformationen auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) an Ihren IT-Administrator, wenn Sie spezifische Fragen zur Verwendung in Ihrem Unternehmen haben.
 
 12.  Befolgen Sie die Aufforderungen zur Eingabe einer PIN oder eines Kennworts. Wenn Sie bereits eine PIN oder ein Kennwort auf diesem Gerät eingerichtet haben, wird dieser Bildschirm nicht angezeigt, und Sie werden nicht zur Eingabe einer neuen PIN oder eines neuen Kennworts aufgefordert.
 
@@ -108,21 +114,21 @@ Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftre
 
     Dieser Bildschirm zeigt an, dass das Gerät registriert wird.
 
-      ![Bildschirm „Gerät wird registriert“](./media/and-enroll-8-device-enrolling.png)
+    ![Bildschirm „Gerät wird registriert“](./media/and-enroll-8-device-enrolling.png)
 
 14. Wenn der Bildschirm **Einrichten des Unternehmenszugriffs** angezeigt wird, tippen Sie auf **WEITER**. Wenn eine Meldung anzeigt, dass Ihr Gerät nicht kompatibel ist, befolgen Sie die Anweisungen zum Beheben des Problems, und tippen Sie dann auf **WEITER**.
 
-  ![Das Gerät ist nicht kompatibel, aber registriert.](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![Das Gerät ist nicht kompatibel, aber registriert.](./media/and-enroll-9a-noncompliant-enrolled-device.png)
 
-  ![Es liegen Probleme mit der Gerätekompatibilität vor, die behoben werden müssen.](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![Es liegen Probleme mit der Gerätekompatibilität vor, die behoben werden müssen.](./media/and-enroll-9b-resolve-compliance-issues.png)
 
-Tippen Sie ggf. auf die einzelnen Probleme, um weitere Informationen zu erhalten. 
+    Tippen Sie ggf. auf die einzelnen Probleme, um weitere Informationen zu erhalten.
 
-  ![Erweiterte Ansicht von Gerätekompatibilitätsproblemen](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![Erweiterte Ansicht von Gerätekompatibilitätsproblemen](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
 
-    ![Company access setup screen](./media/and-enroll-9d-comp-access-setup.png)  
+    ![Bildschirm „Unternehmenszugriff einrichten“](./media/and-enroll-9d-comp-access-setup.png)  
 
-11. Tippen Sie auf dem Bildschirm **Einrichten des Unternehmenszugriffs abgeschlossen** auf **FERTIG**. Ihr Gerät ist jetzt bei registriert.
+15. Tippen Sie auf dem Bildschirm **Einrichten des Unternehmenszugriffs abgeschlossen** auf **FERTIG**. Ihr Gerät ist jetzt bei registriert.
 
     ![Bildschirm „Einrichten des Unternehmenszugriffs abgeschlossen“](./media/and-enroll-10-comp-access-setup-complete.png)
 

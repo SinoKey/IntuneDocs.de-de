@@ -5,7 +5,7 @@ description: "Intune in Azure (Vorschau): Aktivieren Sie die Verwaltung mobiler 
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/15/17
+ms.date: 03/21/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: a95aca706a4996d40e268a80c7c334ebb9854df5
-ms.openlocfilehash: 6cbaf8414452f11f0aa97616bbed2cf164b49ac0
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 609656c2831c09c67e911c8150d31f38faad020b
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -33,23 +33,13 @@ Verwenden Sie eine der folgenden Methoden zum Einrichten der Registrierung für 
  -  Sie müssen für diese Methode über Azure Active Directory Premium verfügen. Verwenden Sie andernfalls die Registrierungsmethode für Windows 8.1 und Windows Phone 8.1.
  -  Wenn Sie die automatische Registrierung nicht aktivieren möchten, verwenden Sie die Registrierungsmethode für Windows 8.1 und Windows Phone 8.1.
 
-- [**Registrierung für Windows 8.1 und Windows Phone 8.1 durch Konfigurieren von CNAME**](#simplify-enrollment-by-configuring-cname)
+- [**Registrierung ohne automatische Registrierung bei Azure AD Premium**](#enable-windows-enrollment-without-azure-ad-premium)
  - Sie müssen diese Methode verwenden, um Windows 8.1- und Windows Phone 8.1-Geräte zu registrieren.
- - Die Methode kann auch verwendet werden, wenn Sie nicht über Azure Active Directory (AD) Premium verfügen.
-
-
-## <a name="prerequisites"></a>Voraussetzungen
-
-Wenn einige der folgenden Voraussetzungen in der Vorschau von Intune in Azure noch nicht erfüllt sind, müssen Sie sie in der klassischen Intune-Verwaltungskonsole ausführen.
-
-- [Konfigurieren eines benutzerdefinierten Domänennamens](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- Festlegen von **Microsoft Intune** als [Autorität für die Verwaltung mobiler Geräte (MDM)](set-mdm-authority.md)
-- [Konfigurieren der Unternehmensportal-App](/intune-azure/manage-apps/company-portal-app.md)
-- Zuweisen von Lizenzen zu Benutzern
+ - Sie können diese Methode für Windows 8.1 und höher verwenden, wenn Sie Azure Active Directory (AD) Premium nicht verwenden möchten.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="enable-windows-workplace-enrollment"></a>Ermöglichen der Windows-Arbeitsplatzregistrierung
+## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Aktivieren der Windows-Registrierung ohne Azure AD Premium
 
 Sie können Benutzer das Installieren und Registrieren ihrer Geräte ohne automatische Azure AD Premium-Registrierung ermöglichen. Wenn Sie DNS-CNAME-Ressourceneinträge erstellen, können Benutzer sich mit Intune verbinden und dort registrieren, ohne einen Servernamen eingeben zu müssen.
 
@@ -79,7 +69,7 @@ Sie können Benutzer das Installieren und Registrieren ihrer Geräte ohne automa
 
     Registrierungsanleitungen für Endbenutzer finden Sie unter [Registrieren Ihres Windows-Geräts bei Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows). Sie können Benutzer auch auf [Was kann mein IT-Administrator sehen, wenn ich mein Gerät bei Intune registriere?](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) verweisen.
 
-    Weitere Informationen zu Endbenutzeraufgaben finden Sie unter [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
+    Weitere Informationen zu Endbenutzeraufgaben finden Sie unter [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).
 
 Es sind keine weiteren Schritte erforderlich, es sei denn, Sie stellen das Unternehmensportal selbst auf Geräten bereit.  Die Schritte 2 und 3 in der Verwaltungskonsole können ignoriert werden.
 

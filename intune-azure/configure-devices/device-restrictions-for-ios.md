@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -51,7 +51,8 @@ ms.lasthandoff: 03/15/2017
 -     **Tastenkombinationen (nur überwacht):** Erlaubt die Verwendung von Tastaturkurzbefehlen.
 -     **Handgelenkerkennung für gekoppelte Apple Watch:** Wenn diese Funktion aktiviert ist, zeigt die Apple Watch keine Benachrichtigungen an, wenn sie nicht getragen wird.
 - **Kopplungskennwort für ausgehende AirPlay-Anforderungen anfordern:** Erfordert ein Kopplungskennwort, wenn der Benutzer AirPlay zum Streamen von Inhalten auf andere Apple-Geräte verwendet.
-- **Kontoänderung (nur überwacht):** Erlauben Sie Benutzern, Kontoeinstellungen, z.B. E-Mail-Konfigurationen, zu ändern.
+- **Kontoänderung (nur überwacht):** Wenn diese Funktion blockiert ist, kann der Benutzer keine gerätespezifischen Einstellungen der iOS-Einstellungs-App ändern wie z.B. neue Gerätekonten erstellen, den Benutzernamen oder das Kennwort ändern.
+Dies gilt auch für Einstellungen, auf die über die iOS-Einstellungs-App zugegriffen werden kann wie z.B. E-Mail, Kontakte, Kalender, Facebook und Twitter. Dies gilt nicht für Apps mit Kontoeinstellungen, die nicht über die iOS-Einstellungs-App konfiguriert werden können wie z.B. die Microsoft Outlook-App.
 - **Apple Watch-Kopplung (nur überwacht):** Erlauben Sie die Gerätekopplung mit einer Apple Watch.
 - **Bluetooth-Änderung (nur überwacht):** Sperren Sie die Änderung von Bluetooth-Einstellungen auf dem Gerät durch Endbenutzer.
 - **Remotebildschirmüberwachung über die Classroom-App (nur überwacht):** Erlauben oder sperren Sie die Überwachung des Bildschirms auf Remotegeräten durch die Classroom-App.

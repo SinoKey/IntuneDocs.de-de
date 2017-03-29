@@ -3,10 +3,10 @@ title: Neuigkeiten in der Vorschau von Microsoft Intune
 titleSuffix: Intune Azure preview
 description: Erfahren Sie, welche Neuigkeiten die Vorschau von Intune Azure bietet
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: mtillman
+ms.author: mtillman
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 92bb81440b9374b2b0b433b32fc0a1301998ea80
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 586bdab54ee60ba8d620857ab3506aa27622d17a
+ms.lasthandoff: 03/17/2017
 
 ---
 
@@ -37,7 +37,9 @@ Im Laufe der öffentliche Vorschau werden weitere Features hinzugefügt, über d
 
 Für Geräte unter iOS 9.3 (oder höher) wurde von Intune die Unterstützung des **Modus für verlorene Geräte** hinzugefügt. Nun können Sie ein Gerät sperren, um zu dessen Verwendung vollständig zu unterbinden, und auf dem Sperrbildschirm des Geräts eine Meldung und eine Kontakttelefonnummer anzeigen.
 
-Der Endbenutzer kann das Gerät erst wieder entsperren, wenn ein Administrator den Modus für verlorene Geräte deaktiviert. Bei aktiviertem Modus für verlorene Geräte können Sie mithilfe der Aktion „Gerät suchen“ den geografischen Standort des Geräts auf einer Karte in der Intune-Konsole anzeigen.
+Der Endbenutzer kann das Gerät erst wieder entsperren, wenn ein Administrator den Modus für verlorene Geräte deaktiviert. Bei aktivierten Modus für verlorene Geräte können Sie mithilfe der Aktion **Gerät suchen** den geografischen Standort des Geräts auf einer Karte in der Intune-Konsole anzeigen.
+
+Bei dem Gerät muss es sich um ein firmeneigenes, über DEP registriertes iOS-Gerät im überwachten Modus handeln.
 
 Weitere Informationen finden Sie unter [Was ist die Microsoft Intune-Geräteverwaltung?](/intune-azure/manage-devices/what-is).
 

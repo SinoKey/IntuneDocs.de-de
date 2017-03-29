@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 searchScope:
 - User help
 ROBOTS: 
-ms.reviewer: mamoriss
+ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: f293901d3865f0b10ed876e83b151cf59a046cba
-ms.openlocfilehash: 68725bb63ae2750e89a03c16027f8b4fd9111255
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 1c3b986df3e0d8a5ee54da0a91f37b445b4dd9f7
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -48,23 +48,23 @@ So setzen Sie Ihre Kennung zurück
 
   ![Das Banner „Kennung zurücksetzen“ mit der Warnung bezüglich des Zurücksetzens der Kennung und der Abmeldung des Benutzers. Die Schaltflächen für Benutzereingaben sind „Abmelden“ und „Abbrechen“.](./media/iwp-reset-passcode-popup.png)
 
-4.  Wählen Sie **Abmelden** aus; danach erhalten Sie eine letzte Meldung, die Sie über das Entfernen der Kennung von dem Gerät informiert. Wenn Sie das Gerät nicht bei sich haben, entfernen Sie die Kennung nicht; ansonsten können Personen, die physisch Zugang zu Ihrem Gerät haben, auf die meisten – persönlichen und geschäftlichen – Daten auf Ihrem Gerät zugreifen.
+5.  Wählen Sie **Abmelden** aus; danach erhalten Sie eine letzte Meldung, die Sie über das Entfernen der Kennung von dem Gerät informiert. Wenn Sie das Gerät nicht bei sich haben, entfernen Sie die Kennung nicht; ansonsten können Personen, die physisch Zugang zu Ihrem Gerät haben, auf die meisten – persönlichen und geschäftlichen – Daten auf Ihrem Gerät zugreifen.
 
   ![Das zweite Banner „Kennung zurücksetzen“ mit der Warnung bezüglich des Zurücksetzens der Kennung und des Entfernens der Kennung von dem Gerät. Außerdem informiert es Sie darüber, wie Sie eine neue Kennung in den Geräteeinstellungen festlegen können.](./media/iwp-reset-passcode-2nd-popup.png)
 
+  Unterschiedliche Geräte verfügen über unterschiedliche Arten von Kennungen.
 
-Da unterschiedliche Geräte unterschiedliche Kennungen haben, können Sie sich in der untenstehenden Tabelle darüber informieren, welche Auswirkung das Zurücksetzen der Kennung auf Ihr konkretes Gerät haben kann. 
+  **Android**: Entfernt die vorhandene Kennung und erstellt eine vorübergehende Kennung mit Buchstaben und Zahlen
 
-    |Gerätetyp|Was geschieht beim Zurücksetzen?|
-    |------------|-----------|
-    |Android|Entfernt die vorhandene Kennung und erstellt eine vorübergehende Kennung mit jeweils Buchstaben und Zahlen|
-    |iOS|Entfernt die aktuelle Kennung und erstellt keine neue temporäre Kennung. Wenn Sie den Touch ID-Fingerabdruckscanner zum Öffnen Ihres Geräts oder zum Abwickeln von Käufen nutzen, müssen Sie diesen erneut einrichten.|
-    |Windows 10 Mobile|Entfernt die vorhandene Kennung und erstellt eine vorübergehende Kennung mit jeweils Buchstaben und Zahlen. Wenn Sie die Windows Hello-Gesichtserkennung zum Anmelden verwenden, wird diese noch immer unterstützt.|
-    |Windows Phone 8.1|Entfernt die vorhandene Kennung und erstellt eine vorübergehende Kennung mit Zahlen.|
+  **iOS**: Entfernt die aktuelle Kennung und erstellt keine neue temporäre Kennung. Wenn Sie den Touch-ID-Fingerabdruckscanner zum Öffnen Ihres Geräts oder zum Abwickeln von Käufen nutzen, müssen Sie diesen erneut einrichten.
 
-    5.  Entsperren Sie Ihr Gerät, und legen Sie eine neue Kennung fest, oder ändern Sie die temporäre Kennung auf Ihrem Gerät unter **Einstellungen**.
+  **Windows 10 Mobile**: Entfernt die vorhandene Kennung und erstellt eine vorübergehende Kennung mit Buchstaben und Zahlen. Wenn Sie die Windows Hello-Gesichtserkennung zum Anmelden verwenden, wird diese noch immer unterstützt.
+    
+  **Windows Phone 8.1**: Entfernt die vorhandene Kennung und erstellt eine vorübergehende Kennung mit Zahlen
 
-    Um eine Benachrichtigung anzuzeigen, die bestätigt, dass Ihr Kennwort erfolgreich zurückgesetzt wurde, klicken Sie auf das Benachrichtigungskennzeichen oben rechts auf der Unternehmensportal-Website.
+6.  Entsperren Sie Ihr Gerät, und legen Sie eine neue Kennung fest, oder ändern Sie die temporäre Kennung auf Ihrem Gerät unter **Einstellungen**.
+
+Um eine Benachrichtigung anzuzeigen, die bestätigt, dass Ihr Kennwort erfolgreich zurückgesetzt wurde, klicken Sie auf das Benachrichtigungskennzeichen oben rechts auf der Unternehmensportal-Website.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
 

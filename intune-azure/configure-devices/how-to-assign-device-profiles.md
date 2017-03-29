@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 861e14227b847422d584d69364315a2418a986de
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 238c67c3edb843ef62deccb42cfa2879232e1434
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -30,8 +30,8 @@ ms.lasthandoff: 02/18/2017
 
 1. Melden Sie sich beim Azure-Portal an.
 2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte konfigurieren** aus.
-1. Wählen Sie auf dem Blatt **Geräte konfigurieren** die Option **Verwalten** > **Profile** aus.
+3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
+1. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
 2. Wählen Sie auf dem Blatt mit der Profilliste das Profil, das Sie verwalten möchten, und dann auf dem Blatt <*Profilname*> **Berichte** die Option **Verwalten** > **Zuweisungen** aus.
 3. Klicken Sie auf dem nächsten Blatt auf **Gruppen auswählen**, und wählen Sie dann auf dem Blatt **Gruppen auswählen** die Azure AD-Gruppen aus, denen Sie das Profil zuweisen möchten. Sie können **STRG** gedrückt halten, um mehrere Gruppen auswählen.
 4. Wenn Sie fertig sind, wählen Sie auf dem Blatt **Gruppen auswählen** die Option **Auswählen** aus.
