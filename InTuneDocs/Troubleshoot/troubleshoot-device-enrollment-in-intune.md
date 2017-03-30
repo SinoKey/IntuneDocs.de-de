@@ -361,7 +361,7 @@ Möglicherweise wurde der Computer bereits vorher registriert oder hat das geklo
 
 1. Geben Sie im Menü **Start** **Ausführen** -> **MMC** ein.
 1. Wählen Sie **Datei** > **Snap-Ins hinzufügen/entfernen** aus.
-1. Doppelklicken Sie auf **Zertifikate**, wählen Sie **Computerkonto**, ** > Weiter**, und wählen Sie die Option **Lokaler Computer** aus.
+1. Doppelklicken Sie auf **Zertifikate**, wählen Sie **Computerkonto**,  >  **Weiter**, und wählen Sie die Option **Lokaler Computer** aus.
 1. Doppelklicken Sie auf **Zertifikate (lokaler Computer)**, und wählen Sie **Persönlich/Zertifikate** aus.
 1. Suchen Sie nach dem von Sc_Online_Issuing ausgestellten Intune-Zertifikat, und löschen Sie es, falls vorhanden.
 1. Wenn der folgende Registrierungsschlüssel vorhanden ist, löschen Sie ihn: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** und alle untergeordneten Schlüssel.
