@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 6157cef87c5cdad6d0e293946321fa8bdf18e61a
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 62e37d42aef9a828551db1fbbcf5e3cb1b3eeec9
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -31,24 +31,23 @@ Damit Sie auf Ihre Arbeit zugreifen können, verlangt der IT-Administrator von I
 
 1.    Wenn die folgende Aufforderung angezeigt wird, tippen Sie auf **Installieren**, um die Installation von Lookout for Work auf Ihrem Gerät zuzulassen.
 
-    ![Auf „Installieren“ tippen, um Lookout for Work zu installieren](./media/ios-lfw-install-app-request.png)
+  ![Auf „Installieren“ tippen, um Lookout for Work zu installieren](./media/ios-mtd-install-app-request.png)
 
 2. Wenn die folgende Meldung angezeigt wird, tippen Sie auf **Einstellungen**, aktivieren Sie **Ortungsdienste**, und tippen Sie anschließend auf **Weiter**.
 
-    ![Tippen auf „Einstellungen“ und anschließend auf „Ortungsdienste“](./media/ios-lfw-allow-location-services.png)
+  ![Tippen auf „Einstellungen“ und anschließend auf „Ortungsdienste“](./media/ios-lfw-allow-location-services.png)
 
 3. Überprüfen Sie die Berechtigungen, die Lookout for Work benötigt, und tippen Sie auf **Weiter**.
 
-    ![Sie sind jetzt mit Lookout for Work verbunden](./media/ios-lfw-permissions-lookout-needs.png)
+  ![Sie sind jetzt mit Lookout for Work verbunden](./media/ios-lfw-permissions-lookout-needs.png)
 
 4. Tippen Sie bei der Aufforderung, bei der Sie gefragt werden, ob Sie Benachrichtigungen von Lookout for Work zulassen möchten, auf **Zulassen**.
 
-    ![Tippen auf „Einstellungen“ und anschließend auf „Ortungsdienste“](./media/ios-lfw-allow-notifications.png)
-
+  ![Tippen auf „Einstellungen“ und anschließend auf „Ortungsdienste“](./media/ios-lfw-allow-notifications.png)
 
 Die Installation von Lookout for Work wird abgeschlossen, und der folgende Bildschirm wird angezeigt, wenn auf Ihrem Gerät keine Sicherheitsbedrohungen gefunden wurden.
 
-![Lookout for Work hat keine Sicherheitsbedrohungen gefunden](./media/ios-lfw-no-threats-found.png)
+  ![Lookout for Work hat keine Sicherheitsbedrohungen gefunden](./media/ios-lfw-no-threats-found.png)
 
 Wenn Lookout for Work eine Sicherheitsbedrohung auf Ihrem Gerät erkennt, erhalten Sie Anweisungen zur Behebung des Problems.
 

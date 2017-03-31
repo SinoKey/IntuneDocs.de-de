@@ -18,9 +18,9 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 982588ddc808123efd107759ed15c31ced6f110e
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
+ms.openlocfilehash: f2f93bccd17d16f258e90268f0ddef3e3cb7a598
+ms.lasthandoff: 03/28/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/08/2017
 
 Vielleicht verwendet Ihre Organisation Telecom Expense Management-Software, um sicherzustellen, dass ihre Daten- und Voicepläne zulässige Grenzwerte einhalten. Nachdem Sie die Registrierung des Geräts abgeschlossen haben, werden Sie aufgefordert, die beste Kategorie für das Gerät auszuwählen.
 
-  ![Dies ist ein Screenshot des Bildschirms zum „Auswählen der besten Kategorie für ein Gerät“ eines iOS-Geräts. Er zeigt eine Auswahl von Unternehmens- bzw. persönlicher Registrierung.](./media/and-enroll-11-tem-select-best-category.png)
+![Dies ist ein Screenshot des Bildschirms zum „Auswählen der besten Kategorie für ein Gerät“ eines iOS-Geräts. Er zeigt eine Auswahl von Unternehmens- bzw. persönlicher Registrierung.](./media/and-enroll-11-tem-select-best-category.png)
 
 1. Wählen Sie die entsprechende Option aus, und Sie erhalten eine Benachrichtigung zum Installieren der [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox)-App aus dem Google Play Store. Mit der Datalert-App kann Ihre Organisation die Datenverwendung messen. Tippen Sie auf den __Weiter__-Pfeil in der oberen rechten Ecke des Bildschirms, um fortzufahren.
 

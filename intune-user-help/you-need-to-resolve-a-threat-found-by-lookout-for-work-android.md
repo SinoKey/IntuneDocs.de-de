@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: e60b049e9dd137993d38b822f6268419a27bdc2a
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: b7cd5e4d019030a432845557de4cd27ee652785a
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -35,7 +35,7 @@ Lookout for Work hat eine potenzielle Bedrohung auf Ihrem Gerät erkannt, und Si
 
 Wenn ein Virus oder eine andere Sicherheitsbedrohung auf dem registrierten Gerät vorhanden ist und Sie versuchen, auf Unternehmens-E-Mails oder -dateien zuzugreifen, wird möglicherweise eine Meldung wie die folgende angezeigt:
 
-![Lookout for Work-Fehlermeldung mit Link zur Unternehmensportalwebsite](./media/lookout-go-to-device-management-portal-android.png)
+![Lookout for Work-Fehlermeldung mit Link zur Unternehmensportalwebsite](./media/mtd-go-to-device-management-portal-android.png)
 
 Tippen Sie auf den Link **Portal für die Geräteverwaltung**, um zur [Unternehmensportalwebsite](http://portal.manage.microsoft.com) zu gelangen, auf der Anweisungen zur Behebung des Problems angezeigt werden.
 
