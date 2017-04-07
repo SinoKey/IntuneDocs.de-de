@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 5a1a861096bdfae461b6ad05e424f770796279a2
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -72,7 +73,7 @@ Verwenden Sie diesen Abschnitt, um Informationen zu den OMA-URI-Einstellungen zu
 |**Installationstag planen**<br>./Vendor/MSFT/Policy/Config/Update/ScheduledInstallDay|nur Mobile<br>**Datentyp:** Ganzzahl<br />**Werte:**<br>**0** – Täglich (Standard)<br>**1** – Sonntag<br>**2** – Montag<br>**3** – Dienstag<br>**4** – Mittwoch<br>**5** – Donnerstag<br>**6** – Freitag<br>**7** – Samstag|
 |**Installationszeit planen**<br>./Vendor/MSFT/Policy/Config/Update/ScheduledInstallTime|Desktop und Mobile<br />**Datentyp:** Ganzzahl<br />**Werte:**<br> **0** – **23** Uhr (**0** ist Mitternacht) (Standard: **3**)|
 |**DeviceLock/AllowIdleReturnWithoutPassword**<br>./Vendor/MSFT/Policy/Config/DeviceLock/AllowIdleReturnWithoutPassword|nur Mobile<br />**Datentyp:** Ganzzahl<br />**Werte:**<br>**0** – Der Benutzer kann den Timer für die Kennwort-Toleranzperiode nicht festlegen. Der Wert wird auf „immer“ festgelegt<br>**1** – Der Benutzer kann den Timer für den Kennwort-Verlängerungszeitraum festlegen (Standard)|
-|**WiFi/AllowWiFi**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowWiFi|nur Mobile<br />**Datentyp:** Ganzzahl<br />**Werte:**<br>**0 ** – **WLAN-Verbindung** nicht zulassen<br>**1** – **WLAN-Verbindung zulassen** (Standard)|
+|**WiFi/AllowWiFi**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowWiFi|nur Mobile<br />**Datentyp:** Ganzzahl<br />**Werte:**<br>**0** – **WLAN-Verbindung** nicht zulassen<br>**1** – **WLAN-Verbindung zulassen** (Standard)|
 |**WiFi/AllowInternetSharing**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowInternetSharing|Desktop und Mobile<br>**Datentyp:** Ganzzahl<br />**Werte:<br>** **0** – Nutzung der Internetverbindung nicht zulassen <br> **1** – Nutzung der Internetverbindung zulassen (Standard)|
 |**WiFi/AllowAutoConnectToWiFiSenseHotspots**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowAutoConnectToWiFiSenseHotspots|Desktop und Mobile<br />**Datentyp:** Ganzzahl<br />**Werte:<br>** **0** – Nicht zulässig<br> **1** – Zulässig (Standard)|
 |**WiFi/AllowManualWiFiConfiguration**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowManualWiFiConfiguration|nur Mobile<br />**Datentyp:** Ganzzahl<br />**Werte:**<br>**0** – Nur WLAN-Verbindungen zulassen, die mit MDM konfiguriert wurden<br>**1** – Das Hinzufügen von neuen Netzwerk-SSIDs zusätzlich zu den SSIDs, die bereits von MDM erstellt wurden, ist zulässig (Standard)|
@@ -325,9 +326,4 @@ Alle Einstellungen gelten für nur Windows 10 Desktop.
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

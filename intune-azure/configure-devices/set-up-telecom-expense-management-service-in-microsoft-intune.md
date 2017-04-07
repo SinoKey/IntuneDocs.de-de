@@ -3,8 +3,8 @@ title: Einrichten eines TEM-Diensts (Telecom Expense Management)
 titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Konfigurieren Sie den Saaswedo-TEM-Dienst für die Integration mit Intune."
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article
@@ -16,9 +16,9 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: aa2e668641da1a87e6145fe826d88c2ca5b184a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 7edbba3a86213db71e41bd0d0de6c5d285025b8b
+ms.lasthandoff: 03/17/2017
 
 ---
 
@@ -61,7 +61,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie bereits ein TEM-Dienst-Abonneme
 
 2. Gehen Sie in der Datalert-Verwaltungskonsole zur Registerkarte **Einstellungen** und anschließend zu **MDM-Konfiguration**.
 
-3. Wählen Sie **Blockierung aufheben** aus, damit Sie die Einstellungen auf der Seite eingeben können.
+3. Wählen Sie **Unblock** (Blockierung aufheben) aus, damit Sie die Einstellungen auf der Seite eingeben können.
 
 4. Wählen Sie für **Server-MDM** die Option **Microsoft Intune** aus.
 
@@ -75,7 +75,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie bereits ein TEM-Dienst-Abonneme
 
   ![Die Datalert-Seite, die eine erfolgreiche Verbindung anzeigt](../media/tem-mdm-configuration-mdm-server-page.png)
 
-### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>Schritt 2: Überprüfen Sie, ob die TEM-Funktion in Intune „Aktiv“ ist
+### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>Schritt 2: Überprüfen, ob die TEM-Funktion in Intune aktiv ist
 
 Nach Abschluss von Schritt 1 sollte die Verbindung automatisch aktiviert werden und der Verbindungsstatus **Aktiv** im Azure-Portal angezeigt werden. Diese Schritte zeigen Ihnen, wie Sie auf den Status **Aktiv** prüfen.
 
@@ -83,23 +83,23 @@ Nach Abschluss von Schritt 1 sollte die Verbindung automatisch aktiviert werden 
 
 2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte konfigurieren** aus.
+3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
 
 4. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Setup** > **Telecom Expense Management** aus. 
 
-   Suchen Sie nach dem Verbindungsstatus **Aktiv** oben auf der Seite.
+   Suchen Sie nach dem **Aktiv**-Verbindungsstatus oben auf der Seite.
 
-  ![Das Azure-Portal mit Verbindungsstatus „aktiv“ für Datalert](../media/tem-azure-portal-enable-service.png)
+  ![Azure-Portal mit aktivem Datalert-Verbindungsstatus](../media/tem-azure-portal-enable-service.png)
 
 ### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>Schritt 3: Bereitstellen der Datalert-App für in Unternehmen registrierte Geräte
 
-Um sicherzustellen, dass die Datennutzung nur von firmeneigenen Leitungen gesammelt wird, müssen Sie Gerätekategorien in Intune erstellen und dann die Datalert-App nur für Firmentelefone zum Ziel stellen. Führen Sie die Schritte in folgenden Unterabschnitten durch.
+Um sicherzustellen, dass die Datennutzung nur von firmeneigenen Leitungen gesammelt wurde, müssen Sie Gerätekategorien in Intune erstellen und dann die Datalert-App nur für Firmentelefone zum Ziel stellen. Führen Sie die Schritte in folgenden Unterabschnitten durch.
 
 #### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>Definieren Sie Gerätekategorien und Gerätegruppen, die den Kategorien zugeordnet sind
 
 Abhängig von Ihren organisatorischen Bedürfnissen müssen Sie mindestens zwei Gerätekategorien (z.B. Unternehmen und Privat) und dynamische Gerätegruppen für jede Kategorie erstellen. Sie können je nach Bedarf weitere Kategorien für Ihre Organisation erstellen. 
 
-Diese Kategorien werden Benutzern während der Registrierung angezeigt. Je nachdem, welche Kategorie Benutzer auswählen, wird das registrierte Gerät in die entsprechende Gerätegruppe verschoben. Anweisungen zum Erstellen von Gerätekategorien finden Sie unter [Zuweisen von Geräten zu Gruppen](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping).
+Diese Kategorien werden Benutzern während der Registrierung angezeigt. Je nachdem, welche Kategorie Benutzer auswählen, wird das registrierte Gerät in die entsprechende Gerätegruppe verschoben. Schritte zum Erstellen von Gerätekategorien finden Sie unter [Zuweisen von Geräten zu Gruppen](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping).
 
   ![Screenshot des Blatts „Richtlinie hinzufügen“](../media/tem-dynamic-membership-rules.png)
 
@@ -109,15 +109,15 @@ Um die Datalert-App in Intune für jede Plattform zu erstellen, gehen Sie wie fo
 
 1. Wählen Sie im Azure-Portal auf dem Blatt **Intune** die Option **Apps verwalten** aus.
 
-2. Wählen Sie auf dem Blatt **App verwalten** die Option **Verwalten** > **Apps** aus. 
+2. Wählen Sie auf dem Blatt **Apps verwalten** die Option **Verwalten** > **Apps** aus. 
 
 3. Wählen Sie **Hinzufügen** aus, um eine App hinzuzufügen.
 
 4. Wählen Sie den Anwendungstyp aus. Für iOS würden Sie zum Beispiel **iOS Store-App** auswählen.
 
-5. Suchen Sie unter **App Store durchsuchen** nach der Datalert-App, indem Sie **Dataltert** in das Suchfenster eingeben.
+5. In **App Store durchsuchen**, suchen Sie nach der Datalert-App durch Eingabe von **Datalert** im Suchfenster.
 
-6. Wählen Sie die **Datalert**-App und dann **OK** aus.
+6. Wählen Sie die **Datalert**-App aus, und wählen Sie **OK**.
 
   ![Screenshot des Blatts „Richtlinie hinzufügen“](../media/tem-select-app-from-apple-app-store.png)
 
@@ -129,7 +129,7 @@ Um die Datalert-App in Intune für jede Plattform zu erstellen, gehen Sie wie fo
 
 1. Wählen Sie die Datalert-App für iOS aus, die Sie im vorherigen Schritt erstellt haben.
 
-2. Gehen Sie auf dem **Apps**-Blatt zu **Verwalten** > **Zuweisungen**. 
+2. Navigieren Sie auf dem Blatt **Apps** zu **Verwalten** > **Zuweisungen**. 
 
 3. Wählen Sie **Gruppen auswählen** aus, und befolgen Sie die Schritte zum Auswählen der Unternehmensgerätegruppe.
 
@@ -141,7 +141,7 @@ Um die Datalert-App in Intune für jede Plattform zu erstellen, gehen Sie wie fo
 
 Sie haben nun die Intune- und Datalert-Dienste so konfiguriert, dass sie miteinander kommunizieren können. Sie müssen jetzt die kostenpflichtigen Firmentelefonleitungen zur Datalert-Konsole hinzufügen und Schwellenwerte und Aktionen für alle Funk- oder Roaming-Verwendungsverstöße definieren. 
 
-Um diese Elemente festzulegen, gehen Sie zur [Datalert-Setup für Microsoft Intune Seite](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup), und führen Sie unter der Registerkarte **Einstellungen** die Schritte im Setup-Assistenten aus.
+Um diese Elemente festzulegen, gehen Sie zur [Seite „Datalert setup for Microsoft Intune“ (Datalertsetup für Microsoft Intune)](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup), und führen Sie die Schritte im Setup-Assistenten unter der Registerkarte **Einstellungen** aus.
 
   ![Screenshot des Blatts „Richtlinie hinzufügen“](../media/tem-add-phone-lines-to-datalert-console.png)
 

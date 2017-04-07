@@ -16,8 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
+ms.sourcegitcommit: 02c844a5b38023a6dfc6c4ef1de81e1416601fba
+ms.openlocfilehash: b0c3520c7c1fd29a631587fe1a69d4c411099cb4
+ms.lasthandoff: 03/07/2017
 
 
 ---
@@ -58,7 +59,7 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 |----------------|-|
 |**Datenaustausch zwischen Arbeitsprofilen und persönlichen Profilen zulassen**|Lässt zu, dass Apps im Arbeitsprofil Daten mit Apps im persönlichen Profil des Benutzers austauschen. Wählen Sie aus:<br><br>- **Freigabe über Grenzen hinweg verhindern**<br>- **Apps im Arbeitsprofil können Freigabeanforderungen vom persönlichen Profil verarbeiten**<br>- **Keine Einschränkungen bei Freigabe**|
 |**Benachrichtigungen des Arbeitsprofils ausblenden, wenn das Gerät gesperrt ist**<br>(Android 6 und höher)|Legt fest, ob Benachrichtigungen aus dem Arbeitsprofil angezeigt werden, wenn das Gerät gesperrt ist.|
-|**Standardberechtigungsrichtlinie für Apps festlegen**<br>(Android 6 und höher)|Legt die Standardberechtigungsrichtlinie für alle Apps im Arbeitsprofil fest.|
+|**Standardberechtigungsrichtlinie für Apps festlegen**<br>(Android 6 und höher)|Legt die Standardberechtigungsrichtlinie für alle Apps im Arbeitsprofil fest. Ab Android 6 wird der Endbenutzer während der Laufzeit zur Eingabe bestimmter Berechtigungen aufgefordert, die für Apps erforderlich sind.  Diese Richtlinieneinstellung ermöglicht der IT-Abteilung, zu entscheiden, wie oder ob Benutzer aufgefordert werden, Berechtigungen für Apps im Arbeitsprofil zu gewähren. <br/><br/>Beispielsweise kann die IT-Abteilung eine App mithilfe von Push in das Arbeitsprofil übertragen, die Speicherortzugriff benötigt.  Normalerweise würde diese App den Benutzer in einem Popupdialogfeld fragen, ob er der App Speicherortzugriff gewähren möchte, und der Benutzer könnte dies genehmigen oder ablehnen.  Mit dieser Richtlinie kann die IT-Abteilung entscheiden, ob alle Berechtigungen automatisch ohne Aufforderung gewährt werden sollen, ohne Aufforderung automatisch verweigert werden sollen, oder ob der Endbenutzer entscheiden kann.|
 
 
 ## <a name="custom-policy-settings"></a>Benutzerdefinierte Richtlinieneinstellungen
@@ -91,9 +92,4 @@ Intune unterstützt zurzeit eine begrenzte Anzahl von benutzerdefinierten Androi
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

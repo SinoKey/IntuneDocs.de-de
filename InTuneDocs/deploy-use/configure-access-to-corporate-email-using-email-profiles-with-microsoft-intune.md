@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: f76b65ad97771d6b40c4e3bff75a19fd1f922eea
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -38,27 +39,21 @@ Sie können E-Mail-Profile verwenden, um den systemeigenen E-Mail-Client auf den
 -    Windows 10 (Desktopversion), Windows 10 Mobile und höher
 -    iOS 8.0 und höher
 -    Samsung KNOX Standard (4.0 und höher)
--    Android for Work
-
->[!NOTE]
->Intune stellt zwei Android for Work-E-Mail-Profile bereit: eines für die Gmail-E-Mail-App und eines für die Nine Work-E-Mail-App. Diese Apps sind im Google Play Store erhältlich und unterstützen Verbindungen mit Exchange. Stellen Sie auf den Geräten der Benutzer eine dieser E-Mail-Apps bereit, erstellen Sie das entsprechende Profil, und stellen Sie dieses bereit, um die E-Mail-Konnektivität zu aktivieren.
+-    Android for Work (Drittanbieter-E-Mail-Apps, native E-Mail-App hat nur ein persönliches Profil)
 
 Sie können nicht nur ein E-Mail-Konto auf dem Gerät einrichten, sondern auch, wie viele E-Mails und welche Inhaltstypen synchronisiert werden sollen, abhängig vom Gerätetyp.
 
->[!NOTE]
->
->Wenn der Benutzer ein E-Mail-Profil installiert hat, bevor ein Profil von Intune eingerichtet wurde, hat die Bereitstellung des Intune-E-Mail-Profils je nach Geräteplattform folgende Auswirkungen:
+Wenn der Benutzer ein E-Mail-Profil installiert hat, bevor ein Profil von Intune eingerichtet wurde, hat die Bereitstellung des Intune-E-Mail-Profils je nach Geräteplattform folgende Auswirkungen:
 
->**iOS**: Basierend auf dem Hostnamen und der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt. Das vom Benutzer erstellte doppelte E-Mail-Profil blockiert die Bereitstellung eines Profils, das vom Intune-Administrator erstellt wurde. Das ist ein häufig auftretendes Problem, da iOS-Benutzer in der Regel ein E-Mail-Profil erstellen und anschließend die Registrierung vornehmen. Das Unternehmensportal informiert den Benutzer darüber, dass aufgrund des manuell konfigurierten E-Mail-Profils eine Inkompatibilität besteht, und fordert den Benutzer dazu auf, dieses Profil zu entfernen. Der Benutzer sollte sein E-Mail-Profil entfernen, damit das Intune-Profil eingerichtet werden kann. Weisen Sie Ihre Benutzer an, sich vor der Installation eines E-Mail-Profils zu registrieren und die Einrichtung des Profils durch Intune zuzulassen, um das Problem zu vermeiden.
+**iOS**<br>Basierend auf dem Hostnamen und der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt. Das vom Benutzer erstellte doppelte E-Mail-Profil blockiert die Bereitstellung eines Profils, das vom Intune-Administrator erstellt wurde. Das ist ein häufig auftretendes Problem, da iOS-Benutzer in der Regel ein E-Mail-Profil erstellen und anschließend die Registrierung vornehmen. Das Unternehmensportal informiert den Benutzer darüber, dass aufgrund des manuell konfigurierten E-Mail-Profils eine Inkompatibilität besteht, und fordert den Benutzer dazu auf, dieses Profil zu entfernen. Der Benutzer sollte sein E-Mail-Profil entfernen, damit das Intune-Profil eingerichtet werden kann. Weisen Sie Ihre Benutzer an, sich vor der Installation eines E-Mail-Profils zu registrieren und die Einrichtung des Profils durch Intune zuzulassen, um das Problem zu vermeiden.
 
->**Windows**: Basierend auf dem Hostnamen und der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt. Intune überschreibt das vorhandene vom Benutzer erstellte E-Mail-Profil.
+**Windows**<br>Basierend auf dem Hostnamen und der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt. Intune überschreibt das vorhandene vom Benutzer erstellte E-Mail-Profil.
 
->**Samsung KNOX**: Basierend auf der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt und durch das Intune-Profil überschrieben. Wenn der Benutzer dieses Konto einrichtet, wird es erneut durch das Intune-Profil überschrieben. Beachten Sie, dass dies für den Benutzer verwirrend sein kann.
+**Samsung KNOX**<br>Basierend auf der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt und durch das Intune-Profil überschrieben. Wenn der Benutzer dieses Konto einrichtet, wird es erneut durch das Intune-Profil überschrieben. Beachten Sie, dass dies für den Benutzer verwirrend sein kann.
 
->Da Samsung KNOX zum Identifizieren des Profils keinen Hostnamen verwendet, wird davon abgeraten, mehrere E-Mail-Profile für die Verwendung unter derselben E-Mail-Adresse auf unterschiedlichen Hosts zu erstellen, da sie sich gegenseitig überschreiben.
+Da Samsung KNOX zum Identifizieren des Profils keinen Hostnamen verwendet, wird davon abgeraten, mehrere E-Mail-Profile für die Verwendung unter derselben E-Mail-Adresse auf unterschiedlichen Hosts zu erstellen, da sie sich gegenseitig überschreiben.
 
->**Android for Work**: Das Intune-Profil wird nur auf spezifische E-Mail-Apps im Arbeitsprofil des Geräts angewendet und hat keine Auswirkungen auf die E-Mail-Konfiguration im Benutzerprofil des Geräts.
-
+**Android for Work**<br>Intune stellt zwei Android for Work-E-Mail-Profile bereit: eines für die Gmail-E-Mail-App und eines für die Nine Work-E-Mail-App. Diese Apps können im Google Play Store heruntergeladen werden; sie installieren ein Arbeitsprofil auf dem Gerät, sodass keine doppelten Profile erstellt werden. Beide Apps unterstützen Verbindungen mit Exchange. Stellen Sie auf den Geräten der Benutzer eine dieser E-Mail-Apps bereit, erstellen Sie das entsprechende Profil, und stellen Sie das entsprechende E-Mail-Profil bereit, um die E-Mail-Konnektivität zu ermöglichen. E-Mail-Apps, z.B. Nine Work, können möglicherweise kostenpflichtig sein. Lesen Sie die Lizenzierungsdetails der App oder kontaktieren Sie das Unternehmen, das die App bereitstellt, um Fragen zu stellen.
 
 ## <a name="secure-email-profiles"></a>Schützen von E-Mail-Profilen
 E-Mail-Profile können mithilfe eines Zertifikats oder Kennworts geschützt werden.
@@ -105,7 +100,7 @@ Das Kennwort ist nicht im E-Mail-Profil enthalten, sodass der Benutzer dieses be
     |**E-Mail-Adresse**|Vorgehensweise beim Generieren der E-Mail-Adresse für den Benutzer auf den einzelnen Geräten. Wählen Sie **Primäre SMTP-Adresse** aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden. Verwenden Sie **Benutzerprinzipalname**, um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden.|
     |**Authentifizierungsmethode** (Android for Work, Samsung KNOX und iOS)|Wählen Sie entweder **Benutzername und Kennwort** oder **Zertifikat** als Authentifizierungsmethode aus, die vom E-Mail-Profil verwendet werden soll.|
     |**Wählen Sie ein Clientzertifikat für die Clientauthentifizierung (Identitätszertifikat) aus** (Android for Work, Samsung KNOX und iOS)|Wählen Sie das zuvor erstellte SCEP-Clientzertifikat aus, das zur Authentifizierung der Exchange-Verbindung verwendet werden soll. Weitere Informationen zum Verwenden von Zertifikatprofilen in Intune finden Sie unter [Sicherer Zugriff auf Ressourcen mit Zertifikatprofilen](secure-resource-access-with-certificate-profiles.md). Diese Option wird nur für die Authentifizierungsmethode **Zertifikate** angezeigt.|
-    |**S/MIME verwenden** (Samsung KNOX und iOS)|Ausgehende E-Mails werden mithilfe von S/MIME-Verschlüsselung gesendet.|
+    |**S/MIME verwenden** (Samsung KNOX und iOS)|Ausgehende E-Mails werden mithilfe der S/MIME-Signatur gesendet.|
     |**Signaturzertifikat** (Samsung KNOX und iOS)|Wählen Sie das Signaturzertifikat aus, das zum Signieren von ausgehenden E-Mails verwendet werden soll. Diese Option wird nur angezeigt, wenn Sie **S/MIME verwenden** auswählen.|
     |**Anzahl der Tage für die E-Mail-Synchronisierung**|Angabe, E-Mails wievieler Tage synchronisiert werden sollen, oder wählen Sie **Unbegrenzt** aus, um alle verfügbaren E-Mail-Nachrichten zu synchronisieren.|
     |**Synchronisierungszeitplan** (Android for Work, Samsung KNOX, Windows Phone 8 und höher, Windows 10)|Wählen Sie den Zeitplan aus, nach dem Geräte mit Daten vom Exchange-Server synchronisiert werden. Sie können auch **Beim Erhalt von Nachrichten** auswählen, wobei die Daten sofort beim Eintreffen synchronisiert werden, oder **Manuell**, wobei der Benutzer des Geräts die Synchronisierung initiieren muss.|
@@ -136,9 +131,4 @@ Eine Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeit
 > [!NOTE]
 > - Stellen Sie zusätzlich zu den entsprechenden E-Mail-Profilen auch die Gmail- oder die Nine Work-E-Mail-App für Android for Work bereit.
 > - Wenn Sie ein E-Mail-Profil von einem Gerät entfernen, bearbeiten Sie die Bereitstellung, und entfernen Sie alle Gruppen, in denen das Gerät Mitglied ist. Beachten Sie, dass Sie ein E-Mail-Profil nur dann auf diese Weise entfernen können, wenn es nicht das einzige E-Mail-Profil auf dem Gerät ist.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

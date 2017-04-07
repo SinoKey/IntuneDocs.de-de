@@ -2,10 +2,10 @@
 title: "Registrieren von iOS-Geräten mit dem Setup-Assistenten | Microsoft-Dokumentation"
 description: "Registrieren von unternehmenseigenen iOS-Geräten mithilfe des Apple Configurator-Tools, um die Geräte auf die Werkseinstellungen zurückzusetzen und für die Ausführung des Setup-Assistenten vorzubereiten."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
-ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 5bb9c68db8edb68531fc40bc93c28881a95b6940
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -84,7 +85,7 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Grup
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>Mit dem Setup-Assistenten zu registrierende Geräte hinzufügen
 
-1. Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) zu **Gruppen** &gt; **Alle Geräte** &gt; **Alle unternehmenseigenen Geräte** &gt; **Alle Geräte**, und wählen Sie dann **Geräte hinzufügen** aus. 
+1. Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) zu **Gruppen** &gt; **Alle Geräte** &gt; **Alle unternehmenseigenen Geräte** &gt; **Alle Geräte**, und wählen Sie dann **Geräte hinzufügen** aus.
 
    Sie können Geräte auf zwei Arten hinzufügen:
 
@@ -95,7 +96,7 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Grup
     |||
     |-|-|
     |&lt;Seriennummer 1&gt;|&lt;Details zu Gerät 1&gt;|
-    |&lt;Seriennummer&2;&gt;|&lt;Details zu Gerät 2&gt;|
+    |&lt;Seriennummer 2&gt;|&lt;Details zu Gerät 2&gt;|
 
   Diese CSV-Datei sieht bei Anzeige in einem Text-Editor folgendermaßen aus:
 
@@ -106,13 +107,13 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Grup
 
   -  **Manuelles Hinzufügen von Gerätedetails**&mdash;Geben Sie die Seriennummer und alle Anmerkungen und Details von bis zu 15 Geräten ein.
 
-  Bestätigen Sie im Bereich **Geräte überprüfen** die Seriennummern. Sie können auch entscheiden, ob Sie die **Details** für Seriennummern überschreiben, die wieder importiert werden. Alternativ können Sie das Kontrollkästchen **Überschreiben** deaktivieren, um die aktuellen Informationen zu erhalten. 
+  Bestätigen Sie im Bereich **Geräte überprüfen** die Seriennummern. Sie können auch entscheiden, ob Sie die **Details** für Seriennummern überschreiben, die wieder importiert werden. Alternativ können Sie das Kontrollkästchen **Überschreiben** deaktivieren, um die aktuellen Informationen zu erhalten.
 
-> [!NOTE] 
+> [!NOTE]
 > In der vorhandenen Intune-Administratorkonsole können Administratoren zugehörige Details einer hochgeladenen CSV-Datei akzeptieren und die vorhandenen Details für einzelne Seriennummern überschreiben. Sie können im neuen Azure-Portal nur die Details für alle Seriennummern überschreiben oder die Details für ebendiese ignorieren.
 
-  > [!NOTE]
-  > Wenn Sie später unternehmenseigene Geräte aus der Intune-Verwaltung entfernen müssen, kann es notwendig sein, aus der Gerätegruppe **Nach iOS-Seriennummer** unter **Vorabregistrierte Unternehmensgeräte** die Seriennummer der Geräte in Intune zu entfernen, um die Geräteregistrierung zu deaktivieren. Wenn Intune eine Notfallwiederherstellung durchführt, während oder nachdem Sie Seriennummern entfernt haben, müssen Sie sicherstellen, dass in dieser Gruppe nur die Seriennummern aktiver Geräte vorhanden sind.
+> [!NOTE]
+> Wenn Sie später unternehmenseigene Geräte aus der Intune-Verwaltung entfernen müssen, kann es notwendig sein, aus der Gerätegruppe **Nach iOS-Seriennummer** unter **Vorabregistrierte Unternehmensgeräte** die Seriennummer der Geräte in Intune zu entfernen, um die Geräteregistrierung zu deaktivieren. Wenn Intune eine Notfallwiederherstellung durchführt, während oder nachdem Sie Seriennummern entfernt haben, müssen Sie sicherstellen, dass in dieser Gruppe nur die Seriennummern aktiver Geräte vorhanden sind.
 
 2. Klicken Sie auf **Weiter**.
 
@@ -127,23 +128,22 @@ Geben Sie das Profil an, das hinzugefügten Geräten aus der Liste der verfügba
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>Exportieren eines Profils zum Bereitstellen auf iOS-Geräten
 
-1. Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) zu **Richtlinie** &gt; **Unternehmensgeräteregistrierung**, und wählen Sie das Geräteprofil aus, das auf mobilen Geräten bereitgestellt werden soll. 
+1. Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) zu **Richtlinie** &gt; **Unternehmensgeräteregistrierung**, und wählen Sie das Geräteprofil aus, das auf mobilen Geräten bereitgestellt werden soll.
 
 2. Wählen Sie in der Taskleiste **Exportieren** aus. Kopieren und speichern Sie die **Profil-URL**. Sie werden sie später in Apple Configurator hochladen, um das von iOS-Geräten verwendete Intune-Profil zu definieren.
 
   Zur Unterstützung von Apple Configurator 2 muss die URL des 2.0-Profils bearbeitet werden. Ersetzen Sie dafür diesen Code:
-    ```
-    https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
-    ```
-    durch diesen Code:
 
-    ```
-    https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
-    ```
+  ```
+  https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
+  ```
+  durch diesen Code:
+
+  ```
+  https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
+  ```
 
    Sie laden im folgenden Verfahren diese Profil-URL mit Apple Configurator in den Apple DEP-Dienst hoch, um das von iOS-Geräten verwendete Intune-Profil zu definieren.
-
-
 
 ### <a name="prepare-the-device-with-apple-configurator"></a>Vorbereiten des Geräts mit Apple Configurator
 
@@ -179,16 +179,12 @@ iOS-Geräte werden mit dem Mac-Computer verbunden und für die Verwaltung mobile
 
 ### <a name="distribute-devices"></a>Verteilen von Geräten
 
-Die Geräte sind nun für die Unternehmensregistrierung bereit. 
+Die Geräte sind nun für die Unternehmensregistrierung bereit. Schalten Sie die Geräte aus, und verteilen Sie sie an Benutzer. Wenn die Benutzer die Geräte einschalten, wird der Setup-Assistent gestartet.
 
-Schalten Sie die Geräte aus, und verteilen Sie sie an Benutzer. Wenn die Benutzer die Geräte einschalten, wird der Setup-Assistent gestartet.
+>[!NOTE]
+>Wenn ein Benutzer versucht, ein DEP-Geräte zu registrieren, der Gerätegrenzwert aber bereits überschritten ist, schlägt die Registrierung fehl, ohne das der Benutzer Warnmeldungen erhält.
 
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Voraussetzungen für die Registrierung von Geräten](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

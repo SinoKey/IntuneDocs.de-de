@@ -3,9 +3,9 @@
 title: Installieren der PC-Clientsoftware | Microsoft-Dokumentation
 description: Befolgen Sie diese Anleitung zum Verwalten Ihrer Windows-PCs durch die Microsoft Intune-Clientsoftware.
 keywords: 
-author: staciebarker
-ms.author: stabar
-ms.date: 02/14/2017
+author: nathbarn
+ms.author: nathbarn
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 9606d8f79166e6b38f02aefd4afc52f2a47c1362
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
+ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -106,7 +106,7 @@ Sie können die Intune-Clientsoftware als Teil eines Betriebssystemabbilds auf C
 
 ## <a name="instruct-users-to-self-enroll"></a>Einweisen von Benutzern in die eigenständige Registrierung
 
-Benutzer können die Intune-Clientsoftware installieren, indem Sie auf die [Unternehmensportal-Website](http://portal.manage.microsoft.com) gehen. Die genauen Informationen, die den Benutzern im Webportal angezeigt werden, können je nach MDM-Autorität Ihres Kontos und je nach Betriebssystemplattform und Version des Benutzer-PCs variieren. 
+Benutzer können die Intune-Clientsoftware installieren, indem Sie auf die [Unternehmensportal-Website](http://portal.manage.microsoft.com) gehen. Die genauen Informationen, die den Benutzern im Webportal angezeigt werden, können je nach MDM-Autorität Ihres Kontos und je nach Betriebssystemplattform und Version des Benutzer-PCs variieren.
 
 Wenn Benutzern keine Lizenz für Intune zugewiesen wurde oder die MDM-Autorität der Organisation nicht auf Intune festgelegt wurde, werden den Benutzern keine Optionen zum Registrieren angezeigt.
 
@@ -179,6 +179,83 @@ Verwenden Sie eins der folgenden Verfahren, um die erfolgreiche Clientbereitstel
     > [!TIP]
     > Klicken Sie im Bericht auf beliebige Spaltenüberschriften, um die Liste nach dem Inhalt der betreffenden Spalte zu sortieren.
 
+## <a name="uninstall-the-windows-client-software"></a>Deinstallieren der Windows-Clientsoftware
+
+Es gibt zwei Möglichkeiten, die Registrierung der Clientsoftware von Windows aufzugeben:
+
+- Über die Intune-Verwaltungskonsole aus (empfohlene Methode)
+- Über eine Eingabeaufforderung auf dem Client
+
+### <a name="unenroll-by-using-the-intune-admin-console"></a>Registrierung durch Verwendung der Intune-Verwaltungskonsole aufheben
+
+Um die Registrierung des Softwareclients über die Intune-Verwaltungskonsole aufzuheben, navigieren sie zu **Gruppen** > **Alle Computer** > **Geräte**. Klicken Sie mit der rechten Maustaste auf den Client, und wählen Sie **Abkoppeln/Zurücksetzen** aus.
+
+### <a name="unenroll-by-using-a-command-prompt-on-the-client"></a>Aufgeben der Registrierung durch Verwendung einer Eingabeaufforderung auf dem Client
+
+Führen Sie mithilfe einer Eingabeaufforderung mit erhöhten Rechten die folgenden Befehle aus.
+
+**Methode 1**
+
+    ```
+    "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
+    ```
+
+**Methode 2**<br>Beachten Sie, dass alle diese Agents auf jeder Windows-SKU installiert sind:
+
+    ```
+    wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Microsoft Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Microsoft Policy Platform" call uninstall<br>
+    wmic product where name="Microsoft Security Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client Service" call uninstall<br>
+    wmic product where name="Microsoft Easy Assist v2" call uninstall<br>
+    wmic product where name="Microsoft Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Microsoft Intune Center" call uninstall<br>
+    wmic product where name="Microsoft Online Management Update Manager" call uninstall<br>
+    wmic product where name="Microsoft Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Microsoft Intune" call uninstall<br>
+    wmic product where name="Windows Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Windows Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Windows Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Windows Policy Platform" call uninstall<br>
+    wmic product where name="Windows Security Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client Service" call uninstall<br>
+    wmic product where name="Windows Easy Assist v2" call uninstall<br>
+    wmic product where name="Windows Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Windows Intune Center" call uninstall<br>
+    wmic product where name="Windows Online Management Update Manager" call uninstall<br>
+    wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Windows Intune" call uninstall
+    ```
+
+> [!TIP]
+> Durch die Aufhebung der Registrierung eines Clients verbleibt ein ungesicherter Bericht auf Serverseite für den betroffenen Client. Der Vorgang zur Aufhebung der Registrierung ist asynchron. Es gibt neun Agents, die gelöscht werden müssen, also dauert es bis zu 30 Minuten, bis der Vorgang abgeschlossen ist.
+
+### <a name="check-the-unenrollment-status"></a>Überprüfen des Status der Aufhebung der Registrierung
+
+Überprüfen Sie „%ProgramFiles%\Microsoft\OnlineManagement“, und stellen Sie sicher, dass ausschließlich die folgenden Verzeichnisse auf der linken Seite angezeigt werden:
+
+- AgentInstaller
+- Protokolle
+- Updates
+- Allgemein
+
+### <a name="remove-the-onlinemanagement-folder"></a>Entfernen des Ordner „OnlineManagement“
+
+Der Prozess zur Aufhebung der Registrierung entfernt nicht den OnlineManagement-Ordner. Warten Sie nach der Deinstallation 30 Minuten, und führen Sie dann diesen Befehl aus. Wenn Sie ihn zu früh ausführen, kann die Deinstallation in einem unbekannten Status verbleiben. Um den Ordner zu entfernen, starten Sie einen Befehl mit erhöhten Rechten, und führen Sie folgendes aus:
+
+    ```
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    ```
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Verwalten von Windows-PCs mit Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -139,7 +140,7 @@ Nachdem Sie überprüft haben, dass die Anwendung erfolgreich hochgeladen wurde,
     |**Gerätekonformität mit Unternehmensrichtlinien für Zugriff erforderlich**|Diese Einstellung lässt die Verwendung der App nur dann zu, wenn das Gerät nicht per Jailbreak oder Rooting manipuliert wurde.|
     |**Überprüfen der Zugriffsanforderungen nach (Minuten)**|Geben Sie im Feld **Timeout** den Zeitraum ein, bevor die Zugriffsanforderungen für die App nach dem Öffnen der App erneut geprüft werden müssen.|
     |**Offline-Toleranzperiode**|Wenn das Gerät offline ist, geben Sie den Zeitraum ein, bevor die Zugriffsanforderungen für die App erneut geprüft werden.|
-    |**App-Daten verschlüsseln**|Diese Einstellung gibt an, dass alle dieser App zugeordneten Daten verschlüsselt werden. Dies umfasst extern gespeicherte Daten, z. B. auf SD-Karten.<br /><br />**Verschlüsselung für iOS**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, werden Daten im Ruhezustand mit vom Betriebssystem bereitgestellter Verschlüsselung auf Geräteebene verschlüsselt. Dies wird durch die Geräte-PIN-Richtlinie aktiviert, die vom IT-Administrator festgelegt wird. Wenn eine PIN erforderlich ist, werden die Daten gemäß den Einstellungen in der mobilen Anwendungsverwaltungsrichtlinie verschlüsselt. Wie in der Apple-Dokumentation angegeben, [sind die von iOS verwendeten Module FIPS 140-2-zertifiziert](http://support.apple.com/en-us/HT202739).<br /><br />**Verschlüsselung für Android**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, stellt Microsoft die Verschlüsselung bereit. Daten werden während der Datei-E/A-Vorgänge synchron verschlüsselt.  Inhalt auf dem Speicher des Geräts wird immer verschlüsselt. Die Verschlüsselungsmethode ist nicht FIPS 140-2-zertifiziert.|
+    |**App-Daten verschlüsseln**|Diese Einstellung gibt an, dass alle dieser App zugeordneten Daten verschlüsselt werden. Dies umfasst extern gespeicherte Daten, z. B. auf SD-Karten.<br /><br />**Verschlüsselung für iOS**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, werden Daten im Ruhezustand mit vom Betriebssystem bereitgestellter Verschlüsselung auf Geräteebene verschlüsselt. Dies wird durch die Geräte-PIN-Richtlinie aktiviert, die vom IT-Administrator festgelegt wird. Wenn eine PIN erforderlich ist, werden die Daten gemäß den Einstellungen in der mobilen Anwendungsverwaltungsrichtlinie verschlüsselt. Wie in der Apple-Dokumentation angegeben, [sind die von iOS verwendeten Module FIPS 140-2-zertifiziert](http://support.apple.com/en-us/HT202739).<br /><br />**Verschlüsselung für Android**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, stellt Microsoft die Verschlüsselung bereit. Daten werden während der Datei-E/A-Vorgänge synchron verschlüsselt.  Inhalt auf dem Speicher des Geräts wird immer verschlüsselt. Die Verschlüsselungsmethode ist nur für Samsung KNOX-Geräte FIPS 140-2-kompatibel.|
     |**Blockieren von Bildschirmaufnahmen** (nur Android-Geräte)|Diese Einstellung gibt an, dass die Bildschirmaufnahmefunktionen des Geräts blockiert werden, wenn jemand diese App verwendet.|
 
 4. Wählen Sie danach die Option **Richtlinie speichern**.
@@ -195,9 +196,4 @@ In Fällen, in denen das Gerät oder der Benutzer zwei in Konflikt stehende Rich
 -   Wenn bereits eine Richtlinie mit dem Gerät bereitgestellt wurde, werden die vorhandenen Richtlinieneinstellungen nicht überschrieben.
 
 -   Wenn keine Richtlinie für das Gerät bereitgestellt wurde und zwei widersprüchliche Einstellungen bereitgestellt werden, wird die in das Gerät integrierte Standardeinstellung verwendet.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

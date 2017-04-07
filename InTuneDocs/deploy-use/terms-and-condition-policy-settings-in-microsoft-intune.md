@@ -2,8 +2,8 @@
 title: "Einstellungen für Nutzungsbedingungsrichtlinien | Microsoft-Dokumentation"
 description: "Sie können Intune-Nutzungsbedingungen für Benutzergruppen bereitstellen, um zu erläutern, wie sich die Registrierung, der Zugriff auf Arbeitsressourcen und die Verwendung des Unternehmensportals auf Geräte und Benutzer auswirken."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -82,9 +83,4 @@ Beim Bearbeiten einer vorhandenen Nutzungsbedingungsrichtlinie können Sie ausw�
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

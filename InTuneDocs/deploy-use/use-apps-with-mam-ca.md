@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -44,9 +45,7 @@ Eine Möglichkeit ist, die Geräteregistrierung über die Azure AD-Verwaltungsko
 * **iOS-Gerät**: Öffnen Sie die Azure Authenticator-App, wischen Sie für das Konto nach links, und wählen Sie „Registrierung aufheben“ aus.  
 * **Android-Gerät**: Deinstallieren Sie die Unternehmensportal-App, oder entfernen Sie das Konto aus den **Systemeinstellungen**.
 
-
-
-## <a name="app-based-ca-with-conditional-access-based-on-device-compliance"></a>App-basierte CA mit dem bedingten Zugriff basierend auf Gerätekompatibilität  
+## <a name="app-based-ca-with-device-based-ca"></a>App-basierte Zertifizierungsstelle mit gerätebasierter Zertifizierungsstelle  
 
 Sie können über die [Intune-Administratorkonsole](https://manage.microsoft.com) oder die [Azure AD Premium-Verwaltungskonsole] (https://manage.windowsazure.com) einen [bedingten Zugriff basierend auf Gerätekompatibilität](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**bedingten Zugriff für Geräte**) konfigurieren. Bei diesem bedingten Zugriff dürfen Benutzer nur über mit Intune verwaltete Geräte, die mit der Intune-Gerätekompatibilitätsrichtlinie kompatibel sind, oder über in die Domäne eingebundene PCs eine Verbindung mit Exchange Online herstellen.  Wenn ein Benutzer mindestens einer Sicherheitsgruppe angehört, die sowohl für die App-basierte CA als auch für Richtlinien für den bedingten Zugriff für Geräte (Device CA) vorgesehen ist, muss der Benutzer eine der beiden folgenden Anforderungen erfüllen:
 * Die App, die für den Zugriff auf den Dienst verwendet wird, ist eine mobile App, die von 
@@ -63,9 +62,4 @@ Sie können über die [Intune-Administratorkonsole](https://manage.microsoft.com
 ### <a name="see-also"></a>Weitere Informationen:
 
 [Protect app data with app protection policies (Schützen von App-Daten mithilfe von App-Schutzrichtlinien)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

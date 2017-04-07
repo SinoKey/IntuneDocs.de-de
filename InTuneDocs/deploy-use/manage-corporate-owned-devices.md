@@ -2,8 +2,8 @@
 title: "Verwalten unternehmenseigener Geräte | Microsoft-Dokumentation"
 description: "Registrieren Sie unternehmenseigene Geräte auf verschiedene Weise, je nach Gerätetyp, Art des Kaufs und den Anforderungen der Organisation."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -65,9 +66,4 @@ Ein Gerät wird von Intune als unternehmenseigenes Gerät erkannt, wenn eine der
  - Jedes Gerät ist in [Azure Active Directory oder der Enterprise Mobility Suite als Windows 10 Enterprise-Gerät](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) registriert (nur Windows 10).
 
 Wenn ein Gerät als Unternehmensgerät markiert wurde, wird im Gerätedatensatz in der Administratorkonsole in der Spalte **Eigentum** der Eintrag **Unternehmen** angezeigt. 
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

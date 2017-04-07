@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,8 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 9bc5b328fc204a12cf7aa992f62ac00b9ddfd45d
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -34,14 +35,14 @@ Wenn eine Richtlinie oder App bereitgestellt wird, beginnt Intune sofort mit dem
 
 Wenn ein Gerät sich nach der ersten Benachrichtigung nicht zum Abrufen der Richtlinie eincheckt, unternimmt Intune drei weitere Versuche.  Wenn das Gerät offline ist (z. B. ausgeschaltet oder nicht mit einem Netzwerk verbunden), erhält es die Benachrichtigungen möglicherweise nicht. In diesem Fall erhält das Gerät die Richtlinie beim nächsten geplanten Einchecken beim Intune-Dienst wie folgt:
 
-- iOS und Mac OS X: alle sechs Stunden.
+- iOS und macOS: alle sechs Stunden.
 - Android: alle acht Stunden.
 - Windows Phone: alle acht Stunden.
 - Als Geräte registrierte PCs unter Windows 8.1 und Windows 10: alle acht Stunden.
 
 Wenn das Gerät gerade registriert wurde, ist die Eincheckfrequenz höher:
 
-- iOS und Mac OS X: sechs Stunden lang alle 15 Minuten, danach alle sechs Stunden.
+- iOS und macOS: sechs Stunden lang alle 15 Minuten, danach alle sechs Stunden.
 - Android: 15 Minuten lang alle drei Minuten, danach zwei Stunden lang alle 15 Minuten, anschließend alle acht Stunden.
 - Windows Phone: 15 Minuten lang alle fünf Minuten, danach zwei Stunden lang alle 15 Minuten, anschließend alle acht Stunden.
 - Als Geräte registrierte Windows-PCs: 30 Minuten lang alle drei Minuten, danach alle acht Stunden.
@@ -499,8 +500,3 @@ Andere MDM-Geräte, wie Android, Windows Phone 8.1 und höher sowie iOS, müssen
 
 ### <a name="next-steps"></a>Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune) beschrieben an den Microsoft Support.
-
-
-<!--HONumber=Feb17_HO3-->
-
-

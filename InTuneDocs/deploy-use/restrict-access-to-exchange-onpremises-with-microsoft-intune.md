@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: f1d8ecdf64b680940e46afc90dec79d237d80030
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Sie können den E-Mail-Zugriff auf lokales Exchange oder auf die ältere Exchange Online Dedicated-Umgebung mithilfe von Microsoft Intune konfigurieren.
-Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Protect access to email and O365 services (Schützen des Zugriffs auf E-Mail- und Office&365;-Dienste)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Protect access to email and O365 services (Schützen des Zugriffs auf E-Mail- und Office 365-Dienste)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 > [!NOTE]
 > Wenn Sie über eine Exchange Online Dedicated-Umgebung verfügen und herausfinden müssen, ob es sich um die neue oder die ältere Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer.
@@ -80,11 +81,12 @@ Die folgenden Betriebssysteme werden unterstützt:
 -   Die native E-Mail-App unter iOS.
 
 -   Exchange ActiveSync-E-Mail-Clients wie Gmail unter Android 4 oder höher.
-- Exchange ActiveSync-E-Mail-Clients für **Android for Work-Geräte:** Nur **Gmail**- und **Nine Work**-Apps im **Arbeitsprofil** werden auf Android for Work-Geräten unterstützt. Damit der bedingte Zugriff unter Android for Work funktioniert, müssen Sie ein E-Mail-Profil für die Gmail- oder Nine Work-App sowie diese Apps als erforderliche Installation bereitstellen. 
+-   Exchange ActiveSync-E-Mail-Clients für **Android for Work-Geräte:** Nur **Gmail**- und **Nine Work**-Apps im **Arbeitsprofil** werden auf Android for Work-Geräten unterstützt. Damit der bedingte Zugriff unter Android for Work funktioniert, müssen Sie ein E-Mail-Profil für die Gmail- oder Nine Work-App sowie diese Apps als erforderliche Installation bereitstellen. 
 
+<!---
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-> [!NOTE]
+--->
+> [!NOTE] 
 > Die Microsoft Outlook-App unter Android und iOS wird nicht unterstützt.
 
 ## <a name="support-for-pcs"></a>Unterstützung für PCs
@@ -110,14 +112,12 @@ Folgendes wird unterstützt:
   - **Plattformausnahmen**: Wählen Sie **Regel hinzufügen** aus, um eine Regel zu konfigurieren, die Zugriffsebenen für angegebene mobile Gerätefamilien und -modelle definiert. Da diese Geräte einen beliebigen Typ aufweisen können, können Sie auch Gerätetypen konfigurieren, die nicht von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] unterstützt werden.
 
   - **Standardregel**: Bei Geräten, die durch keine der anderen Regeln abgedeckt werden, können Sie auswählen, ob der Zugriff auf Exchange zugelassen oder blockiert oder das Gerät unter Quarantäne gestellt werden soll. Wenn Sie die Regel so festlegen, dass der Zugriff zugelassen wird, wird iOS-, Windows- und Samsung KNOX-Geräten, die registriert und kompatibel sind, der E-Mail-Zugriff automatisch gewährt. Benutzer müssen keinen Prozess durchlaufen, um an ihre E-Mails zu gelangen.
-
-        Auf Android-Geräten, die nicht unter Samsung KNOX ausgeführt werden, erhalten Benutzer eine Quarantäne-E-Mail. Diese Mail enthält eine exemplarische Vorgehensweise, mit der die Benutzer die Registrierung und Kompatibilität überprüfen müssen, bevor der Zugriff auf die E-Mail erfolgen kann. Wenn Sie die Regel so festlegen, dass der Zugriff blockiert wird oder Geräte isoliert werden, wird der Zugriff aller Geräte auf Exchange blockiert, unabhängig davon, ob sie bereits bei Intune registriert sind oder nicht. Um zu verhindern, dass registrierte und kompatible Geräte von dieser Regel betroffen sind, aktivieren Sie die Option **Standardregelüberschreibung**.
+      - Auf Android-Geräten, die nicht unter Samsung KNOX ausgeführt werden, erhalten Benutzer eine Quarantäne-E-Mail. Diese Mail enthält eine exemplarische Vorgehensweise, mit der die Benutzer die Registrierung und Kompatibilität überprüfen müssen, bevor der Zugriff auf die E-Mail erfolgen kann. Wenn Sie die Regel so festlegen, dass der Zugriff blockiert wird oder Geräte isoliert werden, wird der Zugriff aller Geräte auf Exchange blockiert, unabhängig davon, ob sie bereits bei Intune registriert sind oder nicht. Um zu verhindern, dass registrierte und kompatible Geräte von dieser Regel betroffen sind, aktivieren Sie die Option **Standardregelüberschreibung**.
 >[!TIP]
 >Wenn Sie beabsichtigen, zuerst alle Geräte zu blockieren, bevor Sie den Zugriff auf E-Mail gewähren, wählen Sie die Regel „Zugriff blockieren“ oder „Quarantäne“ aus. Die Standardregel gilt für alle Gerätetypen, sodass Gerätetypen, die Sie als Plattformausnahmen konfiguriert haben und die nicht von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] unterstützt werden, ebenfalls betroffen sind.
 
   - **Benutzerbenachrichtigung**: Zusätzlich zu der von Exchange gesendeten Benachrichtigungs-E-Mail sendet Intune eine E-Mail mit Schritten zum Entsperren des Geräts. Sie können die Standardnachricht bearbeiten, um Sie an Ihre Bedürfnisse anzupassen. Da die Benachrichtigungs-E-Mail von Intune mit den Lösungsanweisungen an das Exchange-Postfach des Benutzers gesendet wird, kann es vorkommen, dass das Gerät blockiert wird, bevor der Benutzer die E-Mail-Nachricht erhält. In diesem Fall besteht die Möglichkeit, die Nachricht über ein freigeschaltetes Gerät oder eine andere Exchange-Zugriffsmethode anzuzeigen.
-
-        This is especially true when the **Default Rule** is set to block or quarantine. In this case, the user has to go to their app store, download the Microsoft Company Portal app, and enroll their device. This is applicable to iOS, Windows, and Samsung KNOX devices. For devices that don't run Samsung KNOX, you need to send the quarantine email to an alternate email account. The user has to copy the email to their blocked device to complete the enrollment and compliance process.
+      - Dies gilt insbesondere, wenn die **Standardregel** für die Blockierung oder Quarantäne festgelegt ist. In diesem Fall muss der Benutzer seinen App Store besuchen, die Microsoft-Unternehmensportal-App herunterladen und sein Gerät registrieren. Dies gilt für iOS-, Windows- und Samsung KNOX-Geräte. Für Geräte, auf denen Samsung KNOX nicht ausgeführt wird, müssen Sie die Quarantäne-E-Mail an ein alternatives E-Mail-Konto senden. Der Benutzer muss die E-Mail auf sein blockiertes Gerät kopieren, um den Registrierungs- und Kompatibilitätsprozess abzuschließen.
   > [!NOTE]
   > Damit die Benachrichtigungs-E-Mail von Exchange gesendet werden kann, müssen Sie das Konto angeben, das dafür verwendet werden soll.
   >
@@ -139,9 +139,4 @@ Folgendes wird unterstützt:
 -   [Protect access to SharePoint Online (Schützen des Zugriffs auf SharePoint Online)](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [Protect access to Skype for Business Online (Schützen des Zugriffs auf Skype for Business Online)](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

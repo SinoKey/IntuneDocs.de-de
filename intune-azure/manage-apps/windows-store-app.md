@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e6e6ba0aae5da25b3f8b07326a2e323c75268ff5
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: 145fd465eb837a4f1a2a62358912fb8e824d4913
+ms.lasthandoff: 03/15/2017
 
 ---
 
@@ -50,3 +50,7 @@ ms.lasthandoff: 02/18/2017
 8. Wenn Sie fertig sind, wählen Sie auf dem Blatt **App hinzufügen** die Option **Speichern** aus.
 
 Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie ausgewählten Gruppen zuweisen können. Hilfe finden Sie unter [Zuweisen von Apps zu Gruppen](/intune-azure/manage-apps/deploy-apps).
+
+## <a name="sign-the-windows-10-company-portal-app"></a>Signieren der Windows 10-Unternehmensportal-App
+Für Kunden, die die Windows 10-Unternehmensportal-App herunterladen und querladen möchten, können Sie nun ein Skript verwenden, um den App-Signierungsprozess für Ihre Organisation zu vereinfachen und zu optimieren. Das herunterladbare Skript sowie Informationen zu dessen Verwendung finden Sie bei TechNet unter [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript) (Microsoft Intune-Signierungsskript für das Windows 10-Unternehmensportal).
+

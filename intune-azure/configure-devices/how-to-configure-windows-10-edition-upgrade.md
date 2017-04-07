@@ -1,22 +1,24 @@
 ---
-title: Konfigurieren von Windows 10-Editionsupgrades mit Intune | Intune in Azure (Vorschau) | Microsoft Docs
+title: Konfigurieren von Windows 10-Editionsupgrades mit Intune
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie mit Intune Windows 10-Geräte, die Sie verwalten, upgraden."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
-ms.reviewer: heenamac
+ms.reviewer: coryfe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 49da713cfe61ce21501e0a8e0f6e0c225b2bc291
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 3d0616601509b310034cdbf6e34cf185712c91d2
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,9 +29,10 @@ ms.lasthandoff: 02/16/2017
 
 In diesem Thema erfahren Sie, wie Sie ein Profil für Windows 10 Editionsupgrades konfigurieren. Mit diesem Profil können Sie Geräte, auf denen eine der folgenden Windows 10-Versionen ausgeführt wird, automatisch auf eine neuere Edition upgraden:
 
-- Windows 10 Desktop
+- Windows 10 Home
 - Windows 10 Holographic
 - Windows 10 Mobile
+
 
 Die folgenden Upgradepfade werden unterstützt:
 
@@ -37,6 +40,7 @@ Die folgenden Upgradepfade werden unterstützt:
 - Von Windows 10 Home auf Windows 10 Education
 - Von Windows 10 Mobile auf Windows 10 Mobile Enterprise
 - Von Windows 10 Holographic Pro auf Windows 10 Holographic Enterprise
+
 
 ## <a name="before-you-start"></a>Vorbereitung
 Bevor Sie beginnen, Geräte auf die neueste Version zu aktualisieren, benötigen Sie eines der folgenden Dinge:
@@ -48,7 +52,7 @@ Bevor Sie beginnen, Geräte auf die neueste Version zu aktualisieren, benötigen
 
 1. Melden Sie sich beim Azure-Portal an.
 2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte konfigurieren** aus.
+3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
 2. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
 3. Wählen Sie auf dem Blatt „Profile“ die Option **Profil erstellen** aus.
 4. Geben Sie auf dem Blatt **Profil erstellen** einen **Namen** und eine **Beschreibung** für das Editionsupgradeprofil ein.

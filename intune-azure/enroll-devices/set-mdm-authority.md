@@ -3,8 +3,8 @@ title: "Festlegen der Autorität für die Verwaltung mobiler Geräte"
 titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie die Autorität für die Verwaltung mobiler Geräte in Intune festlegen. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/06/2016
 ms.topic: article

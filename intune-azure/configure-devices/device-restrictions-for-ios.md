@@ -1,11 +1,12 @@
 ---
-title: "Intune-Einstellungen für Geräteeinschränkungen für iOS | Intune in Azure (Vorschau) | Microsoft Docs"
+title: "Einstellungen für Geräteeinschränkungen für iOS in Intune"
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie etwas über die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf iOS-Geräten."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 2b8bf6d3944f9968d0f4020fbb5c57ef8180062c
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -49,7 +51,8 @@ ms.lasthandoff: 02/16/2017
 -     **Tastenkombinationen (nur überwacht):** Erlaubt die Verwendung von Tastaturkurzbefehlen.
 -     **Handgelenkerkennung für gekoppelte Apple Watch:** Wenn diese Funktion aktiviert ist, zeigt die Apple Watch keine Benachrichtigungen an, wenn sie nicht getragen wird.
 - **Kopplungskennwort für ausgehende AirPlay-Anforderungen anfordern:** Erfordert ein Kopplungskennwort, wenn der Benutzer AirPlay zum Streamen von Inhalten auf andere Apple-Geräte verwendet.
-- **Kontoänderung (nur überwacht):** Erlauben Sie Benutzern, Kontoeinstellungen, z.B. E-Mail-Konfigurationen, zu ändern.
+- **Kontoänderung (nur überwacht):** Wenn diese Funktion blockiert ist, kann der Benutzer keine gerätespezifischen Einstellungen der iOS-Einstellungs-App ändern wie z.B. neue Gerätekonten erstellen, den Benutzernamen oder das Kennwort ändern.
+Dies gilt auch für Einstellungen, auf die über die iOS-Einstellungs-App zugegriffen werden kann wie z.B. E-Mail, Kontakte, Kalender, Facebook und Twitter. Dies gilt nicht für Apps mit Kontoeinstellungen, die nicht über die iOS-Einstellungs-App konfiguriert werden können wie z.B. die Microsoft Outlook-App.
 - **Apple Watch-Kopplung (nur überwacht):** Erlauben Sie die Gerätekopplung mit einer Apple Watch.
 - **Bluetooth-Änderung (nur überwacht):** Sperren Sie die Änderung von Bluetooth-Einstellungen auf dem Gerät durch Endbenutzer.
 - **Remotebildschirmüberwachung über die Classroom-App (nur überwacht):** Erlauben oder sperren Sie die Überwachung des Bildschirms auf Remotegeräten durch die Classroom-App.
@@ -220,7 +223,7 @@ Verwenden Sie die Informationen in dieser Liste zur Identifizierung des Namens, 
 -     **iCloud-Fotomediathek:** Bei Festlegung auf **Nein** wird die Verwendung der iCloud-Fotomediathek deaktiviert, die Benutzern das Speichern von Fotos und Videos in der Cloud ermöglicht.    Fotos, die nicht vollständig aus der iCloud-Fotomediathek auf das Gerät heruntergeladen wurden, werden bei Festlegung auf **Nein** vom Gerät entfernt.
 -     **Synchronisierung verwalteter Apps mit der Cloud:** Erlauben Sie Apps, die Sie mit Intune verwalten, Daten mit dem iCloud-Konto des Benutzers zu synchronisieren.
 -     **Streaming freigegebener Fotos:** Legen Sie diese Einstellung auf **Nein** fest, um die **iCloud-Fotofreigabe** auf dem Gerät zu deaktivieren.
--     **Aktivitätsfortsetzung:** Erlauben Sie dem Benutzer, die Arbeit, die er auf einem iOS-Gerät gestartet hat, auf einem anderen iOS- oder Mac OS X-Gerät fortzusetzen (Übergabe).
+-     **Aktivitätsfortsetzung:** Erlauben Sie dem Benutzer, die Arbeit, die er auf einem iOS-Gerät gestartet hat, auf einem anderen iOS- oder macOS-Gerät fortzusetzen (Übergabe).
 
 ## <a name="kiosk"></a>Kiosk
 -     **Aktivierungssperre:** Aktivieren Sie die Aktivierungssperre auf überwachten iOS-Geräten.

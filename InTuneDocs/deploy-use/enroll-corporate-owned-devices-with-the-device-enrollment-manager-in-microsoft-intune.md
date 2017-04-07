@@ -2,8 +2,8 @@
 title: "Registrieren mit dem Geräteregistrierungs-Manager | Microsoft-Dokumentation"
 description: "Das Geräteregistrierungs-Manager-Konto (Device Enrollment Manager, DEM) kann eine große Anzahl gemeinsam genutzter, firmeneigener mobiler Geräte mit einem einzigen Benutzerkonto verwalten."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/17
 ms.topic: article
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
+ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
+ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
+ms.lasthandoff: 03/24/2017
 
 
 ---
@@ -31,7 +32,7 @@ Mit Intune können Organisationen eine Vielzahl mobiler Geräte mit einem einzel
 Es müssen Benutzer im Azure-Portal vorhanden sein, damit sie als Geräteregistrierungs-Manager hinzugefügt werden können. Für die optimale Sicherheit darf der DEM-Benutzer nicht zusätzlich Intune-Administrator sein.
 
 >[!NOTE]
->Die Registrierung mithilfe des DEM-Kontos kann nicht zusammen mit der Registrierung mithilfe des [Setup-Assistenten von Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md), mit der [direkten Registrierung](ios-direct-enrollment-in-microsoft-intune.md) oder der [Registrierung über das Programm zur Geräteregistrierung](ios-device-enrollment-program-in-microsoft-intune.md) verwendet werden. 
+>Die Registrierung mithilfe des DEM-Kontos kann nicht zusammen mit der Registrierung mithilfe des [Setup-Assistenten von Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md), mit der [direkten Registrierung](ios-direct-enrollment-in-microsoft-intune.md) oder der [Registrierung über das Programm zur Geräteregistrierung](ios-device-enrollment-program-in-microsoft-intune.md) verwendet werden.
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Beispiel für ein Geräteregistrierungs-Manager-Szenario:
 
@@ -42,7 +43,7 @@ Nur Benutzer in der Intune-Konsole können Geräteregistrierungs-Manager sein. D
 Der DEM-Benutzer kann Folgendes tun:
 
 -   Registrieren von bis zu 1000 Geräten in Intune
--   Anmelden beim Unternehmensportal, um Unternehmens-Apps abzurufen
+-   Verwenden Sie die Unternehmensportal-App, um Unternehmens-Apps abzurufen
 -   Konfigurieren des Zugriffs auf Unternehmensdaten durch Bereitstellen von rollenspezifischen Apps auf den Tablets
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>Einschränkungen der Geräte, die mit dem DEM Konto angemeldet sind
@@ -56,9 +57,9 @@ Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurd
   - Der DEM-Benutzer kann die Registrierung von DEM-Geräten auf dem Gerät mit dem Unternehmensportal nicht aufheben. Der Intune-Administrator hat diese Fähigkeit, der DEM-Benutzer jedoch nicht.
 
   - Nur das lokale Gerät erscheint in der Unternehmensportal-App oder -Website.
- 
+
   - Benutzer können Apps aus dem Apple Volume Purchase Program (VPP) nicht verwenden, weil für die Verwaltung dieser Apps benutzerspezifische Apple-IDs erforderlich sind.
- 
+
   - (Nur iOS) Wenn Sie DEM zur Registrierung von iOS-Geräten verwenden, können Sie Apple Configurator oder das Apple-Programm zur Geräteregistrierung nicht zum Registrieren von Geräten verwenden.
 
 > [!NOTE]
@@ -76,7 +77,7 @@ Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurd
 
 4.  Wählen Sie **Hinzufügen…** aus. Das Dialogfeld **Geräteregistrierungs-Manager hinzufügen** wird geöffnet.
 
-5.  Geben Sie die **Benutzer-ID** des Intune-Kontos ein, und klicken Sie anschließend auf **OK**. 
+5.  Geben Sie die **Benutzer-ID** des Intune-Kontos ein, und klicken Sie anschließend auf **OK**.
 
     Der DEM-Benutzer kann nun Mobilgeräte über dasselbe Verfahren registrieren, das ein Endbenutzer für ein BYOD-Szenario im Unternehmensportal verwendet. Der Manager-Endbenutzer kann die Unternehmensportal-App installieren und das Gerät unter Verwendung seiner DEM-Anmeldeinformationen auf bis zu 1000 Geräten registrieren. Die Schritte zur Registrierung für jede Plattform für den Endbenutzer finden Sie unter folgenden Links:
 
@@ -106,9 +107,4 @@ Wenn Sie einen Geräteregistrierungs-Manager löschen, wirkt sich dies nicht auf
 -   können über die Kontoanmeldedaten für den Geräteregistrierungs-Manager weiterhin keine Geräte zurückgesetzt oder deaktiviert werden
 
 -   bleibt die Beziehung des gelöschten Geräteregistrierungs-Manager-Kontos zu registrierten Geräten bestehen, es können jedoch keine zusätzlichen Geräte registriert werden
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

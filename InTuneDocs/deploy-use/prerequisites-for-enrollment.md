@@ -2,8 +2,8 @@
 title: "Voraussetzungen für die Registrierung von mobilen Geräten | Microsoft-Dokumentation"
 description: "Einrichten der Voraussetzungen für die Verwaltung mobiler Geräte (Mobile Device Management, MDM) und Vorbereiten der Registrierung für verschiedene Betriebssysteme."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/21/2017
 ms.topic: article

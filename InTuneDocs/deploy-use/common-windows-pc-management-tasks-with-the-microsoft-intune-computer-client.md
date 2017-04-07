@@ -2,8 +2,8 @@
 title: Allgemeine Aufgaben zur Verwaltung von Windows-PCs | Microsoft-Dokumentation
 description: "Lernen Sie Möglichkeiten kennen, wie Sie Windows-PCs verwalten, auf denen der Intune-Softwareclient ausgeführt wird."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 2fc2d7e57267f82897dac8a0cc222c2b7009d14d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -35,10 +36,5 @@ Dieses Thema führt Aufgaben auf, die Sie bei der Verwaltung von Desktops als PC
 
 - [Anfordern und Bereitstellen von Remoteunterstützung für Windows-PCs](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md): Erläutert, wie Intune-PC-Benutzer Remoteunterstützung von Ihnen erhalten, und beschreibt die Voraussetzungen und das TeamViewer-Setup.
 
-
-
-
-
-<!--HONumber=Dec16_HO3-->
 
 

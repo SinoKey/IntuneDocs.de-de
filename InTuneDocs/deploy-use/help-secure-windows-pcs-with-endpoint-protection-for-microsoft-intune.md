@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: arob98
-ms.date: 01/31/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6e2658cdfcd0b78a254c375fe39b67f7ef9afad6
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -171,11 +172,12 @@ Sie können den Malwarestatus Ihrer Computer mithilfe des Arbeitsbereichs **Schu
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Anzeigen der letzten Erkennungspfade für Malware auf Computern
 Intune kann die Pfade von bis zu 10 der zuletzt erkannten Instanzen von Malware auf einem Gerät anzeigen. Die Option **Letzter Erkennungspfad** ist standardmäßig deaktiviert. So aktivieren Sie diese Anzeige:
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) **Gruppen** > **Alle Geräte** > **Malware** aus.
+1. Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) **Gruppen** > **Alle Geräte** > **Alle Computer**.
+2. Klicken Sie mit der rechten Maustaste auf den Computer, dessen aktuelle Erkennungspfade Sie anzeigen möchten, und wählen Sie **Eigenschaften**.
+3. Wählen Sie **Malware** aus den Registerkarten am oberen Rand.
 
-2.  Klicken Sie mit der rechten Maustaste auf eine Spaltenüberschrift. Eine Liste der verfügbaren Spalten wird angezeigt.
-
-3.  Aktivieren Sie das Kontrollkästchen **Letzte Erkennungspfade** in der Liste. Die Spalte **Letzte Erkennungspfade** wird angezeigt. Sie enthält bis zu 10 der zuletzt auf dem Gerät überwachten Malwareinstanzen.
+   ![Wählen Sie die Registerkarte „Malware“, und klicken Sie dann auf das Kontrollkästchen „Aktuelle Erkennungspfade“.](../media/malware-path-column.png)
+4. Klicken Sie mit der rechten Maustaste auf die Spaltenüberschrift. Eine Liste der verfügbaren Spalten wird angezeigt. Aktivieren Sie das Kontrollkästchen **Letzte Erkennungspfade** in der Liste. Die Spalte **Letzte Erkennungspfade** wird angezeigt. Sie enthält bis zu 10 der zuletzt auf dem Gerät überwachten Malwareinstanzen.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Ausführen einer Malwareüberprüfung oder Aktualisieren von Malwaredefinitionen auf einem Computer
 Intune kann auf einem remoteverwalteten PC, auf dem der Intune-Client installiert wurde, entweder eine vollständige oder schnelle Malwareüberprüfung mithilfe von Endpoint Protection oder Windows Defender ausführen.
@@ -184,17 +186,9 @@ Intune kann auf einem remoteverwalteten PC, auf dem der Intune-Client installier
 
 2. Wählen Sie die Dropdownliste **Remoteaufgaben** und anschließend die Aufgabe aus, die auf dem Remotecomputer ausgeführt werden soll.
 
-
-
-
 ## <a name="need-more-help"></a>Benötigen Sie weitere Hilfe?
 Weitere Hilfe und Unterstützung erhalten Sie unter [Troubleshoot Endpoint Protection in Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) (Problembehandlung für Endpoint Protection in Microsoft Intune).
 
 ### <a name="see-also"></a>Weitere Informationen
 [Richtlinien zum Schutz von Windows-PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

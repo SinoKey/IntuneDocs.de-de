@@ -1,9 +1,10 @@
 ---
-title: "Registrieren von iOS-Geräten – Programm zur Geräteregistrierung | Intune in Azure (Vorschau) | Microsoft Docs"
+title: "Registrieren von iOS-Geräten – Programm zur Geräteregistrierung"
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie unternehmenseigene iOS-Geräte mithilfe des Programms zur Geräteregistrierung von Apple (Device Enrollment Program, DEP) registrieren."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 3e1898441b7576c07793e8b70f3c3f09f1cac534
+ms.openlocfilehash: ddeaeb2d532635802c615d09b4625dee0a824919
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -63,7 +65,7 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Grup
 
 6. Wählen Sie für **Benutzeraffinität** aus, ob Geräte mit diesem Profil mit oder ohne Benutzeraffinität registriert werden.
 
- - **Mit Benutzeraffinität registrieren:** Das Gerät muss während der ersten Installation einem Benutzer zugewiesen werden und kann dann die Berechtigung erhalten, auf Daten und E-Mails des Unternehmens zuzugreifen. Wählen Sie die Benutzeraffinität für DEP-verwaltete Geräte aus, die Benutzern gehören und das Unternehmensportal verwenden müssen, um Dienste wie z.B. die Installation von Apps nutzen zu können. Beachten Sie, dass die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) während der Registrierung auf DEP-Geräten mit Benutzeraffinität nicht funktioniert. Nach der Registrierung funktioniert die MFA auf diesen Geräten wie erwartet.
+ - **Mit Benutzeraffinität registrieren:** Das Gerät muss während der ersten Installation einem Benutzer zugewiesen werden und kann dann die Berechtigung erhalten, auf Daten und E-Mails des Unternehmens zuzugreifen. Wählen Sie die Benutzeraffinität für DEP-verwaltete Geräte aus, die Benutzern gehören und das Unternehmensportal verwenden müssen, um Dienste wie z.B. die Installation von Apps nutzen zu können. Beachten Sie, dass die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) während der Registrierung auf DEP-Geräten mit Benutzeraffinität nicht funktioniert. Nach der Registrierung funktioniert die MFA auf diesen Geräten wie erwartet. Neue Benutzer, die bei der ersten Anmeldung ihr Kennwort ändern müssen, können während der Registrierung auf DEP-Geräten nicht aufgefordert werden. Außerdem werden Benutzer, deren Passwörter abgelaufen sind, während der Registrierung nicht aufgefordert, ihr Kennwort zurückzusetzen; sie müssen ihr Kennwort von einem anderen Gerät aus zurücksetzen.
 
     >[!NOTE]
     >Für DEP mit Benutzeraffinität muss der Endpunkt WS-Trust 1.3 Username/Mixed aktiviert sein, um Benutzertoken anzufordern.
@@ -101,11 +103,11 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Grup
 
 ## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>Zuweisen von Apple-DEP-Seriennummern auf dem MDM-Server
 
-1. Wechseln Sie zum [Device Enrollment Program-Portal](https://deploy.apple.com) (https://deploy.apple.com), und melden Sie sich mit der Apple-ID Ihres Unternehmens an. 
+1. Wechseln Sie zum [Device Enrollment Program-Portal](https://deploy.apple.com) (https://deploy.apple.com), und melden Sie sich mit der Apple-ID Ihres Unternehmens an.
 
-2. Wechseln Sie zu **Bereitstellungsprogramm** &gt; **Programm zur Geräteregistrierung** &gt; **Geräte verwalten**. 
+2. Wechseln Sie zu **Bereitstellungsprogramm** &gt; **Programm zur Geräteregistrierung** &gt; **Geräte verwalten**.
 
-3. Geben Sie an, wie Sie **Geräte auswählen**, fügen Sie dann Geräteinformationen hinzu, und geben Sie die Details zum Gerät wie **Seriennummer** und **Bestellnummer** an, oder **laden Sie eine CSV-Datei hoch**. 
+3. Geben Sie an, wie Sie **Geräte auswählen**, fügen Sie dann Geräteinformationen hinzu, und geben Sie die Details zum Gerät wie **Seriennummer** und **Bestellnummer** an, oder **laden Sie eine CSV-Datei hoch**.
 
 4. Wählen Sie **Zu Server zuweisen** aus. Wählen Sie den für Microsoft Intune angegebenen &lt;Servernamen&gt; und anschließend **OK** aus.
 
@@ -137,7 +139,7 @@ Ihre unternehmenseigenen Geräte können jetzt an Benutzer verteilt werden. Wenn
 
 Auf mit Benutzeraffinität konfigurierten Geräte kann die Unternehmensportal-App installiert und ausgeführt werden, um Apps herunterzuladen und Geräte zu verwalten. Nachdem Benutzer ihre Geräte erhalten haben, müssen sie zusätzliche, unten beschriebene Schritte ausführen, um den Setup-Assistenten abzuschließen und die Unternehmensportal-App zu installieren.
 
-### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>Registrieren von firmeneigenen iOS-Geräten mit Benutzeraffinität durch Benutzer 
+### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>Registrieren von firmeneigenen iOS-Geräten mit Benutzeraffinität durch Benutzer
 
 1. Wenn Benutzer ihr Gerät einschalten, werden sie aufgefordert, den Setup-Assistenten zu durchlaufen. Während des Setups werden Benutzer zur Eingabe ihrer Anmeldeinformationen aufgefordert. Sie müssen die Anmeldeinformationen (d.h. den eindeutigen persönlichen Namen) verwenden, die ihrem Abonnement in Intune zugeordnet sind.
 

@@ -2,10 +2,10 @@
 title: "Behandlung von Problemen bei der Geräteregistrierung | Microsoft-Dokumentation"
 description: "Vorschläge zur Problembehandlung bei Problemen mit der Geräteregistrierung."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 03/01/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
-ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
-ms.lasthandoff: 01/25/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 3d4a89cd8e6e57f5a1e268dcda98cfb3c68c5587
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -35,9 +35,9 @@ Bevor Sie mit der Problembehandlung beginnen, stellen Sie sicher, dass Intune or
 
 -    [Vorbereiten der Registrierung von Geräten in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -    [Einrichten der iOS- und Mac-Geräteverwaltung](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [Einrichten der Windows 10 Mobile- und Windows Phone-Verwaltung mit Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -    [Einrichten der Windows-Geräteverwaltung](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-
+-    [Einrichten der Android-Geräteverwaltung](/intune/deploy-use/set-up-android-management-with-microsoft-intune) – Keine weiteren Schritte erforderlich
+-    [Einrichten der Android for Work-Geräteverwaltung](/intune/deploy-use/set-up-android-for-work)
 
 Ihre Benutzer verwalteter Geräte können Registrierungs- und Diagnoseprotokolle erfassen, die Sie überprüfen können. Benutzeranleitungen zur Erfassung der Protokolle finden Sie unter:
 
@@ -149,7 +149,7 @@ Administratoren können Geräte im Azure Active Directory-Portal löschen.
 **Problem:** Wenn Sie Ihren AD FS eine zweite überprüfte Domäne hinzufügen, können Benutzer mit dem Benutzerprinzipalnamen-Suffix (UPN) der zweiten Domäne sich möglicherweise nicht bei Portalen anmelden oder Geräte registrieren.
 
 
-**Lösung:** Microsoft Office 365-Kunden, die einmaliges Anmelden (Single Sign-On, SSO) über AD FS 2.0 verwenden und in ihrer Organisation über mehrere Domänen der obersten Ebene für Benutzer-UPN-Suffixe verfügen (z.B. @contoso.com oder @fabrikam.com)), müssen für jedes Suffix eine separate Instanz des AD FS 2.0-Verbunddiensts bereitstellen. Es gibt jetzt einen [Rollup für AD FS 2.0](http://support.microsoft.com/kb/2607496), der in Verbindung mit der Option **SupportMultipleDomain** den AD FS-Server zur Unterstützung dieses Szenarios aktiviert, ohne dass zusätzliche AD FS 2.0-Server erforderlich sind. Weitere Informationen finden Sie in [diesem Blogbeitrag](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
+**Lösung:** Microsoft Office 365-Kunden, die einmaliges Anmelden (Single Sign-On, SSO) über AD FS 2.0 verwenden und in ihrer Organisation über mehrere Domänen der obersten Ebene für Benutzer-UPN-Suffixe verfügen (z.B. @contoso.com oder @fabrikam.com), müssen für jedes Suffix eine separate Instanz des AD FS 2.0-Verbunddiensts bereitstellen. Es gibt jetzt einen [Rollup für AD FS 2.0](http://support.microsoft.com/kb/2607496), der in Verbindung mit der Option **SupportMultipleDomain** den AD FS-Server zur Unterstützung dieses Szenarios aktiviert, ohne dass zusätzliche AD FS 2.0-Server erforderlich sind. Weitere Informationen finden Sie in [diesem Blogbeitrag](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## <a name="android-issues"></a>Android-Probleme
@@ -280,6 +280,18 @@ Um das Problem zu beheben, müssen Benutzer die Schaltfläche **Set up** (Einric
 
 Sobald die Geräte registriert sind, ist ihr Integritätsstatus gut, und sie erhalten erneut Zugriff auf Unternehmensressourcen.
 
+### <a name="verify-ws-trust-13-is-enabled"></a>Sicherstellen, dass WS-Trust 1.3 aktiviert ist
+**Problem:** Geräte des Programms zur Geräteregistrierung für iOS können nicht registriert werden
+
+Für die Registrierung von Geräten des Programms zur Geräteregistrierung (Device Enrollment Program, DEP) mit Benutzeraffinität muss der Endpunkt WS-Trust 1.3 Username/Mixed aktiviert sein, um Benutzertoken anzufordern. Dieser Endpunkt wird von Active Directory standardmäßig aktiviert. Eine Liste der aktivierten Endpunkte erhalten Sie mithilfe des PowerShell-Cmdlets „Get-AdfsEndpoint“ und der Suche nach dem Endpunkt Trust/13/UsernameMixed. Beispiel:
+
+      Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
+
+Weitere Informationen finden Sie in der [Get-AdfsEndpoint-Dokumentation](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+
+Weitere Informationen finden Sie unter [Best practices for securing Active Directory Federation Services (Bewährte Methoden zum Schützen von Active Directory-Verbunddiensten)](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). Sollten Sie weitere Unterstützung bei der Ermittlung benötigen, ob WS-Trust 1.3 Username/Mixed in Ihrem Identitätsverbundanbieter aktiviert ist, wenden Sie sich bei Verwendung von ADFS an Microsoft Support und andernfalls an Ihren Drittanbieter.
+
+
 ### <a name="profile-installation-failed"></a>Fehler bei der Profilinstallation
 **Problem**: Sie erhalten auf einem iOS-Gerät die Fehlermeldung **Fehler bei der Profilinstallation**.
 
@@ -349,10 +361,10 @@ Möglicherweise wurde der Computer bereits vorher registriert oder hat das geklo
 
 1. Geben Sie im Menü **Start** **Ausführen** -> **MMC** ein.
 1. Wählen Sie **Datei** > **Snap-Ins hinzufügen/entfernen** aus.
-1. Doppelklicken Sie auf **Zertifikate**, wählen Sie **Computerkonto**, ** > Weiter**, und wählen Sie die Option **Lokaler Computer** aus.
+1. Doppelklicken Sie auf **Zertifikate**, wählen Sie **Computerkonto**,  >  **Weiter**, und wählen Sie die Option **Lokaler Computer** aus.
 1. Doppelklicken Sie auf **Zertifikate (lokaler Computer)**, und wählen Sie **Persönlich/Zertifikate** aus.
 1. Suchen Sie nach dem von Sc_Online_Issuing ausgestellten Intune-Zertifikat, und löschen Sie es, falls vorhanden.
-1. Wenn der folgende Registrierungsschlüssel vorhanden ist, löschen Sie ihn: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** und alle untergeordneten Schlüssel.
+1. Wenn der folgende Registrierungsschlüssel vorhanden ist, löschen Sie ihn: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** und alle untergeordneten Schlüssel.
 1. Versuchen Sie, eine erneute Registrierung durchzuführen.
 1. Wenn der PC sich immer noch nicht registrieren kann, suchen und löschen Sie diesen Schlüssel, sofern vorhanden: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
 1. Versuchen Sie, eine erneute Registrierung durchzuführen.
@@ -379,7 +391,7 @@ Möglicherweise wurde der Computer bereits vorher registriert oder hat das geklo
 |0x80043008, 0x80CF3008|Microsoft-Onlinedienst zur Updateverwaltung konnte nicht gestartet werden.|Wenden Sie sich dazu an den Microsoft Support, wie unter [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben.|
 |0x80043009, 0x80CF3009|Der Clientcomputer ist bereits für den Dienst registriert.|Sie müssen den Clientcomputer abkoppeln, bevor sie ihn erneut für den Dienst registrieren können.|
 |0x8004300B, 0x80CF300B|Das Installationspaket für die Clientsoftware kann nicht ausgeführt werden, da die Windows-Version auf dem Client nicht unterstützt wird.|Die auf dem Client ausgeführte Windows-Version wird von Intune nicht unterstützt.|
-|0xAB2|Fehler beim Zugriff auf die VBScript-Laufzeit für die benutzerdefinierte Aktion.|Dieser Fehler wird von einer benutzerdefinierten Aktion verursacht, die auf DLLs (Dynamic-Link Libraries) aufbaut. Um den DLL-Fehler zu ermitteln, benötigen Sie möglicherweise die Tools, die im Artikel&19803;8 der [Microsoft Support-KB: Hilfreiche Tools bei Problemen mit der Paketerstellung und Weitergabe](https://support.microsoft.com/en-us/kb/198038) erläutert werden.|
+|0xAB2|Fehler beim Zugriff auf die VBScript-Laufzeit für die benutzerdefinierte Aktion.|Dieser Fehler wird von einer benutzerdefinierten Aktion verursacht, die auf DLLs (Dynamic-Link Libraries) aufbaut. Um den DLL-Fehler zu ermitteln, benötigen Sie möglicherweise die Tools, die im Artikel 198038 der [Microsoft Support-KB: Hilfreiche Tools bei Problemen mit der Paketerstellung und Weitergabe](https://support.microsoft.com/en-us/kb/198038) erläutert werden.|
 |0x80cf0440|Die Verbindung zum Dienstendpunkt wurde abgebrochen.|Test- oder kostenpflichtige Konto wird angehalten. Erstellen Sie ein neues Test- oder kostenpflichtiges Konto und registrieren Sie sich erneut.|
 
 

@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: 017a7912cb991f00916373acc18f4ab2b97ce8ed
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -32,7 +33,7 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 
 ## <a name="unable-to-send-images-from--email-account"></a>Senden von Bildern über E-Mail-Konto nicht möglich
 Benutzer, deren E-Mail-Konten automatisch konfiguriert wurden, können keine Bilder von ihren Geräten senden.
-Dies ist der Fall, wenn die Option **E-Mail-Versand aus Anwendungen von Drittanbietern zulassen ** nicht aktiviert ist.
+Dies ist der Fall, wenn die Option **E-Mail-Versand aus Anwendungen von Drittanbietern zulassen** nicht aktiviert ist.
 
 ### <a name="intune-solution"></a>Intune-Lösung
 
@@ -40,7 +41,7 @@ Dies ist der Fall, wenn die Option **E-Mail-Versand aus Anwendungen von Drittanb
 
 2.  Wählen Sie das E-Mail-Profil aus, und klicken Sie auf **Bearbeiten**.
 
-3.  Wählen Sie **E-Mail-Versand aus Anwendungen von Drittanbietern zulassen **.
+3.  Wählen Sie **E-Mail-Versand aus Anwendungen von Drittanbietern zulassen**.
 
 ### <a name="configuration-manager-integrated-with-intune-solution"></a>Configuration Manager integriert mit Windows Intune
 
@@ -72,9 +73,4 @@ Da Samsung KNOX zum Identifizieren des Profils keinen Hostnamen verwendet, wird 
 
 ## <a name="next-steps"></a>Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

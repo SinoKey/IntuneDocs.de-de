@@ -1,11 +1,12 @@
 ---
-title: Konfigurieren von Intune-VPN-Einstellungen | Intune in Azure (Vorschau) | Microsoft Docs
+title: So konfigurieren Sie Intune-VPN-Einstellungen
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie mit Intune VPN-Einstellungen auf Geräten, die Sie verwalten, konfigurieren."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: ff05d9ed7bae2742de8dbbe908f2c92d2459a7f4
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 96756c4aa5afa52821614d5f7fbc6d0bca15895b
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -33,8 +35,8 @@ Nehmen Sie z. B. an, Sie möchten allen iOS-Geräten die Einstellungen zur Verf
 
 Sie können VPN-Profile mit den folgenden Verbindungstypen erstellen:
 
-|||
-|-|-|
+||||||||
+|-|-|-|-|-|-|-|
 |Verbindungstyp|Android|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |Pulse Secure|Ja|Ja|Ja|Ja|Ja|Ja|
 |Cisco (IPsec)|Nein|Ja|Nein|Nein|Nein|Nein|
@@ -59,7 +61,7 @@ Informationen zum Erstellen benutzerdefinierter VPN-Profile mithilfe von URI-Ein
 
 1. Melden Sie sich beim Azure-Portal an.
 2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte konfigurieren** aus.
+3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
 2. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
 3. Wählen Sie auf dem Blatt „Profile“ die Option **Profil erstellen** aus.
 4. Geben Sie auf dem Blatt **Profil erstellen** einen **Namen** und eine **Beschreibung** für das VPN-Profil ein.

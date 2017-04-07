@@ -2,8 +2,8 @@
 title: Behandlung von Problemen bei der Clienteinrichtung | Microsoft-Dokumentation
 description: Problembehandlung bei allgemeinen Problemen bei der Clienteinrichtung.
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/22/2017
 ms.topic: article

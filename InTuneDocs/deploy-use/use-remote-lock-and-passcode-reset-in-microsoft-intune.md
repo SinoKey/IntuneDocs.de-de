@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 02/16/17
+ms.date: 03/06/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
-ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
+ms.sourcegitcommit: 665d3347636d5ec0c698ffb93b768028c9d59ce3
+ms.openlocfilehash: b918c9843bdc6cfbbfd9c2da9d698b255487152c
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Geräteschutz durch Remotesperre und Zurücksetzen der Kennung
@@ -34,6 +35,7 @@ In der folgenden Tabelle ist die Funktionsweise der Remotesperrung auf verschied
 |macOS|Nicht unterstützt|
 |iOS|Unterstützt|
 |Android|Unterstützt|
+|Android for Work|Unterstützt|
 |Windows 10 (mobil)|Unterstützt|
 |Windows 10 (Desktop)|Nicht unterstützt|
 |Windows Phone 8 und Windows Phone 8.1|Unterstützt|
@@ -61,6 +63,7 @@ Wenn ein Benutzer eine Kennung vergisst, können Sie ihm helfen, indem Sie die K
 |macOS|Nicht unterstützt|
 |iOS|Wird für das Löschen der Kennung von einem Gerät unterstützt. Es wird keine neue temporäre Kennung erstellt.|
 |Android|Unterstützt auf früheren Versionen als Android 7.0. Erstellt eine temporäre Kennung.|
+|Android for Work|Nicht unterstützt|
 |Windows 10 Mobile|Unterstützt|
 |Windows Phone 8 und Windows Phone 8.1|Unterstützt|
 |Windows RT 8.1|Nicht unterstützt|
@@ -83,9 +86,4 @@ Das Zurücksetzen der Kennung wird für Windows-PCs, die mit dem Intune-Software
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Abkoppeln von Geräten](retire-devices-from-microsoft-intune-management.md) und [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx) (Selektives Zurücksetzen bei der Gerätedatenverwaltung in Windows)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

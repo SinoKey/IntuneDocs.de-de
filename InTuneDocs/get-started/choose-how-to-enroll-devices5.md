@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/16/2017
+ms.date: 03/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic EXPIERIMENT
 translationtype: Human Translation
 ms.sourcegitcommit: b4295fbc9df88fa537f18b1280dfcc32702ccc51
 ms.openlocfilehash: ef14eba575df3c4498a5a70384c3cf59c34b86b0
+ms.lasthandoff: 02/17/2017
 
 
 ---
@@ -25,7 +26,6 @@ ms.openlocfilehash: ef14eba575df3c4498a5a70384c3cf59c34b86b0
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmethode für die von Ihnen verwalteten Geräte zu ermitteln.
-
 
 ## <a name="how-will-you-manage-shared-ios-devices"></a>**Wie werden Sie freigegebene iOS-Geräte verwalten?**
 
@@ -42,11 +42,6 @@ Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmet
 
   - **Geräteregistrierungs-Manager** – Mit dem Geräteregistrierungs-Manager (Device Enrollment Manager, DEM) von Intune können Manager oder Administratoren eine Vielzahl mobiler Geräte bei einem einzelnen Benutzerkonto registrieren. Diese Geräte dürfen keine Benutzeraffinität (d. h. dedizierte Benutzer) aufweisen und müssen registriert werden, indem sie installiert und bei der Unternehmensportal-App angemeldet werden.
 
-  > [!div class="button"]
-  [< Zurück](choose-how-to-enroll-devices3.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+> [!div class="button"]
+[< Zurück](choose-how-to-enroll-devices3.md)
 

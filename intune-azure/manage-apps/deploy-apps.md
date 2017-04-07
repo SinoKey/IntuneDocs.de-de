@@ -1,5 +1,6 @@
 ---
-title: Zuweisen von Apps zu Gruppen | Intune in Azure (Vorschau) | Microsoft Docs
+title: Zuweisen von Apps zu Gruppen
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Nachdem Sie eine App in Intune hinzugefügt haben, sollten Sie sie Gruppen von Benutzern oder Geräten zuweisen."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 638ad0d87c19c9e40e96b42d18e5c4342f40a156
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
+ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -42,6 +44,33 @@ Apps können Geräten zugewiesen werden, und zwar unabhängig davon, ob sie von 
 
 > [!NOTE]
 > Derzeit können Sie iOS- und Android-Apps (Branchen-Apps und Apps aus dem Store) Geräten zuweisen, die nicht bei Intune registriert sind.
+
+## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune-preview"></a>Änderungen für das Zuweisen von Apps zu Gruppen in der Intune-Vorschau
+
+In Intune in Azure (Vorschau) verwenden Sie nicht länger Intune-Gruppen zum Zuweisen von Apps, sondern Sicherheitsgruppen von Azure Active Directory (Azure AD). Aus diesem Grund müssen Sie einige Änderungen kennen, inwiefern die App-Zuweisung funktioniert, ganz besonders, wenn Sie Apps zu untergeordneten Gruppen von Intune zugewiesen haben.
+Es ist sehr wichtig, dass Sie wissen, dass das Konzept der untergeordneten Gruppen nicht in Azure AD existiert. Einige Gruppen können jedoch die gleichen Elemente enthalten. In diesem Fall unterscheidet sich das Verhalten zwischen klassischen Intune und Intune in Azure (Vorschau). Dies wird in der folgenden Tabelle veranschaulicht:
+
+||||||
+|-|-|-|-|-|
+|**Intune (klassisch) (vor der Mandantenmigration)**|-|**Intune Azure (nach Abschluss der Migration von Mandanten)**|-|**Weitere Informationen**|
+|**Bereitstellungsabsicht der übergeordneten Gruppe**|**Bereitstellungsabsicht der untergeordneten Gruppe**|**Resultierende Zuweisungsabsicht für häufige Elemente der vorherigen übergeordneten und untergeordneten Gruppe**|**Resultierende Zuweisungsabsicht für Elemente der übergeordneten Gruppe**|-|    
+|Verfügbar|Erforderlich|Erforderlich und Verfügbar|Verfügbar|Erforderlich und Verfügbar bedeutet, dass als erforderlich zugewiesene Apps auch in der Unternehmensportal-App gesehen werden können.
+|Nicht zutreffend|Verfügbar|Nicht zutreffend|Nicht zutreffend|Problemlösung: Entfernen Sie die Bereitstellungsabsicht „Nicht zutreffend“ aus der übergeordneten Intune-Gruppe.
+|Erforderlich|Verfügbar|Erforderlich und Verfügbar|Erforderlich|-|
+|Erforderlich und Verfügbar<sup>1</sup>|Verfügbar|Erforderlich und Verfügbar|Erforderlich und Verfügbar|-|    
+|Erforderlich|Nicht zutreffend|Erforderlich|Erforderlich|-|    
+|Erforderlich und Verfügbar|Nicht zutreffend|Erforderlich und Verfügbar|Erforderlich und Verfügbar|-|    
+|Erforderlich|Deinstallieren|Erforderlich|Erforderlich|-|    
+|Erforderlich und Verfügbar|Deinstallieren|Erforderlich und Verfügbar|Erforderlich und Verfügbar|-|
+<sup>1</sup> Nur für verwaltete iOS Store-Apps, wenn Sie diese Intune hinzufügen und als „Erforderlich“ bereitstellen, wenn sie automatisch jeweils mit der Absicht „Erforderlich“ und „Verfügbar“ erstellt wurden.
+
+Sie können die folgenden Maßnahmen durchführen, um Bereitstellungskonflikte zu vermeiden:
+
+1.    Wenn Sie zuvor Apps für verknüpfte übergeordnete und untergeordnete Intune-Gruppen bereitgestellt haben, erwägen Sie, diese Bereitstellungen zu entfernen, bevor Ihre Mandantenmigration beginnt.
+2.    Entfernen Sie untergeordneten Gruppen von den übergeordneten Gruppen, und erstellen Sie eine neue Gruppe, die die Elemente der alten untergeordnete Gruppe enthält. Sie können dann eine neue App-Bereitstellung zu dieser Gruppe erstellen.
+Hinweise: Wenn die vorherige übergeordnete Gruppe „Alle Benutzer“ war, müssen Sie eine neue dynamische Gruppe erstellen, die keine Elemente der untergeordneten Gruppe enthält.
+Sie müssen keine Änderungen an Gruppen im [Azure-Portal](https://portal.azure.com/) für Benutzer- und Gerätegruppen durchführen. Das [klassische Azure-Portal](https://manage.windowsazure.com/) erlaubt Ihnen nur Änderungen an den Benutzergruppen.
+
 
 ## <a name="how-to-assign-an-app"></a>Zuweisen einer App
 

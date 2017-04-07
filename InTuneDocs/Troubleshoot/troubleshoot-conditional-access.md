@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
+ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
+ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -56,6 +57,13 @@ Diese Bedingungen können für jedes Gerät im Azure-Verwaltungsportal und im Ge
      -     Ein iOS-Gerät kann beim Überprüfen der Kompatibilität hängen bleiben, wodurch verhindert wird, dass der Benutzer einen weiteren Eincheckvorgang initiiert. Dieses Problem kann durch einen Neustart des Unternehmensportals behoben werden und der Kompatibilitätsstatus spiegelt den Gerätestatus in Intune wider. Nachdem alle Daten von einer Gerätesynchronisierung erfasst wurden, erfolgt die Kompatibilitätsprüfung sehr schnell und sie benötigt im Durchschnitt weniger als eine halbe Sekunde.
 
         In der Regel verbleiben Geräte in diesem Zustand, weil sie Probleme beim Herstellen einer Verbindung mit dem Dienst haben oder die Synchronisierung lange dauert.  Tritt das Problem für verschiedene Netzwerkkonfigurationen (Mobilfunk, WLAN, VPN), nach Geräteneustarts und nach der Überprüfung, dass der SSP auf dem Gerät aktuell ist, weiterhin auf, wenden Sie sich gemäß der Beschreibung in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) an den Microsoft-Support.
+
+ - Für Android-Geräte:
+     - Bestimmte Android-Geräte mögen verschlüsselt zu sein scheinen, aber die Unternehmensportal-App erkennt diese Geräte als nicht verschlüsselt. 
+    
+        -    Für Geräte in diesem Status muss der Benutzer eine sichere Startkennung festlegen. Für den Benutzer erscheint eine Benachrichtigung über die Geräte von der Unternehmensportal-App, die ihn auffordert, eine Startkennung für das Gerät festzulegen. Tippen Sie auf die Benachrichtigung über die Geräte und bestätigen Sie die vorhandene PIN oder das Kennwort, und wählen Sie dann auf dem Bildschirm **Secure start-up** (Sicherer Start) die Option **Require PIN to start device** (PIN für Start des Geräts anfordern). Tippen Sie dann auf die Schaltfläche **Check Compliance** (Kompatibilität prüfen) für das Gerät aus der Unternehmensportal-App. Das Gerät sollte nun als verschlüsselt erkannt werden.
+    
+        -     Einige Gerätehersteller verschlüsseln ihre Geräte mithilfe einer Standard-PIN anstelle der geheimen PIN, die vom Benutzer festgelegt wird. Intune erkennt die Verschlüsselung über die Standard-PIN als unsicher, da diese Methode der Verschlüsselung die Daten auf dem Gerät durch böswillige Benutzer mit physischem Zugriff auf das Gerät gefährden kann. Wenn dies das Problem ist, ziehen Sie die [App-Schutzrichtlinien](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies) in Betracht.
 
 ## <a name="policy-issues"></a>Probleme mit Richtlinien
 
@@ -159,9 +167,4 @@ So aktivieren Sie die ausführliche Protokollierung
 
 ### <a name="next-steps"></a>Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

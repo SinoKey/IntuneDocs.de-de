@@ -1,11 +1,12 @@
 ---
-title: Konfigurieren von Intune-E-Mail-Einstellungen | Intune in Azure (Vorschau) | Microsoft Docs
+title: So konfigurieren Sie Intune-E-Mail-Einstellungen
+titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie Intune konfigurieren, um Verbindungen mit Unternehmens-E-Mail-Diensten auf Geräten, die Sie verwalten, herzustellen."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 66c189ed45b8b5226e36ef4769c0872c428646bb
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 70d013768c07f1782255a309b5941f05c2222912
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -25,13 +27,14 @@ ms.lasthandoff: 02/16/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Mit E-Mail-Profileinstellungen können Sie Einstellungen, die zum Herstellen von Verbindungen und zum Synchronisieren mit Unternehmens-E-Mail-Diensten erforderlich sind, für Geräte konfigurieren. Damit können Sie sicherzustellen, dass die Einstellungen für alle Ihre Geräte einheitlich sind. Außerdem reduzieren Sie damit Supportanfragen von Endbenutzern, die nicht die richtigen E-Mail-Einstellungen kennen.
+Mit E-Mail-Profilen können Sie Einstellungen, die zum Herstellen von Verbindungen und zum Synchronisieren mit Unternehmens-E-Mails erforderlich sind, für Geräte konfigurieren. Damit können Sie sicherzustellen, dass die Einstellungen für alle Ihre Geräte einheitlich sind. Außerdem reduzieren Sie damit Supportanfragen von Endbenutzern, die nicht die richtigen E-Mail-Einstellungen kennen.
 
 Der integrierte E-Mail-Client wird auf den meisten Plattformen unterstützt. Die meisten E-Mail-Apps von Drittanbietern werden derzeit nicht unterstützt.
 
 Sie können E-Mail-Profile verwenden, um den systemeigenen E-Mail-Client auf den folgenden Gerätetypen zu konfigurieren:
 
-- Android 4,0 und höher
+- Android Samsung KNOX Standard 4.0 und höher
+- Android for Work
 - iOS 8.0 und höher
 - Windows Phone 8.1 und höher
 - Windows 10 (Desktop) und Windows 10 Mobile
@@ -42,7 +45,7 @@ Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfiguri
 
 1. Melden Sie sich beim Azure-Portal an.
 2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte konfigurieren** aus.
+3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
 2. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
 3. Wählen Sie auf dem Blatt „Profile“ die Option **Profil erstellen** aus.
 4. Geben Sie auf dem Blatt **Profil erstellen** einen **Namen** und eine **Beschreibung** für das E-Mail-Profil ein.
