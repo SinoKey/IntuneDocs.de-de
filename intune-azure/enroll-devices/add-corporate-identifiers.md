@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: e0a853c34c6d38e8fae6f4712ba6c2b767e5d0ba
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 4ebd74c77145464574a1fed878ec4dbc2eb3c271
+ms.openlocfilehash: 7bb8168c442a3340e8c185f1908acd9be15cab05
+ms.lasthandoff: 04/05/2017
 
 ---
 
@@ -27,6 +27,8 @@ ms.lasthandoff: 03/22/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Als IT-Administrator können Sie eine durch Trennzeichen getrennte Datei (CSV-Datei) erstellen und importieren, die IMEI-Nummern (International Mobile Equipment Identity) zum Identifizieren von firmeneigenen Geräten auflistet. Jede IMEI-Nummer kann Details enthalten, die in der Liste zu administrativen Zwecken angegeben sind.
+
+Wenn Sie Seriennummern von firmeneigenen iOS-Geräten hochladen, müssen sie mit einem Unternehmensregistrierungsprofil gepaart werden. Geräte müssen entweder mithilfe des Apple-Programms zur Geräteregistrierung (DEP) oder mit Apple Configurator registriert werden, damit sie als unternehmenseigen angezeigt werden. 
 
 ## <a name="create-a-csv-file"></a>Erstellen einer CSV-Datei
 Erstellen Sie dazu eine Liste mit zwei Spalten, die durch Trennzeichen getrennt ist (CSV) und keinen Header enthält. Fügen Sie den IMEI-Bezeichner in der linken Spalte und die Details in der rechten Spalte hinzu. Details sind auf 128 Zeichen beschränkt. Die aktuelle Begrenzung beträgt 500 Zeilen pro CSV-Datei.
