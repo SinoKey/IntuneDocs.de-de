@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: 7d5a1859ef1a373ce424dd4f351fc137c6052fb7
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 8cc5e12308871a3b023bed49e9647b888971f849
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -87,6 +87,12 @@ Falls Sie bereits die klassische Intune-Verwaltungskonsole verwendet haben, beac
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
+
+##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>Migration von der klassischen Intune-Konsole zum Intune Azure-Vorschauportal
+
+Gerätekompatibilitätsrichtlinien, die in der [klassischen Intune-Konsole](https://manage.microsoft.com) erstellt wurden, erscheinen nicht im neuen [Intune Azure-Vorschauportal](https://portal.azure.com). Sie sind jedoch weiterhin für Benutzer bestimmt und können über die klassische Intune-Konsole verwaltet werden.
+
+Wenn Sie von den neuen Funktionen für Gerätekompatibilität im Intune-Azure-Portal profitieren wollen, müssen Sie neue Gerätekompatibilitätsrichtlinien im Intune-Azure-Portal selbst erstellen. Wenn Sie eine neue Gerätekompatibilitätsrichtlinie im Intune-Azure-Portal einem Benutzer zuweisen, dem auch eine Gerätekompatibilitätsrichtlinie aus dem klassischen Intune-Portal zugewiesen wurde, haben die Gerätekompatibilitätsrichtlinien aus dem Intune-Azure-Portal Vorrang vor denen, die in der klassischen Intune-Konsole erstellt wurden.
 
 ##  <a name="next-steps"></a>Nächste Schritte
 

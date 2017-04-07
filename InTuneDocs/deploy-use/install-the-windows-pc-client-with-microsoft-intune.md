@@ -5,7 +5,7 @@ description: Befolgen Sie diese Anleitung zum Verwalten Ihrer Windows-PCs durch 
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-ms.date: 02/22/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: e7e199bd1820299e7c0ea4f9adc3f5e62bffab97
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
+ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -106,7 +106,7 @@ Sie können die Intune-Clientsoftware als Teil eines Betriebssystemabbilds auf C
 
 ## <a name="instruct-users-to-self-enroll"></a>Einweisen von Benutzern in die eigenständige Registrierung
 
-Benutzer können die Intune-Clientsoftware installieren, indem Sie auf die [Unternehmensportal-Website](http://portal.manage.microsoft.com) gehen. Die genauen Informationen, die den Benutzern im Webportal angezeigt werden, können je nach MDM-Autorität Ihres Kontos und je nach Betriebssystemplattform und Version des Benutzer-PCs variieren. 
+Benutzer können die Intune-Clientsoftware installieren, indem Sie auf die [Unternehmensportal-Website](http://portal.manage.microsoft.com) gehen. Die genauen Informationen, die den Benutzern im Webportal angezeigt werden, können je nach MDM-Autorität Ihres Kontos und je nach Betriebssystemplattform und Version des Benutzer-PCs variieren.
 
 Wenn Benutzern keine Lizenz für Intune zugewiesen wurde oder die MDM-Autorität der Organisation nicht auf Intune festgelegt wurde, werden den Benutzern keine Optionen zum Registrieren angezeigt.
 
@@ -200,7 +200,7 @@ Führen Sie mithilfe einer Eingabeaufforderung mit erhöhten Rechten die folgend
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
     ```
 
-**Methode 2** Beachten Sie, dass nicht alle diese Agents auf jeder Windows-SKU installiert sind):
+**Methode 2**<br>Beachten Sie, dass alle diese Agents auf jeder Windows-SKU installiert sind:
 
     ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
@@ -247,7 +247,7 @@ Führen Sie mithilfe einer Eingabeaufforderung mit erhöhten Rechten die folgend
 - AgentInstaller
 - Protokolle
 - Updates
-- Allgemein 
+- Allgemein
 
 ### <a name="remove-the-onlinemanagement-folder"></a>Entfernen des Ordner „OnlineManagement“
 

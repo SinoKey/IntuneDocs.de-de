@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c09c0b5d76a3035b2af82fe32d4b6c6e35d06baf
-ms.openlocfilehash: 46b140db09163187c68385d0919edb9a58056923
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: e71ebacec9d7b890b41e7650c8c50f42952c6326
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -32,7 +33,7 @@ Der Schutz der Unternehmensdaten umfasst die Sicherstellung, dass die Übertragu
 
 -   Sie können Apps auch über den **MDM-Kanal** bereitstellen und verwalten.  Dies erfordert, dass die Geräte in der MDM-Lösung registriert sind. Dabei kann es sich um **richtlinienverwaltete** Apps oder andere verwaltete Apps handeln.
 
-Mit dem Feature **Open in Management** für iOS-Geräte kann die Übertragung von Dateien zwischen Apps, die über den **MDM-Kanal** bereitgestellt werden, eingeschränkt werden. Die Einschränkungen für „Open in Management“ werden in den Konfigurationseinstellungen festgelegt und mithilfe der MDM-Lösung bereitgestellt.  Wenn der Benutzer die bereitgestellte App installiert, werden die festgelegten Einschränkungen angewendet.
+Mit dem Feature **Open in Management** für iOS-Geräte kann die Übertragung von Dateien zwischen Apps, die über den **MDM-Kanal** bereitgestellt werden, eingeschränkt werden. Die Einschränkungen von „Open in Management“ werden in den Konfigurationseinstellungen festgelegt und mithilfe der MDM-Projektmappe bereitgestellt.  Wenn der Benutzer die bereitgestellte App installiert, werden die festgelegten Einschränkungen angewendet.
 
 ##  <a name="manage-data-transfer-between-ios-apps"></a>Verwalten der Datenübertragung zwischen iOS-Apps
 App-Schutzrichtlinien können mit dem iOS-Feature **Open in Management** verwendet werden, um Unternehmensdaten auf folgende Weite zu schützen:
@@ -59,7 +60,7 @@ Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die von
 
       **Schlüssel** = IntuneMAMUPN, **Wert** = <username@company.com>
 
-      Beispiel: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      Beispiel: [‘IntuneMAMUPN’, ‚jondoe@microsoft.com‘]
 
   2.  Stellen Sie die Richtlinie „Open in Management“ mithilfe des MDM-Anbieters eines Drittanbieters für registrierte Geräte bereit.
 
@@ -76,9 +77,9 @@ Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die von
 
 |MDM-Anbieter eines Drittanbieters| Konfigurationsschlüssel | Werttyp | Der Konfigurationswert|
 | ------- | ---- | ---- | ---- |
-|VMware AirWatch| IntuneMAMUPN | Zeichenfolge | {UserPrincipalName}|
-|MobileIron | IntuneMAMUPN | Zeichenfolge | ${userUPN} **oder** ${userEmailAddress} |
-
+| VMware AirWatch | IntuneMAMUPN | Zeichenfolge | {UserPrincipalName}|
+| MobileIron Core | IntuneMAMUPN | Zeichenfolge | $EMAIL$ **oder** $USER_UPN$ |
+| MobileIron Cloud | IntuneMAMUPN | Zeichenfolge | ${userUPN} **oder** ${userEmailAddress} |
 
 ### <a name="example-2-end-user-experience"></a>Beispiel 2: Endbenutzererfahrung
 
@@ -91,11 +92,11 @@ Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die von
 4.  Beim Start der Word-App wird der Endbenutzer aufgefordert, sich mit seinem Geschäftskonto anzumelden.  Das Geschäftskonto, das der Benutzer eingibt, wenn er dazu aufgefordert wird, sollte dem in den App-Konfigurationseinstellungen für die Microsoft Word-App festgelegten Konto entsprechen.
 
     > [!NOTE]
-    > Der Endbenutzer kann für private Zwecke weitere persönliche Konten zu Word hinzufügen, die nicht den App-Schutzrichtlinien unterliegen, wenn er die Word-App in einem privaten Kontext verwendet.
+    > Der Endbenutzer kann Word für private Zwecke weitere persönliche Konten hinzufügen, die nicht den App-Schutzrichtlinien unterliegen, wenn er die Word-App in einem privaten Kontext verwendet.
 
 5.  Wenn die Anmeldung erfolgreich durchgeführt wurde, werden die Schutzrichtlinieneinstellungen für Apps auf die Word-App angewendet.
 
-6.  Jetzt erfolgt die erfolgreiche Datenübertragung und das Dokument wird in der App als Unternehmensidentität markiert. Darüber hinaus werden die Daten in einem Arbeitskontext behandelt und die Richtlinieneinstellungen werden entsprechend angewendet.
+6.  Nach der erfolgreiche Dateiübertragung wird das Dokument in der App als Unternehmensidentität markiert. Darüber hinaus wird die Datei in einem Arbeitskontext behandelt und die Richtlinieneinstellungen werden entsprechend angewendet.
 
 ### <a name="validate-user-upn-setting-for-third-party-emm"></a>Überprüfen von UPN-Einstellungen für Drittanbieter-EMM
 
@@ -109,9 +110,4 @@ Kümmern Sie sich zuerst um das [Erstellen und Bereitstellen von Verwaltungsrich
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Protect app data using app protection policies with Microsoft Intune (Schützen von App-Daten mithilfe der App-Schutzrichtlinien mit Microsoft Intune)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

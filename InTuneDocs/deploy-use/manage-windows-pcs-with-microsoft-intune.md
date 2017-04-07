@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/09/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 10ba007095182c9cb07710656ba5f275e254d92e
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 74f2848dcd2863022dac44cf302b330a99cf1a55
+ms.lasthandoff: 03/29/2017
 
 
 ---
 
 # <a name="manage-windows-pcs-with-intune-pc-client-software"></a>Verwalten von Windows-PCs mit der Intune-PC-Clientsoftware
-Die [Registrierung von Windows-PCs als mobile Geräte](set-up-windows-device-management-with-microsoft-intune.md) ist die bevorzugte Methode der Registrierung von Windows-PCs in Intune, aber Sie können alternativ auch Windows-PCs durch die Installation der Intune-Clientsoftware registrieren und verwalten, so wie in diesem Thema beschrieben.
+Die [Registrierung von Windows-PCs als mobile Geräte](set-up-windows-device-management-with-microsoft-intune.md) ist die bevorzugte Methode der Registrierung von Windows-PCs in Intune, aber Sie können als IT-Administrator alternativ auch Windows-PCs durch die Installation der Intune-Clientsoftware registrieren und verwalten, so wie in diesem Thema beschrieben. Der Softwareclient von Intune wird von der Registrierung als mobiles Gerät nicht unterstützt.
 
 Intune verwaltet Windows-PCs mithilfe von Richtlinien ähnlich wie die Gruppenrichtlinienobjekte (Group Policy Objects, GPOs) der Windows Server Active Directory Domain Services (AD DS). Wenn Sie Computer in einer Active Directory-Domäne mit Intune verwalten, [stellen Sie sicher, dass Intune-Richtlinien nicht zu Konflikten mit GPOs führen](resolve-gpo-and-microsoft-intune-policy-conflicts.md), die für Ihre Organisation eingerichtet sind. Weitere Informationen hierzu finden Sie unter [Gruppenrichtlinienobjekte (GPOs)](https://technet.microsoft.com/library/hh147307.aspx).
 
 ## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Richtlinien und App-Bereitstellungen für den Intune-Softwareclient
 
-Die Intune-Clientsoftware verwaltet Softwareupdates, Windows-Firewall und Endpoint Protection und unterstützt auf diese Weise [Verwaltungsfunktionen zum Schutz von PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md). Allerdings können auf PCs, die mit der Intune-Clientsoftware verwaltet werden, keine anderen Intune-Richtlinien angewendet werden. Dies gilt auch für **Windows**-Richtlinieneinstellungen speziell für die Verwaltung mobiler Geräte. 
+Die Intune-Clientsoftware verwaltet Softwareupdates, Windows-Firewall und Endpoint Protection und unterstützt auf diese Weise [Verwaltungsfunktionen zum Schutz von PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md). Allerdings können auf PCs, die mit der Intune-Clientsoftware verwaltet werden, keine anderen Intune-Richtlinien angewendet werden. Dies gilt auch für **Windows**-Richtlinieneinstellungen speziell für die Verwaltung mobiler Geräte.
 
 Wenn Sie die Intune-Clientsoftware zum Verwalten von Windows-PCs verwenden, können Sie nur die Richtlinien im Abschnitt **Computerverwaltung** verwenden.
 
@@ -70,7 +70,7 @@ Wenn Sie Apps bereitstellen, können Sie außerdem nur Windows Installer (EXE, M
 
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Computerverwaltungsfunktionen mit der Intune-Clientsoftware
 
-Nach der Installation der Clientsoftware sind u.a. die folgenden Verwaltungsfunktionen möglich: 
+Nach der Installation der Clientsoftware sind u.a. die folgenden Verwaltungsfunktionen möglich:
 
 - [Anwendungsverwaltung](deploy-apps-in-microsoft-intune.md)
 
