@@ -24,7 +24,6 @@
 ### [Anpassen des Unternehmensportals](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [Registrieren von Geräten](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Aufgaben nach der Konfiguration](get-started/post-configuration-tasks.md)
-## [Migrieren zu Intune](get-started/migrate-to-intune.md)
 ## Nächste Schritte
 ### [Verhindern von Kompromittierungen im Unternehmen durch mobile Office 365-Apps](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [Schützen von Unternehmensdaten durch Datenverschlüsselung](get-started/protect-data-encryption.md)
