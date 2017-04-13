@@ -32,15 +32,15 @@ Außerdem benötigen Sie [Microsoft Authenticator](https://docs.microsoft.com/az
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
--   Die unten beschriebenen Schritte müssen in der [klassischen Intune-Konsole](https://manage.microsoft.com/) abgeschlossen werden.
+-   Die unten beschriebenen Schritte müssen in der [klassischen Intune-Konsole](https://manage.microsoft.com/) durchgeführt werden.
 
--   Verwenden Sie dasselbe Azure AD-Konto, das zuvor in der Skycure-Verwaltungskonsole konfiguriert wurde. Dabei sollte es sich um das Konto handeln, mit dem Sie sich in die klassische Intune-Konsole einloggen.
+-   Verwenden Sie dasselbe Azure AD-Konto, das zuvor in der Skycure-Verwaltungskonsole konfiguriert wurde. Dabei sollte es sich um das Konto handeln, mit dem Sie sich bei der klassischen Intune-Konsole anmelden.
 
 -   Die Skycure-Integrationsdatei muss zur Verwendung bereit sein. Dies ist die ZIP-Datei, die zuvor aus der Skycure-Verwaltungskonsole heruntergeladen wurde und die Datei **skycure\_configuration.plist** mit den Richtlinienparametern für die iOS-App-Konfiguration enthält.
 
 -   Stellen Sie sicher, dass Sie mit den folgenden Prozessen vertraut sind:
 
-    -   [Hinzufügen von Apps mit Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/add-apps)
+    -   [Hinzufügen von Apps in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/add-apps)
 
     -   [Hinzufügen von iOS-Apps mit Konfigurationsrichtlinien in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)
 
@@ -100,7 +100,7 @@ Außerdem benötigen Sie [Microsoft Authenticator](https://docs.microsoft.com/az
 
 3.  Geben Sie im Abschnitt **Allgemein** der Seite **Richtlinie erstellen** einen Namen und eine optionale Beschreibung für die Konfigurationsrichtlinie für iOS-Apps an.
 
-    a.  Öffnen Sie die Datei **skycure\_configuration.plist** mit einem Text-Editor wie Editor, kopieren Sie den Inhalt und fügen Sie ihn in den Text unter **Richtlinie zur Konfiguration mobiler Apps** ein, und wählen Sie **Überprüfen** und dann **Richtlinie speichern** aus.
+    a.  Öffnen Sie die Datei **skycure\_configuration.plist** mit einem Text-Editor wie Editor. Kopieren Sie den Inhalt und fügen Sie ihn in den Text unter **Richtlinie zur Konfiguration mobiler Apps** ein. Wählen Sie dann **Überprüfen** und schließlich **Richtlinie speichern** aus.
 
        ![iOS-App-Konfigurationsrichtlinie 2](../media/mtp/skycure-add-apps-8.png)
 
