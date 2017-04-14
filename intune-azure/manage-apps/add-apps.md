@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 296e7db9be18323b44cc79592c981f5d7241602f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: e4a6aaa1a8e23dc2c58345f73ff8db86018843e1
+ms.openlocfilehash: fe12a6b890c2d5cba874e820afbe7671b754deb5
+ms.lasthandoff: 04/11/2017
 
 ---
 
@@ -34,9 +34,7 @@ Intune unterstützt das Hinzufügen und Zuweisen der folgenden App-Typen:
 
 Die folgenden Plattformen werden unterstützt. Klicken Sie auf eines der Themen, um weitere Informationen zum Hinzufügen der einzelnen App-Typen zu erhalten.
 
-- [Branchenspezifische Android-Apps](/intune-azure/manage-apps/android-lob-app)
 - [Android Store-Apps](/intune-azure/manage-apps/android-store-app)
-- [Branchenspezifische iOS-Apps](/intune-azure/manage-apps/ios-lob-app)
 - [iOS Store-Apps](/intune-azure/manage-apps/ios-store-app)
 - [Web-Apps (für alle Plattformen)](/intune-azure/manage-apps/web-app)
 - [Windows Phone 8.1 Store-Apps](/intune-azure/manage-apps/windows-phone-8-1-store-app)

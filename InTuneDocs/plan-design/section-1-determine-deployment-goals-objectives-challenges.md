@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: 2e46c5612c120a24d3f8fe32decd3eb7a0d4e709
+ms.sourcegitcommit: d10906ee3fb69458738b31bb1d4252d632a9a0cf
+ms.openlocfilehash: 6014527422ea3dae4d1333965ccd9e48e8216afb
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -91,12 +92,7 @@ Herausforderungen bei der Bereitstellung sind Aspekte, die bei einer Organisatio
 <br>
     -   **Lösung:** Auch wenn Sie sich gerne sofort in Ihr Projekt stürzen möchten, stellen Sie zuerst sicher, dass Sie Ihre langfristigen und kurzfristigen Ziele eindeutig definieren. Beziehen Sie diese in alle Sensibilisierungs- und Trainingsaktivitäten ein, um sicherzustellen, dass den Benutzern klar ist, warum das Unternehmen sich für Intune entschieden hat.
 
-## <a name="next-section"></a>Nächster Abschnitt
+## <a name="next-steps"></a>Nächste Schritte
 
 Sie haben Ihre langfristigen und kurzfristigen Ziele sowie die möglichen Herausforderungen Ihrer Bereitstellung identifiziert. Fahren Sie nun mit dem nächsten Abschnitt fort: [Identifizieren von Anwendungsszenarien](section-2-identify-use-case-scenarios.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
