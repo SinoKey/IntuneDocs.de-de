@@ -74,9 +74,7 @@
 ## [Plan and design](manage-apps/plan-and-design.md) --->
 ## Verwalten von Apps
 ### [Hinzufügen von Apps](manage-apps/add-apps.md)
-#### [Branchenspezifische Android-Apps](manage-apps/android-lob-app.md)
 #### [Android Store-Apps](manage-apps/android-store-app.md)
-#### [Branchenspezifische iOS-Apps](manage-apps/ios-lob-app.md)
 #### [iOS Store-Apps](manage-apps/ios-store-app.md)
 #### [Web-Apps](manage-apps/web-app.md)
 #### [Windows Phone 8.1 Store-Apps](manage-apps/windows-phone-8-1-store-app.md)
