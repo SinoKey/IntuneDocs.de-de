@@ -31,17 +31,16 @@
 ### [Festlegen der MDM-Autorität](enroll-devices/set-mdm-authority.md)
 ## Planung und Entwurf
 ### [Abrufen eines Apple-MDM-Push-Zertifikats](enroll-devices/get-an-apple-mdm-push-certificate.md)
-### [Abrufen eines Apple-DEP-Tokens](enroll-devices/get-apple-dep-token.md)
 ### [Auswählen der Registrierungsmethode für iOS-Geräte](enroll-devices/choose-ios-enrollment-method.md)
 ## Vorgehensweise:
 ### [Zuweisen von Lizenzen zu Benutzern](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Registrieren von Android-Geräten](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### Registrieren von iOS-Geräten
-#### [Registrieren von iOS-Geräten mithilfe des Setup-Assistenten](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
-#### [Registrieren von iOS-Geräten mithilfe der Option „Direkte Registrierung“](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
+#### [Setup-Assistent für Apple Configurator](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
+#### [Apple Configurator – Direkte Registrierung](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
 #### [Hinzufügen von Apple Configurator-Seriennummern](enroll-devices/add-apple-configurator-serial-numbers.md)
-#### [Registrieren von iOS-Geräten mithilfe des Programms zur Geräteregistrierung](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
-### [Registrieren von Geräten mithilfe des Geräteregistrierungs-Managers](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+#### [DEP (DEVICE ENROLLMENT PROGRAM)](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
+### [Geräteregistrierungs-Manager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Registrieren von macOS-Geräten](enroll-devices/enroll-macos-devices.md)
 ### [Registrieren von Windows-Geräten](enroll-devices/enroll-windows-devices.md)
 ### Verwalten der Geräteregistrierung
