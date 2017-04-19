@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 6bc3afe58d5e0f1f12c8b6c6fc62e37d01cd5132
 ms.openlocfilehash: cab9833a1e1b92c156a2eb77411436289c70ad71
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -165,7 +166,7 @@ Intune-Benachrichtigungsregeln definieren, an wen aus Intune eine E-Mail-Benachr
 
     Klicken Sie im Arbeitsbereich **Verwaltung** auf **Benachrichtigungsregeln** > **Neue Regel erstellen**.
 
-    In Schritt&2; des Assistenten zum Erstellen von Benachrichtigungsregeln wählen Sie die Gerätegruppen aus, für die die Regel gelten soll. Der Schritt „Gerätegruppen auswählen“ wurde aus der Intune-Konsole entfernt.
+    In Schritt 2 des Assistenten zum Erstellen von Benachrichtigungsregeln wählen Sie die Gerätegruppen aus, für die die Regel gelten soll. Der Schritt „Gerätegruppen auswählen“ wurde aus der Intune-Konsole entfernt.
 
     Der vorläufige Zeitplan für diese Änderung ist wie folgt:
     - Im Juni 2016 wird neuen Mandanten Schritt 2 im Assistenten zum Erstellen von Benachrichtigungsregeln nicht mehr angezeigt. Vorhandene Mandanten sind nicht betroffen.
@@ -216,9 +217,4 @@ Bevor diese Statusangaben hinzugefügt wurden, waren die Benutzer verunsichert, 
 >[!div class="step-by-step"]
 
 >[&larr; **Neuheiten in Intune**](whats-new-in-microsoft-intune.md)    
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
