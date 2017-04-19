@@ -1,3 +1,4 @@
+
 # <a name="understand-and-exploreintuneunderstand-exploreintroduction-to-microsoft-intune"></a>[Verstehen und Kennenlernen](/intune/understand-explore/introduction-to-microsoft-intune)
 # <a name="get-startedintuneget-startedget-started"></a>[Erste Schritte](/intune/get-started/get-started)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
@@ -152,8 +153,3 @@
 # <a name="develop-and-customize-appsintunedevelopintune-app-sdk"></a>[Entwickeln und Anpassen von Apps](/intune/develop/intune-app-sdk)
 
 # <a name="troubleshootintunetroubleshootgeneral-troubleshooting-tips-for-microsoft-intune"></a>[Problembehandlung](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
-
-
-<!--HONumber=Feb17_HO3-->
-
-
