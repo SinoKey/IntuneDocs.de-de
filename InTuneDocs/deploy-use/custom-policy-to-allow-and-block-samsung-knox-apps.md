@@ -15,8 +15,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
+ms.sourcegitcommit: adf7e2d0f76e63f67b7cf3d26d26df0da0e50bd0
+ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
+ms.lasthandoff: 03/31/2017
 
 
 
@@ -43,7 +44,7 @@ Diese Einstellungen können nur von Geräten verwendet werden, auf denen Samsung
     - **Beschreibung der Einstellung.** Geben Sie optional eine Beschreibung wie z.B. „Liste der Apps, deren Ausführung blockiert wird“ ein.
     -     **Datentyp.** Wählen Sie in der Dropdownliste **Zeichenfolge** aus.
     -     **OMA-URI.** Geben Sie **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** ein.
-    -     **Wert.** Geben Sie eine Liste mit den Namen der App-Pakete ein, die Sie zulassen möchten. Sie können **; : ,** oder **|** als Trennzeichen verwenden. (Beispiel: Paket1; Paket2;)
+    -     **Wert.** Geben Sie eine Liste mit den Namen der App-Pakete ein, die Sie blockieren möchten. Sie können **; : ,** oder **|** als Trennzeichen verwenden. (Beispiel: Paket1; Paket2;)
 
     Für eine Liste von Apps, die Benutzer des Geräts aus Google Play Store installieren dürfen, wobei alle anderen Apps ausgeschlossen werden:
 
@@ -72,9 +73,4 @@ Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informa
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Einstellungen für Android- und Samsung KNOX-Richtlinien in Microsoft Intune](android-policy-settings-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 145fd465eb837a4f1a2a62358912fb8e824d4913
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 195a7333e09f3a269b5ff10c51e0cfb3e7d10bdc
+ms.openlocfilehash: 3e363183f3ac33e4cde1060fb141f5e4eb7d566c
+ms.lasthandoff: 04/04/2017
 
 ---
 
@@ -51,6 +51,59 @@ ms.lasthandoff: 03/15/2017
 
 Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie ausgewählten Gruppen zuweisen können. Hilfe finden Sie unter [Zuweisen von Apps zu Gruppen](/intune-azure/manage-apps/deploy-apps).
 
-## <a name="sign-the-windows-10-company-portal-app"></a>Signieren der Windows 10-Unternehmensportal-App
-Für Kunden, die die Windows 10-Unternehmensportal-App herunterladen und querladen möchten, können Sie nun ein Skript verwenden, um den App-Signierungsprozess für Ihre Organisation zu vereinfachen und zu optimieren. Das herunterladbare Skript sowie Informationen zu dessen Verwendung finden Sie bei TechNet unter [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript) (Microsoft Intune-Signierungsskript für das Windows 10-Unternehmensportal).
+## <a name="manually-deploy-windows-10-company-portal-app"></a>Manuelles Bereitstellen der Windows 10-Unternehmensportal-App
+Endbenutzer können die Unternehmensportal-App aus dem Windows Store installieren, um Geräte zu verwalten und Apps zu installieren. Wenn Ihr Unternehmen allerdings erfordert, dass Sie die Unternehmensportal-App bereitstellen, können Sie die Windows 10-Unternehmensportal-App manuell direkt über Intune bereitstellen, auch wenn Intune nicht in den Windows Store für Unternehmen integriert wurde.
+
+ > [!NOTE]
+ > Bei dieser Option müssen ggf. veröffentlichte App-Updates manuell bereitgestellt werden.
+
+1. Melden Sie sich bei Ihrem Konto im [Windows Store für Unternehmen](https://www.microsoft.com/business-store) an, und beziehen Sie die **Offlinelizenzversion** der Unternehmensportal-App.  
+2. Wenn Sie über die App verfügen, wählen Sie sie auf der Seite **Inventory** (Bestand) aus.  
+3. Wählen Sie unter **Plattform** die Option **Windows 10 all devices** (Windows 10: alle Geräte) sowie die passende **Architektur** aus, und starten Sie den Downloadvorgang. Für diese App wird keine App-Lizenzdatei benötigt.
+![Abbildung mit Details zum Downloadpaket für „Windows 10 all devices“ (Windows 10: alle Geräte) und x86-Architektur](../media/Win10CP-all-devices.png)
+4. Laden Sie alle Pakete unter „Erforderliche Frameworks“ herunter. Dieser Schritt muss für die x86-, x64- und ARM-Architektur ausgeführt werden. Dadurch ergeben sich insgesamt neun Pakete, wie im Anschluss zu sehen.
+
+![Abbildung mit den herunterzuladenden Abhängigkeitsdateien ](../media/Win10CP-dependent-files.png)
+5. Erstellen Sie einen Ordner (beispielsweise „C:&#92;Company Portal“), bevor Sie die Unternehmensportal-App in Intune hochladen, und strukturieren Sie die Pakete wie folgt:
+  1. Platzieren Sie das Unternehmensportal-Paket im Ordner „C:\Company Portal“. Erstellen Sie dort auch einen Unterordner namens „Dependencies“.  
+  ![Abbildung mit dem Ordner „Dependencies“ und der APPXBUN-Datei](../media/Win10CP-Dependencies-save.png)
+  2. Platzieren Sie die neun Abhängigkeitspakete im Ordner „Dependencies“.  
+  Sind die Abhängigkeiten nicht wie hier beschrieben strukturiert, werden sie von Intune nicht erkannt und nicht hochgeladen. In diesem Fall tritt der folgende Fehler auf:  
+  ![Die Windows App-Abhängigkeit für dieses Softwareinstallationsprogramm wurde im Anwendungsordner nicht gefunden. Sie können diese Anwendung weiterhin erstellen und bereitstellen. Sie können sie jedoch nicht ausführen, bis die fehlende Windows App-Abhängigkeit bereitgestellt wird.](../media/Win10CP-error-message.png)
+6. Kehren Sie zu Intune zurück, und laden Sie die Unternehmensportal-App als neue App hoch. Stellen Sie sie als erforderliche App für die gewünschte Gruppe von Zielbenutzern bereit.  
+
+Weitere Informationen zur Behandlung von Abhängigkeiten für universelle Apps durch Intune finden Sie unter [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Bereitstellen einer APPXBUNDLE-Datei mit Abhängigkeiten über Microsoft Intune MDM).  
+
+### <a name="how-do-i-update-the-company-portal-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>Wie aktualisiere ich das Unternehmensportal auf den Geräten meiner Benutzer, wenn diese bereits die älteren Apps aus dem Store installiert haben?
+Falls Ihre Benutzer bereits die Unternehmensportal-App für Windows 8.1 oder Windows Phone 8.1 aus dem Store installiert haben, sollte diese automatisch auf die neue Version aktualisiert werden, ohne dass Sie oder Ihre Benutzer dazu aktiv werden müssen. Sollte die Aktualisierung nicht erfolgen, fordern Sie die Benutzer auf, sich zu vergewissern, dass sie auf ihren Geräten automatische Updates für Store-Apps aktiviert haben.   
+
+### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Wie führe ich ein Upgrade meiner quergeladenen Windows 8.1-Unternehmensportal-App auf die Windows 10-Unternehmensportal-App durch?
+Wir empfehlen für die Migration die folgende Vorgehensweise: Legen Sie die Bereitstellungsaktion auf „Deinstallieren“ fest, um die Bereitstellung der Windows 8.1-Unternehmensportal-App zu löschen. Anschließend kann die Windows 10-Unternehmensportal-App mit einer der oben genannten Optionen bereitgestellt werden.  
+
+Wenn Sie die App querladen möchten und das Windows 8.1-Unternehmensportal bereitgestellt haben, ohne es mit dem Symantec-Zertifikat zu signieren, führen Sie zur Durchführung des Upgrades die Schritte aus, die weiter oben im Abschnitt zur direkten Bereitstellung über Intune beschrieben sind.
+
+Wenn Sie die App querladen möchten und das Windows 8.1-Unternehmensportal mit dem Symantec-Codesignaturzertifikat bereitgestellt und signiert haben, führen Sie die Schritte des folgenden Abschnitts aus.  
+
+### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Wie führe ich ein Upgrade meiner signierten quergeladenen Windows Phone 8.1-Unternehmensportal-App oder Windows 8.1-Unternehmensportal-App auf die Windows 10-Unternehmensportal-App durch?
+Wir empfehlen für die Migration die folgende Vorgehensweise: Legen Sie die Bereitstellungsaktion auf „Deinstallieren“ fest, um die vorhandene Bereitstellung der Windows Phone 8.1-Unternehmensportal-App oder Windows 8.1-Unternehmensportal-App zu löschen. Anschließend kann die Windows 10-Unternehmensportal-App ganz normal bereitgestellt werden.  
+
+Andernfalls muss die Windows 10-Unternehmensportal-App entsprechend aktualisiert und signiert werden, um sicherzustellen, dass der Upgradepfad eingehalten wird.  
+
+Wenn die Windows 10-Unternehmensportal-App auf diese Weise signiert und bereitgestellt wird, müssen Sie diesen Prozess für jedes neue App-Update wiederholen, das im Store verfügbar wird. Die App wird nicht automatisch aktualisiert, wenn der Store aktualisiert wird.  
+
+Im Anschluss erfahren Sie, wie Sie die App auf diese Weise signieren und bereitstellen:
+
+1. Laden Sie unter [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) das Microsoft Intune-Signierungsskript für die Windows 10-Unternehmensportal-App herunter.  Für dieses Skript muss das Windows SDK für Windows 10 auf dem Hostcomputer installiert sein. Das Windows SDK für Windows 10 können Sie unter [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) herunterladen.
+2. Laden Sie die Windows 10-Unternehmensportal-App wie weiter oben beschrieben aus dem Windows Store für Unternehmen herunter.  
+3. Führen Sie das Skript mit den im Skriptheader angegebenen Eingabeparametern aus, um die Windows 10-Unternehmensportal-App zu signieren (siehe Auszug weiter unten). An das Skript müssen keine Abhängigkeiten übergeben werden. Diese sind nur erforderlich, wenn die App in die Intune-Verwaltungskonsole hochgeladen wird.
+
+|Parameter | Beschreibung|
+| ------------- | ------------- |
+|InputWin10AppxBundle |Der Pfad, an dem sich die APPXBUNDLE-Quelldatei befindet. |
+|OutputWin10AppxBundle |Der Ausgabepfad für die signierte APPXBUNDLE-Datei.  Win81Appx Der Pfad, an dem sich die APPX-Datei des Windows 8.1- oder Windows Phone 8.1-Unternehmensportals befindet.|
+|PfxFilePath |Der Pfad der PFX-Datei für das Symantec Enterprise Mobile-Codesignaturzertifikat. |
+|PfxPassword| Das Kennwort des Symantec Enterprise Mobile-Codesignaturzertifikats. |
+|PublisherId |Die Herausgeber-ID des Unternehmens. Wenn sie nicht vorhanden ist, wird das Feld "Subject" von Symantec Enterprise Mobile Code Signing Certificate verwendet.|
+|SdkPath | Der Pfad des Stammordners für das Windows SDK für Windows 10. Dieses Argument ist optional und wird standardmäßig auf „${env:ProgramFiles(x86)}\Windows Kits\10“ festgelegt.|
+Das Skript gibt nach der Ausführung die signierte Version der Windows 10-Unternehmensportal-App aus. Anschließend können Sie die signierte Version der Anwendung über Intune als branchenspezifische App bereitstellen. Dadurch wird für die derzeit bereitstellten Versionen ein Upgrade auf die neue App durchgeführt.  
 
