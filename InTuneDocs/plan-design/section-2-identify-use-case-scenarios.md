@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: c834b0282b8f9b47566ab1da2125d993ba8febdf
+ms.sourcegitcommit: 3c5744e7c1290bf9016bc03dcb2db9a1bd9f43dd
+ms.openlocfilehash: 031820d505e0e9cb007e47a5397934d0e505aed4
+ms.lasthandoff: 04/10/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: c834b0282b8f9b47566ab1da2125d993ba8febdf
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-In Anwendungsszenarien zur Verwaltung mobiler Geräte werden der Benutzertyp oder die Rolle sowie der Besitz des Geräts (z.B. „Unternehmen“ oder „Persönlich“) beschrieben. Mithilfe von Anwendungsszenarien können Sie Ihre Benutzer in verwaltbare Gruppen unterteilen können. Das Identifizieren Ihrer Anwendungsszenarien ist ein wichtiger Bestandteil des Planungsprozesses für eine erfolgreiche Intune-Bereitstellung.
+In Anwendungsszenarien zur Verwaltung mobiler Geräte werden der Benutzertyp oder die Rolle sowie der Besitz des Geräts (z.B. „Unternehmen“ oder „Persönlich“) beschrieben. Mithilfe von Anwendungsszenarien können Sie Ihre Benutzer in verwaltbare Gruppen unterteilen. Das Identifizieren Ihrer Anwendungsszenarien ist ein wichtiger Bestandteil des Planungsprozesses für eine erfolgreiche Intune-Bereitstellung.
 
 Betrachten wir einige Beispiele, die Ihre Organisation beim Festlegen der Intune-Anwendungsszenarien sowie der Organisationsgruppen und der den einzelnen Anwendungsfällen zugeordneten mobilen Geräteplattformen unterstützen können.
 
@@ -81,12 +82,7 @@ Hier identifizieren Sie die mobilen Geräteplattformen, die den einzelnen Anwend
 | BYOD | Information-Worker | Marketing, Vertrieb | iOS |                                                           
 | BYOD | Führungskräfte | Marketing, Vertrieb | iOS |
 
-## <a name="next-section"></a>Nächster Abschnitt
+## <a name="next-steps"></a>Nächste Schritte
 
 Der nächste Abschnitt enthält Hinweise für das [Identifizieren der Intune-Anforderungen für die einzelnen Anwendungsszenarien](section-3-determine-use-case-requirements.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

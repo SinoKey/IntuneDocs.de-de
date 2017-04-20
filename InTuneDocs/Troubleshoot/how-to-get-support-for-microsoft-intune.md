@@ -5,7 +5,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 01/27/2016
+ms.date: 04/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,23 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
-ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: ae9af31263de8b0b95f98e423f8a9a59c0c66c4c
+ms.lasthandoff: 04/12/2017
 
 
 ---
 
-# <a name="how-admins-get-support-for-microsoft-intune"></a>So erhalten Administratoren Support für Microsoft Intune
+# <a name="how-to-get-support-for-microsoft-intune"></a>Anfordern von Support für Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft bietet für Microsoft Intune Unterstützung bei allgemeinen technischen Fragen, der Vertriebsvorbereitung sowie bei Fragen zu Rechnungen und Abonnements. Der Support ist für kostenpflichtige Abonnements und für Testabonnements online und telefonisch verfügbar. Der technische Onlinesupport ist nur auf Englisch und Japanisch verfügbar. Der telefonische Support und der Support zu Abrechnungen sind in zusätzlichen Sprachen verfügbar.
 
 Der Support für Intune und für Intune mit Configuration Manager ist kostenlos. Für Premier Support-Kunden fallen Gebühren für Fragen zur Vorgehensweise an (z. B., wie ein Intune-Feature konfiguriert wird).
+
+>[!IMPORTANT]
+> Wenden Sie sich für den technischen Support für Produkte, die mit Intune eingesetzt werden können, aber nicht von Microsoft hergestellt werden, z.B. SaaSwedo-, Cisco- oder Lookout-Produkte, zuerst an den Lieferanten des Produkts, um sicherzustellen, dass Sie es ordnungsgemäß konfiguriert haben, bevor Sie eine Anfrage im Intune-Support öffnen.
 
 ## <a name="find-help-without-opening-a-support-ticket"></a>Suchen nach Hilfe, ohne ein Supportticket zu öffnen
 
@@ -39,6 +42,13 @@ Vor dem Erstellen eines Supporttickets können Sie sich unter den folgenden Ress
 Stellen Sie eine Frage, oder beginnen Sie eine Diskussion mit den technischen Experten von Microsoft! Wir bieten Antworten und Erkenntnisse im durchsuchbaren [Microsoft Intune TechNet-Forum](https://social.technet.microsoft.com/Forums/home).
 
 ![Microsoft Intune TechNet-Forum](./media/technet-forum-for-support.png)
+
+### <a name="get-started-with-the-forum"></a>Erste Schritte mit dem Forum
+
+1. Geben Sie auf der Forenseite „Microsoft Intune“ in das Feld „Foren“ ein, und wählen Sie es in der Liste aus.<br>
+![Steuerelement zur Intune-Forumauswahl](./media/forum-select-intune.png)
+2. Jetzt wird Microsoft Intune in Ihrer Liste der ausgewählten Foren angezeigt.<br>
+![Steuerelement zur Anzeige, dass Intune in Foren ausgewählt ist](./media/forum-selected-intune.png)
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Website für das Microsoft Intune UserVoice-Produktfeedback
 
