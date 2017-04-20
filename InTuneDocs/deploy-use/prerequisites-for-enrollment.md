@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: e3c3f834a80eaf5e8b992ba41b19a1d53b89fdc3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -137,8 +137,8 @@ Richten Sie Verwaltung für die folgenden Plattformen ein:
 - [iOS und Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Android](set-up-android-management-with-microsoft-intune.md)
 - [Android for Work](set-up-android-for-work.md)
-- [Windows-PCs und -Laptops](set-up-windows-device-management-with-microsoft-intune.md)
-- [Windows 10 Mobile und Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Windows 10 Mobile und Windows Phone](set-up-windows-device-management-with-microsoft-intune.md)
+- [Windows-PCs und Laptops](manage-windows-pcs-with-microsoft-intune.md) (Intune-Clientsoftware)
 
 Sie können auch die [Registrierung von unternehmenseigenen Geräten](manage-corporate-owned-devices.md) aktivieren.
 
@@ -170,7 +170,7 @@ Wenn Sie Koexistenz verwenden, müssen Sie sowohl die Intune- als auch die Offic
 Führen Sie zum Zurücksetzen Ihrer MDM-Autorität diese Schritte durch, bevor Sie sich an den Microsoft Support wenden.
 
 - Alle Geräte aus der Intune-Administratorkonsole außer Kraft setzen. Versuchen Sie nicht, ein Gerät im Gerät selbst außer Kraft zu setzen. 
-- Löschen Sie den Service to Service Connector (unter **Administration** > **Verwaltung mobiler Geräte** > **Microsoft Exchange**), oder deaktivieren Sie den Exchange Connector, falls dieser eingerichtet ist. 
+- Löschen Sie den Service to Service Connector (unter **Administration** > **Verwaltung mobiler Geräte** > **Microsoft Exchange**), oder deaktivieren Sie den Exchange Connector, falls dieser eingerichtet ist.
 - Entfernen Sie die Verwaltungsrolle des Geräteregistrierungs-Managers aus **Admin** > **Geräteregistrierungs-Manager**.
 - Deaktivieren Sie die Gerätegruppenzuordnung unter **Admin** > **Verwaltung mobiler Geräte** > **Gerätegruppenzuordnung** aus.
 - Entfernen Sie Sideload-Schlüssel aus **Admin** > **Verwaltung mobiler Geräte** > **Windows** > **Sideload-Schlüssel**.
@@ -187,7 +187,7 @@ Führen Sie zum Zurücksetzen Ihrer MDM-Autorität diese Schritte durch, bevor S
 - Entfernen sie alle Benutzer aus der Intune-Benutzergruppe. Richten Sie das Intune-Abonnement auf eine leere Benutzersammlung, oder entfernen Sie alle Benutzer aus der anvisierten Sammlung.  Bestätigen Sie in der Datei CloudUserSync.log, dass alle Benutzer entfernt wurden. 
 - Deaktivieren sie die iOS-Plattform, um das APNS-Zertifikat zu bereinigen.
 - Löschen Sie alle veröffentlichten Anwendungen, die für MDM-Geräte vorgesehen sind.
-- Löschen Sie alle Richtlinien, die für MDM-Geräte vorgesehen sind. 
+- Löschen Sie alle Richtlinien, die für MDM-Geräte vorgesehen sind.
 - Entfernen Sie den Windows Intune Connector aus der Configuration Manager-Konsole (gilt nur für R2 SP1 oder davor).
 Entfernen Sie das Intune-Abonnement, indem Sie mit der rechten Maustaste auf das Abo klicken und dann **Löschen** auswählen.
 - SMS-Executive-Dienst neu starten.
@@ -196,18 +196,18 @@ Entfernen Sie das Intune-Abonnement, indem Sie mit der rechten Maustaste auf das
 ### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>MDM-Autorität von Office 365 auf Configuration Manager zurücksetzen
 
 1. Navigieren Sie zu [https://protection.office.com](https://protection.office.com).
-2. Wählen Sie die Registerkarte **Sicherheitsrichtlinien** dann **Geräteverwaltung** aus. 
+2. Wählen Sie die Registerkarte **Sicherheitsrichtlinien** dann **Geräteverwaltung** aus.
 3. Setzen Sie alle Geräte mit **Selektives Zurücksetzen** außer Kraft. Versuchen Sie nicht, ein Gerät im Gerät selbst außer Kraft zu setzen. Wenn das selektive Zurücksetzen deaktiviert ist, ist keine weitere Aktion erforderlich.
-4. Wählen Sie die Registerkarte **Sicherheitsrichtlinien** dann **Gerätesicherheitsrichtlinien** aus. 
+4. Wählen Sie die Registerkarte **Sicherheitsrichtlinien** dann **Gerätesicherheitsrichtlinien** aus.
 5. Wählen Sie für alle vorhandenen Richtlinien **Löschen** aus. Wenn sich die Richtlinien im Status „ausstehend“ befinden, ist keine weitere Aktion erforderlich.
 
 >[!NOTE]
->Das APNS-Zertifikat von iOS kann nicht gelöscht werden und bleibt an den Account angeschlossen. 
+>Das APNS-Zertifikat von iOS kann nicht gelöscht werden und bleibt an den Account angeschlossen.
 
 ### <a name="next-steps-for-mdm-authority-resets"></a>Die nächsten Schritte für ein Zurücksetzen der MDM-Autorität
 
-Sobald der Microsoft Support die Elemente auf der verfügbaren Checkliste überprüft hat, kann das Zurücksetzen der MDM-Autorität bis zu drei Werktage in Anspruch nehmen – normalerweise dauert es aber nur einen Tag. 
+Sobald der Microsoft Support die Elemente auf der verfügbaren Checkliste überprüft hat, kann das Zurücksetzen der MDM-Autorität bis zu drei Werktage in Anspruch nehmen – normalerweise dauert es aber nur einen Tag.
 
 >[!IMPORTANT]
->Bitte konfigurieren Sie Ihr Abonnement erst, wenn der Microsoft Support bestätigt hat, dass das Zurücksetzen erfolgreich abgeschlossen wurde! Frühzeitige Konfiguration kann dazu führen, dass Schäden auftreten bzw. dass Sie in der Benutzung Ihres Intune eingeschränkt werden. 
+>Bitte konfigurieren Sie Ihr Abonnement erst, wenn der Microsoft Support bestätigt hat, dass das Zurücksetzen erfolgreich abgeschlossen wurde! Frühzeitige Konfiguration kann dazu führen, dass Schäden auftreten bzw. dass Sie in der Benutzung Ihres Intune eingeschränkt werden.
 

@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3e1898441b7576c07793e8b70f3c3f09f1cac534
-ms.openlocfilehash: ddeaeb2d532635802c615d09b4625dee0a824919
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: 61fbc2af9a7c43d01c20f86ff26012f63ee0a3c2
+ms.openlocfilehash: c56bea46c8b505e0d357cfe90678ab149559b896
+ms.lasthandoff: 04/07/2017
 
 
 ---
@@ -27,48 +27,64 @@ ms.lasthandoff: 02/23/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Microsoft Intune kann ein Registrierungsprofil bereitstellen, das über das Programm zur Geräteregistrierung (Device Enrollment Program, DEP) erworbene iOS-Geräte drahtlos registriert. Ein Profil enthält die Verwaltungseinstellungen, die Sie auf Geräte anwenden möchten. Das Registrierungspaket kann Optionen für den Setup-Assistenten für das Gerät enthalten. Die Registrierung von Geräten über DEP kann von Benutzern nicht rückgängig gemacht werden.
+Dieses Thema hilft IT-Administratoren, firmeneigene iOS-Geräte, die über das [Geräteregistrierungsprogramm von Apple (DEP)](https://deploy.apple.com) erworben wurden, zu registrieren. Microsoft Intune kann ein Registrierungsprofil bereitstellen, das das Geräteregistrierungsprogramm „per Funk“ registrieren kann, damit der Administrator nicht jedes verwaltete Gerät in die Hand nehmen muss. Ein DEP-Profil enthält die Verwaltungseinstellungen, die Sie auf Geräten während der Registrierung anwenden möchten. Das Registrierungspaket kann Optionen für den Setup-Assistenten für das Gerät enthalten.
 
 >[!NOTE]
->Diese Registrierungsmethode kann nicht mit dem [Geräteregistrierungs-Manager](enroll-devices-using-device-enrollment-manager.md) verwendet werden.
+>Die Registrierung mit DEP kann nicht mit dem [Geräteregistrierungs-Manager](enroll-devices-using-device-enrollment-manager.md) verwendet werden.
+>Wenn Benutzer ihre iOS-Geräte mithilfe der Unternehmensportal-App registrieren und die Seriennummer dieser Geräte dann importiert und einem DEP-Profil zugewiesen werden, wird die Registrierung des Geräts in Intune wieder rückgängig gemacht.
 
-Zum Verwalten unternehmenseigener iOS-Geräte mit dem Apple-Programm zur Geräteregistrierung (Device Enrollment Program, DEP) müssen Unternehmen am Apple-DEP teilnehmen und Geräte über das Programm beziehen. Details zu diesem Prozess finden Sie unter:  [https://deploy.apple.com](https://deploy.apple.com). Das Programm bietet den Vorteil, dass Geräte eingerichtet werden können, ohne dass ein USB-Kabel für die Verbindung jedes Geräts mit einem Computer verwendet werden muss.
+**Schritte zur DEP-Registrierung**
+1. [Abrufen eines Apple-DEP-Tokens](#get-the-apple-dep-certificate)
+2. [Erstellen Sie eines DEP-Profils](#create-anapple-dep-profile)
+3. [Zuweisen von Apple-DEP-Seriennummern auf dem MDM-Server](#assign-apple-dep-serial-numbers-to-your-mdm-server)
+4. [Synchronisieren von DEP-verwalteten Geräten](#synchronize-dep-managed-devices)
+5. Verteilen von Geräten an Benutzer
 
-Bevor Sie unternehmenseigene iOS-Geräte mit dem Programm zur Geräteregistrierung registrieren können, benötigen Sie ein [DEP-Token](get-apple-dep-token.md) von Apple. Mit diesem Token kann Intune Informationen zu DEP-Geräten synchronisieren, die Ihrem Unternehmen gehören. Damit kann Intune außerdem Registrierungsprofile an Apple übermitteln und diesen Profile Geräte zuweisen.
 
-Andere Methoden zum Registrieren von iOS-Geräten werden in [Auswählen der Registrierung von iOS-Geräten in Intune](choose-ios-enrollment-method.md) beschriebenen.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="get-the-apple-dep-certificate"></a>Abrufen des Apple-DEP-Zertifikats
+Bevor Sie unternehmenseigene iOS-Geräte mit dem Apple-Programm zur Geräteregistrierung (Device Enrollment Program, DEP) registrieren können, benötigen Sie ein DEP-Zertifikat (.p7m) von Apple. Mit diesem Token kann Intune Informationen zu DEP-Geräten synchronisieren, die Ihrem Unternehmen gehören. Damit kann Intune außerdem Registrierungsprofile an Apple übermitteln und diesen Profilen Geräte zuweisen.
 
-Die folgenden Voraussetzungen müssen vor dem Einrichten der Registrierung von iOS-Geräten erfüllt sein:
+Zum Verwalten unternehmenseigener iOS-Geräte mit DEP müssen Unternehmen am Apple-DEP teilnehmen und Geräte über das Programm beziehen. Ausführliche Informationen zu diesem Prozess finden Sie unter https://deploy.apple.com. Das Programm bietet den Vorteil, dass Geräte eingerichtet werden können, ohne dass ein USB-Kabel für die Verbindung jedes Geräts mit einem Computer verwendet werden muss.
 
-- [Konfigurieren von Domänen](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [Festlegen der MDM-Autorität](set-mdm-authority.md)
-- [Erstellen von Gruppen](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- Zuweisen von Benutzerlizenzen im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Abrufen eines Apple-MDM-Push-Zertifikats](get-an-apple-mdm-push-certificate.md)
-- [Abrufen eines Apple-DEP-Tokens](get-apple-dep-token.md)
+> [!NOTE]
+> Wenn Ihr Intune-Mandant von der klassischen Intune-Konsole zum Azure-Portal migriert wurde, und Sie haben ein Apple-DEP-Token aus der Intune-Verwaltungskonsole während des Migrationszeitraums gelöscht, kann das DEP-Token möglicherweise in Ihrem Intune-Konto wiederhergestellt worden sein. Sie können das DEP-Token erneut aus dem Azure-Portal löschen.
 
-## <a name="create-an-apple-dep-profile-for-devices"></a>Erstellen eines Apple-DEP-Profils für Geräte
+
+
+
+**Schritt 1: Laden Sie ein Intune-Zertifikat mit öffentlichem Schlüssel herunter, das zum Erstellen eines Apple-DEP-Tokens erforderlich ist.**<br>
+1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus. Wählen Sie auf dem Blatt „Intune“ **Geräteregistrierung** > **Apple-DEP-Token** aus.
+2. Wählen Sie **Laden Sie Ihr Zertifikat mit öffentlichem Schlüssel herunter** aus, um die Verschlüsselungsschlüsseldatei (PEM) herunterzuladen und lokal zu speichern. Die PEM-Datei wird verwendet, um ein Vertrauensstellungszertifikat vom Apple Device Enrollment Program-Portal anzufordern.
+
+**Schritt 2: Laden Sie ein Apple-DEP-Token über die entsprechende Apple-Website herunter.**<br>
+Wählen Sie [DEP-Token über Apple-Bereitstellungsprogramme erstellen](https://deploy.apple.com) (https://deploy.apple.com) aus, und melden Sie sich mit der Apple-ID Ihres Unternehmens an. Diese Apple-ID kann später zum Erneuern Ihres DEP-Token verwendet werden.
+
+   1.  Wechseln Sie im Portal des [Programms zur Geräteregistrierung](https://deploy.apple.com) von Apple zu **Programm zur Geräteregistrierung** &gt; **Server verwalten**, und wählen Sie anschließend **MDM-Server hinzufügen** aus.
+   2.  Geben Sie den **MDM-Servernamen** ein, und wählen Sie anschließend **Weiter** aus. Der Servername dient als Referenz zum Identifizieren des MDM-Servers (mobile device management, Verwaltung mobiler Geräte). Es handelt sich nicht um den Namen oder die URL des Microsoft Intune-Servers.
+   3.  Das Dialogfeld **&lt;Servername&gt; hinzufügen** wird geöffnet. Wählen Sie **Datei auswählen** aus, um die PEM-Datei hochzuladen, und wählen Sie anschließend **Weiter** aus.
+   4.  Im Dialogfeld **&lt;Servername&gt; hinzufügen** wird der Link **Ihr Servertoken** angezeigt. Laden Sie die Servertokendatei (.p7m) auf Ihren Computer herunter, und wählen Sie anschließend **Fertig** aus.
+
+**Schritt 3: Geben Sie die zum Erstellen Ihres Apple-DEP-Tokens verwendete Apple-ID ein. Diese ID kann verwendet werden, um das Apple-DEP-Token zu erneuern.**
+
+**Schritt 4: Navigieren Sie zu Ihrem hochzuladenden Apple-DEP-Token. Intune führt automatisch eine Synchronisierung mit Ihrem DEP-Konto durch.**<br>
+Wechseln Sie zur Zertifikatsdatei (.pem), wählen Sie **Öffnen** aus, und wählen Sie dann **Hochladen**aus. Mit dem Push-Zertifikat kann Intune iOS-Geräte registrieren und verwalten, indem die Richtlinie auf registrierte mobile Geräte übertragen wird.
+
+## <a name="create-an-apple-dep-profile"></a>Erstellen eines Apple-DEP-Profils
 
 Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Gruppe von Geräten. Die folgenden Schritte zeigen, wie Sie ein Registrierungsprofil für iOS-Geräte erstellen, die mit dem Programm zur Geräteregistrierung registriert werden.
 
 1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-
 2. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Apple-Registrierung** aus.
-
 3. Wählen Sie unter **APPLE-DEP-EINSTELLUNGEN (PROGRAMM ZUR GERÄTEREGISTRIERUNG) VERWALTEN** die Option **DEP-Profile** aus.
-
 4. Wählen Sie auf dem Blatt **DEP-Profile** die Option **Erstellen** aus.
-
 5. Geben Sie auf dem Blatt **Registrierungsprofil erstellen** einen Namen und eine Beschreibung für das Profil ein.
-
 6. Wählen Sie für **Benutzeraffinität** aus, ob Geräte mit diesem Profil mit oder ohne Benutzeraffinität registriert werden.
 
  - **Mit Benutzeraffinität registrieren:** Das Gerät muss während der ersten Installation einem Benutzer zugewiesen werden und kann dann die Berechtigung erhalten, auf Daten und E-Mails des Unternehmens zuzugreifen. Wählen Sie die Benutzeraffinität für DEP-verwaltete Geräte aus, die Benutzern gehören und das Unternehmensportal verwenden müssen, um Dienste wie z.B. die Installation von Apps nutzen zu können. Beachten Sie, dass die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) während der Registrierung auf DEP-Geräten mit Benutzeraffinität nicht funktioniert. Nach der Registrierung funktioniert die MFA auf diesen Geräten wie erwartet. Neue Benutzer, die bei der ersten Anmeldung ihr Kennwort ändern müssen, können während der Registrierung auf DEP-Geräten nicht aufgefordert werden. Außerdem werden Benutzer, deren Passwörter abgelaufen sind, während der Registrierung nicht aufgefordert, ihr Kennwort zurückzusetzen; sie müssen ihr Kennwort von einem anderen Gerät aus zurücksetzen.
 
     >[!NOTE]
-    >Für DEP mit Benutzeraffinität muss der Endpunkt WS-Trust 1.3 Username/Mixed aktiviert sein, um Benutzertoken anzufordern.
+    >Für DEP mit Benutzeraffinität muss der [Endpunkt WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) aktiviert sein, um Benutzertoken anzufordern. [Erfahren Sie mehr über WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
  - **Ohne Benutzeraffinität registrieren:** Das Gerät ist keinem Benutzer zugeordnet. Verwenden Sie diese Zuweisung für Geräte, die Aufgaben ohne den Zugriff auf lokale Benutzerdaten ausführen. Apps, die eine Benutzerzugehörigkeit erfordern (einschließlich der Unternehmensportal-App, die für die Installation branchenspezifischer Apps verwendet wird), funktionieren nicht.
 

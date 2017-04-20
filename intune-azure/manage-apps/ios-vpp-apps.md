@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e75ab41176f2aa1feac98fcf067349b132d4d61b
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
+ms.openlocfilehash: 3b0a674fadf30c660ff3e8e8db172a590f07c8be
+ms.lasthandoff: 04/06/2017
 
 ---
 
@@ -30,9 +30,6 @@ ms.lasthandoff: 02/18/2017
 Der iOS-App-Store bietet die Möglichkeit, mehrere Lizenzen für eine App zu erwerben, die in Ihrem Unternehmen ausgeführt werden soll. Dadurch können Sie den Verwaltungsaufwand reduzieren, der durch das Nachverfolgen mehrerer erworbener App-Kopien entsteht.
 
 Microsoft Intune unterstützt Sie bei der Verwaltung von Apps, die über ein solches Programm erworben wurden. Dazu importieren Sie die Lizenzinformationen aus dem App-Store, verfolgen nach, wie viele Lizenzen verwendet wurden, und verhindern, dass mehr App-Kopien installiert werden, als Sie erworben haben.
-
-> [!Important]
-> Derzeit weist Intune App-Lizenzen des Programms für Volumenlizenzen für Unternehmen (Volume Purchase Program for Business, VPP) Benutzern und nicht Geräten zu. Aus diesem Grund müssen Benutzer zum Installieren der App ihr Apple-ID-Kennwort eingeben.
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Verwalten von Apps für iOS-Geräte, die über ein Volumenprogramm erworben wurden
 Sie erwerben mehrere Lizenzen für iOS-Apps über das [Programm für Volumenlizenzen für Unternehmen](http://www.apple.com/business/vpp/) oder das [Programm für Volumenlizenzen für Bildungseinrichtungen](http://volume.itunes.apple.com/us/store) (Volume Purchase Program, VPP) von Apple. Dies umfasst das Einrichten eines Apple VPP-Kontos auf der Apple-Website und das Hochladen des Apple VPP-Tokens in Intune.  Anschließend können Sie Ihre Informationen zum Volumenerwerb mit Intune synchronisieren und die Verwendung der im Rahmen des Volumenprogramms erworbenen App verfolgen.
@@ -71,8 +68,8 @@ Sie können die von Apple gespeicherten Daten jederzeit mit Intune synchronisier
 1. Wählen Sie in der Workload **Apps verwalten** die Option **Verwalten** > **Lizenzierte Apps** aus.
 2. Wählen Sie auf dem Blatt mit der Liste der Apps die App, die Sie zuweisen möchten, und dann „**...**“ > **Gruppen zuweisen** aus.
 3. Wählen Sie auf dem Blatt <*App-Name*> - **Zugewiesene Gruppen** die Option **Verwalten** > **Gruppen zugewiesen** aus.
-4. Wählen Sie **Gruppen zuweisen** und dann auf dem Blatt **Gruppen auswählen** die Azure AD-Gruppen aus, denen Sie die App zuweisen möchten.
-Sie müssen eine Zuweisungsaktion vom Typ **Erforderlich** auswählen. „Verfügbare“ Installationen werden derzeit nicht unterstützt.
+4. Wählen Sie **Gruppen zuweisen** und dann auf dem Blatt **Gruppen auswählen** den Azure AD-Benutzer oder Gerätegruppen aus, denen Sie die App zuweisen möchten.
+Sie müssen eine Zuweisungsaktion vom Typ **Erforderlich** auswählen. „Verfügbare“ Installationen werden derzeit nicht unterstützt. Darüber hinaus sind Zuweisungen zu Gerätegruppen für neu erstellte Mandanten nach Januar 2017 verfügbar. Wenn Ihr Mandant davor erstellt wurde, und Sie nicht über die Möglichkeit verfügen, Gerätegruppen VPP-Apps hinzuzufügen, wenden Sie sich an den Intune-Support.
 5. Wählen Sie abschließend **Speichern** aus.
 
 Weitere Informationen zum Überwachen von App-Zuweisungen finden Sie unter [Überwachen von Apps](monitor-apps.md).

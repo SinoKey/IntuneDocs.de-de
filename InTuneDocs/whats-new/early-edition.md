@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,15 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: 3b355d43d4be05535f256d88a8648c2e67035882
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: f051d8366ba9c6ca2183b5661c64087eb4cce9f0
+ms.openlocfilehash: 682545af10a7dc1f66158f95f871b889e9f85c4a
+ms.lasthandoff: 04/06/2017
 
 
 ---
 
 
-# <a name="the-early-edition-for-microsoft-intune---march-2017"></a>Die Early Edition für Microsoft Intune – März 2017
+# <a name="the-early-edition-for-microsoft-intune---april-2017"></a>Die Early Edition für Microsoft Intune – April 2017
 
 Die **Early Edition** enthält eine Liste der Funktionen, die in späteren Versionen von Microsoft Intune zur Verfügung stehen werden. Diese Informationen werden unter dem Geheimhaltungsvertrag auf einer sehr begrenzten Basis bereitgestellt und Änderungen sind vorbehalten. Einige der hier aufgeführten Features werden möglicherweise bis zum Stichtag nicht fertig und werden erst in eine spätere Version aufgenommen. Andere Features werden in einer Pilotphase getestet (Test-Flighting), um sicherzustellen, dass sie für Kunden bereit sind. Wenden Sie sich an Ihren Intune-/PM-Kontakt, wenn Sie Fragen oder Bedenken haben.
 
@@ -35,37 +35,59 @@ Diese Seite wird regelmäßig aktualisiert. Überprüfen Sie, ob weitere Updates
 
 ## <a name="new-capabilities"></a>Neue Funktionen
 
-### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Neue Benutzeroberfläche für die Unternehmensportal-App für Android <!--621622-->
+### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Verbesserter App-Installationsstatus für die Windows 10-Unternehmensportal-App <!--676495-->
 
-Die Unternehmensportal-App für Android aktualisiert ihre Benutzeroberfläche für ein moderneres Erscheinungsbild und höhere Benutzerfreundlichkeit. Wichtige Updates sind:
+Die Windows 10-Unternehmensportal-App bietet jetzt eine Statusanzeige zur Installation der App für alle modernen App-Installationen aus dem Unternehmensportal.
 
-- Farben: Die IT-Abteilung kann die Färbung der Kopfzeilen der Registerkarte „Unternehmensportal“ dem Branding gemäß festlegen.
-- Apps: Auf der Registerkarte **Apps** wurden die Schaltflächen **Empfohlene Apps** und **Alle Apps** aktualisiert.
-- Suche: Auf der Registerkarte **Apps** ist die Schaltfläche **Suche** nun eine unverankerte interaktive Schaltfläche.
-- Navigation in Apps: Die Ansicht **Alle Apps** enthält die Registerkartenansicht **Featured** (Highlights), **Alle** und **Kategorien**, um die Navigation zu vereinfachen.
-- Unterstützung: Die Registerkarten **Meine Geräte** und **IT kontaktieren** wurden aktualisiert, um die Lesbarkeit zu verbessern.
+### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>Verbesserte Statusnachrichten in der Unternehmensportal-App für iOS <!--744866-->
 
-Weitere Informationen zu diesen Änderungen finden Sie auf der [Seite zu App-Benutzeroberflächenupdates](whats-new-in-intune-app-ui.md).
+Neue, genauere Fehlermeldungen werden nun in der Unternehmensportal-App für iOS angezeigt, um einfacher Informationen darüber zu erhalten, was gerade auf Geräten geschieht. Diese Fehlerfälle waren zuvor in einer allgemeinen Fehlermeldung enthalten: „Unternehmensportal vorübergehend nicht verfügbar“. Wenn ein Benutzer darüber hinaus das Unternehmensportal unter iOS startet, wenn keine Internetverbindung vorhanden ist, wird keine beständige Statusleiste auf der Startseite angezeigt, die angibt: „Keine Internetverbindung“.
 
-### <a name="signing-script-for-windows-10-company-portal---941642--"></a>Signierungsskript für das Windows 10-Unternehmensportal <!--941642-->
+### <a name="myapps-available-for-managed-browser---822308-822303--"></a>MyApps verfügbar für Managed Browser <!--822308, 822303-->
 
-Für Kunden, die die Windows 10-Unternehmensportal-App herunterladen und querladen möchten, können Sie nun ein Skript verwenden, um den App-Signierungsprozess für Ihre Organisation zu vereinfachen und zu optimieren.   Das herunterladbare Skript sowie Informationen zu dessen Verwendung finden Sie bei TechNet unter [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript) (Microsoft Intune-Signierungsskript für das Windows 10-Unternehmensportal). Weitere Informationen zu dieser Ankündigung finden Sie im Blog des Intune-Supportteams unter [Updating your Windows 10 Company Portal app](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/) (Aktualisieren Ihrer Windows 10-Unternehmensportal-App). 
+Microsoft MyApps verfügen jetzt über eine bessere Unterstützung innerhalb von Managed Browser. Managed Browser-Benutzer, die nicht für die Verwaltung vorgesehen sind, werden direkt an den MyApps-Dienst weitergeleitet, wo sie auf ihre durch den Administrator bereitgestellte SaaS-Apps zugreifen können. Benutzer, die für die Verwendung für die Intune-Verwaltung ausgelegt sind, können weiterhin auf MyApps vom integrierten Managed Browser-Lesezeichen aus zugreifen.
+
+### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Neue Symbole für Managed Browser und das Unternehmensportal <!--918433, 918431-->
+
+Managed Browser erhält aktualisierte Symbole für die Android- und iOS-Versionen der App. Das neue Symbol enthält den aktualisierten Intune-Badge, damit es konsistenter mit anderen Apps in Enterprise Mobility + Security (EM+S) wird.
+
+Das Unternehmensportal erhält auch aktualisierte Symbole für die Android-, iOS- und Windows-Versionen der App, um Konsistenz mit anderen Apps in EM+S zu verbessern. Diese Symbole werden schrittweise auf Plattformen von April bis Ende Mai veröffentlicht.
+
+### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Unterstützung für einmaliges Anmelden über das Unternehmensportal für iOS zu Outlook für iOS <!--834012-->
+
+Benutzer müssen sich nicht mehr in der Outlook-App anmelden, wenn sie in der Unternehmensportal-App für iOS auf dem gleichen Gerät mit dem gleichen Konto angemeldet sind. Wenn Benutzer die Outlook-App starten, können sie ihr Konto auswählen und sich automatisch anmelden. Wir arbeiten auch daran, diese Funktion für andere Microsoft-Apps hinzuzufügen.
+
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Statusanzeige zur Anmeldung im Android-Unternehmensportal <!--953374-->
+
+Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der Anmeldung an, wenn der Benutzer die App startet oder fortsetzt. Der Indikator durchläuft neue Status, beginnend mit „Verbinden...“, „Anmelden...“, dann „Checking for security requirements...“ (Suche nach Sicherheitsanforderungen...), bevor dem Benutzer erlaubt wird, auf die App zuzugreifen.
+
 
 ## <a name="notices"></a>Benachrichtigungen
 
-### <a name="improved-support-for-android-users-based-in-china---720444--"></a>Verbesserte Unterstützung für Android-Benutzer in China<!--720444-->
-
-Da der Google Play Store in China nicht verfügbar ist, müssen Android-Geräte Apps von chinesischen Marktplätzen beziehen. Das Unternehmensportal unterstützt diesen Workflow durch Umleiten von Android-Benutzern in China, damit sie das Unternehmensportal und Outlook-Apps von lokalen App-Stores herunterladen können. Dies verbessert die Benutzerfreundlichkeit, wenn Richtlinien für bedingten Zugriff aktiviert sind, sowohl für die mobile Geräteverwaltung als auch die mobile Anwendungsverwaltung. Das Unternehmensportal und Outlook-Apps für Android sind in den folgenden chinesischen App-Stores verfügbar:
-
-- [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
-- [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
-- [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
-- [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
-- [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
-
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple erfordert Updates für die Transportsicherheit für Anwendungen <!--748318-->
 
-Apple hat angekündigt, dass sie ab Frühjahr 2017 bestimmte Anforderungen für die Transportsicherheit für Anwendungen (Application Transport Security, ATS) erzwingen werden. ATS wird verwendet, um eine strengere Sicherheit in allen App-Kommunikationen über HTTPS zu erzwingen. Diese Änderung wirkt sich auf Intune-Kunden aus, die die iOS-Unternehmensportal-App verwenden. Unter [Intune support blog](https://aka.ms/compportalats) (Intune-Supportblog) finden Sie weitere Informationen.
+Apple hat angekündigt, dass sie ab Frühjahr 2017 bestimmte Anforderungen für die Transportsicherheit für Anwendungen (Application Transport Security, ATS) erzwingen werden. ATS wird verwendet, um eine strengere Sicherheit in allen App-Kommunikationen über HTTPS zu erzwingen. Diese Änderung wirkt sich auf Intune-Kunden aus, die die iOS-Unternehmensportal-App verwenden. Unter [Intune support blog (Intune-Supportblog)](https://aka.ms/compportalats) finden Sie weitere Informationen.
+
+### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Direkter Zugriff auf Apple-Registrierungsszenarien <!--951869-->
+
+Für Intune-Konten, die nach Januar 2017 erstellt wurden, hat Intune direkten Zugriff auf Apple-Registrierungsszenarien mithilfe der Workload „Geräte registrieren“ im Azure-Vorschauportal aktiviert. Bisher konnte nur über Links im klassischen Intune-Portal auf die Apple-Registrierungsvorschau zugegriffen werden. Vor Januar 2017 erstellte Intune-Konten erfordern eine einmalige Migration, bevor diese Features in Azure verfügbar sind. Der Zeitplan für die Migration wurde noch nicht angekündigt, aber Sie erfahren so bald wie möglich Näheres. Wir empfehlen Ihnen dringend, ein Testkonto zu erstellen, um die neue Oberfläche zu testen, wenn Sie mit Ihrem vorhandenen Konto nicht auf die Vorschau zugreifen können.
+
+### <a name="whats-coming-for-appx-in-intune-on-azure----1000270---"></a>Was für APPX in Intune unter Azure bereitsteht <!-- 1000270 -->
+
+Als Teil der Migration zu Intune unter Azure werden wir drei APPX-Änderungen vornehmen:
+
+1. Einen neuen APPX-App-Typ in der klassischen Intune-Verwaltungskonsole hinzufügen, der nur für MDM-registrierte Geräte bereitgestellt werden kann
+2. Den vorhandenen APPX-App-Typ nur für PCs wiederverwenden, die über den Intune PC-Agent verwaltet werden
+3. Alle vorhandenen APPX-Formate in MDM-Formate mit der Migration konvertieren
+
+#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
+
+Diese Änderungen werden keine Ihrer vorhandenen Bereitstellungen auf Geräte beeinflussen, die über den Intune PC-Agent verwaltet werden. Nach der Migration können Sie diese migrierten APPX-Formate auf allen neuen Geräten bereitstellen, die über den Intune PC-Agent verwaltet wird und die zuvor noch nicht zugewiesen wurden.
+
+#### <a name="what-action-do-i-need-to-take"></a>Was muss ich tun?
+
+Nach der Migration müssen Sie die APPX erneut als PC-APPX hochladen, wenn Sie neue PC-Bereitstellungen machen möchten. Weitere Informationen finden Sie unter [Appx changes in Intune on Azure (APPX-Änderungen in Intune unter Azure)](https://aka.ms/appxchange) im Intune-Support-Teamblog.  
+
 
 ## <a name="public-preview-of-the-new-intune-admin-experience-on-azure---736542--"></a>Öffentliche Vorschau der neuen Intune-Administratoroberfläche in Azure <!--736542-->
 
@@ -75,38 +97,107 @@ Neue Testmandanten sehen die öffentliche Vorschau der neuen Administratoroberfl
 
 Die Administratoroberfläche im Azure-Portal verwendet die bereits angekündigten neuen Gruppierungs- und Zielgruppenadressierungsfunktionen. Bei der Migration eines vorhandenen Mandanten zur neuen Gruppierungsoberfläche erfolgt gleichzeitig die Migration zur Vorschau der neuen Administratoroberfläche auf Ihrem Mandanten. Wenn Sie in der Zwischenzeit bis zur Migration Ihres Mandanten einzelne neue Funktionen testen oder anschauen möchten, melden Sie sich für ein neues Intune-Testkonto an, oder sehen Sie sich die [neue Dokumentation](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) an.
 
-### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>Nicht verwaltete Geräte können auf zugewiesene Apps zugreifen <!--664691-->
+### <a name="support-for-managed-configuration-options-for-android-apps----621621---"></a>Unterstützung für verwaltete Konfigurationsoptionen für Android-Apps <!-- 621621 -->
 
-Als Teil der Designänderungen auf der Unternehmensportal-Website können iOS- und Android-Benutzer Apps installieren, die ihnen als „Verfügbar ohne Registrierung“ auf Ihren nicht verwalteten Geräten zugewiesen sind. Benutzer können sich mit ihren Intune-Anmeldeinformationen auf der Unternehmensportal-Website anmelden und die Liste der ihnen zugewiesenen Apps anzeigen. Die App-Pakete der Apps des Typs „Verfügbar ohne Registrierung“ werden zum Download über die Unternehmensportal-Website verfügbar gemacht. Apps, für die die Registrierung für die Installation erforderlich ist, sind durch diese Änderung nicht betroffen, da Benutzer aufgefordert werden, ihr Gerät zu registrieren, wenn sie diese Apps installieren möchten.
+Android-Apps im Play Store, die verwaltete Konfigurationsoptionen unterstützen, können von Intune konfiguriert werden.  Mit dieser Funktion kann die IT die Liste der Konfigurationswerte sehen, die von einer App unterstützt werden, und es wird eine übersichtliche, hochwertige Benutzeroberfläche bereitgestellt, damit die IT diese Werte konfigurieren kann.
 
-### <a name="improvements-to-device-actions-report---677150--"></a>Verbesserungen des Geräteaktionenberichts<!--677150-->
+### <a name="remote-assistance-for-android-devices----675418---"></a>Remoteunterstützung für Android-Geräte <!-- 675418 -->
 
-Wir haben die Leistung des Geräteaktionenberichts verbessert. Darüber hinaus können Sie jetzt den Bericht nach Status filtern. Beispielsweise könnten Sie den Bericht so filtern, dass nur Geräteaktionen angezeigt werden, die abgeschlossen wurden.
+In Intune wird die nicht im Lieferumfang inbegriffene [TeamViewer](https://www.teamviewer.com)-Software verwendet, damit Sie Ihren Benutzern, die Android-Geräte ausführen, Remoteunterstützung bieten können.
 
-### <a name="actions-for-non-compliance---730266--"></a>Aktionen bei Inkompatibilität <!--730266-->
+### <a name="new-android-policy-for-complex-pins----722069---"></a>Neue Android-Richtlinie für komplexe PINs <!-- 722069 -->
 
-**Aktionen bei Inkompatibilität** ist ein neues Feature für Kompatibilitätsrichtlinien, mit der Sie Aktionen für Geräte einrichten können, die nicht kompatibel sind. Sie können eine oder mehrere Aktionen angeben und den Zeitraum festlegen, in dem diese Aktionen ausgeführt werden müssen. Sie können z.B. Benutzer von Geräten per E-Mail benachrichtigen, sobald ihr Gerät inkompatibel wurde. Sie können auch den Zugriff nicht kompatibler Geräte auf Unternehmensressourcen sperren, nachdem die Geräte während einer dreitägigen Karenzzeit per bedingtem Zugriff zugreifen konnten.
+Sie können einen erforderlichen numerisch, komplexen Kennworttyp in einem Android-Geräteprofil für Geräte festlegen, die unter Android 5.0 und höher ausgeführt werden.  Verwenden Sie diese Einstellung, um zu verhindern, dass Benutzer eine PIN erstellen, die sich wiederholende oder aufeinanderfolgende Zahlen enthält, z.B. 1111 oder 1234.
 
-### <a name="custom-app-categories---748805--"></a>Benutzerdefinierte App-Kategorien <!--748805-->
+### <a name="additional-support-for-android-for-work-devices"></a>Zusätzliche Unterstützung für Android for Work-Geräte
 
-Sie können jetzt Kategorien für in Intune hinzugefügte Apps erstellen, bearbeiten und zuweisen. Zurzeit können Kategorien nur auf Englisch angegeben werden.
-Weitere Informationen finden Sie unter [How to add an app to Intune (Hinzufügen einer App zu Intune)](/intune-azure/manage-apps/add-apps).
+- **Verwalten von Kennwort- und Arbeitsprofileinstellungen** <!-- 612808 -->
 
-### <a name="assign-lob-apps-to-users-with-unenrolled-devices---748823--"></a>Zuweisen von Branchen-Apps für Benutzer nicht registrierter Geräte <!--748823-->
+  Wir haben eine neue Einschränkungsrichtlinie für Android for Work-Geräte hinzugefügt, mit der Sie Kennwort- und Arbeitsprofileinstellungen auf von Ihnen verwalteten Android for Work-Geräten verwalten können.
 
-Sie können Benutzern jetzt Branchen-Apps aus dem Store zuweisen, unabhängig davon, ob die Benutzergeräte bei Intune registriert sind oder nicht. Wenn das Gerät eines Benutzers nicht bei Intune registriert ist, muss der Benutzer die App über die Unternehmensportal-Website statt über die Unternehmensportal-App installieren.
+- **Datenaustausch zwischen Arbeitsprofilen und persönlichen Profilen zulassen** <!-- 1045102 -->
 
-### <a name="new-compliance-reports---846671--"></a>Neue Kompatibilitätsberichte <!--846671-->
+  Wir haben die Einstellung **Datenaustausch zwischen Arbeitsprofilen und persönlichen Profilen zulassen** in einem Android for Work-Geräteeinschränkungsprofil mit neuen Optionen aktualisiert, damit Sie Daten zwischen Arbeitsprofilen und persönlichen Profilen freigeben können.
 
-Jetzt informieren Kompatibilitätsberichte Sie über die Kompatibilitätsstellung von Geräten in Ihrem Unternehmen, sodass sie schnell kompatibilitätsbezogene Probleme beheben können, von denen Ihre Benutzer betroffen sind. Sie können Informationen anzeigen zu:
+- **Beschränken von Kopieren und Einfügen zwischen Arbeitsprofilen und persönlichen Profilen** <!-- 1046094 -->
 
-- Gesamter Kompatibilitätsstatus von Geräten
-- Kompatibilitätsstatus für eine einzelne Einstellung
-- Kompatibilitätsstatus für eine einzelne Richtlinie
+  Wenn Sie Android for Work-Geräte mit Intune verwalten, sind Aktionen zum Kopieren und Einfügen zwischen Arbeits- und persönliche Apps nicht zulässig. Wir haben nun ein benutzerdefiniertes Geräteprofil für Android for Work-Geräte hinzugefügt, mit dem Sie einschränken können, ob Kopieren und Einfügen zwischen Arbeits- und persönlichen Apps zulässig ist oder nicht.
 
-Sie können mit diesen Berichten auch Detailinformationen zu einzelnen Geräten erhalten, um bestimmte Einstellungen und Richtlinien anzuzeigen, die sich auf das Gerät auswirken.
+### <a name="assign-lob-apps-to-ios-and-android-devices----1057568---"></a>Zuweisen von branchenspezifischen Apps zu iOS- und Android-Geräten <!-- 1057568 -->
 
-### <a name="additional-windows-10-upgrade-paths---903672--"></a>Zusätzliche Windows 10-Upgradepfade <!--903672-->
+Sie können branchenspezifischen Apps für iOS (IPA-Dateien) und Android (APK-Dateien) Benutzern oder Geräten zuweisen.
+
+###  <a name="new-policies-for-ios-devices----723774-723815-723826-723830-723832---"></a>Neue Richtlinien für iOS-Geräte <!-- 723774, 723815, 723826, 723830, 723832 -->
+
+- **Apps auf dem Startbildschirm**: Sie können eine Geräterichtlinie verwenden, um zu steuern, welche Apps Benutzer auf dem Startbildschirm ihres iOS-Geräts sehen. Diese Richtlinie ändert das Layout des Startbildschirms, jedoch werden keine von Ihnen angegebenen Apps bereitgestellt, die nicht installiert sind.
+
+- **Verbindungen zu AirPrint-Geräten**: Sie können eine Intune-Geräterichtlinie benutzen, um zu steuern, mit welchen AirPrint-Geräten (Netzwerkdrucker) sich ein Endbenutzer eines iOS-Geräts verbinden kann.
+
+- **Verbindungen zu AirPlay-Geräten**: Sie können eine Intune-Geräterichtlinie benutzen, um zu steuern, mit welchen AirPlay-Geräten (wie Apple TV) sich ein Endbenutzer eines iOS-Geräts verbinden kann.
+
+- **Benutzerdefinierte Sperrbildschirmnachricht**: Sie können eine benutzerdefinierte Nachricht konfigurieren, die Benutzern auf dem Sperrbildschirm ihres iOS-Geräts angezeigt wird und die die Standardnachricht des Sperrbildschirms ersetzt.
+
+- **Webinhaltsfilter**: Sie können steuern, welche Websites Benutzer von iOS-Geräten mithilfe einer der folgenden zwei Methoden besuchen können:
+
+  - Zulässige und blockierte URLs mit dem integrierten Webinhaltsfilter von Apple hinzufügen
+  - Erlauben, dass nur auf bestimmte Websites vom Safari-Browser aus zugegriffen werden darf. Lesezeichen werden in Safari für jede Website erstellt, die Sie angeben.
+
+
+### <a name="restrict-push-notifications-for-ios-apps----723767---"></a>Einschränken von Pushbenachrichtigungen für iOS-Apps <!-- 723767 -->
+
+In einem Intune-Geräteeinschränkungsprofil können Sie die folgenden Benachrichtigungseinstellungen für iOS-Geräte konfigurieren:
+
+- Aktivieren oder deaktivieren Sie die Benachrichtigungen für eine bestimmte App vollständig.
+- Aktivieren oder deaktivieren Sie die Benachrichtigung für eine bestimmte App in der Mitteilungszentrale.
+- Geben Sie den Warnungstyp an, entweder **Keinen**, **Banner** oder **modale Warnung**.
+- Geben Sie an, ob die Badges für diese App zulässig sind.
+- Geben Sie an, ob die Benachrichtigungssounds zulässig sind.
+
+### <a name="configure-ios-apps-to-run-in-single-app-mode-autonomously----737837---"></a>Konfigurieren von iOS-Apps, damit sie autonom im Einzelanwendungsmodus ausgeführt werden sollen <!-- 737837 -->
+
+Sie können ein Intune-Geräteprofil verwenden, um zu konfigurieren, dass iOS-Geräte bestimmte Apps im autonomen Einzelanwendungsmodus ausführen sollen. Wenn dieser Modus konfiguriert ist und die App ausgeführt wird, wird das Gerät gesperrt, sodass es nur die App ausführen kann. Ein Beispiel hierfür ist, wenn Sie eine App konfigurieren, mit der Benutzer einen Test auf dem Gerät ausführen können. Wenn die Aktionen der App abgeschlossen sind oder Sie diese Richtlinie entfernen, kehrt das Gerät in seinen normalen Zustand zurück.
+
+### <a name="configure-trusted-domains-for-email-and-web-browsing-on-ios-devices----723765---"></a>Konfigurieren von vertrauenswürdigen Domänen für das Durchsuchen von E-Mails und das Webbrowsen auf iOS-Geräten <!-- 723765 -->
+
+Sie können in einem iOS-Geräteeinschränkungsprofil die folgenden Domäneneinstellungen konfigurieren:
+
+- **Nicht gekennzeichnete E-Mail-Domänen**: Vom Benutzer gesendete oder empfangene E-Mails, die nicht den hier angegebenen Domänen entsprechen, werden als nicht vertrauenswürdig markiert.
+
+- **Verwaltete Webdomänen**: Dokumente, die von den hier angegebenen URLs heruntergeladen werden, gelten als verwaltet (nur Safari).  
+
+- **AutoAusfüllen-Domänen für Safari-Kennwörter**: Benutzer können Kennwörter in Safari nur aus URLs speichern, die mit den von Ihnen hier angegebenen Mustern übereinstimmen. Um diese Einstellung verwenden, muss sich das Gerät im überwachten Modus befinden und darf nicht für mehrere Benutzer konfiguriert sein. (iOS 9.3+)
+
+
+### <a name="vpp-apps-available-in-ios-company-portal----748782---"></a>Im iOS-Unternehmensportal verfügbare VPP-Apps als <!-- 748782 -->
+
+Sie können per Volumenlizenz erworbene iOS-Apps (VPP-Apps) Endbenutzern als **Verfügbar**-Installationen zuweisen. Endbenutzer benötigen ein Apple Store-Konto, um die App zu installieren.
+
+### <a name="synchronize-ebooks-from-apple-vpp-store----800878---"></a>Synchronisieren von eBooks vom Apple-VPP-Store <!-- 800878 -->
+
+Sie können Bücher, die Sie aus dem Apple-VPP-Store mit Intune gekauft haben, synchronisieren und Benutzern zuweisen.
+
+### <a name="shared-shift-worker-devices-for-samsung-knox-standard-devices----773753---"></a>Gemeinsam genutzte Geräte für Schichtarbeiter für Samsung KNOS Standard-Geräte <!-- 773753 -->
+
+Sie können ein Samsung KNOX Standard-Gerät als freigegebenes Schichtarbeitergerät im Intune-Portal verwenden. Sobald sich das Gerät im freigegebenen Modus befindet, werden die Apps, Richtlinien und die E-Mails auf diesem Gerät an die Identität des Benutzers gebunden, der sich im Unternehmensportal anmeldet.
+Benutzer können sich in der Unternehmensportal-App mithilfe ihrer Azure Active Directory-Anmeldeinformationen anmelden, und die Apps, Richtlinien und E-Mail-Einstellungen werden automatisch auf das Gerät angewendet.
+
+### <a name="multi-user-management-for-samsung-knox-standard-devices----971988---"></a>Mehrbenutzerverwaltung für Samsung KNOW Standard-Geräte <!-- 971988 -->
+
+Geräte, die unter Samsung KNOX Standard ausgeführt werden, werden nun von Intune für die Mehrbenutzerverwaltung unterstützt. Das bedeutet, dass sich Endbenutzer auf dem Gerät mit ihren Azure Active Directory-Anmeldeinformationen an- und wieder abmelden können, und dass das Gerät zentral verwaltet wird, egal ob es sich in Gebrauch befindet oder nicht.  Wenn sich Endbenutzer anmelden, verfügen Sie über Zugriff auf Apps und erhalten zusätzlich alle Richtlinien, die ihnen zugewiesen sind. Wenn sich Benutzer abmelden, werden alle App-Daten gelöscht.
+
+### <a name="additional-windows-device-restriction-settings----818566---"></a>Zusätzliche Einstellungen zur Einschränkung für Windows-Geräte <!-- 818566 -->
+
+Wir haben Unterstützung für zusätzliche Einschränkungseinstellungen für Windows-Geräte hinzugefügt, z.B. zusätzliche Unterstützung für den Edge-Browser, Anpassung des Gerätesperrbildschirms, Anpassungen des Startmenüs, festgelegtes Hintergrundbild der Windows Spotlight-Suche und Proxyeinstellungen.
+
+### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Unterstützung für Windows 10 Creators Update für mehrere Benutzer <!-- 822547 -->
+
+Wir haben Unterstützung für die Mehrbenutzerverwaltung für Geräte hinzugefügt, die Windows 10 Creators Update ausführen und mit der Azure Active Directory-Domäne verknüpft sind. Das heißt, dass wenn sich unterschiedliche Benutzer auf dem Gerät mit ihren AAD-Anmeldeinformationen anmelden, erhalten sie alle Apps und Richtlinien, die ihrem jeweiligen Benutzernamen zugewiesen ist.
+
+### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Fresh Start für Windows 10-PCs <!-- 1004830 -->
+
+In dieser Version haben wir eine neue Fresh Start-Geräteaktion für Windows 10 PCs hinzugefügt.  Wenn Sie diese Aktion ausführen, werden alle installierten Apps auf dem PC entfernt, und der PC wird automatisch auf die neueste Windows-Version aktualisiert. Damit können vorinstallierte OEM-Apps entfernt werden, die oft mit einem neuen PC geliefert werden. Sie können konfigurieren, ob Benutzerdaten beibehalten werden, wenn diese Geräteaktion ausgegeben wird.
+
+### <a name="additional-windows-10-upgrade-paths----903672---"></a>Zusätzliche Windows 10-Upgradepfade <!-- 903672 -->
 
 Sie können jetzt eine Richtlinie für die Editionsaktualisierung zum Aktualisieren von Geräten auf die folgenden zusätzlichen Windows 10-Editionen erstellen:
 
@@ -115,10 +206,24 @@ Sie können jetzt eine Richtlinie für die Editionsaktualisierung zum Aktualisie
 - Windows 10 Professional Education
 - Windows 10 Professional Education N
 
+### <a name="bulk-enroll-windows-10-devices----747607---"></a>Massenregistrierung von Windows 10-Geräten <!-- 747607 -->
 
-### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Direkter Zugriff auf Apple-Registrierungsszenarien <!--951869-->
+Sie können eine große Anzahl von Windows 10-Geräten auf Azure Active Directory und Intune mithilfe von IT-Automatisierungstools verknüpfen. Um die automatische MDM-Registrierung für Ihren Azure AD-Mandanten zu aktivieren, erstellen Sie ein Bereitstellungspaket, das das Gerät mit Ihrem Azure AD-Mandanten mithilfe von Windows Configuration Designer verknüpft. Wenden Sie das Paket auf unternehmenseigenen Geräten an, die Sie verwalten möchten und für die Sie eine Massenregistrierung ausführen möchten.  Nachdem das Paket angewendet wurde, stellen Geräte eine Verbindung mit Azure AD her, registrieren sich in Intune und sind bereit für die Anmeldung durch Ihre Azure AD-Benutzer.
 
-Für Intune-Konten, die nach Januar 2017 erstellt wurden, hat Intune direkten Zugriff auf Apple-Registrierungsszenarien mithilfe der Workload „Geräte registrieren“ im Azure-Vorschauportal aktiviert. Bisher konnte nur über Links im klassischen Intune-Portal auf die Apple-Registrierungsvorschau zugegriffen werden. Vor Januar 2017 erstellte Intune-Konten erfordern eine einmalige Migration, bevor diese Features in Azure verfügbar sind. Der Zeitplan für die Migration wurde noch nicht angekündigt, aber Sie erfahren so bald wie möglich Näheres. Wir empfehlen Ihnen dringend, ein Testkonto zu erstellen, um die neue Oberfläche zu testen, wenn Sie mit Ihrem vorhandenen Konto nicht auf die Vorschau zugreifen können.
+### <a name="new-mam-settings-for-pin-and-managed-storage-locations----58112-736644---"></a>Neue MAM-Einstellungen für die PIN und verwaltete Speicherorte <!-- 58112, 736644 -->
+
+Es sind zwei neue App-Einstellungen verfügbar, die Ihnen bei MAM-Szenarios (Mobile Application Management, Mobile Anwendungsverwaltung) helfen:
+
+- **App-PIN deaktivieren, wenn die Geräte-PIN verwaltet wird**: Erkennt, ob eine Geräte-PIN auf dem registrierten Gerät vorhanden ist. Falls ja, wird die App-PIN umgangen, was durch die App-Schutzrichtlinien ausgelöst wird. Diese Einstellung ermöglicht eine Verminderung der Häufigkeit, wann immer Benutzern eine Aufforderung zur PIN-Eingabe angezeigt wird, wenn sie eine MAM-fähige Anwendung auf einem registrierten Gerät öffnen. Diese Funktion ist für Android und iOS verfügbar.
+
+- **Wählen, welche Speicherdienste Unternehmensdaten speichern können**: Damit können Sie angeben, an welchen Speicherorten Unternehmensdaten gespeichert werden sollen. Benutzer können in ausgewählten Speicherortdiensten speichern, das heißt, dass alle anderen Speicherortdienste, die nicht aufgelistet sind, blockiert werden.
+
+  Liste der unterstützten Speicherortdienste:
+
+  - OneDrive
+  - Business SharePoint Online
+  - Lokaler Speicher
+
 
 ### <a name="see-also"></a>Weitere Informationen:
 Details zu aktuellen Entwicklungen finden Sie unter [Neuheiten in Microsoft Intune](whats-new-in-microsoft-intune.md).
