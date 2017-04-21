@@ -14,8 +14,9 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ca4af205f8f391089e86e0ee7787e32813d54cca
-ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 55556d781149b97af3556f3a6774b4bc5b3b76ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
 Dieser Artikel führt Sie durch die Registrierung für eine Testversion von Intune und zeigt, wie Sie diese vorbereiten, indem Sie einige Benutzer anlegen, damit Sie anschließend den Anleitungen im zugehörigen Evaluierungshandbuch folgen und verstehen können, wie mobile Geräte von Intune verwaltet werden. <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> Ab Dezember 2016 wird Microsoft Intune in das Azure-Portal verlagert. Einige kostenlose Testversion werden mit Intune in das Azure-Portal verschoben, einige verbleiben beim klassischen Intune. Wenn sich Ihre Testversion im Azure-Portal befindet, sehen Sie sich nach Abschluss der Schritte in diesem Artikel die wertvollen [Informationen zu Intune in Azure (Vorschau)](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune) an.
+> Ab Dezember 2016 wird Microsoft Intune in das Azure-Portal verlagert. Einige kostenlose Testversion werden mit Intune in das Azure-Portal verschoben, einige verbleiben beim klassischen Intune. Wenn sich Ihre Testversion im Azure-Portal befindet, sehen Sie sich nach Abschluss der Schritte in diesem Artikel die wertvollen [Informationen zu Intune in Azure (Vorschau)](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) an.
 
 ## <a name="assumptions"></a>Annahmen
 In diesem Artikel über die Registrierung und im Evaluierungshandbuch wird davon ausgegangen, dass Sie die Testversion nur zu Evaluierungszwecken verwenden und beim Abschluss des Abonnements mit einer sauberen Umgebung starten möchten.
@@ -39,7 +40,7 @@ In der Testversion stehen alle Funktionen zur Verfügung, die Sie auch in einer 
 ## <a name="sign-up-for-your-trial"></a>Für die Testversion anmelden
 Besuchen Sie die [Intune-Anmeldeseite](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20), und füllen Sie das Formular zur Anmeldung für ein Testabonnement aus.
 
-Wenn Sie über Geschäfts-, Schul- oder Unikonto verfügen und dieses für Ihre Intune-Testversion verwenden möchten, folgen Sie stattdessen [diesen Anmeldeanweisungen](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1). In diesem Artikel und den Evaluierungshandbüchern wird jedoch davon ausgegangen, dass Sie kein solches Konto verwenden.
+Wenn Sie über Geschäfts-, Schul- oder Unikonto verfügen und dieses für Ihre Intune-Testversion verwenden möchten, folgen Sie stattdessen [diesen Anmeldeanweisungen](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1). In diesem Artikel und den Evaluierungshandbüchern wird jedoch davon ausgegangen, dass Sie kein solches Konto verwenden.
 
 > [!TIP]
 > Wenn sich der Großteil Ihres IT-Betriebs und Ihrer Benutzer in einem anderen Gebietsschema als Sie befindet, sollten Sie zum Prüfen der Leistung ggf. dieses Gebietsschema für Ihre Testversion festlegen.
@@ -54,7 +55,7 @@ Wenn sich Ihre Testversion im **Azure-Portal** befindet, wechseln Sie zu „http
 ## <a name="add-users"></a>Hinzufügen von Benutzern
 Bevor Sie das Office 365 Admin Center verlassen und zu Intune wechseln, müssen Sie einige Benutzer zu Ihrem Testkonto hinzufügen.
 
-Im Office 365 Admin Center können Sie Benutzer einzeln oder durch Hochladen einer CSV-Datei in größeren Mengen hinzufügen. Zum Einrichten Ihrer Testversion verwenden wir beide Optionen. In Ihrer Produktionsumgebung möchten Sie jedoch wahrscheinlich Ihre Azure Active Directory-Benutzerkonten nutzen. Mehr dazu finden Sie in unserem [Handbuch „Erste Schritte“](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) sowie in diesem Artikel im Abschnitt [Nächste Schritte](#Next-steps).
+Im Office 365 Admin Center können Sie Benutzer einzeln oder durch Hochladen einer CSV-Datei in größeren Mengen hinzufügen. Zum Einrichten Ihrer Testversion verwenden wir beide Optionen. In Ihrer Produktionsumgebung möchten Sie jedoch wahrscheinlich Ihre Azure Active Directory-Benutzerkonten nutzen. Mehr dazu finden Sie in unserem [Handbuch „Erste Schritte“](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) sowie in diesem Artikel im Abschnitt [Nächste Schritte](#Next-steps).
 
 ### <a name="add-an-individual-user"></a>Hinzufügen eines einzelnen Benutzers
 1. Wählen Sie eine der Optionen zum Hinzufügen eines Benutzers, um ein Formular zu öffnen, in dem Sie den Benutzer erstellen können. Nur die mit einem Sternchen markierten Elemente (\*) sind erforderlich.
@@ -137,18 +138,13 @@ Um von Intune zurück zum Office 365 Admin Center zu wechseln, geben Sie „http
 Evaluierungsszenario: [Evaluieren der Verwaltung mobiler Geräte (MDM) in Microsoft Intune](mobile-device-management-trial-guide-microsoft-intune.md)
 
 ### <a name="intune-azure-preview"></a>Intune Azure-Vorschau
-Weitere Informationen zu [Intune in der Vorschau des Azure-Portals](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune)
+Weitere Informationen zu [Intune in der Vorschau des Azure-Portals](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)
 
 ### <a name="integration-with-other-products"></a>Integration mit anderen Produkten
 Erfahren Sie mehr über die Verwendung Ihrer Azure Active Directory-Benutzerkonten mit Intune:
-- [Identitätsanforderungen](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
-- [Anforderungen für die Verzeichnissynchronisierung](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
-- [Anforderungen für mehrstufige Authentifizierung](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+- [Identitätsanforderungen](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+- [Anforderungen für die Verzeichnissynchronisierung](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+- [Anforderungen für mehrstufige Authentifizierung](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
-Erfahren Sie mehr über die Verwendung von [Intune mit System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management).
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+Erfahren Sie mehr über die Verwendung von [Intune mit System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management).
 

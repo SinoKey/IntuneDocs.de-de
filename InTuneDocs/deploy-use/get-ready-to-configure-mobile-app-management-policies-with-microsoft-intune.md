@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,11 +61,11 @@ Anweisungen zum Erstellen einer App-Schutzrichtlinie in der Intune-Verwaltungsko
 - Windows 10
 
 >[!NOTE]
->Ab Version 1703 können App-Schutzrichtlinien für Windows 10-Geräte in MAM ohne Registrierungsszenario definiert werden. Weitere Informationen finden Sie unter [Schutz von Unternehmensdaten mit Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+>Ab Version 1703 können App-Schutzrichtlinien für Windows 10-Geräte in MAM ohne Registrierungsszenario definiert werden. Weitere Informationen finden Sie unter [Schutz von Unternehmensdaten mit Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 ##  <a name="supported-apps"></a>Unterstützte Apps
 * **Microsoft-Apps**: Bei diesen Apps ist das Intune App SDK integriert, und vor der Anwendung von App-Schutzrichtlinien sind keine weiteren Schritte nötig.
-Die vollständige Liste der unterstützten Microsoft-Apps finden Sie in der [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) (Microsoft Intune-Katalog für mobile Anwendungen) auf der Seite für Microsoft Intune-Anwendungspartner. Klicken Sie auf eine App, um die unterstützten Szenarien und Plattformen anzuzeigen und zu erfahren, ob die App mehrere Identitäten unterstützt.
+Die vollständige Liste der unterstützten Microsoft-Apps finden Sie in der [Microsoft Intune mobile application gallery](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) (Microsoft Intune-Katalog für mobile Anwendungen) auf der Seite für Microsoft Intune-Anwendungspartner. Klicken Sie auf eine App, um die unterstützten Szenarien und Plattformen anzuzeigen und zu erfahren, ob die App mehrere Identitäten unterstützt.
 
 * **Branchenspezifische Apps Ihrer Organisation**: Diese Apps müssen vorbereitet werden. Bevor Sie App-Schutzrichtlinien auf sie anwenden können, müssen Sie das Intune App SDK in die Apps integrieren.
 
@@ -76,7 +76,7 @@ Die vollständige Liste der unterstützten Microsoft-Apps finden Sie in der [Mic
 ## <a name="prerequisites"></a>Voraussetzungen
 
 -   **Ein Microsoft Intune-Abonnement**. Benutzer benötigen [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Lizenzen, um Apps mit App-Schutzrichtlinien erhalten zu können.
-Sie verfügen bereits über ein [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Abonnement, wenn Sie zurzeit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] zum Verwalten Ihrer Geräte verwenden. Sie sind ebenfalls im Besitz eines [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Abonnements, wenn Sie eine EMS-Lizenz (Enterprise Mobility Suite) erworben haben. Wenn Sie [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] testen, um die MAM-Fähigkeiten kennenzulernen, können Sie auf der Seite [Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/) ein Testkonto erhalten.
+Sie verfügen bereits über ein [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Abonnement, wenn Sie zurzeit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] zum Verwalten Ihrer Geräte verwenden. Sie sind ebenfalls im Besitz eines [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Abonnements, wenn Sie eine EMS-Lizenz (Enterprise Mobility Suite) erworben haben. Wenn Sie [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] testen, um die MAM-Fähigkeiten kennenzulernen, können Sie auf der Seite [Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/) ein Testkonto erhalten.
 
     Um zu überprüfen, ob Sie über ein [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Abonnement verfügen, navigieren Sie im Office-Portal zur Seite **Abrechnung**.  Wenn Sie über ein Abonnement verfügen, sollte in den Abonnements [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] als **Aktiv** angezeigt werden.
 
@@ -98,13 +98,13 @@ Sie verfügen bereits über ein [!INCLUDE[wit_nextref](../includes/wit_nextref_m
 
 1.  Melden Sie sich mit Ihren Administratoranmeldeinformationen beim [Office-Portal](http://portal.office.com) an.
 
-2.  Fügen Sie, wie im Abschnitt**Schritte zur Durchführung einer 30-tägigen Evaluierung von Intune** des [Intune-Evaluierungshandbuchs](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) beschrieben, Benutzer hinzu, und weisen Sie anschließend Intune-Lizenzen zu. Um einem Benutzer Zugriff auf das Office-Portal, das Azure AD-Portal und das Azure-Portal zu gewähren, weisen Sie dem Benutzer die Rolle **Globaler Administrator** zu.
+2.  Fügen Sie, wie im Abschnitt**Schritte zur Durchführung einer 30-tägigen Evaluierung von Intune** des [Intune-Evaluierungshandbuchs](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) beschrieben, Benutzer hinzu, und weisen Sie anschließend Intune-Lizenzen zu. Um einem Benutzer Zugriff auf das Office-Portal, das Azure AD-Portal und das Azure-Portal zu gewähren, weisen Sie dem Benutzer die Rolle **Globaler Administrator** zu.
 
-5.  App-Schutzrichtlinien werden für Benutzergruppen in Azure Active Directory bereitgestellt. Um Benutzergruppen für Ihre App-Schutzrichtlinien zu erstellen, erstellen Sie eine Benutzergruppe, wie im Abschnitt **Erstellen einer Benutzergruppe** von [Erstellen von Gruppen zum Organisieren der Benutzer und Gruppen des Testabonnements](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3) beschrieben.
+5.  App-Schutzrichtlinien werden für Benutzergruppen in Azure Active Directory bereitgestellt. Um Benutzergruppen für Ihre App-Schutzrichtlinien zu erstellen, erstellen Sie eine Benutzergruppe, wie im Abschnitt **Erstellen einer Benutzergruppe** von [Erstellen von Gruppen zum Organisieren der Benutzer und Gruppen des Testabonnements](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3) beschrieben.
 
 ### <a name="assign-roles-to-non-global-admin-users"></a>Zuweisen von Rollen zu nicht globalen Administratoren
 
-Globale Administratoren haben Zugriff auf das [Azure-Portal](https://portal.azure.com).  Wenn Benutzer, die keine globalen Administratoren sind, in der Lage sein sollen, Richtlinien zu konfigurieren und andere Verwaltungsaufgaben für mobile Apps auszuführen, lesen Sie den Artikel [Verwenden von Rollenzuweisungen zum Verwalten Ihrer Azure-Abonnementressourcen](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/).
+Globale Administratoren haben Zugriff auf das [Azure-Portal](https://portal.azure.com).  Wenn Benutzer, die keine globalen Administratoren sind, in der Lage sein sollen, Richtlinien zu konfigurieren und andere Verwaltungsaufgaben für mobile Apps auszuführen, lesen Sie den Artikel [Verwenden von Rollenzuweisungen zum Verwalten Ihrer Azure-Abonnementressourcen](https://azure.microsoft.com/documentation/articles/role-based-access-control-configure/).
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Erstellen und Bereitstellen von App-Schutzrichtlinien mit Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f66772dd318e97b9fef124776e80d9d9a4c7de7f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -30,7 +30,7 @@ Sie können den Zugriff auf Ihre geschäftlichen E-Mails, Office 365-Dienste wie
 ## <a name="how-does-conditional-access-work"></a>Funktionsweise des bedingten Zugriffs
 Mit den Kompatibilitätsrichtlinieneinstellungen können Sie die Kompatibilität eines Geräts bewerten. Eine Richtlinie für bedingten Zugriff verwendet diese Bewertung, um den Zugriff auf einen bestimmten Dienst zuzulassen oder zu beschränken. Wenn Sie eine Richtlinie für bedingten Zugriff in Kombination mit einer Gerätekompatibilitätsrichtlinie verwenden, erhalten nur kompatible Geräte Zugriff auf den Dienst. Die Richtlinien für Konformität und bedingten Zugriff werden dem Benutzer bereitgestellt. Jedes Gerät, das der Benutzer zum Zugriff auf die Dienste verwendet, wird auf die Einhaltung der Richtlinien überprüft.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Bedenken Sie, dass für den Benutzer, der das Gerät verwendet, eine Kompatibilitätsrichtlinie bereitgestellt werden muss, damit das Gerät hinsichtlich der Kompatibilität bewertet werden kann.
 > Wenn keine Kompatibilitätsrichtlinie für den Benutzer bereitgestellt wird, wird das Gerät als kompatibel behandelt, und es werden keine Zugriffsbeschränkungen angewendet.
 
@@ -48,7 +48,7 @@ Microsoft Intune und Azure Active Directory Premium (Azure AD) arbeiten nahtlos 
 
 **Azure AD Premium-Lizenzen** können als eigenständiger Dienst oder im Rahmen von Enterprise Agreement (zusammen mit Intune) erworben werden. Wenn Sie bedingte Zugriffsrichtlinien mit Intune bereitgestellt haben, stellen Sie sicher, dass Sie die entsprechenden Azure AD Premium- oder **EMS Lizenzen** bezogen haben.
 
-- Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 Stellen Sie darüber sicher, dass den Benutzern, für die Richtlinien für bedingten Zugriff gelten sollen, [Azure AD Premium- oder EMS-Lizenzen](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) zugewiesen wurden.
 

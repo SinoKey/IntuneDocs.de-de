@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 312a3ae8a74b0a8460f969f96bee14077c6c7161
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -29,7 +30,7 @@ Sie können die Richtlinie für bedingten Zugriff für **Skype for Business Onli
 Der bedingte Zugriff besteht aus zwei Komponenten:
 - Einer Gerätekompatibilitätsrichtlinie, die das Gerät erfüllen muss, um als kompatibel bewertet zu werden
 - Einer Richtlinie für bedingten Zugriff, in der Sie die Bedingungen festlegen, die das Gerät erfüllen muss, damit Sie auf den Dienst zugreifen können
-Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Protect access to email and O365 services (Schützen des Zugriffs auf E-Mail- und Office&365;-Dienste)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Protect access to email and O365 services (Schützen des Zugriffs auf E-Mail- und Office 365-Dienste)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 Wenn ein Benutzer, für den der bedingte Zugriff gilt, versucht, Skype for Business Online auf seinem Gerät zu verwenden, erfolgt folgende Auswertung:
 
@@ -37,9 +38,9 @@ Wenn ein Benutzer, für den der bedingte Zugriff gilt, versucht, Skype for Busin
 
 **Bevor** Sie eine bedingte Zugriffsrichtlinie für Skype for Business Online konfigurieren, müssen folgende Voraussetzungen erfüllt sein:
 - Sie müssen über ein **Skype for Business Online-Abonnement** verfügen und Benutzern die Skype for Business Online-Lizenz zuweisen.
-- Sie müssen über ein **Enterprise Mobility + Security- (EMS)** oder **Azure Active Directory (Azure AD) Premium-Abonnement** verfügen, und Benutzer müssen für EMS oder Azure AD lizenziert sein. Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Sie müssen über ein **Enterprise Mobility + Security- (EMS)** oder **Azure Active Directory (Azure AD) Premium-Abonnement** verfügen, und Benutzer müssen für EMS oder Azure AD lizenziert sein. Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
--   [Aktivieren Sie die moderne Authentifizierung](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) für Skype for Business Online.
+-   [Aktivieren Sie die moderne Authentifizierung](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) für Skype for Business Online.
 -  All Ihre Benutzer müssen **Skype for Business Online** verwenden. Wenn in Ihrer Bereitstellung sowohl Skype for Business Online als auch lokales Skype for Business verwendet werden, wird die Richtlinie für bedingten Zugriff nicht auf Benutzer angewendet.
 
 Für das Gerät, dass Zugriff auf Skype for Business Online benötigt, müssen folgende Voraussetzungen erfüllt sein:
@@ -118,9 +119,4 @@ Wählen Sie eine beliebige Gruppe von Mobilgeräten aus. Wählen Sie dann auf de
 * **Geräte, die nicht kompatibel sind**: Diese Geräte werden für Skype for Business Online blockiert.
 
 * **Geräte, die bei AAD registriert und kompatibel sind**: Diese Geräte können auf Skype for Business Online zugreifen.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

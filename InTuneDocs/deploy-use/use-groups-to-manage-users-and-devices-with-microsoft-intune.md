@@ -15,8 +15,9 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0325f60e83b6e339c96b38b36465f53d6ee5421b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -89,7 +90,7 @@ Die neu erstellte Gruppe wird in der Liste **Gruppen** im Arbeitsbereich **Grupp
     > Derzeit werden, wenn Ihre Gruppe Mitglieder aus bestimmten Sicherheits- oder Vorgesetztengruppen einschließt und Sie außerdem Mitglieder aus bestimmten Gruppen ausschließen, die Mitglieder, die Sie ursprünglich aufgenommen hatten, entfernt. Um eine Gruppe zu erstellen, die sowohl eingeschlossene als auch ausgeschlossene Mitglieder aufweist, empfehlen wir Ihnen, zuerst eine übergeordnete Gruppe zu erstellen, die die eingeschlossenen Mitglieder enthält. Erstellen Sie anschließend eine untergeordnete Gruppe für diese übergeordnete Gruppe. Listen Sie in der neuen untergeordneten Gruppe die ausgeschlossenen Mitlieder auf. Verwenden Sie anschließend diese untergeordnete Gruppe zum Verwalten von Intune-Richtlinien, Profilen und App-Verteilung.
 
     > [!NOTE]
-    > Im Azure-Portal können Sie Gruppen auf der Grundlage der Vorgesetzten der Benutzer erstellen. Dieser Gruppentyp ist dynamisch und ändert sich, wenn Mitarbeiter in Azure Active Directory zum Team eines Vorgesetzten hinzugefügt oder aus ihm entfernt werden. Das Erstellen einer Azure-Gruppe auf der Grundlage des Namens von Vorgesetzten ist unter [Verwenden von Attributen zum Erstellen erweiterter Regeln](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) im Abschnitt **So konfigurieren Sie eine Gruppe als Gruppe mit "Vorgesetzten"** beschrieben.
+    > Im Azure-Portal können Sie Gruppen auf der Grundlage der Vorgesetzten der Benutzer erstellen. Dieser Gruppentyp ist dynamisch und ändert sich, wenn Mitarbeiter in Azure Active Directory zum Team eines Vorgesetzten hinzugefügt oder aus ihm entfernt werden. Das Erstellen einer Azure-Gruppe auf der Grundlage des Namens von Vorgesetzten ist unter [Verwenden von Attributen zum Erstellen erweiterter Regeln](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) im Abschnitt **So konfigurieren Sie eine Gruppe als Gruppe mit "Vorgesetzten"** beschrieben.
 
 4.  Wählen Sie auf der Seite **Direkte Mitgliedschaft definieren** **Durchsuchen** aus, um einzelne Benutzer zum Ein- oder Ausschließen auszuwählen. Wenn Sie Benutzer auswählen, die nicht in der von Ihnen angegebenen übergeordneten Gruppe enthalten sind, werden diese Benutzer der übergeordneten Gruppe automatisch hinzugefügt. Die Option zum manuellen Hinzufügen von Benutzern befindet sich unten im Dialogfeld **Mitglieder auswählen**. Dies ist hilfreich, wenn Sie einen Benutzer hinzufügen möchten, der noch nicht über ein registriertes Gerät verfügt.
 
@@ -151,9 +152,4 @@ Jede Richtlinie verfügt über einen **vorgesehenen Wert** und einen **Status**.
 
 > [!NOTE]
 > Denken Sie daran: Wenn zwei Richtlinien mit unterschiedlichen Einschränkungsstufen für das gleiche Gerät gelten, wird in der Praxis die restriktivere Richtlinie angewendet.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

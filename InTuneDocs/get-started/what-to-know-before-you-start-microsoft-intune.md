@@ -15,9 +15,9 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 61851f7669e9a5c3a192b2eda344fcde9c4fa3e6
-ms.lasthandoff: 03/20/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fa045d31125ba0d67f19bb46aa2728ae9bbcc93
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -67,7 +67,7 @@ Für verschiedene Verwaltungsaufgaben müssen Sie eine der folgenden Verwaltungs
 |**Unternehmensportal-Website**     |**Auf mobilen Geräten:** Verwenden Sie für jede unterstützte Plattform den Standardwebbrowser.   <br /><br />**Auf Windows-PCs:** Internet Explorer 10 oder höher oder Microsoft Edge<br /><br />**Unter Mac OS X 10.9 oder höher:** Apple Safari    |
 
 > [!Note]
-> Microsoft Edge und mobile Browser werden für die Administratorkonsole nicht unterstützt, da sie [Microsoft Silverlight](https://msdn.microsoft.com/en-us/library/cc838158(v=vs.95).aspx) nicht unterstützen. Für die Intune-Konsole wird in Zukunft nicht mehr Silverlight verwendet, letztlich werden alle Intune-Features zur Verwaltung mobiler Geräte und Anwendungen [im neuen Azure-Portal verfügbar gemacht](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/). Diese Umstellung wird jedoch eine Zeit lang dauern.
+> Microsoft Edge und mobile Browser werden für die Administratorkonsole nicht unterstützt, da sie [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx) nicht unterstützen. Für die Intune-Konsole wird in Zukunft nicht mehr Silverlight verwendet, letztlich werden alle Intune-Features zur Verwaltung mobiler Geräte und Anwendungen [im neuen Azure-Portal verfügbar gemacht](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/). Diese Umstellung wird jedoch eine Zeit lang dauern.
 
 
 Lediglich Benutzer mit Dienstadministratorrechten oder Mandantenadministratoren mit globaler Administratorrolle können sich bei diesem Portal anmelden. Für den Zugriff auf die Administratorkonsole sind für Ihr Konto eine Lizenz zur Verwendung von Intune und der Anmeldestatus **Zugelassen** erforderlich.

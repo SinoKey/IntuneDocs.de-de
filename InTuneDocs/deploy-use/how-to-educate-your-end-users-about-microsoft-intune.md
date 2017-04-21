@@ -14,18 +14,18 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bed28fc91271c12377f45662aa00fc9616d16fe8
-ms.openlocfilehash: 3d3f35f38a4d6f09f8fdc3e1bbc1c6ca5af6bbe7
-ms.lasthandoff: 04/11/2017
+ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
+ms.openlocfilehash: a0ae4d74ad99adcfab596eb0c441c845fbca3a9e
+ms.lasthandoff: 04/20/2017
 
 
 ---
 
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>So informieren sie Ihre Endbenutzer über Microsoft Intune
 
-Mit Microsoft Intune können Sie Ihre Belegschaft mit mobilen Geräten ausstatten, ohne dass Ihre Unternehmensdaten gefährdet werden. Zu einer erfolgreichen Bereitstellung tragen viele Schritte bei; darunter z.B. das Beurteilen von Intune durch eine [kostenlose Testversion](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune.md), das [Schützen Ihrer E-Mails](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices) und das [Einbetten Ihrer Apps im Intune SDK](/intune/develop/intune-app-sdk.md).
+Mit Microsoft Intune können Sie Ihre Belegschaft mit mobilen Geräten ausstatten, ohne dass Ihre Unternehmensdaten gefährdet werden. Zu einer erfolgreichen Bereitstellung tragen viele Schritte bei; darunter z.B. das Beurteilen von Intune durch eine [kostenlose Testversion](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune), das [Schützen Ihrer E-Mails](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices) und das [Einbetten Ihrer Apps im Intune SDK](/intune/develop/intune-app-sdk).
 
-Durch keine dieser Technologien wird jedoch garantiert, dass Ihre Benutzer verstehen, wie wichtig es ist, dass Sie deren Geräte verwalten. Tatsächlich werden viele Ihrer Endbenutzer das Gefühl haben, dass Sie in ihre Privatsphäre eindringen – besonders dann, wenn Sie Intune als [Bring-Your-Own-Device (BYOD)-Lösung](/enterprise-mobility-security/solutions/byod-design-considerations-guide.md) verwenden.
+Durch keine dieser Technologien wird jedoch garantiert, dass Ihre Benutzer verstehen, wie wichtig es ist, dass Sie deren Geräte verwalten. Tatsächlich werden viele Ihrer Endbenutzer das Gefühl haben, dass Sie in ihre Privatsphäre eindringen – besonders dann, wenn Sie Intune als [Bring-Your-Own-Device (BYOD)-Lösung](/enterprise-mobility-security/solutions/byod-design-considerations-guide) verwenden.
 
 > [!Important]
 > Für eine erfolgreiche Einführung ist es essentiell, dass Sie die Ängste Ihrer Endbenutzer bezüglich der Verwaltung ihrer Geräte durch Ihr Unternehmen verstehen und proaktiv ansprechen.
@@ -59,7 +59,7 @@ Das Mindern dieser Ängste macht das Bereitstellen reibungsloser. Hier ist eine 
   * [Wie Ihre Android-Benutzer Apps erhalten](how-your-android-users-get-their-apps.md)
 
 * **iOS**
-  * [Ein iOS-Gerät mit Intune verwenden](https://docs.microsoft.com/Intune/EndUser/using-your-ios-device-with-intune)
+  * [Ein iOS-Gerät mit Intune verwenden](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macos-device-with-intune)
   * [Wie Ihre iOS-Benutzer Apps erhalten](how-your-ios-users-get-their-apps.md)
 
 * **Windows**
