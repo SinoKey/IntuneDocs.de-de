@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 87832ec7f295c08678052d19164af9a8db051f9f
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23d40a31c43a061e0f3b1fbb05827697ca7380ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,7 +62,7 @@ Hier sehen Sie eine Übersicht über die einzelnen Aufgaben bei der Implementier
 
 Wie im vorherigen Abschnitt zu den Anforderungen dargestellt, ist ein EMS- oder Intune-Abonnement erforderlich. Wenn Ihre Organisation nicht über ein EMS- oder Intune-Abonnement verfügt, wenden Sie sich an Microsoft oder das Microsoft-Konto-Team, und teilen Sie Ihr Interesse am Kauf von Enterprise Mobility + Security (EMS) oder Intune mit.
 
--   Informationen zum [Kauf von Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing).
+-   Informationen zum [Kauf von Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
 
 #### <a name="task-2-add-office-365-subscription"></a>Aufgabe 2: Hinzufügen eines Office 365-Abonnements
 
@@ -115,7 +116,7 @@ Microsoft Intune unterstützt E-Mail-, WLAN- und VPN-Profile. Profile werden im 
 
 Microsoft Intune unterstützt die Bereitstellung von Web-Apps, branchenspezifischen Apps und Apps aus öffentlichen Stores. Darüber hinaus wird das Verwalten von Apps unterstützt, bei denen das Intune-SDK durch die Zuordnung von MAM-Richtlinien integriert wurde. Apps werden im Intune-Verwaltungsportal im App-Arbeitsbereich hinzugefügt und bereitgestellt. MAM-Richtlinien werden im Intune-Verwaltungsportal im Richtlinienarbeitsbereich hinzugefügt und bereitgestellt. Fügen Sie Apps nach Bedarf hinzu, und stellen Sie sie basierend auf den Anwendungsfällen und Anforderungen Ihrer Intune-Bereitstellung für Zielgruppen bereit.
 
--   Weitere Informationen zum [Hinzufügen und Bereitstellen von Anwendungen](https://docs.microsoft.com/en-us/intune/deploy-use/deploy-apps).
+-   Weitere Informationen zum [Hinzufügen und Bereitstellen von Anwendungen](https://docs.microsoft.com/intune/deploy-use/deploy-apps).
 
 #### <a name="task-11-add-and-deploy-compliance-policies"></a>Aufgabe 11: Hinzufügen und Bereitstellen von Konformitätsrichtlinien
 
@@ -141,9 +142,4 @@ Intune unterstützt die Geräteplattformen iOS, Mac OS, Android, Windows Desktop
 ## <a name="next-section"></a>Nächster Abschnitt
 
 Der nächste Abschnitt enthält Hinweise auf das [Testen und Überprüfen Ihrer Intune-Bereitstellung](section-9-test-and-validation.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

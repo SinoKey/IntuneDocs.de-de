@@ -14,9 +14,9 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9a988945c499c3145208b86d6832d02c28136ece
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,8 +43,8 @@ In der Testversion stehen alle Funktionen zur Verfügung, die Sie auch in einer 
 ## <a name="whats-not-covered"></a>Was nicht behandelt wird
 |Wenn Sie folgende Themen interessieren ... |... finden Sie hier weitere Informationen |
 |------------------------|----------|
-|Verwaltung mobiler Geräte (MDM) in einer Produktionsumgebung | [Erste Schritte](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
-|MDM mit Intune und System Center Configuration Manager | [Hybride Verwaltung mobiler Geräte](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) |
+|Verwaltung mobiler Geräte (MDM) in einer Produktionsumgebung | [Erste Schritte](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
+|MDM mit Intune und System Center Configuration Manager | [Hybride Verwaltung mobiler Geräte](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) |
 
 Da die oben genannten Handbücher Ihnen helfen, Intune in Produktionsumgebungen einzurichten, sind sie länger und enthalten viel mehr Entscheidungspunkte, die Sie durcharbeiten müssen, als das Evaluierungshandbuch.
 
@@ -61,7 +61,7 @@ Als ersten Schritt zum Verwalten mobiler Geräte mit Intune müssen Sie Ihre **A
 
 Wenn Sie Intune als eigenständige Anwendung nutzen, wovon in dieser Testversion ausgegangen wird, oder wenn Sie Intune als Teil eines EMS-Abonnements (Enterprise Mobility + Security) verwenden, müssen Sie Intune als Autorität für die Verwaltung mobiler Geräte festlegen. Legen Sie Intune also als den Dienst fest, der zum Verwalten mobiler Geräte in Ihrer Organisation verwendet wird.
 
-Kunden, die Intune mit System Center Configuration Manager zum Verwalten mobiler Geräte verwenden möchten, müssen entscheiden, ob Intune oder Configuration Manager als MDM-Autorität verwendet werden soll. Das ist eine wichtige Entscheidung in einer Produktionsumgebung, da sich die Einstellung, nachdem sie einmal festgelegt wurde, aktuell nur sehr schwer ändern lässt. Dies geht aber über den Rahmen dieses Handbuchs hinaus. Weitere Informationen zu den Auswirkungen der Entscheidung, Intune oder Configuration Manager als MDM-Autorität festzulegen, finden Sie unter [Auswahl zwischen eigenständiger Intune MDM und Hybrid-MDM](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+Kunden, die Intune mit System Center Configuration Manager zum Verwalten mobiler Geräte verwenden möchten, müssen entscheiden, ob Intune oder Configuration Manager als MDM-Autorität verwendet werden soll. Das ist eine wichtige Entscheidung in einer Produktionsumgebung, da sich die Einstellung, nachdem sie einmal festgelegt wurde, aktuell nur sehr schwer ändern lässt. Dies geht aber über den Rahmen dieses Handbuchs hinaus. Weitere Informationen zu den Auswirkungen der Entscheidung, Intune oder Configuration Manager als MDM-Autorität festzulegen, finden Sie unter [Auswahl zwischen eigenständiger Intune MDM und Hybrid-MDM](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 Für diese Testversion wird Intune als MDM-Autorität festgelegt. Dies wirkt sich nicht auf Ihre Produktionsumgebung aus, solange Sie die Testsoftware nicht für Ihre Produktionsumgebung verwenden.
 
@@ -86,7 +86,7 @@ Laden Sie das APNs-Zertifikat (.pem) herunter, und speichern Sie die Datei lokal
 3.    **Hinzufügen des APNs-Zertifikats zu Intune**<BR/>
 Navigieren Sie in der Microsoft Intune-Verwaltungskonsole zu **Verwaltung** > **Verwaltung mobiler Geräte** > **iOS und Mac OS X** > **APNs-Zertifikat hochladen**, und wählen Sie anschließend **APNs-Zertifikat hochladen** aus. Wechseln Sie zur Zertifikatdatei (.pem), wählen Sie **Öffnen** aus, und geben Sie anschließend Ihre Apple-ID ein. Mit dem APNs-Zertifikat. Intune kann iOS-Geräte registrieren und verwalten, indem die Richtlinie per Push auf registrierte mobile Geräte übertragen wird.
 4.    **Benutzern erklären, wie sie ihre Geräte registrieren, um auf Unternehmensressourcen zugreifen zu können**<br/>
-Registrierungsanleitungen für Endbenutzer finden Sie unter [Registrieren Ihres iOS-Geräts bei Intune](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-ios) oder unter [Registrieren Ihres Mac OS X-Geräts bei Intune](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-mac-os-x). Im Laufe des Registrierungsprozesses werden Benutzer darüber informiert, was sie erwarten können und was IT-Administratoren auf ihren Geräten sehen können und was nicht.
+Registrierungsanleitungen für Endbenutzer finden Sie unter [Registrieren Ihres iOS-Geräts bei Intune](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-ios) oder unter [Registrieren Ihres Mac OS X-Geräts bei Intune](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-mac-os-x). Im Laufe des Registrierungsprozesses werden Benutzer darüber informiert, was sie erwarten können und was IT-Administratoren auf ihren Geräten sehen können und was nicht.
 
 
 ### <a name="learn-more-about-device-enrollment"></a>Weitere Informationen zur Geräteregistrierung

@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
-ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -40,7 +41,7 @@ Wenn ein Benutzer versucht, mit einer unterstützten App wie z. B. OneDrive auf
 
 **Bevor** Sie eine bedingte Zugriffsrichtlinie für SharePoint Online konfigurieren, müssen folgende Voraussetzungen erfüllt sein:
 - Sie müssen über ein **SharePoint Online-Abonnement** verfügen, und Benutzer müssen für SharePoint Online lizenziert sein.
-- Sie müssen über ein **Enterprise Mobility + Security- (EMS)** oder **Azure Active Directory (Azure AD) Premium-Abonnement** verfügen, und Benutzer müssen für EMS oder Azure AD lizenziert sein. Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Sie müssen über ein **Enterprise Mobility + Security- (EMS)** oder **Azure Active Directory (Azure AD) Premium-Abonnement** verfügen, und Benutzer müssen für EMS oder Azure AD lizenziert sein. Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 
   Zum Herstellen einer Verbindung mit den gewünschten Dateien muss das Gerät die folgenden Voraussetzungen erfüllen:
@@ -59,10 +60,10 @@ Wenn eine Bedingung nicht erfüllt wird, erhält der Benutzer bei der Anmeldung 
 
 -   Wenn das Gerät nicht kompatibel ist, wird eine Meldung angezeigt, die den Benutzer zum [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Unternehmensportalwebsite oder zur Unternehmensportal-App weiterleitet. Dort findet der Benutzer Informationen zum Problem und zur Lösung.
 
-**Keine Anwendung des bedingten Zugriffs bei externer Freigabe**. Um zu erfahren, wie die externe Freigabe in Ihrer Mandanten- oder Websitesammlung verhindert werden kann, lesen Sie [Verwalten der externen Freigabe für Ihre SharePoint Online-Umgebung](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US).
+**Keine Anwendung des bedingten Zugriffs bei externer Freigabe**. Um zu erfahren, wie die externe Freigabe in Ihrer Mandanten- oder Websitesammlung verhindert werden kann, lesen Sie [Verwalten der externen Freigabe für Ihre SharePoint Online-Umgebung](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85).
 
 >[!NOTE]
->Wenn Sie den bedingten Zugriff für SharePoint Online aktivieren, sollten Sie die Domäne in der Liste wie im Thema [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) beschrieben deaktivieren.  
+>Wenn Sie den bedingten Zugriff für SharePoint Online aktivieren, sollten Sie die Domäne in der Liste wie im Thema [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/library/dn917451.aspx) beschrieben deaktivieren.  
 
 ## <a name="support-for-mobile-devices"></a>Unterstützung für mobile Geräte
 Die folgenden Betriebssysteme werden unterstützt:
@@ -84,7 +85,7 @@ Die folgenden Betriebssysteme werden unterstützt:
 > [!NOTE]
 >Damit Sie den bedingten Zugriff auf Windows 10-PCs verwenden können, müssen Sie diese PCs mit dem Windows 10 Anniversary-Update aktualisieren.
 
-  - Sie müssen in die Domäne eingebundene PCs für die [automatische Registrierung](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) bei Azure Active Directory einrichten. Der Azure AD Device Registration-Dienst wird automatisch für Intune und Office 365-Kunden aktiviert. Kunden, die bereits den AD FS Device Registration Service bereitgestellt haben, sehen keine registrierten Geräte im lokalen Active Directory.
+  - Sie müssen in die Domäne eingebundene PCs für die [automatische Registrierung](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) bei Azure Active Directory einrichten. Der Azure AD Device Registration-Dienst wird automatisch für Intune und Office 365-Kunden aktiviert. Kunden, die bereits den AD FS Device Registration Service bereitgestellt haben, sehen keine registrierten Geräte im lokalen Active Directory.
 
   - Wenn die Richtlinie das Beitreten zu einer Domäne erfordert und der PC nicht in die Domäne eingebunden ist, wird die Meldung angezeigt, dass der IT-Administrator kontaktiert werden sollte.
 
@@ -92,7 +93,7 @@ Die folgenden Betriebssysteme werden unterstützt:
   >[!NOTE]
   >Bedingter Zugriff wird nicht auf PCs unterstützt, auf denen der Intune Computerclient-Agent ausgeführt wird.
 
-[Die moderne Authentifizierung von Office 365 muss aktiviert sein](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) und alle neuesten Office-Updates enthalten.
+[Die moderne Authentifizierung von Office 365 muss aktiviert sein](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) und alle neuesten Office-Updates enthalten.
 
 Die moderne Authentifizierung ermöglicht Windows-Clients mit Office 2013 eine ADAL-basierte Anmeldung (Active Directory Authentication Library) und bietet größere Sicherheit durch **mehrstufige Authentifizierung** und **zertifikatbasierte Authentifizierung**.
 
@@ -129,7 +130,7 @@ Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompa
 #### <a name="bkmk_spopolicy"></a>
 
 >[!NOTE]
-> Sie können für Intune-Geräte in der Azure AD-Verwaltungskonsole auch eine Richtlinie für bedingten Zugriff erstellen (die Richtlinie wird in Azure AD als **Richtlinie für gerätebasierten bedingten Zugriff** bezeichnet). Darüber hinaus können Sie andere Richtlinien für bedingten Zugriff erstellen, z. B. mehrstufige Authentifizierung. Sie können auch Richtlinien für bedingten Zugriff für von Azure AD unterstützte Unternehmens-Apps von Drittanbietern festlegen, z. B. Salesforce und Box. Weitere Informationen finden Sie unter [Festlegen von gerätebasierten Azure Active Directory-Richtlinien für bedingten Zugriff zur Steuerung des Zugriffs auf über Azure Active Directory verbundene Anwendungen](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+> Sie können für Intune-Geräte in der Azure AD-Verwaltungskonsole auch eine Richtlinie für bedingten Zugriff erstellen (die Richtlinie wird in Azure AD als **Richtlinie für gerätebasierten bedingten Zugriff** bezeichnet). Darüber hinaus können Sie andere Richtlinien für bedingten Zugriff erstellen, z. B. mehrstufige Authentifizierung. Sie können auch Richtlinien für bedingten Zugriff für von Azure AD unterstützte Unternehmens-Apps von Drittanbietern festlegen, z. B. Salesforce und Box. Weitere Informationen finden Sie unter [Festlegen von gerätebasierten Azure Active Directory-Richtlinien für bedingten Zugriff zur Steuerung des Zugriffs auf über Azure Active Directory verbundene Anwendungen](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** > **Bedingter Zugriff** > **SharePoint Online-Richtlinie** aus.
@@ -194,10 +195,5 @@ Wählen Sie eine beliebige Gruppe von Mobilgeräten aus. Wählen Sie dann auf de
 -   **Geräte, die bei AAD registriert und kompatibel sind**. Diese Geräten können auf SharePoint Online zugreifen.
 
 ### <a name="see-also"></a>Weitere Informationen:
-[Protect access to email and O365 services with Microsoft Intune (Schützen des Zugriffs auf E-Mail- und Office&365;-Dienste mit Microsoft Intune)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+[Protect access to email and O365 services with Microsoft Intune (Schützen des Zugriffs auf E-Mail- und Office 365-Dienste mit Microsoft Intune)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 

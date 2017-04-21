@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: dbc5c6afc9f2748b50e064b912e519e8f2de9022
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,7 +43,7 @@ Im Gegensatz zu anderen Intune-Richtlinien wird eine Verwaltungsrichtlinie für 
 
 Zum Anwenden von Einschränkungen auf eine App muss die App das Microsoft Intune App SDK enthalten. Es gibt drei Möglichkeiten, um diesen App-Typ zu beziehen:
 
--   **Verwenden einer richtlinienverwalteten App**. Eine richtlinienverwaltete App verfügt über ein integriertes App-SDK. Um diesen App-Typ hinzuzufügen, geben Sie in einem App Store wie iTunes Store oder Google Play einen Link zur App an. Es ist keine weitere Bearbeitung für diesen App-Typ erforderlich. Weitere Informationen finden Sie in der [Liste der Apps zur Verwendung mit den Microsoft Intune-Verwaltungsrichtlinien für mobile Anwendungen](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
+-   **Verwenden einer richtlinienverwalteten App**. Eine richtlinienverwaltete App verfügt über ein integriertes App-SDK. Um diesen App-Typ hinzuzufügen, geben Sie in einem App Store wie iTunes Store oder Google Play einen Link zur App an. Es ist keine weitere Bearbeitung für diesen App-Typ erforderlich. Weitere Informationen finden Sie in der [Liste der Apps zur Verwendung mit den Microsoft Intune-Verwaltungsrichtlinien für mobile Anwendungen](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 -   **Verwenden einer umschlossenen App**. Eine umschlossene App ist eine App, die Sie mithilfe des Microsoft Intune App Wrapping Tool neu verpacken, sodass sie das App-SDK enthält. Dieses Tool wird normalerweise verwendet, um Unternehmensanwendungen zu verarbeiten, die intern erstellt wurden. Sie können damit keine Apps verarbeiten, die aus dem App Store heruntergeladen wurden. Weitere Informationen finden Sie unter [Vorbereiten von iOS-Apps für die Verwaltung mobiler Anwendungen mit dem Microsoft Intune App Wrapping-Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) und [Vorbereiten von Android-Apps für die Verwaltung von mobilen Anwendungen mit dem Microsoft Intune App Wrapping-Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -140,7 +140,7 @@ Nachdem Sie überprüft haben, dass die Anwendung erfolgreich hochgeladen wurde,
     |**Gerätekonformität mit Unternehmensrichtlinien für Zugriff erforderlich**|Diese Einstellung lässt die Verwendung der App nur dann zu, wenn das Gerät nicht per Jailbreak oder Rooting manipuliert wurde.|
     |**Überprüfen der Zugriffsanforderungen nach (Minuten)**|Geben Sie im Feld **Timeout** den Zeitraum ein, bevor die Zugriffsanforderungen für die App nach dem Öffnen der App erneut geprüft werden müssen.|
     |**Offline-Toleranzperiode**|Wenn das Gerät offline ist, geben Sie den Zeitraum ein, bevor die Zugriffsanforderungen für die App erneut geprüft werden.|
-    |**App-Daten verschlüsseln**|Diese Einstellung gibt an, dass alle dieser App zugeordneten Daten verschlüsselt werden. Dies umfasst extern gespeicherte Daten, z. B. auf SD-Karten.<br /><br />**Verschlüsselung für iOS**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, werden Daten im Ruhezustand mit vom Betriebssystem bereitgestellter Verschlüsselung auf Geräteebene verschlüsselt. Dies wird durch die Geräte-PIN-Richtlinie aktiviert, die vom IT-Administrator festgelegt wird. Wenn eine PIN erforderlich ist, werden die Daten gemäß den Einstellungen in der mobilen Anwendungsverwaltungsrichtlinie verschlüsselt. Wie in der Apple-Dokumentation angegeben, [sind die von iOS verwendeten Module FIPS 140-2-zertifiziert](http://support.apple.com/en-us/HT202739).<br /><br />**Verschlüsselung für Android**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, stellt Microsoft die Verschlüsselung bereit. Daten werden während der Datei-E/A-Vorgänge synchron verschlüsselt.  Inhalt auf dem Speicher des Geräts wird immer verschlüsselt. Die Verschlüsselungsmethode ist nur für Samsung KNOX-Geräte FIPS 140-2-kompatibel.|
+    |**App-Daten verschlüsseln**|Diese Einstellung gibt an, dass alle dieser App zugeordneten Daten verschlüsselt werden. Dies umfasst extern gespeicherte Daten, z. B. auf SD-Karten.<br /><br />**Verschlüsselung für iOS**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, werden Daten im Ruhezustand mit vom Betriebssystem bereitgestellter Verschlüsselung auf Geräteebene verschlüsselt. Dies wird durch die Geräte-PIN-Richtlinie aktiviert, die vom IT-Administrator festgelegt wird. Wenn eine PIN erforderlich ist, werden die Daten gemäß den Einstellungen in der mobilen Anwendungsverwaltungsrichtlinie verschlüsselt. Wie in der Apple-Dokumentation angegeben, [sind die von iOS verwendeten Module FIPS 140-2-zertifiziert](http://support.apple.com/HT202739).<br /><br />**Verschlüsselung für Android**<br /><br />Für Apps, die einer Intune-Verwaltungsrichtlinie für mobile Anwendungen zugeordnet sind, stellt Microsoft die Verschlüsselung bereit. Daten werden während der Datei-E/A-Vorgänge synchron verschlüsselt.  Inhalt auf dem Speicher des Geräts wird immer verschlüsselt. Die Verschlüsselungsmethode ist nur für Samsung KNOX-Geräte FIPS 140-2-kompatibel.|
     |**Blockieren von Bildschirmaufnahmen** (nur Android-Geräte)|Diese Einstellung gibt an, dass die Bildschirmaufnahmefunktionen des Geräts blockiert werden, wenn jemand diese App verwendet.|
 
 4. Wählen Sie danach die Option **Richtlinie speichern**.

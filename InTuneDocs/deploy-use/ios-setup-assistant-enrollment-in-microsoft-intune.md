@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
-ms.openlocfilehash: 5bb9c68db8edb68531fc40bc93c28881a95b6940
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2a1a9bb4e49e997a6f152cadcf0c7a75b553cb42
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -39,7 +39,7 @@ Mit Apple Configurator können Sie ein iOS-Gerät auf die Werkseinstellungen zur
 
 - Stellen Sie sicher, dass Sie über physischen Zugriff auf iOS-Geräte verfügen&mdash;Geräte müssen auf die Werkseinstellungen zurückgesetzt sein und dürfen keinen Kennwortschutz aufweisen
 
-- Rufen Sie die Geräteseriennummern ab&mdash; siehe [Abrufen einer iOS-Seriennummer](https://support.apple.com/en-us/HT204308)
+- Rufen Sie die Geräteseriennummern ab&mdash; siehe [Abrufen einer iOS-Seriennummer](https://support.apple.com/HT204308)
 
 - Haben Sie ein USB-Verbindungskabel zur Hand
 

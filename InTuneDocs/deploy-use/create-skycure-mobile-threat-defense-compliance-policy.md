@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 3a7322bd389b6d2ca72108b9f54318000857895b
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: a2597a43e48d8cdde6c29070986528dcba473d8e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +32,7 @@ Dank Intune mit Skycure Mobile Threat Defense können Sie Bedrohungen auf mobile
 
 Voraussetzungen für die Kompatibilitätsrichtlinie mit dem Skycure-Schutz vor Gerätebedrohungen:
 
--   [Setup Skycure integration with Intune (Einrichten der Skycure-Integration mit Intune)](https://docs.microsoft.com/en-us/intune/deploy-use/setup-the-skycure-integration-with-Intune)
+-   [Setup Skycure integration with Intune (Einrichten der Skycure-Integration mit Intune)](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
 
 -   [Aktivieren der Skycure-Verbindung in Intune](https://docs.microsoft.com/intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 

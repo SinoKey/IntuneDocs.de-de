@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e084cce8e34b0de2dce7c6b8503d5b5089c930e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -62,7 +62,7 @@ ms.lasthandoff: 02/18/2017
 |||
 |-|-|
 |E-Mail-Profil|Diese Richtlinie kann verwendet werden, um [E-Mail-Zugriffseinstellungen](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) für bestimmte E-Mail-Clients auf mobilen Geräten einzurichten, sodass der Einrichtungsaufwand für den Endbenutzer minimiert wird.|
-|EMS|Microsoft Enterprise Mobility + Security (vormals Enterprise Mobility Suite) schützt Ihre Unternehmensdaten und ermöglicht den Benutzern gleichzeitig den [Zugriff auf die Apps und Inhalte, die sie benötigen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility).|
+|EMS|Microsoft Enterprise Mobility + Security (vormals Enterprise Mobility Suite) schützt Ihre Unternehmensdaten und ermöglicht den Benutzern gleichzeitig den [Zugriff auf die Apps und Inhalte, die sie benötigen](https://www.microsoft.com/cloud-platform/enterprise-mobility).|
 |Endbenutzer|[Gerätebenutzer von z.B. Telefonen und PCs](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune), die mit Intune verwaltet werden.|
 |Registrieren|Microsoft Intune verwendet die [Registrierung](/intune/deploy-use/enroll-devices-in-microsoft-intune) dazu, Geräte in die Verwaltung aufzunehmen und den Zugriff auf Ressourcen zu ermöglichen.|
 
@@ -122,7 +122,7 @@ ms.lasthandoff: 02/18/2017
 |Remotesperre|Eine Intune-Funktion, mit der Sie [unterstützte Geräte sperren](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune) können, auch wenn Sie nicht im Besitz des Geräts sind.|
 |Berichte|Intune stellt eine Reihe [integrierter Berichte](/intune/deploy-use/understand-microsoft-intune-operations-by-using-reports) bereit, denen Sie Informationen zu den von Ihnen verwalteten Geräten entnehmen können.|
 |Erforderliche Installation|Wenn Sie eine App mit dieser Aktion bereitstellen, wird die App [ohne Benutzereingriff](/intune/deploy-use/deploy-apps) auf dem Gerät installiert (auf einigen Plattformen muss der Endbenutzer jedoch möglicherweise die Installation akzeptieren).|
-|Anforderungen|Ein [App-Bereitstellungsvorgang](/en-us/intune/deploy-use/add-apps), bei dem Sie die Anforderungen auswählen können, die auf einem Gerät erfüllt sein müssen, bevor die Anwendung installiert wird. Sie könnten beispielsweise die iOS-Version angeben, die vor der Installation der App installiert sein muss.|
+|Anforderungen|Ein [App-Bereitstellungsvorgang](/intune/deploy-use/add-apps), bei dem Sie die Anforderungen auswählen können, die auf einem Gerät erfüllt sein müssen, bevor die Anwendung installiert wird. Sie könnten beispielsweise die iOS-Version angeben, die vor der Installation der App installiert sein muss.|
 
 ## <a name="s"></a>S
 |||

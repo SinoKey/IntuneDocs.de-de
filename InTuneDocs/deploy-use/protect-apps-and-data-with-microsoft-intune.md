@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -48,14 +49,9 @@ Sie können Ihre Unternehmensdaten mithilfe von MAM-Richtlinien auf Geräten sch
 
 Um eine App mit einer MAM-Richtlinie zu verknüpfen, muss die App das Microsoft Intune App Software Development Kit (SDK) umfassen, oder Sie können das App Wrapping Tool verwenden.
 
-In Microsoft Office-Apps beispielsweise ist das Intune App SDK integriert. Die vollständige Liste der unterstützten Apps finden Sie im [Microsoft Intune-Katalog mit mobilen Anwendungen](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) auf der Seite mit den Microsoft Intune-Anwendungspartnern. Wählen Sie eine App aus, um die unterstützten Szenarien, Plattformen und Informationen dazu anzuzeigen, ob die App mehrere Identitäten unterstützt.
+In Microsoft Office-Apps beispielsweise ist das Intune App SDK integriert. Die vollständige Liste der unterstützten Apps finden Sie im [Microsoft Intune-Katalog mit mobilen Anwendungen](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) auf der Seite mit den Microsoft Intune-Anwendungspartnern. Wählen Sie eine App aus, um die unterstützten Szenarien, Plattformen und Informationen dazu anzuzeigen, ob die App mehrere Identitäten unterstützt.
 
 Sie können auch [Ihre eigenen, individuellen branchenspezifischen Apps](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) für die Verwendung mit MAM-Richtlinien aktivieren.
 
 Wenn ein Gerät verloren geht oder gestohlen wird oder der Benutzer nicht mehr für Ihr Unternehmen arbeitet, können Sie [Unternehmensdaten selektiv löschen](wipe-managed-company-app-data-with-microsoft-intune.md) und nur persönliche Daten auf dem Gerät belassen.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

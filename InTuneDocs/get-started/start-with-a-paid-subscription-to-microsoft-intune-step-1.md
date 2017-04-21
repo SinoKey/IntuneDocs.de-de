@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: abeef923eb5c964ef1e306bbb2c25d0570959674
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -44,7 +45,7 @@ Wenn Sie bereits über ein Geschäfts- oder Schulkonto verfügen, können Sie si
 ## <a name="post-sign-up-considerations"></a>Überlegungen nach der Registrierung
 Wenn Sie sich für ein neues Abonnement registrieren, wird eine E-Mail mit Ihren Kontoinformationen an die von Ihnen bei der Registrierung angegebene E-Mail-Adresse gesendet. Diese E-Mail bestätigt, dass Ihr Abonnement aktiv ist.
 
-Nach Abschluss des Registrierungsprozesses werden Sie an eine Seite weitergeleitet, auf der Sie über das Office 365 Admin Center Benutzer hinzufügen und ihnen Lizenzen zuweisen können. Wenn Sie nur cloudbasierte Konten mit Ihrem standardmäßigen Domänennamen onmicrosoft.com verwenden werden, können Sie an diesem Punkt Benutzer hinzufügen und ihnen Lizenzen zuweisen. Wenn Sie jedoch den Domänennamen Ihres Unternehmens verwenden werden oder Benutzerkontoinformationen aus dem lokalen Active Directory synchronisieren möchten, können Sie dieses Browserfenster schließen und mit Schritt 2 dieser Kurzanleitung fortfahren. [Weitere Informationen über Ihre erste onmicrosoft.com-Domäne in Office 365](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
+Nach Abschluss des Registrierungsprozesses werden Sie an eine Seite weitergeleitet, auf der Sie über das Office 365 Admin Center Benutzer hinzufügen und ihnen Lizenzen zuweisen können. Wenn Sie nur cloudbasierte Konten mit Ihrem standardmäßigen Domänennamen onmicrosoft.com verwenden werden, können Sie an diesem Punkt Benutzer hinzufügen und ihnen Lizenzen zuweisen. Wenn Sie jedoch den Domänennamen Ihres Unternehmens verwenden werden oder Benutzerkontoinformationen aus dem lokalen Active Directory synchronisieren möchten, können Sie dieses Browserfenster schließen und mit Schritt 2 dieser Kurzanleitung fortfahren. [Weitere Informationen über Ihre erste onmicrosoft.com-Domäne in Office 365](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)
 
 >[!TIP]
 > Wenn Sie sich das nächste Mal bei Intune anmelden, werden Sie automatisch zur Intune-Administratorkonsole weitergeleitet.
@@ -53,9 +54,4 @@ Nach Abschluss des Registrierungsprozesses werden Sie an eine Seite weitergeleit
 >[!div class="step-by-step"]
 
 >[&larr; **Voraussetzungen**](.\what-to-know-before-you-start-microsoft-intune.md)     [**Domäneneinstellungen** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

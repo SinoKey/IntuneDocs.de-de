@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -38,7 +38,7 @@ Um den bedingten Zugriff zu konfigurieren, müssen Sie folgende Schritte ausfüh
 
 -   Sie müssen über ein **Office 365-Abonnement verfügen, das Exchange Online (z.B. E3)** umfasst, und die Benutzer müssen für Exchange Online lizenziert sein.
 
-- Sie müssen über ein **Enterprise Mobility + Security- (EMS)** oder **Azure Active Directory (Azure AD) Premium-Abonnement** verfügen, und Benutzer müssen für EMS oder Azure AD lizenziert sein. Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Sie müssen über ein **Enterprise Mobility + Security- (EMS)** oder **Azure Active Directory (Azure AD) Premium-Abonnement** verfügen, und Benutzer müssen für EMS oder Azure AD lizenziert sein. Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 -  Sie sollten erwägen, den optionalen **Intune Service to Service Connector** zu konfigurieren, der [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] mit Exchange Online verbindet und die Verwaltung von Geräteinformationen über die [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Konsole ermöglicht. Der Connector ist zur Verwendung von Kompatibilitätsrichtlinien oder Richtlinien für den bedingten Zugriff nicht zwingend erforderlich, Sie benötigen ihn aber zum Ausführen von Berichten, mit deren Hilfe die Auswirkungen des bedingten Zugriffs bewertet werden.
     -  Erfahren Sie mehr über den [Intune Service to Service Connector](intune-service-to-service-exchange-connector.md).
@@ -83,7 +83,7 @@ Sie können den Zugriff auf Exchange Online-E-Mails über **Outlook** und andere
 Die **moderne Authentifizierung** ermöglicht das ADAL-basierte (Active Directory Authentication Library) Anmelden für Microsoft Office-Clients.
 
 -   Die ADAL-basierte Authentifizierung ermöglicht Office-Clients die Einbindung in die browserbasierte Authentifizierung (auch als passive Authentifizierung bekannt). Ein Benutzer wird zur Authentifizierung zu einer Anmeldewebseite umgeleitet.
--   Diese neue Anmeldemethode bietet mehr Sicherheitsmerkmale wie z.B. die **mehrstufige Authentifizierung** und die **zertifikatbasierte Authentifizierung**. Weitere ausführliche Informationen finden Sie unter [Funktionsweise der modernen Authentifizierung](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517). Sie können Anspruchsregeln für Active Directory-Verbunddienste (AD FS) so einrichten, dass nicht moderne Authentifizierungsprotokolle blockiert werden. Detaillierte Anleitungen werden in Szenario 3 beschrieben: [Blockieren des gesamten Zugriffs auf Office 365 außer durch browserbasierte Anwendungen](https://technet.microsoft.com/library/dn592182.aspx).
+-   Diese neue Anmeldemethode bietet mehr Sicherheitsmerkmale wie z.B. die **mehrstufige Authentifizierung** und die **zertifikatbasierte Authentifizierung**. Weitere ausführliche Informationen finden Sie unter [Funktionsweise der modernen Authentifizierung](https://support.office.com/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517). Sie können Anspruchsregeln für Active Directory-Verbunddienste (AD FS) so einrichten, dass nicht moderne Authentifizierungsprotokolle blockiert werden. Detaillierte Anleitungen werden in Szenario 3 beschrieben: [Blockieren des gesamten Zugriffs auf Office 365 außer durch browserbasierte Anwendungen](https://technet.microsoft.com/library/dn592182.aspx).
 
 Sie können den Zugriff auf **Outlook Web Access (OWA)** auf Exchange Online schützen, wenn von einem Browser auf **iOS**- und **Android**-Geräten aus zugegriffen wird. Der Zugriff wird nur von unterstützten Browsern auf kompatiblen Geräten gewährt:
 
@@ -123,7 +123,7 @@ Sie können den bedingten Zugriff für PCs einrichten, auf denen Office-Desktopa
   >[!NOTE]
     >Bedingter Zugriff wird nicht auf PCs unterstützt, auf denen der Intune-Computerclient ausgeführt wird.
 
--   [Die moderne Authentifizierung von Office 365 muss aktiviert sein](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) und alle neuesten Office-Updates enthalten.
+-   [Die moderne Authentifizierung von Office 365 muss aktiviert sein](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) und alle neuesten Office-Updates enthalten.
 
     Die moderne Authentifizierung ermöglicht das ADAL-basierte (Active Directory Authentication Library) Anmelden für Office 2013/Windows-Clients. Diese neue Anmeldemethode bietet mehr Sicherheitsmerkmale wie z.B. die **mehrstufige Authentifizierung** und die **zertifikatbasierte Authentifizierung**.
 
@@ -192,7 +192,7 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
 >[!NOTE]
 > Sie können eine Richtlinie für bedingten Zugriff auch in der Azure AD-Verwaltungskonsole erstellen. In der Azure AD-Verwaltungskonsole können Sie zusätzlich zu anderen Richtlinien für bedingten Zugriff wie Richtlinien für die mehrstufige Authentifizierung auch Richtlinien für bedingten Zugriff für Intune-Geräte erstellen (die in Azure AD als **gerätebasierte bedingte Zugriffsrichtlinien** bezeichnet werden).
 
->Sie können auch Richtlinien für bedingten Zugriff für von Azure AD unterstützte Unternehmens-Apps von Drittanbietern festlegen, z. B. Salesforce und Box. Weitere Informationen finden Sie unter [Festlegen von gerätebasierten Azure Active Directory-Richtlinien für bedingten Zugriff zur Steuerung des Zugriffs auf über Azure Active Directory verbundene Anwendungen](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+>Sie können auch Richtlinien für bedingten Zugriff für von Azure AD unterstützte Unternehmens-Apps von Drittanbietern festlegen, z. B. Salesforce und Box. Weitere Informationen finden Sie unter [Festlegen von gerätebasierten Azure Active Directory-Richtlinien für bedingten Zugriff zur Steuerung des Zugriffs auf über Azure Active Directory verbundene Anwendungen](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Richtlinie** > **Bedingter Zugriff** > **Exchange Online-Richtlinie**.

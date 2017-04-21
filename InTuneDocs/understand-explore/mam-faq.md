@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7447a85e03e38aa0f536ce008bae9f3c82528cec
-ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: aea41c86e1fe784d6234f4ff90e299632b2a6d5f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ Dieser Artikel beantwortet einige häufig gestellte Fragen zur mobilen Anwendung
 
 **Was ist MAM?** Die [mobile Anwendungsverwaltung (Mobile Application Management, MAM) von Intune](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md) bezeichnet die Intune-Verwaltungsfunktionen, mit denen Sie mobile Apps für Ihre Benutzer veröffentlichen, per Push bereitstellen, konfigurieren, schützen, überwachen und aktualisieren.
 
-**Welche Vorteile bietet der App-Schutz von MAM?** MAM schützt die Daten einer Organisation innerhalb einer Anwendung. Mit MAM-WE kann eine Geschäfts-, Schul- oder Uni-App, die vertrauliche Daten enthält, auf nahezu jedem Gerät verwaltet werden, auch auf persönlichen Geräten in BYOD-Szenarien (Bring Your Own Device). Viele Produktivitäts-Apps, wie z.B. die Microsoft Office-Apps, können über Intune MAM verwaltet werden. Weitere Informationen finden Sie in der Liste [Intune-fähiger Apps](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps), die zur öffentlichen Verwendung verfügbar sind.
+**Welche Vorteile bietet der App-Schutz von MAM?** MAM schützt die Daten einer Organisation innerhalb einer Anwendung. Mit MAM-WE kann eine Geschäfts-, Schul- oder Uni-App, die vertrauliche Daten enthält, auf nahezu jedem Gerät verwaltet werden, auch auf persönlichen Geräten in BYOD-Szenarien (Bring Your Own Device). Viele Produktivitäts-Apps, wie z.B. die Microsoft Office-Apps, können über Intune MAM verwaltet werden. Weitere Informationen finden Sie in der Liste [Intune-fähiger Apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps), die zur öffentlichen Verwendung verfügbar sind.
 
 **Welche Gerätekonfigurationen unterstützt MAM?** Intune MAM unterstützt zwei Konfigurationen:
   1. **Intune MDM und MAM**: Dies ist die erste Konfiguration, die bei der ersten Einführung von MAM unterstützt wurde. IT-Administratoren können Apps mithilfe von MAM und App-Schutzrichtlinien nur auf Geräten verwalten, die bei der Intune-Verwaltung mobiler Geräte (Mobile Device Management, MDM) registriert sind. Um Apps über MDM und MAM zu verwalten, sollten Kunden die eigenständige Intune-Konsole verwenden: http://manage.microsoft.com.
@@ -48,7 +49,7 @@ Dieser Artikel beantwortet einige häufig gestellte Fragen zur mobilen Anwendung
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Apps, die mit App-Schutzrichtlinien verwaltet werden können
 
-**Welche Apps können mithilfe von App-Schutzrichtlinien verwaltet werden?** Jede App, die über das [Intune App SDK](../develop/intune-app-sdk.md) aktiviert oder vom [Intune App Wrapping Tool](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) gepackt wurde, kann mithilfe von Intune-App-Schutzrichtlinien verwaltet werden. Weitere Informationen finden Sie in der Liste [Intune-fähiger Apps](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps), die zur öffentlichen Verwendung verfügbar sind.
+**Welche Apps können mithilfe von App-Schutzrichtlinien verwaltet werden?** Jede App, die über das [Intune App SDK](../develop/intune-app-sdk.md) aktiviert oder vom [Intune App Wrapping Tool](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) gepackt wurde, kann mithilfe von Intune-App-Schutzrichtlinien verwaltet werden. Weitere Informationen finden Sie in der Liste [Intune-fähiger Apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps), die zur öffentlichen Verwendung verfügbar sind.
 
 **Welche grundlegenden Anforderungen bestehen für die Verwendung von App-Schutzrichtlinien in einer Intune-fähigen App?**
   1. Der Endbenutzer muss über ein Azure Active Directory-Konto (AAD) verfügen. Informationen dazu, wie Sie Intune-Benutzer in Azure Active Directory erstellen, finden Sie unter [Hinzufügen von Benutzern und Gewähren von Administratorrechten für Intune](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md).
@@ -59,18 +60,18 @@ Dieser Artikel beantwortet einige häufig gestellte Fragen zur mobilen Anwendung
 
   4. Der Endbenutzer muss sich mit seinem AAD-Konto bei der App anmelden.
 
-**Welche zusätzlichen Anforderungen gelten für die Verwendung der [mobilen Outlook-App](https://www.microsoft.com/en-us/outlook-com/mobile/)?**
+**Welche zusätzlichen Anforderungen gelten für die Verwendung der [mobilen Outlook-App](https://www.microsoft.com/outlook-com/mobile/)?**
 
   1. Die mobile Outlook-App muss auf dem Gerät des Endbenutzers installiert sein.
 
-  2. Das [Office 365 Exchange Online](https://products.office.com/en-us/exchange/exchange-online)-Postfach und die zugehörige Lizenz des Endbenutzers müssen mit dem AAD-Konto des Endbenutzers verknüpft sein.
+  2. Das [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online)-Postfach und die zugehörige Lizenz des Endbenutzers müssen mit dem AAD-Konto des Endbenutzers verknüpft sein.
 
   >[!NOTE]
   > Die mobile Outlook-App unterstützt derzeit nur Microsoft Exchange Online, nicht jedoch lokales Exchange oder Exchange in Office 365 dediziert.
 
 **Welche zusätzlichen Anforderungen gelten für die Verwendung der [Word-, Excel- und PowerPoint](https://products.office.com/business/office)-Apps?**
 
-  1. Mit dem AAD-Konto des Endbenutzers muss eine Lizenz für [Office 365 Business oder Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) verknüpft sein. Das Abonnement muss die Office-Apps auf mobilen Geräten und ein Cloudspeicherkonto mit [OneDrive for Business](https://onedrive.live.com/about/business/) umfassen. Office 365-Lizenzen können im [Office-Portal](http://portal.office.com) zugewiesen werden. Befolgen Sie diese [Anweisungen](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US).
+  1. Mit dem AAD-Konto des Endbenutzers muss eine Lizenz für [Office 365 Business oder Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) verknüpft sein. Das Abonnement muss die Office-Apps auf mobilen Geräten und ein Cloudspeicherkonto mit [OneDrive for Business](https://onedrive.live.com/about/business/) umfassen. Office 365-Lizenzen können im [Office-Portal](http://portal.office.com) zugewiesen werden. Befolgen Sie diese [Anweisungen](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
   2. Auf dem Endbenutzergerät muss die [OneDrive](https://onedrive.live.com/about/)-App installiert und der Endbenutzer muss mit seinem AAD-Konto angemeldet sein.
 
@@ -79,7 +80,7 @@ Dieser Artikel beantwortet einige häufig gestellte Fragen zur mobilen Anwendung
   >[!NOTE]
   > Die mobilen Office-Apps unterstützen zurzeit nur SharePoint Online, nicht jedoch SharePoint lokal.
 
-**Warum ist OneDrive für Office erforderlich?** Intune kennzeichnet alle Daten in der App entweder als „unternehmenseigen“ oder „persönlich“. Daten werden als „unternehmenseigen“ betrachtet, wenn sie aus einem Speicherort des Unternehmens stammen. Bei den Office-Apps betrachtet Intune Folgendes als Unternehmensspeicher: E-Mail-Speicher (Exchange) oder Cloudspeicher (OneDrive-App mit einem OneDrive for Business-Konto).
+**Warum ist OneDrive für Office erforderlich?** Intune kennzeichnet alle Daten in der App entweder als „unternehmenseigen“ oder „persönlich“. Daten werden als „unternehmenseigen“ betrachtet, wenn sie von einem Speicherort des Unternehmens stammen. Bei den Office-Apps betrachtet Intune Folgendes als Unternehmensspeicher: E-Mail-Speicher (Exchange) oder Cloudspeicher (OneDrive-App mit einem OneDrive for Business-Konto).
 
 **Welche zusätzlichen Anforderungen gelten für die Verwendung von Skype for Business?** Informationen hierzu finden Sie in den Lizenzanforderungen für [Skype for Business](https://products.office.com/skype-for-business/it-pros).
   >[!NOTE]
@@ -107,7 +108,7 @@ Dieser Artikel beantwortet einige häufig gestellte Fragen zur mobilen Anwendung
 
   1. **Wie verschlüsselt Intune Daten?** Ausführliche Informationen zur Verschlüsselungseinstellung im Rahmen von App-Schutzrichtlinien finden Sie unter [Android-Verwaltungsrichtlinieneinstellungen für mobile Apps in Microsoft Intune](../deploy-use/android-mam-policy-settings.md) und [iOS-Richtlinieneinstellungen für die Verwaltung mobiler Apps](../deploy-use/ios-mam-policy-settings.md).
 
-  2. **Was wird verschlüsselt?** Nur Daten, die als „unternehmenseigen“ markiert sind, werden gemäß der vom IT-Administrator eingerichteten App-Schutzrichtlinie verschlüsselt. Daten werden als „unternehmenseigen“ betrachtet, wenn sie aus einem Speicherort des Unternehmens stammen. Bei den Office-Apps betrachtet Intune Folgendes als Unternehmensspeicher: E-Mail-Speicher (Exchange) oder Cloudspeicher (OneDrive-App mit einem OneDrive for Business-Konto). Bei Branchen-Apps, die mithilfe des Intune App Wrapping Tools aktiviert wurden, werden alle App-Daten als „unternehmenseigen“ betrachtet.
+  2. **Was wird verschlüsselt?** Nur Daten, die als „unternehmenseigen“ markiert sind, werden gemäß der vom IT-Administrator eingerichteten App-Schutzrichtlinie verschlüsselt. Daten werden als „unternehmenseigen“ betrachtet, wenn sie von einem Speicherort des Unternehmens stammen. Bei den Office-Apps betrachtet Intune Folgendes als Unternehmensspeicher: E-Mail-Speicher (Exchange) oder Cloudspeicher (OneDrive-App mit einem OneDrive for Business-Konto). Bei Branchen-Apps, die mithilfe des Intune App Wrapping Tools aktiviert wurden, werden alle App-Daten als „unternehmenseigen“ betrachtet.
 
 **Wie setzt Intune Daten remote zurück?** Intune kann App-Daten auf drei Arten zurücksetzen: vollständiges Zurücksetzen des Geräts, selektives Zurücksetzen für MDM und selektives Zurücksetzen für MAM. Weitere Informationen zur Remotezurücksetzung für MDM finden Sie unter [Schützen von Daten durch vollständiges oder selektives Zurücksetzen mit Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Weitere Informationen zum selektiven Zurücksetzen unter Verwendung von MAM finden Sie unter [Zurücksetzen von verwalteten Unternehmensanwendungsdaten mit Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
@@ -140,9 +141,4 @@ Dieser Artikel beantwortet einige häufig gestellte Fragen zur mobilen Anwendung
 - [Überprüfen des Setups für die Verwaltung Ihrer mobilen Anwendungen](../deploy-use/validate-mobile-application-management.md)
 - [Vorbereiten der Konfiguration von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [Anfordern von Support für Microsoft Intune](../troubleshoot/how-to-get-support-for-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
