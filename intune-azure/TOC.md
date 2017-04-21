@@ -43,6 +43,7 @@
 ### [Geräteregistrierungs-Manager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Registrieren von macOS-Geräten](enroll-devices/enroll-macos-devices.md)
 ### [Registrieren von Windows-Geräten](enroll-devices/enroll-windows-devices.md)
+### [Massenregistrieren von Windows-Geräten](enroll-devices/bulk-enroll-windows.md)
 ### Verwalten der Geräteregistrierung
 #### [Festlegen von Nutzungsbedingungen](enroll-devices/create-terms-and-conditions.md)
 #### [Festlegen von Registrierungseinschränkungen](enroll-devices/set-enrollment-restrictions.md)
@@ -57,6 +58,7 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## Vorgehensweise:
 ### [Verwenden des vollständigen oder selektiven Zurücksetzens](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
+### [Remotesteuerung von Android-Geräten](manage-devices/control-android-devices-with-teamviewer.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
 # Verwalten von Benutzern
@@ -75,7 +77,9 @@
 ## Verwalten von Apps
 ### [Hinzufügen von Apps](manage-apps/add-apps.md)
 #### [Android Store-Apps](manage-apps/android-store-app.md)
+#### [Android-Branchen-Apps](manage-apps/android-lob-app.md)
 #### [iOS Store-Apps](manage-apps/ios-store-app.md)
+#### [iOS-Branchen-Apps](manage-apps/ios-lob-app.md)
 #### [Web-Apps](manage-apps/web-app.md)
 #### [Windows Phone 8.1 Store-Apps](manage-apps/windows-phone-8-1-store-app.md)
 #### [Windows Store-Apps](manage-apps/windows-store-app.md)
@@ -109,8 +113,12 @@
 ### [Konfigurieren von Geräteprofilen](configure-devices/how-to-create-device-profiles.md)
 
 ### [Konfigurieren von Gerätefeatures](configure-devices/how-to-configure-device-features.md)
-#### [iOS](configure-devices/device-features-for-ios.md)
-#### [macOS](configure-devices/device-features-for-macos.md)
+#### [AirPrint für iOS und macOS](configure-devices/air-print-settings-for-ios-and-macos.md)
+#### [AirPlay für iOS](configure-devices/airplay-settings-for-ios-devices.md)
+#### [Layout der Startseite für iOS](configure-devices/home-screen-settings-for-ios.md)
+#### [App-Benachrichtigungen für iOS](configure-devices/app-notification-settings-for-ios.md)
+#### [Gemeinsam genutzte Geräte für iOS](configure-devices/shared-device-settings-for-ios.md)
+#### [Webinhaltsfilter für iOS](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [Konfigurieren von Geräteeinschränkungen](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
@@ -120,6 +128,7 @@
 #### [Windows Phone 8.1](configure-devices/device-restrictions-for-windows-phone-8-1.md)
 #### [Windows 10](configure-devices/device-restrictions-for-windows-10.md)
 #### [Windows 10 Team](configure-devices/device-restrictions-for-windows-10-team.md)
+#### [Android for Work](configure-devices/device-restrictions-for-afw.md)
 
 ### [Konfigurieren von E-Mail-Einstellungen](configure-devices/how-to-configure-email-settings.md)
 #### [Android](configure-devices/email-profile-settings-for-android.md)
@@ -142,6 +151,7 @@
 #### [Windows 8.1 & Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
 
 ### [Konfigurieren der Einstellungen des Windows 10-Editionsupgrades](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
+### [Konfigurieren von Einstellungen für Windows 10 Education](configure-devices/how-to-configure-education-settings.md)
 ### [Konfigurieren von Einstellungen für Windows Update for Business](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Konfigurieren von Zertifikaten](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
@@ -159,6 +169,7 @@
 #### [macOS](configure-devices/custom-for-macos.md)
 #### [Windows Phone 8.1](configure-devices/custom-for-windows-phone-8-1.md)
 #### [Windows 10](configure-devices/custom-for-windows-10.md)
+#### [Android for Work](configure-devices/custom-android-for-work.md)
 
 ### [Zuweisen von Geräteprofilen](configure-devices/how-to-assign-device-profiles.md)
 ### [Überwachen von Geräteprofilen](configure-devices/how-to-monitor-device-profiles.md)
