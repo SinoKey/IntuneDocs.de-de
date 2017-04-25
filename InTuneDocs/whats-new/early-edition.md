@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/05/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f051d8366ba9c6ca2183b5661c64087eb4cce9f0
-ms.openlocfilehash: 682545af10a7dc1f66158f95f871b889e9f85c4a
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
+ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -49,9 +49,9 @@ Microsoft MyApps verfügen jetzt über eine bessere Unterstützung innerhalb von
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Neue Symbole für Managed Browser und das Unternehmensportal <!--918433, 918431-->
 
-Managed Browser erhält aktualisierte Symbole für die Android- und iOS-Versionen der App. Das neue Symbol enthält den aktualisierten Intune-Badge, damit es konsistenter mit anderen Apps in Enterprise Mobility + Security (EM+S) wird.
+Managed Browser erhält aktualisierte Symbole für die Android- und iOS-Versionen der App. Das neue Symbol enthält den aktualisierten Intune-Badge, damit es konsistenter mit anderen Apps in Enterprise Mobility + Security (EM+S) wird. Sie können das neue Symbol für Managed Browser auf der Seite [Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune](whats-new-in-intune-app-ui.md) finden.
 
-Das Unternehmensportal erhält auch aktualisierte Symbole für die Android-, iOS- und Windows-Versionen der App, um Konsistenz mit anderen Apps in EM+S zu verbessern. Diese Symbole werden schrittweise auf Plattformen von April bis Ende Mai veröffentlicht.
+Das Unternehmensportal erhält auch aktualisierte Symbole für die Android-, iOS- und Windows-Versionen der App, um die Konsistenz mit anderen Apps in EM+S zu verbessern. Diese Symbole werden schrittweise auf Plattformen von April bis Ende Mai veröffentlicht.
 
 ### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Unterstützung für einmaliges Anmelden über das Unternehmensportal für iOS zu Outlook für iOS <!--834012-->
 
@@ -59,7 +59,7 @@ Benutzer müssen sich nicht mehr in der Outlook-App anmelden, wenn sie in der Un
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Statusanzeige zur Anmeldung im Android-Unternehmensportal <!--953374-->
 
-Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der Anmeldung an, wenn der Benutzer die App startet oder fortsetzt. Der Indikator durchläuft neue Status, beginnend mit „Verbinden...“, „Anmelden...“, dann „Checking for security requirements...“ (Suche nach Sicherheitsanforderungen...), bevor dem Benutzer erlaubt wird, auf die App zuzugreifen.
+Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der Anmeldung an, wenn der Benutzer die App startet oder fortsetzt. Der Indikator durchläuft neue Status, beginnend mit „Verbinden...“, „Anmelden...“, dann „Checking for security requirements...“ (Suche nach Sicherheitsanforderungen...), bevor dem Benutzer erlaubt wird, auf die App zuzugreifen. Sie können die neuen Bildschirme für die Unternehmensportal-App auf der Seite [Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune](whats-new-in-intune-app-ui.md) finden. 
 
 
 ## <a name="notices"></a>Benachrichtigungen
@@ -175,11 +175,6 @@ Sie können per Volumenlizenz erworbene iOS-Apps (VPP-Apps) Endbenutzern als **V
 ### <a name="synchronize-ebooks-from-apple-vpp-store----800878---"></a>Synchronisieren von eBooks vom Apple-VPP-Store <!-- 800878 -->
 
 Sie können Bücher, die Sie aus dem Apple-VPP-Store mit Intune gekauft haben, synchronisieren und Benutzern zuweisen.
-
-### <a name="shared-shift-worker-devices-for-samsung-knox-standard-devices----773753---"></a>Gemeinsam genutzte Geräte für Schichtarbeiter für Samsung KNOS Standard-Geräte <!-- 773753 -->
-
-Sie können ein Samsung KNOX Standard-Gerät als freigegebenes Schichtarbeitergerät im Intune-Portal verwenden. Sobald sich das Gerät im freigegebenen Modus befindet, werden die Apps, Richtlinien und die E-Mails auf diesem Gerät an die Identität des Benutzers gebunden, der sich im Unternehmensportal anmeldet.
-Benutzer können sich in der Unternehmensportal-App mithilfe ihrer Azure Active Directory-Anmeldeinformationen anmelden, und die Apps, Richtlinien und E-Mail-Einstellungen werden automatisch auf das Gerät angewendet.
 
 ### <a name="multi-user-management-for-samsung-knox-standard-devices----971988---"></a>Mehrbenutzerverwaltung für Samsung KNOW Standard-Geräte <!-- 971988 -->
 
