@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -81,9 +81,7 @@ Die neue Rolle wird in der Liste auf dem Blatt **Rollen** angezeigt.
 ## <a name="how-to-assign-a-role"></a>Zuweisen einer Rolle
 
 1. Wählen Sie auf dem Blatt **Rollen** in der Workload **Zugriffssteuerung** die gewünschte integrierte oder benutzerdefinierte Rolle aus, die Sie zuweisen möchten.
-2. Wählen Sie auf dem Blatt <*Rollenname*> – **Eigenschaften** die Option **Verwalten** > **Zuweisungen** aus.
-    >[!TIP]
-    >Sie können auf diesem Blatt auch vorhandene Rollen bearbeiten oder löschen.
+2. Wählen Sie auf dem Blatt <*Rollenname*> – **Eigenschaften** die Option **Verwalten** > **Zuweisungen** aus. Sie können auf diesem Blatt auch vorhandene Rollen bearbeiten oder löschen.
 3. Wählen Sie auf dem nächsten Blatt **Zuweisen** aus.
 4. Geben Sie auf dem Blatt **Rollenzuweisungen** einen **Namen** und eine optionale **Beschreibung** für die Zuweisung ein, und wählen Sie dann Folgendes aus:
     - **Mitglieder:** Wählen Sie eine Gruppe aus, die den Benutzer enthält, dem Sie die Berechtigungen erteilen möchten.
