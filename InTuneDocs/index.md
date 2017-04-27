@@ -9,9 +9,9 @@ ms.topic: hub-page
 title: Microsoft Intune-Dokumentation | Microsoft-Dokumentation
 description: Informationen zur Verwendung von Microsoft Intune.
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 1f8b03315c6026a60ef25b1ee6946d4186c82b08
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
+ms.openlocfilehash: af6af39a041582bd93bac6aad551881be4cf0291
+ms.lasthandoff: 04/24/2017
 
 ---
 <div id="main" class="v2">
@@ -451,7 +451,7 @@ ms.lasthandoff: 04/14/2017
                     <a href="#manage-plan">Planen der Bereitstellung</a>
                     <ul id="manage-plan" class="cardsC">
                         <li>
-                            <a href="/intune/plan-design/section-1-determine-deployment-goals-objectives-challenges">
+                            <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -461,8 +461,8 @@ ms.lasthandoff: 04/14/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Bestimmen von Zielen und Herausforderungen</h3>
-                                            <p>Ermitteln Sie die Ziele und Herausforderungen, die Sie bei der Bereitstellung berücksichtigen müssen.</p>
+                                            <h3>Unterstützte Geräte und Browser</h3>
+                                            <p>Lesen Sie Informationen zu den vom Dienst unterstützten Geräten und Browsern.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -476,12 +476,12 @@ ms.lasthandoff: 04/14/2017
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-deployments-identify.svg" alt="" />
+                                                <img src="/media/hubs/intune/intune-deployments-plan.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Bestimmen von Anwendungsfallszenarien</h3>
-                                            <p>Lesen Sie einige beispielhafte Anwendungsfälle, während Sie die Anwendungsfallszenarien für Ihre Bereitstellung ermitteln. </p>
+                                            <h3>Leitfaden für Bereitstellungsplanung, Design und Implementierung</h3>
+                                            <p>Entwickeln Sie einen Bereitstellungsplan, erstellen Sie ein Design, integrieren Sie Intune, und führen Sie ein Produktionsrollout aus.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -489,18 +489,18 @@ ms.lasthandoff: 04/14/2017
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/plan-design/section-4-develop-a-rollout-plan">
+                            <a href="/intune/plan-design/intune-mdm-migration-guide">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-deployments-plan.svg" alt="" />
+                                                <img src="/media/hubs/intune/intune-deployments-identify.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Entwickeln eines Rolloutplans</h3>
-                                            <p>Ermitteln Sie die Organisationsgruppen, die für Ihr Intune-Rollout vorgesehen sind, und legen Sie den Zeitplan des Rollouts für jede Gruppe fest.</p>
+                                            <h3>Migrationshandbuch</h3>
+                                            <p>Hier finden Sie detaillierte Informationen zu den verschiedenen Aspekten bei der Migration von einem MDM-Drittanbieter zu Intune.</p>
                                         </div>
                                     </div>
                                 </div>

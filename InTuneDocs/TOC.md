@@ -12,7 +12,7 @@
 
 # [Erste Schritte](get-started/get-started.md)
 ## [Einrichten von Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Voraussetzungen]
+### Voraussetzungen
 #### [Unterstützte Geräte](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Netzwerkauslastung](get-started/network-bandwidth-use.md)
 ### [Anmelden bei Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -189,10 +189,13 @@
 
 ### [Schützen von App-Daten mit MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure-Portal für App-Schutzrichtlinien](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Vorbereitungen zum Konfigurieren von App-Schutzrichtlinien](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Erstellen und Bereitstellen von App-Schutzrichtlinien](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Vorbereitungen zum Konfigurieren von App-Schutzrichtlinien für iOS und Android](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Vorbereitungen zum Konfigurieren von App-Schutzrichtlinien für Windows 10](deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 #### [App-Schutzrichtlinien für Android](deploy-use/android-mam-policy-settings.md)
 #### [App-Schutzrichtlinien für iOS](deploy-use/ios-mam-policy-settings.md)
+#### [App-Schutzrichtlinien für Windows](deploy-use/create-windows-information-protection-policy-with-intune.md)
+#### [Erstellen und Bereitstellen von App-Schutzrichtlinien für iOS und Android](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien für Windows 10](deploy-use/create-windows-information-protection-policy-with-intune.md)
 #### [Überprüfen von App-Schutzrichtlinien](deploy-use/validate-mobile-application-management.md)
 #### [Überwachen der Konformität der App-Schutzrichtlinien](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
