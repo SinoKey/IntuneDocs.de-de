@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -36,8 +37,6 @@ Wenn Sie Benutzern den Zugriff auf Unternehmensressourcen über VPN, WLAN oder E
  -  Android for Work
  -  Windows 8.1 und höher
  -  Windows Phone 8.1 und höher
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 3. Erstellen Sie Zertifikatprofile, damit Geräte ein Zertifikat für die Authentifizierung des VPN-, WLAN- und E-Mail-Zugriffs anfordern, wie unter [Konfigurieren von Intune-Zertifikatprofilen](configure-intune-certificate-profiles.md) beschrieben. Sie können ein **PKCS #12-Zertifikatprofil (.PFX)** *oder* ein **SCEP-Zertifikatprofil** für Geräte auf diesen Plattformen erstellen und bereitstellen:
 
@@ -62,9 +61,4 @@ Sie müssen für jede Plattform ein eigenes Profil erstellen. Nachdem Sie das Pr
 - [Konfigurieren der Zertifikatinfrastruktur für SCEP](configure-certificate-infrastructure-for-scep.md)
 - [Konfigurieren der Zertifikatinfrastruktur für PFX](configure-certificate-infrastructure-for-pfx.md)
 - [Konfigurieren von Intune-Zertifikatprofilen](configure-intune-certificate-profiles.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
