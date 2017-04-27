@@ -78,8 +78,6 @@ Sie können den Zugriff auf Exchange Online-E-Mails über **Outlook** und andere
 - Android 4.0 und höher, Samsung KNOX Standard 4.0 und höher sowie Android for Work
 - iOS 8.0 und höher
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 Die **moderne Authentifizierung** ermöglicht das ADAL-basierte (Active Directory Authentication Library) Anmelden für Microsoft Office-Clients.
 
 -   Die ADAL-basierte Authentifizierung ermöglicht Office-Clients die Einbindung in die browserbasierte Authentifizierung (auch als passive Authentifizierung bekannt). Ein Benutzer wird zur Authentifizierung zu einer Anmeldewebseite umgeleitet.

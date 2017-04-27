@@ -58,8 +58,6 @@ Sie müssen ein vertrauenswürdiges Zertifikatprofil erstellen, bevor Sie ein Si
 
 -  Windows Phone 8.1 und höher
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 2.  Fügen Sie eine Richtlinie für ein **vertrauenswürdiges Zertifikatprofil** hinzu.
 
     Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).

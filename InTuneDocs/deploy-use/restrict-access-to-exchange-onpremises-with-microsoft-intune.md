@@ -83,10 +83,7 @@ Die folgenden Betriebssysteme werden unterstützt:
 -   Exchange ActiveSync-E-Mail-Clients wie Gmail unter Android 4 oder höher.
 -   Exchange ActiveSync-E-Mail-Clients für **Android for Work-Geräte:** Nur **Gmail**- und **Nine Work**-Apps im **Arbeitsprofil** werden auf Android for Work-Geräten unterstützt. Damit der bedingte Zugriff unter Android for Work funktioniert, müssen Sie ein E-Mail-Profil für die Gmail- oder Nine Work-App sowie diese Apps als erforderliche Installation bereitstellen. 
 
-<!---
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
---->
-> [!NOTE] 
+> [!NOTE]
 > Die Microsoft Outlook-App unter Android und iOS wird nicht unterstützt.
 
 ## <a name="support-for-pcs"></a>Unterstützung für PCs

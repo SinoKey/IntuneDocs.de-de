@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: f153e3a58f9655bd1e36094f292098c9f55742b6
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -41,7 +42,6 @@ Weitere Informationen finden Sie unter [Beschränken des Zugriffs auf E-Mail- un
 - **Ressourcenzugriffsrichtlinien:** Diese Richtlinien ermöglichen Benutzern den Zugriff auf die Dateien und Ressourcen, die sie für ihre Arbeit benötigen, und zwar unabhängig davon, wo sie sich befinden.
 Weitere Informationen finden Sie unter [Aktivieren des Zugriffs auf Unternehmensressourcen mit Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Eine vollständige Liste der Intune-Richtlinien finden Sie unter [Referenz zu Microsoft Intune-Richtlinien](microsoft-intune-policy-reference.md).
 
@@ -212,9 +212,4 @@ Wenn Sie eine Richtlinie löschen oder ein Gerät aus einer Gruppe entfernen, f�
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>Wo finde ich Hilfe zur Problembehandlung bei Richtlinien?
 
 Siehe [Behandlung von Problemen mit Richtlinien in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
