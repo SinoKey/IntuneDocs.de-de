@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -57,7 +57,7 @@ App-Schutzrichtlinien werden im Azure-Portal erstellt. Wenn Sie das Azure-Portal
 
 Gehen Sie folgendermaßen vor, um App-Schutzrichtlinien zu erstellen:
 
-1. Navigieren Sie zum [Azure-Portal](http://portal.azure.com), und geben Sie Ihre-Anmeldeinformationen ein.
+1. Navigieren Sie zum [Azure-Portal](https://portal.azure.com), und geben Sie Ihre-Anmeldeinformationen ein.
 
 2. Wählen Sie **Weitere Dienste** aus, und geben Sie „Intune“ ein.
 
@@ -109,7 +109,7 @@ Wenn Sie mit dem Erstellen einer Richtlinie wie im vorherigen Verfahren beschrie
 
 Ab der Intune-Version 1703 haben Sie die Möglichkeit, LOB-Apps allgemein in Intune hinzuzufügen, wenn Sie eine neue App-Schutzrichtlinie erstellen. Dadurch erhalten Sie die Option, App-Schutzrichtlinien für LOB-Apps mithilfe des MAM SDK zu definieren, ohne dass Sie vollständige Berechtigungen für die App-Bereitstellung benötigen.
 
-> [!TIP] 
+> [!TIP]
 > Sie können LOB-Apps in Intune hinzufügen, wenn Sie den [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started)-Workflow durchlaufen.
 
 > [!IMPORTANT]
@@ -127,13 +127,13 @@ Ab der Intune-Version 1703 haben Sie die Möglichkeit, LOB-Apps allgemein in Int
 
 ### <a name="to-add-lob-apps-windows"></a>So fügen Sie branchenspezifische Apps hinzu (Windows)
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Sie müssen Windows 10 aus der Dropdown-Liste der Plattform auswählen, wenn Sie eine neue App-Schutzrichtlinie erstellen.
 
 1.  Wählen Sie auf dem Blatt „Richtlinie hinzufügen“ **Zulässige Apps** oder **Ausgenommene Apps** aus, um das Blatt „Allowed or Exempt apps“ (Zulässige oder ausgenommene Apps) zu öffnen.
 
     > [!NOTE]
-    > 
+    >
     - **Zulässige Apps**: Dies sind die Apps, die mit dieser Richtlinie übereinstimmen müssen.
     - **Ausgeschlossene Apps**: Diese Apps sind von dieser Richtlinie ausgeschlossen und können ohne Einschränkungen auf Unternehmensdaten zugreifen.
 <br></br>

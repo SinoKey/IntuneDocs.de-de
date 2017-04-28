@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 39dab717810aa5f900cbb4f4371491b05de1ecd1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -89,7 +89,7 @@ Wenn Sie die Richtlinienwerte für die Einstellungen **Endpoint Protection insta
 |**Datei- und Programmaktivität auf Computern überwachen**|Hiermit wird die Überwachung eingehender und ausgehender Dateien sowie von Programmaktivitäten auf Computern aktiviert. Mit dieser Einstellung kann Endpoint Protection überwachen, wann die Ausführung von Dateien und Programmen beginnt, und Sie werden über alle Aktionen informiert, die von bzw. an ihnen durchgeführt werden.<br /><br />Empfohlener Wert: **Ja**|
 |**Überwachte Dateien**|Ermöglicht Ihnen anzugeben, ob nur eingehende, nur ausgehende oder alle Dateien überwacht werden.<br /><br />Empfohlener Wert: **Alle Dateien überwachen**|
 |**Aktivieren der Verhaltensüberwachung**|Mit dieser Richtlinieneinstellung kann Microsoft Intune Endpoint Protection Clientcomputer auf bestimmte verdächtige Aktivitätsmuster prüfen.<br /><br />Empfohlener Wert: **Ja**|
-|**Netzwerkinspektionssystem aktivieren**|Hiermit wird das Netzwerkinspektionssystem (NIS) auf Clientcomputern aktiviert. Im NIS werden Signaturen bekannter Sicherheitsrisiken aus dem [Microsoft Malware Protection Center (Microsoft Center zum Schutz vor Malware)](http://go.microsoft.com/fwlink/?LinkId=234249) verwendet, um schädlichen Netzwerkdatenverkehr zu erkennen und zu blockieren.<br /><br />Empfohlener Wert: **Ja**|
+|**Netzwerkinspektionssystem aktivieren**|Hiermit wird das Netzwerkinspektionssystem (NIS) auf Clientcomputern aktiviert. Im NIS werden Signaturen bekannter Sicherheitsrisiken aus dem [Microsoft Malware Protection Center (Microsoft Center zum Schutz vor Malware)](https://go.microsoft.com/fwlink/?LinkId=234249) verwendet, um schädlichen Netzwerkdatenverkehr zu erkennen und zu blockieren.<br /><br />Empfohlener Wert: **Ja**|
 
   ![Echtzeiteinstellungen für Endpoint Protection](./media/pol-sa-pc-policy-realtime.png)
 

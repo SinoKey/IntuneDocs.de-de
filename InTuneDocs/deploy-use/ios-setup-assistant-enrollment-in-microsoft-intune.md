@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 2a1a9bb4e49e997a6f152cadcf0c7a75b553cb42
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 5c57a069fc9d2ca561954f50cbefa21b13a563d1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -58,7 +58,7 @@ Wenn Ihr Unternehmen mobile Gerätegruppen zur Verwaltung von Geräten erfordert
 
 Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Gruppe von Geräten.
 
-1. Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) zu **Richtlinie** &gt; **Unternehmensgeräteregistrierung**, und wählen Sie anschließend **Hinzufügen** aus.
+1. Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) zu **Richtlinie** &gt; **Unternehmensgeräteregistrierung**, und wählen Sie anschließend **Hinzufügen** aus.
 
   ![Erstellen eines Geräteregistrierungsprofils](../media/pol-sa-corp-enroll.png)
 
@@ -85,7 +85,7 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Grup
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>Mit dem Setup-Assistenten zu registrierende Geräte hinzufügen
 
-1. Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) zu **Gruppen** &gt; **Alle Geräte** &gt; **Alle unternehmenseigenen Geräte** &gt; **Alle Geräte**, und wählen Sie dann **Geräte hinzufügen** aus.
+1. Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) zu **Gruppen** &gt; **Alle Geräte** &gt; **Alle unternehmenseigenen Geräte** &gt; **Alle Geräte**, und wählen Sie dann **Geräte hinzufügen** aus.
 
    Sie können Geräte auf zwei Arten hinzufügen:
 
@@ -128,7 +128,7 @@ Geben Sie das Profil an, das hinzugefügten Geräten aus der Liste der verfügba
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>Exportieren eines Profils zum Bereitstellen auf iOS-Geräten
 
-1. Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) zu **Richtlinie** &gt; **Unternehmensgeräteregistrierung**, und wählen Sie das Geräteprofil aus, das auf mobilen Geräten bereitgestellt werden soll.
+1. Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) zu **Richtlinie** &gt; **Unternehmensgeräteregistrierung**, und wählen Sie das Geräteprofil aus, das auf mobilen Geräten bereitgestellt werden soll.
 
 2. Wählen Sie in der Taskleiste **Exportieren** aus. Kopieren und speichern Sie die **Profil-URL**. Sie werden sie später in Apple Configurator hochladen, um das von iOS-Geräten verwendete Intune-Profil zu definieren.
 

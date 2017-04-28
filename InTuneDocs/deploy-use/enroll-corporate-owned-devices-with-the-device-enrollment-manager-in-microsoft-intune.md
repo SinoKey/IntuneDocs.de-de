@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
-ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
-ms.lasthandoff: 03/24/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ea57a51f2855dea416ad4a76e657e1846ffe41f1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -69,9 +69,9 @@ Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurd
 
 ## <a name="add-a-device-enrollment-manager"></a>Hinzufügen eines Geräteregistrierungs-Managers
 
-1.  Stellen Sie sicher, dass der Benutzer, den Sie bereits auf dem DEM-Konto hinzufügen möchten, vorhanden ist. Wenn Sie den Benutzer hinzufügen möchten, melden Sie sich beim [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) an, und führen Sie die Schritte auf der Seite [Hinzufügen von einzelnen Benutzern oder Massenhinzufügen von Benutzern zu Office 365 – Administratorhilfe](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) aus.
+1.  Stellen Sie sicher, dass der Benutzer, den Sie bereits auf dem DEM-Konto hinzufügen möchten, vorhanden ist. Wenn Sie den Benutzer hinzufügen möchten, melden Sie sich beim [Office 365-Portal](https://go.microsoft.com/fwlink/p/?LinkId=698854) an, und führen Sie die Schritte auf der Seite [Hinzufügen von einzelnen Benutzern oder Massenhinzufügen von Benutzern zu Office 365 – Administratorhilfe](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) aus.
 
-2.  Melden Sie sich bei der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) mit Ihren Administratoranmeldedaten an.
+2.  Melden Sie sich bei der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) mit Ihren Administratoranmeldedaten an.
 
 3.  Wählen Sie im Navigationsbereich **Admin** aus, gehen Sie zur **Administratorverwaltung**, und wählen Sie **Geräteregistrierungs-Manager** aus. Die Seite **Geräteregistrierungs-Manager** wird geöffnet.
 
@@ -88,7 +88,7 @@ Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurd
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Löschen eines Geräteregistrierungs-Managers aus Intune
 
-1.  Melden Sie sich beim [Microsoft Intune-Verwaltungsportal](http://manage.microsoft.com) mit Ihren Administratoranmeldedaten an.
+1.  Melden Sie sich beim [Microsoft Intune-Verwaltungsportal](https://manage.microsoft.com) mit Ihren Administratoranmeldedaten an.
 
 2.  Wählen Sie im Navigationsbereich **Admin** aus, gehen Sie zur **Administratorverwaltung**, und wählen Sie **Geräteregistrierungs-Manager** aus. Die Seite **Geräteregistrierungs-Manager** wird geöffnet.
 

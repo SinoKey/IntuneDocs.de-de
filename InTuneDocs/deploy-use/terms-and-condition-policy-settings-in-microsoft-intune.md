@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 177485a0b09a2b0213a293914799a34a3bfa1136
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Sie können mehrere Richtlinien erstellen und bereitstellen, die verschiedene Nu
 
 ## <a name="create-a-terms-and-conditions-policy"></a>Erstellen einer Nutzungsbedingungsrichtlinie
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
 
     ![Screenshot für Nutzungsbedingungsrichtlinien](./media/pol-sa-terms-conditions.png)
 
@@ -54,7 +54,7 @@ Sie können mehrere Richtlinien erstellen und bereitstellen, die verschiedene Nu
 
 ## <a name="deploy-a-terms-and-conditions-policy"></a>Bereitstellen einer Nutzungsbedingungsrichtlinie
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
 
 2.  Wählen Sie in der Liste der **Nutzungsbedingungsrichtlinien** die bereitzustellende Richtlinie aus, und klicken Sie dann auf **Bereitstellung verwalten**.
 
@@ -64,7 +64,7 @@ Sie können mehrere Richtlinien erstellen und bereitstellen, die verschiedene Nu
 
 ## <a name="monitor-a-terms-and-conditions-policy"></a>Überwachen einer Nutzungsbedingungsrichtlinie
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
 
 2.  Klicken Sie im Fenster **Neuen Bericht erstellen** auf **Bericht anzeigen**. Der Bericht wird mit ausführlichen Informationen geöffnet, welche Benutzer die bereitgestellten Nutzungsbedingungen akzeptiert haben.
 
@@ -73,7 +73,7 @@ Beim Bearbeiten einer vorhandenen Nutzungsbedingungsrichtlinie können Sie ausw�
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Arbeiten mit mehreren Versionen der Nutzungsbedingungen
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** &gt; **Nutzungsbedingungen**.
 
 2.  Wählen Sie die zu bearbeitende Nutzungsbedingungsrichtlinie aus, und klicken Sie dann auf **Bearbeiten**.
 
