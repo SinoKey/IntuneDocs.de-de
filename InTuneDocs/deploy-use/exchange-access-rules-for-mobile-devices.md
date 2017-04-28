@@ -15,8 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 47d1437159da85b958e6e6fa91fa743d7746c5ce
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -46,7 +47,7 @@ Im folgenden Verfahren wird das Erstellen einer benutzerdefinierten Regel beschr
 
 ## <a name="create-a-default-access-rule"></a>Erstellen einer Standardzugriffsregel
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) die Optionen **Richtlinie**&gt; **Exchange ActiveSync**.
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Richtlinie**&gt; **Exchange ActiveSync**.
 
 2.  Wählen Sie in der Liste **Standardregel** die Zugriffsregel aus, die Sie auf alle mobilen Geräte anwenden möchten, die nicht durch eine Regel oder persönliche Ausnahme abgedeckt werden. Wählen Sie **Speichern** aus.
 
@@ -54,12 +55,7 @@ Im folgenden Verfahren wird das Erstellen einer benutzerdefinierten Regel beschr
 
 ## <a name="create-a-custom-access-rule"></a>Erstellen einer benutzerdefinierten Zugriffsregel
 
-1. Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) die Optionen **Richtlinie**&gt; **Exchange ActiveSync**.
+1. Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Richtlinie**&gt; **Exchange ActiveSync**.
 
 2.  Wählen Sie in der Liste **Plattformausnahmen** die Option **Regel hinzufügen** aus, und erstellen Sie dann eine benutzerdefinierte Regel. Wählen Sie **Speichern** aus.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

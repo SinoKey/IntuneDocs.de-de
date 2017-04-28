@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: df1a9b21cd7114c2eebfeb114edf161c4a0e9ef3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 660d0c69fc09c6ec8b82185b3808269ef4bb6852
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Für die Aktivierung der Verwaltung von Android for Work-Geräten müssen Sie ei
 Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch [Festlegen der Autorität für die Verwaltung mobiler Geräte](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8#enable-device-enrollment) auf **Microsoft Intune** und Einrichten von MDM vor.
 
 2. **Konfigurieren der Android for Work-Bindung**<br>
-    Öffnen Sie als Intune-Administrator die [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com), wechseln Sie zu **Verwaltung** &gt; **Verwaltung mobiler Geräte** &gt; **Android for Work**, und klicken Sie auf **Konfigurieren**, um die Google Play-Website für Android for Work zu öffnen. Diese wird in einer neuen Registerkarte im Browser geöffnet.
+    Öffnen Sie als Intune-Administrator die [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com), wechseln Sie zu **Verwaltung** &gt; **Verwaltung mobiler Geräte** &gt; **Android for Work**, und klicken Sie auf **Konfigurieren**, um die Google Play-Website für Android for Work zu öffnen. Diese wird in einer neuen Registerkarte im Browser geöffnet.
 
 3. **Anmelden bei Google**<br>
    Geben Sie auf der Anmeldeseite von Google das Google-Konto an, das allen Android for Work-Verwaltungsaufgaben für diesen Mandanten zugeordnet sein wird. Dies ist das Google-Konto, das von den IT-Administratoren Ihrer Organisation gemeinsam verwendet wird, die Apps in der Play for Work-Konsole verwalten.
@@ -59,7 +59,7 @@ Sie können die Registrierung und die Verwaltung von Android for Work deaktivier
 ### <a name="how-to-unbind-an-android-for-work-account"></a>So heben Sie die Bindung für ein Android for Work-Konto auf
 
 1. **Aufheben der Android for Work-Bindung**<br>
-   Öffnen Sie als Administrator die [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com), wechseln Sie zu **Verwaltung** &gt; **Verwaltung mobiler Geräte** &gt; **Android for Work**, und klicken Sie auf **Bindung aufheben**.
+   Öffnen Sie als Administrator die [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com), wechseln Sie zu **Verwaltung** &gt; **Verwaltung mobiler Geräte** &gt; **Android for Work**, und klicken Sie auf **Bindung aufheben**.
 
 2. **Zustimmen zum Löschen der Android for Work-Bindung**<br>
   Klicken Sie auf **Ja**, um die Bindung zu löschen und die Registrierung von allen Android for Work-Geräten von Intune aufzuheben.

@@ -15,8 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f35a6da93e48141489b89e62b37b473d885479cf
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: c4023007f993436e0d7628cce52f78a1127c88f8
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +51,7 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 |**Verschlüsselung auf Speicherkarten vorschreiben**|Erfordert die Verschlüsselung von Daten, die auf externen Speichern, wie etwa SD-Karten, gespeichert sind (auf unterstützten Geräten).
 <sup>1</sup> Zusätzliche Informationen für Geräte unter Windows 8.1
 
--   Um die Verschlüsselung auf Geräten zu erzwingen, auf denen Windows 8.1 ausgeführt wird, installieren Sie das [MDM-Clientupdate für Windows von Dezember 2014](http://support.microsoft.com/kb/3013816) auf jedem Gerät.
+-   Um die Verschlüsselung auf Geräten zu erzwingen, auf denen Windows 8.1 ausgeführt wird, installieren Sie das [MDM-Clientupdate für Windows von Dezember 2014](https://support.microsoft.com/kb/3013816) auf jedem Gerät.
 
 -   Wenn Sie diese Einstellung für Windows 8.1-Geräte aktivieren, müssen alle Benutzer des Geräts ein Microsoft-Konto haben.
 
@@ -82,9 +83,4 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

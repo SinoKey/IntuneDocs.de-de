@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: 8f18f9ff2c32bb24b68fa987a8aad990b911a549
-ms.lasthandoff: 03/11/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 2a35387cdc2ebeb3c83fa043a8b2c6583fccdbc9
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -30,7 +30,7 @@ Sie können Geräte, einschließlich Windows PCs, registrieren, um die Verwaltun
 
 Wenn Sie [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune) entweder lokal oder in der Cloud gehostet verwenden, können Sie eine einfache Intune-Verwaltung ohne Registrierung aktivieren. Auch Windows-PCs können mit [Intune-Clientsoftware](#manage-windows-pcs-with-intune) verwaltet werden.
 
-Standardmäßig dürfen Geräte für alle Plattformen in Intune registriert werden. Um Geräte für die Registrierung zu blockieren, melden Sie sich mit Ihren Administratoranmeldeinformationen im [Microsoft Intune-Verwaltungsportal](http://manage.microsoft.com) an. Wählen Sie **Admin**(Administrator) > **Verwaltung mobiler Geräte** > **Registrierungsregeln** aus, und deaktivieren Sie die entsprechenden Kontrollkästchen, die Sie blockieren möchten.
+Standardmäßig dürfen Geräte für alle Plattformen in Intune registriert werden. Um Geräte für die Registrierung zu blockieren, melden Sie sich mit Ihren Administratoranmeldeinformationen im [Microsoft Intune-Verwaltungsportal](https://manage.microsoft.com) an. Wählen Sie **Admin**(Administrator) > **Verwaltung mobiler Geräte** > **Registrierungsregeln** aus, und deaktivieren Sie die entsprechenden Kontrollkästchen, die Sie blockieren möchten.
 
 ## <a name="overview-of-device-enrollment-methods"></a>Übersicht über die Geräteregistrierungsmethoden
 

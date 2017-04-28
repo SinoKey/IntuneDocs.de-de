@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
-ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -106,7 +106,7 @@ Sie können die Intune-Clientsoftware als Teil eines Betriebssystemabbilds auf C
 
 ## <a name="instruct-users-to-self-enroll"></a>Einweisen von Benutzern in die eigenständige Registrierung
 
-Benutzer können die Intune-Clientsoftware installieren, indem Sie auf die [Unternehmensportal-Website](http://portal.manage.microsoft.com) gehen. Die genauen Informationen, die den Benutzern im Webportal angezeigt werden, können je nach MDM-Autorität Ihres Kontos und je nach Betriebssystemplattform und Version des Benutzer-PCs variieren.
+Benutzer können die Intune-Clientsoftware installieren, indem Sie auf die [Unternehmensportal-Website](https://portal.manage.microsoft.com) gehen. Die genauen Informationen, die den Benutzern im Webportal angezeigt werden, können je nach MDM-Autorität Ihres Kontos und je nach Betriebssystemplattform und Version des Benutzer-PCs variieren.
 
 Wenn Benutzern keine Lizenz für Intune zugewiesen wurde oder die MDM-Autorität der Organisation nicht auf Intune festgelegt wurde, werden den Benutzern keine Optionen zum Registrieren angezeigt.
 

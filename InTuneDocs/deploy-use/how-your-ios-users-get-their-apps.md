@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: dbc5f1b106df17aa8875997330dbfbb04a81f82f
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 02e54d4ae2ffa860fb95725c74fdff913e88365b
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -40,13 +41,13 @@ Einschränkungen seitens Apple verbieten die Auflistung von branchenspezifischen
 
 Registrierte Benutzer erhalten ihre Apps durch Berühren der folgenden Kacheln auf dem Bildschirm „Apps“ der Unternehmensportal-App:
 
-- **Alle Apps** verweist auf eine Liste aller Apps auf der Registerkarte „ALLE“ der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+- **Alle Apps** verweist auf eine Liste aller Apps auf der Registerkarte „ALLE“ der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
 
 - **Ausgewählte Apps** leitet Benutzer zur Registerkarte „EMPFOHLEN“ der Unternehmensportal-Website.
 
 - **Kategorien** verweist auf die Registerkarte „KATEGORIEN“ der Unternehmensportal-Website.
 
- 
+
 ![Apps-Bildschirm des iOS-Unternehmensportals](./media/ios-cp-app-main-apps-screen.png)
 
 Informationen zum Hinzufügen von Apps und ihrer Platzierung auf diesen Kacheln finden Sie unter [Hinzufügen von Apps für registrierte Geräte zu Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md).
@@ -55,9 +56,4 @@ Informationen zum Hinzufügen von Apps und ihrer Platzierung auf diesen Kacheln 
 [Wie Ihre Android-Benutzer Apps erhalten](how-your-android-users-get-their-apps.md)
 
 [Wie Ihre Windows-Benutzer Apps erhalten](how-your-windows-users-get-their-apps.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

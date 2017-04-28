@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: f57323fe0b093f2478d71d3f01b9c0e5ee2727eb
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 160b8a7fe883b8af61831b30b711ad0243a3ec08
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -55,7 +55,7 @@ Die MDM-Autorität definiert den Verwaltungsdienst, der über die Berechtigung z
 > Sie sollten sorgfältig überlegen, ob Sie mobile Geräte nur mit Intune (Onlinedienst) oder mit System Center Configuration Manager mit Intune (lokale Softwarelösung in Verbindung mit dem Onlinedienst) verwalten möchten. Nachdem Sie die Autorität für die Verwaltung mobiler Geräte festgelegt haben, können Sie keine Änderungen mehr ohne den Microsoft Support vornehmen. Anweisungen finden Sie unter [What to do if you choose the wrong MDM authority setting (Was Sie machen können, wenn Sie die falsche MDM-Autoritätseinstellung vorgenommen haben)](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
 
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) die Optionen **Verwaltung** &gt; **Verwaltung mobiler Geräte** aus.
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Verwaltung** &gt; **Verwaltung mobiler Geräte** aus.
 
 2.  Klicken Sie in der Liste **Aufgaben** auf **Autorität für die Verwaltung mobiler Geräte festlegen**. Das Dialogfeld **MDM-Autorität festlegen** wird geöffnet.
 

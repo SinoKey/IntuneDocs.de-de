@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
-ms.lasthandoff: 01/31/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ee0320db2c4a1a977326f62fcd20597fa39aba24
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -35,7 +35,7 @@ Wenn Sie iOS-Geräte direkt registrieren, können Sie ein Gerät registrieren, o
 
 1.  Wenn Sie dies noch nicht getan haben, erstellen Sie ein Registrierungsprofil für iOS-Geräte, die über Apple Configurator registriert werden. Ein Registrierungsprofil für Geräte definiert die Einstellungen für Geräte.
 
-    1.  Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) zu **Richtlinie** &gt; **Unternehmensgeräteregistrierung**, und wählen Sie anschließend **Hinzufügen** aus.
+    1.  Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) zu **Richtlinie** &gt; **Unternehmensgeräteregistrierung**, und wählen Sie anschließend **Hinzufügen** aus.
 
         ![Erstellen einer Profilseite für die Geräteregistrierung](../media/pol-sa-corp-enroll.png)
 

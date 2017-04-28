@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
-ms.openlocfilehash: 7fcb910dfc566cdf7112a48558cda375ea1c39a8
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 44b4fbad45decde806fb5be41ea12f0d8bcf9c95
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -26,7 +26,7 @@ ms.lasthandoff: 02/21/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune unterstützt die Registrierung von firmeneigenen iOS-Geräten mithilfe des Apple-Programms zur Geräteregistrierung (Device Enrollment Program, DEP) oder des Tools [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017), das auf einem Mac-Computer ausgeführt wird.
+Microsoft Intune unterstützt die Registrierung von firmeneigenen iOS-Geräten mithilfe des Apple-Programms zur Geräteregistrierung (Device Enrollment Program, DEP) oder des Tools [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017), das auf einem Mac-Computer ausgeführt wird.
 
 **Voraussetzung:** Ein [Apple Push Notification Service-Zertifikat](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
@@ -39,15 +39,15 @@ Sie können firmeneigene iOS-Geräte registrieren, indem Sie eine der drei folge
 >[!NOTE]
 >Die Registrierung mithilfe von Apple Configurator oder dem Geräteregistrierungsprogramm kann nicht zusammen mit der Registrierung mithilfe des [Geräteregistrierungs-Managers](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) verwendet werden.
 
-Standardmäßig dürfen alle iOS-Geräte in Intune registriert werden. Um persönliche oder unternehmenseigene Daten für die Registrierung zu blockieren, melden Sie sich mit Ihren Administratoranmeldeinformationen im [Microsoft Intune-Verwaltungsportal](http://manage.microsoft.com) an. Wählen Sie **Admin** (Administrator) > **Verwaltung mobiler Geräte** > **Registrierungsregeln** aus, und deaktivieren Sie anschließend die anwendbaren Optionen.
+Standardmäßig dürfen alle iOS-Geräte in Intune registriert werden. Um persönliche oder unternehmenseigene Daten für die Registrierung zu blockieren, melden Sie sich mit Ihren Administratoranmeldeinformationen im [Microsoft Intune-Verwaltungsportal](https://manage.microsoft.com) an. Wählen Sie **Admin** (Administrator) > **Verwaltung mobiler Geräte** > **Registrierungsregeln** aus, und deaktivieren Sie anschließend die anwendbaren Optionen.
 
 ## <a name="use-apple-configurator"></a>Verwenden von Apple Configurator
 
 Sie können iOS-Geräte registrieren, indem Sie ein Unternehmensregistrierungsprofil exportieren und dies mobilen Geräte anschließend mit einem Mac verbinden, auf dem Apple Configurator ausgeführt wird. Apple Configurator unterstützt zwei Formen der Registrierung:
 
-- **Setup-Assistent für die Registrierung**: Setzt das Gerät auf die Werkseinstellungen zurück und bereitet es für die Einrichtung durch den neuen Benutzer des Geräts vor. Bei dieser Methode muss der Administrator das iOS-Gerät per USB mit einem Macintosh-Computer verbinden, auf dem [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) ausgeführt wird, um die Registrierung vorzukonfigurieren. Die Geräte werden dann an ihre Benutzer übergeben, die den Setup-Assistenten ausführen. Dieser Prozess konfiguriert das Gerät mit den Anmeldeinformationen Ihres Geschäfts- oder Schulkontos und schließt den Registrierungsvorgang ab. Weitere Informationen finden Sie unter [Registrieren von iOS-Geräten mithilfe von Apple Configurator und Setup-Assistent](ios-setup-assistant-enrollment-in-microsoft-intune.md).
+- **Setup-Assistent für die Registrierung**: Setzt das Gerät auf die Werkseinstellungen zurück und bereitet es für die Einrichtung durch den neuen Benutzer des Geräts vor. Bei dieser Methode muss der Administrator das iOS-Gerät per USB mit einem Macintosh-Computer verbinden, auf dem [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017) ausgeführt wird, um die Registrierung vorzukonfigurieren. Die Geräte werden dann an ihre Benutzer übergeben, die den Setup-Assistenten ausführen. Dieser Prozess konfiguriert das Gerät mit den Anmeldeinformationen Ihres Geschäfts- oder Schulkontos und schließt den Registrierungsvorgang ab. Weitere Informationen finden Sie unter [Registrieren von iOS-Geräten mithilfe von Apple Configurator und Setup-Assistent](ios-setup-assistant-enrollment-in-microsoft-intune.md).
 
-- **Direkte Registrierung**: Erstellt eine Apple Configurator-kompatible Datei zur Verwendung während der Vorbereitung des Geräts. Das registrierte Gerät wird nicht auf die Werkseinstellungen zurückgesetzt, aber ist keinem Benutzer zugewiesen. Bei dieser Methode muss der Administrator das iOS-Gerät per USB mit einem Macintosh-Computer verbinden, auf dem [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) ausgeführt wird, um das Gerät zu registrieren. Weitere Informationen finden Sie unter [Registrierung von iOS-Geräte mit der Option „Direkte Registrierung“ von Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md).
+- **Direkte Registrierung**: Erstellt eine Apple Configurator-kompatible Datei zur Verwendung während der Vorbereitung des Geräts. Das registrierte Gerät wird nicht auf die Werkseinstellungen zurückgesetzt, aber ist keinem Benutzer zugewiesen. Bei dieser Methode muss der Administrator das iOS-Gerät per USB mit einem Macintosh-Computer verbinden, auf dem [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017) ausgeführt wird, um das Gerät zu registrieren. Weitere Informationen finden Sie unter [Registrierung von iOS-Geräte mit der Option „Direkte Registrierung“ von Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md).
 
 ## <a name="use-the-device-enrollment-program-dep"></a>Verwenden des Geräteregistrierungsprogramms (Device Enrollment Program, DEP)
 Auf über das DEP erworbenen Geräten wird ein Registrierungsprofil „Drahtlos“ bereitgestellt. Wenn ein Benutzer auf dem Gerät den Setup-Assistenten ausführt, wird das Gerät bei Intune registriert. Weitere Informationen finden Sie unter [Registrieren von iOS-Geräten, die über das Apple-Programm zur Geräteregistrierung erworben wurden](ios-device-enrollment-program-in-microsoft-intune.md).

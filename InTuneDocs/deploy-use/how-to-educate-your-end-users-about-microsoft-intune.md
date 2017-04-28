@@ -14,9 +14,9 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: a0ae4d74ad99adcfab596eb0c441c845fbca3a9e
-ms.lasthandoff: 04/20/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: abba595672fa88efc022128ec8751cb27d14b089
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +50,7 @@ Das Mindern dieser Ängste macht das Bereitstellen reibungsloser. Hier ist eine 
 
 * __Persönlich sein.__ Wenn Sie Ihren Endbenutzern nur Anweisungen geben, die sich nicht auf die vorliegende Bereitstellung beziehen, kann es auf Benutzer so wirken, als hätten Sie sich keine Gedanken über ihren konkreten Fall gemacht. Sie können diese [customizable, end user Intune enrollment template for IT administrators (anpassbare Vorlage mit Intune-Endbenutzer-Registrierungsanweisungen für IT-Administratoren)](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) verwenden, um Ihre eigenen Registrierungsanweisungen für Ihre Endbenutzer zu verfassen.
 
-* __Unterschiedliche Kommunikationsformen finden.__ Genauso wie mit [unterschiedlichen Lernmethoden](http://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) haben Benutzer bestimmte Arten der Informationsaufnahme, die sie anderen Arten vorziehen. Auf Channel 9 stellen wir Benutzern, die Videos der Dokumentation vorziehen, [Videotutorials zur Registrierung verschiedener Gerätetypen](https://channel9.msdn.com/Series/IntuneEnrollment) zur Verfügung. Diese Videos können Sie auch direkt in Ihre eigene [SharePoint-Website](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) einbetten oder als lokale Kopie herunterladen – sowohl als Video- als auch als Audiodatei.
+* __Unterschiedliche Kommunikationsformen finden.__ Genauso wie mit [unterschiedlichen Lernmethoden](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) haben Benutzer bestimmte Arten der Informationsaufnahme, die sie anderen Arten vorziehen. Auf Channel 9 stellen wir Benutzern, die Videos der Dokumentation vorziehen, [Videotutorials zur Registrierung verschiedener Gerätetypen](https://channel9.msdn.com/Series/IntuneEnrollment) zur Verfügung. Diese Videos können Sie auch direkt in Ihre eigene [SharePoint-Website](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) einbetten oder als lokale Kopie herunterladen – sowohl als Video- als auch als Audiodatei.
 
 * __Aufmerksam sein.__ Die Endbenutzererfahrung wirkt sich auf Ihre Produktivität aus; ihre Erfahrung zu verstehen, erleichtert es Ihnen, die Probleme der Benutzer zu beheben, wenn sie sich an Sie wenden. Wenn Sie wissen, wie Endbenutzer an ihre Apps kommen, ist es für Sie sehr viel einfacher, ihre Probleme einzuordnen und schneller zu lösen.
 
