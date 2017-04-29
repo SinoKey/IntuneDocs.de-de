@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 6a6b64465c95a3edd6fc2e2d4ae3da80ba3367ee
-ms.openlocfilehash: 92bd41aa4acc02e67e983c68f818bd656b0b9608
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: 6a1dbb2c9d3810f19536fc709719767de923b519
+ms.openlocfilehash: e5067631fc17fa375a3b263f9910936300e6f8e9
+ms.lasthandoff: 04/18/2017
 
 
 ---
@@ -34,6 +34,7 @@ Wir hatten die Chance, einige Aufgaben logischer zu organisieren, als wir Intune
 |Gruppen nach IMEI (Alle Plattformen)| Gruppen > Alle Geräte > Vorabregistrierte Unternehmensgeräte > Nach IMEI (Alle Plattformen) | [Registrieren von Geräten > Bezeichner von Unternehmensgeräten](#by-imei-all-platforms)|
 | Profil für die Unternehmensgeräteregistrierung| Richtlinie > Unternehmensgeräteregistrierung | [Registrieren von Geräten > Apple-Registrierung > Enrollment Program Profiles (Profile für das Registrierungsprogramm)](#where-did-corporate-pre-enrolled-devices-go) |
 | Profil für die Unternehmensgeräteregistrierung | Richtlinie > Unternehmensgeräteregistrierung | [Registrieren von Geräten > Apple-Registrierung > AC-Profile](#where-did-corporate-pre-enrolled-devices-go) |
+| Android for Work | Administrator > Verwaltung mobiler Geräte > Android for Work | Registrieren von Geräten > Android for Work-Registrierung | | Geschäftsbedingungen | Richtlinie > Geschäftsbedingungen | Registrieren von Geräten > Geschäftsbedingungen |
 
 
 ## <a name="where-do-i-manage-groups"></a>Wo verwalte ich Gruppen?
