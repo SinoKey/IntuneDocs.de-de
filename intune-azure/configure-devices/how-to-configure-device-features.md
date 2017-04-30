@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: dd53e547a8f834eff528e79cf2506be1e6c2dc2a
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: fddd4963ceea09b37ad4d8c739f437dbcf3b053e
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -44,8 +44,11 @@ Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfiguri
     - **macOS**
 6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Gerätefunktionen** aus. 
 7. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. In den folgenden Themen finden Sie ausführliche Informationen zu den Einstellungen für die einzelnen Plattformen:
-    - [Einstellungen für iOS](device-features-for-ios.md)
-    - [Einstellungen für macOS](device-features-for-macos.md)
+    - [AirPrint settings for iOS and MacOS](air-print-settings-for-ios-and-macos.md) (AirPrint-Einstellungen für iOS- und macOS-Geräte)
+     - [AirPlay settings for iOS](airplay-settings-for-ios-devices.md) (AirPlay-Einstellungen für iOS-Geräte)
+    - [Home screen layout settings for iOS](home-screen-settings-for-ios.md) (Einstellungen des Startbildschirmlayouts für iOS-Geräte)
+    - [App notification settings for iOS](app-notification-settings-for-ios.md) (App-Benachrichtigungseinstellungen für iOS-Geräte)
+    - [Shared device configuration settings for iOS](shared-device-settings-for-ios.md) (Konfigurationseinstellungen für freigegebene iOS-Geräte)
 
 8. Navigieren Sie anschließend zurück zum Blatt **Profil erstellen**, und klicken Sie auf **Erstellen**.
 
