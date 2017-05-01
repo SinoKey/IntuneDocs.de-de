@@ -118,7 +118,6 @@
 #### [Layout der Startseite für iOS](configure-devices/home-screen-settings-for-ios.md)
 #### [App-Benachrichtigungen für iOS](configure-devices/app-notification-settings-for-ios.md)
 #### [Gemeinsam genutzte Geräte für iOS](configure-devices/shared-device-settings-for-ios.md)
-#### [Webinhaltsfilter für iOS](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [Konfigurieren von Geräteeinschränkungen](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
@@ -194,7 +193,8 @@
 ## [Was ist der bedingte Zugriff?](conditional-access/what-is-conditional-access.md)
 ## Vorgehensweise:
 ### [Installieren des Connectors für Exchange lokal](conditional-access/install-intune-on-premises-exchange-connector.md)
-### [Erstellen einer Richtlinie für den bedingten Zugriff](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Erstellen und Zuweisen der Richtlinie für bedingten Zugriff](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Überwachung der Einhaltung für bedingten Zugriff](conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md)
 
 # Zugriffssteuerung
 ## [Was ist die rollenbasierte Zugriffssteuerung](access-control/role-based-access-control.md)
