@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
-ms.openlocfilehash: 81761af5ab5aebe6abb44ff43a7df5a337d38fc7
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: 5f172290d493717308446c4f9e2313a03ba8f3aa
+ms.openlocfilehash: 84c6c9ddeeff3570d0b00364063e43105141de0f
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -27,13 +27,57 @@ Erfahren Sie, welche Aktualisierungen wir an der Benutzeroberfläche für Apps v
 > [!Note]
 > Bitte beachten Sie, dass die Bilder unten Vorschauen darstellen und das angekündigte Produkt sich von den abgebildeten Versionen unterscheiden kann.
 
-## <a name="whats-coming-in-intune-app-ui"></a>Was ist neu bei der Intune-App-Benutzeroberfläche?
+## <a name="april-2017"></a>April 2017
 
-### <a name="april-2017"></a>April 2017
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Verbesserter Anmeldevorgang für alle Unternehmensportal-Apps auf allen Plattformen <!--User Story 1132123-->
 
-#### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Neue Symbole für Managed Browser und das Unternehmensportal <!--918433, 918431-->
+Wir verbessern den Anmeldevorgang für die Intune-Unternehmensportal-Apps für Android, iOS und Windows.  Die neue Benutzeroberfläche wird für die Unternehmensportal-App automatisch auf allen Plattformen eingeführt, sobald Azure AD die Änderung umsetzt. Darüber hinaus können Benutzer sich jetzt mithilfe eines generierten Codes zur einmaligen Verwendung von einem anderen Gerät aus beim Unternehmensportal anmelden. Dies ist besonders nützlich, wenn Benutzer sich ohne Anmeldeinformationen anmelden müssen.  
 
-Managed Browser erhält aktualisierte Symbole für die Android- und iOS-Versionen der App. Das neue Symbol enthält das aktualisierte Intune-Badge, damit es konsistenter mit anderen Apps in Enterprise Mobility + Security (EM+S) wird.
+Unten sehen Sie die vorherige Anmeldeoberfläche, die neue Anmeldeoberfläche mit Anmeldeinformationen und die neue Anmeldeoberfläche zur Anmeldung von einem anderen Gerät aus.
+
+__Vorherige Anmeldeoberfläche__
+
+![Die Seite für die Anmeldung beim Unternehmensportal mit einem Symbol für eine Person vor der grafischen Darstellung einer Website. Darunter befindet sich die Schaltfläche zum Anmelden. Ein Link am unteren Seitenrand führt zu Informationen von Microsoft zu Datenschutz und Cookies.](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![Nach dem Tippen auf „Anmelden“ geben Benutzer auf dieser Seite ihre Anmeldeinformationen ein. Die Seite erfordert die Eingabe von E-Mail-Adresse und Kennwort und bietet Möglichkeiten, Kennwortfehler zu beheben.](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![Nach Eingabe des Kennworts meldet sich die Unternehmensportal-App an und zeigt einen Ladebalken an.](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__Neue Anmeldeoberfläche__
+
+![Die Seite für die Anmeldung beim Unternehmensportal mit einem Symbol für eine Person vor der grafischen Darstellung einer Website. Darunter befindet sich die Schaltfläche zum Anmelden. Ein Link am unteren Seitenrand führt zu Informationen von Microsoft zu Datenschutz und Cookies.](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![Der Benutzer wird nur zur Eingabe der E-Mail-Adresse aufgefordert, nicht zur Eingabe von E-Mail-Adresse und Kennwort im gleichen Bildschirm.](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![Der Benutzer wird erst zur Eingabe des Kennworts aufgefordert, wenn die E-Mail-Adresse akzeptiert wurde.](./media/cp_ios_aad_signin_after_1704_003.png)
+
+__Neue Anmeldeoberfläche bei Anmeldung von einem anderen Gerät aus__
+
+![Die Seite für die Anmeldung beim Unternehmensportal mit einem Symbol für eine Person vor der grafischen Darstellung einer Website. Darunter befindet sich die Schaltfläche zum Anmelden. Ein Link am unteren Seitenrand führt zu Informationen von Microsoft zu Datenschutz und Cookies.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+Tippen Sie auf den Link __Von anderem Gerät aus anmelden__.
+
+![Der Benutzer wird nur zur Eingabe der E-Mail-Adresse aufgefordert, nicht zur Eingabe von E-Mail-Adresse und Kennwort im gleichen Bildschirm. Unterhalb des E-Mail-Felds befindet sich ein Link mit dem Titel „Von einem anderen Gerät aus anmelden“.](./media/cp_ios_aad_signin_from_another_device_after_1704_002.png)
+
+![Der Benutzer erhält die Anweisung, mit einem über den Arbeitscomputer bezogenen eindeutigen Passcode zur Seite „aka.ms/devicelogin“ zu wechseln und sich dort mit dem Code anzumelden.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+Starten Sie einen Browser, und wechseln Sie zu [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
+
+![Ein Bild des Browsers des Benutzers auf dem Arbeitscomputer statt in der Unternehmensportal-App. Die angezeigte Seite „Geräteanmeldung“ fordert den Benutzer auf, den über die Unternehmensportal-App empfangenen Code einzugeben.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+Geben Sie den Code ein, den Sie in der Unternehmensportal-App erhalten haben. Wenn Sie __Weiter__ auswählen, können Sie sich mit jeder von Ihrem Unternehmen unterstützten Methode authentifizieren, z.B. per Smartcard.
+
+![Der Benutzer hat den eindeutigen Code in das Feld eingegeben und wurde auf der Seite „Geräteanmeldung“ aufgefordert, zu bestätigen, dass das Intune-Unternehmensportal die App ist, die zur Anmeldung autorisiert werden soll.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![Eine Bestätigungsseite informiert darüber, dass der Benutzer sich jetzt auf dem Gerät bei der Unternehmensportal-App angemeldet hat und dass diese Seite geschlossen werden kann.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+Die Unternehmensportal-App beginnt mit der Anmeldung.
+
+![Nach Abschluss des Authentifizierungsprozesses meldet sich die Unternehmensportal-App an und zeigt einen entsprechenden Ladebalken an.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Neue Symbole für Managed Browser und das Unternehmensportal <!--918433, 918431-->
+
+Managed Browser erhält aktualisierte Symbole für die Android- und iOS-Versionen der App. Das neue Symbol enthält den aktualisierten Intune-Badge, damit es konsistenter mit anderen Apps in Enterprise Mobility + Security (EM+S) wird.
 
 <html>
 <body>
@@ -52,7 +96,7 @@ Managed Browser erhält aktualisierte Symbole für die Android- und iOS-Versione
 
 Das Unternehmensportal erhält auch aktualisierte Symbole für die Android-, iOS- und Windows-Versionen der App, um die Konsistenz mit anderen Apps in EM+S zu verbessern. Diese Symbole werden von April bis Ende Mai schrittweise auf den Plattformen veröffentlicht.
 
-#### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Statusanzeige zur Anmeldung im Android-Unternehmensportal <!--953374-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Statusanzeige zur Anmeldung im Android-Unternehmensportal <!--953374-->
 
 Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der Anmeldung an, wenn der Benutzer die App startet oder fortsetzt. Der Indikator durchläuft neue Status, beginnend mit „Verbinden...“, „Anmelden...“, dann „Checking for security requirements...“ (Suche nach Sicherheitsanforderungen...), bevor dem Benutzer erlaubt wird, auf die App zuzugreifen.
 
@@ -74,9 +118,25 @@ Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der A
 </body>
 </html>
 
-## <a name="whats-been-announced-for-ui-updates-for-end-user-apps"></a>Ankündigungen für Updates der Benutzeroberfläche für Endbenutzer-Apps
+### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Verbesserter App-Installationsstatus für die Windows 10-Unternehmensportal-App <!--676495-->
+Die Windows 10-Unternehmensportal-App bietet jetzt eine Statusanzeige zur Installation der App für alle modernen App-Installationen aus dem Unternehmensportal.
 
-### <a name="february-2017"></a>Februar 2017
+<html>
+<body>
+   <table id="wrapper">
+      <tr>
+         <td>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_before_1704.png" alt="An image of the previous version of the loading screen, where the status simply said 'installing.'" width=200 height=366 align=center>
+          </td>
+          <td>
+             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_after_1704.png" alt="An image of the updated version of the loading screen, which now shows an install progress bar." width=200 height=366 align=center>
+           </td>
+      </tr>
+   </table>
+</body>
+</html>
+
+## <a name="february-2017"></a>Februar 2017
 
 ### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Neue Benutzeroberfläche für die Unternehmensportal-App für Android <!--621622, announced 1702-->
 Ab März befolgt die Unternehmensportal-App für Android die [material design guidelines (Richtlinien für Materialdesign)](https://material.io/guidelines/material-design/introduction.html), um ein moderneres Erscheinungsbild zu vermitteln. Diese verbesserte Benutzeroberfläche enthält Folgendes:
@@ -113,7 +173,7 @@ Ab Februar unterstützt die Unternehmensportal-Website Apps, die für Benutzer b
 
 ### <a name="see-also"></a>Weitere Informationen:
 * [Microsoft Intune-Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Roadmap für die Cloudplattform](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Roadmap für die Cloudplattform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Neuigkeiten in der Azure-Vorschau](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [Neuheiten – Archiv](whats-new-archive.md)
 

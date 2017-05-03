@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
-ms.openlocfilehash: bddd8c0dc74835f74a71af1d900d43d84aab894c
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 0dc3fd3b4cc355bc95677ca648efdee07d1066b2
+ms.lasthandoff: 04/24/2017
 
 
 ---
-# <a name="whats-new-in-microsoft-intune---march-2017"></a>Neuerungen in Microsoft Intune – März 2017
+# <a name="whats-new-in-microsoft-intune---april-2017"></a>Neuerungen in Microsoft Intune – April 2017
 Erfahren Sie, was in diesem Release von Microsoft Intune neu ist. Sie erhalten auch Informationen über bevorstehende Änderungen, die Sie einplanen sollten, sowie über vergangene Releases.
 
 > [!Note]
@@ -29,68 +29,55 @@ Erfahren Sie, was in diesem Release von Microsoft Intune neu ist. Sie erhalten a
 
 ## <a name="new-capabilities"></a>Neue Funktionen
 
-### <a name="support-for-skycure"></a>Unterstützung für Skycure
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Verbesserter Anmeldevorgang für alle Unternehmensportal-Apps auf allen Plattformen <!--User Story 1132123-->
 
-Sie können nun den Zugriff mobiler Geräte auf Unternehmensressourcen mit bedingtem Zugriff basierend auf Risikobewertungen steuern, die von Skycure vorgenommen werden, einer Mobile Threat Defense-Lösung, die mit Microsoft Intune zusammenarbeitet. Das Risiko wird basierend auf Telemetriedaten von Geräten bewertet, auf denen Skycure ausgeführt wird, wie z.B.:
+Wir verbessern den Anmeldevorgang für die Intune-Unternehmensportal-Apps für Android, iOS und Windows. Die neue Benutzeroberfläche wird für die Unternehmensportal-App automatisch auf allen Plattformen eingeführt, sobald Azure AD die Änderung umsetzt. Darüber hinaus können Benutzer sich jetzt mithilfe eines generierten Codes zur einmaligen Verwendung von einem anderen Gerät aus beim Unternehmensportal anmelden. Dies ist besonders nützlich, wenn Benutzer sich ohne Anmeldeinformationen anmelden müssen.
 
-- Physische Verteidigung
-- Netzwerkverteidigung
-- Anwendungsverteidigung
-- Verteidigung gegen Sicherheitsrisiken
+Screenshots der vorherigen Anmeldeoberfläche, der neuen Anmeldeoberfläche mit Anmeldeinformationen und der neuen Anmeldeoberfläche zur Anmeldung von einem anderen Gerät aus finden Sie auf der Seite mit den [Neuerungen der App-Benutzeroberfläche](whats-new-in-intune-app-ui.md).
 
-Sie können Richtlinien für bedingten EMS-Zugriff basierend auf Risikobewertungen von Skycure konfigurieren, die mithilfe von Intune-Gerätekompatibilitätsrichtlinien aktiviert werden. Sie können diese Richtlinien verwenden, um den Zugriff nicht kompatibler Geräte auf Unternehmensressourcen anhand der erkannten Bedrohungen zuzulassen oder zu blockieren. Weitere Informationen finden Sie unter [Skycure Mobile Threat Defense-Connector](/intune/deploy-use/skycure-mobile-threat-defense-connector).
+### <a name="myapps-available-for-managed-browser---822308-822303--"></a>MyApps verfügbar für Managed Browser <!--822308, 822303-->
 
-### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Neue Benutzeroberfläche für die Unternehmensportal-App für Android <!--621622-->
+Microsoft MyApps verfügen jetzt über eine bessere Unterstützung innerhalb von Managed Browser. Managed Browser-Benutzer, die nicht für die Verwaltung vorgesehen sind, werden direkt an den MyApps-Dienst weitergeleitet, wo sie auf ihre durch den Administrator bereitgestellte SaaS-Apps zugreifen können. Benutzer, die für die Verwendung für die Intune-Verwaltung ausgelegt sind, können weiterhin auf MyApps vom integrierten Managed Browser-Lesezeichen aus zugreifen.
 
-Die Unternehmensportal-App für Android aktualisiert ihre Benutzeroberfläche für ein moderneres Erscheinungsbild und höhere Benutzerfreundlichkeit. Wichtige Updates sind:
+### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431-971473--"></a>Neue Symbole für Managed Browser und das Unternehmensportal <!--918433, 918431, 971473-->
 
-- Farben: Die IT-Abteilung kann die Färbung der Kopfzeilen der Registerkarte „Unternehmensportal“ dem Branding gemäß festlegen.
-- Apps: Auf der Registerkarte **Apps** wurden die Schaltflächen **Empfohlene Apps** und **Alle Apps** aktualisiert.
-- Suche: Auf der Registerkarte **Apps** ist die Schaltfläche **Suche** nun eine unverankerte interaktive Schaltfläche.
-- Navigation in Apps: Die Ansicht **Alle Apps** enthält die Registerkartenansicht **Featured** (Highlights), **Alle** und **Kategorien**, um die Navigation zu vereinfachen.
-- Unterstützung: Die Registerkarten **Meine Geräte** und **IT kontaktieren** wurden aktualisiert, um die Lesbarkeit zu verbessern.
+Managed Browser erhält aktualisierte Symbole für die Android- und iOS-Versionen der App. Das neue Symbol enthält den aktualisierten Intune-Badge, damit es konsistenter mit anderen Apps in Enterprise Mobility + Security (EM+S) wird. Sie können das neue Symbol für Managed Browser auf der Seite mit den [Neuerungen der Intune-App-Benutzeroberfläche](whats-new-in-intune-app-ui.md) finden.
 
-Ausführlichere Informationen zu diesen Änderungen finden Sie unter [Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune](whats-new-in-intune-app-ui.md).
+Das Unternehmensportal erhält auch aktualisierte Symbole für die Android-, iOS- und Windows-Versionen der App, um die Konsistenz mit anderen Apps in EM+S zu verbessern. Diese Symbole werden von April bis Ende Mai schrittweise auf den Plattformen veröffentlicht.
 
-### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>Nicht verwaltete Geräte können auf zugewiesene Apps zugreifen <!--664691-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Statusanzeige zur Anmeldung im Android-Unternehmensportal <!--953374-->
 
-Als Teil der Designänderungen auf der Unternehmensportal-Website können iOS- und Android-Benutzer Apps installieren, die ihnen als „Verfügbar ohne Registrierung“ auf Ihren nicht verwalteten Geräten zugewiesen sind. Benutzer können sich mit ihren Intune-Anmeldeinformationen auf der Unternehmensportal-Website anmelden und die Liste der ihnen zugewiesenen Apps anzeigen. Die App-Pakete der Apps des Typs „Verfügbar ohne Registrierung“ werden zum Download über die Unternehmensportal-Website verfügbar gemacht. Apps, für die die Registrierung für die Installation erforderlich ist, sind durch diese Änderung nicht betroffen, da Benutzer aufgefordert werden, ihr Gerät zu registrieren, wenn sie diese Apps installieren möchten.
+Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der Anmeldung an, wenn der Benutzer die App startet oder fortsetzt. Der Indikator durchläuft neue Status, beginnend mit „Verbinden...“, „Anmelden...“, dann „Checking for security requirements...“ (Suche nach Sicherheitsanforderungen...), bevor dem Benutzer erlaubt wird, auf die App zuzugreifen. Screenshots der neuen Bildschirme für die Unternehmensportal-App finden Sie auf der Seite mit den [Neuerungen der Intune-App-Benutzeroberfläche](whats-new-in-intune-app-ui.md).
 
-### <a name="signing-script-for-windows-10-company-portal---941642--"></a>Signierungsskript für das Windows 10-Unternehmensportal <!--941642-->
+### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Verhindern, dass Apps auf SharePoint Online zugreifen<!-- 679339 -->
 
-Wenn Sie die Windows 10-Unternehmensportal-App herunterladen und querladen möchten, steht Ihnen nun ein Skript zur Vereinfachung und Optimierung des App-Signierungsprozesses für Ihre Organisation zur Verfügung.   Das herunterladbare Skript sowie Informationen zu dessen Verwendung finden Sie bei TechNet unter [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript) (Microsoft Intune-Signierungsskript für das Windows 10-Unternehmensportal). Weitere Informationen zu dieser Ankündigung finden Sie im Blog des Intune-Supportteams unter [Updating your Windows 10 Company Portal app](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/) (Aktualisieren Ihrer Windows 10-Unternehmensportal-App).
+Sie können jetzt eine Richtlinie für den App-basierten bedingten Zugriff erstellen, um Apps, auf die keine Schutzrichtlinien angewendet wurden, am Zugriff auf [SharePoint Online](/InTune/deploy-use/mam-ca-for-sharepoint-online) zu hindern. Im Szenario des App-basierten bedingten Zugriffs können Sie Apps festlegen, die über das Azure-Portal auf SharePoint Online zugreifen können sollen.
 
+### <a name="bulk-enroll-windows-10-devices----747607---"></a>Massenregistrierung von Windows 10-Geräten <!-- 747607 -->
+
+Sie können jetzt eine große Anzahl von Geräten, auf denen das Windows 10 Creators Update ausgeführt wird, mit Windows Configuration Designer (WCD) in Azure Active Directory und Intune einbinden. Um die [MDM-Massenregistrierung](/intune/deploy-use/bulk-enroll-windows) für Ihren Azure AD-Mandanten zu aktivieren, erstellen Sie ein Bereitstellungspaket, das Geräte mithilfe von Windows Configuration Designer in Ihren Azure AD-Mandanten einbindet. Sie können das Paket auf alle unternehmenseigenen Geräte anwenden, die Sie per Massenvorgang registrieren und verwalten möchten. Nachdem das Paket auf Ihre Geräte angewendet wurde, werden die Geräte in Azure AD eingebunden und bei Intune registriert und sind dann bereit für die Anmeldung durch Ihre Azure AD-Benutzer.  Azure AD-Benutzer sind auf diesen Geräten Standardbenutzer und erhalten zugewiesene Richtlinien sowie erforderliche Apps. Die Verwendung von Self-Service-Funktionen und Unternehmensportalen wird derzeit nicht unterstützt.
 
 ## <a name="notices"></a>Benachrichtigungen
 
-### <a name="support-for-ios-103"></a>Unterstützung für iOS 10.3
+### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Direkter Zugriff auf Apple-Registrierungsszenarien <!--951869-->
 
-Die Version iOS 10.3 wurde am 27. März 2017 für iOS-Benutzer eingeführt. Alle vorhandenen Intune-MDM- und -MAM-Szenarios sind mit der neuesten Version des Apple-Betriebssystems kompatibel. Wir gehen davon aus, dass alle vorhandenen Intune-Features, die derzeit für die Verwaltung von iOS-Geräten verfügbar sind, weiterhin funktionieren werden, wenn Ihre Benutzer ihre Geräte und Apps auf iOS 10.3 aktualisieren.
+Für Intune-Konten, die nach Januar 2017 erstellt wurden, hat Intune direkten Zugriff auf Apple-Registrierungsszenarien mithilfe der Workload „Geräte registrieren“ im Azure-Vorschauportal aktiviert. Bisher konnte nur über Links im klassischen Intune-Portal auf die Apple-Registrierungsvorschau zugegriffen werden. Vor Januar 2017 erstellte Intune-Konten erfordern eine einmalige Migration, bevor diese Features in Azure verfügbar sind. Der Zeitplan für die Migration wurde noch nicht angekündigt, aber Sie erfahren so bald wie möglich Näheres. Wir empfehlen Ihnen dringend, ein Testkonto zu erstellen, um die neue Oberfläche zu testen, wenn Sie mit Ihrem vorhandenen Konto nicht auf die Vorschau zugreifen können.
 
-Es gibt derzeit keine bekannten Probleme. Wenn Probleme mit iOS 10.3 auftreten, können Sie sich gerne an das [Intune-Supportteam](/intune/troubleshoot/contact-assisted-phone-support-for-microsoft-intune) wenden.
+### <a name="whats-coming-for-appx-in-intune-on-azure----1000270---"></a>Was für APPX in Intune unter Azure bereitsteht <!-- 1000270 -->
 
-### <a name="improved-support-for-android-users-based-in-china---720444--"></a>Verbesserte Unterstützung für Android-Benutzer in China<!--720444-->
+Als Teil der Migration zu Intune unter Azure werden wir drei APPX-Änderungen vornehmen:
 
-Da der Google Play Store in China nicht verfügbar ist, müssen Android-Geräte Apps von chinesischen Marktplätzen beziehen. Das Unternehmensportal unterstützt diesen Workflow durch Umleiten von Android-Benutzern in China, damit sie das Unternehmensportal und Outlook-Apps von lokalen App-Stores herunterladen können. Dies verbessert die Benutzerfreundlichkeit, wenn Richtlinien für bedingten Zugriff aktiviert sind, sowohl für die mobile Geräteverwaltung als auch die mobile Anwendungsverwaltung. Das Unternehmensportal und Outlook-Apps für Android sind in den folgenden chinesischen App-Stores verfügbar:
+1. Einen neuen APPX-App-Typ in der klassischen Intune-Verwaltungskonsole hinzufügen, der nur für MDM-registrierte Geräte bereitgestellt werden kann
+2. Den vorhandenen APPX-App-Typ nur für PCs wiederverwenden, die über den Intune PC-Agent verwaltet werden
+3. Alle vorhandenen APPX-Formate in MDM-Formate mit der Migration konvertieren
 
-- [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
-- [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
-- [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
-- [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
-- [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
+#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
 
-### <a name="best-practice-make-sure-your-company-portal-apps-are-up-to-date---879465--"></a>Bewährte Methode: Sicherstellen, dass die Unternehmensportal-Apps auf dem neuesten Stand sind <!--879465-->
+Diese Änderungen werden keine Ihrer vorhandenen Bereitstellungen auf Geräte beeinflussen, die über den Intune PC-Agent verwaltet werden. Nach der Migration können Sie diese migrierten APPX-Formate auf allen neuen Geräten bereitstellen, die über den Intune PC-Agent verwaltet wird und die zuvor noch nicht zugewiesen wurden.
 
-Im Dezember 2016 haben wir ein Update veröffentlicht, das die Erzwingung der mehrstufigen Authentifizierung (multi-factor authentication, MFA) für eine Gruppe von Benutzern ermöglicht, wenn diese ein Gerät unter iOS, Android, Windows 8.1 (oder höher) oder Windows Phone 8.1 (oder höher) registrieren. Für dieses Feature werden bestimmte Basisversionen der Unternehmensportal-App für Android (ab v5.0.3419.0) und iOS (ab v2.1.17) benötigt.
+#### <a name="what-action-do-i-need-to-take"></a>Was muss ich tun?
 
-Intune wird von Microsoft kontinuierlich verbessert, indem die Konsole und die Unternehmensportal-Apps für alle unterstützten Plattformen um neue Funktionen erweitert werden. Microsoft veröffentlicht deshalb nur Korrekturen für Probleme, die in der jeweils aktuellen Version der Unternehmensportal-App vorliegen. Wir empfehlen daher die Verwendung der jeweils neuesten Version der Unternehmensportal-Apps, um optimale Ergebnisse zu erzielen.
-
->[!Tip]
-> Stellen Sie sicher, dass die Benutzer auf ihren Geräten die automatische Aktualisierung von Apps über den entsprechenden App Store konfiguriert haben. Wenn Sie die Android-Unternehmensportal-App über eine Netzwerkfreigabe bereitgestellt haben, können Sie die neueste Version aus dem [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49140) herunterladen.
-
-### <a name="microsoft-teams-is-now-enabled-for-mam-on-ios-and-android"></a>Microsoft Teams nun für MAM unter iOS und Android verfügbar
-
-Microsoft hat die allgemeine Verfügbarkeit von Microsoft Teams angekündigt. Die aktualisierten Microsoft Teams-Apps für iOS und Android verfügen nun über Funktionen für die mobile App-Verwaltung (Mobile App Management, MAM) mit Intune. Ihre Teams profitieren dadurch von einer flexiblen geräteübergreifenden Arbeitsweise, und Gespräche sowie Unternehmensdaten sind in jeder Phase bestens geschützt. Ausführlichere Informationen finden Sie in der [Microsoft-Teams-Ankündigung](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/) des Enterprise Mobility and Security-Blogs.
+Nach der Migration müssen Sie die APPX erneut als PC-APPX hochladen, wenn Sie neue PC-Bereitstellungen machen möchten. Weitere Informationen finden Sie unter [Appx changes in Intune on Azure (APPX-Änderungen in Intune unter Azure)](https://aka.ms/appxchange) im Intune-Support-Teamblog.  
 
 
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Neuigkeiten in der öffentlichen Vorschau der neuen Intune-Administratoroberfläche auf Azure <!--736542-->
@@ -111,13 +98,22 @@ Die in der Verwaltung mobiler Anwendungen (Mobile Application Management, MAM) v
 
 ## <a name="whats-coming"></a>Was steht an?
 
+### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Stellen Sie sich auf eine Änderung ein: Intune ändert die Oberfläche des Intune-Partnerportals <!-- 1050016 -->
+
+Ab dem Dienstupdate Mitte Mai 2017 entfernen wir die Intune-Partnerseite von manage.microsoft.com.  
+
+Wenn Sie ein Partneradministrator sind, können Sie über die Intune-Partnerseite nicht mehr im Namen Ihrer Kunden Elemente anzeigen und Aktionen durchführen. Stattdessen müssen Sie sich bei einer der beiden anderen Partnerportale von Microsoft anmelden.
+
+Sowohl das [Microsoft Partner Center](https://partnercenter.microsoft.com/) als auch das [Microsoft Office 365 Partner Admin Center](https://portal.office.com/) ermöglicht Ihnen das Anmelden bei den von Ihnen verwalteten Kundenkonten. Verwenden Sie als Partner künftig eine dieser Websites für die Verwaltung Ihrer Kunden. 
+
+
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple erfordert Updates für die Transportsicherheit für Anwendungen <!--748318-->
 
 Apple hat angekündigt, dass sie ab Frühjahr 2017 bestimmte Anforderungen für die Transportsicherheit für Anwendungen (Application Transport Security, ATS) erzwingen werden. ATS wird verwendet, um eine strengere Sicherheit in allen App-Kommunikationen über HTTPS zu erzwingen. Diese Änderung wirkt sich auf Intune-Kunden aus, die die iOS-Unternehmensportal-App verwenden. Unter [Intune support blog (Intune-Supportblog)](https://aka.ms/compportalats) finden Sie weitere Informationen.
 
 ### <a name="see-also"></a>Weitere Informationen:
 * [Microsoft Intune-Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Roadmap für die Cloudplattform](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Roadmap für die Cloudplattform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Neuigkeiten in der Azure-Vorschau](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [What‘s new in the Intune App UI (Neues auf der Intune-App-Benutzeroberfläche)](https://docs.microsoft.com/intune/whats-new/whats-new-in-company-portal-ui)
 * [Neuheiten – Archiv](whats-new-archive.md)
