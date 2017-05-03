@@ -15,8 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: b02a5247cec36b45679a76bf3d637cf8b5c031f4
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 0b5586a06af7658c0c7a328ae1a824f88129039f
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -36,7 +37,7 @@ Lookout MTP erlaubt nur Benutzern in einer konfigurierten Azure AD-Gruppe den Zu
 
 * E-Mail: enterprisesupport@lookout.com
 * Melden Sie sich bei der [MTP-Konsole](http://aad.lookout.com) an, und navigieren Sie zum Modul **Support**.
-* Navigieren Sie zu: „https://enterprise.support.lookout.com/hc/en-us/requests“, und stellen Sie eine Supportanfrage.
+* Navigieren Sie zu: „https://enterprise.support.lookout.com/hc/requests“, und stellen Sie eine Supportanfrage.
 
 ## <a name="unable-to-sign-in"></a>Die Anmeldung ist nicht möglich
 Der folgende Fehler wird angezeigt, wenn der globale Administratorbenutzer von Azure AD das erstmalige Lookout-Setup nicht akzeptiert hat.
@@ -55,7 +56,7 @@ Diese Problem kann in allen folgenden Szenarien auftreten:
 
 ### <a name="device-reported-as-pending"></a>Gerät wird als **ausstehend** gemeldet.
 
-Ein Gerät wird als **Ausstehend** angezeigt, wenn der Endbenutzer die Lookout for Work-App nicht geöffnet und auf die Schaltfläche **Aktivieren** getippt hat. Weitere Informationen zur Geräteaktivierung mit der Lookout for Work-App finden Sie unter [Sie werden aufgefordert, Lookout for Work auf Ihrem Android-Gerät zu installieren](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android) und [Sie werden aufgefordert, Lookout for Work auf Ihrem iOS-Gerät zu installieren](https://docs.microsoft.com/en-us/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios).
+Ein Gerät wird als **Ausstehend** angezeigt, wenn der Endbenutzer die Lookout for Work-App nicht geöffnet und auf die Schaltfläche **Aktivieren** getippt hat. Weitere Informationen zur Geräteaktivierung mit der Lookout for Work-App finden Sie unter [Sie werden aufgefordert, Lookout for Work auf Ihrem Android-Gerät zu installieren](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android) und [Sie werden aufgefordert, Lookout for Work auf Ihrem iOS-Gerät zu installieren](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios).
 
 ## <a name="device-whos-active-but-has-no-device-id"></a>Gerät ist aktiv, verfügt aber nicht über eine Geräte-ID.
 Wenn ein aktives Gerät in der Lookout MTP-Konsole nicht über eine Geräte-ID verfügt, befindet sich der Benutzer des Geräts nicht in der Registrierungsgruppe. Ein Gerät kann diesen Zustand aufweisen, wenn der Benutzer des Geräts aus der Registrierungsgruppe entfernt wurde oder wenn die Registrierungsgruppe entfernt wurde.
@@ -83,14 +84,9 @@ Wenn sich der neue Benutzer in einer Lookout MTP-Registrierungsgruppe befindet, 
 ## <a name="compliance-remediation-workflows"></a>Arbeitsabläufe zur Wiederherstellung der Kompatibilität
 - [Sie werden aufgefordert, Lookout for Work auf Ihrem Android-Gerät zu installieren]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 - [Sie müssen eine Bedrohung beseitigen, die Lookout for Work auf Ihrem Android-Gerät erkannt hat](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
-- [Sie müssen eine Bedrohung beseitigen, die Lookout for Work auf Ihrem iOS-Gerät erkannt hat](https://docs.microsoft.com/en-us/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
+- [Sie müssen eine Bedrohung beseitigen, die Lookout for Work auf Ihrem iOS-Gerät erkannt hat](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 
 ### <a name="see-also"></a>Weitere Informationen:
-[Einrichten Ihres Abonnements für Lookout MTP](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+[Einrichten Ihres Abonnements für Lookout MTP](https://docs.microsoft.com/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
 
