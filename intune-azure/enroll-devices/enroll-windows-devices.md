@@ -5,7 +5,7 @@ description: "Intune in Azure (Vorschau): Aktivieren Sie die Verwaltung mobiler 
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/21/17
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: b62a5704605f5cf89efb4052180f09f88eb788e1
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 3c764b269916ae1a9b076617842eb26d7fd13bab
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -28,7 +28,10 @@ ms.lasthandoff: 04/06/2017
 
 Dieses Thema hilft IT-Administratoren, die Windows-Registrierung für ihre Benutzer zu vereinfachen.  Windows-Geräte können ohne zusätzliche Schritte registriert werden, aber Sie können die Registrierung für Ihre Benutzer vereinfachen.
 
-Zwei Faktoren bestimmen, wie Sie Windows-Geräte registrieren können:
+Für Geräte, die das Windows 10 Creators Update ausführen und in die Azure Active Directory-Domäne eingebunden sind, haben wir Unterstützung für die Mehrbenutzerverwaltung hinzugefügt. Das bedeutet Folgendes: Wenn sich unterschiedliche Standardbenutzer mit ihren Azure AD-Anmeldeinformationen auf dem Gerät anmelden, erhalten sie alle Apps und Richtlinien, die ihrem jeweiligen Benutzernamen zugewiesen sind. Benutzer können das Unternehmensportal derzeit nicht für Self-Service-Szenarien – beispielsweise zum Installieren von Apps – verwenden.
+
+Zwei Faktoren bestimmen, wie Sie die Registrierung von Windows-Geräten vereinfachen können:
+
 - **Verwenden Sie Azure Active Directory Premium?** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) ist in Enterprise Mobility + Security und in anderen Lizenzierungsplänen enthalten.
 - **Welche Versionen von Windows-Clients werden registriert?** <br>Windows 10-Geräte können automatisch durch Hinzufügen eines Geschäfts-oder Schulkontos registriert werden. Frühere Versionen müssen mithilfe der Unternehmensportal-App registriert werden.
 
@@ -40,7 +43,7 @@ Zwei Faktoren bestimmen, wie Sie Windows-Geräte registrieren können:
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Aktivieren der Windows-Registrierung ohne Azure AD Premium
-Sie können Benutzern das Registrieren ihrer Geräte ohne automatische Azure AD Premium-Registrierung ermöglichen. Nachdem Sie Benutzerkonten Lizenzen zugewiesen haben, können Benutzer dieses Konto einem Windows-Gerät hinzufügen und zustimmen, das Gerät in der Verwaltung zu registrieren. Durch das Erstellen eines DNS-Alias (Eintragstyp CNAME) erleichtern Sie es den Benutzern, ihre Geräte zu registrieren. Wenn Sie DNS-CNAME-Ressourceneinträge erstellen, können Benutzer sich mit Intune verbinden und dort registrieren, ohne einen Servernamen eingeben zu müssen.
+Sie können Benutzern das Registrieren ihrer Geräte ohne automatische Azure AD Premium-Registrierung ermöglichen. Weisen Sie Benutzern Lizenzen zu, damit sie sich registrieren können, sobald sie den privat genutzten Geräten ihre Geschäftskonten hinzugefügt haben oder Ihrer Azure AD mit den firmeneigenen Geräten beigetreten sind. Durch das Erstellen eines DNS-Alias (Eintragstyp CNAME) erleichtern Sie es den Benutzern, ihre Geräte zu registrieren. Wenn Sie DNS-CNAME-Ressourceneinträge erstellen, können Benutzer sich mit Intune verbinden und dort registrieren, ohne einen Servernamen eingeben zu müssen.
 
 **Schritt 1: Erstellen von CNAME-Einträgen** (optional)<br>
 Erstellen Sie CNAME-DNS-Ressourceneinträge für die Domäne des Unternehmens. Wenn der Name Ihrer Unternehmenswebsite beispielsweise „contoso.com“ lautet, erstellen Sie einen CNAME-Eintrag im DNS, der „EnterpriseEnrollment.contoso.com“ auf „enterpriseenrollment-s.manage.microsoft.com“ umleitet.

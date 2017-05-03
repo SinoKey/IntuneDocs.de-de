@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/29/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
-ms.openlocfilehash: 009c6491b8ce457a371f5db31de3f122fa41fb95
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 3ba986b624e602f05eb6ab25ec30e9d58173dbd8
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -42,6 +42,7 @@ ms.lasthandoff: 03/30/2017
 |**Bildschirmaufnahme**|Ermöglicht dem Benutzer, den Bildschirminhalt als Bild zu erfassen.|Nein|Ja|
 |**Sprach-Assistent**|Zulassen der Verwendung von Sprach-Assistent-Software auf dem Gerät.|Nein|Ja|
 |**YouTube**|Ermöglicht die Verwendung der YouTube-App auf dem Gerät|Nein|Ja|
+|**Freigegebene Geräte**|Konfigurieren Sie ein verwaltetes Samsung KNOX-Standardgerät als freigegeben. In diesem Modus können Endbenutzer sich auf dem Gerät mit ihren Azure AD-Anmeldeinformationen an- und wieder abmelden, und das Gerät wird zentral verwaltet, ob es sich in Gebrauch befindet oder nicht.<br>Wenn sich Endbenutzer anmelden, verfügen Sie über Zugriff auf Apps und erhalten zusätzlich alle Richtlinien, die ihnen zugewiesen sind. Wenn sich Benutzer abmelden, werden alle App-Daten gelöscht.|Nein|Ja|
 
 ## <a name="password"></a>Kennwort
 
@@ -53,11 +54,18 @@ ms.lasthandoff: 03/30/2017
 |**Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung**|Gibt die Anzahl der inaktiven Minuten an, bevor das Gerät automatisch gesperrt wird.|Ja|Ja|
 |**Anzahl von fehlgeschlagenen Anmeldungen, bevor das Gerät zurückgesetzt wird**|Gibt die Anzahl zulässiger Anmeldefehler an, bevor das Gerät zurückgesetzt wird.|Ja|Ja|
 |**Kennwortablauf (Tage)**|Gibt die Anzahl der Tage an, bevor das Gerätekennwort geändert werden muss.|Ja|Ja|
-|**Erforderlicher Kennworttyp**|Gibt den erforderlichen Grad der Kennwortkomplexität an. Zudem wird angegeben, ob biometrische Geräte zulässig sind.|Ja|Ja|
+|**Erforderlicher Kennworttyp**|Gibt den erforderlichen Grad der Kennwortkomplexität an. Zudem wird angegeben, ob biometrische Geräte zulässig sind. Wählen Sie aus:<br><br>    -     **Gerätestandard**<br>-     **Biometrie auf niedriger Sicherheitsstufe**<br>    -     **Mindestens numerisch**<br>    -     **Numerisch komplex** (Sich wiederholende oder fortlaufende Ziffern wie „1111“ oder „1234“ sind nicht zulässig.)<sup>1</sup><br>    -     **Mindestens alphabetisch**<br>    -     **Mindestens alphanumerisch**<br>    -     **Mindestens alphanumerisch mit Symbolen**|Ja|Ja|
 |**Wiederverwendung vorheriger Kennwörter verhindern**|Hindert den Endbenutzer daran, ein bereits verwendetes Passwort erneut festzulegen.|Ja|Ja|
 |**Fingerabdruckentsperrung**|Erlaubt die Verwendung eines Fingerabdrucks zum Entsperren unterstützter Geräte|Nein|Ja|
 |**Smart Lock und andere Vertrauens-Agents**|Ermöglicht die Steuerung des Smart Lock-Features auf kompatiblen Android-Geräten (Samsung KNOX Standard 5.0 und höher). Diese Telefonfunktion wird manchmal als Vertrauens-Agent bezeichnet und ermöglicht Ihnen das Deaktivieren oder Umgehen des Kennworts für den Gerätesperrbildschirm, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet, (wenn es z. B. mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet). Mit dieser Einstellung können Sie verhindern, dass Benutzer Smart Lock konfigurieren.|Ja (5.0 und höher)|Nein|
 |**Verschlüsselung**|Erfordert die Verschlüsselung der Dateien auf dem Gerät.|Ja|Ja|
+
+<sup>1</sup>Bevor Sie diese Einstellung Geräten zuweisen, stellen Sie sicher, dass die Unternehmensportal-App auf den Zielgeräten auf die neueste Version aktualisiert wurde.
+
+Wenn Sie die Einstellung **Numerisch komplex** konfigurieren und sie dann einem Gerät mit einer früheren Android-Version als 5.0 zuweisen, gilt das folgende Verhalten.
+- Wenn die Unternehmensportal-App eine frühere Version als 1704 ausführt, wird keine PIN-Richtlinie auf das Gerät angewendet und eine Fehlermeldung im Intune-Portal angezeigt.
+- Wenn die Unternehmensportal-App auf die Version 1704 aktualisiert wurde, wird nur eine einfache PIN angewendet. Frühere Android-Versionen als 5.0 unterstützen diese Einstellung nicht. Es wird keine Fehlermeldung im Intune-Portal angezeigt.
+
 
 ## <a name="google-play-store"></a>Google Play Store
 

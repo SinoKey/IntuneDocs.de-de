@@ -1,22 +1,23 @@
 ---
 title: "Einstellungen der Richtlinie für Windows-Editionsupgrades | Microsoft-Dokumentation"
-description: "Erfahren Sie, wie Sie Windows 10-Geräte mit Intune automatisch auf die neueste Version aktualisieren."
+description: "Erfahren Sie, wie Sie Windows 10-Geräte mit Intune automatisch auf eine andere Version aktualisieren."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
-ms.reviewer: jeffgilb
+ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ae6477866991cec4091ff2790b925b0e464375f9
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 81061f032ef2079695f45e54e99cbb6479252bed
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: ae6477866991cec4091ff2790b925b0e464375f9
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Mithilfe der Microsoft Intune-**Richtlinie für Editionsupgrades** können Sie für Geräte, die eine der folgenden Windows 10-Versionen ausführen, automatisch Upgrades vornehmen:
+Mithilfe der Microsoft Intune-**Richtlinie für Editionsupgrades** können Sie für Geräte, die eine der folgenden Windows 10-Versionen ausführen, automatisch Upgrades auf eine andere Edition vornehmen:
 * Windows 10 Desktop
 * Windows 10 Holographic
 * Windows 10 Mobile
@@ -54,9 +55,4 @@ Bevor Sie beginnen, Geräte auf die neueste Version zu aktualisieren, benötigen
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

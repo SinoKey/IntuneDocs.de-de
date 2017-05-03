@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: d59ddb11ef96e90fdc47ad556c300cfa1dd53de5
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 9178404c1ed0b09ac4ae21c9c3a1b8d817241ea0
+ms.openlocfilehash: 4c5e436373303d44e01a9ee8d1474334cf8655db
+ms.lasthandoff: 04/17/2017
 
 
 ---
@@ -42,7 +42,7 @@ Es folgt ein Beispiel, wie Sie die Migration in Ihrer Organisation kommunizieren
     -   [Laden Sie die E-Mail \#2-Vorlage zur Verwendung in Ihrer Organisation herunter.](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
--   **E-Mail \#3:** Teilen Sie den Benutzern den Zeitplan mit, bevor der Zugriff beeinträchtigt wird. Erinnern Sie die Benutzer nochmals an die Vorteile und strategischen Gründe für die Migration. Das Zeitfenster für die Versendung der E-Mails sollte gleitend sein, sodass die Phasen gestaffelt durchgeführt werden können. Schicken Sie zum Beispiel im Juni E-Mail \#1 an die Benutzer von Phase 1, E-Mail \#2 an die Benutzer von Phase 2 und E-Mail \#3 an die Benutzer von Phase 3.
+-   **E-Mail \#3:** Teilen Sie den Benutzern den Zeitplan mit, bevor der Zugriff beeinträchtigt wird. Erinnern Sie die Benutzer nochmals an die Vorteile und strategischen Gründe für die Migration. Das Zeitfenster für die Versendung der E-Mails sollte gleitend sein, sodass die Phasen gestaffelt durchgeführt werden können. Schicken Sie zum Beispiel im Juni E-Mail \#1 an die Benutzer von Phase 1, E-Mail \#2 an die Benutzer von Phase 2 und E-Mail \#1 an die Benutzer von Phase 3.
 
     -   [Laden Sie die E-Mail \#3-Vorlage zur Verwendung in Ihrer Organisation herunter.](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
 
@@ -54,7 +54,7 @@ Nach einem bestimmten Zeitraum können Sie beginnen, Kompatibilität über Richt
 
 Intune verfügt über zusätzliche Vorlagenressourcen zur Förderung der Geräteregistrierung für Endbenutzer:
 
--   Weitere Anleitungen zu den Registrierungsschritten für die mobile Betriebssystemplattform finden Sie unter [Informieren der Endbenutzer über den Einsatz von Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
+-   Weitere Anleitungen zu den Registrierungsschritten für die mobile Betriebssystemplattform finden Sie unter [Informieren der Endbenutzer über den Einsatz von Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
 
 -   Laden Sie eine anpassbare [Endbenutzer-Intune-Registrierungsvorlage für IT-Administratoren](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) herunter
 

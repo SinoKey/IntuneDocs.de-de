@@ -1,6 +1,6 @@
-## <a name="set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium"></a>Einrichten der automatischen Registrierung mit Azure Active Directory Premium für Windows 10 und Windows 10 Mobile
+## <a name="enable-windows-10-automatic-enrollment"></a>Aktivieren der automatischen Registrierung von Windows 10
 
-Mit der automatischen Registrierung können Benutzer entweder unternehmenseigene oder private Windows 10-PCs und Windows 10 Mobile-Geräte in Intune registrieren, indem Sie ein Geschäfts- oder Schulkonto hinzufügen und zustimmen, dass das Gerät verwaltet wird. So einfach ist das. Im Hintergrund registriert sich das Gerät des Benutzers und tritt Azure Active Directory bei. Nach der Registrierung wird das Gerät mit Intune verwaltet.
+Mit der Funktion der automatischen Registrierung können Benutzer ihre Windows 10-Geräte bei Intune registrieren, wenn sie ihr Arbeitskonto auf Geräten hinzufügen, die ihnen privat gehören, oder wenn sie ihre unternehmenseigenen Geräte in Ihr Azure Active Directory einbinden. Im Hintergrund registriert sich das Gerät des Benutzers und tritt Azure Active Directory bei. Nach der Registrierung wird das Gerät mit Intune verwaltet.
 
 **Voraussetzungen**
 - Azure Active Directory Premium-Abonnement ([Testabonnement](http://go.microsoft.com/fwlink/?LinkID=816845))
@@ -9,26 +9,31 @@ Mit der automatischen Registrierung können Benutzer entweder unternehmenseigene
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Konfigurieren der automatischen MDM-Registrierung
 
-1. Wechseln Sie im [Azure-Verwaltungsportal](https://manage.windowsazure.com) (https://manage.windowsazure.com) zum Knoten **Active Directory**, und wählen Sie Ihr Verzeichnis aus.
+1. Melden Sie sich im [Azure-Verwaltungsportal](https://portal.azure.com) (https://manage.windowsazure.com) an, und wählen Sie **Azure Active Directory** aus.
 
-2. Wählen Sie die Registerkarte **Anwendungen** aus. **Microsoft Intune** wird in der Liste der Anwendungen angezeigt.
+  ![Screenshot des Azure-Portals](../media/auto-enroll-azure-main.png)
 
-    ![Azure AD-Apps mit Microsoft Intune](../media/aad-intune-app.png)
+2. Wählen Sie **Mobilität (MDM und MAM)** aus.
 
-3. Wählen Sie den Pfeil für **Microsoft Intune** aus. Es wird eine Seite angezeigt, auf der Sie Microsoft Intune konfigurieren können.
+  ![Screenshot des Azure-Portals](../media/auto-enroll-mdm.png)
 
-4. Wählen Sie **Konfigurieren** aus, um mit der Konfiguration der automatischen MDM-Registrierung mit Microsoft Intune zu beginnen.
+3. Wählen Sie **Microsoft Intune** aus.
+
+  ![Screenshot des Azure-Portals](../media/auto-enroll-intune.png)
+
+4. Konfigurieren Sie den **MDM-Benutzerbereich**. Geben Sie an, welche Geräte von Benutzern von Microsoft Intune verwaltet werden sollen. Die Windows 10-Geräte dieser Benutzer werden automatisch für die Verwaltung mit Microsoft Intune registriert.
+
+  - **Keine**
+  - **Einige**
+  - **Alle**
+
+ ![Screenshot des Azure-Portals](../media/auto-enroll-scope.png)
 
 5. Verwenden Sie die Standardwerte für die folgenden URLs:
+  - **URL für MDM-Nutzungsbedingungen**
+  - **URL für MDM-Ermittlung**
+  - **MDM Compliance-URL**
 
-  - **MDM-Registrierung**
-  - **MDM-Nutzungsbedingungen** 
-  - **MDM-Konformität**
+6. Wählen Sie **Speichern** aus.
 
-6.  Geben Sie an, welche Geräte von Benutzern von Microsoft Intune verwaltet werden sollen. Die Windows 10-Geräte dieser Benutzer werden automatisch für die Verwaltung mit Microsoft Intune registriert.
-
-  - **Alle**
-  - **Gruppen**
-  - **Keine**
-
-7. Wählen Sie **Speichern** aus.
+Standardmäßig ist die zweistufige Authentifizierung für den Dienst nicht aktiviert. Die zweistufige Authentifizierung wird jedoch empfohlen, wenn Sie ein Gerät registrieren. Bevor die zweistufige Authentifizierung für diesen Dienst erforderlich ist, müssen Sie einen Anbieter für die zweistufige Authentifizierung in Azure Active Directory und Ihre Benutzerkonten konfigurieren. Weitere Informationen finden Sie unter [Erste Schritte mit Azure Multi-Factor Authentication-Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).

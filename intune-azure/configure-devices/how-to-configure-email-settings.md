@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/29/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
-ms.openlocfilehash: 70d013768c07f1782255a309b5941f05c2222912
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
+ms.openlocfilehash: d5c84c5d3bc700985cc14dbd7eaae5a493cca064
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -89,4 +89,8 @@ Wenn für den Benutzer bereits ein E-Mail-Konto konfiguriert wurde, hängt das E
 - **Windows:** Basierend auf dem Hostnamen und der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt. Intune überschreibt das vorhandene vom Benutzer erstellte E-Mail-Profil.
 - **Android:** Basierend auf der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt und durch das Intune-Profil überschrieben.
 Da Android zum Identifizieren des Profils keinen Hostnamen verwendet, wird davon abgeraten, mehrere E-Mail-Profile für die Verwendung unter derselben E-Mail-Adresse auf unterschiedlichen Hosts zu erstellen, da sie sich gegenseitig überschreiben.
+
+### <a name="update-an-email-profile"></a>Aktualisieren eines E-Mail-Profils
+
+Wenn Sie ein zuvor zugewiesenes E-Mail-Profil ändern, werden Endbenutzer möglicherweise in einer Meldung aufgefordert, die Neukonfiguration ihrer E-Mail-Einstellungen zu genehmigen.
 
