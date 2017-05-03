@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -225,6 +225,67 @@ Verwenden Sie die Informationen in dieser Liste zur Identifizierung des Namens, 
 -     **Streaming freigegebener Fotos:** Legen Sie diese Einstellung auf **Nein** fest, um die **iCloud-Fotofreigabe** auf dem Gerät zu deaktivieren.
 -     **Aktivitätsfortsetzung:** Erlauben Sie dem Benutzer, die Arbeit, die er auf einem iOS-Gerät gestartet hat, auf einem anderen iOS- oder macOS-Gerät fortzusetzen (Übergabe).
 
+## <a name="autonomous-single-app-mode-supervised-only"></a>Modus der autonomen einzelnen App (nur überwacht)
+
+Verwenden Sie diese Einstellungen, um iOS-Geräte zur Ausführung bestimmter Apps im Modus der autonomen einzelnen App zu konfigurieren. Wenn dieser Modus konfiguriert ist und die App ausgeführt wird, wird das Gerät gesperrt, sodass es nur die App ausführen kann. Ein Beispiel hierfür ist, wenn Sie eine App konfigurieren, mit der Benutzer einen Test auf dem Gerät ausführen können. Wenn die Aktionen der App abgeschlossen sind, oder Sie diese Richtlinie entfernen, kehrt das Gerät in seinen normalen Zustand zurück.
+
+### <a name="settings"></a>Einstellungen
+
+- **App-Name**: Geben Sie den Namen der App so ein, wie er in der Liste der Apps auf diesem Blatt angezeigt wird.
+- **App-Bündel-ID**: Geben Sie die Bündel-ID der App ein. Hilfe finden Sie in diesem Thema unter **Bündel-ID-Referenz für integrierte iOS-Apps**.
+
+Nachdem Sie jeden App-Namen und jede Bündel-ID angegeben haben, wählen Sie **Hinzufügen** zum Anfügen zur Liste.
+
+- **Importieren**: Importieren einer Datei mit kommagetrennten Werten (CSV) mit einer Liste von App-Namen und ihren zugeordneten Bündel-IDs.
+- **Exportieren**: Exportieren der von Ihnen konfigurierten App-Namen und zugeordneten Bündel-IDs nach einer Datei mit kommagetrennten Werten (CSV).
+
+### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Bündel-ID-Referenz für integrierte iOS-Apps
+
+Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die Bündel-ID von anderen Apps zu finden, wenden Sie sich an den Softwarehersteller.
+
+|||
+|-|-|
+|App-Name|Bündel-ID|
+|App Store|com.apple.AppStore|
+|Calculator|com.apple.calculator|
+|Kalender|com.apple.mobilecal|
+|Kamera|com.apple.camera|
+|Clock|com.apple.mobiletimer|
+|Compass|com.apple.compass|
+|Kontakte|com.apple.MobileAddressBook|
+|FaceTime|com.apple.facetime|
+|Find Friends|com.apple.mobileme.fmf1|
+|Find iPhone|com.apple.mobileme.fmip1|
+|Gamecenter|com.apple.gamecenter|
+|GarageBand|com.apple.mobilegarageband|
+|Integrität|com.apple.Health|
+|iBooks|com.apple.iBooks|
+|iTunes Store|com.apple.MobileStore|
+|iTunes U|com.apple.itunesu|
+|Keynote|com.apple.Keynote|
+|Mail|com.apple.mobilemail|
+|Zuordnungen|com.apple.Maps|
+|Nachrichten|com.apple.MobileSMS|
+|Musik|com.apple.Music|
+|News|com.apple.news|
+|Hinweise|com.apple.mobilenotes|
+|Zahlen|com.apple.Numbers|
+|Seiten|com.apple.Pages|
+|Photo Booth|com.apple.Photo Booth|
+|Fotos|com.apple.mobileslideshow|
+|Podcasts|com.apple.podcasts|
+|Reminders|com.apple.reminders|
+|Safari|com.apple.mobilesafari|
+|Einstellungen|com.apple.Preferences|
+|Stocks|com.apple.stocks|
+|Tipps|com.apple.tips|
+|Videos|com.apple.videos|
+|VoiceMemos|com.apple.VoiceMemos|
+|Wallet|com.apple.Passbook|
+|Überwachen|com.apple.Bridge|
+|Weather|com.apple.weather|
+
+
 ## <a name="kiosk"></a>Kiosk
 -     **Aktivierungssperre:** Aktivieren Sie die Aktivierungssperre auf überwachten iOS-Geräten.
 -     **App, die im Kioskmodus ausgeführt wird:** Mit **Verwaltete App** können Sie eine in Intune hinzugefügte App auswählen, und mit **Store App** können Sie eine URL zu einer App im Store angeben. Andere Apps dürfen auf dem Gerät nicht ausgeführt werden. Weitere Informationen finden Sie unter „Angeben von URLs zu App-Stores“ weiter unten in diesem Thema.
@@ -256,4 +317,21 @@ Verwenden Sie die Informationen in dieser Liste zur Identifizierung des Namens, 
 -     **Javascript:** Erlaubt die Ausführung von Java-Skripts im Browser.
 -     **Betrugswarnungen:** Erlaubt die Verwendung von Betrugswarnungen im Browser.
 -     **Popups:** Aktivieren oder deaktivieren Sie den Popupblocker des Browsers.
+
+
+## <a name="domains"></a>Domains
+
+### <a name="unmarked-email-domains"></a>Nicht markierte E-Mail-Domänen
+
+Fügen Sie im Feld **E-Mail-Domänen-URL** eine oder mehrere URLs der Liste hinzu. Wenn Endbenutzer eine E-Mail von einer anderen Domäne als der erhalten, die Sie konfiguriert haben, wird die E-Mail in der iOS-Mail-App als nicht vertrauenswürdig gekennzeichnet.
+
+
+### <a name="managed-web-domains"></a>Verwaltete Webdomänen
+
+Fügen Sie im Feld **Webdomänen-URL** eine oder mehrere URLs der Liste hinzu. Wenn Dokumente von den Domänen heruntergeladen werden, die Sie angeben, gelten sie als verwaltet. Diese Einstellung gilt nur für Dokumente, die mit dem Safari-Browser heruntergeladen werden.
+
+
+### <a name="safari-password-auto-fill-domains"></a>Domänen für automatisches Ausfüllen des Safari-Kennworts
+
+Fügen Sie im Feld **Domänen-URL** eine oder mehrere URLs der Liste hinzu. Benutzer können nur Webkennwörter von URLs in dieser Liste speichern. Diese Einstellung gilt nur für den Safari-Browser und Geräte mit iOS 9.3 und höher im überwachten Modus. Wenn Sie keine URLs angeben, können Kennwörter von allen Websites gespeichert werden.
 

@@ -15,8 +15,9 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: e45d1f0cec7d07ea7d01be0f6ec8443e6521681a
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -41,7 +42,7 @@ Sie können Richtlinien für verwaltete Browser für die folgenden Gerätetypen 
 
 -   Geräte unter iOS 8.0 und höher
 
-Intune Managed Browser unterstützt das Öffnen von Webinhalten von [Microsoft Intune-Anwendungspartnern](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+Intune Managed Browser unterstützt das Öffnen von Webinhalten von [Microsoft Intune-Anwendungspartnern](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).
 
 ## <a name="create-a-managed-browser-policy"></a>Erstellen einer Richtlinie für Managed Browser
 
@@ -109,7 +110,7 @@ Nachfolgend wird erläutert, welche Formate und Platzhalter Sie zum Festlegen vo
 
     -   Port 443 für https
 
-    Die Verwendung von Platzhaltern für die Portnummer wird nicht unterstützt. „**http&colon;//www&period;contoso&period;com:*;**“ und „**http&colon;//www&period;contoso&period;com: /*;**“ werden beispielsweise nicht unterstützt.
+    Die Verwendung von Platzhaltern für die Portnummer wird nicht unterstützt. **http&colon;//www&period;contoso&period;com:*;** und **http&colon;//www&period;contoso&period;com: /*;** werden beispielsweise nicht unterstützt.
 
 -   In der folgenden Tabelle sind die zulässigen Muster aufgeführt, die Sie zum Festlegen von URLs verwenden können:
 
@@ -156,9 +157,4 @@ Wenn mehrere Richtlinien für Managed Browser für ein Gerät bereitgestellt wer
 -   Wenn ein Gerät erstmals Richtlinien für Managed Browser empfängt und zwei Richtlinien in Konflikt stehen, werden die URLs auf dem Gerät nicht erzwungen. Sie können die Konflikte über den Knoten **Richtlinienkonflikte** des Arbeitsbereichs **Richtlinie** anzeigen.
 
 -   Wenn ein Gerät bereits ein Richtlinie für Managed Browser erhalten hat und eine zweite Richtlinie mit in Konflikt stehenden Einstellungen bereitgestellt wird, bleiben die ursprünglichen Einstellungen auf dem Gerät bestehen. Sie können die Konflikte über den Knoten **Richtlinienkonflikte** des Arbeitsbereichs **Richtlinie** anzeigen.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

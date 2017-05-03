@@ -15,8 +15,9 @@ ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
-ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: 991393e0caf64c44cc10c7775fba45083212659e
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -108,8 +109,8 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 
   ![Wählen Sie das „In-House and Ad Hoc“-Zertifikat aus.](../media/app-wrapper/iOS-signing-cert-3.png)
 
->[!NOTE]
->Wenn Sie nicht planen, die App zu verteilen und sie nur intern testen möchten, können Sie ein iOS App-Entwicklungszertifikat anstelle eines Produktionszertifikats verwenden. Wenn Sie ein Entwicklungszertifikat verwenden, stellen Sie sicher, dass das mobile Bereitstellungsprofil auf Geräte verweist, auf denen die App installiert wird.
+  >[!NOTE]
+  >Wenn Sie nicht planen, die App zu verteilen und sie nur intern testen möchten, können Sie ein iOS App-Entwicklungszertifikat anstelle eines Produktionszertifikats verwenden. Wenn Sie ein Entwicklungszertifikat verwenden, stellen Sie sicher, dass das mobile Bereitstellungsprofil auf Geräte verweist, auf denen die App installiert wird.
 
 7. Klicken Sie unten auf der Seite auf **Next**.
 
@@ -136,7 +137,6 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 14. Doppelklicken Sie auf die Zertifikatsdatei, die Sie gerade heruntergeladen haben, um das Zertifikat einem Schlüsselbund hinzuzufügen.
 
 15. Öffnen Sie **Schlüsselbundverwaltung** erneut. Suchen Sie Ihr Zertifikat, indem Sie rechts oben in der Suchleiste nach ihrem Namen suchen. Klicken Sie mit der rechten Maustaste auf das Element, um das Menü einzublenden, und klicken Sie auf **Informationen**. In den Beispielbildschirmen verwenden wir ein Entwicklungszertifikat anstelle eines Produktionszertifikats.
-
 
   ![Hinzufügen Ihres Zertifikats zu einem Schlüsselbund](../media/app-wrapper/iOS-signing-cert-8.png)
 
@@ -205,7 +205,7 @@ Sie können die folgenden Befehlszeilenparameter mit dem App Wrapping Tool verwe
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Zeigt detaillierte Verwendungsinformationen zu den verfügbaren Befehlszeileneigenschaften für das App Wrapping Tool an.|
-|**-v**|(Optional) Gibt ausführliche Meldungen in die Konsole aus.|
+|**-v**|(Optional) Gibt ausführliche Meldungen in die Konsole aus. Sie sollten dieses Flag verwenden, um Fehler zu debuggen.|
 |**-e**| (Optional) Verwenden Sie dieses Flag, damit das App Wrapping Tool fehlende Berechtigungen bei der Verarbeitung der App entfernt. Weitere Details finden Sie unter „Festlegen von App-Berechtigungen“.|
 |**-xe**| (Optional) Gibt Informationen über die iOS-Erweiterungen in der App und die Berechtigungen aus, die für deren Verwendung erforderlich sind. Weitere Details finden Sie unter „Festlegen von App-Berechtigungen“. |
 |**-x**| (Optional) `<An array of paths to extension provisioning profiles>`. Verwenden Sie diese Option, wenn Ihre Anwendung Bereitstellungsprofile für Erweiterungen benötigt.|
@@ -399,9 +399,4 @@ Verwenden Sie die folgenden bewährten Methoden zu Sicherheit und Datenschutz, w
 - [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)</br>
 - [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
 - [Verwenden des SDK zum Aktivieren von Apps für die Verwaltung von mobilen Anwendungen](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

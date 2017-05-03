@@ -16,16 +16,16 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 7edbba3a86213db71e41bd0d0de6c5d285025b8b
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: b0d0ad102942c65ac3988ea4659b34b397289126
+ms.lasthandoff: 04/19/2017
 
 ---
 
 # <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>Einrichten eines TEM-Diensts (Telecom Expense Management) in der Vorschau von Intune in Azure
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune ermöglicht es Ihnen, durch Datenverwendung auf firmeneigenen mobilen Geräten Telekommunikationsausgaben zu verwalten. Die TEM-Lösung Datalert des Drittanbieter-Softwareentwicklers Saaswedo wurde in Intune integriert, um diese Funktion zu aktivieren. Datalert ist eine TEM-Software, mit der Sie Ihre Telekommunikationsdatennutzung verwalten und kostenintensive und unerwartete Daten- und Roamingzuschläge für mit Intune verwaltete Geräte vermeiden können. 
+Intune ermöglicht es Ihnen, durch Datenverwendung auf firmeneigenen mobilen Geräten Telekommunikationsausgaben zu verwalten. Die TEM-Lösung Datalert des Drittanbieter-Softwareentwicklers Saaswedo wurde in Intune integriert, um diese Funktion zu aktivieren. Datalert ist eine TEM-Software, mit der Sie Ihre Telekommunikationsdatennutzung verwalten und kostenintensive und unerwartete Daten- und Roamingzuschläge für mit Intune verwaltete Geräte vermeiden können.
 
 Durch die Intune-Integration mit Datalert können Sie Datennutzungsgrenzwerte im In- und Ausland zentral festlegen, überwachen und erzwingen, sobald definierte Schwellenwerte überschritten werden. Sie können den Dienst so konfigurieren, dass verschiedene Aktionen für Einzelpersonen oder Gruppen von Endbenutzern ausgeführt werden, darunter das Deaktivieren von Roaming, wenn ein Benutzer den Schwellenwert überschreitet. Berichte für Datennutzungs- und Überwachungsinformationen stehen in der Datalert-Verwaltungskonsole zur Verfügung.
 
@@ -85,7 +85,7 @@ Nach Abschluss von Schritt 1 sollte die Verbindung automatisch aktiviert werden 
 
 3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
 
-4. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Setup** > **Telecom Expense Management** aus. 
+4. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Setup** > **Telecom Expense Management** aus.
 
    Suchen Sie nach dem **Aktiv**-Verbindungsstatus oben auf der Seite.
 
@@ -97,7 +97,7 @@ Um sicherzustellen, dass die Datennutzung nur von firmeneigenen Leitungen gesamm
 
 #### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>Definieren Sie Gerätekategorien und Gerätegruppen, die den Kategorien zugeordnet sind
 
-Abhängig von Ihren organisatorischen Bedürfnissen müssen Sie mindestens zwei Gerätekategorien (z.B. Unternehmen und Privat) und dynamische Gerätegruppen für jede Kategorie erstellen. Sie können je nach Bedarf weitere Kategorien für Ihre Organisation erstellen. 
+Abhängig von Ihren organisatorischen Bedürfnissen müssen Sie mindestens zwei Gerätekategorien (z.B. Unternehmen und Privat) und dynamische Gerätegruppen für jede Kategorie erstellen. Sie können je nach Bedarf weitere Kategorien für Ihre Organisation erstellen.
 
 Diese Kategorien werden Benutzern während der Registrierung angezeigt. Je nachdem, welche Kategorie Benutzer auswählen, wird das registrierte Gerät in die entsprechende Gerätegruppe verschoben. Schritte zum Erstellen von Gerätekategorien finden Sie unter [Zuweisen von Geräten zu Gruppen](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping).
 
@@ -109,7 +109,7 @@ Um die Datalert-App in Intune für jede Plattform zu erstellen, gehen Sie wie fo
 
 1. Wählen Sie im Azure-Portal auf dem Blatt **Intune** die Option **Apps verwalten** aus.
 
-2. Wählen Sie auf dem Blatt **Apps verwalten** die Option **Verwalten** > **Apps** aus. 
+2. Wählen Sie auf dem Blatt **Apps verwalten** die Option **Verwalten** > **Apps** aus.
 
 3. Wählen Sie **Hinzufügen** aus, um eine App hinzuzufügen.
 
@@ -129,7 +129,7 @@ Um die Datalert-App in Intune für jede Plattform zu erstellen, gehen Sie wie fo
 
 1. Wählen Sie die Datalert-App für iOS aus, die Sie im vorherigen Schritt erstellt haben.
 
-2. Navigieren Sie auf dem Blatt **Apps** zu **Verwalten** > **Zuweisungen**. 
+2. Navigieren Sie auf dem Blatt **Apps** zu **Verwalten** > **Zuweisungen**.
 
 3. Wählen Sie **Gruppen auswählen** aus, und befolgen Sie die Schritte zum Auswählen der Unternehmensgerätegruppe.
 
@@ -137,9 +137,9 @@ Um die Datalert-App in Intune für jede Plattform zu erstellen, gehen Sie wie fo
 
   ![Screenshot des Blatts „Richtlinie hinzufügen“](../media/tem-assign-datalert-app-to-device-group.png)
 
-### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>Schritt 4: Hinzufügen von kostenpflichtigen Firmentelefonleitungen zur Datalert-Konsole 
+### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>Schritt 4: Hinzufügen von kostenpflichtigen Firmentelefonleitungen zur Datalert-Konsole
 
-Sie haben nun die Intune- und Datalert-Dienste so konfiguriert, dass sie miteinander kommunizieren können. Sie müssen jetzt die kostenpflichtigen Firmentelefonleitungen zur Datalert-Konsole hinzufügen und Schwellenwerte und Aktionen für alle Funk- oder Roaming-Verwendungsverstöße definieren. 
+Sie haben nun die Intune- und Datalert-Dienste so konfiguriert, dass sie miteinander kommunizieren können. Sie müssen jetzt die kostenpflichtigen Firmentelefonleitungen zur Datalert-Konsole hinzufügen und Schwellenwerte und Aktionen für alle Funk- oder Roaming-Verwendungsverstöße definieren. Sie können vom Unternehmen bezahlte Telefonleitungen der Datalert-Konsole entweder manuell hinzufügen oder die Zeilen nach der Registrierung des Geräts in Intune automatisch hinzufügen lassen.
 
 Um diese Elemente festzulegen, gehen Sie zur [Seite „Datalert setup for Microsoft Intune“ (Datalertsetup für Microsoft Intune)](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup), und führen Sie die Schritte im Setup-Assistenten unter der Registerkarte **Einstellungen** aus.
 
@@ -147,6 +147,11 @@ Um diese Elemente festzulegen, gehen Sie zur [Seite „Datalert setup for Micros
 
 
 Der Datalert-Dienst ist jetzt aktiv, und es wird damit begonnen, die Datennutzung zu überwachen und auf Geräten, die die Verwendung der konfigurierten Grenzwerte überschreiten, Mobilfunk- und Roamingdaten zu deaktivieren.
+
+## <a name="client-enrollment-experience"></a>Clientregistrierung
+Beachten Sie bei der Clientregistrierung folgende Themen:
+-    [Registrieren Ihres iOS-Geräts im Telecom Expense Management](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+-    [Registrieren Ihres Android-Gerät im Telecom Expense Management](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turning-off-the-datalert-service"></a>Deaktivieren des Datalert-Diensts
 

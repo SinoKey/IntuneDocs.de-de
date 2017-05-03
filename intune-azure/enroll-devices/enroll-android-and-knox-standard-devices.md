@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: b664620f424f9ef612d17beb810564dbdd68ff79
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: b2cbabea781840df0a2a283f803dc76520590aba
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -28,6 +28,8 @@ ms.lasthandoff: 03/22/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Mit Intune können Sie Android-Geräte, einschließlich Samsung Knox Standard-Geräte, verwalten. Um die Geräteverwaltung zu aktivieren, müssen die Benutzer ihre Geräte durch Herunterladen der Intune-Unternehmensportal-App, die bei Google Play verfügbar ist, registrieren und anschließend die App öffnen und den Anweisungen zum Registrieren folgen. Sobald sich Android-Geräte unter Verwaltung befinden, können Sie [Konformitätsrichtlinien erstellen](https://docs.microsoft.com/intune-azure/set-device-compliance/create-a-compliance-policy-for-android), [Apps verwalten](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-management) und mehr.
+
+Geräte, die unter Samsung KNOX Standard ausgeführt werden, werden nun von Intune für die Mehrbenutzerverwaltung unterstützt. Dies bedeutet, dass Endbenutzer sich auf dem Gerät mit ihren Azure AD-Anmeldeinformationen an- und wieder abmelden können, und das Gerät wird zentral verwaltet, ob es sich in Gebrauch befindet oder nicht. Wenn sich Endbenutzer anmelden, verfügen Sie über Zugriff auf Apps und erhalten zusätzlich alle Richtlinien, die ihnen zugewiesen sind. Wenn sich Benutzer abmelden, werden alle App-Daten gelöscht.
 
 ## <a name="prerequisite"></a>Voraussetzung
 

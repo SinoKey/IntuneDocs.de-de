@@ -1,6 +1,6 @@
 ## <a name="enable-windows-10-automatic-enrollment"></a>Aktivieren der automatischen Registrierung von Windows 10
 
-Mit der automatischen Registrierung können Benutzer entweder unternehmenseigene oder private Windows 10-PCs und Windows 10 Mobile-Geräte in Intune registrieren, indem Sie ein Geschäfts- oder Schulkonto hinzufügen und zustimmen, dass das Gerät verwaltet wird. So einfach ist das. Im Hintergrund registriert sich das Gerät des Benutzers und tritt Azure Active Directory bei. Nach der Registrierung wird das Gerät mit Intune verwaltet.
+Mit der Funktion der automatischen Registrierung können Benutzer ihre Windows 10-Geräte bei Intune registrieren, wenn sie ihr Arbeitskonto auf Geräten hinzufügen, die ihnen privat gehören, oder wenn sie ihre unternehmenseigenen Geräte in Ihr Azure Active Directory einbinden. Im Hintergrund registriert sich das Gerät des Benutzers und tritt Azure Active Directory bei. Nach der Registrierung wird das Gerät mit Intune verwaltet.
 
 **Voraussetzungen**
 - Azure Active Directory Premium-Abonnement ([Testabonnement](http://go.microsoft.com/fwlink/?LinkID=816845))
@@ -21,19 +21,19 @@ Mit der automatischen Registrierung können Benutzer entweder unternehmenseigene
 
   ![Screenshot des Azure-Portals](../media/auto-enroll-intune.png)
 
-4. Konfigurieren Sie, welche Benutzer automatisch registriert werden.
+4. Konfigurieren Sie den **MDM-Benutzerbereich**. Geben Sie an, welche Geräte von Benutzern von Microsoft Intune verwaltet werden sollen. Die Windows 10-Geräte dieser Benutzer werden automatisch für die Verwaltung mit Microsoft Intune registriert.
 
-  ![Screenshot des Azure-Portals](../media/auto-enroll-scope.png)
-
-  Verwenden Sie die Standardwerte für die folgenden URLs:
-  - **MDM-Registrierung**
-  - **MDM-Nutzungsbedingungen**
-  - **MDM-Konformität**
-
-5. Geben Sie an, welche Geräte von Benutzern von Microsoft Intune verwaltet werden sollen. Die Windows 10-Geräte dieser Benutzer werden automatisch für die Verwaltung mit Microsoft Intune registriert.
-
-  - **Alle**
-  - **Gruppen**
   - **Keine**
+  - **Einige**
+  - **Alle**
+
+   ![Screenshot des Azure-Portals](../media/auto-enroll-scope.png)
+
+5. Verwenden Sie die Standardwerte für die folgenden URLs:
+    - **URL für MDM-Nutzungsbedingungen**
+    - **URL für MDM-Ermittlung**
+    - **MDM Compliance-URL**
 
 6. Wählen Sie **Speichern** aus.
+
+Standardmäßig ist die zweistufige Authentifizierung für den Dienst nicht aktiviert. Die zweistufige Authentifizierung wird jedoch empfohlen, wenn Sie ein Gerät registrieren. Bevor die zweistufige Authentifizierung für diesen Dienst erforderlich ist, müssen Sie einen Anbieter für die zweistufige Authentifizierung in Azure Active Directory und Ihre Benutzerkonten konfigurieren. Weitere Informationen finden Sie unter [Erste Schritte mit Azure Multi-Factor Authentication-Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).

@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
-ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cc14d6a44b3dcb6234cc77cb463098a9d2f4c5b8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -63,7 +63,7 @@ Diese Bedingungen können für jedes Gerät im Azure-Verwaltungsportal und im Ge
     
         -    Für Geräte in diesem Status muss der Benutzer eine sichere Startkennung festlegen. Für den Benutzer erscheint eine Benachrichtigung über die Geräte von der Unternehmensportal-App, die ihn auffordert, eine Startkennung für das Gerät festzulegen. Tippen Sie auf die Benachrichtigung über die Geräte und bestätigen Sie die vorhandene PIN oder das Kennwort, und wählen Sie dann auf dem Bildschirm **Secure start-up** (Sicherer Start) die Option **Require PIN to start device** (PIN für Start des Geräts anfordern). Tippen Sie dann auf die Schaltfläche **Check Compliance** (Kompatibilität prüfen) für das Gerät aus der Unternehmensportal-App. Das Gerät sollte nun als verschlüsselt erkannt werden.
     
-        -     Einige Gerätehersteller verschlüsseln ihre Geräte mithilfe einer Standard-PIN anstelle der geheimen PIN, die vom Benutzer festgelegt wird. Intune erkennt die Verschlüsselung über die Standard-PIN als unsicher, da diese Methode der Verschlüsselung die Daten auf dem Gerät durch böswillige Benutzer mit physischem Zugriff auf das Gerät gefährden kann. Wenn dies das Problem ist, ziehen Sie die [App-Schutzrichtlinien](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies) in Betracht.
+        -     Einige Gerätehersteller verschlüsseln ihre Geräte mithilfe einer Standard-PIN anstelle der geheimen PIN, die vom Benutzer festgelegt wird. Intune erkennt die Verschlüsselung über die Standard-PIN als unsicher, da diese Methode der Verschlüsselung die Daten auf dem Gerät durch böswillige Benutzer mit physischem Zugriff auf das Gerät gefährden kann. Wenn dies das Problem ist, ziehen Sie die [App-Schutzrichtlinien](https://docs.microsoft.com/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies) in Betracht.
 
 ## <a name="policy-issues"></a>Probleme mit Richtlinien
 
@@ -119,7 +119,7 @@ Wenn diese Verfahren zur Problembehandlung das Problem nicht beheben, gibt es ei
 ### <a name="exchange-connector-logs"></a>Exchange Connector-Protokolle
 
 #### <a name="general-log-information"></a>Allgemeine Protokollinformationen
-Verwenden Sie zum Anzeigen der Exchange Connector-Protokolle das [Service Trace Viewer-Tool](Service Trace Viewer-Tool (https://msdn.microsoft.com/en-us/library/ms732023(v=vs.110).aspx'). Dieses Tool erfordert, dass Sie das Windows Server-SDK herunterladen.
+Verwenden Sie zum Anzeigen der Exchange Connector-Protokolle das [Service Trace Viewer-Tool](Service Trace Viewer-Tool (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Dieses Tool erfordert, dass Sie das Windows Server-SDK herunterladen.
 
 >[!NOTE]
 >Die Protokolle befinden sich unter „C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs“. Die Protokolle befinden sich in einer Folge von 30 Protokolldateien, die mit *Connector0.log* beginnen und mit *Connector29.log* enden. Protokolliert Rollover von einer Datei zu einer anderen, nachdem sich 10 MB an Daten in einem Protokoll angesammelt haben. Nachdem die Protokolle zu „Connector29“ gelangt sind, wird wieder bei „Connector0“ begonnen, wobei die vorherigen Protokolldateien überschrieben werden.

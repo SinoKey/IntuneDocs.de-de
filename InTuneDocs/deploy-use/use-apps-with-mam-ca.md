@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Apps mit MAM CA | Microsoft-Dokumentation
+title: "Verwenden von Apps mit bedingtem Zugriff für die Verwaltung mobiler Anwendungen"
 description: "Informationen dazu, wie Sie mit bedingtem Zugriff für die Verwaltung mobiler Anwendungen bestimmen können, welche Apps auf O365-Dienste zugreifen dürfen."
 keywords: 
 author: andredm7
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
-ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -37,6 +37,11 @@ Im Folgenden finden Sie eine Liste der Eigenschaften, die direkt vom Gerät abge
 * deviceOSType
 * deviceOSVersion
 * displayName
+
+> [!NOTE]
+> Auf Android-Geräten:
+  * Die Unternehmensportal-App muss auf dem Gerät installiert sein, der Endbenutzer muss sich aber nicht bei der App anmelden.
+  * Die Geräteregistrierung muss über die OneDrive- oder Outlook-App erfolgen.
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>So entfernen Sie ein Gerät aus der Azure AD-Registrierung.
 Eine Möglichkeit ist, die Geräteregistrierung über die Azure AD-Verwaltungskonsole zu entfernen, was normalerweise vom IT-Administrator durchgeführt wird.  Es kann aber auch vom Endbenutzer auf dem Gerät selbst durchgeführt werden.

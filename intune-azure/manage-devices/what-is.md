@@ -15,14 +15,14 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
-ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 25a46754f6c7e44b3f4fef7e8eef015cf559e31f
+ms.lasthandoff: 04/19/2017
 
 
 ---
 
-# <a name="what-is-microsoft-intune-device-management"></a>Was ist die Microsoft Intune Geräteverwaltung? 
+# <a name="what-is-microsoft-intune-device-management"></a>Was ist die Microsoft Intune Geräteverwaltung?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -38,8 +38,8 @@ Wählen Sie eine der folgenden Optionen aus:
 - **Übersicht:** Erhalten Sie Informationen zu Geräten, die Sie registriert haben, und zu den Betriebssystemen der einzelnen Geräte.
 - **Verwalten:** Wählen Sie **Alle Geräte** aus, um eine Liste aller von Ihnen verwalteten Geräte anzuzeigen.
     Wählen Sie eines dieser Geräte in der Liste aus, um das Blatt **Übersicht über** <*Gerätename*>  zu öffnen, auf dem Sie eine der folgenden Optionen auswählen können:
-    - **Übersicht:** Hier finden Sie allgemeine Informationen über das Gerät, einschließlich Informationen über den Namen, den Besitzer, ob es ein BYOD-Gerät ist, wann es zuletzt eingecheckt wurde u.v.m. 
-                
+    - **Übersicht:** Hier finden Sie allgemeine Informationen über das Gerät, einschließlich Informationen über den Namen, den Besitzer, ob es ein BYOD-Gerät ist, wann es zuletzt eingecheckt wurde u.v.m.
+
     - **Hardware:** Hier finden Sie ausführliche Informationen über das Gerät, einschließlich des freien Speicherplatzes, des Modells und Herstellers usw.
     ![Hardwareinventur für verwaltete Geräte](./media/hardware-inventory.png)
     - **Erkannte Anwendungen:** Zeigt eine Liste aller auf dem Gerät installierten Apps an, die von Intune gefunden wurden.
@@ -67,6 +67,12 @@ Generiert eine neue Kennung für das Gerät, die auf dem Blatt **Übersicht übe
 ### <a name="bypass-activation-lock"></a>**Aktivierungssperre umgehen**
 Entfernt der Aktivierungssperre auf einem iOS-Gerät ohne Apple-ID und Kennwort des Benutzers. Nachdem Sie die Aktivierungssperre umgangen haben, aktiviert das Gerät die Aktivierungssperre erneut, wenn die App „Mein iPhone suchen“ gestartet wird. Umgehen Sie die Aktivierungssperre nur, wenn Sie physischen Zugriff auf das Gerät haben.
 
+### <a name="fresh-start"></a>**Sauberer Start**
+
+Entfernt alle Apps, die auf einem Windows 10-PC mit Creators Update installiert wurden, und aktualisiert den PC dann auf die neueste Windows-Version.
+Mit dieser Option können vorinstallierte OEM-Apps entfernt werden, die oft mit einem neuen PC geliefert werden. Sie können konfigurieren, ob Benutzerdaten beibehalten werden, wenn diese Geräteaktion ausgegeben wird. In diesem Fall werden alle Apps und Einstellungen entfernt, die Inhalte des Basisordners des Benutzers bleiben jedoch erhalten.
+
+
 ### <a name="lost-mode"></a>**Modus für verlorene Geräte**
 Falls ein Gerät verloren geht oder gestohlen wird, können Sie den Modus für verlorene Geräte aktivieren. Dies ermöglicht die Angabe einer Nachricht und einer Telefonnummer, die auf dem Sperrbildschirm des Geräts angezeigt werden. Dazu gehen Sie folgendermaßen vor:
 1.    Wählen Sie auf dem Blatt mit den Eigenschaften eines iOS-Geräts die Option **Mehr** > **Modus für verlorene Geräte** aus.
@@ -78,7 +84,7 @@ Um den Modus für verlorene Geräte zu verwenden, muss es sich bei dem Gerät um
 ### <a name="locate-device"></a>**Gerät suchen**
 Mithilfe dieser Remoteaktion können Sie den Standort eines verloren gegangenen oder gestohlenen iOS-Geräts auf einer Karte anzeigen. Bei dem Gerät muss es sich um ein firmeneigenes, über DEP registriertes iOS-Gerät im überwachten Modus handeln. Diese Aktion kann nur verwendet werden, wenn das Gerät zuvor in den Modus für verlorene Geräte versetzt wurde.
 1.    Wählen Sie auf dem Blatt mit den Eigenschaften eines iOS-Geräts die Option **Mehr** > **Gerät suchen** aus.
-2.    Wenn das Gerät gefunden wurde, wird seine Position auf dem Blatt **Gerät suchen** angezeigt. 
+2.    Wenn das Gerät gefunden wurde, wird seine Position auf dem Blatt **Gerät suchen** angezeigt.
     Blatt ![Gerät suchen](./media/locate-device.png)
 
 >[!NOTE]
