@@ -30,7 +30,7 @@ Mithilfe von Microsoft Intune können Administratoren jetzt für mobile Gerätep
 
 1. Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) zu **Gruppen** &gt; **Alle Geräte** &gt; **Vorab registrierte Unternehmensgeräte** &gt; **Nach IMEI (Alle Plattformen)**, und wählen Sie anschließend **Geräte hinzufügen** aus. Sie können Geräte auf zwei Arten hinzufügen:
 
-    -   **Eine CSV-Datei mit Seriennummern hochladen**: Erstellen Sie eine durch Trennzeichen getrennte Liste (.csv) mit zwei Spalten ohne Header, und beschränken Sie die Liste auf 5.000 Geräte oder 5 MB pro CSV-Datei. Das Detailfeld darf maximal 128 Zeichen enthalten.
+    -   **Eine CSV-Datei mit Seriennummern hochladen**: Erstellen Sie eine durch Trennzeichen getrennte Liste (.csv) mit zwei Spalten ohne Header, und beschränken Sie die Liste auf 5.000 Geräte oder 5 MB pro CSV-Datei. Das Detailfeld darf maximal 128 Zeichen enthalten. 
 
         |||
         |-|-|
@@ -39,8 +39,8 @@ Mithilfe von Microsoft Intune können Administratoren jetzt für mobile Gerätep
         Diese CSV-Datei wird bei der Anzeige in einem Text-Editor folgendermaßen angezeigt:
 
         ```
-        01 234567 890123,device details
-        02 234567 890123,device details
+        01234567890123,device details
+        02234567890123,device details
         ```
 
     -   **Gerätedetails manuell hinzufügen**: Geben Sie die IMEI-Nummer und Gerätedetails von bis zu 15 Geräten ein.
