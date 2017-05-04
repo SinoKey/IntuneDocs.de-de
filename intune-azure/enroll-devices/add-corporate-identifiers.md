@@ -33,7 +33,7 @@ Als IT-Administrator können Sie eine durch Trennzeichen getrennte Datei (CSV-Da
 ## <a name="add-corporate-identifiers"></a>Hinzufügen von Unternehmensbezeichnern
 Erstellen Sie dazu eine Liste mit zwei Spalten, die durch Trennzeichen getrennt ist (CSV) und keinen Header enthält. Fügen Sie den IMEI-Bezeichner in der linken Spalte und die Details in der rechten Spalte hinzu. Details sind auf 128 Zeichen beschränkt und nur für administrative Zwecke bestimmt. Details werden nicht auf dem Gerät angezeigt. Die aktuelle Begrenzung beträgt 500 Zeilen pro CSV-Datei.
 
-**Eine CSV-Datei mit Seriennummern hochladen**: Erstellen Sie eine durch Trennzeichen getrennte Liste (.csv) mit zwei Spalten ohne Header, und beschränken Sie die Liste auf 5.000 Geräte oder 5 MB pro CSV-Datei.
+**Eine CSV-Datei mit Seriennummern hochladen**: Erstellen Sie eine durch Trennzeichen getrennte Liste (.csv) mit zwei Spalten ohne Header, und beschränken Sie die Liste auf 5.000 Geräte oder 5 MB pro CSV-Datei. 
 
 |||
 |-|-|
@@ -43,8 +43,8 @@ Erstellen Sie dazu eine Liste mit zwei Spalten, die durch Trennzeichen getrennt 
 Diese CSV-Datei wird bei der Anzeige in einem Text-Editor folgendermaßen angezeigt:
 
 ```
-01 234567 890123,device details
-02 234567 890123,device details
+01234567890123,device details
+02234567890123,device details
 ```
 
 
