@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d02d7c3367e18c96cc1d72de3a3a0ef581ef63ff
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -58,7 +58,7 @@ Sie können nun fortfahren und die Synchronisierung in der Intune-Konsole einric
 
 1. Melden Sie sich beim Azure-Portal an.
 2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Apps verwalten** aus.
+3. Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
 1. Wählen Sie auf dem Blatt **Mobile Apps** die Option **Setup** > **Windows Store für Unternehmen** aus.
 2. Klicken Sie auf **Aktivieren**.
 3. Klicken Sie auf den Link zur Registrierung für den Windows Store für Unternehmen, falls Sie dies noch nicht getan haben, und weisen Sie Ihr Konto wie oben beschrieben zu.
@@ -67,7 +67,7 @@ Sie können nun fortfahren und die Synchronisierung in der Intune-Konsole einric
 
 ## <a name="synchronize-apps"></a>Synchronisieren von Apps
 
-1. Wählen Sie in der Workload **Apps verwalten** die Option **Setup** > **Windows Store für Unternehmen** aus.
+1. Wählen Sie in der Workload **Mobile Apps** die Option **Setup** > **Windows Store für Unternehmen** aus.
 2. Klicken Sie auf **Synchronisieren**, um die im Windows Store erworbenen Apps in Intune abzurufen.
 
 ## <a name="assign-apps"></a>Zuweisen von Apps

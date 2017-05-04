@@ -15,9 +15,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 6127604afb01a9482eadc3d03b566304e2acdd21
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -27,11 +27,11 @@ ms.lasthandoff: 03/17/2017
 
 Dieses Thema beschreibt die Registrierung und die verschiedenen Methoden zum Registrieren von mobilen Geräten in der Intune-Verwaltung.
 
-Sie registrieren Geräte, einschließlich der Windows-Computer, in Intune, um diese Geräte verwalten zu können. Diese Funktion wird in der Intune-Dokumentation als Verwaltung mobiler Geräte (Mobile Device Management, MDM) bezeichnet. Wenn Geräte als mobile Geräte (nicht als PCs) registriert sind, erhalten sie ein MDM-Zertifikat, das von den Geräten dann für die Kommunikation mit dem Intune-Dienst verwendet wird.
+Sie registrieren Geräte in Intune, um diese Geräte verwalten zu können. Diese Funktion wird in der Intune-Dokumentation als Verwaltung mobiler Geräte (Mobile Device Management, MDM) bezeichnet. Wenn Geräte in Intune registriert werden, erhalten sie ein MDM-Zertifikat, das von den Geräten dann für die Kommunikation mit dem Intune-Dienst verwendet wird.
 
 Auf welche Weise Sie Ihre Geräte registrieren, hängt von Gerätetyp, Besitz und benötigtem Verwaltungsniveau ab. Bei der BYOD-Registrierung (Bring Your Own Device, private Geräte der Mitarbeiter) können die Benutzer ihre privaten Smartphones, Tablets oder PCs selbst registrieren. Die Registrierung von unternehmenseigenen Geräten (corporate-owned devices, COD) macht Verwaltungsszenarios wie die automatische Registrierung, freigegebene Geräte oder Anforderungen für eine vorautorisierte Registrierung möglich.
 
-Wenn Sie Exchange ActiveSync entweder lokal oder in der Cloud gehostet verwenden, können Sie eine einfache Intune-Verwaltung ohne Registrierung aktivieren (weitere Informationen folgen in Kürze). Sie können Windows-PCs als mobile Geräte verwalten. Dieses Vorgehen wird unten als empfohlenes Verfahren beschrieben. Sie können sie auch mit der [Intune-Clientsoftware](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) als PCs verwalten.
+Wenn Sie Exchange ActiveSync entweder lokal oder in der Cloud gehostet verwenden, können Sie eine einfache Intune-Verwaltung ohne Registrierung aktivieren (weitere Informationen folgen in Kürze). Sie können Windows-PCs als mobile Geräte verwalten. Dieses Vorgehen wird unten als empfohlenes Verfahren beschrieben.
 
 
 ## <a name="overview-of-device-enrollment-methods"></a>Übersicht über die Geräteregistrierungsmethoden
@@ -53,21 +53,20 @@ Die folgende Tabelle zeigt Intune-Registrierungsmethoden und die unterstützten 
 |**[USB (Setup-Assistent)](#usb-sa)**|    Ja |    Optional |    Nein| [Weitere Informationen](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
 |**[USB (direkt)](#usb-direct)**|    Nein |    Nein    | Nein|[Weitere Informationen](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
-
-
 **Windows-Registrierungsmethoden**
 
 | **Methode** |    **Zurücksetzen erforderlich?** |    **Affinität**    |    **Sperren** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein |    Ja |    Nein | Weitere Informationen folgen in Kürze.|
+|**[BYOD](#byod)** | Nein |    Ja |    Nein | [Weitere Informationen](#enroll-windows-devices.md)|
 |**[DEM](#dem)**|    Nein |Nein |Nein    |[Weitere Informationen](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android-Registrierungsmethoden**
 
 | **Methode** |    **Zurücksetzen erforderlich?** |    **Affinität**    |    **Sperren** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein|    Ja |    Nein | Weitere Informationen folgen in Kürze.|
+|**[BYOD](#byod)** | Nein|    Ja |    Nein | [Weitere Informationen](#enroll-android-and-knox-standard-devices.md)|
 |**[DEM](#dem)**|    Nein |Nein |Nein    |[Weitere Informationen](enroll-ios-devices-using-device-enrollment-program.md)|
+|[**Android for Work**](#android-for-work)| Nein | Ja | Nein| [Weitere Informationen](#enroll-android-and-knox-standard-devices.md) |
 
 
 ## <a name="byod"></a>BYOD
@@ -112,21 +111,11 @@ Weitere Informationen zur iOS-Registrierung finden Sie unter:
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Verwaltung mobiler Geräte mit Exchange ActiveSync und Intune
 Mobile Geräte, die nicht registriert, aber mit Exchange ActiveSync (EAS) verbunden sind, können von Intune mit der MDM EAS-Richtlinie verwaltet werden. Intune verwendet Exchange Connector für die Kommunikation mit EAS, entweder lokal oder in der Cloud gehostet. Weitere Informationen folgen in Kürze.
 
-
-## <a name="windows-pc-management-with-intune"></a>Aktivieren der Windows PC-Verwaltung mit Intune  
-Sie können Microsoft Intune auch verwenden, um Windows-PCs mit der Intune-Clientsoftware zu verwalten. Mit dem Intune-Client verwaltete PCs können:
-
- - Software- und Hardwareinventurberichte erstellen
- - Desktopanwendung installieren (z. B. EXE- und MSI-Dateien)
- - Verwalten von Firewall-Einstellungen
-
-PCs, die mit der Intune-Clientsoftware verwaltet werden, können nicht vollständig zurückgesetzt werden, obwohl das selektive Zurücksetzen verfügbar ist. Mit dem Intune-Softwareclient verwaltete PCs können viele der Intune Verwaltungsfunktionen wie z.B. den bedingten Zugriff, VPN- und WLAN-Einstellungen oder die Bereitstellung von Zertifikaten und E-Mail-Konfigurationen nicht nutzen. Weitere Informationen folgen in Kürze.
-
 ## <a name="supported-device-platforms-and-browsers"></a>Unterstützte Geräteplattformen und Browser
 
 Siehe [Unterstützte Geräte und Browser für Intune](https://docs.microsoft.com/intune/get-started/supported-mobile-devices-and-computers).
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Bereinigen mobiler Geräte nach Ablauf des MDM-Zertifikats
 
-Das MDM-Zertifikat wird automatisch erneuert, wenn mobile Geräte mit dem Intune-Dienst kommunizieren. Wenn mobile Geräte (nicht PCs) zurückgesetzt werden oder für längere Zeit keine Kommunikation mit dem Intune-Dienst stattfindet, wird das MDM-Zertifikat nicht erneuert. Das Gerät wird 180 Tage nach Ablauf des MDM-Zertifikats aus dem Azure-Portal entfernt.
+Das MDM-Zertifikat wird automatisch erneuert, wenn mobile Geräte mit dem Intune-Dienst kommunizieren. Wenn mobile Geräte zurückgesetzt werden oder für längere Zeit keine Kommunikation mit dem Intune-Dienst stattfindet, wird das MDM-Zertifikat nicht erneuert. Das Gerät wird 180 Tage nach Ablauf des MDM-Zertifikats aus dem Azure-Portal entfernt.
 

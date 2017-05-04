@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 2191295407e0c1bb2c3861b8a8d168dd3697da45
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 3794981387e73176152c212854a97b4333023f5d
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -34,7 +35,7 @@ Das Intune-Unternehmensportal stellt Benutzern Zugriff auf Unternehmensdaten und
 -   **Die Unternehmensportal-App**: Diese Anwendung ist auf Geräten verfügbar, die Sie mit Intune verwalten. Erfahren Sie mehr über die Unternehmensportal-Apps für [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune) und [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **Die Unternehmensportal-Website**: Eine Website, mit der Endbenutzer die meisten der Aufgaben ausführen können, die mit der Unternehmensportal-App ausgeführt werden können. Die URL zum Intune-Unternehmensportal lautet [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Weitere Informationen zu dieser Website finden Sie unter [Verwenden der Intune-Unternehmensportal-Website](/Intune/EndUser/using-the-intune-company-portal-website).
+- **Die Unternehmensportal-Website**: Eine Website, mit der Endbenutzer die meisten der Aufgaben ausführen können, die mit der Unternehmensportal-App ausgeführt werden können. Die URL zum Intune-Unternehmensportal lautet [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com). Weitere Informationen zu dieser Website finden Sie unter [Verwenden der Intune-Unternehmensportal-Website](/Intune/EndUser/using-the-intune-company-portal-website).
 
 > [!TIP]
 > Wenn Sie das Unternehmensportal anpassen, gelten die Konfigurationen sowohl für die Unternehmensportal-Website als auch für die Unternehmensportal-Apps.
@@ -89,9 +90,4 @@ Nach dem Speichern Ihrer Änderungen können Sie über die Links, die am unteren
 >[!div class="step-by-step"]
 
 >[&larr; **Erstellen von Richtlinien und Apps**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Registrieren von Geräten** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
