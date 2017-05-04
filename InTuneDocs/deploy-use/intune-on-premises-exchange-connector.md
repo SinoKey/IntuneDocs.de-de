@@ -15,9 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 68dbebbd7d29514bde438b7dff3142dc45e8471d
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: f760d567ac339bbb60240ee9f8d28cb550656a59
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -63,7 +63,7 @@ Sie müssen in Active Directory ein Benutzerkonto erstellen, das vom Intune Exch
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Herunterladen des Softwareinstallationspaket für den lokalen Exchange Connector
 
-1. Öffnen Sie auf einem vom lokalen Exchange Connector unterstützten Windows Server-Betriebssystem die [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) (http://manage.microsoft.com) mit einem Benutzerkonto, das ein Administrator im Exchange-Mandanten ist und über eine Lizenz zum Verwenden von Exchange Server verfügt.
+1. Öffnen Sie auf einem vom lokalen Exchange Connector unterstützten Windows Server-Betriebssystem die [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) (https://manage.microsoft.com) mit einem Benutzerkonto, das ein Administrator im Exchange-Mandanten ist und über eine Lizenz zum Verwenden von Exchange Server verfügt.
 ![Öffnen und Einrichten der Exchange-Verbindung](../media/ExchangeConnector.gif)
 
 2.  Wählen Sie im Bereich mit den Arbeitsbereichsverknüpfungen **Admin**>**Verwaltung mobiler Geräte** > **Microsoft Exchange**>**Exchange-Verbindung einrichten** aus.
@@ -129,7 +129,7 @@ Nach Einrichtung der Verbindung durch den Exchange Connector werden mobile Gerä
 
 ## <a name="validate-the-exchange-connection"></a>Überprüfen der Exchange-Verbindung
 
-Nachdem Sie den Exchange-Connector erfolgreich konfiguriert haben, können Sie den Status der Verbindung und den letzten erfolgreichen Synchronisationsversuch anzeigen. Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](http://manage.microsoft.com) den Arbeitsbereich **ADMIN** aus. Wählen Sie unter **Verwaltung mobiler Geräte** die Option **Microsoft Exchange** aus, und überprüfen Sie die unter **Exchange-Verbindungsinformationen** angezeigten Details.
+Nachdem Sie den Exchange-Connector erfolgreich konfiguriert haben, können Sie den Status der Verbindung und den letzten erfolgreichen Synchronisationsversuch anzeigen. Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) den Arbeitsbereich **ADMIN** aus. Wählen Sie unter **Verwaltung mobiler Geräte** die Option **Microsoft Exchange** aus, und überprüfen Sie die unter **Exchange-Verbindungsinformationen** angezeigten Details.
 
 
 Sie können auch die Uhrzeit und das Datum des letzten erfolgreichen Synchronisationsversuchs überprüfen.

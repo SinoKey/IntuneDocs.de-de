@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0f5972171349325eeb750e552481cbcf903fdf95
-ms.openlocfilehash: 9f1cd7ea3e92ac2e3a1b828e8185961060a7c619
-ms.lasthandoff: 02/10/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 5211d2222e5e8ef9328f60ed13f0146925194c5f
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -26,11 +26,7 @@ ms.lasthandoff: 02/10/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Diese Anleitung richtet sich an Systemadministratoren, die für die Verwaltung der Geräte im Unternehmen verantwortlich sind. Hilfe zu Intune auf Ihrem mobilen Gerät finden Sie unter [Häufig gestellte Fragen zum Intune-Unternehmensportal](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
-
-Bevor Sie Microsoft Intune einrichten, lesen Sie dieses Thema und andere Anforderungen, die unter [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](what-to-know-before-you-start-microsoft-intune.md) aufgeführt sind.
-
-Planen Sie anhand der Informationen in den folgenden Abschnitten den Netzwerkdatenverkehr für Microsoft Intune-Clients.
+Diese Anleitung klärt Intune-Administratoren über die Netzwerkanforderungen für den Intune-Dienst auf. Mithilfe dieser Informationen können Sie feststellen, welche Bandbreitenanforderungen gestellt werden und welche IP-Adressen und Porteinstellungen für die Proxyeinstellungen erforderlich sind.
 
 ## <a name="average-network-traffic"></a>Durchschnittlicher Netzwerkdatenverkehr
 Die Tabelle führt den ungefähren Umfang und die Häufigkeit gemeinsamer Inhalte auf, die pro Client über das Netzwerk übertragen werden.

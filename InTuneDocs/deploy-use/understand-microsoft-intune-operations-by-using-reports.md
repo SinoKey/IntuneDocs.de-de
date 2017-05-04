@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cc1a3c8c3e2f25ee154db964de2601510e32f1ea
-ms.openlocfilehash: 41354f0eee051bd9c691a27830264f6c95502fa5
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
+ms.lasthandoff: 04/24/2017
 
 
 
@@ -32,7 +32,7 @@ Anhand der Informationen in diesem Thema können Sie Microsoft Intune-Berichte m
 ## <a name="using-reports"></a>Verwenden von Berichten
 In den Intune-Berichten finden Sie Informationen zu Software, Hardware und Softwarelizenzen in Ihrem Unternehmen. Mithilfe von Berichten können Sie sich über den aktuellen Stand und den zukünftigen Bedarf informieren. Im Arbeitsbereich **Berichte** finden Sie Tools zum Erstellen und Verwalten von Berichten. 
 
-### <a name="report-types"></a>Berichtstypen
+## <a name="report-types"></a>Berichtstypen
 
 |Berichtstyp|Beschreibung|
 |---------------|---------------|
@@ -49,8 +49,10 @@ In den Intune-Berichten finden Sie Informationen zu Software, Hardware und Softw
 |**Integritätsnachweisberichte**|Zeigt die Integrität von mobilen Geräten an.|
 |**Mac OS X-Hardwarebericht**|Hier werden Hardwaredetails zu allen registrierten Mac OS X-Geräten in den von Ihnen ausgewählten Gruppen angezeigt. Informationen zu dem von diesen Geräten erfassten Hardwareinventar finden Sie unter [Verstehen Sie Ihre Geräte mithilfe des Inventars in Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Mac OS X-Softwarebericht**|Hierin wird die auf allen Mac OS X-Geräten in den von Ihnen ausgewählten Gruppen installierte Software angezeigt. Im Bericht werden der Softwarename (als Paket-ID), die Kurzversion des Namens (oder der Anzeigename), die Version und die Anzahl von Geräten, auf denen die Software installiert ist, aufgeführt.|
+|**WIP-Berichte (Windows Information Protection)**|Zeigt Informationen zu WIP-Vorgängen (Windows Information Protection) auf Geräten an, die Sie verwalten.|
+|**Integritätsnachweisberichte**|Zeigt Informationen an, die vom Windows Health Attestation-Dienst für die von Ihnen verwalteten Geräte gemeldet werden.|
 
-#### <a name="to-create-a-report"></a>So erstellen Sie einen Bericht
+## <a name="to-create-a-report"></a>So erstellen Sie einen Bericht
 
 1.  Wählen Sie in der Intune-Verwaltungskonsole **Berichte** aus. Wählen Sie anschließend den Berichtstyp aus, den Sie wie in der vorangegangenen Tabelle beschrieben generieren möchten.
 

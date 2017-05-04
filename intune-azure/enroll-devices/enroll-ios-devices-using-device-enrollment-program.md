@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 61fbc2af9a7c43d01c20f86ff26012f63ee0a3c2
-ms.openlocfilehash: c56bea46c8b505e0d357cfe90678ab149559b896
-ms.lasthandoff: 04/07/2017
+ms.sourcegitcommit: 53f1c688aad2f810d8a887435dd8d122d4f471ae
+ms.openlocfilehash: d8fa3a19915076f1a603449dd426172fbc5a613a
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -38,9 +38,8 @@ Dieses Thema hilft IT-Administratoren, firmeneigene iOS-Geräte, die über das [
 2. [Erstellen Sie eines DEP-Profils](#create-anapple-dep-profile)
 3. [Zuweisen von Apple-DEP-Seriennummern auf dem MDM-Server](#assign-apple-dep-serial-numbers-to-your-mdm-server)
 4. [Synchronisieren von DEP-verwalteten Geräten](#synchronize-dep-managed-devices)
-5. Verteilen von Geräten an Benutzer
-
-
+5. [Zuweisen des DEP-Profils zu Geräten](#assign-a-dep-profile-to-devices)
+6. [Verteilen von Geräten an Benutzer](#distribute-devices-to-users)
 
 ## <a name="get-the-apple-dep-certificate"></a>Abrufen des Apple-DEP-Zertifikats
 Bevor Sie unternehmenseigene iOS-Geräte mit dem Apple-Programm zur Geräteregistrierung (Device Enrollment Program, DEP) registrieren können, benötigen Sie ein DEP-Zertifikat (.p7m) von Apple. Mit diesem Token kann Intune Informationen zu DEP-Geräten synchronisieren, die Ihrem Unternehmen gehören. Damit kann Intune außerdem Registrierungsprofile an Apple übermitteln und diesen Profilen Geräte zuweisen.
@@ -49,9 +48,6 @@ Zum Verwalten unternehmenseigener iOS-Geräte mit DEP müssen Unternehmen am App
 
 > [!NOTE]
 > Wenn Ihr Intune-Mandant von der klassischen Intune-Konsole zum Azure-Portal migriert wurde, und Sie haben ein Apple-DEP-Token aus der Intune-Verwaltungskonsole während des Migrationszeitraums gelöscht, kann das DEP-Token möglicherweise in Ihrem Intune-Konto wiederhergestellt worden sein. Sie können das DEP-Token erneut aus dem Azure-Portal löschen.
-
-
-
 
 **Schritt 1: Laden Sie ein Intune-Zertifikat mit öffentlichem Schlüssel herunter, das zum Erstellen eines Apple-DEP-Tokens erforderlich ist.**<br>
 1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus. Wählen Sie auf dem Blatt „Intune“ **Geräteregistrierung** > **Apple-DEP-Token** aus.
@@ -75,7 +71,7 @@ Wechseln Sie zur Zertifikatsdatei (.pem), wählen Sie **Öffnen** aus, und wähl
 Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Gruppe von Geräten. Die folgenden Schritte zeigen, wie Sie ein Registrierungsprofil für iOS-Geräte erstellen, die mit dem Programm zur Geräteregistrierung registriert werden.
 
 1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-2. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Apple-Registrierung** aus.
+2. Wählen Sie auf dem Blatt „Intune“ die Option **Geräteregistrierung** und dann **Apple-Registrierung** aus.
 3. Wählen Sie unter **APPLE-DEP-EINSTELLUNGEN (PROGRAMM ZUR GERÄTEREGISTRIERUNG) VERWALTEN** die Option **DEP-Profile** aus.
 4. Wählen Sie auf dem Blatt **DEP-Profile** die Option **Erstellen** aus.
 5. Geben Sie auf dem Blatt **Registrierungsprofil erstellen** einen Namen und eine Beschreibung für das Profil ein.
@@ -118,6 +114,7 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Grup
 9. Wählen Sie zum Speichern der Profileinstellungen **Erstellen** auf dem Blatt **Registrierungsprofil erstellen** aus.
 
 ## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>Zuweisen von Apple-DEP-Seriennummern auf dem MDM-Server
+Geräteseriennummern müssen im Apple-DEP-Webportal Ihrem Intune-MDM-Server zugewiesen werden, um Intune die Verwaltung dieser Geräte zu ermöglichen.
 
 1. Wechseln Sie zum [Device Enrollment Program-Portal](https://deploy.apple.com) (https://deploy.apple.com), und melden Sie sich mit der Apple-ID Ihres Unternehmens an.
 
@@ -128,10 +125,11 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Grup
 4. Wählen Sie **Zu Server zuweisen** aus. Wählen Sie den für Microsoft Intune angegebenen &lt;Servernamen&gt; und anschließend **OK** aus.
 
 ## <a name="synchronize-dep-managed-devices"></a>Synchronisieren von DEP-verwalteten Geräten
+Nachdem Intune nun die Berechtigung zum Verwalten Ihrer DEP-Geräte zugewiesen wurde, können Sie Intune mit dem DEP-Dienst synchronisieren, um Ihre verwalteten Geräte im Intune-Portal anzuzeigen.
 
 1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
-2. Wählen Sie im Azure-Portal auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Apple-Registrierung** aus.
+2. Wählen Sie im Azure-Portal auf dem Blatt „Intune“ die Option **Geräteregistrierung** und dann **Apple-Registrierung** aus.
 
 3. Wählen Sie unter **APPLE-DEP-EINSTELLUNGEN (PROGRAMM ZUR GERÄTEREGISTRIERUNG) VERWALTEN** die Option **DEP-Seriennummern** aus.
 
@@ -146,12 +144,29 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Grup
 >[!NOTE]
 >Sie können auch auf dem Blatt **DEP-Seriennummern** Profilen DEP-Seriennummern zuweisen.
 
+## <a name="assign-a-dep-profile-to-devices"></a>Zuweisen des DEP-Profils zu Geräten
+DEP-Geräten, die von Intune verwaltet werden, muss vor der Registrierung ein DEP-Profil zugewiesen werden.
+
+1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+
+2. Wählen Sie im Azure-Portal auf dem Blatt „Intune“ die Option **Geräteregistrierung** > **Apple-Registrierung** und dann **DEP-Profile** aus.
+
+3. Wählen Sie in der Liste **Apple-DEP-Registrierungsprofile** das Profil aus, das den Geräten zugewiesen werden soll, und anschließend **Zuweisungen von Geräten**.
+
+4. Wählen Sie **Zuweisen** und dann die für das DEP verfügbaren Geräte aus, die diesem Profil zugewiesen werden sollen. Sie können die Ansicht der für das DEP verfügbaren Geräte filtern:
+  - **Nicht zugewiesen**
+  - **Beliebig**
+  - **&lt;DEP-Profilname&gt;**
+
+  ![Screenshot der Schaltfläche „Zuweisen“ zum Zuweisen des DEP-Profils im Intune-Portal](media/dep-profile-assignment.png)
+
+5. Wählen Sie die Geräte aus, die zugewiesen werden sollen. Mit dem Kontrollkästchen oberhalb der Spalte werden bis zu 1000 aufgelistete Geräte ausgewählt. Klicken Sie dann auf **Zuweisen**. Um mehr als 1000 Geräte zu registrieren, wiederholen Sie die Zuweisungsschritte, bis allen Geräten ein DEP-Profil zugewiesen ist.
+
 ## <a name="distribute-devices-to-users"></a>Verteilen von Geräten an Benutzer
 
-Ihre unternehmenseigenen Geräte können jetzt an Benutzer verteilt werden. Wenn ein iOS-Gerät eingeschaltet wird, wird es für die Verwaltung durch Intune registriert.
+Ihre unternehmenseigenen Geräte können jetzt an Benutzer verteilt werden. Wenn ein iOS-DEP-Gerät eingeschaltet wird, wird es für die Verwaltung durch Intune registriert. Wenn das Gerät aktiviert wurde und verwendet wird, kann das Profil erst angewendet werden, wenn das Gerät auf die Werkseinstellungen zurückgesetzt wird.
 
-
-## <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>Installieren und Verwenden das Unternehmensportals auf Geräten
+### <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>Installieren und Verwenden das Unternehmensportals auf Geräten
 
 Auf mit Benutzeraffinität konfigurierten Geräte kann die Unternehmensportal-App installiert und ausgeführt werden, um Apps herunterzuladen und Geräte zu verwalten. Nachdem Benutzer ihre Geräte erhalten haben, müssen sie zusätzliche, unten beschriebene Schritte ausführen, um den Setup-Assistenten abzuschließen und die Unternehmensportal-App zu installieren.
 
@@ -159,7 +174,7 @@ Auf mit Benutzeraffinität konfigurierten Geräte kann die Unternehmensportal-Ap
 
 1. Wenn Benutzer ihr Gerät einschalten, werden sie aufgefordert, den Setup-Assistenten zu durchlaufen. Während des Setups werden Benutzer zur Eingabe ihrer Anmeldeinformationen aufgefordert. Sie müssen die Anmeldeinformationen (d.h. den eindeutigen persönlichen Namen) verwenden, die ihrem Abonnement in Intune zugeordnet sind.
 
-2. Während des Setups werden Benutzer zur Eingabe einer Apple ID aufgefordert. Sie müssen eine Apple-ID angeben, damit das Gerät das Unternehmensportal installieren kann. Sie können die ID auch nach Abschluss des Setups über das iOS-Menü „Einstellungen“ angeben.
+2. Während des Setups werden Benutzer zur Eingabe einer Apple ID aufgefordert. Sie müssen eine Apple-ID angeben, damit das Gerät das Unternehmensportal installieren kann. Sie können die Apple-ID auch nach Abschluss des Setups über das iOS-Menü „Einstellungen“ angeben.
 
 3. Nach Abschluss des Setups muss die Unternehmensportal-App aus dem App Store installiert werden.
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 56ef80138d0790933ae216bb02101c3f408311c7
-ms.openlocfilehash: 5bea5a9f1a69193543fa3c5e8997a6527721d3ef
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: b81228ccd1c515bfd82486475996eecf20655993
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -66,7 +67,7 @@ Sie können die von Apple gespeicherten Daten jederzeit mit Intune synchronisier
 
 ## <a name="to-deploy-a-volume-purchased-app"></a>So stellen Sie per Volumenlizenz erworbene Apps bereit
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Apps** &gt; **Verwaltete Software** &gt; **Per Volumenlizenz erworbene Apps**. Diese Liste zeigt alle Apps, die mit dem Apple VPP-Dienst synchronisiert wurden.
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Apps** &gt; **Apps** &gt; **Per Volumenlizenz erworbene Apps**. Diese Liste zeigt alle Apps, die mit dem Apple VPP-Dienst synchronisiert wurden.
 
 2.  Wählen Sie die bereitzustellende App und dann **Bereitstellung verwalten** aus. Befolgen Sie anschließend die Anweisungen zum Hochladen, Erstellen und Bereitstellen der App im Thema [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
@@ -79,22 +80,14 @@ Zum Freigeben einer Lizenz müssen Sie die Bereitstellungsaktion in **Deinstalli
 
 Wenn ein Benutzer mit einem geeigneten Gerät erstmals versucht, eine VPP-App zu installieren, wird er aufgefordert, am Programm für Volumenlizenzen (Volume Purchase Program, VPP) von Apple teilzunehmen. Die Teilnahme muss erfolgen, bevor die App-Installation fortgesetzt wird.
 
-> [!TIP]
-> In der Spalte **VPP – Nutzungsbedingungen – Status** wird der Annahmestatus für jeden Benutzer angezeigt, dem die App bereitgestellt wurde.
-
 Wenn keine weiteren Lizenzen verfügbar sind, schlägt die Bereitstellung fehl.
 
 ## <a name="to-monitor-apple-vpp-apps"></a>So überwachen Sie Apple VPP-Apps
-Sie können überwachen, welche VPP-Apps bereitgestellt wurden und wie viele Lizenzen vom Arbeitsbereich **Apps** auf dem Knoten **Verwaltete Software** &gt; **Per Volumenlizenz erworbene Apps** verwendet werden.
+Sie können überwachen, welche VPP-Apps bereitgestellt wurden und wie viele Lizenzen vom Arbeitsbereich **Apps** im Knoten **Per Volumenlizenz erworbene Apps** verwendet werden.
 
 > [!TIP]
 > Sie können auch App-**Filter** verwenden, um den Status der einzelnen App-Installationen zu überprüfen.
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

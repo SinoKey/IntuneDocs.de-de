@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/20/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 1c3b986df3e0d8a5ee54da0a91f37b445b4dd9f7
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 53f1c688aad2f810d8a887435dd8d122d4f471ae
+ms.openlocfilehash: 9220eecc32ee27725454a48484608af5f4ea0e83
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -48,7 +48,7 @@ So setzen Sie Ihre Kennung zurück
 
   ![Das Banner „Kennung zurücksetzen“ mit der Warnung bezüglich des Zurücksetzens der Kennung und der Abmeldung des Benutzers. Die Schaltflächen für Benutzereingaben sind „Abmelden“ und „Abbrechen“.](./media/iwp-reset-passcode-popup.png)
 
-5.  Wählen Sie **Abmelden** aus; danach erhalten Sie eine letzte Meldung, die Sie über das Entfernen der Kennung von dem Gerät informiert. Wenn Sie das Gerät nicht bei sich haben, entfernen Sie die Kennung nicht; ansonsten können Personen, die physisch Zugang zu Ihrem Gerät haben, auf die meisten – persönlichen und geschäftlichen – Daten auf Ihrem Gerät zugreifen.
+5.  Wählen Sie **Abmelden** aus; danach erhalten Sie eine letzte Meldung, die Sie über die Entfernung der Kennung von dem Gerät informiert. Wenn Sie das Gerät nicht bei sich haben, entfernen Sie die Kennung nicht; ansonsten können Personen, die physisch Zugang zu Ihrem Gerät haben, auf die meisten – persönlichen und geschäftlichen – Daten auf Ihrem Gerät zugreifen. 
 
   ![Das zweite Banner „Kennung zurücksetzen“ mit der Warnung bezüglich des Zurücksetzens der Kennung und des Entfernens der Kennung von dem Gerät. Außerdem informiert es Sie darüber, wie Sie eine neue Kennung in den Geräteeinstellungen festlegen können.](./media/iwp-reset-passcode-2nd-popup.png)
 
@@ -61,6 +61,8 @@ So setzen Sie Ihre Kennung zurück
   **Windows 10 Mobile**: Entfernt die vorhandene Kennung und erstellt eine vorübergehende Kennung mit Buchstaben und Zahlen. Wenn Sie die Windows Hello-Gesichtserkennung zum Anmelden verwenden, wird diese noch immer unterstützt.
     
   **Windows Phone 8.1**: Entfernt die vorhandene Kennung und erstellt eine vorübergehende Kennung mit Zahlen
+
+  Bei Android- und Windows-Geräten wird das temporäre Kennwort unter **Gerätedetails** angezeigt. 
 
 6.  Entsperren Sie Ihr Gerät, und legen Sie eine neue Kennung fest, oder ändern Sie die temporäre Kennung auf Ihrem Gerät unter **Einstellungen**.
 

@@ -1,5 +1,5 @@
 ---
-title: Einrichten der Skycure-Integration mit Intune | Microsoft-Dokumentation
+title: Einrichten der Skycure-Integration in Intune | Microsoft-Dokumentation
 description: Richten Sie die Skycure-Integration mit Microsoft Intune ein.
 keywords: 
 author: andredm7
@@ -15,14 +15,14 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 6ff56f736c289dbc9a8340ad76e044363acbfea5
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 18afa2b84c90e77280daf7ed9b1b8357365f7380
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="setup-the-skycure-integration-with-intune"></a>Einrichten der Skycure-Integration mit Intune
+# <a name="set-up-the-skycure-integration-with-intune"></a>Einrichten der Skycure-Integration in Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -54,7 +54,7 @@ Skycure unterstützt zwei Integrationsweisen mit Intune:
 
 ## <a name="to-set-up-the-read-only-integration-between-intune-and-skycure"></a>So richten Sie die schreibgeschützte Integration zwischen Intune und Skycure ein
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Die Skycure-Administratoranmeldeinformationen sind eine E-Mail-Nachricht, die einem gültigen Benutzer in Azure Active Directory gehören muss, andernfalls schlägt die Anmeldung fehl. Skycure verwendet Azure Active Directory zum Authentifizieren des Administrators mithilfe von einmaligem Anmelden (SSO).
 
 1.  Gehen Sie zur [Skycure-Verwaltungskonsole](https://aad.skycure.com).
@@ -75,7 +75,7 @@ Skycure unterstützt zwei Integrationsweisen mit Intune:
 
     ![iOS-App Abgeschlossen-Screenshot](../media/mtp/skycure-setup-3.png)
 
-> [!NOTE] 
+> [!NOTE]
 > Wiederholen Sie den gleichen Vorgang für die **Skycure Android**- und **Verwaltungs**-Apps.
 
 ### <a name="add-an-azure-ad-security-group-into-skycure"></a>Hinzufügen einer Azure AD-Sicherheitsgruppe in Skycure

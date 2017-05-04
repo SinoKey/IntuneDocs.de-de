@@ -16,8 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 330dba6b9402ef354d0925da27ee1b37ef50db00
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -42,8 +43,8 @@ Es gibt drei verschiedenen Stellen, an denen der Konformitätsstatus überwacht 
 
 1. Melden Sie sich beim Azure-Portal an.
 2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Apps verwalten** aus.
-4. Wählen Sie in der Workload **Apps verwalten** die Option **Überwachen** > **Benutzerstatus des App-Schutzes** aus, um die Zusammenfassung anzuzeigen:
+3. Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
+4. Wählen Sie in der Workload **Mobile Apps** die Option **Überwachen** > **Benutzerstatus bei App-Schutz** aus, um die Zusammenfassungsansicht anzuzeigen:
 
 ![Kachel „Zusammenfassung“ auf dem Blatt „Mobile Anwendungsverwaltung mit Intune“](../media/app-protection-user-status-summary.png)
 
@@ -93,7 +94,7 @@ In der Detailansicht werden die Fehlermeldung, die App, auf die bei Auftreten de
 
 Sie können die gleichen Berichte in der Detailansicht finden sowie zusätzliche Berichte, die Ihnen mit dem Konformitätsstatus der MAM-Richtlinie weiterhelfen:
 
-![Screenshot&4;](../media/MAM-reporting-7.png)
+![Screenshot 4](../media/MAM-reporting-7.png)
 
 -   **App protection user report** (Benutzerbericht App-Schutz): Darin werden dieselben Informationen dargestellt, die Sie auch im **Benutzerstatus**-Bericht im Abschnitt „Detailansicht“ weiter hoben sehen können.
 
@@ -109,7 +110,7 @@ Sie können die gleichen Berichte in der Detailansicht finden sowie zusätzliche
 
         -   Alle Apps sind eingecheckt, erhalten jedoch keine MAM-Richtlinien.
 
-![Screenshot&2;](../media/MAM-reporting-4.png)
+![Screenshot 2](../media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Tabellengruppierung
 
@@ -126,20 +127,15 @@ Gehen Sie zum Generieren des App-Schutzberichts wie folgt vor:
 
 1. Wählen Sie auf dem Blatt „Mobile Anwendungsverwaltung mit Intune“ den App-Schutzbericht aus.
 
-    ![Screenshot&6;](../media/app-protection-report-csv-2.png)
+    ![Screenshot 6](../media/app-protection-report-csv-2.png)
 
 2. Wählen Sie „Ja“ aus, um den Bericht zu speichern, und wählen Sie dann „Speichern unter“ und den Ordner aus, in dem der Bericht gespeichert werden soll.
 
-    ![Screenshot&7;](../media/app-protection-report-csv-1.png)
+    ![Screenshot 7](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Weitere Informationen:
 [Verwalten der Datenübertragung zwischen iOS-Apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 * [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](app-protection-enabled-android-apps.md)
 * [Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

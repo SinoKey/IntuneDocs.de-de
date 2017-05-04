@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
-ms.openlocfilehash: 9f09a070ec120064bdd64bfb05a39ec9e484606c
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 0b6f9bde77b5b88cc66ab10419b7d6e083f7cb6b
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/21/2017
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
--   Die unten beschriebenen Schritte müssen in der [klassischen Intune-Konsole](https://manage.microsoft.com/) abgeschlossen werden.
+-   Die unten beschriebenen Schritte müssen in der [klassischen Intune-Konsole](https://manage.microsoft.com/) durchgeführt werden.
 
 -   Verwenden Sie dasselbe Azure AD-Konto, das zuvor in der Skycure-Verwaltungskonsole konfiguriert wurde. Dabei sollte es sich um das Konto handeln, mit dem Sie sich in die klassische Intune-Konsole einloggen.
 
@@ -66,5 +66,5 @@ ms.lasthandoff: 03/21/2017
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Einrichten der Skycure-Integration mit Intune](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
+[Einrichten der Skycure-Integration in Intune](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
 

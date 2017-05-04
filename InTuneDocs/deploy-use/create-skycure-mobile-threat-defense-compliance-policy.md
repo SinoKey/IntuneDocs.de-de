@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: a2597a43e48d8cdde6c29070986528dcba473d8e
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: c28ba63136c1037c8c8191e9a7f46fa9a4823b4e
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -32,7 +32,7 @@ Dank Intune mit Skycure Mobile Threat Defense können Sie Bedrohungen auf mobile
 
 Voraussetzungen für die Kompatibilitätsrichtlinie mit dem Skycure-Schutz vor Gerätebedrohungen:
 
--   [Setup Skycure integration with Intune (Einrichten der Skycure-Integration mit Intune)](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
+-   [Einrichten der Skycure-Integration in Intune](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
 
 -   [Aktivieren der Skycure-Verbindung in Intune](https://docs.microsoft.com/intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 
@@ -56,7 +56,7 @@ Beim Einrichten von Skycure Mobile Threat Defense haben Sie in der Skycure-Konso
 
     d.  **Hoch**: Dies ist die am wenigsten sichere Option. Diese Option lässt alle Bedrohungsstufen zu und verwendet Skycure Mobile Threat Defense nur zu Berichtszwecken.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Wenn Sie für Office 365 oder andere Dienste Richtlinien für den bedingten Zugriff erstellen, wird diese Kompatibilitätsbewertung ausgewertet, und auf nicht kompatiblen Geräten wird der Zugriff auf Unternehmensressourcen gesperrt, bis die Bedrohung beseitigt ist.
 
 ## <a name="span-idmonitor-device-threats-classanchorspan-idnext-steps-classanchorspan-idtoc477360344-classanchorspanspanspannext-steps"></a><span id="monitor-device-threats" class="anchor"><span id="next-steps" class="anchor"><span id="_Toc477360344" class="anchor"></span></span></span>Nächste Schritte
