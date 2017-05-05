@@ -5,7 +5,7 @@ keywords: Was ist Intune
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 03/7/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 3b1c61bc78db2c674bf108ed6110c3826cff150e
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 2552f84dc38c4453851167cd1570143c7a9820c2
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -32,7 +32,7 @@ Intune ist ein cloudbasierter Enterprise Mobility-Verwaltungsdienst (Enterprise 
 * Ihre Unternehmensinformationen schützen, indem Sie steuern, wie Ihre Mitarbeiter darauf zugreifen und diese freigeben
 * Sicherstellen, dass Geräte und Apps kompatibel mit den Sicherheitsanforderungen des Unternehmens sind
 
-Die Lösung lässt sich eng in Azure Active Directory (Azure AD) integrieren und bietet Identitäts- und Zugriffsteuerungsfunktionen sowie Azure Information Protection für den Datenschutz. Es ist der *Verwaltungszweig* von Microsoft Enterprise Mobility + Security (EMS), während Office 365 der *Produktivitätszweig* der Mobilitätslösung von Microsoft ist.  
+Die Lösung lässt sich eng in Azure Active Directory (Azure AD) integrieren und bietet Identitäts- und Zugriffsteuerungsfunktionen sowie Azure Information Protection für den Datenschutz.
 
 Zusammen ermöglichen Office 365 und EMS Ihren Mitarbeitern auf allen ihren Geräten produktiv zu arbeiten, während die Informationen Ihres Unternehmens geschützt bleiben. Office 365 mit EMS ist eine vollständig integrierte Enterprise Mobility Suite, die Funktionen für Produktivität, Identität, Zugriffsteuerung, Verwaltung und Datenschutz bietet. Sie bietet Ihnen eine effektive Möglichkeit für die Bereitstellung und den Betrieb einer Mobilitätslösung in Ihrer Organisation.
 
