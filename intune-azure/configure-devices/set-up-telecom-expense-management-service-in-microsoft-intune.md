@@ -15,10 +15,11 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: b0d0ad102942c65ac3988ea4659b34b397289126
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e0f40d21412e261d31a0a492c260a6097d4dd007
+ms.contentlocale: de-de
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -99,7 +100,7 @@ Um sicherzustellen, dass die Datennutzung nur von firmeneigenen Leitungen gesamm
 
 Abhängig von Ihren organisatorischen Bedürfnissen müssen Sie mindestens zwei Gerätekategorien (z.B. Unternehmen und Privat) und dynamische Gerätegruppen für jede Kategorie erstellen. Sie können je nach Bedarf weitere Kategorien für Ihre Organisation erstellen.
 
-Diese Kategorien werden Benutzern während der Registrierung angezeigt. Je nachdem, welche Kategorie Benutzer auswählen, wird das registrierte Gerät in die entsprechende Gerätegruppe verschoben. Schritte zum Erstellen von Gerätekategorien finden Sie unter [Zuweisen von Geräten zu Gruppen](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping).
+Diese Kategorien werden Benutzern während der Registrierung angezeigt. Je nachdem, welche Kategorie Benutzer auswählen, wird das registrierte Gerät in die entsprechende Gerätegruppe verschoben. Schritte zum Erstellen von Gerätekategorien finden Sie unter [Zuweisen von Geräten zu Gruppen](../enroll-devices/how-to-use-device-group-mapping.md).
 
   ![Screenshot des Blatts „Richtlinie hinzufügen“](../media/tem-dynamic-membership-rules.png)
 

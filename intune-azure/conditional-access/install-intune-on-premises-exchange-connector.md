@@ -15,10 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d112f453302361ac95eb2c44d7440a72d212cc4a
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 8f31db9ba2c57277c90315a7a395cae8012b37f0
+ms.contentlocale: de-de
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -37,7 +38,7 @@ In der folgenden Tabelle finden Sie die Anforderungen an den Computer, auf dem S
 |---------------|--------------------|
 |Betriebssysteme|Intune unterstützt den lokalen Exchange Connector auf Computern, auf denen eine beliebige Edition von Windows Server 2008 SP2 (64 Bit), Windows Server 2008 R2, Windows Server 2012 oder Windows Server 2012 R2 ausgeführt wird.<br /><br />Auf Server Core-Installationen wird der Connector nicht unterstützt.|
 |Microsoft Exchange|Für lokale Connectors ist Microsoft Exchange 2010 SP1 oder höher oder die Exchange Online Dedicated-Legacyumgebung erforderlich. Wenn Sie herausfinden möchten, ob es sich bei Ihrer Exchange Online Dedicated-Umgebung um die **neue** oder die **ältere** Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer.|
-|Autorität für die Verwaltung mobiler Geräte| [Festlegen von Intune als Autorität für die Verwaltung mobiler Geräte](https://docs.microsoft.com/en-us/intune/deploy-use/prerequisites-for-enrollment#step-2-set-mdm-authority).|
+|Autorität für die Verwaltung mobiler Geräte| [Festlegen von Intune als Autorität für die Verwaltung mobiler Geräte](https://docs.microsoft.com/intune/deploy-use/prerequisites-for-enrollment#step-2-set-mdm-authority).|
 |Hardware|Der Computer, auf dem Sie den Connector installieren, erfordert eine CPU mit 1,6 GHz und 2 GB RAM sowie mindestens 10 GB freien Speicherplatz.|
 |Active Directory-Synchronisierung|Bevor Sie einen Connector für die Verbindung von Intune mit Exchange Server verwenden können, müssen Sie die [Active Directory-Synchronisierung](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) einrichten, damit Ihre lokalen Benutzer und Sicherheitsgruppen mit Ihrer Instanz von Azure Active Directory synchronisiert werden.|
 |Zusätzliche Software|Eine vollständige Installation von Microsoft .NET Framework 4.5 und Windows PowerShell 2.0 muss auf dem Computer installiert sein, auf dem der Connector gehostet wird.|
