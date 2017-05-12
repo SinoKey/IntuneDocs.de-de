@@ -1,5 +1,5 @@
 ---
-title: "Was sind Geräteprofile in Microsoft Intune?"
+title: "Was sind Geräteprofile in Microsoft Intune? | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie mehr über Intune-Geräteprofile und wie sie Ihnen helfen können, Geräte in Ihrem Unternehmen zu verwalten und zu schützen."
 keywords: 
@@ -15,10 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: b33d8ec48c057ce1e67487d5772ca203793d8a79
+ms.contentlocale: de-de
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -37,7 +38,7 @@ Wenn Sie diese Workload öffnen, werden die folgenden Optionen angezeigt:
 
 ## <a name="getting-started"></a>Erste Schritte
 
-Der Workflow zum Erstellen von Geräteprofilen ist für alle Profile ähnlich. Weitere Informationen zum Erstellen von Profilen finden Sie unter [Erstellen von Microsoft Intune-Gerätekonfigurationsprofilen](/intune-azure/configure-devices/how-to-create-device-profiles). Lesen Sie anschließend weitere spezifische Informationen zu den Einstellungen für die einzelnen Profiltypen.
+Der Workflow zum Erstellen von Geräteprofilen ist für alle Profile ähnlich. Weitere Informationen zum Erstellen von Profilen finden Sie unter [Erstellen von Microsoft Intune-Gerätekonfigurationsprofilen](how-to-create-device-profiles.md). Lesen Sie anschließend weitere spezifische Informationen zu den Einstellungen für die einzelnen Profiltypen.
 
 Sie können die folgenden Funktionen auf Ihren Geräten verwalten:
 
@@ -51,15 +52,15 @@ Mit Geräteeinschränkungen können Sie eine Vielzahl von Einstellungen auf Ger�
 Weitere Informationen finden Sie unter [Konfigurieren von Einstellungen für Geräteeinschränkungen](how-to-configure-device-restrictions.md). Unterstützt: Android, iOS, macOS, Windows 10 und Windows 10 Team.
 
 ## <a name="email"></a>E-Mail
-Mit E-Mail-Profilen können Sie Exchange ActiveSync-E-Mail-Einstellungen auf Ihren verwalteten Geräten erstellen, bereitstellen und überwachen. Durch das Bereitstellen dieser Einstellungen stellen Sie Einheitlichkeit sicher, reduzieren die Anzahl von Supportanfragen und erlauben Endbenutzern den Zugriff auf Unternehmens-E-Mails auf ihren persönlichen Geräten, ohne dass ihrerseits eine Konfiguration erforderlich wäre.
+Mit E-Mail-Profilen können Sie Exchange ActiveSync-E-Mail-Einstellungen auf Ihren verwalteten Geräten erstellen, zuweisen und überwachen. Durch das Zuweisen dieser Einstellungen stellen Sie Einheitlichkeit sicher, reduzieren die Anzahl von Supportanfragen und erlauben Endbenutzern den Zugriff auf Unternehmens-E-Mails auf ihren persönlichen Geräten, ohne dass ihrerseits eine Konfiguration erforderlich wäre.
 Weitere Informationen finden Sie unter [Konfigurieren von E-Mail-Einstellungen](how-to-configure-email-settings.md). Unterstützt: Android, iOS, Windows 8.1 und Windows 10.
 
 ## <a name="wi-fi"></a>WLAN
-Verwenden Sie WLAN-Profile, um Benutzern und Geräten in Ihrer Organisation Einstellungen für Drahtlosnetzwerke bereitzustellen. Wenn Sie ein WLAN-Profil bereitstellen, erhalten Ihre Benutzer Zugriff auf Ihr Unternehmens-WLAN, ohne es selbst konfigurieren zu müssen.
+Verwenden Sie WLAN-Profile, um Benutzern und Geräten in Ihrer Organisation Einstellungen für Drahtlosnetzwerke zuzuweisen. Wenn Sie ein WLAN-Profil zuweisen, erhalten Ihre Benutzer Zugriff auf Ihr Unternehmens-WLAN, ohne es selbst konfigurieren zu müssen.
 Weitere Informationen finden Sie unter [Konfigurieren von WLAN-Einstellungen](how-to-configure-wi-fi-settings.md). Unterstützt: Android, iOS, macOS und Windows 8.1 (nur Import).
 
 ## <a name="vpn"></a>VPN
-Virtuelle private Netzwerke (virtual private networks, VPNs) bieten Ihren Benutzern sicheren Remotezugriff auf Ihr Unternehmensnetzwerk. Geräte verwenden ein VPN-Verbindungsprofil, um eine Verbindung mit dem VPN-Server zu initiieren. VPN-Profile ermöglichen Ihnen die Bereitstellung von VPN-Einstellungen für Benutzer und Geräte in Ihrer Organisation, damit diese einfach eine sichere Verbindung mit dem Netzwerk herstellen können.
+Virtuelle private Netzwerke (virtual private networks, VPNs) bieten Ihren Benutzern sicheren Remotezugriff auf Ihr Unternehmensnetzwerk. Geräte verwenden ein VPN-Verbindungsprofil, um eine Verbindung mit dem VPN-Server zu initiieren. VPN-Profile ermöglichen Ihnen die Zuweisung von VPN-Einstellungen für Benutzer und Geräte in Ihrer Organisation, damit diese einfach eine sichere Verbindung mit dem Netzwerk herstellen können.
 Weitere Informationen finden Sie unter [Konfigurieren von VPN-Einstellungen](how-to-configure-vpn-settings.md).
 Unterstützt: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 und Windows 10.
 

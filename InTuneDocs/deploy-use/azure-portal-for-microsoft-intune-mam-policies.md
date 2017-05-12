@@ -14,9 +14,11 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e2503c44f434e67f45064f28d1e921eb5accb0b6
-ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 2b064d14e8a46c19c0eafc3276b470dead114438
+ms.openlocfilehash: e7fd0a83e21d499da39bd65502d8981bc3b1f61c
+ms.contentlocale: de-de
+ms.lasthandoff: 05/06/2017
 
 
 ---
@@ -40,7 +42,7 @@ Das Azure-Portal wird verwendet, um App-Schutzrichtlinien für folgende Apps zu 
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>Melden Sie sich beim Azure-Portal an, und passen Sie Ihre Startseite an.
 
-1.  Navigieren Sie zum [Azure-Portal](https://portal.azure.com), und melden Sie sich mit Ihren [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Anmeldeinformationen an.
+1.  Navigieren Sie zum [Azure-Portal](https://portal.azure.com) und melden Sie sich mit Ihren Intune-Anmeldeinformationen an.
 
     ![Screenshot zur Anmeldeseite des Azure-Portals](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
@@ -48,7 +50,7 @@ Das Azure-Portal wird verwendet, um App-Schutzrichtlinien für folgende Apps zu 
 
     ![Screenshot zum Dashboard des Azure-Portals](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  Wählen Sie im linken Menü **Weiter Dienste** aus, und geben Sie in das Textfeld „Filter“ **Intune** ein.
+3.  Wählen Sie im linken Menü **Weitere Dienste** aus, und geben Sie in das Filtertextfeld die Zeichenfolge **Intune** ein.
 
     ![Screenshot des Menüs „Durchsuchen“ mit hervorgehobenem Intune](../media/AppManagement/MAM-Azure-Portal-1.png)
 
@@ -64,9 +66,4 @@ Das Azure-Portal wird verwendet, um App-Schutzrichtlinien für folgende Apps zu 
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Vorbereitungen zum Konfigurieren von App-Schutzrichtlinien](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
