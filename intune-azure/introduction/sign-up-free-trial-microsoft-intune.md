@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 29b33341b136c8e8d76b666f94a9f620212944c5
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: eaddfc647c5e755e6b033a7970e003ce516bba04
+ms.contentlocale: de-de
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -38,7 +39,7 @@ You can do everything in the trial version that you can do in a subscription ver
 <!--- ## Sign up for your trial--->
 1. Besuchen Sie die [Intune-Anmeldeseite](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20), und füllen Sie das Formular zur Anmeldung für ein Testabonnement aus.
 
- <!--- If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1) instead. However, this article assumes that you are not using such an account.---><br/> ![Abbildung der Registrierungsseite](./media/1-clicking-try.png)
+ <!--- If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1) instead. However, this article assumes that you are not using such an account.---><br/> ![Abbildung der Registrierungsseite](./media/1-clicking-try.png)
 
  > [!TIP]
 > Wenn sich der Großteil Ihres IT-Betriebs und Ihrer Benutzer in einem anderen Gebietsschema als Sie befindet, sollten Sie dieses Gebietsschema unter **Where's your company located?** (Unternehmensstandort) festlegen.
@@ -56,7 +57,7 @@ Wenn Sie sich für eine Testversion registrieren, wird eine E-Mail mit Ihren Kon
 <!--- ## Add users
 Before you leave the Office 365 Admin center for Intune, you need to add some users to your trial account.
 
-In the Office 365 Admin center, you can add users individually or in bulk by uploading a .csv file. We will do both to set up your trial. However, in your production environment, you will probably want to take advantage of your Azure Active Directory user accounts, which you can learn more about in our [Getting Started guide](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) and in the [Next steps](#Next-steps) section of this article.
+In the Office 365 Admin center, you can add users individually or in bulk by uploading a .csv file. We will do both to set up your trial. However, in your production environment, you will probably want to take advantage of your Azure Active Directory user accounts, which you can learn more about in our [Getting Started guide](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) and in the [Next steps](#Next-steps) section of this article.
 
 ### Add an individual user
 1. Choose either of the options to add a use to open a form that allows you to create a user. Only the items starred with an asterisk (\*) are required.
@@ -142,9 +143,9 @@ Evaluierungsszenario: [Evaluieren der Verwaltung mobiler Geräte (MDM) in Micros
 
 ### <a name="integration-with-other-products"></a>Integration mit anderen Produkten
 Erfahren Sie mehr über die Verwendung Ihrer Azure Active Directory-Benutzerkonten mit Intune:
-- [Identitätsanforderungen](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
-- [Anforderungen für die Verzeichnissynchronisierung](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
-- [Anforderungen für mehrstufige Authentifizierung](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+- [Identitätsanforderungen](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+- [Anforderungen für die Verzeichnissynchronisierung](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+- [Anforderungen für mehrstufige Authentifizierung](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
-Erfahren Sie mehr über die Verwendung von [Intune mit System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management).
+Erfahren Sie mehr über die Verwendung von [Intune mit System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management).
 

@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
-ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
-ms.lasthandoff: 04/25/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: adeea52461f58bd03b291c4b2cc336e9da19d429
+ms.contentlocale: de-de
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -38,7 +39,7 @@ Wenn Sie Exchange ActiveSync entweder lokal oder in der Cloud gehostet verwenden
 
 Die folgende Tabelle zeigt Intune-Registrierungsmethoden und die unterstützten Funktionen und Anforderungen der einzelnen Methoden. Die Funktionen und Anforderungen werden nachfolgend beschrieben. Die folgenden Begriffe werden in der Tabelle verwendet:
 
-- **Zurücksetzen** – Gibt an, ob das Gerät zurückgesetzt werden muss, bevor Benutzer das Gerät registrieren können. Der Begriff „Zurücksetzen“ bedeutet die Zurücksetzung des Geräts auf Werkseinstellungen, wobei alle Daten entfernt werden. Weitere Informationen finden Sie unter [Verwenden des vollständigen oder selektiven Zurücksetzens von Geräten](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune).
+- **Zurücksetzen** – Gibt an, ob das Gerät zurückgesetzt werden muss, bevor Benutzer das Gerät registrieren können. Der Begriff „Zurücksetzen“ bedeutet die Zurücksetzung des Geräts auf Werkseinstellungen, wobei alle Daten entfernt werden. Weitere Informationen finden Sie unter [Verwenden des vollständigen oder selektiven Zurücksetzens von Geräten](../manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md).
 - **Affinität** – Ordnet Geräte Benutzern zu. Für die Verwaltung mobiler Geräte (MAM, Mobile Application Management) und den bedingten Zugriff auf Unternehmensdaten erforderlich. Weitere Informationen finden Sie auf der Seite [Registrieren firmeneigener iOS-Geräte in Microsoft Intune](enroll-ios-devices-using-device-enrollment-program.md).
 - **Sperren**: Zeigt an, wenn Benutzer daran gehindert werden, die Registrierung ihrer Geräte aus der Verwaltung aufheben. Benutzer können die Registrierung ihrer Geräte auf allen Plattformen mithilfe ihrer Unternehmensportal-App aufheben. Sie können zur Aufhebung der Registrierung nicht die nativen Betriebssystemmenüs verwenden.
 
@@ -70,7 +71,7 @@ Die folgende Tabelle zeigt Intune-Registrierungsmethoden und die unterstützten 
 
 
 ## <a name="byod"></a>BYOD
-BYOD-Benutzer installieren die Unternehmensportal-App und registrieren ihr Gerät. Dadurch können Benutzer Verbindungen mit dem Unternehmensnetzwerk herstellen und zur Domäne oder zu Azure Active Directory beitreten. Für die meisten Plattformen müssen Sie BYOD-Registrierung für viele COD-Szenarios ermöglichen. Sie können die Registrierung von persönlichen iOS- und Android-Geräten blockieren. Unter [Festlegen von Gerätetypbeschränkungen](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) finden Sie Anweisungen.
+BYOD-Benutzer installieren die Unternehmensportal-App und registrieren ihr Gerät. Dadurch können Benutzer Verbindungen mit dem Unternehmensnetzwerk herstellen und zur Domäne oder zu Azure Active Directory beitreten. Für die meisten Plattformen müssen Sie BYOD-Registrierung für viele COD-Szenarios ermöglichen. Sie können die Registrierung von persönlichen iOS- und Android-Geräten blockieren. Unter [Festlegen von Gerätetypbeschränkungen](set-enrollment-restrictions.md#set-device-type-restrictions) finden Sie Anweisungen.
 
 ## <a name="corporate-owned-devices"></a>Firmeneigene Geräte
 Firmeneigene Geräte (Corporate-Owned Devices, COD) können über das Azure-Portal verwaltet werden. iOS-Geräte können direkt über die von Apple bereitgestellten Tools registriert werden. Alle Gerätetypen können von einem Administrator oder Manager die unter Verwendung des Geräteregistrierungs-Managers registriert werden. Geräte mit einer IMEI-Nummer können auch als firmeneigene Geräte identifiziert und gekennzeichnet werden, um COD-Szenarien zu unterstützen.
