@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: 5e2516611b933bb9c74c2b8dc973f85e1d82237f
-ms.lasthandoff: 03/11/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e825d47860924de1350299c8998d958ed68c0418
+ms.contentlocale: de-de
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -54,7 +55,7 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 
     ![Windows-Einstellung für Diagnose- und Nutzungsdaten](./media/telemetry-basic.png)
 
-    Sie können diese Einstellung entweder manuell konfigurieren oder ein Intune-Geräteeinschränkungsprofil für Windows 10 und höher verwenden. Legen Sie hierzu die Einstellung **Allgemein** > **Übermittlung von Diagnosedaten** mindestens auf **Basic** fest. Weitere Informationen zu Geräteprofilen finden Sie unter [So konfigurieren Sie Einstellungen für Geräteeinschränkungen in Microsoft Intune](/intune-azure/configure-devices/how-to-configure-device-restrictions).
+    Sie können diese Einstellung entweder manuell konfigurieren oder ein Intune-Geräteeinschränkungsprofil für Windows 10 und höher verwenden. Legen Sie hierzu die Einstellung **Allgemein** > **Übermittlung von Diagnosedaten** mindestens auf **Basic** fest. Weitere Informationen zu Geräteprofilen finden Sie unter [So konfigurieren Sie Einstellungen für Geräteeinschränkungen in Microsoft Intune](how-to-configure-device-restrictions.md).
 
 - In der klassischen Intune-Verwaltungskonsole stehen vier Einstellungen zum Steuern des Verhaltens von Softwareupdates zur Verfügung. Diese Einstellungen sind Teil der allgemeinen Konfigurationsrichtlinie für Desktop- und Mobilgeräte unter Windows 10:
     - **Automatische Updates zulassen**
@@ -101,7 +102,7 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 
 Der neue Updatering wird in der Liste mit den Updateringen angezeigt.
 
-1. Wählen Sie zum Zuweisen des Rings in der Liste mit den Updateringen einen Ring aus, und klicken Sie anschließend auf der Registerkarte mit dem Namen des Rings**auf **Zuweisungen**.
+1. Wählen Sie zum Zuweisen des Rings in der Liste mit den Updateringen einen Ring aus, und klicken Sie anschließend auf der Registerkarte mit dem Namen des Rings** auf **Zuweisungen**.
 2. Wählen Sie auf der nächsten Registerkarte die Option **Gruppen auswählen** aus, und wählen Sie anschließend die Gruppen aus, denen Sie diesen Ring zuweisen möchten.
 3. Wählen Sie abschließend **Auswählen** aus, um die Zuweisung abzuschließen.
 

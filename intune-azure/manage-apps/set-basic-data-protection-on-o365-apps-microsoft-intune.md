@@ -16,10 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e3924cb3409ab03f8070376c2248a2791a1e713d
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 9ce22cb6e4031432f8d78653230b526f504b5f8c
+ms.contentlocale: de-de
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -72,7 +73,7 @@ In diesem Artikel wird OneDrive for Business als Beispiel verwendet, um die Benu
 ## <a name="user-experience-on-an-android-device"></a>Benutzererfahrung auf einem Android-Gerät
 
 1. Starten Sie die OneDrive for Business-App, um die Anmeldeseite zu öffnen.  <br/> ![Abbildung des Begrüßungsbildschirms der OneDrive-App](./media/onedrive-android-welcome.png)
-2. Geben Sie den Benutzernamen Ihres Geschäftskontos ein. Sie werden zur Seite „Office 365-Authentifizierung“ umgeleitet, auf der Sie Ihre Unternehmensanmeldeinformationen eingeben können. <br/> ![Abbildung der Office&365;-Anmeldung unter Android](./media/o365-sign-in-android.png)
+2. Geben Sie den Benutzernamen Ihres Geschäftskontos ein. Sie werden zur Seite „Office 365-Authentifizierung“ umgeleitet, auf der Sie Ihre Unternehmensanmeldeinformationen eingeben können. <br/> ![Abbildung der Office 365-Anmeldung unter Android](./media/o365-sign-in-android.png)
 3. Nach der erfolgreichen Authentifizierung Ihrer Anmeldeinformationen durch Azure Active Directory wird eine Meldung mit Anweisungen zur Installation der Unternehmensportal-App angezeigt, sofern diese auf dem Gerät noch nicht installiert ist. Tippen Sie auf **Zum Store gehen**, um den Vorgang fortzusetzen. <br/> ![Abbildung der Benachrichtigung zur Installation der Unternehmensportal-App](./media/get-company-portal-android.png) <br/>Wenn Sie die Unternehmensportal-App bereits auf Ihrem Telefon installiert haben, wird die OneDrive for Business-App automatisch gestartet, und Sie können bis zum Ende des Hinweises überspringen.
 >[!IMPORTANT]
 >Wenn Sie unter Android einmal die Verwaltung von Office-Apps durch eine MAM-Richtlinie festgelegt haben, **müssen** Benutzer des Geräts die Unternehmensportal-App installieren, um Zugriff auf Arbeits-E-Mails und -dokumente zu erhalten, obwohl der Endbenutzer die App nicht öffnen oder sich in dieser anmelden muss, um E-Mails oder Dokumente zu lesen.
@@ -132,5 +133,5 @@ Wenn Sie diese Richtlinien oder andere Richtlinien, die Sie in der Vorschau von 
 ![Abbildung des Benutzeroberflächenpfads zum Anzeigen von Richtlinien](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
-Erfahren Sie mehr über [App-Schutzrichtlinien](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy).
+Erfahren Sie mehr über [App-Schutzrichtlinien](https://docs.microsoft.comwhat-is-app-protection-policy.md).
 

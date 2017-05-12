@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
-ms.openlocfilehash: 4916b66e1f2eeabb42401645dbece28dad28eb19
-ms.lasthandoff: 04/26/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 8cf12e434518c9f06c105a22f3b7aef2613fcdb0
+ms.contentlocale: de-de
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="help-users-with-the-troubleshooting-portal-in-microsoft-intune"></a>Unterstützen von Benutzern im Portal zur Problembehandlung in Microsoft Intune
@@ -35,7 +36,7 @@ Ein Intune-Administrator kann Benutzern Helpdeskoperator-Berechtigungen zuweisen
 4. Geben Sie einen **Zuweisungsnamen** (erforderlich) und eine **Zuweisungsbeschreibung** (optional) an, und weisen Sie dann **Mitglieder (Gruppen)** und **Bereich (Gruppen)** zu.
 5. Mitglieder der Rolle „Helpdeskoperator“ können jetzt das Portal zur Problembehandlung verwenden.
 
-Weitere Informationen zu Intune-Rollen finden Sie unter [Intune-Rollen (RBAC) für Microsoft Intune](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control).
+Weitere Informationen zu Intune-Rollen finden Sie unter [Intune-Rollen (RBAC) für Microsoft Intune](../access-control/role-based-access-control.md).
 
 ## <a name="access-the-troubleshooting-portal"></a>Zugriff auf das Problembehandlungsportal
 
