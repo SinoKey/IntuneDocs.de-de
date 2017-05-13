@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
-ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
-ms.lasthandoff: 02/03/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 2801d6a3cc672fbf91f89d2586c36b6bd3f18490
+ms.contentlocale: de-de
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -163,7 +164,7 @@ Sie können für Geräte mit iOS 8.0 und höher ein bedarfsgesteuertes VPN konfi
 1. Suchen Sie auf der Seite der Richtlinienkonfiguration die Option **Bedarfsgesteuerte Regeln für diese VPN-Verbindung**. Die Spalten heißen **Übereinstimmung**, die Bedingung, deren Einhaltung die Regeln überprüfen, und **Aktion**, die Aktion, die durch die Richtlinie ausgelöst wird, wenn die Bedingung erfüllt ist.
 2. Wählen Sie **Hinzufügen** aus, um eine Regel zu erstellen. Es gibt zwei Arten von Übereinstimmungen, die Sie in der Regel einrichten können. Sie können pro Regel jeweils nur eine Art konfigurieren.
   - **SSIDs** beziehen sich auf drahtlose Netzwerke.
-  - **DNS-Suchdomänen**, welche ...  Sie können vollständig qualifizierte Domänennamen wie z. B. *team. corp.contoso.com* oder Domänen wie *contoso.com* verwenden (dies entspricht der Verwendung von **.contoso.com*).
+  - **DNS-Suchdomänen:** Sie können vollständig qualifizierte Domänennamen wie z. B. *team.corp.contoso.com* oder Domänen wie *contoso.com* verwenden (dies entspricht der Verwendung von **.contoso.com*).
 3. Optional: Geben Sie eine URL-Zeichenfolgetest an, d. h. eine URL, die von der Regel als Test verwendet wird. Wenn das Gerät, auf dem dieses Profil installiert wird, auf diese URL ohne Umleitung zugreifen kann, wird das VPN eingerichtet, und das Gerät stellt eine Verbindung mit der Ziel-URL her. Der URL-Zeichenfolgentest-Standort wird dem Benutzer nicht angezeigt. Ein Beispiel für einen URL-Zeichenfolgentest ist die Adresse eines Überwachungswebservers, der die Gerätekompatibilität prüft, bevor die VPN-Verbindung hergestellt wird. Eine andere Möglichkeit besteht darin, mit der URL zu testen, ob das VPN eine Verbindung mit einem Standort herstellen kann, bevor das Gerät über das VPN mit der Ziel-URL verbunden wird.
 4. Wählen Sie eine der folgenden Aktionen aus:
   - **Verbinden**

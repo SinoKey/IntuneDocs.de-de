@@ -1,12 +1,12 @@
 ---
-title: "Verwalten von Apps aus dem Windows Store für Unternehmen"
+title: "Verwalten von Apps aus dem Windows Store für Unternehmen | Microsoft-Dokumentation"
 titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie Apps aus dem Windows Store für Unternehmen in Intune synchronisieren und dann zuweisen und nachverfolgen können."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: 40b07a011d0d4126945f6cce6304a4cbf5e8b6aa
+ms.contentlocale: de-de
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -31,10 +32,10 @@ Im [Windows Store für Unternehmen](https://www.microsoft.com/business-store) k�
 * Sie können die Liste der Apps, die Sie im Speicher erworben haben, mit Intune synchronisieren.
 * Synchronisierte Apps werden in der Intune-Verwaltungskonsole angezeigt und können wie alle anderen Apps zugewiesen werden.
 * Sie können in der Intune-Verwaltungskonsole die Anzahl der verfügbaren und der verwendeten Lizenzen nachverfolgen.
-* Intune blockiert die Bereitstellung und Installation von Apps, wenn nicht genügend Lizenzen vorhanden sind.
+* Intune blockiert die Zuweisung und Installation von Apps, wenn nicht genügend Lizenzen vorhanden sind.
 
 ## <a name="before-you-start"></a>Vorbereitung
-Überprüfen Sie die folgenden Informationen, bevor Sie beginnen, Apps aus dem Windows Store für Unternehmen zu synchronisieren und bereitzustellen:
+Überprüfen Sie die folgenden Informationen, bevor Sie beginnen, Apps aus dem Windows Store für Unternehmen zu synchronisieren und zuzuweisen:
 * Sie müssen Intune als Autorität zur Verwaltung mobiler Geräte für Ihre Organisation konfigurieren.
 * Sie müssen im Windows Store für Unternehmen über ein registriertes Konto verfügen.
 * Sobald ein Konto für den Windows Store für Unternehmen Intune zugeordnet wurde, können Sie dieses zugeordnete Konto nicht mehr ändern.
@@ -50,7 +51,7 @@ Bevor Sie die Synchronisierung in der Intune-Konsole aktivieren, müssen Sie Ihr
 3. Wählen Sie auf der Seite „Verwaltungstools“ die Option **Verwaltungstool hinzufügen** und dann **Microsoft Intune** aus.
 
 > [!NOTE]
-> Wenn Sie mehr als ein Verwaltungstool zum Bereitstellen von Windows Store für Unternehmen-Apps verwenden, konnten Sie vorher nur eine App dem Windows Store für Unternehmen zuordnen. Nun können Sie mehrere Verwaltungstools dem Store zuordnen, z.B. Intune und Configuration Manager.
+> Wenn Sie mehr als ein Verwaltungstool zum Zuweisen von Windows Store für Unternehmen-Apps verwenden, konnten Sie vorher nur eine App dem Windows Store für Unternehmen zuordnen. Nun können Sie mehrere Verwaltungstools dem Store zuordnen, z.B. Intune und Configuration Manager.
 
 Sie können nun fortfahren und die Synchronisierung in der Intune-Konsole einrichten.
 
@@ -74,11 +75,11 @@ Sie können nun fortfahren und die Synchronisierung in der Intune-Konsole einric
 
 Sie weisen Apps aus dem Store auf die gleiche Weise wie andere Intune-Apps zu. Weitere Informationen finden Sie unter [Zuweisen von Apps zu Gruppen mit Microsoft Intune](deploy-apps.md). Anstelle der Zuweisung von Apps auf der Seite **Alle Apps** weisen Sie diese über die Seite **Lizenzierte Apps** zu.
 
-Wenn Sie eine App aus dem Windows Store für Unternehmen zuweisen, wird von jedem Benutzer, der die App installiert, eine Lizenz verwendet. Wenn alle verfügbaren Lizenzen für eine bereitgestellte App verwendet werden, können keine weiteren Kopien bereitgestellt werden. Sie müssen eine der folgenden Aktionen ausführen:
+Wenn Sie eine App aus dem Windows Store für Unternehmen zuweisen, wird von jedem Benutzer, der die App installiert, eine Lizenz verwendet. Wenn alle verfügbaren Lizenzen für eine zugewiesene App verwendet werden, können keine weiteren Kopien zugewiesen werden. Sie müssen eine der folgenden Aktionen ausführen:
 * Deinstallieren Sie die App auf einigen Geräten.
-* Beschränken Sie die aktuelle Bereitstellung auf die Anzahl von Benutzern, für die Sie über Lizenzen verfügen.
+* Beschränken Sie die aktuelle Zuweisung auf die Anzahl von Benutzern, für die Sie über Lizenzen verfügen.
 * Erwerben Sie zusätzliche Kopien der App im Windows Store für Unternehmen.
 
 > [!Important]
-> Bereitgestellte Apps sind nur für den Benutzer verfügbar, der das Gerät ursprünglich registriert hat. Andere Benutzer können nicht auf die App zugreifen.
+> Zugewiesene Apps sind nur für den Benutzer verfügbar, der das Gerät ursprünglich registriert hat. Andere Benutzer können nicht auf die App zugreifen.
 

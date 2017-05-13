@@ -14,9 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
+ms.translationtype: Human Translation
+ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
+ms.openlocfilehash: a9780dd3a951cc074a38061bf67aa5485c1eab68
+ms.contentlocale: de-de
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -62,9 +64,9 @@ Xamarin-Apps, die mit Intune App SDK-Xamarin-Komponenten erstellt wurden, könne
 
 2. Lesen Sie die [Lizenzbedingungen](https://components.xamarin.com/license/microsoft.intune.mam) für die Microsoft Intune MAM-Xamarin-Komponente.
 
-3.    Laden Sie den Intune App SDK-Xamarin-Komponentenordner aus [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) oder [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) herunter, und extrahieren Sie diesen. Die beiden geladenen Dateien aus Schritt 1 und Schritt 2 sollten sich auf derselben Verzeichnisebene befinden.
+3.    Laden Sie den Intune App SDK-Xamarin-Komponentenordner aus [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) oder [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) herunter, und extrahieren Sie diesen. Die beiden in Schritt 1 und Schritt 3 heruntergeladenen Dateien müssen sich auf derselben Verzeichnisebene befinden.
 
-4.    Führen Sie `Xamain.Component.exe install <.xam> file` in der Befehlszeile als Administrator aus.
+4.    Führen Sie `Xamarin.Component.exe install <.xam> file` in der Befehlszeile als Administrator aus.
 
 5.    Klicken Sie mit der rechten Maustaste in Ihrem zuvor erstellten Xamarin-Projekt auf **Komponenten**.
 
@@ -123,9 +125,4 @@ Für Xamarin.Forms und andere UI-Frameworks haben wir ein Tool bereit gestellt. 
 ## <a name="test-your-app"></a>Testen Ihrer App
 
 Sie haben die grundlegenden Schritte zum Erstellen der Komponente auf Ihrer App abgeschlossen. Jetzt können die Schritte ausgeführt werden, die in der Xamarin Android-Beispiel-App zu finden sind. Wir haben zwei Beispiele bereit gestellt, eine für Xamarin.Forms und eine weitere für Android.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

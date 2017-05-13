@@ -14,9 +14,11 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7d0b9cee72e8810b4f39bd81bd8f49d0818618c4
+ms.contentlocale: de-de
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -28,7 +30,7 @@ ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>Szenario 1: Blockieren des Zugriffs auf Exchange Online durch Benutzer nicht kompatibler Geräte
 ### <a name="scenario-requirements"></a>Anforderungen für das Szenario
 - Der Zugriff auf Exchange Online muss für alle Benutzer in der Azure Active Directory-Sicherheitsgruppe **Accounting** blockiert werden, wenn das verwendete Gerät einer von Ihnen bereitgestellten Kompatibilitätsrichtlinie nicht entspricht.
-- Wenn in dieser Gruppe Benutzer vorhanden sind, deren Geräte von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] nicht unterstützt werden, muss der Zugriff auf Exchange Online über diese Geräte blockiert werden.
+- Wenn in dieser Gruppe Benutzer vorhanden sind, deren Geräte von Intune nicht unterstützt werden, muss der Zugriff auf Exchange Online über diese Geräte blockiert werden.
 - Benutzer in der Azure Active Directory-Sicherheitsgruppe **Finance** müssen von der Richtlinie ausgenommen werden, auch wenn sie sich ebenfalls in der Sicherheitsgruppe **Accounting** befinden.
 
 Um dies zu erreichen, konfigurieren Sie eine Richtlinie für bedingten Zugriff für Exchange Online mit folgenden Einstellungen:
@@ -68,7 +70,7 @@ Sie verwenden den folgenden Ablauf, um zu entscheiden, welche Geräte auf Exchan
 ## <a name="scenario-3-no-android-devices-can-access-exchange-on-premises"></a>Szenario 3: Kein Android-Gerät darf auf lokales Exchange zugreifen
 ### <a name="scenario-requirements"></a>Anforderungen für das Szenario
 - Der Zugriff auf Exchange soll für alle Android-Geräte blockiert werden.
-- Alle anderen unterstützten Geräte können auf Exchange zugreifen, solange sie von [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] verwaltet werden.
+- Alle anderen unterstützten Geräte können auf Exchange zugreifen, solange sie von Intune verwaltet werden.
 
 Um dies zu erreichen, konfigurieren Sie eine Richtlinie für bedingten Zugriff für lokales Exchange mit folgenden Einstellungen:
 
@@ -82,9 +84,4 @@ Um dies zu erreichen, konfigurieren Sie eine Richtlinie für bedingten Zugriff f
 Sie verwenden den folgenden Ablauf, um zu entscheiden, welche Geräte auf Exchange zugreifen können:
 
 ![Ablauf für Gerätezugriff](./media/ConditionalAccess8-4.png)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 68738f25393eec006a8bc7a78412669859f91c27
+ms.contentlocale: de-de
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -123,7 +124,7 @@ Verwenden Sie das folgende Format, um eine App-URL in der App-Liste anzugeben:
 
 Suchen Sie mithilfe einer Suchmaschine die gewünschte App im iTunes App Store, und öffnen Sie die Seite für die App.
 Kopieren Sie die URL der Seite, und verwenden Sie diese als URL zur Konfiguration der Liste zulässiger oder unzulässiger Apps oder einer App, die Sie im Kioskmodus ausführen möchten.
-Geräteprofile, die Einstellungen für eingeschränkte Apps enthalten, müssen für Benutzergruppen bereitgestellt werden.
+Geräteprofile, die Einstellungen für eingeschränkte Apps enthalten, müssen Benutzergruppen zugewiesen werden.
 
 Beispiel: Suchen Sie nach Microsoft Word für iPad. Die URL, die Sie verwenden, ist https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
@@ -160,52 +161,6 @@ Beispiel: Suchen Sie nach Microsoft Word für iPad. Die URL, die Sie verwenden, 
 ### <a name="additional-options"></a>Zusätzliche Optionen
 
 Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Datei im Format <*App-URL*>, <*App-Name*>, <*App-Herausgeber*> aufzufüllen. Sie können auch auf **Exportieren** klicken, um eine CSV-Datei mit dem Inhalt der Liste der ein- und ausgeblendeten Apps im gleichen Format zu erstellen.
-
-### <a name="app-information-for-built-in-ios-apps"></a>App-Informationen für integrierte iOS-Apps
-Verwenden Sie die Informationen in dieser Liste zur Identifizierung des Namens, des Herausgebers und der Paket-ID der integrierten iOS-Apps, die Sie ein- oder ausblenden möchten. Wenn Sie alle Apps in der Liste ein- oder ausblenden möchten, können Sie die nachstehenden Daten in eine Textdatei mit der Erweiterung **.csv** kopieren. Verwenden Sie anschließend die Option **Importieren**, um alle Apps gleichzeitig zu importieren.
-
-
-    App Store,Apple,com.apple.AppStore
-    Calculator,Apple,com.apple.calculator
-    Calendar,Apple,com.apple.mobilecal
-    Camera,Apple,com.apple.camera
-    Clock,Apple,com.apple.mobiletimer
-    Compass,Apple,com.apple.compass
-    Contacts,Apple,com.apple.MobileAddressBook
-    FaceTime,Apple,com.apple.facetime
-    Find Friends,Apple,com.apple.mobileme.fmf1
-    Find iPhone,Apple,com.apple.mobileme.fmip1
-    Game Center,Apple,com.apple.gamecenter
-    GarageBand,Apple,com.apple.mobilegarageband
-    Health,Apple,com.apple.Health
-    iBooks,Apple,com.apple.iBooks
-    iTunes Store,Apple,com.apple.MobileStore
-    iTunes U,Apple,com.apple.itunesu
-    Keynote,Apple,com.apple.Keynote
-    Mail,Apple,com.apple.mobilemail
-    Maps,Apple,com.apple.Maps
-    Messages,Apple,com.apple.MobileSMS
-    Music,Apple,com.apple.Music
-    News,Apple,com.apple.news
-    Notes,Apple,com.apple.mobilenotes
-    Numbers,Apple,com.apple.Numbers
-    Pages,Apple,com.apple.Pages
-    Photo Booth,Apple,com.apple.Photo-Booth
-    Photos,Apple,com.apple.mobileslideshow
-    Podcasts,Apple,com.apple.podcasts
-    Reminders,Apple,com.apple.reminders
-    Safari,Apple,com.apple.mobilesafari
-    Settings,Apple,com.apple.Preferences
-    Stocks,Apple,com.apple.stocks
-    Tips,Apple,com.apple.tips
-    Videos,Apple,com.apple.videos
-    VoiceMemos,Apple,com.apple.VoiceMemos
-    Wallet,Apple,com.apple.Passbook
-    Watch,Apple,com.apple.Bridge
-    Weather,Apple,com.apple.weather
-
-
-
 
 
 ## <a name="cellular"></a>Mobilfunk
@@ -271,7 +226,7 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 |Hinweise|com.apple.mobilenotes|
 |Zahlen|com.apple.Numbers|
 |Seiten|com.apple.Pages|
-|Photo Booth|com.apple.Photo Booth|
+|Photo Booth|com.apple.Photo-Booth|
 |Fotos|com.apple.mobileslideshow|
 |Podcasts|com.apple.podcasts|
 |Reminders|com.apple.reminders|
@@ -308,7 +263,7 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 
 >[!NOTE]
 > Damit Sie ein iOS-Gerät für den Kioskmodus konfigurieren können, müssen Sie das Apple Configurator-Tool oder das Apple-Programm zur Geräteregistrierung verwenden, um das Gerät in den überwachten Modus zu versetzen. Weitere Informationen zum Apple Configurator-Tool finden Sie in der Apple-Dokumentation.
->Wenn die angegebene iOS-App nach der Bereitstellung der Konfigurationsrichtlinie installiert wird, wird das Gerät erst nach einem Neustart in den Kioskmodus versetzt.
+>Wenn die angegebene iOS-App nach der Zuweisung des Profils installiert wird, wird das Gerät erst nach einem Neustart in den Kioskmodus versetzt.
 
 ## <a name="safari"></a>Safari
 -     **Safari (nur überwachter Modus):** Geben Sie an, ob der Safari-Browser auf dem Gerät verwendet werden kann.

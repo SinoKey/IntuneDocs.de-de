@@ -1,12 +1,12 @@
 ---
-title: "Behandeln von Problemen mit Geräteprofilen in Microsoft Intune"
+title: "Behandeln von Problemen mit Geräteprofilen in Microsoft Intune | Microsoft-Dokumentation"
 titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Wenn Sie nicht weiter kommen, verwenden Sie die Informationen in diesem Thema zum Lösen von Problemen mit Intune-Geräteprofilen."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: 9bc5b328fc204a12cf7aa992f62ac00b9ddfd45d
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: c984c908afe97c988b9a1b9f46262c5a14a7d4d8
+ms.contentlocale: de-de
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -30,8 +31,8 @@ ms.lasthandoff: 03/13/2017
 
 Anhand der Informationen in diesem Thema können Sie bekannte Probleme im Zusammenhang mit Intune-Geräteprofilen behandeln.
 
-## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-deployed"></a>Wie lange dauert es, bis mobile Geräte Richtlinien oder Apps nach ihrer Bereitstellung abrufen können?
-Wenn eine Richtlinie oder App bereitgestellt wird, beginnt Intune sofort mit dem Versuch, das Gerät zu benachrichtigen und zum Einchecken beim Intune-Dienst zu veranlassen. Dies dauert normalerweise weniger als fünf Minuten.
+## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned"></a>Wie lange dauert es, bis mobile Geräte Richtlinien oder Apps nach ihrer Zuweisung abrufen können?
+Wenn eine Richtlinie oder App zugewiesen wird, beginnt Intune sofort mit dem Versuch, das Gerät zu benachrichtigen und zum Einchecken beim Intune-Dienst zu veranlassen. Dies dauert normalerweise weniger als fünf Minuten.
 
 Wenn ein Gerät sich nach der ersten Benachrichtigung nicht zum Abrufen der Richtlinie eincheckt, unternimmt Intune drei weitere Versuche.  Wenn das Gerät offline ist (z. B. ausgeschaltet oder nicht mit einem Netzwerk verbunden), erhält es die Benachrichtigungen möglicherweise nicht. In diesem Fall erhält das Gerät die Richtlinie beim nächsten geplanten Einchecken beim Intune-Dienst wie folgt:
 
@@ -50,12 +51,12 @@ Wenn das Gerät gerade registriert wurde, ist die Eincheckfrequenz höher:
 Benutzer können auch jederzeit die Unternehmensportal-App öffnen und das Gerät synchronisieren, um sofort auf Richtlinien zu prüfen.
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Bei welchen Aktionen sendet Intune sofort eine Benachrichtigung an ein Gerät?
-Geräte checken bei Intune entweder beim Erhalt einer Benachrichtigung ein, die sie dazu auffordert, oder während ihres regelmäßigen geplanten Eincheckvorgangs.  Wenn Sie für ein Gerät oder einen Benutzer ausdrücklich eine Aktion durchführen, wie z. B. Zurücksetzen, Sperren, Zurücksetzen der Kennung, App-Bereitstellung, Profilbereitstellung (WLAN, VPN, E-Mail usw.) oder Bereitstellung der Richtlinie, beginnt Intune sofort mit dem Versuch, das Gerät zu benachrichtigen, dass es sich zum Erhalten dieser Updates beim Intune-Dienst einchecken soll.
+Geräte checken bei Intune entweder beim Erhalt einer Benachrichtigung ein, die sie dazu auffordert, oder während ihres regelmäßigen geplanten Eincheckvorgangs.  Wenn Sie für ein Gerät oder einen Benutzer ausdrücklich eine Aktion durchführen, wie z. B. Zurücksetzen, Sperren, Zurücksetzen der Kennung, App-Zuweisung, Profilzuweisung (WLAN, VPN, E-Mail usw.) oder Richtlinienzuweisung, beginnt Intune sofort mit dem Versuch, das Gerät zu benachrichtigen, dass es sich zum Erhalten dieser Updates beim Intune-Dienst einchecken soll.
 
 Andere Änderungen, wie z. B. die Überarbeitung der Kontaktinformationen im Unternehmensportal, führen nicht zu einer sofortigen Benachrichtigung von Geräten.
 
-## <a name="if-multiple-policies-are-deployed-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Wie finde ich heraus, welche Einstellungen angewendet werden, wenn für denselben Benutzer oder dasselbe Gerät mehrere Richtlinien bereitgestellt werden?
-Bei Bereitstellung mehrerer Richtlinien für denselben Benutzer oder dasselbe Gerät erfolgt die Auswertung, welche Einstellung angewendet werden soll, auf der Ebene der einzelnen Einstellungen:
+## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Wie finde ich heraus, welche Einstellungen angewendet werden, wenn für denselben Benutzer oder dasselbe Gerät mehrere Richtlinien zugewiesen werden?
+Bei Zuweisung mehrerer Richtlinien für denselben Benutzer oder dasselbe Gerät erfolgt die Auswertung, welche Einstellung angewendet werden soll, auf der Ebene der einzelnen Einstellungen:
 
 -   Kompatibilitätsrichtlinieneinstellungen haben immer Vorrang vor Konfigurationsrichtlinieneinstellungen.
 
@@ -63,25 +64,25 @@ Bei Bereitstellung mehrerer Richtlinien für denselben Benutzer oder dasselbe Ge
 
 -   Falls eine Konfigurationsrichtlinieneinstellung im Konflikt mit einer Einstellung in einer anderen Konfigurationsrichtlinie steht, wird dieser Konflikt in der Intune-Konsole angezeigt. Konflikte dieser Art müssen Sie manuell auflösen.
 
-## <a name="what-happens-when-mobile-application-management-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>Was geschieht, wenn Richtlinien für die Verwaltung mobiler Anwendungen miteinander in Konflikt stehen? Welche wird auf die App angewendet?
-Konfliktwerte sind die restriktivsten Einstellungen, die in einer MAM-Richtlinie zur Verfügung stehen, außer für die Zahleneingabefelder (z. B. PIN-Versuche vor dem Zurücksetzen).  Die Zahleneingabefelder werden auf dieselben Werte gesetzt, die auch verwendet werden, wenn Sie in der Konsole eine MAM-Richtlinie erstellen und die empfohlenen Einstellungen verwenden.
+## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>Was geschieht, wenn App-Schutzrichtlinien in Konflikt stehen? Welche wird auf die App angewendet?
+Konfliktwerte sind die restriktivsten Einstellungen, die in einer App-Schutzrichtlinie zur Verfügung stehen, außer für die Zahleneingabefelder (z. B. PIN-Versuche vor dem Zurücksetzen).  Die Zahleneingabefelder werden auf dieselben Werte gesetzt, die auch verwendet werden, wenn Sie in der Konsole eine MAM-Richtlinie erstellen und die empfohlenen Einstellungen verwenden.
 
-Konflikte treten auf, wenn zwei Richtlinieneinstellungen identisch sind.  Beispielsweise haben Sie zwei MAM-Richtlinien konfiguriert, die mit Ausnahme der Einstellung für Kopieren/Einfügen identisch sind.  In diesem Szenario wird die Einstellung für Kopieren und Einfügen auf den restriktivsten Wert festgelegt, die übrigen Einstellungen werden jedoch wie konfiguriert angewendet.
+Konflikte treten auf, wenn zwei Profileinstellungen identisch sind.  Beispielsweise haben Sie zwei MAM-Richtlinien konfiguriert, die mit Ausnahme der Einstellung für Kopieren/Einfügen identisch sind.  In diesem Szenario wird die Einstellung für Kopieren und Einfügen auf den restriktivsten Wert festgelegt, die übrigen Einstellungen werden jedoch wie konfiguriert angewendet.
 
-Wenn eine Richtlinie für die App bereitgestellt wird und in Kraft tritt und anschließend eine weitere bereitgestellt wird, erhält die zuerst bereitgestellte Richtlinie Vorrang und bleibt wirksam, während die zweite als in Konflikt stehend angezeigt wird. Wenn beide Richtlinien gleichzeitig angewendet werden, also keine vorherige Richtlinie vorhanden ist, stehen beide in Konflikt. Alle in Konflikt stehenden Einstellungen werden auf die restriktivsten Werte festgelegt.
+Wenn ein Profil der App zugewiesen ist und in Kraft tritt und anschließend ein zweites zugewiesen wird, erhält das erste Vorrang und bleibt wirksam, während das zweite als in Konflikt stehend angezeigt wird. Wenn beide Profile gleichzeitig angewendet werden, also kein vorheriges Profil vorhanden ist, stehen beide in Konflikt. Alle in Konflikt stehenden Einstellungen werden auf die restriktivsten Werte festgelegt.
 
 ## <a name="what-happens-when-ios-custom-policies-conflict"></a>Was geschieht, wenn Sie benutzerdefinierte iOS-Richtlinien in Konflikt stehen?
-Intune bewertet nicht die Nutzlast von Apple-Konfigurationsdateien oder einer benutzerdefinierten OMA-URI-Richtlinie (Open Mobile Alliance Uniform Resource Identifier). Es dient lediglich als Übermittlungsmechanismus.
+Intune bewertet nicht die Nutzlast von Apple-Konfigurationsdateien oder eines benutzerdefinierten OMA-URI-Profils (Open Mobile Alliance Uniform Resource Identifier). Es dient lediglich als Übermittlungsmechanismus.
 
-Wenn Sie eine benutzerdefinierte Richtlinie bereitstellen, stellen Sie sicher, dass die konfigurierten Einstellungen nicht mit Kompatibilitäts-, Konfigurations- oder anderen benutzerdefinierten Richtlinien in Konflikt stehen. Bei einer benutzerdefinierten Richtlinie mit Einstellungskonflikten werden die Einstellungen in zufälliger Reihenfolge angewendet.
+Wenn Sie ein benutzerdefiniertes Profil zuweisen, stellen Sie sicher, dass die konfigurierten Einstellungen nicht mit Konformitäts-, Konfigurations- oder anderen benutzerdefinierten Richtlinien in Konflikt stehen. Bei einem benutzerdefinierten Profil mit Einstellungskonflikten werden die Einstellungen in zufälliger Reihenfolge angewendet.
 
-## <a name="what-happens-when-a-policy-is-deleted-or-no-longer-applicable"></a>Was geschieht, wenn eine Richtlinie gelöscht wird oder nicht mehr gilt?
-Wenn Sie eine Richtlinie löschen oder ein Gerät aus einer Gruppe entfernen, für die eine Richtlinie bereitgestellt wurde, werden die Richtlinie und die Einstellungen gemäß den folgenden Listen von dem Gerät entfernt.
+## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>Was geschieht, wenn ein Profil gelöscht wird oder nicht mehr gilt?
+Wenn Sie ein Profil löschen oder ein Gerät aus einer Gruppe entfernen, für die ein Profil zugewiesen wurde, werden das Profil und die Einstellungen gemäß den folgenden Listen vom Gerät entfernt.
 
 ### <a name="enrolled-devices"></a>Angemeldete Geräte
 
 - WLAN-, VPN-, Zertifikat- und E-Mail-Profile: Diese Profile werden von allen unterstützten registrierten Geräten entfernt.
-- Alle anderen Richtlinientypen:
+- Alle anderen Profiltypen:
     - **Windows- und Android-Geräte**: Einstellungen werden nicht vom Gerät entfernt.
     - **Windows Phone 8.1-Geräte**: Die folgenden Einstellungen werden entfernt:
         - Anfordern eines Kennworts zum Entsperren mobiler Geräte
@@ -115,44 +116,13 @@ Wenn Sie eine Richtlinie löschen oder ein Gerät aus einer Gruppe entfernen, f�
         - Datenroaming zulassen
         - Automatische Synchronisierung beim Roaming zulassen
 
-### <a name="windows-pcs-running-the-intune-client-software"></a>Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird
+## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Ich habe ein Profil für Geräteeinschränkungen geändert, aber die Änderungen wurden nicht übernommen
+Windows Phone-Geräte gestatten keine Verringerung der Sicherheitsstufe in Sicherheitsrichtlinien, die mittels MDM oder EAS festgelegt wurden, nachdem diese festgelegt wurden. Angenommen, Sie legen ein **Kennwort mit Mindestanzahl von Zeichen** auf 8 fest und versuchen dann, diesen Wert auf 4 zu verringern. Das restriktivere Profil wurde bereits auf das Gerät angewendet.
 
-- **Endpoint Protection-Einstellungen**: Die Einstellungen werden auf die empfohlenen Werte zurückgesetzt. Die einzige Ausnahme ist die Einstellung **Microsoft Active Protection Service beitreten**, deren Standardwert **Nein** lautet. Weitere Informationen finden Sie unter [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
-- **Einstellungen für Softwareupdates**: Die Einstellungen werden auf die Standardwerte des Betriebssystems zurückgesetzt. Weitere Informationen finden Sie unter [Aktualisieren Ihrer Windows-PCs mit Softwareupdates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).
-- **Microsoft Intune Center-Einstellungen**: Alle Informationen zur Kontaktaufnahme mit dem Support, die durch die Richtlinie definiert waren, werden von den Computern gelöscht.
-- **Einstellungen für die Windows-Firewall**: Die Einstellungen werden auf die Standardwerte des Computerbetriebssystems zurückgesetzt. Weitere Informationen finden Sie unter [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
-
-
-## <a name="how-can-i-refresh-the-policies-on-a-device-to-ensure-that-they-are-current-applies-to-windows-pcs-running-the-intune-client-software-only"></a>Wie kann ich die Richtlinien auf einem Gerät aktualisieren und so sicherstellen, dass sie aktuell sind (gilt nur für Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird)?
-
-1.  Wählen Sie in einer beliebigen Gerätegruppe die Geräte aus, auf denen die Richtlinien aktualisiert werden sollen, und wählen Sie dann **Remoteaufgaben** &gt; **Richtlinien aktualisieren**.
-2.  Wählen Sie in der Intune-Verwaltungskonsole unten rechts die Option **Remoteaufgaben**, um den Aufgabenstatus zu überprüfen.
-
-
-
-### <a name="how-do-i-know-that-my-profile-was-assigned-to-a-device"></a>Wie erfahre ich, dass mein Profil einem Gerät zugewiesen wurde?
-
-In der Intune-Verwaltungskonsole verfügt jedes Gerät unter **Geräteeigenschaften**über eine Registerkarte „Richtlinie“. Jede Richtlinie verfügt über einen **vorgesehenen Wert** und einen **Status**. Den vorgesehenen Wert möchten Sie durch Zuweisen der Richtlinie erzielen. Der Status gibt an, was tatsächlich angewendet wurde, wenn alle für das Gerät geltenden Richtlinien sowie die Einschränkungen und Anforderungen der Hardware und des Betriebssystems zusammen betrachtet werden. Mögliche Status sind:
-
--   **Konform**: Das Gerät hat die Richtlinie empfangen und meldet dem Dienst, dass es der Einstellung entspricht.
-
--   **Nicht zutreffend**: Die Richtlinieneinstellung ist nicht zutreffend. Beispielsweise wären E-Mail-Einstellungen für iOS-Geräte nicht auf ein Android-Gerät anwendbar.
-
--   **Ausstehend**: Die Richtlinie wurde an das Gerät gesendet, hat aber noch keinen Status an den Dienst gemeldet. Beispiel: Verschlüsselung unter Android erfordert, dass der Benutzer die Verschlüsselung aktiviert, und sie könnte aus diesem Grund ausstehen.
-
-
-> [!NOTE]
-> Denken Sie daran: Wenn zwei Richtlinien mit unterschiedlichen Einschränkungsstufen für das gleiche Gerät gelten, wird in der Praxis die restriktivere Richtlinie angewendet.
-
-
-## <a name="i-changed-a-device-restriction-policy-but-the-changes-havent-taken-effect"></a>Ich habe eine Richtlinie für Geräteeinschränkungen geändert, aber die Änderungen wurden nicht übernommen
-Windows Phone-Geräte gestatten keine Verringerung der Sicherheitsstufe in Sicherheitsrichtlinien, die mittels MDM oder EAS festgelegt wurden, nachdem diese festgelegt wurden. Angenommen, Sie legen ein **Kennwort mit Mindestanzahl von Zeichen** auf 8 fest und versuchen dann, diesen Wert auf 4 zu verringern. Die restriktivere Richtlinie wurde bereits auf das Gerät angewendet.
-
-Abhängig von der Geräteplattform müssen Sie, wenn Sie die Richtlinie auf einen niedrigeren Sicherheitswert ändern möchten, Sicherheitsrichtlinien möglicherweise zurücksetzen.
+Je nach Geräteplattform müssen Sie, wenn Sie das Profil auf einen niedrigeren Sicherheitswert ändern möchten, Sicherheitsrichtlinien möglicherweise zurücksetzen.
 In Windows wischen Sie beispielsweise auf dem Desktop von rechts nach innen, um die Leiste **Charms** zu öffnen, und wählen Sie **Einstellungen** &gt; **Systemsteuerung**.  Wählen Sie das Applet **Benutzerkonten** aus.
 Im linken Navigationsmenü befindet sich unten ein Link **Sicherheitsrichtlinien zurücksetzen** . Klicken Sie darauf, und klicken Sie dann auf die Schaltfläche **Richtlinien zurücksetzen**.
-Andere MDM-Geräte, wie Android, Windows Phone 8.1 und höher sowie iOS, müssen möglicherweise außer Kraft gesetzt und bei dem Dienst neu registriert werden, damit Sie eine weniger restriktive Richtlinie anwenden können.
-
+Andere MDM-Geräte, wie Android, Windows Phone 8.1 und höher sowie iOS, müssen möglicherweise außer Kraft gesetzt und bei dem Dienst neu registriert werden, damit Sie ein weniger restriktives Profil anwenden können.
 
 <!--- ## Status codes for MDM managed Windows devices
 
@@ -499,4 +469,4 @@ Andere MDM-Geräte, wie Android, Windows Phone 8.1 und höher sowie iOS, müssen
 --->
 
 ### <a name="next-steps"></a>Nächste Schritte
-Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune) beschrieben an den Microsoft Support.
+Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](/intune-azure/introduction/how-to-get-support-for-microsoft-intune) beschrieben an den Microsoft Support.

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,26 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 5f172290d493717308446c4f9e2313a03ba8f3aa
-ms.openlocfilehash: 84c6c9ddeeff3570d0b00364063e43105141de0f
-ms.lasthandoff: 04/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 68dbaa2209ad1432279683a291734641e39ff736
+ms.contentlocale: de-de
+ms.lasthandoff: 05/05/2017
 
 
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune
 Erfahren Sie, welche Aktualisierungen wir an der Benutzeroberfläche für Apps vorgenommen haben, die Ihre Endbenutzer in dieser Version von Microsoft Intune sehen werden. Damit werden Sie bei der Benutzerkommunikation sowie bei allen aktualisierten Benutzerdokumentationen unterstützt, die Sie zur Unterstützung Ihrer Entwicklung erstellt haben. Es kann auch helfen, zu verstehen, wie Probleme behandelt werden, die auftauchen, wenn Benutzer den Helpdesk für den Support mithilfe des Unternehmensportals aufrufen.
 
-> [!Note]
-> Bitte beachten Sie, dass die Bilder unten Vorschauen darstellen und das angekündigte Produkt sich von den abgebildeten Versionen unterscheiden kann.
+## <a name="coming-soon-in-the-ui"></a>In Kürze auf der Benutzeroberfläche verfügbar
+Es folgen die Pläne für Möglichkeiten zum Verbessern der Benutzererfahrung durch Ändern unserer Benutzeroberfläche.
 
-## <a name="april-2017"></a>April 2017
+> [!Note]
+> Beachten Sie, dass die Bilder unten eine Vorschau darstellen und das angekündigte Produkt sich von den abgebildeten Versionen unterscheiden kann.
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Verbesserter Anmeldevorgang für alle Unternehmensportal-Apps auf allen Plattformen <!--User Story 1132123-->
 
-Wir verbessern den Anmeldevorgang für die Intune-Unternehmensportal-Apps für Android, iOS und Windows.  Die neue Benutzeroberfläche wird für die Unternehmensportal-App automatisch auf allen Plattformen eingeführt, sobald Azure AD die Änderung umsetzt. Darüber hinaus können Benutzer sich jetzt mithilfe eines generierten Codes zur einmaligen Verwendung von einem anderen Gerät aus beim Unternehmensportal anmelden. Dies ist besonders nützlich, wenn Benutzer sich ohne Anmeldeinformationen anmelden müssen.  
+Wir kündigen eine in den nächsten Monaten kommende Änderung an, durch die der Anmeldevorgang für die Intune-Unternehmensportal-Apps für Android, iOS und Windows verbessert wird. Die neue Benutzeroberfläche wird für die Unternehmensportal-App automatisch auf allen Plattformen eingeführt, sobald Azure AD die Änderung umsetzt. Darüber hinaus können Benutzer sich jetzt mithilfe eines generierten Codes zur einmaligen Verwendung von einem anderen Gerät aus beim Unternehmensportal anmelden. Dies ist besonders nützlich, wenn Benutzer sich ohne Anmeldeinformationen anmelden müssen.  
 
 Unten sehen Sie die vorherige Anmeldeoberfläche, die neue Anmeldeoberfläche mit Anmeldeinformationen und die neue Anmeldeoberfläche zur Anmeldung von einem anderen Gerät aus.
 
@@ -51,13 +53,13 @@ __Neue Anmeldeoberfläche__
 
 ![Der Benutzer wird erst zur Eingabe des Kennworts aufgefordert, wenn die E-Mail-Adresse akzeptiert wurde.](./media/cp_ios_aad_signin_after_1704_003.png)
 
+![Nach Abschluss des Authentifizierungsprozesses meldet sich die Unternehmensportal-App an und zeigt einen entsprechenden Ladebalken an.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
 __Neue Anmeldeoberfläche bei Anmeldung von einem anderen Gerät aus__
 
 ![Die Seite für die Anmeldung beim Unternehmensportal mit einem Symbol für eine Person vor der grafischen Darstellung einer Website. Darunter befindet sich die Schaltfläche zum Anmelden. Ein Link am unteren Seitenrand führt zu Informationen von Microsoft zu Datenschutz und Cookies.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
 
 Tippen Sie auf den Link __Von anderem Gerät aus anmelden__.
-
-![Der Benutzer wird nur zur Eingabe der E-Mail-Adresse aufgefordert, nicht zur Eingabe von E-Mail-Adresse und Kennwort im gleichen Bildschirm. Unterhalb des E-Mail-Felds befindet sich ein Link mit dem Titel „Von einem anderen Gerät aus anmelden“.](./media/cp_ios_aad_signin_from_another_device_after_1704_002.png)
 
 ![Der Benutzer erhält die Anweisung, mit einem über den Arbeitscomputer bezogenen eindeutigen Passcode zur Seite „aka.ms/devicelogin“ zu wechseln und sich dort mit dem Code anzumelden.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
@@ -74,6 +76,8 @@ Geben Sie den Code ein, den Sie in der Unternehmensportal-App erhalten haben. We
 Die Unternehmensportal-App beginnt mit der Anmeldung.
 
 ![Nach Abschluss des Authentifizierungsprozesses meldet sich die Unternehmensportal-App an und zeigt einen entsprechenden Ladebalken an.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## <a name="april-2017"></a>April 2017
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Neue Symbole für Managed Browser und das Unternehmensportal <!--918433, 918431-->
 
@@ -105,13 +109,13 @@ Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der A
    <table id="wrapper">
       <tr>
          <td>
-            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width=200 height=366 align=center>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width=200 height=366 align=center>
           </td>
           <td>
-             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width=200 height=366 align=center>
+             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width=200 height=366 align=center>
            </td>
            <td>
-              <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
+              <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
            </td>
       </tr>
    </table>
@@ -119,22 +123,13 @@ Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der A
 </html>
 
 ### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Verbesserter App-Installationsstatus für die Windows 10-Unternehmensportal-App <!--676495-->
-Die Windows 10-Unternehmensportal-App bietet jetzt eine Statusanzeige zur Installation der App für alle modernen App-Installationen aus dem Unternehmensportal.
+Die Windows 10-Unternehmensportal-App bietet jetzt auf der Seite mit den App-Details eine Installationsstatusanzeige. Diese wird für moderne Apps auf Geräten mit Windows 10 Anniversary Update und höher unterstützt.
 
-<html>
-<body>
-   <table id="wrapper">
-      <tr>
-         <td>
-            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_before_1704.png" alt="An image of the previous version of the loading screen, where the status simply said 'installing.'" width=200 height=366 align=center>
-          </td>
-          <td>
-             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_after_1704.png" alt="An image of the updated version of the loading screen, which now shows an install progress bar." width=200 height=366 align=center>
-           </td>
-      </tr>
-   </table>
-</body>
-</html>
+__Vorher__
+  ![ Eine Abbildung der vorherigen Version des Ladebildschirms, auf dem der Status schlicht „Wird installiert“ lautet.](./media/cp_win10_install_status_before_1704.png)
+
+__Nachher__
+  ![ Eine Abbildung der aktualisierten Version des Ladebildschirms, der nun eine Statusanzeige für die Installation zeigt.](./media/cp_win10_install_status_after_1704.png)
 
 ## <a name="february-2017"></a>Februar 2017
 

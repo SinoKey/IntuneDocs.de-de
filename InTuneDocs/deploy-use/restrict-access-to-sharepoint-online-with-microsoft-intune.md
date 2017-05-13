@@ -14,10 +14,11 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 4a8b3f5a3ab5df9f31741e3331d2b6bbfd2c0c9f
+ms.contentlocale: de-de
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/14/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Verwenden Sie den bedingten Zugriff von [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], um den Zugriff auf Dateien zu steuern, die in SharePoint Online gespeichert sind.
+Verwenden Sie den bedingten Zugriff von Microsoft Intune, um den Zugriff auf Dateien zu steuern, die in SharePoint Online gespeichert sind.
 Der bedingte Zugriff besteht aus zwei Komponenten:
 - Einer Gerätekompatibilitätsrichtlinie, die das Gerät erfüllen muss, um als kompatibel bewertet zu werden
 - Einer Richtlinie für bedingten Zugriff, in der Sie die Bedingungen festlegen, die das Gerät erfüllen muss, um auf den Dienst zugreifen zu können
@@ -45,20 +46,20 @@ Wenn ein Benutzer versucht, mit einer unterstützten App wie z. B. OneDrive auf
 
 
   Zum Herstellen einer Verbindung mit den gewünschten Dateien muss das Gerät die folgenden Voraussetzungen erfüllen:
--   Es muss bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] oder einem in die Domäne eingebundenen PC **registriert** sein.
+-   Es muss bei Intune oder einem in die Domäne eingebundenen PC **registriert** sein.
 
--   Es muss in Azure Active Directory **registriert** sein (dies erfolgt automatisch bei der Registrierung des Geräts in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   Es muss in Azure Active Directory **registriert** sein (dies erfolgt automatisch bei der Registrierung des Geräts bei Intune).
 
 
--   Es muss mit allen bereitgestellten [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Kompatibilitätsrichtlinien **kompatibel** sein.
+-   Es muss mit allen bereitgestellten Konformitätsrichtlinien **kompatibel** sein.
 
 Der Gerätestatus wird in Azure Active Directory gespeichert. Die Anwendung gewährt oder blockiert den Zugriff auf Dateien entsprechend den von Ihnen angegebenen Bedingungen.
 
 Wenn eine Bedingung nicht erfüllt wird, erhält der Benutzer bei der Anmeldung die folgenden Meldungen:
 
--   Wenn das Gerät nicht bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] oder in Azure Active Directory registriert ist, wird eine Meldung mit Anweisungen zum Installieren der Unternehmensportal-App und zum Registrieren des Geräts angezeigt.
+-   Wenn das Gerät nicht bei Intune oder in Azure Active Directory registriert ist, wird eine Meldung mit Anweisungen zum Installieren der Unternehmensportal-App und zum Registrieren des Geräts angezeigt.
 
--   Wenn das Gerät nicht kompatibel ist, wird eine Meldung angezeigt, die den Benutzer zum [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Unternehmensportalwebsite oder zur Unternehmensportal-App weiterleitet. Dort findet der Benutzer Informationen zum Problem und zur Lösung.
+-   Wenn das Gerät nicht kompatibel ist, wird eine Meldung angezeigt, die den Benutzer zum Intune-Unternehmensportalwebsite oder zur Unternehmensportal-App weiterleitet. Dort findet der Benutzer Informationen zum Problem und zur Lösung.
 
 **Keine Anwendung des bedingten Zugriffs bei externer Freigabe**. Um zu erfahren, wie die externe Freigabe in Ihrer Mandanten- oder Websitesammlung verhindert werden kann, lesen Sie [Verwalten der externen Freigabe für Ihre SharePoint Online-Umgebung](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85).
 
@@ -115,7 +116,7 @@ Benutzer, die in beiden Gruppen enthalten sind, werden von der Richtlinie ausgen
 Falls noch nicht geschehen, erstellen Sie eine Kompatibilitätsrichtlinie und stellen Sie sie für die Benutzer bereit, auf die die SharePoint Online-Richtlinie angewendet werden soll.
 
 > [!NOTE]
-> Kompatibilitätsrichtlinien werden für [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Gruppen bereitgestellt, Richtlinien für bedingten Zugriff dagegen werden auf Azure Active Directory-Sicherheitsgruppen angewendet.
+> Kompatibilitätsrichtlinien werden für Intune-Gruppen bereitgestellt, Richtlinien für bedingten Zugriff dagegen werden auf Azure Active Directory-Sicherheitsgruppen angewendet.
 
 Ausführliche Informationen zum Konfigurieren der Kompatibilitätsrichtlinie finden Sie unter [Erstellen einer Kompatibilitätsrichtlinie](create-a-device-compliance-policy-in-microsoft-intune.md).
 
@@ -152,11 +153,11 @@ Anschließend konfigurieren Sie die Richtlinie so, dass nur verwaltete und kompa
 
          Die Richtlinie für bedingten Zugriff wird auf jede Client-App angewendet, die die moderne Authentifizierung auf den von Ihnen festgelegten Plattformen verwendet.
 
-     Bei Windows-PCs muss ein PC entweder in die Domäne eingebunden oder bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] registriert und kompatibel sein. Sie können die folgenden Anforderungen festlegen:
+     Bei Windows-PCs muss ein PC entweder in die Domäne eingebunden oder bei Intune registriert und konform sein. Sie können die folgenden Anforderungen festlegen:
 
-     -   **Geräte müssen in eine Domäne eingebunden oder kompatibel sein.** Wählen Sie diese Option aus, wenn Sie festlegen möchten, dass die PCs entweder in die Domäne eingebunden oder mit den in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] festgelegten Richtlinien kompatibel sein müssen. Wenn ein PC keine der Anforderungen erfüllt, wird der Benutzer aufgefordert, das Gerät bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] zu registrieren.
+     -   **Geräte müssen in eine Domäne eingebunden oder kompatibel sein.** Wählen Sie diese Option aus, wenn Sie festlegen möchten, dass die PCs entweder in die Domäne eingebunden oder mit den in Intune festgelegten Richtlinien konform sein müssen. Wenn ein PC keine der Anforderungen erfüllt, wird der Benutzer aufgefordert, das Gerät bei Intune zu registrieren.
 
-     -   **Geräte müssen kompatibel sein.** Wählen Sie diese Option aus, wenn Sie festlegen möchten, dass PCs bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] registriert und kompatibel sein müssen. Wenn ein PC nicht registriert ist, wird eine Meldung mit Anweisungen zur Registrierung angezeigt.
+     -   **Geräte müssen kompatibel sein.** Wählen Sie diese Option aus, wenn Sie festlegen möchten, dass PCs bei Intune registriert und kompatibel sein müssen. Wenn ein PC nicht registriert ist, wird eine Meldung mit Anweisungen zur Registrierung angezeigt.
 
 4.   Unter **Browserzugriff** auf SharePoint Online und OneDrive for Business können Sie auswählen, dass der Zugriff auf Exchange Online ausschließlich über unterstützte Browser gewährt werden soll: Safari (iOS) und Chrome (Android). Der Zugriff von anderen Browsern aus wird blockiert. Die gleichen Plattformeinschränkungen, die Sie für den Anwendungszugriff für OneDrive ausgewählt haben, gelten auch hier.
 
