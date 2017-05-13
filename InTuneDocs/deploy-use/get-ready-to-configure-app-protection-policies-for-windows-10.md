@@ -14,9 +14,10 @@ ms.assetid: ebc7cfc8-40b9-47c2-8357-d392ebbb27c8
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
 ms.openlocfilehash: 86a59771fc57971a626f71083e81cd4b7d858cfa
+ms.contentlocale: de-de
 ms.lasthandoff: 04/25/2017
 
 
@@ -41,7 +42,7 @@ Vor der Erstellung einer Windows 10-App-Schutzrichtlinie müssen Sie die mobile 
 
 3.  Das Blatt **Azure AD** wird geöffnet. Wählen Sie **Mobilität (MDM und MAM)** und klicken Sie dann auf **Microsoft Intune**.
 
-    ![Mobilität (MDM und MAM)](../media/AppManagement/mam-provider-sc-1.png)
+    ![Mobilität (MDM und MAM)](../media/AppManagement/mam-provider-sc-2.png)
 
 4.  Das Blatt zur Konfiguration wird geöffnet. Wählen Sie zuerst **Standard-MAM-URLs wiederherstellen** aus und konfigurieren Sie dann Folgendes:
 
