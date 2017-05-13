@@ -1,12 +1,12 @@
 ---
-title: Was ist die App-Verwaltung?
+title: Was ist App-Verwaltung? | Microsoft-Dokumentation
 titleSuffix: Intune Azure preview
 description: 'Intune in Azure (Vorschau): In diesem Thema lernen Sie die Grundlagen der App-Verwaltung mit Microsoft Intune kennen.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 33def827fc7417930338e56c650d01df4dad85fb
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 34970d6adcfe41a6de9636a5605a17f9f5ef2d82
+ms.contentlocale: de-de
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -46,6 +47,7 @@ Intune bietet eine Reihe von Funktionen, die Ihnen dabei helfen, die benötigten
 |Hinzufügen und Zuweisen von Apps für Geräte und Benutzer|Ja|Ja|Ja|Ja|
 |Zuweisen von Apps für Geräte, die nicht bei Intune registriert sind|Ja|Ja|Nein|Nein|
 |Steuern des Startverhaltens von Apps mithilfe von App-Konfigurationsrichtlinien|Nein|Ja|Nein|Nein|
+|Verwenden von Richtlinien für die Bereitstellung mobiler Apps zum Verlängern abgelaufener Apps|Nein|Ja|Nein|Nein|
 |Schützen von Unternehmensdaten in Apps mit App-Schutzrichtlinien|Ja|Ja|Nein|Nein<sup>1</sup>|
 |Entfernen ausschließlich von Unternehmensdaten aus einer installierten App (Selektive App-Zurücksetzung)|Ja|Ja|Ja|Ja|
 |Überwachen von App-Zuweisungen|Ja|Ja|Ja|Ja|
@@ -68,7 +70,7 @@ Sie finden die meisten Informationen zu Apps im Workload **Mobile Apps**, auf di
 
 1. Melden Sie sich beim Azure-Portal an.
 2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Apps verwalten** aus.
+3. Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
 
     ![Workload „Mobile Apps“](./media/apps-workload.png)
 
@@ -77,19 +79,21 @@ Sie finden die meisten Informationen zu Apps im Workload **Mobile Apps**, auf di
     - [Hinzufügen von Apps](add-apps.md)
     - [Zuweisen von Apps](deploy-apps.md)
     - [Überwachen von Apps](monitor-apps.md)
-- **Lizenzierte Apps:** Ermöglicht das Anzeigen, Bereitstellen und Überwachen von per Volumenlizenz in App-Stores erworbenen Apps.
-    - [Per Volumenlizenz erworbene Apps aus dem Windows Store für Unternehmen](wsfb-apps.md)
 - **App-Konfigurationsrichtlinien:** Verwenden Sie App-Konfigurationsrichtlinien, um Einstellungen anzugeben, die beim Ausführen einer App durch den Benutzer erforderlich sein können. Details hierzu finden Sie in den folgenden Abschnitten:
     - [App-Konfigurationsrichtlinien](app-configuration-policies.md)
 - **App-Schutzrichtlinien:** Ermöglichen Ihnen das Zuordnen von Einstellungen für eine App zum Schutz der Unternehmensdaten, die diese verwendet. Sie können z.B. die Funktionen einer App zur Kommunikation mit anderen Apps einschränken oder erzwingen, dass der Benutzer eine PIN eingeben muss, um auf eine Unternehmens-App zuzugreifen.
     - [App-Schutzrichtlinien](app-protection-policies.md)
 - **Selektive App-Zurücksetzung:** Entfernt nur Unternehmensdaten von einem Benutzergerät, das Sie auswählen.
     - [Selektive App-Zurücksetzung](app-selective-wipe.md)
+- **iOS-Bereitstellungsprofil:**: iOS-Apps enthalten ein Bereitstellungsprofil und Code, der von einem Zertifikat signiert ist. Wenn das Zertifikat abläuft, kann die App nicht mehr ausgeführt werden. Intune stellt Ihnen die Tools zum proaktiven Zuweisen einer neuen Richtlinie für Bereitstellungsprofile auf Geräten zur Verfügung, auf denen Apps installiert sind, die bald ablaufen.
+    - [iOS-App-Bereitstellungsprofile](ios-app-provisioning-profile.md)
 
 ### <a name="monitor"></a>Überwachen
+- **Lizenzierte Apps:** Ermöglicht das Anzeigen, Zuweisen und Überwachen von per Volumenlizenz in den App Stores erworbenen Apps.
+    - [Per Volumenlizenz erworbene Apps aus dem Windows Store für Unternehmen](wsfb-apps.md)
 - **Erkannte Apps:** Zeigt alle Apps, die von Intune zugewiesen und auf einem Gerät installiert wurden.
 - **App-Installationsstatus:** Zeigt den Status einer App-Zuweisung, die Sie erstellt haben.
-- **Benutzerstatus des App-Schutzes:** Zeigt den Status einer App-Schutzrichtlinie für einen ausgewählten Benutzer an.
+- **App-Schutzstatus:** Zeigt den Status einer App-Schutzrichtlinie für einen ausgewählten Benutzer an.
 
 Weitere Informationen finden Sie unter [Überwachen von Apps](monitor-apps.md).
 

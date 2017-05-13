@@ -14,10 +14,11 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: a7d38caac1cfd035c66d02579766d60d4394dd5e
+ms.contentlocale: de-de
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -157,7 +158,7 @@ Ab der Intune-Version 1703 haben Sie die Möglichkeit, LOB-Apps allgemein in Int
 
     Damit haben Sie eine Richtlinie erstellt und für die Benutzer bereitgestellt.
 
-Von der Richtlinie sind nur Benutzer betroffen, denen [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Lizenzen zugewiesen wurden. Benutzer, die sich in einer von Ihnen ausgewählten Sicherheitsgruppe befinden und die nicht über eine [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Lizenz verfügen, sind nicht betroffen.
+Von der Richtlinie sind nur Benutzer betroffen, denen Intune-Lizenzen zugewiesen wurden. Benutzer, die sich in einer von Ihnen ausgewählten Sicherheitsgruppe befinden und die nicht über eine Intune-Lizenz verfügen, sind nicht betroffen.
 
 >[!IMPORTANT]
 > Wenn Sie Intune mit Configuration Manager verwenden, um Ihre iOS- und Android-Geräte zu verwalten, wird die Richtlinie nur auf Benutzer in der Gruppe angewendet, die Sie ausgewählt haben. Mitglieder untergeordneter Gruppen, die in der ausgewählten Gruppe geschachtelt sind, sind nicht betroffen.

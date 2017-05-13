@@ -14,10 +14,11 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 71ebb310699cf80310b33be1b665a968ac102bde
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7901508dc482af55f0ef2296cf35576f09340fb0
+ms.contentlocale: de-de
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -75,10 +76,10 @@ Die vollständige Liste der unterstützten Microsoft-Apps finden Sie in der [Mic
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
--   **Ein Microsoft Intune-Abonnement**. Benutzer benötigen [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Lizenzen, um Apps mit App-Schutzrichtlinien erhalten zu können.
-Sie verfügen bereits über ein [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Abonnement, wenn Sie zurzeit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] zum Verwalten Ihrer Geräte verwenden. Sie sind ebenfalls im Besitz eines [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Abonnements, wenn Sie eine EMS-Lizenz (Enterprise Mobility Suite) erworben haben. Wenn Sie [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] testen, um die MAM-Fähigkeiten kennenzulernen, können Sie auf der Seite [Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/) ein Testkonto erhalten.
+-   **Ein Microsoft Intune-Abonnement**. Benutzer benötigen Intune-Lizenzen, um Apps mit App-Schutzrichtlinien erhalten zu können.
+Sie verfügen bereits über ein Intune-Abonnement, wenn Sie Intune zurzeit zum Verwalten Ihrer Geräte verwenden. Sie sind ebenfalls im Besitz eines Intune-Abonnements, wenn Sie eine EMS-Lizenz (Enterprise Mobility Suite) erworben haben. Wenn Sie Intune testen, um die MAM-Fähigkeiten kennenzulernen, können Sie auf der Seite [Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/) ein Testkonto erhalten.
 
-    Um zu überprüfen, ob Sie über ein [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Abonnement verfügen, navigieren Sie im Office-Portal zur Seite **Abrechnung**.  Wenn Sie über ein Abonnement verfügen, sollte in den Abonnements [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] als **Aktiv** angezeigt werden.
+    Um zu überprüfen, ob Sie über ein Intune-Abonnement verfügen, navigieren Sie im Office-Portal zur Seite **Abrechnung**.  Wenn Sie über ein Abonnement verfügen, sollte Intune in den Abonnements als **Aktiv** angezeigt werden.
 
 -   **Ein Office 365-Abonnement**, das für Folgendes erforderlich ist:
 

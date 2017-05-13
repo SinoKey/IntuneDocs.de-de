@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 174e919a2980ca2cf0e97cc41f5b048183a9d4a7
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: d318b8c1b6ba6ac73920e3f55519ae0472cb570c
+ms.contentlocale: de-de
+ms.lasthandoff: 05/05/2017
 
 
 
@@ -60,7 +61,7 @@ Stellen Sie sicher, dass Sie den Punkt am Anfang eingeben.
 4. Wählen Sie **OK** aus, speichern Sie, und weisen Sie anschließend die Richtlinie zu.
 
     > [!NOTE]
-    > Diese Richtlinie kann nur für Benutzergruppen bereitgestellt werden.
+    > Diese Richtlinie kann nur Benutzergruppen zugewiesen werden.
 
 Wenn sich die einzelnen Geräte das nächste Mal anmelden, wird die Richtlinie angewendet, und auf dem Gerät wird ein WLAN-Profil erstellt. Das Gerät kann automatisch eine Verbindung mit dem Netzwerk herstellen.
 

@@ -14,10 +14,11 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 742a989744a11dbc1c9e17a25b70388e06dd5ae7
+ms.contentlocale: de-de
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -40,7 +41,7 @@ Um den bedingten Zugriff zu konfigurieren, müssen Sie folgende Schritte ausfüh
 
 - Sie müssen über ein **Enterprise Mobility + Security- (EMS)** oder **Azure Active Directory (Azure AD) Premium-Abonnement** verfügen, und Benutzer müssen für EMS oder Azure AD lizenziert sein. Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
--  Sie sollten erwägen, den optionalen **Intune Service to Service Connector** zu konfigurieren, der [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] mit Exchange Online verbindet und die Verwaltung von Geräteinformationen über die [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Konsole ermöglicht. Der Connector ist zur Verwendung von Kompatibilitätsrichtlinien oder Richtlinien für den bedingten Zugriff nicht zwingend erforderlich, Sie benötigen ihn aber zum Ausführen von Berichten, mit deren Hilfe die Auswirkungen des bedingten Zugriffs bewertet werden.
+-  Sie sollten erwägen, den optionalen **Intune Service to Service Connector** zu konfigurieren, der Intune mit Exchange Online verbindet und die Verwaltung von Geräteinformationen über die Intune-Konsole ermöglicht. Der Connector ist zur Verwendung von Kompatibilitätsrichtlinien oder Richtlinien für den bedingten Zugriff nicht zwingend erforderlich, Sie benötigen ihn aber zum Ausführen von Berichten, mit deren Hilfe die Auswirkungen des bedingten Zugriffs bewertet werden.
     -  Erfahren Sie mehr über den [Intune Service to Service Connector](intune-service-to-service-exchange-connector.md).
 
    > [!NOTE]
@@ -50,21 +51,21 @@ Um den bedingten Zugriff zu konfigurieren, müssen Sie folgende Schritte ausfüh
 
 Wenn Sie Richtlinien für bedingten Zugriff konfigurieren und auf einen Benutzer anwenden, muss das **Gerät**, das der Benutzer zum Abrufen von E-Mails verwendet, folgende Voraussetzungen erfüllen:
 
--   Es muss ein in die Domäne eingebundener PC oder bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] **registriert** sein.
+-   Es muss ein in die Domäne eingebundener PC oder bei Intune **registriert** sein.
 
--  **Es muss in Azure Active Directory registriert sein**. Die erfolgt automatisch, wenn das Gerät bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] registriert ist. Darüber hinaus muss die Exchange ActiveSync-ID des Clients in Azure Active Directory registriert sein.
+-  **Es muss in Azure Active Directory registriert sein**. Die erfolgt automatisch, wenn das Gerät bei Intune registriert ist. Darüber hinaus muss die Exchange ActiveSync-ID des Clients in Azure Active Directory registriert sein.
 
   Der Azure Active Directory-Geräteregistrierungsdienst wird automatisch für Intune- und Office 365-Kunden aktiviert. Kunden, die bereits den AD FS Device Registration Service bereitgestellt haben, sehen keine registrierten Geräte im lokalen Active Directory.
 
--   Es muss mit allen [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Kompatibilitätsrichtlinien **kompatibel** sein, die auf diesem Gerät bereitgestellt wurden, oder es muss einer lokalen Domäne beigetreten sein.
+-   Es muss mit allen Intune-Konformitätsrichtlinien **konform** sein, die auf diesem Gerät bereitgestellt wurden, oder es muss einer lokalen Domäne beigetreten sein.
 
 ### <a name="when-the-device-is-not-compliant"></a>Wenn das Gerät nicht konform ist
 
 Wenn eine Richtlinie für bedingten Zugriff nicht erfüllt wird, wird das Gerät sofort unter Quarantäne gestellt, und der Benutzer erhält bei der Anmeldung eine E-Mail-Nachricht mit einer der folgenden Quarantänenachrichten:
 
-- Wenn das Gerät nicht bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] oder in Azure Active Directory registriert ist, wird eine Meldung mit Anweisungen zum Installieren der Unternehmensportal-App, zum Registrieren des Geräts und zum Aktivieren des E-Mail-Zugriffs angezeigt. Dieser Prozess verknüpft auch die Exchange ActiveSync-ID mit dem Eintrag in Azure Active Directory.
+- Wenn das Gerät nicht bei Intune oder in Azure Active Directory registriert ist, wird eine Meldung mit Anweisungen zum Installieren der Unternehmensportal-App, zum Registrieren des Geräts und zum Aktivieren des E-Mail-Zugriffs angezeigt. Dieser Prozess verknüpft auch die Exchange ActiveSync-ID mit dem Eintrag in Azure Active Directory.
 
--   Wenn das Gerät als nicht kompatibel mit den Kompatibilitätsrichtlinien ausgewertet wird, wird der Benutzer zur [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Unternehmensportalwebsite oder zur Unternehmensportal-App weitergeleitet. Dort findet der Benutzer Informationen zum Problem und zur Lösung.
+-   Wenn das Gerät als nicht kompatibel mit den Kompatibilitätsrichtlinien ausgewertet wird, wird der Benutzer zur Intune-Unternehmensportalwebsite oder zur Unternehmensportal-App weitergeleitet. Dort findet der Benutzer Informationen zum Problem und zur Lösung.
 
 ### <a name="how-conditional-access-works-with-exchange-online"></a>So funktioniert der bedingte Zugriff für Exchange Online
 
@@ -114,7 +115,7 @@ Sie können den bedingten Zugriff für PCs einrichten, auf denen Office-Desktopa
 
   Der PC muss entweder in die Domäne eingebunden oder mit den Kompatibilitätsrichtlinien kompatibel sein.
 
-  Damit der PC als kompatibel bewertet wird, muss er bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] registriert sein und den Richtlinien entsprechen.
+  Damit der PC als kompatibel bewertet wird, muss er bei Intune registriert sein und den Richtlinien entsprechen.
 
   Für in die Domäne eingebundene PCs müssen Sie den bedingten Zugriff für das Gerät einrichten, damit es bei Azure Active Directory [automatisch registriert wird](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/).
 
@@ -138,11 +139,11 @@ Stellen Sie sicher, dass Sie eine Kompatibilitätsrichtlinie für die Benutzergr
 ### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>Schritt 2: Bewerten der Auswirkungen der Richtlinie für bedingten Zugriff
 Mithilfe der **Inventurberichte für mobile Geräte** können Sie ermitteln, für welche Geräte der Zugriff auf Exchange blockiert wird, nachdem Sie die Richtlinie für bedingten Zugriff konfiguriert haben.
 
-Konfigurieren Sie dafür eine Verbindung zwischen [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] und Exchange mithilfe des [Microsoft Intune Service to Service Connectors](intune-service-to-service-exchange-connector.md).
+Konfigurieren Sie dafür eine Verbindung zwischen Intune und Exchange mithilfe des [Microsoft Intune Service to Service Connectors](intune-service-to-service-exchange-connector.md).
 1.  Navigieren Sie zu **Berichte** > **Inventurberichte für mobile Geräte**.
 ![Screenshot der Seite mit den Inventurberichten für mobile Geräte](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 
-2.  Wählen Sie in den Berichtsparametern die auszuwertende [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Gruppe sowie gegebenenfalls die Geräteplattformen aus, für die die Richtlinie gelten soll.
+2.  Wählen Sie in den Berichtsparametern die auszuwertende Intune-Gruppe sowie gegebenenfalls die Geräteplattformen aus, für die die Richtlinie gelten soll.
 3.  Nachdem Sie die Kriterien ausgewählt haben, die den Anforderungen Ihres Unternehmens entsprechen, wählen Sie **Bericht anzeigen** aus.
 Die Berichtsanzeige wird in einem neuen Fenster geöffnet.
 ![Screenshot eines Beispielinventurberichts für mobile Geräte](../media/IntuneSA2cViewReport.PNG)
@@ -200,7 +201,7 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
     > [!NOTE]
     > Wenn Sie keine Kompatibilitätsrichtlinie bereitgestellt haben, werden Geräte als kompatibel behandelt.
     >
-    > Unabhängig vom Konformitätsstatus müssen alle Benutzer, denen die Richtlinie zugewiesen ist, ihre Geräte bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] registrieren.
+    > Unabhängig vom Konformitätsstatus müssen alle Benutzer, denen die Richtlinie zugewiesen ist, ihre Geräte bei Intune registrieren.
 
 3.  Unter **Anwendungszugriff** haben Sie für Apps, die die moderne Authentifizierung verwenden, zwei Möglichkeiten, auszuwählen, auf welche Plattformen die Richtlinie angewendet werden soll. Zu den unterstützten Plattformen gehören Android, iOS, Windows und Windows Phone.
 
@@ -257,7 +258,7 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
 
 -   Nachdem ein Benutzer ein E-Mail-Konto erstellt hat, wird das Gerät sofort blockiert.
 
--   Sobald ein blockierter Benutzer das Gerät bei [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] registriert und Probleme mit der Nichtkompatibilität behebt, wird der E-Mail-Zugriff innerhalb von zwei Minuten entsperrt.
+-   Sobald ein blockierter Benutzer das Gerät bei Intune registriert und Probleme mit der Nichtkompatibilität behebt, wird der E-Mail-Zugriff innerhalb von zwei Minuten entsperrt.
 
 -   Wenn der Benutzer die Registrierung seines Geräts aufhebt, wird der E-Mail-Zugriff nach ca. sechs Stunden blockiert.
 
@@ -267,7 +268,7 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
 
 #### <a name="to-view-devices-that-are-blocked-from-exchange"></a>So zeigen Sie Geräte an, die in Exchange blockiert wurden
 
-Wählen Sie im [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-Dashboard die Kachel **Geräte mit blockiertem Exchange-Zugriff** aus, um die Anzahl der blockierten Geräte und Links zu weiteren Informationen anzuzeigen.
+Wählen Sie im Intune-Dashboard die Kachel **Geräte mit blockiertem Exchange-Zugriff** aus, um die Anzahl der blockierten Geräte und Links zu weiteren Informationen anzuzeigen.
 ![Screenshot des Intune-Dashboards mit der Anzahl der Geräte, für die der Zugriff auf Exchange blockiert ist](../media/IntuneSA6BlockedDevices.PNG)
 
 ## <a name="next-steps"></a>Nächste Schritte

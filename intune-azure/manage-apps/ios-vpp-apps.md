@@ -1,12 +1,12 @@
 ---
-title: Verwalten von Apps aus einem iOS-Volumenprogramm
+title: "Verwalten von über ein Volumenprogramm erworbenen iOS-Apps | Microsoft-Dokumentation"
 titleSuffix: Intune Azure preview
 description: 'Intune in Azure (Vorschau): Erfahren Sie, wie Sie Apps, die Sie per Volumenlizenz im iOS Store erworben haben, in Intune synchronisieren und dann ihre Nutzung verwalten und nachverfolgen.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: ff43a0be6ebc124bb7e52e5be31e89985ce32166
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: 1909549b321f51069bb6ad83f2f245afbf60b7dd
+ms.contentlocale: de-de
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -86,5 +87,5 @@ Zum Freigeben einer Lizenz müssen Sie die Zuweisungsaktion in **Deinstallieren*
 
 Wenn ein Benutzer mit einem geeigneten Gerät erstmals versucht, eine VPP-App zu installieren, wird er aufgefordert, am Programm für Volumenlizenzen (Volume Purchase Program, VPP) von Apple teilzunehmen. Die Teilnahme muss erfolgen, bevor die App-Installation fortgesetzt wird.
 
-Wenn Sie eine VPP-App als verfügbar bereitstellen, werden Inhalte und Lizenz der App direkt vom App-Store aus bereitgestellt.
+Wenn Sie eine VPP-App als verfügbar zuweisen, werden Inhalte und Lizenz der App direkt vom App Store aus zugewiesen.
 
