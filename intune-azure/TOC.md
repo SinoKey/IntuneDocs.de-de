@@ -78,7 +78,7 @@
 ## Verwalten von Apps
 ### [Hinzufügen von Apps](manage-apps/add-apps.md)
 #### [Android Store-Apps](manage-apps/android-store-app.md)
-#### [Branchenspezifische Android-Apps](manage-apps/android-lob-app.md)
+#### [Android-Branchen-Apps](manage-apps/android-lob-app.md)
 #### [iOS Store-Apps](manage-apps/ios-store-app.md)
 #### [Branchenspezifische iOS-Apps](manage-apps/ios-lob-app.md)
 #### [Web-Apps](manage-apps/web-app.md)
@@ -86,6 +86,7 @@
 #### [Branchenspezifische Windows Phone-Apps](manage-apps/windows-phone-line-of-business-app.md)
 #### [Windows Store-Apps](manage-apps/windows-store-app.md)
 #### [Branchenspezifische iOS-Apps](manage-apps/windows-line-of-business-app.md)
+#### [Android for Work-Apps](/manage-apps/android-for-work-apps.md)
 ### [Zuweisen von Apps](manage-apps/deploy-apps.md)
 ### [Überwachen von Apps](manage-apps/monitor-apps.md)
 ### [Verwenden von App-Konfigurationsprofilen](manage-apps/app-configuration-policies.md)
