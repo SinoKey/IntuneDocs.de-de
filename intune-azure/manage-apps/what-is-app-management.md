@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
-ms.openlocfilehash: 34970d6adcfe41a6de9636a5605a17f9f5ef2d82
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 430329939c99fefcc2ace551545e079f874e83cb
 ms.contentlocale: de-de
-ms.lasthandoff: 05/05/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -59,7 +59,7 @@ Intune bietet eine Reihe von Funktionen, die Ihnen dabei helfen, die benötigten
 |Apps aus einem Store|Ja|Ja|Ja|Ja|
 |Aktualisierung von Apps|Ja|Ja|Ja|Ja|
 
-<sup>1</sup> Erwägen Sie die Verwendung [Windows Information Protection](/intune-azure/configure-devices/how-to-configure-windows-information-protection) für den Schutz von Apps auf Geräten mit Windows 10.
+<sup>1</sup> Erwägen Sie die Verwendung von [Windows Information Protection]../configure-devices/how-to-configure-windows-information-protection.md) für den Schutz von Apps auf Geräten mit Windows 10.
 
 <sup>2</sup> Gilt nur für Geräte, die von Intune verwaltet werden.
 
