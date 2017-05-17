@@ -102,7 +102,7 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 
 Der neue Updatering wird in der Liste mit den Updateringen angezeigt.
 
-1. Wählen Sie zum Zuweisen des Rings in der Liste mit den Updateringen einen Ring aus, und klicken Sie anschließend auf der Registerkarte mit dem Namen des Rings** auf **Zuweisungen**.
+1. Wählen Sie zum Zuweisen des Rings in der Liste mit den Updateringen einen Ring aus, und klicken Sie anschließend auf der Registerkarte mit dem *Namen des Rings* auf **Zuweisungen**.
 2. Wählen Sie auf der nächsten Registerkarte die Option **Gruppen auswählen** aus, und wählen Sie anschließend die Gruppen aus, denen Sie diesen Ring zuweisen möchten.
 3. Wählen Sie abschließend **Auswählen** aus, um die Zuweisung abzuschließen.
 
