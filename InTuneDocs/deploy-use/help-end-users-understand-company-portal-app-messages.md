@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: jeffgilb
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
 ms.openlocfilehash: 3d5245e809263c2e5d76402ae9adc72baf7c7924
+ms.contentlocale: de-de
 ms.lasthandoff: 03/10/2017
 
 
@@ -49,7 +50,7 @@ Wenn Benutzer den Zugriff verweigern, können sie weiterhin die Unternehmensport
 
 Wenn Benutzer den Zugriff zunächst erlauben, später aber verweigern, wird die Meldung wieder angezeigt, wenn sie sich nach der Registrierung das nächste Mal bei der Unternehmensportal-App anmelden.
 
-Wenn Benutzer den Zugriff später erlauben möchten, müssen sie zu **Einstellungen** > **Apps** > ** Unternehmensportal** > **Berechtigungen** > **Telefon** wechseln, um die Berechtigung zu aktivieren.
+Wenn Benutzer den Zugriff später erlauben möchten, müssen sie zu **Einstellungen** > **Apps** > **Unternehmensportal** > **Berechtigungen** > **Telefon** wechseln, um die Berechtigung zu aktivieren.
 
 ### <a name="how-to-explain-this-to-your-users"></a>So erklären Sie dies Ihren Benutzern
 Verweisen Sie Ihre Benutzer an [Registrieren Ihres Android-Geräts bei Intune](/Intune/EndUser/enroll-your-device-in-intune-android), um weitere Informationen zu erhalten.
@@ -70,7 +71,7 @@ Wenn Benutzer den Zugriff verweigern, werden ihre Geräte nicht bei Intune regis
 
 Wenn Benutzer den Zugriff zunächst erlauben, später aber verweigern, wird die Meldung wieder angezeigt, wenn sie sich nach der Registrierung das nächste Mal bei der Unternehmensportal-App anmelden.
 
-Wenn Benutzer den Zugriff später erlauben möchten, müssen sie zu **Einstellungen** > **Apps** > ** Unternehmensportal** > **Berechtigungen** > **Telefon** wechseln, um die Berechtigung zu aktivieren.
+Wenn Benutzer den Zugriff später erlauben möchten, müssen sie zu **Einstellungen** > **Apps** > **Unternehmensportal** > **Berechtigungen** > **Telefon** wechseln, um die Berechtigung zu aktivieren.
 
 ### <a name="how-to-explain-this-to-your-users"></a>So erklären Sie dies Ihren Benutzern
 Verweisen Sie Ihre Benutzer an [Registrieren Ihres Android-Geräts bei Intune](/Intune/EndUser/enroll-your-device-in-intune-android), um weitere Informationen zu erhalten.
@@ -89,7 +90,7 @@ Mit Akzeptieren dieser Aufforderung erlauben Benutzer ihrem Gerät, Datenprotoko
 ### <a name="what-happens-if-users-deny-access"></a>Wenn Benutzer den Zugriff nicht zulassen,
 Wenn Benutzer den Zugriff verweigern, können sie weiterhin Datenprotokolle per E-Mail senden, aber die Protokolle werden nicht auf die SD-Karte des Geräts kopiert.
 
-Wenn Benutzer den Zugriff verweigern und sich dann das nächste Mal bei der Unternehmensportal-App anmelden, wird in der Meldung ein Kontrollkästchen **Nicht mehr nachfragen** angezeigt, das die Benutzer aktivieren können, damit diese Meldung nicht mehr angezeigt wird. Wenn Benutzer den Zugriff zunächst erlauben, später aber verweigern, wird die Meldung wieder angezeigt, wenn sie das nächste Mal Protokolle senden. Wenn Benutzer den Zugriff später erlauben möchten, müssen sie zu **Einstellungen** > **Apps** > ** Unternehmensportal** > **Berechtigungen** > **Speicherung** wechseln, um die Berechtigung zu aktivieren.
+Wenn Benutzer den Zugriff verweigern und sich dann das nächste Mal bei der Unternehmensportal-App anmelden, wird in der Meldung ein Kontrollkästchen **Nicht mehr nachfragen** angezeigt, das die Benutzer aktivieren können, damit diese Meldung nicht mehr angezeigt wird. Wenn Benutzer den Zugriff zunächst erlauben, später aber verweigern, wird die Meldung wieder angezeigt, wenn sie das nächste Mal Protokolle senden. Wenn Benutzer den Zugriff später erlauben möchten, müssen sie zu **Einstellungen** > **Apps** > **Unternehmensportal** > **Berechtigungen** > **Speicherung** wechseln, um die Berechtigung zu aktivieren.
 
 
 ### <a name="how-to-explain-this-to-your-users"></a>So erklären Sie dies Ihren Benutzern
