@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb089cc9b6e76e13b2f5da65efb3452aa5274af
-ms.openlocfilehash: e3993c97475b699da90a0634bdb3ac1ba4f5a28c
-ms.lasthandoff: 02/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 64cfbf02e54244457aeaefb84e3049350764c410
+ms.contentlocale: de-de
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -28,6 +29,17 @@ ms.lasthandoff: 02/24/2017
 # <a name="using-your-windows-device-with-intune"></a>Verwenden Ihres Windows-Geräts mit Intune
 
 Mit Intune können Sie Ihre Arbeit auf verschiedene Weise erleichtern. Dies ist eine Liste der am häufigsten vorkommenden Vorgehen, um die Sie Ihr Unternehmen möglicherweise bittet.
+
+## <a name="supported-versions"></a>Unterstützte Versionen
+
+Intune unterstützt derzeit die folgenden Windows-Versionen.
+
+* Windows 10 (Home, Education, Pro und Enterprise)
+* Windows Phone 8.1 und höher
+* Windows 8.1 RT
+* Windows 8.1
+
+Es gibt noch einige andere Versionen von Windows, z. B. [Windows 10 Holographic](https://www.microsoft.com/hololens), die ebenfalls von Intune unterstützt werden. Diese werden hier nicht aufgeführt, da sie für eine ganz spezifische Verwendung konzipiert sind.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>In Intune registrieren und das Unternehmenswebportal installieren
 

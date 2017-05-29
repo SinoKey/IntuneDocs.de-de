@@ -14,9 +14,11 @@ ms.assetid: 86fbe736-7bdb-4f5e-ae21-13c91eb2462c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: db76786da0428b0e064f2091089653244d90ee2a
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: adebcc5a8d8f43bed383b51bb094fa122ebabc0a
+ms.contentlocale: de-de
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -52,9 +54,4 @@ Nach Ablauf des Zertifikats müssen Sie die App mit einem neuen Zertifikat erneu
     - **Konfigurationsprofildatei**: Klicken Sie auf **Importieren**, und wählen Sie eine Datei mit einem mobilen Apple-Konfigurationsprofil (mit der Erweiterung **.mobileprovision**) aus, die Sie von der Apple Developer-Website heruntergeladen haben.
 4. Wählen Sie abschließend **Richtlinie speichern** aus.
 5. Stellen Sie jetzt die Richtlinie auf den erforderlichen iOS-Geräten bereit. Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

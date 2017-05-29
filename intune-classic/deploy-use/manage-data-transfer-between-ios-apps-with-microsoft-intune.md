@@ -14,10 +14,11 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: e71ebacec9d7b890b41e7650c8c50f42952c6326
-ms.lasthandoff: 03/29/2017
+ms.contentlocale: de-de
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -78,7 +79,7 @@ Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die von
 |MDM-Anbieter eines Drittanbieters| Konfigurationsschlüssel | Werttyp | Der Konfigurationswert|
 | ------- | ---- | ---- | ---- |
 | VMware AirWatch | IntuneMAMUPN | Zeichenfolge | {UserPrincipalName}|
-| MobileIron Core | IntuneMAMUPN | Zeichenfolge | $EMAIL$ **oder** $USER_UPN$ |
+| MobileIron Core | IntuneMAMUPN | Zeichenfolge | $EMAIL$  **oder**  $USER_UPN$ |
 | MobileIron Cloud | IntuneMAMUPN | Zeichenfolge | ${userUPN} **oder** ${userEmailAddress} |
 
 ### <a name="example-2-end-user-experience"></a>Beispiel 2: Endbenutzererfahrung

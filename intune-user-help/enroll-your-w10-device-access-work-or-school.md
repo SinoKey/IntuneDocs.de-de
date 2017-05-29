@@ -1,11 +1,11 @@
 ---
 title: "Registrieren Ihres Windows 10-Geräts bei Intune | Microsoft-Dokumentation"
-description: "Registrieren Sie ein Windows 10 1607-Gerät bei Intune."
+description: "Registrieren Sie ein Windows 10 1607-Gerät (oder höher) bei Intune."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,21 +17,30 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 5cf93d5f29e7fa3b989b1a00070d620e06f720c4
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: aa12a88cfd80f62e2f7b249b52333bd16cbb6533
+ms.contentlocale: de-de
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrieren eines Windows 10-Geräts bei Intune
 
+> [!NOTE]
+> Windows 10 funktioniert auf allen Geräten. Egal, ob Sie einen Desktop-Computer, ein Smartphone oder ein Tablet verwenden, sind die zu befolgenden Schritte dieselben, auch wenn sie sich geringfügig von den Bildern auf dieser Seite unterscheiden.
+
 <iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
-1.  Zum Öffnen der Windows-**Einstellungen** klicken Sie im **Startmenü** auf die Schaltfläche **Einstellungen**. Sie können auch über die Suchleiste nach „Einstellungen“ suchen.
+1. Öffnen Sie das **Startmenü**.
 
-2. Wählen Sie **Konten** > **Zugriff auf Geschäfts-, Schul- oder Unikonto** > **Verbinden** aus.
+  - Gehen Sie auf einem **Windows 10 Desktop**-Gerät auf das **Startmenü**.
+  - Wenn Sie ein **Windows 10-Mobilgerät** besitzen, gehen Sie zum **Startbildschirm**, dann wischen Sie zur Liste **Alle Apps**.
+
+2.  Öffnen Sie die Windows **Einstellungen**-App, indem Sie in der Suchleiste nach „Einstellungen“ suchen.
+
+3. Wählen Sie **Konten** > **Zugriff auf Geschäfts-, Schul- oder Unikonto** > **Verbinden** aus.
 
     ![Wählen Sie „Auf Geschäfts-,Schul- oder Unikonto zugreifen“ aus](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
