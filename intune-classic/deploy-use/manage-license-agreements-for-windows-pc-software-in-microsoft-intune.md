@@ -14,9 +14,11 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 47c923cf145a7783a1bc2222442831fcbc0f6a47
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 18fbeb0e5bbf46795a02590a8dce205342a3a357
+ms.contentlocale: de-de
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -87,7 +89,7 @@ In Intune-Volumenlizenzverträgen werden Lizenzinformationen für Software berei
 
         -   **Vertragsname:** Geben Sie einen eindeutigen Namen für den Vertrag ein.
 
-            Der Vertragsname darf höchstens 256 Zeichen umfassen. Folgende Zeichen sind nicht zulässig: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Leerzeichen sind im Namen zulässig.
+            Der Vertragsname darf höchstens 256 Zeichen umfassen. Folgende Zeichen sind nicht zulässig: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Leerzeichen sind im Namen zulässig.
 
         -   **Autorisierungs-/Vertragsnummer:** Geben Sie die Autorisierungs-/Vertragsnummer des Lizenzpaars ein.
 
@@ -140,7 +142,7 @@ Außerdem können Sie zusätzlich zu Microsoft-Volumenlizenzverträgen weitere T
 
 4.  Geben Sie im Bereich **Vertragsdetails hinzufügen** Folgendes an:
 
-    -   **Agreement name** (erforderlich). Der Vertragsname darf höchstens 256 Zeichen umfassen. Folgende Zeichen sind nicht zulässig: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Leerzeichen sind im Namen zulässig.
+    -   **Agreement name** (erforderlich). Der Vertragsname darf höchstens 256 Zeichen umfassen. Folgende Zeichen sind nicht zulässig: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Leerzeichen sind im Namen zulässig.
 
     -   **Herausgeber** (erforderlich). Wenn Sie mit der Eingabe eines Herausgebers beginnen, werden die Namen aller Herausgeber abgerufen, die die eingegebenen Buchstaben enthalten. Wenn Sie beispielsweise "soft" eingeben, werden alle Herausgebernamen abgerufen, die die Zeichenfolge "soft" im Namen enthalten, z. B. "Microsoft" und "Microsoft Research". Die Herausgebernamen werden vom Software Asset-Katalog bezogen. Bevor Sie den Produkttitel eingeben, müssen Sie den Herausgeber auswählen.
 
@@ -179,9 +181,4 @@ Softwarelizenzverträge können zu Lizenzgruppen hinzugefügt werden. Sie könne
 |Umbenennen einer Lizenzgruppe|Wählen Sie im Arbeitsbereich **Lizenzen** eine Lizenzgruppe aus, und klicken Sie anschließend im Menü **Aufgaben** auf die Option **Lizenzgruppe bearbeiten**.|
 |Löschen einer Lizenzgruppe|Wählen Sie im Arbeitsbereich **Lizenzen** eine Lizenzgruppe aus, und klicken Sie anschließend im Menü **Aufgaben** auf die Option **Lizenzgruppe löschen**. **Tipp:** Alle Lizenzen in der Gruppe mit zu löschenden Lizenzen werden in die Lizenzgruppe **Nicht zugewiesene Verträge** verschoben.|
 |Löschen von Lizenzverträgen|Wählen Sie im Arbeitsbereich **Lizenzen** einen Vertrag aus, und klicken Sie auf **Löschen**. **Tipp:** Klicken Sie nach dem Löschen von Volumenlizenzverträgen zum Aktualisieren der Lizenzinformationen auf der Seite **Übersicht über Lizenzen** oder auf der Registerkarte **Allgemein** für eine bestimmte Lizenzgruppe auf **Jetzt aktualisieren**.|
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

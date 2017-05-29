@@ -14,10 +14,11 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
-ms.lasthandoff: 02/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: d80632aceaa675f08eb4b23ce59e3bcabb72b4d0
+ms.contentlocale: de-de
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -91,7 +92,7 @@ In der Detailansicht werden die Fehlermeldung, die App, auf die bei Auftreten de
 
 Sie können die gleichen Berichte in der Detailansicht finden sowie zusätzliche Berichte, die Ihnen mit dem Konformitätsstatus der App-Schutzrichtlinie weiterhelfen:
 
-![Screenshot&4;](../media/MAM-reporting-7.png)
+![Screenshot 4](../media/MAM-reporting-7.png)
 
 -   **App protection user report** (Benutzerbericht App-Schutz): Darin werden dieselben Informationen dargestellt, die Sie auch im **Benutzerstatus**-Bericht im Abschnitt „Detailansicht“ weiter hoben sehen können.
 
@@ -107,7 +108,7 @@ Sie können die gleichen Berichte in der Detailansicht finden sowie zusätzliche
 
         -   Alle Apps sind eingecheckt, erhalten jedoch keine App-Schutzrichtlinien.
 
-![Screenshot&2;](../media/MAM-reporting-4.png)
+![Screenshot 2](../media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Tabellengruppierung
 
@@ -124,11 +125,11 @@ Gehen Sie zum Generieren des App-Schutzberichts wie folgt vor:
 
 1. Wählen Sie auf dem Blatt „Mobile Anwendungsverwaltung mit Intune“ den App-Schutzbericht aus.
 
-    ![Screenshot&6;](../media/app-protection-report-csv-2.png)
+    ![Screenshot 6](../media/app-protection-report-csv-2.png)
 
 2. Wählen Sie „Ja“ aus, um den Bericht zu speichern, und wählen Sie dann „Speichern unter“ und den Ordner aus, in dem der Bericht gespeichert werden soll.
 
-    ![Screenshot&7;](../media/app-protection-report-csv-1.png)
+    ![Screenshot 7](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Weitere Informationen:
 [Verwalten der Datenübertragung zwischen iOS-Apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)

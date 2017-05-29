@@ -14,10 +14,11 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: dfc76481a673dff5dd8be40659cc267a792760ec
-ms.lasthandoff: 12/30/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 48f31fa1a883abc2bba372c3aaffb1f998d33c00
+ms.contentlocale: de-de
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -111,7 +112,7 @@ Fahren Sie mit dem Bereitstellen und Überwachen der App-Bereitstellung wie gewo
 Wenn die bereitgestellte App auf einem Gerät gestartet wird, wird sie mit den Einstellungen ausgeführt, die Sie in der Konfigurationsrichtlinie für mobile Apps konfiguriert haben.
 
 > [!TIP]
-> Wenn mindestens eine Konfigurationsrichtlinie für mobile Apps einen Konflikt verursacht, wird keine Richtlinie durchgesetzt. Der Konflikt wird im **Dashboard** der Intune-Verwaltungskonsole gemeldet.
+> Wenn mindestens eine Konfigurationsrichtlinie für mobile Apps einen Konflikt verursacht, wird keine Richtlinie durchgesetzt. Der Konflikt wird im **Dashboard**  der Intune-Verwaltungskonsole gemeldet.
 
 ## <a name="example-format-for-a-mobile-app-configuration-xml-file"></a>Beispielformat für die XML-Datei für die Konfiguration mobiler Apps
 

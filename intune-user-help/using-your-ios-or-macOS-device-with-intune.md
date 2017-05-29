@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/09/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 57a067684ccada3df4faa15e6bf009b39caf5c94
-ms.openlocfilehash: 598ecac4aafaff5715e311dcfc058c1d2661bd3e
-ms.lasthandoff: 03/02/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 5de619d98ab78384e42c8a3a2264ce4deebc2602
+ms.contentlocale: de-de
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -28,6 +29,10 @@ ms.lasthandoff: 03/02/2017
 # <a name="using-your-ios-or-macos-device-with-intune"></a>Verwenden Ihres iOS- oder Mac OS-Geräts mit Intune
 
 Mit Intune können Sie Ihre Arbeit auf verschiedene Weise erleichtern. Dies ist eine Liste der am häufigsten vorkommenden Vorgehen, um die Sie Ihr Unternehmen möglicherweise bittet.
+
+## <a name="supported-versions"></a>Unterstützte Versionen
+
+Intune unterstützt derzeit iOS 8.0 und höher. Es unterstützt auch Mac OS 10.9 (Mavericks) und höher. 
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>In Intune registrieren und das Unternehmenswebportal installieren
 
@@ -40,6 +45,7 @@ Mit Intune können Sie Ihre Arbeit auf verschiedene Weise erleichtern. Dies ist 
 
 - [Verwenden verwalteter Apps auf Ihrem Gerät](use-managed-apps-on-your-device-ios.md)
 - [Festlegen oder Ändern der Kennung](set-or-change-your-passcode-ios.md)
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Geräts](reset-erase-your-device-cpwebsite.md)
 - [Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft](turn-off-microsoft-usage-data-collection-ios.md)
 - [Aufheben der Registrierung Ihres Geräts in Intune](unenroll-your-device-from-intune-ios.md)

@@ -13,9 +13,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: a2e43444bff3b189c1516c6ca7131771035313ea
-ms.openlocfilehash: a967758387e9904eb9ce794b3783e777322c83a7
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 7944b6e16e72b781bb2f9101623deb1ce484fa46
+ms.contentlocale: de-de
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -70,9 +72,4 @@ Das Feature für mehrere Identitäten hilft Ihnen, das Datenschutzproblem zu lö
 Viele Benutzer privater Geräten möchten auf Unternehmensdaten zugreifen, ohne ihr privates Gerät bei einem MDM-Anbieter (Mobile Device Management, Verwaltung mobiler Geräte) zu registrieren. Da die MDM-Registrierung eine globale Kontrolle des Geräts voraussetzt, zögern viele Benutzer häufig, diese globale Kontrolle über ihr privates Gerät an das Unternehmen zu übergeben.
 
 Ein App-Schutz ohne Geräteregistrierung ermöglicht dem Microsoft Intune-Dienst das direkte Bereitstellen einer App-Schutzrichtlinie für eine App, ohne dass ein Geräteverwaltungskanal die Richtlinie bereitstellen muss.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,31 +17,40 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 351a0e6cf440b1506426db57ec0529496ed70231
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 624819ddd8afabef1e3b5419706268eef6d960d0
+ms.contentlocale: de-de
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrieren eines Windows 10-Geräts bei Intune
 
-1.  Zum Öffnen der Windows-**Einstellungen** klicken Sie im **Startmenü** auf die Schaltfläche **Einstellungen**. Sie können auch über die Suchleiste nach „Einstellungen“ suchen.
+> [!NOTE]
+> Windows 10 funktioniert auf allen Geräten. Egal, ob Sie einen Desktop-Computer, ein Smartphone oder ein Tablet verwenden, sind die zu befolgenden Schritte dieselben, auch wenn sie sich geringfügig von den Bildern auf dieser Seite unterscheiden.
 
-2. Wählen Sie **Konten** aus.
+1.  Öffnen Sie das **Startmenü**.
+
+  - Gehen Sie auf einem **Windows 10 Desktop**-Gerät auf das **Startmenü**.
+  - Wenn Sie ein **Windows 10-Mobilgerät** besitzen, gehen Sie zum **Startbildschirm**, dann wischen Sie zur Liste **Alle Apps**.
+
+2. Öffnen Sie die Windows **Einstellungen**-App, indem Sie in der Suchleiste nach „Einstellungen“ suchen.
+
+3. Wählen Sie **Konten** aus.
 
     ![Go to Settings and Accounts](./media/W10-enroll-1-settings-accounts.png)
 
-3. Wählen Sie **Ihr Konto** aus.
+4. Wählen Sie **Ihr Konto** aus.
 
     ![Wählen Sie „Ihr Konto“ aus.](./media/W10-enroll-2-accounts-your-account.png)
 
-4. Wählen Sie **Geschäfts- oder Schulkonto hinzufügen** aus.
+5. Wählen Sie **Geschäfts- oder Schulkonto hinzufügen** aus.
 
     ![Wählen Sie „Geschäfts- oder Schulkonto hinzufügen“ aus.](./media/w10-enroll-3-add-work-school-acct.png)
 
-5. Melden Sie sich mit den Anmeldeinformationen Ihres Geschäfts- oder Schulkontos an.
+6. Melden Sie sich mit den Anmeldeinformationen Ihres Geschäfts- oder Schulkontos an.
 
     ![Anmelden](./media/W10-enroll-4-sign-in.png)
 
