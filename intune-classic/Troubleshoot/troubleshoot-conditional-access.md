@@ -127,7 +127,7 @@ Verwenden Sie zum Anzeigen der Exchange Connector-Protokolle das [Service Trace 
 
 #### <a name="locating-sync-logs"></a>Suchen von Synchronisierungsprotokollen
 
--    Suchen Sie eine vollständige Synchronisierung in den Protokollen, indem Sie nach **vollständige Synchronisierung** suchen. Der Anfang einer vollständigen Synchronisierung wird durch den folgenden Text gekennzeichnet:
+-    Suchen Sie eine vollständige Synchronisierung in den Protokollen, indem Sie nach **full sync** suchen. Der Anfang einer vollständigen Synchronisierung wird durch den folgenden Text gekennzeichnet:
 
     „Handling command: Getting the mobile device list without a time filter (full sync) for <number> users“
 
@@ -135,7 +135,7 @@ Verwenden Sie zum Anzeigen der Exchange Connector-Protokolle das [Service Trace 
 
     „Getting the mobile device list without a time filter (full sync) for 4 users completed successfully.“ Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
--    Suchen Sie eine schnelle Synchronisierung (Delta) in den Protokollen, indem Sie nach **Schnellsynchronisierung** suchen.
+-    Suchen Sie eine schnelle Synchronisierung (Delta) in den Protokollen, indem Sie nach **quick sync** suchen.
 
 ##### <a name="exceptions-in-get-next-command"></a>Ausnahmen im Befehl „Get next“
 Überprüfen Sie die Exchange Connector-Protokolle auf Ausnahmen im **Befehl „Get next“**, und stellen Sie diese dem Microsoft-Support bereit.
