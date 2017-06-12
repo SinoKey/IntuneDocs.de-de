@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/22/2017
+ms.date: 05/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -28,8 +28,8 @@ ms.lasthandoff: 05/23/2017
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrieren eines Windows 10-Geräts bei Intune
 
-> [!NOTE]
-> Windows 10 funktioniert auf allen Geräten. Egal, ob Sie einen Desktop-Computer, ein Smartphone oder ein Tablet verwenden, sind die zu befolgenden Schritte dieselben, auch wenn sie sich geringfügig von den Bildern auf dieser Seite unterscheiden.
+  > [!NOTE]
+  > Windows 10 funktioniert auf allen Geräten. Egal, ob Sie einen Desktop-Computer, ein Smartphone oder ein Tablet verwenden, sind die zu befolgenden Schritte dieselben, auch wenn sie sich geringfügig von den Bildern auf dieser Seite unterscheiden.
 
 1.  Öffnen Sie das **Startmenü**.
 
