@@ -63,7 +63,7 @@ Setzt das Gerät auf die Standardeinstellungen zurück. Das Gerät wird nicht me
 Sperrt das Gerät. Der Eigentümer des Geräts muss zum Entsperren seine Kennung verwenden. Sie können nur Remotesperrungen von Geräten durchführen, für die eine PIN oder ein Kennwort festgelegt wurde.
 
 ### <a name="reset-passcode"></a>**Kennung zurücksetzen**
-Generiert eine neue Kennung für das Gerät, die auf dem Blatt **Übersicht über <*Gerätename*> ** angezeigt wird.
+Generiert eine neue Kennung für das Gerät, die auf dem Blatt **Übersicht über** <*Gerätename*>  angezeigt wird.
 
 ### <a name="bypass-activation-lock"></a>**Aktivierungssperre umgehen**
 Entfernt der Aktivierungssperre auf einem iOS-Gerät ohne Apple-ID und Kennwort des Benutzers. Nachdem Sie die Aktivierungssperre umgangen haben, aktiviert das Gerät die Aktivierungssperre erneut, wenn die App „Mein iPhone suchen“ gestartet wird. Umgehen Sie die Aktivierungssperre nur, wenn Sie physischen Zugriff auf das Gerät haben.
