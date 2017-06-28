@@ -1,5 +1,5 @@
 ---
-title: "Veröffentlichen mobiler Apps für Benutzer | Microsoft-Dokumentation"
+title: "Veröffentlichen mobiler Apps für Benutzer"
 description: 
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fea0f98051d1a13a2ace178fe440520f495aaa68
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 71d57965164f0822e1a6d95715c4f9c92f7bf4bd
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -35,9 +35,9 @@ Möchten Sie, dass Ihre Benutzer schnell Zugriff auf alle Apps erhalten, die sie
 Wenn dies der Fall ist, können Sie mit Microsoft Intune entsprechende Apps (Office Mobile, interne branchenspezifische oder andere mobile und Desktop-Apps) in einem einzelnen allgemeinen Portal veröffentlichen: die [App oder Website für das Intune-Unternehmensportal](/intune-user-help/company-portal-frequently-asked-questions).
 
 ## <a name="how-do-i-do-it"></a>Wie gehe ich dabei vor?
-1.    [Registrieren Sie Geräte](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) in der mobilen Geräteverwaltung von Intune.
-2.    [Fügen Sie Apps zu Intune hinzu](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune), die Sie auf registrierten Geräten bereitstellen möchten.
-3.    [Stellen Sie Apps mithilfe von Intune](/intune-classic/deploy-use/deploy-apps) auf registrierten Geräten bereit.
+1.  [Registrieren Sie Geräte](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) in der mobilen Geräteverwaltung von Intune.
+2.  [Fügen Sie Apps zu Intune hinzu](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune), die Sie auf registrierten Geräten bereitstellen möchten.
+3.  [Stellen Sie Apps mithilfe von Intune](/intune-classic/deploy-use/deploy-apps) auf registrierten Geräten bereit.
 
 ### <a name="additional-information"></a>Zusätzliche Informationen:
 Wenn das Veröffentlichen von mobilen Office-Apps mit dem Ziel erfolgt, die MAM-Funktionen von Intune zum Verwalten des Schutzes vor Datenverlust für solche Apps zu verwenden, muss jedem Endbenutzer, dem MAM-Richtlinien zugewiesen werden, [eine Benutzerlizenz für Office 365 zugewiesen werden](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).

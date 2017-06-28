@@ -1,5 +1,5 @@
 ---
-title: "Außerbetriebnahme von Geräten | Microsoft-Dokumentation"
+title: "Abkoppeln von Geräten"
 description: "Intune unterstützt sowohl die selektive als auch die vollständige Zurücksetzung, um das Gerät aus der Intune-Verwaltung zu entfernen, indem die Richtlinie und das Unternehmensportal entfernt werden."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88a18975049158ca632d51796e8b4022c42dff94
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 493b5bfce7ab9b78f5f7c48d0d18524d1b191f1f
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -33,10 +33,10 @@ Geräte werden nie ohne Ihr Zutun aus Intune entfernt, selbst wenn die Geräte e
 
 Es kann aus einer Vielzahl von Gründen erforderlich sein, ein Gerät außer Kraft zu setzen:
 
--    Ein Benutzer verlässt ein Unternehmen planmäßig („verwalteter“ Abschied)
--    Ein Benutzer verlässt das Unternehmen plötzlich (wird entlassen, kündigt etc.)
--    Verlust des Geräts
--    Umfunktionieren eines Geräts (Übertragen auf einen anderen Benutzer, Wiederverwendung für einen anderen Zweck usw.)
+-   Ein Benutzer verlässt ein Unternehmen planmäßig („verwalteter“ Abschied)
+-   Ein Benutzer verlässt das Unternehmen plötzlich (wird entlassen, kündigt etc.)
+-   Verlust des Geräts
+-   Umfunktionieren eines Geräts (Übertragen auf einen anderen Benutzer, Wiederverwendung für einen anderen Zweck usw.)
 
 Sie können ein Gerät, das als mobiles Gerät verwaltet wird, entweder selektiv oder vollständig zurücksetzen oder ein Gerät sperren und das Kennwort zurücksetzen. Durch das Zurücksetzen des Geräts geben Sie das Abonnement des Benutzers frei, sodass Sie ein anderes Gerät hinzufügen können. Außerdem können Sie mit der Intune-Clientsoftware verwaltete PCs außer Betrieb nehmen.
 

@@ -1,5 +1,5 @@
 ---
-title: "Vereinfachen der E-Mail-Konfiguration auf mobilen Geräten | Microsoft-Dokumentation"
+title: "Vereinfachen der E-Mail-Konfiguration auf mobilen Geräten"
 description: 
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 78bce5b82cfbb65473ad0b8cadb0db349ed3df3c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2fe65f3021596390af8262f83704d6e4ceaa1716
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -37,8 +37,8 @@ Wenn dies der Fall ist, kann Microsoft Intune für die von Intune verwalteten Ge
 Nachdem das E-Mail-Profil konfiguriert wurde, können Sie den Zugriff auf geschäftliche E-Mails und Office 365-Dienste mithilfe der Intune-Richtlinien für den bedingten Zugriff problemlos einschränken. Mithilfe dieser Richtlinien können Sie sicherstellen, dass der Zugriff auf die geschäftlichen E-Mails und Office 365-Dienste auf Geräte beschränkt ist, die den von Ihnen in Intune festgelegten Regeln entsprechen.
 
 ## <a name="how-do-i-do-it"></a>Wie gehe ich dabei vor?
-1.    [Konfigurieren Sie die E-Mail-Profile der Endbenutzer automatisch](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) auf Windows-, iOS- und Android-Geräten.
-2.    [Kontrollieren Sie den Zugriff auf geschäftliche E-Mails](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) mithilfe von Richtlinien für den bedingten Zugriff.
+1.  [Konfigurieren Sie die E-Mail-Profile der Endbenutzer automatisch](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) auf Windows-, iOS- und Android-Geräten.
+2.  [Kontrollieren Sie den Zugriff auf geschäftliche E-Mails](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) mithilfe von Richtlinien für den bedingten Zugriff.
 
 
 ### <a name="additional-information"></a>Zusätzliche Informationen:

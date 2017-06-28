@@ -1,12 +1,12 @@
 ---
-title: "Vorbereitungen zum Konfigurieren von App-Schutzrichtlinien für Windows 10 | Microsoft-Dokumentation"
-titleSuffix: Intune Azure preview
+title: "Vorbereitungen zum Konfigurieren von App-Schutzrichtlinien für Windows 10"
+titleSuffix: Intune on Azure
 description: Einrichten des MAM-Anbieters (Mobile Application Management) in Azure AD
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/25/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e179f72e4cd99a8cd1bdc017e9965f7d1eb608bf
+ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
+ms.openlocfilehash: bf56d3a80f0d167baa95e9dfdb20d08e02590984
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Vorbereitungen zum Konfigurieren von App-Schutzrichtlinien für Windows 10
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Vor der Erstellung einer Windows 10-App-Schutzrichtlinie müssen Sie die mobile Anwendungsverwaltung (MAM) für Windows 10 aktivieren, indem Sie den MAM-Anbieter in Azure AD einrichten. Mit dieser Konfiguration können Sie den Registrierungsstatus definieren, wenn Sie eine neue WIP-Richtlinie (Windows Information Protection) in Intune erstellen.
 
@@ -59,5 +59,5 @@ Vor der Erstellung einer Windows 10-App-Schutzrichtlinie müssen Sie die mobile 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Erstellen einer WIP-App-Schutzrichtlinie](https://docs.microsoft.comwindows-information-protection-policy-create.md)
+[Erstellen einer WIP-App-Schutzrichtlinie](windows-information-protection-policy-create.md)
 

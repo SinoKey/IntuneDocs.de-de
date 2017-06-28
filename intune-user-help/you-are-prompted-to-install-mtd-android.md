@@ -26,7 +26,7 @@ ms.lasthandoff: 05/23/2017
 
 # <a name="you-need-to-install-mobile-threat-defense-on-your-android-device"></a>Installieren von Mobile Threat Defense auf Ihrem Android-Gerät
 
-Damit Sie auf Ihre Arbeit zugreifen können, verlangt der IT-Administrator von Ihnen, dass Sie die Mobile Threat Defense-App installieren, die Ihnen hilft, Ihr Gerät zu schützen, indem sie mögliche Sicherheitsbedrohungen erkennt. Möglicherweise werden auf Ihrem Gerät abhängig davon, wie Ihr IT-Administrator Mobile Threat Defense eingerichtet hat, andere Aufforderungen angezeigt.
+Damit Sie auf Ihre Arbeit zugreifen können, verlangt der IT-Administrator von Ihnen, dass Sie die Mobile Threat Defense-App installieren, die Ihnen hilft, Ihr Gerät zu schützen, indem sie mögliche Sicherheitsbedrohungen erkennt. Möglicherweise werden auf Ihrem Gerät andere Aufforderungen angezeigt, abhängig davon, wie Ihr IT-Administrator Mobile Threat Defense eingerichtet hat.
 
 * [Lookout for Work](you-are-prompted-to-install-lookout-for-work-android.md)
 * [Skycure](you-are-prompted-to-install-skycure-android.md)

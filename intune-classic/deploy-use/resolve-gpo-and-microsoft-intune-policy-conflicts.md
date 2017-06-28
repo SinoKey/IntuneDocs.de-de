@@ -1,5 +1,5 @@
 ---
-title: "Lösen von Konflikten mit Gruppenrichtlinienobjekten und Intune-Richtlinien | Microsoft-Dokumentation"
+title: "Lösen von Konflikten mit Gruppenrichtlinienobjekten und Intune-Richtlinien"
 description: "Informationen zum Lösen von Konflikten zwischen Gruppenrichtlinie und Intune-Konfigurationsrichtlinien."
 keywords: 
 author: robstackmsft
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 250ddb35aa33523141ae0f5af19b48b75ce0bef0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42debb9e26a226da6b2485a2ab1be2855d309747
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Lösen von Konflikten mit Gruppenrichtlinienobjekten und Microsoft Intune-Richtlinien
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In Intune können Sie Richtlinien zum Verwalten der Einstellungen auf Windows-PCs verwenden. Beispielsweise können Sie eine Richtlinie verwenden, um Einstellungen für die Windows-Firewall auf PCs zu steuern. Viele Intune-Einstellungen sind mit Einstellungen vergleichbar, die Sie mit Windows-Gruppenrichtlinien konfigurieren können. Es ist allerdings manchmal möglich, dass die beiden Methoden miteinander in Konflikt stehen.
 
 Wenn Konflikte auftreten, hat die Gruppenrichtlinie auf Domänenebene Vorrang vor der Intune-Richtlinie, sofern die Anmeldung des PCs bei der Domäne möglich ist. In diesem Fall wird die Intune-Richtlinie auf den Client-PC angewendet.

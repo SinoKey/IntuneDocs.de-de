@@ -1,5 +1,5 @@
 ---
-title: "Schützen von Apps und Daten | Microsoft-Dokumentation"
+title: "Schützen von Apps und Daten"
 description: "Dieses Thema beschreibt die verschiedenen Intune-Features und -Funktionen, die Ihnen zum Schutz Ihrer Unternehmens-Apps und Daten zur Verfügung stehen."
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 09b7a1d4901a52845719e8d7094f665b12b91ab4
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -52,7 +52,7 @@ Um eine App mit einer MAM-Richtlinie zu verknüpfen, muss die App das Microsoft 
 
 In Microsoft Office-Apps beispielsweise ist das Intune App SDK integriert. Die vollständige Liste der unterstützten Apps finden Sie im [Microsoft Intune-Katalog mit mobilen Anwendungen](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) auf der Seite mit den Microsoft Intune-Anwendungspartnern. Wählen Sie eine App aus, um die unterstützten Szenarien, Plattformen und Informationen dazu anzuzeigen, ob die App mehrere Identitäten unterstützt.
 
-Sie können auch [Ihre eigenen, individuellen branchenspezifischen Apps](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) für die Verwendung mit MAM-Richtlinien aktivieren.
+Sie können auch [Ihre eigenen, individuellen branchenspezifischen Apps](/intune/apps-prepare-mobile-application-management) für die Verwendung mit MAM-Richtlinien aktivieren.
 
 Wenn ein Gerät verloren geht oder gestohlen wird oder der Benutzer nicht mehr für Ihr Unternehmen arbeitet, können Sie [Unternehmensdaten selektiv löschen](wipe-managed-company-app-data-with-microsoft-intune.md) und nur persönliche Daten auf dem Gerät belassen.
 

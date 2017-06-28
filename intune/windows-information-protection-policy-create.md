@@ -1,12 +1,12 @@
 ---
-title: Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune | Microsoft-Dokumentation
-titleSuffix: Intune Azure preview
+title: Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune
+titleSuffix: Intune on Azure
 description: Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien in Intune
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/25/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ca8e309653aa43292c7bd1ae1cb72cbb282d37dc
+ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
+ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Ab Version Intune 1704 können Sie bei Windows 10 App-Schutzrichtlinien ohne Registrierungsszenario in der mobilen Anwendungsverwaltung (Mobile Application Management, MAM) verwenden.
 
@@ -52,7 +52,7 @@ Sprechen Sie wir über einige Konzepte, wenn Sie eine WIP-Richtlinie hinzufügen
 
 Sie müssen den MAM-Anbieter konfigurieren, bevor Sie eine WIP-App-Schutzrichtlinie erstellen können.
 
--   Weitere Informationen finden Sie unter [Konfigurieren Ihres MAM-Anbieters in Intune](https://docs.microsoft.comapp-protection-policies-configure-windows-10.md).
+-   Weitere Informationen finden Sie unter [Konfigurieren Ihres MAM-Anbieters in Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
 Darüber hinaus benötigen Sie Folgendes:
 
