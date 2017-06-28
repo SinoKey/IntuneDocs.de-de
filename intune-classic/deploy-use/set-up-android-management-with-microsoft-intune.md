@@ -1,5 +1,5 @@
 ---
-title: Einrichten der Android-Verwaltung | Microsoft-Dokumentation
+title: Einrichten der Android-Verwaltung
 description: "Aktivieren Sie die Verwaltung mobiler Geräte (Mobile Device Management, MDM) für Android- und KNOX Standard-Geräte mit Microsoft Intune."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4042a22ecfbab7970ea4b3dab8ee6a82b0da5f78
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 927259d2f3b3078c9fdb0f1ba3bb22a69b555ab6
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -42,7 +42,7 @@ Standardmäßig können Android-Geräte in Intune registriert werden. Um Android
     Registrierungsanleitungen für Endbenutzer finden Sie unter [Registrieren Ihres Android-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android). Im Laufe des Registrierungsprozesses werden Benutzer darüber informiert, was sie erwarten können und was IT-Administratoren auf ihren Geräten sehen können und was nicht.
 
     Informationen zu anderen Endbenutzeraufgaben finden Sie in den folgenden Artikeln:
-  - [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
+  - [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](/intune/end-user-educate)
   - [Endbenutzer-Leitfaden für Android-Geräte](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 Da der Google Play Store in China nicht verfügbar ist, müssen Android-Geräte das Unternehmensportal von chinesischen App-Marktplätzen beziehen. Die Unternehmensportal-App für Android wird in den folgenden Stores zum Download zur Verfügung stehen:

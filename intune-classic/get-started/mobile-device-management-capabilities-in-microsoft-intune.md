@@ -1,5 +1,5 @@
 ---
-title: "Verwaltungsfunktionen für registrierte Geräte | Microsoft-Dokumentation"
+title: "Verwaltungsfunktionen für registrierte Geräte"
 description: "In diesem Thema erfahren Sie, wie Intune Sie bei der Verwaltung registrierter Geräte unterstützen kann."
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 364c7e1fe2bf17b0c804960c3ebaadb1cf4652a8
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 5fc5e6108e7e7841ed142f24f463d85273ae8a12
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -38,7 +38,7 @@ Verwaltung, Bestandserfassung, Bereitstellung und Außerbetriebnahme von Geräte
 
 |Funktion|Details|Weitere Informationen|
 |--------------|-----------|--------------------|
-|Konfigurationsrichtlinien<br><br>Benutzerdefinierte Richtlinien| Ermöglicht die Verwaltung vieler Einstellungen und Features auf mobilen Geräten in Ihrer Organisation. Beispielsweise kann das Anfordern eines Kennworts, das Beschränken der Anzahl misslungener Anmeldeversuche, das Begrenzen des Zeitraums bis zur Sperrung des Bildschirms, das Festlegen eines Zeitraums für den Kennwortablauf und das Unterbinden der erneuten Verwendung zuvor bereits verwendeter Kennwörter festgelegt werden. Sie können auch die Verwendung von Hardware- und Softwarefunktionen steuern, z.B. die Verwendung der Gerätekamera oder des Webbrowsers.<br><br>Verwenden Sie benutzerdefinierte Richtlinien, wenn Konfigurationsrichtlinien nicht die Einstellungen enthalten, die Sie benötigen. Bei iOS-Geräten können Sie die Einstellungen importieren, die Sie aus dem Apple Configurator-Tool exportiert haben. Bei anderen Geräten können Sie Open Mobile Alliance Uniform Resource Identifier verwenden /intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)<br />|
+|Konfigurationsrichtlinien<br><br>Benutzerdefinierte Richtlinien| Ermöglicht die Verwaltung vieler Einstellungen und Features auf mobilen Geräten in Ihrer Organisation. Beispielsweise kann das Anfordern eines Kennworts, das Beschränken der Anzahl misslungener Anmeldeversuche, das Begrenzen des Zeitraums bis zur Sperrung des Bildschirms, das Festlegen eines Zeitraums für den Kennwortablauf und das Unterbinden der erneuten Verwendung zuvor bereits verwendeter Kennwörter festgelegt werden. Sie können auch die Verwendung von Hardware- und Softwarefunktionen steuern, z.B. die Verwendung der Gerätekamera oder des Webbrowsers.<br><br>Verwenden Sie benutzerdefinierte Richtlinien, wenn Konfigurationsrichtlinien nicht die Einstellungen enthalten, die Sie benötigen. Bei iOS-Geräten können Sie die Einstellungen importieren, die Sie aus dem Apple Configurator-Tool exportiert haben. Bei anderen Geräten können Sie OMA-URI-Einstellungen (Open Mobile Alliance Uniform Resource Identifier) verwenden, um Einstellungen und Features auf dem Gerät zu konfigurieren.|[Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)|
 |Remotezurücksetzen, Remotesperre und Kennungsrückstellung|Löscht sensible Daten, wenn ein Gerät verloren geht oder gestohlen wird. Beispielsweise können Sie das Gerät remote sperren, die Werkseinstellungen wiederherstellen oder nur Unternehmensdaten zurücksetzen.<br><br>Sie können Passcodes zurücksetzen, wenn Benutzer nicht mehr auf ihr Gerät zugreifen können, und verlorene oder gestohlene Geräte sperren oder alle darauf vorhandenen Daten zurücksetzen.|[Geräteschutz durch Remotesperre und Zurücksetzen der Kennung](/intune-classic/deploy-use/retire-devices-from-microsoft-intune-management)|
 |Kioskmodus|Ermöglicht das Sperren bestimmter Features mobiler Geräte, z.B. der Bildschirmaufnahme und Netzschaltern. Außerdem können Sie Geräte auf die Ausführung einer einzigen, von Ihnen angegebenen App beschränken.|[Einstellungen für iOS-Konfigurationsrichtlinien in Microsoft Intune](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
 
@@ -47,8 +47,8 @@ Verwaltung, Bestandserfassung, Bereitstellung und Außerbetriebnahme von Geräte
 |Funktion|Details|Weitere Informationen|
 |--------------|-----------|--------------------|
 |App-Bereitstellung und -Verwaltung|Bietet eine Reihe von Tools zum Verwalten von mobilen Apps während deren Lebenszyklus, einschließlich der App-Bereitstellung von Installationsdateien und App Stores sowie eine detaillierte Überwachung des Status der App und App-Entfernung.|[Bereitstellen von Apps in Microsoft Intune](/intune-classic/deploy-use/deploy-apps)|
-|Kompatible und nicht kompatible Anwendungen|Angeben von Listen kompatibler Apps /intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
-|Mobile Anwendungsverwaltung|Konfiguriert die Einschränkungen für Apps, indem die mobile Anwendungsverwaltung für alle Geräte verwendet wird, die über Intune verwaltet oder nicht über Intune verwaltet werden. Dadurch können Sie die Sicherheit Ihrer Unternehmensdaten erhöhen, indem Sie Vorgänge wie das Kopieren und Einfügen, die externe Sicherung von Daten und die Übertragung von Daten zwischen Apps einschränken.|[Konfigurieren und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen in der Microsoft Intune-Konsole](/intune-classic/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)|
+|Kompatible und nicht kompatible Anwendungen|Ermöglicht das Angeben von Listen der kompatiblen Apps (die Benutzer installieren dürfen) und nicht kompatiblen Apps (die Benutzer nicht installieren dürfen).|[iOS-Richtlinieneinstellungen in Microsoft Intune](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
+|Mobile Anwendungsverwaltung|Konfiguriert die Einschränkungen für Apps, indem die mobile Anwendungsverwaltung für alle Geräte verwendet wird, die über Intune verwaltet oder nicht über Intune verwaltet werden. Dadurch können Sie die Sicherheit Ihrer Unternehmensdaten erhöhen, indem Sie Vorgänge wie das Kopieren und Einfügen, die externe Sicherung von Daten und die Übertragung von Daten zwischen Apps einschränken.|[Konfigurieren und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen in der Microsoft Intune-Konsole](/intune/app-wrapper-prepare-android)|
 |Konfiguration mobiler iOS-Apps|Verwendet Konfigurationsrichtlinien für mobile Apps, um Einstellungen für iOS-Apps anzugeben, die beim Ausführen der App durch den Benutzer erforderlich sein können. Beispielsweise kann eine App erfordern, dass der Benutzer eine Portnummer oder Anmeldeinformationen angibt. Dies kann helfen, die Konfiguration der App zu optimieren und die Anzahl von Anrufen beim Support zu verringern.|[Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |Bereitstellungsprofile für mobile iOS-Apps|Hilft Ihnen, Bereitstellungsprofile für iOS-Apps bereitzustellen, die demnächst ablaufen. |[Verwenden von Richtlinien für mobile iOS-Bereitstellungsprofile, um zu verhindern, dass Apps ablaufen](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Managed Browser|Konfiguriert die Richtlinien für verwaltete Browser zur Kontrolle der Websites, die Gerätebenutzer aufrufen können. Darüber hinaus können Sie Richtlinien zur mobilen Anwendungsverwaltung auf den Managed Browser anwenden.|[Verwalten des Internetzugriffs mittels Richtlinien für Managed Browser mit Microsoft Intune](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)|
@@ -59,7 +59,7 @@ Verwaltung, Bestandserfassung, Bereitstellung und Außerbetriebnahme von Geräte
 
 |Funktion|Details|Weitere Informationen|
 |--------------|-----------|--------------------|
-|Zertifikatprofile|Erstellt vertrauenswürdige Zertifikatprofile und Simple Certificate Enrollment-Protokoll (SCEP) und führt diese aus /intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)|
+|Zertifikatprofile|Erstellt vertrauenswürdige Zertifikatprofile und Simple Certificate Enrollment Protocol-Zertifikate (SCEP), die zum Sichern und Authentifizieren von WLAN-, VPN- und E-Mail-Profilen verwendet werden können, und stellt diese bereit.|[Sicherer Ressourcenzugriff mit Zertifikatprofilen in Microsoft Intune](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)|
 |WLAN-Profile|Stellt Einstellungen für drahtlose Netzwerke für Ihre Benutzer bereit. Durch das Bereitstellen dieser Einstellungen erleichtern Sie dem Benutzer das Herstellen einer Verbindung mit dem Unternehmensnetzwerk.|[WLAN-Verbindungen in Microsoft Intune](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)|
 |E-Mail-Profile|Erstellt E-Mail-Einstellungen für Geräte und stellt diese bereit. Dies bedeutet, dass Benutzer Zugriff auf Unternehmens-E-Mails auf ihren persönlichen Geräten erhalten, ohne dafür ein Setup vornehmen zu müssen.|[Konfigurieren des Zugriffs auf Unternehmens-E-Mail mithilfe von E-Mail-Profilen in Microsoft Intune](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)|
 |VPN-Profile|Stellt VPN-Einstellungen für Benutzer und Geräte in Ihrer Organisation bereit. Durch das Bereitstellen dieser Einstellungen erleichtern Sie dem Benutzer das Verbinden mit Ressourcen im Unternehmensnetzwerk.|[VPN-Verbindungen in Microsoft Intune](/intune-classic/deploy-use/vpn-connections-in-microsoft-intune)|

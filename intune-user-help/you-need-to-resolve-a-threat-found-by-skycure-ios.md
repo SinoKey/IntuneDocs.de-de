@@ -26,7 +26,7 @@ ms.lasthandoff: 05/23/2017
 
 # <a name="you-need-to-resolve-a-threat-found-by-skycure"></a>Sie müssen eine von Skycure erkannte Bedrohung beseitigen
 
-Skycure hat eine potenzielle Bedrohung auf Ihrem Gerät erkannt, und Sie müssen das Problem beheben, um wieder Zugriff auf Ihre Geschäfts-, Schul- oder Uni-E-Mails, -Apps und -dateien zu erhalten. Die angezeigte Meldung könnte wie folgt aussehen:
+Skycure hat eine potenzielle Bedrohung auf Ihrem Android-Gerät erkannt, und Sie müssen das Problem beheben, um wieder Zugriff auf die E-Mails, Apps und Dateien Ihres Unternehmens, Ihrer Schule oder Ihrer Uni zu erhalten. Die angezeigte Meldung könnte wie folgt aussehen:
 
 ![Meldung zu nicht vorhandener Kompatibilität von Lookout for Work](./media/ios-skycure-noncompliant-in-ssp.png)
 

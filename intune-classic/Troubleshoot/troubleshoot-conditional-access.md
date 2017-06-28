@@ -1,5 +1,5 @@
 ---
-title: Problembehandlung beim bedingten Zugriff | Microsoft-Dokumentation
+title: Problembehandlung beim bedingten Zugriff
 description: "Was zu tun ist, wenn Ihre Benutzer durch bedingten Intune-Zugriff nicht auf Ressourcen zugreifen können."
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 19635b4dda7f4f04690ad165bad6608cad7ac84f
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 04b1785c0b75d4668879488e5221d8b8c2794834
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -36,11 +36,11 @@ In diesem Thema wird beschrieben, was zu tun ist, wenn Ihre Benutzer durch bedin
 
 Sie müssen folgende Bedingungen erfüllen, damit der bedingte Zugriff funktioniert:
 
--    Das Gerät muss von Intune verwaltet werden.
--    Das Gerät muss bei Azure Active Directory (AAD) registriert sein. Unter normalen Umständen erfolgt diese Registrierung automatisch während der Intune-Registrierung.
--    Das Gerät muss mit Ihren Intune-Kompatibilitätsrichtlinien für das Gerät und für den Benutzer des Geräts kompatibel sein.  Wenn keine Kompatibilitätsrichtlinien vorhanden sind, ist die Intune-Registrierung ausreichend.
--    Exchange ActiveSync muss auf dem Gerät aktiviert werden, wenn der Benutzer E-Mails über den nativen E-Mail-Client des Geräts anstatt über Outlook empfängt.     Dies geschieht für iOS,Windows Phone-und Android-/KNOX-Standard-Geräte automatisch.
--    Ihr Intune Exchange Connector muss ordnungsgemäß konfiguriert sein. Weitere Informationen finden Sie unter [Problembehandlung für den Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md).
+-   Das Gerät muss von Intune verwaltet werden.
+-   Das Gerät muss bei Azure Active Directory (AAD) registriert sein. Unter normalen Umständen erfolgt diese Registrierung automatisch während der Intune-Registrierung.
+-   Das Gerät muss mit Ihren Intune-Kompatibilitätsrichtlinien für das Gerät und für den Benutzer des Geräts kompatibel sein.  Wenn keine Kompatibilitätsrichtlinien vorhanden sind, ist die Intune-Registrierung ausreichend.
+-   Exchange ActiveSync muss auf dem Gerät aktiviert werden, wenn der Benutzer E-Mails über den nativen E-Mail-Client des Geräts anstatt über Outlook empfängt.     Dies geschieht für iOS,Windows Phone-und Android-/KNOX-Standard-Geräte automatisch.
+-   Ihr Intune Exchange Connector muss ordnungsgemäß konfiguriert sein. Weitere Informationen finden Sie unter [Problembehandlung für den Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md).
 
 Diese Bedingungen können für jedes Gerät im Azure-Verwaltungsportal und im Geräteinventurbericht angezeigt werden.
 
@@ -55,16 +55,16 @@ Diese Bedingungen können für jedes Gerät im Azure-Verwaltungsportal und im Ge
  -  Die Registrierung der Kompatibilitätsinformationen für ein Gerät kann einige Zeit in Anspruch nehmen. Warten Sie einige Minuten, und versuchen Sie es erneut.
  -  Geräte unter iOS:
      -   Ein vom Benutzer erstelltes, vorhandenes E-Mail-Profil blockiert die Bereitstellung eines Profils, das vom Intune-Administrator erstellt wurde. Das ist ein häufig auftretendes Problem, da iOS-Benutzer in der Regel ein E-Mail-Profil erstellen und anschließend die Registrierung vornehmen. Das Unternehmensportal informiert den Benutzer darüber, dass es aufgrund seines manuell konfigurierten E-Mail-Profils nicht kompatibel ist, und fordert ihn dazu auf, dieses Profil zu entfernen. Der Benutzer sollte sein E-Mail-Profil entfernen, damit das Intune-Profil bereitgestellt werden kann. Weisen Sie Ihre Benutzer an, die Registrierung ohne das Installieren eines E-Mail-Profils vorzunehmen und Intune die Bereitstellung des Profils zu erlauben, um das Problem zu vermeiden.
-     -     Ein iOS-Gerät kann beim Überprüfen der Kompatibilität hängen bleiben, wodurch verhindert wird, dass der Benutzer einen weiteren Eincheckvorgang initiiert. Dieses Problem kann durch einen Neustart des Unternehmensportals behoben werden und der Kompatibilitätsstatus spiegelt den Gerätestatus in Intune wider. Nachdem alle Daten von einer Gerätesynchronisierung erfasst wurden, erfolgt die Kompatibilitätsprüfung sehr schnell und sie benötigt im Durchschnitt weniger als eine halbe Sekunde.
+     -   Ein iOS-Gerät kann beim Überprüfen der Kompatibilität hängen bleiben, wodurch verhindert wird, dass der Benutzer einen weiteren Eincheckvorgang initiiert. Dieses Problem kann durch einen Neustart des Unternehmensportals behoben werden und der Kompatibilitätsstatus spiegelt den Gerätestatus in Intune wider. Nachdem alle Daten von einer Gerätesynchronisierung erfasst wurden, erfolgt die Kompatibilitätsprüfung sehr schnell und sie benötigt im Durchschnitt weniger als eine halbe Sekunde.
 
         In der Regel verbleiben Geräte in diesem Zustand, weil sie Probleme beim Herstellen einer Verbindung mit dem Dienst haben oder die Synchronisierung lange dauert.  Tritt das Problem für verschiedene Netzwerkkonfigurationen (Mobilfunk, WLAN, VPN), nach Geräteneustarts und nach der Überprüfung, dass der SSP auf dem Gerät aktuell ist, weiterhin auf, wenden Sie sich gemäß der Beschreibung in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) an den Microsoft-Support.
 
  - Für Android-Geräte:
-     - Bestimmte Android-Geräte mögen verschlüsselt zu sein scheinen, aber die Unternehmensportal-App erkennt diese Geräte als nicht verschlüsselt. 
+    - Bestimmte Android-Geräte mögen verschlüsselt zu sein scheinen, aber die Unternehmensportal-App erkennt diese Geräte als nicht verschlüsselt. 
     
-        -    Für Geräte in diesem Status muss der Benutzer eine sichere Startkennung festlegen. Für den Benutzer erscheint eine Benachrichtigung über die Geräte von der Unternehmensportal-App, die ihn auffordert, eine Startkennung für das Gerät festzulegen. Tippen Sie auf die Benachrichtigung über die Geräte und bestätigen Sie die vorhandene PIN oder das Kennwort, und wählen Sie dann auf dem Bildschirm **Secure start-up** (Sicherer Start) die Option **Require PIN to start device** (PIN für Start des Geräts anfordern). Tippen Sie dann auf die Schaltfläche **Check Compliance** (Kompatibilität prüfen) für das Gerät aus der Unternehmensportal-App. Das Gerät sollte nun als verschlüsselt erkannt werden.
+        -   Für Geräte in diesem Status muss der Benutzer eine sichere Startkennung festlegen. Für den Benutzer erscheint eine Benachrichtigung über die Geräte von der Unternehmensportal-App, die ihn auffordert, eine Startkennung für das Gerät festzulegen. Tippen Sie auf die Benachrichtigung über die Geräte und bestätigen Sie die vorhandene PIN oder das Kennwort, und wählen Sie dann auf dem Bildschirm **Secure start-up** (Sicherer Start) die Option **Require PIN to start device** (PIN für Start des Geräts anfordern). Tippen Sie dann auf die Schaltfläche **Check Compliance** (Kompatibilität prüfen) für das Gerät aus der Unternehmensportal-App. Das Gerät sollte nun als verschlüsselt erkannt werden.
     
-        -     Einige Gerätehersteller verschlüsseln ihre Geräte mithilfe einer Standard-PIN anstelle der geheimen PIN, die vom Benutzer festgelegt wird. Intune erkennt die Verschlüsselung über die Standard-PIN als unsicher, da diese Methode der Verschlüsselung die Daten auf dem Gerät durch böswillige Benutzer mit physischem Zugriff auf das Gerät gefährden kann. Wenn dies das Problem ist, ziehen Sie die [App-Schutzrichtlinien](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) in Betracht.
+        -   Einige Gerätehersteller verschlüsseln ihre Geräte mithilfe einer Standard-PIN anstelle der geheimen PIN, die vom Benutzer festgelegt wird. Intune erkennt die Verschlüsselung über die Standard-PIN als unsicher, da diese Methode der Verschlüsselung die Daten auf dem Gerät durch böswillige Benutzer mit physischem Zugriff auf das Gerät gefährden kann. Wenn dies das Problem ist, ziehen Sie die [App-Schutzrichtlinien](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) in Betracht.
 
 ## <a name="policy-issues"></a>Probleme mit Richtlinien
 
@@ -135,7 +135,7 @@ Verwenden Sie zum Anzeigen der Exchange Connector-Protokolle das [Service Trace 
 
     „Getting the mobile device list without a time filter (full sync) for 4 users completed successfully.“ Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
--    Suchen Sie eine schnelle Synchronisierung (Delta) in den Protokollen, indem Sie nach **quick sync** suchen.
+-   Suchen Sie eine schnelle Synchronisierung (Delta) in den Protokollen, indem Sie nach **quick sync** suchen.
 
 ##### <a name="exceptions-in-get-next-command"></a>Ausnahmen im Befehl „Get next“
 Überprüfen Sie die Exchange Connector-Protokolle auf Ausnahmen im **Befehl „Get next“**, und stellen Sie diese dem Microsoft-Support bereit.
@@ -144,9 +144,9 @@ Verwenden Sie zum Anzeigen der Exchange Connector-Protokolle das [Service Trace 
 
 So aktivieren Sie die ausführliche Protokollierung
 
-1.    Öffnen Sie die Konfigurationsdatei für die Exchange Connector-Ablaufverfolgung. Die Datei befindet sich unter: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
-2.    Suchen Sie nach „TraceSourceLine“ mit dem folgenden Schlüssel: „OnPremisesExchangeConnectorService“
-3.    Ändern Sie den Knotenwert für **SourceLevel** von **Warning ActivityTracing** (Standardeinstellung) in **Verbose ActivityTracing**, wie nachfolgend veranschaulicht.
+1.  Öffnen Sie die Konfigurationsdatei für die Exchange Connector-Ablaufverfolgung. Die Datei befindet sich unter: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
+2.  Suchen Sie nach „TraceSourceLine“ mit dem folgenden Schlüssel: „OnPremisesExchangeConnectorService“
+3.  Ändern Sie den Knotenwert für **SourceLevel** von **Warning ActivityTracing** (Standardeinstellung) in **Verbose ActivityTracing**, wie nachfolgend veranschaulicht.
 
     <TraceSourceLine>
           <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>

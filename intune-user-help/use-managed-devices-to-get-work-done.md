@@ -18,10 +18,10 @@ ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 748fce44b696675d4b7fe4b1d3048633fba1b490
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -38,7 +38,7 @@ Die IT-Abteilung Ihres Unternehmens kann auf die Informationen zugreifen, die f�
 Sie gelangen auf zwei Arten zum Unternehmensportal:
 
 - Durch Installieren der Unternehmensportal-App auf Ihrem Gerät. In der Regel erhalten Sie die Unternehmensportal-App, indem Sie sie aus dem App Store Ihres Geräts herunterladen. Allerdings kann auch Ihr IT-Administrator die Unternehmensportal-App auf dem Gerät installieren.
-- Durch Besuchen der [Unternehmensportal-Website](http://portal.manage.microsoft.com), die Ihr IT-Administrator eingerichtet hat.
+- Durch Besuchen der [Unternehmensportal-Website](https://portal.manage.microsoft.com), die Ihr IT-Administrator eingerichtet hat.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Was ist der Unterschied zwischen der App und der Website?
 Es gibt wenige kleinere Unterschiede zwischen der Unternehmensportal-App und der Unternehmensportal-Website, aber die meisten Aufgaben können Sie sowohl in der App als auch auf der Website genauso ausführen. Aufgaben, die Sie erledigen können, sind die folgenden:
@@ -100,5 +100,5 @@ Zunächst empfiehlt Microsoft, dass Sie versuchen, Ihr Problem selbst zu lösen.
 - [Behandeln häufig auftretender Probleme mit Ihrem iOS-Gerät](troubleshoot-your-device-ios.md)
 - [Behandeln häufig auftretender Probleme mit Ihrem Windows-Gerät](troubleshoot-your-device-windows.md)
 
-Wenn Sie Hilfe brauchen, können Sie auch unten einen Kommentar verfassen; bitte haben Sie jedoch Verständnis dafür, dass jeder Betrieb unterschiedliche Anforderungen hat, und wir deshalb möglicherweise nicht immer alle Fragen beantworten können. Wenn Sie sich an Ihren IT-Administrator wenden, erhalten Sie wahrscheinlich die schnellste und passendste Rückmeldung. Die entsprechenden Kontaktinformationen sollten Sie auf der [Unternehmensportalwebsite](http://portal.manage.microsoft.com) finden.
+Wenn Sie Hilfe brauchen, können Sie auch unten einen Kommentar verfassen; bitte haben Sie jedoch Verständnis dafür, dass jeder Betrieb unterschiedliche Anforderungen hat, und wir deshalb möglicherweise nicht immer alle Fragen beantworten können. Wenn Sie sich an Ihren IT-Administrator wenden, erhalten Sie wahrscheinlich die schnellste und passendste Rückmeldung. Die entsprechenden Kontaktinformationen sollten Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) finden.
 

@@ -1,5 +1,5 @@
 ---
-title: "Verwalten von Apps, die über ein Volumenprogramm erworben wurden | Microsoft-Dokumentation"
+title: Verwalten von Apps aus einem Volumenprogramm
 description: "Erfahren Sie, wie Sie Intune verwenden können, um Apps zu verwalten, die Sie über ein Volumenprogramm in einem App-Store erworben haben."
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8e82c36c768db98c2a5797aa0b05545125eebd67
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ba965dfdfa91920c0f76b4142dec05516c472cab
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

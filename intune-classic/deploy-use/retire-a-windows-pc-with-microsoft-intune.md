@@ -1,5 +1,5 @@
 ---
-title: Abkoppeln eines Windows-PC | Microsoft-Dokumentation
+title: Abkoppeln eines Windows-PCs
 description: Abkoppeln eines mit Intune verwalteten Windows-PCs.
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 30781be121782196b760f5aa163e922122480d33
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 09bba1ea199b51fdd1503cb1f0a3beeb97b6aa47
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="retire-a-windows-pc"></a>Abkoppeln eines Windows-PCs
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Gehen Sie folgendermaßen vor, um Desktops abzukoppeln, die durch Ausführen des Intune-Softwareclients als PCs verwaltet werden. Wenn Sie einen PC abkoppeln, wird dieser aus der Intune-Verwaltung entfernt. Ein PC kann von Intune aus nicht auf die ursprünglichen Werkseinstellungen zurückgesetzt werden.
 
 1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Gruppen** &gt; **Alle Geräte** aus (oder eine andere Gruppe, in der der PC enthalten ist, den Sie abkoppeln möchten).

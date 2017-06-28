@@ -1,5 +1,5 @@
 ---
-title: "Einrichten der Windows-Geräteverwaltung mit Microsoft Intune | Microsoft-Dokumentation"
+title: "Einrichten der Windows-Geräteverwaltung mit Microsoft Intune"
 description: "Aktivieren Sie die Verwaltung mobiler Geräte (Mobile Device Management, MDM) für Windows-Geräte mit Microsoft Intune."
 keywords: 
 author: NathBarn
@@ -14,10 +14,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: be2587f8ccb43632d861012416bbbca720698bb1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: cf77cb313d5a36c5e7975e70d54bf044aa2d30c8
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -69,7 +69,7 @@ Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) **A
 Benutzern erklären, wie sie ihre Windows-Geräte registrieren können, und sie darüber informieren, was sie erwarten können, wenn ihre Geräte verwaltet werden.
 Registrierungsanleitungen für Endbenutzer finden Sie unter [Registrieren Ihres Windows-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). Sie können Benutzer auch auf [Was kann mein IT-Administrator sehen, wenn ich mein Gerät bei Intune registriere?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) verweisen.
 
-Weitere Informationen zu Endbenutzeraufgaben finden Sie unter [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).
+Weitere Informationen zu Endbenutzeraufgaben finden Sie unter [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](/intune/end-user-educate).
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Voraussetzungen für die Registrierung von Geräten in Microsoft Intune](prerequisites-for-enrollment.md)

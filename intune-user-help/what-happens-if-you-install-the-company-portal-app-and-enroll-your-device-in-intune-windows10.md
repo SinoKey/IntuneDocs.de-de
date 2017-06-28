@@ -18,10 +18,10 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: db7c3b4c5722bea449dc7185b179b7a85fa59018
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: 0f5c1eb76f823c72904bad7543409d9efa9e93e6
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -56,5 +56,5 @@ Wenn Sie einen Computer hinzufügen:
 
 -   Ihr IT-Administrator könnte Richtlinien auf dem Computer erzwingen. Beispielsweise könnte von Ihnen angefordert werden, ein Kennwort oder eine PIN auf dem Computer festzulegen. Ihr IT-Administrator kann möglicherweise auch einschränken, wie oft Sie ein falsches Kennwort eingeben können und den Computer für Sie sperren oder alle Daten von der Festplatte Ihres Computers löschen, wenn Sie das Kennwort zu oft falsch eingeben.
 
-Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
 

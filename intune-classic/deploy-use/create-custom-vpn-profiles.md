@@ -1,5 +1,5 @@
 ---
-title: "Benutzerdefinierte Konfigurationen für Microsoft Intune-VPN-Profile | Microsoft-Dokumentation"
+title: "Benutzerdefinierte Konfigurationen für Microsoft Intune-VPN-Profile"
 description: Verwenden Sie benutzerdefinierte Konfigurationen, um VPN-Profile in Intune zu erstellen.
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5216730e9736ff4b20abfb19058e82b995d82813
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2ee20ce0b9f7794132c3a56046b1680f940b3424
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Registrieren firmeneigener iOS-Geräte | Microsoft-Dokumentation"
+title: "Registrieren firmeneigener iOS-Geräte"
 description: "Registrieren firmeneigener iOS-Geräte mithilfe des Apple Device Enrollment Program (DEP) oder Apple Configurator"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44b4fbad45decde806fb5be41ea12f0d8bcf9c95
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42da9c874183287bc9485035ae39e94efbaa3e8b
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -59,8 +59,8 @@ Auf mit Benutzeraffinität konfigurierten Geräte kann die Unternehmensportal-Ap
 
 Benutzeraffinität ist erforderlich, um Folgendes zu unterstützen:
   - MAM-Apps (Mobile Application Management, Verwaltung mobiler Anwendungen)
-  -    Bedingten Zugriff auf E-Mail- und Unternehmensdaten
-  -    Unternehmensportal-App
+  - Bedingten Zugriff auf E-Mail- und Unternehmensdaten
+  - Unternehmensportal-App
 
 **Registrieren von firmeneigenen iOS-Geräten mit Benutzeraffinität durch Benutzer**
 1. Wenn Benutzer ihr Gerät einschalten, werden sie aufgefordert, den Setup-Assistenten zu durchlaufen. Während des Setups werden Benutzer zur Eingabe ihrer Anmeldeinformationen aufgefordert. Sie müssen die Anmeldeinformationen (d. h. den eindeutigen persönlichen Namen) verwenden, die ihrem Abonnement in Intune zugeordnet sind.

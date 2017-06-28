@@ -1,5 +1,5 @@
 ---
-title: "Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird | Microsoft-Dokumentation"
+title: "Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird"
 description: "In diesem Thema erfahren Sie, wie Sie Apps für Windows-PCs zu Intune hinzufügen, bevor Sie sie bereitstellen."
 keywords: 
 author: robstackmsft
@@ -15,15 +15,17 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 41823544901f0ae2c87cba4e8591446068b8d144
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: faf52c4166298d981532ee61c158f4a705c5a3da
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 In diesem Thema erfahren Sie, wie Sie Apps zu Intune hinzufügen, bevor Sie sie bereitstellen.
 

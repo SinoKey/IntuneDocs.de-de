@@ -1,5 +1,5 @@
 ---
-title: Einrichten der iOS- und Mac-Verwaltung | Microsoft-Dokumentation
+title: Set up iOS and Mac management
 description: "Aktivieren Sie die mobile Geräteverwaltung (Mobile Device Management, MDM) für iOS-Geräte einschließlich iPads und iPhones sowie Mac OS X-Geräte mit Microsoft Intune."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ef1fbee09172a89e0f83cbe905a00f3a3ef25b05
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: af300534b3868a829c0b648d4df2587886ef749b
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -53,7 +53,7 @@ Intune ermöglicht die Verwaltung mobiler Geräte (mobile device management, MDM
     Registrierungsanleitungen für Endbenutzer finden Sie unter [Registrieren Ihres iOS-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) oder unter [Registrieren Ihres Mac OS-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos). Im Laufe des Registrierungsprozesses werden Benutzer darüber informiert, was sie erwarten können und was IT-Administratoren auf ihren Geräten sehen können und was nicht.
 
     Informationen zu anderen Endbenutzeraufgaben finden Sie in den folgenden Artikeln:
-    - [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
+    - [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](/intune/end-user-educate)
     - [Endbenutzer-Leitfaden für iOS- und Mac-Geräte](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macOS-device-with-intune)
 
 Wenn Ihr Unternehmen oder Ihre Organisation iOS-Geräte für Benutzer erwirbt, können diese Geräte ebenfalls zur Verwaltung als [unternehmenseigene iOS-Geräte](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) registriert werden.

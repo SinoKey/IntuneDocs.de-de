@@ -1,5 +1,5 @@
 ---
-title: Verhindern von Kompromittierungen im Unternehmen durch mobile Office 365-Apps | Microsoft-Dokumentation
+title: Verhindern von Kompromittierungen im Unternehmen durch mobile Office 365-Apps
 description: "Verwenden Sie Intune, um die Daten Ihres Unternehmens mithilfe von MAM-Richtlinien (mobile Anwendungsverwaltung) zu schützen, die dabei helfen, Verluste von Unternehmensdaten aus mobilen Office 365-Apps oder anderen branchenspezifischen Apps zu verhindern."
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: db350fbefe5ed9b1aa796ee8430000d33ebd1b4e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3f35dcb7168e9c76a8286a1425a26306914cfdb3
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -35,13 +35,13 @@ Möchten Sie Ihren Endbenutzern den Zugriff auf Ihre Office 365-Daten und Daten
 Wenn dies der Fall ist, können Sie mit Microsoft Intune entsprechende MAM-Richtlinien für mobile Office 365-Apps auf iOS- und Android-Geräten festlegen (einschließlich der Einschränkungen zum Ausschneiden/Kopieren/Einfügen, der Verhinderung von „Speichern unter“, dem Festlegen von PIN-Anforderungen sowie die Möglichkeit zur Remotezurücksetzung von Daten, die MAM-geschützt sind.  Dadurch werden Unternehmensdaten geschützt, ohne dass Benutzer ihre Geräte in einer MDM-Lösung registrieren müssen, wobei gleichzeitig eine hervorragende Endbenutzererfahrung mit mobilen Office-Apps bewahrt wird.
 
 ## <a name="how-do-i-do-it"></a>Wie gehe ich dabei vor?
-1.    Erhalten Sie grundlegende Kenntnisse zur [mobilen Anwendungsverwaltung von Intune /intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).
-2.    Erhalten Sie weitere Informationen dazu, [welche Schritte Sie ausführen müssen, bevor Sie im Azure-Portal Richtlinien für die Verwaltung von mobilen Apps (MAM, Mobile App Management) erstellen können](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune).
-3.    [Erstellen und Bereitstellen von MAM-Richtlinien](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) mit Intune.
+1.  Erhalten Sie grundlegende Kenntnisse zur [Funktionsweise der mobilen Anwendungsverwaltung (MAM) mit Intune](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).
+2.  Erhalten Sie weitere Informationen dazu, [welche Schritte Sie ausführen müssen, bevor Sie im Azure-Portal Richtlinien für die Verwaltung von mobilen Apps (MAM, Mobile App Management) erstellen können](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune).
+3.  [Erstellen und Bereitstellen von MAM-Richtlinien](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) mit Intune.
 
 ### <a name="additional-information"></a>Zusätzliche Informationen:
 - [Endbenutzererfahrung](/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) mit MAM-fähigen Apps
-- [Vorbereiten von branchenspezifischen Apps für MAM mit Intune](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [Vorbereiten von branchenspezifischen Apps für MAM mit Intune](/intune/apps-prepare-mobile-application-management)
 - <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank">Liste der Microsoft Intune-Anwendungspartner&rarr;</a>, die MAM-fähige Apps bereitstellen
 
 ## <a name="what-should-i-do-next"></a>Wie sollte ich als nächstes vorgehen?

@@ -1,5 +1,5 @@
 ---
-title: "Verwenden von Gruppen zum Verwalten von Benutzern und Geräten | Microsoft-Dokumentation"
+title: "Verwenden von Gruppen zum Verwalten von Benutzern und Geräten"
 description: "Erstellen und Verwalten von Gruppen mithilfe des Arbeitsbereichs „Gruppen“."
 keywords: 
 author: Mtillman
@@ -15,10 +15,10 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 095b8db0cb5097edca98d138edccafbe8e55b9ba
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 13c8946dd75d6bdede0e2a8941030250c6b12ef6
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -108,7 +108,7 @@ In gefilterten Gruppenansichten können Sie auf der Grundlage der Rolle eines Ad
 -   Sie möchten, dass Ihre IT-Administratoren Elemente nur für bestimmte Benutzer und Geräte bereitstellen können
 -   Sie möchten, dass Ihren IT-Administratoren nur die Gruppen angezeigt werden, die für den betreffenden Administrator relevant sind
 
-Sie können gefilterte Gruppenansichten für Dienstadministratoren in der Intune-Verwaltungskonsole konfigurieren. Weitere Informationen finden Sie unter [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune).
+Sie können gefilterte Gruppenansichten für Dienstadministratoren in der Intune-Verwaltungskonsole konfigurieren. Weitere Informationen finden Sie unter [Was Sie wissen sollten, bevor Sie Microsoft Intune starten](/intune/supported-devices-browsers).
 
 Nachdem Sie gefilterte Gruppenansichten für einen Dienstadministrator eingerichtet haben, kann der Administrator nur die von Ihnen angegebenen Gruppen sehen und auswählen, wenn er Software oder Richtlinien bereitstellt oder Berichte ausführt. Darüber hinaus werden dem Administrator auf diesen Seiten der Verwaltungskonsole keine Statusinformationen angezeigt:
 
