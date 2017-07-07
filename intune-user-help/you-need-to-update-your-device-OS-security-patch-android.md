@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 6b25c4551cd66e2e58b12c90ca9055c14b4e33cd
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Sie müssen das Betriebssystem Ihres Android-Geräts aktualisieren.
 
 Wenn Ihnen in einer Meldung angezeigt wird, dass die niedrigste zulässige Android-Sicherheitspatchebene nicht konfiguriert ist, müssen Sie ein Update installieren, damit Ihr Gerät weiterhin sicher ist. Ein _Patch_ zur Softwarewartung wird veröffentlicht, um dafür zu sorgen, dass die Software reibungslos ausgeführt wird und auf dem neuesten Stand ist. Ihr IT-Administrator fordert Sie auf, dieses Patch zu installieren, um sicherzustellen, dass Unternehmensdaten auf Ihrem Gerät so gut geschützt sind wie möglich. Der Speicherort des Sicherheitspatches richtet sich nach dem Typ des Samsung-Geräts.
@@ -43,4 +39,3 @@ Wenn Sie über ein Samsung-Gerät verfügen, öffnen Sie **Einstellungen** > **G
 
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-

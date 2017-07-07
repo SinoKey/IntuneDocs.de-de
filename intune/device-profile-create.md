@@ -1,12 +1,12 @@
 ---
-title: "Erstellen von Intune-Gerätekonfigurationsprofilen | Intune in Azure (Vorschau)"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie Intune-Gerätkonfigurationsprofile erstellen."
+title: "Erstellen von Intune-Gerätekonfigurationsprofilen"
+titleSuffix: Intune on Azure
+description: "In diesem Artikel erfahren Sie, wie Sie Intune-Gerätekonfigurationsprofile erstellen."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 05/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a719b3f53076a55f1e888a9ddf8e98c7074dd25f
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6df6813667241d3ad5f8768585f2e1a34f0fe6e3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-create-device-configuration-profiles-in-microsoft-intune"></a>Erstellen von Gerätekonfigurationsprofilen in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 1. Melden Sie sich beim Azure-Portal an.
@@ -34,7 +31,7 @@ ms.lasthandoff: 05/23/2017
 3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte konfigurieren** aus.
 2. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
 2. Wählen Sie auf dem Blatt mit der Profilliste **Profil erstellen** aus.
-3. Geben Sie auf dem Blatt **Profil erstellen** Folgendes an:
+3. Geben Sie auf dem Blatt **Profil erstellen** folgende Elemente an:
     - **Name:** Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
     - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein (optional).
     - **Plattform:** Wählen Sie den Plattformtyp für das Profil aus, das Sie erstellen möchten.
@@ -60,4 +57,3 @@ Wenn Sie fortfahren und dieses Profil Gruppen zuweisen möchten, lesen Sie unter
 
 ### <a name="next-steps"></a>Nächste Schritte
 Informationen zum Zuweisen von Geräteprofilen finden Sie unter [Zuweisen von Geräteprofilen mit Microsoft Intune](device-profile-assign.md).
-

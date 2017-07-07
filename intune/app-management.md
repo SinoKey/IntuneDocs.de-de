@@ -1,12 +1,12 @@
 ---
-title: Was ist App-Verwaltung? | Microsoft-Dokumentation
-titleSuffix: Intune Azure preview
-description: 'Intune in Azure (Vorschau): In diesem Thema lernen Sie die Grundlagen der App-Verwaltung mit Microsoft Intune kennen.'
+title: Was ist die App-Verwaltung?
+titleSuffix: Intune on Azure
+description: In diesem Thema lernen Sie die Grundlagen der App-Verwaltung mit Microsoft Intune kennen."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,22 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 56eefde5969f5426886c07bd6e9a548c8526e82e
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-microsoft-intune-app-management"></a>Was ist die Microsoft Intune App-Verwaltung?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Als IT-Administrator sind Sie wahrscheinlich beauftragt, sicherzustellen, dass die Endbenutzer Zugriff auf die Apps haben, die sie für ihre Arbeit benötigen. Dies kann aus verschiedenen Gründen eine große Herausforderung darstellen:
+Als IT-Administrator müssen Sie sicherstellen, dass die Endbenutzer Zugriff auf die Apps haben, die sie für ihre Arbeit benötigen. Dies kann aus verschiedenen Gründen eine große Herausforderung darstellen:
 - Es gibt eine Vielzahl von Geräteplattformen und App-Typen.
-- Sie müssen möglicherweise Apps auf unternehmenseigenen Geräten und auch auf Geräten von Benutzern verwalten.
-- Bei all dem müssen Sie außerdem sicherstellen, dass Ihr Netzwerk und Ihrer Daten geschützt bleiben. 
+- Sie müssen möglicherweise Apps auf unternehmenseigenen Geräten und auf Geräten von Benutzern verwalten.
+- Sie müssen sicherstellen, dass Ihr Netzwerk und Ihre Daten sicher bleiben.
 
 Darüber hinaus müssen Sie ggf. auch Apps auf Geräten, die nicht in Intune registriert sind, zuweisen und verwalten.
 
@@ -63,10 +60,9 @@ Intune bietet eine Reihe von Funktionen, die Ihnen dabei helfen, die benötigten
 
 <sup>2</sup> Gilt nur für Geräte, die von Intune verwaltet werden.
 
-
 ## <a name="how-to-get-started"></a>Erste Schritte
 
-Sie finden die meisten Informationen zu Apps im Workload **Mobile Apps**, auf die Sie wie folgt zugreifen können:
+Sie finden die meisten Informationen zu Apps in der Workload **Mobile Apps**, auf die Sie wie folgt zugreifen können:
 
 1. Melden Sie sich beim Azure-Portal an.
 2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
@@ -75,12 +71,13 @@ Sie finden die meisten Informationen zu Apps im Workload **Mobile Apps**, auf di
     ![Workload „Mobile Apps“](./media/apps-workload.png)
 
 ### <a name="manage"></a>Verwalten von
-- **Apps:** Hier können Sie die meisten Apps hinzufügen, zuweisen und überwachen. 
+- **Apps:** Mit diesem Knoten können Sie die meisten Apps hinzufügen, zuweisen und überwachen.
     - [Hinzufügen von Apps](apps-add.md)
     - [Zuweisen von Apps](apps-deploy.md)
     - [Überwachen von Apps](apps-monitor.md)
-- **App-Konfigurationsrichtlinien:** Verwenden Sie App-Konfigurationsrichtlinien, um Einstellungen anzugeben, die beim Ausführen einer App durch den Benutzer erforderlich sein können. Details hierzu finden Sie in den folgenden Abschnitten:
-    - [App-Konfigurationsrichtlinien](app-configuration-policies.md)
+- **App-Konfigurationsrichtlinien:** Verwenden Sie App-Konfigurationsrichtlinien, um Einstellungen anzugeben, die beim Ausführen einer App durch den Benutzer erforderlich sein können.
+    - [Richtlinien zur Konfiguration von iOS-Apps](app-configuration-policies-use-ios.md)
+    - [Richtlinien zur Konfiguration von Android-Apps](app-configuration-policies-use-android.md)
 - **App-Schutzrichtlinien:** Ermöglichen Ihnen das Zuordnen von Einstellungen für eine App zum Schutz der Unternehmensdaten, die diese verwendet. Sie können z.B. die Funktionen einer App zur Kommunikation mit anderen Apps einschränken oder erzwingen, dass der Benutzer eine PIN eingeben muss, um auf eine Unternehmens-App zuzugreifen.
     - [App-Schutzrichtlinien](app-protection-policies.md)
 - **Selektive App-Zurücksetzung:** Entfernt nur Unternehmensdaten von einem Benutzergerät, das Sie auswählen.
@@ -100,8 +97,7 @@ Weitere Informationen finden Sie unter [Überwachen von Apps](apps-monitor.md).
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Windows Store für Unternehmen:** Richten Sie die Integration in den Windows Store für Unternehmen ein. Anschließend können Sie erworbene Anwendungen mit Intune synchronisieren, zuweisen und Ihre Lizenznutzung verfolgen. 
+- **Windows Store für Unternehmen:** Richten Sie die Integration in den Windows Store für Unternehmen ein. Anschließend können Sie erworbene Anwendungen mit Intune synchronisieren, sie zuweisen und Ihre Lizenznutzung verfolgen.
     - [Per Volumenlizenz erworbene Apps aus dem Windows Store für Unternehmen](windows-store-for-business.md)
-- **Unternehmensportalbranding:** Passen Sie das Unternehmensportal mit Ihrem Unternehmensbranding an. 
+- **Unternehmensportalbranding:** Passen Sie das Unternehmensportal mit Ihrem Unternehmensbranding an.
     - [Konfiguration des Unternehmensportals](company-portal-app.md)
-

@@ -1,7 +1,7 @@
 ---
 title: "Was ist die Workload „Benutzer verwalten“?"
-titleSuffix: Intune Azure preview
-description: 'Intune in Azure (Vorschau): Erfahren Sie, wie Sie Benutzer mit Microsoft Intune und Azure anzeigen und verwalten.'
+titleSuffix: Intune on Azure
+description: Erfahren Sie, wie Sie Benutzer mit Microsoft Intune und Azure anzeigen und verwalten."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,19 +14,16 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 29c8f436d611e590ef1304d221e27da0ceef2450
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1cbdb92928411ff56e6740e83e081ee966fb7af8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-user-management"></a>Was ist die Benutzerverwaltung?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Wenn Sie noch keine Erfahrungen im Umgang mit Intune im Azure-Portal haben, sollten Sie beachten, dass Sie nicht mehr Intune-spezifische Gruppen erstellen. Intune verwendet wie viele andere Anwendungen Azure AD-Gruppen.
 
@@ -45,4 +42,3 @@ Suchen Sie zur Verwaltung von Gruppen im [Azure-Portal](https://portal.azure.com
 ## <a name="next-step"></a>Nächster Schritt
 
 [Erste Schritte mit Gruppen](groups-get-started.md)
-

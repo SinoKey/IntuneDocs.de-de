@@ -1,7 +1,7 @@
 ---
-title: "Festlegen der grundlegenden Datenverwaltung für Office 365-Apps – Intune in Azure (Vorschau)"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Unterstützende Dokumentation für den Assistenten zum Verwalten von Office 365-Apps"
+title: "Festlegen der grundlegenden Datenverwaltung für Office 365-Apps"
+titleSuffix: Intune on Azure
+description: "Unterstützende Dokumentation für den Assistenten zum Verwalten von Office 365-Apps."
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -16,16 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 639d045e036ecdc6ff40d6ae335d2c5109d9e420
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>So erleben Ihre Benutzer den grundlegenden Schutz in verwalteten Office 365-Apps
 
 Der Assistent zum **Verwalten von Office 365-Apps** erstellt eine App-Schutzrichtlinie für jede Geräteplattform.
@@ -129,9 +125,8 @@ Unter Android werden für Daten für Apps, die einer Intune-MAM-Richtlinie zugeo
 Sie können diese Richtlinieneinstellungen jederzeit an die Anforderungen Ihrer Organisation anpassen.
 
 ### <a name="how-can-i-view-and-edit-the-policies-created-by-the-wizard"></a>Wie kann ich die vom Assistenten erstellten Richtlinien anzeigen und bearbeiten?
-Wenn Sie diese Richtlinien oder andere Richtlinien, die Sie in der Vorschau von Intune in Azure erstellt haben, anzeigen oder aktualisieren möchten, wählen Sie im Dashboard **Apps verwalten** > **App-Schutzrichtlinien** aus. Die Liste der Richtlinien wird auf der rechten Seite geöffnet. Wählen Sie die gewünschte Richtlinie aus, um die Einstellungen anzuzeigen und zu bearbeiten. <br/>
+Wenn Sie diese Richtlinien oder andere Richtlinien, die Sie im Intune-Azure-Portal erstellt haben, anzeigen oder aktualisieren möchten, wählen Sie im Dashboard **Apps verwalten** > **App-Schutzrichtlinien** aus. Die Liste der Richtlinien wird auf der rechten Seite geöffnet. Wählen Sie die gewünschte Richtlinie aus, um die Einstellungen anzuzeigen und zu bearbeiten. <br/>
 ![Abbildung des Benutzeroberflächenpfads zum Anzeigen von Richtlinien](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Erfahren Sie mehr über [App-Schutzrichtlinien](https://docs.microsoft.comapp-protection-policy.md).
-

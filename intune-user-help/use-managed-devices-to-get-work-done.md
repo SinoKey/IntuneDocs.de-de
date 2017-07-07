@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
-ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-managed-devices-to-get-work-done"></a>Verwenden verwalteter Geräte zum Erledigen von Aufgaben
 Microsoft Intune ist eine Softwarekomponente, mit der Betriebe Geräte (z.B. Smartphones, Tablets und PCs), Apps und andere Unternehmensressourcen (z.B. E-Mail-Dienste) verwalten können. Damit erhalten Mitarbeiter Zugriff auf ihre Arbeitsdaten von praktisch überall auf nahezu jedem Gerät, während die Unternehmensdaten gleichzeitig geschützt werden.
 
@@ -101,4 +97,3 @@ Zunächst empfiehlt Microsoft, dass Sie versuchen, Ihr Problem selbst zu lösen.
 - [Behandeln häufig auftretender Probleme mit Ihrem Windows-Gerät](troubleshoot-your-device-windows.md)
 
 Wenn Sie Hilfe brauchen, können Sie auch unten einen Kommentar verfassen; bitte haben Sie jedoch Verständnis dafür, dass jeder Betrieb unterschiedliche Anforderungen hat, und wir deshalb möglicherweise nicht immer alle Fragen beantworten können. Wenn Sie sich an Ihren IT-Administrator wenden, erhalten Sie wahrscheinlich die schnellste und passendste Rückmeldung. Die entsprechenden Kontaktinformationen sollten Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) finden.
-

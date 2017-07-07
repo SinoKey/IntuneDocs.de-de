@@ -14,13 +14,11 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 0329720b6f02c718ef27a59e6efc5f3a76eed1c5
-ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK-Cordova-Plug-In
 
@@ -159,4 +157,3 @@ Nachdem die App zum ersten Mal gestartet wurde, sollten Sie ein Dialogfeld sehen
 * Wenn Sie die Liste der UTIs unter dem Knoten **CFBundleDocumentTypes** der **Info.plist**-Datei verändern, müssen Sie die Intune-UTIs im Bereich „Importierte-UTIs“ der gleichen PLIST-Datei löschen (Knoten **UTImportedTypeDeclarations**), bevor Sie mit der erneuten Erstellung fortfahren. Alle Intune-UTIs beginnen mit dem Präfix `com.microsoft.intune.mam`.
 
 * Wenn Sie das Intune App SDK für Cordova-Plug-In aus Ihrem Cordova-Projekt entfernen möchten, müssen Sie auch die iOS-Plattform entfernen und sie erneut hinzufügen, um einige der Intune-Konfigurationen in den XCODEPROJ- und PLIST-Dateien rückgängig zu machen.
-

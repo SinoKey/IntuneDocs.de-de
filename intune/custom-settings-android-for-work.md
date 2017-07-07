@@ -1,7 +1,7 @@
 ---
 title: "Benutzerdefinierte Intune-Profileinstellungen für Android for Work"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie benutzerdefinierte Intune-Profileinstellungen für Android for Work-Geräte erstellen."
+titleSuffix: Intune on Azure
+description: "Erfahren Sie, wie Sie benutzerdefinierte Intune-Profileinstellungen für Android for Work-Geräte erstellen.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: cd81e911dd1ab7c5d166ee14f2e184ebd54a18df
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Erstellen von benutzerdefinierten Intune-Profileinstellungen für Android for Work-Geräte
 
 Weisen Sie mithilfe der benutzerdefinierten Intune-Konfigurationsrichtlinie für Android for Work die OMA-URI-Einstellungen zu, die zum Steuern von Features auf Android for Work-Geräten verwendet werden können. Dies sind die Standardeinstellungen, die viele Hersteller von mobilen Geräten verwenden, um Gerätefunktionen zu steuern.

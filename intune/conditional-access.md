@@ -1,12 +1,12 @@
 ---
-title: Was ist bedingter Zugriff?
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie Bedingungen festlegen, die Benutzer und Geräte erfüllen müssen, um Zugriff auf Unternehmensressourcen in der Vorschau von Microsoft Intune in Azure zu erhalten."
+title: "Bedingter Zugriff über Intune"
+titleSuffix: Intune on Azure
+description: "Erfahren Sie, wie Sie die Bedingungen definieren, die Benutzer und Geräte erfüllen müssen, um Zugriff auf Unternehmensressourcen in Microsoft Intune zu erhalten.\""
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,44 +14,51 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8ab6d782460a857a0901abd9bd567365ee2e3f70
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: d3e6b720eeed65c81e5f3a4dbf06890ea8fd09ce
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="whats-conditional-access"></a>Was ist bedingter Zugriff?
 
-# <a name="what-is-conditional-access"></a>Was ist bedingter Zugriff?
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Dieses Thema beschreibt den bedingten Zugriff für Enterprise Mobility + Security (EMS) und erläutert anschließend häufige Szenarien mit bedingtem Zugriff bei Verwendung von Intune.
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+Der bedingte Zugriff von Enterprise Mobility + Security (EMS) ist kein eigenständiges Produkt, sondern eine Lösung, die für alle Dienste und Produkte im Rahmen von EMS gilt. Die Lösung bietet eine präzise Zugriffssteuerung, sodass Sie die Sicherheit Ihrer Unternehmensdaten gewährleisten und gleichzeitig dafür sorgen können, dass die Benutzer mit jedem Gerät und an jedem Standort optimal arbeiten können.
 
+Sie können Bedingungen definieren, die den Zugriff auf Ihre Unternehmensdaten basierend auf dem Ort, dem Gerät, dem Benutzerstatus und der Vertraulichkeit der Anwendung einschränken.
 
-In diesem Thema wird der bedingte Zugriff für Enterprise Mobility + Security beschrieben. Anschließend werden die Funktionen in Intune für den bedingten Zugriff erläutert.
+> [!NOTE] 
+> Der bedingte Zugriff kann auch auf [Office 365-Dienste](https://blogs.technet.microsoft.com/wbaer/2017/02/17/conditional-access-policies-with-sharepoint-online-and-onedrive-for-business/) angewendet werden.
 
-Beim bedingten Zugriff in Enterprise Mobility + Security (EMS) werden die Leistung von Azure Active Directory Premium und Windows Intune genutzt, damit Sie die Sicherheit Ihrer Unternehmensdaten optimal steuern können, während Ihre Mitarbeiter gleichzeitig alle Möglichkeiten erhalten, ihre Arbeit von jedem Gerät aus bestmöglich zu erledigen.
+![Architekturdiagramm für den bedingten Zugriff](./media/ca-diagram-1.png)
 
-Mithilfe des bedingten Zugriffs können Sie Bedingungen definieren, die den Zugriff auf Ihre Unternehmensdaten basierend auf dem Ort, dem Geräte- und Benutzerstatus und der Vertraulichkeit der Anwendung beschränken.
+## <a name="conditional-access-with-intune"></a>Bedingter Zugriff über Intune
 
-Aus der Geräteperspektive stellen Intune und Azure Active Directory zusammen sicher, dass nur verwaltete und konforme Geräte Zugriff auf E-Mail- und Office 365-Dienste erhalten. Sie können beispielsweise in Azure Active Directory eine Richtlinie festlegen, die nur Computern, die der Domäne angehören, oder mobilen Geräten, die in einer MDM-Anwendung wie Intune verwaltet werden, den Zugriff auf Office 365-Dienste erlaubt. Mithilfe von Intune können Sie ein Gerätekonformitätsprofil festlegen, das den Konformitätsstatus des Geräts auswertet. Der Konformitätsstatus wird an Azure Active Directory gemeldet, um die Richtlinie in Azure Active Directory zu erzwingen, wenn der Benutzer versucht, auf Ihre Unternehmensressourcen zuzugreifen. Informationen zur Gerätekonformität in Intune finden Sie unter [Was ist die Gerätekonformität?](device-compliance.md).
+Intune bietet Funktionen für die Konformität mobiler Geräte und für die Verwaltung mobiler Anwendungen, um die Lösung des bedingten Zugriffs für EMS zu unterstützen.
 
-Der bedingte Zugriff für Cloud-Apps, wie Exchange Online, kann über Azure Active Directory konfiguriert werden. Weitere Informationen finden Sie in [diesem Artikel](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
+![Intune und der bedingte Zugriff bei Verwendung von EMS](./media/intune-with-ca-1.png)
 
-## <a name="on-premises-conditional-access-in-intune"></a>Lokaler bedingter Zugriff in Intune
+Möglichkeiten der Verwendung des bedingten Zugriffs in Intune:
 
-Bedingter Zugriff kann in Intune zum Erlauben oder Sperren des Zugriffs auf **Exchange lokal** basierend auf der Geräteverwaltung und -registrierung verwendet werden.
+-   **Gerätebasierter bedingter Zugriff**
 
-Zur Bewertung der Gerätekonformität werden Einstellungen für Gerätekonformitätsprofile verwendet. Für den bedingten Zugriff wird diese Auswertung genutzt, um den Zugriff auf Exchange lokal zu erlauben oder zu sperren. Wenn der bedingte Zugriff in Kombination mit einem Gerätekonformitätsprofil verwendet wird, erhalten nur konforme Geräte Zugriff auf den Exchange lokal. Sie können für eine präzisere Steuerung erweiterte Einstellungen für den bedingten Zugriff festlegen: Zulassen oder Sperren bestimmter Plattformen oder sofortige Sperrung von Geräten, die nicht von Intune verwaltet werden.
+    -   Bedingter Zugriff für Exchange lokal
 
-Das Gerätekonformitätsprofil und der bedingte Zugriff werden dem Benutzer zugewiesen. Jedes Gerät, das der Benutzer für den Zugriff auf die Exchange lokal verwendet, wird auf Konformität überprüft. Bedenken Sie, dass für den Benutzer, der das Gerät verwendet, ein Konformitätsprofil bereitgestellt werden muss, damit das Gerät hinsichtlich der Konformität bewertet werden kann. Wenn keine Konformitätsrichtlinie für den Benutzer bereitgestellt wird, wird das Gerät als konform behandelt, und es werden keine Zugriffsbeschränkungen angewendet.
+    -   Bedingter Zugriff basierend auf der Netzwerkzugriffssteuerung
 
-Wenn Geräte die Bedingungen nicht erfüllen, erhält der Benutzer Anweisungen zum Registrieren des Geräts und zum Beheben des Problems, das die Konformität des Geräts verhindert.
+    -   Bedingter Zugriff basierend auf dem Geräterisiko
+
+    -   Bedingter Zugriff für Windows-PCs
+
+        -   Unternehmenseigene Geräte
+
+        -   Bring Your Own Device (BYOD)
+
+-   **App-basierter bedingter Zugriff**
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Erstellen einer Richtlinie für den bedingten Zugriff auf Exchange lokal](conditional-access-exchange-create.md)
-
-[Konfigurieren des bedingten Zugriffs in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
-
+[Gängige Möglichkeiten der Verwendung des bedingten Zugriffs in Intune](conditional-access-intune-common-ways-use.md)
