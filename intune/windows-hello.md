@@ -1,7 +1,7 @@
 ---
 title: So verwenden Sie Windows Hello for Business
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie eine Richtlinie zum Steuern der Verwendung von Windows Hello for Business auf verwalteten Geräten erstellen."
+titleSuffix: Intune on Azure
+description: "Erfahren Sie, wie Sie eine Richtlinie zum Steuern der Verwendung von Windows Hello for Business auf verwalteten Geräten erstellen."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,19 +15,16 @@ ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4d375a40283a5f3c1e9b7302d659739d4ca3d508
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0ef9e70dc918b485f893cf3193f7e76f6084a896
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-windows-hello-for-business"></a>Verwenden von Windows Hello for Business
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Erfahren Sie, wie Microsoft Intune in Windows Hello for Business (früher Microsoft Passport for Work) integriert wird. Dies ist eine alternative Anmeldemethode, die Active Directory oder ein Azure Active Directory-Konto verwendet, um ein Kennwort, eine Smartcard oder eine virtuelle Smartcard zu ersetzen.
 
@@ -100,4 +97,3 @@ Um sicherzustellen, dass Richtlinienkonflikte gelöst werden und dass die PIN-Ri
 
 ## <a name="further-information"></a>Weitere Informationen
 Weitere Informationen zu Microsoft Passport finden Sie im [Leitfaden](https://technet.microsoft.com/library/mt589441.aspx) in der Dokumentation zu Windows 10.
-

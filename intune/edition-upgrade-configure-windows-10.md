@@ -1,12 +1,12 @@
 ---
 title: Konfigurieren von Windows 10-Editionsupgrades mit Intune
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie mit Intune Windows 10-Geräte, die Sie verwalten, auf eine andere Edition aktualisieren."
+titleSuffix: Intune on Azure
+description: "In diesem Artikel erfahren Sie, wie Sie mit Intune Windows 10-Geräte, die Sie verwalten, auf eine andere Edition aktualisieren."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/14/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 59a29cee51f228c647a2491a2e452555ac5aba05
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 30cea0ecfa62e9bbc0200d15eff94782d48a81fa
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>Konfigurieren von Windows 10-Editionsupgrades in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 In diesem Thema erfahren Sie, wie Sie ein Profil für Windows 10 Editionsupgrades konfigurieren. Mit diesem Profil können Sie Geräte, auf denen eine der folgenden Windows 10-Versionen ausgeführt wird, automatisch auf eine andere Edition aktualisieren:
 
@@ -52,7 +49,7 @@ Bevor Sie beginnen, Geräte auf die neueste Version zu aktualisieren, benötigen
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Erstellen von Geräteprofilen mit Einstellungen für Geräteeinschränkungen
 
 1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
+2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
 2. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
 3. Wählen Sie auf dem Blatt „Profile“ die Option **Profil erstellen** aus.
@@ -68,5 +65,4 @@ Bevor Sie beginnen, Geräte auf die neueste Version zu aktualisieren, benötigen
 
 Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
 Wenn Sie fortfahren und dieses Profil Gruppen zuweisen möchten, lesen Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md) nach.
-
 

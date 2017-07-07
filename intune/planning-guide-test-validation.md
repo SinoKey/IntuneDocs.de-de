@@ -14,15 +14,12 @@ ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 4ea2974c4724564cd8f9972fdb238b06d1b100e6
-ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="intune-testing-and-validation"></a>Testen und Überprüfen von Intune
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -86,4 +83,3 @@ Der Test zur Anwendungsfallüberprüfung sollte durchgeführt werden, um sicherz
 ## <a name="next-steps"></a>Nächste Schritte
 
 Nachdem Sie Ihre Intune-Funktionen und -Anwendungsszenarien getestet und überprüft haben, sind Sie für den Intune-Rollout in die Produktion bereit. Weitere Informationen finden Sie unter [Weitere Ressourcen](planning-guide-resources.md).
-

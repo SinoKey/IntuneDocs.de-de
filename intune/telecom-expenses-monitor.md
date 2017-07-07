@@ -1,7 +1,7 @@
 ---
 title: Einrichten eines TEM-Diensts (Telecom Expense Management)
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Konfigurieren Sie den Saaswedo-TEM-Dienst für die Integration mit Intune."
+titleSuffix: Intune on Azure
+description: "Konfigurieren Sie den Saaswedo-TEM-Dienst für die Integration in Intune.\""
 keywords: Saaswedo
 author: nathbarn
 ms.author: nathbarn
@@ -15,16 +15,14 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 41ac9ad43b6ddaa2b78d588cb01b467d37f2178a
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: fe3735afccb30da9ea863943808e7cfad667899f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>Einrichten eines TEM-Diensts (Telecom Expense Management) in der Vorschau von Intune in Azure
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+# <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Einrichten eines TEM-Diensts (Telecom Expense Management) in Intune
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune ermöglicht es Ihnen, durch Datenverwendung auf firmeneigenen mobilen Geräten Telekommunikationsausgaben zu verwalten. Die TEM-Lösung Datalert des Drittanbieter-Softwareentwicklers Saaswedo wurde in Intune integriert, um diese Funktion zu aktivieren. Datalert ist eine TEM-Software, mit der Sie Ihre Telekommunikationsdatennutzung verwalten und kostenintensive und unerwartete Daten- und Roamingzuschläge für mit Intune verwaltete Geräte vermeiden können.
 
@@ -43,7 +41,7 @@ Bevor Sie den Datalert-Dienst mit Intune verwenden können, müssen Sie in der D
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- Ein Abonnement für Microsoft Intune und Zugriff auf das Azure-Portal, das sich derzeit in öffentlicher Vorschau befindet.
+- Ein Abonnement für Microsoft Intune und Zugriff auf das Azure-Portal.
 - Ein Abonnement des TEM-Diensts Datalert
 
 ## <a name="list-of-telecom-expense-management-providers"></a>Liste von TEM-Anbietern
@@ -108,9 +106,9 @@ Diese Kategorien werden Benutzern während der Registrierung angezeigt. Je nachd
 
 Um die Datalert-App in Intune für jede Plattform zu erstellen, gehen Sie wie folgt vor. iOS wird in den folgenden Schritten als Beispiel verwendet.
 
-1. Wählen Sie im Azure-Portal auf dem Blatt **Intune** die Option **Apps verwalten** aus.
+1. Wählen Sie im Azure-Portal auf dem Blatt **Intune** die Option **Mobile Apps** aus.
 
-2. Wählen Sie auf dem Blatt **Apps verwalten** die Option **Verwalten** > **Apps** aus.
+2. Wählen Sie auf dem Blatt **Mobile Apps** die Option **Verwalten** > **Apps** aus.
 
 3. Wählen Sie **Hinzufügen** aus, um eine App hinzuzufügen.
 
@@ -151,8 +149,8 @@ Der Datalert-Dienst ist jetzt aktiv, und es wird damit begonnen, die Datennutzun
 
 ## <a name="client-enrollment-experience"></a>Clientregistrierung
 Beachten Sie bei der Clientregistrierung folgende Themen:
--    [Registrieren Ihres iOS-Geräts im Telecom Expense Management](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
--    [Registrieren Ihres Android-Gerät im Telecom Expense Management](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
+-   [Registrieren Ihres iOS-Geräts im Telecom Expense Management](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+-   [Registrieren Ihres Android-Gerät im Telecom Expense Management](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turning-off-the-datalert-service"></a>Deaktivieren des Datalert-Diensts
 
@@ -173,4 +171,3 @@ Wenn Sie den Datalert-Dienst im Azure-Portal zu deaktivieren, geschieht Folgende
 Zum aktuellen Zeitpunkt sind Nutzungsberichte nur in der Datalert-Verwaltungskonsole von Saaswedo verfügbar.
 
 Die Anweisungen, denen Ihre Endbenutzer befolgen, um die Datalert-App zu installieren, werden bald verfügbar sein.
-

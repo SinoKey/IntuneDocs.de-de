@@ -1,12 +1,12 @@
 ---
 title: "Intune-Richtlinie zum Zulassen/Blockieren von Apps für Samsung KNOX"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erstellen eines benutzerdefinierten Profils zum Zulassen und Blockieren von Apps für Samsung KNOX Standard-Geräte"
+titleSuffix: Intune on Azure
+description: "Erstellen Sie ein benutzerdefiniertes Profil zum Zulassen und Blockieren von Apps für Samsung KNOX Standard-Geräte.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,14 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dea090e108d5ea023dc64d8d168b25d30b688cb2
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 8245bb3fa8f08e719df903a70f079f4fdf534ca5
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Verwenden von benutzerdefinierten Richtlinien zum Zulassen und Blockieren von Apps für Samsung KNOX Standardgeräte in Microsoft Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]Verwenden Sie die Verfahren in diesem Thema, um eine benutzerdefinierte Microsoft Intune-Richtlinie zu erstellen, die eine der folgenden Listen erstellt:
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]Verwenden Sie die Verfahren in diesem Thema, um eine benutzerdefinierte Microsoft Intune-Richtlinie zu erstellen, die eine der folgenden Listen erstellt:
 
 - Eine Liste von Apps, deren Ausführung auf dem Gerät blockiert wird. Die Ausführung der Apps in dieser Liste wird blockiert, auch wenn diese bereits vor der Anwendung der Richtlinie installiert waren.
 - Eine Liste von Apps, die Benutzer des Geräts aus dem Google Play Store installieren dürfen. Nur die aufgelisteten Apps können installiert werden. Es können keine anderen Apps aus dem Store installiert werden.
@@ -35,7 +32,7 @@ Diese Einstellungen können nur von Geräten verwendet werden, auf denen Samsung
 ## <a name="create-an-allowed-or-blocked-app-list"></a>Erstellen einer Liste mit zulässigen oder blockierten Apps
 
 1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
+2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
 2. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
 2. Wählen Sie auf dem Blatt mit der Profilliste die Option **Profil erstellen** aus.
@@ -49,9 +46,9 @@ Diese Einstellungen können nur von Geräten verwendet werden, auf denen Samsung
 
 - **Name:** Geben Sie **PreventStartPackages** ein.
 - **Beschreibung:** Geben Sie optional eine Beschreibung wie z.B. „Liste der Apps, deren Ausführung blockiert wird“ ein.
--     **Datentyp:** Wählen Sie in der Dropdownliste **Zeichenfolge** aus.
--     **OMA-URI:** Geben Sie **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** ein.
--     **Wert:** Geben Sie eine Liste mit den Namen der App-Pakete ein, die Sie zulassen möchten. Sie können **; : ,** oder **|** als Trennzeichen verwenden. (Beispiel: Paket1; Paket2;)
+-   **Datentyp:** Wählen Sie in der Dropdownliste **Zeichenfolge** aus.
+-   **OMA-URI:** Geben Sie **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** ein.
+-   **Wert:** Geben Sie eine Liste mit den Namen der App-Pakete ein, die Sie zulassen möchten. Sie können **; : ,** oder **|** als Trennzeichen verwenden. (Beispiel: Paket1; Paket2;)
 
 ### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>Für eine Liste von Apps, die Benutzer des Geräts aus Google Play Store installieren dürfen, wobei alle anderen Apps ausgeschlossen werden:
 - **Name:** Geben Sie **AllowInstallPackages** ein.
@@ -69,4 +66,3 @@ Die App-Einstellungen werden beim nächsten Einchecken jedes Zielgeräts angewen
 
 
 <!---## Assign the custom profile--->
-

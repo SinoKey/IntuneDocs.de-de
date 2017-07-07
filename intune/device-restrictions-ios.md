@@ -1,7 +1,7 @@
 ---
 title: "Einstellungen für Geräteeinschränkungen für iOS in Intune"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erfahren Sie etwas über die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf iOS-Geräten."
+titleSuffix: Intune on Azure
+description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf iOS-Geräten kennen."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,42 +15,39 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e860c99154f4695e5f4ad0122def8221e583c483
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 365b56082207c2110965681663432cce10f27c99
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für iOS-Geräte in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Allgemein
--     **Kamera:** Legen Sie fest, ob die Kamera des Geräts verwendet werden darf.     
--     **Übermittlung von Diagnosedaten:** Ermöglicht dem Gerät das Senden von Diagnosedaten an Apple.
--     **FaceTime:** Erlauben Sie die Verwendung der FaceTime-App auf dem Gerät.
--     **Bildschirmaufnahme:** Erlauben Sie dem Benutzer, den Bildschirminhalt als Bild zu erfassen.
--     **Siri:** Erlauben Sie die Verwendung des Sprach-Assistenten Siri auf dem Gerät.
-    -     **Siri bei Gerätesperre:** Erlauben Sie die Verwendung des Sprach-Assistenten Siri auf dem Gerät, während das Gerät gesperrt ist.
-    -     **Siri-Filter für anstößige Ausdrücke (nur überwacht):** Verhindert, dass Siri anstößige Ausdrücke diktiert oder verwendet.
-    -     **Abfrage von benutzergeneriertem Inhalt aus dem Internet durch Siri (nur überwacht):** Erlauben Sie Siri, für die Beantwortung von Fragen auf Websites zuzugreifen.
--     **Nicht vertrauenswürdige TLS-Zertifikate:** Erlauben Sie nicht vertrauenswürdige TLS-Zertifikate (Transport Layer Security) auf dem Gerät.
--     **Kontrollcenterzugriff bei gesperrtem Gerät:** Erlauben Sie dem Benutzer den Zugriff auf die Kontrollcenter-App, während das Gerät gesperrt ist.
--     **Benachrichtigungen bei Gerätesperre:** Erlauben Sie dem Benutzer den Zugriff auf die Benachrichtigungsansicht, ohne dass das Gerät entsperrt werden muss.
--     **Passbook bei Gerätesperre:** Erlauben Sie dem Benutzer den Zugriff auf die Passbook-App, während das Gerät gesperrt ist.
--     **Ansicht „Heute“ bei Gerätesperre:** Erlauben Sie dem Benutzer den Zugriff auf die Ansicht „Heute“, während das Gerät gesperrt ist.
--     **Vertrauen für Unternehmens-App:** Ermöglicht es dem Benutzer zu entscheiden, ob Apps, die nicht aus dem App Store heruntergeladen wurden, vertraut werden soll.
--     **AirDrop (nur überwacht):** Lässt die Verwendung von AirDrop zum Austauschen von Inhalten mit Geräten in der Nähe zu.
--     **Spotlight-Suche gibt Ergebnisse aus dem Internet zurück (nur überwacht):** Erlauben Sie der Spotlight-Suche, eine Verbindung mit dem Internet herzustellen, um weitere Ergebnisse bereitzustellen.
--     **Suche nach Wortdefinitionen (nur überwacht):** Aktivieren Sie das iOS-Feature, mit dem Sie ein Wort markieren und dessen Definition nachschlagen können.
--     **Tastaturwortvorschläge (nur überwacht):** Erlauben Sie Tastaturwortvorschläge für Wörter, die der Benutzer möglicherweise verwenden möchte.
--     **Autokorrektur (nur überwacht):** Ermöglicht dem Gerät die automatische Korrektur von falsch geschriebenen Wörter.
--     **Rechtschreibprüfung über Tastatur (nur überwacht):** Erlaubt die Verwendung der Rechtschreibprüfung auf dem Gerät.
--     **Tastenkombinationen (nur überwacht):** Erlaubt die Verwendung von Tastaturkurzbefehlen.
--     **Handgelenkerkennung für gekoppelte Apple Watch:** Wenn diese Funktion aktiviert ist, zeigt die Apple Watch keine Benachrichtigungen an, wenn sie nicht getragen wird.
+-   **Kamera:** Legen Sie fest, ob die Kamera des Geräts verwendet werden darf.   
+-   **Übermittlung von Diagnosedaten:** Ermöglicht dem Gerät das Senden von Diagnosedaten an Apple.
+-   **FaceTime:** Erlauben Sie die Verwendung der FaceTime-App auf dem Gerät.
+-   **Bildschirmaufnahme:** Erlauben Sie dem Benutzer, den Bildschirminhalt als Bild zu erfassen.
+-   **Siri:** Erlauben Sie die Verwendung des Sprach-Assistenten Siri auf dem Gerät.
+    -   **Siri bei Gerätesperre:** Erlauben Sie die Verwendung des Sprach-Assistenten Siri auf dem Gerät, während das Gerät gesperrt ist.
+    -   **Siri-Filter für anstößige Ausdrücke (nur überwacht):** Verhindert, dass Siri anstößige Ausdrücke diktiert oder verwendet.
+    -   **Abfrage von benutzergeneriertem Inhalt aus dem Internet durch Siri (nur überwacht):** Erlauben Sie Siri, für die Beantwortung von Fragen auf Websites zuzugreifen.
+-   **Nicht vertrauenswürdige TLS-Zertifikate:** Erlauben Sie nicht vertrauenswürdige TLS-Zertifikate (Transport Layer Security) auf dem Gerät.
+-   **Kontrollcenterzugriff bei gesperrtem Gerät:** Erlauben Sie dem Benutzer den Zugriff auf die Kontrollcenter-App, während das Gerät gesperrt ist.
+-   **Benachrichtigungen bei Gerätesperre:** Erlauben Sie dem Benutzer den Zugriff auf die Benachrichtigungsansicht, ohne dass das Gerät entsperrt werden muss.
+-   **Passbook bei Gerätesperre:** Erlauben Sie dem Benutzer den Zugriff auf die Passbook-App, während das Gerät gesperrt ist.
+-   **Ansicht „Heute“ bei Gerätesperre:** Erlauben Sie dem Benutzer den Zugriff auf die Ansicht „Heute“, während das Gerät gesperrt ist.
+-   **Vertrauen für Unternehmens-App:** Ermöglicht es dem Benutzer zu entscheiden, ob Apps, die nicht aus dem App Store heruntergeladen wurden, vertraut werden soll.
+-   **AirDrop (nur überwacht):** Lässt die Verwendung von AirDrop zum Austauschen von Inhalten mit Geräten in der Nähe zu.
+-   **Spotlight-Suche gibt Ergebnisse aus dem Internet zurück (nur überwacht):** Erlauben Sie der Spotlight-Suche, eine Verbindung mit dem Internet herzustellen, um weitere Ergebnisse bereitzustellen.
+-   **Suche nach Wortdefinitionen (nur überwacht):** Aktivieren Sie das iOS-Feature, mit dem Sie ein Wort markieren und dessen Definition nachschlagen können.
+-   **Tastaturwortvorschläge (nur überwacht):** Erlauben Sie Tastaturwortvorschläge für Wörter, die der Benutzer möglicherweise verwenden möchte.
+-   **Autokorrektur (nur überwacht):** Ermöglicht dem Gerät die automatische Korrektur von falsch geschriebenen Wörter.
+-   **Rechtschreibprüfung über Tastatur (nur überwacht):** Erlaubt die Verwendung der Rechtschreibprüfung auf dem Gerät.
+-   **Tastenkombinationen (nur überwacht):** Erlaubt die Verwendung von Tastaturkurzbefehlen.
+-   **Handgelenkerkennung für gekoppelte Apple Watch:** Wenn diese Funktion aktiviert ist, zeigt die Apple Watch keine Benachrichtigungen an, wenn sie nicht getragen wird.
 - **Kopplungskennwort für ausgehende AirPlay-Anforderungen anfordern:** Erfordert ein Kopplungskennwort, wenn der Benutzer AirPlay zum Streamen von Inhalten auf andere Apple-Geräte verwendet.
 - **Kontoänderung (nur überwacht):** Wenn diese Funktion blockiert ist, kann der Benutzer keine gerätespezifischen Einstellungen der iOS-Einstellungs-App ändern wie z.B. neue Gerätekonten erstellen, den Benutzernamen oder das Kennwort ändern.
 Dies gilt auch für Einstellungen, auf die über die iOS-Einstellungs-App zugegriffen werden kann wie z.B. E-Mail, Kontakte, Kalender, Facebook und Twitter. Dies gilt nicht für Apps mit Kontoeinstellungen, die nicht über die iOS-Einstellungs-App konfiguriert werden können wie z.B. die Microsoft Outlook-App.
@@ -77,17 +74,17 @@ Dies gilt auch für Einstellungen, auf die über die iOS-Einstellungs-App zugegr
 - **Konfigurationsprofiländerungen:** Erlauben Sie dem Benutzer die Installation von Konfigurationsprofilen.
 
 ## <a name="password"></a>Kennwort
--     **Kennwort erforderlich:** Der Endbenutzer muss ein Kennwort eingeben, um auf das Gerät zugreifen zu können.
--     **Einfache Kennwörter:** Erlauben Sie einfache Kennwörter wie 0000 oder 1234.
--     **Erforderlicher Kennworttyp:** Geben Sie den erforderlichen Typ des Kennworts an, z.B. nur numerisch oder alphanumerisch.
--     **Anzahl nicht alphanumerischer Zeichen im Kennwort:** Geben Sie die Anzahl von Symbolzeichen (wie **#** oder **@**) an, die im Kennwort enthalten sein müssen.
--     **Minimale Kennwortlänge:** Geben Sie die Mindestanzahl von Zeichen an, die das Kennwort enthalten muss.
--     **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird:** Gibt die Anzahl fehlerhafter Anmeldeversuche an, bevor das Gerät durch diese Einstellung zurückgesetzt wird.
--     **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts:**<sup>1</sup> Geben Sie an, wie lange das Gerät inaktiv bleiben kann, bevor der Benutzer sein Kennwort erneut eingeben muss.
--     **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung:**<sup>1</sup> Geben Sie die Anzahl der Minuten an, bevor die Anzeige des Geräts deaktiviert wird.
--     **Kennwortablauf (Tage):** Geben Sie die Anzahl der Tage an, bevor das Gerätekennwort geändert werden muss.
--     **Wiederverwendung vorheriger Kennwörter verhindern:** Geben Sie an, wie viele zuvor verwendete Kennwörter vom Gerät gespeichert werden.
--     **Entsperrung durch Fingerabdruck:** Erlauben Sie die Verwendung von Fingerabdrücken zum Entsperren kompatibler Geräte.
+-   **Kennwort erforderlich:** Der Endbenutzer muss ein Kennwort eingeben, um auf das Gerät zugreifen zu können.
+-   **Einfache Kennwörter:** Erlauben Sie einfache Kennwörter wie 0000 oder 1234.
+-   **Erforderlicher Kennworttyp:** Geben Sie den erforderlichen Typ des Kennworts an, z.B. nur numerisch oder alphanumerisch.
+-   **Anzahl nicht alphanumerischer Zeichen im Kennwort:** Geben Sie die Anzahl von Symbolzeichen (wie **#** oder **@**) an, die im Kennwort enthalten sein müssen.
+-   **Minimale Kennwortlänge:** Geben Sie die Mindestanzahl von Zeichen an, die das Kennwort enthalten muss.
+-   **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird:** Gibt die Anzahl fehlerhafter Anmeldeversuche an, bevor das Gerät durch diese Einstellung zurückgesetzt wird.
+-   **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts:**<sup>1</sup> Geben Sie an, wie lange das Gerät inaktiv bleiben kann, bevor der Benutzer sein Kennwort erneut eingeben muss.
+-   **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung:**<sup>1</sup> Geben Sie die Anzahl der Minuten an, bevor die Anzeige des Geräts deaktiviert wird.
+-   **Kennwortablauf (Tage):** Geben Sie die Anzahl der Tage an, bevor das Gerätekennwort geändert werden muss.
+-   **Wiederverwendung vorheriger Kennwörter verhindern:** Geben Sie an, wie viele zuvor verwendete Kennwörter vom Gerät gespeichert werden.
+-   **Entsperrung durch Fingerabdruck:** Erlauben Sie die Verwendung von Fingerabdrücken zum Entsperren kompatibler Geräte.
 
 <sup>1</sup> Wenn Sie die Einstellungen **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung** und **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts** konfigurieren, werden diese nacheinander angewendet. Wenn Sie beispielsweise den Wert für beide Einstellungen auf **5** Minuten einstellen, wird der Bildschirm automatisch nach 5 Minuten deaktiviert, und das Gerät wird nach weiteren 5 Minuten gesperrt. Wenn der Benutzer den Bildschirm jedoch manuell deaktiviert, wird die zweite Einstellung sofort angewendet. Im selben Beispiel wird das Gerät 5 Minuten später gesperrt, nachdem der Benutzer den Bildschirm deaktiviert hat.
 
@@ -95,19 +92,19 @@ Dies gilt auch für Einstellungen, auf die über die iOS-Einstellungs-App zugegr
 
 
 -   **App Store (nur überwacht):** Sperren Sie den Zugriff auf den App Store auf überwachten Geräte.
--     **Kennwort für Zugriff auf App Store:** Erzwingen Sie die Kennworteingabe durch Benutzer, bevor diese den App Store besuchen können.
--     **In-App-Käufe:** Erlauben Sie Einkäufe im Store in einer ausgeführten App.
--     **Automatische App-Downloads (nur überwacht)** -
--     **Anstößige iTunes-Musik-, Podcast- oder Nachrichteninhalte (nur überwachter Modus):** Erlauben Sie, dass das Gerät im Store auf nicht jugendfreie Inhalte zugreift.
--     **Als „Erotik“ gekennzeichneten Inhalt aus dem iBook Store herunterladen:** Erlauben Sie dem Benutzer das Herunterladen von Büchern aus der Kategorie „Erotik“.
--     **Anzeige von Unternehmensdokumenten in nicht verwalteten Apps:** Erlauben Sie die Anzeige von Unternehmensdokumenten in beliebigen Apps.<br>**Beispiel:** Sie möchten verhindern, dass Benutzer Dateien aus der OneDrive-App in Dropbox speichern. Legen Sie für diese Einstellung „Nein“ fest. Sobald das Gerät die Richtlinie empfängt (z. B. nach einem Neustart), ist kein Speichern mehr möglich.
--     **Anzeige nicht unternehmenseigener Dokumente in Unternehmens-Apps:** Erlauben Sie die Anzeige beliebiger Dokumente in verwalteten Apps.
--     **AirDrop als nicht verwaltetes Ziel behandeln:** Verwaltete Apps am Senden von Daten mit Airdrop hindern.
--     **Hinzufügen von Game Center-Freunden (nur überwachter Modus):** Erlauben Sie, dass der Benutzer im Game Center Freunde hinzufügt.
--     **Game Center (nur überwacht):** Sperren oder erlauben Sie die Verwendung der Game Center-App.
--     **Multiplayerspiele (nur überwachter Modus):** Erlauben Sie, dass der Benutzer Spiele für mehrere Spieler auf dem Gerät spielt.
--     **Bewertungsregion:** Wählen Sie die Bewertungsregion aus, für die Sie die zulässigen Downloads konfigurieren möchten, und wählen anschließend die zulässigen Bewertungen für **Filme** und **Fernsehsendungen** aus.
--     **Apps:** Wählen Sie die zulässigen Altersfreigaben von Apps aus, die Benutzer herunterladen dürfen. Sie können auch **Alle Apps** auswählen.
+-   **Kennwort für Zugriff auf App Store:** Erzwingen Sie die Kennworteingabe durch Benutzer, bevor diese den App Store besuchen können.
+-   **In-App-Käufe:** Erlauben Sie Einkäufe im Store in einer ausgeführten App.
+-   **Automatische App-Downloads (nur überwacht)** -
+-   **Anstößige iTunes-Musik-, Podcast- oder Nachrichteninhalte (nur überwachter Modus):** Erlauben Sie, dass das Gerät im Store auf nicht jugendfreie Inhalte zugreift.
+-   **Als „Erotik“ gekennzeichneten Inhalt aus dem iBook Store herunterladen:** Erlauben Sie dem Benutzer das Herunterladen von Büchern aus der Kategorie „Erotik“.
+-   **Anzeige von Unternehmensdokumenten in nicht verwalteten Apps:** Erlauben Sie die Anzeige von Unternehmensdokumenten in beliebigen Apps.<br>**Beispiel:** Sie möchten verhindern, dass Benutzer Dateien aus der OneDrive-App in Dropbox speichern. Legen Sie für diese Einstellung „Nein“ fest. Sobald das Gerät die Richtlinie empfängt (z. B. nach einem Neustart), ist kein Speichern mehr möglich.
+-   **Anzeige nicht unternehmenseigener Dokumente in Unternehmens-Apps:** Erlauben Sie die Anzeige beliebiger Dokumente in verwalteten Apps.
+-   **AirDrop als nicht verwaltetes Ziel behandeln:** Verwaltete Apps am Senden von Daten mit Airdrop hindern.
+-   **Hinzufügen von Game Center-Freunden (nur überwachter Modus):** Erlauben Sie, dass der Benutzer im Game Center Freunde hinzufügt.
+-   **Game Center (nur überwacht):** Sperren oder erlauben Sie die Verwendung der Game Center-App.
+-   **Multiplayerspiele (nur überwachter Modus):** Erlauben Sie, dass der Benutzer Spiele für mehrere Spieler auf dem Gerät spielt.
+-   **Bewertungsregion:** Wählen Sie die Bewertungsregion aus, für die Sie die zulässigen Downloads konfigurieren möchten, und wählen anschließend die zulässigen Bewertungen für **Filme** und **Fernsehsendungen** aus.
+-   **Apps:** Wählen Sie die zulässigen Altersfreigaben von Apps aus, die Benutzer herunterladen dürfen. Sie können auch **Alle Apps** auswählen.
 
 ## <a name="restricted-apps"></a>Eingeschränkte Apps
 
@@ -164,21 +161,21 @@ Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Da
 
 
 ## <a name="cellular"></a>Mobilfunk
--     **Datenroaming:** Erlauben Sie das Datenroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
--     **Globales Abrufen im Hintergrund beim Roaming:** Erlauben Sie, dass das Gerät Daten wie E-Mails beim Roaming in einem Mobilfunknetz abruft.
--     **Sprachwahlverfahren:** Erlauben Sie die Verwendung des Features „Sprachwahlverfahren“ auf dem Gerät.
--     **Sprachroaming:** Erlauben Sie das Sprachroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
--     **Änderungen an den App-Einstellungen zur Verwendung von Datenverbindungen (nur überwacht):** Erlauben Sie Benutzern die Steuerung, welche Apps Mobilfunkdaten verwenden dürfen.
+-   **Datenroaming:** Erlauben Sie das Datenroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
+-   **Globales Abrufen im Hintergrund beim Roaming:** Erlauben Sie, dass das Gerät Daten wie E-Mails beim Roaming in einem Mobilfunknetz abruft.
+-   **Sprachwahlverfahren:** Erlauben Sie die Verwendung des Features „Sprachwahlverfahren“ auf dem Gerät.
+-   **Sprachroaming:** Erlauben Sie das Sprachroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
+-   **Änderungen an den App-Einstellungen zur Verwendung von Datenverbindungen (nur überwacht):** Erlauben Sie Benutzern die Steuerung, welche Apps Mobilfunkdaten verwenden dürfen.
 
 ## <a name="cloud-and-storage"></a>Cloud und Speicher
--     **In iCloud sichern:** Erlauben Sie dem Benutzer, das Gerät in iCloud zu sichern.
--     **Dokumentsynchronisierung in iCloud (nur überwachter Modus):** Erlauben Sie die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher.
--     **Synchronisierung von Fotostreams in iCloud:** Ermöglicht Benutzern das Aktivieren von **Mein Photo Stream** auf ihrem Gerät, um Fotos mit iCloud zu synchronisieren, damit diese auf allen Geräten des Benutzers verfügbar sind.
--     **Verschlüsselte Sicherung:** Erzwingen Sie die Verschlüsselung von Gerätesicherungen.
--     **iCloud-Fotomediathek:** Bei Festlegung auf **Nein** wird die Verwendung der iCloud-Fotomediathek deaktiviert, die Benutzern das Speichern von Fotos und Videos in der Cloud ermöglicht.    Fotos, die nicht vollständig aus der iCloud-Fotomediathek auf das Gerät heruntergeladen wurden, werden bei Festlegung auf **Nein** vom Gerät entfernt.
--     **Synchronisierung verwalteter Apps mit der Cloud:** Erlauben Sie Apps, die Sie mit Intune verwalten, Daten mit dem iCloud-Konto des Benutzers zu synchronisieren.
--     **Streaming freigegebener Fotos:** Legen Sie diese Einstellung auf **Nein** fest, um die **iCloud-Fotofreigabe** auf dem Gerät zu deaktivieren.
--     **Aktivitätsfortsetzung:** Erlauben Sie dem Benutzer, die Arbeit, die er auf einem iOS-Gerät gestartet hat, auf einem anderen iOS- oder macOS-Gerät fortzusetzen (Übergabe).
+-   **In iCloud sichern:** Erlauben Sie dem Benutzer, das Gerät in iCloud zu sichern.
+-   **Dokumentsynchronisierung in iCloud (nur überwachter Modus):** Erlauben Sie die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher.
+-   **Synchronisierung von Fotostreams in iCloud:** Ermöglicht Benutzern das Aktivieren von **Mein Photo Stream** auf ihrem Gerät, um Fotos mit iCloud zu synchronisieren, damit diese auf allen Geräten des Benutzers verfügbar sind.
+-   **Verschlüsselte Sicherung:** Erzwingen Sie die Verschlüsselung von Gerätesicherungen.
+-   **iCloud-Fotomediathek:** Bei Festlegung auf **Nein** wird die Verwendung der iCloud-Fotomediathek deaktiviert, die Benutzern das Speichern von Fotos und Videos in der Cloud ermöglicht.    Fotos, die nicht vollständig aus der iCloud-Fotomediathek auf das Gerät heruntergeladen wurden, werden bei Festlegung auf **Nein** vom Gerät entfernt.
+-   **Synchronisierung verwalteter Apps mit der Cloud:** Erlauben Sie Apps, die Sie mit Intune verwalten, Daten mit dem iCloud-Konto des Benutzers zu synchronisieren.
+-   **Streaming freigegebener Fotos:** Legen Sie diese Einstellung auf **Nein** fest, um die **iCloud-Fotofreigabe** auf dem Gerät zu deaktivieren.
+-   **Aktivitätsfortsetzung:** Erlauben Sie dem Benutzer, die Arbeit, die er auf einem iOS-Gerät gestartet hat, auf einem anderen iOS- oder macOS-Gerät fortzusetzen (Übergabe).
 
 ## <a name="autonomous-single-app-mode-supervised-only"></a>Modus der autonomen einzelnen App (nur überwacht)
 
@@ -242,36 +239,36 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 
 
 ## <a name="kiosk"></a>Kiosk
--     **Aktivierungssperre:** Aktivieren Sie die Aktivierungssperre auf überwachten iOS-Geräten.
--     **App, die im Kioskmodus ausgeführt wird:** Mit **Verwaltete App** können Sie eine in Intune hinzugefügte App auswählen, und mit **Store App** können Sie eine URL zu einer App im Store angeben. Andere Apps dürfen auf dem Gerät nicht ausgeführt werden. Weitere Informationen finden Sie unter „Angeben von URLs zu App-Stores“ weiter unten in diesem Thema.
--     **Touch-Unterstützung:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung **Touch-Unterstützung**, die den Benutzer bei der Ausführung von Bildschirmgesten unterstützt, die ihm u.U. Schwierigkeiten bereiten.
--     **Farben umkehren:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung „Farben umkehren“, die die Anzeige für Benutzer mit eingeschränkter Sehfähigkeit anpasst.
--     **Mono-Audio:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung „Mono-Audio“.
--     **VoiceOver:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung **VoiceOver**, die den Text auf dem Gerätedisplay laut vorliest.
--     **Zoom:** Aktivieren oder deaktiviere Sie die Barrierefreiheitseinstellung **Zoom**, die dem Benutzer das Vergrößern des Inhalts auf dem Gerätedisplay durch Tippen ermöglicht.
--     **Automatische Sperre:** Aktivieren oder deaktivieren Sie die automatische Sperrung des Geräts.
--     **Ruftonschalter:** Aktivieren oder deaktivieren Sie die Stummschaltung (Ruftonschalter) am Gerät.
--     **Bildschirmdrehung:** Aktivieren oder deaktivieren Sie das Ändern der Bildschirmausrichtung, wenn der Benutzer das Gerät dreht.
--     **Standbytaste:** Aktivieren oder deaktivieren Sie die Standbytaste am Gerät.
--     **Touch:** Aktivieren oder deaktivieren Sie den Touchscreen des Geräts.
--     **Lautstärketasten:** Aktivieren oder deaktivieren Sie die Verwendung der Lautstärketasten am Gerät.
--     **AssistiveTouch-Steuerung:** Aktivieren oder deaktivieren Sie Touch-Unterstützungsanpassungen, mit denen der Benutzer die Touch-Unterstützung individuell verwenden kann.
--     **Steuerelement zum Umkehren von Farben:** Aktivieren oder deaktivieren Sie Farbumkehr-Anpassungen, mit denen der Benutzer die Funktion zur Farbumkehr individuell verwenden kann.
--     **Ausgewählten Text sprechen:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung „Auswahl vorlesen“, mit der der vom Benutzer ausgewählte Text laut vorgelesen werden kann.
--     **VoiceOver-Steuerelement:** Aktivieren oder deaktivieren Sie VoiceOver-Anpassungen, die dem Benutzer das Anpassen der VoiceOver-Funktion ermöglichen (z.B. wie schnell Bildschirmtext laut vorgelesen wird).
--     **Zoomsteuerelement:** Aktivieren oder deaktivieren Sie Zoomanpassungen zur individuellen Verwendung der Zoomfunktion.
+-   **Aktivierungssperre:** Aktivieren Sie die Aktivierungssperre auf überwachten iOS-Geräten.
+-   **App, die im Kioskmodus ausgeführt wird:** Mit **Verwaltete App** können Sie eine in Intune hinzugefügte App auswählen, und mit **Store App** können Sie eine URL zu einer App im Store angeben. Andere Apps dürfen auf dem Gerät nicht ausgeführt werden. Weitere Informationen finden Sie unter „Angeben von URLs zu App-Stores“ weiter unten in diesem Thema.
+-   **Touch-Unterstützung:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung **Touch-Unterstützung**, die den Benutzer bei der Ausführung von Bildschirmgesten unterstützt, die ihm u.U. Schwierigkeiten bereiten.
+-   **Farben umkehren:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung „Farben umkehren“, die die Anzeige für Benutzer mit eingeschränkter Sehfähigkeit anpasst.
+-   **Mono-Audio:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung „Mono-Audio“.
+-   **VoiceOver:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung **VoiceOver**, die den Text auf dem Gerätedisplay laut vorliest.
+-   **Zoom:** Aktivieren oder deaktiviere Sie die Barrierefreiheitseinstellung **Zoom**, die dem Benutzer das Vergrößern des Inhalts auf dem Gerätedisplay durch Tippen ermöglicht.
+-   **Automatische Sperre:** Aktivieren oder deaktivieren Sie die automatische Sperrung des Geräts.
+-   **Ruftonschalter:** Aktivieren oder deaktivieren Sie die Stummschaltung (Ruftonschalter) am Gerät.
+-   **Bildschirmdrehung:** Aktivieren oder deaktivieren Sie das Ändern der Bildschirmausrichtung, wenn der Benutzer das Gerät dreht.
+-   **Standbytaste:** Aktivieren oder deaktivieren Sie die Standbytaste am Gerät.
+-   **Touch:** Aktivieren oder deaktivieren Sie den Touchscreen des Geräts.
+-   **Lautstärketasten:** Aktivieren oder deaktivieren Sie die Verwendung der Lautstärketasten am Gerät.
+-   **AssistiveTouch-Steuerung:** Aktivieren oder deaktivieren Sie Touch-Unterstützungsanpassungen, mit denen der Benutzer die Touch-Unterstützung individuell verwenden kann.
+-   **Steuerelement zum Umkehren von Farben:** Aktivieren oder deaktivieren Sie Farbumkehr-Anpassungen, mit denen der Benutzer die Funktion zur Farbumkehr individuell verwenden kann.
+-   **Ausgewählten Text sprechen:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung „Auswahl vorlesen“, mit der der vom Benutzer ausgewählte Text laut vorgelesen werden kann.
+-   **VoiceOver-Steuerelement:** Aktivieren oder deaktivieren Sie VoiceOver-Anpassungen, die dem Benutzer das Anpassen der VoiceOver-Funktion ermöglichen (z.B. wie schnell Bildschirmtext laut vorgelesen wird).
+-   **Zoomsteuerelement:** Aktivieren oder deaktivieren Sie Zoomanpassungen zur individuellen Verwendung der Zoomfunktion.
 
 >[!NOTE]
 > Damit Sie ein iOS-Gerät für den Kioskmodus konfigurieren können, müssen Sie das Apple Configurator-Tool oder das Apple-Programm zur Geräteregistrierung verwenden, um das Gerät in den überwachten Modus zu versetzen. Weitere Informationen zum Apple Configurator-Tool finden Sie in der Apple-Dokumentation.
 >Wenn die angegebene iOS-App nach der Zuweisung des Profils installiert wird, wird das Gerät erst nach einem Neustart in den Kioskmodus versetzt.
 
 ## <a name="safari"></a>Safari
--     **Safari (nur überwachter Modus):** Geben Sie an, ob der Safari-Browser auf dem Gerät verwendet werden kann.
--     **AutoAusfüllen:** Erlauben Sie dem Benutzer, die Einstellungen für AutoAusfüllen im Browser zu ändern.
--     **Cookies:** Erlaubt dem Browser die Verwendung von Cookies.
--     **Javascript:** Erlaubt die Ausführung von Java-Skripts im Browser.
--     **Betrugswarnungen:** Erlaubt die Verwendung von Betrugswarnungen im Browser.
--     **Popups:** Aktivieren oder deaktivieren Sie den Popupblocker des Browsers.
+-   **Safari (nur überwachter Modus):** Geben Sie an, ob der Safari-Browser auf dem Gerät verwendet werden kann.
+-   **AutoAusfüllen:** Erlauben Sie dem Benutzer, die Einstellungen für AutoAusfüllen im Browser zu ändern.
+-   **Cookies:** Erlaubt dem Browser die Verwendung von Cookies.
+-   **Javascript:** Erlaubt die Ausführung von Java-Skripts im Browser.
+-   **Betrugswarnungen:** Erlaubt die Verwendung von Betrugswarnungen im Browser.
+-   **Popups:** Aktivieren oder deaktivieren Sie den Popupblocker des Browsers.
 
 
 ## <a name="domains"></a>Domains
@@ -289,4 +286,3 @@ Fügen Sie im Feld **Webdomänen-URL** eine oder mehrere URLs der Liste hinzu. W
 ### <a name="safari-password-auto-fill-domains"></a>Domänen für automatisches Ausfüllen des Safari-Kennworts
 
 Fügen Sie im Feld **Domänen-URL** eine oder mehrere URLs der Liste hinzu. Benutzer können nur Webkennwörter von URLs in dieser Liste speichern. Diese Einstellung gilt nur für den Safari-Browser und Geräte mit iOS 9.3 und höher im überwachten Modus. Wenn Sie keine URLs angeben, können Kennwörter von allen Websites gespeichert werden.
-

@@ -1,7 +1,7 @@
 ---
 title: "Erstellen eines WLAN-Profils über einen vorinstallierten Schlüssel"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Verwenden Sie ein benutzerdefiniertes Profil von Intune, um ein WLAN-Profil mit einem vorinstallierten Schlüssel zu erstellen."
+titleSuffix: Intune on Azure
+description: "Verwenden Sie ein benutzerdefiniertes Profil von Intune, um ein WLAN-Profil mit einem vorinstallierten Schlüssel zu erstellen."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,39 +15,36 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fe7d9e9998156825bfd9637c3f9d80df80b916cf
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: b56a6da04ae53a812a7d153de2618b72fa14ec44
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Verwenden eines benutzerdefinierten Geräteprofils von Microsoft Intune zum Erstellen eines WLAN-Profils über einen vorinstallierten Schlüssel
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Erfahren Sie, wie Sie mithilfe von **benutzerdefinierten Geräteprofilen** in Intune ein WLAN-Profil mit einem vorinstallierten Schlüssel erstellen. Dieses Thema umfasst außerdem ein Beispiel für die Erstellung eines EAP-basierten WLAN-Profils.
 
 > [!NOTE]
--    Möglicherweise ist es für Sie einfacher, den Code von einem Computer zu kopieren, der eine Verbindung mit dem jeweiligen Netzwerk herstellt, wie unten beschrieben.
+-   Möglicherweise ist es für Sie einfacher, den Code von einem Computer zu kopieren, der eine Verbindung mit dem jeweiligen Netzwerk herstellt, wie unten beschrieben.
 - Bei Android haben Sie auch die Möglichkeit, diesen von Johnathon Biersack bereitgestellten [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) zu verwenden.
--    Sie können mehrere Netzwerke und Schlüssel hinzufügen, indem Sie weitere OMA-URI-Einstellungen hinzufügen.
+-   Sie können mehrere Netzwerke und Schlüssel hinzufügen, indem Sie weitere OMA-URI-Einstellungen hinzufügen.
 -  Verwenden Sie für iOS den Apple Configurator auf einer Mac-Station, um das Profil einzurichten. Verwenden Sie alternativ diesen [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/), der von Johnathon Biersack bereitgestellt wird.
 
 
-1.    Um ein WLAN-Profil mit einem vorinstallierten Schlüssel für Android oder Windows oder ein EAP-basiertes WLAN-Profil zu erstellen, wählen Sie beim Erstellen eines Geräteprofils anstelle eines WLAN-Profils die Option **Benutzerdefiniert** für die jeweilige Geräteplattform aus.
+1.  Um ein WLAN-Profil mit einem vorinstallierten Schlüssel für Android oder Windows oder ein EAP-basiertes WLAN-Profil zu erstellen, wählen Sie beim Erstellen eines Geräteprofils anstelle eines WLAN-Profils die Option **Benutzerdefiniert** für die jeweilige Geräteplattform aus.
 
-2.    Geben Sie einen Namen und eine Beschreibung an.
-3.    Fügen Sie eine neue OMA-URI-Einstellung hinzu:
+2.  Geben Sie einen Namen und eine Beschreibung an.
+3.  Fügen Sie eine neue OMA-URI-Einstellung hinzu:
 
-   a.    Geben Sie einen Namen für diese WLAN-Netzwerkeinstellung ein.
+   a.   Geben Sie einen Namen für diese WLAN-Netzwerkeinstellung ein.
 
-   b.    Geben Sie eine Beschreibung für die OMA-URI-Einstellung ein, oder lassen Sie sie leer.
+   b.   Geben Sie eine Beschreibung für die OMA-URI-Einstellung ein, oder lassen Sie sie leer.
 
-   c.    **Datentyp:** Legen Sie **String** fest.
+   c.   **Datentyp:** Legen Sie **String** fest.
 
-   d.    **OMA-URI**:
+   d.   **OMA-URI**:
 
     - **Für Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Für Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -208,4 +205,3 @@ Sie können die XML-Datei auch aus einer vorhandenen WLAN-Verbindung erstellen:
     Es wird empfohlen, einen Computer zu verwenden, der nicht mit allzu vielen WLANs verbunden ist, weil Sie die einzelnen Profile durchsuchen müssen, um das richtige zu finden.
 3.     Durchsuchen Sie die XML-Dateien, um die Datei mit dem richtigen Namen zu finden.
 4.     Nachdem Sie die richtige XML-Datei gefunden haben, kopieren Sie den XML-Code in das Feld „Daten“ auf der Seite mit den OMA-URI-Einstellungen.
-

@@ -1,12 +1,12 @@
 ---
 title: So konfigurieren Sie Intune-E-Mail-Einstellungen
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie Intune konfigurieren, um Verbindungen mit Unternehmens-E-Mail-Diensten auf Geräten, die Sie verwalten, herzustellen."
+titleSuffix: Intune on Azure
+description: "In diesem Artikel erfahren Sie, wie Sie Intune konfigurieren, um Verbindungen mit Unternehmens-E-Mail-Diensten auf Geräten, die Sie verwalten, herzustellen."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8e22d95dbaa51e8a799c771ec2cfe34f09e527d8
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ae3e8ec9f9c791d536fe311bc4d30cae41b9482
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Konfigurieren von E-Mail-Einstellungen in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Mit E-Mail-Profilen können Sie Einstellungen, die zum Herstellen von Verbindungen und zum Synchronisieren mit Unternehmens-E-Mails erforderlich sind, für Geräte konfigurieren. Damit können Sie sicherzustellen, dass die Einstellungen für alle Ihre Geräte einheitlich sind. Außerdem reduzieren Sie damit Supportanfragen von Endbenutzern, die nicht die richtigen E-Mail-Einstellungen kennen.
 
@@ -45,19 +42,20 @@ Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfiguri
 ## <a name="create-a-device-profile-containing-email-settings"></a>Erstellen eines Geräteprofils mit E-Mail-Einstellungen
 
 1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
+2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
 2. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
 3. Wählen Sie auf dem Blatt „Profile“ die Option **Profil erstellen** aus.
 4. Geben Sie auf dem Blatt **Profil erstellen** einen **Namen** und eine **Beschreibung** für das E-Mail-Profil ein.
 5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform aus, auf die Sie E-Mail-Einstellungen anwenden möchten. Derzeit können Sie eine der folgenden Plattformen für die E-Mail-Geräteeinstellungen auswählen:
-    - **Android**
+    - **Android** (nur Samsung Android KNOX Standard)
+    - **Android for Work**
     - **iOS**
     - **Windows Phone 8.1**
     - **Windows 10 und höher**
 6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **E-Mail** aus.
 7. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. In den folgenden Themen finden Sie ausführliche Informationen zu den Einstellungen für die einzelnen Plattformen:
-    - [Einstellungen für Android](email-settings-android.md)
+    - [Android for Work- und Samsung KNOX Standard-Einstellungen](email-settings-android.md)
     - [Einstellungen für iOS](email-settings-ios.md)
     - [Einstellungen für Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Einstellungen für Windows 10](email-settings-windows-10.md)
@@ -88,10 +86,10 @@ Wenn für den Benutzer bereits ein E-Mail-Konto konfiguriert wurde, hängt das E
 
 - **iOS:** Basierend auf dem Hostnamen und der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt. Das doppelte E-Mail-Profil verhindert die Zuweisung eines Intune-Profils. In diesem Fall informiert das Unternehmensportal den Benutzer über die fehlende Konformität fordert ihn auf, das manuell konfigurierte E-Mail-Profil zu entfernen. Weisen Sie Ihre Benutzer an, sich vor der Installation eines E-Mail-Profils zu registrieren und die Einrichtung des Profils durch Intune zuzulassen, um das Problem zu vermeiden.
 - **Windows:** Basierend auf dem Hostnamen und der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt. Intune überschreibt das vorhandene vom Benutzer erstellte E-Mail-Profil.
-- **Android:** Basierend auf der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt und durch das Intune-Profil überschrieben.
+- **Android Samsung KNOX Standard** Basierend auf der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt und durch das Intune-Profil überschrieben.
 Da Android zum Identifizieren des Profils keinen Hostnamen verwendet, wird davon abgeraten, mehrere E-Mail-Profile für die Verwendung unter derselben E-Mail-Adresse auf unterschiedlichen Hosts zu erstellen, da sie sich gegenseitig überschreiben.
+- **Android for Work** Intune stellt zwei Android for Work-E-Mail-Profile bereit: eines für die E-Mail-App Gmail und eines für die E-Mail-App Nine Work. Diese Apps können im Google Play Store heruntergeladen werden; sie installieren ein Arbeitsprofil auf dem Gerät, sodass keine doppelten Profile erstellt werden. Beide Apps unterstützen Verbindungen mit Exchange. Stellen Sie auf den Geräten der Benutzer eine dieser E-Mail-Apps bereit, erstellen Sie das entsprechende Profil, und stellen Sie das entsprechende E-Mail-Profil bereit, um die E-Mail-Konnektivität zu ermöglichen. E-Mail-Apps, z.B. Nine Work, können möglicherweise kostenpflichtig sein. Lesen Sie die Lizenzierungsdetails der App oder kontaktieren Sie das Unternehmen, das die App bereitstellt, um Fragen zu stellen.
 
 ### <a name="update-an-email-profile"></a>Aktualisieren eines E-Mail-Profils
 
 Wenn Sie ein zuvor zugewiesenes E-Mail-Profil ändern, werden Endbenutzer möglicherweise in einer Meldung aufgefordert, die Neukonfiguration ihrer E-Mail-Einstellungen zu genehmigen.
-

@@ -1,12 +1,12 @@
 ---
 title: Konfigurieren und Verwalten von PKCS-Zertifikaten mit Intune
-titleSuffix: Intune Azure preview
-description: 'Intune in Azure (Vorschau): Erfahren Sie, wie Sie Ihre Infrastruktur konfigurieren und dann PKCS-Zertifikate mit Intune erstellen und zuweisen.'
+titleSuffix: Intune on Azure
+description: Erfahren Sie, wie Sie Ihre Infrastruktur konfigurieren und dann PKCS-Zertifikate mit Intune erstellen und zuweisen."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 04/22/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,14 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16fa26ae8ed06c4959807b30e430fd69fc503936
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 305a4d79aa81bd599369e72bc0cb307fdf452643
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Konfigurieren und Verwalten von PKCS-Zertifikaten mit Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Dieses Thema erläutert, wie Sie Ihre Infrastruktur konfigurieren und dann PKCS-Zertifikatprofile mit Intune erstellen und zuweisen.
 
@@ -118,7 +115,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 ### <a name="to-enable-support-for-the-certificate-connector"></a>So aktivieren Sie die Unterstützung für den Certificate Connector
 
 1.  Melden Sie sich beim Azure-Portal an.
-2.  Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
+2.  Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 3.  Wählen Sie auf dem Blatt **Intune** die Option **Geräte konfigurieren** aus.
 2.  Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Setup** > **Zertifizierungsstelle** aus.
 2.  Wählen Sie unter **Schritt 1** die Option **Aktivieren** aus.
@@ -190,7 +187,8 @@ Wählen Sie im Azure-Portal die Workload **Konfigurieren von Geräten** aus.
         - **Allgemeiner Name**
         - **Allgemeiner Name einschließlich E-Mail-Adresse**
         - **Allgemeiner Name als E-Mail-Adresse**
-    - **Alternativer Antragstellername:** Geben Sie an, wie die Werte für den alternativen Antragstellernamen (Subject Alternative Name, SAN) in der Zertifikatanforderung von Intune automatisch erstellt werden sollen. Beispiel: Wenn Sie einen Benutzerzertifikattyp ausgewählt haben, könnten Sie in den alternativen Antragstellernamen den Benutzerprinzipalnamen (User Principal Name, UPN) aufnehmen. Wenn das Clientzertifikat für die Authentifizierung bei einem Netzwerkrichtlinienserver verwendet werden soll, müssen Sie den alternativen Antragstellernamen auf den Benutzerprinzipalnamen festlegen.
+    - **Alternativer Antragstellername:** Geben Sie an, wie die Werte für den alternativen Antragstellernamen (Subject Alternative Name, SAN) in der Zertifikatanforderung von Intune automatisch erstellt werden sollen. Beispiel: Wenn Sie einen Benutzerzertifikattyp ausgewählt haben, könnten Sie in den alternativen Antragstellernamen den Benutzerprinzipalnamen (User Principal Name, UPN) aufnehmen. Wenn das Clientzertifikat für die Authentifizierung bei einem Netzwerkrichtlinienserver verwendet wird, legen Sie den alternativen Antragstellernamen auf den Benutzerprinzipalnamen fest. 
+    Sie können auch **Benutzerdefiniertes Azure AD-Attribut** auswählen. Wenn Sie diese Option auswählen, wird ein weiteres Dropdownfeld angezeigt. Im Dropdownfeld **Benutzerdefiniertes Azure AD-Attribut** finden Sie die Option **Abteilung**. Wenn Sie diese Option auswählen und die Abteilung in Azure AD nicht identifiziert wurde, wird das Zertifikat nicht ausgestellt. Um dieses Problem zu lösen, identifizieren Sie die Abteilung, und speichern Sie die Änderungen. Beim nächsten Einchecken des Geräts ist das Problem gelöst, und das Zertifikat wird ausgestellt. Die Notation für dieses Feld ist ASN.1. 
     - **Erweiterte Schlüsselverwendung:** (Android) Wählen Sie **Hinzufügen** aus, um Werte für den beabsichtigten Zweck des Zertifikats hinzuzufügen. In den meisten Fällen erfordert das Zertifikat **Clientauthentifizierung** , damit der Benutzer bzw. das Gerät auf einem Server authentifiziert werden kann. Sie können jedoch nach Bedarf weitere Schlüsselverwendungen hinzufügen. 
     - **Stammzertifikat:** (Android) Wählen Sie ein Profil für ein Stamm-Zertifizierungsstellenzertifikat aus, das Sie zuvor konfiguriert und dem Benutzer oder Gerät zugewiesen haben. Dieses Zertifizierungsstellenzertifikat muss das Stammzertifikat für die Zertifizierungsstelle sein, die das Zertifikat ausstellt, das Sie in diesem Zertifikatprofil konfigurieren. Dies ist das vertrauenswürdige Zertifikatprofil, das Sie zuvor erstellt haben.
 8. Navigieren Sie anschließend zurück zum Blatt **Profil erstellen**, und klicken Sie auf **Erstellen**.
@@ -208,4 +206,3 @@ Beachten Sie Folgendes, bevor Sie Gruppen Zertifikatprofile zuweisen:
 - Obwohl Sie jedes Profil separat zuweisen, müssen Sie auch die vertrauenswürdige Stammzertifizierungsstelle und das PKCS-Profil zuweisen. Andernfalls tritt bei der PKCS-Zertifikatrichtlinie ein Fehler auf.
 
 Informationen zum Zuweisen von Profilen finden Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md).
-

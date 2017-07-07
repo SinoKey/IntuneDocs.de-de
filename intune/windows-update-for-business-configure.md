@@ -1,6 +1,7 @@
 ---
-title: "Konfigurieren der Einstellungen von Windows Update for Business – Intune | Intune in Azure (Vorschau) | Microsoft-Dokumentation"
-description: "Intune in Azure (Vorschau): Hier erfahren Sie, wie Sie in Intune die Einstellungen von Windows Update for Business konfigurieren, um Updates für Windows 10-Geräte zu steuern."
+title: "Konfigurieren von Einstellungen für Windows Update for Business – Intune"
+titleSuffix: Intune on Azure
+description: "Erfahren Sie, wie Sie in Intune die Einstellungen von Windows Update for Business konfigurieren, um Updates für Windows 10-Geräte zu steuern."
 keywords: 
 author: dougeby
 ms.author: dougeby
@@ -13,18 +14,15 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b0bc3e557f303cd80c780634ba47b24405c327e1
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c05a6c007b147d81c4d98b708c0e0ae92392f0e0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-update-for-business-settings-with-microsoft-intune"></a>Konfigurieren der Einstellungen von Windows Update for Business mit Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Einführung
 Windows als Dienst ist die neue Methode zur Bereitstellung von Updates für Windows 10. Ab Windows 10 enthalten neue Funktions- und Qualitätsupdates die Inhalte aller früheren Updates. Das bedeutet, dass Ihre Windows 10-Geräte nach der Installation des neuesten Updates vollständig auf dem neuesten Stand sind. Im Gegensatz zu früheren Versionen von Windows müssen Sie nun anstelle eines Teilupdates das gesamte Update installieren.
@@ -87,7 +85,7 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
     - **Automatic update behavior** (Verhalten bei automatischen Updates): Wählen Sie aus, wie das Verhalten bei automatischen Updates verwaltet werden soll, um Updates zu suchen, herunterzuladen und zu installieren. Ausführliche Informationen finden Sie unter [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
     - **Quality update deferral period (days)** (Zurückstellung von Qualitätsupdates (in Tagen)): Geben Sie an, für wie viele Tage Qualitätsupdates zurückgestellt werden sollen. Der Bezug dieser Qualitätsupdates kann für bis zu 30 Tage (ab Veröffentlichung) zurückgestellt werden.  
 
-      Bei Qualitätsupdates handelt es sich in der Regel um Korrekturen und Verbesserungen für bereits vorhandene Windows-Funktionen. Sie werden üblicherweise am ersten Dienstag jedes Monats veröffentlicht, können von Microsoft jedoch auch zu einem anderen Zeitpunkt veröffentlicht werden. Sie können definieren, ob und wie lange der Bezug von Qualitätsupdates zurückgestellt werden soll, nachdem sie verfügbar geworden sind.
+    Bei Qualitätsupdates handelt es sich in der Regel um Korrekturen und Verbesserungen für bereits vorhandene Windows-Funktionen. Sie werden üblicherweise am ersten Dienstag jedes Monats veröffentlicht, können von Microsoft jedoch auch zu einem anderen Zeitpunkt veröffentlicht werden. Sie können definieren, ob und wie lange der Bezug von Qualitätsupdates zurückgestellt werden soll, nachdem sie verfügbar geworden sind.
     - **Feature update deferral period (days)** (Zurückstellung von Funktionsupdates (in Tagen)): Geben Sie an, für wie viele Tage Funktionsupdates zurückgestellt werden sollen. Der Bezug dieser Funktionsupdates kann für bis zu 180 Tage (ab Veröffentlichung) zurückgestellt werden.
 
     Bei Funktionsupdates handelt es sich in der Regel um neue Features für Windows. Nach dem Konfigurieren der Einstellung **Servicing Branch** (**CB** oder **CBB**) können Sie definieren, ob und wie lange der Bezug von Funktionsupdates zurückgestellt werden soll, nachdem sie von Microsoft über Windows Update verfügbar gemacht wurden.
@@ -148,4 +146,3 @@ Sie können für ein Gerät den Bezug von Funktions- oder Qualitätsupdates für
 > [!IMPORTANT]
 > Wenn Sie einen Aussetzungsbefehl erteilen, geht dieser bei den Geräten ein, wenn sie das nächste Mal mit dem Dienst kommunizieren. Es kann vorkommen, dass die Geräte vor der Kommunikation ein geplantes Update installieren.
 > Außerdem gilt: Wenn ein Zielgerät bei Erteilung des Aussetzungsbefehls ausgeschaltet ist, lädt es nach dem Einschalten unter Umständen geplante Updates herunter und installiert sie, bevor es mit Intune kommuniziert.
-

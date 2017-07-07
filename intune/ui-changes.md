@@ -1,7 +1,7 @@
 ---
 title: Wo ist meine Intune-Funktion in Azure jetzt?
-titleSuffix: Intune Azure preview
-description: 'Intune Azure-Preview: Hilft Ihnen bei der Suche nach Intune-Funktionen in der Azure-Konsole.'
+titleSuffix: Intune on Azure
+description: Hilft Ihnen bei der Suche nach Intune-Funktionen in der Azure-Konsole."
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -15,27 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9dd6e93108ffc46e9e52b6928cf513161d29f7a4
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1b9d1ac3930e29bc024ece7e6b9b11c91a4e14c1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Wo ist meine Intune-Funktion in Azure jetzt?
 Wir hatten die Chance, einige Aufgaben logischer zu organisieren, als wir Intune in das Azure-Portal umgezogen haben. Jedoch kommt jede Verbesserung mit der neuen Aufgabe, die neue Organisation kennenzulernen. Daher haben wir dieses Referenzhandbuch für diejenigen von Ihnen erstellt, die mit Intune in der klassischen Konsole bestens vertraut sind und sich nun fragen, wie Aufgaben in Intune unter Azure erledigt werden. Wenn dieser Artikel eine Funktion, die Sie suchen, nicht behandelt, hinterlassen Sie einen Kommentar am Ende des Artikels, damit wir ihn aktualisieren können.
 ## <a name="quick-reference-guide"></a>Handbuch mit Kurzübersicht
-|Funktion |Pfad in der klassischen Konsole|Pfad in Intune unter Azure| |------------||---------------|---------------|
-|Geräteregistrierungsprogramm (DEP) |Administrator > Verwaltung mobiler Geräte > iOS und Mac OS X > Programm zur Geräteregistrierung|[Geräteregistrierung > Apple-Registrierung > Enrollment Program-Token](#where-did-apple-dep-go) |
-|Geräteregistrierungsprogramm (DEP) |Administrator > Verwaltung mobiler Geräte > iOS und Mac OS X > Programm zur Geräteregistrierung |[Geräteregistrierung > Apple-Registrierung > Seriennummern des Registrierungsprogramms](#where-did-apple-dep-go) |
-|Registrierungsregeln |Administrator > Verwaltung mobiler Geräte > Registrierungsregeln|[Registrieren von Geräten > Registrierungseinschränkungen](#where-did-enrollment-rules-go) |
-|Gruppen nach iOS-Seriennummer |Gruppen > Alle Geräte > Vorabregistrierte Unternehmensgeräte > Nach iOS-Seriennummer|[Registrieren von Geräten > Apple-Registrierung > Seriennummern des Registrierungsprogramms](#where-did-corporate-pre-enrolled-devices-go) |
-|Gruppen nach iOS-Seriennummer |Gruppen > Alle Geräte > Vorabregistrierte Unternehmensgeräte > Nach iOS-Seriennummer| [Registrieren von Geräten | Apple-Registrierung > AC-Seriennummern](#where-did-corporate-pre-enrolled-devices-go)|
-|Gruppen nach IMEI (Alle Plattformen)| Gruppen > Alle Geräte > Vorabregistrierte Unternehmensgeräte > Nach IMEI (Alle Plattformen) | [Registrieren von Geräten > Bezeichner von Unternehmensgeräten](#by-imei-all-platforms)|
-| Profil für die Unternehmensgeräteregistrierung| Richtlinie > Unternehmensgeräteregistrierung | [Registrieren von Geräten > Apple-Registrierung > Enrollment Program Profiles (Profile für das Registrierungsprogramm)](#where-did-corporate-pre-enrolled-devices-go) |
-| Profil für die Unternehmensgeräteregistrierung | Richtlinie > Unternehmensgeräteregistrierung | [Registrieren von Geräten > Apple-Registrierung > AC-Profile](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | Administrator > Verwaltung mobiler Geräte > Android for Work | Registrieren von Geräten > Android for Work-Registrierung | | Geschäftsbedingungen | Richtlinie > Geschäftsbedingungen | Registrieren von Geräten > Geschäftsbedingungen |
+|Funktion |Pfad in der klassischen Konsole|Pfad in Intune unter Azure| |------------||---------------|---------------| |Geräteregistrierungsprogramm (DEP) |Administrator > Verwaltung mobiler Geräte > iOS und Mac OS X > Programm zur Geräteregistrierung|[Geräteregistrierung > Apple-Registrierung > Enrollment Program-Token](#where-did-apple-dep-go) | |Geräteregistrierungsprogramm (DEP)| Administrator > Verwaltung mobiler Geräte > iOS und Mac OS X > Programm zur Geräteregistrierung |[Geräteregistrierung > Apple-Registrierung > Seriennummern des Registrierungsprogramms](#where-did-apple-dep-go) | |Registrierungsregeln |Administrator > Verwaltung mobiler Geräte > Registrierungsregeln|[Registrieren von Geräten > Registrierungseinschränkungen](#where-did-enrollment-rules-go) | |Gruppen nach iOS-Seriennummer |Gruppen > Alle Geräte > Vorabregistrierte Unternehmensgeräte > Nach iOS-Seriennummer|[Registrieren von Geräten > Apple-Registrierung > Seriennummern des Registrierungsprogramms](#where-did-corporate-pre-enrolled-devices-go) | |Gruppen nach iOS-Seriennummer |Gruppen > Alle Geräte > Vorabregistrierte Unternehmensgeräte > Nach iOS-Seriennummer| [Registrieren von Geräten | Apple-Registrierung > AC-Seriennummern](#where-did-corporate-pre-enrolled-devices-go) | |Gruppen nach IMEI (Alle Plattformen)| Gruppen > Alle Geräte > Vorabregistrierte Unternehmensgeräte > Nach IMEI (Alle Plattformen) | [Registrieren von Geräten > Bezeichner von Unternehmensgeräten](#by-imei-all-platforms)| | Profil für die Unternehmensgeräteregistrierung| Richtlinie > Unternehmensgeräteregistrierung | [Registrieren von Geräten > Apple-Registrierung > Enrollment Program Profiles (Profile für das Registrierungsprogramm)](#where-did-corporate-pre-enrolled-devices-go) | | Profil für die Unternehmensgeräteregistrierung | Richtlinie > Unternehmensgeräteregistrierung | [Registrieren von Geräten > Apple-Registrierung > AC-Profile](#where-did-corporate-pre-enrolled-devices-go) | | Android for Work | Administrator > Verwaltung mobiler Geräte > Android for Work | Registrieren von Geräten > Android for Work-Registrierung | | Geschäftsbedingungen | Richtlinie > Geschäftsbedingungen | Registrieren von Geräten > Geschäftsbedingungen |
 
 
 ## <a name="where-do-i-manage-groups"></a>Wo verwalte ich Gruppen?
@@ -117,4 +106,3 @@ Um Verwechslungen zwischen den beiden Profiltypen und potenzielle nicht überein
 
 **Apple Configurator-Profile**
 ![Abbildung der Azure Apple Configurator-Profile](./media/16-azure-ac-profiles.png)
-

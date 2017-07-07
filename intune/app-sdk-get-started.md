@@ -14,15 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1d61432eafef67ca997d4e03d305e1c068ac5fd6
-ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Erste Schritte mit dem Microsoft Intune App SDK
 
 Dieser Leitfaden unterstützt Sie dabei, Ihre mobile App schnell für App-Schutzrichtlinien mit Microsoft Intune einzurichten. Unter Umständen ist es ratsam, sich zuerst in der [Übersicht über das Intune App SDK](app-sdk.md) mit den Vorteilen des Intune App SDK vertraut machen.
@@ -139,4 +136,3 @@ Das Badge ist ein Aktentaschensymbol (siehe die folgenden Beispiele):
 * Eine Bildbearbeitungsanwendung, die **EPS**-Dateien lesen kann, oder eine Adobe-Anwendung, die **AI**-Dateien lesen kann.
 
 * Auf der GitHub-Website von Microsoft Intune finden Sie die [Ressourcen und Anleitungen für Intune-App-Badges](https://github.com/msintuneappsdk/intune-app-partner-badge).
-
