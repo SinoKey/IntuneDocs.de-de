@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 2b2c86a46c671d35551a8485b5b1a70674168ac5
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-password-does-not-meet-your-it-admins-requirements"></a>Ihr Kennwort entspricht nicht den Anforderungen Ihres IT-Administrators
 
 Das Kennwort, mit dem Sie auf Unternehmens- oder Schulressourcen zugreifen, erfüllt mindestens eine der Anforderungen nicht, die Ihr IT-Administrator eingerichtet hat. Um das Problem zu beheben, befolgen Sie die Anweisungen, die auf Ihrem Gerät angezeigt werden. Beschreibungen der Probleme sind nachstehend aufgelistet.
@@ -51,4 +47,3 @@ Beschreibungen der PIN- bzw. Kennwortprobleme:
 - **Das Kennwort ist nicht komplex genug, um Anforderungen zu erfüllen**. Ihr IT-Administrator verlangt, dass Sie komplexere Zeichen in Ihrem Kennwort verwenden. Versuchen Sie es mit Zeichen wie Zahlen, Großbuchstaben und Symbolen wie $, % und #. Dies kann auch für andere Konten auf Ihrem Gerät gelten, überprüfen Sie also alle anderen Arbeitskonten, um sicherzustellen, dass Ihr Kennwort den Anforderungen entspricht, die von der IT für Ihr Gerät festgelegt wurden.
 
 Wenn Sie Probleme haben herauszufinden, wie Ihr Kennwort diese Anforderungen erfüllt, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-

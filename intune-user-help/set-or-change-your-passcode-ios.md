@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: fbb3143baa0063343d639d2df6101ebaec98ee65
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-or-change-your-passcode"></a>Festlegen oder Ändern der Kennung
 
 Wenn Ihr iOS-Gerät die Kennungsrichtlinie Ihres IT-Administrators nicht erfüllt, wird eine Meldung mit einer Kurzbeschreibung des Problems und einer Erläuterung angezeigt, was Sie tun müssen, damit Ihre Kennung die Anforderungen erfüllt.
@@ -46,4 +42,3 @@ Wenn Sie Probleme beim Einrichten einer Kennung haben, die die Kennungsanforderu
 3. Geben Sie eine neue Kennung ein, die die Anforderungen Ihres IT-Administrators erfüllt, und geben Sie sie zur Bestätigung nochmals ein.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-

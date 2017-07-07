@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
 ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.contentlocale: de-de
-ms.lasthandoff: 06/12/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrieren eines Windows 10-Geräts bei Intune
 
   > [!NOTE]
@@ -67,4 +63,3 @@ Wenn das Unternehmensportal nicht in der Liste der Apps angezeigt wird, gehen Si
 3. Wählen Sie in der Liste der Ergebnisse **Unternehmensportal** > **Installieren** aus.
 
 4. Wählen Sie **Installieren** oder **Kostenlos** aus. Es gibt keinen Unterschied zwischen diesen beiden Optionen für Sie. Die angezeigte Auswahl hängt davon ab, wie Ihr Unternehmen die Unternehmensportal-App eingerichtet hat.
-

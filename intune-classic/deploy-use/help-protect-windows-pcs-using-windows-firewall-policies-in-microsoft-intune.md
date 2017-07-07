@@ -1,5 +1,5 @@
 ---
-title: "Firewallrichtlinien für Windows-PCs | Microsoft-Dokumentation"
+title: "Firewallrichtlinien für Windows-PCs"
 description: "Intune kann Ihnen auf verschiedene Weisen helfen, die mit dem Intune-Client verwalteten PCs zu schützen, beispielsweise durch Konfigurieren der Windows-Firewall-Einstellungen."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d96fd3cf4d8963f1e79ef4ed27c1b826c8893b5f
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 13ec6a424c3665e48938315d4af11cc986a83339
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Unterstützen des Schutzes von Windows-PCs mithilfe von Windows-Firewall-Richtlinien in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune kann Ihnen auf verschiedene Weisen helfen, die mit dem Intune-Client verwalteten PCs zu schützen. Eine Möglichkeit sind Richtlinien, über die sich Windows-Firewall-Einstellungen auf PCs konfigurieren lassen.
 
 Falls Sie den Intune-Windows-PC-Client noch nicht auf Ihren Computern installiert haben, finden Sie unter [Installieren des Windows-PC-Clients mit Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) weitere Informationen.
@@ -135,4 +135,3 @@ Sie können Ausnahmen konfigurieren, die bestimmten durch die Firewall geleitete
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Richtlinien zum Schutz von Windows-PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

@@ -1,5 +1,5 @@
 ---
-title: "Schützen des Netzwerkzugriffs mit Cisco ISE | Microsoft-Dokumentation"
+title: "Schützen des Zugriffs auf Netzwerke mit Cisco ISE"
 description: "Verwenden Sie Cisco ISE mit Intune, damit Geräte bei Intune registriert sind und mit der Richtlinie kompatibel sind, bevor sie auf WLAN und VPN zugreifen, die von Cisco ISE gesteuert werden."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3dd45ace4016619a962fdd6836ddddad5d143f6
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 958108c4fbeb52803bf900a1a0f9f633716cddb8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Verwenden von Cisco ISE mit Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -157,7 +154,7 @@ Geben Sie in der Verwaltungskonsole von ISE diese Einstellungswerte ein:
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Informationen die zwischen Ihrem Intune-Mandanten und Ihrem Cisco ISE-Server freigegeben sind.
 Diese Tabelle listet die Informationen auf, die zwischen Ihrem Intune-Mandanten und Ihrem Cisco ISE-Server für die mit Intune verwalteten Geräte freigegeben sind.
 
-|Eigenschaft|    Beschreibung|
+|Eigenschaft|  Beschreibung|
 |---------------|------------------------------------------------------------|
 |complianceState|Die Zeichenfolge TRUE oder FALSE, die angibt, ob das Gerät kompatibel ist oder nicht.|
 |isManaged|Die Zeichenfolge TRUE oder FALSE, die angibt, ob der Client durch Intune verwaltet wird oder nicht.|
@@ -192,4 +189,3 @@ Es gibt auch [herunterladbare Registrierungsanweisungen](https://gallery.technet
 ### <a name="see-also"></a>Weitere Informationen:
 
 [Cisco Identity Services Engine-Administratorhandbuch, Version 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
-

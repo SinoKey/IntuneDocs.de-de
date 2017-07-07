@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Erstellen eines Arbeitsprofils und Registrieren Ihres Geräts bei Intune
 
 Durch die Registrierung Ihres Android-Geräts können Sie auf Geschäfts-E-Mails, -Apps und andere unternehmensspezifische Daten zugreifen. Im Rahmen der Anmeldung richten Sie ein Arbeitsprofil ein, das die privaten Daten auf Ihrem Gerät von Ihren Arbeitsdaten trennt. Ihr IT-Administrator kann nur das Arbeitsprofil verwalten, das Ihre Geschäftsdaten enthält. Ihr IT-Administrator kann nicht die privaten Daten auf dem Gerät verwalten. Weitere Informationen dazu finden Sie unter [Was geschieht beim Erstellen eines Arbeitsprofils?](what-happens-when-you-create-a-work-profile-android.md).
@@ -88,4 +83,3 @@ So erstellen Sie ein Arbeitsprofil:
     ![App-Seite Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-
