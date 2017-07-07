@@ -1,5 +1,5 @@
 ---
-title: Migrieren zu Azure Active Directory-Gruppen | Microsoft-Dokumentation
+title: Migrieren zu Azure Active Directory-Gruppen
 description: So werden Ihre Gruppen von Intune zu Azure AD migriert
 keywords: 
 author: robstackmsft
@@ -12,15 +12,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2296490a8c3984e79eeeb553d90591048ed46711
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 829057773e1ef40b179435b5b81bfcd9fc5c84f3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="a-new-way-of-using-groups-in-intune"></a>Eine neue Art der Verwendung von Gruppen in Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -92,4 +89,3 @@ Attribute sind Geräteeigenschaften, die bei der Definition von Gruppen verwende
 
 Richtlinien und Apps werden Gruppen wie bisher weiter bereitgestellt. Allerdings verwalten Sie diese Gruppen jetzt im Azure-Portal statt in der klassischen Intune-Konsole.
  
-

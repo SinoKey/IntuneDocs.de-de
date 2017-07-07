@@ -14,15 +14,12 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 09b7a1d4901a52845719e8d7094f665b12b91ab4
-ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Schützen von Apps und Daten mit Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -55,4 +52,3 @@ In Microsoft Office-Apps beispielsweise ist das Intune App SDK integriert. Die v
 Sie können auch [Ihre eigenen, individuellen branchenspezifischen Apps](/intune/apps-prepare-mobile-application-management) für die Verwendung mit MAM-Richtlinien aktivieren.
 
 Wenn ein Gerät verloren geht oder gestohlen wird oder der Benutzer nicht mehr für Ihr Unternehmen arbeitet, können Sie [Unternehmensdaten selektiv löschen](wipe-managed-company-app-data-with-microsoft-intune.md) und nur persönliche Daten auf dem Gerät belassen.
-

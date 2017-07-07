@@ -1,11 +1,11 @@
 ---
-title: "App-bezogenes VPN für Android mithilfe von Pulse Secure | Microsoft-Dokumentation"
+title: "App-bezogenes VPN für Android mithilfe von Pulse Secure"
 description: "Sie können ein App-bezogenes VPN-Profil für Android-Geräte erstellen, die von Intune verwaltet werden."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6786ac87c34e913ba71cd203f431f746df816459
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 262cc461d5c1790fdfb162d5453a9cebd48271c4
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>Verwenden einer benutzerdefinierten Richtlinie zum Erstellen eines Profils für ein App-bezogenes VPN für Android-Geräte
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -45,7 +42,7 @@ Nachdem Sie die Richtlinie auf Ihrem Android-Gerät oder für Ihre Benutzergrupp
 
 > [!NOTE]
 >
-> Notieren Sie den Namen des VPN-Profils für den nächsten Schritt. Beispiel: MeineApp-VPN-Profil.
+> Notieren Sie den Wert für **VPN-Verbindungsname (wird Benutzern angezeigt)**, den Sie beim Erstellen des VPN-Profils angegeben haben. Dieser wird im nächsten Schritt benötigt. Beispiel: **MeineApp-VPN-Profil**.
 
 ### <a name="step-2-create-a-custom-configuration-policy"></a>Schritt 2: Erstellen einer benutzerdefinierten Konfigurationsrichtlinie
 
@@ -55,7 +52,7 @@ Nachdem Sie die Richtlinie auf Ihrem Android-Gerät oder für Ihre Benutzergrupp
    4. Geben Sie einen Einstellungsnamen ein.
    5. Geben Sie für **Datentyp** **Zeichenfolge** an.
    6. Geben Sie für **OMA-URI** diese Zeichenfolge an: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**. *Name* ist der Name des VPN-Profils, den Sie in Schritt 1 notiert haben. Bei unserem Beispiel lautet die Zeichenfolge **./Vendor/MSFT/VPN/Profile/MeineApp-VPN-Profil/PackageList**.
-   7.    Erstellen Sie für **Wert** eine durch Semikolons getrennte Liste der Pakete, die dem Profil zugeordnet werden sollen. Wenn z.B. Excel und der Google-Browser Chrome die VPN-Verbindung verwenden sollen, geben Sie Folgendes ein: **com.microsoft.office.excel;com.android.chrome**.
+   7.   Erstellen Sie für **Wert** eine durch Semikolons getrennte Liste der Pakete, die dem Profil zugeordnet werden sollen. Wenn z.B. Excel und der Google-Browser Chrome die VPN-Verbindung verwenden sollen, geben Sie Folgendes ein: **com.microsoft.office.excel;com.android.chrome**.
 
 ![Beispiel einer benutzerdefinierten Richtlinie für ein App-bezogenes VPN für Android](./media/android_per_app_vpn_oma_uri.png)
 
@@ -80,4 +77,3 @@ Sie müssen *beide* Richtlinien für die *gleichen* Intune-Gruppen bereitstellen
     -   **So schließen Sie das Dialogfeld, ohne die Richtlinie bereitzustellen**: Wählen Sie **Abbrechen** aus.
 
 Eine Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeitsbereichs **Richtlinie** identifiziert Probleme mit der Richtlinie, die Ihre Aufmerksamkeit erfordern. Eine Statuszusammenfassung wird im Arbeitsbereich **Dashboard** angezeigt.
-

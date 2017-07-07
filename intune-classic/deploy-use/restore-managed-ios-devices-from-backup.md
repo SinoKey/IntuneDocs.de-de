@@ -14,15 +14,12 @@ ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7fc99a944000a8d5ecfc09ebc2e956e7c0f201c9
-ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="restore-intune-managed-ios-devices-from-backup"></a>Wiederherstellen von durch Intune verwalteten iOS-Geräten aus einer Sicherung
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -52,4 +49,3 @@ Starten Sie die Unternehmensportal-App, und heben Sie die Registrierung auf, ind
 
 ### <a name="for-users-who-will-use-both-their-old-and-new-devices"></a>Für Benutzer, die sowohl ihre alten als auch ihre neuen Geräte verwenden
 Löschen Sie die Cookies von Safari, indem Sie auf __Einstellungen__ > __Safari__ > __Verlauf und Websitedaten löschen__ tippen. Deinstallieren Sie die Unternehmensportal-App nach dem Löschen der Cookies, und installieren Sie diese erneut. Befolgen Sie anschließend die Standardschritte zum [Registrieren eines iOS-Geräts bei Intune](/intune-user-help/enroll-your-device-in-intune-ios).
-

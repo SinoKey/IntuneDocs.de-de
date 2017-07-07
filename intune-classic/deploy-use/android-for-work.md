@@ -1,5 +1,5 @@
 ---
-title: Informationen zu Android for Work | Microsoft-Dokumentation
+title: Informationen zu Android for Work
 description: "Intune verwaltet Android for Work, um zusätzliche Verwaltungsfunktionen und zusätzlichen Datenschutz zu bieten, wenn Benutzer ihre Android-Geräte für die Arbeit verwenden."
 keywords: 
 author: nathbarn
@@ -11,15 +11,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b5651e311bc3cd6619f9d7fd8782de4d5db4630c
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 12045c3e81686ad3e351cd5a85bc663832b87b2e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-android-for-work-devices-with-intune"></a>Verwalten von Android for Work-Geräten mit Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -88,4 +85,3 @@ Von Android for Work verwaltete WLAN-Profile werden entfernt, wenn das Gerät vo
 [Aktivieren der Android for Work-Registrierung](/intune-classic/deploy-use/set-up-android-for-work)
 
 [Bereitstellen von Apps für Android for Work-Geräte mit Intune](/intune-classic/deploy-use/android-for-work-apps)
-

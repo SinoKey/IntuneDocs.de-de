@@ -1,11 +1,11 @@
 ---
-title: "Kategorisieren von Geräten mithilfe der Gerätegruppenzuordnung | Microsoft-Dokumentation"
+title: "Kategorisieren von Geräten mithilfe der Gerätegruppenzuordnung"
 description: "Verwenden Sie die Gerätegruppenzuordnung in Microsoft Intune, um Geräte in von Ihnen definierte Kategorien zu gruppieren, damit Sie diese Geräte einfacher verwalten können."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/26/2016
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,12 @@ ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 618827ed6baf7a9dec6aef804f19bcbca08ed39f
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: ff136d430496392b6ca8e5b944820fe9e14553d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Kategorisieren von Geräten mithilfe der Gerätegruppenzuordnung in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -32,7 +30,7 @@ Die Gerätegruppenzuordnung verwendet den folgenden Workflow:
 1. Erstellen Sie Kategorien, die Benutzer beim Registrieren ihrer Geräte verwenden können.
 2. Sie erstellen für jede Kategorie, die Sie verwenden möchten, Gruppen, oder Sie verwenden vorhandene Gruppen. Je nach verwendeter Intune-Version handelt es sich dabei entweder um Intune-Gruppen oder um Azure Active Directory-Sicherheitsgruppen.
 2. Sie konfigurieren Regeln, mit denen die Kategorie zugeordnet wird, die Sie für die erstellte Gerätegruppe auswählen.
-3. Wenn Endbenutzer ihre Geräte registrieren, müssen sie eine Kategorie aus der Liste mit den von Ihnen konfigurierten Kategorien auswählen. Nach der Auswahl wird ihr Gerät automatisch zur entsprechenden Gruppe hinzugefügt, die Sie erstellt haben. Wenn ein Gerät bereits registriert ist, wird der Benutzer beim nächsten Aufruf der Unternehmensportal-App aufgefordert, eine Kategorie auszuwählen.
+3. Wenn Endbenutzer von iOS- und Android-Geräten ihre Geräte registrieren, müssen sie aus der Liste der von Ihnen konfigurierten Kategorien eine Kategorie auswählen. Um einem Windows-Gerät eine Kategorie zuzuweisen, müssen Endbenutzer die Unternehmensportal-Website verwenden (weitere Informationen dazu finden Sie in diesem Thema unter **Nach dem Konfigurieren von Gerätegruppen**).
 4. Dann können Sie Richtlinien und Apps für diese Gruppen bereitstellen.
 
 Sie können beliebige Gerätekategorien erstellen, z.B.:
@@ -86,8 +84,13 @@ Beispiel: (**device.deviceCategory -eq** "<*Gerätekategoriename, den Sie über 
 
 ## <a name="after-you-configure-device-groups"></a>Nach dem Konfigurieren von Gerätegruppen
 
-Wenn Benutzer ihre Geräte registrieren, wird ihnen eine Liste der von Ihnen konfigurierten Kategorien angezeigt. Nachdem sie eine Kategorie ausgewählt und die Registrierung abgeschlossen haben, wird ihr Gerät zu der Intune-Gerätegruppe oder Active Directory-Sicherheitsgruppe hinzugefügt, die der gewählten Kategorie entspricht.
+Wenn Endbenutzer von iOS- und Android-Geräten ihre Geräte registrieren, müssen sie aus der Liste der von Ihnen konfigurierten Kategorien eine Kategorie auswählen. Nachdem sie eine Kategorie ausgewählt und die Registrierung abgeschlossen haben, wird ihr Gerät zu der Intune-Gerätegruppe oder Active Directory-Sicherheitsgruppe hinzugefügt, die der gewählten Kategorie entspricht.
+
+Um einem Windows-Gerät eine Kategorie zuzuweisen, müssen Endbenutzer nach der Registrierung des Geräts die Unternehmensportal-Website (portal.manage.microsoft.com) verwenden. Greifen Sie auf einem Windows-Gerät auf die Website zu, und wechseln Sie zu **Menü** > **Meine Geräte**. Wählen Sie ein auf der Seite aufgeführtes registriertes Gerät aus, und wählen Sie dann eine Kategorie aus. 
+
+Nach Auswahl der Kategorie wird das Gerät automatisch zur entsprechenden Gruppe hinzugefügt, die Sie erstellt haben. Wenn ein Gerät bereits registriert wurde, bevor Sie Kategorien konfiguriert haben, wird dem Benutzer auf der Unternehmensportal-Website eine Benachrichtigung zu dem Gerät angezeigt, und der Benutzer wird aufgefordert, beim nächsten Zugriff auf die Unternehmensportal-App über ein iOS- oder Android-Gerät eine Kategorie auszuwählen.
+
+
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Verwenden von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
-

@@ -1,5 +1,5 @@
 ---
-title: Zugriff auf Unternehmens-E-Mail mithilfe von E-Mail-Profilen | Microsoft-Dokumentation
+title: Zugriff auf Unternehmens-E-Mail mithilfe von E-Mail-Profilen
 description: "Mithilfe der Einstellungen von E-Mail-Profilen können die Einstellungen für den E-Mail-Zugriff für bestimmte E-Mail-Clients auf mobilen Geräten konfiguriert werden."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 21eee53a4e3674dc28b01311a61dda0d71f9f7fa
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 87bf5c96ee29f8a39b875543c4f6a3731f3e604e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Konfigurieren des Zugriffs auf Unternehmens-E-Mail mithilfe von E-Mail-Profilen in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -36,11 +33,11 @@ Wenn zusätzliche Maßnahmen zum Schutz vor Datenverlust erforderlich sind, verw
 IT-Administratoren oder Benutzer können auch alternative E-Mail-Clients installieren (z.B. Microsoft Outlook für Android oder iOS). Diese E-Mail-Clients unterstützen möglicherweise keine E-Mail-Profile und können nicht mithilfe der E-Mail-Profile von Intune eingerichtet werden.  
 
 Sie können E-Mail-Profile verwenden, um den systemeigenen E-Mail-Client auf den folgenden Gerätetypen zu konfigurieren:
--    Windows Phone 8.1 und höher
--    Windows 10 (Desktopversion), Windows 10 Mobile und höher
--    iOS 8.0 und höher
--    Samsung KNOX Standard (4.0 und höher)
--    Android for Work (Drittanbieter-E-Mail-Apps, native E-Mail-App hat nur ein persönliches Profil)
+-   Windows Phone 8.1 und höher
+-   Windows 10 (Desktopversion), Windows 10 Mobile und höher
+-   iOS 8.0 und höher
+-   Samsung KNOX Standard (4.0 und höher)
+-   Android for Work (Drittanbieter-E-Mail-Apps, native E-Mail-App hat nur ein persönliches Profil)
 
 Sie können nicht nur ein E-Mail-Konto auf dem Gerät einrichten, sondern auch, wie viele E-Mails und welche Inhaltstypen synchronisiert werden sollen, abhängig vom Gerätetyp.
 
@@ -85,7 +82,7 @@ Das Kennwort ist nicht im E-Mail-Profil enthalten, sodass der Benutzer dieses be
 
     -   **E-Mail-Profil (Android for Work – Gmail)**
 
-    -    **E-Mail-Profil (Android for Work – Nine Work)**
+    -   **E-Mail-Profil (Android for Work – Nine Work)**
 
     Sie können nur benutzerdefinierte E-Mail-Profilrichtlinien erstellen. Empfohlene Einstellungen sind nicht verfügbar.
 
@@ -133,4 +130,3 @@ Eine Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeit
 > - Stellen Sie zusätzlich zu den entsprechenden E-Mail-Profilen auch die Gmail- oder die Nine Work-E-Mail-App für Android for Work bereit.
 > - Wenn Sie ein E-Mail-Profil von einem Gerät entfernen, bearbeiten Sie die Bereitstellung, und entfernen Sie alle Gruppen, in denen das Gerät Mitglied ist. Beachten Sie, dass Sie ein E-Mail-Profil nur dann auf diese Weise entfernen können, wenn es nicht das einzige E-Mail-Profil auf dem Gerät ist.
 > - Wenn Sie ein zuvor bereitgestelltes E-Mail-Profil ändern, werden Endbenutzer möglicherweise in einer Meldung aufgefordert, die Neukonfiguration ihrer E-Mail-Einstellungen zu genehmigen.
-

@@ -1,5 +1,5 @@
 ---
-title: "Schützen von E-Mail und Office 365 | Microsoft-Dokumentation"
+title: "Schützen von E-Mail und Office 365"
 description: "In diesem Thema wird beschrieben, wie Sie bedingten Zugriff verwenden können, damit nur kompatible Geräte auf Unternehmens-E-Mail und -daten in SharePoint Online und anderen Diensten zugreifen können."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fc89c1b5b502f00bab5ed02f6e7df6422241aeb1
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3405671130a58aa944d6c689264379a254face1d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Schützen des Zugriffs auf E-Mail, Office 365 und andere Dienste mit Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -51,7 +48,7 @@ Microsoft Intune und Azure Active Directory Premium (Azure AD) arbeiten nahtlos 
 
 - Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
-Stellen Sie darüber sicher, dass den Benutzern, für die Richtlinien für bedingten Zugriff gelten sollen, [Azure AD Premium- oder EMS-Lizenzen](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) zugewiesen wurden.
+Stellen Sie darüber sicher, dass den Benutzern, für die Richtlinien für bedingten Zugriff gelten sollen, [Azure AD Premium- oder EMS-Lizenzen](/intune/licenses-assign) zugewiesen wurden.
 
 ### <a name="device-compliance-settings"></a>Gerätekompatibilitätseinstellungen
 
@@ -83,4 +80,3 @@ Im Gegensatz zu anderen Intune-Richtlinien stellen Sie Richtlinien für bedingte
   - [Erstellen einer bedingten Zugriffsrichtlinie für SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Erstellen einer bedingten Zugriffsrichtlinie für Skype for Business](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   - [Erstellen einer bedingten Zugriffsrichtlinie für Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-

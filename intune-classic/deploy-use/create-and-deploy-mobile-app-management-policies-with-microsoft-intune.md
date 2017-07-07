@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Bereitstellen von MAM-Richtlinien | Microsoft-Dokumentation
+title: Erstellen und Bereitstellen von MAM-Richtlinien
 description: "Verwenden Sie die schrittweisen Anweisungen in diesem Thema zum Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d91ce526650166197520d37c82084c0ff141ec80
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ebb4b03307f8af7e1390c6db994d3120942fae89
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Erstellen und Bereitstellen von App-Schutzrichtlinien mit Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -109,9 +106,9 @@ Wenn Sie mit dem Erstellen einer Richtlinie wie im vorherigen Verfahren beschrie
 ## <a name="line-of-business-lob-apps-optional"></a>Verwaltete branchenspezifische Apps (Line-of-Business, LOB) (optional)
 
 Ab der Intune-Version 1703 haben Sie die Möglichkeit, LOB-Apps allgemein in Intune hinzuzufügen, wenn Sie eine neue App-Schutzrichtlinie erstellen. Dadurch erhalten Sie die Option, App-Schutzrichtlinien für LOB-Apps mithilfe des MAM SDK zu definieren, ohne dass Sie vollständige Berechtigungen für die App-Bereitstellung benötigen.
-
+/intune/app-sdk-get-started
 > [!TIP]
-> Sie können LOB-Apps in Intune hinzufügen, wenn Sie den [Intune App SDK](/intune-classic/develop/intune-app-sdk-get-started)-Workflow durchlaufen.
+> Sie können LOB-Apps in Intune hinzufügen, wenn Sie den [Intune App SDK](/intune/app-sdk-get-started)-Workflow durchlaufen.
 
 > [!IMPORTANT]
 > Wenn Benutzer nur über bestimmte Berechtigungen zum Bereitstellen von MAM-Apps verfügen und nicht über vollständige Berechtigungen zur App-Bereitstellung, womit Sie beliebige Apps in Intune bereitstellen könnten, könnten Sie den Intune SDK-Workflow nicht durchlaufen, jedoch können Sie noch immer ihre LOB-Apps über den Workflow zur Erstellung der MAM-App-Schutzrichtlinie hinzufügen.
@@ -164,8 +161,8 @@ Von der Richtlinie sind nur Benutzer betroffen, denen Intune-Lizenzen zugewiesen
 > Wenn Sie Intune mit Configuration Manager verwenden, um Ihre iOS- und Android-Geräte zu verwalten, wird die Richtlinie nur auf Benutzer in der Gruppe angewendet, die Sie ausgewählt haben. Mitglieder untergeordneter Gruppen, die in der ausgewählten Gruppe geschachtelt sind, sind nicht betroffen.
 
 Endbenutzer können die Apps aus dem App Store oder aus Google Play herunterladen. Weitere Informationen finden Sie in folgenden Quellen:
-* [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](/intune/end-user-mam-apps-android)
+* [Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird](/intune/end-user-mam-apps-ios)
 
 ##  <a name="change-existing-policies"></a>Ändern vorhandener Richtlinien
 Sie können eine vorhandene Richtlinie bearbeiten und sie auf die als Ziel festgelegten Benutzer anwenden. Wenn Sie vorhandene Richtlinien ändern, werden diese Änderungen für Benutzer, die bereits bei der App angemeldet sind, jedoch in den nächsten acht Stunden nicht wirksam.
@@ -219,6 +216,5 @@ Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finde
 [Überwachen der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Weitere Informationen:
-* [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](/intune/end-user-mam-apps-android)
+* [Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird](/intune/end-user-mam-apps-ios)

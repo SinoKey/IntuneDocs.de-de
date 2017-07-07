@@ -1,5 +1,5 @@
 ---
-title: "Überprüfen Ihres MAM-Setups | Microsoft Docs"
+title: "Überprüfen Ihres MAM-Setups"
 description: "In diesem Thema wird beschrieben, wie Sie testen und überprüfen können, ob Ihre MAM-Richtlinie ordnungsgemäß eingerichtet wurde und wie erwartet funktioniert."
 keywords: 
 author: andredm7
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ab04c85d6704d7011cc5d4ea2a9f83d78b5b73e3
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1e22be7b238cce195ee88c938b1cca009c0b21d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="validating-your-mobile-application-management-setup"></a>Überprüfen des Setups für die Verwaltung Ihrer mobilen Anwendungen
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -50,7 +47,7 @@ Wenn der Test zeigt, dass das Verhalten Ihrer MAM-Richtlinie nicht wie erwartet 
 ### <a name="what-to-do"></a>Aktion
 Hier sind die Aktionen, die basierend auf den Benutzerstatus durchgeführt werden müssen:
 
-- Wenn der Benutzer nicht für MAM lizenziert ist, weisen Sie dem Benutzer eine Intune-Lizenz zu, wie unter [Verwalten von Intune-Lizenzen](..\get-started\start-with-a-paid-subscription-to-microsoft-intune.md) beschrieben.
+- Wenn der Benutzer nicht für MAM lizenziert ist, weisen Sie dem Benutzer eine Intune-Lizenz zu, wie unter [Verwalten von Intune-Lizenzen](/intune/setup-steps) beschrieben.
 - Wenn der Benutzer nicht für Office 365 lizenziert ist, rufen Sie eine Lizenz für den Benutzer ab.
 - Wenn die App des Benutzer als **Nicht eingecheckt** aufgelistet ist, überprüfen Sie, ob Sie die MAM-Richtlinie für diese App ordnungsgemäß konfiguriert haben.
 - Stellen Sie sicher, dass diese Bedingungen auf alle Benutzer angewendet werden, auf die die MAM Richtlinien angewendet werden sollen.
@@ -59,4 +56,3 @@ Hier sind die Aktionen, die basierend auf den Benutzerstatus durchgeführt werde
 [Vorbereiten der Konfiguration von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

@@ -14,15 +14,12 @@ ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a57b1f51fabfdc8896ecbb5bfbe6422f40672b18
-ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="exchange-access-rules-for-mobile-devices"></a>Exchange-Zugriffsregeln für mobile Geräte
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -59,4 +56,3 @@ Im folgenden Verfahren wird das Erstellen einer benutzerdefinierten Regel beschr
 1. Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Richtlinie**&gt; **Exchange ActiveSync**.
 
 2.  Wählen Sie in der Liste **Plattformausnahmen** die Option **Regel hinzufügen** aus, und erstellen Sie dann eine benutzerdefinierte Regel. Wählen Sie **Speichern** aus.
-
