@@ -1,7 +1,7 @@
 ---
-title: "Behandeln von Problemen mit Geräteprofilen in Microsoft Intune | Microsoft-Dokumentation"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Wenn Sie nicht weiter kommen, verwenden Sie die Informationen in diesem Thema zum Lösen von Problemen mit Intune-Geräteprofilen."
+title: "Behandeln von Problemen mit Geräteprofilen in Microsoft Intune"
+titleSuffix: Intune on Azure
+description: "Wenn Sie nicht weiter kommen, verwenden Sie zur Behebung von Problemen mit Intune-Geräteprofilen die Informationen in diesem Thema."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,19 +15,16 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2f3586c4cbe37c44cc289ba3ea47bf127c150d35
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ed238f35927f17b20402f64586686246afabb900
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Behandeln von Problemen mit Geräteprofilen in Microsoft Intune
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Anhand der Informationen in diesem Thema können Sie bekannte Probleme im Zusammenhang mit Intune-Geräteprofilen behandeln.
 

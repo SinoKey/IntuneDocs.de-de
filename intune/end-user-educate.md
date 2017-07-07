@@ -13,16 +13,15 @@ ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 623ed8dda2b35a895e5a00c0639a647624f74e59
-ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 3f60ee6334ac8fa00dcaaa524485c5339b040381
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>So informieren sie Ihre Endbenutzer über Microsoft Intune
+
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Mit Microsoft Intune können Sie Ihre Belegschaft mit mobilen Geräten ausstatten, ohne dass Ihre Unternehmensdaten gefährdet werden. Zu einer erfolgreichen Bereitstellung tragen viele Schritte bei; darunter z.B. das Beurteilen von Intune durch eine [kostenlose Testversion](app-sdk.md).
 
@@ -57,15 +56,15 @@ Das Mindern dieser Ängste macht das Bereitstellen reibungsloser. Hier ist eine 
 
 * **Android**
   * [Ein Android-Gerät mit Intune verwenden](/intune-user-help/using-your-android-device-with-intune)
-  * [Wie Ihre Android-Benutzer Apps erhalten](/intune-classic/deploy-use/how-your-android-users-get-their-apps)
+  * [Wie Ihre Android-Benutzer Apps erhalten](end-user-apps-android.md)
 
 * **iOS**
   * [Ein iOS-Gerät mit Intune verwenden](/intune-user-help/using-your-ios-or-macos-device-with-intune)
-  * [Wie Ihre iOS-Benutzer Apps erhalten](/intune-classic/deploy-use/how-your-ios-users-get-their-apps)
+  * [Wie Ihre iOS-Benutzer Apps erhalten](end-user-apps-ios.md)
 
 * **Windows**
   * [Ein Windows-Gerät mit Intune verwenden](/intune-user-help/using-your-windows-device-with-intune)
-  * [Wie Ihre Windows-Benutzer Apps erhalten](/intune-classic/deploy-use/how-your-windows-users-get-their-apps)
+  * [Wie Ihre Windows-Benutzer Apps erhalten](end-user-apps-windows.md)
 
 * __Offen sein.__ Sagen Sie Ihren Benutzern genau, was Sie auf ihren Geräten verwalten werden. Sagen Sie ihnen, welche Daten Sie erfassen, und weshalb Sie diese erfassen. Informieren Sie sie darüber, wie Sie die erfassten Daten weiter verwenden. [Microsoft ist davon überzeugt, dass Sie ein Recht darauf haben, so viele Informationen wie möglich darüber zu erhalten, wie wir mit Ihren Kundendaten in der Cloud verfahren](https://www.microsoft.com/trustcenter/about/transparency). Außerdem sind wir davon überzeugt, dass Ihre Endbenutzerzufriedenheit mit Intune durch diese Strategie deutlich verbessert wird.
 
@@ -73,4 +72,3 @@ Das Mindern dieser Ängste macht das Bereitstellen reibungsloser. Hier ist eine 
 > Transparenz, wo immer es geht, ist wesentlich für den Erfolg Ihrer Bereitstellung.
 
 Ihr Ziel sollte es sein, Vertrauen und ausgezeichnete Kompatibilätsrichtlinien miteinander zu vereinen, um sicherzustellen, dass Endbenutzer wissen, dass Sie sich bestimmte persönliche Daten gar nicht anschauen *möchten*, selbst wenn Sie *könnten*, und dass Sie haften könnten, wenn Sie in ihre Privatsphäre eindringen. Bei besonders schwierigen Angestellten kann eine in Zusammenarbeit mit Ihrer Rechts- und Personalabteilung verfasste Stellungnahme helfen.
-

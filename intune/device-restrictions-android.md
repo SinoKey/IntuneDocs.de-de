@@ -1,12 +1,12 @@
 ---
 title: "Einstellungen für Geräteeinschränkungen für Android in Intune"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erfahren Sie etwas über die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Android-Geräten."
+titleSuffix: Intune on Azure
+description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Android-Geräten kennen."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/12/2017
+ms.date: 06/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,17 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3627b28b60908c225ce1797968123ce854a70a8b
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 44d80e1c72b58eccd4e69b1d561c7d651f39b3c3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Standardgeräteeinschränkungen für Android- und Samsung KNOX in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Verwenden Sie diese Einstellungen mit einer Einschränkungsrichtlinie für Android-Geräte, um Geräte in Ihrer Organisation zu konfigurieren.
 
 ## <a name="general"></a>Allgemein
 
@@ -39,11 +38,11 @@ ms.lasthandoff: 05/23/2017
 |**Übermittlung von Diagnosedaten**|Hindert den Benutzer an der Übermittlung von Diagnosedaten vom Gerät|Nein|Ja|
 |**Zurücksetzen auf Werkseinstellungen**|Ermöglicht dem Benutzer das Zurücksetzen des Geräts auf die Werkseinstellungen.|Nein|Ja|
 |**Geolocation**|Erlaubt dem Gerät die Nutzung von Standortinformationen (nur Samsung KNOX Standard)|Nein|Ja|
-|**Ausschalten**|Hiermit wird dem Benutzer das Ausschalten des Geräts gestattet.<br>Wenn diese Einstellung deaktiviert ist, funktioniert die Einstellung **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird** für Samsung KNOX Standard-Geräte nicht.|Nein|Ja|
+|**Ausschalten**|Hiermit wird dem Benutzer das Ausschalten des Geräts gestattet.<br>Wenn diese Option deaktiviert ist, kann die **Anzahl von fehlgeschlagenen Anmeldungen, bevor das Gerät zurückgesetzt wird** nicht festgelegt werden.|Nein|Ja|
 |**Bildschirmaufnahme**|Ermöglicht dem Benutzer, den Bildschirminhalt als Bild zu erfassen.|Nein|Ja|
 |**Sprach-Assistent**|Zulassen der Verwendung von Sprach-Assistent-Software auf dem Gerät.|Nein|Ja|
 |**YouTube**|Ermöglicht die Verwendung der YouTube-App auf dem Gerät|Nein|Ja|
-|**Freigegebene Geräte**|Konfigurieren Sie ein verwaltetes Samsung KNOX-Standardgerät als freigegeben. In diesem Modus können Endbenutzer sich auf dem Gerät mit ihren Azure AD-Anmeldeinformationen an- und wieder abmelden, und das Gerät wird zentral verwaltet, ob es sich in Gebrauch befindet oder nicht.<br>Wenn sich Endbenutzer anmelden, verfügen Sie über Zugriff auf Apps und erhalten zusätzlich alle Richtlinien, die ihnen zugewiesen sind. Wenn sich Benutzer abmelden, werden alle App-Daten gelöscht.|Nein|Ja|
+|**Freigegebene Geräte**|Konfigurieren Sie ein verwaltetes Samsung KNOX-Standardgerät als freigegeben. In diesem Modus können sich Endbenutzer des Geräts mit ihren Azure AD-Anmeldeinformationen an- und abmelden. Das Gerät wird weiterhin verwaltet, ganz gleich, ob es verwendet oder nicht.<br>Wenn sich Endbenutzer anmelden, verfügen Sie über Zugriff auf Apps und erhalten zusätzlich alle Richtlinien, die ihnen zugewiesen sind. Wenn sich Benutzer abmelden, werden alle App-Daten gelöscht.|Nein|Ja|
 
 ## <a name="password"></a>Kennwort
 
@@ -55,17 +54,17 @@ ms.lasthandoff: 05/23/2017
 |**Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung**|Gibt die Anzahl der inaktiven Minuten an, bevor das Gerät automatisch gesperrt wird.|Ja|Ja|
 |**Anzahl von fehlgeschlagenen Anmeldungen, bevor das Gerät zurückgesetzt wird**|Gibt die Anzahl zulässiger Anmeldefehler an, bevor das Gerät zurückgesetzt wird.|Ja|Ja|
 |**Kennwortablauf (Tage)**|Gibt die Anzahl der Tage an, bevor das Gerätekennwort geändert werden muss.|Ja|Ja|
-|**Erforderlicher Kennworttyp**|Gibt den erforderlichen Grad der Kennwortkomplexität an. Zudem wird angegeben, ob biometrische Geräte zulässig sind. Wählen Sie aus:<br><br>    -     **Gerätestandard**<br>-     **Biometrie auf niedriger Sicherheitsstufe**<br>    -     **Mindestens numerisch**<br>    -     **Numerisch komplex** (Sich wiederholende oder fortlaufende Ziffern wie „1111“ oder „1234“ sind nicht zulässig.)<sup>1</sup><br>    -     **Mindestens alphabetisch**<br>    -     **Mindestens alphanumerisch**<br>    -     **Mindestens alphanumerisch mit Symbolen**|Ja|Ja|
+|**Erforderlicher Kennworttyp**|Legt den erforderlichen Grad der Kennwortkomplexität fest und bestimmt, ob biometrische Geräte zulässig sind. Wählen Sie aus:<br><br>    -     **Gerätestandard**<br>-     **Biometrie auf niedriger Sicherheitsstufe**<br>    -     **Mindestens numerisch**<br>    -     **Numerisch komplex** (Sich wiederholende oder fortlaufende Ziffern wie „1111“ oder „1234“ sind nicht zulässig.)<sup>1</sup><br>    -     **Mindestens alphabetisch**<br>    -     **Mindestens alphanumerisch**<br>    -     **Mindestens alphanumerisch mit Symbolen**|Ja|Ja|
 |**Wiederverwendung vorheriger Kennwörter verhindern**|Hindert den Endbenutzer daran, ein bereits verwendetes Passwort erneut festzulegen.|Ja|Ja|
 |**Fingerabdruckentsperrung**|Erlaubt die Verwendung eines Fingerabdrucks zum Entsperren unterstützter Geräte|Nein|Ja|
-|**Smart Lock und andere Vertrauens-Agents**|Ermöglicht die Steuerung des Smart Lock-Features auf kompatiblen Android-Geräten (Samsung KNOX Standard 5.0 und höher). Diese Telefonfunktion wird manchmal als Vertrauens-Agent bezeichnet und ermöglicht Ihnen das Deaktivieren oder Umgehen des Kennworts für den Gerätesperrbildschirm, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet, (wenn es z. B. mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet). Mit dieser Einstellung können Sie verhindern, dass Benutzer Smart Lock konfigurieren.|Ja (5.0 und höher)|Ja|
+|**Smart Lock und andere Vertrauens-Agents**|Ermöglicht die Steuerung des Smart Lock-Features auf kompatiblen Android-Geräten (Samsung KNOX Standard 5.0 und höher). Diese Telefonfunktion wird manchmal als Vertrauens-Agent bezeichnet und ermöglicht Ihnen, das Kennwort für den Gerätesperrbildschirm zu deaktivieren oder zu umgehen, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet. Diese kann beispielsweise verwendet werden, wenn das Gerät mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet. Mit dieser Einstellung können Sie verhindern, dass Benutzer Smart Lock konfigurieren.|Ja (5.0 und höher)|Ja|
 |**Verschlüsselung**|Erfordert die Verschlüsselung der Dateien auf dem Gerät.|Ja|Ja|
 
-<sup>1</sup>Bevor Sie diese Einstellung Geräten zuweisen, stellen Sie sicher, dass die Unternehmensportal-App auf den Zielgeräten auf die neueste Version aktualisiert wurde.
+<sup>1</sup> Bevor Sie diese Einstellung Geräten zuweisen, aktualisieren Sie die Unternehmensportal-App auf diesen Geräten auf jeden Fall auf die neueste Version.
 
 Wenn Sie die Einstellung **Numerisch komplex** konfigurieren und sie dann einem Gerät mit einer früheren Android-Version als 5.0 zuweisen, gilt das folgende Verhalten.
-- Wenn die Unternehmensportal-App eine frühere Version als 1704 ausführt, wird keine PIN-Richtlinie auf das Gerät angewendet und eine Fehlermeldung im Intune-Portal angezeigt.
-- Wenn die Unternehmensportal-App auf die Version 1704 aktualisiert wurde, wird nur eine einfache PIN angewendet. Frühere Android-Versionen als 5.0 unterstützen diese Einstellung nicht. Es wird keine Fehlermeldung im Intune-Portal angezeigt.
+- Wenn die Unternehmensportal-App eine ältere Version als 1704 ausführt, wird keine PIN-Richtlinie auf das Gerät angewendet und eine Fehlermeldung wird im Intune-Portal angezeigt.
+- Wenn die Unternehmensportal-App die Version 1704 oder höher ausführt, kann nur eine einfache PIN angewendet werden. Frühere Android-Versionen als 5.0 unterstützen diese Einstellung nicht. Es wird keine Fehlermeldung im Intune-Portal angezeigt.
 
 
 ## <a name="google-play-store"></a>Google Play Store
@@ -77,10 +76,10 @@ Wenn Sie die Einstellung **Numerisch komplex** konfigurieren und sie dann einem 
 
 ## <a name="restricted-apps"></a>Eingeschränkte Apps
 
-In der Liste der eingeschränkten Apps können Sie eine der folgenden Listen konfigurieren:
+In der Liste der eingeschränkten Apps können Sie eine der folgenden Listen für Android-Geräte als auch Geräte, die dem Samsung KNOX Standard entsprechen, konfigurieren:
 
 **Unzulässige Apps:** Listet die (nicht von Intune verwalteten) Apps auf, die Benutzer nicht installieren und ausführen dürfen.
-**Genehmigte Apps:** Listet die Apps auf, die Benutzer installieren dürfen. Um die Kompatibilität zu gewährleisten, dürfen Benutzer keine Apps installieren, die in dieser Liste nicht aufgeführt sind. Apps, die von Intune verwaltet werden, sind automatisch zugelassen.
+**Genehmigte Apps:** Listet die Apps auf, die Benutzer installieren dürfen. Um die Kompatibilität zu gewährleisten, dürfen Benutzer keine anderen Apps installieren. Apps, die von Intune verwaltet werden, sind automatisch zugelassen.
 Geräteprofile, die Einstellungen für eingeschränkte Apps enthalten, müssen Benutzergruppen zugewiesen werden.
 
 Klicken Sie zum Konfigurieren einer Liste auf **Hinzufügen**. Geben Sie einen Namen Ihrer Wahl sowie die URL zur App im App-Store und optional den Herausgeber der App an.
@@ -91,13 +90,13 @@ Verwenden Sie zum Festlegen einer App-URL in der Liste kompatibler und nicht kom
 
 Suchen Sie im [Apps-Bereich von Google Play](https://play.google.com/store/apps) nach der App, die Sie verwenden möchten.
 
-Öffnen Sie die Installationsseite für die App, und kopieren Sie dann die URL in die Zwischenablage. Jetzt können Sie diese als URL in der Liste mit kompatiblen oder nicht kompatiblen Apps verwenden.
+Öffnen Sie die Installationsseite für die App, und kopieren Sie dann die URL in die Zwischenablage. Jetzt können Sie diese URL in der Liste mit kompatiblen oder nicht kompatiblen Apps verwenden.
 
-Beispiel: Suchen Sie in Google Play nach Microsoft Office Mobile. Die URL, die Sie verwenden, ist **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Beispiel: Suchen Sie in Google Play nach Microsoft Office Mobile. Verwenden Sie die URL **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
 ### <a name="additional-options"></a>Zusätzliche Optionen
 
-Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Datei im Format <*App-URL*>, <*App-Name*>, <*App-Herausgeber*> aufzufüllen. Sie können auch auf **Exportieren** klicken, um eine CSV-Datei mit dem Inhalt der Liste der eingeschränkten Apps im gleichen Format zu erstellen.        
+Sie können auch auf **Importieren** klicken, um die Liste über eine CSV-Datei abzurufen. Verwenden Sie das Format <*App-URL*>, <*App-Name*>, <*App-Herausgeber*>. Sie können auch auf **Exportieren** klicken, um eine CSV-Datei mit dem Inhalt der Liste der eingeschränkten Apps im selben Format zu erstellen.      
 
 ## <a name="browser"></a>Browser
 |||||
@@ -127,7 +126,7 @@ Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Da
 |**Sprachwahlverfahren**|Aktiviert oder deaktiviert die Verwendung des Features „Sprachwahlverfahren“ auf dem Gerät.|Nein|Ja|
 |**Sprachroaming**|Ermöglicht das Sprachroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.|Nein|Ja|
 |**Bluetooth**|Hiermit wird die Verwendung von Bluetooth auf dem Gerät zugelassen.|Nein|Ja|
-|**NFC**|Erlaubt Vorgänge, die NFC (Near Field Communication) verwenden, sofern dies vom Gerät unterstützt wird.|Nein|Ja|
+|**NFC**|Erlaubt Vorgänge, bei dem NFC (Near Field Communication) auf unterstützten Geräten zum Einsatz kommt.|Nein|Ja|
 |**WLAN**|Ermöglicht die Verwendung der WLAN-Funktionen des Geräts.|Nein|Ja|
 |**WLAN-Tethering**|Ermöglicht die Verwendung des WLAN-Tetherings auf dem Gerät.|Nein|Ja|
 
@@ -135,7 +134,6 @@ Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Da
 |||||
 |-|-|-|-|
 |Name der Einstellung|Details|Android 4.0+|Samsung KNOX Standard|
-|**Verwaltete App auswählen**|Wählen Sie die verwaltete App aus, die ausgeführt werden kann, wenn sich das Gerät im Kioskmodus befindet (Apps, die als Link zum Store angegeben sind, werden derzeit nicht unterstützt). Andere Apps dürfen auf dem Gerät nicht ausgeführt werden.|Nein|Ja|
+|**Verwaltete App auswählen**|Wählen Sie eine der folgenden Optionen aus, um eine oder mehrere Apps hinzuzufügen, die ausgeführt werden können, wenn sich das Gerät im Kiosk-Modus befindet. Es dürfen keine anderen Apps auf dem Gerät ausgeführt werden.<br><br>- **Hinzufügen von Apps nach Paketname**<br>- **Hinzufügen von Apps nach URL**<br>- **Hinzufügen von verwalteten Apps**|Nein|Ja|
 |**Schaltfläche für Standby des Bildschirms**|Aktiviert oder deaktiviert die Taste für Standby/Aktivierung des Bildschirms am Gerät.|Nein|Ja|
 |**Lautstärkeregler**|Aktiviert oder deaktiviert die Verwendung der Lautstärkeregler am Gerät.|Nein|Ja |
-

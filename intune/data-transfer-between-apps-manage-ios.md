@@ -1,12 +1,12 @@
 ---
-title: "Verwalten der Datenübertragung zwischen iOS-Apps | Intune in Azure (Vorschau)"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Dieses Thema erläutert die Verwendung des iOS-Features „Öffnen in“ und der Richtlinien für die Verwaltung mobiler Apps zur Verwaltung von Datenübertragungen zwischen Apps."
+title: "Verwalten der Datenübertragung zwischen iOS-Apps"
+titleSuffix: Intune on Azure
+description: "Dieses Thema erläutert die Verwendung des iOS-Features „Öffnen in“ und der Richtlinien für die Verwaltung mobiler Apps, um Datenübertragungen zwischen Apps zu verwalten.\""
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44747236ba1bda84ccb01f613e1702c536720a2c
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e3c588d2237f48501d78af364760acf1ef290639
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Verwalten der Datenübertragung zwischen iOS-Apps
 ## <a name="manage-ios-apps"></a>Verwalten von iOS-Apps
 Der Schutz der Unternehmensdaten umfasst die Sicherstellung, dass die Übertragung von Dateien auf Apps beschränkt ist, die von Ihnen verwaltet werden.  Sie können iOS-Apps auf folgende Weise verwalten:
@@ -36,7 +33,7 @@ Mit dem Feature **Open in Management** für iOS-Geräte kann die Übertragung vo
 ##  <a name="using-app-protection-with-ios-apps"></a>Verwenden von App-Schutz mit iOS-Apps
 App-Schutzrichtlinien können mit dem iOS-Feature **Open in Management** verwendet werden, um Unternehmensdaten auf folgende Weise zu schützen:
 
--   **Im Besitz der Mitarbeiter befindliche Geräte, die von keiner MDM-Lösung verwaltet werden:** Sie können die Einstellungen der App-Schutzrichtlinie so festlegen, dass die **App nur Daten an verwaltete Apps übertragen kann**. Der Endbenutzer kann die geschützte Datei nicht in einer App öffnen, die nicht richtlinienverwaltet ist.
+-   **Private Geräte von Mitarbeitern, die von keiner MDM-Lösung verwaltet werden:** Sie können die Einstellungen der App-Schutzrichtlinie so festlegen, dass die **App nur Daten an per Richtlinien verwaltete Apps übertragen darf**. Das Verhalten des Features „Öffnen in“ einer per Richtlinie verwalteten App zeigt nur andere per Richtlinie verwaltete Apps als Option für die Freigabe. Wenn ein Benutzer versucht, eine richtliniengeschützte Datei als Anhang von OneDrive in der nativen E-Mail zu senden, ist diese Datei nicht lesbar.
 
 -   **Von Intune verwaltete Geräte:** Für Geräte, die bei Intune registriert sind, wird die Datenübertragung zwischen Apps mit App-Schutzrichtlinien und anderen verwalteten iOS-Apps, die über Intune bereitgestellt wurden, automatisch zugelassen. Um die Datenübertragung zwischen Apps mit App-Schutzrichtlinien zu erlauben, aktivieren Sie die Einstellung **Übermittlung von Daten nur an verwaltete Apps zulassen**. Sie können das Feature **Open in Management** verwenden, um die Datenübertragung zwischen Apps zu steuern, die über Intune bereitgestellt werden.   
 
@@ -108,4 +105,3 @@ Kümmern Sie sich zuerst um das [Erstellen und Zuweisen von App-Schutzrichtlinie
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Was sind Intune-App-Schutzrichtlinien?](app-protection-policy.md)
-

@@ -1,7 +1,7 @@
 ---
 title: "Überwachen von Intune-Richtlinien zur Gerätekompatibilität"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Hier erfahren Sie, wie Sie Richtlinien zur Gerätekompatibilität überwachen."
+titleSuffix: Intune on Azure
+description: "Erfahren Sie, wie Sie Richtlinien zur Gerätekonformität überwachen.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,13 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9c57a45ed93b12c3b9fd9635bfa1aec465f63bbc
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6d0105e49bac2af0c241fe9203c411ef7f9e7d76
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
@@ -123,8 +121,6 @@ Wenn Sie auf die Schaltfläche **Filter** klicken, wird das Filterflyout mit fol
 
 Wenn Sie auf die Schaltfläche **Aktualisieren** klicken, wird das Flyout geschlossen, und die Ergebnisse werden gemäß den ausgewählten Filterkriterien aktualisiert.
 
-![Schaltfläche zum Aktualisieren des Filters](./media/idc-5.png)
-
 ##### <a name="device-details"></a>Gerätedetails
 
 Wenn Sie auf ein Gerät klicken, wird das Blatt **„Geräte“** geöffnet und das Gerät ausgewählt. Hier finden Sie weitere Details zur angewendeten Einstellung der Gerätekompatibilitätsrichtlinie für das Gerät.
@@ -154,4 +150,3 @@ In diesem Bericht können Sie sich auf der Grundlage der Kompatibilitätseinstel
 Wenn Sie auf die Kachel für die Einstellungskompatibilität und anschließend auf eine der Gerätekompatibilitätsrichtlinien-Einstellungen klicken, erhalten Sie für jedes Gerät, für das diese Gerätekompatibilitätsrichtlinien-Einstellung gilt, Informationen zum **Kompatibilitätsstatus**, **E-Mail-Alias des Benutzers**, **Gerätemodell** und **Standort**.
 
 ![Kachel für die Einstellungskompatibilität](./media/idc-11.png)
-

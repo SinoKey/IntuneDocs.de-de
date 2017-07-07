@@ -1,7 +1,7 @@
 ---
 title: "So erstellen Sie eine Konformitätsrichtlinie für Android"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie eine Konformitätsrichtlinie für Android-Geräte erstellen."
+titleSuffix: Intune on Azure
+description: "Erfahren Sie, wie Sie eine Konformitätsrichtlinie für Android-Geräte erstellen.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,21 +15,18 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 08d503fad2304b25e6feb7f41cf0b93546dd26fd
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: cc68bf4a52e5fcf9a8fbb3550a5bee814f4f46f0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Erstellen einer Gerätekonformitätsrichtlinie für Android-Geräte in Intune
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview-portal"></a>Erstellen einer Gerätekompatibilitätsrichtlinie für Android-Geräte über das Intune Azure-Vorschauportal
 
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-Gerätekompatibilitätsrichtlinien werden für jede Plattform über das Intune Azure-Vorschauportal erstellt. 
+Gerätekonformitätsrichtlinien werden für jede Plattform im Intune Azure-Portal erstellt. 
 
 - Weitere Informationen dazu, was eine Konformitätsrichtlinie ist, finden Sie unter dem Thema [Was ist Gerätekonformität](device-compliance.md).
 - Weitere Informationen zu den Voraussetzungen für das Erstellen einer Konformitätsrichtlinie finden Sie unter dem Thema [Erste Schritte mit der Gerätekonformität](device-compliance-get-started.md).
@@ -134,4 +131,3 @@ In der folgenden Tabelle erfahren Sie, wie nicht kompatible Einstellungen verwal
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

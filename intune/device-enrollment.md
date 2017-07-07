@@ -1,12 +1,12 @@
 ---
 title: "Was ist die Microsoft Intune Geräteregistrierung?"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Informationen zur Registrierung für iOS-, Android- und Windows-Geräte."
+titleSuffix: Intune on Azure
+description: "In diesem Artikel finden Sie Informationen zur Registrierung bei iOS-, Android- und Windows-Geräten."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,14 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 57bad4be991b61fe5212d340ab8d89cb6af3b0f7
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 927e2f21aad4ff39c9351bef68eb510e93410c37
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-device-enrollment"></a>Was ist die Geräteregistrierung?
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Dieses Thema beschreibt die Registrierung und die verschiedenen Methoden zum Registrieren von mobilen Geräten in der Intune-Verwaltung.
 
@@ -37,66 +34,67 @@ Wenn Sie Exchange ActiveSync entweder lokal oder in der Cloud gehostet verwenden
 
 ## <a name="overview-of-device-enrollment-methods"></a>Übersicht über die Geräteregistrierungsmethoden
 
-Die folgende Tabelle zeigt Intune-Registrierungsmethoden und die unterstützten Funktionen und Anforderungen der einzelnen Methoden. Die Funktionen und Anforderungen werden nachfolgend beschrieben. Die folgenden Begriffe werden in der Tabelle verwendet:
+Die folgende Tabelle bietet einen Überblick über die Intune-Registrierungsmethoden, die zusammen mit den jeweiligen Funktionen und Anforderungen nachfolgend beschrieben werden.
+**Legende**
 
-- **Zurücksetzen** – Gibt an, ob das Gerät zurückgesetzt werden muss, bevor Benutzer das Gerät registrieren können. Der Begriff „Zurücksetzen“ bedeutet die Zurücksetzung des Geräts auf Werkseinstellungen, wobei alle Daten entfernt werden. Weitere Informationen finden Sie unter [Verwenden des vollständigen oder selektiven Zurücksetzens von Geräten](devices-wipe.md).
-- **Affinität** – Ordnet Geräte Benutzern zu. Für die Verwaltung mobiler Geräte (MAM, Mobile Application Management) und den bedingten Zugriff auf Unternehmensdaten erforderlich. Weitere Informationen finden Sie auf der Seite [Registrieren firmeneigener iOS-Geräte in Microsoft Intune](device-enrollment-program-enroll-ios.md).
-- **Sperren**: Zeigt an, wenn Benutzer daran gehindert werden, die Registrierung ihrer Geräte aus der Verwaltung aufheben. Benutzer können die Registrierung ihrer Geräte auf allen Plattformen mithilfe ihrer Unternehmensportal-App aufheben. Sie können zur Aufhebung der Registrierung nicht die nativen Betriebssystemmenüs verwenden.
-
+- **Zurücksetzen erforderlich** – Das Gerät wird bei der Registrierung auf die Werkseinstellungen zurückgesetzt.
+- **Benutzeraffinität** – Geräte werden Benutzern zugeordnet. Weitere Informationen finden Sie auf der Seite [Registrieren firmeneigener iOS-Geräte in Microsoft Intune](device-enrollment-program-enroll-ios.md).
+- **Gesperrt** – Es wird verhindert, dass Benutzer die Registrierung von Geräten aufheben.
 
 **iOS-Registrierungsmethoden**
 
-| **Methode** |    **Zurücksetzen erforderlich?** |    **Affinität**    |    **Sperren** | **Details** |
+| **Methode** |  **Zurücksetzen erforderlich** |    **Benutzeraffinität**   |   **Gesperrt** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein|    Ja |    Nein | Weitere Informationen folgen in Kürze.|
-|**[DEM](#dem)**|    Nein |Nein |Nein    | [Weitere Informationen](device-enrollment-program-enroll-ios.md)|
-|**[DEP](#dep)**|    Ja |    Optional |    Optional|[Weitere Informationen](device-enrollment-program-enroll-ios.md)|
-|**[USB (Setup-Assistent)](#usb-sa)**|    Ja |    Optional |    Nein| [Weitere Informationen](apple-configurator-setup-assistant-enroll-ios.md)|
-|**[USB (direkt)](#usb-direct)**|    Nein |    Nein    | Nein|[Weitere Informationen](apple-configurator-direct-enroll-ios.md)|
+|**[BYOD](#byod)** | Nein|    Ja |   Nein | [Weitere Informationen](./apple-mdm-push-certificate-get.md)|
+|**[DEM](#dem)**|   Nein |Nein |Nein  | [Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
+|**[DEP](#dep)**|   Ja |   Optional |  Optional|[Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
+|**[USB (Setup-Assistent)](#usb-sa)**| Ja |   Optional |  Nein| [Weitere Informationen](./apple-configurator-setup-assistant-enroll-ios.md)|
+|**[USB (direkt)](#usb-direct)**| Nein |    Nein  | Nein|[Weitere Informationen](./apple-configurator-direct-enroll-ios.md)|
 
 **Windows-Registrierungsmethoden**
 
-| **Methode** |    **Zurücksetzen erforderlich?** |    **Affinität**    |    **Sperren** | **Details**|
+| **Methode** |  **Zurücksetzen erforderlich** |    **Benutzeraffinität**   |   **Gesperrt** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein |    Ja |    Nein | [Weitere Informationen](windows-enroll.md)|
-|**[DEM](#dem)**|    Nein |Nein |Nein    |[Weitere Informationen](device-enrollment-manager-enroll.md)|
+|**[BYOD](#byod)** | Nein |   Ja |   Nein | [Weitere Informationen](windows-enroll.md)|
+|**[DEM](#dem)**|   Nein |Nein |Nein  |[Weitere Informationen](device-enrollment-manager-enroll.md)|
+|**Automatische Registrierung** | Nein |Ja |Nein | [Weitere Informationen](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**Massenregistrierung** |Nein |Nein |Nein | [Weitere Informationen](./windows-bulk-enroll.md) |
 
 **Android-Registrierungsmethoden**
 
-| **Methode** |    **Zurücksetzen erforderlich?** |    **Affinität**    |    **Sperren** | **Details**|
+| **Methode** |  **Zurücksetzen erforderlich** |    **Benutzeraffinität**   |   **Gesperrt** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein|    Ja |    Nein | [Weitere Informationen](android-enroll.md)|
-|**[DEM](#dem)**|    Nein |Nein |Nein    |[Weitere Informationen](device-enrollment-program-enroll-ios.md)|
-|**Android for Work**| Nein | Ja | Nein| [Weitere Informationen](android-enroll.md) |
+|**[BYOD](#byod)** | Nein|    Ja |   Nein | [Weitere Informationen](./android-enroll.md)|
+|**[DEM](#dem)**|   Nein |Nein |Nein  |[Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
+|**Android for Work**| Nein | Ja | Nein| [Weitere Informationen](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
 ## <a name="byod"></a>BYOD
-BYOD-Benutzer installieren die Unternehmensportal-App und registrieren ihr Gerät. Dadurch können Benutzer Verbindungen mit dem Unternehmensnetzwerk herstellen und zur Domäne oder zu Azure Active Directory beitreten. Für die meisten Plattformen müssen Sie BYOD-Registrierung für viele COD-Szenarios ermöglichen. Sie können die Registrierung von persönlichen iOS- und Android-Geräten blockieren. Unter [Festlegen von Gerätetypbeschränkungen](enrollment-restrictions-set.md#set-device-type-restrictions) finden Sie Anweisungen.
+BYOD-Benutzer (Bring Your Own Device) installieren die Unternehmensportal-App und führen diese zur Registrierung ihrer Geräte aus. Dieses Programm ermöglicht Benutzern den Zugriff auf Unternehmensressourcen wie E-Mails.
 
 ## <a name="corporate-owned-devices"></a>Firmeneigene Geräte
-Firmeneigene Geräte (Corporate-Owned Devices, COD) können über das Azure-Portal verwaltet werden. iOS-Geräte können direkt über die von Apple bereitgestellten Tools registriert werden. Alle Gerätetypen können von einem Administrator oder Manager die unter Verwendung des Geräteregistrierungs-Managers registriert werden. Geräte mit einer IMEI-Nummer können auch als firmeneigene Geräte identifiziert und gekennzeichnet werden, um COD-Szenarien zu unterstützen.
+Im Folgenden werden Registrierungsszenarien für unternehmenseigene Geräte vorgestellt. iOS-Geräte können direkt über die von Apple bereitgestellten Tools registriert werden. Alle Gerätetypen können von einem Administrator oder Manager die unter Verwendung des Geräteregistrierungs-Managers registriert werden. Geräte mit einer IMEI-Nummer können auch als firmeneigene Geräte identifiziert und gekennzeichnet werden, um COD-Szenarien zu unterstützen.
 
 ### <a name="dem"></a>Geräteregistrierungs-Manager (DEM)
-Der Geräteregistrierungs-Manager (DEM) ist ein besonderes Benutzerkonto, das zum Registrieren und Verwalten mehrerer firmeneigener Geräte verwendet wird. Manager können das Unternehmensportal installieren und viele benutzerlose Geräte registrieren. Erfahren Sie mehr über den [DEM](device-enrollment-manager-enroll.md). ([Zurück zur Tabelle](#overview-of-device-enrollment-methods))
+Der Geräteregistrierungs-Manager (DEM) ist ein besonderes Benutzerkonto, das zum Registrieren und Verwalten mehrerer firmeneigener Geräte verwendet wird. Manager können das Unternehmensportal installieren und viele benutzerlose Geräte registrieren. Erfahren Sie mehr über den [DEM](./device-enrollment-manager-enroll.md).
 
 ### <a name="dep"></a>DEP (Device Enrollment Program)
-Mit der Apple DEP-Verwaltung (Device Enrollment Program, Programm zur Geräteregistrierung) können Sie Richtlinien erstellen und „drahtlos“ auf iOS-Geräten bereitstellen, die mit DEP erworben wurden und verwaltet werden. Das Gerät wird beim ersten Einschalten durch den Benutzer registriert und führt dann den iOS-Setup-Assistenten aus. Diese Methode unterstützt den iOS-Modus **Überwacht**, der wiederum Folgendes ermöglicht:
+Mit der Apple DEP-Verwaltung (Device Enrollment Program, Programm zur Geräteregistrierung) können Sie Richtlinien erstellen und „drahtlos“ auf iOS-Geräten bereitstellen, die mit DEP erworben wurden und verwaltet werden. Das Gerät wird beim ersten Einschalten durch den Benutzer registriert und führt dann den iOS-Setup-Assistenten aus. Diese Methode unterstützt den **überwachten iOS-Modus**, der wiederum folgende Funktionen ermöglicht:
 
-  -    Gesperrte Registrierung
-  -    Kioskmodus und andere erweiterte Konfigurationen und Einschränkungen
+  - Gesperrte Registrierung
+  - Kioskmodus und andere erweiterte Konfigurationen und Einschränkungen
 
-Weitere Informationen zur iOS-Registrierung finden Sie unter:
+Weitere Informationen zur iOS DEP-Registrierung finden Sie unter:
 
 - [Auswählen der Registrierungsmethode für iOS-Geräte](enrollment-method-choose-ios.md)
 - [Registrieren von iOS-Geräten mithilfe des Programms zur Geräteregistrierung](device-enrollment-program-enroll-ios.md)
-- [Zurück zur Tabelle oben](#overview-of-device-enrollment-methods)
 
 ### <a name="usb-sa"></a>USB (Setup-Assistent)
-IT-Administratoren benutzen den Apple Configurator über USB, um jedes unternehmenseigene Gerät manuell für die Registrierung mit dem Setup-Assistenten vorzubereiten. Der IT- Administrator erstellt ein Registrierungsprofil und exportiert dieses in Apple Configurator. Wenn die Benutzer ihre Geräte erhalten, werden sie aufgefordert, den Setup-Assistenten auszuführen. Diese Methode unterstützt den iOS-Modus **Überwacht**, der wiederum Folgendes ermöglicht:
-  -    Gesperrte Registrierung
-  -    Kioskmodus und andere erweiterte Konfigurationen und Einschränkungen
+IT-Administratoren benutzen Apple Configurator über USB, um jedes unternehmenseigene Gerät manuell für die Registrierung mit dem Setup-Assistenten vorzubereiten. Der IT- Administrator erstellt ein Registrierungsprofil und exportiert dieses in Apple Configurator. Wenn die Benutzer ihre Geräte erhalten, werden sie aufgefordert, den Setup-Assistenten auszuführen. Diese Methode unterstützt den **überwachten iOS-Modus**, der wiederum folgende Funktionen ermöglicht:
+  - Gesperrte Registrierung
+  - Kioskmodus und andere erweiterte Konfigurationen und Einschränkungen
 
-Weitere Informationen zur iOS-Registrierung finden Sie unter:
+Weitere Informationen zur Registrierung über den Setup-Assistenten mit iOS Apple Configurator finden Sie unter:
 
 - [Auswählen der Registrierungsmethode für iOS-Geräte](enrollment-method-choose-ios.md)
 - [Registrieren von iOS-Geräten mithilfe von Configurator und Setup-Assistent](apple-configurator-setup-assistant-enroll-ios.md)
@@ -110,13 +108,8 @@ Weitere Informationen zur iOS-Registrierung finden Sie unter:
 - [Registrieren von iOS-Geräten mithilfe von Configurator und direkter Registrierung](apple-configurator-direct-enroll-ios.md)
 
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Verwaltung mobiler Geräte mit Exchange ActiveSync und Intune
-Mobile Geräte, die nicht registriert, aber mit Exchange ActiveSync (EAS) verbunden sind, können von Intune mit der MDM EAS-Richtlinie verwaltet werden. Intune verwendet Exchange Connector für die Kommunikation mit EAS, entweder lokal oder in der Cloud gehostet. Weitere Informationen folgen in Kürze.
-
-## <a name="supported-device-platforms-and-browsers"></a>Unterstützte Geräteplattformen und Browser
-
-Siehe [Unterstützte Geräte und Browser für Intune](https://docs.microsoft.com/intune-classic/get-started/supported-mobile-devices-and-computers).
+Mobile Geräte, die nicht registriert, aber mit Exchange ActiveSync (EAS) verbunden sind, können von Intune mit der EAS-MDM-Richtlinie verwaltet werden. Intune verwendet Exchange Connector für die Kommunikation mit EAS, entweder lokal oder in der Cloud gehostet. Weitere Informationen folgen in Kürze.
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Bereinigen mobiler Geräte nach Ablauf des MDM-Zertifikats
 
 Das MDM-Zertifikat wird automatisch erneuert, wenn mobile Geräte mit dem Intune-Dienst kommunizieren. Wenn mobile Geräte zurückgesetzt werden oder für längere Zeit keine Kommunikation mit dem Intune-Dienst stattfindet, wird das MDM-Zertifikat nicht erneuert. Das Gerät wird 180 Tage nach Ablauf des MDM-Zertifikats aus dem Azure-Portal entfernt.
-

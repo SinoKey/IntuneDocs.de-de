@@ -1,7 +1,7 @@
 ---
 title: Was sind App-Schutzrichtlinien?
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): In diesem Thema erfahren Sie, wie Sie die Daten Ihres Unternehmens mit App-Schutzrichtlinien von Microsoft Intune schützen."
+titleSuffix: Intune on Azure
+description: "In diesem Thema erfahren Sie, wie Sie die Daten Ihres Unternehmens mit App-Schutzrichtlinien von Microsoft Intune schützen.\""
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,19 +15,16 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 01f77e3511785d2c8da2edcd92df809b3b7e73e7
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 13b3199108c34a61d117e4d89d118bdd05d7d20f
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="what-are-app-protection-policies"></a>Was sind App-Schutzrichtlinien?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 App-Schutzrichtlinien von Microsoft Intune helfen, Ihre Unternehmensdaten zu schützen und Datenverluste zu verhindern.
 
@@ -68,7 +65,7 @@ Es gibt weitere Vorteile bei der Verwendung einer MDM mit App-Schutzrichtlinien,
 
 -   Android 4 oder höher
 
-Windows-Geräte werden momentan nicht unterstützt. Wenn Sie jedoch Windows 10-Geräte mit Intune registrieren, können Sie Windows Information Protection verwenden, das ähnliche Funktionen bietet. Weitere Informationen finden Sie unter [Schutz von Unternehmensdaten mit Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+Windows-Geräte werden momentan nicht unterstützt. Wenn Sie jedoch Windows 10-Geräte mit Intune registrieren, können Sie Windows Information Protection verwenden, das ähnliche Funktionen bietet. Weitere Informationen finden Sie unter [Schutz von Unternehmensdaten mit Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 ##  <a name="how-app-protection-policies-protect-app-data"></a>So schützen App-Schutzrichtlinien Ihre App-Daten
 
 ####  <a name="apps-without-app-protection-policies"></a>Apps ohne App-Schutzrichtlinien
@@ -138,4 +135,3 @@ Wenn ein Benutzer beispielsweise die OneDrive-App mit seinem Geschäftskonto sta
 ##  <a name="next-steps"></a>Nächste Schritte
 
 [Erstellen und Bereitstellen von App-Schutzrichtlinien mit Microsoft Intune](app-protection-policies.md)
-
