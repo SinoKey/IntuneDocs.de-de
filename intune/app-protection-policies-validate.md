@@ -1,7 +1,7 @@
 ---
 title: "Überprüfen Ihrer App-Schutzrichtlinien"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): In diesen Themen wird beschrieben, wie Sie testen und überprüfen können, ob Ihre App-Schutzrichtlinie ordnungsgemäß eingerichtet wurde und wie erwartet funktioniert."
+titleSuffix: Intune on Azure
+description: "In diesen Themen wird beschrieben, wie Sie testen und überprüfen können, ob Ihre App-Schutzrichtlinie ordnungsgemäß eingerichtet wurde und wie erwartet funktioniert.\""
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,21 +15,18 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 26e191965eff482cf97b920e028cdf60d1881d32
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ddfecbcd8709569ff177e6c7021d3e8fdab39290
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Überprüfen der Einrichtung von App-Schutzrichtlinien
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Dieses Thema enthält Informationen zum Suchen nach Problemen nach der Einrichtung der App-Schutzrichtlinie. Diese Anleitung gilt für App-Schutzrichtlinien in der **Vorschau** des Azure-Portals.
+Dieses Thema enthält Informationen zum Suchen nach Problemen nach der Einrichtung der App-Schutzrichtlinie. Diese Anleitung gilt für App-Schutzrichtlinien im Azure-Portal.
 
 ### <a name="checking-for-symptoms"></a>Suchen nach Symptomen
 Benutzer melden so gut wie keine Probleme, da der App-Schutz ein Tool zum Schutz von Daten ist. Liegt ein Problem mit der Konfiguration des App-Schutzes vor, erhält der Benutzer uneingeschränkten Zugriff, wie es auch ohne App-Schutz der Fall wäre, und er würde nicht bemerken, dass es ein Problem gibt. Aus diesem Grund wird empfohlen, dass Sie Ihre App-Schutzkonfiguration überprüfen, indem Sie Ihre App-Schutzrichtlinien mit einer kleinen Gruppe von Benutzern steuern, die bewusst die Einschränkungen des App-Schutzes testen können.
@@ -61,4 +58,3 @@ Hier sind die Aktionen, die basierend auf den Benutzerstatus durchgeführt werde
 ### <a name="see-also"></a>Weitere Informationen:
 
 [Was sind Intune-App-Schutzrichtlinien?](app-protection-policies.md)
-

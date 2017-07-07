@@ -1,7 +1,7 @@
 ---
 title: "So überwachen Sie die Gerätekompatibilität"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie die Gerätekonformität überwachen."
+titleSuffix: Intune on Azure
+description: "Erfahren Sie, wie Sie die Gerätekonformität überwachen.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,20 +15,18 @@ ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e073ca318d7db23239fc68b79718198dbee54b6e
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8f18bfa7fb045dbad4ab785c2c8e1bc13fc439db
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-# <a name="how-to-monitor-device-compliance-in-intune-azure-preview"></a>Überwachen der Gerätekompatibilität in Intune in Azure (Vorschau)
+# <a name="how-to-monitor-device-compliance-in-intune"></a>Überwachen der Gerätekonformität in Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Sie können sich auf dem Blatt **Übersicht** eine Zusammenfassung des Status Ihrer **Konformitätsprofile** ansehen.
-Sie können interaktiv einen Drilldown in den Diagrammen durchführen, um Details anzuzeigen. Wenn Sie mehrere Konformitätsprofile konfiguriert haben, können Sie den Status für jede Richtlinie anzeigen, indem Sie auf dem Blatt „Richtlinie“ im Abschnitt **Verwalten** die Option **Berichte** auswählen.  Die Details der für die Vorschau verfügbaren Berichte werden unten aufgeführt.
+Sie können interaktiv einen Drilldown in den Diagrammen durchführen, um Details anzuzeigen. Wenn Sie mehrere Konformitätsprofile konfiguriert haben, können Sie den Status für jede Richtlinie anzeigen, indem Sie auf dem Blatt „Richtlinie“ im Abschnitt **Verwalten** die Option **Berichte** auswählen.  Die Details der verfügbaren Berichte werden unten aufgeführt.
 
 ##  <a name="device-compliance"></a>Gerätekompatibilität
 
@@ -48,4 +46,3 @@ Der Einstellungskonformitätsbericht enthält Einzelheiten zu jeder Konformität
 - Die Plattform, auf der die Einstellung angewendet wird
 
 Sie können für jede Einstellung einen Drilldown durchführen, um weitere Informationen zu den Profilen, für die diese Einstellungen aktiviert wurden, und den Werten der Einstellungen zu erhalten.
-

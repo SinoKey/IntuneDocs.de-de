@@ -1,7 +1,7 @@
 ---
 title: "Erste Schritte mit Gerätekompatibilität"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Mithilfe dieses Themas können Sie die Voraussetzungen zum Erstellen von Konformitätsrichtlinien in Microsoft Intune verstehen."
+titleSuffix: Intune on Azure
+description: "In diesem Thema werden die Voraussetzungen für das Erstellen von Konformitätsrichtlinien in Microsoft Intune erläutert\""
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,24 +15,21 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f59801abf29d15581fcdc577c5320942208595b1
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: aa9a5c8c44b82dcbc1ae7a4609b12e22c6599e9e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="get-started-with-device-compliance-in-intune"></a>Erste Schritte bei der Gerätekonformität in Intune
 
-# <a name="get-started-with-device-compliance-in-intune-azure-preview"></a>Erste Schritte mit der Gerätekonformität in der Vorschau von Intune in Azure
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Dieses Thema enthält Folgendes: 
 
 - Informationen zu den Voraussetzungen für die Erstellung einer Gerätekompatibilitätsrichtlinie
-- Einen kurzen Überblick über die Informationen und Möglichkeiten des Intune-Vorschauportals 
+- Einen kurzen Überblick über die Informationen und Möglichkeiten des Intune-Portals in Azure. 
 
 Falls Sie noch nicht mit der Gerätekompatibilität vertraut sind, können Sie sich in [diesem Thema](device-compliance.md) darüber informieren, worum es sich dabei handelt und wie Sie sie in Ihrer Organisation verwenden.
 
@@ -56,7 +53,7 @@ Falls Sie noch nicht mit der Gerätekompatibilität vertraut sind, können Sie s
 
 ##  <a name="azure-portal-workflow"></a>Workflow im Azure-Portal
 
-Hier finden Sie eine Übersicht über die Erstellung und Verwaltung der Gerätekompatibilität im Intune Azure-Vorschauportal.
+Hier finden Sie eine Übersicht über das Erstellen und Verwalten der Gerätekonformität im Intune-Portal in Azure.
 
 <!---### Overview
 
@@ -83,4 +80,3 @@ Gültigkeitszeitraum des Kompatibilitätsstatus
 [Erstellen einer Konformitätsrichtlinie für iOS](compliance-policy-create-ios.md)
 
 [Erstellen einer Konformitätsrichtlinie für Windows](compliance-policy-create-windows.md)
-

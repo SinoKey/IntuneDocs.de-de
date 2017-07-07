@@ -1,7 +1,7 @@
 ---
 title: "Gerätekompatibilität"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): In diesem Thema erfahren Sie etwas über die Gerätekonformität in Microsoft Intune."
+titleSuffix: Intune on Azure
+description: "In diesem Thema erhalten Sie Informationen zur Gerätekonformität in Microsoft Intune\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,18 +15,15 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2aec7463b9a2b3bdaa78281fca0bbb39dcd3f884
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: a747d577a28433635883ad6c4fe4c858e75902d0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="what-is-device-compliance-in-intune"></a>Was ist die Gerätekonformität in Intune?
 
-# <a name="what-is-device-compliance-in-intune-azure-preview"></a>Was ist die Gerätekonformität in Intune in Azure (Vorschau)?
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Gerätekompatibilitätsrichtlinien in Intune definieren die Regeln und Einstellungen, denen ein Gerät entsprechen muss, um die Kompatibilitätsanforderungen von Intune-Richtlinien sowie von Richtlinien für den bedingten EMS-Zugriff zu erfüllen. Mithilfe von Kompatibilitätsrichtlinien können Sie auch Kompatibilitätsprobleme mit Geräten überwachen und beheben. 
 
@@ -79,7 +76,7 @@ Bei unabhängiger Nutzung von Kompatibilitätsrichtlinien werden die Zielgeräte
 
 Sie stellen Konformitätsrichtlinien für Benutzer bereit. Wenn Sie eine Kompatibilitätsrichtlinie für einen Benutzer bereitstellen, wird die Kompatibilität der Geräte des Benutzers überprüft. Informationen darüber, wie lange es dauert, bis eine Richtlinie für mobile Geräte nach der Bereitstellung der Richtlinie abgerufen wird, finden Sie unter „Verwalten von Einstellungen und Features auf Ihren Geräten“.
 
-##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Gegenüberstellung der klassischen Intune-Verwaltungskonsole und des Intune Azure-Vorschauportals
+##  <a name="intune-classic-admin-console-vs-intune-on-the-azure-portal"></a>Gegenüberstellung der klassischen Intune-Verwaltungskonsole und des Intune im Azure-Portal
 
 Falls Sie bereits die klassische Intune-Verwaltungskonsole verwendet haben, beachten Sie beim Umstieg auf den neuen Gerätekompatibilitätsrichtlinien-Workflow des Azure-Portals die folgenden Unterschiede:
 
@@ -89,7 +86,7 @@ Falls Sie bereits die klassische Intune-Verwaltungskonsole verwendet haben, beac
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>Migration von der klassischen Intune-Konsole zum Intune Azure-Vorschauportal
+##  <a name="migration-from-intune-classic-console-to-intune-on-the-azure-portal"></a>Migration von der klassischen Intune-Konsole zu Intune im Azure-Portal
 
 Gerätekompatibilitätsrichtlinien, die in der [klassischen Intune-Konsole](https://manage.microsoft.com) erstellt wurden, erscheinen nicht im neuen [Intune Azure-Vorschauportal](https://portal.azure.com). Sie sind jedoch weiterhin für Benutzer bestimmt und können über die klassische Intune-Konsole verwaltet werden.
 
@@ -103,4 +100,3 @@ Wenn Sie von den neuen Funktionen für Gerätekompatibilität im Intune-Azure-Po
 <!---### See also
 
 Conditional access--->
-

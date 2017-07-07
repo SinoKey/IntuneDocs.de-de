@@ -1,7 +1,7 @@
 ---
-title: App-Bereitstellungsprofile | Microsoft-Dokumentation
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Intune stellt Ihnen die Tools zum proaktiven Zuweisen eines neuen Bereitstellungsprofils auf Geräten zur Verfügung, auf denen Apps installiert sind, die bald ablaufen."
+title: App-Bereitstellungsprofile
+titleSuffix: Intune on Azure
+description: "Intune stellt Ihnen die Tools zum proaktiven Zuweisen eines neuen Bereitstellungsprofils auf Geräten zur Verfügung, auf denen Apps installiert sind, die bald ablaufen.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 966c097280ebebac68749e71c20381ee816360da
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bf2da880f0f092b9948a400f6a10bd9ad032f959
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Verwenden von mobilen iOS-Bereitstellungsprofilen, um zu verhindern, dass Apps ablaufen
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Einführung
 
@@ -42,7 +40,7 @@ Nach Ablauf des Zertifikats müssen Sie die App mit einem neuen Zertifikat erneu
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Erstellen eines Bereitstellungsprofils für mobile iOS-Apps
 
 1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
+2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
 1.  Wählen Sie im Abschnitt **Mobile Apps** die Option **Verwalten** > **iOS-Bereitstellungsprofile** aus.
 2.  Wählen Sie auf dem Blatt mit der Profilliste die Option **Profil erstellen** aus.
@@ -55,4 +53,3 @@ Nach Ablauf des Zertifikats müssen Sie die App mit einem neuen Zertifikat erneu
 ## <a name="next-steps"></a>Nächste Schritte
 
 Weisen Sie das Profil den entsprechenden iOS-Geräten zu. Weitere Informationen und Anweisungen finden Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md).
-

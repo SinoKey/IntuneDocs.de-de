@@ -1,5 +1,5 @@
 ---
-title: "Sammeln von Geräteprotokollen | Microsoft-Dokumentation"
+title: "Erfassen von Geräteprotokollen"
 description: "Erfahren Sie, wie Sie Protokolle Ihrer verwalteten Geräte sammeln können."
 keywords: 
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f75719a02e37f6285fb1d7c5de32bb7eb4b3a1ed
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: b15e4b7fa0c650a85a080c42d00cd75cb8783c62
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="device-logs"></a>Geräteprotokolle
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,7 +43,7 @@ Weitere Informationen dazu, wie Ihre Benutzer Ihnen Datenprotokolle senden könn
 
 Benutzer können Ihnen Fehler beim Registrieren senden. Die entsprechende Vorgehensweise finden Sie unter [Senden von iOS-Registrierungsfehlern an Ihren IT-Administrator](/intune-user-help/send-errors-to-your-it-admin-ios).
 
-Benutzer können wie unter [Send iOS Device Logs (Senden von iOS-Geräteprotokollen)](/intune-user-help/send-logs-to-your-it-admin-by-email-ios) beschrieben, Geräteprotokolle senden.
+Benutzer können wie unter [Send iOS Device Logs (Senden von iOS-Geräteprotokollen)](/intune-user-help/send-logs-to-microsoft-ios) beschrieben, Geräteprotokolle senden.
 
 ### <a name="mac-os-x-logs"></a>Mac OS X-Protokolle
 
@@ -61,4 +58,3 @@ In der Windows Phone-Unternehmensportal-App klicken Benutzer auf die drei Punkte
 ### <a name="windows"></a>Windows
 
 Für das Windows-Unternehmensportal befinden sich die Protokolle unter *%localappdata%\Packages\Microsoft.CompanyPortal_8wekyb3d8bbwe\LocalState*.
-

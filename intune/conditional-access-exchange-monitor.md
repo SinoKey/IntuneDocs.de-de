@@ -1,6 +1,6 @@
 ---
 title: "Überwachen der Kompatibilität mit bedingtem Zugriff bei Exchange lokal und Exchange Online"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "Überwachen der Kompatibilität mit bedingtem Zugriff bei Exchange lokal und Exchange Online durch das Azure-Portal für Intune"
 keywords: 
 author: andredm7
@@ -14,16 +14,13 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d170958bbdc00423081aa606c9c7f4e7a8ec4b06
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ec9bcc605486258203f49f9f7631bd2a04cdf22
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune-azure-preview"></a>Überwachen der Kompatibilität mit bedingtem Zugriff bei Exchange lokal und Exchange Online in der Azure-Vorschau für Intune
+# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Überwachen der Konformität mit bedingtem Zugriff für Exchange lokal und Exchange Online in Intune
 
 Ab Version Intune 1704 können Administratoren Berichtsinformationen in Zusammenhang mit Exchange ActiveSync-Gerät-Geräteeinträgen sehen, die entweder über den lokalen Exchange-Connector oder dem Intune Service to Service Connector (Exchange Online-Connector) mit Intune synchronisiert werden. Berichte zur Kompatibilität mit bedingtem Zugriff enthalten eine Zusammenfassung der Geräte mit unterschiedlichen Synchronisierungsstatus:
 
@@ -70,4 +67,3 @@ Auf dem Blatt mit den Gerätedetails finden Sie weitere Informationen:
 -   **Gerätekonfiguration:** In diesem Abschnitt werden alle Details zur Gerätekonfiguration angezeigt.
 
 -   **Exchange-Zugriff:** Hier finden Sie weitere Informationen über den Gerätestatus nach der Anwendung von Richtlinien für den bedingten Zugriff.
-

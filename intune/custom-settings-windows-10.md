@@ -1,7 +1,7 @@
 ---
 title: "Benutzerdefinierte Intune-Einstellungen für Windows 10-Geräte"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erfahren Sie etwas über die Einstellungen, die Sie in einem benutzerdefinierten Windows 10-Profil verwenden können."
+titleSuffix: Intune on Azure
+description: "Erfahren Sie etwas über die Einstellungen, die Sie in einem benutzerdefinierten Windows 10-Profil verwenden können.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 52ad4f141c3b2b73a400c69fb9d9beb174bbac64
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: bda9e939e2d4aba4c4d005ea55ba65bec9c6e217
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Benutzerdefinierte Geräteeinstellungen für Windows 10-Geräte in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
  Stellen Sie mithilfe des **benutzerdefinierten** Profils von Microsoft Intune für Windows 10 und Windows 10 Mobile OMA-URI-Einstellungen (Open Mobile Alliance Uniform Resource Identifier) bereit, um Features auf Geräten zu steuern. Windows 10 stellt viele CSP-Einstellungen zur Verfügung, z. B. den [Richtlinienkonfigurationsdienst-Anbieter (Policy Configuration Service Provider; Policy CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 Wenn Sie nach einer bestimmten Einstellung suchen, beachten Sie, dass das [Geräteeinschränkungsprofil von Windows 10](device-restrictions-windows-10.md) viele Einstellungen enthält, die in Intune integriert sind und keine Angabe benutzerdefinierter Werte erfordern.
@@ -62,6 +59,5 @@ Eine vollständige Liste aller Konfigurationsdienstanbieter (CSP), die von Windo
 Nicht alle Einstellungen sind mit allen Windows 10-Versionen kompatibel. Die Tabelle im Windows-Abschnitt enthält entsprechende Informationen, welche Versionen für die einzelnen Konfigurationsdienstanbieter unterstützt werden.
 
 Darüber hinaus unterstützt Intune nicht alle Einstellungen, die in diesem Abschnitt aufgeführt werden. Öffnen Sie den Abschnitt für die jeweilige Einstellung, um herauszufinden, ob die gewünschte Einstellung von Intune unterstützt wird. Jede Einstellungsseite zeigt ihren unterstützten Vorgang an. Damit die Einstellung mit Intune funktioniert, muss sie die Vorgänge **Hinzufügen** oder **Ersetzen** unterstützen.
-
 
 

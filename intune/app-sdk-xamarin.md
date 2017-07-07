@@ -14,15 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: b900cb2c2c02ca96a771dbebd208872941079e38
-ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Intune App SDK-Xamarin-Komponente
 
 > [!NOTE]
@@ -125,4 +122,3 @@ Für Xamarin.Forms und andere UI-Frameworks haben wir ein Tool bereit gestellt. 
 ## <a name="test-your-app"></a>Testen Ihrer App
 
 Sie haben die grundlegenden Schritte zum Erstellen der Komponente auf Ihrer App abgeschlossen. Jetzt können die Schritte ausgeführt werden, die in der Xamarin Android-Beispiel-App zu finden sind. Wir haben zwei Beispiele bereit gestellt, eine für Xamarin.Forms und eine weitere für Android.
-

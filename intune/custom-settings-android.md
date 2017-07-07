@@ -1,7 +1,7 @@
 ---
 title: "Benutzerdefinierte Intune-Einstellungen für Android-Geräte"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erfahren Sie etwas über die Einstellungen, die Sie in einem benutzerdefinierten Android-Profil verwenden können."
+titleSuffix: Intune on Azure
+description: "Erfahren Sie etwas über die Einstellungen, die Sie in einem benutzerdefinierten Android-Profil verwenden können.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ff3d3b1596f58213bed2509b1bfd5ae81c63f440
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 014e59c017eac0d54a632e545692e1a1a8053164
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Benutzerdefinierte Einstellungen für Android-Geräte in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Weisen Sie mithilfe des **benutzerdefinierten** Profils für Android von Microsoft Intune die OMA-URI-Einstellungen zu, um Features auf Android-Geräten zu steuern. Dies sind die Standardeinstellungen, die viele Hersteller von mobilen Geräten verwenden, um Gerätefunktionen zu steuern.
 
@@ -43,4 +40,3 @@ Diese Funktion soll es Ihnen ermöglichen, Android-Einstellungen zuzuweisen, die
     - **OMA-URI:** Geben Sie den OMA-URI an, für den Sie eine Einstellung bereitstellen möchten.
     - **Wert:** Geben Sie den gewünschten Wert an, der dem von Ihnen eingegebenen OMA-URI zugeordnet werden soll.
 4. Klicken Sie abschließend auf **OK**, und fahren Sie bei Bedarf mit dem Hinzufügen weiterer Einstellungen fort.
-
