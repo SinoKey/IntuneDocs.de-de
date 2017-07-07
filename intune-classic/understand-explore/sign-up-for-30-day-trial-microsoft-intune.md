@@ -1,5 +1,5 @@
 ---
-title: "Registrieren für eine 30-tägige kostenlose Testversion von Microsoft Intune | Microsoft-Dokumentation"
+title: "Registrieren für eine 30-tägige kostenlose Testversion von Microsoft Intune"
 description: "Registrieren Sie sich für eine kostenlose 30-tägige Evaluierung von Microsoft Intune, und konfigurieren Sie diese."
 keywords: 
 author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 560765fa9d9afa4a1050515e1b2304c998f8c158
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ffa07d5e36abc8686cedd600123494180c286011
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Registrieren für eine kostenlose Testversion von Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -29,7 +26,7 @@ ms.lasthandoff: 05/23/2017
 Dieser Artikel führt Sie durch die Registrierung für eine Testversion von Intune und zeigt, wie Sie diese vorbereiten, indem Sie einige Benutzer anlegen, damit Sie anschließend den Anleitungen im zugehörigen Evaluierungshandbuch folgen und verstehen können, wie mobile Geräte von Intune verwaltet werden. <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> Ab Dezember 2016 wird Microsoft Intune in das Azure-Portal verlagert. Einige kostenlose Testversion werden mit Intune in das Azure-Portal verschoben, einige verbleiben beim klassischen Intune. Wenn sich Ihre Testversion im Azure-Portal befindet, sehen Sie sich nach Abschluss der Schritte in diesem Artikel die wertvollen [Informationen zu Intune in Azure (Vorschau)](/intune/what-is--intune) an.
+> Ab Dezember 2016 wird Microsoft Intune in das Azure-Portal verlagert. Einige kostenlose Testversion werden mit Intune in das Azure-Portal verschoben, einige verbleiben beim klassischen Intune. Wenn sich Ihre Testversion im Azure-Portal befindet, sehen Sie sich nach Abschluss der Schritte in diesem Artikel die wertvollen [Informationen zu Intune in Azure (Vorschau)](/intune/what-is-intune) an.
 
 ## <a name="assumptions"></a>Annahmen
 In diesem Artikel über die Registrierung und im Evaluierungshandbuch wird davon ausgegangen, dass Sie die Testversion nur zu Evaluierungszwecken verwenden und beim Abschluss des Abonnements mit einer sauberen Umgebung starten möchten.
@@ -41,7 +38,7 @@ In der Testversion stehen alle Funktionen zur Verfügung, die Sie auch in einer 
 ## <a name="sign-up-for-your-trial"></a>Für die Testversion anmelden
 Besuchen Sie die [Intune-Anmeldeseite](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20), und füllen Sie das Formular zur Anmeldung für ein Testabonnement aus.
 
-Wenn Sie über Geschäfts-, Schul- oder Unikonto verfügen und dieses für Ihre Intune-Testversion verwenden möchten, folgen Sie stattdessen [diesen Anmeldeanweisungen](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1). In diesem Artikel und den Evaluierungshandbüchern wird jedoch davon ausgegangen, dass Sie kein solches Konto verwenden.
+Wenn Sie über Geschäfts-, Schul- oder Unikonto verfügen und dieses für Ihre Intune-Testversion verwenden möchten, folgen Sie stattdessen [diesen Anmeldeanweisungen](/intune/account-sign-up). In diesem Artikel und den Evaluierungshandbüchern wird jedoch davon ausgegangen, dass Sie kein solches Konto verwenden.
 
 > [!TIP]
 > Wenn sich der Großteil Ihres IT-Betriebs und Ihrer Benutzer in einem anderen Gebietsschema als Sie befindet, sollten Sie zum Prüfen der Leistung ggf. dieses Gebietsschema für Ihre Testversion festlegen.
@@ -56,7 +53,7 @@ Wenn sich Ihre Testversion im **Azure-Portal** befindet, wechseln Sie zu „http
 ## <a name="add-users"></a>Hinzufügen von Benutzern
 Bevor Sie das Office 365 Admin Center verlassen und zu Intune wechseln, müssen Sie einige Benutzer zu Ihrem Testkonto hinzufügen.
 
-Im Office 365 Admin Center können Sie Benutzer einzeln oder durch Hochladen einer CSV-Datei in größeren Mengen hinzufügen. Zum Einrichten Ihrer Testversion verwenden wir beide Optionen. In Ihrer Produktionsumgebung möchten Sie jedoch wahrscheinlich Ihre Azure Active Directory-Benutzerkonten nutzen. Mehr dazu finden Sie in unserem [Handbuch „Erste Schritte“](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) sowie in diesem Artikel im Abschnitt [Nächste Schritte](#Next-steps).
+Im Office 365 Admin Center können Sie Benutzer einzeln oder durch Hochladen einer CSV-Datei in größeren Mengen hinzufügen. Zum Einrichten Ihrer Testversion verwenden wir beide Optionen. In Ihrer Produktionsumgebung möchten Sie jedoch wahrscheinlich Ihre Azure Active Directory-Benutzerkonten nutzen. Mehr dazu finden Sie in unserem [Handbuch „Erste Schritte“](/intune/users-permissions-add) sowie in diesem Artikel im Abschnitt [Nächste Schritte](#next-steps).
 
 ### <a name="add-an-individual-user"></a>Hinzufügen eines einzelnen Benutzers
 1. Wählen Sie eine der Optionen zum Hinzufügen eines Benutzers, um ein Formular zu öffnen, in dem Sie den Benutzer erstellen können. Nur die mit einem Sternchen markierten Elemente (\*) sind erforderlich.
@@ -110,8 +107,8 @@ Um von Intune zurück zum Office 365 Admin Center zu gelangen, wählen Sie auf d
 
 ![Abbildung des Links zum Office 365 Admin Center](./media/sign-up/task-add-users.png)
 
-### <a name="intune-azure-preview"></a>Intune Azure-Vorschau
-Für die Intune Azure-Vorschau verwenden Sie drei Portale:
+### <a name="intune-on-azure"></a>Intune in Azure
+Für Intune in Azure verwenden Sie drei Portale:
 - Das Office 365 Admin Center ([portal.office.com](https://portal.office.com))
 - Das Intune-Dashboard in Azure ([portal.azure.com](https://portal.azure.com))
 - Die klassische Intune-Verwaltungskonsole ([manage.microsoft.com](https://manage.microsoft.com))
@@ -138,8 +135,8 @@ Um von Intune zurück zum Office 365 Admin Center zu wechseln, geben Sie „http
 ### <a name="classic-intune"></a>Klassisches Intune
 Evaluierungsszenario: [Evaluieren der Verwaltung mobiler Geräte (MDM) in Microsoft Intune](mobile-device-management-trial-guide-microsoft-intune.md)
 
-### <a name="intune-azure-preview"></a>Intune Azure-Vorschau
-Weitere Informationen zu [Intune in der Vorschau des Azure-Portals](/intune/what-is-intune)
+### <a name="intune-on-azure"></a>Intune in Azure
+Erfahren Sie mehr über [Intune in Azure](/intune/what-is-intune)
 
 ### <a name="integration-with-other-products"></a>Integration mit anderen Produkten
 Erfahren Sie mehr über die Verwendung Ihrer Azure Active Directory-Benutzerkonten mit Intune:
@@ -148,4 +145,3 @@ Erfahren Sie mehr über die Verwendung Ihrer Azure Active Directory-Benutzerkont
 - [Anforderungen für mehrstufige Authentifizierung](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
 Erfahren Sie mehr über die Verwendung von [Intune mit System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management).
-

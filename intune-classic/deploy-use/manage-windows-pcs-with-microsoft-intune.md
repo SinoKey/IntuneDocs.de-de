@@ -1,5 +1,5 @@
 ---
-title: Verwalten von PCs mit Clientsoftware | Microsoft-Dokumentation
+title: Verwalten von PCs mit Softwareclient
 description: Verwalten Sie Windows-PCs durch die Installation der Intune-Clientsoftware.
 keywords: 
 author: nathbarn
@@ -14,16 +14,15 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6bd4e3315fd27201e8005b1053fa6e15bf2c21b5
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e217648c744d76d4cde6b8927137cd569b8d0a2e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Verwalten von Windows-PCs als Computer mit dem Intune-Softwareclient
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune bietet Organisationen eine umfassende Lösung für die Verwaltung mobiler Geräte. Intune kann Windows-PCs mithilfe der modernen Geräteverwaltungsfunktionen des Betriebssystems Windows 10 als mobile Geräte verwalten. Zum Erfüllen der Verwaltungsanforderungen Ihrer Organisation kann Intune Windows-PCs mithilfe des Intune-Softwareclients auch als Computer verwalten. Für diese Verwaltungsmethode werden herkömmliche Funktionen für die Computerverwaltung in älteren Windows-Betriebssystemen verwendet.
 
@@ -79,7 +78,7 @@ Die Intune-Clientsoftware verwaltet Softwareupdates, Windows-Firewall und Endpoi
 
 Wenn Sie die Intune-Clientsoftware zum Verwalten von Windows-PCs verwenden, können Sie nur die Richtlinien im Abschnitt **Computerverwaltung** verwenden.
 
-Intune verwaltet Intune-PCs mit Richtlinien, ähnlich wie Windows Server Active Directory Domain Services /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) in Ihrer Organisation. Weitere Informationen finden Sie unter [Gruppenrichtlinien für Anfänger](https://technet.microsoft.com/library/hh147307.aspx).
+Intune verwaltet Windows-PCs mithilfe von Richtlinien, ähnlich wie Gruppenrichtlinienobjekte in Windows Server Active Directory Domain Services. Wenn Sie Computer in einer Active Directory-Domäne mit Intune verwalten, [stellen Sie sicher, dass Intune-Richtlinien nicht zu Konflikten mit Gruppenrichtlinienobjekten führen](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts), die für Ihre Organisation eingerichtet sind. Weitere Informationen finden Sie unter [Gruppenrichtlinien für Anfänger](https://technet.microsoft.com/library/hh147307.aspx).
 
   ![Auswählen der Vorlage für neue Windows-PC-Richtlinien](../media/select-template-for-pc-policy.png)
 
@@ -115,4 +114,3 @@ Beachten Sie auch, dass in der Intune-Administratorkonsole bestimmte Abschnitte,
 Die Intune-Clientsoftware wird in der Regel im Hintergrund ausgeführt, ohne dass viele Benutzerinteraktionen oder Maßnahmen zur Fehlerbehebung erforderlich sind. Wenn Sie Probleme mit der Computerverwaltung beheben müssen, können Sie die Protokolle überprüfen. Die Intune-Clientsoftware und zugehörige Protokolle sind im Verzeichnis „%Program Files%\Microsoft\OnlineManagement“ installiert.
 
 Unter [Behandlung von Problemen bei der Clienteinrichtung in Microsoft Intune](/intune-classic/troubleshoot/troubleshoot-client-setup-in-microsoft-intune) finden Sie auch Hinweise zu möglichen Problemen und etwaige Lösungen oder Problemumgehungen.
-

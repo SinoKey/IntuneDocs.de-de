@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von MAM-Richtlinien in der Intune-Konsole | Microsoft-Dokumentation
+title: Konfigurieren von MAM-Richtlinien in der Intune-Konsole
 description: "Verwaltungsrichtlinien für mobile Anwendungen in Microsoft Intune ermöglichen Ihnen das Ändern der Funktionalität von Apps, die Sie bereitstellen, um sie auf die Kompatibilitäts- und Sicherheitsrichtlinien Ihres Unternehmens abzustimmen."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65b2eb20aea4bbadba9d470590b6c344ac37b9f5
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ce97f18a799725a86ef3ab7f4f7c0cc8cdf8f062
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Konfigurieren und Bereitstellen von Verwaltungsrichtlinien für mobile Anwendungen in der Microsoft Intune-Konsole
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,11 +43,10 @@ Zum Anwenden von Einschränkungen auf eine App muss die App das Microsoft Intune
 
 -   **Verwenden einer richtlinienverwalteten App**. Eine richtlinienverwaltete App verfügt über ein integriertes App-SDK. Um diesen App-Typ hinzuzufügen, geben Sie in einem App Store wie iTunes Store oder Google Play einen Link zur App an. Es ist keine weitere Bearbeitung für diesen App-Typ erforderlich. Weitere Informationen finden Sie in der [Liste der Apps zur Verwendung mit den Microsoft Intune-Verwaltungsrichtlinien für mobile Anwendungen](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
--   **Verwenden einer umschlossenen App**. Eine umschlossene App ist eine App, die Sie mithilfe des Microsoft Intune App Wrapping Tool neu verpacken, sodass sie das App-SDK enthält. Dieses Tool wird normalerweise verwendet, um Unternehmensanwendungen zu verarbeiten, die intern erstellt wurden. Sie können damit keine Apps verarbeiten, die aus dem App Store heruntergeladen wurden. Weitere Informationen finden Sie unter [Vorbereiten von iOS-Apps für die Verwaltung mobiler Anwendungen mit dem Microsoft Intune App Wrapping-Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) und [Vorbereiten von Android-Apps für die Verwaltung von mobilen Anwendungen mit dem Microsoft Intune App Wrapping-Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+-   **Verwenden einer umschlossenen App**. Eine umschlossene App ist eine App, die Sie mithilfe des Microsoft Intune App Wrapping Tool neu verpacken, sodass sie das App-SDK enthält. Dieses Tool wird normalerweise verwendet, um Unternehmensanwendungen zu verarbeiten, die intern erstellt wurden. Sie können damit keine Apps verarbeiten, die aus dem App Store heruntergeladen wurden. Weitere Informationen finden Sie unter [Vorbereiten von iOS-Apps für die Verwaltung mobiler Anwendungen mit dem Microsoft Intune App Wrapping-Tool](/intune/app-wrapper-prepare-ios) und [Vorbereiten von Android-Apps für die Verwaltung von mobilen Anwendungen mit dem Microsoft Intune App Wrapping-Tool](/intune/app-wrapper-prepare-android).
 
-- **Schreiben einer eigenen App, die das Intune App-SDK einbezieht**. Mit dem Intune App SDK können Sie App-Verwaltungsfeatures integrieren, während Sie die App entwickeln. Weitere Informationen finden Sie unter [Übersicht über das Intune App SDK](/intune-classic/develop/intune-app-sdk).
-
-Hilfe für die Wahl zwischen dem App Wrapping Tool und dem Intune App SDK erhalten Sie unter [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
+- **Schreiben einer eigenen App, die das Intune App-SDK einbezieht**. Mit dem Intune App SDK können Sie App-Verwaltungsfeatures integrieren, während Sie die App entwickeln. Weitere Informationen finden Sie unter [Übersicht über das Intune App SDK](/intune/app-sdk).
+/intune/apps-prepare-mobile-application-management Hilfe für die Wahl zwischen dem App Wrapping Tool und dem Intune App SDK erhalten Sie unter [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 
 Einige verwaltete Apps, wie die Outlook-App für iOS und Android, unterstützen *mehrere Identitäten*. Dies bedeutet, dass Intune Verwaltungseinstellungen nur auf Unternehmenskonten oder Daten in der App anwendet.
 
@@ -197,4 +193,3 @@ In Fällen, in denen das Gerät oder der Benutzer zwei in Konflikt stehende Rich
 -   Wenn bereits eine Richtlinie mit dem Gerät bereitgestellt wurde, werden die vorhandenen Richtlinieneinstellungen nicht überschrieben.
 
 -   Wenn keine Richtlinie für das Gerät bereitgestellt wurde und zwei widersprüchliche Einstellungen bereitgestellt werden, wird die in das Gerät integrierte Standardeinstellung verwendet.
-

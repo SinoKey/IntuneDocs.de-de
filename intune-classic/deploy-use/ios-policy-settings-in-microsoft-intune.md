@@ -1,5 +1,5 @@
 ---
-title: iOS-Richtlinieneinstellungen | Microsoft-Dokumentation
+title: iOS-Richtlinieneinstellungen
 description: "Erstellen Sie Richtlinien, die Einstellungen und Funktionen auf iOS-Geräten steuern, die Sie mit Intune verwalten."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3a59391aaf241e52f59bb3ff5de3eae84c496c51
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="ios-policy-settings-in-microsoft-intune"></a>iOS-Richtlinieneinstellungen in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -88,7 +85,7 @@ Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
 |**Datensynchronisierung mit iCloud durch verwaltete Apps zulassen**|Ermöglicht es Apps, die Sie mit Intune verwalten, Daten mit dem iCloud-Konto des Benutzers zu synchronisieren.|
 |**Fortsetzung von Aktivitäten durch Handoff auf einem anderen Gerät zulassen**|Ermöglicht es dem Benutzer, die Arbeit, die er auf einem iOS-Gerät gestartet hat, auf einem anderen iOS- oder Mac OS X-Gerät fortzusetzen.|
 |**iCloud-Fotofreigabe zulassen**|Legen Sie diese Einstellung auf **Nein** fest, um die **iCloud-Fotofreigabe** auf dem Gerät zu deaktivieren.|
-|**iCloud-Fotomediathek zulassen**|Bei Festlegung auf **Nein** wird die Verwendung der iCloud-Fotomediathek deaktiviert, die Benutzern das Speichern von Fotos und Videos in der Cloud ermöglicht.    Fotos, die nicht vollständig aus der iCloud-Fotomediathek auf das Gerät heruntergeladen wurden, werden bei Festlegung auf **Nein** vom Gerät entfernt.|
+|**iCloud-Fotomediathek zulassen**|Bei Festlegung auf **Nein** wird die Verwendung der iCloud-Fotomediathek deaktiviert, die Benutzern das Speichern von Fotos und Videos in der Cloud ermöglicht.   Fotos, die nicht vollständig aus der iCloud-Fotomediathek auf das Gerät heruntergeladen wurden, werden bei Festlegung auf **Nein** vom Gerät entfernt.|
 
 ### <a name="application-settings-for-the-browser"></a>Anwendungseinstellungen für den Browser
 Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
@@ -387,4 +384,3 @@ Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigur
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

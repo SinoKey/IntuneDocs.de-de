@@ -1,11 +1,11 @@
 ---
-title: "Behandlung von Problemen bei der Geräteregistrierung | Microsoft-Dokumentation"
+title: "Behandlung von Problemen bei der Geräteregistrierung"
 description: "Vorschläge zur Problembehandlung bei Problemen mit der Geräteregistrierung."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e72051f9318d24ed36fc39ea6645041f0a150a40
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f0c55caa70c1a23da549f2fe8804c2ae69ef6045
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Behandlung von Problemen bei der Geräteregistrierung bei Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -34,11 +31,11 @@ Dieses Thema enthält Vorschläge zur Problembehandlung bei Problemen mit der Ge
 
 Bevor Sie mit der Problembehandlung beginnen, stellen Sie sicher, dass Intune ordnungsgemäß konfiguriert wurde, um die Registrierung zu ermöglichen. Informationen zu diesen Konfigurationsanforderungen finden Sie unter:
 
--    [Vorbereiten der Registrierung von Geräten in Microsoft Intune](/intune-classic/deploy-use/prerequisites-for-enrollment)
--    [Einrichten der iOS- und Mac-Geräteverwaltung](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [Einrichten der Windows-Geräteverwaltung](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--    [Einrichten der Android-Geräteverwaltung](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) – Keine weiteren Schritte erforderlich
--    [Einrichten der Android for Work-Geräteverwaltung](/intune-classic/deploy-use/set-up-android-for-work)
+-   [Vorbereiten der Registrierung von Geräten in Microsoft Intune](/intune-classic/deploy-use/prerequisites-for-enrollment)
+-   [Einrichten der iOS- und Mac-Geräteverwaltung](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   [Einrichten der Windows-Geräteverwaltung](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-   [Einrichten der Android-Geräteverwaltung](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) – Keine weiteren Schritte erforderlich
+-   [Einrichten der Android for Work-Geräteverwaltung](/intune-classic/deploy-use/set-up-android-for-work)
 
 Ihre Benutzer verwalteter Geräte können Registrierungs- und Diagnoseprotokolle erfassen, die Sie überprüfen können. Benutzeranleitungen zur Erfassung der Protokolle finden Sie unter:
 
@@ -110,8 +107,8 @@ Administratoren können Geräte im Azure Active Directory-Portal löschen.
 
 1.  Stellen Sie sicher, dass die MDM-Autorität entsprechend dem Typ des von Ihnen verwendeten Intune-Diensts festgelegt wurde, d.h. für Intune, Office 365 oder System Center Configuration Manager mit Intune. Für Intune wird die MDM-Autorität in **Verwaltung** &gt; **Verwaltung mobiler Geräte** festgelegt. Für Configuration Manager mit Intune legen Sie sie fest, wenn Sie den Intune-Connector konfigurieren, und in Office 365 gibt es dafür die Einstellung **Mobilgeräte**.
 
-    > [!NOTE]
-    > Nachdem Sie die MDM-Autorität festgelegt haben, können Sie sie nur ändern, indem Sie sich an den Support wenden, wie unter [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben.
+    > [!NOTE]    
+    > In Configuration Manager, Version 1610 oder höher, und Microsoft Intune, Version 1705, können Sie Ihre MDM-Autorität ändern, ohne sich an den Microsoft Support wenden und die Aufhebung der Registrierung sowie die erneute Registrierung vorhandener verwalteten Geräte durchführen zu müssen. Details finden Sie unter [Was Sie machen können, wenn Sie die falsche MDM-Autoritätseinstellung vorgenommen haben](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
 
 2.  Stellen Sie sicher, dass die Anmeldeinformationen des Benutzers korrekt mit Azure Active Directory synchronisiert wurden, indem Sie überprüfen, ob der UPN mit den Active Directory-Informationen im Office 365-Portal übereinstimmt.
     Wenn der UPN nicht mit den Active Directory-Informationen übereinstimmt:
@@ -230,16 +227,16 @@ Der Zertifikatfehler tritt auf, da auf Android-Geräten Zwischenzertifikate für
 
 Um das Problem zu beheben, importieren Sie die Zertifikate wie folgt in die persönlichen Zertifikate des Computers auf dem AD FS-Server oder den Proxys:
 
-1.    Starten Sie die Konsole zur Zertifikatverwaltung für den lokalen Computer auf dem AD FS- und dem Proxyserver, indem Sie mit der rechten Maustaste auf die Schaltfläche **Start** klicken, **Ausführen** auswählen und **certlm.msc** eingeben.
-2.    Erweitern Sie **Persönlich**, und wählen Sie **Zertifikate** aus.
-3.    Suchen Sie das Zertifikat für Ihre Kommunikation mit dem AD FS-Dienst (ein öffentlich signiertes Zertifikat), und doppelklicken Sie darauf, um seine Eigenschaften anzuzeigen.
-4.    Klicken Sie auf die Schaltfläche **Zertifizierungspfad**, um die übergeordneten Zertifikate des Zertifikats anzuzeigen.
-5.    Wählen Sie in jedem übergeordneten Zertifikat die Option **Zertifikat anzeigen** aus.
-6.    Klicken Sie auf der Registerkarte **Details** auf **In Datei kopieren**.
-7.    Führen Sie die Anweisungen des Assistenten aus, um den des öffentlichen Schlüssel des Zertifikats an den gewünschten Speicherort zu exportieren oder zu speichern.
-8.    Importieren Sie die übergeordneten Zertifikate, die in Schritt 3 nach „Local Computer\Personal\Certificates“ exportiert wurden, indem Sie mit der rechten Maustaste auf **Zertifikate** klicken, **Alle Aufgaben** > **Importieren** auswählen und dann den Anweisungen des Assistenten zum Importieren der Zertifikate folgen.
-9.    Starten Sie die AD FS-Server neu.
-10.    Wiederholen Sie die oben stehenden Schritte auf allen AD FS- und Proxyservern.
+1.  Starten Sie die Konsole zur Zertifikatverwaltung für den lokalen Computer auf dem AD FS- und dem Proxyserver, indem Sie mit der rechten Maustaste auf die Schaltfläche **Start** klicken, **Ausführen** auswählen und **certlm.msc** eingeben.
+2.  Erweitern Sie **Persönlich**, und wählen Sie **Zertifikate** aus.
+3.  Suchen Sie das Zertifikat für Ihre Kommunikation mit dem AD FS-Dienst (ein öffentlich signiertes Zertifikat), und doppelklicken Sie darauf, um seine Eigenschaften anzuzeigen.
+4.  Klicken Sie auf die Schaltfläche **Zertifizierungspfad**, um die übergeordneten Zertifikate des Zertifikats anzuzeigen.
+5.  Wählen Sie in jedem übergeordneten Zertifikat die Option **Zertifikat anzeigen** aus.
+6.  Klicken Sie auf der Registerkarte **Details** auf **In Datei kopieren**.
+7.  Führen Sie die Anweisungen des Assistenten aus, um den des öffentlichen Schlüssel des Zertifikats an den gewünschten Speicherort zu exportieren oder zu speichern.
+8.  Importieren Sie die übergeordneten Zertifikate, die in Schritt 3 nach „Local Computer\Personal\Certificates“ exportiert wurden, indem Sie mit der rechten Maustaste auf **Zertifikate** klicken, **Alle Aufgaben** > **Importieren** auswählen und dann den Anweisungen des Assistenten zum Importieren der Zertifikate folgen.
+9.  Starten Sie die AD FS-Server neu.
+10. Wiederholen Sie die oben stehenden Schritte auf allen AD FS- und Proxyservern.
 Der Benutzer sollte sich jetzt mit dem Android-Gerät bei der Unternehmensportal-App anmelden können.
 
 **So überprüfen Sie, ob das Zertifikat richtig installiert wurde**
@@ -261,10 +258,10 @@ In der folgenden Tabelle sind Fehler aufgeführt, die bei der Registrierung von 
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|Keine Registrierungsrichtlinie gefunden|Vergewissern Sie sich, dass alle für die Registrierung erforderlichen Komponenten, wie der Apple Push Notification Service (APNs), eingerichtet wurden, und dass „iOS as a platform“ (iOS als Plattform) aktiviert ist. Anweisungen hierzu finden Sie unter [Einrichten der iOS- und Mac-Geräteverwaltung](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
 |DeviceCapReached|Es sind bereits zu viele mobile Geräte registriert.|Der Benutzer muss eines seiner derzeit registrierten mobilen Geräte aus dem Unternehmensportal entfernen, bevor ein weiteres mobiles Gerät registriert wird. Sehen Sie sich die Anweisungen für Ihren Gerätetyp an: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|Es liegt ein Problem mit dem Zertifikat vor, über das die Kommunikation Ihres mobilen Geräts mit Ihrem Unternehmensnetzwerk ermöglicht wird.<br /><br />|Über den Apple Push Notification Service (APNs) ist der Zugriff auf registrierte iOS-Geräte möglich. Wenn die Schritte zum Erhalten eines APNs-Zertifikats nicht ausgeführt wurden oder das APNs-Zertifikat abgelaufen ist, ist die Registrierung nicht möglich, und es wird diese Meldung angezeigt.<br /><br />Überprüfen Sie die Informationen über das Einrichten von Benutzern unter [Synchronisieren von Active Directory und Hinzufügen von Benutzern zu Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) und [Erstellen von Gruppen zum Organisieren von Benutzern und Geräten](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
+|APNSCertificateNotValid|Es liegt ein Problem mit dem Zertifikat vor, über das die Kommunikation Ihres mobilen Geräts mit Ihrem Unternehmensnetzwerk ermöglicht wird.<br /><br />|Über den Apple Push Notification Service (APNs) ist der Zugriff auf registrierte iOS-Geräte möglich. Wenn die Schritte zum Erhalten eines APNs-Zertifikats nicht ausgeführt wurden oder das APNs-Zertifikat abgelaufen ist, ist die Registrierung nicht möglich, und es wird diese Meldung angezeigt.<br /><br />Überprüfen Sie die Informationen über das Einrichten von Benutzern unter [Synchronisieren von Active Directory und Hinzufügen von Benutzern zu Intune](/intune/users-permissions-add) und [Erstellen von Gruppen zum Organisieren von Benutzern und Geräten](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |AccountNotOnboarded|Es liegt ein Problem mit dem Zertifikat vor, über das die Kommunikation des mobilen Geräts mit Ihrem Unternehmensnetzwerk ermöglicht wird.<br /><br />|Über den Apple Push Notification Service (APNs) ist der Zugriff auf registrierte iOS-Geräte möglich. Wenn die Schritte zum Erhalten eines APNs-Zertifikats nicht ausgeführt wurden oder das APNs-Zertifikat abgelaufen ist, ist die Registrierung nicht möglich, und es wird diese Meldung angezeigt.<br /><br />Weitere Informationen finden Sie unter [Einrichten der iOS- und Mac-Geräteverwaltung](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
 |DeviceTypeNotSupported|Der Benutzer hat möglicherweise versucht, eine Registrierung mit einem Nicht-iOS-Gerät auszuführen. Der Mobilgerättyp, den Sie versuchen zu registrieren, wird nicht unterstützt.<br /><br />Stellen Sie sicher, dass auf dem Gerät mindestens Version 8.0 von iOS ausgeführt wird.<br /><br />|Stellen Sie sicher, dass auf dem Gerät des Benutzers mindestens die iOS-Version 8.0 ausgeführt wird.|
-|UserLicenseTypeInvalid|Das Gerät kann nicht registriert werden, da das Benutzerkonto noch kein Mitglied einer erforderlichen Benutzergruppe ist.<br /><br />|Bevor Benutzer ihre Geräte registrieren können, müssen sie Mitglied der richtigen Benutzergruppe sein. Diese Meldung bedeutet, dass der Benutzer den falschen Lizenztyp für die festgelegte Autorität für die Verwaltung mobiler Geräte hat. Beispielsweise wird dieser Fehler angezeigt, wenn Intune als Autorität für die Verwaltung mobiler Geräte festgelegt wurde und der Benutzer eine System Center 2012 R2 Configuration Manager-Lizenz verwendet.<br /><br />In den folgenden Abschnitten erhalten Sie weitere Informationen:<br /><br />Weitere Informationen finden Sie unter [Einrichten der iOS- und Mac-Geräteverwaltung](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) und im Abschnitt über das Einrichten von Benutzern in [Synchronisieren von Active Directory und Hinzufügen von Benutzern zu Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) und unter [Erstellen von Gruppen zum Organisieren von Benutzern und Geräten](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
+|UserLicenseTypeInvalid|Das Gerät kann nicht registriert werden, da das Benutzerkonto noch kein Mitglied einer erforderlichen Benutzergruppe ist.<br /><br />|Bevor Benutzer ihre Geräte registrieren können, müssen sie Mitglied der richtigen Benutzergruppe sein. Diese Meldung bedeutet, dass der Benutzer den falschen Lizenztyp für die festgelegte Autorität für die Verwaltung mobiler Geräte hat. Beispielsweise wird dieser Fehler angezeigt, wenn Intune als Autorität für die Verwaltung mobiler Geräte festgelegt wurde und der Benutzer eine System Center 2012 R2 Configuration Manager-Lizenz verwendet.<br /><br />In den folgenden Abschnitten erhalten Sie weitere Informationen:<br /><br />Weitere Informationen finden Sie unter [Einrichten der iOS- und Mac-Geräteverwaltung](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) und im Abschnitt über das Einrichten von Benutzern in [Synchronisieren von Active Directory und Hinzufügen von Benutzern zu Intune](/intune/users-permissions-add) und unter [Erstellen von Gruppen zum Organisieren von Benutzern und Geräten](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |MdmAuthorityNotDefined|Die Autorität für die Verwaltung mobiler Geräte wurde nicht festgelegt.<br /><br />|Die Autorität für die Verwaltung mobiler Geräte wurde in Intune nicht festgelegt.<br /><br />Lesen Sie Punkt 1 im Abschnitt „Schritt 5: Registrieren mobiler Geräte und Installieren einer App“ unter [Schritte zum Durchführen einer 30-tägigen Evaluierung von Intune](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>Geräte sind inaktiv oder die Verwaltungskonsole kann nicht mit ihnen kommunizieren.
@@ -413,4 +410,3 @@ Möglicherweise wurde der Computer bereits vorher registriert oder hat das geklo
 
 ### <a name="next-steps"></a>Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
-

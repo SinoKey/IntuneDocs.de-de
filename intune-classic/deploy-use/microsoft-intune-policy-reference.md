@@ -1,5 +1,5 @@
 ---
-title: Referenz zur Konfigurationsrichtlinie | Microsoft-Dokumentation
+title: "Referenz für Konfigurationsrichtlinien"
 description: "Anhand der Informationen in diesem Thema können Sie entscheiden, welche Microsoft Intune-Richtlinie Sie zum Verwalten Ihrer Geräte benötigen."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 986e720f2b0722dd3f16e35f54c975eac5a12153
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: af13a591bdd0e3185a92702aab093d9ae3bc6434
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-configuration-policy-reference"></a>Referenz zur Microsoft Intune-Konfigurationsrichtlinie
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -122,4 +119,3 @@ Microsoft Intune bietet jetzt getrennte **Konfigurationsrichtlinien** für jede 
 ### <a name="see-also"></a>Weitere Informationen:
 
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

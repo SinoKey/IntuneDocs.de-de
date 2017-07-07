@@ -1,5 +1,5 @@
 ---
-title: "Evaluieren der Verwaltung mobiler Geräte (MDM) in Microsoft Intune | Microsoft-Dokumentation"
+title: "Evaluieren der Verwaltung mobiler Geräte (MDM) in Microsoft Intune"
 description: Evaluieren von MDM in Ihrer kostenlosen Intune-Testversion.
 keywords: 
 author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e0eb48c5bb2e0158d7b780af1c16139f10602c4e
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: adef9335d8f199e8dec56e92eb1fda8c180ac6ce
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="evaluate-mobile-device-management-in-microsoft-intune"></a>Evaluieren der Verwaltung mobiler Geräte (MDM) in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -44,7 +41,7 @@ In der Testversion stehen alle Funktionen zur Verfügung, die Sie auch in einer 
 ## <a name="whats-not-covered"></a>Was nicht behandelt wird
 |Wenn Sie folgende Themen interessieren ... |... finden Sie hier weitere Informationen |
 |------------------------|----------|
-|Verwaltung mobiler Geräte (MDM) in einer Produktionsumgebung | [Erste Schritte](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
+|Verwaltung mobiler Geräte (MDM) in einer Produktionsumgebung | [Erste Schritte](/intune/setup-steps) |
 |MDM mit Intune und System Center Configuration Manager | [Hybride Verwaltung mobiler Geräte](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) |
 
 Da die oben genannten Handbücher Ihnen helfen, Intune in Produktionsumgebungen einzurichten, sind sie länger und enthalten viel mehr Entscheidungspunkte, die Sie durcharbeiten müssen, als das Evaluierungshandbuch.
@@ -67,7 +64,7 @@ Kunden, die Intune mit System Center Configuration Manager zum Verwalten mobiler
 Für diese Testversion wird Intune als MDM-Autorität festgelegt. Dies wirkt sich nicht auf Ihre Produktionsumgebung aus, solange Sie die Testsoftware nicht für Ihre Produktionsumgebung verwenden.
 
 1. Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com/) **Admin** &gt; **Verwaltung mobiler Geräte** aus.
-2. Wählen Sie in der Liste **Aufgaben** die Option **MDM-Autorität festlegen** aus. Das Dialogfeld **MDM-Autorität festlegen** wird geöffnet. <!---screen shot--->
+2. Wählen Sie in der Liste **Aufgaben** die Option **MDM-Autorität festlegen** aus. Das Dialogfeld **MDM-Autorität festlegen** wird geöffnet.
 3. Intune erfordert eine Bestätigung, dass es als MDM-Autorität verwendet werden soll. Aktivieren Sie das Kontrollkästchen, und wählen Sie dann **Ja** aus, um Intune zum Verwalten mobiler Geräte zu verwenden.
 
 ## <a name="enroll-your-test-devices-into-intune"></a>Registrieren der Testgeräte bei Intune
@@ -80,14 +77,14 @@ Installieren Sie die **Intune-Unternehmensportal**-App der Microsoft Corporation
 Bevor Benutzer ihre iOS-Geräte registrieren können, müssen Sie Intune für die Verwaltung dieser Geräte einrichten.
 
 1. **Abrufen einer Zertifikatsignierungsanforderung**<br/>
-Melden Sie sich mit Ihrem Administratorkonto bei Intune an, und navigieren Sie zu **Verwaltung** > **Verwaltung mobiler Geräte** > **iOS und Mac OS X** > **APNs-Zertifikat hochladen**, und wählen Sie **APNs-Zertifikatanforderung herunterladen** aus. Speichern Sie die Zertifikatsignierungsanforderung (CSR-Datei) lokal. Die CSR-Datei wird verwendet, um ein Vertrauensstellungszertifikat vom Apple Push Certificates-Portal anzufordern. <!--- screen shot--->
-2.    **Abrufen eines Apple Push Notification Service-Zertifikats**<BR/>
+Melden Sie sich mit Ihrem Administratorkonto bei Intune an, und navigieren Sie zu **Verwaltung** > **Verwaltung mobiler Geräte** > **iOS und Mac OS X** > **APNs-Zertifikat hochladen**, und wählen Sie **APNs-Zertifikatanforderung herunterladen** aus. Speichern Sie die Zertifikatsignierungsanforderung (CSR-Datei) lokal. Die CSR-Datei wird verwendet, um ein Vertrauensstellungszertifikat vom Apple Push Certificates-Portal anzufordern.
+2.  **Abrufen eines Apple Push Notification Service-Zertifikats**<BR/>
 Wechseln Sie zum [Apple Push Certificates-Portal](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2), und melden Sie sich mit Ihrer Unternehmens-Apple-ID an, um das APNs-Zertifikat mithilfe der CSR-Datei zu erstellen. Nachdem Sie im Portal für Apple-Push-Zertifikate **Hochladen** ausgewählt haben, erhalten Sie eine JSON-Datei, die für APNs nicht verwendet werden kann. Schließen Sie den Download ab, kehren Sie zum Apple Push Certificates-Portal für Zertifikate für Drittanbieterserver zurück, und wählen Sie anschließend **Herunterladen** aus.<br/>
 Laden Sie das APNs-Zertifikat (.pem) herunter, und speichern Sie die Datei lokal. Diese Apple-ID muss später verwendet werden, um das APNs-Zertifikat zu erneuern.
-3.    **Hinzufügen des APNs-Zertifikats zu Intune**<BR/>
+3.  **Hinzufügen des APNs-Zertifikats zu Intune**<BR/>
 Navigieren Sie in der Microsoft Intune-Verwaltungskonsole zu **Verwaltung** > **Verwaltung mobiler Geräte** > **iOS und Mac OS X** > **APNs-Zertifikat hochladen**, und wählen Sie anschließend **APNs-Zertifikat hochladen** aus. Wechseln Sie zur Zertifikatdatei (.pem), wählen Sie **Öffnen** aus, und geben Sie anschließend Ihre Apple-ID ein. Mit dem APNs-Zertifikat. Intune kann iOS-Geräte registrieren und verwalten, indem die Richtlinie per Push auf registrierte mobile Geräte übertragen wird.
-4.    **Benutzern erklären, wie sie ihre Geräte registrieren, um auf Unternehmensressourcen zugreifen zu können**<br/>
-Registrierungsanleitungen für Endbenutzer finden Sie unter [Registrieren Ihres iOS-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) oder unter [Registrieren Ihres Mac OS X-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-mac-os-x). Im Laufe des Registrierungsprozesses werden Benutzer darüber informiert, was sie erwarten können und was IT-Administratoren auf ihren Geräten sehen können und was nicht.
+4.  **Benutzern erklären, wie sie ihre Geräte registrieren, um auf Unternehmensressourcen zugreifen zu können**<br/>
+Registrierungsanleitungen für Endbenutzer finden Sie unter [Registrieren Ihres iOS-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) oder unter [Registrieren Ihres Mac OS X-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos). Im Laufe des Registrierungsprozesses werden Benutzer darüber informiert, was sie erwarten können und was IT-Administratoren auf ihren Geräten sehen können und was nicht.
 
 
 ### <a name="learn-more-about-device-enrollment"></a>Weitere Informationen zur Geräteregistrierung
@@ -98,25 +95,14 @@ Intune unterstützt folgende Geräteplattformen:
 
 Die Anforderungen zum Aktivieren der Geräteverwaltung hängen von den Plattformen ab, die Sie verwalten möchten.
 - Mobile **Android**-Geräte ermöglichen Benutzern die [Registrierung über die Unternehmensportal-App](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune), die in Google Play zur Verfügung steht. Es ist keine weitere Konfiguration in Intune erforderlich.
-- [Setupanforderungen für **iOS und Mac OS X**]/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
-- [Setupanforderungen für **Windows Phone**]/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
+- [Setupanforderungen für **iOS und Mac OS X**](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 
-<!--- ## Verify enrollment--->
-<!--- START HERE
-
-### iOS and Mac OS X
-Install the **Microsoft Intune Company Portal** app from Microsoft Corporation available in the App Store and sign in with Intune user credentials added above. View **Enrolled devices** to add your device.
+- [Setupanforderungen für **Windows Phone**](/intune-classic/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune)
 
 
 
-### Windows Phone 8.1
-Users install the **Company Portal** app from Microsoft Corporation, available in the Windows Phone store, and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
-
-## Install the previously deployed app
-Open the Company Portal on the mobile device, choose **Apps**, and then install **Microsoft Skype**.--->
 
 
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Erstellen von Gruppen zum Organisieren von Benutzern und Geräten](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-

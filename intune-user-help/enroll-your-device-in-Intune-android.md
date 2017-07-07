@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 9e70ef08eabb1595804f84247fc1663c5c6f985e
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="enroll-your-android-device-in-intune"></a>Registrieren Ihres Android-Geräts bei Intune
 
 Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ihr Android-Gerät registrieren, um Zugriff auf Unternehmens-E-Mails, Dateien und weitere Ressourcen zu erhalten. Wenn Sie Ihre Geräte registrieren, kann Ihre IT-Abteilung diese Geschäfts-, Schul- oder Uniressourcen verwalten, schützen und Ihnen gleichzeitig die Möglichkeit bieten, Ihr bevorzugtes Gerät zu verwenden, um Ihre Arbeit erledigen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn ich die Unternehmensportal-App installiere und mein Gerät bei registriere?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)
@@ -79,7 +74,7 @@ Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftre
 10.  Wenn Sie Android 6.0 oder höher verwenden, führen Sie diesen Schritt aus. Fahren Sie andernfalls mit dem nächsten Schritt fort.
 
     Wenn Ihr IT-Administrator bestimmte Richtlinien eingerichtet hat, werden möglicherweise folgende Meldungen angezeigt:
-    -    **Zulassen, dass das Unternehmensportal Telefonanrufe tätigt und verwaltet?**
+    -   **Zulassen, dass das Unternehmensportal Telefonanrufe tätigt und verwaltet?**
 
         ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
@@ -87,7 +82,7 @@ Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftre
 
     Wenn Sie den Zugriff verweigern, wird die Meldung bei Ihrer nächsten Anmeldung beim Unternehmensportal angezeigt. Sie können künftige Meldungen jedoch deaktivieren, indem Sie das Kontrollkästchen **Nicht mehr nachfragen** aktivieren. Wenn Sie den Zugriff später erlauben möchten, wechseln Sie zu **Einstellungen** &gt; **Apps** &gt; **Unternehmensportal** &gt; **Berechtigungen** &gt; **Telefon**, um die Berechtigung zu aktivieren.
 
-    -    **Zulassen, dass das Unternehmensportal auf Ihre Kontakte zugreift?**
+    -   **Zulassen, dass das Unternehmensportal auf Ihre Kontakte zugreift?**
 
         ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
@@ -139,4 +134,3 @@ Bevor Sie versuchen, Unternehmens-Apps zu installieren, wechseln Sie zu **Einste
 > Wenn Ihre Organisation Telecom Expense Management-Software verwendet, müssen Sie ein paar zusätzliche Schritte ausführen, bevor das Gerät vollständig registriert ist. [Hier](enroll-your-device-with-telecom-expense-management-android.md) erfahren Sie mehr.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-Team</a>.
-

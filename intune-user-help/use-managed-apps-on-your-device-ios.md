@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: ee43647190da705581eaa5a266db3712391e06f2
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-managed-apps-on-your-ios-device"></a>Verwenden verwalteter Apps auf Ihrem iOS-Gerät
 
 Verwaltete Apps sind Apps, die Ihr IT-Administrator einrichten kann, um Unternehmensdaten zu schützen, auf die Sie in der App zugreifen können. Wenn Sie in einer verwalteten App auf Ihrem iOS-Gerät auf Unternehmensdaten zugreifen, werden Sie feststellen, dass die App ein wenig anders als erwartet funktioniert. Sie können beispielsweise ggf. geschützte Unternehmensdaten nicht kopieren und einfügen oder diese Daten nicht an bestimmten Speicherorten speichern.
@@ -65,4 +61,3 @@ Es folgen einige Beispiele für Optionen, die Ihr IT-Administrator in einer App 
 -   Anforderungen für die Verschlüsselung von Daten
 
 Wenden Sie sich an Ihren IT-Administrator, um weitere Informationen zu den verwalteten Anwendungen auf Ihrem Gerät zu erhalten. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-

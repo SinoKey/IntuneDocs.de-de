@@ -14,13 +14,11 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 5fc5e6108e7e7841ed142f24f463d85273ae8a12
-ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Verwaltungsfunktionen für registrierte Geräte in Microsoft Intune
 
@@ -70,4 +68,3 @@ Verwaltung, Bestandserfassung, Bereitstellung und Außerbetriebnahme von Geräte
 |Funktion|Details|Weitere Informationen|
 |--------------|-----------|--------------------|
 |Inventar und Berichterstellung|Sucht nach Informationen zu den Geräten, die Sie verwalten, und der Software, die die Geräte verwenden.|[Verstehen Sie Ihre Geräte mithilfe des Inventars in Microsoft Intune](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
-

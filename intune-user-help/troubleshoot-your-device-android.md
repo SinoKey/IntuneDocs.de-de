@@ -11,20 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f720befe-a6f9-4422-aa9b-4d85c9fc94e2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="fix-common-issues-with-your-android-device"></a>Behandeln häufig auftretender Probleme mit Ihrem Android-Gerät
 
 Gelegentlich können Probleme mit Ihrem iOS-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Probleme empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) an Ihren IT-Administrator zu wenden.
@@ -45,4 +41,3 @@ Gelegentlich können Probleme mit Ihrem iOS-Gerät auftreten, die Sie möglicher
 - [Es sieht so aus, als sei Ihr Gerät verschlüsselt, aber die Unternehmensportal-App sagt etwas anderes](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [Sie werden aufgefordert, eine App zum Schutz vor Gerätebedrohung auf Ihrem Android-Gerät zu installieren](you-are-prompted-to-install-mtd-android.md)
 - [Sie müssen Bedrohungen beseitigen, die eine App zum Schutz vor Gerätebedrohungen auf Ihrem Android-Gerät erkannt hat](you-need-to-resolve-a-threat-found-by-mtd-android.md)
-

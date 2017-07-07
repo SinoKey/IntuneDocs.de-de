@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8ba85e15fb55a4de1b2f1db53bc5b9962de84394
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-protect-your-android-device-using-encryption"></a>So schützen Sie Ihr Android-Gerät mit Verschlüsselung
 
 Wenn Sie ein Gerät verschlüsseln, umschließen Sie die darauf enthaltenen Informationen mit einer Schicht aus schützendem Code, der den Zugriff durch Unbefugte darauf verhindert. Damit sichergestellt werden kann, dass Ihre Informationen geschützt sind, werden Sie von Ihrer Organisation angewiesen, Ihr Android-Gerät zu schützen, bevor Sie auf Unternehmensdateien, -E-Mails und -daten zugreifen können.
@@ -70,4 +65,3 @@ Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
     5. Öffnen Sie die Unternehmensportal-App, wählen Sie das Gerät aus, und tippen Sie auf **Kompatibilität überprüfen**.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-Team</a>.
-

@@ -1,5 +1,5 @@
 ---
-title: "Erstellen von Richtlinien und Veröffentlichen einer App für Benutzer | Microsoft-Dokumentation"
+title: "Erstellen von Richtlinien und Veröffentlichen einer App für Benutzer"
 description: "So erstellen Sie Richtlinien und veröffentlichen eine App, wenn Sie sich für eine kostenlose 30-tägige Evaluierungsversion von Intune registrieren."
 keywords: 
 author: lindavr
@@ -14,16 +14,12 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0e836571b869e7a32b19968da1d78035a6bae7f2
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 335d91cd6583052bfcc72fc018b387eed8823b7e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>Erstellen von Richtlinien und Veröffentlichen einer App für Benutzer der Evaluierungsversion
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -102,7 +98,6 @@ Damit sind Sie am Ende des Handbuchs zur Verwaltung mobiler Geräte in Intune an
 ## <a name="next-steps"></a>Nächste Schritte
 Erfahren Sie mehr über [Intune-Funktionen](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md).
 
-Erfahren Sie mehr über die [gängigsten Arten der Verwendung von Intune](common-ways-to-use-intune.md).
+Erfahren Sie mehr über die [gängigsten Arten der Verwendung von Intune](/intune/common-scenarios).
 
 Konvertieren eines Testabonnements in ein [kostenpflichtiges Abonnement](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-

@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: a213a46066de4244df23d0cd532b5fb4596ede77
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Sperren Ihres Geräts remote über die Unternehmensportalwebsite
 
 Unfälle passieren, und manchmal kann ein Gerät verloren gehen. Wenn Sie Ihr Gerät verloren haben oder es gestohlen wurde, machen Sie sich womöglich zuerst Sorgen darüber, dass jeder nun Zugriff auf die Informationen auf dem Gerät hat, egal wo sich dieses befindet.
@@ -42,7 +38,7 @@ Um sicherzugehen, können Sie es mithilfe der Remotesperrfunktion auf der [Unter
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>So verwenden Sie die Remotesperre zum Sperren Ihres Geräts
 
-1.    Tippen Sie auf der [Unternehmensportalwebsite](http://portal.manage.microsoft.com) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
+1.  Tippen Sie auf der [Unternehmensportalwebsite](http://portal.manage.microsoft.com) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
 
   ![Eine Abbildung der Unternehmensportalwebsite mit erweitertem Seitenmenü links auf dem Bildschirm, mit den Schaltflächen „Startseite“, „Alle Apps“, „Meine Geräte“, „Helpdesk“ und „Abmelden“.](/media/iwp-expanded-sidebar.png)
 
@@ -50,11 +46,11 @@ Um sicherzugehen, können Sie es mithilfe der Remotesperrfunktion auf der [Unter
 
   ![Ein Screenshot der Seite „Meine Geräte“ mit mehreren nicht identifizierten Geräten oberhalb der Banneraufforderung, nicht aufgelistete Geräte zu registrieren oder nicht identifizierte Geräte zu identifizieren.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    Das Gerät wird in einem Popupfenster geöffnet. Tippen Sie auf die Schaltfläche **Remotesperre**.
+3.  Das Gerät wird in einem Popupfenster geöffnet. Tippen Sie auf die Schaltfläche **Remotesperre**.
 
     ![Alle Optionen für ein ausgewähltes Gerät auf der Unternehmensportalwebsite, darunter „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/iwp-screen-with-all-options.png)
 
-4.    Eine Benachrichtigung wird angezeigt, damit Sie wissen, dass Sie gerade Ihr Gerät sperren. Tippen Sie auf **Remotesperre**, und die Unternehmensportal-Website versucht, das Gerät zu sperren.
+4.  Eine Benachrichtigung wird angezeigt, damit Sie wissen, dass Sie gerade Ihr Gerät sperren. Tippen Sie auf **Remotesperre**, und die Unternehmensportal-Website versucht, das Gerät zu sperren.
 
     Nachdem Sie **Remotesperre** ausgewählt haben, wird die Meldung „Remotesperre steht aus“ angezeigt.  Wenn die Remotesperre erfolgreich durchgeführt wurde, ändert sich der Status zu „Remotesperre war erfolgreich“.
 
@@ -70,4 +66,3 @@ Um sicherzugehen, können Sie es mithilfe der Remotesperrfunktion auf der [Unter
 Wenn Sie Ihr Gerät wiederfinden und die Remotesperre aufheben möchten, geben Sie einfach Ihre Kennung ein.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-

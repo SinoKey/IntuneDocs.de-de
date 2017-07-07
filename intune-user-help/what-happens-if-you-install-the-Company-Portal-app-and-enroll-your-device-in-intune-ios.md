@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
-ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder macOS-Gerät bei Intune registrieren?
 
 Wenn Sie die Unternehmensportal-App installieren und Ihr iOS- oder macOS-Gerät bei Intune registrieren, können Sie folgende Aufgaben mit der Unternehmensportal-App ausführen:
@@ -68,4 +63,3 @@ Wenn Ihr Gerät registriert ist, kann Ihr IT-Administrator die folgenden Aufgabe
 -   Aktivieren oder Deaktivieren einer automatischen Synchronisierung von Dateien im Roamingmodus auf dem Gerät. Wenn die automatische Synchronisierung von Dateien zulässig ist, können Roaminggebühren anfallen.
 
 Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
-

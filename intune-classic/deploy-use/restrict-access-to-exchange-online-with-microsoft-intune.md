@@ -1,5 +1,5 @@
 ---
-title: "Schützen von E-Mail auf Exchange Online | Microsoft-Dokumentation"
+title: "Schützen von E-Mail an Exchange Online"
 description: "Schützen und steuern Sie den Zugriff auf Unternehmens-E-Mail in Exchange Online mit bedingtem Zugriff."
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 742a989744a11dbc1c9e17a25b70388e06dd5ae7
-ms.contentlocale: de-de
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: c428d7f01872c9f0968bb69dc4dc1886a7c1828b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="protect-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Schützen des E-Mail-Zugriffs auf Exchange Online- und neue Exchange Online Dedicated-Umgebungen mit Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -210,7 +206,7 @@ Es werden nur die Gruppen ausgewertet, für die die Richtlinie für bedingten Zu
         Dies setzt voraus, dass jedes Gerät, das für den Zugriff auf **Exchange Online** verwendet wird, in Intune registriert und mit den Richtlinien kompatibel ist. Jede Clientanwendung, die die **moderne Authentifizierung** verwendet, unterliegt der Richtlinie für bedingten Zugriff. Wenn die Plattform zurzeit von Intune nicht unterstützt wird, ist der Zugriff auf **Exchange Online** blockiert.
 
         Die Auswahl der Option **Alle Plattformen** bedeutet, dass Azure Active Directory diese Richtlinie auf alle Authentifizierungsanforderungen anwendet, unabhängig von der Plattform, die von der Clientanwendung gemeldet wird. Alle Plattformen müssen registriert und kompatibel sein, mit Ausnahme von:
-        *    Windows-Geräten. Diese müssen registriert werden und kompatibel sein, mit der lokalen Active Directory-Domäne verknüpft sein oder beides.
+        *   Windows-Geräten. Diese müssen registriert werden und kompatibel sein, mit der lokalen Active Directory-Domäne verknüpft sein oder beides.
         * Nicht unterstützte Plattformen wie Mac OS Allerdings werden Apps, die die moderne Authentifizierung von diesen Plattformen verwenden, weiterhin blockiert.
 
     -   **Bestimmte Plattformen**
@@ -275,4 +271,3 @@ Wählen Sie im Intune-Dashboard die Kachel **Geräte mit blockiertem Exchange-Zu
 - [Protect access to SharePoint Online (Schützen des Zugriffs auf SharePoint Online)](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 - [Protect access to Skype for Business Online (Schützen des Zugriffs auf Skype for Business Online)](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-

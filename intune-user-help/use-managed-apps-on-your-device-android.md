@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 371e534a25df470edf2731b901640092e1a6e366
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="use-managed-apps-on-your-android-device"></a>Verwenden verwalteter Apps auf Ihrem Android-Gerät
 
 Verwaltete Apps sind Apps, die Ihr IT-Administrator einrichten kann, um Unternehmensdaten zu schützen, auf die Sie in der App zugreifen können. Wenn Sie in einer verwalteten App auf Ihrem Android-Gerät auf Unternehmensdaten zugreifen, werden Sie feststellen, dass die App ein wenig anders als erwartet funktioniert. Sie können beispielsweise ggf. geschützte Unternehmensdaten nicht kopieren und einfügen oder diese Daten nicht an bestimmten Speicherorten speichern.
@@ -78,4 +73,3 @@ Es folgen allgemeine Anwendungen, die Ihre IT-Abteilung ggf. verwaltet:
 -   Microsoft Word, Excel und PowerPoint
 
 Wenden Sie sich an Ihren IT-Administrator, um weitere Informationen zu den verwalteten Anwendungen auf Ihrem Gerät zu erhalten. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-

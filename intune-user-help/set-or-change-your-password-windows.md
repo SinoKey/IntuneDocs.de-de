@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: d7d9ce0e1dc17dfafe78757a4bd8e48f9f67132d
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="make-your-device-safer-with-the-right-password"></a>Machen Sie Ihr Gerät mit dem richtigen Kennwort sicherer
 
 Personen müssen täglich über ihre Windows-Geräte auf Unternehmensressourcen zugreifen, z. B. E-Mails und Dokumente. Ihre Organisation möchte sicherstellen, dass Ihr Gerät diesen Vorgang sicher ausführen kann. Eine Möglichkeit, den Zugriff von Ihrem Gerät auf diese Ressourcen sicher zu machen, besteht darin, die Verwendung eines Gerätekennworts zu verlangen. Diese Kennwörter werden beispielsweise verwendet, um über den Sperrbildschirm auf das Gerät zuzugreifen.
@@ -49,4 +45,3 @@ Wenn Ihr Windows-Gerät die Kennwortrichtlinie Ihres IT-Administrators nicht erf
 4. Wählen Sie **Fertig** aus.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-
