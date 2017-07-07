@@ -1,5 +1,5 @@
 ---
-title: "Direkte Registrierung für iOS-Geräte | Microsoft-Dokumentation"
+title: "Direkte Registrierung für iOS-Geräte"
 description: "Verwenden Sie den Apple Configurator, um unternehmenseigene iOS-Geräte direkt mit einer vordefinierten Richtlinie zu registrieren, indem Sie sie über USB an einen Mac-Computer anschließen."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ee0320db2c4a1a977326f62fcd20597fa39aba24
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9909e1dd4f9891a2efb47383242ed7765d3f0291
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="directly-enroll-ios-devices-by-using-apple-configurator"></a>Direkte Registrierung von iOS-Geräten mithilfe von Apple Configurator
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -93,4 +90,3 @@ Wenn Sie iOS-Geräte direkt registrieren, können Sie ein Gerät registrieren, o
 9.  Öffnen Sie auf dem iOS-Gerät **Einstellungen**, und wechseln Sie zu **Allgemein** &gt; **Geräteverwaltung** &gt; **Management Profile** (Verwaltungsprofil). Vergewissern Sie sich, dass die Profilinstallation aufgelistet ist, und überprüfen Sie die iOS-Richtlinieneinschränkungen und die installierten Apps. Es kann bis zu 10 Minuten dauern, bis Richtlinieneinschränkungen und Apps auf dem Gerät angezeigt werden.
 
 10.  Verteilen von Geräten. Das iOS-Gerät ist jetzt bei Intune registriert und wird verwaltet.
-

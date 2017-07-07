@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0dc35efe-4fd4-4d4a-8569-d649ea704fea
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: 0f5c1eb76f823c72904bad7543409d9efa9e93e6
-ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Windows 10-Gerät bei Intune registrieren?
 
 Wenn Sie die Unternehmensportal-App installieren und dann mithilfe der App Ihr Windows 10 Enterprise- oder Professional-Gerät bei Intune registrieren, können Sie folgende Aufgaben mit der Unternehmensportal-App durchführen:
@@ -57,4 +53,3 @@ Wenn Sie einen Computer hinzufügen:
 -   Ihr IT-Administrator könnte Richtlinien auf dem Computer erzwingen. Beispielsweise könnte von Ihnen angefordert werden, ein Kennwort oder eine PIN auf dem Computer festzulegen. Ihr IT-Administrator kann möglicherweise auch einschränken, wie oft Sie ein falsches Kennwort eingeben können und den Computer für Sie sperren oder alle Daten von der Festplatte Ihres Computers löschen, wenn Sie das Kennwort zu oft falsch eingeben.
 
 Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
-

@@ -1,5 +1,5 @@
 ---
-title: "Einstellungen der Richtlinie für Windows-Editionsupgrades | Microsoft-Dokumentation"
+title: "Richtlinieneinstellungen für Windows-Editionsupgrades"
 description: "Erfahren Sie, wie Sie Windows 10-Geräte mit Intune automatisch auf eine andere Version aktualisieren."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 81061f032ef2079695f45e54e99cbb6479252bed
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1505adb219c38d9a67f4fa276ca345f05a0df42a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="windows-edition-upgrade-policy-settings-in-microsoft-intune"></a>Einstellungen der Richtlinie für Windows-Editionsupgrades in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -56,4 +53,3 @@ Bevor Sie beginnen, Geräte auf die neueste Version zu aktualisieren, benötigen
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

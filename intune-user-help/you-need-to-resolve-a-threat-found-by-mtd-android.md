@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9e176e10-72fd-42fe-94ef-b41d57a4914f
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: d1276c983cdf0e22e2e78e79b6646e045c8fb135
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Sie müssen eine Bedrohung beheben, die von einer Mobile Threat Defense-App erkannt wurde
 
 Mobile Threat Defense hat eine potenzielle Bedrohung auf Ihrem Gerät erkannt, und Sie müssen das Problem beheben, um wieder Zugriff auf die E-Mails, Apps und Dateien Ihres Unternehmens, Ihrer Schule oder Ihrer Uni zu erhalten. Je nachdem, wie Ihr IT-Administrator Mobile Threat Defense eingerichtet hat, können Sie eine der folgenden Apps verwenden, um das Problem zu beheben.
@@ -40,4 +36,3 @@ Wenn Sie eine App installiert haben, die Mobile Threat Defense als Bedrohung ein
 Nach der Deinstallation der App erhalten Sie sofort wieder Zugriff auf Ihre E-Mails und anderen Firmen- oder Schuldaten. Wenn Sie die Aufforderung zur Deinstallation der App ignorieren, haben Sie solange keinen Zugriff auf Ihre Unternehmens-E-Mails und -daten, bis Sie die App deinstallieren.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-

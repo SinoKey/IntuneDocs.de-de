@@ -14,15 +14,12 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8acde93c1c0c0d3bf443daf61d5f8d75b3d061df
-ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-devices-with-microsoft-intune"></a>Schützen von Geräten mit Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -65,4 +62,3 @@ Die Aktivierungssperre ist eine Funktion, mit der Geräte von Benutzern geschüt
 
 ## <a name="protect-windows-pcs-managed-with-the-intune-client"></a>Schützen von mit dem Intune-Client verwalteten Windows-PCs
 Intune unterstützt auch Sicherheitsrichtlinien für Windows-PCs, die Sie nicht registrieren, sondern über die Intune-Computerclientsoftware verwalten. Erfahren Sie, wie diese Richtlinien Sie beim Schützen Ihrer Windows-PCs unterstützen: [Verwenden von Richtlinien zum Schutz von Windows-PCs, auf denen die Intune-Clientsoftware ausgeführt wird](policies-to-protect-windows-pcs-in-microsoft-intune.md).
-

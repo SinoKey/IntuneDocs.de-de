@@ -1,5 +1,5 @@
 ---
-title: "Schützen von Unternehmensdaten durch Datenverschlüsselung | Microsoft-Dokumentation"
+title: "Schützen von Unternehmensdaten durch Datenverschlüsselung"
 description: "Dieser Leitfaden hilft Ihnen dabei, Ihr Unternehmen vor Datenverlust zu schützen, indem durch die Verwendung einer Richtlinie in mobilen Apps eine Kennung sowie die Datenverschlüsselung erzwungen wird."
 keywords: "Verschlüsselung, PIN, Daten"
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d1cffa0066ffcbb9f0aadcb387cefee1ffe1f47a
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 42ae7cdedbcbd9bf6420ca9fd2cfa39a75174736
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>Erste Schritte: Schützen von Unternehmensdaten durch Datenverschlüsselung
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -45,12 +42,11 @@ Dieses Schnellstarthandbuch stellt eine gute Ressource für Sie dar, wenn Sie di
 Dieser Leitfaden hilft Ihnen dabei, Ihr Unternehmen vor Datenverlust zu schützen, indem eine Kennung sowie die Datenverschlüsselung erzwungen wird. Dies erfolgt durch die Verwendung von Richtlinien in mobilen Apps, die Ihre Mitarbeiter für den Zugriff auf sensible Daten verwenden, ohne dass eine vollständige Registrierung bei einer Geräteverwaltungslösung erforderlich ist. Microsoft Intune ermöglicht Ihnen das Festlegen von MAM-Richtlinien (mobile application management, Verwaltung mobiler Anwendungen) in mobilen Office-Apps für [iOS](https://products.office.com/mobile/office-mobile-apps-for-ios) und [Android](https://products.office.com/mobile/office-mobile-apps-for-android). Dadurch werden O365-Daten geschützt, ohne dass Benutzer ihre Geräte in einer MDM-Lösung (mobile device management, Verwaltung mobiler Geräte) registrieren müssen, wobei zudem gleichzeitig eine hervorragende Endbenutzerfreundlichkeit der mobilen Office-Apps bewahrt wird.
 
 ## <a name="how-do-i-do-it"></a>Wie gehe ich dabei vor?
-1.    [Lesen Sie, wie Sie App-Daten schützen können](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-2.    [Vorbereiten der Konfiguration von Verwaltungsrichtlinien für mobile Apps](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-3.    [Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+1.  [Lesen Sie, wie Sie App-Daten schützen können](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+2.  [Vorbereiten der Konfiguration von Verwaltungsrichtlinien für mobile Apps](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+3.  [Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="additional-information"></a>Zusätzliche Informationen:
-- [Erfahren Sie mehr über die Endbenutzererfahrung für MAM-fähige Apps mit Microsoft Intune.]/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
-- [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune.]/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [Erfahren Sie mehr über die Endbenutzererfahrung für MAM-fähige Apps mit Microsoft Intune.](/intune-classic/eploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
+- [Entscheiden Sie, wie Sie Apps für die mobile Anwendungsverwaltung mit Microsoft Intune vorbereiten.](/intune/apps-prepare-mobile-application-management)
 - [Zeigen Sie die Liste der Microsoft Intune-Anwendungspartner an.](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
-

@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen der Lookout for Work-App | Microsoft-Dokumentation
+title: Bereitstellen von Lookout for Work-Apps
 description: "Konfigurieren und Bereitstellen von Lookout for Work-Apps für Android."
 author: andredm7
 ms.author: andredm
@@ -13,15 +13,12 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 95f7c782558f98d5be3a89d24b9e9721a7bd40c0
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 5d4f496709a8607b0d6d473355c96e8fc502838b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-and-deploy-lookout-for-work-app"></a>Konfigurieren und Bereitstellen der Lookout for Work-App
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -30,12 +27,12 @@ In diesem Artikel wird die Konfiguration und Bereitstellung der Lookout for Work
 
 ## <a name="android-google-play-store-app"></a>Android (Google Play Store-App)
 
-1.    Wechseln Sie in der [Microsoft Intune-Administratorkonsole](https://manage.microsoft.com) zu **Apps**, und wählen Sie **Apps hinzufügen** aus.
-2.    Wählen Sie auf der Seite **Softwaresetup** des Herausgebers **Externer Link** aus, und geben Sie die folgende URL an: https://play.google.com/store/apps/details?id=com.lookout.enterprise
+1.  Wechseln Sie in der [Microsoft Intune-Administratorkonsole](https://manage.microsoft.com) zu **Apps**, und wählen Sie **Apps hinzufügen** aus.
+2.  Wählen Sie auf der Seite **Softwaresetup** des Herausgebers **Externer Link** aus, und geben Sie die folgende URL an: https://play.google.com/store/apps/details?id=com.lookout.enterprise
   >[!NOTE]
   >Klicken Sie nicht auf das Feld, das einen verwalteten Browser vorschreibt.
 
-3.    Geben Sie auf der Seite **Softwarebeschreibung** die folgenden Informationen ein:
+3.  Geben Sie auf der Seite **Softwarebeschreibung** die folgenden Informationen ein:
   * **Herausgeber:** Lookout Mobile Security
   * **Name:**   Lookout for Work
   * **Beschreibung:** Lookout bietet optimalen Schutz vor mobilen Bedrohungen, um die Sicherheit Ihres Geräts zu gewährleisten. Wenn die Lookout-App auf einem Gerät installiert ist, schützt die App das Gerät vor Bedrohungen und warnt Sie und Ihren Unternehmensadministrator, wenn Bedrohungen erkannt werden.
@@ -96,4 +93,3 @@ https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Wenn der
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Erstellen einer Lookout-Gerätekonformitätsrichtlinie in Intune](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)
-

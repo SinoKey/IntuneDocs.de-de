@@ -1,7 +1,7 @@
 ---
-title: "VPN-Einstellungen für macOS-Geräte in Intune | Microsoft-Dokumentation"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erfahren Sie etwas über die Intune-Einstellungen, die Sie zum Konfigurieren von VPN-Verbindungen auf macOS-Geräten verwenden können."
+title: "VPN-Einstellungen für macOS-Geräte in Intune"
+titleSuffix: Intune on Azure
+description: "Erfahren Sie etwas über die Intune-Einstellungen, die Sie zum Konfigurieren von VPN-Verbindungen auf macOS-Geräten verwenden können.\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4737fc863e3eda92eafd0536a07abf4100ebe9cc
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 83e3776aacbddc37e5e7586d8fd7580143dead64
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-settings-for-macos-devices-in-microsoft-intune"></a>VPN-Einstellungen für macOS-Geräte in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Je nach den ausgewählten Einstellungen können nicht alle Werte in der folgenden Liste konfiguriert werden.
 
@@ -61,4 +58,3 @@ Wenn Sie **Benutzerdefiniertes VPN** ausgewählt haben, konfigurieren Sie diese 
 - **Automatisches Konfigurationsskript:** Verwenden Sie eine Datei zum Konfigurieren des Proxyservers. Geben Sie die **Proxyserver-URL** ein (z.B. **http://proxy.contoso.com**), unter der die Konfigurationsdatei zu finden ist.
 - **Adresse:** Geben Sie die Adresse des Proxyservers (als IP-Adresse) ein.
 - **Portnummer:** Geben Sie die Portnummer ein, die dem Proxyserver zugeordnet ist.
-

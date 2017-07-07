@@ -1,5 +1,5 @@
 ---
-title: "WLAN über PSK | Microsoft-Dokumentation"
+title: "WLAN über PSK"
 description: "Erstellen Sie anhand der benutzerdefinierten Konfiguration ein WLAN-Profil mit einem vorinstallierten Schlüssel."
 keywords: 
 author: robstackmsft
@@ -14,14 +14,11 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6845097b768e67c7fbc6ff16bf41f27982c4b33e
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 7f3432f914c2f4a76d7a9303924d106b270220a1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Verwenden einer benutzerdefinierten Richtlinie zum Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel
 
@@ -30,24 +27,24 @@ ms.lasthandoff: 05/23/2017
 Hier wird erläutert, wie Sie anhand der **benutzerdefinierten Konfiguration** von Intune ein WLAN-Profil mit einem vorinstallierten Schlüssel erstellen. Dieses Thema umfasst außerdem ein Beispiel für die Erstellung eines EAP-basierten WLAN-Profils.
 
 > [!NOTE]
--    Möglicherweise ist es für Sie einfacher, den Code von einem Computer zu kopieren, der eine Verbindung mit dem jeweiligen Netzwerk herstellt, wie unten beschrieben.
+-   Möglicherweise ist es für Sie einfacher, den Code von einem Computer zu kopieren, der eine Verbindung mit dem jeweiligen Netzwerk herstellt, wie unten beschrieben.
 - Bei Android haben Sie auch die Möglichkeit, diesen von Johnathon Biersack bereitgestellten [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) zu verwenden.
--    Sie können mehrere Netzwerke und Schlüssel hinzufügen, indem Sie weitere OMA-URI-Einstellungen hinzufügen.
+-   Sie können mehrere Netzwerke und Schlüssel hinzufügen, indem Sie weitere OMA-URI-Einstellungen hinzufügen.
 -  Verwenden Sie für iOS den Apple Configurator auf einer Mac-Station, um das Profil einzurichten. Verwenden Sie alternativ diesen [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/), der von Johnathon Biersack bereitgestellt wird.
 
 
-1.    Um ein WLAN-Profil mit einem vorinstallierten Schlüssel für Android oder Windows oder ein EAP-basiertes WLAN-Profil zu erstellen, wählen Sie beim Erstellen einer Richtlinie statt eines WLAN-Profils die Option **Benutzerdefinierte Konfiguration** für die jeweilige Geräteplattform aus.
+1.  Um ein WLAN-Profil mit einem vorinstallierten Schlüssel für Android oder Windows oder ein EAP-basiertes WLAN-Profil zu erstellen, wählen Sie beim Erstellen einer Richtlinie statt eines WLAN-Profils die Option **Benutzerdefinierte Konfiguration** für die jeweilige Geräteplattform aus.
 
-2.    Geben Sie einen Namen und eine Beschreibung an.
-3.    Fügen Sie eine neue OMA-URI-Einstellung hinzu:
+2.  Geben Sie einen Namen und eine Beschreibung an.
+3.  Fügen Sie eine neue OMA-URI-Einstellung hinzu:
 
-   a.    Geben Sie einen Namen für diese WLAN-Netzwerkeinstellung ein.
+   a.   Geben Sie einen Namen für diese WLAN-Netzwerkeinstellung ein.
 
-   b.    Geben Sie eine Beschreibung für die OMA-URI-Einstellung ein, oder lassen Sie sie leer.
+   b.   Geben Sie eine Beschreibung für die OMA-URI-Einstellung ein, oder lassen Sie sie leer.
 
-   c.    **Datentyp**: Legen Sie diesen auf "String(XML)" fest.
+   c.   **Datentyp**: Legen Sie diesen auf "String(XML)" fest.
 
-   d.    **OMA-URI**:
+   d.   **OMA-URI**:
 
     - **Für Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Für Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -221,4 +218,3 @@ Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informa
 
 ### <a name="see-also"></a>Weitere Informationen:
 [WLAN-Verbindungen in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
-

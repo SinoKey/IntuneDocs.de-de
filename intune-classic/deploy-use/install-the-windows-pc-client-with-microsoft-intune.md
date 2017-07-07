@@ -1,6 +1,5 @@
 ---
-
-title: Installieren der PC-Clientsoftware | Microsoft-Dokumentation
+title: Installieren der PC-Clientsoftware
 description: Befolgen Sie diese Anleitung zum Verwalten Ihrer Windows-PCs durch die Microsoft Intune-Clientsoftware.
 keywords: 
 author: nathbarn
@@ -14,16 +13,16 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 356ada64224f8982baf93ddaccb44df123c4568c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Installieren des Intune-Softwareclients auf Windows-PCs
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Windows-PCs können mithilfe der Installation der Intune-Clientsoftware registriert werden. Die Intune-Clientsoftware kann mithilfe der folgenden Methoden installiert werden:
 
 - Vom IT-Administrator, mithilfe einer der folgenden Methoden: Manuelle Installation, Gruppenrichtlinie oder in einem Datenträgerimage enthaltene Installation
@@ -261,4 +260,3 @@ Der Prozess zur Aufhebung der Registrierung entfernt nicht den OnlineManagement-
 ### <a name="see-also"></a>Weitere Informationen:
 [Verwalten von Windows-PCs mit Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 [Problembehandlung beim Clientsetup](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
-

@@ -1,5 +1,5 @@
 ---
-title: Angeben von IMEI-Nummern | Microsoft-Dokumentation
+title: Angeben von IMEI-Nummern
 description: "Mithilfe von Microsoft Intune können Administratoren IMEI-Nummern für mobile Geräteplattformen zur Identifizierung von unternehmenseigenen mobilen Geräten importieren."
 keywords: 
 author: NathBarn
@@ -14,15 +14,12 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3388bce5bc4bb675b0342b463ed620c6023d51a2
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: d1ecc65dac893740b152aa743e6b32c5de5a3ec9
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>Angeben unternehmenseigener Geräte über IMEI-Nummern (International Mobile Equipment Identity)
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -61,4 +58,3 @@ Wenn ein Gerät mit einer IMEI-Nummer bei Intune registriert wird (in der Regel,
 > Wenn Ihre Organisation demnächst zum neuen Azure-Portal migriert wird, erkennen Sie eine Veränderung dieser Funktion. In der vorhandenen Intune-Administratorkonsole können Administratoren zugehörige Details einer hochgeladenen CSV-Datei akzeptieren und die vorhandenen Details für einzelne Hardware-IDs überschreiben. Sie können im neuen Azure-Portal automatisch die Details für alle Hardware-IDs überschreiben oder alle neuen Details für vorhandene IDs ignorieren.
 
 Detaillierte Angaben über International Mobile Equipment Identifier finden Sie unter [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
-

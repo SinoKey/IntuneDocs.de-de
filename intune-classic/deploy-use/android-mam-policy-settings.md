@@ -1,5 +1,5 @@
 ---
-title: Android-MAM-Richtlinieneinstellungen | Microsoft-Dokumentation
+title: Android-MAM-Richtlinieneinstellungen
 description: "In diesem Thema werden die Richtlinieneinstellungen für die Verwaltung mobiler Apps für Android-Geräte beschrieben."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 017c316ce102b71b3ef9552d8fe69181b79473de
-ms.contentlocale: de-de
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 785e36bb9354e02e4040b5cf2271cbf6f10c4041
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Einstellungen für App-Schutzrichtlinien in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -91,4 +88,3 @@ Es gibt zwei Kategorien von Richtlinieneinstellungen: Datenverlagerungs- und Zug
 | **Offline-Intervall (in Tagen), bevor App-Daten zurückgesetzt werden** | Nach diesem Zeitraum (durch den Administrator definiert) im Offline-Modus, führt die App selbst ein selektives Zurücksetzen aus. Dieses selektive Zurücksetzen ist dasselbe Zurücksetzen wie das, das durch den Administrator im Workflow zum selektiven Zurücksetzen für MAM initiiert werden kann. <br><br> | 90 Tage |
 | **Bildschirmaufnahme und Android-Assistent blockieren (Android 6.0+)** | Wählen Sie **Ja** aus, um die Bildschirmaufnahme und den **Android-Assistenten** des Geräts zu blockieren, wenn diese App verwendet wird. Bei der Auswahl von **Ja** wird auch das Vorschaubild für den App-Schnellzugriff unscharf, wenn diese App mit einem Geschäfts-, Schul- oder Unikonto verwendet wird. | Nein |
 | **App-PIN deaktivieren, wenn die Geräte-PIN verwaltet wird** | Wählen Sie **Ja**, um die App-PIN zu deaktivieren, wenn eine Gerätesperre auf einem registrierten Gerät erkannt wird. | Nein |
-

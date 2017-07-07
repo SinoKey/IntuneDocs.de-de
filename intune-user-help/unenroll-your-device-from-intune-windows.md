@@ -11,31 +11,26 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 10e6bda2001b5dfeb380e9a553aa0fe5a060746b
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-windows-device-from-intune"></a>Aufheben der Registrierung Ihres Windows-Geräts bei Intune
 
 Wenn Sie in Intune registriert sind, Ihr Windows-Gerät aber nicht mehr für die Arbeit oder in der Schule bzw. Uni verwenden möchten und auch nicht mehr auf geschäftliche oder Schul-/Uni-E-Mails, -Apps oder andere diesbezügliche Ressourcen zugreifen müssen, müssen Sie die Registrierung Ihres Geräts aufheben. Nachdem Sie die Registrierung Ihres Geräts bei Intune aufgehoben haben, können Sie nicht mehr auf diese Ressourcen zugreifen. Weitere Informationen dazu, was bei Aufheben der Registrierung Ihres Geräts bei Intune geschieht, finden Sie unter [Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
 Klicken Sie zum Aufheben der Registrierung Ihres Geräts im Abschnitt „Inhalt dieses Artikels“ weiter oben auf den Link, der dem Typ Ihres Geräts entspricht:
 
--    [Aufheben der Registrierung Ihres Windows 10-Geräts](#unenroll-your-windows-10-device)
--    [Aufheben der Registrierung Ihres Computers mit Windows 8.1](#unenroll-your-windows-81-computer)
--    [Aufheben der Registrierung Ihres Windows Phone 8.1-Geräts](#unenroll-your-windows-phone-81-device)
+-   [Aufheben der Registrierung Ihres Windows 10-Geräts](#unenroll-your-windows-10-device)
+-   [Aufheben der Registrierung Ihres Computers mit Windows 8.1](#unenroll-your-windows-81-computer)
+-   [Aufheben der Registrierung Ihres Windows Phone 8.1-Geräts](#unenroll-your-windows-phone-81-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>Aufheben der Registrierung Ihres Windows 10-Geräts
 
@@ -68,4 +63,3 @@ Klicken Sie zum Aufheben der Registrierung Ihres Geräts im Abschnitt „Inhalt 
 4.  Tippen Sie im Dialogfeld **Konto löschen** auf **Löschen**.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-

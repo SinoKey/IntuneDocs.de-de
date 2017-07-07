@@ -1,5 +1,5 @@
 ---
-title: "Einstellungen für Konformitätsrichtlinien für Android | Microsoft-Dokumentation"
+title: "Einstellungen für Kompatibilitätsrichtlinien für Android"
 description: "In diesem Thema werden die Gerätekompatibilitätsrichtlinien für Android-Geräte beschrieben."
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 06996ca5d6c330357d6fdee19963d425bc353070
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: cc698998491fa56769376c013fb76ac75b5627bb
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -90,4 +86,3 @@ Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folge
   Ein Link zum Durchführen von Upgrades wird angezeigt. Der Benutzer kann ein Upgrade des Geräts durchführen und anschließend auf die Unternehmensressourcen zugreifen.
 
 - **Maximal zulässige Betriebssystemversion:** Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt, und der Benutzer wird gebeten, sich an den IT-Administrator zu wenden. Mit diesem Gerät kann solange nicht auf Unternehmensressourcen zugegriffen werden, bis die Regel geändert und die betreffende Betriebssystemversion zugelassen wird.
-

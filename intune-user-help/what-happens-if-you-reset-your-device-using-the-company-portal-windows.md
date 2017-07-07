@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4c4d46a8d90c3435b640a6135d69df1f3949b6a3
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Was geschieht, wenn Sie Ihr Windows-Gerät mithilfe des Unternehmensportals zurücksetzen?
 
 Wenn Sie Ihr Windows-Gerät mithilfe der Unternehmensportal-App oder [Unternehmensportal-Website](reset-erase-your-device-cpwebsite.md) zurücksetzen, wird das Gerät auf die Werkseinstellungen zurückgesetzt. Dabei werden alle Apps, Einstellungen und Daten, einschließlich Ihrer persönlichen Daten, gelöscht. Was auf den einzelnen Geräten geschieht, hängt vom Typ des Geräts und seiner Verwendung ab (wie in der folgenden Tabelle beschrieben). Anweisungen zum Zurücksetzen des verloren gegangenen oder gestohlenen Geräts finden Sie unter [Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Geräts](reset-erase-your-device-cpwebsite.md).
@@ -38,4 +33,3 @@ Wenn Sie Ihr Windows-Gerät mithilfe der Unternehmensportal-App oder [Unternehme
 |PCs und Laptops|**Windows 8.1 und Windows 8**<br />Ein Computer mit dem Betriebssystem Windows 8 oder Windows 8.1 kann nicht zurückgesetzt werden, sofern er nicht nur zum Abrufen von E-Mails verwendet wird.<br /><br />**Windows 7 oder Windows Vista**<br />Ein Computer mit dem Betriebssystem Windows 7 oder älter kann nicht zurückgesetzt werden.|
 
 Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-

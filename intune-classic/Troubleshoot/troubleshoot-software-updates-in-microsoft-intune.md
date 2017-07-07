@@ -14,15 +14,12 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: b33c5978c2cb27eb7e486d139e71937c41f48b28
-ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Behandlung von Problemen bei Softwareupdates in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -268,4 +265,3 @@ Wenn Sie Windows 7 ausführen, stellen Sie außerdem sicher, dass Sie das folge
 
 ### <a name="next-steps"></a>Nächste Schritte
 Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) beschrieben an den Microsoft Support.
-

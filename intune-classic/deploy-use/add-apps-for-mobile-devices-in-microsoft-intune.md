@@ -14,15 +14,12 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 98d0376ff02ea89e019fba6022de800f3ca84555
-ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Hinzufügen von Apps für registrierte Geräte zu Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -105,4 +102,3 @@ In diesem vierminütigen Video erfahren Sie, wie Sie MSI-Anwendungen (Windows In
 ## <a name="next-steps"></a>Nächste Schritte
 
 Nachdem Sie eine App erstellt haben, umfasst der nächste Schritt die Bereitstellung. Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](deploy-apps.md).
-

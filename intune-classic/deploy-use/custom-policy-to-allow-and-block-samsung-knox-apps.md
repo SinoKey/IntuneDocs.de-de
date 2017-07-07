@@ -1,5 +1,5 @@
 ---
-title: "Zulässige und blockierte Apps für KNOX | Microsoft-Dokumentation"
+title: "Zulässige und blockierte Apps für KNOX"
 description: "Benutzerdefiniertes Profil, um eine Liste der zulässigen und blockierten Apps für KNOX zu erstellen."
 keywords: 
 author: robstackmsft
@@ -14,14 +14,11 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: b215425534e833db7e92e3f60fc507a168ef576f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Verwenden von benutzerdefinierten Richtlinien zum Zulassen und Blockieren von Apps für Samsung KNOX Standard-Geräte
 
@@ -43,9 +40,9 @@ Diese Einstellungen können nur von Geräten verwendet werden, auf denen Samsung
     
     - **Name der Einstellung.** Geben Sie **PreventStartPackages** ein.
     - **Beschreibung der Einstellung.** Geben Sie optional eine Beschreibung wie z.B. „Liste der Apps, deren Ausführung blockiert wird“ ein.
-    -     **Datentyp.** Wählen Sie in der Dropdownliste **Zeichenfolge** aus.
-    -     **OMA-URI.** Geben Sie **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** ein.
-    -     **Wert.** Geben Sie eine Liste mit den Namen der App-Pakete ein, die Sie blockieren möchten. Sie können **; : ,** oder **|** als Trennzeichen verwenden. (Beispiel: Paket1; Paket2;)
+    -   **Datentyp.** Wählen Sie in der Dropdownliste **Zeichenfolge** aus.
+    -   **OMA-URI.** Geben Sie **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** ein.
+    -   **Wert.** Geben Sie eine Liste mit den Namen der App-Pakete ein, die Sie blockieren möchten. Sie können **; : ,** oder **|** als Trennzeichen verwenden. (Beispiel: Paket1; Paket2;)
 
     Für eine Liste von Apps, die Benutzer des Geräts aus Google Play Store installieren dürfen, wobei alle anderen Apps ausgeschlossen werden:
 
@@ -74,4 +71,3 @@ Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informa
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Einstellungen für Android- und Samsung KNOX-Richtlinien in Microsoft Intune](android-policy-settings-in-microsoft-intune.md)
-

@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: b7cd5e4d019030a432845557de4cd27ee652785a
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>Sie müssen eine von Lookout for Work erkannte Bedrohung beseitigen
 
 Lookout for Work hat eine potenzielle Bedrohung auf Ihrem Gerät erkannt, und Sie müssen das Problem beheben, um wieder Zugriff auf Ihre Geschäfts-, Schul- oder Uni-E-Mails, -Apps und -dateien zu erhalten. Die angezeigte Meldung könnte wie folgt aussehen:
@@ -49,4 +45,3 @@ Wenn Sie eine App installiert haben, die von Lookout for Work als Bedrohung eing
 Nach der Deinstallation der App erhalten Sie sofort wieder Zugriff auf Ihre Unternehmens-E-Mails und -daten. Wenn Sie die Aufforderung zur Deinstallation der App ignorieren, haben Sie solange keinen Zugriff auf E-Mails und Daten, bis Sie die App deinstallieren.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-

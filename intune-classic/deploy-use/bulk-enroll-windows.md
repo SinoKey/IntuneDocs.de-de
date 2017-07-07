@@ -1,5 +1,5 @@
 ---
-title: "Massenregistrierung für Windows 10 | Microsoft-Dokumentation"
+title: "Massenregistrierung für Windows 10"
 description: "Erstellen eines Pakets für die Massenregistrierung für Microsoft Intune"
 keywords: 
 author: NathBarn
@@ -13,18 +13,17 @@ ms.technology:
 ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
 ms.reviewer: damionw
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 027f2ff4e822f7800405bd0f318afe28a47c5a00
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: ab52ba70403da5192cd3539dfd6d1e64bd79268c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Massenregistrierung für Windows-Geräte
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Als Administrator können Sie eine große Anzahl von neuen Windows-Geräten in Azure Active Directory und Intune einbinden. Um Geräte per Massenvorgang bei Ihrem Azure AD-Mandanten zu registrieren, erstellen Sie mit der Windows Configuration Designer-App (WCD) ein Bereitstellungspaket. Durch Anwenden des Bereitstellungspakets auf unternehmenseigene Geräte werden die Geräte in Ihrem Azure AD-Mandanten eingebunden und für die Verwaltung über Intune registriert. Sobald das Paket angewendet wurde, sind die Geräte bereit für die Anmeldung durch Ihre Azure AD-Benutzer.
+Als Administrator können Sie eine große Anzahl von neuen Windows-Geräten in Azure Active Directory und Intune einbinden. Um Geräte per Massenvorgang bei Ihrem Azure AD-Mandanten zu registrieren, erstellen Sie mit der Windows Configuration Designer-App (WCD) ein Bereitstellungspaket. Durch Anwenden des Bereitstellungspakets auf unternehmenseigene Geräte werden die Geräte in Ihrem Azure AD-Mandanten eingebunden und für die Verwaltung über Intune registriert. Sobald das Paket angewendet wurde, können sich Ihre Azure AD-Benutzer auf dem betreffenden Gerät anmelden.
 
 Azure AD-Benutzer sind auf diesen Geräten Standardbenutzer und erhalten zugewiesene Intune-Richtlinien sowie erforderliche Apps. Die Verwendung von Self-Service-Funktionen und Unternehmensportalen wird derzeit nicht unterstützt.
 
@@ -48,19 +47,19 @@ Für die Massenregistrierung von Windows-Geräten ist Folgendes erforderlich:
   - **Projektordner**: Der Speicherort des neuen Projekts
   - **Beschreibung**: Optionale Beschreibung des Projekts ![Screenshot: Angeben von Name, Projektordner und Beschreibung in der Windows Configuration Designer-App](../media/bulk-enroll-name.png)
 
-4.    Geben Sie einen eindeutigen Namen für Ihre Geräte Profil ein. Die Namen können eine Seriennummer (%%SERIENNUMMER%%) oder eine zufällige Folge von Zeichen umfassen. Optional können Sie auch einen Product Key eingeben, wenn Sie die Windows-Edition aktualisieren, das Gerät für die gemeinsame Nutzung konfigurieren und vorinstallierte Software entfernen.<BR>
+4.  Geben Sie einen eindeutigen Namen für Ihre Geräte ein. Die Namen können eine Seriennummer (%%SERIENNUMMER%%) oder eine zufällige Folge von Zeichen umfassen. Optional können Sie auch einen Product Key eingeben, wenn Sie die Windows-Edition aktualisieren, das Gerät für die gemeinsame Nutzung konfigurieren und vorinstallierte Software entfernen.<BR>
 ![Screenshot: Angeben von Name, Projektordner und Beschreibung in der Windows Configuration Designer-App](../media/bulk-enroll-device.png)
 
-5.    Optional können Sie das WLAN konfigurieren, bei dem sich Geräte beim ersten Start anmelden.  Wenn diese Option nicht konfiguriert wurde, ist beim ersten Start eines Geräts eine kabelgebundene Netzwerkverbindung erforderlich.
+5.  Optional können Sie das WLAN konfigurieren, bei dem sich Geräte beim ersten Start anmelden.  Wenn diese Option nicht konfiguriert wurde, ist beim ersten Start eines Geräts eine kabelgebundene Netzwerkverbindung erforderlich.
 ![Screenshot: Aktivierung eines WLANs, einschließlich Netzwerk-SSID und Netzwerktyp, in der Windows Configuration Designer-App](../media/bulk-enroll-network.png)
 
-6.    Wählen Sie **Bei Azure AD registrieren**, geben Sie ein Datum für den **Ablauf des Massentokens** ein, und wählen Sie dann **Massentoken abrufen** aus.
+6.  Wählen Sie **Bei Azure AD registrieren**, geben Sie ein Datum für den **Ablauf des Massentokens** ein, und wählen Sie dann **Massentoken abrufen** aus.
 ![Screenshot: Angeben von Name, Projektordner und Beschreibung in der Windows Configuration Designer-App](../media/bulk-enroll-account.png)
 
 7. Geben Sie Ihre Azure AD-Anmeldeinformationen an, um ein Massentoken abzurufen.
 ![Screenshot: Angeben von Name, Projektordner und Beschreibung in der Windows Configuration Designer-App](../media/bulk-enroll-cred.png)
 
-8.    Klicken Sie auf **Weiter**, wenn das **Massentoken** erfolgreich abgerufen wurde.
+8.  Klicken Sie auf **Weiter**, wenn das **Massentoken** erfolgreich abgerufen wurde.
 
 9. Optional können Sie **Anwendungen hinzufügen** und **Zertifikate hinzufügen**. Diese Anwendungen und Zertifikate werden auf dem Gerät bereitgestellt.
 
@@ -88,4 +87,3 @@ Diese Bereitstellung ist für die Verwendung auf neuen Windows-Geräten gedacht.
 
 - Wenn ein Bereitstellungspaket versucht, ein Gerät in eine Active Directory-Domäne oder einen Azure Active Directory-Mandanten einzubinden, die bzw. der kein lokales Konto erstellt, ist das Gerät möglicherweise nicht erreichbar, wenn der Einbindungsprozess aufgrund einer nicht vorhandenen Netzwerkverbindung nicht durchgeführt werden kann.
 - Skripts werden vom Bereitstellungspaket im Systemkontext ausgeführt und können unvorhersehbare Änderungen an Dateisystem und Konfigurationen des Geräts vornehmen. Ein schädliches oder fehlerhaftes Skript kann das Gerät in einen Zustand versetzen, aus dem eine Wiederherstellung nur durch erneutes Aufspielen eines Images oder durch Zurücksetzen des Geräts auf die Werkseinstellungen möglich ist.
-

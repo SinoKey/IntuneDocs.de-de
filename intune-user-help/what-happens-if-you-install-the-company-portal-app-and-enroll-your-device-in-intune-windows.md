@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: 052de47e19f4e171428ee22b4701ed516461231f
-ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Windows-Gerät bei Intune registrieren?
 
 Wenn Sie die Unternehmensportal-App installieren und damit anschließend ein Windows- oder Windows Phone-Gerät registrieren, erlauben Sie Ihrem IT-Administrator, Ihr Gerät zu verwalten, um die Daten von Unternehmen oder Schule zu schützen. In diesem Thema wird beschrieben, was bei Geräten mit einer früheren Version als Windows 10 geschieht. Windows 10-Geräte werden im [verwandten Thema](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) behandelt.
@@ -79,4 +74,3 @@ Etwa alle acht Stunden führen registrierte Geräte folgende Aktionen aus:
 -   Senden aller Unternehmens-App-Inventaraktualisierungen.
 
 Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
-

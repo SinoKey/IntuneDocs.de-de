@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 51f1594d-0283-41d2-b4c3-a7a4ad70b369
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: cc242a36957ed897198f597ab7864aca21a7820d
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Deaktivieren der Datensammlung durch Microsoft
 
 Microsoft sammelt automatisch bestimmte Daten zu Microsoft-Produkten und -Diensten. Dies dient dazu, die Zuverlässigkeit und Leistungsfähigkeit der Microsoft-Produkte, wie z.B. der Unternehmensportal-App, zu verbessern. Auch wenn diese Daten anonymisiert sind, sind einige Benutzer möglicherweise mit der Sammlung nicht einverstanden. Ihr IT-Administrator hat keine Kontrolle über die Sammlung der Daten und kann Ihre Auswahl für diese Einstellung nicht ändern.
@@ -34,4 +29,3 @@ Microsoft sammelt automatisch bestimmte Daten zu Microsoft-Produkten und -Dienst
 Wenn Sie die Sammlung von Nutzungsdaten auf Ihrem Windows-Gerät deaktivieren möchten, suchen Sie die Einstellung **Nutzungsdaten** in der Unternehmensportal-App.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-

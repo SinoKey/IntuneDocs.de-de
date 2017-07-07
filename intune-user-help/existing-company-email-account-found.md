@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 510e35a7c60709a6f002907e0f7963ba5b78f35c
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="an-existing-company-email-account-was-found"></a>Es wurde ein vorhandenes geschäftliches E-Mail-Konto gefunden
 
 Sie besitzen bereits ein E-Mail-Konto bei Ihrer Organisation oder Ihrem Unternehmen und möchten nun über Ihr mobiles Gerät auf dieses Konto zugreifen. Ihr IT-Administrator benötigt Ihre Hilfe, um Ihren E-Mail-Zugriff auf dem Weg von der Person, die diesen an Ihr Gerät sendet, zu schützen. Ihre aktuelle E-Mail hat womöglich gut funktioniert, die folgenden Schritte machen Ihre Informationen jedoch noch ein wenig sicherer.
@@ -39,4 +35,3 @@ Sie besitzen bereits ein E-Mail-Konto bei Ihrer Organisation oder Ihrem Unterneh
 3.  Warten Sie kurz für neue e-Mail-Einstellungen automatisch auf das Gerät angewendet werden.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-

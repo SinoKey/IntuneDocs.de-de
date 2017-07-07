@@ -1,5 +1,5 @@
 ---
-title: "Auswählen der Methode zum Verwalten von Geräten | Microsoft-Dokumentation"
+title: "Auswählen der Methode zum Verwalten von Geräten"
 description: "Hier erhalten Sie Informationen zu den verschiedenen Möglichkeiten, mit denen Sie Geräte registrieren und verwalten können."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dfd79323c7db53cb3291f729878bcd1d36f93fe7
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0dbe387ee6b8130e3dc64323f89b38e868087dfe
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="choose-how-to-manage-devices"></a>Auswählen der Methode zum Verwalten von Geräten
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -48,12 +45,11 @@ Registrieren Sie Windows PCs, um von den meisten Funktionen zu profitieren. Der 
 - Endpoint Protection und Windows-Firewall
 - Remoteunterstützung für Benutzer mithilfe der TeamViewer-Software
 
-Eine ausführliche Liste der Funktionen für die Verwaltung, die Sie zu jeder Methode erhalten, finden Sie unter [Verwaltungsfunktionen für mobile Geräte](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune).
-Informationen zu den Geräten und PCs, die von Intune unterstützt werden, finden Sie unter [Unterstützte mobile Geräte und Computer](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
+Eine ausführliche Liste der Verwaltungsfunktionen, die über die einzelnen Methoden bereitgestellt werden, finden Sie unter [Mobile device managem/intune/supported-devices-browserssoft-intune].
+Informationen zu den Geräten und PCs, die von Intune unterstützt werden, finden Sie unter [Unterstützte mobile Geräte und Computer](/intune/supported-devices-browsers#intune-supported-devices).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Auswählen der Methode zum Registrieren mobiler Geräte](/intune-classic/get-started/choose-how-to-enroll-devices1)
 - [Verwalten von Windows-PCs mit der Intune-PC-Clientsoftware](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)
 - [Verwaltung mobiler Geräte mit Exchange ActiveSync und Microsoft Intune](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
-

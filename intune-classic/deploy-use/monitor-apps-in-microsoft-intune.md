@@ -1,5 +1,5 @@
 ---
-title: "Überwachen von App-Bereitstellungen | Microsoft-Dokumentation"
+title: "Überwachen von App-Bereitstellungen"
 description: "Erfahren Sie, wie Sie Apps überwachen, die Sie mit Intune bereitgestellt haben."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,12 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 808268faa797d8576f5fb693d9940d97d17abf21
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9255a9cb966ef02aba11e0a6aaf7caf7e808a41c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="monitor-app-deployments-in-microsoft-intune"></a>Überwachen von App-Bereitstellungen in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -49,4 +45,3 @@ Wählen Sie in der Liste der Apps eine beliebige App aus, und klicken Sie dann a
 Wählen Sie auf der Seite **Softwareeigenschaften** für die App eine dieser Registerkarten aus: **Allgemein:** Zeigt allgemeine Informationen über die App und deren Installationsstatus an. **Geräte:** Zeigt die Geräte an, bei denen eine gezielte Bereitstellung der App erfolgreich installiert wurde. **Benutzer:** Zeigt die Benutzer an, auf deren Geräten eine gezielte Bereitstellung der App erfolgreich installiert wurde.
 
 Wie bereits zuvor können Sie auch hier die Dropdownliste **Filter** verwenden, um die auf den Registerkarten angezeigten Werte zu konfigurieren.
-
