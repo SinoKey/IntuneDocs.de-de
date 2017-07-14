@@ -14,13 +14,14 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8806dc965653deaca5ab370c290403ae049e5c58
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 032427a9965f368d7be17339e3cbe5b426800347
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="determine-use-case-scenario-requirements"></a>Bestimmen von Anforderungen von Anwendungsfallszenarien
+# Bestimmen von Anforderungen von Anwendungsfallszenarien
+<a id="determine-use-case-scenario-requirements" class="xliff"></a>
 
 In diesem Abschnitt ermitteln Sie die Anforderungen für jede Organisationsgruppe innerhalb der einzelnen Anwendungsfallszenarien. Dieser Prozess hilft Ihnen bei der Vorbereitung der übrigen Planungsbereiche der Intune-Bereitstellung wie Architektur und Entwurf, Onboarding und Rollout. Zudem unterstützt er Sie beim Bestimmen möglicher Lücken und Herausforderungen im Zusammenhang mit Ihrem Intune-Bereitstellungsprojekt.
 
@@ -41,7 +42,8 @@ Hier sehen Sie einige Beispiele für die Anwendungsfallanforderungen einer Organ
 Sie können [eine Vorlage der obigen Tabelle herunterladen](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), um die Anforderungen an die Szenarien für Anwendungsfälle und untergeordnete Anwendungsfälle Ihrer Organisation einzutragen.
 
 
-## <a name="examples-of-requirements"></a>Beispiele für Anforderungen
+## Beispiele für Anforderungen
+<a id="examples-of-requirements" class="xliff"></a>
 
 Hier sind einige weitere Beispiele, die in der Spalte „Anforderungen“ verwendet werden können:
 
@@ -62,6 +64,7 @@ Hier sind einige weitere Beispiele, die in der Spalte „Anforderungen“ verwen
     - Office 365 mit App-Schutzrichtlinien
     - Branchenspezifisch (LOB) mit App-Schutzrichtlinien
 
-## <a name="next-section"></a>Nächster Abschnitt
+## Nächste Schritte
+<a id="next-steps" class="xliff"></a>
 
 Der nächste Abschnitt enthält Hinweise für das [Entwickeln eines Intune-Rolloutplans](planning-guide-rollout-plan.md).
