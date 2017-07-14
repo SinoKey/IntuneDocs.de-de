@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,19 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 365b56082207c2110965681663432cce10f27c99
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7ec66c3864aae3d680c006ada95859df0e7f0e84
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für iOS-Geräte in Microsoft Intune
+# Einstellungen für Geräteeinschränkungen für iOS-Geräte in Microsoft Intune
+<a id="ios-device-restriction-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="general"></a>Allgemein
+## Allgemein
+<a id="general" class="xliff"></a>
 -   **Kamera:** Legen Sie fest, ob die Kamera des Geräts verwendet werden darf.   
 -   **Übermittlung von Diagnosedaten:** Ermöglicht dem Gerät das Senden von Diagnosedaten an Apple.
 -   **FaceTime:** Erlauben Sie die Verwendung der FaceTime-App auf dem Gerät.
@@ -73,7 +75,8 @@ Dies gilt auch für Einstellungen, auf die über die iOS-Einstellungs-App zugegr
 - **Apple News (nur überwacht):** Erlauben Sie die Verwendung der Apple News-App.
 - **Konfigurationsprofiländerungen:** Erlauben Sie dem Benutzer die Installation von Konfigurationsprofilen.
 
-## <a name="password"></a>Kennwort
+## Kennwort
+<a id="password" class="xliff"></a>
 -   **Kennwort erforderlich:** Der Endbenutzer muss ein Kennwort eingeben, um auf das Gerät zugreifen zu können.
 -   **Einfache Kennwörter:** Erlauben Sie einfache Kennwörter wie 0000 oder 1234.
 -   **Erforderlicher Kennworttyp:** Geben Sie den erforderlichen Typ des Kennworts an, z.B. nur numerisch oder alphanumerisch.
@@ -88,7 +91,8 @@ Dies gilt auch für Einstellungen, auf die über die iOS-Einstellungs-App zugegr
 
 <sup>1</sup> Wenn Sie die Einstellungen **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung** und **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts** konfigurieren, werden diese nacheinander angewendet. Wenn Sie beispielsweise den Wert für beide Einstellungen auf **5** Minuten einstellen, wird der Bildschirm automatisch nach 5 Minuten deaktiviert, und das Gerät wird nach weiteren 5 Minuten gesperrt. Wenn der Benutzer den Bildschirm jedoch manuell deaktiviert, wird die zweite Einstellung sofort angewendet. Im selben Beispiel wird das Gerät 5 Minuten später gesperrt, nachdem der Benutzer den Bildschirm deaktiviert hat.
 
-## <a name="app-store-doc-viewing-gaming"></a>App Store, Dokumentanzeige, Spiele
+## App Store, Dokumentanzeige, Spiele
+<a id="app-store-doc-viewing-gaming" class="xliff"></a>
 
 
 -   **App Store (nur überwacht):** Sperren Sie den Zugriff auf den App Store auf überwachten Geräte.
@@ -106,7 +110,8 @@ Dies gilt auch für Einstellungen, auf die über die iOS-Einstellungs-App zugegr
 -   **Bewertungsregion:** Wählen Sie die Bewertungsregion aus, für die Sie die zulässigen Downloads konfigurieren möchten, und wählen anschließend die zulässigen Bewertungen für **Filme** und **Fernsehsendungen** aus.
 -   **Apps:** Wählen Sie die zulässigen Altersfreigaben von Apps aus, die Benutzer herunterladen dürfen. Sie können auch **Alle Apps** auswählen.
 
-## <a name="restricted-apps"></a>Eingeschränkte Apps
+## Eingeschränkte Apps
+<a id="restricted-apps" class="xliff"></a>
 
 In der Liste der eingeschränkten Apps können Sie eine der folgenden Listen konfigurieren:
 
@@ -115,7 +120,8 @@ In der Liste der eingeschränkten Apps können Sie eine der folgenden Listen kon
 
 Klicken Sie zum Konfigurieren einer Liste auf **Hinzufügen**. Geben Sie einen Namen Ihrer Wahl sowie die URL zur App im App-Store und optional den Herausgeber der App an.
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Angeben der URL zu einer App im Store
+### Angeben der URL zu einer App im Store
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 Verwenden Sie das folgende Format, um eine App-URL in der App-Liste anzugeben:
 
@@ -130,11 +136,13 @@ Beispiel: Suchen Sie nach Microsoft Word für iPad. Die URL, die Sie verwenden, 
 
 
 
-### <a name="additional-options"></a>Zusätzliche Optionen
+### Zusätzliche Optionen
+<a id="additional-options" class="xliff"></a>
 
 Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Datei im Format <*App-URL*>, <*App-Name*>, <*App-Herausgeber*> aufzufüllen. Sie können auch auf **Exportieren** klicken, um eine CSV-Datei mit dem Inhalt der Liste der eingeschränkten Apps im gleichen Format zu erstellen.
 
-## <a name="show-or-hide-apps"></a>Apps ein- oder ausblenden
+## Apps ein- oder ausblenden
+<a id="show-or-hide-apps" class="xliff"></a>
 
 In der Liste „Apps ein- oder ausblenden“ können Sie eine der folgenden Listen konfigurieren (erfordert überwachte Geräte mit iOS 9.3 oder höher).
 
@@ -143,7 +151,8 @@ In der Liste „Apps ein- oder ausblenden“ können Sie eine der folgenden List
 
 Klicken Sie zum Konfigurieren einer Liste auf **Hinzufügen**. Geben Sie einen Namen Ihrer Wahl sowie die URL zur App im App-Store und optional den Herausgeber der App an.
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Angeben der URL zu einer App im Store
+### Angeben der URL zu einer App im Store
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 Verwenden Sie das folgende Format, um eine App-URL in der App-Liste anzugeben:
 
@@ -155,19 +164,22 @@ Beispiel: Suchen Sie nach Microsoft Word für iPad. Die URL, die Sie verwenden, 
 > [!Note]
 > Sie können auch die iTunes-Software verwenden, um die App zu suchen, und dann den Befehl **Link kopieren** , um die App-URL abzurufen.
 
-### <a name="additional-options"></a>Zusätzliche Optionen
+### Zusätzliche Optionen
+<a id="additional-options" class="xliff"></a>
 
 Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Datei im Format <*App-URL*>, <*App-Name*>, <*App-Herausgeber*> aufzufüllen. Sie können auch auf **Exportieren** klicken, um eine CSV-Datei mit dem Inhalt der Liste der ein- und ausgeblendeten Apps im gleichen Format zu erstellen.
 
 
-## <a name="cellular"></a>Mobilfunk
+## Mobilfunk
+<a id="cellular" class="xliff"></a>
 -   **Datenroaming:** Erlauben Sie das Datenroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
 -   **Globales Abrufen im Hintergrund beim Roaming:** Erlauben Sie, dass das Gerät Daten wie E-Mails beim Roaming in einem Mobilfunknetz abruft.
 -   **Sprachwahlverfahren:** Erlauben Sie die Verwendung des Features „Sprachwahlverfahren“ auf dem Gerät.
 -   **Sprachroaming:** Erlauben Sie das Sprachroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
 -   **Änderungen an den App-Einstellungen zur Verwendung von Datenverbindungen (nur überwacht):** Erlauben Sie Benutzern die Steuerung, welche Apps Mobilfunkdaten verwenden dürfen.
 
-## <a name="cloud-and-storage"></a>Cloud und Speicher
+## Cloud und Speicher
+<a id="cloud-and-storage" class="xliff"></a>
 -   **In iCloud sichern:** Erlauben Sie dem Benutzer, das Gerät in iCloud zu sichern.
 -   **Dokumentsynchronisierung in iCloud (nur überwachter Modus):** Erlauben Sie die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher.
 -   **Synchronisierung von Fotostreams in iCloud:** Ermöglicht Benutzern das Aktivieren von **Mein Photo Stream** auf ihrem Gerät, um Fotos mit iCloud zu synchronisieren, damit diese auf allen Geräten des Benutzers verfügbar sind.
@@ -177,11 +189,13 @@ Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Da
 -   **Streaming freigegebener Fotos:** Legen Sie diese Einstellung auf **Nein** fest, um die **iCloud-Fotofreigabe** auf dem Gerät zu deaktivieren.
 -   **Aktivitätsfortsetzung:** Erlauben Sie dem Benutzer, die Arbeit, die er auf einem iOS-Gerät gestartet hat, auf einem anderen iOS- oder macOS-Gerät fortzusetzen (Übergabe).
 
-## <a name="autonomous-single-app-mode-supervised-only"></a>Modus der autonomen einzelnen App (nur überwacht)
+## Modus der autonomen einzelnen App (nur überwacht)
+<a id="autonomous-single-app-mode-supervised-only" class="xliff"></a>
 
 Verwenden Sie diese Einstellungen, um iOS-Geräte zur Ausführung bestimmter Apps im Modus der autonomen einzelnen App zu konfigurieren. Wenn dieser Modus konfiguriert ist und die App ausgeführt wird, wird das Gerät gesperrt, sodass es nur die App ausführen kann. Ein Beispiel hierfür ist, wenn Sie eine App konfigurieren, mit der Benutzer einen Test auf dem Gerät ausführen können. Wenn die Aktionen der App abgeschlossen sind, oder Sie diese Richtlinie entfernen, kehrt das Gerät in seinen normalen Zustand zurück.
 
-### <a name="settings"></a>Einstellungen
+### Einstellungen
+<a id="settings" class="xliff"></a>
 
 - **App-Name**: Geben Sie den Namen der App so ein, wie er in der Liste der Apps auf diesem Blatt angezeigt wird.
 - **App-Bündel-ID**: Geben Sie die Bündel-ID der App ein. Hilfe finden Sie in diesem Thema unter **Bündel-ID-Referenz für integrierte iOS-Apps**.
@@ -191,54 +205,57 @@ Nachdem Sie jeden App-Namen und jede Bündel-ID angegeben haben, wählen Sie **H
 - **Importieren**: Importieren einer Datei mit kommagetrennten Werten (CSV) mit einer Liste von App-Namen und ihren zugeordneten Bündel-IDs.
 - **Exportieren**: Exportieren der von Ihnen konfigurierten App-Namen und zugeordneten Bündel-IDs nach einer Datei mit kommagetrennten Werten (CSV).
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Bündel-ID-Referenz für integrierte iOS-Apps
+### Bündel-ID-Referenz für integrierte iOS-Apps
+<a id="bundle-id-reference-for-built-in-ios-apps" class="xliff"></a>
 
 Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die Bündel-ID von anderen Apps zu finden, wenden Sie sich an den Softwarehersteller.
 
-|||
-|-|-|
-|App-Name|Bündel-ID|
-|App Store|com.apple.AppStore|
-|Calculator|com.apple.calculator|
-|Kalender|com.apple.mobilecal|
-|Kamera|com.apple.camera|
-|Clock|com.apple.mobiletimer|
-|Compass|com.apple.compass|
-|Kontakte|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|Find Friends|com.apple.mobileme.fmf1|
-|Find iPhone|com.apple.mobileme.fmip1|
-|Gamecenter|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|Integrität|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes Store|com.apple.MobileStore|
-|iTunes U|com.apple.itunesu|
-|Keynote|com.apple.Keynote|
-|Mail|com.apple.mobilemail|
-|Zuordnungen|com.apple.Maps|
-|Nachrichten|com.apple.MobileSMS|
-|Musik|com.apple.Music|
-|News|com.apple.news|
-|Hinweise|com.apple.mobilenotes|
-|Zahlen|com.apple.Numbers|
-|Seiten|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|Fotos|com.apple.mobileslideshow|
-|Podcasts|com.apple.podcasts|
-|Reminders|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|Einstellungen|com.apple.Preferences|
-|Stocks|com.apple.stocks|
-|Tipps|com.apple.tips|
-|Videos|com.apple.videos|
-|VoiceMemos|com.apple.VoiceMemos|
-|Wallet|com.apple.Passbook|
-|Überwachen|com.apple.Bridge|
-|Weather|com.apple.weather|
+```
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
 
 
-## <a name="kiosk"></a>Kiosk
+```
+
+
+## Kiosk
+<a id="kiosk" class="xliff"></a>
 -   **Aktivierungssperre:** Aktivieren Sie die Aktivierungssperre auf überwachten iOS-Geräten.
 -   **App, die im Kioskmodus ausgeführt wird:** Mit **Verwaltete App** können Sie eine in Intune hinzugefügte App auswählen, und mit **Store App** können Sie eine URL zu einer App im Store angeben. Andere Apps dürfen auf dem Gerät nicht ausgeführt werden. Weitere Informationen finden Sie unter „Angeben von URLs zu App-Stores“ weiter unten in diesem Thema.
 -   **Touch-Unterstützung:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung **Touch-Unterstützung**, die den Benutzer bei der Ausführung von Bildschirmgesten unterstützt, die ihm u.U. Schwierigkeiten bereiten.
@@ -262,7 +279,8 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 > Damit Sie ein iOS-Gerät für den Kioskmodus konfigurieren können, müssen Sie das Apple Configurator-Tool oder das Apple-Programm zur Geräteregistrierung verwenden, um das Gerät in den überwachten Modus zu versetzen. Weitere Informationen zum Apple Configurator-Tool finden Sie in der Apple-Dokumentation.
 >Wenn die angegebene iOS-App nach der Zuweisung des Profils installiert wird, wird das Gerät erst nach einem Neustart in den Kioskmodus versetzt.
 
-## <a name="safari"></a>Safari
+## Safari
+<a id="safari" class="xliff"></a>
 -   **Safari (nur überwachter Modus):** Geben Sie an, ob der Safari-Browser auf dem Gerät verwendet werden kann.
 -   **AutoAusfüllen:** Erlauben Sie dem Benutzer, die Einstellungen für AutoAusfüllen im Browser zu ändern.
 -   **Cookies:** Erlaubt dem Browser die Verwendung von Cookies.
@@ -271,18 +289,22 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 -   **Popups:** Aktivieren oder deaktivieren Sie den Popupblocker des Browsers.
 
 
-## <a name="domains"></a>Domains
+## Domains
+<a id="domains" class="xliff"></a>
 
-### <a name="unmarked-email-domains"></a>Nicht markierte E-Mail-Domänen
+### Nicht markierte E-Mail-Domänen
+<a id="unmarked-email-domains" class="xliff"></a>
 
 Fügen Sie im Feld **E-Mail-Domänen-URL** eine oder mehrere URLs der Liste hinzu. Wenn Endbenutzer eine E-Mail von einer anderen Domäne als der erhalten, die Sie konfiguriert haben, wird die E-Mail in der iOS-Mail-App als nicht vertrauenswürdig gekennzeichnet.
 
 
-### <a name="managed-web-domains"></a>Verwaltete Webdomänen
+### Verwaltete Webdomänen
+<a id="managed-web-domains" class="xliff"></a>
 
 Fügen Sie im Feld **Webdomänen-URL** eine oder mehrere URLs der Liste hinzu. Wenn Dokumente von den Domänen heruntergeladen werden, die Sie angeben, gelten sie als verwaltet. Diese Einstellung gilt nur für Dokumente, die mit dem Safari-Browser heruntergeladen werden.
 
 
-### <a name="safari-password-auto-fill-domains"></a>Domänen für automatisches Ausfüllen des Safari-Kennworts
+### Domänen für automatisches Ausfüllen des Safari-Kennworts
+<a id="safari-password-auto-fill-domains" class="xliff"></a>
 
 Fügen Sie im Feld **Domänen-URL** eine oder mehrere URLs der Liste hinzu. Benutzer können nur Webkennwörter von URLs in dieser Liste speichern. Diese Einstellung gilt nur für den Safari-Browser und Geräte mit iOS 9.3 und höher im überwachten Modus. Wenn Sie keine URLs angeben, können Kennwörter von allen Websites gespeichert werden.

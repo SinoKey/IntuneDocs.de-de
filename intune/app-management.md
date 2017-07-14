@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/16/2017
+ms.date: 07/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,14 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="what-is-microsoft-intune-app-management"></a>Was ist die Microsoft Intune App-Verwaltung?
+# Was ist die Microsoft Intune App-Verwaltung?
+<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,7 +37,8 @@ Darüber hinaus müssen Sie ggf. auch Apps auf Geräten, die nicht in Intune reg
 
 Intune bietet eine Reihe von Funktionen, die Ihnen dabei helfen, die benötigten Apps auf allen erforderlichen Geräten bereitzustellen.
 
-## <a name="app-management-capabilities-by-platform"></a>App-Verwaltungsfunktionen nach Plattform
+## App-Verwaltungsfunktionen nach Plattform
+<a id="app-management-capabilities-by-platform" class="xliff"></a>
 
 ||||||
 |-|-|-|-|-|
@@ -56,11 +58,12 @@ Intune bietet eine Reihe von Funktionen, die Ihnen dabei helfen, die benötigten
 |Apps aus einem Store|Ja|Ja|Ja|Ja|
 |Aktualisierung von Apps|Ja|Ja|Ja|Ja|
 
-<sup>1</sup> Erwägen Sie die Verwendung von [Windows Information Protection]windows-information-protection-configure.md) für den Schutz von Apps auf Geräten mit Windows 10.
+<sup>1</sup> Erwägen Sie die Verwendung [Windows Information Protection](windows-information-protection-configure.md) für den Schutz von Apps auf Geräten mit Windows 10.
 
 <sup>2</sup> Gilt nur für Geräte, die von Intune verwaltet werden.
 
-## <a name="how-to-get-started"></a>Erste Schritte
+## Erste Schritte
+<a id="how-to-get-started" class="xliff"></a>
 
 Sie finden die meisten Informationen zu Apps in der Workload **Mobile Apps**, auf die Sie wie folgt zugreifen können:
 
@@ -70,7 +73,8 @@ Sie finden die meisten Informationen zu Apps in der Workload **Mobile Apps**, au
 
     ![Workload „Mobile Apps“](./media/apps-workload.png)
 
-### <a name="manage"></a>Verwalten von
+### Verwalten von
+<a id="manage" class="xliff"></a>
 - **Apps:** Mit diesem Knoten können Sie die meisten Apps hinzufügen, zuweisen und überwachen.
     - [Hinzufügen von Apps](apps-add.md)
     - [Zuweisen von Apps](apps-deploy.md)
@@ -85,7 +89,8 @@ Sie finden die meisten Informationen zu Apps in der Workload **Mobile Apps**, au
 - **iOS-Bereitstellungsprofil:**: iOS-Apps enthalten ein Bereitstellungsprofil und Code, der von einem Zertifikat signiert ist. Wenn das Zertifikat abläuft, kann die App nicht mehr ausgeführt werden. Intune stellt Ihnen die Tools zum proaktiven Zuweisen einer neuen Richtlinie für Bereitstellungsprofile auf Geräten zur Verfügung, auf denen Apps installiert sind, die bald ablaufen.
     - [iOS-App-Bereitstellungsprofile](app-provisioning-profile-ios.md)
 
-### <a name="monitor"></a>Überwachen
+### Überwachen
+<a id="monitor" class="xliff"></a>
 - **Lizenzierte Apps:** Ermöglicht das Anzeigen, Zuweisen und Überwachen von per Volumenlizenz in den App Stores erworbenen Apps.
     - [Per Volumenlizenz erworbene Apps aus dem Windows Store für Unternehmen](windows-store-for-business.md)
 - **Erkannte Apps:** Zeigt alle Apps, die von Intune zugewiesen und auf einem Gerät installiert wurden.
@@ -94,7 +99,8 @@ Sie finden die meisten Informationen zu Apps in der Workload **Mobile Apps**, au
 
 Weitere Informationen finden Sie unter [Überwachen von Apps](apps-monitor.md).
 
-### <a name="setup"></a>Setup
+### Setup
+<a id="setup" class="xliff"></a>
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **Windows Store für Unternehmen:** Richten Sie die Integration in den Windows Store für Unternehmen ein. Anschließend können Sie erworbene Anwendungen mit Intune synchronisieren, sie zuweisen und Ihre Lizenznutzung verfolgen.
