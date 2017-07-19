@@ -15,6 +15,7 @@
 ### [Gerätelebenszyklus](device-lifecycle.md)
 ### [App-Lebenszyklus](app-lifecycle.md)
 ## [Häufige Szenarien](common-scenarios.md)
+## [Dienstbeschreibung](microsoft-intune-service-description.md)
 ## [Bekannte Probleme](known-issues.md)
 ## [Support anfordern](get-support.md)
 
@@ -81,10 +82,10 @@
 #### [Windows-Registrierung](windows-enroll.md)
 #### [Massenregistrierung](windows-bulk-enroll.md)
 ### [Einrichten der Android-Registrierung](android-enroll.md)
-### Einrichten der iOS-Registrierung
-#### [Mit dem Programm zur Geräteregistrierung](device-enrollment-program-enroll-ios.md)
-#### [Mit Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [Mit Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+### [Einrichten der iOS-Registrierung](ios-enroll.md)
+#### [Programm zur Geräteregistrierung](device-enrollment-program-enroll-ios.md)
+#### [Apple School Manager](apple-school-manager-set-up-ios.md)
+#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [Einrichten der macOS-Registrierung](macos-enroll.md)
 
 ## [Verwalten von Geräten](device-management.md)
