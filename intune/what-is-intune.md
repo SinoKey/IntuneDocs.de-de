@@ -1,12 +1,12 @@
 ---
-title: "Einführung in Intune in der Vorschau des Azure-Portals"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Lernen Sie die Grundlagen der Vorschau von Intune im Azure-Portal kennen, und erfahren Sie, wie sie Ihnen beim Verwalten Ihrer Geräte helfen kann."
+title: "Einführung in Intune im Azure-Portal"
+titleSuffix: Intune on Azure
+description: "Lernen Sie die Grundlagen von Intune im Azure-Portal kennen, und erfahren Sie, wie es Ihnen beim Verwalten Ihrer Geräte helfen kann."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 04/24/2017
+ms.date: 06/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,35 +14,30 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16d7ff50eb821e0927c3c6ea21f3cdb1257762a0
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ae42ab64945982fedc2d6858e2f3eca8fbed334c
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/10/2017
 ---
+# <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Einführung in Microsoft Intune im Azure-Portal
 
 
-# <a name="introduction-to-microsoft-intune-in-the-azure-portal-preview"></a>Einführung in die Vorschau von Microsoft Intune im Azure-Portal
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-Microsoft Intune wird in das Azure-Portal eingeführt. Dies bedeutet, dass sich die Workflows und Funktionalität, mit denen Sie vertraut sind, ändern werden.
-Das neue Portal bietet Ihnen eine Vorschau der neuen und aktualisierten Funktionen im Azure-Portal, in dem Sie die mobilen Geräte, PCs und Apps Ihrer Organisation verwalten können.
-Letztendlich werden alle Intune-Funktionen in Azure überführt, Sie können aber schon heute zahlreiche Intune-Aufgaben über das Azure-Portal ausführen. Da sich die neue Benutzeroberfläche noch in der Vorschau befindet, stehen einige Funktionen nicht noch im Portal zur Verfügung. Einzelheiten finden Sie im Abschnitt [Neuheiten](#whats-new).
+Microsoft Intune befindet sich nun im Azure-Portal. Dies bedeutet, dass die gewohnten Workflows und Funktionen jetzt anders sind.
+Das neue Portal bietet neue und aktualisierte Funktionen im Azure-Portal, in dem Sie die mobilen Geräte, PCs und Apps Ihrer Organisation verwalten können.
 
 > [!IMPORTANT]
-> **Das neue Portal wird nicht noch angezeigt?**<br>
-> Wir haben bereits begonnen, die Vorschau für einige Mandanten verfügbar zu machen. Vorhandene Mandanten werden zu Beginn des Kalenderjahrs 2017 migriert. Sie erhalten vor der Migration Ihres Mandanten eine Benachrichtigung im Office-Nachrichtencenter.
+> **Das neue Portal wird noch nicht angezeigt?**<br>
+> Vorhandene Mandanten werden in die neue Umgebung migriert. Vor der Migration Ihres Mandanten wird im Office-Nachrichtencenter eine Benachrichtigung angezeigt.
 >
-> Vor Januar 2017 erstellte Intune-Konten erfordern eine einmalige Migration, bevor Apple-Registrierungsworkflows in Azure verfügbar sind. Der Zeitplan für die Migration wurde noch nicht angekündigt, aber Sie erfahren so bald wie möglich Näheres. Wir empfehlen Ihnen dringend, ein Testkonto zu erstellen, um die neue Oberfläche zu testen, wenn Sie mit Ihrem vorhandenen Konto nicht auf die Vorschau zugreifen können.
+> Vor Januar 2017 erstellte Intune-Konten erfordern eine einmalige Migration, bevor Apple-Registrierungsworkflows in Azure verfügbar sind. Der Zeitplan für die Migration wurde noch nicht bekanntgegeben. Wenn Sie mit Ihrem vorhandenen Konto nicht auf das Azure-Portal zugreifen können, empfehlen wir das Erstellen eines Testkontos.
+>
+> Schauen Sie sich die Liste potenzieller Hindernisse unter https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/ an.
 
 
-Sie finden in dieser Bibliothek, die während der Vorschauphase fortlaufend aktualisiert wird, neue Produktdokumentationen. Wenn Sie Vorschläge haben soll, hinterlassen Sie in den Kommentaren zum Thema Ihr Feedback. Wir freuen uns, von Ihnen zu hören.
-
-<!--- You can view the new Intune technical preview console in Azure at [portal.azure.com]. --->
+In dieser Bibliothek finden Sie Informationen zum neuen Portal, die ständig aktualisiert werden. Wenn Sie Vorschläge haben soll, hinterlassen Sie in den Kommentaren zum Thema Ihr Feedback. Wir freuen uns, von Ihnen zu hören.
 
 Wichtige Funktionen der neuen Benutzeroberfläche:
 
@@ -78,9 +73,9 @@ Die Dokumentation orientiert sich am Layout des Intune-Portals, damit Sie die ge
 ![Azure-Portal-Workloads](./media/azure-portal-workloads.png)
 
 ### <a name="introduction-and-get-started"></a>Einführung und erste Schritte
-Dieser Abschnitt enthält Informationen zu [Neuheiten](whats-new.md), zu [bekannten Problemen](known-issues.md), zum [Support](get-support.md) und zu den [ersten Schritte mit einer kostenlosen Testversion](free-trial-sign-up.md) von Intune.
+Dieser Abschnitt enthält [einführende Informationen](introduction-intune.md) für die ersten Schritte mit Intune.
 ### <a name="plan-and-design"></a>Planung und Entwurf
-Informationen zum [Planen und Entwerfen](/intune-classic/plan-and-design/introduction) Ihrer Intune-Umgebung.
+Informationen zum [Planen und Entwerfen](/intune-classic/plan-design/introduction) Ihrer Intune-Umgebung.
 ### <a name="device-enrollment"></a>Geräteregistrierung
 [Erfahren Sie, wie Sie Ihre Geräte mit Intune verwalten](device-enrollment.md).
 ### <a name="device-compliance"></a>Gerätekompatibilität
@@ -96,7 +91,7 @@ Informationen zum [Planen und Entwerfen](/intune-classic/plan-and-design/introdu
 ### <a name="on-premises-access"></a>Lokaler Zugriff
 [Konfigurieren Sie den Zugriff auf Exchange ActiveSync und Exchange lokal.](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
 ### <a name="users"></a>Users
-[Informieren Sie sich über die Benutzer der Geräte, die Sie verwalten, und organisieren Sie Ressourcen in Gruppen](user-management.md).
+[Informieren Sie sich über die Benutzer der Geräte, die Sie verwalten, und organisieren Sie Ressourcen in Gruppen](users-add.md).
 ### <a name="groups"></a>Gruppen
 [Erfahren Sie, wie Sie Azure Active Directory-Gruppen in Intune verwenden können.](groups-get-started.md)
 ### <a name="intune-roles"></a>Intune-Rollen
@@ -106,7 +101,6 @@ Informationen zum [Planen und Entwerfen](/intune-classic/plan-and-design/introdu
 
 
 
-## <a name="whats-new"></a>Neuheiten
+## <a name="whats-new"></a>Was gibt es Neues?
 
-[Erfahren Sie, was in der Vorschauversion neu ist](whats-new.md).
-
+[Erfahren Sie mehr zu den Neuerungen in Intune](whats-new.md).

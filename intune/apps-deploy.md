@@ -1,12 +1,12 @@
 ---
-title: Zuweisen von Apps zu Gruppen | Microsoft-Dokumentation
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Nachdem Sie eine App in Intune hinzugefügt haben, sollten Sie sie Gruppen von Benutzern oder Geräten zuweisen."
+title: Zuweisen von Apps zu Gruppen
+titleSuffix: Intune on Azure
+description: "Nachdem Sie eine App zu Intune hinzugefügt haben, sollten Sie sie Gruppen von Benutzern oder Geräten zuweisen.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/09/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,17 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1246ef539c044b894b4e4a93f449e60e6462600a
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 059c6d2c65c78b6a94f93c26d606abe0451edbbb
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Zuweisen von Apps zu Gruppen mit Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Nachdem Sie eine App in Intune hinzugefügt haben, sollten Sie sie an Benutzer und Geräte verteilen. Dazu weisen Sie sie zu.
+Nachdem Sie eine App in Intune hinzugefügt haben, können Sie diese Benutzern und Geräten zuweisen.
 
 Apps können Geräten zugewiesen werden, und zwar unabhängig davon, ob sie von Intune verwaltet werden. In der folgenden Tabelle werden die verschiedenen Optionen für die Zuweisung von Apps zu Benutzern und Geräten erläutert:
 
@@ -46,33 +44,6 @@ Apps können Geräten zugewiesen werden, und zwar unabhängig davon, ob sie von 
 > [!NOTE]
 > Derzeit können Sie iOS- und Android-Apps (Branchen-Apps und Apps aus dem Store) Geräten zuweisen, die nicht bei Intune registriert sind.
 
-## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune-preview"></a>Änderungen für das Zuweisen von Apps zu Gruppen in der Intune-Vorschau
-
-In Intune in Azure (Vorschau) verwenden Sie nicht länger Intune-Gruppen zum Zuweisen von Apps, sondern Sicherheitsgruppen von Azure Active Directory (Azure AD). Aus diesem Grund müssen Sie einige Änderungen kennen, inwiefern die App-Zuweisung funktioniert, ganz besonders, wenn Sie Apps zu untergeordneten Gruppen von Intune zugewiesen haben.
-Es ist sehr wichtig, dass Sie wissen, dass das Konzept der untergeordneten Gruppen nicht in Azure AD existiert. Einige Gruppen können jedoch die gleichen Elemente enthalten. In diesem Fall unterscheidet sich das Verhalten zwischen klassischen Intune und Intune in Azure (Vorschau). Dies wird in der folgenden Tabelle veranschaulicht:
-
-||||||
-|-|-|-|-|-|
-|**Intune (klassisch) (vor der Mandantenmigration)**|-|**Intune Azure (nach Abschluss der Migration von Mandanten)**|-|**Weitere Informationen**|
-|**Zuweisungsabsicht der übergeordneten Gruppe**|**Zuweisungsabsicht der untergeordneten Gruppe**|**Resultierende Zuweisungsabsicht für häufige Elemente der vorherigen übergeordneten und untergeordneten Gruppe**|**Resultierende Zuweisungsabsicht für Elemente der übergeordneten Gruppe**|-|
-|Verfügbar|Erforderlich|Erforderlich und Verfügbar|Verfügbar|Erforderlich und Verfügbar bedeutet, dass als erforderlich zugewiesene Apps auch in der Unternehmensportal-App gesehen werden können.
-|Nicht zutreffend|Verfügbar|Nicht zutreffend|Nicht zutreffend|Problemlösung: Entfernen Sie die Zuweisungsabsicht „Nicht zutreffend“ aus der übergeordneten Intune-Gruppe.
-|Erforderlich|Verfügbar|Erforderlich und Verfügbar|Erforderlich|-|
-|Erforderlich und Verfügbar<sup>1</sup>|Verfügbar|Erforderlich und Verfügbar|Erforderlich und Verfügbar|-|
-|Erforderlich|Nicht zutreffend|Erforderlich|Erforderlich|-|
-|Erforderlich und Verfügbar|Nicht zutreffend|Erforderlich und Verfügbar|Erforderlich und Verfügbar|-|
-|Erforderlich|Deinstallieren|Erforderlich|Erforderlich|-|
-|Erforderlich und Verfügbar|Deinstallieren|Erforderlich und Verfügbar|Erforderlich und Verfügbar|-|
-<sup>1</sup> Nur für verwaltete iOS Store-Apps: Falls Sie diese Intune hinzufügen und als „Erforderlich“ zuweisen, werden sie automatisch jeweils mit der Absicht „Erforderlich“ und „Verfügbar“ erstellt.
-
-Sie können die folgenden Maßnahmen durchführen, um Zuweisungskonflikte zu vermeiden:
-
-1.    Wenn Sie zuvor Apps für verknüpfte übergeordnete und untergeordnete Intune-Gruppen zugewiesen haben, erwägen Sie, diese Zuweisungen zu entfernen, bevor Ihre Mandantenmigration beginnt.
-2.    Entfernen Sie untergeordneten Gruppen von den übergeordneten Gruppen, und erstellen Sie eine neue Gruppe, die die Elemente der alten untergeordnete Gruppe enthält. Sie können dann eine neue App-Zuweisung zu dieser Gruppe erstellen.
-Hinweise: Wenn die vorherige übergeordnete Gruppe „Alle Benutzer“ war, müssen Sie eine neue dynamische Gruppe erstellen, die keine Elemente der untergeordneten Gruppe enthält.
-Sie müssen keine Änderungen an Gruppen im [Azure-Portal](https://portal.azure.com/) für Benutzer- und Gerätegruppen durchführen. Das [klassische Azure-Portal](https://manage.windowsazure.com/) erlaubt Ihnen nur Änderungen an den Benutzergruppen.
-
-
 ## <a name="how-to-assign-an-app"></a>Zuweisen einer App
 
 1. Melden Sie sich beim Azure-Portal an.
@@ -87,10 +58,53 @@ Sie müssen keine Änderungen an Gruppen im [Azure-Portal](https://portal.azure.
     - **Nicht verfügbar:** Die App wird nicht installiert und nicht im Unternehmensportal angezeigt.
     - **Erforderlich:** Die App wird auf Geräten in den ausgewählten Gruppen installiert.
     - **Deinstallieren:** Die App wird auf Geräten in den ausgewählten Gruppen deinstalliert.
-    - **Verfügbar ohne Registrierung:** Weisen Sie diese App Benutzergruppen zu, deren Geräte nicht bei Intune registriert sind. Hilfe finden Sie in der Tabelle oben.
+    - **Verfügbar ohne Registrierung:** Weisen Sie diese App Benutzergruppen zu, deren Geräte nicht bei Intune registriert sind.
 6. Wählen Sie abschließend **Speichern** aus.
 
 Die App wird jetzt der von Ihnen ausgewählten Gruppe zugewiesen.
 
-Weitere Informationen zum Überwachen von App-Zuweisungen finden Sie unter [Überwachen von Apps](apps-monitor.md).
+## <a name="how-conflicts-between-app-intents-are-resolved"></a>Auflösung von Konflikten zwischen App-Absichten
 
+In manchen Fällen wird die gleiche App mehreren Gruppen zugewiesen, jedoch mit unterschiedlichen Absichten. Verwenden Sie in diesen Fällen diese Tabelle, um die sich ergebende Absicht zu verstehen.
+
+||||
+|-|-|-|
+|Absicht Gruppe 1|Absicht Gruppe 2|Resultierende Absicht|
+|Erforderlicher Benutzer|Verfügbarer Benutzer|Erforderlich und Verfügbar|
+|Erforderlicher Benutzer|Benutzer nicht verfügbar|Erforderlich|
+|Erforderlicher Benutzer|Benutzerdeinstallation|Erforderlich|
+|Verfügbarer Benutzer|Benutzer nicht verfügbar|Nicht verfügbar|
+|Verfügbarer Benutzer|Benutzerdeinstallation|Deinstallieren|
+|Benutzer nicht verfügbar|Benutzerdeinstallation|Deinstallieren
+|Erforderlicher Benutzer|Erforderliches Gerät|Beides vorhanden, Gateway behandelt Erforderliches 
+|Erforderlicher Benutzer|Gerätedeinstallation|Beides vorhanden, Gateway löst Erforderliches 
+|Verfügbarer Benutzer|Erforderliches Gerät|Beides vorhanden, Gateway löst Erforderliches (Erforderlich und Verfügbar)
+|Verfügbarer Benutzer|Gerätedeinstallation|Beides vorhanden, Gateway löst Verfügbares.<br>App wird im Unternehmensportal angezeigt.<br>Wenn die App bereits installiert wurde (als erforderliche App mit vorheriger Absicht), wird die App deinstalliert.<br>Wenn der Benutzer über das Unternehmensportal auf „Installieren“ klickt, wird die App installiert und die deinstallierte Absicht wird nicht berücksichtigt.|
+|Benutzer nicht verfügbar|Erforderliches Gerät|Erforderlich|
+|Benutzer nicht verfügbar|Gerätedeinstallation|Deinstallieren|
+|Benutzerdeinstallation|Erforderliches Gerät|Beides vorhanden, Gateway löst Erforderliches|
+|Benutzerdeinstallation|Gerätedeinstallation|Beides vorhanden, Gateway löst Deinstallation|
+|Erforderliches Gerät|Gerätedeinstallation|Erforderlich|
+|Erforderlicher und verfügbarer Benutzer|Verfügbarer Benutzer|Erforderlich und Verfügbar|
+|Erforderlicher und verfügbarer Benutzer|Benutzerdeinstallation|Erforderlich und Verfügbar|
+|Erforderlicher und verfügbarer Benutzer|Benutzer nicht verfügbar|Erforderlich und Verfügbar|
+|Erforderlicher und verfügbarer Benutzer|Erforderliches Gerät|Beides vorhanden, Erforderlich und Verfügbar
+|Erforderlicher und verfügbarer Benutzer|Gerät nicht verfügbar|Erforderlich und Verfügbar|
+|Erforderlicher und verfügbarer Benutzer|Gerätedeinstallation|Beides vorhanden, Gateway löst Erforderliches. Erforderlich und verfügbar
+|Benutzer nicht verfügbar|Gerät nicht verfügbar|Nicht verfügbar|
+|Verfügbarer Benutzer|Gerät nicht verfügbar|Verfügbar|
+|Erforderlicher Benutzer|Gerät nicht verfügbar|Erforderlich|
+|Benutzer verfügbar ohne Registrierung|Erforderlicher und verfügbarer Benutzer|Erforderlich und Verfügbar
+|Benutzer verfügbar ohne Registrierung|Erforderlicher Benutzer|Erforderlich
+|Benutzer verfügbar ohne Registrierung|Benutzer nicht verfügbar|Nicht verfügbar
+|Benutzer verfügbar ohne Registrierung|Verfügbarer Benutzer|Verfügbar|
+|Benutzer verfügbar ohne Registrierung|Erforderliches Gerät|Erforderlich und verfügbar ohne Registrierung|
+|Benutzer verfügbar ohne Registrierung|Gerät nicht verfügbar|Verfügbar ohne Registrierung|
+|Benutzer verfügbar ohne Registrierung|Gerätedeinstallation|Deinstallation und verfügbar ohne Registrierung.<br>Wenn der Benutzer die App nicht über das Unternehmensportal installiert hat, wird die Deinstallation berücksichtigt.<br>Wenn der Benutzer die App über das Unternehmensportal installiert, wird die Installation gegenüber der Deinstallation bevorzugt.|
+
+>[!NOTE]
+>Nur für verwaltete iOS Store-Apps: Falls Sie diese Intune hinzufügen und als „Erforderlich“ zuweisen, werden sie automatisch jeweils mit der Absicht „Erforderlich“ und „Verfügbar“ erstellt.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Weitere Informationen zum Überwachen von App-Zuweisungen finden Sie unter [Überwachen von Apps](apps-monitor.md).

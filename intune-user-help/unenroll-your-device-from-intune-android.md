@@ -5,51 +5,37 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 06/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3fe1ec94f3112a252b9694449d341f336e97e635
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c17389164df2f458ad5e3185f37a92791a83b129
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-unenroll-your-android-device-from-intune"></a>Aufheben der Registrierung Ihres Android-Geräts bei Intune
 
 Nachdem Sie die Registrierung Ihres Android-Geräts bei Intune aufgehoben haben, können Sie nicht mehr auf Unternehmensressourcen zugreifen.  Weitere Informationen dazu, was bei Aufheben der Registrierung bei Intune geschieht, finden Sie unter [Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?](what-happens-if-you-unenroll-your-device-from-intune-android.md) (Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?).
 
-Befolgen Sie zum Aufheben der Registrierung Ihres Geräts bei Intune und Deinstallieren der Unternehmensportal-App die folgenden Anweisungen, oder sehen Sie sich dieses Video an:
+Führen Sie zum Aufheben der Registrierung Ihres Geräts bei Intune und zum Entfernen der Unternehmensportal-App die folgenden Schritte aus:
 
-<iframe width="675" height="379" src="https://www.youtube.com/embed/K-Vi7lNfaMk" frameborder="0" allowfullscreen></iframe>
+1. Öffnen Sie das **Aktionsmenü** durch Tippen auf die drei vertikalen Punkte oben rechts in der Unternehmensportal-App. 
 
-1. Öffnen Sie Ihre **Einstellungen**-App und anschließend **Geräteadministratoren**, und deaktivieren Sie **Unternehmensportal**. Abhängig von Ihrem Gerät kann sich die Einstellung **Geräteadminstratoren** leicht im Namen oder Speicherort in der Liste der Vorlieben unterscheiden.
+  ![Ein Bild der Android-Unternehmensportal-App mit geöffnetem Aktionsmenü oben rechts. Die neue Option „Unternehmensportal entfernen“ steht als die dritte Option unter „Mein Profil“ und „Einstellungen“ und über „Nutzungsbedingungen“, „Hilfe und Feedback“ und „Info“ zur Verfügung.](./media/android_remove_cp_menu_action_after_1705.png)
 
-2.  Melden Sie sich bei der Unternehmensportal-App an.
+2. Tippen Sie auf **Unternehmensportal entfernen**.
 
-3.  Tippen Sie auf **Meine Geräte**, und wählen Sie dann das Gerät aus, dessen Registrierung Sie aufheben möchten.
+3. Eine Bestätigung wird angezeigt, in der Sie gefragt werden, ob Sie das Unternehmensportal wirklich entfernen möchten. Sie bietet einige Informationen darüber, was geschieht, wenn Sie die Registrierung Ihres Geräts aufheben. Nachdem Sie diese Meldung gelesen haben, tippen Sie auf **OK**, um die App zu entfernen. 
 
-    ![Wählen Sie das Gerät aus, für das Sie die Registrierung aufheben möchten.](./media/andr-1-my-devices-choose.png)
-
-4.  Tippen Sie auf das Papierkorbsymbol.
-
-    ![Tippen Sie auf das Papierkorbsymbol.](./media/andr-2-tap-trashcan.png)
-
-5.  Tippen Sie auf der Warnungsseite auf **OK**, um die Registrierung Ihres Geräts aufzuheben.
-
-    ![Entfernen Sie das Gerät.](./media/andr-3-warning-about-remove.png)
+  ![Ein Bild mit dem Bestätigungsdialogfeld, das nach der Auswahl der neuen Option „Unternehmensportal entfernen“ im Aktionsmenü verfügbar ist. Das Dialogfeld informiert den Benutzer über Folgendes: „Wenn Sie das Unternehmensportal entfernen, wird Ihr Gerät nicht länger durch Ihren IT-Administrator verwaltet, und der Zugriff auf Unternehmensdaten, Unternehmens-Apps und Unternehmens-E-Mails wird möglicherweise beendet.“ Anschließend muss der Benutzer bestätigen, dass er die Unternehmensportal-App entfernen möchte, indem er „Ja“ auswählt.](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-

@@ -1,12 +1,12 @@
 ---
 title: "Einstellungen des Layouts des Intune-Startbildschirms für iOS-Geräte"
-titleSuffix: Intune Azure preview
-description: "Intune Azure-Vorschau: Lernen Sie die Einstellungen kennen, mit denen Sie den Start- und Dockbildschirm von iOS-Geräten anpassen können."
+titleSuffix: Intune on Azure
+description: "Lernen Sie die Einstellungen kennen, mit denen Sie den Start- und Dockbildschirm von iOS-Geräten anpassen können."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,33 +15,30 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7743573ab893b7d54c11e183133fa02368c00779
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: de15a5f5291a6701782d357d24e2e802d7e7e44b
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Einstellungen des Layouts des Intune-Startbildschirms für iOS-Geräte
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Verwenden Sie diese Einstellungen, um das Layout von Apps, Ordnern und Webclips auf dem Start- und Dockbildschirm aller iOS-Geräte zu konfigurieren, denen Sie die Richtlinie zuweisen.
+Verwenden Sie diese Einstellungen, um das Layout von Apps, Ordnern und Webclips auf dem iOS-Start- und Dockbildschirm zu konfigurieren.
 
 iOS-Geräte, denen Sie das Profil zuweisen, müssen sich im überwachten Modus befinden und iOS 9.3 oder höher ausführen.
 
-1. Wählen Sie auf dem Blatt **Gerätefunktionen** die Option **Layout des Startbildschirms (nur überwacht)**.
+1. Wählen Sie auf dem Blatt **Gerätefunktionen** die Option **Layout des Startbildschirms (nur überwacht)** aus.
 2. Wählen Sie auf dem Blatt **Layout des Startbildschirms (nur überwacht)**, ob Sie das Layout des **Docks** oder der **Seiten** konfigurieren möchten.
 
 ## <a name="add-items-to-the-dock"></a>Hinzufügen von Elementen zum Dock
 
-Auf dem Blatt **Dock** können Sie dem Dock am unteren Rand des iOS-Bildschirms bis zu 6 Elemente oder Ordner hinzufügen. Allerdings unterstützen viele Geräte weniger Elemente – z.B. unterstützen iPhone-Geräte bis zu 4 Elemente. In diesem Fall werden nur die ersten vier Elemente, die Sie konfiguriert haben, auf dem Gerät angezeigt.
+Auf dem Blatt **Dock** können Sie dem Dock des iOS-Bildschirms bis zu sechs Elemente oder Ordner hinzufügen. Allerdings unterstützen viele Geräte weniger Elemente – z.B. unterstützen iPhone-Geräte bis zu vier Elemente. In diesem Fall werden nur die ersten vier Elemente, die Sie konfiguriert haben, auf dem Gerät angezeigt.
 
 1. Wählen Sie **Hinzufügen**, um dem Dock ein Element hinzuzufügen.
 2. Wählen Sie auf dem Blatt **Zeile hinzufügen** aus, ob Sie eine **App** oder einen **Ordner** hinzufügen möchten.
-3. Konfigurieren Sie anhand der Informationen in den Abschnitten **Hinzufügen einer App zur Liste** und **Hinzufügen eines Ordners zur Liste** dieses Themas die Apps und Ordner, die im Dock angezeigt werden sollen.
+3. Konfigurieren Sie mit den Informationen in diesem Thema die Apps und Ordner, die im Dock angezeigt werden sollen.
 4. Fügen Sie nach Bedarf weitere Elemente hinzu. Wenn Sie fertig sind, klicken Sie auf jedem Blatt auf **OK**, bis wieder das Blatt **Profil erstellen** angezeigt wird. Wählen Sie **Erstellen** aus.
 
 >[!TIP]
@@ -63,9 +60,9 @@ Fügen Sie die Seiten hinzu, die auf dem Startbildschirm angezeigt werden sollen
 
 
 1. Wählen Sie auf dem Blatt **Seiten** **Hinzufügen**.
-2. Geben Sie auf dem Blatt **Zeile hinzufügen** einen **Seitennamen** ein. Dieser Wert wird im Intune-Portal zur Referenz verwendet und auf iOS-Geräten *nicht angezeigt*.
+2. Geben Sie auf dem Blatt **Zeile hinzufügen** einen **Seitennamen** ein. Dieser Name wird im Intune-Portal zur Referenz verwendet und auf dem iOS-Gerät *nicht angezeigt*.
 3. Wählen Sie **Hinzufügen** aus, und wählen Sie dann, ob Sie der Seite eine **App** oder einen **Ordner** hinzufügen möchten.
-4. Konfigurieren Sie anhand der Informationen in den Abschnitten **Hinzufügen einer App zur Liste** und **Hinzufügen eines Ordners zur Liste** dieses Themas die Apps und Ordner, die auf der Seite angezeigt werden sollen.
+4. Konfigurieren Sie mit den Informationen in diesem Thema die Apps und Ordner, die auf der Seite angezeigt werden sollen.
 
 ### <a name="example"></a>Beispiel
 
@@ -79,7 +76,7 @@ Wenn Sie einem iPhone die Richtlinie zuweisen, ist das Ergebnis eine Seite, die 
 
 ## <a name="how-to-add-an-app-to-the-list"></a>Hinzufügen einer App zur Liste
 
-1. Geben Sie den **App-Namen** ein. Dieser Wert wird im Intune-Portal zur Referenz verwendet und auf iOS-Geräten *nicht angezeigt*.
+1. Geben Sie den **App-Namen** ein. Dieser Name wird im Intune-Portal zur Referenz verwendet und auf dem iOS-Gerät *nicht angezeigt*.
 2. Geben Sie die **App-Bündel-ID** der App ein, die Sie anzeigen möchten. Hilfe finden Sie weiter unten in diesem Thema unter **Bündel-ID-Referenz für integrierte iOS-Apps**.
 3. Klicken Sie auf **OK**, und fahren Sie mit dem Hinzufügen von Elementen bis zu einem Maximum von **6** für das Gerätedock und **60** für eine Geräteseite fort.
 4. Klicken Sie zum Abschluss auf **OK**.
@@ -88,10 +85,10 @@ Wenn Sie einem iPhone die Richtlinie zuweisen, ist das Ergebnis eine Seite, die 
 
 Apps, die Sie einer Seite in einem Ordner hinzufügen, sind in der Reihenfolge, in der sie in der Liste angegeben sind, von links nach rechts angeordnet. Wenn Sie mehr Apps hinzufügen, als auf eine Seite passen, werden die Apps auf eine nachfolgende Seite verschoben.
 
-1. Geben Sie den **Ordnernamen** ein. Dieser wird Benutzern auf ihren Geräten angezeigt.
+1. Geben Sie den **Ordnernamen** ein. Dieser Name wird Benutzern auf ihren Geräten angezeigt.
 2. Wählen Sie **Hinzufügen**, um eine Seite im Ordner zu erstellen. Sie können bis zu 20 Seiten hinzufügen.
-3. Geben Sie auf dem Blatt **Zeile hinzufügen** einen Namen für die Seite ein. Dieser Wert wird im Intune-Portal zur Referenz verwendet und auf iOS-Geräten *nicht angezeigt*.
-3. Geben Sie den **App-Namen** ein. Dieser Wert wird im Intune-Portal zur Referenz verwendet und auf iOS-Geräten *nicht angezeigt*.
+3. Geben Sie auf dem Blatt **Zeile hinzufügen** einen Namen für die Seite ein. Dieser Name wird im Intune-Portal zur Referenz verwendet und auf dem iOS-Gerät *nicht angezeigt*.
+3. Geben Sie den **App-Namen** ein. Dieser Name wird im Intune-Portal zur Referenz verwendet und auf dem iOS-Gerät *nicht angezeigt*.
 2. Geben Sie die **App-Bündel-ID** der App ein, die Sie anzeigen möchten. Hilfe finden Sie unter **Hinzufügen einer App zur Liste**.
 3. Wählen Sie **Hinzufügen** aus. Sie können bis zu 60 Elemente hinzufügen.
 4. Klicken Sie zum Abschluss auf **OK**.
@@ -144,3 +141,6 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 |Weather|com.apple.weather|
 
 
+## <a name="next-steps"></a>Nächste Schritte
+
+Sie können nun das Geräteprofil den von Ihnen ausgewählten Gruppen zuweisen. Weitere Informationen finden Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md).

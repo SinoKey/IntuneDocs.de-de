@@ -34,6 +34,9 @@ Mit der Funktion der automatischen Registrierung können Benutzer ihre Windows 1
     - **URL für MDM-Ermittlung**
     - **MDM Compliance-URL**
 
+    > [!IMPORTANT]
+    > Wenn ein Benutzer Mitglied einer Gruppe ist, für die sowohl die automatische MDM-Registrierung als auch MAM aktiviert ist, und er versucht, mit seinem persönlichen Gerät dem Arbeitsplatz beizutreten, ist nur MAM aktiviert. 
+
 6. Wählen Sie **Speichern** aus.
 
 Standardmäßig ist die zweistufige Authentifizierung für den Dienst nicht aktiviert. Die zweistufige Authentifizierung wird jedoch empfohlen, wenn Sie ein Gerät registrieren. Bevor die zweistufige Authentifizierung für diesen Dienst erforderlich ist, müssen Sie einen Anbieter für die zweistufige Authentifizierung in Azure Active Directory und Ihre Benutzerkonten konfigurieren. Weitere Informationen finden Sie unter [Erste Schritte mit Azure Multi-Factor Authentication-Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).

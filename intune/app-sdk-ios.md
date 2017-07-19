@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 12/15/2016
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 9fad536aab83f0e8ae12aff8cab44943ae1ac82d
-ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 0fb1d52a97a03609ddefb94caf707bd8cbee8f12
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
 > [!NOTE]
@@ -460,6 +457,17 @@ MAMTelemetryDisabled| Boolesch| Gibt an, ob das SDK keine Telemetriedaten an sei
 > [!NOTE]
 > Gemäß den App Store-Standards muss `MAMPolicyRequired` auf „NO“ festgelegt sein, wenn Ihre App im App Store veröffentlicht werden soll.
 
+## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Aktivieren der MAM-Zielkonfiguration für Ihre iOS-Anwendungen
+Die MAM-Zielkonfiguration ermöglicht, dass eine App Konfigurationsdaten über das Intune App SDK erhalten kann. Das Format und die Varianten dieser Daten müssen definiert und Intune-Kunden vom Besitzer oder Entwickler der Anwendung mitgeteilt werden. Intune-Administratoren können Konfigurationsdaten über die Intune Azure-Konsole als Ziel festlegen und bereitstellen. Beim Intune App SDK für iOS (Version 7.0.1) können Apps, die an der MAM-Zielkonfiguration teilnehmen, über den MAM-Dienst mit MAM-Zielkonfigurationsdaten versorgt werden. Die Anwendungskonfigurationsdaten werden durch unseren MAM-Dienst direkt an die App übertragen, und nicht über den MDM-Kanal. Das Intune App SDK stellt eine Klasse für den Zugriff auf die Daten bereit, die aus diesen Konsolen abgerufen wurden. Folgende Voraussetzungen sind erforderlich: <br>
+* Die App muss für MAM-WE registriert werden, bevor Sie auf die Benutzeroberfläche der MAM-Zielkonfiguration zugreifen. Weitere Informationen zu MAM-WE finden Sie unter [App-Schutzrichtlinie ohne Geräteregistrierung im Intune App SDK-Entwicklerhandbuch](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment).
+* In der Quelldatei der App muss ```IntuneMAMAppConfigManager.h``` enthalten sein.
+* Rufen Sie ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` auf, um das App-Konfigurationsobjekt zu erhalten.
+* Rufen Sie den entsprechenden Selektor auf dem Objekt ```IntuneMAMAppConfig``` auf. Wenn es sich zum Beispiel beim Schlüssel Ihrer Anwendung um eine Zeichenfolge handeln, könnten Sie ```stringValueForKey``` oder ```allStringsForKey``` verwenden. Die Datei ```IntuneMAMAppConfig.h header``` enthält Rückgabewerte und Fehlerbedingungen.
+
+Weitere Informationen zu den Funktionen der Graph-API in Bezug auf die MAM-Zielkonfigurationswerte finden Sie unter [Graph API Reference MAM Targeted Config (Graph-API-Referenz für MAM-Zielkonfigurationen)](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+
+Weitere Informationen zum Erstellen einer MAM-Zielkonfigurationsrichtlinie für Apps in iOS finden Sie im Abschnitt zu MAM-Zielkonfiguration für Apps unter [How to use Microsoft Intune app configuration policies for iOS (Verwenden von Microsoft Intune-App-Konfigurationsrichtlinien für iOS)](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios).
+
 ## <a name="telemetry"></a>Telemetrie
 
 Standardmäßig protokolliert das Intune App SDK für iOS Telemetriedaten zu den folgenden Nutzungsereignissen. Diese Daten werden an Microsoft Intune gesendet.
@@ -656,4 +664,3 @@ Sowohl die statische Bibliothek als auf Frameworkbuilds des Intune App SDK sind 
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
     Der erste Befehl entfernt die Simulatorarchitekturen aus der DYLIB-Datei des Frameworks. Der zweite Befehl kopiert die nur für Geräte zuständige DYLIB-Datei wieder in das Frameworkverzeichnis.
-

@@ -1,7 +1,7 @@
 ---
 title: "Erstellen und Zuweisen einer Richtlinie für bedingten Zugriff für Exchange lokal"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie in Exchange lokal den bedingten Zugriff und das ältere Exchange Online Dedicated in Intune konfigurieren."
+titleSuffix: Intune on Azure
+description: "Erfahren Sie, wie Sie in Exchange lokal den bedingten Zugriff und das ältere Exchange Online Dedicated in Intune konfigurieren.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,18 +14,15 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2f1775eb98d6518ce35dcc38852e167c5eada616
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: b72dbe27b52be187a907392aea5a1803fb36e4d3
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/03/2017
 ---
+# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Erstellen und Zuweisen einer Richtlinie für bedingten Zugriff für Exchange lokal und das ältere Exchange Online Dedicated in Microsoft Intune
 
-# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune-azure-preview"></a>Gewusst wie: Erstellen und Zuweisen einer Richtlinie für bedingten Zugriff für Exchange lokal und das ältere Exchange Online Dedicated in der Azure-Vorschau von Microsoft Intune
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Dieses Thema führt Sie durch die Konfiguration des bedingten Zugriffs für Exchange lokal basierend auf der Gerätekonformität.
 
@@ -85,7 +82,7 @@ Die systemeigene **E-Mail**-Anwendung unter Windows 8.1 und höher (bei Registri
 
 4. Wählen Sie **Intune** aus. Das **Intune-Dashboard** wird angezeigt.
 
-5.  Wählen Sie **Bedingter Zugriff** aus.
+5. Wählen Sie **Lokaler Zugriff**, und wählen Sie dann
 
 6. Das Blatt **Lokal** enthält den Status der Richtlinie für bedingten Zugriff und die Geräte, die davon betroffen sind.
 
@@ -93,8 +90,8 @@ Die systemeigene **E-Mail**-Anwendung unter Windows 8.1 und höher (bei Registri
 
 8. Wählen Sie auf dem Blatt **Zugriff auf Exchange lokal** die Option **Ja** aus, um Access Control für Exchange lokal zu aktivieren.
 
-      > [!NOTE]
-      > Wenn Sie den lokalen Connector für Exchange Active Sync nicht konfiguriert haben, ist diese Option deaktiviert.  Sie müssen diesen Connector zunächst installieren und konfigurieren, bevor Sie den bedingten Zugriff auf Exchange lokal aktivieren. Weitere Informationen finden Sie unter [Installieren des lokalen Exchange Connectors für Intune](exchange-connector-install.md).
+    > [!NOTE]
+    > Wenn Sie den lokalen Connector für Exchange Active Sync nicht konfiguriert haben, ist diese Option deaktiviert.  Sie müssen diesen Connector zunächst installieren und konfigurieren, bevor Sie den bedingten Zugriff auf Exchange lokal aktivieren. Weitere Informationen finden Sie unter [Installieren des lokalen Exchange Connectors für Intune](exchange-connector-install.md).
 
 9. Wählen Sie unter **Zuweisung** die Option **Eingeschlossene Gruppen** aus.  Verwenden Sie die Sicherheitsbenutzergruppe, auf die bedingter Zugriff angewendet werden soll. In diesem Fall müssen die Benutzer ihre Geräte selbst in Intune registrieren und die Konformität mit den Konformitätsprofilen sicherstellen.
 
@@ -114,12 +111,12 @@ Die systemeigene **E-Mail**-Anwendung unter Windows 8.1 und höher (bei Registri
 
 15. Klicken Sie auf dem Blatt **Lokal** auf **Speichern**, um die Richtlinie für bedingten Zugriff zu speichern.
 
-## <a name="create-azure-ad-conditional-access-policies-in-intune-azure-preview"></a>Erstellen von Azure AD-Richtlinien für den bedingten Zugriff in der Azure-Vorschau von Intune
+## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Erstellen von Azure AD-Richtlinien für den bedingten Zugriff in Intune
 
-Ab Version Intune 1704 können Administratoren in der Azure-Vorschau von Intune Azure AD-Richtlinien für den bedingten Zugriff erstellen. Diese bieten Ihnen den Komfort, nicht zwischen Azure- und Intune-Workloads wechseln zu müssen.
+Ab Intune Version 1704 können Administratoren im Azure-Portal für Intune Azure AD-Richtlinien für den bedingten Zugriff erstellen. Diese bieten Ihnen den Komfort, nicht zwischen Azure- und Intune-Workloads wechseln zu müssen.
 
 > [!IMPORTANT]
-> Sie benötigen eine Azure AD Premium-Lizenz, um im Azure-Vorschauportal für Intune Azure AD-Richtlinien für den bedingten Zugriff zu erstellen.
+> Sie benötigen eine Azure AD Premium-Lizenz, um im Azure-Portal für Intune Azure AD-Richtlinien für den bedingten Zugriff zu erstellen.
 
 ### <a name="to-create-azure-ad-conditional-access-policy"></a>Erstellen einer Azure AD-Richtlinie für den bedingten Zugriff
 

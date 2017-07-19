@@ -1,12 +1,12 @@
 ---
 title: "AirPlay-Einstellungen für iOS-Geräte in Intune"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "Erfahren Sie, wie Sie Intune verwenden können, um iOS-Geräte automatisch mit AirPlay-kompatiblen Geräten zu verbinden."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,24 +15,21 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ad2f20603261ec0eac4156facd3fd23b2982f517
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 7e44c1d438fc5782d696cba0b39c3c4d65492096
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="intune-airplay-settings-for-ios-devices"></a>AirPlay-Einstellungen für iOS-Geräte in Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Verwenden Sie diese Einstellungen, um von Ihnen verwaltete iOS-Geräte mit AirPlay-kompatiblen Geräten (z.B. Apple TV-Geräten) in Ihrem Netzwerk zu verbinden.
 Diese Funktion ermöglicht Folgendes:
 
-- **Konfigurieren einer Geräte- und Kennwortliste**: Stellen Sie Geräten die Namen und Kennwörter von AirPlay-Geräten bereit, damit diese automatisch eine Verbindung herstellen können, sobald sie sich im Empfangsbereich befinden. Wenn Sie Kennwörter angeben, müssen die Endbenutzer diese beim Herstellen der Verbindung nicht bereitstellen.
-- **Konfigurieren von zulässigen Zielen**: Konfigurieren Sie eine Liste mit AirPlay-Geräten (anhand der Geräte-ID). Endbenutzer sehen nur die von Ihnen aufgelisteten Geräte und können nur mit diesen Geräten eine Verbindung herstellen (nur für überwachte Geräte).
+- **Konfigurieren einer Geräte- und Kennwortliste**: Damit können Benutzer automatisch eine Verbindung mit AirPlay-Geräten im Bereich herstellen. Stellen Sie ihnen den Namen und das Kennwort von AirPlay-Geräten bereit, damit sie dies nicht angeben müssen, wenn sie eine Verbindung herstellen.
+- **Konfigurieren von zulässigen Zielen**: Konfigurieren Sie eine Liste mit AirPlay-Geräten (anhand der Geräte-ID). Endbenutzer können nur die von Ihnen aufgelisteten Geräte sehen und nur mit diesen Geräten eine Verbindung herstellen (nur für überwachte Geräte).
 
 ## <a name="get-started"></a>Erste Schritte
 
@@ -48,11 +45,14 @@ Diese Funktion ermöglicht Folgendes:
 
 ## <a name="configure-allowed-destinations"></a>Konfigurieren von zulässigen Zielen
 
-1. Geben Sie auf dem Blatt *Zulässige Ziele (nur überwacht)* die **Geräte-ID** eines AirPlay-Geräts ein, z.B. „52:46:CD:51:83:4C“.
+1. Geben Sie auf dem Blatt **Zulässige Ziele (nur überwacht)** die **Geräte-ID** eines AirPlay-Geräts ein, z.B. „52:46:CD:51:83:4C“.
 2. Klicken Sie nach dem Eingeben der Geräte-ID auf **Hinzufügen**. Die ID wird in der Liste **Geräte-ID** angezeigt.
 3. Fügen Sie nach Bedarf weitere Geräte hinzu. Wenn Sie fertig sind, wählen Sie **OK** aus.
 
 Sie können Geräte, Kennwörter und zulässige Ziele auch aus einer Datei mit durch Trennzeichen getrennten Werten (CSV-Datei) importieren.
 
 
+## <a name="next-steps"></a>Nächste Schritte
+
+Sie können nun das Geräteprofil den von Ihnen ausgewählten Gruppen zuweisen. Weitere Informationen finden Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md).
 

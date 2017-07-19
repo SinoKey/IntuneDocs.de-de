@@ -1,7 +1,7 @@
 ---
-title: Erste Schritte mit Gruppen in der Vorschau von Intune im Azure-Portal
-titleSuffix: Intune Azure preview
-description: Erfahren Sie Neuigkeiten mit Gruppen in der Vorschau von Intune im Azure-Portal.
+title: Klassische Intune-Gruppen im Azure-Portal
+titleSuffix: Intune on Azure
+description: Lernen Sie die Neuerungen bei Gruppen im Intune-Azure-Portal kennen.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -13,23 +13,20 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0a6e2b75b1c85c0cd0ed98623dcd9d87b15eb082
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3e7cf02ed43507eabdf6038940058f94eb09b0fa
+ms.sourcegitcommit: d1ad84edf4f03cb4c11fe55131556b43fc3a4500
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/05/2017
 ---
+# <a name="intune-classic-groups-in-the-azure-portal"></a>Klassische Intune-Gruppen im Azure-Portal
 
-# <a name="get-started-with-groups"></a>Erste Schritte mit Gruppen
-
-[!INCLUDE[azure preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Wir haben Ihr Feedback berücksichtigt und einige Änderungen für das Arbeiten mit Gruppen in Microsoft Intune vorgenommen.
 Wenn Sie Intune über das Azure-Portal verwenden, wurden Ihre Intune-Gruppen zu Azure Active Directory-Sicherheitsgruppen migriert.
 
-Der Vorteil für Sie ist, dass Sie jetzt in allen Ihren Enterprise Mobility + Security- und Azure AD-Apps dieselbe Gruppenumgebung verwenden. Darüber hinaus werden können Sie PowerShell und die Graph-API zum Erweitern und Anpassen dieser neuen Funktionalität nutzen.
+Der Vorteil für Sie ist, dass Sie jetzt in allen Ihren Enterprise Mobility + Security- und Azure AD-Apps dieselbe Gruppenumgebung verwenden. Darüber hinaus können Sie PowerShell und die Graph-API zum Erweitern und Anpassen dieser neuen Funktionalität nutzen.
 
 Azure AD-Sicherheitsgruppen unterstützen alle Arten von Intune-Bereitstellungen für Benutzer und Geräte. Darüber hinaus können Sie dynamische Azure AD-Gruppen verwenden, die basierend auf den von Ihnen angegebenen Attributen automatisch aktualisiert werden. Sie können z.B. eine Gruppe von Geräten erstellen, auf denen iOS 9 ausgeführt wird. Wenn ein mit iOS 9 ausgeführtes Gerät angemeldet wird, wird das Gerät automatisch in der dynamischen Gruppe angezeigt.
 
@@ -38,7 +35,7 @@ Azure AD-Sicherheitsgruppen unterstützen alle Arten von Intune-Bereitstellungen
 Einige der Funktionen von Intune-Gruppen, die Sie eventuell zuvor verwendet haben, sind nicht in Azure AD verfügbar:
 
 - Die Intune-Gruppen **Nicht gruppierte Benutzer** und **Nicht gruppierte Geräte** sind nicht mehr verfügbar.
-- Die Option zum **Ausschließen bestimmter Mitglieder** aus einer Gruppe ist im Azure-Portal nicht vorhanden. Sie können jedoch eine Azure AD-Sicherheitsgruppe mit erweiterten Regeln verwenden, um dieses Verhalten zu replizieren. So könnten Sie beispielsweise eine erweiterte Regel erstellen, die alle Mitarbeiter der Vertriebsabteilung in einer Sicherheitsgruppe zusammenschließt, mit Ausnahme der Personen, deren Position das Wort Assistent aufweist. Sie könnten diese erweiterte Regel verwenden:
+- Die Option zum **Ausschließen bestimmter Mitglieder** aus einer Gruppe ist im Azure-Portal nicht vorhanden. Sie können jedoch eine Azure AD-Sicherheitsgruppe mit erweiterten Regeln verwenden, um dieses Verhalten zu replizieren. So könnten Sie beispielsweise eine erweiterte Regel erstellen, die alle Mitarbeiter der Vertriebsabteilung in einer Sicherheitsgruppe zusammenschließt, mit Ausnahme der Gruppen, deren Position das Wort Assistent aufweist. Sie könnten diese erweiterte Regel verwenden:
 
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`.
 - Die Gruppe **Alle mit Exchange ActiveSync verwalteten Geräte** in der Intune-Konsole wurde nicht zu Azure AD migriert. Allerdings können Sie im Azure-Portal weiter auf Informationen zu mit EAS verwalteten Geräten zugreifen.
@@ -46,9 +43,9 @@ Einige der Funktionen von Intune-Gruppen, die Sie eventuell zuvor verwendet habe
 ## <a name="how-to-get-started"></a>Erste Schritte
 
 - Lesen Sie die folgenden Themen, um mehr über Azure AD-Sicherheitsgruppen und ihre Funktionsweise zu erfahren:
-    -  [Verwalten des Zugriffs auf Ressourcen mit Azure Active Directory-Gruppen](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)
-    -  [Verwalten von Gruppen in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/)
-    -  [Verwenden von Attributen zum Erstellen erweiterter Regeln](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
+    -  [Verwalten des Zugriffs auf Ressourcen mit Azure Active Directory-Gruppen](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/)
+    -  [Verwalten von Gruppen in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+    -  [Verwenden von Attributen zum Erstellen erweiterter Regeln](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
 -  Stellen Sie sicher, dass Administratoren, die Gruppen erstellen müssen, der Azure AD-Rolle **Intune-Dienstadministrator** hinzugefügt werden. Beachten Sie, dass die Azure AD Dienstadministrator-Rolle nicht die Berechtigung **Gruppe verwalten** hat.
 -  Wenn Ihre Intune-Gruppen die Option **Spezifische Mitglieder ausschließen** verwenden, entscheiden Sie, ob Sie diese Gruppen ohne Ausschlüsse umgestalten können, oder ob Sie erweiterte Regeln benötigen, um Geschäftsanforderungen zu erfüllen.
 
@@ -56,7 +53,7 @@ Einige der Funktionen von Intune-Gruppen, die Sie eventuell zuvor verwendet habe
 ## <a name="what-happened-to-intune-groups"></a>Was ist mit Intune-Gruppen geschehen?
 Wenn Gruppen aus dem klassischen Intune Portal zu Intune im Azure-Portal migriert werden, gelten die folgenden Regeln:
 
-| Gruppen in Intune|Gruppen in Azure AD|
+| Gruppen im klassischen Intune-Portal|Gruppen in Azure AD|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
 |Statische Benutzergruppe|Statische Azure AD-Sicherheitsgruppe|
 |Dynamische Benutzergruppe|Statische Azure AD-Sicherheitsgruppen mit einer Hierarchie von Azure AD-Sicherheitsgruppen|
@@ -88,4 +85,3 @@ Attribute sind Geräteeigenschaften, die bei der Definition von Gruppen verwende
 ## <a name="what-happens-to-policies-and-apps-you-previously-deployed"></a>Was geschieht mit Richtlinien und Apps, die Sie bereitgestellt haben?
 
 Richtlinien und Apps werden Gruppen wie bisher weiter bereitgestellt. Allerdings verwalten Sie diese Gruppen jetzt im Azure-Portal statt in der klassischen Intune-Konsole.
-

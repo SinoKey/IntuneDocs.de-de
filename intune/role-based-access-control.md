@@ -1,12 +1,12 @@
 ---
-title: "Intune-Rollen (RBAC) für Microsoft Intune"
+title: Rollenbasierte Zugriffssteuerung mit Intune
 titleSuffix: Intune Azure preview
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie mit der rollenbasierten Zugriffssteuerung steuern können, wer Aktionen ausführen und Änderungen vornehmen kann."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 06/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,161 +15,119 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9a6dfde1d02313e51f59d4fd101a175f347f6cec
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e2302b0e53254b945215aadbb13107c85f345412
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="role-based-administration-control-rbac-with-intune"></a>Rollenbasierte Zugriffssteuerung mit Intune
 
-# <a name="intune-roles-rbac-for-microsoft-intune"></a>Intune-Rollen (RBAC) für Microsoft Intune
+Mithilfe der rollenbasierten Zugriffssteuerung können Sie bestimmen, wer verschiedene Intune-Aufgaben in Ihrer Organisation ausführen darf und für wen diese Aufgaben gelten. Sie können entweder die integrierten Rollen verwenden, die einige allgemeine Intune-Szenarien abdecken, oder Sie können eigene Rollen erstellen. Eine Rolle wird durch Folgendes definiert:
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+- **Rollendefinition**: Der Name einer Rolle, die von ihr verwalteten Ressourcen und die jeder Ressource erteilten Berechtigungen.
+- **Mitglieder**: Die Benutzergruppen, denen die Berechtigungen erteilt werden.
+- **Bereich**: Die Benutzer- bzw. Gerätegruppen, die die Mitglieder verwalten können.
+- **Zuweisung:** Nachdem die Definition, Mitglieder und der Bereich konfiguriert wurden, wird die Rolle zugewiesen.
 
-Einfach ausgedrückt helfen Ihnen Intune-**Rollen** (also die rollenbasierte Zugriffssteuerung) dabei zu steuern, welche Benutzer welche Intune-Aktionen ausführen dürfen, und für wen diese Aktionen gelten. Sie können entweder die integrierten Rollen verwenden, die einige allgemeine Intune-Szenarien abdecken, oder Sie können eigene Rollen erstellen.
+![Beispiel für die rollenbasierte Zugriffssteuerung mit Intune](./media/intune-rbac-1.PNG)
 
-Eine Rolle wird durch Folgendes definiert:
+Beginnend mit dem neuen Intune-Portal bietet **Azure Active Directory (Azure AD)** zwei Verzeichnisrollen, die mit Intune verwendet werden können. Diese Rollen haben die Vollzugriffsberechtigung für alle Aktivitäten in Intune:
 
-- **Definition:** der Name der Rolle und die damit konfigurierten Berechtigungen
-- **Mitglieder:** der Benutzer (oder die Benutzergruppe), dem diese Berechtigungen gewährt werden
-- **Bereich:** die Benutzer oder Geräte, die eine angegebene Person (das Mitglied) verwalten kann
-- **Zuweisung:** Wenn die Definition, die Mitglieder und der Bereich konfiguriert wurden, wird die Rolle zugewiesen.
+- **Globaler Administrator:** Benutzer mit dieser Rolle haben Zugriff auf alle administrativen Funktionen in Azure AD sowie auf Dienste, die mit Azure AD einen Verbund bilden, wie z.B. Exchange Online, SharePoint Online und Skype for Business Online. Die Person, die sich für den Azure AD-Mandanten registriert, wird ein globaler Administrator. Nur globale Administratoren können weitere Azure AD-Administratorrollen zuweisen. Es kann mehr als einen globalen Administrator in Ihrem Unternehmen geben. Globale Administratoren können das Kennwort aller Benutzer und aller anderen Administratoren zurücksetzen.
 
-## <a name="built-in-roles"></a>Integrierte Rollen:
+- **Intune-Dienstadministrator:** Benutzer mit dieser Rolle haben globale Berechtigungen in Intune, sobald der Dienst aktiviert ist. Diese Rolle bietet darüber hinaus die Möglichkeit zum Verwalten von Benutzern und Geräten sowie zum Erstellen und Verwalten von Gruppen.
 
-Die folgenden Rollen sind in Intune integriert. Sie können diese Rollen anpassen oder sie ohne weitere Konfiguration Gruppen zuweisen.
+- **Administrator für bedingten Zugriff**: Benutzer mit dieser Rolle haben nur Berechtigungen, Richtlinien für den bedingten Zugriff anzuzeigen, zu erstellen, zu bearbeiten und zu löschen.
 
-- **Intune Administrator:** besitzt vollständige Berechtigungen für alle Intune Vorgänge
-- **Application Manager:** verwaltet Anwendungen und Profile und stellt sie bereit
-- **Configuration Policy Manager:** verwaltet Konfigurationseinstellungen und Profile und stellt sie bereit
-- **Helpdesk Operator:** führt Remoteaufgaben durch und zeigt Benutzer- und Geräteinformationen an.
-- **Read Only Operator:** zeigt Informationen im Intune-Portal an, ohne Änderungen vornehmen zu können
+    > [!IMPORTANT]
+    > Die Rolle „Intune-Dienstadministrator“ ermöglicht nicht das Verwalten der Azure AD-Einstellungen für bedingten Zugriff.
 
+    > [!TIP]
+    > Intune zeigt außerdem drei Azure AD-Erweiterungen an, **Benutzer**, **Gruppen** und **Bedingter Zugriff**, die mithilfe der rollenbasierten Zugriffssteuerung von Azure AD gesteuert werden. Darüber hinaus führt der **Benutzerkontoadministrator** lediglich auf AAD-Benutzer- und Gruppen bezogene Aktivitäten aus und verfügt nicht über Vollzugriffsberechtigungen zum Ausführen aller Aktivitäten in Intune. Unter [Rollenbasierte Zugriffssteuerung in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) finden Sie weitere Details.
 
-## <a name="custom-roles"></a>Benutzerdefinierte Rollen
+## <a name="roles-created-in-the-intune-classic-console"></a>In der klassischen Intune-Verwaltungskonsole erstellte Rollen
 
-Wenn keine der integrierten Rollen Ihren Anforderungen entspricht, können Sie eigene Rollen erstellen. Wählen Sie dazu die Einstellungen aus, die viele der Funktionen von Intune umfassen. Eine Liste der verfügbaren Einstellungen finden Sie weiter unten in diesem Thema.
+Nur Benutzer mit der Rolle **Intune-Dienstadministrator** mit Vollzugriffsberechtigung werden von der klassischen Intune-Verwaltungskonsole zu Intune in Azure migriert. Sie müssen Benutzer mit der Rolle **Intune-Dienstadministrator** mit der Zugriffsebene „Schreibgeschützt“ oder „Support“ Intune-Rollen im Azure-Portal neu zuweisen und aus dem klassischen Azure-Portal entfernen.
 
-### <a name="example"></a>Beispiel
+> [!IMPORTANT]
+> Sie können den Zugriff für Intune-Dienstadministratoren in der klassischen Konsole ggf. beibehalten, wenn Ihre Administratoren weiterhin einen Zugriff zum Verwalten von PCs mit Intune benötigen.
 
-Sie stellen einen neuen IT-Administrator ein, der für das Bereitstellen und Verwalten von Apps für Benutzer in Ihrem Büro in London verantwortlich ist. Die Benutzer sind Mitglieder der Azure AD-Gruppe **London**. Sie möchten sicherstellen, dass der IT-Administrator keine Apps für Benutzer in anderen Büros bereitstellen kann. Sie führen die folgenden Maßnahmen durch:
+## <a name="built-in-roles"></a>Integrierte Rollen
 
-- Weisen Sie die integrierte Rolle **Application Manager** mit den folgenden Eigenschaften zu:
-    - **Mitglieder:** Wählen Sie eine Gruppe aus, die den IT-Administrator enthält, der Apps bereitstellen soll.
-    - **Bereich:** Wählen Sie die Azure AD-Gruppe **London** aus.
+Die folgenden Rollen sind in Intune integriert. Sie können sie ohne weitere Konfiguration Gruppen zuweisen:
 
-    >[!IMPORTANT]
-    >Für das Erstellen, Bearbeiten oder Zuweisen von Rollen muss das Konto in Azure AD über eine der folgenden Berechtigungen verfügen:
-    >- **Global AAD Admin**
-    >- **Intune Service Admin**
+- **Support**: Führt Remoteaufgaben für Benutzer und Geräte durch und kann Anwendungen oder Richtlinien Benutzern oder Geräten zuweisen. 
+- **Richtlinien- und Profil-Manager**: Verwaltet Konformitätsrichtlinien, Konfigurationsprofile, die Apple-Registrierung und unternehmensbezogene Geräte-IDs.
+- **Operator mit beschränkter Leseberechtigung**: Kann Benutzer-, Geräte-, Registrierungs-, Konfigurations- und Anwendungsinformationen anzeigen, aber keine Änderungen an Intune vornehmen.
+- **Anwendungs-Manager**: Verwaltet mobile und verwaltete Anwendungen und kann Geräteinformationen lesen.
 
-### <a name="how-to-create-a-custom-role"></a>Erstellen einer benutzerdefinierten Rolle
+### <a name="to-assign-a-built-in-role"></a>So weisen Sie eine integrierte Rolle zu
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Intune roles** (Intune-Rollen) aus.
-![Workload „Zugriffssteuerung“](./media/axxess-control.png)
-1. Wählen Sie auf dem Blatt **Rollen** in der Workload **Zugriffssteuerung** die Option **Benutzerdefiniertes Element hinzufügen** aus.
-2. Geben Sie auf dem Blatt **Benutzerdefinierte Rolle hinzufügen** einen Namen und eine Beschreibung für die neue Rolle ein, und klicken Sie dann auf **Berechtigungen**.
-3. Wählen Sie auf dem Blatt **Berechtigungen** die Berechtigungen aus, die Sie mit dieser Rolle verwenden möchten. Verwenden Sie als Hilfestellung die Liste der Einstellungen für benutzerdefinierte Rollen weiter unten in diesem Thema.
-4. Klicken Sie abschließend auf **OK**.
-5. Klicken Sie auf dem Blatt **Benutzerdefinierte Rolle hinzufügen** auf **Erstellen**.
+1. Wählen Sie auf der Seite **Intune-Rollen** die integrierte Rolle aus, die Sie zuweisen möchten.
 
-Die neue Rolle wird in der Liste auf dem Blatt **Rollen** angezeigt.
+2. Wählen Sie auf dem Blatt <*Rollenname*> – **Eigenschaften** erst **Verwalten** und dann **Zuweisungen** aus.
 
-## <a name="how-to-assign-a-role"></a>Zuweisen einer Rolle
+    > [!NOTE] 
+    > Sie können die integrierten Rollen nicht löschen oder bearbeiten.
+    
+3. Wählen Sie auf dem Blatt „Benutzerdefinierte Rolle“ **Zuweisen** aus.
 
-1. Wählen Sie auf dem Blatt **Rollen** in der Workload **Zugriffssteuerung** die gewünschte integrierte oder benutzerdefinierte Rolle aus, die Sie zuweisen möchten.
-2. Wählen Sie auf dem Blatt <*Rollenname*> – **Eigenschaften** die Option **Verwalten** > **Zuweisungen** aus. Sie können auf diesem Blatt auch vorhandene Rollen bearbeiten oder löschen.
-3. Wählen Sie auf dem nächsten Blatt **Zuweisen** aus.
 4. Geben Sie auf dem Blatt **Rollenzuweisungen** einen **Namen** und eine optionale **Beschreibung** für die Zuweisung ein, und wählen Sie dann Folgendes aus:
     - **Mitglieder:** Wählen Sie eine Gruppe aus, die den Benutzer enthält, dem Sie die Berechtigungen erteilen möchten.
     - **Bereich:** Wählen Sie eine Gruppe aus, die die Benutzer enthält, die das oben ausgewählte Mitglied verwalten soll.
-5. Klicken Sie abschließend auf **OK**.
+<br></br>
+5. Klicken Sie abschließend auf **OK**. Die neue Zuweisung wird in der Liste der Zuweisungen angezeigt.
 
-Die neue Zuweisung wird in der Liste der Zuweisungen angezeigt.
+### <a name="intune-rbac-table"></a>Intune-Tabelle zur rollenbasierten Zugriffsteuerung
 
-## <a name="custom-role-settings-reference"></a>Referenz für die Einstellungen benutzerdefinierter Rollen
+- Laden Sie die [Intune-Tabelle zur rollenbasierten Zugriffsteuerung](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) herunter, um weitere Details zu den Möglichkeiten jeder Rolle zu erfahren.
 
-Wenn Sie eine benutzerdefinierte Rolle erstellen, können Sie eine oder mehrere der folgenden Einstellungen konfigurieren:
+## <a name="custom-roles"></a>Benutzerdefinierte Rollen
 
-### <a name="device-configurations"></a>Gerätekonfigurationen
+Sie können eine benutzerdefinierte Sicherheitsrolle erstellen, die alle für einen bestimmten Aufgabenbereich erforderlichen Berechtigungen enthält. Wenn beispielsweise eine IT-Abteilungsgruppe Anwendungen, Richtlinien und Konfigurationsprofile verwaltet, können Sie alle diese Berechtigungen gemeinsam einer benutzerdefinierten Rolle hinzufügen.
 
-|||
-|-|-|
-|**Zuweisen**|Zuweisen von Geräteprofilen zu Gruppen|
-|**Erstellen**|Erstellen von Geräteprofilen|
-|**Löschen**|Löschen von Geräteprofilen|
-|**Lesen**|Lesen von Geräteprofilen und deren Eigenschaften|
-|**Aktualisieren**|Aktualisieren vorhandener Geräteprofile|
+> [!IMPORTANT]
+> Für das Erstellen, Bearbeiten oder Zuweisen von Rollen muss das Konto in Azure AD über eine der folgenden Berechtigungen verfügen:
+> - **Globaler Administrator**
+> - **Intune-Dienstadministrator**
 
-### <a name="managed-apps"></a>Verwaltete Apps
+### <a name="to-create-a-custom-role"></a>So erstellen Sie eine benutzerdefinierte Rolle
 
-|||
-|-|-|
-|**Zuweisen**|Zuweisen verwalteter Apps zu Gruppen|
-|**Erstellen**|Hinzufügen neuer verwalteter Apps in Intune|
-|**Löschen**|Löschen verwalteter Apps|
-|**Lesen**|Lesen verwalteter Apps und ihrer Eigenschaften|
-|**Aktualisieren**|Aktualisieren vorhandener verwalteter Apps|
-|**Zurücksetzen**|Zurücksetzen verwalteter Apps auf Geräten|
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) mit Ihren Intune-Anmeldeinformationen an.
 
-### <a name="managed-devices"></a>Verwaltete Geräte
+2. Wählen Sie im linken Menü **Weitere Dienste** aus, und geben Sie in das Filtertextfeld die Zeichenfolge **Intune** ein.
 
-|||
-|-|-|
-|**Löschen**|Löschen verwalteter Geräte aus Intune|
-|**Lesen**|Anzeigen von Informationen zu verwalteten Geräte im Intune-Portal|
-|**Aktualisieren**|Aktualisieren von Informationen über verwaltete Geräte|
+3. Wählen Sie **Intune** aus. Daraufhin wird das Intune-Dashboard geöffnet. Wählen Sie **Intune-Rollen** aus.
 
-### <a name="mobile-apps"></a>Mobile Apps
+4. Wählen Sie auf dem Blatt **Intune-Rollen** wiederum **Intune-Rollen** und dann **Benutzerdefiniert hinzufügen** aus.
 
-|||
-|-|-|
-|**Zuweisen**|Zuweisen mobiler Apps zu Gruppen|
-|**Erstellen**|Hinzufügen neuer mobiler Apps in Intune|
-|**Löschen**|Löschen mobiler Apps|
-|**Lesen**|Lesen mobiler Apps und ihrer Eigenschaften|
-|**Aktualisieren**|Aktualisieren vorhandener mobiler Apps|
+5. Geben Sie auf dem Blatt **Benutzerdefinierte Rolle hinzufügen** einen Namen und eine Beschreibung für die neue Rolle ein, und klicken Sie dann auf **Berechtigungen**.
 
-### <a name="organization"></a>Organisation
+3. Wählen Sie auf dem Blatt **Berechtigungen** die Berechtigungen aus, die Sie mit dieser Rolle verwenden möchten. Entscheiden Sie mithilfe der [Tabelle zur rollenbasierten Zugriffssteuerung in Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a), welche Berechtigungen gelten sollen.
 
-|||
-|-|-|
-|**Lesen**|Lesen von Mandanteneinstellungen|
-|**Aktualisieren**|Aktualisieren von Mandanteneinstellungen|
+4. Wählen Sie abschließend **OK** aus.
 
-### <a name="remote-tasks"></a>Remoteaufgaben
+5. Klicken Sie auf dem Blatt **Benutzerdefinierte Rolle hinzufügen** auf **Erstellen**. Die neue Rolle wird in der Liste auf dem Blatt **Intune-Rollen** angezeigt.
 
-|||
-|-|-|
-|**Aktivierungssperre umgehen**|Entfernen der Aktivierungssperre auf einem iOS-Gerät ohne Apple-ID und Kennwort des Benutzers |
-|**Modus für verlorene Geräte deaktivieren**|Deaktivieren des Modus für verlorene Geräte. Der Modus für verlorene Geräte ermöglicht die Angabe einer Nachricht und einer Telefonnummer, die auf dem Sperrbildschirm des Geräts angezeigt werden.|
-|**Modus für verlorene Geräte aktivieren**|Aktivieren des Modus für verlorene Geräte. Der Modus für verlorene Geräte ermöglicht die Angabe einer Nachricht und einer Telefonnummer, die auf dem Sperrbildschirm des Geräts angezeigt werden.|
-|**Gerät suchen**|-|
-|**Jetzt neu starten**|Durchführen eines Neustart des Geräts|
-|**Remotesperre**|Sperren eines Geräts. Der Eigentümer des Geräts muss zum Entsperren seine Kennung verwenden.|
-|**Kennung zurücksetzen**|Generiert eine neue Kennung für das Gerät, die auf dem Blatt Übersicht über <device name> angezeigt wird.|
-|**Außerkraftsetzen**|Entfernt nur Unternehmensdaten, die von Intune verwaltet werden. Es werden keine persönlichen Daten vom Gerät entfernt.|
-|**Zurücksetzen**|Setzt das Gerät auf die Standardeinstellungen zurück.|
+### <a name="to-assign-a-custom-role"></a>So weisen Sie eine benutzerdefinierte Rolle zu
 
+1. Wählen Sie auf der Seite **Intune-Rollen** die benutzerdefinierte Rolle aus, die Sie zuweisen möchten.
 
+2. Wählen Sie auf dem Blatt <*Rollenname*> – **Eigenschaften** erst **Verwalten** und dann **Zuweisungen** aus. Sie können auf diesem Blatt auch vorhandene Rollen bearbeiten oder löschen.
 
-### <a name="telecom-expenses"></a>Telekommunikationsausgaben
+3. Wählen Sie auf dem Blatt „Benutzerdefinierte Rolle“ **Zuweisen** aus.
 
-|||
-|-|-|
-|**Lesen**|Lesen von TEM-Einstellungen (Telecom Expense Management)|
-|**Aktualisieren**|Aktualisieren von TEM-Einstellungen (Telecom Expense Management)|
+4. Geben Sie auf dem Blatt **Rollenzuweisungen** einen **Namen** und eine optionale **Beschreibung** für die Zuweisung ein, und wählen Sie dann Folgendes aus:
+    - **Mitglieder:** Wählen Sie eine Gruppe aus, die den Benutzer enthält, dem Sie die Berechtigungen erteilen möchten.
+    - **Bereich:** Wählen Sie eine Gruppe aus, die die Benutzer enthält, die das oben ausgewählte Mitglied verwalten soll.
+<br></br>
+5. Klicken Sie abschließend auf **OK**. Die neue Zuweisung wird in der Liste der Zuweisungen angezeigt.
 
-### <a name="terms-and-conditions"></a>Nutzungsbedingungen
+## <a name="next-steps"></a>Nächste Schritte
 
-|||
-|-|-|
-|**Zuweisen**|Zuweisen von Geschäftsbedingungen zu Gruppen|
-|**Erstellen**|Erstellen von Einstellungen für Geschäftsbedingungen|
-|**Löschen**|Löschen von Einstellungen für Geschäftsbedingungen|
-|**Lesen**|Lesen von Einstellungen für Geschäftsbedingungen im Intune-Portal|
-|**Aktualisieren**|Aktualisieren von Einstellungen für Geschäftsbedingungen|
+[Verwenden der Rolle „Intune-Support“ im Portal zur Problembehandlung](help-desk-operators.md)
+
+## <a name="see-also"></a>Weitere Informationen:
+
+[Zuweisen von Rollen mithilfe von Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
