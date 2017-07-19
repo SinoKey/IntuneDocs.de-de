@@ -118,6 +118,7 @@
 #### [Windows Store-Apps](store-apps-windows.md)
 #### [Branchenspezifische iOS-Apps](lob-apps-windows.md)
 #### [Android for Work-Apps](apps-add-android-for-work.md)
+#### [Office 365 apps for Windows 10 (Office 365-Apps für Windows 10)](apps-add-office365.md)
 ### [Zuweisen von Apps](apps-deploy.md)
 ### [Überwachen von Apps](apps-monitor.md)
 ### [iOS-App-Konfigurationsprofile](app-configuration-policies-use-ios.md)
