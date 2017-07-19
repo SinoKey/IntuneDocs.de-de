@@ -14,15 +14,12 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 64c6eb58246ac3ad232c1b8ee89d12a83e7e1784
-ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-for-mobile-devices"></a>Aktivieren der Registrierung für mobile Geräte
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -33,8 +30,7 @@ Um die Verwaltung mobiler Geräte mit Intune einzurichten, müssen Sie zunächst
 
 ## <a name="enable-device-enrollment"></a>Aktivieren der Geräteregistrierung
 
-1. **Festlegen von Intune als MDM-Autorität**
-    Klicken Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) auf **Verwaltung** > **Verwaltung mobiler Geräte**. Wählen Sie dann unter **Aufgaben** die Option **MDM-Autorität festlegen**.  
+1. **Festlegen von Intune als Verwaltungsstelle für mobile Geräte**: Klicken Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Verwaltung** > **Verwaltung mobiler Geräte**. Wählen Sie anschließend unter **Aufgaben** die Option **MDM-Autorität festlegen** aus.  
 
 2. Klicken Sie im Dialogfeld „MDM-Autorität“ auf **Ja**.
 
@@ -70,4 +66,3 @@ Gratulation! Sie haben den letzten Schritt der Kurzanleitung *Erste Schritte mit
 
 >[!div class="step-by-step"]
 >[&larr; **Registrieren von Geräten**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Aufgaben nach der Konfiguration** &rarr;](.\post-configuration-tasks.md)  
-

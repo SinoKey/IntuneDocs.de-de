@@ -1,7 +1,7 @@
 ---
 title: "Hinzufügen von Apple Configurator-Seriennummern"
-titleSuffix: Intune Azure preview
-description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie unternehmenseigenen iOS-Geräten mit Apple Configurator Seriennummern hinzufügen."
+titleSuffix: Intune on Azure
+description: "Erfahren Sie, wie Sie unternehmenseigenen iOS-Geräten mit Apple Configurator Seriennummern hinzufügen.\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,18 +15,15 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3d56d93e2e229faad8effa63eeb91e627468a3a
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 689008f278e676ce0bab075c6ad6b54748e56313
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-apple-configurator-serial-numbers"></a>Hinzufügen von Apple Configurator-Seriennummern
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Wenden Sie diese Schritte an, um in Intune Seriennummern für das [Registrieren unternehmenseigener iOS-Geräte mithilfe von Apple Configurator mit Setup-Assistent](apple-configurator-setup-assistant-enroll-ios.md) hinzuzufügen. Sie können Seriennummern einzeln hinzufügen oder eine mit Komma getrennte CSV-Datei mit Seriennummern hochladen. Nachdem Sie Seriennummern hinzugefügt haben, können Sie ihnen ein Profil zuweisen. Das Profil enthält die spezifischen Verwaltungseinstellungen, die Sie auf Geräte anwenden möchten.
 
@@ -37,7 +34,7 @@ Andere Methoden zum Registrieren von iOS-Geräten werden in [Auswählen der Regi
 1. Erstellen Sie eine Liste mit zwei Spalten, die durch Trennzeichen getrennte werden (CSV), und ohne Header. Fügen Sie den IMEI-Bezeichner in der linken Spalte und die Details in der rechten Spalte hinzu. Der aktuelle Höchstwert für die Liste ist 500 Zeilen. In einem Text-Editor sieht die CSV-Liste etwa wie folgt aus:
 
     F7TLWCLBX196,Gerätedetails</br>
-    DLXQPCWVGHMJ,Gerätedetails
+    DLXQPCWVGHMJ, Gerätedetails
 
 2. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
@@ -76,4 +73,3 @@ Die Seriennummern des Geräts kann einen von zwei Status aufweisen:
 **So zeigen Sie den Status einer Seriennummer an**
 
 Wählen Sie auf dem Blatt **Apple Configurator-Seriennummern** die Seriennummer aus, deren Status Sie anzeigen möchten, und sehen Sie unter dem Element **Zustand** nach.
-

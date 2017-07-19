@@ -1,5 +1,5 @@
 ---
-title: VPN-Verbindungen | Microsoft-Dokumentation
+title: VPN-Verbindungen
 description: "Verwenden Sie VPN-Profile zur Bereitstellung von VPN-Einstellungen für Benutzer und Geräte in Ihrer Organisation."
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 51096dedbc29726b2622e0a156b0d2516522e497
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e1498cb88fe99129a5ee7f24b618f78fefcf42a6
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-connections-in-microsoft-intune"></a>VPN-Verbindungen in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -168,9 +165,7 @@ Sie können für Geräte mit iOS 8.0 und höher ein bedarfsgesteuertes VPN konfi
 3. Optional: Geben Sie eine URL-Zeichenfolgetest an, d. h. eine URL, die von der Regel als Test verwendet wird. Wenn das Gerät, auf dem dieses Profil installiert wird, auf diese URL ohne Umleitung zugreifen kann, wird das VPN eingerichtet, und das Gerät stellt eine Verbindung mit der Ziel-URL her. Der URL-Zeichenfolgentest-Standort wird dem Benutzer nicht angezeigt. Ein Beispiel für einen URL-Zeichenfolgentest ist die Adresse eines Überwachungswebservers, der die Gerätekompatibilität prüft, bevor die VPN-Verbindung hergestellt wird. Eine andere Möglichkeit besteht darin, mit der URL zu testen, ob das VPN eine Verbindung mit einem Standort herstellen kann, bevor das Gerät über das VPN mit der Ziel-URL verbunden wird.
 4. Wählen Sie eine der folgenden Aktionen aus:
   - **Verbinden**
-  - **Verbindung auswerten** verfügt über drei Einstellungen: a. **Domänenaktion** – Wählen Sie **Bei Bedarf verbinden** oder **Nie verbinden**
-     aus. b. **Durch Trennzeichen getrennte Liste der Domänen** – Diese Option konfigurieren Sie nur, wenn Sie **Bei Bedarf verbinden**
-     als **Domänenaktion** auswählen. c. **Test der erforderlichen URL-Zeichenfolge** – eine HTTP- oder HTTPS-URL (bevorzugt), z. B. *https://vpntestprobe.contoso.com*. Mit der Regel wird überprüft, ob diese Adresse eine Antwort sendet. Wenn dies nicht der Fall ist, und **Bei Bedarf verbinden** die **Domänenaktion** ist, wird das VPN ausgelöst.
+  - **Verbindung auswerten** verfügt über drei Einstellungen: a. **Domänenaktion**: Wählen Sie **Bei Bedarf verbinden** oder **Nie verbinden** aus: b. **Durch Trennzeichen getrennte Liste der Domänen**: Diese Option konfigurieren Sie nur, wenn Sie **Bei Bedarf verbinden** als **Domänenaktion** auswählen: c. **Test der erforderlichen URL-Zeichenfolge** – eine HTTP- oder HTTPS-URL (bevorzugt), z. B. *https://vpntestprobe.contoso.com*. Mit der Regel wird überprüft, ob diese Adresse eine Antwort sendet. Wenn dies nicht der Fall ist, und **Bei Bedarf verbinden** die **Domänenaktion** ist, wird das VPN ausgelöst.
       
      > [!TIP]
      >
@@ -195,4 +190,3 @@ Domänenspezifische Regeln werden vor Regeln ausgewertet, die für alle Domänen
 Nach der erfolgreichen Bereitstellung sehen Benutzer den von Ihnen angegebenen VPN-Verbindungsnamen in der Liste der VPN-Verbindungen auf ihren Geräten.
 
 Eine Statuszusammenfassung und Warnungen auf der Seite **Übersicht** des Arbeitsbereichs **Richtlinie** identifiziert Probleme mit der Richtlinie, die Ihre Aufmerksamkeit erfordern. Darüber hinaus wird eine Statusübersicht im Arbeitsbereich „Dashboard“ angezeigt.
-

@@ -1,23 +1,29 @@
-mdm-authority-set---
-# <a name="required-metadata"></a>erforderliche Metadaten
-
-Titel: Registrieren von Android-Geräten in Intune TitleSuffix: „Intune Azure-Vorschau“ description: „Intune in Azure (Vorschau): Erfahren Sie, wie Sie Android-Geräte in der Vorschau von Intune in Azure registrieren.“
-keywords: author: nathbarn ms.author: nathbarn manager: angrobe ms.date: 04/12/2017 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: f276d98c-b077-452a-8835-41919d674db5
-
-# <a name="optional-metadata"></a>optionale Metadaten
-
-#<a name="robots"></a>ROBOTS:
-#<a name="audience"></a>Zielgruppe:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: chrisbal ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-ms.custom: intune-azure
-
 ---
-
+title: "Registrieren von Android-Geräten in Intune"
+titleSuffix: Intune on Azure
+description: "Erfahren Sie, wie Sie Android-Geräte in Intune registrieren.\""
+keywords: 
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 06/28/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: f276d98c-b077-452a-8835-41919d674db5
+ms.reviewer: chrisbal
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 295315dae52662c386055747862717b85ed4b877
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
+---
 # <a name="enroll-android-devices"></a>Registrieren von Android-Geräten
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Als Intune-Administrator können Sie Android-Geräte verwalten, einschließlich Samsung KNOX Standard-Geräte. Sie können auch das Arbeitsprofil auf Geräten verwalten: [Android for Work-Geräte](#enable-enrollment-of-android-for-work-devices).
 
@@ -25,15 +31,13 @@ Geräte, die mit Samsung KNOX Standard ausgeführt werden, werden für die Mehrb
 
 ## <a name="prerequisite"></a>Voraussetzung
 
-Sie müssen die MDM-Autorität auf **Microsoft Intune** festlegen, um die Verwaltung mobiler Geräte vorzubereiten. Anweisungen finden Sie unter [Festlegen der MDM-Autorität](mdm-authority-set.md). Sie legen dieses Element nur einmal fest, wenn Sie die Ersteinrichtung von Intune für die Verwaltung mobiler Geräte durchführen, sodass dies eventuell bereits erfolgt ist.
+Sie müssen die MDM-Autorität auf **Microsoft Intune** festlegen, um die Verwaltung mobiler Geräte vorzubereiten. Anweisungen finden Sie unter [Festlegen der MDM-Autorität](mdm-authority-set.md). Sie legen dieses Element nur einmal fest, wenn Sie die Ersteinrichtung von Intune für die Verwaltung mobiler Geräte durchführen.
 
 ## <a name="set-up-android-enrollment"></a>Einrichten der Android-Registrierung
 
 Standardmäßig erlaubt Intune die Registrierung von Android- und Samsung KNOX Standard-Geräten.
 
-Um Android-Geräte oder nur die Registrierung von persönlichen Android-Geräten zu blockieren, gehen Sie unter [Festlegen von Gerätetypbeschränkungen](enrollment-restrictions-set.md#set-device-type-restrictions).
-
-Um die maximale Anzahl von Geräten festzulegen, die ein Benutzer registrieren kann, sehen Sie sich das Thema [Festlegen von Einschränkungen zum Gerätelimit](enrollment-restrictions-set.md#set-device-limit-restrictions) an.
+Um Android-Geräte oder nur die Registrierung von persönlichen Android-Geräten zu blockieren, gehen Sie unter [Festlegen von Gerätetypbeschränkungen](enrollment-restrictions-set.md).
 
 Um die Geräteverwaltung zu aktivieren, müssen die Benutzer ihre Geräte durch Herunterladen der Intune-Unternehmensportal-App, die bei Google Play verfügbar ist, registrieren und anschließend die App öffnen und den Anweisungen zum Registrieren folgen. Sobald Android-Geräte verwaltet werden, können Sie [Konformitätsrichtlinien zuweisen](compliance-policy-create-android.md), [Apps verwalten](app-management.md) und mehr.
 
@@ -47,7 +51,7 @@ Für die Aktivierung der Verwaltung von Arbeitsprofilen auf Geräten, die [Andro
 Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch [Festlegen der Autorität für die Verwaltung mobiler Geräte](mdm-authority-set.md) auf **Microsoft Intune** vor.
 
 2. **Konfigurieren der Android for Work-Bindung**<br>
-    Melden Sie sich als Intune-Administrator beim Azure-Portal an, und wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+    Wählen Sie als Intune-Administrator im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
     1. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung**, > **Android for Work-Registrierung** aus, und klicken Sie dann auf **Konfigurieren**, um die Android for Work-Website von Google Play zu öffnen. Diese wird in einer neuen Registerkarte im Browser geöffnet.
   ![Screenshot: Link zum Konfigurieren der Android for Work-Bindung](./media/android-work-bind.png)
@@ -78,7 +82,7 @@ Sie können auch einen Link für Online-Registrierungsschritte senden: [Registri
 
 Informationen zu anderen Endbenutzeraufgaben finden Sie in den folgenden Artikeln:
 
-- [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
+- [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](end-user-educate.md)
 - [Verwenden Ihres Android-Geräts mit Intune](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>Aufheben der Bindung Ihres Android for Work-Administratorkontos
@@ -88,7 +92,7 @@ Sie können die Registrierung und die Verwaltung von Android for Work deaktivier
 ### <a name="how-to-unbind-an-android-for-work-account"></a>So heben Sie die Bindung für ein Android for Work-Konto auf
 
 1. **Aufheben der Android for Work-Bindung**<br>
-    Melden Sie sich als Intune-Administrator beim Azure-Portal an, und wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.  Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung**, > **Android for Work-Registrierung** aus, und klicken Sie dann auf **Bindung aufheben**.
+    Wählen Sie als Intune-Administrator im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.  Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung**, > **Android for Work-Registrierung** aus, und klicken Sie dann auf **Bindung aufheben**.
 
 2. **Zustimmen zum Löschen der Android for Work-Bindung**<br>
   Klicken Sie auf **Ja**, um die Bindung zu löschen und die Registrierung von allen Android for Work-Geräten von Intune aufzuheben.

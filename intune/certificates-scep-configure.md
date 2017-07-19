@@ -1,12 +1,12 @@
 ---
 title: Konfigurieren und Verwalten von SCEP-Zertifikaten mit Intune
-titleSuffix: Intune Azure preview
-description: 'Intune in Azure (Vorschau): Erfahren Sie, wie Sie Ihre Infrastruktur konfigurieren und dann SCEP-Zertifikatprofile in Intune erstellen und zuweisen.'
+titleSuffix: Intune on Azure
+description: Erfahren Sie, wie Sie Ihre Infrastruktur konfigurieren und dann SCEP-Zertifikatprofile in Intune erstellen und zuweisen."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,14 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ad0dc380eca386438e9568bf212ac9c5ad66ceb6
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: e29e79b8598eddba951b3f8ee7a7bcd5c6271f83
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Konfigurieren und Verwalten von SCEP-Zertifikaten mit Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Dieses Thema erläutert, wie Sie Ihre Infrastruktur konfigurieren und dann SCEP-Zertifikatprofile (Simple Certificate Enrollment Protocol) mit Intune erstellen und zuweisen.
 
@@ -84,6 +83,10 @@ Vor dem Konfigurieren von Zertifikatprofilen müssen Sie die folgenden Aufgaben 
 
 **Schritt 5**: Aktivieren, Installieren und Konfigurieren des Intune Certificate Connectors
 
+> [!NOTE]
+> Das Herunterladen, Installieren und Konfigurieren des Certificate Connectors sollte aufgrund eines bekannten Problems mithilfe des folgenden Verfahrens erfolgen: [Konfigurieren der Zertifikatinfrastruktur für SCEP -> Konfigurieren Ihrer Infrastruktur -> Aufgabe 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep).
+
+
 #### <a name="step-1---create-an-ndes-service-account"></a>Schritt 1: Erstellen eines NDES-Dienstkontos
 
 Erstellen Sie ein Domänenbenutzerkonto, das als NDES-Dienstkonto verwendet werden soll. Sie geben dieses Konto an, wenn Sie Vorlagen auf der ausstellenden Zertifizierungsstelle konfigurieren, bevor Sie NDES installieren und konfigurieren. Stellen Sie sicher, dass der Benutzer über die Standardrechte **Lokal anmelden**, **Anmelden als Dienst** und **Anmelden als Batchauftrag** verfügt. In einigen Organisationen werden diese Rechte durch Härtungsrichtlinien deaktiviert.
@@ -100,6 +103,9 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 1.  Melden Sie sich als Unternehmensadministrator an.
 
 2.  Verwenden Sie auf der ausstellenden Zertifizierungsstelle das Zertifikatsvorlagen-Snap-In, um eine neue benutzerdefinierte Vorlage zu erstellen oder eine vorhandene Vorlage zu kopieren. Bearbeiten Sie dann eine vorhandene Vorlage (z. B. die Vorlage „Benutzer“) für die Verwendung mit NDES.
+
+    >[!NOTE]
+    > Die NDES-Zertifikatvorlage muss auf einer v2-Zertifikatvorlage (mit Windows 2003-Kompatibilität) basieren.
 
     Die Vorlage muss wie folgt konfiguriert sein:
 
@@ -304,7 +310,7 @@ Herunterladen, Installieren und Konfigurieren des Certificate Connectors auf dem
 ##### <a name="to-enable-support-for-the-certificate-connector"></a>So aktivieren Sie die Unterstützung für den Certificate Connector
 
 1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
+2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte konfigurieren** aus.
 4. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Zertifizierungsstelle** aus.
 5.  Wählen Sie **Certificate Connector aktivieren**aus.
@@ -312,10 +318,10 @@ Herunterladen, Installieren und Konfigurieren des Certificate Connectors auf dem
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>So wird der Certificate Connector heruntergeladen, installiert und konfiguriert
 
 > [!NOTE]
-> Das Herunterladen, Installieren und Konfigurieren des Certificate Connectors sollte aufgrund eines bekannten Problems mithilfe des folgenden Verfahrens erfolgen: [Konfigurieren der Zertifikatinfrastruktur für SCEP -> Konfigurieren Ihrer Infrastruktur -> Aufgabe 5](https://docs.microsoft.com/intune-classic/deploy-use/certificates-scep-configure#a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure).
+> Das Herunterladen, Installieren und Konfigurieren des Certificate Connectors sollte aufgrund eines bekannten Problems mithilfe des folgenden Verfahrens erfolgen: [Konfigurieren der Zertifikatinfrastruktur für SCEP -> Konfigurieren Ihrer Infrastruktur -> Aufgabe 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep).
 
 1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
+2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte konfigurieren** aus.
 4. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Zertifizierungsstelle** aus.
 5. Wählen Sie **Certificate Connector herunterladen** aus.
@@ -377,6 +383,8 @@ Um zu überprüfen, das der Dienst ausgeführt wird, öffnen Sie einen Browser, 
         - **Allgemeiner Name**
         - **Allgemeiner Name einschließlich E-Mail-Adresse**
         - **Allgemeiner Name als E-Mail-Adresse**
+        - **Benutzerdefiniert**: Wenn Sie diese Option auswählen, wird ein weiteres Dropdownfeld angezeigt. In diesem Feld können Sie ein benutzerdefiniertes Format für den Antragstellernamen eingeben. Die beiden für das benutzerdefinierte Format unterstützten Variablen sind **Allgemeiner Name (CN)** und **E-Mail (E)**. Durch Kombination einer oder mehrerer dieser Variablen mit statischen Zeichenfolgen können Sie ein benutzerdefiniertes Format wie dieses für den Antragstellernamen erstellen: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** In diesem Beispiel haben Sie ein Format für den Antragstellernamen erstellt, das neben den Variablen „CN“ und „E“ noch Zeichenfolgen für die Organisationseinheit, den Standort, den Bundesstaat und das Land verwendet. In [diesem Thema](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) werden die **CertStrToName**-Funktion und die unterstützten Zeichenfolgen gezeigt.
+        
     - **Alternativer Antragstellername:** Geben Sie an, wie die Werte für den alternativen Antragstellernamen (Subject Alternative Name, SAN) in der Zertifikatanforderung von Intune automatisch erstellt werden sollen. Beispiel: Wenn Sie einen Benutzerzertifikattyp ausgewählt haben, könnten Sie in den alternativen Antragstellernamen den Benutzerprinzipalnamen (User Principal Name, UPN) aufnehmen. Wenn das Clientzertifikat für die Authentifizierung bei einem Netzwerkrichtlinienserver verwendet werden soll, müssen Sie den alternativen Antragstellernamen auf den Benutzerprinzipalnamen festlegen. 
     - **Schlüsselverwendung:** Geben Sie Schlüsselverwendungsoptionen für das Zertifikat an. Sie können unter folgenden Optionen wählen: 
         - **Schlüsselverschlüsselung:** Lässt den Schlüsselaustausch nur zu, wenn der Schlüssel verschlüsselt ist. 
@@ -392,10 +400,6 @@ Um zu überprüfen, das der Dienst ausgeführt wird, öffnen Sie einen Browser, 
 
 Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
 
->[!Note]
-> Nur bei iOS-Geräten: Wählen Sie unter „Format des Antragstellernamens“ die Option „Benutzerdefiniert“ aus, um ein benutzerdefiniertes Format für den Antragstellernamen einzugeben.
-> Die derzeit unterstützten beiden Variablen für das benutzerdefinierte Format sind **Allgemeiner Name (CN)** und **E-Mail (E)**. Durch eine Kombination dieser Variablen mit statischen Zeichenfolgen können Sie ein benutzerdefiniertes Format wie dieses für den Antragstellernamen erstellen: **CN={{Benutzername}},E={{E-Mail-Adresse}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** In diesem Beispiel haben Sie ein Format für den Antragstellernamen erstellt, das neben den Variablen „CN“ und „E“ noch Zeichenfolgen für die Organisationseinheit, den Standort, den Bundesstaat und das Land verwendet. In [diesem Thema](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) werden die **CertStrToName**-Funktion und die unterstützten Zeichenfolgen gezeigt.
-
 ## <a name="how-to-assign-the-certificate-profile"></a>Zuweisen des Zertifikatprofils
 
 Beachten Sie Folgendes, bevor Sie Gruppen Zertifikatprofile zuweisen:
@@ -407,5 +411,4 @@ Beachten Sie Folgendes, bevor Sie Gruppen Zertifikatprofile zuweisen:
 - Obwohl Sie jedes Profil separat zuweisen, müssen Sie auch die vertrauenswürdige Stammzertifizierungsstelle und das SCEP- oder PKCS-Profil zuweisen. Andernfalls schlägt die SCEP- oder PKCS-Zertifikatrichtlinie fehl.
 
 Informationen zum Zuweisen von Profilen finden Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md).
-
 

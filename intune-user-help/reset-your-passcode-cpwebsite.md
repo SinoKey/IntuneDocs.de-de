@@ -5,43 +5,39 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9220eecc32ee27725454a48484608af5f4ea0e83
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ae85e523a2c5b87e172a2bfc01254f87093c71b1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>So setzen Sie Ihre Kennung über die Unternehmensportalwebsite zurück
 
 Wenn Sie die PIN oder das Kennwort für ein bei Intune registriertes Gerät verloren haben, können Sie die PIN bzw. das Kennwort über die [Unternehmensportalwebsite](http://portal.manage.microsoft.com) zurücksetzen. Sie können die Unternehmensportal-Website verwenden, um Computer und Geräte zu verwalten, die Sie bei Intune registriert haben. Außerdem können Sie auf dieser die meisten der Aufgaben ausführen, die auch über Ihre Unternehmensportal-App zur Verfügung stehen.
 
 > [!NOTE]
-> Es ist möglich, dass Sie die Schaltfläche **Kennung zurücksetzen** auf der Unternehmensportal-Website nicht sehen. Wenn das der Fall ist, wenden Sie sich bitte an Ihren IT-Administrator für Hilfe auf der Unternehmensportal-Website.
+> Es ist möglich, dass Sie die Schaltfläche „Kennung zurücksetzen“ auf der Unternehmensportalwebsite nicht sehen, wenn Sie ein beim Unternehmen registriertes Gerät verwenden. Wenden Sie sich in diesem Fall an Ihren IT-Administrator, um die Kennung zurücksetzen zu lassen.
 
 So setzen Sie Ihre Kennung zurück
 
-1.    Tippen Sie auf der [Unternehmensportalwebsite](http://portal.manage.microsoft.com) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
+1.  Tippen Sie auf der [Unternehmensportalwebsite](http://portal.manage.microsoft.com) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/intune/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
 
 2. Wählen Sie auf der Seite __Meine Geräte__ den Namen des Geräts aus, dessen Kennung Sie zurücksetzen möchten.
 
   ![Ein Screenshot der Seite „Meine Geräte“ mit mehreren nicht identifizierten Geräten oberhalb der Banneraufforderung, nicht aufgelistete Geräte zu registrieren oder nicht identifizierte Geräte zu identifizieren.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    Das Gerät wird in einem Popupfenster geöffnet. Wählen Sie die Schaltfläche **Kennung zurücksetzen** aus.
+3.  Das Gerät wird in einem Popupfenster geöffnet. Wählen Sie die Schaltfläche **Kennung zurücksetzen** aus.
 
     ![Alle Optionen für ein ausgewähltes Gerät auf der Unternehmensportalwebsite, darunter „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/iwp-screen-with-all-options.png)
 
@@ -55,7 +51,10 @@ So setzen Sie Ihre Kennung zurück
 
   Unterschiedliche Geräte verfügen über unterschiedliche Arten von Kennungen.
 
-  **Android**: Entfernt die vorhandene Kennung und erstellt eine vorübergehende Kennung mit Buchstaben und Zahlen
+  **Android**: Entfernt die vorhandene Kennung und erstellt eine vorübergehende Kennung mit Buchstaben und Zahlen 
+  
+  > [!NOTE]
+  > Für Geräte mit Android 7.0 und höher kann die Kennung nicht zurückgesetzt werden. Setzen Sie diese Geräte in diesem Fall auf die Werkseinstellungen zurück, wenn Sie Ihre Kennung vergessen haben.
 
   **iOS**: Entfernt die aktuelle Kennung und erstellt keine neue temporäre Kennung. Wenn Sie den Touch-ID-Fingerabdruckscanner zum Öffnen Ihres Geräts oder zum Abwickeln von Käufen nutzen, müssen Sie diesen erneut einrichten.
 
@@ -70,4 +69,3 @@ So setzen Sie Ihre Kennung zurück
 Um eine Benachrichtigung anzuzeigen, die bestätigt, dass Ihr Kennwort erfolgreich zurückgesetzt wurde, klicken Sie auf das Benachrichtigungskennzeichen oben rechts auf der Unternehmensportal-Website.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
-
