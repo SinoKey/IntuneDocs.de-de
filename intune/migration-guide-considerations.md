@@ -1,11 +1,11 @@
 ---
 title: "Besondere Überlegungen bei der Migration"
-description: "In diesem Artikel werden Kunden darüber informiert, welche Aspekte sie vor dem Beginn einer Migration berücksichtigen sollten."
+description: "Dieser Artikel bietet spezielle Überlegungen bei der Migration, bevor Sie eine Migrationskampagne starten."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,13 @@ ms.technology:
 ms.assetid: f29d2894-e98b-4f2c-b444-a8ccc1b7efdd
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: bc39ffd3a4f11a4c2b32f75dc5befcd8ce42f43e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7ff1180275fddc7f0d6ef957c4680d7c34ad471e
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="special-migration-considerations"></a>Besondere Überlegungen bei der Migration
-
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 Es gibt spezielle Aspekte bei der Migration, die je nach vorhandener Umgebung des MDM-Anbieters zu berücksichtigen sind.
 
@@ -30,9 +27,9 @@ Es gibt spezielle Aspekte bei der Migration, die je nach vorhandener Umgebung de
 
 Das Apple-Programm zur Geräteregistrierung (Device Enrollment Program, DEP) legt Gerätekonfigurationen fest, die vom Endbenutzer nicht entfernt werden können. Wenn Sie die erweiterten Verwaltungsfunktionen von DEP beibehalten möchten, muss das Gerät für die Anmeldung bei Intune auf die Werkseinstellungen zurückgesetzt werden.
 
-Um die Geräte in Intune weiter mit dem Programm zur Geräteregistrierung zu verwalten, [richten Sie die iOS-Geräteregistrierung mit dem Programm zur Geräteregistrierung ein](/intune/device-enrollment-program-enroll-ios).
+Um die Geräte in Intune weiter mit dem Programm zur Geräteregistrierung zu verwalten, [richten Sie die iOS-Geräteregistrierung mit dem Programm zur Geräteregistrierung ein](device-enrollment-program-enroll-ios.md).
 
 
-## <a name="next-steps"></a>Nächste Schritte 
+## <a name="next-steps"></a>Nächste Schritte
 
 [Phase 2: Die Migration](migration-guide-campaign.md)
