@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c27b1a7d0c24bacc206cabe65bd3529a50fc2b4
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f27ad720556a866b5f2a9326df0a574cc37f2a5d
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>Informationen zum Hinzufügen branchenspezifischer Windows Phone-Apps zu Microsoft Intune
 
@@ -38,25 +38,25 @@ ms.lasthandoff: 07/01/2017
 ## <a name="step-2---configure-the-app-package-file"></a>Schritt 2: Konfigurieren der App-Paketdatei
 
 1. Wählen Sie auf dem Blatt **App hinzufügen** die Option **App-Paketdatei** aus.
-2. Klicken Sie auf dem Blatt **App-Paketdatei** auf die Schaltfläche „Durchsuchen“, und wählen Sie eine Windows Phone-Installationsdatei mit der Erweiterung **XAP** aus.
+2. Wählen Sie auf dem Blatt **App-Paketdatei** die Schaltfläche „Durchsuchen“ und anschließend eine Windows Phone-Installationsdatei mit der Erweiterung **XAP** aus.
 3. Wenn Sie fertig sind, wählen Sie **OK** aus.
 
 
 ## <a name="step-3---configure-app-information"></a>Schritt 3: Konfigurieren von App-Informationen
 
 1. Wählen Sie auf dem Blatt **App hinzufügen** die Option **App-Paketdatei** aus.
-2. Konfigurieren Sie auf dem Blatt **App-Informationen** die folgenden Informationen. Abhängig von der ausgewählten App werden einige der Werte auf diesem Blatt möglicherweise automatisch ausgefüllt:
+2. Konfigurieren Sie auf dem Blatt **App-Informationen** die App-Informationen. Abhängig von der ausgewählten App werden einige der Werte auf diesem Blatt möglicherweise automatisch ausgefüllt:
     - **Name:** Geben Sie den Namen der App ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle App-Namen eindeutig sind. Wenn ein App-Name zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
-    - **Beschreibung:** Geben Sie eine Beschreibung für die App ein. Diese Beschreibung wird den Benutzern im Unternehmensportal angezeigt.
+    - **Beschreibung:** Geben Sie eine Beschreibung für die App ein. Die Beschreibung wird Benutzern im Unternehmensportal angezeigt.
     - **Herausgeber:** Geben Sie den Namen des Herausgebers der App ein.
-    - **Kategorie:** Wählen Sie eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Dadurch wird es für die Benutzer leichter, die App im Unternehmensportal zu finden.
+    - **Kategorie:** Wählen Sie eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Durch Kategorien wird es für Benutzer leichter, die App im Unternehmensportal zu finden.
     - **Diese App als ausgewählte App im Unternehmensportal anzeigen:** Zeigen Sie die App auf der Hauptseite des Unternehmensportal hervorgehoben an, wenn Benutzer nach Apps suchen.
-    - **Informations-URL:** Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Diese URL wird den Benutzern im Unternehmensportal angezeigt.
-    - **URL zu den Datenschutzbestimmungen:** Geben Sie optional eine URL zu einer Website ein, die Datenschutzinformationen für diese App enthält. Diese URL wird den Benutzern im Unternehmensportal angezeigt.
+    - **Informations-URL:** Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
+    - **URL zu den Datenschutzbestimmungen:** Geben Sie optional eine URL zu einer Website ein, die Datenschutzinformationen für diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
     - **Entwickler:** Geben Sie optional den Namen des App-Entwicklers ein.
     - **Besitzer:** Geben Sie optional einen Namen für den Besitzer dieser App ein, z.B. **Personalabteilung**.
     - **Anmerkungen:** Geben Sie Hinweise zu dieser App ein.
-    - **Logo:** Laden Sie ein Symbol hoch, das der App zugeordnet wird. Dies ist das Symbol, das gemeinsam mit der App angezeigt wird, wenn die Benutzer das Unternehmensportal durchsuchen.
+    - **Logo:** Laden Sie ein Symbol hoch, das der App zugeordnet wird. Dieses Symbol wird mit der App angezeigt, wenn Benutzer das Unternehmensportal durchsuchen.
 3. Wenn Sie fertig sind, wählen Sie **OK** aus.
 
 ## <a name="step-4---finish-up"></a>Schritt 4: Fertig stellen
@@ -64,4 +64,6 @@ ms.lasthandoff: 07/01/2017
 1. Überprüfen Sie auf dem Blatt **App hinzufügen**, ob die konfigurierten Informationen richtig sind.
 2. Wählen Sie **Hinzufügen** aus, um die App in Intune hochzuladen.
 
-Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie ausgewählten Gruppen zuweisen können. Hilfe finden Sie unter [Zuweisen von Apps zu Gruppen](apps-deploy.md).
+## <a name="next-steps"></a>Nächste Schritte
+
+Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie den ausgewählten Gruppen zuweisen können. Hilfe finden Sie unter [Zuweisen von Apps zu Gruppen](apps-deploy.md).
