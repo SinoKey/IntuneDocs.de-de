@@ -1,11 +1,11 @@
 ---
 title: Starten einer Intune-Migration
-description: "Dieser Artikel bietet eine Anleitung für den Start einer Migration."
+description: "Dieser Artikel enthält einen Leitfaden für die Vorgehensweise beim Starten einer Migrationskampagne."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,30 +13,27 @@ ms.technology:
 ms.assetid: f781b029-50f2-46ee-8ff7-03b4a6719e80
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 9690572fd5f17fece0de7b533c98bfc52d77615b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a272d9c822a2c17592d7800c20278ce222d615bd
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="phase-2-migration-campaign"></a>Phase 2: Die Migration
+# <a name="phase-2-migration-campaign"></a>Phase 2: Migrationskampagne
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-Organisationen sollten sich für eine Vorgehensweise bei der Migration entscheiden, die am besten zu ihren Bedürfnissen passt, und eine Implementierungstaktik nach ihren spezifischen Anforderungen anpassen. Diese Anleitung hilft Ihnen bei der Registrierung Ihrer Geräte in Intune.
+Wählen Sie einen Migrationsansatz aus, der am besten für die Anforderungen Ihres Unternehmens geeignet ist, und passen Sie Implementierungstaktiken basierend auf Ihren speziellen Anforderungen entsprechend an. Diese Anleitung hilft Ihnen bei der Registrierung Ihrer Geräte in Intune.
 
 ## <a name="keys-to-a-successful-migration"></a>Wichtige Faktoren für eine erfolgreiche Migration
 
-Dies sind die wichtigsten Punkte für die Migration vom MDM eines Drittanbieters nach Intune:
+Dies sind die Schlüssel für die erfolgreiche Migration eines MDM-Drittanbieters in Intune:
 
--   Die Kommunikation ist sehr wichtig, um die Ausfallzeit für Endbenutzer möglichst niedrig und deren Zufriedenheit möglichst hoch zu halten.
+-   Durch eine klare und hilfreiche Kommunikation können Ausfallzeiten und Unzufriedenheit von Endbenutzern minimiert werden.
 
 -   Achten Sie darauf, dass Sie genaue Anweisungen für die Migration geben.
 
--   Die Registrierung aller verwalteter Geräte in Ihrem alten MDM-Anbieter muss vor der Registrierung in Intune aufgehoben werden.
+-   Die Registrierung aller verwalteten Geräte Ihres vorhandenen MDM-Anbieters muss vor der Registrierung in Intune aufgehoben werden.
 
--   Bieten Sie den Endbenutzern eine Anleitung des alten MDM-Anbieters für das Aufheben der Geräteregistrierung.
+-   Stellen Sie für die Endbenutzer eine Anleitung des alten MDM-Anbieters für das Aufheben der Geräteregistrierung bereit.
 
 -   Gehen Sie schrittweise vor. Beginnen Sie mit einer kleinen Gruppe von Pilotbenutzern und fügen Sie nach und nach mehr Benutzergruppen hinzu, bis alle bereitgestellt wurden.
 
@@ -52,21 +49,21 @@ Dies sind die wichtigsten Punkte für die Migration vom MDM eines Drittanbieters
 
     -   Datensicherheit:
 
-        -   Kompatibilitätsberichte
+        -   Kompatibilitätsberichte treten auf.
 
-        -   Schutzmaßnahmen für mobile Apps wurden erzwungen
+        -   Schutzmaßnahmen für mobile Apps werden erzwungen.
 
--   Wenn Sie mit der ersten Phase der Migration zufrieden sind, wiederholen Sie für die nächste Phase den Migrationszyklus (siehe unten unter „Typischer Migrationszyklus“).
+Wenn Sie mit der ersten Phase der Migration zufrieden sind, wiederholen Sie den [Migrationszyklus](migration-guide-cycle.md) für die nächste Phase.
 
 -   Wiederholen Sie die Zyklen in Phasen, bis alle Benutzer zu Intune migriert wurden.
 
 -   Stellen Sie sicher, dass das Helpdesk-Team zur Unterstützung der Endbenutzer während der gesamten Migration zur Verfügung steht. Führen Sie eine freiwillige Migration aus, bis Sie die Arbeitsauslastung für Supportanrufe einschätzen können.
 
--   Legen Sie keine Frist für die Registrierung fest, bis die restliche Arbeit von Ihrem Helpdesk verarbeitet werden kann
+-   Legen Sie keine Frist für die Registrierung fest, bis die verbleibende Auffüllung von Ihrem Helpdesk verarbeitet werden kann
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Konfigurieren Sie Intune und Ihre vorhandene Drittanbieter-MDM-Projektmappe nicht gleichzeitig so, dass Zugriffssteuerelemente auf Ressourcen wie Exchange oder SharePoint Online angewendet werden. Zusätzlich sollten Geräte immer nur in einer Projektmappe gleichzeitig registriert sein.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Kommunikationsplan](migration-guide-communication-plan.md)
+Erstellen Sie Ihren [Kommunikationsplan](migration-guide-communication-plan.md).

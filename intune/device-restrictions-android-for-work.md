@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ca51c413e3148039b05a9d05a9a511e7158c9a1c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 361777884187937632b2af02d7a7f15f0574193f
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Android for Work-Geräte in Microsoft Intune
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 07/01/2017
 ### <a name="work-profile-password"></a>Arbeitsprofilkennwort
 - **Arbeitsprofilkennwort erforderlich** (Android 7.0 und höher mit aktiviertem Arbeitsprofil) – Definieren Sie eine Kennungsrichtlinie, die nur für die Apps im Arbeitsprofil gilt. Standardmäßig hat der Endbenutzer die Möglichkeit, die beiden separat definierten PINs zu verwenden oder diese zu einer PIN zu kombinieren, die die Stärke der jeweils stärkeren PIN übernimmt.
 - **Minimale Kennwortlänge** – Geben Sie die Mindestanzahl (von **4**-**16**) an Zeichen an, die das Benutzerkennwort enthalten muss.
-- **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung** – Wählen Sie den Zeitraum aus, nach dem ein Benutzer bei einem inaktiven Gerät das Arbeitsprofilkennwort erneut eingeben muss, um eine App im Arbeitsprofil auszuführen.
+- **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung**: Wählen Sie den Zeitraum, nach dessen Verstreichen das Arbeitsprofil gesperrt wird. Der Benutzer muss dann seine Anmeldeinformationen eingeben, um wieder Zugriff zu erhalten.
 - **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird** – Geben Sie an, wie häufig ein falsches Kennwort eingegeben werden kann, bevor das Arbeitsprofil auf dem Gerät zurückgesetzt wird.
 - **Kennwortablauf (Tage)**: Geben Sie die Anzahl der Tage an (von **1**-**255**), nach deren Verstreichen das Kennwort eines Endbenutzers geändert werden muss.
 - **Erforderlicher Kennworttyp**: Wählen Sie den Typ des Kennworts, das auf dem Gerät festgelegt werden muss. Wählen Sie aus:
@@ -77,3 +77,7 @@ ms.lasthandoff: 07/01/2017
 - **Wiederverwendung vorheriger Kennwörter verhindern**: Geben Sie die Anzahl neuer Kennwörter ein (von **1**-**24**), die verwendet werden müssen, bevor ein altes wiederverwendet werden kann.
 - **Entsperrung durch Fingerabdruck**: Verhindert, dass ein Endbenutzer das Gerät mithilfe des Fingerabdruckscanners entsperren kann.
 - **Smart Lock und andere Vertrauens-Agents**: Ermöglicht Ihnen die Steuerung des Smart Lock-Features auf kompatiblen Geräten. Diese Telefonfunktion wird manchmal als Vertrauens-Agent bezeichnet und ermöglicht Ihnen das Deaktivieren oder Umgehen des Kennworts für den Gerätesperrbildschirm, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet, (wenn es z.B. mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet). Sie können mit dieser Einstellung verhindern, dass Benutzer Smart Lock konfigurieren.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Verwenden Sie die Informationen im Thema [So konfigurieren Sie Einstellungen für Geräteeinschränkungen in Microsoft Intune](device-restrictions-configure.md), um das Profil zu speichern und es Benutzern und Geräten zuzuordnen.

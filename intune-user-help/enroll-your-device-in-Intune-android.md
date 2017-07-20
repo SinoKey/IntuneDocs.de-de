@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9e70ef08eabb1595804f84247fc1663c5c6f985e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e12f8d31abc4e067a6339e93cc21680921ce88e4
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Registrieren Ihres Android-Geräts bei Intune
 
 Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ihr Android-Gerät registrieren, um Zugriff auf Unternehmens-E-Mails, Dateien und weitere Ressourcen zu erhalten. Wenn Sie Ihre Geräte registrieren, kann Ihre IT-Abteilung diese Geschäfts-, Schul- oder Uniressourcen verwalten, schützen und Ihnen gleichzeitig die Möglichkeit bieten, Ihr bevorzugtes Gerät zu verwenden, um Ihre Arbeit erledigen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn ich die Unternehmensportal-App installiere und mein Gerät bei registriere?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)
 
-<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player]
 
-Diese Registrierungsanweisungen gelten für Samsung KNOX-Geräte mit Android und native Android-Geräte. Samsung KNOX ist ein Sicherheitssystem, mit dem bestimmte Geräte von Samsung neben der nativen Android-Sicherheit zusätzlichen Schutz bieten. Wechseln Sie zu **Einstellungen** > **Geräteinformationen**, um zu überprüfen, ob es sich bei Ihrem Gerät um ein Samsung KNOX-Gerät handelt. Wird „KNOX-Version“ nicht angezeigt, verfügen Sie über ein natives Android-Gerät.
+Diese Registrierungsanweisungen gelten für native Android-Geräte und für Android-Geräte mit Samsung KNOX. Samsung KNOX ist ein Sicherheitssystem, mit dem bestimmte Geräte von Samsung neben der nativen Android-Sicherheit zusätzlichen Schutz bieten. Wechseln Sie zu **Einstellungen** > **Geräteinformationen**, um zu überprüfen, ob es sich bei Ihrem Gerät um ein Samsung KNOX-Gerät handelt. Wird „KNOX-Version“ nicht angezeigt, verfügen Sie über ein natives Android-Gerät.
 
 Vor oder nach der Registrierung werden Sie möglicherweise aufgefordert, eine Kategorie auszuwählen, die am besten beschreibt, wie Sie Ihr Gerät nutzen. Ihr IT-Administrator verwendet diese Kategorie, um die Apps zu überprüfen, auf die Sie Zugriff haben.
 

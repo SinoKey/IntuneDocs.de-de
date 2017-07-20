@@ -14,35 +14,34 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 389196cd5c36859589e68ccadd576ceeac1bc279
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: ead4f7308679359398383a2821b9c7e015ce59de
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="sign-up-or-sign-in-to-intune"></a>Registrieren oder Anmelden bei Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-In diesem Thema werden Systemadministratoren darauf hingewiesen, wie sie sich für ein Intune-Konto anmelden können.
+In diesem Thema werden Systemadministratoren darauf hingewiesen, wie Sie sich für ein Intune-Konto anmelden können.
 
-Bevor Sie sich bei Intune registrieren oder anmelden können, müssen Sie ermitteln, ob Ihr Unternehmen bereits über ein Geschäfts- oder Schulkonto für Microsoft Online Services verfügt. Sie müssen ebenfalls feststellen, ob Ihr Unternehmen über ein Enterprise Agreement oder einen vergleichbaren Volumenlizenzvertrag mit Microsoft verfügt. Ein Geschäfts- oder Schulkonto wird bereitgestellt, wenn Sie einen Volumenlizenzvertrag mit Microsoft abschließen oder andere Microsoft-Clouddienste wie Office 365 abonnieren.
+Bevor Sie sich für ein Intune-Konto anmelden, bestimmen Sie, ob Sie bereits ein Microsoft Online Services-Konto, ein Enterprise Agreement oder einen gleichwertigen Volumenlizenzvertrag besitzen. Ein Microsoft-Volumenlizenzvertrag oder andere Microsoft-Clouddienstabonnements wie Office 365 enthalten normalerweise ein Arbeits- oder Schulkonto.
 
-Wenn Sie bereits über ein Geschäfts- oder Schulkonto verfügen, können Sie sich einfach mit diesem Konto **anmelden**, um Intune zu Ihrer vorhandenen Abonnementumgebung hinzuzufügen. Andernfalls müssen Sie sich **registrieren**, um ein neues Konto zu erstellen, mit dem Sie Intune für Ihr Unternehmen verwalten können.
+Wenn Sie bereits über ein Arbeits- oder Schulkonto verfügen, **melden Sie sich mit diesem Konto an**, und fügen Sie Intune Ihrem Abonnement hinzu. Sie können sich auch für ein neues Konto **registrieren**, um Intune für Ihre Organisation zu verwenden.
 
 >[!WARNING]
->Wenn Sie sich für ein neues Konto registrieren, können Sie später kein vorhandenes Geschäfts- oder Schulkonto zum Verwalten Ihres Abonnements verwenden und es auch nicht mehr mit vorhandenen Volumenlizenzverträgen kombinieren.
+>Sie können kein bestehendes Arbeits- oder Schulkonto nach der Registrierung für ein neues Konto kombinieren.
 
 ## <a name="how-to-sign-up-or-sign-in-to-intune"></a>Registrieren oder Anmelden bei Intune
 
 1.  Besuchen Sie die Seite für die [Intune-Registrierung](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
-2.  Registrieren Sie sich auf der **Registrierungsseite**, oder melden Sie sich an, um ein neues Intune-Abonnement zu verwalten.
+  ![Screenshot der Website für die Registrierung für das Microsoft Intune-Testkonto](./media/account-sign-up-site.png)
+
+2.  Registrieren Sie sich auf der Registrierungsseite, oder melden Sie sich an, um ein neues Intune-Abonnement zu verwalten.
 
 ## <a name="post-sign-up-considerations"></a>Überlegungen nach der Registrierung
-Wenn Sie sich für ein neues Abonnement registrieren, wird eine E-Mail mit Ihren Kontoinformationen an die von Ihnen bei der Registrierung angegebene E-Mail-Adresse gesendet. Diese E-Mail bestätigt, dass Ihr Abonnement aktiv ist.
+Nachdem Sie sich für ein neues Abonnement registriert haben, wird eine E-Mail mit Ihren Kontoinformationen an die von Ihnen bei der Registrierung angegebene E-Mail-Adresse gesendet. Diese E-Mail bestätigt, dass Ihr Abonnement aktiv ist.
 
-Nach Abschluss des Registrierungsprozesses werden Sie an eine Seite weitergeleitet, auf der Sie über das Office 365 Admin Center Benutzer hinzufügen und ihnen Lizenzen zuweisen können. Wenn Sie nur cloudbasierte Konten mit Ihrem standardmäßigen Domänennamen onmicrosoft.com verwenden werden, können Sie an diesem Punkt Benutzer hinzufügen und ihnen Lizenzen zuweisen. Wenn Sie jedoch den Domänennamen Ihres Unternehmens verwenden werden oder Benutzerkontoinformationen aus dem lokalen Active Directory synchronisieren möchten, können Sie dieses Browserfenster schließen und mit Schritt 2 dieser Kurzanleitung fortfahren. [Weitere Informationen über Ihre erste onmicrosoft.com-Domäne in Office 365](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a?ui=en-US&rs=en-US&ad=US&fromAR=1#bkmk_whydoihaveanonmicrosoft.comdomain)
-
->[!TIP]
-> Wenn Sie sich das nächste Mal bei Intune anmelden, werden Sie automatisch zur Intune-Administratorkonsole weitergeleitet.
+Nach Abschluss des Registrierungsprozesses werden Sie an eine das Office 365 Admin Center weitergeleitet, das verwendet wird, um Benutzer hinzuzufügen und Ihnen Lizenzen zuzuweisen. Wenn Sie nur cloudbasierte Konten mit Ihrem standardmäßigen Domänennamen onmicrosoft.com verwenden werden, können Sie an diesem Punkt Benutzer hinzufügen und ihnen Lizenzen zuweisen. Wenn Sie jedoch planen, den [Domänennamen Ihres Unternehmens](custom-domain-name-configure.md) zu verwenden oder [Benutzerkontoinformationen aus dem lokalen Active Directory zu synchronisieren](users-add.md#sync-active-directory-and-add-users-to-intune), können Sie dieses Browserfenster schließen.
