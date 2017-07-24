@@ -183,13 +183,12 @@
 ### [Überwachen von Profilen](device-profile-monitor.md)
 ### [Beheben von Problemen mit Profilen](device-profile-troubleshoot.md)
 
-## [Festlegen der Gerätekonformität](device-compliance.md)
-### [Voraussetzungen](device-compliance-get-started.md)
+## [Festlegen der Gerätekonformität](device-compliance-get-started.md)
 ### [Erstellen einer Android-Richtlinie](compliance-policy-create-android.md)
 ### [Erstellen einer Android for Work-Richtlinie](compliance-policy-create-android-for-work.md)
 ### [Erstellen einer iOS-Richtlinie](compliance-policy-create-ios.md)
+### [Create macOS policy (Erstellen einer macOS-Richtlinie)](compliance-policy-create-mac-os.md)
 ### [Erstellen einer Windows-Richtlinie](compliance-policy-create-windows.md)
-### Erstellen von Aktionen bei Nichteinhaltung
 ### [Überwachen der Gerätekonformität](compliance-policy-monitor.md)
 
 ## [Einrichten des bedingten Zugriffs](conditional-access.md)
