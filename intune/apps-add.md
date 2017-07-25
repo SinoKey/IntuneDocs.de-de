@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 69b1540d325f7cfa49e11f91fcb72a464f8a2e0e
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>So fügen Sie eine App zu Microsoft Intune hinzu
 
@@ -79,34 +79,9 @@ Wenn Sie eine App in Intune hinzufügen, können Sie die gewünschte Kategorie a
 
 ## <a name="apps-added-automatically-by-intune"></a>Von Intune automatisch hinzugefügte Apps
 
-Die folgenden von Microsoft veröffentlichten Apps sind in Intune integriert und können sofort von Ihnen zugewiesen werden:
-
-|||
-|-|-|
-|Name|Plattform|App-Typ|
-|Azure Information Protection|Android|Verwaltete Android Store-App|
-|Dynamics CRM für Smartphones|Android|Verwaltete Android Store-App|
-|Dynamics CRM für Tablets|Android|Verwaltete Android Store-App|
-|Excel|iOS|Verwaltete iOS Store-App|
-|Excel|Android|Verwaltete Android Store-App|
-|Managed Browser|Android|Verwaltete Android Store-App|
-|Managed Browser|iOS|Verwaltete iOS Store-App|
-|Microsoft Dynamics CRM auf Smartphones|iOS|Verwaltete iOS Store-App|
-|Microsoft Dynamics CRM auf Tablets|iOS|Verwaltete iOS Store-App|
-|Microsoft Power BI|iOS|Verwaltete iOS Store-App|
-|Microsoft Power BI|Android|Verwaltete Android Store-App|
-|Microsoft SharePoint|iOS|Verwaltete iOS Store-App|
-|Microsoft SharePoint|Android|Verwaltete Android Store-App|
-|Microsoft Teams|Android|Verwaltete Android Store-App|
-|Microsoft Teams|iOS|Verwaltete iOS Store-App|
-|OneDrive|iOS|Verwaltete iOS Store-App|
-|OneDrive|Android|Verwaltete Android Store-App|
-|OneNote|iOS|Verwaltete iOS Store-App|
-|Outlook|Android|Verwaltete Android Store-App|
-|Outlook|iOS|Verwaltete iOS Store-App|
-|Outlook-Gruppen|Android|Verwaltete Android Store-App|
-|Outlook-Gruppen|iOS|Verwaltete iOS Store-App|
-|PowerPoint|iOS|Verwaltete iOS Store-App|
+Zuvor enthielt Intune eine Reihe integrierter Apps, die Sie rasch zuweisen konnten. Auf Grundlage Ihrer Feedbacks haben wir diese Liste entfernt, und es werden keine integrierten Apps mehr angezeigt.
+Wenn Sie jedoch schon integrierte Apps zugewiesen haben, werden sie noch immer auf der App-Liste angezeigt. Sie können diese Apps weiter nach Bedarf zuweisen.
+In einer späteren Version möchten wir eine einfachere Methode zum Auswählen und Zuweisen integrierter Apps aus dem Intune-Portal integrieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

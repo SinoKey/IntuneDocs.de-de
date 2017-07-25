@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0fb1d52a97a03609ddefb94caf707bd8cbee8f12
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a5f7ffa14a78cecd613dcf6b7523acc0afb427cf
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
@@ -49,15 +49,25 @@ Dieses Handbuch befasst sich mit der Verwendung der folgenden Komponenten des In
 
 * **IntuneMAMResources.Bundle**: Ein Ressourcenpaket, das die Ressourcen für das SDK enthält.
 
-* **Headers**: Stellt die Intune App SDK-APIs bereit. Wenn Sie eine API verwenden, müssen Sie die Headerdatei einschließen, die die API enthält. Die folgenden Headerdateien umfassen die zum Aktivieren der Funktionalität des Intune App SDK erforderlichen API-Funktionsaufrufe:
+* **Headers**: Stellt die Intune App SDK-APIs bereit. Wenn Sie eine API verwenden, müssen Sie die Headerdatei einschließen, die die API enthält. Die folgenden Headerdateien enthalten die APIs, die Datentypen und die Protokolle, die vom Intune App SDK für Entwickler zur Verfügung gestellt wurden:
 
-    * IntuneMAMAsyncResult.h
+    * IntuneMAMAppConfig.h
+    * IntuneMAMAppConfigManager.h
     * IntuneMAMDataProtectionInfo.h
     * IntuneMAMDataProtectionManager.h
+    * IntuneMAMDefs.h
+    * IntuneMAMEnrollmentDelegate.h
+    * IntuneMAMEnrollmentManager.h
+    * IntuneMAMEnrollmentStatus.h
     * IntuneMAMFileProtectionInfo.h
     * IntuneMAMFileProtectionManager.h
-    * IntuneMAMPolicyDelegate.h
     * IntuneMAMLogger.h
+    * IntuneMAMPolicy.h
+    * IntuneMAMPolicyDelegate.h
+    * IntuneMAMPolicyManager.h
+    * IntuneMAMVersionInfo.h
+    
+Entwickler können die Inhalte aller oben stehenden Header verfügbar machen, indem sie nur IntuneMAM.h importieren.
 
 
 ## <a name="how-the-intune-app-sdk-works"></a>Funktionsweise des Intune App SDK
@@ -144,11 +154,13 @@ Gehen Sie folgendermaßen vor, um das Intune App SDK zu aktivieren:
     > [!NOTE]
     > Eine Berechtigungsdatei ist eine für die mobile Anwendung eindeutige XML-Datei. Sie wird zum Festlegen spezieller Berechtigungen und Funktionen in Ihrer iOS-App verwendet.
 
-7. Wenn die Definition von URL-Schemas der App in deren Info.plist-Datei erfolgt, fügen Sie ein weiteres Schema mit dem Suffix `-intunemam` für jedes URL-Schema hinzu.
+8. Wenn die Definition von URL-Schemas der App in deren Info.plist-Datei erfolgt, fügen Sie ein weiteres Schema mit dem Suffix `-intunemam` für jedes URL-Schema hinzu.
 
-8. Bei mobilen Apps, die in iOS 9+ entwickelt wurden, nehmen Sie jedes Protokoll, das Ihre App an `UIApplication canOpenURL` übergibt, in das `LSApplicationQueriesSchemes`-Array der Info.plist-Datei Ihrer App auf. Darüber hinaus fügen Sie `-intunemam` für jedes aufgeführte Protokoll ein neues Protokoll hinzu. Sie müssen auch `http-intunemam`, `https-intunemam`und `ms-outlook-intunemam` in das Array einschließen.
+9. Wenn die App Dokumenttypen in der „Info.plist“-Datei definiert, fügen Sie für das Array „Document Content Type UTIs“ jedes Elements einen duplizierten Eintrag für jede Zeichenfolge mit dem Präfix „com.microsoft.intune.mam.“ hinzu.
 
-9. Wenn in den Berechtigungen der App App-Gruppen definiert sind, fügen Sie diese Gruppen dem **IntuneMAMSettings**-Wörterbuch unter dem `AppGroupIdentifiers`-Schlüssel als Zeichenfolgenarray hinzu.
+10. Bei mobilen Apps, die in iOS 9+ entwickelt wurden, nehmen Sie jedes Protokoll, das Ihre App an `UIApplication canOpenURL` übergibt, in das `LSApplicationQueriesSchemes`-Array der Info.plist-Datei Ihrer App auf. Darüber hinaus fügen Sie `-intunemam` für jedes aufgeführte Protokoll ein neues Protokoll hinzu. Sie müssen auch `http-intunemam`, `https-intunemam`und `ms-outlook-intunemam` in das Array einschließen.
+
+11. Wenn in den Berechtigungen der App App-Gruppen definiert sind, fügen Sie diese Gruppen dem **IntuneMAMSettings**-Wörterbuch unter dem `AppGroupIdentifiers`-Schlüssel als Zeichenfolgenarray hinzu.
 
 
 
