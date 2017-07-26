@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dec4fb1d373f49c1f6c15b1f2a9acb2f8d20138d
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: ca98230a54ba7c2067062676420e9e06ff9bf7d7
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 
@@ -73,6 +73,10 @@ Zuvor enthielt Intune eine Reihe integrierter Apps, die Sie rasch zuweisen konnt
 Wenn Sie jedoch schon integrierte Apps zugewiesen haben, werden sie noch immer auf der App-Liste angezeigt. Sie können diese Apps weiter nach Bedarf zuweisen.
 In einer späteren Version möchten wir eine einfachere Methode zum Auswählen und Zuweisen integrierter Apps aus dem Intune-Portal integrieren.
 
+#### <a name="easier-installation-of-office-365-apps-----1121362----"></a>Einfachere Installation von Office 365-Apps <!--- 1121362 --->
+Der neue App-Typ von **Office 365 ProPlus** erleichtert Ihnen die Zuweisung von Office 365 ProPlus-2016-Apps zu von Ihnen verwalteten Geräten, die mit der neuesten Version von Windows 10 ausgeführt werden. Darüber hinaus erhalten Sie die Möglichkeit, Microsoft Project und Microsoft Visio zu installieren, wenn Sie über die entsprechenden Lizenzen verfügen. Die gewünschten Apps werden gebündelt und in der Intune-Konsole als einzelne App in der App-Liste angezeigt.
+Weitere Informationen finden Sie unter [How to add Office 365 apps for Windows 10 (Hinzufügen von Office 365-Apps für Windows 10)](apps-add-office365.md).
+
 
 #### <a name="support-for-offline-apps-from-the-windows-store-for-business-----777044----"></a>Unterstützung für Offline-Apps aus dem Windows Store für Unternehmen <!--- 777044 --->
 Offline-Apps, die Sie über den Windows Store für Unternehmen erworben haben, werden nun mit dem Intune-Portal synchronisiert. Sie können diese Apps dann für Geräte- oder Benutzergruppen bereitstellen. Offline-Apps werden durch Intune und nicht durch den Store installiert.
@@ -101,7 +105,7 @@ Weitere Informationen finden Sie unter [Endpoint protection settings for Windows
 
 In dieser Version haben wir neue Einstellungen für das Windows 10-Geräteeinschränkungsprofil in folgenden Kategorien hinzugefügt:
 
- -  Windows Defender
+-  Windows Defender
 -  Mobilfunk und Konnektivität
 -  Gesperrter Bildschirm
 -  Datenschutz
@@ -223,7 +227,7 @@ Für Apps, die für Android for Work-Gerätearbeitsprofile bereitgestellt werden
 Android-Geräte ab Version 7.0 mit einem als Android for Work-Gerät verwalteten Arbeitsprofil ermöglichen dem Administrator das Definieren einer Kennungsrichtlinie, die nur für Apps im Arbeitsprofil gilt.  Zu den Optionen gehören:
 
 - Definieren einer geräteweiten Kennungsrichtline: Dies ist die vom Endbenutzer zu verwendende Kennung, um sein gesamtes Gerät zu entsperren.
- Definieren einer Kennungsrichtlinie für das Arbeitsprofil: Benutzer werden zur Eingabe einer Kennung aufgefordert, sobald eine App im Arbeitsprofil geöffnet wird.
+- Definieren einer Kennungsrichtlinie für das Arbeitsprofil: Benutzer werden zur Eingabe einer Kennung aufgefordert, sobald eine App im Arbeitsprofil geöffnet wird.
 - Definieren einer Geräterichtlinie und einer Arbeitsprofilrichtlinie: Die IT-Abteilung hat die Möglichkeit, eine gerätebezogene und eine arbeitsprofilbezogene Kennungsrichtlinie mit unterschiedlicher Stärken zu erstellen (z.B. eine vierstellige PIN zum Entsperren des Geräts, aber eine sechsstellige PIN zum Öffnen einer arbeitsbezogenen App).
 
 Weitere Informationen finden Sie unter [Einstellungen für Geräteeinschränkungen für Android for Work-Geräte in Microsoft Intune](device-restrictions-android-for-work.md).
