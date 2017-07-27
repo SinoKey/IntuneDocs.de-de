@@ -14,11 +14,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f5af3aefe814a52ae3b43a894242ac972e0cc8fc
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 531112301d0c3827ec7eb3ab4087218caa331b90
+ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="intune-network-bandwidth-use"></a>Nutzung der Netzwerkbandbreite durch Intune
 
@@ -30,7 +30,7 @@ Diese Anleitung klärt Intune-Administratoren über die Netzwerkanforderungen f�
 Die Tabelle führt den ungefähren Umfang und die Häufigkeit gemeinsamer Inhalte auf, die pro Client über das Netzwerk übertragen werden.
 
 > [!NOTE]
-> Um sicherzustellen, dass Computer und mobile Geräte die erforderlichen Updates und Inhalte vom Intune-Dienst erhalten, müssen sie in regelmäßigen Abständen mit dem Internet verbunden werden. Die Zeit für das Empfangen von Updates oder Inhalten kann variieren, als Richtlinie gilt jedoch, dass sie für mindestens eine Stunde pro Tag kontinuierlich mit dem Internet verbunden sein sollen.
+> Um sicherzustellen, dass Geräte Updates und Inhalt von Intune empfangen, müssen Sie zeitweise mit dem Internet verbunden sein. Die Zeit, die für das Empfangen von Updates oder Inhalten benötigt wird, kann variieren, sie sollten jedoch für mindestens eine Stunde pro Tag kontinuierlich mit dem Internet verbunden sein.
 
 |Art des Inhalts|Ungefähre Größe|Häufigkeit und Details|
 |----------------|--------------------|-------------------------|
@@ -51,9 +51,9 @@ Die Tabelle führt den ungefähren Umfang und die Häufigkeit gemeinsamer Inhalt
 Mithilfe der folgenden Methoden können Sie die Nutzung der Netzwerkbandbreite für Intune-Clients reduzieren.
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>Verwenden eines Proxyservers zum Zwischenspeichern von Inhaltsanforderungen
-Mithilfe eines Proxyservers zur Zwischenspeicherung von Inhalt können Sie doppelte Downloads vermeiden und die Bandbreitennutzung durch Clients verringern, von denen Inhalte aus dem Internet angefordert werden.
+Ein Proxyserver kann Inhalt zwischenspeichern, um doppelte Downloads zu vermeiden und die Bandbreitennutzung von Inhalten aus dem Internet zu verringern.
 
-Von einem zwischenspeichernden Proxyserver werden Inhaltsanforderungen der Clientcomputer in Ihrem Netzwerk empfangen, diese Inhalte aus dem Internet abgerufen und dann zwischengespeichert. Dies schließt sowohl HTTP-Antworten als auch binäre Downloads ein. Der Server verwendet die zwischengespeicherten Informationen, um auf nachfolgende Anforderungen von Intune-Clientcomputern zu antworten.
+Ein Proxyserver mit Zwischenspeicherung, der Inhaltsanfragen von Clients empfängt, kann diesen Inhalt abrufen und Webantworten und Downloads zwischenspeichern. Der Server verwendet zwischengespeicherte Daten, um nachfolgende Anforderungen von Clients zu beantworten.
 
 Nachfolgend werden typische Einstellungen für die Verwendung eines Proxyservers aufgeführt, mit dem Inhalt für Intune-Clients zwischengespeichert wird.
 
@@ -70,7 +70,7 @@ Intune unterstützt die Verwendung von BITS (Background Intelligent Transfer Ser
 Weitere Informationen zu BITS und Windows-Computern finden Sie unter [Background Intelligent Transfer Service](http://technet.microsoft.com/library/bb968799.aspx) in der TechNet-Bibliothek.
 
 ### <a name="use-branchcache-on-computers"></a>Verwenden von BranchCache auf Computern
-Intune-Clients können BranchCache verwenden, um den WAN-Datenverkehr zu verringern. Von den folgenden als Clients unterstützten Betriebssystemen wird auch BranchCache unterstützt:
+Intune-Clients können BranchCache verwenden, um den WAN-Datenverkehr zu verringern. Die folgenden Betriebssysteme unterstützen BranchCache:
 
 - Windows 7
 - Windows 8.0
@@ -79,22 +79,26 @@ Intune-Clients können BranchCache verwenden, um den WAN-Datenverkehr zu verring
 
 Zum Verwenden von BranchCache muss BranchCache auf dem Clientcomputer aktiviert und für den Modus **Verteilter Cache** konfiguriert sein.
 
-Standardmäßig werden BranchCache und der Modus „Verteilter Cache“ auf einem Computer aktiviert, wenn der Intune-Client installiert wird. Wenn auf einem Client jedoch bereits eine Gruppenrichtlinie vorhanden ist, die BranchCache deaktiviert, wird diese Richtlinie von Intune nicht außer Kraft gesetzt, und BranchCache bleibt auf diesem Computer deaktiviert.
+Standardmäßig werden BranchCache und der Modus „Verteilter Cache“ auf Computern aktiviert, wenn der Intune-Client installiert wird. Wenn jedoch die Gruppenrichtlinie BranchCache deaktiviert hat, überschreibt Intune diese Richtlinie nicht, und BranchCache bleibt deaktiviert.
 
-Wenn Sie BranchCache verwenden, sprechen Sie mit den Administratoren in Ihrer Organisation, die Gruppenrichtlinien und die Intune-Firewallrichtlinie verwalten, um sicherzustellen, dass sie keine Richtlinien bereitstellen, mit denen BranchCache oder Firewallausnahmen deaktiviert werden. Weitere Informationen zu BranchCache finden Sie unter [BranchCache: Übersicht](http://technet.microsoft.com/library/hh831696.aspx).
+Wenn Sie BranchCache verwenden, arbeiten Sie mit den Administratoren in Ihrer Organisation, um die Gruppenrichtlinien und die Intune-Firewallrichtlinie zu verwalten. Stellen Sie sicher, dass sie keine Richtlinien bereitstellen, von denen BranchCache oder Firewall-Ausnahmen deaktiviert werden. Weitere Informationen zu BranchCache finden Sie unter [BranchCache: Übersicht](http://technet.microsoft.com/library/hh831696.aspx).
 
 ## <a name="network-communication-requirements"></a>Anforderungen für die Netzwerkkommunikation
 
-Sie müssen die Netzwerkkommunikation zwischen den verwalteten Geräten, den Geräten zum Verwalten Ihres Intune-Abonnements und den Websites aktivieren, die für cloudbasierte Dienste benötigt werden.
+Aktivieren Sie die Netzwerkkommunikation zwischen den verwalteten Geräten und den Websites, die für cloudbasierte Dienste benötigt werden.
 
 Intune verwendet keine lokale Infrastruktur, z.B. einen Server, auf dem die Intune-Software ausgeführt wird. Es gibt jedoch Optionen zum Verwenden einer lokalen Infrastruktur, darunter Synchronisierungstools für Exchange und Active Directory.
 
-Zum Verwalten von Computern, die sich hinter Firewalls und Proxyservern befinden, müssen Sie die Firewalls und Proxyserver so einrichten, dass die Kommunikation für Intune zugelassen wird. Beim Verwalten von Computern, die sich hinter einem Proxyserver befinden, berücksichtigen Sie Folgendes:
+Um Computer hinter Firewalls und Proxyserver zu verwalten, müssen Sie die Kommunikation für Intune aktivieren.
 
 -   Der Proxyserver muss sowohl **HTTP** (80) als auch **HTTPS** (443) unterstützen, da Intune-Clients beide Protokolle verwenden.
--   Intune erfordert Zugriff auf nicht authentifizierte Proxyserver auf manage.microsoft.com für einige Vorgänge wie das Herunterladen von Software und Updates.
+-   Intune erfordert Zugriff auf nicht authentifizierte Proxyserver auf manage.microsoft.com für einige Aufgaben wie das Herunterladen von Software und Updates.
 
 Sie können Proxyservereinstellungen entweder auf einzelnen Clientcomputern modifizieren oder mithilfe der Gruppenrichtlinieneinstellungen für alle Clientcomputer hinter einem bestimmten Proxyserver ändern.
+
+
+<!--
+> [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
 Für verwaltete Geräte sind Konfigurationen erforderlich, über die **Alle Benutzer** über Firewalls auf Dienste zugreifen können.
 

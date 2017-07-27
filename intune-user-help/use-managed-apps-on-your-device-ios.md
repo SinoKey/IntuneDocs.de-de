@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee43647190da705581eaa5a266db3712391e06f2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e47e6fd8bbb3476beb8bd9df22376fdfd339ba2e
+ms.sourcegitcommit: 83dd7a127898dd9528187aa8d430cc1be9dd7738
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/15/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Verwenden verwalteter Apps auf Ihrem iOS-Gerät
 
@@ -38,6 +38,8 @@ Es gibt verschiedene Möglichkeiten, verwaltete Apps zu erhalten:
 -   Wenn Ihr Gerät bei Microsoft Intune registriert ist, installieren Sie die App entweder über die Unternehmensportal-App oder -Website, oder Ihr IT-Administrator installiert sie auf Ihrem Gerät. Informationen zum Registrieren finden Sie unter [Registrieren Ihres iOS-Geräts bei Intune](enroll-your-device-in-intune-ios.md) oder [Registrieren Ihres macOS-Geräts bei Intune](enroll-your-device-in-intune-macos.md).
 
 -   Sie installieren eine App aus dem App Store und melden sich dann mit Ihrem Unternehmensbenutzerkonto an, das von Intune verwaltet wird.
+
+Ihr IT-Administrator kauft womöglich manchmal mehrere Lizenzen für eine App, die Sie installieren. Wenn Sie eine Meldung sehen, die Sie auffordert, die Apple Volume Purchase Program-Vereinbarung zu akzeptieren, ist dies normal, und Sie können sie akzeptieren. Wenn Sie die Vereinbarung nicht akzeptieren, können Sie die App nicht installieren.
 
 ### <a name="what-can-my-it-admin-manage-in-an-app"></a>Was kann mein IT-Administrator in einer App verwalten?
 Es folgen einige Beispiele für Optionen, die Ihr IT-Administrator in einer App verwalten kann und die sich auf Ihre Interaktionen mit Unternehmensdaten auf Ihrem Gerät auswirken können:

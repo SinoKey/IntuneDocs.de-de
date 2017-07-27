@@ -14,17 +14,17 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0b09daa05db673817bea67cd8b88c2ac63be7f1e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Schützen von branchenspezifischen Apps und Daten auf nicht in Microsoft Intune registrierten Geräten
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Mit Richtlinien zur Verwaltung mobiler Anwendungen (Mobile App Management, MAM) können Sie Unternehmensdaten schützen, indem Aktionen, die zu Datenlecks führen könnten, eingeschränkt und Datenzugriffsanforderungen wie die Eingabe einer App-PIN erzwungen werden. Zum Anwenden von MAM-Richtlinien auf branchenspezifische iOS- und Android-Apps müssen Sie die App zunächst mit dem Microsoft Intune App Wrapping Tool umschließen. App Wrapping ist der Vorgang des Zuweisens einer Verwaltungsebene zu einer mobilen App, ohne das beliebige „chan/intune/apps-prepare-mobile-application-managements“-Vorgänge für diese erforderlich sind, und der Verteilung der App an Benutzer.  
+Mit Richtlinien zur Verwaltung mobiler Anwendungen (Mobile App Management, MAM) können Sie Unternehmensdaten schützen, indem Aktionen, die zu Datenlecks führen könnten, eingeschränkt und Datenzugriffsanforderungen wie die Eingabe einer App-PIN erzwungen werden. Zum Anwenden von MAM-Richtlinien auf branchenspezifische iOS- und Android-Apps müssen Sie die App zunächst mit dem Microsoft Intune App Wrapping Tool umschließen. Bei diesem Prozess wird einer mobilen App eine Verwaltungsebene hinzugefügt, ohne dass diese geändert werden muss, und sie wird an Benutzer verteilt.  
 
 In diesem Thema werden die erforderlichen Schritte zum Anwenden von MAM-Richtlinien auf Apps vorgestellt, auf die Benutzer auf **nicht verwalteten Geräten im Besitz von Mitarbeitern** und auf Geräten, die von einer **Lösung für die Verwaltung von Mobilgeräten (Mobile Device Management, MDM) eines Drittanbieters** verwaltet werden, zugreifen.  Informationen zum Vorbereiten branchenspezifischer Apps, die auf **bei Intune MDM registrierten Geräten** ausgeführt werden, finden Sie unter [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 
