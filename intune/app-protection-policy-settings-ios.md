@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 537087b720338413261b3947365a4d90fed89fbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 272628c501d15dc9661a1110e7dcab2d0e9f1d02
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Einstellungen für App-Schutzrichtlinien für iOS
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -71,8 +71,8 @@ Die App-Schutzrichtlinie von Intune erlaubt unter bestimmten Umständen die Date
 | **Überprüfen der Zugriffsanforderungen nach (Minuten)** | Konfigurieren Sie die folgenden Einstellungen: <ul><li>**Timeout**: Dies ist die Anzahl der Minuten, bis die (zuvor in der Richtlinie definierten) Zugriffsanforderungen erneut überprüft worden sind. Beispielsweise ein Administrator aktiviert die PIN in der Richtlinie, und ein Benutzer öffnet eine MAP-App und muss eine PIN eingeben. Wenn Sie diese Einstellung verwenden, muss der Benutzer für weitere **30 Minuten** (Standardwert) keine PIN bei MAM-Apps eingeben.</li><li>**Offline-Toleranzperiode**: Dies ist die Anzahl der Minuten, in den MAM-Apps offline sind. Geben Sie die Zeit (in Minuten) an, bevor die Zugriffsanforderungen für die App erneut geprüft werden. Standardwert = **720** Minuten (12 Stunden). Nachdem dieser Zeitraum abgelaufen ist, erfordert die App Benutzerauthentifizierung für AAD, sodass die App weiterhin ausgeführt werden kann.</li></ul>| Timeout: 30 <br><br> Offline: 720 |
 | **Offline-Intervall (in Tagen), bevor App-Daten zurückgesetzt werden** | Nach diesem Zeitraum (durch den Administrator definiert) im Offline-Modus, führt die App selbst ein selektives Zurücksetzen aus. Dieses selektive Zurücksetzen ist dasselbe Zurücksetzen wie das, das durch den Administrator im Workflow zum selektiven Zurücksetzen für MAM initiiert werden kann. <br><br> | 90 Tage |
 | **App-PIN deaktivieren, wenn die Geräte-PIN verwaltet wird** | Wählen Sie **Ja**, um die App-PIN zu deaktivieren, wenn eine Gerätesperre auf einem registrierten Gerät erkannt wird. | Nein |
-| **iOS-Mindestbetriebssystem anfordern** | Wählen Sie **Ja**, um zum Verwenden dieser App ein iOS-Mindestbetriebssystem anzufordern. Der Zugriff des Benutzers wird blockiert, wenn die iOS-Version auf dem Gerät diese Anforderung nicht erfüllt. | Nein |
-| **iOS-Mindestbetriebssystem anfordern (nur Warnung)** | Wählen Sie **Ja**, um zum Verwenden dieser App ein iOS-Mindestbetriebssystem anzufordern. Dem Benutzer wird eine Benachrichtigung angezeigt, wenn die iOS-Version auf dem Gerät diese Anforderung nicht erfüllt. Diese Benachrichtigung kann verworfen werden. | Nein |
+| **iOS-Mindestbetriebssystem anfordern** | Wählen Sie **Ja**, um zum Verwenden dieser App ein iOS-Mindestbetriebssystem anzufordern. Der Zugriff des Benutzers wird blockiert, wenn die iOS-Version auf dem Gerät diese Anforderung nicht erfüllt. Diese Richtlinie unterstützt nur ein einzelnes Dezimaltrennzeichen, z.B. iOS 10.3. | Nein |
+| **iOS-Mindestbetriebssystem anfordern (nur Warnung)** | Wählen Sie **Ja**, um zum Verwenden dieser App ein iOS-Mindestbetriebssystem anzufordern. Dem Benutzer wird eine Benachrichtigung angezeigt, wenn die iOS-Version auf dem Gerät diese Anforderung nicht erfüllt. Diese Benachrichtigung kann verworfen werden. Diese Richtlinie unterstützt nur ein einzelnes Dezimaltrennzeichen, z.B. iOS 10.3. | Nein |
 | **App-Mindestversion anfordern** | Wählen Sie **Ja** aus, um zum Verwenden der App eine App-Mindestversion anzufordern. Der Zugriff des Benutzers wird blockiert, wenn die App-Version auf dem Gerät die Anforderung nicht erfüllt.<br><br>Da Apps selbst häufig individuelle Versionsschemas aufweisen, erstellen Sie eine Richtlinie mit einer minimalen App-Version, die auf eine App abzielt (z.B. „Outlook-Versionsrichtlinie“). <br><br> | Nein | 
 | **App-Mindestversion anfordern (nur Warnung)** | Wählen Sie **Ja** aus, um zum Verwenden dieser App eine App-Mindestversion zu empfehlen. Dem Benutzer wird eine Benachrichtigung angezeigt, wenn die App-Version auf dem Gerät die Anforderung nicht erfüllt. Diese Benachrichtigung kann verworfen werden.<br><br>Da Apps selbst häufig individuelle Versionsschemas aufweisen, erstellen Sie eine Richtlinie mit einer minimalen App-Version, die auf eine App abzielt (z.B. „Outlook-Versionsrichtlinie“). <br><br> | Nein | 
 | **Mindestversion des Intune SDK für App-Schutzrichtlinien anfordern** | Wählen Sie **Ja** aus, um zum Verwenden dieser App eine Mindestversion des Intune SDK für App-Schutzrichtlinien anzufordern. Der Zugriff des Benutzers wird blockiert, wenn die Version des Intune SDK für App-Schutzrichtlinien auf dem Gerät die Anforderung nicht erfüllt. <br> <br> Weitere Informationen zum Intune SDK für App-Schutzrichtlinien finden Sie unter [Übersicht über das Intune App SDK](app-sdk.md). <br><br> | Nein |
