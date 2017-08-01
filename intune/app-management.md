@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/12/2017
 ---
-# Was ist die Microsoft Intune App-Verwaltung?
-<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
+# <a name="what-is-microsoft-intune-app-management"></a>Was ist die Microsoft Intune App-Verwaltung?
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,8 +36,7 @@ Darüber hinaus müssen Sie ggf. auch Apps auf Geräten, die nicht in Intune reg
 
 Intune bietet eine Reihe von Funktionen, die Ihnen dabei helfen, die benötigten Apps auf allen erforderlichen Geräten bereitzustellen.
 
-## App-Verwaltungsfunktionen nach Plattform
-<a id="app-management-capabilities-by-platform" class="xliff"></a>
+## <a name="app-management-capabilities-by-platform"></a>App-Verwaltungsfunktionen nach Plattform
 
 ||||||
 |-|-|-|-|-|
@@ -62,8 +60,7 @@ Intune bietet eine Reihe von Funktionen, die Ihnen dabei helfen, die benötigten
 
 <sup>2</sup> Gilt nur für Geräte, die von Intune verwaltet werden.
 
-## Erste Schritte
-<a id="how-to-get-started" class="xliff"></a>
+## <a name="how-to-get-started"></a>Erste Schritte
 
 Sie finden die meisten Informationen zu Apps in der Workload **Mobile Apps**, auf die Sie wie folgt zugreifen können:
 
@@ -73,8 +70,7 @@ Sie finden die meisten Informationen zu Apps in der Workload **Mobile Apps**, au
 
     ![Workload „Mobile Apps“](./media/apps-workload.png)
 
-### Verwalten von
-<a id="manage" class="xliff"></a>
+### <a name="manage"></a>Verwalten von
 - **Apps:** Mit diesem Knoten können Sie die meisten Apps hinzufügen, zuweisen und überwachen.
     - [Hinzufügen von Apps](apps-add.md)
     - [Zuweisen von Apps](apps-deploy.md)
@@ -89,8 +85,7 @@ Sie finden die meisten Informationen zu Apps in der Workload **Mobile Apps**, au
 - **iOS-Bereitstellungsprofil:**: iOS-Apps enthalten ein Bereitstellungsprofil und Code, der von einem Zertifikat signiert ist. Wenn das Zertifikat abläuft, kann die App nicht mehr ausgeführt werden. Intune stellt Ihnen die Tools zum proaktiven Zuweisen einer neuen Richtlinie für Bereitstellungsprofile auf Geräten zur Verfügung, auf denen Apps installiert sind, die bald ablaufen.
     - [iOS-App-Bereitstellungsprofile](app-provisioning-profile-ios.md)
 
-### Überwachen
-<a id="monitor" class="xliff"></a>
+### <a name="monitor"></a>Überwachen
 - **Lizenzierte Apps:** Ermöglicht das Anzeigen, Zuweisen und Überwachen von per Volumenlizenz in den App Stores erworbenen Apps.
     - [Per Volumenlizenz erworbene Apps aus dem Windows Store für Unternehmen](windows-store-for-business.md)
 - **Erkannte Apps:** Zeigt alle Apps, die von Intune zugewiesen und auf einem Gerät installiert wurden.
@@ -99,8 +94,7 @@ Sie finden die meisten Informationen zu Apps in der Workload **Mobile Apps**, au
 
 Weitere Informationen finden Sie unter [Überwachen von Apps](apps-monitor.md).
 
-### Setup
-<a id="setup" class="xliff"></a>
+### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **Windows Store für Unternehmen:** Richten Sie die Integration in den Windows Store für Unternehmen ein. Anschließend können Sie erworbene Anwendungen mit Intune synchronisieren, sie zuweisen und Ihre Lizenznutzung verfolgen.
