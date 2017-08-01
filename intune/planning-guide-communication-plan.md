@@ -14,11 +14,11 @@ ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 20f5d8e578046db34813c5a5bd14ce03bb4f56bc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c78dd525222e52d66ed025449004631d66e8672f
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Entwickeln eines Kommunikationsplans für den Rollout
 
@@ -81,6 +81,6 @@ Die erste Kommunikation zum Intune-Projektstart kann sich z.B. an die gesamte Or
 
 Sie können eine [Vorlage der oben stehenden Tabelle herunterladen](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), um Ihren Kommunikationsplan zu entwickeln.
 
-## <a name="next-section"></a>Nächster Abschnitt
+## <a name="next-step"></a>Nächster Schritt
 
 Der nächste Abschnitt enthält Hinweise zum [Entwerfen eines Supportplans](planning-guide-support-plan.md).

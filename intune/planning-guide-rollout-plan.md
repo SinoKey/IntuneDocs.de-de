@@ -20,13 +20,11 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/11/2017
 ---
-# Entwickeln eines Rolloutplans
-<a id="develop-a-rollout-plan" class="xliff"></a>
+# <a name="develop-a-rollout-plan"></a>Entwickeln eines Rolloutplans
 
 In Ihrem Rolloutplan wird Folgendes bestimmt: die Gruppen in der Organisation, für die Intune eingeführt werden soll, der Zeitrahmen des Rollouts für jede Gruppe und die verwendeten Registrierungsmethoden.
 
-## Zielgruppen und Zeitrahmen
-<a id="targeted-groups-and-timeframes" class="xliff"></a>
+## <a name="targeted-groups-and-timeframes"></a>Zielgruppen und Zeitrahmen
 
 Überprüfen Sie zunächst die Zielgruppen für den Intune-Rollout, die Sie in Ihren [Anwendungsfallszenarien](planning-guide-scenarios.md) bestimmt haben.
 
@@ -38,20 +36,17 @@ Bestimmen Sie als Nächstes den Zeitrahmen für jede Zielgruppe. Für diese Aufg
 * Geografischer Standort
 * Geschäftsrisiken
 
-## Rolloutphasen
-<a id="rollout-phases" class="xliff"></a>
+## <a name="rollout-phases"></a>Rolloutphasen
 Organisationen entscheiden sich häufig dafür, die Einführung von Intune mit einer Pilotphase zu beginnen, die auf eine kleine Gruppe von Benutzern in der IT-Abteilung ausgerichtet ist. Die Pilotphase kann dann auf eine größere Gruppe von IT-Benutzern und durch Teilnehmer aus anderen Gruppen der Organisation ergänzt werden.
 
-### Pilotphase
-<a id="pilot" class="xliff"></a>
+### <a name="pilot"></a>Pilotphase
 Die erste Phase des Rollouts sollte Pilotbenutzer umfassen. Die Pilotbenutzer müssen wissen, dass sie den ersten Benutzer einer neuen Lösung sind. Sie müssen willens sein, Feedback zur Verbesserung von Konfiguration, Dokumentation und Benachrichtigungen bereitzustellen, um den Weg für alle anderen Benutzer in späteren Rolloutphasen zu ebnen. Bei diesen Benutzern darf es sich nicht um Führungskräfte handeln.
 
 Das Pilotprojekt ist eine gute Gelegenheit zum Testen der [Herausforderungen](planning-guide-deployment-goals.md) und verfeinern von [Anforderungen](planning-guide-requirements.md), die Sie zuvor gesammelt haben.
 
 Fügen Sie Ihre Pläne für [Kommunikation](planning-guide-communication-plan.md),[Support](planning-guide-support-plan.md) sowie [Tests und Überprüfungen](planning-guide-test-validation.md) hinzu, um Probleme auszumachen, solange die Auswirkungen auf Benutzer noch gering sind.
 
-### Rollout in die Produktion
-<a id="production-rollout" class="xliff"></a>
+### <a name="production-rollout"></a>Rollout in die Produktion
 Nach einem erfolgreichen Pilotprojekt sind Sie bereit für den vollständigen Rollout in die Produktionsumgebung, bei der die restlichen Gruppen in Ihrer Organisation einbezogen werden. Es folgen einige Beispiele für unterschiedliche Rolloutgruppen und -phasen:
 
 -   **Abteilungen** <br/>Für Abteilung kann es eine eigene Rolloutphase geben. Sie können dann eine gesamte Abteilung gleichzeitig als Zielgruppe festlegen. Bei dieser Art von Rollout nutzen Benutzer in den einzelnen Abteilungen meist das Mobilgerät auf dieselbe Weise und greifen auf dieselben Anwendungen zu. Für Benutzer gelten womöglich auch dieselben Arten von Richtlinien.
@@ -71,26 +66,22 @@ Dieses Beispiel zeigt einen Intune-Rolloutplan, der Zielgruppen und Zeitrahmen u
 | Produktionsrolloutphase 3 |  |  |  | Personalabteilung (50 Benutzer), Finanzabteilung (40 Benutzer), Führungskräfte (30 Benutzer) |
 
 Sie können [eine Vorlage der obigen Tabelle herunterladen](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), um die Rolloutphasen Ihrer Organisation einzutragen.
-## Abstimmen von Rolloutgruppen mit Registrierungsmethoden
-<a id="match-rollout-groups-to-enrollment-approaches" class="xliff"></a>
+## <a name="match-rollout-groups-to-enrollment-approaches"></a>Abstimmen von Rolloutgruppen mit Registrierungsmethoden
 
 Nachdem Sie die Zielgruppen und den Zeitrahmen für den Intune-Rollout festgelegt haben, besteht der nächste Schritt darin, für jede Gruppe die geeignete Methode für die Intune-Registrierung zu wählen. Es gibt verschiedene Registrierungsmethoden:
 * Benutzer-Self-Service
 * Registrierung mit Benutzerunterstützung
 * IT-Hausmesse
 
-### Benutzer-Self-Service
-<a id="user-self-service" class="xliff"></a>
+### <a name="user-self-service"></a>Benutzer-Self-Service
 
 In diesem Fall ist der Benutzer für das Registrieren des eigenen Geräts verantwortlich und befolgt in der Regel die von der IT-Organisation vorgegebenen Registrierungsanweisungen. Diese Methode wird in Organisationen am häufigsten verwendet und ist skalierbarer als die Registrierung mit Benutzerunterstützung.
 
-### Registrierung mit Benutzerunterstützung
-<a id="user-assisted-enrollment" class="xliff"></a>
+### <a name="user-assisted-enrollment"></a>Registrierung mit Benutzerunterstützung
 
 Bei diesem Ansatz werden Benutzer besonders intensiv unterstützt. Ein Mitglied des IT-Teams begleitet den Benutzer durch den Registrierungsprozess, persönlich oder per Skype. Dieser Ansatz wird häufig bei Führungskräften und anderen Gruppen befolgt, die während des Registrierungsvorgangs ggf. mehr Unterstützung benötigen.
 
-### IT-Hausmesse
-<a id="it-tech-fair" class="xliff"></a>
+### <a name="it-tech-fair"></a>IT-Hausmesse
 
 Eine weitere Option für die Intune-Benutzerregistrierung besteht in der Veranstaltung einer IT-Hausmesse. Bei dieser Veranstaltung richtet die IT-Gruppe einen Stand zur Unterstützung bei der Intune-Registrierung ein, an dem Benutzer Informationen zur Intune-Registrierung erhalten, Fragen stellen und Unterstützung beim Registrierungsvorgang erhalten können. Diese Option kann sowohl für die IT-Gruppe als auch für den Benutzer von Vorteil sein, insbesondere in den frühen Phasen des Rollouts von Intune.
 
@@ -111,7 +102,6 @@ Hier ist ein mit Registrierungsmethoden aktualisiertes Beispiel des obigen Intun
 | Self-Service |  |  |  | Personalabteilung, Finanzabteilung |
 | Intensive Benutzerunterstützung |  |  |  | Führungskräfte |
 
-## Nächste Schritte
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Nächste Schritte
 
 Der nächste Abschnitt enthält Hinweise für das [Entwickeln eines Kommunikationsplans für den Intune-Rollout](planning-guide-communication-plan.md).
