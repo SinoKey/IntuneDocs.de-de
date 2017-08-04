@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/13/2017
 ---
-# Aufheben der Registrierung Ihres iOS-Geräts bei Intune
-<a id="unenroll-your-ios-device-from-intune" class="xliff"></a>
+# <a name="unenroll-your-ios-device-from-intune"></a>Aufheben der Registrierung Ihres iOS-Geräts bei Intune
 
 Wenn Sie die Registrierung Ihres iOS-Geräts bei Intune aufheben, kann Ihr Gerät nicht mehr auf Unternehmensressourcen zugreifen und wird nicht mehr über Intune verwaltet.
 
