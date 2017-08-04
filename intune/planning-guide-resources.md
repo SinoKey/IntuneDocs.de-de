@@ -19,11 +19,9 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/11/2017
 ---
-# Zusätzliche Ressourcen für die Planung Ihrer Intune-Bereitstellung
-<a id="additional-resources-for-planning-your-intune-deployment" class="xliff"></a>
+# <a name="additional-resources-for-planning-your-intune-deployment"></a>Zusätzliche Ressourcen für die Planung Ihrer Intune-Bereitstellung
 
-## Vorlagen
-<a id="templates" class="xliff"></a>
+## <a name="templates"></a>Vorlagen
 
 Microsoft Excel-Vorlagen für die im Planungshandbuch verwendeten Tabellen stehen zum [Herunterladen](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) bereit.
 
@@ -44,8 +42,7 @@ Hier ist eine Liste der Tabellenvorlagen für jeden Abschnitt.
 | | Richtlinie für bedingten Zugriff|-|
 
 
-## Weitere Informationen
-<a id="further-reading" class="xliff"></a>
+## <a name="further-reading"></a>Weitere Informationen
 
 Die folgenden Ressourcen enthalten zusätzliche Informationen, die während der Planungs-, Entwurfs- und Implementierungsphase der Intune-Bereitstellung nützlich sein können.
 

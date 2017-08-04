@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/11/2017
 ---
-# Bestimmen von Anforderungen von Anwendungsfallszenarien
-<a id="determine-use-case-scenario-requirements" class="xliff"></a>
+# <a name="determine-use-case-scenario-requirements"></a>Bestimmen von Anforderungen von Anwendungsfallszenarien
 
 In diesem Abschnitt ermitteln Sie die Anforderungen für jede Organisationsgruppe innerhalb der einzelnen Anwendungsfallszenarien. Dieser Prozess hilft Ihnen bei der Vorbereitung der übrigen Planungsbereiche der Intune-Bereitstellung wie Architektur und Entwurf, Onboarding und Rollout. Zudem unterstützt er Sie beim Bestimmen möglicher Lücken und Herausforderungen im Zusammenhang mit Ihrem Intune-Bereitstellungsprojekt.
 
@@ -42,8 +41,7 @@ Hier sehen Sie einige Beispiele für die Anwendungsfallanforderungen einer Organ
 Sie können [eine Vorlage der obigen Tabelle herunterladen](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), um die Anforderungen an die Szenarien für Anwendungsfälle und untergeordnete Anwendungsfälle Ihrer Organisation einzutragen.
 
 
-## Beispiele für Anforderungen
-<a id="examples-of-requirements" class="xliff"></a>
+## <a name="examples-of-requirements"></a>Beispiele für Anforderungen
 
 Hier sind einige weitere Beispiele, die in der Spalte „Anforderungen“ verwendet werden können:
 
@@ -64,7 +62,6 @@ Hier sind einige weitere Beispiele, die in der Spalte „Anforderungen“ verwen
     - Office 365 mit App-Schutzrichtlinien
     - Branchenspezifisch (LOB) mit App-Schutzrichtlinien
 
-## Nächste Schritte
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Nächste Schritte
 
 Der nächste Abschnitt enthält Hinweise für das [Entwickeln eines Intune-Rolloutplans](planning-guide-rollout-plan.md).

@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/13/2017
 ---
-# Registrieren eines Windows 10-Geräts bei Intune
-<a id="enroll-your-windows-10-device-in-intune" class="xliff"></a>
+# <a name="enroll-your-windows-10-device-in-intune"></a>Registrieren eines Windows 10-Geräts bei Intune
 
 > [!NOTE]
 > Windows 10 funktioniert auf allen Geräten. Egal, ob Sie einen Desktop-Computer, ein Smartphone oder ein Tablet verwenden, sind die zu befolgenden Schritte dieselben, auch wenn sie sich geringfügig von den Bildern auf dieser Seite unterscheiden.

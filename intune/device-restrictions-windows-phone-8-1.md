@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e425b8a3c93c2f5dc73fbe9c75aa9adf49c5cdc8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 54a50ec2195ed2f760f69137418977f417220aa1
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Windows Phone 8.1 in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Allgemein
--   **Alle Einstellungen auf Windows Phone 8.1 anwenden:** Diese Einstellung können Sie im klassischen Intune-Portal konfigurieren. Im Azure-Portal kann diese Einstellung nicht geändert werden. Wenn hierfür **Konfiguriert** festgelegt wird, werden sämtliche Einstellungen nur auf Windows Phone 8.1-Geräte angewendet. Wenn hierfür **Nicht konfiguriert** festgelegt wird, gelten diese Einstellungen auch für Windows 10 Mobile-Geräte.
+
 -   **Kamera:** Erlaubt oder sperrt die Verwendung der Kamera des Geräts.
 -   **Kopieren und einfügen:** Lässt Kopier- und Einfügefunktionen auf Geräten zu oder sperrt diese Funktionen.
 -   **Wechselmedien:** Erlaubt dem Gerät, Wechselmedien wie SD-Karten zu verwenden.
@@ -37,8 +37,8 @@ ms.lasthandoff: 07/01/2017
 -   **Synchronisierung benutzerdefinierter E-Mail-Konten:** Ermöglicht dem Gerät das Herstellen einer Verbindung mit nicht von Microsoft stammenden E-Mail-Konten.
 
 ## <a name="password"></a>Kennwort
--   **Alle Einstellungen auf Windows Phone 8.1 anwenden:** Diese Einstellung können Sie im klassischen Intune-Portal konfigurieren. Im Azure-Portal kann diese Einstellung nicht geändert werden. Wenn hierfür **Konfiguriert** festgelegt wird, werden sämtliche Einstellungen nur auf Windows Phone 8.1-Geräte angewendet. Wenn hierfür **Nicht konfiguriert** festgelegt wird, gelten diese Einstellungen auch für Windows 10 Mobile-Geräte.
--   **Kennwort erforderlich:** Der Endbenutzer muss ein Kennwort eingeben, um auf das Gerät zugreifen zu können.
+
+-   **Kennwort:** Der Endbenutzer muss ein Kennwort eingeben, um auf das Gerät zugreifen zu können.
     -   **Erforderlicher Kennworttyp:** Gibt den erforderlichen Typ des Kennworts an, z.B. alphanumerisch oder nur numerisch.
     -   **Minimale Kennwortlänge:** Gibt die Mindestanzahl von Zeichen an, die das Kennwort enthalten muss.
     -   **Einfache Kennwörter:** Gibt an, dass einfache Kennwörter, wie z.B: „0000“ und „1234“ verwendet werden können.
@@ -49,12 +49,10 @@ ms.lasthandoff: 07/01/2017
 -   **Verschlüsselung:** Schreibt vor, dass die Daten auf unterstützten mobilen Geräten verschlüsselt werden müssen.
 
 ## <a name="app-store"></a>App Store
--   **Alle Einstellungen auf Windows Phone 8.1 anwenden:** Diese Einstellung können Sie im klassischen Intune-Portal konfigurieren. Im Azure-Portal kann diese Einstellung nicht geändert werden. Wenn hierfür **Konfiguriert** festgelegt wird, werden sämtliche Einstellungen nur auf Windows Phone 8.1-Geräte angewendet. Wenn hierfür **Nicht konfiguriert** festgelegt wird, gelten diese Einstellungen auch für Windows 10 Mobile-Geräte.
+
 -   **App-Store:** Erlaubt Benutzern, über das Gerät eine Verbindung mit dem App Store herzustellen.
 
 ## <a name="restricted-apps"></a>Eingeschränkte Apps
-
--   **Alle Einstellungen auf Windows Phone 8.1 anwenden:** Diese Einstellung können Sie im klassischen Intune-Portal konfigurieren. Im Azure-Portal kann diese Einstellung nicht geändert werden. Wenn hierfür **Konfiguriert** festgelegt wird, werden sämtliche Einstellungen nur auf Windows Phone 8.1-Geräte angewendet. Wenn hierfür **Nicht konfiguriert** festgelegt wird, gelten diese Einstellungen auch für Windows 10 Mobile-Geräte.
 
 In der Liste der eingeschränkten Apps können Sie eine der folgenden Listen konfigurieren:
 
@@ -81,11 +79,11 @@ Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Da
 
 
 ## <a name="browser"></a>Browser
--   **Alle Einstellungen auf Windows Phone 8.1 anwenden:** Diese Einstellung können Sie im klassischen Intune-Portal konfigurieren. Im Azure-Portal kann diese Einstellung nicht geändert werden. Wenn hierfür **Konfiguriert** festgelegt wird, werden sämtliche Einstellungen nur auf Windows Phone 8.1-Geräte angewendet. Wenn hierfür **Nicht konfiguriert** festgelegt wird, gelten diese Einstellungen auch für Windows 10 Mobile-Geräte.
+
 -   **Webbrowser:** Erlaubt oder sperrt die Verwendung des integrierten Webbrowsers auf Geräten.
 
 ## <a name="cellular-and-connectivity"></a>Mobilfunk und Konnektivität
--   **Alle Einstellungen auf Windows Phone 8.1 anwenden:** Diese Einstellung können Sie im klassischen Intune-Portal konfigurieren. Im Azure-Portal kann diese Einstellung nicht geändert werden. Wenn hierfür **Konfiguriert** festgelegt wird, werden sämtliche Einstellungen nur auf Windows Phone 8.1-Geräte angewendet. Wenn hierfür **Nicht konfiguriert** festgelegt wird, gelten diese Einstellungen auch für Windows 10 Mobile-Geräte.
+
 -   **WLAN:** Aktiviert oder deaktiviert die WLAN-Funktionalität des Geräts.
 -   **WLAN-Tethering:** Erlaubt die Verwendung des WLAN-Tetherings auf dem Gerät.
 -   **Automatische Verbindung mit WLAN-Hotspots herstellen:** Erlaubt, dass das Gerät automatisch eine Verbindung mit unverschlüsselten WLAN-Hotspots herstellen und die Geschäftsbedingungen für die Verbindung automatisch akzeptieren kann.

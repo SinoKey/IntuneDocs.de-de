@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/06/2017
+ms.date: 07/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2063612ee11d2bc7915ebe4bb28c67854a2599c3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 44d1695b3f0297276376fb9cb4367c1411aa31b2
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="use-full-or-selective-wipe"></a>Verwenden des vollständigen oder selektiven Zurücksetzens
 
@@ -80,8 +80,8 @@ Beim **selektiven Zurücksetzen** werden die Unternehmensdaten und bei Bedarf au
 |Einstellungen für WLAN- und VPN-Profil|Entfernt.|
 |Zertifikatprofil-Einstellungen|Zertifikate werden entfernt und gesperrt.|
 |Verwaltungs-Agent|Das Verwaltungsprofil wird entfernt.|
-|E-Mail|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht. Wenn Microsoft Exchange lokal gehostet wird, werden E-Mail-Profile und zwischengespeicherte E-Mails nicht entfernt.|
-|Outlook|E-Mails, die über die Microsoft Outlook-App für iOS empfangen wurden, werden entfernt.</br>Ausnahme: Wenn Exchange lokal gehostet wird, werden E-Mails nicht entfernt.|
+|E-Mail|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|
+|Outlook|E-Mails, die über die Microsoft Outlook-App für iOS empfangen wurden, werden entfernt.|
 |Azure Active Directory (AAD)-Verbindung aufgehoben|AAD-Datensatz wird entfernt.|
 |Kontakte | Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.
 
@@ -99,7 +99,7 @@ Beim **selektiven Zurücksetzen** werden die Unternehmensdaten und bei Bedarf au
 |Zertifikatprofil-Einstellungen|Zertifikate gesperrt, aber nicht entfernt.|Zertifikate wurden entfernt und gesperrt.|
 |Verwaltungs-Agent|Die Berechtigung „Geräteadministrator“ wird gesperrt.|Die Berechtigung „Geräteadministrator“ wird gesperrt.|
 |E-Mail|n/v (E-Mail-Profile werden von Android-Geräten nicht unterstützt.)|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|
-|Outlook|E-Mails, die über die Microsoft Outlook-App für Android empfangen wurden, werden entfernt.</br>Ausnahme: Wenn Exchange lokal gehostet wird, werden E-Mails nicht entfernt.|E-Mails, die über die Microsoft Outlook-App für Android empfangen wurden, werden entfernt.</br>Ausnahme: Wenn Exchange lokal gehostet wird, werden E-Mails nicht entfernt.|
+|Outlook|E-Mails, die über die Microsoft Outlook-App für Android empfangen wurden, werden entfernt.|E-Mails, die über die Microsoft Outlook-App für Android empfangen wurden, werden entfernt.|
 |Azure Active Directory (AAD)-Verbindung aufgehoben|AAD-Datensatz wird entfernt.|AAD-Datensatz wird entfernt.|
 |Kontakte | Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.|Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.
 
@@ -115,7 +115,7 @@ Das selektive Zurücksetzen auf Android for Work-Geräten entfernt alle Daten, A
 |Einstellungen|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|
 |Einstellungen für WLAN- und VPN-Profil|Entfernt.|Entfernt.|Nicht unterstützt.|Entfernt.|
 |Zertifikatprofil-Einstellungen|Zertifikate wurden entfernt und gesperrt.|Zertifikate wurden entfernt und gesperrt.|Nicht unterstützt.|Zertifikate wurden entfernt und gesperrt.|
-|E-Mail|Entfernt EFS-aktivierte E-Mails, darunter die E-Mail-App für Windows-E-Mails und -Anlagen.|Nicht unterstützt.|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|Entfernt EFS-aktivierte E-Mails, darunter die E-Mail-App für Windows-E-Mails und -Anlagen. Entfernt E-Mail-Konten, die von Intune bereitgestellt wurden.</br>**Ausnahme**: Wenn Microsoft Exchange lokal gehostet wird, werden E-Mail-Konten nicht entfernt.|
+|E-Mail|Entfernt EFS-aktivierte E-Mails, darunter die E-Mail-App für Windows-E-Mails und -Anlagen.|Nicht unterstützt.|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|Entfernt EFS-aktivierte E-Mails, darunter die E-Mail-App für Windows-E-Mails und -Anlagen. Entfernt E-Mail-Konten, die von Intune bereitgestellt wurden.|
 |Azure Active Directory (AAD)-Verbindung aufgehoben|Nein.|Nein.|AAD-Datensatz wird entfernt.|Nicht zutreffend. Windows 10 unterstützt kein selektives Zurücksetzen für Geräte, die in Azure Active Directory eingebunden wurden.|
 
 **So führen Sie eine selektive Zurücksetzung durch**
