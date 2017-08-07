@@ -8,9 +8,7 @@
 ### [Änderungen an der App-Benutzeroberfläche](whats-new-app-ui.md)
 ### [Archiv der Neuerungen (Azure-Portal)](whats-new-archive.md)
 ### [Archiv der Neuerungen (klassisches Portal)](whats-new-archive-classic.md)
-
-<!--## High-level architecture-->
-
+## [Grundlegende Architektur](high-level-architecture.md)
 ## [Lebenszyklen von Geräten und Apps](introduction-device-app-lifecycles.md)
 ### [Gerätelebenszyklus](device-lifecycle.md)
 ### [App-Lebenszyklus](app-lifecycle.md)
@@ -264,6 +262,8 @@
 
 # Überwachung und Problembehandlung
 ## [Verwenden der Rolle „Helpdeskoperator“](help-desk-operators.md)
+## [Verwenden des Data Warehouse von Intune](reports-nav-create-intune-reports.md)
+### [Verbinden mit dem Data Warehouse mit Power BI](reports-proc-get-a-link-powerbi.md)
 
 # Entwickeln und Anpassen
 ## [Konfigurieren von benutzerdefinierten Geräteeinstellungen](custom-settings-configure.md)
@@ -288,5 +288,16 @@
 ### [Intune App SDK-Xamarin-Komponente](app-sdk-xamarin.md)
 ## [Gewusst wie: Verwenden der Intune Graph-APIs](intune-graph-apis.md)
 ## [Intune Graph-API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+## [Date Warehouse-API von Intune](reports-nav-intune-date-warehouse.md)
+<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Endpunkt der Data Warehouse-API](reports-api-url.md)
+### [Datenmodell von Data Warehouse](reports-ref-data-model.md)
+#### [Verweis für die Datumsentität](reports-ref-date.md)
+#### [Verweis für die Benutzerentität](reports-ref-user.md)
+#### [Verweis für MAM-Entitäten (Verwaltung mobiler Apps)](reports-ref-mobile-app-management.md)
+#### [Verweis für Geräteentitäten](reports-ref-devices.md)
+#### [Verweis für Anwendungsentitäten](reports-ref-application.md)
+#### [Verweis für Richtlinienentitäten](reports-ref-policy.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [Glossar](intune-glossary.md)
