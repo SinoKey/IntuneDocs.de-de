@@ -14,11 +14,11 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 205c9c52759d5fee2429fe46d19c8882aacafa7a
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Schützen von branchenspezifischen Apps und Daten auf nicht in Microsoft Intune registrierten Geräten
 
@@ -31,7 +31,7 @@ In diesem Thema werden die erforderlichen Schritte zum Anwenden von MAM-Richtlin
 
 ##  <a name="step-1-prepare-the-app"></a>Schritt 1: Vorbereiten der App
 
-Bevor Sie MAM-Richtlinien auf eine App anwenden können, müssen Sie die App zuerst mit dem Microsoft Intune App Wrapping Tool für [iOS](prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android) umschließen oder das [Intune App SDK](/intune/app-sdk) verwenden, um die Schutzfunktionen der Intune-App manuell zu integrieren.
+Bevor Sie MAM-Richtlinien auf eine App anwenden können, müssen Sie die App zuerst mit dem Microsoft Intune App Wrapping Tool für [iOS](/intune/app-wrapper-prepare-ios) und [Android](/intune/app-wrapper-prepare-android) umschließen, oder das [Intune App SDK](/intune/app-sdk) verwenden, um die Schutzfunktionen der Intune-App manuell zu integrieren.
 
 Weitere Informationen zur Entscheidung zwischen dem App Wrapping Tool und dem SDK finden Sie unter [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 

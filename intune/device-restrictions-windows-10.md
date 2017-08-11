@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3819042d3b6e7236506c288156f98a0e55c15ea
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Windows 10 und höher in Microsoft Intune
 
@@ -43,14 +43,9 @@ ms.lasthandoff: 07/01/2017
 -   **Zurücksetzung des Telefons:** Steuert, ob Benutzer ihre Geräte auf die Werkseinstellungen zurücksetzen können.
 -   **USB-Verbindung (nur Mobilgerät):** Steuert, ob Geräte über eine USB-Verbindung auf externe Speichergeräte zugreifen können.
 -   **AntiTheft-Modus (nur Mobilgerät)**: Konfigurieren Sie, ob der Windows-AntiTheft-Modus aktiviert ist.
--   **Info-Center-Benachrichtigungen (nur Mobilgerät)** – Aktivieren oder deaktivieren Sie Info-Center-Benachrichtigungen auf dem Gerätesperrbildschirm (nur Windows 10 Mobile).
 -   **Cortana:** Aktiviert oder deaktiviert den Cortana-Sprach-Assistenten.
 -   **Sprachaufzeichnung (nur Mobilgerät):** Erlaubt oder sperrt die Verwendung der Sprachaufzeichnung des Geräts.
--   **Änderung der Energie- und Energiesparmoduseinstellungen (nur Desktop):** Verhindert, dass der Endbenutzer Energie- und Energiesparmoduseinstellungen auf dem Gerät ändert.
--   **Änderung von Regionseinstellungen (nur Desktop):** Verhindert, dass der Endbenutzer Regionseinstellungen auf dem Gerät ändert.
--   **Änderung der Spracheinstellungen (nur Desktop):** Verhindert, dass der Benutzer Spracheinstellungen auf dem Gerät ändert.
--   **Änderung der Systemzeit:** Verhindert, dass der Endbenutzer auf dem Gerät Datum und Uhrzeit ändert.
--   **Bearbeitung des Gerätenamens:** Verhindert, dass der Endbenutzer den Gerätenamen ändert.
+-   **Bearbeitung des Gerätenamens:** Verhindert, dass der Endbenutzer den Gerätenamen ändert (nur Windows 10 Mobile).
 -   **Bereitstellungspakete hinzufügen:** Blockiert den Laufzeitkonfigurations-Agent, der Bereitstellungspakete installiert.
 -   **Bereitstellungspakete entfernen:** Blockiert den Laufzeitkonfigurations-Agent, der Bereitstellungspakete entfernt.
 -   **Geräteerkennung:** Verhindert, dass ein Gerät von anderen Geräten erkannt wird.
@@ -67,7 +62,7 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
     -   **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung:** Gibt den Zeitraum der Inaktivität für ein Gerät an, bevor der Bildschirm gesperrt wird.
     -   **Kennwortablauf (Tage):** Gibt die Zeitdauer an, nach der das Kennwort für das Gerät geändert werden muss.
     -   **Wiederverwendung vorheriger Kennwörter verhindern:** Gibt an, wie viele zuvor verwendete Kennwörter vom Gerät gespeichert werden.
-    -   **Kennwort anfordern, wenn Gerät aus Leerlaufzustand zurückkehrt:** Gibt an, dass der Benutzer ein Kennwort zum Entsperren des Geräts eingeben muss (nur Windows 10 Mobile).
+    -   **Kennwort anfordern, wenn Gerät aus Leerlaufzustand zurückkehrt (nur Mobile):** Gibt an, dass der Benutzer ein Kennwort zum Entsperren des Geräts eingeben muss (nur Windows 10 Mobile).
     -   **Einfache Kennwörter:** Erlaubt die Verwendung einfacher Kennwörter wie 1111 oder 1234. Diese Einstellung ermöglicht es auch, die Verwendung von Windows-Bildcodes zu blockieren.
 -   **Verschlüsselung:** Erlaubt die Verschlüsselung auf Zielgeräten (nur Windows 10 Mobile).
 
@@ -105,6 +100,7 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
 -   **App-Daten in Systemvolume installieren:** Hindert Apps daran, Daten auf dem Systemvolume des Geräts zu speichern.
 -   **Apps auf Systemlaufwerk installieren:** Hindert Apps daran, Daten auf dem Systemlaufwerk des Geräts zu speichern.
 -   **Game DVR (nur Desktop):** Konfiguriert, ob Aufzeichnen und Senden von Spielen zulässig ist.
+-   **Apps nur aus dem Store)**: Konfiguriert, ob Benutzer Apps von anderen Orten als aus dem App-Store installieren können.
 
 
 
@@ -112,7 +108,6 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
 -   **Microsoft Edge-Browser (nur mobil):** Erlaubt die Verwendung des Edge-Webbrowsers auf dem Gerät.
 -   **Adressleisten-Dropdown (nur Desktop):** Verhindert, dass Edge bei der Eingabe weiterhin eine Liste mit Vorschlägen in einer Dropdownliste anzeigt. So kann die zwischen Edge und Microsoft-Diensten genutzte Netzwerkbandbreite minimiert werden.
 -   **Favoriten zwischen Microsoft-Browsern synchronisieren (nur Desktop):** Erlaubt Windows das Synchronisieren von Favoriten zwischen Internet Explorer und Edge.
--   **SmartScreen:** Aktiviert oder deaktiviert den SmartScreen, durch den betrügerische Websites blockiert werden.
 -   **DNT-Kopfzeilen senden:** Konfiguriert den Edge-Browser zum Senden von DNT-Headern (Do Not Track, nicht nachverfolgen) an Websites, die Benutzer besuchen.
 -   **Cookies:** Erlaubt Browsern das Speichern von Internetcookies auf dem Gerät.
 -   **Javascript:** Erlaubt die Ausführung von Skripts wie z.B. JavaScript im Edge-Browser.
@@ -130,13 +125,16 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
 -   **Startseiten:** Fügt eine Liste der Websites hinzu, die Sie im Edge-Browser als Startseiten verwendet möchten (nur Desktop).
 -   **Änderungen an Startseite:** Ermöglicht Benutzern das Ändern der Startseiten, die beim Öffnen von Edge angezeigt werden. Nutzen Sie die Einstellung der Startseiten, um die Seite oder Liste von Seiten zu erstellen, die beim Starten von Edge geöffnet werden.
 -   **Zugriff auf about:flags-Seite blockieren:** Hindert den Benutzer am Zugriff auf die about:flags-Seite in Edge, die Entwicklungs- und experimentelle Einstellungen enthält.
--   **SmartScreen-Aufforderung außer Kraft setzen:** Ermöglicht dem Endbenutzer, SmartScreen-Filterwarnungen zu potenziell bösartigen Websites zu umgehen.
--   **SmartScreen-Aufforderung für Dateien außer Kraft setzen:** Ermöglicht dem Endbenutzer, SmartScreen-Filterwarnungen zum Herunterladen potenziell bösartiger Dateien zu umgehen.
 -   **WebRTC-LocalHost-IP-Adresse:** Blockiert die Anzeige der Localhost-IP-Adresse des Benutzers bei Anrufen über das Internet-RTC-Protokoll.
 -   **Standardsuchmodul:** Gibt das zu verwendende Standardsuchmodul an. Endbenutzer können diesen Wert jederzeit ändern.
 -   **Browserdaten beim Beenden löschen:** Löscht Verlauf und Browserdaten, wenn der Benutzer Edge beendet.
 -   **Datenerfassung für Livekacheln:** Beendet das Sammeln von Daten durch Windows aus den Livekacheln, wenn der Benutzer eine Seite an das Startmenü von Edge anheften.
 
+## <a name="edge-browser-smartscreen"></a>Edge-Browser SmartScreen
+
+-   **SmartScreen:** Aktiviert oder deaktiviert den SmartScreen, durch den betrügerische Websites blockiert werden.
+-   **SmartScreen-Aufforderung außer Kraft setzen:** Ermöglicht dem Endbenutzer, SmartScreen-Filterwarnungen zu potenziell bösartigen Websites zu umgehen.
+-   **SmartScreen-Aufforderung für Dateien außer Kraft setzen:** Ermöglicht dem Endbenutzer, SmartScreen-Filterwarnungen zum Herunterladen potenziell bösartiger Dateien zu umgehen.
 
 ## <a name="search"></a>Suchen
 - **SafeSearch (nur Mobilgeräte):** Steuert, wie Cortana nicht jugendfreie Inhalte in den Suchergebnissen filtert. Sie können **Streng** oder **Mittel** auswählen oder dem Endbenutzer ermöglichen, seine eigenen Einstellungen zu wählen.
@@ -156,7 +154,6 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
 -   **Bluetooth-Erkennbarkeit:** Ermöglicht die Erkennung dieses Geräts durch andere Bluetooth-Geräte.
 -   **Bluetooth-Vorabkopplung:** Ermöglicht das Konfigurieren spezifischer Bluetooth-Geräte für automatisches Koppeln mit einem Hostgerät.
 -   **Bluetooth-Werbung:** Ermöglicht das Empfangen von Werbung per Bluetooth durch das Gerät.
--   **Bluetooth-Gerätename:** Ermöglicht es, den Bluetooth-Namen für ein Gerät anzugeben. Wenn Sie keinen Namen angeben, wird der Standardgerätename verwendet.
 -   **Dienst für verbundene Geräte:** Ermöglicht die Entscheidung, ob dem Dienst für verbundene Geräte die Ermittlung von und Verbindung mit anderen Bluetooth-Geräten erlaubt wird.
 -   **NFC:** Erlaubt dem Benutzer das Aktivieren und Konfigurieren von Funktionen, die NFC (Near Field Communication, Nahfeldkommunikation) verwenden, auf dem Gerät.
 -   **WLAN:** Erlaubt dem Benutzer das Aktivieren und Konfigurieren von WLAN auf dem Gerät (nur Windows 10 Mobile).
@@ -170,11 +167,16 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
 
 -   **App „Einstellungen“:** Blockiert den Zugriff auf die Windows-Einstellungen-App.
     -   **System:** Blockiert den Zugriff auf den Systembereich der Einstellungen-App.
+        -   **Änderung der Energie- und Energiesparmoduseinstellungen (nur Desktop):** Verhindert, dass der Endbenutzer Energie- und Energiesparmoduseinstellungen auf dem Gerät ändert.
     -   **Geräte:** Blockiert den Zugriff auf den Gerätebereich der Einstellungen-App.
     -   **Netzwerk und Internet:** Blockiert den Zugriff auf den Netzwerk- und Internet-Bereich der Einstellungen-App.
     -   **Personalisierung:** Blockiert den Zugriff auf den Personalisierungsbereich der Einstellungen-App.
     -   **Konten:** Blockiert den Zugriff auf den Kontenbereich der Einstellungen-App.
     -   **Zeit und Sprache:** Blockiert den Zugriff auf den Zeit- und Sprachenbereich der Einstellungen-App.
+        -   **Änderung der Systemzeit:** Verhindert, dass der Endbenutzer auf dem Gerät Datum und Uhrzeit ändert.
+        -   **Änderung von Regionseinstellungen (nur Desktop):** Verhindert, dass der Endbenutzer Regionseinstellungen auf dem Gerät ändert.
+        -   **Änderung der Spracheinstellungen (nur Desktop):** Verhindert, dass der Benutzer Spracheinstellungen auf dem Gerät ändert.
+    -   **Gaming**: Blockiert den Zugriff auf die Gaming-App in den Einstellungen.
     -   **Erleichterte Bedienung:** Blockiert den Zugriff auf den Bereich „Erleichterte Bedienung“ der Einstellungen-App.
     -   **Datenschutz:** Blockiert den Zugriff auf den Datenschutzbereich der Einstellungen-App.
     -   **Update und Sicherheit:** Blockiert den Zugriff auf den Update- und Sicherheitsbereich der Einstellungen-App.
@@ -237,17 +239,17 @@ Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefunden
 ## <a name="windows-spotlight"></a>Windows-Blickpunkt
 
 
-- Windows-Blickpunkt: Verwenden Sie diese Einstellung, um auf Windows 10-Geräten alle Funktionen von Windows-Blickpunkt zu blockieren. Wenn Sie diese Einstellung blockieren, sind die folgenden Einstellungen nicht verfügbar.
+- **Windows-Blickpunkt:** Verwenden Sie diese Einstellung, um auf Windows 10-Geräten alle Funktionen von Windows-Blickpunkt zu blockieren. Wenn Sie diese Einstellung blockieren, sind die folgenden Einstellungen nicht verfügbar.
     - **Windows-Blickpunkt auf dem Sperrbildschirm:** Verhindert, dass Windows-Blickpunkt Informationen auf dem Gerätesperrbildschirm anzeigt.
     - **Drittanbietervorschläge in Windows-Blickpunkt:** Verhindert, dass Windows-Blickpunkt Inhalte vorschlägt, die nicht von Microsoft stammen.
-    - **Windows-Tipps:** Blockiert die Anzeige von Popuptipps in Windows.
     - **Endbenutzerfeatures:** Blockiert Endbenutzerfeatures wie Startmenüvorschläge und Mitgliedschaftsbenachrichtigungen.
+    - **Windows-Tipps:** Blockiert die Anzeige von Popuptipps in Windows.
     - **Windows-Blickpunkt im Info-Center:** Verhindert, dass Vorschläge von Windows-Blickpunkt wie neue Apps oder Sicherheitsinhalte im Windows-Info-Center angezeigt werden.
     - **Personalisierung von Windows-Blickpunkt:** Verhindert, dass Windows-Blickpunkt Ergebnisse basierend auf der Nutzung eines Geräts personalisiert.
     - **Windows-Begrüßungsseite:** Blockiert die Windows-Begrüßungsseite, die dem Benutzer Informationen zu neuen oder aktualisierten Funktionen anzeigt.
 
 
-## <a name="display"></a>Anzeige
+## <a name="projection"></a>Projektion
 
 - **Benutzereingabe über Empfänger der drahtlosen Anzeige:** Blockiert Benutzereingaben über Empfänger der drahtlosen Anzeige.
 - **Projektion auf diesem PC:** Verhindert, dass andere Geräte den PC für die Projektion erkennen.

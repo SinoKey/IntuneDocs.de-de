@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,43 +15,51 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 654a19dd6f1e5f4fd2bda771b0df95b87944db75
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: d88d191e3212e1999376fb2577a85c3dc957a787
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/03/2017
 ---
-# <a name="set-up-ios-device-enrollment-with-device-enrollment-program"></a>Einrichten der Registrierung von iOS-Geräten mithilfe des Programms zur Geräteregistrierung
+# <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Dieses Thema unterstützt IT-Administratoren dabei, die iOS-Geräteregistrierung für Geräte zu aktivieren, die über das [Programm zur Geräteregistrierung (Device Enrollment Program, DEP)](https://deploy.apple.com) von Apple erworben wurden. Microsoft Intune kann ein Registrierungsprofil für Geräte, die über DEP erworben wurden, auch „drahtlos“ bereitstellen. Der Administrator muss nicht jedes einzelne verwaltete Gerät physisch konfigurieren. Ein DEP-Profil enthält Verwaltungseinstellungen, die während der Registrierung auf Geräte angewendet werden, einschließlich Optionen für den Setup-Assistenten.
+Dieses Thema unterstützt Sie dabei, die iOS-Geräteregistrierung für Geräte zu aktivieren, die über das [Programm zur Geräteregistrierung (Device Enrollment Program, DEP)](https://deploy.apple.com) von Apple erworben wurden. Sie können die Registrierung des Programms zur Geräteregistrierung für eine große Anzahl von Geräten aktivieren, ohne diese auch nur zu berühren. Sie können Geräte wie iPhones und iPad direkt an Benutzer versenden. Wenn der Benutzer das Gerät anschaltet, wird der Setup-Assistent mit vordefinierten Einstellungen ausgeführt, und das Gerät wird für die Verwaltung registriert.
 
-Zur Aktivierung der DEP-Registrierung können Sie sowohl das Intune-Portal als auch das Apple DEP-Portal verwenden. Sie benötigen auch eine Liste von IDs oder Bestellnummern, um sie Intune zur Verwaltung im Apple-Portal zuweisen zu können.
+Zur Aktivierung der DEP-Registrierung können Sie sowohl das Intune-Portal als auch das Apple DEP-Portal verwenden. Sie benötigen auch eine Liste von Seriennummern oder eine Bestellnummer, um Geräte in Intune zur Verwaltung zuweisen zu können. Sie erstellen DEP-Registrierungsprofile, die Einstellungen enthalten, die für Geräte während der Registrierung gelten.
 
->[!NOTE]
->Die Registrierung mit DEP kann nicht mit dem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md) verwendet werden.
+Die Registrierung mit DEP funktioniert übrigens nicht mit dem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md).
 
-**Schritte zum Aktivieren der Registrierungsprogramme von Apple**
-1. [Abrufen eines Apple-DEP-Tokens und Zuweisen von Geräten](#get-the-apple-dep-token)
-2. [Erstellen eines Anmeldungsprofils](#create-an-apple-enrollment-profile)
-3. [Synchronisieren von DEP-verwalteten Geräten](#sync-managed-device)
-4. [Zuweisen des DEP-Profils zu Geräten](#assign-an-enrollment-profile-to-devices)
-5. [Verteilen von Geräten an Benutzer](#end-user-experience-with-managed-devices)
+<!--
+**Steps to enable enrollment programs from Apple**
+1. [Get an Apple DEP token and assign devices](#get-the-apple-dep-token)
+2. [Create an enrollment profile](#create-an-apple-enrollment-profile)
+3. [Synchronize DEP-managed devices](#sync-managed-device)
+4. [Assign DEP profile to devices](#assign-an-enrollment-profile-to-devices)
+5. [Distribute devices to users](#end-user-experience-with-managed-devices)
+-->
+## <a name="prerequisites"></a>Voraussetzungen
+- Geräte, die unter dem [Programm zur Geräteregistrierung von Apple](http://deploy.apple.com) erworben werden.
+- [MDM-Autorität](mdm-authority-set.md)
+- [Apple-MDM-Push-Zertifikat](apple-mdm-push-certificate-get.md)
+- Benutzeraffinität erfordert [den Endpunkt WS-Trust 13 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints). [Erfahren Sie mehr](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+
+> [!NOTE]
+> Mehrstufige Authentifizierung (Multifactor authentication, MFA) funktioniert nicht während der Einrichtung der DEP-Registrierung mit Benutzeraffinität. Nach der Registrierung funktioniert die MFA auf Geräten wie erwartet. Geräte können Benutzer nicht dazu auffordern, ihr Kennwort zu ändern, wenn sie sich zum ersten Mal anmelden. Außerdem werden Benutzer, deren Kennwörter abgelaufen sind, während der Registrierung nicht aufgefordert, ihr Kennwort zurückzusetzen. Benutzer müssen ihr Kennwort auf einem anderen Gerät zurücksetzen.
 
 ## <a name="get-the-apple-dep-token"></a>Abrufen des Apple-DEP-Tokens
 
-Bevor Sie unternehmenseigene iOS-Geräte mit dem Apple-Programm zur Geräteregistrierung (Device Enrollment Program, DEP) registrieren können, benötigen Sie eine DEP-Tokendatei (P7M) von Apple. Mit diesem Token kann Intune Informationen zu DEP-Geräten synchronisieren, die Ihrem Unternehmen gehören. Damit kann Intune außerdem Registrierungsprofile an Apple übermitteln und diesen Profilen Geräte zuweisen.
+Bevor Sie iOS-Geräte mit DEP registrieren können, benötigen Sie ein DEP-Token-Datei (.p7m) von Apple. Mit diesem Token kann Intune Informationen zu DEP-Geräten synchronisieren, die Ihrem Unternehmen gehören. Damit kann Intune außerdem Registrierungsprofile zu Apple hochladen und diesen Profilen Geräte zuweisen.
+
+Verwenden Sie das Apple DEP-Portal, um ein DEP-Token zu erstellen. Sie verwenden das DEP-Portal auch, um in Intune Geräte für die Verwaltung zuzuweisen.
 
 > [!NOTE]
 > Wenn Sie das Token aus der klassischen Intune-Konsole vor der Migration zu Azure löschen, stellt Intune womöglich ein gelöschtes Apple DEP-Token wieder her. Sie können das DEP-Token erneut aus dem Azure-Portal löschen. Sie können das DEP-Token erneut aus dem Azure-Portal löschen.
 
-**Voraussetzungen**
-- [Apple-MDM-Push-Zertifikat](apple-mdm-push-certificate-get.md)
-- Registrierung für die Teilnahme am [Apple-Programm zur Geräteregistrierung](http://deploy.apple.com) durchgeführt
-
 **Schritt 1: Laden Sie ein Intune-Zertifikat mit öffentlichem Schlüssel herunter, das zum Erstellen eines Apple-DEP-Tokens erforderlich ist.**<br>
-1. Wählen Sie im Intune-Portal die Optionen **Geräteregistrierung**, **Apple-Registrierung** und dann **Registrierungsprogrammtoken** aus.
+
+1. Wählen Sie in Intune im Azure-Portal die Optionen **Geräteregistrierung** > **Apple Registrierung** > **Registrierungsprogrammtoken** aus.
 
   ![Screenshot des Bereichs „Registrierungsprogrammtoken“ im Arbeitsbereich „Apple-Zertifikate“](./media/enrollment-program-token-add.png)
 
@@ -61,13 +69,7 @@ Bevor Sie unternehmenseigene iOS-Geräte mit dem Apple-Programm zur Geräteregis
 
 **Schritt 2: Erstellen Sie ein Apple-DEP-Token und laden Sie es herunter.**<br>
 1. Wählen Sie **Create a token via Apple's Device Enrollment Program** (Token über das Programm zur Geräteregistrierung von Apple erstellen) aus, um das Portal des Bereitstellungsprogramms von Apple zu öffnen. Melden Sie sich mit der Apple-ID Ihres Unternehmens an. Diese Apple-ID kann später zum Erneuern Ihres DEP-Token verwendet werden.
-
-  ![Screenshot des Bereichs „Registrierungsprogrammtoken“ im Arbeitsbereich „Apple-Zertifikate“](./media/enrollment-program-token-create.png)
-
-  ![Screenshot des Bereichs „Registrierungsprogrammtoken“ im Arbeitsbereich „Apple-Zertifikate“ zum Herunterladen des öffentlichen Schlüssels](./media/enrollment-program-token-sign.png)
 2.  Wählen Sie im [Portal des Bereitstellungsprogramms](https://deploy.apple.com) von Apple die Option **Erste Schritte** für das **Programm zur Geräteregistrierung** aus.
-
-   ![Screenshot des Registrierungsprogramms bei Klick auf „Erste Schritte“ für das Programm zur Geräteregistrierung](./media/enrollment-program-token-started.png)
 
 3. Wählen Sie auf der Seite **Server verwalten** die Option **MDM-Server hinzufügen** aus.
 4. Geben Sie den **MDM-Servernamen** ein, und wählen Sie anschließend **Weiter** aus. Der Servername dient als Referenz zum Identifizieren des MDM-Servers (mobile device management, Verwaltung mobiler Geräte). Es handelt sich nicht um den Namen oder die URL des Microsoft Intune-Servers.
@@ -76,9 +78,8 @@ Bevor Sie unternehmenseigene iOS-Geräte mit dem Apple-Programm zur Geräteregis
 
 5. Das Dialogfeld **&lt;Servername&gt; hinzufügen** wird geöffnet, und die Meldung **Laden Sie Ihren öffentlichen Schlüssel hoch** wird angezeigt. Wählen Sie **Datei auswählen** aus, um die PEM-Datei hochzuladen, und wählen Sie anschließend **Weiter** aus.
 
-   ![Screenshot der Schaltfläche der öffentlichen Schlüsseldatei und Klick auf „Weiter“](./media/enrollment-program-token-choose-file.png)
 6.  Im Dialogfeld **&lt;Servername&gt; hinzufügen** wird der Link **Ihr Servertoken** angezeigt. Laden Sie die Servertokendatei (.p7m) auf Ihren Computer herunter, und wählen Sie anschließend **Fertig** aus.
-   ![Screenshot der Schaltfläche der öffentlichen Schlüsseldatei und Klick auf „Weiter“](./media/enrollment-program-token-your-token.png)
+
 7. Wechseln Sie zu **Bereitstellungsprogramme** &gt; **Programm zur Geräteregistrierung** &gt; **Geräte verwalten**.
 8. Geben Sie unter **Geräte auswählen nach** an, wie die Geräte identifiziert werden sollen:
     - **Seriennummer**
@@ -87,11 +88,11 @@ Bevor Sie unternehmenseigene iOS-Geräte mit dem Apple-Programm zur Geräteregis
 
    ![Screenshot bei Festlegen von „Geräte auswählen nach“ auf „Seriennummer“, der Einstellung „Aktion auswählen“ auf „Zu Server zuweisen“ und der Auswahl des Servernamens.](./media/enrollment-program-token-specify-serial.png)
 
-9. Wählen Sie unter **Aktion auswählen** die Option **Zu Server zuweisen** aus. Wählen Sie den für Microsoft Intune angegebenen &lt;Servernamen&gt; aus, und klicken Sie dann auf **OK**. Das Apple-Portal weist die angegebenen Geräte dem Intune-Server für die Verwaltung zu und zeigt dann **Zuweisung abgeschlossen** an.
+9. Wählen Sie als Nächstes für **Aktion auswählen** die Option **Zu Server zuweisen** aus. Wählen Sie den für Microsoft Intune angegebenen &lt;Servernamen&gt; und anschließend **OK** aus. Das Apple-Portal weist die angegebenen Geräte dem Intune-Server für die Verwaltung zu und zeigt dann **Zuweisung abgeschlossen** an.
 
    Wechseln Sie im Apple-Portal zu **Bereitstellungsprogramme** &gt; **Programm zur Geräteregistrierung** &gt; **Zuweisungsverlauf anzeigen**, um eine Liste der Geräte und ihre MDM-Server-Zuordnung anzuzeigen.
 
-**Schritt 3: Geben Sie die zum Erstellen Ihres Registrierungsprogrammtokens verwendete Apple-ID ein.**<br>Geben Sie im Intune-Portal für die zukünftige Verwendung Ihre Apple-ID an. Verwenden Sie diese ID zur Erneuerung Ihres Registrierungsprogrammtokens, damit Sie nicht alle Geräte erneut registrieren müssen.
+**Schritt 3: Geben Sie die zum Erstellen Ihres Registrierungsprogrammtokens verwendete Apple-ID ein.**<br>Geben Sie in Intune im Azure-Portal für die zukünftige Verwendung Ihre Apple-ID an. Verwenden Sie diese ID zur zukünftigen Erneuerung Ihres Registrierungsprogrammtokens, damit Sie nicht alle Geräte erneut registrieren müssen.
 
 ![Screenshot der Angabe der Apple-ID zur Erstellung des Registrierungsprogrammtokens und Navigieren zu diesem Token](./media/enrollment-program-token-apple-id.png)
 
@@ -100,27 +101,17 @@ Wechseln Sie zur Zertifikatsdatei (.pem), wählen Sie **Öffnen** aus, und wähl
 
 ## <a name="create-an-apple-enrollment-profile"></a>Erstellen eines Apple-Registrierungsprofils
 
-Ein Geräteregistrierungsprofil definiert die Einstellungen, die während der Registrierung auf eine Gruppe von Geräten angewendet werden.
+Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil für DEP-Geräte erstellen. Ein Geräteregistrierungsprofil definiert die Einstellungen, die während der Registrierung auf eine Gruppe von Geräten angewendet werden.
 
-1. Wählen Sie im Intune-Portal nacheinander die Optionen **Geräteregistrierung** und **Apple-Registrierung** aus.
-2. Wählen Sie unter **Apple-Registrierungsprogramm** die Option **Profile des Registrierungsprogramms** aus, und wählen Sie dann auf dem Blatt **Profile des Registrierungsprogramms** die Option **Erstellen** aus.
+1. Wählen Sie in Intune im Azure-Portal die Optionen **Geräteregistrierung** > **Apple Registrierung** aus.
+2. Wählen Sie unter **Registrierungsprogramm für Apple**  den Eintrag **Profile des Registrierungsprogramms** > **Erstellen** aus.
+3. Geben Sie unter **Registrierungsprofil erstellen** einen **Namen** und eine **Beschreibung** für das Profil zu administrativen Zwecken ein. Benutzer können diese Informationen nicht sehen. Sie können das Feld **Name** zum Erstellen einer dynamischen Gruppe in Azure Active Directory verwenden. Verwenden Sie den Profilnamen, um den Parameter „enrollmentProfileName“ zu definieren, um Geräte mit diesem Registrierungsprofil zuzuweisen. Erfahren Sie mehr über [dynamische Gruppen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
-  ![Screenshot des ausgewählten Links „Erstellen“ zum Erstellen eines neuen Profils des Registrierungsprogramms](./media/enrollment-program-profile-create.png)
+  Wählen Sie für **Benutzeraffinität** aus, ob Geräte mit diesem Profil mit oder ohne einen zugewiesenen Benutzer registriert werden.
 
-3. Geben Sie auf dem Blatt **Registrierungsprofil erstellen** einen **Namen** und eine **Beschreibung** für das Profil zu administrativen Zwecken ein. Benutzer können diese Informationen nicht sehen.
+ - **Mit Benutzeraffinität registrieren**: Wählen Sie diese Option für Geräte aus, die Benutzern gehören und das Unternehmensportal verwenden müssen, um Dienste wie z.B. die Installation von Apps nutzen zu können.
 
-  ![Screenshot der Angabe von „Name“ und „Beschreibung“ sowie der Auswahl „Mit Benutzeraffinität registrieren“ für ein neues Profil des Registrierungsprogramms](./media/enrollment-program-profile-name.png)
-Wählen Sie für **Benutzeraffinität** aus, ob Geräte mit diesem Profil mit oder ohne Benutzeraffinität registriert werden.
-
- - **Mit Benutzeraffinität registrieren:** Ein Benutzer muss während der Installation Geräten zugewiesen werden und kann dann die Berechtigung erhalten, auf Daten und E-Mails des Unternehmens zuzugreifen. Wählen Sie die **Benutzeraffinität** für Geräte aus, die Benutzern gehören und das Unternehmensportal verwenden müssen, um Dienste wie z.B. die Installation von Apps nutzen zu können.
-
- > [!NOTE]
- > Mehrstufige Authentifizierung (Multifactor authentication, MFA) funktioniert nicht während der Registrierung auf Geräten mit Benutzeraffinität, die mit einem Registrierungsprogramm verwaltet werden. Nach der Registrierung funktioniert die MFA auf diesen Geräten wie erwartet. Neue Benutzer, die bei der ersten Anmeldung ihr Kennwort ändern müssen, können während der Registrierung auf den Geräten nicht aufgefordert werden. Außerdem werden Benutzer, deren Kennwörter abgelaufen sind, während der Registrierung nicht aufgefordert, ihr Kennwort zurückzusetzen; sie müssen ihr Kennwort von einem anderen Gerät aus zurücksetzen.
-
- >[!NOTE]
- >Für die Verwaltung von Registrierungsprogrammen mit Benutzeraffinität muss der [Endpunkt WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints) aktiviert sein, um Benutzertoken anzufordern. [Erfahren Sie mehr über WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
-
- - **Ohne Benutzeraffinität registrieren:** Das Gerät ist keinem Benutzer zugeordnet. Verwenden Sie diese Zuweisung für Geräte, die Aufgaben ohne den Zugriff auf lokale Benutzerdaten ausführen. Apps, die eine Benutzerzugehörigkeit erfordern (einschließlich der Unternehmensportal-App, die für die Installation branchenspezifischer Apps verwendet wird), funktionieren nicht.
+ - **Ohne Benutzeraffinität registrieren**: Wählen Sie diese Option für ein Gerät aus, das an keinen Benutzer angeschlossen ist. Verwenden Sie diese Zuweisung für Geräte, die Aufgaben ohne den Zugriff auf lokale Benutzerdaten ausführen. Apps wie die Unternehmensportal-App funktionieren nicht.
 
 4. Wählen Sie **Geräteverwaltungseinstellungen** aus, um folgenden Profileinstellungen zu konfigurieren.
 
@@ -142,25 +133,25 @@ Wählen Sie für **Benutzeraffinität** aus, ob Geräte mit diesem Profil mit od
 
     - **Abteilungstelefonnummer:** Wird angezeigt, wenn der Benutzer während der Aktivierung auf die Schaltfläche **Benötigen Sie Hilfe?** klickt.
     - **Setup-Assistent-Optionen**: Diese optionalen Einstellungen können später im iOS-Menü **Einstellungen** eingerichtet werden.
-        - **Kennung**: Aufforderung zur Eingabe der Kennung während der Aktivierung. Fordern Sie immer eine Kennung an, es sei denn, das Gerät und der Zugriff darauf werden auf andere Weise geschützt. Der Kioskmodus schränkt z.B. das Gerät auf eine App ein.
-        - **Ortungsdienste**: Falls aktiviert, fordert der Setup-Assistent den Dienst während der Aktivierung an.
-        - **Wiederherstellen**: Falls aktiviert, fordert der Setup-Assistent die iCloud-Sicherung während der Aktivierung an.
-        - **Apple-ID**: Falls aktiviert, fordert iOS Benutzer zur Angabe einer Apple-ID an, wenn Intune versucht, eine App ohne eine ID zu installieren. Eine Apple-ID ist erforderlich, um iOS App Store-Apps herunterzuladen, einschließlich der Apps, die von Intune installiert wurden.
-        - **Geschäftsbedingungen**: Falls aktiviert, fordert der Setup-Assistenten Benutzer auf, die Apple-Geschäftsbedingungen während der Aktivierung zu akzeptieren.
-        - **Touch ID**: Falls aktiviert, fordert der Setup-Assistent zur Ausführung dieses Dienst während der Aktivierung auf.
-        - **Apple Pay**: Falls aktiviert, fordert der Setup-Assistent zur Ausführung dieses Dienst während der Aktivierung auf.
-        - **Zoom**: Falls aktiviert, fordert der Setup-Assistent zur Ausführung dieses Dienst während der Aktivierung auf.
-        - **Siri** – Falls aktiviert, fordert der Setup-Assistent zur Ausführung dieses Dienst während der Aktivierung auf
-        - **Diagnosedaten:** Bei Aktivierung fordert der Setup-Assistent während der Aktivierung zur Ausführung dieses Dienst auf.
+        - **Kennung**
+        - **Standortdienste**
+        - **Wiederherstellen**
+        - **Apple-ID**
+        - **Geschäftsbedingungen**
+        - **Touch ID**
+        - **Apple Pay**
+        - **Zoom**
+        - **Siri**
+        - **Diagnosedaten**
 
     Wählen Sie **Speichern** aus.
 9. Wählen Sie zum Speichern der Profileinstellungen **Erstellen** auf dem Blatt **Registrierungsprofil erstellen** aus. Das Registrierungsprofil wird in der Liste der Registrierungsprofile des Apple-Registrierungsprogramms angezeigt.
 
 ## <a name="sync-managed-devices"></a>Synchronisieren verwalteter Geräte
-Nachdem Intune nun die Berechtigung zum Verwalten Ihrer Geräte besitzt, können Sie Intune mit Apple synchronisieren, um Ihre verwalteten Geräte im Intune-Portal anzuzeigen.
+Nachdem Intune nun die Berechtigung zum Verwalten Ihrer Geräte besitzt, können Sie Intune mit Apple synchronisieren, um Ihre verwalteten Geräte in Intune im Azure-Portal anzuzeigen.
 
-1. Wählen Sie im Intune-Portal die Optionen **Geräteregistrierung** &gt;  **Apple-Registrierung** &gt; **Geräte des Registrierungsprogramms** aus.
-2. Wählen Sie unter **Geräte des Registrierungsprogramms** die Option **Synchronisieren**. Das Blatt **Synchronisieren** wird angezeigt.
+1. Wählen Sie in Intune im Azure-Portal die Optionen **Geräteregistrierung** >  **Apple Registrierung** > **Registrierungsprogrammgeräte** aus.
+2. Wählen Sie unter **Geräte des Registrierungsprogramms** die Option **Synchronisieren**.
 
   ![Screenshot des ausgewählten Knotens „Geräte des Registrierungprogramms“ und des ausgewählten Links „Synchronisierung“](./media/enrollment-program-device-sync.png)
 3. Wählen Sie auf dem Blatt **Synchronisieren** die Option **Synchronisierung anfordern** aus. Die Statusanzeige zeigt die Zeitdauer, die Sie warten müssen, bevor Sie die Synchronisierung erneut anfordern können.
@@ -171,7 +162,7 @@ Nachdem Intune nun die Berechtigung zum Verwalten Ihrer Geräte besitzt, können
      -  Eine vollständige Synchronisation kann nicht öfter als einmal alle sieben Tage erfolgen. Während einer vollständigen Synchronisierung aktualisiert Intune jede Seriennummer von Apple, die Intune zugewiesen ist. Wenn eine vollständige Synchronisierung innerhalb von sieben Tagen nach der vorherigen vollständigen Synchronisierung versucht wird, aktualisiert Intune nur Seriennummern, die nicht bereits in Intune aufgeführt sind.
      -  Synchronisierungsanforderungen müssen innerhalb von 15 Minuten abgeschlossen sein. Während dieser Zeit oder bis zum erfolgreichen Erfüllen der Anforderung wird die Schaltfläche **Synchronisieren** deaktiviert.
      - Intune synchronisiert alle 24 Stunden neue und entfernte Geräte für Apple.
-     
+
 4. Wählen Sie im Arbeitsbereich „Geräte des Registrierungsprogramms“ die Option **Aktualisieren** aus, um Ihre Geräte anzuzeigen.
 
 ## <a name="assign-an-enrollment-profile-to-devices"></a>Zuweisen eines Registrierungsprofils an Geräte
@@ -183,7 +174,7 @@ Sie müssen Geräten ein Profil des Registrierungsprogramms zuweisen, bevor Sie 
 1. Wählen Sie im Intune-Portal die Option **Geräteregistrierung** > **Apple-Registrierung** und dann **Profile des Registrierungsprogramms** aus.
 2. Wählen Sie aus der Liste **Profile des Registrierungsprogramms** das Profil aus, das den Geräten zugewiesen werden soll, und wählen Sie anschließend **Geräte zuweisen** aus.
 
- ![Screenshot des Blatts „Synchronisierung“ mit ausgewähltem Link „Synchronisierung anfordern“](./media/enrollment-program-device-assign.png)
+ ![Screenshot von Gerätezuweisungen, für die „Zuweisen“ ausgewählt ist.](./media/enrollment-program-device-assign.png)
 
 3. Wählen Sie **Zuweisen** und anschließend die Geräte aus, die diesem Profil zugewiesen werden sollen. Sie können die Ansicht nach verfügbaren Geräten filtern:
   - **Nicht zugewiesen**
@@ -191,27 +182,9 @@ Sie müssen Geräten ein Profil des Registrierungsprogramms zuweisen, bevor Sie 
   - **&lt;Profilname&gt;**
 4. Wählen Sie die Geräte aus, die zugewiesen werden sollen. Mit dem Kontrollkästchen oberhalb der Spalte werden bis zu 1000 aufgelistete Geräte ausgewählt. Klicken Sie dann auf **Zuweisen**. Um mehr als 1000 Geräte zu registrieren, wiederholen Sie die Zuweisungsschritte, bis allen Geräten ein Registrierungsprofil zugewiesen ist.
 
-  ![Screenshot der Schaltfläche „Zuweisen“ zum Zuweisen des Profils des Registrierungsprogramms im Intune-Portal](media/dep-profile-assignment.png)
+  ![Screenshot der Schaltfläche „Zuweisen“ zum Zuweisen des Profils des Registrierungsprogramms in Intune](media/dep-profile-assignment.png)
 
-## <a name="end-user-experience-with-managed-devices"></a>Bedienung von verwalteten Geräten durch Endbenutzer
+## <a name="distribute-devices"></a>Verteilen von Geräten
+Sie haben die Verwaltung und Synchronisierung zwischen Apple und Intune aktiviert und haben ein Profil zugewiesen, damit Ihre DEP-Geräte registriert werden können. Sie können jetzt Geräte an Benutzer verteilen. Für Geräte mit Benutzeraffinität muss jedem Benutzer eine Intune-Lizenz zugewiesen werden. Geräte ohne Benutzeraffinität benötigen eine Gerätelizenz. Ein aktiviertes Gerät kann kein Registrierungsprofil anwenden, bis das Gerät nicht auf Werkseinstellung zurückgesetzt wurde.
 
-Sie können jetzt Geräte an Benutzer verteilen. Für Geräte mit Benutzeraffinität muss jedem Benutzer eine Intune-Lizenz zugewiesen werden. Ein aktiviertes Gerät kann kein Registrierungsprofil anwenden, bis das Gerät nicht auf Werkseinstellung zurückgesetzt wurde. Beim Einschalten von iOS-Geräten, die mit dem Registrierungsprogramm verwaltet werden, werden dem Benutzer folgende Optionen auf ihrem Gerät angezeigt:  
-
-1. **iOS-Gerät einrichten**: Benutzern stehen folgende Optionen zur Auswahl:
-  - **Als neues Gerät einrichten**
-  - **Aus iCloud-Sicherung wiederherstellen**
-  - **Aus iTunes-Sicherung wiederherstellen**
-2. Benutzer werden darüber informiert, dass **&lt;Ihre Organisation&gt; das Gerät automatisch konfiguriert.** Die folgenden zusätzlichen Konfigurationsinformationen sind ebenfalls verfügbar:
-
-  **Die Konfiguration ermöglicht &lt;Ihrer Organisation&gt; die drahtlose Verwaltung dieses Geräts.**
-
-  **Ein Administrator unterstützt Sie bei der Einrichtung von E-Mail- und -Netzwerkkonten, der Installation und Konfiguration von Apps und der Remoteverwaltung von Einstellungen.**
-
-  **Ein Administrator kann Funktionen deaktivieren, Apps installieren und entfernen, Ihren Internetdatenverkehr überwachen und einschränken und eine Remotelöschung dieses Geräts ausführen.**
-
-  **Die Konfiguration wird bereitgestellt durch:<br> &lt;Ihre Organisation&gt; iOS Team<br> &lt;Adresse&gt;**
-
-3. Benutzer werden zur Eingabe ihres Benutzernamens und Kennworts für die Arbeit oder die Schule/Universität aufgefordert.
-4. Benutzer werden zur Eingabe ihrer Apple-ID aufgefordert. Eine Apple-ID wird zur Installation der Intune-Unternehmensportal-App und anderer Apps benötigt. Nachdem Anmeldeinformationen bereitgestellt wurden, installiert das Gerät ein Verwaltungsprofil, das nicht entfernt werden kann. Das Intune-Verwaltungsprofil wird unter **Einstellungen** > **Allgemein** > **Geräteverwaltung** auf dem Gerät angezeigt.
-
-Benutzer können nun die Einrichtung ihres unternehmenseigenen Geräts über das Intune-Unternehmensportal oder den Apple-Setup-Assistenten abschließen.
+Informationen finden Sie unter [Registrieren Ihres iOS-Geräts in Intune mit dem Programm zur Geräteregistrierung](/intune-user-help/enroll-your-device-dep-ios).

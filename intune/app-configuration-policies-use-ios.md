@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cbcf70af17ba7690f54196790da04becd8ba1eb
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: b261834c85a9dd3cbc6f8fae40933dd7a79acf93
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>Verwenden von Microsoft Intune-App-Konfigurationsrichtlinien für iOS
 
@@ -37,7 +37,7 @@ Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Einstellunge
 
 Wenn Benutzer diese Einstellungen nicht ordnungsgemäß eingeben, kann dies zur erhöhten Belastung Ihres Helpdesks führen und die Annahme der neuen Apps verlangsamen.
 
-Mit App-Konfigurationsrichtlinien können Sie diese Probleme beseitigen, da Sie diese Einstellungen in einer Richtlinie Benutzern zuweisen können, bevor diese die App ausführen. Die Einstellungen werden dann automatisch bereitgestellt, und die Benutzer müssen keine weitere Aktion durchführen.
+Mit App-Konfigurationsrichtlinien können Sie diese Probleme beseitigen, da Sie diese Einstellungen in einer Richtlinie Benutzern zuweisen können, bevor diese die App ausführen. Die Einstellungen werden dann automatisch bereitgestellt, und die Benutzer müssen keine weitere Aktion durchführen. Apps müssen geschrieben werden, um die Verwendung von App-Konfigurationen zu unterstützen. Wenden Sie sich für mehr Informationen an Ihren App-Anbieter.
 
 Sie weisen diese Richtlinien nicht direkt Benutzern und Geräten zu. Stattdessen verknüpfen Sie eine Richtlinie mit einer App und weisen dann die App zu. Die Richtlinieneinstellungen werden immer dann verwendet, wenn die Anwendung danach sucht (in der Regel beim ersten Ausführen).
 
@@ -57,8 +57,8 @@ Sie weisen diese Richtlinien nicht direkt Benutzern und Geräten zu. Stattdessen
 5.  Wählen Sie auf dem Blatt mit der Liste der Richtlinien die Option **Hinzufügen** aus.
 6.  Geben Sie auf dem Blatt **Konfigurationsrichtlinie hinzufügen** einen **Namen** und optional eine **Beschreibung** für die App-Konfigurationsrichtlinie an.
 7.  Wählen Sie für den **Geräteregistrierungstyp** eine der folgenden Optionen aus:
-    - **Bei Intune registriert**: Für Apps, in denen das Intune App SDK integriert ist und die von Intune verwaltet werden
-    - **Nicht bei Intune registriert**: Für Apps, in denen das Intune App SDK integriert ist und die nicht von Intune oder einer anderen Lösung verwaltete werden.
+    - **Bei Intune registriert**: Für Apps, die von Intune verwaltet werden.
+    - **Nicht bei Intune registriert**: Für Apps die nicht von Intune oder einer anderen Lösung verwaltete werden.
 8.  Wählen Sie für **Plattform** **iOS** aus (für Geräte, die nur bei Intune registriert sind)
 9.  Wählen Sie **Zugeordnete App** aus, und wählen Sie auf dem Blatt **Zugeordnete App** die verwaltete App aus, auf die Sie die Konfiguration anwenden möchten.
 10. Wählen Sie auf dem Blatt **Konfigurationsrichtlinie hinzufügen** die Option **Konfigurationseinstellungen** aus.

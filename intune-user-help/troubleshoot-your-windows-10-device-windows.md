@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 465d84490f5000b13a2c7371677cee77baadc4d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 701ee2081d8f696a1c37eaa2857ab92942d79f48
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Behandlung von Problemen bei der Registrierung von Windows 10-Geräten
 Wenn Sie die Schritte unter [Registrieren Ihres Windows 10 Mobile- oder Windows 10-Desktopgeräts bei Intune](enroll-your-w10-phone-or-w10-pc-windows.md) befolgt haben, aber dennoch nicht auf E-Mails und Dateien Ihres Geschäfts-, Schul- oder Unikontos zugreifen können, führen Sie zur Problembehandlung die folgenden Schritte durch.
@@ -54,5 +54,9 @@ Wenn Sie die obigen Schritte ausgeführt haben und trotzdem nicht auf E-Mails, D
 - Wenn Ihr Geschäfts- oder Schulkonto angezeigt wird, sind keine weiteren Schritte erforderlich. Sie sind verbunden.
 
 - Wenn Ihr Geschäfts- oder Schulkonto nicht angezeigt wird, tippen Sie auf **Verbinden**, und melden Sie sich mit den Anmeldeinformationen Ihres Geschäfts- oder Schulkontos an.
+
+## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>Schritte zur Problembehandlung bei Anzeige von „Geschäfts-, Schul- oder Unikonto einrichten“
+
+Wenn eine Meldung angezeigt wird, die __We couldn't auto-discover a management endpoint matching the username entered. Please check your username and try again. If you know the URL to your management endpoint, please enter it.__ (Es konnte automatisch kein Verwaltungsendpunkt erkannt werden, der mit dem eingegebenen Benutzernamen übereinstimmt. Bitte überprüfen Sie Ihren Benutzernamen, und versuchen Sie es noch einmal. Wenn Sie die URL zu Ihrem Verwaltungsendpunkt kennen, geben Sie sie ein.) angibt, versuchen Sie, Ihren Benutzernamen und das Kennwort erneut anzugeben. Wenn es immer noch nicht funktioniert, wenden Sie sich für die Website, die Sie im Textfeld **Verwaltungsendpunkt** bereitstellen müssen, an Ihren IT-Administrator. Dies ist eine Website, die in etwas so aussieht: **www.ihrefirma.aufmicrosoft.com**. 
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).

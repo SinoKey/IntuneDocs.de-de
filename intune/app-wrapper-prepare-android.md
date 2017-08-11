@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ebea9fe4cbf0c6c788ba4a209132856eda06445e
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: fed97412df96d0bdffaf3b10ad5306a6f56d0066
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Vorbereiten von Android-Apps für die Verwaltung von mobilen Anwendungen mit dem Intune App Wrapping Tool
 
@@ -50,16 +50,7 @@ Lesen Sie vor dem Ausführen des Tools die [Sicherheitsüberlegungen für das Au
     > [!NOTE]
     > In einigen Fällen kann die 32-Bit-Version von Java zu Speicherproblemen führen. Es ist eine gute Idee, die 64-Bit-Version zu installieren.
 
-- Für Android müssen alle App-Pakete (APK-Dateien) signiert sein. Verwenden Sie das Java-Keytool, um Anmeldeinformationen zu generieren, die zum Signieren der umschlossenen Ausgabe-App erforderlich sind. Der folgende Befehl verwendet z.B. die ausführbare Java-Datei „keytool.exe“, um Schlüssel zu generieren, die vom App Wrapping-Tool zum Signieren der umschlossenen Ausgabe-App verwendet werden können.
-
-    ```
-    keytool.exe -genkeypair -v -keystore mykeystorefile -alias mykeyalias -keyalg RSA -keysize 2048 -validity 50000
-    ```
-    Dieses Beispiel verwendet den RSA-Algorithmus, um ein Schlüsselpaar (einen öffentlichen Schlüssel und einen zugehörigen privaten Schlüssel mit einer Länge von 2.048 Bits) zu generieren. Danach wird der öffentliche Schlüssel von einem selbstsignierten X.509 v3-Zertifikat umschlossen, das als Zertifikatkette mit einem Element gespeichert wird. Diese Zertifikatkette und der private Schlüssel werden in einem neuen Keystore-Eintrag namens „mykeystorefile“ gespeichert und durch das Alias „mykeyalias“ identifiziert. Der Keystore-Eintrag ist für 50.000 Tage gültig.
-
-    Der Befehl wird Sie auffordern, Kennwörter für den Keystore und den Schlüssel bereitzustellen. Verwenden Sie sichere Kennwörter. Notieren Sie sich diese Kennwörter jedoch, denn sie werden benötigt, um das App Wrapping Tool auszuführen.
-
-    Für eine ausführliche Dokumentation lesen Sie mehr über das Java-[Keytool](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) und den Java-[Keystore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) auf der Oracle-Dokumentationswebsite.
+- Für Android müssen alle App-Pakete (APK-Dateien) signiert sein. Informationen zum **Wiederverwenden** vorhandener Zertifikate und für allgemeine Anleitungen für Signaturzertifikate finden Sie unter [Wiederverwendung von Signaturzertifikaten und Umschließen von Apps](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). Das ausführbare Java-Tool „keytool.exe“ wird zum Generieren **neuer** Anmeldeinformationen verwendet, die zum Signieren der umschlossenen Ausgabe-App erforderlich sind. Kennwörter, die festgelegt werden, müssen sicher sein. Notieren Sie sich diese Kennwörter jedoch, denn sie werden benötigt, um das App Wrapping Tool auszuführen.
 
 ## <a name="install-the-app-wrapping-tool"></a>Installieren des App Wrapping Tools
 
@@ -95,7 +86,7 @@ Merken Sie sich den Ordner, in dem Sie das Tool installieren. Der Standardspeich
 |**-KeyStorePassword**&lt;SecureString&gt;|Das Kennwort zum Entschlüsseln des KeyStore. Für Android müssen alle Anwendungspakete (APK-Dateien) signiert sein. Verwenden Sie das Java-Keytool, um das KeyStorePassword zu generieren. Weitere Informationen über den Java-[Keystore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) finden Sie hier.| |
 |**-KeyAlias**&lt;String&gt;|Der Name des Schlüssels, der zum Signieren verwendet werden soll.| |
 |**-KeyPassword**&lt;SecureString&gt;|Das Kennwort zum Entschlüsseln des privaten Schlüssels, der zum Signieren verwendet wird.| |
-|**-SigAlg**&lt;SecureString&gt;| (Optional) Der Name des Signaturalgorithmus, der zum Signieren verwendet werden soll. Der Algorithmus muss mit dem privaten Schlüssel kompatibel sein.|Beispiele: SHA256withRSA, SHA1withRSA, MD5withRSA|
+|**-SigAlg**&lt;SecureString&gt;| (Optional) Der Name des Signaturalgorithmus, der zum Signieren verwendet werden soll. Der Algorithmus muss mit dem privaten Schlüssel kompatibel sein.|Beispiele: SHA256withRSA, SHA1withRSA|
 | **&lt;CommonParameters&gt;** | (Optional) Der Befehl unterstützt allgemeine PowerShell-Parameter, wie z.B. „verbose“ und „debug“. |
 
 

@@ -5,7 +5,7 @@ keywords: Was ist Intune
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: b1fbc73c0bc3589856f09bd3b9858fef66b82b08
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: 53115eba5e5150139b8ff0f359cde279df297d47
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-is-intune"></a>Was ist Intune?
 
@@ -72,10 +72,10 @@ Wenn Sie Intune mit den anderen Diensten in EMS verwenden, können Sie für die 
 
 * [Einmaliges Anmelden](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
 *   [Multi-Factor Authentication](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
-* [Bedingter App-Zugriff: Zugriff zulassen, wenn die mobile App Unternehmensdaten enthält](app-based-conditional-access-intune.md) ([Klassische Konsole](/intune-classic/deploy-use/allow-policy-managed-apps-access-to-o365))
-* [Trennen von Unternehmensdaten und persönlichen Daten in der gleichen App](app-protection-policy.md) ([Klassische Konsole](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [App-Schutzrichtlinie (PIN, Verschlüsselung, Speichern unter, Zwischenablage usw.)](app-protection-policies.md) ([Klassische Konsole](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [Zurücksetzen von Unternehmensdaten in einer mobilen App](/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune)
+* [bedingter App-Zugriff: Zugriff zulassen, wenn die mobile App Unternehmensdaten enthält](app-based-conditional-access-intune.md)
+* [Trennen von Unternehmensdaten und persönlichen Daten in der gleichen App](app-protection-policy.md)
+* [App-Schutzrichtlinie (PIN, Verschlüsselung, Speichern unter, Zwischenablage usw.)](app-protection-policies.md)
+* [Zurücksetzen von Unternehmensdaten in einer mobilen App](apps-selective-wipe.md)
 * [Unterstützung der Rechteverwaltung](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![Stufen der Datensicherheit bei der App-Verwaltung](./media/managing-mobile-apps.png)
@@ -110,6 +110,6 @@ Die folgende Liste geschäftlicher Probleme verweist auf ausführlichere Informa
 * [Ausgeben gemeinsam genutzter Tablets mit eingeschränkter Verwendung an Ihre Taskworker](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 ### <a name="next-steps"></a>Nächste Schritte
-* Erfahren Sie mehr über einige der [gängigsten Arten der Verwendung von Intune](common-scenarios.md) ([Klassische Konsole](/intune-classic/understand-explore/common-ways-to-use-intune)).
-* Machen Sie sich [mit einer 30-Tage-Testversion von Intune](free-trial-sign-up.md) mit dem Produkt vertraut ([Klassische Konsole](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)).
-* Lernen Sie die [technischen Anforderungen und Möglichkeiten](supported-devices-browsers.md) von Intune detailliert kennen ([Klassische Konsole](/intune-classic/get-started/what-to-know-before-you-start-microsoft-in)).
+* Erfahren Sie mehr über einige der [gängigsten Arten der Verwendung von Intune](common-scenarios.md).
+* Machen Sie sich [mit einer 30-Tage-Testversion von Intune](free-trial-sign-up.md) mit dem Produkt vertraut.
+* Lernen Sie die [technischen Anforderungen und Funktionen](supported-devices-browsers.md) von Intune detailliert kennen.

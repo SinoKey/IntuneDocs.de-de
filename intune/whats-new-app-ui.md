@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,62 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e2e1eb6da9114c689aae5eb06f7d7c780f35817
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 948a7d2e4e0ad80088d864708db5733f08db77c5
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune
 Erfahren Sie, welche Aktualisierungen wir an der Benutzeroberfläche für Apps vorgenommen haben, die Ihre Endbenutzer in dieser Version von Microsoft Intune sehen werden. Damit werden Sie bei der Benutzerkommunikation sowie bei allen aktualisierten Benutzerdokumentationen unterstützt, die Sie zur Unterstützung Ihrer Entwicklung erstellt haben. Es kann auch helfen, zu verstehen, wie Probleme behandelt werden, die auftauchen, wenn Benutzer den Helpdesk für den Support mithilfe des Unternehmensportals aufrufen.
+
+## <a name="week-of-july-31-2017"></a>Woche vom 31. Juli 2017
+
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Verbesserter Anmeldevorgang für alle Unternehmensportal-Apps auf allen Plattformen <!--User Story 1132123-->
+
+Wir kündigen eine in den nächsten Monaten kommende Änderung an, durch die der Anmeldevorgang für die Intune-Unternehmensportal-Apps für Android, iOS und Windows verbessert wird. Die neue Benutzeroberfläche wird für die Unternehmensportal-App automatisch auf allen Plattformen eingeführt, sobald Azure AD die Änderung umsetzt. Darüber hinaus können Benutzer sich jetzt mithilfe eines generierten Codes zur einmaligen Verwendung von einem anderen Gerät aus beim Unternehmensportal anmelden. Dies ist besonders nützlich, wenn Benutzer sich ohne Anmeldeinformationen anmelden müssen.  
+
+Unten sehen Sie die vorherige Anmeldeoberfläche, die neue Anmeldeoberfläche mit Anmeldeinformationen und die neue Anmeldeoberfläche zur Anmeldung von einem anderen Gerät aus.
+
+__Vorherige Anmeldeoberfläche__
+
+![Die Seite für die Anmeldung beim Unternehmensportal mit einem Symbol für eine Person vor der grafischen Darstellung einer Website. Darunter befindet sich die Schaltfläche zum Anmelden. Ein Link am unteren Seitenrand führt zu Informationen von Microsoft zu Datenschutz und Cookies.](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![Nach dem Tippen auf „Anmelden“ geben Benutzer auf dieser Seite ihre Anmeldeinformationen ein. Die Seite erfordert die Eingabe von E-Mail-Adresse und Kennwort und bietet Möglichkeiten, Kennwortfehler zu beheben.](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![Nach Eingabe des Kennworts meldet sich die Unternehmensportal-App an und zeigt einen Ladebalken an.](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__Neue Anmeldeoberfläche__
+
+![Die Seite für die Anmeldung beim Unternehmensportal mit einem Symbol für eine Person vor der grafischen Darstellung einer Website. Darunter befindet sich die Schaltfläche zum Anmelden. Ein Link am unteren Seitenrand führt zu Informationen von Microsoft zu Datenschutz und Cookies.](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![Der Benutzer wird nur zur Eingabe der E-Mail-Adresse aufgefordert, nicht zur Eingabe von E-Mail-Adresse und Kennwort im gleichen Bildschirm.](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![Der Benutzer wird erst zur Eingabe des Kennworts aufgefordert, wenn die E-Mail-Adresse akzeptiert wurde.](./media/cp_ios_aad_signin_after_1704_003.png)
+
+![Nach Abschluss des Authentifizierungsprozesses meldet sich die Unternehmensportal-App an und zeigt einen entsprechenden Ladebalken an.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+__Neue Anmeldeoberfläche bei Anmeldung von einem anderen Gerät aus__
+
+![Die Seite für die Anmeldung beim Unternehmensportal mit einem Symbol für eine Person vor der grafischen Darstellung einer Website. Darunter befindet sich die Schaltfläche zum Anmelden. Ein Link am unteren Seitenrand führt zu Informationen von Microsoft zu Datenschutz und Cookies.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+Tippen Sie auf den Link __Von anderem Gerät aus anmelden__.
+
+![Der Benutzer erhält die Anweisung, mit einem über den Arbeitscomputer bezogenen eindeutigen Passcode zur Seite „aka.ms/devicelogin“ zu wechseln und sich dort mit dem Code anzumelden.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+Starten Sie einen Browser, und wechseln Sie zu [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
+
+![Ein Bild des Browsers des Benutzers auf dem Arbeitscomputer statt in der Unternehmensportal-App. Die angezeigte Seite „Geräteanmeldung“ fordert den Benutzer auf, den über die Unternehmensportal-App empfangenen Code einzugeben.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+Geben Sie den Code ein, den Sie in der Unternehmensportal-App erhalten haben. Wenn Sie __Weiter__ auswählen, können Sie sich mit jeder von Ihrem Unternehmen unterstützten Methode authentifizieren, z.B. per Smartcard.
+
+![Der Benutzer hat den eindeutigen Code in das Feld eingegeben und wurde auf der Seite „Geräteanmeldung“ aufgefordert, zu bestätigen, dass das Intune-Unternehmensportal die App ist, die zur Anmeldung autorisiert werden soll.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![Eine Bestätigungsseite informiert darüber, dass der Benutzer sich jetzt auf dem Gerät bei der Unternehmensportal-App angemeldet hat und dass diese Seite geschlossen werden kann.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+Die Unternehmensportal-App beginnt mit der Anmeldung.
+
+![Nach Abschluss des Authentifizierungsprozesses meldet sich die Unternehmensportal-App an und zeigt einen entsprechenden Ladebalken an.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
 ## <a name="week-of-june-12-2017"></a>Woche vom 12. Juni 2017
 
@@ -180,51 +228,12 @@ Es folgen die Pläne für Möglichkeiten zum Verbessern der Benutzererfahrung du
 > [!Note]
 > Beachten Sie, dass die Bilder unten eine Vorschau darstellen und das angekündigte Produkt sich von den abgebildeten Versionen unterscheiden kann.
 
-### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Verbesserter Anmeldevorgang für alle Unternehmensportal-Apps auf allen Plattformen <!--User Story 1132123-->
+### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Updates für die Benutzeroberfläche der Unternehmensportal-Website<!--1313244 part 2-->
 
-Wir kündigen eine in den nächsten Monaten kommende Änderung an, durch die der Anmeldevorgang für die Intune-Unternehmensportal-Apps für Android, iOS und Windows verbessert wird. Die neue Benutzeroberfläche wird für die Unternehmensportal-App automatisch auf allen Plattformen eingeführt, sobald Azure AD die Änderung umsetzt. Darüber hinaus können Benutzer sich jetzt mithilfe eines generierten Codes zur einmaligen Verwendung von einem anderen Gerät aus beim Unternehmensportal anmelden. Dies ist besonders nützlich, wenn Benutzer sich ohne Anmeldeinformationen anmelden müssen.  
+__Updates an empfohlenen Apps__ Wir haben der Website eine dedizierte Seite hinzugefügt, auf der Benutzer Apps durchsuchen können, die Sie präsentieren, und haben einige Optimierungen auf der Benutzeroberfläche für den Abschnitt „Featured“ (Empfohlen) auf der Homepage vorgenommen.
 
-Unten sehen Sie die vorherige Anmeldeoberfläche, die neue Anmeldeoberfläche mit Anmeldeinformationen und die neue Anmeldeoberfläche zur Anmeldung von einem anderen Gerät aus.
+![Die farbigen Kacheln, die die Apps darstellen. Sie sind große farbige Quadrate unter jeder App, wobei die Farbe aus der Primärfarbe innerhalb des App-Logos gezogen wird. Der Abschnitt „Featured Apps“ (Empfohlene Apps) wird oben in der Unternehmensportal-App angezeigt.](./media/cp_win10_colorful_tiles_after_1708.png)
 
-__Vorherige Anmeldeoberfläche__
-
-![Die Seite für die Anmeldung beim Unternehmensportal mit einem Symbol für eine Person vor der grafischen Darstellung einer Website. Darunter befindet sich die Schaltfläche zum Anmelden. Ein Link am unteren Seitenrand führt zu Informationen von Microsoft zu Datenschutz und Cookies.](./media/cp_ios_aad_signin_before_1704_001.png)
-
-![Nach dem Tippen auf „Anmelden“ geben Benutzer auf dieser Seite ihre Anmeldeinformationen ein. Die Seite erfordert die Eingabe von E-Mail-Adresse und Kennwort und bietet Möglichkeiten, Kennwortfehler zu beheben.](./media/cp_ios_aad_signin_before_1704_002.png)
-
-![Nach Eingabe des Kennworts meldet sich die Unternehmensportal-App an und zeigt einen Ladebalken an.](./media/cp_ios_aad_signin_before_1704_003.png)
-
-__Neue Anmeldeoberfläche__
-
-![Die Seite für die Anmeldung beim Unternehmensportal mit einem Symbol für eine Person vor der grafischen Darstellung einer Website. Darunter befindet sich die Schaltfläche zum Anmelden. Ein Link am unteren Seitenrand führt zu Informationen von Microsoft zu Datenschutz und Cookies.](./media/cp_ios_aad_signin_after_1704_001.png)
-
-![Der Benutzer wird nur zur Eingabe der E-Mail-Adresse aufgefordert, nicht zur Eingabe von E-Mail-Adresse und Kennwort im gleichen Bildschirm.](./media/cp_ios_aad_signin_after_1704_002.png)
-
-![Der Benutzer wird erst zur Eingabe des Kennworts aufgefordert, wenn die E-Mail-Adresse akzeptiert wurde.](./media/cp_ios_aad_signin_after_1704_003.png)
-
-![Nach Abschluss des Authentifizierungsprozesses meldet sich die Unternehmensportal-App an und zeigt einen entsprechenden Ladebalken an.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
-
-__Neue Anmeldeoberfläche bei Anmeldung von einem anderen Gerät aus__
-
-![Die Seite für die Anmeldung beim Unternehmensportal mit einem Symbol für eine Person vor der grafischen Darstellung einer Website. Darunter befindet sich die Schaltfläche zum Anmelden. Ein Link am unteren Seitenrand führt zu Informationen von Microsoft zu Datenschutz und Cookies.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
-
-Tippen Sie auf den Link __Von anderem Gerät aus anmelden__.
-
-![Der Benutzer erhält die Anweisung, mit einem über den Arbeitscomputer bezogenen eindeutigen Passcode zur Seite „aka.ms/devicelogin“ zu wechseln und sich dort mit dem Code anzumelden.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
-
-Starten Sie einen Browser, und wechseln Sie zu [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
-
-![Ein Bild des Browsers des Benutzers auf dem Arbeitscomputer statt in der Unternehmensportal-App. Die angezeigte Seite „Geräteanmeldung“ fordert den Benutzer auf, den über die Unternehmensportal-App empfangenen Code einzugeben.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
-
-Geben Sie den Code ein, den Sie in der Unternehmensportal-App erhalten haben. Wenn Sie __Weiter__ auswählen, können Sie sich mit jeder von Ihrem Unternehmen unterstützten Methode authentifizieren, z.B. per Smartcard.
-
-![Der Benutzer hat den eindeutigen Code in das Feld eingegeben und wurde auf der Seite „Geräteanmeldung“ aufgefordert, zu bestätigen, dass das Intune-Unternehmensportal die App ist, die zur Anmeldung autorisiert werden soll.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
-
-![Eine Bestätigungsseite informiert darüber, dass der Benutzer sich jetzt auf dem Gerät bei der Unternehmensportal-App angemeldet hat und dass diese Seite geschlossen werden kann.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
-
-Die Unternehmensportal-App beginnt mit der Anmeldung.
-
-![Nach Abschluss des Authentifizierungsprozesses meldet sich die Unternehmensportal-App an und zeigt einen entsprechenden Ladebalken an.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 ### <a name="see-also"></a>Weitere Informationen:
 * [Microsoft Intune-Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roadmap für die Cloudplattform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)

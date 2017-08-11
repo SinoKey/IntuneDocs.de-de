@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6a3cdc2b5d95f57f1ffc1f68b6748b357f2ef4
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: 1a97e58f1d108932e44b0b4e36bda5a30b7a90da
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>So weisen Sie Office 365 ProPlus 2016-Apps Windows 10-Geräten mit Microsoft Intune hinzu
 
-Diese App erleichtert Ihnen die Zuweisung von Office 365 ProPlus 2016-Apps zu Geräten, die Sie verwalten und die Windows 10 ausführen. Sie können zusätzlich Apps für den Microsoft Project Online-Desktopclient und Microsoft Visio Pro für Office 365 installieren, wenn Sie über Lizenzen für sie verfügen. Die Apps, die als eine App in der Liste der Apps in der Intune-Konsole erscheinen sollen.
+Diese App erleichtert Ihnen die Zuweisung von Office 365 ProPlus 2016-Apps zu Geräten, die Sie verwalten und die Windows 10 ausführen. Sie können Apps für den Microsoft Project Online-Desktopclient und Microsoft Visio Pro für Office 365 installieren, wenn Sie über Lizenzen für sie verfügen. Die Apps, die als eine App in der Liste der Apps in der Intune-Konsole erscheinen sollen.
 
 
 ## <a name="before-you-start"></a>Vorbereitung
@@ -34,11 +34,8 @@ Diese App erleichtert Ihnen die Zuweisung von Office 365 ProPlus 2016-Apps zu Ge
 - Auf den Geräten, auf denen Sie diese Apps bereitstellen, muss das Windows 10 Creators Update oder höher ausgeführt werden.
 - Intune unterstützt nur das Hinzufügen von Office-Apps aus der Sammlung von Office 365 ProPlus 2016.
 - Wenn Office-Apps geöffnet sind, wenn Intune die App-Sammlung erstellt, verlieren Endbenutzer möglicherweise Daten aus nicht gespeicherten Dateien.
-- Wenn Sie Office auf einem Gerät installieren, auf dem bereits Office installiert ist, lesen Sie die folgenden Überlegungen durch:
-    - Unabhängig von der Office-Version, die Sie verwenden, können Sie keine 32-Bit- und 64-Bit-Office-Produkte auf dem gleichen Gerät installieren.
-    - Sie können nicht die gleichen Klick-und-Los- und MSI-Versionen von Office auf demselben Gerät ausführen, jedoch können Sie unterschiedliche Hauptversionen erstellen.
-    - Wenn Sie bereits eine frühere Version von Office besitzen, die Sie mithilfe von Klick-und-Los installiert haben, müssen Sie alle Apps entfernen, die Sie mit der neueren Version ersetzen möchten. Wenn Sie z.B. über eine neuere Version von World auf dem Gerät verfügen, und Sie die neueste Version zuweisen möchten, müssen Sie zuerst die alte Version entfernen.
-    - Wenn auf einem Gerät bereits Office 365 installiert ist, kann es bedeuten, dass Sie bei der Zuweisung der Office 365 ProPlus 2016-Sammlung auf das Gerät möglicherweise Ihre Office-Abonnementebene ändern müssen.
+- Die Installationsmethode wird auf Windows 10S-Geräten nicht unterstützt.
+- Wenn Sie diesen App-Typ als „Verfügbar“ zuweisen und auf mehrere Benutzer mit unterschiedlichen Zuweisungen abzielen, wird ihnen nur die kürzlich als Ziel gesetzte Zuweisung angezeigt.
 
 
 ## <a name="get-started"></a>Erste Schritte

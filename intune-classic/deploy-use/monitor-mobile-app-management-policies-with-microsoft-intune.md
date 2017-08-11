@@ -14,11 +14,11 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c3c41f5e3b0fc81232b03fe547bee7f72fb427a0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5be08d2535acefe099429ab732d6d5d99205b2e7
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Überprüfen von App-Schutzrichtlinien mit Microsoft Intune
 Sie können den Konformitätsstatus der App-Schutzrichtlinien überwachen, die Sie auf Benutzer angewendet haben. Sie können Informationen über die Benutzer finden, die von den App-Schutzrichtlinien betroffen sind, deren Konformitätsstatus sowie Probleme, die bei den Benutzern möglicherweise auftreten.
@@ -43,11 +43,13 @@ Auf dem Blatt **Mobile Anwendungsverwaltung mit Intune** sehen Sie eine Zusammen
 
 ![Kachel „Zusammenfassung“ auf dem Blatt „Mobile Anwendungsverwaltung mit Intune“](../media/mam-azure-portal-user-status-summary.png)
 
--   **Benutzer:** Die Gesamtzahl von Benutzern in Ihrem Unternehmen, die die der Richtlinie zugeordneten Apps verwenden.
+-   **Benutzer:** Die Gesamtzahl von Benutzern in Ihrem Unternehmen, die die eine App verwenden, die einer Richtlinie in einem geschäftlichen Kontext zugeordnet ist.
 
--   **VERWALTET DURCH RICHTLINIE:** Die Anzahl von Benutzern, die mindestens eine der Apps im Arbeitskontext verwendet haben.
+-   **VERWALTET DURCH RICHTLINIE**: Die Anzahl von Benutzern, die eine App verwendet haben und denen eine Richtlinie in einem geschäftlichen Kontext zugeordnet ist.
 
--   **KEINE RICHTLINIE:** Die Anzahl von Benutzern, die die der Richtlinie zugeordneten Apps verwenden, jedoch nicht von der Richtlinie betroffen sind. Sie sollten erwägen, diese Benutzer zur Richtlinie hinzuzufügen.
+-   **KEINE RICHTLINIE**: Die Anzahl von Benutzern, die eine App Verwenden, die unter keine Richtlinie in einem geschäftlichen Kontext fallen. Sie sollten erwägen, diese Benutzer zur Richtlinie hinzuzufügen.
+    > [!NOTE]
+    > Wenn Sie über mehrere Richtlinien pro Plattform verfügen, gilt ein Benutzer als durch eine Richtlinie verwaltet, wenn ihm mindestens eine Richtlinie zugewiesen ist.
 
 - **Gekennzeichnete Benutzer:** Die Anzahl von Benutzern, die Probleme feststellen. Derzeit werden nur Benutzer mit per Jailbreak manipulierten Geräten unter **Gekennzeichnete Benutzer** gemeldet.
 
