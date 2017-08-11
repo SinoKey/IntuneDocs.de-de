@@ -263,7 +263,7 @@
 ### [How to get iOS apps (Erhalt von Windows-Apps)](end-user-apps-windows.md)
 
 # Überwachung und Problembehandlung
-## [Verwenden der Rolle „Helpdeskoperator“](help-desk-operators.md)
+## [Unterstützung von Benutzern beim Beheben von Problemen](help-desk-operators.md)
 ## [Verwenden des Data Warehouse von Intune](reports-nav-create-intune-reports.md)
 ### [Verbinden mit dem Data Warehouse mit Power BI](reports-proc-get-a-link-powerbi.md)
 
