@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 272628c501d15dc9661a1110e7dcab2d0e9f1d02
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: f9274daf30a89f75c5c664a17a5f890540e9f562
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Einstellungen für App-Schutzrichtlinien für iOS
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -69,7 +69,7 @@ Die App-Schutzrichtlinie von Intune erlaubt unter bestimmten Umständen die Date
 | **Unternehmensanmeldeinformationen für Zugriff erforderlich** | Wählen Sie **Ja**, um anzufordern, dass sich der Benutzer für den Zugriff auf die App mit seinem Geschäfts-, Schul- oder Unikonto anmeldet, anstatt eine PIN einzugeben. Wenn Sie diese Einstellung auf **Ja** festlegen, sind PIN oder Fingerabdruckidentifizierung damit hinfällig.  | Nein |
 | **Ausführen verwalteter Apps auf Geräten mit Jailbreak oder Rootzugriff blockieren** |  Wählen Sie **Ja** aus, um die Ausführung dieser App auf per Jailbreak oder Rootzugriff manipulierten Geräten zu verhindern. Der Benutzer kann diese App weiterhin für private Zwecke verwenden, muss jedoch für den Zugriff auf Geschäfts-, Schul- oder Unidaten ein anderes Gerät verwenden. | Ja |
 | **Überprüfen der Zugriffsanforderungen nach (Minuten)** | Konfigurieren Sie die folgenden Einstellungen: <ul><li>**Timeout**: Dies ist die Anzahl der Minuten, bis die (zuvor in der Richtlinie definierten) Zugriffsanforderungen erneut überprüft worden sind. Beispielsweise ein Administrator aktiviert die PIN in der Richtlinie, und ein Benutzer öffnet eine MAP-App und muss eine PIN eingeben. Wenn Sie diese Einstellung verwenden, muss der Benutzer für weitere **30 Minuten** (Standardwert) keine PIN bei MAM-Apps eingeben.</li><li>**Offline-Toleranzperiode**: Dies ist die Anzahl der Minuten, in den MAM-Apps offline sind. Geben Sie die Zeit (in Minuten) an, bevor die Zugriffsanforderungen für die App erneut geprüft werden. Standardwert = **720** Minuten (12 Stunden). Nachdem dieser Zeitraum abgelaufen ist, erfordert die App Benutzerauthentifizierung für AAD, sodass die App weiterhin ausgeführt werden kann.</li></ul>| Timeout: 30 <br><br> Offline: 720 |
-| **Offline-Intervall (in Tagen), bevor App-Daten zurückgesetzt werden** | Nach diesem Zeitraum (durch den Administrator definiert) im Offline-Modus, führt die App selbst ein selektives Zurücksetzen aus. Dieses selektive Zurücksetzen ist dasselbe Zurücksetzen wie das, das durch den Administrator im Workflow zum selektiven Zurücksetzen für MAM initiiert werden kann. <br><br> | 90 Tage |
+| **Offline-Intervall (in Tagen), bevor App-Daten zurückgesetzt werden** | Nach diesem Zeitraum (durch den Administrator definiert) im Offline-Modus, muss der Benutzer für die App eine Verbindung mit dem Netzwerk herstellen und sich erneut authentifizieren. Wenn sich Benutzer erfolgreich authentifiziert haben, können sie weiterhin auf ihre Daten zugreifen, und das Offline-Intervall wird zurückgesetzt.  Wenn sich der Benutzer nicht authentifizieren kann, führt die App eine selektive Zurücksetzung des Benutzerkontos und der -daten durch.  Weitere Informationen darüber, welche Daten mit dem selektiven Zurücksetzen entfernt werden, finden Sie unter [Zurücksetzen nur von Unternehmensdaten in einer in Intune verwalteten App](https://docs.microsoft.com/en-us/intune/apps-selective-wipe). <br><br> | 90 Tage |
 | **App-PIN deaktivieren, wenn die Geräte-PIN verwaltet wird** | Wählen Sie **Ja**, um die App-PIN zu deaktivieren, wenn eine Gerätesperre auf einem registrierten Gerät erkannt wird. | Nein |
 | **iOS-Mindestbetriebssystem anfordern** | Wählen Sie **Ja**, um zum Verwenden dieser App ein iOS-Mindestbetriebssystem anzufordern. Der Zugriff des Benutzers wird blockiert, wenn die iOS-Version auf dem Gerät diese Anforderung nicht erfüllt. Diese Richtlinie unterstützt nur ein einzelnes Dezimaltrennzeichen, z.B. iOS 10.3. | Nein |
 | **iOS-Mindestbetriebssystem anfordern (nur Warnung)** | Wählen Sie **Ja**, um zum Verwenden dieser App ein iOS-Mindestbetriebssystem anzufordern. Dem Benutzer wird eine Benachrichtigung angezeigt, wenn die iOS-Version auf dem Gerät diese Anforderung nicht erfüllt. Diese Benachrichtigung kann verworfen werden. Diese Richtlinie unterstützt nur ein einzelnes Dezimaltrennzeichen, z.B. iOS 10.3. | Nein |

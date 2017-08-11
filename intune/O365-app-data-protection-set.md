@@ -6,7 +6,7 @@ keywords:
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 01/09/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d21b6a03cdc8094bc8da3cecd5331b3f11400302
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>So erleben Ihre Benutzer den grundlegenden Schutz in verwalteten Office 365-Apps
 
@@ -48,15 +48,14 @@ In diesem Artikel wird OneDrive for Business als Beispiel verwendet, um die Benu
 
 1. Starten Sie die OneDrive for Business-App, um die Anmeldeseite zu öffnen.  <br/> ![Abbildung des OneDrive-Anmeldebildschirm unter iOS](./media/onedrive-ios-sign-in.png)
 2. Geben Sie den Benutzernamen Ihres Geschäftskontos ein. Sie werden zur Seite „Office 365-Authentifizierung“ umgeleitet, auf der Sie Ihre Unternehmensanmeldeinformationen eingeben können. <br/> ![Abbildung der Office 365-Anmeldeseite](./media/o365-sign-in-ios.png)
-3. Nach der erfolgreichen Authentifizierung Ihrer Anmeldeinformationen durch Azure Active Directory werden die MAM-Richtlinien (Mobile Device Management, Verwaltung mobiler Geräte) angewendet, und Sie werden aufgefordert, die OneDrive for Business-App neu zu starten.  <br/>![Abbildung der Aufforderung zum Neustart für iOS](./media/ios-restart-prompt.png)
->[!NOTE]
->Die Meldung „Neustart erforderlich“ wird nur auf Geräten angezeigt, die nicht bei Intune registriert sind.
+3. Nach der erfolgreichen Authentifizierung Ihrer Anmeldeinformationen durch Azure Active Directory werden die App-Schutzrichtlinien angewendet, und Sie werden aufgefordert, die OneDrive for Business-App neu zu starten.  <br/>![Abbildung der Aufforderung zum Neustart für iOS](./media/ios-restart-prompt.png)    
+  > [!NOTE]
+  > Die Meldung „Neustart erforderlich“ wird nur auf Geräten angezeigt, die nicht bei Intune registriert sind.
 
 
-4. Starten Sie die OneDrive for Business-App neu. Die Anwendung wird mit aktivierten MAM-Richtlinien gestartet, und Sie werden aufgefordert, eine PIN für das Gerät festzulegen (sofern Sie noch keine PIN für das Gerät konfiguriert haben). <br/> ![Abbildung der Aufforderung für die PIN-Erstellung](./media/pin-prompt-ios.png)
-
->[!NOTE]
->Den meisten Benutzern wird diese Aufforderung nicht angezeigt. Nur Benutzer, die auf ihrem iOS-Gerät keine PIN aktiviert haben, werden diese Meldung sehen.
+4. Starten Sie die OneDrive for Business-App neu. Die Anwendung wird mit aktivierten App-Schutzrichtlinien gestartet, und Sie werden aufgefordert, eine PIN für das Gerät festzulegen (sofern Sie noch keine PIN für das Gerät konfiguriert haben). <br/> ![Abbildung der Aufforderung für die PIN-Erstellung](./media/pin-prompt-ios.png)    
+  > [!NOTE]
+  > Den meisten Benutzern wird diese Aufforderung nicht angezeigt. Nur Benutzer, die auf ihrem iOS-Gerät keine PIN aktiviert haben, werden diese Meldung sehen.
 
 
 5. Nachdem Sie die PIN festgelegt und bestätigt haben, kehren Sie zur OneDrive for Business-App zurück. Sie sehen eine einmalige Benachrichtigung, dass der IT-Administrator Arbeitsdaten in OneDrive jetzt schützt. <br/> ![Abbildung der einmaligen Benachrichtigung von Ihrem IT-Administrator](./media/one-time-notice.png)
@@ -70,9 +69,9 @@ In diesem Artikel wird OneDrive for Business als Beispiel verwendet, um die Benu
 
 1. Starten Sie die OneDrive for Business-App, um die Anmeldeseite zu öffnen.  <br/> ![Abbildung des Begrüßungsbildschirms der OneDrive-App](./media/onedrive-android-welcome.png)
 2. Geben Sie den Benutzernamen Ihres Geschäftskontos ein. Sie werden zur Seite „Office 365-Authentifizierung“ umgeleitet, auf der Sie Ihre Unternehmensanmeldeinformationen eingeben können. <br/> ![Abbildung der Office 365-Anmeldung unter Android](./media/o365-sign-in-android.png)
-3. Nach der erfolgreichen Authentifizierung Ihrer Anmeldeinformationen durch Azure Active Directory wird eine Meldung mit Anweisungen zur Installation der Unternehmensportal-App angezeigt, sofern diese auf dem Gerät noch nicht installiert ist. Tippen Sie auf **Zum Store gehen**, um den Vorgang fortzusetzen. <br/> ![Abbildung der Benachrichtigung zur Installation der Unternehmensportal-App](./media/get-company-portal-android.png) <br/>Wenn Sie die Unternehmensportal-App bereits auf Ihrem Telefon installiert haben, wird die OneDrive for Business-App automatisch gestartet, und Sie können bis zum Ende des Hinweises überspringen.
->[!IMPORTANT]
->Wenn Sie unter Android einmal die Verwaltung von Office-Apps durch eine MAM-Richtlinie festgelegt haben, **müssen** Benutzer des Geräts die Unternehmensportal-App installieren, um Zugriff auf Arbeits-E-Mails und -dokumente zu erhalten, obwohl der Endbenutzer die App nicht öffnen oder sich in dieser anmelden muss, um E-Mails oder Dokumente zu lesen.
+3. Nach der erfolgreichen Authentifizierung Ihrer Anmeldeinformationen durch Azure Active Directory wird eine Meldung mit Anweisungen zur Installation der Unternehmensportal-App angezeigt, sofern diese auf dem Gerät noch nicht installiert ist. Tippen Sie auf **Zum Store gehen**, um den Vorgang fortzusetzen. <br/> ![Abbildung der Benachrichtigung zur Installation der Unternehmensportal-App](./media/get-company-portal-android.png) <br/>Wenn Sie die Unternehmensportal-App bereits auf Ihrem Telefon installiert haben, wird die OneDrive for Business-App automatisch gestartet, und Sie können bis zum Ende des Hinweises überspringen.    
+  > [!IMPORTANT]
+  > Wenn Sie unter Android einmal die Verwaltung von Office-Apps durch eine App-Schutzrichtlinie festgelegt haben, **müssen** Benutzer des Geräts die Unternehmensportal-App installieren, um Zugriff auf Arbeits-E-Mails und -dokumente zu erhalten, obwohl der Endbenutzer die App nicht öffnen oder sich in dieser anmelden muss, um E-Mails oder Dokumente zu lesen.
 
 4. Sie befinden sich nun im Google Play Store, von wo Sie die Unternehmensportal-App herunterladen und installieren können. Die App hilft Ihnen, Ihre Daten zu schützen. <br/> ![Abbildung der App im Google Play Store](./media/google-play-get-app-android.png)
 5. Wählen Sie nach Abschluss der App-Installation **Annehmen** aus, um die Bedingungen zu akzeptieren. Die OneDrive for Business-App wird automatisch gestartet.
@@ -118,9 +117,9 @@ In diesem Artikel wird OneDrive for Business als Beispiel verwendet, um die Benu
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>Warum nur für Android-Geräte eine App-PIN-Richtlinie konfiguriert?
 Die Verschlüsselung funktioniert unter iOS und Android unterschiedlich.
 
-Für Apps unter iOS, die einer Intune-MAM-Richtlinie zugeordnet sind, werden ruhende Daten mit vom Betriebssystem bereitgestellter Verschlüsselung auf Geräteebene verschlüsselt. Wenn Sie die App-Verschlüsselungsrichtlinie aktivieren, muss der Benutzer auch automatisch eine Geräte-PIN besitzen und eingeben, um auf Arbeitsdaten zugreifen zu können. Benutzer, die auf dem Gerät noch keine Geräte-PIN konfiguriert haben, werden zum Erstellen einer Geräte-PIN aufgefordert.
+Für Apps unter iOS, die einer Intune-App-Schutzrichtlinie zugeordnet sind, werden ruhende Daten mit vom Betriebssystem bereitgestellter Verschlüsselung auf Geräteebene verschlüsselt. Wenn Sie die App-Verschlüsselungsrichtlinie aktivieren, muss der Benutzer auch automatisch eine Geräte-PIN besitzen und eingeben, um auf Arbeitsdaten zugreifen zu können. Benutzer, die auf dem Gerät noch keine Geräte-PIN konfiguriert haben, werden zum Erstellen einer Geräte-PIN aufgefordert.
 
-Unter Android werden für Daten für Apps, die einer Intune-MAM-Richtlinie zugeordnet sind, während der E/A-Dateivorgänge synchron verschlüsselt. Inhalt im Gerätespeicher wird immer verschlüsselt. Auf Geräten, die nicht MDM-verwaltet sind, kann die MAM-Richtlinie die Anforderung einer Geräte-PIN auch nicht erzwingen. Um sicherzustellen, dass Benutzer einige PIN für den Zugriff auf Arbeitsdaten verwenden müssen, aktiviert der Assistent die App-PIN-Richtlinie.
+Unter Android werden für Daten für Apps, die einer Intune-App-Schutzrichtlinie zugeordnet sind, während der E/A-Dateivorgänge synchron verschlüsselt. Inhalt im Gerätespeicher wird immer verschlüsselt. Auf Geräten, die nicht MDM-verwaltet sind, kann die App-Schutzrichtlinie die Anforderung einer Geräte-PIN auch nicht erzwingen. Um sicherzustellen, dass Benutzer einige PIN für den Zugriff auf Arbeitsdaten verwenden müssen, aktiviert der Assistent die App-PIN-Richtlinie.
 
 Sie können diese Richtlinieneinstellungen jederzeit an die Anforderungen Ihrer Organisation anpassen.
 

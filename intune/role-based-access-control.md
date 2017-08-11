@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2302b0e53254b945215aadbb13107c85f345412
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
+ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Rollenbasierte Zugriffssteuerung mit Intune
 
@@ -57,9 +57,9 @@ Nur Benutzer mit der Rolle **Intune-Dienstadministrator** mit Vollzugriffsberech
 
 Die folgenden Rollen sind in Intune integriert. Sie können sie ohne weitere Konfiguration Gruppen zuweisen:
 
-- **Support**: Führt Remoteaufgaben für Benutzer und Geräte durch und kann Anwendungen oder Richtlinien Benutzern oder Geräten zuweisen. 
+- **Support**: Führt Remoteaufgaben für Benutzer und Geräte durch und kann Anwendungen oder Richtlinien Benutzern oder Geräten zuweisen.
 - **Richtlinien- und Profil-Manager**: Verwaltet Konformitätsrichtlinien, Konfigurationsprofile, die Apple-Registrierung und unternehmensbezogene Geräte-IDs.
-- **Operator mit beschränkter Leseberechtigung**: Kann Benutzer-, Geräte-, Registrierungs-, Konfigurations- und Anwendungsinformationen anzeigen, aber keine Änderungen an Intune vornehmen.
+- **Operator mit beschränkter Leseberechtigung**: Kann Benutzer-, Geräte-, Registrierungs-, Konfigurations- und Anwendungsinformationen anzeigen. Es können keine Änderungen in Intune vorgenommen werden.
 - **Anwendungs-Manager**: Verwaltet mobile und verwaltete Anwendungen und kann Geräteinformationen lesen.
 
 ### <a name="to-assign-a-built-in-role"></a>So weisen Sie eine integrierte Rolle zu
@@ -68,9 +68,9 @@ Die folgenden Rollen sind in Intune integriert. Sie können sie ohne weitere Kon
 
 2. Wählen Sie auf dem Blatt <*Rollenname*> – **Eigenschaften** erst **Verwalten** und dann **Zuweisungen** aus.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Sie können die integrierten Rollen nicht löschen oder bearbeiten.
-    
+
 3. Wählen Sie auf dem Blatt „Benutzerdefinierte Rolle“ **Zuweisen** aus.
 
 4. Geben Sie auf dem Blatt **Rollenzuweisungen** einen **Namen** und eine optionale **Beschreibung** für die Zuweisung ein, und wählen Sie dann Folgendes aus:

@@ -1,37 +1,35 @@
 ---
 title: Intune-Glossar
-titleSuffix: Intune on Azure
+titleSuffix: 
 description: "Erläuterungen zur Microsoft Intune-Terminologie"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: a9b43fc1a1877a3fc8bf4c5ee00e02dfee3cdea8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune-Glossar
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="a"></a>A
 
 |||
 |-|-|
 |App-Zuweisung|Ermöglicht Benutzern das [Auffinden, Herunterladen und Installieren ](/intune/app-management) der Apps, die sie benötigen. Dies wurde zuvor *App-Bereitstellung* genannt.|
-|App-Konfigurationsprofil|Konfiguriert eine [iOS](/intune/app-configuration-policies-use-ios)- oder [Android](/intune/app-configuration-policies-use-android)-App mit bestimmten Einstellungen, ehe sie ausgeführt wird.|
+|App-Konfigurationsprofil <br/><br/>App-Konfigurationsrichtlinie|Für mobile Apps mit herstellerspezifischen Konfigurationen. Konfiguriert eine [iOS](/intune/app-configuration-policies-use-ios)- oder [Android](/intune/app-configuration-policies-use-android)-App mit bestimmten Einstellungen, ehe sie ausgeführt wird.|
 |App-Überwachung|Ermöglicht das [Überprüfen des aktuellen Status und der letzten Aktivität](/intune/apps-monitor) im Zusammenhang mit der App-Zuweisung.|
 |Aufgabe zum Entfernen von App-Schutzdaten|[Entfernt App-Daten](/intune/app-protection-policies) vom Gerät des Benutzers.|
-|App-Schutzrichtlinie|Stellt sicher, dass Apps des Benutzers mit den [Datenschutzrichtlinien Ihres Unternehmens](/intune/app-protection-policies) konform sind.|
+|App-Schutzrichtlinie|Verfügbar für mobile Apps, die mit Enterprise Mobility + Security-Technologien (EMS) integriert werden. Stellt sicher, dass Apps des Benutzers mit den [Datenschutzrichtlinien Ihres Unternehmens](/intune/app-protection-policies) konform sind.|
 |App SDK|Das [Microsoft Intune App SDK](/intune/app-sdk) bietet Ihnen die Möglichkeit, Ihren intern entwickelten Apps Funktionen hinzuzufügen, mit denen sie von Intune-App-Schutzrichtlinien verwaltet werden können.|
 |App deinstallieren, Aktion|Ermöglicht Ihnen das [Deinstallieren von Apps](/intune/apps-deploy) von Geräten des Benutzers.|
 |App Wrapping Tool|Eine [Befehlszeilenanwendung](/intune/apps-prepare-mobile-application-management), die einen Wrapper für die branchenspezifische App erstellt, sodass diese von einer Intune-App-Schutzrichtlinie verwaltet werden kann.|
@@ -103,7 +101,7 @@ ms.lasthandoff: 07/01/2017
 |-|-|
 |Managed Browser|Eine [Webbrowseranwendung](/intune/app-configuration-managed-browser), die Sie mit Intune in Ihrer Organisation zuweisen können. Mit einer Richtlinie für Managed Browser wird eine Zulassungs- oder Blockierungsliste konfiguriert, um die Websites einzuschränken, die Benutzer von Managed Browser besuchen können.|
 |MDM-Autorität|Die [MDM-Autorität](/intune/mdm-authority-set) definiert den Verwaltungsdienst, der über die Berechtigung zum Verwalten einer Gruppe von Geräten verfügt. Die Optionen für die MDM-Autorität umfassen Intune selbst und Configuration Manager mit Intune.|
-|Richtlinie zur Konfiguration mobiler Apps|Eine [iOS](/intune/app-configuration-policies-use-ios)- oder [Android](/intune/app-configuration-policies-use-android)-Richtlinie, die zum Angeben von Einstellungen für kompatible Apps bei deren Ausführung verwendet wird, beispielsweise zur Angabe eines Firmennamens oder einer Serveradresse.|
+|Richtlinie zur Konfiguration mobiler Apps|Für mobile Apps mit herstellerspezifischen Konfigurationen. Eine [iOS](/intune/app-configuration-policies-use-ios)- oder [Android](/intune/app-configuration-policies-use-android)-Richtlinie, die zum Angeben von Einstellungen für kompatible Apps bei deren Ausführung verwendet wird, beispielsweise zur Angabe eines Firmennamens oder einer Serveradresse.|
 |Richtlinie zur Bereitstellung mobiler Apps|Eine iOS-Richtlinie, mit der Sie sicherstellen können, dass die [Bereitstellungsprofile](/intune/app-provisioning-profile-ios) für die von Ihnen zugewiesenen iOS-Apps nicht ablaufen.|
 |Mobile Anwendungsverwaltung|Mit der [mobilen Anwendungsverwaltung (Mobile Application Management, MAM)](/intune/app-lifecycle) können Sie mobile Apps für Ihre Benutzer veröffentlichen, per Push bereitstellen, konfigurieren, schützen, überwachen und aktualisieren.
 |Verwaltung mobiler Geräte|Mit der [Verwaltung mobiler Geräte (Mobile Device Management, MDM)](/intune/device-lifecycle) können Sie Geräte in Intune registrieren, sodass Sie diese Gräte bereitstellen, konfigurieren, überwachen und verwalten können.
@@ -131,7 +129,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="s"></a>S
 |||
 |-|-|
-|Selektives Zurücksetzen|Bei einer [selektiven Zurücksetzung](/intune/device-company-data-remove) werden nur Unternehmensdaten und ggf. auch MAM-Daten sowie Einstellungen und E-Mail-Profile vom Gerät entfernt. Die persönlichen Daten des Benutzers bleiben beim selektiven Zurücksetzen auf dem Gerät erhalten.|
+|Selektives Zurücksetzen|Bei einer [selektiven Zurücksetzung](/intune/device-company-data-remove) werden nur Unternehmensdaten, die von der App-Schutzrichtlinie geschützt werden, einschließlich Einstellungen und E-Mail-Profile, vom Gerät entfernt. Die persönlichen Daten des Benutzers bleiben beim selektiven Zurücksetzen auf dem Gerät erhalten.|
 |Sideloading|Die Aktion der Installation einer branchenspezifischen App, ohne auf diese in einem App-Store zuzugreifen.|
 |Abonnement|Die von Ihnen eingegangene Vereinbarung, die Ihnen den Zugriff auf einen Intune-Mandanten ermöglicht.|
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b08a097e785f85d8b9260cdaa60e720ed88cb4a1
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekannte Probleme in Microsoft Intune
 
@@ -37,7 +37,7 @@ Wenn Sie sich ein neues Feature für Intune wünschen, können Sie auf unserer [
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Während der Migration von Intune erstellte Gruppen könnten die Funktionalität anderer Microsoft-Produkte beeinträchtigen.
 
-Beim Migrieren von klassischem Intune zu Intune in Azure wird ggf. eine neue Gruppe mit dem Namen **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** angezeigt. Diese Gruppe enthält alle Benutzer in Ihrem Azure Active Directory, nicht nur Benutzer mit Intune-Lizenz. Dies könnte zu Problemen mit anderen Microsoft-Produkten führen, wenn Sie erwarten, dass einige vorhandene oder neue Benutzer nicht Mitglieder von Gruppen sind.
+Beim Migrieren vom klassischen Intune zum Azure-Portal könnten Sie eine neue Gruppe mit dem Namen **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** sehen. Diese Gruppe enthält alle Benutzer in Ihrem Azure Active Directory, nicht nur Benutzer mit Intune-Lizenz. Dies könnte zu Problemen mit anderen Microsoft-Produkten führen, wenn Sie erwarten, dass einige vorhandene oder neue Benutzer nicht Mitglieder von Gruppen sind.
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>Sekundäre Migration für ausgewählte Funktionen erforderlich
 
@@ -56,7 +56,7 @@ Da diese Funktionen nicht über die klassischen Silverlight- und Azure-Konsolen 
 Wenn Sie diese Intune-Funktionen nun im Azure-Portal verwalten, achten Sie auf die folgenden Punkte:
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Profile für die Unternehmensgeräteregistrierung im Apple-Programm zur Geräteregistrierung (DEP) wurden entfernt.
-Das Azure-Portal unterstützt nicht das Standardprofil für Unternehmensgeräteregistrierungen für Geräte im Apple-Programm zur Geräteregistrierung. Diese Funktion, die in der klassischen Silverlight Intune-Konsole zur Verfügung steht, wird nicht fortgeführt, um unbeabsichtigte Zuweisungen von Profilen zu verhindern. Wenn DEP-Seriennummern im Azure-Portal synchronisiert werden, wird kein Profil zur Unternehmensgeräteregistrierung zugewiesen. Vor der Nutzung des Geräts muss ein Registrierungsprofil zugewiesen werden.
+Das Azure-Portal unterstützt nicht das Standardprofil für Unternehmensgeräteregistrierungen für Geräte im Apple DEP. Diese Funktion, die in der klassischen Silverlight Intune-Konsole zur Verfügung steht, wird nicht fortgeführt, um unbeabsichtigte Zuweisungen von Profilen zu verhindern. Wenn DEP-Seriennummern im Azure-Portal synchronisiert werden, wird kein Profil zur Unternehmensgeräteregistrierung zugewiesen. Vor der Nutzung des Geräts muss ein Registrierungsprofil zugewiesen werden.
 
 #### <a name="apple-dep-token-restored-with-migration"></a>Apple DEP-Token bei Migration wiederhergestellt
 
@@ -64,8 +64,7 @@ Wenn Sie ein Token für das Apple-Programm zur Geräteregistrierung im klassisch
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Statusblätter für migrierte Richtlinien funktionieren nicht
 
-Sie können keine Statusinformationen für Richtlinien anzeigen, die aus dem klassischen Intune-Portal in das Azure-Portal migriert wurden. Im klassischen Portal können Sie jedoch weiterhin Berichte für diese Richtlinien anzeigen.
-Zum Anzeigen von Statusinformationen für migrierte Konfigurationsrichtlinien müssen Sie diese im Azure-Portal neu erstellen.
+Sie können keine Statusinformationen für Richtlinien anzeigen, die aus dem klassischen Intune-Portal in das Azure-Portal migriert wurden. Im klassischen Portal können Sie jedoch weiterhin Berichte für diese Richtlinien anzeigen. Zum Anzeigen von Statusinformationen für migrierte Konfigurationsrichtlinien müssen Sie diese im Azure-Portal neu erstellen.
 
 ## <a name="apps"></a>Apps
 
@@ -111,7 +110,7 @@ Weitere Informationen finden Sie unter [Was ist die Gerätekonformität in Intun
 
 ### <a name="ios-app-protection-policies"></a>iOS-App-Schutzrichtlinien
 
-Sie können [App-Schutzrichtlinien für iOS](app-protection-policy-settings-ios.md) definieren, die für Benutzer auf Geräten verfügbar sind, die über MAM ohne Registrierung verwaltet werden. Aufgrund eines temporären Fehlers können Sie diese Richtlinien nur für iOS-Versionen mit einer Version mit einem einzelnen Dezimaltrennzeichen anstatt mehreren Dezimaltrennzeichen definieren. Anstatt also eine Mindestversion von iOS 10.3.1 festzulegen, legen Sie sie für iOS 10.3. fest. Diese Problem wird mit einem zukünftigen Update für das iOS SDK gelöst.
+Sie können [App-Schutzrichtlinien für iOS](app-protection-policy-settings-ios.md) definieren, die für Benutzer auf Geräten verfügbar sind, die über die Verwaltung mobiler Geräte (MAM) ohne Registrierung verwaltet werden. Aufgrund eines temporären Fehlers können Sie diese Richtlinien nur für iOS-Versionen mit einer Version mit einem einzelnen Dezimaltrennzeichen anstatt mehreren Dezimaltrennzeichen definieren. Anstatt also eine Mindestversion von iOS 10.3.1 festzulegen, legen Sie sie für iOS 10.3. fest. Diese Problem wird mit einem zukünftigen Update für das iOS SDK gelöst.
 
 
 ## <a name="administration-and-accounts"></a>Verwaltung und Konten

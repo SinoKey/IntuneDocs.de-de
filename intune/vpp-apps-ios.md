@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b7ce81eb63a81534af2911b34904d870ac41ad
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 433cec8e0bc2012090e680e0a28a9a77d7b13a38
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS-Apps, die über ein Volumenprogramm mit Microsoft Intune erworben wurden
 
@@ -33,6 +33,19 @@ Microsoft Intune hilft Ihnen beim Verwalten von Apps, die Sie über dieses Progr
 - Importieren der Lizenzinformationen aus dem App-Store
 - Nachverfolgen, wie viele Lizenzen bereits verwendet wurden
 - Verhindern, dass Sie mehr Kopien der App installieren, als Sie besitzen
+
+Es gibt zwei Methoden, die Sie zum Zuweisen von per Volumenlizenz erworbenen Apps verwenden können:
+
+### <a name="device-licensing"></a>Gerätelizenzierung
+
+Wenn Sie eine App einem Gerät zuweisen, wird eine App-Lizenz verwendet, und die Zuordnung dieser App zu diesem Gerät, zu dem Sie sie zugewiesen haben, bleibt erhalten.
+Wenn Sie per Volumenlizenz erworbene Apps einem Gerät zuweisen, muss der Endbenutzer des Geräts keine Apple-ID für den Zugriff auf den Store bereitstellen. 
+
+### <a name="user-licensing"></a>Benutzerlizenzierung
+
+Wenn Sie Benutzern eine App zuweisen, wird eine App-Lizenz für den Benutzer verwendet und ihm zugewiesen. Die App kann auf mehren Geräten des Benutzers ausgeführt werden.
+Wenn Sie Benutzern eine per Volumenlizenz erworbene App zuweisen, muss jeder Endbenutzer über eine gültige Apple-ID verfügen, um auf den App Store zugreifen zu können.
+
 
 Außerdem können Sie Bücher, die Sie aus dem Apple-VPP-Store mit Intune gekauft haben, synchronisieren und verwalten. Verwenden Sie die Arbeitsauslastung **Books** (Bücher) im Intune-Portal, um Bücher zu verwalten. Die Verfahren zum Verwalten der Bücher sind identisch mit denen zum Verwalten von Apps.
 Sie müssen ein Apple-VPP-Token hochgeladen haben, bevor Sie beginnen. Derzeit können Sie Bücher nur als **Required**-Installation (erforderlich) zuweisen.
@@ -81,24 +94,28 @@ Sie können die von Apple gespeicherten Daten jederzeit mit Intune synchronisier
 
 ## <a name="to-assign-a-volume-purchased-app"></a>So weisen Sie per Volumenlizenz erworbene Apps zu
 
-1. Wählen Sie in der Workload **Mobile Apps** die Option **Verwalten** > **Lizenzierte Apps** aus.
-2. Wählen Sie auf dem Blatt mit der Liste der Apps die App, die Sie zuweisen möchten, und dann „**...**“ > **Gruppen zuweisen** aus.
-3. Wählen Sie auf dem Blatt <*App-Name*> - **Zugewiesene Gruppen** die Option **Verwalten** > **Gruppen zugewiesen** aus.
-4. Wählen Sie **Gruppen zuweisen** und dann auf dem Blatt **Gruppen auswählen** den Azure AD-Benutzer oder Gerätegruppen aus, denen Sie die App zuweisen möchten.
-Sie müssen eine Zuweisungsaktion vom Typ **Erforderlich** auswählen. Darüber hinaus sind Zuweisungen zu Gerätegruppen für neu erstellte Mandanten nach Januar 2017 verfügbar. Wenn Ihr Mandant vor diesem Datum erstellt wurde, und Sie nicht über die Möglichkeit verfügen, Gerätegruppen VPP-Apps hinzuzufügen, wenden Sie sich an den Intune-Support.
-5. Wählen Sie abschließend **Speichern** aus.
+1.  Wählen Sie in der Workload **Mobile Apps** die Option **Verwalten** > **App-Lizenzen** aus.
+2.  Wählen Sie auf dem Blatt mit der Liste der Apps die App, die Sie zuweisen möchten, und dann „**...**“ > **Gruppen zuweisen** aus.
+3.  Wählen Sie auf dem Blatt *<app name>* - **Zuweisungen** die Optionen **Verwalten** > **Zuweisungen** aus.
+4.  Wählen Sie **Gruppen auswählen** und dann auf dem Blatt **Gruppen auswählen** den Azure AD-Benutzer oder Gerätegruppen aus, denen Sie die App zuweisen möchten.
+5.  Wählen Sie für jede von Ihnen ausgewählte Gruppe die folgenden Einstellungen aus:
+    - **Typ**: Wählen Sie aus, ob die App **verfügbar** (Endbenutzer können die App aus dem Unternehmensportal aus installieren) oder **erforderlich** (Die App wird automatisch auf Endbenutzergeräten installiert) sein soll.
+Wenn Sie eine VPP-App als **verfügbar** zuweisen, werden Inhalte und Lizenz der App direkt vom App Store aus zugewiesen.
+    - **Lizenztyp**: Wählen Sie zwischen **Benutzerlizenzierung** oder **Gerätelizenzierung**.
+6.  Wählen Sie abschließend **Speichern** aus.
+
 
 >[!NOTE]
 >Dies angezeigte App-Liste ist mit einem Token verknüpft. Wenn Sie eine App haben, die mit mehreren VPP-Token verknüpft ist, wird die App mehrmals angezeigt: für jedes Token einmal.
 
-Weitere Informationen zum Überwachen von App-Zuweisungen finden Sie unter [Überwachen von Apps](apps-monitor.md).
-
 ## <a name="further-information"></a>Weitere Informationen
 
-Wenn Sie die Anwendung als **erforderliche** Installation zuweisen, verwendet jeder Benutzer, der die App installiert, eine Lizenz.
-
-Zum Freigeben einer Lizenz müssen Sie die Zuweisungsaktion in **Deinstallieren** ändern. Die Lizenz wird freigegeben, wenn die App deinstalliert wird.
+Zum Freigeben einer Lizenz müssen Sie die Zuweisungsaktion in „Deinstallieren“ ändern. Die Lizenz wird freigegeben, wenn die App deinstalliert wird.
 
 Wenn ein Benutzer mit einem geeigneten Gerät erstmals versucht, eine VPP-App zu installieren, wird er aufgefordert, am Volume Purchase Program (VPP) von Apple teilzunehmen. Die Teilnahme muss erfolgen, bevor die App-Installation fortgesetzt wird. Die Einladung, am Apple Volume Purchase Program teilzunehmen, erfordert, dass der Benutzer die iTunes-App auf dem iOS-Gerät verwenden kann. Wenn Sie eine Richtlinie aufgestellt haben, um die iTunes Store-App zu deaktivieren, funktioniert die benutzerbasierte Lizenzierung für VPP-Apps nicht. Die Lösung besteht darin, die iTunes-App durch Entfernen der Richtlinie zuzulassen oder die gerätebasierte Lizenzierung zu verwenden.
 
-Wenn Sie eine VPP-App als verfügbar zuweisen, werden Inhalte und Lizenz der App direkt vom App Store aus zugewiesen.
+
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Weitere Informationen zum Überwachen von App-Zuweisungen finden Sie unter [Überwachen von Apps](apps-monitor.md).

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 361777884187937632b2af02d7a7f15f0574193f
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: 4a8053e54dcad692380b6762b22411f271337f29
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Android for Work-Geräte in Microsoft Intune
 
@@ -27,8 +27,8 @@ ms.lasthandoff: 07/12/2017
 
 ## <a name="work-profile-settings"></a>Arbeitsprofileinstellungen
 - **Datenfreigabe zwischen Arbeitsprofilen und persönlichen Profilen** – Verwenden Sie diese Einstellung, um zu steuern, ob Apps im Arbeitsprofil Daten für Apps im persönlichen Profil freigeben können. Durch diese Einstellung werden Freigabeaktionen in Anwendungen (z.B. die Option **Freigeben...** in der Browser-App Chrome) gesteuert. Sie wird nicht auf das Verhalten beim Kopieren von Daten in die Zwischenablage und Einfügen angewendet. Im Gegensatz zu [Richtlinieneinstellungen für den App-Schutz](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) werden Einstellungen für Geräteeinschränkungen über das Intune-Portal verwaltet und mithilfe der Android for Work-Arbeitsprofilpartition zum Isolieren von verwalteten Apps eingesetzt. Wählen Sie aus:
-    - **Standardeinschränkungen für Freigabe**: Dies ist das standardmäßige Freigabeverhalten des Geräts, das abhängig von der ausgeführten Android-Version variiert. Standardmäßig ist die Freigabe von Daten des persönlichen Profils für das Arbeitsprofil zulässig. Die Freigabe von Daten des Arbeitsprofils für das persönliche Profil ist dagegen standardmäßig blockiert. Dadurch wird die Freigabe von Daten des Arbeitsprofils für das persönliche Profil verhindert. Google bietet auf Geräten, auf denen die Version 6.0 und höher ausgeführt wird, keine Möglichkeit, um die Freigabe von Daten aus dem persönlichen Profil für das Arbeitsprofil zu blockieren.   
-    - **Apps im Arbeitsprofil können Freigabeanforderungen vom persönlichen Profil verarbeiten**: Aktivieren Sie mit dieser Option das integrierte Android-Feature, dass die Freigabe vom persönlichen Profil aus im Arbeitsprofil ermöglicht. Wenn diese Option aktiviert ist, können Daten durch eine Freigabeanfrage einer App im persönlichen Profil für Apps im Arbeitsprofil freigegeben werden. Dies ist das Standardverhalten für Android-Geräte, die frühere Versionen als 6.0 ausführen.
+    - **Standardeinschränkungen für Freigabe**: Diese Einstellung ist das standardmäßige Freigabeverhalten des Geräts, das abhängig von der ausgeführten Android-Version variiert. Standardmäßig ist die Freigabe von Daten des persönlichen Profils für das Arbeitsprofil zulässig. Die Freigabe von Daten des Arbeitsprofils für das persönliche Profil ist dagegen standardmäßig blockiert. Durch diese Einstellung wird die Freigabe von Daten des Arbeitsprofils für das persönliche Profil verhindert. Google bietet auf Geräten, auf denen die Version 6.0 und höher ausgeführt wird, keine Möglichkeit, um die Freigabe von Daten aus dem persönlichen Profil für das Arbeitsprofil zu blockieren.   
+    - **Apps im Arbeitsprofil können Freigabeanforderungen vom persönlichen Profil verarbeiten**: Aktivieren Sie mit dieser Option das integrierte Android-Feature, dass die Freigabe vom persönlichen Profil aus im Arbeitsprofil ermöglicht. Wenn diese Option aktiviert ist, können Daten durch eine Freigabeanfrage einer App im persönlichen Profil für Apps im Arbeitsprofil freigegeben werden. Diese Einstellung ist das Standardverhalten für Android-Geräte, die frühere Versionen als 6.0 ausführen.
     - **Grenzübergreifende Freigabe zulassen** – Diese Option ermöglicht die Freigabe von Daten in beide Richtungen über die Begrenzungen des Arbeitsprofils hinaus. Wenn Sie diese Einstellung auswählen, können Apps im Arbeitsprofil Daten für Apps ohne Badgeverwendung im persönlichen Profil freigeben. Verwenden Sie diese Einstellung mit Vorsicht, da sie verwalteten Apps im Arbeitsprofil die Freigabe von Daten für Apps auf der nicht verwalteten Seite des Geräts ermöglicht.
 
 -   **Arbeitsprofilbenachrichtigungen bei Gerätesperre** – Durch diese Option wird gesteuert, ob Apps im Arbeitsprofil Daten in Benachrichtigungen anzeigen können, wenn das Gerät gesperrt ist.
@@ -57,9 +57,9 @@ ms.lasthandoff: 07/12/2017
     - **Mindestens alphanumerisch mit Symbolen**
 - **Wiederverwendung vorheriger Kennwörter verhindern**: Geben Sie die Anzahl neuer Kennwörter ein (von **1**-**24**), die verwendet werden müssen, bevor ein altes wiederverwendet werden kann.
 - **Entsperrung durch Fingerabdruck**: Verhindert, dass ein Endbenutzer das Gerät mithilfe des Fingerabdruckscanners entsperren kann.
-- **Smart Lock und andere Vertrauens-Agents**: Ermöglicht Ihnen die Steuerung des Smart Lock-Features auf kompatiblen Geräten. Diese Telefonfunktion wird manchmal als Vertrauens-Agent bezeichnet und ermöglicht Ihnen das Deaktivieren oder Umgehen des Arbeitsprofilkennworts, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet (wenn es z.B. mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet). Sie können mit dieser Einstellung verhindern, dass Benutzer Smart Lock konfigurieren.
+- **Smart Lock und andere Vertrauens-Agents**: Ermöglicht Ihnen die Steuerung des Smart Lock-Features auf kompatiblen Geräten. Diese Telefonfunktion wird manchmal als Vertrauens-Agent bezeichnet und ermöglicht Ihnen das Deaktivieren oder Umgehen des Kennworts für das Arbeitsprofil, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet, (wenn es z.B. mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet). Mit dieser Einstellung können Sie verhindern, dass Benutzer Smart Lock konfigurieren.
 
-## <a name="password"></a>Kennwort
+## <a name="device-password"></a>Gerätekennwort
 
 - **Minimale Kennwortlänge:** Geben Sie die Mindestanzahl (von **4**-**14**) an Ziffern oder Zeichen an, die das Benutzerkennwort enthalten muss.
 - **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung**: Wählen Sie den Zeitraum, nach dessen Verstreichen ein inaktives Gerät automatisch gesperrt wird.
@@ -76,7 +76,7 @@ ms.lasthandoff: 07/12/2017
     - **Mindestens alphanumerisch mit Symbolen**
 - **Wiederverwendung vorheriger Kennwörter verhindern**: Geben Sie die Anzahl neuer Kennwörter ein (von **1**-**24**), die verwendet werden müssen, bevor ein altes wiederverwendet werden kann.
 - **Entsperrung durch Fingerabdruck**: Verhindert, dass ein Endbenutzer das Gerät mithilfe des Fingerabdruckscanners entsperren kann.
-- **Smart Lock und andere Vertrauens-Agents**: Ermöglicht Ihnen die Steuerung des Smart Lock-Features auf kompatiblen Geräten. Diese Telefonfunktion wird manchmal als Vertrauens-Agent bezeichnet und ermöglicht Ihnen das Deaktivieren oder Umgehen des Kennworts für den Gerätesperrbildschirm, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet, (wenn es z.B. mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet). Sie können mit dieser Einstellung verhindern, dass Benutzer Smart Lock konfigurieren.
+- **Smart Lock und andere Vertrauens-Agents**: Ermöglicht Ihnen die Steuerung des Smart Lock-Features auf kompatiblen Geräten. Diese Telefonfunktion wird manchmal als Vertrauens-Agent bezeichnet und ermöglicht Ihnen das Deaktivieren oder Umgehen des Kennworts für den Gerätesperrbildschirm, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet, (wenn es z.B. mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet). Mit dieser Einstellung können Sie verhindern, dass Benutzer Smart Lock konfigurieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
