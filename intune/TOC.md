@@ -74,6 +74,7 @@
 #### [Einschränkungen](enrollment-restrictions-set.md)
 #### [Apple-MDM-Push-Zertifikat](apple-mdm-push-certificate-get.md)
 #### [Unternehmensbezeichner](corporate-identifiers-add.md)
+#### [Multi-Factor Authentication](multi-factor-authentication.md)
 #### [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md)
 #### [Zuweisen von Geräten zu Gruppen](device-group-mapping.md)
 ### Einrichten der Windows-Registrierung
@@ -291,7 +292,7 @@
 ## [Gewusst wie: Verwenden der Intune Graph-APIs](intune-graph-apis.md)
 ## [Intune Graph-API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
 ## [Date Warehouse-API von Intune](reports-nav-intune-date-warehouse.md)
-<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Abrufen von Daten aus der Data Warehouse-API mit einem REST-Client](reports-proc-data-rest.md)
 ### [Endpunkt der Data Warehouse-API](reports-api-url.md)
 ### [Datenmodell von Data Warehouse](reports-ref-data-model.md)
 #### [Verweis für die Datumsentität](reports-ref-date.md)
@@ -300,6 +301,6 @@
 #### [Verweis für Geräteentitäten](reports-ref-devices.md)
 #### [Verweis für Anwendungsentitäten](reports-ref-application.md)
 #### [Verweis für Richtlinienentitäten](reports-ref-policy.md)
-<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) -->
 
 # [Glossar](intune-glossary.md)
