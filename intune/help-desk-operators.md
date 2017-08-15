@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 7aad054f0861522174faa01b979083a818c106af
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 066f8668ea37e928455792f512e4e337a1f19c20
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/10/2017
 ---
-# <a name="help-users-with-the-troubleshooting-portal-in-microsoft-intune"></a>Unterstützen von Benutzern im Portal zur Problembehandlung in Microsoft Intune
+# <a name="use-the-troubleshooting-portal-to-help-users"></a>Verwenden des Problembehandlungsportals, um Benutzern zu helfen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Das Portal zur Problembehandlung ermöglicht Helpdesk-Operatoren und Intune-Administratoren das Anzeigen von Benutzerinformationen zum Beheben von Hilfeanfragen von Benutzern. Organisationen, deren Personal Helpdesk-Operatoren einschließt, können den **Helpdesk-Operator** einer Gruppe von Benutzern zuweisen, die dann über das Blatt Problembehandlung Benutzern helfen können.
+Das Portal zur Problembehandlung ermöglicht Helpdesk-Operatoren und Intune-Administratoren das Anzeigen von Benutzerinformationen zum Reagieren auf Hilfeanfragen von Benutzern. Organisationen, deren Personal Helpdesk-Operatoren einschließt, können den **Helpdesk-Operator** einer Gruppe von Benutzern zuweisen, die dann über das Blatt Problembehandlung Benutzern helfen können.
 
 Wenn ein Benutzer beispielsweise den Support wegen eines technischen Problems mit Intune kontaktiert, gibt der Helpdesk-Operator den Namen des Benutzers ein. Intune zeigt nützliche Daten, die Ihnen beim Lösen vieler Probleme der Ebene 1 helfen können, einschließlich:
 - Benutzerstatus
@@ -35,22 +35,21 @@ Wenn ein Benutzer beispielsweise den Support wegen eines technischen Problems mi
 -   Das Gerät erhält keine VPN- oder WLAN-Einstellungen
 -   App-Installationsfehler
 
-
 ## <a name="add-help-desk-operators"></a>Hinzufügen von Helpdeskoperatorn
 Als Intune-Administrator können Sie die Rolle „Helpdesk-Operator“ einer Benutzergruppe zuweisen. Mitglieder dieser Gruppe können das Administratorportal verwenden, um Probleme von Benutzern zu lösen. Jeder Helpdesk-Operator benötigt eine Intune-Lizenz zum Zugriff auf das Intune-Portal. Erfahren Sie, wie Sie [Intune-Lizenzen zuweisen](licenses-assign.md) können.
 
 So fügen Sie Helpdesk-Benutzer hinzu:
-1. [Fügen Sie Benutzer zu Intune hinzu](users-add.md) (falls nötig)
+1. [Fügen Sie Benutzer zu Intune hinzu](users-add.md), falls nötig.
 2. [Erstellen Sie eine Helpdesk-Gruppe](groups-add.md), und fügen Sie der Gruppe Benutzer hinzu.
-3. [Weisen Sie die RBAC-Helpdesk-Operatorrolle zu](role-based-access-control.md#built-in-roles), oder [erstellen Sie eine benutzerdefinierte Rolle](role-based-access-control.md#custom-roles) mit folgenden Berechtigungen:
-  - MobileApps: Lesen
-  - ManagedApps: Lesen
-  - ManagedDevices: Lesen
-  - Organization: Lesen
-  - DeviceCompliancePolices: Lesen
-  - DeviceConfigurations: Lesen
+3. [Zuweisen der RBCA-Rolle „Helpdeskbetreuer“](role-based-access-control.md#built-in-roles)
 
-  ![Screenshot des Intune-Portals mit hervorgehobenen Intune-Rollen und einer Liste von integrierten Rollen, inklusive „Helpdesk-Operator“](./media/help-desk-user-add.png)
+  ![Screenshot des Intune-Portals mit hervorgehobenen Intune-Rollen und einer Liste integrierter Rollen, darunter auch „Helpdeskbetreuer“](./media/help-desk-user-add.png) Sie können auch eine [benutzerdefinierte Rolle erstellen](role-based-access-control.md#custom-roles), die Sie weiter anpassen können, um Helpdeskbetreuern Zugriff zu gewähren.  Helpdeskbetreuer benötigen die folgenden Berechtigungen, um bei der Behebung von Problemen von Benutzern helfen zu können:
+    - MobileApps: Lesen
+    - ManagedApps: Lesen
+    - ManagedDevices: Lesen
+    - Organization: Lesen
+    - DeviceCompliancePolices: Lesen
+    - DeviceConfigurations: Lesen
 
 4. Um Helpdesk-Operatoren Berechtigungen zuzuweisen, um die Dienstintegrität anzuzeigen und Support-Tickets für Intune zu öffnen, [gewähren Sie Benutzern Berechtigungen](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal) als **Dienstadministrator**. Gewähren Sie keine **Intune-Dienstadministratorberechtigungen**, da diese Verzeichnisrolle über mehr Rechte verfügt, als für Helpdesk-Operatoren erforderlich sind.
 
