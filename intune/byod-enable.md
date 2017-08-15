@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enable-byod-with-intune"></a>Aktivieren von BYOD mit Intune
 
@@ -75,14 +75,14 @@ Mit Intune können Sie folgende Vorgänge ohne großen Aufwand durchführen:
 * [Übermitteln von Store-Apps für verwaltete Geräte](apps-deploy.md)
 * Anvisieren von Apps für nicht verwaltete Geräte über die Unternehmensportal-Website
 
-Mit Intune können Sie Apps verwalten und bereitstellen, die Sie im Rahmen von Volumenprogrammen im iOS App Store und dem Windows Store für Unternehmen erworben haben. Dadurch können Sie den Verwaltungsaufwand reduzieren, den das Nachverfolgen von erworbenen Volumenlizenzen mit sich bringt.
+Mit Intune können Sie Apps verwalten und bereitstellen, die Sie im Rahmen von Volumenprogrammen im iOS App Store und dem Microsoft Store für Unternehmen erworben haben. Dadurch können Sie den Verwaltungsaufwand reduzieren, den das Nachverfolgen von erworbenen Volumenlizenzen mit sich bringt.
 
 > [!TIP]
 > Sie können [Einmaliges Anmelden (Single Sign On, SSO) mit Azure AD Connect konfigurieren](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). Mit SSO können sich Benutzer mit dem lokal verwendeten Domänenbenutzernamen und dem zugehörigen Kennwort bei Apps anzumelden. Ferner können Sie mit dem Azure Active Directory-Anwendungsproxy [internetbasierten Zugriff auf lokal gehostete Web-Apps bereitstellen](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
 
 -   [Verwalten von Apps für iOS-Geräte, die über ein Volumenprogramm erworben wurden](vpp-apps-ios.md). Sie erwerben mehrere Lizenzen für iOS-Apps über das [Programm für Volumenlizenzen für Unternehmen (Volume Purchase Program, VPP) von Apple](http://www.apple.com/business/vpp/). Sie müssen über die Apple-Website ein Apple VPP-Konto einrichten und das Apple VPP-Token in Intune hochladen. Anschließend können Sie Ihre Informationen zum Volumenerwerb mit Intune synchronisieren und die Verwendung der im Rahmen des Volumenprogramms erworbenen App verfolgen.
 
--   [Verwalten von Apps, die im Windows Store für Unternehmen erworben wurden](windows-store-for-business.md). Im [Windows Store für Unternehmen](https://www.microsoft.com/business-store) können Sie Apps für Ihre Organisation suchen und einzeln oder im Rahmen eines Volumenprogramms erwerben. Durch die Verbindung des Stores mit Intune können Sie im Rahmen von Volumenprogrammen erworbene Apps über das Intune-Portal verwalten.
+-   [Verwalten von Apps, die im Microsoft Store für Unternehmen erworben wurden](windows-store-for-business.md). Im [Microsoft Store für Unternehmen](https://www.microsoft.com/business-store) können Sie Apps für Ihre Organisation suchen und einzeln oder im Rahmen eines Volumenprogramms erwerben. Durch die Verbindung des Stores mit Intune können Sie im Rahmen von Volumenprogrammen erworbene Apps über das Intune-Portal verwalten.
 
 ## <a name="protect-company-data"></a>Schützen von Unternehmensdaten
 
@@ -105,10 +105,10 @@ Sie können [Intune-Geräteschutz-Richtlinien](app-protection-policies.md) verwe
 
 Mithilfe von [Windows Information Protection-Richtlinien (WIP)](app-protection-policies-configure-windows-10.md) können Sie das Gleiche für verwaltete Windows 10-Geräte erreichen. Diese Richtlinien beeinträchtigen nicht die Benutzerfreundlichkeit für Mitarbeiter. Sie machen keine Änderungen an Ihrer Netzwerkumgebung oder anderen Apps erforderlich.
 
-### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>Unternehmensdaten löschen, ohne personenbezogene Daten zu beeinträchtigen
+### <a name="remove-company-data-while-leaving-personal-data-intact"></a>Entfernen von Unternehmensdaten, ohne personenbezogene Daten zu beeinträchtigen
 
-Wenn ein Gerät nicht mehr für die Arbeit benötigt wird, einem neuen Verwendungszweck dienen soll oder einfach verloren gegangen ist, müssen Sie dazu in der Lage sein, Unternehmens-Apps und -daten davon zu entfernen. Zu diesem Zweck können Sie die Intune-Funktionen zum vollständigen oder selektiven Zurücksetzen verwenden. Ihre Benutzer können über das Intune-Unternehmensportal auch ihre eigenen Geräte zurücksetzen, wenn diese Geräte in Intune registriert sind.
+Wenn ein Gerät nicht mehr für die Arbeit benötigt wird, einem neuen Verwendungszweck dienen soll oder einfach verloren gegangen ist, müssen Sie dazu in der Lage sein, Unternehmens-Apps und -daten davon zu entfernen. Dazu können Sie die Funktionen zum Entfernen von Unternehmensdaten und die Zurücksetzung auf Werkseinstellungen von Intune verwenden. Ihre Benutzer können über das Intune-Unternehmensportal auch ihre eigenen Geräte zurücksetzen, wenn diese Geräte in Intune registriert sind.
 
-[Vollständiges Zurücksetzen](devices-wipe.md) setzt ein Gerät auf die werkseitigen Standardeinstellungen zurück und entfernt alle Unternehmens- und Benutzerdaten sowie -einstellungen. [Selektives Zurücksetzen](devices-wipe.md#selective-wipe) entfernt nur Unternehmensdaten von dem Gerät, die persönlichen Daten des Benutzers bleiben jedoch intakt.
+Die [Zurücksetzung auf Werkseinstellungen](devices-wipe.md) setzt ein Gerät auf die werkseitigen Standardeinstellungen zurück, entfernt alle Benutzerdaten sowie -einstellungen und entfernt das Gerät aus der Verwaltung durch Intune. [Unternehmensdaten entfernen](devices-wipe.md#remove-company-data) entfernt nur Unternehmensdaten von dem Gerät, die persönlichen Daten des Benutzers bleiben jedoch intakt.
 
-Nach dem Start beginnt das Gerät sofort mit dem Prozess des selektiven Zurücksetzens, um aus der Verwaltung entfernt zu werden. Wenn der Prozess beendet ist, sind alle Unternehmensdaten gelöscht, und der Gerätename wird aus dem Intune-Portal entfernt. Dadurch wird der Geräteverwaltungs-Lebenszyklus beendet.
+Sobald der Vorgang initiiert wurde, beginnt das Gerät umgehend mit dem Zurücksetzen. Wenn der Prozess beendet ist, sind alle Unternehmensdaten gelöscht, und der Gerätename wird aus Intune entfernt. Dadurch wird der Geräteverwaltungs-Lebenszyklus beendet.
