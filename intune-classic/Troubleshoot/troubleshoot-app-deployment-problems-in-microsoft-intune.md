@@ -14,11 +14,11 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4d214ea9e85d6f08ecff42555cc7fbc36512a825
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f935a454f077caf096c43c892980a948dcd4c3a3
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Behandlung von Problemen mit der App-Bereitstellung in Microsoft Intune
 
@@ -36,9 +36,9 @@ Wenn beim Bereitstellen und Verwalten von Apps mit Intune Probleme auftreten, be
 |0x80073CFB|Das bereitgestellte Paket ist bereits installiert, und eine erneute Installation des Pakets wird blockiert.|Dieser Fehler kann auftreten, wenn Sie ein Paket installieren, das nicht bitweise mit dem bereits installierten Paket identisch ist. Überprüfen Sie, ob die digitale Signatur auch Teil des Pakets ist. Wenn ein Paket erneut erstellt oder signiert wird, ist das Paket nicht mehr bitweise identisch mit dem zuvor installierten Paket. Es gibt zwei Möglichkeiten, diesen Fehler zu beheben:<br /><br />-   Erhöhen Sie die Versionsnummer der Anwendung, und erstellen und signieren Sie das Paket dann erneut.<br />-   Entfernen Sie das alte Paket für jeden Benutzer des Systems, bevor Sie das neue Paket installieren.|
 |0x87D1041C|Die Anwendung wurde erfolgreich installiert, wird jedoch nicht erkannt.|– Die App wurde erfolgreich von Intune bereitgestellt und später deinstalliert (möglicherweise vom Endbenutzer). Weisen Sie den Benutzer an, die App aus dem Unternehmensportal neu zu installieren. Erforderliche Apps werden automatisch beim nächsten Einchecken des Geräts neu installiert.|
 
-## <a name="troubleshooting-apps-from-the-windows-store"></a>Problembehandlung bei Apps aus dem Windows Store
+## <a name="troubleshooting-apps-from-the-microsoft-store"></a>Problembehandlung bei Apps aus dem Microsoft Store
 
-Mithilfe der Informationen im Artikel [Problembehandlung beim Packen, Bereitstellen und Abfragen von Windows Store-Apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) können Sie allgemeine Probleme beheben, die bei der Installation von Apps aus dem Windows Store (mit Intune oder mittels anderer Tools) auftreten können.
+Mithilfe der Informationen im Artikel [Problembehandlung beim Packen, Bereitstellen und Abfragen von Microsoft Store-Apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) können Sie allgemeine Probleme beheben, die bei der Installation von Apps aus dem Microsoft Store (mit Intune oder mittels anderer Tools) auftreten können.
 
 ## <a name="troubleshooting-app-deployment-to-pcs-managed-by-the-intune-software-client"></a>Problembehandlung bei der Bereitstellung von Apps auf PCs, die vom Intune-Softwareclient verwaltet werden
 Beim Beheben von Problemen beim Bereitstellen von Apps auf PCs, die vom Intune-Softwareclient verwaltet werden, können die beiden folgenden Protokolldateien aufschlussreich sein:

@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0893d511c73e4154c61063d96e26937ea2825467
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9899f08cac650b1fea05370eb52327bc3c204a48
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>App-basierter bedingter Zugriff mit Intune
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 07/01/2017
 
 [Intune-App-Schutzrichtlinien](app-protection-policy.md) unterstützen Sie beim Schutz Ihrer Unternehmensdaten auf Geräten, die bei Intune registriert sind. App-Schutzrichtlinien können Sie auch auf mitarbeitereigenen Geräten verwenden, die nicht für die Verwaltung in Intune registriert sind. Auch wenn Ihr Unternehmen das Gerät nicht verwaltet, müssen Sie in diesem Fall dennoch sicherstellen, dass Unternehmensdaten und -ressourcen geschützt sind.
 
-Mit App-basiertem bedingten Zugriff und der Verwaltung von mobilen Anwendungen wird eine Sicherheitsschicht hinzugefügt, indem sichergestellt wird, dass nur mobile Apps, die Intune-App-Schutzrichtlinien unterstützen, auf Exchange Online und andere Office 365-Dienste zugreifen können.
+Mit App-basiertem bedingten Zugriff und der Verwaltung von mobilen Apps wird eine Sicherheitsschicht hinzugefügt, indem sichergestellt wird, dass nur mobile Apps, die Intune-App-Schutzrichtlinien unterstützen, auf Exchange Online und andere Office 365-Dienste zugreifen können.
 
 > [!NOTE]
 > Eine verwaltete App ist eine App, auf die App-Schutzrichtlinien angewendet wurden und die von Intune verwaltet werden kann.
@@ -36,8 +36,10 @@ Wenn Sie nur für die Microsoft Outlook-App den Zugriff auf Exchange Online zula
 ## <a name="prerequisites"></a>Voraussetzungen
 Bevor Sie eine App-basierte bedingte Zugriffsrichtlinie erstellen, benötigen Sie Folgendes:
 
-- **Enterprise Mobility + Security- oder Azure Active Directory Premium-Abonnement**, und die Benutzer müssen für EMS oder Azure AD lizenziert sein.
-    - Weitere Informationen finden Sie in der [Preisübersicht für Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) oder der [Preisübersicht für Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
+- **Enterprise Mobility + Security (EMS)** oder ein **Azure Active Directory Premium-Abonnement**
+- Benutzer müssen für EMS oder Azure AD lizenziert werden.
+
+Weitere Informationen finden Sie in der [Enterprise Mobility – Preise](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) oder der [Azure Active Directory – Preise](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ## <a name="supported-apps"></a>Unterstützte Apps
 
@@ -53,24 +55,22 @@ Bevor Sie eine App-basierte bedingte Zugriffsrichtlinie erstellen, benötigen Si
 <br></br>
 - **Microsoft Teams**
 
-    > [!NOTE] 
-    > App-basierter bedingter Zugriff [unterstützt auch branchenspezifische Apps](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), aber diese Apps müssen die [moderne Authentifizierung von Office 365](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) nutzen.
+Der App-basierte bedingte Zugriff [unterstützt auch branchenspezifische Apps](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), aber diese Apps müssen die [moderne Authentifizierung von Office 365](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) nutzen.
 
 ## <a name="how-app-based-conditional-access-works"></a>Funktionsweise des App-basierten bedingten Zugriffs
 
 In diesem Beispiel hat der Administrator App-Schutzrichtlinien auf die Outlook-App angewendet. Zudem gilt eine Regel für bedingten Zugriff, mit der die Outlook-App einer genehmigten Liste von Apps hinzugefügt wird, die beim Zugriff auf Unternehmens-E-Mails verwendet werden kann.
 
-> [!NOTE] 
+> [!NOTE]
 > Die Struktur aus dem nachfolgenden Flussdiagramm kann für andere verwaltete Apps verwendet werden.
 
-![Flussdiagramm zum App-basierten bedingten Zugriff mit Intune](./media/ca-intune-common-ways-3.png)
+![App-basierter bedingter Zugriff mit Intune, Flussdiagramm](./media/ca-intune-common-ways-3.png)
 
 1.  Der Benutzer versucht, sich über die Outlook-App bei Azure AD zu authentifizieren.
 
 2.  Der Benutzer wird an den App Store umgeleitet, um eine Broker-App zu installieren, wenn er zum ersten Mal versucht, sich zu authentifizieren. Die Broker-App kann der Microsoft Authenticator für iOS oder das Microsoft-Unternehmensportal für Android-Geräte sein.
 
-    > [!NOTE]
-    > Wenn in diesem Szenario Benutzer versuchen, eine native E-Mail-App zu verwenden, werden sie an den App Store umgeleitet, um dann die Outlook-App zu installieren.
+ Wenn Benutzer versuchen, eine native E-Mail-App zu verwenden, werden sie an den App Store umgeleitet, um dann die Outlook-App zu installieren.
 
 3.  Die Broker-App wird auf dem Gerät installiert.
 
@@ -80,13 +80,13 @@ In diesem Beispiel hat der Administrator App-Schutzrichtlinien auf die Outlook-A
 
 6.  Die Broker-App sendet die App-Client-ID während der Benutzerauthentifizierung an Azure AD, um zu überprüfen, ob sie in der durch die Richtlinie genehmigten Liste enthalten ist.
 
-7.  Azure AD ermöglicht dem Benutzer die Authentifizierung und die Verwendung der App basierend auf der durch die Richtlinie genehmigte Liste. Wenn die App nicht auf der durch die Richtlinie genehmigte Liste enthalten ist, verweigert Azure AD den Zugriff auf die App.
+7.  Azure AD ermöglicht dem Benutzer die Authentifizierung und die Verwendung der App basierend auf der durch die Richtlinie genehmigte Liste. Wenn die App nicht auf der Liste enthalten ist, verweigert Azure AD den Zugriff auf die App.
 
 8.  Die Outlook-App kommuniziert mit dem Outlook-Clouddienst, um die Kommunikation mit Exchange Online zu initiieren.
 
 9.  Der Outlook-Clouddienst kommuniziert mit Azure AD, um Exchange Online-Dienstzugriffstoken für den Benutzer abzurufen.
 
-10.  Die Outlook-App kommuniziert mit Exchange Online, um Unternehmens-E-Mails des Benutzers abzurufen.
+10.  Die Outlook-App kommuniziert mit Exchange Online, um die Unternehmens-E-Mails des Benutzers abzurufen.
 
 11.  Unternehmens-E-Mails werden an das Postfach des Benutzers übermittelt.
 

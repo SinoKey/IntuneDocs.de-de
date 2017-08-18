@@ -11,11 +11,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: d668e50b3880bdaf569380fa5a5fd25f5ed4564e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 790b9b0a5feb40cd22d366438fca566b93d2138b
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Signieren Sie branchenspezifische Apps, damit sie mit Intune auf Windows-Geräten bereitgestellt werden können
 
@@ -64,7 +64,7 @@ Mithilfe der folgenden Schritte können Sie das erforderliche Zertifikat bereits
 
 ## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Beispiel: Herunterladen, Signieren und Bereitstellen der Unternehmensportal-App für Windows-Geräte
 
-Sie können die Unternehmensportal-App mit Intune auf Windows-Geräten (Windows Phone- und Windows 10 Mobile-Geräte eingeschlossen) bereitstellen, statt sie über den Windows Store zu installieren. Sie müssen hierzu die Unternehmensportal-App herunterladen und mit Ihrem Zertifikat signieren.  Dies ist nur erforderlich, wenn Ihre Benutzer nicht den Store des Unternehmens verwenden und Sie das Unternehmensportal für Windows Phone 8.1-Geräte bereitstellen möchten.
+Sie können die Unternehmensportal-App mit Intune auf Windows-Geräten (Windows Phone- und Windows 10 Mobile-Geräte eingeschlossen) bereitstellen, statt sie über den Microsoft Store zu installieren. Sie müssen hierzu die Unternehmensportal-App herunterladen und mit Ihrem Zertifikat signieren.  Dies ist nur erforderlich, wenn Ihre Benutzer nicht den Store des Unternehmens verwenden und Sie das Unternehmensportal für Windows Phone 8.1-Geräte bereitstellen möchten.
 
 
 1.  **Herunterladen des Unternehmensportals**
@@ -75,7 +75,7 @@ Sie können die Unternehmensportal-App mit Intune auf Windows-Geräten (Windows 
 
     -   WinPhoneCompanyPortal.ps1: Ein PowerShell-Skript, das Sie verwenden können, um die Unternehmensportal-App-Datei zu signieren, sodass sie für Windows Phone 8.1-Geräte bereitgestellt werden kann
 
-    Alternativ können Sie das Windows Phone 8.1-Unternehmensportal (offline lizenziertes Paket) oder das Windows 10-Unternehmensportal (offline lizenziertes Paket) aus dem [Windows Store für Unternehmen](http://businessstore.microsoft.com/) herunterladen. Die Unternehmensportal-App muss mit einer Offlinelizenz und dem geeigneten Paket zur Offlineverwendung erworben werden. Einträge für die Plattformen Windows 8 und Windows Phone 8 in der Auswahl beziehen sich auf die entsprechenden 8.1-Komponenten. Weitere Informationen, wie Sie dies in Intune ausführen, finden Sie unter [Verwalten von Apps, die im Windows Store für Unternehmen erworben wurden](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
+    Alternativ können Sie das Windows Phone 8.1-Unternehmensportal (offline lizenziertes Paket) oder das Windows 10-Unternehmensportal (offline lizenziertes Paket) aus dem [Microsoft Store für Unternehmen](http://businessstore.microsoft.com/) herunterladen. Die Unternehmensportal-App muss mit einer Offlinelizenz und dem geeigneten Paket zur Offlineverwendung erworben werden. Einträge für die Plattformen Windows 8 und Windows Phone 8 in der Auswahl beziehen sich auf die entsprechenden 8.1-Komponenten. Weitere Informationen, wie Sie dies in Intune ausführen, finden Sie unter [Verwalten von Apps, die im Microsoft Store für Unternehmen erworben wurden](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
 2.  **Herunterladen des Windows Phone SDK** Laden Sie das Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) herunter, und installieren Sie es auf Ihrem Computer. Dieses SDK ist erforderlich, um ein Anwendungsregistrierungstoken zu generieren.
 
@@ -144,12 +144,12 @@ Das zur Bereitstellung von mobilen Windows- und Windows Phone-Geräten verwendet
 5.  Signieren Sie alle neuen und aktualisierten Unternehmens-Apps unter Verwendung des neuen Zertifikats. Vorhandene Anwendungen müssen nicht erneut signiert und erneut bereitgestellt werden.
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>Manuelles Bereitstellen der Windows 10-Unternehmensportal-App
-Sie können die Windows 10-Unternehmensportal-App manuell direkt über Intune bereitstellen. Das funktioniert auch, wenn Intune nicht in den Windows Store für Unternehmen integriert wurde.
+Sie können die Windows 10-Unternehmensportal-App manuell direkt über Intune bereitstellen. Das funktioniert auch, wenn Intune nicht in den Microsoft Store für Unternehmen integriert wurde.
 
  > [!NOTE]
  > Bei dieser Option müssen ggf. veröffentlichte App-Updates manuell bereitgestellt werden.
 
-1. Melden Sie sich bei Ihrem Konto im [Windows Store für Unternehmen](https://www.microsoft.com/business-store) an, und beziehen Sie die **Offlinelizenzversion** der Unternehmensportal-App.  
+1. Melden Sie sich bei Ihrem Konto im [Microsoft Store für Unternehmen](https://www.microsoft.com/business-store) an, und beziehen Sie die **Offlinelizenzversion** der Unternehmensportal-App.  
 2. Wenn Sie über die App verfügen, wählen Sie sie auf der Seite **Inventory** (Bestand) aus.  
 3. Wählen Sie unter **Plattform** die Option **Windows 10 all devices** (Windows 10: alle Geräte) sowie die passende **Architektur** aus, und starten Sie den Downloadvorgang. Für diese App wird keine App-Lizenzdatei benötigt.
 ![Abbildung mit Details zum Downloadpaket für „Windows 10 all devices“ (Windows 10: alle Geräte) und x86-Architektur](./media/Win10CP-all-devices.png)
@@ -186,7 +186,7 @@ Wenn die Windows 10-Unternehmensportal-App auf diese Weise signiert und bereitge
 Im Anschluss erfahren Sie, wie Sie die App auf diese Weise signieren und bereitstellen:
 
 1. Laden Sie unter [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) das Microsoft Intune-Signierungsskript für die Windows 10-Unternehmensportal-App herunter.  Für dieses Skript muss das Windows SDK für Windows 10 auf dem Hostcomputer installiert sein. Das Windows SDK für Windows 10 können Sie unter [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) herunterladen.
-2. Laden Sie die Windows 10-Unternehmensportal-App wie weiter oben beschrieben aus dem Windows Store für Unternehmen herunter.  
+2. Laden Sie die Windows 10-Unternehmensportal-App wie weiter oben beschrieben aus dem Microsoft Store für Unternehmen herunter.  
 3. Führen Sie das Skript mit den im Skriptheader angegebenen Eingabeparametern aus, um die Windows 10-Unternehmensportal-App zu signieren (siehe Auszug weiter unten). An das Skript müssen keine Abhängigkeiten übergeben werden. Diese sind nur erforderlich, wenn die App in die Intune-Verwaltungskonsole hochgeladen wird.
 
 |Parameter | Beschreibung|

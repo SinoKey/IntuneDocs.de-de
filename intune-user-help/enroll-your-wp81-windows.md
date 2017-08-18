@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 307999a7bb18a7b33d111bec212922558a5e10bf
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c7c03148d4063d0752a7c615222047bc6f02f58e
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Registrieren Ihres Windows Phone 8.1-Geräts bei Intune
 
@@ -29,11 +29,11 @@ Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ih
 
 Befolgen Sie die für Ihre Firma oder Schule geltenden Anweisungen, um Ihr Phone 8.1-Gerät bei Intune zu registrieren:
 
--   [Wenn Ihr Unternehmen Ihnen das Verwenden des Unternehmensportals aus dem Windows Store erlaubt, gehen Sie folgendermaßen vor:](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
+-   [Wenn Ihr Unternehmen Ihnen das Verwenden des Unternehmensportals über den Microsoft Store erlaubt, gehen Sie folgendermaßen vor:](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
 
--   [Wenn es Ihnen nicht gestattet ist, von Ihrem Windows Phone aus auf den Windows Store zuzugreifen oder Sie kein Microsoft-Konto besitzen:](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
+-   [Wenn es Ihnen nicht gestattet ist, von Ihrem Windows Phone aus auf den Microsoft Store zuzugreifen oder Sie kein Microsoft-Konto besitzen:](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>Wenn Ihr Unternehmen Ihnen das Verwenden des Unternehmensportals aus dem Windows Store erlaubt, gehen Sie folgendermaßen vor:
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-microsoft-store"></a>Wenn Ihr Unternehmen Ihnen das Verwenden des Unternehmensportals über den Microsoft Store erlaubt, gehen Sie folgendermaßen vor
 Installieren Sie die Unternehmensportal-App auf Ihrem Gerät:
 
 1.  Tippen Sie auf **Starten** &gt; **Store**.
@@ -72,7 +72,7 @@ Registrieren Sie Ihr Gerät:
 
     ![Bildschirm „Konto hinzugefügt“](./media/WP81-enroll-4-account-added.png)
 
-## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Wenn Ihnen der Zugriff auf den Windows Store von Ihrem Windows Phone aus nicht erlaubt ist oder Sie kein Microsoft-Konto besitzen
+## <a name="if-you-are-not-allowed-to-access-the-microsoft-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Wenn es Ihnen nicht gestattet ist, von Ihrem Windows Phone aus auf den Microsoft Store zuzugreifen oder Sie kein Microsoft-Konto besitzen
 
 1.  Tippen Sie auf **Einstellungen** &gt; **Arbeitsplatz**.
 
