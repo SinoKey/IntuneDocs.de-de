@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: c05b2257fe03cd23ad5ba71a3fee217cd4802650
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Was ist die Microsoft Intune App-Verwaltung?
 
@@ -87,7 +87,7 @@ Sie finden die meisten Informationen zu Apps in der Workload **Mobile Apps**, au
 
 ### <a name="monitor"></a>Überwachen
 - **Lizenzierte Apps:** Ermöglicht das Anzeigen, Zuweisen und Überwachen von per Volumenlizenz in den App Stores erworbenen Apps.
-    - [Per Volumenlizenz erworbene Apps aus dem Windows Store für Unternehmen](windows-store-for-business.md)
+    - [Per Volumenlizenz erworbene Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md)
 - **Erkannte Apps:** Zeigt alle Apps, die von Intune zugewiesen und auf einem Gerät installiert wurden.
 - **App-Installationsstatus:** Zeigt den Status einer App-Zuweisung, die Sie erstellt haben.
 - **App-Schutzstatus:** Zeigt den Status einer App-Schutzrichtlinie für einen ausgewählten Benutzer an.
@@ -97,7 +97,7 @@ Weitere Informationen finden Sie unter [Überwachen von Apps](apps-monitor.md).
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Windows Store für Unternehmen:** Richten Sie die Integration in den Windows Store für Unternehmen ein. Anschließend können Sie erworbene Anwendungen mit Intune synchronisieren, sie zuweisen und Ihre Lizenznutzung verfolgen.
-    - [Per Volumenlizenz erworbene Apps aus dem Windows Store für Unternehmen](windows-store-for-business.md)
+- **Microsoft Store für Unternehmen:** Richten Sie die Integration in den Microsoft Store für Unternehmen ein. Anschließend können Sie erworbene Anwendungen mit Intune synchronisieren, sie zuweisen und Ihre Lizenznutzung verfolgen.
+    - [Per Volumenlizenz erworbene Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md)
 - **Unternehmensportalbranding:** Passen Sie das Unternehmensportal mit Ihrem Unternehmensbranding an.
     - [Konfiguration des Unternehmensportals](company-portal-app.md)

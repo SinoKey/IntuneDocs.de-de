@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 14407e26a0715f3d5aa8cf570a2109dac7140079
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: d7a51094851af8c3b6d872300cd9b23e845c6494
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Behandlung von Problemen bei der Geräteregistrierung bei Intune
 
@@ -159,7 +159,7 @@ In der folgenden Tabelle sind Fehler aufgeführt, die bei der Registrierung von 
 |Fehlermeldung|Problem|Lösung|
 |---|---|---|
 |**IT-Administrator muss eine Lizenz für den Zugriff zuweisen**<br>Ihr IT-Administrator hat Ihnen keinen Zugriff für die Verwendung dieser App erteilt. Wenden Sie sich an Ihren IT-Administrator, oder versuchen Sie es später erneut.|Das Gerät kann nicht registriert werden, da das Benutzerkonto nicht über die erforderliche Lizenz verfügt.|Bevor Benutzer ihre Geräte registrieren können, müssen Sie die nötigen Lizenzen zugewiesen bekommen. Diese Meldung bedeutet, dass der Benutzer den falschen Lizenztyp für die festgelegte Autorität für die Verwaltung mobiler Geräte hat. Beispielsweise wird dieser Fehler angezeigt, wenn Intune als Autorität für die Verwaltung mobiler Geräte festgelegt wurde und der Benutzer eine System Center 2012 R2 Configuration Manager-Lizenz verwendet.<br><br>Weitere Informationen finden Sie unter [Zuweisen von Intune-Lizenzen zu Benutzerkonten](/intune/licenses-assign.md).
-|**Der IT-Administrator muss die MDM-Autorität festlegen<br>Es sieht so aus, als hätte Ihr IT-Administrator keine MDM-Autorität festgelegt. Wenden Sie sich an Ihren IT-Administrator, oder versuchen Sie es später erneut.|Die Autorität für die Verwaltung mobiler Geräte wurde nicht festgelegt.|Die Autorität für die Verwaltung mobiler Geräte wurde in Intune nicht festgelegt. Sehen Sie sich die Informationen zum [Festlegen der Autorität für die Verwaltung mobiler Geräte](/intune/mdm-authority-set.md) an.|
+|**Der IT-Administrator muss die MDM-Autorität festlegen**<br>Es sieht so aus, als hätte Ihr IT-Administrator keine MDM-Autorität festgelegt. Wenden Sie sich an Ihren IT-Administrator, oder versuchen Sie es später erneut.|Die Autorität für die Verwaltung mobiler Geräte wurde nicht festgelegt.|Die Autorität für die Verwaltung mobiler Geräte wurde in Intune nicht festgelegt. Sehen Sie sich die Informationen zum [Festlegen der Autorität für die Verwaltung mobiler Geräte](/intune/mdm-authority-set.md) an.|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Geräte können nicht beim Intune-Dienst eingecheckt werden und werden als in der Intune-Administratorkonsole als „Fehlerhaft“ angezeigt.

@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ad1156076f0ec34d5ac110e32a19a8332c8f863
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 812bdf5bde724798289668937ed2502438c524e0
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Hinzufügen von Windows Store-Apps in Microsoft Intune
 
@@ -51,12 +51,12 @@ ms.lasthandoff: 07/01/2017
 Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie ausgewählten Gruppen zuweisen können. Hilfe finden Sie unter [Zuweisen von Apps zu Gruppen](apps-deploy.md).
 
 ## <a name="manually-assign-windows-10-company-portal-app"></a>Manuelles Zuweisen der Windows 10-Unternehmensportal-App
-Endbenutzer können die Unternehmensportal-App aus dem Windows Store installieren, um Geräte zu verwalten und Apps zu installieren. Wenn Ihr Unternehmen allerdings erfordert, dass Sie die Unternehmensportal-App zuweisen, können Sie die Windows 10-Unternehmensportal-App manuell direkt über Intune zuweisen, auch wenn Intune nicht in den Windows Store für Unternehmen integriert wurde.
+Benutzer können die Unternehmensportal-App aus dem Microsoft Store installieren, um Geräte zu verwalten und Apps zu installieren. Wenn Ihr Unternehmen allerdings erfordert, dass Sie die Unternehmensportal-App zuweisen, können Sie die Windows 10-Unternehmensportal-App manuell direkt über Intune zuweisen, auch wenn Intune nicht in den Microsoft Store für Unternehmen integriert wurde.
 
  > [!NOTE]
  > Bei dieser Option müssen ggf. veröffentlichte App-Updates manuell zugewiesen werden.
 
-1. Melden Sie sich bei Ihrem Konto im [Windows Store für Unternehmen](https://www.microsoft.com/business-store) an, und beziehen Sie die **Offlinelizenzversion** der Unternehmensportal-App.  
+1. Melden Sie sich bei Ihrem Konto im [Microsoft Store für Unternehmen](https://www.microsoft.com/business-store) an, und beziehen Sie die **Offlinelizenzversion** der Unternehmensportal-App.  
 2. Wenn Sie über die App verfügen, wählen Sie sie auf der Seite **Inventory** (Bestand) aus.  
 3. Wählen Sie unter **Plattform** die Option **Windows 10 all devices** (Windows 10: alle Geräte) sowie die passende **Architektur** aus, und starten Sie den Downloadvorgang. Für diese App wird keine App-Lizenzdatei benötigt.
 ![Abbildung mit Details zum Downloadpaket für „Windows 10 all devices“ (Windows 10: alle Geräte) und x86-Architektur](./media/Win10CP-all-devices.png)
@@ -93,7 +93,7 @@ Wenn die Windows 10-Unternehmensportal-App auf diese Weise signiert und zugewies
 Im Anschluss erfahren Sie, wie Sie die App auf diese Weise signieren und zuweisen:
 
 1. Laden Sie unter [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) das Microsoft Intune-Signierungsskript für die Windows 10-Unternehmensportal-App herunter.  Für dieses Skript muss das Windows SDK für Windows 10 auf dem Hostcomputer installiert sein. Das Windows SDK für Windows 10 können Sie unter [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) herunterladen.
-2. Laden Sie die Windows 10-Unternehmensportal-App wie weiter oben beschrieben aus dem Windows Store für Unternehmen herunter.  
+2. Laden Sie die Windows 10-Unternehmensportal-App wie weiter oben beschrieben aus dem Microsoft Store für Unternehmen herunter.  
 3. Führen Sie das Skript mit den im Skriptheader angegebenen Eingabeparametern aus, um die Windows 10-Unternehmensportal-App zu signieren (siehe Auszug weiter unten). An das Skript müssen keine Abhängigkeiten übergeben werden. Diese sind nur erforderlich, wenn die App in die Intune-Verwaltungskonsole hochgeladen wird.
 
 |Parameter | Beschreibung|

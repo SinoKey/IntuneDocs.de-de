@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/24/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15a005ae2b84c7bd4f913f892089965c10f3b23e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: bf25ec3fbdec76fb1defb5e4cb12be6dcdf03b0d
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-android-devices"></a>Bereitstellen von Remoteunterstützung für mit Intune verwaltete Android-Geräte
 
-In Intune kann die nicht im Lieferumfang inbegriffene [TeamViewer](https://www.teamviewer.com)-Software verwendet werden, damit Sie Ihren Benutzern, die Android-Geräte ausführen, Remoteunterstützung bieten können. Führen Sie die Einrichtung und die ersten Schritte gemäß den Informationen in diesem Thema durch.
+In Intune kann die nicht im Lieferumfang inbegriffene [TeamViewer](https://www.teamviewer.com)-Software verwendet werden, damit Sie Benutzern von Android-Geräten Remoteunterstützung bieten können. Führen Sie die ersten Schritte gemäß den Informationen in diesem Thema durch.
 
 ## <a name="before-you-start"></a>Vorbereitung
 
@@ -31,7 +31,7 @@ In Intune kann die nicht im Lieferumfang inbegriffene [TeamViewer](https://www.t
 
 Stellen Sie sicher, dass dem Benutzer des Azure-Portals folgende Berechtigungen als [Intune-Rolle](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control) zugewiesen sind:
 - Damit der Administrator die TeamViewer Connector-Einstellungen ändern kann, erteilen Sie die Berechtigung **Remoteunterstützung aktualisieren**.
-- Damit der Administrator neue Remoteunterstützungseinstellungen initiieren kann, erteilen Sie die Berechtigung **Remoteunterstützung anfordern**. Benutzer mit dieser Berechtigung können die Initiierung einer Sitzung für jeden Benutzer anfordern. Dies wird durch keine Intune-Rollenzuweisungsbereiche beschränkt. Intune-Rollenzuweisungsbereiche beschränken weder Geräte noch Benutzer, für die Remoteunterstützungsanforderungen initiiert werden können.
+- Damit der Administrator neue Remoteunterstützungsanforderungen initiieren kann, erteilen Sie die Berechtigung **Remoteunterstützung anfordern**. Benutzer mit der Berechtigung **Remoteunterstützung anfordern** können für jeden Benutzer die Initiierung einer Sitzung anfordern. Sie werden durch keinen Rollenzuweisungsbereich in Intune eingeschränkt. Intune-Rollenzuweisungsbereiche beschränken weder Geräte noch Benutzer, für die Remoteunterstützungsanforderungen initiiert werden können.
 
 >[!NOTE]
 >Durch die Aktivierung von TeamViewer ermöglichen Sie es dem TeamViewer Connector für Intune TeamViewer-Sitzungen zu erstellen, Active Directory-Daten zu lesen und das Zugriffstoken des TeamViewer-Kontos zu speichern.
@@ -65,7 +65,7 @@ Im TeamViewer-Fenster können Sie eine Reihe von Remoteaktionen auf dem Android-
 
 Wenn Sie fertig sind, schließen Sie das TeamViewer-Fenster.
 
-## <a name="end-user-notifications"></a>Endbenutzerbenachrichtigungen
+## <a name="end-user-notifications"></a>Benutzerbenachrichtigungen
 
-Beim Öffnen der App werden einem Endbenutzer auf dessen Gerät ein Benachrichtigungskennzeichen auf dem Symbol der Unternehmensportal-App sowie eine Benachrichtigung angezeigt. Anschließend kann er die Remoteunterstützungsanforderung annehmen.
+Beim Öffnen der App werden einem Benutzer auf dessen Gerät ein Benachrichtigungskennzeichen auf dem Symbol der Unternehmensportal-App sowie eine Benachrichtigung angezeigt. Anschließend kann er die Remoteunterstützungsanforderung annehmen.
 

@@ -1,12 +1,12 @@
 ---
-title: "Vollständiges oder selektives Zurücksetzen von Geräten mit Intune"
+title: "Zurücksetzen auf Werkseinstellungen oder Entfernen von Unternehmensdaten auf Geräten mit Intune"
 titleSuffix: Intune on Azure
-description: "In diesem Artikel erfahren Sie, wie Sie eine selektive Zurücksetzung von Unternehmensdaten auf einem Gerät oder eine vollständige Zurücksetzung des Geräts auf die Werkseinstellungen durchführen."
+description: "Erfahren Sie, wie Sie Unternehmensdaten von einem Gerät entfernen oder wie Sie das Gerät auf Werkseinstellungen zurücksetzen."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,64 +14,40 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44d1695b3f0297276376fb9cb4367c1411aa31b2
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/10/2017
 ---
-# <a name="use-full-or-selective-wipe"></a>Verwenden des vollständigen oder selektiven Zurücksetzens
+# <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Entfernen von Geräte mithilfe der Zurücksetzung auf Werkseinstellungen oder dem Entfernen von Unternehmensdaten
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Sie können Apps und Daten von Intune-verwalteten Geräten zurücksetzen, die nicht mehr benötigt werden, einem neuen Zweck zugeführt werden oder verloren gegangen sind. Zu diesem Zweck enthält Intune Funktionen zum vollständigen oder selektiven Zurücksetzen. Für private Geräte, die in Intune registriert sind, können die Benutzer über die Intune-Unternehmensportal-App einen Remotebefehl zum Zurücksetzen des Geräts erteilen.
+Sie können Geräte aus Intune entfernen, wenn sie nicht mehr benötigt werden, einem neuen Zweck zugeführt werden oder verloren gegangen sind. Sie erreichen dies durch Ausgeben des Befehls **Unternehmensdaten entfernen** oder **Zurücksetzung auf Werkseinstellungen**. Für private Geräte, die in Intune registriert sind, können die Benutzer über das Intune-Unternehmensportal einen Remotebefehl erteilen.
 
-  > [!NOTE]
-  > In diesem Thema wird nur das Zurücksetzen von Geräten behandelt, die von der Verwaltung mobiler Geräte für Intune verwaltet werden. Sie können auch das [Azure-Portal](https://portal.azure.com) zum [Entfernen von Unternehmensdaten aus Apps](https://docs.microsoft.com/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune) verwenden. Außerdem können Sie [mit der Intune-Clientsoftware verwaltete Computer abkoppeln](https://docs.microsoft.com/intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune).
+> [!NOTE]
+> Bevor Sie einen Benutzer aus Azure Active Directory entfernen, wird der Befehl **Unternehmensdaten entfernen** oder **Zurücksetzung auf Werkseinstellungen** für alle diesem Benutzer zugeordneten Geräte ausgeführt. Wenn Sie Benutzer mit verwalteten Geräten aus Azure Active Directory entfernen, kann Intune keine Zurücksetzung auf Werkseinstellungen vornehmen oder Unternehmensdaten auf diesen Geräten entfernen.
 
-## <a name="full-wipe"></a>Vollständiges Zurücksetzen
+## <a name="factory-reset"></a>Wiederherstellung der Herstellerstandards
 
-**Vollständiges Zurücksetzen** setzt ein Gerät auf die werkseitigen Standardeinstellungen zurück, wobei alle Unternehmens- und Benutzerdaten und -einstellungen entfernt werden. Das Gerät wird aus Intune entfernt. Das vollständige Zurücksetzen ist hilfreich, wenn Sie ein Gerät vor der Übergabe an einen neuen Benutzer zurücksetzen möchten oder wenn ein Gerät verloren oder gestohlen wurde.  **Überlegen Sie sich genau, ob Sie ein Gerät wirklich vollständig zurücksetzen möchten. Die Daten auf dem Gerät können anschließend nicht wiederhergestellt werden.**
+Die **Zurücksetzung auf Werkseinstellungen** stellt die Standardwerkseinstellungen wieder her und entfernt alle Daten und Einstellungen, die auf das Unternehmen oder den Benutzer zurückzuführen sind. Das Gerät wird aus der Intune-Verwaltung entfernt. Die Zurücksetzung eines Geräts auf Werkseinstellungen ist sehr nützlich, bevor es an einen Benutzer ausgegeben wird oder wenn es gestohlen wurde oder verloren gegangen ist. Überlegen Sie sich genau, ob Sie ein Gerät wirklich auf Werkseinstellungen zurücksetzen möchten. Die Daten auf dem Gerät können anschließend nicht wiederhergestellt werden.
 
+### <a name="to-factory-reset-a-device"></a>So setzen Sie ein Geräts auf Werkseinstellungen zurück
 
-> [!Warning]
-> Nach dem Zurücksetzen ist der Zugriff auf Windows 10 RTM-Geräte (Geräte vor Windows 10, Version 1511) mit weniger als 4 GB RAM vielleicht nicht möglich. Um auf ein Windows 10-Gerät zuzugreifen, das nicht mehr reagiert hat, können Sie das Gerät von einem USB-Laufwerk aus starten.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+3. Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Alle Geräte** aus.
+4. Wählen Sie den Namen des Geräts aus, das Sie auf Werkseinstellungen zurücksetzen möchten.
+5. Wählen Sie auf dem Blatt mit dem Namen des Geräts **Zurücksetzung auf Werkseinstellungen** und dann zur Bestätigung **Ja** aus.
 
+Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minuten, bis ein Befehl zum Zurücksetzen auf Werkseinstellungen an alle Gerätetypen weitergegeben wurde.
 
-**So führen Sie eine vollständige Zurücksetzung (Werkseinstellungen) eines Geräts durch**
+## <a name="remove-company-data"></a>Entfernen von Unternehmensdaten
 
-1.  Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Alle Geräte** aus.
+Der Befehl **Unternehmensdaten entfernen** entfernt die Daten aus verwalteten Apps (falls zutreffend), Einstellungen und E-Mail-Profile, die mithilfe von Intune zugewiesen wurden. Bei diesem Befehl bleiben die persönlichen Daten des Benutzers auf dem Gerät erhalten. Das Gerät wird aus der Intune-Verwaltung entfernt. Die folgende Tabelle beschreibt, welche Daten beim Entfernen von Unternehmensdaten entfernt werden und mit welchen Auswirkungen auf die auf dem Gerät verbleibenden Daten zu rechnen ist.
 
-2.  Wählen Sie den Namen des Geräts aus, das Sie zurücksetzen möchten.
-
-3.  Wählen Sie auf dem Blatt mit dem Namen des Geräts **Zurücksetzung auf Werkseinstellungen** und dann zur Bestätigung des Zurücksetzens **Ja** aus.
-
-Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minuten, bis ein Befehl zum Zurücksetzen an alle Gerätetypen weitergegeben wurde.
-
-### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>So löschen Sie Geräte im Azure Active Directory-Portal
-
-1.  Navigieren Sie zu [http://aka.ms/accessaad](http://aka.ms/accessaad), oder klicken Sie unter [https://portal.office.com](https://portal.office.com) auf **Verwaltung** &gt; **Azure AD**.
-
-2.  Melden Sie sich mit Ihrer Organisations-ID über den Link im linken Bereich der Seite an.
-
-3.  Erstellen Sie ein Azure-Abonnement, wenn Sie noch keins besitzen. Hierzu sollte keine Kreditkarte oder Zahlung erforderlich sein, wenn Sie ein gebührenpflichtiges Konto besitzen (klicken Sie auf den Abonnementlink **Ihr kostenloses Azure Active Directory registrieren** ).
-
-4.  Wählen Sie zuerst **Active Directory** und dann Ihre Organisation aus.
-
-5.  Wählen Sie die Registerkarte **Benutzer** aus.
-
-6.  Wählen Sie den Benutzer aus, dessen Geräte Sie löschen möchten.
-
-7.  Klicken Sie auf **Geräte**.
-
-8.  Entfernen Sie Geräte nach Bedarf, z. B. solche, die nicht mehr verwendet werden oder fehlerhafte Definitionen haben.
-
-
-## <a name="selective-wipe"></a>Selektives Zurücksetzen
-
-Beim **selektiven Zurücksetzen** werden die Unternehmensdaten und bei Bedarf auch die Daten für die Verwaltung mobiler Apps (MAM, Mobile App Management) vom Gerät entfernt. Außerdem werden Einstellungen und E-Mail-Profile entfernt. Die persönlichen Daten des Benutzers bleiben beim selektiven Zurücksetzen auf dem Gerät erhalten. Das Gerät wird aus Intune entfernt. Die folgende Tabelle beschreibt, welche Daten bei einem selektiven Zurücksetzen entfernt werden und mit welchen Auswirkungen auf die auf dem Gerät verbleibenden Daten zu rechnen ist. (Diese Tabellen sind nach Plattform sortiert.)
-
-**iOS**
+### <a name="ios"></a>iOS
 
 |Datentyp|iOS|
 |-------------|-------|
@@ -82,10 +58,10 @@ Beim **selektiven Zurücksetzen** werden die Unternehmensdaten und bei Bedarf au
 |Verwaltungs-Agent|Das Verwaltungsprofil wird entfernt.|
 |E-Mail|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|
 |Outlook|E-Mails, die über die Microsoft Outlook-App für iOS empfangen wurden, werden entfernt.|
-|Azure Active Directory (AAD)-Verbindung aufgehoben|AAD-Datensatz wird entfernt.|
-|Kontakte | Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.
+|Verknüpfung für Azure Active Directory (AAD) aufheben|AAD-Datensatz wird entfernt|
+|Kontakte | Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Alle Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht entfernt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.
 
-**Android**
+### <a name="android"></a>Android
 
 |Datentyp|Android|Android Samsung KNOX Standard|
 |-------------|-----------|------------------------|
@@ -100,30 +76,42 @@ Beim **selektiven Zurücksetzen** werden die Unternehmensdaten und bei Bedarf au
 |Verwaltungs-Agent|Die Berechtigung „Geräteadministrator“ wird gesperrt.|Die Berechtigung „Geräteadministrator“ wird gesperrt.|
 |E-Mail|n/v (E-Mail-Profile werden von Android-Geräten nicht unterstützt.)|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|
 |Outlook|E-Mails, die über die Microsoft Outlook-App für Android empfangen wurden, werden entfernt.|E-Mails, die über die Microsoft Outlook-App für Android empfangen wurden, werden entfernt.|
-|Azure Active Directory (AAD)-Verbindung aufgehoben|AAD-Datensatz wird entfernt.|AAD-Datensatz wird entfernt.|
-|Kontakte | Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.|Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.
+|Verknüpfung für Azure Active Directory (AAD) aufheben|Azure AD-Datensatz wird entfernt|Azure AD-Datensatz wird entfernt|
+|Kontakte | Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Alle Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht entfernt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.|Direkt aus der App mit dem nativen Adressbuch synchronisierte Kontakte werden entfernt.  Alle Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht entfernt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.
 
-**Android for Work**
+### <a name="android-for-work"></a>Android for Work
 
-Das selektive Zurücksetzen auf Android for Work-Geräten entfernt alle Daten, Apps und Einstellungen im Arbeitsprofil auf diesem Gerät. Dies koppelt das Gerät von der Intuneverwaltung ab. Das vollständigen Zurücksetzen wird für Android for Work nicht unterstützt.
+Beim Entfernen von Unternehmensdaten von Android for Work-Geräten entfernt alle Daten, Apps und Einstellungen im Arbeitsprofil auf diesem Gerät. Dies koppelt das Gerät von der Intuneverwaltung ab. Das Zurücksetzen auf Werkseinstellungen wird für Android for Work nicht unterstützt.
 
-**Windows**
+### <a name="windows"></a>Windows
 
 |Datentyp|Windows 8.1 (MDM) und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Von Intune installierte Unternehmens-Apps und zugehörige Daten|Bei Dateien, die durch ein EFS geschützt sind, wird der Schlüssel gesperrt, und der Benutzer kann die Dateien nicht mehr öffnen.|Unternehmensanwendungen werden nicht entfernt.|Ursprünglich über das Unternehmensportal installierte Anwendungen werden deinstalliert. Daten von Unternehmens-Apps werden entfernt.|Anwendungen werden deinstalliert, und Sideload-Schlüssel werden entfernt.|
+|Von Intune installierte Unternehmens-Apps und zugehörige Daten|Bei Dateien, die durch ein EFS geschützt sind, wird der Schlüssel gesperrt, und der Benutzer kann die Dateien nicht mehr öffnen.|Unternehmensanwendungen werden nicht entfernt.|Ursprünglich über das Unternehmensportal installierte Anwendungen werden deinstalliert. Daten von Unternehmens-Apps werden entfernt.|Anwendungen werden deinstalliert, und Sideload-Schlüssel werden entfernt.<br>Für Windows 10 Version 1703 (Creators Update) und höher und Office 365 werden ProPlus-Apps nicht entfernt.|
 |Einstellungen|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|
 |Einstellungen für WLAN- und VPN-Profil|Entfernt.|Entfernt.|Nicht unterstützt.|Entfernt.|
 |Zertifikatprofil-Einstellungen|Zertifikate wurden entfernt und gesperrt.|Zertifikate wurden entfernt und gesperrt.|Nicht unterstützt.|Zertifikate wurden entfernt und gesperrt.|
 |E-Mail|Entfernt EFS-aktivierte E-Mails, darunter die E-Mail-App für Windows-E-Mails und -Anlagen.|Nicht unterstützt.|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|Entfernt EFS-aktivierte E-Mails, darunter die E-Mail-App für Windows-E-Mails und -Anlagen. Entfernt E-Mail-Konten, die von Intune bereitgestellt wurden.|
-|Azure Active Directory (AAD)-Verbindung aufgehoben|Nein.|Nein.|AAD-Datensatz wird entfernt.|Nicht zutreffend. Windows 10 unterstützt kein selektives Zurücksetzen für Geräte, die in Azure Active Directory eingebunden wurden.|
+|Verknüpfung für Azure Active Directory (AAD) aufheben|Nein.|Nein.|Azure AD-Datensatz wird entfernt|Nicht zutreffend. Windows 10 unterstützt kein Entfernen von Unternehmensdaten von Geräten, die mit Azure Active Directory verknüpft wurden.|
 
-**So führen Sie eine selektive Zurücksetzung durch**
+### <a name="to-remove-company-data"></a>So entfernen Sie Unternehmensdaten
 
-1.  Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Alle Geräte** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+3. Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Alle Geräte** aus.
+4. Wählen Sie den Namen des Geräts aus, von dem Sie die Unternehmensdaten entfernen möchten.
+5. Wählen Sie auf dem Blatt mit dem Gerätenamen **Unternehmensdaten entfernen** und dann zur Bestätigung **Ja** aus.
 
-2.  Wählen Sie den Namen des Geräts aus, das Sie zurücksetzen möchten.
+Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minuten, bis ein Befehl zum Entfernen der Daten an alle Gerätetypen weitergegeben wurde.
 
-3.  Wählen Sie auf dem Blatt mit dem Namen des Geräts **Unternehmensdaten entfernen** und dann zur Bestätigung des Zurücksetzens **Ja** aus.
+## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Löschen von Geräten über das Azure Active Directory-Portal
 
-Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minuten, bis ein Befehl zum Zurücksetzen an alle Gerätetypen weitergegeben wurde.
+Aufgrund von Kommunikationsproblemen oder fehlender Geräte müssen Sie möglicherweise Geräte über Azure Active Directory (AD) löschen. Der Löschbefehl entfernt kein Gerät aus der Verwaltung. Sie können **Löschen** aber dazu verwenden, Gerätedatensätze über die Azure-Konsole zu entfernen, von denen Sie wissen, dass sie schwer zugänglich sind und für die eine erneute Kommunikation mit Azure unwahrscheinlich ist.
+
+1.  Melden Sie sich [im Azure-Portal bei Azure Active Directory](http://aka.ms/accessaad) mit Ihren Administratoranmeldeinformationen an. Sie können sich auch im [Office 365-Portal](https://portal.office.com) anmelden und dann über den Link auf der linken Seite **Admin** &gt; **Azure AD** auswählen.
+3.  Erstellen Sie ein Azure-Abonnement, wenn Sie noch keins besitzen. Hierzu sollte keine Kreditkarte oder Zahlung erforderlich sein, wenn Sie ein gebührenpflichtiges Konto besitzen (klicken Sie auf den Abonnementlink **Ihr kostenloses Azure Active Directory registrieren** ).
+4.  Wählen Sie zuerst **Active Directory** und dann Ihre Organisation aus.
+5.  Wählen Sie die Registerkarte **Benutzer** aus.
+6.  Wählen Sie den Benutzer aus, dessen Geräte Sie löschen möchten.
+7.  Klicken Sie auf **Geräte**.
+8.  Entfernen Sie Geräte nach Bedarf, z. B. solche, die nicht mehr verwendet werden oder fehlerhafte Definitionen haben.

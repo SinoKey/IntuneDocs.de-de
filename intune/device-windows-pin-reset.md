@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,23 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3688eef68fc9dcfced976db02c8d50126fa30da8
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: 9cf2549852c5949ff1c95af12b40f59136d56e34
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Zurücksetzen der Kennung auf Windows-Geräten mit dem integrierten PIN-Zurücksetzungsdienst von Microsoft mithilfe von Intune
 
 Die Zurücksetzungsfunktion der Kennung ist bei Windows-Geräten in den PIN-Zurücksetzungsdienst von Microsoft integriert, mit dem Sie für Geräte, auf denen Windows 10 Mobile ausgeführt wird, eine neue Kennung generieren können. Auf den Geräten muss das Windows 10 Creators Update oder höher ausgeführt werden.
+
+## <a name="supported-platforms"></a>Unterstützte Plattformen
+
+- Windows – Unterstützt unter Windows 10 Creators Update und höher (mit Azure AD verknüpft)
+- Windows Phone – Nicht unterstützt
+- iOS – Nicht unterstützt
+- macOS – Nicht unterstützt
+- Android – Nicht unterstützt
 
 
 ## <a name="before-you-start"></a>Vorbereitung
@@ -40,13 +48,14 @@ Bevor Sie die Kennung auf von Ihnen verwalteten Windows-Geräten remote zurücks
 
 ### <a name="configure-windows-devices-to-use-pin-reset"></a>Konfigurieren von Windows-Geräten zur Verwendung des PIN-Zurücksetzungsdiensts
 
-Verwenden Sie zum Konfigurieren der PIN-Zurücksetzung auf von Ihnen verwalteten Windows-Geräten eine [benutzerdefinierte Intune-Geräterichtlinie für Windows 10](custom-settings-windows-10.md), um die Funktion zu aktivieren. Konfigurieren Sie die Richtlinie mithilfe der folgenden Konfigurationsdienstanbieter für Windows-Richtlinien (CSPs):
+Verwenden Sie zum Konfigurieren der PIN-Zurücksetzung auf von Ihnen verwalteten Windows-Geräten eine [benutzerdefinierte Intune-Geräterichtlinie für Windows 10](custom-settings-windows-10.md), um die Funktion zu aktivieren. Konfigurieren Sie die Richtlinie mithilfe des folgenden Konfigurationsdienstanbieters für Windows-Richtlinien (Configuration Service Provider, CSPs):
 
 
-- **Für Benutzer** - **./User/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
-- **Für Geräte** - **./Device/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
+- **Für Geräte** - **./Device/Vendor/MSFT/PassportForWork/*Mandanten-ID*/Policies/EnablePinRecovery**
 
-Die Werte für diese CSPs müssen beide auf **TRUE** festgelegt sein.
+Die *Mandanten-ID* bezieht sich auf Ihre Azure Active Directory-ID, die Sie auf der Seite **Eigenschaften** in Azure Active Directory finden.
+
+Legen Sie den Wert diesen CSP auf **TRUE** fest.
 
 ## <a name="steps-to-reset-the-passcode"></a>Vorgehensweise zur Zurücksetzung der Kennung
 

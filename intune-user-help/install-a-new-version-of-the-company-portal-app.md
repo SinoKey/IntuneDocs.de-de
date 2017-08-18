@@ -14,11 +14,11 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 586a5355e2ee4b0dda6e0238628fa71bdce6f1a2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1cccc69ab772499183a7f434303d78ecf4308a5f
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Aktualisieren der Unternehmensportal-App
 
@@ -40,12 +40,12 @@ So aktualisieren Sie die Unternehmensportal-App:
 
 ## <a name="update-the-intune-company-portal-app-on-your-windows-device"></a>Aktualisieren der Unternehmensportal-App von Intunes auf Ihrem Windows-Gerät
 
-1.  Navigieren Sie zum Windows Store, und suchen Sie nach **Intune-Unternehmensportal**.
+1.  Navigieren Sie zum Microsoft Store, und suchen Sie nach **Intune-Unternehmensportal**.
 
 2.  Folgen Sie den Installationsschritten.
 
     > [!NOTE]
-    > Falls Sie nicht auf den Windows Store zugreifen können, wenden Sie sich an Ihren IT-Administrator.
+    > Falls Sie nicht auf den Microsoft Store zugreifen können, wenden Sie sich an Ihren IT-Administrator.
 
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f066e62e323fffb7c6954d83b2b55ee63f4be46
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: e0fc5337b92ac604a448038f685b27623b6153f9
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Was ist die Microsoft Intune Geräteverwaltung?
 
@@ -30,8 +30,9 @@ Die Workload **Geräte** liefert Informationen zu den verwalteten Geräten und e
 1. Melden Sie sich beim Azure-Portal an.
 2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.
+4. Jetzt können Sie die aufgeführten Remotegeräteaktionen ausführen. Die verfügbaren Aktionen hängen von der Geräteplattform und der Konfiguration des Geräts ab:
 
-Nun können Sie die folgenden Aktionen ausführen:
+## <a name="available-device-actions"></a>Verfügbare Geräteaktionen
 
 - [Anzeigen des Gerätebestands](device-inventory.md)
 - So führen Sie Remotegeräteaktionen durch:
@@ -46,29 +47,8 @@ Nun können Sie die folgenden Aktionen ausführen:
     - [Neu starten](device-restart.md)
     - [Zurücksetzen der PIN unter Windows 10](device-windows-pin-reset.md)
     - [Remotesteuerung für Android](device-profile-android-teamviewer.md)
+    - [Synchronisieren von Geräten](device-sync.md)
 
-
-## <a name="support-for-each-device-action"></a>Unterstützung für Geräteaktionen
-
-Die folgende Tabelle veranschaulicht, welche Geräteplattformen die jeweilige Aktion unterstützen.
-
-|||||||
-|-|-|-|-|-|-|
-|Geräteaktion|Windows|Windows Phone|iOS|macOS|Android|
-|**Unternehmensdaten entfernen**|Ja|Ja|Ja|Ja|Ja|
-|**Zurücksetzen auf Werkseinstellungen**|Windows 8.1 und höher (nicht von EAS-verwaltete Geräte)|Ja|Ja|Nein|Android for Work wird nicht unterstützt.|
-|**Löschen**|Ja|Ja|Ja|Ja|Ja|
-|**Remotesperre**|Nein|Windows Phone 8.1 und höher|Ja|Nein|Ja|
-|**Kennung zurücksetzen**|Nein|Windows Phone 8.1 bis Windows 10 Creators Update nicht in Azure AD eingebunden, Windows 10 Creators Update und höher: alle|Ja|Nein|In früheren Versionen als Android 7 wird Android for Work nicht unterstützt.|
-|**Neue Kennung** (für Windows 10-Geräte)|Nein|Windows 10 Creators Update und höher (in Azure AD eingebunden)|Nein|Nein|Android for Work wird nicht unterstützt.|
-|**Aktivierungssperre umgehen**|Nein|Nein|Nur unternehmenseigene Geräte|Nein|Nein|
-|**Modus für verlorene Geräte**|Nein|Nein|iOS 9.3 und höher, überwacht und unternehmenseigen|Nein|Nein|
-|**Gerät suchen**|Nein|Nein|Modus für verlorene Geräte von iOS 9.3 und höher, überwacht und unternehmenseigen|Nein|Nein|
-|**Aktuellen Benutzer abmelden**|Nein|Nein|iOS 9.3 und höher (nur freigegebene iPad-Geräte)|Nein|Nein|
-|**Neu starten**|Windows 8.1 und höher|Windows Phone 8.1 und höher|Nein|Nein|Nein|
-|**Sauberer Start**|Windows 10 Creators Update und höher|Nein|Nein|Nein|Nein|
-|**Neue Remoteunterstützungssitzung**|Nein|Nein|Nein|Nein|Ja|
-|**Benutzer entfernen**|Nein|Nein|iOS 9.3 und höher (nur freigegebene iPad-Geräte)|Nein|Nein|
 
 ## <a name="next-steps"></a>Nächste Schritte
 

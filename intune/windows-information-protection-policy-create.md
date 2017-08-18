@@ -15,17 +15,17 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b5758d5af0a478335d4a7503c13af785c9c512fb
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Ab Version Intune 1704 können Sie bei Windows 10 App-Schutzrichtlinien ohne Registrierungsszenario in der mobilen Anwendungsverwaltung (Mobile Application Management, MAM) verwenden.
+Ab Version Intune 1704 können Sie bei Windows 10 App-Schutzrichtlinien zum Schutz von Apps ohne Registrierung verwenden.
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
@@ -39,17 +39,15 @@ Sprechen Sie wir über einige Konzepte, wenn Sie eine WIP-Richtlinie hinzufügen
 
 ### <a name="types-of-apps"></a>App-Typen
 
--   **Empfohlene Apps:** Eine vorab aufgefüllte Liste von Apps (hauptsächlich Microsoft Office), die Administratoren einen einfachen Import in die Richtlinie ermöglichen.
+-   **Empfohlene Apps:** Eine vorab aufgefüllte Liste von Apps (hauptsächlich Microsoft Office), die Ihnen einen einfachen Import in die Richtlinie ermöglicht. <!---I really don't know what you mean by "easily import into policy"--->
 
--   **Store-Apps:** Administratoren können eine beliebige App aus dem Windows Store in die Richtlinie einfügen.
+-   **Store-Apps:** Sie können der Richtlinie eine beliebige App aus dem Windows Store hinzufügen.
 
--   **Windows Desktop-Apps:** Administratoren können traditionelle Windows Desktop-Apps der Richtlinie hinzufügen (z.B. .exe, .dll, usw.)
+-   **Windows Desktop-Apps:** Sie haben außerdem die Möglichkeit,der Richtlinie traditionelle Windows Desktop-Apps hinzufügen (z.B. .exe, .dll, usw.)
 
 ## <a name="pre-requisites"></a>Voraussetzungen
 
-Sie müssen den MAM-Anbieter konfigurieren, bevor Sie eine WIP-App-Schutzrichtlinie erstellen können.
-
--   Weitere Informationen finden Sie unter [Konfigurieren Ihres MAM-Anbieters in Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
+Sie müssen den MAM-Anbieter konfigurieren, bevor Sie eine WIP-App-Schutzrichtlinie erstellen können. Weitere Informationen finden Sie unter [Konfigurieren Ihres MAM-Anbieters in Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
 Darüber hinaus benötigen Sie Folgendes:
 
@@ -58,10 +56,11 @@ Darüber hinaus benötigen Sie Folgendes:
 
 > [!IMPORTANT]
 > WIP unterstützt nicht mehrere Identitäten; nur jeweils eine verwaltete Identität darf vorhanden sein.
+<!---Should you be linking to a topic that explains what multi-identity is?--->
 
 ## <a name="to-add-a-wip-policy"></a>Hinzufügen einer WIP-Richtlinie
 
-Nachdem Sie in Ihrer Organisation Intune eingerichtet haben, können Sie eine WIP-spezifische Richtlinie durch das [Azure-Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) erstellen.
+Nachdem Sie in Ihrer Organisation Intune eingerichtet haben, können Sie eine WIP-spezifische Richtlinie durch das [Azure-Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) erstellen. <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
 
 1.  Wechseln Sie zum **Intune-Dashboard für die mobile Anwendungsverwaltung**, wählen Sie **Alle Einstellungen** und anschließend **App-Richtlinie** aus.
 
@@ -77,7 +76,7 @@ Nachdem Sie in Ihrer Organisation Intune eingerichtet haben, können Sie eine WI
 
 3.  Wählen Sie **Erstellen** aus. Die Richtlinie wird erstellt und in der Tabelle auf dem Blatt **App-Richtlinie** angezeigt.
 
-## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>Hinzufügen von empfohlenen Apps zur Liste der zulässigen Apps
+## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>So fügen Sie empfohlene Apps zur Liste der zulässigen Apps hinzu
 
 1.  Wählen Sie auf dem Blatt **App-Richtlinie** den Namen Ihrer Richtlinie und anschließend die Option **Zulässige Apps** auf dem Blatt **Richtlinie hinzufügen** aus. Das Blatt **Zulässige Apps** wird geöffnet, auf dem alle Apps angezeigt werden, die bereits in der Liste für diese App-Schutzrichtlinie enthalten sind.
 
@@ -107,7 +106,7 @@ Nachdem Sie in Ihrer Organisation Intune eingerichtet haben, können Sie eine WI
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Hinzufügen einer Desktop-App zur Liste der zulässigen Apps
 
-**Hinzufügen einer Desktop-App**
+**So fügen Sie eine Desktop-App hinzu**
 
 1.  Wählen Sie auf dem Blatt **App-Richtlinie** den Namen Ihrer Richtlinie und anschließend die Option **Zulässige Apps** aus. Das Blatt **Zulässige Apps** wird geöffnet, auf dem alle Apps angezeigt werden, die bereits in der Liste für diese App-Schutzrichtlinie enthalten sind.
 
@@ -120,64 +119,63 @@ Nachdem Sie in Ihrer Organisation Intune eingerichtet haben, können Sie eine WI
 > [!NOTE]
 > Um mehrere **Desktop-Apps** gleichzeitig hinzuzufügen, können Sie auf das Menü **(...)** am Ende der App-Zeile klicken. Anschließend können Sie weitere Apps hinzufügen. Wenn Sie fertig sind, wählen Sie **OK** aus.
 
-## <a name="windows-information-protection-wip-learning"></a>WIP Learning (Windows Information Protection)
-
+## <a name="wip-learning"></a>WIP Learning
+<!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 Nachdem Sie die Apps hinzugefügt haben, die durch WIP geschützt werden sollen, müssen Sie mittels **WIP Learning** einen Schutzmodus anwenden.
 
 ### <a name="before-you-begin"></a>Vorbereitung
 
-WIP Learning (Windows Information Protection) ist ein Bericht, mit dem Administratoren ihre für WIP unbekannten Apps überwachen können. Unbekannte Apps sind Apps, die nicht von der IT-Abteilung Ihrer Organisation bereitgestellt wurden. Administratoren können diese Apps vor der Erzwingung von WIP im Modus „Außerkraftsetzungen ausblenden“ über den Bericht exportieren und zu ihren WIP-Richtlinien hinzufügen, um Produktivitätseinbußen zu verhindern.
+WIP Learning ist ein Bericht, mit dem Sie Ihre WIP unbekannten Apps überwachen können. Unbekannte Apps sind Apps, die nicht von der IT-Abteilung Ihrer Organisation bereitgestellt wurden. Sie können diese Apps vor der Erzwingung von WIP im Modus „Außerkraftsetzungen ausblenden“ über den Bericht exportieren und zu Ihren WIP-Richtlinien hinzufügen, um Produktivitätseinbußen zu verhindern.
 
 Es wird empfohlen, mit **Automatisch** oder **Außerkraftsetzungen zulassen** zu beginnen und bei einer kleinen Gruppe zu überprüfen, ob die Liste der zulässigen Apps die richtigen Apps enthält. Wenn Sie fertig sind, können Sie Ihre endgültige Erzwingungsrichtlinie in **Außerkraftsetzungen ausblenden** ändern.
 
-#### <a name="what-the-protection-modes-are"></a>Welche Schutzmodi sind verfügbar?
+### <a name="what-are-the-protection-modes"></a>Was sind Schutzmodi?
 
-- **Außerkraftsetzungen ausblenden:**
-    - WIP prüft auf ungeeignete Datenfreigabeverfahren und hindert den Benutzer an der Durchführung der Aktion.
-    - Dies kann die Freigabe von Informationen über nicht geschützte Unternehmens-Apps hinweg sowie die Freigabe von Unternehmensdaten zwischen anderen Personen und Geräten außerhalb Ihrer Organisation einschließen.
-<br></br>
+#### <a name="hide-overrides"></a>Außerkraftsetzungen ausblenden
+WIP prüft auf ungeeignete Datenfreigabeverfahren und hindert den Benutzer an der Durchführung der Aktion. Dies kann die Freigabe von Informationen über nicht geschützte Unternehmens-Apps hinweg sowie die Freigabe von Unternehmensdaten zwischen anderen Personen und Geräten außerhalb Ihrer Organisation einschließen.
 
-- **Außerkraftsetzungen zulassen:**
-    - WIP prüft auf ungeeignete Datenfreigabeverfahren, bei dem Benutzer gewarnt werden, wenn sie einen potenziell unsicheren Vorgang durchführen.
-    - In diesem Modus können Benutzer jedoch die Richtlinie überschreiben und die Daten freigeben. Die Aktion wird dabei in Ihrem Überwachungsprotokoll protokolliert.
-<br></br>
-- **Automatisch:**
-    - WIP wird automatisch ausgeführt, wobei ungeeignete Datenfreigabeverfahren protokolliert werden. Dabei werden im Modus „Außerkraftsetzungen zulassen“ keine Vorgänge blockiert, die zu einer Mitarbeiterinteraktion auffordern würden.
-    - Unzulässige Aktionen wie bei Apps, die unzulässigerweise versuchen, auf eine Netzwerkressource oder auf WIP-geschützte Daten zuzugreifen, werden trotzdem angehalten.
-<br></br>
-- **Aus (nicht empfohlen):**
-    - WIP ist deaktiviert und unterstützt nicht beim Schutz oder der Überwachung Ihrer Daten.
-    - Nachdem Sie WIP deaktiviert haben, wird versucht, WIP-getaggte Dateien auf den lokalen Laufwerken zu entschlüsseln. Denken Sie daran, dass Ihre vorherigen Informationen zu Entschlüsselungen und Richtlinien nicht automatisch erneut angewendet werden, wenn Sie den WIP-Schutz wieder aktivieren.
+#### <a name="allow-overrides"></a>Außerkraftsetzungen zulassen
+WIP prüft auf ungeeignete Datenfreigabeverfahren, bei dem Benutzer gewarnt werden, wenn sie einen potenziell unsicheren Vorgang durchführen. In diesem Modus können Benutzer jedoch die Richtlinie überschreiben und die Daten freigeben. Die Aktion wird dabei in Ihrem Überwachungsprotokoll protokolliert.
 
-### <a name="to-add-a-protection-mode"></a>Hinzufügen eines Schutzmodus
+#### <a name="silent"></a>Automatisch
+WIP wird automatisch ausgeführt, wobei ungeeignete Datenfreigabeverfahren protokolliert werden. Dabei werden im Modus „Außerkraftsetzungen zulassen“ keine Vorgänge blockiert, die zu einer Mitarbeiterinteraktion auffordern würden. Unzulässige Aktionen wie bei Apps, die unzulässigerweise versuchen, auf eine Netzwerkressource oder auf WIP-geschützte Daten zuzugreifen, werden trotzdem angehalten.
 
-1.  Wählen Sie auf dem Blatt **App-Richtlinie** den Namen Ihrer Richtlinie und anschließend die Option **Erforderliche Einstellungen** auf dem Blatt **Richtlinie hinzufügen** aus.
+#### <a name="off-not-recommended"></a>Inaktiv (nicht empfohlen)
+WIP ist deaktiviert und unterstützt nicht beim Schutz oder der Überwachung Ihrer Daten.
+
+Nachdem Sie WIP deaktiviert haben, wird versucht, WIP-getaggte Dateien auf den lokalen Laufwerken zu entschlüsseln. Denken Sie daran, dass Ihre vorherigen Informationen zu Entschlüsselungen und Richtlinien nicht automatisch erneut angewendet werden, wenn Sie den WIP-Schutz wieder aktivieren.
+
+### <a name="add-a-protection-mode"></a>Hinzufügen eines Schutzmodus
+
+1.  Wählen Sie auf dem Blatt **App-Richtlinie** den Namen Ihrer Richtlinie und anschließend die Option **Erforderliche Einstellungen** aus.
 
     ![Screenshot des Learning-Modus](./media/learning-mode-sc1.png)
 
 1.  Wählen Sie **Speichern** aus.
 
-### <a name="to-use-wip-learning"></a>Verwenden von WIP Learning
+### <a name="use-wip-learning"></a>Verwenden von WIP Learning
 
-1. Navigieren Sie zum Azure-Dashboard.
+1. Navigieren Sie zum Azure-Dashboard. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
 
 2. Wählen Sie im linken Menü **Weitere Dienste** aus, und geben Sie in das Filtertextfeld die Zeichenfolge **Intune** ein.
 
 3. Wählen Sie **Intune** aus. Daraufhin wird das **Intune-Dashboard** geöffnet. Wählen Sie dann **Mobile Apps** aus.
 
-4. Wählen Sie im Abschnitt **Überwachung** die Option **WIP Learning** aus. Es werden die unbekannten Apps angezeigt, die von WIP Learning protokolliert wurden.
+4. Wählen Sie unter **Überwachen** die Option **WIP Learning** aus. Es werden die unbekannten Apps angezeigt, die von WIP Learning protokolliert wurden.
 
 > [!IMPORTANT]
 > Wenn die Apps im WIP Learning-Protokollierungsbericht angezeigt werden, können Sie sie in Ihre App Schutzrichtlinien importieren.
 
-## <a name="to-deploy-your-wip-app-protection-policy"></a>Bereitstellen der WIP-App-Schutzrichtlinie
+## <a name="deploy-your-wip-app-protection-policy"></a>Bereitstellen der WIP-App-Schutzrichtlinie
 
 > [!IMPORTANT]
-> Dies gilt für WIP mit mobiler Anwendungsverwaltung (MAM) ohne Registrierungsszenario.
+> Dies gilt für WIP ohne Geräteregistrierung.
+
+<!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
 Nachdem Sie Ihre WIP-App-Schutzrichtlinie erstellt haben, müssen Sie sie Ihrer Organisation über MAM bereitstellen.
 
-1.  Wählen Sie auf dem Blatt **App Richtlinie** die neu erstellte App-Schutzrichtlinie aus. Wählen Sie anschließend **Benutzergruppen** und **Benutzergruppe hinzufügen** aus.
+1.  Wählen Sie auf dem Blatt **App-Richtlinie** die neu erstellte App-Schutzrichtlinie aus. Wählen Sie anschließend **Benutzergruppen** > **Benutzergruppe hinzufügen** aus.
 
     Auf dem Blatt **Benutzergruppe hinzufügen** wird eine Liste von Benutzergruppen geöffnet, die aus allen Sicherheitsgruppen in Azure Active Directory besteht.
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b92949efca2e4dac5836755e2f32b0527d4762d
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: c771d07cc41d91812a1cfa80ffe08234e58803e5
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Umgehen der Aktivierungssperre auf überwachten iOS-Geräten mit Intune
 
@@ -39,7 +39,7 @@ Obwohl die Aktivierungssperre zum Schutz von iOS-Geräten beiträgt und die Chan
 - Sie benötigen einen Bericht über alle Geräte, bei denen die Aktivierungssperre aktiviert ist.
 - Während einer Geräteaktualisierung in Ihrem Unternehmen möchten Sie einige Geräte einer anderen Abteilung zuweisen. Es können nur Geräte neu zugewiesen werden, bei denen die Aktivierungssperre nicht aktiviert ist.
 
-Apple hat zur Behebung dieser Probleme eine Umgehung der Aktivierungssperre in iOS 7.1 eingeführt. Auf diese Weise können Sie die Aktivierungssperre von überwachten Geräten ohne Apple-ID und Kennwort des Benutzers entfernen. Überwachte Geräte können einen gerätespezifischen Umgehungscode für die Aktivierungssperre generieren, der auf dem Aktivierungsserver von Apple gespeichert wird.
+Apple hat zur Behebung dieser Probleme eine Umgehung der Aktivierungssperre in iOS 7.1 eingeführt. Mit der Umgehung der Aktivierungssperre können Sie die Aktivierungssperre von überwachten Geräten ohne Apple-ID und Kennwort des Benutzers entfernen. Überwachte Geräte können einen gerätespezifischen Umgehungscode für die Aktivierungssperre generieren, der auf dem Aktivierungsserver von Apple gespeichert wird.
 
 >[!TIP]
 >Im überwachten Modus für iOS-Geräte können Sie mit dem Apple Configurator ein Gerät sperren, um die Funktionen auf bestimmte geschäftliche Zwecke zu beschränken. Der überwachte Modus ist in der Regel nur für firmeneigene Geräte vorgesehen.
@@ -49,13 +49,13 @@ Auf der [Website von Apple](https://support.apple.com/HT201365) erfahren Sie meh
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>Unterstützung von Intune beim Verwalten der Aktivierungssperre
 Intune kann den Status der Aktivierungssperre von überwachten Geräten anfordern, die iOS 8.0 und höher ausführen. Ausschließlich für überwachte Geräte kann Intune den Umgehungscode der Aktivierungssperre abrufen und ihn direkt auf das Gerät anwenden. Wenn das Gerät zurückgesetzt wurde, können Sie direkt auf das Gerät zugreifen, indem Sie einen leeren Benutzernamen und den Code als Kennwort verwenden.
 
-**Folgende Geschäftsvorteile ergeben sich:**
+**Die Unternehmensvorteile der Verwaltung der Aktivierungssperre mit Intune sind Folgende:**
 
 - Der Benutzer erhält die Sicherheitsvorteile der App „Mein iPhone suchen“.
 - Sie können es den Benutzern ermöglichen, ihre Arbeit zu erledigen, in dem Wissen, dass Sie das Gerät außer Kraft setzen oder entsperren können, wenn es einem neuen Zweck zugewiesen werden soll.
 
 ## <a name="before-you-start"></a>Vorbereitung
-Bevor Sie die Aktivierungssperre auf Geräten umgehen können, müssen Sie sie zuerst aktivieren. Dazu gehen Sie folgendermaßen vor:
+Bevor Sie die Aktivierungssperre auf Geräten umgehen können, müssen Sie sie aktivieren, indem Sie dieser Anleitung folgen:
 
 1. Konfigurieren Sie ein Intune-Profil für die Einschränkung von Geräten für iOS. Verwenden Sie dafür die Informationen unter [So konfigurieren Sie Einstellungen für Geräteeinschränkungen](/intune-azure/configure-devices/how-to-configure-device-restrictions).
 2. Aktivieren Sie die **Kiosk**-Einstellung **Aktivierungssperre**.
@@ -74,5 +74,7 @@ Die Intune-Remotegeräteaktion **Aktivierungssperre umgehen** entfernt die Aktiv
 3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.
 4. Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Alle Geräte** aus.
 5. Wählen Sie aus der Liste der verwalteten Geräte ein überwachtes iOS-Gerät aus, und wählen Sie dann die Remotegeräteaktion **Aktivierungssperre umgehen**.
+
+## <a name="next-steps"></a>Nächste Schritte
 
 Sie können den Status der Entsperranforderung in der Workload **Geräte verwalten** auf der Detailseite für das Gerät überprüfen.
