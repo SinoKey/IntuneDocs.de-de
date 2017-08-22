@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a0da2e96e6e80672f666b8bbca160a1fc1515d1c
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: 51b61fdc20c8d532be23a26f751be8d52cc21f9f
+ms.sourcegitcommit: a4a9bd7c432b58fea738e4bc3455d1221eb314c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Einstellungen für App-Schutzrichtlinien für Android
 Die in diesem Thema beschriebenen Richtlinieneinstellungen können im Azure-Portal auf dem Blatt **Einstellungen** für eine Schutzrichtlinie [konfiguriert](app-protection-policies.md) werden.
@@ -83,6 +83,6 @@ Es gibt zwei Kategorien von Richtlinieneinstellungen: Datenverlagerungs- und Zug
 | **Unternehmensanmeldeinformationen für Zugriff erforderlich** | Wählen Sie **Ja**, um anzufordern, dass sich der Benutzer für den Zugriff auf die App mit seinem Geschäfts-, Schul- oder Unikonto anmeldet, anstatt eine PIN einzugeben. Wenn Sie diese Einstellung auf **Ja** festlegen, sind PIN oder Fingerabdruckidentifizierung damit hinfällig.  | Nein |
 | **Ausführen verwalteter Apps auf Geräten mit Jailbreak oder Rootzugriff blockieren** |Wählen Sie **Ja** aus, um die Ausführung dieser App auf per Jailbreak oder Rootzugriff manipulierten Geräten zu verhindern. Der Benutzer kann diese App weiterhin für private Zwecke verwenden, muss jedoch für den Zugriff auf Geschäfts-, Schul- oder Unidaten ein anderes Gerät verwenden. | Ja |
 | **Überprüfen der Zugriffsanforderungen nach (Minuten)** | Konfigurieren Sie die folgenden Einstellungen: <ul><li>**Timeout**: Dies ist die Anzahl der Minuten, bis die (zuvor in der Richtlinie definierten) Zugriffsanforderungen erneut überprüft worden sind. Beispielsweise ein Administrator aktiviert die PIN in der Richtlinie, und ein Benutzer öffnet eine MAP-App und muss eine PIN eingeben. Wenn Sie diese Einstellung verwenden, muss der Benutzer für weitere **30 Minuten** (Standardwert) keine PIN bei MAM-Apps eingeben.</li><li>**Offline-Toleranzperiode**: Dies ist die Anzahl der Minuten, in den MAM-Apps offline sind. Geben Sie die Zeit (in Minuten) an, bevor die Zugriffsanforderungen für die App erneut geprüft werden. Standardwert = **720** Minuten (12 Stunden). Nachdem dieser Zeitraum abgelaufen ist, erfordert die App Benutzerauthentifizierung für AAD, sodass die App weiterhin ausgeführt werden kann.</li></ul>| Timeout: 30 <br><br> Offline: 720 |
-| **Offline-Intervall (in Tagen), bevor App-Daten zurückgesetzt werden** | Nach diesem Zeitraum (durch den Administrator definiert) im Offline-Modus, führt die App selbst ein selektives Zurücksetzen aus. Dieses selektive Zurücksetzen ist dasselbe Zurücksetzen wie das, das durch den Administrator im Workflow zum selektiven Zurücksetzen für MAM initiiert werden kann. <br><br> | 90 Tage |
+| **Offline-Intervall (in Tagen), bevor App-Daten zurückgesetzt werden** | Nach diesem Zeitraum (durch den Administrator definiert) im Offline-Modus, muss der Benutzer für die App eine Verbindung mit dem Netzwerk herstellen und sich erneut authentifizieren. Wenn sich Benutzer erfolgreich authentifiziert haben, können sie weiterhin auf ihre Daten zugreifen, und das Offline-Intervall wird zurückgesetzt.  Wenn sich der Benutzer nicht authentifizieren kann, führt die App eine selektive Zurücksetzung des Benutzerkontos und der -daten durch.  Weitere Informationen darüber, welche Daten mit dem selektiven Zurücksetzen entfernt werden, finden Sie unter [Zurücksetzen nur von Unternehmensdaten in einer in Intune verwalteten App](https://docs.microsoft.com/en-us/intune/apps-selective-wipe).<br><br> | 90 Tage |
 | **Bildschirmaufnahme und Android-Assistent blockieren (Android 6.0+)** | Wählen Sie **Ja** aus, um die Bildschirmaufnahme und den **Android-Assistenten** des Geräts zu blockieren, wenn diese App verwendet wird. Bei der Auswahl von **Ja** wird auch das Vorschaubild für den App-Schnellzugriff unscharf, wenn diese App mit einem Geschäfts-, Schul- oder Unikonto verwendet wird. | Nein |
 | **App-PIN deaktivieren, wenn die Geräte-PIN verwaltet wird** | Wählen Sie **Ja**, um die App-PIN zu deaktivieren, wenn eine Gerätesperre auf einem registrierten Gerät erkannt wird. | Nein |
