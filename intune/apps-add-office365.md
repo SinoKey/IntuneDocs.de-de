@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e41eceed55a323a7f3c07c7b5d8ab2da7764ff53
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 471b4dd524cea553af89acc3e158fd2a05cebe3d
+ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>So weisen Sie Office 365 ProPlus 2016-Apps Windows 10-Geräten mit Microsoft Intune hinzu
 
@@ -35,7 +35,6 @@ Diese App erleichtert Ihnen die Zuweisung von Office 365 ProPlus 2016-Apps zu Ge
 - Intune unterstützt nur das Hinzufügen von Office-Apps aus der Sammlung von Office 365 ProPlus 2016.
 - Wenn Office-Apps geöffnet sind, wenn Intune die App-Sammlung erstellt, verlieren Endbenutzer möglicherweise Daten aus nicht gespeicherten Dateien.
 - Die Installationsmethode wird auf Windows 10S-Geräten nicht unterstützt.
-- Wenn Sie diesen App-Typ als „Verfügbar“ zuweisen und auf mehrere Benutzer mit unterschiedlichen Zuweisungen abzielen, wird ihnen nur die kürzlich als Ziel gesetzte Zuweisung angezeigt.
 - Intune unterstützt nicht das Installieren von Office 365-Desktop-Apps aus dem Windows Store (sogenannte Office Centennial-Apps) auf einem Gerät, für das bereits mit Intune Office 365-Apps bereitgestellt wurden. Wenn Sie diese Konfiguration installieren, kann sie zu Datenverlusten oder -beschädigungen führen.
 
 
