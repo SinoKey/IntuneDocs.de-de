@@ -1,12 +1,12 @@
 ---
-title: "Hinzufügen von IMEI-IDs zu Intune"
+title: "Hinzufügen von Unternehmensbezeichnern zu Intune"
 titleSuffix: Intune on Azure
-description: "Erfahren Sie, wie Sie in Microsoft Intune Unternehmensbezeichner (IMEI-Nummern) hinzufügen. \""
+description: "Erfahren Sie, wie Sie in Microsoft Intune Unternehmensbezeichner (Registrierungsmethode, IMEI- und Seriennummern) hinzufügen. \""
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,31 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b38bf2da70537d07a050fa21be9a2a3062ca84b
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 03a278762401ee9697909cf45b3fe86212393e66
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="add-corporate-identifiers"></a>Hinzufügen von Unternehmensbezeichnern
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Als Intune-Administrator können Sie eine durch Trennzeichen getrennte Datei (CSV-Datei) erstellen und importieren, die IMEI-Nummern (International Mobile Equipment Identity) oder Seriennummern auflistet. Intune verwendet diese Bezeichner, um den Gerätebesitz als unternehmenseigen anzugeben. Sie können die IMEI-Nummern für alle unterstützten Plattformen deklarieren. Sie können die Seriennummer nur für iOS- und Android-Geräte deklarieren. Jede IMEI-Nummer oder Seriennummer kann Details enthalten, die in der Liste zu administrativen Zwecken angegeben sind.
+Als Intune-Administrator haben Sie verschiedene Möglichkeiten, um ein Gerät als unternehmenseigen zu deklarieren. Intune kann zusätzliche Informationen von unternehmenseigenen Geräten sammeln. Sie haben auch die Möglichkeit, Gerätebeschränkungen festzulegen, damit keine Geräte registriert werden, die kein Unternehmenseigentum sind.
+
+Ein Gerät gilt als unternehmenseigenes Gerät, wenn eine der folgenden Bedingungen zutrifft:
+
+- Mit einem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md)-Konto registriert (alle Plattformen)
+- Mit dem [Apple-Programm zur Geräteregistrierung](device-enrollment-program-enroll-ios.md), dem [Apple School Manager](apple-school-manager-set-up-ios.md) oder dem [Apple Configurator](apple-configurator-enroll-ios.md) registriert (iOS-Geräte).
+- Mit einer IMEI-Nummer (alle Plattformen mit IMEI-Nummern) oder Seriennummer (iOS und Android) vordeklariert
+- In Azure Active Directory oder der Enterprise Mobility Suite als Windows 10 Enterprise-Gerät registriert (nur Windows 10)
+- In den **Geräteeigenschaften** ist **Unternehmen** angegeben
+
+Unternehmenseigene Geräte zeigen in der Spalte **Besitz** für die Gerätedatensätze in Intune **Unternehmen** an. Um dies aufzurufen, wechseln Sie zu **Geräte** > **Alle Geräte**.
+
+## <a name="predeclare-a-device-with-imei-or-serial-number"></a>Vorabdeklarieren von Geräten mit der IMEI- oder Seriennummer
+
+Als Intune-Administrator können Sie eine durch Trennzeichen getrennte Datei (CSV-Datei) erstellen und importieren, die IMEI-Nummern oder Seriennummern auflistet. Intune verwendet diese Bezeichner, um den Gerätebesitz als unternehmenseigen anzugeben. Sie können die IMEI-Nummern für alle unterstützten Plattformen deklarieren. Sie können die Seriennummer nur für iOS- und Android-Geräte deklarieren. Jede IMEI-Nummer oder Seriennummer kann Details enthalten, die in der Liste zu administrativen Zwecken angegeben sind.
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
@@ -54,10 +68,9 @@ Diese CSV-Datei wird bei der Anzeige in einem Text-Editor folgendermaßen angeze
 >Beachten Sie auch: Android-Seriennummern sind garantiert eindeutig oder vorhanden. Wenden Sie sich an Ihren Gerätehersteller, um herauszufinden, ob die Seriennummer eine zuverlässige Geräte-ID ist.
 >Seriennummern, die vom Gerät an Intune übermittelt werden, stimmen möglicherweise nicht mit der angezeigten ID in den Menüs „Einstellungen für Android/Info“ auf dem Gerät überein. Überprüfen Sie den Typ der Seriennummer, die vom Gerätehersteller übermittelt wurde.
 
+### <a name="add-a-csv-list-of-corporate-identifiers"></a>Hinzufügen einer CSV-Liste von Unternehmensbezeichnern
 
-**So fügen Sie eine CSV-Liste von Unternehmensbezeichnern hinzu**
-
-1. Wählen Sie im Intune-Portal die Optionen **Geräteregistrierung** > **Registrierungsbeschränkungen**, wählen Sie **Bezeichner von Unternehmensgeräten**, und klicken Sie dann auf **Hinzufügen**.
+1. Wählen Sie im Azure-Portal in Intune die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** aus, und klicken Sie dann auf **Hinzufügen**.
 
  ![Screenshot des Arbeitsbereichs des Bezeichners von Unternehmensgeräten mit hervorgehobener Schaltfläche „Hinzufügen“](./media/add-corp-id.png)
 
@@ -69,9 +82,11 @@ Importierte Geräte sind nicht zwangsläufig registriert. Geräte können entwed
 
 ## <a name="delete-corporate-identifiers"></a>Löschen von Unternehmensbezeichnern
 
-1. Wählen Sie im Intune- Portal die Optionen **Geräteregistrierung** > **Registrierungsbeschränkungen**, wählen Sie **Bezeichner von Unternehmensgeräten**, und klicken Sie dann auf **Löschen**.
+1. Wählen Sie im Azure-Portal in Intune die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** aus.
+2. Wählen Sie die Gerätebezeichner aus, die Sie löschen möchten, und klicken Sie auf **Löschen**.
+3. Bestätigen Sie den Löschvorgang.
 
-3. Wechseln Sie auf dem Blatt **Bezeichner löschen** zu der CSV-Datei der zu löschenden Geräte-IDs, und klicken Sie dann auf **Löschen**.
+Das Löschen eines Unternehmensbezeichners für ein registriertes Gerät hat keine Auswirkungen auf den Besitzstatus des Geräts. Gehen Sie zum Ändern des Gerätebesitzes zu **Geräte** > **Alle Geräte**, klicken Sie auf das Gerät und dann auf **Eigenschaften**, und ändern Sie den **Gerätebesitz**.
 
 ## <a name="imei-specifications"></a>IMEI-Spezifikationen
 Detaillierte Angaben über International Mobile Equipment Identifier finden Sie unter [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).

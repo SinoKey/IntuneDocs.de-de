@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/26/2017
+ms.date: 08/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 433cec8e0bc2012090e680e0a28a9a77d7b13a38
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 1433951e8c17ae226d37705223a80e2e79f7483b
+ms.sourcegitcommit: 6a089eb45ea3fb18ae0b2dac96683466f52f95bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/18/2017
 ---
 # <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS-Apps, die über ein Volumenprogramm mit Microsoft Intune erworben wurden
 
@@ -30,9 +30,9 @@ Der iOS-App-Store bietet die Möglichkeit, mehrere Lizenzen für eine App zu erw
 
 Microsoft Intune hilft Ihnen beim Verwalten von Apps, die Sie über dieses Programm erworben haben:
 
-- Importieren der Lizenzinformationen aus dem App-Store
+- Indem Lizenzinformationen aus dem App Store gemeldet werden
 - Nachverfolgen, wie viele Lizenzen bereits verwendet wurden
-- Verhindern, dass Sie mehr Kopien der App installieren, als Sie besitzen
+- Indem verhindert wird, dass mehr Kopien der App installiert werden, als Sie besitzen
 
 Es gibt zwei Methoden, die Sie zum Zuweisen von per Volumenlizenz erworbenen Apps verwenden können:
 
@@ -41,15 +41,15 @@ Es gibt zwei Methoden, die Sie zum Zuweisen von per Volumenlizenz erworbenen App
 Wenn Sie eine App einem Gerät zuweisen, wird eine App-Lizenz verwendet, und die Zuordnung dieser App zu diesem Gerät, zu dem Sie sie zugewiesen haben, bleibt erhalten.
 Wenn Sie per Volumenlizenz erworbene Apps einem Gerät zuweisen, muss der Endbenutzer des Geräts keine Apple-ID für den Zugriff auf den Store bereitstellen. 
 
+
+
 ### <a name="user-licensing"></a>Benutzerlizenzierung
 
-Wenn Sie Benutzern eine App zuweisen, wird eine App-Lizenz für den Benutzer verwendet und ihm zugewiesen. Die App kann auf mehren Geräten des Benutzers ausgeführt werden.
-Wenn Sie Benutzern eine per Volumenlizenz erworbene App zuweisen, muss jeder Endbenutzer über eine gültige Apple-ID verfügen, um auf den App Store zugreifen zu können.
+Wenn Sie Benutzern eine App zuweisen, wird eine App-Lizenz für den Benutzer verwendet und ihm zugewiesen. Die App kann auf mehren Geräten des Benutzers ausgeführt werden (die Obergrenze wird von Apple festgelegt).
+Wenn Sie Benutzern eine per Volumenlizenz erworbene App zuweisen, muss jeder Benutzer über eine gültige und eindeutige Apple-ID verfügen, um auf den App Store zugreifen zu können.
 
 
-Außerdem können Sie Bücher, die Sie aus dem Apple-VPP-Store mit Intune gekauft haben, synchronisieren und verwalten. Verwenden Sie die Arbeitsauslastung **Books** (Bücher) im Intune-Portal, um Bücher zu verwalten. Die Verfahren zum Verwalten der Bücher sind identisch mit denen zum Verwalten von Apps.
-Sie müssen ein Apple-VPP-Token hochgeladen haben, bevor Sie beginnen. Derzeit können Sie Bücher nur als **Required**-Installation (erforderlich) zuweisen.
-Wenn Sie ein Buch einem Gerät zuweisen, muss auf dem Gerät die integrierte iBooks-App installiert sein. Wenn dies nicht der Fall ist, muss der Endbenutzer die App erneut installieren, um das Buch zu lesen. Sie können Intune derzeit nicht zum Wiederherstellen entfernt integrierter Apps verwenden.
+Außerdem können Sie Bücher, die Sie aus dem Apple-VPP-Store mit Intune gekauft haben, synchronisieren und verwalten. Weitere Informationen finden Sie unter [Verwalten von iOS-E-Books, die über ein Volumenprogramm erworben wurden, mit Microsoft Intune](vpp-ebooks-ios.md).
 
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Verwalten von Apps für iOS-Geräte, die über ein Volumenprogramm erworben wurden
@@ -62,14 +62,17 @@ Bevor Sie beginnen, müssen Sie ein VPP-Token von Apple abrufen und es in Ihr In
 * Wenn Sie zuvor ein VPP-Token für ein anderes Produkt verwendet haben, müssen Sie für die Verwendung mit Intune ein neues erstellen.
 * Jedes Token ist ein Jahr lang gültig.
 * Standardmäßig wird Intune zweimal täglich mit dem Apple VPP-Dienst synchronisiert. Eine manuelle Synchronisierung können Sie jederzeit starten.
-* Nachdem Sie den VPP-Token in Intune importiert haben, importieren Sie denselben Token in keine andere Geräteverwaltungslösung. Andernfalls kann dies zu einem Verlust von Lizenzzuweisung und Benutzerdatensätzen führen.
 * Bevor Sie iOS VPP mit Intune verwenden, entfernen Sie alle vorhandenen, mit anderen Anbietern für das Mobile-Geräte-Management (MDM) erstellten VPP-Benutzerkonten. Aus Sicherheitsgründen synchronisiert Intune diese Benutzerkonten nicht. Intune synchronisiert nur Daten aus dem Apple VPP-Dienst, der von Intune erstellt wurde.
 * Intune unterstützt bis zu 256 VPP-Token.
 * Wenn Sie eine über ein Volumenprogramm erworbene App für ein über ein Anmeldungsprofil für mobile Geräte oder Apple Configurator registriertes Gerät zuweisen möchten, ist dies nur mit auf Geräte ausgerichtete Apps möglich. Sie können keine mit einem Volumenprogramm erworbenen Apps als Ziel für Benutzer eines DEP-Geräts verwenden, das keine Benutzeraffinität aufweist.
+Dies liegt daran, dass bei der iOS VPP-Benutzerlizenzierung Tausende Geräte mit dem gleichen Benutzerkonto registriert werden können. Die iOS VPP-Benutzerlizenzierung ermöglicht es einem Benutzer, eine App auf fünf bis zehn Geräten zu installieren.
+Das bedeutet, dass die VPP-App auf den ersten DEM-registrierten Geräten mit der Benutzerlizenzierung installiert wird, während andere Geräte die App nicht erhalten.
 * Sie können ein VPP-Token nur mit einem Intune-Konto gleichzeitig verwenden. Verwenden Sie nicht das gleiche VPP-Token für mehrere Intune-Mandanten gleichzeitig.
 * Wenn Sie Benutzern oder Geräten mit einem Benutzerlizenzierungsmodell VPP-Apps (mit Benutzeraffinität) zuweisen, muss jeder Intune-Benutzer mit einer eindeutigen Apple-ID oder einer E-Mail-Adresse verknüpft sein, wenn er die allgemeinen Geschäftsbedingungen von Apple auf ihrem Gerät akzeptiert.
 Achten Sie beim Einrichten eines Geräts für einen Intune-Benutzer darauf, dass Sie es mit der eindeutigen Apple-ID oder der E-Mail-Adresse des Benutzers konfigurieren. Die Apple-ID bzw. E-Mail-Adresse und der Intune-Benutzer sind ein eindeutiges Paar, das auf bis zu 5 Geräten verwendet werden kann.
 
+>[!IMPORTANT]
+>Nachdem Sie den VPP-Token in Intune importiert haben, importieren Sie denselben Token in keine andere Geräteverwaltungslösung. Andernfalls kann dies zu einem Verlust von Lizenzzuweisung und Benutzerdatensätzen führen.
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>So können Sie einen Apple VPP-Token abrufen und hochladen
 
@@ -95,12 +98,11 @@ Sie können die von Apple gespeicherten Daten jederzeit mit Intune synchronisier
 ## <a name="to-assign-a-volume-purchased-app"></a>So weisen Sie per Volumenlizenz erworbene Apps zu
 
 1.  Wählen Sie in der Workload **Mobile Apps** die Option **Verwalten** > **App-Lizenzen** aus.
-2.  Wählen Sie auf dem Blatt mit der Liste der Apps die App, die Sie zuweisen möchten, und dann „**...**“ > **Gruppen zuweisen** aus.
+2.  Wählen Sie auf dem Blatt mit der Liste der Apps die App, die Sie zuweisen möchten, und dann **...** > **Gruppen zuweisen**.
 3.  Wählen Sie auf dem Blatt *<app name>* - **Zuweisungen** die Optionen **Verwalten** > **Zuweisungen** aus.
 4.  Wählen Sie **Gruppen auswählen** und dann auf dem Blatt **Gruppen auswählen** den Azure AD-Benutzer oder Gerätegruppen aus, denen Sie die App zuweisen möchten.
 5.  Wählen Sie für jede von Ihnen ausgewählte Gruppe die folgenden Einstellungen aus:
     - **Typ**: Wählen Sie aus, ob die App **verfügbar** (Endbenutzer können die App aus dem Unternehmensportal aus installieren) oder **erforderlich** (Die App wird automatisch auf Endbenutzergeräten installiert) sein soll.
-Wenn Sie eine VPP-App als **verfügbar** zuweisen, werden Inhalte und Lizenz der App direkt vom App Store aus zugewiesen.
     - **Lizenztyp**: Wählen Sie zwischen **Benutzerlizenzierung** oder **Gerätelizenzierung**.
 6.  Wählen Sie abschließend **Speichern** aus.
 
@@ -110,9 +112,9 @@ Wenn Sie eine VPP-App als **verfügbar** zuweisen, werden Inhalte und Lizenz der
 
 ## <a name="further-information"></a>Weitere Informationen
 
-Zum Freigeben einer Lizenz müssen Sie die Zuweisungsaktion in „Deinstallieren“ ändern. Die Lizenz wird freigegeben, wenn die App deinstalliert wird.
+Zum Freigeben einer Lizenz müssen Sie die Zuweisungsaktion in „Deinstallieren“ ändern. Die Lizenz wird freigegeben, wenn die App deinstalliert wird. Wenn Sie eine App entfernen, die einem Benutzer zugewiesen wurde, versucht Intune, alle App-Lizenzen freizugeben, die diesem Benutzer zugeordnet wurden.
 
-Wenn ein Benutzer mit einem geeigneten Gerät erstmals versucht, eine VPP-App zu installieren, wird er aufgefordert, am Volume Purchase Program (VPP) von Apple teilzunehmen. Die Teilnahme muss erfolgen, bevor die App-Installation fortgesetzt wird. Die Einladung, am Apple Volume Purchase Program teilzunehmen, erfordert, dass der Benutzer die iTunes-App auf dem iOS-Gerät verwenden kann. Wenn Sie eine Richtlinie aufgestellt haben, um die iTunes Store-App zu deaktivieren, funktioniert die benutzerbasierte Lizenzierung für VPP-Apps nicht. Die Lösung besteht darin, die iTunes-App durch Entfernen der Richtlinie zuzulassen oder die gerätebasierte Lizenzierung zu verwenden.
+Wenn ein Benutzer mit einem geeigneten Gerät erstmals versucht, eine VPP-App auf einem Gerät zu installieren, wird er aufgefordert, am Volume Purchase Program (VPP) von Apple teilzunehmen. Die Teilnahme muss erfolgen, bevor die App-Installation fortgesetzt wird. Die Einladung, am Apple Volume Purchase Program teilzunehmen, erfordert, dass der Benutzer die iTunes-App auf dem iOS-Gerät verwenden kann. Wenn Sie eine Richtlinie aufgestellt haben, um die iTunes Store-App zu deaktivieren, funktioniert die benutzerbasierte Lizenzierung für VPP-Apps nicht. Die Lösung besteht darin, die iTunes-App durch Entfernen der Richtlinie zuzulassen oder die gerätebasierte Lizenzierung zu verwenden.
 
 
 

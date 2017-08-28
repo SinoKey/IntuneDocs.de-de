@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8ba85e15fb55a4de1b2f1db53bc5b9962de84394
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
+ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>So schützen Sie Ihr Android-Gerät mit Verschlüsselung
 
@@ -33,8 +33,8 @@ Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
 
 1.  Stellen Sie sicher, dass eine Bildschirmsperren-PIN oder ein Kennwort für das Gerät festgelegt wurde.
 
-2.  Wählen Sie unter **Einstellungen** die Option **Sicherheit** &gt; **Encrypt Device** (Gerät verschlüsseln) aus.
-    (Bei einigen Telefonen müssen Sie **Speicher** &gt; **Speicherverschlüsselung** oder **Speicher** &gt; **Sperrbildschirm und Sicherheit** &gt; **Andere Sicherheitseinstellungen** auswählen, um auf die Option „Verschlüsseln“ zuzugreifen).
+2.  Wählen Sie unter **Einstellungen** die Option **Sicherheit** > **Encrypt Device** (Gerät verschlüsseln) aus.
+    (Bei einigen Telefonen müssen Sie **Speicher** > **Speicherverschlüsselung** oder **Speicher** > **Lock Screen and Security** (Sperrbildschirm und Sicherheit) > **Weitere Sicherheitseinstellungen** auswählen, um auf die Option „Verschlüsseln“ zuzugreifen).
 
 3.  Folgen Sie den Anweisungen auf dem Bildschirm. Während der Verschlüsselung startet Ihr Gerät möglicherweise mehrmals neu.
 
@@ -54,14 +54,16 @@ Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
 - Stellen Sie sicher, dass Sie auf Ihrem Gerät eine PIN oder ein Kennwort festgelegt haben.
 - Wenn Sie bereits eine PIN oder ein Kennwort auf dem Gerät eingerichtet haben, führen Sie die folgenden Schritte aus, die Ihr IT-Administrator möglicherweise erwartet, damit die Sicherheit Ihres Geräts gewährleistet ist. Die angezeigten Menünamen können möglicherweise je nach Art Ihres Android-Geräts geringfügig von den in den Schritten angegebenen Bezeichnungen abweichen.
 
-    1. Navigieren Sie zu **Einstellungen** > **Sicherheit** > **Sperrbildschirm**. Bestätigen Sie Ihre aktuelle PIN bzw. Ihr Kennwort.
+    1. Wechseln Sie zu **Einstellungen** > **Lock Screen and Security** > **Screen lock** (Sperrbildschirm und Sicherheit > Bildschirmsperre). Bestätigen Sie Ihre aktuelle PIN bzw. Ihr Kennwort.
 
-    2. Wählen Sie auf dem Bildschirm **Bildschirmsperre auswählen** den Typ der Bildschirmsperre aus, die Sie verwenden möchten.
+    2. Wählen Sie auf dem Bildschirm **Bildschirmsperre auswählen** den Typ der Bildschirmsperre aus, die Sie verwenden möchten. 
 
-    3. Tippen Sie auf dem Bildschirm **Sicherer Start** auf **PIN zum Starten des Geräts anfordern**, und tippen Sie auf **Weiter**.
+    3. Nachdem Sie Ihre Bildschirmsperre ausgewählt haben, wechseln Sie zurück zum Bildschirm **Sperrbildschirm und Sicherheit**, und wählen Sie **Sicherer Start** aus. 
+    
+    4. Tippen Sie auf dem Bildschirm **Sicherer Start** auf **Require PIN to start device** (PIN zum Starten des Geräts anfordern), und tippen Sie auf **Weiter**.
 
-    4. Wählen Sie eine PIN aus (Sie können dieselbe PIN verwenden, die Sie zuvor eingegeben haben), und tippen Sie auf **PIN bestätigen**.
+    5. Wählen Sie eine PIN aus (Sie können dieselbe PIN verwenden, die Sie zuvor eingegeben haben), und tippen Sie auf **PIN bestätigen**.
 
-    5. Öffnen Sie die Unternehmensportal-App, wählen Sie das Gerät aus, und tippen Sie auf **Kompatibilität überprüfen**.
+    6. Öffnen Sie die Unternehmensportal-App, wählen Sie das Gerät aus, und tippen Sie auf **Kompatibilität überprüfen**.
 
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-Team</a>.

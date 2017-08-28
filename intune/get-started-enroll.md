@@ -1,12 +1,12 @@
 ---
 title: "Erste Schritte bei der Geräteregistrierung"
 titleSuffix: Intune on Azure
-description: 
+description: "Lernen Sie die den Registrierungsprozess umfassend kennen, indem Sie ein iOS-Gerät registrieren."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,37 +15,26 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b072ca0ee5a1e4d0a4feb6972ee80fe717fe9f83
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-enrolling-devices"></a>Erste Schritte bei der Geräteregistrierung
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-enrolling-devices"></a>Erste Schritte bei der Geräteregistrierung
 
 Mit Microsoft Intune können Sie Ihre Belegschaft mit mobilen Geräten ausstatten, ohne dass Ihre Unternehmensdaten gefährdet werden. Da Ihre Endbenutzer mit Intune eher auf ihren Geräten als in der Verwaltungskonsole interagieren, sollten Sie mit der Registrierung vertraut sein. Auf diese Weise können Sie ausgezeichnete Kompatibilitätsrichtlinien zusammen mit Ihrer Erfahrung nutzen, um sich in die Lage Ihrer Benutzer hineinzuversetzen. Dies ist besonders wichtig, da Ihre Benutzer genau wissen werden, welche Informationen Sie als Administrator sehen können:
 
-## <a name="what-it-cannot-see"></a>Was für die IT nicht einsehbar ist
-* Ihren Anrufs- und Browserverlauf
-* Standort
-* Ihren persönlichen E-Mail-Account
-* SMS
-* Kontakte
-* Die Kennwörter für Ihre persönlichen Accounts
-* Ihre Termine
-* Ihre Bilder, einschließlich dem, was sich in der Fotos- und Kamera-App befindet
-
-## <a name="what-it-can-see"></a>Was für die IT einsehbar ist
-* Modell
-* Seriennummer
-* Betriebssystemversion
-* App-Namen
-* Besitzer
-* Gerätename
-* Der Hersteller (gilt nur für Geräte, die nicht von Apple hergestellt wurden)
-* Telefonnummer (Bei Arbeitsgeräten die vollständige Nummer). Bei persönlichen Geräten nur die letzten vier Ziffern.)
+| Was für die IT nicht einsehbar ist | Was für die IT einsehbar ist |
+|---|---|
+| Ihren Anrufs- und Browserverlauf | Modell |
+| Standort | Seriennummer |
+| Ihren persönlichen E-Mail-Account | Betriebssystemversion |
+| SMS | App-Namen |
+| Kontakte | Besitzer |
+| Die Kennwörter für Ihre persönlichen Accounts | Gerätename |
+| Ihre Termine | Der Hersteller (gilt nur für Geräte, die nicht von Apple hergestellt wurden) |
+| Ihre Bilder, einschließlich dem, was sich in der Fotos- und Kamera-App befindet | Telefonnummer (Bei Arbeitsgeräten die vollständige Nummer). Bei persönlichen Geräten nur die letzten vier Ziffern.) |
 
 ## <a name="how-do-i-enroll-a-device"></a>Wie registriere ich ein Gerät?
 
@@ -67,3 +56,13 @@ Das Registrieren eines Geräts ist für viele Endbenutzer beim Zugriff auf Unter
 14. Wenn auf dem Bildschirm angezeigt wird, dass die Installation des Profils abgeschlossen ist, tippen Sie auf **Fertig**.
 15. Auf dem Bildschirm wird die Meldung „Gerät wird registriert“ angezeigt und im Anschluss gemeldet, dass das Gerät erfolgreich registriert wurde. Es öffnet sich ein Popupfenster mit der Aufforderung, die Seite im Unternehmensportal zu öffnen. Tippen Sie auf **Öffnen**.
 16. Sie kehren zur Seite **Unternehmenszugriff einrichten** zurück. Wenn Sie keine Testrichtlinien eingerichtet haben, sollte das Gerät als kompatibel angezeigt werden. Wenn Testrichtlinien vorhanden sind, tippen Sie auf **Gerätekompatibilität** und es wird angezeigt, dass Schritte durchgeführt werden müssen, um das Gerät sicherer zu machen.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+[Erste Schritte beim Hinzufügen von Apps:](get-started-apps.md) Suchen Sie Apps, und fügen Sie sie auf Geräten hinzu, um Ihren Mitarbeitern die Arbeit zu erleichtern.
+
+## <a name="learn-more"></a>Weitere Informationen
+
+* [Registrierungsoptionen für Intune](enrollment-options.md)
+* [Aktivieren von BYOD mit Intune](byod-enable.md)
+* [So informieren sie Ihre Benutzer über Microsoft Intune](end-user-educate.md)

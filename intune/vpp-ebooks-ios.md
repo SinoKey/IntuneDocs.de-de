@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e23c40eb4c13fd0d2593742c72086fc943fe2b54
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 43ab9e906f05a069b1399ab53a4861d7289b7024
+ms.sourcegitcommit: 6a089eb45ea3fb18ae0b2dac96683466f52f95bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/18/2017
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS-E-Books, die über ein Volumenprogramm erworben wurden, mit Microsoft Intune
 
@@ -44,7 +44,6 @@ Bevor Sie beginnen, rufen Sie ein VPP-Token von Apple ab und laden es in Ihr Int
 * Standardmäßig wird Intune zweimal täglich mit dem Apple VPP-Dienst synchronisiert. Eine manuelle Synchronisierung können Sie jederzeit starten.
 * Nachdem Sie den VPP-Token in Intune importiert haben, importieren Sie denselben Token in keine andere Geräteverwaltungslösung. Andernfalls kann dies zu einem Verlust von Lizenzzuweisung und Benutzerdatensätzen führen.
 * Bevor Sie iOS-Bücher mit Intune verwenden, entfernen Sie alle vorhandenen, mit anderen Anbietern für die mobile Geräteverwaltung (MDM) erstellten VPP-Benutzerkonten. Aus Sicherheitsgründen synchronisiert Intune diese Benutzerkonten nicht. Intune synchronisiert nur Daten aus dem Apple VPP-Dienst, der von Intune erstellt wurde.
-* Derzeit können Sie Bücher nur als **Required**-Installation (erforderlich) zuweisen. Wenn Sie das Buch als **erforderliche** Installation zuweisen, verwendet jeder Benutzer, der das Buch installiert, eine Lizenz.
 * Wenn Sie ein Buch einem Gerät zuweisen, muss auf dem Gerät die integrierte iBooks-App installiert sein. Wenn dies nicht der Fall ist, muss der Endbenutzer die App erneut installieren, bevor er das Buch lesen kann. Sie können Intune derzeit nicht zum Wiederherstellen entfernt integrierter Apps verwenden.
 * Sie können nur Bücher von der Apple Volume Purchase Program-Website zuweisen. Sie können keine Bücher hochladen und dann zuweisen, die Sie intern erstellt haben.
 * Sie können derzeit keine Bücher zu Endbenutzerkategorien zuweisen, so wie Sie Apps zuweisen können.
@@ -72,10 +71,10 @@ Sie können die von Apple gespeicherten Daten jederzeit mit Intune synchronisier
 ## <a name="to-assign-a-volume-purchased-app"></a>So weisen Sie per Volumenlizenz erworbene Apps zu
 
 1. Wählen Sie in der Workload **E-Books** die Option **Verwalten** > **Alle E-Books** aus.
-2. Wählen Sie auf dem Blatt mit der Liste der Bücher das Buch, das Sie zuweisen möchten, und dann „**...**“ > **Gruppen zuweisen** aus.
+2. Wählen Sie auf dem Blatt mit der Liste der Bücher das Buch aus, das Sie zuweisen möchten, und dann **...** > **Gruppen zuweisen**.
 3. Wählen Sie auf dem Blatt <*Buchname*> - **Zugewiesene Gruppen** die Option **Verwalten** > **Zugewiesene Gruppen** aus.
 4. Wählen Sie **Gruppen zuweisen** und dann auf dem Blatt **Gruppen auswählen** die Azure AD-Benutzergruppen aus, denen Sie das Buch zuweisen möchten. Gerätegruppen werden momentan nicht unterstützt.
-Wählen Sie eine Zuweisungsaktion vom Typ **Erforderlich** aus. 
+Wählen Sie eine Zuweisungsaktion vom Typ **Verfügbar** oder **Erforderlich** aus. 
 5. Wählen Sie abschließend **Speichern** aus.
 
 ## <a name="next-steps"></a>Nächste Schritte

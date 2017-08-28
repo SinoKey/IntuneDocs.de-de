@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 066f8668ea37e928455792f512e4e337a1f19c20
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 32d3d014abc48eb2c3d0e10a71dc7f4616c49db8
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Verwenden des Problembehandlungsportals, um Benutzern zu helfen
 
@@ -41,7 +41,7 @@ Als Intune-Administrator können Sie die Rolle „Helpdesk-Operator“ einer Ben
 So fügen Sie Helpdesk-Benutzer hinzu:
 1. [Fügen Sie Benutzer zu Intune hinzu](users-add.md), falls nötig.
 2. [Erstellen Sie eine Helpdesk-Gruppe](groups-add.md), und fügen Sie der Gruppe Benutzer hinzu.
-3. [Zuweisen der RBCA-Rolle „Helpdeskbetreuer“](role-based-access-control.md#built-in-roles)
+3. [Weisen Sie die RBCA-Rolle „Helpdeskbetreuer“ zu.](role-based-access-control.md#built-in-roles)
 
   ![Screenshot des Intune-Portals mit hervorgehobenen Intune-Rollen und einer Liste integrierter Rollen, darunter auch „Helpdeskbetreuer“](./media/help-desk-user-add.png) Sie können auch eine [benutzerdefinierte Rolle erstellen](role-based-access-control.md#custom-roles), die Sie weiter anpassen können, um Helpdeskbetreuern Zugriff zu gewähren.  Helpdeskbetreuer benötigen die folgenden Berechtigungen, um bei der Behebung von Problemen von Benutzern helfen zu können:
     - MobileApps: Lesen
@@ -61,8 +61,6 @@ Helpdeskmitarbeiter und Intune-Administratoren können auf zwei Arten auf das Po
 - Melden Sie sich im Azure-Portal an, wählen Sie **Mehr Dienste** > **Überwachung + Verwaltung** > **Intune**, und wechseln Sie anschließend zu **Hilfe und Support** > **Problembehandlung**.
 
 Klicken Sie auf **Benutzer auswählen**, um einen Benutzer sowie dessen Details anzuzeigen.
-
-![Screenshot der Workload zur Problembehandlung in Intune mit dem Link „Benutzer auswählen“](media/help-desk-user.png)
 
 ## <a name="use-the-troubleshooting-portal"></a>Verwenden des Problembehandlungsportals
 

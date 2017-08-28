@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 08/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4f0364750edf2e97e2b621c27fb25bea8e0f537c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Wie Ihre Android-Benutzer Apps erhalten
 
@@ -32,6 +32,14 @@ Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Android-Endb
 | ------------- |-------------| -----|
 | Verfügbare Apps      | Benutzer tippen im Unternehmensportal auf **Installieren**. Es wird eine Benachrichtigung angezeigt, auf die die Benutzer tippen, um die Installation zu starten. Nachdem die Installation erfolgreich durchgeführt wurde, verschwindet die Benachrichtigung. | Benutzer tippen im Unternehmensportal auf die App und werden zu einer App-Seite im Play Store weitergeleitet, auf der sie die Installation starten können.|
 | Required apps      | Benutzern wird eine Benachrichtigung angezeigt, die sie nicht verwerfen können, in der sie darauf hingewiesen werden, dass sie eine App installieren müssen. Benutzer tippen auf die Benachrichtigung, um die Installation zu starten. Nachdem die Installation erfolgreich durchgeführt wurde, verschwindet die Benachrichtigung.    | Benutzern wird eine Benachrichtigung angezeigt, die sie nicht verwerfen können, in der sie darauf hingewiesen werden, dass sie eine App installieren müssen. Benutzer tippen auf die Benachrichtigung und werden zu einer App-Seite im Play Store weitergeleitet, auf der sie die Installation starten können. Nachdem die Installation erfolgreich durchgeführt wurde, verschwindet die Benachrichtigung. |
+
+Ihre Benutzer müssen die Installation aus unbekannten Quellen zulassen, damit [branchenspezifische Apps](lob-apps-android.md) installiert werden können. Diese befinden sich normalerweise an zwei verschiedenen Orten:
+
+* **Android 7.1.2 und früher**: **Einstellungen** > **Sicherheit** > **Unknown sources** (Unbekannte Quellen)
+* **Android 8.0 und höher**: **Einstellungen** > **Apps & Benachrichtigungen** > **Special app access** > **Install unknown apps**  > **Unternehmensportal** > **Allow from this source** (Spezieller App-Zugriff > Unbekannte App installieren > Unternehmensportal > Aus dieser Quelle zulassen)
+
+In diesem Fall informiert die Unternehmensportal-App den Benutzer und führt ihn zur entsprechenden Einstellung. 
+
 
 ## <a name="samsung-knox-standard-android-devices"></a>Android-Geräte mit Samsung Knox Standard
 

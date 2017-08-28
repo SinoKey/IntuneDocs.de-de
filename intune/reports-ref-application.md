@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e12792445b36ba6657cbe6b2f6c924f6d97fe3c
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 6107059888c8d2fb6227277202a5906491ac9092
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="reference-for-application-entities"></a>Verweis für Anwendungsentitäten
 
@@ -50,11 +50,11 @@ Die Entität **AppRevision** führt alle Versionen einer App auf.
 | StartDateInclusiveUTC |Datum und Uhrzeit in UTC, als diese App-Revision im Data Warehouse erstellt wurde. |23.11.2016 12:00:00 |
 | EndDateExclusiveUTC |Datum und Uhrzeit in UTC, als diese App-Revision veraltet wurde |23.11.2016 12:00:00 |
 | IsCurrent |Gibt an, ob diese App-Version aktuell oder nicht im Data Warehouse vorhanden ist |Wahr/falsch |
-| RowLastModifiedDateTimeUTC |Datum und Uhrzeit in UTC, als diese App-Version zuletzt im Data Warehouse geändert wurde. |23.11.2016 12:00:00 |
+| RowLastModifiedDateTimeUTC |Datum und Uhrzeit in UTC, als diese App-Version zuletzt im Data Warehouse geändert wurde. |23.11.2016 12:00:00 Uhr |
 
-## <a name="appinstallertypes"></a>AppInstallerTypes
+## <a name="apptypes"></a>AppTypes
 
-Die Entität **AppInstallerTypes** führt die Installationsquelle einer App auf.
+Die Entität **AppTypes** führt die Installationsquelle einer App auf.
 
 | Eigenschaft  | Beschreibung |
 |---------|------------|
@@ -80,44 +80,6 @@ Die Entität **AppInstallerTypes** führt die Installationsquelle einer App auf.
 | 11 |Windows Mobile MSI |Eine branchenspezifische MSI-App |
 | 12 |Branchenspezifische Windows Phone-App |Eine Branchenspezifische Windows Phone-App |
 
-## <a name="applicationtypes"></a>ApplicationTypes
-
-Die Entität **ApplicationTypes** führt mögliche Typen für eine App auf.
-
-| Eigenschaft  | Beschreibung |
-|---------|------------|
-| ApplicationTypeID |ID für den Typ |
-| ApplicationTypeKey |Untergeordneter Schlüssel für den Schlüssel |
-| ApplicationTypeName |App-Typ |
-
-## <a name="example"></a>Beispiel
-
-| ApplicationTypeID  | Name | Beschreibung |
-|---------|------------|--------|
-| 0 |InHouse |Eine App, die intern entwickelt wurde |
-| 1 |DeepLink |Ein Link zu einer App in einem App Store |
-| 2 |WebLink |Ein Link zur Web-App |
-
-## <a name="managedsoftwaretypes"></a>ManagedSoftwareTypes
-
-Die Entität **ManagedSoftwareTypes** führt mögliche verwaltete Softwaretypen für eine App auf.
-
-| Eigenschaft  | Beschreibung |
-|---------|------------|
-| SoftwareTypeID |ID für den Typ |
-| SoftwareTypeKey |Untergeordneter Schlüssel für den Schlüssel |
-| SoftwareTypeName |Softwaretyp |
-
-## <a name="example"></a>Beispiel
-
-| SoftwareTypeID  | Name | Beschreibung |
-|---------|------------|--------|
-| 0 |desktop- |Eine Desktop-App |
-| 2 |Aktualisieren |Ein Fensterupdate |
-| 5 |SideCarAgent | |
-| 1 |Handy |Eine mobile App |
-| 3 |WebLink |Ein Weblink |
-| 4 |VppDeepLink |Ein Link zu einer App im App Store, die Teil eines VPP (Volume Purchase Program) ist. |
 
 ## <a name="vppprogramtypes"></a>VppProgramTypes
 
