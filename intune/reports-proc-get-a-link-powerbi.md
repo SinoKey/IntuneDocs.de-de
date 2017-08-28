@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
-ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
+ms.openlocfilehash: 6b3ce7e895920d2bb9ff3537fd0ef87ecb4efcc0
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinden mit dem Data Warehouse mit Power BI
 
@@ -60,18 +60,20 @@ Die Power BI-Datei (PBIX) enthält Verbindungsinformationen für Ihren Mandanten
 
 Wenn der Client bei Azure AD authentifiziert ist, verbindet sich die OData-URL mit dem RESTful-Endpunkt in der Data Warehouse-API, der das Datenmodell für Ihren Berichtserstellungsclient verfügbar macht. Um mit Power BI Desktop eine Verbindung herzustellen und Ihre eigene Berichte zu erstellen, gehen Sie wie folgt vor. Sie sind nicht auf Power BI Desktop festgelegt, sondern können Ihres bevorzugtes analytisches Tools mit der OData-URL verwenden. Die gilt unter der Voraussetzung, dass der Client die OAuth 2.0-Authentifizierung und den OData v4. 0-Standard unterstützt.
 
-1.  Rufen Sie die **OData-URL** aus dem Berichtsblatt ab, z.B. `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`.
-2.  Öffnen Sie **Power BI Desktop**.
-3.  Wählen Sie **Startseite** > **Daten abrufen** aus. Wählen Sie **OData-Feed** aus.
-4.  Wählen Sie **Standard**.
-5.  Geben Sie die **OData-URL** in das URL-Feld ein, oder fügen Sie sie ein.
-6.  Klicken Sie auf **OK**.
-7.  Wenn Sie Ihren Mandanten noch nicht über den Power BI Desktop-Client bei Azure AD authentifiziert haben, geben Sie Ihre Anmeldeinformationen ein.  
-    a.  Wählen Sie **Organisationskonto** aus.  
-    b.  Geben Sie Ihren Benutzernamen und Ihr Kennwort ein.  
-    c.  Klicken Sie auf **Anmelden**.  
-    d.  Klicken Sie auf **Verbinden**.  
-8.  Klicken Sie auf **Laden**.
+1.  Wählen Sie im Azure-Portal **Überwachung + Verwaltung** > **Intune** aus. Sie können auch Ressourcen nach **Intune** durchsuchen.  
+2.  Öffnen Sie das Blatt **Microsoft Intune Data Warehouse API (Preview)** (Microsoft Intune Data Warehouse-API (Vorschau)).
+3. Rufen Sie die benutzerdefinierte Feed-URL aus dem Berichtsblatt ab, z.B. `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`.
+4. Öffnen Sie **Power BI Desktop**.
+5. Wählen Sie **Startseite** > **Daten abrufen** aus. Wählen Sie **OData-Feed** aus.
+6. Wählen Sie **Standard**.
+7. Geben Sie die **OData-URL** in das URL-Feld ein, oder fügen Sie sie ein.
+8. Klicken Sie auf **OK**.
+9. Wenn Sie Ihren Mandanten noch nicht über den Power BI Desktop-Client bei Azure AD authentifiziert haben, geben Sie Ihre Anmeldeinformationen ein.  
+    1.  Wählen Sie **Organisationskonto** aus.  
+    2.  Geben Sie Ihren Benutzernamen und Ihr Kennwort ein.  
+    3.  Klicken Sie auf **Anmelden**.  
+    4.  Klicken Sie auf **Verbinden**.  
+10. Klicken Sie auf **Laden**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -79,4 +81,4 @@ Hier finden Sie Informationen zu Ihrer Umgebung, z.B. der Anzahl der registriert
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  Ihre Mandantendaten sind organisiert, damit Sie die Daten auswerten können. Weitere Informationen dazu, wie die Daten organisiert werden, finden Sie unter [Data Warehouse-Datenmodell](reports-ref-data-model.md). 
-<!-- -  You can also access the data from a RESTful interface and incorporate the data into your own app. For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md). -->
+ -  Sie können von einer RESTful-Schnittstelle auf die Daten zugreifen und die Daten in Ihre eigene App einbeziehen. Weitere Informationen finden Sie unter [Abrufen von Daten aus der Intune-Data Warehouse-API mit einem REST-Client)](reports-proc-data-rest.md).

@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: dcc97e5bcffb35752b65e8ce275d38b9578da6fa
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: 3514b580a4e35cc9e0813d6dd7fd0e1eee550d7c
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="enrollment-options-for-intune"></a>Registrierungsoptionen für Intune
 
@@ -41,6 +41,9 @@ Für die iOS- und macOS-Geräteregistrierung ist ein MDM-Push-Zertifikat erforde
 ## <a name="corporate-identifiers"></a>Unternehmensbezeichner
 
 Sie können IMEI-Nummern (IMEI = International Mobile Equipment Identifier) und Seriennummern auflisten, um unternehmenseigene Geräte zu identifizieren. Weitere Informationen zu [Unternehmensbezeichnern](corporate-identifiers-add.md).
+## <a name="multi-factor-authentication"></a>Mehrstufige Authentifizierung
+
+Sie können Benutzer dazu auffordern, eine zusätzliche Überprüfungsmethode wie eine Telefonnummer, eine PIN oder biometrische Daten zu verwenden, wenn sie ein Gerät registrieren. Erfahren Sie mehr über die [mehrstufige Authentifizierung](multi-factor-authentication.md).
 
 ## <a name="device-enrollment-manager"></a>Geräteregistrierungs-Manager
 Sie können Benutzer zu Geräteregistrierungs-Managern machen.  DEM-Benutzer (DEM = Device Enrollment Manager, Geräteregistrierungs-Manager) können eine große Anzahl mobiler Geräte mit einem einzelnen Benutzerkonto registrieren. Das DEM-Konto kann bis zu 1.000 Geräte registrieren. Weitere Informationen zu [Geräteregistrierungs-Managern](device-enrollment-manager-enroll.md).

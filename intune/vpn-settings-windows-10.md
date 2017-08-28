@@ -15,11 +15,11 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f112983a33c1af24d288f19140114084575f36d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e7fb7697f50706566210063605e9b5d750e0c90
+ms.sourcegitcommit: 5a4529aae710ca2abac5b4d2cfd92cb2df7e67cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>VPN-Einstellungen für Windows 10-Geräte in Microsoft Intune
 
@@ -96,10 +96,13 @@ Weitere Informationen zum Erstellen von benutzerdefinierten XML-Befehlen finden 
 
 ## <a name="conditional-access"></a>Bedingter Zugriff
 
-**Bedingter Zugriff für diese VPN-Verbindung** -
-**Einmaliges Anmelden (SSO) mit alternativem Zertifikat** -
-**Erweiterte Schlüsselverwendung** -
-**Ausstellerhash** -
+**Bedingter Zugriff für diese VPN-Verbindung**: Aktiviert den Gerätekompatibilitätsfluss vom Client. Wenn aktiviert, versucht der VPN-Client, mit Azure AD zu kommunizieren, um ein Zertifikat für die Authentifizierung abzurufen. Der VPN sollte für die Zertifikatauthentifizierung eingerichtet sein, und der VPN-Server muss dem Server vertrauen, der von Azure Active Directory zurückgegeben wird.
+
+**Einmaliges Anmelden (Single Sign-On, SSO) mit alternativem Zertifikat**: Verwenden Sie aus Gründen der Gerätekonformität ein anderes Zertifikat als das VPN-Authentifizierungszertifikat für die Kerberos-Authentifizierung. Geben Sie das Zertifikat mit den folgenden Einstellungen an: 
+
+- **Erweiterte Schlüsselverwendung:** Name der erweiterten Schlüsselverwendung (Extended Key Usage, EKU)
+- **Objektbezeichner:** Objektbezeichner für EKU
+- **Ausstellerhash:** Fingerabdruck des SSO-Zertifikats
 
 ## <a name="dns-settings"></a>DNS-Einstellungen
 

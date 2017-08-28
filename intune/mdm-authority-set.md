@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97dede1ac393a434342f62d1f8488389dcb28d44
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: dfcd7b97848ed68edb4572429abc53a1cc8f8558
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Festlegen der Autorität für die Verwaltung mobiler Geräte
 
@@ -40,11 +40,27 @@ In Configuration Manager, Version 1610 oder höher, und Microsoft Intune, Versio
 
 ## <a name="set-mdm-authority-to-intune"></a>Festlegen der MDM-Autorität in Intune
 
-1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-  ![Screenshot der Workload zur Problembehandlung in Intune mit dem Link „Benutzer auswählen“](media/set-mdm-auth.png)
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Optionen **Weitere Dienste** > **Überwachung + Verwaltung** > **Intune** aus.
 2. Wählen Sie auf dem Blatt „Intune“ die Option **Geräteregistrierung** und dann **Übersicht** aus.
+![Screenshot vom Intune-Bildschirm zum Festlegen der Autorität für die mobile Geräteverwaltung](media/set-mdm-auth.png)
 
-3. Wählen Sie auf dem Blatt **Mit der Geräteverwaltung beginnen** die Option **MDM-Autorität auf Intune festlegen** aus. Eine Meldung zeigt an, dass Sie die MDM-Autorität erfolgreich auf Intune festgelegt haben.
+3. Wählen Sie unter **Autorität für die Verwaltung mobiler Geräte** Ihre MDM-Autorität aus den folgenden Optionen aus:
+  - **Intune-MDM-Autorität**
+  - **Configuration Manager-MDM-Autorität**
+  - **Keine**
+
+  Eine Meldung zeigt an, dass Sie die MDM-Autorität erfolgreich auf Intune festgelegt haben.
+
+## <a name="enable-device-enrollment"></a>Aktivieren der Geräteregistrierung
+
+Mit Intune als MDM-Autorität können Benutzer private Geräte registrieren und durch das Installieren der Unternehmensportal-App (iOS und Android), das Hinzufügen von Unternehmensanmeldeinformationen (Windows) oder das Zugreifen auf die Unternehmensportal-Website (iOS, Android, macOS) Zugriff auf Ressourcen wie E-Mails erhalten.
+
+Verschiedene Plattformen haben die folgenden Anforderungen für das Aktivieren oder Vereinfachen der Registrierung:
+- **iOS** – (erforderlich): [Rufen Sie ein MDM-Pushzertifikat von Apple ab](apple-mdm-push-certificate-get.md), und [registrieren Sie dann unternehmenseigene iOS-Geräte](ios-enroll.md) (optional).
+- **Android** – (optional): [Aktivieren Sie Android-Arbeitsprofile.](android-enroll.md)
+- **Windows** – (optional): Aktivieren Sie die [automatische Registrierung](windows-enroll.md) oder die [Massenregistrierung](windows-bulk-enroll.md).
+- **macOS**: Keine Anforderungen
+
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Bereinigen mobiler Geräte nach Ablauf des MDM-Zertifikats
 

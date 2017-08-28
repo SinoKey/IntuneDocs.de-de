@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 08/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5a9b7f69cded9258efb6c8a897e0c026f3228a6b
+ms.sourcegitcommit: c248b5a15894f0ade23bad4644c3b7035a9fcce8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekannte Probleme in Microsoft Intune
 
@@ -41,22 +41,24 @@ Beim Migrieren vom klassischen Intune zum Azure-Portal könnten Sie eine neue Gr
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>Sekundäre Migration für ausgewählte Funktionen erforderlich
 
-Vor Januar 2017 erstellte Intune-Konten müssen migriert werden, ehe diese Funktionen im Azure-Portal verwendet werden können:
+Vor Januar 2017 erstellte Intune-Konten müssen migriert werden, ehe die folgenden Funktionen im Azure-Portal verwendet werden können:
 
 - Profile für die Unternehmensgeräteregistrierung
 - Apple-Programm zur Geräteregistrierung
-- Mithilfe der Gruppe „iOS-Seriennummer“ vorab registrierte Unternehmensgeräte
-- Geräteregistrierungs-Manager
+- Firmeneigene Geräten über die iOS-Seriennummer vorab deklarieren
+- Konten für den Geräteregistrierungs-Manager
 - Apple Volume Purchase Program
 
-Da diese Funktionen nicht über die klassischen Silverlight- und Azure-Konsolen verwaltet werden können, erfolgt bei der Migration Folgendes:
+Da diese Funktionen nicht über die klassische Intune-Konsole (Silverlight) und das Azure-Portal verwaltet werden können, erfolgt bei der Migration Folgendes:
 - Werden in der klassischen Konsole deaktiviert
-- Werden in der Azure-Konsole aktiviert  
+- Werden im Azure-Portal aktiviert  
+
+Nach dem 11. September 2017 wird die Migration dieser Funktionen in der primären Migration zu Azure zusammengeführt. Wenn Ihr Konto bereits zum Azure-Portal migriert wurde, wird diese sekundäre Migration zwischen dem 11. und dem 22. September 2017 vorgenommen. Sobald Ihre Kontomigration eingeleitet wurde, wird sie auch am selben Tag abgeschlossen. Die Migration kann ab dem Zeitpunkt der Deaktivierung dieser Funktionen in der klassischen Intune-Konsole bis zu sechs Stunden in Anspruch nehmen.
 
 Wenn Sie diese Intune-Funktionen nun im Azure-Portal verwalten, achten Sie auf die folgenden Punkte:
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Profile für die Unternehmensgeräteregistrierung im Apple-Programm zur Geräteregistrierung (DEP) wurden entfernt.
-Das Azure-Portal unterstützt nicht das Standardprofil für Unternehmensgeräteregistrierungen für Geräte im Apple DEP. Diese Funktion, die in der klassischen Silverlight Intune-Konsole zur Verfügung steht, wird nicht fortgeführt, um unbeabsichtigte Zuweisungen von Profilen zu verhindern. Wenn DEP-Seriennummern im Azure-Portal synchronisiert werden, wird kein Profil zur Unternehmensgeräteregistrierung zugewiesen. Vor der Nutzung des Geräts muss ein Registrierungsprofil zugewiesen werden.
+Das Azure-Portal unterstützt nicht das Standardprofil für Unternehmensgeräteregistrierungen für Geräte im Apple DEP. Diese Funktionalität, die in der klassischen Intune-Konsole (Silverlight) zur Verfügung steht, wird nicht fortgeführt, um unbeabsichtigte Zuweisungen von Profilen zu verhindern. Wenn DEP-Seriennummern im Azure-Portal synchronisiert werden, wird kein Profil zur Unternehmensgeräteregistrierung zugewiesen. Vor der Nutzung des Geräts muss ein Registrierungsprofil zugewiesen werden.
 
 #### <a name="apple-dep-token-restored-with-migration"></a>Apple DEP-Token bei Migration wiederhergestellt
 
@@ -72,7 +74,7 @@ Sie können keine Statusinformationen für Richtlinien anzeigen, die aus dem kla
 Per Volumenlizenz erworbene iOS-Apps werden angezeigt und können nur für den gleichen Ländercode wie Ihr Intune-Konto zugewiesen werden. Intune synchronisiert nur Apps aus dem gleichen iTunes-Gebietsschema wie der Ländercode des Intune-Mandantenkontos. Wenn Sie beispielsweise eine App kaufen, die nur im US-Store verfügbar ist, Ihr Intune-Konto jedoch auf Deutsch ist, zeigt Intune diese App nicht an.
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Es werden mehrere Kopien desselben iOS-Volumenlizenzprogramms hochgeladen.
-Klicken Sie nicht mehrmals für das gleiche VPP-Token auf die Schaltfläche **Hochladen**. Dies führt dazu, dass doppelte VPP-Token hochgeladen und Apps mehrmals für das gleiche VPP-Token synchronisiert werden. 
+Klicken Sie nicht mehrmals für das gleiche VPP-Token auf die Schaltfläche **Hochladen**. Dies führt dazu, dass doppelte VPP-Token hochgeladen und Apps mehrmals für das gleiche VPP-Token synchronisiert werden.
 
 <!-- ## Groups -->
 
@@ -84,8 +86,9 @@ Für Geräte, die nicht bei Intune registriert sind, können Sie in den Einstell
 Wenn Sie (über **Erweiterte Einstellungen** > **Umkreisnetzwerk** > **Geschützte Domäne hinzufügen**) weitere Domänen hinzufügen, können Sie die Richtlinie nicht speichern. Die angezeigte Fehlermeldung wird in Kürze geändert, um mehr Genauigkeit zu bieten.
 
 ### <a name="cisco-anyconnect-vpn-client-support"></a>Cisco AnyConnect VPN-Client-Unterstützung
- 
-Das neueste Release des Cisco AnyConnect VPN-Clients (4.0.07072) ist derzeit nicht mit Intune kompatibel. Ein zukünftiges Intune-Update wird die Kompatibilität mit dieser Version des VPN-Clients beinhalten. Bis dahin wird empfohlen, dass Sie Ihren Cisco AnyConnect VPN-Client nicht aktualisieren und weiterhin die vorhandene Version verwenden.
+
+Das neueste Release des Cisco AnyConnect VPN-Clients (4.0.07072) ist derzeit nicht mit Intune kompatibel.
+Ein zukünftiges Intune-Update wird die Kompatibilität mit dieser Version des VPN-Clients beinhalten. Bis dahin wird empfohlen, dass Sie Ihren Cisco AnyConnect VPN-Client nicht aktualisieren und weiterhin die vorhandene Version verwenden.
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>Verwenden des numerischen Kennworttyps mit macOS Sierra-Geräten
 
@@ -118,16 +121,3 @@ Sie können [App-Schutzrichtlinien für iOS](app-protection-policy-settings-ios.
 Globale Administratoren (auch als Mandantenadministratoren bezeichnet) können weiterhin alltägliche Verwaltungsaufgaben ausführen, ohne über eine separate Intune- oder EMS-Lizenz (Enterprise Mobility Suite) zu verfügen. Wenn sie den Dienst jedoch verwenden möchten, um z. B. ihr eigenes Gerät oder ein unternehmenseigenes Gerät zu registrieren bzw. das Intune-Unternehmensportal zu verwenden, benötigen sie eine Intune- oder EMS-Lizenz.
 
 <!-- ## Additional items -->
-
-
-
-
-
-
-
-
-
-
-
-
- 

@@ -1,12 +1,12 @@
 ---
 title: Erste Schritte mit Richtlinien
 titleSuffix: Intune on Azure
-description: 
+description: "Erstellen Sie Richtlinien, um zu verhindern, dass Benutzer nicht autorisierte Aktionen mit ihren Geräten vornehmen."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,13 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd3279288fe5ea1fec16224c70b4562fcf53555d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b12b80ac13868b6706d2d4e7532ec13cba9a5b7e
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-with-policies"></a>Erste Schritte mit Richtlinien
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-with-policies"></a>Erste Schritte mit Richtlinien
 
 Eine der wichtigsten Zielsetzungen bei den ersten Schritten mit Intune ist das Registrieren von Geräten, um sicherzustellen, dass sie mit den Unternehmensrichtlinien kompatibel sind. Mit Kompatibilitätsrichtlinien können Sie nicht nur spezielle Gerätetypen wie z.B. firmeneigene Kioske verwalten, sondern auch persönliche Geräte und Tablets sowie benutzerlose Geräte.
 
@@ -56,3 +54,12 @@ __Wie erstelle ich eine Richtlinie?__
 7. Kehren Sie zurück zum Blatt **Richtlinie erstellen**, und wählen Sie dann **Erstellen** aus.
 8. Wählen Sie nach dem Erstellen der Richtlinie **Zuweisungen** aus, um sie Ihrer Testgruppe zuzuweisen. Wählen Sie Ihre Testgruppe mit Ihren Testbenutzern aus, und weisen Sie dieser Gruppe dann die Richtlinie zu, indem Sie auf **Speichern** klicken.
 9. Warten Sie einige Minuten, bis Ihr registriertes Gerät Sie zur Eingabe eines aktualisierten Kennworts auffordert, damit weiterhin Kompatibilität mit der Unternehmensrichtlinie gegeben ist. Sie können dies auch manuell in der **Unternehmensportal-App für iOS** überprüfen, indem Sie auf den Gerätenamen und dann auf die Schaltfläche **Synchronisieren** klicken.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+[Erste Schritte beim Registrieren von Geräten:](get-started-enroll.md) Machen Sie sich mit dem Registrierungsprozess vertraut, indem Sie ein iOS-Gerät vollständig registrieren.
+
+## <a name="learn-more"></a>Weitere Informationen
+
+* [Überwachen von Intune-Richtlinien zur Gerätekompatibilität](compliance-policy-monitor.md)
+* [Gängige Möglichkeiten der Verwendung des bedingten Zugriffs in Intune](conditional-access-intune-common-ways-use.md)

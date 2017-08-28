@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8197e03e8a3eb42c6a5be3b6357d959ed9428454
-ms.sourcegitcommit: 0e012f25fb22124f66193f20f244362493c6b8bb
+ms.openlocfilehash: 91fd4719a4305f5e422163f9049684ebd9e9e656
+ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/19/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Aktivieren der iOS-Geräteregistrierung mit Apple School Manager
 
@@ -103,18 +103,16 @@ Ein Geräteregistrierungsprofil definiert die Einstellungen, die während der Re
 
     - **Überwacht:** Dieser Verwaltungsmodus ermöglicht weitere Verwaltungsoptionen und deaktiviert standardmäßig die Aktivierungssperre. Wenn Sie das Kontrollkästchen nicht aktivieren, stehen Ihnen nur beschränkte Verwaltungsfunktionen zur Verfügung.
 
-    - **Registrierung gesperrt:**: (Erfordert den Vorbereitungsmodus „Überwacht“) Deaktiviert iOS-Einstellungen, die das Entfernen des Verwaltungsprofils zulassen könnten. Wenn Sie dieses Kontrollkästchen nicht aktivieren, kann das Verwaltungsprofil aus dem Menü „Einstellungen“ entfernt werden.
+     - **Registrierung gesperrt:**: (Erfordert den Vorbereitungsmodus „Überwacht“) Deaktiviert iOS-Einstellungen, die das Entfernen des Verwaltungsprofils zulassen könnten. Wenn Sie dieses Kontrollkästchen nicht aktivieren, kann das Verwaltungsprofil aus dem Menü „Einstellungen“ entfernt werden.
+   - **Gemeinsam genutztes iPad**: (erfordert die Option **Ohne Benutzeraffinität registrieren** und den Modus **Überwacht**.) Diese Einstellung ermöglicht es, dass mehrere Benutzer sich mithilfe einer verwalteten Apple-ID bei registrierten iPads anmelden können. Verwaltete Apple-IDs werden im Apple School Manager-Portal erstellt. Weitere Informationen zu gemeinsam genutzten iPads finden Sie [in diesem Artikel](education-settings-configure-ios-shared.md).
+   >[!NOTE]
+   >Wenn **Benutzeraffinität** auf den Modus **Mit Benutzeraffinität** oder **Überwacht**  auf **deaktiviert** festgelegt wird, wird der Modus „Gemeinsam genutztes iPad“ für das Registrierungsprofil deaktiviert.
 
-  - **Gemeinsam genutztes iPad**: (erfordert die Option **Ohne Benutzeraffinität registrieren** und den Modus **Überwacht**.) Diese Einstellung ermöglicht es, dass mehrere Benutzer sich mithilfe einer verwalteten Apple-ID bei registrierten iPads anmelden können. Verwaltete Apple-IDs werden im Apple School Manager-Portal erstellt.
-
-  >[!NOTE]
-  >Wenn **Benutzeraffinität** auf den Modus **Mit Benutzeraffinität** oder **Überwacht**  auf **deaktiviert** festgelegt wird, wird der Modus „Gemeinsam genutztes iPad“ für das Registrierungsprofil deaktiviert.
-
-  - **Maximale Anzahl zwischengespeicherter Benutzer**: (Erfordert die Einstellung **Gemeinsam genutztes iPad** = **Ja**) Erstellt auf dem Gerät eine Partition für jeden Benutzer. Der empfohlene Wert ist die Anzahl von Studierenden, die das Gerät in einem bestimmten Zeitraum wahrscheinlich verwenden werden. Wenn unter der Woche voraussichtlich sechs Studierende das Gerät regelmäßig verwenden werden, legen Sie diesen Wert auf 6 fest.  
+        - **Maximum Cached Users** - (Requires **Shared iPad** = **Yes**) Creates a partition on the device for each user. The recommended value is the number of students likely to use the device over a period of time. For example, if six students use the device regularly during the week, set this number to six.  
 
     - **Kopplung zulassen:** Gibt an, ob iOS-Geräte mit Computern synchronisiert werden können. Wenn Sie **Apple Configurator nach Zertifikat zulassen** auswählen, müssen Sie unter **Apple Configurator-Zertifikate** ein Zertifikat auswählen.
 
-    - **Apple Configurator-Zertifikate:** Wenn Sie **Apple Configurator nach Zertifikat zulassen** unter **Kopplung zulassen** ausgewählt haben, wählen Sie ein Apple Configurator-Zertifikat aus, das Sie importieren möchten.
+      - **Apple Configurator-Zertifikate:** Wenn Sie **Apple Configurator nach Zertifikat zulassen** unter **Kopplung zulassen** ausgewählt haben, wählen Sie ein Apple Configurator-Zertifikat aus, das Sie importieren möchten.
 
 7. Klicken Sie auf **Einstellungen des Einrichtungs-Assistenten**, konfigurieren Sie die folgenden Profileinstellungen, und klicken Sie dann auf **Speichern**:
 
