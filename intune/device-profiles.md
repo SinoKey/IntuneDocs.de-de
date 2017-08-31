@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5288bfc3aebbd119b49ef5261944840fd863afa5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 95ce3b6a307a71431b9717abdc3980f15a916a18
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Was sind Microsoft Intune Geräteprofile?
 
@@ -74,7 +74,7 @@ Mit diesem Profiltyp können Sie Geräte, auf denen einige Windows 10-Versionen 
 Weitere Informationen finden Sie unter [How to configure Windows 10 edition upgrades (Konfigurieren von Windows 10-Editionsupgrades](edition-upgrade-configure-windows-10.md) Unterstützt: nur Windows 10.
 
 ## <a name="endpoint-protection"></a>Endpoint Protection
-Mit diesem Profiltyp können Sie die BitLocker-Einstellungen für Windows 10-Geräte konfigurieren.
+Mit diesem Profiltyp können Sie die BitLocker- und Windows Defender-Einstellungen für Windows 10-Geräte konfigurieren.
 Weitere Informationen finden Sie unter [Endpoint protection settings for Windows 10 (Endpoint Protection-Einstellungen für Windows 10](endpoint-protection-windows-10.md) Unterstützt: nur Windows 10.
 
 ## <a name="windows-information-protection"></a>Windows Information Protection

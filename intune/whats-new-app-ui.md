@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,46 @@ ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 33d1f28cd5522ed47c3fdf83b289116728ded12b
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.custom: intune-azure
+ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune
 Erfahren Sie, welche Aktualisierungen wir an der Benutzeroberfläche für Apps vorgenommen haben, die Ihre Endbenutzer in dieser Version von Microsoft Intune sehen werden. Damit werden Sie bei der Benutzerkommunikation sowie bei allen aktualisierten Benutzerdokumentationen unterstützt, die Sie zur Unterstützung Ihrer Entwicklung erstellt haben. Es kann auch helfen, zu verstehen, wie Probleme behandelt werden, die auftauchen, wenn Benutzer den Helpdesk für den Support mithilfe des Unternehmensportals aufrufen.
 
+## <a name="week-of-august-21-2017"></a>Woche vom 21. August 2017
+
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Die Dialogfelder der mobilen Anwendungsverwaltung mit Intune (Intune Mobile Application Management (MAM)) verfügen über eine moderne Schnittstelle <!-- 1199015 -->
+
+Die Dialogfelder der mobilen Anwendungsverwaltung mit Intune (MAM) werden moderner aussehen und sich verhalten. Die Dialogfelder funktionieren wie zuvor.
+
+**Bisherige Benutzeroberfläche**
+
+![alte Schnittstelle](media\NewUI_Old_AttachFileHandler.jpg)
+
+**Moderne Benutzeroberfläche**
+
+![moderne Schnittstelle](media\NewUI_Modern_AttachFileHandler.jpg)
+
+
 ## <a name="week-of-august-14-2017"></a>Woche vom 14. August 2017
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10"></a>Updates für die Seite „Gerätedetails“ der Unternehmensportal-App für Windows 10
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Updates der Seite „Gerätedetails“ der Unternehmensportal-App für Windows 10 <!---1287448--->
 
 Das Tag __Kategorie__ wird in der Unternehmensportal-App für Windows 10 von dem Platz unter dem Titel zu einer Eigenschaft auf der Seite __Gerätedetails__ verschoben.
 
 ![Der Windows-Bildschirm „Gerätedetails“ in der Unternehmensportal-App, auf dem das Feld „Kategorien“ als Eigenschaft und nicht direkt unter dem Titel des Bildschirms angezeigt wird](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="week-of-july-31-2017"></a>Woche vom 31. Juli 2017
+
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Detailseiten von Apps zeigen neue Informationen für Android-Geräte an <!--1287476-->
+
+Die Detailseite der Unternehmensportal-App für Android zeigt nun die App-Kategorien an, die der IT-Administrator für diese App definiert hat.
+
+![Die neue Detailseite der App](./media/cp_android_appdetails_after_1708.png)
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Verbesserter Anmeldevorgang für alle Unternehmensportal-Apps auf allen Plattformen <!--User Story 1132123-->
 
@@ -128,7 +149,7 @@ Basierend auf Benutzerfeedback wurde der Unternehmensportal-App für Android ein
 
 ## <a name="week-of-june-5-2017"></a>Woche vom 5. Juni 2017
 
-### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios"></a>Verbesserungen an den App-Kacheln in der Unternehmensportal-App für iOS
+### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>Verbesserungen an den App-Kacheln in der Unternehmensportal-App für iOS <!--1230777-->
 Wir haben das Design der App-Kacheln auf der Startseite entsprechend der Brandingfarbe geändert, die Sie für das Unternehmensportal festgelegt haben.
 
 **Vorher**

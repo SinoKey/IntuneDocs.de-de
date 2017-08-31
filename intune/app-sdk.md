@@ -4,7 +4,7 @@ description: "Das Intune App Software Development Kit (SDK) ist für iOS- und An
 keywords: 
 author: mtillman
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 08/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8a9b0c398c4b6dd46823ceaaefd68ee193ab4502
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c509e324788828d8ce5a3e9ac556c82ce57e9b07
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="intune-app-sdk-overview"></a>Übersicht über das Intune App SDK
 Das für IOS und Android verfügbare Intune App SDK aktiviert Ihre App für Intune-App-Schutzrichtlinien. Es zielt darauf ab, die vom App-Entwickler vorzunehmenden Codeänderungen zu minimieren. Sie werden feststellen, dass Sie die meisten SDK-Funktionen aktivieren können, ohne das Verhalten Ihrer App ändern zu müssen. Um die Benutzerfreundlichkeit der App für Endbenutzer und IT-Administratoren zu verbessern, können Sie unsere APIs verwenden und so das App-Verhalten für Funktionen anpassen, die Ihre Mitwirkung erfordern.
@@ -62,8 +62,7 @@ Das Feature für mehrere Identitäten hilft Ihnen, das Datenschutzproblem zu lö
 ### <a name="app-protection-without-device-enrollment"></a>App-Schutz ohne Geräteregistrierung
 
 >[!IMPORTANT]
->Das Intune App SDK für Android bietet noch keinen Intune-App-Schutz ohne Geräteregistrierung. Dieser ist verfügbar mit den Intune App Wrapping Tools, dem SDK für iOS, der SDK Xamarin-Komponente und dem SDK Cordova-Plug-In.
-
+>Der Intune-App-Schutz ohne Geräteregistrierung ist mit den Intune App Wrapping Tools, dem Intune App SDK für Android, dem Intune App SDK für iOS, der SDK Xamarin-Komponente und dem SDK Cordova-Plug-In verfügbar.
 
 Viele Benutzer privater Geräten möchten auf Unternehmensdaten zugreifen, ohne ihr privates Gerät bei einem MDM-Anbieter (Mobile Device Management, Verwaltung mobiler Geräte) zu registrieren. Da die MDM-Registrierung eine globale Kontrolle des Geräts voraussetzt, zögern viele Benutzer häufig, diese globale Kontrolle über ihr privates Gerät an das Unternehmen zu übergeben.
 

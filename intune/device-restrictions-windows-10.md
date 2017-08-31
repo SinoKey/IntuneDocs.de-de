@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd84f24400c5ca0828fb13a36963ffda274ba073
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: e0bbbdfae73dfd843f4b011cecf0217d2c6eb699
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Windows 10 und höher in Microsoft Intune
 
@@ -100,7 +100,7 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
 -   **App-Daten in Systemvolume installieren:** Hindert Apps daran, Daten auf dem Systemvolume des Geräts zu speichern.
 -   **Apps auf Systemlaufwerk installieren:** Hindert Apps daran, Daten auf dem Systemlaufwerk des Geräts zu speichern.
 -   **Game DVR (nur Desktop):** Konfiguriert, ob Aufzeichnen und Senden von Spielen zulässig ist.
--   **Apps nur aus dem Store)**: Konfiguriert, ob Benutzer Apps von anderen Orten als aus dem App-Store installieren können.
+-   **Nur Apps aus dem Store**: Konfiguriert, ob Benutzer Apps von anderen Orten als aus dem App-Store installieren können.
 
 
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4994656afcf1cdb97fdcd3877f6dabdadfb7d374
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f38320ca84a734f645c3d8554c5aef53836fd1be
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Endpoint Protection-Einstellungen für Windows 10 und höher in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Mit dem Endpoint Protection-Profil können Sie Sicherheitsfunktionen auf Windows 10-Geräten steuern, wie z.B. BitLocker.
+Mit dem Endpoint Protection-Profil können Sie Sicherheitsfunktionen auf Windows 10-Geräten steuern, wie z.B. BitLocker und Windows Defender.
 
 In diesem Thema erfahren Sie, wie Sie Endpoint Protection-Profile erstelle können.
 
@@ -38,13 +38,18 @@ In diesem Thema erfahren Sie, wie Sie Endpoint Protection-Profile erstelle könn
 3. Wählen Sie auf dem Blatt „Profile“ die Option **Profil erstellen** aus.
 4. Geben Sie auf dem Blatt **Profil erstellen** einen **Namen** und eine **Beschreibung** für das Gerätefunktionsprofil ein.
 5. Wählen Sie in der Dropdownliste **Plattform** die Option **Windows 10 und höher** aus.
-6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Endpoint Protection** aus. 
+6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Endpoint Protection** aus.
 7. Nehmen Sie auf dem Blatt **Windows-Verschlüsselung** die gewünschten Einstellungen vor. Die Angaben in diesem Thema helfen Ihnen dabei zu verstehen, was die Auswirkungen jeder Einstellung sind. Wenn Sie fertig sind, wählen Sie **OK** aus.
 8. Gehen Sie zurück zum Blatt **Profil erstellen**, und klicken Sie auf **Erstellen**.
 
 Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
 
-## <a name="endpoint-protection-profile-settings-reference"></a>Referenz für die Einstellungen eines Endpoint Protection-Profils
+## <a name="windows-defender-smartscreen-settings"></a>Einstellungen für Windows Defender SmartScreen
+
+- **SmartScreen für Apps und Dateien**: Hiermit wird Windows SmartScreen für die Datei- und App-Ausführung aktiviert.
+- **Ausführung nicht überprüfter Dateien**: Hiermit wird die Ausführung von Dateien durch den Benutzer gesperrt, die nicht durch Windows SmartScreen überprüft wurden.
+
+## <a name="windows-encryption-settings"></a>Windows-Verschlüsselungseinstellungen
 
 ### <a name="windows-settings"></a>Windows-Einstellungen
 
@@ -62,16 +67,16 @@ Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
 
 ### <a name="bitlocker-os-drive-settings"></a>Einstellung für BitLocker-OS-Datenträger
 
-- **Zusätzliche Authentifizierung beim Start anfordern** - 
-    - **BitLocker auf Geräten ohne kompatiblen TPM-Chip blockieren** - 
-    - **TPM-Systemstart**: Legen Sie fest, ob ein TPM-Chip verwendet werden darf oder muss. 
-    - **TPM-Systemstart-PIN**: Legen Sie fest, ob mit dem TPM-Chip ein Systemstart-PIN verwendet werden darf oder muss. 
-    - **TPM-Systemstartschlüssel**: Legen Sie fest, ob mit dem TPM-Chip ein Systemstartschlüssel verwendet werden darf oder muss. 
+- **Zusätzliche Authentifizierung beim Start anfordern** -
+    - **BitLocker mit nicht kompatiblem TPM-Chip** -
+    - **TPM-Systemstart**: Legen Sie fest, ob ein TPM-Chip verwendet werden darf oder muss.
+    - **TPM-Systemstart-PIN**: Legen Sie fest, ob mit dem TPM-Chip ein Systemstart-PIN verwendet werden darf oder muss.
+    - **TPM-Systemstartschlüssel**: Legen Sie fest, ob mit dem TPM-Chip ein Systemstartschlüssel verwendet werden darf oder muss.
     - **TPM-Systemstartschlüssel und -Systemstart-PIN**: Legen Sie fest, ob mit dem TPM-Chip ein Systemstartschlüssel und ein PIN verwendet werden darf oder muss.
 - **PIN-Mindestlänge**: Wenn diese Einstellung aktiv ist, können Sie eine Mindestlänge für den TPM-Systemstart-PIN festlegen.
     - **Mindestanzahl von Zeichen**: Geben Sie die Zahl an Zeichen an, die für den Systemstart-PIN erforderlich sind, zwischen **4**-**20**.
 - **Betriebssystemwiederherstellung aktivieren**: Wenn diese Einstellung aktiv ist, können Sie steuern, wie durch BitLocker geschützte Betriebssystemdatenträger wiederhergestellt werden, wenn die erforderlichen Systemstartinformationen nicht verfügbar sind.
-    - **Agent für zertifikatbasierte Datenwiederherstellung zulassen**: Wenn diese Einstellung aktiv ist, können Datenwiederherstellungs-Agents mit durch BitLocker geschützten Betriebssystemdatenträgern verwendet werden.
+    - **Agent für zertifikatbasierte Datenwiederherstellung**: Wenn diese Einstellung aktiv ist, können Datenwiederherstellungs-Agents mit durch BitLocker geschützten Betriebssystemdatenträgern verwendet werden.
     - **Erstellung des Wiederherstellungskennworts durch den Benutzer**: Legen Sie fest, ob Benutzer ein 48-stelliges Wiederherstellungskennwort generieren dürfen oder müssen.
     - **Erstellung des Wiederherstellungsschlüssels durch den Benutzer**: Legen Sie fest, ob Benutzer ein 256-Bit-Wiederherstellungskennwort generieren dürfen oder müssen.
     - **Wiederherstellungsoptionen im BitLocker-Setup-Assistenten ausblenden**: Wenn Sie diese Einstellung festlegen, können Sie verhindern, dass Benutzer Wiederherstellungsoptionen sehen bzw. ändern können, wenn sie BitLocker aktivieren.
@@ -92,7 +97,7 @@ Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
 
 - **Schreibzugriff auf Festplattenlaufwerke verweigern, die nicht durch BitLocker geschützt sind**: Wenn diese Einstellung festgelegt wurde, muss der BitLocker-Schutz auf allen Festplatten- und integrierten Laufwerken aktiviert sein, damit in sie geschrieben werden kann.
 - **Wiederherstellung von Festplattenlaufwerken aktivieren**: Wenn diese Einstellung festgelegt wurde, können Sie steuern, wie durch BitLocker geschützte Festplattenlaufwerke wiederhergestellt, wenn die erforderlichen Systemstartinformationen nicht vorliegen.
-    - **Datenwiederherstellungs-Agent zulassen**: Wenn diese Einstellung aktiviert wurde, können Datenwiederherstellung-Agents mit durch BitLocker geschützte Festplattenlaufwerke verwendet werden.
+    - **Datenwiederherstellungs-Agent**: Wenn diese Einstellung aktiviert ist, können Datenwiederherstellungs-Agents mit durch BitLocker geschützten Festplattenlaufwerken verwendet werden.
     - **Erstellung des Wiederherstellungskennworts durch den Benutzer**: Legen Sie fest, ob Benutzer ein 48-stelliges Wiederherstellungskennwort generieren dürfen oder müssen.  
     - **Erstellung des Wiederherstellungsschlüssels durch den Benutzer**: Legen Sie fest, ob Benutzer ein 256-Bit-Wiederherstellungskennwort generieren dürfen oder müssen.
     - **Wiederherstellungsoptionen im BitLocker-Setup-Assistenten ausblenden**: Wenn Sie diese Einstellung festlegen, können Sie verhindern, dass Benutzer Wiederherstellungsoptionen sehen bzw. ändern können, wenn sie BitLocker aktivieren.
@@ -113,5 +118,3 @@ Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
 ## <a name="next-steps"></a>Nächste Schritte
 
 Wenn Sie fortfahren und dieses Profil Gruppen zuweisen möchten, lesen Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md) nach.
-
-

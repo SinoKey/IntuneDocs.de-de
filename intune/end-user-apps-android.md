@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: fac1ce49584af299face679270dcc43decc4d2f5
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Wie Ihre Android-Benutzer Apps erhalten
 
@@ -50,9 +50,9 @@ In diesem Fall informiert die Unternehmensportal-App den Benutzer und führt ihn
 
 Apps können verwaltet oder nicht verwaltet sein, wie unten beschrieben. Das Verfahren, mit dem Apps in die Verwaltung eingebunden werden, ist das gleiche für alle Arten von Android-Geräten.
 
-**Verwaltete Apps:** Dabei handelt es sich um Apps, die mittels Richtlinien verwaltet werden können. Sie wurden von Intune „umschlossen“ oder mit dem Software Development Kit (SDK) für die Verwaltung mobiler Anwendungen (MAM) in Intune erstellt. Diese Apps können von Intune verwaltet werden, und ihnen lassen sich Anwendungsrichtlinien zuweisen.
+**Verwaltete Apps:** Dabei handelt es sich um Apps, die mittels Richtlinien verwaltet werden können. Sie wurden von Intune „umschlossen“ oder mit dem Intune App SDK erstellt. Diese Apps können von Intune verwaltet werden, und ihnen lassen sich Anwendungsrichtlinien zuweisen.
 
-**Nicht verwaltete Apps:** Dabei handelt es sich um Apps, die nicht über Richtlinien verwaltet werden können. Diese Apps wurden nicht von Intune „umschlossen“ oder sind nicht in das Intune MAM SDK integriert. Diesen Apps lassen sich keine Anwendungsrichtlinien zuweisen.
+**Nicht verwaltete Apps:** Dabei handelt es sich um Apps, die nicht über Richtlinien verwaltet werden können. Diese Apps wurden nicht von Intune „umschlossen“ oder sind nicht in das Intune SDK integriert. Diesen Apps lassen sich keine Anwendungsrichtlinien zuweisen.
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Hinzufügen von Apps mit Microsoft Intune](apps-add.md)

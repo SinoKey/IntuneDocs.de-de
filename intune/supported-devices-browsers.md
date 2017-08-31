@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/07/2017
+ms.date: 06/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: df9c4c0a0a23740bf9df4c13e34b8752838aa99a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f862129d73c83e078d8b29201f1d92b9b65aa609
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="supported-devices-and-browsers"></a>Unterstützte Geräte und Browser
 
@@ -65,7 +65,7 @@ Für diese Portale werden die folgenden Browser unterstützt:
 
 ### <a name="intune-classic-portal"></a>Klassisches Intune-Portal
 
-Die klassischen Intune-Funktionen wie der Intune-PC-Softwareclient und die Integration von Mobile Threat Defense-Partnern sind nur im klassischen Intune-Portal (https://manage.microsoft.com) verfügbar. Die klassische Intune-Konsole erfordert Silverlight-Browserunterstützung.
+Die klassischen Intune-Funktionen wie der Intune PC-Softwareclient und die Integration von Mobile Threat Defense-Partnern sind nur im klassischen Intune-Portal (https://manage.microsoft.com) verfügbar. Das klassische Intune-Portal erfordert Silverlight-Browserunterstützung.
 
 Die folgenden Silverlight-Browser unterstützen die klassische Intune-Konsole:
 - Internet Explorer 10 oder höher
@@ -74,6 +74,5 @@ Die folgenden Silverlight-Browser unterstützen die klassische Intune-Konsole:
 
 > [!Note]
 > Microsoft Edge und mobile Browser werden für die klassische Intune-Konsole nicht unterstützt, da sie [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx) nicht unterstützen.
-
 
 Lediglich Benutzer mit Dienstadministratorrechten oder Mandantenadministratoren mit globaler Administratorrolle können sich bei diesem Portal anmelden. Für den Zugriff auf die Administratorkonsole sind für Ihr Konto eine Lizenz zur Verwendung von Intune und der Anmeldestatus **Zugelassen** erforderlich.

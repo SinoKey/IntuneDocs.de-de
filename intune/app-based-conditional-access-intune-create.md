@@ -14,11 +14,11 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7f054868d0bae061f348239614f3a40b96a15b1
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 88db3730be62a9b481d924b4f09b70be775cb067
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="set-up-app-based-conditional-access-policies"></a>Einrichten App-basierter Richtlinien für bedingten Zugriff
 
@@ -59,9 +59,30 @@ Dieses Thema enthält Anweisungen zum Einrichten App-basierter Richtlinien für 
 2. Klicken Sie auf die Auslassungspunkte, um die Optionen für den Löschvorgang anzuzeigen.
 3. Wählen Sie **Löschen** aus, um die Benutzergruppe aus der Liste zu entfernen.
 
+## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Erstellen von App-basierten Richtlinien für den bedingten Zugriff in der Azure AD-Workload
+
+Ab dem Intune 1708-Release können IT-Administratoren App-basierte Richtlinien für den bedingten Zugriff über die Azure AD-Workload erstellen. Dies bietet Ihnen den Komfort, nicht zwischen den Azure- und Intune-Workloads hin und her wechseln zu müssen.
+
+> [!IMPORTANT]
+> Sie benötigen eine Azure AD Premium-Lizenz, um im Azure-Portal für Intune Azure AD-Richtlinien für den bedingten Zugriff zu erstellen.
+
+### <a name="to-create-an-app-based-conditional-access-policy"></a>So erstellen Sie eine App-basierte bedingte Zugriffsrichtlinie
+
+> [!IMPORTANT]
+> Bevor Sie App-basierte Richtlinien für den bedingten Zugriff verwenden, müssen Sie Ihren Apps [Intune-App-Schutzrichtlinien](app-protection-policies.md) zugewiesen haben.
+
+1. Wählen Sie auf dem **Intune-Dashboard** die Option **Bedingter Zugriff** aus.
+
+2. Wählen Sie auf dem Blatt **Richtlinien** **Neue Richtlinie** aus, um die neue App-basierte Richtlinie für den bedingten Zugriff zu erstellen.
+
+4. Sobald Sie einen Richtliniennamen eingegeben haben und die verfügbaren Einstellungen im Abschnitt **Zuweisungen** konfiguriert haben, wählen Sie im Abschnitt **Zugriffskontrollen** **Gewähren** aus.
+
+5. Klicken Sie auf **Genehmigte Client-App erforderlich (Vorschau)**, **Auswählen** und dann auf **OK**, um die neue Richtlinie zu speichern.
+
 ## <a name="next-steps"></a>Nächste Schritte
 [Blockieren von Apps, die über keine moderne Authentifizierung verfügen](app-modern-authentication-block.md)
 
 ### <a name="see-also"></a>Weitere Informationen:
 
-[Protect app data with app protection policies (Schützen von App-Daten mithilfe von App-Schutzrichtlinien)](app-protection-policies.md)
+[Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md)
+[Bedingter Zugriff im klassischen Azure-Portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)
