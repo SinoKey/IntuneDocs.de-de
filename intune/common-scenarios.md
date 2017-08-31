@@ -14,11 +14,11 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 237e141eacb413eb130b17217116b6d0c7e085f8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d5db079d224f145336b5d3c9b9963f8a5f2c306a
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="common-ways-to-use-intune"></a>Gängige Arten der Verwendung von Intune
 
@@ -42,7 +42,7 @@ Die meisten Enterprise Mobility-Strategien beginnen mit einem Plan, um Mitarbeit
 
 Intune und Microsoft Enterprise Mobility + Security (EMS) bieten eine einzigartig integrierte [Lösung für den bedingten Zugriff](conditional-access.md) ([klassisches Portal](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)) für Exchange Server, die sicherstellt, dass mobile Apps nur dann auf E-Mails zugreifen können, wenn das Gerät in Intune registriert ist. Sie müssen keinen weiteren Gatewaycomputer am Rand Ihres Unternehmensnetzwerks bereitstellen, um diese Lösung nutzen zu können.
 
-Neben E-Mails unterstützt Intune auch das Ermöglichen des Zugriffs auf mobile Apps, die den sicheren Zugriff auf lokale Daten erfordern, z.B. ein branchenspezifischer Anwendungsserver. Dies erfolgt in der Regel mithilfe von [in Intune verwalteten Zertifikaten](certificates-configure.md) ([klassisches Portal](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)) für die Zugriffssteuerung, in Kombination mit einem VPN-Standardgateway oder -proxy im Umkreis, z.B. Microsoft Azure Active Directory-Anwendungs-Proxy.  
+Neben E-Mails unterstützt Intune auch das Ermöglichen des Zugriffs auf mobile Apps, die den sicheren Zugriff auf lokale Daten erfordern, z.B. ein branchenspezifischer Anwendungsserver. Dies erfolgt in der Regel mithilfe von [in Intune verwalteten Zertifikaten](certificates-configure.md) ([klassisches Portal](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)) für die Zugriffssteuerung, in Kombination mit einem VPN-Standardgateway oder -proxy im Umkreis, z.B. Microsoft Azure Active Directory-Anwendungs-Proxy. 
 
 In diesen Fällen besteht die einzige Möglichkeit für den Zugriff auf Unternehmensdaten in der Registrierung des Geräts für die Verwaltung. Nach der Registrierung stellt das Verwaltungssystem sicher, dass Geräte, die auf Unternehmensdaten zugreifen möchten, Ihren Richtlinien entsprechen. Darüber hinaus können das [App Wrapping Tool und App SDK](apps-prepare-mobile-application-management.md) von Intune dabei helfen, dass die Daten, auf die zugegriffen wird, in der branchenspezifischen App verbleiben und diese App keine Unternehmensdaten an Verbraucher-Apps oder -Dienste übergeben kann.
 
@@ -61,7 +61,7 @@ Die mobilen Office-Apps in ihren jeweiligen App-Stores sind bereit, Datenbeschr�
 Eine häufige Office 365-Bereitstellungsmethode besteht darin, dass sich Geräte bei der Verwaltung registrieren müssen, wenn sie vollständig mit App-/Zertifikat-/WLAN-/VPN-Konfigurationen im Unternehmen bereitgestellt werden müssen, was bei firmeneigenen Geräten ein gängiges Szenario ist.  
 
 
-Wenn der Benutzer jedoch einfach Zugriff auf die E-Mails und Dokumente im Unternehmen benötigt, was häufig bei Geräten der Fall ist, die sich im privaten Besitz befinden, können Sie festlegen, dass der Benutzer die mobilen Office-Apps nutzen (auf die Sie [App-Schutzrichtlinien](app-protection-policies.md) [[klassisches Portal](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)] angewendet haben) und die Registrierung des Geräts überspringen muss.  
+Wenn Ihr Benutzer jedoch einfach Zugriff auf die E-Mails und Dokumente des Unternehmens benötigt, was häufig bei Geräten der Fall ist, die sich im privaten Besitz befinden, können Sie festlegen, dass der Benutzer die mobilen Office-Apps nutzen (auf die Sie [App-Schutzrichtlinien](app-protection-policies.md) ([klassisches Portal](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)) angewendet haben) und die Registrierung des Geräts überspringen muss.  
 
 
 
@@ -75,7 +75,7 @@ Die Beliebtheit von BYOD nimmt in Unternehmen als Mittel zum Reduzieren von Hard
 
 Wenn die Registrierung eines Geräts nicht realisierbar ist, bietet Intune einen alternativen BYOD-Ansatz, bei dem einfach nur die [Apps verwaltet werden, die Unternehmensdaten enthalten](app-protection-policies.md) ([klassisches Portal](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)). Intune schützt die Unternehmensdaten, auch wenn die betreffende Anwendung sowohl auf Unternehmens- als auch auf private Daten zugreift, wie es bei mobilen Office-Apps der Fall ist.  
 
-Als Administrator können Sie festlegen, dass Benutzer über die mobilen Office-Apps auf Office 365 zugreifen müssen. Zudem können Sie die Apps mit Richtlinien konfigurieren, die dafür sorgen, dass die Daten geschützt bleiben (Verschlüsselung, durch PIN geschützt usw.). Diese Richtlinien verhindern den Datenverlust durch nicht verwaltete Apps und Speicherorte – innerhalb oder außerhalb dieser Apps. Die Richtlinien hindern z.B. einen Benutzer daran, Text aus einem E-Mail-Profil im Unternehmen in das E-Mail-Profil eines Verbrauchers zu kopieren, auch wenn beide Profile in Outlook Mobile konfiguriert sind. Ähnliche Konfigurationen können für andere Dienste und Anwendungen bereitgestellt werden, die für Ihre BYOD-Benutzer erforderlich sind.
+Als Administrator können Sie festlegen, dass Benutzer über die mobilen Office-Apps auf Office 365 zugreifen müssen. Zudem können Sie die Apps mit Richtlinien konfigurieren, die dafür sorgen, dass die Daten geschützt bleiben (Verschlüsselung, durch PIN geschützt usw.). Diese App-Schutzrichtlinien verhindern den Datenverlust durch nicht verwaltete Apps und Speicherorte – innerhalb oder außerhalb dieser Apps. Die Richtlinien hindern z.B. einen Benutzer daran, Text aus einem E-Mail-Profil im Unternehmen in das E-Mail-Profil eines Verbrauchers zu kopieren, auch wenn beide Profile in Outlook Mobile konfiguriert sind. Ähnliche Konfigurationen können für andere Dienste und Anwendungen bereitgestellt werden, die für Ihre BYOD-Benutzer erforderlich sind.
 
 <!-- Learn more about how to plan and deploy Intune to support BYOD.-->
 

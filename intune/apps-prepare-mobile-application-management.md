@@ -14,34 +14,34 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e8b218ce38a7e76135a62b1155dbf9060ba511cc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2394068c43e652accfb428ff644229f794d33f24
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
-# <a name="prepare-line-of-business-apps-for-mam"></a>Vorbereiten von Branchen-Apps für MAM
+# <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Sie können Ihre Apps mit dem Intune App Wrapping Tool oder Intune App-SDK für die Verwendung von Verwaltungsrichtlinien für mobile Anwendungen (MAM, Mobile Application Management) aktivieren. Verwenden Sie diese Informationen, um diese beiden Methoden und den Zeitpunkt für ihre Verwendung kennenzulernen.
+Sie können Ihre Apps mit dem Intune App Wrapping Tool oder dem Intune App SDK für die Verwendung von App-Schutzrichtlinien aktivieren. Verwenden Sie diese Informationen, um diese beiden Methoden und den Zeitpunkt für ihre Verwendung kennenzulernen.
 
 ## <a name="intune-app-wrapping-tool"></a>Intune App Wrapping Tool
-Das App Wrapping Tool wird in erster Linie für interne Line-of-Business-Apps (LOB) verwendet. Das Tool ist eine Befehlszeilenanwendung, die einen Wrapper für die App erstellt, der es der App anschließend ermöglicht, von einer Intune-Verwaltungsrichtlinie für mobile Anwendungen verwaltet zu werden.
+Das App Wrapping Tool wird in erster Linie für interne Line-of-Business-Apps (LOB) verwendet. Das Tool ist eine Befehlszeilenanwendung, die einen Wrapper für die App erstellt, der es der App anschließend ermöglicht, von einer Intune-App-Schutzrichtlinie verwaltet zu werden.
 
-Der Quellcode ist für die Verwendung des Tools nicht erforderlich, aber Sie benötigen entsprechende Anmeldeinformationen.  Weitere Informationen zu Anmeldeinformationen finden Sie im [Intune-Blog](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Die Dokumentation zum App Wrapping Tool finden Sie unter [Android App Wrapping Tool ](app-wrapper-prepare-android.md) und [iOS App Wrapping Tool](app-wrapper-prepare-ios.md).
+Der Quellcode ist für die Verwendung des Tools nicht erforderlich, aber Sie benötigen entsprechende Anmeldeinformationen. Weitere Informationen zu Anmeldeinformationen finden Sie im [Intune-Blog](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Die Dokumentation zum App Wrapping Tool finden Sie unter [Android App Wrapping Tool ](app-wrapper-prepare-android.md) und [iOS App Wrapping Tool](app-wrapper-prepare-ios.md).
 
 Das App Wrapping Tool unterstützt **keine** Apps im Apple App Store oder Google Play Store. Es unterstützt auch keine bestimmten Features, die Entwicklerintegration erfordern (siehe die folgende Featurevergleichstabelle).
 
 
-Weitere Informationen zum App Wrapping Tool für MAM auf Geräten, die nicht bei Intune registriert sind, finden Sie unter [Schützen von branchenspezifischen Apps und Daten auf nicht in Microsoft Intune registrierten Geräten](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune).
+Weitere Informationen zum App Wrapping Tool für App-Schutzrichtlinien auf Geräten, die nicht bei Intune registriert sind, finden Sie unter [Schützen von branchenspezifischen Apps und Daten auf nicht in Microsoft Intune registrierten Geräten](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune).
 
-### <a name="reasons-to-use-the-app-wrapping-tool"></a>Gründe für die Verwendung des App Wrapping Tools:
+### <a name="reasons-to-use-the-app-wrapping-tool"></a>Gründe für die Verwendung des App Wrapping Tools
 * Ihre App verfügt nicht über integrierte Datenschutzfunktionen.
-* Ihre App ist einfach.
+* Ihre App ist einfach aufgebaut.
 * Ihre App wird intern bereitgestellt.
 * Sie haben keinen Zugriff auf den Quellcode der App.
-* Sie haben die App nicht entwickeln.
+* Sie haben die App nicht entwickelt.
 * Ihre App verfügt über eine minimale Benutzeroberfläche für die Authentifizierung.
 
 
@@ -61,8 +61,8 @@ Weitere Informationen zum SDK finden Sie unter [Übersicht](app-sdk.md). Ein Ein
 * Ihre App verfügt nicht über integrierte Datenschutzfunktionen.
 * Ihre App ist komplex und enthält viele Oberflächen.
 * Ihre App wird in einem öffentlichen App Store wie Google Play oder Apple App Store bereitgestellt.
-* Sie sind ein App-Entwickler mit dem technischen Hintergrund zur Verwendung des SDKs.
-* Ihre App verfügt über andere SDK-Integrationen.
+* Sie sind ein App-Entwickler mit dem entsprechenden technischen Hintergrund zur Verwendung des SDKs.
+* Ihre App verfügt über andere SDK Integrationen.
 * Ihre App wird regelmäßig aktualisiert.
 
 ### <a name="supported-app-development-platforms"></a>Unterstützte App-Entwicklungsplattformen
@@ -84,7 +84,7 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 |Verhindern von Android-, iTunes- oder iCloud-Sicherungen|X|X|
 |App Übertragung von Daten an andere Apps erlauben|X|X|
 |App Empfang von Daten aus anderen Apps erlauben|X|X|
-|Beschränken von Ausschneiden, Kopieren und Einfügen mit anderen Apps|X|X|
+|Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken|X|X|
 |Einfache PIN für Zugriff erforderlich|X|X|
 |Ersetzen der integrierten App-PIN durch die Intune-PIN|X||
 |Angeben der Anzahl von Versuchen vor dem Zurücksetzen der PIN|X|X|
@@ -102,8 +102,10 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 |Angestrebte Anwendungskonfiguration |X||
 |Unterstützung von mehreren Identitäten|X||
 |Anpassbarer Stil |X|||
-### <a name="see-also"></a>Weitere Informationen:
+## <a name="next-steps"></a>Nächste Schritte
 
-[Android App Wrapping Tool](app-wrapper-prepare-android.md)</br>
-[iOS App Wrapping Tool](app-wrapper-prepare-ios.md)</br>
-[Verwenden des SDK zum Aktivieren von Apps für die Verwaltung von mobilen Anwendungen](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+Weitere Informationen zu App-Schutzrichtlinien und Intune finden Sie in den folgenden Themen:
+
+  -  [Android App Wrapping Tool](app-wrapper-prepare-android.md)</br>
+  - [Vorbereiten von iOS-Apps für die Verwaltung mobiler Anwendungen mit dem Intune App Wrapping Tool](app-wrapper-prepare-ios.md)</br>
+  - [Verwenden des SDK zum Aktivieren von Apps für die Verwaltung von mobilen Anwendungen](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
