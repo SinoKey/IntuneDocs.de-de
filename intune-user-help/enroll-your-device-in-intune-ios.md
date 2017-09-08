@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/06/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4d7ad138a8aa59ceeff00866469e59e2e1d19520
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 975344e5eb773a2bff3a04d11e4e63d167b30b29
+ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>Registrieren Ihres iOS-Geräts bei Intune
 
@@ -29,7 +29,7 @@ Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ih
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
-> Wenn Sie versuchen, ein macOS-Gerät, z.B. ein MacBook Pro oder einen iMac, zu registrieren, [befolgen Sie stattdessen diese Anweisungen](enroll-your-device-in-intune-macos.md).
+> Wenn Sie versuchen, auf E-Mails Ihres Unternehmens in der Mail-App zuzugreifen, ist es wahrscheinlich, dass Sie zum Verwalten Ihres Geräts aufgefordert werden, um dieses zu schützen. Befolgen Sie die untenstehenden Anweisungen, um über Ihr iOS-Gerät den Zugriff auf Ihre E-Mails und andere Unternehmensressourcen zu ermöglichen.
 
 **Vorbereitung:**
 

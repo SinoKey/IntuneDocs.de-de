@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/15/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61bdbc7ca68995e23295cf099ce73dfdcaeba37c
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 8bae9bd48493f20bb4abb94290013f27a6a75dd6
+ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/02/2017
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Registrieren von iOS-Geräten in Intune
 
@@ -32,7 +32,19 @@ Bevor Sie iOS-Geräte aktivieren können, schließen Sie die folgenden Schritte 
 - [Einrichten von Intune:](setup-steps.md) Mit diesen Schritten wird Ihre Intune-Infrastruktur eingerichtet. Besonders für die Geräteregistrierung ist es erforderlich, dass Sie [die MDM-Autorität festlegen](mdm-authority-set.md).
 - [Abrufen eines Apple-MDM-Push-Zertifikats:](apple-mdm-push-certificate-get.md) Apple benötigt ein Zertifikat, um die Verwaltung von iOS- und macOS-Geräten zu aktivieren.
 
-Sobald diese Voraussetzungen abgeschlossen sind, können Benutzer die Unternehmensportal-App zur Registrierung ihrer persönlichen iOS-Geräte installieren, oder der Administrator kann die Verwaltung von firmeneigenen iOS-Geräten einrichten. Administratoren können auch [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md) zuweisen, die viele Geräte mit einem einzelnen Verwaltungskonto registrieren können. Intune unterstützt die folgenden Methoden für die Registrierung unternehmenseigener iOS-Geräte:
+## <a name="user-owned-ios-devices-byod"></a>iOS-Gerät im Besitz des Benutzers (BYOD)
+
+Benutzer können ihre persönlichen Geräte für die Intune-Verwaltung registrieren. Dies wird als „bring your own device“ oder BYOD bezeichnet. Sobald Sie über die Voraussetzungen verfügen und den Benutzern Lizenzen zugewiesen haben, können diese die Unternehmensportal-App für iOS aus dem App Store herunterladen und den Registrierungsanweisungen in der App folgen.
+
+## <a name="company-owned-ios-devices"></a>Unternehmenseigenes iOS-Gerät
+Für Organisationen, die Geräte für Ihre Benutzer erwerben, unterstützt Intune die folgenden Methoden für die Registrierung von firmeneigenen iOS-Geräten:
+
+- Apple-Programm zur Geräteregistrierung (DEP)
+- Apple School Manager
+- Registrierung über den Setup-Assistenten für Apple Configurator
+- Apple Configurator – Direkte Registrierung
+
+Sie können firmeneigene iOS-Geräte auch mit einem Konto für den [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md) registrieren.
 
 ## <a name="device-enrollment-program"></a>Geräteregistrierungsprogramm
 Organisationen können iOS-Geräte über das Apple Device Enrollment Program (DEP) erwerben. Mit DEP können Sie drahtlos (Over The Air) ein Registrierungsprofil bereitstellen, das Geräte für die Verwaltung registriert. Erfahren Sie mehr über das [Programm zur Geräteregistrierung](device-enrollment-program-enroll-ios.md).

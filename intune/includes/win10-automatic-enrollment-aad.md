@@ -1,6 +1,6 @@
 ## <a name="enable-windows-10-automatic-enrollment"></a>Aktivieren der automatischen Registrierung von Windows 10
 
-Mit der Funktion der automatischen Registrierung können Benutzer ihre Windows 10-Geräte bei Intune registrieren, wenn sie ihr Arbeitskonto auf Geräten hinzufügen, die ihnen privat gehören, oder wenn sie ihre unternehmenseigenen Geräte in Ihr Azure Active Directory einbinden. Im Hintergrund registriert sich das Gerät des Benutzers und tritt Azure Active Directory bei. Nach der Registrierung wird das Gerät mit Intune verwaltet.
+Durch die automatische Registrierung können Benutzer ihre Windows 10-Geräte in Intune registrieren. Benutzer müssen für die Registrierung ihr Geschäftskonto ihrem persönlichen Gerät hinzufügen oder firmeneigene Geräte mit Azure Active Directory verknüpfen. Im Hintergrund registriert sich das Gerät und tritt Azure Active Directory bei. Nach der Registrierung wird das Gerät mit Intune verwaltet.
 
 **Voraussetzungen**
 - Azure Active Directory Premium-Abonnement ([Testabonnement](http://go.microsoft.com/fwlink/?LinkID=816845))
@@ -9,7 +9,7 @@ Mit der Funktion der automatischen Registrierung können Benutzer ihre Windows 1
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Konfigurieren der automatischen MDM-Registrierung
 
-1. Melden Sie sich im [Azure-Verwaltungsportal](https://portal.azure.com) (https://manage.windowsazure.com) an, und wählen Sie **Azure Active Directory** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an, und klicken Sie auf **Azure Active Directory**.
 
   ![Screenshot des Azure-Portals](../media/auto-enroll-azure-main.png)
 
@@ -21,7 +21,7 @@ Mit der Funktion der automatischen Registrierung können Benutzer ihre Windows 1
 
   ![Screenshot des Azure-Portals](../media/auto-enroll-intune.png)
 
-4. Konfigurieren Sie den **MDM-Benutzerbereich**. Geben Sie an, welche Geräte von Benutzern von Microsoft Intune verwaltet werden sollen. Die Windows 10-Geräte dieser Benutzer werden automatisch für die Verwaltung mit Microsoft Intune registriert.
+4. Konfigurieren Sie den **MDM-Benutzerbereich**. Geben Sie an, welche Geräte von Benutzern von Microsoft Intune verwaltet werden sollen. Diese Windows 10-Geräte können sich automatisch für die Verwaltung mit Microsoft Intune registrieren.
 
   - **Keine**
   - **Einige**
@@ -35,8 +35,8 @@ Mit der Funktion der automatischen Registrierung können Benutzer ihre Windows 1
     - **MDM Compliance-URL**
 
     > [!IMPORTANT]
-    > Wenn ein Benutzer Mitglied einer Gruppe ist, für die sowohl die automatische MDM-Registrierung als auch MAM aktiviert ist, und er versucht, mit seinem persönlichen Gerät dem Arbeitsplatz beizutreten, ist nur MAM aktiviert. 
+    > Wenn der **MAM-Benutzerbereich** und die automatische MDM-Registrierung (**MDM-Benutzerbereich**) für eine Gruppe aktiviert sind, wird nur MAM aktiviert. Nur MAM wird für Benutzer in dieser Gruppe hinzugefügt, wenn ihr persönliches Gerät dem Arbeitsplatz beitritt. Geräte werden nicht automatisch in MDM registriert.
 
 6. Wählen Sie **Speichern** aus.
 
-Standardmäßig ist die zweistufige Authentifizierung für den Dienst nicht aktiviert. Die zweistufige Authentifizierung wird jedoch empfohlen, wenn Sie ein Gerät registrieren. Bevor die zweistufige Authentifizierung für diesen Dienst erforderlich ist, müssen Sie einen Anbieter für die zweistufige Authentifizierung in Azure Active Directory und Ihre Benutzerkonten konfigurieren. Weitere Informationen finden Sie unter [Erste Schritte mit Azure Multi-Factor Authentication-Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
+Standardmäßig ist die zweistufige Authentifizierung für den Dienst nicht aktiviert. Die zweistufige Authentifizierung wird jedoch empfohlen, wenn Sie ein Gerät registrieren. Für die zweistufige Authentifizierung müssen Sie einen Anbieter für die zweistufige Authentifizierung in Azure AD konfigurieren. Außerdem müssen Sie Ihre Benutzerkonten für die mehrstufige Authentifizierung konfigurieren. Weitere Informationen finden Sie unter [Erste Schritte mit Azure Multi-Factor Authentication-Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).

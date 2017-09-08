@@ -1,11 +1,11 @@
 ---
-title: "Installieren von Skycure auf Ihrem Android-Gerät | Microsoft-Dokumentation"
-description: 
+title: "Sie müssen Symantec Endpoint Protection Mobile auf Ihrem Android-Gerät installieren | Microsoft-Dokumentation"
+description: "Informationen zum Installieren von SEP Mobile auf Ihrem Android-Gerät."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 08/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 531963056c4e488865b1c51b76e6b9ce97fe2eb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f94a7cdb4feeea19527efec6486d09efcaca9b67
+ms.sourcegitcommit: 1135765fd3ac2149663341d8107f656aba236493
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/30/2017
 ---
-# <a name="you-need-to-install-skycure-on-your-android-device"></a>Installieren von Skycure auf Ihrem Android-Gerät
+# <a name="you-need-to-install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Sie müssen Symantec Endpoint Protection Mobile auf Ihrem Android-Gerät installieren
 
-Damit Sie auf Ihre Arbeit zugreifen können, verlangt der IT-Administrator von Ihnen, dass Sie die Skycure-App installieren, die Ihnen hilft, Ihr Gerät zu schützen, indem sie mögliche Sicherheitsbedrohungen erkennt.
+Damit Sie auf Ihre Arbeit zugreifen können, verlangt der Support Ihres Unternehmens von Ihnen, dass Sie die Symantec Endpoint Protection Mobile-App installieren, die Ihnen hilft, Ihr Gerät zu schützen, indem sie mögliche Sicherheitsbedrohungen erkennt.
 
 Wenn Sie Probleme mit der Installation haben, versuchen Sie es mit den Schritten zur Problembehandlung am Ende dieses Themas.
 
@@ -30,27 +30,27 @@ Wenn Sie Probleme mit der Installation haben, versuchen Sie es mit den Schritten
 
 1. Ziehen Sie vom oberen Bildschirmrand nach unten, um die Benachrichtigungsleiste zu öffnen, und tippen Sie dann auf **Required application – Install Skycure from Play Store** (Erforderliche Anwendung – Skycure aus dem Play Store installieren). Dies finden Sie auch in der Unternehmensportal-App unter __Kompatibilitätsdetails__.
 
-  ![Die Seite „Kompatibilitätsdetails“ auf einem Android-Gerät Das Gerät befindet sich nicht unter „Kompatibilität“; am unteren Rand des Unternehmensportals wird eine Meldung angezeigt, dass das Gerät nicht der Richtlinie zum Risiko für mobile Geräte entspricht, und dass Skycure geöffnet werden muss, um das Problem zu beheben.](./media/skycure-resolves-compliance-android.png)
+  <!--![The compliance details page on an Android device. The device is not in compliance, with a message at the bottom of the Company Portal page that says the device doesn't meet the mobile risk policy, and that Skycure must be opened to resolve the issue.](./media/skycure-resolves-compliance-android.png)-->
 
-2. Sie werden im Play Store auf die Installationsseite von Skycure weitergeleitet. Installieren Sie Skycure, und tippen Sie dann auf **ACCEPT** (Zustimmen), damit Skycure auf Ihr Gerät zugreifen kann.
+2. Sie werden im Play Store auf die Installationsseite von SEP Mobile weitergeleitet. Installieren Sie SEP Mobile, und tippen Sie dann auf **ACCEPT** (Zustimmen), damit SEP Mobile auf Ihr Gerät zugreifen kann.
 
-3. Öffnen Sie Skycure, und tippen Sie dann auf **VERIFY** (Überprüfen).
+3. Öffnen Sie SEP Mobile, und tippen Sie dann auf **VERIFY** (Überprüfen).
 
 4. Tippen Sie auf **Bei Azure Active Directory anmelden**, und geben Sie anschließend das Konto ein, das Sie für den Zugriff auf Ihre Geschäfts-, Schul- oder Uni-E-Mails und die entsprechenden Dateien verwenden.
 
 5. Wählen Sie das Konto aus, das Sie für den Zugriff auf Geschäfts-, Schul- oder Uni-E-Mails und die entsprechenden Dateien verwenden, und tippen Sie dann auf **KONTO HINZUFÜGEN**.
 
-6. Tippen Sie auf **Accept** (Zustimmen), um Skycure die Berechtigung zu erteilen, Sie anzumelden und Ihr Profil zu lesen.
+6. Tippen Sie auf **Accept** (Zustimmen), um SEP Mobile die Berechtigung zu erteilen, Sie anzumelden und Ihr Profil zu lesen.
 
-7. Überprüfen Sie die Einträge, die darüber informieren, wie Skycure Ihr Gerät schützt, und tippen Sie dann auf **OK**. Das Einrichten von Skycure kann eine Weile in Anspruch nehmen; danach beginnt es damit, Ihr Gerät auf Sicherheitsbedrohungen zu überprüfen.
+7. Überprüfen Sie die Einträge, die darüber informieren, wie SEP Mobile Ihr Gerät schützt, und tippen Sie dann auf **OK**. Das Einrichten von SEP Mobile kann eine Weile in Anspruch nehmen; danach beginnt es damit, Ihr Gerät auf Sicherheitsbedrohungen zu überprüfen.
 
-  Skycure beginnt mit der Überprüfung Ihres Geräts auf Sicherheitsbedrohungen.
+8. SEP Mobile beginnt mit der Überprüfung Ihres Geräts auf Sicherheitsbedrohungen.
 
-  ![Skycure analysiert Ihr Gerät auf Sicherheitsbedrohungen.](./media/skycure-scan-in-progress-android.png)
+  <!--![Skycure is analyzing your device for security threats.](./media/skycure-scan-in-progress-android.png)-->
 
-  Wenn Skycure eine Sicherheitsbedrohung auf Ihrem Gerät erkennt, erhalten Sie Anweisungen zur Behebung des Problems.
+  Wenn SEP Mobile eine Sicherheitsbedrohung auf Ihrem Gerät erkennt, erhalten Sie Anweisungen zur Behebung des Problems.
 
-  ![Skycure hat eine Sicherheitsbedrohungen gefunden](./media/skycure-found-a-threat-android.png)
+  <!--![Skycure found a security threat.](./media/skycure-found-a-threat-android.png)-->
 
   Wenn keine Bedrohungen gefunden wurden, werden alle drei Bedrohungstypen grün angezeigt.
 
@@ -60,6 +60,6 @@ Wenn Sie Probleme mit der Installation haben, versuchen Sie es mit den Schritten
 
 **Wenn die Installation nicht funktioniert**
 
-Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihrer Kontrolle Fehler auf. Sollte dies passieren, können Sie versuchen, Skycure [manuell aus dem Play Store zu installieren](https://play.google.com/store/apps/details?id=com.skycure.skycure).
+Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihrer Kontrolle Fehler auf. Sollte dies passieren, können Sie versuchen, SEP Mobile [manuell aus dem Play Store zu installieren](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
