@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,35 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: c5f6c5a4f5d76845c435ce979068988807120769
+ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune
 Erfahren Sie, welche Aktualisierungen wir an der Benutzeroberfläche für Apps vorgenommen haben, die Ihre Endbenutzer in dieser Version von Microsoft Intune sehen werden. Damit werden Sie bei der Benutzerkommunikation sowie bei allen aktualisierten Benutzerdokumentationen unterstützt, die Sie zur Unterstützung Ihrer Entwicklung erstellt haben. Es kann auch helfen, zu verstehen, wie Probleme behandelt werden, die auftauchen, wenn Benutzer den Helpdesk für den Support mithilfe des Unternehmensportals aufrufen.
+
+## <a name="week-of-august-28-2017"></a>Woche vom 28. August 2017
+
+
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>Die iOS 11-Mail-App wird OAuth <!---1196951---> unterstützen.
+
+Der bedingte Zugriff über Intune unterstützt nun eine sicherere Authentifizierung auf iOS-Geräten mit OAuth. Der Ablauf der Unternehmensportal-App für iOS hat sich geändert, um dies zu unterstützen und eine sicherere Authentifizierung zu ermöglichen. Wenn Endbenutzer versuchen, sich mit einem neuen Exchange-Konto in der Mail-App anzumelden, wird ihnen eine Aufforderung in der Webansicht angezeigt. Bei der Registrierung in Intune werden Benutzer dazu aufgefordert, der nativen Mail-App den Zugriff auf ein Zertifikat zu gewähren. Den meisten Benutzern werden isolierte E-Mails nicht mehr angezeigt. Bestehende E-Mail-Konten werden weiterhin das Standardauthentifizierungsprotokoll verwenden. Diesen Benutzern werden also immer noch isolierte E-Mails zugestellt. Die Anmeldung für Endbenutzer ähnelt der Anmeldung bei mobilen Office-Apps.
+
+![Auswählen des Kontotyps in der nativen Mail-App.](./media/ios-11-ca-email-after-1708-01.png)
+
+![Nachdem Sie Exchange ausgewählt haben, werden Sie aufgefordert, die E-Mail-Adresse und den Kontonamen auf Ihrem iOS-Gerät einzugeben.](./media/ios-11-ca-email-after-1708-02.png)
+
+![Geben Sie die E-Mail-Adresse und einen Namen für das Konto ein.](./media/ios-11-ca-email-after-1708-03.png)
+
+![Weiterleitung auf die externe Microsoft-Anmeldeseite.](./media/ios-11-ca-email-after-1708-04.png)
+
+![Angeben des Kennworts auf der Microsoft-Seite.](./media/ios-11-ca-email-after-1708-05.png)
+
+![Microsoft fordert den Benutzer dazu auf, das Gerät für die Verwaltung zu registrieren.](./media/ios-11-ca-email-after-1708-06.png)
+
+![Der Benutzer wird aufgefordert, die Registrierung über die Website des Unternehmensportals vorzunehmen.](./media/ios-11-ca-email-after-1708-07.png)
 
 ## <a name="week-of-august-21-2017"></a>Woche vom 21. August 2017
 
@@ -31,11 +52,11 @@ Die Dialogfelder der mobilen Anwendungsverwaltung mit Intune (MAM) werden modern
 
 **Bisherige Benutzeroberfläche**
 
-![alte Schnittstelle](media\NewUI_Old_AttachFileHandler.jpg)
+![alte Schnittstelle](./media/NewUI_Old_AttachFileHandler.jpg)
 
 **Moderne Benutzeroberfläche**
 
-![moderne Schnittstelle](media\NewUI_Modern_AttachFileHandler.jpg)
+![moderne Schnittstelle](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
 ## <a name="week-of-august-14-2017"></a>Woche vom 14. August 2017

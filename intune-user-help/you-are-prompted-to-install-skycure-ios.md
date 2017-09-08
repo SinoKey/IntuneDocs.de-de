@@ -1,11 +1,11 @@
 ---
-title: "Installieren von Skycure auf Ihrem iOS-Gerät | Microsoft-Dokumentation"
-description: 
+title: "Sie müssen Symantec Endpoint Protection Mobile auf Ihrem iOS-Gerät installieren | Microsoft-Dokumentation"
+description: "Informationen zum Installieren von SEP Mobile auf Ihrem iOS-Gerät."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 08/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,42 +14,42 @@ ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: ca6072ce66482f5986d37b2f61a123587ad8313f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5bc687566a82878f47f253ff70aa01d68a328b33
+ms.sourcegitcommit: 1135765fd3ac2149663341d8107f656aba236493
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/30/2017
 ---
-# <a name="you-need-to-install-skycure-on-your-ios-device"></a>Installieren von Skycure auf Ihrem iOS-Gerät
+# <a name="you-need-to-install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>Sie müssen Symantec Endpoint Protection Mobile auf Ihrem iOS-Gerät installieren
 
-Damit Sie auf Ihre Arbeit zugreifen können, verlangt der IT-Administrator von Ihnen, dass Sie die Skycure-App installieren, die Ihnen hilft, Ihr Gerät zu schützen, indem sie mögliche Sicherheitsbedrohungen erkennt. Möglicherweise werden auf Ihrem Gerät abhängig davon, wie Ihr IT-Administrator Skycure eingerichtet hat, andere Aufforderungen angezeigt.
+Damit Sie auf Ihre Arbeit zugreifen können, verlangt der Support Ihres Unternehmens von Ihnen, dass Sie die Symantec Endpoint Protection Mobile-App installieren, die Ihnen hilft, Ihr Gerät zu schützen, indem sie mögliche Sicherheitsbedrohungen erkennt. Möglicherweise werden auf Ihrem Gerät abhängig davon, wie Ihr Unternehmen SEP Mobile eingerichtet hat, andere Aufforderungen angezeigt.
 
 **Gehen Sie wie folgt vor:**
 
-1.  Wenn die folgende Aufforderung angezeigt wird, tippen Sie auf **Installieren**, um die Installation von Skycure auf Ihrem Gerät zuzulassen.
+1.  Wenn die folgende Aufforderung angezeigt wird, tippen Sie auf **Installieren**, um die Installation von SEP Mobile auf Ihrem Gerät zuzulassen.
 
-  ![Tippen Sie auf „Installieren“, um Skycure zu installieren](./media/ios-mtd-install-app-request.png)
+  <!--![Tap install to install Skycure](./media/ios-mtd-install-app-request.png)-->
 
 2. Wenn die folgende Meldung angezeigt wird, tippen Sie auf **Einstellungen**, aktivieren Sie **Ortungsdienste**, und tippen Sie anschließend auf **Weiter**.
 
-  ![Tippen auf „Einstellungen“ und anschließend auf „Ortungsdienste“](./media/ios-skycure-allow-location-services.png)
+  <!--![Tap Settings and then Location Services](./media/ios-skycure-allow-location-services.png)-->
 
-3. Überprüfen Sie die Berechtigungen, die Skycure benötigt, und tippen Sie auf **Weiter**.
+3. Überprüfen Sie die Berechtigungen, die SEP Mobile benötigt, und tippen Sie auf **Weiter**.
 
-4. Tippen Sie bei der Aufforderung, bei der Sie gefragt werden, ob Sie Benachrichtigungen von Skycure zulassen möchten, auf **Zulassen**.
+4. Tippen Sie bei der Aufforderung, bei der Sie gefragt werden, ob Sie Benachrichtigungen von SEP Mobile zulassen möchten, auf **Zulassen**.
 
-  ![Tippen auf „Einstellungen“ und anschließend auf „Ortungsdienste“](./media/ios-skycure-allow-notifications.png)
+  <!--![Tap Settings and then Location Services](./media/ios-skycure-allow-notifications.png)-->
 
-5. Skycure schließt die Installation ab und zeigt die Willkommensseite an.
+5. SEP Mobile schließt die Installation ab und zeigt die Willkommensseite an.
 
-  ![Skycure-Willkommensseite, die eine kurze Beschreibung von Skycure anzeigt und die Möglichkeit bietet, fortzufahren.](./media/ios-skycure-welcome-screen.png)
+  <!--![Skycure welcome screen, which displays a short explanation of what Skycure is and presents the option to continue.](./media/ios-skycure-welcome-screen.png)-->
 
 6. Sobald die Installation abgeschlossen ist, wird der folgende Bildschirm angezeigt, wenn auf Ihrem Gerät keine Sicherheitsbedrohungen gefunden wurden.
 
-  ![Skycure hat keine Sicherheitsbedrohungen gefunden](./media/ios-skycure-no-threats-found.png)
+  <!--![Skycure found no security threats](./media/ios-skycure-no-threats-found.png)-->
 
-Wenn Skycure eine Sicherheitsbedrohung auf Ihrem Gerät erkennt, erhalten Sie Anweisungen zur Behebung des Problems.
+Wenn SEP Mobile eine Sicherheitsbedrohung auf Ihrem Gerät erkennt, erhalten Sie Anweisungen zur Behebung des Problems.
 
 **Wenn die Installation nicht funktioniert**
 
-Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihrer Kontrolle Fehler auf. Wenden Sie sich in einem solchen Fall an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihrer Kontrolle Fehler auf. Wenden Sie sich in einem solchen Fall an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
