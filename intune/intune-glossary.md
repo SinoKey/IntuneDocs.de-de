@@ -1,6 +1,6 @@
 ---
 title: Intune-Glossar
-titleSuffix: 
+titleSuffix: Azure portal
 description: "Erläuterungen zur Microsoft Intune-Terminologie"
 keywords: 
 author: robstackmsft
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 8eaf82e995e3b572d897b63aaf36480424603ce6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune-Glossar
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 08/03/2017
 ## <a name="i"></a>I
 |||
 |-|-|
-|Intune-Portal|Das Azure-Portal, das Sie für die meisten Intune-Verwaltungsvorgänge verwenden.|
+|Azure-Portal|Das Azure-Portal, das Sie für die meisten Intune-Verwaltungsvorgänge verwenden.|
 |Intune-Softwareclient|Das [Verwalten einiger Windows-PCs](/intune-classic/get-started/choose-how-to-manage-devices) kann Ihnen die Entscheidung erleichtern, sich für eine Methode zu entscheiden.|
 |Intune-Softwareherausgeber|Ein Tool, mit dem Sie [Apps definieren, die Sie bereitstellen möchten, und auf Ihren Cloudspeicher hochladen](/intune-classic/deploy-use/add-apps).|
 |Inventarisierung|Damit können Sie die [Hardware und die installierte Software](/intune/device-inventory) von Geräten anzeigen, die Sie verwalten.|

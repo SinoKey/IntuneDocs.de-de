@@ -1,10 +1,10 @@
 ---
 title: Erste Schritte mit Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Machen Sie eine Reihe kurzer, praktischer Übungen, um mehr über Intune zu erfahren."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5dc7a76ddac12dd3e002c8780541d3dd4e976896
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: abfd1c1a05ce0eac3e6ab835d6ac8b017c9a6d77
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Wie profitiert mein Unternehmen von Intune?
 
@@ -27,7 +27,7 @@ Intune ist ein cloudbasierter Enterprise Mobility-Verwaltungsdienst (Enterprise 
 
 ![Allgemeines Architekturdiagramm für Microsoft Intune](/intune/media/intunearchitecture.svg)
 
-Wir wissen, dass die ersten Schritte mit der Verwaltung von mobilen Geräten schwierig sein können, da sie viele verschiedene Entscheidungen für Ihr Unternehmen treffen müssen. Diese Übungen führen Sie durch einige Aufgaben, in denen Sie erfahren, wie Sie Ihr Unternehmen mit Intune schützen können. 
+Wir wissen, dass die ersten Schritte mit der Verwaltung von mobilen Geräten schwierig sein können, da sie viele verschiedene Entscheidungen für Ihr Unternehmen treffen müssen. Diese Übungen führen Sie durch einige Aufgaben, in denen Sie erfahren, wie Sie Ihr Unternehmen mit Intune schützen können.
 
 ## <a name="what-are-the-exercises"></a>Welche Übungen sind das?
 
