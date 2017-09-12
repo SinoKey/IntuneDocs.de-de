@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von iOS-Updaterichtlinien
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Konfigurieren Sie die Richtlinien, damit unter iOS die automatische Installation des neuesten Softwareupdates bei überwachten iOS-Geräten durchgesetzt werden kann."
 keywords: 
 author: dougeby
@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e6334421-85e1-4457-9c44-e5db8d4ee00e
-ms.openlocfilehash: d4af2d58ec21c54362cf451eac1a33b2088885d5
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: a119f00cc8a92aa6cf7a1009f910df817593e0e8
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="configure-ios-update-policies"></a>Konfigurieren von iOS-Updaterichtlinien
 Aktualisieren Sie die Richtlinien, damit Sie unter iOS die automatische Installation des neuesten Softwareupdates bei überwachten iOS-Geräten durchsetzen können. Sie haben die Möglichkeit, die Tage und Uhrzeiten zu konfigurieren, an denen Geräte keine Updates installieren sollen.
