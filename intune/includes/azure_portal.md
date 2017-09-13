@@ -1,4 +1,4 @@
-|Gilt für: Intune in Azure |
+|Gilt für: Intune im Azure-Portal |
 |--|
-|Suchen Sie nach der Dokumentation zu Intune in der klassischen Konsole? Diese finden Sie [hier](/intune/introduction-intune?toc=/intune-classic/toc.json).|
+|Suchen Sie nach der Dokumentation zu Intune im klassischen Portal? [Klicken Sie hier](/intune/introduction-intune?toc=/intune-classic/toc.json).|
 | |
