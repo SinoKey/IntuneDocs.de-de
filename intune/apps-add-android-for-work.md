@@ -1,6 +1,6 @@
 ---
 title: "Zuweisen von Apps zu Android for Work-Geräten"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Verwenden Sie dieses Thema zum Synchronisieren und anschließenden Zuweisen von Apps zu Android for Work-Geräten über den Google Play for Work Store.\""
 keywords: 
 author: mattbriggs
@@ -15,18 +15,18 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bbe5be4afead5d80f38e2ef56d12c0b26351dfd8
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Zuweisen von Apps für Android for Work-Geräte mit Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Apps werden zu Android for Work-Geräten anders zugewiesen als zu normalen Android-Geräten. Alle Apps, die für Android for Work installiert werden, stammen aus dem Google Play for Work Store. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese.
-Anschließend wird die App im Knoten **Lizenzierte Apps** des Intune-Portals angezeigt. Ab dann können Sie die Zuweisung der App auf dieselbe Weise wie bei jeder anderen App durchführen.
+Anschließend wird die App im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt. Ab dann können Sie die Zuweisung der App auf dieselbe Weise wie bei jeder anderen App durchführen.
 
 Wenn Sie eigene branchenspezifische Apps erstellt haben, können Sie diese ebenfalls wie folgt zuweisen:
 - Registrieren Sie sich für ein Google Developer-Konto, über das Sie Apps in einem privaten Bereich im Google Play Store veröffentlichen können.
@@ -34,7 +34,7 @@ Wenn Sie eigene branchenspezifische Apps erstellt haben, können Sie diese ebenf
 
 ## <a name="before-you-start"></a>Vorbereitung
 
-Stellen Sie sicher, dass Sie Intune und Android for Work für die **Geräteregistrierung** des Intune-Portals so konfiguriert haben, dass beide zusammen funktionieren.
+Stellen Sie sicher, dass Sie Intune und Android for Work für die **Geräteregistrierung** des Azure-Portals so konfiguriert haben, dass beide zusammen funktionieren.
 
 ## <a name="synchronize-an-app-from-the-google-play-for-work-store"></a>Synchronisieren einer App aus dem Google Play for Work Store
 

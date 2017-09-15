@@ -1,6 +1,6 @@
 ---
-title: Bekannte Probleme in Microsoft Intune in Azure
-titleSuffix: Intune on Azure
+title: Bekannte Probleme in Microsoft Intune im Azure-Portal
+titlesuffix: Azure portal
 description: Informationen zu bekannten Problemen in Intune
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a9b7f69cded9258efb6c8a897e0c026f3228a6b
-ms.sourcegitcommit: c248b5a15894f0ade23bad4644c3b7035a9fcce8
+ms.openlocfilehash: 7570e7b2f612d1d2a017f82967cdc5baf798a761
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekannte Probleme in Microsoft Intune
 
@@ -37,7 +37,7 @@ Wenn Sie sich ein neues Feature für Intune wünschen, können Sie auf unserer [
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Während der Migration von Intune erstellte Gruppen könnten die Funktionalität anderer Microsoft-Produkte beeinträchtigen.
 
-Beim Migrieren vom klassischen Intune zum Azure-Portal könnten Sie eine neue Gruppe mit dem Namen **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** sehen. Diese Gruppe enthält alle Benutzer in Ihrem Azure Active Directory, nicht nur Benutzer mit Intune-Lizenz. Dies könnte zu Problemen mit anderen Microsoft-Produkten führen, wenn Sie erwarten, dass einige vorhandene oder neue Benutzer nicht Mitglieder von Gruppen sind.
+Beim Migrieren von Intune zum Azure-Portal könnten Sie eine neue Gruppe mit dem Namen **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** sehen. Diese Gruppe enthält alle Benutzer in Ihrem Azure Active Directory, nicht nur Benutzer mit Intune-Lizenz. Dies könnte zu Problemen mit anderen Microsoft-Produkten führen, wenn Sie erwarten, dass einige vorhandene oder neue Benutzer nicht Mitglieder von Gruppen sind.
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>Sekundäre Migration für ausgewählte Funktionen erforderlich
 
@@ -49,20 +49,20 @@ Vor Januar 2017 erstellte Intune-Konten müssen migriert werden, ehe die folgend
 - Konten für den Geräteregistrierungs-Manager
 - Apple Volume Purchase Program
 
-Da diese Funktionen nicht über die klassische Intune-Konsole (Silverlight) und das Azure-Portal verwaltet werden können, erfolgt bei der Migration Folgendes:
-- Werden in der klassischen Konsole deaktiviert
+Da diese Funktionen nicht über die Intune-Konsole (Silverlight) und das Azure-Portal verwaltet werden können, erfolgt bei der Migration Folgendes:
+- Werden im klassischen Portal deaktiviert
 - Werden im Azure-Portal aktiviert  
 
-Nach dem 11. September 2017 wird die Migration dieser Funktionen in der primären Migration zu Azure zusammengeführt. Wenn Ihr Konto bereits zum Azure-Portal migriert wurde, wird diese sekundäre Migration zwischen dem 11. und dem 22. September 2017 vorgenommen. Sobald Ihre Kontomigration eingeleitet wurde, wird sie auch am selben Tag abgeschlossen. Die Migration kann ab dem Zeitpunkt der Deaktivierung dieser Funktionen in der klassischen Intune-Konsole bis zu sechs Stunden in Anspruch nehmen.
+Nach dem 11. September 2017 wird die Migration dieser Funktionen in der primären Migration zu Azure zusammengeführt. Wenn Ihr Konto bereits zum Azure-Portal migriert wurde, wird diese sekundäre Migration zwischen dem 11. und dem 22. September 2017 vorgenommen. Sobald Ihre Kontomigration eingeleitet wurde, wird sie auch am selben Tag abgeschlossen. Die Migration kann ab dem Zeitpunkt der Deaktivierung dieser Funktionen im klassischen Intune-Portal bis zu 6 Stunden in Anspruch nehmen.
 
 Wenn Sie diese Intune-Funktionen nun im Azure-Portal verwalten, achten Sie auf die folgenden Punkte:
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Profile für die Unternehmensgeräteregistrierung im Apple-Programm zur Geräteregistrierung (DEP) wurden entfernt.
-Das Azure-Portal unterstützt nicht das Standardprofil für Unternehmensgeräteregistrierungen für Geräte im Apple DEP. Diese Funktionalität, die in der klassischen Intune-Konsole (Silverlight) zur Verfügung steht, wird nicht fortgeführt, um unbeabsichtigte Zuweisungen von Profilen zu verhindern. Wenn DEP-Seriennummern im Azure-Portal synchronisiert werden, wird kein Profil zur Unternehmensgeräteregistrierung zugewiesen. Vor der Nutzung des Geräts muss ein Registrierungsprofil zugewiesen werden.
+Das Azure-Portal unterstützt nicht das Standardprofil für Unternehmensgeräteregistrierungen für Geräte im Apple DEP. Diese Funktionalität, die in der Intune-Konsole (Silverlight) zur Verfügung steht, wird nicht fortgeführt, um unbeabsichtigte Zuweisungen von Profilen zu verhindern. Wenn DEP-Seriennummern im Azure-Portal synchronisiert werden, wird kein Profil zur Unternehmensgeräteregistrierung zugewiesen. Vor der Nutzung des Geräts muss ein Registrierungsprofil zugewiesen werden.
 
 #### <a name="apple-dep-token-restored-with-migration"></a>Apple DEP-Token bei Migration wiederhergestellt
 
-Wenn Sie ein Token für das Apple-Programm zur Geräteregistrierung im klassischen Intune-Portal (Silverlight) gelöscht haben und kein neues Token im Azure-Portal hochladen, wird das ursprüngliche Token während der Migration im neuen Azure-Portal wiederhergestellt. Wenn Sie dieses Token entfernen und die DEP-Registrierung verhindern möchten, löschen Sie das Token aus dem Azure-Portal.
+Wenn Sie ein Token für das Apple-Programm zur Geräteregistrierung im Intune-Portal (Silverlight) gelöscht haben und kein neues Token im Azure-Portal hochladen, wird das ursprüngliche Token während der Migration im Azure-Portal wiederhergestellt. Wenn Sie dieses Token entfernen und die DEP-Registrierung verhindern möchten, löschen Sie das Token aus dem Azure-Portal.
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Statusblätter für migrierte Richtlinien funktionieren nicht
 
@@ -101,8 +101,9 @@ Weitere Informationen zu diesen Einstellungen finden Sie unter [Einstellungen f�
 
 ### <a name="compliance-policies-from-intune-do-not-show-up-in-new-console"></a>Konformitätsrichtlinien von Intune werden in der neuen Konsole nicht angezeigt
 
-Konformitätsrichtlinien, die Sie im klassischen Intune-Portal erstellt haben, werden migriert, jedoch im Azure-Portal aufgrund von Änderungen am Design nicht angezeigt. Konformitätsrichtlinien, die Sie im klassischen Intune-Portal erstellt haben, werden weiter erzwungen, jedoch müssen Sie sie im klassischen Intune-Portal anzeigen und bearbeiten.
-Darüber hinaus werden neue Konformitätsrichtlinien, die Sie im Azure-Portal erstellen, im klassischen Intune-Portal nicht angezeigt.
+Konformitätsrichtlinien, die Sie im klassischen Intune-Portal erstellt haben, werden migriert, jedoch im Azure-Portal aufgrund von Änderungen am Design nicht angezeigt. Konformitätsrichtlinien, die Sie im klassischen Intune-Portal erstellt haben, werden noch erzwungen, jedoch müssen Sie sie im klassischen Portal anzeigen und bearbeiten.
+
+Darüber hinaus werden neue Konformitätsrichtlinien, die Sie im Azure-Portal erstellen, im klassischen Portal nicht angezeigt.
 
 Weitere Informationen finden Sie unter [Was ist die Gerätekonformität in Intune in Azure (Vorschau)?](device-compliance.md).
 

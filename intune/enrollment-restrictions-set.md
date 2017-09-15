@@ -1,6 +1,6 @@
 ---
 title: "Festlegen von Registrierungseinschränkungen in Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Schränken Sie die Registrierung plattformbezogen ein, und legen Sie in Intune einen Grenzwert für die Geräteregistrierung fest. \""
 keywords: 
 author: nathbarn
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47dc35e5b50670027a85f395f674345b934d377b
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: 06c0c58992a2119aff7fd5be54ae90be886d2a53
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Als Intune-Administrator können Sie bestimmen, welche Geräte sich für die Verwaltung mit Intune registrieren können. Verwenden Sie das Intune-Portal, um die folgenden Einschränkungen für die Geräteregistrierung festzulegen:
+Als Intune-Administrator können Sie bestimmen, welche Geräte sich für die Verwaltung mit Intune registrieren können. Verwenden Sie das Azure-Portal, um die folgenden Einschränkungen für die Geräteregistrierung festzulegen:
 
 - Maximale Anzahl registrierter Geräte
 - Geräteplattformen, die registriert werden können:
@@ -68,7 +68,7 @@ Die standardmäßigen Registrierungseinschränkungen gelten für alle Benutzer.
 1. Melden Sie sich beim Azure-Portal an.
 2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 3. Klicken Sie auf **Geräteregistrierung** > **Registrierungsbeschränkungen**.
-4. Wählen Sie im Intune-Portal die Option **Geräteregistrierung** und dann **Registrierungseinschränkungen** aus.
+4. Wählen Sie im Azure-Portal die Option **Geräteregistrierung** und dann **Registrierungseinschränkungen** aus.
 5. Klicken Sie auf **Registrierungseinschränkungen** > **Einschränkungen zum Gerätelimit**.
 6. Wählen Sie unter **Alle Benutzer** die Option **Gerätelimit** aus. Geben Sie die maximale Anzahl registrierter Geräte pro Benutzer ein.  
 ![Screenshot des Blatts „Einschränkungen zum Gerätelimit“ mit den Einschränkungen zur Gerätebeschränkung.](./media/device-restrictions-limit.png)

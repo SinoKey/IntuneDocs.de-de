@@ -1,6 +1,6 @@
 ---
-title: Verwalten von Softwareupdates
-titleSuffix: Configure Windows Update for Business settings - Intune
+title: "Konfigurieren von Einstellungen für Windows Update for Business in Intune"
+titleSuffix: Azure portal
 description: "Erfahren Sie, wie Sie in Intune die Einstellungen von Windows Update for Business konfigurieren, um Updates für Windows 10-Geräte zu steuern."
 keywords: 
 author: dougeby
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 6d88fd62b84c0cc7c3678692cef5ab547bfb8c5d
-ms.sourcegitcommit: f9b01976c0fc479ac8bc3998eb55bbc517ed2d84
+ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-software-updates"></a>Verwalten von Softwareupdates
 
@@ -54,20 +54,20 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 
     Sie können diese Einstellung entweder manuell konfigurieren oder ein Intune-Geräteeinschränkungsprofil für Windows 10 und höher verwenden. Legen Sie hierzu die Einstellung **Allgemein** > **Übermittlung von Diagnosedaten** mindestens auf **Basic** fest. Weitere Informationen zu Geräteprofilen finden Sie unter [So konfigurieren Sie Einstellungen für Geräteeinschränkungen in Microsoft Intune](device-restrictions-configure.md).
 
-- In der klassischen Intune-Verwaltungskonsole stehen vier Einstellungen zum Steuern des Verhaltens von Softwareupdates zur Verfügung. Diese Einstellungen sind Teil der allgemeinen Konfigurationsrichtlinie für Desktop- und Mobilgeräte unter Windows 10:
+- In der Intune-Verwaltungskonsole stehen vier Einstellungen zum Steuern des Verhaltens von Softwareupdates zur Verfügung. Diese Einstellungen sind Teil der allgemeinen Konfigurationsrichtlinie für Desktop- und Mobilgeräte unter Windows 10:
     - **Automatische Updates zulassen**
     - **Vorabfeatures zulassen**
     - **Geplanter Installationstag**
     - **Geplante Installationszeit**
 
-  In der klassischen Konsole steht auch eine begrenzte Anzahl anderer Windows 10-Updateeinstellungen im Gerätekonfigurationsprofil zur Verfügung. Falls Sie diese Einstellungen in der klassischen Intune-Verwaltungskonsole konfiguriert haben und zum Azure-Portal migrieren, sollten Sie unbedingt die folgenden Schritte ausführen:
+  Im klassischen Portal steht auch eine begrenzte Anzahl anderer Windows 10-Updateeinstellungen im Gerätekonfigurationsprofil zur Verfügung. Falls Sie diese Einstellungen in der Intune-Verwaltungskonsole konfiguriert haben und zum Azure-Portal migrieren, sollten Sie unbedingt die folgenden Schritte ausführen:
 
 1. Erstellen Sie im Azure-Portal Windows 10-Updateringe mit den erforderlichen Einstellungen. Die Einstellung **Vorabfeatures zulassen** wird im Azure-Portal nicht unterstützt, da sie für die neuesten Windows 10-Builds nicht mehr relevant ist. Die drei anderen Einstellungen können zusammen mit anderen Windows 10-Updateeinstellungen beim Erstellen von Updateringen konfiguriert werden.
 
   > [!NOTE]
-  > In der klassischen Konsole erstellte Windows 10-Updateeinstellungen werden nach der Migration nicht im Azure-Portal angezeigt. Die Einstellungen werden jedoch weiterhin angewendet. Wenn Sie diese Einstellungen migriert haben und die migrierte Richtlinie über das Azure-Portal bearbeiten, werden die Einstellungen aus der Richtlinie entfernt.
+  > Im klassischen Portal erstellte Windows 10-Updateeinstellungen werden nach der Migration nicht im Azure-Portal angezeigt. Die Einstellungen werden jedoch weiterhin angewendet. Wenn Sie diese Einstellungen migriert haben und die migrierte Richtlinie über das Azure-Portal bearbeiten, werden die Einstellungen aus der Richtlinie entfernt.
 
-2. Löschen Sie die Updateeinstellungen in der klassischen Konsole. Wenn Sie zum Azure-Portal migriert sind und die gleichen Einstellungen einem Updatering hinzufügen, müssen Sie die Einstellungen im klassischen Portal löschen, um potenzielle Richtlinienkonflikte zu vermeiden. Ein Beispiel: Falls die gleiche Einstellung mit unterschiedlichen Werten konfiguriert ist, entsteht ein Konflikt, der sich nicht ohne Weiteres diagnostizieren lässt, da die Einstellung, die in der klassischen Konsole konfiguriert wurde, im Azure-Portal nicht angezeigt wird.
+2. Löschen Sie die Updateeinstellungen im klassischen Portal. Wenn Sie zum Azure-Portal migriert sind und die gleichen Einstellungen einem Updatering hinzufügen, müssen Sie die Einstellungen im klassischen Portal löschen, um potenzielle Richtlinienkonflikte zu vermeiden. Ein Beispiel: Falls die gleiche Einstellung mit unterschiedlichen Werten konfiguriert ist, entsteht ein Konflikt, der sich nicht ohne Weiteres diagnostizieren lässt, da die Einstellung, die im klassischen Portal konfiguriert wurde, im Azure-Portal nicht angezeigt wird.
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Erstellen und Zuweisen von Updateringen
 

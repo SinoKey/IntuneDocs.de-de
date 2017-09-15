@@ -1,6 +1,6 @@
 ---
 title: "Migrieren von Richtlinien für bedingten Zugriff über das klassische Intune-Porta zum Azure-Portal"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Migrieren von Richtlinien für bedingten Zugriff über das klassische Intune-Porta zum Azure-Portal"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5f1ea2b0ceb32d0aa05a28e0f01f65b80b1ddcf
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5b0b0982018dcfa3c606ea55b9264e5cd6cd1a82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Erneutes Zuweisen von Richtlinien für bedingten Zugriff über das klassische Intune-Porta zum Azure-Portal
 
@@ -33,7 +33,7 @@ Wenn Sie bereit für das Azure-Portal sind, befolgen Sie die in diesem Thema ang
 
 - Führen Sie die Schritte in diesem Thema aus, um diese Richtlinien im Azure-Portal neu zu erstellen.
 
-- Deaktivieren Sie die bedingten Richtlinien in der klassischen Intune-Konsole, nachdem Sie überprüft haben, dass die neuen Richtlinien im Azure-Portal wie erwartet funktionieren.
+- Deaktivieren Sie die bedingten Richtlinien im klassischen Intune-Portal, nachdem Sie überprüft haben, ob die neuen Richtlinien im Azure-Portal wie erwartet funktionieren.
 <br /><br />
     - **Vor dem Deaktivieren** der Richtlinien für bedingten Zugriff im klassischen Intune-Portal, planen Sie, wie Sie Benutzer zur neuen Richtlinie verschieben. Es gibt zwei Ansätze:
 <br /><br />
@@ -82,7 +82,7 @@ Das Blatt **Intune-App-Schutz** im Azure-Portal erlaubt Administratoren, App-bas
     ![Vergleich der Benutzergruppen-Benutzeroberfläche zwischen den Portalen Intune und Azure](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
-    > Diese Auswahl, die Sie für das Azure-Portal treffen, muss mit der Auswahl für das Intune-Portal übereinstimmen. Wenn Sie z.B. alle Benutzer im klassischen Intune-Portal ausgewählt haben, wählen Sie im Azure-Portal **Alle Benutzer** aus. Wenn Sie darüber hinaus die Option **Ausgenommene Gruppen** im klassischen Intune-Portal ausgewählt haben, schließen Sie diese ausgewählten Gruppen im Azure-Portal aus.
+    > Diese Auswahl, die Sie für das Azure-Portal treffen, muss mit der Auswahl übereinstimmen, die Sie bereits für das Azure-Portal getroffen haben. Wenn Sie z.B. alle Benutzer im klassischen Intune-Portal ausgewählt haben, wählen Sie im Azure-Portal **Alle Benutzer** aus. Wenn Sie darüber hinaus die Option **Ausgenommene Gruppen** im klassischen Intune-Portal ausgewählt haben, schließen Sie diese ausgewählten Gruppen im Azure-Portal aus.
 
 5. Nachdem Sie Ihre Gruppe ausgewählt haben, wählen Sie **Auswählen** aus, und klicken Sie dann auf **Fertig**.
 
@@ -150,7 +150,7 @@ Wenn Sie Exchange Active Sync-Einstellungen als Teil einer Exchange Online-Richt
     ![Vergleich der Benutzergruppen-Benutzeroberfläche zwischen den Portalen Intune und Azure](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
-    > Diese Auswahl, die Sie für das Azure-Portal treffen, muss mit der Auswahl für das Intune-Portal übereinstimmen. Wenn Sie z.B. alle Benutzer im klassischen Intune-Portal ausgewählt haben, wählen Sie im Azure-Portal **Alle Benutzer** aus. Wenn Sie darüber hinaus die Option **Ausgenommene Gruppen** im klassischen Intune-Portal ausgewählt haben, schließen Sie diese ausgewählten Gruppen im Azure-Portal aus.
+    > Diese Auswahl, die Sie für das Azure-Portal treffen, muss mit der Auswahl übereinstimmen, die Sie bereits für das Azure-Portal getroffen haben. Wenn Sie z.B. alle Benutzer im klassischen Intune-Portal ausgewählt haben, wählen Sie im Azure-Portal **Alle Benutzer** aus. Wenn Sie darüber hinaus die Option **Ausgenommene Gruppen** im klassischen Intune-Portal ausgewählt haben, schließen Sie diese ausgewählten Gruppen im Azure-Portal aus.
 
 5. Nachdem Sie Ihre Gruppe ausgewählt haben, wählen Sie **Auswählen** aus, und klicken Sie dann auf **Fertig**.
 

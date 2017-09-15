@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f862129d73c83e078d8b29201f1d92b9b65aa609
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 00fc685062c090b40e20ed3dfa30afbeeb5c9780
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="supported-devices-and-browsers"></a>Unterstützte Geräte und Browser
 
@@ -31,7 +31,7 @@ Prüfen Sie die folgenden Anforderungen, bevor Sie mit der Einrichtung von Micro
 - [Unterstützte Geräte und Computer](#intune-supported-devices)
 - [Liste der unterstützten Webbrowser, die Intune verwenden](#intune-supported-web-browsers)
 
-Sie sollten sich auch mit der [Nutzung der Netzwerkbandbreite durch Intune](network-bandwidth-use.md) ([klassische Konsole](/intune-classic/get-started/network-bandwidth-use)) vertraut machen.
+Sie sollten sich auch mit der [Nutzung der Netzwerkbandbreite durch Intune](network-bandwidth-use.md) ([klassisches Portal](/intune-classic/get-started/network-bandwidth-use)) vertraut machen.
 
 ## <a name="intune-supported-devices"></a>Von Intune unterstützte Geräte
 
@@ -43,7 +43,7 @@ Intune kann nicht verwendet werden, um Windows Server-Betriebssysteme zu verwalt
 
 ### <a name="windows-pc-software-client"></a>Softwareclient für Windows-PCs
 
-Ein [Intune-Softwareclient](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) auf Windows-PCs als eine alternative Registrierungsmethode bereitgestellt und installiert werden. Diese Funktionalität ist nur in der klassischen Intune-Konsole verfügbar. Sie können den Intune-Softwareclient zum Verwalten von PCs mit Windows 7 und höher (mit Ausnahme der Windows 10 Home-Edition) verwenden.
+Ein [Intune-Softwareclient](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) auf Windows-PCs als eine alternative Registrierungsmethode bereitgestellt und installiert werden. Diese Funktionalität ist nur im klassischen Intune-Portal verfügbar. Sie können den Intune-Softwareclient zum Verwalten von PCs mit Windows 7 und höher (mit Ausnahme der Windows 10 Home-Edition) verwenden.
 
 <!--  ### Exchange ActiveSync management
 
@@ -54,7 +54,7 @@ You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-d
 Für verschiedene Verwaltungsaufgaben müssen Sie eine der folgenden Verwaltungswebsites verwenden.
 
 - [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Intune-Portal](https://portal.azure.com/)
+- [Azure-Portal](https://portal.azure.com/)
 
 Für diese Portale werden die folgenden Browser unterstützt:
 - Microsoft Edge (neueste Version)
@@ -67,12 +67,12 @@ Für diese Portale werden die folgenden Browser unterstützt:
 
 Die klassischen Intune-Funktionen wie der Intune PC-Softwareclient und die Integration von Mobile Threat Defense-Partnern sind nur im klassischen Intune-Portal (https://manage.microsoft.com) verfügbar. Das klassische Intune-Portal erfordert Silverlight-Browserunterstützung.
 
-Die folgenden Silverlight-Browser unterstützen die klassische Intune-Konsole:
+Die folgenden Silverlight-Browser unterstützen die Intune-Konsole:
 - Internet Explorer 10 oder höher
 - Google Chrome (Versionen vor Version 42)
 - Mozilla Firefox mit aktiviertem Silverlight – [weitere Informationen](https://go.microsoft.com/fwlink/?linkid=836872)
 
 > [!Note]
-> Microsoft Edge und mobile Browser werden für die klassische Intune-Konsole nicht unterstützt, da sie [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx) nicht unterstützen.
+> Microsoft Edge und mobile Browser werden im klassischen Intune-Portal nicht unterstützt, da sie [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx) nicht unterstützen.
 
 Lediglich Benutzer mit Dienstadministratorrechten oder Mandantenadministratoren mit globaler Administratorrolle können sich bei diesem Portal anmelden. Für den Zugriff auf die Administratorkonsole sind für Ihr Konto eine Lizenz zur Verwendung von Intune und der Anmeldestatus **Zugelassen** erforderlich.

@@ -1,6 +1,6 @@
 ---
 title: Helpdeskportal zur Problembehandlung
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Helpdeskmitarbeiter verwenden das Portal zur Problembehandlung, um die technischen Problemen der Benutzer zu lösen."
 keywords: 
 author: NathBarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: c932781f988d63395b98452a4f4739e0bce1d9c8
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 14b47727428fcd6a16f9960e21f70ee64c7757d1
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Verwenden des Problembehandlungsportals, um Benutzern zu helfen
 
@@ -35,14 +35,14 @@ Wenn ein Benutzer beispielsweise den Support wegen eines technischen Problems mi
 -   App-Installationsfehler
 
 ## <a name="add-help-desk-operators"></a>Hinzufügen von Helpdeskoperatorn
-Als Intune-Administrator können Sie die Rolle „Helpdesk-Operator“ einer Benutzergruppe zuweisen. Mitglieder dieser Gruppe können das Administratorportal verwenden, um Probleme von Benutzern zu lösen. Jeder Helpdesk-Operator benötigt eine Intune-Lizenz zum Zugriff auf das Intune-Portal. Erfahren Sie, wie Sie [Intune-Lizenzen zuweisen](licenses-assign.md) können.
+Als Intune-Administrator können Sie die Rolle „Helpdesk-Operator“ einer Benutzergruppe zuweisen. Mitglieder dieser Gruppe können das Azure-Portal verwenden, um Probleme von Benutzern zu lösen. Jeder Helpdesk-Operator benötigt eine Intune-Lizenz zum Zugriff auf das Azure-Portal. Erfahren Sie, wie Sie [Intune-Lizenzen zuweisen](licenses-assign.md) können.
 
 So fügen Sie Helpdesk-Benutzer hinzu:
 1. [Fügen Sie Benutzer zu Intune hinzu](users-add.md), falls nötig.
 2. [Erstellen Sie eine Helpdesk-Gruppe](groups-add.md), und fügen Sie der Gruppe Benutzer hinzu.
 3. [Weisen Sie die RBCA-Rolle „Helpdeskbetreuer“ zu.](role-based-access-control.md#built-in-roles)
 
-  ![Screenshot des Intune-Portals mit hervorgehobenen Intune-Rollen und einer Liste integrierter Rollen, darunter auch „Helpdeskbetreuer“](./media/help-desk-user-add.png) Sie können auch eine [benutzerdefinierte Rolle erstellen](role-based-access-control.md#custom-roles), die Sie weiter anpassen können, um Helpdeskbetreuern Zugriff zu gewähren.  Helpdeskbetreuer benötigen die folgenden Berechtigungen, um bei der Behebung von Problemen von Benutzern helfen zu können:
+  ![Screenshot des Azure-Portals mit hervorgehobenen Intune-Rollen und einer Liste integrierter Rollen, darunter auch „Helpdesk-Operator“](./media/help-desk-user-add.png). Sie können auch eine [benutzerdefinierte Rolle erstellen](role-based-access-control.md#custom-roles), die Sie weiter anpassen können, um Helpdesk-Operatorn Zugriff zu gewähren.  Helpdeskbetreuer benötigen die folgenden Berechtigungen, um bei der Behebung von Problemen von Benutzern helfen zu können:
     - MobileApps: Lesen
     - ManagedApps: Lesen
     - ManagedDevices: Lesen

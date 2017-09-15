@@ -1,6 +1,6 @@
 ---
 title: "Erstellen der Skycure Mobile Threat Defense-Kompatibilitätsrichtlinie"
-description: "Erstellen Sie die Skycure Mobile Threat Defense-Kompatibilitätsrichtlinie in der klassischen Intune-Konsole."
+description: "Erstellen Sie die Skycure Mobile Threat Defense-Kompatibilitätsrichtlinie im klassischen Intune-Portal."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 56ff1728-1119-4e8a-aae6-ed5c7fafa052
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29caf162500e25c2a0151be92aabe4cc432e241b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e8f7b6c5c1e8497ca698b83215525ba9b4056f59
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>Erstellen der Skycure Mobile Threat Defense-Kompatibilitätsrichtlinie
 
@@ -38,7 +38,7 @@ Beim Einrichten von Skycure Mobile Threat Defense haben Sie in der Skycure-Konso
 
 ## <a name="to-create-skycure-compliance-policy"></a>Erstellen der Skycure-Kompatibilitätsrichtlinie
 
-1.  Wechseln Sie zur [klassischen Intune-Konsole](https://manage.microsoft.com/), und geben Sie dann Ihre Anmeldeinformationen ein.
+1.  Wechseln Sie zum [klassischen Intune-Portal](https://manage.microsoft.com/), und geben Sie Ihre Anmeldeinformationen ein.
 
 2.  Wählen Sie **Richtlinie** &gt; **Kompatibilitätsrichtlinien** aus. Sie können entweder eine vorhandene Kompatibilitätsrichtlinie verwenden oder eine neue erstellen.
 

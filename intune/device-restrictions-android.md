@@ -1,12 +1,12 @@
 ---
 title: "Einstellungen für Geräteeinschränkungen für Android in Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Android-Geräten kennen."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: db7287dcccf45e0ce98a6fcae3c953dbebc2bb82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Standardgeräteeinschränkungen für Android- und Samsung KNOX in Microsoft Intune
 
@@ -67,8 +67,8 @@ Verwenden Sie diese Einstellungen mit einer Einschränkungsrichtlinie für Andro
 <sup>1</sup> Bevor Sie diese Einstellung Geräten zuweisen, aktualisieren Sie die Unternehmensportal-App auf diesen Geräten auf jeden Fall auf die neueste Version.
 
 Wenn Sie die Einstellung **Numerisch komplex** konfigurieren und sie dann einem Gerät mit einer früheren Android-Version als 5.0 zuweisen, gilt das folgende Verhalten.
-- Wenn die Unternehmensportal-App eine ältere Version als 1704 ausführt, wird keine PIN-Richtlinie auf das Gerät angewendet und eine Fehlermeldung wird im Intune-Portal angezeigt.
-- Wenn die Unternehmensportal-App die Version 1704 oder höher ausführt, kann nur eine einfache PIN angewendet werden. Frühere Android-Versionen als 5.0 unterstützen diese Einstellung nicht. Es wird keine Fehlermeldung im Intune-Portal angezeigt.
+- Wenn die Unternehmensportal-App eine ältere Version als 1704 ausführt, wird keine PIN-Richtlinie auf das Gerät angewendet, und eine Fehlermeldung wird im Azure-Portal angezeigt.
+- Wenn die Unternehmensportal-App die Version 1704 oder höher ausführt, kann nur eine einfache PIN angewendet werden. Frühere Android-Versionen als 5.0 unterstützen diese Einstellung nicht. Es wird keine Fehlermeldung im Azure-Portal angezeigt.
 
 
 ## <a name="google-play-store"></a>Google Play Store
@@ -79,7 +79,7 @@ Wenn Sie die Einstellung **Numerisch komplex** konfigurieren und sie dann einem 
 
 In der Liste der eingeschränkten Apps können Sie eine der folgenden Listen für Android-Geräte als auch Geräte, die dem Samsung KNOX Standard entsprechen, konfigurieren:
 
-**Unzulässige Apps:** Listet die (nicht von Intune verwalteten) Apps auf, die Benutzer nicht installieren und ausführen dürfen.
+**Unzulässige Apps:** Listet die (nicht von Intune verwalteten) Apps auf, die gemeldet werden, wenn Benutzer sie installieren und ausführen.
 **Genehmigte Apps:** Listet die Apps auf, die Benutzer installieren dürfen. Um die Kompatibilität zu gewährleisten, dürfen Benutzer keine anderen Apps installieren. Apps, die von Intune verwaltet werden, sind automatisch zugelassen.
 Geräteprofile, die Einstellungen für eingeschränkte Apps enthalten, müssen Benutzergruppen zugewiesen werden.
 
@@ -107,6 +107,21 @@ Sie können auch auf **Importieren** klicken, um die Liste über eine CSV-Datei 
 - **Javascript (nur Samsung KNOX):** Erlaubt die Ausführung von Java-Skripts im Webbrowser.
 - **Popups (nur Samsung KNOX):** Erlaubt die Verwendung des Popupblockers im Webbrowser.
 
+## <a name="allow-or-block-apps"></a>Zulassen oder Blockieren von Apps
+
+Diese Einstellungen können verwendet werden, um Apps anzugeben, die auf Geräten installiert oder gestartet werden können, die nur Samsung KNOX Standard ausführen.
+Darüber hinaus können Sie auch installierte Apps angeben, die für den Benutzer des Geräts ausgeblendet werden. Diese Apps können die Benutzer nicht ausführen.
+
+- **Zur Installation zugelassene Apps (nur Samsung KNOX Standard)**
+- **Apps, deren Start blockiert wird (nur Samsung KNOX Standard)**
+- **Für den Benutzer ausgeblendete Apps (nur Samsung KNOX Standard)**
+
+Konfigurieren Sie für jede Einstellung eine Liste von Apps mit einer der folgenden Optionen:
+
+- **Apps nach Paketname hinzufügen**: Wird in erster Linie für Geschäftsanwendungen verwendet. Geben Sie den Namen der App und den Namen des App-Pakets ein. 
+- **Apps nach URL hinzufügen**: Geben Sie den Namen der App und ihre URL im Google Play Store ein.
+- **Verwaltete Apps hinzufügen**: Wählen Sie in der Liste der Apps, die Sie mit Intune verwalten, die benötigte App aus.
+
 ## <a name="cloud-and-storage"></a>Cloud und Speicher
 
 - **Google-Sicherung (nur Samsung KNOX):** Erlaubt die Verwendung der Google-Sicherung.
@@ -127,9 +142,9 @@ Sie können auch auf **Importieren** klicken, um die Liste über eine CSV-Datei 
 
 ## <a name="kiosk"></a>Kiosk
 
-Kioskeinstellungen gelten nur für Samsung KNOX Standard-Geräte.
+Kioskeinstellungen gelten nur für Samsung KNOX Standard-Geräte, und nur für Apps, die Sie mit Intune verwalten.
 
-- **Verwaltete App auswählen:** Wählen Sie eine der folgenden Optionen aus, um eine oder mehrere Apps hinzuzufügen, die ausgeführt werden können, wenn sich das Gerät im Kiosk-Modus befindet. Es dürfen keine anderen Apps auf dem Gerät ausgeführt werden.
+- **Verwaltete App auswählen:** Wählen Sie eine der folgenden Optionen aus, um eine oder mehrere verwaltete Apps hinzuzufügen, die ausgeführt werden können, wenn sich das Gerät im Kioskmodus befindet. Es dürfen keine anderen Apps auf dem Gerät ausgeführt werden.
     - **Hinzufügen von Apps nach Paketname**
     - **Hinzufügen von Apps nach URL**
     - **Hinzufügen von verwalteten Apps**
