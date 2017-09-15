@@ -1,6 +1,6 @@
 ---
 title: Neuerungen in Microsoft Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Erfahren Sie, welche Neuerungen es im Intune-Azure-Portal gibt
 keywords: 
 author: brenduns
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b50856bdc500cab4b206a105275b4842680d4423
-ms.sourcegitcommit: 71cdf99d639530e70dbe48d611d399e52c3150b0
+ms.openlocfilehash: c4787c716f94e95ab98badf924273af5d02751f8
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 
@@ -102,7 +102,7 @@ Benutzer können jetzt verschiedene Konten (geschäftlich und privat) mit Micros
 - Erfahren Sie mehr über die Apps, die [App-Schutz und mehrere Identitäten](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) mit Intune unterstützen.
 
 #### <a name="new-settings-to-allow-and-block-apps-on-samsung-knox-standard-devices"></a>Neue Einstellungen zum Zulassen und Blockieren von Apps auf Samsung KNOX Standard-Geräten
-<!-- 1305423 -->  
+<!-- 1305423 822899-->  
 In dieser Version werden neue [Einstellungen für Geräteeinschränkungen](device-restrictions-android.md) hinzugefügt, mit denen Sie die folgenden App-Listen angeben können:
  
 - Apps, die Benutzer installieren dürfen
@@ -112,7 +112,7 @@ In dieser Version werden neue [Einstellungen für Geräteeinschränkungen](devic
 Sie können die Apps mithilfe der URL, des Paketnamens oder der Liste der Apps, die Sie verwalten, angeben.
 
 #### <a name="new-azure-ad-app-based-conditional-access-policy-ui-link-from-intune"></a>Neue App-basierte Benutzeroberflächenverknüpfung für Azure AD-Richtlinien für den bedingten Zugriff in Intune
-
+<!-- 1016201 -->
 IT-Administratoren können nun App-basierte Richtlinien für den bedingten Zugriff über die neue Benutzeroberfläche für Richtlinien für den bedingten Zugriff in der Azure AD-Workload festlegen. Der App-basierte bedingte Zugriff, der sich im Bereich Intune-App-Schutz im Azure-Portal befindet, bleibt dort vorläufig und wird parallel erzwungen. Es ist auch ein praktischer Link zur neuen Benutzeroberfläche der Richtlinie für den bedingten Zugriff im Intune-Workload vorhanden.
 
 - Erfahren Sie mehr über den [app-based conditional access on Azure AD (App-basierten bedingten Zugriff für Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
@@ -124,7 +124,7 @@ IT-Administratoren können nun App-basierte Richtlinien für den bedingten Zugri
 Eine [aktualisierte Liste der DNS-Namen und IP-Adressen](/intune/network-bandwidth-use) steht für die Firewall-Proxyeinstellungen zur Verfügung.
 
 ### <a name="use-azure-active-directory-for-conditional-access----967947---"></a>Verwenden von Azure Active Directory für bedingten Zugriff <!-- 967947 -->
-„Bedingter Zugriff“ ist im Abschnitt „Azure Active Directory“ der Azure-Konsole verfügbar. Diese Option bietet ein leistungsstärkeres und flexibleres Framework für das Festlegen von Richtlinien für Cloud-Apps wie Office 365 Exchange Online und SharePoint Online.  Richtlinien können Sie auf dem Blatt **Bedingter Zugriff in Azure Active Directory** anstatt in der klassischen Intune-Konsole konfigurieren. In der klassischen Intune-Konsole vorhandene Richtlinien müssen in der Azure-Konsole neu erstellt werden. Weitere Informationen finden Sie unter [Erstellen von Azure AD-Richtlinien für den bedingten Zugriff](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview).
+„Bedingter Zugriff“ ist im Abschnitt „Azure Active Directory“ des Azure-Portals verfügbar. Diese Option bietet ein leistungsstärkeres und flexibleres Framework für das Festlegen von Richtlinien für Cloud-Apps wie Office 365 Exchange Online und SharePoint Online.  Richtlinien können Sie statt in der Intune-Konsole auf dem Blatt **Bedingter Zugriff in Azure Active Directory** konfigurieren. In der Intune-Konsole vorhandene Richtlinien müssen im Azure-Portal neu erstellt werden. Weitere Informationen finden Sie unter [Erstellen von Azure AD-Richtlinien für den bedingten Zugriff](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview).
 
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Direkter Zugriff auf Apple-Registrierungsszenarien <!--951869-->
 Für Intune-Konten, die nach Januar 2017 erstellt wurden, hat Intune direkten Zugriff auf Apple-Registrierungsszenarien mithilfe der Workload „Geräte registrieren“ im Azure-Portal aktiviert. Bisher konnte nur über Links im klassischen Intune-Portal auf die Apple-Registrierungsvorschau zugegriffen werden. Vor Januar 2017 erstellte Intune-Konten erfordern eine einmalige Migration, bevor diese Features in Azure verfügbar sind. Der Zeitplan für die Migration wurde noch nicht angekündigt, aber Sie erfahren so bald wie möglich Näheres. Wir empfehlen Ihnen dringend, ein Testkonto zu erstellen, um die neue Oberfläche zu testen, wenn Sie mit Ihrem vorhandenen Konto nicht auf das Azure-Portal zugreifen können.
@@ -168,7 +168,7 @@ Wir geben Ihnen früh genug Bescheid, damit Sie genügend Zeit für die Planung 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
 Ermutigen Sie Ihre Benutzer, ein Update auf iOS 9.0 oder höher durchzuführen, damit sie in den vollen Genuss der neuen Intune-Features kommen.  Fordern Sie Benutzer auf, die neue Version des Unternehmensportals zu installieren und die neuen darin angebotenen Funktionen zu benutzen.
 
-Wechseln Sie zu Intune im Azure-Portal, und sehen Sie sich Geräte > Alle Geräte an. Filtern Sie nach der iOS-Version, um alle aktuellen Geräte mit einem Betriebssystem vor iOS 9 anzuzeigen.
+Wechseln Sie zu Intune im Azure-Portal, und sehen Sie sich „Geräte > Alle Geräte“ an. Filtern Sie nach der iOS-Version, um alle aktuellen Geräte mit einem Betriebssystem vor iOS 9 anzuzeigen.
 
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple erfordert Updates für die Transportsicherheit für Anwendungen <!--748318-->

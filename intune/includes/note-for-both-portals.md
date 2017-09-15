@@ -1,4 +1,4 @@
 |Gilt für: Intune |
 |--|
-|Dieses Thema bezieht sich auf Intune im Azure-Portal und in der klassischen Konsole.|
+|Dieses Thema bezieht sich auf Intune im Azure-Portal und im klassischen Portal.|
 | |

@@ -1,12 +1,12 @@
 ---
 title: "Zurücksetzen auf Werkseinstellungen oder Entfernen von Unternehmensdaten auf Geräten mit Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Erfahren Sie, wie Sie Unternehmensdaten von einem Gerät entfernen oder wie Sie das Gerät auf Werkseinstellungen zurücksetzen."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/07/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Entfernen von Geräte mithilfe der Zurücksetzung auf Werkseinstellungen oder dem Entfernen von Unternehmensdaten
 
@@ -106,7 +106,7 @@ Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minute
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Löschen von Geräten über das Azure Active Directory-Portal
 
-Aufgrund von Kommunikationsproblemen oder fehlender Geräte müssen Sie möglicherweise Geräte über Azure Active Directory (AD) löschen. Der Löschbefehl entfernt kein Gerät aus der Verwaltung. Sie können **Löschen** aber dazu verwenden, Gerätedatensätze über die Azure-Konsole zu entfernen, von denen Sie wissen, dass sie schwer zugänglich sind und für die eine erneute Kommunikation mit Azure unwahrscheinlich ist.
+Aufgrund von Kommunikationsproblemen oder fehlender Geräte müssen Sie möglicherweise Geräte über Azure Active Directory (AD) löschen. Der Löschbefehl entfernt kein Gerät aus der Verwaltung. Sie können **Löschen** aber dazu verwenden, Gerätedatensätze über das Azure-Portal zu entfernen, von denen Sie wissen, dass sie schwer zugänglich sind, und für die eine erneute Kommunikation mit Azure unwahrscheinlich ist.
 
 1.  Melden Sie sich [im Azure-Portal bei Azure Active Directory](http://aka.ms/accessaad) mit Ihren Administratoranmeldeinformationen an. Sie können sich auch im [Office 365-Portal](https://portal.office.com) anmelden und dann über den Link auf der linken Seite **Admin** &gt; **Azure AD** auswählen.
 3.  Erstellen Sie ein Azure-Abonnement, wenn Sie noch keins besitzen. Hierzu sollte keine Kreditkarte oder Zahlung erforderlich sein, wenn Sie ein gebührenpflichtiges Konto besitzen (klicken Sie auf den Abonnementlink **Ihr kostenloses Azure Active Directory registrieren** ).

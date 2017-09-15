@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/21/2017
+ms.date: 09/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,36 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 88f1d4b3e54a27be86a542e1265ea9606498ab4f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8da134d768333fb03cc87ab38230f5f022fee2e1
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/08/2017
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Welche Informationen erhält mein Unternehmen, wenn ich mein Gerät in Intune registriere?
+# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Welche Informationen erhält mein Unternehmen, wenn ich mein Gerät registriere?
 
-Wenn du ein Gerät zur Verwaltung registrierst, erteilen Sie der IT-Abteilung Ihres Unternehmens die Erlaubnis, auf bestimmte Informationen auf Ihrem Gerät zuzugreifen,, um die Unternehmensdaten auf Ihrem Gerät zu schützen.
+Wenn Sie ein Gerät zur Verwaltung registrieren, erteilen Sie Ihrem Unternehmen die Erlaubnis, auf bestimmte Informationen auf Ihrem Gerät zuzugreifen, um die Unternehmensdaten auf Ihrem Gerät zu schützen.
 
-**Das kann der IT-Administrator nicht sehen**
+**Was Ihr Unternehmen niemals sehen kann**
 
 - Ihren Anrufs- und Browserverlauf
--   Standort
-- Ihren persönlichen E-Mail-Account
-- SMS
+- E-Mail-Nachrichten und SMS
 - Kontakte
--   Die Kennwörter für Ihre persönlichen Accounts
-- Ihre Termine
+- Kalender
+-   Kennwörter
 - Ihre Bilder, einschließlich dem, was sich in der Fotos- und Kamera-App befindet
 
-**Das kann der IT-Administrator sehen**
+**Was Ihr Unternehmen immer sehen kann**
 
--   Modell
--   Seriennummer
--   Betriebssystemversion
--   App-Namen
--   Besitzer
--   Gerätename
--   Der Hersteller (gilt nur für Geräte, die nicht von Apple hergestellt wurden)
--   Telefonnummer (Bei Arbeitsgeräten die vollständige Nummer). Bei persönlichen Geräten nur die letzten vier Ziffern.)
+- Gerätemodell, z.B. iPhone 7
+- Hersteller, z.B. Microsoft
+- Betriebssystem, z.B. Android 7.1
+- App-Namen, z.B. Microsoft Word
+- Geräteeigentümer
+- Gerätename
+- Seriennummer
+
+**Was Ihr Unternehmen sehen könnte**
+
+-  Telefonnummer: Bei **unternehmenseigenen** Geräten kann Ihre vollständige Telefonnummer angezeigt werden. Bei Geräten, die **persönliches** Eigentum sind, werden dem Unternehmen nur die letzten vier Ziffern Ihrer Telefonnummer angezeigt. Um den **Besitztyp** jedes einzelnen Geräts festzustellen, öffnen Sie die Seite **Gerätedetails** des Geräts. 
+-  Standort: Ihr Unternehmen kann nie den Standort Ihres Geräts sehen, sofern Sie kein iOS-Gerät haben, das überwacht wird und verloren gegangen ist. [Wie kann ich das wissen?](https://go.microsoft.com/fwlink/?linkid=853816)

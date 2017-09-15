@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren und Verwalten von SCEP-Zertifikaten mit Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Erfahren Sie, wie Sie Ihre Infrastruktur konfigurieren und dann SCEP-Zertifikatprofile in Intune erstellen und zuweisen."
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e29e79b8598eddba951b3f8ee7a7bcd5c6271f83
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 406da09419e13319b8ebf4f59a05ca36eff1edad
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Konfigurieren und Verwalten von SCEP-Zertifikaten mit Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,7 +36,7 @@ Dieses Thema erläutert, wie Sie Ihre Infrastruktur konfigurieren und dann SCEP-
 -  **NDES Server**: Auf einem Server mit Windows Server 2012 R2 oder höher müssen Sie den Registrierungsdienst für Netzwerkgeräte (Network Device Enrollment Service, NDES) einrichten. Intune unterstützt die Verwendung von NDES nicht, wenn es auf einem Server ausgeführt wird, der auch die Unternehmenszertifizierungsstelle ausführt. Im [Leitfaden für den Registrierungsdienst für Netzwerkgeräte](http://technet.microsoft.com/library/hh831498.aspx) finden Sie Anweisungen zum Konfigurieren von Windows Server 2012 R2 als Host für den Registrierungsdienst für Netzwerkgeräte (NDES).
 Der NDES-Server muss in die Domäne eingebunden werden, die die Zertifizierungsstelle hostet, er darf sich aber nicht auf dem gleichen Server befinden wie die Zertifizierungsstelle. Weitere Informationen zum Bereitstellen des NDES-Servers in einer separaten Gesamtstruktur, in einem isolierten Netzwerk oder in einer internen Domäne finden Sie unter [Verwenden eines Richtlinienmoduls mit dem Registrierungsdienst für Netzwerkgeräte](https://technet.microsoft.com/library/dn473016.aspx).
 
--  **Microsoft Intune Certificate Connector**: Verwenden Sie das Intune-Portal zum Herunterladen des Installationsprogramms für den **Certificate Connector** (**ndesconnectorssetup.exe**). Führen Sie **ndesconnectorssetup.exe** dann auf dem Computer aus, auf dem Sie den Zertifikatconnector installieren möchten. 
+-  **Microsoft Intune Certificate Connector**: Verwenden Sie das Azure-Portal zum Herunterladen des Installationsprogramms für den **Certificate Connector** (**ndesconnectorssetup.exe**). Führen Sie **ndesconnectorssetup.exe** dann auf dem Computer aus, auf dem Sie den Zertifikatconnector installieren möchten. 
 -  **Webanwendungsproxy-Server** (optional): Verwenden Sie einen Server unter Windows Server 2012 R2 oder höher als Webanwendungsproxy-Server (WAP). Diese Konfiguration:
     -  ermöglicht Geräten das Empfangen von Zertifikaten über eine Internetverbindung,
     -  ist eine Sicherheitsempfehlung, wenn Geräte eine Verbindung über das Internet herstellen, um Zertifikate zu empfangen oder zu erneuern.
@@ -179,7 +179,7 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
         -   **Webserver** &gt; **Sicherheit** &gt; **Anforderungsfilterung**
 
-        -   **Webserver** &gt; **Anwendungsentwicklung** &gt;  **ASP.NET 3.5**. Bei der Installation von ASP.NET 3,5 wird .NET Framework 3,5 installiert. Installieren Sie bei Installation von .NET Framework 3.5 sowohl das Feature **.NET Framework 3.5** als auch die **HTTP-Aktivierung**.
+        -   **Webserver** &gt; **Anwendungsentwicklung** &gt; ** ASP.NET 3.5**. Bei der Installation von ASP.NET 3,5 wird .NET Framework 3,5 installiert. Installieren Sie bei Installation von .NET Framework 3.5 sowohl das Feature **.NET Framework 3.5** als auch die **HTTP-Aktivierung**.
 
         -   **Webserver** &gt; **Anwendungsentwicklung** &gt; **ASP.NET 4.5**. Bei der Installation von ASP.NET 4.5 wird .NET Framework 4.5 installiert. Installieren Sie bei der Installation von .NET Framework 4.5 das Kernfeature **.NET Framework 4.5**, das Feature **ASP.NET 4.5** und das Feature **WCF-Dienste** &gt; **HTTP-Aktivierung**.
 

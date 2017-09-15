@@ -14,11 +14,11 @@ ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 7f8f914e9b7b0e2db2da3f9c8317485208d97574
-ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
+ms.openlocfilehash: 9a84cc5b294a1a330aab978de5ef0fd8cfa4c259
+ms.sourcegitcommit: 30b51c625311398b371c0326d41216f55315f627
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/05/2017
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Verwenden von Warnungen, um Benachrichtigungen durch Microsoft Intune zu erhalten
 
@@ -28,7 +28,7 @@ Warnungen halten Sie über Ereignisse in Microsoft Intune auf dem Laufenden. War
 - Ein Problem mit dem Exchange-Connector beeinflusst die Verwaltung mobiler Geräte.
 - Auf einem Computer wurde Malware gefunden.
 - Ein Konflikt zwischen zwei Intune-Richtlinien wurde erkannt.
-- Fehler bei der Bereitstellung eines Intune-Softwareclients
+- Bei der Bereitstellung eines Intune-Softwareclients tritt ein Fehler auf.
 
 ## <a name="how-alerts-work"></a>Funktionsweise von Warnungen
 

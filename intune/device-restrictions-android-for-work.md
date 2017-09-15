@@ -1,6 +1,6 @@
 ---
 title: "Einstellungen für Geräteeinschränkungen für Android for Work in Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Android for Work-Geräten kennen."
 keywords: 
 author: robstackmsft
@@ -15,18 +15,18 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a8053e54dcad692380b6762b22411f271337f29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 7e7f74f516a4b60b6a727d6c51ec54dab96aa88e
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Android for Work-Geräte in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Arbeitsprofileinstellungen
-- **Datenfreigabe zwischen Arbeitsprofilen und persönlichen Profilen** – Verwenden Sie diese Einstellung, um zu steuern, ob Apps im Arbeitsprofil Daten für Apps im persönlichen Profil freigeben können. Durch diese Einstellung werden Freigabeaktionen in Anwendungen (z.B. die Option **Freigeben...** in der Browser-App Chrome) gesteuert. Sie wird nicht auf das Verhalten beim Kopieren von Daten in die Zwischenablage und Einfügen angewendet. Im Gegensatz zu [Richtlinieneinstellungen für den App-Schutz](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) werden Einstellungen für Geräteeinschränkungen über das Intune-Portal verwaltet und mithilfe der Android for Work-Arbeitsprofilpartition zum Isolieren von verwalteten Apps eingesetzt. Wählen Sie aus:
+- **Datenfreigabe zwischen Arbeitsprofilen und persönlichen Profilen** – Verwenden Sie diese Einstellung, um zu steuern, ob Apps im Arbeitsprofil Daten für Apps im persönlichen Profil freigeben können. Durch diese Einstellung werden Freigabeaktionen in Anwendungen (z.B. die Option **Freigeben...** in der Browser-App Chrome) gesteuert. Sie wird nicht auf das Verhalten beim Kopieren von Daten in die Zwischenablage und Einfügen angewendet. Im Gegensatz zu [Richtlinieneinstellungen für den App-Schutz](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) werden Einstellungen für Geräteeinschränkungen über das Azure-Portal verwaltet und mithilfe der Android for Work-Arbeitsprofilpartition zum Isolieren von verwalteten Apps eingesetzt. Wählen Sie aus:
     - **Standardeinschränkungen für Freigabe**: Diese Einstellung ist das standardmäßige Freigabeverhalten des Geräts, das abhängig von der ausgeführten Android-Version variiert. Standardmäßig ist die Freigabe von Daten des persönlichen Profils für das Arbeitsprofil zulässig. Die Freigabe von Daten des Arbeitsprofils für das persönliche Profil ist dagegen standardmäßig blockiert. Durch diese Einstellung wird die Freigabe von Daten des Arbeitsprofils für das persönliche Profil verhindert. Google bietet auf Geräten, auf denen die Version 6.0 und höher ausgeführt wird, keine Möglichkeit, um die Freigabe von Daten aus dem persönlichen Profil für das Arbeitsprofil zu blockieren.   
     - **Apps im Arbeitsprofil können Freigabeanforderungen vom persönlichen Profil verarbeiten**: Aktivieren Sie mit dieser Option das integrierte Android-Feature, dass die Freigabe vom persönlichen Profil aus im Arbeitsprofil ermöglicht. Wenn diese Option aktiviert ist, können Daten durch eine Freigabeanfrage einer App im persönlichen Profil für Apps im Arbeitsprofil freigegeben werden. Diese Einstellung ist das Standardverhalten für Android-Geräte, die frühere Versionen als 6.0 ausführen.
     - **Grenzübergreifende Freigabe zulassen** – Diese Option ermöglicht die Freigabe von Daten in beide Richtungen über die Begrenzungen des Arbeitsprofils hinaus. Wenn Sie diese Einstellung auswählen, können Apps im Arbeitsprofil Daten für Apps ohne Badgeverwendung im persönlichen Profil freigeben. Verwenden Sie diese Einstellung mit Vorsicht, da sie verwalteten Apps im Arbeitsprofil die Freigabe von Daten für Apps auf der nicht verwalteten Seite des Geräts ermöglicht.

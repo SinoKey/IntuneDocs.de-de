@@ -1,6 +1,6 @@
 ---
 title: Rollenbasierte Zugriffssteuerung mit Intune
-titleSuffix: Intune Azure preview
+titleSuffix: Azure portal
 description: "Intune in Azure (Vorschau): Erfahren Sie, wie Sie mit der rollenbasierten Zugriffssteuerung steuern können, wer Aktionen ausführen und Änderungen vornehmen kann."
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
-ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
+ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Rollenbasierte Zugriffssteuerung mit Intune
 
@@ -32,7 +32,7 @@ Mithilfe der rollenbasierten Zugriffssteuerung können Sie bestimmen, wer versch
 
 ![Beispiel für die rollenbasierte Zugriffssteuerung mit Intune](./media/intune-rbac-1.PNG)
 
-Beginnend mit dem neuen Intune-Portal bietet **Azure Active Directory (Azure AD)** zwei Verzeichnisrollen, die mit Intune verwendet werden können. Diese Rollen haben die Vollzugriffsberechtigung für alle Aktivitäten in Intune:
+Beginnend mit dem neuen Azure-Portal bietet **Azure Active Directory (Azure AD)** zwei Verzeichnisrollen, die mit Intune verwendet werden können. Diese Rollen haben die Vollzugriffsberechtigung für alle Aktivitäten in Intune:
 
 - **Globaler Administrator:** Benutzer mit dieser Rolle haben Zugriff auf alle administrativen Funktionen in Azure AD sowie auf Dienste, die mit Azure AD einen Verbund bilden, wie z.B. Exchange Online, SharePoint Online und Skype for Business Online. Die Person, die sich für den Azure AD-Mandanten registriert, wird ein globaler Administrator. Nur globale Administratoren können weitere Azure AD-Administratorrollen zuweisen. Es kann mehr als einen globalen Administrator in Ihrem Unternehmen geben. Globale Administratoren können das Kennwort aller Benutzer und aller anderen Administratoren zurücksetzen.
 
@@ -46,12 +46,12 @@ Beginnend mit dem neuen Intune-Portal bietet **Azure Active Directory (Azure AD)
     > [!TIP]
     > Intune zeigt außerdem drei Azure AD-Erweiterungen an, **Benutzer**, **Gruppen** und **Bedingter Zugriff**, die mithilfe der rollenbasierten Zugriffssteuerung von Azure AD gesteuert werden. Darüber hinaus führt der **Benutzerkontoadministrator** lediglich auf AAD-Benutzer- und Gruppen bezogene Aktivitäten aus und verfügt nicht über Vollzugriffsberechtigungen zum Ausführen aller Aktivitäten in Intune. Unter [Rollenbasierte Zugriffssteuerung in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) finden Sie weitere Details.
 
-## <a name="roles-created-in-the-intune-classic-console"></a>In der klassischen Intune-Verwaltungskonsole erstellte Rollen
+## <a name="roles-created-in-the-intune-classic-portal"></a>Im klassischen Intune-Portal erstellte Rollen
 
-Nur Benutzer mit der Rolle **Intune-Dienstadministrator** mit Vollzugriffsberechtigung werden von der klassischen Intune-Verwaltungskonsole zu Intune in Azure migriert. Sie müssen Benutzer mit der Rolle **Intune-Dienstadministrator** mit der Zugriffsebene „Schreibgeschützt“ oder „Support“ Intune-Rollen im Azure-Portal neu zuweisen und aus dem klassischen Azure-Portal entfernen.
+Nur Benutzer mit der Rolle **Intune-Dienstadministrator** mit Vollzugriffsberechtigung werden vom klassischen Intune-Portal zu Intune in Azure migriert. Sie müssen Benutzer mit der Rolle **Intune-Dienstadministrator** mit der Zugriffsebene „Schreibgeschützt“ oder „Support“ Intune-Rollen im Azure-Portal neu zuweisen und aus dem klassischen Azure-Portal entfernen.
 
 > [!IMPORTANT]
-> Sie können den Zugriff für Intune-Dienstadministratoren in der klassischen Konsole ggf. beibehalten, wenn Ihre Administratoren weiterhin einen Zugriff zum Verwalten von PCs mit Intune benötigen.
+> Sie können den Zugriff für Intune-Dienstadministratoren im klassischen Portal ggf. beibehalten, wenn Ihre Administratoren weiterhin einen Zugriff zum Verwalten von PCs mit Intune benötigen.
 
 ## <a name="built-in-roles"></a>Integrierte Rollen
 

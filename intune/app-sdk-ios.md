@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 62478796f1f24464503a0d564e0d8972dd04f8b3
-ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
+ms.openlocfilehash: 0485f7c93baec13c6e0a26f391f159006fa530ec
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
@@ -468,7 +468,7 @@ WebViewHandledURLSchemes | Array von Zeichenfolgen | Gibt die URL-Schemas an, di
 > Gemäß den App Store-Standards muss `MAMPolicyRequired` auf „NO“ festgelegt sein, wenn Ihre App im App Store veröffentlicht werden soll.
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Aktivieren der MAM-Zielkonfiguration für Ihre iOS-Anwendungen
-Die MAM-Zielkonfiguration ermöglicht, dass eine App Konfigurationsdaten über das Intune App SDK erhalten kann. Das Format und die Varianten dieser Daten müssen definiert und Intune-Kunden vom Besitzer oder Entwickler der Anwendung mitgeteilt werden. Intune-Administratoren können Konfigurationsdaten über die Intune Azure-Konsole als Ziel festlegen und bereitstellen. Beim Intune App SDK für iOS (Version 7.0.1) können Apps, die an der MAM-Zielkonfiguration teilnehmen, über den MAM-Dienst mit MAM-Zielkonfigurationsdaten versorgt werden. Die Anwendungskonfigurationsdaten werden durch unseren MAM-Dienst direkt an die App übertragen, und nicht über den MDM-Kanal. Das Intune App SDK stellt eine Klasse für den Zugriff auf die Daten bereit, die aus diesen Konsolen abgerufen wurden. Folgende Voraussetzungen sind erforderlich: <br>
+Die MAM-Zielkonfiguration ermöglicht, dass eine App Konfigurationsdaten über das Intune App SDK erhalten kann. Das Format und die Varianten dieser Daten müssen definiert und Intune-Kunden vom Besitzer oder Entwickler der Anwendung mitgeteilt werden. Intune-Administratoren können Konfigurationsdaten über das Intune Azure-Portal als Ziel festlegen und bereitstellen. Beim Intune App SDK für iOS (Version 7.0.1) können Apps, die an der MAM-Zielkonfiguration teilnehmen, über den MAM-Dienst mit MAM-Zielkonfigurationsdaten versorgt werden. Die Anwendungskonfigurationsdaten werden durch unseren MAM-Dienst direkt an die App übertragen, und nicht über den MDM-Kanal. Das Intune App SDK stellt eine Klasse für den Zugriff auf die Daten bereit, die aus diesen Konsolen abgerufen wurden. Folgende Voraussetzungen sind erforderlich: <br>
 * Die App muss für MAM-WE registriert werden, bevor Sie auf die Benutzeroberfläche der MAM-Zielkonfiguration zugreifen. Weitere Informationen zu MAM-WE finden Sie unter [App-Schutzrichtlinie ohne Geräteregistrierung im Intune App SDK-Entwicklerhandbuch](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment).
 * In der Quelldatei der App muss ```IntuneMAMAppConfigManager.h``` enthalten sein.
 * Rufen Sie ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` auf, um das App-Konfigurationsobjekt zu erhalten.

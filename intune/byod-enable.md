@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: f4e414f3696c64f8ea450394928aa055ad427afd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-byod-with-intune"></a>Aktivieren von BYOD mit Intune
 
@@ -48,7 +48,7 @@ Nachdem Sie den Intune-Dienst vorbereitet haben, müssen Sie für die verschiede
 
 -   **Android-Geräte** Sie müssen nichts tun, um den Intune-Dienst für die Registrierung von Android-Geräten vorzubereiten. Benutzer können einfach über die Unternehmensportal-App, die in Google Play zur Verfügung steht, [Ihre Geräte registrieren](/intune-user-help/enroll-your-device-in-intune-android).
 
--   **Windows Phones und PCs** Windows-Geräte können mit zusätzlichen Konfigurationen registriert werden. Sie können die automatische Registrierung für Windows 10-PCs und mobile Windows 10-Geräte in Azure Active Directory (AD) Premium aktivieren, um die Benutzererfahrung zu vereinfachen. Wenn Sie nicht über Azure AD Premium verfügen, oder Sie Windows 8.1 unterstützen müssen, können Sie einen [DNS-Alias für den Registrierungsserver](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) erstellen, um die Registrierung einfacher zu gestalten.
+-   **Windows Phones und PCs** Windows-Geräte können mit zusätzlichen Konfigurationen registriert werden. Sie können die automatische Registrierung für Windows 10-PCs und mobile Windows 10-Geräte in Azure Active Directory (AD) Premium aktivieren, um die Benutzererfahrung zu vereinfachen. Wenn Sie nicht über Azure AD Premium verfügen, oder Sie Windows 8.1 unterstützen müssen, können Sie einen [DNS-Alias für den Registrierungsserver](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium) erstellen, um die Registrierung einfacher zu gestalten.
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>Sicherstellen der Erfüllung grundlegender Sicherheitsanforderungen bei verwalteten Geräten
@@ -82,7 +82,7 @@ Mit Intune können Sie Apps verwalten und bereitstellen, die Sie im Rahmen von V
 
 -   [Verwalten von Apps für iOS-Geräte, die über ein Volumenprogramm erworben wurden](vpp-apps-ios.md). Sie erwerben mehrere Lizenzen für iOS-Apps über das [Programm für Volumenlizenzen für Unternehmen (Volume Purchase Program, VPP) von Apple](http://www.apple.com/business/vpp/). Sie müssen über die Apple-Website ein Apple VPP-Konto einrichten und das Apple VPP-Token in Intune hochladen. Anschließend können Sie Ihre Informationen zum Volumenerwerb mit Intune synchronisieren und die Verwendung der im Rahmen des Volumenprogramms erworbenen App verfolgen.
 
--   [Verwalten von Apps, die im Microsoft Store für Unternehmen erworben wurden](windows-store-for-business.md). Im [Microsoft Store für Unternehmen](https://www.microsoft.com/business-store) können Sie Apps für Ihre Organisation suchen und einzeln oder im Rahmen eines Volumenprogramms erwerben. Durch die Verbindung des Stores mit Intune können Sie im Rahmen von Volumenprogrammen erworbene Apps über das Intune-Portal verwalten.
+-   [Verwalten von Apps, die im Microsoft Store für Unternehmen erworben wurden](windows-store-for-business.md). Im [Microsoft Store für Unternehmen](https://www.microsoft.com/business-store) können Sie Apps für Ihre Organisation suchen und einzeln oder im Rahmen eines Volumenprogramms erwerben. Durch die Verbindung des Stores mit Intune können Sie im Rahmen von Volumenprogrammen erworbene Apps über das Azure-Portal verwalten.
 
 ## <a name="protect-company-data"></a>Schützen von Unternehmensdaten
 

@@ -1,10 +1,10 @@
 ---
 title: Erste Schritte mit dem Azure-Portal
-titleSuffix: Intune on Azure
-description: "Erfahren Sie mehr über das Erstellen und Freigeben von Dashboards in Intune in Azure."
+titlesuffix: Azure portal
+description: "Erfahren Sie mehr über das Erstellen und Freigeben von Dashboards in Intune im Azure-Portal."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f27ae85160573f6757b20c885e95a280eb7f1155
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>Erste Schritte mit Intune im Azure-Portal
 
@@ -52,7 +52,7 @@ Dies wird wichtiger, wenn Sie mehr Inhalte wie Gruppen und Benutzer in Intune hi
 
 ## <a name="using-services"></a>Verwenden von Diensten
 
-Wenn Sie Intune oder einen anderen Dienst in Azure öffnen, wird er auf einem **Blatt** angezeigt. Einige der ersten Workloads wie **Benutzer**, **Gruppen** und **Mobile Apps**, die Sie in Intune verwenden, werden alle im Vollbildblatt angezeigt. Wenn Sie die Workload auswählen, wird das Blatt im Vollbildmodus geöffnet. Andere Blätter werden beim Öffnen vom rechten Rand des Blatts geschoben und werden unter dem Hauptblatt reduziert, von dem sie stammen. 
+Wenn Sie Intune oder einen anderen Dienst in Azure öffnen, wird er auf einem **Blatt** angezeigt. Einige der ersten Workloads wie **Benutzer**, **Gruppen** und **Mobile Apps**, die Sie in Intune verwenden, werden alle im Vollbildblatt angezeigt. Wenn Sie die Workload auswählen, wird das Blatt im Vollbildmodus geöffnet. Andere Blätter werden beim Öffnen vom rechten Rand des Blatts geschoben und werden unter dem Hauptblatt reduziert, von dem sie stammen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

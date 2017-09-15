@@ -1,6 +1,6 @@
 ---
 title: "Registrieren von Geräten – Geräteregistrierungs-Manager"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Verwenden Sie das Konto „Geräteregistrierungs-Manager“, um Geräte in Intune zu registrieren. \""
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 5caf60d0512a33c0c88f4305b1a9eb189112ba02
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Registrieren von Geräten mithilfe des Geräteregistrierungs-Managers
 
@@ -36,7 +36,7 @@ Es müssen Benutzer im Azure-Portal vorhanden sein, damit sie als Geräteregistr
 
 Ein Restaurant möchte 50 Point-of-Sale-Tablets für sein Bedienpersonal bereitstellen sowie Bestellmonitore für seine Küchenmitarbeiter. Die Mitarbeiter müssen niemals auf Unternehmensdaten zugreifen und sich nie als Benutzer anmelden. Der Intune-Administrator erstellt ein Geräteregistrierungs-Manager-Konto und fügt einen Vorgesetzten des Restaurants zum DEM-Konto hinzu, dieser erhält also DEM-Fähigkeiten. Der Vorgesetzte kann nun die 50 Tablets registrieren, indem er die DEM-Anmeldeinformationen verwendet.
 
-Nur Benutzer in der Intune-Konsole können Geräteregistrierungs-Manager sein. Der Geräteregistrierungs-Manager kann kein Intune-Administrator sein.
+Nur Benutzer im Azure-Portal können Geräteregistrierungs-Manager sein. Der Geräteregistrierungs-Manager kann kein Intune-Administrator sein.
 
 Der DEM-Benutzer kann Folgendes tun:
 
@@ -95,5 +95,5 @@ Wenn Sie einen Geräteregistrierungs-Manager entfernen, wirkt sich dies nicht au
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Anzeigen der Eigenschaften des Geräteregistrierungs-Managers
 
-1. Wählen Sie im Intune-Portal erst **Geräteregistrierung** und dann **Geräteregistrierungs-Manager** aus.
+1. Wählen Sie im Azure-Portal erst **Geräteregistrierung** und dann **Geräteregistrierungs-Manager** aus.
 2. Klicken Sie auf dem Blatt **Geräteregistrierungs-Manager** mit der rechten Maustaste auf den Geräteregistrierungs-Manager-Benutzer, und wählen Sie **Eigenschaften** aus.

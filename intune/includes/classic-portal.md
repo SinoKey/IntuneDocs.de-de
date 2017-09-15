@@ -1,4 +1,4 @@
 |Gilt für: Intune im klassischen Portal |
 |--|
-|Suchen Sie nach der Dokumentation zu Intune in Azure? [Klicken Sie hier](https://docs.microsoft.com/intune/what-is-intune).|
+|Suchen Sie nach der Dokumentation für Intune im Azure-Portal? [Klicken Sie hier](/intune/what-is-intune).|
 | |

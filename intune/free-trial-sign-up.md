@@ -1,6 +1,6 @@
 ---
 title: "Registrieren für eine 30-tägige kostenlose Testversion von Microsoft Intune"
-titleSuffix: 
+titleSuffix: Azure portal
 description: "So registrieren Sie sich für eine 30-tägige kostenlose Testversion von Intune"
 keywords: 
 author: lindavr
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: de86b6c9938d4be3f90d62e96080d8b967886792
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 21ee75ab006c1770bc61039facc28d8a0118e706
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Registrieren für eine kostenlose Testversion von Microsoft Intune
 
@@ -47,11 +47,11 @@ Wenn Sie sich für eine Testversion registrieren, wird eine E-Mail mit Ihren Kon
 Für das Intune-Azure-Portal verwenden Sie drei Portale:
 - Das Intune-Dashboard in Azure ([portal.azure.com](https://portal.azure.com)), auf dem Sie die [Funktionen von Intune im Azure-Portal](what-is-intune.md) erkunden können.
 - Das Office 365 Admin Center ([portal.office.com](https://portal.office.com)), in dem Sie Benutzer hinzufügen und verwalten können, wenn Sie dazu nicht Azure Active Directory verwenden. Sie können auch andere Aspekte Ihres Kontos verwalten, einschließlich Abrechnung und Support.
-- Die klassische Intune-Verwaltungskonsole ([manage.microsoft.com](https://manage.microsoft.com)), in der Sie Features, die in Azure noch nicht hinzugefügt wurden, erkunden können.
+- Die Intune-Verwaltungskonsole ([manage.microsoft.com](https://manage.microsoft.com)), in der Sie Features, die in Azure noch nicht hinzugefügt wurden, erkunden können.
 
 Normalerweise werden Sie auf dem unten gezeigten Intune-Dashboard arbeiten. Dies ist der Ort, an dem Sie Ihre Gruppen, Richtlinien, Geräte und Apps einrichten und verwalten.
 
-Sie können vom Dashboard zur klassischen Intune-Verwaltungskonsole wechseln, indem Sie oben auf Ihrem Dashboard **Klassisches Portal** auswählen.
+Sie können vom Dashboard zur Intune-Verwaltungskonsole wechseln, indem Sie oben auf Ihrem Dashboard **Klassisches Portal** auswählen.
 
 Um zum Intune-Azure-Portal zurückzukehren, geben Sie „https://portal.azure.com“ in die Adressleiste Ihres Browsers ein, und wählen Sie aus der Liste der Dienste erneut **Intune** aus.
 
@@ -68,7 +68,7 @@ Um von Intune zurück zum Office 365 Admin Center zu wechseln, geben Sie „http
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-### <a name="intune-on-azure"></a>Intune in Azure
+### <a name="intune-in-the-azure-portal"></a>Intune im Azure-Portal
 Weitere Informationen zu [Intune im Azure-Portal](what-is-intune.md)
 
 ### <a name="integration-with-other-products"></a>Integration mit anderen Produkten

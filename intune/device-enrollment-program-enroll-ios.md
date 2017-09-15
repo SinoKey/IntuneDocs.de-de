@@ -1,6 +1,6 @@
 ---
 title: "Registrieren von iOS-Geräten – Programm zur Geräteregistrierung"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "In diesem Artikel erfahren Sie, wie Sie unternehmenseigene iOS-Geräte mithilfe des Programms zur Geräteregistrierung (Device Enrollment Program, DEP) registrieren."
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d88d191e3212e1999376fb2577a85c3dc957a787
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: c14903d227164089f52c9bd3288a99f29a9141b8
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple
 
@@ -55,7 +55,7 @@ Bevor Sie iOS-Geräte mit DEP registrieren können, benötigen Sie ein DEP-Token
 Verwenden Sie das Apple DEP-Portal, um ein DEP-Token zu erstellen. Sie verwenden das DEP-Portal auch, um in Intune Geräte für die Verwaltung zuzuweisen.
 
 > [!NOTE]
-> Wenn Sie das Token aus der klassischen Intune-Konsole vor der Migration zu Azure löschen, stellt Intune womöglich ein gelöschtes Apple DEP-Token wieder her. Sie können das DEP-Token erneut aus dem Azure-Portal löschen. Sie können das DEP-Token erneut aus dem Azure-Portal löschen.
+> Wenn Sie das Token vor der Migration zu Azure aus dem klassischen Intune-Portal löschen, stellt Intune womöglich ein gelöschtes Apple DEP-Token wieder her. Sie können das DEP-Token erneut aus dem Azure-Portal löschen. Sie können das DEP-Token erneut aus dem Azure-Portal löschen.
 
 **Schritt 1: Laden Sie ein Intune-Zertifikat mit öffentlichem Schlüssel herunter, das zum Erstellen eines Apple-DEP-Tokens erforderlich ist.**<br>
 
@@ -104,7 +104,7 @@ Wechseln Sie zur Zertifikatsdatei (.pem), wählen Sie **Öffnen** aus, und wähl
 Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil für DEP-Geräte erstellen. Ein Geräteregistrierungsprofil definiert die Einstellungen, die während der Registrierung auf eine Gruppe von Geräten angewendet werden.
 
 1. Wählen Sie in Intune im Azure-Portal die Optionen **Geräteregistrierung** > **Apple Registrierung** aus.
-2. Wählen Sie unter **Registrierungsprogramm für Apple**  den Eintrag **Profile des Registrierungsprogramms** > **Erstellen** aus.
+2. Wählen Sie unter **Registrierungsprogramm für Apple ** den Eintrag **Profile des Registrierungsprogramms** > **Erstellen** aus.
 3. Geben Sie unter **Registrierungsprofil erstellen** einen **Namen** und eine **Beschreibung** für das Profil zu administrativen Zwecken ein. Benutzer können diese Informationen nicht sehen. Sie können das Feld **Name** zum Erstellen einer dynamischen Gruppe in Azure Active Directory verwenden. Verwenden Sie den Profilnamen, um den Parameter „enrollmentProfileName“ zu definieren, um Geräte mit diesem Registrierungsprofil zuzuweisen. Erfahren Sie mehr über [dynamische Gruppen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
   Wählen Sie für **Benutzeraffinität** aus, ob Geräte mit diesem Profil mit oder ohne einen zugewiesenen Benutzer registriert werden.

@@ -1,6 +1,6 @@
 ---
 title: Festlegen von Nutzungsbedingungen in Microsoft Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Legen Sie Geschäftsbedingungen fest, die Benutzern im Unternehmensportal für Intune angezeigt werden. "
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0262b8068ddf134de5ffec0965476fb513ceb9ab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47b153223e10ec358c61a212bdacd109ee90bbcd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="ensure-users-accept-company-terms-for-access"></a>Sicherstellen, dass Benutzer Geschäftsbedingungen für den Zugriff akzeptieren
 
@@ -32,14 +32,14 @@ Sie können mehrere Sätze von Bedingungen erstellen und diese verschiedenen Gru
 ## <a name="create-terms-and-conditions"></a>Erstellen von Geschäftsbedingungen
 Führen Sie die folgenden Schritte aus, um Geschäftsbedingungen zu erstellen. Der Anzeigename und die Beschreibung sind für administrative Zwecke vorgesehen, während die Eigenschaften der Bedingungen den Benutzern im Unternehmensportal angezeigt werden.
 
-1. Wählen Sie im Intune-Portal die Option **Geräteregistrierung** und dann **Geschäftsbedingungen** aus.
+1. Wählen Sie im Azure-Portal die Option **Geräteregistrierung** und dann **Geschäftsbedingungen** aus.
 2. Wählen Sie **Erstellen** aus.
-![Screenshot: Intune-Portal mit Schaltfläche zum Erstellen von Geschäftsbedingungen](media/terms-create-terms.png)
+![Screenshot: Azure-Portal mit Schaltfläche zum Erstellen von Geschäftsbedingungen](media/terms-create-terms.png)
 3. Geben Sie auf dem erweiterten Blatt die folgenden Informationen an:
 
-   - **Anzeigename**: Die Bezeichnung für die Bedingungen im Intune-Portal. Diese Bezeichnung wird den Benutzern nicht angezeigt.
+   - **Anzeigename**: Die Bezeichnung für die Bedingungen im Azure-Portal. Diese Bezeichnung wird den Benutzern nicht angezeigt.
 
-   - **Beschreibung**: Optionale Details, die Ihnen dabei helfen, diese Bedingungen im Intune-Portal zu identifizieren.
+   - **Beschreibung**: Optionale Details, die Ihnen dabei helfen, diese Bedingungen im Azure-Portal zu identifizieren.
 
 4. Wählen Sie den Pfeil neben „Nutzungsbedingungen definieren“ aus, um das Blatt „Nutzungsbedingungen“ zu öffnen, und geben Sie dann die folgende Informationen ein:
 
@@ -64,9 +64,9 @@ Das folgende Beispiel zeigt die Geschäftsbedingungen in der Verwaltungskonsole 
 
 Sie können Geschäftsbedingungen zu Benutzergruppen zuweisen, die diese vor der Verwendung des Unternehmensportals annehmen müssen.
 
-1. Wählen Sie im Intune-Portal die Option **Geräteregistrierung** und dann **Geschäftsbedingungen** aus.
+1. Wählen Sie im Azure-Portal die Option **Geräteregistrierung** und dann **Geschäftsbedingungen** aus.
 2. Wählen Sie in der Liste der Geschäftsbedingungen die Bedingungen aus, die Sie zuweisen möchten, und wählen Sie dann **Zugewiesene Gruppen** aus.
-![Screenshot des Blatts „Gruppe zuweisen“ des Intune-Portals, das die Schaltfläche „Gruppe auswählen“ und die Schaltfläche „Auswählen“ für die Zuweisung der Geschäftsbedingungen anzeigt](media/terms-assign-groups.png)
+![Screenshot des Blatts „Gruppe zuweisen“ des Azure-Portals, das die Schaltfläche „Gruppe auswählen“ und die Schaltfläche „Auswählen“ für die Zuweisung der Geschäftsbedingungen anzeigt](media/terms-assign-groups.png)
 3. Klicken Sie auf die Schaltfläche **Gruppe auswählen**, und wählen Sie auf dem Blatt **Gruppen auswählen** die Gruppen aus, denen Sie die Bedingungen zuweisen möchten. Klicken Sie anschließend auf **Auswählen**. Dynamischen Gruppen können keine Geschäftsbedingungen zugewiesen werden.
 4. Klicken Sie auf dem Blatt **Zugewiesene Gruppen** auf **Speichern**.  Die Geschäftsbedingungen werden jetzt den Benutzern in den ausgewählten Gruppen zugewiesen. Benutzer werden beim nächsten Zugriff auf das Unternehmensportal zur Annahme der Geschäftsbedingungen aufgefordert. Die Geschäftsbedingungen müssen nur einmal angenommen werden. Benutzer mit mehreren Geräten müssen sie nicht auf jedem Gerät annehmen.
 
