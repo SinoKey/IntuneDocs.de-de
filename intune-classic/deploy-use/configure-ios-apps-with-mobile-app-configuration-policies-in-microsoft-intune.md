@@ -2,8 +2,8 @@
 title: Verwenden von Richtlinien zur Konfiguration von mobilen iOS-Apps
 description: "Verwenden Sie Konfigurationsrichtlinien für mobile Apps in Intune, um Einstellungen anzugeben, die beim Ausführen einer iOS-App durch Benutzer erforderlich sind."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2f13baeec9e0a38ac27ae42d1bc766cf22d73634
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7dd73ecbba6c10cbbec92bdf4e856bf15434aea9
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune
 
@@ -109,7 +109,7 @@ Fahren Sie mit dem Bereitstellen und Überwachen der App-Bereitstellung wie gewo
 Wenn die bereitgestellte App auf einem Gerät gestartet wird, wird sie mit den Einstellungen ausgeführt, die Sie in der Konfigurationsrichtlinie für mobile Apps konfiguriert haben.
 
 > [!TIP]
-> Wenn mindestens eine Konfigurationsrichtlinie für mobile Apps einen Konflikt verursacht, wird keine Richtlinie durchgesetzt. Der Konflikt wird im **Dashboard**  der Intune-Verwaltungskonsole gemeldet.
+> Wenn mindestens eine Konfigurationsrichtlinie für mobile Apps einen Konflikt verursacht, wird keine Richtlinie durchgesetzt. Der Konflikt wird im **Dashboard ** der Intune-Verwaltungskonsole gemeldet.
 
 ## <a name="example-format-for-a-mobile-app-configuration-xml-file"></a>Beispielformat für die XML-Datei für die Konfiguration mobiler Apps
 
