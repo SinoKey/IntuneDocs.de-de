@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.openlocfilehash: 6e3a5e39cf3ee38820b1ff79eb54c019dbb68d29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: f1a5c8a15007a38942fe543e6c1062bf957a481c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Grundlegendes zum Verständnis von Meldungen in der Unternehmensportal-App
 
@@ -95,6 +95,17 @@ Wenn Benutzer den Zugriff verweigern und sich dann das nächste Mal bei der Unte
 ### <a name="how-to-explain-this-to-your-users"></a>So erklären Sie dies Ihren Benutzern
 Verweisen Sie Ihre Benutzer an [Senden von Protokollen an Ihren IT-Administrator per E-Mail](/intune-user-help/send-logs-to-your-it-admin-by-email-android). Sie können sie auch an [Protokolle an Ihren IT-Administrator über ein Kabel senden](/intune-user-help/send-logs-to-your-it-admin-by-cable-android) verweisen, wenn Sie möchten, dass sie die beiden Methoden vergleichen.
 
+## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>Der Support Ihres Unternehmens muss Ihnen Zugriff auf Unternehmensressourcen gewähren.
+
+### <a name="where-it-appears"></a>Position in der Oberfläche
+Wenn Sie die Unternehmensportal-App nicht zur Liste **Zulässige Apps** oder **Ausgenommene Apps** hinzugefügt haben, und ein Benutzer versucht, sich anzumelden, schlägt die Anmeldung fehl. Die folgende Meldung wird angezeigt:
+
+> **Der Support Ihres Unternehmens muss Ihnen Zugriff auf Unternehmensressourcen gewähren**  
+> Ihr Unternehmen verwendet Windows Information Protection-Richtlinien, um Ihr Gerät zu schützen. Der Support Ihres Unternehmens muss sicherstellen, dass die Unternehmensportal-App auf diese zugreifen kann.
+
+### <a name="what-it-means"></a>Bedeutung
+
+Fügen Sie dem Unternehmensportal die Liste der **zulässigen Apps** und **ausgenommenen Apps** hinzu, die in der Windows Information Protection-App-Schutzrichtlinie aufgeführt sind. Weitere Informationen finden Sie unter [Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
 
 ### <a name="see-also"></a>Weitere Informationen:
 [Informieren der Endbenutzer über den Einsatz von Intune](end-user-educate.md)

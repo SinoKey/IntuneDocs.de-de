@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e12f8d31abc4e067a6339e93cc21680921ce88e4
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Registrieren Ihres Android-Geräts bei Intune
 
@@ -54,14 +54,14 @@ Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftre
 
 6.  Tippen Sie auf dem Bildschirm **Unternehmenszugriff einrichten** auf **BEGINNEN**.
 
-    ![Bildschirm „Unternehmenszugriff einrichten“](./media/and-enroll-4a-comp-access-setup.png)
+    ![Bildschirm „Unternehmenszugriff einrichten“](/intune/media/android_cp_enroll_02_post_1709.png)
 
     > [!NOTE]
     > Die gelben Dreiecke bedeuten nicht, dass bereits ein Fehler vorliegt. Sie geben lediglich an, dass für den Registrierungsprozess noch Schritte ausgeführt werden müssen.
 
-7. Lesen Sie auf dem Bildschirm **Gründe für das Registrieren Ihres Geräts**, welche Möglichkeiten Sie haben, wenn Sie Ihr Gerät registrieren, und tippen Sie dann auf **WEITER**.
+7. Erfahren Sie auf dem Bildschirm **Benefits of device management** (Vorteile der Geräteverwaltung) mehr darüber, was Sie tun können, wenn Sie Ihr Gerät registrieren. Tippen Sie anschließend auf **WEITER**.
 
-    ![Gründe für das Registrieren Ihres Geräts](./media/and-enroll-4b-why-enroll.png)
+    ![Bildschirm „Vorteile der Geräteverwaltung“](/intune/media/android_cp_enroll_02_post_1709.png)
 
 8.  Prüfen Sie in einer Liste, was Ihr IT-Administrator auf Ihrem Gerät einsehen kann und was nicht, und tippen Sie dann auf **WEITER**.
 
@@ -114,13 +114,13 @@ Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftre
 
 14. Wenn der Bildschirm **Einrichten des Unternehmenszugriffs** angezeigt wird, tippen Sie auf **WEITER**. Wenn eine Meldung anzeigt, dass Ihr Gerät nicht kompatibel ist, befolgen Sie die Anweisungen zum Beheben des Problems, und tippen Sie dann auf **WEITER**.
 
-    ![Das Gerät ist nicht kompatibel, aber registriert.](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![Das Gerät ist nicht kompatibel, aber registriert.](/intune/media/android_cp_enroll_05_post_1709.png)
 
-    ![Es liegen Probleme mit der Gerätekompatibilität vor, die behoben werden müssen.](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![Es liegen Probleme mit der Gerätekompatibilität vor, die behoben werden müssen.](/intune/media/android_cp_enroll_03_post_1709.png)
 
     Tippen Sie ggf. auf die einzelnen Probleme, um weitere Informationen zu erhalten.
 
-    ![Erweiterte Ansicht von Gerätekompatibilitätsproblemen](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![Erweiterte Ansicht von Gerätekompatibilitätsproblemen](/intune/media/android_cp_enroll_04_post_1709.png)
 
     ![Bildschirm „Unternehmenszugriff einrichten“](./media/and-enroll-9d-comp-access-setup.png)  
 
