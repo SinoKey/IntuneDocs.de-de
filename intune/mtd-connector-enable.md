@@ -15,18 +15,18 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ed7ac5467fe3a37a133aac61a9ccffe2e6119e6
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d818581ca74e64bf27c968b39969afd889b6fbda
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="enable-mobile-threat-defense-in-intune"></a>Aktivieren von Mobile Threat Defense in Intune
 
 > [!NOTE] 
 > Dieses Thema gilt für alle Mobile Threat Defense-Partner.
 
-Um die Verbindung mit Mobile Threat Defense (MTD) in Intune zu aktivieren, muss der Intune-Connector in der MTD-Lösungskonsole bereits konfiguriert sein.
+Um die Verbindung mit Mobile Threat Defense (MTD) in Intune zu aktivieren, muss der Intune-Connector in der MTD-Partnerkonsole bereits konfiguriert sein.
 
 ## <a name="to-enable-the-mtd-connector"></a>So aktivieren Sie den MTD-Connector
 
@@ -65,7 +65,3 @@ Sie können entscheiden, welche MTD-Umschaltoptionen Sie entsprechend den Anford
 
 > [!TIP]
 > Der **Verbindungsstatus** und der Zeitpunkt **der letzten Synchronisierung** zwischen Intune und dem MTD-Partner werden auf dem Blatt „Mobile Threat Defense“ angezeigt.
-
-## <a name="next-steps"></a>Nächste Schritte
-
-[Erstellen einer Mobile Threat Defense-Gerätekompatibilitätsrichtlinie mit Intune](mtd-device-compliance-policy-create.md)

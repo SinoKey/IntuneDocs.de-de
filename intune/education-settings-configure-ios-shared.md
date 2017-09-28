@@ -15,17 +15,18 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9149b4d9d263a5d68fdd73e0a3754a24a74ad973
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 9b24ee84d339b728addd753cb309b4d8572e5582
+ms.sourcegitcommit: e5501cdf08d3e79bc51dc726697606be02110e57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 09/21/2017
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Konfigurieren von Intune-Einstellungen für Bildungseinrichtungen für freigegebene iPad-Geräte
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Einführung: Intune unterstützt die iOS-Classroom-App, mit der Lehrkräfte Schüler/Studenten durch den Unterricht führen und deren Geräte im Kursraum steuern können. Neben der Classroom-App unterstützt Apple, dass ein iPad-Gerät so konfiguriert werden kann, dass mehrere Schüler/Studenten es benutzen können. In diesem Artikel erfahren Sie, wie Sie dies mit Intune erreichen können.
+Intune unterstützt die iOS-App „Classroom“, mit der Lehrkräfte Schüler/Studenten durch den Unterricht führen und deren Geräte im Kursraum steuern können. Neben der Classroom-App unterstützt Apple, dass ein iPad-Gerät so konfiguriert werden kann, dass mehrere Schüler/Studenten es benutzen können. In diesem Artikel erfahren Sie, wie Sie dies mit Intune erreichen können.
+
 Informationen zum Konfigurieren dedizierter (1:1) iPad-Geräte zur Verwendung der Classroom-App finden Sie unter [Vorgehensweise: Konfigurieren von Intune-Einstellungen für die iOS-App „Classroom“](education-settings-configure-ios.md).
 
 ## <a name="before-you-start"></a>Vorbereitung

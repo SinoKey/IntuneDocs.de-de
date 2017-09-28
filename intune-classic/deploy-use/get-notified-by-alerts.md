@@ -14,11 +14,11 @@ ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 9a84cc5b294a1a330aab978de5ef0fd8cfa4c259
-ms.sourcegitcommit: 30b51c625311398b371c0326d41216f55315f627
+ms.openlocfilehash: 534af980ff66eaa54273aaabf14609b1e221c322
+ms.sourcegitcommit: 63d862f142e2f40a1eedb7d4cbdff4fbf6dd7296
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/22/2017
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Verwenden von Warnungen, um Benachrichtigungen durch Microsoft Intune zu erhalten
 
@@ -61,6 +61,8 @@ Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsof
 
 ## <a name="working-with-alerts"></a>Arbeiten mit Warnungen
 
+Um in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) Warnungen anzuzeigen, wählen Sie **Warnungen** und anschließend die Art der anzuzeigenden Warnung aus.
+
 Die folgenden Optionen erleichtern die Arbeit mit Warnungen in der die Intune-Verwaltungskonsole.
 
 |Option|Beschreibung|
@@ -70,11 +72,12 @@ Die folgenden Optionen erleichtern die Arbeit mit Warnungen in der die Intune-Ve
 |**Schließen einer Warnung**|Wählen Sie in der Liste der Warnungen die Warnung aus, die Sie schließen möchten, und wählen Sie anschließend **Warnung schließen** aus.<br /><br />Geschlossene Warnungen werden nach 90 Tagen dauerhaft gelöscht.|
 |**Erneutes Aktivieren einer geschlossenen Warnung**|Legen Sie in der Liste der Warnungen die Dropdownliste **Filter** auf **Geschlossen** fest.<br /><br />Wählen Sie in der Liste geschlossener Warnungen die Warnung aus, die Sie erneut aktivieren möchten, und wählen Sie anschließend **Warnung erneut aktivieren** aus.|
 
-Intune-Warnungen bleiben aktiv, bis:
+Intune-Warnungen bleiben 30 Tage lang aktiv, oder bis Folgendes eintritt:
 
-- Das Problem, das die Warnung verursacht hat, behoben wurde.
-- Sie die Warnung manuell schließen.
-- 45 Tage seit dem Generieren der Warnung vergangen sind.
+- Das Problem, das die Warnung verursacht hat, wurde behoben.
+- Die Warnung wird manuell geschlossen.
+
+Geschlossene Warnungen können bis 30 Tage nach der Schließung erneut aktiviert werden. Nach 30 Tagen werden geschlossene und inaktive Warnungen aus Intune entfernt.
 
 > [!TIP]
 > Wenn dieselbe Warnung von Geräten mit verschiedenen Betriebssystemen generiert wird, werden möglicherweise mehrere Versionen der gleichen Warnung in der Warnungsliste angezeigt.
