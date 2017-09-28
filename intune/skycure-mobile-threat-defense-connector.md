@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9afb22b5fdfa20824f2a470936b213e3d5b76056
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 47df2c4a909c397ac5a6c0f736d11344de44736e
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense-Connector
 
@@ -115,10 +115,10 @@ Weitere Informationen erhalten Sie auf der [Skycure-Website](https://www.skycure
 
 Dies sind die Schritte, die Sie für die Integration von Intune und Skycure durchführen müssen:
 
-1.  [Hinzufügen und Zuweisen von Skycure-Apps, der Microsoft Authenticator-App und der iOS-Konfigurationsrichtlinie](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Einrichten der Skycure-Integration in Intune](skycure-mtd-connector-integration.md)
 
-2.  [Einrichten der Skycure-Integration in Intune](skycure-mtd-connector-integration.md)
+- [Hinzufügen und Zuweisen von Skycure-Apps, der Microsoft Authenticator-App und der iOS-Konfigurationsrichtlinie](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-3.  [Aktivieren des Skycure MTP-Connectors in Intune](mtd-connector-enable.md)
+- [Erstellen einer Skycure-Gerätekompatibilitätsrichtlinie mit Intune](mtd-device-compliance-policy-create.md)
 
-4.  [Erstellen einer Skycure-Gerätekompatibilitätsrichtlinie mit Intune](mtd-device-compliance-policy-create.md)
+- [Aktivieren des Skycure MTP-Connectors in Intune](mtd-connector-enable.md)

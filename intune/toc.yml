@@ -81,12 +81,16 @@
           href: planning-guide-resources.md
     - name: Implementierungshandbücher für Szenarios
       items:
-        - name: BYOD
-          href: byod-enable.md
         - name: Schützen von Exchange Online
           href: exchange-online-protect.md
         - name: Reduzieren von Helpdesk-Kosten
           href: password-reset.md
+        - name: Verhindern von nicht autorisiertem Zugriff
+          href: data-outside-protect.md
+        - name: Verhindern von Datenverlusten auf nicht verwalteten Geräten
+          href: data-leak-prevention.md
+        - name: BYOD
+          href: byod-enable.md
     - name: Migrationshandbuch
       href: migration-guide.md
       items:
@@ -434,12 +438,19 @@
               items:
                 - name: Check Point- und Intune-Integration
                   href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-            - name: Hinzufügen von MTD-Apps
-              href: mtd-apps-ios-app-configuration-policy-add-assign.md
-            - name: Aktivieren von MTD in Intune
-              href: mtd-connector-enable.md
-            - name: Erstellen einer MTD-Gerätekonformitätsrichtlinie
-              href: mtd-device-compliance-policy-create.md
+            - name: Einrichten von Zimperium
+              href: zimperium-mobile-threat-defense-connector.md
+              items:
+                - name: Zimperium- und Intune-Integration
+                  href: zimperium-mtd-connector-integration.md
+            - name: Einrichten von Intune für MDM
+              items:
+                - name: Hinzufügen von MTD-Apps
+                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
+                - name: Erstellen einer MTD-Gerätekonformitätsrichtlinie
+                  href: mtd-device-compliance-policy-create.md
+                - name: Aktivieren von MTD in Intune
+                  href: mtd-connector-enable.md
         - name: Netzwerkzugriffssteuerung
           href: network-access-control-integrate.md
         - name: Einrichten von Windows Hello

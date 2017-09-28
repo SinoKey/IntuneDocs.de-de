@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2cffc21ba78cbd54edfb75eaa892df1539ad62b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 2e9b1a3dc42a9c18d61fc9b55d5a7b71f00c3e29
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Erstellen einer Mobile Threat Defense-Gerätekompatibilitätsrichtlinie (MTD) mit Intune
 
@@ -35,8 +35,6 @@ Beim Einrichten von MTD haben Sie in der MTD-Partnerkonsole eine Richtlinie erst
 Voraussetzungen für die Gerätekompatibilitätsrichtlinie mit MTD:
 
 -   Einrichten der MTD-Integration in Intune
-
--   Aktivieren des MTP-Connectors in Intune
 
 ## <a name="to-create-a-mtd-device-compliance-policy"></a>So erstellen Sie eine MTD-Gerätekompatibilitätsrichtlinie
 
@@ -77,3 +75,7 @@ Wählen Sie zum Zuweisen einer Gerätekompatibilitätsrichtlinie zu Benutzern ei
 
     > [!NOTE] 
     > Sie haben die Richtlinie auf Benutzer angewendet. Die von den Benutzern, denen die Richtlinie zugewiesen wurde, verwendeten Geräte werden auf Konformität überprüft.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+- [Aktivieren von Mobile Threat Defense in Intune](mtd-connector-enable.md)
