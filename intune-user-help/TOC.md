@@ -27,7 +27,7 @@
 ### [Behandeln häufig auftretender Probleme mit Android](troubleshoot-your-device-android.md)
 #### [Überprüfen der Gerätekompatibilität](check-compliance-on-your-device-android.md)
 
-#### [Beheben von Problemen mithilfe von Protokollen]
+#### Beheben von Problemen mithilfe von Protokollen
 ##### [Aktivieren der ausführlichen Protokollierung](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Senden von Protokollen per E-Mail](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Senden von Protokollen mithilfe eines USB-Kabels](send-logs-to-your-it-admin-using-cable-android.md)
