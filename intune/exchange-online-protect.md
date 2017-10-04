@@ -21,7 +21,7 @@ ms.lasthandoff: 08/27/2017
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>Schützen von Office 365 Exchange Online ohne erforderliche Geräteverwaltung
 
-Wenn Sie Mitarbeitern Zugriff auf ihre geschäftlichen E-Mails geben möchten, ohne den Aufwand, ein Geräteverwaltungssystem einzurichten, können Sie das tun. Sie können über Intune Zugriff auf Office 365 Exchange Online gewähren. Um die notwendigen Schritte durchzuführen, bestätigen Sie, dass Sie über Lizenzen für Microsoft 365 oder Azure Active Directory (Premium) und Intune verfügen. Mitarbeiter müssen über ein [unterstütztes iOS- oder Android-Gerät](supported-devices-browsers.md) verfügen. 
+Sie möchten Mitarbeitern Zugriff auf ihre geschäftlichen E-Mails geben, ohne mit viel Aufwand ein Geräteverwaltungssystem einzurichten? Kein Problem. Sie können über Intune Zugriff auf Office 365 Exchange Online gewähren. Um die notwendigen Schritte durchzuführen, vergewissern Sie sich, dass Sie über Lizenzen für Microsoft 365 oder Azure Active Directory (Premium) und Intune verfügen. Mitarbeiter müssen über ein [unterstütztes iOS- oder Android-Gerät](supported-devices-browsers.md) verfügen. 
 
 Wenn Sie sich dafür entscheiden, ein Geräteverwaltungssystem einzurichten, können Sie das tun. Diese Art von App-Schutz funktioniert unabhängig von der Geräteverwaltung. 
 

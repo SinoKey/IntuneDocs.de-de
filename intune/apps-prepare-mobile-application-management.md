@@ -24,7 +24,7 @@ ms.lasthandoff: 08/25/2017
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Sie können Ihre Apps mit dem Intune App Wrapping Tool oder dem Intune App SDK für die Verwendung von App-Schutzrichtlinien aktivieren. Verwenden Sie diese Informationen, um diese beiden Methoden und den Zeitpunkt für ihre Verwendung kennenzulernen.
+Sie können die Verwendung von App-Schutzrichtlinien bei Ihren Apps mit dem Intune App Wrapping Tool oder dem Intune App SDK aktivieren. Verwenden Sie diese Informationen, um diese beiden Methoden und den Zeitpunkt für ihre Verwendung kennenzulernen.
 
 ## <a name="intune-app-wrapping-tool"></a>Intune App Wrapping Tool
 Das App Wrapping Tool wird in erster Linie für interne Line-of-Business-Apps (LOB) verwendet. Das Tool ist eine Befehlszeilenanwendung, die einen Wrapper für die App erstellt, der es der App anschließend ermöglicht, von einer Intune-App-Schutzrichtlinie verwaltet zu werden.
@@ -42,7 +42,7 @@ Weitere Informationen zum App Wrapping Tool für App-Schutzrichtlinien auf Gerä
 * Ihre App wird intern bereitgestellt.
 * Sie haben keinen Zugriff auf den Quellcode der App.
 * Sie haben die App nicht entwickelt.
-* Ihre App verfügt über eine minimale Benutzeroberfläche für die Authentifizierung.
+* Die Benutzerauthentifizierung ist bei Ihrer App auf ein Minimum beschränkt.
 
 
 ### <a name="supported-app-development-platforms"></a>Unterstützte App-Entwicklungsplattformen
@@ -62,7 +62,7 @@ Weitere Informationen zum SDK finden Sie unter [Übersicht](app-sdk.md). Ein Ein
 * Ihre App ist komplex und enthält viele Oberflächen.
 * Ihre App wird in einem öffentlichen App Store wie Google Play oder Apple App Store bereitgestellt.
 * Sie sind ein App-Entwickler mit dem entsprechenden technischen Hintergrund zur Verwendung des SDKs.
-* Ihre App verfügt über andere SDK Integrationen.
+* Ihre App verfügt über andere SDK-Integrationen.
 * Ihre App wird regelmäßig aktualisiert.
 
 ### <a name="supported-app-development-platforms"></a>Unterstützte App-Entwicklungsplattformen

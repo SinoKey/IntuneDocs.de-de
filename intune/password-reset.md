@@ -1,6 +1,6 @@
 ---
-title: Reduzieren von Helpdesk-Kosten
-description: "Reduzieren von Helpdesk-Kosten mit Self-Service-Kennwortzurücksetzung"
+title: Reduzieren von Helpdeskkosten
+description: "Reduzieren von Helpdeskkosten mit Self-Service-Kennwortzurücksetzung"
 keywords: "Azure Active Directory-SSPR-Kennwortzurücksetzung"
 author: arob98
 manager: angrobe
@@ -18,10 +18,10 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/28/2017
 ---
-# <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Reduzieren von Helpdesk-Kosten mit Self-Service-Kennwortzurücksetzung
+# <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Reduzieren von Helpdeskkosten mit Self-Service-Kennwortzurücksetzung
 
 Sie können Mitarbeitern erlauben, Kennwörter von Geschäfts-, Schul- oder Unikonten ohne Helpdesk-Unterstützung zurückzusetzen. Diese Art der Self-Service-Kennwortzurücksetzung wird in den folgenden Situationen empfohlen:
-* Ihr Unternehmen und Ihre Schule verwendet Azure Active Directory für Geschäfts-, Schul- oder Unikonten.
+* Ihr Unternehmen, Ihre Schule oder Ihre Universität verwendet Azure Active Directory für Geschäfts-, Schul- oder Unikonten.
 * Ihre Mitarbeiter, Schüler und Studenten verfügen über Internetzugriff.
 * Sie möchten die Helpdesk-Kosten reduzieren.
 

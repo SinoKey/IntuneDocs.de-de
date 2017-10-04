@@ -61,7 +61,7 @@ Dieses Thema enthält Anweisungen zum Einrichten App-basierter Richtlinien für 
 
 ## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Erstellen von App-basierten Richtlinien für den bedingten Zugriff in der Azure AD-Workload
 
-Ab dem Intune 1708-Release können IT-Administratoren App-basierte Richtlinien für den bedingten Zugriff über die Azure AD-Workload erstellen. Dies bietet Ihnen den Komfort, nicht zwischen den Azure- und Intune-Workloads hin und her wechseln zu müssen.
+Ab Intune-Release 1708 können IT-Administratoren App-basierte Richtlinien für den bedingten Zugriff über die Azure AD-Workload erstellen. Dies bietet Ihnen den Komfort, nicht zwischen den Azure- und Intune-Workloads hin und her wechseln zu müssen.
 
 > [!IMPORTANT]
 > Sie benötigen eine Azure AD Premium-Lizenz, um im Azure-Portal für Intune Azure AD-Richtlinien für den bedingten Zugriff zu erstellen.
