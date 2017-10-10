@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b3a9ea6fb7134f2be6b05f883e5dab2d1aef1d59
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8023e3a75dbf9a3275654b7ed8f917546d401168
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Umbenennen Ihres Geräts über die Unternehmensportalwebsite
 
-Vielleicht entscheiden Sie sich dafür, Ihr Gerät umzubenennen, damit es einfacher identifiziert werden kann. Dies können Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) tun. Die Unternehmensportal-Website ist eine Website, die Sie verwenden können, um Computer und Geräte zu verwalten, die Sie mit Ihrer IT-Abteilung registriert haben.
+Vielleicht entscheiden Sie sich dafür, Ihr Gerät umzubenennen, damit es einfacher identifiziert werden kann. Dies können Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com) tun. Die Unternehmensportal-Website ist eine Website, die Sie verwenden können, um Computer und Geräte zu verwalten, die Sie mit Ihrer IT-Abteilung registriert haben.
 
 So benennen Sie Ihr Gerät um:
 
-1.  Tippen Sie auf der [Unternehmensportalwebsite](http://portal.manage.microsoft.com) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
+1.  Tippen Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
 
 2. Wählen Sie auf der Seite __Meine Geräte__ den Namen des Geräts aus, das Sie umbenennen möchten.
 
@@ -40,4 +40,4 @@ So benennen Sie Ihr Gerät um:
 
 4.  Geben Sie in dem Feld, das den Gerätenamen enthält, einen neuen Namen für Ihr Gerät ein, und tippen Sie auf die Schaltfläche **Umbenennen**. Das Gerät wird jetzt mit dem neuen Namen angezeigt.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
