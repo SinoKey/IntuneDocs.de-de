@@ -9,7 +9,7 @@ metadata:
   author: arob98
   ms.author: angrobe
   manager: angrobe
-  ms.date: 08/06/2017
+  ms.date: 10/07/2017
   ms.topic: article
   ms.devlang: na
   ms.service: microsoft-intune
@@ -68,12 +68,12 @@ sections:
             title: Erstellen von Berichten mit Intune Data Warehouse (Vorschau)
             image:
               src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/08/07/using-the-new-role-based-access-controls-in-intune/'
-            title: '[Blog] Informationen zu neuen rollenbasierten Zugriffssteuerungen'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/08/22/pfx-certificates-issued-using-the-intune-certificate-connector-fix-your-intune-migration-configuration-issues/'
+            title: '[Blog] PFX certificates issued using the Intune Certificate Connector (Blogbeitrag: Mithilfe des Intune-Zertifikatconnectors veröffentlichte PFX-Zertifikate)'
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/06/28/demystifying-service-health-for-microsoft-intune/'
-            title: '[Blog] Grundlegendes zum Intune-Dienststatus'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/'
+            title: '[Blog] Setting up communication between MAM-managed and MDM-managed apps (Blogbeitrag: Einrichten der Kommunikation zwischen MAM-verwalteten und MDM-verwalteten Apps)'
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
   - title: Videos
@@ -128,6 +128,7 @@ sections:
       - type: list
         style: unordered
         items:
+          - html: '<a href="https://fasttrack.microsoft.com/ems">Mehr als 150 Lizenzen? Nutzen Sie Ihre FastTrack-Vorteile</a>'
           - html: '<a href="https://blogs.technet.microsoft.com/enterprisemobility/">Lesen Sie die Informationen im Blog von Enterprise Mobility and Security.</a>'
           - html: '<a href="https://blogs.technet.microsoft.com/intunesupport/"> Fordern Sie Hilfe im Blog des Intune-Supports an.</a>'
           - html: '<a href="https://microsoftintune.uservoice.com/forums/291681-ideas">Geben Sie Ihr Feedback zu Intune bei UserVoice ab.</a>'
