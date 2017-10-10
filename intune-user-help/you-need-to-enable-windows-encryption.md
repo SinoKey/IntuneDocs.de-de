@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: be200787cf628e79e95ca40f5f733123aa2e58f9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a91b01f21d6f42f2f216443b146dbf69c3974bd7
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-enable-encryption"></a>Sie müssen die Verschlüsselung aktivieren
 
@@ -28,4 +28,4 @@ Wenn Sie ein Gerät verschlüsseln, umschließen Sie die darauf enthaltenen Info
 
 BitLocker ist eine Software, die Ihr Laufwerk verschlüsselt und hilft, Ihre Daten zu schützen. Befolgen Sie [diese Anweisungen](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d) zum Aktivieren von BitLocker auf Windows 10-Geräten.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

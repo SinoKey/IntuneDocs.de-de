@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8b73f1f5c7b8beecdb336aba463f5494c4b99160
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7d4b80227eb9be98ec32a2fafd0938742038fea6
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="sync-your-ios-device-manually"></a>Manuelles Synchronisieren des iOS-Geräts
 
@@ -38,4 +38,4 @@ Manchmal kann es zu lange dauern, bis Ihre App aus dem Unternehmensportal herunt
 
 Es wird ein Ladebalken auf dem Bildschirm angezeigt, und es wird geladen, bis die Synchronisation abgeschlossen ist.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c111993248e900f663640cf45db4525dc7c7df95
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d61887174830c9892c854d7b067fafe6fc50da59
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-device-is-noncompliant"></a>Ihr Gerät ist nicht richtlinienkonform
 
@@ -28,4 +28,4 @@ Ihr Gerät ist mit mindestens einer der Sicherheitsrichtlinien Ihrer Organisatio
 
 Tippen Sie in der Unternehmensportal-App auf **Kompatibilität überprüfen**. Die Unternehmensportal-App wird Sie anschließend informieren, weshalb Ihr Gerät nicht richtlinienkonform ist.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

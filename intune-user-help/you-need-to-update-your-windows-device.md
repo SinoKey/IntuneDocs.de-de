@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b5bbaf1d475eeb8f6e468d61996131baf9c772b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5c2c27f48eec08724b1ced23d564e3df6ab18303
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-update-your-windows-device"></a>Sie müssen Ihr Windows-Gerät aktualisieren
 
@@ -35,4 +35,4 @@ Suchen Sie für Computer unter Windows nach **Betriebssystem**, und befolgen Sie
 
 Geben Sie für Windows 10 und Windows 8.1 __Windows-Version__ in die __Suchleiste__ ein. Wählen Sie __Windows-Version__ unter __Kann ich Ihnen weiterhelfen?__ aus. Die Versionsnummer wird angezeigt. Diese Nummer lautet in etwa so: __10.0.14393.447__.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

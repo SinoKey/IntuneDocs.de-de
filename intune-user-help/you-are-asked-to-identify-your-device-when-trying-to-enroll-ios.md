@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 847b08efc2424da7ae9483db355f2804ac1e00c1
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d5d59f5b9c0401e84dddbe21a274b0fed91e5dce
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>Identifizierung Ihres Geräts beim Versuch der Registrierung
 
@@ -30,4 +30,4 @@ Wenn Sie versuchen, Ihr iOS- oder macOS-Gerät bei Intune zu registrieren, und S
 2. Tippen Sie auf **Weiter**.
 3. Geben Sie die letzten vier Zeichen der Seriennummer des Geräts ein, damit Intune einfacher prüfen kann, ob Ihr Gerät registriert ist. Informationen zum Bestimmen der Seriennummer finden Sie unter [Wie finde ich die Seriennummer auf meinem Gerät?](how-do-i-find-the-serial-number-on-my-device-ios.md).
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 93a08f4c653fe320284821c1532cdbd84d090b2f
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: ca6d811d884b5405bdb4e5f096366c123d8e00d1
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Wie melde ich mich bei der Unternehmensportal-App an? <!--User Story 1132123-->
 
@@ -79,4 +79,4 @@ Für den Zugriff auf Ihre Unternehmensressourcen können Sie statt einem Kennwor
 
   ![Nach Abschluss des Authentifizierungsprozesses meldet sich die Unternehmensportal-App Sie an und zeigt einen entsprechenden Ladebalken an.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

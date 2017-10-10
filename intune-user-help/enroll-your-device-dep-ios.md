@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e29819ec65325ad69c51fd155047afa19769ccfa
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: c06146c2a8abe15f346be532cf02e1fe6d97cc99
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>Registrieren Ihres iOS-Geräts in Intune mit dem Programm zur Geräteregistrierung
 
@@ -33,4 +33,4 @@ Das Programm zur Geräteregistrierung wird von Apple für Unternehmen und Organi
 5.  Akzeptieren Sie die **Geschäftsbedingungen**, und entscheiden Sie, ob Sie Diagnoseinformationen an Apple senden möchten.
 6.  Sobald Sie Ihre Registrierung abgeschlossen haben, fordert Ihr Gerät Sie möglicherweise dazu auf, weitere Aktionen auszuführen. Diese Aktionen umfassen die Eingabe Ihres Kennworts für den Zugriff auf E-Mails, das Einrichten einer Kennung, das Zustimmen zu Anwendungsinstallationen, die alle auf den Einrichtungen des Intune-Administrators Ihres Unternehmens basieren.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
