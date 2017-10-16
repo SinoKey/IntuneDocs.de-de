@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa36b1449cb1ce5d9e0d3b1ca2f3e0db78729f1d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 87704687947aee7c1169b36009ea1960bec37edd
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Registrieren Ihres Android-Gerät im Telecom Expense Management
 
@@ -30,7 +30,7 @@ Vielleicht verwendet Ihre Organisation Telecom Expense Management-Software, um s
 
 Wählen Sie die entsprechende Option aus, und Sie erhalten eine Benachrichtigung zum Installieren der [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox)-App aus dem Google Play Store. Mit der Datalert-App kann Ihre Organisation die Datenverwendung messen. Wenn Ihre Organisation die Geschäfts- oder Schulregistrierungsoption konfiguriert hat, werden Sie aufgefordert, sich mit Ihrem Geschäfts- oder Schulkonto anzumelden. Wenn diese Option noch nicht aktiviert wurde, müssen Sie Informationen wie Ihre Telefonnummer angeben und Ihr Gerät mithilfe eines Codes überprüfen, um sich von der App aus beim Datalert-Dienst zu registrieren.
 
-Tippen Sie auf den __Weiter__-Pfeil in der oberen rechten Ecke des Bildschirms, um fortzufahren. Ihr IT-Administrator sollte Ihnen mitteilen, ob Sie sich mit Ihrem __Microsoft-Geschäfts- oder -Schulkonto__ anmelden oder Ihre __Telefonnummer__ verwenden sollen.
+Tippen Sie auf den __Weiter__-Pfeil in der oberen rechten Ecke des Bildschirms, um fortzufahren. Der Support Ihres Unternehmens sollte Ihnen mitteilen, ob Sie sich mit Ihrem __Microsoft-Geschäfts-, Schul- oder Unikonto__ anmelden oder Ihre __Telefonnummer__ verwenden sollen.
 
   ![Dies ist ein Screenshot des Begrüßungsbildschirms der Datalert-App, in dem Sie nach einer kurzen Erläuterung dazu, wie Sie mit Datalert Ihren Datenplan optimal nutzen können, aufgefordert werden, zum nächsten Bildschirm zu wechseln.](./media/and-enroll-12-tem-datalert-setup.png)
 
@@ -62,4 +62,4 @@ Tippen Sie auf den __Weiter__-Pfeil in der oberen rechten Ecke des Bildschirms, 
 
 Sobald Sie sich registriert haben, zeigt Ihnen die Datalert-App Ihre Datennutzung an.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

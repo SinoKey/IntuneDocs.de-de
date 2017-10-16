@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/05/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0ac0d1fd2f618339f847201f333d3f32561ca6b1
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: f2e11a7fbe226932206f6946ef0603307e76c69c
+ms.sourcegitcommit: 4184db38d1a9a223e680bcb4c9b732f7069bf510
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/02/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---september-2017"></a>Die Early Edition für Microsoft Intune – September 2017
 
@@ -160,7 +160,7 @@ Das Risiko wird basierend auf Telemetriedaten von Geräten bewertet, auf denen Z
 ### <a name="new-azure-ad-conditional-access-policy-ui-link-from-intune-----1016201---"></a>Neue Benutzeroberflächenverknüpfung für Azure AD-Richtlinien für den bedingten Zugriff in Intune <!-- 1016201 -->
 IT-Administratoren können App-basierte Richtlinien für den bedingten Zugriff über die neue Benutzeroberfläche für Richtlinien für den bedingten Zugriff in der Azure AD-Workload festlegen. Die App-basierten Richtlinien für bedingten Zugriff, die sich im Bereich Intune-App-Schutz in Azure befinden, bleiben dort vorläufig und werden parallel erzwungen. Es wird auch ein praktischer Link zur neuen Benutzeroberfläche der Richtlinie für den bedingten Zugriff in Azure AD von der Intune-Workload vorhanden sein.
 
-### <a name="on-premises-exchange-connector-high-availability-support-----676614---"></a>Hohe Verfügbarkeit der Unterstützung von lokalem Exchange-Connector <!-- 676614 -->   
+### <a name="on-premises-exchange-connector-high-availability-support-----676614---"></a>Hochverfügbarkeit der Unterstützung von lokalem Exchange-Connector <!-- 676614 -->   
 Sie können über mehrere Clientzugriffs-Serverrollen (CAS) für den lokalen Exchange-Connector verfügen. Bei einem Fehler des Haupt-Clientzugriffsservers empfängt der Exchange-Connector z.B. eine Abfrage, um auf andere Clientzugriffsserver zurückzugreifen. Durch diese Funktion wird sichergestellt, dass der Dienst nicht unterbrochen wird.
 
 ### <a name="system-center-operations-manager-management-pack-for-exchange-connector----885457---"></a>System Center Operations Manager Management Pack für Exchange-Connector <!-- 885457 -->   
@@ -184,6 +184,14 @@ Daher wird empfohlen, zum schnellstmöglichen Zeitpunkt ein Upgrade für berecht
 
 
 ## <a name="intune-apps"></a>Intune-Apps
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Verbesserungen der Suchfunktion auf der Unternehmensportal-Website <!--1331697-->
+Die Suchfunktion unserer App soll verbessert werden. Dabei beginnen wir mit der [Unternehmensportal-Website](https://portal.manage.microsoft.com). Suchen werden nun neben den Feldern für Name und Beschreibung über App-Kategorien ausgeführt. Die Ergebnisse werden standardmäßig nach abnehmender Relevanz sortiert. 
+
+Auch iOS-Benutzer profitieren von dieser Änderung, da die Unternehmensportal-Website auch Teil der Unternehmensportal-App unter iOS ist. In den folgenden Monaten wird es ähnliche Updates für Unternehmensportal-Apps für Android und Windows geben. 
+
+Die Funktion zur Nachverfolgung der Relevanz wird weiterhin angepasst. Geben Sie uns daher gerne eine Rückmeldung über den „Feedback“-Link unten auf der Unternehmensportal-Website.
+
 ### <a name="refresh-action-added-to-the-company-portal-app-for-windows-10---1132468--"></a>Hinzufügen der Aktualisierungsaktion zur Unternehmensportal-App für Windows 10 <!--1132468-->
 Durch die Unternehmensportal-App für Windows 10 können Benutzer Daten in der App aktualisieren, indem sie zum Aktualisieren entweder den Bildschirm ziehen oder auf Desktops die F5-Taste drücken.
 

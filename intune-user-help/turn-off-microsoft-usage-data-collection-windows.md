@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cc242a36957ed897198f597ab7864aca21a7820d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fb082ad8830a5d8e9ab0514a981c9bb4b02592b0
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Deaktivieren der Datensammlung durch Microsoft
 
-Microsoft sammelt automatisch bestimmte Daten zu Microsoft-Produkten und -Diensten. Dies dient dazu, die Zuverlässigkeit und Leistungsfähigkeit der Microsoft-Produkte, wie z.B. der Unternehmensportal-App, zu verbessern. Auch wenn diese Daten anonymisiert sind, sind einige Benutzer möglicherweise mit der Sammlung nicht einverstanden. Ihr IT-Administrator hat keine Kontrolle über die Sammlung der Daten und kann Ihre Auswahl für diese Einstellung nicht ändern.
+Microsoft sammelt automatisch bestimmte Daten zu Microsoft-Produkten und -Diensten. Dies dient dazu, die Zuverlässigkeit und Leistungsfähigkeit der Microsoft-Produkte, wie z.B. der Unternehmensportal-App, zu verbessern. Auch wenn diese Daten anonymisiert sind, sind einige Benutzer möglicherweise mit der Sammlung nicht einverstanden. Der Support Ihres Unternehmens hat keine Kontrolle über die Sammlung der Daten und kann Ihre Auswahl für diese Einstellung nicht ändern.
 
 Wenn Sie die Sammlung von Nutzungsdaten auf Ihrem Windows-Gerät deaktivieren möchten, suchen Sie die Einstellung **Nutzungsdaten** in der Unternehmensportal-App.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

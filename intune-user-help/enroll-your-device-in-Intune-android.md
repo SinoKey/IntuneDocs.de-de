@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/11/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 621468db51e7e6172d142501a4637794e4cb57b8
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Registrieren Ihres Android-Geräts bei Intune
 
@@ -30,21 +30,19 @@ Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ih
 
 Diese Registrierungsanweisungen gelten für native Android-Geräte und für Android-Geräte mit Samsung KNOX. Samsung KNOX ist ein Sicherheitssystem, mit dem bestimmte Geräte von Samsung neben der nativen Android-Sicherheit zusätzlichen Schutz bieten. Wechseln Sie zu **Einstellungen** > **Geräteinformationen**, um zu überprüfen, ob es sich bei Ihrem Gerät um ein Samsung KNOX-Gerät handelt. Wird „KNOX-Version“ nicht angezeigt, verfügen Sie über ein natives Android-Gerät.
 
-Vor oder nach der Registrierung werden Sie möglicherweise aufgefordert, eine Kategorie auszuwählen, die am besten beschreibt, wie Sie Ihr Gerät nutzen. Ihr IT-Administrator verwendet diese Kategorie, um die Apps zu überprüfen, auf die Sie Zugriff haben.
-
-Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftreten, können Sie [Registrierungsfehler an Ihren IT-Administrator senden](send-enrollment-errors-to-your-it-admin-android.md).
+Vor oder nach der Registrierung werden Sie möglicherweise aufgefordert, eine Kategorie auszuwählen, die am besten beschreibt, wie Sie Ihr Gerät nutzen. Der Support Ihres Unternehmens verwendet diese Kategorie, um die Apps zu überprüfen, auf die Sie Zugriff haben.
 
 **So registrieren Sie Ihr Android-Gerät:**
 
 1.  Installieren Sie die kostenlose Intune-Unternehmensportal-App aus [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
-2.  Öffnen Sie die Microsoft Intune-Unternehmensportal-App.
+2.  Öffnen Sie die Unternehmensportal-App.
 
 3.  Tippen Sie im Unternehmensportal auf dem **Begrüßungsbildschirm** auf **Anmelden**, und melden Sie sich dann mit Ihrem Geschäfts-, Schul- oder Unikonto an.
 
     ![Die Willkommensseite der Unternehmensportal-App für Android mit der Aufforderung, sich mit dem erforderlichen Geschäfts-, Schul- oder Unikonto anzumelden. Zusätzlich wird darauf hingewiesen, dass Microsoft-Konten und andere persönliche Konten nicht akzeptiert werden.](./media/and-enroll-0-welcome-screen.png)   
 
-4.  Wenn Ihr IT-Administrator Nutzungsbedingungen des Unternehmens eingerichtet hat, tippen Sie auf **AKZEPTIEREN**, um sie anzunehmen. Dieser Bildschirm kann sich von der nachstehenden Abbildung je nach aktuell verwendeter Version von Android geringfügig unterscheiden.
+4.  Wenn der Support Ihres Unternehmens Nutzungsbedingungen des Unternehmens eingerichtet hat, tippen Sie auf **AKZEPTIEREN**, um sie anzunehmen. Dieser Bildschirm kann sich von der nachstehenden Abbildung je nach aktuell verwendeter Version von Android geringfügig unterscheiden.
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
@@ -52,28 +50,24 @@ Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftre
 
     ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
 
-6.  Tippen Sie auf dem Bildschirm **Unternehmenszugriff einrichten** auf **BEGINNEN**.
+6.  Tippen Sie auf dem Bildschirm **Unternehmenszugriff einrichten** auf **WEITER**.
 
-    ![Bildschirm „Unternehmenszugriff einrichten“](/intune/media/android_cp_enroll_02_post_1709.png)
+    ![Bildschirm „Unternehmenszugriff einrichten“](/intune/media/android_cp_enroll_01_1709_new.png)
 
     > [!NOTE]
     > Die gelben Dreiecke bedeuten nicht, dass bereits ein Fehler vorliegt. Sie geben lediglich an, dass für den Registrierungsprozess noch Schritte ausgeführt werden müssen.
 
-7. Erfahren Sie auf dem Bildschirm **Benefits of device management** (Vorteile der Geräteverwaltung) mehr darüber, was Sie tun können, wenn Sie Ihr Gerät registrieren. Tippen Sie anschließend auf **WEITER**.
+7.  Prüfen Sie in der angezeigten Liste, was der Support Ihres Unternehmens auf Ihrem Gerät sehen kann und was nicht, und tippen Sie auf **WEITER**.
 
-    ![Bildschirm „Vorteile der Geräteverwaltung“](/intune/media/android_cp_enroll_02_post_1709.png)
+    ![Datenschutzeinstellungen](/intune/media/android_cp_enroll_02_after_1710.png)
 
-8.  Prüfen Sie in einer Liste, was Ihr IT-Administrator auf Ihrem Gerät einsehen kann und was nicht, und tippen Sie dann auf **WEITER**.
+9.  Lesen Sie auf dem Bildschirm **What's next?** (Wie geht es weiter?), was während der Registrierung passiert, und tippen Sie dann auf **REGISTRIEREN**.
 
-    ![Datenschutzeinstellungen](./media/and-enroll-4c-we-care-privacy.png)
-
-9.  Lesen Sie im Bildschirm **Was ist der nächste Schritt?**, was während der Registrierung passiert, und tippen Sie dann auf **REGISTRIEREN**.
-
-    ![Was ist der nächste Schritt?](./media/and-enroll-4d-what-comes-next.png)
+    ![Was ist der nächste Schritt?](/intune/media/android_cp_enroll_03_after_1710.png)
 
 10.  Wenn Sie Android 6.0 oder höher verwenden, führen Sie diesen Schritt aus. Fahren Sie andernfalls mit dem nächsten Schritt fort.
 
-    Wenn Ihr IT-Administrator bestimmte Richtlinien eingerichtet hat, werden möglicherweise folgende Meldungen angezeigt:
+    Wenn der Support Ihres Unternehmens bestimmte Richtlinien eingerichtet hat, werden möglicherweise folgende Meldungen angezeigt:
     -   **Zulassen, dass das Unternehmensportal Telefonanrufe tätigt und verwaltet?**
 
         ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
@@ -96,9 +90,9 @@ Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftre
 
     Die Geräteadministratorrolle wird vom Unternehmensportal benötigt, um Ihr Gerät zu verwalten. Damit kann Ihr Administrator bestimmte Dinge sehen – zum Beispiel wie oft Sie versucht haben, Ihren Bildschirm zu entsperren – und einige Aktionen vornehmen.
 
-    Es gilt zu beachten, dass diese Aktionen im Namen der Sicherheit ausgeführt werden. Ihr IT-Administrator wird nicht versuchen, Ihre Privatsphäre zu verletzen oder Ihre Daten ohne Grund zu löschen, möchte aber sicherstellen, dass Unternehmensdaten sicher aufbewahrt werden.
+    Es gilt zu beachten, dass diese Aktionen im Namen der Sicherheit ausgeführt werden. Der Support Ihres Unternehmens wird nicht versuchen, Ihre Privatsphäre zu verletzen oder Ihre Daten ohne Grund zu löschen, möchte aber sicherstellen, dass Unternehmensdaten sicher aufbewahrt werden.
 
-    Microsoft wird diese Meldung nicht kontrollieren, und wir wissen, dass die Ausdrucksweise etwas drastisch erscheinen kann. Es gibt keine Möglichkeit, dass das Unternehmensportal nur die Einschränkungen und Zugriffe anzeigt, die für Ihre Organisation relevant sind. Alle werden auf diesem Bildschirm auf einmal erteilt. Wenden Sie sich mithilfe der Kontaktinformationen auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) an Ihren IT-Administrator, wenn Sie spezifische Fragen zur Verwendung in Ihrem Unternehmen haben.
+    Microsoft wird diese Meldung nicht kontrollieren, und wir wissen, dass die Ausdrucksweise etwas drastisch erscheinen kann. Es gibt keine Möglichkeit, dass das Unternehmensportal nur die Einschränkungen und Zugriffe anzeigt, die für Ihre Organisation relevant sind. Alle werden auf diesem Bildschirm auf einmal erteilt. Wenden Sie sich mithilfe der Kontaktinformationen auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) an den Support Ihres Unternehmens, wenn Sie spezifische Fragen zur Verwendung in Ihrer Organisation haben.
 
 12.  Befolgen Sie die Aufforderungen zur Eingabe einer PIN oder eines Kennworts. Wenn Sie bereits eine PIN oder ein Kennwort auf diesem Gerät eingerichtet haben, wird dieser Bildschirm nicht angezeigt, und Sie werden nicht zur Eingabe einer neuen PIN oder eines neuen Kennworts aufgefordert.
 
@@ -133,4 +127,6 @@ Bevor Sie versuchen, Unternehmens-Apps zu installieren, wechseln Sie zu **Einste
 > [!Note]
 > Wenn Ihre Organisation Telecom Expense Management-Software verwendet, müssen Sie ein paar zusätzliche Schritte ausführen, bevor das Gerät vollständig registriert ist. [Hier](enroll-your-device-with-telecom-expense-management-android.md) erfahren Sie mehr.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-Team</a>.
+Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftreten, können Sie [Registrierungsfehler an den Support Ihres Unternehmens senden](send-enrollment-errors-to-your-it-admin-android.md).
+
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an den Support Ihres Unternehmens (suchen Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-Team</a>.

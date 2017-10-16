@@ -1,6 +1,6 @@
 ---
 title: "Auflösen von durch Lookout for Work erkannten Bedrohungen unter iOS | Microsoft-Dokumentation"
-description: 
+description: "Erfahren Sie, wie Sie gegen Bedrohungen vorgehen können, die von Lookout for Work unter iOS erkannt wurden."
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -14,13 +14,13 @@ ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b51ad3fcc04d8e4b2cb6da6982f62885f466080
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1b5a49c4bb29f5511dc13b7d12928b11fd98b2de
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>Sie müssen eine von Lookout for Work erkannte Bedrohung beseitigen
+# <a name="resolve-a-threat-found-by-lookout-for-work"></a>Beseitigen einer von Lookout for Work erkannten Bedrohung
 
 Lookout for Work hat eine potenzielle Bedrohung auf Ihrem Gerät erkannt, und Sie müssen das Problem beheben, um wieder Zugriff auf Ihre Geschäfts-, Schul- oder Uni-E-Mails, -Apps und -dateien zu erhalten. Die angezeigte Meldung könnte wie folgt aussehen:
 
@@ -34,7 +34,7 @@ Wenn ein Virus oder eine andere Sicherheitsbedrohung auf dem registrierten Gerä
 
 ![Lookout for Work-Fehlermeldung mit Link zur Unternehmensportalwebsite](./media/mtd-go-to-device-management-portal-android.png)
 
-Tippen Sie auf den Link **Portal für die Geräteverwaltung**, um zur [Unternehmensportalwebsite](http://portal.manage.microsoft.com) zu gelangen, auf der Anweisungen zur Behebung des Problems angezeigt werden.
+Tippen Sie auf den Link **Portal für die Geräteverwaltung**, um zur [Unternehmensportalwebsite](https://portal.manage.microsoft.com) zu gelangen, auf der Anweisungen zur Behebung des Problems angezeigt werden.
 
 ## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Beispiel für eine App, die Lookout for Work als Bedrohung ansieht
 
@@ -46,4 +46,5 @@ Wenn Ihnen ein solcher Bildschirm angezeigt wird, tippen Sie auf den App-Namen o
 
 Nach der Deinstallation der App erhalten Sie sofort wieder Zugriff auf Ihre E-Mails und anderen Firmen- oder Schuldaten. Wenn Sie die Aufforderung zur Deinstallation der App ignorieren, haben Sie solange keinen Zugriff auf Ihre Unternehmens-E-Mails und -daten, bis Sie die App deinstallieren.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+

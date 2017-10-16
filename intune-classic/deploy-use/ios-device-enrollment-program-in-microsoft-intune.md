@@ -14,11 +14,11 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 75d2a54f065e04b3f6c923dc4e83cfea498ead76
+ms.sourcegitcommit: c36f74323b57c9d9ef972322082923c449a1a74f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Registrieren unternehmenseigener iOS-Geräte mithilfe des Programm zur Geräteregistrierung (Device Enrollment Program, DEP)
 
@@ -28,7 +28,7 @@ Microsoft Intune kann ein Registrierungsprofil bereitstellen, das über das Prog
 
 >[!NOTE]
 >Die Registrierung mit DEP (Device Enrollment Program) kann nicht mit dem [Geräteregistrierungs-Manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) verwendet werden.
->Auch wenn Benutzer iOS-Geräte registrieren (d.h. die Unternehmensportal-App verwenden) und die Seriennummer dieser Geräte dann importiert und einem DEP-Profil zugewiesen werden, wird die Registrierung des Geräts in Intune wieder rückgängig gemacht.
+>Wenn Benutzer iOS-Geräte registrieren (d.h.die Unternehmensportal-App verwenden) und die Seriennummer dieser Geräte dann importiert und einem DEP-Profil zugewiesen werden, wird die Registrierung des Geräts in Intune wieder rückgängig gemacht.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Voraussetzungen für die Anmeldung von iOS-Geräten mithilfe der DEP-Verwaltung für Apple
 

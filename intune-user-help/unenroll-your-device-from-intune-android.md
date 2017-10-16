@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c17389164df2f458ad5e3185f37a92791a83b129
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 778ba1445361a15c43edf0d09f154750beacd3ad
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-unenroll-your-android-device-from-intune"></a>Aufheben der Registrierung Ihres Android-Geräts bei Intune
 
@@ -36,6 +36,6 @@ Führen Sie zum Aufheben der Registrierung Ihres Geräts bei Intune und zum Entf
 
 3. Eine Bestätigung wird angezeigt, in der Sie gefragt werden, ob Sie das Unternehmensportal wirklich entfernen möchten. Sie bietet einige Informationen darüber, was geschieht, wenn Sie die Registrierung Ihres Geräts aufheben. Nachdem Sie diese Meldung gelesen haben, tippen Sie auf **OK**, um die App zu entfernen. 
 
-  ![Ein Bild mit dem Bestätigungsdialogfeld, das nach der Auswahl der neuen Option „Unternehmensportal entfernen“ im Aktionsmenü verfügbar ist. Das Dialogfeld informiert den Benutzer über Folgendes: „Wenn Sie das Unternehmensportal entfernen, wird Ihr Gerät nicht länger durch Ihren IT-Administrator verwaltet, und der Zugriff auf Unternehmensdaten, Unternehmens-Apps und Unternehmens-E-Mails wird möglicherweise beendet.“ Anschließend muss der Benutzer bestätigen, dass er die Unternehmensportal-App entfernen möchte, indem er „Ja“ auswählt.](./media/android_remove_cp_menu_confirmation_after_1705.png)
+  ![Ein Bild mit dem Bestätigungsdialogfeld, das nach der Auswahl der neuen Option „Unternehmensportal entfernen“ im Aktionsmenü verfügbar ist. Das Dialogfeld informiert den Benutzer über Folgendes: „by removing company portal, your device will no longer be managed by your company support and may remove access to company data, company apps, and company email.“ (Wenn Sie das Unternehmensportal entfernen, wird Ihr Gerät nicht länger durch den Support Ihres Unternehmens verwaltet, und der Zugriff auf Unternehmensdaten, Unternehmens-Apps und Unternehmens-E-Mails wird möglicherweise beendet.). Anschließend muss der Benutzer bestätigen, dass er die Unternehmensportal-App entfernen möchte, indem er „Ja“ auswählt.](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

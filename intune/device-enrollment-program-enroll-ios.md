@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 94eeb453e5c83c2dadaa757b4c7867f9dd3f62ff
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 311bb42f2ef9fbf689e32eacca7420c8189251bf
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple
 
@@ -30,6 +30,9 @@ Dieses Thema unterstützt Sie dabei, die iOS-Geräteregistrierung für Geräte z
 Zur Aktivierung der DEP-Registrierung können Sie sowohl das Intune-Portal als auch das Apple DEP-Portal verwenden. Sie benötigen auch eine Liste von Seriennummern oder eine Bestellnummer, um Geräte in Intune zur Verwaltung zuweisen zu können. Sie erstellen DEP-Registrierungsprofile, die Einstellungen enthalten, die für Geräte während der Registrierung gelten.
 
 Die Registrierung mit DEP funktioniert übrigens nicht mit dem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md).
+
+## <a name="what-is-supervised-mode"></a>Überwachter Modus
+Apple hat für iOS 5 den überwachten Modus eingeführt. Ein iOS-Gerät im überwachten Modus kann über zusätzliche Steuerelemente verwaltet werden. Dies ist bei unternehmenseigenen Geräten besonders nützlich. Intune unterstützt die Konfiguration von Geräten für den überwachten Modus als Teil des Apple-Programms zur Geräteregistrierung (DEP). 
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -77,7 +80,6 @@ Verwenden Sie das Apple DEP-Portal, um ein DEP-Token zu erstellen. Sie verwenden
 
 5. Das Dialogfeld **&lt;Servername&gt; hinzufügen** wird geöffnet, und die Meldung **Laden Sie Ihren öffentlichen Schlüssel hoch** wird angezeigt. Wählen Sie **Datei auswählen** aus, um die PEM-Datei hochzuladen, und wählen Sie anschließend **Weiter** aus.
 
-6.  Im Dialogfeld **&lt;Servername&gt; hinzufügen** wird der Link **Ihr Servertoken** angezeigt. Laden Sie die Servertokendatei (.p7m) auf Ihren Computer herunter, und wählen Sie anschließend **Fertig** aus.
 
 7. Wechseln Sie zu **Bereitstellungsprogramme** &gt; **Programm zur Geräteregistrierung** &gt; **Geräte verwalten**.
 8. Geben Sie unter **Geräte auswählen nach** an, wie die Geräte identifiziert werden sollen:
@@ -103,7 +105,7 @@ Wechseln Sie zur Zertifikatsdatei (.pem), wählen Sie **Öffnen** aus, und wähl
 Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil für DEP-Geräte erstellen. Ein Geräteregistrierungsprofil definiert die Einstellungen, die während der Registrierung auf eine Gruppe von Geräten angewendet werden.
 
 1. Wählen Sie in Intune im Azure-Portal die Optionen **Geräteregistrierung** > **Apple Registrierung** aus.
-2. Wählen Sie unter **Registrierungsprogramm für Apple ** den Eintrag **Profile des Registrierungsprogramms** > **Erstellen** aus.
+2. Wählen Sie unter **Registrierungsprogramm für Apple**  den Eintrag **Profile des Registrierungsprogramms** > **Erstellen** aus.
 3. Geben Sie unter **Registrierungsprofil erstellen** einen **Namen** und eine **Beschreibung** für das Profil zu administrativen Zwecken ein. Benutzer können diese Informationen nicht sehen. Sie können das Feld **Name** zum Erstellen einer dynamischen Gruppe in Azure Active Directory verwenden. Verwenden Sie den Profilnamen, um den Parameter „enrollmentProfileName“ zu definieren, um Geräte mit diesem Registrierungsprofil zuzuweisen. Erfahren Sie mehr über [dynamische Gruppen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
   Wählen Sie für **Benutzeraffinität** aus, ob Geräte mit diesem Profil mit oder ohne einen zugewiesenen Benutzer registriert werden.
@@ -114,10 +116,13 @@ Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil fü
 
 4. Wählen Sie **Geräteverwaltungseinstellungen** aus, um folgenden Profileinstellungen zu konfigurieren.
 
-  ![Screenshot der Auswahl des Verwaltungsmodus Das Gerät verfügt über folgende Einstellungen: „Überwacht“, „Registrierung gesperrt“ und „Kopplung zu lassen“ mit der Auswahl „Alle verweigern“. Apple Configurator-Zertifikate sind für ein neues Profil des Registrierungsprogramms ausgegraut.](./media/enrollment-program-profile-mode.png)
-    - **Überwacht:** Dieser Verwaltungsmodus ermöglicht weitere Verwaltungsoptionen und deaktiviert standardmäßig die Aktivierungssperre. Wenn Sie das Kontrollkästchen nicht aktivieren, stehen Ihnen nur beschränkte Verwaltungsfunktionen zur Verfügung.
+  ![Screenshot der Auswahl des Verwaltungsmodus Das Gerät verfügt über folgende Einstellungen: „Überwacht“, „Registrierung gesperrt“ und „Kopplung zulassen“ mit der Auswahl „Alle verweigern“. Apple Configurator-Zertifikate sind für ein neues Profil des Registrierungsprogramms ausgegraut.](./media/enrollment-program-profile-mode.png)
+    - **Überwacht:** Dieser Verwaltungsmodus ermöglicht weitere Verwaltungsoptionen und deaktiviert standardmäßig die Aktivierungssperre. Wenn Sie das Kontrollkästchen nicht aktivieren, stehen Ihnen nur beschränkte Verwaltungsfunktionen zur Verfügung. Es wird von Microsoft empfohlen, DEP als Mechanismus zur Aktivierung des überwachten Modus zu verwenden. Dies gilt insbesondere für Organisationen, die eine große Anzahl von iOS-Geräten bereitstellen.
 
-    - **Registrierung gesperrt:**: (Erfordert den Vorbereitungsmodus „Überwacht“) Deaktiviert iOS-Einstellungen, die das Entfernen des Verwaltungsprofils zulassen könnten. Wenn Sie dieses Kontrollkästchen nicht aktivieren, kann das Verwaltungsprofil aus dem Menü „Einstellungen“ entfernt werden. Nach der Gerätebereitstellung können Sie diese Einstellung ändern, ohne das Gerät auf Werkseinstellung zurückzusetzen.
+ > [!NOTE]
+ > Geräte können nicht über Intune für den überwachten Modus konfiguriert werden, wenn sie bereits registriert wurden. Nach der Registrierung kann der überwachte Modus nur aktiviert werden, indem Sie ein iOS-Gerät über ein USB-Kabel mit einem Mac verbinden und den Apple Configurator verwenden. Dadurch wird das Gerät zurückgesetzt und für den überwachten Modus konfiguriert. Erfahren Sie mehr über dieses Thema in der [Dokumentation zu Apple Configurator](http://help.apple.com/configurator/mac/2.3). Auf überwachten Geräten wird folgende Meldungen auf dem Sperrbild angezeigt: „This iPhone is managed by Contoso“ (Dieses iPhone wird von Contoso verwaltet). Außerdem wird die Meldung „This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device“ (Dieses iPhone wird überwacht. Contoso kann Ihren Internetdatenverkehr überwachen und dieses Gerät suchen.) unter **Einstellungen** > **Allgemein** > **Info** angezeigt.
+
+    - **Registrierung gesperrt**: (Erfordert den Vorbereitungsmodus „Überwacht“) Deaktiviert iOS-Einstellungen, die das Entfernen des Verwaltungsprofils zulassen könnten. Wenn Sie dieses Kontrollkästchen nicht aktivieren, kann das Verwaltungsprofil aus dem Menü „Einstellungen“ entfernt werden. Nach der Gerätebereitstellung können Sie diese Einstellung ändern, ohne das Gerät auf Werkseinstellung zurückzusetzen.
 
   - **Enable Shared iPad** (gemeinsam genutztes iPad aktivieren): Das Programm zur Geräteregistrierung von Apple unterstützt nicht gemeinsam genutzte iPads.
 
@@ -146,6 +151,7 @@ Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil fü
         - **Diagnosedaten**
 
     Wählen Sie **Speichern** aus.
+
 9. Wählen Sie zum Speichern der Profileinstellungen **Erstellen** auf dem Blatt **Registrierungsprofil erstellen** aus. Das Registrierungsprofil wird in der Liste der Registrierungsprofile des Apple-Registrierungsprogramms angezeigt.
 
 ## <a name="sync-managed-devices"></a>Synchronisieren verwalteter Geräte

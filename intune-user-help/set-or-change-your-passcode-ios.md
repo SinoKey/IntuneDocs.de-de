@@ -14,31 +14,31 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: fbb3143baa0063343d639d2df6101ebaec98ee65
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7272c3d21674e4e0029cf49140638d9a3fd3306f
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="set-or-change-your-passcode"></a>Festlegen oder Ändern der Kennung
 
-Wenn Ihr iOS-Gerät die Kennungsrichtlinie Ihres IT-Administrators nicht erfüllt, wird eine Meldung mit einer Kurzbeschreibung des Problems und einer Erläuterung angezeigt, was Sie tun müssen, damit Ihre Kennung die Anforderungen erfüllt.
+Wenn Ihr iOS-Gerät die Kennungsrichtlinie des Supports Ihres Unternehmens nicht erfüllt, wird eine Meldung mit einer Kurzbeschreibung des Problems und einer Erläuterung angezeigt, was Sie tun müssen, damit Ihre Kennung die Anforderungen erfüllt.
 
-Der IT-Administrator kann mehr als eine Kennungsanforderung festlegen. Die Kennung muss ggf. eine bestimmte Anzahl von Zeichen und ggf. eine Kombination aus Zahlen, Buchstaben und Zeichen enthalten. Da mehr als eine Anforderung festgelegt werden kann, wird in diesen Anweisungen nur das Festlegen oder Ändern der Kennung erläutert. Auf alle möglichen Kombinationen von Anforderungen wird nicht eingegangen. Diese Kennungen werden beispielsweise verwendet, um über den Sperrbildschirm auf das Gerät zuzugreifen.
+Der Support Ihres Unternehmens kann mehr als eine Kennungsanforderung festlegen. Die Kennung muss ggf. eine bestimmte Anzahl von Zeichen und ggf. eine Kombination aus Zahlen, Buchstaben und Zeichen enthalten. Da mehr als eine Anforderung festgelegt werden kann, wird in diesen Anweisungen nur das Festlegen oder Ändern der Kennung erläutert. Auf alle möglichen Kombinationen von Anforderungen wird nicht eingegangen. Diese Kennungen werden beispielsweise verwendet, um über den Sperrbildschirm auf das Gerät zuzugreifen.
 
-Wenn Sie Probleme beim Einrichten einer Kennung haben, die die Kennungsanforderungen erfüllt, bitten Sie Ihren IT-Administrator um Hilfe.
+Wenn Sie Probleme beim Festlegen einer Kennung haben, die die Kennungsanforderungen erfüllt, bitten Sie den Support Ihres Unternehmens um Hilfe.
 
 ## <a name="set-your-passcode"></a>Festlegen der Kennung
 
 1. Tippen Sie auf **Einstellungen** > **Touch ID und Kennung**.
 2. Tippen Sie im Menü **Touch ID und Kennung** auf **Kennung aktivieren**.
-3. Geben Sie eine neue Kennung ein, die die Anforderungen Ihres IT-Administrators erfüllt, und geben Sie sie zur Bestätigung nochmals ein.
+3. Geben Sie eine neue Kennung ein, die die Anforderungen des Supports Ihres Unternehmens erfüllt, und geben Sie sie zur Bestätigung nochmals ein.
 
 ## <a name="change-your-passcode"></a>Ändern Ihrer Kennung
 
 1. Tippen Sie auf **Einstellungen** > **Touch ID und Kennung**.
 2. Geben Sie Ihre Kennung ein. Das Menü **Touch ID und Kennung** wird geöffnet.
 2. Tippen Sie auf **Kennung ändern**, und geben Sie Ihre alte Kennung ein.
-3. Geben Sie eine neue Kennung ein, die die Anforderungen Ihres IT-Administrators erfüllt, und geben Sie sie zur Bestätigung nochmals ein.
+3. Geben Sie eine neue Kennung ein, die die Anforderungen des Supports Ihres Unternehmens erfüllt, und geben Sie sie zur Bestätigung nochmals ein.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

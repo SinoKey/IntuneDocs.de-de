@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c7c03148d4063d0752a7c615222047bc6f02f58e
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: c7ac377cd3bc958440d191bd45ea5062acdb7647
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Registrieren Ihres Windows Phone 8.1-Geräts bei Intune
 
-Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ihre Geräte registrieren, um Zugriff auf Unternehmens-E-Mails, Dateien und weitere Ressourcen zu erhalten. Wenn Sie Ihre Geräte registrieren, kann Ihre Organisation Unternehmensdaten schützen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) und unter [Was Ihr IT-Administrator auf Ihrem Gerät sehen bzw. nicht sehen kann](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ihre Geräte registrieren, um Zugriff auf Unternehmens-E-Mails, Dateien und weitere Ressourcen zu erhalten. Wenn Sie Ihre Geräte registrieren, kann Ihre Organisation Unternehmensdaten schützen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) und unter [Was der Support Ihres Unternehmens auf Ihrem Gerät sehen bzw. nicht sehen kann](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 
 Befolgen Sie die für Ihre Firma oder Schule geltenden Anweisungen, um Ihr Phone 8.1-Gerät bei Intune zu registrieren:
@@ -82,6 +82,6 @@ Registrieren Sie Ihr Gerät:
 
 4.  Wenn Sie aufgefordert werden, die Unternehmens-App oder den Hub zu installieren, stellen Sie sicher, dass das entsprechende Kontrollkästchen aktiviert ist, und tippen Sie dann auf **Fertig**.
 
-Wenn Ihr IT-Administrator das Unternehmensportal so eingerichtet hat, dass es während der Anmeldung installiert wird, wird das Unternehmensportal in Ihrer App-Liste angezeigt.
+Wenn der Support Ihres Unternehmens das Unternehmensportal so eingerichtet hat, dass es während der Registrierung installiert wird, wird das Unternehmensportal in Ihrer App-Liste angezeigt.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

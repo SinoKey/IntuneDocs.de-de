@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 975344e5eb773a2bff3a04d11e4e63d167b30b29
-ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
+ms.openlocfilehash: 41f39740b62074e06ccc64c6211d642d224efd6c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>Registrieren Ihres iOS-Geräts bei Intune
 
@@ -54,7 +54,7 @@ Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ih
   > [!NOTE]
   > Die gelben Dreiecke bedeuten nicht, dass bereits ein Fehler vorliegt. Sie geben lediglich an, dass für den Registrierungsprozess noch Schritte ausgeführt werden müssen.
 
-4. Prüfen Sie in einer Liste, was Ihr IT-Administrator auf Ihrem registrierten Gerät einsehen kann und was nicht, und tippen Sie dann auf **Weiter**.
+4. Prüfen Sie in der angezeigten Liste, was der Support Ihres Unternehmens auf Ihrem registrierten Gerät einsehen kann und was nicht, und tippen Sie dann auf **Weiter**.
 
     ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
 
@@ -101,4 +101,4 @@ Ihr Gerät ist jetzt bei Intune registriert, und Sie gelangen wieder zur Unterne
 > [!Note]
 > Sie müssen einige weitere Schritte ausführen, bevor Ihr Gerät vollständig registriert ist. Weitere Informationen finden Sie unter [Registrieren Ihres Geräts mithilfe des Telecom Expense Management](enroll-your-device-with-telecom-expense-management-ios.md). Wenn Ihre Organisation das Programm zur Geräteregistrierung von Apple verwendet, finden Sie [hier](enroll-your-device-dep-ios.md) weitere Informationen.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

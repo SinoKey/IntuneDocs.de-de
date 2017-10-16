@@ -1,5 +1,5 @@
 ---
-title: Senden von Protokollen an Ihren IT-Administrator per E-Mail | Microsoft-Dokumentation
+title: Senden von Protokollen an den Support Ihres Unternehmens per E-Mail | Microsoft-Dokumentation
 description: "Senden von Datenprotokollen per E-Mail auf einem Android-Gerät"
 keywords: 
 author: barlanmsft
@@ -16,20 +16,20 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3794f6c908dabb1946a262a7238a38537b7b06ec
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b10e4f6571d581b76d8e9d280767ce09ec8e3684
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-using-email"></a>Senden von Protokollen an Ihren IT-Administrator per E-Mail
+# <a name="send-logs-to-your-company-support-using-email"></a>Senden von Protokollen an den Support Ihres Unternehmens per E-Mail
 
-Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App auf Ihrem Android-Gerät verwenden, können Sie Informationen über den Fehler senden, um Ihrem IT-Administrator bei der Behandlung des Problems zu helfen. Die Informationen werden auf Ihrem Gerät in einem speziellen Dokument (einem so genannten _Diagnoseprotokoll_) gespeichert.
+Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App auf Ihrem Android-Gerät verwenden, können Sie Informationen zu diesem Fehler senden, um dem Support Ihres Unternehmens bei der Behandlung des Problems zu helfen. Die Informationen werden auf Ihrem Gerät in einem speziellen Dokument (einem so genannten _Diagnoseprotokoll_) gespeichert.
 
 > [!Note]
-> Um Ihrem IT-Administrator die Diagnose des Problems zu erleichtern, sollten Sie die _ausführliche Protokollierung_ aktivieren. Bei der ausführlichen Protokollierung werden alle relevanten Informationen im Bericht aufgeführt. Informieren Sie sich, wie Sie die [ausführliche Protokollierung aktivieren](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> Um dem Support Ihres Unternehmens die Diagnose des Problems zu erleichtern, sollten Sie die _ausführliche Protokollierung_ aktivieren. Bei der ausführlichen Protokollierung werden alle relevanten Informationen im Bericht aufgeführt. Informieren Sie sich, wie Sie die [ausführliche Protokollierung aktivieren](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
-So senden Sie Protokolle per E-Mail an Ihren IT-Administrator:
+So senden Sie per E-Mail Protokolle an den Support Ihres Unternehmens:
 
 1.  Öffnen Sie die Unternehmensportal-App.
 
@@ -40,4 +40,4 @@ So senden Sie Protokolle per E-Mail an Ihren IT-Administrator:
 
 3.  Tippen Sie unter **Hilfe** auf **Hilfe anfordern**.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

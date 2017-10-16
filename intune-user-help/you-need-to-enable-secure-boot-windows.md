@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 364b2b4bfbf91f006447dd42d6a196f0b3b81542
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2afa9ef5fdd755e7722939288f3c3b1ad4dd722f
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-enable-secure-boot"></a>Sicherer Start muss aktiviert werden
 
 Ihr Unternehmen erfordert das Aktivieren des sicheren Starts für Windows, bei dem es sich um ein Sicherheitsfeature handelt, das den Schutz des Geräts erhöht.
 
-Das Aktivieren des sicheren Starts ist eine fortgeschrittene Aufgabe. Wenn Sie ein mobiles Gerät verwenden, wenden Sie sich für Hilfe an Ihren IT-Administrator.
+Das Aktivieren des sicheren Starts ist eine fortgeschrittene Aufgabe. Wenn Sie ein mobiles Gerät verwenden, wenden Sie sich für Hilfe an den Support Ihres Unternehmens.
 
-Wenn Sie einen PC verwenden, können Sie sich an Ihren IT-Administrator wenden oder den Abschnitt „So aktivieren Sie den sicheren Start erneut“ auf der Seite [Deaktivieren des sicheren Starts](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) lesen, um zu versuchen, den sicheren Start selbst zu aktivieren.
+Wenn Sie einen PC verwenden, können Sie sich an den Support Ihres Unternehmens wenden oder den Abschnitt „So aktivieren Sie den sicheren Start erneut“ auf der Seite [Deaktivieren des sicheren Starts](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) lesen, um zu versuchen, den sicheren Start selbst zu aktivieren.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

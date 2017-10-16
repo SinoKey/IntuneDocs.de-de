@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca763562c96c4c5f4f4e6bcf317bb6ccba68d8d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2958710c0f758e16e2613627782f81e26f1d3051
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>Was geschieht beim Erstellen eines Arbeitsprofils?
 
@@ -28,9 +28,9 @@ Ein Arbeitsprofil legen Sie auf Ihrem Gerät fest, um Ihre Geschäfts-, Schul- o
 
 Folgendes geschieht beim Erstellen eines Arbeitsprofils:
 
-- Ihr IT-Administrator kann nur arbeitsbezogene E-Mails, Apps, Einstellungen und Daten auf Ihrem Gerät verwalten, nicht jedoch Ihre privaten Apps oder Daten.
+- Der Support Ihres Unternehmens kann nur arbeitsbezogene E-Mails, Apps, Einstellungen und Daten auf Ihrem Gerät verwalten, nicht jedoch Ihre privaten Apps oder Daten.
 
-- Arbeitsbezogene Apps erhalten Sie über den Play Store for Work. Persönliche Apps erhalten Sie wie gewohnt über den Google Play Store. Der IT-Administrator kann Ihre persönlichen Apps weder anzeigen noch verwalten.
+- Arbeitsbezogene Apps erhalten Sie über den Play Store for Work. Persönliche Apps erhalten Sie wie gewohnt über den Google Play Store. Der Support Ihres Unternehmens kann Ihre persönlichen Apps weder aufrufen noch verwalten.
 
 - Arbeitsbezogene Apps werden von Ihren persönlichen Apps getrennt, beide können jedoch gleichzeitig auf Ihrer Startseite angezeigt werden. Im Folgenden ist ein Beispiel für einen Bildschirm dargestellt, der Ihnen möglicherweise angezeigt wird. Ihr Bildschirm sieht unter Umständen etwas anders aus.
 
@@ -38,9 +38,9 @@ Folgendes geschieht beim Erstellen eines Arbeitsprofils:
 
     ![Android Play Store for Work](./media/afw-google-play-store-for-work.png)
 
-- Ihr Unternehmen oder Ihre Bildungseinrichtung besitzt Ihr Arbeitsprofil, sodass Ihr IT-Administrator arbeitsbezogene Apps für Ihr Profil installieren oder entfernen kann, nicht jedoch Ihre persönlichen Apps oder Daten.
-- Der IT-Administrator kann Ihr Gerät nicht zurücksetzen.
+- Ihr Unternehmen oder Ihre Bildungseinrichtung besitzt Ihr Arbeitsprofil, sodass der Support Ihres Unternehmens arbeitsbezogene Apps für Ihr Profil installieren oder entfernen kann, nicht jedoch Ihre persönlichen Apps oder Daten.
+- Der Support Ihres Unternehmens kann Ihr Gerät nicht zurücksetzen.
 
 Eine Anleitung zum Erstellen eines Arbeitsprofils finden Sie unter [Erstellen eines Arbeitsprofils und Registrieren Ihres Geräts bei Intune](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

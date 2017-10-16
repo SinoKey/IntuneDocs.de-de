@@ -1,6 +1,6 @@
 ---
-title: "Verwenden der ausführlichen Protokollierung zur Unterstützung Ihres IT-Administrators bei der Behebung von Geräteproblemen | Microsoft-Dokumentation"
-description: "Unterstützen Ihres IT-Administrators durch die Verwenden der ausführlichen Protokollierung zur leichteren Behebung von Geräteproblemen"
+title: "Verwenden der ausführlichen Protokollierung zur Unterstützung des Supports Ihres Unternehmens bei der Behebung von Geräteproblemen | Microsoft-Dokumentation"
+description: "Verwenden der ausführlichen Protokollierung zur Unterstützung des Supports Ihres Unternehmens bei der Behebung von Geräteproblemen"
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1756f05fed15bf50c5bb8981e62f87789f14daab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a8364778943171bb1a949f61ad696427ff914c99
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="help-your-it-admin-fix-device-issues-with-verbose-logging"></a>Verwenden der ausführlichen Protokollierung zur Unterstützung Ihres IT-Administrators bei der Behebung von Geräteproblemen
+# <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Verwenden der ausführlichen Protokollierung zur Unterstützung des Supports Ihres Unternehmens bei der Behebung von Geräteproblemen
 
-Wenn Ihr Android-Gerät bei Intune registriert ist, können Sie *Ausführliche Protokollierung* verwenden, damit die Unternehmensportal-App und die von Intune verwalteten Apps detaillierte Protokolle zu den Vorgängen auf Ihrem Gerät aufzeichnen. Diese Protokolle helfen Ihrem IT-Administrator dabei, Probleme zu beheben, die Sie möglicherweise bei der Verwendung der Unternehmensportal-App oder einer von Intune verwalteten App haben. Die ausführlicher Protokollierung ist standardmäßig auf Ihrem Gerät aktiviert, und die Protokolle, die an Ihren IT-Administrator gesendet werden, enthalten Ihre E-Mail-Adresse.
+Wenn Ihr Android-Gerät bei Intune registriert ist, können Sie *Ausführliche Protokollierung* verwenden, damit die Unternehmensportal-App und die von Intune verwalteten Apps detaillierte Protokolle zu den Vorgängen auf Ihrem Gerät aufzeichnen. Diese Protokolle helfen dem Support Ihres Unternehmens dabei, Probleme zu beheben, die Sie möglicherweise bei der Verwendung der Unternehmensportal-App oder einer von Intune verwalteten App haben. Die ausführliche Protokollierung ist standardmäßig auf Ihrem Gerät aktiviert, und die Protokolle, die an den Support Ihres Unternehmens gesendet werden, enthalten Ihre E-Mail-Adresse.
 
 Um die ausführliche Protokollierung zu aktivieren oder zu deaktivieren, melden Sie sich mit Ihren Geschäfts-, Schul- oder Uni-Anmeldeinformationen bei der Unternehmensportal-App an, tippen Sie auf **Einstellungen**, und tippen Sie neben **Ausführliche Protokollierung** auf die Ein/Aus-Schaltfläche.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

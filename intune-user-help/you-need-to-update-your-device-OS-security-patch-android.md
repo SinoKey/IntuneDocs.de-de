@@ -14,15 +14,15 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 6b25c4551cd66e2e58b12c90ca9055c14b4e33cd
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5ee77c0889228080d4ea9dcd5c27fe8225865a6a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Sie müssen das Betriebssystem Ihres Android-Geräts aktualisieren.
 
-Wenn Ihnen in einer Meldung angezeigt wird, dass die niedrigste zulässige Android-Sicherheitspatchebene nicht konfiguriert ist, müssen Sie ein Update installieren, damit Ihr Gerät weiterhin sicher ist. Ein _Patch_ zur Softwarewartung wird veröffentlicht, um dafür zu sorgen, dass die Software reibungslos ausgeführt wird und auf dem neuesten Stand ist. Ihr IT-Administrator fordert Sie auf, dieses Patch zu installieren, um sicherzustellen, dass Unternehmensdaten auf Ihrem Gerät so gut geschützt sind wie möglich. Der Speicherort des Sicherheitspatches richtet sich nach dem Typ des Samsung-Geräts.
+Wenn Ihnen in einer Meldung angezeigt wird, dass die niedrigste zulässige Android-Sicherheitspatchebene nicht konfiguriert ist, müssen Sie ein Update installieren, damit Ihr Gerät weiterhin sicher ist. Ein _Patch_ zur Softwarewartung wird veröffentlicht, um dafür zu sorgen, dass die Software reibungslos ausgeführt wird und auf dem neuesten Stand ist. Die Supportabteilung Ihres Unternehmens fordert Sie auf, dieses Patch zu installieren, um sicherzustellen, dass Unternehmensdaten auf Ihrem Gerät so gut wie möglich geschützt sind. Der Speicherort des Sicherheitspatches richtet sich nach dem Typ des Samsung-Geräts.
 
 Wenn Sie über ein Samsung-Gerät verfügen, öffnen Sie **Einstellungen** > **Geräteinformationen**, und überprüfen Sie, ob sich das Wort „KNOX“ irgendwo auf dem Bildschirm befindet. Wenn dies der Fall ist, befolgen Sie die nachstehenden Anweisungen für Samsung KNOX.
 
@@ -38,4 +38,4 @@ Wenn Sie über ein Samsung-Gerät verfügen, öffnen Sie **Einstellungen** > **G
 
 
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

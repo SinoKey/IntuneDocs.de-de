@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4c4d46a8d90c3435b640a6135d69df1f3949b6a3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0720707c5e24daa9ef1677c549a8d2a763944f3b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Was geschieht, wenn Sie Ihr Windows-Gerät mithilfe des Unternehmensportals zurücksetzen?
 
@@ -28,8 +28,8 @@ Wenn Sie Ihr Windows-Gerät mithilfe der Unternehmensportal-App oder [Unternehme
 
 |Gerätekonfiguration und -verwaltung|Gerätetyp|
 |---------------------------------------|---------------|
-|Ihr IT-Administrator verwaltet Ihr mobiles Gerät|**Windows 10 und Windows Phone 8.1**</br>Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt, und das Unternehmensportal versucht, das Gerät auf die Werkseinstellungen zurückzusetzen. Ihre privaten Daten, Apps und Einstellungen werden entfernt. <br /><br />**Windows 10 Mobile**</br>Die einzige Möglichkeit zum Aufheben der Registrierung Ihres Geräts ist dessen Zurücksetzung.|
+|Die Supportabteilung Ihres Unternehmens verwaltet Ihr mobiles Gerät|**Windows 10 und Windows Phone 8.1**</br>Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt, und das Unternehmensportal versucht, das Gerät auf die Werkseinstellungen zurückzusetzen. Ihre privaten Daten, Apps und Einstellungen werden entfernt. <br /><br />**Windows 10 Mobile**</br>Die einzige Möglichkeit zum Aufheben der Registrierung Ihres Geräts ist dessen Zurücksetzung.|
 |Das Gerät kann nur auf Firmen-E-Mail zuzugreifen.|**Windows Phone 8.1**<br />Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt und Ihr Unternehmens-E-Mail-Konto wird ebenso wie nicht gespeicherte E-Mails gelöscht.<br /><br />**Windows 7 oder Windows Vista**<br />Ein Computer mit dem Betriebssystem Windows 7 oder älter, der nur zum Abrufen von E-Mails verwendet wird, kann nicht zurückgesetzt werden.<br /><br />**Windows 8.1 und Windows 8**<br />Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt und Ihr Unternehmens-E-Mail-Konto wird ebenso wie nicht gespeicherte E-Mails gelöscht.|
 |PCs und Laptops|**Windows 8.1 und Windows 8**<br />Ein Computer mit dem Betriebssystem Windows 8 oder Windows 8.1 kann nicht zurückgesetzt werden, sofern er nicht nur zum Abrufen von E-Mails verwendet wird.<br /><br />**Windows 7 oder Windows Vista**<br />Ein Computer mit dem Betriebssystem Windows 7 oder älter kann nicht zurückgesetzt werden.|
 
-Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Wenn Sie Fragen haben, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

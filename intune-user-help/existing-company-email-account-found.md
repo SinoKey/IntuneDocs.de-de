@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 510e35a7c60709a6f002907e0f7963ba5b78f35c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 21d9e6678c9981b3c1d918f337322d50aa0fecb5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Es wurde ein vorhandenes geschäftliches E-Mail-Konto gefunden
 
-Sie besitzen bereits ein E-Mail-Konto bei Ihrer Organisation oder Ihrem Unternehmen und möchten nun über Ihr mobiles Gerät auf dieses Konto zugreifen. Ihr IT-Administrator benötigt Ihre Hilfe, um Ihren E-Mail-Zugriff auf dem Weg von der Person, die diesen an Ihr Gerät sendet, zu schützen. Ihre aktuelle E-Mail hat womöglich gut funktioniert, die folgenden Schritte machen Ihre Informationen jedoch noch ein wenig sicherer.
+Sie besitzen bereits ein E-Mail-Konto bei Ihrer Organisation oder Ihrem Unternehmen und möchten nun über Ihr mobiles Gerät auf dieses Konto zugreifen. Der Support Ihres Unternehmens benötigt Ihre Hilfe, um Ihren E-Mail-Zugang zu schützen, während die E-Mail vom Absender an Ihr Gerät gesendet wird. Ihre aktuelle E-Mail hat womöglich gut funktioniert, die folgenden Schritte machen Ihre Informationen jedoch noch ein wenig sicherer.
 
 1.  Suchen Sie die **Einstellungen** auf Ihrem Gerät, und entfernen Sie die Verbindung, die Sie zuvor für Ihre Unternehmens-E-Mail festgelegt haben.
 
@@ -34,4 +34,4 @@ Sie besitzen bereits ein E-Mail-Konto bei Ihrer Organisation oder Ihrem Unterneh
 
 3.  Warten Sie kurz für neue e-Mail-Einstellungen automatisch auf das Gerät angewendet werden.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

@@ -16,20 +16,20 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 16f7f06d02a56b4887c0d29ffcaed111185652a9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 04009fa3fea401e3093a444b0fdbbbe12bd31c84
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-macos-device-in-intune"></a>Registrieren Ihres Mac OS-Geräts bei Intune
 
-Sie benötigen Zugriff auf Apps, Daten und Ressourcen Ihrer Organisation, um Ihre Arbeit erledigen zu können. Wenn Sie bei der Arbeit ein Mac OS-Gerät verwenden, muss ein __Verwaltungsprofil__ installiert werden. Hierbei handelt es sich einfach um eine von Ihrem IT-Administrator eingerichtete Datei, mit der Einstellungen und Zugriffsinformationen auf Ihren Mac geladen werden. Möchten Sie mehr erfahren? Finden Sie heraus, [was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Sie benötigen Zugriff auf Apps, Daten und Ressourcen Ihrer Organisation, um Ihre Arbeit erledigen zu können. Wenn Sie bei der Arbeit ein Mac OS-Gerät verwenden, muss ein __Verwaltungsprofil__ installiert werden. Hierbei handelt es sich um eine vom Support Ihres Unternehmens eingerichtete Datei, mit der Einstellungen und Zugriffsinformationen auf Ihren Mac geladen werden. Möchten Sie mehr erfahren? Finden Sie heraus, [was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
   > [!NOTE]
   > Wenn Sie versuchen, ein iOS-Gerät – z.B. ein iPhone oder ein iPad – zu registrieren, [folgen Sie stattdessen diesen Anweisungen](enroll-your-device-in-intune-ios.md).
 
-1. Suchen Sie im __Dock__ nach __Safari__, und öffnen Sie ein neues Fenster. Öffnen Sie dann die [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+1. Suchen Sie im __Dock__ nach __Safari__, und öffnen Sie ein neues Fenster. Öffnen Sie dann die [Unternehmensportal-Website](https://portal.manage.microsoft.com).
 2. Melden Sie sich bei mit Ihrem Geschäfts-, Schul- oder Unikonto bei der Unternehmensportal-Website an.
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
@@ -65,4 +65,4 @@ Sie benötigen Zugriff auf Apps, Daten und Ressourcen Ihrer Organisation, um Ihr
 
  ![Installiertes Mac OS-Profil](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Sie finden entsprechende Kontaktinformationen auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Sie finden entsprechende Kontaktinformationen auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

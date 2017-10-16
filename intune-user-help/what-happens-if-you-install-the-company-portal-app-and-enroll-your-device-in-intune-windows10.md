@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 53fe121c5d565fe7bd35843b92f9480cfd5bd5e8
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 31b6545b0518e369b95b6e4830617988aa806112
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Windows 10-Gerät bei Intune registrieren?
 
@@ -34,22 +34,22 @@ Wenn Sie die Unternehmensportal-App installieren und dann mithilfe der App Ihr W
 
 -   Zurücksetzen Ihres Smartphones auf die Werkseinstellungen bei Verlust oder Diebstahl
 
-Die Registrierungsschritte finden Sie unter [Registrieren Ihres Windows 10 Mobile- oder Windows 10-Desktopgeräts bei Intune](enroll-your-w10-phone-or-w10-pc-windows.md). Informationen darüber, was Ihr IT-Administrator auf Ihrem Gerät sehen kann, finden Sie unter [Was kann Ihr IT-Administrator sehen, wenn Sie Ihr Gerät bei Intune registrieren?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+Die Registrierungsschritte finden Sie unter [Registrieren Ihres Windows 10 Mobile- oder Windows 10-Desktopgeräts bei Intune](enroll-your-w10-phone-or-w10-pc-windows.md). Informationen darüber, was der Unternehmenssupport auf Ihrem Gerät sehen kann, finden Sie unter [Was kann der Support meines Unternehmens sehen, wenn ich mein Gerät bei Intune registriere?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
 Wenn Sie einen Computer hinzufügen:
 
--   Auf Ihrem Computer wird Software installiert, mit deren Hilfe Ihr IT-Administrator den Computer verwalten kann und mit der Sie Unternehmensressourcen wie Apps und Supportinformationen abrufen können. Ihr IT-Administrator kann diese Software möglicherweise automatisch aktualisieren.
+-   Auf Ihrem Computer wird Software installiert, mit deren Hilfe der Support Ihres Unternehmens den Computer verwalten kann und mit der Sie Unternehmensressourcen wie Apps und Supportinformationen abrufen können. Der Support Ihres Unternehmens aktualisiert diese Software möglicherweise automatisch.
 
 -   Intune Endpoint Protection wird möglicherweise auf Ihrem Computer installiert. Diese Software überprüft den Computer auf Viren und Malware.
 
--   Ihr IT-Administrator kann die gesamte auf dem Computer installierte Software inventarisieren. Software, die Sie persönlich installiert haben, kann dabei eingeschlossen werden.
+-   Der Support Ihres Unternehmens kann die gesamte auf dem Computer installierte Software inventarisieren, einschließlich der Software, die Sie persönlich installiert haben.
 
 -   Sie müssen unter Umständen Nutzungsbedingungen akzeptieren.
 
--   Der IT-Administrator kann Daten von der Festplatte Ihres Computers sammeln oder löschen. Ihr IT-Administrator könnte auch die gesamte Festplatte löschen.
+-   Der Support Ihres Unternehmens kann Daten von der Festplatte Ihres Computers sammeln oder löschen. Er kann auch die gesamte Festplatte löschen.
 
--   Ihr IT-Administrator kann Apps und Updates auf dem Computer installieren.
+-   Er kann Apps und Updates auf Ihrem Computer installieren.
 
--   Ihr IT-Administrator könnte Richtlinien auf dem Computer erzwingen. Beispielsweise könnte von Ihnen angefordert werden, ein Kennwort oder eine PIN auf dem Computer festzulegen. Ihr IT-Administrator kann möglicherweise auch einschränken, wie oft Sie ein falsches Kennwort eingeben können und den Computer für Sie sperren oder alle Daten von der Festplatte Ihres Computers löschen, wenn Sie das Kennwort zu oft falsch eingeben.
+-   Darüber hinaus kann der Support Ihres Unternehmens Richtlinien auf dem Computer erzwingen. Beispielsweise könnte von Ihnen angefordert werden, ein Kennwort oder eine PIN auf dem Computer festzulegen. Der Support Ihres Unternehmens kann möglicherweise auch einschränken, wie oft Sie ein falsches Kennwort eingeben können und den Computer für Sie sperren oder alle Daten von der Festplatte Ihres Computers löschen, wenn Sie das Kennwort zu oft falsch eingeben.
 
-Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Wenn Sie Fragen haben, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3c110bab95cbdb7c0dbe3fbe47d34b4cad5aaf07
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrieren eines Windows 10-Geräts bei Intune
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 07/01/2017
 
     ![Anmelden](./media/W10-enroll-4-sign-in.png)
 
-Können Sie immer noch nicht auf Ihre Geschäfts-, Schul- oder Uni-E-Mails, -Dateien oder entsprechende andere Daten zugreifen? Versuchen Sie, den Zugriff durch die [Behandlung von Problemen mit Ihrem Konto](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) zu reparieren. Wenn es weiterhin nicht funktioniert, müssen Sie sich an Ihren IT-Administrator wenden, um weitere Hilfe zu erhalten.
+Können Sie immer noch nicht auf Ihre Geschäfts-, Schul- oder Uni-E-Mails, -Dateien oder entsprechende andere Daten zugreifen? Versuchen Sie, den Zugriff durch die [Behandlung von Problemen mit Ihrem Konto](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) zu reparieren. Wenn es weiterhin nicht funktioniert, müssen Sie sich an den Support Ihres Unternehmens wenden, um weitere Hilfe zu erhalten.
 
-Über die Kontaktinformationen, die in der Unternehmensportal-App verfügbar sind, können Sie ganz einfach Hilfe von Ihrem IT-Administrator anfordern. Dort finden Sie auch für Ihre tägliche Arbeit empfohlene und erforderliche Apps zum Download. Es ist möglich, dass Sie bereits die Unternehmensportal-App auf Ihrem Gerät installiert haben. Um zu prüfen, ob Sie die App haben, suchen Sie in Ihrer Liste __Alle Apps__ nach __Unternehmensportal__.
+Über die Kontaktinformationen, die in der Unternehmensportal-App verfügbar sind, können Sie ganz einfach Hilfe vom Support Ihres Unternehmens anfordern. Dort finden Sie auch für Ihre tägliche Arbeit empfohlene und erforderliche Apps zum Download. Es ist möglich, dass Sie bereits die Unternehmensportal-App auf Ihrem Gerät installiert haben. Um zu prüfen, ob Sie die App haben, suchen Sie in Ihrer Liste __Alle Apps__ nach __Unternehmensportal__.
 
 Wenn das Unternehmensportal nicht in der Liste der Apps angezeigt wird, gehen Sie folgendermaßen vor, um es zu installieren.
 

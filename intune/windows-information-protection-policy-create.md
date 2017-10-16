@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 524b4b506855b50bb5312dc31e98eb5f451cb66d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune
 
@@ -155,16 +155,13 @@ Nachdem Sie WIP deaktiviert haben, wird versucht, WIP-getaggte Dateien auf den l
 
 ### <a name="use-wip-learning"></a>Verwenden von WIP Learning
 
-1. Navigieren Sie zum Azure-Dashboard. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
+1. Öffnen Sie das Azure-Portal. Wählen Sie **Weitere Dienste** aus. Geben Sie **Intune** in das Filtertextfeld ein.
 
-2. Wählen Sie im linken Menü **Weitere Dienste** aus, und geben Sie in das Filtertextfeld die Zeichenfolge **Intune** ein.
+3. Klicken Sie auf **Intune** > **Mobile Apps**.
 
-3. Wählen Sie **Intune** aus. Daraufhin wird das **Intune-Dashboard** geöffnet. Wählen Sie dann **Mobile Apps** aus.
-
-4. Wählen Sie unter **Überwachen** die Option **WIP Learning** aus. Es werden die unbekannten Apps angezeigt, die von WIP Learning protokolliert wurden.
-
-> [!IMPORTANT]
-> Wenn die Apps im WIP Learning-Protokollierungsbericht angezeigt werden, können Sie sie in Ihre App Schutzrichtlinien importieren.
+4. Klicken Sie anschließend auf **Status des App-Schutzes** > **Berichte** > **Windows Information Protection-Tutorial**.  
+ 
+    Wenn dann die Apps im WIP Learning-Protokollierungsbericht angezeigt werden, können Sie sie zu Ihren App-Schutzrichtlinien hinzufügen.
 
 ## <a name="deploy-your-wip-app-protection-policy"></a>Bereitstellen der WIP-App-Schutzrichtlinie
 

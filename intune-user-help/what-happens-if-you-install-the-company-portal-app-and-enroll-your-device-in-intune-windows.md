@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 052de47e19f4e171428ee22b4701ed516461231f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 926e09173918488d6beb1f0e3f725a0cff2971b4
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Windows-Gerät bei Intune registrieren?
 
-Wenn Sie die Unternehmensportal-App installieren und damit anschließend ein Windows- oder Windows Phone-Gerät registrieren, erlauben Sie Ihrem IT-Administrator, Ihr Gerät zu verwalten, um die Daten von Unternehmen oder Schule zu schützen. In diesem Thema wird beschrieben, was bei Geräten mit einer früheren Version als Windows 10 geschieht. Windows 10-Geräte werden im [verwandten Thema](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) behandelt.
+Wenn Sie die Unternehmensportal-App installieren und darüber anschließend ein Windows- oder Windows Phone-Gerät registrieren, erlauben Sie der Supportabteilung Ihres Unternehmens bzw. Ihrer Schule oder Universität, Ihr Gerät zu verwalten, um die Daten des Unternehmens bzw. der Schule oder Universität zu schützen. In diesem Thema wird beschrieben, was bei Geräten mit einer früheren Version als Windows 10 geschieht. Windows 10-Geräte werden im [verwandten Thema](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) behandelt.
 
 ## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>Was mit allen Windows-Geräten nach der Registrierung geschieht
 Wenn Sie Ihr Windows- oder Windows Phone-Gerät bei Intune registrieren, haben Sie folgende Möglichkeiten:
@@ -37,15 +37,15 @@ Wenn Sie Ihr Windows- oder Windows Phone-Gerät bei Intune registrieren, haben S
 
 -   Zurücksetzen Ihres Smartphones auf die Werkseinstellungen bei Verlust oder Diebstahl
 
-Wenn Sie Ihr Gerät registrieren, erteilen Sie Ihrem IT-Administrator eine Berechtigung für Aktionen wie die folgenden:
+Wenn Sie Ihr Gerät registrieren, erteilen Sie der Supportabteilung Ihres Unternehmens eine Berechtigung für Aktionen wie die folgenden:
 
 -   Zurücksetzen des Geräts auf die Werkseinstellungen. Dies ist hilfreich, wenn das Gerät verloren geht oder gestohlen wird.
 
 -   Entfernen von ausschließlich unternehmensrelevanten Dateien und Geschäfts-Apps. *Ihre persönlichen Daten und Einstellungen werden nicht entfernt.*
 
--   Ihr IT-Administrator kann die auf dem Gerät installierte Software anzeigen, einschließlich Software, die Sie persönlich installiert haben.
+-   Die Supportabteilung Ihres Unternehmens kann die auf dem Gerät installierte Software sehen – u.a. auch die Software, die Sie persönlich installiert haben.
 
--   Festlegen von Anforderungen auf Ihrem Gerät. Beispielsweise muss ein Gerätekennwort oder eine PIN festgelegt sein, um zu helfen, Unternehmensdaten zu schützen. Ihr IT-Administrator kann möglicherweise auch einschränken, wie oft Sie ein falsches Kennwort eingeben können und das Gerät für Sie sperren, wenn Sie das Kennwort zu oft falsch eingeben.
+-   Festlegen von Anforderungen auf Ihrem Gerät. Beispielsweise muss ein Gerätekennwort oder eine PIN festgelegt sein, um zu helfen, Unternehmensdaten zu schützen. Der Support Ihres Unternehmens kann möglicherweise auch einschränken, wie oft Sie ein falsches Kennwort eingeben können, und das Gerät für Sie sperren, wenn Sie das Kennwort zu oft falsch eingeben.
 
 -   Erfordern, dass Sie die Daten auf Ihrem Gerät verschlüsseln, um Unternehmensdaten bei Verlust oder Diebstahl Ihres Geräts zu schützen.
 
@@ -55,22 +55,22 @@ Wenn Sie Ihr Gerät registrieren, erteilen Sie Ihrem IT-Administrator eine Berec
 
 ## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>Was mit allen Windows-PCs nach der Registrierung geschieht
 
--  Auf Ihrem Computer wird Software installiert, mit deren Hilfe Ihr IT-Administrator den Computer verwalten kann und mit der Sie Unternehmensressourcen wie Apps und Supportinformationen abrufen können. Ihr IT-Administrator kann diese Software möglicherweise automatisch aktualisieren.
+-  Auf Ihrem Computer wird Software installiert, mit deren Hilfe die Supportabteilung Ihres Unternehmens den Computer verwalten kann und mit der Sie Unternehmensressourcen wie Apps und Supportinformationen abrufen können. Die Supportabteilung Ihres Unternehmens kann diese Software möglicherweise automatisch aktualisieren.
 
 -  Intune Endpoint Protection wird möglicherweise auf Ihrem Computer installiert. Diese Software überprüft den Computer auf Viren und Malware.
 
--  Der IT-Administrator kann Daten von der Festplatte Ihres Computers sammeln oder löschen.
+-  Die Supportabteilung Ihres Unternehmens kann Daten von der Festplatte Ihres Computers sammeln oder löschen.
 
--  Ihr IT-Administrator kann Apps und Updates auf dem Computer installieren.
+-  Sie kann außerdem Apps und Updates auf Ihrem Computer installieren.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Was nach der Registrierung des Geräts alle acht Stunden geschieht
 
 Etwa alle acht Stunden führen registrierte Geräte folgende Aktionen aus:
 
--   Herunterladen aller Richtlinien- oder App-Updates, die Ihr IT-Administrator zur Verfügung gestellt hat.
+-   Herunterladen aller Richtlinien- oder App-Updates, die der Support Ihres Unternehmens zur Verfügung gestellt hat.
 
 -   Senden aller Hardwareinventur-Updates.
 
 -   Senden aller Unternehmens-App-Inventaraktualisierungen.
 
-Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Wenn Sie Fragen haben, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

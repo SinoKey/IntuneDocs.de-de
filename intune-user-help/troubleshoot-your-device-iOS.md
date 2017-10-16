@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3869659ea95f561365f40bcfcd164b82a7795ac0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 50b4b9c8399e854e2f5961f6711090778b41ba37
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>Behandeln häufig auftretender Probleme mit dem iOS-Gerät
 
-Gelegentlich können Probleme mit dem iOS-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Probleme empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) an Ihren IT-Administrator zu wenden.
+Gelegentlich können Probleme mit dem iOS-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Problemen empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) an den Support Ihres Unternehmens zu wenden.
 
 - [Ich muss die Verbindung zu einem gefährdeten iOS-Geräts wiederherstellen](how-to-reconnect-a-compromised-ios-device.md)
-- [Ich muss Fehlermeldungen an einen IT-Administrator senden](send-errors-to-your-it-admin-ios.md)
+- [Ich muss Fehlermeldungen an den Support meines Unternehmens senden](send-errors-to-your-it-admin-ios.md)
 - [Ich muss Fehlermeldungen an Microsoft senden](send-logs-to-microsoft-ios.md)
 - [Bei Verwendung der Unternehmensportal-App ist ein Fehler aufgetreten](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [Ich muss mein Gerät für die Registrierung identifizieren](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)

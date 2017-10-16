@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: afd9d8263deaeadfd802806167fbbaff730555c9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4ef4b297a3c841897aa702d793f675584df39eb4
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Registrieren Ihres Windows 8.1- oder Windows RT 8.1-Geräts bei Intune
 
-Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ihre Geräte registrieren, um Zugriff auf Unternehmens-E-Mails, Dateien und weitere Ressourcen zu erhalten. Wenn Sie Ihre Geräte registrieren, kann Ihre Organisation Unternehmensdaten schützen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) und unter [Was Ihr IT-Administrator auf Ihrem Gerät sehen bzw. nicht sehen kann](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ihre Geräte registrieren, um Zugriff auf Unternehmens-E-Mails, Dateien und weitere Ressourcen zu erhalten. Wenn Sie Ihre Geräte registrieren, kann Ihre Organisation Unternehmensdaten schützen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) und unter [Was der Support Ihres Unternehmens auf Ihrem Gerät sehen bzw. nicht sehen kann](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 
 So registrieren Sie Ihr Windows 8.1- oder Windows RT 8.1-Gerät:
@@ -45,7 +45,7 @@ So registrieren Sie Ihr Windows 8.1- oder Windows RT 8.1-Gerät:
 
     ![Aktivieren der Geräteverwaltung](./media/W81-3-dev-mgt-turn-on.png)
 
-5.  Aktivieren Sie im Dialogfeld **Apps und Dienste des IT-Administrators zulassen** das Kästchen **Ich stimme zu**, und tippen Sie dann auf **Aktivieren**.
+5.  Aktivieren Sie im Dialogfeld **Allow apps and services from company support** (Apps und Dienste des Supports Ihres Unternehmens zulassen) das Kontrollkästchen **Ich stimme zu**, und tippen Sie dann auf **Aktivieren**.
 
     ![Aktivieren von Apps und Diensten](./media/W81-4-agree-allow-apps-services.png)
 
@@ -63,4 +63,4 @@ Außerdem wird empfohlen, dass Sie die Unternehmensportal-App installieren, mit 
 
 4.  Tippen Sie auf **Installieren** oder **Kostenlos**. Die angezeigte Option hängt davon ab, wie Ihr Unternehmen die App eingerichtet hat.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

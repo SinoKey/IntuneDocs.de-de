@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d94e3a79af1951debc4dd04413efff8f4c716545
-ms.sourcegitcommit: d2a4f4477b3bf90aac6a9db77d41747e64ad7df4
+ms.openlocfilehash: e6d5bb79925588e78d2536e3c322ccbf5dd970c5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>Bei aktivierter Akkuoptimierung für Android synchronisiert Outlook keine verwalteten E-Mails
 
 > [!IMPORTANT]
-> Dieses Problem wird hier dokumentiert, da diesbezüglich vermehrt Kundenberichte eingetroffen sind. Wenn das Problem nach Ausführung dieser Schritte weiterhin auftritt, wenden Sie sich für zusätzliche Hilfe an [Ihren IT-Administrator](https://portal.manage.microsoft.com).
+> Dieses Problem wird hier dokumentiert, da diesbezüglich vermehrt Kundenberichte eingetroffen sind. Wenn das Problem nach Ausführung dieser Schritte weiterhin auftritt, wenden Sie sich für zusätzliche Hilfe an [die Supportabteilung Ihres Unternehmens](https://portal.manage.microsoft.com).
 
 Durch die Registrierung Ihres Geräts bei Intune können Sie auf Unternehmensressourcen zugreifen. Eine der gebräuchlichsten Ressourcen ist der E-Mail-Zugriff. Ein Problem, das bei Android-Geräten beim Zugriff auf E-Mails über Outlook beobachtet wurde, tritt bei aktivierter Akkuoptimierung auf. Die Akkuoptimierung wird möglicherweise automatisch aktiviert, damit Ihr Gerät so lange wie möglich eingeschaltet bleibt. Auf diese Weise kann die Akkuoptimierung teilweise hilfreich sein, da sie versucht, das automatische Herunterladen von E-Mails zu beenden.
 
@@ -73,4 +73,4 @@ Diese Einstellungen können beispielsweise auch über die Suche in den Systemein
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

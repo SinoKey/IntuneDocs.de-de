@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 088012a1dd9ee1997e7d2b578e54774c4bd586fb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2692bc1e6652d5290afd577247344762e5bcb91a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="check-compliance-on-your-android-device"></a>Überprüfen der Kompatibilität auf Ihrem Android-Gerät
 
@@ -30,4 +30,4 @@ Wenn Ihr Gerät sich eine Zeit lang nicht bei Intune angemeldet hat, können Sie
 
 2. Tippen Sie auf **Kompatibilität prüfen**.
 
-Wenn Sie Ihr verlorenes oder gestohlenes Gerät nicht zurücksetzen können, bitten Sie Ihren IT-Administrator, es zurückzusetzen. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Wenn Sie Ihr verlorenes oder gestohlenes Gerät nicht zurücksetzen können, bitten Sie den Support Ihres Unternehmens, es zurückzusetzen. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

@@ -15,21 +15,21 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 976b58fcc7835b0992c5d53934642bd4fedb5b50
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Behandeln häufig auftretender Probleme mit Ihrem Android-Gerät
 
-Gelegentlich können Probleme mit Ihrem iOS-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Probleme empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) an Ihren IT-Administrator zu wenden.
+Gelegentlich können Probleme mit Ihrem iOS-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Problemen empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) an den Support Ihres Unternehmens zu wenden.
 
 - [Überprüfen der Kompatibilität auf Ihrem Android-Gerät](check-compliance-on-your-device-android.md)
-- [Verwenden der ausführlichen Protokollierung zur Unterstützung Ihres IT-Administrators bei der Behebung von Geräteproblemen](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Senden von Protokollen an Ihren IT-Administrator per E-Mail](send-logs-to-your-it-admin-by-email-android.md)
-- [Senden von Protokollen an Ihren IT-Administrator über ein USB-Kabel](send-logs-to-your-it-admin-using-cable-android.md)
-- [Senden von Registrierungsfehlern an Ihren IT-Administrator](send-enrollment-errors-to-your-it-admin-android.md)
+- [Verwenden der ausführlichen Protokollierung zur Unterstützung des Supports Ihres Unternehmens bei der Behebung von Geräteproblemen](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+- [Senden von Protokollen an den Support Ihres Unternehmens per E-Mail](send-logs-to-your-it-admin-by-email-android.md)
+- [Senden von Protokollen an den Support Ihres Unternehmens mithilfe eines USB-Kabels](send-logs-to-your-it-admin-using-cable-android.md)
+- [Senden von Registrierungsfehlermeldungen an den Support Ihres Unternehmens](send-enrollment-errors-to-your-it-admin-android.md)
 - [Sie müssen Ihr Android-Gerät aktualisieren](you-need-to-update-your-android-device.md)
 - [Gerät entspricht nicht der maximalen Betriebssystemversion](your-android-version-isnt-yet-supported.md)
 - [Von Ihrem Gerät wurden die Nutzungsbeschränkungen entfernt, und Sie können keine Verbindung herstellen](your-device-is-rooted-and-you-cant-connect-android.md)

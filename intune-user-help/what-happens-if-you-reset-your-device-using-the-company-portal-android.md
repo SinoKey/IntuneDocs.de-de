@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6ffed5dc15722facdccc9f25e5694a03b03346b0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b6796d004a966cd6ed3032ce7243377743e40927
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>Was geschieht, wenn Sie Ihr Android-Gerät mit dem Unternehmensportal zurücksetzen?
 
@@ -28,8 +28,8 @@ Wenn Sie das Unternehmensportal zum Zurücksetzen Ihres Android-Geräts verwende
 
 Wenn Sie über ein Samsung KNOX-Gerät verfügen, können Sie ein „selektives Zurücksetzen“ durchführen, indem Sie im Unternehmensportal die Option **Gerät entfernen** auswählen. Selektives Zurücksetzen entfernt nur:
 
-- Unternehmens-Apps, die Ihr IT-Administrator Ihnen zur Verfügung stellt
+- Geschäftsanwendungen, die der Support Ihres Unternehmens Ihnen zur Verfügung stellt
 - E-Mail-, VPN- und WLAN
-- die Fähigkeit des IT-Administrators, bestimmte Einstellungen zu erzwingen
+- die Fähigkeit des Supports Ihres Unternehmens, bestimmte Einstellungen zu erzwingen
 
-Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Wenn Sie Fragen haben, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
