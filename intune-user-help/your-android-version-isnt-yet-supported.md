@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7568ce8f8a5cb648f1f250751f1a03c7c55a0fd2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6a2a14548a57e26fe322d0c28cb515e6590acb69
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-android-devices-operating-system-version-isnt-yet-supported"></a>Die Betriebssystemversion Ihres Android-Geräts wird noch nicht unterstützt
 
-Bei der Geschwindigkeit der Entwicklungen im Bereich der Technologien ist Ihr Gerät möglicherweise manchmal der Software voraus, die von Ihrem IT-Administrator bislang getestet wurde. Die Tatsache, dass Sie die neueste Version von Android verwenden, kann dazu führen, dass einige der anderen Tools Ihres Unternehmens auf Ihrem Gerät nicht funktionieren.
+Aufgrund der rasanten technologischen Entwicklung kann Ihr Gerät denjenigen Geräten einen Schritt voraus sein, die der Support Ihres Unternehmens bereits testen konnte. Die Tatsache, dass Sie die neueste Version von Android verwenden, kann dazu führen, dass einige der anderen Tools Ihres Unternehmens auf Ihrem Gerät nicht funktionieren.
 
-Sie müssen sich an Ihren IT-Administrator wenden, um dieses Problem zu beheben. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Um dieses Problem zu beheben, müssen Sie sich an den Support Ihres Unternehmens wenden. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

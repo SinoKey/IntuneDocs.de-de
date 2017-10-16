@@ -1,5 +1,5 @@
 ---
-title: "Senden von Protokollen an Ihren IT-Administrator über ein USB-Kabel | Microsoft-Dokumentation"
+title: Senden von Protokollen an den Support Ihres Unternehmens mithilfe eines USB-Kabels | Microsoft-Dokumentation
 description: "Senden von Datenprotokollen über ein USB-Kabel"
 keywords: 
 author: barlanmsft
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3e91ccb2aae973892044f19d0d26c7f57bd5d786
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f6df910d60498b0ed272ebeb86d54273e8c6dd1a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-using-a-usb-cable"></a>Senden von Protokollen an Ihren IT-Administrator über ein USB-Kabel
+# <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Senden von Protokollen an den Support Ihres Unternehmens mithilfe eines USB-Kabels
 
-Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App auf Ihrem Android-Gerät verwenden, können Sie Informationen über den Fehler senden, um Ihrem IT-Administrator bei der Behandlung des Problems zu helfen. Die Informationen werden auf Ihrem Gerät in einem speziellen Dokument (einem so genannten _Diagnoseprotokoll_) gespeichert.
+Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App auf Ihrem Android-Gerät verwenden, können Sie Informationen über den Fehler per E-Mail senden, um dem Support Ihres Unternehmens bei der Behandlung des Problems zu helfen. Die Informationen werden auf Ihrem Gerät in einem speziellen Dokument (einem so genannten _Diagnoseprotokoll_) gespeichert.
 
 > [!Note]
-> Bevor Sie beginnen, stellen Sie sicher, dass Sie die E-Mail-Adresse Ihres IT-Administrators zur Hand haben. Sie wird auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com) oder in Ihrer Unternehmensportal-App aufgeführt.
+> Bevor Sie beginnen, stellen Sie sicher, dass Sie die E-Mail-Adresse des Supports Ihres Unternehmens zur Hand haben. Sie wird auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com) oder in Ihrer Unternehmensportal-App aufgeführt.
 
 1.  Tippen Sie auf dem Fehlerbildschirm auf **Info senden**. Wenn Sie in einer Meldung gefragt werden, über welche Methode Sie die Protokolle senden möchten, wählen Sie die Option aus, bei der die Dateien auf Ihrem Gerät gespeichert werden.
 
@@ -35,6 +35,6 @@ Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App au
 
 3.  Suchen Sie auf dem Computer nach einem Verzeichnis mit dem Namen Ihres Geräts. Suchen Sie in diesem Verzeichnis nach **<Android-Gerät>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\**.
 
-4.  Wählen Sie die Dateien aus, und fügen Sie sie an eine E-Mail-Nachricht an. Senden Sie diese E-Mail an Ihren IT-Administrator.
+4.  Wählen Sie die Dateien aus, und fügen Sie sie an eine E-Mail-Nachricht an. Senden Sie diese E-Mail an den Support Ihres Unternehmens.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

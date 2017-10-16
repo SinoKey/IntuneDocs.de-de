@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e9057866ac8f8e5d8487a93401282117a72015cd
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 38ee5446c679472927f4dccecfdc56f1228fb92c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Android-Gerät bei Intune registrieren?
 
@@ -34,13 +34,13 @@ Wenn Sie die Unternehmensportal-App installieren und Ihr Android-Gerät bei Intu
 
 -   Zurücksetzen Ihres Smartphones auf die Werkseinstellungen bei Verlust oder Diebstahl
 
-Wenn Sie Ihr Android-Gerät registrieren, erteilen Sie Ihrem IT-Administrator eine Zugriffsberechtigung für das Gerät. IT-Administratoren können folgende Dinge tun:
+Wenn Sie Ihr Android-Gerät registrieren, erteilen Sie der Supportabteilung Ihres Unternehmens eine Zugriffsberechtigung für das Gerät. IT-Administratoren können folgende Dinge tun:
 
 -   Zurücksetzen des Geräts auf die Werkseinstellungen. Dies ist hilfreich, wenn das Gerät verloren geht oder gestohlen wird.
 
 -   Entfernen aller unternehmensrelevanten Daten. Ihre persönlichen Daten und Einstellungen werden nicht entfernt.
 
--   Festlegen von Anforderungen auf Ihrem Gerät. Beispielsweise muss ein Gerätekennwort oder eine PIN festgelegt sein, um zu helfen, Unternehmensdaten zu schützen. Ihr IT-Administrator kann möglicherweise auch einschränken, wie oft Sie ein falsches Kennwort eingeben können und das Gerät für Sie sperren, wenn Sie das Kennwort zu oft falsch eingeben.
+-   Festlegen von Anforderungen auf Ihrem Gerät. Beispielsweise muss ein Gerätekennwort oder eine PIN festgelegt sein, um zu helfen, Unternehmensdaten zu schützen. Der Support Ihres Unternehmens kann möglicherweise auch einschränken, wie oft Sie ein falsches Kennwort eingeben können, und das Gerät für Sie sperren, wenn Sie das Kennwort zu oft falsch eingeben.
 
 -   Sie müssen die Bedingungen akzeptieren.
 
@@ -50,10 +50,10 @@ Wenn Sie Ihr Android-Gerät registrieren, erteilen Sie Ihrem IT-Administrator ei
 
 Nachdem das Gerät zum Unternehmensportal hinzugefügt wurde, erfolgt im Intervall von ca. acht Stunden Folgendes:
 
--   Herunterladen aller Richtlinien- oder App-Updates, die Ihr IT-Administrator zur Verfügung gestellt hat.
+-   Herunterladen aller Richtlinien- oder App-Updates, die der Support Ihres Unternehmens zur Verfügung gestellt hat.
 
 -   Senden aller Hardwareinventur-Updates. (Diese Updates verfügen über keine privaten Informationen.)
 
 -   Senden aller Unternehmens-App-Inventaraktualisierungen. (Diese Updates verfügen über keine privaten Informationen.)
 
-Benötigen Sie Unterstützung? Wenden Sie sich an Ihren IT-Administrator (suchen Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-Team</a>.
+Benötigen Sie Unterstützung? Wenden Sie sich an die Supportabteilung Ihres Unternehmens (suchen Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Android-Team von Microsoft</a>.

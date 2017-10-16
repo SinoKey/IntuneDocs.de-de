@@ -15,20 +15,20 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 526cfed5e8f42d739c57882b454745ba5b20181c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 483b2155c2f1935a5b0d79b84ab65db1f9fc182d
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Behandeln häufig auftretender Probleme mit Ihrem Windows-Gerät
 
-Gelegentlich können Probleme mit dem Windows-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Probleme empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com) an Ihren IT-Administrator zu wenden.
+Gelegentlich können Probleme mit dem Windows-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Problemen empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) an den Support Ihres Unternehmens zu wenden.
 
 - [Die Registrierung meines Windows 10-Geräts funktioniert nicht](troubleshoot-your-windows-10-device-windows.md)
 - [Ich muss mein Windows-Gerät aktualisieren](you-need-to-update-your-windows-device.md)
-- [Ich muss Protokolle an meinen IT-Administrator über die Unternehmensportal-App senden](send-logs-to-your-it-admin-cp-windows.md)
-- [Ich muss Protokolle an meinen IT-Administrator über die App „Einstellungen“ senden](send-logs-to-your-it-admin-settings-windows.md)
+- [Ich muss Protokolle an den Support meines Unternehmens über die Unternehmensportal-App senden](send-logs-to-your-it-admin-cp-windows.md)
+- [Ich muss Protokolle an den Support meines Unternehmens über die App „Einstellungen“ senden](send-logs-to-your-it-admin-settings-windows.md)
 - [Meine Windows-Version wird noch nicht unterstützt](your-windows-version-isnt-yet-supported.md)
 - [Aktivieren Sie die Verschlüsselung](you-need-to-enable-windows-encryption.md)
 - [Mein Gerät benötigt Antischadsoftware](your-device-needs-antimalware-software.md)

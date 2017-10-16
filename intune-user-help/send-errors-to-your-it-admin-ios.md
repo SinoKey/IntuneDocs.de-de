@@ -1,5 +1,5 @@
 ---
-title: Senden von Fehlern an Ihren IT-Administrator | Microsoft-Dokumentation
+title: Senden von Fehlermeldungen an den Support Ihres Unternehmens | Microsoft-Dokumentation
 description: 
 keywords: 
 author: barlanmsft
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 12fe4702217ad180a94dcf4d79326dd6840a7839
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: aff747c4888c0ad9a222735b8eadf40878cc294b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-errors-to-your-it-admin-for-issues-with-your-ios-device"></a>Senden von Fehlern an Ihren IT-Administrator bei Problemen mit Ihrem iOS-Gerät
+# <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Senden von Fehlermeldungen an den Support Ihres Unternehmens bei Problemen mit Ihrem iOS-Gerät
 
-Wenn Sie auf Ihrem iOS-Gerät eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App verwenden, können Sie Informationen senden, um Ihrem IT-Administrator bei der Behandlung des Problems zu helfen. Sie können Fehlerinformationen auf unterschiedliche Weise senden:
+Wenn Sie auf Ihrem iOS-Gerät eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App verwenden, können Sie Informationen an den Support Ihres Unternehmens senden, um diesem bei der Behandlung des Problems zu helfen. Sie können Fehlerinformationen auf unterschiedliche Weise senden:
 
 -   In Fehlermeldungen: Tippen Sie auf **Melden**.
 
@@ -32,4 +32,4 @@ Wenn Sie auf Ihrem iOS-Gerät eine Fehlermeldung erhalten, während Sie die Unte
 
 -   In der Unternehmensportal-App: Schütteln Sie Ihr Gerät, und tippen Sie auf **Diagnosebericht senden**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** > **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schüttelgeste** aktiviert ist.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

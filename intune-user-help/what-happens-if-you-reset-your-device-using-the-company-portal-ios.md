@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: be7a0e7650e798babba66344e50abe7f958f1dda
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cf3c9d121f2e2578219137161a972d5d58255058
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>Was geschieht, wenn Sie Ihr iOS-Gerät mithilfe des Unternehmensportals zurücksetzen?
 
 Wenn Sie das Unternehmensportal zum Zurücksetzen Ihres iPhones oder iPads verwenden, werden möglicherweise einige Apps oder Einstellungen auf Ihrem Gerät gelöscht. Dazu können auch einige Ihrer persönlichen Daten zählen. Was auf den einzelnen Geräten geschieht, hängt vom Gerät und seiner Verwendung ab, wie in den folgenden Listen beschrieben.
 
-**Ihr IT-Administrator verwaltet Ihr mobiles Gerät**
+**Der Support Ihres Unternehmens verwaltet Ihr mobiles Gerät**
 
 -   Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
 
@@ -38,4 +38,4 @@ Wenn Sie das Unternehmensportal zum Zurücksetzen Ihres iPhones oder iPads verwe
 
 -   Ihr Unternehmens-E-Mail-Konto wird gelöscht, und nicht gespeicherte E-Mails werden gelöscht.
 
-Wenn Sie Fragen haben, wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Wenn Sie Fragen haben, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

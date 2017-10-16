@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6d18e7c2fc0e0aff071b60f5a51238897c56b247
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: eca9ef81acb4d1535649d4e13e1b5b2e18ed109a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>Installieren des virtuellen privaten Netzwerks (VPN) Ihres Unternehmens
 
-Wenn Ihr IT-Administrator eine VPN-App zum Herstellen einer Verbindung mit den Unternehmensressourcen konfiguriert hat, sehen Sie eine Benachrichtigung auf Ihrem Android-Gerät, dass Sie eine VPN-App installieren müssen. Führen Sie zum Installieren der VPN-App die folgenden Schritte aus:
+Wenn der Support Ihres Unternehmens eine VPN-App zum Herstellen einer Verbindung mit den Unternehmensressourcen konfiguriert hat, sehen Sie eine Benachrichtigung auf Ihrem Android-Gerät, dass Sie eine VPN-App installieren müssen. Führen Sie zum Installieren der VPN-App die folgenden Schritte aus:
 
 1.  Öffnen Sie die Benachrichtigung, und tippen Sie auf **Tippen Sie, um diese erforderliche App zu installieren**.
 
@@ -33,4 +33,4 @@ Wenn Ihr IT-Administrator eine VPN-App zum Herstellen einer Verbindung mit den U
 3.  Tippen Sie auf **VPN-Unternehmensprofil installieren**, und befolgen Sie die Anweisungen. Die Installationsschritte weichen möglicherweise etwas ab, je nachdem, mit welchem VPN-Anbieter Ihr Unternehmen zusammenarbeitet.
 
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

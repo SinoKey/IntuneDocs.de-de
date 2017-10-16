@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Verwenden verwalteter Geräte zum Erledigen von Aufgaben
 Microsoft Intune ist eine Softwarekomponente, mit der Betriebe Geräte (z.B. Smartphones, Tablets und PCs), Apps und andere Unternehmensressourcen (z.B. E-Mail-Dienste) verwalten können. Damit erhalten Mitarbeiter Zugriff auf ihre Arbeitsdaten von praktisch überall auf nahezu jedem Gerät, während die Unternehmensdaten gleichzeitig geschützt werden.
@@ -33,8 +33,8 @@ Die IT-Abteilung Ihres Unternehmens kann auf die Informationen zugreifen, die f�
 ## <a name="how-do-i-get-the-company-portal"></a>Wie gelange ich zum Unternehmensportal?
 Sie gelangen auf zwei Arten zum Unternehmensportal:
 
-- Durch Installieren der Unternehmensportal-App auf Ihrem Gerät. In der Regel erhalten Sie die Unternehmensportal-App, indem Sie sie aus dem App Store Ihres Geräts herunterladen. Allerdings kann auch Ihr IT-Administrator die Unternehmensportal-App auf dem Gerät installieren.
-- Durch Besuchen der [Unternehmensportal-Website](https://portal.manage.microsoft.com), die Ihr IT-Administrator eingerichtet hat.
+- Durch Installieren der Unternehmensportal-App auf Ihrem Gerät. In der Regel erhalten Sie die Unternehmensportal-App, indem Sie sie aus dem App Store Ihres Geräts herunterladen. Allerdings kann auch die Supportabteilung Ihres Unternehmens die Unternehmensportal-App für Sie auf Ihrem Gerät installieren.
+- Besuchen Sie die [Unternehmensportal-Website](https://portal.manage.microsoft.com) der Supportabteilung Ihres Unternehmens.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Was ist der Unterschied zwischen der App und der Website?
 Es gibt wenige kleinere Unterschiede zwischen der Unternehmensportal-App und der Unternehmensportal-Website, aber die meisten Aufgaben können Sie sowohl in der App als auch auf der Website genauso ausführen. Aufgaben, die Sie erledigen können, sind die folgenden:
@@ -54,9 +54,9 @@ Wenn Sie die Möglichkeiten der Unternehmensportal-Website mit denen der Unterne
 - [Verwenden der Unternehmensportal-Website](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>Was geschieht beim Hinzufügen eines Computers oder Geräts zum Unternehmensportal?
-Wenn Sie dem Unternehmensportal einen Computer oder ein Gerät hinzufügen, wird je nach Gerät möglicherweise Software installiert oder eine App heruntergeladen. Sie gestatten damit Ihrem IT-Administrator, Ihr Gerät zu verwalten, damit die Unternehmensinformationen auf dem Gerät geschützt werden.
+Wenn Sie dem Unternehmensportal einen Computer oder ein Gerät hinzufügen, wird je nach Gerät möglicherweise Software installiert oder eine App heruntergeladen. Sie gestatten damit der Supportabteilung Ihres Unternehmens, Ihr Gerät zu verwalten, damit die Unternehmensinformationen auf dem Gerät geschützt werden.
 
-Wenn Sie erfahren möchten, was Ihr IT-Administrator auf Ihrem Gerät sehen kann und was er nicht sehen kann, wählen Sie den passenden Link für Ihr Gerät aus:
+Wenn Sie erfahren möchten, was die Supportabteilung Ihres Unternehmens auf Ihrem Gerät sehen kann und was nicht, klicken Sie den entsprechenden Link für Ihr Gerät:
 
 - [Installieren der Unternehmensportal-App für Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [Installieren der Unternehmensportal-App für iOS und macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -96,4 +96,4 @@ Zunächst empfiehlt Microsoft, dass Sie versuchen, Ihr Problem selbst zu lösen.
 - [Behandeln häufig auftretender Probleme mit Ihrem iOS-Gerät](troubleshoot-your-device-ios.md)
 - [Behandeln häufig auftretender Probleme mit Ihrem Windows-Gerät](troubleshoot-your-device-windows.md)
 
-Wenn Sie Hilfe brauchen, können Sie auch unten einen Kommentar verfassen; bitte haben Sie jedoch Verständnis dafür, dass jeder Betrieb unterschiedliche Anforderungen hat, und wir deshalb möglicherweise nicht immer alle Fragen beantworten können. Wenn Sie sich an Ihren IT-Administrator wenden, erhalten Sie wahrscheinlich die schnellste und passendste Rückmeldung. Die entsprechenden Kontaktinformationen sollten Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) finden.
+Wenn Sie Hilfe brauchen, können Sie auch unten einen Kommentar verfassen; bitte haben Sie jedoch Verständnis dafür, dass jeder Betrieb unterschiedliche Anforderungen hat, und wir deshalb möglicherweise nicht immer alle Fragen beantworten können. Wenn Sie sich an die Supportabteilung Ihres Unternehmens wenden, erhalten Sie wahrscheinlich die schnellste und passendste Rückmeldung. Die entsprechenden Kontaktinformationen sollten Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) finden.

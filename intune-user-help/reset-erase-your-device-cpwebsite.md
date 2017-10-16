@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ce0ce291f303b04f0851b93add5f5cde5e2ee13f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cadc8ac211f60fd767dbfa7d412b089c3c1c94ea
+ms.sourcegitcommit: f254f49fc65fc75a779ff721e2202c53d03cb981
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/02/2017
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Zurücksetzen Ihres Geräts über die Unternehmensportalwebsite
 
-Wenn Ihr Gerät verloren geht oder gestohlen wird, empfiehlt es sich, das Gerät auf die Werkseinstellungen zurückzusetzen, um nicht autorisierten Zugriff auf Ihre Daten zu verhindern. Sie können Ihr Gerät remote über die [Unternehmensportalwebsite](http://portal.manage.microsoft.com) zurücksetzen. Die Unternehmensportal-Website ist eine Webseite, die Sie verwenden können, um Computer und Geräte zu verwalten, die Sie in Intune registriert haben. Auf dieser Website können Sie die meisten der Aufgaben ausführen, die Sie auch mithilfe Ihrer Unternehmensportal-App ausführen können.
+Wenn Ihr Gerät verloren geht oder gestohlen wird, empfiehlt es sich, das Gerät auf die Werkseinstellungen zurückzusetzen, um nicht autorisierten Zugriff auf Ihre Daten zu verhindern. Sie können Ihr Gerät remote über die [Unternehmensportalwebsite](https://portal.manage.microsoft.com) zurücksetzen. Die Unternehmensportal-Website ist eine Webseite, die Sie verwenden können, um Computer und Geräte zu verwalten, die Sie in Intune registriert haben. Auf dieser Website können Sie die meisten der Aufgaben ausführen, die Sie auch mithilfe Ihrer Unternehmensportal-App ausführen können.
 
 Wenn Sie Ihr Gerät zurücksetzen, wird es im Unternehmensportal nicht mehr aufgeführt und auf die Werkseinstellungen zurückgesetzt.
 
@@ -33,7 +33,7 @@ Wenn Sie Ihr Gerät zurücksetzen, wird es im Unternehmensportal nicht mehr aufg
 
 So setzen Sie Ihr Gerät zurück:
 
-1.  Tippen Sie auf der [Unternehmensportalwebsite](http://portal.manage.microsoft.com) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
+1.  Tippen Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) auf die Schaltfläche __menu__ (Menü) und dann auf __My Devices__ (Meine Geräte).
 
 2. Wählen Sie auf der Seite __Meine Geräte__ den Namen des Geräts aus, das Sie umbenennen möchten.
 
@@ -47,4 +47,4 @@ So setzen Sie Ihr Gerät zurück:
 
 Ihr Gerät wurde zurückgesetzt.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

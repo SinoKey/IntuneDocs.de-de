@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 22144721ba6bfad565009b306e7216ad1e5582af
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 162e2262067d38d792e23c8a98d52e81cf548bbe
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-ios-devices-operating-system-version-isnt-yet-supported"></a>Die Betriebssystemversion Ihres iOS-Geräts wird noch nicht unterstützt
 
-Bei der Geschwindigkeit der Entwicklungen im Bereich der Technologien ist Ihr Gerät möglicherweise manchmal der Software voraus, die von Ihrem IT-Administrator bislang getestet wurde. Die Tatsache, dass Sie die neueste Version von iOS verwenden, kann dazu führen, dass einige der anderen Tools Ihres Unternehmens auf Ihrem Gerät nicht funktionieren.
+Aufgrund der rasanten technologischen Entwicklung kann Ihr Gerät über ein Betriebssystem verfügen, das der Support Ihres Unternehmens noch nicht testen konnte. Die Tatsache, dass Sie die neueste Version von iOS verwenden, kann dazu führen, dass einige der anderen Tools Ihres Unternehmens auf Ihrem Gerät nicht funktionieren.
 
-Sie müssen sich an Ihren IT-Administrator wenden, um dieses Problem zu beheben. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Wenden Sie sich an den Support Ihres Unternehmens, um dieses Problem zu beheben. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

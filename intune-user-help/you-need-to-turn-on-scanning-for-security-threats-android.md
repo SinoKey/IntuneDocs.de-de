@@ -14,16 +14,16 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 668f105b65f5bdd8d05600a935aba3c0d46314d5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 61a9d7006a19888e0a43762b59300fcc62c1313c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>Sie müssen bei Ihrem Gerät die Überprüfung auf Sicherheitsbedrohungen aktivieren.
 
-Sie können auf Ihr Android-Gerät Apps herunterladen und installieren, die eine Vielzahl von Aufgaben ausführen können. Einige Apps können jedoch Probleme verursachen. Wir empfehlen daher, Apps ausschließlich aus überprüften Quellen, z.B. dem Google Play Store, herunterzuladen. Um zusätzlichen Schutz für die Daten auf Ihrem Gerät zu gewährleisten, kann Ihr IT-Administrator die Überprüfung durch Google aktivieren, mit der überprüft wird, ob installierte Apps sicher sind.
+Sie können auf Ihr Android-Gerät Apps herunterladen und installieren, die eine Vielzahl von Aufgaben ausführen können. Einige Apps können jedoch Probleme verursachen. Wir empfehlen daher, Apps ausschließlich aus überprüften Quellen, z.B. dem Google Play Store, herunterzuladen. Um zusätzlichen Schutz für die Daten auf Ihrem Gerät zu gewährleisten, kann der Support Ihres Unternehmens die Überprüfung durch Google aktivieren. Dadurch wird bei der Installation von Apps geprüft, ob diese sicher sind.
 
 Unter **Einstellungen** > **Google** > **Sicherheit** können Sie die Einstellung **Gerät auf Sicherheitsbedrohungen überprüfen** aktivieren.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

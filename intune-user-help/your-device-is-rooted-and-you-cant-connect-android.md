@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 501bbb1d75ec2302f7564e7a62eb5b04f40a2d04
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0a91b167911d203cd3bd1e7645e5cacbc2eb6534
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Von Ihrem Android-Gerät wurden die Nutzungsbeschränkungen entfernt, daher können Sie keine Verbindung herstellen
 
@@ -32,6 +32,6 @@ Es gibt ein paar gängige Methoden, wie die Nutzungsbeschränkungen möglicherwe
 
 - Sie könnten eine App auf Ihrem Gerät installiert haben, die die Rooterkennungssoftware als Sicherheitsrisiko einstuft. Wenn diese Meldung unmittelbar nach der Installation einer App angezeigt wird, deinstallieren Sie die App wieder.
 
-- Der Hersteller des Geräts hat Software auf Ihrem Gerät installiert, die die Rooterkennungssoftware als Sicherheitsrisiko einstuft. Bitten Sie in diesem Fall Ihren IT-Administrator um Unterstützung. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+- Der Hersteller des Geräts hat Software auf Ihrem Gerät installiert, die die Rooterkennungssoftware als Sicherheitsrisiko einstuft. Kontaktieren Sie in diesem Fall die Supportabteilung Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
 
 Wenn Sie selbst die Nutzungsbeschränkungen von Ihrem Gerät entfernt haben, müssen Sie den Vorgang rückgängig machen und das Gerät wieder in den nicht manipulierten Zustand zurückversetzen.

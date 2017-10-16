@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fa95dc161adabcf280d9933770ce68b719a47a74
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Erstellen eines Arbeitsprofils und Registrieren Ihres Geräts bei Intune
 
-Durch die Registrierung Ihres Android-Geräts können Sie auf Geschäfts-E-Mails, -Apps und andere unternehmensspezifische Daten zugreifen. Im Rahmen der Anmeldung richten Sie ein Arbeitsprofil ein, das die privaten Daten auf Ihrem Gerät von Ihren Arbeitsdaten trennt. Ihr IT-Administrator kann nur das Arbeitsprofil verwalten, das Ihre Geschäftsdaten enthält. Ihr IT-Administrator kann nicht die privaten Daten auf dem Gerät verwalten. Weitere Informationen dazu finden Sie unter [Was geschieht beim Erstellen eines Arbeitsprofils?](what-happens-when-you-create-a-work-profile-android.md).
+Durch die Registrierung Ihres Android-Geräts können Sie auf Geschäfts-E-Mails, -Apps und andere unternehmensspezifische Daten zugreifen. Im Rahmen der Anmeldung richten Sie ein Arbeitsprofil ein, das die privaten Daten auf Ihrem Gerät von Ihren Arbeitsdaten trennt.
+
+Der Support Ihres Unternehmens kann nur das Arbeitsprofil verwalten, das Ihre Geschäftsdaten enthält. Der Support Ihres Unternehmens kann nicht die privaten Daten auf Ihrem Gerät verwalten. Weitere Informationen dazu finden Sie unter [Was geschieht beim Erstellen eines Arbeitsprofils?](what-happens-when-you-create-a-work-profile-android.md).
 
 So erstellen Sie ein Arbeitsprofil:
 
@@ -32,27 +34,27 @@ So erstellen Sie ein Arbeitsprofil:
 
     ![Willkommensbildschirm der Android-Unternehmensportal-App](./media/and-enroll-0-welcome-screen.png)
 
-2. Tippen Sie auf dem Bildschirm **Unternehmenszugriff einrichten** auf **BEGINNEN**.
+2. Tippen Sie auf dem Bildschirm **Unternehmenszugriff einrichten** auf **WEITER**.
 
-    ![Bildschirm „Unternehmenszugriff einrichten“](./media/andr-afw-begin-company-access-setup.png)
+    ![Bildschirm „Unternehmenszugriff einrichten“](/intune/media/android_cp_enroll_01_1709_new.png)
 
 3.  Lesen Sie auf dem Bildschirm **Why create a work profile?** (Warum sollte ich ein Arbeitsprofil erstellen?) über die Vorteile, und tippen Sie dann auf **WEITER**.
 
     ![Warum sollte ich ein Arbeitsprofil erstellen](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  Prüfen Sie in einer Liste, was Ihr IT-Administrator auf Ihrem Gerät anzeigen kann und was nicht, und tippen Sie auf **WEITER**.
+4.  Prüfen Sie in der angezeigten Liste, was der Support Ihres Unternehmens auf Ihrem Gerät sehen kann und was nicht, und tippen Sie auf **WEITER**.
 
-    ![Was Ihr IT-Administrator auf Ihrem Gerät sehen bzw. nicht sehen kann](./media/andr-afw-what-it-can-see-on-your-device.png)
+    ![Was der Support Ihres Unternehmens auf Ihrem Gerät sehen bzw. nicht sehen kann](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  Lesen Sie auf dem Bildschirm **Nächste Schritte**, was als nächstes geschieht, und tippen Sie dann auf **WEITER**.
+5.  Lesen Sie auf dem Bildschirm **What's next?** (Wie geht es weiter?), was während der Registrierung passiert, und tippen Sie dann auf **REGISTRIEREN**.
 
-    ![Was ist der nächste Schritt?](./media/andr-afw-what-comes-next.png)
+    ![Bildschirm „Wie geht es weiter?“](/intune/media/android_work_cp_enroll_03_after_1710.png)
 
 6. Tippen Sie auf dem Bildschirm **Set up work profile** (Arbeitsprofil einrichten), auf **WEITER**, damit die Unternehmensportal-App auf das Arbeitsprofils zugreifen kann.
 
     ![Erlauben Sie der Unternehmensportal-App Zugriff auf Arbeitsprofil](./media/andr-afw-tap-next-to-set-up-work-profile.png)
 
-7. Lesen Sie den Google-Bildschirm, der darlegt, wozu Ihr IT-Administrator berechtigt ist, wenn Sie ein Arbeitsprofil erstellen, und tippen Sie dann auf **OK**.
+7. Lesen Sie auf dem Google-Bildschirm, wozu der Support Ihres Unternehmens berechtigt ist, wenn Sie ein Arbeitsprofil erstellen, und tippen Sie dann auf **OK**.
 
     ![Lesen Sie die Google-Informationen zu Arbeitsprofilen](./media/andr-afw-google-screen-what-it-can-do.png)
 
@@ -70,16 +72,12 @@ So erstellen Sie ein Arbeitsprofil:
 
     Die Meldung „Registrierung Ihres Geräts“ wird kurz angezeigt.
 
-11. Wenn der Bildschirm **Unternehmenszugriff einrichten** anzeigt, dass alles ordnungsgemäß eingerichtet wurde, tippen Sie auf **WEITER**.
+11. Wenn der Bildschirm **Alles erledigt!** anzeigt, dass alles ordnungsgemäß eingerichtet wurde, tippen Sie auf **DONE** (FERTIG).
 
-    ![Einrichtung des Unternehmenszugriffs zeigt an, dass die Einrichtung des Arbeitsprofils und die Registrierung abgeschlossen sind](./media/andr-afw-company-access-setup-green-checks.png)
-
-12. Tippen Sie auf dem Bildschirm **Einrichten des Unternehmenszugriffs abgeschlossen** auf **FERTIG**. Sie müssen möglicherweise weitere Schritte ausführen, wenn Ihr IT-Administrator andere Anforderungen hinzugefügt hat.
-
-    ![Einrichtung des Unternehmenszugriffs ist abgeschlossen](./media/andr-afw-company-access-setup-complete.png)
+    ![Einrichtung des Unternehmenszugriffs zeigt an, dass die Einrichtung des Arbeitsprofils und die Registrierung abgeschlossen sind](/intune/media/android_work_cp_enroll_04_after_1710.png)
 
     Sie erhalten nun Unternehmens-Apps aus dem Play Store for Work.
 
     ![App-Seite Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/29/2017
+ms.date: 10/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dda7108aedcc4d3878fe3743ee0b88b26fabbe6f
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bef73c81d285a6d320cd92b055ff2b5592a55af4
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="what-is-device-enrollment"></a>Was ist die Geräteregistrierung?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -35,6 +35,7 @@ Wenn Sie Exchange ActiveSync entweder lokal oder in der Cloud gehostet verwenden
 ## <a name="overview-of-device-enrollment-methods"></a>Übersicht über die Geräteregistrierungsmethoden
 
 Die folgende Tabelle bietet einen Überblick über die Intune-Registrierungsmethoden, die zusammen mit den jeweiligen Funktionen und Anforderungen nachfolgend beschrieben werden.
+
 **Legende**
 
 - **Zurücksetzen erforderlich** – Das Gerät wird bei der Registrierung auf die Werkseinstellungen zurückgesetzt.
@@ -79,14 +80,55 @@ Im Folgenden werden Registrierungsszenarien für unternehmenseigene Geräte vorg
 Der Geräteregistrierungs-Manager (DEM) ist ein besonderes Benutzerkonto, das zum Registrieren und Verwalten mehrerer firmeneigener Geräte verwendet wird. Manager können das Unternehmensportal installieren und viele benutzerlose Geräte registrieren. Erfahren Sie mehr über den [DEM](./device-enrollment-manager-enroll.md).
 
 ### <a name="dep"></a>DEP (Device Enrollment Program)
-Mit der Apple DEP-Verwaltung (Device Enrollment Program, Programm zur Geräteregistrierung) können Sie Richtlinien erstellen und „drahtlos“ auf iOS-Geräten bereitstellen, die mit DEP erworben wurden und verwaltet werden. Das Gerät wird beim ersten Einschalten durch den Benutzer registriert und führt dann den iOS-Setup-Assistenten aus. Diese Methode unterstützt den **überwachten iOS-Modus**, der wiederum folgende Funktionen ermöglicht:
+Mit der Apple DEP-Verwaltung (Device Enrollment Program, Programm zur Geräteregistrierung) können Sie Richtlinien erstellen und „drahtlos“ auf iOS-Geräten bereitstellen, die mit DEP erworben wurden und verwaltet werden. Das Gerät wird beim ersten Einschalten durch den Benutzer registriert und führt dann den iOS-Setup-Assistenten aus. Diese Methode unterstützt den überwachten Modus von iOS, der zulässt, dass ein Gerät mit folgenden Funktionen konfiguriert wird:
 
-  - Gesperrte Registrierung
-  - Kioskmodus und andere erweiterte Konfigurationen und Einschränkungen
+- App-Sperre (Einzelanwendungsmodus) 
+- Globaler HTTP-Proxy 
+- Umgehung der Aktivierungssperre 
+- Modus der autonomen einzelnen App 
+- Webinhaltsfilter 
+- Festlegen von Hintergrund und Sperrbildschirm 
+- App-Pushbenachrichtigung im Hintergrund 
+- Always On-VPN 
+- Zulassen von ausschließlich verwalteter App-Installation 
+- iBookstore 
+- iMessages 
+- Gamecenter 
+- AirDrop 
+- AirPlay 
+- Hostkopplung 
+- Cloudsynchronisierung 
+- Spotlight-Suche 
+- Übergabe 
+- Gerät löschen 
+- Einschränkungen-Benutzeroberfläche 
+- Installation von Konfigurationsprofilen von der Benutzeroberfläche 
+- News 
+- Tastenkombinationen 
+- Kennungsänderungen 
+- Änderungen des Gerätenamens 
+- Änderungen des Hintergrundbilds 
+- Automatische App-Downloads 
+- Änderungen der Vertrauensstellung für Unternehmens-Apps 
+- Apple Music 
+- E-Mail-Ablage 
+- Kopplung mit Apple Watch 
+
+> [!NOTE]
+> Apple hat angekündigt, dass bestimmte Einstellungen im Jahr 2018 in den überwachten Modus übergehen. Bedenken Sie dies, wenn Sie diese Einstellungen verwenden, und warten Sie nicht, bis Apple diese zum überwachten Modus migriert:
+> - App-Installation
+> - App-Deinstallation
+> - FaceTime
+> - Safari
+> - iTunes
+> - Anstößiger Inhalt
+> - Dokumente und Daten von iCloud
+> - Multiplayerspiele
+> - Gamecenter-Freunde hinzufügen
 
 Weitere Informationen zur iOS DEP-Registrierung finden Sie unter:
 
-- [Auswählen der Registrierungsmethode für iOS-Geräte](enrollment-method-choose-ios.md)
+- [Auswählen der Registrierungsmethode für iOS-Geräte](ios-enroll.md)
 - [Registrieren von iOS-Geräten mithilfe des Programms zur Geräteregistrierung](device-enrollment-program-enroll-ios.md)
 
 ### <a name="usb-sa"></a>USB (Setup-Assistent)

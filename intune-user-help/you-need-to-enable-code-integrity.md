@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4a1639c289e335d4f50c549da7b7d895dd2a10bb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4fad2b78b8224fc1a90ad8c81d350917b17e3d57
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-enable-code-integrity"></a>Sie müssen Codeintegrität aktivieren
 
@@ -29,8 +29,8 @@ Für die Aufbewahrung der Informationen Ihrer Organisation sind verschiedene Typ
 Codeintegrität wird automatisch aktiviert, wenn Ihr System die Option „Sicherer Start“ aktiv verwendet.
 
 > [!Tip]
-> Das Aktivieren des sicheren Starts ist eine fortgeschrittene Aufgabe. Lassen Sie sich bei dieser Aufgabe am besten von Ihrem IT-Administrator unterstützen.
+> Das Aktivieren des sicheren Starts ist eine fortgeschrittene Aufgabe. Lassen Sie sich bei dieser Aufgabe am besten vom Support Ihres Unternehmens unterstützen.
 
 Wenn Sie sich der Aufgabe gewachsen fühlen, lesen Sie sich auf der Seite [Deaktivieren von „Sicherer Start“](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) den Abschnitt „So aktivieren Sie „Sicherer Start“ erneut“ durch, und versuchen Sie, den sicheren Start selbst zu aktivieren.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

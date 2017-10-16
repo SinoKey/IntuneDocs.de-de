@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 371e534a25df470edf2731b901640092e1a6e366
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6421d7161f0c2056ec4a00865e090026e7591de5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Verwenden verwalteter Apps auf Ihrem Android-Gerät
 
-Verwaltete Apps sind Apps, die Ihr IT-Administrator einrichten kann, um Unternehmensdaten zu schützen, auf die Sie in der App zugreifen können. Wenn Sie in einer verwalteten App auf Ihrem Android-Gerät auf Unternehmensdaten zugreifen, werden Sie feststellen, dass die App ein wenig anders als erwartet funktioniert. Sie können beispielsweise ggf. geschützte Unternehmensdaten nicht kopieren und einfügen oder diese Daten nicht an bestimmten Speicherorten speichern.
+Verwaltete Apps sind Apps, die der Support Ihres Unternehmens einrichten kann, um Unternehmensdaten zu schützen, auf die Sie in der App zugreifen können. Wenn Sie in einer verwalteten App auf Ihrem Android-Gerät auf Unternehmensdaten zugreifen, werden Sie feststellen, dass die App ein wenig anders als erwartet funktioniert. Sie können beispielsweise ggf. geschützte Unternehmensdaten nicht kopieren und einfügen oder diese Daten nicht an bestimmten Speicherorten speichern.
 
 Unterschiedliche verwaltete Apps können auch auf Ihrem Gerät zusammenarbeiten, um Ihnen das Erledigen Ihrer täglichen Aufgaben zu ermöglichen, während Unternehmensdaten geschützt bleiben. Wenn Sie z. B. eine Unternehmensdatei in einer verwalteten App öffnen und eine andere verwaltete App zum Anzeigen dieser Datei erforderlich ist, erlaubt die verwaltete App Ihnen automatisch das Anzeigen der Datei. Wenn eine erforderliche App nicht verfügbar ist, sind bestimmte Vorgänge, z. B. Öffnen eines Dokuments oder Zugreifen auf einen Weblink aus einem verwalteten Dokument, ggf. nicht möglich.
 
@@ -35,12 +35,12 @@ Wenn Sie in einer verwalteten App auf Unternehmensdaten zugreifen, wird eine Mel
 ## <a name="how-do-i-get-managed-apps"></a>Wie erhalte ich verwaltete Apps?
 Es gibt verschiedene Möglichkeiten, verwaltete Apps zu erhalten:
 
--   Wenn Ihr Gerät bei Microsoft Intune registriert ist, installieren Sie die App entweder über die Unternehmensportal-App oder -Website, oder Ihr IT-Administrator installiert sie auf Ihrem Gerät. Informationen zum Registrieren finden Sie unter [Registrieren Ihres Geräts bei Intune](enroll-your-device-in-Intune-android.md).
+-   Wenn Ihr Gerät bei Microsoft Intune registriert ist, installieren Sie die App entweder über die Unternehmensportal-App oder -Website, oder der Support Ihres Unternehmens installiert sie auf Ihrem Gerät. Informationen zum Registrieren finden Sie unter [Registrieren Ihres Geräts bei Intune](enroll-your-device-in-Intune-android.md).
 
 -   Sie installieren eine App aus dem Play Store und melden sich dann mit Ihrem Unternehmensbenutzerkonto an, das von Intune verwaltet wird.
 
-## <a name="what-can-my-it-admin-manage-in-an-app"></a>Was kann mein IT-Administrator in einer App verwalten?
-Es folgen einige Beispiele für Optionen, die Ihr IT-Administrator in einer App verwalten kann und die sich auf Ihre Interaktionen mit Unternehmensdaten auf Ihrem Gerät auswirken können:
+## <a name="what-can-my-company-support-manage-in-an-app"></a>Was kann der Support meines Unternehmens in einer App verwalten?
+Es folgen einige Beispiele für Optionen, die der Support Ihres Unternehmens in einer App verwalten kann und die sich auf Ihre Interaktionen mit Unternehmensdaten auf Ihrem Gerät auswirken können:
 
 -   Zugriff auf bestimmte Websites
 
@@ -72,4 +72,4 @@ Es folgen allgemeine Anwendungen, die Ihre IT-Abteilung ggf. verwaltet:
 
 -   Microsoft Word, Excel und PowerPoint
 
-Wenden Sie sich an Ihren IT-Administrator, um weitere Informationen zu den verwalteten Anwendungen auf Ihrem Gerät zu erhalten. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Wenden Sie sich an den Support Ihres Unternehmens, um weitere Informationen zu den verwalteten Apps auf dem Gerät zu erhalten. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
