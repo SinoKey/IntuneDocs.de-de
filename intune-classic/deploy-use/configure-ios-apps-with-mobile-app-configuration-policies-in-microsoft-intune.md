@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7dd73ecbba6c10cbbec92bdf4e856bf15434aea9
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 31acadce1af55b2ce751b4c6b5bfead27fce3c8c
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune
 
@@ -109,7 +110,7 @@ Fahren Sie mit dem Bereitstellen und Überwachen der App-Bereitstellung wie gewo
 Wenn die bereitgestellte App auf einem Gerät gestartet wird, wird sie mit den Einstellungen ausgeführt, die Sie in der Konfigurationsrichtlinie für mobile Apps konfiguriert haben.
 
 > [!TIP]
-> Wenn mindestens eine Konfigurationsrichtlinie für mobile Apps einen Konflikt verursacht, wird keine Richtlinie durchgesetzt. Der Konflikt wird im **Dashboard ** der Intune-Verwaltungskonsole gemeldet.
+> Wenn mindestens eine Konfigurationsrichtlinie für mobile Apps einen Konflikt verursacht, wird keine Richtlinie durchgesetzt. Der Konflikt wird im **Dashboard**  der Intune-Verwaltungskonsole gemeldet.
 
 ## <a name="example-format-for-a-mobile-app-configuration-xml-file"></a>Beispielformat für die XML-Datei für die Konfiguration mobiler Apps
 
