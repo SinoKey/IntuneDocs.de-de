@@ -5,7 +5,7 @@ keywords: Intune Data Warehouse
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b3ce7e895920d2bb9ff3537fd0ef87ecb4efcc0
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: 0b3436a22543eb07cedb0780984766bcb7faa284
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinden mit dem Data Warehouse mit Power BI
 
@@ -34,13 +34,13 @@ Sie können eine Datei herunterladen, um Sie mit Microsoft Power BI zu verwenden
   -  Softwareupdates
   -  Protokolle zum Gerätebestand
 
-Es werden auch Trends für die Registrierung, die Konformität, das Gerätekonfigurierungsprofil und Softwareupdates hervorgehoben. Beispieldiagramme und Berichte wenden benutzerfreundliche Filter auf den Zeichenbereich an. Um erweiterte Filter zu verwenden, sehen Sie sich den Bereich **Filter** in Power BI Desktop an. 
+Es werden auch Trends für die Registrierung, die Konformität, das Gerätekonfigurierungsprofil und Softwareupdates hervorgehoben. Beispieldiagramme und Berichte wenden benutzerfreundliche Filter auf den Zeichenbereich an. Um erweiterte Filter zu verwenden, sehen Sie sich den Bereich **Filter** in Power BI Desktop an.
 
 Die folgenden Schritte zeigen, wie Sie die Power BI-Datei herunterladen und wie Sie den OData-Link mit Power BI verwenden.
 
 ## <a name="install-power-bi"></a>Installieren von Power BI
 
-Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI Desktop aus [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop) herunterladen. 
+Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI Desktop aus [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop) herunterladen.
 
 ## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Laden der Daten und Berichte mit der Power BI-Datei (PBIX)
 
@@ -54,7 +54,7 @@ Die Power BI-Datei (PBIX) enthält Verbindungsinformationen für Ihren Mandanten
 3.  Klicken Sie auf **Power BI-Datei herunterladen**. Die Datei mit der Erweiterung PBIX wird an den angegebenen Speicherort heruntergeladen.
 4.  Öffnen Sie die Datei mit Power BI. Die *Intune Data Warehouse-Berichte* werden geladen. Dies kann jedoch eine Weile dauern, da Ihre Mandantendaten abgerufen werden.
 5.  Klicken Sie auf **Aktualisieren**, um Ihre Mandantendaten zu laden und die Berichte zu überprüfen.
-6.  Wenn Power BI Ihre Azure Active Directory-Anmeldeinformationen noch nicht authentifiziert hat, werden Sie von Power BI aufgefordert, Ihre Anmeldeinformationen bereitzustellen. Wenn Sie Ihre Anmeldeinformationen auswählen, wählen Sie **Organisationskonto** als Authentifizierungsmethode aus.
+6.  Wenn Power BI Ihre Azure Active Directory-Anmeldeinformationen noch nicht authentifiziert hat, werden Sie von Power BI aufgefordert, Ihre Anmeldeinformationen bereitzustellen. Wählen Sie beim Angeben Ihrer Anmeldeinformationen **Organisationskonto** als Authentifizierungsmethode aus.
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>Laden der Daten in Power BI mit dem OData-Link
 
@@ -69,7 +69,7 @@ Wenn der Client bei Azure AD authentifiziert ist, verbindet sich die OData-URL m
 7. Geben Sie die **OData-URL** in das URL-Feld ein, oder fügen Sie sie ein.
 8. Klicken Sie auf **OK**.
 9. Wenn Sie Ihren Mandanten noch nicht über den Power BI Desktop-Client bei Azure AD authentifiziert haben, geben Sie Ihre Anmeldeinformationen ein.  
-    1.  Wählen Sie **Organisationskonto** aus.  
+    1.  Wählen Sie **Geschäftskonto** aus.  
     2.  Geben Sie Ihren Benutzernamen und Ihr Kennwort ein.  
     3.  Klicken Sie auf **Anmelden**.  
     4.  Klicken Sie auf **Verbinden**.  
@@ -80,5 +80,5 @@ Wenn der Client bei Azure AD authentifiziert ist, verbindet sich die OData-URL m
 Hier finden Sie Informationen zu Ihrer Umgebung, z.B. der Anzahl der registrierten Geräte, nach Tagen innerhalb der letzten Woche sortiert. Mithilfe der Berichte und mithilfe der Intune Data Warehouse-Power BI-Datei (PBIX), die aus dem Blatt in Azure abgerufen wurde, erhalten Sie auch Einblicke in Ihren Intune-Mandanten und die Clientauffüllung. Intune bietet jedoch eine Anzahl von weitere Möglichkeiten, um die Daten zu erweitern oder wiederzuverwenden. Power BI und die Intune Data-Warehouse-API bieten Ihnen noch viele weiter Vorteile:
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
- -  Ihre Mandantendaten sind organisiert, damit Sie die Daten auswerten können. Weitere Informationen dazu, wie die Daten organisiert werden, finden Sie unter [Data Warehouse-Datenmodell](reports-ref-data-model.md). 
+ -  Ihre Mandantendaten sind organisiert, damit Sie die Daten auswerten können. Weitere Informationen dazu, wie die Daten organisiert werden, finden Sie unter [Data Warehouse-Datenmodell](reports-ref-data-model.md).
  -  Sie können von einer RESTful-Schnittstelle auf die Daten zugreifen und die Daten in Ihre eigene App einbeziehen. Weitere Informationen finden Sie unter [Abrufen von Daten aus der Intune-Data Warehouse-API mit einem REST-Client)](reports-proc-data-rest.md).

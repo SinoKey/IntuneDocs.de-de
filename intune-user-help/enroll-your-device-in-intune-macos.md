@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,32 +13,29 @@ ms.technology:
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope: User help
 ROBOTS: 
-ms.reviewer: jieyang
+ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 04009fa3fea401e3093a444b0fdbbbe12bd31c84
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ec1120f8fe040227d513fa5de2c096b34611ed7a
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="enroll-your-macos-device-in-intune"></a>Registrieren Ihres Mac OS-Geräts bei Intune
 
 Sie benötigen Zugriff auf Apps, Daten und Ressourcen Ihrer Organisation, um Ihre Arbeit erledigen zu können. Wenn Sie bei der Arbeit ein Mac OS-Gerät verwenden, muss ein __Verwaltungsprofil__ installiert werden. Hierbei handelt es sich um eine vom Support Ihres Unternehmens eingerichtete Datei, mit der Einstellungen und Zugriffsinformationen auf Ihren Mac geladen werden. Möchten Sie mehr erfahren? Finden Sie heraus, [was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
-
-  > [!NOTE]
-  > Wenn Sie versuchen, ein iOS-Gerät – z.B. ein iPhone oder ein iPad – zu registrieren, [folgen Sie stattdessen diesen Anweisungen](enroll-your-device-in-intune-ios.md).
 
 1. Suchen Sie im __Dock__ nach __Safari__, und öffnen Sie ein neues Fenster. Öffnen Sie dann die [Unternehmensportal-Website](https://portal.manage.microsoft.com).
 2. Melden Sie sich bei mit Ihrem Geschäfts-, Schul- oder Unikonto bei der Unternehmensportal-Website an.
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-3. Wenn Sie sich anmelden, werden Ihnen die verfügbaren Registerkarten der __Startseite__, der __Apps__ und der __Kategorien__ angezeigt. Auf dieser Seite wird Ihnen angezeigt, welche Apps installiert werden können. Wenn Sie noch keine registrierten Geräte haben, wird Ihnen die Meldung **We can‘t show you any apps** (Keine Apps verfügbar) angezeigt. Um fortzufahren wählen Sie __Meine Geräte__ aus.
+3. Klicken Sie nach der Anmeldung in der linken Ecke der Seite auf das **Menü**, und klicken sie auf **My Devices** (Meine Geräte).
 
  ![Ein Screenshot der Startseite des Webportals; im Webportal wird angezeigt, dass noch keine Apps installiert werden können; darunter die Schaltfläche „Meine Geräte“.](./media/macOS_enroll_001_landing_page.png)
 
-4. Auf der Seite __Meine Geräte__ wird entweder eine Liste der registrierten Geräte angezeigt oder einfach nur ein Banner. Dies hängt davon ab, ob Sie bereits ein macOS- oder ein anderes Gerät registriert haben. Wählen Sie zum Registrieren eines nicht aufgelisteten Geräts das Banner mit dem folgenden Hinweis aus: __Wenn Ihr Gerät aufgelistet ist, klicken Sie hier, um es zu identifizieren. Sie können auch hier klicken, um ein nicht aufgelistetes Gerät zu registrieren.__
+4. Auf der Seite __Meine Geräte__ wird entweder eine Liste der registrierten Geräte angezeigt oder einfach nur ein Banner. Dies hängt davon ab, ob Sie bereits ein macOS- oder ein anderes Gerät registriert haben. Wählen Sie zum Registrieren eines nicht aufgelisteten Geräts das Banner mit dem folgenden Hinweis aus: __Wenn Ihr Gerät aufgelistet ist, klicken Sie hier, um es zu identifizieren. Sie können auch hier klicken, um ein nicht aufgelistetes Gerät zu registrieren.__ Wenn Sie noch keine Geräte registriert haben, wird auf dem Banner Folgendes angezeigt: **You don't have any devices enrolled. Enroll this one by tapping here.** (Sie haben noch keine Geräte registriert. Tippen Sie hier, um dieses Gerät zu registrieren.)
 
   ![Ein Screenshot der Seite „Meine Geräte“ mit mehreren nicht identifizierten Geräten oberhalb der Banneraufforderung, nicht aufgelistete Geräte zu registrieren oder nicht identifizierte Geräte zu identifizieren.](./media/macOS_enroll_002_tap_here_banner.png)
 
@@ -65,4 +62,6 @@ Sie benötigen Zugriff auf Apps, Daten und Ressourcen Ihrer Organisation, um Ihr
 
  ![Installiertes Mac OS-Profil](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Sie finden entsprechende Kontaktinformationen auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Bei einigen Profilen wird möglicherweise angezeigt, dass sie **Unverified** (Nicht überprüft) sind. Solange Sie zu Ihrem Unternehmen gehören, ist dies unbedenklich.
+
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie die Supportabteilung Ihres Unternehmens. Sie finden entsprechende Kontaktinformationen auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

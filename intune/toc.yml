@@ -83,7 +83,7 @@
       items:
         - name: Schützen von Exchange Online
           href: exchange-online-protect.md
-        - name: Reduzieren von Helpdesk-Kosten
+        - name: Reduzieren von Helpdeskkosten
           href: password-reset.md
         - name: Verhindern von nicht autorisiertem Zugriff
           href: data-outside-protect.md
@@ -316,6 +316,8 @@
               href: vpn-settings-android.md
             - name: iOS
               href: vpn-settings-ios.md
+            - name: Konfigurieren von Pro-App VPN für iOS-Geräte
+              href: vpn-setting-configure-per-app.md
             - name: macOS
               href: vpn-settings-macos.md
             - name: "Windows\_8.1"
