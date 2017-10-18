@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 10/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bddab9000bfe609856b8e003f9bd4c3802f6e6b
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 534441a7ae337f99a251831b456ea5c295184bec
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekannte Probleme in Microsoft Intune
 
@@ -53,7 +53,7 @@ Da diese Funktionen nicht über die Intune-Konsole (Silverlight) und das Azure-P
 - Werden im klassischen Portal deaktiviert
 - Werden im Azure-Portal aktiviert  
 
-Nach dem 11. September 2017 wird die Migration dieser Funktionen in der primären Migration zu Azure zusammengeführt. Wenn Ihr Konto bereits zum Azure-Portal migriert wurde, wird diese sekundäre Migration zwischen dem 11. und dem 22. September 2017 vorgenommen. Sobald Ihre Kontomigration eingeleitet wurde, wird sie auch am selben Tag abgeschlossen. Die Migration kann ab dem Zeitpunkt der Deaktivierung dieser Funktionen im klassischen Intune-Portal bis zu 6 Stunden in Anspruch nehmen.
+Nach dem 22. September 2017 wird die Migration dieser Funktionen in der primären Migration zu Azure zusammengeführt. Wenn Ihr Konto bereits zum Azure-Portal migriert wurde, ist es möglich, dass diese sekundäre Migration bereits abgeschlossen ist. Falls dies nicht der Fall ist, werden diese Funktionen bis November 2017 zu Azure migriert. Sobald Ihre Kontomigration eingeleitet wurde, wird sie auch am selben Tag abgeschlossen. Die Migration kann ab dem Zeitpunkt der Deaktivierung dieser Funktionen im klassischen Intune-Portal bis zu 6 Stunden in Anspruch nehmen.
 
 Wenn Sie diese Intune-Funktionen nun im Azure-Portal verwalten, achten Sie auf die folgenden Punkte:
 

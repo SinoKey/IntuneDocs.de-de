@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/29/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 208cf6eb2d29ec5458d97d0a4481cec420acc281
-ms.sourcegitcommit: 59811bf1183b3ef9c9e81eded634bd0d3124d0bb
+ms.openlocfilehash: be68e330c2bd2800ea68fd83845b71e3b257e785
+ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Es sieht so aus, als sei Ihr Gerät verschlüsselt, aber das Unternehmensportal sagt etwas anderes
 
@@ -39,6 +39,15 @@ Bei bestimmten Android-Geräten müssen Sie eine Start-PIN erstellen, um die Sic
 ### <a name="downgrade-your-version-of-android"></a>Herabstufen Ihrer Android-Version
 
 Falls Ihr Gerät Ihnen die Option gibt, auf Android 6.0+ downzugraden, machen Sie dies. Falls Sie versuchen, Ihr Gerät downzugraden, besteht die Gefahr, dass Daten verloren gehen. Wenden Sie sich andernfalls an die Supportabteilung Ihres Unternehmens, um dieses Problem zu beheben. Entsprechende Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+
+### <a name="encrypt-the-entire-device"></a>Verschlüsseln des gesamten Geräts
+
+Bei einigen Geräten haben Sie die Wahl: Sie können entweder das gesamte Gerät verschlüsseln oder nur den tatsächlich belegten Speicherplatz. Wählen Sie die Option zum Verschlüsseln des gesamten Geräts und nicht die Option „only used space“ (nur belegter Speicherplatz). Wenn Sie bereits nur den belegten Speicherplatz verschlüsselt haben:
+
+1. [Entfernen Sie dieses Geräts aus dem Unternehmensportal](unenroll-your-device-from-intune-android.md).
+2. Entschlüsseln Sie den belegten Speicherplatz.
+3. Verschlüsseln Sie das gesamte Gerät
+4. Registrieren Sie das Gerät erneut.
 
 ## <a name="specific-manufacturer-issues"></a>Spezifische Herstellerprobleme
 
