@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/18/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 3e374f383275b1e74e22ac037ecaec282eeaa87c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 372cc50fb4ac36ec875d84a71f3d3437917a2d1a
+ms.sourcegitcommit: 93c8c7e5abe433e35d88cb3b8d3d1e7216d7fe9b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/24/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Massenregistrierung für Windows-Geräte
 
@@ -92,6 +92,10 @@ Diese Bereitstellung ist für die Verwendung auf neuen Windows-Geräten gedacht.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Probleme mit der Massenregistrierung und dem Unternehmensportal
 Wenn ein Benutzer versucht, ein Gerät zu registrieren, dass bereits in einer Massenregistrierung mit dem Unternehmensportal registriert wurde, erhält er eine Warnmeldung, dass für sein Gerät weitere Aktionen erforderlich sind, entweder die Einrichtung oder die Registrierung. Das Gerät wird registriert, aber die Registrierung wird werden von der Unternehmensportal-App oder der -Website erkannt.
+
+### <a name="bulk-enrollment-with-wi-fi"></a>Massenregistrierung über WLAN 
+
+Geräte, die mit der Massenregistrierung registriert wurde, können Zertifikate, die der Benutzer als Ziel verwendet, sowie die WLAN-Bereitstellung nicht verwenden. Diese Verbindungen müssen Sie über [Zertifikate auf Geräteebene](certificates-configure.md) verwalten. 
 
 ### <a name="conditional-access"></a>Bedingter Zugriff
 Der bedingte Zugriff ist für Windows-Geräte nicht verfügbar, die mit der Massenregistrierung registriert wurden.
