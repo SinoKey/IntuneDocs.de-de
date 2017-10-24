@@ -381,6 +381,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Erstellen einer Windows-Richtlinie
           href: compliance-policy-create-windows.md
+        - name: Aktionen bei Inkompatibilität
+          href: actions-for-noncompliance.md
         - name: Überwachen der Gerätekonformität
           href: compliance-policy-monitor.md
     - name: Einrichten des bedingten Zugriffs
