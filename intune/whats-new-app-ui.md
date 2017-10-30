@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,32 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11a3c96046a194e10d952508669b7e8fac0d1ee8
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 4719f31b2ea6144bc8113c596155de70aa22ace1
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune
 Erfahren Sie, welche Aktualisierungen wir an der Benutzeroberfläche für Apps vorgenommen haben, die Ihre Endbenutzer in dieser Version von Microsoft Intune sehen werden. Damit werden Sie bei der Benutzerkommunikation sowie bei allen aktualisierten Benutzerdokumentationen unterstützt, die Sie zur Unterstützung Ihrer Entwicklung erstellt haben. Es kann auch helfen, zu verstehen, wie Probleme behandelt werden, die auftauchen, wenn Benutzer den Helpdesk für den Support mithilfe des Unternehmensportals aufrufen.
+
+## <a name="week-of-october-16-2017"></a>Woche vom 16. Oktober 2017
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Verbesserungen der Suchfunktion auf der Unternehmensportal-Website <!--1331697-->
+Die Suchfunktion unserer App soll verbessert werden. Dabei beginnen wir mit der [Unternehmensportal-Website](https://portal.manage.microsoft.com). Suchen werden nun neben den Feldern für Name und Beschreibung über App-Kategorien ausgeführt. Die Ergebnisse werden standardmäßig nach abnehmender Relevanz sortiert. 
+
+Auch iOS-Benutzer profitieren von dieser Änderung, da die Unternehmensportal-Website auch Teil der Unternehmensportal-App unter iOS ist. In den folgenden Monaten wird es ähnliche Updates für Unternehmensportal-Apps für Android und Windows geben.
+
+Die Funktion zur Nachverfolgung der Relevanz wird weiterhin angepasst. Geben Sie uns daher gerne eine Rückmeldung über den „Feedback“-Link unten auf der Unternehmensportal-Website.
+
+
+### <a name="ios-company-portal-displays-large-icons----1454593---"></a>Anzeigen großer Symbole im iOS-Unternehmensportal <!-- 1454593 -->
+Das bekannte Problem, dass im iOS-Unternehmensportal Symbole in der App-Kachel angezeigt werden, wird mit dieser Version behoben. Wenn Sie App-Symbole mit einer Auflösung von 120 x 120 Pixel oder höher hochladen, werden sie nun auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com) und den App-Seiten des iOS-Unternehmensportals in voller Größe der App-Kachel angezeigt.
+
+
+
+
+
 
 ## <a name="week-of-october-2-2017"></a>Woche vom 2. Oktober 2017
 
@@ -67,7 +85,7 @@ Der Registrierungsvorgang für die Unternehmensportal-App für Android wurde dur
 |![05](./media/android_cp_enroll_05_before_1709.png)|![05](./media/android_cp_enroll_05_post_1709.png)|
 
 
-## <a name="week-of-august-28-2017"></a>Woche vom 28. August 2017
+## <a name="august-2017"></a>August 2017
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>Die iOS 11-Mail-App wird OAuth <!---1196951---> unterstützen.
 
@@ -87,7 +105,7 @@ Der bedingte Zugriff über Intune unterstützt nun eine sicherere Authentifizier
 
 ![Der Benutzer wird aufgefordert, die Registrierung über die Website des Unternehmensportals vorzunehmen.](./media/ios-11-ca-email-after-1708-07.png)
 
-## <a name="week-of-august-21-2017"></a>Woche vom 21. August 2017
+
 
 ### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Die Dialogfelder der mobilen Anwendungsverwaltung mit Intune (Intune Mobile Application Management (MAM)) verfügen über eine moderne Schnittstelle <!-- 1199015 -->
 
@@ -102,15 +120,13 @@ Die Dialogfelder der mobilen Anwendungsverwaltung mit Intune (MAM) werden modern
 ![moderne Schnittstelle](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-## <a name="week-of-august-14-2017"></a>Woche vom 14. August 2017
-
 ### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Updates der Seite „Gerätedetails“ der Unternehmensportal-App für Windows 10 <!---1287448--->
 
 Das Tag __Kategorie__ wird in der Unternehmensportal-App für Windows 10 von dem Platz unter dem Titel zu einer Eigenschaft auf der Seite __Gerätedetails__ verschoben.
 
 ![Der Windows-Bildschirm „Gerätedetails“ in der Unternehmensportal-App, auf dem das Feld „Kategorien“ als Eigenschaft und nicht direkt unter dem Titel des Bildschirms angezeigt wird](./media/cp_win10_category_tag_move_after_1708.png)
 
-## <a name="week-of-july-31-2017"></a>Woche vom 31. Juli 2017
+## <a name="july-2017"></a>Juli 2017
 
 ### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Detailseiten von Apps zeigen neue Informationen für Android-Geräte an <!--1287476-->
 
@@ -164,7 +180,7 @@ Die Unternehmensportal-App beginnt mit der Anmeldung.
 
 ![Nach Abschluss des Authentifizierungsprozesses meldet sich die Unternehmensportal-App an und zeigt einen entsprechenden Ladebalken an.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-## <a name="week-of-june-12-2017"></a>Woche vom 12. Juni 2017
+## <a name="june-2017"></a>Juni 2017
 
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>Die Unternehmensportal-App für Android verfügt nun über eine neue Endbenutzererfahrung für App-Schutzrichtlinien <!--1305217-->
 Auf Grundlage von Benutzerfeedback haben wir die Unternehmensportal-App für Android modifiziert, sodass sie nun die Schaltfläche **Auf Unternehmensinhalte zugreifen** besitzt. Der Hintergrund dazu ist, Endbenutzer daran zu hindern, unnötigerweise den Registrierungsprozess zu durchlaufen, wenn sie nur auf Apps zugreifen müssen, die App-Schutzrichtlinien unterstützen, eine Funktion der mobilen Anwendungsverwaltung von Intune.
@@ -210,8 +226,6 @@ Basierend auf Benutzerfeedback wurde der Unternehmensportal-App für Android ein
 ![Ein Bild der Android-Unternehmensportal-App mit geöffnetem Aktionsmenü oben rechts. Die neue Option „Unternehmensportal entfernen“ steht als die dritte Option unter „Mein Profil“ und „Einstellungen“ und über „Nutzungsbedingungen“, „Hilfe und Feedback“ und „Info“ zur Verfügung.](./media/android_remove_cp_menu_action_after_1705.png)
 
 ![Ein Bild mit dem Bestätigungsdialogfeld, das nach der Auswahl der neuen Option „Unternehmensportal entfernen“ im Aktionsmenü verfügbar ist. Das Dialogfeld informiert den Benutzer über Folgendes: „Wenn Sie das Unternehmensportal entfernen, wird Ihr Gerät nicht länger durch Ihren IT-Administrator verwaltet, und der Zugriff auf Unternehmensdaten, Unternehmens-Apps und Unternehmens-E-Mails wird möglicherweise beendet.“ Anschließend muss der Benutzer bestätigen, dass er die Unternehmensportal-App entfernen möchte, indem er „Ja“ auswählt.](./media/android_remove_cp_menu_confirmation_after_1705.png)
-
-## <a name="week-of-june-5-2017"></a>Woche vom 5. Juni 2017
 
 ### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>Verbesserungen an den App-Kacheln in der Unternehmensportal-App für iOS <!--1230777-->
 Wir haben das Design der App-Kacheln auf der Startseite entsprechend der Brandingfarbe geändert, die Sie für das Unternehmensportal festgelegt haben.

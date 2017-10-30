@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/30/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 38ee5446c679472927f4dccecfdc56f1228fb92c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 053f6449ebe3a4ad375c51d7bbc4ccc9709fdcf7
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Android-Gerät bei Intune registrieren?
 
@@ -44,7 +44,7 @@ Wenn Sie Ihr Android-Gerät registrieren, erteilen Sie der Supportabteilung Ihre
 
 -   Sie müssen die Bedingungen akzeptieren.
 
--   Deaktivieren der Kamera (nur auf Samsung KNOX-Geräten, nicht auf Nexus-Geräten), damit Sie keine Fotos von sensiblem Arbeitsmaterial machen können, dass nicht freigegeben werden darf.
+-   Deaktivieren Sie die Kamera, um zu verhindern, dass Sie Aufnahmen von vertraulichem Arbeitsmaterial machen, das nicht freigegeben werden darf.
 
 -   Erfordern, dass alle Daten auf dem Gerät verschlüsselt sind, sodass die Daten geschützt sind, falls das Gerät verloren geht oder gestohlen wird
 
@@ -56,4 +56,4 @@ Nachdem das Gerät zum Unternehmensportal hinzugefügt wurde, erfolgt im Interva
 
 -   Senden aller Unternehmens-App-Inventaraktualisierungen. (Diese Updates verfügen über keine privaten Informationen.)
 
-Benötigen Sie Unterstützung? Wenden Sie sich an die Supportabteilung Ihres Unternehmens (suchen Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Android-Team von Microsoft</a>.
+Benötigen Sie Unterstützung? Wenden Sie sich an den Support Ihres Unternehmens (suchen Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-Team</a>.

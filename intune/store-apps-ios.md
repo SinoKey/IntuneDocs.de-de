@@ -1,12 +1,12 @@
 ---
-title: "Hinzufügen von Store-Apps für iOS in Intune"
+title: "Hinzufügen von iOS Store-Apps zu Intune | Microsoft-Dokumentation"
 titlesuffix: Azure portal
 description: "Erfahren Sie mehr über das Hinzufügen von iOS Store-Apps in Intune.\""
-keywords: 
+keywords: Intune
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 53ff149b28a2f75a3b30c59fa5f30edcf4879fae
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4c5d18f217659c9be59c116670fbf92a6d1b2ab4
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>Hinzufügen von iOS Store-Apps in Microsoft Intune
 
@@ -44,26 +44,29 @@ Sie können mit dieser Methode nur Apps zuweisen, die im App Store kostenlos ang
 4. Wählen Sie in der Workload **Mobile Apps** die Option **Verwalten** > „Apps“ aus.
 5. Wählen Sie über der Liste der Apps **Hinzufügen** aus.
 6. Wählen Sie auf dem Blatt **App hinzufügen** die Option **App Store durchsuchen** aus.
-7. Geben Sie auf dem Blatt **Apple App Store** den Namen (oder einen Teil des Namens) in das Suchfeld ein. Intune durchsucht den Store und gibt eine Liste mit relevanten Ergebnissen zurück.
-8. Wählen Sie in der Liste die gewünschte App aus, und klicken Sie dann auf **OK**.
+7. Wählen Sie auf dem Blatt **Apple App Store** das Gebietsschema des App Store aus.
+8. Geben Sie den Namen (oder einen Teil des Namens) in das Suchfeld ein. Intune durchsucht den Store und gibt eine Liste mit relevanten Ergebnissen zurück.
+9. Wählen Sie in der Liste die gewünschte App aus, und klicken Sie dann auf **OK**.
 
 ## <a name="step-2---configure-app-information"></a>Schritt 2: Konfigurieren von App-Informationen
 
 1. Wählen Sie auf dem Blatt **App hinzufügen** die Option **App-Informationen** aus.
-2. Konfigurieren Sie auf dem Blatt **App bearbeiten** die folgenden Informationen. Klicken Sie abschließend auf **Hinzufügen**. Abhängig von der ausgewählten App werden einige der Werte auf diesem Blatt möglicherweise automatisch ausgefüllt:
-- **App-Name:** Geben Sie den Namen der App ein, wie er im Unternehmensportal angezeigt werden soll. Stellen Sie sicher, dass alle App-Namen eindeutig sind. Wenn ein App-Name zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
-    - **App-Beschreibung:** Geben Sie eine Beschreibung für die App ein. Diese Beschreibung wird den Benutzern im Unternehmensportal angezeigt.
-- **Herausgeber:** Geben Sie den Namen des Herausgebers der App ein.
-- **App Store-URL:** Geben Sie die App Store-URL der App an, die Sie erstellen möchten.
-- **Mindestens erforderliches Betriebssystem:** Wählen Sie in der Liste die mindestens erforderliche Betriebssystemversion aus, auf der die App installiert werden kann. Wenn Sie die App einem Gerät mit einem älteren Betriebssystem zuweisen, wird sie nicht installiert.
-- **Kategorie** (optional). Wählen Sie eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Dadurch wird es für die Benutzer leichter, die App im Unternehmensportal zu finden.
-- **Diese App als ausgewählte App im Unternehmensportal anzeigen:** Zeigen Sie die App auf der Hauptseite des Unternehmensportal hervorgehoben an, wenn Benutzer nach Apps suchen.
-- **Informations-URL:** Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Diese URL wird den Benutzern im Unternehmensportal angezeigt.
-- **URL zu den Datenschutzbestimmungen:** Geben Sie optional eine URL zu einer Website ein, die Datenschutzinformationen für diese App enthält. Diese URL wird den Benutzern im Unternehmensportal angezeigt.
-- **Entwickler:** Geben Sie optional den Namen des App-Entwicklers ein.
-- **Besitzer:** Geben Sie optional einen Namen für den Besitzer dieser App ein, z.B. **Personalabteilung**.
-- **Anmerkungen:** Geben Sie Hinweise zu dieser App ein.
-- **Symbol hochladen:** Laden Sie ein Symbol hoch, das der App zugeordnet wird. Dies ist das Symbol, das gemeinsam mit der App angezeigt wird, wenn die Benutzer das Unternehmensportal durchsuchen.
-3. Wenn Sie fertig sind, wählen Sie auf dem Blatt **App hinzufügen** die Option **Speichern** aus.
+2. Konfigurieren Sie auf dem Blatt **App bearbeiten** die App-Informationen. Klicken Sie abschließend auf **Hinzufügen**. Abhängig von der ausgewählten App werden einige der Werte auf diesem Blatt möglicherweise automatisch ausgefüllt:
+- **Name**: Geben Sie den Namen der App ein, der im Unternehmensportal angezeigt werden soll. Stellen Sie sicher, dass alle App-Namen eindeutig sind. Wenn ein App-Name zweimal vergeben wird, zeigt das Unternehmensportal den Benutzern nur eine der Apps an.
+- **Beschreibung**: Geben Sie eine Beschreibung für die App ein, die den Benutzern im Unternehmensportal angezeigt werden soll.
+- **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein.
+- **App Store-URL**: Geben Sie die App Store-URL der App ein, die Sie erstellen möchten.
+- **Land/Region des Store**: Wählen Sie das Gebietsschema des App Store aus.
+- **Mindestens erforderliches Betriebssystem**: Wählen Sie aus der Liste die mindestens erforderliche Betriebssystemversion aus, auf der die App installiert werden kann. Die App wird auf einem Gerät mit einem älteren Betriebssystem nicht installiert.
+- **Verwendbarer Gerätetyp**: Wählen Sie die Geräte aus der Liste aus, die von der App verwendet werden.
+- **Kategorie** (optional). Wählen Sie eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Kategorien erleichtern es dem Benutzer, die App im Unternehmensportal zu finden.
+- **Diese App als ausgewählte App im Unternehmensportal anzeigen**: Zeigen Sie die App auf der Hauptseite des Unternehmensportals hervorgehoben an, wenn Benutzer nach Apps suchen.
+- **Informations-URL**: Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Die URL wird Benutzern im Unternehmensportal angezeigt.
+- **URL zu den Datenschutzbestimmungen**: Geben Sie optional eine URL zu einer Website ein, die Datenschutzinformationen für diese App enthält. Die URL wird Benutzern im Unternehmensportal angezeigt.
+- **Entwickler**: Geben Sie optional den Namen des App-Entwicklers ein. Dieses Feld ist nur für einen Administrator sichtbar, nicht aber für die Benutzer.
+- **Besitzer**: Geben Sie optional einen Namen für den Besitzer dieser App ein, z.B. **Personalabteilung**.  Dieses Feld ist nur für einen Administrator sichtbar, nicht aber für die Benutzer.
+- **Anmerkungen**: Geben Sie Hinweise zu dieser App ein. Dieses Feld ist nur für einen Administrator sichtbar, nicht aber für die Benutzer.
+- **Logo**: Laden Sie ein Symbol für die App hoch. Das Symbol wird gemeinsam mit der App angezeigt, wenn Benutzer das Unternehmensportal durchsuchen.
+3. Wenn Sie fertig sind, klicken Sie auf dem Blatt **App hinzufügen** auf **OK**.
 
-Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie ausgewählten Gruppen zuweisen können. Hilfe finden Sie unter [Zuweisen von Apps zu Gruppen](apps-deploy.md).
+Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie den ausgewählten Gruppen zuweisen können. Hilfe finden Sie unter [Zuweisen von Apps zu Gruppen](apps-deploy.md).

@@ -14,17 +14,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9257af29c65dbe27667738abc8ee06203177124f
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: d52e240763263ac4f761a8635ee6694a45168354
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="data-warehouse-data-model"></a>Datenmodell von Data Warehouse
 
 Intune Data Warehouse prüft täglich die Daten, um eine Verlaufsansicht Ihrer sich ständig ändernden mobilen Umgebung bereitzustellen.
 
-Die Daten aus Ihrem Mandanten werden in einem Data Warehouse zusammengeführt. Das Warehouse besteht aus einer Reihe von Entitäten und Beziehungen, die für die Arten von Fragen aussagekräftig sind, die Sie stellen möchten. Beispielsweise können Sie die Anzahl der Installationen einer intern entwickelten Android-Anwendung pro Tag im Laufe der letzten Woche analysieren, und damit prüfen, ob es einen Aufwärtstrend bei den Installationen gibt. Die Struktur des Data Warehouse ermöglicht Ihnen Einblicke in Ihre mobile Umgebung. Andere analytische Tools wie Microsoft Power BI können das Datenmodell von Data Warehouse wiederum nutzen, um Visualisierungen und dynamische Dashboards zu erstellen.
+Die Daten aus Ihrem Mandanten werden in einem Data Warehouse zusammengeführt. Das Warehouse besteht aus einer Reihe von Entitäten und Beziehungen, die für die Arten von Fragen aussagekräftig sind, die Sie stellen möchten. Beispielsweise können Sie die Anzahl der Installationen einer intern entwickelten Android-Anwendung pro Tag im Laufe der letzten Woche analysieren, und damit prüfen, ob es einen Aufwärtstrend bei den Installationen gibt. Die Struktur des Data Warehouse ermöglicht Ihnen Einblicke in Ihre mobile Umgebung. Andere Analysetools wie Microsoft Power BI können das Datenmodell von Data Warehouse wiederum nutzen, um Visualisierungen und dynamische Dashboards zu erstellen.
 
 Die Intune Data Warehouse-Struktur verwendet ein Sternschema-Modell. Ein Sternschema organisiert Fakten in einer Zeitdimension. Im Kontext des Modells ist ein *Fakt* eine quantitative Messung, z.B. die Anzahl der Geräte, die Anzahl von Apps oder der Zeitpunkt der Registrierung. Ein *Dimension* ist im Kontext des Modells ein Satz von Kategorien und deren hierarchische Beziehungen. Beispielsweise werden Tage in Monaten und Monaten in Jahren gruppiert. Ein Sternschema-Modell bietet hohe für Flexibilität und Analysefunktionen, damit Sie die Berichte erstellen können, die zum Verständnis der Entwicklung Ihrer mobilen Umgebung benötigen.
 
@@ -44,6 +44,7 @@ Entitätenmengen heißen im Datenmodell Auflistungen von Entitäten. Diese Menge
   -  [Geräte](reports-ref-devices.md)
   -  [Anwendung](reports-ref-application.md)
   -  [Richtlinie](reports-ref-policy.md)
+  -  [Zuordnung der Benutzergeräte](reports-ref-userdeviceassociations.md)
 
 <!-- ## Data Model relationships
 

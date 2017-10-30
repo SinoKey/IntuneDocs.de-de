@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bbb0e8ba84e221df3a434da79c513939267648b
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: f1ffc07d87e98666a882415d63e11bd04bbd5461
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Abrufen von Daten aus der Intune-Data Warehouse-API mit einem REST-Client
 
@@ -58,10 +58,10 @@ Erstellen Sie eine native App in Azure. Diese native App ist die Client-App. Der
 
 Sie haben jetzt eine in Azure definierte App. Erteilen Sie Zugriff von der nativen App auf die Microsoft Intune-API.
 
-1.  Klicken Sie auf die native App. Sie haben der App einen Namen wie „Intune-Data Warehouse-Client“ gegeben.
+1.  Klicken Sie auf die native App. Sie haben der App einen Namen wie **Intune-Data Warehouse-Client** gegeben.
 2.  Klicken Sie auf dem Blatt **Einstellungen** auf **Erforderliche Berechtigungen**.
 3.  Klicken Sie auf dem Blatt **Erforderliche Berechtigungen** auf **Hinzufügen**.
-4.  Klicken Sie auf **Hiermit wählen Sie eine API aus.**.
+4.  Klicken Sie auf **Hiermit wählen Sie eine API aus**.
 5.  Suchen Sie nach dem Namen der Web-App. Sie heißt **Microsoft Intune-API**.
 6.  Klicken Sie in der Liste auf die App.
 7.  Klicken Sie auf **Auswählen**.
@@ -152,14 +152,14 @@ Das folgende Beispiel enthält einen einfachen REST-Client. Der Code verwendet d
 1.  Öffnen Sie **Microsoft Visual Studio**.
 2.  Klicken Sie auf **Datei** > **Neues Projekt**. Erweitern Sie **Visual C#**, und wählen Sie **Konsolen-App (.NET Framework)** aus. 
 3.  Nennen Sie das Projekt ` IntuneDataWarehouseSamples`, navigieren Sie dorthin, wo Sie das Projekt speichern möchten, und klicken Sie dann auf **OK**.
-3.  Klicken Sie mit der rechten Maustaste auf den Namen der Projektmappe im Projektmappen-Explorer, und wählen Sie dann **NuGet-Pakete für Projektmappe verwalten** aus. Klicken Sie auf **Durchsuchen**, und geben Sie dann in das Suchfeld „Microsoft.IdentityModel.Clients.ActiveDirectory“ ein.
-4. Wählen Sie das Paket aus, wählen Sie unter „Manage Packages for Your Solution“ (Pakete für Ihre Projektmappe verwalten) das Projekt **IntuneDataWarehouseSamples** aus, und klicken Sie dann auf **Installieren**. 
-5. Klicken Sie auf **I Accept** (Ich stimme zu), um die NuGet-Paketlizenz anzunehmen.
-6. Öffnen Sie `Program.cs` über den Projektmappen-Explorer.
+4.  Klicken Sie mit der rechten Maustaste auf den Namen der Projektmappe im Projektmappen-Explorer, und wählen Sie dann **NuGet-Pakete für Projektmappe verwalten** aus. Klicken Sie auf **Durchsuchen**, und geben Sie dann `Microsoft.IdentityModel.Clients.ActiveDirectory` in das Suchfeld ein.
+5. Wählen Sie das Paket aus, wählen Sie unter „Manage Packages for Your Solution“ (Pakete für Ihre Projektmappe verwalten) das Projekt **IntuneDataWarehouseSamples** aus, und klicken Sie dann auf **Installieren**. 
+6. Klicken Sie auf **I Accept** (Ich stimme zu), um die NuGet-Paketlizenz anzunehmen.
+7. Öffnen Sie `Program.cs` über den Projektmappen-Explorer.
 
     ![Projekt in Visual Studio](media\reports-get_rest_data_in.png)
 
-7.  Ersetzen Sie den Code in „Program.cs“ durch den folgenden Code:  
+8.  Ersetzen Sie den Code in „Program.cs“ durch den folgenden Code:  
     ```csharp
 namespace IntuneDataWarehouseSamples
 {
@@ -214,12 +214,12 @@ namespace IntuneDataWarehouseSamples
     }
     ```
 
-8.  Aktualisieren Sie die `TODO`s im Codebeispiel.
-9.  Drücken Sie **STRG + F5**, um den Intune.DataWarehouseAPIClient im Debugmodus zu erstellen und auszuführen.
+9.  Aktualisieren Sie die `TODO`s im Codebeispiel.
+10.  Drücken Sie **STRG + F5**, um den Intune.DataWarehouseAPIClient im Debugmodus zu erstellen und auszuführen.
 
     ![Im JSON-Format abgerufene Datumsentität](media\reports-get_rest_data_output.png)
 
-10.  Überprüfen Sie die Konsolenausgabe. Die Ausgabe enthält die Daten im JSON-Format, die aus der **Datumsentität** in Ihrem Intune-Mandanten abgerufen wurden.
+11.  Überprüfen Sie die Konsolenausgabe. Die Ausgabe enthält die Daten im JSON-Format, die aus der **Datumsentität** in Ihrem Intune-Mandanten abgerufen wurden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

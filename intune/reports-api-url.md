@@ -14,27 +14,17 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7723bb42eedcd97142f039ca52b60911fa91838b
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: f36327f21fbb2f08906a7621b701a4e6c9deee03
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Endpunkt der Intune Data Warehouse-API
 
 Sie können die Intune-Data Warehouse-API mit einem Konto mit bestimmten rollenbasierten Zugriffssteuerungen und Azure AD-Anmeldeinformationen verwenden. Anschließend autorisieren Sie Ihren REST-Client mithilfe von OAuth 2.0 für Azure AD. Schließlich erstellen Sie eine aussagekräftige URL, um eine Data Warehouse-Ressource aufzurufen.
 
-## <a name="azure-ad-and-intune-credential-requirements"></a>Anforderungen an die Anmeldeinformationen für Azure AD und Intune
-
-Authentifizierung und Autorisierung basieren auf Azure AD-Anmeldeinformationen und rollenbasierter Zugriffssteuerung über Intune (RBAC). Alle globalen Administratoren und Intune-Serviceadministratoren für Ihren Mandanten haben standardmäßig Zugriff auf die API. Verwenden Sie Intune-Rollen, um den Zugriff für mehr Benutzer bereitzustellen, indem Sie Ihnen Zugriff auf die **Reporting resource** (Berichtsressource) gewähren.
-
-Anforderungen für den Zugriff auf die API sind:
-
-  -  Intune-Lizenz muss dem Benutzer zugewiesen sein
-  -  Benutzer muss eine der folgenden Rollen innehaben:
-      -  Globaler Azure AD-Administrator
-      -  Intune-Dienstadministrator
-      -  Benutzer mit rollenbasiertem Zugriff auf die Ressource **Reports** (Berichte)
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## <a name="authorization"></a>Autorisierung
 
@@ -47,7 +37,7 @@ Weitere Informationen finden Sie unter [Authorize access to web applications usi
 Die Endpunkte der Data Warehouse-API lesen die Entitäten für jeden Satz. Die API unterstützt ein **GET** HTTP-Verb und eine Teilmenge der Abfrageoptionen.
 
 Die URL für Intune verwendet das folgende Format:  
-https://fef.{***Speicherort***}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{***Entitätssammlung***}?api-Version={***-API-Version***}
+https://fef. {***Speicherort***}.manage.microsoft.com/ReportingService/DataWarehouseFEService/ {***Entitätssammlung***}? api-Version = {***-API-Version***}
 
 Die URL enthält die folgenden Elemente:
 
@@ -64,4 +54,4 @@ Die aktuelle Version der API ist `beta`.
 
 ## <a name="odata-query-options"></a>OData-Abfrageoptionen
 
-Die aktuelle Version unterstützt die folgenden OData-Abfrageparameter: `$skip, $top, $filter, $orderby`.
+Die aktuelle Version unterstützt die OData-Abfrageparameter `$filter, $orderby, $select, $skip,` und `$top`.

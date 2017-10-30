@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5b9ee20b-3c4e-4461-86d3-6fd26e7f71a6
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: f3c76f558987cd03a4e6434243b31908cd083807
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: ba3a947060877fe704d4980cb1f25f34f110ff1f
+ms.sourcegitcommit: 2707a5fb68749a51c2a3ff54a1bac631bdaa3b87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Installieren von Mobile Threat Defense auf Ihrem iOS-Gerät
 
@@ -31,6 +31,17 @@ Damit Sie auf Ihre Arbeit zugreifen können, verlangt Ihr Unternehmen von Ihnen,
 * [SandBlast Mobile Protect](you-are-prompted-to-install-sandblast-ios.md)
 * [Zimperium zIPS](you-are-prompted-to-install-zips-ios.md)
 
-**Wenn die Installation nicht funktioniert**
+## <a name="additional-information-your-company-can-see"></a>Zusätzliche Informationen, die für Ihr Unternehmen einsehbar sind
+
+Mobile Threat Defense stellt eine Möglichkeit für Unternehmen dar, um sicherzustellen, dass Ihre Geräte vor Apps geschützt werden, die versuchen könnten, Unternehmensdaten zu stehlen. Das Hinzufügen dieses Schutzes erfordert, dass Informationen zu den Apps auf Ihren Geräten an den Mobile Threat Defense-Dienst gemeldet werden, den Ihr Unternehmen verwendet. Die Daten in Ihren persönlichen Apps sind für Ihr Unternehmen nicht einsehbar. Alle Apps auf Ihrem Gerät werden zu [what your company can see](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) (Was für Ihr Unternehmen sichtbar ist) hinzugefügt, wenn dieses einen Mobile Threat Defense-Dienst verwendet. Diese Teile der App sind für Ihr Unternehmen einsehbar:
+
+*   App-Name
+* App-ID: Der eindeutige Name, der die App im App Store identifiziert.
+*   App-Version und kurze Versionsnummer: die angegebene Releasenummer für eine App
+* App Bundle und dynamische Größe: Die Menge des Speicherplatzes, die eine App auf Ihrem Gerät verwendet.
+* App-Gültigkeit: Gibt an, ob eine App für die Verwendung genehmigt ist
+*   App-Verwaltungsstatus: Gibt an, ob eine App von Ihrem Unternehmen verwaltet wird oder ob es sich um eine persönliche App handelt
+
+## <a name="if-the-installation-doesnt-work"></a>Wenn die Installation nicht funktioniert
 
 Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihrer Kontrolle Fehler auf. Wenden Sie sich in einem solchen Fall an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

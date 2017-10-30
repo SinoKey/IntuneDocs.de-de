@@ -14,11 +14,11 @@ ms.assetid: 6B4BC650-62F7-4049-9DE4-CDECB579B58F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 766d7619f2438d4291210ad8adfbc8d3eb9b2381
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 894617cd47e5221be6988c377608c82bad2c7a67
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-date-entity"></a>Verweis für die Datumsentität
 
@@ -30,21 +30,21 @@ Die **Datumsentität** stellt Datumsangaben dar, die auf mehrere Data Warehouse-
 
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
-| DateKey |Eindeutiger Bezeichner für dieses Datum im Data Warehouse | 20160703 |
-| FullDate |Dieses Datum stellt das vollständige Datums-/Uhrzeitformat dar | 03.07.2016 12:00:00 Uhr |
-| DayOfWeek |Wochentag |1 |
-| DayOfMonth |Tag des Monats |3 |
-| DayOfYear |Tag des Jahres |185 |
-| WeekOfYear |Woche des Jahres |28 |
-| MonthOfYear |Monat des Jahres |7 |
-| CalendarQuarter |Kalenderquartal |3 |
-| CalendarYear |Kalenderjahr |2016 |
-| DateKey |Eindeutiger Bezeichner für dieses Datum im Data Warehouse |20160703 |
-| FullDate |Dieses Datum stellt das vollständige Datums-/Uhrzeitformat dar | 03.07.2016 12:00:00 Uhr |
-| DayOfWeek |Wochentag |1 |
-| DayOfMonth |Tag des Monats |3 |
-| DayOfYear |Tag des Jahres |185 |
-| WeekOfYear |Woche des Jahres |28 |
-| MonthOfYear |Monat des Jahres |7 |
-| CalendarQuarter |Kalenderquartal |3 |
-| CalendarYear |Kalenderjahr |2016 |
+| DateKey | Eindeutiger Bezeichner für dieses Datum im Data Warehouse | 20160703 |
+| FullDate | Dieses Datum wird im vollständigen Datums- und Uhrzeitformat dargestellt | 03.07.2016 12:00:00 Uhr |
+| DayOfWeek | Wochentag | 1 |
+| DayOfMonth | Tag des Monats | 3 |
+| DayOfYear | Tag des Jahres | 185 |
+| WeekOfYear | Woche des Jahres | 28 |
+| MonthOfYear | Monat des Jahres | 7 |
+| CalendarQuarter | Kalenderquartal | 3 |
+| CalendarYear | Kalenderjahr | 2016 |
+| DateKey | Eindeutiger Bezeichner für dieses Datum im Data Warehouse | 20160703 |
+| FullDate | Dieses Datum wird im vollständigen Datums- und Uhrzeitformat dargestellt | 03.07.2016 12:00:00 Uhr |
+| DayOfWeek | Wochentag | 1 |
+| DayOfMonth | Tag des Monats | 3 |
+| DayOfYear | Tag des Jahres | 185 |
+| WeekOfYear | Woche des Jahres | 28 |
+| MonthOfYear | Monat des Jahres | 7 |
+| CalendarQuarter | Kalenderquartal | 3 |
+| CalendarYear | Kalenderjahr | 2016 |

@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0b3436a22543eb07cedb0780984766bcb7faa284
-ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
+ms.openlocfilehash: 56f80e7cede68364d1a98b58acab3e7dd2f51b73
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinden mit dem Data Warehouse mit Power BI
 
@@ -38,6 +38,8 @@ Es werden auch Trends für die Registrierung, die Konformität, das Gerätekonfi
 
 Die folgenden Schritte zeigen, wie Sie die Power BI-Datei herunterladen und wie Sie den OData-Link mit Power BI verwenden.
 
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
+
 ## <a name="install-power-bi"></a>Installieren von Power BI
 
 Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI Desktop aus [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop) herunterladen.
@@ -52,9 +54,9 @@ Die Power BI-Datei (PBIX) enthält Verbindungsinformationen für Ihren Mandanten
 1.  Wählen Sie im Azure-Portal **Überwachung + Verwaltung** > **Intune** aus. Sie können auch Ressourcen nach **Intune** durchsuchen.  
 2.  Öffnen Sie das Blatt **Microsoft Intune Data Warehouse API (Preview)** (Microsoft Intune Data Warehouse-API (Vorschau)).
 3.  Klicken Sie auf **Power BI-Datei herunterladen**. Die Datei mit der Erweiterung PBIX wird an den angegebenen Speicherort heruntergeladen.
-4.  Öffnen Sie die Datei mit Power BI. Die *Intune Data Warehouse-Berichte* werden geladen. Dies kann jedoch eine Weile dauern, da Ihre Mandantendaten abgerufen werden.
+4.  Öffnen Sie die Datei mit Power BI. Die *Intune Data Warehouse-Berichte* werden geladen. Es kann jedoch eine Weile dauern, Ihre Mandantendaten abzurufen.
 5.  Klicken Sie auf **Aktualisieren**, um Ihre Mandantendaten zu laden und die Berichte zu überprüfen.
-6.  Wenn Power BI Ihre Azure Active Directory-Anmeldeinformationen noch nicht authentifiziert hat, werden Sie von Power BI aufgefordert, Ihre Anmeldeinformationen bereitzustellen. Wählen Sie beim Angeben Ihrer Anmeldeinformationen **Organisationskonto** als Authentifizierungsmethode aus.
+6.  Wenn Power BI Ihre Azure Active Directory-Anmeldeinformationen noch nicht authentifiziert hat, werden Sie von Power BI aufgefordert, Ihre Anmeldeinformationen bereitzustellen. Wenn Sie Ihre Anmeldeinformationen auswählen, wählen Sie **Organisationskonto** als Authentifizierungsmethode aus.
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>Laden der Daten in Power BI mit dem OData-Link
 
@@ -68,8 +70,8 @@ Wenn der Client bei Azure AD authentifiziert ist, verbindet sich die OData-URL m
 6. Wählen Sie **Standard**.
 7. Geben Sie die **OData-URL** in das URL-Feld ein, oder fügen Sie sie ein.
 8. Klicken Sie auf **OK**.
-9. Wenn Sie Ihren Mandanten noch nicht über den Power BI Desktop-Client bei Azure AD authentifiziert haben, geben Sie Ihre Anmeldeinformationen ein.  
-    1.  Wählen Sie **Geschäftskonto** aus.  
+9. Wenn Sie Ihren Mandanten noch nicht über den Power BI Desktop-Client bei Azure AD authentifiziert haben, geben Sie Ihre Anmeldeinformationen ein. Um auf Ihre Daten zugreifen zu können, müssen Sie mithilfe von OAuth 2.0 bei Azure Active Directory (Azure AD) eine Autorisierung durchführen.  
+    1.  Wählen Sie **Organisationskonto** aus.  
     2.  Geben Sie Ihren Benutzernamen und Ihr Kennwort ein.  
     3.  Klicken Sie auf **Anmelden**.  
     4.  Klicken Sie auf **Verbinden**.  
