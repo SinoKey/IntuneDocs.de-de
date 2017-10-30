@@ -14,11 +14,11 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6af0ff1f463c153e62f6df63ce811076c5f692f2
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-policy-entities"></a>Verweis für Richtlinienentitäten
 
@@ -35,14 +35,14 @@ Die Entität **Policy** (Richtlinie) listet Gerätekonfigurationsprofile, Appkon
 
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
-| PolicyKey |Eindeutiger Schlüssel, der die Richtlinie im Data Warehouse darstellt |123 |
-| PolicyId |Eindeutiger Identifier der Richtlinie im Data Warehouse |b66bc706-ffff-7437-0340-032819502773 |
+| PolicyKey |Eindeutiger Schlüssel, der die Richtlinie im Data Warehouse darstellen soll |123 |
+| PolicyId |Eindeutiger Bezeichner der Richtlinie im Data Warehouse |b66bc706-ffff-7437-0340-032819502773 |
 | PolicyName |Name der Richtlinie |"Windows 10-Baseline" |
 | PolicyVersion |Version der Richtlinie Wenn die Richtlinie bearbeitet oder geändert wird, wird eine neuere Version erstellt. |1, 2, 3 |
-| isDeleted |Gibt an, ob der Richtliniendatensatz aktualisiert wurde.  Wahr: Richtlinie verfügt über einen neuen Datensatz mit aktualisierten Feldern. Falsch: der neueste Datensatz für diese Richtlinie. |Wahr/falsch |
+| isDeleted |Gibt an, ob der Richtliniendatensatz aktualisiert wurde.  <br>Wahr: Richtlinie verfügt über einen neuen Datensatz mit aktualisierten Feldern. <br>Falsch: der neueste Datensatz für diese Richtlinie. |Wahr/falsch |
 | StartDateInclusiveUTC |Datum und Uhrzeit in UTC, als diese Richtlinie im Data Warehouse erstellt wurde |23.11.2016 12:00:00 Uhr |
-| DeletedDateUTC |Datum und Uhrzeit in UTC, wenn IsDeleted auf Wahr geändert wird |23.11.2016 12:00:00 Uhr |
-| RowLastModifiedDateTimeUTC |Datum und Uhrzeit in UTC, als diese Richtlinie im Data Warehouse zuletzt geändert wurde |23.11.2016 12:00:00 Uhr |
+| DeletedDateUTC |Datum und Uhrzeit in UTC, als IsDeleted in TRUE geändert wurde |23.11.2016 12:00:00 Uhr |
+| RowLastModifiedDateTimeUTC |Datum und Uhrzeit in UTC, als diese Richtlinie zuletzt im Data Warehouse geändert wurde |23.11.2016 12:00:00 Uhr |
 
 ## <a name="policytype"></a>PolicyType
 
@@ -50,8 +50,8 @@ Die Entität **PolicyType** listet Gerätekonfigurationsprofile, Appkonfiguratio
 
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
-| PolicyTypeId |Eindeutiger Identifier der Richtlinie im Quellsystem |123 |
-| PolicyTypeKey |Eindeutiger Identifier der Richtlinie im Data Warehouse |1 |
+| PolicyTypeId |Eindeutiger Bezeichner der Richtlinie im Quellsystem |123 |
+| PolicyTypeKey |Eindeutiger Bezeichner der Richtlinie im Data Warehouse |1 |
 | PolicyTypeName |Name des Richtlinientyps |Windows 10-Kompatibilitätsrichtlinie |
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
@@ -61,10 +61,10 @@ Die Entität **DeviceConfigurationProfileDeviceActivity** listet die Anzahl der 
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
 | DateKey |Date Key für den Zeitpunkt als das Einchecken der Gerätekonfigurationsprofile im Data Warehouse aufgezeichnet wurde |20160703 |
-| Pending |Anzahl eindeutiger Geräte im Zustand "ausstehend" |123 |
-| Succeeded |Anzahl eindeutiger Geräte im Zustand "erfolgreich" |12 |
-| Fehler |Anzahl eindeutiger Geräte im Zustand "Fehler" |10 |
-| Failed |Anzahl eindeutiger Geräte im Zustand "fehlerhaft" |2 |
+| Pending |Anzahl eindeutiger Geräte im Zustand „ausstehend“ |123 |
+| Succeeded |Anzahl eindeutiger Geräte im Zustand „erfolgreich“ |12 |
+| Fehler |Anzahl eindeutiger Geräte im Zustand „Fehler“ |10 |
+| Failed |Anzahl eindeutiger Geräte im Zustand „fehlerhaft“ |2 |
 
 ## <a name="userconfiguration"></a>UserConfiguration
 
@@ -73,10 +73,10 @@ Die Entität **UserConfigurationProfileDeviceActivity** listet die Anzahl der Be
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
 | DateKey |Date Key für den Zeitpunkt als das Einchecken der Gerätekonfigurationsprofile im Data Warehouse aufgezeichnet wurde |20160703 |
-| Pending |Anzahl eindeutiger Benutzer im Zustand "ausstehend" |123 |
-| Succeeded |Anzahl eindeutiger Benutzer im Zustand "erfolgreich" |12 |
-| Fehler |Anzahl eindeutiger Benutzer im Zustand "Fehler" |10 |
-| Failed |Anzahl eindeutiger Benutzer im Zustand "fehlerhaft" |2 |
+| Pending |Anzahl eindeutiger Benutzer im Zustand „ausstehend“ |123 |
+| Succeeded |Anzahl eindeutiger Benutzer im Zustand „erfolgreich“ |12 |
+| Fehler |Anzahl eindeutiger Benutzer im Zustand „Fehler“ |10 |
+| Failed |Anzahl eindeutiger Benutzer im Zustand „fehlerhaft“ |2 |
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
@@ -84,10 +84,10 @@ Die Entität **PolicyTypeActivity** listet die Gesamtzahl der Geräte im Zustand
 
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
-| DateKey |Der Datumsschlüssel gibt an, wann das Einchecken des Gerätekonfigurationsprofils im Data Warehouse aufgezeichnet wurde |20160703 |
-| PolicyKey |Der Richtlinienschlüssel kann mit der Richtlinie verknüpft werden, um den Richtliniennamen zu erhalten |Windows 10-Baseline |
-| PolicyTypeKey |Der Typ des Richtlinienschlüssels kann mit dem Richtlinientyp verknüpft werden, um den Namen des Richtlinientyps zu erhalten |Windows 10-Kompatibilitätsrichtlinie |
-| Pending |Anzahl eindeutiger Geräte im Zustand "ausstehend" |123 |
-| Succeeded |Anzahl eindeutiger Geräte im Zustand "erfolgreich" |12 |
-| Fehler |Anzahl eindeutiger Geräte im Zustand "Fehler" |10 |
-| Fehlerhaft |Anzahl eindeutiger Geräte im Zustand "fehlerhaft" |2 |
+| DateKey |Date Key für den Zeitpunkt, als das Einchecken der Gerätekonfigurationsprofile im Data Warehouse aufgezeichnet wurde |20160703 |
+| PolicyKey |Der Richtlinienschlüssel kann mit der Richtlinie verknüpft werden, um den Richtliniennamen zu erhalten. |Windows 10-Baseline |
+| PolicyTypeKey |Der Typ des Richtlinienschlüssels kann mit dem Richtlinientyp verknüpft werden, um den Namen des Richtlinientyps zu erhalten. |Windows 10-Kompatibilitätsrichtlinien |
+| Pending |Anzahl eindeutiger Geräte im Zustand „ausstehend“ |123 |
+| Succeeded |Anzahl eindeutiger Geräte im Zustand „erfolgreich“ |12 |
+| Fehler |Anzahl eindeutiger Geräte im Zustand „Fehler“ |10 |
+| Fehlerhaft |Anzahl eindeutiger Geräte im Zustand „fehlerhaft“ |2 |

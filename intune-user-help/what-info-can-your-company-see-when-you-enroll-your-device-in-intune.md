@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/04/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 8da134d768333fb03cc87ab38230f5f022fee2e1
-ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
+ms.openlocfilehash: 04b6d24d5174e49dd6e3f86b534bc59b94344002
+ms.sourcegitcommit: 2707a5fb68749a51c2a3ff54a1bac631bdaa3b87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Welche Informationen erhält mein Unternehmen, wenn ich mein Gerät registriere?
 
@@ -46,5 +46,6 @@ Wenn Sie ein Gerät zur Verwaltung registrieren, erteilen Sie Ihrem Unternehmen 
 
 **Was Ihr Unternehmen sehen könnte**
 
--  Telefonnummer: Bei **unternehmenseigenen** Geräten kann Ihre vollständige Telefonnummer angezeigt werden. Bei Geräten, die **persönliches** Eigentum sind, werden dem Unternehmen nur die letzten vier Ziffern Ihrer Telefonnummer angezeigt. Um den **Besitztyp** jedes einzelnen Geräts festzustellen, öffnen Sie die Seite **Gerätedetails** des Geräts. 
+-  Telefonnummer: Bei **unternehmenseigenen** Geräten kann Ihre vollständige Telefonnummer angezeigt werden. Bei Geräten, die **persönliches** Eigentum sind, werden dem Unternehmen nur die letzten vier Ziffern Ihrer Telefonnummer angezeigt. Um den **Besitztyp** jedes einzelnen Geräts festzustellen, öffnen Sie die Seite **Gerätedetails** des Geräts.
 -  Standort: Ihr Unternehmen kann nie den Standort Ihres Geräts sehen, sofern Sie kein iOS-Gerät haben, das überwacht wird und verloren gegangen ist. [Wie kann ich das wissen?](https://go.microsoft.com/fwlink/?linkid=853816)
+- App-Bestand: Wenn Ihr Unternehmen Mobile Threat Defense verwendet, können weitere Informationen zu den Apps auf Ihrem Gerät eingesehen werden. Erfahren Sie mehr über [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).

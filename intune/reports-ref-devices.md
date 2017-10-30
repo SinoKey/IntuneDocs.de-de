@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 957f05e87f777f62b74c8849c5b494fa638e92f4
-ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
+ms.openlocfilehash: 6d8c4af1ff091fbb125ec8a06b3c46cc2424a0bd
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-devices-entities"></a>Referenz für Geräteentitäten
 
@@ -122,9 +122,9 @@ Die Entität **EnrollmentTypes** gibt an, ob ein Gerät einem Unternehmen oder e
 
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
-| ownerTypeID |Der eindeutige Bezeichner des Besitzertyps | |
-| ownerTypeKey |Der eindeutige Bezeichner des Besitzertyps im Data Warehouse – Ersatzschlüssel | |
-| ownerTypeName |Stellt den Besitzertyp des Geräts dar: Company (Unternehmen): Das Gerät gehört einem Unternehmen. Personal (Privat): Das Gerät befindet sich im Privatbesitz (BYOD).  Unknown (Unbekannt): Es liegen keine Informationen zu diesem Gerät vor. |Company, Personal, Unknown |
+| ownerTypeID |Eindeutiger Bezeichner des Besitzertyps | |
+| ownerTypeKey |Eindeutige Bezeichner des Besitzertyps im Data Warehouse – Ersatzschlüssel | |
+| ownerTypeName |Stellt den Besitzertypen der Geräte dar:  <br>Company (Unternehmen): das Gerät gehört einem Unternehmen <br>Personal (Privat): Das Gerät befindet sich im Privatbesitz (BYOD).  <br>Unknown (Unbekannt): Es liegen keine Informationen zu diesem Gerät vor. |Company, Personal, Unknown |
 
 ## <a name="mdmstatuses"></a>MdmStatuses
 
@@ -132,7 +132,7 @@ Die Entität **MdmStatuses** gibt den Konformitätszustand des Geräts an.
 
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
-| MdmStatusName |Bezeichner von MdmStatus |0 – Unknown (Unbekannt) 1 – Compliant (Konform) 2 – Not Compliant (Nicht konform) |
+| MdmStatusName |Bezeichner von MdmStatus |0 – Unbekannt <br>1 – Kompatibel <br>2 – Nicht kompatibel |
 | MdmStatusKey |Der eindeutige Bezeichner des Konformitätszustands im Data Warehouse – Ersatzschlüssel | |
 
 ## <a name="managementstates"></a>ManagementStates
@@ -141,26 +141,26 @@ Die Entität **ManagementStates** stellt Details zum Status des Geräts bereit. 
 
 | Eigenschaft  | Beschreibung |
 |---------|------------|
-| managementStateID |Der eindeutige Bezeichner des Verwaltungsstatus |
-| managementStateKey |Der eindeutige Bezeichner des Verwaltungsstatus im Data Warehouse – Ersatzschlüssel |
-| managementStateName |Gibt den Status der Remoteaktion an, die auf dieses Gerät angewendet wurde |
+| managementStateID | Der eindeutige Bezeichner des Verwaltungsstatus |
+| managementStateKey | Der eindeutige Bezeichner des Verwaltungsstatus im Data Warehouse – Ersatzschlüssel |
+| managementStateName | Gibt den Status der Remoteaktion an, die auf dieses Gerät angewendet wurde |
 
 ## <a name="example"></a>Beispiel
 
 | managementStateID  | Name | Beschreibung |
 |---------|------------|--------|
-| 0 |Verwaltet |Verwaltet, ohne ausstehende Remoteaktionen |
-| 1 |RetirePending |Für das Gerät steht ein Befehl zum Außerkraftsetzen aus. |
-| 2 |RetireFailed |Der Befehl zum Außerkraftsetzen konnte auf dem Gerät nicht ausgeführt werden. |
-| 3 |WipePending |Für das Gerät steht ein Zurücksetzungsbefehl aus. |
-| 4 |WipeFailed |Der Zurücksetzungsbefehl konnte auf dem Gerät nicht ausgeführt werden. |
-| 5 |Unhealthy |Fehlerhafter Zustand |
-| 6 |DeletePending |Für das Gerät steht ein Löschungsbefehl aus. |
-| 7 |RetireIssued |Ein Befehl zum Außerkraftsetzen wurde an das Gerät ausgegeben. |
-| 8 |WipeIssued |Ein Zurücksetzungsbefehl wurde ausgestellt. |
-| 9 |WipeCanceled |Ein Zurücksetzungsbefehl wurde abgebrochen. |
-| 10 |RetireCanceled |Ein Befehl zum Außerkraftsetzen wurde abgebrochen. |
-| 11 |Discovered |Das Gerät wird von Intune neu ermittelt; beim ersten Mal Einchecken erhält es den Status „Managed“ (Verwaltet) |
+| 0 |Verwaltet | Verwaltet, ohne ausstehende Remoteaktionen |
+| 1 |RetirePending | Für das Gerät steht ein Befehl zum Außerkraftsetzen aus. |
+| 2 |RetireFailed | Der Befehl zum Außerkraftsetzen konnte auf dem Gerät nicht ausgeführt werden. |
+| 3 |WipePending | Für das Gerät steht ein Zurücksetzungsbefehl aus. |
+| 4 |WipeFailed | Der Zurücksetzungsbefehl konnte auf dem Gerät nicht ausgeführt werden. |
+| 5 |Unhealthy | Fehlerhafter Zustand |
+| 6 |DeletePending | Für das Gerät steht ein Löschungsbefehl aus. |
+| 7 |RetireIssued | Ein Befehl zum Außerkraftsetzen wurde an das Gerät ausgegeben. |
+| 8 |WipeIssued | Ein Zurücksetzungsbefehl wurde ausgestellt. |
+| 9 |WipeCanceled | Ein Zurücksetzungsbefehl wurde abgebrochen. |
+| 10 |RetireCanceled | Ein Befehl zum Außerkraftsetzen wurde abgebrochen. |
+| 11 |Discovered | Das Gerät wird von Intune neu ermittelt und erhält beim ersten Einchecken den Status „Managed“ (Verwaltet) |
 
 ## <a name="workplacejoinstatetypes"></a>WorkPlaceJoinStateTypes
 
@@ -168,9 +168,9 @@ Die Entität **WorkPlaceJoinStateTypes** stellt den Status des Azure Active Dire
 
 | Eigenschaft  | Beschreibung |
 |---------|------------|
-| WorkPlaceJoinStateID |Der eindeutige Bezeichner des Status des Beitritts zum Arbeitsplatz |
-| WorkPlaceJoinStateKey |Der eindeutige Bezeichner des Status des Beitritts zum Arbeitsplatz im Data Warehouse – Ersatzschlüssel |
-| WorkPlaceJoinStateName |Status des Beitritts zum Arbeitsplatz |
+| WorkPlaceJoinStateID | Der eindeutige Bezeichner des Status des Beitritts zum Arbeitsplatz |
+| WorkPlaceJoinStateKey | Der eindeutige Bezeichner des Status des Beitritts zum Arbeitsplatz im Data Warehouse – Ersatzschlüssel |
+| WorkPlaceJoinStateName | Status des Beitritts zum Arbeitsplatz |
 
 ## <a name="example"></a>Beispiel
 
@@ -192,21 +192,21 @@ Die Entität **ManagementAgentTypes** stellt die Agents dar, die zum Verwalten v
 
 | Eigenschaft  | Beschreibung |
 |---------|------------|
-| ManagementAgentTypeID |Der eindeutige Bezeichner des Typs des Verwaltungs-Agents |
-| ManagementAgentTypeKey |Der eindeutige Bezeichner des Typs des Verwaltungs-Agents im Data Warehouse – Ersatzschlüssel |
+| ManagementAgentTypeID | Eindeutige Bezeichner des Verwaltungs-Agent-Typen |
+| ManagementAgentTypeKey | Eindeutiger Bezeichner des Verwaltungs-Agent-Typen im Data Warehouse – Ersatzschlüssel |
 | ManagementAgentTypeName |Gibt an, welche Art von Agent zum Verwalten des Geräts verwendet wird |
 
 ## <a name="example"></a>Beispiel
 
 | ManagementAgentTypeID  | Name | Beschreibung |
 |---------|------------|--------|
-| 1 |EAS |Das Gerät wird mithilfe von Exchange Active Sync verwaltet. |
-| 2 |MDM |Das Gerät wird mit einem MDM-Agent verwaltet. |
-| 3 |EasMdm |Das Gerät wird sowohl von Exchange Active Sync als auch einem MDM-Agent verwaltet. |
-| 4 |IntuneClient |Das Gerät wird vom Intune-PC-Agent verwaltet. |
-| 5 |EasIntuneClient |Das Gerät wird sowohl von Exchange ActiveSync als auch vom Intune-PC-Agent verwaltet. |
-| 8 |ConfigManagerClient |Das Gerät wird vom System Center Configuration Manager-Agent verwaltet. |
-| 16 |Unbekannt |Unbekannter Typ von Verwaltungs-Agent |
+| 1 |EAS | Das Gerät wird mithilfe von Exchange Active Sync verwaltet. |
+| 2 |MDM | Das Gerät wird mit einem MDM-Agent verwaltet. |
+| 3 |EasMdm | Das Gerät wird sowohl von Exchange Active Sync als auch einem MDM-Agent verwaltet. |
+| 4 |IntuneClient | Das Gerät wird vom Intune-PC-Agent verwaltet. |
+| 5 |EasIntuneClient | Das Gerät wird sowohl von Exchange ActiveSync als auch vom Intune-PC-Agent verwaltet. |
+| 8 |ConfigManagerClient | Das Gerät wird vom System Center Configuration Manager-Agent verwaltet. |
+| 16 |Unbekannt | Unbekannter Typ von Verwaltungs-Agent |
 
 ## <a name="devices"></a>Geräte
 
@@ -214,44 +214,44 @@ In der Entität **Devices** werden alle für die Verwaltung registrierten Gerät
 
 | Eigenschaft  | Beschreibung |
 |---------|------------|
-| DeviceKey |Der eindeutige Bezeichner des Geräts im Data Warehouse – Ersatzschlüssel |
-| DeviceId |Der eindeutige Bezeichner des Geräts |
-| DeviceName |Der Name des Geräts auf Plattformen, die das Benennen von Geräten ermöglichen. Auf anderen Plattformen wird von Intune einen Namen aus anderen Eigenschaften erstellt. Dieses Attribut kann nicht für alle Geräte zur Verfügung stehen. |
-| DeviceTypeKey |Schlüssel des Gerätyp-Attributs für dieses Gerät |
-| ClientRegisterationStateKey |Schlüssel des Attributs für den Clientregistrierungsstatus dieses Geräts |
-| OwnerTypeKey |Schlüssel des Besitzertyp-Attributs für dieses Gerät: corporate (Unternehmen), personal (persönlich) oder unknown (unbekannt) |
-| objectSourceKey |Ignorieren Sie diese Spalte. |
-| CreatedDate |Datum, an dem Gerät registriert wurde |
-| LastContact |Das letzte bekannte Gerät, das bei Intune angemeldet wurde |
-| LastContactNotification |Der letzte Zeitpunkt, an dem Intune das Gerät aufgefordert hat, sich anzumelden |
-| LastContactWorkplaceJoin |Der Zeitstempel, der den letzten bekannten Status des Beitritts zum Arbeitsplatz für dieses Gerät angibt |
-| ManagementAgentKey |Der Schlüssel des Verwaltungs-Agents, der mit diesem Gerät verknüpft ist |
-| ManagementStateKey |Der Schlüssel des Verwaltungsstatus, der mit diesem Gerät verknüpft ist und den neuesten Zustand einer Remoteaktion angibt oder anzeigt, ob das Gerät per Jailbreak oder Rootzugriff manipuliert wurde |
-| ReferenceId |Die ID des Gertäts in Azure Active Directory |
-| WorkPlaceJoinStateKey |Der Schlüssel des Status des Beitritts zum Arbeitsplatz, der mit diesem Gerät verknüpft ist |
-| CategoryId |Ignorieren Sie diese Spalte. |
-| EnrollmentTypeKey |Der Schlüssel des der Registrierungstyps, der mit diesem Gerät verknüpft ist und die Registrierungsmethode angibt. |
-| CertExpirationDate |Das Ablaufdatum des MDM-Verwaltungszertifikats |
-| MdmStatusKey |Ein Schlüssel zum MdmStatus |
-| OSFamily |Familie des Betriebssystems (Windows, iOS, Android usw.) |
-| OSVersion |BS-Version |
-| OSMajorVersion |Komponente der Hauptversion der Betriebssystemversion (major.minor.build.revision) |
-| OSMinorVersion |Komponente der Nebenversion der Betriebssystemversion (major.minor.build.revision) |
-| OSBuildNumber |Komponente der Buildversion der Betriebssystemversion (major.minor.build.revision) |
-| OSRevisionNumber |Komponente der Revisionsversion der Betriebssystemversion (major.minor.build.revision) |
-| EasID |Diese EAS-ID des Geräts, wenn das Gerät von Exchange Active Sync verwaltet wird |
-| GraphDeviceIsManaged |Der letzte Verwaltungsstatus, den Intune in AAD festgelegt hat |
-| GraphDeviceIsCompliant |Der letzte Konformitätszustand, den Intune in AAD festgelegt hat |
-| SerialNumber |Die Seriennummer des Geräts, falls verfügbar |
-| EnrolledByUser |Die ID des Benutzers, der dieses Gerät registriert hat, das auf die „userId“-Spalte in der „User“-Tabelle verweist |
-| RowLastModifiedDateTimeUTC |Der letzte Zeitpunkt, an dem der Datensatz geändert wurde |
-| ProcessorArchitecture |Prozessorarchitektur |
-| DeviceAction |Die letzte ausgestellte Geräteaktion, vorläufig ignorieren |
-| Hersteller |Der Hersteller der CPU |
-| Modell |Gerätemodell |
-| LastPolicyUpdateUtc |Der letzte Zeitpunkt, an dem die Richtlinie auf dem Gerät aktualisiert wurde |
-| LastExchangeStatusUtc |Der letzte Zeitpunkt, an dem das Gerät mit Exchange synchronisiert wurde |
-| IsDeleted |Legen Sie diesen Wert auf TRUE fest, wenn das Gerät nicht mehr von Intune verwaltet wird. Dadurch wird der letzte bekannte Zustand beibehalten. |
+| DeviceKey | Der eindeutige Bezeichner des Geräts im Data Warehouse – Ersatzschlüssel. |
+| DeviceId | Eindeutiger Bezeichner des Geräts |
+| DeviceName | Der Name des Geräts auf Plattformen, die das Benennen von Geräten ermöglichen. Auf anderen Plattformen wird von Intune einen Namen aus anderen Eigenschaften erstellt. Dieses Attribut kann nicht für alle Geräte zur Verfügung stehen. |
+| DeviceTypeKey | Schlüssel des Gerätetyp-Attributs für dieses Gerät |
+| ClientRegisterationStateKey | Schlüssel des Attributs für den Clientregistrierungsstatus dieses Geräts |
+| OwnerTypeKey | Schlüssel des Besitzertyp-Attributs für dieses Gerät: corporate (Unternehmen), personal (persönlich) oder unknown (unbekannt) |
+| objectSourceKey | Ignorieren Sie diese Spalte. |
+| CreatedDate | Datum, an dem das Gerät registriert wurde |
+| LastContact | Letztes bekanntes Einchecken des Geräts mit Intune |
+| LastContactNotification | Der letzte Zeitpunkt, zu dem Intune das Gerät aufgefordert hat, sich anzumelden |
+| LastContactWorkplaceJoin | Der Zeitstempel, der den letzten bekannten Status des Beitritts zum Arbeitsplatz für dieses Gerät angibt |
+| ManagementAgentKey | Der Schlüssel des Verwaltungs-Agents, der mit diesem Gerät verknüpft ist |
+| ManagementStateKey | Der Schlüssel des Verwaltungsstatus, der mit diesem Gerät verknüpft ist und den neuesten Zustand einer Remoteaktion angibt oder anzeigt, ob das Gerät per Jailbreak oder Rootzugriff manipuliert wurde |
+| ReferenceId | Die ID des Geräts in Azure Active Directory |
+| WorkPlaceJoinStateKey | Der Schlüssel des Status des Beitritts zum Arbeitsplatz, der mit diesem Gerät verknüpft ist |
+| CategoryId | Ignorieren Sie diese Spalte. |
+| EnrollmentTypeKey | Der Schlüssel des der Registrierungstyps, der mit diesem Gerät verknüpft ist und die Registrierungsmethode angibt. |
+| CertExpirationDate | Das Ablaufdatum des MDM-Verwaltungszertifikats |
+| MdmStatusKey | Ein Schlüssel zum MdmStatus |
+| OSFamily | Familie des Betriebssystems (Windows, iOS, Android usw.) |
+| OSVersion | BS-Version |
+| OSMajorVersion | Komponente der Hauptversion der Betriebssystemversion (major.minor.build.revision) |
+| OSMinorVersion | Komponente der Nebenversion der Betriebssystemversion (major.minor.build.revision) |
+| OSBuildNumber | Komponente der Buildversion der Betriebssystemversion (major.minor.build.revision) |
+| OSRevisionNumber | Komponente der Revisionsversion der Betriebssystemversion (major.minor.build.revision) |
+| EasID | Diese EAS-ID des Geräts, wenn das Gerät von Exchange Active Sync verwaltet wird |
+| GraphDeviceIsManaged | Der letzte Verwaltungsstatus, den Intune in Azure AD festgelegt hat |
+| GraphDeviceIsCompliant | Der letzte Konformitätszustand, den Intune in Azure AD festgelegt hat |
+| SerialNumber | Die Seriennummer des Geräts, falls verfügbar |
+| EnrolledByUser | Die ID des Benutzers, der dieses Gerät registriert hat, das auf die „userId“-Spalte in der „User“-Tabelle verweist |
+| RowLastModifiedDateTimeUTC | Der letzte Zeitpunkt, an dem der Datensatz geändert wurde |
+| ProcessorArchitecture | Prozessorarchitektur |
+| DeviceAction | Die letzte ausgestellte Geräteaktion, vorläufig ignorieren |
+| Hersteller | Hersteller des Geräts |
+| Modell | Gerätemodell |
+| LastPolicyUpdateUtc | Der letzte Zeitpunkt, zu dem die Richtlinie auf dem Gerät aktualisiert wurde |
+| LastExchangeStatusUtc | Der letzte Zeitpunkt, an dem das Gerät mit Exchange synchronisiert wurde |
+| IsDeleted | Legen Sie diesen Wert auf TRUE fest, wenn das Gerät nicht mehr von Intune verwaltet wird. Dadurch wird der letzte bekannte Zustand beibehalten. |
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 
@@ -260,57 +260,58 @@ Die Entität **DevicePropertyHistory** hat die gleichen Eigenschaften wie die Ge
 | Eigenschaft  | Beschreibung |
 |---------|------------|
 | DateKey |Verweis auf die Datumstabelle, die den Tag angibt |
-| DeviceKey |Der eindeutige Bezeichner des Geräts im Data Warehouse – Ersatzschlüssel. Dies ist ein Verweis auf die Device-Tabelle (Geräte), die die Intune-Geräte-ID enthält. |
+| DeviceKey |Der eindeutige Bezeichner des Geräts im Data Warehouse – Ersatzschlüssel. Dies ist ein Verweis auf die Gerätetabelle, die die Intune-Geräte-ID enthält |
 | DeviceName |Der Name des Geräts auf Plattformen, die das Benennen von Geräten ermöglichen. Auf anderen Plattformen wird von Intune einen Namen aus anderen Eigenschaften erstellt. Dieses Attribut kann nicht für alle Geräte zur Verfügung stehen. |
-| DeviceTypeKey |Schlüssel des Gerätyp-Attributs für dieses Gerät |
+| DeviceTypeKey |Schlüssel des Gerätetyp-Attributs für dieses Gerät |
 | ClientRegisterationStateKey |Schlüssel des Attributs für den Clientregistrierungsstatus dieses Geräts |
 | OwnerTypeKey |Schlüssel des Besitzertyp-Attributs für dieses Gerät: corporate (Unternehmen), personal (persönlich) oder unknown (unbekannt) |
 | objectSourceKey |Ignorieren Sie diese Spalte. |
-| CreatedDate |Datum, an dem Gerät registriert wurde |
-| LastContact |Das letzte bekannte Gerät, das bei Intune angemeldet wurde |
-| LastContactNotification |Der letzte Zeitpunkt, an dem Intune das Gerät aufgefordert hat, sich anzumelden |
+| CreatedDate |Datum, an dem das Gerät registriert wurde |
+| LastContact |Letztes bekanntes Einchecken des Geräts mit Intune |
+| LastContactNotification |Der letzte Zeitpunkt, zu dem Intune das Gerät aufgefordert hat, sich anzumelden |
 | LastContactWorkplaceJoin |Der Zeitstempel, der den letzten bekannten Status des Beitritts zum Arbeitsplatz für dieses Gerät angibt |
 | ManagementAgentKey |Der Schlüssel des Verwaltungs-Agents, der mit diesem Gerät verknüpft ist |
 | ManagementStateKey |Der Schlüssel des Verwaltungsstatus, der mit diesem Gerät verknüpft ist und den neuesten Zustand einer Remoteaktion angibt oder anzeigt, ob das Gerät per Jailbreak oder Rootzugriff manipuliert wurde |
-| ReferenceId |Die ID des Gertäts in Azure Active Directory |
+| ReferenceId |Die ID des Geräts in Azure Active Directory |
 | WorkPlaceJoinStateKey |Der Schlüssel des Status des Beitritts zum Arbeitsplatz, der mit diesem Gerät verknüpft ist |
 | CategoryId |Ignorieren Sie diese Spalte. |
 | EnrollmentTypeKey |Der Schlüssel des der Registrierungstyps, der mit diesem Gerät verknüpft ist und die Registrierungsmethode angibt. |
 | CertExpirationDate |Das Ablaufdatum des MDM-Verwaltungszertifikats |
 | MdmStatusKey |Ein Schlüssel zum MdmStatus |
 | OSFamily |Familie des Betriebssystems (Windows, iOS, Android usw.) |
-| OSVersion |BS-Version |
+| OSVersion |Betriebssystemversion |
 | OSMajorVersion |Komponente der Hauptversion der Betriebssystemversion (major.minor.build.revision) |
 | OSMinorVersion |Komponente der Nebenversion der Betriebssystemversion (major.minor.build.revision) |
 | OSBuildNumber |Komponente der Buildversion der Betriebssystemversion (major.minor.build.revision) |
 | OSRevisionNumber |Komponente der Revisionsversion der Betriebssystemversion (major.minor.build.revision) |
 | EasID |Diese EAS-ID des Geräts, wenn das Gerät von Exchange Active Sync verwaltet wird |
-| GraphDeviceIsManaged |Der letzte Verwaltungsstatus, den Intune in AAD festgelegt hat |
-| GraphDeviceIsCompliant |Der letzte Konformitätszustand, den Intune in AAD festgelegt hat |
+| GraphDeviceIsManaged |Der letzte Verwaltungsstatus, den Intune in Azure AD festgelegt hat |
+| GraphDeviceIsCompliant |Der letzte Konformitätszustand, den Intune in Azure AD festgelegt hat |
 | SerialNumber |Die Seriennummer des Geräts, falls verfügbar |
 | EnrolledByUser |Die ID des Benutzers, der dieses Gerät registriert hat, das auf die „userId“-Spalte in der „User“-Tabelle verweist |
 | RowLastModifiedDateTimeUTC |Der letzte Zeitpunkt, an dem der Datensatz geändert wurde |
 | ProcessorArchitecture |Prozessorarchitektur |
 | DeviceAction |Die letzte ausgestellte Geräteaktion, vorläufig ignorieren |
-| Hersteller |Der Hersteller der CPU |
+| Hersteller |Hersteller des Geräts |
 | Modell |Gerätemodell |
-| LastPolicyUpdateUtc |Der letzte Zeitpunkt, an dem die Richtlinie auf dem Gerät aktualisiert wurde |
+| LastPolicyUpdateUtc |Der letzte Zeitpunkt, zu dem die Richtlinie auf dem Gerät aktualisiert wurde |
 | LastExchangeStatusUtc |Der letzte Zeitpunkt, an dem das Gerät mit Exchange synchronisiert wurde |
+
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
 Die Entität **MdmDeviceInventoryHistories** enthält tägliche Momentaufnahmen von Inventardaten für mit MDM-verwaltete Geräte für die letzten 90 Tage. Die Spalte „DateKey“ gibt den Tag für die Zeile an. Einige Eigenschaften gelten möglicherweise nicht für alle Geräte oder werden nicht für alle Geräte befüllt. Lesen Sie daher diese Seite, wenn Sie weitere Informationen suchen. Weitere Informationen finden Sie unter [Verstehen Sie Ihre Geräte mithilfe des Inventars in Microsoft Intune](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).
 
 | Eigenschaft  | Beschreibung |
 |---------|------------|
-| DateKey |Verweis auf die Datumstabelle, die den Tag angibt |
-| DeviceKey |Der eindeutige Bezeichner des Geräts im Data Warehouse – Ersatzschlüssel. Dies ist ein Verweis auf die Device-Tabelle (Geräte), die die Intune-Geräte-ID enthält. |
+| DateKey | Verweis auf die Datumstabelle, die den Tag angibt |
+| DeviceKey |Der eindeutige Bezeichner des Geräts im Data Warehouse – Ersatzschlüssel. Dies ist ein Verweis auf die Gerätetabelle, die die Intune-Geräte-ID enthält. |
 | DeviceModel |Gerätemodell |
 | Betriebssystem |Betriebssystem des Geräts |
 | DeviceName |Der Name des Geräts auf Plattformen, die das Benennen von Geräten ermöglichen. Auf anderen Plattformen wird von Intune einen Namen aus anderen Eigenschaften erstellt. Dieses Attribut kann nicht für alle Geräte zur Verfügung stehen. |
 | SoftwareVersion |In den meisten Fällen ist dies die Betriebssystemversoin, außer auf Apple-Plattformen, die eine andere BS-Version haben. |
 | Imei |IMEI-Nummer |
 | HardwareInventoryTimeUtc |Das erste Mal, dass ein Inventar für dieses Gerät gemeldet wurde |
-| InventoryModifiedTimeUtc |Das letzte Mal, an dem ein Inventar gespeichert wurde, als die Momentaufnahme erstellt wurde |
+| InventoryModifiedTimeUtc |Das letzte Mal, als Inventar gespeichert wurde, als diese Momentaufnahme erstellt wurde |
 | InventoryReportingTimeUtc |Das letzte Mal, dass ein Inventar für dieses Gerät erfasst wurde |
 | ExchangeActiveSyncId |Geräte-ID von Exchange Active Sync |
 | ComputerSystemDescription |Systembeschreibung |
@@ -322,12 +323,12 @@ Die Entität **MdmDeviceInventoryHistories** enthält tägliche Momentaufnahmen 
 | OSCaption |Beschriftung des Betriebssystems |
 | OSName |Name des Betriebssystems |
 | OSManufacturer |Hersteller des Betriebssystems |
-| OSProductSuite |Betriebssystem-Produktsuite |
-| OSProductType |Betriebssystem-Produkttyp |
+| OSProductSuite |Produktsuite des Betriebssystems |
+| OSProductType |Produkttyp des Betriebssystems |
 | Gebietsschema |Gebietsschema des Betriebssystems |
 | PhysicalMemoryCapacity |Physische Speicherkapazität (in Byte) |
-| PhysicalMemoryRemovable |Physischer Speicher auf Wechselmedien (in Bytes) |
-| SystemEnclosureChassisTypesInnerText |Definiert den Typ des Systemchassis für dieses Gerät. Die Zahlen geben die folgenden Werte an: 0 oder leer = unbekannt, 1 = Es ist ein Desktop, 2 = Es ist ein Laptop, 3 = Es ist eine Arbeitsstation, 4 = Es ist ein Enterprise-Server, 100 = Es ist ein Smartphone, 101 = Es ist ein Tablet, 102/103 = Es ist ein anderer unbekannter Typ von Mobilgerät. |
+| PhysicalMemoryRemovable |Physischer Wechselspeicher (in Byte) |
+| SystemEnclosureChassisTypesInnerText |Definiert den Typ des Systemchassis für dieses Gerät. Die Zahlen weisen auf die folgenden Werte hin:  <br>0 oder leer = unbekannt   <br>1 = Es handelt sich um einen Desktop   <br>2 = Es handelt sich um einen Laptop  <br>3 = Es handelt sich um eine Arbeitsstation  <br>4 = Es handelt sich um einen Enterprise Server  <br>100 = Es handelt sich um ein Smartphone  <br>101 = Es handelt sich um ein Tablet  <br>102/103 = Anderer unbekannter Typ eines Mobilgeräts |
 | SystemEnclosureModel |Modell des Systemgehäuses |
 | SystemEnclosureSerialNumber |Seriennummer des Systemgehäuses |
 | NetworkAdapterConfigurationText |Konfigurationstext vom Netzwerkadapter |
@@ -343,7 +344,7 @@ Die Entität **MdmDeviceInventoryHistories** enthält tägliche Momentaufnahmen 
 | HardwareVersion |Hardwareversion |
 | PlatformType |Plattformtyp |
 | ProcessorLevel |Prozessorstufe |
-| ProcessorRevision |Revisionsnummer des Prozessors |
+| ProcessorRevision |Prozessorrevision |
 | Produkt |Produkt |
 | ProductVersion |Produktversion |
 | OEM |Originalgerätehersteller |
@@ -380,7 +381,7 @@ Die Entität **MdmDeviceInventoryHistories** enthält tägliche Momentaufnahmen 
 | AllowRecoveryPassword |Kennwortwiederherstellung zulassen |
 | PasswordAutoLockTimeout |Kennwort – automatisches Sperrtimeout |
 | PasswordType |Kennworttyp |
-| BacklightACTimeout |Timeout für das Gegenlicht, wenn an eine Stromquelle angeschlossen |
+| BacklightACTimeout |Timeout für das Gegenlicht, wenn es an die Stromquelle angeschlossen ist |
 | BacklightBatTimeout |Timeout für das Gegenlicht bei Akkubetrieb |
 | PowerBackupPercent |Stromsicherung in Prozent |
 | BatteryPercent |Restlaufzeit des Akkus in Prozent |

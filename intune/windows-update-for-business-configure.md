@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4b4c2b008536881a56e768c480338b54a9e87b7e
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="manage-software-updates"></a>Verwalten von Softwareupdates
 
@@ -26,10 +26,10 @@ ms.lasthandoff: 09/09/2017
 
 Windows 10-Geräte werden mit Windows-as-a-Service aktualisiert. Ab Windows 10 enthalten neue Funktions- und Qualitätsupdates die Inhalte aller früheren Updates. Das bedeutet, dass Ihre Windows 10-Geräte nach der Installation des neuesten Updates vollständig auf dem neuesten Stand sind. Im Gegensatz zu früheren Versionen von Windows müssen Sie nun anstelle eines Teilupdates das gesamte Update installieren.
 
-Mithilfe von Windows Update for Business können Sie die Updateverwaltung vereinfachen, sodass Sie für Gruppen von Geräten keine einzelnen Updates genehmigen müssen. Sie können weiterhin eine Updaterolloutstrategie konfigurieren, um das Risiko in Ihren Umgebungen zu managen und sicherzustellen, dass Updates zur richtigen Zeit installiert werden. Mit Microsoft Intune können Sie Updateeinstellungen auf Geräten konfigurieren und die Updateinstallation zurückstellen. Intune speichert nur die Updaterichtlinienzuweisung, nicht die Updates. Geräte greifen direkt auf Windows Update zu, um die Updates zu beziehen. Intune dient zum Konfigurieren und Verwalten der **Windows 10-Updateringe**. Ein Updatering enthält eine Reihe von Einstellungen, die festlegen, wann und wie Updates für Windows 10 installiert werden. So können Sie beispielsweise Folgendes konfigurieren:
+Mithilfe von Windows Update for Business können Sie die Updateverwaltung vereinfachen, sodass Sie für Gruppen von Geräten keine einzelnen Updates genehmigen müssen. Sie können weiterhin eine Updaterolloutstrategie konfigurieren, um das Risiko in Ihren Umgebungen zu managen und sicherzustellen, dass Updates zur richtigen Zeit installiert werden. Mit Microsoft Intune können Sie Updateeinstellungen auf Geräten konfigurieren und die Updateinstallation zurückstellen. Intune speichert nur die Updaterichtlinienzuweisung, nicht die Updates. Geräte greifen für Updates direkt auf Windows Update zu. Verwenden Sie Intune, um **Windows 10-Updateringe** zu konfigurieren und zu verwalten. Ein Updatering enthält eine Reihe von Einstellungen, die festlegen, wann und wie Updates für Windows 10 installiert werden. So können Sie beispielsweise Folgendes konfigurieren:
 
 - **Windows 10 Servicing Branch:** Wählen Sie aus, ob Gruppen von Geräten Updates aus „Current Branch“ oder aus „Current Branch for Business“ erhalten sollen.  
-- **Zurückstellungseinstellungen:** Konfigurieren Sie Einstellungen für die Zurückstellung von Updates, um Updateinstallationen für Gruppen von Geräten zu verzögern. Dadurch erhalten Sie ein gestaffeltes Updaterollout, dessen Status Sie verfolgen können.
+- **Zurückstellungseinstellungen:** Konfigurieren Sie Einstellungen für die Zurückstellung von Updates, um Updateinstallationen für Gruppen von Geräten zu verzögern. Verwenden Sie diese Einstellungen, um ein gestaffeltes Updaterollout zu erhalten, dessen Fortschritt Sie verfolgen können.
 - **Aussetzung:** Verschieben Sie die Installation von Updates, falls im Rahmen des Updaterollouts ein Problem auftreten sollte.
 - **Wartungsfenster:** Konfigurieren Sie die Zeiten, in denen Updates installiert werden können.
 - **Aktualisierungstyp:** Wählen Sie aus, welche Arten von Updates installiert werden. Beispiele wären etwa Qualitätsupdates, Funktionsupdates oder Treiber.
@@ -78,14 +78,14 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 5. Wählen Sie auf dem Blatt mit der Updateringliste die Option **Erstellen** aus.
 6. Geben Sie auf dem Blatt **Create Update Ring** (Updatering erstellen) einen Namen und eine optionale Beschreibung für den Updatering an, und wählen Sie anschließend **Einstellungen** aus.
 7. Konfigurieren Sie auf dem Blatt **Einstellungen** folgende Informationen:
-    - **Servicing Branch**: Legen Sie die Verzweigung fest, für die das Gerät Windows-Updates erhält („Current Branch“ oder „Current Branch for Business“).
+    - **Servicing Branch**: Legen Sie den Branch fest, für den das Gerät Windows-Updates erhält („Current Branch“ oder „Current Branch for Business“).
     - **Microsoft-Updates**: Wählen Sie aus, ob nach App-Updates von Microsoft Update gesucht werden soll.
     - **Windows drivers** (Windows-Treiber): Wählen Sie aus, ob Windows Update-Treiber bei Updates ausgeschlossen werden sollen.
     - **Automatic update behavior** (Verhalten bei automatischen Updates): Wählen Sie aus, wie das Verhalten bei automatischen Updates verwaltet werden soll, um Updates zu suchen, herunterzuladen und zu installieren. Ausführliche Informationen finden Sie unter [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
-    - **Quality update deferral period (days)** (Zurückstellung von Qualitätsupdates (in Tagen)): Geben Sie an, für wie viele Tage Qualitätsupdates zurückgestellt werden sollen. Der Bezug dieser Qualitätsupdates kann für bis zu 30 Tage (ab Veröffentlichung) zurückgestellt werden.  
+    - **Rückstellungszeitraum für Qualitätsupdates (Tage)**: Geben Sie an, für wie viele Tage Qualitätsupdates zurückgestellt werden. Der Bezug dieser Qualitätsupdates kann für bis zu 30 Tage (ab Veröffentlichung) zurückgestellt werden.  
 
     Bei Qualitätsupdates handelt es sich in der Regel um Korrekturen und Verbesserungen für bereits vorhandene Windows-Funktionen. Sie werden üblicherweise am ersten Dienstag jedes Monats veröffentlicht, können von Microsoft jedoch auch zu einem anderen Zeitpunkt veröffentlicht werden. Sie können definieren, ob und wie lange der Bezug von Qualitätsupdates zurückgestellt werden soll, nachdem sie verfügbar geworden sind.
-    - **Feature update deferral period (days)** (Zurückstellung von Funktionsupdates (in Tagen)): Geben Sie an, für wie viele Tage Funktionsupdates zurückgestellt werden sollen. Der Bezug dieser Funktionsupdates kann für bis zu 180 Tage (ab Veröffentlichung) zurückgestellt werden.
+    - **Rückstellungszeitraum für Funktionsupdates (Tage)**: Geben Sie an, für wie viele Tage Funktionsupdates zurückgestellt werden. Der Bezug dieser Funktionsupdates kann für bis zu 180 Tage (ab Veröffentlichung) zurückgestellt werden.
 
     Bei Funktionsupdates handelt es sich in der Regel um neue Features für Windows. Nach dem Konfigurieren der Einstellung **Servicing Branch** (**CB** oder **CBB**) können Sie definieren, ob und wie lange der Bezug von Funktionsupdates zurückgestellt werden soll, nachdem sie von Microsoft über Windows Update verfügbar gemacht wurden.
 
@@ -103,36 +103,45 @@ Der neue Updatering wird in der Liste mit den Updateringen angezeigt.
 2. Wählen Sie auf der nächsten Registerkarte die Option **Gruppen auswählen** aus, und wählen Sie anschließend die Gruppen aus, denen Sie diesen Ring zuweisen möchten.
 3. Wählen Sie abschließend **Auswählen** aus, um die Zuweisung abzuschließen.
 
-
-
 ## <a name="update-compliance-reporting"></a>Updateüberwachungsberichte
+Sie können die Updatekompatibilität in Intune anzeigen oder die kostenlose Lösung „Updatekompatibilität“ in Microsoft Operations Management Suite (OMS) verwenden.
+
+### <a name="review-update-compliance-in-intune"></a>Prüfen der Updatekompatibilität in Intune 
+<!-- 1352223 -->
+Überprüfen Sie einen Richtlinienbericht, um den Bereitstellungsstatus für die Windows 10-Updateringe anzuzeigen, die Sie konfiguriert haben. 
+1. Melden Sie sich beim Azure-Portal an.
+2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+3. Wählen Sie auf dem Blatt **Intune** die Option **Softwareupdates** aus.
+4. Wählen Sie **Übersicht** auf dem Blatt **Softwareupdates** aus. Hier finden Sie allgemeine Informationen zum Status der Updateringe, die Sie zugewiesen haben.
+5. Öffnen Sie einen der folgenden Berichte: 
+     
+   **Für alle Bereitstellungsringe**:
+   1. Auf dem Blatt **Softwareupdates** > **Windows 10-Updateringe**. 
+   2. Wählen Sie **Bereitstellungsstatus pro Updatering** im Abschnitt **Überwachen** aus.
+                   
+   **Für bestimmte Bereitstellungsringe**: 
+   1. Wählen Sie auf dem Blatt **Softwareupdates** > **Windows 10-Updateringe** den zu überprüfenden Bereitstellungsring aus.
+   2. Wählen Sie im Abschnitt **Überwachen** einen der folgenden Berichte aus, um weitere Informationen zum Updatering anzuzeigen:
+      - **Bereitstellung des Updaterings für Geräte**
+      - **Bereitstellung des Updaterings für Benutzer**
+      - **Einstellungsspezifischer Bereitstellungsstatus**
+
+### <a name="review-update-compliance-using-oms"></a>Prüfen der Updatekompatibilität mithilfe von OMS
 Windows 10-Updaterollouts können in der Operations Management Suite (OMS) mithilfe der kostenlosen Updateüberwachung überwacht werden. Ausführliche Informationen finden Sie unter [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Überwachen von Windows-Updates mithilfe der Updateüberwachung). Bei Verwendung dieser Lösung können Sie eine Organisations-ID für jedes Ihrer mit Intune verwalteten Windows 10-Geräte bereitstellen, für das Sie Updateüberwachungsberichte verwenden möchten.
 
 Die Organisations-ID können Sie in der Intune-Konsole mithilfe der OMA-URI-Einstellungen einer benutzerdefinierten Richtlinie konfigurieren. Ausführliche Informationen finden Sie unter [Intune-Richtlinieneinstellungen für Windows 10-Geräte in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 
-Der OMA-URI-Pfad zum Konfigurieren der Organisations-ID lautet „./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID“. (Hierbei muss die Groß-/Kleinschreibung beachtet werden.)
+Der OMA-URI-Pfad (Groß-/Kleinschreibung beachten) zum Konfigurieren der Organisations-ID lautet „./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID“.
 
 Unter **OMA-URI-Einstellung hinzufügen oder bearbeiten** können Sie beispielsweise folgende Werte verwenden:
 
 - **Name**: Organisations-ID für die Windows-Analyse
-- **Beschreibung**: Konfigurieren der Organisations-ID für Windows-Analyselösungen
+- **Beschreibung**: Konfigurieren der Organisations-ID für Windows Analytics-Lösungen
 - **Datentyp**: Zeichenfolge
 - **OMA-URI** (Groß-/Kleinschreibung beachten): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 - **Wert**: <*Verwenden Sie die GUID, die in Ihrem OMS-Arbeitsbereich auf der Registerkarte „Windows-Telemetrie“ angezeigt wird.*>
 
 ![Windows-Einstellung für Diagnose- und Nutzungsdaten](./media/commID.png)
-
-<!--
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Software Updates**.
-4. On the **Software Updates** blade, choose **Overview**. From here you can see general information about the status of any update rings you assigned.
-4. On the **Windows 10 Updates** blade, choose **Monitor** > **Update ring deployment for devices**, **Update ring deployment for users**, or **Per-setting deployment state** to view more detailed information about update ring assignments.
--->
-
-
-
-
 
 ## <a name="how-to-pause-updates"></a>Aussetzen von Updates
 Sie können für ein Gerät den Bezug von Funktions- oder Qualitätsupdates für einen Zeitraum von bis zu 35 Tagen aussetzen (ab dem Zeitpunkt, ab dem die Updates ausgesetzt wurden). Nach Verstreichen der maximalen Anzahl von Tagen wird die Aussetzung automatisch aufgehoben, und das Gerät sucht bei Windows Update nach geeigneten Updates. Danach können Sie die Updates erneut aussetzen.

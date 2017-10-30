@@ -14,15 +14,15 @@ ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 52b498beb024b86282c93be7aa5a248800db6609
-ms.sourcegitcommit: 294de4d4058de2c625abb8143e90880d27da9284
+ms.openlocfilehash: a0d6bcb4ccac3563dd642ec0ad621645b7053dea
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 #  <a name="intune-data-warehouse-api"></a>Intune Data Warehouse-API
 
-Die Data Warehouse-API von Intune können ermöglicht es Ihnen, auf Ihre Intune-Daten in einem computerlesbaren Format zuzugreifen, um sie in Ihren bevorzugten analytischen Tools zu verwenden. Mithilfe dieser API können Sie Berichte erstellen, die einen Einblick in Ihre mobile Unternehmensumgebung ermöglichen. Die API verwendet das OData-Protokoll, das folgenden Standardmustern folgt:
+Die Data Warehouse-API von Intune ermöglicht es Ihnen, auf Ihre Intune-Daten in einem computerlesbaren Format zuzugreifen, um sie in Ihrem bevorzugten analytischen Tool zu verwenden. Mithilfe dieser API können Sie Berichte erstellen, die einen Einblick in Ihre mobile Unternehmensumgebung ermöglichen. Die API verwendet das OData-Protokoll, das folgenden Standardmustern folgt:
 
   -   Anforderungs- und Antwortheader
   -   Statuscodes
@@ -41,9 +41,12 @@ Dieser Abschnitt enthält einen Überblick über die Endpunkte, unterstützten H
 
 ## <a name="odata-custom-client"></a>Benutzerdefinierter OData-Client
 
-Sie können auf das Intune-Data Warehouse-Datenmodell über RESTful-Endpunkte zugreifen. Um auf Ihre zuzugreifen, muss sich der Client mithilfe von OAuth 2.0 bei Microsoft Azure Active Directory (Azure AD) autorisieren. Zuerst richten Sie eine Web-App und eine Client-App in Azure ein und erteilen dem Client Berechtigungen. Der lokale Client erhält die Autorisierung und kann dann mit den Data Warehouse-Endpunkten kommunizieren.
+Sie können auf das Intune-Data Warehouse-Datenmodell über RESTful-Endpunkte zugreifen. Um auf Ihre Daten zugreifen zu können, muss sich der Client mithilfe von OAuth 2.0 bei Azure Active Directory (Azure AD) autorisieren. Zuerst richten Sie eine Web-App und eine Client-App in Azure ein und erteilen dem Client Berechtigungen. Ihr lokaler Client erhält die Autorisierung und kann anschließend mit den Data Warehouse-Endpunkten kommunizieren.
 
 Weitere Informationen finden Sie unter [Abrufen von Daten aus der Data Warehouse-API mit einem REST-Client](reports-proc-data-rest.md).
+
+> [!Note]  
+> Codebeispiele finden Sie im [GitHub Intune Data Warehouse repo (GitHub-Repository für Intune Data Warehouse)](https://github.com/Microsoft/Intune-Data-Warehouse) auf GitHub.
 
 ## <a name="interacting-with-the-api"></a>Interagieren mit der API
 
@@ -58,6 +61,8 @@ OData definiert ein abstraktes Datenmodell und ein Protokoll, mit denen alle Cli
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Authentifizierungsszenarien für Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)  
-[odata.org](http://www.odata.org)  
-[OData Version 4.0](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+Erfahren Sie mehr über die Arbeit mit Azure AD unter [Authentifizierungsszenarios für Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
+
+OData-Ressourcen finden Sie unter [odata.org](http://www.odata.org).
+  
+Prüfen Sie die Standardversion 4.0 von OData [OData Version 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
