@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 nmanager: angrobe
-ms.date: 07/17/2017
+ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: e3002d08506b68069d617c413a9c3801cf4326f8
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: d83b3d6609e5fd6839e17e46520e4ef3d4551568
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Einführung in Microsoft Intune im Azure-Portal
 
@@ -43,15 +43,6 @@ Wichtige Funktionen der neuen Benutzeroberfläche:
 - Microsoft Graph-API-Unterstützung zur Automatisierung vieler Aktionen
 - Azure Active Directory-Gruppen (AD) für Kompatibilität zwischen all Ihren Azure-Anwendungen
 - Unterstützung für die meisten modernen Webbrowser
-
-> [!IMPORTANT]
-> **Das neue Portal wird noch nicht angezeigt?**<br>
-> Vorhandene Mandanten werden in die neue Umgebung migriert. Vor der Migration Ihres Mandanten wird im Office-Nachrichtencenter eine Benachrichtigung angezeigt.
->
-> Vor Januar 2017 erstellte Intune-Konten erfordern eine einmalige Migration, bevor Apple-Registrierungsworkflows in Azure verfügbar sind. Der Zeitplan für die Migration wurde noch nicht bekanntgegeben. Wenn Sie mit Ihrem vorhandenen Konto nicht auf das Azure-Portal zugreifen können, empfehlen wir das Erstellen eines Testkontos.
->
-> Schauen Sie sich die Liste potenzieller Hindernisse unter https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/ an.
-
 
 ## <a name="before-you-start"></a>Vorbereitung
 

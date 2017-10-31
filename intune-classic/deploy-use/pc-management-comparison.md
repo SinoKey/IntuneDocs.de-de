@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 66c528ce018b99a7263fb1e8395125f50d5670b3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b3050193c2f36f4092285686935a410fb6baf5b5
+ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Vergleichen der Verwaltung von Windows-PCs als Computer oder mobile Geräte
 
@@ -42,6 +42,7 @@ Organisationen können mit Microsoft Intune Windows-PCs entweder mithilfe der Ve
 |**Remoteunterstützung** |TeamViewer<br>[Anfordern und Bereitstellen von Remoteunterstützung für Windows-PCs](https://docs.microsoft.com/intune/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune)|Nicht verfügbar |
 |**App-Bereitstellung** | Für Microsoft Store für Unternehmen nicht verfügbar.<br>Nur EXE- und APPX-Dateien sowie aus mehreren Dateien bestehende MSI-Pakete<br>[Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)|Für Microsoft Store-Apps und branchenspezifische Apps verfügbar<br>[Hinzufügen von Windows Store-Apps](https://docs.microsoft.com/intune/store-apps-windows)<br>[How to add Windows line-of-business (LOB) apps (Informationen zum Hinzufügen branchenspezifischer Apps)](https://docs.microsoft.com/intune/lob-apps-windows)|
 |**App-Schutz**|Nicht verfügbar|Verfügbar <br>[Was sind App-Schutzrichtlinien?](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy)|
+|**Integritätsnachweis**|Nicht verfügbar|Verfügbar|
 
 
 ### <a name="advantages-of-mdm-windows-pc-management"></a>Vorteile der Verwaltung von Windows-PCs mit MDM

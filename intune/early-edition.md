@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a2e6fd2381286aa652a04b5ed34ab21c57ed85f6
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 973408b292261b86f0a49bfaf4c786d6a6dacf28
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2017"></a>Die Early Edition für Microsoft Intune – Oktober 2017
 
@@ -151,19 +151,6 @@ Mit der Version Android Oreo führt Google eine Suite von Sicherheitsfunktionen 
 ### <a name="support-for-windows-10-edition-upgrade-policy------903672archived-1119689---"></a>Unterstützung für die Windows 10-Editionsupgraderichtlinie <!-- 903672(archived), 1119689 -->  
 Durch das Erstellen einer Windows 10-Editionsupgraderichtlinie können Sie für Windows 10-Geräte ein Upgrade auf folgende Betriebssysteme durchführen: Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education und Windows 10 Professional Education N. Weitere Informationen zu Windows 10-Editionsupgrades finden Sie unter [Konfigurieren von Windows 10-Editionsupgrades](edition-upgrade-configure-windows-10.md).
 
-
-### <a name="intune-mam-and-outlook-for-android-add-ins-----1450688---"></a>Intune MAM und Outlook für Android-Add-Ins <!-- 1450688 -->
-In einigen Wochen wird das Office-Team Add-Ins für Outlook für Android ankündigen. Diese Add-In-Funktionsgruppe ist bereits in Outlook für Windows, iOS und Mac sowie Outlook im Web vorhanden. Da Add-Ins über Exchange verwaltet werden, können die Benutzer Daten und Nachrichten über Outlook und nicht verwaltete Add-In-Anwendungen kopieren und freigeben, sofern der Zugriff auf Add-Ins von Ihrem Exchange-Administrator aktiviert wurde. 
-
-Arbeiten Sie bei der Verwaltung von Berechtigungen für den Zugriff durch Benutzer auf Add-Ins mit Ihrem Exchange-Administrator zusammen, um sicherzustellen, dass Ihre MAM-Datenschutzrichtlinien auf Add-Ins angewendet werden.
-
-#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
-Wenn Ihre Exchange-Richtlinien bereits so konfiguriert sind, dass das Querladen oder die Installation von Add-Ins verhindert wird, können Sie diesen Abschnitt überspringen. Ihre MAM-Richtlinien werden wie erwartet angewendet. Wenn Sie jedoch Richtlinien in MAM festgelegt haben, um Vorgänge zum Ausschneiden, Kopieren und Einfügen in Outlook für Android einzuschränken, und nicht Ihre Add-In-Richtlinie in Exchange festgelegt haben, sollte Ihnen bewusst sein, dass Benutzer standardmäßig Add-Ins in Outlook installieren können. Diese Add-Ins können auf den Nachrichtentext, den Betreff und andere Nachrichteneigenschaften zugreifen. Sie können die Funktion zum Installieren von Add-Ins für Benutzer deaktivieren, indem Sie Ihren Exchange-Administrator bitten, die Rollen „Meine Marketplace-Apps“ und „Meine benutzerdefinierten Apps“ zu entfernen.
-
-Die Einstellungsänderung in Exchange gilt für Outlook für Windows, iOS und Mac, Outlook Mobile sowie Outlook im Web. 
-
-#### <a name="what-do-i-need-to-do"></a>Was muss ich tun?
-Überprüfen Sie noch heute Ihre Exchange-Richtlinien. Informieren Sie Ihre IT- und Helpdeskmitarbeiter. Wenden Sie sich bei Fragen oder Bedenken an unser Supportteam. 
 
 
 
