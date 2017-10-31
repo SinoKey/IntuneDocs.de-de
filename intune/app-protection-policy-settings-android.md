@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 635f99a0fd4857e9c0c2266371713c102ce37912
-ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
+ms.openlocfilehash: df96d525efc49cb1916812a547daababbfeea051
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Einstellungen für App-Schutzrichtlinien für Android
 Die in diesem Thema beschriebenen Richtlinieneinstellungen können im Azure-Portal auf dem Blatt **Einstellungen** für eine Schutzrichtlinie [konfiguriert](app-protection-policies.md) werden.
@@ -86,3 +86,8 @@ Es gibt zwei Kategorien von Richtlinieneinstellungen: Datenverlagerungs- und Zug
 | **Offline-Intervall (in Tagen), bevor App-Daten zurückgesetzt werden** | Nach diesem Zeitraum (durch den Administrator definiert) im Offline-Modus, muss der Benutzer für die App eine Verbindung mit dem Netzwerk herstellen und sich erneut authentifizieren. Wenn sich Benutzer erfolgreich authentifiziert haben, können sie weiterhin auf ihre Daten zugreifen, und das Offline-Intervall wird zurückgesetzt.  Wenn sich der Benutzer nicht authentifizieren kann, führt die App eine selektive Zurücksetzung des Benutzerkontos und der -daten durch.  Weitere Informationen darüber, welche Daten mit dem selektiven Zurücksetzen entfernt werden, finden Sie unter [Zurücksetzen nur von Unternehmensdaten in einer in Intune verwalteten App](https://docs.microsoft.com/en-us/intune/apps-selective-wipe).<br><br> | 90 Tage |
 | **Bildschirmaufnahme und Android-Assistent blockieren (Android 6.0+)** | Wählen Sie **Ja** aus, um die Bildschirmaufnahme und den **Android-Assistenten** des Geräts zu blockieren, wenn diese App verwendet wird. Bei der Auswahl von **Ja** wird auch das Vorschaubild für den App-Schnellzugriff unscharf, wenn diese App mit einem Geschäfts-, Schul- oder Unikonto verwendet wird. | Nein |
 | **App-PIN deaktivieren, wenn die Geräte-PIN verwaltet wird** | Wählen Sie **Ja**, um die App-PIN zu deaktivieren, wenn eine Gerätesperre auf einem registrierten Gerät erkannt wird. | Nein |
+| **Android-Mindestbetriebssystem anfordern** | Wählen Sie **Ja** aus, um zum Verwenden dieser App ein Android-Mindestbetriebssystem anzufordern. Der Zugriff des Benutzers wird blockiert, wenn die Android-Version auf dem Gerät diese Anforderung nicht erfüllt. | Nein |
+| **Android-Mindestbetriebssystem anfordern (nur Warnung)** | Wählen Sie **Ja** aus, um zum Verwenden dieser App ein Android-Mindestbetriebssystem anzufordern. Dem Benutzer wird eine Benachrichtigung angezeigt, wenn die Android-Version auf dem Gerät diese Anforderung nicht erfüllt. Diese Benachrichtigung kann verworfen werden. | Nein |
+| **App-Mindestversion anfordern** | Wählen Sie **Ja** aus, um zum Verwenden der App eine App-Mindestversion anzufordern. Der Zugriff des Benutzers wird blockiert, wenn die App-Version auf dem Gerät diese Anforderung nicht erfüllt.<br><br>Beachten Sie beim Auswählen von Ziel-Apps, dass sich das Versionierungsschema zwischen Apps unterscheidet.<br><br> | Nein | 
+| **App-Mindestversion anfordern (nur Warnung)** | Wählen Sie **Ja** aus, um zum Verwenden dieser App eine App-Mindestversion zu empfehlen. Dem Benutzer wird eine Benachrichtigung angezeigt, wenn die App-Version auf dem Gerät diese Anforderung nicht erfüllt. Diese Benachrichtigung kann verworfen werden.<br><br>Beachten Sie beim Auswählen von Ziel-Apps, dass sich das Versionierungsschema zwischen Apps unterscheidet.<br><br> | Nein | 
+
