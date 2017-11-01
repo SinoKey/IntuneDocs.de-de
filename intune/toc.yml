@@ -240,10 +240,15 @@
           href: apps-deploy.md
         - name: Überwachen von Apps
           href: apps-monitor.md
-        - name: iOS-App-Konfigurationsprofile
-          href: app-configuration-policies-use-ios.md
-        - name: Android-App-Konfigurationsprofile
-          href: app-configuration-policies-use-android.md
+        - name: App-Konfigurationsrichtlinien
+          href: app-configuration-policies-overview.md
+          items:
+            - name: iOS Verwaltete Geräte
+              href: app-configuration-policies-use-ios.md
+            - name: Android Verwaltete Geräte
+              href: app-configuration-policies-use-android.md
+            - name: Verwaltete Apps
+              href: app-configuration-policies-managed-app.md
         - name: Verwenden von iOS-App-Bereitstellungsprofilen
           href: app-provisioning-profile-ios.md
         - name: Selektives Zurücksetzen von Apps
