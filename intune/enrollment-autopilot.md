@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 76b709f97b349966fbca7115959f64a56741380b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Registrieren von Windows-Geräten mithilfe des Windows AutoPilot Deployment-Programms
 Das Windows AutoPilot Deployment-Programm vereinfacht die Bereitstellung von Geräten. Heutzutage dauert das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems sehr lange. Es kann ebenfalls viel Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und AutoPilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von AutoPilot-Geräten verwenden, können Sie z.B. Richtlinien, Profile und Apps auf den Geräten verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Overview of Windows AutoPilot (Übersicht über Windows AutoPilot)](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
@@ -47,13 +47,16 @@ AutoPilot-Bereitstellungsprofile werden verwendet, um die AutoPilot-Geräte zu k
    - **Datenschutzeinstellungen**: Wählen Sie aus, ob die Datenschutzeinstellungen den Benutzern angezeigt werden. 
    - **Lizenzbedingungen**: Wählen Sie, ob die Lizenzbedingungen den Benutzern angezeigt werden sollen.
    - **Benutzerkontotyp**: Wählen Sie, ob der Kontotyp des Benutzers **Administrator** oder **Standardbenutzer** sein soll.
+
+     > [!Note]    
+     > Diese Einstellung gilt nicht für Konten von globalen Administratoren oder Unternehmensadministratoren. Diese Konten gelten nicht als Konten von Standardbenutzern, da Sie Zugriff auf sämtliche Verwaltungsfunktionen in Azure AD haben.
 8. Klicken Sie auf **Erstellen**, um das Profil zu erstellen. Das AutoPilot-Bereitstellungsprofil ist nun verfügbar und kann Geräten zugewiesen werden.
      
-   > [!Note]    
-   > Folgende Einstellungen werden für alle AutoPilot-Bereitstellungsprofile konfiguriert:
-   > - Skip Cortana, OneDrive und OEM-Setupseiten für die Registrierung
-   > - Automatisches Einrichten für die Arbeit oder Schule
-   > - Anmelden mit einer Unternehmens- oder Schulmarke    
+> [!Note]    
+> Folgende Einstellungen werden für alle AutoPilot-Bereitstellungsprofile konfiguriert:
+> - Skip Cortana, OneDrive und OEM-Setupseiten für die Registrierung
+> - Automatisches Einrichten für die Arbeit oder Schule
+> - Anmelden mit einer Unternehmens- oder Schulmarke    
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>Zuweisen eines AutoPilot-Bereitstellungsprofils
 Nachdem Sie AutoPilot-Bereitstellungsprofile erstellt haben, können Sie diese ausgewählten Diensten zuweisen.
