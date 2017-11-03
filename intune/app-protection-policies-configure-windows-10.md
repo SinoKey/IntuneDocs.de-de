@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,47 +15,44 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d18ef2119ed0f8adc63f6675024c8e694235ee35
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: 09f3edbe8b53371514ae4826246c99201c005762
+ms.sourcegitcommit: b5692ee05e8be1842cb1007facf80c9bce972dc4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Vorbereitungen zum Konfigurieren von App-Schutzrichtlinien für Windows 10
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Vor der Erstellung einer Windows 10-App-Schutzrichtlinie müssen Sie die mobile Anwendungsverwaltung (MAM) für Windows 10 aktivieren, indem Sie den MAM-Anbieter in Azure AD einrichten. Mit dieser Konfiguration können Sie den Registrierungsstatus definieren, wenn Sie eine neue WIP-Richtlinie (Windows Information Protection) in Intune erstellen.
-
-> [!NOTE]
-> Der Registrierungsstatus kann entweder „MAM“ oder „Mobile Geräteverwaltung (MDM)“ lauten.
-
-## <a name="to-configure-the-mam-provider"></a>Konfigurieren des MAM-Anbieters
-
-1.  Navigieren Sie zum [Azure-Portal](https://portal.azure.com/) und melden Sie sich mit Ihren Intune-Anmeldeinformationen an.
-
-2.  Wählen Sie im linken Menü **Azure Active Directory** aus.
-
-    ![Konfiguration des MAM-Anbieters](./media/mam-provider-sc-1.png)
-
-3.  Das Blatt **Azure AD** wird geöffnet. Wählen Sie **Mobilität (MDM und MAM)** und klicken Sie dann auf **Microsoft Intune**.
-
-    ![Mobilität (MDM und MAM)](./media/mam-provider-sc-1.png)
-
-4.  Das Blatt zur Konfiguration wird geöffnet. Wählen Sie zuerst **Standard-MAM-URLs wiederherstellen** aus und konfigurieren Sie dann Folgendes:
-
-    a.  MAM-Benutzerbereich: Mit MAM können Sie Unternehmensdaten für bestimmte Benutzergruppen, die Windows 10-Geräte verwenden, oder alle Benutzer schützen.
-
-    b.  URL zu den MAM-Nutzungsbedingungen: Die URL zum Endpunkt für die Nutzungsbedingungen des MAM-Diensts. Hierdurch werden die Bedingungen des MAM-Diensts für Endbenutzer angezeigt.
-
-    c.  URL für MAM-Ermittlung: Dies ist die URL, nach denen Geräte beim Anwenden von App-Schutzrichtlinien suchen müssen.
-
-    d.  URL für MAM-Kompatibilität:
-
-5.  Nachdem Sie diese Einstellungen konfiguriert haben, wählen Sie **Speichern**.
+Aktivieren Sie die Verwaltung für mobile Anwendungen (Mobile Application Management, MAM) für Windows 10, indem Sie den MAM-Anbieter in Azure AD festlegen. Durch die Festlegung eines MAM-Anbieters in Azure AD können Sie den Registrierungsstatus definieren, wenn Sie eine neue WIP-Richtlinie (Windows Information Protection) in Intune erstellen. Der Registrierungsstatus kann entweder „MAM“ oder „Mobile Geräteverwaltung (MDM)“ lauten.
 
 > [!NOTE]
 > Geräte mit einem MAM-Registrierungsstatus müssen mit Azure AD verknüpft sein.
+
+## <a name="to-configure-the-mam-provider"></a>Konfigurieren des MAM-Anbieters
+
+1. Melden Sie sich beim Azure-Portal an, und klicken Sie auf **Azure Active Directory**.
+
+2. Wählen Sie **Mobilität (MDM und MAM)** in der Gruppe **Verwalten** aus.
+
+3. Klicken Sie auf **Microsoft Intune**.
+
+4. Konfigurieren Sie die Einstellungen in der Gruppe **Standard-MAM-URLs wiederherstellen** auf dem Blatt **Konfigurieren**.
+
+    **MAM-Benutzerbereich**  
+      Verwenden Sie die automatische Registrierung von MAM, um Unternehmensdaten auf den Windows-Geräten Ihrer Mitarbeiter zu verwalten. Die automatische MAM-Registrierung wird für BYOD-Szenarios konfiguriert.<ul><li>**Keine**<br>Wählen Sie diese Option, wenn alle Benutzer in MAM registriert werden können.</li><li>**Einige**<br>Wählen Sie Azure AD-Gruppen aus, die Benutzer enthalten, die in MAM registriert werden.</li><li>**Alle**<br>Wählen Sie diese Option, wenn alle Benutzer in MAM registriert werden können.</li></ul>
+
+    **URL für MDM-Nutzungsbedingungen**  
+     Die URL zum Endpunkt für die Nutzungsbedingungen des MAM-Diensts. Der Endpunkt für die Nutzungsbedingungen wird verwendet, um die Nutzungsbedingungen Endbenutzern anzuzeigen, bevor diese ihre Geräte für die Verwaltung registrieren. Im Text der Nutzungsbedingungen werden Benutzer über die auf dem mobilen Gerät erzwungenen Richtlinien informiert.
+
+    **URL für MDM-Ermittlung**  
+    Die URL des Endpunkt der Registrierung des MAM-Diensts. Der Registrierungsendpunkt wird zum Registrieren von Geräten für die Verwaltung mit dem MAM-Dienst verwendet.
+
+    **URL für MAM-Kompatibilität**  
+      Die URL des Kompatibilitätsendpunkts des MAM-Diensts. Wenn einem Benutzer der Zugriff auf eine Ressource von einem nicht-kompatiblen Gerät aus verweigert wird, wird dem Benutzer ein Link zur Kompatibilitäts-URL angezeigt. Benutzer können zu dieser URL navigieren, die vom MAM-Dienst gehostet wird, um zu verstehen, warum Ihr Gerät als nicht kompatibel eingestuft ist. Benutzer können ebenso eine eigenständige Wartung durchführen, damit ihr Gerät kompatibel wird und sie damit fortfahren können, auf Ressourcen zuzugreifen.
+
+5.  Klicken Sie auf **Speichern**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

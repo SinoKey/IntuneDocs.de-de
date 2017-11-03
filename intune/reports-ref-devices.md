@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6d8c4af1ff091fbb125ec8a06b3c46cc2424a0bd
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e3352335a5804575a39bbbf050ccb41b2674f2c
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="reference-for-devices-entities"></a>Referenz für Geräteentitäten
 
@@ -130,10 +130,23 @@ Die Entität **EnrollmentTypes** gibt an, ob ein Gerät einem Unternehmen oder e
 
 Die Entität **MdmStatuses** gibt den Konformitätszustand des Geräts an.
 
-| Eigenschaft  | Beschreibung | Beispiel |
+| Eigenschaft  | Beschreibung |
+|---------|------------|
+| MdmStatusID |Eindeutiger Bezeichner des Kompatibilitätszustands |
+| MdmStatusKey |Der eindeutige Bezeichner des Konformitätszustands im Data Warehouse – Ersatzschlüssel | 
+| ComplianceStatus |Der Kompatibilitätszustand des Geräts sollte einem der Werte aus der untenstehenden Tabelle entsprechen. | 
+
+
+## <a name="example"></a>Beispiel
+
+| MdmStatusID  | ComplianceStatus | Beschreibung |
 |---------|------------|--------|
-| MdmStatusName |Bezeichner von MdmStatus |0 – Unbekannt <br>1 – Kompatibel <br>2 – Nicht kompatibel |
-| MdmStatusKey |Der eindeutige Bezeichner des Konformitätszustands im Data Warehouse – Ersatzschlüssel | |
+| 0 |Unbekannt |Der Kompatibilitätszustand des Geräts ist „Unbekannt“. |
+| 1 |Kompatibel |Das Gerät ist kompatibel. |
+| 2 |Nicht richtlinienkonform |Das Gerät ist nicht kompatibel. |
+| 3 |Conflict |Die Kompatibilität des Geräts hat einen Konflikt ausgelöst. |
+| 4 |Fehler |Beim Lesen des Kompatibilitätszustands des Geräts ist ein Fehler aufgetreten. |
+
 
 ## <a name="managementstates"></a>ManagementStates
 
@@ -260,7 +273,7 @@ Die Entität **DevicePropertyHistory** hat die gleichen Eigenschaften wie die Ge
 | Eigenschaft  | Beschreibung |
 |---------|------------|
 | DateKey |Verweis auf die Datumstabelle, die den Tag angibt |
-| DeviceKey |Der eindeutige Bezeichner des Geräts im Data Warehouse – Ersatzschlüssel. Dies ist ein Verweis auf die Gerätetabelle, die die Intune-Geräte-ID enthält |
+| DeviceKey |Der eindeutige Bezeichner des Geräts im Data Warehouse – Ersatzschlüssel. Dies ist ein Verweis auf die Gerätetabelle, die die Intune-Geräte-ID enthält. |
 | DeviceName |Der Name des Geräts auf Plattformen, die das Benennen von Geräten ermöglichen. Auf anderen Plattformen wird von Intune einen Namen aus anderen Eigenschaften erstellt. Dieses Attribut kann nicht für alle Geräte zur Verfügung stehen. |
 | DeviceTypeKey |Schlüssel des Gerätetyp-Attributs für dieses Gerät |
 | ClientRegisterationStateKey |Schlüssel des Attributs für den Clientregistrierungsstatus dieses Geräts |

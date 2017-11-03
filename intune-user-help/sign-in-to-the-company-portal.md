@@ -1,11 +1,11 @@
 ---
 title: Anmelden bei der Unternehmensportal-App | Microsoft-Dokumentation
-description: 
+description: Vorgehensweise beim Anmelden bei der Unternehmensportal-App auf verschiedenen Plattformen.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca6d811d884b5405bdb4e5f096366c123d8e00d1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: caea74745dc58a04c60e780727b318ebdb8ff235
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Wie melde ich mich bei der Unternehmensportal-App an? <!--User Story 1132123-->
 
@@ -50,6 +50,16 @@ Die folgenden Screenshots wurden unter iOS gemacht. Die Vorgehensweise auf Andro
 4. Nachdem Ihre Anmeldedaten in der Unternehmensportal-App akzeptiert wurden, werden Sie angemeldet und können auf Ihre Unternehmensressourcen zugreifen.   
 
   ![Nach Abschluss des Authentifizierungsprozesses meldet sich die Unternehmensportal-App an und zeigt einen entsprechenden Ladebalken an.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## <a name="signing-in-with-certificate-based-authentication"></a>Anmelden über die Zertifikat-basierte Authentifizierung
+
+1.  Öffnen Sie die Unternehmensportal-App auf Ihrem Gerät.
+
+2.  Geben Sie den Namen Ihres **Geschäfts- oder Schulkontos** ein.
+
+3.  Tippen Sie auf den Link **Sign in with a certificate (Anmelden über ein Zertifikat)**.
+
+4.  Tippen Sie auf **Fortfahren**, um das Zertifikat zu verwenden.
 
 ## <a name="signing-in-from-another-device"></a>Anmelden über ein anderes Gerät
 
