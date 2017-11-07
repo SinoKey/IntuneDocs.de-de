@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: df96d525efc49cb1916812a547daababbfeea051
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 8c07125901709d4d7baf3339e4dd09cb5620e8d1
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Einstellungen für App-Schutzrichtlinien für Android
 Die in diesem Thema beschriebenen Richtlinieneinstellungen können im Azure-Portal auf dem Blatt **Einstellungen** für eine Schutzrichtlinie [konfiguriert](app-protection-policies.md) werden.
@@ -90,4 +90,3 @@ Es gibt zwei Kategorien von Richtlinieneinstellungen: Datenverlagerungs- und Zug
 | **Android-Mindestbetriebssystem anfordern (nur Warnung)** | Wählen Sie **Ja** aus, um zum Verwenden dieser App ein Android-Mindestbetriebssystem anzufordern. Dem Benutzer wird eine Benachrichtigung angezeigt, wenn die Android-Version auf dem Gerät diese Anforderung nicht erfüllt. Diese Benachrichtigung kann verworfen werden. | Nein |
 | **App-Mindestversion anfordern** | Wählen Sie **Ja** aus, um zum Verwenden der App eine App-Mindestversion anzufordern. Der Zugriff des Benutzers wird blockiert, wenn die App-Version auf dem Gerät diese Anforderung nicht erfüllt.<br><br>Beachten Sie beim Auswählen von Ziel-Apps, dass sich das Versionierungsschema zwischen Apps unterscheidet.<br><br> | Nein | 
 | **App-Mindestversion anfordern (nur Warnung)** | Wählen Sie **Ja** aus, um zum Verwenden dieser App eine App-Mindestversion zu empfehlen. Dem Benutzer wird eine Benachrichtigung angezeigt, wenn die App-Version auf dem Gerät diese Anforderung nicht erfüllt. Diese Benachrichtigung kann verworfen werden.<br><br>Beachten Sie beim Auswählen von Ziel-Apps, dass sich das Versionierungsschema zwischen Apps unterscheidet.<br><br> | Nein | 
-
