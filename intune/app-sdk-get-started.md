@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 12/15/2016
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65350c9a247c5820cb2080d8230d308a37e98d7c
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: a0134f19aea3956a6aff852d97e9d95e1882e056
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Erste Schritte mit dem Microsoft Intune App SDK
 
@@ -113,8 +113,50 @@ Microsoft Intune sammelt Daten zu Nutzungsstatistiken für Ihre App.
 
     * Wenn von Ihrer App keine SDK-Telemetriedaten an Microsoft Intune gesendet werden sollen, müssen Sie die Telemetrieübertragung deaktivieren, indem Sie im Wörterbuch „IntuneMAMSettings“ die Eigenschaft `MAMTelemetryDisabled` auf„JA“ festlegen.
 
-
 * **Intune App SDK für Android**: Vom SDK werden keine Telemetriedaten protokolliert.
+
+ Die branchenspezifische App-Versionsnummer für iOS und Android ist sichtbar <!-- 1380712 -->.
+
+## <a name="line-of-business-app-version-numbers"></a>Branchenspezifische App-Versionsnummern
+
+Branchenspezifische Apps in Intune zeigen nun die Versionsnummer für iOS- und Android-Apps an. Die Nummer wird im Azure-Portal in der App-Liste und im Übersichtsblatt der App angezeigt. Benutzer können die App-Nummer in der Unternehmensportal-App und im Webportal anzeigen.
+
+### <a name="full-version-number"></a>Vollständige Versionsnummer
+
+Die vollständige Versionsnummer identifiziert ein bestimmtes Release der App. Die Nummer wird als _Version_(_Build_) angezeigt. Beispielsweise 2.2(2.2.17560800)
+
+Die vollständige Versionsnummer besteht aus zwei Komponenten:
+
+ - **Version**  
+   Die Versionsnummer ist die von einem Menschen lesbare Releasenummer der App. Diese wird von Benutzern verwendet, um verschiedene Releases der App zu identifizieren.
+
+ - **Buildnummer**  
+    Die Buildnummer ist eine interne Nummer, die in der App-Erkennung und zur programmgesteuerten Verwaltung der App verwendet werden kann. Die Buildnummer bezieht sich auf eine Iteration der App, die auf Änderungen im Code verweist.
+
+### <a name="version-and-build-number-in-android-and-ios"></a>Versions- und Buildnummer unter Android und iOS
+
+Android und iOS verwenden Versions- und Buildnummern, um auf Apps zu verweisen. Beide Betriebssysteme verwenden jedoch betriebssystemspezifische Begriffe. In der folgenden Tabelle wird erklärt, wie diese Begriffe zueinander in Bezug stehen.
+
+Wenn Sie eine branchenspezifische Apps für die Verwendung in Intune entwickeln, denken Sie daran, die Versions- und die Buildnummer zu verwenden. Die Intune-Features für die App-Verwaltung sind abhängig von einer aussagekräftigen **CFBundleVersion** (für iOS) und einem aussagekräftigen **PackageVersionCode** (für Android). Diese Nummern sind im App-Manifest enthalten. 
+
+Intune|iOS|Android|Beschreibung|
+|---|---|---|---|
+Versionsnummer|CFBundleShortVersionString|PackageVersionName |Diese Nummer gibt ein bestimmtes Release der App für Benutzer an.|
+Buildnummer|CFBundleVersion|PackageVersionCode |Diese Nummer gibt eine Iteration im App-Code an.|
+
+#### <a name="ios"></a>iOS
+
+- **CFBundleShortVersionString**  
+    Gibt die Nummer der Releaseversion des Pakets an. Diese Nummer gibt eine veröffentlichte Version der App an. Die Nummer wird von Benutzern verwendet, um auf die App zu verweisen.
+ - **CFBundleVersion**  
+    Die Buildversion des Pakets, die eine Iteration desselben angibt. Die Nummer kann verwendet werden, um ein Release oder ein nicht veröffentlichtes Paket zu identifizieren. Die Nummer wird für die App-Erkennung verwendet.
+
+#### <a name="android"></a>Android
+
+ - **PackageVersionName**  
+    Die Versionsnummer, die Benutzern angezeigt wird. Dieses Attribut kann als Rohzeichenfolge oder als Verweis auf eine Zeichenfolgenressource festgelegt werden. Die Zeichenfolge dient lediglich dem Zweck, Benutzern angezeigt zu werden.
+ - **PackageVersionCode**  
+    Eine interne Versionsnummer. Diese Nummer wird lediglich verwendet, um zu bestimmen, ob eine Version aktueller als eine andere ist. Eine höhere Nummer gibt dabei eine aktuellere Version an. Dies ist nicht die Version. 
 
 ## <a name="next-steps-after-integration"></a>Nächste Schritte nach der Integration
 

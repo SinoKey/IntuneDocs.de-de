@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 043bc1ecf652802dc569d2df8b287b2246585f15
-ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
+ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für iOS-Geräte in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Allgemein
-    
+
 -   **Übermittlung von Diagnosedaten:** Ermöglicht dem Gerät das Senden von Diagnosedaten an Apple.
 -   **Bildschirmaufnahme:** Erlauben Sie dem Benutzer, den Bildschirminhalt als Bild zu erfassen.
     - **Remotebildschirmüberwachung über die Classroom-App (nur überwacht):** Erlauben oder sperren Sie die Anzeige des Bildschirms auf iOS-Geräten durch die Apple Classroom-App.
@@ -44,6 +44,54 @@ Dies gilt auch für Einstellungen, auf die über die iOS-Einstellungs-App zugegr
 - **Konfigurationsprofiländerungen:** Erlauben Sie dem Benutzer die Installation von Konfigurationsprofilen.
 - **Aktivierungssperre (nur überwacht):** Aktivieren Sie die Aktivierungssperre auf überwachten iOS-Geräten.
 
+## <a name="configurations-requiring-supervision"></a>Konfigurationen, die Überwachung erfordern
+
+Der überwachte Modus von iOS kann nur während der ersten Einrichtung des Geräts über das Apple-Programm zur Geräteregistrierung oder mithilfe von Apple Configurator aktiviert werden. Sobald der überwachte Modus aktiviert ist, kann Intune ein Gerät mit folgenden Funktionen konfigurieren:
+
+- App-Sperre (Einzelanwendungsmodus) 
+- Globaler HTTP-Proxy 
+- Umgehung der Aktivierungssperre 
+- Modus der autonomen einzelnen App 
+- Webinhaltsfilter 
+- Festlegen von Hintergrund und Sperrbildschirm 
+- App-Pushbenachrichtigung im Hintergrund 
+- Always On-VPN 
+- Zulassen von ausschließlich verwalteter App-Installation 
+- iBookstore 
+- iMessages 
+- Gamecenter 
+- AirDrop 
+- AirPlay 
+- Hostkopplung 
+- Cloudsynchronisierung 
+- Spotlight-Suche 
+- Übergabe 
+- Gerät löschen 
+- Einschränkungen-Benutzeroberfläche 
+- Installation von Konfigurationsprofilen von der Benutzeroberfläche 
+- News 
+- Tastenkombinationen 
+- Kennungsänderungen 
+- Änderungen des Gerätenamens 
+- Änderungen des Hintergrundbilds 
+- Automatische App-Downloads 
+- Änderungen der Vertrauensstellung für Unternehmens-Apps 
+- Apple Music 
+- E-Mail-Ablage 
+- Kopplung mit Apple Watch 
+
+> [!NOTE]
+> Apple hat angekündigt, dass bestimmte Einstellungen im Jahr 2018 in den überwachten Modus übergehen. Bedenken Sie dies, wenn Sie diese Einstellungen verwenden, und warten Sie nicht, bis Apple diese zum überwachten Modus migriert:
+> - App-Installation durch Benutzer
+> - App-Deinstallation
+> - FaceTime
+> - Safari
+> - iTunes
+> - Anstößiger Inhalt
+> - Dokumente und Daten von iCloud
+> - Multiplayerspiele
+> - Gamecenter-Freunde hinzufügen
+
 ## <a name="password"></a>Kennwort
 -   **Kennwort:** Der Endbenutzer muss ein Kennwort eingeben, um auf das Gerät zugreifen zu können.
     -   **Einfache Kennwörter:** Erlauben Sie einfache Kennwörter wie 0000 oder 1234.
@@ -56,7 +104,7 @@ Dies gilt auch für Einstellungen, auf die über die iOS-Einstellungs-App zugegr
     -   **Kennwortablauf (Tage):** Geben Sie die Anzahl der Tage an, bevor das Gerätekennwort geändert werden muss.
     -   **Wiederverwendung vorheriger Kennwörter verhindern:** Geben Sie an, wie viele zuvor verwendete Kennwörter vom Gerät gespeichert werden.
     -   **Entsperrung durch Fingerabdruck:** Erlauben Sie die Verwendung von Fingerabdrücken zum Entsperren kompatibler Geräte.
-- **Änderung von Kennung (nur überwacht):** Die Kennung kann dadurch nicht geändert, hinzugefügt oder entfernt werden. 
+- **Änderung von Kennung (nur überwacht):** Die Kennung kann dadurch nicht geändert, hinzugefügt oder entfernt werden.
     - **Fingerabdruckänderung (nur überwacht):** Der Benutzer kann dadurch keine TouchID-Einstellungen ändern, hinzufügen oder entfernen.
 
 <sup>1</sup> Wenn Sie die Einstellungen **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung** und **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts** konfigurieren, werden diese nacheinander angewendet. Wenn Sie beispielsweise den Wert für beide Einstellungen auf **5** Minuten einstellen, wird der Bildschirm automatisch nach 5 Minuten deaktiviert, und das Gerät wird nach weiteren 5 Minuten gesperrt. Wenn der Benutzer den Bildschirm jedoch manuell deaktiviert, wird die zweite Einstellung sofort angewendet. Im selben Beispiel wird das Gerät 5 Minuten später gesperrt, nachdem der Benutzer den Bildschirm deaktiviert hat.
@@ -89,7 +137,7 @@ Dies gilt auch für Einstellungen, auf die über die iOS-Einstellungs-App zugegr
 
 ## <a name="built-in-apps"></a>Integrierte Apps
 
--   **Kamera:** Legen Sie fest, ob die Kamera des Geräts verwendet werden darf. 
+-   **Kamera:** Legen Sie fest, ob die Kamera des Geräts verwendet werden darf.
     -   **FaceTime:** Erlauben Sie die Verwendung der FaceTime-App auf dem Gerät.
 -   **Siri:** Erlauben Sie die Verwendung des Sprach-Assistenten Siri auf dem Gerät.
     -   **Siri bei Gerätesperre:** Erlauben Sie die Verwendung des Sprach-Assistenten Siri auf dem Gerät, während das Gerät gesperrt ist.
@@ -124,9 +172,7 @@ Geräteprofile, die Einstellungen für eingeschränkte Apps enthalten, müssen B
 Beispiel: Suchen Sie nach Microsoft Word für iPad. Die URL, die Sie verwenden, ist https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
-> Sie können auch die iTunes-Software verwenden, um die App zu suchen, und dann den Befehl **Link kopieren** , um die App-URL abzurufen.
-
-
+> Sie können auch iTunes verwenden, um die App zu suchen, und dann den Befehl **Link kopieren**, um die App-URL abzurufen.
 
 ### <a name="additional-options"></a>Zusätzliche Optionen
 
@@ -247,7 +293,7 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 ,com.apple.mobileslideshow,Photos,Apple
 ,com.apple.podcasts,Podcasts,Apple
 ,com.apple.reminders,Reminders,Apple
-,com.apple.mobilesafariSafari,Apple
+,com.apple.MobileSafari,Safari,Apple
 ,com.apple.Preferences,Settings,Apple
 ,com.apple.stocks,Stocks,Apple
 ,com.apple.tips,Tips,Apple
@@ -305,6 +351,6 @@ Fügen Sie im Feld **E-Mail-Domänen-URL** eine oder mehrere URLs der Liste hinz
 Fügen Sie im Feld **Webdomänen-URL** eine oder mehrere URLs der Liste hinzu. Wenn Dokumente von den Domänen heruntergeladen werden, die Sie angeben, gelten sie als verwaltet. Diese Einstellung gilt nur für Dokumente, die mit dem Safari-Browser heruntergeladen werden.
 
 
-### <a name="safari-password-auto-fill-domains"></a>Domänen für automatisches Ausfüllen des Safari-Kennworts
+### <a name="safari-password-autofill-domains"></a>Domänen für automatisches Ausfüllen des Safari-Kennworts
 
 Fügen Sie im Feld **Domänen-URL** eine oder mehrere URLs der Liste hinzu. Benutzer können nur Webkennwörter von URLs in dieser Liste speichern. Diese Einstellung gilt nur für den Safari-Browser und Geräte mit iOS 9.3 und höher im überwachten Modus. Wenn Sie keine URLs angeben, können Kennwörter von allen Websites gespeichert werden.
