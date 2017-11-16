@@ -164,6 +164,8 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Deployment-Programm
               href: enrollment-autopilot.md
+            - name: Bildschirm der Statusregistrierung
+              href: windows-enrollment-status.md
         - name: Einrichten der Android-Registrierung
           href: android-enroll.md
         - name: Einrichten der iOS-Registrierung
@@ -365,6 +367,8 @@
               href: certficates-pfx-configure.md
         - name: Konfigurieren der Windows Information Protection-Einstellungen
           href: windows-information-protection-configure.md
+        - name: Verwalten von PowerShell-Skripts
+          href: intune-management-extension.md
         - name: Überwachen der Telekommunikationsausgaben
           href: telecom-expenses-monitor.md
         - name: Zuweisen von Profilen
@@ -556,11 +560,11 @@
     - name: Konfigurieren von benutzerdefinierten Geräteeinstellungen
       href: custom-settings-configure.md
       items:
+        - name: WLAN-Profil mit einem vorinstallierten Schlüssel
+          href: wi-fi-profile-shared-key.md
         - name: Android
           href: custom-settings-android.md
           items:
-            - name: WLAN-Profil mit einem vorinstallierten Schlüssel
-              href: wi-fi-profile-shared-key.md
             - name: Profil für Pro-App-VPN
               href: android-pulse-secure-per-app-vpn.md
             - name: Zulassen/Blockieren von Apps für Samsung KNOX Standard
@@ -604,19 +608,23 @@
         - name: Datenmodell von Data Warehouse
           href: reports-ref-data-model.md
           items:
+            - name: Darstellung der Benutzerlebensdauer im Intune-Data Warehouse
+              href: reports-ref-user-timeline.md
             - name: Verweis für Anwendungsentitäten
               href: reports-ref-application.md
+            - name: Verweis für die aktuelle Benutzerentität
+              href: reports-ref-current-user.md
             - name: Verweis für die Datumsentität
               href: reports-ref-date.md
             - name: Referenz für Geräteentitäten
               href: reports-ref-devices.md
-            - name: Referenz für die Intune-Verwaltungserweiterung
+            - name: Verweis für die Intune-Verwaltungserweiterungsentität
               href: reports-ref-intunemanagementextension.md
             - name: Verweis für MAM-Entitäten (Verwaltung mobiler Apps)
               href: reports-ref-mobile-app-management.md
             - name: Verweis für Richtlinienentitäten
               href: reports-ref-policy.md
-            - name: Verweis für Benutzergerätezuordnung
+            - name: Verweis für die Entität der Benutzergerätezuordnung
               href: reports-ref-user-device.md
             - name: Verweis für die Benutzerentität
               href: reports-ref-user.md

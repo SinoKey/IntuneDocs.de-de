@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/03/2017
+ms.date: 10/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bef73c81d285a6d320cd92b055ff2b5592a55af4
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: caf399650e0a6382d3e03a133cad3aee1eda2d39
+ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="what-is-device-enrollment"></a>Was ist die Geräteregistrierung?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -80,56 +80,12 @@ Im Folgenden werden Registrierungsszenarien für unternehmenseigene Geräte vorg
 Der Geräteregistrierungs-Manager (DEM) ist ein besonderes Benutzerkonto, das zum Registrieren und Verwalten mehrerer firmeneigener Geräte verwendet wird. Manager können das Unternehmensportal installieren und viele benutzerlose Geräte registrieren. Erfahren Sie mehr über den [DEM](./device-enrollment-manager-enroll.md).
 
 ### <a name="dep"></a>DEP (Device Enrollment Program)
-Mit der Apple DEP-Verwaltung (Device Enrollment Program, Programm zur Geräteregistrierung) können Sie Richtlinien erstellen und „drahtlos“ auf iOS-Geräten bereitstellen, die mit DEP erworben wurden und verwaltet werden. Das Gerät wird beim ersten Einschalten durch den Benutzer registriert und führt dann den iOS-Setup-Assistenten aus. Diese Methode unterstützt den überwachten Modus von iOS, der zulässt, dass ein Gerät mit folgenden Funktionen konfiguriert wird:
-
-- App-Sperre (Einzelanwendungsmodus) 
-- Globaler HTTP-Proxy 
-- Umgehung der Aktivierungssperre 
-- Modus der autonomen einzelnen App 
-- Webinhaltsfilter 
-- Festlegen von Hintergrund und Sperrbildschirm 
-- App-Pushbenachrichtigung im Hintergrund 
-- Always On-VPN 
-- Zulassen von ausschließlich verwalteter App-Installation 
-- iBookstore 
-- iMessages 
-- Gamecenter 
-- AirDrop 
-- AirPlay 
-- Hostkopplung 
-- Cloudsynchronisierung 
-- Spotlight-Suche 
-- Übergabe 
-- Gerät löschen 
-- Einschränkungen-Benutzeroberfläche 
-- Installation von Konfigurationsprofilen von der Benutzeroberfläche 
-- News 
-- Tastenkombinationen 
-- Kennungsänderungen 
-- Änderungen des Gerätenamens 
-- Änderungen des Hintergrundbilds 
-- Automatische App-Downloads 
-- Änderungen der Vertrauensstellung für Unternehmens-Apps 
-- Apple Music 
-- E-Mail-Ablage 
-- Kopplung mit Apple Watch 
-
-> [!NOTE]
-> Apple hat angekündigt, dass bestimmte Einstellungen im Jahr 2018 in den überwachten Modus übergehen. Bedenken Sie dies, wenn Sie diese Einstellungen verwenden, und warten Sie nicht, bis Apple diese zum überwachten Modus migriert:
-> - App-Installation
-> - App-Deinstallation
-> - FaceTime
-> - Safari
-> - iTunes
-> - Anstößiger Inhalt
-> - Dokumente und Daten von iCloud
-> - Multiplayerspiele
-> - Gamecenter-Freunde hinzufügen
+Mit der Apple DEP-Verwaltung (Device Enrollment Program, Programm zur Geräteregistrierung) können Sie Richtlinien erstellen und „drahtlos“ auf iOS-Geräten bereitstellen, die mit DEP erworben wurden und verwaltet werden. Das Gerät wird beim ersten Einschalten durch den Benutzer registriert und führt dann den iOS-Setup-Assistenten aus. Diese Methode unterstützt den überwachten Modus von iOS, der zulässt, dass ein Gerät mit bestimmten Funktionen konfiguriert wird.
 
 Weitere Informationen zur iOS DEP-Registrierung finden Sie unter:
 
 - [Auswählen der Registrierungsmethode für iOS-Geräte](ios-enroll.md)
-- [Registrieren von iOS-Geräten mithilfe des Programms zur Geräteregistrierung](device-enrollment-program-enroll-ios.md)
+- [Registrieren von iOS-Geräten mithilfe des Programms zur Geräteregistrierung](https://docs.microsoft.com/intune/device-restrictions-ios#device-enrollment-program)
 
 ### <a name="usb-sa"></a>USB (Setup-Assistent)
 IT-Administratoren benutzen Apple Configurator über USB, um jedes unternehmenseigene Gerät manuell für die Registrierung mit dem Setup-Assistenten vorzubereiten. Der IT- Administrator erstellt ein Registrierungsprofil und exportiert dieses in Apple Configurator. Wenn die Benutzer ihre Geräte erhalten, werden sie aufgefordert, den Setup-Assistenten auszuführen. Diese Methode unterstützt den **überwachten iOS-Modus**, der wiederum folgende Funktionen ermöglicht:

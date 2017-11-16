@@ -1,12 +1,12 @@
 ---
 title: Erste Schritte mit dem Azure-Portal
 titlesuffix: Azure portal
-description: "Erfahren Sie mehr über das Erstellen und Freigeben von Dashboards in Intune im Azure-Portal."
+description: "Erfahren Sie mehr über das Erstellen und Freigeben von Dashboards für Intune im Azure-Portal."
 keywords: 
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
-ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
+ms.openlocfilehash: cce99fb69abd5f99a4a1eae0c6fbe0e5178af450
+ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>Erste Schritte mit Intune im Azure-Portal
 
-Sie finden den Intune-Dienst im Azure-Portal. In Azure gibt es viele Dienste, von denen Sie viele nicht regelmäßig verwenden. Durch das Anpassen des Dashboards und der Randleiste finden Sie die benötigten Informationen schneller, wenn Sie sich für die Geräteverwaltung bei Intune anmelden.
+Sie finden den Intune-Dienst im Azure-Portal. In Azure gibt es viele Dienste, von denen Sie einige nicht regelmäßig verwenden. Durch das Anpassen des Dashboards und der Randleiste finden Sie die benötigten Informationen schneller, wenn Sie sich für die Geräteverwaltung bei Intune anmelden.
 
 ## <a name="changing-the-sidebar"></a>Ändern der Randleiste
 
-Die __Randleiste__ links im Azure-Portal zeigt eine Liste der verfügbaren Azure-Dienste. Die Standardansicht dieser umfassenden Liste kann geändert werden, damit Sie einen Überblick über die Dienste behalten, die für Sie am wichtigsten sind. Wir verwenden Intune als das Beispiel für einen Dienst, der am Anfang der Liste hinzugefügt werden soll.
+Die __Randleiste__ links im Azure-Portal zeigt eine Liste aller verfügbaren Azure-Dienste. Die Standardansicht dieser umfassenden Liste kann geändert werden, damit Sie einen Überblick über die Dienste behalten, die für Sie am wichtigsten sind. Wir verwenden Intune als das Beispiel für einen Dienst, der am Anfang der Liste hinzugefügt werden soll.
 
 ![Ein Benutzer, der in der Liste „Weitere Dienste“ nach Intune sucht.](./media/azure-add-intune1.png)
 
@@ -52,7 +52,7 @@ Dies wird wichtiger, wenn Sie mehr Inhalte wie Gruppen und Benutzer in Intune hi
 
 ## <a name="using-services"></a>Verwenden von Diensten
 
-Wenn Sie Intune oder einen anderen Dienst in Azure öffnen, wird er auf einem **Blatt** angezeigt. Einige der ersten Workloads wie **Benutzer**, **Gruppen** und **Mobile Apps**, die Sie in Intune verwenden, werden alle im Vollbildblatt angezeigt. Wenn Sie die Workload auswählen, wird das Blatt im Vollbildmodus geöffnet. Andere Blätter werden beim Öffnen vom rechten Rand des Blatts geschoben und werden unter dem Hauptblatt reduziert, von dem sie stammen.
+Wenn Sie Intune oder einen anderen Dienst in Azure öffnen, wird der Dienst auf einem **Blatt** angezeigt. Einige der ersten Workloads wie **Benutzer**, **Gruppen** und **Mobile Apps**, die Sie in Intune verwenden, werden alle im Vollbildblatt angezeigt. Wenn Sie die Workload auswählen, wird das Blatt im Vollbildmodus geöffnet. Andere Blätter werden beim Öffnen vom rechten Rand des Blatts geschoben und unter dem Hauptblatt reduziert, von dem sie stammen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
