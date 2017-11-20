@@ -15,11 +15,11 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b690f691278d0cc708ed7e586e30aee4ed6e807a
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 406d0faa1e03a41d20c1b584d2d37f9810ddbf32
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="app-configuration-policies-for-intune"></a>App-Konfigurationsrichtlinien für Intune
 
@@ -28,7 +28,7 @@ Geben Sie Einstellungen dafür an, wenn Benutzer eine iOS- oder Android-App mit 
 - Eine benutzerdefinierte Portnummer
 - Spracheinstellungen
 - Sicherheitseinstellungen
-- Brandingeinstellungen wie z. B. ein Unternehmenslogo
+- Brandingeinstellungen, z. B. ein Unternehmenslogo
 
 Wenn Benutzer diese Einstellungen nicht ordnungsgemäß eingeben, kann dies zur erhöhten Belastung Ihres Helpdesks führen und die Annahme der neuen Apps verlangsamen.
 
@@ -38,7 +38,7 @@ Sie weisen diese Richtlinien nicht direkt Benutzern und Geräten zu. Stattdessen
 
 Ihnen stehen zwei Optionen für das Verwenden der App-Konfigurationen mit Intune zur Verfügung:
  - **Verwaltete Geräte**  
-   Das Gerät wird von Intune als MDM-Anbieter verwaltet.
+   Das Gerät wird von Intune als MDM-Anbieter (mobile device manager, mobile Geräteverwaltung) verwaltet.
  - **Verwaltete Apps**  
    Eine App wird ohne Geräteregistrierung verwaltet.
 

@@ -3,10 +3,10 @@ title: "Erstellen eines WLAN-Profils über einen vorinstallierten Schlüssel"
 titleSuffix: Azure portal
 description: "Verwenden Sie ein benutzerdefiniertes Profil von Intune, um ein WLAN-Profil mit einem vorinstallierten Schlüssel zu erstellen."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 05/15/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c524acc403d6a1c041aa0dcea0948c2707202e03
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
+ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/10/2017
 ---
-# <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Verwenden eines benutzerdefinierten Geräteprofils von Microsoft Intune zum Erstellen eines WLAN-Profils über einen vorinstallierten Schlüssel
+# <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Verwenden Sie ein benutzerdefiniertes Geräteprofil zum Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Erfahren Sie, wie Sie mithilfe von **benutzerdefinierten Geräteprofilen** in Intune ein WLAN-Profil mit einem vorinstallierten Schlüssel erstellen. Dieses Thema umfasst außerdem ein Beispiel für die Erstellung eines EAP-basierten WLAN-Profils.
@@ -205,3 +205,12 @@ Sie können die XML-Datei auch aus einer vorhandenen WLAN-Verbindung erstellen:
     Es wird empfohlen, einen Computer zu verwenden, der nicht mit allzu vielen WLANs verbunden ist, weil Sie die einzelnen Profile durchsuchen müssen, um das richtige zu finden.
 3.     Durchsuchen Sie die XML-Dateien, um die Datei mit dem richtigen Namen zu finden.
 4.     Nachdem Sie die richtige XML-Datei gefunden haben, kopieren Sie den XML-Code in das Feld „Daten“ auf der Seite mit den OMA-URI-Einstellungen.
+
+## <a name="best-practices"></a>Bewährte Methoden
+Bevor Sie ein WLAN-Profil mit PSK bereitstellen, überprüfen Sie, ob das Gerät eine direkte Verbindung mit dem Endpunkt herstellen kann.
+
+Rechnen Sie beim Rotieren von Schlüsseln (Kennwörtern oder Passphrases) mit Ausfallzeiten, und planen Sie die Bereitstellung entsprechend. Erwägen Sie die Push-Übertragung von neuen WLAN-Profilen in der arbeitsfreien Zeit. Außerdem sollten Sie die Benutzer warnen, dass die Konnektivität beeinträchtigt sein kann.
+ 
+Um eine reibungslose Umstellung und die zeitnahe Übermittlung von Richtlinienaktualisierungen zu gewährleisten, müssen die Geräte wenigstens einen offenen Kommunikationskanal zu Intune behalten. Verwenden Sie zu diesem Zweck Mobilfunkverbindungen, um WLAN-Gastzugriff bereitzustellen, mit dem Benutzer ausschließlich mit Intune-Endpunkten verbunden werden.
+
+

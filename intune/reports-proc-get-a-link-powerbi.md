@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56f80e7cede68364d1a98b58acab3e7dd2f51b73
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: aa559d946456f215d4db925c8a2e8a42cfacf209
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinden mit dem Data Warehouse mit Power BI
 
@@ -53,9 +53,9 @@ Die Power BI-Datei (PBIX) enthält Verbindungsinformationen für Ihren Mandanten
 
 1.  Wählen Sie im Azure-Portal **Überwachung + Verwaltung** > **Intune** aus. Sie können auch Ressourcen nach **Intune** durchsuchen.  
 2.  Öffnen Sie das Blatt **Microsoft Intune Data Warehouse API (Preview)** (Microsoft Intune Data Warehouse-API (Vorschau)).
-3.  Klicken Sie auf **Power BI-Datei herunterladen**. Die Datei mit der Erweiterung PBIX wird an den angegebenen Speicherort heruntergeladen.
+3.  Wählen Sie **Power BI-Datei herunterladen** aus. Die Datei mit der Erweiterung PBIX wird an den angegebenen Speicherort heruntergeladen.
 4.  Öffnen Sie die Datei mit Power BI. Die *Intune Data Warehouse-Berichte* werden geladen. Es kann jedoch eine Weile dauern, Ihre Mandantendaten abzurufen.
-5.  Klicken Sie auf **Aktualisieren**, um Ihre Mandantendaten zu laden und die Berichte zu überprüfen.
+5.  Wählen Sie **Aktualisieren** aus, um Ihre Mandantendaten zu laden und die Berichte zu überprüfen.
 6.  Wenn Power BI Ihre Azure Active Directory-Anmeldeinformationen noch nicht authentifiziert hat, werden Sie von Power BI aufgefordert, Ihre Anmeldeinformationen bereitzustellen. Wenn Sie Ihre Anmeldeinformationen auswählen, wählen Sie **Organisationskonto** als Authentifizierungsmethode aus.
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>Laden der Daten in Power BI mit dem OData-Link
@@ -69,13 +69,13 @@ Wenn der Client bei Azure AD authentifiziert ist, verbindet sich die OData-URL m
 5. Wählen Sie **Startseite** > **Daten abrufen** aus. Wählen Sie **OData-Feed** aus.
 6. Wählen Sie **Standard**.
 7. Geben Sie die **OData-URL** in das URL-Feld ein, oder fügen Sie sie ein.
-8. Klicken Sie auf **OK**.
+8. Wählen Sie **OK** aus.
 9. Wenn Sie Ihren Mandanten noch nicht über den Power BI Desktop-Client bei Azure AD authentifiziert haben, geben Sie Ihre Anmeldeinformationen ein. Um auf Ihre Daten zugreifen zu können, müssen Sie mithilfe von OAuth 2.0 bei Azure Active Directory (Azure AD) eine Autorisierung durchführen.  
     1.  Wählen Sie **Organisationskonto** aus.  
     2.  Geben Sie Ihren Benutzernamen und Ihr Kennwort ein.  
-    3.  Klicken Sie auf **Anmelden**.  
-    4.  Klicken Sie auf **Verbinden**.  
-10. Klicken Sie auf **Laden**.
+    3.  Wählen Sie **Anmelden** aus.  
+    4.  Wählen Sie **Verbinden** aus.  
+10. Wählen Sie **Laden** aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f1ffc07d87e98666a882415d63e11bd04bbd5461
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: fb75d895a2100172fab337dcd740c076ff5e85b7
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Abrufen von Daten aus der Intune-Data Warehouse-API mit einem REST-Client
 
@@ -30,49 +30,43 @@ Für die Einrichtung eines Clients zum Abrufen von Daten aus der Data Warehouse-
 3. Erteilen Sie der Client-App Zugriff auf die Microsoft Intune-API.
 3. Erstellen Sie einen lokalen REST-Client zum Abrufen der Daten.
 
-Anhand der folgenden Schritte erfahren Sie, wie Postman als Client autorisiert und verwendet wird. Bei Postman handelt es sich um ein häufig verwendetes Tool zur Problembehandlung und Entwicklung von REST-Clients für APIs. Weitere Informationen zu Postman finden Sie auf der [Postman](https://www.getpostman.com)-Website. Dieses Thema enthält auch ein C#-Codebeispiel. Darin wird gezeigt, wie ein Client autorisiert und Daten aus der API abgerufen werden.
+Aus den folgenden Schritten können Sie ersehen, wie Autorisierung und Zugriff auf eine API mit einem REST-Client erfolgen. Sehen wir uns zunächst einen generischen REST-Client am Beispiel von Postman an. Bei Postman handelt es sich um ein häufig verwendetes Tool zur Problembehandlung und Entwicklung von REST-Clients für APIs. Weitere Informationen zu Postman finden Sie auf der [Postman](https://www.getpostman.com)-Website. Anschließend können Sie ein C#-Codebeispiel betrachten. Darin wird gezeigt, wie ein Client autorisiert und Daten aus der API abgerufen werden.
 
-## <a name="create-a-native-app-in-azure"></a>Erstellen einer nativen App in Azure
+## <a name="create-a-client-app-as-a-native-app-in-azure"></a>Erstellen Sie eine Client-App als eine native App in Azure.
 
 Erstellen Sie eine native App in Azure. Diese native App ist die Client-App. Der Client auf dem lokalen Computer verweist auf die Intune-Data Warehouse-API, wenn der lokale Client Anmeldeinformationen anfordert. 
 
 1. Melden Sie sich für Ihren Mandanten beim Azure-Portal an. Klicken Sie auf **Azure Active Directory** > **App-Registrierungen**, um das Blatt **App-Registrierungen** zu öffnen.
-2. Klicken Sie auf **New app registration** (Neue App-Registrierung).
+2. Wählen Sie **New app registration** (Neue App-Registrierung) aus.
 3. Geben Sie die App-Informationen ein.
     1.  Geben Sie unter **Name** einen Anzeigenamen wie „Intune-Data Warehouse-Client“ ein.
     2.  Wählen Sie für den **Anwendungstyp** die Option **Nativ** aus.
     3.  Geben Sie eine URL als **Anmelde-URL** ein. Die Anmelde-URL richtet sich nach dem jeweiligen Szenario. Wenn Sie jedoch planen, Postman zu verwenden, geben Sie `https://www.getpostman.com/oauth2/callback` ein. Sie verwenden bei der Authentifizierung in Azure AD den Schritt zum Rückruf der Client-Authentifizierung.
-4.  Klicken Sie auf **Erstellen**.
+4.  Wählen Sie **Erstellen** aus.
 
      ![Intune Data Warehouse-API](media\reports-get_rest_data_client_overview.png)
 
 5. Notieren Sie sich die **Anwendungs-ID** dieser App. Sie benötigen sie im nächsten Abschnitt.
-6. Wenn Sie Postman verwenden möchten, fügen Sie einen Schlüssel hinzu. Der Schlüssel wird bei der Azure AD-Authentifizierung als geheimer Clientschlüssel verwendet. So fügen Sie einen Schlüssel hinzu:
-    1.  Klicken Sie im Einstellungsblatt der App unter **API-Zugriff** auf **Schlüssel**.
-    2.  Geben Sie unter **Beschreibung** einen Namen für Ihren Schlüssel ein, z.B. „Client-Secret“ (geheimer Clientschlüssel).
-    3.  Wählen Sie bei „Dauer“ **1 Jahr** aus.
-    4.  Klicken Sie auf **Speichern**. 
-    5.  Kopieren Sie den Wert Ihres Schlüssels. Sie können den Schlüssel nicht mehr abrufen, nachdem das Blatt **Einstellungen** für die Schlüssel geschlossen wurde.
 
-## <a name="grant-the-native-app-access-to-the-microsoft-intune-api"></a>Erteilen Sie der nativen App Zugriff auf die Microsoft Intune-API.
+## <a name="grant-the-client-app-access-to-the-microsoft-intune-api"></a>Erteilen Sie der Client-App Zugriff auf die Microsoft Intune-API.
 
 Sie haben jetzt eine in Azure definierte App. Erteilen Sie Zugriff von der nativen App auf die Microsoft Intune-API.
 
-1.  Klicken Sie auf die native App. Sie haben der App einen Namen wie **Intune-Data Warehouse-Client** gegeben.
-2.  Klicken Sie auf dem Blatt **Einstellungen** auf **Erforderliche Berechtigungen**.
-3.  Klicken Sie auf dem Blatt **Erforderliche Berechtigungen** auf **Hinzufügen**.
-4.  Klicken Sie auf **Hiermit wählen Sie eine API aus**.
+1.  Wählen Sie die native App aus. Sie haben der App einen Namen wie **Intune-Data Warehouse-Client** gegeben.
+2.  Wählen Sie auf dem Blatt **Einstellungen** **Erforderliche Berechtigungen** aus.
+3.  Wählen Sie auf dem Blatt **Erforderliche Berechtigungen** **Hinzufügen** aus.
+4.  Wählen Sie **Hiermit wählen Sie eine API aus** aus.
 5.  Suchen Sie nach dem Namen der Web-App. Sie heißt **Microsoft Intune-API**.
-6.  Klicken Sie in der Liste auf die App.
-7.  Klicken Sie auf **Auswählen**.
+6.  Wählen Sie die App in der Liste aus.
+7.  Wählen Sie **Auswählen** aus.
 8.  Aktivieren Sie das Kontrollkästchen **Delegierte Berechtigungen**, um **Get data warehouse information from Microsoft Intune** (Data Warehouse-Informationen aus Microsoft Intune abrufen) hinzuzufügen.
 
     ![Zugriff aktivieren](media\reports-get_rest_data_client_access.png)
 
-9.  Klicken Sie auf **Auswählen**.
-10.  Klicken Sie auf **Fertig**.
-11.  Sie können optional auch auf dem Blatt „Erforderliche Berechtigungen“ auf **Berechtigungen erteilen** klicken. Dadurch wird der Zugriff auf alle Konten im aktuellen Verzeichnis gewährt. Außerdem wird so verhindert, dass das Zustimmungsdialogfeld für jeden Benutzer im Mandanten angezeigt wird. Weitere Informationen finden Sie unter [Integrieren von Anwendungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
-12.  Klicken Sie auf **Ja**.
+9.  Wählen Sie **Auswählen** aus.
+10.  Wählen Sie **Fertig** aus.
+11.  Wählen Sie optional auch auf dem Blatt „Erforderliche Berechtigungen“ **Berechtigungen erteilen** aus. Dadurch wird der Zugriff auf alle Konten im aktuellen Verzeichnis gewährt. Außerdem wird so verhindert, dass das Zustimmungsdialogfeld für jeden Benutzer im Mandanten angezeigt wird. Weitere Informationen finden Sie unter [Integrieren von Anwendungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
+12.  Wählen Sie **Ja** aus.
 
 ## <a name="get-data-from-the-microsoft-intune-api-with-postman"></a>Abrufen von Daten aus der Microsoft Intune-API mit Postman
 
@@ -86,14 +80,26 @@ Sie benötigen die folgenden Informationen für einen REST-Aufruf mit Postman:
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | Rückruf-URL     | Legen Sie dies auf der Seite „Einstellungen“ Ihrer App als die Rückruf-URL fest.                                                                                                                              | https://www.getpostman.com/oauth2/callback                                                    |
 | Tokenname       | Eine Zeichenfolge, mit der die Anmeldeinformationen der Azure-App übergeben werden. Der Prozess generiert Ihr Token, sodass Sie die Data Warehouse-API aufrufen können.                          | Bearer                                                                                        |
-| Authentifizierungs-URL         | Dies ist die URL, die zum Authentifizieren verwendet wird. | https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com |
+| Authentifizierungs-URL         | Dies ist die URL, die zum Authentifizieren verwendet wird. | https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/ |
 | Zugriffstoken-URL | Mit dieser URL wird das Token erteilt.                                                                                                                                              | https://login.microsoftonline.com/common/oauth2/token |
 | Client-ID        | Diese haben Sie erstellt und sich bei der Erstellung der nativen App in Azure notiert.                                                                                               | 4184c61a-e324-4f51-83d7-022b6a81b991                                                          |
-| Geheimer Clientschlüssel    | Diese haben Sie erstellt und beim Hinzufügen eines Schlüssels zur Client-App in Azure notiert.                                                                                              | JZoRZGPmN9xwsUnfX9UW877dkV5Fn/qQClhr7SuyMUQ=                                                  |
 | Bereich (Optional) | Leer                                                                                                                                                                               | Sie können das Feld leer lassen.                                                                     |
 | Gewährungstyp       | Das Token ist ein Autorisierungscode.                                                                                                                                                  | Autorisierungscode                                                                            |
 
-Sie brauchen den Endpunkt. In diesem Beispiel werden wir Daten aus der **Datumsentität** abrufen. Die **Datumsentität** hat das folgende Format: `https://fef.{aus}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`. Sie verwenden die Verwaltungs-URL Ihres Mandanten, die Sie bereits bei der Erstellung Ihrer Web-App verwendet haben.
+### <a name="odata-endpoint"></a>OData-Endpunkt
+
+Sie benötigen außerdem den Endpunkt. Um Ihren Data Warehouse-Endpunkt abzurufen, benötigen Sie die URL des benutzerdefinierten Feeds. Sie können den OData-Endpunkt auf dem Data Warehouse-Blatt erfahren.
+
+1. Melden Sie sich im Azure-Portal an.
+2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** + **Intune** aus.
+3. Wählen Sie unter **Andere Aufgaben** **Intune Data Warehouse einrichten** aus.
+4. Kopieren Sie die URL des benutzerdefinierten Feeds unter **Berichterstellungsdienste von Drittanbietern verwenden**. Sie sollte etwa wie folgt aussehen: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+
+Der Endpunkt weist das folgende Format auf: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`. 
+
+Beispielsweise sieht die Entität **dates** wie folgt aus: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+
+Weitere Informationen finden Sie unter [Intune Data Warehouse-API-Endpunkt](reports-api-url.md).
 
 ### <a name="make-the-rest-call"></a>Ausführen des REST-Aufrufs
 
@@ -105,39 +111,34 @@ Um ein neues Zugriffstoken für Postman abzurufen, müssen Sie die URL der Azure
 2.  Öffnen Sie Postman. Wählen Sie den HTTP-Vorgang **GET** aus.
 3.  Fügen Sie die Endpunkt-URL in die Adresse ein. Sie sollte etwa wie folgt aussehen:  
 
-    `https://fef.msua06.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 4.  Klicken Sie auf die Registerkarte **Autorisierung**, und wählen Sie aus der Liste **Typ** die Option **OAuth 2.0** aus.
-5.  Klicken Sie auf **Get New Access Token** (Neues Zugriffstoken abrufen).
+5.  Wählen Sie **Get New Access Token** (Neues Zugriffstoken abrufen) aus.
 6.  Stellen Sie sicher, dass Sie die Rückruf-URL bereits zu Ihrer App in Azure hinzugefügt haben. Die Rückruf-URL lautet `https://www.getpostman.com/oauth2/callback`.
 7.  Geben Sie „Bearer“ als **Tokenname** ein.
 8.  Fügen Sie die **Authentifizierungs-URL** hinzu. Sie sollte etwa wie folgt aussehen:  
 
-    `https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com`
+    `https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/`
 9.  Fügen Sie das **Zugriffstoken** hinzu. Sie sollte etwa wie folgt aussehen:  
 
      `https://login.microsoftonline.com/common/oauth2/token`
 
 10. Fügen Sie die **Client-ID** aus der nativen Anwendung hinzu, die Sie in Azure erstellt und `Intune Data Warehouse Client` genannt haben. Sie sollte etwa wie folgt aussehen:  
 
-     `4184c61a-e324-4f51-83d7-022b6a81b991`
+     `88C8527B-59CB-4679-A9C8-324941748BB4`
 
-11. Fügen Sie den **geheimen Clientschlüssel** hinzu, den Sie bei der Erstellung der nativen App in Azure als Schlüssel definiert haben. Sie sollte etwa wie folgt aussehen: 
+11. Wählen Sie **Autorisierungscode** und „Request access token locally“ (Zugriffstoken lokal anfordern) aus.
 
-     `F360R69M0MS72OB6YAqTyXO9MsXZx/OJTgAE2HB4k2k=`
-
-12. Wählen Sie **Autorisierungscode** und „Request access token locally“ (Zugriffstoken lokal anfordern) aus.
-
-13. Klicken Sie auf **Request Token** (Token anfordern).
+12. Wählen Sie **Request Token** (Token anfordern) aus.
 
     ![Informationen für das Token](media\reports-postman_getnewtoken.png)
 
-14. Geben Sie Ihre Anmeldeinformationen auf der Azure AD-Autorisierungsseite ein. Die Liste der vorhandenen Token in Postman enthält jetzt das Token mit dem Namen `Bearer`.
-16. Wählen Sie das Token aus. Wählen Sie **Header** für „Add token to“ (Token hinzufügen zu) aus.
-17. Klicken Sie auf **Use Token** (Token verwenden). Die Liste der Header enthält den neuen Schlüsselwert von „Authorization“ (Autorisierung) und den Wert `Bearer <your-authorization-token>`.
+13. Geben Sie Ihre Anmeldeinformationen auf der Azure AD-Autorisierungsseite ein. Die Liste der Token in Postman enthält jetzt das Token mit dem Namen `Bearer`.
+14. Wählen Sie **Token verwenden** aus. Die Liste der Header enthält den neuen Schlüsselwert von „Authorization“ (Autorisierung) und den Wert `Bearer <your-authorization-token>`.
 
 #### <a name="send-the-call-to-the-endpoint-using-postman"></a>Senden des Aufrufs an den Endpunkt mit Postman
 
-1.  Klicken Sie auf **Senden**.
+1.  Wählen Sie **Senden** aus.
 2.  Die Rückgabedaten werden im Antworttextfeld von Postman angezeigt.
 
     ![Postman 200OK](media\reports-postman_200OK.png)
@@ -151,10 +152,10 @@ Das folgende Beispiel enthält einen einfachen REST-Client. Der Code verwendet d
 
 1.  Öffnen Sie **Microsoft Visual Studio**.
 2.  Klicken Sie auf **Datei** > **Neues Projekt**. Erweitern Sie **Visual C#**, und wählen Sie **Konsolen-App (.NET Framework)** aus. 
-3.  Nennen Sie das Projekt ` IntuneDataWarehouseSamples`, navigieren Sie dorthin, wo Sie das Projekt speichern möchten, und klicken Sie dann auf **OK**.
-4.  Klicken Sie mit der rechten Maustaste auf den Namen der Projektmappe im Projektmappen-Explorer, und wählen Sie dann **NuGet-Pakete für Projektmappe verwalten** aus. Klicken Sie auf **Durchsuchen**, und geben Sie dann `Microsoft.IdentityModel.Clients.ActiveDirectory` in das Suchfeld ein.
-5. Wählen Sie das Paket aus, wählen Sie unter „Manage Packages for Your Solution“ (Pakete für Ihre Projektmappe verwalten) das Projekt **IntuneDataWarehouseSamples** aus, und klicken Sie dann auf **Installieren**. 
-6. Klicken Sie auf **I Accept** (Ich stimme zu), um die NuGet-Paketlizenz anzunehmen.
+3.  Nennen Sie das Projekt ` IntuneDataWarehouseSamples`, navigieren Sie dorthin, wo Sie das Projekt speichern möchten, und wählen Sie dann **OK** aus.
+4.  Klicken Sie mit der rechten Maustaste auf den Namen der Projektmappe im Projektmappen-Explorer, und wählen Sie dann **NuGet-Pakete für Projektmappe verwalten** aus. Wählen Sie **Durchsuchen** aus, und geben Sie dann `Microsoft.IdentityModel.Clients.ActiveDirectory` in das Suchfeld ein.
+5. Wählen Sie das Paket aus, wählen Sie unter „Manage Packages for Your Solution“ (Pakete für Ihre Projektmappe verwalten) das Projekt **IntuneDataWarehouseSamples** aus, und wählen Sie dann **Installieren** aus. 
+6. Wählen Sie **I Accept** (Ich stimme zu) aus, um die NuGet-Paketlizenz zu akzeptieren.
 7. Öffnen Sie `Program.cs` über den Projektmappen-Explorer.
 
     ![Projekt in Visual Studio](media\reports-get_rest_data_in.png)

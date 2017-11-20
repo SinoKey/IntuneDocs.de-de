@@ -15,11 +15,11 @@ ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3333a5addfd0c4ab757121e22e19ac66c0b3e1d
-ms.sourcegitcommit: ec8561b8c63515e0b5f21a858984108dc5dbd5d3
+ms.openlocfilehash: ae5210cb3da5503c4cf1b85be8b8522fa1cfd6ce
+ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/10/2017
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>So konfigurieren Sie WLAN-Einstellungen in Microsoft Intune
 
@@ -58,9 +58,7 @@ Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfiguri
     - **iOS**
     - **macOS**
     - **Windows 8.1 und höher (Profil importieren)**
-6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Basis-WLAN** oder **Unternehmens-WLAN** aus.
-    >[!TIP]
-    >Mit **Basis-WLAN** können Sie grundlegende Eigenschaften wie den Netzwerknamen und die SSID angeben. Mit **Unternehmens-WLAN** können Sie detailliertere Informationen angeben, z.B. das Extensible Authentication Protocol (EAP), sofern dieses in Ihrem WLAN verwendet wird. Mit **WLAN (Import)** (für Windows 8.1 und Windows 10) können Sie WLAN-Einstellungen als XML-Datei importieren, die Sie zuvor von einem anderen Gerät exportiert haben.
+6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Basis-WLAN** oder **Unternehmens-WLAN** aus. Mithilfe von **Basis-WLAN** können Sie grundlegende Eigenschaften wie den Netzwerknamen und die SSID angeben. Mit **Unternehmens-WLAN** können Sie detailliertere Informationen angeben, z.B. das Extensible Authentication Protocol (EAP), sofern dieses in Ihrem WLAN verwendet wird. Mit **WLAN (Import)** (für Windows 8.1 und Windows 10) können Sie WLAN-Einstellungen als XML-Datei importieren, die Sie zuvor von einem anderen Gerät exportiert haben.
 7. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. In den folgenden Themen finden Sie ausführliche Informationen zu den Einstellungen für die einzelnen Plattformen:
     - [Einstellungen für Android und Android for Work](wi-fi-settings-android.md)
     - [Einstellungen für iOS](wi-fi-settings-ios.md)

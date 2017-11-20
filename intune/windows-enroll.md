@@ -1,11 +1,11 @@
 ---
 title: "Windows-Geräte registrieren"
 titlesuffix: Azure portal
-description: "Aktivieren Sie die Verwaltung mobiler Geräte (Mobile Device Management, MDM) für Windows-Geräte in Intune."
+description: "Aktivieren der Verwaltung mobiler Geräte (Mobile Device Management, MDM) für Windows-Geräte in Intune."
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 08/30/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd858d617d9a9f2154a5682f5421a096d0c28224
-ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
+ms.openlocfilehash: 02563b85a6bcac12c60537af4a998b09bca3b6ee
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="enroll-windows-devices"></a>Windows-Geräte registrieren
 
@@ -30,6 +30,7 @@ Als Intune-Administrator können Sie die Registrierung auf folgende Weise verein
 - [Aktivieren der automatischen Registrierung](#enable-windows-10-automatic-enrollment) (Azure AD Premium erforderlich)
 - [CNAME-Registrierung](#simplify-windows-enrollment-without-azure-ad-premium)
 - [Aktivieren der Massenregistrierung](windows-bulk-enroll.md) (Azure AD Premium und Windows Configuration Designer erforderlich)
+- [Hinzufügen einer benutzerdefinierten Nachricht](windows-enrollment-status.md), um Ihre Benutzer bei der Registrierung zu begrüßen und den Status der Durchsetzung von Richtlinieneinstellungen anzuzeigen
 
 Zwei Faktoren bestimmen, wie Sie die Registrierung von Windows-Geräten vereinfachen können:
 

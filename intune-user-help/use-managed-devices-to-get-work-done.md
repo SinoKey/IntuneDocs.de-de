@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Verwenden verwalteter Geräte zum Erledigen von Aufgaben
 Microsoft Intune ist eine Softwarekomponente, mit der Betriebe Geräte (z.B. Smartphones, Tablets und PCs), Apps und andere Unternehmensressourcen (z.B. E-Mail-Dienste) verwalten können. Damit erhalten Mitarbeiter Zugriff auf ihre Arbeitsdaten von praktisch überall auf nahezu jedem Gerät, während die Unternehmensdaten gleichzeitig geschützt werden.
 
 Wenn Sie ein Gerät für die Verwaltung durch Intune registrieren, kann Ihre IT-Abteilung diese Geschäfts-, Schul- oder Uniressourcen verwalten, das Gerät schützen und Ihnen und den Mitarbeitern gleichzeitig die Möglichkeit bieten, Ihr bevorzugtes Gerät zu verwenden, um Ihre Arbeit erledigen. Der wichtigste Schritt ist die Registrierung des Geräts in der Verwaltung über das Unternehmensportal.
 
-## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Auf welche Informationen kann mein Unternehmen zugreifen, wenn ich mein Gerät in Intune registriere?
-Die IT-Abteilung Ihres Unternehmens kann auf die Informationen zugreifen, die für Ihre Arbeit relevant sind – aber nicht auf Ihre persönlichen Informationen. Dies ist besonders dann wichtig für Sie, wenn Sie ein persönliches Gerät für Ihre Arbeit registrieren wollen. Im nächsten Artikel in der Benutzerhilfe schlüsseln wir genau auf, [was sie sehen und was sie nicht sehen können](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Welche Informationen erhält mein Unternehmen, wenn ich mein Gerät in Intune registriere?
+Der Support Ihres Unternehmens kann Informationen sehen, die für Ihre Arbeit wichtig sind, nicht jedoch Ihre persönlichen Informationen. Dies ist besonders dann wichtig für Sie, wenn Sie ein persönliches Gerät für Ihre Arbeit registrieren wollen. Im nächsten Artikel in der Benutzerhilfe schlüsseln wir genau auf, [was sie sehen und was sie nicht sehen können](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 ## <a name="how-do-i-get-the-company-portal"></a>Wie gelange ich zum Unternehmensportal?
 Sie gelangen auf zwei Arten zum Unternehmensportal:
@@ -49,7 +49,8 @@ Es gibt wenige kleinere Unterschiede zwischen der Unternehmensportal-App und der
 Wenn Sie die Möglichkeiten der Unternehmensportal-Website mit denen der Unternehmensportal-App auf Ihrem Gerät vergleichen möchten, wählen Sie einen der folgenden Links aus:
 
 - [Verwenden Ihres Android-Geräts](using-your-android-device-with-intune.md)
-- [Verwenden Ihres iOS- oder macOS-Geräts](using-your-ios-or-macOS-device-with-intune.md)
+- [Verwenden Ihres iOS-Geräts](using-your-ios-device-with-intune.md)
+- [Verwenden Ihres macOS-Geräts](using-your-macos-device-with-intune.md)
 - [Verwenden Ihres Windows-Geräts](using-your-windows-device-with-intune.md)
 - [Verwenden der Unternehmensportal-Website](using-the-intune-company-portal-website.md)
 

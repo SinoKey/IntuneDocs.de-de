@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8beabb21df8b122b7a1dd18a698a8075604046b5
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b61ad1c0a114c8a66c174fa34c4520e2f6c6244a
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>So konfigurieren Sie Einstellungen für Geräteeinschränkungen in Microsoft Intune
 
@@ -29,7 +29,7 @@ Mit Geräteeinschränkungen können Sie eine Vielzahl von Einstellungen und Feat
 
 Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfigurieren von Geräteeinschränkungsprofilen kennen. In den weiterführenden Themen zu den einzelnen Plattformen erfahren Sie etwas über Besonderheiten der jeweiligen Geräte.
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Erstellen von Geräteprofilen mit Einstellungen für Geräteeinschränkungen
+So erstellen Sie ein Geräteprofil, das Einstellungen für Geräteeinschränkungen enthält:
 
 1. Melden Sie sich beim Azure-Portal an.
 2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
@@ -59,9 +59,12 @@ Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfiguri
 Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
 Wenn Sie fortfahren und dieses Profil Gruppen zuweisen möchten, lesen Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md) nach.
 
-## <a name="example-of-device-restriction-settings"></a>Beispiel für die Einstellungen für Geräteeinschränkungen
+<!--  Removing image as part of design review; retaining source until we known the disposition.
 
-In diesem grundlegenden Beispiel erstellen Sie eine Richtlinie für Geräteeinschränkungen, die die Verwendung der integrierten Kamera-App auf Android-Geräten sperrt.
+## Example of device restriction settings
 
-![Deaktivieren der Kamera auf Android-Geräten](./media/disable-android-camera.png)
+In this high-level example, you'll create a device restriction policy that blocks the use of the built-in camera app on Android devices.
 
+![How to disable the camera on Android devices](./media/disable-android-camera.png)
+
+-->

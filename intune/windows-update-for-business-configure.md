@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 08/21/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,21 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 4b4c2b008536881a56e768c480338b54a9e87b7e
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
+ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="manage-software-updates"></a>Verwalten von Softwareupdates
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Windows 10-Geräte werden mit Windows-as-a-Service aktualisiert. Ab Windows 10 enthalten neue Funktions- und Qualitätsupdates die Inhalte aller früheren Updates. Das bedeutet, dass Ihre Windows 10-Geräte nach der Installation des neuesten Updates vollständig auf dem neuesten Stand sind. Im Gegensatz zu früheren Versionen von Windows müssen Sie nun anstelle eines Teilupdates das gesamte Update installieren.
+Windows 10-Geräte werden mit Windows-as-a-Service aktualisiert. Ab Windows 10 enthalten neue Funktions- und Qualitätsupdates die Inhalte aller früheren Updates. Das bedeutet, dass Ihre Windows 10-Geräte nach der Installation des neuesten Updates auf dem neuesten Stand sind. Im Gegensatz zu früheren Versionen von Windows müssen Sie nun anstelle eines Teilupdates das gesamte Update installieren.
 
 Mithilfe von Windows Update for Business können Sie die Updateverwaltung vereinfachen, sodass Sie für Gruppen von Geräten keine einzelnen Updates genehmigen müssen. Sie können weiterhin eine Updaterolloutstrategie konfigurieren, um das Risiko in Ihren Umgebungen zu managen und sicherzustellen, dass Updates zur richtigen Zeit installiert werden. Mit Microsoft Intune können Sie Updateeinstellungen auf Geräten konfigurieren und die Updateinstallation zurückstellen. Intune speichert nur die Updaterichtlinienzuweisung, nicht die Updates. Geräte greifen für Updates direkt auf Windows Update zu. Verwenden Sie Intune, um **Windows 10-Updateringe** zu konfigurieren und zu verwalten. Ein Updatering enthält eine Reihe von Einstellungen, die festlegen, wann und wie Updates für Windows 10 installiert werden. So können Sie beispielsweise Folgendes konfigurieren:
 
-- **Windows 10 Servicing Branch:** Wählen Sie aus, ob Gruppen von Geräten Updates aus „Current Branch“ oder aus „Current Branch for Business“ erhalten sollen.  
+- **Windows 10-Wartungskanal**: Wählen Sie aus, ob Gerätegruppen Updates über den halbjährlichen Kanal (gezielt) oder über den halbjährlichen Kanal erhalten sollen.  
 - **Zurückstellungseinstellungen:** Konfigurieren Sie Einstellungen für die Zurückstellung von Updates, um Updateinstallationen für Gruppen von Geräten zu verzögern. Verwenden Sie diese Einstellungen, um ein gestaffeltes Updaterollout zu erhalten, dessen Fortschritt Sie verfolgen können.
 - **Aussetzung:** Verschieben Sie die Installation von Updates, falls im Rahmen des Updaterollouts ein Problem auftreten sollte.
 - **Wartungsfenster:** Konfigurieren Sie die Zeiten, in denen Updates installiert werden können.
@@ -78,7 +78,7 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 5. Wählen Sie auf dem Blatt mit der Updateringliste die Option **Erstellen** aus.
 6. Geben Sie auf dem Blatt **Create Update Ring** (Updatering erstellen) einen Namen und eine optionale Beschreibung für den Updatering an, und wählen Sie anschließend **Einstellungen** aus.
 7. Konfigurieren Sie auf dem Blatt **Einstellungen** folgende Informationen:
-    - **Servicing Branch**: Legen Sie den Branch fest, für den das Gerät Windows-Updates erhält („Current Branch“ oder „Current Branch for Business“).
+    - **Wartungskanal**: Legen Sie den Kanal fest, für den das Gerät Windows-Updates erhält (halbjährlicher Kanal (gezielt) oder halbjährlicher Kanal).
     - **Microsoft-Updates**: Wählen Sie aus, ob nach App-Updates von Microsoft Update gesucht werden soll.
     - **Windows drivers** (Windows-Treiber): Wählen Sie aus, ob Windows Update-Treiber bei Updates ausgeschlossen werden sollen.
     - **Automatic update behavior** (Verhalten bei automatischen Updates): Wählen Sie aus, wie das Verhalten bei automatischen Updates verwaltet werden soll, um Updates zu suchen, herunterzuladen und zu installieren. Ausführliche Informationen finden Sie unter [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
@@ -87,12 +87,12 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
     Bei Qualitätsupdates handelt es sich in der Regel um Korrekturen und Verbesserungen für bereits vorhandene Windows-Funktionen. Sie werden üblicherweise am ersten Dienstag jedes Monats veröffentlicht, können von Microsoft jedoch auch zu einem anderen Zeitpunkt veröffentlicht werden. Sie können definieren, ob und wie lange der Bezug von Qualitätsupdates zurückgestellt werden soll, nachdem sie verfügbar geworden sind.
     - **Rückstellungszeitraum für Funktionsupdates (Tage)**: Geben Sie an, für wie viele Tage Funktionsupdates zurückgestellt werden. Der Bezug dieser Funktionsupdates kann für bis zu 180 Tage (ab Veröffentlichung) zurückgestellt werden.
 
-    Bei Funktionsupdates handelt es sich in der Regel um neue Features für Windows. Nach dem Konfigurieren der Einstellung **Servicing Branch** (**CB** oder **CBB**) können Sie definieren, ob und wie lange der Bezug von Funktionsupdates zurückgestellt werden soll, nachdem sie von Microsoft über Windows Update verfügbar gemacht wurden.
+    Bei Funktionsupdates handelt es sich in der Regel um neue Features für Windows. Nach dem Konfigurieren der Einstellung **Wartungskanal** (halbjährlicher Kanal (gezielt) oder halbjährlicher Kanal) können Sie definieren, ob und wie lange der Bezug von Funktionsupdates zurückgestellt werden soll, nachdem sie von Microsoft über Windows Update verfügbar gemacht wurden.
 
     Beispiel:  
-    **„Servicing Branch“ ist auf „CB“ festgelegt und die Zurückstellung mit 30 Tagen konfiguriert:** Angenommen, das Funktionsupdate X wird erstmals im Januar als CB über Windows Update veröffentlicht. In diesem Fall erhält das Gerät das Update erst im Februar (also 30 Tage später).
+    **Wenn der Wartungskanal auf „Halbjährlicher Kanal (gezielt)“ festgelegt ist und der Zurückstellungszeitraum 30 Tage beträgt**: Nehmen wir an, dass das Funktionsupdate X auf Windows-Update im halbjährlichen Kanal (gezielt) erstmals im Januar öffentlich verfügbar ist. In diesem Fall erhält das Gerät das Update erst im Februar (also 30 Tage später).
 
-    **„Servicing Branch“ ist auf „CBB“ festgelegt und die Zurückstellung mit 30 Tagen konfiguriert:** Angenommen, das Funktionsupdate X wird erstmals im Januar als CB über Windows Update veröffentlicht. Vier Monate später (also im April) wird das Funktionsupdate X als CBB veröffentlicht. In diesem Fall erhält das Gerät das Funktionsupdate 30 Tage nach der CBB-Veröffentlichung (also im Mai).
+    **Wenn der Wartungskanal auf „Halbjährlicher Kanal (gezielt)“ festgelegt ist und der Zurückstellungszeitraum 30 Tage beträgt**: Nehmen wir an, dass das Funktionsupdate X im halbjährlichen Kanal (gezielt) auf Windows-Update erstmals im Januar öffentlich verfügbar ist. Vier Monate später, im April, wird das Funktionsupdate X dann im halbjährlichen Kanal veröffentlicht. In diesem Fall erhält das Gerät das Funktionsupdate 30 Tage nach dieser Veröffentlichung im halbjährlichen Kanal (also im Mai).
 
     - **Übermittlungsoptimierung**: Wählen Sie die Methode dafür aus, welche Geräte Windows-Updates herunterladen. Ausführliche Informationen finden Sie unter [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode).
 8. Klicken Sie abschließend auf **OK** und dann auf dem Blatt **Create Update Ring** (Updatering erstellen) auf **Erstellen**.
