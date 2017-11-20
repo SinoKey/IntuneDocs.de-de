@@ -5,17 +5,17 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/04/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
-ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
+ms.openlocfilehash: 736eda24e355024e2abadd57206c0f0423e6d4b4
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Registrieren von Windows-Geräten mithilfe des Windows AutoPilot Deployment-Programms
 Das Windows AutoPilot Deployment-Programm vereinfacht die Bereitstellung von Geräten. Heutzutage dauert das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems sehr lange. Es kann ebenfalls viel Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und AutoPilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von AutoPilot-Geräten verwenden, können Sie z.B. Richtlinien, Profile und Apps auf den Geräten verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Overview of Windows AutoPilot (Übersicht über Windows AutoPilot)](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
@@ -57,6 +57,13 @@ AutoPilot-Bereitstellungsprofile werden verwendet, um die AutoPilot-Geräte zu k
 > - Skip Cortana, OneDrive und OEM-Setupseiten für die Registrierung
 > - Automatisches Einrichten für die Arbeit oder Schule
 > - Anmelden mit einer Unternehmens- oder Schulmarke    
+
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Warnungen für nicht zugewiesene Windows AutoPilot-Geräte <!-- 163236 -->
+Sie können eine Warnung für nicht zugewiesene Windows AutoPilot-Geräte anzeigen, um zu sehen, wie vielen Geräten aus dem AutoPilot-Programm keine AutoPilot-Bereitstellungsprofile zugewiesen sind. Verwenden Sie die Informationen aus der Warnung, um Profile zu erstellen und sie den nicht zugeordneten Geräten zuzuweisen. Wenn Sie auf die Warnung klicken, sehen Sie die vollständige Liste der Windows AutoPilot-Geräte zusammen mit detaillierten Informationen. 
+1. Melden Sie sich bei [Azure](https://portal.azure.com/) an. 
+2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+3. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung** aus.
+4. Wählen Sie **Übersicht** aus, um die Warnung anzuzeigen. Klicken Sie auf die Warnung, um eine Liste der AutoPilot-Geräte anzuzeigen.  
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>Zuweisen eines AutoPilot-Bereitstellungsprofils
 Nachdem Sie AutoPilot-Bereitstellungsprofile erstellt haben, können Sie diese ausgewählten Diensten zuweisen.

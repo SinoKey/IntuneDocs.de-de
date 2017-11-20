@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f1b9f6900a5dfded736bd0cc92283fdca2220a5
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Einrichten des lokalen Intune Exchange Connectors in Microsoft Intune in Azure
 
@@ -134,13 +134,18 @@ Nach Einrichtung der Verbindung durch den Exchange Connector werden mobile Gerä
 > [!NOTE]
 > Wenn Sie den lokalen Exchange Connector installiert haben und zu einem späteren Zeitpunkt die Exchange-Verbindung löschen, müssen Sie den lokalen Exchange Connector von dem Computer löschen, auf dem er installiert wurde.
 
-## <a name="validate-the-exchange-connection"></a>Überprüfen der Exchange-Verbindung
+## <a name="monitor-the-exchange-connector-activity"></a>Überwachen der Exchange-Connectoraktivität
 
 Nachdem Sie den Exchange-Connector erfolgreich konfiguriert haben, können Sie den Status der Verbindung und den letzten erfolgreichen Synchronisationsversuch anzeigen. So überprüfen Sie die Exchange Connector-Verbindung
 
-- Wählen Sie auf dem Intune-Dashboard **Lokaler Zugriff** aus. Wählen Sie unter **Verwalten** die Option **Lokaler Exchange-Zugriff** zum Überprüfen des Verbindungsstatus aus.
+1. Wählen Sie auf dem Intune-Dashboard **Lokaler Zugriff** aus.
+2. Wählen Sie unter **Verwalten** die Option **Lokaler Exchange-Zugriff** zum Überprüfen des Verbindungsstatus aus.
 
 Sie können auch die Uhrzeit und das Datum des letzten erfolgreichen Synchronisationsversuchs überprüfen.
+
+### <a name="system-center-operations-manager-scom-management-pack"></a>System Center Operations Manager (SCOM) Management Pack
+
+Ab der Intune-Version 1710 können Sie das [SCOM Management Pack für Exchange-Connector und Intune](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) verwenden. Es bietet Ihnen verschiedene Möglichkeiten zur Überwachung des Exchange-Connectors bei der Problembehandlung.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Erstellen einer Richtlinie für bedingten Zugriff für lokales Exchange](conditional-access-exchange-create.md)

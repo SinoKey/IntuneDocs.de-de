@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 997f4a612c69a7ddd6d56d4d860614c3bc513d3d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3e4dcd7767620d6d3939686f69ad9d72f6a2d8e2
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Verwalten der Datenübertragung zwischen iOS-Apps
 ## <a name="manage-ios-apps"></a>Verwalten von iOS-Apps
@@ -30,6 +30,7 @@ Der Schutz der Unternehmensdaten umfasst die Sicherstellung, dass die Übertragu
 -   Sie können Apps auch über den **MDM-Kanal** bereitstellen und verwalten.  Dies erfordert, dass die Geräte in der MDM-Lösung registriert sind. Dabei kann es sich um **richtlinienverwaltete** Apps oder andere verwaltete Apps handeln.
 
 Mit dem Feature **Open in Management** für iOS-Geräte kann die Übertragung von Dateien zwischen Apps, die über den **MDM-Kanal** bereitgestellt werden, eingeschränkt werden. Die Einschränkungen für „Open in Management“ werden in den Konfigurationseinstellungen festgelegt und mithilfe der MDM-Lösung bereitgestellt.  Wenn der Benutzer die bereitgestellte App installiert, werden die festgelegten Einschränkungen angewendet.
+
 ##  <a name="using-app-protection-with-ios-apps"></a>Verwenden von App-Schutz mit iOS-Apps
 App-Schutzrichtlinien können mit dem iOS-Feature **Open in Management** verwendet werden, um Unternehmensdaten auf folgende Weise zu schützen:
 
@@ -40,30 +41,25 @@ App-Schutzrichtlinien können mit dem iOS-Feature **Open in Management** verwend
 -   **Von einem MDM-Lösung eines Drittanbieters verwaltete Geräte:** Sie können die Datenübertragung mithilfe des iOS-Features **Open in Management** auf verwaltete Apps einschränken.
 Um sicherzustellen, dass Apps, die Sie mithilfe der Drittanbieter-MDM-Lösung bereitstellen, auch den in Intune konfigurierten App-Schutzrichtlinien zugeordnet sind, müssen Sie die Benutzer-UPN-Einstellung wie in der exemplarischen Vorgehensweise [Konfigurieren der Benutzer-UPN-Einstellung](#configure-user-upn-setting-for-third-party-emm) beschrieben konfigurieren.  Wenn Apps mithilfe der Benutzer-UPN-Einstellung bereitgestellt werden, werden die App-Schutzrichtlinien auf die App angewendet, wenn sich der Endbenutzer mit seinem Geschäftskonto anmeldet.
 
-> [!IMPORTANT]
-> Die Benutzer-UPN-Einstellung ist nur für Apps erforderlich, die auf Geräten bereitgestellt werden, die von einer MDM-Lösung eines Drittanbieters verwaltet werden.  Diese Einstellung ist für Geräte nicht erforderlich, die von Intune verwaltet werden.
-
-
-## <a name="configure-user-upn-setting-for-third-party-emm"></a>Konfigurieren von UPN-Einstellungen für Drittanbieter-EMM
-Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die von der EMM-Lösung eines Drittanbieters verwaltet werden. Das nachfolgend beschriebene Verfahren ist ein allgemeiner Ablauf zum Konfigurieren der UPN-Einstellung und der resultierenden Endbenutzerfreundlichkeit:
-
+## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Konfigurieren der Benutzer-UPN-Einstellung für Microsoft Intune oder Drittanbieter-EMM
+Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die mit Intune oder der EMM-Lösung eines Drittanbieters verwaltet werden. Das nachfolgend beschriebene Verfahren ist ein allgemeiner Ablauf zum Konfigurieren der UPN-Einstellung und der resultierenden Benutzerumgebung:
 
 1.  [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md) für iOS im [Azure-Portal](https://portal.azure.com). Konfigurieren Sie Richtlinieneinstellungen für alle Unternehmensanforderungen, und wählen Sie die iOS-Apps aus, für die diese Richtlinie gelten soll.
 
-2.  Stellen Sie die Apps und das E-Mail-Profil, die **von der MDM-Lösung eines Drittanbieters** verwaltet werden sollen, mithilfe der generalisierten nachstehenden Schritte bereit. Diese wird auch im Beispiel 1 behandelt.
+2.  Stellen Sie die Apps und das E-Mail-Profil, die mit Intune oder der MDM-Lösung eines Drittanbieters verwaltet werden sollen, mithilfe der generalisierten nachstehenden Schritte bereit. Diese wird auch im Beispiel 1 behandelt.
 
-  1.  Stellen Sie die App mithilfe der folgenden App-Konfigurationseinstellungen bereit:
+3.  Stellen Sie die App mithilfe der folgenden App-Konfigurationseinstellungen bereit:
 
       **Schlüssel** = IntuneMAMUPN, **Wert** = <username@company.com>
 
       Beispiel: [‘IntuneMAMUPN’, ‚jondoe@microsoft.com‘]
 
-  2.  Stellen Sie die Richtlinie „Open in Management“ mithilfe des MDM-Anbieters eines Drittanbieters für registrierte Geräte bereit.
+4.  Stellen Sie die Richtlinie **Open in Management** mithilfe von Intune oder Ihrem MDM-Anbieter eines Drittanbieters für registrierte Geräte bereit.
 
 
-### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>Beispiel 1: Administratoroberfläche in einer MDM-Konsole eines Drittanbieters
+### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>Beispiel 1: Administratoroberfläche in Intune oder einer MDM-Konsole eines Drittanbieters
 
-1. Navigieren Sie zur Administratorkonsole Ihres MDM-Anbieters eines Drittanbieters. Navigieren Sie zum Abschnitt der Konsole, in dem Sie die Anwendungskonfigurationseinstellungen für registrierte iOS-Geräte bereitstellen.
+1. Navigieren Sie zur Administratorkonsole von Intune oder Ihres MDM-Anbieters eines Drittanbieters. Navigieren Sie zum Abschnitt der Konsole, in dem Sie die Anwendungskonfigurationseinstellungen für registrierte iOS-Geräte bereitstellen.
 
 2. Geben Sie im Abschnitt „Anwendungskonfiguration“ die folgende Einstellung ein:
 
@@ -73,6 +69,7 @@ Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die von
 
 |MDM-Anbieter eines Drittanbieters| Konfigurationsschlüssel | Werttyp | Der Konfigurationswert|
 | ------- | ---- | ---- | ---- |
+|Microsoft Intune| IntuneMAMUPN | Zeichenfolge | {UserPrincipalName}|
 |VMware AirWatch| IntuneMAMUPN | Zeichenfolge | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | Zeichenfolge | ${userUPN} **oder** ${userEmailAddress} |
 

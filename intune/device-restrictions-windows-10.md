@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
-ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
+ms.openlocfilehash: 903ba99a747689dd8882acedcb24fef2dd00a01d
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Windows 10 und höher in Microsoft Intune
 
@@ -31,10 +31,10 @@ ms.lasthandoff: 10/19/2017
 -   **Manuelle Aufhebung der Registrierung:** Erlaubt dem Benutzer das manuelle Löschen des Unternehmensbereichskontos vom Gerät.
 -   **Manuelle Installation von Stammzertifikaten (nur Mobilgerät):** Hindert den Benutzer daran, Stammzertifikate und CAP-Zwischenzertifikate manuell zu installieren.
 -   **Übermitteln von Diagnosedaten:** Mögliche Werte:
-    -       **Keine:** Es werden keine Daten an Microsoft gesendet.
-    -       **Einfach:** Es werden begrenzte Informationen an Microsoft gesendet.
-    -       **Erweitert:** Es werden erweiterte Diagnosen an Microsoft gesendet.
-    -       **Vollständig:** Das Gerät sendet die gleichen Daten wie mit „Erweitert“ sowie zusätzliche Daten über den Gerätezustand.
+    - **Keine**: Es werden keine Daten an Microsoft gesendet.
+    - **Einfach** – begrenzte Informationen werden an Microsoft gesendet
+    - **Erweitert**: Es werden erweiterte Diagnosen an Microsoft gesendet.
+    - **Vollständig:** Das Gerät sendet die gleichen Daten wie mit „Erweitert“ sowie zusätzliche Daten über den Gerätezustand.
 -   **Kamera:** Erlaubt oder sperrt die Verwendung der Kamera auf dem Gerät.
 -   **OneDrive-Dateisynchronisierung:** Hindert das Gerät daran, Dateien mit OneDrive zu synchronisieren.
 -   **Wechselmedien:** Gibt an, ob externe Speichergeräte wie SD-Karten mit dem Gerät verwendet werden können.
@@ -105,6 +105,7 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
 
 
 ## <a name="edge-browser"></a>Edge-Browser
+
 -   **Microsoft Edge-Browser (nur mobil):** Erlaubt die Verwendung des Edge-Webbrowsers auf dem Gerät.
 -   **Adressleisten-Dropdown (nur Desktop):** Verhindert, dass Edge bei der Eingabe weiterhin eine Liste mit Vorschlägen in einer Dropdownliste anzeigt. So kann die zwischen Edge und Microsoft-Diensten genutzte Netzwerkbandbreite minimiert werden.
 -   **Favoriten zwischen Microsoft-Browsern synchronisieren (nur Desktop):** Erlaubt Windows das Synchronisieren von Favoriten zwischen Internet Explorer und Edge.
@@ -180,6 +181,44 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
     -   **Erleichterte Bedienung:** Blockiert den Zugriff auf den Bereich „Erleichterte Bedienung“ der Einstellungen-App.
     -   **Datenschutz:** Blockiert den Zugriff auf den Datenschutzbereich der Einstellungen-App.
     -   **Update und Sicherheit:** Blockiert den Zugriff auf den Update- und Sicherheitsbereich der Einstellungen-App.
+
+## <a name="kiosk"></a>Kiosk
+
+-   **Kioskmodus**: Gibt den Typ des [Kioskmodus](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) an, der von der Richtlinie unterstützt wird.  Zu den Optionen gehören:
+
+      - **Nicht konfiguriert**: (Standard). Die Richtlinie aktiviert keinen Kioskmodus. 
+      - **Kiosk mit einzelner App**: Das Profil aktiviert das Gerät als Kiosk mit einer einzelnen App.
+      - **Kiosk mit mehreren Apps**: Das Profil aktiviert das Gerät als Kiosk mit mehreren Apps.
+
+    Für Kioske mit einer einzelnen App sind die folgenden Einstellungen erforderlich:
+
+      - **Benutzerkonto**: Gibt das (auf das Gerät bezogen) lokale Benutzerkonto oder die Azure AD-Kontoanmeldung an, das bzw. die der Kiosk-App zugeordnet ist.  Geben Sie für Konten, die Mitglieder von Azure AD-Domänen sind, das Konto in der Form `domain\\username@tenant.org` an.
+
+         Verwenden Sie für Geräte in öffentlichen Umgebungen Konten mit minimalen Berechtigungen, um autorisierte Aktivitäten zu verhindern.  
+
+      - **Anwendungsbenutzermodell-ID (AUMID) der App**: Gibt die AUMID der Kiosk-App an.  Weitere Informationen finden Sie unter [Find the Application User Model ID of an installed app (Ermitteln der Anwendungsbenutzer-ID einer installierten App)](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+
+    Für Kioske mit mehreren Anwendungen ist eine Kioskkonfiguration erforderlich.  Verwenden Sie die Schaltfläche **Hinzufügen**, um eine Kioskkonfiguration zu erstellen oder eine vorhandene auszuwählen.
+
+    Kiosk-Konfigurationen für mehrere Apps umfassen die folgenden Einstellungen:
+
+    - **Kioskkonfigurationsname**: Ein Anzeigename, der zur Identifikation einer bestimmten Konfiguration dient.
+
+    - Eine oder mehrere **Kiosk-Apps** mit den folgenden Angaben:
+
+        - **App-Typ** mit dem Typ der Kiosk-App.  Unterstützte Werte:   
+
+            - **Win32-App**: Eine herkömmliche Desktop-App.  (Sie benötigen den vollqualifizierten Pfadnamen der ausführbaren Datei bezogen auf das Gerät.)
+
+            - **UWP-App**: Eine universelle Windows-App.  Sie benötigen die [AUMID für die App](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+
+        - **App-Bezeichner**: Gibt entweder den vollqualifizierten Pfadnamen für die ausführbare Datei (Win32-Apps) oder die [AUMID der App](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-Apps) an.
+
+    - **Taskleiste** gibt an, ob die Taskleiste im Kiosk angezeigt wird (**Aktiviert**) oder ausgeblendet ist (**Nicht konfiguriert**).
+
+    - **Layout des Startmenüs**: Gibt eine XML-Datei an, die beschreibt, wie die Apps [im Startmenü dargestellt werden](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+
+    - **Zugewiesene Benutzer**: Gibt ein oder mehrere Benutzerkonten an, die der Kioskkonfiguration zugeordnet sind.  Das Konto ist entweder für das Gerät lokal oder stellt eine Azure AD-Kontoanmeldung dar, die der Kiosk-App zugeordnet ist.  Geben Sie Konten in Domänen in der Form `domain\\username@tenant.org` an.
 
 ## <a name="defender"></a>Defender
 

@@ -14,11 +14,11 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37f36aca0d58f5d87b9d54a1a4bdf18eb011b40b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e0ffcaa2ff8bd9e622c1d27f27564bd78df0276
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Erstellen eines Berichts aus dem OData-Feed mit Power BI
 
@@ -60,16 +60,16 @@ Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI 
 
     ![OData-Feed](media/reports-create-01-odatafeed.png)
 
-9. Klicken Sie auf **OK**.
+9. Wählen Sie **OK** aus.
 10. Wählen Sie **Organisationskonto** aus, und melden Sie sich anschließend mit Ihren Anmeldeinformationen für Intune an. 
 
     ![Anmeldeinformationen für das Organisationskonto](media/reports-create-02-org-account.png)
 
-11. Klicken Sie auf **Verbinden**. Der Navigator öffnet sich und zeigt Ihnen eine Liste mit Tabelle im Intune Data Warehouse an. 
+11. Wählen Sie **Verbinden** aus. Der Navigator öffnet sich und zeigt Ihnen eine Liste mit Tabelle im Intune Data Warehouse an. 
 
     ![Der Navigator](media/reports-create-02-loadentities.png)
 
-12. Wählen Sie die **Geräte** und die **OwnerTypes**-Tabellen aus.  Klicken Sie auf **Laden**. Power BI lädt die Daten in das Modell.
+12. Wählen Sie die **Geräte** und die **OwnerTypes**-Tabellen aus.  Wählen Sie **Laden** aus. Power BI lädt die Daten in das Modell.
 
 ## <a name="create-a-relationship"></a>Erstellen einer Beziehung 
 
@@ -77,8 +77,8 @@ Sie können mehrerer Tabellen importieren, um nicht nur die Daten in einer einzi
 
 ![Verwalten von Beziehungen](media/reports-create-03-managerelationships.png)
 
-1. Klicken Sie auf **Beziehungen verwalten**.
-2. Wählen Sie **Autodetect** aus, wenn Power BI die Beziehungen noch nicht erkannt hat.  
+1. Wählen Sie **Beziehungen verwalten** aus.
+2. Wählen Sie **Autodetect...** aus, wenn Power BI die Beziehungen noch nicht erkannt hat.  
 Die Beziehung wird von einer „From“-Spalte zu einer „To“-Spalte angezeigt. In diesem Beispiel ist das Datenfeld **ownerTypeKey** in der **Gerätetabelle** mit dem Datenfeld **ownerTypeKey** in der Tabelle **ownerTypes** verknüpft. Sie können die Beziehung verwenden, um den einfachen Namen eines Gerätetypcodes in der **Gerätetabelle** nachzuschauen.
 
 ## <a name="create-a-treemap-visualization"></a>Erstellen einer Treemap-Visualisierung
@@ -100,7 +100,7 @@ Jetzt verfügen Sie über eine Visualisierung der Verteilung von Herstellern und
 
 Sie können Ihrer Treemap einen Filter hinzufügen, damit Sie mithilfe Ihrer App zusätzliche Fragen beantworten können. 
 
-1. Klicken Sie zunächst auf den Berichtszeichenbereich und anschließend unter **Visualisierungen** auf das **Slicer-Symbol** (![Treemap with data](media/reports-create-slicer.png) (Treemap mit Daten)), um einen Filter hinzuzufügen.
+1. Wählen Sie zunächst den Berichtszeichenbereich und anschließend unter **Visualisierungen** das **Slicer-Symbol** (![Treemap with data](media/reports-create-slicer.png) (Treemap mit Daten)) aus, um einen Filter hinzuzufügen.
 2. Suchen Sie die Tabelle **ownerTypes** ziehen Sie das Datenfeld **ownerTypeName** im Abschnitt **Filter** auf den Bereich **Visualisierungen**.  
    In der Gerätetabelle gibt es ein Datenfeld mit der Bezeichnung **OwnerTypeKey**, das einen Code enthält, der darauf hinweist, ob ein Gerät Eigentum eines Unternehmens oder einer Privatperson ist. Da Sie Anzeigenamen in diesem Filter anzeigen wollen, suchen Sie nach der Tabelle **ownerTypes**, und ziehen Sie den **ownerTypeName** dorthin. Das folgende Beispiel zeigt, inwiefern das Datenmodell Beziehungen zwischen den Tabellen unterstützt.
 
@@ -108,8 +108,8 @@ Sie können Ihrer Treemap einen Filter hinzufügen, damit Sie mithilfe Ihrer App
 
 Nun verfügen Sie über einen interaktiven Filter, der zum Wechseln zwischen unternehmenseigenen und privaten Geräten verwendet werden kann. So können Sie Veränderungen in der Verteilung nachvollziehen.
 
-1. Klicken Sie auf **Unternehmen**, damit Ihnen die Verteilung der unternehmenseigenen Geräte angezeigt wird.
-2. Klicken Sie auf **Persönlich**, damit Ihnen die privaten Geräte angezeigt werden.
+1. Wählen Sie **Unternehmen** aus, damit Ihnen die Verteilung der unternehmenseigenen Geräte angezeigt wird.
+2. Wählen Sie **Persönlich** aus, damit Ihnen die privaten Geräte angezeigt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

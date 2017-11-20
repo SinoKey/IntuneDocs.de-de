@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d293ff6001ef937c7da0055e6642aa5a1226bd2e
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 2226477d40f2bb70dd047ed58e8789fd9bee4ecb
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Hinzufügen App-Konfigurationsrichtlinien für verwaltete iOS-Geräte
 
@@ -40,34 +40,40 @@ Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Einstellunge
 1. Melden Sie sich im Azure-Portal an.
 2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** + **Intune** aus.
 3. Wählen Sie die Workload **Mobile Apps** aus.
-4. Klicken Sie auf **App-Konfigurationsrichtlinien** in der Gruppe **Verwalten**, und klicken Sie dann auf **Hinzufügen**.
+4. Wählen Sie in der Gruppe **Verwalten** **App-Konfigurationsrichtlinien** und dann **Hinzufügen** aus.
 5. Legen Sie die folgenden Details fest:
-    - **Name**  
-      Der Name des Profils, das im Azure-Portal angezeigt wird.
-    - **Beschreibung**  
-      Die Beschreibung des Profils, das im Azure-Portal angezeigt wird.
-    - **Geräteregistrierungstyp**  
+    - **Name**<br>
+      Der Name des Profils, das im Azure-Portal angezeigt wird
+    - **Beschreibung**<br>
+      Die Beschreibung des Profils, das im Azure-Portal angezeigt wird
+    - **Geräteregistrierungstyp**<br>
       Klicken Sie auf **Verwaltete Geräte**.
-6. Wählen Sie **iOS** für die **Plattform** aus.
-7.  Wählen Sie **Zugeordnete App** aus, und wählen Sie auf dem Blatt **Zugeordnete App** die verwaltete App aus, auf die Sie die Konfiguration anwenden möchten.
+6. Wählen Sie **iOS** als **Plattform** aus.
+7.  Wählen Sie **Zugeordnete App** aus. Wählen Sie dann auf dem Blatt **Zugeordnete App** die verwaltete App aus, auf die Sie die Konfiguration anwenden möchten.
 8.  Wählen Sie auf dem Blatt **Konfigurationsrichtlinie hinzufügen** die Option **Konfigurationseinstellungen** aus.
-9. Wählen Sie das **Format der Konfigurationseinstellungen** aus. Auswahlmöglichkeiten:
+9. Wählen Sie das **Format der Konfigurationseinstellungen** aus. Wählen Sie eine der folgenden Einstellungen aus:
     - **[Verwenden des Konfigurations-Designers](#Use-the-configuration-designer)**
     - **[Eingeben von XML-Daten](#enter-xml-data)**
-10. Klicken Sie auf **OK** und dann auf **Hinzufügen**.
+10. Wählen Sie **OK** und dann **Hinzufügen** aus.
 
 ## <a name="use-configuration-designer"></a>Verwenden des Konfigurations-Designers
 
-Sie können den Konfigurations-Designer für Apps auf Geräten verwenden, die in Intune registriert sind oder nicht. Der Designer ermöglicht Ihnen das Konfigurieren bestimmter Konfigurationsschlüssel und -werte. Sie müssen ebenfalls den Datentyp für jeden Wert angeben. Einstellungen werden Apps automatisch bereitgestellt, wenn die App installiert wird.
+Sie können den Konfigurations-Designer für Apps auf Geräten verwenden, die in Intune registriert sind oder nicht. Der Designer ermöglicht Ihnen das Konfigurieren bestimmter Konfigurationsschlüssel und -werte. Sie müssen ebenfalls den Datentyp für jeden Wert angeben. Die Einstellungen werden für Apps automatisch bei der Installation bereitgestellt.
 
 ### <a name="add-a-setting"></a>Hinzufügen einer Einstellung
 
-1. Legen Sie für jeden Schlüssel und jeden Wert in der Konfiguration Folgendes fest: <ul><li>**Konfigurationsschlüssel**<br>Dieser wird verwendet, um die bestimmte Einstellungskonfiguration eindeutig zu identifizieren.</li><li>**Werttyp**<br>Der Datentyp des Konfigurationswerts. Zu den Typen gehören Integer, Real, String oder Boolean.</li><li>**Konfigurationswert**<br>Der Wert für die Konfiguration.</li></ul>
-2. Klicken Sie auf **OK**, um Ihre Konfigurationseinstellungen festzulegen.
+1. Legen Sie für jeden Schlüssel und jeden Wert in der Konfiguration Folgendes fest:
+   - **Konfigurationsschlüssel**<br>
+     Der Schlüssel, der die bestimmte Einstellungskonfiguration eindeutig identifiziert.
+   - **Werttyp**<br>
+     Der Datentyp des Konfigurationswerts. Zu den Typen gehören Integer, Real, String oder Boolean.
+   - **Konfigurationswert**<br>
+     Der Wert für die Konfiguration.
+2. Wählen Sie **OK** aus, um Ihre Konfigurationseinstellungen festzulegen.
 
 ### <a name="delete-a-setting"></a>Löschen einer Einstellung
 
-1. Klicken Sie auf die Auslassungspunkte (...) neben der Einstellung.
+1. Wählen Sie die Auslassungspunkte (**...** ) neben der Einstellung aus.
 2. Klicken Sie auf **Löschen**.
 
 Die Zeichen \{\{ und \}\} werden nur von Tokentypen verwendet und dürfen nicht für andere Zwecke verwendet werden.
@@ -76,13 +82,12 @@ Die Zeichen \{\{ und \}\} werden nur von Tokentypen verwendet und dürfen nicht 
 
 Sie können eine XML-Eigenschaftenliste eingeben oder einfügen, die die App-Konfigurationseinstellungen für in Intune registrierte Geräte enthält. Das Format der XML-Eigenschaftenliste variiert je nach der App, die Sie konfigurieren. Wenden Sie sich an den Hersteller der App, um ausführliche Informationen über das genau zu verwendende Format zu erhalten.
 
-Intune überprüft das XML-Format. Intune überprüft jedoch nicht, dass die XML-Eigenschaftenliste mit der Ziel-App verwendet werden kann.
-Weitere Informationen zu XML-Eigenschaftenlisten finden Sie unter [Grundlegendes zu XML-Eigenschaftenlisten].
+Intune überprüft das XML-Format. Intune überprüft jedoch nicht, ob die XML-Eigenschaftenliste (PList) mit der Ziel-App verwendet werden kann.
 
 Weitere Informationen zu XML-Eigenschaftenlisten:
 
   -  Lesen Sie [Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
-  -  Lesen Sie unter [Understand XML Plist (Grundlegendes zu XML-PList)](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in der iOS-Entwicklerbibliothek nach.
+  -  Lesen Sie unter [Understand XML Property Lists (Grundlegendes zu XML-Eigenschaftenlisten)](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in der iOS-Entwicklerbibliothek nach.
 
 ### <a name="example-format-for-an-app-configuration-xml-file"></a>Beispielformat für eine App-Konfigurations-XML-Datei
 
@@ -126,15 +131,15 @@ Intune unterstützt die folgenden Datentypen in einer Eigenschaftenliste:
 ### <a name="tokens-used-in-the-property-list"></a>Tokens, die in der Eigenschaftenliste verwendet werden.
 
 Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschaftenliste:
-- \{\{userprincipalname\}\} – (Beispiel: **John@contoso.com**)
-- \{\{mail\}\} – (Beispiel: **John@contoso.com**)
-- \{\{partialupn\}\} – (Beispiel: **John**)
-- \{\{accountid\}\} – (Beispiel: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-- \{\{deviceid\}\} – (Beispiel: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-- \{\{userid\}\} – (Beispiel: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-- \{\{username\}\} – (Beispiel: **John Doe**)
-- \{\{serialnumber\}\} – (Beispiel: **F4KN99ZUG5V2**) für iOS-Geräte
-- \{\{serialnumberlast4digits\}\} – (Beispiel: **G5V2**) für iOS-Geräte
+- \{\{userPrincipalName\}\}: z.B.**John@contoso.com**
+- \{\{Mail\}\}: z.B.**John@contoso.com**
+- \{\{partialupn\}\}: z.B. **John**
+- \{\{accountid\}\}: z.B. **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- \{\{deviceid\}\}: z.B. **b9841cd9-9843-405f-be28-b2265c59ef97**
+- \{\{userid\}\}: z.B. **3ec2c00f-b125-4519-acf0-302ac3761822**
+- \{\{username\}\}: z.B. **John Doe**
+- \{\{serialnumber\}\}: z.B. **F4KN99ZUG5V2** (für iOS-Geräte)
+- \{\{serialnumberlast4digits\}\}: z.B. **G5V2** (für iOS-Geräte)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
