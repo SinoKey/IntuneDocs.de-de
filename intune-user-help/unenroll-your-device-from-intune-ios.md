@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 02d955e5f5f15264df8aba3ea380b7f7e6c4d87b
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: a52fdb4ae866722191dfbd176c8d2e6eb0747bb4
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="unenroll-your-ios-device-from-intune"></a>Aufheben der Registrierung Ihres iOS-Geräts bei Intune
 
@@ -29,7 +29,6 @@ Wenn Sie die Registrierung Ihres iOS-Geräts bei Intune aufheben, kann Ihr Gerä
 Zum Aufheben der Registrierung Ihres Geräts bei Intune gehen Sie folgendermaßen vor, oder sehen Sie sich dieses Video an:
 
 > [!VIDEO https://www.youtube.com/embed/6UFtBrBWUUI]
-
 
 1.  Wählen Sie in der Unternehmensportal-App unter **Meine Geräte** das Gerät aus, dessen Registrierung Sie aufheben möchten.
 
