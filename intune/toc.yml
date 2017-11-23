@@ -386,6 +386,8 @@
           href: compliance-policy-create-android.md
         - name: Erstellen einer Android for Work-Richtlinie
           href: compliance-policy-create-android-for-work.md
+        - name: Erstellen einer Richtlinie zum Aktivieren von Google Play Protect
+          href: compliance-policy-create-google-play-protect.md
         - name: Erstellen einer iOS-Richtlinie
           href: compliance-policy-create-ios.md
         - name: Erstellen einer macOS-Richtlinie
