@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56bc71124c5a2714746dffcce256f0e604e9f62c
-ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
+ms.openlocfilehash: 6ccc420b3bf334f15d1036eb83d01a2d228fad19
+ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
@@ -95,6 +95,10 @@ Gehen Sie folgendermaßen vor, um das Intune App SDK zu aktivieren:
         > [!NOTE]
         > Um den `PATH_TO_LIB` zu suchen, wählen Sie die Datei `libIntuneMAM.a` und dann im Menü **Datei** die Option **Informationen abrufen** aus. Kopieren Sie den **Pfad** aus dem Abschnitt **Allgemein** im Fenster **Info**.
 
+    Fügen Sie das Ressourcenpaket `IntuneMAMResources.bundle` zum Projekt hinzu, indem Sie es in **Buildphasen** unter **Paketressourcen kopieren** ziehen.
+
+    ![Intune App SDK iOS: Paketressourcen kopieren](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+
 3. Fügen Sie diese iOS-Frameworks zum Projekt hinzu:
     * MessageUI.framework
     * Security.framework
@@ -106,12 +110,7 @@ Gehen Sie folgendermaßen vor, um das Intune App SDK zu aktivieren:
     * LocalAuthentication.framework
     * AudioToolbox.framework
 
-
-4. Fügen Sie das Ressourcenpaket `IntuneMAMResources.bundle` zum Projekt hinzu, indem Sie es in **Buildphasen** unter **Paketressourcen kopieren** ziehen.
-
-    ![Intune App SDK iOS: Paketressourcen kopieren](./media/intune-app-sdk-ios-copy-bundle-resources.png)
-
-5. Wenn in Ihrer mobilen App in der Datei „Info.plist“ eine Haupt-NIB- oder Hauptstoryboard-Datei definiert ist, entfernen Sie die Felder **Hauptstoryboard** oder **Haupt-NIB**. Fügen Sie diese Felder und ihre jeweiligen Werte in „Info.plist“ unter einem neuen Wörterbuch mit Namen **IntuneMAMSettings** mit den folgenden Schlüsselnamen (sofern zutreffend) hinzu:
+4. Wenn in Ihrer mobilen App in der Datei „Info.plist“ eine Haupt-NIB- oder Hauptstoryboard-Datei definiert ist, entfernen Sie die Felder **Hauptstoryboard** oder **Haupt-NIB**. Fügen Sie diese Felder und ihre jeweiligen Werte in „Info.plist“ unter einem neuen Wörterbuch mit Namen **IntuneMAMSettings** mit den folgenden Schlüsselnamen (sofern zutreffend) hinzu:
     * MainStoryboardFile
     * MainStoryboardFile~ipad
     * MainNibFile
@@ -121,7 +120,7 @@ Gehen Sie folgendermaßen vor, um das Intune App SDK zu aktivieren:
 
     Sie können die Datei „Info.plist“ im Raw-Format anzeigen (um die Schlüsselnamen zu sehen), indem Sie im Dokument mit der rechten Maustaste auf eine beliebige Stelle klicken und den Anzeigetyp in **Show Raw Keys/Values** ändern.
 
-6. Aktivieren Sie die Freigabe des Schlüsselbunds (sofern noch nicht geschehen), indem Sie in jedem Projektziel **Capabilities** auswählen und den Schalter **Keychain Sharing** aktivieren. Die Freigabe des Schlüsselbunds ist erforderlich, damit Sie mit dem nächsten Schritt fortfahren können.
+5. Aktivieren Sie die Freigabe des Schlüsselbunds (sofern noch nicht geschehen), indem Sie in jedem Projektziel **Capabilities** auswählen und den Schalter **Keychain Sharing** aktivieren. Die Freigabe des Schlüsselbunds ist erforderlich, damit Sie mit dem nächsten Schritt fortfahren können.
 
   > [!NOTE]
     > Ihr Bereitstellungsprofil muss neue Werte für die Freigabe des Schlüsselbunds unterstützen. Die Schlüsselbund-Zugriffsgruppen sollten ein Platzhalterzeichen unterstützen. Sie können dies überprüfen, indem Sie die Datei „.mobileprovision“ in einem Text-Editor öffnen, nach **keychain-access-groups** suchen und sich vergewissern, dass ein Platzhalter vorhanden ist. Beispiel:
@@ -132,7 +131,7 @@ Gehen Sie folgendermaßen vor, um das Intune App SDK zu aktivieren:
     </array>
     ```
 
-7. Nachdem Sie die Freigabe des Schlüsselbunds aktiviert haben, folgen Sie den nachstehenden Schritten, um eine separate Zugriffsgruppe zu erstellen, in der das Intune App SDK seine Daten speichert. Sie können eine Zugriffsgruppe für den Schlüsselbund über die Benutzeroberfläche oder mithilfe der Berechtigungsdatei erstellen. Wenn Sie die Benutzeroberfläche zum Erstellen der Zugriffsgruppe für den Schlüsselbund verwenden, führen Sie unbedingt die folgenden Schritte aus:
+6. Nachdem Sie die Freigabe des Schlüsselbunds aktiviert haben, folgen Sie den nachstehenden Schritten, um eine separate Zugriffsgruppe zu erstellen, in der das Intune App SDK seine Daten speichert. Sie können eine Zugriffsgruppe für den Schlüsselbund über die Benutzeroberfläche oder mithilfe der Berechtigungsdatei erstellen. Wenn Sie die Benutzeroberfläche zum Erstellen der Zugriffsgruppe für den Schlüsselbund verwenden, führen Sie unbedingt die folgenden Schritte aus:
 
     1. Wenn in Ihrer mobilen App keine Zugriffsgruppen für den Schlüsselbund definiert sind, fügen Sie die Paket-ID der App als erste Gruppe hinzu.
 
@@ -140,24 +139,23 @@ Gehen Sie folgendermaßen vor, um das Intune App SDK zu aktivieren:
 
     3. Fügen Sie `com.microsoft.adalcache` zu Ihren vorhandenen Zugriffsgruppen hinzu.
 
-        4. Fügen Sie `com.microsoft.workplacejoin` zu Ihren vorhandenen Zugriffsgruppen hinzu.
-            ![Intune App SDK für iOS: Schlüsselbund gemeinsam nutzen](./media/intune-app-sdk-ios-keychain-sharing.png)
+        ![Intune App SDK für iOS: Schlüsselbund gemeinsam nutzen](./media/intune-app-sdk-ios-keychain-sharing.png)
 
-    5. Wenn Sie die Berechtigungsdatei verwenden, um die Zugriffsgruppe für den Schlüsselbund zu erstellen, stellen Sie der Zugriffsgruppe für den Schlüsselbund in der Berechtigungsdatei `$(AppIdentifierPrefix)` voran. Beispiel:
+    4. Wenn Sie die Berechtigungsdatei direkt bearbeiten, anstatt die oben gezeigte Xcode-Benutzeroberfläche zum Erstellen der Schlüsselbund-Zugriffsgruppen zu verwenden, setzen Sie `$(AppIdentifierPrefix)` vor die Schlüsselbund-Zugriffsgruppen (Xcode verarbeitet dies automatisch). Beispiel:
 
             * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
             * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
-    > Eine Berechtigungsdatei ist eine für die mobile Anwendung eindeutige XML-Datei. Sie wird zum Festlegen spezieller Berechtigungen und Funktionen in Ihrer iOS-App verwendet.
+    > Eine Berechtigungsdatei ist eine für die mobile Anwendung eindeutige XML-Datei. Sie wird zum Festlegen spezieller Berechtigungen und Funktionen in Ihrer iOS-App verwendet. Wenn Ihre App vorher noch keine Berechtigungsdatei hatte, sollte die Aktivierung der Schlüsselbundfreigabe (Schritt 6) dazu geführt haben, dass Xcode eine für Ihre App generiert hat.
 
-8. Wenn die Definition von URL-Schemas der App in deren Info.plist-Datei erfolgt, fügen Sie ein weiteres Schema mit dem Suffix `-intunemam` für jedes URL-Schema hinzu.
+7. Wenn die Definition von URL-Schemas der App in deren Info.plist-Datei erfolgt, fügen Sie ein weiteres Schema mit dem Suffix `-intunemam` für jedes URL-Schema hinzu.
 
-9. Wenn die App Dokumenttypen in der „Info.plist“-Datei definiert, fügen Sie für das Array „Document Content Type UTIs“ jedes Elements einen duplizierten Eintrag für jede Zeichenfolge mit dem Präfix „com.microsoft.intune.mam.“ hinzu.
+8. Wenn die App Dokumenttypen in der „Info.plist“-Datei definiert, fügen Sie für das Array „Document Content Type UTIs“ jedes Elements einen duplizierten Eintrag für jede Zeichenfolge mit dem Präfix „com.microsoft.intune.mam.“ hinzu.
 
-10. Bei mobilen Apps, die in iOS 9+ entwickelt wurden, nehmen Sie jedes Protokoll, das Ihre App an `UIApplication canOpenURL` übergibt, in das `LSApplicationQueriesSchemes`-Array der Info.plist-Datei Ihrer App auf. Darüber hinaus fügen Sie `-intunemam` für jedes aufgeführte Protokoll ein neues Protokoll hinzu. Sie müssen auch `http-intunemam`, `https-intunemam`und `ms-outlook-intunemam` in das Array einschließen.
+9. Bei mobilen Apps, die in iOS 9+ entwickelt wurden, nehmen Sie jedes Protokoll, das Ihre App an `UIApplication canOpenURL` übergibt, in das `LSApplicationQueriesSchemes`-Array der Info.plist-Datei Ihrer App auf. Darüber hinaus fügen Sie `-intunemam` für jedes aufgeführte Protokoll ein neues Protokoll hinzu. Sie müssen auch `http-intunemam`, `https-intunemam`und `ms-outlook-intunemam` in das Array einschließen.
 
-11. Wenn in den Berechtigungen der App App-Gruppen definiert sind, fügen Sie diese Gruppen dem **IntuneMAMSettings**-Wörterbuch unter dem `AppGroupIdentifiers`-Schlüssel als Zeichenfolgenarray hinzu.
+10. Wenn in den Berechtigungen der App App-Gruppen definiert sind, fügen Sie diese Gruppen dem **IntuneMAMSettings**-Wörterbuch unter dem `AppGroupIdentifiers`-Schlüssel als Zeichenfolgenarray hinzu.
 
 ## <a name="using-the-intune-mam-configurator-tool"></a>Verwenden des Intune-MAM-Konfigurationstools
 

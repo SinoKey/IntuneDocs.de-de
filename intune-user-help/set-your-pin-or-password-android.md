@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0b6667bc25263cdc8d638027f4e846724e15b1d0
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 68f9f6333cbe3e450027e64399e2c0375459f1ca
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="set-your-pin-or-password"></a>Festlegen von PIN oder Kennwort
 
@@ -28,9 +28,10 @@ Der Support Ihres Unternehmens fordert Sie möglicherweise dazu auf, bei Verwend
 
 Sie können die folgenden Schritte verwenden, um eine PIN oder ein Kennwort festzulegen.
 
-1.  Tippen Sie auf **Einstellungen** &gt; **Sicherheit** &gt; **Bildschirmsperre** &gt; **Kennwort**.
+1.  Tippen Sie auf **Einstellungen** > **Sicherheit** > **Sperrbildschirm** > **Kennwort**.
 
 2.  Wählen und bestätigen Sie das neue Kennwort.
 
+Bei bestimmten Geräten müssen Sie zusätzlich zu Ihrem Bildschirmkennwort möglicherweise eine Start-PIN festlegen. Sie können versuchen, dieses Problem in den Griff zu bekommen, indem Sie in Ihrem Menüpunkt „Einstellungen“ die Stelle zum Aktivieren dieser Option finden. Auf dem Samsung Galaxy S7 aktivieren Sie beispielsweise „Sicherer Start“ über **Einstellungen** > **Sperrbildschirm und Sicherheit** > **Sicherer Start**. Weitere Informationen finden Sie [hier](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise). 
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 895a089a58845da609423ab7fd74fbf26e0b967f
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>So schützen Sie Ihr Android-Gerät mit Verschlüsselung
 
 Wenn Sie ein Gerät verschlüsseln, umschließen Sie die darauf enthaltenen Informationen mit einer Schicht aus schützendem Code, der den Zugriff durch Unbefugte darauf verhindert. Damit sichergestellt werden kann, dass Ihre Informationen geschützt sind, werden Sie von Ihrer Organisation angewiesen, Ihr Android-Gerät zu schützen, bevor Sie auf Unternehmensdateien, -E-Mails und -daten zugreifen können.
 
 > [!Note]
-> Sie werden möglicherweise aufgefordert, vor dem Verschlüsseln eine PIN oder ein Kennwort festzulegen, wenn dies vom Support Ihres Unternehmens verlangt wird.
+> Bestimmte Android-Geräte, beispielsweise einige Geräte von Huawei und die Geräte von Vivo und OPPO, können nicht verschlüsselt werden. [Hier](your-device-appears-encrypted-but-cp-says-otherwise-android.md) erfahren Sie mehr.
 
 Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
 
@@ -37,9 +37,6 @@ Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
     (Bei einigen Telefonen müssen Sie **Speicher** > **Speicherverschlüsselung** oder **Speicher** > **Lock Screen and Security** (Sperrbildschirm und Sicherheit) > **Weitere Sicherheitseinstellungen** auswählen, um auf die Option „Verschlüsseln“ zuzugreifen).
 
 3.  Folgen Sie den Anweisungen auf dem Bildschirm. Während der Verschlüsselung startet Ihr Gerät möglicherweise mehrmals neu.
-
-> [!Note]
-> Bestimmte Android-Geräte können nicht verschlüsselt werden. [Hier](your-device-appears-encrypted-but-cp-says-otherwise-android.md) erfahren Sie mehr.
 
 ### <a name="what-to-do-if-you-have-issues"></a>Vorgehensweise bei Problemen
 **Problem**: Sie haben Ihr Gerät bereits verschlüsselt und stellen eines der folgenden Probleme fest:
@@ -66,4 +63,4 @@ Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
 
     6. Öffnen Sie die Unternehmensportal-App, wählen Sie das Gerät aus, und tippen Sie auf **Kompatibilität überprüfen**.
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an den Support Ihres Unternehmens (suchen Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-Team</a>.
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an den Support Ihres Unternehmens (suchen Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com) nach Kontaktinformationen) oder an das <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-Team</a>.

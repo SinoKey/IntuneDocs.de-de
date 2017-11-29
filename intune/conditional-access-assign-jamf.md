@@ -1,0 +1,66 @@
+---
+title: "Anwenden von Konformitätsrichtlinien auf mit Jamf verwaltete Geräte"
+titlesuffix: Azure portal
+description: "Verwenden Sie die Konformität zum Absichern von mit Jamf verwalteten Geräten."
+keywords: 
+author: barlanmsft
+ms.author: barlan
+manager: angrobe
+ms.date: 11/14/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
+ms.reviewer: elocholi
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 6184552ce901ffc062f0453f169ec992049ae69b
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/15/2017
+---
+# <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Erzwingen von Konformität auf mit Jamf Pro verwalteten Macs
+
+|Gilt für: Intune im Azure-Portal |
+|--|
+|Suchen Sie nach der Dokumentation zu Intune im klassischen Portal? [Klicken Sie hier](/intune/introduction-intune?toc=/intune-classic/toc.json).|
+| |
+
+|Zurzeit in privater Vorschau|
+|--|
+|Die in diesem Thema beschriebenen Features sind für Kunden derzeit nur in der privaten Vorschau verfügbar. Diese Meldung wird entfernt, wenn das Release für alle Kunden erfolgt ist.|
+| |
+
+Über Azure Active Directory und die Microsoft Intune-Richtlinien für bedingten Zugriff können Sie sicherstellen, dass Ihre Endbenutzer den Anforderungen des Unternehmens entsprechen. Sie können diese Richtlinien auf Macs anwenden, die [mit Jamf Pro verwaltet](conditional-access-integrate-jamf.md) werden. Hierfür müssen Sie sowohl auf die Intune- als auch auf die Jamf Pro-Konsole zugreifen.
+
+## <a name="set-up-device-compliance-policies-in-intune"></a>Einrichten von Gerätekonformitätsrichtlinien in Intune
+
+1. Öffnen Sie Microsoft Azure, und navigieren Sie zu **Intune** > **Gerätekonformität** > **Richtlinien**. Sie können Richtlinien für macOS erstellen und dabei eine Reihe von Aktionen für nicht konforme Benutzer und Gruppen auswählen (z.B. Warn-E-Mails senden).
+2. Suchen Sie nach den gewünschten Gruppen, und wenden Sie die Richtlinien an.
+
+## <a name="require-the-company-portal-app-for-macos"></a>Anfordern der Unternehmensportal-App für macOS
+
+1. Wechseln Sie auf einem macOS-Gerät zu https://aka.ms/macoscompanyportal, um die aktuelle Version der Unternehmensportal-App für macOS herunterzuladen.
+2. Öffnen Sie Jamf Pro, und navigieren Sie zu **Computer management** > **Packages** (Computerverwaltung > Pakete).
+3. Erstellen Sie ein neues Paket mit der Unternehmensportal-App für macOS, und klicken Sie auf **Save** (Speichern).
+4. Öffnen Sie **Computer** > **Policies** (Richtlinien), und wählen Sie dann **New** (Neu).
+5. Verwenden Sie die Nutzlast **General** (Allgemein), um Einstellungen für die Richtlinie zu konfigurieren, einschließlich der Trigger- und Ausführungshäufigkeit.
+6. Wählen Sie die Nutzlast **Packages** (Pakete), und klicken Sie auf **Configure** (Konfigurieren).
+7. Klicken Sie auf **Add** (Hinzufügen), um das Paket mit der Unternehmensportal-App auszuwählen.
+8. Wählen Sie **Install** (Installieren) aus dem Popupmenü **Action** (Aktion).
+9. Konfigurieren Sie die Einstellungen für das Paket.
+10. Klicken Sie auf die Registerkarte **Scope** (Bereich), um anzugeben, auf welchen Computern die Unternehmensportal-App installiert werden soll. Klicken Sie auf **Speichern**. Die Richtlinie wird auf den betreffenden Geräten ausgeführt, wenn der ausgewählte Trigger das nächste Mal auf dem Computer auftritt und die Kriterien in der Nutzlast **General** (Allgemein) erfüllt werden.
+
+## <a name="direct-your-users-to-register-jamf-pro-managed-devices-with-azure-active-directory"></a>Anweisen Ihrer Benutzer zum Registrieren von mit Jamf Pro-verwalteten Geräten bei Azure Active Directory
+
+> [!NOTE]
+> Sie müssen das [Unternehmensportal für macOS bereitstellen](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos), bevor Sie die nächsten Schritten durchführen.  
+
+Endbenutzer müssen die Unternehmensportal-App über den Jamf Self-Dienst starten, um das Gerät bei Azure AD als mit Jamf Pro verwaltetes Gerät zu registrieren.
+
+1. Navigieren Sie in Jamf Pro zu **Computer** > **Policies** (Richtlinien), und erstellen Sie eine neue Richtlinie für die Geräteregistrierung.
+2. Konfigurieren Sie die Nutzlast **Conditional Access** (Bedingter Zugriff), einschließlich der Trigger- und Ausführungshäufigkeit. Legen Sie die Priorität auf **After** (Nach) fest.
+3. Klicken Sie auf die Registerkarte **Scope** (Bereich), und beschränken Sie die Richtlinie auf alle Zielgeräte.
+4. Klicken Sie auf die Registerkarte **Self Service**, um die Richtlinie in Jamf Self Service verfügbar zu machen. Nehmen Sie die Richtlinie in die Kategorie **Device Compliance** (Gerätekonformität) auf. Klicken Sie auf **Speichern**.
