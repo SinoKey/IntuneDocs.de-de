@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,49 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dff1cb496b85f933d8f462b94f6e15fa7ff69a28
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 7ec7f322f0d35d50a7c84d8e40d43a6a04ae1b7d
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune
 Erfahren Sie, welche Aktualisierungen wir an der Benutzeroberfläche für Apps vorgenommen haben, die Ihre Endbenutzer in dieser Version von Microsoft Intune sehen werden. Damit werden Sie bei der Benutzerkommunikation sowie bei allen aktualisierten Benutzerdokumentationen unterstützt, die Sie zur Unterstützung Ihrer Entwicklung erstellt haben. Es kann auch helfen, zu verstehen, wie Probleme behandelt werden, die auftauchen, wenn Benutzer den Helpdesk für den Support mithilfe des Unternehmensportals aufrufen.
 
+## <a name="week-of-november-13-2017"></a>Woche vom 13. November 2017
+
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Verbesserungen des Workflows für das Gerätesetup im Unternehmensportal für iOS in Version 2.9.0 <!---1417174--->
+
+Der Workflow für die Geräteinstallation in der Unternehmensportal-App unter iOS wurde verbessert. Die Sprache ist nun benutzerfreundlicher. Zudem haben wir Bildschirme nach Möglichkeit zusammengefasst. Zudem haben wir die Sprache speziell für Ihr Unternehmen angepasst, indem der Name Ihres Unternehmens im gesamten Setuptext verwendet wird.
+
+> [!NOTE]
+> Wir verwenden den Unternehmensnamen, den Sie im Azure-Portal unter **Microsoft Intune** > **Mobile Apps** > **Branding des Unternehmensportals** > **Unternehmensname** festgelegt haben. Wenn Sie diesen Wert nicht festgelegt haben, verwenden wir den Namen des Mandanten, der unter **Azure Active Directory** > **Eigenschaften** > **Name** festgelegt wurde. Wenn Sie im Branding des Unternehmensportals keinen Unternehmensnamen festgelegt haben und nicht möchten, dass der Mandantennamen angezeigt wird, empfiehlt es sich, den Unternehmensnamen auf der Registerkarte „Branding des Unternehmensportals“ festzulegen. Wenn Sie nicht möchten, dass diese Zeichenfolge in der Kopfzeile im Unternehmensportal angezeigt wird, können Sie das Kontrollkästchen „Unternehmensnamen neben Logo anzeigen“ deaktivieren.
+
+|Vorher|Danach|
+|---|---|
+|![01](./media/ios_cp_enroll_01_before_1711.png)|![01](./media/ios_cp_enroll_01_after_1711.png)|
+|![02](./media/ios_cp_enroll_02_before_1711.png)|*Kombiniert mit vorherigen Schritten*|
+|![03](./media/ios_cp_enroll_03_before_1711.png)|![03](./media/ios_cp_enroll_03_after_1711.png)|
+|![04](./media/ios_cp_enroll_04_before_1711.png)|![04](./media/ios_cp_enroll_04_after_1711.png)|
+|![05](./media/ios_cp_enroll_05_before_1711.png)|![05](./media/ios_cp_enroll_05_after_1711.png)|
+|![06](./media/ios_cp_enroll_06_before_1711.png)|![06](./media/ios_cp_enroll_06_after_1711.png)|
+|![07](./media/ios_cp_enroll_07_before_1711.png)|![07](./media/ios_cp_enroll_07_after_1711.png)|
+
 
 ## <a name="week-of-november-6-2017"></a>Woche vom 6. November 2017
+
+### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>Updates an der Unternehmensportal-App für Windows 10 <!--1299474-->
+Die Seite „Einstellungen“ in der Unternehmensportal-App für Windows 10 wurde aktualisiert, um die Einstellungen und beabsichtigten Benutzeraktionen für alle Einstellungen konsistenter zu gestalten. Sie wurde zudem an das Layout anderer Windows-Apps angepasst.
+
+|Vorher|Danach|
+|---|---|
+|![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
+
 
 ### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>Verbesserungen der Suchfunktion für Unternehmensportal-Apps und die Unternehmensportal-Website <!--1418189-->
 Für die Apps im Unternehmensportal werden jetzt Suchläufe anhand von App-Kategorien, Namen und Beschreibungen unterstützt. Die Ergebnisse werden absteigend nach der Relevanz sortiert. Diese Updates stehen auch auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com) zur Verfügung.
 
 Die Funktion zur Nachverfolgung der Relevanz wird weiterhin angepasst. Geben Sie uns daher gerne eine Rückmeldung über den „Feedback“-Link unten auf der Unternehmensportal-Website.
-
-
 
 ## <a name="week-of-october-16-2017"></a>Woche vom 16. Oktober 2017
 
@@ -45,10 +70,6 @@ Die Funktion zur Nachverfolgung der Relevanz wird weiterhin angepasst. Geben Sie
 
 ### <a name="ios-company-portal-displays-large-icons----1454593---"></a>Anzeigen großer Symbole im iOS-Unternehmensportal <!-- 1454593 -->
 Das bekannte Problem, dass im iOS-Unternehmensportal Symbole in der App-Kachel angezeigt werden, wird mit dieser Version behoben. Wenn Sie App-Symbole mit einer Auflösung von 120 x 120 Pixel oder höher hochladen, werden sie nun auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com) und den App-Seiten des iOS-Unternehmensportals in voller Größe der App-Kachel angezeigt.
-
-
-
-
 
 
 ## <a name="week-of-october-2-2017"></a>Woche vom 2. Oktober 2017

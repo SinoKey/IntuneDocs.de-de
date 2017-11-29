@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2f91005394d1bb586dcc07f309c89a8a1f1da7a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: a6f13e4c741a59eddc352a322d5da68a27a0ba45
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Android for Work-Geräte in Microsoft Intune
 
@@ -78,6 +78,13 @@ ms.lasthandoff: 10/20/2017
 - **Wiederverwendung vorheriger Kennwörter verhindern**: Geben Sie die Anzahl neuer Kennwörter ein (von **1**-**24**), die verwendet werden müssen, bevor ein altes wiederverwendet werden kann.
 - **Entsperrung durch Fingerabdruck**: Verhindert, dass ein Endbenutzer das Gerät mithilfe des Fingerabdruckscanners entsperren kann.
 - **Smart Lock und andere Vertrauens-Agents**: Ermöglicht Ihnen die Steuerung des Smart Lock-Features auf kompatiblen Geräten. Diese Telefonfunktion wird manchmal als Vertrauens-Agent bezeichnet und ermöglicht Ihnen das Deaktivieren oder Umgehen des Kennworts für den Gerätesperrbildschirm, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet, (wenn es z.B. mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet). Mit dieser Einstellung können Sie verhindern, dass Benutzer Smart Lock konfigurieren.
+
+## <a name="system-security"></a>Systemsicherheit
+
+ - **Bedrohungsüberprüfung für Apps**: Erzwingen Sie, dass die Einstellung **Apps überprüfen** für Arbeits- und persönliche Profile aktiviert ist.
+
+   > [!Note]  
+   > Diese Einstellung funktioniert nur auf Geräten mit Android O und höher. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 

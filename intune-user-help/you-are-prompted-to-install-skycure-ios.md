@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: c03ac73377278925773123dc10d10cf3e8256e41
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 7842d55eb6f43cf7ada47324f5d5846212630501
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>Installieren von Symantec Endpoint Protection Mobile auf Ihrem iOS-Gerät
 
-Damit Sie auf Ihre Arbeit zugreifen können, verlangt Ihr Unternehmen, dass Sie die Symantec Endpoint Protection Mobile-App (SEP Mobile) installieren, die Ihr Gerät schützen soll, indem sie mögliche Sicherheitsbedrohungen erkennt. Möglicherweise werden auf Ihrem Gerät abhängig davon, wie Ihr Unternehmen SEP Mobile eingerichtet hat, andere Aufforderungen angezeigt.
+Damit Sie auf Ihre Arbeit zugreifen können, verlangt Ihr Unternehmen, dass Sie die Mobile Symantec Endpoint Protection-App installieren, die Ihr Gerät schützen soll, indem sie mögliche Sicherheitsbedrohungen erkennt. Möglicherweise werden auf Ihrem Gerät abhängig davon, wie Ihr Unternehmen SEP Mobile eingerichtet hat, andere Aufforderungen angezeigt.
 
 ## <a name="what-you-need-to-do"></a>Auszuführende Schritte
 
@@ -42,7 +42,7 @@ Wenn SEP Mobile eine Sicherheitsbedrohung auf Ihrem Gerät erkennt, erhalten Sie
 
 ## <a name="if-the-installation-doesnt-work"></a>Wenn die Installation nicht funktioniert
 
-Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihrer Kontrolle Fehler auf. Sollte dies passieren, können Sie versuchen, Zimperium zIPS [manuell aus dem App Store zu installieren](https://itunes.apple.com/app/sep-mobile/id695620821).
+Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihrer Kontrolle Fehler auf. Sollte dies passieren, können Sie versuchen, SEP Mobile [manuell aus dem App Store zu installieren](https://itunes.apple.com/app/sep-mobile/id695620821).
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
 

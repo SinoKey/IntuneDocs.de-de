@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 904041ba4936917dc976fd0a6de869e931927c2d
+ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Signieren Sie branchenspezifische Apps, damit sie mit Intune auf Windows-Geräten bereitgestellt werden können
 
@@ -193,7 +193,8 @@ Im Anschluss erfahren Sie, wie Sie die App auf diese Weise signieren und bereits
 |Parameter | Beschreibung|
 | ------------- | ------------- |
 |InputWin10AppxBundle |Der Pfad, an dem sich die APPXBUNDLE-Quelldatei befindet. |
-|OutputWin10AppxBundle |Der Ausgabepfad für die signierte APPXBUNDLE-Datei.  Win81Appx Der Pfad, an dem sich die APPX-Datei des Windows 8.1- oder Windows Phone 8.1-Unternehmensportals befindet.|
+|OutputWin10AppxBundle |Der Ausgabepfad für die signierte APPXBUNDLE-Datei. |
+|Win81Appx | Der Pfad, an dem sich die APPX-Datei des Windows 8.1- oder Windows Phone 8.1-Unternehmensportals befindet.|
 |PfxFilePath |Der Pfad der PFX-Datei für das Symantec Enterprise Mobile-Codesignaturzertifikat. |
 |PfxPassword| Das Kennwort des Symantec Enterprise Mobile-Codesignaturzertifikats. |
 |PublisherId |Die Herausgeber-ID des Unternehmens. Wenn sie nicht vorhanden ist, wird das Feld "Subject" von Symantec Enterprise Mobile Code Signing Certificate verwendet.|

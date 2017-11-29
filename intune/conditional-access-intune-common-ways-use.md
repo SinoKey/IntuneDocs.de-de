@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/23/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a75cf12fb1e03873d4ef3307e9c377ab6df6b75a
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d3509dbf1bc0b415803bb003c342f5b5df69e235
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Gängige Möglichkeiten der Verwendung des bedingten Zugriffs in Intune
 
@@ -90,7 +90,7 @@ Intune bewertet und verwaltet den Gerätezustand.
 
 Der Exchange-Server stellt die API und die Infrastruktur bereit, um Geräte in die Quarantäne zu verschieben.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Denken Sie daran, dass dem Benutzer, der das Gerät verwendet, ein Konformitätsprofil zugewiesen sein muss, damit das Gerät hinsichtlich der Konformität bewertet werden kann. Wenn keine Konformitätsrichtlinie für den Benutzer bereitgestellt wird, wird das Gerät als konform behandelt, und es werden keine Zugriffsbeschränkungen angewendet.
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Bedingter Zugriff basierend auf der Netzwerkzugriffssteuerung

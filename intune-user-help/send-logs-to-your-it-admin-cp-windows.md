@@ -1,11 +1,11 @@
 ---
 title: "Senden von Protokollen an den Support Ihres Unternehmens für Windows 10-Geräte | Microsoft-Dokumentation"
-description: "Registrieren Sie ein Windows 10 1511-Gerät bei Intune."
+description: "Registrieren eines Geräts unter Windows 10 1511 oder höher bei Intune"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f2287700e96c798be7033eac35539e3490bc3f8a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 4c114a8267fd38da173e8aafcd6089dcfb4472fd
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Senden von Protokollen an den Support Ihres Unternehmens über die Unternehmensportal-App für Windows 10
 
@@ -30,8 +30,8 @@ Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App au
 2.  Wählen Sie das Zahnrad **Einstellungen** und dann **Protokolle senden** aus.
 3.  **Freigabe** wird geöffnet. Wählen Sie **E-Mail** aus. Dadurch wird eine E-Mail erstellt, der die Unternehmensportalprotokolle angefügt werden und die an den Support Ihres Unternehmens gesendet werden kann.
 
-  ![Das Dialogfeld „Protokolle senden“ auf der Seite „Einstellungen“ der Unternehmensportal-App. Der Link, auf den Sie klicken müssen, lautet: „Send logs - Send diagnostic logs to your company support to help them solve issues within the Company Portal.“ (Protokolle senden – Senden Sie Diagnoseprotokolle an den Support Ihres Unternehmens, um ihn bei der Problemlösung für das Unternehmensportal zu unterstützen.).](./media/w10-share-logs.png)
+  ![Das Dialogfeld „Protokolle senden“ auf der Seite „Einstellungen“ der Unternehmensportal-App. Der Link, auf den Sie klicken müssen, lautet: „Send logs - Send diagnostic logs to your company support to help them solve issues within the Company Portal.“ (Protokolle senden – Senden Sie Diagnoseprotokolle an den Support Ihres Unternehmens, um ihn bei der Problemlösung für das Unternehmensportal zu unterstützen.).](./media/w10-share-logs-after-1711.png)
 
-Sie müssen möglicherweise auch [Protokolle aus der App „Einstellungen“](send-logs-to-your-it-admin-settings-windows.md) senden, um dem Support Ihres Unternehmens weitere Hilfe beim Behandeln eventueller Probleme bereitzustellen. 
+Sie müssen möglicherweise auch [Protokolle aus der App „Einstellungen“](send-logs-to-your-it-admin-settings-windows.md) senden, um dem Support Ihres Unternehmens weitere Hilfe beim Behandeln eventueller Probleme bereitzustellen.
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

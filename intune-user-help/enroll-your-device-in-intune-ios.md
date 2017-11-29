@@ -1,11 +1,11 @@
 ---
-title: "Registrieren Ihres iOS-Geräts bei Intune | Microsoft-Dokumentation"
-description: "Beschreibt, wie Sie ein iOS-Gerät bei Intune registrieren."
+title: Einrichten des Zugriffs auf Unternehmensressourcen | Microsoft-Dokumentation
+description: "Beschreibt die Aktivierung der Verwaltung Ihrer iOS-Geräte über Intune"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,89 +16,63 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 41f39740b62074e06ccc64c6211d642d224efd6c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="enroll-your-ios-device-in-intune"></a>Registrieren Ihres iOS-Geräts bei Intune
+# <a name="set-up-access-to-your-company-resources"></a>Einrichten des Zugriffs auf Unternehmensressourcen
 
-Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ihr iOS-Gerät registrieren, um Zugriff auf Unternehmens-E-Mails, Dateien und weitere Ressourcen zu erhalten. Wenn Sie Ihre Geräte registrieren, kann Ihre IT-Abteilung diese Geschäfts-, Schul- oder Uniressourcen verwalten, schützen und Ihnen gleichzeitig die Möglichkeit bieten, Ihr bevorzugtes Gerät zu verwenden, um Ihre Arbeit erledigen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+Ihr Unternehmen besitzt umfangreiche proprietäre Informationen, von E-Mail bis hin zu Dateien, Netzwerken und vielem mehr. Ihr Unternehmen verwendet Microsoft Intune für den Schutz dieser Informationen, wenn Sie über Ihr iOS-Gerät darauf zugreifen. Auf diese Weise kann das Unternehmen diese Ressourcen verwalten, für deren Sicherheit sorgen und Ihnen die Möglichkeit bieten, Ihr bevorzugtes Gerät für Ihre Arbeit zu verwenden.
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
 > Wenn Sie versuchen, auf E-Mails Ihres Unternehmens in der Mail-App zuzugreifen, ist es wahrscheinlich, dass Sie zum Verwalten Ihres Geräts aufgefordert werden, um dieses zu schützen. Befolgen Sie die untenstehenden Anweisungen, um über Ihr iOS-Gerät den Zugriff auf Ihre E-Mails und andere Unternehmensressourcen zu ermöglichen.
 
-**Vorbereitung:**
+## <a name="before-you-start"></a>Vorbereitung
 
-- Stellen Sie sicher, dass Sie die Registrierung auch abschließen, wenn Sie mit dieser Anleitung beginnen. Wird der Prozess für einen längeren Zeitraum unterbrochen, müssen Sie in der Regel von vorn beginnen.
-- Sollte die Registrierung nicht erfolgreich sein, kehren Sie zur Unternehmensportal-App zurück, und versuchen Sie es erneut.
-- Stellen Sie sicher, dass Ihr WLAN funktioniert. Andernfalls schlägt die Registrierung fehl.
-- Wenn Sie Safari auf Ihrem Gerät blockieren, müssen Sie die Blockierung aufheben. Safari wird im Rahmen des Geräteregistrierungsprozesses verwendet.
+- Stellen Sie sicher, dass Sie den gesamten Prozess durchführen, nachdem Sie ihn gestartet haben. Wird der Prozess für mehr als einige Minuten unterbrochen, wird er normalerweise beendet, und Sie müssen noch einmal von vorn beginnen.
+- Wenn bei diesem Vorgang ein Fehler auftritt, müssen Sie zur Unternehmensportal-App zurückkehren, um einen neuen Versuch zu starten.
+- Stellen Sie sicher, dass Ihr WLAN in Betrieb ist und dass Safari auf Ihrem Gerät funktioniert.
+- Laden Sie die Intune-Unternehmensportal-App herunter, und befolgen Sie dann die Anleitung unter [Installieren und Anmelden bei der Unternehmensportal-App](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
 
 
-**So registrieren Sie Ihr iOS-Gerät:**
+## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>Verwenden der Unternehmensportal-App für das Einrichten des Zugriffs auf Unternehmensressourcen
 
-1.  Führen Sie die Schritte in [Installieren und Anmelden bei der Intune-Unternehmensportal-App](install-and-sign-in-to-the-intune-company-portal-app-ios.md) aus.
-
-2. Tippen Sie auf der Seite **Unternehmenszugriff einrichten** auf **Beginnen**.
-
-    ![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png)
-
-3. Lesen Sie auf dem Bildschirm **Gründe für das Registrieren Ihres Geräts**, welche Möglichkeiten Sie haben, wenn Sie Ihr Gerät registrieren, und tippen Sie dann auf **Weiter**.
-
-    ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
-
-  > [!NOTE]
-  > Die gelben Dreiecke bedeuten nicht, dass bereits ein Fehler vorliegt. Sie geben lediglich an, dass für den Registrierungsprozess noch Schritte ausgeführt werden müssen.
-
-4. Prüfen Sie in der angezeigten Liste, was der Support Ihres Unternehmens auf Ihrem registrierten Gerät einsehen kann und was nicht, und tippen Sie dann auf **Weiter**.
-
-    ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
-
-5.  Lesen Sie im Bildschirm **Was ist der nächste Schritt?**, was während der Registrierung passiert, und tippen Sie dann auf **Registrieren**.
-
-    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
-
-6.  Tippen Sie auf dem Bildschirm **Profil installieren** auf **Installieren**, und geben Sie bei Aufforderung Ihre Kennung ein.
-
-    ![ios-enroll-install-profile](./media/ios-enroll-2-mgt-profile-install.png)
-
-7.  Tippen Sie auf **Installieren**.
-
-    ![ios-enroll-tap-install](./media/ios-enroll-3-mgt-profile-install-2.png)    
-
-8.  Tippen Sie auf **Installieren**, um anzugeben, dass Sie die Warnung gelesen haben.
-
-    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
-
-9.  Tippen Sie auf **Vertrauen**.
-
-    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
-
-10.  Wenn auf dem Bildschirm angezeigt wird, dass die Installation des Profils abgeschlossen ist, tippen Sie auf **Fertig**.
-
-    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
-
-    Auf dem Bildschirm wird die Meldung „Gerät wird registriert“ angezeigt.
-
-11.  Wenn Sie in einer Meldung gefragt werden, ob Sie die Seite im Unternehmensportal öffnen möchten, tippen Sie auf **Öffnen**.
-
-    ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
-
-12. Tippen Sie auf dem Bildschirm **Unternehmenszugriff einrichten** auf **Weiter**. Auf diesem Bildschirm wird Ihnen angezeigt, welche anderen Anforderungen erfüllt werden müssen, damit Ihr Gerät konform ist, z.B. das Festlegen eines Kennworts. Befolgen Sie die Anweisungen auf dem Bildschirm, bis alle Konformitätsanforderungen erfüllt sind. Sobald Sie fertig sind, kehren Sie zum Bildschirm „Unternehmenszugriff einrichten“ zurück. Tippen Sie auf **Weiter**.
-
-    ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
-
-13. Tippen Sie auf **Fertig**.
-
-    ![ios-enroll-tap-done](./media/ios-enroll-9-comp-access-setup-complete.png)
-
-Ihr Gerät ist jetzt bei Intune registriert, und Sie gelangen wieder zur Unternehmensportal-App.
+|Anzeige|Erläuterung|
+|---|---|
+|![Anmeldebildschirm des Unternehmensportals, mit der Schaltfläche „Anmelden“.](./media/ios-0-cp-enroll-1711.png)|Öffnen Sie die Unternehmensportal-App, und tippen Sie auf **Anmelden**.|
+|![Aufforderung zur Anmeldung bei Azure AD.](./media/ios-0a-cp-enroll-1711.png)|Geben Sie die E-Mail-Adresse für Ihr Unternehmen ein, und tippen Sie auf **Weiter**.|
+|![Aufforderung zur Azure AD-Kennworteingabe.](./media/ios-0b-cp-enroll-1711.png)|Geben Sie Ihr Kennwort ein, und tippen Sie dann auf **Anmelden**.|
+|![Begrüßungsbildschirm beim Laden von Unternehmensressourcen.](./media/ios-1-cp-enroll-1711.png)|Warten Sie, bis alles geladen wurde.|
+|![Geschäftsbedingungen.](./media/ios-2-cp-enroll-1711.png)|Lesen Sie die Nutzungsbedingungen, und klicken Sie auf **Alle akzeptieren**.|
+|![Bildschirm „Unternehmenszugriff einrichten“. Sowohl die Verwaltung als auch die Einstellungen weisen zurzeit einen Lösungsbedarf auf.](./media/ios-3-cp-enroll-1711.png)|Tippen Sie auf **Gerät in die Verwaltung einbinden**, um den Vorgang zum Aktivieren des Zugriffs auf Unternehmensressourcen mit Ihrem Gerät zu starten. Wenn dies jetzt nicht möglich ist, können Sie den Vorgang **verschieben**. Dies bedeutet jedoch, dass Sie keine E-Mail, Dokumente und andere Elemente erhalten können.|
+|![Bildschirm zu den für das Unternehmen sichtbaren Informationen.](./media/ios-4-cp-enroll-1711.png)|**Weitere Informationen** zu den für Ihr Unternehmen sichtbaren Elementen erhalten Sie, indem Sie unten auf den Link tippen. Tippen Sie andernfalls auf **Weiter**.|
+|![Bildschirm „Wie geht es weiter?“](./media/ios-5-cp-enroll-1711.png)|Dieser Bildschirm führt Sie durch das Setup. Sie verbringen Zeit in Safari, in der App „Einstellungen“ und in der Unternehmensportal-App, um diesen Vorgang abzuschließen. Tippen Sie auf **Weiter**.|
+|![Bildschirm mit Ladevorgang nach dem Tippen auf „Weiter“ bei „Wie geht es weiter?“](./media/ios-6-cp-enroll-1711.png)||
+|![Wechsel zu Safari für die Registrierung.](./media/ios-7-cp-enroll-1711.png)|Sie werden zu Safari gesendet, um weitere Verwaltungsinformationen für Ihr Gerät zu erhalten.|
+|![Systemaufforderung zum Öffnen der App „Einstellungen“.](./media/ios-8-cp-enroll-1711.png)|Tippen Sie auf **Zulassen**, um die App „Einstellungen“ zu öffnen und das Konfigurationsprofil herunterzuladen. Sie installieren dieses Profil, um Ihrem Unternehmen die Verwaltung von Unternehmensdaten auf Ihrem Gerät zu ermöglichen.|
+|![In den Einstellungen geöffnetes Profil.](./media/ios-9-cp-enroll-1711.png)|Tippen Sie auf **Installieren**.|
+|![Modales Dialogfeld „Profil wird installiert“ vom unteren Bildschirmrand.](./media/ios-10-cp-enroll-1711.png)|Tippen Sie auf **Installieren**.|
+|![Ladebildschirm beim Installieren des Profils.](./media/ios-11-cp-enroll-1711.png)|Warten Sie, bis alles geladen wurde.|
+|![Warnbildschirm zur Profilverwaltung.](./media/ios-12-cp-enroll-1711.png)|Diese Warnung wurde von Apple verfasst und informiert Sie über die möglichen Arten von Aktionen, die auf einem verwalteten Gerät durchgeführt werden können. Weitere Informationen hierzu finden Sie in der Liste der [Informationen, die Ihrem Unternehmen angezeigt werden](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).|
+|![Systemeingabeaufforderung zur Vertrauensstellung bei der Remoteverwaltung.](./media/ios-13-cp-enroll-1711.png)|Tippen Sie auf **Vertrauen**, um Ihrem Unternehmens die Verwaltung von Unternehmensinformationen und Einstellungen auf Ihrem Gerät zu ermöglichen.|
+|![Ladebildschirm zum Abschluss der Profilinstallation.](./media/ios-14-cp-enroll-1711.png)|Warten Sie, bis alles geladen wurde.|
+|![Bildschirm „Profil installiert“.](./media/ios-15-cp-enroll-1711.png)|Ihr Profil ist installiert, und es sind nur noch wenige Schritte erforderlich, damit die Unternehmensdaten und Einstellungen auf Ihrem Gerät verwaltet werden können.|
+|![Wechsel zu Safari für die Registrierung.](./media/ios-16-cp-enroll-1711.png)|Sie werden zu Safari zurückgesendet, um den Abruf von Verwaltungsinformationen für Ihr Gerät abzuschließen. |
+|![Systemaufforderung zum Öffnen des Unternehmensportals.](./media/ios-17-cp-enroll-1711.png)|Tippen Sie auf **Öffnen**.|
+|![Bildschirm beim Laden von Unternehmensressourcen.](./media/ios-18-cp-enroll-1711.png)|Warten Sie, bis alles geladen wurde.|
+|![Wählen Sie die Gerätekategorie in der Unternehmensportal-App aus.](./media/ios-19-cp-enroll-1711.png)|Wählen Sie die beste Kategorie für Ihr Gerät. Dies hängt normalerweise damit zusammen, wer das Gerät besitzt oder wo es sich in der Regel befindet.|
+|![Ausgewählte Kategorie.](./media/ios-20-cp-enroll-1711.png)||
+|![Das Gerät wird erfolgreich verwaltet. Jetzt müssen Einstellungen aktualisiert werden.](./media/ios-21-cp-enroll-1711.png)|Sie haben die Verwaltung Ihres Geräts erfolgreich aktiviert. Wahrscheinlich gibt es noch einige Einstellungen, beispielsweise die Kennwortlänge, die von Ihrem Unternehmen aktualisiert werden müssen. Tippen Sie auf **Geräteeinstellungen aktualisieren**, um den Vorgang fortzusetzen.|
+|![Geräteeinstellungen werden bestätigt.](./media/ios-22-cp-enroll-1711.png)|Das Unternehmensportal überprüft, ob Ihre Einstellungen aktualisiert werden müssen.|
+|![Einstellungsüberprüfung abgeschlossen, falsche Betriebssystemversion](./media/ios-23-cp-enroll-1711.png)|Das Unternehmensportal stellt Anweisungen zum Beheben von Problemen mit Ihren Einstellungen bereit. Wenn Sie die Probleme behoben haben, tippen Sie auf **Einstellungen überprüfen**.|
+|![Ladebildschirm zum Bestätigen der Geräteeinstellungen](./media/ios-24-cp-enroll-1711.png)|Ihr Gerät prüft, ob die Sicherheit Ihrer Einstellungen für den Zugriff auf Unternehmensressourcen ausreicht.|
+|![Einstellungen erfolgreich registriert und aktualisiert](./media/ios-25-cp-enroll-1711.png)|Gratulation! Ihr Gerät ist jetzt bei Intune registriert.|
 
 > [!Note]
-> Sie müssen einige weitere Schritte ausführen, bevor Ihr Gerät vollständig registriert ist. Weitere Informationen finden Sie unter [Registrieren Ihres Geräts mithilfe des Telecom Expense Management](enroll-your-device-with-telecom-expense-management-ios.md). Wenn Ihre Organisation das Programm zur Geräteregistrierung von Apple verwendet, finden Sie [hier](enroll-your-device-dep-ios.md) weitere Informationen.
+> Sie müssen noch einige weitere Schritte ausführen, bevor Ihr Gerät vollständig verwaltet wird. Weitere Informationen finden Sie unter [Registrieren Ihres Geräts mithilfe des Telecom Expense Management](enroll-your-device-with-telecom-expense-management-ios.md). Wenn Ihre Organisation das Programm zur Geräteregistrierung von Apple verwendet, finden Sie [hier](enroll-your-device-dep-ios.md) weitere Informationen.
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).

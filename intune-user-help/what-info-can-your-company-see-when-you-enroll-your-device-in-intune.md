@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/03/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: c03985bd7ca92fe4b4e8ea163b7db421bfae09c2
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: 6595382606b9c53083e7beec9ca02a314abb5899
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Welche Informationen erhält mein Unternehmen, wenn ich mein Gerät registriere?
 
@@ -36,7 +36,7 @@ Wenn Sie ein Gerät zur Verwaltung registrieren, erteilen Sie Ihrem Unternehmen 
 
 **Was Ihr Unternehmen immer sehen kann**
 
-- Gerätemodell, z.B. iPhone 7
+- Gerätemodell, z.B. Google Pixel
 - Hersteller, z.B. Microsoft
 - Betriebssystem, z.B. iOS
 - App-Namen, z.B. Microsoft Word
@@ -48,4 +48,5 @@ Wenn Sie ein Gerät zur Verwaltung registrieren, erteilen Sie Ihrem Unternehmen 
 
 -  Telefonnummer: Bei **unternehmenseigenen** Geräten kann Ihre vollständige Telefonnummer angezeigt werden. Bei Geräten, die **persönliches** Eigentum sind, werden dem Unternehmen nur die letzten vier Ziffern Ihrer Telefonnummer angezeigt. Um den **Besitztyp** jedes einzelnen Geräts festzustellen, öffnen Sie die Seite **Gerätedetails** des Geräts.
 -  Standort: Ihr Unternehmen kann nie den Standort Ihres Geräts sehen, sofern Sie kein iOS-Gerät haben, das überwacht wird und verloren gegangen ist. [Wie kann ich das wissen?](https://go.microsoft.com/fwlink/?linkid=853816)
-- App-Bestand: Wenn Ihr Unternehmen Mobile Threat Defense verwendet, können weitere Informationen zu den Apps auf Ihrem Gerät eingesehen werden. Erfahren Sie mehr über [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+- App-Bestand: Wenn Ihr Unternehmen Mobile Threat Defense verwendet, können weitere Informationen zu den Apps auf Ihrem iOS-Gerät eingesehen werden. Erfahren Sie mehr über [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+- Netzwerkinformationen: Möglicherweise sind einige Informationen über Netzwerkverbindungen für Android-Geräte für Ihren Unternehmenssupport verfügbar. Wenn Ihr Unternehmen beispielsweise verlangt, dass Geräte in einem bestimmten Gebäude bleiben, würde Ihr Gerät das Netzwerk identifizieren, mit dem es verbunden ist. 

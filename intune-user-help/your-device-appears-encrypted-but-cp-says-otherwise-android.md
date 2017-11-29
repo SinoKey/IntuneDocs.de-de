@@ -1,11 +1,11 @@
 ---
-title: "Ihr Android-Gerät ist anscheinend verschlüsselt"
+title: "Ihr Android-Gerät ist offenbar verschlüsselt | Microsoft-Dokumentation"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: be68e330c2bd2800ea68fd83845b71e3b257e785
-ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
+ms.openlocfilehash: 04ce17615055d67f38e49158bec806de9f322bfd
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Es sieht so aus, als sei Ihr Gerät verschlüsselt, aber das Unternehmensportal sagt etwas anderes
 
@@ -40,7 +40,7 @@ Bei bestimmten Android-Geräten müssen Sie eine Start-PIN erstellen, um die Sic
 
 Falls Ihr Gerät Ihnen die Option gibt, auf Android 6.0+ downzugraden, machen Sie dies. Falls Sie versuchen, Ihr Gerät downzugraden, besteht die Gefahr, dass Daten verloren gehen. Wenden Sie sich andernfalls an die Supportabteilung Ihres Unternehmens, um dieses Problem zu beheben. Entsprechende Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
 
-### <a name="encrypt-the-entire-device"></a>Verschlüsseln des gesamten Geräts
+### <a name="encrypt-the-entire-device"></a>Verschlüsseln Sie das gesamte Gerät
 
 Bei einigen Geräten haben Sie die Wahl: Sie können entweder das gesamte Gerät verschlüsseln oder nur den tatsächlich belegten Speicherplatz. Wählen Sie die Option zum Verschlüsseln des gesamten Geräts und nicht die Option „only used space“ (nur belegter Speicherplatz). Wenn Sie bereits nur den belegten Speicherplatz verschlüsselt haben:
 
@@ -69,5 +69,7 @@ Wenn Sie eines der folgenden Geräte haben, tritt dieses Problem ggf. auf, sofer
 
 Bei folgenden Geräten kann dieses Problem nicht behoben werden. Möglicherweise müssen Sie ein anderes Gerät verwenden, um auf Unternehmensressourcen zugreifen zu können. 
 
-- [Huawei Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [OPPO-Geräte](http://www.oppo.com/en/smartphones)
+- [Vivo-Geräte](https://www.vivo.co.in)
 - [Xiaomi Mi-Smartphones](https://xiaomi-mi.com/mi-smartphones/)
