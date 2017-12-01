@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Einrichten des Zugriffs auf Unternehmensressourcen
 
@@ -48,7 +48,7 @@ Ihr Unternehmen besitzt umfangreiche proprietäre Informationen, von E-Mail bis 
 |![Aufforderung zur Azure AD-Kennworteingabe.](./media/ios-0b-cp-enroll-1711.png)|Geben Sie Ihr Kennwort ein, und tippen Sie dann auf **Anmelden**.|
 |![Begrüßungsbildschirm beim Laden von Unternehmensressourcen.](./media/ios-1-cp-enroll-1711.png)|Warten Sie, bis alles geladen wurde.|
 |![Geschäftsbedingungen.](./media/ios-2-cp-enroll-1711.png)|Lesen Sie die Nutzungsbedingungen, und klicken Sie auf **Alle akzeptieren**.|
-|![Bildschirm „Unternehmenszugriff einrichten“. Sowohl die Verwaltung als auch die Einstellungen weisen zurzeit einen Lösungsbedarf auf.](./media/ios-3-cp-enroll-1711.png)|Tippen Sie auf **Gerät in die Verwaltung einbinden**, um den Vorgang zum Aktivieren des Zugriffs auf Unternehmensressourcen mit Ihrem Gerät zu starten. Wenn dies jetzt nicht möglich ist, können Sie den Vorgang **verschieben**. Dies bedeutet jedoch, dass Sie keine E-Mail, Dokumente und andere Elemente erhalten können.|
+|![Bildschirm „Unternehmenszugriff einrichten“. Sowohl die Verwaltung als auch die Einstellungen weisen zurzeit einen Lösungsbedarf auf.](./media/ios-3-cp-enroll-1711.png)|Tippen Sie auf **Begin** (Beginnen), um den Vorgang zum Aktivieren des Zugriffs auf Unternehmensressourcen mit Ihrem Gerät zu starten. Wenn dies jetzt nicht möglich ist, können Sie den Vorgang **verschieben**. Dies bedeutet jedoch, dass Sie keine E-Mail, Dokumente und andere Elemente erhalten können.|
 |![Bildschirm zu den für das Unternehmen sichtbaren Informationen.](./media/ios-4-cp-enroll-1711.png)|**Weitere Informationen** zu den für Ihr Unternehmen sichtbaren Elementen erhalten Sie, indem Sie unten auf den Link tippen. Tippen Sie andernfalls auf **Weiter**.|
 |![Bildschirm „Wie geht es weiter?“](./media/ios-5-cp-enroll-1711.png)|Dieser Bildschirm führt Sie durch das Setup. Sie verbringen Zeit in Safari, in der App „Einstellungen“ und in der Unternehmensportal-App, um diesen Vorgang abzuschließen. Tippen Sie auf **Weiter**.|
 |![Bildschirm mit Ladevorgang nach dem Tippen auf „Weiter“ bei „Wie geht es weiter?“](./media/ios-6-cp-enroll-1711.png)||
@@ -66,7 +66,7 @@ Ihr Unternehmen besitzt umfangreiche proprietäre Informationen, von E-Mail bis 
 |![Bildschirm beim Laden von Unternehmensressourcen.](./media/ios-18-cp-enroll-1711.png)|Warten Sie, bis alles geladen wurde.|
 |![Wählen Sie die Gerätekategorie in der Unternehmensportal-App aus.](./media/ios-19-cp-enroll-1711.png)|Wählen Sie die beste Kategorie für Ihr Gerät. Dies hängt normalerweise damit zusammen, wer das Gerät besitzt oder wo es sich in der Regel befindet.|
 |![Ausgewählte Kategorie.](./media/ios-20-cp-enroll-1711.png)||
-|![Das Gerät wird erfolgreich verwaltet. Jetzt müssen Einstellungen aktualisiert werden.](./media/ios-21-cp-enroll-1711.png)|Sie haben die Verwaltung Ihres Geräts erfolgreich aktiviert. Wahrscheinlich gibt es noch einige Einstellungen, beispielsweise die Kennwortlänge, die von Ihrem Unternehmen aktualisiert werden müssen. Tippen Sie auf **Geräteeinstellungen aktualisieren**, um den Vorgang fortzusetzen.|
+|![Das Gerät wird erfolgreich verwaltet. Jetzt müssen Einstellungen aktualisiert werden.](./media/ios-21-cp-enroll-1711.png)|Sie haben die Verwaltung Ihres Geräts erfolgreich aktiviert. Wahrscheinlich gibt es noch einige Einstellungen, beispielsweise die Kennwortlänge, die von Ihrem Unternehmen aktualisiert werden müssen. Klicken Sie auf **Weiter**, um fortzufahren.|
 |![Geräteeinstellungen werden bestätigt.](./media/ios-22-cp-enroll-1711.png)|Das Unternehmensportal überprüft, ob Ihre Einstellungen aktualisiert werden müssen.|
 |![Einstellungsüberprüfung abgeschlossen, falsche Betriebssystemversion](./media/ios-23-cp-enroll-1711.png)|Das Unternehmensportal stellt Anweisungen zum Beheben von Problemen mit Ihren Einstellungen bereit. Wenn Sie die Probleme behoben haben, tippen Sie auf **Einstellungen überprüfen**.|
 |![Ladebildschirm zum Bestätigen der Geräteeinstellungen](./media/ios-24-cp-enroll-1711.png)|Ihr Gerät prüft, ob die Sicherheit Ihrer Einstellungen für den Zugriff auf Unternehmensressourcen ausreicht.|
