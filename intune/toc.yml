@@ -284,6 +284,8 @@
               href: app-notification-settings-ios.md
             - name: Freigegebene Geräte für iOS
               href: shared-device-settings-ios.md
+            - name: Konfigurieren von Intune für einmaliges Anmelden von iOS-Geräten
+              href: sso-ios.md
             - name: Webfiltereinstellungen für iOS
               href: web-content-filter-settings-ios.md
         - name: Konfigurieren von Geräteeinschränkungen
