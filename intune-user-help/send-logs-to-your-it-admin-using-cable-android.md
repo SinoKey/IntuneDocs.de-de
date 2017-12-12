@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f6df910d60498b0ed272ebeb86d54273e8c6dd1a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 6444c129869db467b582593677b20cd4de8f319d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Senden von Protokollen an den Support Ihres Unternehmens mithilfe eines USB-Kabels
 
-Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App auf Ihrem Android-Gerät verwenden, können Sie Informationen über den Fehler per E-Mail senden, um dem Support Ihres Unternehmens bei der Behandlung des Problems zu helfen. Die Informationen werden auf Ihrem Gerät in einem speziellen Dokument (einem so genannten _Diagnoseprotokoll_) gespeichert.
+Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App auf Ihrem Android-Gerät verwenden, können Sie Informationen zu diesem Fehler senden, um dem Support Ihres Unternehmens bei der Behandlung des Problems zu helfen. Die Informationen werden auf Ihrem Gerät in einem speziellen Dokument (einem so genannten _Diagnoseprotokoll_) gespeichert.
 
 > [!Note]
-> Bevor Sie beginnen, stellen Sie sicher, dass Sie die E-Mail-Adresse des Supports Ihres Unternehmens zur Hand haben. Sie wird auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com) oder in Ihrer Unternehmensportal-App aufgeführt.
+> Bevor Sie beginnen, stellen Sie sicher, dass Sie die E-Mail-Adresse des Supports Ihres Unternehmens zur Hand haben. Sie wird auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog) oder in Ihrer Unternehmensportal-App aufgeführt.
 
 1.  Tippen Sie auf dem Fehlerbildschirm auf **Info senden**. Wenn Sie in einer Meldung gefragt werden, über welche Methode Sie die Protokolle senden möchten, wählen Sie die Option aus, bei der die Dateien auf Ihrem Gerät gespeichert werden.
 
@@ -37,4 +37,4 @@ Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App au
 
 4.  Wählen Sie die Dateien aus, und fügen Sie sie an eine E-Mail-Nachricht an. Senden Sie diese E-Mail an den Support Ihres Unternehmens.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 059242b76ef1f14a5237c34e57ed626fc53f17be
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 372e25968005258fd1e00cbab7db542ad0211206
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekannte Probleme in Microsoft Intune
 
@@ -34,6 +34,10 @@ Wenn Sie einen Fehler melden möchten, der hier nicht aufgeführt ist, [öffnen 
 Wenn Sie sich ein neues Feature für Intune wünschen, können Sie auf unserer [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console)-Website einen Bericht erstellen.
 
 ## <a name="migration"></a>Migration
+
+### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Intune-Funktionen für Legacy-PC-Clients sind nur in der Silverlight-Konsole verfügbar
+
+Die Möglichkeit zum Verwalten von Windows 10 über die Registrierung bei Windows MDM steht in Intune über das Azure-Portal zur Verfügung. Weitere Informationen finden Sie unter [Intune in der Azure-Konsole und der Legacy-Intune-PC-Client](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure).
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Während der Migration von Intune erstellte Gruppen könnten die Funktionalität anderer Microsoft-Produkte beeinträchtigen.
 

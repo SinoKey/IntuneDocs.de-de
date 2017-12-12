@@ -14,11 +14,11 @@ ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: a44ef5ad6da605ed52526cd92c9c4c20dfb7b498
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 72f187bed4524e344cf19e68cadfc8a5fc739c56
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>Sie müssen das USB-Debugging deaktivieren.
 
@@ -28,4 +28,4 @@ Um das USB-Debugging zu deaktivieren, wechseln Sie zu **Einstellungen** > **Entw
 
 Nachdem Sie das **USB-Debugging** deaktiviert haben, dauert es einige Minuten, bis Sie Ihr Android-Gerät wieder verwenden und wie gewohnt auf Unternehmens- oder Schul- bzw. Unidaten zugreifen können.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
