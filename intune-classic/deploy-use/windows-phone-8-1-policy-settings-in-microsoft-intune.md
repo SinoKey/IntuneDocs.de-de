@@ -2,8 +2,8 @@
 title: "Einstellungen für Windows Phone 8.1-Richtlinien"
 description: "Intune bietet eine Auswahl von integrierten allgemeinen Einstellungen, die Sie auf Windows Phone 8.1-Geräten konfigurieren können. Darüber hinaus können Sie OMA-URI-Werte angeben, um benutzerdefinierte Einstellungen zu erstellen, die über Intune nicht verfügbar sind."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b496acfa2a596f016142b73b8fc99d1f763c35e0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 083ac6c4bbab6cdad9fd07ac68cdd7447f14fe5e
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Einstellungen für Windows Phone 8.1-Richtlinien in Microsoft Intune
 

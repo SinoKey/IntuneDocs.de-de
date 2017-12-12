@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3976327decf6b1850baed8e781609e458d375aa1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: f5c2536e4566baa2661b77f5574085410784a787
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Sperren Ihres Geräts remote über die Unternehmensportalwebsite
 
@@ -28,7 +28,7 @@ Unfälle passieren, und manchmal kann ein Gerät verloren gehen. Wenn Sie Ihr Ge
 
 [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-Um sicherzugehen, können Sie es mithilfe der Remotesperrfunktion auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) sperren. Die Remotesperre funktioniert für:
+Um sicherzugehen, können Sie es mithilfe der Remotesperrfunktion auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) sperren. Die Remotesperre funktioniert für:
 
 * Android
 * iOS
@@ -38,7 +38,7 @@ Um sicherzugehen, können Sie es mithilfe der Remotesperrfunktion auf der [Unter
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>So verwenden Sie die Remotesperre zum Sperren Ihres Geräts
 
-1.  Tippen Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
+1.  Tippen Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
 
   ![Eine Abbildung der Unternehmensportalwebsite mit erweitertem Seitenmenü links auf dem Bildschirm, mit den Schaltflächen „Startseite“, „Alle Apps“, „Meine Geräte“, „Helpdesk“ und „Abmelden“.](/media/iwp-expanded-sidebar.png)
 
@@ -65,4 +65,4 @@ Um sicherzugehen, können Sie es mithilfe der Remotesperrfunktion auf der [Unter
 
 Wenn Sie Ihr Gerät wiederfinden und die Remotesperre aufheben möchten, geben Sie einfach Ihre Kennung ein.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

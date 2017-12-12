@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c32dad761275e9a31937e5777d85939915882849
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 990d96ba5a332b98ccbc06bc0fbf38f0dd542b1f
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>So schützen Sie Ihr Windows-Gerät mit Verschlüsselung
 
@@ -35,4 +35,4 @@ Wenn Sie ein Desktopgerät besitzen, folgen Sie zum Verschlüsseln den folgenden
 
 2.  Wählen Sie **BitLocker aktivieren** aus, und folgen Sie den Anweisungen, um alle Ihre Laufwerke zu verschlüsseln.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Website des Unternehmensportals](https://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Website des Unternehmensportals](https://portal.manage.microsoft.com#HelpDeskDialog).
