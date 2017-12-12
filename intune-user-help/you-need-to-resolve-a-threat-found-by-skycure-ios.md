@@ -14,11 +14,11 @@ ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: a80ab4b22aa7ace1b6df53722c5fdfaf44134e0d
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: ef3b94251b324ed95d127cde5a58517747b3ea0b
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Beseitigen einer Bedrohung, die von Symantec Endpoint Protection Mobile erkannt wurde
 
@@ -34,7 +34,7 @@ Wenn ein Virus oder eine andere Sicherheitsbedrohung auf dem registrierten Gerä
 
 ![Skycure-Fehlermeldung mit Link zur Unternehmensportalwebsite](./media/mtd-go-to-device-management-portal-android.png)
 
-Tippen Sie auf den Link **Portal für die Geräteverwaltung**, um zur [Unternehmensportalwebsite](https://portal.manage.microsoft.com) zu gelangen, auf der Anweisungen zur Behebung des Problems angezeigt werden.
+Tippen Sie auf den Link **Portal für die Geräteverwaltung**, um zur [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) zu gelangen, auf der Anweisungen zur Behebung des Problems angezeigt werden.
 
 ## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Beispiel für eine App, die von Symantec Endpoint Protection Mobile als Bedrohung eingestuft wird
 
@@ -44,5 +44,5 @@ Tippen Sie auf den App-Namen oben auf Ihrem Bildschirm, und folgen Sie den Anwei
 
 Nach der Deinstallation der App erhalten Sie sofort wieder Zugriff auf Ihre E-Mails und anderen Firmen- oder Schuldaten. Wenn Sie die Aufforderung zur Deinstallation der App ignorieren, haben Sie solange keinen Zugriff auf Ihre Unternehmens-E-Mails und -daten, bis Sie die App deinstallieren.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
 

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4c114a8267fd38da173e8aafcd6089dcfb4472fd
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: 529a0ec7baf52eccf6382ecab114dac55de8a72a
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Senden von Protokollen an den Support Ihres Unternehmens über die Unternehmensportal-App für Windows 10
 
@@ -34,4 +34,4 @@ Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App au
 
 Sie müssen möglicherweise auch [Protokolle aus der App „Einstellungen“](send-logs-to-your-it-admin-settings-windows.md) senden, um dem Support Ihres Unternehmens weitere Hilfe beim Behandeln eventueller Probleme bereitzustellen.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

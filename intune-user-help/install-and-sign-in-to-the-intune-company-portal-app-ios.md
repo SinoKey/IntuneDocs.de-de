@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ac9b138edeb77eee3dc223eee8a35dc4cfd4e273
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: c71ac6ec64bb60bf4cdd06639e1c178c1b236e4c
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Installieren und Anmelden bei der Unternehmensportal-App
 
@@ -36,4 +36,4 @@ Das Unternehmensportal ist eine App, die Sie auf Ihrem iOS-Gerät installieren, 
 
     Wenn Sie sich zum ersten Mal bei der Unternehmensportal-App anmelden und Ihr Unternehmen oder Ihre Schule/Uni Intune verwendet, werden Sie aufgefordert, Ihr Gerät bei Intune zu registrieren. Führen Sie zum Registrieren die unter [Registrieren Ihres iOS-Geräts bei Intune](enroll-your-device-in-intune-ios.md) aufgeführten Schritte aus. Sie können sich auch [über ein anderes Gerät anmelden](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -14,11 +14,11 @@ ms.assetid: eb1884b2-d760-4a14-800b-378a33774a41
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 395afad276db8502896f6d903c8d97d1578ca5dd
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 5d151953ef2ccb5ae46c603be6073695f134f308
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-zimperium-zips-on-your-android-device"></a>Installieren von Zimperium zIPS auf Ihrem Android-Gerät
 
@@ -56,4 +56,4 @@ Wenn Sie Probleme mit der Installation haben, versuchen Sie es mit den Schritten
 
 Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihrer Kontrolle Fehler auf. Sollte dies passieren, können Sie versuchen, Zimperium zIPS [manuell aus dem Play Store zu installieren](https://play.google.com/store/apps/details?id=com.zimperium.zips).
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

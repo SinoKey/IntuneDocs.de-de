@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cdcad8e7265c72312663ce45056e1d42b7379699
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: a64a8c6f0f616b0e236cf063b396eae3106ca445
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>Die Betriebssystemversion Ihres Windows-Geräts wird noch nicht unterstützt.
 
 Aufgrund der rasanten technologischen Entwicklung kann Ihr Gerät denjenigen Geräten einen Schritt voraus sein, die der Support Ihres Unternehmens bereits testen konnte. Die Tatsache, dass Sie die neueste Version von Windows verwenden, kann dazu führen, dass einige der anderen Tools Ihres Unternehmens auf Ihrem Gerät nicht funktionieren. 
 
-Wenden Sie sich an den Support Ihres Unternehmens, um dieses Problem zu beheben. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Wenden Sie sich an den Support Ihres Unternehmens, um dieses Problem zu beheben. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

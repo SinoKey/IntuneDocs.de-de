@@ -14,11 +14,11 @@ ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 158bc0e18b427abcd73353cd41c3c57934eb45cb
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: e3177d6cd7684662d26e827aa8640abb0ed1317c
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>Sie müssen unbekannte Quellen deaktivieren.
 
@@ -28,4 +28,4 @@ Wenn Sie die Meldung „Installation von unbekannten Quellen muss deaktiviert se
 
 Nachdem Sie **Unbekannte Quellen** deaktiviert haben, kann es einige Minuten dauern, bis Sie Ihr Android-Gerät wieder verwenden können, um auf Unternehmens- oder Schuldaten zuzugreifen.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

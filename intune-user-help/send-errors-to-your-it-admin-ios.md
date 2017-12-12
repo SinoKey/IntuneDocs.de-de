@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: aff747c4888c0ad9a222735b8eadf40878cc294b
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 2aa8ee8803e3001abeb8da92fb61c93c81ffb135
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Senden von Fehlermeldungen an den Support Ihres Unternehmens bei Problemen mit Ihrem iOS-Gerät
 
@@ -32,4 +32,4 @@ Wenn Sie auf Ihrem iOS-Gerät eine Fehlermeldung erhalten, während Sie die Unte
 
 -   In der Unternehmensportal-App: Schütteln Sie Ihr Gerät, und tippen Sie auf **Diagnosebericht senden**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** > **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schüttelgeste** aktiviert ist.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fb082ad8830a5d8e9ab0514a981c9bb4b02592b0
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 989d6ee7a40a06c4df6a5837539a3fc4d9bb7f08
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Deaktivieren der Datensammlung durch Microsoft
 
-Microsoft sammelt automatisch bestimmte Daten zu Microsoft-Produkten und -Diensten. Dies dient dazu, die Zuverlässigkeit und Leistungsfähigkeit der Microsoft-Produkte, wie z.B. der Unternehmensportal-App, zu verbessern. Auch wenn diese Daten anonymisiert sind, sind einige Benutzer möglicherweise mit der Sammlung nicht einverstanden. Der Support Ihres Unternehmens hat keine Kontrolle über die Sammlung der Daten und kann Ihre Auswahl für diese Einstellung nicht ändern.
+Microsoft sammelt automatisch bestimmte Daten zu Microsoft-Produkten und -Diensten. Dies dient dazu, die Zuverlässigkeit und Leistungsfähigkeit der Microsoft-Produkte, wie z.B. der Unternehmensportal-App, zu verbessern. Auch wenn diese Daten anonymisiert sind, sind einige Benutzer möglicherweise mit der Sammlung nicht einverstanden. Die Supportabteilung Ihres Unternehmens hat keine Kontrolle über die Sammlung dieser Daten und kann Ihre Auswahl für die Einstellung nicht ändern.
 
 Wenn Sie die Sammlung von Nutzungsdaten auf Ihrem Windows-Gerät deaktivieren möchten, suchen Sie die Einstellung **Nutzungsdaten** in der Unternehmensportal-App.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

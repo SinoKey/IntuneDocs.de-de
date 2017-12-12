@@ -3,8 +3,8 @@ title: "Intune-E-Mail-Einstellungen für Android- und Android for Work-Geräte"
 titleSuffix: Azure portal
 description: "In diesem Artikel lernen Sie die Intune-Einstellungen kennen, die Sie zum Konfigurieren von E-Mail-Verbindungen auf Android-Geräten verwenden können."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 06/15/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 436db2f645a3f2e787cb27a8c110630a8fbb1f38
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 0c793721cad40ea0f1662ae72ed334b98226c96d
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>E-Mail-Profileinstellungen für Android-Geräte in Microsoft Intune
 
