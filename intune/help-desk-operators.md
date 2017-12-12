@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: f5678752830e2c4c9afbe75c9c6891d525eec34a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: dfe6e552917a006175e394b8c569b1000a002015
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Verwenden des Problembehandlungsportals, um Benutzern zu helfen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Das Portal zur Problembehandlung ermöglicht Helpdesk-Operatoren und Intune-Administratoren das Anzeigen von Benutzerinformationen zum Reagieren auf Hilfeanfragen von Benutzern. Organisationen, die über einen Helpdesk verfügen, können den **Helpdeskoperator** einer Gruppe von Benutzern zuweisen. Durch die Rolle des Helpdeskoperators kann das Blatt **Problembehandlung** verwendet werden.
+
+Auf dem Blatt **Problembehandlung** werden nun Probleme der Benutzer bei der Registrierung angezeigt. Die Details zum Problem und die vorgeschlagenen Abhilfemaßnahmen können Administratoren und Helpdeskmitarbeiter bei der Behandlung von Problemen unterstützen. Bestimmte Probleme bei der Registrierung werden nicht erfasst, und für einige Fehler liegen möglicherweise keine Wiederherstellungsvorschläge vor. 
 
 Weitere Informationen zum Hinzufügen der Rolle des Helpdeskoperators finden Sie unter [Role-based administration control (RBAC) with Intune (Rollenbasierte Zugriffssteuerung mit Intune)](/intune/role-based-access-control).
 
@@ -33,7 +35,7 @@ Wenn ein Benutzer den Support wegen eines technischen Problems mit Intune kontak
 - Benutzerstatus
 - Zuweisungen
 - Kompatibilitätsprobleme
-- Das Gerät reagiert nicht.
+- Gerät nicht gefunden
 - Das Gerät erhält keine VPN- oder WLAN-Einstellungen
 - App-Installationsfehler
 

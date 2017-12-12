@@ -14,11 +14,11 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 88d7ca7a73f32c90f589cd51b299350879914b69
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d6372efef833268dedf9e18e878fa66f1417a03d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>Ihr Kennwort entspricht nicht den Anforderungen des Supports Ihres Unternehmens
 
@@ -46,4 +46,4 @@ Beschreibungen der PIN- bzw. Kennwortprobleme:
 
 - **Das Kennwort ist nicht komplex genug, um Anforderungen zu erfüllen**. Der Support Ihres Unternehmens verlangt, dass Sie komplexere Zeichen in Ihrem Kennwort verwenden. Versuchen Sie es mit Zeichen wie Zahlen, Großbuchstaben und Symbolen wie $, % und #. Dies kann auch für andere Konten auf Ihrem Gerät gelten, überprüfen Sie also alle anderen Arbeitskonten, um sicherzustellen, dass Ihr Kennwort den Anforderungen entspricht, die von der IT für Ihr Gerät festgelegt wurden.
 
-Wenn Sie Probleme beim Festlegen eines Kennworts haben, das die Anforderungen erfüllt, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Wenn Sie Probleme beim Festlegen eines Kennworts haben, das die Anforderungen erfüllt, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

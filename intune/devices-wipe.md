@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
+ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Entfernen von Geräte mithilfe der Zurücksetzung auf Werkseinstellungen oder dem Entfernen von Unternehmensdaten
 
@@ -39,7 +39,21 @@ Die **Zurücksetzung auf Werkseinstellungen** stellt die Standardwerkseinstellun
 2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 3. Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Alle Geräte** aus.
 4. Wählen Sie den Namen des Geräts aus, das Sie auf Werkseinstellungen zurücksetzen möchten.
-5. Wählen Sie auf dem Blatt mit dem Namen des Geräts **Zurücksetzung auf Werkseinstellungen** und dann zur Bestätigung **Ja** aus.
+5. Wählen Sie auf dem Blatt mit dem Namen des Geräts **Zurücksetzung auf Werkseinstellungen**.
+6. Für die Windows 10-Version 1709 oder höher ist gibt es die zusätzliche Option „Registrierungszustand und Benutzerkonto beibehalten“. 
+    
+    |Bei Zurücksetzung auf Werkseinstellungen beibehalten|Nicht beibehalten|
+    | -------------|------------|
+    |Dem Gerät zugeordnete Benutzerkonten|Benutzerdateien|
+    |Status der virtuellen Maschine \(Domänenbeitritt, mit Azure Active Directory verknüpft)| Vom Benutzer installierte Apps \(Store- und Win32-Apps)|
+    |MDM-Registrierung|Geräteeinstellungen, die nicht dem Standard entsprechen|
+    |Über OEM installierte Apps \(Store- und Win32-Apps)||
+    |Benutzerprofil||
+    |Benutzerdaten außerhalb des Benutzerprofils||
+    |Automatische Anmeldung des Benutzers|| 
+    
+         
+7. Wählen Sie zum Bestätigen der Zurücksetzung auf die Werkseinstellungen **Ja** aus.
 
 Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minuten, bis ein Befehl zum Zurücksetzen auf Werkseinstellungen an alle Gerätetypen weitergegeben wurde.
 

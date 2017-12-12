@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 31b6545b0518e369b95b6e4830617988aa806112
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 7d8dc077c3da1c9bfe302b4808142f8b7a1a60cf
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Windows 10-Gerät bei Intune registrieren?
 
@@ -38,7 +38,7 @@ Die Registrierungsschritte finden Sie unter [Registrieren Ihres Windows 10 Mobil
 
 Wenn Sie einen Computer hinzufügen:
 
--   Auf Ihrem Computer wird Software installiert, mit deren Hilfe der Support Ihres Unternehmens den Computer verwalten kann und mit der Sie Unternehmensressourcen wie Apps und Supportinformationen abrufen können. Der Support Ihres Unternehmens aktualisiert diese Software möglicherweise automatisch.
+-   Auf Ihrem Computer wird Software installiert, mit deren Hilfe die Supportabteilung Ihres Unternehmens den Computer verwalten kann und mit der Sie Unternehmensressourcen wie Apps und Supportinformationen abrufen können. Die Supportabteilung Ihres Unternehmens kann diese Software möglicherweise automatisch aktualisieren.
 
 -   Intune Endpoint Protection wird möglicherweise auf Ihrem Computer installiert. Diese Software überprüft den Computer auf Viren und Malware.
 
@@ -46,10 +46,10 @@ Wenn Sie einen Computer hinzufügen:
 
 -   Sie müssen unter Umständen Nutzungsbedingungen akzeptieren.
 
--   Der Support Ihres Unternehmens kann Daten von der Festplatte Ihres Computers sammeln oder löschen. Er kann auch die gesamte Festplatte löschen.
+-   Die Supportabteilung Ihres Unternehmens kann Daten von der Festplatte Ihres Computers sammeln oder löschen. Er kann auch die gesamte Festplatte löschen.
 
 -   Er kann Apps und Updates auf Ihrem Computer installieren.
 
 -   Darüber hinaus kann der Support Ihres Unternehmens Richtlinien auf dem Computer erzwingen. Beispielsweise könnte von Ihnen angefordert werden, ein Kennwort oder eine PIN auf dem Computer festzulegen. Der Support Ihres Unternehmens kann möglicherweise auch einschränken, wie oft Sie ein falsches Kennwort eingeben können und den Computer für Sie sperren oder alle Daten von der Festplatte Ihres Computers löschen, wenn Sie das Kennwort zu oft falsch eingeben.
 
-Wenn Sie Fragen haben, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Wenn Sie Fragen haben, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

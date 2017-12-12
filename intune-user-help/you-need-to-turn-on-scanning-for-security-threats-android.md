@@ -14,11 +14,11 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 61a9d7006a19888e0a43762b59300fcc62c1313c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 2eaa2da79f8ce85cef8c258dd17828f6639bba71
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>Sie müssen bei Ihrem Gerät die Überprüfung auf Sicherheitsbedrohungen aktivieren.
 
@@ -26,4 +26,4 @@ Sie können auf Ihr Android-Gerät Apps herunterladen und installieren, die eine
 
 Unter **Einstellungen** > **Google** > **Sicherheit** können Sie die Einstellung **Gerät auf Sicherheitsbedrohungen überprüfen** aktivieren.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

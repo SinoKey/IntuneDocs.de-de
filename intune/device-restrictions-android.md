@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 094fc13705c1b746a4b753c02127478f10754f46
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 97e125d768ca7b0cf58a2892d78675dfa42ef7ce
+ms.sourcegitcommit: fa0f0402dfd25ec56a0df08c23708c7e2ad41120
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Standardgeräteeinschränkungen für Android- und Samsung KNOX in Microsoft Intune
 
@@ -42,7 +42,7 @@ Verwenden Sie diese Einstellungen mit einer Einschränkungsrichtlinie für Andro
 - **Bildschirmaufnahme (nur Samsung KNOX):** Erlaubt dem Benutzer, den Bildschirminhalt als Bild zu erfassen.
 - **Sprach-Assistent (nur Samsung KNOX):** Erlaubt die Verwendung von Sprach-Assistent-Software auf dem Gerät.
 - **YouTube (nur Samsung KNOX):** Erlaubt die Verwendung der YouTube-App auf dem Gerät.
-- **Freigegebene Geräte:** Konfigurieren Sie ein verwaltetes Samsung KNOX-Standardgerät als freigegeben. In diesem Modus können sich Endbenutzer des Geräts mit ihren Azure AD-Anmeldeinformationen an- und abmelden. Das Gerät wird weiterhin verwaltet, ganz gleich, ob es verwendet oder nicht.<br>Wenn sich Endbenutzer anmelden, verfügen Sie über Zugriff auf Apps und erhalten zusätzlich alle Richtlinien, die ihnen zugewiesen sind. Wenn sich Benutzer abmelden, werden alle App-Daten gelöscht.
+- **Freigegebene Geräte (nur Samsung KNOX):** Konfigurieren Sie ein verwaltetes Samsung KNOX-Standardgerät als freigegeben. In diesem Modus können sich Endbenutzer des Geräts mit ihren Azure AD-Anmeldeinformationen an- und abmelden. Das Gerät wird weiterhin verwaltet, ganz gleich, ob es verwendet oder nicht.<br>In Verbindung mit einem SCEP-Zertifikatsprofil ermöglicht diese Funktion Endbenutzern die gemeinsame Nutzung eines Geräts mit denselben Apps für alle Benutzer, jedoch mit eigenem SCEP-Benutzerzertifikat.  Wenn sich Benutzer abmelden, werden alle App-Daten gelöscht.  Dieses Feature ist ausschließlich auf branchenspezifische Apps beschränkt.
 
 ## <a name="password"></a>Kennwort
 

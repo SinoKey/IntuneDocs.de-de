@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
-ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
+ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Einrichten des Zugriffs auf Unternehmensressourcen
 
@@ -36,7 +36,7 @@ Ihr Unternehmen besitzt umfangreiche proprietäre Informationen, von E-Mail bis 
 - Stellen Sie sicher, dass Sie den gesamten Prozess durchführen, nachdem Sie ihn gestartet haben. Wird der Prozess für mehr als einige Minuten unterbrochen, wird er normalerweise beendet, und Sie müssen noch einmal von vorn beginnen.
 - Wenn bei diesem Vorgang ein Fehler auftritt, müssen Sie zur Unternehmensportal-App zurückkehren, um einen neuen Versuch zu starten.
 - Stellen Sie sicher, dass Ihr WLAN in Betrieb ist und dass Safari auf Ihrem Gerät funktioniert.
-- Laden Sie die Intune-Unternehmensportal-App herunter, und befolgen Sie dann die Anleitung unter [Installieren und Anmelden bei der Unternehmensportal-App](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
+- Laden Sie die [Intune-Unternehmensportal-App](install-and-sign-in-to-the-intune-company-portal-app-ios.md) herunter, und installieren Sie sie.
 
 
 ## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>Verwenden der Unternehmensportal-App für das Einrichten des Zugriffs auf Unternehmensressourcen

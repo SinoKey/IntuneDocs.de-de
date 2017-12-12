@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,19 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a2c16483efe2779260275fdadc3182b578da8a2a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 31eb47cbd17b52cc2d338ef5faf461173f7acb96
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="enroll-your-windows-device-in-intune"></a>Registrieren Ihres Windows-Geräts bei Intune
 
 Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ihr Windows-Gerät registrieren, um Zugriff auf Unternehmens-E-Mails, Dateien und weitere Ressourcen zu erhalten. Wenn Sie Ihre Geräte registrieren, kann Ihre Organisation Unternehmensdaten schützen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) und unter [Was der Support Ihres Unternehmens auf Ihrem Gerät sehen bzw. nicht sehen kann](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+
+> [!NOTE]
+> Sie müssen über Microsoft Edge auf die Website des Unternehmensportals zugreifen, um Windows-Anwendungen anzeigen zu können. Andere Browser wie Google Chrome, Mozilla Firefox und Internet Explorer unterstützen diese Art der Filterung nicht.
+
 
 Verwenden Sie zum Registrieren den Link, der dem Gerät entspricht, das Sie verwenden:
 

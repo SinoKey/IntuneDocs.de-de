@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b37ffd23f8cf8764ba457b0803dfc308cf1c071
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrieren von Jamf Pro in Intune zu Konformitätszwecken
 
@@ -54,18 +54,18 @@ Eine Verbindung zwischen Intune und Jamf Pro können Sie folgendermaßen herstel
 
 ## <a name="create-a-new-application-in-azure-active-directory"></a>Erstellen einer neuen Anwendung in Azure Active Directory
 
-1. Öffnen Sie **Azure Active Directory** > **App-Registrierung**.
+1. Öffnen Sie **Azure Active Directory** > **App-Registrierungen**.
 2. Klicken Sie auf **+Registrierung einer neuen Anwendung**.
 3. Geben Sie einen **Anzeigenamen** ein, z.B. **Bedingter Zugriff in Jamf**.
 4. Wählen Sie **Web-App/API**.
-5. Geben Sie die **Anmelde-URL** für Jamf Pro ein.
+5. Geben Sie die **Anmelde-URL** in Form Ihrer Jamf Pro-Instanz-URL an.
 6. Klicken Sie auf **Anwendung erstellen**.
-7. Speichern Sie die neu erstellte **Anwendungs-ID**, und öffnen Sie dann **Alle Einstellungen** > **Schlüssel**, um einen neuen Anwendungsschlüssel zu erstellen. Speichern Sie den Anwendungsschlüssel.
+7. Speichern Sie die neu erstellte **Anwendungs-ID**. Öffnen Sie dann **Einstellungen**, und navigieren Sie zu **API-Zugriff** > **Schlüssel**, um einen neuen Anwendungsschlüssel zu erstellen. Geben Sie eine **Beschreibung** und eine **Ablaufzeit** ein, und speichern Sie dann den Anwendungsschlüssel. 
 
-  > [!NOTE]
+  > [!IMPORTANT]
   > Der Anwendungsschlüssel wird während dieses Vorgangs nur einmal angezeigt. Achten Sie darauf, dass Sie ihn an einer Stelle speichern, an der Sie ihn problemlos abrufen können.
 
-8. Navigieren Sie zu **Alle Einstellungen** > **API-Zugriff** > **Erforderliche Berechtigungen**, und löschen Sie alle Berechtigungen.
+8. Öffnen Sie **Einstellungen**, und navigieren Sie dann zu **API-Zugriff** > **Erforderliche Berechtigungen**, und löschen Sie alle Berechtigungen.
 
   > [!NOTE]
   > Fügen Sie eine neue erforderliche Berechtigung hinzu. Die Anwendung kann nur ordnungsgemäß funktionieren, wenn sie die einzelne erforderliche Berechtigung aufweist.
@@ -79,16 +79,20 @@ Eine Verbindung zwischen Intune und Jamf Pro können Sie folgendermaßen herstel
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Ermöglichen einer Integration von Intune in Jamf Pro
 
-1. Öffnen Sie im Microsoft Azure-Portal **Microsoft Intune** > **Gerätekompatibilität** > **Konformitätsconnector für Jamf**.
+1. Öffnen Sie im Microsoft Azure-Portal **Microsoft Intune** > **Gerätekonformität** > **Partner > Geräteverwaltung**.
 2. Aktivieren Sie den Konformitätsconnector für Jamf durch Einfügen der Anwendungs-ID in das Feld **Azure Active Directory-App-ID für Jamf**.
 3. Klicken Sie auf **Speichern**.
 
-## <a name="configure-conditional-access-in-jamf-pro"></a>Konfigurieren des bedingten Zugriffs in Jamf Pro
+## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Konfigurieren der Microsoft Intune-Integration in Jamf Pro
 
-1. Navigieren Sie in Jamf Pro zu **Global Management** > **Conditional Access** (Globale Verwaltung > Bedingter Zugriff). Klicken Sie auf der Registerkarte **Microsoft** auf die Schaltfläche **Edit** (Bearbeiten).
-2. Aktivieren Sie das Kontrollkästchen **Enable Conditional Access with Microsoft** (Bedingten Zugriff mit Microsoft aktivieren).
+1. Navigieren Sie in Jamf Pro zu **Global Management** > **Conditional Access** (Globale Verwaltung > Bedingter Zugriff). Klicken Sie auf der Registerkarte **Integration von Intune** auf die Schaltfläche **Bearbeiten**.
+2. Aktivieren Sie das Kontrollkästchen **Integration von Microsoft Intune aktivieren**.
 3. Geben Sie die erforderlichen Informationen zu Ihrem Azure-Mandanten ein, einschließlich **Location** (Standort) und **Domain name** (Domänenname) sowie die Angaben zu **Application ID** (Anwendungs-ID) und **Application Key** (Anwendungsschlüssel), die Sie in den vorherigen Schritten gespeichert haben.
 4. Klicken Sie auf **Speichern**. Jamf Pro testet Ihre Einstellungen und überprüft den Erfolg des Vorgangs.
+
+## <a name="set-up-compliance-policies-and-register-devices"></a>Einrichten von Konformitätsrichtlinien und Registrieren von Geräten
+
+Nachdem Sie die Konfiguration der Integration zwischen Intune und Jamf abgeschlossen haben, müssen Sie [Konformitätsrichtlinien zu von Jamf verwalteten Geräten ](conditional-access-assign-jamf.md) zuordnen.
 
 ## <a name="information-shared-from-jamf-pro-to-intune"></a>Von Jamf Pro für Intune freigegebene Informationen
 

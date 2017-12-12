@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1f0d518edc26c382d6df71b95b84328eb375baf6
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: e9e511cef22fdfc8e2975bd14f7b969067317a44
+ms.sourcegitcommit: 2ad0d88d3ef5b81563c6a54eaf52f09e126abeaf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Konfigurieren von Zertifikaten in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Wenn Sie Benutzern den Zugriff auf Unternehmensressourcen über VPN, WLAN oder E-Mail-Profile gestatten, können Sie diese Verbindungen mit Zertifikaten authentifizieren. Die Eingabe von Benutzernamen und Kennwörtern zum Authentifizieren von Verbindungen wird damit überflüssig.
+Wenn Sie Benutzern den Zugriff auf Unternehmensressourcen über VPN, WLAN oder E-Mail-Profile gestatten, können Sie diese Verbindungen mit Zertifikaten authentifizieren. Wenn Sie Zertifikate verwenden, ist die Eingabe von Benutzernamen und Kennwörtern zum Authentifizieren von Verbindungen überflüssig.
 
 Mit Intune können Sie diese Zertifikate Geräten zuweisen, die Sie verwalten. Intune unterstützt das Zuweisen und Verwalten dieser Zertifikattypen:
 
@@ -45,27 +45,30 @@ Jeder dieser Zertifikattypen hat eigene Voraussetzungen und Infrastrukturanforde
     - Windows 8.1 und höher
     - Windows Phone 8.1 und höher
     - Windows 10 und höher
-3. Erstellen Sie Zertifikatprofile, damit Geräte ein Zertifikat für die Authentifizierung des VPN-, WLAN- und E-Mail-Zugriffs anfordern. Sie können ein **PKCS**- oder **SCEP**-Zertifikatprofil für Geräte auf diesen Plattformen erstellen und zuweisen:
-    - iOS 8.0 und höher
-    - Android 4,0 und höher
-    - Android for Work
-    - Windows 10 (Desktop und Mobile) und höher
+3. Erstellen Sie Zertifikatprofile, damit Geräte ein Zertifikat für die Authentifizierung des VPN-, WLAN- und E-Mail-Zugriffs anfordern.
 
-    Ein SCEP-Zertifikatprofil können Sie nur bei folgenden Plattformen anwenden:
+   Sie können ein **PKCS**- oder **SCEP**-Zertifikatprofil für Geräte auf diesen Plattformen erstellen und zuweisen:
 
--   macOS 10.9 und höher
--   Windows Phone 8.1 und höher
+   - iOS 8.0 und höher
+   - Android 4,0 und höher
+   - Android for Work
+   - Windows 10 (Desktop und Mobile) und höher
+
+   Für Geräte, die diese Plattformen ausführen, können Sie nur ein **SCEP**-Zertifikatprofil verwenden:
+
+   - macOS 10.9 und höher
+   - Windows Phone 8.1 und höher
 
 Sie müssen für jede Geräteplattform ein eigenes Profil erstellen. Nachdem Sie das Profil erstellt haben, ordnen Sie es dem bereits erstellten vertrauenswürdigen Stammzertifikatprofil zu.
 
 ### <a name="further-considerations"></a>Weitere Überlegungen
 
 - Wenn Sie über keine Unternehmenszertifizierungsstelle verfügen, müssen Sie eine erstellen.
-- Wenn Sie sich basierend auf Ihren Geräteplattformen entschließen, das SCEP-Profil (Simple Certificate Enrollment Protocol) zu verwenden, müssen Sie auch einen NDES-Server (Network Device Enrollment Service) konfigurieren.
+- Sie müssen auch einen NDES-Server (Network Device Enrollment Service, Registrierungsdienst für Netzwerkgeräte) konfigurieren, wenn Sie SCEP-Profile verwenden.
 - Unabhängig davon, ob Sie SCEP- oder PKCS-Profile verwenden möchten, müssen Sie den Microsoft Intune Certificate Connector herunterladen und konfigurieren.
 
 
-## <a name="step-1--configure-your-certificate-infrastructure"></a>Schritt 1: Konfigurieren der Zertifikatinfrastruktur
+## <a name="step-1-configure-your-certificate-infrastructure"></a>Schritt 1: Konfigurieren der Zertifikatinfrastruktur
 
 Unter den folgenden Themen finden Sie Hilfe zum Konfigurieren der Infrastruktur für jeden Zertifikatprofiltyp:
 
@@ -73,7 +76,7 @@ Unter den folgenden Themen finden Sie Hilfe zum Konfigurieren der Infrastruktur 
 - [Konfigurieren Ihrer Microsoft Intune-Zertifikatsinfrastruktur für PKCS](certficates-pfx-configure.md)
 
 
-## <a name="step-2---export-your-trusted-root-ca-certificate"></a>Schritt 2: Exportieren des vertrauenswürdigen Zertifikats der Stammzertifizierungsstelle
+## <a name="step-2-export-your-trusted-root-ca-certificate"></a>Schritt 2: Exportieren des vertrauenswürdigen Zertifikats der Stammzertifizierungsstelle
 
 Exportieren Sie das Zertifikat vertrauenswürdigen Stammzertifizierungsstelle als **CER**-Datei aus der ausstellenden Zertifizierungsstelle oder von einem beliebigen Gerät, das die ausstellende Zertifizierungsstelle als vertrauenswürdig erachtet. Exportieren Sie auf keinen Fall den privaten Schlüssel.
 
