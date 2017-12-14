@@ -1,5 +1,5 @@
 ---
-title: "Festlegen von Registrierungsbeschränkungen in Intune"
+title: "Festlegen von Registrierungseinschränkungen in Intune"
 titlesuffix: Azure portal
 description: "Schränken Sie die Registrierung plattformbezogen ein, und legen Sie in Intune einen Grenzwert für die Geräteregistrierung fest. \""
 keywords: 
@@ -15,20 +15,23 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 376236634ba9579e6496fa252c6a3638197fbcb9
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: bdb89d3426bd2dd040b184c8f7c23397bbed576b
+ms.sourcegitcommit: a99a5104400708b47ecee80075264d541b82874f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/09/2017
 ---
-# <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungsbeschränkungen
+# <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Als Intune-Administrator können Sie Registrierungsbeschränkungen erstellen und verwalten, die die Anzahl und Typen von Geräten festlegen, die sich für die Verwaltung mit Intune registrieren können. Sie können mehrere Beschränkungen definieren und diese verschiedenen Benutzergruppen zuordnen. Für Ihre verschiedenen Beschränkungen können Sie eine [Prioritätsreihenfolge](#change-enrollment-restriction-priority) festlegen.
 
 >[!NOTE]
->Registrierungsbeschränkungen stellen keine Sicherheitsfunktionen dar. Gefährdete Geräte können falsche Angaben zu ihren Eigenschaften enthalten. Diese Beschränkungen sind eine bestmögliche Barriere für nicht böswillige Benutzer. 
+>Registrierungseinschränkungen stellen keine Sicherheitsfunktionen dar. Gefährdete Geräte können falsche Angaben zu ihren Eigenschaften enthalten. Diese Einschränkungen sind eine bestmögliche Barriere für nicht böswillige Benutzer.
+
+>[!NOTE]
+>Die unten aufgeführten Einschränkungen von Gruppen zugewiesenen Registrierungen und Prioritätsfunktionen werden derzeit für den gesamten Intune-Kundenstamm bereitgestellt. Bis zur vollständigen Durchführung der Bereitstellung kann es sein, dass Sie noch keinen Zugriff auf Gruppen- und Prioritätsfeatures haben. 
 
 Sie können u.a. die folgenden spezifischen Registrierungsbeschränkungen festlegen:
 
@@ -88,7 +91,7 @@ Sie können die Einstellungen für eine Gerätetypbeschränkung ändern, indem S
 >- Standardmäßig ändern sich die Android for Work-Geräteeinstellungen gegenüber Ihren Android-Geräteeinstellungen nicht. Dies ändert sich allerdings, nachdem Sie ihre Android for Work-Einstellungen geändert haben.
 >- Wenn Sie die private Android for Work-Registrierung blockieren, können sich nur unternehmenseigene Android-Geräte als Android for Work-Geräte registrieren.
 
-## <a name="set-device-limit-restrictions"></a>Festlegen von Beschränkungen zum Gerätelimit
+## <a name="set-device-limit-restrictions"></a>Festlegen von Einschränkungen zum Gerätelimit
 
 Sie können die Einstellungen für eine Gerätelimitbeschränkung ändern, indem Sie diese Schritte ausführen:
 

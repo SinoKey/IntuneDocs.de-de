@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/30/2017
+ms.date: 12/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 06cc4d70b30ec92946baefbc020aa4cda28b0c88
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: fd9a9444d5a91a44672d9e0a60fb6da961883986
+ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Erzwingen von Konformität auf mit Jamf Pro verwalteten Macs
 
@@ -42,12 +42,9 @@ ms.lasthandoff: 12/01/2017
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>Bereitstellen der Unternehmensportal-App für macOS in Jamf Pro
 
-Es gibt zwei Möglichkeiten, die Unternehmensportal-App für macOS in Jamf Pro bereitzustellen:
+Sie müssen die Unternehmensportal-App für macOS in Jamf Pro als Hintergrundinstallation bereitstellen, nachdem die folgende Prozedur abgeschlossen wurde:
 
-- Stellen Sie die Bereitstellung der Unternehmensportal-App in Jamf Self Service zur Verfügung, oder
-- Als Hintergrundinstallation, damit Benutzer die folgende Vorgehensweise befolgen:
-
-1. Laden Sie auf einem macOS-Gerät die aktuelle Version der [Unternehmensportal-App für macOS](https://go.microsoft.com/fwlink/?linkid=862280) herunter.
+1. Laden Sie auf einem macOS-Gerät die aktuelle Version der [Unternehmensportal-App für macOS](https://go.microsoft.com/fwlink/?linkid=862280) herunter. Installieren Sie die App nicht. Sie benötigen eine Kopie der App, um diese auf Jamf Pro hochladen zu können.
 2. Öffnen Sie Jamf Pro, und navigieren Sie zu **Computer management** > **Packages** (Computerverwaltung > Pakete).
 3. Erstellen Sie ein neues Paket mit der Unternehmensportal-App für macOS, und klicken Sie auf **Save** (Speichern).
 4. Öffnen Sie **Computer** > **Policies** (Richtlinien), und wählen Sie dann **New** (Neu).
@@ -71,7 +68,7 @@ Endbenutzer müssen die Unternehmensportal-App über den Jamf Self-Dienst starte
 > Die Unternehmensportal-App muss im Jamf Self Service gestartet werden, um die Geräteregistrierung einzuleiten. <br><br>Wenn Sie die Unternehmensportal-App manuell starten (z.B. aus den Ordnern „Anwendungen“ oder „Downloads“), wird das Gerät nicht registriert. Wenn ein Endbenutzer die Unternehmensportal-App manuell startet, wird die Warnung „AccountNotOnboarded“ angezeigt.
 
 1. Navigieren Sie in Jamf Pro zu **Computer** > **Policies** (Richtlinien), und erstellen Sie eine neue Richtlinie für die Geräteregistrierung.
-2. Konfigurieren Sie die Nutzlast **Microsoft Intune Integration** (Integration von Microsoft Intune), einschließlich Trigger und Ausführungshäufigkeit. Legen Sie die Priorität auf **After** (Nach) fest.
+2. Konfigurieren Sie die Nutzlast **Microsoft Intune Integration** (Integration von Microsoft Intune), einschließlich Trigger und Ausführungshäufigkeit.
 3. Klicken Sie auf die Registerkarte **Scope** (Bereich), und beschränken Sie die Richtlinie auf alle Zielgeräte.
 4. Klicken Sie auf die Registerkarte **Self Service**, um die Richtlinie in Jamf Self Service verfügbar zu machen. Nehmen Sie die Richtlinie in die Kategorie **Device Compliance** (Gerätekonformität) auf. Klicken Sie auf **Speichern**.
 
