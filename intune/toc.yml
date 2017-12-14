@@ -552,6 +552,8 @@
   items:
     - name: Unterstützung von Benutzern beim Beheben von Problemen
       href: help-desk-operators.md
+    - name: Überwachungsprotokolle für Intune-Aktivitäten
+      href: monitor-audit-logs.md
     - name: Verwenden des Data Warehouse von Intune
       href: reports-nav-create-intune-reports.md
       items:
