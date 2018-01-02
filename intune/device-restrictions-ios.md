@@ -3,8 +3,8 @@ title: "Einstellungen für Geräteeinschränkungen für iOS in Intune"
 titleSuffix: Azure portal
 description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf iOS-Geräten kennen."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: b871726c887916662986008010e0728811f2ba98
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für iOS-Geräte in Microsoft Intune
 
@@ -41,7 +41,7 @@ Dies gilt auch für Einstellungen, auf die über die iOS-Einstellungs-App zugegr
 - **Änderung von Benachrichtigungseinstellungen (nur überwacht):** Erlauben Sie dem Benutzer, die Benachrichtigungseinstellungen des Geräts zu ändern.
 - **Änderung des Hintergrundbilds (nur überwacht):** Erlauben Sie dem Benutzer, das Hintergrundbild auf dem Gerät zu ändern.
 - **Änderung der Vertrauenseinstellungen für die Unternehmens-App (nur überwacht):** Ermöglicht es dem Benutzer zu entscheiden, ob Apps, die nicht aus dem App Store heruntergeladen wurden, vertraut werden soll.
-- **Konfigurationsprofiländerungen:** Erlauben Sie dem Benutzer die Installation von Konfigurationsprofilen.
+- **Konfigurationsprofiländerungen (nur überwacht):** Erlauben Sie dem Benutzer die Installation von Konfigurationsprofilen.
 - **Aktivierungssperre (nur überwacht):** Aktivieren Sie die Aktivierungssperre auf überwachten iOS-Geräten.
 
 ## <a name="configurations-requiring-supervision"></a>Konfigurationen, die Überwachung erfordern

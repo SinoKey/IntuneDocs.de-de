@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/07/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 599da7c664c139eac472c8d9ec2e418c01eeaeb4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Verwenden verwalteter Geräte zum Erledigen von Aufgaben
 Microsoft Intune ist eine Softwarekomponente, mit der Betriebe Geräte (z.B. Smartphones, Tablets und PCs), Apps und andere Unternehmensressourcen (z.B. E-Mail-Dienste) verwalten können. Damit erhalten Mitarbeiter Zugriff auf ihre Arbeitsdaten von praktisch überall auf nahezu jedem Gerät, während die Unternehmensdaten gleichzeitig geschützt werden.
@@ -34,7 +34,7 @@ Der Support Ihres Unternehmens kann Informationen sehen, die für Ihre Arbeit wi
 Sie gelangen auf zwei Arten zum Unternehmensportal:
 
 - Durch Installieren der Unternehmensportal-App auf Ihrem Gerät. In der Regel erhalten Sie die Unternehmensportal-App, indem Sie sie aus dem App Store Ihres Geräts herunterladen. Allerdings kann auch die Supportabteilung Ihres Unternehmens die Unternehmensportal-App für Sie auf Ihrem Gerät installieren.
-- Besuchen Sie die [Unternehmensportal-Website](https://portal.manage.microsoft.com) der Supportabteilung Ihres Unternehmens.
+- Besuchen Sie die [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog) der Supportabteilung Ihres Unternehmens.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Was ist der Unterschied zwischen der App und der Website?
 Es gibt wenige kleinere Unterschiede zwischen der Unternehmensportal-App und der Unternehmensportal-Website, aber die meisten Aufgaben können Sie sowohl in der App als auch auf der Website genauso ausführen. Aufgaben, die Sie erledigen können, sind die folgenden:
@@ -60,8 +60,9 @@ Wenn Sie dem Unternehmensportal einen Computer oder ein Gerät hinzufügen, wird
 Wenn Sie erfahren möchten, was die Supportabteilung Ihres Unternehmens auf Ihrem Gerät sehen kann und was nicht, klicken Sie den entsprechenden Link für Ihr Gerät:
 
 - [Installieren der Unternehmensportal-App für Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [Installieren der Unternehmensportal-App für iOS und macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [Installieren der Unternehmensportal-App für Windows](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [Installieren der Unternehmensportal-App für iOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Installieren der Unternehmensportal-App für macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+- [Installieren der Unternehmensportal-App für Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Welche Art von Computern und Geräten können Sie dem Unternehmensportal hinzufügen?
 -   Apple-Geräte unter iOS (z.B. iPhone oder iPad) sowie macOs (z.B: MacBook und iMac)
@@ -78,7 +79,8 @@ Sie können Computer und Geräte aus dem Unternehmensportal entfernen oder zurü
 Wenn Sie einen Computer oder ein Gerät aus dem Unternehmensportal *entfernen*, heben Sie die Registrierung Ihres Geräts bei Intune auf. Nach dem Aufheben der Registrierung können Sie von diesem Gerät aus nicht mehr auf das Unternehmensportal zugreifen, und möglicherweise werden einige Unternehmensdaten vom Gerät entfernt. Eine Anleitung zum Entfernen Ihres Geräts aus dem Unternehmensportals finden Sie, wenn Sie einen der folgenden Links auswählen:
 
 - [Aufheben der Registrierung Ihres Android-Geräts](unenroll-your-device-from-intune-android.md)
-- [Aufheben der Registrierung Ihres iOS oder macOS-Geräts](unenroll-your-device-from-intune-ios.md)
+- [Aufheben der Registrierung Ihres iOS-Geräts](unenroll-your-device-from-intune-ios.md)
+- [Aufheben der Registrierung Ihres macOS-Geräts](unenroll-your-device-from-intune-macos.md)
 - [Aufheben der Registrierung Ihres Windows-Geräts](unenroll-your-device-from-intune-windows.md)
 
 Wenn Sie einen Computer oder ein Gerät *zurücksetzen*, wird vom Unternehmensportal versucht, den Computer bzw. das Gerät auf die werkseitigen Standardeinstellungen zurückzusetzen. Beim Zurücksetzen werden alle Unternehmensdaten und auch alle persönlichen Daten vom Gerät gelöscht. Wenn Sie Ihr Gerät verloren haben, können Sie es remote über die Unternehmensportal-Website zurücksetzen.
@@ -95,6 +97,7 @@ Zunächst empfiehlt Microsoft, dass Sie versuchen, Ihr Problem selbst zu lösen.
 
 - [Behandeln häufig auftretender Probleme mit Ihrem Android-Gerät](troubleshoot-your-device-android.md)
 - [Behandeln häufig auftretender Probleme mit Ihrem iOS-Gerät](troubleshoot-your-device-ios.md)
+- [Behandeln häufig auftretender Probleme mit dem macOS-Gerät](troubleshoot-your-device-macos.md)
 - [Behandeln häufig auftretender Probleme mit Ihrem Windows-Gerät](troubleshoot-your-device-windows.md)
 
-Wenn Sie Hilfe brauchen, können Sie auch unten einen Kommentar verfassen; bitte haben Sie jedoch Verständnis dafür, dass jeder Betrieb unterschiedliche Anforderungen hat, und wir deshalb möglicherweise nicht immer alle Fragen beantworten können. Wenn Sie sich an die Supportabteilung Ihres Unternehmens wenden, erhalten Sie wahrscheinlich die schnellste und passendste Rückmeldung. Die entsprechenden Kontaktinformationen sollten Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) finden.
+Wenn Sie Hilfe brauchen, können Sie auch unten einen Kommentar verfassen; bitte haben Sie jedoch Verständnis dafür, dass jeder Betrieb unterschiedliche Anforderungen hat, und wir deshalb möglicherweise nicht immer alle Fragen beantworten können. Wenn Sie sich an die Supportabteilung Ihres Unternehmens wenden, erhalten Sie wahrscheinlich die schnellste und passendste Rückmeldung. Die entsprechenden Kontaktinformationen sollten Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) finden.

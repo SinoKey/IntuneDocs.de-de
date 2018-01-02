@@ -1,11 +1,11 @@
 ---
-title: "Ein etwas anderes Gerät | Microsoft-Dokumentation"
+title: Potenzielle Fehler bei der Nutzung des Self-Service Jamf | Microsoft-Dokumentation
 description: "Erfahren Sie mehr über Ihr Intune-fähiges macOS-Gerät, das von Jamf verwaltet wird."
 keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/13/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 14db11738b1ef34a9180515e5f909ff1960bfbb0
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 080bc7c287dcc068ac18a3aec60295e777840368
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>Ausführen von Aktionen auf einem macOS-Gerät, das von Jamf verwaltet wird
 
@@ -28,4 +28,8 @@ Ihr Unternehmen verwendet eine Kombination aus verschiedenen Tools, um sicherzus
 
 Wenn Sie an einem macOS-Gerät arbeiten, das Kompatibilitätsprobleme aufweist und von Jamf verwaltet wird, klicken Sie auf die Schaltfläche **Lösen**, um den **Self-Service** zu starten.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie die Supportabteilung Ihres Unternehmens. Sie finden entsprechende Kontaktinformationen auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com).
+__Maßnahmen bei Anzeige der Meldungen „AccountNotOnboarded“ oder „Das Gerät ist bereits registriert.“__
+
+Wenn Sie die Unternehmensportal-App geöffnet haben und die Meldung „AccountNotOnboarded“ angezeigt wird, müssen Sie die Unternehmensportal-App beenden und zu **Anwendungen** > **Self-Service** navigieren. Ihr Unternehmen verfügt über eine Geräteregistrierungsrichtlinie, die Sie installieren müssen. Klicken Sie zum Installieren auf die Richtlinie, und öffnen Sie das Unternehmensportal dann erneut.
+
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie die Supportabteilung Ihres Unternehmens. Sie finden entsprechende Kontaktinformationen auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
