@@ -15,11 +15,11 @@ ms.assetid: 6d0e0c4b-a562-44f3-82a4-80eb688d4733
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3adc3c01d4657accfdb5cd70970ff191d06a9aef
-ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
+ms.openlocfilehash: 85eb19a07ce42dcaf61ce34637644761880cb0b9
+ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="automate-actions-for-noncompliance"></a>Automatisieren von Aktionen bei Inkompatibilität
 
@@ -27,7 +27,7 @@ Mithilfe der **Aktionen bei Inkompatibilität** können Sie eine zeitlich strukt
 
 Es gibt zwei Arten von Aktionen:
 
--   **Benachrichtigen der Benutzer per E-Mail**: Sie können Ihre E-Mail-Benachrichtigung anpassen, bevor Sie diese an Benutzer senden. Mithilfe von Intune können Sie Betreff, Nachrichtentext (einschließlich Unternehmenslogo), Kontaktinformationen und weitere Empfänger anpassen.
+-   **Benachrichtigen der Benutzer per E-Mail**: Sie können Ihre E-Mail-Benachrichtigung anpassen, bevor Sie diese an Benutzer senden. Mithilfe von Intune können Sie Betreff, Nachrichtentext (einschließlich Unternehmenslogo) und Kontaktinformationen anpassen.
 
 -   **Markieren des Geräts als nicht kompatibel**: Sie können einen Zeitplan mit der Anzahl von Tagen festlegen, nach der ein Gerät als „nicht kompatibel“ markiert werden soll. Dieser Zeitraum kann sofort beginnen oder erst nach einer gewissen Toleranzperiode, um dem Benutzer Gelegenheit zu geben, Ihre Gerätekompatibilitätsrichtlinien zu erfüllen.
 

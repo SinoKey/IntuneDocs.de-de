@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 02/07/2016
+ms.date: 12/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,20 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9aeb3525016bf820dc23402659c2c953143385c9
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 206aef4185934448418d7b080ab94af94e792e74
+ms.sourcegitcommit: ad97d658682bf563638521856931e2709e40e14b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Zurücksetzen nur von Unternehmensdaten in einer in Intune verwalteten App
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Wenn ein Gerät verloren geht oder gestohlen wird oder wenn der Mitarbeiter das Unternehmen verlässt, müssen Sie sicherstellen, dass Unternehmensdaten in Apps vom Gerät entfernt werden. Allerdings sollten Sie persönliche Daten nicht vom Gerät entfernen, insbesondere dann nicht, wenn das Gerät dem Mitarbeiter gehört.
+
+>[!NOTE]
+> Für das Zurücksetzen von Unternehmensdaten von mit Intune verwalteten Apps werden derzeit die iOS- und Android-Plattform unterstützt.
 
 Um Unternehmensdaten aus Apps selektiv zu entfernen, erstellen Sie mithilfe der Schritte in diesem Thema eine Zurücksetzungsanforderung. Nach Abschluss der Anforderung werden die Unternehmensdaten beim nächsten Ausführen der Anwendung aus der App entfernt.
 
@@ -36,11 +39,11 @@ Um Unternehmensdaten aus Apps selektiv zu entfernen, erstellen Sie mithilfe der 
 
 1.  Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-2.  Wählen Sie **Weitere Dienste** aus, geben Sie in das Filtertextfeld **Intune** ein, und wählen Sie **Intune** aus. Das Intune-Blatt wird geöffnet. Wählen Sie das Blatt **Apps verwalten** aus.
+2.  Wählen Sie **Weitere Dienste** aus, geben Sie in das Filtertextfeld **Intune** ein, und wählen Sie **Intune** aus. Das Intune-Blatt wird geöffnet. Wählen Sie das Blatt **Mobile Apps** aus.
 
-    ![Screenshot des Blatts „Neue Zurücksetzungsanforderung“](./media/intune-azure-preview-blade.png)
+    ![Screenshot des Blatts „Microsoft Intune“](./media/apps-selective-wipe01.png)
 
-3.  Wählen Sie dem Blatt **Mobile Apps** die Option **Neue Zurücksetzungsanforderung** aus. Dadurch wird das Blatt **Neue Zurücksetzungsanforderung** geöffnet.
+3.  Wählen Sie auf dem Blatt **Mobile Apps** die Option **Selektive App-Zurücksetzung** aus.
 
 4.  Wählen Sie **Neue Zurücksetzungsanforderung** aus. Dadurch wird das Blatt **Neue Zurücksetzungsanforderung** geöffnet.
 
@@ -48,9 +51,9 @@ Um Unternehmensdaten aus Apps selektiv zu entfernen, erstellen Sie mithilfe der 
 
 5.  Wählen Sie **Benutzer** aus, um das Blatt **Benutzer** zu öffnen, und den Benutzer auszuwählen, dessen App-Daten gelöscht werden sollen.
 
-6.  Wählen Sie **Gerät** aus. Damit öffnen Sie das Blatt **Gerät**, auf dem alle Geräte aufgeführt werden, die dem ausgewählten Benutzer zugeordnet sind. Es enthält außerdem zwei Spalten – eine mit dem Gerätenamen, einem vom Benutzer festgelegten Anzeigenamen, und eine mit dem Gerätetyp und der Geräteplattform. Wählen Sie das Gerät aus, das zurückgesetzt werden soll.
+6.  Wählen Sie als Nächstes **Gerät** auf dem Blatt **Neue Zurücksetzungsanforderung** aus. Damit öffnen Sie das Blatt **Gerät auswählen**, auf dem alle Geräte aufgeführt werden, die dem ausgewählten Benutzer zugeordnet sind. Es enthält außerdem zwei Spalten – eine mit dem Gerätenamen, einem vom Benutzer festgelegten Anzeigenamen, und eine mit dem Gerätetyp und der Geräteplattform. Wählen Sie das Gerät aus, das zurückgesetzt werden soll.
 
-7.  Sie befinden sich nun wieder auf dem Blatt **Neue Zurücksetzungsanforderung**. Wählen Sie **OK** aus, um eine Zurücksetzungsanforderung zu erstellen. 
+7.  Sie befinden sich nun wieder auf dem Blatt **Neue Zurücksetzungsanforderung**. Wählen Sie **OK** aus, um eine Zurücksetzungsanforderung zu erstellen.
 
 Der Dienst erstellt für jede geschützte App auf dem Gerät und den zugeordneten Benutzer eine separate Zurücksetzungsanforderung und überwacht diese.
 
@@ -60,7 +63,7 @@ Sie erhalten einen zusammengefassten Bericht, der den Gesamtstatus der Zurückse
 
 1.  Auf dem Blatt **Mobile Apps – Selektive App-Zurücksetzung** wird eine Liste mit Ihren Anforderungen, gruppiert nach Benutzer, angezeigt. Da das System für jede geschützte App, die auf dem Gerät ausgeführt wird, eine Zurücksetzungsanforderung erstellt, werden möglicherweise für einen Benutzer mehrere Anforderungen angezeigt. Der Status gibt an, ob eine Zurücksetzungsaufforderung noch **aussteht**oder **fehlgeschlagen**ist, bzw. **erfolgreich**ausgeführt wurde.
 
-    ![Screenshot des Blatts „Neue Zurücksetzungsanforderung“](./media/wipe-request-status-1.png)
+    ![Screenshot des Zurücksetzungsanforderungsstatus auf dem Blatt „Selektive App-Zurücksetzung“](./media/wipe-request-status-1.png)
 
 Darüber hinaus können Sie den Gerätenamen und den Gerätetyp anzeigen. Diese Informationen sind beim Lesen von Berichten hilfreich.
 
@@ -71,11 +74,11 @@ Darüber hinaus können Sie den Gerätenamen und den Gerätetyp anzeigen. Diese 
 
 Zurücksetzungen mit Status „Ausstehend“ werden angezeigt, bis Sie sie manuell löschen.  So löschen Sie manuell eine Zurücksetzungsanforderung
 
-1.  Wählen Sie auf dem Blatt **Zurücksetzungsanforderung** die Kachel **Zurücksetzungsanforderung** aus, um das Blatt **Zurücksetzungsanforderung** zu öffnen.
+1.  Führen Sie auf dem Blatt **Mobile Apps – Selektive App-Zurücksetzung** folgende Schritte durch.
 
-2.  Klicken Sie mit der rechten Maustaste auf die Zurücksetzungsanforderung, die Sie löschen möchten, und wählen Sie dann **Zurücksetzungsanforderung abbrechen** aus.
+2.  Klicken Sie mit der rechten Maustaste auf die Zurücksetzungsanforderung, die Sie löschen möchten, und wählen Sie dann **Zurücksetzungsanforderung löschen** aus.
 
-    ![Screenshot des Blatts „Neue Zurücksetzungsanforderung“](./media/delete-wipe-request.png)
+    ![Screenshot der Zurücksetzungsanforderungsliste auf dem Blatt „Selektive App-Zurücksetzung“](./media/delete-wipe-request.png)
 
 3.  Sie werden aufgefordert, den Löschvorgang zu bestätigen. Wählen Sie **Ja** oder **Nein** aus, und klicken Sie dann auf **OK**.
 
