@@ -2,8 +2,8 @@
 title: Verwaltung mobiler Apps (MAM) | Microsoft-Dokumentation
 description: "Referenzthema für die Kategorie „Verwaltung mobiler Anwendungen“ der Entitätsauflistungen in der Intune Data Warehouse-API."
 keywords: Intune Data Warehouse
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 32b5f3515c0b77ea8f411c1c1f42e7b44669ca23
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 4951ec43b2abdb52af091b2d1366bd23a9c2ab5b
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Verweis für MAM-Entitäten (Verwaltung mobiler Apps)
 
@@ -63,7 +63,7 @@ Die Entität **MamApplicationInstance** führt verwaltete MAM-Apps (Mobile Appli
 | SdkVersion |Die Version des MAM SDKs, mit der diese MAM-App umschlossen wurde |3.2 |
 | DeviceId |Geräte-ID des Geräts, auf dem diese MAM-App installiert wurde |b66bc706-ffff-7437-0340-032819502773 |
 | DeviceName |Gerätename des Geräts, auf dem diese MAM-App installiert wurde |„MyDevice“ |
-| IsDeleted |Gibt an, ob dieser Datensatz der MAM-App-Instanz aktualisiert wurde <br>Wahr: Diese MAM-App-Instanz verfügt über einen neuen Datensatz mit aktualisierten Feldern in dieser Tabelle. <br>Falsch: der neueste Datensatz für diese MAM-App-Instanz. |Wahr/falsch |
+| isDeleted |Gibt an, ob dieser Datensatz der MAM-App-Instanz aktualisiert wurde <br>Wahr: Diese MAM-App-Instanz verfügt über einen neuen Datensatz mit aktualisierten Feldern in dieser Tabelle. <br>Falsch: der neueste Datensatz für diese MAM-App-Instanz. |Wahr/falsch |
 | StartDateInclusiveUtc |Datum und Uhrzeit in UTC, als diese MAM-App-Instanz im Data Warehouse erstellt wurde |23.11.2016 12:00:00 Uhr |
 | DeletedDateUtc |Datum und Uhrzeit in UTC, als IsDeleted in TRUE geändert wurde |23.11.2016 12:00:00 Uhr |
 | RowLastModifiedDateTimeUtc |Datum und Uhrzeit in UTC, als diese MAM-App-Instanz im Data Warehouse zuletzt geändert wurde |23.11.2016 12:00:00 Uhr |
@@ -84,7 +84,7 @@ Die Entität **MamCheckin** stellt Daten dar, die gesammelt wurden, als eine MAM
 | DeviceHealthKey |Schlüssel von DeviceHealth, der diesem Eincheckvorgang der MAM-App zugeordnet wird |02.01.1900 12:00:00 |
 | PlatformKey |Stellt die Plattform des Geräts dar, die diesem Eincheckvorgang der MAM-App zugeordnet wird |01.01.1900 12:00:00 |
 | EffectiveAppliedPolicyKey |Stellt die effektiv angewendete Richtlinie dar, die mit der MAM-App in Verbindung gebracht wird, die eingecheckt wurde. Eine effektiv angewendete Richtlinie stammt vom Zusammenfügen aller Richtlinien, die für eine bestimmte App und einen Benutzer relevant sind. |02.5.1900 12:00:00 |
-| LastCheckInDate |Datum und Uhrzeit, wann diese MAM-App zuletzt eingecheckt wurde. Der Wert kann NULL sein. |23.11.2016 12:00:00 |
+| LastCheckInDate |Datum und Uhrzeit, wann diese MAM-App zuletzt eingecheckt wurde. Der Wert kann NULL sein. |23.11.2016 12:00:00 Uhr |
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
 
@@ -105,7 +105,7 @@ Die Entität **MamEffectivePolicy** führt alle effektiven MAM-Richtlinien auf, 
 |---------|------------|--------|
 | EffectivePolicyKey |Eindeutiger Bezeichner für die effektive MAM-Richtlinie im Data Warehouse |2 |
 | RealPolicyKey |Eindeutiger Bezeichner der MAM-Richtlinie, die vom IT-Profi erstellt wurde. |1 |
-| RowCreatedDateTimeUtc |Datum und Uhrzeit in UTC, als diese effektive MAM-Richtlinie im Data Warehouse erstellt wurde. |23.11.2016 12:00:00 |
+| RowCreatedDateTimeUtc |Datum und Uhrzeit in UTC, als diese effektive MAM-Richtlinie im Data Warehouse erstellt wurde. |23.11.2016 12:00:00 Uhr |
 
 ## <a name="mamglobalapplication"></a>MamGlobalApplication
 
@@ -116,7 +116,7 @@ Die Entität **MamGlobalApplication** führt Store-Apps auf, die über die Verwa
 | ApplicationKey |Eindeutiger Bezeichner für die Store-App im Data Warehouse – auch als Ersatzschlüssel bekannt. |123 |
 | ApplicationId |Eindeutiger Bezeichner der Store-App. Der Bezeichner ähnelt ApplicationKey, ist jedoch ein natürlicher Schlüssel. |com.microsoft.skydrive.<ios> |
 | ApplicationName |Name der globalen MAM-Anwendung |Skydrive |
-| RowLastModifiedDateTimeUtc |Datum und Uhrzeit in UTC, als diese bestimmte globale MAM-Anwendung im Data Warehouse zuletzt geändert wurde. |23.11.2016 12:00:00 |
+| RowLastModifiedDateTimeUtc |Datum und Uhrzeit in UTC, als diese bestimmte globale MAM-Anwendung im Data Warehouse zuletzt geändert wurde. |23.11.2016 12:00:00 Uhr |
 
 ## <a name="mamplatform"></a>MamPlatform
 

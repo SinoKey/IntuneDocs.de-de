@@ -1,5 +1,5 @@
 ---
-title: "Was geschieht, wenn Sie Ihr Android-Gerät zurücksetzen? | Microsoft Docs"
+title: "Was geschieht, wenn Sie Ihr Android-Gerät zurücksetzen? | Microsoft-Dokumentation"
 description: 
 keywords: 
 author: barlanmsft
@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 476f1cfa59f562a8c0953236184693e1c5674ee3
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 4095ffc0da85501ec4649940d886b4d9a4719c7a
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>Was geschieht, wenn Sie Ihr Android-Gerät mit dem Unternehmensportal zurücksetzen?
 
 Wenn Sie das Unternehmensportal zum Zurücksetzen Ihres Android-Geräts verwenden, werden alle Apps, Einstellungen und privaten Daten auf Ihrem Gerät gelöscht. Dieses Zurücksetzen setzt Ihr Gerät auf die Werkseinstellungen zurück.
 
-Wenn Sie über ein Samsung KNOX-Gerät verfügen, können Sie ein „selektives Zurücksetzen“ durchführen, indem Sie im Unternehmensportal die Option **Gerät entfernen** auswählen. Selektives Zurücksetzen entfernt nur:
+Wenn Sie über ein Samsung Knox-Gerät verfügen, können Sie ein „selektives Zurücksetzen“ durchführen, indem Sie im Unternehmensportal die Option **Gerät entfernen** auswählen. Selektives Zurücksetzen entfernt nur:
 
 - Geschäftsanwendungen, die der Support Ihres Unternehmens Ihnen zur Verfügung stellt
 - E-Mail-, VPN- und WLAN

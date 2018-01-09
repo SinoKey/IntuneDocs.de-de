@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 12/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1b4152cfe5442b01f0d81c724dfa5eccb02ae29
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5bb34d9f180240e2ea03d43f42dc9ea8aee7adcd
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Konfigurieren von VPN-Einstellungen in Microsoft Intune
 
@@ -33,20 +33,20 @@ Nehmen Sie z. B. an, Sie möchten allen iOS-Geräten die Einstellungen zur Verf
 
 Sie können VPN-Profile mit den folgenden Verbindungstypen erstellen:
 
-|Verbindungstyp|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Verbindungstyp|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|Ja|Ja|Ja|Ja|Ja|Ja|
-|Cisco (IPsec)|Nein|Ja|Nein|Nein|Nein|Nein|
-|Citrix|Ja|Ja|Nein|Nein|Nein|Ja|
-|F5 Edge Client|Ja|Ja|Ja|Ja|Ja|Ja|
-|Dell SonicWALL Mobile Connect|Ja|Ja|Ja|Ja|Ja|Ja|
-|Check Point Capsule VPN|Ja|Ja|Ja|Ja|Ja|Ja|
-|Cisco AnyConnect|Ja|Ja|Ja|Nein|Nein|Nein|
-|Automatisch|Nein|Nein|Nein|Nein|Nein|Ja|
-|IKEv2|Nein|Nein|Nein|Nein|Nein|Ja|
-|L2TP|Nein|Nein|Nein|Nein|Nein|Ja|
-|PPTP|Nein|Nein|Nein|Nein|Nein|Ja|
-|Benutzerdefiniert|Nein|Ja|Ja|Nein|Nein|Nein|
+|Pulse Secure|Ja |Ja |Ja |Ja |Ja |Ja |
+|Cisco (IPsec)|Nein|Ja |Nein|Nein|Nein|Nein|
+|Citrix|Ja |Ja |Nein|Nein|Nein|Ja |
+|F5 Edge Client|Ja |Ja |Ja |Ja |Ja |Ja |
+|Dell SonicWALL Mobile Connect|Ja |Ja |Ja |Ja |Ja |Ja |
+|Check Point Capsule VPN|Ja |Ja |Ja |Ja |Ja |Ja |
+|Cisco AnyConnect|Ja |Ja |Ja |Nein|Nein|Nein|
+|Automatisch|Nein|Nein|Nein|Nein|Nein|Ja |
+|IKEv2|Nein|Nein|Nein|Nein|Nein|Ja |
+|L2TP|Nein|Nein|Nein|Nein|Nein|Ja |
+|PPTP|Nein|Nein|Nein|Nein|Nein|Ja |
+|Benutzerdefiniert|Nein|Ja |Ja |Nein|Nein|Nein|
 
 
 > [!IMPORTANT]
