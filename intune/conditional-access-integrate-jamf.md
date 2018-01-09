@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 8207c77688bcc6e14064322ab2447435c2377b09
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrieren von Jamf Pro in Intune zu Konformitätszwecken
 
@@ -28,18 +28,12 @@ ms.lasthandoff: 12/01/2017
 |Suchen Sie nach der Dokumentation zu Intune im klassischen Portal? [Klicken Sie hier](/intune/introduction-intune?toc=/intune-classic/toc.json).|
 | |
 
-|Zurzeit in privater Vorschau|
-|--|
-|Die in diesem Thema beschriebenen Features sind für Kunden derzeit nur in der privaten Vorschau verfügbar. Diese Meldung wird entfernt, wenn das Release für alle Kunden erfolgt ist.|
-| |
-
 Wenn Ihre Organisation [Jamf Pro](https://www.jamf.com) zur Verwaltung der Macs Ihrer Endbenutzer verwendet, können Sie Microsoft Intune-Konformitätsrichtlinien zusammen mit dem bedingten Zugriff in Azure Active Directory verwenden, um die Konformität von Geräten in Ihrer Organisation zu gewährleisten.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 Zur Konfiguration des bedingten Zugriffs mit Jamf Pro benötigen Sie Folgendes:
 
-- Zugriff auf die private Intune-Vorschau für den bedingten Zugriff unter macOS
 - Jamf Pro 10.1.0 oder höher
 - [Die Unternehmensportal-App für macOS](https://aka.ms/macoscompanyportal)
 - macOS-Geräte mit OS X 10.11 Yosemite oder höher
@@ -60,7 +54,7 @@ Eine Verbindung zwischen Intune und Jamf Pro können Sie folgendermaßen herstel
 4. Wählen Sie **Web-App/API**.
 5. Geben Sie die **Anmelde-URL** in Form Ihrer Jamf Pro-Instanz-URL an.
 6. Klicken Sie auf **Anwendung erstellen**.
-7. Speichern Sie die neu erstellte **Anwendungs-ID**. Öffnen Sie dann **Einstellungen**, und navigieren Sie zu **API-Zugriff** > **Schlüssel**, um einen neuen Anwendungsschlüssel zu erstellen. Geben Sie eine **Beschreibung** und eine **Ablaufzeit** ein, und speichern Sie dann den Anwendungsschlüssel. 
+7. Speichern Sie die neu erstellte **Anwendungs-ID**. Öffnen Sie dann **Einstellungen**, und navigieren Sie zu **API-Zugriff** > **Schlüssel**, um einen neuen Anwendungsschlüssel zu erstellen. Geben Sie eine **Beschreibung** und eine **Ablaufzeit** ein, und speichern Sie dann den Anwendungsschlüssel.
 
   > [!IMPORTANT]
   > Der Anwendungsschlüssel wird während dieses Vorgangs nur einmal angezeigt. Achten Sie darauf, dass Sie ihn an einer Stelle speichern, an der Sie ihn problemlos abrufen können.

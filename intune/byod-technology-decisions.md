@@ -2,8 +2,8 @@
 title: "Technologieentscheidungen für BYOD mit EMS"
 description: "Wichtige Technologieentscheidungen zum Ermöglichen von BYOD und Schutz von Unternehmensdaten mit Microsoft Enterprise Mobility + Security"
 keywords: 
-author: 
-ms.author: pfetty
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/8/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 
 ms.suite: ems
-ms.openlocfilehash: a0b5f170c10cff189a269b29ffc466bd2d51ed12
-ms.sourcegitcommit: a99a5104400708b47ecee80075264d541b82874f
+ms.openlocfilehash: 9f8fa87c3100a3e0444f6f44a9976c3b399ab334
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Technologieentscheidungen zur Ermöglichung von BYOD mit Microsoft Enterprise Mobility + Security (EMS)
 
@@ -64,7 +64,7 @@ Nach wie vor sind zahlreiche Organisationen oftmals mit besonderen Risiken konfr
 |Nicht autorisierter Datenzugriff | Erzwingen einer Geräteregistrierung | Erzwingen einer geschützten App |
 |Nicht autorisierter Datenzugriff | Erzwingen eines speziellen Speicherorts | Erzwingen eines speziellen Speicherorts |
 | | | |
-|Gefährdetes Benutzerkonto| MFA erforderlich | Erzwingen von MFA|
+|Gefährdetes Benutzerkonto| MFA erforderlich | MFA erforderlich|
 |Gefährdetes Benutzerkonto | Blockieren von Benutzern mit hohem Risiko | Blockieren von Benutzern mit hohem Risiko |
 |Gefährdetes Benutzerkonto | Geräte-PIN | App-PIN |
 | | | |

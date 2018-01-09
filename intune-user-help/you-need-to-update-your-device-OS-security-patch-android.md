@@ -14,17 +14,17 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b25e1c40473ac3c37c9122386611a1a23fb62cb
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 703150417e1bec5923f46259f53194b33223add5
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Sie müssen das Betriebssystem Ihres Android-Geräts aktualisieren.
 
 Wenn Ihnen in einer Meldung angezeigt wird, dass die niedrigste zulässige Android-Sicherheitspatchebene nicht konfiguriert ist, müssen Sie ein Update installieren, damit Ihr Gerät weiterhin sicher ist. Ein _Patch_ zur Softwarewartung wird veröffentlicht, um dafür zu sorgen, dass die Software reibungslos ausgeführt wird und auf dem neuesten Stand ist. Die Supportabteilung Ihres Unternehmens fordert Sie auf, dieses Patch zu installieren, um sicherzustellen, dass Unternehmensdaten auf Ihrem Gerät so gut wie möglich geschützt sind. Der Speicherort des Sicherheitspatches richtet sich nach dem Typ des Samsung-Geräts.
 
-Wenn Sie über ein Samsung-Gerät verfügen, öffnen Sie **Einstellungen** > **Geräteinformationen**, und überprüfen Sie, ob sich das Wort „KNOX“ irgendwo auf dem Bildschirm befindet. Wenn dies der Fall ist, befolgen Sie die nachstehenden Anweisungen für Samsung KNOX.
+Wenn Sie über ein Samsung-Gerät verfügen, öffnen Sie **Einstellungen** > **Geräteinformationen**, und überprüfen Sie, ob sich das Wort „Knox“ irgendwo auf dem Bildschirm befindet. Wenn dies der Fall ist, befolgen Sie die nachstehenden Anweisungen für Samsung KNOX.
 
 [!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
 
