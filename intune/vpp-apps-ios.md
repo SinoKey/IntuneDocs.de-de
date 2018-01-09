@@ -3,10 +3,10 @@ title: "Verwalten von über ein Volumenprogramm erworbenen iOS-Apps | Microsoft-
 titlesuffix: Azure portal
 description: "Erfahren Sie, wie Sie Apps, die Sie über ein Volumenprogramm im iOS Store erworben haben, in Intune synchronisieren und dann ihre Nutzung verwalten und nachverfolgen.\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: f820be41c532384f9f2db57e0e0e497a05307d73
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS-Apps, die über ein Volumenprogramm mit Microsoft Intune erworben wurden
 
@@ -38,9 +38,9 @@ Es gibt zwei Methoden, die Sie zum Zuweisen von per Volumenlizenz erworbenen App
 
 ### <a name="device-licensing"></a>Gerätelizenzierung
 
-Wenn Sie eine App einem Gerät zuweisen, wird eine App-Lizenz verwendet, und die Zuordnung dieser App zu diesem Gerät, zu dem Sie sie zugewiesen haben, bleibt erhalten. 
+Wenn Sie eine App einem Gerät zuweisen, wird eine App-Lizenz verwendet, und die Zuordnung dieser App zu diesem Gerät, zu dem Sie sie zugewiesen haben, bleibt erhalten.
 
-Wenn Sie per Volumenlizenz erworbene Apps einem Gerät zuweisen, muss der Endbenutzer des Geräts keine Apple-ID für den Zugriff auf den Store bereitstellen. 
+Wenn Sie per Volumenlizenz erworbene Apps einem Gerät zuweisen, muss der Endbenutzer des Geräts keine Apple-ID für den Zugriff auf den Store bereitstellen.
 
 ### <a name="user-licensing"></a>Benutzerlizenzierung
 
@@ -92,7 +92,8 @@ Achten Sie beim Einrichten eines Geräts für einen Intune-Benutzer darauf, dass
         > Wenn Sie das Land ändern, werden die Metadaten der App aktualisiert und die URL bei der nächsten Synchronisierung mit dem Apple-Dienst für Apps, die mit diesem Token erstellt wurden, gespeichert. Die App wird nicht aktualisiert, wenn sie in dem neuen regionalen Store nicht vorhanden ist.
 
     - **Typ des VPP-Kontos:** Wählen Sie **Unternehmen** oder **Bildungswesen** aus.
-    - **Automatische App-Updates**: Zur Aktivierung von automatischen Updates können Sie zwischen **On** und **Off** auswählen. Nach der Aktivierung aktualisiert Intunes alle Apps, die für das bestimmte Token erworben wurden, über den Intune-Service beim Geräte-Check-In. Es erkennt Updates für VPP-Apps im App Store und überträgt diese beim Geräte-Check-In automatisch mithilfe von Push auf das Gerät.
+    - **Automatische App-Updates**: Zur Aktivierung von automatischen Updates können Sie zwischen **On** und **Off** auswählen. Nach der Aktivierung aktualisiert Intunes alle Apps, die für das bestimmte Token erworben wurden, über den Intune-Service beim Geräte-Check-In.
+Es erkennt Updates für VPP-Apps im App Store und überträgt diese beim Geräte-Check-In automatisch mithilfe von Push auf das Gerät.
 4. Wählen Sie abschließend **Hochladen**.
 
 Das Token wird auf dem Blatt mit der Liste der Token angezeigt.
@@ -119,8 +120,8 @@ Der Benutzer erhält Aufforderungen zur VPP-App-Installation im Zusammenhang mit
 
 | # | Szenario                                | Einladen zum Apple VPP-Programm                              | Aufforderung zur App-Installation | Aufforderung für die Apple-ID |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD: lizenzierter Benutzer                             | „Y“ zugeordnet ist                                                                                               | J                                           | „Y“ zugeordnet ist                                 |
-| 2 | Corp: lizenzierter Benutzer (Gerät wird nicht überwacht)     | „Y“ zugeordnet ist                                                                                               | J                                           | „Y“ zugeordnet ist                                 |
+| 1 | BYOD: lizenzierter Benutzer                             | „Y“ zugeordnet ist                                                                                               | „Y“ zugeordnet ist                                           | „Y“ zugeordnet ist                                 |
+| 2 | Corp: lizenzierter Benutzer (Gerät wird nicht überwacht)     | „Y“ zugeordnet ist                                                                                               | „Y“ zugeordnet ist                                           | „Y“ zugeordnet ist                                 |
 | 3 | Corp: lizenzierter Benutzer (Gerät wird überwacht)         | „Y“ zugeordnet ist                                                                                               | N                                           | „Y“ zugeordnet ist                                 |
 | 4 | BYOD: lizenziertes Gerät                           | N                                                                                               | „Y“ zugeordnet ist                                           | N                                 |
 | 5 | Corp: lizenziertes Gerät (Gerät wird nicht überwacht)                           | N                                                                                               | „Y“ zugeordnet ist                                           | N                                 |
@@ -134,6 +135,8 @@ Der Benutzer erhält Aufforderungen zur VPP-App-Installation im Zusammenhang mit
 ## <a name="further-information"></a>Weitere Informationen
 
 Zum Freigeben einer Lizenz müssen Sie die Zuweisungsaktion in **Deinstallieren** ändern. Die Lizenz wird freigegeben, wenn die App deinstalliert wird. Wenn Sie eine App entfernen, die einem Benutzer zugewiesen wurde, versucht Intune, alle App-Lizenzen freizugeben, die diesem Benutzer zugeordnet wurden.
+
+<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses. Intune cannot revoke app licenses after a token has been deleted. 
 
 Wenn ein Benutzer mit einem geeigneten Gerät erstmals versucht, eine VPP-App auf einem Gerät zu installieren, wird er aufgefordert, am Volume Purchase Program (VPP) von Apple teilzunehmen. Die Teilnahme muss erfolgen, bevor die App-Installation fortgesetzt wird. Die Einladung, am Apple Volume Purchase Program teilzunehmen, erfordert, dass der Benutzer die iTunes-App auf dem iOS-Gerät verwenden kann. Wenn Sie eine Richtlinie aufgestellt haben, um die iTunes Store-App zu deaktivieren, funktioniert die benutzerbasierte Lizenzierung für VPP-Apps nicht. Die Lösung besteht darin, die iTunes-App durch Entfernen der Richtlinie zuzulassen oder die gerätebasierte Lizenzierung zu verwenden.
 
