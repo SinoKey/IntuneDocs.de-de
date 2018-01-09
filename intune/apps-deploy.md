@@ -3,8 +3,8 @@ title: Zuweisen von Apps zu Gruppen
 titlesuffix: Azure portal
 description: "Nachdem Sie eine App zu Intune hinzugefügt haben, sollten Sie sie Gruppen von Benutzern oder Geräten zuweisen.\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/24/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 51abb6daad11b9d6036396dcc5a5ce8f2a2c4ac4
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 7121cffaf1deb206aa88373a3aa77ce23bdf030e
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Zuweisen von Apps zu Gruppen mit Microsoft Intune
 
@@ -32,14 +32,14 @@ Apps können Geräten zugewiesen werden, und zwar unabhängig davon, ob sie von 
 ||||
 |-|-|-|-|
 |&nbsp;|Bei Intune registrierte Geräte|Nicht bei Intune registrierte Geräte|
-|Zuweisen zu Benutzern|Ja|Ja|
-|Zuweisen zu Geräten|Ja|Nein|
-|Zuweisen umschlossener Apps oder von Apps aus dem Intune SDK (für App-Schutzrichtlinien)|Ja|Ja|
-|Zuweisen von Apps als verfügbar|Ja|Ja|
-|Zuweisen von Apps als erforderlich|Ja|Nein|
-|Deinstallieren von Apps|Ja|Nein|
-|Endbenutzer installieren verfügbare Apps über die Unternehmensportal-App|Ja|Nein|
-|Endbenutzer installieren verfügbare Apps über das webbasierte Unternehmensportal|Ja|Ja|
+|Zuweisen zu Benutzern|Ja |Ja |
+|Zuweisen zu Geräten|Ja |Nein|
+|Zuweisen umschlossener Apps oder von Apps aus dem Intune SDK (für App-Schutzrichtlinien)|Ja |Ja |
+|Zuweisen von Apps als verfügbar|Ja |Ja |
+|Zuweisen von Apps als erforderlich|Ja |Nein|
+|Deinstallieren von Apps|Ja |Nein|
+|Endbenutzer installieren verfügbare Apps über die Unternehmensportal-App|Ja |Nein|
+|Endbenutzer installieren verfügbare Apps über das webbasierte Unternehmensportal|Ja |Ja |
 
 > [!NOTE]
 > Derzeit können Sie iOS- und Android-Apps (Branchen-Apps und Apps aus dem Store) Geräten zuweisen, die nicht bei Intune registriert sind.

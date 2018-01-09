@@ -2,8 +2,8 @@
 title: "Geräte – Intune Data Warehouse | Microsoft-Dokumentation"
 description: "Referenzthema für die Kategorie „Geräte“ der Entitätsauflistungen in der Intune Data Warehouse-API"
 keywords: Intune Data Warehouse
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b11994028a42b19aca3e78900886afbedc1ca1d5
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 24260c9e6a9929c74b47e5d83bf4d1be867b6b2e
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-devices-entities"></a>Referenz für Geräteentitäten
 
@@ -264,7 +264,7 @@ In der Entität **Devices** werden alle für die Verwaltung registrierten Gerät
 | Modell | Gerätemodell |
 | LastPolicyUpdateUtc | Der letzte Zeitpunkt, zu dem die Richtlinie auf dem Gerät aktualisiert wurde |
 | LastExchangeStatusUtc | Der letzte Zeitpunkt, an dem das Gerät mit Exchange synchronisiert wurde |
-| IsDeleted | Legen Sie diesen Wert auf TRUE fest, wenn das Gerät nicht mehr von Intune verwaltet wird. Dadurch wird der letzte bekannte Zustand beibehalten. |
+| isDeleted | Legen Sie diesen Wert auf TRUE fest, wenn das Gerät nicht mehr von Intune verwaltet wird. Dadurch wird der letzte bekannte Zustand beibehalten. |
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 

@@ -3,8 +3,8 @@ title: "Registrieren von Android-Geräten bei Intune | Microsoft-Dokumentation"
 titlesuffix: Azure portal
 description: "Erfahren Sie, wie Sie Android-Geräte in Intune registrieren."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 12/07/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c78c41b9883cac41b4506c1c02790008115e210
-ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
+ms.openlocfilehash: ad018bdfa55b030f5d714017ae09f616ae2bf164
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enroll-android-devices"></a>Registrieren von Android-Geräten
 
@@ -54,7 +54,7 @@ Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch 
 2. **Konfigurieren der Android for Work-Bindung**<br>
     Wählen Sie als Intune-Administrator im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
-   a. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung**  > **Android for Work-Registrierung** und dann **Konfigurieren** aus, um die Android for Work-Website von Google Play zu öffnen. Die Website wird auf einer neuen Registerkarte im Browser geöffnet.
+   ein. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung**  > **Android for Work-Registrierung** und dann **Konfigurieren** aus, um die Android for Work-Website von Google Play zu öffnen. Die Website wird auf einer neuen Registerkarte im Browser geöffnet.
    ![Screenshot: Link zum Konfigurieren der Android for Work-Bindung](./media/android-work-bind.png)
 
    b. **Anmelden bei Google**<br>
