@@ -642,7 +642,7 @@
               href: reports-ref-user-device.md
             - name: Verweis für die Benutzerentität
               href: reports-ref-user.md
-    - name: Querladen von Windows-Apps
+    - name: Intune Graph-API
       href: intune-graph-apis.md
       items:
         - name: Graph-APIs für die Intune-Referenz
