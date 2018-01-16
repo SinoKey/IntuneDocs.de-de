@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dadcd33f39827365fc3f22c46d4332f3ea3cbf09
-ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
+ms.openlocfilehash: 8a8bb4729314819b23d69f0ccf6f6c093f29801f
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>Synchronisieren von Geräten mit Intune, um die neuesten Richtlinien und Aktionen zu erhalten
 
@@ -53,15 +53,15 @@ Wenn ein Administrator die Geräteaktion **Sync** ausführt, sind iOS- und Andro
 | Fehlercode  | Vorgeschlagene Beschreibung                                                                                                                  | Wiederholbar |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | 2016330898 | Unbekannter Fehler aufgetreten.                                                                                                             | Nein        |
-| 2016330897 | Ihre Verbindung zu Intune wurde aufgrund einer Zeitüberschreitung abgebrochen. Setzen Sie Ihre Verbindung zurück.                                                                             | Ja       |
-| 2016330896 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja       |
-| 2016330895 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja       |
-| 2016330894 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja       |
-| 2016330893 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja       |
+| 2016330897 | Ihre Verbindung zu Intune wurde aufgrund einer Zeitüberschreitung abgebrochen. Setzen Sie Ihre Verbindung zurück.                                                                             | Ja        |
+| 2016330896 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja        |
+| 2016330895 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja        |
+| 2016330894 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja        |
+| 2016330893 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja        |
 | 2016330892 | Internationales Roaming ist deaktiviert.                                                                                                     | Nein        |
-| 2016330891 | Während eines Anrufs kann für dieses Gerät nicht auf die Mobilfunkverbindung zugegriffen werden. Warten Sie, bis der Anruf beendet wird. | Ja       |
+| 2016330891 | Während eines Anrufs kann für dieses Gerät nicht auf die Mobilfunkverbindung zugegriffen werden. Warten Sie, bis der Anruf beendet wird. | Ja        |
 | 2016330890 | Das Mobilfunknetz für dieses Gerät: Diese Geräte konnten zu diesem Zeitpunkt nicht verwendet werden.                                                   | Nein        |
-| 2016330889 | Fehler bei der sicheren Verbindung: Setzen Sie Ihre Verbindung zurück.                                                                                   | Ja       |
+| 2016330889 | Fehler bei der sicheren Verbindung: Setzen Sie Ihre Verbindung zurück.                                                                                   | Ja        |
 | 2016330888 | Fehler bei der Auswertung der Serververtrauensstellung                                                                                                | Nein        |
 
 ## <a name="next-steps"></a>Nächste Schritte

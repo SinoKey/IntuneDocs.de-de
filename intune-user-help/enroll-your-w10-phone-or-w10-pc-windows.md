@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/19/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7317a60a9640df0b95444a2b032c12b3ca9f20b
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 337b5407026c5415f8fbac1a0626181f9b042a06
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Registrieren Ihrer Windows 10-Geräte bei Intune
 
@@ -47,6 +47,6 @@ Möchten Sie mehr erfahren? Erfahren Sie, was geschieht, wenn Sie [Ihr Gerät be
 1.  Navigieren Sie unter __Start__ zur Liste __Alle Apps__, und wählen Sie anschließend die App __Einstellungen__ aus.        
 2.  Tippen Sie auf __System__, anschließend auf __About__ (Informationen).       
 3.  Unter __Geräteinformationen__, tippen Sie auf __Details__. Sie sehen eine Liste mit Informationen zu Ihrem Gerät. Suchen Sie in der Liste nach der __Version__.        
-4.  Wenn Ihre Version __1607__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-access-work-or-school.md) fort. Wenn Ihre Version __1511 oder älter__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-your-account.md) fort.
+4.  Wenn Ihre Version __1607 oder höher__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-access-work-or-school.md) fort. Wenn Ihre Version __1511 oder älter__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-your-account.md) fort.
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
