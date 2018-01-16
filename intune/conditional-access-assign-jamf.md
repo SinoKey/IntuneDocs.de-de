@@ -1,12 +1,12 @@
 ---
-title: "Anwenden von Konformitätsrichtlinien auf mit Jamf verwaltete Geräte"
+title: "Erzwingen von Konformitätsrichtlinien auf Jamf-verwalteten Geräten"
 titlesuffix: Azure portal
 description: "Verwenden Sie die Konformität zum Absichern von mit Jamf verwalteten Geräten."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/05/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,22 +15,17 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fd9a9444d5a91a44672d9e0a60fb6da961883986
-ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
+ms.openlocfilehash: c72de87b87775155672994163140e342b7ba99b4
+ms.sourcegitcommit: 000684953cbb3ceae0e2bcaa51186c9221f7aa86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Erzwingen von Konformität auf mit Jamf Pro verwalteten Macs
 
 |Gilt für: Intune im Azure-Portal |
 |--|
 |Suchen Sie nach der Dokumentation zu Intune im klassischen Portal? [Klicken Sie hier](/intune/introduction-intune?toc=/intune-classic/toc.json).|
-| |
-
-|Zurzeit in privater Vorschau|
-|--|
-|Die in diesem Thema beschriebenen Features sind für Kunden derzeit nur in der privaten Vorschau verfügbar. Diese Meldung wird entfernt, wenn das Release für alle Kunden erfolgt ist.|
 | |
 
 Über Azure Active Directory und die Microsoft Intune-Richtlinien für bedingten Zugriff können Sie sicherstellen, dass Ihre Endbenutzer den Anforderungen des Unternehmens entsprechen. Sie können diese Richtlinien auf Macs anwenden, die [mit Jamf Pro verwaltet](conditional-access-integrate-jamf.md) werden. Hierfür müssen Sie sowohl auf die Intune- als auch auf die Jamf Pro-Konsole zugreifen.
@@ -48,7 +43,7 @@ Sie müssen die Unternehmensportal-App für macOS in Jamf Pro als Hintergrundins
 2. Öffnen Sie Jamf Pro, und navigieren Sie zu **Computer management** > **Packages** (Computerverwaltung > Pakete).
 3. Erstellen Sie ein neues Paket mit der Unternehmensportal-App für macOS, und klicken Sie auf **Save** (Speichern).
 4. Öffnen Sie **Computer** > **Policies** (Richtlinien), und wählen Sie dann **New** (Neu).
-5. Verwenden Sie die Nutzlast **General** (Allgemein), um Einstellungen für die Richtlinie zu konfigurieren. Zu diesen Einstellungen müssen zählen: 
+5. Verwenden Sie die Nutzlast **General** (Allgemein), um Einstellungen für die Richtlinie zu konfigurieren. Zu diesen Einstellungen müssen zählen:
    - Trigger: Wählen Sie **Enrollment Complete** (Registrierung abgeschlossen) und **Recurring Check-in** (Wiederholtes Einchecken) aus.
    - Execution Frequency (Häufigkeit der Ausführung): Wählen Sie **Once per computer** (Einmal pro Computer) aus.
 6. Wählen Sie die Nutzlast **Packages** (Pakete), und klicken Sie auf **Configure** (Konfigurieren).

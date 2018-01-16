@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ec41724eacc4abca994b1dadff6e6d9df63c74d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Behandlung von Problemen bei der Geräteregistrierung bei Intune
 
@@ -37,6 +37,12 @@ Bevor Sie mit der Problembehandlung beginnen, stellen Sie sicher, dass Intune or
 -   [Einrichten der Windows-Geräteverwaltung](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -   [Einrichten der Android-Geräteverwaltung](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) – Keine weiteren Schritte erforderlich
 -   [Einrichten der Android for Work-Geräteverwaltung](/intune-classic/deploy-use/set-up-android-for-work)
+
+Sie können auch sicherstellen, dass Uhrzeit und Datum auf dem Gerät des Benutzers korrekt festgelegt werden:
+
+1. Starten Sie das Gerät neu.
+2. Stellen Sie sicher, dass Uhrzeit und Datum auf die Zeitzone des Endbenutzers relativ zur GMT-Zeit (+ oder - 12 Stunden) eingestellt sind.
+3. Deinstallieren Sie das Intune-Unternehmensportal (falls zutreffend), und installieren Sie es wieder.
 
 Ihre Benutzer verwalteter Geräte können Registrierungs- und Diagnoseprotokolle erfassen, die Sie überprüfen können. Benutzeranleitungen zur Erfassung der Protokolle finden Sie unter:
 
@@ -229,27 +235,29 @@ Wenn Lösung 2 nicht zur Behebung des Problems führt, führen Sie die folgenden
 
 **Lösung 1**:
 
-Bitten Sie die Benutzer, die Anweisungen unter [Dem Gerät fehlt ein erforderliches Zertifikat](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) zu befolgen. Wenn der Fehler weiterhin auftritt, nachdem die Benutzer die Anweisungen ausgeführt haben, versuchen Sie es mit Lösung 2.
+Der Benutzer kann das fehlende Zertifikat abrufen, indem er die Anweisungen unter [Auf Ihrem Gerät ist ein erforderliches Zertifikat nicht vorhanden](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) befolgt. Wenn der Fehler weiterhin auftritt, versuchen Sie es mit Lösung 2.
 
 **Lösung 2**:
 
 Tritt der Fehler wegen des fehlenden Zertifikats weiterhin auf, nachdem die Benutzer die Anmeldeinformationen des Unternehmens eingegeben haben und zur Umgebung für die Verbundanmeldung umgeleitet wurden, fehlt möglicherweise ein Zwischenzertifikat auf Ihrem AD FS-Server (Active Directory-Verbunddienste).
 
-Der Zertifikatfehler tritt auf, da auf Android-Geräten Zwischenzertifikate für ein [SSL-Server-Hello](https://technet.microsoft.com/library/cc783349.aspx) benötigt werden, eine standardmäßige AD FS-Server- oder AD FS-Proxyserverinstallation in der SSL-Server-Hello-Antwort auf ein SSL-Client-Hello aktuell aber nur das SSL-Zertifikat des AD FS-Diensts sendet.
+Der Zertifikatsfehler tritt auf, weil Android-Geräte Zwischenzertifikate benötigen, die in eine [SSL-Server-Hello-Nachricht](https://technet.microsoft.com/library/cc783349.aspx) eingebunden werden müssen. Derzeit sendet eine standardmäßige AD FS-Serverinstallation oder eine AD FS-Proxyserverinstallation mit WAP nur das SSL-Zertifikat des AD FS-Diensts in der SSL-Server-Hello-Antwort auf eine SSL-Client-Hello-Nachricht.
 
 Um das Problem zu beheben, importieren Sie die Zertifikate wie folgt in die persönlichen Zertifikate des Computers auf dem AD FS-Server oder den Proxys:
 
-1.  Starten Sie die Konsole zur Zertifikatverwaltung für den lokalen Computer auf dem AD FS- und dem Proxyserver, indem Sie mit der rechten Maustaste auf die Schaltfläche **Start** klicken, **Ausführen** auswählen und **certlm.msc** eingeben.
+1.  Klicken Sie auf dem AD FS-Proxyserver mit der rechten Maustaste auf **Start** > **Ausführen** > **certlm.msc**. Dadurch wird die Konsole zur Zertifikatverwaltung des lokalen Computers gestartet.
 2.  Erweitern Sie **Persönlich**, und wählen Sie **Zertifikate** aus.
 3.  Suchen Sie das Zertifikat für Ihre Kommunikation mit dem AD FS-Dienst (ein öffentlich signiertes Zertifikat), und doppelklicken Sie darauf, um seine Eigenschaften anzuzeigen.
 4.  Klicken Sie auf die Schaltfläche **Zertifizierungspfad**, um die übergeordneten Zertifikate des Zertifikats anzuzeigen.
 5.  Wählen Sie in jedem übergeordneten Zertifikat die Option **Zertifikat anzeigen** aus.
-6.  Klicken Sie auf der Registerkarte **Details** auf **In Datei kopieren**.
-7.  Führen Sie die Anweisungen des Assistenten aus, um den des öffentlichen Schlüssel des Zertifikats an den gewünschten Speicherort zu exportieren oder zu speichern.
-8.  Importieren Sie die übergeordneten Zertifikate, die in Schritt 3 nach „Local Computer\Personal\Certificates“ exportiert wurden, indem Sie mit der rechten Maustaste auf **Zertifikate** klicken, **Alle Aufgaben** > **Importieren** auswählen und dann den Anweisungen des Assistenten zum Importieren der Zertifikate folgen.
-9.  Starten Sie die AD FS-Server neu.
-10. Wiederholen Sie die oben stehenden Schritte auf allen AD FS- und Proxyservern.
-Der Benutzer sollte sich jetzt mit dem Android-Gerät bei der Unternehmensportal-App anmelden können.
+6.  Wählen Sie auf der Registerkarte **Details** die Option **In Datei kopieren...** aus.
+7.  Führen Sie die Anweisungen des Assistenten aus, um den öffentlichen Schlüssel des übergeordneten Zertifikats an den gewünschten Speicherort zu exportieren oder zu speichern.
+8.  Klicken Sie mit der rechten Maustaste auf **Zertifikate** > **Alle Aufgaben** > **Importieren**.
+9.  Befolgen Sie die Anweisungen des Assistenten, um das übergeordnete Zertifikat bzw. die übergeordneten Zertifikate in das Verzeichnis **Lokale Computer\Eigene Zertifikate\Zertifikate** zu importieren.
+10. Starten Sie die AD FS-Server neu.
+11. Wiederholen Sie die oben stehenden Schritte auf allen AD FS- und Proxyservern.
+
+Um eine ordnungsgemäße Installation des Zertifikats sicherzustellen, können Sie das auf der Seite [https://www.digicert.com/help/](https://www.digicert.com/help/) erhältliche Diagnosetool verwenden. Geben Sie unter **Serveradresse** den FQDN Ihres AD FS-Servers (IE: sts.contso.com) ein, und klicken Sie auf **Server überprüfen**.
 
 **So überprüfen Sie, ob das Zertifikat richtig installiert wurde**
 

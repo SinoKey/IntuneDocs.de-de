@@ -14,11 +14,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 237d6d090d0aae7f9a0853839b72d55618f4607e
-ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
+ms.openlocfilehash: 1bdd9002c70ea8d9e8b16b73d4d8416eeec3341b
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Verwalten von PowerShell-Skripts in Intune für Windows 10-Geräte
 Durch die Verwaltungserweiterung von Intune können Sie PowerShell-Skripts in Intune für die Ausführung auf Windows 10-Geräten hochladen. Die Verwaltungserweiterungen ergänzt Funktionen für die mobile Geräteverwaltung (mobile device management, MDM) von Windows 10 und erleichtert Ihnen den Wechsel zu einer modernen Verwaltung.
@@ -57,7 +57,7 @@ Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlic
   ![Blatt „PowerShell-Skript hinzufügen“](./media/mgmt-extension-assignments.png)
  
 6. Klicken Sie auf **Gruppen auswählen**, um verfügbare Azure AD-Gruppen aufzulisten. 
-7. Wählen Sie die Gruppen aus, und klicken Sie dann auf **Auswählen**, um die Richtlinie den ausgewählten Gruppen zuzuweisen.
+7. Wählen Sie mindestens eine Gruppe mit den Benutzern aus, deren Geräte das Skript erhalten sollen, und klicken Sie dann auf **Auswählen**, um die Richtlinie den ausgewählten Gruppen zuzuweisen.
 
 Die Intune-Verwaltungserweiterung wird einmal pro Stunde mit Intune synchronisiert. Nachdem Sie die Richtlinie den Azure AD-Gruppen zugewiesen haben, wird das PowerShell-Skript ausgeführt, und die Ausführungsergebnisse werden berichtet. 
  

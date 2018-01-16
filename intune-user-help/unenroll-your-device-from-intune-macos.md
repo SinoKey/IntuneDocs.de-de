@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 84a430da9484bc32e6dd20799059d72efaef09d8
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 504d732e00e296ad370d364e553989cacbd124d0
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>Aufheben der Registrierung Ihres macOS-Geräts bei Intune
 
-Wenn Sie die Registrierung Ihres iOS-Geräts bei Intune aufheben, kann Ihr Gerät nicht mehr auf Unternehmensressourcen zugreifen und wird nicht mehr über Intune verwaltet.
+Nachdem Sie die Registrierung Ihres macOS-Geräts bei Intune aufgehoben haben, können Sie nicht mehr auf Unternehmensressourcen zugreifen.
 
 Um die Registrierung Ihres macOS-Geräts über die Verwaltung aufzuheben, führen Sie die folgenden Schritte durch:
 
@@ -34,11 +34,11 @@ Um die Registrierung Ihres macOS-Geräts über die Verwaltung aufzuheben, führe
 
 Wenn Sie die Registrierung Ihres Geräts bei Intune aufheben passiert Folgendes:
 
--   Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
+-   Das Gerät wird nicht im Unternehmensportal angezeigt.
 
--   Sie können keine Apps mehr über das Unternehmensportal installieren.
+-   Sie können keine Apps über das Unternehmensportal installieren.
 
--   Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden, z. B. das Deaktivieren der Kamera oder die Anforderung einer bestimmten Kennwortlänge, werden unwirksam.
+-   Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden (z.B. die Kennwortlänge), werden unwirksam.
 
 -   Unter Umständen haben Sie auf dem Gerät keinen Zugriff mehr auf einige Unternehmensressourcen, z. B. Dateifreigaben oder interne Websites.
 
@@ -46,8 +46,6 @@ Wenn Sie die Registrierung Ihres Geräts bei Intune aufheben passiert Folgendes:
 
 -   Möglicherweise können Sie keine Verbindung mehr zum Unternehmensnetzwerk über WiFi oder ein virtuelles privates Netzwerk (VPN) herstellen.
 
--   Unternehmens-E-Mail-Profile werden vom Gerät entfernt.
-
--   Geräte, die nur für E-Mail konfiguriert sind, werden nicht mehr in der Unternehmensportal-App oder auf der Unternehmensportal-Website angezeigt.
+-   Der Zugriff auf Unternehmens-E-Mails wurde möglicherweise vom Gerät entfernt.
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -6,7 +6,7 @@ keywords:
 author: dagerrit
 ms.author: dagerrit
 manager: angrobe
-ms.date: 03/31/2017
+ms.date: 1/4/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
-ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
+ms.openlocfilehash: d5f4947191ddc7462749bb03f86919fc38196672
+ms.sourcegitcommit: 6e91c1aed7e4d3bb57051b41ce69cc15d70844f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Wo ist meine Intune-Funktion in Azure jetzt?
 Wir hatten die Chance, einige Aufgaben logischer zu organisieren, als wir Intune in das Azure-Portal umgezogen haben. Jedoch kommt jede Verbesserung mit der neuen Aufgabe, die neue Organisation kennenzulernen. Daher haben wir dieses Referenzhandbuch für diejenigen von Ihnen erstellt, die mit Intune im klassischen Portal bestens vertraut sind und sich nun fragen, wie Aufgaben in Intune im Azure-Portal erledigt werden. Wenn dieser Artikel eine Funktion, die Sie suchen, nicht behandelt, hinterlassen Sie einen Kommentar am Ende des Artikels, damit wir ihn aktualisieren können.
@@ -36,6 +36,7 @@ Wir hatten die Chance, einige Aufgaben logischer zu organisieren, als wir Intune
 | Profil für die Unternehmensgeräteregistrierung | Richtlinie > Unternehmensgeräteregistrierung | [Geräteregistrierung > Apple-Registrierung > AC-Profile](#where-did-corporate-pre-enrolled-devices-go) |
 | Android for Work | Administrator > Verwaltung mobiler Geräte > Android for Work | Geräteregistrierung > Android for Work-Registrierung |
 | Geschäftsbedingungen | Richtlinien > Geschäftsbedingungen | Geräteregistrierung > Geschäftsbedingungen |
+Unternehmensportaleinstellungen|Verwaltung > Unternehmensportal|**Verwalten** > Mobile Apps<br> **Einrichten** > Branding des Unternehmensportals
 
 
 ## <a name="where-do-i-manage-groups"></a>Wo verwalte ich Gruppen?
@@ -73,7 +74,7 @@ Im Azure-Portal richten das Geräteregistrierungsprogramm von Apple mit den glei
 
 ![Abbildung des Azure-DEP-Token](./media/07-azure-dep-token.png)
 
-Jedoch wurde die Option **Synchronisierung** im klassischen Portal zum Workflow der Verwaltung von Seriennummern verschoben, da die Ergebnisse der manuellen Synchronisierung dort erscheinen werden:
+Jedoch wurde die Option **Synchronisierung** im klassischen Portal zum Workflow der Verwaltung von Seriennummern verschoben, da die Ergebnisse der manuellen Synchronisierung dort angezeigt werden:
 
 ![Abbildung der Azure-DEP-Synchronisation](./media/08-azure-dep-sync.png)
 

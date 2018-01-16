@@ -3,8 +3,8 @@ title: "Verwenden von Gerätekategorien in Intune"
 titleSuffix: Azure portal
 description: "Erfahren Sie, wie Sie Gerätekategorien verwenden, die Benutzer beim Registrieren ihrer Geräte in Intune auswählen können.\""
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 12/11/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ddcd4639c1f5a0949be46025e16e44d0b6ac6616
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c100193c7db2be1a5655a1b77e1eec452a189d64
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="map-device-groups"></a>Zuordnen von Gerätegruppen
 
@@ -28,8 +28,8 @@ Verwenden Sie die Gerätekategorien in Microsoft Intune, damit Geräte basierend
 
 Gerätekategorien verwenden den folgenden Workflow:
 1. Erstellen Sie Kategorien, die Benutzer beim Registrieren ihrer Geräte verwenden können.
-3. Wenn Endbenutzer von iOS- und Android-Geräten ihre Geräte registrieren, müssen sie aus der Liste der von Ihnen konfigurierten Kategorien eine Kategorie auswählen. Um einem Windows-Gerät eine Kategorie zuzuweisen, müssen Endbenutzer die Unternehmensportal-Website verwenden (weitere Informationen dazu finden Sie in diesem Thema unter **Nach dem Konfigurieren von Gerätegruppen**).
-4. Dann können Sie Richtlinien und Apps für diese Gruppen bereitstellen.
+2. Wenn Endbenutzer von iOS- und Android-Geräten ihre Geräte registrieren, müssen sie aus der Liste der von Ihnen konfigurierten Kategorien eine Kategorie auswählen. Um einem Windows-Gerät eine Kategorie zuzuweisen, müssen Endbenutzer die Unternehmensportalwebsite verwenden (weitere Informationen dazu finden Sie in diesem Artikel unter **Nach dem Konfigurieren von Gerätegruppen**).
+3. Dann können Sie Richtlinien und Apps für diese Gruppen bereitstellen.
 
 Sie können beliebige Gerätekategorien erstellen, z.B.:
 - POS-Gerät (Point of Sale)
@@ -46,14 +46,14 @@ Sie können beliebige Gerätekategorien erstellen, z.B.:
 3. Wählen Sie im Blatt **Geräteregistrierung** die Option **Gerätekategorien** aus.
 4. Wählen Sie auf der Seite **Gerätekategorien** die Option **Erstellen** aus, um eine neue Kategorie hinzuzufügen.
 5. Geben Sie auf dem nächsten Blatt einen **Namen** für die neue Kategorie und optional eine **Beschreibung** ein.
-6. Klicken Sie auf **Erstellen**, wenn Sie fertig sind. Die gerade von Ihnen erstellte Kategorie wird in der Liste der Kategorien angezeigt.
+6. Klicken Sie auf **Erstellen**, wenn Sie fertig sind. Sie können die neue Kategorie in der Liste der Kategorien sehen.
 
 Verwenden Sie den Kategorienamen des Geräts zum Erstellen von Azure Active Directory-Sicherheitsgruppen in Schritt 2.
 
 ### <a name="step-2---create-azure-active-directory-security-groups"></a>Schritt 2: Erstellen von Active Directory-Sicherheitsgruppen
 In diesem Schritt erstellen Sie dynamische Gruppen im Azure-Portal auf Basis der Gerätekategorie und des Gerätekategorienamens.
 
-Lesen Sie das Thema [Verwenden von Attributen zum Erstellen erweiterter Regeln](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) in der Dokumentation zu Azure Active Directory, um den Vorgang fortzusetzen.
+Um fortzufahren, lesen Sie den Artikel [Erstellen attributbasierter Regeln für dynamische Gruppenmitgliedschaft in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) in der Dokumentation zu Azure Active Directory.
 
 Verwenden Sie die Informationen in diesem Abschnitt zum Erstellen einer Gerätegruppe mit einer erweiterten Regel mithilfe des Attributs **deviceCategory**. Beispiel: (**device.deviceCategory -eq** "*<the device category name you got from the Azure portal>*")
 
@@ -88,6 +88,6 @@ Unabhängig von der Plattform können Ihre Endbenutzer nach der Registrierung de
 Nach Auswahl der Kategorie wird das Gerät automatisch zur entsprechenden Gruppe hinzugefügt, die Sie erstellt haben. Wenn ein Gerät bereits registriert wurde, bevor Sie Kategorien konfiguriert haben, wird dem Benutzer auf der Unternehmensportal-Website eine Benachrichtigung zu dem Gerät angezeigt, und der Benutzer wird aufgefordert, beim nächsten Zugriff auf die Unternehmensportal-App über ein iOS- oder Android-Gerät eine Kategorie auszuwählen.
 
 ## <a name="further-information"></a>Weitere Informationen
-- Sie können eine Gerätekategorie im Azure-Portal bearbeiten. Sie müssen dann aber manuell alle Azure Active Directory-Sicherheitsgruppen aktualisieren, die auf diese Kategorie verweisen.
+- Sie können eine Gerätekategorie im Azure-Portal bearbeiten, müssen dann aber alle Azure Active Directory-Sicherheitsgruppen, die auf diese Kategorie verweisen, manuell aktualisieren.
 
-- Wenn Sie eine Kategorie löschen, tragen alle Geräte, die dieser zuvor zugewiesen waren, anschließend den Kategorienamen **Nicht zugewiesen**.
+- Wenn Sie eine Kategorie löschen, tragen die ihr zugewiesenen Geräte den Kategorienamen **Nicht zugewiesen**.

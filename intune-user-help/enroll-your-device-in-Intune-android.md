@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7a90ae7db1141b40934648c951276e3f4d43bc05
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 52364f7c5586f6021ac3bf83e73701d9781c4468
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Registrieren Ihres Android-Geräts bei Intune
 
@@ -28,7 +28,7 @@ Wenn Ihr Unternehmen oder Ihre Schule Microsoft Intune verwendet, können Sie Ih
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player]
 
-Diese Registrierungsanweisungen gelten für native Android-Geräte und für Android-Geräte mit Samsung KNOX. Samsung KNOX ist ein Sicherheitssystem, mit dem bestimmte Geräte von Samsung neben der nativen Android-Sicherheit zusätzlichen Schutz bieten. Wechseln Sie zu **Einstellungen** > **Geräteinformationen**, um zu überprüfen, ob es sich bei Ihrem Gerät um ein Samsung KNOX-Gerät handelt. Wird „KNOX-Version“ nicht angezeigt, verfügen Sie über ein natives Android-Gerät.
+Diese Registrierungsanweisungen gelten für native Android-Geräte und für Android-Geräte mit Samsung KNOX. Samsung KNOX ist ein Sicherheitssystem, mit dem bestimmte Geräte von Samsung neben den nativen Android-Sicherheitsfeatures zusätzlichen Schutz bieten. Navigieren Sie zu **Einstellungen** > **Geräteinformationen**, um zu überprüfen, ob es sich bei Ihrem Gerät um ein Samsung KNOX-Gerät handelt. Wird „KNOX-Version“ nicht angezeigt, verfügen Sie über ein natives Android-Gerät.
 
 Vor oder nach der Registrierung werden Sie möglicherweise aufgefordert, eine Kategorie auszuwählen, die am besten beschreibt, wie Sie Ihr Gerät nutzen. Der Support Ihres Unternehmens verwendet diese Kategorie, um die Apps zu überprüfen, auf die Sie Zugriff haben.
 
@@ -98,7 +98,7 @@ Vor oder nach der Registrierung werden Sie möglicherweise aufgefordert, eine Ka
 
     ![Eingeben von PIN oder Kennwort](./media/and-enroll-6-PIN-native.png)
 
-13.  Wenn Sie ein Samsung KNOX-Gerät verwenden, tippen Sie auf **Bestätigen**. Es wird eine Meldung angezeigt, die besagt, dass das Gerät registriert wird. Wenn Sie ein natives Android-Gerät verwenden, beachten Sie den folgenden Bildschirm, der anzeigt, dass das Gerät registriert wird.
+13.  Wenn Sie ein Samsung Knox-Gerät verwenden, tippen Sie auf **Bestätigen**. Es wird eine Meldung angezeigt, die besagt, dass das Gerät registriert wird. Wenn Sie ein natives Android-Gerät verwenden, beachten Sie den folgenden Bildschirm, der anzeigt, dass das Gerät registriert wird.
 
     ![Samsung KNOX-Datenschutzrichtlinie](./media/and-enroll-7-knox-privacy-policy.png)
 

@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 09/07/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,25 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ffddf9e5fcdf8359c729eb048a6f8052a1b3286f
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c89d253f28a26a560251b159a3705016b4c7fad3
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Standardgeräteeinschränkungen für Android- und Samsung KNOX in Microsoft Intune
+# <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Standardgeräteeinschränkungen für Android und Samsung KNOX in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Verwenden Sie diese Einstellungen mit einer Einschränkungsrichtlinie für Android-Geräte, um Geräte in Ihrer Organisation zu konfigurieren.
 
 >[!TIP]
->Wenn Ihre gewünschten Einstellungen nicht verfügbar sind, können Sie Ihre Geräte möglicherweise mit einem [benutzerdefinierten Profil](custom-settings-android.md) konfigurieren. 
+>Wenn Ihre gewünschten Einstellungen nicht verfügbar sind, können Sie Ihre Geräte möglicherweise mit einem [benutzerdefinierten Profil](custom-settings-android.md) konfigurieren.
 
 ## <a name="general"></a>Allgemein
 
 - **Kamera:** Erlaubt die Verwendung der Gerätekamera.
-- **Kopieren und einfügen (nur Samsung KNOX):** Lässt Kopier- und Einfügefunktionen auf dem Gerät zu oder sperrt diese Funktionen.
+- **Kopieren und einfügen (nur Samsung KNOX):** Lässt Kopier- und Einfügefunktionen auf dem Gerät zu.
 - **Gemeinsame Nutzung der Zwischenablage durch Apps (nur Samsung KNOX):** Erlaubt die Verwendung der Zwischenablage für das Kopieren und Einfügen zwischen Apps.
 - **Übermittlung von Diagnosedaten (nur Samsung KNOX):** Hindert den Benutzer an der Übermittlung von Diagnosedaten vom Gerät.
 - **Zurücksetzung auf Werkseinstellungen (nur Samsung KNOX):** Erlaubt dem Benutzer das Zurücksetzen des Geräts auf die Werkseinstellungen.
@@ -42,7 +42,8 @@ Verwenden Sie diese Einstellungen mit einer Einschränkungsrichtlinie für Andro
 - **Bildschirmaufnahme (nur Samsung KNOX):** Erlaubt dem Benutzer, den Bildschirminhalt als Bild zu erfassen.
 - **Sprach-Assistent (nur Samsung KNOX):** Erlaubt die Verwendung von Sprach-Assistent-Software auf dem Gerät.
 - **YouTube (nur Samsung KNOX):** Erlaubt die Verwendung der YouTube-App auf dem Gerät.
-- **Freigegebene Geräte (nur Samsung KNOX):** Konfigurieren Sie ein verwaltetes Samsung KNOX-Standardgerät als freigegeben. In diesem Modus können sich Endbenutzer des Geräts mit ihren Azure AD-Anmeldeinformationen an- und abmelden. Das Gerät wird weiterhin verwaltet, ganz gleich, ob es verwendet oder nicht.<br>In Verbindung mit einem SCEP-Zertifikatsprofil ermöglicht diese Funktion Endbenutzern die gemeinsame Nutzung eines Geräts mit denselben Apps für alle Benutzer, jedoch mit eigenem SCEP-Benutzerzertifikat.  Wenn sich Benutzer abmelden, werden alle App-Daten gelöscht.  Dieses Feature ist ausschließlich auf branchenspezifische Apps beschränkt.
+- **Freigegebene Geräte (nur Samsung KNOX):** Konfigurieren Sie ein verwaltetes Samsung KNOX Standard-Gerät als freigegeben. In diesem Modus können sich Endbenutzer des Geräts mit ihren Azure AD-Anmeldeinformationen an- und abmelden. Das Gerät wird weiterhin verwaltet, ganz gleich, ob es verwendet oder nicht.<br>In Verbindung mit einem SCEP-Zertifikatsprofil ermöglicht diese Funktion Endbenutzern die gemeinsame Nutzung eines Geräts mit denselben Apps für alle Benutzer, jedoch mit eigenem SCEP-Benutzerzertifikat.  Wenn sich Benutzer abmelden, werden alle App-Daten gelöscht.  Dieses Feature ist ausschließlich auf branchenspezifische Apps beschränkt.
+- **Datums- und Uhrzeitänderungen blockieren (Samsung KNOX)**: Verhindert, dass der Benutzer Datums- und Uhrzeiteinstellungen auf dem Gerät ändert. 
 
 ## <a name="password"></a>Kennwort
 
@@ -51,7 +52,7 @@ Verwenden Sie diese Einstellungen mit einer Einschränkungsrichtlinie für Andro
 - **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung:** Gibt die Anzahl der Minuten der Inaktivität an, bevor das Gerät automatisch gesperrt wird.
 - **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird:** Gibt die Anzahl zulässiger Anmeldefehler an, bevor das Gerät zurückgesetzt wird.
 - **Kennwortablauf (Tage):** Gibt die Anzahl der Tage an, bevor das Gerätekennwort geändert werden muss.
--  **Erforderlicher Kennworttyp:** Gibt den erforderlichen Grad der Kennwortkomplexität an. Zudem wird angegeben, ob biometrische Geräte zulässig sind. Wählen Sie aus:
+-  **Erforderlicher Kennworttyp:** Gibt den erforderlichen Grad der Kennwortkomplexität an. Zudem wird angegeben, ob biometrische Geräte zulässig sind. Es stehen die folgenden Optionen zur Auswahl:
     - **Gerätestandard**
     - **Biometrie auf niedriger Sicherheitsstufe**
     - **Mindestens numerisch**
@@ -104,7 +105,7 @@ Sie können auch auf **Importieren** klicken, um die Liste über eine CSV-Datei 
 - **Webbrowser (nur Samsung KNOX):** Gibt an, ob der Standardwebbrowser des Geräts verwendet werden darf.
 - **AutoAusfüllen (nur Samsung KNOX):** Erlaubt die Verwendung der AutoAusfüllen-Funktion des Webbrowsers.
 - **Cookies (nur Samsung KNOX):** Erlaubt die Verwendung von Cookies durch den Webbrowser des Geräts.
-- **Javascript (nur Samsung KNOX):** Erlaubt die Ausführung von Java-Skripts im Webbrowser.
+- **JavaScript (nur Samsung KNOX):** Erlaubt die Ausführung von JavaScript im Webbrowser.
 - **Popups (nur Samsung KNOX):** Erlaubt die Verwendung des Popupblockers im Webbrowser.
 
 ## <a name="allow-or-block-apps"></a>Zulassen oder Blockieren von Apps
@@ -118,14 +119,14 @@ Darüber hinaus können Sie auch installierte Apps angeben, die für den Benutze
 
 Konfigurieren Sie für jede Einstellung eine Liste von Apps mit einer der folgenden Optionen:
 
-- **Apps nach Paketname hinzufügen**: Wird in erster Linie für Geschäftsanwendungen verwendet. Geben Sie den Namen der App und den Namen des App-Pakets ein. 
+- **Apps nach Paketname hinzufügen**: Wird in erster Linie für Geschäftsanwendungen verwendet. Geben Sie den Namen der App und den Namen des App-Pakets ein.
 - **Apps nach URL hinzufügen**: Geben Sie den Namen der App und ihre URL im Google Play Store ein.
 - **Verwaltete Apps hinzufügen**: Wählen Sie in der Liste der Apps, die Sie mit Intune verwalten, die benötigte App aus.
 
 ## <a name="cloud-and-storage"></a>Cloud und Speicher
 
 - **Google-Sicherung (nur Samsung KNOX):** Erlaubt die Verwendung der Google-Sicherung.
-- **Automatische Google-Kontosynchronisierung (nur Samsung KNOX):** Erlaubt die automatische Synchronisierung der Einstellungen von Google-Konten.
+- **Automatische Synchronisierung von Google-Konto (nur Samsung KNOX):** Erlaubt die automatische Synchronisierung der Einstellungen von Google-Konten.
 - **Wechselmedien (nur Samsung KNOX):** Erlaubt dem Gerät Wechselmedien wie SD-Karten zu verwenden.
 - **Verschlüsselung auf Speicherkarten (nur Samsung KNOX):** Gibt an, ob die Gerätespeicherkarte verschlüsselt werden muss.
 

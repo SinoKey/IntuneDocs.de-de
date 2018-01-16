@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 840ef2ce59551a45cd753190b784e8ca0bba617a
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6b598441d39d90a4ae81df7fffff99f9a5ccc451
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Erstellen und Zuweisen einer Richtlinie für bedingten Zugriff für Exchange lokal und das ältere Exchange Online Dedicated in Microsoft Intune
 
@@ -124,6 +124,6 @@ Ab Intune Version 1704 können Administratoren im Azure-Portal für Intune Azure
 
 2. Wählen Sie auf dem Blatt **Richtlinien** **Neue Richtlinie** aus, um die neue Azure AD-Richtlinie für den bedingten Zugriff zu erstellen.
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 
 [Bedingter Zugriff in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)
