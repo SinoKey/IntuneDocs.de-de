@@ -15,11 +15,11 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dc9c67db2a93b6cd0f1db1894b079183ee9c945
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: f697b575a5cdc1fa4009d08a14452508eacb8de1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Konfigurieren von E-Mail-Einstellungen in Microsoft Intune
 
@@ -86,7 +86,7 @@ Wenn für den Benutzer bereits ein E-Mail-Konto konfiguriert wurde, hängt das E
 
 - **iOS:** Basierend auf dem Hostnamen und der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt. Das doppelte E-Mail-Profil verhindert die Zuweisung eines Intune-Profils. In diesem Fall informiert das Unternehmensportal den Benutzer über die fehlende Konformität fordert ihn auf, das manuell konfigurierte E-Mail-Profil zu entfernen. Weisen Sie Ihre Benutzer an, sich vor der Installation eines E-Mail-Profils zu registrieren und die Einrichtung des Profils durch Intune zuzulassen, um das Problem zu vermeiden.
 - **Windows:** Basierend auf dem Hostnamen und der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt. Intune überschreibt das vorhandene vom Benutzer erstellte E-Mail-Profil.
-- **Android Samsung KNOX Standard** Basierend auf der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt und durch das Intune-Profil überschrieben.
+- **Android Samsung KNOX Standard**: Basierend auf der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt und mit dem Intune-Profil überschrieben.
 Da Android zum Identifizieren des Profils keinen Hostnamen verwendet, wird davon abgeraten, mehrere E-Mail-Profile für die Verwendung unter derselben E-Mail-Adresse auf unterschiedlichen Hosts zu erstellen, da sie sich gegenseitig überschreiben.
 - **Android for Work** Intune stellt zwei Android for Work-E-Mail-Profile bereit: eines für die E-Mail-App Gmail und eines für die E-Mail-App Nine Work. Diese Apps können im Google Play Store heruntergeladen werden; sie installieren ein Arbeitsprofil auf dem Gerät, sodass keine doppelten Profile erstellt werden. Beide Apps unterstützen Verbindungen mit Exchange. Stellen Sie auf den Geräten der Benutzer eine dieser E-Mail-Apps bereit, erstellen Sie das entsprechende Profil, und stellen Sie das entsprechende E-Mail-Profil bereit, um die E-Mail-Konnektivität zu ermöglichen. E-Mail-Apps, z.B. Nine Work, können möglicherweise kostenpflichtig sein. Lesen Sie die Lizenzierungsdetails der App oder kontaktieren Sie das Unternehmen, das die App bereitstellt, um Fragen zu stellen.
 

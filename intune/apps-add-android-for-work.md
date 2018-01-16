@@ -3,8 +3,8 @@ title: "Zuweisen von Apps zu Android for Work-Geräten"
 titlesuffix: Azure portal
 description: "Verwenden Sie dieses Thema zum Synchronisieren und anschließenden Zuweisen von Apps zu Android for Work-Geräten über den Google Play for Work Store.\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/13/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f873fa6324bab56ce8233a8a550e2d13fe2fb054
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Zuweisen von Apps für Android for Work-Geräte mit Intune
 
@@ -52,7 +52,7 @@ Stellen Sie sicher, dass Sie Intune und Android for Work für die **Geräteregis
 2. Melden Sie sich mit dem Konto an, das Sie zum Konfigurieren der Verbindung zwischen Intune und Android for Work verwendet haben. Wenn Sie sich zum ersten Mal anmelden, müssen Sie sich registrieren und eine Gebühr bezahlen, um Mitglied im Google Developer-Programm zu werden.
 3. Wählen Sie in der Konsole **Neue Anwendung hinzufügen**.
 4. Informationen über Ihre App laden Sie auf dieselbe Weise hoch wie Sie Apps im Google Play Store veröffentlichen. Sie müssen jedoch die Einstellung **Only make this application available to my organization (<*organization name*>)** (Diese Anwendung nur für meine Organisation (<Name der Organisation>) verfügbar machen) auswählen:<br>
-  ![Option, um eine Anwendung nur für die eigene Organisation verfügbar zu machen](media/restrict.png)<br>
+  ![Option, um eine App nur für die eigene Organisation verfügbar zu machen](media/restrict.png)<br>
 Durch diesen Vorgang wird sichergestellt, dass die App nur für Ihre Organisation und nicht im öffentlichen Google Play Store verfügbar ist.
 Weitere Informationen zum Hochladen und Veröffentlichen von Android-Apps finden Sie in der [Google Developer Console-Hilfe](https://support.google.com/googleplay/android-developer/answer/113469).
 5. Wechseln Sie nach dem Veröffentlichen Ihrer App zum [Google Play for Work Store](https://play.google.com/work). Melden Sie sich mit dem Konto an, das Sie zum Konfigurieren der Verbindung zwischen Intune und Android for Work verwendet haben.

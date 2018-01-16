@@ -2,10 +2,10 @@
 title: "Unterstützte Geräte – Microsoft Intune"
 description: "Liste der unterstützten Geräteplattformen und Browser für die Intune-Geräteverwaltung"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b168cbf5282b4e016133d071c56c8abd54c2e23b
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: 56516562b9a7510020475d226c74bf719bdd33a3
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="supported-devices-and-browsers"></a>Unterstützte Geräte und Browser
 
@@ -41,7 +41,10 @@ Sie können die folgenden Geräte mit Intune MDM (Verwaltung mobiler Geräte, Mo
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Unterstützte Samsung KNOX Standard-Geräte
 
-Die Unternehmensportal-App führt während der MDM-Registrierung nur dann einen Aktivierungsversuch für Samsung KNOX durch, wenn das Gerät in der [Liste der unterstützten KNOX-Geräte](https://www.samsungknox.com/knox-supported-devices/knox-workspace) angezeigt wird. Dadurch werden für KNOX Aktivierungsfehler vermieden, die eine MDM-Registrierung verhindern würden. Geräte, die die Samsung KNOX-Aktivierung nicht unterstützen, werden als Android-Standardgeräte registriert. Wenn für ein Samsung-Gerät mehrere Modellnummern vorhanden sind, wird KNOX möglicherweise nicht von allen Modellen unterstützt. Überprüfen Sie daher mithilfe des Wiederverkäufers Ihrer Geräte, ob diese mit KNOX kompatibel sind, bevor Sie Samsung-Geräte erwerben und bereitstellen.
+Die Unternehmensportal-App führt während der MDM-Registrierung nur dann einen Aktivierungsversuch für Samsung KNOX durch, wenn das Gerät in der [Liste der unterstützten KNOX-Geräte](https://www.samsungknox.com/knox-supported-devices/knox-workspace) angezeigt wird. Dadurch werden bei KNOX Aktivierungsfehler vermieden, die eine MDM-Registrierung verhindern würden. Geräte, die die Samsung KNOX-Aktivierung nicht unterstützen, werden als Android-Standardgeräte registriert. Wenn für ein Samsung-Gerät mehrere Modellnummern vorhanden sind, wird KNOX möglicherweise nicht von allen Modellen unterstützt. Überprüfen Sie daher mithilfe des Wiederverkäufers Ihrer Geräte, ob diese mit KNOX kompatibel sind, bevor Sie Samsung-Geräte erwerben und bereitstellen.
+
+> [!NOTE]
+> Für die Registrierung von Samsung KNOX-Geräten müssen Sie möglicherweise [den Zugriff auf Samsung-Servern aktivieren](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
 
 In der folgenden Liste werden Samsung-Gerätemodelle aufgeführt, die KNOX nicht unterstützen und von der Unternehmensportal-App für Android als native Android-Geräte registriert werden:
 

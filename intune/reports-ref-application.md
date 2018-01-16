@@ -2,10 +2,10 @@
 title: Anwendung | Microsoft-Dokumentation
 description: "Referenzthema für die Kategorie „Anwendung“ der Entitätsauflistungen in der Intune Data Warehouse-API"
 keywords: Intune Data Warehouse
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fd14c985b4cedcd0575b2b6ea29e7aa4d8bb2d4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 6698ff8d333d386c1401f942b2bbd4a75d86943c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-application-entities"></a>Verweis für Anwendungsentitäten
 
@@ -62,7 +62,7 @@ Die Entität **AppTypes** führt die Installationsquelle einer App auf.
 | AppTypeKey |Untergeordneter Schlüssel für den Schlüssel |
 | AppTypeName |App-Typ |
 
-## <a name="example"></a>Beispiel
+### <a name="example"></a>Beispiel
 
 | AppTypeID  | Name | Beschreibung |
 |---------|------------|--------|
@@ -91,7 +91,7 @@ Die Entität **VppProgramTypes** führt mögliche VPP-Programmtypen für eine Ap
 | VppProgramTypeKey | Ersatzschlüssel für den Schlüssel |
 | VppProgramTypeName | VPP-Programmtyp |
 
-## <a name="example"></a>Beispiel
+### <a name="example"></a>Beispiel
 
 | VppProgramID  | Name | Beschreibung |
 |---------|------------|--------|
@@ -112,3 +112,26 @@ Die Entität **ApplicationInventory** listet die Anwendungen auf, die zum Zeitpu
 | ApplicationName | Der Anwendungsname. |
 | ApplicationVersion | Anwendungsversion |
 | BundleSize | Größe der App in Byte |
+
+## <a name="mobileappinstallstate"></a>MobileAppInstallState
+
+Die Entität **MobileAppInstallState** stellt den Installationsstatus für eine mobile Anwendung dar, nachdem sie einer Gruppe, die Geräte und/oder Benutzer enthält, zugewiesen haben.
+
+| Eigenschaft | Beschreibung |
+|---|---|
+| AppInstallStateKey | Die eindeutige ID des App-Installationsstatus für Ihr Konto |
+| AppInstallState | Enumerationswert des App-Installationsstatus |
+| AppInstallStateName | Name des App-Installationsstatus |
+
+## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
+
+**MobileAppDeviceUserInstallStatus** stellt einen mobilen App-Installationsstatus für ein bestimmtes Gerät und einen bestimmten Benutzer dar.
+
+| Eigenschaft | Beschreibung |
+|---|---|
+| DateKey | Schlüssel des Datums, an dem der App-Installationsstatus erfasst wurde |
+| AppKey | Schlüssel der mobilen App, mit der eine Instanz von AppRevision identifiziert wird |
+| DeviceKey | Schlüssel eines Zielgeräts, das zur Identifizierung einer Instanz von Device verwendet wird |
+| UserKey | Schlüssel eines Zielbenutzers, der zur Identifizierung einer Instanz von User verwendet wird |
+|AppInstallStateKey | Schlüssel des App-Installationsstatus, der zur Identifizierung einer Instanz von MobileAppInstallState verwendet wird |
+| ErrorCode | Der vom App-Installer zurückgegebene Fehlercode, die mobile Plattform oder der Dienst zur Installation der App. |

@@ -3,8 +3,8 @@ title: "Massenregistrierung für Windows 10"
 titlesuffix: Azure portal
 description: "Erstellen eines Pakets für die Massenregistrierung für Microsoft Intune"
 keywords: 
-author: NathBarn
-ms.author: NathBarn
+author: Erikje
+ms.author: erikje
 manager: angrobe
 ms.date: 10/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 7738935675595bbdd3ba1f6411a78a2646894073
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: f24bf5f8767763c3ca56d51127ab1d3f484e51d8
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Massenregistrierung für Windows-Geräte
 
@@ -29,8 +29,6 @@ Als Administrator können Sie eine große Anzahl von neuen Windows-Geräten in A
 Azure AD-Benutzer sind auf diesen Geräten Standardbenutzer und erhalten zugewiesene Intune-Richtlinien sowie erforderliche Apps. Die Verwendung von Self-Service-Funktionen und Unternehmensportalen wird derzeit nicht unterstützt.
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Voraussetzungen für die Massenregistrierung von Windows-Geräten
-
-Für die Massenregistrierung von Windows-Geräten ist Folgendes erforderlich:
 
 - Geräte mit Windows 10 Creators Update oder höher
 - [Automatische Windows-Registrierung](windows-enroll.md#enable-windows-10-automatic-enrollment)
@@ -43,15 +41,15 @@ Für die Massenregistrierung von Windows-Geräten ist Folgendes erforderlich:
 2. Öffnen Sie die **Windows Configuration Designer**-App, und wählen Sie **Desktopgeräte bereitstellen** aus.
 ![Screenshot: Auswählen der Option zum Bereitstellen von Desktopgeräten in der Windows Configuration Designer-App](media/bulk-enroll-select.png)
 
-3. Ein Fenster **Neues Projekt** wird geöffnet, in dem Sie Folgendes angeben:
-  - **Name:** Der Name für das Projekt
-  - **Projektordner:** Der Speicherort des Projekts
-  - **Beschreibung:** Optionale Beschreibung des Projekts ![Screenshot: Angeben von Name, Projektordner und Beschreibung in der Windows Configuration Designer-App](media/bulk-enroll-name.png)
+3. Das Fenster **Neues Projekt** wird geöffnet, in dem Sie folgende Informationen angeben:
+  - **Name**: Der Name für das Projekt
+  - **Projektordner**: Speicherort des Projekts
+  - **Beschreibung**: Optionale Beschreibung des Projekts ![Screenshot: Angeben von Name, Projektordner und Beschreibung in der Windows Configuration Designer-App](media/bulk-enroll-name.png)
 
 4.  Geben Sie einen eindeutigen Namen für Ihre Geräte ein. Die Namen können eine Seriennummer (%%SERIENNUMMER%%) oder eine zufällige Folge von Zeichen umfassen. Optional können Sie auch einen Product Key eingeben, wenn Sie die Windows-Edition aktualisieren, das Gerät für die gemeinsame Nutzung konfigurieren und vorinstallierte Software entfernen.
 ![Screenshot: Angeben von Name, Projektordner und Beschreibung in der Windows Configuration Designer-App](media/bulk-enroll-device.png)
 
-5.  Optional können Sie das WLAN konfigurieren, bei dem sich Geräte beim ersten Start anmelden.  Wenn diese Option nicht konfiguriert wurde, ist beim ersten Start eines Geräts eine kabelgebundene Netzwerkverbindung erforderlich.
+5.  Optional können Sie das WLAN konfigurieren, bei dem sich Geräte beim ersten Start anmelden.  Wenn die Netzwerkgeräte nicht konfiguriert wurden, ist beim ersten Start des Geräts eine kabelgebundene Netzwerkverbindung erforderlich.
 ![Screenshot: Aktivierung eines WLANs, einschließlich Netzwerk-SSID und Netzwerktyp, in der Windows Configuration Designer-App](media/bulk-enroll-network.png)
 
 6.  Wählen Sie **Bei Azure AD registrieren**, geben Sie ein Datum für den **Ablauf des Massentokens** ein, und wählen Sie dann **Massentoken abrufen** aus.
@@ -77,7 +75,7 @@ Für die Massenregistrierung von Windows-Geräten ist Folgendes erforderlich:
 
  Eine Schrittanleitung zum Anwenden eines Bereitstellungspakets finden Sie unter [Anwenden eines Bereitstellungspakets](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package).
 
-3. Sobald das Paket angewendet wurde, wird das Gerät nach ca. 1 Minute automatisch neu gestartet.
+3. Nachdem das Paket angewendet wurde, wird das Gerät nach ca. 1 Minute automatisch neu gestartet.
  ![Screenshot: Angeben von Name, Projektordner und Beschreibung in der Windows Configuration Designer-App](media/bulk-enroll-add.png)
 
 4. Wenn das Gerät neu gestartet wird, stellt es eine Verbindung mit Azure Active Directory her und registriert sich bei Microsoft Intune.
@@ -88,7 +86,7 @@ Für die Massenregistrierung von Windows-Geräten ist Folgendes erforderlich:
 Diese Bereitstellung ist für die Verwendung auf neuen Windows-Geräten gedacht. Bei Bereitstellungsfehlern ist möglicherweise ein Zurücksetzen des Geräts auf die Werkseinstellungen oder eine Wiederherstellung des Geräts von einem Startimage erforderlich. Folgende Beispiele beschreiben einige mögliche Gründe für Fehler bei der Bereitstellung:
 
 - Wenn ein Bereitstellungspaket versucht, ein Gerät in eine Active Directory-Domäne oder einen Azure Active Directory-Mandanten einzubinden, die bzw. der kein lokales Konto erstellt, ist das Gerät möglicherweise nicht erreichbar, wenn der Einbindungsprozess aufgrund einer nicht vorhandenen Netzwerkverbindung nicht durchgeführt werden kann.
-- Skripts werden vom Bereitstellungspaket im Systemkontext ausgeführt und können unvorhersehbare Änderungen an Dateisystem und Konfigurationen des Geräts vornehmen. Ein schädliches oder fehlerhaftes Skript kann das Gerät in einen Zustand versetzen, aus dem eine Wiederherstellung nur durch erneutes Aufspielen eines Images oder durch Zurücksetzen des Geräts auf die Werkseinstellungen möglich ist.
+- Skripts, die vom Bereitstellungspaket ausgeführt werden, werden im Systemkontext ausgeführt. Die Skripts können beliebige Änderungen am Gerätedateisystem und an den Konfigurationen vornehmen. Ein schädliches oder fehlerhaftes Skript kann das Gerät in einen Zustand versetzen, aus dem eine Wiederherstellung nur durch erneutes Aufspielen eines Images oder durch Zurücksetzen des Geräts auf die Werkseinstellungen möglich ist.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Probleme mit der Massenregistrierung und dem Unternehmensportal
 Wenn ein Benutzer versucht, ein Gerät zu registrieren, dass bereits in einer Massenregistrierung mit dem Unternehmensportal registriert wurde, erhält er eine Warnmeldung, dass für sein Gerät weitere Aktionen erforderlich sind, entweder die Einrichtung oder die Registrierung. Das Gerät wird registriert, aber die Registrierung wird werden von der Unternehmensportal-App oder der -Website erkannt.

@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 07/26/2017
+ms.date: 12/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,30 +15,16 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 40c3ca0207ed81af3212ad2ea04598654cab7198
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: b4e1fc203633a9624ce748ab1f36374c5322e3f7
+ms.sourcegitcommit: 061dab899e3fbc59b0128e2b4fbdf8ebf80afddd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>Konfigurieren von Windows 10-Editionsupgrades in Microsoft Intune
-
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-In diesem Thema erfahren Sie, wie Sie ein Profil für Windows 10 Editionsupgrades konfigurieren. Mit diesem Profil können Sie Geräte, auf denen eine der folgenden Windows 10-Versionen ausgeführt wird, automatisch auf eine andere Edition aktualisieren:
-
-- Windows 10 Home
-- Windows 10 Holographic
-- Windows 10 Mobile
-
-
-Die folgenden Upgradepfade werden unterstützt:
-
-- Von Windows 10 Pro auf Windows 10 Enterprise
-- Von Windows 10 Home auf Windows 10 Education
-- Von Windows 10 Mobile auf Windows 10 Mobile Enterprise
-- Von Windows 10 Holographic Pro auf Windows 10 Holographic Enterprise
-
+In diesem Artikel erfahren Sie, wie Sie ein Profil für Windows 10-Editionsupgrades konfigurieren. Mit diesem Profil können Sie für Geräte, auf denen eine Windows 10-Edition ausgeführt wird, automatisch ein Upgrade auf eine andere Edition durchführen: 
 
 ## <a name="before-you-start"></a>Vorbereitung
 Bevor Sie beginnen, Geräte auf die neueste Version zu aktualisieren, benötigen Sie eines der folgenden Dinge:
@@ -46,8 +32,76 @@ Bevor Sie beginnen, Geräte auf die neueste Version zu aktualisieren, benötigen
 - Einen gültigen Product Key für die Installation der neuen Version von Windows auf allen Geräten, die das Ziel dieser Richtlinie sind (für Windows 10-Desktopeditionen) Sie können entweder Mehrfachaktivierungsschlüssel (Multiple Activation Keys, MAK) oder KMS-Schlüssel (Key Management Server) oder eine Lizenzdatei von Microsoft verwenden, die die Lizenzierungsinformationen zum Installieren der neuen Version von Windows auf allen Geräten enthält, die das Ziel dieser Richtlinie sind (für Windows 10 Mobile- und Windows 10 Holographic-Editionen).
 - Die Windows 10-Geräte, für die Sie die Richtlinie zuweisen, müssen bei Microsoft Intune registriert sein. Die Editionsupgraderichtlinie kann nicht für PCs verwendet werden, auf denen die Intune-PC-Clientsoftware ausgeführt wird.
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Erstellen von Geräteprofilen mit Einstellungen für Geräteeinschränkungen
+## <a name="supported-upgrade-paths-for-the-windows-10-edition-upgrade-profile"></a>Unterstützte Upgradepfade für das Profil für Windows 10-Editionsupgrades
+Die folgenden Listen enthalten die unterstützten Upgradepfade für das Profil für Windows 10-Editionsupgrades. Die Windows 10-Edition, auf die Sie ein Upgrade durchgeführt werden soll, ist fett markiert, gefolgt von der Liste der unterstützten Editionen, von denen Sie ein Upgrade durchführen können:
 
+**Windows 10 Education**
+- Windows 10 Pro
+- Windows 10 Pro Education
+- Windows 10 Cloud
+- Windows 10 Enterprise
+- Windows 10 Core
+    
+**Windows 10 Education N-Edition**    
+- Windows 10 Pro N-Edition
+- Windows 10 Pro Education N-Edition
+- Windows 10 Cloud N-Edition
+- Windows 10 Enterprise N-Edition
+- Windows 10 Core N-Edition
+    
+**Windows 10 Enterprise**
+- Windows 10 Pro
+- Windows 10 Cloud
+- Windows 10 Core
+    
+**Windows 10 Enterprise N-Edition**
+- Windows 10 Pro N-Edition
+- Windows 10 Cloud N-Edition
+- Windows 10 Core N-Edition
+    
+**Windows 10 Pro**
+- Windows 10 Cloud
+    
+**Windows 10 Pro N-Edition**
+- Windows 10 Cloud N-Edition
+    
+**Windows 10 Pro Education**
+- Windows 10 Pro
+- Windows 10 Cloud
+- Windows 10 Core
+    
+**Windows 10 Pro Education N-Edition**
+- Windows 10 Pro N-Edition
+- Windows 10 Cloud N-Edition
+- Windows 10 Core N-Edition
+
+**Windows 10 Holographic for Business**
+- Windows 10 Holographic
+
+**Windows 10 Mobile Enterprise**
+- Windows 10 Mobile
+
+<!--The following table provides information about the supported upgrade paths for Windows 10 editions in this policy:
+
+![supported](./media/check_grn.png)  (X) = not supported    
+![unsupported](./media/x_blk.png)    (green checkmark) = supported    
+
+|Upgrade from edition\Upgrade to edition|Education|Education N|Pro Education|Pro Education N|Enterprise|Enterprise N|Professional|Professional N|Mobile Enterprise|Holographic for Business|
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+|Pro|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Pro N|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Pro Education|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Pro Education N|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Cloud|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Cloud N|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Enterprise|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Enterprise N|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Core|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)   |![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Core N|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Mobile|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|
+|Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png) -->
+
+## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Erstellen von Geräteprofilen mit Einstellungen für Geräteeinschränkungen
 1. Melden Sie sich beim Azure-Portal an.
 2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
@@ -57,10 +111,9 @@ Bevor Sie beginnen, Geräte auf die neueste Version zu aktualisieren, benötigen
 5. Wählen Sie in der Dropdownliste **Plattform** die Option **Windows 10 und höher** aus.
 6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Editionsupgrade** aus.
 7. Auf dem Blatt **Editionsupgrade** konfigurieren Sie folgende Einstellungen:
-    - **Edition, für die ein Upgrade ausgeführt werden soll:** Wählen Sie in der Dropdownliste die Windows 10-Version aus, für die auf den Geräten ein Upgrade durchgeführt werden soll.
     - **Edition, auf die ein Upgrade durchgeführt wird:** Wählen Sie in der Dropdownliste die Version von Windows 10 Desktop, Windows 10 Holographic oder Windows 10 Mobile aus, auf die die als Ziel angegebenen Geräte aktualisiert werden sollen.
     - **Product Key:** Geben Sie den Product Key an, den Sie von Microsoft erhalten haben, und der für das Upgrade aller als Ziel festgelegten Windows 10 Desktop-Geräte verwendet werden kann.<br>Nach der Erstellung einer Richtlinie, die einen Product Key enthält, können Sie den Product Key später nicht mehr bearbeiten. Grund hierfür ist, dass der Schlüssel aus Sicherheitsgründen verborgen wird. Um den Product Key zu ändern, müssen Sie den gesamten Schlüssel erneut eingeben.
-    - **Lizenzdatei:** Klicken Sie auf **Durchsuchen**, um die von Microsoft erhaltene Lizenzdatei auszuwählen, die Lizenzinformationen für die Windows Holographic-Edition oder für die Windows 10 Mobile-Edition enthält, auf die das Upgrade bei den als Ziel festgelegten Geräten erfolgen soll.
+    - **Lizenzdatei**: Klicken Sie auf **Durchsuchen**, um die von Microsoft erhaltene Lizenzdatei auszuwählen, die Lizenzinformationen für die Windows Holographic-Edition oder für die Windows 10 Mobile-Edition enthält, auf die das Upgrade bei den als Ziel festgelegten Geräten erfolgen soll.
 8. Navigieren Sie anschließend zurück zum Blatt **Profil erstellen**, und klicken Sie auf **Erstellen**.
 
 Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.

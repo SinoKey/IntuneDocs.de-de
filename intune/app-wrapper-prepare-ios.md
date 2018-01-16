@@ -5,7 +5,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4ef7c8bb8daa76c5555b5d55d06fc30a9bb6c317
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
+ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Vorbereiten von iOS-Apps für App-Schutzrichtlinien mit dem Intune App Wrapping Tool
 
@@ -215,7 +215,7 @@ Eine einfache Möglichkeit, das App Wrapping Tool auszuführen, besteht darin, a
 
 Öffnen Sie im Ordner „IntuneMAMPackager/Contents/MacOS“ `Parameters.plist` (eine leere PLIST-Vorlage) mit einem Text-Editor oder Xcode. Geben Sie Ihre Argumente für die folgenden Schlüssel:
 
-| PLIST-Schlüssel |  Standardwert| Anmerkungen |
+| PLIST-Schlüssel |  Standardwert| Hinweise |
 |------------------|--------------|-----|
 | Input Application Package Path  |empty| Identisch mit „-i“|
 | Output Application Package Path |empty| Identisch mit „-o“|
@@ -322,7 +322,7 @@ Vor dem Umschließen Ihrer App können Sie *Berechtigungen* erteilen, um der App
 
 1.  Aktivieren Sie Funktionen in Ihrer App:
 
-    a.  Navigieren Sie in Xcode zum Ziel Ihrer App, und klicken Sie auf **Funktionen**.
+    ein.  Navigieren Sie in Xcode zum Ziel Ihrer App, und klicken Sie auf **Funktionen**.
 
     b.  Aktivieren Sie die entsprechenden Funktionen. Ausführlichere Informationen zu jeder einzelnen Funktion und wie Sie die richtigen Werte bestimmen, finden Sie unter [Hinzufügen von Funktionen](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in der iOS-Entwicklerbibliothek.
 
@@ -332,7 +332,7 @@ Vor dem Umschließen Ihrer App können Sie *Berechtigungen* erteilen, um der App
 
 2.  Aktivieren Sie Berechtigungen in Ihrem Bereitstellungsprofil:
 
-    a.  Melden Sie sich beim „Apple Developer Member Center“ an.
+    ein.  Melden Sie sich beim „Apple Developer Member Center“ an.
 
     b.  Erstellen Sie ein Bereitstellungsprofil für Ihre App. Anleitungen hierzu finden Sie unter [Abrufen der erforderlichen Komponenten für das Intune App Wrapping Tool für iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
 
@@ -393,7 +393,19 @@ Verwenden Sie die folgenden bewährten Methoden zu Sicherheit und Datenschutz, w
 
 -   Wenn Sie den Dokumentordner auf Ihrem Gerät über eine umschlossenen App überwachen, sehen Sie möglicherweise einen Ordner namens „.msftintuneapplauncher“. Wenn Sie diese Datei ändern oder löschen, beeinträchtigt dies möglicherweise die ordnungsgemäße Funktionsweise der eingeschränkten Apps.
 
-### <a name="see-also"></a>Weitere Informationen:
+## <a name="getting-logs-for-your-wrapped-applications"></a>Abrufen von Protokollen für umschlossene Anwendungen
+Führen Sie die folgenden Schritte durch, um bei der Problembehandlung Protokolle für umschlossene Anwendungen zu erhalten.
+
+1. Navigieren Sie auf Ihrem Gerät zur App mit den iOS-Einstellungen, und wählen Sie Ihre branchenspezifische App aus.
+2. Schalten Sie **Diagnosekonsole** auf **Ein** um.
+3. Starten Sie die Branchenanwendung.
+4. Klicken Sie auf den Link „Erste Schritte“.
+5. Sie können jetzt Protokolle per E-Mail freigeben oder sie an einen OneDrive-Speicherort kopieren.
+
+>[!NOTE]
+Die Protokollierungsfunktionalität ist für Apps aktiviert, die mit dem Intune App Wrapping Tool Version 7.1.13 oder höher umschlossen wurden.
+
+### <a name="see-also"></a>Siehe auch
 - [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
 - [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
 - [Verwenden des SDK zum Aktivieren von Apps für die Verwaltung von mobilen Anwendungen](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
