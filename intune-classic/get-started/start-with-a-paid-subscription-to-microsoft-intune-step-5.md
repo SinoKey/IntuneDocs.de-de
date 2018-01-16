@@ -6,7 +6,7 @@ author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 02/14/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 21fe439a229dfa81b11c001b71df073e4522a752
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 309994268b061f844e26dea8df8ce3c0fd237e95
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="create-groups-to-organize-users-and-devices"></a>Erstellen von Gruppen zum Organisieren von Benutzern und Geräten
 
@@ -69,7 +69,7 @@ Sie finden die neue Gruppe in der Liste **Gruppen** im Arbeitsbereich **Gruppen*
 ## <a name="create-a-user-group"></a>Erstellen einer Benutzergruppe
 Verwenden Sie Benutzergruppen, um Software- und Geräterichtlinien bereitzustellen. Richten Sie z. B. die Gruppe „Intune-Benutzer“ mithilfe der folgenden Schritte ein:
 
-1.  Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com/) **Gruppen** > **Übersicht** > **Gruppe erstellen** aus.
+1.  Wählen Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) **Gruppen** > **Übersicht** > **Gruppe erstellen** aus.
 
 2.  Geben Sie unter **Gruppenname** „Intune-Benutzer“ ein, und wählen Sie aus der übergeordneten Gruppenliste **Alle Benutzer** und anschließend **Weiter** aus.
 

@@ -16,13 +16,13 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bb39ff625034c00f70d5e7f28a7982fc1f40d0f2
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 726c3d052b62dbcab82f75cc82ce39b72bcbef94
+ms.sourcegitcommit: 4401890db054657954a8b3947de1f4308f4da170
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/11/2018
 ---
-## <a name="how-to-turn-off-microsoft-data-collection"></a>Deaktivieren der Datensammlung durch Microsoft
+# <a name="how-to-turn-off-microsoft-data-collection"></a>Deaktivieren der Datensammlung durch Microsoft
 
 Microsoft sammelt automatisch bestimmte Daten zu Microsoft-Produkten und -Diensten. Dies dient dazu, die Zuverlässigkeit und Leistungsfähigkeit der Microsoft-Produkte, wie z.B. der Unternehmensportal-App, zu verbessern. Auch wenn diese Daten anonymisiert sind, sind einige Benutzer möglicherweise mit der Sammlung nicht einverstanden. Die Supportabteilung Ihres Unternehmens hat keine Kontrolle über die Sammlung dieser Daten und kann Ihre Auswahl für die Einstellung nicht ändern.
 

@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
-ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
+ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Verwenden Sie ein benutzerdefiniertes Geräteprofil zum Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -28,9 +28,9 @@ Erfahren Sie, wie Sie mithilfe von **benutzerdefinierten Geräteprofilen** in In
 
 > [!NOTE]
 -   Möglicherweise ist es für Sie einfacher, den Code von einem Computer zu kopieren, der eine Verbindung mit dem jeweiligen Netzwerk herstellt, wie unten beschrieben.
-- Bei Android haben Sie auch die Möglichkeit, diesen von Johnathon Biersack bereitgestellten [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) zu verwenden.
+- Bei Android haben Sie auch die Möglichkeit, diesen von Johnathon Biersack bereitgestellten [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) zu verwenden.
 -   Sie können mehrere Netzwerke und Schlüssel hinzufügen, indem Sie weitere OMA-URI-Einstellungen hinzufügen.
--  Verwenden Sie für iOS den Apple Configurator auf einer Mac-Station, um das Profil einzurichten. Verwenden Sie alternativ diesen [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/), der von Johnathon Biersack bereitgestellt wird.
+-  Verwenden Sie für iOS den Apple Configurator auf einer Mac-Station, um das Profil einzurichten. Verwenden Sie alternativ diesen [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/), der von Johnathon Biersack bereitgestellt wird.
 
 
 1.  Um ein WLAN-Profil mit einem vorinstallierten Schlüssel für Android oder Windows oder ein EAP-basiertes WLAN-Profil zu erstellen, wählen Sie beim Erstellen eines Geräteprofils anstelle eines WLAN-Profils die Option **Benutzerdefiniert** für die jeweilige Geräteplattform aus.
@@ -38,7 +38,7 @@ Erfahren Sie, wie Sie mithilfe von **benutzerdefinierten Geräteprofilen** in In
 2.  Geben Sie einen Namen und eine Beschreibung an.
 3.  Fügen Sie eine neue OMA-URI-Einstellung hinzu:
 
-   a.   Geben Sie einen Namen für diese WLAN-Netzwerkeinstellung ein.
+   ein.   Geben Sie einen Namen für diese WLAN-Netzwerkeinstellung ein.
 
    b.   Geben Sie eine Beschreibung für die OMA-URI-Einstellung ein, oder lassen Sie sie leer.
 
