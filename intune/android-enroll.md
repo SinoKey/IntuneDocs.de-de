@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 12/07/2017
+ms.date: 01/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad018bdfa55b030f5d714017ae09f616ae2bf164
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 7877d0bb6ba7a9c9d51cd261a7f1fbf555f88961
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="enroll-android-devices"></a>Registrieren von Android-Geräten
 
@@ -75,7 +75,7 @@ Sie müssen die Unternehmensportal-App für Android im verwalteten Google Play S
 
 Führen Sie die folgenden Schritte durch, um das Intune-Unternehmensportal zu genehmigen:
 
-1.  Laden Sie die Unternehmensportal-App aus dem [verwalteten Google Play Store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal) herunter.
+1.  Suchen Sie die Unternehmensportal-App im [verwalteten Google Play Store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
 2.  Melden Sie sich beim verwalteten Google Play Store mit dem gleichen Google-Konto an, mit dem Sie die Bindung für Android for Work konfiguriert haben.
 3.  Klicken Sie auf **Genehmigen**.  Hierdurch wird ein neues Dialogfeld geöffnet.
 4.  Überprüfen Sie die Berechtigungen in diesem Dialogfeld, und klicken Sie dann auf **Genehmigen**. Sie müssen diese Berechtigungen zulassen, um der Unternehmensportal-App die Verwaltung des Arbeitsprofils auf dem Gerät zu ermöglichen.

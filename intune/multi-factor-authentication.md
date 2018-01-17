@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 10/31/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: 
 ms.custom: intune-azure
-ms.openlocfilehash: b8fb7745cf7d1d874b890210ef9c75c2a11f12ef
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: dfadab1f412752d9857a2f6777481fa761cd1d4c
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Multi-Factor Authentication für Intune-Geräteregistrierungen
 
@@ -39,6 +39,9 @@ Wenn Sie MFA aktivieren, müssen Benutzer zwei Formen von Anmeldeinformationen a
 ## <a name="configure-intune-to-require-multi-factor-authentication-at-device-enrollment"></a>Konfigurieren von Intune für das Anfordern der mehrstufigen Authentifizierung bei der Geräteregistrierung
 
 Befolgen Sie die folgenden Schritte, um MFA anzufordern, wenn ein Gerät registriert wird:
+
+[!Important]
+>Ihren Benutzern muss ein Azure Active Directory Premium P1-Abonnement oder höher zugewiesen sein, damit Sie diese Richtlinie implementieren können.
 
 >[!Important]
 >Konfigurieren Sie keine **gerätebasierten Zugriffsregeln** für die Microsoft Intune-Registrierung.
