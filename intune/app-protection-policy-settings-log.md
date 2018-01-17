@@ -15,13 +15,13 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b281a6b618e945750b5d5dec278e4ddc6166276
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 8eb231a225a642e4ccdd538f307442921633ddaf
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/11/2018
 ---
-# <a name="review-app-protection-logs-in-the-managed-browser"></a>Prüfung der App-Schutzprotokolle in Managed Browser
+# <a name="review-client-app-protection-logs"></a>Überprüfen der Schutzprotokolle für Client-Apps
 
 Durch Aktivieren des Intune-Diagnosemodus für eine Anwendung auf einem mobilen Client können Sie auf die Protokolle zugreifen. Die folgende Tabelle zeigt den Namen und eine Erklärung für die Einstellungen, die im Protokoll aufgezeichnet werden.
 

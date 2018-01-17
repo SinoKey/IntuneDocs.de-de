@@ -5,20 +5,20 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 07/07/2017
+ms.date: 01/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
-ms.reviewer: oldang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bc907e5671fcd6c7b777f3bc95a533503d85ca64
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: a691786ce2ee975086899844b285a91f676aa71f
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Vorbereiten von Android-Apps für App-Schutzrichtlinien mit dem Intune App Wrapping Tool
 
@@ -113,6 +113,14 @@ Sie werden zur Eingabe von **KeyStorePassword** und **KeyPassword**aufgefordert.
 
 Es wird sowohl die umschlossene App als auch eine Protokolldatei generiert und in dem von Ihnen angegebenen Ausgabepfad gespeichert.
 
+## <a name="how-often-should-i-rewrap-my-android-application-with-the-intune-app-wrapping-tool"></a>Wie häufig sollten Android-Anwendungen mithilfe des App Wrapping Tools von Intune erneut umschlossen werden?
+In den folgenden Hauptszenarios besteht die Notwendigkeit, Anwendungen erneut zu umschließen:
+* Die Anwendung hat eine neue Version veröffentlicht.
+* Das App Wrapping Tool von Intune für Android hat eine neue Version veröffentlicht, mit der wichtige Fehler behoben oder neue Intune-spezifische Richtlinienfunktionen zum Schutz von Anwendungen eingeführt werden. Dies geschieht alle sechs bis acht Wochen über das GitHub-Repository für das [App Wrapping Tool von Microsoft Intune für Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android).
+
+Im Folgenden werden bewährte Methoden für das erneute Umschließen aufgeführt: 
+* Verwalten von im Buildvorgang verwendeten Signaturzertifikaten. Informationen dazu finden Sie im Abschnitt [Wiederverwendung von Signaturzertifikaten und Umschließen von Apps](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps).
+
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Wiederverwendung von Signaturzertifikaten und Umschließen von Apps
 Für Android müssen alle Apps durch ein gültiges Zertifikat signiert sein, um auf Android-Geräten installiert werden zu können.
 
@@ -137,7 +145,7 @@ So verhindern Sie ein mögliches Spoofing, das Offenlegen von Informationen und 
 
 -   Sichern Sie das Ausgabeverzeichnis, das die umschlossene Anwendung enthält. Erwägen Sie für die Ausgabe ein Verzeichnis auf Benutzerebene zu verwenden.
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 - [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](apps-prepare-mobile-application-management.md)
 
 - [Verwenden des SDK zum Aktivieren von Apps für die Verwaltung von mobilen Anwendungen](/intune/classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

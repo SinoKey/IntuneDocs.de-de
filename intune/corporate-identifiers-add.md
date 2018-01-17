@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1095ef736488754296eca4f21b2bf10226b43847
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: a278a0ca4614611685420cfeed898270926cd9ca
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identifizieren von Geräten als unternehmenseigen
 
@@ -27,13 +27,15 @@ ms.lasthandoff: 01/03/2018
 
 Als Intune-Administrator können Sie Geräte als unternehmenseigen identifizieren, um die Verwaltung und Identifizierung zu optimieren. Intune kann zusätzliche Verwaltungsaufgaben durchführen und zusätzliche Informationen sammeln, wie etwa die vollständige Telefonnummer und einen Bestand an Apps von unternehmenseigenen Geräten. Sie haben auch die Möglichkeit, Gerätebeschränkungen festzulegen, um die Registrierung von Geräten, die kein Unternehmenseigentum sind, zu blockieren.
 
-Ein Gerät gilt als unternehmenseigenes Gerät, wenn eine der folgenden Bedingungen zutrifft:
+Bei der Registrierung weist Intune automatisch den Geräten, die eine der folgenden Bedingungen erfüllen, den Status „Unternehmenseigen“ zu:
 
 - Mit einem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md)-Konto registriert (alle Plattformen)
 - Mit dem [Apple-Programm zur Geräteregistrierung](device-enrollment-program-enroll-ios.md), dem [Apple School Manager](apple-school-manager-set-up-ios.md) oder dem [Apple Configurator](apple-configurator-enroll-ios.md) registriert (iOS-Geräte).
 - Mit einer IMEI-Nummer (alle Plattformen mit IMEI-Nummern) oder Seriennummer (iOS und Android) [vor der Registrierung als unternehmenseigen identifiziert](#identify-corporate-owned-devices-with-imei-or-serial-number)
 - In Azure Active Directory oder Enterprise Mobility + Security als Windows 10 Enterprise-Gerät registriert
-- Zu den Eigenschaften des Geräts zählt der [Gerätebesitz als unternehmenseigen](#change-device-ownership)
+- In den [Geräteeigenschaften](#change-device-ownership) als „Unternehmen“ festgelegt
+
+Nach der Registrierung können Sie in den [Besitzeinstellungen](#change-device-ownership) zwischen **Persönlich** und **Unternehmen** wechseln.
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Identifizieren von unternehmenseigenen Geräten mit IMEI- oder Seriennummer
 
