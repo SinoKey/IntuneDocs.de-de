@@ -6,51 +6,51 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 1/8/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf39d06bb033f15a667a88f7628bcfc1401a275e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 2774b59001cb4ce277048e60a81243cde15cb53d
+ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Windows 10 und höher in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Allgemein
--   **Bildschirmaufnahme (nur Mobilgerät):** Erlaubt dem Benutzer, den Bildschirm des Geräts als Bild zu erfassen.
--   **Kopieren und einfügen (nur mobil):** Erlaubt Kopier- und Einfügevorgänge zwischen Apps auf dem Gerät.
--   **Manuelle Aufhebung der Registrierung:** Erlaubt dem Benutzer das manuelle Löschen des Unternehmensbereichskontos vom Gerät.
--   **Manuelle Installation von Stammzertifikaten (nur Mobilgerät):** Hindert den Benutzer daran, Stammzertifikate und CAP-Zwischenzertifikate manuell zu installieren.
--   **Übermitteln von Diagnosedaten:** Mögliche Werte:
+- **Bildschirmaufnahme (nur Mobilgerät):** Erlaubt dem Benutzer, den Bildschirm des Geräts als Bild zu erfassen.
+- **Kopieren und einfügen (nur mobil):** Erlaubt Kopier- und Einfügevorgänge zwischen Apps auf dem Gerät.
+- **Manuelle Aufhebung der Registrierung:** Erlaubt dem Benutzer das manuelle Löschen des Unternehmensbereichskontos vom Gerät.
+- **Manuelle Installation von Stammzertifikaten (nur Mobilgerät):** Hindert den Benutzer daran, Stammzertifikate und CAP-Zwischenzertifikate manuell zu installieren.
+- **Übermitteln von Diagnosedaten:** Mögliche Werte:
     - **Keine**: Es werden keine Daten an Microsoft gesendet.
     - **Einfach** – begrenzte Informationen werden an Microsoft gesendet
     - **Erweitert**: Es werden erweiterte Diagnosen an Microsoft gesendet.
     - **Vollständig:** Das Gerät sendet die gleichen Daten wie mit „Erweitert“ sowie zusätzliche Daten über den Gerätezustand.
--   **Kamera:** Erlaubt oder sperrt die Verwendung der Kamera auf dem Gerät.
--   **OneDrive-Dateisynchronisierung:** Hindert das Gerät daran, Dateien mit OneDrive zu synchronisieren.
--   **Wechselmedien:** Gibt an, ob externe Speichergeräte wie SD-Karten mit dem Gerät verwendet werden können.
--   **Geolocation:** Gibt an, ob das Gerät Standortdienstinformationen verwenden kann.
--   **Internetfreigabe:** Erlaubt die gemeinsame Nutzung der Internetverbindung auf dem Gerät.
--   **Zurücksetzung des Telefons:** Steuert, ob Benutzer ihre Geräte auf die Werkseinstellungen zurücksetzen können.
--   **USB-Verbindung (nur Mobilgerät):** Steuert, ob Geräte über eine USB-Verbindung auf externe Speichergeräte zugreifen können.
--   **AntiTheft-Modus (nur Mobilgerät)**: Konfigurieren Sie, ob der Windows-AntiTheft-Modus aktiviert ist.
--   **Cortana:** Aktiviert oder deaktiviert den Cortana-Sprach-Assistenten.
--   **Sprachaufzeichnung (nur Mobilgerät):** Erlaubt oder sperrt die Verwendung der Sprachaufzeichnung des Geräts.
--   **Bearbeitung des Gerätenamens:** Verhindert, dass der Endbenutzer den Gerätenamen ändert (nur Windows 10 Mobile).
--   **Bereitstellungspakete hinzufügen:** Blockiert den Laufzeitkonfigurations-Agent, der Bereitstellungspakete installiert.
--   **Bereitstellungspakete entfernen:** Blockiert den Laufzeitkonfigurations-Agent, der Bereitstellungspakete entfernt.
--   **Geräteerkennung:** Verhindert, dass ein Gerät von anderen Geräten erkannt wird.
--   **Programmumschaltung (nur mobile Geräte):** Blockiert die Programmumschaltung auf dem Gerät.
--   **Dialogfeld bei SIM-Kartenfehler (nur mobile Geräte):** Blockiert die Anzeige einer Fehlermeldung auf dem Gerät, wenn keine SIM-Karte erkannt wird.
+- **Kamera:** Erlaubt oder sperrt die Verwendung der Kamera auf dem Gerät.
+- **OneDrive-Dateisynchronisierung:** Hindert das Gerät daran, Dateien mit OneDrive zu synchronisieren.
+- **Wechselmedien:** Gibt an, ob externe Speichergeräte wie SD-Karten mit dem Gerät verwendet werden können.
+- **Geolocation:** Gibt an, ob das Gerät Standortdienstinformationen verwenden kann.
+- **Internetfreigabe:** Erlaubt die gemeinsame Nutzung der Internetverbindung auf dem Gerät.
+- **Zurücksetzung des Telefons:** Steuert, ob Benutzer ihre Geräte auf die Werkseinstellungen zurücksetzen können.
+- **USB-Verbindung (nur Mobilgerät):** Steuert, ob Geräte über eine USB-Verbindung auf externe Speichergeräte zugreifen können.
+- **AntiTheft-Modus (nur Mobilgerät)**: Konfigurieren Sie, ob der Windows-AntiTheft-Modus aktiviert ist.
+- **Cortana:** Aktiviert oder deaktiviert den Cortana-Sprach-Assistenten.
+- **Sprachaufzeichnung (nur Mobilgerät):** Erlaubt oder sperrt die Verwendung der Sprachaufzeichnung des Geräts.
+- **Bearbeitung des Gerätenamens:** Verhindert, dass der Endbenutzer den Gerätenamen ändert (nur Windows 10 Mobile).
+- **Bereitstellungspakete hinzufügen:** Blockiert den Laufzeitkonfigurations-Agent, der Bereitstellungspakete installiert.
+- **Bereitstellungspakete entfernen:** Blockiert den Laufzeitkonfigurations-Agent, der Bereitstellungspakete entfernt.
+- **Geräteerkennung:** Verhindert, dass ein Gerät von anderen Geräten erkannt wird.
+- **Programmumschaltung (nur mobile Geräte):** Blockiert die Programmumschaltung auf dem Gerät.
+- **Dialogfeld bei SIM-Kartenfehler (nur mobile Geräte):** Blockiert die Anzeige einer Fehlermeldung auf dem Gerät, wenn keine SIM-Karte erkannt wird.
+- **Automatische erneute Bereitstellung:** Ermöglicht es Benutzern mit Administratorrechten, alle Benutzerdaten und -einstellungen über **STRG+Windows+R** vom Sperrbildschirm des Geräts aus zu löschen. Das Gerät wird automatisch neu konfiguriert und bei der Verwaltung neu registriert.
 
 
 ## <a name="password"></a>Kennwort
@@ -68,19 +68,68 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
 
 ## <a name="personalization"></a>Personalization
 
--   **URL zu Desktophintergrundbild (nur Desktop):** Gibt die URL zu einem Bild im PNG-, JPG- oder JPEG-Format an, das Sie als Windows-Desktophintergrund verwenden möchten. Benutzer können dies nicht ändern.
+- **URL zu Desktophintergrundbild (nur Desktop):** Gibt die URL zu einem Bild im PNG-, JPG- oder JPEG-Format an, das Sie als Windows-Desktophintergrund verwenden möchten. Benutzer können diese nicht ändern.
 
 ## <a name="privacy"></a>Datenschutz
 
 -   **Eingabepersonalisierung:** Verhindert die Verwendung cloudbasierter Sprachdienste für Cortana, Diktierfunktionen oder Microsoft Store-Apps. Wenn Sie diese Dienste zulassen, kann Microsoft Voice-Daten erfassen, um den Dienst zu verbessern.
 -   **Automatisches Akzeptieren der Zustimmungsaufforderung des Benutzers zu Kopplung und Datenschutz:** Erlaubt Windows beim Ausführen von Apps das automatische Akzeptieren von Benachrichtigungen zur Zustimmung zu Kopplung und Datenschutz.
 
+Sie können Informationen definieren, auf die alle Anwendungen auf dem Gerät zugreifen können. Zudem können Sie mithilfe von **App-bezogenen Datenschutzausnahmen** Ausnahmen für jede App definieren.
 
-## <a name="locked-screen-experience"></a>Sperrbildschirm
+### <a name="exceptions"></a>Ausnahmen
 
+- **Kontoinformationen**: Legen Sie fest, ob diese App auf den Benutzernamen, das Bild und andere Kontaktinformationen zugreifen darf.
+- **Hintergrund-Apps**: Legen Sie fest, ob diese App im Hintergrund ausgeführt werden darf.
+- **Kalender**: Legen Sie fest, ob diese App auf den Kalender zugreifen darf.
+- **Anrufliste**: Legen Sie fest, ob diese App auf Ihre Anrufliste zugreifen darf.
+- **Kamera**: Legen Sie fest, ob diese App auf die Kamera zugreifen darf.
+- **Kontakte**: Legen Sie fest, ob diese App auf Kontakte zugreifen darf.
+- **E-Mail**: Legen Sie fest, ob diese App auf E-Mails zugreifen und diese versenden darf.
+- **Standort**: Legen Sie fest, ob diese App auf Standortinformationen zugreifen darf.
+- **Nachrichten**: Legen Sie fest, ob diese App SMS oder MMS-Nachrichten lesen oder senden darf.
+- **Mikrofon**: Legen Sie fest, ob diese App das Mikrofon verwenden darf.
+- **Bewegung**: Legen Sie fest, ob diese App auf die Gerätebewegungsinformationen zugreifen darf.
+- **Benachrichtigungen**: Legen Sie fest, ob diese App auf Benachrichtigungen zugreifen darf.
+- **Telefon**: Legen Sie fest, ob diese App auf das Telefon zugreifen darf.
+- **Radios**: Einige Apps verwenden Radios (z.B. Bluetooth) auf Ihrem Gerät, um Daten zu senden und zu empfangen, und müssen diese Radios ein- oder ausschalten. Legen Sie fest, ob diese App diese Radios steuern kann.
+- **Aufgaben**: Legen Sie fest, ob diese App auf Ihre Aufgaben zugreifen darf.
+- **Vertrauenswürdige Geräte**: Legen Sie fest, ob diese App vertrauenswürdige Geräte verwenden darf, d.h. bereits angeschlossene oder im Lieferumfang dieses PC, Tablets oder Telefons enthaltene Hardware. Hierzu zählen z.B. TV-Geräte und Projektoren.
+- **Feedback und Diagnose**: Legen Sie fest, ob diese App auf Diagnoseinformationen zugreifen darf.
+- **Mit Geräten synchronisieren**: Legen Sie fest, ob diese App automatisch Informationen mit Drahtlosgeräten teilen und synchronisieren darf, die nicht explizit mit Ihrem PC, Tablet oder Telefon gekoppelt sind.
 
--   **Info-Center-Benachrichtigungen (nur Mobilgerät):** Lässt Info-Center-Benachrichtigungen auf dem Gerätesperrbildschirm anzeigen (nur Windows 10 Mobile).
--   **URL zu Bild für gesperrten Bildschirm (nur Desktop):** Gibt die URL zu einem Bild im PNG-, JPG- oder JPEG-Format an, das als Hintergrund für den Windows-Sperrbildschirm verwendet wird. Benutzer können dies nicht ändern.
+## <a name="per-app-privacy-exceptions"></a>App-bezogene Datenschutzausnahmen
+
+Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als das unter „Standarddatenschutz“ definierte Verhalten.
+
+- **Paketname**: App-Paketfamilienname
+- **Name**: Der Name der App
+
+### <a name="exceptions"></a>Ausnahmen
+
+- **Kontoinformationen**: Legen Sie fest, ob diese App auf den Benutzernamen, das Bild und andere Kontaktinformationen zugreifen darf.
+- **Hintergrund-Apps**: Legen Sie fest, ob diese App im Hintergrund ausgeführt werden darf.
+- **Kalender**: Legen Sie fest, ob diese App auf den Kalender zugreifen darf.
+- **Anrufliste**: Legen Sie fest, ob diese App auf Ihre Anrufliste zugreifen darf.
+- **Kamera**: Legen Sie fest, ob diese App auf die Kamera zugreifen darf.
+- **Kontakte**: Legen Sie fest, ob diese App auf Kontakte zugreifen darf.
+- **E-Mail**: Legen Sie fest, ob diese App auf E-Mails zugreifen und diese versenden darf.
+- **Standort**: Legen Sie fest, ob diese App auf Standortinformationen zugreifen darf.
+- **Nachrichten**: Legen Sie fest, ob diese App SMS oder MMS-Nachrichten lesen oder senden darf.
+- **Mikrofon**: Legen Sie fest, ob diese App das Mikrofon verwenden darf.
+- **Bewegung**: Legen Sie fest, ob diese App auf die Gerätebewegungsinformationen zugreifen darf.
+- **Benachrichtigungen**: Legen Sie fest, ob diese App auf Benachrichtigungen zugreifen darf.
+- **Telefon**: Legen Sie fest, ob diese App auf das Telefon zugreifen darf.
+- **Radios**: Einige Apps verwenden Radios (z.B. Bluetooth) auf Ihrem Gerät, um Daten zu senden und zu empfangen, und müssen diese Radios ein- oder ausschalten. Legen Sie fest, ob diese App diese Radios steuern kann.
+- **Aufgaben**: Legen Sie fest, ob diese App auf Ihre Aufgaben zugreifen darf.
+- **Vertrauenswürdige Geräte**: Legen Sie fest, ob diese App vertrauenswürdige Geräte verwenden darf, d.h. bereits angeschlossene oder im Lieferumfang dieses PC, Tablets oder Telefons enthaltene Hardware. Hierzu zählen z.B. TV-Geräte und Projektoren.
+- **Feedback und Diagnose**: Legen Sie fest, ob diese App auf Diagnoseinformationen zugreifen darf.
+- **Mit Geräten synchronisieren**: Legen Sie fest, ob diese App automatisch Informationen mit Drahtlosgeräten teilen und synchronisieren darf, die nicht explizit mit Ihrem PC, Tablet oder Telefon gekoppelt sind.
+
+## <a name="locked-screen-experience"></a>Gesperrter Bildschirm
+
+- **Info-Center-Benachrichtigungen (nur Mobilgerät):** Lässt Info-Center-Benachrichtigungen auf dem Gerätesperrbildschirm anzeigen (nur Windows 10 Mobile).
+- **URL zu Bild für gesperrten Bildschirm (nur Desktop):** Gibt die URL zu einem Bild im PNG-, JPG- oder JPEG-Format an, das als Hintergrund für den Windows-Sperrbildschirm verwendet wird. Benutzer können diese nicht ändern.
 -   **Vom Benutzer konfigurierbares Bildschirmtimeout (nur Mobilgeräte):** Ermöglicht Benutzern das Einstellen der Zeitspanne. 
 -   **Cortana auf Sperrbildschirm (nur Desktop):** Lässt nicht zu, dass der Benutzer mit Cortana interagiert, wenn auf dem Gerät der Sperrbildschirm zu sehen ist (nur Windows 10 Desktop).
 -   **Popupbenachrichtigungen auf Sperrbildschirm:** Verhindert, dass Warnmeldungen auf dem Gerätesperrbildschirm angezeigt werden.
@@ -125,17 +174,17 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
     -   **URL für erste Ausführung:** Gibt die URL einer Seite an, die bei der ersten Ausführung von Edge angezeigt wird (nur Windows 10 Mobile).
 -   **Startseiten:** Fügt eine Liste der Websites hinzu, die Sie im Edge-Browser als Startseiten verwendet möchten (nur Desktop).
 -   **Änderungen an Startseite:** Ermöglicht Benutzern das Ändern der Startseiten, die beim Öffnen von Edge angezeigt werden. Nutzen Sie die Einstellung der Startseiten, um die Seite oder Liste von Seiten zu erstellen, die beim Starten von Edge geöffnet werden.
--   **Zugriff auf about:flags-Seite blockieren:** Hindert den Benutzer am Zugriff auf die about:flags-Seite in Edge, die Entwicklungs- und experimentelle Einstellungen enthält.
+-   **Zugriff auf about:flags-Seite blockieren:** Hindert den Benutzer am Zugriff auf die about:flags-Seite in Edge, die Entwickler- und experimentelle Einstellungen enthält.
 -   **WebRTC-LocalHost-IP-Adresse:** Blockiert die Anzeige der Localhost-IP-Adresse des Benutzers bei Anrufen über das Internet-RTC-Protokoll.
 -   **Standardsuchmodul:** Gibt das zu verwendende Standardsuchmodul an. Endbenutzer können diesen Wert jederzeit ändern.
 -   **Browserdaten beim Beenden löschen:** Löscht Verlauf und Browserdaten, wenn der Benutzer Edge beendet.
 -   **Datenerfassung für Livekacheln:** Beendet das Sammeln von Daten durch Windows aus den Livekacheln, wenn der Benutzer eine Seite an das Startmenü von Edge anheften.
 
-## <a name="edge-browser-smartscreen"></a>Edge-Browser SmartScreen
+## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
--   **SmartScreen:** Aktiviert oder deaktiviert den SmartScreen, durch den betrügerische Websites blockiert werden.
--   **SmartScreen-Aufforderung außer Kraft setzen:** Ermöglicht dem Endbenutzer, SmartScreen-Filterwarnungen zu potenziell bösartigen Websites zu umgehen.
--   **SmartScreen-Aufforderung für Dateien außer Kraft setzen:** Ermöglicht dem Endbenutzer, SmartScreen-Filterwarnungen zum Herunterladen potenziell bösartiger Dateien zu umgehen.
+- **SmartScreen für Microsoft Edge**: Aktivieren Sie Edge SmartScreen für den Zugriff auf Website- und Dateidownloads.
+- **Zugriff auf schädliche Websites**: Hindern Sie Benutzer daran, die Warnungen des Windows Defender SmartScreen-Filters zu ignorieren, und blockieren Sie sie, damit sie die Website nicht besuchen.
+- **Download nicht überprüfter Dateien**: Hindern Sie Benutzer daran, die Warnungen des Windows Defender SmartScreen-Filters zu ignorieren, und blockieren Sie sie, damit sie nicht überprüfte Dateien herunterladen.
 
 ## <a name="search"></a>Suchen
 - **SafeSearch (nur Mobilgeräte):** Steuert, wie Cortana nicht jugendfreie Inhalte in den Suchergebnissen filtert. Sie können **Streng** oder **Mittel** auswählen oder dem Endbenutzer ermöglichen, seine eigenen Einstellungen zu wählen.
@@ -182,9 +231,30 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
     -   **Datenschutz:** Blockiert den Zugriff auf den Datenschutzbereich der Einstellungen-App.
     -   **Update und Sicherheit:** Blockiert den Zugriff auf den Update- und Sicherheitsbereich der Einstellungen-App.
 
-## <a name="kiosk"></a>Kiosk
+## <a name="start"></a>Starten
 
--   **Kioskmodus**: Gibt den Typ des [Kioskmodus](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) an, der von der Richtlinie unterstützt wird.  Zu den Optionen gehören:
+- **Apps von der Taskleiste lösen:** Hindert den Benutzer daran, Apps vom Startmenü zu lösen.
+- **Dokumente im Startmenü:** Blendet den Ordner „Dokumente“ im Windows-Startmenü aus oder ein.
+- **Downloads im Startmenü:** Blendet den Ordner „Downloads“ im Windows-Startmenü aus oder ein.
+- **Datei-Explorer im Startmenü:** Blendet die Datei-Explorer-App im Windows-Startmenü aus oder ein.
+- **Heimnetzgruppe im Startmenü:** Blendet den Ordner „Heimnetzgruppe“ im Windows-Startmenü aus oder ein.
+- **Musik im Startmenü:** Blendet den Ordner „Musik“ im Windows-Startmenü aus oder ein.
+- **Netzwerk im Startmenü:** Blendet den Ordner „Netzwerk“ im Windows-Startmenü aus oder ein.
+- **Persönlicher Ordner im Startmenü**: Blendet den persönlichen Ordner im Windows-Startmenü aus oder ein.
+- **Bilder im Startmenü:** Blendet den Ordner für Bilder im Windows-Startmenü aus oder ein.
+- **Einstellungen im Startmenü:** Blendet die Einstellungen-App im Windows-Startmenü aus oder ein.
+- **Videos im Startmenü:** Blendet den Ordner für Videos im Windows-Startmenü aus oder ein.
+
+## <a name="display"></a>Anzeige
+
+- **GDI-Skalierung für Apps aktivieren**
+- **GDI-Skalierung für Apps deaktivieren**
+
+  Mit der GDI-DPI-Skalierung können Apps, die nicht mit DPI-Werten kompatibel sind, mit monitorspezifischen DPI-Werten kompatibel sein. Geben Sie die Legacy-Apps an, bei denen die GDI-DPI-Skalierung aktiviert ist. Wenn die GDI-DPI-Skalierung so konfiguriert ist, dass sie sowohl ein- als auch ausgeschaltet wird, wird die Skalierung für die App deaktiviert.
+
+## <a name="kiosk-preview"></a>Kiosk (Vorschauversion)
+
+-   **Kioskmodus**: Gibt den Typ des [Kioskmodus](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) an, der von der Richtlinie unterstützt wird. Zu den Optionen gehören:
 
       - **Nicht konfiguriert**: (Standard). Die Richtlinie aktiviert keinen Kioskmodus. 
       - **Kiosk mit einzelner App**: Das Profil aktiviert das Gerät als Kiosk mit einer einzelnen App.
@@ -192,25 +262,25 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
 
     Für Kioske mit einer einzelnen App sind die folgenden Einstellungen erforderlich:
 
-      - **Benutzerkonto**: Gibt das (auf das Gerät bezogen) lokale Benutzerkonto oder die Azure AD-Kontoanmeldung an, das bzw. die der Kiosk-App zugeordnet ist.  Geben Sie für Konten, die Mitglieder von Azure AD-Domänen sind, das Konto in der Form `domain\\username@tenant.org` an.
+      - **Benutzerkonto**: Gibt das (auf das Gerät bezogen) lokale Benutzerkonto oder die Azure AD-Kontoanmeldung an, das bzw. die der Kiosk-App zugeordnet ist. Geben Sie für Konten, die Mitglieder von Azure AD-Domänen sind, das Konto in der Form `domain\\username@tenant.org` an.
 
          Verwenden Sie für Geräte in öffentlichen Umgebungen Konten mit minimalen Berechtigungen, um autorisierte Aktivitäten zu verhindern.  
 
-      - **Anwendungsbenutzermodell-ID (AUMID) der App**: Gibt die AUMID der Kiosk-App an.  Weitere Informationen finden Sie unter [Find the Application User Model ID of an installed app (Ermitteln der Anwendungsbenutzer-ID einer installierten App)](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+      - **Anwendungsbenutzermodell-ID (AUMID) der App**: Gibt die AUMID der Kiosk-App an. Weitere Informationen finden Sie unter [Find the Application User Model ID of an installed app (Ermitteln der Anwendungsbenutzer-ID einer installierten App)](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-    Für Kioske mit mehreren Anwendungen ist eine Kioskkonfiguration erforderlich.  Verwenden Sie die Schaltfläche **Hinzufügen**, um eine Kioskkonfiguration zu erstellen oder eine vorhandene auszuwählen.
+    Für Kioskcomputer mit mehreren Apps ist eine Kioskkonfiguration erforderlich. Verwenden Sie die Schaltfläche **Hinzufügen**, um eine Kioskkonfiguration zu erstellen oder eine vorhandene auszuwählen.
 
-    Kiosk-Konfigurationen für mehrere Apps umfassen die folgenden Einstellungen:
+    Kioskkonfigurationen mit mehreren Apps umfassen die folgenden Einstellungen:
 
     - **Kioskkonfigurationsname**: Ein Anzeigename, der zur Identifikation einer bestimmten Konfiguration dient.
 
     - Eine oder mehrere **Kiosk-Apps** mit den folgenden Angaben:
 
-        - **App-Typ** mit dem Typ der Kiosk-App.  Unterstützte Werte:   
+        - **App-Typ**, der den Typ der Kiosk-App angibt.  Unterstützte Werte:   
 
-            - **Win32-App**: Eine herkömmliche Desktop-App.  (Sie benötigen den vollqualifizierten Pfadnamen der ausführbaren Datei bezogen auf das Gerät.)
+            - **Win32-App**: Eine herkömmliche Desktop-App. (Sie benötigen den vollqualifizierten Pfadnamen der ausführbaren Datei bezogen auf das Gerät.)
 
-            - **UWP-App**: Eine universelle Windows-App.  Sie benötigen die [AUMID für die App](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+            - **UWP-App**: Eine universelle Windows-App. Sie benötigen die [AUMID für die App](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
         - **App-Bezeichner**: Gibt entweder den vollqualifizierten Pfadnamen für die ausführbare Datei (Win32-Apps) oder die [AUMID der App](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-Apps) an.
 
@@ -218,9 +288,9 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
 
     - **Layout des Startmenüs**: Gibt eine XML-Datei an, die beschreibt, wie die Apps [im Startmenü dargestellt werden](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Zugewiesene Benutzer**: Gibt ein oder mehrere Benutzerkonten an, die der Kioskkonfiguration zugeordnet sind.  Das Konto ist entweder für das Gerät lokal oder stellt eine Azure AD-Kontoanmeldung dar, die der Kiosk-App zugeordnet ist.  Geben Sie Konten in Domänen in der Form `domain\\username@tenant.org` an.
+    - **Zugewiesene Benutzer**: Gibt ein oder mehrere Benutzerkonten an, die der Kioskkonfiguration zugeordnet sind. Das Konto ist entweder für das Gerät lokal oder stellt eine Azure AD-Kontoanmeldung dar, die der Kiosk-App zugeordnet ist. Geben Sie Konten in Domänen in der Form `domain\\username@tenant.org` an.
 
-## <a name="defender"></a>Defender
+## <a name="windows-defender-antivirus"></a>Windows Defender Antivirus
 
 -   **Echtzeitüberwachung:** Aktiviert die Echtzeitüberwachung auf Schadsoftware, Spyware und andere unerwünschte Software.
 -   **Verhaltensüberwachung:** Ermöglicht Defender, Geräte auf bestimmte bekannte Muster verdächtiger Aktivitäten zu überprüfen.
@@ -256,7 +326,7 @@ Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefunden
 
 
 
-## <a name="defender-exclusions"></a>Defender-Ausschlüsse
+### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender Antivirus-Ausschlüsse
 
 -   **Dateien und Ordner, die bei Überprüfungen und Echtzeitschutz ausgeschlossen werden sollen:** Fügt Dateien und Ordner wie **C:\Pfad** oder **%ProgramFiles%\Pfad\Dateiname.exe** der Ausschlussliste hinzu. Diese Dateien und Ordner werden nicht in Echtzeitüberprüfungen oder geplante Überprüfungen einbezogen.
 -   **Dateierweiterungen, die bei Überprüfungen und Echtzeitschutz ausgeschlossen werden sollen:** Fügt der Ausschlussliste eine oder mehrere Erweiterungen wie **jpg** oder **txt** hinzu. Dateien mit diesen Erweiterungen werden nicht in Echtzeitüberprüfungen oder geplante Überprüfungen einbezogen.
@@ -272,7 +342,7 @@ Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefunden
     -   **Adresse**: Geben Sie den Namen oder die IP-Adresse des Proxyservers an.
     -   **Portnummer:** Geben Sie die Portnummer Ihres Proxyservers ein.
     -   **Proxyausnahmen:** Geben Sie URLs an, die den Proxyserver nicht verwenden dürfen. Trennen Sie die einzelnen Elemente durch Semikola.
-    -   **Proxyserver für lokale Adresse umgehen:** Aktivieren Sie diese Option, wenn Sie den Proxyserver nicht für lokale Adressen in Ihrem Intranet verwenden möchten.
+    -   **Proxyserver für lokale Adresse umgehen**: Aktivieren Sie diese Option, wenn Sie den Proxyserver nicht für lokale Adressen in Ihrem Intranet verwenden möchten.
 
 
 ## <a name="windows-spotlight"></a>Windows-Blickpunkt
@@ -294,16 +364,41 @@ Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefunden
 - **Projektion auf diesem PC:** Verhindert, dass andere Geräte den PC für die Projektion erkennen.
 - **PIN für Kopplung erforderlich:** Erfordert eine PIN beim Herstellen der Verbindung mit einem Projektionsgerät.
 
-## <a name="start"></a>Starten
+## <a name="cloud-printer"></a>Clouddrucker
 
-- **Apps von der Taskleiste lösen:** Hindert den Benutzer daran, Apps vom Startmenü zu lösen.
-- **Dokumente im Startmenü:** Blendet den Ordner „Dokumente“ im Windows-Startmenü aus oder ein.
-- **Downloads im Startmenü:** Blendet den Ordner „Downloads“ im Windows-Startmenü aus oder ein.
-- **Datei-Explorer im Startmenü:** Blendet die Datei-Explorer-App im Windows-Startmenü aus oder ein.
-- **Heimnetzgruppe im Startmenü:** Blendet den Ordner „Heimnetzgruppe“ im Windows-Startmenü aus oder ein.
-- **Musik im Startmenü:** Blendet den Ordner „Musik“ im Windows-Startmenü aus oder ein.
-- **Netzwerk im Startmenü:** Blendet den Ordner „Netzwerk“ im Windows-Startmenü aus oder ein.
-- **Persönlicher Ordner im Startmenü**: Blendet den persönlichen Ordner im Windows-Startmenü aus oder ein.
-- **Bilder im Startmenü:** Blendet den Ordner für Bilder im Windows-Startmenü aus oder ein.
-- **Einstellungen im Startmenü:** Blendet die Einstellungen-App im Windows-Startmenü aus oder ein.
-- **Videos im Startmenü:** Blendet den Ordner für Videos im Windows-Startmenü aus oder ein.
+- **URL für Druckerermittlung**: Endpunkt für die Erkennung von Clouddruckern
+- **Autoritäts-URL für Druckerzugriff**: Authentifizierungsendpunkt für den Abruf von OAuth-Token
+- **GUID für native Azure-Client-App**: Eine GUID einer Clientanwendung, die zum Abrufen von OAuth-Token von der OAuthAuthority berechtigt ist
+- **Druckdienstressourcen-URI**: OAuth-Ressourcen-URI für den im Azure-Portal konfigurierten Druckdienst
+- **Maximal abgefragte Drucker (nur Mobile)**: Maximale Anzahl von Druckern, die von einem Ermittlungsendpunkt abgefragt werden sollen
+- **Ressourcen-URI für Druckerermittlungsdienst**: OAuth-Ressourcen-URI für den im Azure-Portal konfigurierten Druckererkennungsdienst
+
+## <a name="reporting-and-telemetry"></a>Berichterstellung und Telemetrie
+
+- **Nutzungsdaten freigeben**: Wählen Sie die Ebene der Diagnosedatenübermittlung.
+- **Telemetrieproxyserver**
+
+  Geben Sie den vollqualifizierten Domänennamen (Fully Qualified Domain Name, FQDN) oder die IP-Adresse eines Proxyservers an, um Anforderungen zu Benutzererfahrung und Telemetrie im verbundenen Modus über eine SSL-Verbindung (Secure Sockets Layer) weiterzuleiten. Das Format dieser Einstellung lautet *Server*:*Port*. Wenn beim benannten Proxy ein Fehler auftritt oder kein Proxy angegeben wurde, obwohl diese Richtlinie aktiviert ist, werden die Daten zu Benutzererfahrung und Telemetrie im verbundenen Modus nicht übertragen und verbleiben auf dem lokalen Gerät.
+
+   Beispiele für das Format:
+
+   IPv4: 192.246.246.106:100<br>
+ IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> FQDN: www.contoso.com:345
+
+## <a name="messaging"></a>Messaging
+
+- **Nachrichtensynchronisierung (nur mobil)**: Deaktivieren Sie das Feature „Nachrichten – Überall“ sowie die SMS-Sicherung und -Wiederherstellung.
+- **MMS (nur mobil)**: Deaktivieren Sie die Funktion zum Senden/Empfangen von MMS auf dem Gerät.
+- **RCS (nur mobil)**: Deaktivieren Sie die Funktion für RCS-Sendevorgänge/Empfangsvorgänge (Rich Communication Services) auf dem Gerät.
+
+
+
+
+
+
+
+
+
+
+
+
