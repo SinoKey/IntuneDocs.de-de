@@ -311,7 +311,7 @@
               href: device-restrictions-windows-8-1.md
             - name: "Windows\_Phone\_8.1"
               href: device-restrictions-windows-phone-8-1.md
-            - name: Windows 10
+            - name: "Windows\_10"
               href: device-restrictions-windows-10.md
             - name: Windows 10 Team
               href: device-restrictions-windows-10-teams.md
@@ -326,7 +326,7 @@
               href: email-settings-ios.md
             - name: "Windows\_Phone\_8.1"
               href: email-settings-windows-phone-8-1.md
-            - name: Windows 10
+            - name: "Windows\_10"
               href: email-settings-windows-10.md
         - name: Konfigurieren von VPN-Einstellungen
           href: vpn-settings-configure.md
@@ -343,7 +343,7 @@
               href: vpn-settings-windows-8-1.md
             - name: "Windows\_Phone\_8.1"
               href: vpn-settings-windows-phone-8-1.md
-            - name: Windows 10
+            - name: "Windows\_10"
               href: vpn-settings-windows-10.md
         - name: Konfigurieren von WLAN-Einstellungen
           href: wi-fi-settings-configure.md
@@ -588,7 +588,7 @@
               href: custom-settings-macos.md
             - name: "Windows\_Phone\_8.1"
               href: custom-settings-windows-phone-8-1.md
-            - name: Windows 10
+            - name: "Windows\_10"
               href: custom-settings-windows-10.md
             - name: Android for Work
               href: custom-settings-android-for-work.md
@@ -654,11 +654,11 @@
               href: reports-ref-user-device.md
             - name: Verweis für die Benutzerentität
               href: reports-ref-user.md
-    - name: Intune Graph-API
+    - name: Verwenden von Azure AD für den Zugriff auf Intune-APIs in Microsoft Graph
       href: intune-graph-apis.md
       items:
-        - name: Graph-APIs für die Intune-Referenz
-          href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
+        - name: Intune-API-Referenz
+          href: 'https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview'
 - name: Ressourcen
   items:
     - name: Glossar

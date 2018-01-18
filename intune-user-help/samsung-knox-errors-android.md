@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 8edfc4f55e9265ef6bd2dfbcb5871496d5679a9f
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: 77b3b8f3fff39df94d535b28c060334b3e0a63ce
+ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>Behandeln häufig auftretender Probleme mit dem Samsung KNOX-Gerät
 
-Gelegentlich können Probleme mit dem Samsung KNOX-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Problemen empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) an den Support Ihres Unternehmens zu wenden.
+Gelegentlich können Probleme mit dem Samsung KNOX-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Problemen empfiehlt es sich, [das Team des Android-Unternehmensportals zu kontaktieren](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/intune-user-help/send-logs-to-microsoft-android.md).
 
 ## <a name="network-activation-error"></a>Netzwerkaktivierungsfehler
 
@@ -31,7 +31,7 @@ Die angezeigte Nachricht könnte wie folgt aussehen:
 
 |Fehlermeldung|Maßnahme|
 |---|---|
-|**Samsung KNOX-Aktivierungsfehler**: Die Samsung KNOX-Lizenz konnte nicht aktiviert werden. Wechseln Sie in ein anderes Drahtlosnetzwerk oder Mobilfunknetz, um den Vorgang zu wiederholen.|Ihr Gerät kann nicht im aktuellen Netzwerk aktiviert werden. Wenn Sie eine Datenverbindung nutzen, wechseln Sie in ein WLAN-Netzwerk, und versuchen Sie es erneut.|
+|**Samsung KNOX-Aktivierungsfehler**: Die Samsung KNOX-Lizenz konnte nicht aktiviert werden. Wechseln Sie in ein anderes Drahtlosnetzwerk oder Mobilfunknetz, um den Vorgang zu wiederholen.|Ihr Gerät kann nicht im aktuellen Netzwerk aktiviert werden. Wenn Sie eine Datenverbindung nutzen, wechseln Sie in ein WLAN, und versuchen Sie es erneut. Bzw. wenn Sie ein WLAN nutzen, wechseln Sie zur Datenverbindung.|
 
 ## <a name="license-activation-error"></a>Lizenzaktivierungsfehler
 

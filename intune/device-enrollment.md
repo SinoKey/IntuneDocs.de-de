@@ -14,72 +14,58 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d9773d9c6c22717abd3590929e499c45fc8bed19
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: dc0105bb786d8b1e569b11898b0d3757feba406a
+ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="what-is-device-enrollment"></a>Was ist die Geräteregistrierung?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Dieses Thema beschreibt die Registrierung und die verschiedenen Methoden zum Registrieren von mobilen Geräten in der Intune-Verwaltung.
+Intune ermöglicht es Ihnen, die Geräte und Apps Ihrer Mitarbeiter sowie deren Zugriff auf Ihre Unternehmensdaten zu verwalten. Damit diese mobile Geräteverwaltung (Mobile Device Management, MDM) genutzt werden kann, müssen die Geräte zunächst beim Intune-Dienst registriert werden. Wenn ein Gerät registriert ist, wird ein MDM-Zertifikat für das Gerät ausgestellt. Dieses Zertifikat wird für die Kommunikation mit dem Intune-Dienst verwendet.
 
-Sie registrieren Geräte in Intune, um diese Geräte verwalten zu können. Diese Funktion wird in der Intune-Dokumentation als Verwaltung mobiler Geräte (Mobile Device Management, MDM) bezeichnet. Wenn Geräte in Intune registriert werden, erhalten sie ein MDM-Zertifikat, das von den Geräten dann für die Kommunikation mit dem Intune-Dienst verwendet wird.
+Wie Sie in den folgenden Tabellen erkennen können, gibt es verschiedene Methoden, um die Geräte Ihrer Mitarbeiter zu registrieren. Die einzelnen Methoden hängen vom Gerätebesitz (persönlich oder unternehmenseigen), vom Gerätetyp (iOS, Windows, Android) und den Verwaltungsanforderungen (Zurücksetzungen, Affinität, Sperren) ab.
 
-Auf welche Weise Sie Ihre Geräte registrieren, hängt von Gerätetyp, Besitz und benötigtem Verwaltungsniveau ab. Bei der BYOD-Registrierung (Bring Your Own Device, private Geräte der Mitarbeiter) können die Benutzer ihre privaten Smartphones, Tablets oder PCs selbst registrieren. Die Registrierung von unternehmenseigenen Geräten (corporate-owned devices, COD) macht Verwaltungsszenarios wie die automatische Registrierung, freigegebene Geräte oder Anforderungen für eine vorautorisierte Registrierung möglich.
+## <a name="ios-enrollment-methods"></a>iOS-Registrierungsmethoden
 
-Wenn Sie Exchange ActiveSync – entweder lokal oder in der Cloud gehostet – verwenden, können Sie eine einfache Intune-Verwaltung ohne Registrierung aktivieren. Sie können Windows-PCs als mobile Geräte verwalten. Dieses Vorgehen wird unten als empfohlenes Verfahren beschrieben.
-
-
-## <a name="overview-of-device-enrollment-methods"></a>Übersicht über die Geräteregistrierungsmethoden
-
-Die folgende Tabelle bietet einen Überblick über die Intune-Registrierungsmethoden, die zusammen mit den jeweiligen Funktionen und Anforderungen nachfolgend beschrieben werden.
-
-**Legende**
-
-- **Zurücksetzen erforderlich** – Das Gerät wird bei der Registrierung auf die Werkseinstellungen zurückgesetzt.
-- **Benutzeraffinität** – Geräte werden Benutzern zugeordnet. Weitere Informationen finden Sie auf der Seite [Registrieren firmeneigener iOS-Geräte in Microsoft Intune](device-enrollment-program-enroll-ios.md).
-- **Gesperrt** – Es wird verhindert, dass Benutzer die Registrierung von Geräten aufheben.
-
-**iOS-Registrierungsmethoden**
-
-| **Methode** |  **Zurücksetzen erforderlich** |    **Benutzeraffinität**   |   **Gesperrt** | **Details** |
+| **Methode** |  **Zurücksetzen erforderlich** |    [**Benutzeraffinität**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **Gesperrt** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein|    Ja  |   Nein | [Weitere Informationen](./apple-mdm-push-certificate-get.md)|
-|**[DEM](#dem)**|   Nein |Nein |Nein  | [Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
-|**[DEP](#dep)**|   Ja  |   Optional |  Optional|[Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
+| | Geräte werden bei der Registrierung auf die Werkseinstellungen zurückgesetzt. |  Diese Methode ordnet jedes Gerät einem Benutzer zu.| Benutzer können die Registrierung von Geräten nicht aufheben.  | |
+|**[BYOD](#bring-your-own-device)** | Nein|   Ja  |   Nein | [Weitere Informationen](./apple-mdm-push-certificate-get.md)|
+|**[DEM](#device-enrollment-manager)**| Nein |Nein |Nein  | [Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
+|**[DEP](#apple-device-enrollment-program)**|   Ja  |   Optional |  Optional|[Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
 |**[USB (Setup-Assistent)](#usb-sa)**| Ja  |   Optional |  Nein| [Weitere Informationen](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB (direkt)](#usb-direct)**| Nein |    Nein  | Nein|[Weitere Informationen](./apple-configurator-direct-enroll-ios.md)|
 
-**Windows-Registrierungsmethoden**
+## <a name="windows-enrollment-methods"></a>Windows-Registrierungsmethoden
 
 | **Methode** |  **Zurücksetzen erforderlich** |    **Benutzeraffinität**   |   **Gesperrt** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein |   Ja  |   Nein | [Weitere Informationen](windows-enroll.md)|
-|**[DEM](#dem)**|   Nein |Nein |Nein  |[Weitere Informationen](device-enrollment-manager-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | Nein |  Ja  |   Nein | [Weitere Informationen](windows-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| Nein |Nein |Nein  |[Weitere Informationen](device-enrollment-manager-enroll.md)|
 |**Automatische Registrierung** | Nein |Ja  |Nein | [Weitere Informationen](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
 |**Massenregistrierung** |Nein |Nein |Nein | [Weitere Informationen](./windows-bulk-enroll.md) |
 
-**Android-Registrierungsmethoden**
+## <a name="android-enrollment-methods"></a>Android-Registrierungsmethoden
 
 | **Methode** |  **Zurücksetzen erforderlich** |    **Benutzeraffinität**   |   **Gesperrt** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein|    Ja  |   Nein | [Weitere Informationen](./android-enroll.md)|
-|**[DEM](#dem)**|   Nein |Nein |Nein  |[Weitere Informationen](./device-enrollment-manager-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | Nein|   Ja  |   Nein | [Weitere Informationen](./android-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| Nein |Nein |Nein  |[Weitere Informationen](./device-enrollment-manager-enroll.md)|
 |**Android for Work**| Nein | Ja  | Nein| [Weitere Informationen](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
-## <a name="byod"></a>BYOD
-BYOD-Benutzer (Bring Your Own Device) installieren die Unternehmensportal-App und führen diese zur Registrierung ihrer Geräte aus. Dieses Programm ermöglicht Benutzern den Zugriff auf Unternehmensressourcen wie E-Mails.
+## <a name="bring-your-own-device"></a>Bring Your Own Device
+Zu BYOD-Geräten (Bring Your Own Device) gehören Mobiltelefone, Tablets und PCs, die persönliches Eigentum der Benutzer sind. Benutzer installieren die Unternehmensportal-App und führen diese zur Registrierung ihrer Geräte aus. Dieses Programm ermöglicht Benutzern den Zugriff auf Unternehmensressourcen wie E-Mails.
 
-## <a name="corporate-owned-devices"></a>Firmeneigene Geräte
-Im Folgenden werden Registrierungsszenarien für unternehmenseigene Geräte vorgestellt. iOS-Geräte können direkt über die von Apple bereitgestellten Tools registriert werden. Alle Gerätetypen können von einem Administrator oder Manager die unter Verwendung des Geräteregistrierungs-Managers registriert werden. Geräte mit einer IMEI-Nummer können auch als firmeneigene Geräte identifiziert und gekennzeichnet werden, um COD-Szenarien zu unterstützen.
+## <a name="corporate-owned-device"></a>Unternehmenseigene Geräte
+Unternehmenseigene Geräte (Corporate-Owned Devices, COD) umfassen Mobiltelefone, Tablets und PCs, die Eigentum der Organisation sind und an die Mitarbeiter ausgegeben werden. Die Registrierung von COD-Geräten unterstützt Szenarios wie die automatische Registrierung, freigegebene Geräte oder Anforderungen für eine vorab autorisierte Registrierung. Eine Methode zum Registrieren von COD-Geräten besteht darin, dass ein Administrator oder Vorgesetzter den Geräteregistrierungs-Manager verwendet. iOS-Geräte können direkt über die von Apple bereitgestellten Programme zur Geräteregistrierung (Device Enrollment Program, DEP) registriert werden. Geräte mit einer IMEI-Nummer können auch als unternehmenseigene Geräte identifiziert und gekennzeichnet werden.
 
-### <a name="dem"></a>Geräteregistrierungs-Manager (DEM)
+### <a name="device-enrollment-manager"></a>Geräteregistrierungs-Manager
 Der Geräteregistrierungs-Manager (DEM) ist ein besonderes Benutzerkonto, das zum Registrieren und Verwalten mehrerer firmeneigener Geräte verwendet wird. Manager können das Unternehmensportal installieren und viele benutzerlose Geräte registrieren. Erfahren Sie mehr über den [DEM](./device-enrollment-manager-enroll.md).
 
-### <a name="dep"></a>DEP (Device Enrollment Program)
+### <a name="apple-device-enrollment-program"></a>Apple-Programm zur Geräteregistrierung
 Mit der Apple DEP-Verwaltung (Device Enrollment Program, Programm zur Geräteregistrierung) können Sie Richtlinien erstellen und „drahtlos“ auf iOS-Geräten bereitstellen, die mit DEP erworben wurden und verwaltet werden. Das Gerät wird beim ersten Einschalten durch den Benutzer registriert und führt dann den iOS-Setup-Assistenten aus. Diese Methode unterstützt den überwachten Modus von iOS, der zulässt, dass ein Gerät mit bestimmten Funktionen konfiguriert wird.
 
 Weitere Informationen zur iOS DEP-Registrierung finden Sie unter:
