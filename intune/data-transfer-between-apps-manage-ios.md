@@ -12,14 +12,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3e4dcd7767620d6d3939686f69ad9d72f6a2d8e2
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 83ef0050380b8b5e3741dc7b8ea57574df6df658
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Verwalten der Datenübertragung zwischen iOS-Apps
 ## <a name="manage-ios-apps"></a>Verwalten von iOS-Apps
@@ -69,7 +69,7 @@ Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die mit
 
 |MDM-Anbieter eines Drittanbieters| Konfigurationsschlüssel | Werttyp | Der Konfigurationswert|
 | ------- | ---- | ---- | ---- |
-|Microsoft Intune| IntuneMAMUPN | Zeichenfolge | {UserPrincipalName}|
+|Microsoft Intune| IntuneMAMUPN | Zeichenfolge | {UserPrincipalName}|
 |VMware AirWatch| IntuneMAMUPN | Zeichenfolge | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | Zeichenfolge | ${userUPN} **oder** ${userEmailAddress} |
 
@@ -100,5 +100,5 @@ Die Richtlinieneinstellung **Require app PIN (App-PIN erforderlich)** kann einfa
 Kümmern Sie sich zuerst um das [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md) für die iOS-App. Unter [Überprüfen der App-Schutzrichtlinien](app-protection-policies-validate.md) erhalten Sie weitere Informationen zum Testen einer App-Schutzrichtlinie.
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Was sind Intune-App-Schutzrichtlinien?](app-protection-policy.md)
