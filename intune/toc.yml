@@ -124,7 +124,7 @@
         - name: Unterstützte Konfigurationen
           href: supported-devices-browsers.md
           items:
-            - name: Nutzung der Netzwerkbandbreite
+            - name: Netzwerkkonfiguration
               href: network-bandwidth-use.md
         - name: Anmelden bei Intune
           href: account-sign-up.md
@@ -166,6 +166,8 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Deployment-Programm
               href: enrollment-autopilot.md
+            - name: Bildschirm der Statusregistrierung
+              href: windows-enrollment-status.md
         - name: Einrichten der Android-Registrierung
           href: android-enroll.md
         - name: Einrichten der iOS-Registrierung
@@ -311,7 +313,7 @@
               href: device-restrictions-windows-8-1.md
             - name: "Windows\_Phone\_8.1"
               href: device-restrictions-windows-phone-8-1.md
-            - name: "Windows\_10"
+            - name: Windows 10
               href: device-restrictions-windows-10.md
             - name: Windows 10 Team
               href: device-restrictions-windows-10-teams.md
@@ -326,7 +328,7 @@
               href: email-settings-ios.md
             - name: "Windows\_Phone\_8.1"
               href: email-settings-windows-phone-8-1.md
-            - name: "Windows\_10"
+            - name: Windows 10
               href: email-settings-windows-10.md
         - name: Konfigurieren von VPN-Einstellungen
           href: vpn-settings-configure.md
@@ -343,7 +345,7 @@
               href: vpn-settings-windows-8-1.md
             - name: "Windows\_Phone\_8.1"
               href: vpn-settings-windows-phone-8-1.md
-            - name: "Windows\_10"
+            - name: Windows 10
               href: vpn-settings-windows-10.md
         - name: Konfigurieren von WLAN-Einstellungen
           href: wi-fi-settings-configure.md
@@ -588,7 +590,7 @@
               href: custom-settings-macos.md
             - name: "Windows\_Phone\_8.1"
               href: custom-settings-windows-phone-8-1.md
-            - name: "Windows\_10"
+            - name: Windows 10
               href: custom-settings-windows-10.md
             - name: Android for Work
               href: custom-settings-android-for-work.md
