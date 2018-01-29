@@ -5,7 +5,7 @@ keywords: SDK
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/28/2017
+ms.date: 01/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7bb78d05f9225c681c5b8a3bb6f1fcee4581a0de
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: c3c6c82dcec8d85d0748d5966f6898f219b620d7
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Entwicklerhandbuch zum Microsoft Intune App SDK für Android
 
 > [!NOTE]
 > Lesen Sie am besten zuerst die [Übersicht über das Intune App SDK](app-sdk.md). Dort finden Sie Informationen zu den aktuellen Features des SDK sowie zu den Vorbereitungen, die Sie auf den verschiedenen unterstützten Plattformen für die Integration treffen müssen.
 
-Mit dem Microsoft Intune App SDK für Android können Sie die Intune-App-Schutzrichtlinien (auch als **APP**- oder MAM-Richtlinien bezeichnet) in Ihre native Android-App integrieren. Intune-fähige Anwendungen sind in das Intune App SDK integrierte Anwendungen. Intune-Administratoren können ganz einfach App-Schutzrichtlinien für Ihre Intune-fähige App bereitstellen, wenn diese aktiv von Intune verwaltet wird.
+Mit dem Microsoft Intune App SDK für Android können Sie die Intune-App-Schutzrichtlinien (auch als **APP**- oder MAM-Richtlinien bezeichnet) in Ihre native Android-App integrieren. Mit Intune verwaltete Anwendungen sind in das Intune App SDK integrierte Anwendungen. Intune-Administratoren können ganz einfach App-Schutzrichtlinien für Ihre mit Intune verwaltete App bereitstellen, wenn diese aktiv von Intune verwaltet wird.
 
 
 ## <a name="whats-in-the-sdk"></a>Inhalt des SDK
@@ -55,7 +55,7 @@ Das Intune App SDK ist ein kompiliertes Android-Projekt. Daher ist es größtent
 Das Intune App SDK für Android ist darauf angewiesen, dass die [Unternehmensportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)-App auf dem Gerät vorhanden ist, damit App-Schutzrichtlinien aktiviert werden können. Das Unternehmensportal ruft App-Schutzrichtlinien vom Intune-Dienst ab. Wenn die App initialisiert wird, lädt sie die entsprechende Richtlinie sowie Code, um diese Richtlinie vom Unternehmensportal zu erzwingen.
 
 > [!NOTE]
-> Wenn sich die Unternehmensportal-App nicht auf dem Gerät befindet, verhält sich eine Intune-fähige App genauso wie eine normale App, die keine Intune-App-Schutzrichtlinien unterstützt.
+> Wenn sich die Unternehmensportal-App nicht auf dem Gerät befindet, verhält sich eine mit Intune verwaltete App genauso wie eine normale App, die keine Intune-App-Schutzrichtlinien unterstützt.
 
 Für einen App-Schutz ohne Registrierung des Geräts muss der Benutzer das Gerät _**nicht**_ mithilfe der Unternehmensportal-App registrieren.
 
@@ -875,7 +875,7 @@ Apps können auch eine Methode in `MAMActivity` außer Kraft setzen, wenn die Ap
 
 ### <a name="implicit-identity-changes"></a>Implizite Identitätsänderungen
 
-Zusätzlich zu der Möglichkeit der App, die Identität festzulegen, kann die Identität eines Threads oder Kontexts sich basierend auf dem Dateneingang von einer anderen Intune-fähigen App ändern, die eine App-Schutzrichtlinie aufweist.
+Neben der Möglichkeit der App, die Identität festzulegen, kann die Identität eines Threads oder Kontexts sich basierend auf dem Dateneingang von einer anderen mit Intune verwalteten App ändern, die eine App-Schutzrichtlinie aufweist.
 
 #### <a name="examples"></a>Beispiele
 
@@ -1353,6 +1353,32 @@ Nachfolgend finden Sie die vollständige Liste der zulässigen Stilattribute, di
 | Akzentfarbe | PIN-Feldrahmen (markiert) <br> Links |accent_color | Farbe |
 | App-Logo | Großes Symbol, das auf dem PIN-Bildschirm der Intune-App angezeigt wird | logo_image | Zeichenbar |
 
+## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-sdk-integrated-android-lob-app-and-enabling-adal-sso-optional"></a>Erfordern einer Aufforderung zur Benutzeranmeldung für eine APP-WE-Dienstregistrierung, erfordern App-Schutzrichtlinien von Intune, um Ihre umschlossene in das SDK integrierte Android LOB-App zu verwenden, und aktivieren von ADAL-SSO (optional)
+
+Im Folgenden wird erläutert, wie Sie eine Benutzeraufforderung beim Start der App für die automatische APP-WE-Dienstregistrierung erforderlich machen (in diesem Abschnitt **Standardregistrierung** genannt), und wie Sie App-Schutzrichtlinien von Intune erforderlich machen, damit nur über Intune geschützte Benutzer Ihre in die SDK integrierte Android LOB-App verwenden dürfen. Außerdem wird dargestellt, wie SSO für Ihre in das SDK integrierte Android LOB-App aktiviert wird. Dies wird für Store-Apps, die von Personen verwendet werden können, die kein Intune verwenden, **nicht** unterstützt.
+
+> [!NOTE] 
+> Die Vorteile einer **Standardregistrierung** umfassen u.a. eine vereinfachte Methode zum Abrufen von Richtlinien über den APP-WE-Dienst für eine App auf dem Gerät.
+
+### <a name="general-requirements"></a>Allgemeine Anforderungen
+* Das Intune SDK-Team benötigt die Anwendungs-ID Ihrer App. Sie können diese ID über das [Azure-Portal](https://portal.azure.com/) unter **Alle Anwendungen** in der Spalte **Anwendungs-ID** finden. Am besten können Sie das Intune SDK-Team per E-Mail erreichen msintuneappsdk@microsoft.com.
+     
+### <a name="working-with-the-intune-sdk"></a>Arbeiten mit dem Intune SDK
+Diese Anweisungen beziehen sich auf alle Android- und Xamarin-Apps, für die eine App-Schutzrichtlinie von Intune für die Verwendung auf einem Benutzergerät erforderlich sein soll.
+
+1. Konfigurieren Sie ADAL, indem Sie die in der [Intune SDK für Android-Anleitung](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal) beschriebenen Schritte ausführen.
+> [!NOTE] 
+> Die Benennung „client id“, die an Ihre App gebunden ist, entspricht der Benennung „application id“ aus dem Azure Portal. 
+* Zur Aktivierung von SSO benötigen Sie die im Abschnitt „Häufig verwendete ADAL-Konfigurationen“ #2 beschriebenen Informationen.
+
+2. Aktivieren Sie die Standardregistrierung, indem Sie den folgenden Wert in das Manifest einfügen: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```.
+> [!NOTE] 
+> Dabei muss es sich um die einzige MAM-WE-Integration in der App handeln. Wenn es zu weiteren Versuchen kommt, MAMEnrollmentManager-APIs aufzurufen, können Konflikte entstehen.
+
+3. Aktivieren Sie die erforderliche MAM-Richtlinie, indem Sie den folgenden Wert in das Manifest einfügen: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```.
+> [!NOTE] 
+> Dann ist der Benutzer gezwungen, das Unternehmensportal auf dem Gerät herunterzuladen und den Vorgang der Standardregistrierung vor der Nutzung abzuschließen.
+
 ## <a name="limitations"></a>Einschränkungen
 
 ### <a name="file-size-limitations"></a>Einschränkungen der Dateigröße
@@ -1380,7 +1406,7 @@ Bei großen Codebasen, die ohne [ProGuard](http://proguard.sourceforge.net/) aus
     
 ### <a name="exported-services"></a>Exportierte Dienste
 
- Die im Intune App SDK enthaltene Datei „AndroidManifest.xml“ enthält **MAMNotificationReceiverService**. Dies muss ein exportierter Dienst sein, damit das Unternehmensportal Benachrichtigungen an eine App mit aktiviertem Intune App SDK senden kann. Der Dienst prüft den Aufrufer, um sicherzustellen, dass nur das Unternehmensportal Benachrichtigungen senden kann.
+ Die im Intune App SDK enthaltene Datei „AndroidManifest.xml“ enthält **MAMNotificationReceiverService**. Dies muss ein exportierter Dienst sein, damit das Unternehmensportal Benachrichtigungen an eine verwaltete App senden kann. Der Dienst prüft den Aufrufer, um sicherzustellen, dass nur das Unternehmensportal Benachrichtigungen senden kann.
 
 ### <a name="reflection-limitations"></a>Einschränkungen bei der Reflektion
 Einige der MAM-Basisklassen (z.B. MAMActivity und MAMDocumentsProvider) enthalten Methoden (basierend auf den ursprünglichen Android-Basisklassen), die Parameter- oder Rückgabetypen verwenden, die nur oberhalb bestimmter API-Ebenen vorhanden sind. Aus diesem Grund ist es möglicherweise nicht immer möglich, alle Methoden von App-Komponenten mit Hilfe von Reflektion aufzuzählen. Diese Einschränkung ist nicht auf MAM beschränkt. Sie gilt auch, wenn die App selbst diese Methoden aus den Android-Basisklassen implementiert.

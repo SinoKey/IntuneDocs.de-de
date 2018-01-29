@@ -6,20 +6,19 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/09/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
-ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
+ms.openlocfilehash: 3082bd52460bc9bd852edb3b560e96fb718a71c3
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Konfigurieren und Verwalten von SCEP-Zertifikaten mit Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -88,7 +87,7 @@ Vor dem Konfigurieren von Zertifikatprofilen müssen Sie die folgenden Aufgaben 
 Erstellen Sie ein Domänenbenutzerkonto, das als NDES-Dienstkonto verwendet werden soll. Sie geben dieses Konto an, wenn Sie Vorlagen auf der ausstellenden Zertifizierungsstelle konfigurieren, bevor Sie NDES installieren und konfigurieren. Stellen Sie sicher, dass der Benutzer über die Standardrechte **Lokal anmelden**, **Anmelden als Dienst** und **Anmelden als Batchauftrag** verfügt. In einigen Organisationen werden diese Rechte durch Härtungsrichtlinien deaktiviert.
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Schritt 2: Konfigurieren von Zertifikatvorlagen für die Zertifizierungsstelle
-In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
+Im Rahmen dieser Aufgabe führen Sie folgende Aktionen aus:
 
 -   Konfigurieren einer Zertifikatvorlage für NDES
 
@@ -194,7 +193,7 @@ In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>Schritt 4: Konfigurieren von NDES für die Verwendung mit Intune
-In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
+Im Rahmen dieser Aufgabe führen Sie folgende Aktionen aus:
 
 -   Konfigurieren von NDES für die Verwendung mit der ausstellenden Zertifizierungsstelle
 
@@ -297,7 +296,7 @@ In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
 4. Starten Sie den NDES-Server neu. Der Server ist jetzt bereit zur Unterstützung des Zertifikatconnectors.
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Schritt 5: Aktivieren, Installieren und Konfigurieren des Intune Certificate Connectors
-In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
+Im Rahmen dieser Aufgabe führen Sie folgende Aktionen aus:
 
 - Aktivieren der Unterstützung für NDES in Intune
 - Herunterladen, Installieren und Konfigurieren von Certificate Connector auf einem Server in Ihrer Umgebung Um Hochverfügbarkeit zu unterstützen, können Sie mehrere Certificate Connector-Instanzen auf unterschiedlichen Servern installieren.
@@ -309,7 +308,7 @@ In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
 2. Klicken Sie auf **Weitere Dienste** > **Überwachung + Verwaltung** > **Intune**.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
 4. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Zertifizierungsstelle** aus.
-5. Klicken Sie auf **Hinzufügen** und dann auf **Download Connector file** (Connectordatei herunterladen). Speichern Sie den Download an einem Speicherort, auf den Sie auf dem Server zugreifen können, auf dem der Connector installiert wird. 
+5. Klicken Sie auf **Hinzufügen** und dann auf **Connectordatei herunterladen**. Speichern Sie den Download an einem Speicherort, auf den Sie auf dem Server, auf dem der Connector installiert wird, zugreifen können. 
 6.  Nachdem der Download abgeschlossen ist, führen Sie das heruntergeladene Installationsprogramm (**ndesconnectorssetup.exe**) auf einem Server mit Windows Server 2012 R2 aus. Das Installationsprogramm installiert auch das Richtlinienmodul für NDES und den CRP-Webdienst. (Der CRP-Webdienst „CertificateRegistrationSvc“ wird als Anwendung in IIS ausgeführt.)
 
     > [!NOTE]
@@ -329,6 +328,9 @@ In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
 5.  Gehen Sie auf der Benutzeroberfläche von **Zertifikatconnector** so vor:
 
     Klicken Sie auf **Anmelden**, und geben Sie die Anmeldeinformationen des Intune-Dienstadministrators oder für einen Mandantenadministrator mit der globalen Administratorberechtigung ein.
+
+    > [!IMPORTANT]
+    > Dem Benutzerkonto muss eine gültige Intune-Lizenz zugewiesen werden. Wenn das Benutzerkonto nicht über eine gültige Intune-Lizenz verfügt, schlägt „NDESConnectorUI.exe“ fehl.
 
     Wenn Ihr Unternehmen einen Proxyserver verwendet und der Proxy erforderlich ist, damit der NDES-Server auf das Internet zugreifen kann, klicken Sie auf **Proxyserver verwenden**, und geben Sie dann den Proxyservernamen, Port und die Kontoanmeldedaten für die Verbindung an.
 
@@ -363,7 +365,7 @@ Um zu überprüfen, das der Dienst ausgeführt wird, öffnen Sie einen Browser, 
         - **Bei TPM-KSP (Trusted Platform Module) registrieren, andernfalls Fehler**
         - **Bei Passport registrieren, andernfalls Fehler (Windows 10 und höher)**
         - **Bei Software-KSP registrieren**
-    - **Format des Antragstellernamens:** Wählen Sie in der Liste aus, wie Intune den Antragstellernamen in der Zertifikatanforderung automatisch erstellt. Wenn das Zertifikat für einen Benutzer bestimmt ist, können Sie auch die E-Mail-Adresse des Benutzers im Antragstellernamen einschließen. Wählen Sie aus:
+    - **Format des Antragstellernamens:** Wählen Sie in der Liste aus, wie Intune den Antragstellernamen in der Zertifikatanforderung automatisch erstellt. Wenn das Zertifikat für einen Benutzer bestimmt ist, können Sie auch die E-Mail-Adresse des Benutzers im Antragstellernamen einschließen. Es stehen die folgenden Optionen zur Auswahl:
         - **Nicht konfiguriert**
         - **Allgemeiner Name**
         - **Allgemeiner Name einschließlich E-Mail-Adresse**

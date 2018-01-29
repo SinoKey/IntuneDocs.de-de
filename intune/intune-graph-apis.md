@@ -1,6 +1,6 @@
 ---
-title: "Zugreifen auf die Intune Graph-API über Azure Active Directory"
-description: "Beschreibung der Schritte, damit Apps über Azure AD auf die Intune Graph-API zugreifen können"
+title: "Verwenden von Azure AD für den Zugriff auf Intune-APIs in Microsoft Graph"
+description: "Beschreibung der Schritte, damit Apps über Azure AD auf die Intune-APIs in Microsoft Graph zugreifen können."
 keywords: Intune Graph-API C# PowerShell Berechtigungsrollen
 author: vhorne
 manager: angrobe
@@ -13,20 +13,20 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6637d7269f7620dc348b80533661afac8f12e0ba
+ms.sourcegitcommit: d6dc1211e9128c2e0608542b72d1caa4d6ba691d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Zugreifen auf die Intune Graph-API über Azure Active Directory
+# <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Verwenden von Azure AD für den Zugriff auf die Intune-APIs in Microsoft Graph
 
-Die [Microsoft Graph-API](https://developer.microsoft.com/graph/) unterstützt jetzt Microsoft Intune mit bestimmten APIs und Berechtigungsrollen.  Der Graph-API verwendet für die Authentifizierung und Zugriffsteuerung Azure Active Directory (Azure AD).  
-Für den Zugriff auf die Intune Graph-API benötigen Sie Folgendes:
+Die [Microsoft Graph-API](https://developer.microsoft.com/graph/) unterstützt jetzt Microsoft Intune mit bestimmten APIs und Berechtigungsrollen.  Die Microsoft Graph-API verwendet für die Authentifizierung und Zugriffsteuerung Azure Active Directory (Azure AD).  
+Für den Zugriff auf die Intune-APIs in Microsoft Graph ist Folgendes erforderlich:
 
 - Eine Anwendungs-ID mit:
 
-    - Berechtigung zum Aufrufen von Azure AD und Graph-APIs
+    - Der Berechtigung, Azure AD und die Microsoft Graph-APIs aufzurufen.
     - Berechtigungsbereichen, die für bestimmte Anwendungsaufgaben relevant sind
 
 - Benutzeranmeldeinformationen mit:
@@ -38,11 +38,11 @@ Für den Zugriff auf die Intune Graph-API benötigen Sie Folgendes:
 
 Inhalt dieses Artikels
 
-- Erläuterung der Registrierung einer Anwendung mit Zugriff auf die Graph-API und relevante Berechtigungsrollen
+- Erläuterung der Registrierung einer Anwendung mit Zugriff auf die Microsoft Graph-API und relevante Berechtigungsrollen
 
-- Beschreiben der Intune Graph-API-Berechtigungsrollen
+- Beschreibung der Berechtigungsrollen der Intune-API
 
-- Bereitstellen von Beispielen der Intune Graph-API-Authentifizierung für C# und PowerShell
+- Bereitstellung von Beispielen für die Authentifizierung der Intune-API für C# und PowerShell
 
 - Beschreiben der Unterstützung mehrerer Mandanten
 
@@ -53,9 +53,9 @@ Weitere Informationen finden Sie unter:
 - [Integrieren von Anwendungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [Grundlegendes zu OAuth 2.0](https://oauth.net/2/)
 
-## <a name="register-apps-to-use-graph-api"></a>Registrieren von Apps für die Verwendung der Graph-API
+## <a name="register-apps-to-use-the-microsoft-graph-api"></a>Registrieren von Apps, um die Microsoft Graph-API zu verwenden
 
-So registrieren Sie eine App für die Verwendung der Graph-API
+So registrieren Sie eine App, um die Microsoft Graph-API zu verwenden:
 
 1.  Melden Sie sich beim [Azure-Portal](https://portal.azure.com) mit Administratoranmeldeinformationen an.
 
@@ -127,15 +127,15 @@ An diesem Punkt haben Sie auch folgende Möglichkeiten:
 
 ## <a name="intune-permission-scopes"></a>Intune-Berechtigungsbereiche
 
-Azure AD und die Graph-API nutzen Berechtigungsbereiche zum Steuern des Zugriffs auf Unternehmensressourcen.  
+Azure AD und Microsoft Graph verwenden Berechtigungsbereiche zum Steuern des Zugriffs auf Unternehmensressourcen.  
 
-Berechtigungsbereiche (auch _OAuth-Bereiche_ genannt) steuern den Zugriff auf bestimmte Intune-Entitäten und deren Eigenschaften. In diesem Abschnitt werden die Berechtigungsbereiche für Intune Graph-API-Funktionen zusammengefasst.
+Berechtigungsbereiche (auch _OAuth-Bereiche_ genannt) steuern den Zugriff auf bestimmte Intune-Entitäten und deren Eigenschaften. In diesem Abschnitt werden die Berechtigungsbereiche für die Features der Intune-API zusammengefasst.
 
 Weitere Informationen:
 - [Azure AD-Authentifizierung](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [Anwendungsberechtigungsbereiche](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-Wenn Sie der Graph-API Berechtigung erteilen, können Sie angeben, dass die folgenden Bereiche den Zugriff auf die Intune-Funktionen steuern sollen. In der folgenden Tabelle werden die Intune Graph-API-Berechtigungsbereiche zusammengefasst.  Die erste Spalte enthält den Namen der Funktion entsprechend der Anzeige im Azure-Portal, die zweite den Namen des Berechtigungsbereichs.
+Wenn Sie Microsoft Graph Berechtigungen erteilen, können Sie angeben, dass folgende Bereiche den Zugriff auf die Intune-Features steuern sollen. In der folgenden Tabelle werden die Berechtigungsbereiche der Intune-API zusammengefasst.  Die erste Spalte enthält den Namen der Funktion entsprechend der Anzeige im Azure-Portal, die zweite den Namen des Berechtigungsbereichs.
 
 Einstellung _Zugriff aktivieren_ | Bereichsname
 :--|:--
@@ -153,7 +153,7 @@ __Microsoft Intune-Konfiguration lesen__ | [DeviceManagementServiceConfig.Read.A
 
 Die Tabelle enthält die Einstellungen in der Reihenfolge, in der sie im Azure-Portal angezeigt werden. In den folgenden Abschnitten werden die Bereiche in alphabetischer Reihenfolge beschrieben.
 
-Derzeit erfordern alle Intune-Berechtigungsbereiche Administratorzugriff.  Dies bedeutet, dass Sie zum Ausführen von Apps oder Skripts, die auf Intune Graph-API-Ressourcen zugreifen, entsprechende Anmeldeinformationen benötigen.
+Derzeit erfordern alle Intune-Berechtigungsbereiche Administratorzugriff.  Dies bedeutet, dass Sie zum Ausführen von Apps oder Skripts, die auf die Ressourcen der Intune-API zugreifen, entsprechende Anmeldeinformationen benötigen.
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
@@ -319,7 +319,7 @@ Wenn Sie eines der Beispiel testen, erhalten Sie ggf. die HTTP-Statusfehlermeldu
 
 Wenn dies erfolgt, überprüfen Sie Folgendes:
 
-- Ob Sie die Anwendungs-ID in eine ID geändert haben, die für das Verwenden der Graph-API und des Berechtigungsbereichs `DeviceManagementManagedDevices.Read.All` autorisiert ist.
+- Ob Sie die Anwendungs-ID in eine ID geändert haben, die für das Verwenden der Microsoft Graph-API und des Berechtigungsbereichs `DeviceManagementManagedDevices.Read.All` autorisiert ist.
 
 - Ob die Anmeldeinformationen Ihres Mandanten administrative Funktionen unterstützen.
 
@@ -557,7 +557,7 @@ Gehen Sie hierzu folgendermaßen vor:
 
     Gehen Sie hierfür so vor:
 
-    a. Definieren Sie im [Microsoft Partner Center](https://partnercenter.microsoft.com/) eine Beziehung mit Ihrem Client und seiner E-Mail-Adresse.
+    ein. Definieren Sie im [Microsoft Partner Center](https://partnercenter.microsoft.com/) eine Beziehung mit Ihrem Client und seiner E-Mail-Adresse.
 
     b. Laden Sie den Benutzer ein, Gast Ihres Mandanten zu werden.
 
