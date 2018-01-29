@@ -5,20 +5,20 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 12/12/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-ms.reviewer: oldang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
-ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
+ms.openlocfilehash: dc031b12ed49766c70a6a4ff373a7c5843ca21ad
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Vorbereiten von iOS-Apps für App-Schutzrichtlinien mit dem Intune App Wrapping Tool
 
@@ -53,7 +53,6 @@ Bevor Sie das App Wrapping Tool ausführen, müssen Sie einige allgemeine Voraus
   * Die Ausgangs-App benötigt festgelegte Berechtigungen, bevor sie vom Intune App Wrapping Tool verarbeitet wird. Diese [Berechtigungen](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) gehen über die üblicherweise erteilten hinaus und ermöglichen zusätzliche Funktionen. Anleitungen finden Sie unter [Festlegen von App-Berechtigungen](#setting-app-entitlements).
 
 ## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>Apple Developer-Voraussetzungen für das App Wrapping Tool
-
 
 Um mit dem Wrapping Tool bearbeitete Apps exklusiv an Benutzer in Ihrer Organisation zu verteilen, benötigen Sie ein [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/)-Konto und mehrere Entitäten für die App-Signierung, die mit Ihrem Apple Developer-Konto verknüpft sind.
 
@@ -204,8 +203,8 @@ Sie können die folgenden Befehlszeilenparameter mit dem App Wrapping Tool verwe
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Zeigt detaillierte Verwendungsinformationen zu den verfügbaren Befehlszeileneigenschaften für das App Wrapping Tool an.|
 |**-v**|(Optional) Gibt ausführliche Meldungen in die Konsole aus. Sie sollten dieses Flag verwenden, um Fehler zu debuggen.|
-|**-e**| (Optional) Verwenden Sie dieses Flag, damit das App Wrapping Tool fehlende Berechtigungen bei der Verarbeitung der App entfernt. Weitere Details finden Sie unter „Festlegen von App-Berechtigungen“.|
-|**-xe**| (Optional) Gibt Informationen über die iOS-Erweiterungen in der App und die Berechtigungen aus, die für deren Verwendung erforderlich sind. Weitere Details finden Sie unter „Festlegen von App-Berechtigungen“. |
+|**-e**| (Optional) Verwenden Sie dieses Flag, damit das App Wrapping Tool fehlende Berechtigungen bei der Verarbeitung der App entfernt. Weitere Details finden Sie unter [Setting app entitlements (Festlegen von App-Berechtigungen)](#setting-app-entitlements).|
+|**-xe**| (Optional) Gibt Informationen über die iOS-Erweiterungen in der App und die Berechtigungen aus, die für deren Verwendung erforderlich sind. Weitere Details finden Sie unter [Setting app entitlements (Festlegen von App-Berechtigungen)](#setting-app-entitlements). |
 |**-x**| (Optional) `<An array of paths to extension provisioning profiles>`. Verwenden Sie diese Option, wenn Ihre Anwendung Bereitstellungsprofile für Erweiterungen benötigt.|
 |**-f**|(Optional) `<Path to a plist file specifying arguments.>` Verwenden Sie dieses Flag vor der [PLIST](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html)-Datei, wenn Sie die PLIST-Vorlage verwenden, um die restlichen IntuneMAMPackager-Eigenschaften wie „-i“, „-o“ und „-p“ anzugeben. Informationen finden Sie unter „Verwenden einer PLIST-Datei für die Eingabe von Argumenten“. |
 |**-b**|(Optional) Verwenden Sie „-b“ ohne ein Argument, wenn die umschlossene Ausgabe-App über die gleiche Bundleversion wie die Eingabe-App verfügen soll (nicht empfohlen). <br/><br/> Verwenden Sie `-b <custom bundle version>`, wenn die umschlossene App über eine benutzerdefinierte CFBundleVersion verfügen soll. Wenn Sie eine benutzerdefinierte CFBundleVersion angeben möchten, empfiehlt es sich, die CFBundleVersion der nativen App um die unwichtigste Komponente zu erhöhen, z.B. 1.0.0 -> 1.0.1. |
@@ -244,6 +243,16 @@ Die per Wrapping umschlossene Anwendung wird im Ausgabeordner gespeichert, den S
 > Wenn Sie eine umschlossene App hochladen, können Sie versuchen, eine ältere Version der Anwendung zu aktualisieren, wenn eine ältere (umschlossene oder native) Version bereits in Intune bereitgestellt wurde. Wenn einen Fehler auftritt, laden Sie die App als neue App hoch, und löschen Sie die ältere Version.
 
 Sie können die App jetzt für Ihre Benutzergruppen bereitstellen und der App Richtlinien zum App-Schutz zuweisen. Die App wird auf dem Gerät mit den von Ihnen angegebenen App-Schutzrichtlinien ausgeführt.
+
+## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>Wie häufig sollten iOS-Anwendungen mithilfe des App Wrapping Tools von Intune erneut umschlossen werden?
+In den folgenden Hauptszenarios besteht die Notwendigkeit, Anwendungen erneut zu umschließen:
+* Die Anwendung hat eine neue Version veröffentlicht. Die Vorgängerversion der App wurde umschlossen und in die Intune-Konsole hochgeladen.
+* Das App Wrapping Tool von Intune für iOS hat eine neue Version veröffentlicht, mit der wichtige Fehler behoben oder neue Intune-spezifische Richtlinienfeatures zum Schutz von Anwendungen eingeführt werden. Dies geschieht nach sechs bis acht Wochen über das GitHub-Repository für das [App Wrapping Tool von Microsoft Intune für iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
+
+Für iOS ist es zwar möglich, Umschließungsvorgänge mit anderen Zertifizierungs- bzw. Bereitstellungsprofilen als dem ursprünglich zum Signieren der App verwendete Profil durchzuführen, allerdings schlagen die Vorgänge fehl, wenn die in der App angegebenen Berechtigungen nicht in dem neuen Bereitstellungsprofil enthalten sind. Wenn Sie die Befehlszeilenoption „-e“ verwenden, über die fehlende Berechtigungen aus der App entfernt werden, um zu erzwingen, dass der Umschließungsvorgang in diesem Szenario nicht fehlschlägt, können die Funktionen in der App eingeschränkt sein.
+
+Im Folgenden werden bewährte Methoden für das erneute Umschließen aufgeführt:
+* Gewährleisten, dass ein anderes Bereitstellungsprofil über dieselben erforderlichen Berechtigungen verfügt wie die Vorgängerversion des Bereitstellungsprofils. 
 
 ## <a name="error-messages-and-log-files"></a>Fehlermeldungen und Protokolldateien
 Verwenden Sie die folgende Informationen, um Problemen mit dem App Wrapping Tool zu behandeln.

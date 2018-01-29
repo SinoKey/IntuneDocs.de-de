@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/09/2017
+ms.date: 1/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff950ce35c491ca576dc9cc77ab561e2cfef0381
-ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
+ms.openlocfilehash: 0bc5ad6e0467fe8a8c98c1ad2d71b967c18b8233
+ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Behandeln von Problemen mit Geräteprofilen in Microsoft Intune
 
@@ -45,28 +45,30 @@ Sie können sich außerdem nach einer Reihe von empfohlenen Methoden richten:
 ## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned"></a>Wie lange dauert es, bis mobile Geräte Richtlinien oder Apps nach ihrer Zuweisung abrufen können?
 Wenn eine Richtlinie oder App zugewiesen wird, beginnt Intune sofort mit dem Versuch, das Gerät zu benachrichtigen und zum Einchecken beim Intune-Dienst zu veranlassen. Dies dauert normalerweise weniger als fünf Minuten.
 
-Wenn ein Gerät sich nach der ersten Benachrichtigung nicht zum Abrufen der Richtlinie eincheckt, unternimmt Intune drei weitere Versuche.  Wenn das Gerät offline ist (z. B. ausgeschaltet oder nicht mit einem Netzwerk verbunden), erhält es die Benachrichtigungen möglicherweise nicht. In diesem Fall erhält das Gerät die Richtlinie beim nächsten geplanten Einchecken beim Intune-Dienst wie folgt:
+Wenn ein Gerät sich nach der ersten Benachrichtigung nicht zum Abrufen der Richtlinie eincheckt, unternimmt Intune drei weitere Versuche. Wenn das Gerät offline ist (z. B. ausgeschaltet oder nicht mit einem Netzwerk verbunden), erhält es die Benachrichtigungen möglicherweise nicht. In diesem Fall ruft das Gerät die Richtlinie beim nächsten geplanten Check-In beim Intune-Dienst wie folgt ab:
 
 - iOS und macOS: alle sechs Stunden.
 - Android: alle acht Stunden.
 - Windows Phone: alle acht Stunden.
-- Als Geräte registrierte PCs unter Windows 8.1 und Windows 10: alle acht Stunden.
+- Als Geräte registrierte PCs unter Windows 8.1 und Windows 10: alle acht Stunden.
 
-Wenn das Gerät gerade registriert wurde, ist die Eincheckfrequenz höher:
+Wenn das Gerät gerade registriert wurde, ist die Check-In-Frequenz höher:
 
 - iOS und macOS: sechs Stunden lang alle 15 Minuten, danach alle sechs Stunden.
-- Android: 15 Minuten lang alle drei Minuten, danach zwei Stunden lang alle 15 Minuten, anschließend alle acht Stunden.
-- Windows Phone: 15 Minuten lang alle fünf Minuten, danach zwei Stunden lang alle 15 Minuten, anschließend alle acht Stunden.
-- Als Geräte registrierte Windows-PCs: 30 Minuten lang alle drei Minuten, danach alle acht Stunden.
+- Android: 15 Minuten lang alle drei Minuten, danach zwei Stunden lang alle 15 Minuten, anschließend alle acht Stunden.
+- Windows Phone: 15 Minuten lang alle fünf Minuten, danach zwei Stunden lang alle 15 Minuten, anschließend alle acht Stunden.
+- Als Geräte registrierte Windows-PCs: 30 Minuten lang alle drei Minuten, danach alle acht Stunden.
 
 Benutzer können auch jederzeit die Unternehmensportal-App öffnen und das Gerät synchronisieren, um sofort auf Richtlinien zu prüfen.
 
+Für Geräte ohne Benutzeraffinität wird die Synchronisierung nach der Registrierung im Abstand von einigen Stunden oder Tagen oder sogar noch seltener durchgeführt. Intune sendet in verschiedenen Intervallen Anforderungen an ein Gerät, damit es bei dem Dienst eincheckt. Allerdings ist es von dem Gerät abhängig, ob es sich anmeldet oder nicht. Nach der anfänglichen Registrierung kann nicht vorhergesagt werden, wie viel Zeit ein Gerät für den Check-In benötigt. Dies hängt von dem Typ der Geräteregistrierung sowie den Richtlinien und Profilen ab, die dem Gerät zugewiesen sind. Wenn das Gerät dann allerdings registriert ist und alle anfänglichen Richtlinien angewendet worden sind, sollte das Gerät etwa alle sechs Stunden nach neuen Richtlinien suchen.
+
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Bei welchen Aktionen sendet Intune sofort eine Benachrichtigung an ein Gerät?
-Geräte checken bei Intune entweder beim Erhalt einer Benachrichtigung ein, die sie dazu auffordert, oder während ihres regelmäßigen geplanten Eincheckvorgangs.  Wenn Sie für ein Gerät oder einen Benutzer ausdrücklich eine Aktion durchführen, z. B. Zurücksetzen, Sperren, Zurücksetzen der Kennung, App-Zuweisung, Profilzuweisung (WLAN, VPN, E-Mail usw.) oder Richtlinienzuweisung, beginnt Intune sofort mit dem Versuch, das Gerät zu benachrichtigen, dass es sich zum Erhalten dieser Updates beim Intune-Dienst einchecken soll.
+Geräte checken bei Intune entweder beim Erhalt einer Benachrichtigung ein, die sie dazu auffordert, oder während ihres regelmäßigen geplanten Eincheckvorgangs. Wenn Sie für ein Gerät oder einen Benutzer ausdrücklich eine Aktion durchführen, z.B. Zurücksetzen, Sperren, Zurücksetzen der Kennung, App-Zuweisung, Profilzuweisung (WLAN, VPN, E-Mail usw.) oder Richtlinienzuweisung, beginnt Intune sofort mit dem Versuch, das Gerät zu benachrichtigen, dass es sich zum Erhalten dieser Updates beim Intune-Dienst einchecken soll.
 
 Andere Änderungen, wie z. B. die Überarbeitung der Kontaktinformationen im Unternehmensportal, führen nicht zu einer sofortigen Benachrichtigung von Geräten.
 
-## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Wie finde ich heraus, welche Einstellungen angewendet werden, wenn für denselben Benutzer oder dasselbe Gerät mehrere Richtlinien zugewiesen werden?
+## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Wie finde ich heraus, welche Einstellungen angewendet werden, wenn für denselben Benutzer oder dasselbe Gerät mehrere Richtlinien zugewiesen werden?
 Bei Zuweisung mehrerer Richtlinien für denselben Benutzer oder dasselbe Gerät erfolgt die Auswertung, welche Einstellung angewendet werden soll, auf der Ebene der einzelnen Einstellungen:
 
 -   Kompatibilitätsrichtlinieneinstellungen haben immer Vorrang vor Konfigurationsrichtlinieneinstellungen.
@@ -75,10 +77,10 @@ Bei Zuweisung mehrerer Richtlinien für denselben Benutzer oder dasselbe Gerät 
 
 -   Falls eine Konfigurationsrichtlinieneinstellung im Konflikt mit einer Einstellung in einer anderen Konfigurationsrichtlinie steht, wird dieser Konflikt im Azure-Portal angezeigt. Konflikte dieser Art müssen Sie manuell auflösen.
 
-## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>Was geschieht, wenn App-Schutzrichtlinien in Konflikt stehen? Welche wird auf die App angewendet?
-Konfliktwerte sind die restriktivsten Einstellungen, die in einer App-Schutzrichtlinie zur Verfügung stehen, außer für die Zahleneingabefelder (z. B. PIN-Versuche vor dem Zurücksetzen).  Die Zahleneingabefelder werden auf dieselben Werte gesetzt, die auch verwendet werden, wenn Sie in der Konsole eine MAM-Richtlinie erstellen und die empfohlenen Einstellungen verwenden.
+## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>Was geschieht, wenn App-Schutzrichtlinien in Konflikt stehen? Welche wird auf die App angewendet?
+Konfliktwerte sind die restriktivsten Einstellungen, die in einer App-Schutzrichtlinie zur Verfügung stehen, außer für die Zahleneingabefelder (z. B. PIN-Versuche vor dem Zurücksetzen). Die Zahleneingabefelder werden auf dieselben Werte gesetzt, die auch verwendet werden, wenn Sie in der Konsole eine MAM-Richtlinie erstellen und die empfohlenen Einstellungen verwenden.
 
-Konflikte treten auf, wenn zwei Profileinstellungen identisch sind.  Beispielsweise haben Sie zwei MAM-Richtlinien konfiguriert, die mit Ausnahme der Einstellung für Kopieren/Einfügen identisch sind.  In diesem Szenario wird die Einstellung für Kopieren und Einfügen auf den restriktivsten Wert festgelegt, die übrigen Einstellungen werden jedoch wie konfiguriert angewendet.
+Konflikte treten auf, wenn zwei Profileinstellungen identisch sind. Beispielsweise haben Sie zwei MAM-Richtlinien konfiguriert, die mit Ausnahme der Einstellung für Kopieren/Einfügen identisch sind. In diesem Szenario wird die Einstellung für Kopieren und Einfügen auf den restriktivsten Wert festgelegt, die übrigen Einstellungen werden jedoch wie konfiguriert angewendet.
 
 Wenn ein Profil der App zugewiesen ist und in Kraft tritt und anschließend ein zweites zugewiesen wird, erhält das erste Vorrang und bleibt wirksam, während das zweite als in Konflikt stehend angezeigt wird. Wenn beide Profile gleichzeitig angewendet werden, also kein vorheriges Profil vorhanden ist, stehen beide in Konflikt. Alle in Konflikt stehenden Einstellungen werden auf die restriktivsten Werte festgelegt.
 
@@ -131,8 +133,8 @@ Wenn Sie ein Profil löschen oder ein Gerät aus einer Gruppe entfernen, für di
 Windows Phone-Geräte gestatten keine Verringerung der Sicherheitsstufe in Sicherheitsrichtlinien, die mittels MDM oder EAS festgelegt wurden, nachdem diese festgelegt wurden. Angenommen, Sie legen ein **Kennwort mit Mindestanzahl von Zeichen** auf 8 fest und versuchen dann, diesen Wert auf 4 zu verringern. Das restriktivere Profil wurde bereits auf das Gerät angewendet.
 
 Je nach Geräteplattform müssen Sie, wenn Sie das Profil auf einen niedrigeren Sicherheitswert ändern möchten, Sicherheitsrichtlinien möglicherweise zurücksetzen.
-In Windows wischen Sie beispielsweise auf dem Desktop von rechts nach innen, um die Leiste **Charms** zu öffnen, und wählen Sie **Einstellungen** &gt; **Systemsteuerung**.  Wählen Sie das Applet **Benutzerkonten** aus.
-Im linken Navigationsmenü befindet sich unten ein Link **Sicherheitsrichtlinien zurücksetzen** . Klicken Sie darauf, und klicken Sie dann auf die Schaltfläche **Richtlinien zurücksetzen**.
+In Windows wischen Sie beispielsweise auf dem Desktop von rechts nach innen, um die Leiste **Charms** zu öffnen, und wählen Sie **Einstellungen** &gt; **Systemsteuerung**. Wählen Sie das Applet **Benutzerkonten** aus.
+Im Navigationsmenü auf der linken Seite befindet sich im unteren Bereich ein Link **Sicherheitsrichtlinien zurücksetzen**. Klicken Sie darauf, und klicken Sie dann auf die Schaltfläche **Richtlinien zurücksetzen**.
 Andere MDM-Geräte, wie Android, Windows Phone 8.1 und höher sowie iOS, müssen möglicherweise außer Kraft gesetzt und bei dem Dienst neu registriert werden, damit Sie ein weniger restriktives Profil anwenden können.
 
 
