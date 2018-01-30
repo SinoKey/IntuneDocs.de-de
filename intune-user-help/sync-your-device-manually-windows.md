@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1c1ade50ff6a458633598d2788d176dd79cbfebd
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 6d3b0fb8ea462656602ee9b4e58200d3c2e755a9
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>Manuelles Synchronisieren des Windows-Geräts
 
@@ -91,7 +92,7 @@ Es existiert mehr als eine Version von Windows 10, daher gibt es zwei Vorgehensw
 
    Die Schaltfläche wird solange ausgegraut, bis die Synchronisierung fertig ist.
 
-### <a name="windows-10-mobile"></a>Windows 10 Mobile
+### <a name="windows-10-mobile"></a>Windows 10 Mobile
 So synchronisieren Sie Ihr Windows 10 Mobile-Gerät manuell, um eine langsame App-Installation zu beschleunigen:
 
    1. Wechseln Sie zu **Alle Apps** > **Einstellungen** > **Konten**.
@@ -112,7 +113,7 @@ So synchronisieren Sie Ihr Windows 10 Mobile-Gerät manuell, um eine langsame 
 
        Oben auf dem Bildschirm wird die Meldung „Ihr Konto wird synchronisiert“ angezeigt. Die Schaltfläche **Sync** wird ausgegraut, bis die Synchronisierung des Geräts abgeschlossen ist.
 
-## <a name="windows-phone-81"></a>Windows Phone 8.1
+## <a name="windows-phone-81"></a>Windows Phone 8.1
 So synchronisieren Sie Ihr Windows Phone 8.1-Gerät manuell, um eine langsame App-Installation zu beschleunigen:
 
 1. Wechseln Sie zu **Alle Apps** > **Einstellungen** > **Arbeitsplatz**.
