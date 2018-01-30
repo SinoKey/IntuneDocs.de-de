@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ba593c08-1a78-4013-8525-b45a948772ec
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f9c91c85b4a93fb211b5cd278dd82277a58cb08e
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: ab67a6f2fd1f861ba197464a9e369ca0b54e6b5d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Es sieht so aus, als sei Ihr Gerät verschlüsselt, aber das Unternehmensportal sagt etwas anderes
 
@@ -36,10 +37,6 @@ Neuere Versionen von Android, insbesondere ab Version 7.0, fordern eine Startken
 
 Bei bestimmten Android-Geräten müssen Sie eine Start-PIN erstellen, um die Sicherheit Ihres Geräts zu gewährleisten. Es gibt viele Versionen von Android von vielen Herstellern. Sie können versuchen, dieses Problem in den Griff zu bekommen, indem Sie in Ihrem Menüpunkt „Einstellungen“ die Stelle zum Aktivieren dieser Option finden. Auf dem Samsung Galaxy S7 aktivieren Sie beispielsweise „Sicherer Start“ über **Einstellungen** > **Sperrbildschirm und Sicherheit** > **Sicherer Start**.  
 
-### <a name="downgrade-your-version-of-android"></a>Herabstufen Ihrer Android-Version
-
-Falls Ihr Gerät Ihnen die Option gibt, auf Android 6.0+ downzugraden, machen Sie dies. Falls Sie versuchen, Ihr Gerät downzugraden, besteht die Gefahr, dass Daten verloren gehen. Wenden Sie sich andernfalls an die Supportabteilung Ihres Unternehmens, um dieses Problem zu beheben. Entsprechende Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
-
 ### <a name="encrypt-the-entire-device"></a>Verschlüsseln Sie das gesamte Gerät
 
 Bei einigen Geräten haben Sie die Wahl: Sie können entweder das gesamte Gerät verschlüsseln oder nur den tatsächlich belegten Speicherplatz. Wählen Sie die Option zum Verschlüsseln des gesamten Geräts und nicht die Option „only used space“ (nur belegter Speicherplatz). Wenn Sie bereits nur den belegten Speicherplatz verschlüsselt haben:
@@ -48,6 +45,10 @@ Bei einigen Geräten haben Sie die Wahl: Sie können entweder das gesamte Gerät
 2. Entschlüsseln Sie den belegten Speicherplatz.
 3. Verschlüsseln Sie das gesamte Gerät
 4. Registrieren Sie das Gerät erneut.
+
+### <a name="downgrade-your-version-of-android"></a>Herabstufen Ihrer Android-Version
+
+Falls Ihr Gerät Ihnen die Option gibt, auf Android 6.0+ downzugraden, machen Sie dies. Falls Sie versuchen, Ihr Gerät downzugraden, besteht die Gefahr, dass Daten verloren gehen. Wenden Sie sich andernfalls an die Supportabteilung Ihres Unternehmens, um dieses Problem zu beheben. Entsprechende Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 ## <a name="specific-manufacturer-issues"></a>Spezifische Herstellerprobleme
 
