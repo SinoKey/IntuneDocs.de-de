@@ -4,7 +4,7 @@ description: "Erfahren Sie, wie Sie branchenspezifische Apps signieren, um sie m
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 06/07/2017
 ms.topic: article
 ms.prod: 
@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: d6b66c44b1c6b5b5977d7a26d279c32eb39ff7ff
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: f94e95ec93ba98c55ca69ee5ef59cd20d16eff37
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Signieren Sie branchenspezifische Apps, damit sie mit Intune auf Windows-Geräten bereitgestellt werden können
 
@@ -46,7 +46,7 @@ Mithilfe der folgenden Schritte können Sie das erforderliche Zertifikat bereits
     ![Suchen des Symantec-Zertifikats](./media/wit.gif)
 
 5. **Exportieren eines Signaturzertifikats**<br>
-    Wenn Sie überprüft haben, dass die Zertifikate vorhanden sind, können Sie die PFX-Datei exportieren, um das Unternehmensportal zu signieren. Wählen Sie das Symantec-Zertifikat mit „Codesignatur“ für **Beabsichtigter Zweck** aus. Klicken Sie mit der rechten Maustaste auf das Codesignaturzertifikat, und wählen Sie **Exportieren** aus.
+    Wenn Sie überprüft haben, dass die Zertifikate vorhanden sind, können Sie die PFX-Datei exportieren, um das Unternehmensportal zu signieren. Wählen Sie das Symantec-Zertifikat mit **Beabsichtigter Zweck** "Codesignatur" aus. Klicken Sie mit der rechten Maustaste auf das Codesignaturzertifikat, und wählen Sie **Exportieren** aus.
 
     ![Exportieren des Signaturzertifikats](./media/wit-walk-cert2.gif)
 

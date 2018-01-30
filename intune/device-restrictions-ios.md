@@ -5,7 +5,7 @@ description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerun
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b871726c887916662986008010e0728811f2ba98
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: b450becb45aea7ba5aa6ac2b6798e2062c08b4f2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für iOS-Geräte in Microsoft Intune
 
@@ -213,7 +213,7 @@ Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Da
 -   **Persönlicher Hotspot:** Verhindern Sie, dass das Gerät als persönlicher Hotspot genutzt wird. Diese Einstellung kann mit einigen Anbietern nicht kompatibel sein.
 -   **Verknüpfen von WLAN-Netzwerken nur mithilfe von Konfigurationsprofilen (nur überwacht):** Dem Gerät nur erlauben, eine Verbindung mit WLAN-Netzwerken herzustellen, die mit einem Intune-WLAN-Profil konfiguriert wurden.
 
-- **Mobilfunk-Verwendungsregeln (nur verwaltete Apps):** Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn Sie sich in Mobilfunknetzwerken befinden. Wählen Sie aus:
+- **Mobilfunk-Verwendungsregeln (nur verwaltete Apps):** Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn Sie sich in Mobilfunknetzwerken befinden. Es stehen die folgenden Optionen zur Auswahl:
     - **Nutzung von Netzwerkdaten blockieren**
     - **Nutzung von Netzwerkdaten bei Roaming blockieren**
 
@@ -249,7 +249,7 @@ Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Da
 
 Verwenden Sie diese Einstellungen, um iOS-Geräte zur Ausführung bestimmter Apps im Modus der autonomen einzelnen App zu konfigurieren. Wenn dieser Modus konfiguriert ist und die App ausgeführt wird, wird das Gerät gesperrt, sodass es nur die App ausführen kann. Ein Beispiel hierfür ist, wenn Sie eine App konfigurieren, mit der Benutzer einen Test auf dem Gerät ausführen können. Wenn die Aktionen der App abgeschlossen sind, oder Sie diese Richtlinie entfernen, kehrt das Gerät in seinen normalen Zustand zurück.
 
-### <a name="settings"></a>Einstellungen
+### <a name="settings"></a>Einstellung
 
 - **App-Name**: Geben Sie den Namen der App so ein, wie er in der Liste der Apps auf diesem Blatt angezeigt wird.
 - **App-Bündel-ID**: Geben Sie die Bündel-ID der App ein. Hilfe finden Sie in diesem Thema unter **Bündel-ID-Referenz für integrierte iOS-Apps**.

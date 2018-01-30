@@ -5,7 +5,7 @@ description: Richten Sie den Lookout Mobile Threat Defense-Connector mit Intune 
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c13aa920358526deddcdb912833217c88f27371
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 41270fb217c87880e67c1c5e0adf319576031126
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense-Connector mit Intune
 
@@ -63,7 +63,7 @@ Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie
 
 ![Diagramm das zeigt, wie die Richtlinie für bedingten Zugriff den Zugriff blockiert, wenn das Gerät aufgrund von böswilligen Apps auf dem Gerät als nicht konform eingestuft wird](./media/malicious-apps-blocked.png)
 
-**Zugriff erteilt nach der Sanierung:**
+**Zugriff nach Beseitigung gewährt:**
 
 ![Diagramm, das die Richtlinie für bedingten Zugriff darstellt, die den Zugriff erteilt, nachdem das Gerät nach der Sanierung als kompatibel bewertet wurde](./media/malicious-apps-unblocked.png)
 
@@ -86,7 +86,7 @@ Erkennen von Bedrohungen Ihres Netzwerks, wie etwa Man-in-the-Middle-Angriffen, 
 ![Diagramm, das die Blockierung des Gerätezugriffs auf SharePoint Online mithilfe von bedingtem Zugriff basierend auf der Erkennung von Bedrohungen darstellt](./media/network-spo-blocked.png)
 
 
-**Zugriff erteilt nach der Sanierung:**
+**Zugriff nach Beseitigung gewährt:**
 
 ![Diagramm, das den bedingten Zugriff nach dem Beheben der Netzwerkbedrohung darstellt](./media/network-spo-unblocked.png)
 

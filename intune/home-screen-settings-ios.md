@@ -5,7 +5,7 @@ description: "Lernen Sie die Einstellungen kennen, mit denen Sie den Start- und 
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0dcc8f5509afa5308f8ae91a3d60ee081d5daa0b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 2e4de4f4b1235136d7391c8d9efdc1405043e4da
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Einstellungen des Layouts des Intune-Startbildschirms für iOS-Geräte
 
@@ -131,7 +131,7 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 |Podcasts|com.apple.podcasts|
 |Reminders|com.apple.reminders|
 |Safari|com.apple.mobilesafari|
-|Einstellungen|com.apple.Preferences|
+|Einstellung|com.apple.Preferences|
 |Stocks|com.apple.stocks|
 |Tipps|com.apple.tips|
 |Videos|com.apple.videos|
