@@ -4,7 +4,7 @@ description: "Dieser Artikel bietet einen Kommunikationsplan und eine Strategie 
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: e36e917c035d4bbadccd629ef4cc21552cc62ec6
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="plan-communications"></a>Planen der Kommunikation
 
@@ -30,13 +30,13 @@ Wir empfehlen den folgenden E-Mail-Kommunikationsplan. Wir haben für Sie Vorlag
 -   **E-Mail \#1:** Erläutern Sie die Vorteile, Erwartungen und den Zeitplan. Nutzen Sie die Gelegenheit, um andere neue Dienste vorzustellen, deren Zugriff auf durch Intune verwalteten Geräten gewährt wird.<br/><br/>
 
 
-    -   [E-Mail herunterladen\#1 Vorlage](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
+    -   [E-Mail herunterladen \#Vorlage 1](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
 <br></br>
 
 -   **E-Mail \#2:** Geben Sie bekannt, dass Dienste nun für den Zugriff über Intune bereit sind. Fordern Sie die Benutzer auf, sich nun zu registrieren. Erinnern Sie die Benutzer an die Vorteile und strategischen Gründe für die Migration.<br/><br/>
 
 
-    -   [E-Mail herunterladen\#2 Vorlage](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
+    -   [E-Mail herunterladen \#Vorlage 2](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
 -   **E-Mail \#3:** Stellen Sie Benutzern eine Zeitachse bereit, bevor deren Zugriff betroffen ist. Erinnern Sie die Benutzer nochmals an die Vorteile und strategischen Gründe für die Migration. Das Zeitfenster für die Versendung der E-Mails sollte gleitend sein, sodass dies mit den Phasen übereinstimmt. Beispielsweise im Juni E-Mail \#1 an die Benutzer von Phase 1, E-Mail \#2 an die Benutzer von Phase 2 und E-Mail \#3 an die Benutzer von Phase 3.<br/><br/>

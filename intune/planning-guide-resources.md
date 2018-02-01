@@ -4,7 +4,7 @@ description: "Links zu Planungsvorlagen und zusätzlichen Intune-Informationen, 
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 38830370d3bac63e1c32b12f481db5be39de971d
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 8a5a819fc8d081330be60e8b83944e326baaba2b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Zusätzliche Ressourcen für die Planung Ihrer Intune-Bereitstellung
 
@@ -34,10 +34,10 @@ Hier ist eine Liste der Tabellenvorlagen für jeden Abschnitt.
 | Herausforderungen bei der Bereitstellung |Nutzungsbedingungen|Test zur Überprüfung im Endbenutzerszenario|
 | Anwendungsfallszenarien |Konfigurationsrichtlinie| |
 | Anforderungen für Anwendungsfallszenarien |Zertifikatprofil| |
-| Rolloutplan |WLAN-Profil| |
+| Rolloutplan |Wi-Fi-Profil| |
 | Kommunikationsplan für Rollout|VPN-Profil| |
 | |  E-Mail-Profil | |
-| | Anwendungen | |
+| | Applications | |
 | | Kompatibilitätsrichtlinie | |
 | | Richtlinie für bedingten Zugriff|-|
 

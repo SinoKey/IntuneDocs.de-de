@@ -5,9 +5,9 @@ description: Informationen zu bekannten Problemen in Intune
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5cdda6a34311bb7b70234ab046975e6ff5417878
-ms.sourcegitcommit: cfe3607ba0b76a37a3c54f465754482d49a816a0
+ms.openlocfilehash: 255bd839bda8e8d85794a88fc76899bbd5870bc0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekannte Probleme in Microsoft Intune
 
@@ -55,8 +55,6 @@ Per Volumenlizenz erworbene iOS-Apps werden angezeigt und können nur für den g
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Es werden mehrere Kopien desselben iOS-Volumenlizenzprogramms hochgeladen.
 Klicken Sie nicht mehrmals für das gleiche VPP-Token auf die Schaltfläche **Hochladen**. Dies führt dazu, dass doppelte VPP-Token hochgeladen und Apps mehrmals für das gleiche VPP-Token synchronisiert werden.
 
-### <a name="assigning-office-365-to-macos-devices"></a>Zuweisen von Office 365 zu macOS-Geräten
-Das Feature zum Zuweisen von Office 365 zu macOS-Geräten mit Microsoft Intune wird verfügbar sein, sobald unser Update in Bezug auf die Benutzeroberfläche abgeschlossen ist.
 
 <!-- ## Groups -->
 

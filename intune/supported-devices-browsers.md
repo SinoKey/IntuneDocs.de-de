@@ -4,7 +4,7 @@ description: "Liste der unterstützten Geräteplattformen und Browser für die I
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod: 
@@ -14,28 +14,28 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56516562b9a7510020475d226c74bf719bdd33a3
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 1e6b14d5152df8420c5d358ccd9057d7ba427800
+ms.sourcegitcommit: d9de1e92c3913f731d5da3c51a5e1e9b2686894b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/25/2018
 ---
-# <a name="supported-devices-and-browsers"></a>Unterstützte Geräte und Browser
+# <a name="supported-operating-systems-and-browsers"></a>Unterstützte Betriebssysteme und Browser
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Dieser Artikel richtet sich an Systemadministratoren, die für die Verwaltung der Geräte im Unternehmen verantwortlich sind. Hilfe zur Installation von Intune auf Ihrem Telefon finden Sie unter [Verwenden verwalteter Geräte zum Erledigen von Aufgaben](/intune-user-help/company-portal-frequently-asked-questions).
+Dieser Artikel richtet sich an Systemadministratoren, die für die Verwaltung der Geräte im Unternehmen verantwortlich sind. Hilfe zur Installation von Intune auf Ihrem Gerät finden Sie unter [Verwenden verwalteter Geräte zum Erledigen von Aufgaben](/intune-user-help/company-portal-frequently-asked-questions).
 
 Prüfen Sie die folgenden Anforderungen, bevor Sie mit der Einrichtung von Microsoft Intune beginnen:
 
-- [Unterstützte Geräte und Computer](#intune-supported-devices)
+- [Unterstützte Betriebssysteme](#intune-supported-operating-systems)
 - [Liste der unterstützten Webbrowser, die Intune verwenden](#intune-supported-web-browsers)
 
 Sie sollten sich auch mit der [Nutzung der Netzwerkbandbreite durch Intune](network-bandwidth-use.md) ([klassisches Portal](/intune-classic/get-started/network-bandwidth-use)) vertraut machen.
 
-## <a name="intune-supported-devices"></a>Von Intune unterstützte Geräte
+## <a name="intune-supported-operating-systems"></a>Von Intune unterstützte Betriebssysteme
 
-Sie können die folgenden Geräte mit Intune MDM (Verwaltung mobiler Geräte, Mobile Device Management) verwalten:
+Sie können die Geräte verwalten, die folgende Betriebssysteme verwenden:
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
@@ -85,7 +85,6 @@ In der folgenden Liste werden Samsung-Gerätemodelle aufgeführt, die KNOX nicht
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-Intune kann nicht verwendet werden, um Windows Server-Betriebssysteme zu verwalten.
 
 ### <a name="windows-pc-software-client"></a>Softwareclient für Windows-PCs
 

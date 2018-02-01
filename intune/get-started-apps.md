@@ -5,7 +5,7 @@ description: "Suchen Sie Apps, und fügen Sie sie auf Geräten hinzu, um Ihren M
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb02c362f056c454f4d141ce7ae20b9c3ca8035d
-ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
+ms.openlocfilehash: c1838f1d856efdebb7e2114cb61dd8d88ca100f7
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="get-started-with-adding-apps"></a>Erste Schritte mit dem Hinzufügen von Apps
 
@@ -43,7 +43,7 @@ Eine der schnelleren Bereitstellungsmethoden für Apps ist das Zuweisen einer ö
 8. Achten Sie darauf, dass Sie **Ja** für **Diese App als ausgewählte App im Unternehmensportal anzeigen** ausgewählt haben, und klicken Sie dann auf **OK**.
 9. Wählen Sie **Hinzufügen** auf dem Blatt **App hinzufügen** aus, um die App hinzuzufügen. Dann werden Sie zur **Übersicht** der App weitergeleitet. Klicken Sie auf **Zuweisungen** und dann auf **Gruppe auswählen**, um sie Ihrer Testgruppe hinzuzufügen. Machen Sie die App zum Herunterladen **verfügbar**. Dann sollte die App als **Empfohlene App** auf Ihrem Testgerät angezeigt werden.
 
-## <a name="learn-more"></a>Weitere Informationen
+## <a name="learn-more"></a>Erfahren Sie mehr
 
 * [Was ist die Microsoft Intune App-Verwaltung?](app-management.md)
 * [Übersicht über den App-Lebenszyklus](app-lifecycle.md)

@@ -5,7 +5,7 @@ description: "Unterstützende Dokumentation für den Assistenten zum Verwalten v
 keywords: 
 author: lindavr
 ms.author: lindavr
-manager: angrobe
+manager: dougeby
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b818152d2172ccf85a8323ba3ff70a0b270d20df
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 36dc2924602ffa060d01d3ba932c657fd52552c7
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>So erleben Ihre Benutzer den grundlegenden Schutz in verwalteten Office 365-Apps
 
@@ -99,14 +99,14 @@ In diesem Artikel wird OneDrive for Business als Beispiel verwendet, um die Benu
 |"Speichern unter" verhindern | Nein | Nein|
 |Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken | Jede App | Jede App |
 |Einschränken von anzuzeigenden Webinhalten in einem unternehmensverwalteten Browser | Nein| Nein|
-|App-Daten verschlüsseln | Wenn das Gerät gesperrt ist | Ja|
+|App-Daten verschlüsseln | Wenn das Gerät gesperrt ist | Ja |
 |Kontaktsynchronisierung deaktivieren | Nein| Nein|
 |Drucken deaktivieren | Nein | Nein|
-|PIN für Zugriff anfordern | Nein | Ja|
+|PIN für Zugriff anfordern | Nein | Ja |
 |Anzahl der Versuche vor dem Zurücksetzen der PIN | N/V |5|
-|Einfache PIN zulassen | N/V |Ja|
+|Einfache PIN zulassen | N/V |Ja |
 |PIN-Länge | N/V | 4|
-|Fingerabdruck anstelle von PIN zulassen | N/V | Ja |
+|Fingerabdruck anstelle von PIN zulassen | N/V | Ja  |
 |Unternehmensanmeldeinformationen für Zugriff erforderlich | Nein | Nein|
 |Blockieren der Ausführung von verwalteten Apps auf per Jailbreak oder Rooting manipulierten Geräten | Nein | Nein|
 |Zugriffsanforderungen nach (Minuten) erneut überprüfen – Timeout | 30 | 30|
