@@ -5,7 +5,7 @@ description: "Erfahren Sie, wie Sie Apps aus dem Microsoft Store für Unternehme
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ca1ab9ca0e6bd734fa756cd32e64bde7ff4cb40
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 85141fc6f4d71994f575233c255a97e336c92108
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Verwalten von Apps, die im Microsoft Store für Unternehmen mit Microsoft Intune erworben wurden
 
@@ -31,7 +31,7 @@ Im [Microsoft Store für Unternehmen](https://www.microsoft.com/business-store) 
 * Synchronisierte Apps werden in der Intune-Verwaltungskonsole angezeigt und können wie alle anderen Apps zugewiesen werden.
 * Sie können in der Intune-Verwaltungskonsole die Anzahl der verfügbaren und der verwendeten Lizenzen nachverfolgen.
 * Intune blockiert die Zuweisung und Installation von Apps, wenn nicht genügend Lizenzen vorhanden sind.
-* Anwendungen, die von Windows Store for Business verwaltet werden, entziehen Lizenzen automatisch, wenn ein Benutzer das Unternehmen verlässt oder der Administrator den Benutzer und dessen Geräte entfernt.
+* Anwendungen, die von Microsoft Store für Unternehmen verwaltet werden, entziehen Lizenzen automatisch, wenn ein Benutzer das Unternehmen verlässt oder der Administrator den Benutzer und dessen Geräte entfernt.
 
 ## <a name="before-you-start"></a>Vorbereitung
 

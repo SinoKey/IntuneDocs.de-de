@@ -5,8 +5,8 @@ description: "In diesem Artikel erfahren Sie, wie Sie die von Ihnen verwalteten 
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
-ms.date: 11/21/2017
+manager: dougeby
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d27b709ba8d4ff1d8fb4417a217ad008c19c36
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: ecd7fa03b35e91b5a77906858fb251348796704d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remotely-lock-managed-devices-with-intune"></a>Remote-Sperren von verwalteten Geräten durch Intune
 
@@ -29,14 +29,19 @@ Mit der Geräteaktion **Remote sperren** wird das ausgewählte Gerät gesperrt. 
 
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 
-- Windows – Nicht unterstützt
-- Windows Phone – Unterstützt auf Windows Phone 8.1 und später
-- iOS – Unterstützt
-- macOs – Unterstützt
+Die Remote-Sperre wird für folgende Plattformen unterstützt:
 
-    > [!Note]  
-    > Legen Sie eine Wiederherstellungs-PIN mit 6 Ziffern fest. Wenn das Gerät gesperrt ist, wird im Blatt **Device overview** (Geräteübersicht) die PIN solange angezeigt, bis eine andere Geräteaktion gesendet wurde.
-- Android – Unterstützung
+|Plattform|Unterstützungsstatus|
+|---|---|
+|Android|Ja |
+|iOS|Ja |
+|macOS|Ja |
+|Windows 10|Ja |
+|Windows 10 Mobile|Ja |
+|Windows Phone|Ja für Windows Phone 8.1 und höher|
+
+> [!NOTE]  
+> Bei macOS-Geräten legen Sie eine Wiederherstellungs-PIN aus 6 Ziffern fest. Wenn das Gerät gesperrt ist, wird im Blatt **Device overview** (Geräteübersicht) die PIN solange angezeigt, bis eine andere Geräteaktion gesendet wurde.
 
 ## <a name="how-to-remote-lock-a-device"></a>So sperren Sie ein Gerät aus der Ferne
 
