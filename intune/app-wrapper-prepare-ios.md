@@ -4,7 +4,7 @@ description: "In diesem Thema lernen Sie, Ihre iOS-Apps zu umschließen, ohne de
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dc031b12ed49766c70a6a4ff373a7c5843ca21ad
-ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
+ms.openlocfilehash: 4925fc86596437d0560bd7fa2598eaf95126df16
+ms.sourcegitcommit: cede2e15bd62f1073131fbc9af7623cdfc3730cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Vorbereiten von iOS-Apps für App-Schutzrichtlinien mit dem Intune App Wrapping Tool
 
@@ -172,6 +172,9 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 3. Wählen Sie **Agree** (Zustimmen) aus, um die Lizenzbedingungen zu akzeptieren, wodurch das Paket auf Ihrem Computer eingelegt wird.
 
 4.  Öffnen Sie den Ordner **IntuneMAMPackager**, und speichern Sie seinen Inhalt auf Ihrem macOS-Computer. Sie können nun das App Wrapping Tool ausführen.
+
+> [!NOTE]
+> Der Intune MAM Packager kann auf macOS Computern separat eingebunden werden, was möglicherweise zu dem Fehler „Datei nicht gefunden.“ führt, wenn Sie die Wrapping-Befehle ausführen. Dadurch, dass die Inhalte des Ordners „IntuneMAMPackager“ verschoben werden, kann der Pfad zum Packager während des Umschließungsvorgangs gefunden werden.
 
 ## <a name="run-the-app-wrapping-tool"></a>Ausführen des App Wrapping Tools
 

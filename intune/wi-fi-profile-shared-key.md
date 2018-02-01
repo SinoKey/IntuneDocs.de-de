@@ -5,7 +5,7 @@ description: "Verwenden Sie ein benutzerdefiniertes Profil von Intune, um ein WL
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 395a7136630a9393f44037c65e3c8db760149c38
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Verwenden Sie ein benutzerdefiniertes Geräteprofil zum Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -210,7 +210,5 @@ Sie können die XML-Datei auch aus einer vorhandenen WLAN-Verbindung erstellen:
 Bevor Sie ein WLAN-Profil mit PSK bereitstellen, überprüfen Sie, ob das Gerät eine direkte Verbindung mit dem Endpunkt herstellen kann.
 
 Rechnen Sie beim Rotieren von Schlüsseln (Kennwörtern oder Passphrases) mit Ausfallzeiten, und planen Sie die Bereitstellung entsprechend. Erwägen Sie die Push-Übertragung von neuen WLAN-Profilen in der arbeitsfreien Zeit. Außerdem sollten Sie die Benutzer warnen, dass die Konnektivität beeinträchtigt sein kann.
- 
-Um eine reibungslose Umstellung und die zeitnahe Übermittlung von Richtlinienaktualisierungen zu gewährleisten, müssen die Geräte wenigstens einen offenen Kommunikationskanal zu Intune behalten. Verwenden Sie zu diesem Zweck Mobilfunkverbindungen, um WLAN-Gastzugriff bereitzustellen, mit dem Benutzer ausschließlich mit Intune-Endpunkten verbunden werden.
 
-
+Stellen Sie sicher, dass das Gerät des Endbenutzers eine alternative Verbindung mit dem Internet hat, damit ein reibungslosen Übergang gewährleistet ist. Der Endbenutzer muss z.B. dazu in der Lage sein, auf das Gast-WLAN (oder ein anderes WLAN-Netzwerk) oder eine Mobilfunkverbindung zuzugreifen, um mit Intune zu kommunizieren. Dadurch kann der Benutzer weiterhin Aktualisierungen zu Richtlinien erhalten, wenn das WLAN-Profil des Unternehmens auf dem Gerät aktualisiert wird.

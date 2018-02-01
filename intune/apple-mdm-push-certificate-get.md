@@ -5,8 +5,8 @@ description: "Lernen Sie die Schritte kennen, mit denen Sie ein Apple-MDM-Push-Z
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
-ms.date: 10/04/2017
+manager: dougeby
+ms.date: 1/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b67c2cb238d354ccd9801ec0b5c9f8ccb49c6715
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 8fca2a1f32cd15752758802ee6ae44b8ae33b696
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Abrufen eines Apple-MDM-Push-Zertifikats
 
@@ -56,7 +56,10 @@ Das Zertifikat ist mit der Apple-ID verknüpft, die verwendet wurde, um es zu er
 2. Wählen Sie **CSR herunterladen** aus, um die CSR-Datei herunterzuladen und lokal zu speichern. Die Datei wird verwendet, um ein Vertrauensstellungszertifikat vom Apple Push Certificates-Portal anzufordern.
 3. Suchen Sie das Zertifikat, das Sie erneuern möchten, und wählen Sie **Erneuern** aus.
 4. Schreiben Sie auf dem Bildschirm **Push-Zertifikat erneuern** Notizen, die Ihnen zukünftig bei der Identifizierung des Zertifikats helfen. Klicken Sie auf **Datei auswählen**, um die neue Anforderungsdatei zu durchsuchen, die Sie heruntergeladen haben und dann auf **Hochladen**.
-5. Wählen Sie auf dem Bildschirm **Bestätigen** die Option **Herunterladen** aus, und speichern Sie die PEM-Datei lokal.
-6. Wählen Sie im Azure-Portal das Symbol zum Durchsuchen des **Apple-MDM-Push-Zertifikats** aus, wählen Sie die PEM-Datei, die Sie von Apple heruntergeladen haben, und anschließend **Hochladen** aus.
+   > [!TIP]
+   > Ein Zertifikat kann durch die Benutzer-ID identifiziert werden. Überprüfen Sie die **Antragsteller-ID** in den Zertifikatdetails, um den GUID-Teil der Benutzer-ID zu finden. Wenn Sie ein registriertes iOS-Gerät verwenden, klicken Sie auf **Einstellungen** > **Allgemein** > **Gerät** **Verwaltung** > **Verwaltungsprofil** > **Weitere Details** > **Verwaltungsprofil**. Das zweite Zeilenelement **Thema**, enthält die eindeutige GUID, die Sie mit dem Zertifikat im Apple Push Certificates-Portal vergleichen können.
+ 
+6. Wählen Sie auf dem Bildschirm **Bestätigen** die Option **Herunterladen** aus, und speichern Sie die PEM-Datei lokal.
+7. Wählen Sie im Azure-Portal das Symbol zum Durchsuchen des **Apple-MDM-Push-Zertifikats** aus, wählen Sie die PEM-Datei, die Sie von Apple heruntergeladen haben, und anschließend **Hochladen** aus.
 
 Ihr Apple MDM-Push-Zertifikat erscheint als **aktiv** und läuft in 365 Tagen ab.
