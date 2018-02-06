@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cd446310256a71e7306364b4142bfacce482fe4
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fc50d6f5c4b0350d0117b5d68a0b9ac3e9ec3ab3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Windows 10 und höher in Microsoft Intune
 
@@ -254,7 +254,7 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 
 ## <a name="kiosk-preview"></a>Kiosk (Vorschauversion)
 
--   **Kioskmodus**: Gibt den Typ des [Kioskmodus](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) an, der von der Richtlinie unterstützt wird. Zu den Optionen gehören:
+-   **Kioskmodus**: Gibt den Typ des [Kioskmodus](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) an, der von der Richtlinie unterstützt wird. Zu den Optionen gehören:
 
       - **Nicht konfiguriert**: (Standard). Die Richtlinie aktiviert keinen Kioskmodus. 
       - **Kiosk mit einzelner App**: Das Profil aktiviert das Gerät als Kiosk mit einer einzelnen App.
@@ -266,7 +266,7 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 
          Verwenden Sie für Geräte in öffentlichen Umgebungen Konten mit minimalen Berechtigungen, um autorisierte Aktivitäten zu verhindern.  
 
-      - **Anwendungsbenutzermodell-ID (AUMID) der App**: Gibt die AUMID der Kiosk-App an. Weitere Informationen finden Sie unter [Find the Application User Model ID of an installed app (Ermitteln der Anwendungsbenutzer-ID einer installierten App)](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+      - **Anwendungsbenutzermodell-ID (AUMID) der App**: Gibt die AUMID der Kiosk-App an. Weitere Informationen finden Sie unter [Find the Application User Model ID of an installed app (Ermitteln der Anwendungsbenutzer-ID einer installierten App)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
     Für Kioskcomputer mit mehreren Apps ist eine Kioskkonfiguration erforderlich. Verwenden Sie die Schaltfläche **Hinzufügen**, um eine Kioskkonfiguration zu erstellen oder eine vorhandene auszuwählen.
 
@@ -280,13 +280,13 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 
             - **Win32-App**: Eine herkömmliche Desktop-App. (Sie benötigen den vollqualifizierten Pfadnamen der ausführbaren Datei bezogen auf das Gerät.)
 
-            - **UWP-App**: Eine universelle Windows-App. Sie benötigen die [AUMID für die App](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+            - **UWP-App**: Eine universelle Windows-App. Sie benötigen die [AUMID für die App](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-        - **App-Bezeichner**: Gibt entweder den vollqualifizierten Pfadnamen für die ausführbare Datei (Win32-Apps) oder die [AUMID der App](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-Apps) an.
+        - **App-Bezeichner**: Gibt entweder den vollqualifizierten Pfadnamen für die ausführbare Datei (Win32-Apps) oder die [AUMID der App](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-Apps) an.
 
     - **Taskleiste** gibt an, ob die Taskleiste im Kiosk angezeigt wird (**Aktiviert**) oder ausgeblendet ist (**Nicht konfiguriert**).
 
-    - **Layout des Startmenüs**: Gibt eine XML-Datei an, die beschreibt, wie die Apps [im Startmenü dargestellt werden](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+    - **Layout des Startmenüs**: Gibt eine XML-Datei an, die beschreibt, wie die Apps [im Startmenü dargestellt werden](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
     - **Zugewiesene Benutzer**: Gibt ein oder mehrere Benutzerkonten an, die der Kioskkonfiguration zugeordnet sind. Das Konto ist entweder für das Gerät lokal oder stellt eine Azure AD-Kontoanmeldung dar, die der Kiosk-App zugeordnet ist. Geben Sie Konten in Domänen in der Form `domain\\username@tenant.org` an.
 

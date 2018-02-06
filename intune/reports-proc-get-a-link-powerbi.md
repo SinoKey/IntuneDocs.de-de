@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7542a2d4fa84c2c23d638400fa564823c02357d0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fa7c578cd8dba84910bae9b9f204c8057c76bf6b
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinden mit dem Data Warehouse mit Power BI
 
@@ -42,7 +42,7 @@ Die folgenden Schritte zeigen, wie Sie die Power BI-Datei herunterladen und wie 
 
 ## <a name="install-power-bi"></a>Installieren von Power BI
 
-Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI Desktop aus [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop) herunterladen.
+Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI Desktop aus [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop) herunterladen.
 
 ## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Laden der Daten und Berichte mit der Power BI-Datei (PBIX)
 
