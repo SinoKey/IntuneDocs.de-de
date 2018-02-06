@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c183af24e953f87e12e87654f767dd9a30f8509f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 044f3aaa81a2bb02662bec3d20ea51a2339b91a6
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Konfigurieren von Intune-Einstellungen für Bildungseinrichtungen für freigegebene iPad-Geräte
 
@@ -34,7 +34,7 @@ Informationen zum Konfigurieren dedizierter (1:1) iPad-Geräte zur Verwendung de
 Voraussetzungen zum Verwenden der freigegebenen iPad-Funktionen:
 
 - Richten Sie [Apple School Manager](apple-school-manager-set-up-ios.md) und [School Data Sync (SDS)](https://support.office.com/article/Apple-School-Manager-integration-with-Intune-for-Education-and-School-Data-Sync-974bd1f9-2c7a-45cb-9447-b58166108617) ein.
-- Konfigurieren Sie beim Einrichten von Apple School Manager [verwaltete Apple-IDs](http://help.apple.com/schoolmanager/#/tes78b477c81) für Schüler/Studenten. [Weitere Informationen zu verwalteten Apple-IDs](https://support.apple.com/en-us/HT205918).
+- Konfigurieren Sie beim Einrichten von Apple School Manager [verwaltete Apple-IDs](http://help.apple.com/schoolmanager/#/tes78b477c81) für Schüler/Studenten. [Weitere Informationen zu verwalteten Apple-IDs](https://support.apple.com/HT205918).
 - Erstellen Sie ein Registrierungsprofil für die Geräteseriennummern, die aus Apple School Manager synchronisiert wurden.
 
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>Schritt 1: Importieren der Schul-/Unidaten in Azure Active Directory
