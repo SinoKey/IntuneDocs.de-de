@@ -48,7 +48,7 @@ Intune ist die Komponente von Enterprise Mobility + Security (EMS), mit der mobi
 Hier können Sie sich eine [größere Version](./media/intunearchitecture.svg) des Intune-Architekturschaubilds ansehen.
 
 Wie Sie die Geräte- und App-Verwaltungsfunktionen von Intune und EMS nutzen, hängt der Datenschutz von dem [Geschäftsproblem ab, das Sie lösen möchten](#common-business-problems-that-intune-helps-solve). Beispiel:
-* Sie werden die Geräteverwaltung stark nutzen, wenn Sie einen Pool von Geräten erstellen, die nur eine bestimmte Funktion bereitstellen und die von Schichtarbeitern im Einzelhandel geteilt werden sollen.
+* Sie werden die Geräteverwaltung umfassend einsetzen, wenn Sie einen Pool mit Geräten erstellen, die nur eine bestimmte Funktion bereitstellen und von Benutzern, die in einem Ladengeschäft zu unterschiedlichen Zeiten arbeiten, gemeinsam verwendet werden sollen.
 * Sie brauchen die App-Verwaltung und Datenschutz, wenn Sie Ihren Mitarbeitern erlauben, ihre persönlichen Geräte für den Zugriff auf Unternehmensdaten zu nutzen (BYOD).  
 * Wenn Sie Firmentelefone an Information-Worker ausgeben, werden Sie sich auf alle Technologien verlassen.
 
