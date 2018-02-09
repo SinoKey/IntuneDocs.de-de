@@ -68,6 +68,8 @@
           href: app-lifecycle.md
     - name: Häufige Szenarien
       href: common-scenarios.md
+    - name: MAM – HÄUFIG GESTELLTE FRAGEN
+      href: mam-faq.md
 - name: Planen der Bereitstellung
   items:
     - name: Planning guide (Planungshandbuch)
