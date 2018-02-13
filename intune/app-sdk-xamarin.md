@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 11/01/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4b52b83b84e36a89b5e578c9e14c5093715a559c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: df90f3e011442e4e383c18d0309416d6549c330c
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Intune App SDK-Xamarin-Komponente
 
@@ -66,7 +66,7 @@ Xamarin-Apps, die mit der Intune App SDK Xamarin-Komponente erstellt wurden, kö
 
 3.  Laden Sie den Ordner der Xamarin-Komponente des Intune App SDK von [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) oder [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) herunter, und extrahieren Sie diesen. Die beiden in Schritt 1 und Schritt 3 heruntergeladenen Dateien müssen sich auf derselben Verzeichnisebene befinden.
 
-4.  Führen Sie `Xamarin.Component.exe install <.xam> file` in der Befehlszeile als Administrator aus.
+4.  Führen Sie `mono Xamarin.Component.exe install <.xam> file` in der Befehlszeile als Administrator aus.
 
 5.  Klicken Sie in Visual Studio mit der rechten Maustaste in Ihrem zuvor erstellten Xamarin-Projekt auf **Komponenten**.
 
