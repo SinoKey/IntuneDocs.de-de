@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b67314ec37198553adc226424bc226293350453b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7995b79422a142f3eb8d5e81d81dbc525fbbb696
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Erstellen einer Gerätekonformitätsrichtlinie für Android-Geräte in Intune
 
@@ -103,9 +103,9 @@ Weitere Informationen finden Sie unter [Aktivieren der Regel zum Schutz vor Bedr
 - **Minimal erforderliches Betriebssystem:** Wenn ein Gerät die Anforderungen an die erforderliche Mindestversion des Betriebssystems nicht erfüllt, wird es als nicht konform gemeldet. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Benutzer kann ein Upgrade des Geräts durchführen und anschließend auf die Unternehmensressourcen zugreifen.
 - **Maximal zulässige Betriebssystemversion:** Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt, und der Benutzer wird gebeten, sich an den IT-Administrator zu wenden. Mit diesem Gerät kann solange nicht auf Unternehmensressourcen zugegriffen werden, bis die Regeln geändert werden und die betreffende Betriebssystemversion zugelassen wird.
 
-## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>Wie werden nicht kompatible Einstellungen im Zusammenhang mit Richtlinien für bedingten Zugriff gehandhabt?
+## <a name="how-noncompliant-settings-work-with-conditional-access-policies"></a>Wie werden nicht kompatible Einstellungen im Zusammenhang mit Richtlinien für bedingten Zugriff gehandhabt?
 
-In der folgenden Tabelle erfahren Sie, wie nicht kompatible Einstellungen verwaltet werden, wenn eine Kompatibilitätsrichtlinie mit einer Richtlinie für bedingten Zugriff verwendet wird.
+In der Tabelle unten wird beschrieben, wie nicht konforme Einstellungen verwaltet werden, wenn eine Konformitätsrichtlinie mit einer Richtlinie für bedingten Zugriff verwendet wird.
 
 --------------------
 

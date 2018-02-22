@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f601253c6ea905e86a2a417cfd37bdb03b1df48b
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ea45ac89064756f4b8ebd8ca9d163a151b6e6cc2
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>Erstellen der Skycure Mobile Threat Defense-Kompatibilitätsrichtlinie
 
@@ -47,7 +47,7 @@ Beim Einrichten von Skycure Mobile Threat Defense haben Sie in der Skycure-Konso
 
 4.  Wählen Sie die Option **Maximal zulässige Bedrohungsstufe**:
 
-    a.  **Keine (geschützt)**: Dies ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.
+    ein.  **Keine (geschützt)**: Dies ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.
 
     b.  **Niedrig**: Das Gerät ist kompatibel, wenn nur Bedrohungen auf niedriger Stufe vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
 

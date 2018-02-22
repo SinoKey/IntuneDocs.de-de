@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 362c7f4dc9acfe574eb6a98819339e2db44cb9ec
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a3075aa4ecae75b2c422b1e59b9fa0ce5281a2d7
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien
 
@@ -34,7 +34,7 @@ Intune-Richtlinien lassen sich in die folgenden Kategorien einteilen: Die von Ih
 
 - **Konfigurationsrichtlinien**: Diese werden häufig zum Verwalten von Sicherheitseinstellungen und -features auf Ihren Geräten verwendet. Verwenden Sie die Informationen in diesem Thema, um mehr über das Erstellen und Bereitstellen dieser Richtlinien und die verfügbaren Einstellungen zu erfahren.
 - **Gerätekompatibilitätsrichtlinien**: Diese definieren die Regeln und Einstellungen, die ein Gerät erfüllen muss, damit es als kompatibel mit Richtlinien für bedingten Zugriff eingestuft wird. Kompatibilitätsrichtlinien ermöglichen Ihnen auch, die Kompatibilität von Geräten unabhängig von bedingten Zugriffsrechten zu überwachen und zu beheben.
-Weitere Informationen finden Sie unter [Gerätekompatibilitätsrichtlinien in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).
+Weitere Informationen finden Sie unter [Gerätekonformitätsrichtlinien in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 - **Richtlinien für bedingten Zugriff**: Mit diesen Richtlinien können Sie E-Mail- und andere Dienste basierend auf Bedingungen schützen, die Sie festlegen.
 Weitere Informationen finden Sie unter [Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste mit Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 - **Richtlinien zum Registrieren unternehmenseigener Geräte**: Informationen über Richtlinien zum Registrieren unternehmenseigener Geräte finden Sie unter [Einrichten der iOS- und Mac-Verwaltung mit Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).

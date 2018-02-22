@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/28/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
-ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ce18162391318374729b55aaeb302d850c17939
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3fb7de9fb320b74895b702167750e149eba34e1e
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="use-windows-hello-for-business"></a>Verwenden von Windows Hello for Business
 
@@ -94,6 +92,18 @@ Um sicherzustellen, dass Richtlinienkonflikte gelöst werden und dass die PIN-Ri
 
  - **Anmeldung per Telefon verwenden**. Wenn diese Option auf **Ja** festgelegt ist, können die Benutzer einen Remote-Passport als tragbares Begleitgerät für die Authentifizierung von Desktopcomputern verwenden. Der Desktopcomputer muss Azure Active Directory angehören, und das Begleitgerät muss mit einer Windows Hello for Business-PIN konfiguriert werden.
 
+## <a name="windows-holographic-for-business-support"></a>Unterstützung durch Windows Holographic for Business
+
+Windows Holographic for Business unterstützt die folgenden Windows Hello for Business-Einstellungen:
+
+- Trusted Platform Module (TPM) verwenden
+- Mindestlänge für PIN
+- Höchstlänge für PIN
+- Kleinbuchstaben in PIN
+- Großbuchstaben in PIN
+- Sonderzeichen in PIN
+- PIN-Ablauf (Tage)
+- PIN-Verlauf speichern
 
 ## <a name="further-information"></a>Weitere Informationen
 Weitere Informationen zu Microsoft Passport finden Sie im [Leitfaden](https://technet.microsoft.com/library/mt589441.aspx) in der Dokumentation zu Windows 10.

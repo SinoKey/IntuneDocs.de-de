@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eda4ad57f1365a7fe27d58ad8f40399b1582b4b6
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4ae5060ca2ea884ddbcf0e21d7a6e95c56f973bc
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Registrieren von Geräten mithilfe des Geräteregistrierungs-Managers
 
@@ -30,7 +30,7 @@ Mit Intune können Organisationen eine Vielzahl mobiler Geräte mit einem einzel
 Es müssen Benutzer im Azure-Portal vorhanden sein, damit sie als Geräteregistrierungs-Manager hinzugefügt werden können. Für die optimale Sicherheit darf der DEM-Benutzer nicht zusätzlich Intune-Administrator sein.
 
 >[!NOTE]
->Die Registrierungsmethode mit dem Geräteregistrierungs-Manager (Device Enrollment Manager, DEM) kann nicht zusammen mit den folgenden anderen Registrierungsmethoden verwendet werden: [Apple Configurator mit Setup-Assistent](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator mit direkter Registrierung](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) oder [Programm zur Geräteregistrierung (DEP)](device-enrollment-program-enroll-ios.md). Sie kann auch nicht zum Registrieren von macOS-Geräten verwendet werden. 
+>Die Registrierungsmethode mit dem Geräteregistrierungs-Manager (Device Enrollment Manager, DEM) kann nicht zusammen mit den folgenden anderen Registrierungsmethoden verwendet werden: [Apple Configurator mit Setup-Assistent](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator mit direkter Registrierung](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) oder [Programm zur Geräteregistrierung (DEP)](device-enrollment-program-enroll-ios.md). Sie kann auch nicht zum Registrieren von macOS-Geräten verwendet werden.
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Beispiel für ein Geräteregistrierungs-Manager-Szenario:
 
@@ -65,13 +65,11 @@ Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurd
 
 ## <a name="add-a-device-enrollment-manager"></a>Hinzufügen eines Geräteregistrierungs-Managers
 
-1.  Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1.  Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Option **Geräteregistrierung** > **Geräteregistrierungs-Manager** aus.
 
-2.  Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Geräteregistrierungs-Manager** aus.
+2.  Wählen Sie **Hinzufügen** aus.
 
-3.  Wählen Sie **Hinzufügen** aus.
-
-4.  Geben Sie auf dem Blatt **Benutzer hinzufügen** einen Benutzerprinzipalnamen für den Geräteregistrierungs-Manager-Benutzer ein, und wählen Sie **Hinzufügen** aus. Der Geräteregistrierungs-Manager-Benutzer wird der Liste der Geräteregistrierungs-Manager-Benutzer hinzugefügt.
+3.  Geben Sie auf dem Blatt **Benutzer hinzufügen** einen Benutzerprinzipalnamen für den Geräteregistrierungs-Manager-Benutzer ein, und wählen Sie **Hinzufügen** aus. Der Geräteregistrierungs-Manager-Benutzer wird der Liste der Geräteregistrierungs-Manager-Benutzer hinzugefügt.
 
 ## <a name="permissions-for-dem"></a>Berechtigungen für DEM
 

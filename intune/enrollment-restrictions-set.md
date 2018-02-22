@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/29/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3e3f35648784de860eb7e3f2e203488bc77a96d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
@@ -31,7 +31,7 @@ Als Intune-Administrator können Sie Registrierungsbeschränkungen erstellen und
 >Registrierungseinschränkungen stellen keine Sicherheitsfunktionen dar. Gefährdete Geräte können falsche Angaben zu ihren Eigenschaften enthalten. Diese Einschränkungen sind eine bestmögliche Barriere für nicht böswillige Benutzer.
 
 >[!NOTE]
->Die unten aufgeführten Einschränkungen von Gruppen zugewiesenen Registrierungen und Prioritätsfunktionen werden derzeit für den gesamten Intune-Kundenstamm bereitgestellt. Bis zur vollständigen Durchführung der Bereitstellung kann es sein, dass Sie noch keinen Zugriff auf Gruppen- und Prioritätsfeatures haben. 
+>Die unten aufgeführten Einschränkungen von Gruppen zugewiesenen Registrierungen und Prioritätsfunktionen werden derzeit für den gesamten Intune-Kundenstamm bereitgestellt. Bis zur vollständigen Durchführung der Bereitstellung kann es sein, dass Sie noch keinen Zugriff auf Gruppen- und Prioritätsfeatures haben.
 
 Sie können u.a. die folgenden spezifischen Registrierungsbeschränkungen festlegen:
 
@@ -80,7 +80,7 @@ Sie können die Einstellungen für eine Gerätetypbeschränkung ändern, indem S
   - Android und Android for Work unterstützen major.minor.rev.build.
   - iOS unterstützt major.minor.rev.
   - Windows unterstützt major.minor.rev.build nur für Windows 10.
-  Die Betriebssystemversionen gelten nicht für Apple-Geräte, die mit dem Programm zur Geräteregistrierung, dem Apple School Manager oder der App Apple Configurator registriert werden. 
+  Die Betriebssystemversionen gelten nicht für Apple-Geräte, die mit dem Programm zur Geräteregistrierung, dem Apple School Manager oder der App Apple Configurator registriert werden.
 8. Wählen Sie für jede aufgeführte Plattform **Zulassen** oder **Blockieren** für **Geräte in Privatbesitz** aus.
 
     ![Screenshot des Arbeitsbereichs „Gerätebeschränkungen“ mit den standardmäßigen Geräteplattformkonfigurationen für die konfigurierten Einstellungen von Geräten in Privatbesitz.](media/device-restrictions-platform-configurations.png)
@@ -103,15 +103,19 @@ Sie können die Einstellungen für eine Gerätelimitbeschränkung ändern, indem
     ![Screenshot des Blatts „Einschränkungen zum Gerätelimit“ mit den Einschränkungen zur Gerätebeschränkung.](./media/device-restrictions-limit.png)
 6. Klicken Sie auf **Speichern**.
 
+Ihr Endbenutzer erhält eine Benachrichtigung darüber, wann sein Limit registrierter Geräte erreicht ist. Bei iOS würde dies wie folgt aussehen:
+
+![Screenshot der iOS-Gerätelimitbenachrichtigung](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
 ## <a name="change-enrollment-restriction-priority"></a>Ändern der Priorität der Registrierungsbeschränkung
 
-Die Priorität wird verwendet, wenn ein Benutzer in mehreren Gruppen vorhanden ist, denen Beschränkungen zugewiesen sind. Benutzer unterliegen nur der Beschränkung mit der höchsten Priorität, die einer Gruppe zugewiesen wurde, zu der sie gehören. Beispiel: Johanna gehört zur Gruppe A, der Beschränkungen der Priorität 5 zugewiesen ist, und zur Gruppe B, der Beschränkungen der Priorität 2 zugeordnet sind. Johanna unterliegt also nur Einschränkungen der Priorität 2. 
+Die Priorität wird verwendet, wenn ein Benutzer in mehreren Gruppen vorhanden ist, denen Beschränkungen zugewiesen sind. Benutzer unterliegen nur der Beschränkung mit der höchsten Priorität, die einer Gruppe zugewiesen wurde, zu der sie gehören. Beispiel: Johanna gehört zur Gruppe A, der Beschränkungen der Priorität 5 zugewiesen ist, und zur Gruppe B, der Beschränkungen der Priorität 2 zugeordnet sind. Johanna unterliegt also nur Einschränkungen der Priorität 2.
 
 Wenn Sie eine Beschränkung definieren, wird sie der Liste direkt über dem Standardwert hinzugefügt.
 
-Zur Geräteregistrierung gehören Standardbeschränkungen für den Gerätetyp und das Gerätelimit. Diese beiden Beschränkungen gelten für alle Benutzer, es sei denn, sie werden durch Beschränkungen höherer Priorität außer Kraft gesetzt. 
+Zur Geräteregistrierung gehören Standardbeschränkungen für den Gerätetyp und das Gerätelimit. Diese beiden Beschränkungen gelten für alle Benutzer, es sei denn, sie werden durch Beschränkungen höherer Priorität außer Kraft gesetzt.
 
-Sie können die Priorität jeder nicht standardmäßigen Beschränkung ändern. 
+Sie können die Priorität jeder nicht standardmäßigen Beschränkung ändern.
 
 **So ändern Sie Priorität einer Beschränkung**
 
@@ -120,8 +124,3 @@ Sie können die Priorität jeder nicht standardmäßigen Beschränkung ändern.
 3. Klicken Sie auf **Geräteregistrierung** > **Registrierungsbeschränkungen**.
 4. Zeigen Sie in der Prioritätenliste auf die Beschränkung.
 5. Ziehen Sie mithilfe der drei vertikalen Punkte die Priorität an die gewünschte Position in der Liste.
-
-
-
-
-

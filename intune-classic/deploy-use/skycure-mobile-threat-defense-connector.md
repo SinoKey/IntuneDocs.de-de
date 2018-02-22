@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51f26d630537901ad39a215062f820a2c243e077
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 096cd7f2f7895531b00d77c5d26413471fb9bbcf
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense-Connector
 
@@ -69,7 +69,7 @@ Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie
 
 ![Apps mit Schadsoftware entdeckt](../media/mtp/skycure-arch-1.png)
 
-**Zugriff erteilt nach der Sanierung:**
+**Zugriff nach Beseitigung gewährt:**
 
 ![Apps mit Schadsoftware entdeckt, Zugriff gewährt](../media/mtp/skycure-arch-2.png)
 
@@ -81,7 +81,7 @@ Erkennen Sie Bedrohungen wie **Man-in-the-Middle** im Netzwerk, und schützen Si
 
 ![Blockieren des Netzwerkzugriffs über WLAN](../media/mtp/skycure-arch-3.png)
 
-**Zugriff erteilt nach der Sanierung:**
+**Zugriff nach Beseitigung gewährt:**
 
 ![Zugriff erteilt nach der Behebung](../media/mtp/skycure-arch-4.png)
 
@@ -93,7 +93,7 @@ Erkennen von Bedrohungen wie **Man-in-the-Middle** im Netzwerk und Verhindern de
 
 ![Blockieren von SharePoint Online bei Erkennung von Bedrohungen für das Netzwerk](../media/mtp/skycure-arch-5.png)
 
-**Zugriff erteilt nach der Sanierung:**
+**Zugriff nach Beseitigung gewährt:**
 
 ![Zugriff erteilt nach der Behebung für Sharepoint-Beispiel](../media/mtp/skycure-arch-6.png)
 

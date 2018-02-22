@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 71a3b86c628a4fd3210bf00be353c96443897dd5
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Schützen von Daten durch vollständiges oder selektives Zurücksetzen mit Microsoft Intune
 
@@ -96,7 +96,7 @@ Beim **selektiven Zurücksetzen** werden die Unternehmensdaten und bei Bedarf au
 |Datentyp|iOS|
 |-------------|-------|
 |Von Intune installierte Unternehmens-Apps und zugehörige Daten|Apps werden deinstalliert. Daten von Unternehmens-Apps werden entfernt.<br /><br />App-Daten aus Microsoft-Anwendungen, die die Verwaltung von mobilen Anwendungen verwenden, werden entfernt. Die App wird nicht entfernt.|
-|Einstellungen|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|
+|Einstellung|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|
 |Einstellungen für WLAN- und VPN-Profil|Entfernt.|
 |Zertifikatprofil-Einstellungen|Zertifikate werden entfernt und gesperrt.|
 |Verwaltungs-Agent|Das Verwaltungsprofil wird entfernt.|
@@ -113,8 +113,8 @@ Beim **selektiven Zurücksetzen** werden die Unternehmensdaten und bei Bedarf au
 |Nicht verwaltete Google Play-Apps|Apps und Daten bleiben installiert.|Apps und Daten bleiben installiert.|
 |Nicht verwaltete Geschäftssparten-Apps|Apps und Daten bleiben installiert.|Apps werden deinstalliert, und daher werden auch lokal für die App gespeicherte Daten entfernt. Daten außerhalb der App (z.B. auf einer SD-Karte) werden nicht entfernt.|
 |Verwaltete Google Play-Apps|App-Daten werden entfernt. App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (z.B. auf einer SD-Karte) geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt.|App-Daten werden entfernt. App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (z.B. auf einer SD-Karte) geschützt sind, bleiben verschlüsselt, werden aber nicht entfernt.|
-|Verwaltete Geschäftssparten-Apps|App-Daten werden entfernt. App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (z.B. auf einer SD-Karte) geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt.|App-Daten werden entfernt. App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (z.B. auf einer SD-Karte) geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt.|
-|Einstellungen|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|
+|Nicht verwaltete Geschäftssparten-Apps|App-Daten werden entfernt. App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (z.B. auf einer SD-Karte) geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt.|App-Daten werden entfernt. App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (z.B. auf einer SD-Karte) geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt.|
+|Einstellung|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|
 |Einstellungen für WLAN- und VPN-Profil|Entfernt.|Entfernt.|
 |Zertifikatprofil-Einstellungen|Zertifikate gesperrt, aber nicht entfernt.|Zertifikate wurden entfernt und gesperrt.|
 |Verwaltungs-Agent|Die Berechtigung „Geräteadministrator“ wird gesperrt.|Die Berechtigung „Geräteadministrator“ wird gesperrt.|
@@ -132,7 +132,7 @@ Das selektive Zurücksetzen auf Android for Work-Geräten entfernt alle Daten, A
 |Datentyp|Windows 8.1 (MDM) und Windows RT 8.1|Windows RT|Windows Phone 8 und Windows Phone 8.1|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Von Intune installierte Unternehmens-Apps und zugehörige Daten|Bei Dateien, die durch ein EFS geschützt sind, wird der Schlüssel gesperrt, und der Benutzer kann die Dateien nicht mehr öffnen.|Unternehmensanwendungen werden nicht entfernt.|Ursprünglich über das Unternehmensportal installierte Anwendungen werden deinstalliert. Daten von Unternehmens-Apps werden entfernt.|Anwendungen werden deinstalliert, und Sideload-Schlüssel werden entfernt.|
-|Einstellungen|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|
+|Einstellung|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|Konfigurationen, die von der Intune-Richtlinie festgelegt wurden, werden nicht mehr erzwungen, und Benutzer können die Einstellungen ändern.|
 |Einstellungen für WLAN- und VPN-Profil|Entfernt.|Entfernt.|Nicht unterstützt.|Entfernt.|
 |Zertifikatprofil-Einstellungen|Zertifikate wurden entfernt und gesperrt.|Zertifikate wurden entfernt und gesperrt.|Nicht unterstützt.|Zertifikate wurden entfernt und gesperrt.|
 |E-Mail|Entfernt EFS-aktivierte E-Mails, darunter die E-Mail-App für Windows-E-Mails und -Anlagen.|Nicht unterstützt.|E-Mail-Profile, die über Intune bereitgestellt wurden, werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|Entfernt EFS-aktivierte E-Mails, darunter die E-Mail-App für Windows-E-Mails und -Anlagen. Entfernt E-Mail-Konten, die von Intune bereitgestellt wurden.|
@@ -166,7 +166,7 @@ So erhalten Sie einen Bericht zu Geräten, die abgekoppelt, zurückgesetzt oder 
 
 Dieser Bericht zeigt auch, welcher Benutzer die Aktion ausgeführt hat.
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Abkoppeln von Geräten](retire-devices-from-microsoft-intune-management.md)
 
 [Windows Selective Wipe for Device Data Management (Selektives Zurücksetzen bei der Gerätedatenverwaltung in Windows)](http://technet.microsoft.com/library/dn486874.aspx)

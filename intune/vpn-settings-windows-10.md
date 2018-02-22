@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7bd1d15276f93b50a22c7b47de6bd1eb619264a
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: d126853051bb4a6c2f1ea6fbd54195ae06254b51
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>VPN-Einstellungen für Windows 10-Geräte in Microsoft Intune
 
@@ -25,16 +25,19 @@ ms.lasthandoff: 01/29/2018
 
 Je nach den ausgewählten Einstellungen können nicht alle Werte in der folgenden Liste konfiguriert werden.
 
+> [!NOTE]
+> Diese Einstellungen gelten auch für Geräte unter Windows Holographic for Business.
+
 
 ## <a name="base-vpn-settings"></a>Grundlegende VPN-Einstellungen
 
 
-- **Verbindungsname:** Geben Sie einen Namen für diese Verbindung ein. Endbenutzern wird dieser Name angezeigt, wenn sie auf ihrem Gerät die Liste der verfügbaren VPN-Verbindungen durchsuchen.
+- **Verbindungsname:** Geben Sie einen Namen für diese Verbindung ein. Benutzern wird dieser Name angezeigt, wenn sie auf ihrem Gerät die Liste der verfügbaren VPN-Verbindungen durchsuchen.
 - **Server:** Fügen Sie einen oder mehrere VPN-Server hinzu, mit denen Geräte eine Verbindung herstellen.
     - **Hinzufügen:** öffnet das Blatt **Zeile hinzufügen**, auf dem Sie die folgende Informationen angeben können:
         - **Beschreibung:** Geben Sie einen beschreibenden Namen für den Server ein, z.B. **Contoso-VPN-Server**.
         - **IP-Adresse oder FQDN:** Geben Sie die IP-Adresse oder den vollqualifizierten Domänennamen des VPN-Servers an, mit dem Geräte eine Verbindung herstellen. Beispiele: **192.168.1.1**, **vpn.contoso.com**.
-        - **Standardserver:** aktiviert diesen Server als Standardserver, über den Geräte die Verbindung herstellen. Achten Sie darauf, nur einen Server als Standard festzulegen.
+        - **Standardserver:** Aktiviert diesen Server als Standardserver, über den Geräte die Verbindung herstellen. Achten Sie darauf, nur einen Server als Standard festzulegen.
     - **Importieren:** Suchen Sie nach einer Datei, die eine durch Trennzeichen getrennte Liste von Servern im Format „Beschreibung, IP-Adresse oder FQDN, Standardserver“ enthält. Wählen Sie **OK** aus, um diese in die Liste **Server** zu importieren.
     - **Exportieren:** exportiert die Liste der Server in eine CSV-Datei (Comma-Separated Values, durch Trennzeichen getrennte Werte).
 
@@ -80,7 +83,7 @@ Je nach den ausgewählten Einstellungen können nicht alle Werte in der folgende
 
 Weitere Informationen zum Erstellen von benutzerdefinierten XML-Befehlen finden Sie in der VPN-Dokumentation des jeweiligen Herstellers.
 
-Weitere Informationen zum Erstellen von benutzerdefinierten EAP-XML finden Sie unter [EAP configuration (EAP-Konfiguration)](https://docs.microsoft.com/en-us/windows/client-management/mdm/eap-configuration).
+Weitere Informationen zum Erstellen von benutzerdefinierten EAP-XML finden Sie unter [EAP configuration (EAP-Konfiguration)](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration).
 
 **Tunneling teilen** - **Aktivieren** oder **deaktivieren** Sie diese Option, mit der Geräte anhand des Datenverkehrs selbst entscheiden können, welche Verbindung verwendet werden soll. Beispiel: Ein Benutzer in einem Hotel verwendet die VPN-Verbindung zum Zugreifen auf Arbeitsdateien, jedoch das Standardnetzwerk des Hotels für normales Webbrowsen.
 - **Tunnelingrouten für diese VPN-Verbindung teilen:** Fügen Sie optionale Routen für VPN-Drittanbieter hinzu. Geben Sie jedes Mal ein Zielpräfix und eine Präfixgröße für an.
@@ -117,7 +120,7 @@ Geben Sie für jeden Server Folgendes an:
 ## <a name="proxy-settings"></a>Proxyeinstellungen
 
 - **Proxyeinstellungen automatisch erkennen:** Wenn der VPN-Server einen Proxyserver für die Verbindung erfordert, geben Sie an, ob Geräte die Verbindungseinstellungen automatisch erkennen können sollen. Weitere Informationen finden Sie in der Windows Server-Dokumentation.
-- **Automatisches Konfigurationsskript:** Verwenden Sie eine Datei zum Konfigurieren des Proxyservers. Geben Sie die **Proxyserver-URL** ein (z.B. **http://proxy.contoso.com**), unter der die Konfigurationsdatei zu finden ist.
+- **Automatisches Konfigurationsskript:** Verwenden Sie eine Datei zum Konfigurieren des Proxyservers. Geben Sie die **Proxyserver-URL** ein (z.B. **http://proxy.contoso.com), unter der die Konfigurationsdatei zu finden ist.
 - **Proxyserver verwenden:** Aktivieren Sie diese Option, wenn Sie die Proxyeinstellungen für den Server manuell eingeben möchten.
     - **Adresse:** Geben Sie die Adresse des Proxyservers (als IP-Adresse) ein.
     - **Portnummer:** Geben Sie die Portnummer ein, die dem Proxyserver zugeordnet ist.

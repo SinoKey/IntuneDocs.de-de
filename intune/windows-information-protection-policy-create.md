@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97f9407c8ba93307059e44c8becf4f7a36c6861a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 940c4bc17face7ecef2b6888e199ba47073659ba
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune
 
@@ -125,9 +125,11 @@ Nachdem Sie die Apps hinzugefügt haben, die durch WIP geschützt werden sollen,
 
 ### <a name="before-you-begin"></a>Vorbereitung
 
-WIP Learning ist ein Bericht, mit dem Sie Ihre WIP unbekannten Apps überwachen können. Unbekannte Apps sind Apps, die nicht von der IT-Abteilung Ihrer Organisation bereitgestellt wurden. Sie können diese Apps vor der Erzwingung von WIP im Modus „Blockieren“ über den Bericht exportieren und zu Ihren WIP-Richtlinien hinzufügen, um Produktivitätseinbußen zu verhindern.
+WIP Learning ist ein Bericht, mit dem Sie Ihre WIP-tauglichen und WIP-unbekannten Apps überwachen können. Unbekannte Apps sind Apps, die nicht von der IT-Abteilung Ihrer Organisation bereitgestellt wurden. Sie können diese Apps vor der Erzwingung von WIP im Modus „Blockieren“ über den Bericht exportieren und zu Ihren WIP-Richtlinien hinzufügen, um Produktivitätseinbußen zu verhindern.
 
-Es wird empfohlen, mit **Automatisch** oder **Außerkraftsetzungen zulassen** zu beginnen und bei einer kleinen Gruppe zu überprüfen, ob die Liste der zulässigen Apps die richtigen Apps enthält. Wenn Sie fertig sind, können Sie Ihre endgültige Erzwingungsrichtlinie in **Blockieren** ändern.
+<!-- 1631908 --> In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps.
+
+Beim Arbeiten mit WIP-tauglichen und WIP-unbekannten Apps sollten Sie mit **Automatisch** oder **Außerkraftsetzungen zulassen** beginnen und bei einer kleinen Gruppe überprüfen, ob die Liste der zulässigen Apps die richtigen Apps enthält. Wenn Sie fertig sind, können Sie Ihre endgültige Erzwingungsrichtlinie in **Blockieren** ändern.
 
 ### <a name="what-are-the-protection-modes"></a>Was sind Schutzmodi?
 

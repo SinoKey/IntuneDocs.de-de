@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 27f9d3172750d4db5b96d0477ecaeeafa1e59ed2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5c9ac6ecc75c25f910a8aecd1632c947c95b26d6
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Behandlung von Problemen bei der Clienteinrichtung in Microsoft Intune
 
@@ -71,7 +71,7 @@ Die folgenden Abschnitte enthalten Informationen zu gängigen Problemen bei der 
 
 Das Fehlen kritischer Softwareupdates auf dem PC kommt als Ursache infrage.
 
-**Lösung:** Stellen Sie sicher, dass Ihre Softwareupdaterichtlinie die Installation wichtiger Updates ermöglicht, wie in [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) (Windows-PCs mit Softwareupdates in Microsoft Intune auf aktuellem Stand halten) beschrieben.
+**Lösung:** Stellen Sie sicher, dass Ihre Softwareupdaterichtlinie die Installation wichtiger Updates ermöglicht, wie in [Windows-PCs mit Softwareupdates in Microsoft Intune auf aktuellem Stand halten](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) beschrieben.
 
 
 ## <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Fehler in „policyplatform.log“ im Zusammenhang mit der Microsoft Intune-Richtlinie

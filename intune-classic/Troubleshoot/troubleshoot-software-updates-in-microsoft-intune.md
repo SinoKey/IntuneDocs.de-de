@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a3f5d94d5b9b902c4b07939e822076215c01d7c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 66cca236d2779fb9a7a01ad6aa10a57edf8ab657
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Behandlung von Problemen bei Softwareupdates in Microsoft Intune
 
@@ -251,7 +251,7 @@ In der nachfolgenden Tabelle werden Fehlercodes für den Intune-**Update-Agent**
 - Bei ihnen tritt eine hohe CPU-Auslastung auf.
 - Anwendungen werden bei Installation über das Intune-Portal langsam installiert.
 - Das Microsoft Intune Center löst den folgenden Fehler aus: *Beim Aktualisieren des Computers trat ein Fehler auf. Fehler: Code 0x800705b4*.
-- Das Statusfeld unter „Intune-Verwaltungskonsole > Gruppen > Alle Geräte“ zeigt an: *Fehler bei mindestens einem der Agents, die auf diesem Computer installiert sind. Die Informationen für diesen Computer sind möglicherweise ungenau oder nicht auf dem neuesten Stand.*
+- Das Statusfeld unter „Intune-Verwaltungskonsole > Gruppen > Alle Geräte“ zeigt an: *Fehler bei mindestens einem der Agents, die auf diesem Computer installiert sind. Die Informationen für diesen Computer sind möglicherweise ungenau oder nicht auf dem neuesten Stand*.
 
 Dieses Problem kann auftreten, wenn ersetzte Updates (Updates, die durch ein anderes Update ersetzt wurden) für einen längeren Zeitraum nicht abgelehnt wurden. Während bestimmter Prozesse, z. B. dem Installieren einer Anwendung, überprüft Windows nacheinander alle ersetzten Updates, damit die Updates und deren Nachfolger ordnungsgemäß zugeordnet werden können. Wenn die Liste der ersetzten Updates zu groß wird, kann diese Überprüfung aufgrund der Verarbeitungslast und des Zeitaufwands eine hohe CPU-Auslastung verursachen. Dieses Problem betrifft aufgrund der großen Anzahl von ersetzten Updates, die für Windows 7 verfügbar sind, hauptsächlich Clients, auf denen Windows 7 ausgeführt wird. Bei Windows 8 und späteren Betriebssystemen ist die Zahl verfügbarer ersetzter Updates geringer, und sie sind daher nicht so anfällig für dieses Problem.
 

@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c601845274e5c15ce46da80a065b586e64a53a9a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f74b996b3b96dfa808771f3dd4fc70f9c29324c2
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Entwicklerhandbuch für Microsoft Intune App SDK für iOS
 
@@ -99,7 +99,18 @@ Führen Sie die folgenden Schritte aus, um das Intune App SDK zu aktivieren:
 
     ![Intune App SDK iOS: Paketressourcen kopieren](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-    Diese iOS-Frameworks zum Projekt hinzufügen:          * MessageUI.framework          * Security.framework          * MobileCoreServices.framework          * SystemConfiguration.framework          * libsqlite3.tbd          * libc++.tbd          * ImageIO.framework          * LocalAuthentication.framework          * AudioToolbox.framework          * QuartzCore.framework          * WebKit.framework
+    Fügen Sie diese iOS-Frameworks zum Projekt hinzu:  
+            * MessageUI.framework  
+            * Security.framework  
+            * MobileCoreServices.framework  
+            * SystemConfiguration.framework  
+            * libsqlite3.tbd  
+            * libc++.tbd  
+            * ImageIO.framework  
+            * LocalAuthentication.framework  
+            * AudioToolbox.framework  
+            * QuartzCore.framework  
+            * WebKit.framework  
 
 3. Aktivieren Sie die Freigabe des Schlüsselbunds (sofern noch nicht geschehen), indem Sie in jedem Projektziel **Capabilities** auswählen und den Schalter **Keychain Sharing** aktivieren. Die Freigabe des Schlüsselbunds ist erforderlich, damit Sie mit dem nächsten Schritt fortfahren können.
 
@@ -459,9 +470,9 @@ Die MAM-Zielkonfiguration ermöglicht, dass eine App Konfigurationsdaten über d
 * Rufen Sie ```[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]``` auf, um das App-Konfigurationsobjekt zu erhalten.
 * Rufen Sie den entsprechenden Selektor auf dem Objekt ```IntuneMAMAppConfig``` auf. Wenn es sich zum Beispiel beim Schlüssel Ihrer Anwendung um eine Zeichenfolge handeln, könnten Sie ```stringValueForKey``` oder ```allStringsForKey``` verwenden. Die Datei ```IntuneMAMAppConfig.h header``` enthält Rückgabewerte und Fehlerbedingungen.
 
-Weitere Informationen zu den Funktionen der Graph-API in Bezug auf die MAM-Zielkonfigurationswerte finden Sie unter [Graph API Reference MAM Targeted Config (Graph-API-Referenz für MAM-Zielkonfigurationen)](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+Weitere Informationen zu den Funktionen der Graph-API in Bezug auf die MAM-Zielkonfigurationswerte finden Sie unter [Graph API Reference MAM Targeted Config (Graph-API-Referenz für MAM-Zielkonfigurationen)](https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
 
-Weitere Informationen zum Erstellen einer MAM-Zielkonfigurationsrichtlinie für Apps in iOS finden Sie im Abschnitt zu MAM-Zielkonfiguration für Apps unter [How to use Microsoft Intune app configuration policies for iOS (Verwenden von Microsoft Intune-App-Konfigurationsrichtlinien für iOS)](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios).
+Weitere Informationen zum Erstellen einer MAM-Zielkonfigurationsrichtlinie für Apps in iOS finden Sie im Abschnitt zu MAM-Zielkonfiguration für Apps unter [How to use Microsoft Intune app configuration policies for iOS (Verwenden von Microsoft Intune-App-Konfigurationsrichtlinien für iOS)](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
 
 ## <a name="telemetry"></a>Telemetrie
 

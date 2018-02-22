@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1dbac49ad8fe94e9000e609dea8ae8dd6749be52
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Referenz zur Microsoft Intune-Konfigurationsrichtlinie
 
@@ -105,7 +105,7 @@ Gilt nur für Windows Phone und registrierte Windows-Geräte.
 |Name der Richtlinie|Zweck|
 |---------------|------------------------|
 |**Exchange ActiveSync-Richtlinie**|Konfigurieren von Sicherheits- und Funktionseinstellungen mobiler Geräte für Geräte, die von Exchange ActiveSync verwaltet werden.<br /><br />Weitere Informationen finden Sie unter [Einstellungen für Exchange ActiveSync-Richtlinien in Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md).|
-|**Sicherheitsrichtlinie für mobiles Gerät**|<ul><li>Konfiguriert die Einstellungen für mobile Geräte (alle Plattformen), einschließlich:<br /><br /><ul><li>Sicherheit</li><li>Verschlüsselung</li><li>System</li><li>E-Mail</li><li>Anwendungen</li></ul></li></ul>
+|**Sicherheitsrichtlinie für mobiles Gerät**|<ul><li>Konfiguriert die Einstellungen für mobile Geräte (alle Plattformen), einschließlich:<br /><br /><ul><li>Sicherheit</li><li>Verschlüsselung</li><li>System</li><li>E-Mail</li><li>Applications</li></ul></li></ul>
 > [!IMPORTANT]
 Microsoft Intune bietet jetzt getrennte **Konfigurationsrichtlinien** für jede Geräteplattform, wobei diese Richtlinien die neuesten Einstellungen berücksichtigen, die Sie verwenden können. Sie können die Sicherheitsrichtlinie für mobile Geräte weiter nutzen, wobei alle vorhandenen Bereitstellungen weiterhin funktionieren. Sie sollten allerdings die Migration zu den neuen Konfigurationsrichtlinien so bald wie möglich planen.<br />Weitere Informationen finden Sie unter [Sicherheitsrichtlinieneinstellungen für mobile Geräte in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).
 
@@ -117,6 +117,6 @@ Microsoft Intune bietet jetzt getrennte **Konfigurationsrichtlinien** für jede 
 |**Microsoft Intune Center-Einstellungen**|Konfigurieren von Details im Microsoft Intune Center auf verwalteten Computern.<br /><br />Dieser Richtlinientyp kann nur für Gruppen von Geräten bereitgestellt werden.<br /><br />Weitere Informationen finden Sie unter [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).|
 |**Windows-Firewall-Einstellungen**|Hiermit werden die Windows-Firewall-Einstellungen und Ausnahmen für die allgemeine Netzwerkkommunikation auf Computern einschließlich der folgenden Elemente konfiguriert:<br /><br />– BranchCache<br />– Remoteunterstützung<br />– Gemeinsame Nutzung von Medien<br /><br />Dieser Richtlinientyp kann nur für Gruppen von Geräten bereitgestellt werden.<br /><br />Weitere Informationen finden Sie unter [Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).|
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

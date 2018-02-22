@@ -10,11 +10,11 @@ Microsoft MyApps verfügen jetzt über eine bessere Unterstützung innerhalb von
 
 Managed Browser erhält aktualisierte Symbole für die Android- und iOS-Versionen der App. Das neue Symbol enthält den aktualisierten Intune-Badge, damit es konsistenter mit anderen Apps in Enterprise Mobility + Security (EM+S) wird. Sie können das neue Symbol für Managed Browser auf der Seite [Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune](/intune/whats-new-app-ui) finden.
 
-Das Unternehmensportal erhält auch aktualisierte Symbole für die Android-, iOS- und Windows-Versionen der App, um die Konsistenz mit anderen Apps in EM+S zu verbessern. Diese Symbole werden von April bis Ende Mai schrittweise auf den Plattformen veröffentlicht.
+Die Symbole für die Android-, iOS- und Windows-Versionen der App werden im Unternehmensportal ebenfalls aktualisiert, um die Konsistenz mit anderen Apps im EM+S zu verbessern. Diese Symbole werden von April bis Ende Mai schrittweise auf den Plattformen veröffentlicht.
 
 #### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Statusanzeige zur Anmeldung im Android-Unternehmensportal <!--953374-->
 
-Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der Anmeldung an, wenn der Benutzer die App startet oder fortsetzt. Der Indikator durchläuft neue Status, beginnend mit „Verbinden...“, „Anmelden...“, dann „Checking for security requirements...“ (Suche nach Sicherheitsanforderungen...), bevor dem Benutzer erlaubt wird, auf die App zuzugreifen. Screenshots der neuen Bildschirme für die Unternehmensportal-App finden Sie auf der Seite mit den [Neuerungen der Intune-App-Benutzeroberfläche](/intune/whats-new-app-ui).
+Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der Anmeldung an, wenn der Benutzer die App startet oder fortsetzt. Die Statusanzeige durchläuft die neuen Phasen, beginnend mit „Verbindung wird aufgebaut“, „Anmeldung“ und dann „Suchen nach Sicherheitsanforderungen“, bevor dem Benutzer der Zugriff auf die App gewährt wird. Screenshots der neuen Bildschirme für die Unternehmensportal-App finden Sie auf der Seite mit den [Neuerungen der Intune-App-Benutzeroberfläche](/intune/whats-new-app-ui).
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Verhindern, dass Apps auf SharePoint Online zugreifen<!-- 679339 -->
 
@@ -121,7 +121,7 @@ Die Unternehmensportal-App für Android aktualisiert ihre Benutzeroberfläche f�
 - Apps: Auf der Registerkarte **Apps** wurden die Schaltflächen **Empfohlene Apps** und **Alle Apps** aktualisiert.
 - Suche: Auf der Registerkarte **Apps** ist die Schaltfläche **Suche** nun eine unverankerte interaktive Schaltfläche.
 - Navigation in Apps: Die Ansicht **Alle Apps** enthält die Registerkartenansicht **Featured** (Highlights), **Alle** und **Kategorien**, um die Navigation zu vereinfachen.
-- Unterstützung: Die Registerkarten **Meine Geräte** und **IT kontaktieren** wurden aktualisiert, um die Lesbarkeit zu verbessern.
+- Unterstützung: Die Registerkarten **Meine Geräte** und **An IT wenden** werden aktualisiert, um die Lesbarkeit zu verbessern.
 
 Ausführlichere Informationen zu diesen Änderungen finden Sie unter [Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune](/intune/whats-new-app-ui).
 
@@ -225,7 +225,7 @@ Neuigkeiten in der Intune-Vorschau in Azure finden Sie [hier](/intune/whats-new)
 Es wurden neue App-Schutzberichte sowohl für registrierte als auch nicht registrierte Geräte hinzugefügt. Erfahren Sie mehr über das [Überwachen von Verwaltungsrichtlinien für mobile Apps mit Intune](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune).
 
 #### <a name="android-711-support---694397--"></a>Android 7.1.1-Unterstützung <!--694397-->
-Intune unterstützt und verwaltet jetzt Android 7.1.1 vollständig.
+Intune unterstützt und verwaltet Android 7.1.1 jetzt vollständig.
 
 #### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>Lösen von Problemen, wenn iOS-Geräte inaktiv sind oder die Verwaltungskonsole nicht mit ihnen kommunizieren kann <!--unknown-->
 Wenn Geräte von Benutzern keinen Kontakt mehr mit Intune haben, können Sie neue Schritte zur Problembehandlung bereitstellen, damit sie erneuten Zugriff auf Unternehmensressourcen gewinnen können. Weitere Informationen finden Sie unter [Geräte sind inaktiv oder die Verwaltungskonsole kann nicht mit ihnen kommunizieren](/intune-classic/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).

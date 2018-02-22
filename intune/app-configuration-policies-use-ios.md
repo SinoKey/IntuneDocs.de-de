@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,24 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97084d0155788fc6aa0604454b46e783a3eb271b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b64d8b60a4c577acc2f6ef161f6de37ac529e7ac
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Hinzufügen App-Konfigurationsrichtlinien für verwaltete iOS-Geräte
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Einstellungen anzugeben, wenn Benutzer eine iOS-App ausführen. Sie weisen diese Richtlinien nicht direkt Benutzern und Geräten zu. Stattdessen verknüpfen Sie eine Richtlinie mit einer App und weisen dann die App zu. Die Richtlinieneinstellungen werden verwendet, wenn die App danach sucht (in der Regel beim ersten Ausführen).
+
+Sie können einer Gruppe von Benutzern und Geräten mithilfe einer Kombination von Ein- und Ausschlusszuweisungen eine Anwendungskonfigurationsrichtlinie zuweisen. Nachdem Sie eine App-Konfigurationsrichtlinie hinzugefügt haben, können Sie die Zuweisungen für die App-Konfigurationsrichtlinie festlegen. Wenn Sie die Zuweisungen für die Richtlinie festlegen, können Sie auswählen, Gruppen von Benutzern ein- und auszuschließen, für die die Richtlinie angewendet wird. Wenn Sie entscheiden, eine oder mehrere Gruppen einzuschließen, können Sie bestimmte einzuschließende Gruppen oder integrierte Gruppen auswählen. Zu den integrierten Gruppen zählen **Alle Benutzer**, **Alle Geräte** und **Alle Benutzer und alle Geräte**. 
+
+>[!NOTE]
+>Intune bietet die vorab erstellten Gruppen **Alle Benutzer** und **Alle Geräte** in der Konsole zur Vereinfachung mit integrierten Optimierungen an. Sie sollten diese Gruppen unbedingt anstelle möglicherweise selbst erstellter „Alle Benutzer“- oder „Alle Geräte“-Gruppen verwenden, um alle Benutzer und alle Geräte zu erreichen.
+
+Nachdem Sie die eingeschlossenen Gruppen für Ihre Anwendungskonfigurationsrichtlinie ausgewählt haben, können Sie auch die bestimmten auszuschließenden Gruppen auswählen.
 
 > [!TIP]
 > Dieser Richtlinientyp ist zurzeit nur für Geräte unter iOS 8.0 und höher verfügbar. Er unterstützt die folgenden App-Installationstypen:
@@ -52,9 +59,24 @@ Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Einstellunge
 7.  Wählen Sie **Zugeordnete App** aus. Wählen Sie dann auf dem Blatt **Zugeordnete App** die verwaltete App aus, auf die Sie die Konfiguration anwenden möchten.
 8.  Wählen Sie auf dem Blatt **Konfigurationsrichtlinie hinzufügen** die Option **Konfigurationseinstellungen** aus.
 9. Wählen Sie das **Format der Konfigurationseinstellungen** aus. Wählen Sie eine der folgenden Einstellungen aus:
-    - **[Verwenden des Konfigurations-Designers](#Use-the-configuration-designer)**
+    - **[Verwenden des Konfigurations-Designers](#use-configuration-designer)**
     - **[Eingeben von XML-Daten](#enter-xml-data)**
-10. Wählen Sie **OK** und dann **Hinzufügen** aus.
+10. Nachdem Sie Ihre XML-Daten hinzugefügt haben, wählen Sie **OK**, und wählen Sie dann **Hinzufügen**, um die Konfigurationsrichtlinie hinzuzufügen. Das Übersichtsblatt für die Konfigurationsrichtlinie wird angezeigt.
+11. Wählen Sie **Zuweisungen**, um die Ein- und Ausschlussoptionen anzuzeigen. 
+
+    ![Richtlinienzuweisungen](./media/app-config-policy01.png)
+12. Wählen Sie **Alle Benutzer** auf der Registerkarte **Einschließen**.
+
+    ![Richtlinienzuweisungen – Alle Benutzer](./media/app-config-policy02.png)
+13. Wählen Sie die Registerkarte **Ausschließen**. 
+14. Klicken Sie auf **Wählen Sie die Gruppen aus, die ausgeschlossen werden sollen.**, um das zugehörige Blatt anzuzeigen.
+
+    ![Richtlinienzuweisungen – Wählen Sie die Gruppen aus, die ausgeschlossen werden sollen](./media/app-config-policy03.png)
+15. Wählen Sie die Gruppen aus, die Sie ausschließen möchten, und klicken Sie dann auf **Auswählen**.
+
+    >[!NOTE]
+    >Beachten Sie beim Hinzufügen einer Gruppe: Wenn eine Gruppe bereits für einen bestimmten Zuweisungstyp eingeschlossen wurde, ist diese vorausgewählt und kann nicht mehr für andere Einschlusszuweisungstypen geändert werden. Darum kann die Gruppe, die verwendet wurde, nicht als ausgeschlossene Gruppe verwendet werden.
+16. Klicken Sie auf **Speichern**.
 
 ## <a name="use-configuration-designer"></a>Verwenden des Konfigurations-Designers
 

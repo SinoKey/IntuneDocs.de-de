@@ -6,19 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/01/2017
+ms.date: 1/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fa9b09f97568b54a68f34a609c91426eb12b71e0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-software-updates"></a>Verwalten von Softwareupdates
 
@@ -45,8 +44,9 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 - Windows Update unterstützt folgende Windows 10-Versionen:
     - Windows 10
     - Windows 10 Team (für Surface Hub-Geräte)
+    - [Windows Holographic for Business](#windows-holographic-for-business-support)
 
- Geräte unter Windows 10 Mobile und Windows 10 Holographic werden nicht unterstützt.
+ Geräte unter Windows 10 Mobile werden nicht unterstützt.
 
 - Auf Windows-Geräten muss **Feedback und Diagnose** > **Diagnose- und Nutzungsdaten** mindestens auf **Basic** festgelegt sein.
 
@@ -89,8 +89,7 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 
     Bei Funktionsupdates handelt es sich in der Regel um neue Features für Windows. Nach dem Konfigurieren der Einstellung **Wartungskanal** (halbjährlicher Kanal (gezielt) oder halbjährlicher Kanal) können Sie definieren, ob und wie lange der Bezug von Funktionsupdates zurückgestellt werden soll, nachdem sie von Microsoft über Windows Update verfügbar gemacht wurden.
 
-    Beispiel:  
-    **Wenn der Wartungskanal auf „Halbjährlicher Kanal (gezielt)“ festgelegt ist und der Zurückstellungszeitraum 30 Tage beträgt**: Nehmen wir an, dass das Funktionsupdate X auf Windows-Update im halbjährlichen Kanal (gezielt) erstmals im Januar öffentlich verfügbar ist. In diesem Fall erhält das Gerät das Update erst im Februar (also 30 Tage später).
+    Beispiel: **Wenn der Wartungskanal auf „Halbjährlicher Kanal (gezielt)“ festgelegt ist und der Zurückstellungszeitraum 30 Tage beträgt**: Nehmen wir an, dass das Funktionsupdate X auf Windows-Update im halbjährlichen Kanal (gezielt) erstmals im Januar öffentlich verfügbar ist. In diesem Fall erhält das Gerät das Update erst im Februar (also 30 Tage später).
 
     **Wenn der Wartungskanal auf „Halbjährlicher Kanal (gezielt)“ festgelegt ist und der Zurückstellungszeitraum 30 Tage beträgt**: Nehmen wir an, dass das Funktionsupdate X im halbjährlichen Kanal (gezielt) auf Windows-Update erstmals im Januar öffentlich verfügbar ist. Vier Monate später, im April, wird das Funktionsupdate X dann im halbjährlichen Kanal veröffentlicht. In diesem Fall erhält das Gerät das Funktionsupdate 30 Tage nach dieser Veröffentlichung im halbjährlichen Kanal (also im Mai).
 
@@ -154,3 +153,11 @@ Sie können für ein Gerät den Bezug von Funktions- oder Qualitätsupdates für
 > [!IMPORTANT]
 > Wenn Sie einen Aussetzungsbefehl erteilen, geht dieser bei den Geräten ein, wenn sie das nächste Mal mit dem Dienst kommunizieren. Es kann vorkommen, dass die Geräte vor der Kommunikation ein geplantes Update installieren.
 > Außerdem gilt: Wenn ein Zielgerät bei Erteilung des Aussetzungsbefehls ausgeschaltet ist, lädt es nach dem Einschalten unter Umständen geplante Updates herunter und installiert sie, bevor es mit Intune kommuniziert.
+
+## <a name="windows-holographic-for-business-support"></a>Unterstützung durch Windows Holographic for Business
+
+Windows Holographic for Business unterstützt die folgenden Einstellungen:
+
+- **Automatisches Updateverhalten**
+- **Microsoft-Produktupdates**
+- **Wartungskanal**

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 21053cd7ce930bd11625807f7fdda3ebbdd953f3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Problembehandlung beim bedingten Zugriff
 
@@ -50,7 +50,7 @@ Diese Bedingungen können für jedes Gerät im Azure-Verwaltungsportal und im Ge
 ## <a name="compliance-issues"></a>Kompatibilitätsprobleme
 
  -  Das Gerät ist mit der Intune-Richtlinie nicht kompatibel. Häufige Probleme sind Verschlüsselungs- und Kennwortanforderungen. Der Benutzer wird auf das Unternehmensportal umgeleitet, wo er sein Gerät dahingehend konfigurieren kann, dass es kompatibel ist.
- -  Die Registrierung der Kompatibilitätsinformationen für ein Gerät kann einige Zeit in Anspruch nehmen. Warten Sie einige Minuten, und versuchen Sie es erneut.
+ -  Die Registrierung der Konformitätsinformationen für ein Gerät kann einige Zeit in Anspruch nehmen. Warten Sie einige Minuten, und versuchen Sie es erneut.
  -  Geräte unter iOS:
      -   Ein vom Benutzer erstelltes, vorhandenes E-Mail-Profil blockiert die Bereitstellung eines Profils, das vom Intune-Administrator erstellt wurde. Das ist ein häufig auftretendes Problem, da iOS-Benutzer in der Regel ein E-Mail-Profil erstellen und anschließend die Registrierung vornehmen. Das Unternehmensportal informiert den Benutzer darüber, dass es aufgrund seines manuell konfigurierten E-Mail-Profils nicht kompatibel ist, und fordert ihn dazu auf, dieses Profil zu entfernen. Der Benutzer sollte sein E-Mail-Profil entfernen, damit das Intune-Profil bereitgestellt werden kann. Weisen Sie Ihre Benutzer an, die Registrierung ohne das Installieren eines E-Mail-Profils vorzunehmen und Intune die Bereitstellung des Profils zu erlauben, um das Problem zu vermeiden.
      -   Ein iOS-Gerät kann beim Überprüfen der Kompatibilität hängen bleiben, wodurch verhindert wird, dass der Benutzer einen weiteren Eincheckvorgang initiiert. Dieses Problem kann durch einen Neustart des Unternehmensportals behoben werden und der Kompatibilitätsstatus spiegelt den Gerätestatus in Intune wider. Nachdem alle Daten von einer Gerätesynchronisierung erfasst wurden, erfolgt die Kompatibilitätsprüfung sehr schnell und sie benötigt im Durchschnitt weniger als eine halbe Sekunde.
@@ -90,7 +90,7 @@ Der bedingte Zugriff ist für ein Gerät möglicherweise blockiert, ohne eine E-
 - Überprüfen Sie die Exchange Connector-Protokolle für die Sendemail-Aktivität, und suchen Sie nach Fehlern. Ein Beispiel für den zu suchenden Befehl ist „SendEmail from notification account to useremail“.
 - Bevor das Gerät vom Exchange Connector blockiert wird, sendet er die Aktivierungs-E-Mail. Wenn das Gerät offline ist, erhält es die Aktivierungs-E-Mail möglicherweise nicht. Überprüfen Sie, ob für den E-Mail-Client des Geräts der E-Mail-Abruf per Push (anstelle von „Abrufen“) aktiviert ist, da der Benutzer dadurch ebenfalls die E-Mail verpassen könnte. Wechseln Sie zu „Abrufen“ und überprüfen Sie, ob das Gerät die E-Mail empfängt.
 
-## <a name="non-compliant-device-not-blocked"></a>Nicht kompatibles Gerät wird nicht blockiert
+## <a name="noncompliant-device-not-blocked"></a>Nicht kompatibles Gerät wird nicht blockiert
 
 Wenn Sie ein Gerät ermitteln, das nicht kompatibel ist, aber weiterhin Zugriff hat, gehen Sie folgendermaßen vor.
 

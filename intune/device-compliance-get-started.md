@@ -15,11 +15,11 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e6d758d10a3527e0dc350115f2f8f10e2c62322
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6f4a9f70762c3d30a49a686bcf1cfa9de4851b6c
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="get-started-with-intune-device-compliance-policies"></a>Erste Schritte mit den Intune-Gerätekonformitätsrichtlinien
 
@@ -56,7 +56,7 @@ When you specify these actions, Intune will automatically initiate them in the s
 actions for a device that continues to be in the noncompliant status for
 a week:
 
--   When the device is first determined to be non-compliant, an email with noncompliant notification is sent to the user.
+-   When the device is first determined to be noncompliant, an email with noncompliant notification is sent to the user.
 
 -   3 days after initial noncompliance state, a follow up reminder is sent to the user.
 
@@ -111,7 +111,7 @@ Sie können die Konformitätsrichtlinie mit dem bedingten Zugriff verwenden, um 
 ### <a name="without-conditional-access"></a>Ohne bedingten Zugriff
 Gerätekonformitätsrichtlinien können auch unabhängig vom bedingten Zugriff verwendet werden. Bei unabhängiger Nutzung von Kompatibilitätsrichtlinien werden die Zielgeräte ausgewertet und mit ihrem Kompatibilitätsstatus gemeldet. So können Sie beispielsweise einen Bericht dazu erstellen, wie viele Geräte nicht verschlüsselt sind oder mit Jailbreak oder Rootzugriff manipuliert wurden. Aber wenn Sie Kompatibilitätsrichtlinien unabhängig nutzen, gelten keine Zugriffsbeschränkungen für Unternehmensressourcen.
 
-Sie stellen Konformitätsrichtlinien für Benutzer bereit. Wenn Sie eine Kompatibilitätsrichtlinie für einen Benutzer bereitstellen, wird die Kompatibilität der Geräte des Benutzers überprüft. Informationen darüber, wie lange es dauert, bis eine Richtlinie für mobile Geräte nach der Bereitstellung der Richtlinie abgerufen wird, finden Sie unter „Verwalten von Einstellungen und Features auf Ihren Geräten“.
+Sie stellen Konformitätsrichtlinien für Benutzer bereit. Wenn Sie eine Kompatibilitätsrichtlinie für einen Benutzer bereitstellen, wird die Kompatibilität der Geräte des Benutzers überprüft. Informationen darüber, wie lange es dauert, bis eine Richtlinie für mobile Geräte nach der Bereitstellung der Richtlinie abgerufen wird, finden Sie unter [Behandeln von Problemen mit Geräteprofilen in Microsoft Intune](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 ##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>Verwendung von Gerätekonformitätsrichtlinien im klassischen Intune-Portal vs. Azure-Portal
 

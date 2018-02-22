@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0da2ba5d842a004f167a4bbeca62d4b00f756612
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4f01a5aa9567ea914da2c36756e8c3f12f55c58d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrieren Ihres macOS-Geräts bei Intune über die Unternehmensportal-App
 
@@ -34,7 +34,7 @@ Durch den Zugriff auf Apps, Daten und Ressourcen Ihrer Organisation wird Ihnen I
 
 2. Melden Sie sich bei mit Ihrem Geschäfts-, Schul- oder Unikonto bei der Unternehmensportal-Website an.
 
-[!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
+  [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
 3. Klicken Sie nach der Anmeldung in der linken Ecke der Seite auf das **Menü**, und klicken sie auf **My Devices** (Meine Geräte).
 
@@ -59,7 +59,7 @@ Durch den Zugriff auf Apps, Daten und Ressourcen Ihrer Organisation wird Ihnen I
 
 9. Der erste Bildschirm, der Ihnen in der Unternehmensportal-App angezeigt wird, fordert Sie dazu auf, sich mit dem gleichen Geschäfts-, Schul- oder Unikonto **anzumelden**, mit dem Sie sich auf der Webseite des Unternehmensportals angemeldet haben.
 
-10. Das Unternehmensportal bestätigt Ihre Kontoinformationen und zeigt Ihnen anschließend Ihre **Geräteregistrierungs-** und **Gerätekompatibilitätsstatus** an. Es werden gelbe Dreiecke angezeigt, durch die Ihnen mitgeteilt wird, dass Sie Maßnahmen ergreifen müssen, um sicherzustellen, dass Ihr Mac für die Verwendung bei der Arbeit sicher ist. Klicken Sie auf **Begin** (Starten), um mit der [Registrierung Ihres Geräts bei der Verwaltung](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) zu beginnen.
+10. Das Unternehmensportal bestätigt Ihre Kontoinformationen und zeigt Ihnen anschließend Ihre **Geräteregistrierungs-** und **Gerätekompatibilitätsstatus** an. Es werden gelbe Dreiecke angezeigt, die Ihnen mitteilen, dass Sie Maßnahmen ergreifen müssen, um sicherzustellen, dass Ihr Mac für die Verwendung bei der Arbeit sicher ist. Klicken Sie auf **Begin** (Starten), um mit der [Registrierung Ihres Geräts bei der Verwaltung](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) zu beginnen.
 
 11. Ihr Mac wird mit der Registrierung bei der Verwaltung starten. Sie werden während dieser Zeit möglicherweise dazu aufgefordert, die Anmeldeinformationen Ihres Computers bereitzustellen. Die Registrierung kann einige Minuten dauern. Während dieser Zeit können Sie auf dem Computer andere Dinge tun. Sobald das Setup des Unternehmenszugriffs abgeschlossen ist, wird Ihnen eine Meldung angezeigt, die Sie darüber informiert.
 

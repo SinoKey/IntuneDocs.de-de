@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 39fb4b4b91eb6769eb1d5d95736cbbde141c6812
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: cb82b1a9af0cc8dd2f394747ce7ed8b695260bb9
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Einrichten des lokalen Intune Exchange Connectors in Microsoft Intune in Azure
 
@@ -39,7 +39,7 @@ In der folgenden Tabelle finden Sie die Anforderungen an den Computer, auf dem S
 
 |Anforderungen|Weitere Informationen|
 |---------------|--------------------|
-|Betriebssysteme|Intune unterstützt den lokalen Exchange Connector auf Computern, auf denen eine beliebige Edition von Windows Server 2008 SP2 (64 Bit), Windows Server 2008 R2, Windows Server 2012 oder Windows Server 2012 R2 ausgeführt wird.<br /><br />Auf Server Core-Installationen wird der Connector nicht unterstützt.|
+|Betriebssysteme|Intune unterstützt den lokalen Exchange Connector auf Computern, auf denen eine beliebige Edition von Windows Server 2008 SP2 (64 Bit), Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 oder Windows Server 2016 ausgeführt wird.<br /><br />Auf Server Core-Installationen wird der Connector nicht unterstützt.|
 |Microsoft Exchange|Für lokale Connectors ist Microsoft Exchange 2010 SP1 oder höher oder die Exchange Online Dedicated-Legacyumgebung erforderlich. Wenn Sie herausfinden möchten, ob es sich bei Ihrer Exchange Online Dedicated-Umgebung um die **neue** oder die **ältere** Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer.|
 |Autorität für die Verwaltung mobiler Geräte| [Festlegen von Intune als Autorität für die Verwaltung mobiler Geräte](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).|
 |Hardware|Der Computer, auf dem Sie den Connector installieren, erfordert eine CPU mit 1,6 GHz und 2 GB RAM sowie mindestens 10 GB freien Speicherplatz.|users-add.md
@@ -152,7 +152,7 @@ Sie können auch die Uhrzeit und das Datum des letzten erfolgreichen Synchronisa
 
 ### <a name="system-center-operations-manager-scom-management-pack"></a>System Center Operations Manager (SCOM) Management Pack
 
-Ab der Intune-Version 1710 können Sie das [SCOM Management Pack für Exchange-Connector und Intune](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) verwenden. Es bietet Ihnen verschiedene Möglichkeiten zur Überwachung des Exchange-Connectors bei der Problembehandlung.
+Ab der Intune-Version 1710 können Sie das [SCOM Management Pack für Exchange-Connector und Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) verwenden. Es bietet Ihnen verschiedene Möglichkeiten zur Überwachung des Exchange-Connectors bei der Problembehandlung.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Erstellen einer Richtlinie für bedingten Zugriff für lokales Exchange](conditional-access-exchange-create.md)

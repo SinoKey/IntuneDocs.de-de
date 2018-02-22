@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 645414169dcdf5c2e548bda9d21e017e8a18f76d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 15baae06398d135557439c0e67b50f7e1326b6fe
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Problembehandlung der Verwaltung von mobilen Geräten
 
@@ -112,7 +112,7 @@ Dialog/Fehlermeldung | Ursache | Wartung |
 
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 - [Überprüfen des Setups für die Verwaltung Ihrer mobilen Anwendungen](../deploy-use/validate-mobile-application-management.md)
 - [Vorbereiten der Konfiguration von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md)

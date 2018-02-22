@@ -11,15 +11,13 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6d0e0c4b-a562-44f3-82a4-80eb688d4733
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e45f5d3836fc33851c650703f713c03204df792
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 573a8b000e63576f3dd3bae1b6e8e8c47733f6bf
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="automate-actions-for-noncompliance"></a>Automatisieren von Aktionen bei Inkompatibilität
 
@@ -28,11 +26,16 @@ Mithilfe der **Aktionen bei Inkompatibilität** können Sie eine zeitlich strukt
 Es gibt zwei Arten von Aktionen:
 
 -   **Benachrichtigen der Benutzer per E-Mail**: Sie können Ihre E-Mail-Benachrichtigung anpassen, bevor Sie diese an Benutzer senden. Mithilfe von Intune können Sie Empfänger, Betreff, Nachrichtentext (einschließlich Unternehmenslogo) und Kontaktinformationen anpassen.
+
+    Darüber hinaus bezieht Intune Einzelheiten zu dem nicht kompatiblen Gerät in die E-Mail-Benachrichtigung ein.
+
 -   **Markieren des Geräts als nicht konform**: Sie können einen Zeitplan mit der Anzahl von Tagen festlegen, nach der ein Gerät als „nicht konform“ markiert wird. Sie können die Aktion so konfigurieren, dass sie sofort wirksam wird oder erst nach einer gewissen Toleranzperiode, um dem Benutzer Gelegenheit zu geben, Ihre Gerätekonformitätsrichtlinien zu erfüllen.
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
-- Für die Einrichtung von Aktionen bei Inkompatibilität benötigen Sie mindestens eine Gerätekompatibilitätsrichtlinie. Lesen Sie die plattformspezifischen Informationen zum Erstellen einer Gerätekonformitätsrichtlinie:
+Für die Einrichtung von Aktionen bei Inkompatibilität benötigen Sie mindestens eine Gerätekompatibilitätsrichtlinie. 
+
+- Lesen Sie die plattformspezifischen Informationen zum Erstellen einer Gerätekonformitätsrichtlinie:
 
     -   [Android](compliance-policy-create-android.md)
     -   [Android for Work](compliance-policy-create-android-for-work.md)
@@ -40,11 +43,11 @@ Es gibt zwei Arten von Aktionen:
     -   [macOS](compliance-policy-create-mac-os.md)
     -   [Windows](compliance-policy-create-windows.md)
 
-- Wenn Sie den Zugriff von Geräten auf Unternehmensressourcen mithilfe von Gerätekompatibilitätsrichtlinien sperren möchten, muss der bedingte Zugriff von Azure AD fertig eingerichtet sein. Wie das geht, erfahren Sie [hier](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
+Wenn Sie den Zugriff von Geräten auf Unternehmensressourcen mithilfe von Gerätekompatibilitätsrichtlinien sperren möchten, muss der bedingte Zugriff von Azure AD fertig eingerichtet sein. 
 
-- Sie müssen eine Benachrichtigungs-E-Mail-Vorlage erstellt haben. Die Benachrichtigungsvorlage wird später beim Erstellen von Aktionen bei Inkompatibilität verwendet, um eine E-Mail an Ihre Benutzer zu senden.
+- Erfahren Sie, [wie Sie bedingten EMS-Zugriff einrichten](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
 
-- Sie müssen Exchange Online so konfigurieren, dass es E-Mails von *IntuneNotificationService@microsoft.com* akzeptiert, damit Intune die E-Mail-Benachrichtigung senden kann. Einzelheiten finden Sie unter [Konfigurieren von Nachrichtenzustellungseinschränkungen für ein Postfach](https://technet.microsoft.com/library/bb397214(v=exchg.160).aspx).
+Darüber hinaus benötigen Sie eine Benachrichtigungsvorlage. Die Benachrichtigungsvorlage wird später beim Erstellen von Aktionen bei Inkompatibilität verwendet, um eine E-Mail an Ihre Benutzer zu senden.
 
 ### <a name="to-create-a-notification-message-template"></a>Erstellen einer Benachrichtigungsvorlage
 
@@ -60,14 +63,28 @@ Es gibt zwei Arten von Aktionen:
     - E-Mail-Fußzeile: Unternehmensnamen einschließen
     - E-Mail-Fußzeile: Kontaktinformationen einschließen
 
-   ![Beispiel für die Benachrichtigungsvorlage](./media/actionsfornoncompliance-1.PNG)
+5. Wählen Sie **Benachrichtigung erstellen** aus, und geben Sie folgende Informationen ein:
+
+    ein. Name
+
+    b. Antragsteller
+
+    c.  Nachricht
+
+    d. E-Mail-Kopfzeile: Unternehmenslogo einschließen
+
+    e. E-Mail-Fußzeile: Unternehmensnamen einschließen
+
+    f. E-Mail-Fußzeile: Kontaktinformationen einschließen
+
+![Beispiel für die Benachrichtigungsvorlage](./media/actionsfornoncompliance-1.PNG)
 
 Klicken Sie auf **Erstellen**, sobald Sie die Informationen hinzugefügt haben. Die Benachrichtigungsvorlage kann nun verwendet werden.
 
-> [!NOTE] 
+> [!NOTE]
 > Sie können auch eine zuvor erstellte Benachrichtigungsvorlage bearbeiten.
 
-## <a name="to-create-actions-for-non-compliance"></a>So erstellen Sie Aktionen bei Inkompatibilität
+## <a name="to-create-actions-for-noncompliance"></a>So erstellen Sie Aktionen bei Nichteinhaltung
 
 > [!TIP]
 > Intune stellt standardmäßig eine vordefinierte Aktion in den Aktionen für den Abschnitt „Inkompatibilität“ bereit. Mit der Aktion wird ein Gerät als „nicht konform“ markiert, nachdem erkannt wurde, dass dieses die Kriterien Ihrer Gerätekonformitätsrichtlinie nicht erfüllt. Sie können anpassen, wann das Gerät nach der Erkennung als „nicht konform“ markiert wird. Die Aktion kann nicht entfernt werden.
@@ -75,11 +92,14 @@ Klicken Sie auf **Erstellen**, sobald Sie die Informationen hinzugefügt haben. 
 Eine Aktion kann beim Erstellen einer neuen Gerätekonformitätsrichtlinie oder beim Bearbeiten einer bereits vorhandenen Gerätekonformitätsrichtlinie hinzugefügt werden.
 
 1.  Wählen Sie auf dem Blatt **Richtlinien zur Gerätekompatibilität** in der Intune-Workload **Richtlinien** im Abschnitt **Verwalten** aus.
+
 2.  Wählen Sie eine Richtlinie zur Gerätekompatibilität aus, indem Sie auf diese klicken, und klicken Sie dann auf **Eigenschaften** im Abschnitt **Verwalten**.
-3.  Wählen Sie auf dem Blatt mit den **Eigenschaften für die Konformitätsrichtlinie** die Option **Aktionen bei Nichtkonformität** aus.
-4.  Wählen Sie auf dem Blatt **Aktionen bei Nichtkonformität** die Option **Hinzufügen** aus, um Aktionsparameter anzugeben. Sie können die zuvor erstellte Benachrichtigungsvorlage, zusätzliche Empfänger und die Toleranzperiode des Zeitplans auswählen. Im Zeitplan können Sie die Anzahl von Tagen (0 bis 365) angeben und dann die Richtlinien für den bedingten Zugriff erzwingen. Bei Angabe von **0** Tagen wird der Zugriff auf Unternehmensressourcen mittels bedingtem Zugriff **umgehend** blockiert, wenn die Geräte die Gerätekonformitätsrichtlinien nicht erfüllen.
+
+3.  Das Blatt mit den **Eigenschaften für die Kompatibilitätsrichtlinie** wird geöffnet. Wählen Sie hier **Aktionen bei Inkompatibilität** aus.
+
+4.  Wählen Sie auf dem Blatt **Aktionen bei Inkompatibilität** die Option **Hinzufügen** aus, um Aktionsparameter anzugeben. Sie können die zuvor erstellte Benachrichtigungsvorlage, zusätzliche Empfänger und die Toleranzperiode des Zeitplans auswählen. Im Zeitplan können Sie die Anzahl von Tagen (0 bis 365) angeben und dann die Richtlinien für den bedingten Zugriff erzwingen. Bei Angabe von **0** Tagen wird der Zugriff auf Unternehmensressourcen mittels bedingtem Zugriff **umgehend** blockiert, wenn die Geräte die Gerätekompatibilitätsrichtlinien nicht erfüllen.
+
 5.  Klicken Sie auf **Hinzufügen** und dann auf **OK**, wenn Sie Ihre Informationen hinzugefügt haben.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Sie können die Aktivitäten der Gerätekompatibilität überwachen, indem Sie die auf dem Blatt „Gerätekompatibilität“ verfügbaren Berichte ausführen. Erfahren Sie mehr über das [Überwachen der Gerätekonformität in Intune](device-compliance-monitor.md).
-

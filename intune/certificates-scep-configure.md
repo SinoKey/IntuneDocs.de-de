@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aea88aa8898380c54867090650bd16d8bf60f3c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 61193cc96f0ea22e9a80d24fe8ee0499e80d4202
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Konfigurieren und Verwalten von SCEP-Zertifikaten mit Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -35,7 +35,7 @@ Dieses Thema erläutert, wie Sie Ihre Infrastruktur konfigurieren und dann SCEP-
 -  **NDES-Server**: Auf einem Server mit Windows Server 2012 R2 oder höher müssen Sie den Registrierungsdienst für Netzwerkgeräte (Network Device Enrollment Service, NDES) einrichten. Intune unterstützt die Verwendung von NDES nicht, wenn es auf einem Server ausgeführt wird, der auch die Unternehmenszertifizierungsstelle ausführt. Im [Leitfaden für den Registrierungsdienst für Netzwerkgeräte](http://technet.microsoft.com/library/hh831498.aspx) finden Sie Anweisungen zum Konfigurieren von Windows Server 2012 R2 als Host für den Registrierungsdienst für Netzwerkgeräte (NDES).
 Der NDES-Server muss in die Domäne eingebunden werden, die die Zertifizierungsstelle hostet, er darf sich aber nicht auf dem gleichen Server befinden wie die Zertifizierungsstelle. Weitere Informationen zum Bereitstellen des NDES-Servers in einer separaten Gesamtstruktur, in einem isolierten Netzwerk oder in einer internen Domäne finden Sie unter [Verwenden eines Richtlinienmoduls mit dem Registrierungsdienst für Netzwerkgeräte](https://technet.microsoft.com/library/dn473016.aspx).
 
--  **Microsoft Intune Certificate Connector**: Verwenden Sie das Azure-Portal zum Herunterladen des Installationsprogramms für den **Certificate Connector** (**ndesconnectorssetup.exe**). Führen Sie **ndesconnectorssetup.exe** dann auf dem Computer aus, auf dem Sie den Zertifikatconnector installieren möchten. 
+-  **Microsoft Intune Certificate Connector**: Verwenden Sie das Azure-Portal zum Herunterladen des Installationsprogramms für den **Certificate Connector** (**ndesconnectorssetup.exe**). Dann können Sie **ndesconnectorssetup.exe** auf dem Server ausführen, der die Rolle „Registrierungsdienst für Netzwerkgeräte“ (Network Device Enrollment Service, NDES) hostet, wo Sie den Certificate Connector installieren möchten. 
 -  **Webanwendungsproxy-Server** (optional): Verwenden Sie einen Server unter Windows Server 2012 R2 oder höher als Webanwendungsproxy-Server (WAP). Diese Konfiguration:
     -  ermöglicht Geräten das Empfangen von Zertifikaten über eine Internetverbindung,
     -  ist eine Sicherheitsempfehlung, wenn Geräte eine Verbindung über das Internet herstellen, um Zertifikate zu empfangen oder zu erneuern.
@@ -299,7 +299,7 @@ Im Rahmen dieser Aufgabe führen Sie folgende Aktionen aus:
 Im Rahmen dieser Aufgabe führen Sie folgende Aktionen aus:
 
 - Aktivieren der Unterstützung für NDES in Intune
-- Herunterladen, Installieren und Konfigurieren von Certificate Connector auf einem Server in Ihrer Umgebung Um Hochverfügbarkeit zu unterstützen, können Sie mehrere Certificate Connector-Instanzen auf unterschiedlichen Servern installieren.
+- Laden Sie den Certificate Connector herunter, und installieren und konfigurieren Sie ihn auf dem Server, der die Rolle „Registrierungsdienst für Netzwerkgeräte“ (Network Device Enrollment Service, NDES) auf einem Server in Ihrer Umgebung hostet. Um die Skalierbarkeit der NDES-Implementierung in Ihrer Organisation zu erhöhen, können Sie mehrere NDES-Server mit einem Microsoft Intune Certificate Connector auf jedem NDES-Server installieren.
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>So wird der Certificate Connector heruntergeladen, installiert und konfiguriert
 ![ConnectorDownload](./media/certificates-download-connector.png)   
@@ -309,7 +309,7 @@ Im Rahmen dieser Aufgabe führen Sie folgende Aktionen aus:
 3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
 4. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Zertifizierungsstelle** aus.
 5. Klicken Sie auf **Hinzufügen** und dann auf **Connectordatei herunterladen**. Speichern Sie den Download an einem Speicherort, auf den Sie auf dem Server, auf dem der Connector installiert wird, zugreifen können. 
-6.  Nachdem der Download abgeschlossen ist, führen Sie das heruntergeladene Installationsprogramm (**ndesconnectorssetup.exe**) auf einem Server mit Windows Server 2012 R2 aus. Das Installationsprogramm installiert auch das Richtlinienmodul für NDES und den CRP-Webdienst. (Der CRP-Webdienst „CertificateRegistrationSvc“ wird als Anwendung in IIS ausgeführt.)
+6.  Nachdem der Download abgeschlossen ist, führen Sie das heruntergeladene Installationsprogramm (**ndesconnectorssetup.exe**) auf dem Server aus, der die Rolle „Registrierungsdienst für Netzwerkgeräte“ (Network Device Enrollment Service, NDES) hostet. Das Installationsprogramm installiert auch das Richtlinienmodul für NDES und den CRP-Webdienst. (Der CRP-Webdienst „CertificateRegistrationSvc“ wird als Anwendung in IIS ausgeführt.)
 
     > [!NOTE]
     > Bei der Installation von NDES für eigenständiges Intune wird der CRP-Dienst automatisch mit dem Zertifikatconnector installiert. Bei Verwendung von Intune mit dem Konfigurations-Manager installieren Sie den Zertifikatregistrierungspunkt als eine separate Standortsystemrolle.
