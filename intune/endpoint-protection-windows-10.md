@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f33598abe08ffb958ddac9eb7725ab500f9db981
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Endpoint Protection-Einstellungen für Windows 10 und höher in Microsoft Intune
 
@@ -225,7 +225,9 @@ Erstellen Sie zum Aktivieren des Exploit-Schutzes eine XML-Datei, die die gewün
 
 Verwenden Sie die **Anwendungssteuerungscode-Integritätsrichtlinien**, um zusätzliche Apps auszuwählen, die durch Windows Defender Application Control entweder überwacht werden müssen oder als vertrauenswürdig eingestuft und ausgeführt werden können. Windows-Komponenten und alle Apps aus dem Windows Store werden automatisch als zur Ausführung vertrauenswürdig eingestuft.
 
-Anwendungen werden nicht blockiert, wenn sie im Modus „Nur überwachen“ ausgeführt werden. Der Modus „Nur überwachen“ protokolliert alle Ereignisse in lokalen Clientprotokollen.
+Anwendungen werden nicht blockiert, wenn sie im Modus **Nur überwachen** ausgeführt werden. Der Modus **Nur überwachen** protokolliert alle Ereignisse in lokalen Clientprotokollen.
+
+Sobald die Anwendungssteuerung aktiviert ist, kann sie nur noch deaktiviert werden, indem der Modus von **Erzwingen** in **Nur überwachen** geändert wird. Wenn der Modus von **Erzwingen** in **Nicht konfiguriert** geändert wird, wird die Anwendungssteuerung weiterhin auf zugewiesenen Geräten erzwungen.
 
 ## <a name="windows-defender-security-center"></a>Windows Defender Security Center
 

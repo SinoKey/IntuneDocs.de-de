@@ -1,24 +1,23 @@
 ---
 title: "Einstellungen für Geräteeinschränkungen für Windows 10 in Intune"
 titlesuffix: Azure portal
-description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Windows 10-Geräten kennen."
+description: "In diesem Artikel erhalten Sie Informationen zu den Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Windows 10-Geräten."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/8/2018
+ms.date: 2/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b4b576e9b6195f3db8d162e1f880faf9f669f2c1
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Windows 10 und höher in Microsoft Intune
 
@@ -28,6 +27,8 @@ ms.lasthandoff: 02/09/2018
 - **Bildschirmaufnahme (nur Mobilgerät):** Erlaubt dem Benutzer, den Bildschirm des Geräts als Bild zu erfassen.
 - **Kopieren und einfügen (nur mobil):** Erlaubt Kopier- und Einfügevorgänge zwischen Apps auf dem Gerät.
 - **Manuelle Aufhebung der Registrierung:** Erlaubt dem Benutzer das manuelle Löschen des Unternehmensbereichskontos vom Gerät.
+   - Diese Richtlinieneinstellung wird nicht angewendet, wenn der Computer mit Azure Active Directory verknüpft ist und die automatische Registrierung aktiviert ist. 
+   - Diese Richtlinieneinstellung gilt nicht für Computer, auf denen Windows 10 Home ausgeführt wird.
 - **Manuelle Installation von Stammzertifikaten (nur Mobilgerät):** Hindert den Benutzer daran, Stammzertifikate und CAP-Zwischenzertifikate manuell zu installieren.
 - **Übermitteln von Diagnosedaten:** Mögliche Werte:
     - **Keine**: Es werden keine Daten an Microsoft gesendet.
@@ -68,7 +69,7 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
 
 ## <a name="personalization"></a>Personalization
 
-- **URL zu Desktophintergrundbild (nur Desktop):** Gibt die URL zu einem Bild im PNG-, JPG- oder JPEG-Format an, das Sie als Windows-Desktophintergrund verwenden möchten. Benutzer können diese nicht ändern.
+- **URL zu Desktophintergrundbild (nur Desktop):** Gibt die URL zu einem Bild im JPEG-Format an, das Sie als Windows-Desktophintergrund verwenden möchten. Benutzer können diese nicht ändern.
 
 ## <a name="privacy"></a>Datenschutz
 

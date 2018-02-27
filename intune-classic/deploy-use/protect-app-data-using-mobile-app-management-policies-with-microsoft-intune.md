@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 23dca24c69cca3c7a2851cb3fa7d9959f31df8e7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Schützen von App-Daten mithilfe der App-Schutzrichtlinien mit Microsoft Intune
 
@@ -57,9 +57,7 @@ Es gibt weitere Vorteile bei der Verwendung einer MDM mit App-Schutzrichtlinien,
 - **App-Schutzrichtlinien stellen sicher, dass Schutzfunktionen auf App-Ebene vorhanden sind**. So können Sie beispielsweise über eine Richtlinie verfügen, die eine PIN anfordert, wenn eine App im beruflichen Kontext geöffnet werden soll, und verhindert, dass Daten zwischen Apps ausgetauscht werden oder dass App-Daten des Unternehmens an einem privaten Speicherort gespeichert werden.
 
 ## <a name="devices-that-support-mam"></a>Geräte, die MAM unterstützen
-App-Schutzrichtlinien werden zurzeit für Folgendes unterstützt:
--   iOS 8.1 oder höher
--   Android 4 oder höher
+Die Plattform für Schutzrichtlinien für Intune-Apps ist auf die Plattformunterstützung für Office-Anwendungen ausgerichtet. Weitere Informationen finden Sie unter [Systemanforderungen für Office](https://products.office.com/en-US/office-system-requirements).
 
 >[!NOTE]
 >Windows-Geräte werden in der MAM nicht ohne Registrierungsszenario unterstützt. Wenn Sie jedoch Windows 10-Geräte mit Intune registrieren, können Sie Windows Information Protection verwenden, das ähnliche Funktionen bietet. Weitere Informationen finden Sie unter [Schutz von Unternehmensdaten mit Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
