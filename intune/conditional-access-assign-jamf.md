@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0844852aaa1e5833e0d5013ac9dea8862d7d752b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 747e54a1c62618f267c3ed07ec3f8858cf97b184
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Erzwingen von Konformität auf mit Jamf Pro verwalteten Macs
 
@@ -66,6 +66,12 @@ Endbenutzer müssen die Unternehmensportal-App über den Jamf Self-Dienst starte
 2. Konfigurieren Sie die Nutzlast **Microsoft Intune Integration** (Integration von Microsoft Intune), einschließlich Trigger und Ausführungshäufigkeit.
 3. Klicken Sie auf die Registerkarte **Scope** (Bereich), und beschränken Sie die Richtlinie auf alle Zielgeräte.
 4. Klicken Sie auf die Registerkarte **Self Service**, um die Richtlinie in Jamf Self Service verfügbar zu machen. Nehmen Sie die Richtlinie in die Kategorie **Device Compliance** (Gerätekonformität) auf. Klicken Sie auf **Speichern**.
+
+## <a name="removing-a-jamf-managed-device-from-intune"></a>Entfernen eines mit Jamf verwalteten Gerätes aus Intune
+
+Sie können kein mit Jamf verwaltetes Gerät aus Intune entfernen. Sie müssen mit Jamf verwaltete Geräte aus Jamf Pro entfernen, woraufhin Jamf aus Intune entfernt wird. 
+
+Erfahren Sie, wie Sie [ein mit Jamf verwaltetes Gerät in den Jamf Pro-Dokumenten entfernen](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). Sie können auch ein Supportticket beim [Jamf-Support](https://www.jamf.com/support/) einreichen, wenn Sie zusätzliche Hilfe benötigen. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 

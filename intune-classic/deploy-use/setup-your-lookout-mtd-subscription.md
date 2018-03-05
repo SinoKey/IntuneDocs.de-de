@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54fa53c8f31171c3719f8368ad07cd33da5f2235
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 0e8a6e52b5bdb9df03af88988f2e4ac49ecf2ab8
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-subscription"></a>Einrichten des Lookout Mobile Thread Defense-Abonnements
 
@@ -47,7 +47,7 @@ Folgende Schritte sind erforderlich, um Lookout Mobile Threat Defense einzuricht
 Ihr Lookout Mobile Endpoint Security-Mandant wird zur Integration von Lookout in Intune Ihrem Azure AD-Abonnement zugeordnet. Um Ihr Abonnement für Lookout Mobile Threat Defense zu aktivieren, benötigt der Lookout-Support (enterprisesupport@lookout.com) folgende Informationen:  
 
 * **Azure AD-Mandanten-ID**
-* **Objekt-ID der Azure AD-Gruppe** für den **Vollzugriff** auf die Lookout-Konsole
+* **Azure AD-Gruppenobjekt-ID** für einen **vollständigen** Lookout-Konsolenzugriff
 * **Objekt-ID der Azure AD-Gruppe** für den **eingeschränkten** Zugriff auf die Lookout-Konsole (optional)
 
 Führen Sie die folgenden Schritte aus, um die Informationen zusammenzustellen, die Sie an das Lookout-Supportteam übermitteln müssen.
@@ -59,7 +59,7 @@ Führen Sie die folgenden Schritte aus, um die Informationen zusammenzustellen, 
   * **Vollzugriff:** Der Azure AD-Administrator kann eine Gruppe für Benutzer erstellen, die Vollzugriff erhalten sollen, und optional eine Gruppe für Benutzer erstellen, die eingeschränkten Zugriff erhalten sollen.  Nur die Benutzer in diesen Gruppen können sich dann bei der **Lookout-Konsole** anmelden.
   * **Eingeschränkter Zugriff:** Die Benutzer in dieser Gruppe haben keinen Zugriff auf verschiedene Module der Lookout-Konsole für die Konfiguration und Registrierung und schreibgeschützten Zugriff auf das Modul **Sicherheitsrichtlinie** der Lookout-Konsole.  
 
-  Weitere Details zu den Berechtigungen finden Sie in [diesem Artikel](https://personal.support.lookout.com/hc/articles/114094105653) auf der Lookout-Website.
+  Weitere Einzelheiten zu den Berechtigungen finden Sie in [ diesem Artikel](https://personal.support.lookout.com/hc/articles/114094105653) auf der Lookout-Website.
 
   Die **Gruppenobjekt-ID** befindet sich in der **Azure AD-Verwaltungskonsole** auf der Seite **Eigenschaften** der Gruppe.
 
@@ -134,6 +134,6 @@ Lookout Mobile Threat Defense klassifiziert verschiedene Typen von Bedrohungen f
 > Risikostufen sind ein wichtiger Aspekt von Mobile Threat Defense, da die Intune-Integration die Gerätekompatibilität zur Laufzeit anhand dieser Risikostufen berechnet. Der Intune-Administrator legt in der Richtlinie eine Regel fest, um ein Gerät als nicht kompatibel zu identifizieren, wenn auf dem Gerät eine aktive Bedrohung mit der Mindeststufe **Hoch**, **Mittel** oder **Niedrig** erkannt wird. Die Richtlinie zur Bedrohungsklassifizierung von Lookout Mobile Threat Defense bildet die unmittelbare Grundlage zur Berechnung der Gerätekompatibilität in Intune.
 
 ## <a name="watching-enrollment"></a>Beobachten der Registrierung
-Nachdem das Setup abgeschlossen wurde, beginnt Lookout Mobile Threat Defense mit der Abfrage von Azure AD nach Geräten, die den angegebenen Registrierungsgruppen entsprechen.  Informationen zu den registrierten Geräten finden Sie im Modul „Geräte“.  Der Ausgangsstatus für Geräte wird als „ausstehend“ angezeigt.  Der Gerätestatus ändert sich, sobald die Lookout for Work-App auf dem Gerät installiert, geöffnet und aktiviert wurde.  Details zur Übertragung der Lookout for Work-App per Push an die Geräte finden Sie im Thema [Konfigurieren und Bereitstellen von Lookout for Work-Apps](configure-deploy-lookout-for-work-app.md).
+Nachdem das Setup abgeschlossen wurde, beginnt Lookout Mobile Threat Defense mit der Abfrage von Azure AD nach Geräten, die den angegebenen Registrierungsgruppen entsprechen.  Informationen zu den registrierten Geräten finden Sie im Modul „Geräte“.  Der Ausgangsstatus für Geräte wird als „ausstehend“ angezeigt.  Dieser Status ändert sich, sobald die Lookout for Work-App installiert, geöffnet und auf dem Gerät aktiviert wird.  Details zur Übertragung der Lookout for Work-App per Push an die Geräte finden Sie im Thema [Konfigurieren und Bereitstellen von Lookout for Work-Apps](configure-deploy-lookout-for-work-app.md).
 ## <a name="next-steps"></a>Nächste Schritte
 [Aktivieren der Lookout MTP-Verbindung mit Intune](/intune-classic/deploy-use/enable-lookout-mtd-connection)

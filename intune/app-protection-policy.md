@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6645261e2a90ea3890dc22b42fe65d6af4af6e5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0ee95990afa08aa55e0f9101329b31bd8b3041f4
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="what-are-app-protection-policies"></a>Was sind App-Schutzrichtlinien?
 
@@ -61,8 +61,7 @@ Es gibt weitere Vorteile bei der Verwendung einer MDM mit App-Schutzrichtlinien,
 
 
 ### <a name="supported-platforms-for-app-protection-polices"></a>Unterstützte Plattformen für App-Schutzrichtlinien
--   iOS 9 oder höher
--   Android 4.4 oder höher
+Die Plattform für Schutzrichtlinien für Intune-Apps ist auf die Plattformunterstützung für Office-Anwendungen ausgerichtet. Weitere Informationen finden Sie unter [Systemanforderungen für Office](https://products.office.com/en-US/office-system-requirements).
 
 Windows-Geräte werden momentan nicht unterstützt. Wenn Sie jedoch Windows 10-Geräte mit Intune registrieren, können Sie Windows Information Protection verwenden, das ähnliche Funktionen bietet. Weitere Informationen finden Sie unter [Schutz von Unternehmensdaten mit Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 ##  <a name="how-app-protection-policies-protect-app-data"></a>So schützen App-Schutzrichtlinien Ihre App-Daten
@@ -72,6 +71,7 @@ Windows-Geräte werden momentan nicht unterstützt. Wenn Sie jedoch Windows 10-G
 ![Die Abbildung zeigt, dass Daten ungehindert zwischen Apps verschoben werden können, wenn keine App-Schutzrichtlinien angewendet werden.](./media/apps-without-protection-policies.png)
 
 Wenn Apps ohne Einschränkungen verwendet werden, können Unternehmensdaten und private Daten vermischt werden.  Unternehmensdaten könnten damit an Speicherorten wie dem persönlichen Speicher abgelegt oder an Apps außerhalb Ihres Zuständigkeitsbereichs übermittelt werden, was Datenverlust bedeuten würde. Die Pfeile im Diagramm zeigen die uneingeschränkte Datenbewegung zwischen Apps (geschäftlich und privat) und zu Speicherorten.
+
 
 ### <a name="data-protection-with-app-protection-policies"></a>Datenschutz mit App-Schutzrichtlinien
 
@@ -134,3 +134,6 @@ Wenn ein Benutzer beispielsweise die OneDrive-App mit seinem Geschäftskonto sta
 ##  <a name="next-steps"></a>Nächste Schritte
 
 [Erstellen und Bereitstellen von App-Schutzrichtlinien mit Microsoft Intune](app-protection-policies.md)
+
+## <a name="see-also"></a>Siehe auch
+Apps von Drittanbietern wie beispielsweise die mobile Salesforce-App arbeiten auf eine bestimmte Weise mit Intune zusammen, um die Unternehmensdaten zu schützen. Weitere Informationen zur speziellen Zusammenarbeit der Salesforce-App mit Intune (einschließlich Konfigurationseinstellungen für die MDM-App) finden Sie unter [Salesforce-App und Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).

@@ -5,20 +5,19 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 02/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4b3178b8469b5c92e4124ab00f9a635e63568d77
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ab8393f3792611001d15fe4eb031225587126251
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="reference-for-policy-entities"></a>Verweis für Richtlinienentitäten
 
@@ -66,9 +65,9 @@ Die Entität **DeviceConfigurationProfileDeviceActivity** listet die Anzahl der 
 | Fehler |Anzahl eindeutiger Geräte im Zustand „Fehler“ |10 |
 | Failed |Anzahl eindeutiger Geräte im Zustand „fehlerhaft“ |2 |
 
-## <a name="userconfiguration"></a>UserConfiguration
 
-Die Entität **UserConfigurationProfileDeviceActivity** listet die Anzahl der Benutzer mit dem Zustand „erfolgreich“, „ausstehend“, „fehlerhaft“ oder „Fehler“ pro Tag auf. Die Anzahl gibt die Gerätekonfigurationsprofile an, die der Entität zugewiesen sind. Wenn ein Benutzer beispielsweise den Zustand „erfolgreich“ für alle zugewiesenen Richtlinien aufweist, wird der Zähler für „erfolgreich“ für diesen Tag um eins erhöht. Wenn einem Benutzer zwei Profile zugewiesen sind, von denen eines den Zustand „erfolgreich“ und eines den Zustand „Fehler“ aufweist, zählen wir den Benutzer für den Zustand „Fehler“.  Die Entität **UserConfigurationProfileDeviceActivity** listet für die letzten 30 Tage auf, wie viele Benutzer an einem bestimmten Tag in welchem Zustand waren.
+
+Die Entität **DeviceConfigurationProfileUserActivity** listet die Anzahl der Benutzer mit dem Zustand „erfolgreich“, „ausstehend“, „fehlerhaft“ oder „Fehler“ pro Tag auf. Die Anzahl gibt die Gerätekonfigurationsprofile an, die der Entität zugewiesen sind. Wenn ein Benutzer beispielsweise den Zustand „erfolgreich“ für alle zugewiesenen Richtlinien aufweist, wird der Zähler für „erfolgreich“ für diesen Tag um eins erhöht. Wenn einem Benutzer zwei Profile zugewiesen sind, von denen eines den Zustand „erfolgreich“ und eines den Zustand „Fehler“ aufweist, wird der Benutzer für den Zustand „Fehler“ gezählt.  Die Entität **DeviceConfigurationProfileUserActivity** listet für die letzten 30 Tage auf, wie viele Benutzer an einem bestimmten Tag in welchem Zustand waren.
 
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
@@ -90,4 +89,77 @@ Die Entität **PolicyTypeActivity** listet die Gesamtzahl der Geräte im Zustand
 | Pending |Anzahl eindeutiger Geräte im Zustand „ausstehend“ |123 |
 | Succeeded |Anzahl eindeutiger Geräte im Zustand „erfolgreich“ |12 |
 | Fehler |Anzahl eindeutiger Geräte im Zustand „Fehler“ |10 |
-| Fehlerhaft |Anzahl eindeutiger Geräte im Zustand „fehlerhaft“ |2 |
+| Failed |Anzahl eindeutiger Geräte im Zustand „fehlerhaft“ |2 |
+
+## <a name="compliance-policy"></a>Kompatibilitätsrichtlinie
+
+Die API-Referenz der Konformitätsrichtlinie enthält Entitäten, die Statusinformationen über Konformitätsrichtlinien bereitstellen, die Geräten zugewiesen sind.
+
+### <a name="compliancepolicystatusdeviceactivities"></a>CompliancePolicyStatusDeviceActivities
+
+In der folgenden Tabelle sind die Zuweisungsstatus der Konformitätsrichtlinien von Geräten zusammengefasst. Es ist die Anzahl der Geräte aufgeführt, die in jedem Konformitätszustand zu finden sind.
+
+
+|Eigenschaft     |Beschreibung  |Beispiel  |
+|---------|---------|---------|
+|DateKey  |Datumsschlüssel, der angibt, wann die Zusammenfassung für die Konformitätsrichtlinie erstellt wurde|20161204 |
+|Unbekannt  |Anzahl der Geräte, die offline sind oder aus einem anderen Grund nicht mit Intune oder Azure AD kommunizieren können |5|
+|NotApplicable      |Anzahl der Geräte, auf denen vom Administrator festgelegte Gerätekonformitätsrichtlinien nicht angewendet werden|201 |
+|Kompatibel      |Anzahl der Geräte, für die mindestens eine vom Administrator festgelegte Gerätekompatibilitätsrichtlinie angewendet wurde |4083 |
+|InGracePeriod      |Anzahl der Geräte, die nicht konform sind, sich aber in der vom Administrator definierten Toleranzperiode befinden |57|
+|NonCompliant      |Anzahl der Geräte, die mindestens eine vom Administrator festgelegte Einstellung der Gerätekompatibilitätsrichtlinie nicht anwenden konnten, oder bei denen der Benutzer gegen die vom Administrator festgelegten Richtlinien verstößt|43 |
+|Fehler      |Anzahl der Geräte, die nicht mit Intune oder Azure AD kommunizieren können und eine Fehlermeldung ausgeben |3|
+
+### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>CompliancePolicyStatusDevicePerPolicyActivities 
+
+In der folgenden Tabelle sind die Zuweisungsstatus der Konformitätsrichtlinien von Geräten auf der Basis von Richtlinien und Richtlinientyp zusammengefasst. Es ist die Anzahl der Geräte aufgeführt, die in jedem Konformitätszustand für jede zugewiesene Konformitätsrichtlinie zu finden sind.
+
+
+
+|Eigenschaft  |Beschreibung  |Beispiel  |
+|---------|---------|---------|
+|DateKey  |Datumsschlüssel, der angibt, wann die Zusammenfassung für die Konformitätsrichtlinie erstellt wurde|20161219|
+|PolicyKey     |Schlüssel für die Konformitätsrichtlinie, für die die Zusammenfassung erstellt wurde |10178 |
+|PolicyPlatformKey      |Schlüssel für den Plattformtyp der Konformitätsrichtlinie, für den die Zusammenfassung erstellt wurde|5|
+|Unbekannt     |Anzahl der Geräte, die offline sind oder aus einem anderen Grund nicht mit Intune oder Azure AD kommunizieren können|13|
+|NotApplicable     |Anzahl der Geräte, auf denen vom Administrator festgelegte Gerätekonformitätsrichtlinien nicht angewendet werden|3|
+|Kompatibel      |Anzahl der Geräte, für die mindestens eine vom Administrator festgelegte Gerätekompatibilitätsrichtlinie angewendet wurde |45|
+|InGracePeriod      |Anzahl der Geräte, die nicht konform sind, sich aber in der vom Administrator definierten Toleranzperiode befinden |3|
+|NonCompliant      |Anzahl der Geräte, die mindestens eine vom Administrator festgelegte Einstellung der Gerätekompatibilitätsrichtlinie nicht anwenden konnten, oder bei denen der Benutzer gegen die vom Administrator festgelegten Richtlinien verstößt|7|
+|Fehler      |Anzahl der Geräte, die nicht mit Intune oder Azure AD kommunizieren können und eine Fehlermeldung ausgeben |3|
+
+### <a name="policyplatformtypes"></a>PolicyPlatformTypes
+
+Die folgende Tabelle enthält die Plattformtypen aller zugewiesenen Richtlinien. Plattformtypen von Richtlinien, die noch nie Geräten zugewiesen waren, sind in dieser Tabelle nicht aufgeführt.
+
+
+|Eigenschaft  |Beschreibung  |Beispiel  |
+|---------|---------|---------|
+|PolicyPlatformTypeKey      |Der eindeutige Schlüssel für den Plattformtyp der Richtlinie |20170519 |
+|PolicyPlatformTypeId      |Der eindeutige Bezeichner für den Plattformtyp der Richtlinie|1|
+|PolicyPlatformTypeName      |Der Name für den Plattformtyp der Richtlinie|AndroidForWork |
+
+### <a name="policydeviceactivity"></a>PolicyDeviceActivity
+
+In der folgenden Tabelle ist die Anzahl der Geräte mit dem Zustand „erfolgreich“, „ausstehend“, „fehlerhaft“ oder „Fehler“ pro Tag aufgeführt. Die Anzahl spiegelt die Daten pro Richtlinientypprofil wider. Wenn ein Gerät beispielsweise den Zustand „erfolgreich“ für alle zugewiesenen Richtlinien aufweist, wird der Zähler für „erfolgreich“ für diesen Tag um eins erhöht. Wenn einem Gerät zwei Profile zugewiesen sind, von denen eines den Zustand „erfolgreich“ und eines den Zustand „Fehler“ aufweist, erhöht die Entität den Zähler für „erfolgreich“ und versetzt das Gerät in den Zustand „Fehler“. Die Entität PolicyDeviceActivity listet für die letzten 30 Tage auf, wie viele Geräte an einem bestimmten Tag in welchem Zustand waren.
+
+|Eigenschaft  |Beschreibung  |Beispiel  |
+|---------|---------|---------|
+|DateKey|Date Key für den Zeitpunkt als das Einchecken der Gerätekonfigurationsprofile im Data Warehouse aufgezeichnet wurde|20160703|
+|Pending|Anzahl eindeutiger Geräte im Zustand „ausstehend“|123|
+|Succeeded|Anzahl eindeutiger Geräte im Zustand „erfolgreich“|12|
+PolicyKey|Der Richtlinienschlüssel kann mit der Richtlinie verknüpft werden, um den Richtliniennamen zu erhalten.|Windows 10-Baseline|
+|Fehler|Anzahl eindeutiger Geräte im Zustand „Fehler“|10|
+|Failed|Anzahl eindeutiger Geräte im Zustand „fehlerhaft“|2|
+
+### <a name="policyuseractivity"></a>PolicyUserActivity 
+
+In der folgenden Tabelle ist die Anzahl der Benutzer mit dem Zustand „erfolgreich“, „ausstehend“, „fehlerhaft“ oder „Fehler“ pro Tag aufgeführt. Die Anzahl spiegelt die Daten pro Richtlinientypprofil wider. Wenn ein Benutzer beispielsweise den Zustand „erfolgreich“ für alle zugewiesenen Richtlinien aufweist, wird der Zähler für „erfolgreich“ für diesen Tag um eins erhöht. Wenn einem Benutzer zwei Profile zugewiesen sind, von denen eines den Zustand „erfolgreich“ und eines den Zustand „Fehler“ aufweist, wird der Benutzer für den Zustand „Fehler“ gezählt. Die Entität PolicyUserActivity listet für die letzten 30 Tage auf, wie viele Benutzer an einem bestimmten Tag in welchem Zustand waren.
+
+|Eigenschaft  |Beschreibung  |Beispiel  |
+|---------|---------|---------|
+|DateKey|Date Key für den Zeitpunkt als das Einchecken der Gerätekonfigurationsprofile im Data Warehouse aufgezeichnet wurde|20160703|
+|Pending|Anzahl eindeutiger Geräte im Zustand „ausstehend“|123|
+|Succeeded|Anzahl eindeutiger Geräte im Zustand „erfolgreich“|12|
+PolicyKey|Der Richtlinienschlüssel kann mit der Richtlinie verknüpft werden, um den Richtliniennamen zu erhalten.|Windows 10-Baseline|
+|Fehler|Anzahl eindeutiger Geräte im Zustand „Fehler“|10|

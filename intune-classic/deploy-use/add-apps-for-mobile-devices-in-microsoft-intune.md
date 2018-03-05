@@ -41,7 +41,7 @@ Sie verwenden den Intune-Softwareherausgeber, um die Eigenschaften der App zu ko
 
 2.  Wählen Sie auf der Seite **Softwaresetup** des Herausgebers eine der folgenden Optionen für **Wählen Sie aus, wie diese Software für Geräte bereitgestellt werden soll** aus:
     - **Softwareinstallationsprogramm**: Für Apps mit der Erweiterung **MSI**:
-        - **Wählen Sie den Dateityp des Softwareinstallationsprogramms aus**. Hiermit wird die Art der Software angegeben, die Sie bereitstellen möchten. Wenn Sie z. B. eine iOS-App bereitstellen möchten, wählen Sie **App-Paket für iOS (IPA-Datei)** aus.
+        - **Wählen Sie den Dateityp des Softwareinstallationsprogramms aus**. Hiermit wird die Art der Software angegeben, die Sie bereitstellen möchten. Wenn Sie z. B. eine iOS-App bereitstellen möchten, wählen Sie **App-Paket für iOS (&#42;IPA-Datei)** aus.
         - **Geben Sie den Speicherort der Softwaresetupdateien an**. Geben Sie den Speicherort der Installationsdateien ein, oder wählen Sie **Durchsuchen** aus, um den Speicherort in einer Liste auszuwählen.
         - **Weitere Dateien und Unterordner aus dem gleichen Ordner einschließen**. Diese Option ist nur für den Dateityp **Windows Installer** verfügbar.<br>Mitunter sind für eine Software, bei der Windows Installer verwendet wird, unterstützende Dateien erforderlich, die sich meist im gleichen Ordner befinden wie die Installationsdateien. Wählen Sie diese Option aus, wenn Sie auch diese Dateien bereitstellen möchten.<br>Bei diesem Installationstyp wird etwas Cloudspeicherplatz in Anspruch genommen.
 

@@ -15,11 +15,11 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5a844255451f441f0b64cb020b863b4775fbb768
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 00a7bf5b3f5df58e29c3eb92a516b1ace3eea705
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Anfordern von Support für Microsoft Intune
 
@@ -47,7 +47,7 @@ Als IT-Administrator können Sie ein Supportticket über das Azure-Portal erstel
     - **Supportplan**: **Technischer Support – Enthalten** (Bei technischen Problemen mit Intune ist der Support kostenlos.)
 
     >[!IMPORTANT]
-    >Der Support für Intune und für Intune mit Configuration Manager ist kostenlos. Informationen zum Premier Support-Angebot finden Sie in der Dokumentation [Beschreibung der Dienstleistungen](https://www.microsoft.com/en-us/microsoftservices/services-list.aspx) im Abschnitt 5.3.3 „Beratende Dienstleistungen“.
+    >Der Support für Intune und für Intune mit Configuration Manager ist kostenlos. Informationen zum Premier Support-Angebot finden Sie in der Dokumentation [Beschreibung der Dienstleistungen](https://www.microsoft.com/microsoftservices/services-list.aspx) im Abschnitt 5.3.3 „Beratende Dienstleistungen“.
 
     Klicken Sie auf **Weiter**, um fortzufahren.
 4. Um sicherzustellen, dass Ihre Anfrage an den richtigen fachlichen Ansprechpartner für Ihr Problem gerichtet ist, wählen Sie auf dem Blatt **Problem** die folgenden Optionen aus:

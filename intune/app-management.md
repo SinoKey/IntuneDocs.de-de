@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1f17b885ffc05808933a955dcb4f8977ffb0f4a0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Was ist die Microsoft Intune App-Verwaltung?
 
@@ -52,7 +52,7 @@ Intune bietet eine Reihe von Funktionen, die die Installation der erforderlichen
 |Verpflichtende Installation von Apps auf Geräten (erforderlich)<sup>2</sup>|Ja |Ja |Ja |Ja |
 |Optionale Installation auf Geräten über das Unternehmensportal (verfügbare Installation)|Ja |Ja |Ja |Ja |
 |Installieren von Verknüpfungen zu Apps im Internet (Webclip)|Ja |Ja |Ja |Ja |
-|Interne (branchenspezifische) Apps|Ja |Ja |Nein|Nein|
+|Interne (branchenspezifische) Apps|Ja |Ja |Nein|Ja |
 |Apps aus einem Store|Ja |Ja |Ja |Ja |
 |Aktualisierung von Apps|Ja |Ja |Ja |Ja |
 

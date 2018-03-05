@@ -104,7 +104,6 @@
 ## [Verwenden Ihres macOS-Geräts](using-your-macos-device-with-intune.md)
 ### [Was geschieht, wenn Sie ein macOS-Gerät registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [Registrieren Ihres macOS-Geräts](enroll-your-device-in-intune-macos-cp.md)
-### [Registrieren Ihres macOS-Legacygeräts](enroll-your-device-in-intune-macos-legacy.md)
 ### [Aufheben der Registrierung Ihres macOS-Geräts](unenroll-your-device-from-intune-macos.md)
 
 ### [Behandeln häufig auftretender Probleme mit macOS](troubleshoot-your-device-macos.md)
@@ -140,6 +139,7 @@
 #### [Senden von Protokollen an die bzw. von der Unternehmensportal-App](send-logs-to-your-it-admin-cp-windows.md)
 #### [Senden von Protokollen von der Einstellungs-App](send-logs-to-your-it-admin-settings-windows.md)
 #### [Meine Windows-Version wird noch nicht unterstützt](your-windows-version-isnt-yet-supported.md)
+#### [Installieren von Office 365 auf Ihrem Windows 10-Gerät](install-office-windows.md)
 #### [Aktivieren der Windows-Verschlüsselung](you-need-to-enable-windows-encryption.md)
 #### [Mein Gerät benötigt Antischadsoftware](your-device-needs-antimalware-software.md)
 #### [Aktivieren des sicheren Starts](you-need-to-enable-secure-boot-windows.md)
@@ -150,3 +150,4 @@
 #### [Ich muss Windows Defender aktivieren](turn-on-defender-windows.md)
 
 ## [Verwenden der Intune-Unternehmensportal-Website](using-the-intune-company-portal-website.md)
+### [Remotesperren des Geräts](remote-lock-your-device-cpwebsite.md)

@@ -3,23 +3,21 @@ title: "Intune-Gerätekonformitätsrichtlinien"
 titleSuffix: Azure portal
 description: "In diesem Thema erhalten Sie Informationen zur Gerätekonformität in Microsoft Intune\""
 keywords: 
-author: andredm7
-ms.author: andredm
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 07/18/2017
+ms.date: 2/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e6d758d10a3527e0dc350115f2f8f10e2c62322
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="get-started-with-intune-device-compliance-policies"></a>Erste Schritte mit den Intune-Gerätekonformitätsrichtlinien
 
@@ -56,7 +54,7 @@ When you specify these actions, Intune will automatically initiate them in the s
 actions for a device that continues to be in the noncompliant status for
 a week:
 
--   When the device is first determined to be non-compliant, an email with noncompliant notification is sent to the user.
+-   When the device is first determined to be noncompliant, an email with noncompliant notification is sent to the user.
 
 -   3 days after initial noncompliance state, a follow up reminder is sent to the user.
 
@@ -99,9 +97,63 @@ Sie benötigen die folgenden Abonnements, um die Gerätekonformitätsrichtlinien
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>So funktionieren Intune-Gerätekonformitätsrichtlinien mit Azure AD
 
-Wenn ein Gerät in Intune registriert wird, schaltet sich der Azure AD-Registrierungsprozess ein, wodurch die Geräteattribute mit weiteren Informationen in Azure AD aktualisiert werden. Eine der wichtigsten Geräteinformationen ist der Gerätekonformitätsstatus, der von bedingten Zugriffsrichtlinien zum Blockieren oder Zulassen von Zugriff auf E-Mails und andere Unternehmensressourcen verwendet wird.
+Wenn ein Gerät in Intune registriert wird, schaltet sich der Azure AD-Registrierungsprozess ein, wodurch die Geräteattribute mit weiteren Informationen in Azure AD aktualisiert werden. Eine der wichtigsten Geräteinformationen ist der Gerätekonformitätsstatus, der von bedingten Zugriffsrichtlinien zum Blockieren oder Zulassen des Zugriffs auf E-Mails und andere Unternehmensressourcen verwendet wird.
 
-- Erfahren Sie mehr über den [Azure AD-Registrierungsprozess](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview).
+- Erfahren Sie mehr über den [Azure AD-Registrierungsprozess](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction).
+
+### <a name="assigning-a-resulting-device-configuration-profile-status"></a>Zuweisen eines resultierenden Profilstatus für die Gerätekonfiguration
+
+Wenn einem Gerät mehrere Konfigurationsprofile zugewiesen sind und es über verschiedene Konformitätsstatus für mindestens zwei zugeordnete Konfigurationsprofile verfügt, muss genau ein resultierender Konformitätsstaus zugewiesen werden. Diese Zuweisung basiert auf einem konzeptuellen Schweregrad, der den einzelnen Konformitätsstatus zugewiesen ist. Jeder Konformitätsstatus verfügt über den folgenden Schweregrad:
+
+
+|Status  |Schweregrad  |
+|---------|---------|
+|Pending     |1|
+|Succeeded     |2|
+|Failed     |3|
+|Fehler     |4|
+
+Außerdem wird ein resultierender Status von mindestens zwei Konfigurationsprofilen zugewiesen, indem der höchste Schweregrad aller einem Gerät zugewiesenen Profile ausgewählt wird.
+
+Angenommen, ein Gerät verfügt z.B. über drei ihm zugewiesene Profile: einen Status „Ausstehend“ (Schweregrad = 1), einen Status „Erfolgreich“ (Schweregrad = 2) und einen Status „Fehler“ (Schweregrad = 4). Dem Status „Fehler“ wird der höchste Schweregrad zuwiesen, und er wird daher als resultierender Konformitätsstatus für alle drei Profile zugewiesen.
+
+### <a name="assigning-an-ingraceperiod-status-for-an-assigned-compliance-policy"></a>Zuweisen eines InGracePeriod-Status für eine zugewiesene Konformitätsrichtlinie
+
+Der InGracePeriod-Status für eine Konformitätsrichtlinie stellt einen Wert dar, der aus der Toleranzperiode und dem tatsächlichen Status des Geräts für die zugewiesene Konformitätsrichtlinie ermittelt wird. 
+
+Im Detail bedeutet das: Wenn ein Gerät den Status „NonCompliant“ für eine zugewiesene Richtlinie aufweist und:
+
+- dem Gerät keine Toleranzperiode zugewiesen ist, lautet der zugewiesene Wert für die Konformitätsrichtlinie „NonCompliant“.
+- die Toleranzperiode des Geräts abgelaufen ist, lautet der zugewiesene Wert für die Konformitätsrichtlinie „NonCompliant“.
+- die Toleranzperiode des Geräts erst in der Zukunft abläuft, lautet der zugewiesene Wert für die Konformitätsrichtlinie „InGracePeriod“.
+
+In der folgende Tabelle werden die obenstehend aufgeführten Punkte zusammengefasst:
+
+
+|Tatsächlicher Konformitätsstatus|Wert der zugewiesenen Toleranzperiode|Effektiver Konformitätsstatus|
+|---------|---------|---------|
+|NonCompliant |Keine Toleranzperiode zugewiesen |NonCompliant |
+|NonCompliant |Datum vom Vortag|NonCompliant|
+|NonCompliant |Datum des folgenden Tages|InGracePeriod|
+
+Weitere Informationen zum Überwachen der Richtlinien zur Gerätekonformität finden Sie unter [Überwachen von Intune-Richtlinien zur Gerätekonformität](compliance-policy-monitor.md).
+
+### <a name="assigning-a-resulting-compliance-policy-status"></a>Zuweisen eines resultierenden Konformitätsrichtlinienstatus
+
+Wenn einem Gerät mehrere Konfigurationsprofile zugewiesen sind und es über verschiedene Konformitätsstatus für mindestens zwei zugeordnete Konformitätsprofile verfügt, muss genau ein resultierender Konformitätsstaus zugewiesen werden. Diese Zuweisung basiert auf einem konzeptuellen Schweregrad, der den einzelnen Konformitätsstatus zugewiesen ist. Jeder Konformitätsstatus verfügt über den folgenden Schweregrad: 
+
+|Status  |Schweregrad  |
+|---------|---------|
+|Unbekannt     |1|
+|NotApplicable     |2|
+|Kompatibel|3|
+|InGracePeriod|4|
+|NonCompliant|5|
+|Fehler|6|
+
+Außerdem wird ein resultierender Status von mindestens zwei Konformitätsprofilen bestimmt, indem der höchste Schweregrad aller einem Gerät zugewiesenen Richtlinien ausgewählt wird.
+ 
+Angenommen, einem Gerät sind z.B. drei Konformitätsrichtlinien zugewiesen: ein Status „Unbekannt“ (Schweregrad = 1), ein Status „Konform“ (Schweregrad = 3) und ein Status „InGracePeriod“ (Schweregrad = 4). Dem Status „InGracePeriod“ wird der höchste Schweregrad zuwiesen, und er wird daher als resultierender Konformitätsstatus für alle drei Profile zugewiesen.  
 
 ##  <a name="ways-to-use-device-compliance-policies"></a>Möglichkeiten, die Gerätekonformitätsrichtlinien zu verwalten
 
@@ -111,7 +163,11 @@ Sie können die Konformitätsrichtlinie mit dem bedingten Zugriff verwenden, um 
 ### <a name="without-conditional-access"></a>Ohne bedingten Zugriff
 Gerätekonformitätsrichtlinien können auch unabhängig vom bedingten Zugriff verwendet werden. Bei unabhängiger Nutzung von Kompatibilitätsrichtlinien werden die Zielgeräte ausgewertet und mit ihrem Kompatibilitätsstatus gemeldet. So können Sie beispielsweise einen Bericht dazu erstellen, wie viele Geräte nicht verschlüsselt sind oder mit Jailbreak oder Rootzugriff manipuliert wurden. Aber wenn Sie Kompatibilitätsrichtlinien unabhängig nutzen, gelten keine Zugriffsbeschränkungen für Unternehmensressourcen.
 
-Sie stellen Konformitätsrichtlinien für Benutzer bereit. Wenn Sie eine Kompatibilitätsrichtlinie für einen Benutzer bereitstellen, wird die Kompatibilität der Geräte des Benutzers überprüft. Informationen darüber, wie lange es dauert, bis eine Richtlinie für mobile Geräte nach der Bereitstellung der Richtlinie abgerufen wird, finden Sie unter „Verwalten von Einstellungen und Features auf Ihren Geräten“.
+Sie stellen Konformitätsrichtlinien für Benutzer bereit. Wenn Sie eine Kompatibilitätsrichtlinie für einen Benutzer bereitstellen, wird die Kompatibilität der Geräte des Benutzers überprüft. Informationen darüber, wie lange es dauert, bis eine Richtlinie für mobile Geräte nach der Bereitstellung der Richtlinie abgerufen wird, finden Sie unter [Behandeln von Problemen mit Geräteprofilen in Microsoft Intune](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+
+#### <a name="actions-for-non-compliance"></a>Aktionen bei Nichtkonformität
+
+Mithilfe der Aktionen bei Nichtkonformität können Sie eine zeitlich strukturierte Aktionsfolge für Geräte konfigurieren, die die Kriterien der Konformitätsrichtlinie nicht erfüllen. Weitre Informationen finden Sie unter [Automatisieren von Aktionen bei Nichtkonformität](actions-for-noncompliance.md).
 
 ##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>Verwendung von Gerätekonformitätsrichtlinien im klassischen Intune-Portal vs. Azure-Portal
 
@@ -128,14 +184,16 @@ Beachten Sie die wichtigsten Unterschiede beim Übergang in den neuen Workflow z
 
 Gerätekonformitätsrichtlinien, die im [klassischen Intune-Portal](https://manage.microsoft.com) erstellt wurden, erscheinen nicht im neuen [Intune Azure-Portal](https://portal.azure.com). Sie sind jedoch weiterhin für Benutzer bestimmt und können über das klassische Intune-Portal verwaltet werden.
 
-Wenn Sie von den neuen Funktionen für Gerätekonformität im Azure-Portal profitieren wollen, müssen Sie neue Gerätekonformitätsrichtlinien im Azure-Portal selbst erstellen. Wenn Sie eine neue Gerätekonformitätsrichtlinie im Azure-Portal einem Benutzer zuweisen, dem auch eine Gerätekonformitätsrichtlinie aus dem klassischen Intune-Portal zugewiesen wurde, haben die Gerätekonformitätsrichtlinien aus dem Intune-Azure-Portal Vorrang vor denen, die im klassischen Intune-Portal erstellt wurden.
+Wenn Sie von den neuen Features für Gerätekonformität im Azure-Portal profitieren wollen, müssen Sie eine neue Gerätekonformitätsrichtlinien im Azure-Portal erstellen. Wenn Sie eine neue Gerätekonformitätsrichtlinie im Azure-Portal einem Benutzer zuweisen, dem auch eine Gerätekonformitätsrichtlinie aus dem klassischen Intune-Portal zugewiesen wurde, haben die Gerätekonformitätsrichtlinien aus dem Intune-Azure-Portal Vorrang vor denen, die im klassischen Intune-Portal erstellt wurden.
 
 ##  <a name="next-steps"></a>Nächste Schritte
 
-Plattformspezifische Informationen zum Erstellen einer Gerätekonformitätsrichtlinie finden Sie hier:
+- Plattformspezifische Informationen zum Erstellen einer Gerätekonformitätsrichtlinie finden Sie hier:
 
-- [Android](compliance-policy-create-android.md)
-- [Android for Work](compliance-policy-create-android-for-work.md)
-- [iOS](compliance-policy-create-ios.md)
-- [macOS](compliance-policy-create-mac-os.md)
-- [Windows](compliance-policy-create-windows.md)
+   - [Android](compliance-policy-create-android.md)
+   - [Android for Work](compliance-policy-create-android-for-work.md)
+   - [iOS](compliance-policy-create-ios.md)
+   - [macOS](compliance-policy-create-mac-os.md)
+   - [Windows](compliance-policy-create-windows.md)
+
+- Weitere Informationen zu den Richtlinienentitäten für Intune-Data Warehouse finden Sie unter [Reference for policy entities (Referenz für Richtlinienentitäten)](reports-ref-policy.md).

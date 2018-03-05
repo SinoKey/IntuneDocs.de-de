@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1dc50fe1018bae0c13ddba51e5351f463d0ec1c8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 559550860d0882b20a005a5d0957be761978cbe6
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Standardgeräteeinschränkungen für Android und Samsung KNOX in Microsoft Intune
 
@@ -94,7 +94,7 @@ Suchen Sie im [Apps-Bereich von Google Play](https://play.google.com/store/apps)
 
 Öffnen Sie die Installationsseite für die App, und kopieren Sie dann die URL in die Zwischenablage. Jetzt können Sie diese URL in der Liste mit kompatiblen oder nicht kompatiblen Apps verwenden.
 
-Beispiel: Suchen Sie in Google Play nach Microsoft Office Mobile. Verwenden Sie die URL **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Beispiel: Durchsuchen Sie den [App-Bereich von Google Play](https://play.google.com/store/apps) nach **Microsoft Planner**. Verwenden Sie die URL **https://play.google.com/store/apps/details?id=com.microsoft.planner**.
 
 ### <a name="additional-options"></a>Zusätzliche Optionen
 

@@ -15,17 +15,23 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cd21d6e87dfa142fe9e3ef4d9bbbc0be87eca9b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 93b6a642f26ec6273853f75d063fd368698f3864
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>So konfigurieren Sie Einstellungen für Geräteeinschränkungen in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Mit Geräteeinschränkungen können Sie eine Vielzahl von Einstellungen und Features für eine ganze Reihe von Kategorien steuern, einschließlich Sicherheit, Browser, Hardware und Einstellungen zur Datenfreigabe. Sie könnten beispielsweise ein Geräteeinschränkungsprofil erstellen, das verhindert, dass Benutzer von iOS-Geräten auf die Kamera des Geräts zugreifen.
+Mit Geräteeinschränkungen können Sie eine Vielzahl von Einstellungen und Features für eine ganze Reihe von Kategorien steuern, z.B.:
+- Sicherheit
+- Browser
+- Hardware
+- Einstellungen für die Datenfreigabe
+
+Sie können beispielsweise ein Geräteeinschränkungsprofil erstellen, das verhindert, dass Benutzer von iOS-Geräten auf die Kamera des Geräts zugreifen.
 
 Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfigurieren von Geräteeinschränkungsprofilen kennen. In den weiterführenden Themen zu den einzelnen Plattformen erfahren Sie etwas über Besonderheiten der jeweiligen Geräte.
 
@@ -53,6 +59,7 @@ So erstellen Sie ein Geräteprofil, das Einstellungen für Geräteeinschränkung
     - [Windows 8.1](device-restrictions-windows-8-1.md)
     - [Einstellungen für Windows 10](device-restrictions-windows-10.md)
     - [Einstellungen für Windows 10 Team](device-restrictions-windows-10-teams.md)
+    - [Einstellungen für Windows Holographic for Business](device-restrictions-windows-holographic.md)
     - [Einstellungen für Android for Work](device-restrictions-android-for-work.md)
 8. Navigieren Sie anschließend zurück zum Blatt **Profil erstellen**, und klicken Sie auf **Erstellen**.
 

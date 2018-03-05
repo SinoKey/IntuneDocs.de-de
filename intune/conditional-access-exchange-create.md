@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02b130ed13b3bb8869e35b035e787c97b76b5e85
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 70c3de614b0f5ed5075b669ecdffc08e1226817d
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Erstellen und Zuweisen einer Richtlinie für bedingten Zugriff für Exchange lokal und das ältere Exchange Online Dedicated in Microsoft Intune
 
@@ -65,7 +65,7 @@ Bevor Sie den bedingten Zugriff konfigurieren können, müssen Sie Folgendes üb
 - EAS-E-Mail-Clients für **Android for Work-Geräte:** Nur **Gmail**- und **Nine Work**-Apps im **Arbeitsprofil** werden auf Android for Work-Geräten unterstützt. Damit der bedingte Zugriff unter Android for Work funktioniert, müssen Sie ein E-Mail-Profil für die Gmail- oder Nine Work-App sowie diese Apps als erforderliche Installation bereitstellen.
 
 > [!NOTE]
-> Microsoft Outlook-App unter Android und iOS wird nicht unterstützt. Android for Work wird derzeit über die nächsten Monate mandantenübergreifend in Intune eingeführt.
+> Microsoft Outlook-App unter Android und iOS wird nicht unterstützt. 
 
 ### <a name="support-for-pcs"></a>Unterstützung für PCs
 

@@ -14,17 +14,17 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85299c97c2b0c605adbb83a7c6e8017360511609
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c31d1e44b4b96995223f4294655d8e0730170f47
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Aktualisieren Ihrer Windows-PCs mit Softwareupdates in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune unterstützt Sie auf vielfältige Weise beim Schutz Ihrer verwalteten Computer, z. B. durch die Verwaltung von Softwareupdates. Dadurch ist sichergestellt, dass die neuesten Patches und Softwareupdates schnell installiert werden, sodass Ihre Computer immer auf dem neuesten Stand sind.
+Microsoft Intune unterstützt Sie auf vielfältige Weise beim Schutz Ihrer verwalteten Computer, z.B. durch die Verwaltung von Softwareupdates. Dadurch ist sichergestellt, dass die neuesten Patches und Softwareupdates schnell installiert werden, sodass Ihre Computer immer auf dem neuesten Stand sind.
 
 Falls Sie den Intune-Client noch nicht auf Ihren Computern installiert haben, finden Sie unter [Installieren des Windows-PC-Clients mit Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) weitere Informationen.
 
@@ -253,5 +253,5 @@ Wenn Sie ein Update aus der Liste auswählen, werden weitere Befehle verfügbar,
 6.  Sie können unten auf der Seite **Alle Updates** im Detailbereich überprüfen, ob Erinnerungsmeldungen zu dem Update vorhanden sind.
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Richtlinien zum Schutz von Windows-PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)

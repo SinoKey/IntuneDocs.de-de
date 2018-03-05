@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45e1b3747b4c1b74401fc1ce73716abe5e06110d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8ce84f51dcfb61ec16c78a6216135c2a7639657f
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Hinzufügen von Benutzern und Gewähren von Administratorrechten für Intune
 
@@ -102,7 +102,7 @@ Weisen Sie Benutzern mindestens eine Administratorberechtigung zu. Diese Berecht
 - **Benutzerdministrator**: (Office 365 und Intune) Setzt Kennwörter zurück, überwacht den Dienststatus, kann Benutzerkonten hinzufügen oder löschen und verwaltet Serviceanfragen. Der Benutzerverwaltungsadministrator kann keine globalen Administratoren löschen, keine andere Administratorrollen erstellen und keine Kennwörter für andere Administratoren zurücksetzen.
 - **Intune-Dienstadministrator**: Alle globalen Intune-Administratorberechtigungen außer die Berechtigung zum Erstellen von Administratoren mit den Optionen von **Verzeichnisrolle**.
 
-Das Konto, mit dem Sie Ihr Microsoft Intune-Abonnement erstellen, ist ein globaler Administrator. Als Best Practice empfiehlt es sich, für die täglichen Verwaltungsaufgaben keinen globalen Administrator zu verwenden. Ein Administrator benötigt keine Intune-Lizenz für den Zugriff auf das Azure-Portal. 
+Das Konto, mit dem Sie Ihr Microsoft Intune-Abonnement erstellen, ist ein globaler Administrator. Als Best Practice empfiehlt es sich, für die täglichen Verwaltungsaufgaben keinen globalen Administrator zu verwenden. Ein Administrator benötigt zwar keine Intune-Lizenz für den Zugriff auf Intune im Azure-Portal, doch zum Ausführen bestimmter Verwaltungsaufgaben, z.B. zum Einrichten des Exchange-Diensts Connector, ist eine Intune-Lizenz erforderlich. 
 
 Für den Zugriff auf das Office 365-Portal muss für Ihr Konto **Anmeldung zulässig** festgelegt sein. Setzen Sie im Azure-Portal unter **Profil** **Anmeldung blockieren** auf **Nein**, um den Zugriff zu gewähren. Dieser Status unterscheidet sich vom Besitz einer Abonnementlizenz. Standardmäßig haben alle Benutzerkonten den Status **Zugelassen**. Benutzer ohne Administratorrechte können Intune-Kennwörter über das Office 365-Portal zurücksetzen.
 

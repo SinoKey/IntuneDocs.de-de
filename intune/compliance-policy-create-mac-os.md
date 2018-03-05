@@ -1,25 +1,24 @@
 ---
 title: "So erstellen Sie eine Konformitätsrichtlinie für macOS"
 titleSuffix: Azure portal
-description: "Erfahren Sie, wie Sie eine Konformitätsrichtlinie für macOS-Geräte erstellen."
+description: "Erfahren Sie, wie Sie eine Konformitätsrichtlinie für macOS-Geräte herstellen."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 11/17/2017
+ms.date: 2/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eb36cc8de655766afabc60f33a316cb6ef3bfb8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Erstellen einer Gerätekonformitätsrichtlinie für macOS-Geräte in Intune
 
@@ -35,25 +34,21 @@ Bevor Sie eine Gerätekonformitätsrichtlinie erstellen und zuweisen, überprüf
 > [!IMPORTANT]
 > Sie müssen Gerätekonformitätsrichtlinien für jede Plattform erstellen. Gerätekonformitätsrichtlinien-Einstellungen für Intune hängen von den Plattformfunktionen ab, die über das MDM-Protokoll bereitgestellte Einstellungen sind.
 
-In der Tabelle unten wird beschrieben, wie nicht konforme Einstellungen verwaltet werden, wenn eine Konformitätsrichtlinie mit einer Richtlinie für bedingten Zugriff verwendet wird.
-
--------------------------------
+In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verwaltet werden, wenn eine Konformitätsrichtlinie mit einer Richtlinie für bedingten Zugriff verwendet wird:
 
 
-| **Richtlinieneinstellung** | **macOS 10.11 und höher** |
+| Richtlinieneinstellung | macOS 10.11 und höher |
 | --- | --- |
 | **PIN- oder Kennwortkonfiguration** | Wiederhergestellt |   
 | **Geräteverschlüsselung** | Wiederhergestellt (durch Festlegen der PIN) |
 | **E-Mail-Profil** | Isoliert |
 |**Minimale Version des Betriebssystems** | Isoliert |
 | **Maximale Version des Betriebssystems** | Isoliert |  
-| **Windows-Integritätsnachweis** | Nicht verfügbar |  
-----------------------------
 
 
 **Wiederhergestellt** = Das Betriebssystem des Geräts erzwingt die Kompatibilität. (Beispiel: Der Benutzer ist gezwungen, eine PIN festzulegen.)
 
-**Isoliert** = Das Betriebssystem des Geräts erzwingt keine Kompatibilität. (Beispiel: Android-Geräte zwingen den Benutzer nicht, das Gerät zu verschlüsseln.) Wenn die Geräte nicht kompatibel sind, erfolgen die folgenden Aktionen:
+**Isoliert** = Das Betriebssystem des Geräts erzwingt keine Kompatibilität. (Beispiel: Android-Geräte zwingen den Benutzer nicht, das Gerät zu verschlüsseln.) Wenn das Gerät nicht kompatibel ist, erfolgen die folgenden Aktionen:
 
 - Das Gerät wird blockiert, wenn eine Richtlinie für bedingten Zugriff für den Benutzer gilt.
 - Das Unternehmensportal benachrichtigt den Benutzer über Kompatibilitätsprobleme.
@@ -82,15 +77,15 @@ Sie haben verschiedene Kategorien mit unterschiedlichen Einstellungen, aus denen
 
 #### <a name="password"></a>Kennwort
 
-- **Kennwort zum Entsperren mobiler Geräte erforderlich:** Legen Sie für diese Einstellung auf **Erforderlich** fest, damit Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können.
+- **Kennwort zum Entsperren mobiler Geräte erforderlich:** Legen Sie diese Einstellung auf **Erforderlich** fest, damit Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können.
 
-- **Einfache Kennwörter:** Legen Sie **Blockieren** fest, damit Benutzer keine einfache Kennwörter wie **1234** oder **1111** erstellen können.
+- **Einfache Kennwörter:** Legen Sie **Blockieren** fest, damit Benutzer kein einfaches Kennwort wie **1234** oder **1111** erstellen können.
 
 - **Minimale Kennwortlänge:** Geben Sie die Mindestanzahl an Ziffern oder Zeichen an, die das Kennwort enthalten muss.
 
 - **Kennworttyp:** Geben Sie an, ob der Benutzer ein **alphanumerisches** oder ein **numerisches** Kennwort erstellen muss.
 
-- **Anzahl von nicht-alphabetischen Zeichen im Kennwort:** Wenn Sie **Erforderlicher Kennworttyp** auf **Alphanumerisch** festlegen, gibt diese Einstellung die Mindestanzahl von Zeichensätzen an, die das Kennwort enthalten muss. 
+- **Anzahl von nicht-alphanumerischen Zeichen im Kennwort:** Wenn Sie **Erforderlicher Kennworttyp** auf **Alphanumerisch** festlegen, gibt diese Einstellung die Mindestanzahl von Zeichensätzen an, die das Kennwort enthalten muss. 
 
     > [!NOTE]
     > Wenn Sie eine höhere Anzahl festlegen, muss der Benutzer ein komplexeres Kennwort erstellen.
@@ -105,7 +100,7 @@ Sie haben verschiedene Kategorien mit unterschiedlichen Einstellungen, aus denen
 - **Anzahl der vorherigen Kennwörter zur Verhinderung von Wiederverwendung:**: Geben Sie die Anzahl von vorherigen Kennwörtern an, die nicht erneut verwendet werden dürfen.
 
     > [!IMPORTANT]
-    > Wenn die Kennwortanforderung auf einem macOS-Gerät geändert wird, werden die Änderungen erst wirksam, bis der Benutzer sein Kennwort ändert. Wenn Sie beispielsweise die Längeneinschränkung des Kennworts auf acht Ziffern festlegen, und das macOS-Gerät derzeit ein Kennwort mit sechs Ziffern besitzt, bleibt das Gerät kompatibel, bis der Benutzer das nächste Mal das Kennwort auf dem Gerät ändert.
+    > Wenn die Kennwortanforderung auf einem macOS-Gerät geändert wird, werden die Änderungen erst wirksam, wenn der Benutzer sein Kennwort ändert. Wenn Sie beispielsweise die Längeneinschränkung des Kennworts auf acht Ziffern festlegen, und das macOS-Gerät derzeit ein Kennwort mit sechs Ziffern besitzt, bleibt das Gerät kompatibel, bis der Benutzer das nächste Mal das Kennwort auf dem Gerät ändert.
 
 ## <a name="to-create-a-device-compliance-policy"></a>So erstellen Sie eine Gerätekompatibilitätsrichtlinie
 
@@ -142,7 +137,7 @@ Wählen Sie zum Zuweisen einer Konformitätsrichtlinie zu Benutzern eine Richtli
 4. Sobald Sie mit der Zuweisung der Gerätekonformitätsrichtlinie an Ihre Gruppen fertig sind, können Sie das Blatt **Zuweisungen** schließen.
 
     > [!TIP]
-    > Standardmäßig überprüfen Geräte alle 8 Stunden die Konformität. Benutzer können diesen Prozess jedoch nicht über die Intune-Unternehmensportal-App erzwingen.
+    > Standardmäßig überprüfen Geräte alle acht Stunden die Konformität. Benutzer können diesen Prozess jedoch über die Intune-Unternehmensportal-App erzwingen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

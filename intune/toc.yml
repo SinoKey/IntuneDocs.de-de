@@ -138,6 +138,8 @@
           href: groups-add.md
         - name: Lizenzen zuweisen
           href: licenses-assign.md
+        - name: Intune-Lizenzen
+          href: licenses.md
         - name: Festlegen der MDM-Autorität
           href: mdm-authority-set.md
     - name: Registrieren von Geräten
@@ -194,6 +196,8 @@
           href: device-locate.md
         - name: Aktivieren des iOS-Modus für verlorene Geräte
           href: device-lost-mode.md
+        - name: Aktivieren des überwachten iOS-Modus
+          href: device-supervised-mode.md
         - name: Sperren eines Geräts
           href: device-remote-lock.md
         - name: Kennung zurücksetzen
@@ -251,7 +255,7 @@
             - name: Web-Apps
               href: web-app.md
             - name: Integrierte Apps
-              href: apps-add-bulit-in.md
+              href: apps-add-built-in.md
         - name: Bereitstellen von Apps
           href: apps-deploy.md
           items:
@@ -287,6 +291,26 @@
           items:
             - name: Selektives Zurücksetzen von Apps
               href: apps-selective-wipe.md
+            - name: Verwenden von App-Schutzrichtlinien
+              href: app-protection-policy.md
+              items:
+                - name: Erstellen von App-Schutzrichtlinien
+                  href: app-protection-policies.md
+                  items:
+                    - name: Einstellungen für Android
+                      href: app-protection-policy-settings-android.md
+                    - name: Einstellungen für iOS
+                      href: app-protection-policy-settings-ios.md
+                - name: Überprüfen von App-Schutzrichtlinien
+                  href: app-protection-policies-validate.md
+                - name: Überwachen des Benutzerstatus bei App-Schutz
+                  href: app-protection-policies-monitor.md
+                - name: Vorbereitungen für WIP-App-Schutzrichtlinien
+                  href: app-protection-policies-configure-windows-10.md
+                - name: Erstellen und Zuweisen von WIP-App-Schutzrichtlinien
+                  href: windows-information-protection-policy-create.md
+                - name: Verwalten der Datenübertragung zwischen iOS-Apps
+                  href: data-transfer-between-apps-manage-ios.md
     - name: Konfigurieren von Geräten
       href: device-profiles.md
       items:
@@ -444,7 +468,7 @@
           href: conditional-access-integrate-jamf.md
         - name: Erzwingen von Konformität auf mit Jamf Pro verwalteten Macs
           href: conditional-access-assign-jamf.md
-    - name: Schützen von App-und Gerätedaten
+    - name: Schützen von Gerätedaten
       items:
         - name: Verwenden von App-Schutzrichtlinien
           href: app-protection-policy.md
@@ -456,6 +480,10 @@
                   href: app-protection-policy-settings-android.md
                 - name: Einstellungen für iOS
                   href: app-protection-policy-settings-ios.md
+                - name: Ausnahmen von der Datenübertragungsrichtlinie
+                  href: app-protection-policies-exception.md
+                - name: Prüfung der App-Schutzprotokolle in Managed Browser
+                  href: app-protection-policy-settings-log.md
             - name: Überprüfen von App-Schutzrichtlinien
               href: app-protection-policies-validate.md
             - name: Überwachen des Benutzerstatus bei App-Schutz
@@ -578,6 +606,10 @@
           href: end-user-apps-ios.md
         - name: Beziehen von Windows-Apps
           href: end-user-apps-windows.md
+        - name: Von Intune an Apple gesendete Daten
+          href: data-intune-sends-to-apple.md
+        - name: Von Intune an Google gesendete Daten
+          href: data-intune-sends-to-google.md
     - name: Überwachung und Problembehandlung
       items:
         - name: Unterstützung von Benutzern beim Beheben von Problemen
@@ -651,6 +683,8 @@
           href: reports-proc-data-rest.md
         - name: Endpunkt der Data Warehouse-API
           href: reports-api-url.md
+        - name: Nur-Anwendung-Authentifizierung von Data Warehouse
+          href: data-warehouse-app-only-auth.md
         - name: Datenmodell von Data Warehouse
           href: reports-ref-data-model.md
           items:

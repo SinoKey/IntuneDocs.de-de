@@ -3,10 +3,10 @@ title: "Hinzufügen von Apps zu Microsoft Intune"
 titlesuffix: Azure portal
 description: "Mit diesen Vorgehensweisen können Sie Ihre Apps in Intune für die Zuweisung zu Benutzern und Geräten vorbereiten. \""
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f84adced59d2057cd4d18f05ff6953293f7c44cc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9d5fda9cc74ffa3d7be43c90efa65c59451662d3
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>So fügen Sie eine App zu Microsoft Intune hinzu
 
@@ -33,6 +33,7 @@ Bevor Sie Apps zuweisen, überwachen, konfigurieren oder schützen können, müs
 | Apps im Web                           | Intune erstellt eine Verknüpfung zu der Web-App auf dem Startbildschirm des Geräts          | App-Updates werden automatisch ausgeführt     |
 | Interne (branchenspezifische) Apps  | Intune installiert die App auf dem Gerät (Sie stellen die Installationsdatei zur Verfügung)    | Sie müssen ein Update für die App ausführen       |
 | Apps aus dem Store                       | Intune installiert die App auf dem Gerät                                       | App-Updates werden automatisch ausgeführt     |
+| Integrierte Apps                        | Intune installiert die App auf dem Gerät                                       | App-Updates werden automatisch ausgeführt     |
 
 
 Neben Web-Apps unterstützt Intune die folgenden spezifischen Plattformen für Store-Apps und branchenspezifische Apps:
@@ -49,6 +50,7 @@ Neben Web-Apps unterstützt Intune die folgenden spezifischen Plattformen für S
     - Branchenspezifische iOS-Apps
     - Branchenspezifische Windows Phone-Apps (XAP-Dateien)
     - Branchenspezifische Windows-Apps (nur MSI-Dateien)
+- Integrierte Apps    
 
 >[!TIP]
 > Branchenspezifische Apps werden über eine App-Installationsdatei hinzugefügt. Fügen Sie beispielweise die Anwendung hinzu, um eine branchenspezifische iOS-App zu installieren, indem Sie auf dem Blatt **App hinzufügen** **Branchenspezifische App** als **App-Typ** auswählen. Wählen Sie dann die App-Paketdatei (mit der Erweiterung .ipa) aus. Solche Apps werden in der Regel intern geschrieben.
@@ -147,4 +149,5 @@ Wählen Sie eines der folgenden Themen, um zu erfahren, wie Sie Apps für jede P
 - [Windows Store-Apps](store-apps-windows.md)
 - [Branchenspezifische Windows-Apps](lob-apps-windows.md)
 - [Office 365 apps for Windows 10 (Office 365-Apps für Windows 10)](apps-add-office365.md)
+- [Integrierte Apps](apps-add-built-in.md)
 
