@@ -109,7 +109,7 @@ Dieses Thema enthält die Kontaktinformationen für den telefonischen Support f�
 |Sri Lanka|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr IST (UTC +5:30)|Englisch||2423-254|
 |Schweden|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr CET (UTC +1)|Schwedisch&#42;, Englisch|0201605899|0851761966|
 |Schweiz|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr CET (UTC +1)|Französisch&#42;, Deutsch&#42;, Italienisch&#42;, Englisch|0800000300|0227614114|
-|Republik China (Taiwan)|24 x 7|Montag-Freitag<br /><br />09:00-18:00 Uhr CST (UTC +8)|Mandarin&#42;, Englisch|0800 666802|02 26567301|
+|Taiwan (Taiwan)|24 x 7|Montag-Freitag<br /><br />09:00-18:00 Uhr CST (UTC +8)|Mandarin&#42;, Englisch|0800 666802|02 26567301|
 |Thailand|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr PHT (UTC +8)|Englisch|1800 4412619||
 |Trinidad und Tobago|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr AST (UTC -4)|Englisch|1-8552147711||
 |Tunesien|24 x 7|Sonntag bis Donnerstag<br /><br />09:00-19:00 Uhr CET (UTC +2)|Französisch&#42;, Englisch||+216 71 16 68 02<br /><br />Schritt 1: Wählen Sie Option 1 aus.<br /><br />Schritt 2: Wählen Sie Option 1 aus.<br /><br />Schritt 3: Wählen Sie Option 9 aus.<br /><br />Schritt 4: Geben Sie Code 7703 ein.|
